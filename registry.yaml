@@ -1,0 +1,22 @@
+# Registry for KG projects
+#
+# To add a project, make a PR here:
+# https://github.com/Knowledge-Graph-Hub/kghub-registry
+# that updates this file (registry.yaml)
+# with information about your KG.
+---
+
+-
+  #
+  # KG-COVID-19
+  #
+  project_name: KG-COVID-19
+  description: A knowledge graph to integrate data related to COVID-19
+  tar_url: https://kg-hub.berkeleybop.io/kg-covid-19/current/kg-covid-19.tar.gz
+-
+  #
+  # KG-Microbe
+  #
+  project_name: KG-Microbe
+  description: A knowledge graph to integrate microbial data
+  tar_url: https://kg-hub.berkeleybop.io/kg-microbe/current/kg-microbe.tar.gz
