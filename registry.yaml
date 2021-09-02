@@ -4,6 +4,10 @@
 # https://github.com/Knowledge-Graph-Hub/kghub-registry
 # that updates this file (registry.yaml)
 # with information about your KG.
+
+# tar_url should link to a tar.gz file containing a nodes file and an edges file, both
+# in KGX TSV format:
+# https://github.com/biolink/kgx/blob/master/specification/kgx-format.md#kgx-format-as-tsv
 ---
 
 -
