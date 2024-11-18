@@ -11,7 +11,6 @@ see_also:
 version: 0.0.1
 
 prefixes:
-  dcat: http://www.w3.org/ns/dcat#
   kg_registry_schema: https://w3id.org/bridge2ai/data-sheets-schema/
   skos: http://www.w3.org/2004/02/skos/core#
 
@@ -165,13 +164,19 @@ classes:
 
 enums:
   CompressionEnum:
+    description: >-
+      The type of compression used with a graph component.
     permissible_values:
       gzip:
       tar:
-      tar.gz:
+      targz:
       zip:
       other:
 
   GraphStandardEnum:
+    description: >-
+      The standard or standards that a knowledge graph conforms to.
+      These are not serializations, but rather the higher-level
+      frameworks that the graph is built on.
     permissible_values:
-      KGHub:
+      kghub:
