@@ -1,5 +1,5 @@
-import logging
-import tempfile
+"""Tests for kg-registry."""
+
 from unittest import TestCase
 
 
