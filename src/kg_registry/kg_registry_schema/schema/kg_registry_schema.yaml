@@ -28,53 +28,55 @@ classes:
       represented as nodes (entities) and edges (relationships) between them.
       The nodes and edges may have attributes associated with them.
     attributes:
-      - name: name
+      name:
         description: The name of the knowledge graph.
         required: true
         range: string
-      - name: part_of_collection
+      part_of_collection:
         description: The collection that the knowledge graph is part of.
         range: KnowledgeGraphCollection
-      - name: description
+      description:
         description: A description of the knowledge graph.
         range: string
-      - name: source
+      source:
         description: The source of the knowledge graph.
         range: string
-      - name: url
+      url:
         description: The URL of the knowledge graph.
         range: string
-      - name: license
+      license:
         description: The license of the knowledge graph.
         range: string
-      - name: version
+      version:
         description: The version of the knowledge graph.
         range: string
-      - name: date_created
+      date_created:
         description: The date the knowledge graph was created.
         range: string
-      - name: date_modified
+      date_modified:
         description: The date the knowledge graph was last modified.
         range: string
-      - name: tags
+      tags:
         description: Tags associated with the knowledge graph.
         range: string
-      - name: contributors
+        multivalued: true
+      contributors:
         description: Contributors to the knowledge graph.
         range: string
-      - name: status
-        description: The status of the knowledge graph.
-        range: string
-      - name: language
+      is_active:
+        description: >-
+          The status of the knowledge graph. If actively
+          updated, this should be true, otherwise false.
+        range: boolean
+      language:
         description: The language of the knowledge graph.
         range: string
-      - name: publisher
-        description: The publisher of the knowledge graph.
+      contact_point:
+        description: >-
+          The contact point for the knowledge graph.
+          This should be an email address.
         range: string
-      - name: contact_point
-        description: The contact point for the knowledge graph.
-        range: string
-      - name: components
+      components:
         description: The components of the knowledge graph.
         range: GraphComponent
         multivalued: true
@@ -83,17 +85,17 @@ classes:
     description: >-
       A collection of knowledge graphs.
     attributes:
-      - name: name
+      name:
         description: The name of the collection.
         required: true
         range: string
-      - name: description
+      description:
         description: A description of the collection.
         range: string
-      - name: url
+      url:
         description: The URL of the collection.
         range: string
-      - name: contact_point
+      contact_point:
         description: The contact point for the collection.
         range: string
 
@@ -101,23 +103,24 @@ classes:
     description: >-
       A component of a knowledge graph.
     attributes:
-      - name: name
+      name:
         description: The name of the component.
         required: true
         range: string
-      - name: description
+      description:
         description: A description of the component.
         range: string
-      - name: url
+      url:
         description: The URL of the component.
         range: string
-      - name: license
+      license:
         description: The license of the component.
         range: string
-      - name: produced_by
+      produced_by:
         description: The process that produced the component.
         range: GraphProductionProcess
-      - name: part_of_subset
+        multivalued: true
+      part_of_subset:
         description: The subset or subsets that the component is part of.
         range: string
         multivalued: true
@@ -126,22 +129,22 @@ classes:
     description: >-
       A process for producing the individual components of a knowledge graph.
     attributes:
-      - name: name
+      name:
         description: The name of the process.
         required: true
         range: string
-      - name: description
+      description:
         description: A description of the process.
         range: string
-      - name: url
+      url:
         description: The URL of the process.
         range: string
-      - name: license
+      license:
         description: The license of the process.
         range: string
-      - name: version
+      version:
         description: The version of the process.
         range: string
-      - name: contact_point
+      contact_point:
         description: The contact point for the process.
         range: string
