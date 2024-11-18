@@ -1,0 +1,44 @@
+name: Deploy Documentation
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+    paths:
+    - 'docs/*/*.md'
+
+jobs:
+  build-docs:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0 
+
+    - name: Set up Python3
+      uses: actions/setup-python@v3
+      with:
+        python-version: 3.9
+
+    - name: Install Poetry
+      uses: snok/install-poetry@v1.3
+
+    #----------------------------------------------
+    # install dependencies if cache does not exist
+    #----------------------------------------------
+    - name: Install dependencies
+      # if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+      run: poetry install --no-interaction
+
+    #----------------------------------------------
+    #  Create documentation and deploy.
+    #----------------------------------------------
+    - name: Create local docs
+      run: |
+        touch docs/.nojekyll
+        poetry run make all_docs
+        poetry run make gh-deploy
