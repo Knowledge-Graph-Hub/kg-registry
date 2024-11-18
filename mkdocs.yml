@@ -1,0 +1,29 @@
+---
+site_name: "KG-Registry"
+theme:
+  name: material
+  analytics:
+    gtag: G-2SYBSJVZ23
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: indigo
+      accent: blue grey
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: indigo
+      accent: blue grey
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+  features:
+    - content.tabs.link
+plugins:
+  - search
+nav:
+  - Introduction: index.md
+site_url: https://knowledge-graph-hub.github.io/kg-registry/
+repo_url: https://github.com/Knowledge-Graph-Hub/kg-registry
