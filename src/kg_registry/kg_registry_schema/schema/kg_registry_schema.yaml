@@ -59,6 +59,9 @@ classes:
       version:
         description: The version of the data object.
         range: string
+        exact_mappings:
+          - schema:version
+          - dcterms:hasVersion
       language:
         description: The human language of the data object.
         range: string
@@ -73,6 +76,9 @@ classes:
       A knowledge graph. This is any heterogeneous collection of data that is
       represented as nodes (entities) and edges (relationships) between them.
       The nodes and edges may have attributes associated with them.
+    aliases:
+      - kg
+      - heterogeneous graph
     is_a: DataObject
     attributes:
       part_of_collection:
