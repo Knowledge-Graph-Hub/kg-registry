@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "kg-registry"
+version = "0.0.1"
+description = "A registry for knowlege graphs."
+authors = ["Harry Caufield <j.harry.caufield@gmail.com>", "Justin Reese <justaddcoffee@gmail.com>"]
+license = "GPL-3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+linkml = "^1.8.5"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=7.1.2"
+setuptools = ">=65.5.0"
+tox = ">=3.25.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 100
+include_trailing_comma = true
+reverse_relative = true
