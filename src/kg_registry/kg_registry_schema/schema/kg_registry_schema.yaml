@@ -1,0 +1,147 @@
+---
+id: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+name: kg_registry_schema
+title: kg_registry_schema
+description: |-
+  A schema for representing metadata about
+  knowlege graphs, their sources, and their contents.
+license: GPL-3.0
+see_also:
+  - https://kghub.org/kg-registry/
+version: 0.0.1
+
+prefixes:
+  dcat: http://www.w3.org/ns/dcat#
+  kg_registry_schema: https://w3id.org/bridge2ai/data-sheets-schema/
+  skos: http://www.w3.org/2004/02/skos/core#
+
+default_prefix: kg_registry_schema
+default_range: string
+
+imports:
+  - linkml:types
+
+classes:
+  KnowledgeGraph:
+    description: >-
+      A knowledge graph. This is any heterogeneous collection of data that is
+      represented as nodes (entities) and edges (relationships) between them.
+      The nodes and edges may have attributes associated with them.
+    attributes:
+      - name: name
+        description: The name of the knowledge graph.
+        required: true
+        range: string
+      - name: part_of_collection
+        description: The collection that the knowledge graph is part of.
+        range: KnowledgeGraphCollection
+      - name: description
+        description: A description of the knowledge graph.
+        range: string
+      - name: source
+        description: The source of the knowledge graph.
+        range: string
+      - name: url
+        description: The URL of the knowledge graph.
+        range: string
+      - name: license
+        description: The license of the knowledge graph.
+        range: string
+      - name: version
+        description: The version of the knowledge graph.
+        range: string
+      - name: date_created
+        description: The date the knowledge graph was created.
+        range: string
+      - name: date_modified
+        description: The date the knowledge graph was last modified.
+        range: string
+      - name: tags
+        description: Tags associated with the knowledge graph.
+        range: string
+      - name: contributors
+        description: Contributors to the knowledge graph.
+        range: string
+      - name: status
+        description: The status of the knowledge graph.
+        range: string
+      - name: language
+        description: The language of the knowledge graph.
+        range: string
+      - name: publisher
+        description: The publisher of the knowledge graph.
+        range: string
+      - name: contact_point
+        description: The contact point for the knowledge graph.
+        range: string
+      - name: components
+        description: The components of the knowledge graph.
+        range: GraphComponent
+        multivalued: true
+
+  KnowledgeGraphCollection:
+    description: >-
+      A collection of knowledge graphs.
+    attributes:
+      - name: name
+        description: The name of the collection.
+        required: true
+        range: string
+      - name: description
+        description: A description of the collection.
+        range: string
+      - name: url
+        description: The URL of the collection.
+        range: string
+      - name: contact_point
+        description: The contact point for the collection.
+        range: string
+
+  GraphComponent:
+    description: >-
+      A component of a knowledge graph.
+    attributes:
+      - name: name
+        description: The name of the component.
+        required: true
+        range: string
+      - name: description
+        description: A description of the component.
+        range: string
+      - name: url
+        description: The URL of the component.
+        range: string
+      - name: license
+        description: The license of the component.
+        range: string
+      - name: produced_by
+        description: The process that produced the component.
+        range: GraphProductionProcess
+      - name: part_of_subset
+        description: The subset or subsets that the component is part of.
+        range: string
+        multivalued: true
+
+  GraphProductionProcess:
+    description: >-
+      A process for producing the individual components of a knowledge graph.
+    attributes:
+      - name: name
+        description: The name of the process.
+        required: true
+        range: string
+      - name: description
+        description: A description of the process.
+        range: string
+      - name: url
+        description: The URL of the process.
+        range: string
+      - name: license
+        description: The license of the process.
+        range: string
+      - name: version
+        description: The version of the process.
+        range: string
+      - name: contact_point
+        description: The contact point for the process.
+        range: string
