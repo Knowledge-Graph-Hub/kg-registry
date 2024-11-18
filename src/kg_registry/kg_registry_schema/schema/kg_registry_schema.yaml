@@ -22,7 +22,6 @@ imports:
   - linkml:types
 
 classes:
-
   DataObject:
     abstract: true
     description: >-
@@ -104,6 +103,26 @@ classes:
         description: The components of the knowledge graph.
         range: GraphComponent
         multivalued: true
+      conforms_to:
+        description: >-
+          The standard or standards that the knowledge graph conforms to.
+          This is not the same as its serialization.
+        range: GraphStandardEnum
+        multivalued: true
+      edge_count:
+        description: The number of edges in the knowledge graph.
+        range: integer
+      node_count:
+        description: The number of nodes in the knowledge graph.
+        range: integer
+      predicates:
+        description: The predicate types in the knowledge graph.
+        range: string
+        multivalued: true
+      node_categories:
+        description: The node categories in the knowledge graph.
+        range: string
+        multivalued: true
 
   KnowledgeGraphCollection:
     description: >-
@@ -123,8 +142,30 @@ classes:
         description: The subset or subsets that the component is part of.
         range: string
         multivalued: true
+      is_compressed:
+        description: >-
+          Whether the component is compressed. If true, the component
+          should be decompressed before use.
+        range: boolean
+      compression:
+        description: >-
+          The type of compression used with the component, e.g., tar.gz.
+        range: CompressionEnum
 
   GraphProductionProcess:
     description: >-
       A process for producing the individual components of a knowledge graph.
     is_a: DataObject
+
+enums:
+  CompressionEnum:
+    permissible_values:
+      gzip:
+      tar:
+      tar.gz:
+      zip:
+      other:
+
+  GraphStandardEnum:
+    permissible_values:
+      KGHub:
