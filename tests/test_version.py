@@ -1,4 +1,4 @@
-"""Tests for kg-registry"""
+"""Tests for kg-registry."""
 
 from unittest import TestCase
 
