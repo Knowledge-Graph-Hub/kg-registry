@@ -1,0 +1,182 @@
+---
+id: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+name: kg_registry_schema
+title: kg_registry_schema
+description: |-
+  A schema for representing metadata about
+  knowlege graphs, their sources, and their contents.
+license: GPL-3.0
+see_also:
+  - https://kghub.org/kg-registry/
+version: 0.0.1
+
+prefixes:
+  kg_registry_schema: https://w3id.org/bridge2ai/data-sheets-schema/
+  skos: http://www.w3.org/2004/02/skos/core#
+
+default_prefix: kg_registry_schema
+default_range: string
+
+imports:
+  - linkml:types
+
+classes:
+  DataObject:
+    abstract: true
+    description: >-
+      A data object. This may be any knowledge graph, a component
+      of a graph, a collection of graphs,
+      or a process for producing a component of a graph.
+    close_mappings:
+      - schema:CreativeWork
+    attributes:
+      id:
+        description: >-
+          The identifier of the data object. This must be unique.
+        required: true
+        range: string
+        identifier: true
+        slot_uri: dcterms:identifier
+        exact_mappings:
+          - schema:name
+      name:
+        description: The name of the data object.
+        required: true
+        range: string
+      description:
+        description: A description of the data object.
+        range: string
+      url:
+        description: >-
+          The URL of the data object. This may be a link
+          to download a specific file, a base URL to an API,
+          or a link to a graphical interface.
+        range: uriorcurie
+      license:
+        description: The license of the data object.
+        range: string
+      version:
+        description: The version of the data object.
+        range: string
+        exact_mappings:
+          - schema:version
+          - dcterms:hasVersion
+      language:
+        description: The human language of the data object.
+        range: string
+      contact_point:
+        description: >-
+          The contact point for the data object.
+          This should be an email address.
+        range: string
+
+  KnowledgeGraph:
+    description: >-
+      A knowledge graph. This is any heterogeneous collection of data that is
+      represented as nodes (entities) and edges (relationships) between them.
+      The nodes and edges may have attributes associated with them.
+    aliases:
+      - kg
+      - heterogeneous graph
+    is_a: DataObject
+    attributes:
+      part_of_collection:
+        description: The collection that the knowledge graph is part of.
+        range: KnowledgeGraphCollection
+      source:
+        description: The source of the knowledge graph.
+        range: string
+      date_created:
+        description: The date the knowledge graph was created.
+        range: string
+      date_modified:
+        description: The date the knowledge graph was last modified.
+        range: string
+      tags:
+        description: Tags associated with the knowledge graph.
+        range: string
+        multivalued: true
+      contributors:
+        description: Contributors to the knowledge graph.
+        range: string
+      is_active:
+        description: >-
+          The status of the knowledge graph. If actively
+          updated, this should be true, otherwise false.
+        range: boolean
+      components:
+        description: The components of the knowledge graph.
+        range: GraphComponent
+        multivalued: true
+      conforms_to:
+        description: >-
+          The standard or standards that the knowledge graph conforms to.
+          This is not the same as its serialization.
+        range: GraphStandardEnum
+        multivalued: true
+      edge_count:
+        description: The number of edges in the knowledge graph.
+        range: integer
+      node_count:
+        description: The number of nodes in the knowledge graph.
+        range: integer
+      predicates:
+        description: The predicate types in the knowledge graph.
+        range: string
+        multivalued: true
+      node_categories:
+        description: The node categories in the knowledge graph.
+        range: string
+        multivalued: true
+
+  KnowledgeGraphCollection:
+    description: >-
+      A collection of knowledge graphs.
+    is_a: DataObject
+
+  GraphComponent:
+    description: >-
+      A component of a knowledge graph.
+    is_a: DataObject
+    attributes:
+      produced_by:
+        description: The process that produced the component.
+        range: GraphProductionProcess
+        multivalued: true
+      part_of_subset:
+        description: The subset or subsets that the component is part of.
+        range: string
+        multivalued: true
+      is_compressed:
+        description: >-
+          Whether the component is compressed. If true, the component
+          should be decompressed before use.
+        range: boolean
+      compression:
+        description: >-
+          The type of compression used with the component, e.g., tar.gz.
+        range: CompressionEnum
+
+  GraphProductionProcess:
+    description: >-
+      A process for producing the individual components of a knowledge graph.
+    is_a: DataObject
+
+enums:
+  CompressionEnum:
+    description: >-
+      The type of compression used with a graph component.
+    permissible_values:
+      gzip:
+      tar:
+      targz:
+      zip:
+      other:
+
+  GraphStandardEnum:
+    description: >-
+      The standard or standards that a knowledge graph conforms to.
+      These are not serializations, but rather the higher-level
+      frameworks that the graph is built on.
+    permissible_values:
+      kghub:
