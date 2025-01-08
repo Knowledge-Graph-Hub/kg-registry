@@ -1,7 +1,7 @@
-# Makefile for OBOFoundry.github.io
+# Makefile for KG-Registry site
 #
 # This file contains commands for validating and generating
-# configuration files for the OBO Foundry website.
+# configuration files for the KG-Registry website.
 # The `util/` directory contains additional scripts
 # called from this Makefile.
 # It is intended to be run on a Unix system (Linux, Mac OS X)
