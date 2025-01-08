@@ -1,6 +1,7 @@
 """Command line interface for :mod:`obofoundry`.
 
-Why does this file exist, and why not put this in ``__main__``? You might be tempted to import things from ``__main__``
+Why does this file exist, and why not put this in ``__main__``?
+You might be tempted to import things from ``__main__``
 later, but that will cause problems--the code will get executed twice:
 
 - When you run ``python3 -m obofoundry`` python will execute``__main__.py`` as a script.
