@@ -1,0 +1,45 @@
+/*
+Don't underline hyperlinks by default
+*/
+a {
+  text-decoration: none;
+  color: #6699cc;
+}
+
+/*
+Underline and slightly darken hyperlinks
+when the cursor hovers over them
+*/
+a:hover {
+  text-decoration: underline;
+  color: #5588bb;
+}
+
+/*
+Don't apply underlines to links
+in the navigation menu
+*/
+.navbar a:hover {
+  text-decoration: none;
+}
+
+/*
+Slightly darken failing ontologies
+*/
+
+.failing {
+  background-color: lightgray;
+}
+
+.dash-status {
+    margin-bottom: 3px;
+}
+
+/*
+Custom blockquote formatting
+*/
+.citation-blockquote {
+    padding: 5px;
+    margin-left: 20px;
+    margin-bottom: 16px;
+}
