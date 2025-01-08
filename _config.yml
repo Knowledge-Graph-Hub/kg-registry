@@ -1,13 +1,13 @@
-name: OBO Foundry
-title: The OBO Foundry
+name: KG-Registry
+title: The Knowledge Graph Registry
 markdown: kramdown
 highlighter: rouge
 baseurl: /
 imgurl: /images
-repo: https://github.com/OBOFoundry/OBOFoundry.github.io/
-repo_src: https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/
+repo: https://github.com/Knowledge-Graph-Hub/kg-registry
+repo_src: https://github.com/Knowledge-Graph-Hub/kg-registry/blob/main/
 author:
-  name: OBO Technical WG
+  name: KG-Hub, a team based at the Lawrence Berkeley National Laboratory
 plugins:
   - jekyll-sitemap
   - jekyll-feed

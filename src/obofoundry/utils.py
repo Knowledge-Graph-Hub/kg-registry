@@ -29,16 +29,15 @@ def get_data():
     return ontologies
 
 
-#: WikiData SPARQL endpoint. See https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service#Interfacing
+#: WikiData SPARQL endpoint.\
+# See https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service#Interfacing
 WIKIDATA_SPARQL = "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
 
 
 def query_wikidata(query: str):
     """Query the Wikidata SPARQL endpoint and return JSON."""
     headers = {"User-Agent": "obofoundry/1.0 (https://obofoundry.org)"}
-    res = requests.get(
-        WIKIDATA_SPARQL, params={"query": query, "format": "json"}, headers=headers
-    )
+    res = requests.get(WIKIDATA_SPARQL, params={"query": query, "format": "json"}, headers=headers)
     res.raise_for_status()
     res_json = res.json()
     return res_json["results"]["bindings"]
@@ -49,13 +48,12 @@ def get_new_data():
 
     So far, this applies in the following scenarios:
 
-    1. New ontologies, i.e., there's a markdown file for the ontology in the ``/ontologies`` directory
+    1. New ontologies, i.e.,
+       there's a markdown file for the ontology in the ``/ontologies`` directory
        but has it not yet been published and does not appear in the config.yml
     """
     data = get_data()
     config_path = ROOT.joinpath("_config.yml")
     config_data = yaml.safe_load(config_path.read_text())
     published = {record["id"] for record in config_data["ontologies"]}
-    return {
-        prefix: record for prefix, record in data.items() if prefix not in published
-    }
+    return {prefix: record for prefix, record in data.items() if prefix not in published}
