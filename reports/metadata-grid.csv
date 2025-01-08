@@ -1,0 +1,21 @@
+Ontology,Activity Status,Validation Status
+chr,active,PASS
+ecosim,active,PASS
+goldterms,active,PASS
+neo,active,PASS
+orcid,active,PASS
+biolink,active,INFO
+drugbank,active,INFO
+hgnc,active,INFO
+interpro,active,INFO
+kg-microbe,active,INFO
+kg-monarch,active,INFO
+kgcl,active,INFO
+mixs,active,INFO
+phenio,active,INFO
+reacto,active,INFO
+reactome,active,INFO
+rhea,active,INFO
+sgd,active,INFO
+swisslipid,active,INFO
+uniprot,active,INFO
