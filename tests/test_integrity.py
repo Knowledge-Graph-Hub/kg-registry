@@ -110,9 +110,7 @@ class TestIntegrity(unittest.TestCase):
                         usage,
                         msg=f"Malformed usage missing a user in {ontology}",
                     )
-                    with self.subTest(
-                        ontology=ontology, user=usage["user"], id=publication["id"]
-                    ):
+                    with self.subTest(ontology=ontology, user=usage["user"], id=publication["id"]):
                         self.assert_valid_publication_id(
                             publication,
                             msg=f"{ontology} usage {i} publication {j} has unexpected identifier: {publication['id']}",
@@ -127,12 +125,10 @@ class TestIntegrity(unittest.TestCase):
         self.assertFalse(identifier.endswith("/"))
 
         is_pubmed = (
-            identifier.startswith(PUBMED_PREFIX)
-            and identifier[len(PUBMED_PREFIX) :].isnumeric()
+            identifier.startswith(PUBMED_PREFIX) and identifier[len(PUBMED_PREFIX) :].isnumeric()
         )
         is_zenodo = (
-            identifier.startswith(ZENODO_PREFIX)
-            and identifier[len(ZENODO_PREFIX) :].isnumeric()
+            identifier.startswith(ZENODO_PREFIX) and identifier[len(ZENODO_PREFIX) :].isnumeric()
         )
         # TODO add regular expression validation
         is_doi = identifier.startswith(DOI_PREFIX)
@@ -155,16 +151,9 @@ class TestIntegrity(unittest.TestCase):
         )
 
         # Make sure that the unversioned DOI is used
-        if (
-            is_arxiv
-            or is_biorxiv
-            or is_medrxiv
-            or identifier.startswith(CHEMRXIV_DOI_PREFIX)
-        ):
+        if is_arxiv or is_biorxiv or is_medrxiv or identifier.startswith(CHEMRXIV_DOI_PREFIX):
             for v in range(1, 100):
-                self.assertFalse(
-                    identifier.endswith(f".v{v}"), msg="Please use an unversioned DOI"
-                )
+                self.assertFalse(identifier.endswith(f".v{v}"), msg="Please use an unversioned DOI")
 
     def test_schema_mandatory(self):
         """Test all things in schema marked as error are also in the required list."""
@@ -240,9 +229,7 @@ class TestStandardizedYaml(unittest.TestCase):
                     lines = [line.rstrip("\n") for line in file]
 
                 self.assertEqual(lines[0], "---")
-                idx = min(
-                    i for i, line in enumerate(lines[1:], start=1) if line == "---"
-                )
+                idx = min(i for i, line in enumerate(lines[1:], start=1) if line == "---")
 
                 # Load the data like it is YAML
                 chunked = "\n".join(lines[1:idx])
@@ -257,14 +244,7 @@ class TestStandardizedYaml(unittest.TestCase):
 
 
 def _string_norm(s: str) -> str:
-    return (
-        s.strip()
-        .lower()
-        .replace("\n", "")
-        .replace(" ", "")
-        .replace(".", "")
-        .replace("-", "")
-    )
+    return s.strip().lower().replace("\n", "").replace(" ", "").replace(".", "").replace("-", "")
 
 
 class TestModernIntegrity(unittest.TestCase):
@@ -311,9 +291,7 @@ class TestModernIntegrity(unittest.TestCase):
                 self.assertIn("license", github_data)
                 self.assertIn("spdx_id", github_data["license"])
                 spdx = github_data["license"]["spdx_id"]
-                self.assertIsNotNone(
-                    spdx, msg="No LICENSE file found in the repository"
-                )
+                self.assertIsNotNone(spdx, msg="No LICENSE file found in the repository")
                 self.assertNotEqual(
                     "NOASSERTION",
                     spdx,
@@ -339,9 +317,7 @@ class TestModernIntegrity(unittest.TestCase):
     def test_nor_dashboard(self):
         """Test that the ontology is in and passes the NOR dashboard."""
         nor_data = yaml.safe_load(requests.get(NOR_DASHBOARD_RESULTS).content)
-        nor_ontologies = {
-            record["namespace"]: record for record in nor_data["ontologies"]
-        }
+        nor_ontologies = {record["namespace"]: record for record in nor_data["ontologies"]}
         for prefix, data in self.ontologies.items():
             with self.subTest(prefix=prefix):
                 self.assertIn(
