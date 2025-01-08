@@ -356,7 +356,7 @@ _:b13   <http://www.w3.org/2000/01/rdf-schema#label>  "James McLaughlin" ;
 <http://purl.obolibrary.org/obo/phenio.kgx>
         <http://purl.org/dc/elements/1.1/description>  "KGX version of phenio" ;
         <http://purl.org/dc/elements/1.1/title>  "phenio KG" ;
-        a       <http://purl.obolibrary.org/obo/kgx> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://purl.obolibrary.org/obo/kgx> ;
         <http://www.w3.org/ns/dcat#accessURL>  "https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz" .
 
 <http://purl.obolibrary.org/obo/reacto>
