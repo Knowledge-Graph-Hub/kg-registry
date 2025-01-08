@@ -1,13 +1,11 @@
 """Test data integrity, beyond what's possible with the JSON schema."""
 
-import json
 import unittest
-from io import StringIO
 from pathlib import Path
-from typing import List, Literal, Optional, Set
+from typing import List, Literal, Optional
 
 import yaml
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
