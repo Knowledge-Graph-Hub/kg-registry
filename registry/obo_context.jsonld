@@ -1,0 +1,8 @@
+{
+    "@context": {
+        "obo": {
+            "@id": "http://purl.obolibrary.org/obo/obo_",
+            "@prefix": true
+        }
+    }
+}
