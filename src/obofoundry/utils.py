@@ -29,7 +29,8 @@ def get_data():
     return ontologies
 
 
-#: WikiData SPARQL endpoint. See https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service#Interfacing
+#: WikiData SPARQL endpoint.\
+# See https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service#Interfacing
 WIKIDATA_SPARQL = "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
 
 
@@ -47,7 +48,8 @@ def get_new_data():
 
     So far, this applies in the following scenarios:
 
-    1. New ontologies, i.e., there's a markdown file for the ontology in the ``/ontologies`` directory
+    1. New ontologies, i.e.,
+       there's a markdown file for the ontology in the ``/ontologies`` directory
        but has it not yet been published and does not appear in the config.yml
     """
     data = get_data()
