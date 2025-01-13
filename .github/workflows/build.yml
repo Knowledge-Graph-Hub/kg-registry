@@ -3,12 +3,12 @@ on:
   # Allows for on-demand build
   workflow_dispatch:
   # Automatically rebuilds when somebody edits a markdown file in
-  # the ontology/ directory
+  # the kgmetadata/ directory
   push:
     branches:
       - main
     paths:
-      - 'ontology/*.md'
+      - 'kgmetadata/*.md'
 
 jobs:
   build:
