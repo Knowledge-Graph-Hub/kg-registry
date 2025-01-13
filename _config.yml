@@ -2,7 +2,8 @@ name: KG-Registry
 title: The Knowledge Graph Registry
 markdown: kramdown
 highlighter: rouge
-baseurl: /
+url: https://kghub.org
+baseurl: /kg-registry
 imgurl: /images
 repo: https://github.com/Knowledge-Graph-Hub/kg-registry
 repo_src: https://github.com/Knowledge-Graph-Hub/kg-registry/blob/main/
