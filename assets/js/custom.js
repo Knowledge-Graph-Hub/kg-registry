@@ -496,10 +496,12 @@ jQuery(document).ready(function() {
      */
     function apply_all_filters(data) {
         let selectedDomain = $("#dd-domains").children("option:selected").val();
+        let selectedResourceType = $("#dd-resource-type").children("option:selected").val();
         let res = data["ontologies"].filter(x => x["domain"] !== undefined);
-        let dt = res.filter(x => x["domain"].includes(selectedDomain));
-        let dt2 = Search($("#searchVal"), dt);
-        applyFilters(dt2)
+        let dt = res.filter(x => x["type"].includes(selectedResourceType));
+        let dt2 = dt.filter(x => x["domain"].includes(selectedDomain));
+        let dt3 = Search($("#searchVal"), dt2);
+        applyFilters(dt3)
     }
 // obtain json data using fetch
     fetch('kg-registry/registry/kgs.jsonld')
@@ -535,6 +537,20 @@ jQuery(document).ready(function() {
             $("#dd-domains").append(`<option></option>`);
             domains.forEach(function(r) {
                 $("#dd-domains").append(`<option value="${r.trim()}">${r.trim()}</option>`);
+            })
+            // extract resource type and set values for dropdown menu
+            let resourcetypes = [];
+            for (let k = 0; k < data["ontologies"].length; k++) {
+                if (data["ontologies"][k]["type"] !== undefined) {
+                    let d = data["ontologies"][k]["type"] //.replace(" and", ",").split(",")
+                    domains.push(d)
+                }
+            }
+            domains = [...new Set(domains)];
+            domains.sort();
+            $("#dd-resource-type").append(`<option></option>`);
+            domains.forEach(function(r) {
+                $("#dd-resource-type").append(`<option value="${r.trim()}">${r.trim()}</option>`);
             })
             //render table on page load
             renderTable(data["ontologies"]);

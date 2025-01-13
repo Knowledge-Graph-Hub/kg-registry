@@ -5,6 +5,7 @@ id: biolink
 title: Biolink-Model
 description: Entity and association taxonomy and datamodel for life-sciences data
 domain: upper
+type: datamodel
 preferredPrefix: http
 contact:
   orcid: 0000-0002-8719-7760
