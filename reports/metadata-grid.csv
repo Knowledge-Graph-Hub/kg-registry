@@ -4,7 +4,6 @@ ecosim,active,PASS
 goldterms,active,PASS
 neo,active,PASS
 orcid,active,PASS
-biolink,active,INFO
 drugbank,active,INFO
 hgnc,active,INFO
 interpro,active,INFO
@@ -19,3 +18,4 @@ rhea,active,INFO
 sgd,active,INFO
 swisslipid,active,INFO
 uniprot,active,INFO
+biolink,active,FAIL
