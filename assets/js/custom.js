@@ -502,7 +502,7 @@ jQuery(document).ready(function() {
         applyFilters(dt2)
     }
 // obtain json data using fetch
-    fetch('/registry/ontologies.jsonld')
+    fetch('/registry/kgs.jsonld')
         .then(response => response.json())
         .then((data) => {
 
