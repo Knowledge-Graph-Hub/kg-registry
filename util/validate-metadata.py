@@ -151,11 +151,14 @@ def validate_metadata(item, schema):
                 path = ["properties", title]
             abs_schema = schema
             level = None
-            for schema_item in path:
-                if schema_item in abs_schema:
-                    if "level" in abs_schema[schema_item]:
-                        level = abs_schema[schema_item]["level"]
-                    abs_schema = abs_schema[schema_item]
+            try:
+                for schema_item in path:
+                    if schema_item in abs_schema:
+                        if "level" in abs_schema[schema_item]:
+                            level = abs_schema[schema_item]["level"]
+                        abs_schema = abs_schema[schema_item]
+            except TypeError as e:
+                print("Error getting level for %s: %s" % (title, str(e)))
             if level is None:
                 raise ValueError
         else:
