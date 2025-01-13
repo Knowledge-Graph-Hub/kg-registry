@@ -119,6 +119,14 @@
         "simulation"
       ]
     },
+    "type": {
+      "level": "error",
+      "description": "'type' is an optional field.",
+      "type": "string",
+      "enum": [
+        "datamodel"
+      ]
+    },
     "tags": {
       "description": "'tags' is an optional field. The value is a list of strings, meant to extend 'domain' by providing more details.",
       "type": "array",
