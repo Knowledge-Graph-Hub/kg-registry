@@ -38,7 +38,7 @@ PRINCIPLES := $(wildcard principles/*.md)
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
 
-all: _config.yml registry/ontologies.ttl registry/obo_context.jsonld registry/obo_prefixes.ttl
+all: _config.yml registry/kgs.ttl registry/obo_context.jsonld registry/obo_prefixes.ttl
 
 pull:
 	git pull
@@ -51,8 +51,8 @@ integration-test: test valid-purl-report.txt
 
 # Remove and/or revert all targets to their repository versions:
 clean:
-	rm -Rf registry/ontologies.nt registry/ontologies.ttl registry/ontologies.yml sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
-	git checkout _config.yml registry/ontologies.jsonld registry/ontologies.ttl registry/ontologies.yml
+	rm -Rf registry/kgs.nt registry/kgs.ttl registry/kgs.yml sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
+	git checkout _config.yml registry/kgs.jsonld registry/kgs.ttl registry/kgs.yml
 
 
 ### Directories:
@@ -72,18 +72,18 @@ reports/principles:
 
 ### Build Configuration Files
 
-# Create the site-wide config file by combining all metadata on ontologies + principles
+# Create the site-wide config file by combining all metadata on kgs + principles
 #  and combining with site-wide metadata.
 #
 # Note that anything in _config.yml is accessible to any liquid template via the
 # `sites` object - think of it like the global database
 #
 # (this is somewhat hacky, but concatenating these yamls is safe)
-_config.yml: _config_header.yml registry/ontologies.yml principles/all.yml
+_config.yml: _config_header.yml registry/kgs.yml principles/all.yml
 	cat $^ > $@.tmp && mv $@.tmp $@
 
-# Sort ontologies based on the validation (metadata-grid)
-registry/ontologies.yml: reports/metadata-grid.csv
+# Sort kgs based on the validation (metadata-grid)
+registry/kgs.yml: reports/metadata-grid.csv
 	./util/sort-ontologies.py tmp/unsorted-ontologies.yml $< $@ && rm -rf tmp
 
 # Extract the metadata from each principle in the principles/ directory, and concatenate
@@ -92,25 +92,25 @@ principles/all.yml: $(PRINCIPLES)
 	./util/extract-metadata.py concat-principles -o $@.tmp $^  && mv $@.tmp $@
 
 # Use a generic yaml->json conversion, but adding a @content
-registry/ontologies.jsonld: registry/ontologies.yml
+registry/kgs.jsonld: registry/kgs.yml
 	./util/yaml2json.py $< > $@.tmp && mv $@.tmp $@
 
-registry/obo_context.jsonld: registry/ontologies.yml
+registry/obo_context.jsonld: registry/kgs.yml
 	./util/processor.py -i $< extract-context  > $@.tmp && mv $@.tmp $@
 
 # generate triples mapping prefixes to their corresponding PURLs.
 # we use the SHACL vocabulary for this
-registry/obo_prefixes.ttl: registry/ontologies.yml
+registry/obo_prefixes.ttl: registry/kgs.yml
 	./util/make-shacl-prefixes.py $<  > $@.tmp && mv $@.tmp $@
 
 # Use Apache-Jena RIOT to convert jsonld to n-triples
 # NOTE: UGLY HACK. If there is a problem then Jena will write WARN message (to stdout!!!), there appears to
 #  be no way to get it to flag this even with strict and check options, so we do a check with grep, ugh.
 # see: http://stackoverflow.com/questions/20860222/why-do-i-have-these-warnings-with-jena-2-11-0
-registry/ontologies.nt: registry/ontologies.jsonld
+registry/kgs.nt: registry/kgs.jsonld
 	riot --base=http://purl.obolibrary.org/obo/ --strict --check -q registry/context.jsonld $< > $@.tmp && mv $@.tmp $@ && egrep '(WARN|ERROR)' $@ && exit 1 || echo ok
 
-registry/ontologies.ttl: registry/ontologies.nt
+registry/kgs.ttl: registry/kgs.nt
 	riot --base=http://purl.obolibrary.org/obo/ --out=ttl $< > $@.tmp && mv $@.tmp $@
 
 ### Validate Configuration Files
@@ -184,17 +184,17 @@ build/robot-foreign.jar: | build
 # Generate the initial dashboard results file
 # ALWAYS make sure nothing is running on port 25333
 # Then boot Py4J gateway to ROBOT on that port
-reports/dashboard.csv: registry/ontologies.yml | \
+reports/dashboard.csv: registry/kgs.yml | \
 reports/robot reports/principles build/ontologies build/robot.jar build/robot-foreign.jar
 	make reboot
 	./util/principles/dashboard.py $< $@ --big false
 
 reports/big-dashboard.csv: reports/dashboard.csv
 	make reboot
-	./util/principles/dashboard.py registry/ontologies.yml $@ --big true
+	./util/principles/dashboard.py registry/kgs.yml $@ --big true
 
 # Combine the dashboard files
-reports/dashboard-full.csv: reports/dashboard.csv reports/big-dashboard.csv registry/ontologies.yml
+reports/dashboard-full.csv: reports/dashboard.csv reports/big-dashboard.csv registry/kgs.yml
 	./util/principles/sort_tables.py $^ $@
 
 # Generate the HTML grid output for dashboard
@@ -230,10 +230,10 @@ clean-dashboard: build/dashboard
 # TODO: Integrate this with some kind of OCLC query check
 #
 # See: https://github.com/OBOFoundry/OBOFoundry.github.io/issues/18
-valid-purl-report.txt: registry/ontologies.yml
+valid-purl-report.txt: registry/kgs.yml
 	./util/processor.py -i $< check-urls > $@.tmp && mv $@.tmp $@
 
-sparql-consistency-report.txt: registry/ontologies.yml
+sparql-consistency-report.txt: registry/kgs.yml
 	./util/processor.py -i $< sparql-compare > $@.tmp && mv $@.tmp $@
 
 # output of central OBO build
@@ -241,7 +241,7 @@ sparql-consistency-report.txt: registry/ontologies.yml
 jenkins-output.txt:
 	wget http://build.berkeleybop.org/job/simple-build-obo-all/lastBuild/consoleFull -O $@
 
-reports/%.csv: registry/ontologies.ttl sparql/%.sparql
+reports/%.csv: registry/kgs.ttl sparql/%.sparql
 	arq --data $< --query sparql/$*.sparql --results csv > $@.tmp && mv $@.tmp $@
 
-#include kg.Makefile
+include kg.Makefile
