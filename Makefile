@@ -28,8 +28,8 @@
 
 ### Configuration
 
-# All ontology .md files
-ONTS := $(wildcard ontology/*.md)
+# All KG .md files
+KGS := $(wildcard kgmetadata/*.md)
 
 # All principles .md files
 PRINCIPLES := $(wildcard principles/*.md)
@@ -126,14 +126,14 @@ reports/metadata-grid.csv: tmp/unsorted-ontologies.yml | extract-metadata report
 reports/metadata-grid.html: reports/metadata-grid.csv
 	./util/create-html-grid.py $< $@
 
-# Extract metadata from each ontology .md file and combine into single yaml
-tmp/unsorted-ontologies.yml: $(ONTS) | tmp
+# Extract metadata from each KG .md file and combine into single yaml
+tmp/unsorted-ontologies.yml: $(KGS) | tmp
 	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
 
-extract-metadata: $(ONTS)
+extract-metadata: $(KGS)
 	./util/extract-metadata.py validate $^
 
-prettify: $(ONTS)
+prettify: $(KGS)
 	./util/extract-metadata.py prettify $^
 
 # Run tox tests (requires `pip install tox`)
