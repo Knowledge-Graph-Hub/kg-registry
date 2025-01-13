@@ -1,8 +1,8 @@
 <!--this file has been replaced with the table_widget.html-->
 <!--use when javascript is not active-->
-Download table as: [ <a href="/registry/ontologies.yml">YAML</a> |
-<a href="/registry/ontologies.jsonld">JSON-LD</a> |
-<a href="/registry/ontologies.ttl">RDF/Turtle</a> ]
+Download table as: [ <a href="/kg-registry/registry/kgs.yml">YAML</a> |
+<a href="/kg-registry/registry/kgs.jsonld">JSON-LD</a> |
+<a href="/kg-registry/registry/kgs.ttl">RDF/Turtle</a> ]
 <table class="table">
   <tbody>
     {% for ont in site.ontologies %} {% if ont.in_foundry_order %}
@@ -21,7 +21,7 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> |
     <tr class="obsolete">
       {% endif %}
       <td>
-        <a href="ontology/{{ ont.id }}.html">
+        <a href="kgmetadata/{{ ont.id }}.html">
           {% if ont.is_obsolete %}
           <s> {{ ont.id }} </s>
           {% else %} {{ ont.id }} {% endif %}
@@ -48,12 +48,12 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> |
         <mark>inactive</mark>
         {% else %} {{ ont.description | truncate: 140 }} {% endif %}
         <small>
-          <a href="ontology/{{ ont.id }}.html"> Detail </a>
+          <a href="kgmetadata/{{ ont.id }}.html"> Detail </a>
         </small>
       </td>
       <td>
         <a
-          href="ontology/{{ont.id}}.html"
+          href="kgmetadata/{{ont.id}}.html"
           class="btn btn-outline-primary"
           aria-label="More details for {{ ont.title }}"
           title="More details"
