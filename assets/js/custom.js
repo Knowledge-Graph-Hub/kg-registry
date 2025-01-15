@@ -504,7 +504,7 @@ jQuery(document).ready(function() {
         applyFilters(dt3)
     }
 // obtain json data using fetch
-    fetch('kg-registry/registry/kgs.jsonld')
+    fetch('registry/kgs.jsonld')
         .then(response => response.json())
         .then((data) => {
 
