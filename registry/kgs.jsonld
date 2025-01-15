@@ -353,6 +353,35 @@
         {
             "activity_status": "active",
             "contact": {
+                "email": "jhc@lbl.gov",
+                "github": "caufieldjh",
+                "label": "J. Harry Caufield",
+                "orcid": "0000-0001-5705-7831"
+            },
+            "description": "a Knowledge Graph for Illuminating the Druggable Genome",
+            "domain": "health",
+            "homepage": "https://kghub.org/kg-idg/index.html",
+            "id": "kg-idg",
+            "layout": "ontology_detail",
+            "ontology_purl": "https://w3id.org/kg-idg/kg-idg.owl",
+            "preferredPrefix": "http",
+            "products": [
+                {
+                    "description": "KGX Distribution of KG-IDG",
+                    "format": "kgx",
+                    "id": "kg-idg.tar.gz",
+                    "ontology_purl": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz",
+                    "title": "KGX Distribution of KG-IDG"
+                }
+            ],
+            "repository": "https://github.com/Knowledge-Graph-Hub/kg-idg",
+            "title": "KG-IDG",
+            "tracker": "https://github.com/Knowledge-Graph-Hub/kg-idg/issues",
+            "uri_prefix": "https://w3id.org/kg-idg/"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
                 "email": "cjmungall@lbl.gov",
                 "github": "cmungall",
                 "label": "Christopher J. Mungall",
