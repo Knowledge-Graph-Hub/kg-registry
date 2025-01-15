@@ -8,6 +8,7 @@ biolink,active,INFO
 drugbank,active,INFO
 hgnc,active,INFO
 interpro,active,INFO
+kg-idg,active,INFO
 kg-microbe,active,INFO
 kg-monarch,active,INFO
 kgcl,active,INFO

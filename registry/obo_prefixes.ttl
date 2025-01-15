@@ -15,6 +15,7 @@
 ,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
 ,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
 ,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
+,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
 ,[ sh:prefix "PHENIO" ; sh:namespace "http://purl.obolibrary.org/obo/PHENIO_"]
 ,[ sh:prefix "obo" ; sh:namespace "http://purl.obolibrary.org/obo/obo_"]
 ,[ sh:prefix "Reactome" ; sh:namespace "http://purl.obolibrary.org/obo/Reactome_"]
