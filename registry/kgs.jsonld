@@ -185,6 +185,40 @@
         {
             "activity_status": "active",
             "contact": {
+                "email": "smoxon@lbl.gov",
+                "github": "sierra-moxon",
+                "label": "Sierra Taylor Moxon",
+                "orcid": "0000-0002-8719-7760"
+            },
+            "description": "Entity and association taxonomy and datamodel for life-sciences data",
+            "domain": "upper",
+            "homepage": "https://w3id.org/biolink/biolink-model.owl.ttl",
+            "id": "biolink",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC0 1.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            "ontology_purl": "https://w3id.org/biolink/biolink.owl",
+            "preferredPrefix": "http",
+            "products": [
+                {
+                    "description": "OWL release of Biolink-Model",
+                    "id": "biolink_model.owl.ttl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/biolink_model.owl.ttl",
+                    "title": "Biolink-Model OWL release"
+                }
+            ],
+            "repository": "https://github.com/biolink/biolink-model/",
+            "title": "Biolink-Model",
+            "tracker": "https://github.com/biolink/biolink-model/issues",
+            "type": "datamodel",
+            "uri_prefix": "https://w3id.org/biolink/"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
                 "email": "cthoyt@gmail.com",
                 "github": "cthoyt",
                 "label": "Charles Tapley Hoyt",
@@ -315,6 +349,35 @@
             "title": "InterPro",
             "tracker": "https://github.com/biopragmatics/pyobo/issues",
             "uri_prefix": "http://purl.obolibrary.org/obo/"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "email": "jhc@lbl.gov",
+                "github": "caufieldjh",
+                "label": "J. Harry Caufield",
+                "orcid": "0000-0001-5705-7831"
+            },
+            "description": "a Knowledge Graph for Illuminating the Druggable Genome",
+            "domain": "health",
+            "homepage": "https://kghub.org/kg-idg/index.html",
+            "id": "kg-idg",
+            "layout": "ontology_detail",
+            "ontology_purl": "https://w3id.org/kg-idg/kg-idg.owl",
+            "preferredPrefix": "http",
+            "products": [
+                {
+                    "description": "KGX Distribution of KG-IDG",
+                    "format": "kgx",
+                    "id": "kg-idg.tar.gz",
+                    "ontology_purl": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz",
+                    "title": "KGX Distribution of KG-IDG"
+                }
+            ],
+            "repository": "https://github.com/Knowledge-Graph-Hub/kg-idg",
+            "title": "KG-IDG",
+            "tracker": "https://github.com/Knowledge-Graph-Hub/kg-idg/issues",
+            "uri_prefix": "https://w3id.org/kg-idg/"
         },
         {
             "activity_status": "active",
@@ -773,40 +836,6 @@
             "title": "uniprot",
             "tracker": "https://github.com/biopragmatics/pyobo/issues",
             "uri_prefix": "http://purl.obolibrary.org/obo/"
-        },
-        {
-            "activity_status": "active",
-            "contact": {
-                "email": "smoxon@lbl.gov",
-                "github": "sierra-moxon",
-                "label": "Sierra Taylor Moxon",
-                "orcid": "0000-0002-8719-7760"
-            },
-            "description": "Entity and association taxonomy and datamodel for life-sciences data",
-            "domain": "upper",
-            "homepage": "https://w3id.org/biolink/biolink-model.owl.ttl",
-            "id": "biolink",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC0 1.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            "ontology_purl": "https://w3id.org/biolink/biolink.owl",
-            "preferredPrefix": "http",
-            "products": [
-                {
-                    "description": "OWL release of Biolink-Model",
-                    "id": "biolink_model.owl.ttl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/biolink_model.owl.ttl",
-                    "title": "Biolink-Model OWL release"
-                }
-            ],
-            "repository": "https://github.com/biolink/biolink-model/",
-            "title": "Biolink-Model",
-            "tracker": "https://github.com/biolink/biolink-model/issues",
-            "type": "datamodel",
-            "uri_prefix": "https://w3id.org/biolink/"
         }
     ]
 }
