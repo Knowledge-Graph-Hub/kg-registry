@@ -1,8 +1,9 @@
 Level	Message
-ERROR	BIOLINK type: 'datamodel' is not of type 'array'
+INFO	BIOLINK products: 'biolink_model.owl.ttl' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
 INFO	DRUGBANK products: 'drugbank.sssom' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
 INFO	HGNC products: 'hgnc.sssom' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
 INFO	INTERPRO products: 'interpro.sssom' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
+INFO	KG-IDG products: 'kg-idg.tar.gz' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
 INFO	KG-MICROBE products: 'kg-microbe.tar.gz' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
 INFO	KG-MONARCH products: 'kg-monarch.tar.gz' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
 INFO	KGCL products: None is not of type 'string'
