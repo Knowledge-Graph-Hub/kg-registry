@@ -1,62 +1,68 @@
 <div>
-  Download table as: [
+  Download Table [
   <a href="/kg-registry/registry/kgs.yml">YAML</a> |
   <a href="/kg-registry/registry/kgs.jsonld">JSON-LD</a> |
   <a href="/kg-registry/registry/kgs.ttl">RDF/Turtle</a>
   ]
 </div>
-
-<div style="padding-bottom: 10px; padding-top: 20px">
-  <label for="searchVal">Search Table</label>
-  <input
-    type="text"
-    style="width: 60%"
-    class="form-control"
-    id="searchVal"
-    placeholder="Search table ..."
-  />
+<div class="d-flex flex-row mt-3">
+    <div class="pe-1 pb-1">
+        <div>
+            <div>
+                <label for="dd-domains" style="font-size:x-small">Knowledge Graph Domains</label>
+                <select id="dd-domains" class="w-100 form-select">
+                    <option selected value="">All Domains</option>
+                </select>
+            </div>
+            <div>
+                <label for="dd-resourcetypes" style="font-size:x-small">Resource Types</label>
+                <select id="dd-resourcetypes" class="w-100 form-select">
+                    <option selected value="">All Resource Types</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div class="form-group form-check mt-2">
+                <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="groupByDomain"
+                        data-filter="domain"
+                        checked
+                />
+                <label class="form-check-label" for="groupByDomain">Group By Domain</label>
+            </div>
+            <div class="form-group form-check mt-2">
+                <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="hideInactive"
+                        data-filter="activity_status"
+                        checked
+                />
+                <label class="form-check-label" for="hideInactive">Hide Inactive</label>
+            </div>
+            <div class="form-group form-check mt-2">
+                <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="hideObsolete"
+                        data-filter="is_obsolete"
+                        checked
+                />
+                <label class="form-check-label" for="hideObsolete">Hide Obsolete</label>
+            </div>
+        </div>
+    </div>
+    <div id="tableDiv">
+        <div style="padding-bottom: 10px; padding-top: 20px" class="mb-2">
+            <input
+                    type="text"
+                    style="width: 60%"
+                    class="form-control"
+                    id="searchVal"
+                    placeholder="Search table ..."
+            />
+        </div>
+    </div>
 </div>
-
-<div class="row">
-  <div class="col-md-3">
-    <label for="dd-domains">KG Domains:</label>
-    <select id="dd-domains"></select>
-  </div>
-  <div class="form-group form-check col-md-3">
-    <input
-      type="checkbox"
-      class="form-check-input"
-      id="groupByDomain"
-      data-filter="domain"
-      checked
-    />
-    <label class="form-check-label" for="groupByDomain">Group By Domain</label>
-  </div>
-  <div class="col-md-3">
-    <label for="dd-resourcetypes">Resource Types:</label>
-    <select id="dd-resourcetypes"></select>
-  </div>
-  <div class="form-group form-check col-md-3">
-    <input
-      type="checkbox"
-      class="form-check-input"
-      id="hideInactive"
-      data-filter="activity_status"
-      checked
-    />
-    <label class="form-check-label" for="hideInactive">Hide Inactive</label>
-  </div>
-  <div class="form-group form-check col-md-3">
-    <input
-      type="checkbox"
-      class="form-check-input"
-      id="hideObsolete"
-      data-filter="is_obsolete"
-      checked
-    />
-    <label class="form-check-label" for="hideObsolete">Hide Obsolete</label>
-  </div>
-</div>
-
-<!--below dic is been populated by javascript with table content-->
-<div id="tableDiv"></div>
