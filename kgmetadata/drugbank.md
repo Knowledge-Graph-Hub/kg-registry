@@ -31,6 +31,7 @@ products:
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/drugbank/drugbank.sssom
 uri_prefix: http://purl.obolibrary.org/obo/
+type: ""
 ---
 
 DrugBank
