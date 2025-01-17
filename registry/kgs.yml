@@ -1,138 +1,6 @@
 ontologies:
 - activity_status: active
   contact:
-    email: cjmungall@lbl.gov
-    github: cmungall
-    label: Christopher J. Mungall
-    orcid: 0000-0002-6601-2165
-  description: Automatic translation of UCSC chromosome bands to OWL classes
-  domain: chemistry and biochemistry
-  homepage: http://purl.obolibrary.org/obo/chr.owl
-  id: chr
-  layout: ontology_detail
-  license:
-    label: CC0 1.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
-  ontology_purl: http://purl.obolibrary.org/obo/chr.owl
-  preferredPrefix: obo
-  products:
-  - description: OWL release of Monochrom Ontology
-    id: chr.owl
-    ontology_purl: http://purl.obolibrary.org/obo/chr.owl
-    title: Monochrom Ontology OWL release
-  repository: http://purl.obolibrary.org/obo/chr.owl
-  title: Monochrom Ontology
-  tracker: http://purl.obolibrary.org/obo/chr.owl
-  uri_prefix: http://purl.obolibrary.org/obo/
-- activity_status: active
-  contact:
-    email: cjmungall@lbl.gov
-    github: cmungall
-    label: Christopher J. Mungall
-    orcid: 0000-0002-6601-2165
-  description: Ontology rendering of the EcoSIM Land System Model
-  domain: environment
-  homepage: http://purl.obolibrary.org/obo/ecosim.owl
-  id: ecosim
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/ecosim.owl
-  preferredPrefix: obo
-  products:
-  - description: OWL release of ecosim
-    id: ecosim.owl
-    ontology_purl: http://purl.obolibrary.org/obo/ecosim.owl
-    title: ecosim OWL release
-  repository: http://purl.obolibrary.org/obo/ecosim.owl
-  title: ecosim
-  tracker: http://purl.obolibrary.org/obo/ecosim.owl
-  uri_prefix: http://purl.obolibrary.org/obo/
-- activity_status: active
-  contact:
-    email: cjmungall@lbl.gov
-    github: cmungall
-    label: Chris Mungall
-    orcid: 0000-0002-6601-2165
-  dependencies:
-  - id: envo
-  - id: foodon
-  - id: ncbitaxon
-  - id: pco
-  - id: po
-  - id: uberon
-  - id: mixs
-  depicted_by: https://gold.jgi.doe.gov/images/logo-JGI-IMG-GOLD.png
-  description: Translation of JGI GOLD path terms to OWL
-  domain: environment
-  homepage: https://gold.jgi.doe.gov/
-  id: goldterms
-  layout: ontology_detail
-  ontology_purl: https://w3id.org/goldterms/goldterms.owl
-  preferredPrefix: GOLDTERMS
-  products:
-  - id: goldterms.owl
-    ontology_purl: https://w3id.org/goldterms/goldterms.owl
-    title: main GOLDTERMS OWL release
-  repository: https://github.com/cmungall/gold-ontology
-  title: GOLD Environmental Paths
-  tracker: https://github.com/cmungall/gold-ontology/issues
-  uri_prefix: https://w3id.org/goldterms/
-- activity_status: active
-  contact:
-    email: cjmungall@lbl.gov
-    github: cmungall
-    label: Christopher J. Mungall
-    orcid: 0000-0002-6601-2165
-  description: Noctua Entity Ontology
-  domain: biological systems
-  homepage: http://purl.obolibrary.org/obo/go/noctua/neo.owl
-  id: neo
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/go/noctua/neo.owl
-  preferredPrefix: obo
-  products:
-  - description: OWL release of neo
-    id: neo.owl
-    ontology_purl: http://purl.obolibrary.org/obo/neo.owl
-    title: neo OWL release
-  repository: https://github.com/geneontology/neo/
-  title: neo
-  tracker: https://github.com/geneontology/neo/issues
-  uri_prefix: http://purl.obolibrary.org/obo/go/noctua/
-- activity_status: active
-  contact:
-    email: cthoyt@gmail.com
-    github: cthoyt
-    label: Charles Tapley Hoyt
-    orcid: 0000-0003-4423-4370
-  description: ORCID in OWL
-  domain: information
-  homepage: https://github.com/cthoyt/orcidio
-  id: orcid
-  layout: ontology_detail
-  license:
-    label: CC0 1.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
-  ontology_purl: https://w3id.org/orcidio/orcid.owl
-  preferredPrefix: http
-  products:
-  - aggregator: obo
-    description: OWL release of ORCID in OWL
-    id: orcidio.owl
-    ontology_purl: http://purl.obolibrary.org/obo/orcidio.owl
-    title: ORCID in OWL OWL release
-  - aggregator: obo
-    description: OBO release of ORCID in OWL
-    id: orcidio.obo
-    ontology_purl: http://purl.obolibrary.org/obo/orcidio.obo
-    title: ORCID in OWL OBO release
-  repository: https://github.com/cthoyt/orcidio
-  title: ORCID
-  tracker: https://github.com/cthoyt/orcidio/issues
-  uri_prefix: https://w3id.org/orcidio/
-- activity_status: active
-  contact:
     email: smoxon@lbl.gov
     github: sierra-moxon
     label: Sierra Taylor Moxon
@@ -158,6 +26,33 @@ ontologies:
   tracker: https://github.com/biolink/biolink-model/issues
   type: datamodel
   uri_prefix: https://w3id.org/biolink/
+- activity_status: active
+  contact:
+    email: cjmungall@lbl.gov
+    github: cmungall
+    label: Christopher J. Mungall
+    orcid: 0000-0002-6601-2165
+  description: Automatic translation of UCSC chromosome bands to OWL classes
+  domain: chemistry and biochemistry
+  homepage: http://purl.obolibrary.org/obo/chr.owl
+  id: chr
+  layout: ontology_detail
+  license:
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  ontology_purl: http://purl.obolibrary.org/obo/chr.owl
+  preferredPrefix: obo
+  products:
+  - description: OWL release of Monochrom Ontology
+    id: chr.owl
+    ontology_purl: http://purl.obolibrary.org/obo/chr.owl
+    title: Monochrom Ontology OWL release
+  repository: http://purl.obolibrary.org/obo/chr.owl
+  title: Monochrom Ontology
+  tracker: http://purl.obolibrary.org/obo/chr.owl
+  type: ''
+  uri_prefix: http://purl.obolibrary.org/obo/
 - activity_status: active
   contact:
     email: cthoyt@gmail.com
@@ -190,7 +85,62 @@ ontologies:
   repository: https://github.com/biopragmatics/obo-db-ingest
   title: drugbank
   tracker: https://github.com/biopragmatics/pyobo/issues
+  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/
+- activity_status: active
+  contact:
+    email: cjmungall@lbl.gov
+    github: cmungall
+    label: Christopher J. Mungall
+    orcid: 0000-0002-6601-2165
+  description: Ontology rendering of the EcoSIM Land System Model
+  domain: environment
+  homepage: http://purl.obolibrary.org/obo/ecosim.owl
+  id: ecosim
+  layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/ecosim.owl
+  preferredPrefix: obo
+  products:
+  - description: OWL release of ecosim
+    id: ecosim.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ecosim.owl
+    title: ecosim OWL release
+  repository: http://purl.obolibrary.org/obo/ecosim.owl
+  title: ecosim
+  tracker: http://purl.obolibrary.org/obo/ecosim.owl
+  type: ''
+  uri_prefix: http://purl.obolibrary.org/obo/
+- activity_status: active
+  contact:
+    email: cjmungall@lbl.gov
+    github: cmungall
+    label: Chris Mungall
+    orcid: 0000-0002-6601-2165
+  dependencies:
+  - id: envo
+  - id: foodon
+  - id: ncbitaxon
+  - id: pco
+  - id: po
+  - id: uberon
+  - id: mixs
+  depicted_by: https://gold.jgi.doe.gov/images/logo-JGI-IMG-GOLD.png
+  description: Translation of JGI GOLD path terms to OWL
+  domain: environment
+  homepage: https://gold.jgi.doe.gov/
+  id: goldterms
+  layout: ontology_detail
+  ontology_purl: https://w3id.org/goldterms/goldterms.owl
+  preferredPrefix: GOLDTERMS
+  products:
+  - id: goldterms.owl
+    ontology_purl: https://w3id.org/goldterms/goldterms.owl
+    title: main GOLDTERMS OWL release
+  repository: https://github.com/cmungall/gold-ontology
+  title: GOLD Environmental Paths
+  tracker: https://github.com/cmungall/gold-ontology/issues
+  type: ''
+  uri_prefix: https://w3id.org/goldterms/
 - activity_status: active
   contact:
     email: cthoyt@gmail.com
@@ -223,6 +173,7 @@ ontologies:
   repository: https://github.com/biopragmatics/obo-db-ingest
   title: hgnc
   tracker: https://github.com/biopragmatics/pyobo/issues
+  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/
 - activity_status: active
   contact:
@@ -262,6 +213,7 @@ ontologies:
   repository: https://github.com/biopragmatics/obo-db-ingest
   title: InterPro
   tracker: https://github.com/biopragmatics/pyobo/issues
+  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/
 - activity_status: active
   contact:
@@ -285,6 +237,7 @@ ontologies:
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
   title: KG-IDG
   tracker: https://github.com/Knowledge-Graph-Hub/kg-idg/issues
+  type: ''
   uri_prefix: https://w3id.org/kg-idg/
 - activity_status: active
   contact:
@@ -312,6 +265,7 @@ ontologies:
   repository: https://github.com/Knowledge-Graph-Hub/kg-microbe
   title: KG Microbe
   tracker: https://github.com/Knowledge-Graph-Hub/kg-microbe/issues
+  type: ''
   uri_prefix: https://w3id.org/kg-microbe/
 - activity_status: active
   contact:
@@ -339,6 +293,7 @@ ontologies:
   repository: https://github.com/monarch-initiative/monarch-ingest
   title: KG Monarch
   tracker: https://github.com/monarch-initiative/monarch-ingest/issues
+  type: ''
   uri_prefix: https://w3id.org/kg-monarch/
 - activity_status: active
   contact:
@@ -372,6 +327,7 @@ ontologies:
   repository: https://github.com/INCATools/kgcl/
   title: Knowledge Graph Change Language
   tracker: https://github.com/INCATools/kgcl/issues
+  type: ''
   uri_prefix: https://w3id.org/
 - activity_status: active
   contact:
@@ -400,7 +356,64 @@ ontologies:
   repository: https://w3id.org/mixs
   title: mixs
   tracker: https://w3id.org/mixs
+  type: ''
   uri_prefix: https://w3id.org/
+- activity_status: active
+  contact:
+    email: cjmungall@lbl.gov
+    github: cmungall
+    label: Christopher J. Mungall
+    orcid: 0000-0002-6601-2165
+  description: Noctua Entity Ontology
+  domain: biological systems
+  homepage: http://purl.obolibrary.org/obo/go/noctua/neo.owl
+  id: neo
+  layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/go/noctua/neo.owl
+  preferredPrefix: obo
+  products:
+  - description: OWL release of neo
+    id: neo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/neo.owl
+    title: neo OWL release
+  repository: https://github.com/geneontology/neo/
+  title: neo
+  tracker: https://github.com/geneontology/neo/issues
+  type: ''
+  uri_prefix: http://purl.obolibrary.org/obo/go/noctua/
+- activity_status: active
+  contact:
+    email: cthoyt@gmail.com
+    github: cthoyt
+    label: Charles Tapley Hoyt
+    orcid: 0000-0003-4423-4370
+  description: ORCID in OWL
+  domain: information
+  homepage: https://github.com/cthoyt/orcidio
+  id: orcid
+  layout: ontology_detail
+  license:
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  ontology_purl: https://w3id.org/orcidio/orcid.owl
+  preferredPrefix: http
+  products:
+  - aggregator: obo
+    description: OWL release of ORCID in OWL
+    id: orcidio.owl
+    ontology_purl: http://purl.obolibrary.org/obo/orcidio.owl
+    title: ORCID in OWL OWL release
+  - aggregator: obo
+    description: OBO release of ORCID in OWL
+    id: orcidio.obo
+    ontology_purl: http://purl.obolibrary.org/obo/orcidio.obo
+    title: ORCID in OWL OBO release
+  repository: https://github.com/cthoyt/orcidio
+  title: ORCID
+  tracker: https://github.com/cthoyt/orcidio/issues
+  type: ''
+  uri_prefix: https://w3id.org/orcidio/
 - activity_status: active
   contact:
     email: jmcl@ebi.ac.uk
@@ -432,6 +445,7 @@ ontologies:
   repository: https://github.com/monarch-initiative/phenio
   title: An integrated ontology for Phenomics
   tracker: https://github.com/monarch-initiative/phenio/issues
+  type: ''
   uri_prefix: https://w3id.org/phenio/
   usages:
   - description: phenio is used by the Monarch Initiative for cross-species inference.
@@ -474,6 +488,7 @@ ontologies:
   repository: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
   title: Reactome Entity Ontology (REACTO)
   tracker: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
+  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/go/extensions/
 - activity_status: active
   contact:
@@ -502,6 +517,7 @@ ontologies:
   repository: https://github.com/biopragmatics/obo-db-ingest
   title: Reactome
   tracker: https://github.com/biopragmatics/pyobo/issues
+  type: ''
   uri_prefix: http://www.reactome.org/
 - activity_status: active
   contact:
@@ -540,6 +556,7 @@ ontologies:
   repository: https://github.com/biopragmatics/obo-db-ingest
   title: Rhea, the Annotated Reactions Database
   tracker: https://github.com/biopragmatics/pyobo/issues
+  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/
 - activity_status: active
   contact:
@@ -578,6 +595,7 @@ ontologies:
   repository: https://github.com/biopragmatics/obo-db-ingest
   title: Saccharomyces Genome Database
   tracker: https://github.com/biopragmatics/pyobo/issues
+  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/
 - activity_status: active
   contact:
@@ -611,6 +629,7 @@ ontologies:
   repository: https://github.com/biopragmatics/obo-db-ingest
   title: swisslipid
   tracker: https://github.com/biopragmatics/pyobo/issues
+  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/
 - activity_status: active
   contact:
@@ -644,4 +663,5 @@ ontologies:
   repository: https://github.com/biopragmatics/obo-db-ingest
   title: uniprot
   tracker: https://github.com/biopragmatics/pyobo/issues
+  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/

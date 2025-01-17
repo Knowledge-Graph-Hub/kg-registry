@@ -35,6 +35,7 @@ uri_prefix: http://purl.obolibrary.org/obo/
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/
+type: ""
 ---
 
 Rhea is an expert-curated knowledgebase of chemical and transport reactions of biological interest. Enzyme-catalyzed and spontaneously occurring reactions are curated from peer-reviewed literature and represented in a computationally tractable manner by using the ChEBI (Chemical Entities of Biological Interest) ontology to describe reaction participants.
