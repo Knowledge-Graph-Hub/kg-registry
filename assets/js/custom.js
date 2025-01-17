@@ -102,7 +102,7 @@ jQuery(document).ready(function() {
                             </th>
                             <th scope="col">
                                 <span class="sort-button" title="Sort by status" data-sort="license" >
-                                    OBO Principles <i class="bi-chevron-up" aria-hidden="true"></i>
+                                    Quality Control <i class="bi-chevron-up" aria-hidden="true"></i>
                                 </span>
                             </th>
                         </tr>
