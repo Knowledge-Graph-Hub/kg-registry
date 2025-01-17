@@ -124,7 +124,8 @@
       "description": "'type' is an optional field.",
       "type": "string",
       "enum": [
-        "datamodel"
+        "datamodel",
+        ""
       ]
     },
     "tags": {
