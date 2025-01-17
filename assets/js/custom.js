@@ -105,9 +105,9 @@ jQuery(document).ready(function() {
                                     OBO Principles <i class="bi-chevron-up" aria-hidden="true"></i>
                                 </span>
                             </th>
-                            <th scope="col">
-                                <span>Social</span>
-                            </th>
+                             <th scope="col">
+-                                <span>Social</span>
+-                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -306,8 +306,8 @@ jQuery(document).ready(function() {
                     if (!dash_success) {
                         tr_class += " failing";
                     }
-          // TODO
-          console.log(getDashboardBadge(id, dashboard_success_data[id], dash_success));
+                  // TODO
+                  // console.log(getDashboardBadge(id, dashboard_success_data[id], dash_success));
                     let template = `
                         <tr class="${tr_class}">
                             <th scope="row">
@@ -543,14 +543,15 @@ jQuery(document).ready(function() {
             for (let k = 0; k < data["ontologies"].length; k++) {
                 if (data["ontologies"][k]["type"] !== undefined) {
                     let d = data["ontologies"][k]["type"] //.replace(" and", ",").split(",")
-                    domains.push(d)
+                    resourcetypes.push(d)
                 }
             }
-            domains = [...new Set(domains)];
-            domains.sort();
-            $("#dd-resource-type").append(`<option></option>`);
-            domains.forEach(function(r) {
-                $("#dd-resource-type").append(`<option value="${r.trim()}">${r.trim()}</option>`);
+
+            resourcetypes = [...new Set(resourcetypes)];
+            resourcetypes.sort();
+            $("dd-resourcetypes").append(`<option></option>`);
+            resourcetypes.forEach(function(r) {
+                $("#dd-resourcetypes").append(`<option value="${r.trim()}">${r.trim()}</option>`);
             })
             //render table on page load
             renderTable(data["ontologies"]);
