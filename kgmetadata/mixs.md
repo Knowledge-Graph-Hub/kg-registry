@@ -24,6 +24,7 @@ products:
   description: OBO release of mixs
   aggregator: null
 uri_prefix: https://w3id.org/
+type: ""
 ---
 
 mixs
