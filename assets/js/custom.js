@@ -4,7 +4,6 @@ This doesn't appear to be documented anywhere what it does or why.
 */
 
 jQuery(document).ready(function() {
-
     function search() {
         $('#close', search).hide();
         var data = false;
@@ -78,6 +77,7 @@ jQuery(document).ready(function() {
     function capitalize(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
+
     //surround data table rows generated in rendertable function with table head
     function tableHtml(content, domain = false, tableDomains) {
         return `<div><strong>${ domain? capitalize(tableDomains): ""}</strong></div>
@@ -105,9 +105,6 @@ jQuery(document).ready(function() {
                                     OBO Principles <i class="bi-chevron-up" aria-hidden="true"></i>
                                 </span>
                             </th>
-                             <th scope="col">
--                                <span>Social</span>
--                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -224,15 +221,16 @@ jQuery(document).ready(function() {
                         license_label = data[i]["license"]["label"];
                     }
 
-                    if (data[i]["repository"] && data[i]["repository"].includes("https://github.com/")) {
-                        repo = data[i]["repository"];
-                        github_box = `
-                            <a href="${repo}">
-                                <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/${repo.replace("https://github.com/", "")}?style=social" />
-                            </a>`;
-                    } else {
-                        github_box = ``;
-                    }
+                    // if (data[i]["repository"] && data[i]["repository"].includes("https://github.com/")) {
+                    //     repo = data[i]["repository"];
+                    //     github_box = `
+                    //         <a href="${repo}">
+                    //             <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/${repo.replace("https://github.com/", "")}?style=social" />
+                    //         </a>`;
+                    // } else {
+                    //     github_box = ``;
+                    // }
+
                     if (data[i]["tracker"]) {
                         tracker =`<a class="btn btn-outline-primary" href="${data[i]["tracker"]}" aria-label="Go to the tracker for ${title}" title="Go to the tracker for ${title}">
                                         <i class="bi-chat" aria-hidden="true"></i>
@@ -302,12 +300,12 @@ jQuery(document).ready(function() {
                     //         </a>
                     //     </div>
                     // `;
+
                     let tr_class = is_inactive;
                     if (!dash_success) {
                         tr_class += " failing";
                     }
-                  // TODO
-                  // console.log(getDashboardBadge(id, dashboard_success_data[id], dash_success));
+
                     let template = `
                         <tr class="${tr_class}">
                             <th scope="row">
@@ -341,9 +339,6 @@ jQuery(document).ready(function() {
                             <td>
                                 ${getDashboardBadge(id, dashboard_success_data[id], dash_success)}
                                 ${license_box}
-                            </td>
-                            <td>
-                                ${github_box}
                             </td>
                         </tr>
                     `;
@@ -503,7 +498,7 @@ jQuery(document).ready(function() {
         let dt3 = Search($("#searchVal"), dt2);
         applyFilters(dt3)
     }
-// obtain json data using fetch
+
     fetch('registry/kgs.jsonld')
         .then(response => response.json())
         .then((data) => {
@@ -537,7 +532,8 @@ jQuery(document).ready(function() {
             $("#dd-domains").append(`<option></option>`);
             domains.forEach(function(r) {
                 $("#dd-domains").append(`<option value="${r.trim()}">${r.trim()}</option>`);
-            })
+            });
+
             // extract resource type and set values for dropdown menu
             let resourcetypes = [];
             for (let k = 0; k < data["ontologies"].length; k++) {
