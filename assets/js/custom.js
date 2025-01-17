@@ -496,7 +496,7 @@ jQuery(document).ready(function() {
      */
     function apply_all_filters(data) {
         let selectedDomain = $("#dd-domains").children("option:selected").val();
-        let selectedResourceType = $("#dd-resource-type").children("option:selected").val();
+        let selectedResourceType = $("#dd-resourcetypes").children("option:selected").val();
         let res = data["ontologies"].filter(x => x["domain"] !== undefined);
         let dt = res.filter(x => x["type"].includes(selectedResourceType));
         let dt2 = dt.filter(x => x["domain"].includes(selectedDomain));
@@ -563,8 +563,13 @@ jQuery(document).ready(function() {
             // get table by domain dropdown
             $("#dd-domains").on("change", () => {
                 apply_all_filters(data)
-
             });
+
+            // get table by domain dropdown
+            $("#dd-resourcetypes").on("change", () => {
+                apply_all_filters(data)
+            });
+
             // search word in table
             $("#searchVal").on("keyup", debounce((e) => {
                 apply_all_filters(data)
