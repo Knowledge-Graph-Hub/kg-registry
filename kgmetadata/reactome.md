@@ -26,6 +26,7 @@ products:
   ontology_purl: https://w3id.org/biopragmatics/resources/reactome/reactome.obo
   format: obo
 uri_prefix: http://www.reactome.org/
+type: ""
 ---
 
 REACTOME is an open-source, open access, manually curated and peer-reviewed pathway database.
