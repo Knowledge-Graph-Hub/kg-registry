@@ -309,7 +309,7 @@ jQuery(document).ready(function() {
                     let template = `
                         <tr class="${tr_class}">
                             <th scope="row">
-                                <a href="ontology/${id}.html">
+                                <a href="kgmetadata/${id}.html">
                                     ${id}
                                 </a>
                             </td>
