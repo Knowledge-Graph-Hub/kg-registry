@@ -493,7 +493,7 @@ jQuery(document).ready(function() {
         let selectedDomain = $("#dd-domains").children("option:selected").val();
         let selectedResourceType = $("#dd-resourcetypes").children("option:selected").val();
         let res = data["ontologies"].filter(x => x["domain"] !== undefined);
-        let dt = res.filter(x => x["type"].includes(selectedResourceType));
+        let dt = res.filter(x => x["restype"].includes(selectedResourceType));
         let dt2 = dt.filter(x => x["domain"].includes(selectedDomain));
         let dt3 = Search($("#searchVal"), dt2);
         applyFilters(dt3)
@@ -537,8 +537,8 @@ jQuery(document).ready(function() {
             // extract resource type and set values for dropdown menu
             let resourcetypes = [];
             for (let k = 0; k < data["ontologies"].length; k++) {
-                if (data["ontologies"][k]["type"] !== undefined) {
-                    let d = data["ontologies"][k]["type"] //.replace(" and", ",").split(",")
+                if (data["ontologies"][k]["restype"] !== undefined) {
+                    let d = data["ontologies"][k]["restype"] //.replace(" and", ",").split(",")
                     resourcetypes.push(d)
                 }
             }
