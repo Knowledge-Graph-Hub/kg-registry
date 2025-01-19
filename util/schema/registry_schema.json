@@ -119,9 +119,9 @@
         "simulation"
       ]
     },
-    "type": {
+    "restype": {
       "level": "error",
-      "description": "'type' is a mandatory field for defining the nature of the resource.",
+      "description": "'restype' is a mandatory field for defining the nature of the resource.",
       "type": "string",
       "enum": [
         "data model",
