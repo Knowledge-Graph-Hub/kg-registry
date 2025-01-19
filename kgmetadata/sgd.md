@@ -35,7 +35,7 @@ uri_prefix: http://purl.obolibrary.org/obo/
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/
-type: data resource
+type: "data resource"
 ---
 
 The Saccharomyces Genome Database (SGD) project collects information and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae.

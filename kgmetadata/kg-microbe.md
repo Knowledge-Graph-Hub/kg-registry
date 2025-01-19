@@ -24,7 +24,7 @@ uri_prefix: https://w3id.org/kg-microbe/
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/
-type: knowledge graph
+type: "knowledge graph"
 ---
 
 KG-Microbe.
