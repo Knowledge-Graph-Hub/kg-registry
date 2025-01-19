@@ -29,7 +29,7 @@ products:
 repository: https://github.com/cmungall/gold-ontology
 tracker: https://github.com/cmungall/gold-ontology/issues
 activity_status: active
-type: ""
+type: other
 ---
 
 A rendering of the GOLD ecosystem classification as OWL, plus mappings to MIxS.

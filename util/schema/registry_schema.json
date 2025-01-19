@@ -121,11 +121,14 @@
     },
     "type": {
       "level": "error",
-      "description": "'type' is an optional field.",
+      "description": "'type' is a mandatory field for defining the nature of the resource.",
       "type": "string",
       "enum": [
-        "datamodel",
-        ""
+        "data model",
+        "data resource",
+        "mappings",
+        "knowledge graph",
+        "other"
       ]
     },
     "tags": {
