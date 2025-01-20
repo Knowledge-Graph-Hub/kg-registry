@@ -31,7 +31,7 @@ products:
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom
 uri_prefix: http://purl.obolibrary.org/obo/
-type: ""
+restype: "data resource"
 ---
 
 UniProt Protein
