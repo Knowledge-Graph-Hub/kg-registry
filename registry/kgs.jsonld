@@ -4,40 +4,6 @@
         {
             "activity_status": "active",
             "contact": {
-                "email": "smoxon@lbl.gov",
-                "github": "sierra-moxon",
-                "label": "Sierra Taylor Moxon",
-                "orcid": "0000-0002-8719-7760"
-            },
-            "description": "Entity and association taxonomy and datamodel for life-sciences data",
-            "domain": "upper",
-            "homepage": "https://w3id.org/biolink/biolink-model.owl.ttl",
-            "id": "biolink",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC0 1.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            "ontology_purl": "https://w3id.org/biolink/biolink.owl",
-            "preferredPrefix": "http",
-            "products": [
-                {
-                    "description": "OWL release of Biolink-Model",
-                    "id": "biolink_model.owl.ttl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/biolink_model.owl.ttl",
-                    "title": "Biolink-Model OWL release"
-                }
-            ],
-            "repository": "https://github.com/biolink/biolink-model/",
-            "title": "Biolink-Model",
-            "tracker": "https://github.com/biolink/biolink-model/issues",
-            "type": "datamodel",
-            "uri_prefix": "https://w3id.org/biolink/"
-        },
-        {
-            "activity_status": "active",
-            "contact": {
                 "email": "cjmungall@lbl.gov",
                 "github": "cmungall",
                 "label": "Christopher J. Mungall",
@@ -64,53 +30,9 @@
                 }
             ],
             "repository": "http://purl.obolibrary.org/obo/chr.owl",
+            "restype": "data resource",
             "title": "Monochrom Ontology",
             "tracker": "http://purl.obolibrary.org/obo/chr.owl",
-            "type": "",
-            "uri_prefix": "http://purl.obolibrary.org/obo/"
-        },
-        {
-            "activity_status": "active",
-            "contact": {
-                "email": "cthoyt@gmail.com",
-                "github": "cthoyt",
-                "label": "Charles Tapley Hoyt",
-                "orcid": "0000-0003-4423-4370"
-            },
-            "description": "DrugBank",
-            "domain": "health",
-            "homepage": "https://biopragmatics.github.io/obo-db-ingest/",
-            "id": "drugbank",
-            "layout": "ontology_detail",
-            "ontology_purl": "http://purl.obolibrary.org/obo/drugbank.owl",
-            "preferredPrefix": "obo",
-            "products": [
-                {
-                    "aggregator": "biopragmatics",
-                    "description": "OWL release of drugbank",
-                    "id": "drugbank.owl",
-                    "ontology_purl": "https://w3id.org/biopragmatics/resources/drugbank/drugbank.owl",
-                    "title": "drugbank OWL release"
-                },
-                {
-                    "aggregator": "biopragmatics",
-                    "description": "OBO release of drugbank",
-                    "id": "drugbank.obo",
-                    "ontology_purl": "https://w3id.org/biopragmatics/resources/drugbank/drugbank.obo",
-                    "title": "drugbank OBO release"
-                },
-                {
-                    "aggregator": "biopragmatics",
-                    "description": "SSSOM release of drugbank",
-                    "id": "drugbank.sssom",
-                    "ontology_purl": "https://w3id.org/biopragmatics/resources/drugbank/drugbank.sssom",
-                    "title": "drugbank SSSOM release"
-                }
-            ],
-            "repository": "https://github.com/biopragmatics/obo-db-ingest",
-            "title": "drugbank",
-            "tracker": "https://github.com/biopragmatics/pyobo/issues",
-            "type": "",
             "uri_prefix": "http://purl.obolibrary.org/obo/"
         },
         {
@@ -137,9 +59,9 @@
                 }
             ],
             "repository": "http://purl.obolibrary.org/obo/ecosim.owl",
+            "restype": "other",
             "title": "ecosim",
             "tracker": "http://purl.obolibrary.org/obo/ecosim.owl",
-            "type": "",
             "uri_prefix": "http://purl.obolibrary.org/obo/"
         },
         {
@@ -189,10 +111,176 @@
                 }
             ],
             "repository": "https://github.com/cmungall/gold-ontology",
+            "restype": "other",
             "title": "GOLD Environmental Paths",
             "tracker": "https://github.com/cmungall/gold-ontology/issues",
-            "type": "",
             "uri_prefix": "https://w3id.org/goldterms/"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "email": "cjmungall@lbl.gov",
+                "github": "cmungall",
+                "label": "Christopher J. Mungall",
+                "orcid": "0000-0002-6601-2165"
+            },
+            "description": "Noctua Entity Ontology",
+            "domain": "biological systems",
+            "homepage": "http://purl.obolibrary.org/obo/go/noctua/neo.owl",
+            "id": "neo",
+            "layout": "ontology_detail",
+            "ontology_purl": "http://purl.obolibrary.org/obo/go/noctua/neo.owl",
+            "preferredPrefix": "obo",
+            "products": [
+                {
+                    "description": "OWL release of neo",
+                    "id": "neo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/neo.owl",
+                    "title": "neo OWL release"
+                }
+            ],
+            "repository": "https://github.com/geneontology/neo/",
+            "restype": "other",
+            "title": "neo",
+            "tracker": "https://github.com/geneontology/neo/issues",
+            "uri_prefix": "http://purl.obolibrary.org/obo/go/noctua/"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "email": "cthoyt@gmail.com",
+                "github": "cthoyt",
+                "label": "Charles Tapley Hoyt",
+                "orcid": "0000-0003-4423-4370"
+            },
+            "description": "ORCID in OWL",
+            "domain": "information",
+            "homepage": "https://github.com/cthoyt/orcidio",
+            "id": "orcid",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC0 1.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            "ontology_purl": "https://w3id.org/orcidio/orcid.owl",
+            "preferredPrefix": "http",
+            "products": [
+                {
+                    "aggregator": "obo",
+                    "description": "OWL release of ORCID in OWL",
+                    "id": "orcidio.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/orcidio.owl",
+                    "title": "ORCID in OWL OWL release"
+                },
+                {
+                    "aggregator": "obo",
+                    "description": "OBO release of ORCID in OWL",
+                    "id": "orcidio.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/orcidio.obo",
+                    "title": "ORCID in OWL OBO release"
+                }
+            ],
+            "repository": "https://github.com/cthoyt/orcidio",
+            "restype": "other",
+            "title": "ORCID",
+            "tracker": "https://github.com/cthoyt/orcidio/issues",
+            "uri_prefix": "https://w3id.org/orcidio/"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "email": "smoxon@lbl.gov",
+                "github": "sierra-moxon",
+                "label": "Sierra Taylor Moxon",
+                "orcid": "0000-0002-8719-7760"
+            },
+            "description": "Entity and association taxonomy and datamodel for life-sciences data",
+            "domain": "upper",
+            "homepage": "https://w3id.org/biolink/biolink-model.owl.ttl",
+            "id": "biolink",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC0 1.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            "ontology_purl": "https://w3id.org/biolink/biolink.owl",
+            "preferredPrefix": "http",
+            "products": [
+                {
+                    "description": "OWL release of Biolink-Model",
+                    "id": "biolink_model.owl.ttl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/biolink_model.owl.ttl",
+                    "title": "Biolink-Model OWL release"
+                }
+            ],
+            "repository": "https://github.com/biolink/biolink-model/",
+            "restype": "data model",
+            "title": "Biolink-Model",
+            "tracker": "https://github.com/biolink/biolink-model/issues",
+            "uri_prefix": "https://w3id.org/biolink/"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "email": "cthoyt@gmail.com",
+                "github": "cthoyt",
+                "label": "Charles Tapley Hoyt",
+                "orcid": "0000-0003-4423-4370"
+            },
+            "description": "DrugBank",
+            "domain": "health",
+            "homepage": "https://biopragmatics.github.io/obo-db-ingest/",
+            "id": "drugbank",
+            "layout": "ontology_detail",
+            "ontology_purl": "http://purl.obolibrary.org/obo/drugbank.owl",
+            "preferredPrefix": "obo",
+            "products": [
+                {
+                    "aggregator": "biopragmatics",
+                    "description": "OWL release of drugbank",
+                    "id": "drugbank.owl",
+                    "ontology_purl": "https://w3id.org/biopragmatics/resources/drugbank/drugbank.owl",
+                    "title": "drugbank OWL release"
+                },
+                {
+                    "aggregator": "biopragmatics",
+                    "description": "OBO release of drugbank",
+                    "id": "drugbank.obo",
+                    "ontology_purl": "https://w3id.org/biopragmatics/resources/drugbank/drugbank.obo",
+                    "title": "drugbank OBO release"
+                },
+                {
+                    "aggregator": "biopragmatics",
+                    "description": "SSSOM release of drugbank",
+                    "id": "drugbank.sssom",
+                    "ontology_purl": "https://w3id.org/biopragmatics/resources/drugbank/drugbank.sssom",
+                    "title": "drugbank SSSOM release"
+                }
+            ],
+            "repository": "https://github.com/biopragmatics/obo-db-ingest",
+            "restype": "data resource",
+            "title": "drugbank",
+            "tracker": "https://github.com/biopragmatics/pyobo/issues",
+            "uri_prefix": "http://purl.obolibrary.org/obo/"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "github": "diatomsRcool",
+                "label": "Anne Thessen"
+            },
+            "description": "A knowledge graph of plant traits starting with Planteome and EOL TraitBank.",
+            "domain": "organisms",
+            "homepage": "https://kghub.org/eco-kg/index.html",
+            "id": "eco-kg",
+            "layout": "ontology_detail",
+            "preferredPrefix": "http",
+            "repository": "https://github.com/Knowledge-Graph-Hub/eco-kg",
+            "restype": "knowledge graph",
+            "title": "eco-KG",
+            "tracker": "https://github.com/Knowledge-Graph-Hub/eco-kg/issues"
         },
         {
             "activity_status": "active",
@@ -233,9 +321,9 @@
                 }
             ],
             "repository": "https://github.com/biopragmatics/obo-db-ingest",
+            "restype": "data resource",
             "title": "hgnc",
             "tracker": "https://github.com/biopragmatics/pyobo/issues",
-            "type": "",
             "uri_prefix": "http://purl.obolibrary.org/obo/"
         },
         {
@@ -282,10 +370,44 @@
                 }
             ],
             "repository": "https://github.com/biopragmatics/obo-db-ingest",
+            "restype": "data resource",
             "title": "InterPro",
             "tracker": "https://github.com/biopragmatics/pyobo/issues",
-            "type": "",
             "uri_prefix": "http://purl.obolibrary.org/obo/"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "github": "justaddcoffee",
+                "label": "Justin Reese"
+            },
+            "description": "A knowledge graph for COVID-19 and SARS-COV-2.",
+            "domain": "organisms",
+            "homepage": "https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki",
+            "id": "kg-covid-19",
+            "layout": "ontology_detail",
+            "preferredPrefix": "http",
+            "repository": "https://github.com/Knowledge-Graph-Hub/kg-covid-19",
+            "restype": "knowledge graph",
+            "title": "KG-COVID-19",
+            "tracker": "https://github.com/Knowledge-Graph-Hub/kg-covid-19/issues"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "github": "oolonek",
+                "label": "Pierre-Marie Allard"
+            },
+            "description": "Experimental natural products knowledge graph.",
+            "domain": "organisms",
+            "homepage": "https://enpkg.commons-lab.org/",
+            "id": "kg-enp",
+            "layout": "ontology_detail",
+            "preferredPrefix": "http",
+            "repository": "https://github.com/enpkg/enpkg_full",
+            "restype": "knowledge graph",
+            "title": "kg-enp",
+            "tracker": "https://github.com/enpkg/enpkg_full/issues"
         },
         {
             "activity_status": "active",
@@ -312,9 +434,9 @@
                 }
             ],
             "repository": "https://github.com/Knowledge-Graph-Hub/kg-idg",
+            "restype": "knowledge graph",
             "title": "KG-IDG",
             "tracker": "https://github.com/Knowledge-Graph-Hub/kg-idg/issues",
-            "type": "",
             "uri_prefix": "https://w3id.org/kg-idg/"
         },
         {
@@ -347,9 +469,9 @@
                 }
             ],
             "repository": "https://github.com/Knowledge-Graph-Hub/kg-microbe",
+            "restype": "knowledge graph",
             "title": "KG Microbe",
             "tracker": "https://github.com/Knowledge-Graph-Hub/kg-microbe/issues",
-            "type": "",
             "uri_prefix": "https://w3id.org/kg-microbe/"
         },
         {
@@ -382,9 +504,9 @@
                 }
             ],
             "repository": "https://github.com/monarch-initiative/monarch-ingest",
+            "restype": "knowledge graph",
             "title": "KG Monarch",
             "tracker": "https://github.com/monarch-initiative/monarch-ingest/issues",
-            "type": "",
             "uri_prefix": "https://w3id.org/kg-monarch/"
         },
         {
@@ -424,9 +546,9 @@
                 }
             ],
             "repository": "https://github.com/INCATools/kgcl/",
+            "restype": "data model",
             "title": "Knowledge Graph Change Language",
             "tracker": "https://github.com/INCATools/kgcl/issues",
-            "type": "",
             "uri_prefix": "https://w3id.org/"
         },
         {
@@ -461,81 +583,10 @@
                 }
             ],
             "repository": "https://w3id.org/mixs",
+            "restype": "other",
             "title": "mixs",
             "tracker": "https://w3id.org/mixs",
-            "type": "",
             "uri_prefix": "https://w3id.org/"
-        },
-        {
-            "activity_status": "active",
-            "contact": {
-                "email": "cjmungall@lbl.gov",
-                "github": "cmungall",
-                "label": "Christopher J. Mungall",
-                "orcid": "0000-0002-6601-2165"
-            },
-            "description": "Noctua Entity Ontology",
-            "domain": "biological systems",
-            "homepage": "http://purl.obolibrary.org/obo/go/noctua/neo.owl",
-            "id": "neo",
-            "layout": "ontology_detail",
-            "ontology_purl": "http://purl.obolibrary.org/obo/go/noctua/neo.owl",
-            "preferredPrefix": "obo",
-            "products": [
-                {
-                    "description": "OWL release of neo",
-                    "id": "neo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/neo.owl",
-                    "title": "neo OWL release"
-                }
-            ],
-            "repository": "https://github.com/geneontology/neo/",
-            "title": "neo",
-            "tracker": "https://github.com/geneontology/neo/issues",
-            "type": "",
-            "uri_prefix": "http://purl.obolibrary.org/obo/go/noctua/"
-        },
-        {
-            "activity_status": "active",
-            "contact": {
-                "email": "cthoyt@gmail.com",
-                "github": "cthoyt",
-                "label": "Charles Tapley Hoyt",
-                "orcid": "0000-0003-4423-4370"
-            },
-            "description": "ORCID in OWL",
-            "domain": "information",
-            "homepage": "https://github.com/cthoyt/orcidio",
-            "id": "orcid",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC0 1.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            "ontology_purl": "https://w3id.org/orcidio/orcid.owl",
-            "preferredPrefix": "http",
-            "products": [
-                {
-                    "aggregator": "obo",
-                    "description": "OWL release of ORCID in OWL",
-                    "id": "orcidio.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/orcidio.owl",
-                    "title": "ORCID in OWL OWL release"
-                },
-                {
-                    "aggregator": "obo",
-                    "description": "OBO release of ORCID in OWL",
-                    "id": "orcidio.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/orcidio.obo",
-                    "title": "ORCID in OWL OBO release"
-                }
-            ],
-            "repository": "https://github.com/cthoyt/orcidio",
-            "title": "ORCID",
-            "tracker": "https://github.com/cthoyt/orcidio/issues",
-            "type": "",
-            "uri_prefix": "https://w3id.org/orcidio/"
         },
         {
             "activity_status": "active",
@@ -573,9 +624,9 @@
                 }
             ],
             "repository": "https://github.com/monarch-initiative/phenio",
+            "restype": "other",
             "title": "An integrated ontology for Phenomics",
             "tracker": "https://github.com/monarch-initiative/phenio/issues",
-            "type": "",
             "uri_prefix": "https://w3id.org/phenio/",
             "usages": [
                 {
@@ -629,9 +680,9 @@
                 }
             ],
             "repository": "http://purl.obolibrary.org/obo/go/extensions/reacto.owl",
+            "restype": "other",
             "title": "Reactome Entity Ontology (REACTO)",
             "tracker": "http://purl.obolibrary.org/obo/go/extensions/reacto.owl",
-            "type": "",
             "uri_prefix": "http://purl.obolibrary.org/obo/go/extensions/"
         },
         {
@@ -666,9 +717,9 @@
                 }
             ],
             "repository": "https://github.com/biopragmatics/obo-db-ingest",
+            "restype": "data resource",
             "title": "Reactome",
             "tracker": "https://github.com/biopragmatics/pyobo/issues",
-            "type": "",
             "uri_prefix": "http://www.reactome.org/"
         },
         {
@@ -715,10 +766,27 @@
                 }
             ],
             "repository": "https://github.com/biopragmatics/obo-db-ingest",
+            "restype": "data resource",
             "title": "Rhea, the Annotated Reactions Database",
             "tracker": "https://github.com/biopragmatics/pyobo/issues",
-            "type": "",
             "uri_prefix": "http://purl.obolibrary.org/obo/"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "github": "emanuelecavalleri",
+                "label": "Emanuele Cavalleri"
+            },
+            "description": "An ontology-based KG for representing interactions involving RNA molecules.",
+            "domain": "organisms",
+            "homepage": "RNA-KG.anacleto.di.unimi.it/",
+            "id": "rna-kg",
+            "layout": "ontology_detail",
+            "preferredPrefix": "http",
+            "repository": "https://github.com/AnacletoLAB/RNA-KG",
+            "restype": "knowledge graph",
+            "title": "RNA-KG",
+            "tracker": "https://github.com/AnacletoLAB/RNA-KG/issues"
         },
         {
             "activity_status": "active",
@@ -764,10 +832,27 @@
                 }
             ],
             "repository": "https://github.com/biopragmatics/obo-db-ingest",
+            "restype": "data resource",
             "title": "Saccharomyces Genome Database",
             "tracker": "https://github.com/biopragmatics/pyobo/issues",
-            "type": "",
             "uri_prefix": "http://purl.obolibrary.org/obo/"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "github": "pnrobinson",
+                "label": "Peter Robinson"
+            },
+            "description": "A graph of synthetic lethal interactions.",
+            "domain": "organisms",
+            "homepage": "https://kghub.io/sldb/",
+            "id": "sldb",
+            "layout": "ontology_detail",
+            "preferredPrefix": "http",
+            "repository": "https://github.com/monarch-initiative/SLDBGen",
+            "restype": "knowledge graph",
+            "title": "sldb",
+            "tracker": "https://github.com/monarch-initiative/SLDBGen/issues"
         },
         {
             "activity_status": "active",
@@ -808,9 +893,9 @@
                 }
             ],
             "repository": "https://github.com/biopragmatics/obo-db-ingest",
+            "restype": "data resource",
             "title": "swisslipid",
             "tracker": "https://github.com/biopragmatics/pyobo/issues",
-            "type": "",
             "uri_prefix": "http://purl.obolibrary.org/obo/"
         },
         {
@@ -852,9 +937,9 @@
                 }
             ],
             "repository": "https://github.com/biopragmatics/obo-db-ingest",
+            "restype": "data resource",
             "title": "uniprot",
             "tracker": "https://github.com/biopragmatics/pyobo/issues",
-            "type": "",
             "uri_prefix": "http://purl.obolibrary.org/obo/"
         }
     ]
