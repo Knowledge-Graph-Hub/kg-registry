@@ -20,8 +20,14 @@ jobs:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
       - name: Install Poetry
-        run: |
-          pip install poetry
+        uses: snok/install-poetry@v1
+        with:
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+          virtualenvs-path: .venv
+          installer-parallel: true
+      - name: Install dependencies
+        run: poetry install --no-interaction --no-root
       - name: Create local changes
         run: |
           poetry install --no-interaction
