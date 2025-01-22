@@ -24,7 +24,7 @@ products:
   description: OBO release of Reactome Entity Ontology (REACTO)
   aggregator: null
 uri_prefix: http://purl.obolibrary.org/obo/go/extensions/
-type: ""
+restype: "other"
 ---
 
 For logical inference, import the integrated tbox ontology http://purl.obolibrary.org/obo/go/extensions/go-lego-reacto.owl

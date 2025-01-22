@@ -19,7 +19,7 @@ products:
   title: neo OWL release
   description: OWL release of neo
 uri_prefix: http://purl.obolibrary.org/obo/go/noctua/
-type: ""
+restype: "other"
 ---
 
 Noctua Entity Ontology. Conversion of gene and gene-centric entity IDs from uniprot and MODs.

@@ -38,7 +38,7 @@ usages:
   type: analysis
   user: https://monarchinitiative.org/
 activity_status: active
-type: ""
+restype: "other"
 ---
 
 PHENIO
