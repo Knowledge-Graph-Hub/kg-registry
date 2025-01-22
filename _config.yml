@@ -40,9 +40,9 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/chr.owl
     title: Monochrom Ontology OWL release
   repository: http://purl.obolibrary.org/obo/chr.owl
+  restype: data resource
   title: Monochrom Ontology
   tracker: http://purl.obolibrary.org/obo/chr.owl
-  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/
 - activity_status: active
   contact:
@@ -63,9 +63,9 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/ecosim.owl
     title: ecosim OWL release
   repository: http://purl.obolibrary.org/obo/ecosim.owl
+  restype: other
   title: ecosim
   tracker: http://purl.obolibrary.org/obo/ecosim.owl
-  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/
 - activity_status: active
   contact:
@@ -94,9 +94,9 @@ ontologies:
     ontology_purl: https://w3id.org/goldterms/goldterms.owl
     title: main GOLDTERMS OWL release
   repository: https://github.com/cmungall/gold-ontology
+  restype: other
   title: GOLD Environmental Paths
   tracker: https://github.com/cmungall/gold-ontology/issues
-  type: ''
   uri_prefix: https://w3id.org/goldterms/
 - activity_status: active
   contact:
@@ -117,9 +117,9 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/neo.owl
     title: neo OWL release
   repository: https://github.com/geneontology/neo/
+  restype: other
   title: neo
   tracker: https://github.com/geneontology/neo/issues
-  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/go/noctua/
 - activity_status: active
   contact:
@@ -150,9 +150,9 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/orcidio.obo
     title: ORCID in OWL OBO release
   repository: https://github.com/cthoyt/orcidio
+  restype: other
   title: ORCID
   tracker: https://github.com/cthoyt/orcidio/issues
-  type: ''
   uri_prefix: https://w3id.org/orcidio/
 - activity_status: active
   contact:
@@ -177,9 +177,9 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/biolink_model.owl.ttl
     title: Biolink-Model OWL release
   repository: https://github.com/biolink/biolink-model/
+  restype: data model
   title: Biolink-Model
   tracker: https://github.com/biolink/biolink-model/issues
-  type: datamodel
   uri_prefix: https://w3id.org/biolink/
 - activity_status: active
   contact:
@@ -211,10 +211,24 @@ ontologies:
     ontology_purl: https://w3id.org/biopragmatics/resources/drugbank/drugbank.sssom
     title: drugbank SSSOM release
   repository: https://github.com/biopragmatics/obo-db-ingest
+  restype: data resource
   title: drugbank
   tracker: https://github.com/biopragmatics/pyobo/issues
-  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/
+- activity_status: active
+  contact:
+    github: diatomsRcool
+    label: Anne Thessen
+  description: A knowledge graph of plant traits starting with Planteome and EOL TraitBank.
+  domain: organisms
+  homepage: https://kghub.org/eco-kg/index.html
+  id: eco-kg
+  layout: ontology_detail
+  preferredPrefix: http
+  repository: https://github.com/Knowledge-Graph-Hub/eco-kg
+  restype: knowledge graph
+  title: eco-KG
+  tracker: https://github.com/Knowledge-Graph-Hub/eco-kg/issues
 - activity_status: active
   contact:
     email: cthoyt@gmail.com
@@ -245,9 +259,9 @@ ontologies:
     ontology_purl: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom
     title: hgnc SSSOM release
   repository: https://github.com/biopragmatics/obo-db-ingest
+  restype: data resource
   title: hgnc
   tracker: https://github.com/biopragmatics/pyobo/issues
-  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/
 - activity_status: active
   contact:
@@ -285,10 +299,38 @@ ontologies:
     ontology_purl: https://w3id.org/biopragmatics/resources/interpro/interpro.sssom
     title: InterPro SSSOM release
   repository: https://github.com/biopragmatics/obo-db-ingest
+  restype: data resource
   title: InterPro
   tracker: https://github.com/biopragmatics/pyobo/issues
-  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/
+- activity_status: active
+  contact:
+    github: justaddcoffee
+    label: Justin Reese
+  description: A knowledge graph for COVID-19 and SARS-COV-2.
+  domain: organisms
+  homepage: https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki
+  id: kg-covid-19
+  layout: ontology_detail
+  preferredPrefix: http
+  repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
+  restype: knowledge graph
+  title: KG-COVID-19
+  tracker: https://github.com/Knowledge-Graph-Hub/kg-covid-19/issues
+- activity_status: active
+  contact:
+    github: oolonek
+    label: Pierre-Marie Allard
+  description: Experimental natural products knowledge graph.
+  domain: organisms
+  homepage: https://enpkg.commons-lab.org/
+  id: kg-enp
+  layout: ontology_detail
+  preferredPrefix: http
+  repository: https://github.com/enpkg/enpkg_full
+  restype: knowledge graph
+  title: kg-enp
+  tracker: https://github.com/enpkg/enpkg_full/issues
 - activity_status: active
   contact:
     email: jhc@lbl.gov
@@ -309,9 +351,9 @@ ontologies:
     ontology_purl: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
     title: KGX Distribution of KG-IDG
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
+  restype: knowledge graph
   title: KG-IDG
   tracker: https://github.com/Knowledge-Graph-Hub/kg-idg/issues
-  type: ''
   uri_prefix: https://w3id.org/kg-idg/
 - activity_status: active
   contact:
@@ -337,9 +379,9 @@ ontologies:
     ontology_purl: https://kg-hub.berkeleybop.io/kg-microbe/current/kg-microbe.tar.gz
     title: KGX Distribution of KGM
   repository: https://github.com/Knowledge-Graph-Hub/kg-microbe
+  restype: knowledge graph
   title: KG Microbe
   tracker: https://github.com/Knowledge-Graph-Hub/kg-microbe/issues
-  type: ''
   uri_prefix: https://w3id.org/kg-microbe/
 - activity_status: active
   contact:
@@ -365,9 +407,9 @@ ontologies:
     ontology_purl: https://kg-hub.berkeleybop.io/kg-monarch/current/kg-monarch.tar.gz
     title: KGX Distribution of KGM
   repository: https://github.com/monarch-initiative/monarch-ingest
+  restype: knowledge graph
   title: KG Monarch
   tracker: https://github.com/monarch-initiative/monarch-ingest/issues
-  type: ''
   uri_prefix: https://w3id.org/kg-monarch/
 - activity_status: active
   contact:
@@ -399,9 +441,9 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/kgcl.obo
     title: Knowledge Graph Change Language OBO release
   repository: https://github.com/INCATools/kgcl/
+  restype: data model
   title: Knowledge Graph Change Language
   tracker: https://github.com/INCATools/kgcl/issues
-  type: ''
   uri_prefix: https://w3id.org/
 - activity_status: active
   contact:
@@ -428,10 +470,28 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/mixs.obo
     title: mixs OBO release
   repository: https://w3id.org/mixs
+  restype: other
   title: mixs
   tracker: https://w3id.org/mixs
-  type: ''
   uri_prefix: https://w3id.org/
+- activity_status: active
+  contact:
+    github: https://github.com/callahantiff/
+    label: Tiffany Callahan
+  description: PheKnowLator (Phenotype Knowledge Translator) or pkt_kg is the first
+    fully customizable knowledge graph (KG) construction framework enabling users
+    to build complex KGs that are Semantic Web compliant and amenable to automatic
+    Web Ontology Language (OWL) reasoning, generate contemporary property graphs,
+    and are importable by today’s popular graph toolkits.
+  domain: organisms
+  homepage: https://github.com/callahantiff/PheKnowLator
+  id: pheknowlator
+  layout: ontology_detail
+  preferredPrefix: http
+  repository: https://github.com/callahantiff/PheKnowLator
+  restype: knowledge graph
+  title: PheKnowLator
+  tracker: https://github.com/callahantiff/PheKnowLator/issues
 - activity_status: active
   contact:
     email: jmcl@ebi.ac.uk
@@ -461,9 +521,9 @@ ontologies:
     title: phenio KG
     type: kgx
   repository: https://github.com/monarch-initiative/phenio
+  restype: other
   title: An integrated ontology for Phenomics
   tracker: https://github.com/monarch-initiative/phenio/issues
-  type: ''
   uri_prefix: https://w3id.org/phenio/
   usages:
   - description: phenio is used by the Monarch Initiative for cross-species inference.
@@ -504,9 +564,9 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/reacto.obo
     title: Reactome Entity Ontology (REACTO) OBO release
   repository: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
+  restype: other
   title: Reactome Entity Ontology (REACTO)
   tracker: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
-  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/go/extensions/
 - activity_status: active
   contact:
@@ -533,9 +593,9 @@ ontologies:
     ontology_purl: https://w3id.org/biopragmatics/resources/reactome/reactome.obo
     title: Reactome Human, Biopragmatics
   repository: https://github.com/biopragmatics/obo-db-ingest
+  restype: data resource
   title: Reactome
   tracker: https://github.com/biopragmatics/pyobo/issues
-  type: ''
   uri_prefix: http://www.reactome.org/
 - activity_status: active
   contact:
@@ -572,10 +632,24 @@ ontologies:
     ontology_purl: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom
     title: Rhea, the Annotated Reactions Database SSSOM release
   repository: https://github.com/biopragmatics/obo-db-ingest
+  restype: data resource
   title: Rhea, the Annotated Reactions Database
   tracker: https://github.com/biopragmatics/pyobo/issues
-  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/
+- activity_status: active
+  contact:
+    github: emanuelecavalleri
+    label: Emanuele Cavalleri
+  description: An ontology-based KG for representing interactions involving RNA molecules.
+  domain: organisms
+  homepage: RNA-KG.anacleto.di.unimi.it/
+  id: rna-kg
+  layout: ontology_detail
+  preferredPrefix: http
+  repository: https://github.com/AnacletoLAB/RNA-KG
+  restype: knowledge graph
+  title: RNA-KG
+  tracker: https://github.com/AnacletoLAB/RNA-KG/issues
 - activity_status: active
   contact:
     email: cthoyt@gmail.com
@@ -611,10 +685,24 @@ ontologies:
     ontology_purl: https://w3id.org/biopragmatics/resources/sgd/sgd.sssom
     title: Saccharomyces Genome Database SSSOM release
   repository: https://github.com/biopragmatics/obo-db-ingest
+  restype: data resource
   title: Saccharomyces Genome Database
   tracker: https://github.com/biopragmatics/pyobo/issues
-  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/
+- activity_status: active
+  contact:
+    github: pnrobinson
+    label: Peter Robinson
+  description: A graph of synthetic lethal interactions.
+  domain: organisms
+  homepage: https://kghub.io/sldb/
+  id: sldb
+  layout: ontology_detail
+  preferredPrefix: http
+  repository: https://github.com/monarch-initiative/SLDBGen
+  restype: knowledge graph
+  title: sldb
+  tracker: https://github.com/monarch-initiative/SLDBGen/issues
 - activity_status: active
   contact:
     email: cthoyt@gmail.com
@@ -645,9 +733,9 @@ ontologies:
     ontology_purl: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.sssom
     title: swisslipid SSSOM release
   repository: https://github.com/biopragmatics/obo-db-ingest
+  restype: data resource
   title: swisslipid
   tracker: https://github.com/biopragmatics/pyobo/issues
-  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/
 - activity_status: active
   contact:
@@ -679,9 +767,9 @@ ontologies:
     ontology_purl: https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom
     title: uniprot SSSOM release
   repository: https://github.com/biopragmatics/obo-db-ingest
+  restype: data resource
   title: uniprot
   tracker: https://github.com/biopragmatics/pyobo/issues
-  type: ''
   uri_prefix: http://purl.obolibrary.org/obo/
 principles:
 - id: fp-000-summary
