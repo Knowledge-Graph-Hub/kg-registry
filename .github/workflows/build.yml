@@ -13,7 +13,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: obolibrary/odkfull:v1.2.30
+    container: obolibrary/odkfull:v1.5.4
     steps:
       - uses: actions/checkout@main
         with:
