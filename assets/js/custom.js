@@ -80,7 +80,7 @@ jQuery(document).ready(function() {
 
     //surround data table rows generated in rendertable function with table head
     function tableHtml(content, domain = false, tableDomains) {
-        return `<div><strong>${ domain? capitalize(tableDomains): ""}</strong></div>
+        return `<div class="p-1 bg-light"><strong>${ domain? capitalize(tableDomains): ""}</strong></div>
                 <table id="ont_table" class="table table-hover sortable">
                     <thead>
                         <tr>
