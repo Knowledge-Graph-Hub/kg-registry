@@ -28,7 +28,7 @@ uri_prefix: https://w3id.org/
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/
-type: ""
+restype: "data model"
 ---
 
 A data model for describing change operations at a high level on an ontology or ontology-like artefact, such as a Knowledge Graph.
