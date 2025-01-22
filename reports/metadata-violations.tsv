@@ -11,6 +11,7 @@ INFO	KG-MICROBE products: 'kg-microbe.tar.gz' does not match '^[0-9A-Za-z-_\\/]+
 INFO	KG-MONARCH products: 'kg-monarch.tar.gz' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
 INFO	KGCL products: None is not of type 'string'
 INFO	MIXS products: None is not of type 'string'
+INFO	PHEKNOWLATOR products: 'products' is a required property
 INFO	PHENIO products: 'phenio.kgx' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
 INFO	REACTO products: None is not of type 'string'
 INFO	REACTOME products: 'reactome-hs-biopax.db.gz' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
