@@ -9,8 +9,6 @@ preferredPrefix: http
 contact:
   orcid: 0000-0002-8367-0733
   github: https://github.com/bioannidis
-  email: 
-  label: 
 homepage: https://github.com/gnn4dr/DRKG
 tracker: https://github.com/gnn4dr/DRKG/issues
 repository: https://github.com/gnn4dr/DRKG
