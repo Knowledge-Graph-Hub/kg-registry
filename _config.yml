@@ -183,6 +183,22 @@ ontologies:
   uri_prefix: https://w3id.org/biolink/
 - activity_status: active
   contact:
+    github: https://github.com/bioannidis
+    orcid: 0000-0002-8367-0733
+  description: Drug Repurposing Knowledge Graph (DRKG) is a comprehensive biological
+    knowledge graph relating genes, compounds, diseases, biological processes, side
+    effects and symptoms.
+  domain: health
+  homepage: https://github.com/gnn4dr/DRKG
+  id: drkg
+  layout: ontology_detail
+  preferredPrefix: http
+  repository: https://github.com/gnn4dr/DRKG
+  restype: knowledge graph
+  title: DRKG
+  tracker: https://github.com/gnn4dr/DRKG/issues
+- activity_status: active
+  contact:
     email: cthoyt@gmail.com
     github: cthoyt
     label: Charles Tapley Hoyt
