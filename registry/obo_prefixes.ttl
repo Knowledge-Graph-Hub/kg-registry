@@ -8,6 +8,7 @@
 ,[ sh:prefix "obo" ; sh:namespace "http://purl.obolibrary.org/obo/obo_"]
 ,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
 ,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
+,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
 ,[ sh:prefix "obo" ; sh:namespace "http://purl.obolibrary.org/obo/obo_"]
 ,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
 ,[ sh:prefix "obo" ; sh:namespace "http://purl.obolibrary.org/obo/obo_"]

@@ -5,6 +5,7 @@ goldterms,active,PASS
 neo,active,PASS
 orcid,active,PASS
 biolink,active,INFO
+drkg,active,INFO
 drugbank,active,INFO
 eco-kg,active,INFO
 hgnc,active,INFO
