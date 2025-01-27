@@ -7,7 +7,14 @@ description: A Translator Knowledge Provider applying text-mined assertions.
 domain: information
 restype: "knowledge graph"
 contact:
-  label: "Edgar Gatica, Bill Baumgartner"
+  label: Edgar Gatica
+  email: ""
+  github: ""
+  orcid: ""
+homepage: ""
+tracker: ""
+repository: ""
+preferredPrefix: http
 products:
 - id: targeted_assertions.tar.gz
   format: kgx
@@ -16,3 +23,5 @@ products:
 ---
 
 A Translator Knowledge Provider applying text-mined assertions.
+
+Contacts: Edgar Gatica and Bill Baumgartner

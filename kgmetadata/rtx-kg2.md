@@ -8,7 +8,9 @@ domain: health
 restype: "knowledge graph"
 contact:
   label: "Amy Glen, Steven Ramsey"
-
+homepage: ""
+tracker: https://github.com/RTXteam/RTX-KG2/issues
+repository: https://github.com/RTXteam/RTX-KG2
 ---
 
 A comprehensive knowledge graph from the RTX team.

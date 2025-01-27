@@ -8,6 +8,9 @@ domain: information
 restype: "knowledge graph"
 contact:
   label: "Jim Balhoff"
+homepage: ""
+tracker: ""
+repository: ""
 ---
 
 A Translator Knowledge Provider dedicated to ontology-based services.

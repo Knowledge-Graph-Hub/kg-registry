@@ -9,6 +9,12 @@ restype: "knowledge graph"
 contact:
   label: "Kevin Schaper"
   email: kevinschaper@gmail.com
+  github: kevinschaper
+  orcid: 0000-0003-3311-7320
+homepage: ""
+tracker: ""
+repository: ""
+preferredPrefix: http
 products:
 - id: monarch-kg.tar.gz
   format: kgx
