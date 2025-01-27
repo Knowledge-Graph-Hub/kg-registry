@@ -9,6 +9,7 @@ restype: "knowledge graph"
 contact:
   label: "Jim Balhoff"
   email: balhoff@renci.org
+homepage: https://github.com/ExposuresProvider/cam-kp-api
 ---
 
 The “cam-kp” Exposures Knowledge Graph

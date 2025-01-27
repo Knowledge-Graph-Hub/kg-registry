@@ -9,7 +9,12 @@ restype: "knowledge graph"
 contact:
   label: "Kara Fecho"
   email: kfecho@renci.org
-
+  github: karafecho
+  orcid: 0000-0002-6704-9306
+homepage: ""
+tracker: ""
+repository: ""
+preferredPrefix: http
 products:
 - id: icees_kgx_files
   format: kgx

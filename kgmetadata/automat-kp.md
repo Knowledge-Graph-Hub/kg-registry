@@ -9,7 +9,12 @@ restype: "knowledge graph"
 contact:
   label: "Yaphet Kebede"
   email: kebedey@renci.org
-
+  github: YaphetKG
+  orcid: 0000-0002-5046-0246
+homepage: https://robokop.renci.org/api-docs/docs/category/automat
+tracker: ""
+repository: ""
+preferredPrefix: http
 products:
 - id: robokopkg
   format: kgx

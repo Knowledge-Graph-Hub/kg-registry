@@ -8,6 +8,9 @@ domain: health
 restype: "knowledge graph"
 contact:
   label: "Chunlei Wu"
+homepage: ""
+tracker: ""
+repository: ""
 ---
 
-A Translator Knowledge Provider providing
+A Translator Knowledge Provider providing...

@@ -8,6 +8,9 @@ domain: health
 restype: "knowledge graph"
 contact:
   label: "Sui Huang, Sergio Baranzini"
+homepage: https://spoke.ucsf.edu/
+tracker: ""
+repository: ""
 ---
 
 SPOKE is a Knowledge Graph from UCSF covering many aspects of biomedicine.

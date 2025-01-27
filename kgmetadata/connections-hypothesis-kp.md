@@ -8,6 +8,7 @@ domain: health
 restype: "knowledge graph"
 contact:
   label: "Gregory Hyde"
+homepage: https://github.com/di2ag/chp_api
 ---
 
 A Translator Knowledge Provider exploring connections hypotheses.

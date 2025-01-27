@@ -7,7 +7,14 @@ description: A Translator Knowledge Provider for molecular data.
 domain: health
 restype: "knowledge graph"
 contact:
-  label: "Sandrine Muller, Vlado Dancik, Larry Chung"
+  label: "Sandrine Muller"
+  email: ""
+  orcid: 0000-0001-5998-3003
+  github: ""
+homepage: ""
+tracker: ""
+repository: ""
+preferredPrefix: http
 products:
 - id: nodes.tsv
   format: kgx
@@ -20,3 +27,5 @@ products:
 ---
 
 A Translator Knowledge Provider for molecular data.
+
+Contacts: Sandrine Muller, Vlado Dancik, and Larry Chung
