@@ -138,6 +138,97 @@ ontologies:
   uri_prefix: https://w3id.org/orcidio/
 - activity_status: active
   contact:
+    email: kebedey@renci.org
+    github: YaphetKG
+    label: Yaphet Kebede
+    orcid: 0000-0002-5046-0246
+  description: A Translator Knowledge Provider offering multiple sub-graphs in KGX
+    format.
+  domain: health
+  homepage: https://robokop.renci.org/api-docs/docs/category/automat
+  id: automat
+  layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/automat.owl
+  preferredPrefix: http
+  products:
+  - description: Robokop KG (Automat)
+    format: kgx
+    id: robokopkg
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files
+  - description: Robokop Plus
+    format: kgx
+    id: robokopplus
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files
+  - description: Biolink Automat
+    format: kgx
+    id: biolink_automat
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
+  - description: CTD Automat
+    format: kgx
+    id: ctd_automat
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files
+  - description: DrugCentral Automat
+    format: kgx
+    id: drugcentral_automat
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
+  - description: GTEx Automat
+    format: kgx
+    id: gtex_automat
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/GTEx_Automat/latest/kgx_files
+  - description: GtoPdb Automat
+    format: kgx
+    id: gtopdb_automat
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/GtoPdb_Automat/latest/kgx_files
+  - description: GWASCatalog Automat
+    format: kgx
+    id: gwascatalog_automat
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/GWASCatalog_Automat/latest/kgx_files
+  - description: Hetio Automat
+    format: kgx
+    id: hetio_automat
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/Hetio_Automat/latest/kgx_files
+  - description: HGNC Automat
+    format: kgx
+    id: hgnc_automat
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/HGNC_Automat/latest/kgx_files
+  - description: HMDB Automat
+    format: kgx
+    id: hmdb_automat
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/HMDB_Automat/latest/kgx_files
+  - description: HumanGOA Automat
+    format: kgx
+    id: humangoa_automat
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/HumanGOA_Automat/latest/kgx_files
+  - description: IntAct Automat
+    format: kgx
+    id: intact_automat
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/IntAct_Automat/latest/kgx_files
+  - description: OntologicalHierarchy Automat
+    format: kgx
+    id: ontologicalhierarchy_automat
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/OntologicalHierarchy_Automat/latest/kgx_files
+  - description: PANTHER Automat
+    format: kgx
+    id: panther_automat
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/PANTHER_Automat/latest/kgx_files
+  - description: PHAROS Automat
+    format: kgx
+    id: pharos_automat
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/PHAROS_Automat/latest/kgx_files
+  - description: STRING-DB Automat
+    format: kgx
+    id: stringdb_automat
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/STRING-DB_Automat/latest/kgx_files
+  - description: UberGraph Automat
+    format: kgx
+    id: ubergraph_automat
+    ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files
+  repository: ''
+  restype: knowledge graph
+  title: Automat
+  tracker: ''
+- activity_status: active
+  contact:
     email: smoxon@lbl.gov
     github: sierra-moxon
     label: Sierra Taylor Moxon
@@ -163,6 +254,37 @@ ontologies:
   title: Biolink-Model
   tracker: https://github.com/biolink/biolink-model/issues
   uri_prefix: https://w3id.org/biolink/
+- activity_status: active
+  contact:
+    email: balhoff@renci.org
+    label: Jim Balhoff
+  description: The “cam-kp” Exposures Knowledge Graph (in development).
+  domain: health
+  homepage: https://github.com/ExposuresProvider/cam-kp-api
+  id: cam-kp
+  layout: ontology_detail
+  restype: knowledge graph
+  title: Exposures KP (cam kp)
+- activity_status: active
+  contact:
+    label: Casey Ta, Vincent Emonet, Michel Dumontier
+  description: A Translator Knowledge Provider integrating clinical data.
+  domain: health
+  homepage: https://ncats.nih.gov/research/research-activities/translator/projects
+  id: clinical-data-kp
+  layout: ontology_detail
+  restype: knowledge graph
+  title: Clinical Data KP
+- activity_status: active
+  contact:
+    label: Gregory Hyde
+  description: A Translator Knowledge Provider exploring connections hypotheses.
+  domain: health
+  homepage: https://github.com/di2ag/chp_api
+  id: connections-hypothesis-kp
+  layout: ontology_detail
+  restype: knowledge graph
+  title: Connections Hypothesis KP
 - activity_status: active
   contact:
     github: https://github.com/bioannidis
@@ -229,6 +351,16 @@ ontologies:
   tracker: https://github.com/Knowledge-Graph-Hub/eco-kg/issues
 - activity_status: active
   contact:
+    label: Jason Flannick
+  description: A Translator Knowledge Provider focusing on genetic data.
+  domain: health
+  homepage: ''
+  id: genetics-kp
+  layout: ontology_detail
+  restype: knowledge graph
+  title: Genetics KP
+- activity_status: active
+  contact:
     email: cthoyt@gmail.com
     github: cthoyt
     label: Charles Tapley Hoyt
@@ -261,6 +393,28 @@ ontologies:
   title: hgnc
   tracker: https://github.com/biopragmatics/pyobo/issues
   uri_prefix: http://purl.obolibrary.org/obo/
+- activity_status: active
+  contact:
+    email: kfecho@renci.org
+    github: karafecho
+    label: Kara Fecho
+    orcid: 0000-0002-6704-9306
+  description: The ICEES-based Exposures Knowledge Graph.
+  domain: health
+  homepage: ''
+  id: icees-kg
+  layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/icees-kg.owl
+  preferredPrefix: http
+  products:
+  - description: KGX distribution of the ICEES Exposures KP
+    format: kgx
+    id: icees_kgx_files
+    ontology_purl: https://stars.renci.org/var/plater/bl-2.1/icees_kgx_files/
+  repository: ''
+  restype: knowledge graph
+  title: Exposures KP (icees-kg)
+  tracker: ''
 - activity_status: active
   contact:
     email: cthoyt@gmail.com
@@ -474,6 +628,30 @@ ontologies:
   uri_prefix: https://w3id.org/
 - activity_status: active
   contact:
+    label: Gustavo Glusman, Guangrong Qin
+  description: A Translator Knowledge Provider incorporating multiomics data.
+  domain: health
+  homepage: ''
+  id: multiomics-kp
+  layout: ontology_detail
+  repository: ''
+  restype: knowledge graph
+  title: Multiomics KP
+  tracker: ''
+- activity_status: active
+  contact:
+    label: Jim Balhoff
+  description: A Translator Knowledge Provider dedicated to ontology-based services.
+  domain: information
+  homepage: ''
+  id: ontology-kp
+  layout: ontology_detail
+  repository: ''
+  restype: knowledge graph
+  title: Ontology KP
+  tracker: ''
+- activity_status: active
+  contact:
     github: https://github.com/callahantiff/
     label: Tiffany Callahan
   description: PheKnowLator (Phenotype Knowledge Translator) or pkt_kg is the first
@@ -650,6 +828,30 @@ ontologies:
   tracker: https://github.com/AnacletoLAB/RNA-KG/issues
 - activity_status: active
   contact:
+    label: Amy Glen, Steven Ramsey
+  description: A comprehensive knowledge graph from the RTX team.
+  domain: health
+  homepage: ''
+  id: rtx-kg2
+  layout: ontology_detail
+  repository: https://github.com/RTXteam/RTX-KG2
+  restype: knowledge graph
+  title: RTX-KG2
+  tracker: https://github.com/RTXteam/RTX-KG2/issues
+- activity_status: active
+  contact:
+    label: Chunlei Wu
+  description: A Translator Knowledge Provider
+  domain: health
+  homepage: ''
+  id: service-kp
+  layout: ontology_detail
+  repository: ''
+  restype: knowledge graph
+  title: Service KP
+  tracker: ''
+- activity_status: active
+  contact:
     email: cthoyt@gmail.com
     github: cthoyt
     label: Charles Tapley Hoyt
@@ -701,6 +903,41 @@ ontologies:
   restype: knowledge graph
   title: sldb
   tracker: https://github.com/monarch-initiative/SLDBGen/issues
+- activity_status: active
+  contact:
+    label: Sui Huang, Sergio Baranzini
+  description: A Knowledge Graph from UCSF covering many aspects of biomedicine.
+  domain: health
+  homepage: https://spoke.ucsf.edu/
+  id: spoke
+  layout: ontology_detail
+  repository: ''
+  restype: knowledge graph
+  title: SPOKE
+  tracker: ''
+- activity_status: active
+  contact:
+    email: kevinschaper@gmail.com
+    github: kevinschaper
+    label: Kevin Schaper
+    orcid: 0000-0003-3311-7320
+  description: The Monarch Initiative’s SRI reference knowledge graph.
+  domain: health
+  homepage: ''
+  id: sri-reference-kg
+  layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/sri-reference-kg.owl
+  preferredPrefix: http
+  products:
+  - description: KGX distribution of the SRI-Reference KG
+    format: kgx
+    id: monarch-kg.tar.gz
+    ontology_purl: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+    title: SRI-Reference KG (KGX distribution)
+  repository: ''
+  restype: knowledge graph
+  title: SRI-Reference KG
+  tracker: ''
 - activity_status: active
   contact:
     email: cthoyt@gmail.com
@@ -769,3 +1006,51 @@ ontologies:
   title: uniprot
   tracker: https://github.com/biopragmatics/pyobo/issues
   uri_prefix: http://purl.obolibrary.org/obo/
+- activity_status: active
+  contact:
+    email: ''
+    github: ''
+    label: Sandrine Muller
+    orcid: 0000-0001-5998-3003
+  description: A Translator Knowledge Provider for molecular data.
+  domain: health
+  homepage: ''
+  id: molecular-data-kp
+  layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/molecular-data-kp.owl
+  preferredPrefix: http
+  products:
+  - description: KGX nodes for Molecular Data KP
+    format: kgx
+    id: nodes.tsv
+    ontology_purl: https://molepro.s3.amazonaws.com/nodes.tsv
+  - description: KGX edges for Molecular Data KP
+    format: kgx
+    id: edges.tsv
+    ontology_purl: https://molepro.s3.amazonaws.com/edges.tsv
+  repository: ''
+  restype: knowledge graph
+  title: Molecular Data KP
+  tracker: ''
+- activity_status: active
+  contact:
+    email: ''
+    github: ''
+    label: Edgar Gatica
+    orcid: ''
+  description: A Translator Knowledge Provider applying text-mined assertions.
+  domain: information
+  homepage: ''
+  id: text-mining-kp
+  layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/text-mining-kp.owl
+  preferredPrefix: http
+  products:
+  - description: Text Mining KP KGX distribution
+    format: kgx
+    id: targeted_assertions.tar.gz
+    ontology_purl: https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz
+  repository: ''
+  restype: knowledge graph
+  title: Text Mining KP
+  tracker: ''

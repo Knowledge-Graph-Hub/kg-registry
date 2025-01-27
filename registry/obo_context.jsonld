@@ -1,5 +1,41 @@
 {
     "@context": {
+        "CAM-KP": {
+            "@id": "http://purl.obolibrary.org/obo/CAM-KP_",
+            "@prefix": true
+        },
+        "CLINICAL-DATA-KP": {
+            "@id": "http://purl.obolibrary.org/obo/CLINICAL-DATA-KP_",
+            "@prefix": true
+        },
+        "CONNECTIONS-HYPOTHESIS-KP": {
+            "@id": "http://purl.obolibrary.org/obo/CONNECTIONS-HYPOTHESIS-KP_",
+            "@prefix": true
+        },
+        "GENETICS-KP": {
+            "@id": "http://purl.obolibrary.org/obo/GENETICS-KP_",
+            "@prefix": true
+        },
+        "MULTIOMICS-KP": {
+            "@id": "http://purl.obolibrary.org/obo/MULTIOMICS-KP_",
+            "@prefix": true
+        },
+        "ONTOLOGY-KP": {
+            "@id": "http://purl.obolibrary.org/obo/ONTOLOGY-KP_",
+            "@prefix": true
+        },
+        "RTX-KG2": {
+            "@id": "http://purl.obolibrary.org/obo/RTX-KG2_",
+            "@prefix": true
+        },
+        "SERVICE-KP": {
+            "@id": "http://purl.obolibrary.org/obo/SERVICE-KP_",
+            "@prefix": true
+        },
+        "SPOKE": {
+            "@id": "http://purl.obolibrary.org/obo/SPOKE_",
+            "@prefix": true
+        },
         "http": {
             "@id": "http://purl.obolibrary.org/obo/http_",
             "@prefix": true
