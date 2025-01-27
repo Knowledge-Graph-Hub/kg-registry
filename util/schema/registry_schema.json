@@ -77,10 +77,7 @@
         }
       },
       "required": [
-        "email",
-        "label",
-        "github",
-        "orcid"
+        "label"
       ]
     },
     "description": {
