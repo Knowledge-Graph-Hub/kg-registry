@@ -9,7 +9,7 @@ restype: "knowledge graph"
 contact:
   label: "Kara Fecho"
   email: kfecho@renci.org
-  
+
 products:
 - id: icees_kgx_files
   format: kgx
