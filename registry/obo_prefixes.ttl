@@ -26,6 +26,7 @@
 ,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
 ,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
 ,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
+,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
 ,[ sh:prefix "MULTIOMICS-KP" ; sh:namespace "http://purl.obolibrary.org/obo/MULTIOMICS-KP_"]
 ,[ sh:prefix "ONTOLOGY-KP" ; sh:namespace "http://purl.obolibrary.org/obo/ONTOLOGY-KP_"]
 ,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
@@ -41,7 +42,6 @@
 ,[ sh:prefix "SPOKE" ; sh:namespace "http://purl.obolibrary.org/obo/SPOKE_"]
 ,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
 ,[ sh:prefix "obo" ; sh:namespace "http://purl.obolibrary.org/obo/obo_"]
+,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
 ,[ sh:prefix "obo" ; sh:namespace "http://purl.obolibrary.org/obo/obo_"]
-,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
-,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
 ] .

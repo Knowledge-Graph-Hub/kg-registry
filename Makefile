@@ -29,7 +29,7 @@
 ### Configuration
 
 # All KG .md files
-KGS := $(wildcard kgmetadata/*.md)
+KGS := $(wildcard resource/*.md)
 
 # All principles .md files
 PRINCIPLES := $(wildcard principles/*.md)
