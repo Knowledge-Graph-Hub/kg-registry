@@ -8,9 +8,7 @@ domain: health
 restype: "knowledge graph"
 contact:
   label: "Sandrine Muller"
-  email: ""
   orcid: 0000-0001-5998-3003
-  github: ""
 homepage: ""
 tracker: ""
 repository: ""

@@ -264,8 +264,8 @@ ontologies:
   preferredPrefix: http
   products:
   - description: OWL release of Biolink-Model
-    id: biolink_model.owl.ttl
-    ontology_purl: http://purl.obolibrary.org/obo/biolink_model.owl.ttl
+    id: biolink-model.owl.ttl
+    ontology_purl: http://purl.obolibrary.org/obo/biolink-model.owl.ttl
     title: Biolink-Model OWL release
   repository: https://github.com/biolink/biolink-model/
   restype: data model
@@ -646,6 +646,30 @@ ontologies:
   uri_prefix: https://w3id.org/
 - activity_status: active
   contact:
+    label: Sandrine Muller
+    orcid: 0000-0001-5998-3003
+  description: A Translator Knowledge Provider for molecular data.
+  domain: health
+  homepage: ''
+  id: molecular-data-kp
+  layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/molecular-data-kp.owl
+  preferredPrefix: http
+  products:
+  - description: KGX nodes for Molecular Data KP
+    format: kgx
+    id: nodes.tsv
+    ontology_purl: https://molepro.s3.amazonaws.com/nodes.tsv
+  - description: KGX edges for Molecular Data KP
+    format: kgx
+    id: edges.tsv
+    ontology_purl: https://molepro.s3.amazonaws.com/edges.tsv
+  repository: ''
+  restype: knowledge graph
+  title: Molecular Data KP
+  tracker: ''
+- activity_status: active
+  contact:
     label: Gustavo Glusman, Guangrong Qin
   description: A Translator Knowledge Provider incorporating multiomics data.
   domain: health
@@ -992,6 +1016,25 @@ ontologies:
   uri_prefix: http://purl.obolibrary.org/obo/
 - activity_status: active
   contact:
+    label: Edgar Gatica
+  description: A Translator Knowledge Provider applying text-mined assertions.
+  domain: information
+  homepage: ''
+  id: text-mining-kp
+  layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/text-mining-kp.owl
+  preferredPrefix: http
+  products:
+  - description: Text Mining KP KGX distribution
+    format: kgx
+    id: targeted_assertions.tar.gz
+    ontology_purl: https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz
+  repository: ''
+  restype: knowledge graph
+  title: Text Mining KP
+  tracker: ''
+- activity_status: active
+  contact:
     email: cthoyt@gmail.com
     github: cthoyt
     label: Charles Tapley Hoyt
@@ -1024,54 +1067,6 @@ ontologies:
   title: uniprot
   tracker: https://github.com/biopragmatics/pyobo/issues
   uri_prefix: http://purl.obolibrary.org/obo/
-- activity_status: active
-  contact:
-    email: ''
-    github: ''
-    label: Sandrine Muller
-    orcid: 0000-0001-5998-3003
-  description: A Translator Knowledge Provider for molecular data.
-  domain: health
-  homepage: ''
-  id: molecular-data-kp
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/molecular-data-kp.owl
-  preferredPrefix: http
-  products:
-  - description: KGX nodes for Molecular Data KP
-    format: kgx
-    id: nodes.tsv
-    ontology_purl: https://molepro.s3.amazonaws.com/nodes.tsv
-  - description: KGX edges for Molecular Data KP
-    format: kgx
-    id: edges.tsv
-    ontology_purl: https://molepro.s3.amazonaws.com/edges.tsv
-  repository: ''
-  restype: knowledge graph
-  title: Molecular Data KP
-  tracker: ''
-- activity_status: active
-  contact:
-    email: ''
-    github: ''
-    label: Edgar Gatica
-    orcid: ''
-  description: A Translator Knowledge Provider applying text-mined assertions.
-  domain: information
-  homepage: ''
-  id: text-mining-kp
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/text-mining-kp.owl
-  preferredPrefix: http
-  products:
-  - description: Text Mining KP KGX distribution
-    format: kgx
-    id: targeted_assertions.tar.gz
-    ontology_purl: https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz
-  repository: ''
-  restype: knowledge graph
-  title: Text Mining KP
-  tracker: ''
 principles:
 - id: fp-000-summary
   layout: principle
