@@ -8,9 +8,6 @@ domain: information
 restype: "knowledge graph"
 contact:
   label: Edgar Gatica
-  email: ""
-  github: ""
-  orcid: ""
 homepage: ""
 tracker: ""
 repository: ""

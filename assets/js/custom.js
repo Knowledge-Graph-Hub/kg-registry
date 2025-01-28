@@ -309,7 +309,7 @@ jQuery(document).ready(function() {
                     let template = `
                         <tr class="${tr_class}">
                             <th scope="row">
-                                <a href="kgmetadata/${id}.html">
+                                <a href="resource/${id}.html">
                                     ${id}
                                 </a>
                             </td>
