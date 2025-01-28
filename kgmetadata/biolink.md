@@ -16,7 +16,7 @@ homepage: https://w3id.org/biolink/biolink-model.owl.ttl
 tracker: https://github.com/biolink/biolink-model/issues
 repository: https://github.com/biolink/biolink-model/
 products:
-- id: biolink_model.owl.ttl
+- id: biolink-model.owl.ttl
   title: Biolink-Model OWL release
   description: OWL release of Biolink-Model
 uri_prefix: https://w3id.org/biolink/
