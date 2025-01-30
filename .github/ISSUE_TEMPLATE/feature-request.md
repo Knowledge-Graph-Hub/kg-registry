@@ -1,13 +1,16 @@
----
 name: Feature request
-about: Suggest a new feature to add to the KG-Registry software framework
-title: ''
-labels: enhancement
-assignees: ''
+description: Suggest a new feature to add to the KG-Registry site
+labels: [ enhancement ]
 
----
-(Note: this template is for requesting new features in the software, not new datasets to ingest. Use the "Dataset request" for that.)
-
-### Describe the desired behavior
-
-## Additional context
+body:
+  - type: markdown
+    attributes:
+      value: This is the form for suggesting a new feature to add to the KG-Registry site.
+  - type: input
+    id: description
+    attributes:
+      label: Description
+      description: What feature would you like to see added?
+      placeholder: e.g., more colors
+    validations:
+      required: true
