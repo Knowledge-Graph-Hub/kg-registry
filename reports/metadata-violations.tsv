@@ -35,4 +35,5 @@ INFO	SPOKE products: 'products' is a required property
 INFO	SRI-REFERENCE-KG products: 'monarch-kg.tar.gz' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
 INFO	SWISSLIPID products: 'swisslipid.sssom' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
 INFO	TEXT-MINING-KP products: 'targeted_assertions.tar.gz' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
+INFO	UBERGRAPH products: 'ubergraph' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
 INFO	UNIPROT products: 'uniprot.sssom' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'

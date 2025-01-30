@@ -89,21 +89,24 @@ _:b33   <http://www.w3.org/2000/01/rdf-schema#label>  "Charles Tapley Hoyt" ;
 
 _:b34   <http://www.w3.org/2000/01/rdf-schema#label>  "Edgar Gatica" .
 
-_:b35   <http://www.w3.org/2000/01/rdf-schema#label>  "Charles Tapley Hoyt" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "cthoyt@gmail.com" .
-
-_:b36   <http://www.w3.org/2000/01/rdf-schema#label>  "Yaphet Kebede" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "kebedey@renci.org" .
-
-_:b37   <http://www.w3.org/2000/01/rdf-schema#label>  "Sierra Taylor Moxon" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "smoxon@lbl.gov" .
-
-_:b38   <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
+_:b35   <http://www.w3.org/2000/01/rdf-schema#label>  "James P. Balhoff" ;
         <http://xmlns.com/foaf/0.1/mbox>  "balhoff@renci.org" .
 
-_:b39   <http://www.w3.org/2000/01/rdf-schema#label>  "Casey Ta, Vincent Emonet, Michel Dumontier" .
+_:b36   <http://www.w3.org/2000/01/rdf-schema#label>  "Charles Tapley Hoyt" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "cthoyt@gmail.com" .
 
-_:b40   <http://www.w3.org/2000/01/rdf-schema#label>  "Gregory Hyde" .
+_:b37   <http://www.w3.org/2000/01/rdf-schema#label>  "Yaphet Kebede" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "kebedey@renci.org" .
+
+_:b38   <http://www.w3.org/2000/01/rdf-schema#label>  "Sierra Taylor Moxon" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "smoxon@lbl.gov" .
+
+_:b39   <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "balhoff@renci.org" .
+
+_:b40   <http://www.w3.org/2000/01/rdf-schema#label>  "Casey Ta, Vincent Emonet, Michel Dumontier" .
+
+_:b41   <http://www.w3.org/2000/01/rdf-schema#label>  "Gregory Hyde" .
 
 <http://purl.obolibrary.org/obo/automat>
         <http://identifiers.org/preferredPrefix>  "http" ;
@@ -113,7 +116,7 @@ _:b40   <http://www.w3.org/2000/01/rdf-schema#label>  "Gregory Hyde" .
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/automat.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b36 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b37 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/robokopkg> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/robokopplus> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/biolink_automat> ;
@@ -143,7 +146,7 @@ _:b40   <http://www.w3.org/2000/01/rdf-schema#label>  "Gregory Hyde" .
         <http://purl.org/dc/terms/1.1/theme>  "upper" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/biolink/biolink-model/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "https://w3id.org/biolink/biolink.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b37 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b38 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/biolink-model.owl.ttl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://w3id.org/biolink/biolink-model.owl.ttl> .
 
@@ -162,7 +165,7 @@ _:b40   <http://www.w3.org/2000/01/rdf-schema#label>  "Gregory Hyde" .
         <http://purl.org/dc/elements/1.1/description>  "The “cam-kp” Exposures Knowledge Graph (in development)." ;
         <http://purl.org/dc/elements/1.1/title>  "Exposures KP (cam kp)" ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b38 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b39 ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/ExposuresProvider/cam-kp-api> .
 
 <http://purl.obolibrary.org/obo/chr>
@@ -188,7 +191,7 @@ _:b40   <http://www.w3.org/2000/01/rdf-schema#label>  "Gregory Hyde" .
         <http://purl.org/dc/elements/1.1/description>  "A Translator Knowledge Provider integrating clinical data." ;
         <http://purl.org/dc/elements/1.1/title>  "Clinical Data KP" ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b39 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b40 ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://ncats.nih.gov/research/research-activities/translator/projects> .
 
 <http://purl.obolibrary.org/obo/connections-hypothesis-kp>
@@ -196,7 +199,7 @@ _:b40   <http://www.w3.org/2000/01/rdf-schema#label>  "Gregory Hyde" .
         <http://purl.org/dc/elements/1.1/description>  "A Translator Knowledge Provider exploring connections hypotheses." ;
         <http://purl.org/dc/elements/1.1/title>  "Connections Hypothesis KP" ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b40 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b41 ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/di2ag/chp_api> .
 
 <http://purl.obolibrary.org/obo/ctd_automat>
@@ -211,7 +214,7 @@ _:b40   <http://www.w3.org/2000/01/rdf-schema#label>  "Gregory Hyde" .
         <http://purl.org/dc/elements/1.1/title>  "DRKG" ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/gnn4dr/DRKG/issues" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b41 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b42 ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/gnn4dr/DRKG> .
 
 <http://purl.obolibrary.org/obo/drugbank>
@@ -911,6 +914,22 @@ _:b40   <http://www.w3.org/2000/01/rdf-schema#label>  "Gregory Hyde" .
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/targeted_assertions.tar.gz> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://purl.obolibrary.org/obo/> .
 
+<http://purl.obolibrary.org/obo/ubergraph>
+        <http://identifiers.org/preferredPrefix>  "http" ;
+        <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
+        <http://purl.org/dc/elements/1.1/description>  "Ubergraph is an RDF triplestore integrating OBO ontologies into a unified semantic graph" ;
+        <http://purl.org/dc/elements/1.1/description>  "A Blazegraph RDF database containing precomputed OWL inferences for OBO ontologies" ;
+        <http://purl.org/dc/elements/1.1/title>  "Ubergraph" ;
+        <http://purl.org/dc/elements/1.1/title>  "Ubergraph Blazegraph Database" ;
+        <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/theme>  "information" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/INCATools/ubergraph/issues" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ubergraph.owl" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "https://ubergraph.apps.renci.org/sparql" ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b35 ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ubergraph> ;
+        <http://xmlns.com/foaf/0.1/homepage>  <https://ubergraph.apps.renci.org/sparql> .
+
 <http://purl.obolibrary.org/obo/ubergraph_automat>
         <http://purl.org/dc/elements/1.1/description>  "UberGraph Automat" ;
         <http://purl.org/dc/terms/1.1/format>  "kgx" ;
@@ -924,7 +943,7 @@ _:b40   <http://www.w3.org/2000/01/rdf-schema#label>  "Gregory Hyde" .
         <http://purl.org/dc/terms/1.1/theme>  "biological systems" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/biopragmatics/pyobo/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uniprot.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b35 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b36 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uniprot.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uniprot.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uniprot.sssom> ;
