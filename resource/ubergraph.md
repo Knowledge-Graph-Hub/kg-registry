@@ -7,19 +7,26 @@ description: Ubergraph is an RDF triplestore integrating OBO ontologies into a u
 domain: information
 restype: "knowledge graph"
 contact:
-  orcid: 0000-0003-1319-7955
+  orcid: 0000-0002-8688-6599
   github: balhoff
   email: balhoff@renci.org
   label: James P. Balhoff
-preferredPrefix: http
 homepage: https://ubergraph.apps.renci.org/sparql
 tracker: https://github.com/INCATools/ubergraph/issues
 repository: https://github.com/INCATools/ubergraph
 products:
-- id: ubergraph
-  title: Ubergraph Blazegraph Database
-  description: A Blazegraph RDF database containing precomputed OWL inferences for OBO ontologies
+- id: ubergraph.rdf
+  title: Ubergraph RDF
+  description: RDF of Ubergraph
   ontology_purl: https://ubergraph.apps.renci.org/sparql
+- id: ubergraph.blazegraph.jnl
+  title: Ubergraph blazegraph journal
+  description: Blazegraph journal of Ubergraph
+  ontology_purl: https://ubergraph.apps.renci.org/downloads/current/ubergraph.jnl.gz
+- id: ubergraph.nquads
+  title: Ubergraph n-quads
+  description: Ubergraph n-quads
+  ontology_purl:  https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz  
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/
@@ -28,11 +35,3 @@ license:
 ### Ubergraph: A Unified Semantic Knowledge Graph for OBO Ontologies
 
 Ubergraph is an RDF triplestore and public SPARQL query endpoint that integrates a suite of **39 OBO ontologies**, precomputing OWL inferences into a traversable **knowledge graph**. This enables efficient semantic reasoning over multiple ontologies, without requiring extensive local computation.
-
-### Features
-- **SPARQL Query Interface:** Provides a web-based endpoint for querying OBO ontologies.
-- **Precomputed OWL Inferences:** Stores OWL-based logical inferences as RDF triples for fast access.
-- **Relation Graphs:** Simplifies ontology access by storing subclass and existential relations as standard RDF triples.
-- **Ontology Classification:** Uses the **ELK reasoner** to compute class hierarchies.
-- **Biolink Model Integration:** Connects OBO terms to Biolink categories.
-
