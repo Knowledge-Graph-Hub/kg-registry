@@ -1017,6 +1017,34 @@ ontologies:
   tracker: ''
 - activity_status: active
   contact:
+    email: balhoff@renci.org
+    github: balhoff
+    label: James P. Balhoff
+    orcid: 0000-0003-1319-7955
+  description: Ubergraph is an RDF triplestore integrating OBO ontologies into a unified
+    semantic graph
+  domain: information
+  homepage: https://ubergraph.apps.renci.org/sparql
+  id: ubergraph
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/ubergraph.owl
+  preferredPrefix: http
+  products:
+  - description: A Blazegraph RDF database containing precomputed OWL inferences for
+      OBO ontologies
+    id: ubergraph
+    ontology_purl: https://ubergraph.apps.renci.org/sparql
+    title: Ubergraph Blazegraph Database
+  repository: https://github.com/INCATools/ubergraph
+  restype: knowledge graph
+  title: Ubergraph
+  tracker: https://github.com/INCATools/ubergraph/issues
+- activity_status: active
+  contact:
     email: cthoyt@gmail.com
     github: cthoyt
     label: Charles Tapley Hoyt
