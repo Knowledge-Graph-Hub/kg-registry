@@ -40,6 +40,10 @@
             "@id": "http://purl.obolibrary.org/obo/SPOKE_",
             "@prefix": true
         },
+        "UBERGRAPH": {
+            "@id": "http://purl.obolibrary.org/obo/UBERGRAPH_",
+            "@prefix": true
+        },
         "http": {
             "@id": "http://purl.obolibrary.org/obo/http_",
             "@prefix": true
