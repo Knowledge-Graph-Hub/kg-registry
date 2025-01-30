@@ -2,6 +2,7 @@ Level	Message
 INFO	AUTOMAT products: 'ubergraph_automat' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
 INFO	BIOLINK products: 'biolink-model.owl.ttl' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
 INFO	CAM-KP products: 'products' is a required property
+INFO	CFDE products: 'products' is a required property
 INFO	CLINICAL-DATA-KP products: 'products' is a required property
 INFO	CONNECTIONS-HYPOTHESIS-KP products: 'products' is a required property
 INFO	DRKG products: 'products' is a required property
