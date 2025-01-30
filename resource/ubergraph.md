@@ -35,6 +35,3 @@ license:
 ### Ubergraph: A Unified Semantic Knowledge Graph for OBO Ontologies
 
 Ubergraph is an RDF triplestore and public SPARQL query endpoint that integrates a suite of **39 OBO ontologies**, precomputing OWL inferences into a traversable **knowledge graph**. This enables efficient semantic reasoning over multiple ontologies, without requiring extensive local computation.
-
-### Features
-- **SP
