@@ -4,6 +4,10 @@
             "@id": "http://purl.obolibrary.org/obo/CAM-KP_",
             "@prefix": true
         },
+        "CFDE": {
+            "@id": "http://purl.obolibrary.org/obo/CFDE_",
+            "@prefix": true
+        },
         "CLINICAL-DATA-KP": {
             "@id": "http://purl.obolibrary.org/obo/CLINICAL-DATA-KP_",
             "@prefix": true
