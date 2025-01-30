@@ -15,10 +15,18 @@ homepage: https://ubergraph.apps.renci.org/sparql
 tracker: https://github.com/INCATools/ubergraph/issues
 repository: https://github.com/INCATools/ubergraph
 products:
-- id: ubergraph
-  title: Ubergraph Blazegraph Database
-  description: A Blazegraph RDF database containing precomputed OWL inferences for OBO ontologies
+- id: ubergraph.rdf
+  title: Ubergraph RDF
+  description: RDF of Ubergraph
   ontology_purl: https://ubergraph.apps.renci.org/sparql
+- id: ubergraph.blazegraph.jnl
+  title: Ubergraph blazegraph journal
+  description: Blazegraph journal of Ubergraph
+  ontology_purl: https://ubergraph.apps.renci.org/downloads/current/ubergraph.jnl.gz
+- id: ubergraph.blazegraph.jnl
+  title: Ubergraph n-quads
+  description: Ubergraph n-quads
+  ontology_purl:  https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/
