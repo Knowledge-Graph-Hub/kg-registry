@@ -1,26 +1,39 @@
----
 name: Bug report
-about: Create a report to help us improve KG-Registry
-labels: bug
+description: Create a report to help us improve KG-Registry
+labels: [ bug ]
 
----
-
-# Describe the bug
-
-A clear and concise description of what the bug is.
-
-## To Reproduce
-
-Steps to reproduce the behavior.
-
-## Expected behavior
-
-A clear and concise description of what you expected to happen.
-
-## Version
-
-Which version are you seeing the bug with? An md5 hash is most useful.
-
-## Additional context
-
-Add any other context about the problem here.
+body:
+  - type: markdown
+    attributes:
+      value: This is the form for reporting a bug or technical issue with the KG-Registry site.
+  - type: input
+    id: description
+    attributes:
+      label: Description
+      description: Please provide a concise description of the bug.
+      placeholder: e.g., site is broken on Firefox
+    validations:
+      required: true
+  - type: input
+    id: reproduce
+    attributes:
+      label: Reproduce
+      description: What steps may be taken to reproduce the behavior?
+      placeholder: e.g., open site on Firefox
+    validations:
+      required: false
+  - type: input
+    id: expectations
+    attributes:
+      label: Expectations
+      description: Please describe what you expected to happen instead of encountering the bug.
+      placeholder: e.g., expected site to load on Firefox
+    validations:
+      required: false
+  - type: input
+    id: details
+    attributes:
+      label: Details
+      description: Please provide any other context for the problem here.
+    validations:
+      required: false
