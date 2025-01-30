@@ -10,6 +10,7 @@
 ,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
 ,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]
 ,[ sh:prefix "CAM-KP" ; sh:namespace "http://purl.obolibrary.org/obo/CAM-KP_"]
+,[ sh:prefix "CFDE" ; sh:namespace "http://purl.obolibrary.org/obo/CFDE_"]
 ,[ sh:prefix "CLINICAL-DATA-KP" ; sh:namespace "http://purl.obolibrary.org/obo/CLINICAL-DATA-KP_"]
 ,[ sh:prefix "CONNECTIONS-HYPOTHESIS-KP" ; sh:namespace "http://purl.obolibrary.org/obo/CONNECTIONS-HYPOTHESIS-KP_"]
 ,[ sh:prefix "http" ; sh:namespace "http://purl.obolibrary.org/obo/http_"]

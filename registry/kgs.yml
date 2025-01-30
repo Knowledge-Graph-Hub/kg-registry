@@ -267,6 +267,17 @@ ontologies:
   title: Exposures KP (cam kp)
 - activity_status: active
   contact:
+    github: jeevangelista
+    label: John Erol Evangelista
+  description: The Common Fund Data Ecosystem (CFDE) aims to facilitate better integration,
+    and reuse of Common Fund data to accelerate discoveries in biomedical research.
+  homepage: https://dd-kg-ui.cfde.cloud/about
+  id: cfde
+  layout: ontology_detail
+  restype: knowledge graph
+  title: Data Distillery Knowledge Graph
+- activity_status: active
+  contact:
     label: Casey Ta, Vincent Emonet, Michel Dumontier
   description: A Translator Knowledge Provider integrating clinical data.
   domain: health
