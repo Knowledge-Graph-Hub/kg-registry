@@ -23,10 +23,10 @@ products:
   title: Ubergraph blazegraph journal
   description: Blazegraph journal of Ubergraph
   ontology_purl: https://ubergraph.apps.renci.org/downloads/current/ubergraph.jnl.gz
-- id: ubergraph.blazegraph.jnl
+- id: ubergraph.nquads
   title: Ubergraph n-quads
   description: Ubergraph n-quads
-  ontology_purl:  https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz
+  ontology_purl:  https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz  
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/
@@ -37,9 +37,4 @@ license:
 Ubergraph is an RDF triplestore and public SPARQL query endpoint that integrates a suite of **39 OBO ontologies**, precomputing OWL inferences into a traversable **knowledge graph**. This enables efficient semantic reasoning over multiple ontologies, without requiring extensive local computation.
 
 ### Features
-- **SPARQL Query Interface:** Provides a web-based endpoint for querying OBO ontologies.
-- **Precomputed OWL Inferences:** Stores OWL-based logical inferences as RDF triples for fast access.
-- **Relation Graphs:** Simplifies ontology access by storing subclass and existential relations as standard RDF triples.
-- **Ontology Classification:** Uses the **ELK reasoner** to compute class hierarchies.
-- **Biolink Model Integration:** Connects OBO terms to Biolink categories.
-
+- **SP
