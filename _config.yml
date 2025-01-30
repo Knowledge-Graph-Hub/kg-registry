@@ -897,6 +897,15 @@ ontologies:
   description: A Translator Knowledge Provider
   domain: health
   homepage: ''
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  products:
+  - description: KGX distribution of the RTX-KG2
+    format: kgx
+    id: rtx_kgx
+    ontology_purl: https://github.com/ncats/translator-lfs-artifacts/blob/main/files/
   id: service-kp
   layout: ontology_detail
   repository: ''
