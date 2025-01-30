@@ -7,11 +7,10 @@ description: Ubergraph is an RDF triplestore integrating OBO ontologies into a u
 domain: information
 restype: "knowledge graph"
 contact:
-  orcid: 0000-0003-1319-7955
+  orcid: 0000-0002-8688-6599
   github: balhoff
   email: balhoff@renci.org
   label: James P. Balhoff
-preferredPrefix: http
 homepage: https://ubergraph.apps.renci.org/sparql
 tracker: https://github.com/INCATools/ubergraph/issues
 repository: https://github.com/INCATools/ubergraph
