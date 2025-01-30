@@ -331,7 +331,7 @@
       "suggest": false
     },
     "preferredPrefix": {
-      "level": "error",
+      "level": "info",
       "suggest": false
     },
     "uri_prefix": {
