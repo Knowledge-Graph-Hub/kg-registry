@@ -1046,40 +1046,6 @@ ontologies:
   tracker: ''
 - activity_status: active
   contact:
-    email: cthoyt@gmail.com
-    github: cthoyt
-    label: Charles Tapley Hoyt
-    orcid: 0000-0003-4423-4370
-  description: UniProt Protein
-  domain: biological systems
-  homepage: https://biopragmatics.github.io/obo-db-ingest/
-  id: uniprot
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/uniprot.owl
-  preferredPrefix: obo
-  products:
-  - aggregator: biopragmatics
-    description: OWL release of uniprot
-    id: uniprot.owl
-    ontology_purl: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl
-    title: uniprot OWL release
-  - aggregator: biopragmatics
-    description: OBO release of uniprot
-    id: uniprot.obo
-    ontology_purl: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo
-    title: uniprot OBO release
-  - aggregator: biopragmatics
-    description: SSSOM release of uniprot
-    id: uniprot.sssom
-    ontology_purl: https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom
-    title: uniprot SSSOM release
-  repository: https://github.com/biopragmatics/obo-db-ingest
-  restype: data resource
-  title: uniprot
-  tracker: https://github.com/biopragmatics/pyobo/issues
-  uri_prefix: http://purl.obolibrary.org/obo/
-- activity_status: active
-  contact:
     email: balhoff@renci.org
     github: balhoff
     label: James P. Balhoff
@@ -1112,6 +1078,40 @@ ontologies:
   restype: knowledge graph
   title: Ubergraph
   tracker: https://github.com/INCATools/ubergraph/issues
+- activity_status: active
+  contact:
+    email: cthoyt@gmail.com
+    github: cthoyt
+    label: Charles Tapley Hoyt
+    orcid: 0000-0003-4423-4370
+  description: UniProt Protein
+  domain: biological systems
+  homepage: https://biopragmatics.github.io/obo-db-ingest/
+  id: uniprot
+  layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/uniprot.owl
+  preferredPrefix: obo
+  products:
+  - aggregator: biopragmatics
+    description: OWL release of uniprot
+    id: uniprot.owl
+    ontology_purl: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl
+    title: uniprot OWL release
+  - aggregator: biopragmatics
+    description: OBO release of uniprot
+    id: uniprot.obo
+    ontology_purl: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo
+    title: uniprot OBO release
+  - aggregator: biopragmatics
+    description: SSSOM release of uniprot
+    id: uniprot.sssom
+    ontology_purl: https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom
+    title: uniprot SSSOM release
+  repository: https://github.com/biopragmatics/obo-db-ingest
+  restype: data resource
+  title: uniprot
+  tracker: https://github.com/biopragmatics/pyobo/issues
+  uri_prefix: http://purl.obolibrary.org/obo/
 principles:
 - id: fp-000-summary
   layout: principle
