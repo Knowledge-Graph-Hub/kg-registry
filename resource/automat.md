@@ -5,7 +5,7 @@ id: automat
 name: Automat
 description: A Translator Knowledge Provider offering multiple sub-graphs in KGX format.
 domain: health
-restype: "knowledge graph"
+category: KnowledgeGraph
 contact:
   label: "Yaphet Kebede"
   email: kebedey@renci.org

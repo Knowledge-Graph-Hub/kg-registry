@@ -12,7 +12,7 @@ contact:
 homepage: https://github.com/gnn4dr/DRKG
 tracker: https://github.com/gnn4dr/DRKG/issues
 repository: https://github.com/gnn4dr/DRKG
-restype: "knowledge graph"
+category: KnowledgeGraph
 ---
 
 Drug Repurposing Knowledge Graph (DRKG)

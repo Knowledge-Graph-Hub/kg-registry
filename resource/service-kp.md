@@ -5,7 +5,7 @@ id: service-kp
 name: Service KP
 description: A Translator Knowledge Provider
 domain: health
-restype: "knowledge graph"
+category: KnowledgeGraph
 contact:
   label: "Chunlei Wu"
 homepage: ""

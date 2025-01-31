@@ -5,7 +5,7 @@ id: rtx-kg2
 name: RTX-KG2
 description: A comprehensive knowledge graph from the RTX team.
 domain: health
-restype: "knowledge graph"
+category: KnowledgeGraph
 contact:
   label: "Amy Glen, Steven Ramsey"
 homepage: ""

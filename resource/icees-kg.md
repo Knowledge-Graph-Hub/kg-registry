@@ -5,7 +5,7 @@ id: icees-kg
 name: Exposures KP (icees-kg)
 description: The ICEES-based Exposures Knowledge Graph.
 domain: health
-restype: "knowledge graph"
+category: KnowledgeGraph
 contact:
   label: "Kara Fecho"
   email: kfecho@renci.org

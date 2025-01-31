@@ -5,7 +5,7 @@ id: ubergraph
 name: Ubergraph
 description: Ubergraph is an RDF triplestore integrating OBO ontologies into a unified semantic graph
 domain: information
-restype: "knowledge graph"
+category: KnowledgeGraph
 contact:
   orcid: 0000-0002-8688-6599
   github: balhoff

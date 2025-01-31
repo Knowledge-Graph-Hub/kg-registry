@@ -5,7 +5,7 @@ id: genetics-kp
 name: Genetics KP
 description: A Translator Knowledge Provider focusing on genetic data.
 domain: health
-restype: "knowledge graph"
+category: KnowledgeGraph
 contact:
   label: "Jason Flannick"
 homepage: ""

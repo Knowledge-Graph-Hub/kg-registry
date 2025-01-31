@@ -22,7 +22,7 @@ uri_prefix: http://purl.obolibrary.org/obo/
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/
-restype: "data resource"
+category: DataGraph
 ---
 
 Automatic translation of UCSC chromosome bands to OWL classes

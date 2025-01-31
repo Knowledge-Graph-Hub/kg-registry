@@ -12,7 +12,7 @@ preferredPrefix: http
 homepage: https://enpkg.commons-lab.org/
 tracker: https://github.com/enpkg/enpkg_full/issues
 repository: https://github.com/enpkg/enpkg_full
-restype: "knowledge graph"
+category: KnowledgeGraph
 ---
 
 Experimental natural products knowledge graph.

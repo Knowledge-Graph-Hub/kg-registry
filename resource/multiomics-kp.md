@@ -5,7 +5,7 @@ id: multiomics-kp
 name: Multiomics KP
 description: A Translator Knowledge Provider incorporating multiomics data.
 domain: health
-restype: "knowledge graph"
+category: KnowledgeGraph
 contact:
   label: "Gustavo Glusman, Guangrong Qin"
 homepage: ""

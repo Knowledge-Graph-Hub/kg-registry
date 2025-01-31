@@ -5,7 +5,7 @@ id: molecular-data-kp
 name: Molecular Data KP
 description: A Translator Knowledge Provider for molecular data.
 domain: health
-restype: "knowledge graph"
+category: KnowledgeGraph
 contact:
   label: "Sandrine Muller"
   orcid: 0000-0001-5998-3003

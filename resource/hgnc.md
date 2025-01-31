@@ -31,7 +31,7 @@ products:
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom
 uri_prefix: http://purl.obolibrary.org/obo/
-restype: "data resource"
+category: DataGraph
 ---
 
 HUGO Gene Nomenclature Committee

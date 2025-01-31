@@ -12,7 +12,7 @@ preferredPrefix: http
 homepage: RNA-KG.anacleto.di.unimi.it/
 tracker: https://github.com/AnacletoLAB/RNA-KG/issues
 repository: https://github.com/AnacletoLAB/RNA-KG
-restype: "knowledge graph"
+category: KnowledgeGraph
 ---
 
 RNA-KG: An ontology-based KG for representing interactions involving RNA molecules
