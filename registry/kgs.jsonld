@@ -971,6 +971,37 @@
         {
             "activity_status": "active",
             "contact": {
+                "email": "marinka@hms.harvard.edu",
+                "github": "marinkaz",
+                "label": "Marinka Zitnik"
+            },
+            "description": "PrimeKG (Precision Medicine Knowledge Graph) integrates 20 high-quality biomedical resources to describe 17,080 diseases with over 4 million relationships across ten major biological scales.",
+            "domain": "health",
+            "homepage": "https://zitniklab.hms.harvard.edu/projects/PrimeKG",
+            "id": "primekg",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "MIT License",
+                "url": "https://opensource.org/licenses/MIT"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/primekg.owl",
+            "products": [
+                {
+                    "description": "The full PrimeKG dataset containing disease relationships.",
+                    "format": "csv",
+                    "id": "primekg.csv",
+                    "ontology_purl": "https://dataverse.harvard.edu/api/access/datafile/6180620",
+                    "title": "PrimeKG Full Dataset"
+                }
+            ],
+            "repository": "https://github.com/mims-harvard/PrimeKG",
+            "restype": "knowledge graph",
+            "title": "PrimeKG",
+            "tracker": "https://github.com/mims-harvard/PrimeKG/issues"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
                 "email": "ben.mcgee.good@gmail.com",
                 "github": "goodb",
                 "label": "Benjamin M. Good",
