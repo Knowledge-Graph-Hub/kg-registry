@@ -64,15 +64,15 @@ def main():
     results = {"error": [], "warn": [], "info": []}
 
     # Validate each object
-    for item in data["ontologies"]:
+    for item in data["resources"]:
         add = validate_metadata(item, schema)
         results = update_results(results, add)
 
     # save the metadata-grid with ALL results
     headers = []
-    for s in schema["properties"]:
-        if "level" in s:
-            headers.append(s)
+    # for s in schema["properties"]:
+    #     if "level" in s:
+    #         headers.append(s)
     save_grid(metadata_grid, headers, grid_outfile)
 
     # print and save the results that did not pass
@@ -325,11 +325,11 @@ def save_grid(metadata_grid, headers, grid_outfile):
         print("Grid file must be CSV, TSV, or TXT", file=sys.stderr)
         return
 
-    # Determine order of ontologies based on statuses
+    # Determine order of resources based on statuses
     sort_order = sort_grid(metadata_grid)
 
     # First three help to see overall details
-    header = "Ontology{0}Activity Status{0}Validation Status".format(separator)
+    header = "Resource{0}Activity Status{0}Validation Status".format(separator)
     # After that, we show the results of each check
     for h in headers:
         header += separator + h

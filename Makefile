@@ -118,9 +118,9 @@ registry/kgs.ttl: registry/kgs.nt
 ### Validate Configuration Files
 
 # generate both a report of the violations and a grid of all results
-# the grid is later used to sort the ontologies on the home page
+# the grid is later used to sort the resources on the home page
 RESULTS = reports/metadata-violations.tsv reports/metadata-grid.csv
-reports/metadata-grid.csv: tmp/unsorted-ontologies.yml | extract-metadata reports
+reports/metadata-grid.csv: tmp/unsorted-resources.yml | extract-metadata reports
 	./util/validate-metadata.py $< $(RESULTS)
 
 # generate an HTML output of the metadata grid
@@ -128,8 +128,8 @@ reports/metadata-grid.csv: tmp/unsorted-ontologies.yml | extract-metadata report
 reports/metadata-grid.html: reports/metadata-grid.csv
 	./util/create-html-grid.py $< $@
 
-# Extract metadata from each KG .md file and combine into single yaml
-tmp/unsorted-ontologies.yml: $(KGS) | tmp
+# Extract metadata from each resource .md file and combine into single yaml
+tmp/unsorted-resources.yml: $(KGS) | tmp
 	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
 
 extract-metadata: $(KGS)
@@ -162,7 +162,7 @@ dashboard: build/dashboard.zip
 # Build directories
 build:
 	mkdir -p $@
-build/ontologies:
+build/resource:
 	mkdir -p $@
 
 # reboot the JVM for Py4J
@@ -187,7 +187,7 @@ build/robot-foreign.jar: | build
 # ALWAYS make sure nothing is running on port 25333
 # Then boot Py4J gateway to ROBOT on that port
 reports/dashboard.csv: registry/kgs.yml | \
-reports/robot reports/principles build/ontologies build/robot.jar build/robot-foreign.jar
+reports/robot reports/principles build/resource build/robot.jar build/robot-foreign.jar
 	make reboot
 	./util/principles/dashboard.py $< $@ --big false
 
@@ -215,11 +215,11 @@ build/dashboard: reports/dashboard.html
 	rm -rf build/dashboard.zip
 	zip -r $@.zip $@
 
-# Clean up, removing ontology files
+# Clean up, removing files
 # We don't want to keep them because we will download new ones each time to stay up-to-date
 # Reports are all archived in build/dashboard.zip
 clean-dashboard: build/dashboard
-	rm -rf build/ontologies
+	rm -rf build/resource
 	rm -rf reports/robot
 	rm -rf reports/principles
 	rm -rf build/dashboard
@@ -227,11 +227,6 @@ clean-dashboard: build/dashboard
 
 # Note this should *not* be run as part of general travis jobs, it is expensive
 # and may be prone to false positives as it is inherently network-based
-#
-# TODO: Other non-travis CI job. Nightly?
-# TODO: Integrate this with some kind of OCLC query check
-#
-# See: https://github.com/OBOFoundry/OBOFoundry.github.io/issues/18
 valid-purl-report.txt: registry/kgs.yml
 	./util/processor.py -i $< check-urls > $@.tmp && mv $@.tmp $@
 

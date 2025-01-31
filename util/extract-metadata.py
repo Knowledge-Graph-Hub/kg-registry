@@ -38,13 +38,6 @@ def main():
     parser_n.set_defaults(function=concat_resource_yaml)
     parser_n.add_argument("files", nargs="*")
 
-    # SUBCOMMAND
-    parser_n = subparsers.add_parser("concat-principles", help="concat principles yamls")
-    parser_n.add_argument("-i", "--include", help="yaml file to include for header")
-    parser_n.add_argument("-o", "--output", help="output yaml")
-    parser_n.set_defaults(function=concat_principles_yaml)
-    parser_n.add_argument("files", nargs="*")
-
     args = parser.parse_args()
 
     func = args.function

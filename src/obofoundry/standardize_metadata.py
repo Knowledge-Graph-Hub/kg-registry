@@ -15,7 +15,7 @@ import click
 import yaml
 from yaml import MappingNode, SafeDumper, ScalarNode
 
-from obofoundry.constants import DATA_DIRECTORY, ONTOLOGY_DIRECTORY
+from obofoundry.constants import DATA_DIRECTORY
 
 
 def _sort_key(kv):
@@ -105,7 +105,7 @@ def update_markdown(path: pathlib.Path) -> None:
 @click.command(name="standarize-metadata")
 def main():
     """Standardize ontology and other metadata."""
-    for path in ONTOLOGY_DIRECTORY.glob("*.md"):
+    for path in RESOURCE_DIRECTORY.glob("*.md"):
         update_markdown(path)
 
     path = DATA_DIRECTORY.joinpath("operations.yml")

@@ -1,141 +1,4 @@
-ontologies:
-- activity_status: active
-  contact:
-    email: cjmungall@lbl.gov
-    github: cmungall
-    label: Christopher J. Mungall
-    orcid: 0000-0002-6601-2165
-  description: Automatic translation of UCSC chromosome bands to OWL classes
-  domain: chemistry and biochemistry
-  homepage: http://purl.obolibrary.org/obo/chr.owl
-  id: chr
-  layout: ontology_detail
-  license:
-    label: CC0 1.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
-  ontology_purl: http://purl.obolibrary.org/obo/chr.owl
-  preferredPrefix: obo
-  products:
-  - description: OWL release of Monochrom Ontology
-    id: chr.owl
-    ontology_purl: http://purl.obolibrary.org/obo/chr.owl
-    title: Monochrom Ontology OWL release
-  repository: http://purl.obolibrary.org/obo/chr.owl
-  restype: data resource
-  title: Monochrom Ontology
-  tracker: http://purl.obolibrary.org/obo/chr.owl
-  uri_prefix: http://purl.obolibrary.org/obo/
-- activity_status: active
-  contact:
-    email: cjmungall@lbl.gov
-    github: cmungall
-    label: Christopher J. Mungall
-    orcid: 0000-0002-6601-2165
-  description: Ontology rendering of the EcoSIM Land System Model
-  domain: environment
-  homepage: http://purl.obolibrary.org/obo/ecosim.owl
-  id: ecosim
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/ecosim.owl
-  preferredPrefix: obo
-  products:
-  - description: OWL release of ecosim
-    id: ecosim.owl
-    ontology_purl: http://purl.obolibrary.org/obo/ecosim.owl
-    title: ecosim OWL release
-  repository: http://purl.obolibrary.org/obo/ecosim.owl
-  restype: other
-  title: ecosim
-  tracker: http://purl.obolibrary.org/obo/ecosim.owl
-  uri_prefix: http://purl.obolibrary.org/obo/
-- activity_status: active
-  contact:
-    email: cjmungall@lbl.gov
-    github: cmungall
-    label: Chris Mungall
-    orcid: 0000-0002-6601-2165
-  dependencies:
-  - id: envo
-  - id: foodon
-  - id: ncbitaxon
-  - id: pco
-  - id: po
-  - id: uberon
-  - id: mixs
-  depicted_by: https://gold.jgi.doe.gov/images/logo-JGI-IMG-GOLD.png
-  description: Translation of JGI GOLD path terms to OWL
-  domain: environment
-  homepage: https://gold.jgi.doe.gov/
-  id: goldterms
-  layout: ontology_detail
-  ontology_purl: https://w3id.org/goldterms/goldterms.owl
-  preferredPrefix: GOLDTERMS
-  products:
-  - id: goldterms.owl
-    ontology_purl: https://w3id.org/goldterms/goldterms.owl
-    title: main GOLDTERMS OWL release
-  repository: https://github.com/cmungall/gold-ontology
-  restype: other
-  title: GOLD Environmental Paths
-  tracker: https://github.com/cmungall/gold-ontology/issues
-  uri_prefix: https://w3id.org/goldterms/
-- activity_status: active
-  contact:
-    email: cjmungall@lbl.gov
-    github: cmungall
-    label: Christopher J. Mungall
-    orcid: 0000-0002-6601-2165
-  description: Noctua Entity Ontology
-  domain: biological systems
-  homepage: http://purl.obolibrary.org/obo/go/noctua/neo.owl
-  id: neo
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/go/noctua/neo.owl
-  preferredPrefix: obo
-  products:
-  - description: OWL release of neo
-    id: neo.owl
-    ontology_purl: http://purl.obolibrary.org/obo/neo.owl
-    title: neo OWL release
-  repository: https://github.com/geneontology/neo/
-  restype: other
-  title: neo
-  tracker: https://github.com/geneontology/neo/issues
-  uri_prefix: http://purl.obolibrary.org/obo/go/noctua/
-- activity_status: active
-  contact:
-    email: cthoyt@gmail.com
-    github: cthoyt
-    label: Charles Tapley Hoyt
-    orcid: 0000-0003-4423-4370
-  description: ORCID in OWL
-  domain: information
-  homepage: https://github.com/cthoyt/orcidio
-  id: orcid
-  layout: ontology_detail
-  license:
-    label: CC0 1.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
-  ontology_purl: https://w3id.org/orcidio/orcid.owl
-  preferredPrefix: http
-  products:
-  - aggregator: obo
-    description: OWL release of ORCID in OWL
-    id: orcidio.owl
-    ontology_purl: http://purl.obolibrary.org/obo/orcidio.owl
-    title: ORCID in OWL OWL release
-  - aggregator: obo
-    description: OBO release of ORCID in OWL
-    id: orcidio.obo
-    ontology_purl: http://purl.obolibrary.org/obo/orcidio.obo
-    title: ORCID in OWL OBO release
-  repository: https://github.com/cthoyt/orcidio
-  restype: other
-  title: ORCID
-  tracker: https://github.com/cthoyt/orcidio/issues
-  uri_prefix: https://w3id.org/orcidio/
+resources:
 - activity_status: active
   contact:
     email: kebedey@renci.org
@@ -148,7 +11,6 @@ ontologies:
   homepage: https://robokop.renci.org/api-docs/docs/category/automat
   id: automat
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/automat.owl
   preferredPrefix: http
   products:
   - description: Robokop KG (Automat)
@@ -242,12 +104,10 @@ ontologies:
     label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
-  ontology_purl: https://w3id.org/biolink/biolink.owl
   preferredPrefix: http
   products:
   - description: OWL release of Biolink-Model
     id: biolink-model.owl.ttl
-    ontology_purl: http://purl.obolibrary.org/obo/biolink-model.owl.ttl
     title: Biolink-Model OWL release
   repository: https://github.com/biolink/biolink-model/
   restype: data model
@@ -276,6 +136,31 @@ ontologies:
   layout: ontology_detail
   restype: knowledge graph
   title: Data Distillery Knowledge Graph
+- activity_status: active
+  contact:
+    email: cjmungall@lbl.gov
+    github: cmungall
+    label: Christopher J. Mungall
+    orcid: 0000-0002-6601-2165
+  description: Automatic translation of UCSC chromosome bands to OWL classes
+  domain: chemistry and biochemistry
+  homepage: http://purl.obolibrary.org/obo/chr.owl
+  id: chr
+  layout: ontology_detail
+  license:
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  preferredPrefix: obo
+  products:
+  - description: OWL release of Monochrom Ontology
+    id: chr.owl
+    title: Monochrom Ontology OWL release
+  repository: http://purl.obolibrary.org/obo/chr.owl
+  restype: data resource
+  title: Monochrom Ontology
+  tracker: http://purl.obolibrary.org/obo/chr.owl
+  uri_prefix: http://purl.obolibrary.org/obo/
 - activity_status: active
   contact:
     label: Casey Ta, Vincent Emonet, Michel Dumontier
@@ -323,7 +208,6 @@ ontologies:
   homepage: https://biopragmatics.github.io/obo-db-ingest/
   id: drugbank
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/drugbank.owl
   preferredPrefix: obo
   products:
   - aggregator: biopragmatics
@@ -362,6 +246,27 @@ ontologies:
   tracker: https://github.com/Knowledge-Graph-Hub/eco-kg/issues
 - activity_status: active
   contact:
+    email: cjmungall@lbl.gov
+    github: cmungall
+    label: Christopher J. Mungall
+    orcid: 0000-0002-6601-2165
+  description: Ontology rendering of the EcoSIM Land System Model
+  domain: environment
+  homepage: http://purl.obolibrary.org/obo/ecosim.owl
+  id: ecosim
+  layout: ontology_detail
+  preferredPrefix: obo
+  products:
+  - description: OWL release of ecosim
+    id: ecosim.owl
+    title: ecosim OWL release
+  repository: http://purl.obolibrary.org/obo/ecosim.owl
+  restype: other
+  title: ecosim
+  tracker: http://purl.obolibrary.org/obo/ecosim.owl
+  uri_prefix: http://purl.obolibrary.org/obo/
+- activity_status: active
+  contact:
     label: Jason Flannick
   description: A Translator Knowledge Provider focusing on genetic data.
   domain: health
@@ -370,6 +275,36 @@ ontologies:
   layout: ontology_detail
   restype: knowledge graph
   title: Genetics KP
+- activity_status: active
+  contact:
+    email: cjmungall@lbl.gov
+    github: cmungall
+    label: Chris Mungall
+    orcid: 0000-0002-6601-2165
+  dependencies:
+  - id: envo
+  - id: foodon
+  - id: ncbitaxon
+  - id: pco
+  - id: po
+  - id: uberon
+  - id: mixs
+  depicted_by: https://gold.jgi.doe.gov/images/logo-JGI-IMG-GOLD.png
+  description: Translation of JGI GOLD path terms to OWL
+  domain: environment
+  homepage: https://gold.jgi.doe.gov/
+  id: goldterms
+  layout: ontology_detail
+  preferredPrefix: GOLDTERMS
+  products:
+  - id: goldterms.owl
+    ontology_purl: https://w3id.org/goldterms/goldterms.owl
+    title: main GOLDTERMS OWL release
+  repository: https://github.com/cmungall/gold-ontology
+  restype: other
+  title: GOLD Environmental Paths
+  tracker: https://github.com/cmungall/gold-ontology/issues
+  uri_prefix: https://w3id.org/goldterms/
 - activity_status: active
   contact:
     email: cthoyt@gmail.com
@@ -381,7 +316,6 @@ ontologies:
   homepage: https://biopragmatics.github.io/obo-db-ingest/
   id: hgnc
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/hgnc.owl
   preferredPrefix: obo
   products:
   - aggregator: biopragmatics
@@ -415,7 +349,6 @@ ontologies:
   homepage: ''
   id: icees-kg
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/icees-kg.owl
   preferredPrefix: http
   products:
   - description: KGX distribution of the ICEES Exposures KP
@@ -443,7 +376,6 @@ ontologies:
     label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
-  ontology_purl: http://purl.obolibrary.org/obo/interpro.owl
   preferredPrefix: obo
   products:
   - aggregator: biopragmatics
@@ -505,7 +437,6 @@ ontologies:
   homepage: https://kghub.org/kg-idg/index.html
   id: kg-idg
   layout: ontology_detail
-  ontology_purl: https://w3id.org/kg-idg/kg-idg.owl
   preferredPrefix: http
   products:
   - description: KGX Distribution of KG-IDG
@@ -533,7 +464,6 @@ ontologies:
     label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
-  ontology_purl: https://w3id.org/kg-microbe/kg-microbe.owl
   preferredPrefix: http
   products:
   - description: KGX Distribution of KGM
@@ -561,7 +491,6 @@ ontologies:
     label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
-  ontology_purl: https://w3id.org/kg-monarch/kg-monarch.owl
   preferredPrefix: http
   products:
   - description: KGX Distribution of KGM
@@ -590,18 +519,15 @@ ontologies:
     label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
-  ontology_purl: https://w3id.org/kgcl.owl
   preferredPrefix: http
   products:
   - aggregator: null
     description: OWL release of Knowledge Graph Change Language
     id: kgcl.owl
-    ontology_purl: http://purl.obolibrary.org/obo/kgcl.owl
     title: Knowledge Graph Change Language OWL release
   - aggregator: null
     description: OBO release of Knowledge Graph Change Language
     id: kgcl.obo
-    ontology_purl: http://purl.obolibrary.org/obo/kgcl.obo
     title: Knowledge Graph Change Language OBO release
   repository: https://github.com/INCATools/kgcl/
   restype: data model
@@ -619,18 +545,15 @@ ontologies:
   homepage: https://w3id.org/mixs
   id: mixs
   layout: ontology_detail
-  ontology_purl: https://w3id.org/mixs.owl
   preferredPrefix: http
   products:
   - aggregator: null
     description: OWL release of mixs
     id: mixs.owl
-    ontology_purl: http://purl.obolibrary.org/obo/mixs.owl
     title: mixs OWL release
   - aggregator: null
     description: OBO release of mixs
     id: mixs.obo
-    ontology_purl: http://purl.obolibrary.org/obo/mixs.obo
     title: mixs OBO release
   repository: https://w3id.org/mixs
   restype: other
@@ -646,7 +569,6 @@ ontologies:
   homepage: ''
   id: molecular-data-kp
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/molecular-data-kp.owl
   preferredPrefix: http
   products:
   - description: KGX nodes for Molecular Data KP
@@ -675,6 +597,27 @@ ontologies:
   tracker: ''
 - activity_status: active
   contact:
+    email: cjmungall@lbl.gov
+    github: cmungall
+    label: Christopher J. Mungall
+    orcid: 0000-0002-6601-2165
+  description: Noctua Entity Ontology
+  domain: biological systems
+  homepage: http://purl.obolibrary.org/obo/go/noctua/neo.owl
+  id: neo
+  layout: ontology_detail
+  preferredPrefix: obo
+  products:
+  - description: OWL release of neo
+    id: neo.owl
+    title: neo OWL release
+  repository: https://github.com/geneontology/neo/
+  restype: other
+  title: neo
+  tracker: https://github.com/geneontology/neo/issues
+  uri_prefix: http://purl.obolibrary.org/obo/go/noctua/
+- activity_status: active
+  contact:
     label: Jim Balhoff
   description: A Translator Knowledge Provider dedicated to ontology-based services.
   domain: information
@@ -685,6 +628,36 @@ ontologies:
   restype: knowledge graph
   title: Ontology KP
   tracker: ''
+- activity_status: active
+  contact:
+    email: cthoyt@gmail.com
+    github: cthoyt
+    label: Charles Tapley Hoyt
+    orcid: 0000-0003-4423-4370
+  description: ORCID in OWL
+  domain: information
+  homepage: https://github.com/cthoyt/orcidio
+  id: orcid
+  layout: ontology_detail
+  license:
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  preferredPrefix: http
+  products:
+  - aggregator: obo
+    description: OWL release of ORCID in OWL
+    id: orcidio.owl
+    title: ORCID in OWL OWL release
+  - aggregator: obo
+    description: OBO release of ORCID in OWL
+    id: orcidio.obo
+    title: ORCID in OWL OBO release
+  repository: https://github.com/cthoyt/orcidio
+  restype: other
+  title: ORCID
+  tracker: https://github.com/cthoyt/orcidio/issues
+  uri_prefix: https://w3id.org/orcidio/
 - activity_status: active
   contact:
     github: https://github.com/callahantiff/
@@ -719,7 +692,6 @@ ontologies:
     label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
-  ontology_purl: https://w3id.org/phenio/phenio.owl
   preferredPrefix: PHENIO
   products:
   - description: OWL version of phenio
@@ -761,18 +733,15 @@ ontologies:
   homepage: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
   id: reacto
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
   preferredPrefix: obo
   products:
   - aggregator: null
     description: OWL release of Reactome Entity Ontology (REACTO)
     id: reacto.owl
-    ontology_purl: http://purl.obolibrary.org/obo/reacto.owl
     title: Reactome Entity Ontology (REACTO) OWL release
   - aggregator: null
     description: OBO release of Reactome Entity Ontology (REACTO)
     id: reacto.obo
-    ontology_purl: http://purl.obolibrary.org/obo/reacto.obo
     title: Reactome Entity Ontology (REACTO) OBO release
   repository: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
   restype: other
@@ -790,7 +759,6 @@ ontologies:
   homepage: https://reactome.org
   id: reactome
   layout: ontology_detail
-  ontology_purl: http://www.reactome.org/reactome.owl
   preferredPrefix: Reactome
   products:
   - description: Conversion from BioPAX, human subset
@@ -824,7 +792,6 @@ ontologies:
     label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
-  ontology_purl: http://purl.obolibrary.org/obo/rhea.owl
   preferredPrefix: obo
   products:
   - aggregator: biopragmatics
@@ -901,7 +868,6 @@ ontologies:
     label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
-  ontology_purl: http://purl.obolibrary.org/obo/sgd.owl
   preferredPrefix: obo
   products:
   - aggregator: biopragmatics
@@ -961,7 +927,6 @@ ontologies:
   homepage: ''
   id: sri-reference-kg
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/sri-reference-kg.owl
   preferredPrefix: http
   products:
   - description: KGX distribution of the SRI-Reference KG
@@ -984,7 +949,6 @@ ontologies:
   homepage: https://biopragmatics.github.io/obo-db-ingest/
   id: swisslipid
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/swisslipid.owl
   preferredPrefix: obo
   products:
   - aggregator: biopragmatics
@@ -1015,7 +979,6 @@ ontologies:
   homepage: ''
   id: text-mining-kp
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/text-mining-kp.owl
   preferredPrefix: http
   products:
   - description: Text Mining KP KGX distribution
@@ -1042,7 +1005,6 @@ ontologies:
     label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
-  ontology_purl: http://purl.obolibrary.org/obo/ubergraph.owl
   products:
   - description: RDF of Ubergraph
     id: ubergraph.rdf
@@ -1071,7 +1033,6 @@ ontologies:
   homepage: https://biopragmatics.github.io/obo-db-ingest/
   id: uniprot
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/uniprot.owl
   preferredPrefix: obo
   products:
   - aggregator: biopragmatics
