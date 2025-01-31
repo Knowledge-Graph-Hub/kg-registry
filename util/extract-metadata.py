@@ -2,15 +2,21 @@
 
 import argparse
 import sys
+import pathlib
 
 import frontmatter
 import yaml
 from frontmatter.util import u
+from linkml.validator import validate
 from ruamel.yaml import YAML
 from ruamel.yaml.compat import StringIO
 from yamllint import config, linter
 
 __author__ = "cjm"
+HERE = pathlib.Path(__file__).parent.resolve()
+ROOT = HERE.parent.resolve()
+SOURCE_SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "schema", "kg_registry_schema.yaml")
+SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "kg_registry_schema.json")
 
 
 def main():
@@ -23,7 +29,6 @@ def main():
 
     # SUBCOMMAND
     parser_n = subparsers.add_parser("validate", help="validate yaml inside md")
-    # parser_n.add_argument('-d', '--depth', type=int, help='number of hops')
     parser_n.set_defaults(function=validate_markdown)
     parser_n.add_argument("files", nargs="*")
     parser_n = subparsers.add_parser(
@@ -83,35 +88,29 @@ def validate_markdown(args):
 
     First attempt to strip the yaml from the .md file, second use the standard python yaml parser
     to parse the embedded yaml. If it can't be passed then an error will be thrown and a stack
-    trace shown. In future we may try and catch this error and provide a user-friendly report).
+    trace shown.
 
-    In future we also perform additional structural validation on the yaml - check certain fields
-    are present etc. This could be done in various ways, e.g. jsonschema, programmatic checks. We
-    should also check translation -> jsonld -> rdf works as expected.
+    This also uses the LinkML schema to validate the yaml.
     """
-
-    def validate_structure(obj):
-        """
-        Given an object, check to see if it has 'id', 'title', and 'layout' fields. If any are
-        missing, collect them in a list of errors which is then returned.
-        """
-        errs = []
-        id = obj.get("id") or ""
-        if not id:
-            errs.append("No id: ")
-        if "title" not in obj:
-            errs.append("No title: " + id)
-        if "layout" not in obj:
-            errs.append("No layout tag: " + id + " -- this is required for proper rendering")
-        return errs
 
     errs = []
     warn = []
     for fn in args.files:
-        # we don't do anything with the results; an
-        # error is thrown
+        # Check to see if we can parse the yaml frontmatter first
         if not frontmatter.check(fn):
             errs.append("%s does not contain frontmatter" % (fn))
+        
+        # Run LinkML validator
+        (obj, md) = load_md(fn)
+        report = validate(instance=obj, schema=SOURCE_SCHEMA_PATH, target_class="Resource")
+        if not report.results:
+            print(f"No schema validation errors found for {fn}")
+        else:
+            for result in report.results:
+                if result.severity == "ERROR":
+                    errs.append(f"{fn}: {result.message}")
+
+        # Now run yaml linter to check for basic syntax errors and formatting
         yamltext = get_YAML_text(fn)
         yaml_config = config.YamlLintConfig(file="util/config.yamllint")
         for p in linter.run("---\n" + yamltext, yaml_config):
@@ -119,8 +118,7 @@ def validate_markdown(args):
                 errs.append(f"%s: {p}" % (fn))
             elif p.level == "warning":
                 warn.append(f"%s: {p}" % (fn))
-        (obj, md) = load_md(fn)
-        errs += validate_structure(obj)
+
     if len(warn) > 0:
         print("WARNINGS:", file=sys.stderr)
         for w in warn:
