@@ -73,7 +73,7 @@ classes:
         description: >-
           The license of the resource.
           Individual products may have their own licenses.
-        range: string
+        range: License
       version:
         description: The version of the resource.
         range: string
@@ -214,7 +214,7 @@ classes:
         description: >-
           The license of the product.
           This may differ from that of the parent resource.
-        range: string
+        range: License
       compression:
         description: >-
           The type of compression used with the product.
@@ -340,6 +340,24 @@ classes:
         description: >-
           The identifier for the funding source.
         range: string
+
+  License:
+    description: >-
+      A license for a resource or product.
+    attributes:
+      label:
+        description: >-
+          The name of the license.
+        range: string
+      url:
+        description: >-
+          The URL of the license.
+        range: uriorcurie
+      logo:
+        description: >-
+          The URL of a logo for the license.
+          This is added at metadata parsing time.
+        range: uriorcurie
 
   Publication:
     description: >-
