@@ -17,17 +17,20 @@ products:
 - id: swisslipid.owl
   name: swisslipid OWL release
   description: OWL release of swisslipid
-  aggregator: biopragmatics
+  tags:
+    - biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.owl
 - id: swisslipid.obo
   name: swisslipid OBO release
   description: OBO release of swisslipid
-  aggregator: biopragmatics
+  tags:
+    - biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.obo
 - id: swisslipid.sssom
   name: swisslipid SSSOM release
   description: SSSOM release of swisslipid
-  aggregator: biopragmatics
+  tags:
+    - biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.sssom
 uri_prefix: http://purl.obolibrary.org/obo/
 category: DataGraph

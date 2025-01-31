@@ -19,17 +19,20 @@ products:
 - id: interpro.owl
   name: InterPro OWL release
   description: OWL release of InterPro
-  aggregator: biopragmatics
+  tags:
+    - biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/interpro/interpro.owl
 - id: interpro.obo
   name: InterPro OBO release
   description: OBO release of InterPro
-  aggregator: biopragmatics
+  tags:
+    - biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/interpro/interpro.obo
 - id: interpro.sssom
   name: InterPro SSSOM release
   description: SSSOM release of InterPro
-  aggregator: biopragmatics
+  tags:
+    - biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/interpro/interpro.sssom
 uri_prefix: http://purl.obolibrary.org/obo/
 license:
