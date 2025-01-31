@@ -108,7 +108,7 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Product"
                     },
                     "type": [
                         "array",
@@ -239,7 +239,7 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Product"
                     },
                     "type": [
                         "array",
@@ -758,7 +758,7 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Product"
                     },
                     "type": [
                         "array",
@@ -918,7 +918,7 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Product"
                     },
                     "type": [
                         "array",
@@ -1154,77 +1154,6 @@
             "title": "ProcessProduct",
             "type": "object"
         },
-        "Product": {
-            "additionalProperties": false,
-            "description": "A top-level class for all products in the knowledge graph registry. This includes any specific files, APIs, or any other accessible representations of a resource.",
-            "properties": {
-                "category": {
-                    "description": "The category of the product. This should be identical to its class name.",
-                    "type": "string"
-                },
-                "compression": {
-                    "$ref": "#/$defs/CompressionEnum",
-                    "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
-                },
-                "contacts": {
-                    "description": "The contact points for the product. May be an individual or organization.",
-                    "items": {
-                        "$ref": "#/$defs/Contact"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "description": {
-                    "description": "A description of the product.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "id": {
-                    "description": "The identifier of the product. This is used to identify it within the registry.",
-                    "type": "string"
-                },
-                "license": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/License"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The license of the product. This may differ from that of the parent resource."
-                },
-                "name": {
-                    "description": "The human-readable name of the product.",
-                    "type": "string"
-                },
-                "repository": {
-                    "description": "A main version control repository for the product.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "url": {
-                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                }
-            },
-            "required": [
-                "id",
-                "name",
-                "category"
-            ],
-            "title": "Product",
-            "type": "object"
-        },
         "ProductionProcess": {
             "additionalProperties": false,
             "description": "A process for producing a resource and/or its products.",
@@ -1298,7 +1227,7 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Product"
                     },
                     "type": [
                         "array",
@@ -1553,7 +1482,7 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Product"
                     },
                     "type": [
                         "array",
