@@ -21,7 +21,7 @@ products:
   description: KGX Distribution of KG-IDG
   ontology_purl: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
 uri_prefix: https://w3id.org/kg-idg/
-restype: "knowledge graph"
+category: KnowledgeGraph
 ---
 
 KG-IDG: a Knowledge Graph for Illuminating the Druggable Genome.

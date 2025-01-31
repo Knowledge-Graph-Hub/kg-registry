@@ -27,7 +27,7 @@ uri_prefix: https://w3id.org/orcidio/
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/
-restype: "other"
+category: Resource
 ---
 
 ORCID is a free, unique, persistent identifier (PID) for individuals

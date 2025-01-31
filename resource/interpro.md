@@ -36,7 +36,7 @@ uri_prefix: http://purl.obolibrary.org/obo/
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/
-restype: "data resource"
+category: DataGraph
 ---
 
 InterPro is a database of protein families, domains and functional sites in which identifiable features found in known proteins can be applied to unknown protein sequences.

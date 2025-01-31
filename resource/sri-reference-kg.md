@@ -5,7 +5,7 @@ id: sri-reference-kg
 name: SRI-Reference KG
 description: The Monarch Initiative’s SRI reference knowledge graph.
 domain: health
-restype: "knowledge graph"
+category: KnowledgeGraph
 contact:
   label: "Kevin Schaper"
   email: kevinschaper@gmail.com

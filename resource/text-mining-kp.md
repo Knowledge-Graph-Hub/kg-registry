@@ -5,7 +5,7 @@ id: text-mining-kp
 name: Text Mining KP
 description: A Translator Knowledge Provider applying text-mined assertions.
 domain: information
-restype: "knowledge graph"
+category: KnowledgeGraph
 contact:
   label: Edgar Gatica
 homepage: ""

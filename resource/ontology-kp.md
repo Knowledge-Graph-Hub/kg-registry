@@ -5,7 +5,7 @@ id: ontology-kp
 name: Ontology KP
 description: A Translator Knowledge Provider dedicated to ontology-based services.
 domain: information
-restype: "knowledge graph"
+category: KnowledgeGraph
 contact:
   label: "Jim Balhoff"
 homepage: ""

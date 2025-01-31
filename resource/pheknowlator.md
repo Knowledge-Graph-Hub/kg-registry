@@ -12,7 +12,7 @@ preferredPrefix: http
 homepage: https://github.com/callahantiff/PheKnowLator
 tracker: https://github.com/callahantiff/PheKnowLator/issues
 repository: https://github.com/callahantiff/PheKnowLator
-restype: "knowledge graph"
+category: KnowledgeGraph
 ---
 
 PheKnowLator (Phenotype Knowledge Translator) or pkt_kg is the first fully customizable 

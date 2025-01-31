@@ -19,7 +19,7 @@ products:
   name: ecosim OWL release
   description: OWL release of ecosim
 uri_prefix: http://purl.obolibrary.org/obo/
-restype: "other"
+category: Resource
 ---
 
 Ontology rendering of the EcoSIM Land System Model
