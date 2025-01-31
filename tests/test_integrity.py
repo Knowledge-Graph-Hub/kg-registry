@@ -15,7 +15,7 @@ from obofoundry.utils import ONTOLOGY_DIRECTORY, get_data, get_new_data
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
-SCHEMA_PATH = ROOT.joinpath("util", "schema", "registry_schema.json")
+SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "registry_schema.json")
 
 PUBMED_PREFIX = "https://www.ncbi.nlm.nih.gov/pubmed/"
 ARXIV_PREFIX = "https://arxiv.org/abs/"
