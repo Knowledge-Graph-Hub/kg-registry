@@ -43,6 +43,10 @@ classes:
         slot_uri: dcterms:identifier
         exact_mappings:
           - schema:name
+      activity_status:
+        description: >-
+          The status of the resource.
+        range: ActivityStatusEnum
       name:
         description: >-
           The human-readable name of the resource.
@@ -71,18 +75,30 @@ classes:
         description: >-
           The human language of the resource.
         range: string
-      contact_point:
+      contacts:
         description: >-
-          The contact point for the resource.
-        range: string
+          The contact point(s) for the resource.
+          May be an individual or organization.
+        range: Contact
       products:
         description: >-
           The products or representations of the resource.
         range: Product
         multivalued: true
+      domain:
+        description: >-
+          The domain that the resource is relevant to.
+          This is not multivalued.
+        range: DomainEnum
+        required: true
       tags:
         description: Tags associated with the resource.
         range: TagEnum
+        multivalued: true
+      funding:
+        description: >-
+          The funding source(s) for the resource.
+        range: FundingSource
         multivalued: true
 
   KnowledgeGraph:
@@ -111,11 +127,6 @@ classes:
       contributors:
         description: Contributors to the knowledge graph.
         range: string
-      is_active:
-        description: >-
-          The status of the knowledge graph. If actively
-          updated, this should be true, otherwise false.
-        range: boolean
       components:
         description: The components of the knowledge graph.
         range: Resource
@@ -140,12 +151,25 @@ classes:
         range: ProductionProcess
         multivalued: true
 
+  DataModel:
+    description: >-
+      A data model, such as an ontology or schema.
+      May be a use in construction of a knowledge graph.
+    is_a: Resource
+
+  Mapping:
+    description: >-
+      A mapping between two or more data sources.
+      May be a use in construction of a knowledge graph.
+    is_a: Resource
+
   ProductionProcess:
     description: >-
       A process for producing a resource and/or its products.
     is_a: Resource
 
   ## Product Classes
+
   Product:
     description: >-
       A top-level class for all products in the
@@ -153,11 +177,32 @@ classes:
       files, APIs, or any other accessible representations of
       a resource.
     attributes:
+      name:
+        description: >-
+          The human-readable name of the product.
+        required: true
+        range: string
+      description:
+        description: >-
+          A description of the product.
+        range: string
+      url:
+        description: >-
+          The URL of the product. This may be a link
+          to download a specific file, a base URL to an API,
+          or a link to a graphical interface.
+        range: uriorcurie
       compression:
         description: >-
           The type of compression used with the product.
           If this is not specified, it is assumed to be uncompressed.
         range: CompressionEnum
+      contacts:
+        description: >-
+          The contact points for the product.
+          May be an individual or organization.
+        range: Contact
+        multivalued: true
 
   GraphProduct:
     description: >-
@@ -179,7 +224,124 @@ classes:
         range: string
         multivalued: true
 
+  DataModelProduct:
+    description: >-
+      A product that is a data model, such as an ontology or schema.
+    is_a: Product
+
+  MappingProduct:
+    description: >-
+      A product that is a mapping between two or more data sources.
+    is_a: Product
+
+  ProcessProduct:
+    description: >-
+      A product that is a process or algorithm.
+    is_a: Product
+
+  GraphicalInterface:
+    description: >-
+      A product that is a graphical interface to a resource.
+      Similar to the "browsers" field in OBO Foundry.
+    is_a: Product
+
+  ProgrammingInterface:
+    description: >-
+      A product that is a programming interface (API) to a resource.
+    is_a: Product
+
+  ## Other Classes
+
+  Contact:
+    description: >-
+      A contact point for a resource or product.
+    abstract: true
+
+  Individual:
+    description: >-
+      An individual person.
+    is_a: Contact
+    attributes:
+      label:
+        description: >-
+          The name of the individual.
+        range: string
+      email:
+        description: >-
+          The email address of the individual.
+        range: string
+      github:
+        description: >-
+          The GitHub username of the individual.
+          Do not include a prefix.
+        range: string
+      orcid:
+        description: >-
+          The ORCID of the individual.
+          Do not include the "https://orcid.org/" prefix.
+        range: string
+        pattern: "^\\d{4}-\\d{4}-\\d{4}-\\d{3}(\\d|X)$"
+
+  Organization:
+    description: >-
+      An organization.
+    is_a: Contact
+    attributes:
+      label:
+        description: >-
+          The name of the organization.
+        range: string
+      email:
+        description: >-
+          The email address of the organization.
+        range: string
+      github:
+        description: >-
+          The GitHub organization name.
+          Do not include a prefix.
+        range: string
+      url:
+        description: >-
+          The URL of a site for the organization.
+        range: uriorcurie
+
+  FundingSource:
+    description: >-
+      A funding source for a resource.
+    attributes:
+      label:
+        description: >-
+          The organization providing the funding.
+        range: Organization
+      identifier:
+        description: >-
+          The identifier for the funding source.
+        range: string
+
+# Enums
 enums:
+
+  ActivityStatusEnum:
+    description: >-
+      The status of a resource.
+      Corresponds to those used by OBO Foundry.
+    permissible_values:
+      active:
+        description: >-
+          The resource is active and available.
+      inactive:
+        description: >-
+          The resource is inactive.
+          Its availability may vary.
+      orphaned:
+        description: >-
+          The resource is not actively maintained.
+          Its availability may vary.
+      unresponsive:
+        description: >-
+          The resource is no longer accessible.
+          Only its metadata is available.
+
   CompressionEnum:
     description: >-
       The type of compression used with a product.
@@ -211,6 +373,57 @@ enums:
       other:
         description:
           Another compression format not defined here.
+
+  DomainEnum:
+    description: >-
+      The domain that a resource is most relevant to.
+    permissible_values:
+      upper:
+        description: >-
+          The upper-level domain, for general-purpose data
+          representation and integration.
+      anatomy and development:
+        description: >-
+          The anatomy and development of organisms.
+      health:
+        description: >-
+          The health and diseases of organisms.
+      phenotype:
+        description: >-
+          The phenotypes of organisms.
+      investigations:
+        description: >-
+          Research investigations into specific topics.
+      environment:
+        description: >-
+          The environment and ecosystems.
+      chemistry and biochemistry:
+        description: >-
+          The chemical and biochemical sciences.
+      microbiology:
+        description: >-
+          The microbiological sciences.
+      agriculture:
+        description: >-
+          The agricultural sciences.
+      nutrition:
+        description: >-
+          The nutritional sciences, including diet and metabolomics.
+      biological systems:
+        description: >-
+          The biological sciences and systems.
+      information technology:
+        description: >-
+          The information technology sciences.
+      organisms:
+        description: >-
+          Specific organisms.
+      simulation:
+        description: >-
+          Simulation and modeling of specific phenomena.
+      other:
+        description: >-
+          Another domain not defined here.
 
   GraphStandardEnum:
     description: >-
