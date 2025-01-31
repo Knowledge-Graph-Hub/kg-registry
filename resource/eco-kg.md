@@ -8,7 +8,6 @@ domain: organisms
 contact:
   github: diatomsRcool
   label: Anne Thessen
-preferredPrefix: http
 homepage: https://kghub.org/eco-kg/index.html
 tracker: https://github.com/Knowledge-Graph-Hub/eco-kg/issues
 repository: https://github.com/Knowledge-Graph-Hub/eco-kg

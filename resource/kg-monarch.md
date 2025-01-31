@@ -5,7 +5,6 @@ id: kg-monarch
 name: KG Monarch
 description: Monarch Initiative Knowledge Graph
 domain: health
-preferredPrefix: http
 contact:
   orcid: 0000-0002-6601-2165
   github: cmungall

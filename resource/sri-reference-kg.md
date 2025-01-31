@@ -14,7 +14,6 @@ contact:
 homepage: ""
 tracker: ""
 repository: ""
-preferredPrefix: http
 products:
 - id: monarch-kg.tar.gz
   format: kgx

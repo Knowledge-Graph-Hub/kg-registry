@@ -5,7 +5,6 @@ id: drugbank
 name: drugbank
 description: DrugBank
 domain: health
-preferredPrefix: obo
 contact:
   orcid: 0000-0003-4423-4370
   github: cthoyt

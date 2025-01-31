@@ -6,7 +6,6 @@ name: Knowledge Graph Change Language
 description: A data model for describing change operations at a high level on an ontology
   or ontology-like artefact, such as a Knowledge Graph
 domain: information
-preferredPrefix: http
 contact:
   orcid: 0000-0002-6601-2165
   github: cmungall

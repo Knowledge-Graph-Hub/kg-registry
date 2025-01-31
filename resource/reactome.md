@@ -5,7 +5,6 @@ id: reactome
 name: Reactome
 description: Reactome from Biopax
 domain: biological systems
-preferredPrefix: Reactome
 contact:
   orcid: 0000-0002-6601-2165
   github: cmungall

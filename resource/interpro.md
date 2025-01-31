@@ -7,7 +7,6 @@ description: InterPro is a database of protein families, domains and functional 
   in which identifiable features found in known proteins can be applied to unknown
   protein sequences
 domain: biological systems
-preferredPrefix: obo
 contact:
   orcid: 0000-0003-4423-4370
   github: cthoyt

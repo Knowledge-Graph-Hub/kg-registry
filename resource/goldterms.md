@@ -20,7 +20,6 @@ depicted_by: https://gold.jgi.doe.gov/images/logo-JGI-IMG-GOLD.png
 description: Translation of JGI GOLD path terms to OWL
 domain: environment
 homepage: https://gold.jgi.doe.gov/
-preferredPrefix: GOLDTERMS
 uri_prefix: https://w3id.org/goldterms/
 products:
 - id: goldterms.owl

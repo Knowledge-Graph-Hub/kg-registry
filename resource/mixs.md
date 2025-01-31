@@ -5,7 +5,6 @@ id: mixs
 name: mixs
 description: mixs
 domain: environment
-preferredPrefix: http
 contact:
   orcid: 0000-0002-6601-2165
   github: cmungall

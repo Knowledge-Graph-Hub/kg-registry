@@ -5,7 +5,6 @@ id: kg-idg
 name: KG-IDG
 description: a Knowledge Graph for Illuminating the Druggable Genome
 domain: health
-preferredPrefix: http
 contact:
   orcid: 0000-0001-5705-7831
   github: caufieldjh

@@ -5,7 +5,6 @@ id: neo
 name: neo
 description: Noctua Entity Ontology
 domain: biological systems
-preferredPrefix: obo
 contact:
   orcid: 0000-0002-6601-2165
   github: cmungall

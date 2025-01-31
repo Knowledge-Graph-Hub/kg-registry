@@ -13,7 +13,6 @@ homepage: https://github.com/obophenotype/phenio
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/
-preferredPrefix: PHENIO
 uri_prefix: https://w3id.org/phenio/
 products:
 - id: phenio.owl
