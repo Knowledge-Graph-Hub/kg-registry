@@ -17,17 +17,20 @@ products:
 - id: drugbank.owl
   name: drugbank OWL release
   description: OWL release of drugbank
-  aggregator: biopragmatics
+  tags:
+    - biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/drugbank/drugbank.owl
 - id: drugbank.obo
   name: drugbank OBO release
   description: OBO release of drugbank
-  aggregator: biopragmatics
+  tags:
+    - biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/drugbank/drugbank.obo
 - id: drugbank.sssom
   name: drugbank SSSOM release
   description: SSSOM release of drugbank
-  aggregator: biopragmatics
+  tags:
+    - biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/drugbank/drugbank.sssom
 uri_prefix: http://purl.obolibrary.org/obo/
 category: DataGraph
