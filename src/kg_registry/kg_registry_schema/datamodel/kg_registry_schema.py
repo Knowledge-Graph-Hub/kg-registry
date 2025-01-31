@@ -191,7 +191,7 @@ class Resource(ConfiguredBaseModel):
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'language', 'domain_of': ['Resource']} })
     contacts: Optional[Contact] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    products: Optional[List[str]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
+    products: Optional[List[Product]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
     domain: DomainEnum = Field(default=..., description="""The domain that the resource is relevant to. This is not multivalued.""", json_schema_extra = { "linkml_meta": {'alias': 'domain', 'domain_of': ['Resource']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource']} })
     funding: Optional[List[FundingSource]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'funding', 'domain_of': ['Resource']} })
@@ -228,7 +228,7 @@ class KnowledgeGraph(Resource):
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'language', 'domain_of': ['Resource']} })
     contacts: Optional[Contact] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    products: Optional[List[str]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
+    products: Optional[List[Product]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
     domain: DomainEnum = Field(default=..., description="""The domain that the resource is relevant to. This is not multivalued.""", json_schema_extra = { "linkml_meta": {'alias': 'domain', 'domain_of': ['Resource']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource']} })
     funding: Optional[List[FundingSource]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'funding', 'domain_of': ['Resource']} })
@@ -259,7 +259,7 @@ class DataGraph(Resource):
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'language', 'domain_of': ['Resource']} })
     contacts: Optional[Contact] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    products: Optional[List[str]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
+    products: Optional[List[Product]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
     domain: DomainEnum = Field(default=..., description="""The domain that the resource is relevant to. This is not multivalued.""", json_schema_extra = { "linkml_meta": {'alias': 'domain', 'domain_of': ['Resource']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource']} })
     funding: Optional[List[FundingSource]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'funding', 'domain_of': ['Resource']} })
@@ -289,7 +289,7 @@ class DataModel(Resource):
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'language', 'domain_of': ['Resource']} })
     contacts: Optional[Contact] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    products: Optional[List[str]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
+    products: Optional[List[Product]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
     domain: DomainEnum = Field(default=..., description="""The domain that the resource is relevant to. This is not multivalued.""", json_schema_extra = { "linkml_meta": {'alias': 'domain', 'domain_of': ['Resource']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource']} })
     funding: Optional[List[FundingSource]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'funding', 'domain_of': ['Resource']} })
@@ -319,7 +319,7 @@ class Mapping(Resource):
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'language', 'domain_of': ['Resource']} })
     contacts: Optional[Contact] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    products: Optional[List[str]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
+    products: Optional[List[Product]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
     domain: DomainEnum = Field(default=..., description="""The domain that the resource is relevant to. This is not multivalued.""", json_schema_extra = { "linkml_meta": {'alias': 'domain', 'domain_of': ['Resource']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource']} })
     funding: Optional[List[FundingSource]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'funding', 'domain_of': ['Resource']} })
@@ -349,7 +349,7 @@ class ProductionProcess(Resource):
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'language', 'domain_of': ['Resource']} })
     contacts: Optional[Contact] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    products: Optional[List[str]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
+    products: Optional[List[Product]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
     domain: DomainEnum = Field(default=..., description="""The domain that the resource is relevant to. This is not multivalued.""", json_schema_extra = { "linkml_meta": {'alias': 'domain', 'domain_of': ['Resource']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource']} })
     funding: Optional[List[FundingSource]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'funding', 'domain_of': ['Resource']} })
@@ -361,7 +361,8 @@ class Product(ConfiguredBaseModel):
     """
     A top-level class for all products in the knowledge graph registry. This includes any specific files, APIs, or any other accessible representations of a resource.
     """
-    linkml_meta: ClassVar[LinkMLMeta] = LinkMLMeta({'from_schema': 'https://w3id.org/knowledge-graph-hub/kg_registry_schema'})
+    linkml_meta: ClassVar[LinkMLMeta] = LinkMLMeta({'abstract': True,
+         'from_schema': 'https://w3id.org/knowledge-graph-hub/kg_registry_schema'})
 
     id: str = Field(default=..., description="""The identifier of the product. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id',
          'domain_of': ['Resource', 'Product'],

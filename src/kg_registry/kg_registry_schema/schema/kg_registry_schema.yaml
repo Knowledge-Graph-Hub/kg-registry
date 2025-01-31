@@ -94,6 +94,8 @@ classes:
           The products or representations of the resource.
         range: Product
         multivalued: true
+        inlined: true
+        inlined_as_list: true
       domain:
         description: >-
           The domain that the resource is relevant to.
@@ -191,6 +193,7 @@ classes:
   ## Product Classes
 
   Product:
+    abstract: true
     description: >-
       A top-level class for all products in the
       knowledge graph registry. This includes any specific
