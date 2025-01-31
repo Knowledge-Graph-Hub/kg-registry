@@ -104,7 +104,7 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "$ref": "#/$defs/Product"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -230,7 +230,7 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "$ref": "#/$defs/Product"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -312,6 +312,10 @@
                         "null"
                     ]
                 },
+                "id": {
+                    "description": "The identifier of the product. This is used to identify it within the registry.",
+                    "type": "string"
+                },
                 "license": {
                     "anyOf": [
                         {
@@ -343,6 +347,7 @@
                 }
             },
             "required": [
+                "id",
                 "name"
             ],
             "title": "DataModelProduct",
@@ -428,6 +433,10 @@
                         "null"
                     ]
                 },
+                "id": {
+                    "description": "The identifier of the product. This is used to identify it within the registry.",
+                    "type": "string"
+                },
                 "license": {
                     "anyOf": [
                         {
@@ -486,6 +495,7 @@
                 }
             },
             "required": [
+                "id",
                 "name"
             ],
             "title": "GraphProduct",
@@ -524,6 +534,10 @@
                         "null"
                     ]
                 },
+                "id": {
+                    "description": "The identifier of the product. This is used to identify it within the registry.",
+                    "type": "string"
+                },
                 "license": {
                     "anyOf": [
                         {
@@ -555,6 +569,7 @@
                 }
             },
             "required": [
+                "id",
                 "name"
             ],
             "title": "GraphicalInterface",
@@ -714,7 +729,7 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "$ref": "#/$defs/Product"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -869,7 +884,7 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "$ref": "#/$defs/Product"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -951,6 +966,10 @@
                         "null"
                     ]
                 },
+                "id": {
+                    "description": "The identifier of the product. This is used to identify it within the registry.",
+                    "type": "string"
+                },
                 "license": {
                     "anyOf": [
                         {
@@ -982,6 +1001,7 @@
                 }
             },
             "required": [
+                "id",
                 "name"
             ],
             "title": "MappingProduct",
@@ -1048,6 +1068,10 @@
                         "null"
                     ]
                 },
+                "id": {
+                    "description": "The identifier of the product. This is used to identify it within the registry.",
+                    "type": "string"
+                },
                 "license": {
                     "anyOf": [
                         {
@@ -1079,6 +1103,7 @@
                 }
             },
             "required": [
+                "id",
                 "name"
             ],
             "title": "ProcessProduct",
@@ -1109,6 +1134,10 @@
                         "null"
                     ]
                 },
+                "id": {
+                    "description": "The identifier of the product. This is used to identify it within the registry.",
+                    "type": "string"
+                },
                 "license": {
                     "anyOf": [
                         {
@@ -1140,6 +1169,7 @@
                 }
             },
             "required": [
+                "id",
                 "name"
             ],
             "title": "Product",
@@ -1214,7 +1244,7 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "$ref": "#/$defs/Product"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -1296,6 +1326,10 @@
                         "null"
                     ]
                 },
+                "id": {
+                    "description": "The identifier of the product. This is used to identify it within the registry.",
+                    "type": "string"
+                },
                 "license": {
                     "anyOf": [
                         {
@@ -1327,6 +1361,7 @@
                 }
             },
             "required": [
+                "id",
                 "name"
             ],
             "title": "ProgrammingInterface",
@@ -1454,7 +1489,7 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "$ref": "#/$defs/Product"
+                        "type": "string"
                     },
                     "type": [
                         "array",
