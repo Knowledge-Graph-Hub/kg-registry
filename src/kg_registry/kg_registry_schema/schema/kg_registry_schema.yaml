@@ -20,6 +20,8 @@ default_range: string
 imports:
   - linkml:types
 
+# TODO: add classes for Usages and Implementations
+
 classes:
 
   ## Resource Classes
@@ -62,8 +64,15 @@ classes:
           to download a specific file, a base URL to an API,
           or a link to a graphical interface.
         range: uriorcurie
+      repository:
+        description: >-
+          A main version control repository for the resource.
+          Specific products may have their own repositories.
+        range: uriorcurie
       license:
-        description: The license of the resource.
+        description: >-
+          The license of the resource.
+          Individual products may have their own licenses.
         range: string
       version:
         description: The version of the resource.
@@ -99,6 +108,11 @@ classes:
         description: >-
           The funding source(s) for the resource.
         range: FundingSource
+        multivalued: true
+      publications:
+        description: >-
+          Publications associated with the resource.
+        range: Publication
         multivalued: true
 
   KnowledgeGraph:
@@ -192,6 +206,15 @@ classes:
           to download a specific file, a base URL to an API,
           or a link to a graphical interface.
         range: uriorcurie
+      repository:
+        description: >-
+          A main version control repository for the product.
+        range: uriorcurie
+      license:
+        description: >-
+          The license of the product.
+          This may differ from that of the parent resource.
+        range: string
       compression:
         description: >-
           The type of compression used with the product.
@@ -317,6 +340,37 @@ classes:
         description: >-
           The identifier for the funding source.
         range: string
+
+  Publication:
+    description: >-
+      A publication associated with a resource.
+    attributes:
+      preferred:
+        description: >-
+          Whether this is the preferred publication for the resource.
+        range: boolean
+      title:
+        description: >-
+          The title of the publication.
+        range: string
+      authors:
+        description: >-
+          The authors of the publication.
+        range: string
+        multivalued: true
+      journal:
+        description: >-
+          The journal the publication was published in.
+        range: string
+      year:
+        description: >-
+          The year the publication was published.
+        range: string
+      doi:
+        description: >-
+          The DOI of the publication.
+          This should include the doi: prefix.
+        range: uriorcurie
 
 # Enums
 enums:
