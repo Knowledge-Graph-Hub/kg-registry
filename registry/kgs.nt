@@ -1,72 +1,72 @@
-_:B02c58d3d5c0366b3b25a1f71bab5f2b9 <http://www.w3.org/2000/01/rdf-schema#label> "Christopher J. Mungall" .
-_:B02c58d3d5c0366b3b25a1f71bab5f2b9 <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
-_:B5007399f35939a5ce1d8d6ab74583ab1 <http://www.w3.org/2000/01/rdf-schema#label> "Christopher J. Mungall" .
-_:B5007399f35939a5ce1d8d6ab74583ab1 <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
-_:B6d634ccb1b9d0b6e6f97f9e4624d0802 <http://www.w3.org/2000/01/rdf-schema#label> "Gregory Hyde" .
-_:B5a3d15ef73a0cecdb544f37aeef0c483 <http://www.w3.org/2000/01/rdf-schema#label> "Charles Tapley Hoyt" .
-_:B5a3d15ef73a0cecdb544f37aeef0c483 <http://xmlns.com/foaf/0.1/mbox> "cthoyt@gmail.com" .
-_:B2b9b97af59349e9a1bf9c646f595df54 <http://www.w3.org/2000/01/rdf-schema#label> "Anne Thessen" .
-_:Bda9c9f87501b5e53edefe865d79cff1d <http://www.w3.org/2000/01/rdf-schema#label> "Jason Flannick" .
-_:B11192f9744bebc4fa89e0b7bc94c6439 <http://www.w3.org/2000/01/rdf-schema#label> "Charles Tapley Hoyt" .
-_:B11192f9744bebc4fa89e0b7bc94c6439 <http://xmlns.com/foaf/0.1/mbox> "cthoyt@gmail.com" .
-_:Bf7c7dee680bc3b10730fb97b8deeadca <http://www.w3.org/2000/01/rdf-schema#label> "Kara Fecho" .
-_:Bf7c7dee680bc3b10730fb97b8deeadca <http://xmlns.com/foaf/0.1/mbox> "kfecho@renci.org" .
-_:Bef34ce7669eca657c3972f7fc86e861d <http://www.w3.org/2000/01/rdf-schema#label> "Charles Tapley Hoyt" .
-_:Bef34ce7669eca657c3972f7fc86e861d <http://xmlns.com/foaf/0.1/mbox> "cthoyt@gmail.com" .
-_:Bf94642516ddde2620aa6e0f2d975cf66 <http://www.w3.org/2000/01/rdf-schema#label> "Justin Reese" .
-_:B8913225c804905d2f8c7584235a5e73c <http://www.w3.org/2000/01/rdf-schema#label> "Pierre-Marie Allard" .
-_:B70668cf71c32731819edfda5902fa093 <http://www.w3.org/2000/01/rdf-schema#label> "Chris Mungall" .
-_:B70668cf71c32731819edfda5902fa093 <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
-_:B0fc9e2529383f27bfcdc2ae79f80cda4 <http://www.w3.org/2000/01/rdf-schema#label> "J. Harry Caufield" .
-_:B0fc9e2529383f27bfcdc2ae79f80cda4 <http://xmlns.com/foaf/0.1/mbox> "jhc@lbl.gov" .
-_:B8c71065b6f087d7a8031204378c83b6b <http://www.w3.org/2000/01/rdf-schema#label> "Christopher J. Mungall" .
-_:B8c71065b6f087d7a8031204378c83b6b <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
-_:B5ddbd0611724b6bf6e54da9b41d579c0 <http://www.w3.org/2000/01/rdf-schema#label> "Christopher J. Mungall" .
-_:B5ddbd0611724b6bf6e54da9b41d579c0 <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
-_:B401f614541cf30d7b15c36882c43b6d9 <http://www.w3.org/2000/01/rdf-schema#label> "Christopher J. Mungall" .
-_:B401f614541cf30d7b15c36882c43b6d9 <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
-_:B1be91bbf2e2a5da73745a12ef4b7e930 <http://www.w3.org/2000/01/rdf-schema#label> "Christopher J. Mungall" .
-_:B1be91bbf2e2a5da73745a12ef4b7e930 <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
-_:Bf61255082333b450c6c09fa1a2438de8 <http://www.w3.org/2000/01/rdf-schema#label> "Sandrine Muller" .
-_:Bef304e835c3865a895fe61c392d87a64 <http://www.w3.org/2000/01/rdf-schema#label> "Gustavo Glusman, Guangrong Qin" .
-_:B86448daacd94caba459dbf3ecac9bcd6 <http://www.w3.org/2000/01/rdf-schema#label> "Jim Balhoff" .
-_:B4b7914b4fce1d5414ba287a0dd7c28d9 <http://www.w3.org/2000/01/rdf-schema#label> "Tiffany Callahan" .
-_:B149fcdae1aaed9235c31de56bec60928 <http://www.w3.org/2000/01/rdf-schema#label> "James McLaughlin" .
-_:B149fcdae1aaed9235c31de56bec60928 <http://xmlns.com/foaf/0.1/mbox> "jmcl@ebi.ac.uk" .
-_:Be7e271ac2b894a0b59df757899ea9ef1 <http://www.w3.org/2000/01/rdf-schema#label> "Christopher J. Mungall" .
-_:Be7e271ac2b894a0b59df757899ea9ef1 <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
-_:B71c47a7da0f46ee4d0c4047f2fa4624e <http://www.w3.org/2000/01/rdf-schema#label> "Benjamin M. Good" .
-_:B71c47a7da0f46ee4d0c4047f2fa4624e <http://xmlns.com/foaf/0.1/mbox> "ben.mcgee.good@gmail.com" .
-_:B87fd749a3ea235348ffd3759358fba26 <http://www.w3.org/2000/01/rdf-schema#label> "Christopher J. Mungall" .
-_:B87fd749a3ea235348ffd3759358fba26 <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
-_:B59803523445e3f4c7b2e0ff03026c94f <http://www.w3.org/2000/01/rdf-schema#label> "Charles Tapley Hoyt" .
-_:B59803523445e3f4c7b2e0ff03026c94f <http://xmlns.com/foaf/0.1/mbox> "cthoyt@gmail.com" .
-_:B5746f1c9316046fa3917fd819a54cc26 <http://www.w3.org/2000/01/rdf-schema#label> "Emanuele Cavalleri" .
-_:B5bb4ae93fd860a08e991d2667c26bba8 <http://www.w3.org/2000/01/rdf-schema#label> "Amy Glen, Steven Ramsey" .
-_:B28532cf44586b82c060b1bd651842b34 <http://www.w3.org/2000/01/rdf-schema#label> "Chunlei Wu" .
-_:B52d6f3f1f120a3fbd2fcd5108ba1d176 <http://www.w3.org/2000/01/rdf-schema#label> "Charles Tapley Hoyt" .
-_:B52d6f3f1f120a3fbd2fcd5108ba1d176 <http://xmlns.com/foaf/0.1/mbox> "cthoyt@gmail.com" .
-_:B1d9be4e3f36a42106840ef7b249a3a6c <http://www.w3.org/2000/01/rdf-schema#label> "Peter Robinson" .
-_:B508679450961d2c817884991f0257907 <http://www.w3.org/2000/01/rdf-schema#label> "Sui Huang, Sergio Baranzini" .
-_:Bdbe468121f194c96d355c0c69cc92bfc <http://www.w3.org/2000/01/rdf-schema#label> "Kevin Schaper" .
-_:Bdbe468121f194c96d355c0c69cc92bfc <http://xmlns.com/foaf/0.1/mbox> "kevinschaper@gmail.com" .
-_:Bf8915baea5bd593b05dd683a07fe6271 <http://www.w3.org/2000/01/rdf-schema#label> "Charles Tapley Hoyt" .
-_:Bf8915baea5bd593b05dd683a07fe6271 <http://xmlns.com/foaf/0.1/mbox> "cthoyt@gmail.com" .
-_:B3924f306a1123fe1abb427bee75e4037 <http://www.w3.org/2000/01/rdf-schema#label> "Charles Tapley Hoyt" .
-_:B3924f306a1123fe1abb427bee75e4037 <http://xmlns.com/foaf/0.1/mbox> "cthoyt@gmail.com" .
-_:B9129c73daa3410cd0c02cb783a823b4b <http://www.w3.org/2000/01/rdf-schema#label> "Edgar Gatica" .
-_:B56f5085786b2223b5c6d0f50e5c79924 <http://www.w3.org/2000/01/rdf-schema#label> "James P. Balhoff" .
-_:B56f5085786b2223b5c6d0f50e5c79924 <http://xmlns.com/foaf/0.1/mbox> "balhoff@renci.org" .
-_:B7328732014233a94611236aa4c0521cb <http://www.w3.org/2000/01/rdf-schema#label> "Charles Tapley Hoyt" .
-_:B7328732014233a94611236aa4c0521cb <http://xmlns.com/foaf/0.1/mbox> "cthoyt@gmail.com" .
-_:B4086f580069c51b6b785cc43a451c89f <http://www.w3.org/2000/01/rdf-schema#label> "Yaphet Kebede" .
-_:B4086f580069c51b6b785cc43a451c89f <http://xmlns.com/foaf/0.1/mbox> "kebedey@renci.org" .
-_:Bcd2833e54db49146091b392c38de71eb <http://www.w3.org/2000/01/rdf-schema#label> "Sierra Taylor Moxon" .
-_:Bcd2833e54db49146091b392c38de71eb <http://xmlns.com/foaf/0.1/mbox> "smoxon@lbl.gov" .
-_:Bdd6f5d9276cd80e1140c56ae8979b009 <http://www.w3.org/2000/01/rdf-schema#label> "Jim Balhoff" .
-_:Bdd6f5d9276cd80e1140c56ae8979b009 <http://xmlns.com/foaf/0.1/mbox> "balhoff@renci.org" .
-_:B86e836fa62b916a65b431670ecbced18 <http://www.w3.org/2000/01/rdf-schema#label> "John Erol Evangelista" .
-_:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label> "Casey Ta, Vincent Emonet, Michel Dumontier" .
+_:B782bfee0ee28249dd27f942f58a45f63 <http://www.w3.org/2000/01/rdf-schema#label> "Christopher J. Mungall" .
+_:B782bfee0ee28249dd27f942f58a45f63 <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
+_:B55d1c8a6d78cb0f322177f8f6062ed5e <http://www.w3.org/2000/01/rdf-schema#label> "Christopher J. Mungall" .
+_:B55d1c8a6d78cb0f322177f8f6062ed5e <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
+_:B1dff1737bc79ae458096d0d42e7cf430 <http://www.w3.org/2000/01/rdf-schema#label> "Gregory Hyde" .
+_:B5566c001026fc97638fe940e0494690e <http://www.w3.org/2000/01/rdf-schema#label> "Charles Tapley Hoyt" .
+_:B5566c001026fc97638fe940e0494690e <http://xmlns.com/foaf/0.1/mbox> "cthoyt@gmail.com" .
+_:Bfde82d227bcab47176c3166d9a808d91 <http://www.w3.org/2000/01/rdf-schema#label> "Anne Thessen" .
+_:Bc65071776aa2103c327ad61c46c9c568 <http://www.w3.org/2000/01/rdf-schema#label> "Jason Flannick" .
+_:B72a650f01ade89d716788c7ee8bd39fd <http://www.w3.org/2000/01/rdf-schema#label> "Charles Tapley Hoyt" .
+_:B72a650f01ade89d716788c7ee8bd39fd <http://xmlns.com/foaf/0.1/mbox> "cthoyt@gmail.com" .
+_:Bf3637ccdc17091e99fadff1ceb959d65 <http://www.w3.org/2000/01/rdf-schema#label> "Kara Fecho" .
+_:Bf3637ccdc17091e99fadff1ceb959d65 <http://xmlns.com/foaf/0.1/mbox> "kfecho@renci.org" .
+_:B9832202abf01ea4ee9ff061ac7cc3f50 <http://www.w3.org/2000/01/rdf-schema#label> "Charles Tapley Hoyt" .
+_:B9832202abf01ea4ee9ff061ac7cc3f50 <http://xmlns.com/foaf/0.1/mbox> "cthoyt@gmail.com" .
+_:B56c005d04290edcb648ca884c9401c47 <http://www.w3.org/2000/01/rdf-schema#label> "Justin Reese" .
+_:B1f9d70e70f176e32f74777bf223404e0 <http://www.w3.org/2000/01/rdf-schema#label> "Pierre-Marie Allard" .
+_:B60357bafabcf1d6b1d18159c76433bba <http://www.w3.org/2000/01/rdf-schema#label> "Chris Mungall" .
+_:B60357bafabcf1d6b1d18159c76433bba <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
+_:Bb9174e852a9a1e4daf6033237f9a3344 <http://www.w3.org/2000/01/rdf-schema#label> "J. Harry Caufield" .
+_:Bb9174e852a9a1e4daf6033237f9a3344 <http://xmlns.com/foaf/0.1/mbox> "jhc@lbl.gov" .
+_:B762e2e17556c17abb10acfbba63bdafd <http://www.w3.org/2000/01/rdf-schema#label> "Christopher J. Mungall" .
+_:B762e2e17556c17abb10acfbba63bdafd <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
+_:B5d38ce03406f4f6ffd61aa2ae34e4e9b <http://www.w3.org/2000/01/rdf-schema#label> "Christopher J. Mungall" .
+_:B5d38ce03406f4f6ffd61aa2ae34e4e9b <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
+_:B2af97ec803d61034172db335ba723d37 <http://www.w3.org/2000/01/rdf-schema#label> "Christopher J. Mungall" .
+_:B2af97ec803d61034172db335ba723d37 <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
+_:B66fc35b3a1b03433a715cc97c7d2e2c2 <http://www.w3.org/2000/01/rdf-schema#label> "Christopher J. Mungall" .
+_:B66fc35b3a1b03433a715cc97c7d2e2c2 <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
+_:B211f4ca4ad8993535faf036703982297 <http://www.w3.org/2000/01/rdf-schema#label> "Sandrine Muller" .
+_:B4ee5c39bffbaca378671359802caa964 <http://www.w3.org/2000/01/rdf-schema#label> "Gustavo Glusman, Guangrong Qin" .
+_:B513f4fc34bdab950736e23cf65197503 <http://www.w3.org/2000/01/rdf-schema#label> "Jim Balhoff" .
+_:Ba4bf7cfefb070a65780523910aa53200 <http://www.w3.org/2000/01/rdf-schema#label> "Tiffany Callahan" .
+_:B7c28d7ab09c14b82f51678b4b1f81a48 <http://www.w3.org/2000/01/rdf-schema#label> "James McLaughlin" .
+_:B7c28d7ab09c14b82f51678b4b1f81a48 <http://xmlns.com/foaf/0.1/mbox> "jmcl@ebi.ac.uk" .
+_:B772dcb9c3c54c26cb7e740bc20ea1771 <http://www.w3.org/2000/01/rdf-schema#label> "Christopher J. Mungall" .
+_:B772dcb9c3c54c26cb7e740bc20ea1771 <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
+_:B8fa2372845198205ef9031cd482d39d2 <http://www.w3.org/2000/01/rdf-schema#label> "Benjamin M. Good" .
+_:B8fa2372845198205ef9031cd482d39d2 <http://xmlns.com/foaf/0.1/mbox> "ben.mcgee.good@gmail.com" .
+_:B052a4828f5d551bceb3affd972d7eccf <http://www.w3.org/2000/01/rdf-schema#label> "Christopher J. Mungall" .
+_:B052a4828f5d551bceb3affd972d7eccf <http://xmlns.com/foaf/0.1/mbox> "cjmungall@lbl.gov" .
+_:B4995d09999e250aebc0538e94c18b564 <http://www.w3.org/2000/01/rdf-schema#label> "Charles Tapley Hoyt" .
+_:B4995d09999e250aebc0538e94c18b564 <http://xmlns.com/foaf/0.1/mbox> "cthoyt@gmail.com" .
+_:B64ffd99b7e6a7bdee7496fb2da556d3d <http://www.w3.org/2000/01/rdf-schema#label> "Emanuele Cavalleri" .
+_:B0354deb5e3a5ac2eec3d894ce783070b <http://www.w3.org/2000/01/rdf-schema#label> "Amy Glen, Steven Ramsey" .
+_:B22b751ba24eb9f536f299aa72ad2e8a5 <http://www.w3.org/2000/01/rdf-schema#label> "Chunlei Wu" .
+_:Beec13b6448db99fd24638be863f7be1d <http://www.w3.org/2000/01/rdf-schema#label> "Charles Tapley Hoyt" .
+_:Beec13b6448db99fd24638be863f7be1d <http://xmlns.com/foaf/0.1/mbox> "cthoyt@gmail.com" .
+_:B2071dcd409be001afc9abb1b09bfd3ab <http://www.w3.org/2000/01/rdf-schema#label> "Peter Robinson" .
+_:B85a3caf34cd282caa87d06501106daba <http://www.w3.org/2000/01/rdf-schema#label> "Sui Huang, Sergio Baranzini" .
+_:Bb1a16729ba1cb33857b1ef21dcc0dd09 <http://www.w3.org/2000/01/rdf-schema#label> "Kevin Schaper" .
+_:Bb1a16729ba1cb33857b1ef21dcc0dd09 <http://xmlns.com/foaf/0.1/mbox> "kevinschaper@gmail.com" .
+_:B58d22e62cc7f21c5ded6b5668011e204 <http://www.w3.org/2000/01/rdf-schema#label> "Charles Tapley Hoyt" .
+_:B58d22e62cc7f21c5ded6b5668011e204 <http://xmlns.com/foaf/0.1/mbox> "cthoyt@gmail.com" .
+_:Bcb799f1be7ba6400a01ad3a472b506ac <http://www.w3.org/2000/01/rdf-schema#label> "Charles Tapley Hoyt" .
+_:Bcb799f1be7ba6400a01ad3a472b506ac <http://xmlns.com/foaf/0.1/mbox> "cthoyt@gmail.com" .
+_:B1a8c9d3e68c59f403cf0d64857f9d2a0 <http://www.w3.org/2000/01/rdf-schema#label> "Edgar Gatica" .
+_:B1ceae1484199d3ad99e1eb080fc2a595 <http://www.w3.org/2000/01/rdf-schema#label> "James P. Balhoff" .
+_:B1ceae1484199d3ad99e1eb080fc2a595 <http://xmlns.com/foaf/0.1/mbox> "balhoff@renci.org" .
+_:B126d30eb903fbe237e66d4533329e709 <http://www.w3.org/2000/01/rdf-schema#label> "Charles Tapley Hoyt" .
+_:B126d30eb903fbe237e66d4533329e709 <http://xmlns.com/foaf/0.1/mbox> "cthoyt@gmail.com" .
+_:B9bf0dc5bb34bde12edb59108f7a5439a <http://www.w3.org/2000/01/rdf-schema#label> "Yaphet Kebede" .
+_:B9bf0dc5bb34bde12edb59108f7a5439a <http://xmlns.com/foaf/0.1/mbox> "kebedey@renci.org" .
+_:B461deb8dab7f18fdaa6c7964753b576a <http://www.w3.org/2000/01/rdf-schema#label> "Sierra Taylor Moxon" .
+_:B461deb8dab7f18fdaa6c7964753b576a <http://xmlns.com/foaf/0.1/mbox> "smoxon@lbl.gov" .
+_:B4e4de73a8fcc2fe9abfb3003c3c7bc5f <http://www.w3.org/2000/01/rdf-schema#label> "Jim Balhoff" .
+_:B4e4de73a8fcc2fe9abfb3003c3c7bc5f <http://xmlns.com/foaf/0.1/mbox> "balhoff@renci.org" .
+_:B854ceb58c992c6cad21ca1963ab673c0 <http://www.w3.org/2000/01/rdf-schema#label> "John Erol Evangelista" .
+_:B266f2455054e091ad0e0a9f1865e99bb <http://www.w3.org/2000/01/rdf-schema#label> "Casey Ta, Vincent Emonet, Michel Dumontier" .
 <http://purl.obolibrary.org/obo/automat> <http://identifiers.org/preferredPrefix> "http" .
 <http://purl.obolibrary.org/obo/automat> <http://obofoundry.github.io/vocabulary/activity_status> "active" .
 <http://purl.obolibrary.org/obo/automat> <http://purl.org/dc/elements/1.1/description> "A Translator Knowledge Provider offering multiple sub-graphs in KGX format." .
@@ -74,7 +74,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/automat> <http://purl.org/dc/terms/1.1/theme> "health" .
 <http://purl.obolibrary.org/obo/automat> <http://usefulinc.com/ns/doap#bug-database> "" .
 <http://purl.obolibrary.org/obo/automat> <http://www.w3.org/ns/dcat#accessURL> "http://purl.obolibrary.org/obo/automat.owl" .
-<http://purl.obolibrary.org/obo/automat> <http://www.w3.org/ns/dcat#contactPoint> _:B4086f580069c51b6b785cc43a451c89f .
+<http://purl.obolibrary.org/obo/automat> <http://www.w3.org/ns/dcat#contactPoint> _:B9bf0dc5bb34bde12edb59108f7a5439a .
 <http://purl.obolibrary.org/obo/automat> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/robokopkg> .
 <http://purl.obolibrary.org/obo/automat> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/robokopplus> .
 <http://purl.obolibrary.org/obo/automat> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/biolink_automat> .
@@ -102,7 +102,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/biolink> <http://purl.org/dc/terms/1.1/theme> "upper" .
 <http://purl.obolibrary.org/obo/biolink> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/biolink/biolink-model/issues" .
 <http://purl.obolibrary.org/obo/biolink> <http://www.w3.org/ns/dcat#accessURL> "https://w3id.org/biolink/biolink.owl" .
-<http://purl.obolibrary.org/obo/biolink> <http://www.w3.org/ns/dcat#contactPoint> _:Bcd2833e54db49146091b392c38de71eb .
+<http://purl.obolibrary.org/obo/biolink> <http://www.w3.org/ns/dcat#contactPoint> _:B461deb8dab7f18fdaa6c7964753b576a .
 <http://purl.obolibrary.org/obo/biolink> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/biolink-model.owl.ttl> .
 <http://purl.obolibrary.org/obo/biolink> <http://xmlns.com/foaf/0.1/homepage> <https://w3id.org/biolink/biolink-model.owl.ttl> .
 <http://purl.obolibrary.org/obo/biolink-model.owl.ttl> <http://purl.org/dc/elements/1.1/description> "OWL release of Biolink-Model" .
@@ -115,12 +115,12 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/cam-kp> <http://purl.org/dc/elements/1.1/description> "The “cam-kp” Exposures Knowledge Graph (in development)." .
 <http://purl.obolibrary.org/obo/cam-kp> <http://purl.org/dc/elements/1.1/title> "Exposures KP (cam kp)" .
 <http://purl.obolibrary.org/obo/cam-kp> <http://purl.org/dc/terms/1.1/theme> "health" .
-<http://purl.obolibrary.org/obo/cam-kp> <http://www.w3.org/ns/dcat#contactPoint> _:Bdd6f5d9276cd80e1140c56ae8979b009 .
+<http://purl.obolibrary.org/obo/cam-kp> <http://www.w3.org/ns/dcat#contactPoint> _:B4e4de73a8fcc2fe9abfb3003c3c7bc5f .
 <http://purl.obolibrary.org/obo/cam-kp> <http://xmlns.com/foaf/0.1/homepage> <https://github.com/ExposuresProvider/cam-kp-api> .
 <http://purl.obolibrary.org/obo/cfde> <http://obofoundry.github.io/vocabulary/activity_status> "active" .
 <http://purl.obolibrary.org/obo/cfde> <http://purl.org/dc/elements/1.1/description> "The Common Fund Data Ecosystem (CFDE) aims to facilitate better integration, and reuse of Common Fund data to accelerate discoveries in biomedical research." .
 <http://purl.obolibrary.org/obo/cfde> <http://purl.org/dc/elements/1.1/title> "Data Distillery Knowledge Graph" .
-<http://purl.obolibrary.org/obo/cfde> <http://www.w3.org/ns/dcat#contactPoint> _:B86e836fa62b916a65b431670ecbced18 .
+<http://purl.obolibrary.org/obo/cfde> <http://www.w3.org/ns/dcat#contactPoint> _:B854ceb58c992c6cad21ca1963ab673c0 .
 <http://purl.obolibrary.org/obo/cfde> <http://xmlns.com/foaf/0.1/homepage> <https://dd-kg-ui.cfde.cloud/about> .
 <http://purl.obolibrary.org/obo/chr> <http://identifiers.org/preferredPrefix> "obo" .
 <http://purl.obolibrary.org/obo/chr> <http://obofoundry.github.io/vocabulary/activity_status> "active" .
@@ -130,7 +130,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/chr> <http://purl.org/dc/terms/1.1/theme> "chemistry and biochemistry" .
 <http://purl.obolibrary.org/obo/chr> <http://usefulinc.com/ns/doap#bug-database> "http://purl.obolibrary.org/obo/chr.owl" .
 <http://purl.obolibrary.org/obo/chr> <http://www.w3.org/ns/dcat#accessURL> "http://purl.obolibrary.org/obo/chr.owl" .
-<http://purl.obolibrary.org/obo/chr> <http://www.w3.org/ns/dcat#contactPoint> _:B02c58d3d5c0366b3b25a1f71bab5f2b9 .
+<http://purl.obolibrary.org/obo/chr> <http://www.w3.org/ns/dcat#contactPoint> _:B782bfee0ee28249dd27f942f58a45f63 .
 <http://purl.obolibrary.org/obo/chr> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/chr.owl> .
 <http://purl.obolibrary.org/obo/chr> <http://xmlns.com/foaf/0.1/homepage> <http://purl.obolibrary.org/obo/chr.owl> .
 <http://purl.obolibrary.org/obo/chr.owl> <http://purl.org/dc/elements/1.1/description> "OWL release of Monochrom Ontology" .
@@ -140,13 +140,13 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/clinical-data-kp> <http://purl.org/dc/elements/1.1/description> "A Translator Knowledge Provider integrating clinical data." .
 <http://purl.obolibrary.org/obo/clinical-data-kp> <http://purl.org/dc/elements/1.1/title> "Clinical Data KP" .
 <http://purl.obolibrary.org/obo/clinical-data-kp> <http://purl.org/dc/terms/1.1/theme> "health" .
-<http://purl.obolibrary.org/obo/clinical-data-kp> <http://www.w3.org/ns/dcat#contactPoint> _:B2aa3429682808b7b6487ad6ee0f7f18d .
+<http://purl.obolibrary.org/obo/clinical-data-kp> <http://www.w3.org/ns/dcat#contactPoint> _:B266f2455054e091ad0e0a9f1865e99bb .
 <http://purl.obolibrary.org/obo/clinical-data-kp> <http://xmlns.com/foaf/0.1/homepage> <https://ncats.nih.gov/research/research-activities/translator/projects> .
 <http://purl.obolibrary.org/obo/connections-hypothesis-kp> <http://obofoundry.github.io/vocabulary/activity_status> "active" .
 <http://purl.obolibrary.org/obo/connections-hypothesis-kp> <http://purl.org/dc/elements/1.1/description> "A Translator Knowledge Provider exploring connections hypotheses." .
 <http://purl.obolibrary.org/obo/connections-hypothesis-kp> <http://purl.org/dc/elements/1.1/title> "Connections Hypothesis KP" .
 <http://purl.obolibrary.org/obo/connections-hypothesis-kp> <http://purl.org/dc/terms/1.1/theme> "health" .
-<http://purl.obolibrary.org/obo/connections-hypothesis-kp> <http://www.w3.org/ns/dcat#contactPoint> _:B6d634ccb1b9d0b6e6f97f9e4624d0802 .
+<http://purl.obolibrary.org/obo/connections-hypothesis-kp> <http://www.w3.org/ns/dcat#contactPoint> _:B1dff1737bc79ae458096d0d42e7cf430 .
 <http://purl.obolibrary.org/obo/connections-hypothesis-kp> <http://xmlns.com/foaf/0.1/homepage> <https://github.com/di2ag/chp_api> .
 <http://purl.obolibrary.org/obo/ctd_automat> <http://purl.org/dc/elements/1.1/description> "CTD Automat" .
 <http://purl.obolibrary.org/obo/ctd_automat> <http://purl.org/dc/terms/1.1/format> "kgx" .
@@ -157,7 +157,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/drkg> <http://purl.org/dc/elements/1.1/title> "DRKG" .
 <http://purl.obolibrary.org/obo/drkg> <http://purl.org/dc/terms/1.1/theme> "health" .
 <http://purl.obolibrary.org/obo/drkg> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/gnn4dr/DRKG/issues" .
-<http://purl.obolibrary.org/obo/drkg> <http://www.w3.org/ns/dcat#contactPoint> _:Bd85ab9378611510bc2204c4e282d33f9 .
+<http://purl.obolibrary.org/obo/drkg> <http://www.w3.org/ns/dcat#contactPoint> _:B8013a65b5d30f029c7147232d56fb333 .
 <http://purl.obolibrary.org/obo/drkg> <http://xmlns.com/foaf/0.1/homepage> <https://github.com/gnn4dr/DRKG> .
 <http://purl.obolibrary.org/obo/drugbank> <http://identifiers.org/preferredPrefix> "obo" .
 <http://purl.obolibrary.org/obo/drugbank> <http://obofoundry.github.io/vocabulary/activity_status> "active" .
@@ -166,7 +166,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/drugbank> <http://purl.org/dc/terms/1.1/theme> "health" .
 <http://purl.obolibrary.org/obo/drugbank> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/biopragmatics/pyobo/issues" .
 <http://purl.obolibrary.org/obo/drugbank> <http://www.w3.org/ns/dcat#accessURL> "http://purl.obolibrary.org/obo/drugbank.owl" .
-<http://purl.obolibrary.org/obo/drugbank> <http://www.w3.org/ns/dcat#contactPoint> _:B5a3d15ef73a0cecdb544f37aeef0c483 .
+<http://purl.obolibrary.org/obo/drugbank> <http://www.w3.org/ns/dcat#contactPoint> _:B5566c001026fc97638fe940e0494690e .
 <http://purl.obolibrary.org/obo/drugbank> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/drugbank.owl> .
 <http://purl.obolibrary.org/obo/drugbank> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/drugbank.obo> .
 <http://purl.obolibrary.org/obo/drugbank> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/drugbank.sssom> .
@@ -189,7 +189,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/eco-kg> <http://purl.org/dc/elements/1.1/title> "eco-KG" .
 <http://purl.obolibrary.org/obo/eco-kg> <http://purl.org/dc/terms/1.1/theme> "organisms" .
 <http://purl.obolibrary.org/obo/eco-kg> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/Knowledge-Graph-Hub/eco-kg/issues" .
-<http://purl.obolibrary.org/obo/eco-kg> <http://www.w3.org/ns/dcat#contactPoint> _:B2b9b97af59349e9a1bf9c646f595df54 .
+<http://purl.obolibrary.org/obo/eco-kg> <http://www.w3.org/ns/dcat#contactPoint> _:Bfde82d227bcab47176c3166d9a808d91 .
 <http://purl.obolibrary.org/obo/eco-kg> <http://xmlns.com/foaf/0.1/homepage> <https://kghub.org/eco-kg/index.html> .
 <http://purl.obolibrary.org/obo/ecosim> <http://identifiers.org/preferredPrefix> "obo" .
 <http://purl.obolibrary.org/obo/ecosim> <http://obofoundry.github.io/vocabulary/activity_status> "active" .
@@ -198,7 +198,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/ecosim> <http://purl.org/dc/terms/1.1/theme> "environment" .
 <http://purl.obolibrary.org/obo/ecosim> <http://usefulinc.com/ns/doap#bug-database> "http://purl.obolibrary.org/obo/ecosim.owl" .
 <http://purl.obolibrary.org/obo/ecosim> <http://www.w3.org/ns/dcat#accessURL> "http://purl.obolibrary.org/obo/ecosim.owl" .
-<http://purl.obolibrary.org/obo/ecosim> <http://www.w3.org/ns/dcat#contactPoint> _:B5007399f35939a5ce1d8d6ab74583ab1 .
+<http://purl.obolibrary.org/obo/ecosim> <http://www.w3.org/ns/dcat#contactPoint> _:B55d1c8a6d78cb0f322177f8f6062ed5e .
 <http://purl.obolibrary.org/obo/ecosim> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/ecosim.owl> .
 <http://purl.obolibrary.org/obo/ecosim> <http://xmlns.com/foaf/0.1/homepage> <http://purl.obolibrary.org/obo/ecosim.owl> .
 <http://purl.obolibrary.org/obo/ecosim.owl> <http://purl.org/dc/elements/1.1/description> "OWL release of ecosim" .
@@ -211,7 +211,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/genetics-kp> <http://purl.org/dc/elements/1.1/description> "A Translator Knowledge Provider focusing on genetic data." .
 <http://purl.obolibrary.org/obo/genetics-kp> <http://purl.org/dc/elements/1.1/title> "Genetics KP" .
 <http://purl.obolibrary.org/obo/genetics-kp> <http://purl.org/dc/terms/1.1/theme> "health" .
-<http://purl.obolibrary.org/obo/genetics-kp> <http://www.w3.org/ns/dcat#contactPoint> _:Bda9c9f87501b5e53edefe865d79cff1d .
+<http://purl.obolibrary.org/obo/genetics-kp> <http://www.w3.org/ns/dcat#contactPoint> _:Bc65071776aa2103c327ad61c46c9c568 .
 <http://purl.obolibrary.org/obo/genetics-kp> <http://xmlns.com/foaf/0.1/homepage> <http://purl.obolibrary.org/obo/> .
 <http://purl.obolibrary.org/obo/goldterms> <http://identifiers.org/preferredPrefix> "GOLDTERMS" .
 <http://purl.obolibrary.org/obo/goldterms> <http://obofoundry.github.io/vocabulary/activity_status> "active" .
@@ -227,7 +227,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/goldterms> <http://purl.org/dc/terms/1.1/theme> "environment" .
 <http://purl.obolibrary.org/obo/goldterms> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/cmungall/gold-ontology/issues" .
 <http://purl.obolibrary.org/obo/goldterms> <http://www.w3.org/ns/dcat#accessURL> "https://w3id.org/goldterms/goldterms.owl" .
-<http://purl.obolibrary.org/obo/goldterms> <http://www.w3.org/ns/dcat#contactPoint> _:B70668cf71c32731819edfda5902fa093 .
+<http://purl.obolibrary.org/obo/goldterms> <http://www.w3.org/ns/dcat#contactPoint> _:B60357bafabcf1d6b1d18159c76433bba .
 <http://purl.obolibrary.org/obo/goldterms> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/goldterms.owl> .
 <http://purl.obolibrary.org/obo/goldterms> <http://xmlns.com/foaf/0.1/homepage> <https://gold.jgi.doe.gov/> .
 <http://purl.obolibrary.org/obo/goldterms.owl> <http://purl.org/dc/elements/1.1/title> "main GOLDTERMS OWL release" .
@@ -251,7 +251,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/hgnc> <http://purl.org/dc/terms/1.1/theme> "biological systems" .
 <http://purl.obolibrary.org/obo/hgnc> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/biopragmatics/pyobo/issues" .
 <http://purl.obolibrary.org/obo/hgnc> <http://www.w3.org/ns/dcat#accessURL> "http://purl.obolibrary.org/obo/hgnc.owl" .
-<http://purl.obolibrary.org/obo/hgnc> <http://www.w3.org/ns/dcat#contactPoint> _:B11192f9744bebc4fa89e0b7bc94c6439 .
+<http://purl.obolibrary.org/obo/hgnc> <http://www.w3.org/ns/dcat#contactPoint> _:B72a650f01ade89d716788c7ee8bd39fd .
 <http://purl.obolibrary.org/obo/hgnc> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/hgnc.owl> .
 <http://purl.obolibrary.org/obo/hgnc> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/hgnc.obo> .
 <http://purl.obolibrary.org/obo/hgnc> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/hgnc.sssom> .
@@ -281,7 +281,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/icees-kg> <http://purl.org/dc/terms/1.1/theme> "health" .
 <http://purl.obolibrary.org/obo/icees-kg> <http://usefulinc.com/ns/doap#bug-database> "" .
 <http://purl.obolibrary.org/obo/icees-kg> <http://www.w3.org/ns/dcat#accessURL> "http://purl.obolibrary.org/obo/icees-kg.owl" .
-<http://purl.obolibrary.org/obo/icees-kg> <http://www.w3.org/ns/dcat#contactPoint> _:Bf7c7dee680bc3b10730fb97b8deeadca .
+<http://purl.obolibrary.org/obo/icees-kg> <http://www.w3.org/ns/dcat#contactPoint> _:Bf3637ccdc17091e99fadff1ceb959d65 .
 <http://purl.obolibrary.org/obo/icees-kg> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/icees_kgx_files> .
 <http://purl.obolibrary.org/obo/icees-kg> <http://xmlns.com/foaf/0.1/homepage> <http://purl.obolibrary.org/obo/> .
 <http://purl.obolibrary.org/obo/icees_kgx_files> <http://purl.org/dc/elements/1.1/description> "KGX distribution of the ICEES Exposures KP" .
@@ -298,7 +298,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/interpro> <http://purl.org/dc/terms/1.1/theme> "biological systems" .
 <http://purl.obolibrary.org/obo/interpro> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/biopragmatics/pyobo/issues" .
 <http://purl.obolibrary.org/obo/interpro> <http://www.w3.org/ns/dcat#accessURL> "http://purl.obolibrary.org/obo/interpro.owl" .
-<http://purl.obolibrary.org/obo/interpro> <http://www.w3.org/ns/dcat#contactPoint> _:Bef34ce7669eca657c3972f7fc86e861d .
+<http://purl.obolibrary.org/obo/interpro> <http://www.w3.org/ns/dcat#contactPoint> _:B9832202abf01ea4ee9ff061ac7cc3f50 .
 <http://purl.obolibrary.org/obo/interpro> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/interpro.owl> .
 <http://purl.obolibrary.org/obo/interpro> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/interpro.obo> .
 <http://purl.obolibrary.org/obo/interpro> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/interpro.sssom> .
@@ -318,7 +318,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/kg-covid-19> <http://purl.org/dc/elements/1.1/title> "KG-COVID-19" .
 <http://purl.obolibrary.org/obo/kg-covid-19> <http://purl.org/dc/terms/1.1/theme> "organisms" .
 <http://purl.obolibrary.org/obo/kg-covid-19> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/Knowledge-Graph-Hub/kg-covid-19/issues" .
-<http://purl.obolibrary.org/obo/kg-covid-19> <http://www.w3.org/ns/dcat#contactPoint> _:Bf94642516ddde2620aa6e0f2d975cf66 .
+<http://purl.obolibrary.org/obo/kg-covid-19> <http://www.w3.org/ns/dcat#contactPoint> _:B56c005d04290edcb648ca884c9401c47 .
 <http://purl.obolibrary.org/obo/kg-covid-19> <http://xmlns.com/foaf/0.1/homepage> <https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki> .
 <http://purl.obolibrary.org/obo/kg-enp> <http://identifiers.org/preferredPrefix> "http" .
 <http://purl.obolibrary.org/obo/kg-enp> <http://obofoundry.github.io/vocabulary/activity_status> "active" .
@@ -326,7 +326,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/kg-enp> <http://purl.org/dc/elements/1.1/title> "kg-enp" .
 <http://purl.obolibrary.org/obo/kg-enp> <http://purl.org/dc/terms/1.1/theme> "organisms" .
 <http://purl.obolibrary.org/obo/kg-enp> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/enpkg/enpkg_full/issues" .
-<http://purl.obolibrary.org/obo/kg-enp> <http://www.w3.org/ns/dcat#contactPoint> _:B8913225c804905d2f8c7584235a5e73c .
+<http://purl.obolibrary.org/obo/kg-enp> <http://www.w3.org/ns/dcat#contactPoint> _:B1f9d70e70f176e32f74777bf223404e0 .
 <http://purl.obolibrary.org/obo/kg-enp> <http://xmlns.com/foaf/0.1/homepage> <https://enpkg.commons-lab.org/> .
 <http://purl.obolibrary.org/obo/kg-idg> <http://identifiers.org/preferredPrefix> "http" .
 <http://purl.obolibrary.org/obo/kg-idg> <http://obofoundry.github.io/vocabulary/activity_status> "active" .
@@ -335,7 +335,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/kg-idg> <http://purl.org/dc/terms/1.1/theme> "health" .
 <http://purl.obolibrary.org/obo/kg-idg> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/Knowledge-Graph-Hub/kg-idg/issues" .
 <http://purl.obolibrary.org/obo/kg-idg> <http://www.w3.org/ns/dcat#accessURL> "https://w3id.org/kg-idg/kg-idg.owl" .
-<http://purl.obolibrary.org/obo/kg-idg> <http://www.w3.org/ns/dcat#contactPoint> _:B0fc9e2529383f27bfcdc2ae79f80cda4 .
+<http://purl.obolibrary.org/obo/kg-idg> <http://www.w3.org/ns/dcat#contactPoint> _:Bb9174e852a9a1e4daf6033237f9a3344 .
 <http://purl.obolibrary.org/obo/kg-idg> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/kg-idg.tar.gz> .
 <http://purl.obolibrary.org/obo/kg-idg> <http://xmlns.com/foaf/0.1/homepage> <https://kghub.org/kg-idg/index.html> .
 <http://purl.obolibrary.org/obo/kg-idg.tar.gz> <http://purl.org/dc/elements/1.1/description> "KGX Distribution of KG-IDG" .
@@ -350,7 +350,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/kg-microbe> <http://purl.org/dc/terms/1.1/theme> "organisms" .
 <http://purl.obolibrary.org/obo/kg-microbe> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/Knowledge-Graph-Hub/kg-microbe/issues" .
 <http://purl.obolibrary.org/obo/kg-microbe> <http://www.w3.org/ns/dcat#accessURL> "https://w3id.org/kg-microbe/kg-microbe.owl" .
-<http://purl.obolibrary.org/obo/kg-microbe> <http://www.w3.org/ns/dcat#contactPoint> _:B8c71065b6f087d7a8031204378c83b6b .
+<http://purl.obolibrary.org/obo/kg-microbe> <http://www.w3.org/ns/dcat#contactPoint> _:B762e2e17556c17abb10acfbba63bdafd .
 <http://purl.obolibrary.org/obo/kg-microbe> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/kg-microbe.tar.gz> .
 <http://purl.obolibrary.org/obo/kg-microbe> <http://xmlns.com/foaf/0.1/homepage> <https://kghub.org/kg-microbe/index.html> .
 <http://purl.obolibrary.org/obo/kg-microbe.tar.gz> <http://purl.org/dc/elements/1.1/description> "KGX Distribution of KGM" .
@@ -365,7 +365,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/kg-monarch> <http://purl.org/dc/terms/1.1/theme> "health" .
 <http://purl.obolibrary.org/obo/kg-monarch> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/monarch-initiative/monarch-ingest/issues" .
 <http://purl.obolibrary.org/obo/kg-monarch> <http://www.w3.org/ns/dcat#accessURL> "https://w3id.org/kg-monarch/kg-monarch.owl" .
-<http://purl.obolibrary.org/obo/kg-monarch> <http://www.w3.org/ns/dcat#contactPoint> _:B5ddbd0611724b6bf6e54da9b41d579c0 .
+<http://purl.obolibrary.org/obo/kg-monarch> <http://www.w3.org/ns/dcat#contactPoint> _:B5d38ce03406f4f6ffd61aa2ae34e4e9b .
 <http://purl.obolibrary.org/obo/kg-monarch> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/kg-monarch.tar.gz> .
 <http://purl.obolibrary.org/obo/kg-monarch> <http://xmlns.com/foaf/0.1/homepage> <https://kghub.org/kg-monarch/index.html> .
 <http://purl.obolibrary.org/obo/kg-monarch.tar.gz> <http://purl.org/dc/elements/1.1/description> "KGX Distribution of KGM" .
@@ -380,7 +380,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/kgcl> <http://purl.org/dc/terms/1.1/theme> "information" .
 <http://purl.obolibrary.org/obo/kgcl> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/INCATools/kgcl/issues" .
 <http://purl.obolibrary.org/obo/kgcl> <http://www.w3.org/ns/dcat#accessURL> "https://w3id.org/kgcl.owl" .
-<http://purl.obolibrary.org/obo/kgcl> <http://www.w3.org/ns/dcat#contactPoint> _:B401f614541cf30d7b15c36882c43b6d9 .
+<http://purl.obolibrary.org/obo/kgcl> <http://www.w3.org/ns/dcat#contactPoint> _:B2af97ec803d61034172db335ba723d37 .
 <http://purl.obolibrary.org/obo/kgcl> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/kgcl.owl> .
 <http://purl.obolibrary.org/obo/kgcl> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/kgcl.obo> .
 <http://purl.obolibrary.org/obo/kgcl> <http://xmlns.com/foaf/0.1/homepage> <https://w3id.org/kgcl> .
@@ -397,7 +397,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/mixs> <http://purl.org/dc/terms/1.1/theme> "environment" .
 <http://purl.obolibrary.org/obo/mixs> <http://usefulinc.com/ns/doap#bug-database> "https://w3id.org/mixs" .
 <http://purl.obolibrary.org/obo/mixs> <http://www.w3.org/ns/dcat#accessURL> "https://w3id.org/mixs.owl" .
-<http://purl.obolibrary.org/obo/mixs> <http://www.w3.org/ns/dcat#contactPoint> _:B1be91bbf2e2a5da73745a12ef4b7e930 .
+<http://purl.obolibrary.org/obo/mixs> <http://www.w3.org/ns/dcat#contactPoint> _:B66fc35b3a1b03433a715cc97c7d2e2c2 .
 <http://purl.obolibrary.org/obo/mixs> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/mixs.owl> .
 <http://purl.obolibrary.org/obo/mixs> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/mixs.obo> .
 <http://purl.obolibrary.org/obo/mixs> <http://xmlns.com/foaf/0.1/homepage> <https://w3id.org/mixs> .
@@ -414,7 +414,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/molecular-data-kp> <http://purl.org/dc/terms/1.1/theme> "health" .
 <http://purl.obolibrary.org/obo/molecular-data-kp> <http://usefulinc.com/ns/doap#bug-database> "" .
 <http://purl.obolibrary.org/obo/molecular-data-kp> <http://www.w3.org/ns/dcat#accessURL> "http://purl.obolibrary.org/obo/molecular-data-kp.owl" .
-<http://purl.obolibrary.org/obo/molecular-data-kp> <http://www.w3.org/ns/dcat#contactPoint> _:Bf61255082333b450c6c09fa1a2438de8 .
+<http://purl.obolibrary.org/obo/molecular-data-kp> <http://www.w3.org/ns/dcat#contactPoint> _:B211f4ca4ad8993535faf036703982297 .
 <http://purl.obolibrary.org/obo/molecular-data-kp> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/nodes.tsv> .
 <http://purl.obolibrary.org/obo/molecular-data-kp> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/edges.tsv> .
 <http://purl.obolibrary.org/obo/molecular-data-kp> <http://xmlns.com/foaf/0.1/homepage> <http://purl.obolibrary.org/obo/> .
@@ -427,7 +427,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/multiomics-kp> <http://purl.org/dc/elements/1.1/title> "Multiomics KP" .
 <http://purl.obolibrary.org/obo/multiomics-kp> <http://purl.org/dc/terms/1.1/theme> "health" .
 <http://purl.obolibrary.org/obo/multiomics-kp> <http://usefulinc.com/ns/doap#bug-database> "" .
-<http://purl.obolibrary.org/obo/multiomics-kp> <http://www.w3.org/ns/dcat#contactPoint> _:Bef304e835c3865a895fe61c392d87a64 .
+<http://purl.obolibrary.org/obo/multiomics-kp> <http://www.w3.org/ns/dcat#contactPoint> _:B4ee5c39bffbaca378671359802caa964 .
 <http://purl.obolibrary.org/obo/multiomics-kp> <http://xmlns.com/foaf/0.1/homepage> <http://purl.obolibrary.org/obo/> .
 <http://purl.obolibrary.org/obo/neo> <http://identifiers.org/preferredPrefix> "obo" .
 <http://purl.obolibrary.org/obo/neo> <http://obofoundry.github.io/vocabulary/activity_status> "active" .
@@ -436,7 +436,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/neo> <http://purl.org/dc/terms/1.1/theme> "biological systems" .
 <http://purl.obolibrary.org/obo/neo> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/geneontology/neo/issues" .
 <http://purl.obolibrary.org/obo/neo> <http://www.w3.org/ns/dcat#accessURL> "http://purl.obolibrary.org/obo/go/noctua/neo.owl" .
-<http://purl.obolibrary.org/obo/neo> <http://www.w3.org/ns/dcat#contactPoint> _:Be7e271ac2b894a0b59df757899ea9ef1 .
+<http://purl.obolibrary.org/obo/neo> <http://www.w3.org/ns/dcat#contactPoint> _:B772dcb9c3c54c26cb7e740bc20ea1771 .
 <http://purl.obolibrary.org/obo/neo> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/neo.owl> .
 <http://purl.obolibrary.org/obo/neo> <http://xmlns.com/foaf/0.1/homepage> <http://purl.obolibrary.org/obo/go/noctua/neo.owl> .
 <http://purl.obolibrary.org/obo/neo.owl> <http://purl.org/dc/elements/1.1/description> "OWL release of neo" .
@@ -453,7 +453,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/ontology-kp> <http://purl.org/dc/elements/1.1/title> "Ontology KP" .
 <http://purl.obolibrary.org/obo/ontology-kp> <http://purl.org/dc/terms/1.1/theme> "information" .
 <http://purl.obolibrary.org/obo/ontology-kp> <http://usefulinc.com/ns/doap#bug-database> "" .
-<http://purl.obolibrary.org/obo/ontology-kp> <http://www.w3.org/ns/dcat#contactPoint> _:B86448daacd94caba459dbf3ecac9bcd6 .
+<http://purl.obolibrary.org/obo/ontology-kp> <http://www.w3.org/ns/dcat#contactPoint> _:B513f4fc34bdab950736e23cf65197503 .
 <http://purl.obolibrary.org/obo/ontology-kp> <http://xmlns.com/foaf/0.1/homepage> <http://purl.obolibrary.org/obo/> .
 <http://purl.obolibrary.org/obo/orcid> <http://identifiers.org/preferredPrefix> "http" .
 <http://purl.obolibrary.org/obo/orcid> <http://obofoundry.github.io/vocabulary/activity_status> "active" .
@@ -463,7 +463,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/orcid> <http://purl.org/dc/terms/1.1/theme> "information" .
 <http://purl.obolibrary.org/obo/orcid> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/cthoyt/orcidio/issues" .
 <http://purl.obolibrary.org/obo/orcid> <http://www.w3.org/ns/dcat#accessURL> "https://w3id.org/orcidio/orcid.owl" .
-<http://purl.obolibrary.org/obo/orcid> <http://www.w3.org/ns/dcat#contactPoint> _:Bf8915baea5bd593b05dd683a07fe6271 .
+<http://purl.obolibrary.org/obo/orcid> <http://www.w3.org/ns/dcat#contactPoint> _:B58d22e62cc7f21c5ded6b5668011e204 .
 <http://purl.obolibrary.org/obo/orcid> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/orcidio.owl> .
 <http://purl.obolibrary.org/obo/orcid> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/orcidio.obo> .
 <http://purl.obolibrary.org/obo/orcid> <http://xmlns.com/foaf/0.1/homepage> <https://github.com/cthoyt/orcidio> .
@@ -485,7 +485,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/pheknowlator> <http://purl.org/dc/elements/1.1/title> "PheKnowLator" .
 <http://purl.obolibrary.org/obo/pheknowlator> <http://purl.org/dc/terms/1.1/theme> "organisms" .
 <http://purl.obolibrary.org/obo/pheknowlator> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/callahantiff/PheKnowLator/issues" .
-<http://purl.obolibrary.org/obo/pheknowlator> <http://www.w3.org/ns/dcat#contactPoint> _:B4b7914b4fce1d5414ba287a0dd7c28d9 .
+<http://purl.obolibrary.org/obo/pheknowlator> <http://www.w3.org/ns/dcat#contactPoint> _:Ba4bf7cfefb070a65780523910aa53200 .
 <http://purl.obolibrary.org/obo/pheknowlator> <http://xmlns.com/foaf/0.1/homepage> <https://github.com/callahantiff/PheKnowLator> .
 <http://purl.obolibrary.org/obo/phenio> <http://identifiers.org/preferredPrefix> "PHENIO" .
 <http://purl.obolibrary.org/obo/phenio> <http://obofoundry.github.io/vocabulary/activity_status> "active" .
@@ -495,7 +495,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/phenio> <http://purl.org/dc/terms/1.1/theme> "phenotype" .
 <http://purl.obolibrary.org/obo/phenio> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/monarch-initiative/phenio/issues" .
 <http://purl.obolibrary.org/obo/phenio> <http://www.w3.org/ns/dcat#accessURL> "https://w3id.org/phenio/phenio.owl" .
-<http://purl.obolibrary.org/obo/phenio> <http://www.w3.org/ns/dcat#contactPoint> _:B149fcdae1aaed9235c31de56bec60928 .
+<http://purl.obolibrary.org/obo/phenio> <http://www.w3.org/ns/dcat#contactPoint> _:B7c28d7ab09c14b82f51678b4b1f81a48 .
 <http://purl.obolibrary.org/obo/phenio> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/phenio.owl> .
 <http://purl.obolibrary.org/obo/phenio> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/phenio.kgx> .
 <http://purl.obolibrary.org/obo/phenio> <http://xmlns.com/foaf/0.1/homepage> <https://github.com/obophenotype/phenio> .
@@ -513,7 +513,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/reacto> <http://purl.org/dc/terms/1.1/theme> "biological systems" .
 <http://purl.obolibrary.org/obo/reacto> <http://usefulinc.com/ns/doap#bug-database> "http://purl.obolibrary.org/obo/go/extensions/reacto.owl" .
 <http://purl.obolibrary.org/obo/reacto> <http://www.w3.org/ns/dcat#accessURL> "http://purl.obolibrary.org/obo/go/extensions/reacto.owl" .
-<http://purl.obolibrary.org/obo/reacto> <http://www.w3.org/ns/dcat#contactPoint> _:B71c47a7da0f46ee4d0c4047f2fa4624e .
+<http://purl.obolibrary.org/obo/reacto> <http://www.w3.org/ns/dcat#contactPoint> _:B8fa2372845198205ef9031cd482d39d2 .
 <http://purl.obolibrary.org/obo/reacto> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/reacto.owl> .
 <http://purl.obolibrary.org/obo/reacto> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/reacto.obo> .
 <http://purl.obolibrary.org/obo/reacto> <http://xmlns.com/foaf/0.1/homepage> <http://purl.obolibrary.org/obo/go/extensions/reacto.owl> .
@@ -530,7 +530,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/reactome> <http://purl.org/dc/terms/1.1/theme> "biological systems" .
 <http://purl.obolibrary.org/obo/reactome> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/biopragmatics/pyobo/issues" .
 <http://purl.obolibrary.org/obo/reactome> <http://www.w3.org/ns/dcat#accessURL> "http://www.reactome.org/reactome.owl" .
-<http://purl.obolibrary.org/obo/reactome> <http://www.w3.org/ns/dcat#contactPoint> _:B87fd749a3ea235348ffd3759358fba26 .
+<http://purl.obolibrary.org/obo/reactome> <http://www.w3.org/ns/dcat#contactPoint> _:B052a4828f5d551bceb3affd972d7eccf .
 <http://purl.obolibrary.org/obo/reactome> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/reactome-hs-biopax.db.gz> .
 <http://purl.obolibrary.org/obo/reactome> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/reactome-hs-biopragmatics.obo> .
 <http://purl.obolibrary.org/obo/reactome> <http://xmlns.com/foaf/0.1/homepage> <https://reactome.org> .
@@ -550,7 +550,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/rhea> <http://purl.org/dc/terms/1.1/theme> "chemistry and biochemistry" .
 <http://purl.obolibrary.org/obo/rhea> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/biopragmatics/pyobo/issues" .
 <http://purl.obolibrary.org/obo/rhea> <http://www.w3.org/ns/dcat#accessURL> "http://purl.obolibrary.org/obo/rhea.owl" .
-<http://purl.obolibrary.org/obo/rhea> <http://www.w3.org/ns/dcat#contactPoint> _:B59803523445e3f4c7b2e0ff03026c94f .
+<http://purl.obolibrary.org/obo/rhea> <http://www.w3.org/ns/dcat#contactPoint> _:B4995d09999e250aebc0538e94c18b564 .
 <http://purl.obolibrary.org/obo/rhea> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/rhea.owl> .
 <http://purl.obolibrary.org/obo/rhea> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/rhea.obo> .
 <http://purl.obolibrary.org/obo/rhea> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/rhea.sssom> .
@@ -570,7 +570,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/rna-kg> <http://purl.org/dc/elements/1.1/title> "RNA-KG" .
 <http://purl.obolibrary.org/obo/rna-kg> <http://purl.org/dc/terms/1.1/theme> "organisms" .
 <http://purl.obolibrary.org/obo/rna-kg> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/AnacletoLAB/RNA-KG/issues" .
-<http://purl.obolibrary.org/obo/rna-kg> <http://www.w3.org/ns/dcat#contactPoint> _:B5746f1c9316046fa3917fd819a54cc26 .
+<http://purl.obolibrary.org/obo/rna-kg> <http://www.w3.org/ns/dcat#contactPoint> _:B64ffd99b7e6a7bdee7496fb2da556d3d .
 <http://purl.obolibrary.org/obo/rna-kg> <http://xmlns.com/foaf/0.1/homepage> <http://purl.obolibrary.org/obo/RNA-KG.anacleto.di.unimi.it/> .
 <http://purl.obolibrary.org/obo/robokopkg> <http://purl.org/dc/elements/1.1/description> "Robokop KG (Automat)" .
 <http://purl.obolibrary.org/obo/robokopkg> <http://purl.org/dc/terms/1.1/format> "kgx" .
@@ -583,14 +583,14 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/rtx-kg2> <http://purl.org/dc/elements/1.1/title> "RTX-KG2" .
 <http://purl.obolibrary.org/obo/rtx-kg2> <http://purl.org/dc/terms/1.1/theme> "health" .
 <http://purl.obolibrary.org/obo/rtx-kg2> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/RTXteam/RTX-KG2/issues" .
-<http://purl.obolibrary.org/obo/rtx-kg2> <http://www.w3.org/ns/dcat#contactPoint> _:B5bb4ae93fd860a08e991d2667c26bba8 .
+<http://purl.obolibrary.org/obo/rtx-kg2> <http://www.w3.org/ns/dcat#contactPoint> _:B0354deb5e3a5ac2eec3d894ce783070b .
 <http://purl.obolibrary.org/obo/rtx-kg2> <http://xmlns.com/foaf/0.1/homepage> <http://purl.obolibrary.org/obo/> .
 <http://purl.obolibrary.org/obo/service-kp> <http://obofoundry.github.io/vocabulary/activity_status> "active" .
 <http://purl.obolibrary.org/obo/service-kp> <http://purl.org/dc/elements/1.1/description> "A Translator Knowledge Provider" .
 <http://purl.obolibrary.org/obo/service-kp> <http://purl.org/dc/elements/1.1/title> "Service KP" .
 <http://purl.obolibrary.org/obo/service-kp> <http://purl.org/dc/terms/1.1/theme> "health" .
 <http://purl.obolibrary.org/obo/service-kp> <http://usefulinc.com/ns/doap#bug-database> "" .
-<http://purl.obolibrary.org/obo/service-kp> <http://www.w3.org/ns/dcat#contactPoint> _:B28532cf44586b82c060b1bd651842b34 .
+<http://purl.obolibrary.org/obo/service-kp> <http://www.w3.org/ns/dcat#contactPoint> _:B22b751ba24eb9f536f299aa72ad2e8a5 .
 <http://purl.obolibrary.org/obo/service-kp> <http://xmlns.com/foaf/0.1/homepage> <http://purl.obolibrary.org/obo/> .
 <http://purl.obolibrary.org/obo/sgd> <http://identifiers.org/preferredPrefix> "obo" .
 <http://purl.obolibrary.org/obo/sgd> <http://obofoundry.github.io/vocabulary/activity_status> "active" .
@@ -600,7 +600,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/sgd> <http://purl.org/dc/terms/1.1/theme> "biological systems" .
 <http://purl.obolibrary.org/obo/sgd> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/biopragmatics/pyobo/issues" .
 <http://purl.obolibrary.org/obo/sgd> <http://www.w3.org/ns/dcat#accessURL> "http://purl.obolibrary.org/obo/sgd.owl" .
-<http://purl.obolibrary.org/obo/sgd> <http://www.w3.org/ns/dcat#contactPoint> _:B52d6f3f1f120a3fbd2fcd5108ba1d176 .
+<http://purl.obolibrary.org/obo/sgd> <http://www.w3.org/ns/dcat#contactPoint> _:Beec13b6448db99fd24638be863f7be1d .
 <http://purl.obolibrary.org/obo/sgd> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/sgd.owl> .
 <http://purl.obolibrary.org/obo/sgd> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/sgd.obo> .
 <http://purl.obolibrary.org/obo/sgd> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/sgd.sssom> .
@@ -620,14 +620,14 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/sldb> <http://purl.org/dc/elements/1.1/title> "sldb" .
 <http://purl.obolibrary.org/obo/sldb> <http://purl.org/dc/terms/1.1/theme> "organisms" .
 <http://purl.obolibrary.org/obo/sldb> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/monarch-initiative/SLDBGen/issues" .
-<http://purl.obolibrary.org/obo/sldb> <http://www.w3.org/ns/dcat#contactPoint> _:B1d9be4e3f36a42106840ef7b249a3a6c .
+<http://purl.obolibrary.org/obo/sldb> <http://www.w3.org/ns/dcat#contactPoint> _:B2071dcd409be001afc9abb1b09bfd3ab .
 <http://purl.obolibrary.org/obo/sldb> <http://xmlns.com/foaf/0.1/homepage> <https://kghub.io/sldb/> .
 <http://purl.obolibrary.org/obo/spoke> <http://obofoundry.github.io/vocabulary/activity_status> "active" .
 <http://purl.obolibrary.org/obo/spoke> <http://purl.org/dc/elements/1.1/description> "A Knowledge Graph from UCSF covering many aspects of biomedicine." .
 <http://purl.obolibrary.org/obo/spoke> <http://purl.org/dc/elements/1.1/title> "SPOKE" .
 <http://purl.obolibrary.org/obo/spoke> <http://purl.org/dc/terms/1.1/theme> "health" .
 <http://purl.obolibrary.org/obo/spoke> <http://usefulinc.com/ns/doap#bug-database> "" .
-<http://purl.obolibrary.org/obo/spoke> <http://www.w3.org/ns/dcat#contactPoint> _:B508679450961d2c817884991f0257907 .
+<http://purl.obolibrary.org/obo/spoke> <http://www.w3.org/ns/dcat#contactPoint> _:B85a3caf34cd282caa87d06501106daba .
 <http://purl.obolibrary.org/obo/spoke> <http://xmlns.com/foaf/0.1/homepage> <https://spoke.ucsf.edu/> .
 <http://purl.obolibrary.org/obo/sri-reference-kg> <http://identifiers.org/preferredPrefix> "http" .
 <http://purl.obolibrary.org/obo/sri-reference-kg> <http://obofoundry.github.io/vocabulary/activity_status> "active" .
@@ -636,7 +636,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/sri-reference-kg> <http://purl.org/dc/terms/1.1/theme> "health" .
 <http://purl.obolibrary.org/obo/sri-reference-kg> <http://usefulinc.com/ns/doap#bug-database> "" .
 <http://purl.obolibrary.org/obo/sri-reference-kg> <http://www.w3.org/ns/dcat#accessURL> "http://purl.obolibrary.org/obo/sri-reference-kg.owl" .
-<http://purl.obolibrary.org/obo/sri-reference-kg> <http://www.w3.org/ns/dcat#contactPoint> _:Bdbe468121f194c96d355c0c69cc92bfc .
+<http://purl.obolibrary.org/obo/sri-reference-kg> <http://www.w3.org/ns/dcat#contactPoint> _:Bb1a16729ba1cb33857b1ef21dcc0dd09 .
 <http://purl.obolibrary.org/obo/sri-reference-kg> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/monarch-kg.tar.gz> .
 <http://purl.obolibrary.org/obo/sri-reference-kg> <http://xmlns.com/foaf/0.1/homepage> <http://purl.obolibrary.org/obo/> .
 <http://purl.obolibrary.org/obo/stringdb_automat> <http://purl.org/dc/elements/1.1/description> "STRING-DB Automat" .
@@ -649,7 +649,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/swisslipid> <http://purl.org/dc/terms/1.1/theme> "chemistry and biochemistry" .
 <http://purl.obolibrary.org/obo/swisslipid> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/biopragmatics/pyobo/issues" .
 <http://purl.obolibrary.org/obo/swisslipid> <http://www.w3.org/ns/dcat#accessURL> "http://purl.obolibrary.org/obo/swisslipid.owl" .
-<http://purl.obolibrary.org/obo/swisslipid> <http://www.w3.org/ns/dcat#contactPoint> _:B3924f306a1123fe1abb427bee75e4037 .
+<http://purl.obolibrary.org/obo/swisslipid> <http://www.w3.org/ns/dcat#contactPoint> _:Bcb799f1be7ba6400a01ad3a472b506ac .
 <http://purl.obolibrary.org/obo/swisslipid> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/swisslipid.owl> .
 <http://purl.obolibrary.org/obo/swisslipid> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/swisslipid.obo> .
 <http://purl.obolibrary.org/obo/swisslipid> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/swisslipid.sssom> .
@@ -673,23 +673,30 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/text-mining-kp> <http://purl.org/dc/terms/1.1/theme> "information" .
 <http://purl.obolibrary.org/obo/text-mining-kp> <http://usefulinc.com/ns/doap#bug-database> "" .
 <http://purl.obolibrary.org/obo/text-mining-kp> <http://www.w3.org/ns/dcat#accessURL> "http://purl.obolibrary.org/obo/text-mining-kp.owl" .
-<http://purl.obolibrary.org/obo/text-mining-kp> <http://www.w3.org/ns/dcat#contactPoint> _:B9129c73daa3410cd0c02cb783a823b4b .
+<http://purl.obolibrary.org/obo/text-mining-kp> <http://www.w3.org/ns/dcat#contactPoint> _:B1a8c9d3e68c59f403cf0d64857f9d2a0 .
 <http://purl.obolibrary.org/obo/text-mining-kp> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/targeted_assertions.tar.gz> .
 <http://purl.obolibrary.org/obo/text-mining-kp> <http://xmlns.com/foaf/0.1/homepage> <http://purl.obolibrary.org/obo/> .
-<http://purl.obolibrary.org/obo/ubergraph> <http://identifiers.org/preferredPrefix> "http" .
 <http://purl.obolibrary.org/obo/ubergraph> <http://obofoundry.github.io/vocabulary/activity_status> "active" .
 <http://purl.obolibrary.org/obo/ubergraph> <http://purl.org/dc/elements/1.1/description> "Ubergraph is an RDF triplestore integrating OBO ontologies into a unified semantic graph" .
-<http://purl.obolibrary.org/obo/ubergraph> <http://purl.org/dc/elements/1.1/description> "A Blazegraph RDF database containing precomputed OWL inferences for OBO ontologies" .
 <http://purl.obolibrary.org/obo/ubergraph> <http://purl.org/dc/elements/1.1/title> "Ubergraph" .
-<http://purl.obolibrary.org/obo/ubergraph> <http://purl.org/dc/elements/1.1/title> "Ubergraph Blazegraph Database" .
 <http://purl.obolibrary.org/obo/ubergraph> <http://purl.org/dc/terms/1.1/license> <https://creativecommons.org/licenses/by/4.0/> .
 <http://purl.obolibrary.org/obo/ubergraph> <http://purl.org/dc/terms/1.1/theme> "information" .
 <http://purl.obolibrary.org/obo/ubergraph> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/INCATools/ubergraph/issues" .
 <http://purl.obolibrary.org/obo/ubergraph> <http://www.w3.org/ns/dcat#accessURL> "http://purl.obolibrary.org/obo/ubergraph.owl" .
-<http://purl.obolibrary.org/obo/ubergraph> <http://www.w3.org/ns/dcat#accessURL> "https://ubergraph.apps.renci.org/sparql" .
-<http://purl.obolibrary.org/obo/ubergraph> <http://www.w3.org/ns/dcat#contactPoint> _:B56f5085786b2223b5c6d0f50e5c79924 .
-<http://purl.obolibrary.org/obo/ubergraph> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/ubergraph> .
+<http://purl.obolibrary.org/obo/ubergraph> <http://www.w3.org/ns/dcat#contactPoint> _:B1ceae1484199d3ad99e1eb080fc2a595 .
+<http://purl.obolibrary.org/obo/ubergraph> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/ubergraph.rdf> .
+<http://purl.obolibrary.org/obo/ubergraph> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/ubergraph.blazegraph.jnl> .
+<http://purl.obolibrary.org/obo/ubergraph> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/ubergraph.nquads> .
 <http://purl.obolibrary.org/obo/ubergraph> <http://xmlns.com/foaf/0.1/homepage> <https://ubergraph.apps.renci.org/sparql> .
+<http://purl.obolibrary.org/obo/ubergraph.blazegraph.jnl> <http://purl.org/dc/elements/1.1/description> "Blazegraph journal of Ubergraph" .
+<http://purl.obolibrary.org/obo/ubergraph.blazegraph.jnl> <http://purl.org/dc/elements/1.1/title> "Ubergraph blazegraph journal" .
+<http://purl.obolibrary.org/obo/ubergraph.blazegraph.jnl> <http://www.w3.org/ns/dcat#accessURL> "https://ubergraph.apps.renci.org/downloads/current/ubergraph.jnl.gz" .
+<http://purl.obolibrary.org/obo/ubergraph.nquads> <http://purl.org/dc/elements/1.1/description> "Ubergraph n-quads" .
+<http://purl.obolibrary.org/obo/ubergraph.nquads> <http://purl.org/dc/elements/1.1/title> "Ubergraph n-quads" .
+<http://purl.obolibrary.org/obo/ubergraph.nquads> <http://www.w3.org/ns/dcat#accessURL> "https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz" .
+<http://purl.obolibrary.org/obo/ubergraph.rdf> <http://purl.org/dc/elements/1.1/description> "RDF of Ubergraph" .
+<http://purl.obolibrary.org/obo/ubergraph.rdf> <http://purl.org/dc/elements/1.1/title> "Ubergraph RDF" .
+<http://purl.obolibrary.org/obo/ubergraph.rdf> <http://www.w3.org/ns/dcat#accessURL> "https://ubergraph.apps.renci.org/sparql" .
 <http://purl.obolibrary.org/obo/ubergraph_automat> <http://purl.org/dc/elements/1.1/description> "UberGraph Automat" .
 <http://purl.obolibrary.org/obo/ubergraph_automat> <http://purl.org/dc/terms/1.1/format> "kgx" .
 <http://purl.obolibrary.org/obo/ubergraph_automat> <http://www.w3.org/ns/dcat#accessURL> "https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files" .
@@ -700,7 +707,7 @@ _:B2aa3429682808b7b6487ad6ee0f7f18d <http://www.w3.org/2000/01/rdf-schema#label>
 <http://purl.obolibrary.org/obo/uniprot> <http://purl.org/dc/terms/1.1/theme> "biological systems" .
 <http://purl.obolibrary.org/obo/uniprot> <http://usefulinc.com/ns/doap#bug-database> "https://github.com/biopragmatics/pyobo/issues" .
 <http://purl.obolibrary.org/obo/uniprot> <http://www.w3.org/ns/dcat#accessURL> "http://purl.obolibrary.org/obo/uniprot.owl" .
-<http://purl.obolibrary.org/obo/uniprot> <http://www.w3.org/ns/dcat#contactPoint> _:B7328732014233a94611236aa4c0521cb .
+<http://purl.obolibrary.org/obo/uniprot> <http://www.w3.org/ns/dcat#contactPoint> _:B126d30eb903fbe237e66d4533329e709 .
 <http://purl.obolibrary.org/obo/uniprot> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/uniprot.owl> .
 <http://purl.obolibrary.org/obo/uniprot> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/uniprot.obo> .
 <http://purl.obolibrary.org/obo/uniprot> <http://www.w3.org/ns/dcat#distribution> <http://purl.obolibrary.org/obo/uniprot.sssom> .

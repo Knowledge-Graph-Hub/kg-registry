@@ -1323,7 +1323,7 @@
                 "email": "balhoff@renci.org",
                 "github": "balhoff",
                 "label": "James P. Balhoff",
-                "orcid": "0000-0003-1319-7955"
+                "orcid": "0000-0002-8688-6599"
             },
             "description": "Ubergraph is an RDF triplestore integrating OBO ontologies into a unified semantic graph",
             "domain": "information",
@@ -1336,13 +1336,24 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ubergraph.owl",
-            "preferredPrefix": "http",
             "products": [
                 {
-                    "description": "A Blazegraph RDF database containing precomputed OWL inferences for OBO ontologies",
-                    "id": "ubergraph",
+                    "description": "RDF of Ubergraph",
+                    "id": "ubergraph.rdf",
                     "ontology_purl": "https://ubergraph.apps.renci.org/sparql",
-                    "title": "Ubergraph Blazegraph Database"
+                    "title": "Ubergraph RDF"
+                },
+                {
+                    "description": "Blazegraph journal of Ubergraph",
+                    "id": "ubergraph.blazegraph.jnl",
+                    "ontology_purl": "https://ubergraph.apps.renci.org/downloads/current/ubergraph.jnl.gz",
+                    "title": "Ubergraph blazegraph journal"
+                },
+                {
+                    "description": "Ubergraph n-quads",
+                    "id": "ubergraph.nquads",
+                    "ontology_purl": "https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz",
+                    "title": "Ubergraph n-quads"
                 }
             ],
             "repository": "https://github.com/INCATools/ubergraph",
