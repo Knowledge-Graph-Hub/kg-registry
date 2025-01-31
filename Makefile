@@ -28,12 +28,16 @@
 
 ### Configuration
 
+RUN = poetry run
+
 # All KG .md files
 KGS := $(wildcard resource/*.md)
 
 # All principles .md files
 PRINCIPLES := $(wildcard principles/*.md)
 
+# Path to the source KG-Registry schema
+SOURCE_SCHEMA = src/kg_registry/kg_registry_schema/schema/kg_registry_schema.yaml
 
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
@@ -132,6 +136,7 @@ reports/metadata-grid.html: reports/metadata-grid.csv
 tmp/unsorted-resources.yml: $(KGS) | tmp
 	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
 
+# Run validation, including with LinkML validator
 extract-metadata: $(KGS)
 	./util/extract-metadata.py validate $^
 
