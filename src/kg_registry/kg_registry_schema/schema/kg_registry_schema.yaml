@@ -191,6 +191,14 @@ classes:
       files, APIs, or any other accessible representations of
       a resource.
     attributes:
+      id:
+        description: >-
+          The identifier of the product.
+          This is used to identify it within the registry.
+        required: true
+        range: string
+        identifier: true
+        slot_uri: dcterms:identifier
       name:
         description: >-
           The human-readable name of the product.
