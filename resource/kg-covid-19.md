@@ -8,7 +8,6 @@ domain: organisms
 contact:
   github: justaddcoffee
   label: Justin Reese
-preferredPrefix: http
 homepage: https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki
 tracker: https://github.com/Knowledge-Graph-Hub/kg-covid-19/issues
 repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19

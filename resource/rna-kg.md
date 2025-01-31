@@ -8,7 +8,6 @@ domain: organisms
 contact:
   github: emanuelecavalleri
   label: Emanuele Cavalleri
-preferredPrefix: http
 homepage: RNA-KG.anacleto.di.unimi.it/
 tracker: https://github.com/AnacletoLAB/RNA-KG/issues
 repository: https://github.com/AnacletoLAB/RNA-KG

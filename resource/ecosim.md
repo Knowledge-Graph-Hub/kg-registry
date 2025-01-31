@@ -5,7 +5,6 @@ id: ecosim
 name: ecosim
 description: Ontology rendering of the EcoSIM Land System Model
 domain: environment
-preferredPrefix: obo
 contact:
   orcid: 0000-0002-6601-2165
   github: cmungall

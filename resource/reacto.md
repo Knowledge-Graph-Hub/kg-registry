@@ -5,7 +5,6 @@ id: reacto
 name: Reactome Entity Ontology (REACTO)
 description: Representation of entities in Reactome
 domain: biological systems
-preferredPrefix: obo
 contact:
   orcid: 0000-0002-7334-7852
   github: goodb

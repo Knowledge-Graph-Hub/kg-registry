@@ -5,7 +5,6 @@ id: kg-microbe
 name: KG Microbe
 description: A Knowledge Graph about microbes
 domain: organisms
-preferredPrefix: http
 contact:
   orcid: 0000-0002-6601-2165
   github: cmungall

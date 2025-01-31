@@ -12,7 +12,6 @@ contact:
 homepage: ""
 tracker: ""
 repository: ""
-preferredPrefix: http
 products:
 - id: nodes.tsv
   format: kgx

@@ -14,7 +14,6 @@ contact:
 homepage: https://robokop.renci.org/api-docs/docs/category/automat
 tracker: ""
 repository: ""
-preferredPrefix: http
 products:
 - id: robokopkg
   format: kgx

@@ -14,7 +14,6 @@ contact:
 homepage: ""
 tracker: ""
 repository: ""
-preferredPrefix: http
 products:
 - id: icees_kgx_files
   format: kgx

@@ -8,7 +8,6 @@ domain: organisms
 contact:
   github: oolonek
   label: Pierre-Marie Allard
-preferredPrefix: http
 homepage: https://enpkg.commons-lab.org/
 tracker: https://github.com/enpkg/enpkg_full/issues
 repository: https://github.com/enpkg/enpkg_full

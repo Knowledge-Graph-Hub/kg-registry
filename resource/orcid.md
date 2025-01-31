@@ -5,7 +5,6 @@ id: orcid
 name: ORCID
 description: ORCID in OWL
 domain: information
-preferredPrefix: http
 contact:
   orcid: 0000-0003-4423-4370
   github: cthoyt

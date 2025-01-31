@@ -8,7 +8,6 @@ domain: organisms
 contact:
   github: https://github.com/callahantiff/
   label: Tiffany Callahan
-preferredPrefix: http
 homepage: https://github.com/callahantiff/PheKnowLator
 tracker: https://github.com/callahantiff/PheKnowLator/issues
 repository: https://github.com/callahantiff/PheKnowLator

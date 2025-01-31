@@ -5,7 +5,6 @@ id: chr
 name: Monochrom Ontology
 description: Automatic translation of UCSC chromosome bands to OWL classes
 domain: chemistry and biochemistry
-preferredPrefix: obo
 contact:
   orcid: 0000-0002-6601-2165
   github: cmungall

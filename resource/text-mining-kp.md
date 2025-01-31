@@ -11,7 +11,6 @@ contact:
 homepage: ""
 tracker: ""
 repository: ""
-preferredPrefix: http
 products:
 - id: targeted_assertions.tar.gz
   format: kgx
