@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: drugbank
-title: drugbank
+name: drugbank
 description: DrugBank
 domain: health
 preferredPrefix: obo
@@ -16,17 +16,17 @@ tracker: https://github.com/biopragmatics/pyobo/issues
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: drugbank.owl
-  title: drugbank OWL release
+  name: drugbank OWL release
   description: OWL release of drugbank
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/drugbank/drugbank.owl
 - id: drugbank.obo
-  title: drugbank OBO release
+  name: drugbank OBO release
   description: OBO release of drugbank
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/drugbank/drugbank.obo
 - id: drugbank.sssom
-  title: drugbank SSSOM release
+  name: drugbank SSSOM release
   description: SSSOM release of drugbank
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/drugbank/drugbank.sssom

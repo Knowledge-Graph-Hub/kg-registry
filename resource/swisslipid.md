@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: swisslipid
-title: swisslipid
+name: swisslipid
 description: SwissLipid
 domain: chemistry and biochemistry
 preferredPrefix: obo
@@ -16,17 +16,17 @@ tracker: https://github.com/biopragmatics/pyobo/issues
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: swisslipid.owl
-  title: swisslipid OWL release
+  name: swisslipid OWL release
   description: OWL release of swisslipid
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.owl
 - id: swisslipid.obo
-  title: swisslipid OBO release
+  name: swisslipid OBO release
   description: OBO release of swisslipid
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.obo
 - id: swisslipid.sssom
-  title: swisslipid SSSOM release
+  name: swisslipid SSSOM release
   description: SSSOM release of swisslipid
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.sssom

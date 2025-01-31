@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: kg-enp
-title: kg-enp
+name: kg-enp
 description: Experimental natural products knowledge graph.
 domain: organisms
 contact:

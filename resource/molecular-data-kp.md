@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: molecular-data-kp
-title: Molecular Data KP
+name: Molecular Data KP
 description: A Translator Knowledge Provider for molecular data.
 domain: health
 restype: "knowledge graph"

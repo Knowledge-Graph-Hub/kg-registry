@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: text-mining-kp
-title: Text Mining KP
+name: Text Mining KP
 description: A Translator Knowledge Provider applying text-mined assertions.
 domain: information
 restype: "knowledge graph"

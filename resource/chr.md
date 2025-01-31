@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: chr
-title: Monochrom Ontology
+name: Monochrom Ontology
 description: Automatic translation of UCSC chromosome bands to OWL classes
 domain: chemistry and biochemistry
 preferredPrefix: obo
@@ -16,7 +16,7 @@ tracker: http://purl.obolibrary.org/obo/chr.owl
 repository: http://purl.obolibrary.org/obo/chr.owl
 products:
 - id: chr.owl
-  title: Monochrom Ontology OWL release
+  name: Monochrom Ontology OWL release
   description: OWL release of Monochrom Ontology
 uri_prefix: http://purl.obolibrary.org/obo/
 license:

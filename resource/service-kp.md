@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: service-kp
-title: Service KP
+name: Service KP
 description: A Translator Knowledge Provider
 domain: health
 restype: "knowledge graph"

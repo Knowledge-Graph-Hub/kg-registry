@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: sgd
-title: Saccharomyces Genome Database
+name: Saccharomyces Genome Database
 description: The Saccharomyces Genome Database (SGD) project collects information
   and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae
 domain: biological systems
@@ -17,17 +17,17 @@ tracker: https://github.com/biopragmatics/pyobo/issues
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: sgd.owl
-  title: Saccharomyces Genome Database OWL release
+  name: Saccharomyces Genome Database OWL release
   description: OWL release of Saccharomyces Genome Database
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/sgd/sgd.owl
 - id: sgd.obo
-  title: Saccharomyces Genome Database OBO release
+  name: Saccharomyces Genome Database OBO release
   description: OBO release of Saccharomyces Genome Database
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/sgd/sgd.obo
 - id: sgd.sssom
-  title: Saccharomyces Genome Database SSSOM release
+  name: Saccharomyces Genome Database SSSOM release
   description: SSSOM release of Saccharomyces Genome Database
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/sgd/sgd.sssom

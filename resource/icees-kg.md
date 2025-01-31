@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: icees-kg
-title: Exposures KP (icees-kg)
+name: Exposures KP (icees-kg)
 description: The ICEES-based Exposures Knowledge Graph.
 domain: health
 restype: "knowledge graph"

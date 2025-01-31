@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: kg-microbe
-title: KG Microbe
+name: KG Microbe
 description: A Knowledge Graph about microbes
 domain: organisms
 preferredPrefix: http
@@ -17,7 +17,7 @@ repository: https://github.com/Knowledge-Graph-Hub/kg-microbe
 products:
 - id: kg-microbe.tar.gz
   format: kgx
-  title: KGX Distribution of KGM
+  name: KGX Distribution of KGM
   description: KGX Distribution of KGM
   ontology_purl: https://kg-hub.berkeleybop.io/kg-microbe/current/kg-microbe.tar.gz
 uri_prefix: https://w3id.org/kg-microbe/

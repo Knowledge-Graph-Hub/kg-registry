@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: genetics-kp
-title: Genetics KP
+name: Genetics KP
 description: A Translator Knowledge Provider focusing on genetic data.
 domain: health
 restype: "knowledge graph"

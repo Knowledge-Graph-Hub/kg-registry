@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: eco-kg
-title: eco-KG
+name: eco-KG
 description: A knowledge graph of plant traits starting with Planteome and EOL TraitBank.
 domain: organisms
 contact:

@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: reactome
-title: Reactome
+name: Reactome
 description: Reactome from Biopax
 domain: biological systems
 preferredPrefix: Reactome
@@ -16,12 +16,12 @@ tracker: https://github.com/biopragmatics/pyobo/issues
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: reactome-hs-biopax.db.gz
-  title: Reactome Human from BioPAX, sqlite
+  name: Reactome Human from BioPAX, sqlite
   description: Conversion from BioPAX, human subset
   ontology_purl: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
   format: sqlite
 - id: reactome-hs-biopragmatics.obo
-  title: Reactome Human, Biopragmatics
+  name: Reactome Human, Biopragmatics
   description: Biopragmatics provided conversion, human subset
   ontology_purl: https://w3id.org/biopragmatics/resources/reactome/reactome.obo
   format: obo

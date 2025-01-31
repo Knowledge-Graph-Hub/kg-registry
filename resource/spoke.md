@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: spoke
-title: SPOKE
+name: SPOKE
 description: A Knowledge Graph from UCSF covering many aspects of biomedicine.
 domain: health
 restype: "knowledge graph"

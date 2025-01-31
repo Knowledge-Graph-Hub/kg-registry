@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: multiomics-kp
-title: Multiomics KP
+name: Multiomics KP
 description: A Translator Knowledge Provider incorporating multiomics data.
 domain: health
 restype: "knowledge graph"

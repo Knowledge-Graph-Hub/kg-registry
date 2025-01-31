@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: kgcl
-title: Knowledge Graph Change Language
+name: Knowledge Graph Change Language
 description: A data model for describing change operations at a high level on an ontology
   or ontology-like artefact, such as a Knowledge Graph
 domain: information
@@ -17,11 +17,11 @@ tracker: https://github.com/INCATools/kgcl/issues
 repository: https://github.com/INCATools/kgcl/
 products:
 - id: kgcl.owl
-  title: Knowledge Graph Change Language OWL release
+  name: Knowledge Graph Change Language OWL release
   description: OWL release of Knowledge Graph Change Language
   aggregator: null
 - id: kgcl.obo
-  title: Knowledge Graph Change Language OBO release
+  name: Knowledge Graph Change Language OBO release
   description: OBO release of Knowledge Graph Change Language
   aggregator: null
 uri_prefix: https://w3id.org/

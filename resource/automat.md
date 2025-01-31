@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: automat
-title: Automat
+name: Automat
 description: A Translator Knowledge Provider offering multiple sub-graphs in KGX format.
 domain: health
 restype: "knowledge graph"

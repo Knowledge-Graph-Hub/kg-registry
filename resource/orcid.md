@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: orcid
-title: ORCID
+name: ORCID
 description: ORCID in OWL
 domain: information
 preferredPrefix: http
@@ -16,11 +16,11 @@ tracker: https://github.com/cthoyt/orcidio/issues
 repository: https://github.com/cthoyt/orcidio
 products:
 - id: orcidio.owl
-  title: ORCID in OWL OWL release
+  name: ORCID in OWL OWL release
   description: OWL release of ORCID in OWL
   aggregator: obo
 - id: orcidio.obo
-  title: ORCID in OWL OBO release
+  name: ORCID in OWL OBO release
   description: OBO release of ORCID in OWL
   aggregator: obo
 uri_prefix: https://w3id.org/orcidio/
