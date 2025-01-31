@@ -14,7 +14,7 @@ HERE = pathlib.Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
 ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology").resolve()
 
-SCHEMA_PATH = HERE.joinpath("schema", "registry_schema.json")
+SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "registry_schema.json")
 
 
 def get_data() -> Mapping[str, Mapping[str, Any]]:
