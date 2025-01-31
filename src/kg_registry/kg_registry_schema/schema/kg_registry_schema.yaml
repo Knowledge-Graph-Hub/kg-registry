@@ -114,6 +114,12 @@ classes:
           Publications associated with the resource.
         range: Publication
         multivalued: true
+      category:
+        description: >-
+          The category of the resource.
+          This should be identical to its class name.
+        range: string
+        required: true
 
   KnowledgeGraph:
     description: >-
@@ -234,6 +240,12 @@ classes:
           May be an individual or organization.
         range: Contact
         multivalued: true
+      category:
+        description: >-
+          The category of the product.
+          This should be identical to its class name.
+        range: string
+        required: true
 
   GraphProduct:
     description: >-
