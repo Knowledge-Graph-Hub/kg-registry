@@ -249,6 +249,10 @@ classes:
           This should be identical to its class name.
         range: string
         required: true
+      tags:
+        description: Tags associated with the product.
+        range: TagEnum
+        multivalued: true
 
   GraphProduct:
     description: >-
@@ -535,6 +539,9 @@ enums:
     description: >-
       General-purpose tags that can be associated with resources.
     permissible_values:
+      biopragmatics:
+        description: >-
+          A resource or product aggregated by the BioPragmatics project.
       core:
         description: >-
           A core KG-Hub resource.

@@ -352,6 +352,16 @@
                         "null"
                     ]
                 },
+                "tags": {
+                    "description": "Tags associated with the product.",
+                    "items": {
+                        "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "url": {
                     "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
@@ -505,6 +515,16 @@
                         "null"
                     ]
                 },
+                "tags": {
+                    "description": "Tags associated with the product.",
+                    "items": {
+                        "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "url": {
                     "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
@@ -581,6 +601,16 @@
                     "description": "A main version control repository for the product.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "tags": {
+                    "description": "Tags associated with the product.",
+                    "items": {
+                        "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1031,6 +1061,16 @@
                         "null"
                     ]
                 },
+                "tags": {
+                    "description": "Tags associated with the product.",
+                    "items": {
+                        "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "url": {
                     "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
@@ -1135,6 +1175,16 @@
                     "description": "A main version control repository for the product.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "tags": {
+                    "description": "Tags associated with the product.",
+                    "items": {
+                        "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1337,6 +1387,16 @@
                     "description": "A main version control repository for the product.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "tags": {
+                    "description": "Tags associated with the product.",
+                    "items": {
+                        "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1543,6 +1603,7 @@
         "TagEnum": {
             "description": "General-purpose tags that can be associated with resources.",
             "enum": [
+                "biopragmatics",
                 "core",
                 "translator"
             ],
