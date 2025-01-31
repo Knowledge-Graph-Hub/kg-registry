@@ -11,7 +11,7 @@ import requests
 import yaml
 
 from obofoundry.standardize_metadata import ModifiedDumper
-from obofoundry.utils import ONTOLOGY_DIRECTORY, get_data, get_new_data
+from obofoundry.utils import RESOURCE_DIRECTORY, get_data, get_new_data
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
@@ -223,7 +223,7 @@ class TestIntegrity(unittest.TestCase):
 
 #     def test_standardized(self):
 #         """Test the YAML is standardized."""
-#         for path in ONTOLOGY_DIRECTORY.glob("*.md"):
+#         for path in RESOURCE_DIRECTORY.glob("*.md"):
 #             with self.subTest(prefix=path.stem):
 #                 with path.open() as file:
 #                     lines = [line.rstrip("\n") for line in file]

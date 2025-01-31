@@ -75,9 +75,9 @@ def sort_ontologies(data, sort_order):
     ontologies = []
     for ont_id in sort_order:
         # We assume that ontology ids are unique:
-        ont = [ont for ont in data["ontologies"] if ont["id"] == ont_id].pop()
+        ont = [ont for ont in data["resources"] if ont["id"] == ont_id].pop()
         ontologies.append(ont)
-    data["ontologies"] = ontologies
+    data["resources"] = ontologies
     return data
 
 
