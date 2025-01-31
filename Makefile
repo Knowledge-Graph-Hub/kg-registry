@@ -49,11 +49,13 @@ test: reports/metadata-grid.html _config.yml tox
 
 integration-test: test valid-purl-report.txt
 
-# Remove and/or revert all targets to their repository versions:
+# Remove and/or revert all targets to their repository versions
 clean:
 	rm -Rf registry/kgs.nt registry/kgs.ttl registry/kgs.yml sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
 	git checkout _config.yml registry/kgs.jsonld registry/kgs.ttl registry/kgs.yml
 
+clean-schema:
+	rm -Rf src/kg_registry/kg_registry_schema/datamodel/*.py src/kg_registry/kg_registry_schema/*.json
 
 ### Directories:
 
@@ -244,4 +246,4 @@ jenkins-output.txt:
 reports/%.csv: registry/kgs.ttl sparql/%.sparql
 	arq --data $< --query sparql/$*.sparql --results csv > $@.tmp && mv $@.tmp $@
 
-#include kg.Makefile
+include kg.Makefile

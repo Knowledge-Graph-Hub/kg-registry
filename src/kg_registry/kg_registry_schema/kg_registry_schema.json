@@ -1,0 +1,1450 @@
+{
+    "$defs": {
+        "ActivityStatusEnum": {
+            "description": "The status of a resource. Corresponds to those used by OBO Foundry.",
+            "enum": [
+                "active",
+                "inactive",
+                "orphaned",
+                "unresponsive"
+            ],
+            "title": "ActivityStatusEnum",
+            "type": "string"
+        },
+        "CompressionEnum": {
+            "description": "The type of compression used with a product.",
+            "enum": [
+                "gzip",
+                "tar",
+                "targz",
+                "rar",
+                "zip",
+                "7z",
+                "other"
+            ],
+            "title": "CompressionEnum",
+            "type": "string"
+        },
+        "DataGraph": {
+            "additionalProperties": false,
+            "description": "A data source, rendered as graph nodes and edges. This is not identical to the graph *product*, as a single DataGraph may have multiple products or representations. May be a component of a knowledge graph.",
+            "properties": {
+                "activity_status": {
+                    "$ref": "#/$defs/ActivityStatusEnum",
+                    "description": "The status of the resource."
+                },
+                "contacts": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Contact"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The contact point(s) for the resource. May be an individual or organization."
+                },
+                "description": {
+                    "description": "A description of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "domain": {
+                    "$ref": "#/$defs/DomainEnum",
+                    "description": "The domain that the resource is relevant to. This is not multivalued."
+                },
+                "funding": {
+                    "description": "The funding source(s) for the resource.",
+                    "items": {
+                        "$ref": "#/$defs/FundingSource"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "The identifier of the resource. This is used to identify it within the registry.",
+                    "type": "string"
+                },
+                "language": {
+                    "description": "The human language of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "license": {
+                    "description": "The license of the resource. Individual products may have their own licenses.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "The human-readable name of the resource.",
+                    "type": "string"
+                },
+                "produced_by": {
+                    "description": "The process that produced the graph.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "products": {
+                    "description": "The products or representations of the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Product"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "publications": {
+                    "description": "Publications associated with the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Publication"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "repository": {
+                    "description": "A main version control repository for the resource. Specific products may have their own repositories.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tags": {
+                    "description": "Tags associated with the resource.",
+                    "items": {
+                        "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "The URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "version": {
+                    "description": "The version of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id",
+                "name",
+                "domain"
+            ],
+            "title": "DataGraph",
+            "type": "object"
+        },
+        "DataModel": {
+            "additionalProperties": false,
+            "description": "A data model, such as an ontology or schema. May be a use in construction of a knowledge graph.",
+            "properties": {
+                "activity_status": {
+                    "$ref": "#/$defs/ActivityStatusEnum",
+                    "description": "The status of the resource."
+                },
+                "contacts": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Contact"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The contact point(s) for the resource. May be an individual or organization."
+                },
+                "description": {
+                    "description": "A description of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "domain": {
+                    "$ref": "#/$defs/DomainEnum",
+                    "description": "The domain that the resource is relevant to. This is not multivalued."
+                },
+                "funding": {
+                    "description": "The funding source(s) for the resource.",
+                    "items": {
+                        "$ref": "#/$defs/FundingSource"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "The identifier of the resource. This is used to identify it within the registry.",
+                    "type": "string"
+                },
+                "language": {
+                    "description": "The human language of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "license": {
+                    "description": "The license of the resource. Individual products may have their own licenses.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "The human-readable name of the resource.",
+                    "type": "string"
+                },
+                "products": {
+                    "description": "The products or representations of the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Product"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "publications": {
+                    "description": "Publications associated with the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Publication"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "repository": {
+                    "description": "A main version control repository for the resource. Specific products may have their own repositories.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tags": {
+                    "description": "Tags associated with the resource.",
+                    "items": {
+                        "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "The URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "version": {
+                    "description": "The version of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id",
+                "name",
+                "domain"
+            ],
+            "title": "DataModel",
+            "type": "object"
+        },
+        "DataModelProduct": {
+            "additionalProperties": false,
+            "description": "A product that is a data model, such as an ontology or schema.",
+            "properties": {
+                "compression": {
+                    "$ref": "#/$defs/CompressionEnum",
+                    "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
+                },
+                "contacts": {
+                    "description": "The contact points for the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "A description of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "license": {
+                    "description": "The license of the product. This may differ from that of the parent resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "The human-readable name of the product.",
+                    "type": "string"
+                },
+                "repository": {
+                    "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "title": "DataModelProduct",
+            "type": "object"
+        },
+        "DomainEnum": {
+            "description": "The domain that a resource is most relevant to.",
+            "enum": [
+                "upper",
+                "anatomy and development",
+                "health",
+                "phenotype",
+                "investigations",
+                "environment",
+                "chemistry and biochemistry",
+                "microbiology",
+                "agriculture",
+                "nutrition",
+                "biological systems",
+                "information technology",
+                "organisms",
+                "simulation",
+                "other"
+            ],
+            "title": "DomainEnum",
+            "type": "string"
+        },
+        "FundingSource": {
+            "additionalProperties": false,
+            "description": "A funding source for a resource.",
+            "properties": {
+                "identifier": {
+                    "description": "The identifier for the funding source.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "label": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Organization"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The organization providing the funding."
+                }
+            },
+            "title": "FundingSource",
+            "type": "object"
+        },
+        "GraphProduct": {
+            "additionalProperties": false,
+            "description": "A product that is a graph, represented as nodes and edges.",
+            "properties": {
+                "compression": {
+                    "$ref": "#/$defs/CompressionEnum",
+                    "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
+                },
+                "contacts": {
+                    "description": "The contact points for the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "A description of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "edge_count": {
+                    "description": "The number of edges in the graph.",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "license": {
+                    "description": "The license of the product. This may differ from that of the parent resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "The human-readable name of the product.",
+                    "type": "string"
+                },
+                "node_categories": {
+                    "description": "The node categories in the graph.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "node_count": {
+                    "description": "The number of nodes in the graph.",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "predicates": {
+                    "description": "The predicate types in the graph.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "repository": {
+                    "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "title": "GraphProduct",
+            "type": "object"
+        },
+        "GraphStandardEnum": {
+            "description": "The standard or standards that a knowledge graph conforms to. These are not serializations, but rather the higher-level frameworks that the graph is built on.",
+            "enum": [
+                "kghub"
+            ],
+            "title": "GraphStandardEnum",
+            "type": "string"
+        },
+        "GraphicalInterface": {
+            "additionalProperties": false,
+            "description": "A product that is a graphical interface to a resource. Similar to the \"browsers\" field in OBO Foundry.",
+            "properties": {
+                "compression": {
+                    "$ref": "#/$defs/CompressionEnum",
+                    "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
+                },
+                "contacts": {
+                    "description": "The contact points for the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "A description of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "license": {
+                    "description": "The license of the product. This may differ from that of the parent resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "The human-readable name of the product.",
+                    "type": "string"
+                },
+                "repository": {
+                    "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "title": "GraphicalInterface",
+            "type": "object"
+        },
+        "Individual": {
+            "additionalProperties": false,
+            "description": "An individual person.",
+            "properties": {
+                "email": {
+                    "description": "The email address of the individual.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "github": {
+                    "description": "The GitHub username of the individual. Do not include a prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "label": {
+                    "description": "The name of the individual.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "orcid": {
+                    "description": "The ORCID of the individual. Do not include the \"https://orcid.org/\" prefix.",
+                    "pattern": "^\\d{4}-\\d{4}-\\d{4}-\\d{3}(\\d|X)$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "title": "Individual",
+            "type": "object"
+        },
+        "KnowledgeGraph": {
+            "additionalProperties": false,
+            "description": "A knowledge graph resource. This is any heterogeneous collection of data that is represented as nodes (entities) and edges (relationships) between them. The nodes and edges may have attributes associated with them. This is not identical to the graph *product*, as a single KnowledgeGraph may have multiple products or representations.",
+            "properties": {
+                "activity_status": {
+                    "$ref": "#/$defs/ActivityStatusEnum",
+                    "description": "The status of the resource."
+                },
+                "components": {
+                    "description": "The components of the knowledge graph.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "conforms_to": {
+                    "description": "The standard or standards that the knowledge graph conforms to. This is not the same as its serialization.",
+                    "items": {
+                        "$ref": "#/$defs/GraphStandardEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "contacts": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Contact"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The contact point(s) for the resource. May be an individual or organization."
+                },
+                "contributors": {
+                    "description": "Contributors to the knowledge graph.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "creator": {
+                    "description": "The person or organization responsible for creating the knowledge graph.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "date_created": {
+                    "description": "The date the knowledge graph was created.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "date_modified": {
+                    "description": "The date the knowledge graph was last modified.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "A description of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "domain": {
+                    "$ref": "#/$defs/DomainEnum",
+                    "description": "The domain that the resource is relevant to. This is not multivalued."
+                },
+                "funding": {
+                    "description": "The funding source(s) for the resource.",
+                    "items": {
+                        "$ref": "#/$defs/FundingSource"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "The identifier of the resource. This is used to identify it within the registry.",
+                    "type": "string"
+                },
+                "language": {
+                    "description": "The human language of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "license": {
+                    "description": "The license of the resource. Individual products may have their own licenses.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "The human-readable name of the resource.",
+                    "type": "string"
+                },
+                "products": {
+                    "description": "The products or representations of the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Product"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "publications": {
+                    "description": "Publications associated with the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Publication"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "repository": {
+                    "description": "A main version control repository for the resource. Specific products may have their own repositories.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tags": {
+                    "description": "Tags associated with the resource.",
+                    "items": {
+                        "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "The URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "version": {
+                    "description": "The version of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id",
+                "name",
+                "domain"
+            ],
+            "title": "KnowledgeGraph",
+            "type": "object"
+        },
+        "Mapping": {
+            "additionalProperties": false,
+            "description": "A mapping between two or more data sources. May be a use in construction of a knowledge graph.",
+            "properties": {
+                "activity_status": {
+                    "$ref": "#/$defs/ActivityStatusEnum",
+                    "description": "The status of the resource."
+                },
+                "contacts": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Contact"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The contact point(s) for the resource. May be an individual or organization."
+                },
+                "description": {
+                    "description": "A description of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "domain": {
+                    "$ref": "#/$defs/DomainEnum",
+                    "description": "The domain that the resource is relevant to. This is not multivalued."
+                },
+                "funding": {
+                    "description": "The funding source(s) for the resource.",
+                    "items": {
+                        "$ref": "#/$defs/FundingSource"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "The identifier of the resource. This is used to identify it within the registry.",
+                    "type": "string"
+                },
+                "language": {
+                    "description": "The human language of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "license": {
+                    "description": "The license of the resource. Individual products may have their own licenses.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "The human-readable name of the resource.",
+                    "type": "string"
+                },
+                "products": {
+                    "description": "The products or representations of the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Product"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "publications": {
+                    "description": "Publications associated with the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Publication"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "repository": {
+                    "description": "A main version control repository for the resource. Specific products may have their own repositories.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tags": {
+                    "description": "Tags associated with the resource.",
+                    "items": {
+                        "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "The URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "version": {
+                    "description": "The version of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id",
+                "name",
+                "domain"
+            ],
+            "title": "Mapping",
+            "type": "object"
+        },
+        "MappingProduct": {
+            "additionalProperties": false,
+            "description": "A product that is a mapping between two or more data sources.",
+            "properties": {
+                "compression": {
+                    "$ref": "#/$defs/CompressionEnum",
+                    "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
+                },
+                "contacts": {
+                    "description": "The contact points for the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "A description of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "license": {
+                    "description": "The license of the product. This may differ from that of the parent resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "The human-readable name of the product.",
+                    "type": "string"
+                },
+                "repository": {
+                    "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "title": "MappingProduct",
+            "type": "object"
+        },
+        "Organization": {
+            "additionalProperties": false,
+            "description": "An organization.",
+            "properties": {
+                "email": {
+                    "description": "The email address of the organization.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "github": {
+                    "description": "The GitHub organization name. Do not include a prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "label": {
+                    "description": "The name of the organization.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "The URL of a site for the organization.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "title": "Organization",
+            "type": "object"
+        },
+        "ProcessProduct": {
+            "additionalProperties": false,
+            "description": "A product that is a process or algorithm.",
+            "properties": {
+                "compression": {
+                    "$ref": "#/$defs/CompressionEnum",
+                    "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
+                },
+                "contacts": {
+                    "description": "The contact points for the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "A description of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "license": {
+                    "description": "The license of the product. This may differ from that of the parent resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "The human-readable name of the product.",
+                    "type": "string"
+                },
+                "repository": {
+                    "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "title": "ProcessProduct",
+            "type": "object"
+        },
+        "Product": {
+            "additionalProperties": false,
+            "description": "A top-level class for all products in the knowledge graph registry. This includes any specific files, APIs, or any other accessible representations of a resource.",
+            "properties": {
+                "compression": {
+                    "$ref": "#/$defs/CompressionEnum",
+                    "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
+                },
+                "contacts": {
+                    "description": "The contact points for the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "A description of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "license": {
+                    "description": "The license of the product. This may differ from that of the parent resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "The human-readable name of the product.",
+                    "type": "string"
+                },
+                "repository": {
+                    "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "title": "Product",
+            "type": "object"
+        },
+        "ProductionProcess": {
+            "additionalProperties": false,
+            "description": "A process for producing a resource and/or its products.",
+            "properties": {
+                "activity_status": {
+                    "$ref": "#/$defs/ActivityStatusEnum",
+                    "description": "The status of the resource."
+                },
+                "contacts": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Contact"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The contact point(s) for the resource. May be an individual or organization."
+                },
+                "description": {
+                    "description": "A description of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "domain": {
+                    "$ref": "#/$defs/DomainEnum",
+                    "description": "The domain that the resource is relevant to. This is not multivalued."
+                },
+                "funding": {
+                    "description": "The funding source(s) for the resource.",
+                    "items": {
+                        "$ref": "#/$defs/FundingSource"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "The identifier of the resource. This is used to identify it within the registry.",
+                    "type": "string"
+                },
+                "language": {
+                    "description": "The human language of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "license": {
+                    "description": "The license of the resource. Individual products may have their own licenses.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "The human-readable name of the resource.",
+                    "type": "string"
+                },
+                "products": {
+                    "description": "The products or representations of the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Product"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "publications": {
+                    "description": "Publications associated with the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Publication"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "repository": {
+                    "description": "A main version control repository for the resource. Specific products may have their own repositories.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tags": {
+                    "description": "Tags associated with the resource.",
+                    "items": {
+                        "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "The URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "version": {
+                    "description": "The version of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id",
+                "name",
+                "domain"
+            ],
+            "title": "ProductionProcess",
+            "type": "object"
+        },
+        "ProgrammingInterface": {
+            "additionalProperties": false,
+            "description": "A product that is a programming interface (API) to a resource.",
+            "properties": {
+                "compression": {
+                    "$ref": "#/$defs/CompressionEnum",
+                    "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
+                },
+                "contacts": {
+                    "description": "The contact points for the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "A description of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "license": {
+                    "description": "The license of the product. This may differ from that of the parent resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "The human-readable name of the product.",
+                    "type": "string"
+                },
+                "repository": {
+                    "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "title": "ProgrammingInterface",
+            "type": "object"
+        },
+        "Publication": {
+            "additionalProperties": false,
+            "description": "A publication associated with a resource.",
+            "properties": {
+                "authors": {
+                    "description": "The authors of the publication.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "doi": {
+                    "description": "The DOI of the publication. This should include the doi: prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "journal": {
+                    "description": "The journal the publication was published in.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "preferred": {
+                    "description": "Whether this is the preferred publication for the resource.",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "title": {
+                    "description": "The title of the publication.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "year": {
+                    "description": "The year the publication was published.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "title": "Publication",
+            "type": "object"
+        },
+        "Resource": {
+            "additionalProperties": false,
+            "description": "A top-level class for all resources in the knowledge graph registry. Each resource may have multiple products or representations, but they will all be considered part of a the same parent resource.",
+            "properties": {
+                "activity_status": {
+                    "$ref": "#/$defs/ActivityStatusEnum",
+                    "description": "The status of the resource."
+                },
+                "contacts": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Contact"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The contact point(s) for the resource. May be an individual or organization."
+                },
+                "description": {
+                    "description": "A description of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "domain": {
+                    "$ref": "#/$defs/DomainEnum",
+                    "description": "The domain that the resource is relevant to. This is not multivalued."
+                },
+                "funding": {
+                    "description": "The funding source(s) for the resource.",
+                    "items": {
+                        "$ref": "#/$defs/FundingSource"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "The identifier of the resource. This is used to identify it within the registry.",
+                    "type": "string"
+                },
+                "language": {
+                    "description": "The human language of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "license": {
+                    "description": "The license of the resource. Individual products may have their own licenses.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "The human-readable name of the resource.",
+                    "type": "string"
+                },
+                "products": {
+                    "description": "The products or representations of the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Product"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "publications": {
+                    "description": "Publications associated with the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Publication"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "repository": {
+                    "description": "A main version control repository for the resource. Specific products may have their own repositories.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tags": {
+                    "description": "Tags associated with the resource.",
+                    "items": {
+                        "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "The URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "version": {
+                    "description": "The version of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id",
+                "name",
+                "domain"
+            ],
+            "title": "Resource",
+            "type": "object"
+        },
+        "TagEnum": {
+            "description": "General-purpose tags that can be associated with resources.",
+            "enum": [
+                "core",
+                "translator"
+            ],
+            "title": "TagEnum",
+            "type": "string"
+        }
+    },
+    "$id": "https://w3id.org/knowledge-graph-hub/kg_registry_schema",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "kg_registry_schema",
+    "type": "object",
+    "version": "0.0.2"
+}
