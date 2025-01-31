@@ -26,7 +26,7 @@ products:
 - id: ubergraph.nquads
   title: Ubergraph n-quads
   description: Ubergraph n-quads
-  ontology_purl:  https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz  
+  ontology_purl: https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/

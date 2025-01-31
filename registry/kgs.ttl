@@ -924,20 +924,33 @@ _:b42   <http://www.w3.org/2000/01/rdf-schema#label>  "Casey Ta, Vincent Emonet,
         <http://xmlns.com/foaf/0.1/homepage>  <http://purl.obolibrary.org/obo/> .
 
 <http://purl.obolibrary.org/obo/ubergraph>
-        <http://identifiers.org/preferredPrefix>  "http" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
         <http://purl.org/dc/elements/1.1/description>  "Ubergraph is an RDF triplestore integrating OBO ontologies into a unified semantic graph" ;
-        <http://purl.org/dc/elements/1.1/description>  "A Blazegraph RDF database containing precomputed OWL inferences for OBO ontologies" ;
         <http://purl.org/dc/elements/1.1/title>  "Ubergraph" ;
-        <http://purl.org/dc/elements/1.1/title>  "Ubergraph Blazegraph Database" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "information" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/INCATools/ubergraph/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ubergraph.owl" ;
-        <http://www.w3.org/ns/dcat#accessURL>  "https://ubergraph.apps.renci.org/sparql" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b36 ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ubergraph> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ubergraph.rdf> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ubergraph.blazegraph.jnl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ubergraph.nquads> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://ubergraph.apps.renci.org/sparql> .
+
+<http://purl.obolibrary.org/obo/ubergraph.blazegraph.jnl>
+        <http://purl.org/dc/elements/1.1/description>  "Blazegraph journal of Ubergraph" ;
+        <http://purl.org/dc/elements/1.1/title>  "Ubergraph blazegraph journal" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "https://ubergraph.apps.renci.org/downloads/current/ubergraph.jnl.gz" .
+
+<http://purl.obolibrary.org/obo/ubergraph.nquads>
+        <http://purl.org/dc/elements/1.1/description>  "Ubergraph n-quads" ;
+        <http://purl.org/dc/elements/1.1/title>  "Ubergraph n-quads" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz" .
+
+<http://purl.obolibrary.org/obo/ubergraph.rdf>
+        <http://purl.org/dc/elements/1.1/description>  "RDF of Ubergraph" ;
+        <http://purl.org/dc/elements/1.1/title>  "Ubergraph RDF" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "https://ubergraph.apps.renci.org/sparql" .
 
 <http://purl.obolibrary.org/obo/ubergraph_automat>
         <http://purl.org/dc/elements/1.1/description>  "UberGraph Automat" ;
