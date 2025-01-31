@@ -12,7 +12,7 @@ import yaml
 # Path to JSON schema file:
 HERE = pathlib.Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
-ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology").resolve()
+RESOURCE_DIRECTORY = ROOT.joinpath("ontology").resolve()
 
 SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "kg_registry_schema.json")
 
@@ -99,7 +99,7 @@ def load_data(yaml_infile):
 def get_schema():
     """Return a schema from the master schema directory."""
     schema = None
-    file = SCHEMA_FILE
+    file = SCHEMA_PATH
     try:
         with open(file, "r") as s:
             schema = json.load(s)
