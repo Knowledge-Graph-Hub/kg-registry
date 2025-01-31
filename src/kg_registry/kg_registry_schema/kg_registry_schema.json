@@ -33,6 +33,10 @@
                     "$ref": "#/$defs/ActivityStatusEnum",
                     "description": "The status of the resource."
                 },
+                "category": {
+                    "description": "The category of the resource. This should be identical to its class name.",
+                    "type": "string"
+                },
                 "contacts": {
                     "anyOf": [
                         {
@@ -156,7 +160,8 @@
             "required": [
                 "id",
                 "name",
-                "domain"
+                "domain",
+                "category"
             ],
             "title": "DataGraph",
             "type": "object"
@@ -168,6 +173,10 @@
                 "activity_status": {
                     "$ref": "#/$defs/ActivityStatusEnum",
                     "description": "The status of the resource."
+                },
+                "category": {
+                    "description": "The category of the resource. This should be identical to its class name.",
+                    "type": "string"
                 },
                 "contacts": {
                     "anyOf": [
@@ -282,7 +291,8 @@
             "required": [
                 "id",
                 "name",
-                "domain"
+                "domain",
+                "category"
             ],
             "title": "DataModel",
             "type": "object"
@@ -291,6 +301,10 @@
             "additionalProperties": false,
             "description": "A product that is a data model, such as an ontology or schema.",
             "properties": {
+                "category": {
+                    "description": "The category of the product. This should be identical to its class name.",
+                    "type": "string"
+                },
                 "compression": {
                     "$ref": "#/$defs/CompressionEnum",
                     "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
@@ -348,7 +362,8 @@
             },
             "required": [
                 "id",
-                "name"
+                "name",
+                "category"
             ],
             "title": "DataModelProduct",
             "type": "object"
@@ -405,6 +420,10 @@
             "additionalProperties": false,
             "description": "A product that is a graph, represented as nodes and edges.",
             "properties": {
+                "category": {
+                    "description": "The category of the product. This should be identical to its class name.",
+                    "type": "string"
+                },
                 "compression": {
                     "$ref": "#/$defs/CompressionEnum",
                     "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
@@ -496,7 +515,8 @@
             },
             "required": [
                 "id",
-                "name"
+                "name",
+                "category"
             ],
             "title": "GraphProduct",
             "type": "object"
@@ -513,6 +533,10 @@
             "additionalProperties": false,
             "description": "A product that is a graphical interface to a resource. Similar to the \"browsers\" field in OBO Foundry.",
             "properties": {
+                "category": {
+                    "description": "The category of the product. This should be identical to its class name.",
+                    "type": "string"
+                },
                 "compression": {
                     "$ref": "#/$defs/CompressionEnum",
                     "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
@@ -570,7 +594,8 @@
             },
             "required": [
                 "id",
-                "name"
+                "name",
+                "category"
             ],
             "title": "GraphicalInterface",
             "type": "object"
@@ -619,6 +644,10 @@
                 "activity_status": {
                     "$ref": "#/$defs/ActivityStatusEnum",
                     "description": "The status of the resource."
+                },
+                "category": {
+                    "description": "The category of the resource. This should be identical to its class name.",
+                    "type": "string"
                 },
                 "components": {
                     "description": "The components of the knowledge graph.",
@@ -781,7 +810,8 @@
             "required": [
                 "id",
                 "name",
-                "domain"
+                "domain",
+                "category"
             ],
             "title": "KnowledgeGraph",
             "type": "object"
@@ -822,6 +852,10 @@
                 "activity_status": {
                     "$ref": "#/$defs/ActivityStatusEnum",
                     "description": "The status of the resource."
+                },
+                "category": {
+                    "description": "The category of the resource. This should be identical to its class name.",
+                    "type": "string"
                 },
                 "contacts": {
                     "anyOf": [
@@ -936,7 +970,8 @@
             "required": [
                 "id",
                 "name",
-                "domain"
+                "domain",
+                "category"
             ],
             "title": "Mapping",
             "type": "object"
@@ -945,6 +980,10 @@
             "additionalProperties": false,
             "description": "A product that is a mapping between two or more data sources.",
             "properties": {
+                "category": {
+                    "description": "The category of the product. This should be identical to its class name.",
+                    "type": "string"
+                },
                 "compression": {
                     "$ref": "#/$defs/CompressionEnum",
                     "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
@@ -1002,7 +1041,8 @@
             },
             "required": [
                 "id",
-                "name"
+                "name",
+                "category"
             ],
             "title": "MappingProduct",
             "type": "object"
@@ -1047,6 +1087,10 @@
             "additionalProperties": false,
             "description": "A product that is a process or algorithm.",
             "properties": {
+                "category": {
+                    "description": "The category of the product. This should be identical to its class name.",
+                    "type": "string"
+                },
                 "compression": {
                     "$ref": "#/$defs/CompressionEnum",
                     "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
@@ -1104,7 +1148,8 @@
             },
             "required": [
                 "id",
-                "name"
+                "name",
+                "category"
             ],
             "title": "ProcessProduct",
             "type": "object"
@@ -1113,6 +1158,10 @@
             "additionalProperties": false,
             "description": "A top-level class for all products in the knowledge graph registry. This includes any specific files, APIs, or any other accessible representations of a resource.",
             "properties": {
+                "category": {
+                    "description": "The category of the product. This should be identical to its class name.",
+                    "type": "string"
+                },
                 "compression": {
                     "$ref": "#/$defs/CompressionEnum",
                     "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
@@ -1170,7 +1219,8 @@
             },
             "required": [
                 "id",
-                "name"
+                "name",
+                "category"
             ],
             "title": "Product",
             "type": "object"
@@ -1182,6 +1232,10 @@
                 "activity_status": {
                     "$ref": "#/$defs/ActivityStatusEnum",
                     "description": "The status of the resource."
+                },
+                "category": {
+                    "description": "The category of the resource. This should be identical to its class name.",
+                    "type": "string"
                 },
                 "contacts": {
                     "anyOf": [
@@ -1296,7 +1350,8 @@
             "required": [
                 "id",
                 "name",
-                "domain"
+                "domain",
+                "category"
             ],
             "title": "ProductionProcess",
             "type": "object"
@@ -1305,6 +1360,10 @@
             "additionalProperties": false,
             "description": "A product that is a programming interface (API) to a resource.",
             "properties": {
+                "category": {
+                    "description": "The category of the product. This should be identical to its class name.",
+                    "type": "string"
+                },
                 "compression": {
                     "$ref": "#/$defs/CompressionEnum",
                     "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
@@ -1362,7 +1421,8 @@
             },
             "required": [
                 "id",
-                "name"
+                "name",
+                "category"
             ],
             "title": "ProgrammingInterface",
             "type": "object"
@@ -1428,6 +1488,10 @@
                     "$ref": "#/$defs/ActivityStatusEnum",
                     "description": "The status of the resource."
                 },
+                "category": {
+                    "description": "The category of the resource. This should be identical to its class name.",
+                    "type": "string"
+                },
                 "contacts": {
                     "anyOf": [
                         {
@@ -1541,7 +1605,8 @@
             "required": [
                 "id",
                 "name",
-                "domain"
+                "domain",
+                "category"
             ],
             "title": "Resource",
             "type": "object"
