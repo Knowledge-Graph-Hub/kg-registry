@@ -74,7 +74,7 @@ reports/principles:
 
 ### Build Configuration Files
 
-# Create the site-wide config file by combining all metadata on kgs + principles
+# Create the site-wide config file by combining all metadata on resources + principles
 #  and combining with site-wide metadata.
 #
 # Note that anything in _config.yml is accessible to any liquid template via the
@@ -84,9 +84,9 @@ reports/principles:
 _config.yml: _config_header.yml registry/kgs.yml principles/all.yml
 	cat $^ > $@.tmp && mv $@.tmp $@
 
-# Sort kgs based on the validation (metadata-grid)
+# Sort resources based on the validation (metadata-grid)
 registry/kgs.yml: reports/metadata-grid.csv
-	./util/sort-ontologies.py tmp/unsorted-ontologies.yml $< $@ && rm -rf tmp
+	./util/sort-resources.py tmp/unsorted-resources.yml $< $@ && rm -rf tmp
 
 # Extract the metadata from each principle in the principles/ directory, and concatenate
 # into a single yaml file in that directory
