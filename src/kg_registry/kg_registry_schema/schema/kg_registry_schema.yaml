@@ -8,31 +8,35 @@ description: |-
 license: GPL-3.0
 see_also:
   - https://kghub.org/kg-registry/
-version: 0.0.1
+version: 0.0.2
 
 prefixes:
   kg_registry_schema: https://w3id.org/bridge2ai/data-sheets-schema/
   skos: http://www.w3.org/2004/02/skos/core#
 
-default_prefix: kg_registry_schema
+default_prefix: kgr
 default_range: string
 
 imports:
   - linkml:types
 
 classes:
-  DataObject:
-    abstract: true
+
+  ## Resource Classes
+
+  Resource:
     description: >-
-      A data object. This may be any knowledge graph, a component
-      of a graph, a collection of graphs,
-      or a process for producing a component of a graph.
+      A top-level class for all resources in the
+      knowledge graph registry. Each resource may have multiple
+      products or representations, but they will all be considered
+      part of a the same parent resource.
     close_mappings:
       - schema:CreativeWork
     attributes:
       id:
         description: >-
-          The identifier of the data object. This must be unique.
+          The identifier of the resource.
+          This is used to identify it within the registry.
         required: true
         range: string
         identifier: true
@@ -40,51 +44,63 @@ classes:
         exact_mappings:
           - schema:name
       name:
-        description: The name of the data object.
+        description: >-
+          The human-readable name of the resource.
         required: true
         range: string
       description:
-        description: A description of the data object.
+        description: >-
+          A description of the resource.
         range: string
       url:
         description: >-
-          The URL of the data object. This may be a link
+          The URL of the resource. This may be a link
           to download a specific file, a base URL to an API,
           or a link to a graphical interface.
         range: uriorcurie
       license:
-        description: The license of the data object.
+        description: The license of the resource.
         range: string
       version:
-        description: The version of the data object.
+        description: The version of the resource.
         range: string
         exact_mappings:
           - schema:version
           - dcterms:hasVersion
       language:
-        description: The human language of the data object.
+        description: >-
+          The human language of the resource.
         range: string
       contact_point:
         description: >-
-          The contact point for the data object.
-          This should be an email address.
+          The contact point for the resource.
         range: string
+      products:
+        description: >-
+          The products or representations of the resource.
+        range: Product
+        multivalued: true
+      tags:
+        description: Tags associated with the resource.
+        range: TagEnum
+        multivalued: true
 
   KnowledgeGraph:
     description: >-
-      A knowledge graph. This is any heterogeneous collection of data that is
-      represented as nodes (entities) and edges (relationships) between them.
-      The nodes and edges may have attributes associated with them.
+      A knowledge graph resource. This is any heterogeneous collection of data
+      that is represented as nodes (entities) and edges (relationships) between
+      them. The nodes and edges may have attributes associated with them.
+      This is not identical to the graph *product*, as a single KnowledgeGraph
+      may have multiple products or representations.
     aliases:
       - kg
       - heterogeneous graph
-    is_a: DataObject
+    is_a: Resource
     attributes:
-      part_of_collection:
-        description: The collection that the knowledge graph is part of.
-        range: KnowledgeGraphCollection
-      source:
-        description: The source of the knowledge graph.
+      creator:
+        description: >-
+          The person or organization responsible for
+          creating the knowledge graph.
         range: string
       date_created:
         description: The date the knowledge graph was created.
@@ -92,10 +108,6 @@ classes:
       date_modified:
         description: The date the knowledge graph was last modified.
         range: string
-      tags:
-        description: Tags associated with the knowledge graph.
-        range: string
-        multivalued: true
       contributors:
         description: Contributors to the knowledge graph.
         range: string
@@ -106,7 +118,7 @@ classes:
         range: boolean
       components:
         description: The components of the knowledge graph.
-        range: GraphComponent
+        range: Resource
         multivalued: true
       conforms_to:
         description: >-
@@ -114,64 +126,91 @@ classes:
           This is not the same as its serialization.
         range: GraphStandardEnum
         multivalued: true
+
+  DataGraph:
+    description: >-
+      A data source, rendered as graph nodes and edges.
+      This is not identical to the graph *product*, as a single DataGraph
+      may have multiple products or representations.
+      May be a component of a knowledge graph.
+    is_a: Resource
+    attributes:
+      produced_by:
+        description: The process that produced the graph.
+        range: ProductionProcess
+        multivalued: true
+
+  ProductionProcess:
+    description: >-
+      A process for producing a resource and/or its products.
+    is_a: Resource
+
+  ## Product Classes
+  Product:
+    description: >-
+      A top-level class for all products in the
+      knowledge graph registry. This includes any specific
+      files, APIs, or any other accessible representations of
+      a resource.
+    attributes:
+      compression:
+        description: >-
+          The type of compression used with the product.
+          If this is not specified, it is assumed to be uncompressed.
+        range: CompressionEnum
+
+  GraphProduct:
+    description: >-
+      A product that is a graph, represented as nodes and edges.
+    is_a: Product
+    attributes:
       edge_count:
-        description: The number of edges in the knowledge graph.
+        description: The number of edges in the graph.
         range: integer
       node_count:
-        description: The number of nodes in the knowledge graph.
+        description: The number of nodes in the graph.
         range: integer
       predicates:
-        description: The predicate types in the knowledge graph.
+        description: The predicate types in the graph.
         range: string
         multivalued: true
       node_categories:
-        description: The node categories in the knowledge graph.
+        description: The node categories in the graph.
         range: string
         multivalued: true
-
-  KnowledgeGraphCollection:
-    description: >-
-      A collection of knowledge graphs.
-    is_a: DataObject
-
-  GraphComponent:
-    description: >-
-      A component of a knowledge graph.
-    is_a: DataObject
-    attributes:
-      produced_by:
-        description: The process that produced the component.
-        range: GraphProductionProcess
-        multivalued: true
-      part_of_subset:
-        description: The subset or subsets that the component is part of.
-        range: string
-        multivalued: true
-      is_compressed:
-        description: >-
-          Whether the component is compressed. If true, the component
-          should be decompressed before use.
-        range: boolean
-      compression:
-        description: >-
-          The type of compression used with the component, e.g., tar.gz.
-        range: CompressionEnum
-
-  GraphProductionProcess:
-    description: >-
-      A process for producing the individual components of a knowledge graph.
-    is_a: DataObject
 
 enums:
   CompressionEnum:
     description: >-
-      The type of compression used with a graph component.
+      The type of compression used with a product.
     permissible_values:
       gzip:
+        description:
+          The gzip compression algorithm.
+          This file ends in .gz.
       tar:
+        description:
+          The tar archive format.
+          This file ends in .tar.
       targz:
+        description:
+          A tar archive that is also gzip compressed.
+          This file ends in .tar.gz.
+      rar:
+        description:
+          The rar archive format.
+          This file ends in .rar.
       zip:
+        description:
+          The zip archive format.
+          This file ends in .zip.
+      7z:
+        description:
+          The 7z archive format.
+          This file ends in .7z.
       other:
+        description:
+          Another compression format not defined here.
 
   GraphStandardEnum:
     description: >-
@@ -180,3 +219,17 @@ enums:
       frameworks that the graph is built on.
     permissible_values:
       kghub:
+        description: >-
+          The KG-Hub standard, which is a general-purpose
+          knowledge graph standard.
+
+  TagEnum:
+    description: >-
+      General-purpose tags that can be associated with resources.
+    permissible_values:
+      core:
+        description: >-
+          A core KG-Hub resource.
+      translator:
+        description: >-
+          A resource used by the NCATS Translator program.
