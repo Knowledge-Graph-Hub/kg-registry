@@ -28,6 +28,10 @@
             "@id": "http://purl.obolibrary.org/obo/ONTOLOGY-KP_",
             "@prefix": true
         },
+        "PRIMEKG": {
+            "@id": "http://purl.obolibrary.org/obo/PRIMEKG_",
+            "@prefix": true
+        },
         "RTX-KG2": {
             "@id": "http://purl.obolibrary.org/obo/RTX-KG2_",
             "@prefix": true
