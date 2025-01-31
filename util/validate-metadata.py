@@ -3,13 +3,18 @@
 import json
 import re
 import sys
+import pathlib
 from argparse import ArgumentParser
 
 import jsonschema
 import yaml
 
 # Path to JSON schema file:
-SCHEMA_FILE = "util/schema/registry_schema.json"
+HERE = pathlib.Path(__file__).parent.resolve()
+ROOT = HERE.parent.resolve()
+ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology").resolve()
+
+SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "registry_schema.json")
 
 # The metadata grid to be generated:
 metadata_grid = {}
@@ -35,9 +40,7 @@ def main():
   1) violations_outfile: a CSV, TSV, or TXT file which contain all metadata violations, and
   2) grid_outfile: a CSV, TSV, or TXT file which will contain a custom sorted metadata grid"""
     )
-    parser.add_argument(
-        "yaml_infile", type=str, help="YAML file containing registry data"
-    )
+    parser.add_argument("yaml_infile", type=str, help="YAML file containing registry data")
     parser.add_argument(
         "violations_outfile",
         type=str,
@@ -133,9 +136,7 @@ def validate_metadata(item, schema):
     try:
         jsonschema.validate(item, schema)
     except jsonschema.exceptions.ValidationError as ve:
-        title = list(ve.absolute_schema_path)[
-            0
-        ]  # Find the named section within the schema
+        title = list(ve.absolute_schema_path)[0]  # Find the named section within the schema
         if title == "required":
             field_names = re.findall(r"\'(.*?)\'", ve.message)  # Rather get which field
             if len(field_names) > 0:
