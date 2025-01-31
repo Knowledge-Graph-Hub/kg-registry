@@ -36,13 +36,13 @@ def main(args):
 
     sort_order = get_sort_order(grid)
     data = load_data(data_file)
-    data = sort_ontologies(data, sort_order)
+    data = sort_resources(data, sort_order)
     write_data(data, output)
 
 
 def get_sort_order(grid):
     """Given the path to the metadata grid (CSV or TSV), extract the order of
-    ontologies from the grid. Return the list of ontology IDs in that order."""
+    resources from the grid. Return the list of resource IDs in that order."""
     sort_order = []
     if ".csv" in grid:
         separator = ","
@@ -69,7 +69,7 @@ def load_data(data_file):
     return data
 
 
-def sort_ontologies(data, sort_order):
+def sort_resources(data, sort_order):
     """Given the ontologies data as a dictionary and the list of ontologies in
     proper sort order, return the sorted data."""
     ontologies = []
