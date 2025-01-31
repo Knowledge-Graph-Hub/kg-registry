@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: sldb
-title: sldb
+name: sldb
 description: A graph of synthetic lethal interactions.
 domain: organisms
 contact:

@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: drkg
-title: DRKG
+name: DRKG
 description: Drug Repurposing Knowledge Graph (DRKG) is a comprehensive biological knowledge graph relating genes, compounds, diseases, biological processes, side effects and symptoms.
 domain: health
 preferredPrefix: http

@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: ecosim
-title: ecosim
+name: ecosim
 description: Ontology rendering of the EcoSIM Land System Model
 domain: environment
 preferredPrefix: obo
@@ -16,7 +16,7 @@ tracker: http://purl.obolibrary.org/obo/ecosim.owl
 repository: http://purl.obolibrary.org/obo/ecosim.owl
 products:
 - id: ecosim.owl
-  title: ecosim OWL release
+  name: ecosim OWL release
   description: OWL release of ecosim
 uri_prefix: http://purl.obolibrary.org/obo/
 restype: "other"

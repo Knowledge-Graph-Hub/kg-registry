@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: phenio
-title: An integrated ontology for Phenomics
+name: An integrated ontology for Phenomics
 contact:
   email: jmcl@ebi.ac.uk
   github: jamesamcl
@@ -19,9 +19,9 @@ products:
 - id: phenio.owl
   description: OWL version of phenio
   ontology_purl: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl
-  title: phenio
+  name: phenio
 - id: phenio.kgx
-  title: phenio KG
+  name: phenio KG
   description: KGX version of phenio
   ontology_purl: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
   type: kgx
@@ -34,7 +34,7 @@ usages:
     url: https://monarchinitiative.org/phenotype/HP:0001300#disease
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/27899636
-    title: 'The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species '
+    name: 'The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species '
   type: analysis
   user: https://monarchinitiative.org/
 activity_status: active

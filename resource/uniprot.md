@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: uniprot
-title: uniprot
+name: uniprot
 description: UniProt Protein
 domain: biological systems
 preferredPrefix: obo
@@ -16,17 +16,17 @@ tracker: https://github.com/biopragmatics/pyobo/issues
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: uniprot.owl
-  title: uniprot OWL release
+  name: uniprot OWL release
   description: OWL release of uniprot
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl
 - id: uniprot.obo
-  title: uniprot OBO release
+  name: uniprot OBO release
   description: OBO release of uniprot
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo
 - id: uniprot.sssom
-  title: uniprot SSSOM release
+  name: uniprot SSSOM release
   description: SSSOM release of uniprot
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom

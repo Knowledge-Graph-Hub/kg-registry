@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: rhea
-title: Rhea, the Annotated Reactions Database
+name: Rhea, the Annotated Reactions Database
 description: Rhea is an expert-curated knowledgebase of chemical and transport reactions
   of biological interest
 domain: chemistry and biochemistry
@@ -17,17 +17,17 @@ tracker: https://github.com/biopragmatics/pyobo/issues
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: rhea.owl
-  title: Rhea, the Annotated Reactions Database OWL release
+  name: Rhea, the Annotated Reactions Database OWL release
   description: OWL release of Rhea, the Annotated Reactions Database
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/rhea/rhea.owl
 - id: rhea.obo
-  title: Rhea, the Annotated Reactions Database OBO release
+  name: Rhea, the Annotated Reactions Database OBO release
   description: OBO release of Rhea, the Annotated Reactions Database
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/rhea/rhea.obo
 - id: rhea.sssom
-  title: Rhea, the Annotated Reactions Database SSSOM release
+  name: Rhea, the Annotated Reactions Database SSSOM release
   description: SSSOM release of Rhea, the Annotated Reactions Database
   aggregator: biopragmatics
   ontology_purl: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom

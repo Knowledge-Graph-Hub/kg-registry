@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: ubergraph
-title: Ubergraph
+name: Ubergraph
 description: Ubergraph is an RDF triplestore integrating OBO ontologies into a unified semantic graph
 domain: information
 restype: "knowledge graph"
@@ -16,15 +16,15 @@ tracker: https://github.com/INCATools/ubergraph/issues
 repository: https://github.com/INCATools/ubergraph
 products:
 - id: ubergraph.rdf
-  title: Ubergraph RDF
+  name: Ubergraph RDF
   description: RDF of Ubergraph
   ontology_purl: https://ubergraph.apps.renci.org/sparql
 - id: ubergraph.blazegraph.jnl
-  title: Ubergraph blazegraph journal
+  name: Ubergraph blazegraph journal
   description: Blazegraph journal of Ubergraph
   ontology_purl: https://ubergraph.apps.renci.org/downloads/current/ubergraph.jnl.gz
 - id: ubergraph.nquads
-  title: Ubergraph n-quads
+  name: Ubergraph n-quads
   description: Ubergraph n-quads
   ontology_purl: https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz
 license:

@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: mixs
-title: mixs
+name: mixs
 description: mixs
 domain: environment
 preferredPrefix: http
@@ -16,11 +16,11 @@ tracker: https://w3id.org/mixs
 repository: https://w3id.org/mixs
 products:
 - id: mixs.owl
-  title: mixs OWL release
+  name: mixs OWL release
   description: OWL release of mixs
   aggregator: null
 - id: mixs.obo
-  title: mixs OBO release
+  name: mixs OBO release
   description: OBO release of mixs
   aggregator: null
 uri_prefix: https://w3id.org/

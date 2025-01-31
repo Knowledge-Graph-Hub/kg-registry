@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: biolink
-title: Biolink-Model
+name: Biolink-Model
 description: Entity and association taxonomy and datamodel for life-sciences data
 domain: upper
 restype: "data model"
@@ -17,7 +17,7 @@ tracker: https://github.com/biolink/biolink-model/issues
 repository: https://github.com/biolink/biolink-model/
 products:
 - id: biolink-model.owl.ttl
-  title: Biolink-Model OWL release
+  name: Biolink-Model OWL release
   description: OWL release of Biolink-Model
 uri_prefix: https://w3id.org/biolink/
 license:

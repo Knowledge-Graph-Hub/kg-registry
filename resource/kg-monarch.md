@@ -2,7 +2,7 @@
 layout: ontology_detail
 activity_status: active
 id: kg-monarch
-title: KG Monarch
+name: KG Monarch
 description: Monarch Initiative Knowledge Graph
 domain: health
 preferredPrefix: http
@@ -17,7 +17,7 @@ repository: https://github.com/monarch-initiative/monarch-ingest
 products:
 - id: kg-monarch.tar.gz
   format: kgx
-  title: KGX Distribution of KGM
+  name: KGX Distribution of KGM
   description: KGX Distribution of KGM
   ontology_purl: https://kg-hub.berkeleybop.io/kg-monarch/current/kg-monarch.tar.gz
 uri_prefix: https://w3id.org/kg-monarch/

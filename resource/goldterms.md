@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: goldterms
-title: GOLD Environmental Paths
+name: GOLD Environmental Paths
 contact:
   email: cjmungall@lbl.gov
   github: cmungall
@@ -25,7 +25,7 @@ uri_prefix: https://w3id.org/goldterms/
 products:
 - id: goldterms.owl
   ontology_purl: https://w3id.org/goldterms/goldterms.owl
-  title: main GOLDTERMS OWL release
+  name: main GOLDTERMS OWL release
 repository: https://github.com/cmungall/gold-ontology
 tracker: https://github.com/cmungall/gold-ontology/issues
 activity_status: active
