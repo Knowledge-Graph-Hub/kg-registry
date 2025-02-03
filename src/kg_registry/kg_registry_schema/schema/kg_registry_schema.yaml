@@ -283,6 +283,10 @@ classes:
         description: The node categories in the graph.
         range: string
         multivalued: true
+      is_kgx:
+        description: >-
+          Whether the graph is in KGX format.
+        range: boolean
 
   DataModelProduct:
     description: >-
