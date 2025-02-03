@@ -759,6 +759,31 @@ resources:
       label: The Monarch Initiative
       url: https://monarchinitiative.org/
 - activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Individual
+    email: marinka@hms.harvard.edu
+    github: marinkaz
+    label: Marinka Zitnik
+  description: PrimeKG (Precision Medicine Knowledge Graph) integrates 20 high-quality
+    biomedical resources to describe 17,080 diseases with over 4 million relationships
+    across ten major biological scales.
+  domain: health
+  id: primekg
+  layout: resource_detail
+  license:
+    label: MIT License
+    url: https://opensource.org/licenses/MIT
+  name: PrimeKG
+  products:
+  - category: GraphProduct
+    description: The full PrimeKG dataset containing disease relationships.
+    id: primekg.csv
+    name: PrimeKG Full Dataset
+    url: https://dataverse.harvard.edu/api/access/datafile/6180620
+  repository: https://github.com/mims-harvard/PrimeKG
+  url: https://zitniklab.hms.harvard.edu/projects/PrimeKG
+- activity_status: active
   category: Resource
   contacts:
   - category: Individual

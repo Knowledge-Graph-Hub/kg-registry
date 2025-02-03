@@ -777,7 +777,9 @@ resources:
       label: The Monarch Initiative
       url: https://monarchinitiative.org/
 - activity_status: active
-  contact:
+  category: KnowledgeGraph
+  contacts:
+  - category: Individual
     email: marinka@hms.harvard.edu
     github: marinkaz
     label: Marinka Zitnik
@@ -785,23 +787,20 @@ resources:
     biomedical resources to describe 17,080 diseases with over 4 million relationships
     across ten major biological scales.
   domain: health
-  homepage: https://zitniklab.hms.harvard.edu/projects/PrimeKG
   id: primekg
-  layout: ontology_detail
+  layout: resource_detail
   license:
     label: MIT License
     url: https://opensource.org/licenses/MIT
-  ontology_purl: http://purl.obolibrary.org/obo/primekg.owl
+  name: PrimeKG
   products:
-  - description: The full PrimeKG dataset containing disease relationships.
-    format: csv
+  - category: GraphProduct
+    description: The full PrimeKG dataset containing disease relationships.
     id: primekg.csv
-    ontology_purl: https://dataverse.harvard.edu/api/access/datafile/6180620
-    title: PrimeKG Full Dataset
+    name: PrimeKG Full Dataset
+    url: https://dataverse.harvard.edu/api/access/datafile/6180620
   repository: https://github.com/mims-harvard/PrimeKG
-  restype: knowledge graph
-  title: PrimeKG
-  tracker: https://github.com/mims-harvard/PrimeKG/issues
+  url: https://zitniklab.hms.harvard.edu/projects/PrimeKG
 - activity_status: active
   category: Resource
   contacts:
