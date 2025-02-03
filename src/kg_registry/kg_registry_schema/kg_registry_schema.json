@@ -155,6 +155,16 @@
                         "null"
                     ]
                 },
+                "usages": {
+                    "description": "The usage(s) of the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Usage"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "version": {
                     "description": "The version of the resource.",
                     "type": [
@@ -289,6 +299,16 @@
                     "description": "The URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "usages": {
+                    "description": "The usage(s) of the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Usage"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -861,6 +881,16 @@
                         "null"
                     ]
                 },
+                "usages": {
+                    "description": "The usage(s) of the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Usage"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "version": {
                     "description": "The version of the resource.",
                     "type": [
@@ -1024,6 +1054,16 @@
                     "description": "The URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "usages": {
+                    "description": "The usage(s) of the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Usage"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1369,6 +1409,16 @@
                         "null"
                     ]
                 },
+                "usages": {
+                    "description": "The usage(s) of the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Usage"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "version": {
                     "description": "The version of the resource.",
                     "type": [
@@ -1640,6 +1690,16 @@
                         "null"
                     ]
                 },
+                "usages": {
+                    "description": "The usage(s) of the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Usage"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "version": {
                     "description": "The version of the resource.",
                     "type": [
@@ -1665,6 +1725,70 @@
                 "translator"
             ],
             "title": "TagEnum",
+            "type": "string"
+        },
+        "Usage": {
+            "additionalProperties": false,
+            "description": "The usage of a resource. This may be actual, experimental, or theoretical.",
+            "properties": {
+                "description": {
+                    "description": "A description of the usage.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "label": {
+                    "description": "The label of the usage.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "publications": {
+                    "description": "Publications associated with the usage.",
+                    "items": {
+                        "$ref": "#/$defs/Publication"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "type": {
+                    "$ref": "#/$defs/UsageEnum",
+                    "description": "The type of usage."
+                },
+                "url": {
+                    "description": "A URL for a description or example of the usage.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "users": {
+                    "description": "The user implementing or working with the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                }
+            },
+            "title": "Usage",
+            "type": "object"
+        },
+        "UsageEnum": {
+            "description": "The type of usage of a resource.",
+            "enum": [
+                "actual",
+                "experimental",
+                "theoretical",
+                "other"
+            ],
+            "title": "UsageEnum",
             "type": "string"
         }
     },

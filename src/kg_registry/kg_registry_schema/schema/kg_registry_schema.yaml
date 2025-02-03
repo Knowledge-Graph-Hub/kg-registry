@@ -125,6 +125,11 @@ classes:
           This should be identical to its class name.
         range: string
         required: true
+      usages:
+        description: >-
+          The usage(s) of the resource.
+        range: Usage
+        multivalued: true
       layout:
         description: >-
           The layout of the resource.
@@ -438,6 +443,42 @@ classes:
           This should include the doi: prefix.
         range: uriorcurie
 
+  Usage:
+    description: >-
+      The usage of a resource.
+      This may be actual, experimental, or theoretical.
+    attributes:
+      label:
+        description: >-
+          The label of the usage.
+        range: string
+      description:
+        description: >-
+          A description of the usage.
+        range: string
+      url:
+        description: >-
+          A URL for a description or example of the usage.
+        range: uriorcurie
+      users:
+        description: >-
+          The user implementing or working with the resource.
+        range: Contact
+        multivalued: true
+        inlined: true
+        inlined_as_list: true
+      publications:
+        description: >-
+          Publications associated with the usage.
+        range: Publication
+        multivalued: true
+        inlined: true
+        inlined_as_list: true
+      type:
+        description: >-
+          The type of usage.
+        range: UsageEnum
+
 # Enums
 enums:
 
@@ -569,3 +610,22 @@ enums:
       translator:
         description: >-
           A resource used by the NCATS Translator program.
+
+  UsageEnum:
+    description: >-
+      The type of usage of a resource.
+    permissible_values:
+      actual:
+        description: >-
+          The resource is actually used in the specified way.
+      experimental:
+        description: >-
+          The resource is used in the specified way for
+          experimental purposes.
+      theoretical:
+        description: >-
+          The resource is not used in the specified way, but
+          it could be.
+      other:
+        description: >-
+          The resource is used in a way not defined here.
