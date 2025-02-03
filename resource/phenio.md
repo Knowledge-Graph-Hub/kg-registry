@@ -27,15 +27,18 @@ products:
   category: GraphProduct
 repository: https://github.com/monarch-initiative/phenio
 usages:
-- description: phenio is used by the Monarch Initiative for cross-species inference.
-  examples:
-  - description: Characteristic neurologic anomaly resulting form degeneration of dopamine-generating cells in the substantia nigra, a region of the midbrain, characterized clinically by shaking, rigidity, slowness of movement and difficulty with walking and gait.
-    url: https://monarchinitiative.org/phenotype/HP:0001300#disease
+- label: PHENIO is used by the Monarch Initiative for cross-species inference
+  description: PHENIO is used by the Monarch Initiative for cross-species inference. As an example, the disease of Parkinsonism may compared on the basis of its phenotype in humans vs. mouse genes and genotypes known to impact these phenotypes.
+  url: https://monarchinitiative.org/HP:0001300#disease
+  users:
+  - category: Organization
+    label: The Monarch Initiative
+    url: https://monarchinitiative.org/
   publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/27899636
-    name: 'The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species '
-  type: analysis
-  user: https://monarchinitiative.org/
+  - preferred: true
+    title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species"
+    doi: doi:10.1093/nar/gkw1128
+  type: actual
 activity_status: active
 category: Resource
 ---
