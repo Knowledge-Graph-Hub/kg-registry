@@ -38,15 +38,14 @@
                     "type": "string"
                 },
                 "contacts": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Contact"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The contact point(s) for the resource. May be an individual or organization."
+                    "description": "The contact point(s) for the resource. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "description": {
                     "description": "A description of the resource.",
@@ -179,15 +178,14 @@
                     "type": "string"
                 },
                 "contacts": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Contact"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The contact point(s) for the resource. May be an individual or organization."
+                    "description": "The contact point(s) for the resource. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "description": {
                     "description": "A description of the resource.",
@@ -700,15 +698,14 @@
                     ]
                 },
                 "contacts": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Contact"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The contact point(s) for the resource. May be an individual or organization."
+                    "description": "The contact point(s) for the resource. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "contributors": {
                     "description": "Contributors to the knowledge graph.",
@@ -888,15 +885,14 @@
                     "type": "string"
                 },
                 "contacts": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Contact"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The contact point(s) for the resource. May be an individual or organization."
+                    "description": "The contact point(s) for the resource. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "description": {
                     "description": "A description of the resource.",
@@ -1217,15 +1213,14 @@
                     "type": "string"
                 },
                 "contacts": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Contact"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The contact point(s) for the resource. May be an individual or organization."
+                    "description": "The contact point(s) for the resource. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "description": {
                     "description": "A description of the resource.",
@@ -1482,15 +1477,14 @@
                     "type": "string"
                 },
                 "contacts": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Contact"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The contact point(s) for the resource. May be an individual or organization."
+                    "description": "The contact point(s) for the resource. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "description": {
                     "description": "A description of the resource.",
