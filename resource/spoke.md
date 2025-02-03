@@ -10,7 +10,6 @@ contacts:
 - category: Individual
   label: "Sui Huang, Sergio Baranzini"
 url: https://spoke.ucsf.edu/
-tracker: ""
 repository: ""
 ---
 

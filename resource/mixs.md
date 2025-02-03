@@ -24,7 +24,6 @@ products:
   description: OBO release of mixs
   aggregator: null
   category: DataModelProduct
-uri_prefix: https://w3id.org/
 category: Resource
 ---
 

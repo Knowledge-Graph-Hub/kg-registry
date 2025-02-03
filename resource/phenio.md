@@ -13,7 +13,6 @@ url: https://github.com/obophenotype/phenio
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/
-uri_prefix: https://w3id.org/phenio/
 products:
 - id: phenio.owl
   description: OWL version of phenio
@@ -27,7 +26,6 @@ products:
   type: kgx
   category: GraphProduct
 repository: https://github.com/monarch-initiative/phenio
-tracker: https://github.com/monarch-initiative/phenio/issues
 usages:
 - description: phenio is used by the Monarch Initiative for cross-species inference.
   examples:

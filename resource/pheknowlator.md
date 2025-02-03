@@ -10,7 +10,6 @@ contacts:
   github: https://github.com/callahantiff/
   label: Tiffany Callahan
 url: https://github.com/callahantiff/PheKnowLator
-tracker: https://github.com/callahantiff/PheKnowLator/issues
 repository: https://github.com/callahantiff/PheKnowLator
 category: KnowledgeGraph
 ---

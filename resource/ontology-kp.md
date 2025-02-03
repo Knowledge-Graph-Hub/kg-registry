@@ -10,7 +10,6 @@ contacts:
 - category: Individual
   label: Jim Balhoff
 url: ""
-tracker: ""
 repository: ""
 ---
 

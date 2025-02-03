@@ -12,7 +12,6 @@ contacts:
 - category: Individual
   label: Guangrong Qin
 url: ""
-tracker: ""
 repository: ""
 ---
 

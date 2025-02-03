@@ -37,7 +37,6 @@ products:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/interpro/interpro.sssom
   category: MappingProduct
-uri_prefix: http://purl.obolibrary.org/obo/
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/

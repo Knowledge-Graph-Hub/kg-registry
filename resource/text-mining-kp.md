@@ -10,7 +10,6 @@ contacts:
 - category: Individual
   label: Edgar Gatica
 url: ""
-tracker: ""
 repository: ""
 products:
 - id: targeted_assertions.tar.gz

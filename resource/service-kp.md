@@ -10,7 +10,6 @@ contacts:
 - category: Individual
   label: "Chunlei Wu"
 url: ""
-tracker: ""
 repository: ""
 ---
 

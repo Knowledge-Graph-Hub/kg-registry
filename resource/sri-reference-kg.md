@@ -13,7 +13,6 @@ contacts:
   github: kevinschaper
   orcid: 0000-0003-3311-7320
 url: ""
-tracker: ""
 repository: ""
 products:
 - id: monarch-kg.tar.gz
