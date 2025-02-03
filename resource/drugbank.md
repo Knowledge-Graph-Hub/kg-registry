@@ -5,13 +5,13 @@ id: drugbank
 name: drugbank
 description: DrugBank
 domain: health
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0003-4423-4370
   github: cthoyt
   email: cthoyt@gmail.com
   label: Charles Tapley Hoyt
 url: https://biopragmatics.github.io/obo-db-ingest/
-tracker: https://github.com/biopragmatics/pyobo/issues
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: drugbank.owl

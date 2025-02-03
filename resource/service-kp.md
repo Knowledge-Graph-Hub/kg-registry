@@ -6,7 +6,8 @@ name: Service KP
 description: A Translator Knowledge Provider
 domain: health
 category: KnowledgeGraph
-contact:
+contacts:
+- category: Individual
   label: "Chunlei Wu"
 url: ""
 tracker: ""

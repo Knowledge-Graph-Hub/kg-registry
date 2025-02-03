@@ -5,7 +5,8 @@ id: rna-kg
 name: RNA-KG
 description: An ontology-based KG for representing interactions involving RNA molecules.
 domain: organisms
-contact:
+contacts:
+- category: Individual
   github: emanuelecavalleri
   label: Emanuele Cavalleri
 url: RNA-KG.anacleto.di.unimi.it/

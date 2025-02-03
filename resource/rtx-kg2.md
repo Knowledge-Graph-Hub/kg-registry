@@ -6,8 +6,11 @@ name: RTX-KG2
 description: A comprehensive knowledge graph from the RTX team.
 domain: health
 category: KnowledgeGraph
-contact:
-  label: "Amy Glen, Steven Ramsey"
+contacts:
+- category: Individual
+  label: Amy Glen
+- category: Individual
+  label: Steven Ramsey
 url: ""
 tracker: https://github.com/RTXteam/RTX-KG2/issues
 repository: https://github.com/RTXteam/RTX-KG2

@@ -4,9 +4,10 @@ activity_status: active
 id: text-mining-kp
 name: Text Mining KP
 description: A Translator Knowledge Provider applying text-mined assertions.
-domain: information
+domain: other
 category: KnowledgeGraph
-contact:
+contacts:
+- category: Individual
   label: Edgar Gatica
 url: ""
 tracker: ""
@@ -21,4 +22,6 @@ products:
 
 A Translator Knowledge Provider applying text-mined assertions.
 
-Contacts: Edgar Gatica and Bill Baumgartner
+contacts:
+- category: Individual
+ Edgar Gatica and Bill Baumgartner

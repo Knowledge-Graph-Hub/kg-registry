@@ -5,13 +5,13 @@ id: kg-microbe
 name: KG Microbe
 description: A Knowledge Graph about microbes
 domain: organisms
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0002-6601-2165
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
 url: https://kghub.org/kg-microbe/index.html
-tracker: https://github.com/Knowledge-Graph-Hub/kg-microbe/issues
 repository: https://github.com/Knowledge-Graph-Hub/kg-microbe
 products:
 - id: kg-microbe.tar.gz

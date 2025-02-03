@@ -5,13 +5,13 @@ id: kg-monarch
 name: KG Monarch
 description: Monarch Initiative Knowledge Graph
 domain: health
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0002-6601-2165
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
 url: https://kghub.org/kg-monarch/index.html
-tracker: https://github.com/monarch-initiative/monarch-ingest/issues
 repository: https://github.com/monarch-initiative/monarch-ingest
 products:
 - id: kg-monarch.tar.gz

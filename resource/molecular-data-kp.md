@@ -6,11 +6,11 @@ name: Molecular Data KP
 description: A Translator Knowledge Provider for molecular data.
 domain: health
 category: KnowledgeGraph
-contact:
+contacts:
+- category: Individual
   label: "Sandrine Muller"
   orcid: 0000-0001-5998-3003
 url: ""
-tracker: ""
 repository: ""
 products:
 - id: nodes.tsv
@@ -27,4 +27,6 @@ products:
 
 A Translator Knowledge Provider for molecular data.
 
-Contacts: Sandrine Muller, Vlado Dancik, and Larry Chung
+contacts:
+- category: Individual
+ Sandrine Muller, Vlado Dancik, and Larry Chung

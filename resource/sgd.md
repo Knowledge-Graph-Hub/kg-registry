@@ -6,7 +6,8 @@ name: Saccharomyces Genome Database
 description: The Saccharomyces Genome Database (SGD) project collects information
   and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae
 domain: biological systems
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0003-4423-4370
   github: cthoyt
   email: cthoyt@gmail.com

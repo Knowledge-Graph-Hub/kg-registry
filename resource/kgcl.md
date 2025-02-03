@@ -5,14 +5,14 @@ id: kgcl
 name: Knowledge Graph Change Language
 description: A data model for describing change operations at a high level on an ontology
   or ontology-like artefact, such as a Knowledge Graph
-domain: information
-contact:
+domain: other
+contacts:
+- category: Individual
   orcid: 0000-0002-6601-2165
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
 url: https://w3id.org/kgcl
-tracker: https://github.com/INCATools/kgcl/issues
 repository: https://github.com/INCATools/kgcl/
 products:
 - id: kgcl.owl

@@ -2,12 +2,12 @@
 layout: resource_detail
 id: goldterms
 name: GOLD Environmental Paths
-contact:
+contacts:
+- category: Individual
   email: cjmungall@lbl.gov
   github: cmungall
   label: Chris Mungall
   orcid: 0000-0002-6601-2165
-
 dependencies:
 - id: envo
 - id: foodon
@@ -27,7 +27,6 @@ products:
   name: main GOLDTERMS OWL release
   category: Product
 repository: https://github.com/cmungall/gold-ontology
-tracker: https://github.com/cmungall/gold-ontology/issues
 activity_status: active
 category: Resource
 ---

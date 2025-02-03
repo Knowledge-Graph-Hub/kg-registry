@@ -5,13 +5,13 @@ id: chr
 name: Monochrom Ontology
 description: Automatic translation of UCSC chromosome bands to OWL classes
 domain: chemistry and biochemistry
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0002-6601-2165
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
 url: http://purl.obolibrary.org/obo/chr.owl
-tracker: http://purl.obolibrary.org/obo/chr.owl
 repository: http://purl.obolibrary.org/obo/chr.owl
 products:
 - id: chr.owl

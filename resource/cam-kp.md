@@ -6,7 +6,8 @@ name: Exposures KP (cam kp)
 description: The “cam-kp” Exposures Knowledge Graph (in development).
 domain: health
 category: KnowledgeGraph
-contact:
+contacts:
+- category: Individual
   label: "Jim Balhoff"
   email: balhoff@renci.org
 url: https://github.com/ExposuresProvider/cam-kp-api

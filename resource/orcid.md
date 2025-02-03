@@ -4,8 +4,9 @@ activity_status: active
 id: orcid
 name: ORCID
 description: ORCID in OWL
-domain: information
-contact:
+domain: other
+contacts:
+- category: Individual
   orcid: 0000-0003-4423-4370
   github: cthoyt
   email: cthoyt@gmail.com

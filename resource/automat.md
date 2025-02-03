@@ -6,13 +6,13 @@ name: Automat
 description: A Translator Knowledge Provider offering multiple sub-graphs in KGX format.
 domain: health
 category: KnowledgeGraph
-contact:
+contacts:
+- category: Individual
   label: "Yaphet Kebede"
   email: kebedey@renci.org
   github: YaphetKG
   orcid: 0000-0002-5046-0246
 url: https://robokop.renci.org/api-docs/docs/category/automat
-tracker: ""
 repository: ""
 products:
 - id: robokopkg
