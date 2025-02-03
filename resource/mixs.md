@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: mixs
 name: mixs
@@ -10,7 +10,7 @@ contact:
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
-homepage: https://w3id.org/mixs
+url: https://w3id.org/mixs
 tracker: https://w3id.org/mixs
 repository: https://w3id.org/mixs
 products:

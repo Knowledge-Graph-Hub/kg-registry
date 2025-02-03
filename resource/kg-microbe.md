@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: kg-microbe
 name: KG Microbe
@@ -10,7 +10,7 @@ contact:
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
-homepage: https://kghub.org/kg-microbe/index.html
+url: https://kghub.org/kg-microbe/index.html
 tracker: https://github.com/Knowledge-Graph-Hub/kg-microbe/issues
 repository: https://github.com/Knowledge-Graph-Hub/kg-microbe
 products:

@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: eco-kg
 name: eco-KG
@@ -8,7 +8,7 @@ domain: organisms
 contact:
   github: diatomsRcool
   label: Anne Thessen
-homepage: https://kghub.org/eco-kg/index.html
+url: https://kghub.org/eco-kg/index.html
 tracker: https://github.com/Knowledge-Graph-Hub/eco-kg/issues
 repository: https://github.com/Knowledge-Graph-Hub/eco-kg
 category: KnowledgeGraph

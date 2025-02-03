@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: sri-reference-kg
 name: SRI-Reference KG
@@ -11,7 +11,7 @@ contact:
   email: kevinschaper@gmail.com
   github: kevinschaper
   orcid: 0000-0003-3311-7320
-homepage: ""
+url: ""
 tracker: ""
 repository: ""
 products:

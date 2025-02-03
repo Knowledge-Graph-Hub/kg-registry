@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: kg-enp
 name: kg-enp
@@ -8,7 +8,7 @@ domain: organisms
 contact:
   github: oolonek
   label: Pierre-Marie Allard
-homepage: https://enpkg.commons-lab.org/
+url: https://enpkg.commons-lab.org/
 tracker: https://github.com/enpkg/enpkg_full/issues
 repository: https://github.com/enpkg/enpkg_full
 category: KnowledgeGraph

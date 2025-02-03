@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: rtx-kg2
 name: RTX-KG2
@@ -8,7 +8,7 @@ domain: health
 category: KnowledgeGraph
 contact:
   label: "Amy Glen, Steven Ramsey"
-homepage: ""
+url: ""
 tracker: https://github.com/RTXteam/RTX-KG2/issues
 repository: https://github.com/RTXteam/RTX-KG2
 ---

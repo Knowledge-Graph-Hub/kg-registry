@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: kg-covid-19
 name: KG-COVID-19
@@ -8,7 +8,7 @@ domain: organisms
 contact:
   github: justaddcoffee
   label: Justin Reese
-homepage: https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki
+url: https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki
 tracker: https://github.com/Knowledge-Graph-Hub/kg-covid-19/issues
 repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 category: KnowledgeGraph

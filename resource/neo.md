@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: neo
 name: neo
@@ -10,7 +10,7 @@ contact:
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
-homepage: http://purl.obolibrary.org/obo/go/noctua/neo.owl
+url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
 tracker: https://github.com/geneontology/neo/issues
 repository: https://github.com/geneontology/neo/
 products:

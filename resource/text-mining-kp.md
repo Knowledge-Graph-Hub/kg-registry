@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: text-mining-kp
 name: Text Mining KP
@@ -8,7 +8,7 @@ domain: information
 category: KnowledgeGraph
 contact:
   label: Edgar Gatica
-homepage: ""
+url: ""
 tracker: ""
 repository: ""
 products:

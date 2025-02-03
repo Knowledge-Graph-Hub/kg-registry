@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: kg-monarch
 name: KG Monarch
@@ -10,7 +10,7 @@ contact:
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
-homepage: https://kghub.org/kg-monarch/index.html
+url: https://kghub.org/kg-monarch/index.html
 tracker: https://github.com/monarch-initiative/monarch-ingest/issues
 repository: https://github.com/monarch-initiative/monarch-ingest
 products:

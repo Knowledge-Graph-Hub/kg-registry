@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: ubergraph
 name: Ubergraph
@@ -11,7 +11,7 @@ contact:
   github: balhoff
   email: balhoff@renci.org
   label: James P. Balhoff
-homepage: https://ubergraph.apps.renci.org/sparql
+url: https://ubergraph.apps.renci.org/sparql
 tracker: https://github.com/INCATools/ubergraph/issues
 repository: https://github.com/INCATools/ubergraph
 products:

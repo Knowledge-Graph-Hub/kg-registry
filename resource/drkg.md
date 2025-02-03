@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: drkg
 name: DRKG
@@ -8,7 +8,7 @@ domain: health
 contact:
   orcid: 0000-0002-8367-0733
   github: https://github.com/bioannidis
-homepage: https://github.com/gnn4dr/DRKG
+url: https://github.com/gnn4dr/DRKG
 tracker: https://github.com/gnn4dr/DRKG/issues
 repository: https://github.com/gnn4dr/DRKG
 category: KnowledgeGraph

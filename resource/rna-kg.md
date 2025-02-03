@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: rna-kg
 name: RNA-KG
@@ -8,7 +8,7 @@ domain: organisms
 contact:
   github: emanuelecavalleri
   label: Emanuele Cavalleri
-homepage: RNA-KG.anacleto.di.unimi.it/
+url: RNA-KG.anacleto.di.unimi.it/
 tracker: https://github.com/AnacletoLAB/RNA-KG/issues
 repository: https://github.com/AnacletoLAB/RNA-KG
 category: KnowledgeGraph

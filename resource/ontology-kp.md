@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: ontology-kp
 name: Ontology KP
@@ -8,7 +8,7 @@ domain: information
 category: KnowledgeGraph
 contact:
   label: "Jim Balhoff"
-homepage: ""
+url: ""
 tracker: ""
 repository: ""
 ---

@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 id: phenio
 name: An integrated ontology for Phenomics
 contact:
@@ -9,7 +9,7 @@ contact:
   orcid: 0000-0002-8361-2795
 description: An ontology for accessing and comparing knowledge concerning phenotypes across species and genetic backgrounds.
 domain: phenotype
-homepage: https://github.com/obophenotype/phenio
+url: https://github.com/obophenotype/phenio
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/

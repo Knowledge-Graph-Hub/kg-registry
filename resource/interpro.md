@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: interpro
 name: InterPro
@@ -12,7 +12,7 @@ contact:
   github: cthoyt
   email: cthoyt@gmail.com
   label: Charles Tapley Hoyt
-homepage: https://biopragmatics.github.io/obo-db-ingest/
+url: https://biopragmatics.github.io/obo-db-ingest/
 tracker: https://github.com/biopragmatics/pyobo/issues
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
