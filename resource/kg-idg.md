@@ -18,7 +18,7 @@ products:
   format: kgx
   name: KGX Distribution of KG-IDG
   description: KGX Distribution of KG-IDG
-  ontology_purl: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
+  url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
 uri_prefix: https://w3id.org/kg-idg/
 category: KnowledgeGraph
 ---

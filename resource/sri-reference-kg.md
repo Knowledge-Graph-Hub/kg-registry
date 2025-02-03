@@ -19,7 +19,7 @@ products:
   format: kgx
   name: SRI-Reference KG (KGX distribution)
   description: KGX distribution of the SRI-Reference KG
-  ontology_purl: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+  url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
 ---
 
 The Monarch Initiative’s SRI reference knowledge graph.
