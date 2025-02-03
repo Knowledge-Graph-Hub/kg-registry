@@ -20,18 +20,21 @@ products:
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.owl
+  category: Product
 - id: swisslipid.obo
   name: swisslipid OBO release
   description: OBO release of swisslipid
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.obo
+  category: Product
 - id: swisslipid.sssom
   name: swisslipid SSSOM release
   description: SSSOM release of swisslipid
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.sssom
+  category: MappingProduct
 uri_prefix: http://purl.obolibrary.org/obo/
 category: DataGraph
 ---

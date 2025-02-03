@@ -21,18 +21,21 @@ products:
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/rhea/rhea.owl
+  category: Product
 - id: rhea.obo
   name: Rhea, the Annotated Reactions Database OBO release
   description: OBO release of Rhea, the Annotated Reactions Database
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/rhea/rhea.obo
+  category: Product
 - id: rhea.sssom
   name: Rhea, the Annotated Reactions Database SSSOM release
   description: SSSOM release of Rhea, the Annotated Reactions Database
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom
+  category: Product
 uri_prefix: http://purl.obolibrary.org/obo/
 license:
   label: CC BY 4.0

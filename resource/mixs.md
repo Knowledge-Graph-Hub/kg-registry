@@ -18,10 +18,12 @@ products:
   name: mixs OWL release
   description: OWL release of mixs
   aggregator: null
+  category: DataModelProduct
 - id: mixs.obo
   name: mixs OBO release
   description: OBO release of mixs
   aggregator: null
+  category: DataModelProduct
 uri_prefix: https://w3id.org/
 category: Resource
 ---

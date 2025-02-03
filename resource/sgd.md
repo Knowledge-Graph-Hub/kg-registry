@@ -21,18 +21,21 @@ products:
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/sgd/sgd.owl
+  category: Product
 - id: sgd.obo
   name: Saccharomyces Genome Database OBO release
   description: OBO release of Saccharomyces Genome Database
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/sgd/sgd.obo
+  category: Product
 - id: sgd.sssom
   name: Saccharomyces Genome Database SSSOM release
   description: SSSOM release of Saccharomyces Genome Database
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/sgd/sgd.sssom
+  category: MappingProduct
 uri_prefix: http://purl.obolibrary.org/obo/
 license:
   label: CC BY 4.0

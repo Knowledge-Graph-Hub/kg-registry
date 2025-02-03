@@ -19,6 +19,7 @@ products:
   name: KGX Distribution of KG-IDG
   description: KGX Distribution of KG-IDG
   url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
+  category: GraphProduct
 uri_prefix: https://w3id.org/kg-idg/
 category: KnowledgeGraph
 ---

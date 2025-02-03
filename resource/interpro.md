@@ -22,18 +22,21 @@ products:
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/interpro/interpro.owl
+  category: Product
 - id: interpro.obo
   name: InterPro OBO release
   description: OBO release of InterPro
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/interpro/interpro.obo
+  category: Product
 - id: interpro.sssom
   name: InterPro SSSOM release
   description: SSSOM release of InterPro
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/interpro/interpro.sssom
+  category: MappingProduct
 uri_prefix: http://purl.obolibrary.org/obo/
 license:
   label: CC0 1.0

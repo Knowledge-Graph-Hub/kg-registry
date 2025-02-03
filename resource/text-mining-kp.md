@@ -16,6 +16,7 @@ products:
   format: kgx
   description: Text Mining KP KGX distribution
   url: https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz
+  category: GraphProduct
 ---
 
 A Translator Knowledge Provider applying text-mined assertions.

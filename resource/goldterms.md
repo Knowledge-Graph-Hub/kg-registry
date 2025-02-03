@@ -25,6 +25,7 @@ products:
 - id: goldterms.owl
   url: https://w3id.org/goldterms/goldterms.owl
   name: main GOLDTERMS OWL release
+  category: Product
 repository: https://github.com/cmungall/gold-ontology
 tracker: https://github.com/cmungall/gold-ontology/issues
 activity_status: active

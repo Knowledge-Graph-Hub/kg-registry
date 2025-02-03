@@ -18,6 +18,7 @@ products:
 - id: biolink-model.owl.ttl
   name: Biolink-Model OWL release
   description: OWL release of Biolink-Model
+  category: DataModelProduct
 uri_prefix: https://w3id.org/biolink/
 license:
   label: CC0 1.0

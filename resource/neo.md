@@ -17,6 +17,7 @@ products:
 - id: neo.owl
   name: neo OWL release
   description: OWL release of neo
+  category: Product
 uri_prefix: http://purl.obolibrary.org/obo/go/noctua/
 category: Resource
 ---

@@ -17,10 +17,12 @@ products:
   format: kgx
   description: KGX nodes for Molecular Data KP
   url: https://molepro.s3.amazonaws.com/nodes.tsv
+  category: GraphProduct
 - id: edges.tsv
   format: kgx
   description: KGX edges for Molecular Data KP
   url: https://molepro.s3.amazonaws.com/edges.tsv
+  category: GraphProduct
 ---
 
 A Translator Knowledge Provider for molecular data.
