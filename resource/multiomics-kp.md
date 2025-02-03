@@ -1,15 +1,17 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: multiomics-kp
-title: Multiomics KP
+name: Multiomics KP
 description: A Translator Knowledge Provider incorporating multiomics data.
 domain: health
-restype: "knowledge graph"
-contact:
-  label: "Gustavo Glusman, Guangrong Qin"
-homepage: ""
-tracker: ""
+category: KnowledgeGraph
+contacts:
+- category: Individual
+  label: Gustavo Glusman
+- category: Individual
+  label: Guangrong Qin
+url: ""
 repository: ""
 ---
 

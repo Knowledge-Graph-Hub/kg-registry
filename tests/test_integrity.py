@@ -10,12 +10,12 @@ from typing import Set
 import requests
 import yaml
 
-from obofoundry.standardize_metadata import ModifiedDumper
-from obofoundry.utils import ONTOLOGY_DIRECTORY, get_data, get_new_data
+# from kg_registry.standardize_metadata import ModifiedDumper
+# from kg_registry.utils import RESOURCE_DIRECTORY, get_data, get_new_data
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
-SCHEMA_PATH = ROOT.joinpath("util", "schema", "registry_schema.json")
+SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "kg_registry_schema.json")
 
 PUBMED_PREFIX = "https://www.ncbi.nlm.nih.gov/pubmed/"
 ARXIV_PREFIX = "https://arxiv.org/abs/"
@@ -40,9 +40,10 @@ NOR_DASHBOARD_RESULTS = "https://raw.githubusercontent.com/OBOFoundry/obo-nor.gi
 class TestIntegrity(unittest.TestCase):
     """Test case for data integrity."""
 
-    def setUp(self) -> None:
-        """Set up the test case."""
-        self.ontologies = get_data()
+
+#    def setUp(self) -> None:
+#        """Set up the test case."""
+#        self.ontologies = get_data()
 
 #     def test_dependencies(self):
 #         """Test dependencies are valid OBO Foundry ontologies."""
@@ -223,7 +224,7 @@ class TestIntegrity(unittest.TestCase):
 
 #     def test_standardized(self):
 #         """Test the YAML is standardized."""
-#         for path in ONTOLOGY_DIRECTORY.glob("*.md"):
+#         for path in RESOURCE_DIRECTORY.glob("*.md"):
 #             with self.subTest(prefix=path.stem):
 #                 with path.open() as file:
 #                     lines = [line.rstrip("\n") for line in file]

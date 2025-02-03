@@ -1,41 +1,45 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: sgd
-title: Saccharomyces Genome Database
+name: Saccharomyces Genome Database
 description: The Saccharomyces Genome Database (SGD) project collects information
   and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae
 domain: biological systems
-preferredPrefix: obo
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0003-4423-4370
   github: cthoyt
   email: cthoyt@gmail.com
   label: Charles Tapley Hoyt
-homepage: https://biopragmatics.github.io/obo-db-ingest/
-tracker: https://github.com/biopragmatics/pyobo/issues
+url: https://biopragmatics.github.io/obo-db-ingest/
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: sgd.owl
-  title: Saccharomyces Genome Database OWL release
+  name: Saccharomyces Genome Database OWL release
   description: OWL release of Saccharomyces Genome Database
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/sgd/sgd.owl
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/sgd/sgd.owl
+  category: Product
 - id: sgd.obo
-  title: Saccharomyces Genome Database OBO release
+  name: Saccharomyces Genome Database OBO release
   description: OBO release of Saccharomyces Genome Database
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/sgd/sgd.obo
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/sgd/sgd.obo
+  category: Product
 - id: sgd.sssom
-  title: Saccharomyces Genome Database SSSOM release
+  name: Saccharomyces Genome Database SSSOM release
   description: SSSOM release of Saccharomyces Genome Database
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/sgd/sgd.sssom
-uri_prefix: http://purl.obolibrary.org/obo/
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/sgd/sgd.sssom
+  category: MappingProduct
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/
-restype: "data resource"
+category: DataGraph
 ---
 
 The Saccharomyces Genome Database (SGD) project collects information and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae.

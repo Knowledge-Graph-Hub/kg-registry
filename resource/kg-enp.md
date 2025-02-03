@@ -1,18 +1,17 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: kg-enp
-title: kg-enp
+name: kg-enp
 description: Experimental natural products knowledge graph.
 domain: organisms
-contact:
+contacts:
+- category: Individual
   github: oolonek
   label: Pierre-Marie Allard
-preferredPrefix: http
-homepage: https://enpkg.commons-lab.org/
-tracker: https://github.com/enpkg/enpkg_full/issues
+url: https://enpkg.commons-lab.org/
 repository: https://github.com/enpkg/enpkg_full
-restype: "knowledge graph"
+category: KnowledgeGraph
 ---
 
 Experimental natural products knowledge graph.

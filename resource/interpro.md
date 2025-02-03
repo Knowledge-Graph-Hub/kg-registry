@@ -1,42 +1,46 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: interpro
-title: InterPro
+name: InterPro
 description: InterPro is a database of protein families, domains and functional sites
   in which identifiable features found in known proteins can be applied to unknown
   protein sequences
 domain: biological systems
-preferredPrefix: obo
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0003-4423-4370
   github: cthoyt
   email: cthoyt@gmail.com
   label: Charles Tapley Hoyt
-homepage: https://biopragmatics.github.io/obo-db-ingest/
-tracker: https://github.com/biopragmatics/pyobo/issues
+url: https://biopragmatics.github.io/obo-db-ingest/
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: interpro.owl
-  title: InterPro OWL release
+  name: InterPro OWL release
   description: OWL release of InterPro
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/interpro/interpro.owl
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/interpro/interpro.owl
+  category: Product
 - id: interpro.obo
-  title: InterPro OBO release
+  name: InterPro OBO release
   description: OBO release of InterPro
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/interpro/interpro.obo
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/interpro/interpro.obo
+  category: Product
 - id: interpro.sssom
-  title: InterPro SSSOM release
+  name: InterPro SSSOM release
   description: SSSOM release of InterPro
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/interpro/interpro.sssom
-uri_prefix: http://purl.obolibrary.org/obo/
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/interpro/interpro.sssom
+  category: MappingProduct
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/
-restype: "data resource"
+category: DataGraph
 ---
 
 InterPro is a database of protein families, domains and functional sites in which identifiable features found in known proteins can be applied to unknown protein sequences.

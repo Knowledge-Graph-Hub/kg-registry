@@ -1,26 +1,26 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: sri-reference-kg
-title: SRI-Reference KG
+name: SRI-Reference KG
 description: The Monarch Initiative’s SRI reference knowledge graph.
 domain: health
-restype: "knowledge graph"
-contact:
+category: KnowledgeGraph
+contacts:
+- category: Individual
   label: "Kevin Schaper"
   email: kevinschaper@gmail.com
   github: kevinschaper
   orcid: 0000-0003-3311-7320
-homepage: ""
-tracker: ""
+url: ""
 repository: ""
-preferredPrefix: http
 products:
 - id: monarch-kg.tar.gz
-  format: kgx
-  title: SRI-Reference KG (KGX distribution)
+  is_kgx: true
+  name: SRI-Reference KG (KGX distribution)
   description: KGX distribution of the SRI-Reference KG
-  ontology_purl: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+  url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
+  category: GraphProduct
 ---
 
 The Monarch Initiative’s SRI reference knowledge graph.

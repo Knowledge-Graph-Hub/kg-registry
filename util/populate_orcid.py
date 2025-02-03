@@ -17,7 +17,7 @@ import yaml
 from tqdm import tqdm
 
 HERE = pathlib.Path(__file__).parent.resolve()
-ONTOLOGY_DIRECTORY = HERE.parent.joinpath("ontology").resolve()
+RESOURCE_DIRECTORY = HERE.parent.joinpath("ontology").resolve()
 
 
 def update_orcid(path: Union[str, pathlib.Path]) -> None:
@@ -70,7 +70,7 @@ def get_github_to_orcid() -> dict[str, str]:
 
 @click.command()
 def main():
-    for path in tqdm(ONTOLOGY_DIRECTORY.glob("*.md")):
+    for path in tqdm(RESOURCE_DIRECTORY.glob("*.md")):
         update_orcid(path)
 
 
