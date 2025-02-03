@@ -23,7 +23,7 @@ products:
   name: phenio KG
   description: KGX version of phenio
   url: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
-  type: kgx
+  is_kgx: true
   category: GraphProduct
 repository: https://github.com/monarch-initiative/phenio
 usages:

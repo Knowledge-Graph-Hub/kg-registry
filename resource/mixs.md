@@ -17,12 +17,10 @@ products:
 - id: mixs.owl
   name: mixs OWL release
   description: OWL release of mixs
-  aggregator: null
   category: DataModelProduct
 - id: mixs.obo
   name: mixs OBO release
   description: OBO release of mixs
-  aggregator: null
   category: DataModelProduct
 category: Resource
 ---

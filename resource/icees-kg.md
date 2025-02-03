@@ -16,6 +16,7 @@ url: ""
 repository: ""
 products:
 - id: icees_kgx_files
+  name: KGX distribution of the ICEES Exposures KP
   is_kgx: true
   description: KGX distribution of the ICEES Exposures KP
   url: https://stars.renci.org/var/plater/bl-2.1/icees_kgx_files/

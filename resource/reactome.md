@@ -18,12 +18,12 @@ products:
   name: Reactome Human from BioPAX, sqlite
   description: Conversion from BioPAX, human subset
   url: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
-  format: sqlite
+  category: Product
 - id: reactome-hs-biopragmatics.obo
   name: Reactome Human, Biopragmatics
   description: Biopragmatics provided conversion, human subset
   url: https://w3id.org/biopragmatics/resources/reactome/reactome.obo
-  format: obo
+  category: Product
 category: DataGraph
 ---
 
