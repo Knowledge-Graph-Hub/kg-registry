@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 id: goldterms
 name: GOLD Environmental Paths
 contact:
@@ -19,7 +19,7 @@ dependencies:
 depicted_by: https://gold.jgi.doe.gov/images/logo-JGI-IMG-GOLD.png
 description: Translation of JGI GOLD path terms to OWL
 domain: environment
-homepage: https://gold.jgi.doe.gov/
+url: https://gold.jgi.doe.gov/
 uri_prefix: https://w3id.org/goldterms/
 products:
 - id: goldterms.owl

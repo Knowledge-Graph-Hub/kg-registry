@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: multiomics-kp
 name: Multiomics KP
@@ -8,7 +8,7 @@ domain: health
 category: KnowledgeGraph
 contact:
   label: "Gustavo Glusman, Guangrong Qin"
-homepage: ""
+url: ""
 tracker: ""
 repository: ""
 ---

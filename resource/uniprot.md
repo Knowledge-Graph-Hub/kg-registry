@@ -1,17 +1,17 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: uniprot
 name: uniprot
 description: UniProt Protein
 domain: biological systems
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0003-4423-4370
   github: cthoyt
   email: cthoyt@gmail.com
   label: Charles Tapley Hoyt
-homepage: https://biopragmatics.github.io/obo-db-ingest/
-tracker: https://github.com/biopragmatics/pyobo/issues
+url: https://biopragmatics.github.io/obo-db-ingest/
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: uniprot.owl
@@ -35,7 +35,6 @@ products:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom
   category: MappingProduct
-uri_prefix: http://purl.obolibrary.org/obo/
 category: Resource
 ---
 

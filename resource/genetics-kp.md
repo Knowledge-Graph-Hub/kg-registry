@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: genetics-kp
 name: Genetics KP
@@ -8,7 +8,7 @@ domain: health
 category: KnowledgeGraph
 contact:
   label: "Jason Flannick"
-homepage: ""
+url: ""
 ---
 
 A Translator Knowledge Provider focusing on genetic data.

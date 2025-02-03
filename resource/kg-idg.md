@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: kg-idg
 name: KG-IDG
@@ -10,7 +10,7 @@ contact:
   github: caufieldjh
   email: jhc@lbl.gov
   label: J. Harry Caufield
-homepage: https://kghub.org/kg-idg/index.html
+url: https://kghub.org/kg-idg/index.html
 tracker: https://github.com/Knowledge-Graph-Hub/kg-idg/issues
 repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 products:

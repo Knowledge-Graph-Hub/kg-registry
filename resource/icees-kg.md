@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: icees-kg
 name: Exposures KP (icees-kg)
@@ -11,7 +11,7 @@ contact:
   email: kfecho@renci.org
   github: karafecho
   orcid: 0000-0002-6704-9306
-homepage: ""
+url: ""
 tracker: ""
 repository: ""
 products:

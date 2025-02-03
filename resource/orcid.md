@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: orcid
 name: ORCID
@@ -10,7 +10,7 @@ contact:
   github: cthoyt
   email: cthoyt@gmail.com
   label: Charles Tapley Hoyt
-homepage: https://github.com/cthoyt/orcidio
+url: https://github.com/cthoyt/orcidio
 tracker: https://github.com/cthoyt/orcidio/issues
 repository: https://github.com/cthoyt/orcidio
 products:

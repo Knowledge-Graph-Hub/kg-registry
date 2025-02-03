@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: automat
 name: Automat
@@ -11,7 +11,7 @@ contact:
   email: kebedey@renci.org
   github: YaphetKG
   orcid: 0000-0002-5046-0246
-homepage: https://robokop.renci.org/api-docs/docs/category/automat
+url: https://robokop.renci.org/api-docs/docs/category/automat
 tracker: ""
 repository: ""
 products:

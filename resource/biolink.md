@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: biolink
 name: Biolink-Model
@@ -11,7 +11,7 @@ contact:
   github: sierra-moxon
   email: smoxon@lbl.gov
   label: Sierra Taylor Moxon
-homepage: https://w3id.org/biolink/biolink-model.owl.ttl
+url: https://w3id.org/biolink/biolink-model.owl.ttl
 tracker: https://github.com/biolink/biolink-model/issues
 repository: https://github.com/biolink/biolink-model/
 products:

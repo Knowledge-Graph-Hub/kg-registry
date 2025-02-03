@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: spoke
 name: SPOKE
@@ -8,7 +8,7 @@ domain: health
 category: KnowledgeGraph
 contact:
   label: "Sui Huang, Sergio Baranzini"
-homepage: https://spoke.ucsf.edu/
+url: https://spoke.ucsf.edu/
 tracker: ""
 repository: ""
 ---

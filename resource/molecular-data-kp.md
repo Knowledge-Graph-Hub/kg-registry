@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: molecular-data-kp
 name: Molecular Data KP
@@ -9,7 +9,7 @@ category: KnowledgeGraph
 contact:
   label: "Sandrine Muller"
   orcid: 0000-0001-5998-3003
-homepage: ""
+url: ""
 tracker: ""
 repository: ""
 products:

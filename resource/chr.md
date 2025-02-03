@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: chr
 name: Monochrom Ontology
@@ -10,7 +10,7 @@ contact:
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
-homepage: http://purl.obolibrary.org/obo/chr.owl
+url: http://purl.obolibrary.org/obo/chr.owl
 tracker: http://purl.obolibrary.org/obo/chr.owl
 repository: http://purl.obolibrary.org/obo/chr.owl
 products:

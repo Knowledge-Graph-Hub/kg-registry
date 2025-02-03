@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: pheknowlator
 name: PheKnowLator
@@ -8,7 +8,7 @@ domain: organisms
 contact:
   github: https://github.com/callahantiff/
   label: Tiffany Callahan
-homepage: https://github.com/callahantiff/PheKnowLator
+url: https://github.com/callahantiff/PheKnowLator
 tracker: https://github.com/callahantiff/PheKnowLator/issues
 repository: https://github.com/callahantiff/PheKnowLator
 category: KnowledgeGraph

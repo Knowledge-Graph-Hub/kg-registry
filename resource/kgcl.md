@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: kgcl
 name: Knowledge Graph Change Language
@@ -11,7 +11,7 @@ contact:
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
-homepage: https://w3id.org/kgcl
+url: https://w3id.org/kgcl
 tracker: https://github.com/INCATools/kgcl/issues
 repository: https://github.com/INCATools/kgcl/
 products:

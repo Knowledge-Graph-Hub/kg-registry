@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: service-kp
 name: Service KP
@@ -8,7 +8,7 @@ domain: health
 category: KnowledgeGraph
 contact:
   label: "Chunlei Wu"
-homepage: ""
+url: ""
 tracker: ""
 repository: ""
 ---

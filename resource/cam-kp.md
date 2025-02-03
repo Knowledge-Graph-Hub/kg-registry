@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: cam-kp
 name: Exposures KP (cam kp)
@@ -9,7 +9,7 @@ category: KnowledgeGraph
 contact:
   label: "Jim Balhoff"
   email: balhoff@renci.org
-homepage: https://github.com/ExposuresProvider/cam-kp-api
+url: https://github.com/ExposuresProvider/cam-kp-api
 ---
 
 The “cam-kp” Exposures Knowledge Graph

@@ -1,5 +1,5 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: reacto
 name: Reactome Entity Ontology (REACTO)
@@ -10,7 +10,7 @@ contact:
   github: goodb
   email: ben.mcgee.good@gmail.com
   label: Benjamin M. Good
-homepage: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
+url: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
 tracker: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
 repository: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
 products:
