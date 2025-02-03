@@ -27,7 +27,7 @@
   "RO": "obo:RO_",
   "BFO": "obo:BFO_",
 
-  "ontologies": "@graph",
+  "resources": "@graph",
   "id": "@id",
   "url": "@id",
   "label": "rdfs:label",

@@ -1,14 +1,16 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: cfde
-contact:
+contacts:
+- category: Individual
   label: "John Erol Evangelista"
   github: jeevangelista
-title: Data Distillery Knowledge Graph
+name: Data Distillery Knowledge Graph
 description: The Common Fund Data Ecosystem (CFDE) aims to facilitate better integration, and reuse of Common Fund data to accelerate discoveries in biomedical research.
-restype: "knowledge graph"
-homepage: https://dd-kg-ui.cfde.cloud/about
+category: KnowledgeGraph
+url: https://dd-kg-ui.cfde.cloud/about
+domain: health
 ---
 
 The Common Fund Data Ecosystem (CFDE) aims to facilitate better integration, and reuse 
