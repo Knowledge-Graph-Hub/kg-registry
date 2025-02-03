@@ -8,15 +8,6 @@ contacts:
   github: cmungall
   label: Chris Mungall
   orcid: 0000-0002-6601-2165
-dependencies:
-- id: envo
-- id: foodon
-- id: ncbitaxon
-- id: pco
-- id: po
-- id: uberon
-- id: mixs
-depicted_by: https://gold.jgi.doe.gov/images/logo-JGI-IMG-GOLD.png
 description: Translation of JGI GOLD path terms to OWL
 domain: environment
 url: https://gold.jgi.doe.gov/

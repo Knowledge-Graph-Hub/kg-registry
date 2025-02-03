@@ -18,12 +18,10 @@ products:
 - id: kgcl.owl
   name: Knowledge Graph Change Language OWL release
   description: OWL release of Knowledge Graph Change Language
-  aggregator: null
   category: DataModelProduct
 - id: kgcl.obo
   name: Knowledge Graph Change Language OBO release
   description: OBO release of Knowledge Graph Change Language
-  aggregator: null
   category: DataModelProduct
 license:
   label: CC0 1.0

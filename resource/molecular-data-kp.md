@@ -14,11 +14,13 @@ url: ""
 repository: ""
 products:
 - id: nodes.tsv
+  name: Nodes for Molecular Data KP
   is_kgx: true
   description: KGX nodes for Molecular Data KP
   url: https://molepro.s3.amazonaws.com/nodes.tsv
   category: GraphProduct
 - id: edges.tsv
+  name: Edges for Molecular Data KP
   is_kgx: true
   description: KGX edges for Molecular Data KP
   url: https://molepro.s3.amazonaws.com/edges.tsv

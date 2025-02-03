@@ -17,12 +17,10 @@ products:
 - id: reacto.owl
   name: Reactome Entity Ontology (REACTO) OWL release
   description: OWL release of Reactome Entity Ontology (REACTO)
-  aggregator: null
   category: Product
 - id: reacto.obo
   name: Reactome Entity Ontology (REACTO) OBO release
   description: OBO release of Reactome Entity Ontology (REACTO)
-  aggregator: null
   category: Product
 category: Resource
 ---
