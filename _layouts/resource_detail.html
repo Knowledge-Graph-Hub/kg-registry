@@ -6,7 +6,7 @@ layout: default
   <h1>
     {% if page.depicted_by %}
     <img alt="logo" src="{{page.depicted_by}}" style="max-height: 1em" />
-    {% endif %} {{ page.title }}
+    {% endif %} {{ page.id }}
   </h1>
   <p>{{page.description}}</p>
 </div>
@@ -14,7 +14,7 @@ layout: default
 {% if page.is_obsolete %}
 <div class="row">
   <div class="alert alert-danger" role="alert">
-    This ontology is deprecated!
+    This resource is deprecated!
   </div>
   {% for repl in page.replaced_by %}
   <div class="alert alert-info" role="alert">
@@ -26,7 +26,7 @@ layout: default
 page.is_obsolete %}
 <div class="row">
   <div class="alert alert-warning" role="alert">
-    This ontology is inactive. For more information see
+    This resource is inactive. For more information see
     <a href="/docs/OntologyStatus.html">here</a>.
   </div>
 </div>
@@ -38,89 +38,11 @@ page.is_obsolete %}
     <a href="/docs/OntologyStatus.html">here</a>.
   </div>
 </div>
-{% endunless %}{% endif %} {% if page.preferredPrefix %} {% assign upperPrefix =
-page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
-<div class="row">
-  <div class="alert alert-info" role="alert">
-    This ontology uses a mixed-case prefix. Identifiers and URIs should use: "{{
-    page.preferredPrefix }}".
-  </div>
-</div>
-{% endif %} {% endif %}
+{% endunless %}{% endif %}
 
 <div class="row">
   <div class="col-md-8" style="padding-left: 0">
     {% assign stripped_content_size = content | strip | size %}
-
-    <div class="card" style="margin-bottom: 1.5em;">
-      <div class="card-body">
-        <!-- TODO: each ontology should configure which browsers to be exposed in -->
-        <a href="https://ontobee.org/ontology/{{page.id}}" class="btn btn-outline-primary" target="_blank" rel="noopener">
-          OntoBee
-        </a>
-        {% if page.aberowl_id %}
-          <a href="http://aber-owl.net/ontology/{{page.aberowl_id | upcase}}" class="btn btn-outline-primary" target="_blank" rel="noopener">
-            AberOWL
-          </a>
-        {% else %}
-          <a href="http://aber-owl.net/ontology/{{page.id | upcase}}" class="btn btn-outline-primary" target="_blank" rel="noopener">
-            AberOWL
-          </a>
-        {% endif %}
-        <a href="http://www.ebi.ac.uk/ols/ontologies/{{page.id}}" class="btn btn-outline-primary" target="_blank" rel="noopener">
-          OLS
-        </a>
-        {% assign skip_bioportal = false %}
-        {% for browser in page.browsers %}
-          {% if browser.label == "BioPortal" %}
-            {% assign skip_bioportal = true %}
-          {% endif %}
-        {% endfor %}
-
-        {% unless skip_bioportal %}
-          {% assign bioportal_id = page.id | upcase %}
-          {% if bioportal_id == 'FBBT' %}
-            {% assign bioportal_id = 'FB-BT' %}
-          {% elsif bioportal_id == 'RO' %}
-            {% assign bioportal_id = 'OBOREL' %}
-          {% elsif bioportal_id == 'APOLLO_SV' %}
-            {% assign bioportal_id = 'APOLLO-SV' %}
-          {% elsif bioportal_id == 'TRANS' %}
-            {% assign bioportal_id = 'PTRANS' %}
-          {% elsif bioportal_id == 'WBLS' %}
-            {% assign bioportal_id = 'WB-LS' %}
-          {% elsif bioportal_id == 'FBDV' %}
-            {% assign bioportal_id = 'FB-DV' %}
-          {% elsif bioportal_id == 'WBBT' %}
-            {% assign bioportal_id = 'WB-BT' %}
-          {% elsif bioportal_id == 'WBPHENOTYPE' %}
-            {% assign bioportal_id = 'WB-PHENOTYPE' %}
-          {% elsif bioportal_id == 'TO' %}
-            {% assign bioportal_id = 'PTO' %}
-          {% elsif bioportal_id == 'FBCV' %}
-            {% assign bioportal_id = 'FB-CV' %}
-          {% elsif bioportal_id == 'MOD' %}
-            {% assign bioportal_id = 'PSIMOD' %}
-          {% elsif bioportal_id == 'PSO' %}
-            {% assign bioportal_id = 'PLANTSO' %}
-          {% endif %}
-          <a href="https://bioportal.bioontology.org/ontologies/{{ bioportal_id }}" class="btn btn-outline-primary" target="_blank" rel="noopener">
-            BioPortal
-          </a>
-        {% endunless %}
-        {% for b in page.browsers %}
-          <a href="{{b.url}}" class="btn btn-outline-primary" target="_blank" rel="noopener">
-            {{b.label}}
-          </a>
-        {% endfor %}
-        <a href="https://bioregistry.io/metaregistry/obofoundry/{{page.id}}" class="btn btn-outline-primary" target="_blank" rel="noopener">
-         Bioregistry
-        </a>
-        {% if stripped_content_size > 0 %}
-          <p class="card-text">{{ content }}</p>
-        {% endif %}
-      </div>
-    </div>
 
     {% if page.publications and page.publications.size > 0 %}
     <div class="card" style="margin-bottom: 1.5em;" id="publications">
@@ -164,15 +86,16 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
           {% for p in page.products %}
           <tr>
             <td>
-              <a href="{% if p.ontology_purl %}{{p.ontology_purl}}{% else %}{{page.uri_prefix}}{{p.id}}{% endif %}">{{p.id}}</a>
+              <a href="{{p.url}}">{{p.id}}</a>
             </td>
-            <td>{{p.title}}</td>
-            <td>Aggregator: {{p.aggregator}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.category}}</td>
             <td>
-              {{p.description}} {% if p.page %}
-              <a href="{{p.page}}"> [page]</a>
-              {% endif %}
+              {{p.description}}
             </td>
+            {% if p.is_kgx %}
+            <td> KGX Available!</td>
+            {% endif %}
           </tr>
           {% endfor %}
         </tbody>
@@ -188,26 +111,29 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         {% for p in page.usages %}
         <div class="list-group-item">
           <dl class="dl-horizontal" style="margin-bottom: 0">
-            <dt>User</dt>
-            <dd><a href="{{p.user}}">{{p.user}}</a></dd>
-            <dt>Description</dt>
+            <dt>{{p.label}}</dt>
             <dd>{{p.description}}</dd>
             {% if p.type %}
             <dt>Type</dt>
             <dd>{{p.type}}</dd>
-            {% endif %} {% if p.seeAlso %}
-            <dt>See also</dt>
-            <dd><a href="{{p.seeAlso}}">{{p.seeAlso}}</a></dd>
-            {% endif %} {% if p.examples %}
-            <dt>Examples</dt>
-            {% for example in p.examples %}
-            <dd><a href="{{example.url}}">{{example.description}}</a></dd>
-            {% endfor %} {% endif %} {% if p.publications %}
+            {% endif %} {% if p.url %}
+            <dt>Link</dt>
+            <dd><a href="{{p.url}}">{{p.url}}</a></dd>
+            {% endif %} {% if p.publications %}
             <dt>Publications</dt>
             <dd>
               <ul style="padding-left: 20px">
                 {% for publication in p.publications %}
-                <li><a href="{{publication.id}}">{{publication.title}}</a></li>
+                <li><a href="https://doi.org/{{publication.doi}}">{{publication.title}}</a></li>
+                {% endfor %}
+              </ul>
+            </dd>
+            {% endif %} {% if p.users %}
+            <dt>Users</dt>
+            <dd>
+              <ul style="padding-left: 20px">
+                {% for user in p.users %}
+                <li>{{user.label}}</li>
                 {% endfor %}
               </ul>
             </dd>
@@ -230,9 +156,9 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         {{page.id}}
       </dd>
 
-      <dt>Expansion</dt>
+      <dt>Domain</dt>
       <dd>
-        <a href="{{page.uri_prefix}}">{{page.uri_prefix}}</a>
+        {{page.domain}}
       </dd>
 
       <dt>License</dt>
@@ -274,20 +200,29 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
       </dd>
       {% endif %}
 
-      <dt>Contact</dt>
-      <dd>
-        <a href="mailto:{{page.contact.email}}">{{page.contact.label}}</a>
-      </dd>
-      {% if page.contact.orcid %}
-      <dd>
-        <a href="https://orcid.org/{{ page.contact.orcid }}">{{ page.contact.orcid }}</a>
-      </dd>
-      {% endif %}
-      {% if page.contact.github %}
-      <dd>
-        <a href="https://github.com/{{ page.contact.github }}">@{{ page.contact.github }}</a>
-      </dd>
-      {% endif %}
+      <dt>Contacts</dt>
+      {% for c in page.contacts %}
+        {% if c.email %}
+        <dd>
+          <a href="mailto:{{c.email}}">{{c.label}}</a>
+        </dd>
+        {% endif %} {% else %}
+        {% if c.label %}
+        <dd>
+          {{c.label}}
+        </dd>
+        {% endif %}
+        {% if c.orcid %}
+        <dd>
+          <a href="https://orcid.org/{{ c.orcid }}">{{ c.orcid }}</a>
+        </dd>
+        {% endif %}
+        {% if c.github %}
+        <dd>
+          <a href="https://github.com/{{ c.github }}">@{{ c.github }}</a>
+        </dd>
+        {% endif %}
+      {% endfor %}
 
       {% if page.repository and page.repository != page.homepage %}
       <dt>Repository</dt>
@@ -295,16 +230,6 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         <a href="{{page.repository}}">{{page.repository}}</a>
       </dd>
       {% endif %}
-
-      <dt>Tracker</dt>
-      <dd>
-        <a href="{{page.tracker}}">{{page.tracker}}</a>
-      </dd>
-
-      <dt>Domain</dt>
-      <dd>
-        {{page.domain}}
-      </dd>
 
       {% if page.mailing_list %}
       <dt>Mailing List</dt>
@@ -402,12 +327,6 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         >
       </dd>
       <dd>{% endif %}</dd>
-      <dt>OBO Dashboard</dt>
-      <dd>
-        <a href="http://dashboard.obofoundry.org/dashboard/{{ page.id }}/dashboard.html">
-          <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOBOFoundry%2Fobo-dash.github.io%2Fgh-pages%2Fdashboard%2F{{ page.id }}%2Fdashboard-qc-badge.json" alt="OBO Dashboard badge for {{ page.id }}"/>
-        </a>
-      </dd>
     </dl>
 
     <div class="btn-group pull-right" role="group" aria-label="Source">
