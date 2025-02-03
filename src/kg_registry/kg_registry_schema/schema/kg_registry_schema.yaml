@@ -89,6 +89,9 @@ classes:
           The contact point(s) for the resource.
           May be an individual or organization.
         range: Contact
+        multivalued: true
+        inlined: true
+        inlined_as_list: true
       products:
         description: >-
           The products or representations of the resource.
