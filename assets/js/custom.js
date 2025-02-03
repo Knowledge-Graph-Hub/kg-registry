@@ -492,8 +492,8 @@ jQuery(document).ready(function() {
     function apply_all_filters(data) {
         let selectedDomain = $("#dd-domains").children("option:selected").val();
         let selectedResourceType = $("#dd-resourcetypes").children("option:selected").val();
-        let res = data["ontologies"].filter(x => x["domain"] !== undefined);
-        let dt = res.filter(x => x["restype"].includes(selectedResourceType));
+        let res = data["resources"].filter(x => x["category"] !== undefined);
+        let dt = res.filter(x => x["category"].includes(selectedResourceType));
         let dt2 = dt.filter(x => x["domain"].includes(selectedDomain));
         let dt3 = Search($("#searchVal"), dt2);
         applyFilters(dt3)
@@ -521,9 +521,9 @@ jQuery(document).ready(function() {
 
             // extract domain and set values for dropdown menu
             let domains = [];
-            for (let k = 0; k < data["ontologies"].length; k++) {
-                if (data["ontologies"][k]["domain"] !== undefined) {
-                    let d = data["ontologies"][k]["domain"] //.replace(" and", ",").split(",")
+            for (let k = 0; k < data["resources"].length; k++) {
+                if (data["resources"][k]["domain"] !== undefined) {
+                    let d = data["resources"][k]["domain"] //.replace(" and", ",").split(",")
                     domains.push(d)
                 }
             }
@@ -536,9 +536,9 @@ jQuery(document).ready(function() {
 
             // extract resource type and set values for dropdown menu
             let resourcetypes = [];
-            for (let k = 0; k < data["ontologies"].length; k++) {
-                if (data["ontologies"][k]["restype"] !== undefined) {
-                    let d = data["ontologies"][k]["restype"] //.replace(" and", ",").split(",")
+            for (let k = 0; k < data["resources"].length; k++) {
+                if (data["resources"][k]["category"] !== undefined) {
+                    let d = data["resources"][k]["category"] //.replace(" and", ",").split(",")
                     resourcetypes.push(d)
                 }
             }
