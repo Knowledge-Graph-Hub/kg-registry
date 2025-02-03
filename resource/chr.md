@@ -18,7 +18,6 @@ products:
   name: Monochrom Ontology OWL release
   description: OWL release of Monochrom Ontology
   category: Product
-uri_prefix: http://purl.obolibrary.org/obo/
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/

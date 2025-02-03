@@ -25,7 +25,6 @@ products:
   description: OBO release of Knowledge Graph Change Language
   aggregator: null
   category: DataModelProduct
-uri_prefix: https://w3id.org/
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/

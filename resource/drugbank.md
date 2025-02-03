@@ -35,7 +35,6 @@ products:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/drugbank/drugbank.sssom
   category: MappingProduct
-uri_prefix: http://purl.obolibrary.org/obo/
 category: DataGraph
 ---
 

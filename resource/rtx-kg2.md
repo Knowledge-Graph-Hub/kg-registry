@@ -12,7 +12,6 @@ contacts:
 - category: Individual
   label: Steven Ramsey
 url: ""
-tracker: https://github.com/RTXteam/RTX-KG2/issues
 repository: https://github.com/RTXteam/RTX-KG2
 ---
 

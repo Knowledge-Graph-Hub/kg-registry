@@ -12,7 +12,6 @@ contacts:
   email: ben.mcgee.good@gmail.com
   label: Benjamin M. Good
 url: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
-tracker: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
 repository: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
 products:
 - id: reacto.owl
@@ -25,7 +24,6 @@ products:
   description: OBO release of Reactome Entity Ontology (REACTO)
   aggregator: null
   category: Product
-uri_prefix: http://purl.obolibrary.org/obo/go/extensions/
 category: Resource
 ---
 

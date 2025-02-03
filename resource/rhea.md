@@ -13,7 +13,6 @@ contacts:
   email: cthoyt@gmail.com
   label: Charles Tapley Hoyt
 url: https://biopragmatics.github.io/obo-db-ingest/
-tracker: https://github.com/biopragmatics/pyobo/issues
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: rhea.owl
@@ -37,7 +36,6 @@ products:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom
   category: Product
-uri_prefix: http://purl.obolibrary.org/obo/
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/

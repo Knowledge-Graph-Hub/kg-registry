@@ -10,7 +10,6 @@ contacts:
   github: emanuelecavalleri
   label: Emanuele Cavalleri
 url: RNA-KG.anacleto.di.unimi.it/
-tracker: https://github.com/AnacletoLAB/RNA-KG/issues
 repository: https://github.com/AnacletoLAB/RNA-KG
 category: KnowledgeGraph
 ---

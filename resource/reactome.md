@@ -12,7 +12,6 @@ contacts:
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
 url: https://reactome.org
-tracker: https://github.com/biopragmatics/pyobo/issues
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: reactome-hs-biopax.db.gz
@@ -25,7 +24,6 @@ products:
   description: Biopragmatics provided conversion, human subset
   url: https://w3id.org/biopragmatics/resources/reactome/reactome.obo
   format: obo
-uri_prefix: http://www.reactome.org/
 category: DataGraph
 ---
 

@@ -10,7 +10,6 @@ contacts:
   github: pnrobinson
   label: Peter Robinson
 url: https://kghub.io/sldb/
-tracker: https://github.com/monarch-initiative/SLDBGen/issues
 repository: https://github.com/monarch-initiative/SLDBGen
 category: KnowledgeGraph
 ---
