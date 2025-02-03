@@ -5,7 +5,8 @@ id: neo
 name: neo
 description: Noctua Entity Ontology
 domain: biological systems
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0002-6601-2165
   github: cmungall
   email: cjmungall@lbl.gov

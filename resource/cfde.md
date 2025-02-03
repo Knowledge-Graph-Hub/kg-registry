@@ -2,7 +2,8 @@
 layout: resource_detail
 activity_status: active
 id: cfde
-contact:
+contacts:
+- category: Individual
   label: "John Erol Evangelista"
   github: jeevangelista
 name: Data Distillery Knowledge Graph

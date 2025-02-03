@@ -6,8 +6,11 @@ name: Multiomics KP
 description: A Translator Knowledge Provider incorporating multiomics data.
 domain: health
 category: KnowledgeGraph
-contact:
-  label: "Gustavo Glusman, Guangrong Qin"
+contacts:
+- category: Individual
+  label: Gustavo Glusman
+- category: Individual
+  label: Guangrong Qin
 url: ""
 tracker: ""
 repository: ""

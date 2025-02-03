@@ -4,15 +4,15 @@ activity_status: active
 id: ubergraph
 name: Ubergraph
 description: Ubergraph is an RDF triplestore integrating OBO ontologies into a unified semantic graph
-domain: information
+domain: other
 category: KnowledgeGraph
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0002-8688-6599
   github: balhoff
   email: balhoff@renci.org
   label: James P. Balhoff
 url: https://ubergraph.apps.renci.org/sparql
-tracker: https://github.com/INCATools/ubergraph/issues
 repository: https://github.com/INCATools/ubergraph
 products:
 - id: ubergraph.rdf

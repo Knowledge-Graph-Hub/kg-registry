@@ -5,7 +5,8 @@ id: sldb
 name: sldb
 description: A graph of synthetic lethal interactions.
 domain: organisms
-contact:
+contacts:
+- category: Individual
   github: pnrobinson
   label: Peter Robinson
 url: https://kghub.io/sldb/

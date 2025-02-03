@@ -6,8 +6,13 @@ name: Clinical Data KP
 description: A Translator Knowledge Provider integrating clinical data.
 domain: health
 category: KnowledgeGraph
-contact:
-  label: "Casey Ta, Vincent Emonet, Michel Dumontier"
+contacts:
+- category: Individual
+  label: Casey Ta
+- category: Individual
+  label: Vincent Emonet
+- category: Individual
+  label: Michel Dumontier
 url: https://ncats.nih.gov/research/research-activities/translator/projects
 ---
 

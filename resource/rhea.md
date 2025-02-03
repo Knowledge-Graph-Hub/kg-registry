@@ -6,7 +6,8 @@ name: Rhea, the Annotated Reactions Database
 description: Rhea is an expert-curated knowledgebase of chemical and transport reactions
   of biological interest
 domain: chemistry and biochemistry
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0003-4423-4370
   github: cthoyt
   email: cthoyt@gmail.com

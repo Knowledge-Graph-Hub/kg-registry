@@ -5,13 +5,13 @@ id: kg-idg
 name: KG-IDG
 description: a Knowledge Graph for Illuminating the Druggable Genome
 domain: health
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0001-5705-7831
   github: caufieldjh
   email: jhc@lbl.gov
   label: J. Harry Caufield
 url: https://kghub.org/kg-idg/index.html
-tracker: https://github.com/Knowledge-Graph-Hub/kg-idg/issues
 repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 products:
 - id: kg-idg.tar.gz

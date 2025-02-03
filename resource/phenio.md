@@ -2,11 +2,11 @@
 layout: resource_detail
 id: phenio
 name: An integrated ontology for Phenomics
-contact:
-  email: jmcl@ebi.ac.uk
-  github: jamesamcl
-  label: James McLaughlin
-  orcid: 0000-0002-8361-2795
+contacts:
+- category: Individual
+  email: jhc@lbl.gov
+  github: caufieldjh
+  label: J. Harry Caufield
 description: An ontology for accessing and comparing knowledge concerning phenotypes across species and genetic backgrounds.
 domain: phenotype
 url: https://github.com/obophenotype/phenio

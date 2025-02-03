@@ -5,7 +5,8 @@ id: swisslipid
 name: swisslipid
 description: SwissLipid
 domain: chemistry and biochemistry
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0003-4423-4370
   github: cthoyt
   email: cthoyt@gmail.com

@@ -6,13 +6,13 @@ name: Biolink-Model
 description: Entity and association taxonomy and datamodel for life-sciences data
 domain: upper
 category: DataModel
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0002-8719-7760
   github: sierra-moxon
   email: smoxon@lbl.gov
   label: Sierra Taylor Moxon
 url: https://w3id.org/biolink/biolink-model.owl.ttl
-tracker: https://github.com/biolink/biolink-model/issues
 repository: https://github.com/biolink/biolink-model/
 products:
 - id: biolink-model.owl.ttl
