@@ -130,6 +130,8 @@ classes:
           The usage(s) of the resource.
         range: Usage
         multivalued: true
+        inlined: true
+        inlined_as_list: true
       layout:
         description: >-
           The layout of the resource.
