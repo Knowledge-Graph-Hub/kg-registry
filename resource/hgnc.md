@@ -20,18 +20,21 @@ products:
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl
+  category: Product
 - id: hgnc.obo
   name: hgnc OBO release
   description: OBO release of hgnc
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo
+  category: Product
 - id: hgnc.sssom
   name: hgnc SSSOM release
   description: SSSOM release of hgnc
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom
+  category: MappingProduct
 uri_prefix: http://purl.obolibrary.org/obo/
 category: DataGraph
 ---

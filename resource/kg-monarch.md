@@ -19,6 +19,7 @@ products:
   name: KGX Distribution of KGM
   description: KGX Distribution of KGM
   url: https://kg-hub.berkeleybop.io/kg-monarch/current/kg-monarch.tar.gz
+  category: GraphProduct
 uri_prefix: https://w3id.org/kg-monarch/
 license:
   label: CC0 1.0

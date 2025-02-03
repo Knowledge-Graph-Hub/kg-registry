@@ -19,14 +19,17 @@ products:
   name: Ubergraph RDF
   description: RDF of Ubergraph
   url: https://ubergraph.apps.renci.org/sparql
+  category: Product
 - id: ubergraph.blazegraph.jnl
   name: Ubergraph blazegraph journal
   description: Blazegraph journal of Ubergraph
   url: https://ubergraph.apps.renci.org/downloads/current/ubergraph.jnl.gz
+  category: Product
 - id: ubergraph.nquads
   name: Ubergraph n-quads
   description: Ubergraph n-quads
   url: https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz
+  category: Product
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/

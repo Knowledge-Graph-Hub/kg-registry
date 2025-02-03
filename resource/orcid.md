@@ -18,10 +18,12 @@ products:
   name: ORCID in OWL OWL release
   description: OWL release of ORCID in OWL
   aggregator: obo
+  category: Product
 - id: orcidio.obo
   name: ORCID in OWL OBO release
   description: OBO release of ORCID in OWL
   aggregator: obo
+  category: Product
 uri_prefix: https://w3id.org/orcidio/
 license:
   label: CC0 1.0

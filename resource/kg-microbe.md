@@ -19,6 +19,7 @@ products:
   name: KGX Distribution of KGM
   description: KGX Distribution of KGM
   url: https://kg-hub.berkeleybop.io/kg-microbe/current/kg-microbe.tar.gz
+  category: GraphProduct
 uri_prefix: https://w3id.org/kg-microbe/
 license:
   label: CC0 1.0

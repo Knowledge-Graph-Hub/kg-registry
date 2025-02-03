@@ -20,18 +20,21 @@ products:
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/drugbank/drugbank.owl
+  category: Product
 - id: drugbank.obo
   name: drugbank OBO release
   description: OBO release of drugbank
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/drugbank/drugbank.obo
+  category: Product
 - id: drugbank.sssom
   name: drugbank SSSOM release
   description: SSSOM release of drugbank
   tags:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/drugbank/drugbank.sssom
+  category: MappingProduct
 uri_prefix: http://purl.obolibrary.org/obo/
 category: DataGraph
 ---

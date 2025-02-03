@@ -17,6 +17,7 @@ products:
 - id: ecosim.owl
   name: ecosim OWL release
   description: OWL release of ecosim
+  category: Product
 uri_prefix: http://purl.obolibrary.org/obo/
 category: Resource
 ---
