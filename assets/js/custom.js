@@ -90,8 +90,8 @@ jQuery(document).ready(function() {
                                 </span>
                             </th>
                             <th scope="col">
-                                <span class="sort-button" title="Sort by title" data-sort="title" >
-                                    Title <i class="bi-chevron-up" aria-hidden="true"></i>
+                                <span class="sort-button" title="Sort by name" data-sort="name" >
+                                    Name <i class="bi-chevron-up" aria-hidden="true"></i>
                                 </span>
                             </th>
                             <th scope="col">
@@ -204,13 +204,13 @@ jQuery(document).ready(function() {
                     let is_obsolete = "";
                     let is_inactive = "";
                     let activity_status = data[i]['activity_status']
-                    let title = data[i]['title'];
+                    let title = data[i]['name'];
                     let license_url = "#";
                     let license_logo = "#";
                     let license_label = "";
                     let description = data[i]['description'];
                     let repo = "";
-                    let homepage = data[i]["homepage"];
+                    let homepage = data[i]["url"];
                     let tracker = "";
                     let contact = "";
                     let publication = "";
