@@ -15,7 +15,7 @@ url: https://kghub.org/kg-microbe/index.html
 repository: https://github.com/Knowledge-Graph-Hub/kg-microbe
 products:
 - id: kg-microbe.tar.gz
-  format: kgx
+  is_kgx: true
   name: KGX Distribution of KGM
   description: KGX Distribution of KGM
   url: https://kg-hub.berkeleybop.io/kg-microbe/current/kg-microbe.tar.gz

@@ -16,7 +16,7 @@ url: ""
 repository: ""
 products:
 - id: monarch-kg.tar.gz
-  format: kgx
+  is_kgx: true
   name: SRI-Reference KG (KGX distribution)
   description: KGX distribution of the SRI-Reference KG
   url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz

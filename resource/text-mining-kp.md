@@ -13,7 +13,7 @@ url: ""
 repository: ""
 products:
 - id: targeted_assertions.tar.gz
-  format: kgx
+  is_kgx: true
   description: Text Mining KP KGX distribution
   url: https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz
   category: GraphProduct
