@@ -309,6 +309,13 @@ classes:
     description: >-
       A contact point for a resource or product.
     abstract: true
+    attributes:
+      category:
+        description: >-
+          The category of the contact.
+          This should be identical to its class name.
+        range: string
+        required: true
 
   Individual:
     description: >-

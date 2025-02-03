@@ -632,6 +632,10 @@
             "additionalProperties": false,
             "description": "An individual person.",
             "properties": {
+                "category": {
+                    "description": "The category of the contact. This should be identical to its class name.",
+                    "type": "string"
+                },
                 "email": {
                     "description": "The email address of the individual.",
                     "type": [
@@ -662,6 +666,9 @@
                     ]
                 }
             },
+            "required": [
+                "category"
+            ],
             "title": "Individual",
             "type": "object"
         },
@@ -1087,6 +1094,10 @@
             "additionalProperties": false,
             "description": "An organization.",
             "properties": {
+                "category": {
+                    "description": "The category of the contact. This should be identical to its class name.",
+                    "type": "string"
+                },
                 "email": {
                     "description": "The email address of the organization.",
                     "type": [
@@ -1116,6 +1127,9 @@
                     ]
                 }
             },
+            "required": [
+                "category"
+            ],
             "title": "Organization",
             "type": "object"
         },
