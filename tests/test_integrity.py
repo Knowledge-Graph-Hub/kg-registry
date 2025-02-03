@@ -10,8 +10,8 @@ from typing import Set
 import requests
 import yaml
 
-from obofoundry.standardize_metadata import ModifiedDumper
-from obofoundry.utils import RESOURCE_DIRECTORY, get_data, get_new_data
+# from kg_registry.standardize_metadata import ModifiedDumper
+# from kg_registry.utils import RESOURCE_DIRECTORY, get_data, get_new_data
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
@@ -40,9 +40,10 @@ NOR_DASHBOARD_RESULTS = "https://raw.githubusercontent.com/OBOFoundry/obo-nor.gi
 class TestIntegrity(unittest.TestCase):
     """Test case for data integrity."""
 
-    def setUp(self) -> None:
-        """Set up the test case."""
-        self.ontologies = get_data()
+
+#    def setUp(self) -> None:
+#        """Set up the test case."""
+#        self.ontologies = get_data()
 
 #     def test_dependencies(self):
 #         """Test dependencies are valid OBO Foundry ontologies."""
