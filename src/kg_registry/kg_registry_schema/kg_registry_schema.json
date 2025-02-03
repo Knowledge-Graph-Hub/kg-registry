@@ -79,6 +79,13 @@
                         "null"
                     ]
                 },
+                "layout": {
+                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "license": {
                     "anyOf": [
                         {
@@ -214,6 +221,13 @@
                 },
                 "language": {
                     "description": "The human language of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -774,6 +788,13 @@
                         "null"
                     ]
                 },
+                "layout": {
+                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "license": {
                     "anyOf": [
                         {
@@ -928,6 +949,13 @@
                 },
                 "language": {
                     "description": "The human language of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -1268,6 +1296,13 @@
                         "null"
                     ]
                 },
+                "layout": {
+                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "license": {
                     "anyOf": [
                         {
@@ -1527,6 +1562,13 @@
                 },
                 "language": {
                     "description": "The human language of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
                     "type": [
                         "string",
                         "null"

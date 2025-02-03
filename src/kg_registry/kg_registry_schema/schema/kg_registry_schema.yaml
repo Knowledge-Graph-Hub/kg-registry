@@ -125,6 +125,13 @@ classes:
           This should be identical to its class name.
         range: string
         required: true
+      layout:
+        description: >-
+          The layout of the resource.
+          This is used to determine how to display the resource
+          in the web interface.
+          It should generally be 'resource_detail'.
+        range: string
 
   KnowledgeGraph:
     description: >-
