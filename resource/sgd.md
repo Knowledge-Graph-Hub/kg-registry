@@ -20,19 +20,19 @@ products:
   description: OWL release of Saccharomyces Genome Database
   tags:
     - biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/sgd/sgd.owl
+  url: https://w3id.org/biopragmatics/resources/sgd/sgd.owl
 - id: sgd.obo
   name: Saccharomyces Genome Database OBO release
   description: OBO release of Saccharomyces Genome Database
   tags:
     - biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/sgd/sgd.obo
+  url: https://w3id.org/biopragmatics/resources/sgd/sgd.obo
 - id: sgd.sssom
   name: Saccharomyces Genome Database SSSOM release
   description: SSSOM release of Saccharomyces Genome Database
   tags:
     - biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/sgd/sgd.sssom
+  url: https://w3id.org/biopragmatics/resources/sgd/sgd.sssom
 uri_prefix: http://purl.obolibrary.org/obo/
 license:
   label: CC BY 4.0

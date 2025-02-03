@@ -18,15 +18,15 @@ products:
 - id: ubergraph.rdf
   name: Ubergraph RDF
   description: RDF of Ubergraph
-  ontology_purl: https://ubergraph.apps.renci.org/sparql
+  url: https://ubergraph.apps.renci.org/sparql
 - id: ubergraph.blazegraph.jnl
   name: Ubergraph blazegraph journal
   description: Blazegraph journal of Ubergraph
-  ontology_purl: https://ubergraph.apps.renci.org/downloads/current/ubergraph.jnl.gz
+  url: https://ubergraph.apps.renci.org/downloads/current/ubergraph.jnl.gz
 - id: ubergraph.nquads
   name: Ubergraph n-quads
   description: Ubergraph n-quads
-  ontology_purl: https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz
+  url: https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/

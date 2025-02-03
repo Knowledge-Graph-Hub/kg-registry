@@ -17,12 +17,12 @@ products:
 - id: reactome-hs-biopax.db.gz
   name: Reactome Human from BioPAX, sqlite
   description: Conversion from BioPAX, human subset
-  ontology_purl: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
+  url: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
   format: sqlite
 - id: reactome-hs-biopragmatics.obo
   name: Reactome Human, Biopragmatics
   description: Biopragmatics provided conversion, human subset
-  ontology_purl: https://w3id.org/biopragmatics/resources/reactome/reactome.obo
+  url: https://w3id.org/biopragmatics/resources/reactome/reactome.obo
   format: obo
 uri_prefix: http://www.reactome.org/
 category: DataGraph

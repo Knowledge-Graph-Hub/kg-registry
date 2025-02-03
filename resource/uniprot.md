@@ -19,19 +19,22 @@ products:
   description: OWL release of uniprot
   tags:
     - biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl
+  url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl
+  category: Product
 - id: uniprot.obo
   name: uniprot OBO release
   description: OBO release of uniprot
   tags:
     - biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo
+  url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo
+  category: Product
 - id: uniprot.sssom
   name: uniprot SSSOM release
   description: SSSOM release of uniprot
   tags:
     - biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom
+  url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom
+  category: MappingProduct
 uri_prefix: http://purl.obolibrary.org/obo/
 category: Resource
 ---

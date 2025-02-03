@@ -18,7 +18,7 @@ products:
   format: kgx
   name: KGX Distribution of KGM
   description: KGX Distribution of KGM
-  ontology_purl: https://kg-hub.berkeleybop.io/kg-microbe/current/kg-microbe.tar.gz
+  url: https://kg-hub.berkeleybop.io/kg-microbe/current/kg-microbe.tar.gz
 uri_prefix: https://w3id.org/kg-microbe/
 license:
   label: CC0 1.0

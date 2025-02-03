@@ -17,12 +17,12 @@ uri_prefix: https://w3id.org/phenio/
 products:
 - id: phenio.owl
   description: OWL version of phenio
-  ontology_purl: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl
+  url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl
   name: phenio
 - id: phenio.kgx
   name: phenio KG
   description: KGX version of phenio
-  ontology_purl: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
+  url: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
   type: kgx
 repository: https://github.com/monarch-initiative/phenio
 tracker: https://github.com/monarch-initiative/phenio/issues

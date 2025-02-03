@@ -18,7 +18,7 @@ products:
   format: kgx
   name: KGX Distribution of KGM
   description: KGX Distribution of KGM
-  ontology_purl: https://kg-hub.berkeleybop.io/kg-monarch/current/kg-monarch.tar.gz
+  url: https://kg-hub.berkeleybop.io/kg-monarch/current/kg-monarch.tar.gz
 uri_prefix: https://w3id.org/kg-monarch/
 license:
   label: CC0 1.0
