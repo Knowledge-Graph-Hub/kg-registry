@@ -478,6 +478,13 @@
                     "description": "The identifier of the product. This is used to identify it within the registry.",
                     "type": "string"
                 },
+                "is_kgx": {
+                    "description": "Whether the graph is in KGX format.",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
                 "license": {
                     "anyOf": [
                         {
