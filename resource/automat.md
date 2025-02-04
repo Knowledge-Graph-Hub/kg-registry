@@ -39,30 +39,35 @@ products:
   description: CTD Automat
   url: https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files
   category: GraphProduct
+  infores_id: automat-ctd
 - id: drugcentral_automat
   name: drugcentral_automat
   is_kgx: true
   description: DrugCentral Automat
   url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
   category: GraphProduct
+  infores_id: automat-drug-central
 - id: gtex_automat
   name: gtex_automat
   is_kgx: true
   description: GTEx Automat
   url: https://stars.renci.org/var/plater/bl-3.1.2/GTEx_Automat/latest/kgx_files
   category: GraphProduct
+  infores_id: automat-gtex
 - id: gtopdb_automat
   name: gtopdb_automat
   is_kgx: true
   description: GtoPdb Automat
   url: https://stars.renci.org/var/plater/bl-3.1.2/GtoPdb_Automat/latest/kgx_files
   category: GraphProduct
+  infores_id: automat-gtopdb
 - id: gwascatalog_automat
   name: gwascatalog_automat
   is_kgx: true
   description: GWASCatalog Automat
   url: https://stars.renci.org/var/plater/bl-3.1.2/GWASCatalog_Automat/latest/kgx_files
   category: GraphProduct
+  infores_id: automat-gwas-catalog
 - id: hetio_automat
   name: hetio_automat
   is_kgx: true
@@ -75,24 +80,28 @@ products:
   description: HGNC Automat
   url: https://stars.renci.org/var/plater/bl-3.1.2/HGNC_Automat/latest/kgx_files
   category: GraphProduct
+  infores_id: automat-hgnc
 - id: hmdb_automat
   name: hmdb_automat
   is_kgx: true
   description: HMDB Automat
   url: https://stars.renci.org/var/plater/bl-3.1.2/HMDB_Automat/latest/kgx_files
   category: GraphProduct
+  infores_id: automat-hmdb
 - id: humangoa_automat
   name: humangoa_automat
   is_kgx: true
   description: HumanGOA Automat
   url: https://stars.renci.org/var/plater/bl-3.1.2/HumanGOA_Automat/latest/kgx_files
   category: GraphProduct
+  infores_id: automat-human-goa
 - id: intact_automat
   name: intact_automat
   is_kgx: true
   description: IntAct Automat
   url: https://stars.renci.org/var/plater/bl-3.1.2/IntAct_Automat/latest/kgx_files
   category: GraphProduct
+  infores_id: automat-intact
 - id: ontologicalhierarchy_automat
   name: ontologicalhierarchy_automat
   is_kgx: true
@@ -105,12 +114,14 @@ products:
   description: PANTHER Automat
   url: https://stars.renci.org/var/plater/bl-3.1.2/PANTHER_Automat/latest/kgx_files
   category: GraphProduct
+  infores_id: automat-panther
 - id: pharos_automat
   name: pharos_automat
   is_kgx: true
   description: PHAROS Automat
   url: https://stars.renci.org/var/plater/bl-3.1.2/PHAROS_Automat/latest/kgx_files
   category: GraphProduct
+  infores_id: automat-pharos
 - id: stringdb_automat
   name: stringdb_automat
   is_kgx: true

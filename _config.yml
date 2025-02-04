@@ -53,30 +53,35 @@ resources:
   - category: GraphProduct
     description: CTD Automat
     id: ctd_automat
+    infores_id: automat-ctd
     is_kgx: true
     name: ctd_automat
     url: https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files
   - category: GraphProduct
     description: DrugCentral Automat
     id: drugcentral_automat
+    infores_id: automat-drug-central
     is_kgx: true
     name: drugcentral_automat
     url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
   - category: GraphProduct
     description: GTEx Automat
     id: gtex_automat
+    infores_id: automat-gtex
     is_kgx: true
     name: gtex_automat
     url: https://stars.renci.org/var/plater/bl-3.1.2/GTEx_Automat/latest/kgx_files
   - category: GraphProduct
     description: GtoPdb Automat
     id: gtopdb_automat
+    infores_id: automat-gtopdb
     is_kgx: true
     name: gtopdb_automat
     url: https://stars.renci.org/var/plater/bl-3.1.2/GtoPdb_Automat/latest/kgx_files
   - category: GraphProduct
     description: GWASCatalog Automat
     id: gwascatalog_automat
+    infores_id: automat-gwas-catalog
     is_kgx: true
     name: gwascatalog_automat
     url: https://stars.renci.org/var/plater/bl-3.1.2/GWASCatalog_Automat/latest/kgx_files
@@ -89,24 +94,28 @@ resources:
   - category: GraphProduct
     description: HGNC Automat
     id: hgnc_automat
+    infores_id: automat-hgnc
     is_kgx: true
     name: hgnc_automat
     url: https://stars.renci.org/var/plater/bl-3.1.2/HGNC_Automat/latest/kgx_files
   - category: GraphProduct
     description: HMDB Automat
     id: hmdb_automat
+    infores_id: automat-hmdb
     is_kgx: true
     name: hmdb_automat
     url: https://stars.renci.org/var/plater/bl-3.1.2/HMDB_Automat/latest/kgx_files
   - category: GraphProduct
     description: HumanGOA Automat
     id: humangoa_automat
+    infores_id: automat-human-goa
     is_kgx: true
     name: humangoa_automat
     url: https://stars.renci.org/var/plater/bl-3.1.2/HumanGOA_Automat/latest/kgx_files
   - category: GraphProduct
     description: IntAct Automat
     id: intact_automat
+    infores_id: automat-intact
     is_kgx: true
     name: intact_automat
     url: https://stars.renci.org/var/plater/bl-3.1.2/IntAct_Automat/latest/kgx_files
@@ -119,12 +128,14 @@ resources:
   - category: GraphProduct
     description: PANTHER Automat
     id: panther_automat
+    infores_id: automat-panther
     is_kgx: true
     name: panther_automat
     url: https://stars.renci.org/var/plater/bl-3.1.2/PANTHER_Automat/latest/kgx_files
   - category: GraphProduct
     description: PHAROS Automat
     id: pharos_automat
+    infores_id: automat-pharos
     is_kgx: true
     name: pharos_automat
     url: https://stars.renci.org/var/plater/bl-3.1.2/PHAROS_Automat/latest/kgx_files
@@ -367,7 +378,9 @@ resources:
     orcid: 0000-0003-4423-4370
   description: HUGO Gene Nomenclature Committee
   domain: biological systems
+  fairsharing_id: FAIRsharing.amcv1e
   id: hgnc
+  infores_id: hgnc
   layout: resource_detail
   name: hgnc
   products:
