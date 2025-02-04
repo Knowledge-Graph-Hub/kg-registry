@@ -148,6 +148,10 @@
             "@id": "http://purl.obolibrary.org/obo/RNA-KG_",
             "@prefix": true
         },
+        "ROBOKOP": {
+            "@id": "http://purl.obolibrary.org/obo/ROBOKOP_",
+            "@prefix": true
+        },
         "RTX-KG2": {
             "@id": "http://purl.obolibrary.org/obo/RTX-KG2_",
             "@prefix": true
