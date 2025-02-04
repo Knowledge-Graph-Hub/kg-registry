@@ -1,18 +1,17 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: rtx-kg2
-title: RTX-KG2
+name: RTX-KG2
 description: A comprehensive knowledge graph from the RTX team.
 domain: health
-restype: "knowledge graph"
-contact:
-  label: "Stephen Ramsey"
+contacts:
+- category: Individual
+  label: Stephen Ramsey
   email: ramseyst@oregonstate.edu
   github: saramsey
   orcid: 0000-0002-2168-5403
-homepage: ""
-tracker: https://github.com/RTXteam/RTX-KG2/issues
+url: https://github.com/RTXteam/RTX-KG2
 repository: https://github.com/RTXteam/RTX-KG2
 license:
   label: CC BY 4.0
@@ -20,9 +19,12 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/
 products:
 - id: rtx_kgx_files
-  format: kgx
-  description: KGX distribution of the RTX-KG2 
-  ontology_purl: https://github.com/ncats/translator-lfs-artifacts/blob/main/files/
+  is_kgx: true
+  name: RTX-KG2 KGX
+  description: KGX distribution of the RTX-KG2
+  url: https://github.com/ncats/translator-lfs-artifacts/blob/main/files/
+  category: GraphProduct
+category: KnowledgeGraph
 ---
 
 A comprehensive knowledge graph from the RTX team.
