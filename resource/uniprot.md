@@ -1,37 +1,43 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: uniprot
-title: uniprot
+name: uniprot
 description: UniProt Protein
 domain: biological systems
-preferredPrefix: obo
-contact:
+contacts:
+- category: Individual
+
+- category: Individual
   orcid: 0000-0003-4423-4370
   github: cthoyt
   email: cthoyt@gmail.com
   label: Charles Tapley Hoyt
-homepage: https://biopragmatics.github.io/obo-db-ingest/
-tracker: https://github.com/biopragmatics/pyobo/issues
+url: https://biopragmatics.github.io/obo-db-ingest/
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: uniprot.owl
-  title: uniprot OWL release
+  name: uniprot OWL release
   description: OWL release of uniprot
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl
+  category: Product
 - id: uniprot.obo
-  title: uniprot OBO release
+  name: uniprot OBO release
   description: OBO release of uniprot
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo
+  category: Product
 - id: uniprot.sssom
-  title: uniprot SSSOM release
+  name: uniprot SSSOM release
   description: SSSOM release of uniprot
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom
-uri_prefix: http://purl.obolibrary.org/obo/
-restype: "data resource"
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom
+  category: MappingProduct
+category: Resource
 ---
 
 UniProt Protein

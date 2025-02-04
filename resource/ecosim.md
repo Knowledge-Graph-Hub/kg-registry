@@ -1,25 +1,24 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: ecosim
-title: ecosim
+name: ecosim
 description: Ontology rendering of the EcoSIM Land System Model
 domain: environment
-preferredPrefix: obo
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0002-6601-2165
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
-homepage: http://purl.obolibrary.org/obo/ecosim.owl
-tracker: http://purl.obolibrary.org/obo/ecosim.owl
+url: http://purl.obolibrary.org/obo/ecosim.owl
 repository: http://purl.obolibrary.org/obo/ecosim.owl
 products:
 - id: ecosim.owl
-  title: ecosim OWL release
+  name: ecosim OWL release
   description: OWL release of ecosim
-uri_prefix: http://purl.obolibrary.org/obo/
-restype: "other"
+  category: Product
+category: Resource
 ---
 
 Ontology rendering of the EcoSIM Land System Model
