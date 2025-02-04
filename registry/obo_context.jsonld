@@ -1,11 +1,23 @@
 {
     "@context": {
+        "AUTOMAT": {
+            "@id": "http://purl.obolibrary.org/obo/AUTOMAT_",
+            "@prefix": true
+        },
+        "BIOLINK": {
+            "@id": "http://purl.obolibrary.org/obo/BIOLINK_",
+            "@prefix": true
+        },
         "CAM-KP": {
             "@id": "http://purl.obolibrary.org/obo/CAM-KP_",
             "@prefix": true
         },
         "CFDE": {
             "@id": "http://purl.obolibrary.org/obo/CFDE_",
+            "@prefix": true
+        },
+        "CHR": {
+            "@id": "http://purl.obolibrary.org/obo/CHR_",
             "@prefix": true
         },
         "CLINICAL-DATA-KP": {
@@ -16,20 +28,124 @@
             "@id": "http://purl.obolibrary.org/obo/CONNECTIONS-HYPOTHESIS-KP_",
             "@prefix": true
         },
+        "DRKG": {
+            "@id": "http://purl.obolibrary.org/obo/DRKG_",
+            "@prefix": true
+        },
+        "DRUGBANK": {
+            "@id": "http://purl.obolibrary.org/obo/DRUGBANK_",
+            "@prefix": true
+        },
+        "ECO-KG": {
+            "@id": "http://purl.obolibrary.org/obo/ECO-KG_",
+            "@prefix": true
+        },
+        "ECOSIM": {
+            "@id": "http://purl.obolibrary.org/obo/ECOSIM_",
+            "@prefix": true
+        },
         "GENETICS-KP": {
             "@id": "http://purl.obolibrary.org/obo/GENETICS-KP_",
+            "@prefix": true
+        },
+        "GOLDTERMS": {
+            "@id": "http://purl.obolibrary.org/obo/GOLDTERMS_",
+            "@prefix": true
+        },
+        "HGNC": {
+            "@id": "http://purl.obolibrary.org/obo/HGNC_",
+            "@prefix": true
+        },
+        "HRA-KG": {
+            "@id": "http://purl.obolibrary.org/obo/HRA-KG_",
+            "@prefix": true
+        },
+        "ICEES-KG": {
+            "@id": "http://purl.obolibrary.org/obo/ICEES-KG_",
+            "@prefix": true
+        },
+        "INTERPRO": {
+            "@id": "http://purl.obolibrary.org/obo/INTERPRO_",
+            "@prefix": true
+        },
+        "KG-COVID-19": {
+            "@id": "http://purl.obolibrary.org/obo/KG-COVID-19_",
+            "@prefix": true
+        },
+        "KG-ENP": {
+            "@id": "http://purl.obolibrary.org/obo/KG-ENP_",
+            "@prefix": true
+        },
+        "KG-IDG": {
+            "@id": "http://purl.obolibrary.org/obo/KG-IDG_",
+            "@prefix": true
+        },
+        "KG-MICROBE": {
+            "@id": "http://purl.obolibrary.org/obo/KG-MICROBE_",
+            "@prefix": true
+        },
+        "KG-MONARCH": {
+            "@id": "http://purl.obolibrary.org/obo/KG-MONARCH_",
+            "@prefix": true
+        },
+        "KGCL": {
+            "@id": "http://purl.obolibrary.org/obo/KGCL_",
+            "@prefix": true
+        },
+        "MIXS": {
+            "@id": "http://purl.obolibrary.org/obo/MIXS_",
+            "@prefix": true
+        },
+        "MOLECULAR-DATA-KP": {
+            "@id": "http://purl.obolibrary.org/obo/MOLECULAR-DATA-KP_",
             "@prefix": true
         },
         "MULTIOMICS-KP": {
             "@id": "http://purl.obolibrary.org/obo/MULTIOMICS-KP_",
             "@prefix": true
         },
+        "NEO": {
+            "@id": "http://purl.obolibrary.org/obo/NEO_",
+            "@prefix": true
+        },
         "ONTOLOGY-KP": {
             "@id": "http://purl.obolibrary.org/obo/ONTOLOGY-KP_",
             "@prefix": true
         },
+        "ORCID": {
+            "@id": "http://purl.obolibrary.org/obo/ORCID_",
+            "@prefix": true
+        },
+        "PETAGRAPH": {
+            "@id": "http://purl.obolibrary.org/obo/PETAGRAPH_",
+            "@prefix": true
+        },
+        "PHEKNOWLATOR": {
+            "@id": "http://purl.obolibrary.org/obo/PHEKNOWLATOR_",
+            "@prefix": true
+        },
+        "PHENIO": {
+            "@id": "http://purl.obolibrary.org/obo/PHENIO_",
+            "@prefix": true
+        },
         "PRIMEKG": {
             "@id": "http://purl.obolibrary.org/obo/PRIMEKG_",
+            "@prefix": true
+        },
+        "REACTO": {
+            "@id": "http://purl.obolibrary.org/obo/REACTO_",
+            "@prefix": true
+        },
+        "REACTOME": {
+            "@id": "http://purl.obolibrary.org/obo/REACTOME_",
+            "@prefix": true
+        },
+        "RHEA": {
+            "@id": "http://purl.obolibrary.org/obo/RHEA_",
+            "@prefix": true
+        },
+        "RNA-KG": {
+            "@id": "http://purl.obolibrary.org/obo/RNA-KG_",
             "@prefix": true
         },
         "RTX-KG2": {
@@ -40,20 +156,36 @@
             "@id": "http://purl.obolibrary.org/obo/SERVICE-KP_",
             "@prefix": true
         },
+        "SGD": {
+            "@id": "http://purl.obolibrary.org/obo/SGD_",
+            "@prefix": true
+        },
+        "SLDB": {
+            "@id": "http://purl.obolibrary.org/obo/SLDB_",
+            "@prefix": true
+        },
         "SPOKE": {
             "@id": "http://purl.obolibrary.org/obo/SPOKE_",
+            "@prefix": true
+        },
+        "SRI-REFERENCE-KG": {
+            "@id": "http://purl.obolibrary.org/obo/SRI-REFERENCE-KG_",
+            "@prefix": true
+        },
+        "SWISSLIPID": {
+            "@id": "http://purl.obolibrary.org/obo/SWISSLIPID_",
+            "@prefix": true
+        },
+        "TEXT-MINING-KP": {
+            "@id": "http://purl.obolibrary.org/obo/TEXT-MINING-KP_",
             "@prefix": true
         },
         "UBERGRAPH": {
             "@id": "http://purl.obolibrary.org/obo/UBERGRAPH_",
             "@prefix": true
         },
-        "http": {
-            "@id": "http://purl.obolibrary.org/obo/http_",
-            "@prefix": true
-        },
-        "obo": {
-            "@id": "http://purl.obolibrary.org/obo/obo_",
+        "UNIPROT": {
+            "@id": "http://purl.obolibrary.org/obo/UNIPROT_",
             "@prefix": true
         }
     }

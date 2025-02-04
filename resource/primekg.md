@@ -1,27 +1,27 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: primekg
-title: PrimeKG
+name: PrimeKG
 description: PrimeKG (Precision Medicine Knowledge Graph) integrates 20 high-quality biomedical resources to describe 17,080 diseases with over 4 million relationships across ten major biological scales.
 domain: health
-restype: "knowledge graph"
-contact:
-    github: marinkaz
-    label: Marinka Zitnik
-    email: marinka@hms.harvard.edu
-homepage: https://zitniklab.hms.harvard.edu/projects/PrimeKG
-tracker: https://github.com/mims-harvard/PrimeKG/issues
+contacts:
+- category: Individual
+  github: marinkaz
+  label: Marinka Zitnik
+  email: marinka@hms.harvard.edu
+url: https://zitniklab.hms.harvard.edu/projects/PrimeKG
 repository: https://github.com/mims-harvard/PrimeKG
 products:
 - id: primekg.csv
-  format: csv
-  title: PrimeKG Full Dataset
+  name: PrimeKG Full Dataset
   description: The full PrimeKG dataset containing disease relationships.
-  ontology_purl: https://dataverse.harvard.edu/api/access/datafile/6180620
+  url: https://dataverse.harvard.edu/api/access/datafile/6180620
+  category: GraphProduct
 license:
   label: MIT License
   url: https://opensource.org/licenses/MIT
+category: KnowledgeGraph
 ---
 
 ### PrimeKG: A Knowledge Graph for Precision Medicine

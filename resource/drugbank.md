@@ -1,37 +1,41 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: drugbank
-title: drugbank
+name: drugbank
 description: DrugBank
 domain: health
-preferredPrefix: obo
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0003-4423-4370
   github: cthoyt
   email: cthoyt@gmail.com
   label: Charles Tapley Hoyt
-homepage: https://biopragmatics.github.io/obo-db-ingest/
-tracker: https://github.com/biopragmatics/pyobo/issues
+url: https://biopragmatics.github.io/obo-db-ingest/
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: drugbank.owl
-  title: drugbank OWL release
+  name: drugbank OWL release
   description: OWL release of drugbank
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/drugbank/drugbank.owl
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/drugbank/drugbank.owl
+  category: Product
 - id: drugbank.obo
-  title: drugbank OBO release
+  name: drugbank OBO release
   description: OBO release of drugbank
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/drugbank/drugbank.obo
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/drugbank/drugbank.obo
+  category: Product
 - id: drugbank.sssom
-  title: drugbank SSSOM release
+  name: drugbank SSSOM release
   description: SSSOM release of drugbank
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/drugbank/drugbank.sssom
-uri_prefix: http://purl.obolibrary.org/obo/
-restype: "data resource"
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/drugbank/drugbank.sssom
+  category: MappingProduct
+category: DataGraph
 ---
 
 DrugBank

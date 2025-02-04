@@ -12,15 +12,15 @@ __all__ = [
 
 HERE = pathlib.Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
-ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology").resolve()
+RESOURCE_DIRECTORY = ROOT.joinpath("ontology").resolve()
 
-SCHEMA_PATH = HERE.joinpath("schema", "registry_schema.json")
+SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "kg_registry_schema.json")
 
 
 def get_data() -> Mapping[str, Mapping[str, Any]]:
     """Get the ontology metadata for all ontologies by parsing the frontmatter.."""
     ontologies = {}
-    for path in ONTOLOGY_DIRECTORY.glob("*.md"):
+    for path in RESOURCE_DIRECTORY.glob("*.md"):
         with path.open() as file:
             lines = [line.rstrip("\n") for line in file]
 

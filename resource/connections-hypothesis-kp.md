@@ -1,14 +1,15 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: connections-hypothesis-kp
-title: Connections Hypothesis KP
+name: Connections Hypothesis KP
 description: A Translator Knowledge Provider exploring connections hypotheses.
 domain: health
-restype: "knowledge graph"
-contact:
+category: KnowledgeGraph
+contacts:
+- category: Individual
   label: "Gregory Hyde"
-homepage: https://github.com/di2ag/chp_api
+url: https://github.com/di2ag/chp_api
 ---
 
 A Translator Knowledge Provider exploring connections hypotheses.
