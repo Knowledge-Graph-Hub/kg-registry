@@ -97,7 +97,7 @@ page.is_obsolete %}
             <td> KGX Available!</td>
             {% endif %}
             {% if p.infores_id %}
-            <td> {{p.infores_id}}</td>
+            <td> infores:{{p.infores_id}}</td>
             {% endif %}
           </tr>
           {% endfor %}
@@ -230,7 +230,7 @@ page.is_obsolete %}
       {% if page.infores_id %}
       <dt>Infores ID</dt>
       <dd>
-        {{page.infores_id}}
+        infores:{{page.infores_id}}
       </dd>
       {% endif %}
 
