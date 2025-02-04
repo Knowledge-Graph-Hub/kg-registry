@@ -1,30 +1,28 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: mixs
-title: mixs
+name: mixs
 description: mixs
 domain: environment
-preferredPrefix: http
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0002-6601-2165
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
-homepage: https://w3id.org/mixs
-tracker: https://w3id.org/mixs
+url: https://w3id.org/mixs
 repository: https://w3id.org/mixs
 products:
 - id: mixs.owl
-  title: mixs OWL release
+  name: mixs OWL release
   description: OWL release of mixs
-  aggregator: null
+  category: DataModelProduct
 - id: mixs.obo
-  title: mixs OBO release
+  name: mixs OBO release
   description: OBO release of mixs
-  aggregator: null
-uri_prefix: https://w3id.org/
-restype: "other"
+  category: DataModelProduct
+category: Resource
 ---
 
 mixs

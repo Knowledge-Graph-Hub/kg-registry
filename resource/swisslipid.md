@@ -1,37 +1,41 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: swisslipid
-title: swisslipid
+name: swisslipid
 description: SwissLipid
 domain: chemistry and biochemistry
-preferredPrefix: obo
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0003-4423-4370
   github: cthoyt
   email: cthoyt@gmail.com
   label: Charles Tapley Hoyt
-homepage: https://biopragmatics.github.io/obo-db-ingest/
-tracker: https://github.com/biopragmatics/pyobo/issues
+url: https://biopragmatics.github.io/obo-db-ingest/
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: swisslipid.owl
-  title: swisslipid OWL release
+  name: swisslipid OWL release
   description: OWL release of swisslipid
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.owl
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.owl
+  category: Product
 - id: swisslipid.obo
-  title: swisslipid OBO release
+  name: swisslipid OBO release
   description: OBO release of swisslipid
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.obo
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.obo
+  category: Product
 - id: swisslipid.sssom
-  title: swisslipid SSSOM release
+  name: swisslipid SSSOM release
   description: SSSOM release of swisslipid
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.sssom
-uri_prefix: http://purl.obolibrary.org/obo/
-restype: "data resource"
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.sssom
+  category: MappingProduct
+category: DataGraph
 ---
 
 SwissLipid

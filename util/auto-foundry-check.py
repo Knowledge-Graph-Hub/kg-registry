@@ -46,7 +46,7 @@ def main():
 
     data = yaml.load(args.ontologies, Loader=yaml.SafeLoader)
     reviews = []
-    for ontology in data["ontologies"]:
+    for ontology in data["resources"]:
         if "is_obsolete" in ontology:
             continue
         reviews.append(review_ontology(ontology))

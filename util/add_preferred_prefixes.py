@@ -15,7 +15,7 @@ import click
 import yaml
 
 HERE = pathlib.Path(__file__).parent.resolve()
-ONTOLOGY_DIRECTORY = HERE.parent.joinpath("ontology").resolve()
+RESOURCE_DIRECTORY = HERE.parent.joinpath("ontology").resolve()
 
 
 def update_markdown(path: Union[str, pathlib.Path]) -> None:
@@ -53,7 +53,7 @@ def update_markdown(path: Union[str, pathlib.Path]) -> None:
 
 @click.command()
 def main():
-    for path in ONTOLOGY_DIRECTORY.glob("*.md"):
+    for path in RESOURCE_DIRECTORY.glob("*.md"):
         update_markdown(path)
 
 
