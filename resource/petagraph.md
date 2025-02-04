@@ -1,24 +1,25 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: petagraph
-title: Petagraph
+name: Petagraph
 description: Petagraph is a large-scale biomedical knowledge graph integrating multi-omics and clinical data, built on the Unified Biomedical Knowledge Graph (UBKG).
 domain: health
-restype: "knowledge graph"
-contact:
-  - label: Deanne M. Taylor
-homepage: https://github.com/TaylorResearchLab/Petagraph
-tracker: https://github.com/TaylorResearchLab/Petagraph/issues
+contacts:
+  - category: Individual
+    label: Deanne M. Taylor
+url: https://github.com/TaylorResearchLab/Petagraph
 repository: https://github.com/TaylorResearchLab/Petagraph
 products:
 - id: petagraph
-  format: neo4j
-  title: Petagraph Knowledge Graph
+  name: Petagraph Knowledge Graph (Neo4J)
   description: A multi-omics biomedical knowledge graph
-  ontology_purl: https://ubkg-downloads.xconsortia.org/
+  url: https://ubkg-downloads.xconsortia.org/
+  category: GraphProduct
 license:
   label: UMLS
+  url: https://www.nlm.nih.gov/databases/umls.html
+category: KnowledgeGraph
 ---
 
 ### Petagraph: A Scalable Biomedical Knowledge Graph
