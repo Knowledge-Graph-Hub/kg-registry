@@ -42,7 +42,7 @@ def main(args):
     print("[")
     print(" sh:declare")
     sep = ""
-    for ont in data["ontologies"]:
+    for ont in data["resources"]:
         # if ont.get("is_obsolete", False):
         #    continue
         # See https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1976
