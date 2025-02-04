@@ -16,6 +16,7 @@
 ,[ sh:prefix "GENETICS-KP" ; sh:namespace "http://purl.obolibrary.org/obo/GENETICS-KP_"]
 ,[ sh:prefix "GOLDTERMS" ; sh:namespace "http://purl.obolibrary.org/obo/GOLDTERMS_"]
 ,[ sh:prefix "HGNC" ; sh:namespace "http://purl.obolibrary.org/obo/HGNC_"]
+,[ sh:prefix "HRA-KG" ; sh:namespace "http://purl.obolibrary.org/obo/HRA-KG_"]
 ,[ sh:prefix "ICEES-KG" ; sh:namespace "http://purl.obolibrary.org/obo/ICEES-KG_"]
 ,[ sh:prefix "INTERPRO" ; sh:namespace "http://purl.obolibrary.org/obo/INTERPRO_"]
 ,[ sh:prefix "KG-COVID-19" ; sh:namespace "http://purl.obolibrary.org/obo/KG-COVID-19_"]

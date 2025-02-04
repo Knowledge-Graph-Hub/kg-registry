@@ -380,6 +380,24 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
+    label: Katy Börner
+  description: The HRA Knowledge Graph (HRA KG) is a linked open data resource that
+    integrates anatomical structures, cell types, and biomarkers to support cross-scale
+    biological queries.
+  domain: health
+  id: hra-kg
+  layout: resource_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/4.0/
+  name: Human Reference Atlas Knowledge Graph (HRA KG)
+  repository: https://github.com/hubmapconsortium/hra-kg
+  url: https://apps.humanatlas.io/dashboard/data
+- activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Individual
     email: kfecho@renci.org
     github: karafecho
     label: Kara Fecho
