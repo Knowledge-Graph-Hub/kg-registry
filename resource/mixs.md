@@ -22,7 +22,7 @@ products:
   name: mixs OBO release
   description: OBO release of mixs
   category: DataModelProduct
-category: Resource
+category: DataModel
 ---
 
 mixs

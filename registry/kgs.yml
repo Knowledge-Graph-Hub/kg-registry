@@ -589,7 +589,7 @@ resources:
   repository: https://github.com/INCATools/kgcl/
   url: https://w3id.org/kgcl
 - activity_status: active
-  category: Resource
+  category: DataModel
   contacts:
   - category: Individual
     email: cjmungall@lbl.gov
