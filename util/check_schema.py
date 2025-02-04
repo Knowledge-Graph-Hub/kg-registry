@@ -62,7 +62,7 @@ def _check_schema(max_cutoff: int = 3, links: bool = True):
                 for k, prefixes in r.items()
             ],
             tablefmt="github",
-            headers=["key", "ontologies"],
+            headers=["key", "resources"],
         )
     )
 

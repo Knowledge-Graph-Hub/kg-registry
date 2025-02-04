@@ -3,7 +3,7 @@
 import requests
 import yaml
 
-from obofoundry.constants import ONTOLOGY_DIRECTORY, ROOT
+from obofoundry.constants import ROOT
 
 __all__ = [
     "get_data",
@@ -15,7 +15,7 @@ __all__ = [
 def get_data():
     """Get ontology data."""
     ontologies = {}
-    for path in ONTOLOGY_DIRECTORY.glob("*.md"):
+    for path in RESOURCE_DIRECTORY.glob("*.md"):
         with open(path) as file:
             lines = [line.rstrip("\n") for line in file]
 
@@ -55,5 +55,5 @@ def get_new_data():
     data = get_data()
     config_path = ROOT.joinpath("_config.yml")
     config_data = yaml.safe_load(config_path.read_text())
-    published = {record["id"] for record in config_data["ontologies"]}
+    published = {record["id"] for record in config_data["resources"]}
     return {prefix: record for prefix, record in data.items() if prefix not in published}

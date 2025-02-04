@@ -1,25 +1,24 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: biolink
-title: Biolink-Model
+name: Biolink-Model
 description: Entity and association taxonomy and datamodel for life-sciences data
 domain: upper
-restype: "data model"
-preferredPrefix: http
-contact:
+category: DataModel
+contacts:
+- category: Individual
   orcid: 0000-0002-8719-7760
   github: sierra-moxon
   email: smoxon@lbl.gov
   label: Sierra Taylor Moxon
-homepage: https://w3id.org/biolink/biolink-model.owl.ttl
-tracker: https://github.com/biolink/biolink-model/issues
+url: https://w3id.org/biolink/biolink-model.owl.ttl
 repository: https://github.com/biolink/biolink-model/
 products:
 - id: biolink-model.owl.ttl
-  title: Biolink-Model OWL release
+  name: Biolink-Model OWL release
   description: OWL release of Biolink-Model
-uri_prefix: https://w3id.org/biolink/
+  category: DataModelProduct
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/
