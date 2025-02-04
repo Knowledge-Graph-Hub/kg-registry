@@ -10,7 +10,7 @@ import pathlib
 import click
 
 HERE = pathlib.Path(__file__).parent.resolve()
-ONTOLOGY_DIRECTORY = HERE.parent.joinpath("ontology").resolve()
+RESOURCE_DIRECTORY = HERE.parent.joinpath("ontology").resolve()
 
 
 @click.command()
@@ -21,7 +21,7 @@ def main(old_label: str, new_label: str):
     old_line = f"domain: {old_label}"
     new_line = f"domain: {new_label}"
 
-    for path in ONTOLOGY_DIRECTORY.glob("*.md"):
+    for path in RESOURCE_DIRECTORY.glob("*.md"):
         with path.open() as file:
             lines = [line.rstrip("\n") for line in file]
 

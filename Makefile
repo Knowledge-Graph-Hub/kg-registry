@@ -28,12 +28,16 @@
 
 ### Configuration
 
+RUN = poetry run
+
 # All KG .md files
 KGS := $(wildcard resource/*.md)
 
 # All principles .md files
 PRINCIPLES := $(wildcard principles/*.md)
 
+# Path to the source KG-Registry schema
+SOURCE_SCHEMA = src/kg_registry/kg_registry_schema/schema/kg_registry_schema.yaml
 
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
@@ -49,11 +53,13 @@ test: reports/metadata-grid.html _config.yml tox
 
 integration-test: test valid-purl-report.txt
 
-# Remove and/or revert all targets to their repository versions:
+# Remove and/or revert all targets to their repository versions
 clean:
 	rm -Rf registry/kgs.nt registry/kgs.ttl registry/kgs.yml sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
 	git checkout _config.yml registry/kgs.jsonld registry/kgs.ttl registry/kgs.yml
 
+clean-schema:
+	rm -Rf src/kg_registry/kg_registry_schema/datamodel/*.py src/kg_registry/kg_registry_schema/*.json
 
 ### Directories:
 
@@ -72,7 +78,7 @@ reports/principles:
 
 ### Build Configuration Files
 
-# Create the site-wide config file by combining all metadata on kgs + principles
+# Create the site-wide config file by combining all metadata on resources + principles
 #  and combining with site-wide metadata.
 #
 # Note that anything in _config.yml is accessible to any liquid template via the
@@ -82,9 +88,9 @@ reports/principles:
 _config.yml: _config_header.yml registry/kgs.yml principles/all.yml
 	cat $^ > $@.tmp && mv $@.tmp $@
 
-# Sort kgs based on the validation (metadata-grid)
+# Sort resources based on the validation (metadata-grid)
 registry/kgs.yml: reports/metadata-grid.csv
-	./util/sort-ontologies.py tmp/unsorted-ontologies.yml $< $@ && rm -rf tmp
+	./util/sort-resources.py tmp/unsorted-resources.yml $< $@ && rm -rf tmp
 
 # Extract the metadata from each principle in the principles/ directory, and concatenate
 # into a single yaml file in that directory
@@ -116,9 +122,9 @@ registry/kgs.ttl: registry/kgs.nt
 ### Validate Configuration Files
 
 # generate both a report of the violations and a grid of all results
-# the grid is later used to sort the ontologies on the home page
+# the grid is later used to sort the resources on the home page
 RESULTS = reports/metadata-violations.tsv reports/metadata-grid.csv
-reports/metadata-grid.csv: tmp/unsorted-ontologies.yml | extract-metadata reports
+reports/metadata-grid.csv: tmp/unsorted-resources.yml | extract-metadata reports
 	./util/validate-metadata.py $< $(RESULTS)
 
 # generate an HTML output of the metadata grid
@@ -126,10 +132,11 @@ reports/metadata-grid.csv: tmp/unsorted-ontologies.yml | extract-metadata report
 reports/metadata-grid.html: reports/metadata-grid.csv
 	./util/create-html-grid.py $< $@
 
-# Extract metadata from each KG .md file and combine into single yaml
-tmp/unsorted-ontologies.yml: $(KGS) | tmp
+# Extract metadata from each resource .md file and combine into single yaml
+tmp/unsorted-resources.yml: $(KGS) | tmp
 	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
 
+# Run validation, including with LinkML validator
 extract-metadata: $(KGS)
 	./util/extract-metadata.py validate $^
 
@@ -160,7 +167,7 @@ dashboard: build/dashboard.zip
 # Build directories
 build:
 	mkdir -p $@
-build/ontologies:
+build/resource:
 	mkdir -p $@
 
 # reboot the JVM for Py4J
@@ -185,7 +192,7 @@ build/robot-foreign.jar: | build
 # ALWAYS make sure nothing is running on port 25333
 # Then boot Py4J gateway to ROBOT on that port
 reports/dashboard.csv: registry/kgs.yml | \
-reports/robot reports/principles build/ontologies build/robot.jar build/robot-foreign.jar
+reports/robot reports/principles build/resource build/robot.jar build/robot-foreign.jar
 	make reboot
 	./util/principles/dashboard.py $< $@ --big false
 
@@ -213,11 +220,11 @@ build/dashboard: reports/dashboard.html
 	rm -rf build/dashboard.zip
 	zip -r $@.zip $@
 
-# Clean up, removing ontology files
+# Clean up, removing files
 # We don't want to keep them because we will download new ones each time to stay up-to-date
 # Reports are all archived in build/dashboard.zip
 clean-dashboard: build/dashboard
-	rm -rf build/ontologies
+	rm -rf build/resource
 	rm -rf reports/robot
 	rm -rf reports/principles
 	rm -rf build/dashboard
@@ -225,11 +232,6 @@ clean-dashboard: build/dashboard
 
 # Note this should *not* be run as part of general travis jobs, it is expensive
 # and may be prone to false positives as it is inherently network-based
-#
-# TODO: Other non-travis CI job. Nightly?
-# TODO: Integrate this with some kind of OCLC query check
-#
-# See: https://github.com/OBOFoundry/OBOFoundry.github.io/issues/18
 valid-purl-report.txt: registry/kgs.yml
 	./util/processor.py -i $< check-urls > $@.tmp && mv $@.tmp $@
 
@@ -244,4 +246,4 @@ jenkins-output.txt:
 reports/%.csv: registry/kgs.ttl sparql/%.sparql
 	arq --data $< --query sparql/$*.sparql --results csv > $@.tmp && mv $@.tmp $@
 
-#include kg.Makefile
+include kg.Makefile

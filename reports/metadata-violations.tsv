@@ -24,6 +24,7 @@ INFO	MULTIOMICS-KP products: 'products' is a required property
 INFO	ONTOLOGY-KP products: 'products' is a required property
 INFO	PHEKNOWLATOR products: 'products' is a required property
 INFO	PHENIO products: 'phenio.kgx' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
+INFO	PRIMEKG preferredPrefix: 'preferredPrefix' is a required property
 INFO	REACTO products: None is not of type 'string'
 INFO	REACTOME products: 'reactome-hs-biopax.db.gz' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'
 INFO	RHEA products: 'rhea.sssom' does not match '^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$'

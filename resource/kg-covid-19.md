@@ -1,18 +1,17 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: kg-covid-19
-title: KG-COVID-19
+name: KG-COVID-19
 description: A knowledge graph for COVID-19 and SARS-COV-2.
 domain: organisms
-contact:
+contacts:
+- category: Individual
   github: justaddcoffee
   label: Justin Reese
-preferredPrefix: http
-homepage: https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki
-tracker: https://github.com/Knowledge-Graph-Hub/kg-covid-19/issues
+url: https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki
 repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
-restype: "knowledge graph"
+category: KnowledgeGraph
 ---
 
 KG-COVID-19: a knowledge graph for COVID-19 and SARS-COV-2.
