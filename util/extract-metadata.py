@@ -2,20 +2,26 @@
 
 import argparse
 import sys
+import pathlib
 
 import frontmatter
 import yaml
 from frontmatter.util import u
+from linkml.validator import validate
 from ruamel.yaml import YAML
 from ruamel.yaml.compat import StringIO
 from yamllint import config, linter
 
 __author__ = "cjm"
+HERE = pathlib.Path(__file__).parent.resolve()
+ROOT = HERE.parent.resolve()
+SOURCE_SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "schema", "kg_registry_schema.yaml")
+SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "kg_registry_schema.json")
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Helper utils for OBO",
+        description="Helper utils for KG-Registry",
         formatter_class=argparse.RawTextHelpFormatter,
     )
 
@@ -23,28 +29,18 @@ def main():
 
     # SUBCOMMAND
     parser_n = subparsers.add_parser("validate", help="validate yaml inside md")
-    # parser_n.add_argument('-d', '--depth', type=int, help='number of hops')
     parser_n.set_defaults(function=validate_markdown)
     parser_n.add_argument("files", nargs="*")
     parser_n = subparsers.add_parser(
-        "prettify", help="prettify YAML block in registry ontolgoy Markdown files"
+        "prettify", help="prettify YAML block in registry Markdown files"
     )
     parser_n.set_defaults(function=prettify)
     parser_n.add_argument("files", nargs="*")
     # SUBCOMMAND
-    parser_n = subparsers.add_parser("concat", help="concat ontology yamls")
+    parser_n = subparsers.add_parser("concat", help="concat resource yamls")
     parser_n.add_argument("-i", "--include", help="yaml file to include for header")
     parser_n.add_argument("-o", "--output", help="output yaml file")
-    parser_n.set_defaults(function=concat_ont_yaml)
-    parser_n.add_argument("files", nargs="*")
-
-    # SUBCOMMAND
-    parser_n = subparsers.add_parser(
-        "concat-principles", help="concat principles yamls"
-    )
-    parser_n.add_argument("-i", "--include", help="yaml file to include for header")
-    parser_n.add_argument("-o", "--output", help="output yaml")
-    parser_n.set_defaults(function=concat_principles_yaml)
+    parser_n.set_defaults(function=concat_resource_yaml)
     parser_n.add_argument("files", nargs="*")
 
     args = parser.parse_args()
@@ -92,40 +88,29 @@ def validate_markdown(args):
 
     First attempt to strip the yaml from the .md file, second use the standard python yaml parser
     to parse the embedded yaml. If it can't be passed then an error will be thrown and a stack
-    trace shown. In future we may try and catch this error and provide a user-friendly report).
+    trace shown.
 
-    In future we also perform additional structural validation on the yaml - check certain fields
-    are present etc. This could be done in various ways, e.g. jsonschema, programmatic checks. We
-    should also check translation -> jsonld -> rdf works as expected.
+    This also uses the LinkML schema to validate the yaml.
     """
-
-    def validate_structure(obj):
-        """
-        Given an object, check to see if it has 'id', 'title', and 'layout' fields. If any are
-        missing, collect them in a list of errors which is then returned.
-        """
-        errs = []
-        id = obj.get("id") or ""
-        if not id:
-            errs.append("No id: ")
-        if "title" not in obj:
-            errs.append("No title: " + id)
-        if "layout" not in obj:
-            errs.append(
-                "No layout tag: " + id + " -- this is required for proper rendering"
-            )
-        # is_obsolete = ('is_obsolete' in obj)
-        # if 'description' not in obj:
-        #   errs.append("No description: " + id + " " + ("OBS" if is_obsolete else ""))
-        return errs
 
     errs = []
     warn = []
     for fn in args.files:
-        # we don't do anything with the results; an
-        # error is thrown
+        # Check to see if we can parse the yaml frontmatter first
         if not frontmatter.check(fn):
             errs.append("%s does not contain frontmatter" % (fn))
+        
+        # Run LinkML validator
+        (obj, md) = load_md(fn)
+        report = validate(instance=obj, schema=SOURCE_SCHEMA_PATH, target_class="Resource")
+        if not report.results:
+            print(f"No schema validation errors found for {fn}")
+        else:
+            for result in report.results:
+                if result.severity == "ERROR":
+                    errs.append(f"{fn}: {result.message}")
+
+        # Now run yaml linter to check for basic syntax errors and formatting
         yamltext = get_YAML_text(fn)
         yaml_config = config.YamlLintConfig(file="util/config.yamllint")
         for p in linter.run("---\n" + yamltext, yaml_config):
@@ -133,8 +118,7 @@ def validate_markdown(args):
                 errs.append(f"%s: {p}" % (fn))
             elif p.level == "warning":
                 warn.append(f"%s: {p}" % (fn))
-        (obj, md) = load_md(fn)
-        errs += validate_structure(obj)
+
     if len(warn) > 0:
         print("WARNINGS:", file=sys.stderr)
         for w in warn:
@@ -146,57 +130,19 @@ def validate_markdown(args):
         sys.exit(1)
 
 
-def concat_ont_yaml(args):
+def concat_resource_yaml(args):
     """
     Given arguments with files and ouput,
-    read YAML files into an array, decorate the objects, and write an output YAML file.
-    Output will be Foundry ontologies first, Library ontologies second, and obsolete last.
+    read YAML files into an array and write an output YAML file.
+    Output will be concatenated list of all resource metadata.
     Assumes that args.files is already sorted alphabetically.
     """
 
-    def has_obo_prefix(obj):
-        """
-        Check to see if the given object's 'uri_prefix' (if present) maps to the OBO PURL
-        """
-        return ("uri_prefix" not in obj) or (
-            obj["uri_prefix"] == "http://purl.obolibrary.org/obo/"
-        )
-
-    def has_a_product(obj):
-        """
-        Check to see if the given object has at least one product.
-        """
-        return "products" in obj and len(obj["products"]) > 0
-
-    def decorate_entry(obj, suffix=""):
-        """
-        Decorates EITHER an ontology metadata object OR a product object with a purl.
-
-        Each object has an identifier which either identifies the ontology sensu grouping
-        project (e.g. 'go') or a specific product (e.g. 'go.obo' or 'go.owl').
-
-        By default each id is prefixed with the OBO prefix (unless is has an alternate prefix,
-        in which case it is effectively ignored).
-        """
-        id = obj.get("id") or "None"
-        if not obj.get("ontology_purl"):
-            if "is_obsolete" not in obj:
-                if has_obo_prefix(obj):
-                    obj["ontology_purl"] = "http://purl.obolibrary.org/obo/" + id + suffix
-                else:
-                    if "uri_prefix" in obj:
-                        obj["ontology_purl"] = obj["uri_prefix"] + id + suffix
-
     def decorate_metadata(objs):
         """
-        Add the logo corresponding to the given object's license (if it has one), and decorate
-        it with PURLs it has any products.
-        See: https://github.com/OBOFoundry/OBOFoundry.github.io/issues/82
+        Add the logo corresponding to the given object's license (if it has one).
         """
-        # TODO: decide on canonical URI to use for CC licenses;
-        #  ultimately this should all be specified in RDF/JSON-LD.
-        #  e.g. <http://creativecommons.org/licenses/by/3.0> foaf:depictedBy < ... > .
-        #  e.g. <http://creativecommons.org/licenses/by/3.0> owl:sameAs <https://creativecommons.org/licenses/by/3.0> .
+
         for obj in objs:
             if "license" in obj:
                 # https://creativecommons.org/about/downloads
@@ -204,18 +150,17 @@ def concat_ont_yaml(args):
                 lurl = license["url"]
                 logo = ""
                 if lurl.find("creativecommons.org/licenses/by-sa") > 0:
-                    logo = "https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png"
+                    logo = (
+                        "https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png"
+                    )
                 elif lurl.find("creativecommons.org/licenses/by/") > 0:
                     logo = "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
                 elif lurl.find("creativecommons.org/publicdomain/zero/") > 0:
-                    logo = "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
+                    logo = (
+                        "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
+                    )
                 if logo:
                     license["logo"] = logo
-            if has_a_product(obj):
-                # decorate top-level ontology; but only if it has at least one product
-                decorate_entry(obj, ".owl")
-                for product in obj["products"]:
-                    decorate_entry(product)
 
     objs = []
     foundry = []
@@ -227,37 +172,10 @@ def concat_ont_yaml(args):
             cfg = yaml.load(f.read(), Loader=yaml.SafeLoader)
     for fn in args.files:
         (obj, md) = load_md(fn)
-        if obj.get("is_obsolete"):
-            obsolete.append(obj)
-        elif "in_foundry_order" in obj:
-            foundry.append(obj)
-        else:
-            library.append(obj)
+        library.append(obj)
     objs = foundry + library + obsolete
-    cfg["ontologies"] = objs
+    cfg["resources"] = objs
     decorate_metadata(objs)
-    with open(args.output, "w") as f:
-        f.write(yaml.dump(cfg))
-    return cfg
-
-
-def concat_principles_yaml(args):
-    """
-    Concatenate all of the principles .md files given in the command line arguments and
-    add them to the 'principles' field of the YAML object that is returned. If the
-    --include command line option has been specified, then the YAML will include information
-    from that file.
-    """
-    objs = []
-    cfg = {}
-    if args.include:
-        with open(args.include, "r") as f:
-            cfg = yaml.load(f.read(), Loader=yaml.SafeLoader)
-    for fn in args.files:
-        (obj, md) = load_md(fn)
-        objs.append(obj)
-    objs.sort(key=lambda x: x["id"])
-    cfg["principles"] = objs
     with open(args.output, "w") as f:
         f.write(yaml.dump(cfg))
     return cfg
@@ -279,17 +197,6 @@ def get_YAML_text(fn):
         chunks = text.split("---")
         yamltext = chunks[1].strip()
         return yamltext
-
-
-# def extract(mdtext, fn = "foo"):
-#   """
-#   Extract a yaml text blob from markdown text and parse the blob.
-#
-#   Returns a tuple (yaml_obj, markdown_text)
-#   """
-#
-#   obj = frontmatter.load()
-#   return (obj, "\n".join(mlines))
 
 
 if __name__ == "__main__":

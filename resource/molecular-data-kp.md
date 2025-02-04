@@ -1,29 +1,34 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: molecular-data-kp
-title: Molecular Data KP
+name: Molecular Data KP
 description: A Translator Knowledge Provider for molecular data.
 domain: health
-restype: "knowledge graph"
-contact:
+category: KnowledgeGraph
+contacts:
+- category: Individual
   label: "Sandrine Muller"
   orcid: 0000-0001-5998-3003
-homepage: ""
-tracker: ""
+url: ""
 repository: ""
-preferredPrefix: http
 products:
 - id: nodes.tsv
-  format: kgx
+  name: Nodes for Molecular Data KP
+  is_kgx: true
   description: KGX nodes for Molecular Data KP
-  ontology_purl: https://molepro.s3.amazonaws.com/nodes.tsv
+  url: https://molepro.s3.amazonaws.com/nodes.tsv
+  category: GraphProduct
 - id: edges.tsv
-  format: kgx
+  name: Edges for Molecular Data KP
+  is_kgx: true
   description: KGX edges for Molecular Data KP
-  ontology_purl: https://molepro.s3.amazonaws.com/edges.tsv
+  url: https://molepro.s3.amazonaws.com/edges.tsv
+  category: GraphProduct
 ---
 
 A Translator Knowledge Provider for molecular data.
 
-Contacts: Sandrine Muller, Vlado Dancik, and Larry Chung
+contacts:
+- category: Individual
+ Sandrine Muller, Vlado Dancik, and Larry Chung
