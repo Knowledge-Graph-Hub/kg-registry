@@ -36,6 +36,8 @@ products:
   url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom
   category: MappingProduct
 category: DataGraph
+fairsharing_id: FAIRsharing.amcv1e
+infores_id: hgnc
 ---
 
 HUGO Gene Nomenclature Committee
