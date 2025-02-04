@@ -39,6 +39,7 @@
 ,[ sh:prefix "REACTOME" ; sh:namespace "http://purl.obolibrary.org/obo/REACTOME_"]
 ,[ sh:prefix "RHEA" ; sh:namespace "http://purl.obolibrary.org/obo/RHEA_"]
 ,[ sh:prefix "RNA-KG" ; sh:namespace "http://purl.obolibrary.org/obo/RNA-KG_"]
+,[ sh:prefix "ROBOKOP" ; sh:namespace "http://purl.obolibrary.org/obo/ROBOKOP_"]
 ,[ sh:prefix "RTX-KG2" ; sh:namespace "http://purl.obolibrary.org/obo/RTX-KG2_"]
 ,[ sh:prefix "SERVICE-KP" ; sh:namespace "http://purl.obolibrary.org/obo/SERVICE-KP_"]
 ,[ sh:prefix "SGD" ; sh:namespace "http://purl.obolibrary.org/obo/SGD_"]
