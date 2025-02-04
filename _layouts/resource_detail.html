@@ -224,12 +224,14 @@ page.is_obsolete %}
       </dd>
       {% endif %}
 
-      {% if page.mailing_list %}
-      <dt>Mailing List</dt>
+      {% if page.fairsharing_id %}
+      <dt>FAIRsharing ID</dt>
       <dd>
-        <a href="{{page.mailing_list}}">{{page.mailing_list}}</a>
+        <a href="https://fairsharing.org/{{page.fairsharing_id}}">{{page.fairsharing_id}}</a>
       </dd>
-      {% endif %} {% if page.taxon %}
+      {% endif %}
+      
+      {% if page.taxon %}
       <dt>Taxon</dt>
       <dd>
         <a href="http://amigo.geneontology.org/amigo/term/{{page.taxon.id}}"
