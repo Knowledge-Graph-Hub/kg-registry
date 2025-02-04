@@ -1,18 +1,17 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: rna-kg
-title: RNA-KG
+name: RNA-KG
 description: An ontology-based KG for representing interactions involving RNA molecules.
 domain: organisms
-contact:
+contacts:
+- category: Individual
   github: emanuelecavalleri
   label: Emanuele Cavalleri
-preferredPrefix: http
-homepage: RNA-KG.anacleto.di.unimi.it/
-tracker: https://github.com/AnacletoLAB/RNA-KG/issues
+url: RNA-KG.anacleto.di.unimi.it/
 repository: https://github.com/AnacletoLAB/RNA-KG
-restype: "knowledge graph"
+category: KnowledgeGraph
 ---
 
 RNA-KG: An ontology-based KG for representing interactions involving RNA molecules

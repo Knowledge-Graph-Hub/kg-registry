@@ -1,30 +1,28 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: reacto
-title: Reactome Entity Ontology (REACTO)
+name: Reactome Entity Ontology (REACTO)
 description: Representation of entities in Reactome
 domain: biological systems
-preferredPrefix: obo
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0002-7334-7852
   github: goodb
   email: ben.mcgee.good@gmail.com
   label: Benjamin M. Good
-homepage: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
-tracker: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
+url: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
 repository: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
 products:
 - id: reacto.owl
-  title: Reactome Entity Ontology (REACTO) OWL release
+  name: Reactome Entity Ontology (REACTO) OWL release
   description: OWL release of Reactome Entity Ontology (REACTO)
-  aggregator: null
+  category: Product
 - id: reacto.obo
-  title: Reactome Entity Ontology (REACTO) OBO release
+  name: Reactome Entity Ontology (REACTO) OBO release
   description: OBO release of Reactome Entity Ontology (REACTO)
-  aggregator: null
-uri_prefix: http://purl.obolibrary.org/obo/go/extensions/
-restype: "other"
+  category: Product
+category: Resource
 ---
 
 For logical inference, import the integrated tbox ontology http://purl.obolibrary.org/obo/go/extensions/go-lego-reacto.owl

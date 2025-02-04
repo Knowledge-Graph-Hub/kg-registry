@@ -1,93 +1,128 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: automat
-title: Automat
+name: Automat
 description: A Translator Knowledge Provider offering multiple sub-graphs in KGX format.
 domain: health
-restype: "knowledge graph"
-contact:
+category: KnowledgeGraph
+contacts:
+- category: Individual
   label: "Yaphet Kebede"
   email: kebedey@renci.org
   github: YaphetKG
   orcid: 0000-0002-5046-0246
-homepage: https://robokop.renci.org/api-docs/docs/category/automat
-tracker: ""
+url: https://robokop.renci.org/api-docs/docs/category/automat
 repository: ""
-preferredPrefix: http
 products:
 - id: robokopkg
-  format: kgx
+  name: robokopkg
+  is_kgx: true
   description: Robokop KG (Automat)
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files
+  category: GraphProduct
 - id: robokopplus
-  format: kgx
+  name: robokopplus
+  is_kgx: true
   description: Robokop Plus
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files
+  category: GraphProduct
 - id: biolink_automat
-  format: kgx
+  name: biolink_automat
+  is_kgx: true
   description: Biolink Automat
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
+  category: GraphProduct
 - id: ctd_automat
-  format: kgx
+  name: ctd_automat
+  is_kgx: true
   description: CTD Automat
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files
+  category: GraphProduct
 - id: drugcentral_automat
-  format: kgx
+  name: drugcentral_automat
+  is_kgx: true
   description: DrugCentral Automat
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
+  category: GraphProduct
 - id: gtex_automat
-  format: kgx
+  name: gtex_automat
+  is_kgx: true
   description: GTEx Automat
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/GTEx_Automat/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/GTEx_Automat/latest/kgx_files
+  category: GraphProduct
 - id: gtopdb_automat
-  format: kgx
+  name: gtopdb_automat
+  is_kgx: true
   description: GtoPdb Automat
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/GtoPdb_Automat/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/GtoPdb_Automat/latest/kgx_files
+  category: GraphProduct
 - id: gwascatalog_automat
-  format: kgx
+  name: gwascatalog_automat
+  is_kgx: true
   description: GWASCatalog Automat
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/GWASCatalog_Automat/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/GWASCatalog_Automat/latest/kgx_files
+  category: GraphProduct
 - id: hetio_automat
-  format: kgx
+  name: hetio_automat
+  is_kgx: true
   description: Hetio Automat
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/Hetio_Automat/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/Hetio_Automat/latest/kgx_files
+  category: GraphProduct
 - id: hgnc_automat
-  format: kgx
+  name: hgnc_automat
+  is_kgx: true
   description: HGNC Automat
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/HGNC_Automat/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/HGNC_Automat/latest/kgx_files
+  category: GraphProduct
 - id: hmdb_automat
-  format: kgx
+  name: hmdb_automat
+  is_kgx: true
   description: HMDB Automat
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/HMDB_Automat/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/HMDB_Automat/latest/kgx_files
+  category: GraphProduct
 - id: humangoa_automat
-  format: kgx
+  name: humangoa_automat
+  is_kgx: true
   description: HumanGOA Automat
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/HumanGOA_Automat/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/HumanGOA_Automat/latest/kgx_files
+  category: GraphProduct
 - id: intact_automat
-  format: kgx
+  name: intact_automat
+  is_kgx: true
   description: IntAct Automat
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/IntAct_Automat/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/IntAct_Automat/latest/kgx_files
+  category: GraphProduct
 - id: ontologicalhierarchy_automat
-  format: kgx
+  name: ontologicalhierarchy_automat
+  is_kgx: true
   description: OntologicalHierarchy Automat
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/OntologicalHierarchy_Automat/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/OntologicalHierarchy_Automat/latest/kgx_files
+  category: GraphProduct
 - id: panther_automat
-  format: kgx
+  name: panther_automat
+  is_kgx: true
   description: PANTHER Automat
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/PANTHER_Automat/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/PANTHER_Automat/latest/kgx_files
+  category: GraphProduct
 - id: pharos_automat
-  format: kgx
+  name: pharos_automat
+  is_kgx: true
   description: PHAROS Automat
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/PHAROS_Automat/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/PHAROS_Automat/latest/kgx_files
+  category: GraphProduct
 - id: stringdb_automat
-  format: kgx
+  name: stringdb_automat
+  is_kgx: true
   description: STRING-DB Automat
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/STRING-DB_Automat/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/STRING-DB_Automat/latest/kgx_files
+  category: GraphProduct
 - id: ubergraph_automat
-  format: kgx
+  name: ubergraph_automat
+  is_kgx: true
   description: UberGraph Automat
-  ontology_purl: https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files
+  url: https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files
+  category: GraphProduct
 ---
 
 A Translator Knowledge Provider offering multiple sub-graphs in KGX format.

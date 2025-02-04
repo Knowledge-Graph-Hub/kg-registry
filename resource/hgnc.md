@@ -1,37 +1,41 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: hgnc
-title: hgnc
+name: hgnc
 description: HUGO Gene Nomenclature Committee
 domain: biological systems
-preferredPrefix: obo
-contact:
+contacts:
+- category: Individual
   orcid: 0000-0003-4423-4370
   github: cthoyt
   email: cthoyt@gmail.com
   label: Charles Tapley Hoyt
-homepage: https://biopragmatics.github.io/obo-db-ingest/
-tracker: https://github.com/biopragmatics/pyobo/issues
+url: https://biopragmatics.github.io/obo-db-ingest/
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: hgnc.owl
-  title: hgnc OWL release
+  name: hgnc OWL release
   description: OWL release of hgnc
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl
+  category: Product
 - id: hgnc.obo
-  title: hgnc OBO release
+  name: hgnc OBO release
   description: OBO release of hgnc
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo
+  category: Product
 - id: hgnc.sssom
-  title: hgnc SSSOM release
+  name: hgnc SSSOM release
   description: SSSOM release of hgnc
-  aggregator: biopragmatics
-  ontology_purl: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom
-uri_prefix: http://purl.obolibrary.org/obo/
-restype: "data resource"
+  tags:
+    - biopragmatics
+  url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom
+  category: MappingProduct
+category: DataGraph
 ---
 
 HUGO Gene Nomenclature Committee

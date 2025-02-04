@@ -1,18 +1,17 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: eco-kg
-title: eco-KG
+name: eco-KG
 description: A knowledge graph of plant traits starting with Planteome and EOL TraitBank.
 domain: organisms
-contact:
+contacts:
+- category: Individual
   github: diatomsRcool
   label: Anne Thessen
-preferredPrefix: http
-homepage: https://kghub.org/eco-kg/index.html
-tracker: https://github.com/Knowledge-Graph-Hub/eco-kg/issues
+url: https://kghub.org/eco-kg/index.html
 repository: https://github.com/Knowledge-Graph-Hub/eco-kg
-restype: "knowledge graph"
+category: KnowledgeGraph
 ---
 
 eco-KG: a knowledge graph of plant traits starting with Planteome and EOL TraitBank.
