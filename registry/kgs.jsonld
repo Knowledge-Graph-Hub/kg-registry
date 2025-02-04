@@ -805,7 +805,7 @@
         },
         {
             "activity_status": "active",
-            "category": "Resource",
+            "category": "DataModel",
             "contacts": [
                 {
                     "category": "Individual",
