@@ -112,6 +112,10 @@
             "@id": "http://purl.obolibrary.org/obo/ORCID_",
             "@prefix": true
         },
+        "PETAGRAPH": {
+            "@id": "http://purl.obolibrary.org/obo/PETAGRAPH_",
+            "@prefix": true
+        },
         "PHEKNOWLATOR": {
             "@id": "http://purl.obolibrary.org/obo/PHEKNOWLATOR_",
             "@prefix": true
