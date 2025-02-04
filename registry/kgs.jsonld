@@ -962,6 +962,36 @@
             "contacts": [
                 {
                     "category": "Individual",
+                    "label": "Deanne M. Taylor"
+                }
+            ],
+            "description": "Petagraph is a large-scale biomedical knowledge graph integrating multi-omics and clinical data, built on the Unified Biomedical Knowledge Graph (UBKG).",
+            "domain": "health",
+            "id": "petagraph",
+            "layout": "resource_detail",
+            "license": {
+                "label": "UMLS",
+                "url": "https://www.nlm.nih.gov/databases/umls.html"
+            },
+            "name": "Petagraph",
+            "products": [
+                {
+                    "category": "GraphProduct",
+                    "description": "A multi-omics biomedical knowledge graph",
+                    "id": "petagraph",
+                    "name": "Petagraph Knowledge Graph (Neo4J)",
+                    "url": "https://ubkg-downloads.xconsortia.org/"
+                }
+            ],
+            "repository": "https://github.com/TaylorResearchLab/Petagraph",
+            "url": "https://github.com/TaylorResearchLab/Petagraph"
+        },
+        {
+            "activity_status": "active",
+            "category": "KnowledgeGraph",
+            "contacts": [
+                {
+                    "category": "Individual",
                     "github": "https://github.com/callahantiff/",
                     "label": "Tiffany Callahan"
                 }
