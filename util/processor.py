@@ -61,7 +61,7 @@ def main():
 
     with open(args.input, "r") as f:
         obj = yaml.load(f, Loader=yaml.SafeLoader)
-        ontologies = obj["ontologies"]
+        ontologies = obj["resources"]
 
     func = args.function
     func(ontologies, args)

@@ -1,15 +1,15 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: spoke
-title: SPOKE
+name: SPOKE
 description: A Knowledge Graph from UCSF covering many aspects of biomedicine.
 domain: health
-restype: "knowledge graph"
-contact:
+category: KnowledgeGraph
+contacts:
+- category: Individual
   label: "Sui Huang, Sergio Baranzini"
-homepage: https://spoke.ucsf.edu/
-tracker: ""
+url: https://spoke.ucsf.edu/
 repository: ""
 ---
 

@@ -3,13 +3,18 @@
 import json
 import re
 import sys
+import pathlib
 from argparse import ArgumentParser
 
 import jsonschema
 import yaml
 
 # Path to JSON schema file:
-SCHEMA_FILE = "util/schema/registry_schema.json"
+HERE = pathlib.Path(__file__).parent.resolve()
+ROOT = HERE.parent.resolve()
+RESOURCE_DIRECTORY = ROOT.joinpath("ontology").resolve()
+
+SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "kg_registry_schema.json")
 
 # The metadata grid to be generated:
 metadata_grid = {}
@@ -35,9 +40,7 @@ def main():
   1) violations_outfile: a CSV, TSV, or TXT file which contain all metadata violations, and
   2) grid_outfile: a CSV, TSV, or TXT file which will contain a custom sorted metadata grid"""
     )
-    parser.add_argument(
-        "yaml_infile", type=str, help="YAML file containing registry data"
-    )
+    parser.add_argument("yaml_infile", type=str, help="YAML file containing registry data")
     parser.add_argument(
         "violations_outfile",
         type=str,
@@ -61,15 +64,15 @@ def main():
     results = {"error": [], "warn": [], "info": []}
 
     # Validate each object
-    for item in data["ontologies"]:
+    for item in data["resources"]:
         add = validate_metadata(item, schema)
         results = update_results(results, add)
 
     # save the metadata-grid with ALL results
     headers = []
-    for s in schema["properties"]:
-        if "level" in s:
-            headers.append(s)
+    # for s in schema["properties"]:
+    #     if "level" in s:
+    #         headers.append(s)
     save_grid(metadata_grid, headers, grid_outfile)
 
     # print and save the results that did not pass
@@ -96,7 +99,7 @@ def load_data(yaml_infile):
 def get_schema():
     """Return a schema from the master schema directory."""
     schema = None
-    file = SCHEMA_FILE
+    file = SCHEMA_PATH
     try:
         with open(file, "r") as s:
             schema = json.load(s)
@@ -133,9 +136,7 @@ def validate_metadata(item, schema):
     try:
         jsonschema.validate(item, schema)
     except jsonschema.exceptions.ValidationError as ve:
-        title = list(ve.absolute_schema_path)[
-            0
-        ]  # Find the named section within the schema
+        title = list(ve.absolute_schema_path)[0]  # Find the named section within the schema
         if title == "required":
             field_names = re.findall(r"\'(.*?)\'", ve.message)  # Rather get which field
             if len(field_names) > 0:
@@ -324,11 +325,11 @@ def save_grid(metadata_grid, headers, grid_outfile):
         print("Grid file must be CSV, TSV, or TXT", file=sys.stderr)
         return
 
-    # Determine order of ontologies based on statuses
+    # Determine order of resources based on statuses
     sort_order = sort_grid(metadata_grid)
 
     # First three help to see overall details
-    header = "Ontology{0}Activity Status{0}Validation Status".format(separator)
+    header = "Resource{0}Activity Status{0}Validation Status".format(separator)
     # After that, we show the results of each check
     for h in headers:
         header += separator + h
