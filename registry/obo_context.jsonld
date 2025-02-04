@@ -56,6 +56,10 @@
             "@id": "http://purl.obolibrary.org/obo/HGNC_",
             "@prefix": true
         },
+        "HRA-KG": {
+            "@id": "http://purl.obolibrary.org/obo/HRA-KG_",
+            "@prefix": true
+        },
         "ICEES-KG": {
             "@id": "http://purl.obolibrary.org/obo/ICEES-KG_",
             "@prefix": true
