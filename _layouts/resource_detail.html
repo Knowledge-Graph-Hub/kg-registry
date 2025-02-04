@@ -224,13 +224,20 @@ page.is_obsolete %}
       </dd>
       {% endif %}
 
+      {% if page.infores_id %}
+      <dt>Infores ID</dt>
+      <dd>
+        {{page.infores_id}}
+      </dd>
+      {% endif %}
+
       {% if page.fairsharing_id %}
       <dt>FAIRsharing ID</dt>
       <dd>
         <a href="https://fairsharing.org/{{page.fairsharing_id}}">{{page.fairsharing_id}}</a>
       </dd>
       {% endif %}
-      
+
       {% if page.taxon %}
       <dt>Taxon</dt>
       <dd>
