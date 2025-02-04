@@ -96,6 +96,9 @@ page.is_obsolete %}
             {% if p.is_kgx %}
             <td> KGX Available!</td>
             {% endif %}
+            {% if p.infores_id %}
+            <td> {{p.infores_id}}</td>
+            {% endif %}
           </tr>
           {% endfor %}
         </tbody>
