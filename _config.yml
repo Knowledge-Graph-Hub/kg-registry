@@ -950,16 +950,53 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    label: Amy Glen
+    email: kfecho@copperlineprofessionalsolutions.com
+    label: Karamarie Fecho
+  description: ROBOKOP (Reasoning Over Biomedical Objects linked in Knowledge Oriented
+    Pathways) is an open-source biomedical knowledge graph system that enables complex
+    queries over a large-scale integrated knowledge graph.
+  domain: health
+  id: robokop
+  layout: resource_detail
+  license:
+    label: MIT License
+    url: https://opensource.org/licenses/MIT
+  name: ROBOKOP
+  products:
+  - category: Product
+    description: A biomedical knowledge graph containing ~10 million nodes and ~250
+      million edges from ~30 biological data sources and bio-ontologies.
+    id: robokopkg
+    name: ROBOKOP Knowledge Graph (KG)
+    url: http://robokopkg.renci.org
+  repository: https://github.com/NCATS-Gamma/robokop
+  url: http://robokop.renci.org
+- activity_status: active
+  category: KnowledgeGraph
+  contacts:
   - category: Individual
-    label: Steven Ramsey
+    email: ramseyst@oregonstate.edu
+    github: saramsey
+    label: Stephen Ramsey
+    orcid: 0000-0002-2168-5403
   description: A comprehensive knowledge graph from the RTX team.
   domain: health
   id: rtx-kg2
   layout: resource_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
   name: RTX-KG2
+  products:
+  - category: GraphProduct
+    description: KGX distribution of the RTX-KG2
+    id: rtx_kgx_files
+    is_kgx: true
+    name: RTX-KG2 KGX
+    url: https://github.com/ncats/translator-lfs-artifacts/blob/main/files/
   repository: https://github.com/RTXteam/RTX-KG2
-  url: ''
+  url: https://github.com/RTXteam/RTX-KG2
 - activity_status: active
   category: KnowledgeGraph
   contacts:
