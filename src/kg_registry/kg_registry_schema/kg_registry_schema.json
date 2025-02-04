@@ -58,6 +58,13 @@
                     "$ref": "#/$defs/DomainEnum",
                     "description": "The domain that the resource is relevant to. This is not multivalued."
                 },
+                "fairsharing_id": {
+                    "description": "The FAIRsharing ID of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "funding": {
                     "description": "The funding source(s) for the resource.",
                     "items": {
@@ -71,6 +78,13 @@
                 "id": {
                     "description": "The identifier of the resource. This is used to identify it within the registry.",
                     "type": "string"
+                },
+                "infores_id": {
+                    "description": "The Infores ID of the resource. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "language": {
                     "description": "The human language of the resource.",
@@ -215,6 +229,13 @@
                     "$ref": "#/$defs/DomainEnum",
                     "description": "The domain that the resource is relevant to. This is not multivalued."
                 },
+                "fairsharing_id": {
+                    "description": "The FAIRsharing ID of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "funding": {
                     "description": "The funding source(s) for the resource.",
                     "items": {
@@ -228,6 +249,13 @@
                 "id": {
                     "description": "The identifier of the resource. This is used to identify it within the registry.",
                     "type": "string"
+                },
+                "infores_id": {
+                    "description": "The Infores ID of the resource. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "language": {
                     "description": "The human language of the resource.",
@@ -361,6 +389,13 @@
                 "id": {
                     "description": "The identifier of the product. This is used to identify it within the registry.",
                     "type": "string"
+                },
+                "infores_id": {
+                    "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "license": {
                     "anyOf": [
@@ -498,6 +533,13 @@
                     "description": "The identifier of the product. This is used to identify it within the registry.",
                     "type": "string"
                 },
+                "infores_id": {
+                    "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "is_kgx": {
                     "description": "Whether the graph is in KGX format.",
                     "type": [
@@ -620,6 +662,13 @@
                 "id": {
                     "description": "The identifier of the product. This is used to identify it within the registry.",
                     "type": "string"
+                },
+                "infores_id": {
+                    "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "license": {
                     "anyOf": [
@@ -794,6 +843,13 @@
                     "$ref": "#/$defs/DomainEnum",
                     "description": "The domain that the resource is relevant to. This is not multivalued."
                 },
+                "fairsharing_id": {
+                    "description": "The FAIRsharing ID of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "funding": {
                     "description": "The funding source(s) for the resource.",
                     "items": {
@@ -807,6 +863,13 @@
                 "id": {
                     "description": "The identifier of the resource. This is used to identify it within the registry.",
                     "type": "string"
+                },
+                "infores_id": {
+                    "description": "The Infores ID of the resource. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "language": {
                     "description": "The human language of the resource.",
@@ -970,6 +1033,13 @@
                     "$ref": "#/$defs/DomainEnum",
                     "description": "The domain that the resource is relevant to. This is not multivalued."
                 },
+                "fairsharing_id": {
+                    "description": "The FAIRsharing ID of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "funding": {
                     "description": "The funding source(s) for the resource.",
                     "items": {
@@ -983,6 +1053,13 @@
                 "id": {
                     "description": "The identifier of the resource. This is used to identify it within the registry.",
                     "type": "string"
+                },
+                "infores_id": {
+                    "description": "The Infores ID of the resource. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "language": {
                     "description": "The human language of the resource.",
@@ -1117,6 +1194,13 @@
                     "description": "The identifier of the product. This is used to identify it within the registry.",
                     "type": "string"
                 },
+                "infores_id": {
+                    "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "license": {
                     "anyOf": [
                         {
@@ -1241,6 +1325,13 @@
                     "description": "The identifier of the product. This is used to identify it within the registry.",
                     "type": "string"
                 },
+                "infores_id": {
+                    "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "license": {
                     "anyOf": [
                         {
@@ -1322,6 +1413,13 @@
                     "$ref": "#/$defs/DomainEnum",
                     "description": "The domain that the resource is relevant to. This is not multivalued."
                 },
+                "fairsharing_id": {
+                    "description": "The FAIRsharing ID of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "funding": {
                     "description": "The funding source(s) for the resource.",
                     "items": {
@@ -1335,6 +1433,13 @@
                 "id": {
                     "description": "The identifier of the resource. This is used to identify it within the registry.",
                     "type": "string"
+                },
+                "infores_id": {
+                    "description": "The Infores ID of the resource. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "language": {
                     "description": "The human language of the resource.",
@@ -1468,6 +1573,13 @@
                 "id": {
                     "description": "The identifier of the product. This is used to identify it within the registry.",
                     "type": "string"
+                },
+                "infores_id": {
+                    "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "license": {
                     "anyOf": [
@@ -1603,6 +1715,13 @@
                     "$ref": "#/$defs/DomainEnum",
                     "description": "The domain that the resource is relevant to. This is not multivalued."
                 },
+                "fairsharing_id": {
+                    "description": "The FAIRsharing ID of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "funding": {
                     "description": "The funding source(s) for the resource.",
                     "items": {
@@ -1616,6 +1735,13 @@
                 "id": {
                     "description": "The identifier of the resource. This is used to identify it within the registry.",
                     "type": "string"
+                },
+                "infores_id": {
+                    "description": "The Infores ID of the resource. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "language": {
                     "description": "The human language of the resource.",
