@@ -132,6 +132,10 @@ classes:
         multivalued: true
         inlined: true
         inlined_as_list: true
+      fairsharing_id:
+        description: >-
+          The FAIRsharing ID of the resource.
+        range: string
       layout:
         description: >-
           The layout of the resource.
