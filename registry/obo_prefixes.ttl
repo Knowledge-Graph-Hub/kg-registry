@@ -31,6 +31,7 @@
 ,[ sh:prefix "NEO" ; sh:namespace "http://purl.obolibrary.org/obo/NEO_"]
 ,[ sh:prefix "ONTOLOGY-KP" ; sh:namespace "http://purl.obolibrary.org/obo/ONTOLOGY-KP_"]
 ,[ sh:prefix "ORCID" ; sh:namespace "http://purl.obolibrary.org/obo/ORCID_"]
+,[ sh:prefix "PETAGRAPH" ; sh:namespace "http://purl.obolibrary.org/obo/PETAGRAPH_"]
 ,[ sh:prefix "PHEKNOWLATOR" ; sh:namespace "http://purl.obolibrary.org/obo/PHEKNOWLATOR_"]
 ,[ sh:prefix "PHENIO" ; sh:namespace "http://purl.obolibrary.org/obo/PHENIO_"]
 ,[ sh:prefix "PRIMEKG" ; sh:namespace "http://purl.obolibrary.org/obo/PRIMEKG_"]
