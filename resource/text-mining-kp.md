@@ -1,24 +1,27 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: text-mining-kp
-title: Text Mining KP
+name: Text Mining KP
 description: A Translator Knowledge Provider applying text-mined assertions.
-domain: information
-restype: "knowledge graph"
-contact:
+domain: other
+category: KnowledgeGraph
+contacts:
+- category: Individual
   label: Edgar Gatica
-homepage: ""
-tracker: ""
+url: ""
 repository: ""
-preferredPrefix: http
 products:
 - id: targeted_assertions.tar.gz
-  format: kgx
+  name: Text Mining KP KGX
+  is_kgx: true
   description: Text Mining KP KGX distribution
-  ontology_purl: https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz
+  url: https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz
+  category: GraphProduct
 ---
 
 A Translator Knowledge Provider applying text-mined assertions.
 
-Contacts: Edgar Gatica and Bill Baumgartner
+contacts:
+- category: Individual
+ Edgar Gatica and Bill Baumgartner

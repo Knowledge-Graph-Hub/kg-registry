@@ -1,18 +1,17 @@
 ---
-layout: ontology_detail
+layout: resource_detail
 activity_status: active
 id: sldb
-title: sldb
+name: sldb
 description: A graph of synthetic lethal interactions.
 domain: organisms
-contact:
+contacts:
+- category: Individual
   github: pnrobinson
   label: Peter Robinson
-preferredPrefix: http
-homepage: https://kghub.io/sldb/
-tracker: https://github.com/monarch-initiative/SLDBGen/issues
+url: https://kghub.io/sldb/
 repository: https://github.com/monarch-initiative/SLDBGen
-restype: "knowledge graph"
+category: KnowledgeGraph
 ---
 
 A graph of synthetic lethal interactions.
