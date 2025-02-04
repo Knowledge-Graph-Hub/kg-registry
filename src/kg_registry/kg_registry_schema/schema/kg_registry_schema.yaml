@@ -136,6 +136,10 @@ classes:
         description: >-
           The FAIRsharing ID of the resource.
         range: string
+      infores_id:
+        description: >-
+          The Infores ID of the resource.
+        range: string
       layout:
         description: >-
           The layout of the resource.
