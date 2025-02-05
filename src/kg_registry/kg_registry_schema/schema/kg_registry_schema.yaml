@@ -125,6 +125,7 @@ classes:
           This should be identical to its class name.
         range: string
         required: true
+        designates_type: true
       usages:
         description: >-
           The usage(s) of the resource.
@@ -275,6 +276,7 @@ classes:
           This should be identical to its class name.
         range: string
         required: true
+        designates_type: true
       tags:
         description: Tags associated with the product.
         range: TagEnum
@@ -354,6 +356,7 @@ classes:
           This should be identical to its class name.
         range: string
         required: true
+        designates_type: true
 
   Individual:
     description: >-
