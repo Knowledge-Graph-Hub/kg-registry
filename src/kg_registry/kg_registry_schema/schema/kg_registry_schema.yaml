@@ -451,6 +451,8 @@ classes:
         description: >-
           The identifier of the publication.
           This is used to identify it within the registry.
+          This should be a DOI (with prefix), but a URL is
+          acceptable if a DOI is not available.
         range: string
         identifier: true
       preferred:
