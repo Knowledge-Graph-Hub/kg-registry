@@ -11,9 +11,9 @@ see_also:
 version: 0.0.2
 
 prefixes:
-  kg_registry_schema: https://w3id.org/bridge2ai/data-sheets-schema/
+  kgr: https://w3id.org/bridge2ai/data-sheets-schema/
   skos: http://www.w3.org/2004/02/skos/core#
-  linkml: http://w3id.org/linkml/
+  linkml: https://w3id.org/linkml/
 
 default_prefix: kgr
 default_range: string
