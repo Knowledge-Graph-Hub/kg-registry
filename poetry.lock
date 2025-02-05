@@ -233,13 +233,13 @@ files = [
 
 [[package]]
 name = "curies"
-version = "0.10.3"
+version = "0.10.4"
 description = "Idiomatic conversion between URIs and compact URIs (CURIEs)"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "curies-0.10.3-py3-none-any.whl", hash = "sha256:77d2de14c4602f27e83af02123df7b8cf6af445ef995f8ff61e8f5a700278f16"},
-    {file = "curies-0.10.3.tar.gz", hash = "sha256:ad6dee6d6353354880cbdab087f2e715b509a4b0726538e104495a1ef4a89b76"},
+    {file = "curies-0.10.4-py3-none-any.whl", hash = "sha256:bbb8059b7e0bababa8ee40108201b1e89649b6312a4f3b013dd33f21a792b0bc"},
+    {file = "curies-0.10.4.tar.gz", hash = "sha256:07d65db6b9b916729f22fb06d23b5cb98f3ba7768e643d04c654a449467c3bc5"},
 ]
 
 [package.dependencies]
