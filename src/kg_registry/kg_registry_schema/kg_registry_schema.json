@@ -35,12 +35,22 @@
                 },
                 "category": {
                     "description": "The category of the resource. This should be identical to its class name.",
+                    "enum": [
+                        "DataGraph"
+                    ],
                     "type": "string"
                 },
                 "contacts": {
                     "description": "The contact point(s) for the resource. May be an individual or organization.",
                     "items": {
-                        "$ref": "#/$defs/Contact"
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/Individual"
+                            },
+                            {
+                                "$ref": "#/$defs/Organization"
+                            }
+                        ]
                     },
                     "type": [
                         "array",
@@ -128,7 +138,26 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "$ref": "#/$defs/Product"
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/GraphProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/DataModelProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/MappingProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/ProcessProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/GraphicalInterface"
+                            },
+                            {
+                                "$ref": "#/$defs/ProgrammingInterface"
+                            }
+                        ]
                     },
                     "type": [
                         "array",
@@ -206,12 +235,22 @@
                 },
                 "category": {
                     "description": "The category of the resource. This should be identical to its class name.",
+                    "enum": [
+                        "DataModel"
+                    ],
                     "type": "string"
                 },
                 "contacts": {
                     "description": "The contact point(s) for the resource. May be an individual or organization.",
                     "items": {
-                        "$ref": "#/$defs/Contact"
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/Individual"
+                            },
+                            {
+                                "$ref": "#/$defs/Organization"
+                            }
+                        ]
                     },
                     "type": [
                         "array",
@@ -289,7 +328,26 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "$ref": "#/$defs/Product"
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/GraphProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/DataModelProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/MappingProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/ProcessProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/GraphicalInterface"
+                            },
+                            {
+                                "$ref": "#/$defs/ProgrammingInterface"
+                            }
+                        ]
                     },
                     "type": [
                         "array",
@@ -363,6 +421,9 @@
             "properties": {
                 "category": {
                     "description": "The category of the product. This should be identical to its class name.",
+                    "enum": [
+                        "DataModelProduct"
+                    ],
                     "type": "string"
                 },
                 "compression": {
@@ -494,6 +555,9 @@
             "properties": {
                 "category": {
                     "description": "The category of the product. This should be identical to its class name.",
+                    "enum": [
+                        "GraphProduct"
+                    ],
                     "type": "string"
                 },
                 "compression": {
@@ -627,6 +691,9 @@
             "properties": {
                 "category": {
                     "description": "The category of the product. This should be identical to its class name.",
+                    "enum": [
+                        "GraphicalInterface"
+                    ],
                     "type": "string"
                 },
                 "compression": {
@@ -711,6 +778,9 @@
             "properties": {
                 "category": {
                     "description": "The category of the contact. This should be identical to its class name.",
+                    "enum": [
+                        "Individual"
+                    ],
                     "type": "string"
                 },
                 "email": {
@@ -764,6 +834,9 @@
                 },
                 "category": {
                     "description": "The category of the resource. This should be identical to its class name.",
+                    "enum": [
+                        "KnowledgeGraph"
+                    ],
                     "type": "string"
                 },
                 "components": {
@@ -789,7 +862,14 @@
                 "contacts": {
                     "description": "The contact point(s) for the resource. May be an individual or organization.",
                     "items": {
-                        "$ref": "#/$defs/Contact"
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/Individual"
+                            },
+                            {
+                                "$ref": "#/$defs/Organization"
+                            }
+                        ]
                     },
                     "type": [
                         "array",
@@ -895,7 +975,26 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "$ref": "#/$defs/Product"
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/GraphProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/DataModelProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/MappingProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/ProcessProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/GraphicalInterface"
+                            },
+                            {
+                                "$ref": "#/$defs/ProgrammingInterface"
+                            }
+                        ]
                     },
                     "type": [
                         "array",
@@ -1012,12 +1111,22 @@
                 },
                 "category": {
                     "description": "The category of the resource. This should be identical to its class name.",
+                    "enum": [
+                        "Mapping"
+                    ],
                     "type": "string"
                 },
                 "contacts": {
                     "description": "The contact point(s) for the resource. May be an individual or organization.",
                     "items": {
-                        "$ref": "#/$defs/Contact"
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/Individual"
+                            },
+                            {
+                                "$ref": "#/$defs/Organization"
+                            }
+                        ]
                     },
                     "type": [
                         "array",
@@ -1095,7 +1204,26 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "$ref": "#/$defs/Product"
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/GraphProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/DataModelProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/MappingProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/ProcessProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/GraphicalInterface"
+                            },
+                            {
+                                "$ref": "#/$defs/ProgrammingInterface"
+                            }
+                        ]
                     },
                     "type": [
                         "array",
@@ -1169,6 +1297,9 @@
             "properties": {
                 "category": {
                     "description": "The category of the product. This should be identical to its class name.",
+                    "enum": [
+                        "MappingProduct"
+                    ],
                     "type": "string"
                 },
                 "compression": {
@@ -1253,6 +1384,9 @@
             "properties": {
                 "category": {
                     "description": "The category of the contact. This should be identical to its class name.",
+                    "enum": [
+                        "Organization"
+                    ],
                     "type": "string"
                 },
                 "email": {
@@ -1301,6 +1435,9 @@
             "properties": {
                 "category": {
                     "description": "The category of the product. This should be identical to its class name.",
+                    "enum": [
+                        "ProcessProduct"
+                    ],
                     "type": "string"
                 },
                 "compression": {
@@ -1389,12 +1526,22 @@
                 },
                 "category": {
                     "description": "The category of the resource. This should be identical to its class name.",
+                    "enum": [
+                        "ProductionProcess"
+                    ],
                     "type": "string"
                 },
                 "contacts": {
                     "description": "The contact point(s) for the resource. May be an individual or organization.",
                     "items": {
-                        "$ref": "#/$defs/Contact"
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/Individual"
+                            },
+                            {
+                                "$ref": "#/$defs/Organization"
+                            }
+                        ]
                     },
                     "type": [
                         "array",
@@ -1472,7 +1619,26 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "$ref": "#/$defs/Product"
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/GraphProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/DataModelProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/MappingProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/ProcessProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/GraphicalInterface"
+                            },
+                            {
+                                "$ref": "#/$defs/ProgrammingInterface"
+                            }
+                        ]
                     },
                     "type": [
                         "array",
@@ -1546,6 +1712,9 @@
             "properties": {
                 "category": {
                     "description": "The category of the product. This should be identical to its class name.",
+                    "enum": [
+                        "ProgrammingInterface"
+                    ],
                     "type": "string"
                 },
                 "compression": {
@@ -1646,7 +1815,7 @@
                     ]
                 },
                 "id": {
-                    "description": "The identifier of the publication. This is used to identify it within the registry.",
+                    "description": "The identifier of the publication. This is used to identify it within the registry. This should be a DOI (with prefix), but a URL is acceptable if a DOI is not available.",
                     "type": [
                         "string",
                         "null"
@@ -1697,12 +1866,22 @@
                 },
                 "category": {
                     "description": "The category of the resource. This should be identical to its class name.",
+                    "enum": [
+                        "Resource"
+                    ],
                     "type": "string"
                 },
                 "contacts": {
                     "description": "The contact point(s) for the resource. May be an individual or organization.",
                     "items": {
-                        "$ref": "#/$defs/Contact"
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/Individual"
+                            },
+                            {
+                                "$ref": "#/$defs/Organization"
+                            }
+                        ]
                     },
                     "type": [
                         "array",
@@ -1780,7 +1959,26 @@
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
-                        "$ref": "#/$defs/Product"
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/GraphProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/DataModelProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/MappingProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/ProcessProduct"
+                            },
+                            {
+                                "$ref": "#/$defs/GraphicalInterface"
+                            },
+                            {
+                                "$ref": "#/$defs/ProgrammingInterface"
+                            }
+                        ]
                     },
                     "type": [
                         "array",
@@ -1907,7 +2105,14 @@
                 "users": {
                     "description": "The user implementing or working with the resource.",
                     "items": {
-                        "$ref": "#/$defs/Contact"
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/Individual"
+                            },
+                            {
+                                "$ref": "#/$defs/Organization"
+                            }
+                        ]
                     },
                     "type": [
                         "array",

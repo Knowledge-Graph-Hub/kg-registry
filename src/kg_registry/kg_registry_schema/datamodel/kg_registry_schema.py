@@ -216,13 +216,15 @@ class Resource(ConfiguredBaseModel):
          'domain_of': ['Resource'],
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'language', 'domain_of': ['Resource']} })
-    contacts: Optional[List[Contact]] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    products: Optional[List[Product]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
+    contacts: Optional[List[Union[Contact,Individual,Organization]]] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
+    products: Optional[List[Union[Product,GraphProduct,DataModelProduct,MappingProduct,ProcessProduct,GraphicalInterface,ProgrammingInterface]]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
     domain: DomainEnum = Field(default=..., description="""The domain that the resource is relevant to. This is not multivalued.""", json_schema_extra = { "linkml_meta": {'alias': 'domain', 'domain_of': ['Resource']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     funding: Optional[List[str]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'funding', 'domain_of': ['Resource']} })
     publications: Optional[List[str]] = Field(default=None, description="""Publications associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'publications', 'domain_of': ['Resource', 'Usage']} })
-    category: str = Field(default=..., description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category', 'domain_of': ['Resource', 'Product', 'Contact']} })
+    category: Literal["Resource"] = Field(default="Resource", description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
+         'designates_type': True,
+         'domain_of': ['Resource', 'Product', 'Contact']} })
     usages: Optional[List[Usage]] = Field(default=None, description="""The usage(s) of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'usages', 'domain_of': ['Resource']} })
     fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'fairsharing_id', 'domain_of': ['Resource']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
@@ -263,13 +265,15 @@ class KnowledgeGraph(Resource):
          'domain_of': ['Resource'],
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'language', 'domain_of': ['Resource']} })
-    contacts: Optional[List[Contact]] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    products: Optional[List[Product]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
+    contacts: Optional[List[Union[Contact,Individual,Organization]]] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
+    products: Optional[List[Union[Product,GraphProduct,DataModelProduct,MappingProduct,ProcessProduct,GraphicalInterface,ProgrammingInterface]]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
     domain: DomainEnum = Field(default=..., description="""The domain that the resource is relevant to. This is not multivalued.""", json_schema_extra = { "linkml_meta": {'alias': 'domain', 'domain_of': ['Resource']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     funding: Optional[List[str]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'funding', 'domain_of': ['Resource']} })
     publications: Optional[List[str]] = Field(default=None, description="""Publications associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'publications', 'domain_of': ['Resource', 'Usage']} })
-    category: str = Field(default=..., description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category', 'domain_of': ['Resource', 'Product', 'Contact']} })
+    category: Literal["KnowledgeGraph"] = Field(default="KnowledgeGraph", description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
+         'designates_type': True,
+         'domain_of': ['Resource', 'Product', 'Contact']} })
     usages: Optional[List[Usage]] = Field(default=None, description="""The usage(s) of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'usages', 'domain_of': ['Resource']} })
     fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'fairsharing_id', 'domain_of': ['Resource']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
@@ -304,13 +308,15 @@ class DataGraph(Resource):
          'domain_of': ['Resource'],
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'language', 'domain_of': ['Resource']} })
-    contacts: Optional[List[Contact]] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    products: Optional[List[Product]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
+    contacts: Optional[List[Union[Contact,Individual,Organization]]] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
+    products: Optional[List[Union[Product,GraphProduct,DataModelProduct,MappingProduct,ProcessProduct,GraphicalInterface,ProgrammingInterface]]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
     domain: DomainEnum = Field(default=..., description="""The domain that the resource is relevant to. This is not multivalued.""", json_schema_extra = { "linkml_meta": {'alias': 'domain', 'domain_of': ['Resource']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     funding: Optional[List[str]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'funding', 'domain_of': ['Resource']} })
     publications: Optional[List[str]] = Field(default=None, description="""Publications associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'publications', 'domain_of': ['Resource', 'Usage']} })
-    category: str = Field(default=..., description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category', 'domain_of': ['Resource', 'Product', 'Contact']} })
+    category: Literal["DataGraph"] = Field(default="DataGraph", description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
+         'designates_type': True,
+         'domain_of': ['Resource', 'Product', 'Contact']} })
     usages: Optional[List[Usage]] = Field(default=None, description="""The usage(s) of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'usages', 'domain_of': ['Resource']} })
     fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'fairsharing_id', 'domain_of': ['Resource']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
@@ -344,13 +350,15 @@ class DataModel(Resource):
          'domain_of': ['Resource'],
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'language', 'domain_of': ['Resource']} })
-    contacts: Optional[List[Contact]] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    products: Optional[List[Product]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
+    contacts: Optional[List[Union[Contact,Individual,Organization]]] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
+    products: Optional[List[Union[Product,GraphProduct,DataModelProduct,MappingProduct,ProcessProduct,GraphicalInterface,ProgrammingInterface]]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
     domain: DomainEnum = Field(default=..., description="""The domain that the resource is relevant to. This is not multivalued.""", json_schema_extra = { "linkml_meta": {'alias': 'domain', 'domain_of': ['Resource']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     funding: Optional[List[str]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'funding', 'domain_of': ['Resource']} })
     publications: Optional[List[str]] = Field(default=None, description="""Publications associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'publications', 'domain_of': ['Resource', 'Usage']} })
-    category: str = Field(default=..., description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category', 'domain_of': ['Resource', 'Product', 'Contact']} })
+    category: Literal["DataModel"] = Field(default="DataModel", description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
+         'designates_type': True,
+         'domain_of': ['Resource', 'Product', 'Contact']} })
     usages: Optional[List[Usage]] = Field(default=None, description="""The usage(s) of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'usages', 'domain_of': ['Resource']} })
     fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'fairsharing_id', 'domain_of': ['Resource']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
@@ -384,13 +392,15 @@ class Mapping(Resource):
          'domain_of': ['Resource'],
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'language', 'domain_of': ['Resource']} })
-    contacts: Optional[List[Contact]] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    products: Optional[List[Product]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
+    contacts: Optional[List[Union[Contact,Individual,Organization]]] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
+    products: Optional[List[Union[Product,GraphProduct,DataModelProduct,MappingProduct,ProcessProduct,GraphicalInterface,ProgrammingInterface]]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
     domain: DomainEnum = Field(default=..., description="""The domain that the resource is relevant to. This is not multivalued.""", json_schema_extra = { "linkml_meta": {'alias': 'domain', 'domain_of': ['Resource']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     funding: Optional[List[str]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'funding', 'domain_of': ['Resource']} })
     publications: Optional[List[str]] = Field(default=None, description="""Publications associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'publications', 'domain_of': ['Resource', 'Usage']} })
-    category: str = Field(default=..., description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category', 'domain_of': ['Resource', 'Product', 'Contact']} })
+    category: Literal["Mapping"] = Field(default="Mapping", description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
+         'designates_type': True,
+         'domain_of': ['Resource', 'Product', 'Contact']} })
     usages: Optional[List[Usage]] = Field(default=None, description="""The usage(s) of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'usages', 'domain_of': ['Resource']} })
     fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'fairsharing_id', 'domain_of': ['Resource']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
@@ -424,13 +434,15 @@ class ProductionProcess(Resource):
          'domain_of': ['Resource'],
          'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
     language: Optional[str] = Field(default=None, description="""The human language of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'language', 'domain_of': ['Resource']} })
-    contacts: Optional[List[Contact]] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    products: Optional[List[Product]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
+    contacts: Optional[List[Union[Contact,Individual,Organization]]] = Field(default=None, description="""The contact point(s) for the resource. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
+    products: Optional[List[Union[Product,GraphProduct,DataModelProduct,MappingProduct,ProcessProduct,GraphicalInterface,ProgrammingInterface]]] = Field(default=None, description="""The products or representations of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'products', 'domain_of': ['Resource']} })
     domain: DomainEnum = Field(default=..., description="""The domain that the resource is relevant to. This is not multivalued.""", json_schema_extra = { "linkml_meta": {'alias': 'domain', 'domain_of': ['Resource']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     funding: Optional[List[str]] = Field(default=None, description="""The funding source(s) for the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'funding', 'domain_of': ['Resource']} })
     publications: Optional[List[str]] = Field(default=None, description="""Publications associated with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'publications', 'domain_of': ['Resource', 'Usage']} })
-    category: str = Field(default=..., description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category', 'domain_of': ['Resource', 'Product', 'Contact']} })
+    category: Literal["ProductionProcess"] = Field(default="ProductionProcess", description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
+         'designates_type': True,
+         'domain_of': ['Resource', 'Product', 'Contact']} })
     usages: Optional[List[Usage]] = Field(default=None, description="""The usage(s) of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'usages', 'domain_of': ['Resource']} })
     fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'fairsharing_id', 'domain_of': ['Resource']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
@@ -461,7 +473,9 @@ class Product(ConfiguredBaseModel):
     license: Optional[str] = Field(default=None, description="""The license of the product. This may differ from that of the parent resource.""", json_schema_extra = { "linkml_meta": {'alias': 'license', 'domain_of': ['Resource', 'Product']} })
     compression: Optional[CompressionEnum] = Field(default=None, description="""The type of compression used with the product. If this is not specified, it is assumed to be uncompressed.""", json_schema_extra = { "linkml_meta": {'alias': 'compression', 'domain_of': ['Product']} })
     contacts: Optional[List[str]] = Field(default=None, description="""The contact points for the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    category: str = Field(default=..., description="""The category of the product. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category', 'domain_of': ['Resource', 'Product', 'Contact']} })
+    category: Literal["Product"] = Field(default="Product", description="""The category of the product. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
+         'designates_type': True,
+         'domain_of': ['Resource', 'Product', 'Contact']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
 
@@ -494,7 +508,9 @@ class GraphProduct(Product):
     license: Optional[str] = Field(default=None, description="""The license of the product. This may differ from that of the parent resource.""", json_schema_extra = { "linkml_meta": {'alias': 'license', 'domain_of': ['Resource', 'Product']} })
     compression: Optional[CompressionEnum] = Field(default=None, description="""The type of compression used with the product. If this is not specified, it is assumed to be uncompressed.""", json_schema_extra = { "linkml_meta": {'alias': 'compression', 'domain_of': ['Product']} })
     contacts: Optional[List[str]] = Field(default=None, description="""The contact points for the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    category: str = Field(default=..., description="""The category of the product. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category', 'domain_of': ['Resource', 'Product', 'Contact']} })
+    category: Literal["GraphProduct"] = Field(default="GraphProduct", description="""The category of the product. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
+         'designates_type': True,
+         'domain_of': ['Resource', 'Product', 'Contact']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
 
@@ -522,7 +538,9 @@ class DataModelProduct(Product):
     license: Optional[str] = Field(default=None, description="""The license of the product. This may differ from that of the parent resource.""", json_schema_extra = { "linkml_meta": {'alias': 'license', 'domain_of': ['Resource', 'Product']} })
     compression: Optional[CompressionEnum] = Field(default=None, description="""The type of compression used with the product. If this is not specified, it is assumed to be uncompressed.""", json_schema_extra = { "linkml_meta": {'alias': 'compression', 'domain_of': ['Product']} })
     contacts: Optional[List[str]] = Field(default=None, description="""The contact points for the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    category: str = Field(default=..., description="""The category of the product. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category', 'domain_of': ['Resource', 'Product', 'Contact']} })
+    category: Literal["DataModelProduct"] = Field(default="DataModelProduct", description="""The category of the product. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
+         'designates_type': True,
+         'domain_of': ['Resource', 'Product', 'Contact']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
 
@@ -550,7 +568,9 @@ class MappingProduct(Product):
     license: Optional[str] = Field(default=None, description="""The license of the product. This may differ from that of the parent resource.""", json_schema_extra = { "linkml_meta": {'alias': 'license', 'domain_of': ['Resource', 'Product']} })
     compression: Optional[CompressionEnum] = Field(default=None, description="""The type of compression used with the product. If this is not specified, it is assumed to be uncompressed.""", json_schema_extra = { "linkml_meta": {'alias': 'compression', 'domain_of': ['Product']} })
     contacts: Optional[List[str]] = Field(default=None, description="""The contact points for the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    category: str = Field(default=..., description="""The category of the product. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category', 'domain_of': ['Resource', 'Product', 'Contact']} })
+    category: Literal["MappingProduct"] = Field(default="MappingProduct", description="""The category of the product. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
+         'designates_type': True,
+         'domain_of': ['Resource', 'Product', 'Contact']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
 
@@ -578,7 +598,9 @@ class ProcessProduct(Product):
     license: Optional[str] = Field(default=None, description="""The license of the product. This may differ from that of the parent resource.""", json_schema_extra = { "linkml_meta": {'alias': 'license', 'domain_of': ['Resource', 'Product']} })
     compression: Optional[CompressionEnum] = Field(default=None, description="""The type of compression used with the product. If this is not specified, it is assumed to be uncompressed.""", json_schema_extra = { "linkml_meta": {'alias': 'compression', 'domain_of': ['Product']} })
     contacts: Optional[List[str]] = Field(default=None, description="""The contact points for the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    category: str = Field(default=..., description="""The category of the product. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category', 'domain_of': ['Resource', 'Product', 'Contact']} })
+    category: Literal["ProcessProduct"] = Field(default="ProcessProduct", description="""The category of the product. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
+         'designates_type': True,
+         'domain_of': ['Resource', 'Product', 'Contact']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
 
@@ -606,7 +628,9 @@ class GraphicalInterface(Product):
     license: Optional[str] = Field(default=None, description="""The license of the product. This may differ from that of the parent resource.""", json_schema_extra = { "linkml_meta": {'alias': 'license', 'domain_of': ['Resource', 'Product']} })
     compression: Optional[CompressionEnum] = Field(default=None, description="""The type of compression used with the product. If this is not specified, it is assumed to be uncompressed.""", json_schema_extra = { "linkml_meta": {'alias': 'compression', 'domain_of': ['Product']} })
     contacts: Optional[List[str]] = Field(default=None, description="""The contact points for the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    category: str = Field(default=..., description="""The category of the product. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category', 'domain_of': ['Resource', 'Product', 'Contact']} })
+    category: Literal["GraphicalInterface"] = Field(default="GraphicalInterface", description="""The category of the product. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
+         'designates_type': True,
+         'domain_of': ['Resource', 'Product', 'Contact']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
 
@@ -634,7 +658,9 @@ class ProgrammingInterface(Product):
     license: Optional[str] = Field(default=None, description="""The license of the product. This may differ from that of the parent resource.""", json_schema_extra = { "linkml_meta": {'alias': 'license', 'domain_of': ['Resource', 'Product']} })
     compression: Optional[CompressionEnum] = Field(default=None, description="""The type of compression used with the product. If this is not specified, it is assumed to be uncompressed.""", json_schema_extra = { "linkml_meta": {'alias': 'compression', 'domain_of': ['Product']} })
     contacts: Optional[List[str]] = Field(default=None, description="""The contact points for the product. May be an individual or organization.""", json_schema_extra = { "linkml_meta": {'alias': 'contacts', 'domain_of': ['Resource', 'Product']} })
-    category: str = Field(default=..., description="""The category of the product. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category', 'domain_of': ['Resource', 'Product', 'Contact']} })
+    category: Literal["ProgrammingInterface"] = Field(default="ProgrammingInterface", description="""The category of the product. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
+         'designates_type': True,
+         'domain_of': ['Resource', 'Product', 'Contact']} })
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
 
@@ -654,7 +680,9 @@ class Contact(ConfiguredBaseModel):
                        'License',
                        'Publication',
                        'Usage']} })
-    category: str = Field(default=..., description="""The category of the contact. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category', 'domain_of': ['Resource', 'Product', 'Contact']} })
+    category: Literal["Contact"] = Field(default="Contact", description="""The category of the contact. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
+         'designates_type': True,
+         'domain_of': ['Resource', 'Product', 'Contact']} })
 
 
 class Individual(Contact):
@@ -680,7 +708,9 @@ class Individual(Contact):
                        'License',
                        'Publication',
                        'Usage']} })
-    category: str = Field(default=..., description="""The category of the contact. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category', 'domain_of': ['Resource', 'Product', 'Contact']} })
+    category: Literal["Individual"] = Field(default="Individual", description="""The category of the contact. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
+         'designates_type': True,
+         'domain_of': ['Resource', 'Product', 'Contact']} })
 
     @field_validator('orcid')
     def pattern_orcid(cls, v):
@@ -719,7 +749,9 @@ class Organization(Contact):
                        'License',
                        'Publication',
                        'Usage']} })
-    category: str = Field(default=..., description="""The category of the contact. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category', 'domain_of': ['Resource', 'Product', 'Contact']} })
+    category: Literal["Organization"] = Field(default="Organization", description="""The category of the contact. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
+         'designates_type': True,
+         'domain_of': ['Resource', 'Product', 'Contact']} })
 
 
 class FundingSource(ConfiguredBaseModel):
@@ -775,7 +807,7 @@ class Publication(ConfiguredBaseModel):
     """
     linkml_meta: ClassVar[LinkMLMeta] = LinkMLMeta({'from_schema': 'https://w3id.org/knowledge-graph-hub/kg_registry_schema'})
 
-    id: str = Field(default=..., description="""The identifier of the publication. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id',
+    id: str = Field(default=..., description="""The identifier of the publication. This is used to identify it within the registry. This should be a DOI (with prefix), but a URL is acceptable if a DOI is not available.""", json_schema_extra = { "linkml_meta": {'alias': 'id',
          'domain_of': ['Resource',
                        'Product',
                        'Contact',
@@ -814,7 +846,7 @@ class Usage(ConfiguredBaseModel):
     description: Optional[str] = Field(default=None, description="""A description of the usage.""", json_schema_extra = { "linkml_meta": {'alias': 'description', 'domain_of': ['Resource', 'Product', 'Usage']} })
     url: Optional[str] = Field(default=None, description="""A URL for a description or example of the usage.""", json_schema_extra = { "linkml_meta": {'alias': 'url',
          'domain_of': ['Resource', 'Product', 'Organization', 'License', 'Usage']} })
-    users: Optional[List[Contact]] = Field(default=None, description="""The user implementing or working with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'users', 'domain_of': ['Usage']} })
+    users: Optional[List[Union[Contact,Individual,Organization]]] = Field(default=None, description="""The user implementing or working with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'users', 'domain_of': ['Usage']} })
     publications: Optional[List[Publication]] = Field(default=None, description="""Publications associated with the usage.""", json_schema_extra = { "linkml_meta": {'alias': 'publications', 'domain_of': ['Resource', 'Usage']} })
     type: Optional[UsageEnum] = Field(default=None, description="""The type of usage.""", json_schema_extra = { "linkml_meta": {'alias': 'type', 'domain_of': ['Usage']} })
 
