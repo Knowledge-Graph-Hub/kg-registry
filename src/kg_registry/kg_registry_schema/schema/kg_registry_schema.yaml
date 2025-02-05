@@ -341,6 +341,12 @@ classes:
       A contact point for a resource or product.
     abstract: true
     attributes:
+      id:
+        description: >-
+          The identifier of the contact.
+          This is used to identify it within the registry.
+        range: string
+        identifier: true
       category:
         description: >-
           The category of the contact.
@@ -400,19 +406,27 @@ classes:
     description: >-
       A funding source for a resource.
     attributes:
+      id:
+        description: >-
+          The identifier of the funding source.
+          This is used to identify it within the registry.
+        range: string
+        identifier: true
       label:
         description: >-
           The organization providing the funding.
         range: Organization
-      identifier:
-        description: >-
-          The identifier for the funding source.
-        range: string
 
   License:
     description: >-
       A license for a resource or product.
     attributes:
+      id:
+        description: >-
+          The identifier of the license.
+          This is used to identify it within the registry.
+        range: string
+        identifier: true
       label:
         description: >-
           The name of the license.
@@ -431,6 +445,12 @@ classes:
     description: >-
       A publication associated with a resource.
     attributes:
+      id:
+        description: >-
+          The identifier of the publication.
+          This is used to identify it within the registry.
+        range: string
+        identifier: true
       preferred:
         description: >-
           Whether this is the preferred publication for the resource.
@@ -463,6 +483,12 @@ classes:
       The usage of a resource.
       This may be actual, experimental, or theoretical.
     attributes:
+      id:
+        description: >-
+          The identifier of the usage.
+          This is used to identify it within the registry.
+        range: string
+        identifier: true
       label:
         description: >-
           The label of the usage.
