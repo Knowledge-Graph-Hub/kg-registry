@@ -14,6 +14,7 @@ prefixes:
   kgr: https://w3id.org/bridge2ai/data-sheets-schema/
   skos: http://www.w3.org/2004/02/skos/core#
   linkml: https://w3id.org/linkml/
+  dcterms: http://purl.org/dc/terms/
 
 default_prefix: kgr
 default_range: string
