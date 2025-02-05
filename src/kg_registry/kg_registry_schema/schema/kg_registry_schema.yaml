@@ -22,10 +22,7 @@ default_range: string
 imports:
   - linkml:types
 
-# TODO: add classes for Usages and Implementations
-
 classes:
-
   ## Resource Classes
 
   Resource:
@@ -499,7 +496,6 @@ classes:
 
 # Enums
 enums:
-
   ActivityStatusEnum:
     description: >-
       The status of a resource.
@@ -526,32 +522,25 @@ enums:
       The type of compression used with a product.
     permissible_values:
       gzip:
-        description:
-          The gzip compression algorithm.
+        description: The gzip compression algorithm.
           This file ends in .gz.
       tar:
-        description:
-          The tar archive format.
+        description: The tar archive format.
           This file ends in .tar.
       targz:
-        description:
-          A tar archive that is also gzip compressed.
+        description: A tar archive that is also gzip compressed.
           This file ends in .tar.gz.
       rar:
-        description:
-          The rar archive format.
+        description: The rar archive format.
           This file ends in .rar.
       zip:
-        description:
-          The zip archive format.
+        description: The zip archive format.
           This file ends in .zip.
       7z:
-        description:
-          The 7z archive format.
+        description: The 7z archive format.
           This file ends in .7z.
       other:
-        description:
-          Another compression format not defined here.
+        description: Another compression format not defined here.
 
   DomainEnum:
     description: >-
