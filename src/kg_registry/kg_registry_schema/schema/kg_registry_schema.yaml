@@ -73,6 +73,7 @@ classes:
           The license of the resource.
           Individual products may have their own licenses.
         range: License
+        inlined: true
       version:
         description: The version of the resource.
         range: string
@@ -425,6 +426,7 @@ classes:
         description: >-
           The identifier of the license.
           This is used to identify it within the registry.
+          A URL is an acceptable identifier here.
         range: string
         identifier: true
       label:
