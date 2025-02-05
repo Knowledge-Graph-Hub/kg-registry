@@ -68,7 +68,7 @@
                 "funding": {
                     "description": "The funding source(s) for the resource.",
                     "items": {
-                        "$ref": "#/$defs/FundingSource"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -101,15 +101,11 @@
                     ]
                 },
                 "license": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/License"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The license of the resource. Individual products may have their own licenses."
+                    "description": "The license of the resource. Individual products may have their own licenses.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "name": {
                     "description": "The human-readable name of the resource.",
@@ -138,7 +134,7 @@
                 "publications": {
                     "description": "Publications associated with the resource.",
                     "items": {
-                        "$ref": "#/$defs/Publication"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -239,7 +235,7 @@
                 "funding": {
                     "description": "The funding source(s) for the resource.",
                     "items": {
-                        "$ref": "#/$defs/FundingSource"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -272,15 +268,11 @@
                     ]
                 },
                 "license": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/License"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The license of the resource. Individual products may have their own licenses."
+                    "description": "The license of the resource. Individual products may have their own licenses.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "name": {
                     "description": "The human-readable name of the resource.",
@@ -299,7 +291,7 @@
                 "publications": {
                     "description": "Publications associated with the resource.",
                     "items": {
-                        "$ref": "#/$defs/Publication"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -372,7 +364,7 @@
                 "contacts": {
                     "description": "The contact points for the product. May be an individual or organization.",
                     "items": {
-                        "$ref": "#/$defs/Contact"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -398,15 +390,11 @@
                     ]
                 },
                 "license": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/License"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The license of the product. This may differ from that of the parent resource."
+                    "description": "The license of the product. This may differ from that of the parent resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "name": {
                     "description": "The human-readable name of the product.",
@@ -471,25 +459,24 @@
             "additionalProperties": false,
             "description": "A funding source for a resource.",
             "properties": {
-                "identifier": {
-                    "description": "The identifier for the funding source.",
+                "id": {
+                    "description": "The identifier of the funding source. This is used to identify it within the registry.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "label": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Organization"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The organization providing the funding."
+                    "description": "The organization providing the funding.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 }
             },
+            "required": [
+                "id"
+            ],
             "title": "FundingSource",
             "type": "object"
         },
@@ -508,7 +495,7 @@
                 "contacts": {
                     "description": "The contact points for the product. May be an individual or organization.",
                     "items": {
-                        "$ref": "#/$defs/Contact"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -548,15 +535,11 @@
                     ]
                 },
                 "license": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/License"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The license of the product. This may differ from that of the parent resource."
+                    "description": "The license of the product. This may differ from that of the parent resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "name": {
                     "description": "The human-readable name of the product.",
@@ -645,7 +628,7 @@
                 "contacts": {
                     "description": "The contact points for the product. May be an individual or organization.",
                     "items": {
-                        "$ref": "#/$defs/Contact"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -671,15 +654,11 @@
                     ]
                 },
                 "license": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/License"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The license of the product. This may differ from that of the parent resource."
+                    "description": "The license of the product. This may differ from that of the parent resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "name": {
                     "description": "The human-readable name of the product.",
@@ -740,6 +719,10 @@
                         "null"
                     ]
                 },
+                "id": {
+                    "description": "The identifier of the contact. This is used to identify it within the registry.",
+                    "type": "string"
+                },
                 "label": {
                     "description": "The name of the individual.",
                     "type": [
@@ -757,6 +740,7 @@
                 }
             },
             "required": [
+                "id",
                 "category"
             ],
             "title": "Individual",
@@ -853,7 +837,7 @@
                 "funding": {
                     "description": "The funding source(s) for the resource.",
                     "items": {
-                        "$ref": "#/$defs/FundingSource"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -886,15 +870,11 @@
                     ]
                 },
                 "license": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/License"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The license of the resource. Individual products may have their own licenses."
+                    "description": "The license of the resource. Individual products may have their own licenses.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "name": {
                     "description": "The human-readable name of the resource.",
@@ -913,7 +893,7 @@
                 "publications": {
                     "description": "Publications associated with the resource.",
                     "items": {
-                        "$ref": "#/$defs/Publication"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -975,6 +955,13 @@
             "additionalProperties": false,
             "description": "A license for a resource or product.",
             "properties": {
+                "id": {
+                    "description": "The identifier of the license. This is used to identify it within the registry.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "label": {
                     "description": "The name of the license.",
                     "type": [
@@ -997,6 +984,9 @@
                     ]
                 }
             },
+            "required": [
+                "id"
+            ],
             "title": "License",
             "type": "object"
         },
@@ -1043,7 +1033,7 @@
                 "funding": {
                     "description": "The funding source(s) for the resource.",
                     "items": {
-                        "$ref": "#/$defs/FundingSource"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -1076,15 +1066,11 @@
                     ]
                 },
                 "license": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/License"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The license of the resource. Individual products may have their own licenses."
+                    "description": "The license of the resource. Individual products may have their own licenses.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "name": {
                     "description": "The human-readable name of the resource.",
@@ -1103,7 +1089,7 @@
                 "publications": {
                     "description": "Publications associated with the resource.",
                     "items": {
-                        "$ref": "#/$defs/Publication"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -1176,7 +1162,7 @@
                 "contacts": {
                     "description": "The contact points for the product. May be an individual or organization.",
                     "items": {
-                        "$ref": "#/$defs/Contact"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -1202,15 +1188,11 @@
                     ]
                 },
                 "license": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/License"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The license of the product. This may differ from that of the parent resource."
+                    "description": "The license of the product. This may differ from that of the parent resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "name": {
                     "description": "The human-readable name of the product.",
@@ -1271,6 +1253,10 @@
                         "null"
                     ]
                 },
+                "id": {
+                    "description": "The identifier of the contact. This is used to identify it within the registry.",
+                    "type": "string"
+                },
                 "label": {
                     "description": "The name of the organization.",
                     "type": [
@@ -1287,6 +1273,7 @@
                 }
             },
             "required": [
+                "id",
                 "category"
             ],
             "title": "Organization",
@@ -1307,7 +1294,7 @@
                 "contacts": {
                     "description": "The contact points for the product. May be an individual or organization.",
                     "items": {
-                        "$ref": "#/$defs/Contact"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -1333,15 +1320,11 @@
                     ]
                 },
                 "license": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/License"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The license of the product. This may differ from that of the parent resource."
+                    "description": "The license of the product. This may differ from that of the parent resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "name": {
                     "description": "The human-readable name of the product.",
@@ -1423,7 +1406,7 @@
                 "funding": {
                     "description": "The funding source(s) for the resource.",
                     "items": {
-                        "$ref": "#/$defs/FundingSource"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -1456,15 +1439,11 @@
                     ]
                 },
                 "license": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/License"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The license of the resource. Individual products may have their own licenses."
+                    "description": "The license of the resource. Individual products may have their own licenses.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "name": {
                     "description": "The human-readable name of the resource.",
@@ -1483,7 +1462,7 @@
                 "publications": {
                     "description": "Publications associated with the resource.",
                     "items": {
-                        "$ref": "#/$defs/Publication"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -1556,7 +1535,7 @@
                 "contacts": {
                     "description": "The contact points for the product. May be an individual or organization.",
                     "items": {
-                        "$ref": "#/$defs/Contact"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -1582,15 +1561,11 @@
                     ]
                 },
                 "license": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/License"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The license of the product. This may differ from that of the parent resource."
+                    "description": "The license of the product. This may differ from that of the parent resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "name": {
                     "description": "The human-readable name of the product.",
@@ -1650,6 +1625,13 @@
                         "null"
                     ]
                 },
+                "id": {
+                    "description": "The identifier of the publication. This is used to identify it within the registry.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "journal": {
                     "description": "The journal the publication was published in.",
                     "type": [
@@ -1679,6 +1661,9 @@
                     ]
                 }
             },
+            "required": [
+                "id"
+            ],
             "title": "Publication",
             "type": "object"
         },
@@ -1725,7 +1710,7 @@
                 "funding": {
                     "description": "The funding source(s) for the resource.",
                     "items": {
-                        "$ref": "#/$defs/FundingSource"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -1758,15 +1743,11 @@
                     ]
                 },
                 "license": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/License"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The license of the resource. Individual products may have their own licenses."
+                    "description": "The license of the resource. Individual products may have their own licenses.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "name": {
                     "description": "The human-readable name of the resource.",
@@ -1785,7 +1766,7 @@
                 "publications": {
                     "description": "Publications associated with the resource.",
                     "items": {
-                        "$ref": "#/$defs/Publication"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -1864,6 +1845,13 @@
                         "null"
                     ]
                 },
+                "id": {
+                    "description": "The identifier of the usage. This is used to identify it within the registry.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "label": {
                     "description": "The label of the usage.",
                     "type": [
@@ -1903,6 +1891,9 @@
                     ]
                 }
             },
+            "required": [
+                "id"
+            ],
             "title": "Usage",
             "type": "object"
         },
