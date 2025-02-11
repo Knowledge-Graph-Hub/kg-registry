@@ -77,6 +77,7 @@ page.is_obsolete %}
     </div>
     {% endif %}
 
+    {% if page.products and page.products.size > 0 %}
     <div class="card" style="margin-bottom: 1.5em;">
       <div class="card-header">
         Products
@@ -104,6 +105,11 @@ page.is_obsolete %}
         </tbody>
       </table>
     </div>
+    {% else %}
+    <div class="alert alert-warning" role="alert">
+      No products available. You could <a href="https://github.com/Knowledge-Graph-Hub/kg-registry/issues/new?template=update-resource.yml">suggest one to add!</a>
+    </div>
+    {% endif %}
 
     {% if page.usages %}
     <div class="card" style="margin-bottom: 1.5em;">
