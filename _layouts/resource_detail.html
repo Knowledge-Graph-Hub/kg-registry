@@ -82,7 +82,7 @@ page.is_obsolete %}
       <div class="card-header">
         Products
       </div>
-      <table class="table table-striped mb-0">
+      <table class="table table-striped mb-0" style="max-width: max-content;">
         <tbody>
           {% for p in page.products %}
           <tr>
@@ -91,15 +91,23 @@ page.is_obsolete %}
             </td>
             <td>{{p.name}}</td>
             <td>{{p.category}}</td>
+            {% if p.is_kgx %}
+            <td>
+              KGX Available
+            </td>
+            {% endif %}
+            {% if p.infores_id %}
+            <td>
+              infores:{{p.infores_id}}
+            </td>
+            {% else %}
+            <td>
+                <span style="color: darkred;">infores unknown</span>
+            </td>
+            {% endif %}
             <td>
               {{p.description}}
             </td>
-            {% if p.is_kgx %}
-            <td> KGX Available!</td>
-            {% endif %}
-            {% if p.infores_id %}
-            <td> infores:{{p.infores_id}}</td>
-            {% endif %}
           </tr>
           {% endfor %}
         </tbody>
