@@ -206,7 +206,8 @@ class NamedThing(ConfiguredBaseModel):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class Registry(ConfiguredBaseModel):
@@ -215,7 +216,7 @@ class Registry(ConfiguredBaseModel):
     """
     linkml_meta: ClassVar[LinkMLMeta] = LinkMLMeta({'from_schema': 'https://w3id.org/knowledge-graph-hub/kg_registry_schema'})
 
-    registry_entries: Optional[List[Union[Resource,KnowledgeGraph,DataGraph,DataModel,Mapping,ProductionProcess]]] = Field(default=None, description="""A list of entries in the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'registry_entries', 'domain_of': ['Registry']} })
+    resources: Optional[List[Union[Resource,KnowledgeGraph,DataGraph,DataModel,Mapping,ProductionProcess]]] = Field(default=None, description="""A list of entries in the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'resources', 'domain_of': ['Registry']} })
 
 
 class Resource(NamedThing):
@@ -251,7 +252,8 @@ class Resource(NamedThing):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class KnowledgeGraph(Resource):
@@ -293,7 +295,8 @@ class KnowledgeGraph(Resource):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class DataGraph(Resource):
@@ -329,7 +332,8 @@ class DataGraph(Resource):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class DataModel(Resource):
@@ -364,7 +368,8 @@ class DataModel(Resource):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class Mapping(Resource):
@@ -399,7 +404,8 @@ class Mapping(Resource):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class ProductionProcess(Resource):
@@ -434,7 +440,8 @@ class ProductionProcess(Resource):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class Product(NamedThing):
@@ -459,7 +466,8 @@ class Product(NamedThing):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class GraphProduct(Product):
@@ -488,7 +496,8 @@ class GraphProduct(Product):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class DataModelProduct(Product):
@@ -512,7 +521,8 @@ class DataModelProduct(Product):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class MappingProduct(Product):
@@ -536,7 +546,8 @@ class MappingProduct(Product):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class ProcessProduct(Product):
@@ -560,7 +571,8 @@ class ProcessProduct(Product):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class GraphicalInterface(Product):
@@ -584,7 +596,8 @@ class GraphicalInterface(Product):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class ProgrammingInterface(Product):
@@ -608,7 +621,8 @@ class ProgrammingInterface(Product):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class Contact(NamedThing):
@@ -623,7 +637,8 @@ class Contact(NamedThing):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class Individual(Contact):
@@ -646,7 +661,8 @@ class Individual(Contact):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
     @field_validator('orcid')
     def pattern_orcid(cls, v):
@@ -682,7 +698,8 @@ class Organization(Contact):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class FundingSource(NamedThing):
@@ -702,7 +719,8 @@ class FundingSource(NamedThing):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class License(NamedThing):
@@ -725,7 +743,8 @@ class License(NamedThing):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class Publication(NamedThing):
@@ -745,7 +764,8 @@ class Publication(NamedThing):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 class Usage(NamedThing):
@@ -771,7 +791,8 @@ class Usage(NamedThing):
          'designates_type': True,
          'domain': 'NamedThing',
          'domain_of': ['NamedThing'],
-         'is_a': 'type'} })
+         'is_a': 'type',
+         'is_class_field': True} })
 
 
 # Model rebuild
