@@ -1932,7 +1932,7 @@
             "additionalProperties": false,
             "description": "A registry of knowledge graphs and their components.",
             "properties": {
-                "registry_entries": {
+                "resources": {
                     "description": "A list of entries in the registry.",
                     "items": {
                         "anyOf": [
