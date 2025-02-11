@@ -209,6 +209,15 @@ class NamedThing(ConfiguredBaseModel):
          'is_a': 'type'} })
 
 
+class Registry(ConfiguredBaseModel):
+    """
+    A registry of knowledge graphs and their components.
+    """
+    linkml_meta: ClassVar[LinkMLMeta] = LinkMLMeta({'from_schema': 'https://w3id.org/knowledge-graph-hub/kg_registry_schema'})
+
+    registry_entries: Optional[List[Union[Resource,KnowledgeGraph,DataGraph,DataModel,Mapping,ProductionProcess]]] = Field(default=None, description="""A list of entries in the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'registry_entries', 'domain_of': ['Registry']} })
+
+
 class Resource(NamedThing):
     """
     A top-level class for all resources in the knowledge graph registry. Each resource may have multiple products or representations, but they will all be considered part of a the same parent resource.
@@ -768,6 +777,7 @@ class Usage(NamedThing):
 # Model rebuild
 # see https://pydantic-docs.helpmanual.io/usage/models/#rebuilding-a-model
 NamedThing.model_rebuild()
+Registry.model_rebuild()
 Resource.model_rebuild()
 KnowledgeGraph.model_rebuild()
 DataGraph.model_rebuild()

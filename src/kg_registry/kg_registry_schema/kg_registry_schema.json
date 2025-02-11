@@ -1928,6 +1928,43 @@
             "title": "Publication",
             "type": "object"
         },
+        "Registry": {
+            "additionalProperties": false,
+            "description": "A registry of knowledge graphs and their components.",
+            "properties": {
+                "registry_entries": {
+                    "description": "A list of entries in the registry.",
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/$defs/Resource"
+                            },
+                            {
+                                "$ref": "#/$defs/KnowledgeGraph"
+                            },
+                            {
+                                "$ref": "#/$defs/DataGraph"
+                            },
+                            {
+                                "$ref": "#/$defs/DataModel"
+                            },
+                            {
+                                "$ref": "#/$defs/Mapping"
+                            },
+                            {
+                                "$ref": "#/$defs/ProductionProcess"
+                            }
+                        ]
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                }
+            },
+            "title": "Registry",
+            "type": "object"
+        },
         "Resource": {
             "additionalProperties": false,
             "description": "A top-level class for all resources in the knowledge graph registry. Each resource may have multiple products or representations, but they will all be considered part of a the same parent resource.",

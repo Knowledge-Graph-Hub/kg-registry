@@ -34,6 +34,12 @@ classes:
       - category
     class_uri: schema:Thing
 
+  Registry:
+    description: >-
+      A registry of knowledge graphs and their components.
+    slots:
+      - resources
+
   ## Resource Classes
 
   Resource:
@@ -492,6 +498,12 @@ slots:
     description: >-
       The category of the resource.
       This should be identical to its class name.
+  resources:
+    description: A list of entries in the registry.
+    range: Resource
+    inlined: true
+    inlined_as_list: true
+    multivalued: true
 
 # Types
 types:
