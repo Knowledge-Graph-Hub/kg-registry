@@ -24,4 +24,4 @@ license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
 ---
 
-Entity and association taxonomy and datamodel for life-sciences data
+Entity and association taxonomy and datamodel for life-sciences data.
