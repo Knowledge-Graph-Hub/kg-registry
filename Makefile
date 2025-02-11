@@ -33,9 +33,6 @@ RUN = poetry run
 # All KG .md files
 KGS := $(wildcard resource/*.md)
 
-# All principles .md files
-PRINCIPLES := $(wildcard principles/*.md)
-
 # Path to the source KG-Registry schema
 SOURCE_SCHEMA = src/kg_registry/kg_registry_schema/schema/kg_registry_schema.yaml
 
@@ -72,30 +69,25 @@ reports:
 reports/robot:
 	mkdir -p $@
 
-reports/principles:
-	mkdir -p $@
+# reports/principles:
+# 	mkdir -p $@
 
 
 ### Build Configuration Files
 
-# Create the site-wide config file by combining all metadata on resources + principles
+# Create the site-wide config file by combining all metadata on resources
 #  and combining with site-wide metadata.
 #
 # Note that anything in _config.yml is accessible to any liquid template via the
 # `sites` object - think of it like the global database
 #
 # (this is somewhat hacky, but concatenating these yamls is safe)
-_config.yml: _config_header.yml registry/kgs.yml principles/all.yml
+_config.yml: _config_header.yml registry/kgs.yml
 	cat $^ > $@.tmp && mv $@.tmp $@
 
 # Sort resources based on the validation (metadata-grid)
 registry/kgs.yml: reports/metadata-grid.csv
 	./util/sort-resources.py tmp/unsorted-resources.yml $< $@ && rm -rf tmp
-
-# Extract the metadata from each principle in the principles/ directory, and concatenate
-# into a single yaml file in that directory
-principles/all.yml: $(PRINCIPLES)
-	./util/extract-metadata.py concat-principles -o $@.tmp $^  && mv $@.tmp $@
 
 # Use a generic yaml->json conversion, but adding a @content
 registry/kgs.jsonld: registry/kgs.yml
@@ -191,18 +183,18 @@ build/robot-foreign.jar: | build
 # Generate the initial dashboard results file
 # ALWAYS make sure nothing is running on port 25333
 # Then boot Py4J gateway to ROBOT on that port
-reports/dashboard.csv: registry/kgs.yml | \
-reports/robot reports/principles build/resource build/robot.jar build/robot-foreign.jar
-	make reboot
-	./util/principles/dashboard.py $< $@ --big false
+# reports/dashboard.csv: registry/kgs.yml | \
+# reports/robot reports/principles build/resource build/robot.jar build/robot-foreign.jar
+# 	make reboot
+# 	./util/principles/dashboard.py $< $@ --big false
 
-reports/big-dashboard.csv: reports/dashboard.csv
-	make reboot
-	./util/principles/dashboard.py registry/kgs.yml $@ --big true
+# reports/big-dashboard.csv: reports/dashboard.csv
+# 	make reboot
+# 	./util/principles/dashboard.py registry/kgs.yml $@ --big true
 
-# Combine the dashboard files
-reports/dashboard-full.csv: reports/dashboard.csv reports/big-dashboard.csv registry/kgs.yml
-	./util/principles/sort_tables.py $^ $@
+# # Combine the dashboard files
+# reports/dashboard-full.csv: reports/dashboard.csv reports/big-dashboard.csv registry/kgs.yml
+# 	./util/principles/sort_tables.py $^ $@
 
 # Generate the HTML grid output for dashboard
 reports/dashboard.html: reports/dashboard-full.csv
@@ -215,7 +207,6 @@ build/dashboard: reports/dashboard.html
 	mkdir -p $@/reports
 	cp $< $@
 	cp -r reports/robot $@/reports
-	cp -r reports/principles $@/reports
 	cp -r assets/svg $@/assets
 	rm -rf build/dashboard.zip
 	zip -r $@.zip $@
@@ -226,9 +217,7 @@ build/dashboard: reports/dashboard.html
 clean-dashboard: build/dashboard
 	rm -rf build/resource
 	rm -rf reports/robot
-	rm -rf reports/principles
 	rm -rf build/dashboard
-
 
 # Note this should *not* be run as part of general travis jobs, it is expensive
 # and may be prone to false positives as it is inherently network-based
