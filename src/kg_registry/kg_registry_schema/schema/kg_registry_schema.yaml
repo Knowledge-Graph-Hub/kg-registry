@@ -23,9 +23,21 @@ imports:
   - linkml:types
 
 classes:
+
+  ## Top-level Classes
+
+  NamedThing:
+    description: >-
+      A generic grouping for any identifiable entity
+    slots:
+      - id
+      - category
+    class_uri: schema:Thing
+
   ## Resource Classes
 
   Resource:
+    is_a: NamedThing
     description: >-
       A top-level class for all resources in the
       knowledge graph registry. Each resource may have multiple
@@ -34,16 +46,6 @@ classes:
     close_mappings:
       - schema:CreativeWork
     attributes:
-      id:
-        description: >-
-          The identifier of the resource.
-          This is used to identify it within the registry.
-        required: true
-        range: string
-        identifier: true
-        slot_uri: dcterms:identifier
-        exact_mappings:
-          - schema:name
       activity_status:
         description: >-
           The status of the resource.
@@ -119,13 +121,6 @@ classes:
           Publications associated with the resource.
         range: Publication
         multivalued: true
-      category:
-        description: >-
-          The category of the resource.
-          This should be identical to its class name.
-        range: string
-        required: true
-        designates_type: true
       usages:
         description: >-
           The usage(s) of the resource.
@@ -220,6 +215,7 @@ classes:
   ## Product Classes
 
   Product:
+    is_a: NamedThing
     abstract: true
     description: >-
       A top-level class for all products in the
@@ -227,14 +223,6 @@ classes:
       files, APIs, or any other accessible representations of
       a resource.
     attributes:
-      id:
-        description: >-
-          The identifier of the product.
-          This is used to identify it within the registry.
-        required: true
-        range: string
-        identifier: true
-        slot_uri: dcterms:identifier
       name:
         description: >-
           The human-readable name of the product.
@@ -270,13 +258,6 @@ classes:
           May be an individual or organization.
         range: Contact
         multivalued: true
-      category:
-        description: >-
-          The category of the product.
-          This should be identical to its class name.
-        range: string
-        required: true
-        designates_type: true
       tags:
         description: Tags associated with the product.
         range: TagEnum
@@ -340,23 +321,10 @@ classes:
   ## Other Classes
 
   Contact:
+    is_a: NamedThing
     description: >-
       A contact point for a resource or product.
     abstract: true
-    attributes:
-      id:
-        description: >-
-          The identifier of the contact.
-          This is used to identify it within the registry.
-        range: string
-        identifier: true
-      category:
-        description: >-
-          The category of the contact.
-          This should be identical to its class name.
-        range: string
-        required: true
-        designates_type: true
 
   Individual:
     description: >-
@@ -407,31 +375,20 @@ classes:
         range: uriorcurie
 
   FundingSource:
+    is_a: NamedThing
     description: >-
       A funding source for a resource.
     attributes:
-      id:
-        description: >-
-          The identifier of the funding source.
-          This is used to identify it within the registry.
-        range: string
-        identifier: true
       label:
         description: >-
           The organization providing the funding.
         range: Organization
 
   License:
+    is_a: NamedThing
     description: >-
       A license for a resource or product.
     attributes:
-      id:
-        description: >-
-          The identifier of the license.
-          This is used to identify it within the registry.
-          A URL is an acceptable identifier here.
-        range: string
-        identifier: true
       label:
         description: >-
           The name of the license.
@@ -447,17 +404,12 @@ classes:
         range: uriorcurie
 
   Publication:
+    is_a: NamedThing
     description: >-
       A publication associated with a resource.
+      Its id should be a DOI (with prefix), but a URL is
+      acceptable if a DOI is not available.
     attributes:
-      id:
-        description: >-
-          The identifier of the publication.
-          This is used to identify it within the registry.
-          This should be a DOI (with prefix), but a URL is
-          acceptable if a DOI is not available.
-        range: string
-        identifier: true
       preferred:
         description: >-
           Whether this is the preferred publication for the resource.
@@ -486,16 +438,11 @@ classes:
         range: uriorcurie
 
   Usage:
+    is_a: NamedThing
     description: >-
       The usage of a resource.
       This may be actual, experimental, or theoretical.
     attributes:
-      id:
-        description: >-
-          The identifier of the usage.
-          This is used to identify it within the registry.
-        range: string
-        identifier: true
       label:
         description: >-
           The label of the usage.
@@ -526,6 +473,32 @@ classes:
         description: >-
           The type of usage.
         range: UsageEnum
+
+# Slots
+slots:
+  id:
+    description: >-
+      The identifier of an entity.
+      This is used to identify it within the registry.
+    required: true
+    range: string
+    identifier: true
+    slot_uri: dcterms:identifier
+  category:
+    is_a: type
+    domain: NamedThing
+    range: category_type
+    designates_type: true
+    description: >-
+      The category of the resource.
+      This should be identical to its class name.
+
+# Types
+types:
+  category_type:
+    typeof: string
+    description: >-
+      A primitive type in which the value denotes a class within the model.
 
 # Enums
 enums:

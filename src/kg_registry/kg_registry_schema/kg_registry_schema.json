@@ -38,7 +38,10 @@
                     "enum": [
                         "DataGraph"
                     ],
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "contacts": {
                     "description": "The contact point(s) for the resource. May be an individual or organization.",
@@ -86,7 +89,7 @@
                     ]
                 },
                 "id": {
-                    "description": "The identifier of the resource. This is used to identify it within the registry.",
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
@@ -217,10 +220,9 @@
                 }
             },
             "required": [
-                "id",
                 "name",
                 "domain",
-                "category"
+                "id"
             ],
             "title": "DataGraph",
             "type": "object"
@@ -238,7 +240,10 @@
                     "enum": [
                         "DataModel"
                     ],
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "contacts": {
                     "description": "The contact point(s) for the resource. May be an individual or organization.",
@@ -286,7 +291,7 @@
                     ]
                 },
                 "id": {
-                    "description": "The identifier of the resource. This is used to identify it within the registry.",
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
@@ -407,10 +412,9 @@
                 }
             },
             "required": [
-                "id",
                 "name",
                 "domain",
-                "category"
+                "id"
             ],
             "title": "DataModel",
             "type": "object"
@@ -420,11 +424,14 @@
             "description": "A product that is a data model, such as an ontology or schema.",
             "properties": {
                 "category": {
-                    "description": "The category of the product. This should be identical to its class name.",
+                    "description": "The category of the resource. This should be identical to its class name.",
                     "enum": [
                         "DataModelProduct"
                     ],
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "compression": {
                     "$ref": "#/$defs/CompressionEnum",
@@ -448,7 +455,7 @@
                     ]
                 },
                 "id": {
-                    "description": "The identifier of the product. This is used to identify it within the registry.",
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
@@ -495,9 +502,8 @@
                 }
             },
             "required": [
-                "id",
                 "name",
-                "category"
+                "id"
             ],
             "title": "DataModelProduct",
             "type": "object"
@@ -528,12 +534,19 @@
             "additionalProperties": false,
             "description": "A funding source for a resource.",
             "properties": {
-                "id": {
-                    "description": "The identifier of the funding source. This is used to identify it within the registry.",
+                "category": {
+                    "description": "The category of the resource. This should be identical to its class name.",
+                    "enum": [
+                        "FundingSource"
+                    ],
                     "type": [
                         "string",
                         "null"
                     ]
+                },
+                "id": {
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
+                    "type": "string"
                 },
                 "label": {
                     "description": "The organization providing the funding.",
@@ -554,11 +567,14 @@
             "description": "A product that is a graph, represented as nodes and edges.",
             "properties": {
                 "category": {
-                    "description": "The category of the product. This should be identical to its class name.",
+                    "description": "The category of the resource. This should be identical to its class name.",
                     "enum": [
                         "GraphProduct"
                     ],
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "compression": {
                     "$ref": "#/$defs/CompressionEnum",
@@ -589,7 +605,7 @@
                     ]
                 },
                 "id": {
-                    "description": "The identifier of the product. This is used to identify it within the registry.",
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
@@ -670,9 +686,8 @@
                 }
             },
             "required": [
-                "id",
                 "name",
-                "category"
+                "id"
             ],
             "title": "GraphProduct",
             "type": "object"
@@ -690,11 +705,14 @@
             "description": "A product that is a graphical interface to a resource. Similar to the \"browsers\" field in OBO Foundry.",
             "properties": {
                 "category": {
-                    "description": "The category of the product. This should be identical to its class name.",
+                    "description": "The category of the resource. This should be identical to its class name.",
                     "enum": [
                         "GraphicalInterface"
                     ],
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "compression": {
                     "$ref": "#/$defs/CompressionEnum",
@@ -718,7 +736,7 @@
                     ]
                 },
                 "id": {
-                    "description": "The identifier of the product. This is used to identify it within the registry.",
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
@@ -765,9 +783,8 @@
                 }
             },
             "required": [
-                "id",
                 "name",
-                "category"
+                "id"
             ],
             "title": "GraphicalInterface",
             "type": "object"
@@ -777,11 +794,14 @@
             "description": "An individual person.",
             "properties": {
                 "category": {
-                    "description": "The category of the contact. This should be identical to its class name.",
+                    "description": "The category of the resource. This should be identical to its class name.",
                     "enum": [
                         "Individual"
                     ],
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "email": {
                     "description": "The email address of the individual.",
@@ -798,7 +818,7 @@
                     ]
                 },
                 "id": {
-                    "description": "The identifier of the contact. This is used to identify it within the registry.",
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "label": {
@@ -818,8 +838,7 @@
                 }
             },
             "required": [
-                "id",
-                "category"
+                "id"
             ],
             "title": "Individual",
             "type": "object"
@@ -837,7 +856,10 @@
                     "enum": [
                         "KnowledgeGraph"
                     ],
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "components": {
                     "description": "The components of the knowledge graph.",
@@ -933,7 +955,7 @@
                     ]
                 },
                 "id": {
-                    "description": "The identifier of the resource. This is used to identify it within the registry.",
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
@@ -1054,10 +1076,9 @@
                 }
             },
             "required": [
-                "id",
                 "name",
                 "domain",
-                "category"
+                "id"
             ],
             "title": "KnowledgeGraph",
             "type": "object"
@@ -1066,12 +1087,19 @@
             "additionalProperties": false,
             "description": "A license for a resource or product.",
             "properties": {
-                "id": {
-                    "description": "The identifier of the license. This is used to identify it within the registry. A URL is an acceptable identifier here.",
+                "category": {
+                    "description": "The category of the resource. This should be identical to its class name.",
+                    "enum": [
+                        "License"
+                    ],
                     "type": [
                         "string",
                         "null"
                     ]
+                },
+                "id": {
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
+                    "type": "string"
                 },
                 "label": {
                     "description": "The name of the license.",
@@ -1114,7 +1142,10 @@
                     "enum": [
                         "Mapping"
                     ],
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "contacts": {
                     "description": "The contact point(s) for the resource. May be an individual or organization.",
@@ -1162,7 +1193,7 @@
                     ]
                 },
                 "id": {
-                    "description": "The identifier of the resource. This is used to identify it within the registry.",
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
@@ -1283,10 +1314,9 @@
                 }
             },
             "required": [
-                "id",
                 "name",
                 "domain",
-                "category"
+                "id"
             ],
             "title": "Mapping",
             "type": "object"
@@ -1296,11 +1326,14 @@
             "description": "A product that is a mapping between two or more data sources.",
             "properties": {
                 "category": {
-                    "description": "The category of the product. This should be identical to its class name.",
+                    "description": "The category of the resource. This should be identical to its class name.",
                     "enum": [
                         "MappingProduct"
                     ],
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "compression": {
                     "$ref": "#/$defs/CompressionEnum",
@@ -1324,7 +1357,7 @@
                     ]
                 },
                 "id": {
-                    "description": "The identifier of the product. This is used to identify it within the registry.",
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
@@ -1371,11 +1404,35 @@
                 }
             },
             "required": [
-                "id",
                 "name",
-                "category"
+                "id"
             ],
             "title": "MappingProduct",
+            "type": "object"
+        },
+        "NamedThing": {
+            "additionalProperties": false,
+            "description": "A generic grouping for any identifiable entity",
+            "properties": {
+                "category": {
+                    "description": "The category of the resource. This should be identical to its class name.",
+                    "enum": [
+                        "NamedThing"
+                    ],
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "NamedThing",
             "type": "object"
         },
         "Organization": {
@@ -1383,11 +1440,14 @@
             "description": "An organization.",
             "properties": {
                 "category": {
-                    "description": "The category of the contact. This should be identical to its class name.",
+                    "description": "The category of the resource. This should be identical to its class name.",
                     "enum": [
                         "Organization"
                     ],
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "email": {
                     "description": "The email address of the organization.",
@@ -1404,7 +1464,7 @@
                     ]
                 },
                 "id": {
-                    "description": "The identifier of the contact. This is used to identify it within the registry.",
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "label": {
@@ -1423,8 +1483,7 @@
                 }
             },
             "required": [
-                "id",
-                "category"
+                "id"
             ],
             "title": "Organization",
             "type": "object"
@@ -1434,11 +1493,14 @@
             "description": "A product that is a process or algorithm.",
             "properties": {
                 "category": {
-                    "description": "The category of the product. This should be identical to its class name.",
+                    "description": "The category of the resource. This should be identical to its class name.",
                     "enum": [
                         "ProcessProduct"
                     ],
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "compression": {
                     "$ref": "#/$defs/CompressionEnum",
@@ -1462,7 +1524,7 @@
                     ]
                 },
                 "id": {
-                    "description": "The identifier of the product. This is used to identify it within the registry.",
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
@@ -1509,9 +1571,8 @@
                 }
             },
             "required": [
-                "id",
                 "name",
-                "category"
+                "id"
             ],
             "title": "ProcessProduct",
             "type": "object"
@@ -1529,7 +1590,10 @@
                     "enum": [
                         "ProductionProcess"
                     ],
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "contacts": {
                     "description": "The contact point(s) for the resource. May be an individual or organization.",
@@ -1577,7 +1641,7 @@
                     ]
                 },
                 "id": {
-                    "description": "The identifier of the resource. This is used to identify it within the registry.",
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
@@ -1698,10 +1762,9 @@
                 }
             },
             "required": [
-                "id",
                 "name",
                 "domain",
-                "category"
+                "id"
             ],
             "title": "ProductionProcess",
             "type": "object"
@@ -1711,11 +1774,14 @@
             "description": "A product that is a programming interface (API) to a resource.",
             "properties": {
                 "category": {
-                    "description": "The category of the product. This should be identical to its class name.",
+                    "description": "The category of the resource. This should be identical to its class name.",
                     "enum": [
                         "ProgrammingInterface"
                     ],
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "compression": {
                     "$ref": "#/$defs/CompressionEnum",
@@ -1739,7 +1805,7 @@
                     ]
                 },
                 "id": {
-                    "description": "The identifier of the product. This is used to identify it within the registry.",
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
@@ -1786,16 +1852,15 @@
                 }
             },
             "required": [
-                "id",
                 "name",
-                "category"
+                "id"
             ],
             "title": "ProgrammingInterface",
             "type": "object"
         },
         "Publication": {
             "additionalProperties": false,
-            "description": "A publication associated with a resource.",
+            "description": "A publication associated with a resource. Its id should be a DOI (with prefix), but a URL is acceptable if a DOI is not available.",
             "properties": {
                 "authors": {
                     "description": "The authors of the publication.",
@@ -1807,6 +1872,16 @@
                         "null"
                     ]
                 },
+                "category": {
+                    "description": "The category of the resource. This should be identical to its class name.",
+                    "enum": [
+                        "Publication"
+                    ],
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "doi": {
                     "description": "The DOI of the publication. This should include the doi: prefix.",
                     "type": [
@@ -1815,11 +1890,8 @@
                     ]
                 },
                 "id": {
-                    "description": "The identifier of the publication. This is used to identify it within the registry. This should be a DOI (with prefix), but a URL is acceptable if a DOI is not available.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
+                    "type": "string"
                 },
                 "journal": {
                     "description": "The journal the publication was published in.",
@@ -1869,7 +1941,10 @@
                     "enum": [
                         "Resource"
                     ],
-                    "type": "string"
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "contacts": {
                     "description": "The contact point(s) for the resource. May be an individual or organization.",
@@ -1917,7 +1992,7 @@
                     ]
                 },
                 "id": {
-                    "description": "The identifier of the resource. This is used to identify it within the registry.",
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
@@ -2038,10 +2113,9 @@
                 }
             },
             "required": [
-                "id",
                 "name",
                 "domain",
-                "category"
+                "id"
             ],
             "title": "Resource",
             "type": "object"
@@ -2060,6 +2134,16 @@
             "additionalProperties": false,
             "description": "The usage of a resource. This may be actual, experimental, or theoretical.",
             "properties": {
+                "category": {
+                    "description": "The category of the resource. This should be identical to its class name.",
+                    "enum": [
+                        "Usage"
+                    ],
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "description": {
                     "description": "A description of the usage.",
                     "type": [
@@ -2068,11 +2152,8 @@
                     ]
                 },
                 "id": {
-                    "description": "The identifier of the usage. This is used to identify it within the registry.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
+                    "type": "string"
                 },
                 "label": {
                     "description": "The label of the usage.",
