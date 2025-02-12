@@ -8,6 +8,19 @@ layout: default
     <img alt="logo" src="{{page.depicted_by}}" style="max-height: 1em" />
     {% endif %} {{ page.id }}
   </h1>
+  {% if page.category %}
+    {% if page.category == "Aggregator" %}
+      <p>is an <strong><em>Aggregator.</em></strong></p>
+    {% elsif page.category == "Resource" %}
+      <p>is a general purpose <strong><em>Resource.</em></strong></p>
+    {% elsif page.category == "KnowledgeGraph" %}
+      <p>is a <strong><em>Knowledge Graph.</em></strong></p>
+    {% elsif page.category == "DataSource" %}
+      <p>is a <strong><em>Data Source.</em></strong></p>
+    {% elsif page.category == "DataModel" %}
+      <p>is a <strong><em>Data Model or Ontology.</em></strong></p>
+    {% endif %}
+  {% endif %}
   <p>{{page.description}}</p>
 </div>
 
