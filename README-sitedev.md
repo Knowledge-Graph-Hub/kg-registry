@@ -1,6 +1,8 @@
 # Site Development
 
-This documentation is for developers of this prototype OBO Foundry site.
+This documentation is for developers of the KG-Registry site.
+
+This version of the site is based on the OBO Foundry site (<https://obofoundry.org/>).
 
 ## Getting Started
 
@@ -14,7 +16,7 @@ $ docker run --rm --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:3.5
 You can make changes locally and the Docker image will automatically update.
 When you're ready, you can commit to a new branch and send a pull request.
 After it's accepted, it will be automatically built and deployed to
-http://obofoundry.github.io in a few minutes.
+https://kghub.org/kg-registry/ in a few minutes.
 
 ## Details
 
@@ -106,20 +108,6 @@ markdown and html in the center.
 The navigation bar / menu on the top of the page is controlled by
 [_includes/navbar.html](_includes/navbar.html). It should be easy for
 site admins to add new items, rearrange etc as they see fit
-
-### Organization
-
-This site provides a convenient way to organize OBO Foundry docs, if
-this is deemed appropriate. So far I have copied some docs from the
-original website (much of which is embarassingly stale, rotten or out
-of date). Many things at the top level could be moved down into
-directories to provide better organization.
-
-I have already started a [faq/](faq/) directory (one md file per FAQ entry).
-
-We could in theory easily manage our principles here. E.g. one .md
-file per principle. I personally think this much better than the
-current wiki, but other opinions welcome.
 
 ### Code quality
 
