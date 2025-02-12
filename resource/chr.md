@@ -17,11 +17,11 @@ products:
 - id: chr.owl
   name: Monochrom Ontology OWL release
   description: OWL release of Monochrom Ontology
-  category: Product
+  category: DataModelProduct
 license:
   label: CC0 1.0
   id: https://creativecommons.org/publicdomain/zero/1.0/
-category: DataGraph
+category: DataModel
 ---
 
 Automatic translation of UCSC chromosome bands to OWL classes

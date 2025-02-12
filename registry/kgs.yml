@@ -1,6 +1,6 @@
 resources:
 - activity_status: active
-  category: KnowledgeGraph
+  category: Aggregator
   contacts:
   - category: Individual
     email: kebedey@renci.org
@@ -185,7 +185,7 @@ resources:
   name: Data Distillery Knowledge Graph
   url: https://dd-kg-ui.cfde.cloud/about
 - activity_status: active
-  category: DataGraph
+  category: DataModel
   contacts:
   - category: Individual
     email: cjmungall@lbl.gov
@@ -202,7 +202,7 @@ resources:
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
   name: Monochrom Ontology
   products:
-  - category: Product
+  - category: DataModelProduct
     description: OWL release of Monochrom Ontology
     id: chr.owl
     name: Monochrom Ontology OWL release
@@ -250,7 +250,7 @@ resources:
   repository: https://github.com/gnn4dr/DRKG
   url: https://github.com/gnn4dr/DRKG
 - activity_status: active
-  category: DataGraph
+  category: DataSource
   contacts:
   - category: Individual
     email: cthoyt@gmail.com
@@ -351,7 +351,7 @@ resources:
   repository: https://github.com/cmungall/gold-ontology
   url: https://gold.jgi.doe.gov/
 - activity_status: active
-  category: DataGraph
+  category: DataSource
   contacts:
   - category: Individual
     email: cthoyt@gmail.com
@@ -430,7 +430,7 @@ resources:
   repository: ''
   url: ''
 - activity_status: active
-  category: DataGraph
+  category: DataSource
   contacts:
   - category: Individual
     email: cthoyt@gmail.com
@@ -483,6 +483,13 @@ resources:
   id: kg-covid-19
   layout: resource_detail
   name: KG-COVID-19
+  products:
+  - category: GraphProduct
+    description: KGX nodes and edges for KG-COVID-19
+    id: kg-covid-19.kgx
+    is_kgx: true
+    name: KG-COVID-19 graph
+    url: https://kghub.io/kg-covid-19/
   repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
   url: https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki
 - activity_status: active
@@ -863,7 +870,7 @@ resources:
   repository: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
   url: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
 - activity_status: active
-  category: DataGraph
+  category: DataSource
   contacts:
   - category: Individual
     email: cjmungall@lbl.gov
@@ -889,7 +896,7 @@ resources:
   repository: https://github.com/biopragmatics/obo-db-ingest
   url: https://reactome.org
 - activity_status: active
-  category: DataGraph
+  category: DataSource
   contacts:
   - category: Individual
     email: cthoyt@gmail.com
@@ -1007,7 +1014,7 @@ resources:
   repository: ''
   url: ''
 - activity_status: active
-  category: DataGraph
+  category: DataSource
   contacts:
   - category: Individual
     email: cthoyt@gmail.com
@@ -1096,7 +1103,7 @@ resources:
   repository: ''
   url: ''
 - activity_status: active
-  category: DataGraph
+  category: DataSource
   contacts:
   - category: Individual
     email: cthoyt@gmail.com
