@@ -35,7 +35,7 @@ products:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/drugbank/drugbank.sssom
   category: MappingProduct
-category: DataGraph
+category: DataSource
 ---
 
 DrugBank

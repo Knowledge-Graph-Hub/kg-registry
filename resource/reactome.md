@@ -24,7 +24,7 @@ products:
   description: Biopragmatics provided conversion, human subset
   url: https://w3id.org/biopragmatics/resources/reactome/reactome.obo
   category: Product
-category: DataGraph
+category: DataSource
 ---
 
 REACTOME is an open-source, open access, manually curated and peer-reviewed pathway database.
