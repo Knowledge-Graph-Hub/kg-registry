@@ -196,32 +196,21 @@ classes:
 
   DataSource:
     description: >-
-      A data source, rendered as graph nodes and edges.
-      This is not identical to the graph *product*, as a single DataGraph
-      may have multiple products or representations.
-      May be a component of a knowledge graph.
+      A data source. One data source may have multiple products.
     is_a: Resource
-    attributes:
-      produced_by:
-        description: The process that produced the graph.
-        range: ProductionProcess
-        multivalued: true
 
   DataModel:
     description: >-
       A data model, such as an ontology or schema.
-      May be a use in construction of a knowledge graph.
+      May be used in construction of a knowledge graph.
     is_a: Resource
 
-  Mapping:
+  Aggregator:
     description: >-
-      A mapping between two or more data sources.
-      May be a use in construction of a knowledge graph.
-    is_a: Resource
-
-  ProductionProcess:
-    description: >-
-      A process for producing a resource and/or its products.
+      An aggregator of data sources.
+      Note that this may be a data source itself,
+      and its products may undergo changes
+      in the process of their inclusion in the aggregator.
     is_a: Resource
 
   ## Product Classes
