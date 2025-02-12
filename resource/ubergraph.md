@@ -32,7 +32,7 @@ products:
   category: Product
 license:
   label: CC BY 4.0
-  url: https://creativecommons.org/licenses/by/4.0/
+  id: https://creativecommons.org/licenses/by/4.0/
 ---
 
 ### Ubergraph: A Unified Semantic Knowledge Graph for OBO Ontologies

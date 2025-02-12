@@ -147,7 +147,11 @@ def concat_resource_yaml(args):
             if "license" in obj:
                 # https://creativecommons.org/about/downloads
                 license = obj["license"]
-                lurl = license["url"]
+                try:
+                    lurl = license["id"] # This should be a URL
+                except KeyError:
+                    print(f"ERROR: Could not find id for license in {obj['id']}")
+                    sys.exit(1)
                 logo = ""
                 if lurl.find("creativecommons.org/licenses/by-sa") > 0:
                     logo = (
