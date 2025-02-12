@@ -394,15 +394,14 @@ classes:
     is_a: NamedThing
     description: >-
       A license for a resource or product.
+      The id field should be a URL to the
+      license text, e.g.,
+      https://creativecommons.org/licenses/by/4.0/
     attributes:
       label:
         description: >-
           The name of the license.
         range: string
-      url:
-        description: >-
-          The URL of the license.
-        range: uriorcurie
       logo:
         description: >-
           The URL of a logo for the license.

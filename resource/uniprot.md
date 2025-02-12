@@ -7,8 +7,6 @@ description: UniProt Protein
 domain: biological systems
 contacts:
 - category: Individual
-
-- category: Individual
   orcid: 0000-0003-4423-4370
   github: cthoyt
   email: cthoyt@gmail.com

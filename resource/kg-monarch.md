@@ -22,7 +22,7 @@ products:
   category: GraphProduct
 license:
   label: CC0 1.0
-  url: https://creativecommons.org/publicdomain/zero/1.0/
+  id: https://creativecommons.org/publicdomain/zero/1.0/
 category: KnowledgeGraph
 ---
 

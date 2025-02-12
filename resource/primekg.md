@@ -20,7 +20,7 @@ products:
   category: GraphProduct
 license:
   label: MIT License
-  url: https://opensource.org/licenses/MIT
+  id: https://opensource.org/licenses/MIT
 category: KnowledgeGraph
 ---
 
