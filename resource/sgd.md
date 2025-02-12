@@ -39,7 +39,7 @@ products:
 license:
   label: CC BY 4.0
   id: https://creativecommons.org/licenses/by/4.0/
-category: DataGraph
+category: DataSource
 ---
 
 The Saccharomyces Genome Database (SGD) project collects information and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae.

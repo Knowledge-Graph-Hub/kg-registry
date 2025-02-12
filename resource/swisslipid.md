@@ -35,7 +35,7 @@ products:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.sssom
   category: MappingProduct
-category: DataGraph
+category: DataSource
 ---
 
 SwissLipid

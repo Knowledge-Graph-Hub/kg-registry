@@ -39,7 +39,7 @@ products:
 license:
   label: CC BY 4.0
   id: https://creativecommons.org/licenses/by/4.0/
-category: DataGraph
+category: DataSource
 ---
 
 Rhea is an expert-curated knowledgebase of chemical and transport reactions of biological interest. Enzyme-catalyzed and spontaneously occurring reactions are curated from peer-reviewed literature and represented in a computationally tractable manner by using the ChEBI (Chemical Entities of Biological Interest) ontology to describe reaction participants.
