@@ -18,7 +18,7 @@ products:
   category: GraphProduct
 license:
   label: UMLS
-  url: https://www.nlm.nih.gov/databases/umls.html
+  id: https://www.nlm.nih.gov/databases/umls.html
 category: KnowledgeGraph
 ---
 

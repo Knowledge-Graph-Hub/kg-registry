@@ -21,7 +21,7 @@ products:
   category: DataModelProduct
 license:
   label: CC0 1.0
-  url: https://creativecommons.org/publicdomain/zero/1.0/
+  id: https://creativecommons.org/publicdomain/zero/1.0/
 ---
 
 Entity and association taxonomy and datamodel for life-sciences data.

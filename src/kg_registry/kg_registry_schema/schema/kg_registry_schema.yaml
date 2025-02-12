@@ -11,8 +11,10 @@ see_also:
 version: 0.0.2
 
 prefixes:
-  kg_registry_schema: https://w3id.org/bridge2ai/data-sheets-schema/
+  kgr: https://w3id.org/bridge2ai/data-sheets-schema/
   skos: http://www.w3.org/2004/02/skos/core#
+  linkml: https://w3id.org/linkml/
+  dcterms: http://purl.org/dc/terms/
 
 default_prefix: kgr
 default_range: string
@@ -20,13 +22,34 @@ default_range: string
 imports:
   - linkml:types
 
-# TODO: add classes for Usages and Implementations
-
 classes:
+
+  ## Top-level Classes
+
+  NamedThing:
+    description: >-
+      A generic grouping for any identifiable entity
+    slots:
+      - id
+      - category
+    class_uri: schema:Thing
+
+  Registry:
+    description: >-
+      A registry of knowledge graphs and their components.
+    slots:
+      - resources
+
+  Contact:
+    description: >-
+      A contact point for a resource or product.
+    slots:
+      - category
 
   ## Resource Classes
 
   Resource:
+    is_a: NamedThing
     description: >-
       A top-level class for all resources in the
       knowledge graph registry. Each resource may have multiple
@@ -35,16 +58,6 @@ classes:
     close_mappings:
       - schema:CreativeWork
     attributes:
-      id:
-        description: >-
-          The identifier of the resource.
-          This is used to identify it within the registry.
-        required: true
-        range: string
-        identifier: true
-        slot_uri: dcterms:identifier
-        exact_mappings:
-          - schema:name
       activity_status:
         description: >-
           The status of the resource.
@@ -74,6 +87,7 @@ classes:
           The license of the resource.
           Individual products may have their own licenses.
         range: License
+        inlined: true
       version:
         description: The version of the resource.
         range: string
@@ -119,12 +133,6 @@ classes:
           Publications associated with the resource.
         range: Publication
         multivalued: true
-      category:
-        description: >-
-          The category of the resource.
-          This should be identical to its class name.
-        range: string
-        required: true
       usages:
         description: >-
           The usage(s) of the resource.
@@ -219,6 +227,7 @@ classes:
   ## Product Classes
 
   Product:
+    is_a: NamedThing
     abstract: true
     description: >-
       A top-level class for all products in the
@@ -226,14 +235,6 @@ classes:
       files, APIs, or any other accessible representations of
       a resource.
     attributes:
-      id:
-        description: >-
-          The identifier of the product.
-          This is used to identify it within the registry.
-        required: true
-        range: string
-        identifier: true
-        slot_uri: dcterms:identifier
       name:
         description: >-
           The human-readable name of the product.
@@ -269,12 +270,6 @@ classes:
           May be an individual or organization.
         range: Contact
         multivalued: true
-      category:
-        description: >-
-          The category of the product.
-          This should be identical to its class name.
-        range: string
-        required: true
       tags:
         description: Tags associated with the product.
         range: TagEnum
@@ -337,18 +332,6 @@ classes:
 
   ## Other Classes
 
-  Contact:
-    description: >-
-      A contact point for a resource or product.
-    abstract: true
-    attributes:
-      category:
-        description: >-
-          The category of the contact.
-          This should be identical to its class name.
-        range: string
-        required: true
-
   Individual:
     description: >-
       An individual person.
@@ -398,6 +381,7 @@ classes:
         range: uriorcurie
 
   FundingSource:
+    is_a: NamedThing
     description: >-
       A funding source for a resource.
     attributes:
@@ -405,23 +389,19 @@ classes:
         description: >-
           The organization providing the funding.
         range: Organization
-      identifier:
-        description: >-
-          The identifier for the funding source.
-        range: string
 
   License:
+    is_a: NamedThing
     description: >-
       A license for a resource or product.
+      The id field should be a URL to the
+      license text, e.g.,
+      https://creativecommons.org/licenses/by/4.0/
     attributes:
       label:
         description: >-
           The name of the license.
         range: string
-      url:
-        description: >-
-          The URL of the license.
-        range: uriorcurie
       logo:
         description: >-
           The URL of a logo for the license.
@@ -429,8 +409,11 @@ classes:
         range: uriorcurie
 
   Publication:
+    is_a: NamedThing
     description: >-
       A publication associated with a resource.
+      Its id should be a DOI (with prefix), but a URL is
+      acceptable if a DOI is not available.
     attributes:
       preferred:
         description: >-
@@ -460,6 +443,7 @@ classes:
         range: uriorcurie
 
   Usage:
+    is_a: NamedThing
     description: >-
       The usage of a resource.
       This may be actual, experimental, or theoretical.
@@ -495,9 +479,44 @@ classes:
           The type of usage.
         range: UsageEnum
 
+# Slots
+slots:
+  id:
+    description: >-
+      The identifier of an entity.
+      This is used to identify it within the registry.
+    required: true
+    range: string
+    identifier: true
+    slot_uri: dcterms:identifier
+  # Note: this should designate the type,
+  # but inheritance isn't working as expected
+  # as of Feb 12 2025
+  category:
+    is_a: type
+    domain: NamedThing
+    range: category_type
+    # designates_type: true
+    # is_class_field: true
+    description: >-
+      The category of the resource.
+      This should be identical to its class name.
+  resources:
+    description: A list of entries in the registry.
+    range: Resource
+    inlined: true
+    inlined_as_list: true
+    multivalued: true
+
+# Types
+types:
+  category_type:
+    typeof: string
+    description: >-
+      A primitive type in which the value denotes a class within the model.
+
 # Enums
 enums:
-
   ActivityStatusEnum:
     description: >-
       The status of a resource.
@@ -524,32 +543,25 @@ enums:
       The type of compression used with a product.
     permissible_values:
       gzip:
-        description:
-          The gzip compression algorithm.
+        description: The gzip compression algorithm.
           This file ends in .gz.
       tar:
-        description:
-          The tar archive format.
+        description: The tar archive format.
           This file ends in .tar.
       targz:
-        description:
-          A tar archive that is also gzip compressed.
+        description: A tar archive that is also gzip compressed.
           This file ends in .tar.gz.
       rar:
-        description:
-          The rar archive format.
+        description: The rar archive format.
           This file ends in .rar.
       zip:
-        description:
-          The zip archive format.
+        description: The zip archive format.
           This file ends in .zip.
       7z:
-        description:
-          The 7z archive format.
+        description: The 7z archive format.
           This file ends in .7z.
       other:
-        description:
-          Another compression format not defined here.
+        description: Another compression format not defined here.
 
   DomainEnum:
     description: >-

@@ -12,7 +12,7 @@ domain: phenotype
 url: https://github.com/obophenotype/phenio
 license:
   label: CC0 1.0
-  url: https://creativecommons.org/publicdomain/zero/1.0/
+  id: https://creativecommons.org/publicdomain/zero/1.0/
 products:
 - id: phenio.owl
   description: OWL version of phenio
@@ -27,7 +27,8 @@ products:
   category: GraphProduct
 repository: https://github.com/monarch-initiative/phenio
 usages:
-- label: PHENIO is used by the Monarch Initiative for cross-species inference
+- id: cross-species-inference
+  label: PHENIO is used by the Monarch Initiative for cross-species inference
   description: PHENIO is used by the Monarch Initiative for cross-species inference. As an example, the disease of Parkinsonism may compared on the basis of its phenotype in humans vs. mouse genes and genotypes known to impact these phenotypes.
   url: https://monarchinitiative.org/HP:0001300#disease
   users:
@@ -38,6 +39,7 @@ usages:
   - preferred: true
     title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species"
     doi: doi:10.1093/nar/gkw1128
+    id: doi:10.1093/nar/gkw1128
   type: actual
 activity_status: active
 category: Resource

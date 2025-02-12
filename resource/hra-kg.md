@@ -12,7 +12,7 @@ url: https://apps.humanatlas.io/dashboard/data
 repository: https://github.com/hubmapconsortium/hra-kg
 license:
   label: CC BY 4.0
-  url: http://creativecommons.org/licenses/by/4.0/
+  id: http://creativecommons.org/licenses/by/4.0/
 category: KnowledgeGraph
 ---
 
