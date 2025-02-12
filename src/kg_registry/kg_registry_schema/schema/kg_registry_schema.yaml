@@ -40,6 +40,12 @@ classes:
     slots:
       - resources
 
+  Contact:
+    description: >-
+      A contact point for a resource or product.
+    slots:
+      - category
+
   ## Resource Classes
 
   Resource:
@@ -325,12 +331,6 @@ classes:
     is_a: Product
 
   ## Other Classes
-
-  Contact:
-    is_a: NamedThing
-    description: >-
-      A contact point for a resource or product.
-    abstract: true
 
   Individual:
     description: >-
