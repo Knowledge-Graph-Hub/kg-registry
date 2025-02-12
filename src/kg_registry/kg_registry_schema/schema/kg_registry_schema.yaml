@@ -194,7 +194,7 @@ classes:
         range: GraphStandardEnum
         multivalued: true
 
-  DataGraph:
+  DataSource:
     description: >-
       A data source, rendered as graph nodes and edges.
       This is not identical to the graph *product*, as a single DataGraph
