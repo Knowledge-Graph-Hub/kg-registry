@@ -16,7 +16,7 @@ repository: https://github.com/RTXteam/RTX-KG2
 license:
   label: CC BY 4.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-  url: https://creativecommons.org/licenses/by/4.0/
+  id: https://creativecommons.org/licenses/by/4.0/
 products:
 - id: rtx_kgx_files
   is_kgx: true
