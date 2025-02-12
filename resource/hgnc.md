@@ -35,7 +35,7 @@ products:
     - biopragmatics
   url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom
   category: MappingProduct
-category: DataGraph
+category: DataSource
 fairsharing_id: FAIRsharing.amcv1e
 infores_id: hgnc
 ---

@@ -5,7 +5,7 @@ id: automat
 name: Automat
 description: A Translator Knowledge Provider offering multiple sub-graphs in KGX format.
 domain: health
-category: KnowledgeGraph
+category: Aggregator
 contacts:
 - category: Individual
   label: "Yaphet Kebede"

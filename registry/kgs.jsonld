@@ -3,7 +3,7 @@
     "resources": [
         {
             "activity_status": "active",
-            "category": "KnowledgeGraph",
+            "category": "Aggregator",
             "contacts": [
                 {
                     "category": "Individual",
@@ -247,7 +247,7 @@
         },
         {
             "activity_status": "active",
-            "category": "DataGraph",
+            "category": "DataModel",
             "contacts": [
                 {
                     "category": "Individual",
@@ -269,7 +269,7 @@
             "name": "Monochrom Ontology",
             "products": [
                 {
-                    "category": "Product",
+                    "category": "DataModelProduct",
                     "description": "OWL release of Monochrom Ontology",
                     "id": "chr.owl",
                     "name": "Monochrom Ontology OWL release"
@@ -338,7 +338,7 @@
         },
         {
             "activity_status": "active",
-            "category": "DataGraph",
+            "category": "DataSource",
             "contacts": [
                 {
                     "category": "Individual",
@@ -480,7 +480,7 @@
         },
         {
             "activity_status": "active",
-            "category": "DataGraph",
+            "category": "DataSource",
             "contacts": [
                 {
                     "category": "Individual",
@@ -586,7 +586,7 @@
         },
         {
             "activity_status": "active",
-            "category": "DataGraph",
+            "category": "DataSource",
             "contacts": [
                 {
                     "category": "Individual",
@@ -656,6 +656,16 @@
             "id": "kg-covid-19",
             "layout": "resource_detail",
             "name": "KG-COVID-19",
+            "products": [
+                {
+                    "category": "GraphProduct",
+                    "description": "KGX nodes and edges for KG-COVID-19",
+                    "id": "kg-covid-19.kgx",
+                    "is_kgx": true,
+                    "name": "KG-COVID-19 graph",
+                    "url": "https://kghub.io/kg-covid-19/"
+                }
+            ],
             "repository": "https://github.com/Knowledge-Graph-Hub/kg-covid-19",
             "url": "https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki"
         },
@@ -1172,7 +1182,7 @@
         },
         {
             "activity_status": "active",
-            "category": "DataGraph",
+            "category": "DataSource",
             "contacts": [
                 {
                     "category": "Individual",
@@ -1208,7 +1218,7 @@
         },
         {
             "activity_status": "active",
-            "category": "DataGraph",
+            "category": "DataSource",
             "contacts": [
                 {
                     "category": "Individual",
@@ -1366,7 +1376,7 @@
         },
         {
             "activity_status": "active",
-            "category": "DataGraph",
+            "category": "DataSource",
             "contacts": [
                 {
                     "category": "Individual",
@@ -1488,7 +1498,7 @@
         },
         {
             "activity_status": "active",
-            "category": "DataGraph",
+            "category": "DataSource",
             "contacts": [
                 {
                     "category": "Individual",

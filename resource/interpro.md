@@ -40,7 +40,7 @@ products:
 license:
   label: CC0 1.0
   id: https://creativecommons.org/publicdomain/zero/1.0/
-category: DataGraph
+category: DataSource
 ---
 
 InterPro is a database of protein families, domains and functional sites in which identifiable features found in known proteins can be applied to unknown protein sequences.
