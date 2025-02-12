@@ -166,9 +166,9 @@ resources:
   id: biolink
   layout: resource_detail
   license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
   name: Biolink-Model
   products:
   - category: DataModelProduct
@@ -215,9 +215,9 @@ resources:
   id: chr
   layout: resource_detail
   license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
   name: Monochrom Ontology
   products:
   - category: Product
@@ -419,9 +419,9 @@ resources:
   id: hra-kg
   layout: resource_detail
   license:
+    id: http://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/4.0/
   name: Human Reference Atlas Knowledge Graph (HRA KG)
   repository: https://github.com/hubmapconsortium/hra-kg
   url: https://apps.humanatlas.io/dashboard/data
@@ -462,9 +462,9 @@ resources:
   id: interpro
   layout: resource_detail
   license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
   name: InterPro
   products:
   - category: Product
@@ -551,9 +551,9 @@ resources:
   id: kg-microbe
   layout: resource_detail
   license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
   name: KG Microbe
   products:
   - category: GraphProduct
@@ -577,9 +577,9 @@ resources:
   id: kg-monarch
   layout: resource_detail
   license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
   name: KG Monarch
   products:
   - category: GraphProduct
@@ -604,9 +604,9 @@ resources:
   id: kgcl
   layout: resource_detail
   license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
   name: Knowledge Graph Change Language
   products:
   - category: DataModelProduct
@@ -728,9 +728,9 @@ resources:
   id: orcid
   layout: resource_detail
   license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
   name: ORCID
   products:
   - category: Product
@@ -754,8 +754,8 @@ resources:
   id: petagraph
   layout: resource_detail
   license:
+    id: https://www.nlm.nih.gov/databases/umls.html
     label: UMLS
-    url: https://www.nlm.nih.gov/databases/umls.html
   name: Petagraph
   products:
   - category: GraphProduct
@@ -795,9 +795,9 @@ resources:
   id: phenio
   layout: resource_detail
   license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
   name: An integrated ontology for Phenomics
   products:
   - category: Product
@@ -817,9 +817,11 @@ resources:
   - description: PHENIO is used by the Monarch Initiative for cross-species inference.
       As an example, the disease of Parkinsonism may compared on the basis of its
       phenotype in humans vs. mouse genes and genotypes known to impact these phenotypes.
+    id: cross-species-inference
     label: PHENIO is used by the Monarch Initiative for cross-species inference
     publications:
     - doi: doi:10.1093/nar/gkw1128
+      id: doi:10.1093/nar/gkw1128
       preferred: true
       title: 'The Monarch Initiative: an integrative data and analytic platform connecting
         phenotypes to genotypes across species'
@@ -843,8 +845,8 @@ resources:
   id: primekg
   layout: resource_detail
   license:
+    id: https://opensource.org/licenses/MIT
     label: MIT License
-    url: https://opensource.org/licenses/MIT
   name: PrimeKG
   products:
   - category: GraphProduct
@@ -918,9 +920,9 @@ resources:
   id: rhea
   layout: resource_detail
   license:
+    id: https://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/4.0/
   name: Rhea, the Annotated Reactions Database
   products:
   - category: Product
@@ -972,8 +974,8 @@ resources:
   id: robokop
   layout: resource_detail
   license:
+    id: https://opensource.org/licenses/MIT
     label: MIT License
-    url: https://opensource.org/licenses/MIT
   name: ROBOKOP
   products:
   - category: Product
@@ -997,9 +999,9 @@ resources:
   id: rtx-kg2
   layout: resource_detail
   license:
+    id: https://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/4.0/
   name: RTX-KG2
   products:
   - category: GraphProduct
@@ -1036,9 +1038,9 @@ resources:
   id: sgd
   layout: resource_detail
   license:
+    id: https://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/4.0/
   name: Saccharomyces Genome Database
   products:
   - category: Product
@@ -1181,9 +1183,9 @@ resources:
   id: ubergraph
   layout: resource_detail
   license:
+    id: https://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/4.0/
   name: Ubergraph
   products:
   - category: Product
@@ -1206,7 +1208,6 @@ resources:
 - activity_status: active
   category: Resource
   contacts:
-  - category: Individual
   - category: Individual
     email: cthoyt@gmail.com
     github: cthoyt
