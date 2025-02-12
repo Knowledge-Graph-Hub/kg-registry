@@ -490,12 +490,15 @@ slots:
     range: string
     identifier: true
     slot_uri: dcterms:identifier
+  # Note: this should designate the type,
+  # but inheritance isn't working as expected
+  # as of Feb 12 2025
   category:
     is_a: type
     domain: NamedThing
     range: category_type
-    designates_type: true
-    is_class_field: true
+    # designates_type: true
+    # is_class_field: true
     description: >-
       The category of the resource.
       This should be identical to its class name.
