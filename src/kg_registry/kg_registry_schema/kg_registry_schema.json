@@ -25,6 +25,21 @@
             "title": "CompressionEnum",
             "type": "string"
         },
+        "Contact": {
+            "additionalProperties": false,
+            "description": "A contact point for a resource or product.",
+            "properties": {
+                "category": {
+                    "description": "The category of the resource. This should be identical to its class name.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "title": "Contact",
+            "type": "object"
+        },
         "DataGraph": {
             "additionalProperties": false,
             "description": "A data source, rendered as graph nodes and edges. This is not identical to the graph *product*, as a single DataGraph may have multiple products or representations. May be a component of a knowledge graph.",
@@ -379,7 +394,7 @@
                 "contacts": {
                     "description": "The contact points for the product. May be an individual or organization.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Contact"
                     },
                     "type": [
                         "array",
@@ -485,11 +500,15 @@
                     "type": "string"
                 },
                 "label": {
-                    "description": "The organization providing the funding.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Organization"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The organization providing the funding."
                 }
             },
             "required": [
@@ -516,7 +535,7 @@
                 "contacts": {
                     "description": "The contact points for the product. May be an individual or organization.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Contact"
                     },
                     "type": [
                         "array",
@@ -651,7 +670,7 @@
                 "contacts": {
                     "description": "The contact points for the product. May be an individual or organization.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Contact"
                     },
                     "type": [
                         "array",
@@ -744,10 +763,6 @@
                         "null"
                     ]
                 },
-                "id": {
-                    "description": "The identifier of an entity. This is used to identify it within the registry.",
-                    "type": "string"
-                },
                 "label": {
                     "description": "The name of the individual.",
                     "type": [
@@ -764,9 +779,6 @@
                     ]
                 }
             },
-            "required": [
-                "id"
-            ],
             "title": "Individual",
             "type": "object"
         },
@@ -1205,7 +1217,7 @@
                 "contacts": {
                     "description": "The contact points for the product. May be an individual or organization.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Contact"
                     },
                     "type": [
                         "array",
@@ -1320,10 +1332,6 @@
                         "null"
                     ]
                 },
-                "id": {
-                    "description": "The identifier of an entity. This is used to identify it within the registry.",
-                    "type": "string"
-                },
                 "label": {
                     "description": "The name of the organization.",
                     "type": [
@@ -1339,9 +1347,6 @@
                     ]
                 }
             },
-            "required": [
-                "id"
-            ],
             "title": "Organization",
             "type": "object"
         },
@@ -1363,7 +1368,7 @@
                 "contacts": {
                     "description": "The contact points for the product. May be an individual or organization.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Contact"
                     },
                     "type": [
                         "array",
@@ -1612,7 +1617,7 @@
                 "contacts": {
                     "description": "The contact points for the product. May be an individual or organization.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Contact"
                     },
                     "type": [
                         "array",
