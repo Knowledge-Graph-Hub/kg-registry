@@ -195,9 +195,9 @@
             "id": "biolink",
             "layout": "resource_detail",
             "license": {
+                "id": "https://creativecommons.org/publicdomain/zero/1.0/",
                 "label": "CC0 1.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
             },
             "name": "Biolink-Model",
             "products": [
@@ -262,9 +262,9 @@
             "id": "chr",
             "layout": "resource_detail",
             "license": {
+                "id": "https://creativecommons.org/publicdomain/zero/1.0/",
                 "label": "CC0 1.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
             },
             "name": "Monochrom Ontology",
             "products": [
@@ -546,9 +546,9 @@
             "id": "hra-kg",
             "layout": "resource_detail",
             "license": {
+                "id": "http://creativecommons.org/licenses/by/4.0/",
                 "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/4.0/"
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
             },
             "name": "Human Reference Atlas Knowledge Graph (HRA KG)",
             "repository": "https://github.com/hubmapconsortium/hra-kg",
@@ -601,9 +601,9 @@
             "id": "interpro",
             "layout": "resource_detail",
             "license": {
+                "id": "https://creativecommons.org/publicdomain/zero/1.0/",
                 "label": "CC0 1.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
             },
             "name": "InterPro",
             "products": [
@@ -724,9 +724,9 @@
             "id": "kg-microbe",
             "layout": "resource_detail",
             "license": {
+                "id": "https://creativecommons.org/publicdomain/zero/1.0/",
                 "label": "CC0 1.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
             },
             "name": "KG Microbe",
             "products": [
@@ -759,9 +759,9 @@
             "id": "kg-monarch",
             "layout": "resource_detail",
             "license": {
+                "id": "https://creativecommons.org/publicdomain/zero/1.0/",
                 "label": "CC0 1.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
             },
             "name": "KG Monarch",
             "products": [
@@ -794,9 +794,9 @@
             "id": "kgcl",
             "layout": "resource_detail",
             "license": {
+                "id": "https://creativecommons.org/publicdomain/zero/1.0/",
                 "label": "CC0 1.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
             },
             "name": "Knowledge Graph Change Language",
             "products": [
@@ -969,9 +969,9 @@
             "id": "orcid",
             "layout": "resource_detail",
             "license": {
+                "id": "https://creativecommons.org/publicdomain/zero/1.0/",
                 "label": "CC0 1.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
             },
             "name": "ORCID",
             "products": [
@@ -1005,8 +1005,8 @@
             "id": "petagraph",
             "layout": "resource_detail",
             "license": {
-                "label": "UMLS",
-                "url": "https://www.nlm.nih.gov/databases/umls.html"
+                "id": "https://www.nlm.nih.gov/databases/umls.html",
+                "label": "UMLS"
             },
             "name": "Petagraph",
             "products": [
@@ -1055,9 +1055,9 @@
             "id": "phenio",
             "layout": "resource_detail",
             "license": {
+                "id": "https://creativecommons.org/publicdomain/zero/1.0/",
                 "label": "CC0 1.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
             },
             "name": "An integrated ontology for Phenomics",
             "products": [
@@ -1082,10 +1082,12 @@
             "usages": [
                 {
                     "description": "PHENIO is used by the Monarch Initiative for cross-species inference. As an example, the disease of Parkinsonism may compared on the basis of its phenotype in humans vs. mouse genes and genotypes known to impact these phenotypes.",
+                    "id": "cross-species-inference",
                     "label": "PHENIO is used by the Monarch Initiative for cross-species inference",
                     "publications": [
                         {
                             "doi": "doi:10.1093/nar/gkw1128",
+                            "id": "doi:10.1093/nar/gkw1128",
                             "preferred": true,
                             "title": "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species"
                         }
@@ -1118,8 +1120,8 @@
             "id": "primekg",
             "layout": "resource_detail",
             "license": {
-                "label": "MIT License",
-                "url": "https://opensource.org/licenses/MIT"
+                "id": "https://opensource.org/licenses/MIT",
+                "label": "MIT License"
             },
             "name": "PrimeKG",
             "products": [
@@ -1221,9 +1223,9 @@
             "id": "rhea",
             "layout": "resource_detail",
             "license": {
+                "id": "https://creativecommons.org/licenses/by/4.0/",
                 "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/4.0/"
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
             },
             "name": "Rhea, the Annotated Reactions Database",
             "products": [
@@ -1294,8 +1296,8 @@
             "id": "robokop",
             "layout": "resource_detail",
             "license": {
-                "label": "MIT License",
-                "url": "https://opensource.org/licenses/MIT"
+                "id": "https://opensource.org/licenses/MIT",
+                "label": "MIT License"
             },
             "name": "ROBOKOP",
             "products": [
@@ -1327,9 +1329,9 @@
             "id": "rtx-kg2",
             "layout": "resource_detail",
             "license": {
+                "id": "https://creativecommons.org/licenses/by/4.0/",
                 "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/4.0/"
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
             },
             "name": "RTX-KG2",
             "products": [
@@ -1379,9 +1381,9 @@
             "id": "sgd",
             "layout": "resource_detail",
             "license": {
+                "id": "https://creativecommons.org/licenses/by/4.0/",
                 "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/4.0/"
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
             },
             "name": "Saccharomyces Genome Database",
             "products": [
@@ -1580,9 +1582,9 @@
             "id": "ubergraph",
             "layout": "resource_detail",
             "license": {
+                "id": "https://creativecommons.org/licenses/by/4.0/",
                 "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/4.0/"
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
             },
             "name": "Ubergraph",
             "products": [
@@ -1615,9 +1617,6 @@
             "activity_status": "active",
             "category": "Resource",
             "contacts": [
-                {
-                    "category": "Individual"
-                },
                 {
                     "category": "Individual",
                     "email": "cthoyt@gmail.com",
