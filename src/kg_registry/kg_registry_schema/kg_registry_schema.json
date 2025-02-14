@@ -183,11 +183,15 @@
                     "type": "boolean"
                 },
                 "produced_by": {
-                    "description": "The process that made this product Biolink compatible, if it did not begin that way. This is a Product, generally a ProcessProduct, and should be described with a Product identifier.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Product"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The process that made this product Biolink compatible, if it did not begin that way. This is a Product, generally a ProcessProduct, and should be described with a Product identifier."
                 },
                 "version": {
                     "description": "The most recent version of the Biolink Model that the product is known to be compatible with, e.g., 4.2.5",
