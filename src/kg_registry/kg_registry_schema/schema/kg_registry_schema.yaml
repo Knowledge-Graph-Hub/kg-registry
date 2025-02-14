@@ -268,7 +268,7 @@ classes:
           The Infores ID of the product.
           Do not include the 'infores' prefix.
         range: string
-      biolink_compatiblity:
+      biolink_compatibility:
         description: >-
           Whether the product is compatible with the Biolink Model.
           This class contains several slots.
@@ -494,6 +494,7 @@ classes:
           This is a Product, generally a ProcessProduct,
           and should be described with a Product identifier.
         range: Product
+        inlined: true
 
 # Slots
 slots:
