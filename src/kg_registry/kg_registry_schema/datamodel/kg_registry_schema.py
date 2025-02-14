@@ -713,7 +713,7 @@ class BiolinkCompatibility(ConfiguredBaseModel):
 
     is_compatible: bool = Field(default=..., description="""Whether the product is compatible with the Biolink Model.""", json_schema_extra = { "linkml_meta": {'alias': 'is_compatible', 'domain_of': ['BiolinkCompatibility']} })
     version: Optional[str] = Field(default=None, description="""The most recent version of the Biolink Model that the product is known to be compatible with, e.g., 4.2.5""", json_schema_extra = { "linkml_meta": {'alias': 'version', 'domain_of': ['Resource', 'BiolinkCompatibility']} })
-    produced_by: Optional[str] = Field(default=None, description="""The process that made this product Biolink compatible, if it did not begin that way. This is a Product, generally a ProcessProduct, and should be described with a Product identifier.""", json_schema_extra = { "linkml_meta": {'alias': 'produced_by', 'domain_of': ['BiolinkCompatibility']} })
+    produced_by: Optional[Product] = Field(default=None, description="""The process that made this product Biolink compatible, if it did not begin that way. This is a Product, generally a ProcessProduct, and should be described with a Product identifier.""", json_schema_extra = { "linkml_meta": {'alias': 'produced_by', 'domain_of': ['BiolinkCompatibility']} })
 
 
 # Model rebuild
