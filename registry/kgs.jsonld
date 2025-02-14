@@ -1079,6 +1079,16 @@
                     "url": "https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl"
                 },
                 {
+                    "biolink_compatibility": {
+                        "is_compatible": true,
+                        "produced_by": {
+                            "category": "ProcessProduct",
+                            "id": "phenio.kgx.repo",
+                            "name": "Process for producing KG-Phenio",
+                            "url": "https://github.com/Knowledge-Graph-Hub/kg-phenio"
+                        },
+                        "version": "4.2.5"
+                    },
                     "category": "GraphProduct",
                     "description": "KGX version of phenio",
                     "id": "phenio.kgx",
