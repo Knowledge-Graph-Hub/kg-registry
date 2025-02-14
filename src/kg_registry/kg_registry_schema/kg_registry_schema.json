@@ -11,38 +11,9 @@
             "title": "ActivityStatusEnum",
             "type": "string"
         },
-        "CompressionEnum": {
-            "description": "The type of compression used with a product.",
-            "enum": [
-                "gzip",
-                "tar",
-                "targz",
-                "rar",
-                "zip",
-                "7z",
-                "other"
-            ],
-            "title": "CompressionEnum",
-            "type": "string"
-        },
-        "Contact": {
+        "Aggregator": {
             "additionalProperties": false,
-            "description": "A contact point for a resource or product.",
-            "properties": {
-                "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                }
-            },
-            "title": "Contact",
-            "type": "object"
-        },
-        "DataGraph": {
-            "additionalProperties": false,
-            "description": "A data source, rendered as graph nodes and edges. This is not identical to the graph *product*, as a single DataGraph may have multiple products or representations. May be a component of a knowledge graph.",
+            "description": "An aggregator of data sources. Note that this may be a data source itself, and its products may undergo changes in the process of their inclusion in the aggregator.",
             "properties": {
                 "activity_status": {
                     "$ref": "#/$defs/ActivityStatusEnum",
@@ -133,16 +104,6 @@
                     "description": "The human-readable name of the resource.",
                     "type": "string"
                 },
-                "produced_by": {
-                    "description": "The process that produced the graph.",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
                 "products": {
                     "description": "The products or representations of the resource.",
                     "items": {
@@ -210,12 +171,70 @@
                 "domain",
                 "id"
             ],
-            "title": "DataGraph",
+            "title": "Aggregator",
+            "type": "object"
+        },
+        "BiolinkCompatibility": {
+            "additionalProperties": false,
+            "description": "Details about the compatibility of a product with the Biolink Model.",
+            "properties": {
+                "is_compatible": {
+                    "description": "Whether the product is compatible with the Biolink Model.",
+                    "type": "boolean"
+                },
+                "produced_by": {
+                    "description": "The process that made this product Biolink compatible, if it did not begin that way. This is a Product, generally a ProcessProduct, and should be described with a Product identifier.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "version": {
+                    "description": "The most recent version of the Biolink Model that the product is known to be compatible with, e.g., 4.2.5",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "is_compatible"
+            ],
+            "title": "BiolinkCompatibility",
+            "type": "object"
+        },
+        "CompressionEnum": {
+            "description": "The type of compression used with a product.",
+            "enum": [
+                "gzip",
+                "tar",
+                "targz",
+                "rar",
+                "zip",
+                "7z",
+                "other"
+            ],
+            "title": "CompressionEnum",
+            "type": "string"
+        },
+        "Contact": {
+            "additionalProperties": false,
+            "description": "A contact point for a resource or product.",
+            "properties": {
+                "category": {
+                    "description": "The category of the resource. This should be identical to its class name.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "title": "Contact",
             "type": "object"
         },
         "DataModel": {
             "additionalProperties": false,
-            "description": "A data model, such as an ontology or schema. May be a use in construction of a knowledge graph.",
+            "description": "A data model, such as an ontology or schema. May be used in construction of a knowledge graph.",
             "properties": {
                 "activity_status": {
                     "$ref": "#/$defs/ActivityStatusEnum",
@@ -380,6 +399,17 @@
             "additionalProperties": false,
             "description": "A product that is a data model, such as an ontology or schema.",
             "properties": {
+                "biolink_compatiblity": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/BiolinkCompatibility"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Whether the product is compatible with the Biolink Model. This class contains several slots."
+                },
                 "category": {
                     "description": "The category of the resource. This should be identical to its class name.",
                     "type": [
@@ -462,6 +492,169 @@
             "title": "DataModelProduct",
             "type": "object"
         },
+        "DataSource": {
+            "additionalProperties": false,
+            "description": "A data source. One data source may have multiple products.",
+            "properties": {
+                "activity_status": {
+                    "$ref": "#/$defs/ActivityStatusEnum",
+                    "description": "The status of the resource."
+                },
+                "category": {
+                    "description": "The category of the resource. This should be identical to its class name.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "contacts": {
+                    "description": "The contact point(s) for the resource. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "A description of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "domain": {
+                    "$ref": "#/$defs/DomainEnum",
+                    "description": "The domain that the resource is relevant to. This is not multivalued."
+                },
+                "fairsharing_id": {
+                    "description": "The FAIRsharing ID of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "funding": {
+                    "description": "The funding source(s) for the resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
+                    "type": "string"
+                },
+                "infores_id": {
+                    "description": "The Infores ID of the resource. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "language": {
+                    "description": "The human language of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "license": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/License"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The license of the resource. Individual products may have their own licenses."
+                },
+                "name": {
+                    "description": "The human-readable name of the resource.",
+                    "type": "string"
+                },
+                "products": {
+                    "description": "The products or representations of the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Product"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "publications": {
+                    "description": "Publications associated with the resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "repository": {
+                    "description": "A main version control repository for the resource. Specific products may have their own repositories.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tags": {
+                    "description": "Tags associated with the resource.",
+                    "items": {
+                        "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "The URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "usages": {
+                    "description": "The usage(s) of the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Usage"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "version": {
+                    "description": "The version of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "name",
+                "domain",
+                "id"
+            ],
+            "title": "DataSource",
+            "type": "object"
+        },
         "DomainEnum": {
             "description": "The domain that a resource is most relevant to.",
             "enum": [
@@ -521,6 +714,17 @@
             "additionalProperties": false,
             "description": "A product that is a graph, represented as nodes and edges.",
             "properties": {
+                "biolink_compatiblity": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/BiolinkCompatibility"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Whether the product is compatible with the Biolink Model. This class contains several slots."
+                },
                 "category": {
                     "description": "The category of the resource. This should be identical to its class name.",
                     "type": [
@@ -656,6 +860,17 @@
             "additionalProperties": false,
             "description": "A product that is a graphical interface to a resource. Similar to the \"browsers\" field in OBO Foundry.",
             "properties": {
+                "biolink_compatiblity": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/BiolinkCompatibility"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Whether the product is compatible with the Biolink Model. This class contains several slots."
+                },
                 "category": {
                     "description": "The category of the resource. This should be identical to its class name.",
                     "type": [
@@ -995,7 +1210,7 @@
         },
         "License": {
             "additionalProperties": false,
-            "description": "A license for a resource or product.",
+            "description": "A license for a resource or product. The id field should be a URL to the license text, e.g., https://creativecommons.org/licenses/by/4.0/",
             "properties": {
                 "category": {
                     "description": "The category of the resource. This should be identical to its class name.",
@@ -1021,13 +1236,6 @@
                         "string",
                         "null"
                     ]
-                },
-                "url": {
-                    "description": "The URL of the license.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
                 }
             },
             "required": [
@@ -1036,173 +1244,21 @@
             "title": "License",
             "type": "object"
         },
-        "Mapping": {
+        "MappingProduct": {
             "additionalProperties": false,
-            "description": "A mapping between two or more data sources. May be a use in construction of a knowledge graph.",
+            "description": "A product that is a mapping between two or more data sources.",
             "properties": {
-                "activity_status": {
-                    "$ref": "#/$defs/ActivityStatusEnum",
-                    "description": "The status of the resource."
-                },
-                "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "contacts": {
-                    "description": "The contact point(s) for the resource. May be an individual or organization.",
-                    "items": {
-                        "$ref": "#/$defs/Contact"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "description": {
-                    "description": "A description of the resource.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "domain": {
-                    "$ref": "#/$defs/DomainEnum",
-                    "description": "The domain that the resource is relevant to. This is not multivalued."
-                },
-                "fairsharing_id": {
-                    "description": "The FAIRsharing ID of the resource.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "funding": {
-                    "description": "The funding source(s) for the resource.",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "id": {
-                    "description": "The identifier of an entity. This is used to identify it within the registry.",
-                    "type": "string"
-                },
-                "infores_id": {
-                    "description": "The Infores ID of the resource. Do not include the 'infores' prefix.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "language": {
-                    "description": "The human language of the resource.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "layout": {
-                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "license": {
+                "biolink_compatiblity": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/License"
+                            "$ref": "#/$defs/BiolinkCompatibility"
                         },
                         {
                             "type": "null"
                         }
                     ],
-                    "description": "The license of the resource. Individual products may have their own licenses."
+                    "description": "Whether the product is compatible with the Biolink Model. This class contains several slots."
                 },
-                "name": {
-                    "description": "The human-readable name of the resource.",
-                    "type": "string"
-                },
-                "products": {
-                    "description": "The products or representations of the resource.",
-                    "items": {
-                        "$ref": "#/$defs/Product"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "publications": {
-                    "description": "Publications associated with the resource.",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "repository": {
-                    "description": "A main version control repository for the resource. Specific products may have their own repositories.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "tags": {
-                    "description": "Tags associated with the resource.",
-                    "items": {
-                        "$ref": "#/$defs/TagEnum"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "url": {
-                    "description": "The URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "usages": {
-                    "description": "The usage(s) of the resource.",
-                    "items": {
-                        "$ref": "#/$defs/Usage"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "version": {
-                    "description": "The version of the resource.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                }
-            },
-            "required": [
-                "name",
-                "domain",
-                "id"
-            ],
-            "title": "Mapping",
-            "type": "object"
-        },
-        "MappingProduct": {
-            "additionalProperties": false,
-            "description": "A product that is a mapping between two or more data sources.",
-            "properties": {
                 "category": {
                     "description": "The category of the resource. This should be identical to its class name.",
                     "type": [
@@ -1354,6 +1410,17 @@
             "additionalProperties": false,
             "description": "A product that is a process or algorithm.",
             "properties": {
+                "biolink_compatiblity": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/BiolinkCompatibility"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Whether the product is compatible with the Biolink Model. This class contains several slots."
+                },
                 "category": {
                     "description": "The category of the resource. This should be identical to its class name.",
                     "type": [
@@ -1436,173 +1503,21 @@
             "title": "ProcessProduct",
             "type": "object"
         },
-        "ProductionProcess": {
+        "ProgrammingInterface": {
             "additionalProperties": false,
-            "description": "A process for producing a resource and/or its products.",
+            "description": "A product that is a programming interface (API) to a resource.",
             "properties": {
-                "activity_status": {
-                    "$ref": "#/$defs/ActivityStatusEnum",
-                    "description": "The status of the resource."
-                },
-                "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "contacts": {
-                    "description": "The contact point(s) for the resource. May be an individual or organization.",
-                    "items": {
-                        "$ref": "#/$defs/Contact"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "description": {
-                    "description": "A description of the resource.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "domain": {
-                    "$ref": "#/$defs/DomainEnum",
-                    "description": "The domain that the resource is relevant to. This is not multivalued."
-                },
-                "fairsharing_id": {
-                    "description": "The FAIRsharing ID of the resource.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "funding": {
-                    "description": "The funding source(s) for the resource.",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "id": {
-                    "description": "The identifier of an entity. This is used to identify it within the registry.",
-                    "type": "string"
-                },
-                "infores_id": {
-                    "description": "The Infores ID of the resource. Do not include the 'infores' prefix.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "language": {
-                    "description": "The human language of the resource.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "layout": {
-                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "license": {
+                "biolink_compatiblity": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/License"
+                            "$ref": "#/$defs/BiolinkCompatibility"
                         },
                         {
                             "type": "null"
                         }
                     ],
-                    "description": "The license of the resource. Individual products may have their own licenses."
+                    "description": "Whether the product is compatible with the Biolink Model. This class contains several slots."
                 },
-                "name": {
-                    "description": "The human-readable name of the resource.",
-                    "type": "string"
-                },
-                "products": {
-                    "description": "The products or representations of the resource.",
-                    "items": {
-                        "$ref": "#/$defs/Product"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "publications": {
-                    "description": "Publications associated with the resource.",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "repository": {
-                    "description": "A main version control repository for the resource. Specific products may have their own repositories.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "tags": {
-                    "description": "Tags associated with the resource.",
-                    "items": {
-                        "$ref": "#/$defs/TagEnum"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "url": {
-                    "description": "The URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "usages": {
-                    "description": "The usage(s) of the resource.",
-                    "items": {
-                        "$ref": "#/$defs/Usage"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "version": {
-                    "description": "The version of the resource.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                }
-            },
-            "required": [
-                "name",
-                "domain",
-                "id"
-            ],
-            "title": "ProductionProcess",
-            "type": "object"
-        },
-        "ProgrammingInterface": {
-            "additionalProperties": false,
-            "description": "A product that is a programming interface (API) to a resource.",
-            "properties": {
                 "category": {
                     "description": "The category of the resource. This should be identical to its class name.",
                     "type": [
