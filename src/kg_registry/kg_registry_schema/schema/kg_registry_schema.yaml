@@ -268,6 +268,11 @@ classes:
           The Infores ID of the product.
           Do not include the 'infores' prefix.
         range: string
+      biolink_compatiblity:
+        description: >-
+          Whether the product is compatible with the Biolink Model.
+          This class contains several slots.
+        range: BiolinkCompatibility
 
   GraphProduct:
     description: >-
@@ -467,6 +472,28 @@ classes:
         description: >-
           The type of usage.
         range: UsageEnum
+
+  BiolinkCompatibility:
+    description: >-
+      Details about the compatibility of a product with the Biolink Model.
+    attributes:
+      is_compatible:
+        description: >-
+          Whether the product is compatible with the Biolink Model.
+        range: boolean
+        required: true
+      version:
+        description: >-
+          The most recent version of the Biolink Model that the product is
+          known to be compatible with, e.g., 4.2.5
+        range: string
+      produced_by:
+        description: >-
+          The process that made this product Biolink compatible, if
+          it did not begin that way.
+          This is a Product, generally a ProcessProduct,
+          and should be described with a Product identifier.
+        range: Product
 
 # Slots
 slots:
