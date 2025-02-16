@@ -117,7 +117,7 @@
                 "publications": {
                     "description": "Publications associated with the resource.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Publication"
                     },
                     "type": [
                         "array",
@@ -342,7 +342,7 @@
                 "publications": {
                     "description": "Publications associated with the resource.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Publication"
                     },
                     "type": [
                         "array",
@@ -403,7 +403,7 @@
             "additionalProperties": false,
             "description": "A product that is a data model, such as an ontology or schema.",
             "properties": {
-                "biolink_compatiblity": {
+                "biolink_compatibility": {
                     "anyOf": [
                         {
                             "$ref": "#/$defs/BiolinkCompatibility"
@@ -602,7 +602,7 @@
                 "publications": {
                     "description": "Publications associated with the resource.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Publication"
                     },
                     "type": [
                         "array",
@@ -718,7 +718,7 @@
             "additionalProperties": false,
             "description": "A product that is a graph, represented as nodes and edges.",
             "properties": {
-                "biolink_compatiblity": {
+                "biolink_compatibility": {
                     "anyOf": [
                         {
                             "$ref": "#/$defs/BiolinkCompatibility"
@@ -864,7 +864,7 @@
             "additionalProperties": false,
             "description": "A product that is a graphical interface to a resource. Similar to the \"browsers\" field in OBO Foundry.",
             "properties": {
-                "biolink_compatiblity": {
+                "biolink_compatibility": {
                     "anyOf": [
                         {
                             "$ref": "#/$defs/BiolinkCompatibility"
@@ -1155,7 +1155,7 @@
                 "publications": {
                     "description": "Publications associated with the resource.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Publication"
                     },
                     "type": [
                         "array",
@@ -1252,7 +1252,7 @@
             "additionalProperties": false,
             "description": "A product that is a mapping between two or more data sources.",
             "properties": {
-                "biolink_compatiblity": {
+                "biolink_compatibility": {
                     "anyOf": [
                         {
                             "$ref": "#/$defs/BiolinkCompatibility"
@@ -1414,7 +1414,7 @@
             "additionalProperties": false,
             "description": "A product that is a process or algorithm.",
             "properties": {
-                "biolink_compatiblity": {
+                "biolink_compatibility": {
                     "anyOf": [
                         {
                             "$ref": "#/$defs/BiolinkCompatibility"
@@ -1511,7 +1511,7 @@
             "additionalProperties": false,
             "description": "A product that is a programming interface (API) to a resource.",
             "properties": {
-                "biolink_compatiblity": {
+                "biolink_compatibility": {
                     "anyOf": [
                         {
                             "$ref": "#/$defs/BiolinkCompatibility"
@@ -1795,7 +1795,7 @@
                 "publications": {
                     "description": "Publications associated with the resource.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#/$defs/Publication"
                     },
                     "type": [
                         "array",
