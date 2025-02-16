@@ -93,9 +93,19 @@ page.is_obsolete %}
     {% if page.products and page.products.size > 0 %}
     <div class="card" style="margin-bottom: 1.5em; width: auto;">
       <div class="card-header">
-        Products
+        <h4>Products</h4>
       </div>
       <table class="table table-striped mb-0" style="width: auto;">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>KGX?</th>
+            <th>Infores ID</th>
+            <th>Description</th>
+          </tr>
+        </thead>
         <tbody>
           {% for p in page.products %}
           <tr>
@@ -106,7 +116,11 @@ page.is_obsolete %}
             <td>{{p.category}}</td>
             {% if p.is_kgx %}
             <td>
-              KGX Available
+              ✅
+            </td>
+            {% else %}
+            <td>
+              ❌
             </td>
             {% endif %}
             {% if p.infores_id %}
@@ -115,7 +129,7 @@ page.is_obsolete %}
             </td>
             {% else %}
             <td>
-                <span style="color: darkred;">infores unknown</span>
+                <span style="color: darkred;">unknown</span>
             </td>
             {% endif %}
             <td>
