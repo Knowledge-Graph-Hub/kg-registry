@@ -39,16 +39,14 @@ layout: default
 page.is_obsolete %}
 <div class="row">
   <div class="alert alert-warning" role="alert">
-    This resource is inactive. For more information see
-    <a href="/docs/OntologyStatus.html">here</a>.
+    This resource is inactive. It may not be actively maintained.
   </div>
 </div>
 {% endunless %}{% endif %} {% if page.activity_status == "orphaned" %}{% unless
 page.is_obsolete %}
 <div class="row">
   <div class="alert alert-warning" role="alert">
-    This ontology is orphaned. For more information see
-    <a href="/docs/OntologyStatus.html">here</a>.
+    This ontology is orphaned. It is no longer maintained.
   </div>
 </div>
 {% endunless %}{% endif %}
