@@ -23,6 +23,46 @@ products:
   biolink_compatibility:
     is_compatible: true
     version: 4.2.5
+- id: biolink-model.json
+  name: Biolink Model JSON release
+  description: JSON schema release of Biolink Model
+  category: DataModelProduct
+  url: https://w3id.org/biolink/biolink-model.json
+  biolink_compatibility:
+    is_compatible: true
+    version: 4.2.5
+- id: biolink-model.graphql
+  name: Biolink Model GraphQL release
+  description: GraphQL release of Biolink Model
+  category: DataModelProduct
+  url: https://w3id.org/biolink/biolink-model.graphql
+  biolink_compatibility:
+    is_compatible: true
+    version: 4.2.5
+- id: biolink-model.proto
+  name: Biolink Model Protobuf release
+  description: Protobuf release of Biolink Model
+  category: DataModelProduct
+  url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/protobuf/biolink_model.proto
+  biolink_compatibility:
+    is_compatible: true
+    version: 4.2.5
+- id: biolink-model.shacl
+  name: Biolink Model SHACL release
+  description: SHACL release of Biolink Model
+  category: DataModelProduct
+  url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shacl/biolink_model.shacl.ttl
+  biolink_compatibility:
+    is_compatible: true
+    version: 4.2.5
+- id: biolink-model.shex
+  name: Biolink Model ShEx release
+  description: ShEx release of Biolink Model
+  category: DataModelProduct
+  url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
+  biolink_compatibility:
+    is_compatible: true
+    version: 4.2.5
 publications:
 - doi: doi:10.1111/cts.13302
   id: doi:10.1111/cts.13302
