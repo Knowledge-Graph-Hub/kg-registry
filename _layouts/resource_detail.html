@@ -46,7 +46,7 @@ page.is_obsolete %}
 page.is_obsolete %}
 <div class="row">
   <div class="alert alert-warning" role="alert">
-    This ontology is orphaned. It is no longer maintained.
+    This resource is orphaned. It is no longer maintained.
   </div>
 </div>
 {% endunless %}{% endif %}
@@ -296,46 +296,6 @@ page.is_obsolete %}
       </dd>
       {% endif %}
 
-      {% if page.taxon %}
-      <dt>Taxon</dt>
-      <dd>
-        <a href="http://amigo.geneontology.org/amigo/term/{{page.taxon.id}}"
-          >{{page.taxon.label}}</a
-        >
-      </dd>
-      {% endif %} {% if page.exampleClass %}
-      <dt>Example</dt>
-      <dd>
-        <a href="http://purl.obolibrary.org/obo/{{page.exampleClass}}"
-          >{{page.exampleClass}}</a
-        >
-      </dd>
-      {% endif %} {% if page.issue_requested %}
-      <dt>New Ontology Request</dt>
-      <dd>
-        <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/issues/{{ page.issue_requested }}">
-          #{{ page.issue_requested }}
-        </a>
-      </dd>
-      {% endif %} {% if page.dependencies %}
-      <dt>Dependencies</dt>
-      {% for x in page.dependencies %}
-      <dd>
-        <a href="{{x.id}}">{{x.id}}</a>
-      </dd>
-      {% endfor %} {% endif %} {% if page.jobs %}
-      <dt>Jobs</dt>
-      {% for p in page.jobs %}
-      <dd>
-        {% if p.type == "travis-cl" or p.id contains "travis" %}
-        <a href="{{p.id}}">
-          <img alt="Build Status" src="{{p.id}}.svg?branch=master" />
-        </a>
-        {% else %}
-        <a href="{{p.id}}">{{p.type}}</a>
-        {% endif %}
-      </dd>
-      {% endfor %} {% endif %} 
       {% if page.repository and page.repository contains "https://github.com/" %}
       <dt>Stars</dt>
       <dd>
