@@ -337,21 +337,8 @@ page.is_obsolete %}
         <a href="{{p.id}}">{{p.type}}</a>
         {% endif %}
       </dd>
-      {% endfor %} {% endif %} {% if page.twitter %}
-      <dt>Twitter</dt>
-      <dd>
-        <a
-          href="https://twitter.com/{{ page.twitter }}"
-          style="padding: 0.5em 0"
-        >
-          <img
-            alt="Twitter Follow"
-            src="https://img.shields.io/twitter/follow/{{ page.twitter }}?style=social"
-          />
-        </a>
-      </dd>
-      {% endif %} {% if page.repository and page.repository contains
-      "https://github.com/" %}
+      {% endfor %} {% endif %} 
+      {% if page.repository and page.repository contains "https://github.com/" %}
       <dt>Stars</dt>
       <dd>
         <a href="{{ page.repository }}">
