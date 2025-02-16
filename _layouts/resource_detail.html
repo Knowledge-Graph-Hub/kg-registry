@@ -39,16 +39,14 @@ layout: default
 page.is_obsolete %}
 <div class="row">
   <div class="alert alert-warning" role="alert">
-    This resource is inactive. For more information see
-    <a href="/docs/OntologyStatus.html">here</a>.
+    This resource is inactive. It may not be actively maintained.
   </div>
 </div>
 {% endunless %}{% endif %} {% if page.activity_status == "orphaned" %}{% unless
 page.is_obsolete %}
 <div class="row">
   <div class="alert alert-warning" role="alert">
-    This ontology is orphaned. For more information see
-    <a href="/docs/OntologyStatus.html">here</a>.
+    This resource is orphaned. It is no longer maintained.
   </div>
 </div>
 {% endunless %}{% endif %}
@@ -60,7 +58,7 @@ page.is_obsolete %}
     {% if page.publications and page.publications.size > 0 %}
     <div class="card" style="margin-bottom: 1.5em;" id="publications">
       <div class="card-header">
-        Publications
+        <h4>Publications</h4>
       </div>
       <div class="list-group list-group-flush">
         {% for p in page.publications %}
@@ -78,7 +76,7 @@ page.is_obsolete %}
     {% if page.funded_by %}
     <div class="card" style="margin-bottom: 1.5em;">
       <div class="card-header">
-        Funding
+        <h4>Funding</h4>
       </div>
       <div class="list-group list-group-flush">
         {% for p in page.funded_by %}
@@ -93,9 +91,20 @@ page.is_obsolete %}
     {% if page.products and page.products.size > 0 %}
     <div class="card" style="margin-bottom: 1.5em; width: auto;">
       <div class="card-header">
-        Products
+        <h4>Products</h4>
       </div>
       <table class="table table-striped mb-0" style="width: auto;">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>KGX?</th>
+            <th>Biolink?</th>
+            <th>Infores ID</th>
+            <th>Description</th>
+          </tr>
+        </thead>
         <tbody>
           {% for p in page.products %}
           <tr>
@@ -106,7 +115,26 @@ page.is_obsolete %}
             <td>{{p.category}}</td>
             {% if p.is_kgx %}
             <td>
-              KGX Available
+              ✅
+            </td>
+            {% else %}
+            <td>
+              ❌
+            </td>
+            {% endif %}
+            {% if p.biolink_compatibility %}
+              {% if p.biolink_compatibility.is_compatible == true %}
+              <td>
+                ✅
+              </td>
+              {% else %}
+              <td>
+                ❌
+              </td>
+              {% endif %}
+            {% else %}
+            <td>
+              ❔
             </td>
             {% endif %}
             {% if p.infores_id %}
@@ -115,7 +143,7 @@ page.is_obsolete %}
             </td>
             {% else %}
             <td>
-                <span style="color: darkred;">infores unknown</span>
+                <span style="color: darkred;">unknown</span>
             </td>
             {% endif %}
             <td>
@@ -135,7 +163,7 @@ page.is_obsolete %}
     {% if page.usages %}
     <div class="card" style="margin-bottom: 1.5em;">
       <div class="card-header">
-        Usages
+        <h4>Usages</h4>
       </div>
       <div class="list-group list-group-flush">
         {% for p in page.usages %}
@@ -268,60 +296,7 @@ page.is_obsolete %}
       </dd>
       {% endif %}
 
-      {% if page.taxon %}
-      <dt>Taxon</dt>
-      <dd>
-        <a href="http://amigo.geneontology.org/amigo/term/{{page.taxon.id}}"
-          >{{page.taxon.label}}</a
-        >
-      </dd>
-      {% endif %} {% if page.exampleClass %}
-      <dt>Example</dt>
-      <dd>
-        <a href="http://purl.obolibrary.org/obo/{{page.exampleClass}}"
-          >{{page.exampleClass}}</a
-        >
-      </dd>
-      {% endif %} {% if page.issue_requested %}
-      <dt>New Ontology Request</dt>
-      <dd>
-        <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/issues/{{ page.issue_requested }}">
-          #{{ page.issue_requested }}
-        </a>
-      </dd>
-      {% endif %} {% if page.dependencies %}
-      <dt>Dependencies</dt>
-      {% for x in page.dependencies %}
-      <dd>
-        <a href="{{x.id}}">{{x.id}}</a>
-      </dd>
-      {% endfor %} {% endif %} {% if page.jobs %}
-      <dt>Jobs</dt>
-      {% for p in page.jobs %}
-      <dd>
-        {% if p.type == "travis-cl" or p.id contains "travis" %}
-        <a href="{{p.id}}">
-          <img alt="Build Status" src="{{p.id}}.svg?branch=master" />
-        </a>
-        {% else %}
-        <a href="{{p.id}}">{{p.type}}</a>
-        {% endif %}
-      </dd>
-      {% endfor %} {% endif %} {% if page.twitter %}
-      <dt>Twitter</dt>
-      <dd>
-        <a
-          href="https://twitter.com/{{ page.twitter }}"
-          style="padding: 0.5em 0"
-        >
-          <img
-            alt="Twitter Follow"
-            src="https://img.shields.io/twitter/follow/{{ page.twitter }}?style=social"
-          />
-        </a>
-      </dd>
-      {% endif %} {% if page.repository and page.repository contains
-      "https://github.com/" %}
+      {% if page.repository and page.repository contains "https://github.com/" %}
       <dt>Stars</dt>
       <dd>
         <a href="{{ page.repository }}">
