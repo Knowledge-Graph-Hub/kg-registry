@@ -133,6 +133,8 @@ classes:
           Publications associated with the resource.
         range: Publication
         multivalued: true
+        inlined: true
+        inlined_as_list: true
       usages:
         description: >-
           The usage(s) of the resource.
