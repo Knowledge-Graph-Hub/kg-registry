@@ -102,6 +102,7 @@ page.is_obsolete %}
             <th>Name</th>
             <th>Category</th>
             <th>KGX?</th>
+            <th>Biolink?</th>
             <th>Infores ID</th>
             <th>Description</th>
           </tr>
@@ -121,6 +122,21 @@ page.is_obsolete %}
             {% else %}
             <td>
               ❌
+            </td>
+            {% endif %}
+            {% if p.biolink_compatibility %}
+              {% if p.biolink_compatibility.is_compatible == true %}
+              <td>
+                ✅
+              </td>
+              {% else %}
+              <td>
+                ❌
+              </td>
+              {% endif %}
+            {% else %}
+            <td>
+              ❔
             </td>
             {% endif %}
             {% if p.infores_id %}
