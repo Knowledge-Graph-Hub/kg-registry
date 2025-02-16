@@ -60,7 +60,7 @@ page.is_obsolete %}
     {% if page.publications and page.publications.size > 0 %}
     <div class="card" style="margin-bottom: 1.5em;" id="publications">
       <div class="card-header">
-        Publications
+        <h4>Publications</h4>
       </div>
       <div class="list-group list-group-flush">
         {% for p in page.publications %}
@@ -78,7 +78,7 @@ page.is_obsolete %}
     {% if page.funded_by %}
     <div class="card" style="margin-bottom: 1.5em;">
       <div class="card-header">
-        Funding
+        <h4>Funding</h4>
       </div>
       <div class="list-group list-group-flush">
         {% for p in page.funded_by %}
@@ -165,7 +165,7 @@ page.is_obsolete %}
     {% if page.usages %}
     <div class="card" style="margin-bottom: 1.5em;">
       <div class="card-header">
-        Usages
+        <h4>Usages</h4>
       </div>
       <div class="list-group list-group-flush">
         {% for p in page.usages %}
