@@ -26,6 +26,7 @@ mixs,active,PASS
 molecular-data-kp,active,PASS
 multiomics-kp,active,PASS
 neo,active,PASS
+np-kg,active,PASS
 ontology-kp,active,PASS
 orcid,active,PASS
 petagraph,active,PASS
