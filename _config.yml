@@ -791,6 +791,55 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
+    github: sanyabt
+    label: Sanya Bathla Taneja
+  description: NP-KG is a graph framework that creates a biomedical knowledge graph
+    to identify and generate mechanistic hypotheses for pharmacokinetic natural product-drug
+    interactions (NPDIs).
+  domain: health
+  id: np-kg
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: NP-KG
+  products:
+  - category: GraphProduct
+    description: Merged KG with ontology-grounded KG and literature-based graph as
+      TSV file
+    id: NP-KG_v3.0.0.tsv
+    name: NP-KG TSV
+    url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.tsv?download=1
+  - category: GraphProduct
+    description: Merged KG with ontology-grounded KG and literature-based graph as
+      NetworkX multidigraph object
+    dump_format: gpickle
+    id: NP-KG_v3.0.0.gpickle
+    is_kgx: false
+    name: NP-KG gpickle
+    url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.gpickle?download=1
+  publications:
+  - authors:
+    - Taneja SB
+    - Callahan TJ
+    - Paine MF
+    - Kane-Gill SL
+    - Kilicoglu H
+    - Joachimiak MP
+    - Boyce RD
+    doi: doi:10.1016/j.jbi.2023.104341
+    id: doi:10.1016/j.jbi.2023.104341
+    preferred: true
+    title: '''Developing a Knowledge Graph for Pharmacokinetic Natural Product-Drug
+      Interactions'''
+    year: '2023'
+  repository: https://github.com/sanyabt/np-kg
+  url: https://doi.org/10.5281/zenodo.6814507
+- activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Individual
     label: Jim Balhoff
   description: A Translator Knowledge Provider dedicated to ontology-based services.
   domain: other
