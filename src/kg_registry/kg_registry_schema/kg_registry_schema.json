@@ -210,7 +210,9 @@
         "CompressionEnum": {
             "description": "The type of compression used with a product.",
             "enum": [
+                "gpickle",
                 "gzip",
+                "pickle",
                 "tar",
                 "targz",
                 "rar",
@@ -441,6 +443,10 @@
                         "string",
                         "null"
                     ]
+                },
+                "dump_format": {
+                    "$ref": "#/$defs/DumpFormatEnum",
+                    "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
@@ -681,6 +687,16 @@
             "title": "DomainEnum",
             "type": "string"
         },
+        "DumpFormatEnum": {
+            "description": "The format of a dump of a product, generally a graph, as a file. Note the product may also be compressed.",
+            "enum": [
+                "gpickle",
+                "pickle",
+                "other"
+            ],
+            "title": "DumpFormatEnum",
+            "type": "string"
+        },
         "FundingSource": {
             "additionalProperties": false,
             "description": "A funding source for a resource.",
@@ -756,6 +772,10 @@
                         "string",
                         "null"
                     ]
+                },
+                "dump_format": {
+                    "$ref": "#/$defs/DumpFormatEnum",
+                    "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
                 "edge_count": {
                     "description": "The number of edges in the graph.",
@@ -902,6 +922,10 @@
                         "string",
                         "null"
                     ]
+                },
+                "dump_format": {
+                    "$ref": "#/$defs/DumpFormatEnum",
+                    "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
@@ -1291,6 +1315,10 @@
                         "null"
                     ]
                 },
+                "dump_format": {
+                    "$ref": "#/$defs/DumpFormatEnum",
+                    "description": "The format of a dump of the product as a file. Note the product may also be compressed."
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
@@ -1453,6 +1481,10 @@
                         "null"
                     ]
                 },
+                "dump_format": {
+                    "$ref": "#/$defs/DumpFormatEnum",
+                    "description": "The format of a dump of the product as a file. Note the product may also be compressed."
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
@@ -1549,6 +1581,10 @@
                         "string",
                         "null"
                     ]
+                },
+                "dump_format": {
+                    "$ref": "#/$defs/DumpFormatEnum",
+                    "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
