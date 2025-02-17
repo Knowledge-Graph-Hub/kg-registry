@@ -29,6 +29,7 @@
 ,[ sh:prefix "MOLECULAR-DATA-KP" ; sh:namespace "http://purl.obolibrary.org/obo/MOLECULAR-DATA-KP_"]
 ,[ sh:prefix "MULTIOMICS-KP" ; sh:namespace "http://purl.obolibrary.org/obo/MULTIOMICS-KP_"]
 ,[ sh:prefix "NEO" ; sh:namespace "http://purl.obolibrary.org/obo/NEO_"]
+,[ sh:prefix "NP-KG" ; sh:namespace "http://purl.obolibrary.org/obo/NP-KG_"]
 ,[ sh:prefix "ONTOLOGY-KP" ; sh:namespace "http://purl.obolibrary.org/obo/ONTOLOGY-KP_"]
 ,[ sh:prefix "ORCID" ; sh:namespace "http://purl.obolibrary.org/obo/ORCID_"]
 ,[ sh:prefix "PETAGRAPH" ; sh:namespace "http://purl.obolibrary.org/obo/PETAGRAPH_"]

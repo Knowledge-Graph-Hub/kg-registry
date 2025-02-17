@@ -108,6 +108,10 @@
             "@id": "http://purl.obolibrary.org/obo/NEO_",
             "@prefix": true
         },
+        "NP-KG": {
+            "@id": "http://purl.obolibrary.org/obo/NP-KG_",
+            "@prefix": true
+        },
         "ONTOLOGY-KP": {
             "@id": "http://purl.obolibrary.org/obo/ONTOLOGY-KP_",
             "@prefix": true

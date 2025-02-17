@@ -275,6 +275,11 @@ classes:
           Whether the product is compatible with the Biolink Model.
           This class contains several slots.
         range: BiolinkCompatibility
+      dump_format:
+        description: >-
+          The format of a dump of the product as a file.
+          Note the product may also be compressed.
+        range: DumpFormatEnum
 
   GraphProduct:
     description: >-
@@ -561,9 +566,19 @@ enums:
     description: >-
       The type of compression used with a product.
     permissible_values:
+      gpickle:
+        description: >-
+          The gpickle format, or the output of
+          pickling a NetworkX graph object.
+          This file ends in .gpickle.
       gzip:
         description: The gzip compression algorithm.
           This file ends in .gz.
+      pickle:
+        description: >-
+          The pickle format, or the output of
+          pickling a Python object.
+          This file ends in .pkl or .pickle.
       tar:
         description: The tar archive format.
           This file ends in .tar.
@@ -632,6 +647,25 @@ enums:
       other:
         description: >-
           Another domain not defined here.
+
+  DumpFormatEnum:
+    description: >-
+      The format of a dump of a product,
+      generally a graph, as a file.
+      Note the product may also be compressed.
+    permissible_values:
+      gpickle:
+        description: >-
+          The gpickle format, or the output of
+          pickling a NetworkX graph object.
+          This file ends in .gpickle.
+      pickle:
+        description: >-
+          The pickle format, or the output of
+          pickling a Python object.
+          This file ends in .pkl or .pickle.
+      other:
+        description: Another format not defined here.
 
   GraphStandardEnum:
     description: >-
