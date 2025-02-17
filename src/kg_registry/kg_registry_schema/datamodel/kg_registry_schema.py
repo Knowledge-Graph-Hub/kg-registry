@@ -107,8 +107,12 @@ class CompressionEnum(str, Enum):
     """
     The type of compression used with a product.
     """
+    # The gpickle format, or the output of pickling a NetworkX graph object. This file ends in .gpickle.
+    gpickle = "gpickle"
     # The gzip compression algorithm. This file ends in .gz.
     gzip = "gzip"
+    # The pickle format, or the output of pickling a Python object. This file ends in .pkl or .pickle.
+    pickle = "pickle"
     # The tar archive format. This file ends in .tar.
     tar = "tar"
     # A tar archive that is also gzip compressed. This file ends in .tar.gz.
@@ -156,6 +160,18 @@ class DomainEnum(str, Enum):
     # Simulation and modeling of specific phenomena.
     simulation = "simulation"
     # Another domain not defined here.
+    other = "other"
+
+
+class DumpFormatEnum(str, Enum):
+    """
+    The format of a dump of a product, generally a graph, as a file. Note the product may also be compressed.
+    """
+    # The gpickle format, or the output of pickling a NetworkX graph object. This file ends in .gpickle.
+    gpickle = "gpickle"
+    # The pickle format, or the output of pickling a Python object. This file ends in .pkl or .pickle.
+    pickle = "pickle"
+    # Another format not defined here.
     other = "other"
 
 
@@ -419,6 +435,7 @@ class Product(NamedThing):
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
     biolink_compatibility: Optional[BiolinkCompatibility] = Field(default=None, description="""Whether the product is compatible with the Biolink Model. This class contains several slots.""", json_schema_extra = { "linkml_meta": {'alias': 'biolink_compatibility', 'domain_of': ['Product']} })
+    dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'alias': 'dump_format', 'domain_of': ['Product']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -447,6 +464,7 @@ class GraphProduct(Product):
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
     biolink_compatibility: Optional[BiolinkCompatibility] = Field(default=None, description="""Whether the product is compatible with the Biolink Model. This class contains several slots.""", json_schema_extra = { "linkml_meta": {'alias': 'biolink_compatibility', 'domain_of': ['Product']} })
+    dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'alias': 'dump_format', 'domain_of': ['Product']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -470,6 +488,7 @@ class DataModelProduct(Product):
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
     biolink_compatibility: Optional[BiolinkCompatibility] = Field(default=None, description="""Whether the product is compatible with the Biolink Model. This class contains several slots.""", json_schema_extra = { "linkml_meta": {'alias': 'biolink_compatibility', 'domain_of': ['Product']} })
+    dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'alias': 'dump_format', 'domain_of': ['Product']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -493,6 +512,7 @@ class MappingProduct(Product):
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
     biolink_compatibility: Optional[BiolinkCompatibility] = Field(default=None, description="""Whether the product is compatible with the Biolink Model. This class contains several slots.""", json_schema_extra = { "linkml_meta": {'alias': 'biolink_compatibility', 'domain_of': ['Product']} })
+    dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'alias': 'dump_format', 'domain_of': ['Product']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -516,6 +536,7 @@ class ProcessProduct(Product):
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
     biolink_compatibility: Optional[BiolinkCompatibility] = Field(default=None, description="""Whether the product is compatible with the Biolink Model. This class contains several slots.""", json_schema_extra = { "linkml_meta": {'alias': 'biolink_compatibility', 'domain_of': ['Product']} })
+    dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'alias': 'dump_format', 'domain_of': ['Product']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -539,6 +560,7 @@ class GraphicalInterface(Product):
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
     biolink_compatibility: Optional[BiolinkCompatibility] = Field(default=None, description="""Whether the product is compatible with the Biolink Model. This class contains several slots.""", json_schema_extra = { "linkml_meta": {'alias': 'biolink_compatibility', 'domain_of': ['Product']} })
+    dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'alias': 'dump_format', 'domain_of': ['Product']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -562,6 +584,7 @@ class ProgrammingInterface(Product):
     tags: Optional[List[TagEnum]] = Field(default=None, description="""Tags associated with the product.""", json_schema_extra = { "linkml_meta": {'alias': 'tags', 'domain_of': ['Resource', 'Product']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the product. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
     biolink_compatibility: Optional[BiolinkCompatibility] = Field(default=None, description="""Whether the product is compatible with the Biolink Model. This class contains several slots.""", json_schema_extra = { "linkml_meta": {'alias': 'biolink_compatibility', 'domain_of': ['Product']} })
+    dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'alias': 'dump_format', 'domain_of': ['Product']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the resource. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
