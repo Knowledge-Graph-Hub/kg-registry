@@ -460,11 +460,15 @@
                     ]
                 },
                 "license": {
-                    "description": "The license of the product. This may differ from that of the parent resource.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/License"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The license of the product. This may differ from that of the parent resource."
                 },
                 "name": {
                     "description": "The human-readable name of the product.",
@@ -803,11 +807,15 @@
                     ]
                 },
                 "license": {
-                    "description": "The license of the product. This may differ from that of the parent resource.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/License"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The license of the product. This may differ from that of the parent resource."
                 },
                 "name": {
                     "description": "The human-readable name of the product.",
@@ -939,11 +947,15 @@
                     ]
                 },
                 "license": {
-                    "description": "The license of the product. This may differ from that of the parent resource.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/License"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The license of the product. This may differ from that of the parent resource."
                 },
                 "name": {
                     "description": "The human-readable name of the product.",
@@ -1331,11 +1343,15 @@
                     ]
                 },
                 "license": {
-                    "description": "The license of the product. This may differ from that of the parent resource.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/License"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The license of the product. This may differ from that of the parent resource."
                 },
                 "name": {
                     "description": "The human-readable name of the product.",
@@ -1497,11 +1513,15 @@
                     ]
                 },
                 "license": {
-                    "description": "The license of the product. This may differ from that of the parent resource.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/License"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The license of the product. This may differ from that of the parent resource."
                 },
                 "name": {
                     "description": "The human-readable name of the product.",
@@ -1598,11 +1618,15 @@
                     ]
                 },
                 "license": {
-                    "description": "The license of the product. This may differ from that of the parent resource.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/License"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The license of the product. This may differ from that of the parent resource."
                 },
                 "name": {
                     "description": "The human-readable name of the product.",
