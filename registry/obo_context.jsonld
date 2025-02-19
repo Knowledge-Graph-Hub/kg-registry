@@ -4,6 +4,10 @@
             "@id": "http://purl.obolibrary.org/obo/AUTOMAT_",
             "@prefix": true
         },
+        "BIGG": {
+            "@id": "http://purl.obolibrary.org/obo/BIGG_",
+            "@prefix": true
+        },
         "BIOLINK": {
             "@id": "http://purl.obolibrary.org/obo/BIOLINK_",
             "@prefix": true
@@ -14,6 +18,10 @@
         },
         "CFDE": {
             "@id": "http://purl.obolibrary.org/obo/CFDE_",
+            "@prefix": true
+        },
+        "CHEMBL": {
+            "@id": "http://purl.obolibrary.org/obo/CHEMBL_",
             "@prefix": true
         },
         "CHR": {
