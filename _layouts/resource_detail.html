@@ -63,7 +63,11 @@ page.is_obsolete %}
       <div class="list-group list-group-flush">
         {% for p in page.publications %}
         <div class="list-group-item">
-          <a href="{{p.id}}">{{p.title}}</a>
+          {% if p.doi %}
+            <a href="http://dx.doi.org/{{p.doi}}">{{p.title}}</a>
+          {% else %}
+            <a href="{{p.id}}">{{p.title}}</a>
+          {% endif %}
           {% if p.preferred %}
           <span class="badge">Preferred</span>
           {% endif %}
