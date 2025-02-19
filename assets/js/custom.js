@@ -337,12 +337,13 @@ jQuery(document).ready(function() {
                                 </div>
                             </td>
                             <td>
-                                ${getDashboardBadge(id, dashboard_success_data[id], dash_success)}
                                 ${license_box}
                             </td>
                         </tr>
                     `;
 
+                    // NOTE: formerly displayed QC badge above with
+                    // ${getDashboardBadge(id, dashboard_success_data[id], dash_success)}
 
                     if (domain === true) {
                         tableDomains.push(domainInner[0].trim())
