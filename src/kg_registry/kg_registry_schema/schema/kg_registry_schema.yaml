@@ -250,6 +250,7 @@ classes:
           The license of the product.
           This may differ from that of the parent resource.
         range: License
+        inlined: true
       compression:
         description: >-
           The type of compression used with the product.
