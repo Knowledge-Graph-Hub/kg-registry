@@ -15,7 +15,7 @@ contacts:
 url: https://biopragmatics.github.io/obo-db-ingest/
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
-- id: obo-db-ingest.obo-db-ingest.bigg.compartment.obo
+- id: obo-db-ingest.bigg.compartment.obo
   name: bigg.compartment OBO
   description: bigg.compartment OBO
   url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.obo
@@ -23,7 +23,7 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
-- id: obo-db-ingest.obo-db-ingest.bigg.compartment.owl
+- id: obo-db-ingest.bigg.compartment.owl
   name: bigg.compartment OWL
   description: bigg.compartment OWL
   url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.owl
@@ -31,7 +31,7 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
-- id: obo-db-ingest.obo-db-ingest.bigg.compartment.json
+- id: obo-db-ingest.bigg.compartment.json
   name: bigg.compartment OBO Graph JSON
   description: bigg.compartment OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.json
@@ -39,7 +39,7 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
-- id: obo-db-ingest.obo-db-ingest.bigg.compartment.sssom.tsv
+- id: obo-db-ingest.bigg.compartment.sssom.tsv
   name: bigg.compartment SSSOM
   description: bigg.compartment SSSOM
   url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
@@ -47,7 +47,7 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
-- id: obo-db-ingest.obo-db-ingest.bigg.metabolite.obo
+- id: obo-db-ingest.bigg.metabolite.obo
   name: bigg.metabolite OBO
   description: bigg.metabolite OBO
   url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.obo
@@ -55,7 +55,7 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
-- id: obo-db-ingest.obo-db-ingest.bigg.metabolite.owl
+- id: obo-db-ingest.bigg.metabolite.owl
   name: bigg.metabolite OWL
   description: bigg.metabolite OWL
   url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.owl
@@ -63,7 +63,7 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
-- id: obo-db-ingest.obo-db-ingest.bigg.metabolite.json
+- id: obo-db-ingest.bigg.metabolite.json
   name: bigg.metabolite OBO Graph JSON
   description: bigg.metabolite OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.json
