@@ -112,6 +112,10 @@
             "@id": "http://purl.obolibrary.org/obo/NP-KG_",
             "@prefix": true
         },
+        "OBO-DB-INGEST": {
+            "@id": "http://purl.obolibrary.org/obo/OBO-DB-INGEST_",
+            "@prefix": true
+        },
         "ONTOLOGY-KP": {
             "@id": "http://purl.obolibrary.org/obo/ONTOLOGY-KP_",
             "@prefix": true
