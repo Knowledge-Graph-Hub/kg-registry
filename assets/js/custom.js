@@ -261,7 +261,7 @@ jQuery(document).ready(function() {
                     }
                     if (data[i]["publications"] && data[i]["publications"].length > 0) {
                         publication = `
-                                    <a role="button" class="btn btn-outline-primary" href="${data[i]["publications"][0]["id"]}" aria-label="View the primary publication for ${title}" title="View the primary publication for ${title}">
+                                    <a role="button" class="btn btn-outline-primary" href="http://dx.doi.org/${data[i]["publications"][0]["id"]}" aria-label="View the primary publication for ${title}" title="View the primary publication for ${title}">
                                         <i class="bi-book" aria-hidden="true"></i>
                                     </a>`;
                     } else {
