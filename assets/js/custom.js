@@ -216,7 +216,7 @@ jQuery(document).ready(function() {
                     let publication = "";
                     let domainInner = ["Unknown"];
                     if (data[i]['license']) {
-                        license_url = data[i]["license"]["url"];
+                        license_url = data[i]["license"]["id"];
                         license_logo = data[i]["license"]["logo"];
                         license_label = data[i]["license"]["label"];
                     }
