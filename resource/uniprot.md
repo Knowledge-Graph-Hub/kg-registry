@@ -3,39 +3,18 @@ layout: resource_detail
 activity_status: active
 id: uniprot
 name: uniprot
-description: UniProt Protein
+description: UniProt Protein Knowledge Base
 domain: biological systems
 contacts:
-- category: Individual
-  orcid: 0000-0003-4423-4370
-  github: cthoyt
-  email: cthoyt@gmail.com
-  label: Charles Tapley Hoyt
-url: https://biopragmatics.github.io/obo-db-ingest/
-repository: https://github.com/biopragmatics/obo-db-ingest
-products:
-- id: uniprot.owl
-  name: uniprot OWL release
-  description: OWL release of uniprot
-  tags:
-    - biopragmatics
-  url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl
-  category: Product
-- id: uniprot.obo
-  name: uniprot OBO release
-  description: OBO release of uniprot
-  tags:
-    - biopragmatics
-  url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo
-  category: Product
-- id: uniprot.sssom
-  name: uniprot SSSOM release
-  description: SSSOM release of uniprot
-  tags:
-    - biopragmatics
-  url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom
-  category: MappingProduct
-category: Resource
+- category: Organization
+  email: help@uniprot.org
+  label: UniProt Consortium
+url: https://www.uniprot.org/
+repository: https://www.uniprot.org/
+category: DataSource
+license:
+  label: CC-BY-4.0
+  id: https://creativecommons.org/licenses/by/4.0/
 ---
 
-UniProt Protein
+UniProt Protein Knowledge Base
