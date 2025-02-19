@@ -248,6 +248,9 @@ jQuery(document).ready(function() {
                     if (description !== undefined && description.toString().length > 140) {
                         description = description.toString().slice(0, 140).trim() + '...'
                     }
+                    if (resourcetype !== undefined) {
+                        resourcetype = resourcetype.replace(/([a-z])([A-Z])/g, '$1 $2')
+                    }
                     if (data[i]["contact"]) {
                         contact =`
                                 <a role="button" class="btn btn-outline-primary" href="mailto:${data[i]["contact"]["email"]}" aria-label="Send an email to ${title}"
