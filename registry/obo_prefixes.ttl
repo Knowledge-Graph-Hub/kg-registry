@@ -3,9 +3,11 @@
 [
  sh:declare
 [ sh:prefix "AUTOMAT" ; sh:namespace "http://purl.obolibrary.org/obo/AUTOMAT_"]
+,[ sh:prefix "BIGG" ; sh:namespace "http://purl.obolibrary.org/obo/BIGG_"]
 ,[ sh:prefix "BIOLINK" ; sh:namespace "http://purl.obolibrary.org/obo/BIOLINK_"]
 ,[ sh:prefix "CAM-KP" ; sh:namespace "http://purl.obolibrary.org/obo/CAM-KP_"]
 ,[ sh:prefix "CFDE" ; sh:namespace "http://purl.obolibrary.org/obo/CFDE_"]
+,[ sh:prefix "CHEMBL" ; sh:namespace "http://purl.obolibrary.org/obo/CHEMBL_"]
 ,[ sh:prefix "CHR" ; sh:namespace "http://purl.obolibrary.org/obo/CHR_"]
 ,[ sh:prefix "CLINICAL-DATA-KP" ; sh:namespace "http://purl.obolibrary.org/obo/CLINICAL-DATA-KP_"]
 ,[ sh:prefix "CONNECTIONS-HYPOTHESIS-KP" ; sh:namespace "http://purl.obolibrary.org/obo/CONNECTIONS-HYPOTHESIS-KP_"]

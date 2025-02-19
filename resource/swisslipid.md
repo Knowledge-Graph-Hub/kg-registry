@@ -3,39 +3,36 @@ layout: resource_detail
 activity_status: active
 id: swisslipid
 name: swisslipid
-description: SwissLipid
+description: SwissLipids is a knowledge resource for lipids and their biology.
 domain: chemistry and biochemistry
 contacts:
-- category: Individual
-  orcid: 0000-0003-4423-4370
-  github: cthoyt
-  email: cthoyt@gmail.com
-  label: Charles Tapley Hoyt
-url: https://biopragmatics.github.io/obo-db-ingest/
-repository: https://github.com/biopragmatics/obo-db-ingest
-products:
-- id: swisslipid.owl
-  name: swisslipid OWL release
-  description: OWL release of swisslipid
-  tags:
-    - biopragmatics
-  url: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.owl
-  category: Product
-- id: swisslipid.obo
-  name: swisslipid OBO release
-  description: OBO release of swisslipid
-  tags:
-    - biopragmatics
-  url: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.obo
-  category: Product
-- id: swisslipid.sssom
-  name: swisslipid SSSOM release
-  description: SSSOM release of swisslipid
-  tags:
-    - biopragmatics
-  url: https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.sssom
-  category: MappingProduct
+- category: Organization
+  email: swisslipids@sib.swiss
+  label: SwissLipids team
+url: https://www.swisslipids.org/
+repository: https://www.swisslipids.org/
 category: DataSource
+publications:
+- doi: doi:10.1093/bioinformatics/btv285
+  id: doi:10.1093/bioinformatics/btv285
+  preferred: true
+  year: "2015"
+  authors:
+  - Aimo L
+  - Liechti R
+  - Hyka-Nouspikel N
+  - Niknejad A
+  - Gleizes A
+  - Götz L
+  - Kuznetsov D
+  - David FPA
+  - van der Goot FG
+  - Riezman H
+  - Bougueleret L
+  - Xenarios I
+  - Bridge A
+  title: >-
+    The SwissLipids knowledgebase for lipid biology
 ---
 
-SwissLipid
+SwissLipids is a knowledge resource for lipids and their biology.

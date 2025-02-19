@@ -180,6 +180,47 @@
         },
         {
             "activity_status": "active",
+            "category": "DataSource",
+            "contacts": [
+                {
+                    "category": "Organization",
+                    "label": "Systems Biology Research Group at the University of California, San Diego"
+                }
+            ],
+            "description": "BiGG Models is a knowledgebase of genome-scale metabolic network reconstructions.",
+            "domain": "biological systems",
+            "id": "bigg",
+            "layout": "resource_detail",
+            "license": {
+                "id": "http://bigg.ucsd.edu/license#license",
+                "label": "Custom"
+            },
+            "name": "BiGG Models",
+            "publications": [
+                {
+                    "authors": [
+                        "King ZA",
+                        "Lu JS",
+                        "Dräger A",
+                        "Miller PC",
+                        "Federowicz S",
+                        "Lerman JA",
+                        "Ebrahim A",
+                        "Palsson BO",
+                        "Lewis NE"
+                    ],
+                    "doi": "doi:10.1093/nar/gkv1049",
+                    "id": "doi:10.1093/nar/gkv1049",
+                    "preferred": true,
+                    "title": "BiGG Models: A platform for integrating, standardizing, and sharing genome-scale models",
+                    "year": "2016"
+                }
+            ],
+            "repository": "https://github.com/SBRG/bigg_models",
+            "url": "http://bigg.ucsd.edu/"
+        },
+        {
+            "activity_status": "active",
             "category": "DataModel",
             "contacts": [
                 {
@@ -340,6 +381,60 @@
             "layout": "resource_detail",
             "name": "Data Distillery Knowledge Graph",
             "url": "https://dd-kg-ui.cfde.cloud/about"
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
+            "contacts": [
+                {
+                    "category": "Organization",
+                    "email": "chembl-help@ebi.ac.uk",
+                    "label": "ChEMBL"
+                }
+            ],
+            "description": "ChEMBL is a manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs.",
+            "domain": "chemistry and biochemistry",
+            "id": "chembl",
+            "layout": "resource_detail",
+            "license": {
+                "id": "https://creativecommons.org/licenses/by-sa/3.0/",
+                "label": "CC-BY-SA-3.0",
+                "logo": "https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png"
+            },
+            "name": "ChEMBL",
+            "publications": [
+                {
+                    "authors": [
+                        "Zdrazil B",
+                        "Felix E",
+                        "Hunter F",
+                        "Manners EJM",
+                        "Blackshaw J",
+                        "Corbett S",
+                        "de Veij M",
+                        "Ioannidis H",
+                        "Mendez Lopez DM",
+                        "Mosquera JF",
+                        "Magarinos MP",
+                        "Bosc N",
+                        "Arcila R",
+                        "Kizilören T",
+                        "Gaulton A",
+                        "Bento AP",
+                        "Adasme MF",
+                        "Monecke PM",
+                        "Landrum GA",
+                        "Leach AR"
+                    ],
+                    "doi": "doi:10.1093/nar/gkad1004",
+                    "id": "doi:10.1093/nar/gkad1004",
+                    "preferred": true,
+                    "title": "The ChEMBL Database in 2023: a drug discovery platform spanning multiple bioactivity data types and time periods",
+                    "year": "2023"
+                }
+            ],
+            "repository": "https://github.com/chembl",
+            "url": "https://www.ebi.ac.uk/chembl/"
         },
         {
             "activity_status": "active",
@@ -579,54 +674,25 @@
             "category": "DataSource",
             "contacts": [
                 {
-                    "category": "Individual",
-                    "email": "cthoyt@gmail.com",
-                    "github": "cthoyt",
-                    "label": "Charles Tapley Hoyt",
-                    "orcid": "0000-0003-4423-4370"
+                    "category": "Organization",
+                    "email": "hgnc@genenames.org",
+                    "label": "HUGO Gene Nomenclature Committee"
                 }
             ],
-            "description": "HUGO Gene Nomenclature Committee",
+            "description": "HGNC is the HUGO Gene Nomenclature Committee. It is a resource for approved human gene names.",
             "domain": "biological systems",
             "fairsharing_id": "FAIRsharing.amcv1e",
             "id": "hgnc",
             "infores_id": "hgnc",
             "layout": "resource_detail",
-            "name": "hgnc",
-            "products": [
-                {
-                    "category": "Product",
-                    "description": "OWL release of hgnc",
-                    "id": "hgnc.owl",
-                    "name": "hgnc OWL release",
-                    "tags": [
-                        "biopragmatics"
-                    ],
-                    "url": "https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl"
-                },
-                {
-                    "category": "Product",
-                    "description": "OBO release of hgnc",
-                    "id": "hgnc.obo",
-                    "name": "hgnc OBO release",
-                    "tags": [
-                        "biopragmatics"
-                    ],
-                    "url": "https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo"
-                },
-                {
-                    "category": "MappingProduct",
-                    "description": "SSSOM release of hgnc",
-                    "id": "hgnc.sssom",
-                    "name": "hgnc SSSOM release",
-                    "tags": [
-                        "biopragmatics"
-                    ],
-                    "url": "https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom"
-                }
-            ],
-            "repository": "https://github.com/biopragmatics/obo-db-ingest",
-            "url": "https://biopragmatics.github.io/obo-db-ingest/"
+            "license": {
+                "id": "https://creativecommons.org/publicdomain/zero/1.0/",
+                "label": "CC0-1.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
+            },
+            "name": "HGNC",
+            "repository": "https://github.com/HGNC",
+            "url": "https://www.genenames.org/"
         },
         {
             "activity_status": "active",
@@ -685,57 +751,67 @@
             "category": "DataSource",
             "contacts": [
                 {
-                    "category": "Individual",
-                    "email": "cthoyt@gmail.com",
-                    "github": "cthoyt",
-                    "label": "Charles Tapley Hoyt",
-                    "orcid": "0000-0003-4423-4370"
+                    "category": "Organization",
+                    "label": "InterPro"
                 }
             ],
-            "description": "InterPro is a database of protein families, domains and functional sites in which identifiable features found in known proteins can be applied to unknown protein sequences",
+            "description": "InterPro is a database of protein families, domains and functional sites in which identifiable features found in known proteins can be applied to unknown protein sequences.",
             "domain": "biological systems",
             "id": "interpro",
             "layout": "resource_detail",
             "license": {
                 "id": "https://creativecommons.org/publicdomain/zero/1.0/",
-                "label": "CC0 1.0",
+                "label": "CC0-1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
             },
             "name": "InterPro",
-            "products": [
+            "publications": [
                 {
-                    "category": "Product",
-                    "description": "OWL release of InterPro",
-                    "id": "interpro.owl",
-                    "name": "InterPro OWL release",
-                    "tags": [
-                        "biopragmatics"
+                    "authors": [
+                        "Blum M",
+                        "Andreeva A",
+                        "Florentino LC",
+                        "Chuguransky SR",
+                        "Grego T",
+                        "Hobbs E",
+                        "Pinto BL",
+                        "Orr A",
+                        "Paysan-Lafosse T",
+                        "Ponamareva I",
+                        "Salazar GA",
+                        "Bordin N",
+                        "Bork P",
+                        "Bridge A",
+                        "Colwell L",
+                        "Gough J",
+                        "Haft DH",
+                        "Letunic I",
+                        "Llinares-López F",
+                        "Marchler-Bauer A",
+                        "Meng-Papaxanthos L",
+                        "Mi H",
+                        "Natale DA",
+                        "Orengo CA",
+                        "Pandurangan AP",
+                        "Piovesan D",
+                        "Rivoire C",
+                        "Sigrist CJA",
+                        "Thanki N",
+                        "Thibaud-Nissen F",
+                        "Thomas PD",
+                        "Tosatto SCE",
+                        "Wu CH",
+                        "Bateman A"
                     ],
-                    "url": "https://w3id.org/biopragmatics/resources/interpro/interpro.owl"
-                },
-                {
-                    "category": "Product",
-                    "description": "OBO release of InterPro",
-                    "id": "interpro.obo",
-                    "name": "InterPro OBO release",
-                    "tags": [
-                        "biopragmatics"
-                    ],
-                    "url": "https://w3id.org/biopragmatics/resources/interpro/interpro.obo"
-                },
-                {
-                    "category": "MappingProduct",
-                    "description": "SSSOM release of InterPro",
-                    "id": "interpro.sssom",
-                    "name": "InterPro SSSOM release",
-                    "tags": [
-                        "biopragmatics"
-                    ],
-                    "url": "https://w3id.org/biopragmatics/resources/interpro/interpro.sssom"
+                    "doi": "doi:10.1093/nar/gkae1082",
+                    "id": "doi:10.1093/nar/gkae1082",
+                    "preferred": true,
+                    "title": "InterPro: the protein sequence classification resource in 2025",
+                    "year": "2024"
                 }
             ],
-            "repository": "https://github.com/biopragmatics/obo-db-ingest",
-            "url": "https://biopragmatics.github.io/obo-db-ingest/"
+            "repository": "https://www.ebi.ac.uk/interpro/",
+            "url": "https://www.ebi.ac.uk/interpro/"
         },
         {
             "activity_status": "active",
@@ -1125,7 +1201,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.compartment OBO",
-                    "id": "obo-db-ingest.obo-db-ingest.bigg.compartment.obo",
+                    "id": "obo-db-ingest.bigg.compartment.obo",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
                         "label": "Custom"
@@ -1136,7 +1212,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.compartment OWL",
-                    "id": "obo-db-ingest.obo-db-ingest.bigg.compartment.owl",
+                    "id": "obo-db-ingest.bigg.compartment.owl",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
                         "label": "Custom"
@@ -1147,7 +1223,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.compartment OBO Graph JSON",
-                    "id": "obo-db-ingest.obo-db-ingest.bigg.compartment.json",
+                    "id": "obo-db-ingest.bigg.compartment.json",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
                         "label": "Custom"
@@ -1158,7 +1234,7 @@
                 {
                     "category": "MappingProduct",
                     "description": "bigg.compartment SSSOM",
-                    "id": "obo-db-ingest.obo-db-ingest.bigg.compartment.sssom.tsv",
+                    "id": "obo-db-ingest.bigg.compartment.sssom.tsv",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
                         "label": "Custom"
@@ -1169,7 +1245,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.metabolite OBO",
-                    "id": "obo-db-ingest.obo-db-ingest.bigg.metabolite.obo",
+                    "id": "obo-db-ingest.bigg.metabolite.obo",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
                         "label": "Custom"
@@ -1180,7 +1256,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.metabolite OWL",
-                    "id": "obo-db-ingest.obo-db-ingest.bigg.metabolite.owl",
+                    "id": "obo-db-ingest.bigg.metabolite.owl",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
                         "label": "Custom"
@@ -1191,7 +1267,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.metabolite OBO Graph JSON",
-                    "id": "obo-db-ingest.obo-db-ingest.bigg.metabolite.json",
+                    "id": "obo-db-ingest.bigg.metabolite.json",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
                         "label": "Custom"
@@ -4120,52 +4196,42 @@
             "category": "DataSource",
             "contacts": [
                 {
-                    "category": "Individual",
-                    "email": "cthoyt@gmail.com",
-                    "github": "cthoyt",
-                    "label": "Charles Tapley Hoyt",
-                    "orcid": "0000-0003-4423-4370"
+                    "category": "Organization",
+                    "email": "swisslipids@sib.swiss",
+                    "label": "SwissLipids team"
                 }
             ],
-            "description": "SwissLipid",
+            "description": "SwissLipids is a knowledge resource for lipids and their biology.",
             "domain": "chemistry and biochemistry",
             "id": "swisslipid",
             "layout": "resource_detail",
             "name": "swisslipid",
-            "products": [
+            "publications": [
                 {
-                    "category": "Product",
-                    "description": "OWL release of swisslipid",
-                    "id": "swisslipid.owl",
-                    "name": "swisslipid OWL release",
-                    "tags": [
-                        "biopragmatics"
+                    "authors": [
+                        "Aimo L",
+                        "Liechti R",
+                        "Hyka-Nouspikel N",
+                        "Niknejad A",
+                        "Gleizes A",
+                        "Götz L",
+                        "Kuznetsov D",
+                        "David FPA",
+                        "van der Goot FG",
+                        "Riezman H",
+                        "Bougueleret L",
+                        "Xenarios I",
+                        "Bridge A"
                     ],
-                    "url": "https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.owl"
-                },
-                {
-                    "category": "Product",
-                    "description": "OBO release of swisslipid",
-                    "id": "swisslipid.obo",
-                    "name": "swisslipid OBO release",
-                    "tags": [
-                        "biopragmatics"
-                    ],
-                    "url": "https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.obo"
-                },
-                {
-                    "category": "MappingProduct",
-                    "description": "SSSOM release of swisslipid",
-                    "id": "swisslipid.sssom",
-                    "name": "swisslipid SSSOM release",
-                    "tags": [
-                        "biopragmatics"
-                    ],
-                    "url": "https://w3id.org/biopragmatics/resources/swisslipid/swisslipid.sssom"
+                    "doi": "doi:10.1093/bioinformatics/btv285",
+                    "id": "doi:10.1093/bioinformatics/btv285",
+                    "preferred": true,
+                    "title": "The SwissLipids knowledgebase for lipid biology",
+                    "year": "2015"
                 }
             ],
-            "repository": "https://github.com/biopragmatics/obo-db-ingest",
-            "url": "https://biopragmatics.github.io/obo-db-ingest/"
+            "repository": "https://www.swisslipids.org/",
+            "url": "https://www.swisslipids.org/"
         },
         {
             "activity_status": "active",

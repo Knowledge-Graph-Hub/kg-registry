@@ -1,8 +1,10 @@
 Resource,Activity Status,Validation Status
 automat,active,PASS
+bigg,active,PASS
 biolink,active,PASS
 cam-kp,active,PASS
 cfde,active,PASS
+chembl,active,PASS
 chr,active,PASS
 clinical-data-kp,active,PASS
 connections-hypothesis-kp,active,PASS
