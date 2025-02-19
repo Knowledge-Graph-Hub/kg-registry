@@ -1779,5 +1779,8 @@ products:
   license:
     label: CC-BY-4.0
     id: https://creativecommons.org/licenses/by/4.0/
+license:
+  label: Varies
+  id: https://biopragmatics.github.io/obo-db-ingest/
 ---
 OBO Database Ingestion
