@@ -222,7 +222,7 @@ page.is_obsolete %}
       <dt>License</dt>
       <dd>
         {% if page.license %}
-        <a href="{{page.license.url}}">{{page.license.label}}</a>
+        <a href="{{page.license.id}}">{{page.license.label}}</a>
         {% if page.license.alert %}
         <div class="alert alert-danger" role="alert">
           <span
@@ -239,7 +239,7 @@ page.is_obsolete %}
             aria-hidden="true"
           ></span>
           <span class="sr-only">Warning:</span>
-          Not entered
+          No license entered
         </div>
         {% endif %}
       </dd>
