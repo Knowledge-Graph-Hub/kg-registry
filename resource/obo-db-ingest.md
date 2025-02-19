@@ -2,7 +2,7 @@
 layout: resource_detail
 activity_status: active
 id: obo-db-ingest
-name: Automat
+name: OBO Database Ingestion
 description: A set of databases formalized in OBO, OWL, and OBO Graph JSON formats, as well as mappings and nodelists.
 domain: upper
 category: Aggregator
@@ -17,7 +17,6 @@ repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: obo-db-ingest.obo-db-ingest.bigg.compartment.obo
   name: bigg.compartment OBO
-  is_kgx: false
   description: bigg.compartment OBO
   url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.obo
   category: Product
@@ -26,7 +25,6 @@ products:
     id: http://bigg.ucsd.edu/license#license
 - id: obo-db-ingest.obo-db-ingest.bigg.compartment.owl
   name: bigg.compartment OWL
-  is_kgx: false
   description: bigg.compartment OWL
   url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.owl
   category: Product
@@ -35,7 +33,6 @@ products:
     id: http://bigg.ucsd.edu/license#license
 - id: obo-db-ingest.obo-db-ingest.bigg.compartment.json
   name: bigg.compartment OBO Graph JSON
-  is_kgx: false
   description: bigg.compartment OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.json
   category: Product
@@ -44,7 +41,6 @@ products:
     id: http://bigg.ucsd.edu/license#license
 - id: obo-db-ingest.obo-db-ingest.bigg.compartment.sssom.tsv
   name: bigg.compartment SSSOM
-  is_kgx: false
   description: bigg.compartment SSSOM
   url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
   category: MappingProduct
@@ -53,7 +49,6 @@ products:
     id: http://bigg.ucsd.edu/license#license
 - id: obo-db-ingest.obo-db-ingest.bigg.metabolite.obo
   name: bigg.metabolite OBO
-  is_kgx: false
   description: bigg.metabolite OBO
   url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.obo
   category: Product
@@ -62,7 +57,6 @@ products:
     id: http://bigg.ucsd.edu/license#license
 - id: obo-db-ingest.obo-db-ingest.bigg.metabolite.owl
   name: bigg.metabolite OWL
-  is_kgx: false
   description: bigg.metabolite OWL
   url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.owl
   category: Product
@@ -71,7 +65,6 @@ products:
     id: http://bigg.ucsd.edu/license#license
 - id: obo-db-ingest.obo-db-ingest.bigg.metabolite.json
   name: bigg.metabolite OBO Graph JSON
-  is_kgx: false
   description: bigg.metabolite OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.json
   category: Product
@@ -80,7 +73,6 @@ products:
     id: http://bigg.ucsd.edu/license#license
 - id: obo-db-ingest.bigg.metabolite.sssom.tsv
   name: bigg.metabolite SSSOM
-  is_kgx: false
   description: bigg.metabolite SSSOM
   url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
   category: MappingProduct
@@ -89,7 +81,6 @@ products:
     id: http://bigg.ucsd.edu/license#license
 - id: obo-db-ingest.bigg.model.obo
   name: bigg.model OBO
-  is_kgx: false
   description: bigg.model OBO
   url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.obo
   category: Product
@@ -98,7 +89,6 @@ products:
     id: http://bigg.ucsd.edu/license#license
 - id: obo-db-ingest.bigg.model.owl
   name: bigg.model OWL
-  is_kgx: false
   description: bigg.model OWL
   url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.owl
   category: Product
@@ -107,7 +97,6 @@ products:
     id: http://bigg.ucsd.edu/license#license
 - id: obo-db-ingest.bigg.model.json
   name: bigg.model OBO Graph JSON
-  is_kgx: false
   description: bigg.model OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.json
   category: Product
@@ -116,7 +105,6 @@ products:
     id: http://bigg.ucsd.edu/license#license
 - id: obo-db-ingest.bigg.reaction.obo
   name: bigg.reaction OBO
-  is_kgx: false
   description: bigg.reaction OBO
   url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.obo
   category: Product
@@ -125,7 +113,6 @@ products:
     id: http://bigg.ucsd.edu/license#license
 - id: obo-db-ingest.bigg.reaction.owl
   name: bigg.reaction OWL
-  is_kgx: false
   description: bigg.reaction OWL
   url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.owl
   category: Product
@@ -134,7 +121,6 @@ products:
     id: http://bigg.ucsd.edu/license#license
 - id: obo-db-ingest.bigg.reaction.json
   name: bigg.reaction OBO Graph JSON
-  is_kgx: false
   description: bigg.reaction OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.json
   category: Product
@@ -143,7 +129,6 @@ products:
     id: http://bigg.ucsd.edu/license#license
 - id: obo-db-ingest.bigg.reaction.sssom.tsv
   name: bigg.reaction SSSOM
-  is_kgx: false
   description: bigg.reaction SSSOM
   url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.sssom.tsv
   category: MappingProduct
@@ -152,7 +137,6 @@ products:
     id: http://bigg.ucsd.edu/license#license
 - id: obo-db-ingest.ccle.obo
   name: ccle OBO
-  is_kgx: false
   description: ccle OBO
   url: https://w3id.org/biopragmatics/resources/cdle/cdle.obo
   category: Product
@@ -161,7 +145,6 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
 - id: obo-db-ingest.ccle.owl
   name: ccle OWL
-  is_kgx: false
   description: ccle OWL
   url: https://w3id.org/biopragmatics/resources/cdle/cdle.owl
   category: Product
@@ -170,7 +153,6 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
 - id: obo-db-ingest.ccle.json
   name: ccle OBO Graph JSON
-  is_kgx: false
   description: ccle OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/cdle/cdle.json
   category: Product
@@ -179,7 +161,6 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
 - id: obo-db-ingest.ccle.sssom.tsv
   name: ccle SSSOM
-  is_kgx: false
   description: ccle SSSOM
   url: https://w3id.org/biopragmatics/resources/cdle/cdle.sssom.tsv
   category: MappingProduct
@@ -188,7 +169,6 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
 - id: obo-db-ingest.cgnc.obo
   name: cgnc OBO
-  is_kgx: false
   description: cgnc OBO
   url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.obo
   category: Product
@@ -197,7 +177,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.cgnc.owl
   name: cgnc OWL
-  is_kgx: false
   description: cgnc OWL
   url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.owl
   category: Product
@@ -206,7 +185,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.cgnc.json
   name: cgnc OBO Graph JSON
-  is_kgx: false
   description: cgnc OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.json
   category: Product
@@ -215,7 +193,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.cgnc.sssom.tsv
   name: cgnc SSSOM
-  is_kgx: false
   description: cgnc SSSOM
   url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.sssom.tsv
   category: MappingProduct
@@ -224,7 +201,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.chembl.compound.obo
   name: chembl.compound OBO
-  is_kgx: false
   description: chembl.compound OBO
   url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.obo
   category: Product
@@ -233,7 +209,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/3.0/
 - id: obo-db-ingest.chembl.compound.owl
   name: chembl.compound OWL
-  is_kgx: false
   description: chembl.compound OWL
   url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.owl
   category: Product
@@ -242,7 +217,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/3.0/
 - id: obo-db-ingest.chembl.compound.json
   name: chembl.compound OBO Graph JSON
-  is_kgx: false
   description: chembl.compound OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.json
   category: Product
@@ -251,7 +225,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/3.0/
 - id: obo-db-ingest.chembl.compound.sssom.tsv
   name: chembl.compound SSSOM
-  is_kgx: false
   description: chembl.compound SSSOM
   url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.sssom.tsv
   category: MappingProduct
@@ -260,7 +233,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/3.0/
 - id: obo-db-ingest.chembl.target.obo
   name: chembl.target OBO
-  is_kgx: false
   description: chembl.target OBO
   url: https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.obo
   category: Product
@@ -269,7 +241,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/3.0/
 - id: obo-db-ingest.chembl.target.owl
   name: chembl.target OWL
-  is_kgx: false
   description: chembl.target OWL
   url: https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.owl
   category: Product
@@ -278,7 +249,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/3.0/
 - id: obo-db-ingest.chembl.target.json
   name: chembl.target OBO Graph JSON
-  is_kgx: false
   description: chembl.target OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.json
   category: Product
@@ -287,7 +257,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/3.0/
 - id: obo-db-ingest.chembl.target.sssom.tsv
   name: chembl.target SSSOM
-  is_kgx: false
   description: chembl.target SSSOM
   url: https://w3id.org/biopragmatics/resources/chembl.target/chembl.target.sssom.tsv
   category: MappingProduct
@@ -296,7 +265,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/3.0/
 - id: obo-db-ingest.civic.gid.obo
   name: civic.gid OBO
-  is_kgx: false
   description: civic.gid OBO
   url: https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.obo
   category: Product
@@ -305,7 +273,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.civic.gid.owl
   name: civic.gid OWL
-  is_kgx: false
   description: civic.gid OWL
   url: https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.owl
   category: Product
@@ -314,7 +281,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.civic.gid.json
   name: civic.gid OBO Graph JSON
-  is_kgx: false
   description: civic.gid OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.json
   category: Product
@@ -323,7 +289,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.civic.gid.sssom.tsv
   name: civic.gid SSSOM
-  is_kgx: false
   description: civic.gid SSSOM
   url: https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.sssom.tsv
   category: MappingProduct
@@ -332,7 +297,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.clinicaltrials.obo
   name: clinicaltrials OBO
-  is_kgx: false
   description: clinicaltrials OBO
   url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo
   category: Product
@@ -341,7 +305,6 @@ products:
     id: https://clinicaltrials.gov/about-site/terms-conditions#availability
 - id: obo-db-ingest.clinicaltrials.owl
   name: clinicaltrials OWL
-  is_kgx: false
   description: clinicaltrials OWL
   url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl
   category: Product
@@ -350,7 +313,6 @@ products:
     id: https://clinicaltrials.gov/about-site/terms-conditions#availability
 - id: obo-db-ingest.clinicaltrials.json
   name: clinicaltrials OBO Graph JSON
-  is_kgx: false
   description: clinicaltrials OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json
   category: Product
@@ -359,7 +321,6 @@ products:
     id: https://clinicaltrials.gov/about-site/terms-conditions#availability
 - id: obo-db-ingest.clinicaltrials.sssom.tsv
   name: clinicaltrials SSSOM
-  is_kgx: false
   description: clinicaltrials SSSOM
   url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.sssom.tsv
   category: MappingProduct
@@ -368,7 +329,6 @@ products:
     id: https://clinicaltrials.gov/about-site/terms-conditions#availability
 - id: obo-db-ingest.complexportal.obo
   name: complexportal OBO
-  is_kgx: false
   description: complexportal OBO
   url: https://w3id.org/biopragmatics/resources/complexportal/complexportal.obo
   category: Product
@@ -377,7 +337,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.complexportal.owl
   name: complexportal OWL
-  is_kgx: false
   description: complexportal OWL
   url: https://w3id.org/biopragmatics/resources/complexportal/complexportal.owl
   category: Product
@@ -386,7 +345,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.complexportal.json
   name: complexportal OBO Graph JSON
-  is_kgx: false
   description: complexportal OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/complexportal/complexportal.json
   category: Product
@@ -395,7 +353,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.complexportal.sssom.tsv
   name: complexportal SSSOM
-  is_kgx: false
   description: complexportal SSSOM
   url: https://w3id.org/biopragmatics/resources/complexportal/complexportal.sssom.tsv
   category: MappingProduct
@@ -404,31 +361,26 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.cpt.obo
   name: cpt OBO
-  is_kgx: false
   description: cpt OBO
   url: https://w3id.org/biopragmatics/resources/cpt/cpt.obo
   category: Product
 - id: obo-db-ingest.cpt.owl
   name: cpt OWL
-  is_kgx: false
   description: cpt OWL
   url: https://w3id.org/biopragmatics/resources/cpt/cpt.owl
   category: Product
 - id: obo-db-ingest.cpt.json
   name: cpt OBO Graph JSON
-  is_kgx: false
   description: cpt OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/cpt/cpt.json
   category: Product
 - id: obo-db-ingest.cpt.sssom.tsv
   name: cpt SSSOM
-  is_kgx: false
   description: cpt SSSOM
   url: https://w3id.org/biopragmatics/resources/cpt/cpt.sssom.tsv
   category: MappingProduct
 - id: obo-db-ingest.credit.obo
   name: credit OBO
-  is_kgx: false
   description: credit OBO
   url: https://w3id.org/biopragmatics/resources/credit/credit.obo
   category: Product
@@ -437,7 +389,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.credit.owl
   name: credit OWL
-  is_kgx: false
   description: credit OWL
   url: https://w3id.org/biopragmatics/resources/credit/credit.owl
   category: Product
@@ -446,7 +397,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.credit.json
   name: credit OBO Graph JSON
-  is_kgx: false
   description: credit OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/credit/credit.json
   category: Product
@@ -455,31 +405,26 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.cvx.obo
   name: cvx OBO
-  is_kgx: false
   description: cvx OBO
   url: https://w3id.org/biopragmatics/resources/cvx/cvx.obo
   category: Product
 - id: obo-db-ingest.cvx.owl
   name: cvx OWL
-  is_kgx: false
   description: cvx OWL
   url: https://w3id.org/biopragmatics/resources/cvx/cvx.owl
   category: Product
 - id: obo-db-ingest.cvx.json
   name: cvx OBO Graph JSON
-  is_kgx: false
   description: cvx OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/cvx/cvx.json
   category: Product
 - id: obo-db-ingest.cvx.sssom.tsv
   name: cvx SSSOM
-  is_kgx: false
   description: cvx SSSOM
   url: https://w3id.org/biopragmatics/resources/cvx/cvx.sssom.tsv
   category: MappingProduct
 - id: obo-db-ingest.depmap.obo
   name: depmap OBO
-  is_kgx: false
   description: depmap OBO
   url: https://w3id.org/biopragmatics/resources/depmap/depmap.obo
   category: Product
@@ -488,7 +433,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.depmap.owl
   name: depmap OWL
-  is_kgx: false
   description: depmap OWL
   url: https://w3id.org/biopragmatics/resources/depmap/depmap.owl
   category: Product
@@ -497,7 +441,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.depmap.json
   name: depmap OBO Graph JSON
-  is_kgx: false
   description: depmap OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/depmap/depmap.json
   category: Product
@@ -506,7 +449,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.depmap.sssom.tsv
   name: depmap SSSOM
-  is_kgx: false
   description: depmap SSSOM
   url: https://w3id.org/biopragmatics/resources/depmap/depmap.sssom.tsv
   category: MappingProduct
@@ -515,7 +457,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.dictybase.gene.obo
   name: dictybase.gene OBO
-  is_kgx: false
   description: dictybase.gene OBO
   url: https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.obo
   category: Product
@@ -524,7 +465,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.dictybase.gene.owl
   name: dictybase.gene OWL
-  is_kgx: false
   description: dictybase.gene OWL
   url: https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.owl
   category: Product
@@ -533,7 +473,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.dictybase.gene.json
   name: dictybase.gene OBO Graph JSON
-  is_kgx: false
   description: dictybase.gene OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.json
   category: Product
@@ -542,7 +481,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.drugcentral.obo
   name: drugcentral OBO
-  is_kgx: false
   description: drugcentral OBO
   url: https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.obo
   category: Product
@@ -551,7 +489,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.drugcentral.owl
   name: drugcentral OWL
-  is_kgx: false
   description: drugcentral OWL
   url: https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.owl
   category: Product
@@ -560,7 +497,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.drugcentral.json
   name: drugcentral OBO Graph JSON
-  is_kgx: false
   description: drugcentral OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.json
   category: Product
@@ -569,7 +505,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.drugcentral.sssom.tsv
   name: drugcentral SSSOM
-  is_kgx: false
   description: drugcentral SSSOM
   url: https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.sssom.tsv
   category: MappingProduct
@@ -578,7 +513,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.eccode.obo
   name: eccode OBO
-  is_kgx: false
   description: eccode OBO
   url: https://w3id.org/biopragmatics/resources/eccode/eccode.obo
   category: Product
@@ -587,7 +521,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.eccode.owl
   name: eccode OWL
-  is_kgx: false
   description: eccode OWL
   url: https://w3id.org/biopragmatics/resources/eccode/eccode.owl
   category: Product
@@ -596,7 +529,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.eccode.json
   name: eccode OBO Graph JSON
-  is_kgx: false
   description: eccode OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/eccode/eccode.json
   category: Product
@@ -605,7 +537,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.eccode.sssom.tsv
   name: eccode SSSOM
-  is_kgx: false
   description: eccode SSSOM
   url: https://w3id.org/biopragmatics/resources/eccode/eccode.sssom.tsv
   category: MappingProduct
@@ -614,7 +545,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.flybase.obo
   name: flybase OBO
-  is_kgx: false
   description: flybase OBO
   url: https://w3id.org/biopragmatics/resources/flybase/flybase.obo
   category: Product
@@ -623,7 +553,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.flybase.owl
   name: flybase OWL
-  is_kgx: false
   description: flybase OWL
   url: https://w3id.org/biopragmatics/resources/flybase/flybase.owl
   category: Product
@@ -632,7 +561,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.flybase.json
   name: flybase OBO Graph JSON
-  is_kgx: false
   description: flybase OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/flybase/flybase.json
   category: Product
@@ -641,25 +569,21 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.gard.obo
   name: gard OBO
-  is_kgx: false
   description: gard OBO
   url: https://w3id.org/biopragmatics/resources/gard/gard.obo
   category: Product
 - id: obo-db-ingest.gard.owl
   name: gard OWL
-  is_kgx: false
   description: gard OWL
   url: https://w3id.org/biopragmatics/resources/gard/gard.owl
   category: Product
 - id: obo-db-ingest.gard.json
   name: gard OBO Graph JSON
-  is_kgx: false
   description: gard OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/gard/gard.json
   category: Product
 - id: obo-db-ingest.geonames.obo
   name: geonames OBO
-  is_kgx: false
   description: geonames OBO
   url: https://w3id.org/biopragmatics/resources/geonames/geonames.obo
   category: Product
@@ -668,7 +592,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.geonames.owl
   name: geonames OWL
-  is_kgx: false
   description: geonames OWL
   url: https://w3id.org/biopragmatics/resources/geonames/geonames.owl
   category: Product
@@ -677,7 +600,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.geonames.json
   name: geonames OBO Graph JSON
-  is_kgx: false
   description: geonames OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/geonames/geonames.json
   category: Product
@@ -686,7 +608,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.geonames.feature.obo
   name: geonames.feature OBO
-  is_kgx: false
   description: geonames.feature OBO
   url: https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.obo
   category: Product
@@ -695,7 +616,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.geonames.feature.owl
   name: geonames.feature OWL
-  is_kgx: false
   description: geonames.feature OWL
   url: https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.owl
   category: Product
@@ -704,7 +624,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.geonames.feature.json
   name: geonames.feature OBO Graph JSON
-  is_kgx: false
   description: geonames.feature OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.json
   category: Product
@@ -713,7 +632,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.gtdb.obo
   name: gtdb OBO
-  is_kgx: false
   description: gtdb OBO
   url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo
   category: Product
@@ -722,7 +640,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.gtdb.owl
   name: gtdb OWL
-  is_kgx: false
   description: gtdb OWL
   url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.owl
   category: Product
@@ -731,7 +648,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.gtdb.json
   name: gtdb OBO Graph JSON
-  is_kgx: false
   description: gtdb OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.json
   category: Product
@@ -740,7 +656,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.gtdb.sssom.tsv
   name: gtdb SSSOM
-  is_kgx: false
   description: gtdb SSSOM
   url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.sssom.tsv
   category: MappingProduct
@@ -749,7 +664,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.hgnc.obo
   name: hgnc OBO
-  is_kgx: false
   description: hgnc OBO
   url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo
   category: Product
@@ -758,7 +672,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.hgnc.owl
   name: hgnc OWL
-  is_kgx: false
   description: hgnc OWL
   url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl
   category: Product
@@ -767,7 +680,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.hgnc.json
   name: hgnc OBO Graph JSON
-  is_kgx: false
   description: hgnc OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.json
   category: Product
@@ -776,7 +688,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.hgnc.sssom.tsv
   name: hgnc SSSOM
-  is_kgx: false
   description: hgnc SSSOM
   url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
   category: MappingProduct
@@ -785,7 +696,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.hgnc.genegroup.obo
   name: hgnc.genegroup OBO
-  is_kgx: false
   description: hgnc.genegroup OBO
   url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.obo
   category: Product
@@ -794,7 +704,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.hgnc.genegroup.owl
   name: hgnc.genegroup OWL
-  is_kgx: false
   description: hgnc.genegroup OWL
   url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.owl
   category: Product
@@ -803,7 +712,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.hgnc.genegroup.json
   name: hgnc.genegroup OBO Graph JSON
-  is_kgx: false
   description: hgnc.genegroup OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.json
   category: Product
@@ -812,7 +720,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.icd10.obo
   name: icd10 OBO
-  is_kgx: false
   description: icd10 OBO
   url: https://w3id.org/biopragmatics/resources/icd10/icd10.obo
   category: Product
@@ -821,7 +728,6 @@ products:
     id: https://cdn.who.int/media/docs/default-source/publishing-policies/copyright/who-faq-licensing-icd-10.pdf
 - id: obo-db-ingest.icd10.owl
   name: icd10 OWL
-  is_kgx: false
   description: icd10 OWL
   url: https://w3id.org/biopragmatics/resources/icd10/icd10.owl
   category: Product
@@ -830,7 +736,6 @@ products:
     id: https://cdn.who.int/media/docs/default-source/publishing-policies/copyright/who-faq-licensing-icd-10.pdf
 - id: obo-db-ingest.icd10.json
   name: icd10 OBO Graph JSON
-  is_kgx: false
   description: icd10 OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/icd10/icd10.json
   category: Product
@@ -839,7 +744,6 @@ products:
     id: https://cdn.who.int/media/docs/default-source/publishing-policies/copyright/who-faq-licensing-icd-10.pdf
 - id: obo-db-ingest.icd11.obo
   name: icd11 OBO
-  is_kgx: false
   description: icd11 OBO
   url: https://w3id.org/biopragmatics/resources/icd11/icd11.obo
   category: Product
@@ -848,7 +752,6 @@ products:
     id: https://creativecommons.org/licenses/by-nc-nd/3.0/igo/deed.en
 - id: obo-db-ingest.icd11.owl
   name: icd11 OWL
-  is_kgx: false
   description: icd11 OWL
   url: https://w3id.org/biopragmatics/resources/icd11/icd11.owl
   category: Product
@@ -857,7 +760,6 @@ products:
     id: https://creativecommons.org/licenses/by-nc-nd/3.0/igo/deed.en
 - id: obo-db-ingest.icd11.json
   name: icd11 OBO Graph JSON
-  is_kgx: false
   description: icd11 OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/icd11/icd11.json
   category: Product
@@ -866,7 +768,6 @@ products:
     id: https://creativecommons.org/licenses/by-nc-nd/3.0/igo/deed.en
 - id: obo-db-ingest.icd11.sssom.tsv
   name: icd11 SSSOM
-  is_kgx: false
   description: icd11 SSSOM
   url: https://w3id.org/biopragmatics/resources/icd11/icd11.sssom.tsv
   category: MappingProduct
@@ -875,7 +776,6 @@ products:
     id: https://creativecommons.org/licenses/by-nc-nd/3.0/igo/deed.en
 - id: obo-db-ingest.interpro.obo
   name: interpro OBO
-  is_kgx: false
   description: interpro OBO
   url: https://w3id.org/biopragmatics/resources/interpro/interpro.obo
   category: Product
@@ -884,7 +784,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.interpro.owl
   name: interpro OWL
-  is_kgx: false
   description: interpro OWL
   url: https://w3id.org/biopragmatics/resources/interpro/interpro.owl
   category: Product
@@ -893,7 +792,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.interpro.json
   name: interpro OBO Graph JSON
-  is_kgx: false
   description: interpro OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/interpro/interpro.json
   category: Product
@@ -902,7 +800,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.itis.obo
   name: itis OBO
-  is_kgx: false
   description: itis OBO
   url: https://w3id.org/biopragmatics/resources/itis/itis.obo
   category: Product
@@ -911,7 +808,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.itis.owl
   name: itis OWL
-  is_kgx: false
   description: itis OWL
   url: https://w3id.org/biopragmatics/resources/itis/itis.owl
   category: Product
@@ -920,7 +816,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.itis.json
   name: itis OBO Graph JSON
-  is_kgx: false
   description: itis OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/itis/itis.json
   category: Product
@@ -929,7 +824,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.kegg.genome.obo
   name: kegg.genome OBO
-  is_kgx: false
   description: kegg.genome OBO
   url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.obo
   category: Product
@@ -938,7 +832,6 @@ products:
     id: https://www.kegg.jp/kegg/legal.html
 - id: obo-db-ingest.kegg.genome.owl
   name: kegg.genome OWL
-  is_kgx: false
   description: kegg.genome OWL
   url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.owl
   category: Product
@@ -947,7 +840,6 @@ products:
     id: https://www.kegg.jp/kegg/legal.html
 - id: obo-db-ingest.kegg.genome.json
   name: kegg.genome OBO Graph JSON
-  is_kgx: false
   description: kegg.genome OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.json
   category: Product
@@ -956,7 +848,6 @@ products:
     id: https://www.kegg.jp/kegg/legal.html
 - id: obo-db-ingest.mesh.obo
   name: mesh OBO
-  is_kgx: false
   description: mesh OBO
   url: https://w3id.org/biopragmatics/resources/mesh/mesh.obo
   category: Product
@@ -965,7 +856,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.mesh.owl
   name: mesh OWL
-  is_kgx: false
   description: mesh OWL
   url: https://w3id.org/biopragmatics/resources/mesh/mesh.owl
   category: Product
@@ -974,7 +864,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.mesh.json
   name: mesh OBO Graph JSON
-  is_kgx: false
   description: mesh OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/mesh/mesh.json
   category: Product
@@ -983,7 +872,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.mgi.obo
   name: mgi OBO
-  is_kgx: false
   description: mgi OBO
   url: https://w3id.org/biopragmatics/resources/mgi/mgi.obo
   category: Product
@@ -992,7 +880,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.mgi.owl
   name: mgi OWL
-  is_kgx: false
   description: mgi OWL
   url: https://w3id.org/biopragmatics/resources/mgi/mgi.owl
   category: Product
@@ -1001,7 +888,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.mgi.json
   name: mgi OBO Graph JSON
-  is_kgx: false
   description: mgi OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/mgi/mgi.json
   category: Product
@@ -1010,7 +896,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.mgi.sssom.tsv
   name: mgi SSSOM
-  is_kgx: false
   description: mgi SSSOM
   url: https://w3id.org/biopragmatics/resources/mgi/mgi.sssom.tsv
   category: MappingProduct
@@ -1019,7 +904,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.mirbase.obo
   name: mirbase OBO
-  is_kgx: false
   description: mirbase OBO
   url: https://w3id.org/biopragmatics/resources/mirbase/mirbase.obo
   category: Product
@@ -1028,7 +912,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.mirbase.owl
   name: mirbase OWL
-  is_kgx: false
   description: mirbase OWL
   url: https://w3id.org/biopragmatics/resources/mirbase/mirbase.owl
   category: Product
@@ -1037,7 +920,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.mirbase.json
   name: mirbase OBO Graph JSON
-  is_kgx: false
   description: mirbase OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/mirbase/mirbase.json
   category: Product
@@ -1046,7 +928,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.mirbase.sssom.tsv
   name: mirbase SSSOM
-  is_kgx: false
   description: mirbase SSSOM
   url: https://w3id.org/biopragmatics/resources/mirbase/mirbase.sssom.tsv
   category: MappingProduct
@@ -1055,7 +936,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.mirbase.family.obo
   name: mirbase.family OBO
-  is_kgx: false
   description: mirbase.family OBO
   url: https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.obo
   category: Product
@@ -1064,7 +944,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.mirbase.family.owl
   name: mirbase.family OWL
-  is_kgx: false
   description: mirbase.family OWL
   url: https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.owl
   category: Product
@@ -1073,7 +952,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.mirbase.family.json
   name: mirbase.family OBO Graph JSON
-  is_kgx: false
   description: mirbase.family OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.json
   category: Product
@@ -1082,7 +960,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.mirbase.mature.obo
   name: mirbase.mature OBO
-  is_kgx: false
   description: mirbase.mature OBO
   url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.obo
   category: Product
@@ -1091,7 +968,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.mirbase.mature.owl
   name: mirbase.mature OWL
-  is_kgx: false
   description: mirbase.mature OWL
   url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.owl
   category: Product
@@ -1100,7 +976,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.mirbase.mature.json
   name: mirbase.mature OBO Graph JSON
-  is_kgx: false
   description: mirbase.mature OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.json
   category: Product
@@ -1109,7 +984,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.msigdb.obo
   name: msigdb OBO
-  is_kgx: false
   description: msigdb OBO
   url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo
   category: Product
@@ -1118,7 +992,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.msigdb.owl
   name: msigdb OWL
-  is_kgx: false
   description: msigdb OWL
   url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl
   category: Product
@@ -1127,7 +1000,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.msigdb.json
   name: msigdb OBO Graph JSON
-  is_kgx: false
   description: msigdb OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.json
   category: Product
@@ -1136,7 +1008,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.msigdb.sssom.tsv
   name: msigdb SSSOM
-  is_kgx: false
   description: msigdb SSSOM
   url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.sssom.tsv
   category: MappingProduct
@@ -1145,7 +1016,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.ncbi.gc.obo
   name: ncbi.gc OBO
-  is_kgx: false
   description: ncbi.gc OBO
   url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.obo
   category: Product
@@ -1154,7 +1024,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.ncbi.gc.owl
   name: ncbi.gc OWL
-  is_kgx: false
   description: ncbi.gc OWL
   url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.owl
   category: Product
@@ -1163,7 +1032,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.ncbi.gc.json
   name: ncbi.gc OBO Graph JSON
-  is_kgx: false
   description: ncbi.gc OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.json
   category: Product
@@ -1172,7 +1040,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.ncbi.gc.sssom.tsv
   name: ncbi.gc SSSOM
-  is_kgx: false
   description: ncbi.gc SSSOM
   url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.sssom.tsv
   category: MappingProduct
@@ -1181,25 +1048,21 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.nihreporter.project.obo
   name: nihreporter.project OBO
-  is_kgx: false
   description: nihreporter.project OBO
   url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo
   category: Product
 - id: obo-db-ingest.nihreporter.project.owl
   name: nihreporter.project OWL
-  is_kgx: false
   description: nihreporter.project OWL
   url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl
   category: Product
 - id: obo-db-ingest.nihreporter.project.json
   name: nihreporter.project OBO Graph JSON
-  is_kgx: false
   description: nihreporter.project OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json
   category: Product
 - id: obo-db-ingest.nlm.obo
   name: nlm OBO
-  is_kgx: false
   description: nlm OBO
   url: https://w3id.org/biopragmatics/resources/nlm/nlm.obo
   category: Product
@@ -1208,7 +1071,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.nlm.owl
   name: nlm OWL
-  is_kgx: false
   description: nlm OWL
   url: https://w3id.org/biopragmatics/resources/nlm/nlm.owl
   category: Product
@@ -1217,7 +1079,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.nlm.json
   name: nlm OBO Graph JSON
-  is_kgx: false
   description: nlm OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/nlm/nlm.json
   category: Product
@@ -1226,7 +1087,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.nlm.sssom.tsv
   name: nlm SSSOM
-  is_kgx: false
   description: nlm SSSOM
   url: https://w3id.org/biopragmatics/resources/nlm/nlm.sssom.tsv
   category: MappingProduct
@@ -1235,7 +1095,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.nlm.publisher.obo
   name: nlm.publisher OBO
-  is_kgx: false
   description: nlm.publisher OBO
   url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.obo
   category: Product
@@ -1244,7 +1103,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.nlm.publisher.owl
   name: nlm.publisher OWL
-  is_kgx: false
   description: nlm.publisher OWL
   url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.owl
   category: Product
@@ -1253,7 +1111,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.nlm.publisher.json
   name: nlm.publisher OBO Graph JSON
-  is_kgx: false
   description: nlm.publisher OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.json
   category: Product
@@ -1262,7 +1119,6 @@ products:
     id: https://creativecommons.org/public-domain/pdm/
 - id: obo-db-ingest.npass.obo
   name: npass OBO
-  is_kgx: false
   description: npass OBO
   url: https://w3id.org/biopragmatics/resources/npass/npass.obo
   category: Product
@@ -1271,7 +1127,6 @@ products:
     id: https://creativecommons.org/licenses/by-nc/4.0/
 - id: obo-db-ingest.npass.owl
   name: npass OWL
-  is_kgx: false
   description: npass OWL
   url: https://w3id.org/biopragmatics/resources/npass/npass.owl
   category: Product
@@ -1280,7 +1135,6 @@ products:
     id: https://creativecommons.org/licenses/by-nc/4.0/
 - id: obo-db-ingest.npass.json
   name: npass OBO Graph JSON
-  is_kgx: false
   description: npass OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/npass/npass.json
   category: Product
@@ -1289,7 +1143,6 @@ products:
     id: https://creativecommons.org/licenses/by-nc/4.0/
 - id: obo-db-ingest.npass.sssom.tsv
   name: npass SSSOM
-  is_kgx: false
   description: npass SSSOM
   url: https://w3id.org/biopragmatics/resources/npass/npass.sssom.tsv
   category: MappingProduct
@@ -1298,7 +1151,6 @@ products:
     id: https://creativecommons.org/licenses/by-nc/4.0/
 - id: obo-db-ingest.omim.ps.obo
   name: omim.ps OBO
-  is_kgx: false
   description: omim.ps OBO
   url: https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.obo
   category: Product
@@ -1307,7 +1159,6 @@ products:
     id: https://www.omim.org/help/agreement
 - id: obo-db-ingest.omim.ps.owl
   name: omim.ps OWL
-  is_kgx: false
   description: omim.ps OWL
   url: https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.owl
   category: Product
@@ -1316,7 +1167,6 @@ products:
     id: https://www.omim.org/help/agreement
 - id: obo-db-ingest.omim.ps.json
   name: omim.ps OBO Graph JSON
-  is_kgx: false
   description: omim.ps OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.json
   category: Product
@@ -1325,7 +1175,6 @@ products:
     id: https://www.omim.org/help/agreement
 - id: obo-db-ingest.pathbank.obo
   name: pathbank OBO
-  is_kgx: false
   description: pathbank OBO
   url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo
   category: Product
@@ -1334,7 +1183,6 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
 - id: obo-db-ingest.pathbank.owl
   name: pathbank OWL
-  is_kgx: false
   description: pathbank OWL
   url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl
   category: Product
@@ -1343,7 +1191,6 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
 - id: obo-db-ingest.pathbank.json
   name: pathbank OBO Graph JSON
-  is_kgx: false
   description: pathbank OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.json
   category: Product
@@ -1352,7 +1199,6 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
 - id: obo-db-ingest.pathbank.sssom.tsv
   name: pathbank SSSOM
-  is_kgx: false
   description: pathbank SSSOM
   url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.sssom.tsv
   category: MappingProduct
@@ -1361,7 +1207,6 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
 - id: obo-db-ingest.pfam.obo
   name: pfam OBO
-  is_kgx: false
   description: pfam OBO
   url: https://w3id.org/biopragmatics/resources/pfam/pfam.obo
   category: Product
@@ -1370,7 +1215,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.pfam.owl
   name: pfam OWL
-  is_kgx: false
   description: pfam OWL
   url: https://w3id.org/biopragmatics/resources/pfam/pfam.owl
   category: Product
@@ -1379,7 +1223,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.pfam.json
   name: pfam OBO Graph JSON
-  is_kgx: false
   description: pfam OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/pfam/pfam.json
   category: Product
@@ -1388,7 +1231,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.pfam.clan.obo
   name: pfam.clan OBO
-  is_kgx: false
   description: pfam.clan OBO
   url: https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.obo
   category: Product
@@ -1397,7 +1239,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.pfam.clan.owl
   name: pfam.clan OWL
-  is_kgx: false
   description: pfam.clan OWL
   url: https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.owl
   category: Product
@@ -1406,7 +1247,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.pfam.clan.json
   name: pfam.clan OBO Graph JSON
-  is_kgx: false
   description: pfam.clan OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/pfam.clan/pfam.clan.json
   category: Product
@@ -1415,7 +1255,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.pharmgkb.disease.obo
   name: pharmgkb.disease OBO
-  is_kgx: false
   description: pharmgkb.disease OBO
   url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.obo
   category: Product
@@ -1424,7 +1263,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.disease.owl
   name: pharmgkb.disease OWL
-  is_kgx: false
   description: pharmgkb.disease OWL
   url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.owl
   category: Product
@@ -1433,7 +1271,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.disease.json
   name: pharmgkb.disease OBO Graph JSON
-  is_kgx: false
   description: pharmgkb.disease OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.json
   category: Product
@@ -1442,7 +1279,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.disease.sssom.tsv
   name: pharmgkb.disease SSSOM
-  is_kgx: false
   description: pharmgkb.disease SSSOM
   url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.sssom.tsv
   category: MappingProduct
@@ -1451,7 +1287,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.drug.obo
   name: pharmgkb.drug OBO
-  is_kgx: false
   description: pharmgkb.drug OBO
   url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.obo
   category: Product
@@ -1460,7 +1295,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.drug.owl
   name: pharmgkb.drug OWL
-  is_kgx: false
   description: pharmgkb.drug OWL
   url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.owl
   category: Product
@@ -1469,7 +1303,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.drug.json
   name: pharmgkb.drug OBO Graph JSON
-  is_kgx: false
   description: pharmgkb.drug OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.json
   category: Product
@@ -1478,7 +1311,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.drug.sssom.tsv
   name: pharmgkb.drug SSSOM
-  is_kgx: false
   description: pharmgkb.drug SSSOM
   url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.sssom.tsv
   category: MappingProduct
@@ -1487,7 +1319,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.gene.obo
   name: pharmgkb.gene OBO
-  is_kgx: false
   description: pharmgkb.gene OBO
   url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.obo
   category: Product
@@ -1496,7 +1327,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.gene.owl
   name: pharmgkb.gene OWL
-  is_kgx: false
   description: pharmgkb.gene OWL
   url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.owl
   category: Product
@@ -1505,7 +1335,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.gene.json
   name: pharmgkb.gene OBO Graph JSON
-  is_kgx: false
   description: pharmgkb.gene OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.json
   category: Product
@@ -1514,7 +1343,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.gene.sssom.tsv
   name: pharmgkb.gene SSSOM
-  is_kgx: false
   description: pharmgkb.gene SSSOM
   url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.sssom.tsv
   category: MappingProduct
@@ -1523,7 +1351,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.pathways.obo
   name: pharmgkb.pathways OBO
-  is_kgx: false
   description: pharmgkb.pathways OBO
   url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.obo
   category: Product
@@ -1532,7 +1359,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.pathways.owl
   name: pharmgkb.pathways OWL
-  is_kgx: false
   description: pharmgkb.pathways OWL
   url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.owl
   category: Product
@@ -1541,7 +1367,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.pathways.json
   name: pharmgkb.pathways OBO Graph JSON
-  is_kgx: false
   description: pharmgkb.pathways OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.json
   category: Product
@@ -1550,7 +1375,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.variant.obo
   name: pharmgkb.variant OBO
-  is_kgx: false
   description: pharmgkb.variant OBO
   url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.obo
   category: Product
@@ -1559,7 +1383,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.variant.owl
   name: pharmgkb.variant OWL
-  is_kgx: false
   description: pharmgkb.variant OWL
   url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.owl
   category: Product
@@ -1568,7 +1391,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.variant.json
   name: pharmgkb.variant OBO Graph JSON
-  is_kgx: false
   description: pharmgkb.variant OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.json
   category: Product
@@ -1577,7 +1399,6 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pharmgkb.variant.sssom.tsv
   name: pharmgkb.variant SSSOM
-  is_kgx: false
   description: pharmgkb.variant SSSOM
   url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.sssom.tsv
   category: MappingProduct
@@ -1586,25 +1407,21 @@ products:
     id: https://creativecommons.org/licenses/by-sa/4.0/
 - id: obo-db-ingest.pid.pathway.obo
   name: pid.pathway OBO
-  is_kgx: false
   description: pid.pathway OBO
   url: https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.obo
   category: Product
 - id: obo-db-ingest.pid.pathway.owl
   name: pid.pathway OWL
-  is_kgx: false
   description: pid.pathway OWL
   url: https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.owl
   category: Product
 - id: obo-db-ingest.pid.pathway.json
   name: pid.pathway OBO Graph JSON
-  is_kgx: false
   description: pid.pathway OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/pid.pathway/pid.pathway.json
   category: Product
 - id: obo-db-ingest.pombase.obo
   name: pombase OBO
-  is_kgx: false
   description: pombase OBO
   url: https://w3id.org/biopragmatics/resources/pombase/pombase.obo
   category: Product
@@ -1613,7 +1430,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.pombase.owl
   name: pombase OWL
-  is_kgx: false
   description: pombase OWL
   url: https://w3id.org/biopragmatics/resources/pombase/pombase.owl
   category: Product
@@ -1622,7 +1438,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.pombase.json
   name: pombase OBO Graph JSON
-  is_kgx: false
   description: pombase OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/pombase/pombase.json
   category: Product
@@ -1631,7 +1446,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.reactome.obo
   name: reactome OBO
-  is_kgx: false
   description: reactome OBO
   url: https://w3id.org/biopragmatics/resources/reactome/reactome.obo
   category: Product
@@ -1640,7 +1454,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.reactome.owl
   name: reactome OWL
-  is_kgx: false
   description: reactome OWL
   url: https://w3id.org/biopragmatics/resources/reactome/reactome.owl
   category: Product
@@ -1649,7 +1462,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.reactome.json
   name: reactome OBO Graph JSON
-  is_kgx: false
   description: reactome OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/reactome/reactome.json
   category: Product
@@ -1658,7 +1470,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.rgd.obo
   name: rgd OBO
-  is_kgx: false
   description: rgd OBO
   url: https://w3id.org/biopragmatics/resources/rgd/rgd.obo
   category: Product
@@ -1667,7 +1478,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.rgd.owl
   name: rgd OWL
-  is_kgx: false
   description: rgd OWL
   url: https://w3id.org/biopragmatics/resources/rgd/rgd.owl
   category: Product
@@ -1676,7 +1486,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.rgd.json
   name: rgd OBO Graph JSON
-  is_kgx: false
   description: rgd OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/rgd/rgd.json
   category: Product
@@ -1685,7 +1494,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.rgd.sssom.tsv
   name: rgd SSSOM
-  is_kgx: false
   description: rgd SSSOM
   url: https://w3id.org/biopragmatics/resources/rgd/rgd.sssom.tsv
   category: MappingProduct
@@ -1694,7 +1502,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.rhea.obo
   name: rhea OBO
-  is_kgx: false
   description: rhea OBO
   url: https://w3id.org/biopragmatics/resources/rhea/rhea.obo
   category: Product
@@ -1703,7 +1510,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.rhea.owl
   name: rhea OWL
-  is_kgx: false
   description: rhea OWL
   url: https://w3id.org/biopragmatics/resources/rhea/rhea.owl
   category: Product
@@ -1712,7 +1518,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.rhea.json
   name: rhea OBO Graph JSON
-  is_kgx: false
   description: rhea OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/rhea/rhea.json
   category: Product
@@ -1721,7 +1526,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.rhea.sssom.tsv
   name: rhea SSSOM
-  is_kgx: false
   description: rhea SSSOM
   url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv
   category: MappingProduct
@@ -1730,7 +1534,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.ror.obo
   name: ror OBO
-  is_kgx: false
   description: ror OBO
   url: https://w3id.org/biopragmatics/resources/ror/ror.obo
   category: Product
@@ -1739,7 +1542,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.ror.owl
   name: ror OWL
-  is_kgx: false
   description: ror OWL
   url: https://w3id.org/biopragmatics/resources/ror/ror.owl
   category: Product
@@ -1748,7 +1550,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.ror.json
   name: ror OBO Graph JSON
-  is_kgx: false
   description: ror OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/ror/ror.json
   category: Product
@@ -1757,7 +1558,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.ror.sssom.tsv
   name: ror SSSOM
-  is_kgx: false
   description: ror SSSOM
   url: https://w3id.org/biopragmatics/resources/ror/ror.sssom.tsv
   category: MappingProduct
@@ -1766,7 +1566,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.sgd.obo
   name: sgd OBO
-  is_kgx: false
   description: sgd OBO
   url: https://w3id.org/biopragmatics/resources/sgd/sgd.obo
   category: Product
@@ -1775,7 +1574,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.sgd.owl
   name: sgd OWL
-  is_kgx: false
   description: sgd OWL
   url: https://w3id.org/biopragmatics/resources/sgd/sgd.owl
   category: Product
@@ -1784,7 +1582,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.sgd.json
   name: sgd OBO Graph JSON
-  is_kgx: false
   description: sgd OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/sgd/sgd.json
   category: Product
@@ -1793,7 +1590,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.signor.obo
   name: signor OBO
-  is_kgx: false
   description: signor OBO
   url: https://w3id.org/biopragmatics/resources/signor/signor.obo
   category: Product
@@ -1802,7 +1598,6 @@ products:
     id: https://creativecommons.org/licenses/by-nc/4.0/
 - id: obo-db-ingest.signor.owl
   name: signor OWL
-  is_kgx: false
   description: signor OWL
   url: https://w3id.org/biopragmatics/resources/signor/signor.owl
   category: Product
@@ -1811,7 +1606,6 @@ products:
     id: https://creativecommons.org/licenses/by-nc/4.0/
 - id: obo-db-ingest.signor.json
   name: signor OBO Graph JSON
-  is_kgx: false
   description: signor OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/signor/signor.json
   category: Product
@@ -1820,7 +1614,6 @@ products:
     id: https://creativecommons.org/licenses/by-nc/4.0/
 - id: obo-db-ingest.slm.obo
   name: slm OBO
-  is_kgx: false
   description: slm OBO
   url: https://w3id.org/biopragmatics/resources/slm/slm.obo
   category: Product
@@ -1829,7 +1622,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.slm.owl
   name: slm OWL
-  is_kgx: false
   description: slm OWL
   url: https://w3id.org/biopragmatics/resources/slm/slm.owl
   category: Product
@@ -1838,7 +1630,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.slm.json
   name: slm OBO Graph JSON
-  is_kgx: false
   description: slm OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/slm/slm.json
   category: Product
@@ -1847,7 +1638,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.slm.sssom.tsv
   name: slm SSSOM
-  is_kgx: false
   description: slm SSSOM
   url: https://w3id.org/biopragmatics/resources/slm/slm.sssom.tsv
   category: MappingProduct
@@ -1856,25 +1646,21 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.sty.obo
   name: sty OBO
-  is_kgx: false
   description: sty OBO
   url: https://w3id.org/biopragmatics/resources/sty/sty.obo
   category: Product
 - id: obo-db-ingest.sty.owl
   name: sty OWL
-  is_kgx: false
   description: sty OWL
   url: https://w3id.org/biopragmatics/resources/sty/sty.owl
   category: Product
 - id: obo-db-ingest.sty.json
   name: sty OBO Graph JSON
-  is_kgx: false
   description: sty OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/sty/sty.json
   category: Product
 - id: obo-db-ingest.uniprot.obo
   name: uniprot OBO
-  is_kgx: false
   description: uniprot OBO
   url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo
   category: Product
@@ -1883,7 +1669,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.uniprot.owl
   name: uniprot OWL
-  is_kgx: false
   description: uniprot OWL
   url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl
   category: Product
@@ -1892,7 +1677,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.uniprot.json
   name: uniprot OBO Graph JSON
-  is_kgx: false
   description: uniprot OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.json
   category: Product
@@ -1901,7 +1685,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.uniprot.sssom.tsv
   name: uniprot SSSOM
-  is_kgx: false
   description: uniprot SSSOM
   url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom.tsv
   category: MappingProduct
@@ -1910,7 +1693,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.uniprot.ptm.obo
   name: uniprot.ptm OBO
-  is_kgx: false
   description: uniprot.ptm OBO
   url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.obo
   category: Product
@@ -1919,7 +1701,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.uniprot.ptm.owl
   name: uniprot.ptm OWL
-  is_kgx: false
   description: uniprot.ptm OWL
   url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.owl
   category: Product
@@ -1928,7 +1709,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.uniprot.ptm.json
   name: uniprot.ptm OBO Graph JSON
-  is_kgx: false
   description: uniprot.ptm OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.json
   category: Product
@@ -1937,7 +1717,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.uniprot.ptm.sssom.tsv
   name: uniprot.ptm SSSOM
-  is_kgx: false
   description: uniprot.ptm SSSOM
   url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.sssom.tsv
   category: MappingProduct
@@ -1946,7 +1725,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.wikipathways.obo
   name: wikipathways OBO
-  is_kgx: false
   description: wikipathways OBO
   url: https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.obo
   category: Product
@@ -1955,7 +1733,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.wikipathways.owl
   name: wikipathways OWL
-  is_kgx: false
   description: wikipathways OWL
   url: https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.owl
   category: Product
@@ -1964,7 +1741,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.wikipathways.json
   name: wikipathways OBO Graph JSON
-  is_kgx: false
   description: wikipathways OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.json
   category: Product
@@ -1973,7 +1749,6 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
 - id: obo-db-ingest.zfin.obo
   name: zfin OBO
-  is_kgx: false
   description: zfin OBO
   url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
   category: Product
@@ -1982,7 +1757,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.zfin.owl
   name: zfin OWL
-  is_kgx: false
   description: zfin OWL
   url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
   category: Product
@@ -1991,7 +1765,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.zfin.json
   name: zfin OBO Graph JSON
-  is_kgx: false
   description: zfin OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
   category: Product
@@ -2000,7 +1773,6 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
 - id: obo-db-ingest.zfin.sssom.tsv
   name: zfin SSSOM
-  is_kgx: false
   description: zfin SSSOM
   url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
   category: MappingProduct
