@@ -98,6 +98,9 @@ jQuery(document).ready(function() {
                                 <span>Description</span>
                             </th>
                             <th scope="col">
+                                <span>Resource Type</span>
+                            </th>
+                            <th scope="col">
                                 <span>Quick Access</span>
                             </th>
                             <th scope="col">
@@ -209,10 +212,8 @@ jQuery(document).ready(function() {
                     let license_logo = "#";
                     let license_label = "";
                     let description = data[i]['description'];
-                    let repo = "";
+                    let resourcetype = data[i]['category'];
                     let homepage = data[i]["url"];
-                    let tracker = "";
-                    let contact = "";
                     let publication = "";
                     let domainInner = ["Unknown"];
                     if (data[i]['license']) {
@@ -246,6 +247,9 @@ jQuery(document).ready(function() {
                     }
                     if (description !== undefined && description.toString().length > 140) {
                         description = description.toString().slice(0, 140).trim() + '...'
+                    }
+                    if (resourcetype !== undefined) {
+                        resourcetype = resourcetype.replace(/([a-z])([A-Z])/g, '$1 $2')
                     }
                     if (data[i]["contact"]) {
                         contact =`
@@ -291,6 +295,11 @@ jQuery(document).ready(function() {
                     } else {
                         description_box = ``;
                     }
+                    if (resourcetype) {
+                        resourcetype_box = `${resourcetype}`;
+                    } else {
+                        resourcetype_box = ``;
+                    }
                     // const dash_badge_link_url = dashboard_success_data[id].status !== DashboardStatus.FAILED ? `http://dashboard.obofoundry.org/dashboard/${id}/dashboard.html` : `http://dashboard.obofoundry.org/dashboard`;
                     // dash_success_indicator = `
                     //     <span style="display: none">${dash_success}</span>
@@ -319,6 +328,9 @@ jQuery(document).ready(function() {
                             <td>
                                 <span style="background-color: #ff8d82">${is_obsolete}</span>
                                 ${description_box}
+                            </td>
+                            <td>
+                                ${resourcetype_box}
                             </td>
                             <td>
                                 <div class="btn-group btn-group-sm" role="group">
