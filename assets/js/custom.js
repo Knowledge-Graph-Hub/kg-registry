@@ -102,7 +102,7 @@ jQuery(document).ready(function() {
                             </th>
                             <th scope="col">
                                 <span class="sort-button" title="Sort by status" data-sort="license" >
-                                    Quality Control <i class="bi-chevron-up" aria-hidden="true"></i>
+                                    License <i class="bi-chevron-up" aria-hidden="true"></i>
                                 </span>
                             </th>
                         </tr>
@@ -216,7 +216,7 @@ jQuery(document).ready(function() {
                     let publication = "";
                     let domainInner = ["Unknown"];
                     if (data[i]['license']) {
-                        license_url = data[i]["license"]["url"];
+                        license_url = data[i]["license"]["id"];
                         license_logo = data[i]["license"]["logo"];
                         license_label = data[i]["license"]["label"];
                     }
@@ -337,12 +337,13 @@ jQuery(document).ready(function() {
                                 </div>
                             </td>
                             <td>
-                                ${getDashboardBadge(id, dashboard_success_data[id], dash_success)}
                                 ${license_box}
                             </td>
                         </tr>
                     `;
 
+                    // NOTE: formerly displayed QC badge above with
+                    // ${getDashboardBadge(id, dashboard_success_data[id], dash_success)}
 
                     if (domain === true) {
                         tableDomains.push(domainInner[0].trim())
