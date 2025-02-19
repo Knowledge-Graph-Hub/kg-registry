@@ -102,7 +102,7 @@ jQuery(document).ready(function() {
                             </th>
                             <th scope="col">
                                 <span class="sort-button" title="Sort by status" data-sort="license" >
-                                    Quality Control <i class="bi-chevron-up" aria-hidden="true"></i>
+                                    License <i class="bi-chevron-up" aria-hidden="true"></i>
                                 </span>
                             </th>
                         </tr>
