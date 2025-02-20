@@ -9,6 +9,7 @@
 ,[ sh:prefix "CFDE" ; sh:namespace "http://purl.obolibrary.org/obo/CFDE_"]
 ,[ sh:prefix "CHEMBL" ; sh:namespace "http://purl.obolibrary.org/obo/CHEMBL_"]
 ,[ sh:prefix "CHR" ; sh:namespace "http://purl.obolibrary.org/obo/CHR_"]
+,[ sh:prefix "CL-KG" ; sh:namespace "http://purl.obolibrary.org/obo/CL-KG_"]
 ,[ sh:prefix "CLINICAL-DATA-KP" ; sh:namespace "http://purl.obolibrary.org/obo/CLINICAL-DATA-KP_"]
 ,[ sh:prefix "CONNECTIONS-HYPOTHESIS-KP" ; sh:namespace "http://purl.obolibrary.org/obo/CONNECTIONS-HYPOTHESIS-KP_"]
 ,[ sh:prefix "DRKG" ; sh:namespace "http://purl.obolibrary.org/obo/DRKG_"]
