@@ -6,6 +6,7 @@ cam-kp,active,PASS
 cfde,active,PASS
 chembl,active,PASS
 chr,active,PASS
+cl-kg,active,PASS
 clinical-data-kp,active,PASS
 connections-hypothesis-kp,active,PASS
 drkg,active,PASS

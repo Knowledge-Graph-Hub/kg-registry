@@ -28,6 +28,10 @@
             "@id": "http://purl.obolibrary.org/obo/CHR_",
             "@prefix": true
         },
+        "CL-KG": {
+            "@id": "http://purl.obolibrary.org/obo/CL-KG_",
+            "@prefix": true
+        },
         "CLINICAL-DATA-KP": {
             "@id": "http://purl.obolibrary.org/obo/CLINICAL-DATA-KP_",
             "@prefix": true
