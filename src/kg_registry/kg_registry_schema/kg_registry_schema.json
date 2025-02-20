@@ -1585,6 +1585,13 @@
                     "$ref": "#/$defs/CompressionEnum",
                     "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
                 },
+                "connection_url": {
+                    "description": "A URL specific to the product. For example, a URL to a specific Neo4j database. Do not include a prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "contacts": {
                     "description": "The contact points for the product. May be an individual or organization.",
                     "items": {
@@ -1614,6 +1621,20 @@
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "is_neo4j": {
+                    "description": "Whether the API is for a Neo4j database.",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "is_public": {
+                    "description": "Whether the API is publicly accessible, or requires only publicly provided credentials.",
+                    "type": [
+                        "boolean",
                         "null"
                     ]
                 },
