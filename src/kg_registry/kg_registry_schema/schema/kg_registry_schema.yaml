@@ -331,6 +331,23 @@ classes:
     description: >-
       A product that is a programming interface (API) to a resource.
     is_a: Product
+    attributes:
+      is_public:
+        description: >-
+          Whether the API is publicly accessible,
+          or requires only publicly provided credentials.
+        range: boolean
+      is_neo4j:
+        description: >-
+          Whether the API is for a Neo4j database.
+        range: boolean
+      connection_url:
+        description: >-
+          A URL specific to the product.
+          For example, a URL to a specific Neo4j database.
+          Do not include a prefix.
+        range: uriorcurie
+      
 
   ## Other Classes
 

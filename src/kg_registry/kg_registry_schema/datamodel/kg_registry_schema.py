@@ -574,6 +574,9 @@ class ProgrammingInterface(Product):
     """
     linkml_meta: ClassVar[LinkMLMeta] = LinkMLMeta({'from_schema': 'https://w3id.org/knowledge-graph-hub/kg_registry_schema'})
 
+    is_public: Optional[bool] = Field(default=None, description="""Whether the API is publicly accessible, or requires only publicly provided credentials.""", json_schema_extra = { "linkml_meta": {'alias': 'is_public', 'domain_of': ['ProgrammingInterface']} })
+    is_neo4j: Optional[bool] = Field(default=None, description="""Whether the API is for a Neo4j database.""", json_schema_extra = { "linkml_meta": {'alias': 'is_neo4j', 'domain_of': ['ProgrammingInterface']} })
+    connection_url: Optional[str] = Field(default=None, description="""A URL specific to the product. For example, a URL to a specific Neo4j database. Do not include a prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'connection_url', 'domain_of': ['ProgrammingInterface']} })
     name: str = Field(default=..., description="""The human-readable name of the product.""", json_schema_extra = { "linkml_meta": {'alias': 'name', 'domain_of': ['Resource', 'Product']} })
     description: Optional[str] = Field(default=None, description="""A description of the product.""", json_schema_extra = { "linkml_meta": {'alias': 'description', 'domain_of': ['Resource', 'Product', 'Usage']} })
     url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'alias': 'url', 'domain_of': ['Resource', 'Product', 'Organization', 'Usage']} })
