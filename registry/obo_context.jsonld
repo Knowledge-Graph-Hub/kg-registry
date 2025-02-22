@@ -60,6 +60,10 @@
             "@id": "http://purl.obolibrary.org/obo/GENETICS-KP_",
             "@prefix": true
         },
+        "GO-CAM": {
+            "@id": "http://purl.obolibrary.org/obo/GO-CAM_",
+            "@prefix": true
+        },
         "GOLDTERMS": {
             "@id": "http://purl.obolibrary.org/obo/GOLDTERMS_",
             "@prefix": true
