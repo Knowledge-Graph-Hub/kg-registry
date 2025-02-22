@@ -33,7 +33,7 @@ publications:
   - Suzanna E Lewis
   - Christopher J Mungall
   title: >-
-    Gene Ontology Causal Activity Modeling (GO-CAM) moves beyond GO annotations 
+    Gene Ontology Causal Activity Modeling (GO-CAM) moves beyond GO annotations
     to structured descriptions of biological functions and systems
 license:
   label: CC0 1.0
