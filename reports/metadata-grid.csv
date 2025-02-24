@@ -14,6 +14,7 @@ drugbank,active,PASS
 eco-kg,active,PASS
 ecosim,active,PASS
 genetics-kp,active,PASS
+go-cam,active,PASS
 goldterms,active,PASS
 hgnc,active,PASS
 hra-kg,active,PASS
