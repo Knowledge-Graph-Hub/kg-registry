@@ -17,6 +17,7 @@
 ,[ sh:prefix "ECO-KG" ; sh:namespace "http://purl.obolibrary.org/obo/ECO-KG_"]
 ,[ sh:prefix "ECOSIM" ; sh:namespace "http://purl.obolibrary.org/obo/ECOSIM_"]
 ,[ sh:prefix "GENETICS-KP" ; sh:namespace "http://purl.obolibrary.org/obo/GENETICS-KP_"]
+,[ sh:prefix "GO-CAM" ; sh:namespace "http://purl.obolibrary.org/obo/GO-CAM_"]
 ,[ sh:prefix "GOLDTERMS" ; sh:namespace "http://purl.obolibrary.org/obo/GOLDTERMS_"]
 ,[ sh:prefix "HGNC" ; sh:namespace "http://purl.obolibrary.org/obo/HGNC_"]
 ,[ sh:prefix "HRA-KG" ; sh:namespace "http://purl.obolibrary.org/obo/HRA-KG_"]

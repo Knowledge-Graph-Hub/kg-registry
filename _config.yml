@@ -533,6 +533,46 @@ resources:
   name: Genetics KP
   url: ''
 - activity_status: active
+  category: DataModel
+  contacts:
+  - category: Individual
+    email: cjmungall@lbl.gov
+    github: cmungall
+    label: Christopher J. Mungall
+    orcid: 0000-0002-6601-2165
+  description: A structured framework for integrating Gene Ontology annotations into
+    computable models of biological functions.
+  domain: biological systems
+  id: go-cam
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+  name: Gene Ontology Causal Activity Modeling (GO-CAM)
+  publications:
+  - authors:
+    - Paul D Thomas
+    - David P Hill
+    - Huaiyu Mi
+    - David Osumi-Sutherland
+    - Kimberly Van Auken
+    - Seth Carbon
+    - James P Balhoff
+    - Laurent-Philippe Albou
+    - Benjamin Good
+    - Pascale Gaudet
+    - Suzanna E Lewis
+    - Christopher J Mungall
+    doi: 10.1038/s41588-019-0500-1
+    id: doi:10.1038/s41588-019-0500-1
+    preferred: true
+    title: Gene Ontology Causal Activity Modeling (GO-CAM) moves beyond GO annotations
+      to structured descriptions of biological functions and systems
+    year: '2019'
+  repository: https://github.com/geneontology/noctua
+  url: http://geneontology.org/go-cam/docs
+- activity_status: active
   category: Resource
   contacts:
   - category: Individual
