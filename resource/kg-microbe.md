@@ -27,7 +27,7 @@ products:
   description: >-
     The core KG KG-Microbe-Core with ontologies, organismal traits,
     and growth preferences.
-  url: https://kghub.io/kg-microbe/KGMicrobe-core-20250222.tar.gz
+  url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
   compression: targz
   category: GraphProduct
 - id: kg-microbe.biomedical
@@ -35,7 +35,7 @@ products:
   name: KG-Microbe KGX Graph - Biomedical
   description: >-
     Core plus human biomedical data (ontologies, CTD, Wallen et al)
-  url: https://kghub.io/kg-microbe/KGMicrobe-biomedical-20250222.tar.gz
+  url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
   compression: targz
   category: GraphProduct
 - id: kg-microbe.function
