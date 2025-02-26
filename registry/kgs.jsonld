@@ -21,44 +21,54 @@
             "products": [
                 {
                     "category": "GraphProduct",
+                    "derived_from": "automat",
                     "description": "Robokop KG (Automat)",
                     "id": "robokopkg",
                     "is_kgx": true,
                     "name": "robokopkg",
+                    "original_source": "robokop",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files"
                 },
                 {
                     "category": "GraphProduct",
+                    "derived_from": "automat",
                     "description": "Robokop Plus",
                     "id": "robokopplus",
                     "is_kgx": true,
                     "name": "robokopplus",
+                    "original_source": "robokop",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files"
                 },
                 {
                     "category": "GraphProduct",
+                    "derived_from": "automat",
                     "description": "Biolink Automat",
                     "id": "biolink_automat",
                     "is_kgx": true,
                     "name": "biolink_automat",
+                    "original_source": "biolink",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files"
                 },
                 {
                     "category": "GraphProduct",
+                    "derived_from": "automat",
                     "description": "CTD Automat",
                     "id": "ctd_automat",
                     "infores_id": "automat-ctd",
                     "is_kgx": true,
                     "name": "ctd_automat",
+                    "original_source": "ctd",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files"
                 },
                 {
                     "category": "GraphProduct",
+                    "derived_from": "automat",
                     "description": "DrugCentral Automat",
                     "id": "drugcentral_automat",
                     "infores_id": "automat-drug-central",
                     "is_kgx": true,
                     "name": "drugcentral_automat",
+                    "original_source": "drugcentral",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files"
                 },
                 {
@@ -307,6 +317,16 @@
                     "id": "biolink-model.shex",
                     "name": "Biolink Model ShEx release",
                     "url": "https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex"
+                },
+                {
+                    "category": "GraphProduct",
+                    "derived_from": "automat",
+                    "description": "Biolink Automat",
+                    "id": "biolink_automat",
+                    "is_kgx": true,
+                    "name": "biolink_automat",
+                    "original_source": "biolink",
+                    "url": "https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files"
                 }
             ],
             "publications": [
@@ -546,11 +566,28 @@
         },
         {
             "activity_status": "active",
+            "category": "DataSource",
+            "contacts": [
+                {
+                    "category": "Organization",
+                    "label": "Comparative Toxicogenomics Database"
+                }
+            ],
+            "description": "CTD is a robust, publicly available database that aims to advance understanding about how environmental exposures affect human health.",
+            "domain": "chemistry and biochemistry",
+            "id": "ctd",
+            "layout": "resource_detail",
+            "name": "Comparative Toxicogenomics Database",
+            "url": "https://ctdbase.org/"
+        },
+        {
+            "activity_status": "active",
             "category": "KnowledgeGraph",
             "contacts": [
                 {
                     "category": "Individual",
                     "github": "https://github.com/bioannidis",
+                    "label": "Vassilis N. Ioannidis",
                     "orcid": "0000-0002-8367-0733"
                 }
             ],
@@ -558,7 +595,17 @@
             "domain": "health",
             "id": "drkg",
             "layout": "resource_detail",
-            "name": "DRKG",
+            "name": "Drug Repurposing Knowledge Graph",
+            "products": [
+                {
+                    "category": "GraphProduct",
+                    "compression": "targz",
+                    "description": "DRKG graph files, including a TSV of triples, embeddings, ID mappings, and a glossary of relation types.",
+                    "id": "kg-idg.tar.gz",
+                    "name": "DRKG graph",
+                    "url": "https://dgl-data.s3-us-west-2.amazonaws.com/dataset/DRKG/drkg.tar.gz"
+                }
+            ],
             "repository": "https://github.com/gnn4dr/DRKG",
             "url": "https://github.com/gnn4dr/DRKG"
         },
@@ -567,52 +614,51 @@
             "category": "DataSource",
             "contacts": [
                 {
-                    "category": "Individual",
-                    "email": "cthoyt@gmail.com",
-                    "github": "cthoyt",
-                    "label": "Charles Tapley Hoyt",
-                    "orcid": "0000-0003-4423-4370"
+                    "category": "Organization",
+                    "email": "info@drugbank.com",
+                    "label": "DrugBank"
                 }
             ],
-            "description": "DrugBank",
+            "description": "DrugBank Online is a data resource for drugs and drug products.",
             "domain": "health",
             "id": "drugbank",
             "layout": "resource_detail",
-            "name": "drugbank",
-            "products": [
+            "name": "DrugBank",
+            "url": "https://www.drugbank.com/"
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
+            "contacts": [
                 {
-                    "category": "Product",
-                    "description": "OWL release of drugbank",
-                    "id": "drugbank.owl",
-                    "name": "drugbank OWL release",
-                    "tags": [
-                        "biopragmatics"
-                    ],
-                    "url": "https://w3id.org/biopragmatics/resources/drugbank/drugbank.owl"
-                },
-                {
-                    "category": "Product",
-                    "description": "OBO release of drugbank",
-                    "id": "drugbank.obo",
-                    "name": "drugbank OBO release",
-                    "tags": [
-                        "biopragmatics"
-                    ],
-                    "url": "https://w3id.org/biopragmatics/resources/drugbank/drugbank.obo"
-                },
-                {
-                    "category": "MappingProduct",
-                    "description": "SSSOM release of drugbank",
-                    "id": "drugbank.sssom",
-                    "name": "drugbank SSSOM release",
-                    "tags": [
-                        "biopragmatics"
-                    ],
-                    "url": "https://w3id.org/biopragmatics/resources/drugbank/drugbank.sssom"
+                    "category": "Organization",
+                    "label": "DrugCentral"
                 }
             ],
-            "repository": "https://github.com/biopragmatics/obo-db-ingest",
-            "url": "https://biopragmatics.github.io/obo-db-ingest/"
+            "description": "DrugCentral is online drug information resource created and maintained by Division of Translational Informatics at University of New Mexico.",
+            "domain": "health",
+            "id": "drugcentral",
+            "layout": "resource_detail",
+            "name": "DrugCentral",
+            "publications": [
+                {
+                    "authors": [
+                        "Ursu O",
+                        "Holmes J",
+                        "Knockel J",
+                        "Bologa CG",
+                        "Yang JJ",
+                        "Mathias SL",
+                        "Nelson SJ",
+                        "Oprea TI"
+                    ],
+                    "doi": "doi:10.1093/nar/gkw993",
+                    "id": "doi:10.1093/nar/gkw993",
+                    "title": "DrugCentral: online drug compendium",
+                    "year": "2017"
+                }
+            ],
+            "url": "https://drugcentral.org/"
         },
         {
             "activity_status": "active",
@@ -978,13 +1024,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "cjmungall@lbl.gov",
-                    "github": "cmungall",
-                    "label": "Christopher J. Mungall",
-                    "orcid": "0000-0002-6601-2165"
+                    "email": "MJoachimiak@lbl.gov",
+                    "github": "realmarcin",
+                    "label": "Marcin P. Joachimiak"
                 }
             ],
-            "description": "A Knowledge Graph about microbes",
+            "description": "A Knowledge Graph about microbes. The KG is designed to integrate diverse knowledge about microbes from a variety of structured and unstructured sources.",
             "domain": "organisms",
             "id": "kg-microbe",
             "layout": "resource_detail",
@@ -997,11 +1042,57 @@
             "products": [
                 {
                     "category": "GraphProduct",
-                    "description": "KGX Distribution of KGM",
-                    "id": "kg-microbe.tar.gz",
+                    "compression": "targz",
+                    "description": "Raw source files for all KG-Microbe framework transforms (all 4 KGs)",
+                    "id": "kg-microbe.raw",
                     "is_kgx": true,
-                    "name": "KGX Distribution of KGM",
-                    "url": "https://kg-hub.berkeleybop.io/kg-microbe/current/kg-microbe.tar.gz"
+                    "name": "KG-Microbe KGX Graph - Raw",
+                    "url": "https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz"
+                },
+                {
+                    "category": "GraphProduct",
+                    "compression": "targz",
+                    "description": "The core KG KG-Microbe-Core with ontologies, organismal traits, and growth preferences.",
+                    "id": "kg-microbe.core",
+                    "is_kgx": true,
+                    "name": "KG-Microbe KGX Graph - Core",
+                    "url": "https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest"
+                },
+                {
+                    "category": "GraphProduct",
+                    "compression": "targz",
+                    "description": "Core plus human biomedical data (ontologies, CTD, Wallen et al)",
+                    "id": "kg-microbe.biomedical",
+                    "is_kgx": true,
+                    "name": "KG-Microbe KGX Graph - Biomedical",
+                    "url": "https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest"
+                },
+                {
+                    "category": "GraphProduct",
+                    "compression": "targz",
+                    "description": "Core plus Uniprot genome annotations",
+                    "id": "kg-microbe.function",
+                    "is_kgx": true,
+                    "name": "KG-Microbe KGX Graph - Function",
+                    "url": "https://kghub.io/kg-microbe/KGMicrobe-function-20250222.tar.gz"
+                },
+                {
+                    "category": "GraphProduct",
+                    "compression": "targz",
+                    "description": "Biomedical plus Uniprot genome annotations",
+                    "id": "kg-microbe.biomedical-function",
+                    "is_kgx": true,
+                    "name": "KG-Microbe KGX Graph - Biomedical-Function",
+                    "url": "https://kghub.io/kg-microbe/KGMicrobe-biomedical-function-20250222.tar.gz"
+                },
+                {
+                    "category": "GraphProduct",
+                    "compression": "targz",
+                    "description": "UniProt proteins from microbes, as graph nodes and edges",
+                    "id": "kg-microbe.uniprot",
+                    "is_kgx": true,
+                    "name": "KG-Microbe UniProt microbe transform",
+                    "url": "https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz"
                 }
             ],
             "repository": "https://github.com/Knowledge-Graph-Hub/kg-microbe",
@@ -1283,6 +1374,7 @@
             "products": [
                 {
                     "category": "Product",
+                    "derived_from": "obo-db-ingest",
                     "description": "bigg.compartment OBO",
                     "id": "obo-db-ingest.bigg.compartment.obo",
                     "license": {
@@ -1290,10 +1382,12 @@
                         "label": "Custom"
                     },
                     "name": "bigg.compartment OBO",
+                    "original_source": "bigg",
                     "url": "https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.obo"
                 },
                 {
                     "category": "Product",
+                    "derived_from": "obo-db-ingest",
                     "description": "bigg.compartment OWL",
                     "id": "obo-db-ingest.bigg.compartment.owl",
                     "license": {
@@ -1301,10 +1395,12 @@
                         "label": "Custom"
                     },
                     "name": "bigg.compartment OWL",
+                    "original_source": "bigg",
                     "url": "https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.owl"
                 },
                 {
                     "category": "Product",
+                    "derived_from": "obo-db-ingest",
                     "description": "bigg.compartment OBO Graph JSON",
                     "id": "obo-db-ingest.bigg.compartment.json",
                     "license": {
@@ -1312,10 +1408,12 @@
                         "label": "Custom"
                     },
                     "name": "bigg.compartment OBO Graph JSON",
+                    "original_source": "bigg",
                     "url": "https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.json"
                 },
                 {
                     "category": "MappingProduct",
+                    "derived_from": "obo-db-ingest",
                     "description": "bigg.compartment SSSOM",
                     "id": "obo-db-ingest.bigg.compartment.sssom.tsv",
                     "license": {
@@ -1323,10 +1421,12 @@
                         "label": "Custom"
                     },
                     "name": "bigg.compartment SSSOM",
+                    "original_source": "bigg",
                     "url": "https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv"
                 },
                 {
                     "category": "Product",
+                    "derived_from": "obo-db-ingest",
                     "description": "bigg.metabolite OBO",
                     "id": "obo-db-ingest.bigg.metabolite.obo",
                     "license": {
@@ -1334,10 +1434,12 @@
                         "label": "Custom"
                     },
                     "name": "bigg.metabolite OBO",
+                    "original_source": "bigg",
                     "url": "https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.obo"
                 },
                 {
                     "category": "Product",
+                    "derived_from": "obo-db-ingest",
                     "description": "bigg.metabolite OWL",
                     "id": "obo-db-ingest.bigg.metabolite.owl",
                     "license": {
@@ -1345,10 +1447,12 @@
                         "label": "Custom"
                     },
                     "name": "bigg.metabolite OWL",
+                    "original_source": "bigg",
                     "url": "https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.owl"
                 },
                 {
                     "category": "Product",
+                    "derived_from": "obo-db-ingest",
                     "description": "bigg.metabolite OBO Graph JSON",
                     "id": "obo-db-ingest.bigg.metabolite.json",
                     "license": {
@@ -1356,10 +1460,12 @@
                         "label": "Custom"
                     },
                     "name": "bigg.metabolite OBO Graph JSON",
+                    "original_source": "bigg",
                     "url": "https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.json"
                 },
                 {
                     "category": "MappingProduct",
+                    "derived_from": "obo-db-ingest",
                     "description": "bigg.metabolite SSSOM",
                     "id": "obo-db-ingest.bigg.metabolite.sssom.tsv",
                     "license": {
@@ -1367,10 +1473,12 @@
                         "label": "Custom"
                     },
                     "name": "bigg.metabolite SSSOM",
+                    "original_source": "bigg",
                     "url": "https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv"
                 },
                 {
                     "category": "Product",
+                    "derived_from": "obo-db-ingest",
                     "description": "bigg.model OBO",
                     "id": "obo-db-ingest.bigg.model.obo",
                     "license": {
@@ -1378,10 +1486,12 @@
                         "label": "Custom"
                     },
                     "name": "bigg.model OBO",
+                    "original_source": "bigg",
                     "url": "https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.obo"
                 },
                 {
                     "category": "Product",
+                    "derived_from": "obo-db-ingest",
                     "description": "bigg.model OWL",
                     "id": "obo-db-ingest.bigg.model.owl",
                     "license": {
@@ -1389,10 +1499,12 @@
                         "label": "Custom"
                     },
                     "name": "bigg.model OWL",
+                    "original_source": "bigg",
                     "url": "https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.owl"
                 },
                 {
                     "category": "Product",
+                    "derived_from": "obo-db-ingest",
                     "description": "bigg.model OBO Graph JSON",
                     "id": "obo-db-ingest.bigg.model.json",
                     "license": {
@@ -1400,10 +1512,12 @@
                         "label": "Custom"
                     },
                     "name": "bigg.model OBO Graph JSON",
+                    "original_source": "bigg",
                     "url": "https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.json"
                 },
                 {
                     "category": "Product",
+                    "derived_from": "obo-db-ingest",
                     "description": "bigg.reaction OBO",
                     "id": "obo-db-ingest.bigg.reaction.obo",
                     "license": {
@@ -1411,10 +1525,12 @@
                         "label": "Custom"
                     },
                     "name": "bigg.reaction OBO",
+                    "original_source": "bigg",
                     "url": "https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.obo"
                 },
                 {
                     "category": "Product",
+                    "derived_from": "obo-db-ingest",
                     "description": "bigg.reaction OWL",
                     "id": "obo-db-ingest.bigg.reaction.owl",
                     "license": {
@@ -1422,10 +1538,12 @@
                         "label": "Custom"
                     },
                     "name": "bigg.reaction OWL",
+                    "original_source": "bigg",
                     "url": "https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.owl"
                 },
                 {
                     "category": "Product",
+                    "derived_from": "obo-db-ingest",
                     "description": "bigg.reaction OBO Graph JSON",
                     "id": "obo-db-ingest.bigg.reaction.json",
                     "license": {
@@ -1433,10 +1551,12 @@
                         "label": "Custom"
                     },
                     "name": "bigg.reaction OBO Graph JSON",
+                    "original_source": "bigg",
                     "url": "https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.json"
                 },
                 {
                     "category": "MappingProduct",
+                    "derived_from": "obo-db-ingest",
                     "description": "bigg.reaction SSSOM",
                     "id": "obo-db-ingest.bigg.reaction.sssom.tsv",
                     "license": {
@@ -1444,6 +1564,7 @@
                         "label": "Custom"
                     },
                     "name": "bigg.reaction SSSOM",
+                    "original_source": "bigg",
                     "url": "https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.sssom.tsv"
                 },
                 {
@@ -3732,42 +3853,20 @@
         },
         {
             "activity_status": "active",
-            "category": "Resource",
+            "category": "DataResource",
             "contacts": [
                 {
-                    "category": "Individual",
-                    "email": "cthoyt@gmail.com",
-                    "github": "cthoyt",
-                    "label": "Charles Tapley Hoyt",
-                    "orcid": "0000-0003-4423-4370"
+                    "category": "Organization",
+                    "label": "ORCID"
                 }
             ],
-            "description": "ORCID in OWL",
+            "description": "ORCID is a free, unique, persistent identifier (PID) for individuals to use as they engage in research, scholarship, and innovation activities.",
             "domain": "other",
             "id": "orcid",
             "layout": "resource_detail",
-            "license": {
-                "id": "https://creativecommons.org/publicdomain/zero/1.0/",
-                "label": "CC0 1.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
-            },
             "name": "ORCID",
-            "products": [
-                {
-                    "category": "Product",
-                    "description": "OWL release of ORCID in OWL",
-                    "id": "orcidio.owl",
-                    "name": "ORCID in OWL OWL release"
-                },
-                {
-                    "category": "Product",
-                    "description": "OBO release of ORCID in OWL",
-                    "id": "orcidio.obo",
-                    "name": "ORCID in OWL OBO release"
-                }
-            ],
-            "repository": "https://github.com/cthoyt/orcidio",
-            "url": "https://github.com/cthoyt/orcidio"
+            "repository": "https://github.com/ORCID",
+            "url": "https://orcid.org/"
         },
         {
             "activity_status": "active",
@@ -3915,6 +4014,7 @@
             "products": [
                 {
                     "category": "GraphProduct",
+                    "derived_from": "primekg",
                     "description": "The full PrimeKG dataset containing disease relationships.",
                     "id": "primekg.csv",
                     "name": "PrimeKG Full Dataset",
@@ -3999,57 +4099,16 @@
             "category": "DataSource",
             "contacts": [
                 {
-                    "category": "Individual",
-                    "email": "cthoyt@gmail.com",
-                    "github": "cthoyt",
-                    "label": "Charles Tapley Hoyt",
-                    "orcid": "0000-0003-4423-4370"
+                    "category": "Organization",
+                    "label": "Rhea Team"
                 }
             ],
-            "description": "Rhea is an expert-curated knowledgebase of chemical and transport reactions of biological interest",
+            "description": "Rhea is an expert-curated knowledgebase of chemical and transport reactions of biological interest.",
             "domain": "chemistry and biochemistry",
             "id": "rhea",
             "layout": "resource_detail",
-            "license": {
-                "id": "https://creativecommons.org/licenses/by/4.0/",
-                "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
-            },
-            "name": "Rhea, the Annotated Reactions Database",
-            "products": [
-                {
-                    "category": "Product",
-                    "description": "OWL release of Rhea, the Annotated Reactions Database",
-                    "id": "rhea.owl",
-                    "name": "Rhea, the Annotated Reactions Database OWL release",
-                    "tags": [
-                        "biopragmatics"
-                    ],
-                    "url": "https://w3id.org/biopragmatics/resources/rhea/rhea.owl"
-                },
-                {
-                    "category": "Product",
-                    "description": "OBO release of Rhea, the Annotated Reactions Database",
-                    "id": "rhea.obo",
-                    "name": "Rhea, the Annotated Reactions Database OBO release",
-                    "tags": [
-                        "biopragmatics"
-                    ],
-                    "url": "https://w3id.org/biopragmatics/resources/rhea/rhea.obo"
-                },
-                {
-                    "category": "Product",
-                    "description": "SSSOM release of Rhea, the Annotated Reactions Database",
-                    "id": "rhea.sssom",
-                    "name": "Rhea, the Annotated Reactions Database SSSOM release",
-                    "tags": [
-                        "biopragmatics"
-                    ],
-                    "url": "https://w3id.org/biopragmatics/resources/rhea/rhea.sssom"
-                }
-            ],
-            "repository": "https://github.com/biopragmatics/obo-db-ingest",
-            "url": "https://biopragmatics.github.io/obo-db-ingest/"
+            "name": "Rhea",
+            "url": "https://www.rhea-db.org/"
         },
         {
             "activity_status": "active",
@@ -4095,6 +4154,16 @@
                     "id": "robokopkg",
                     "name": "ROBOKOP Knowledge Graph (KG)",
                     "url": "http://robokopkg.renci.org"
+                },
+                {
+                    "category": "GraphProduct",
+                    "derived_from": "automat",
+                    "description": "Robokop Plus",
+                    "id": "robokopplus",
+                    "is_kgx": true,
+                    "name": "robokopplus",
+                    "original_source": "robokop",
+                    "url": "https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files"
                 }
             ],
             "repository": "https://github.com/NCATS-Gamma/robokop",
@@ -4157,57 +4226,17 @@
             "category": "DataSource",
             "contacts": [
                 {
-                    "category": "Individual",
-                    "email": "cthoyt@gmail.com",
-                    "github": "cthoyt",
-                    "label": "Charles Tapley Hoyt",
-                    "orcid": "0000-0003-4423-4370"
+                    "category": "Organization",
+                    "email": "sgd-helpdesk@lists.stanford.edu",
+                    "label": "SGD Helpdesk"
                 }
             ],
-            "description": "The Saccharomyces Genome Database (SGD) project collects information and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae",
+            "description": "The Saccharomyces Genome Database (SGD) project collects information and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae.",
             "domain": "biological systems",
             "id": "sgd",
             "layout": "resource_detail",
-            "license": {
-                "id": "https://creativecommons.org/licenses/by/4.0/",
-                "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
-            },
             "name": "Saccharomyces Genome Database",
-            "products": [
-                {
-                    "category": "Product",
-                    "description": "OWL release of Saccharomyces Genome Database",
-                    "id": "sgd.owl",
-                    "name": "Saccharomyces Genome Database OWL release",
-                    "tags": [
-                        "biopragmatics"
-                    ],
-                    "url": "https://w3id.org/biopragmatics/resources/sgd/sgd.owl"
-                },
-                {
-                    "category": "Product",
-                    "description": "OBO release of Saccharomyces Genome Database",
-                    "id": "sgd.obo",
-                    "name": "Saccharomyces Genome Database OBO release",
-                    "tags": [
-                        "biopragmatics"
-                    ],
-                    "url": "https://w3id.org/biopragmatics/resources/sgd/sgd.obo"
-                },
-                {
-                    "category": "MappingProduct",
-                    "description": "SSSOM release of Saccharomyces Genome Database",
-                    "id": "sgd.sssom",
-                    "name": "Saccharomyces Genome Database SSSOM release",
-                    "tags": [
-                        "biopragmatics"
-                    ],
-                    "url": "https://w3id.org/biopragmatics/resources/sgd/sgd.sssom"
-                }
-            ],
-            "repository": "https://github.com/biopragmatics/obo-db-ingest",
-            "url": "https://biopragmatics.github.io/obo-db-ingest/"
+            "url": "https://www.yeastgenome.org/"
         },
         {
             "activity_status": "active",
