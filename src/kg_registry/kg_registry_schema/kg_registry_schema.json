@@ -482,7 +482,7 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource.",
+                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
                     "type": [
                         "string",
                         "null"
@@ -860,7 +860,7 @@
                     ]
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource.",
+                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
                     "type": [
                         "string",
                         "null"
@@ -997,7 +997,7 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource.",
+                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
                     "type": [
                         "string",
                         "null"
@@ -1407,7 +1407,7 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource.",
+                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
                     "type": [
                         "string",
                         "null"
@@ -1591,7 +1591,7 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource.",
+                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
                     "type": [
                         "string",
                         "null"
@@ -1731,7 +1731,7 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource.",
+                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
                     "type": [
                         "string",
                         "null"
