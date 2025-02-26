@@ -437,6 +437,13 @@
                         "null"
                     ]
                 },
+                "derived_from": {
+                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -770,6 +777,13 @@
                         "null"
                     ]
                 },
+                "derived_from": {
+                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -921,6 +935,13 @@
                     },
                     "type": [
                         "array",
+                        "null"
+                    ]
+                },
+                "derived_from": {
+                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
+                    "type": [
+                        "string",
                         "null"
                     ]
                 },
@@ -1320,6 +1341,13 @@
                         "null"
                     ]
                 },
+                "derived_from": {
+                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -1490,6 +1518,13 @@
                         "null"
                     ]
                 },
+                "derived_from": {
+                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -1599,6 +1634,13 @@
                     },
                     "type": [
                         "array",
+                        "null"
+                    ]
+                },
+                "derived_from": {
+                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
+                    "type": [
+                        "string",
                         "null"
                     ]
                 },
