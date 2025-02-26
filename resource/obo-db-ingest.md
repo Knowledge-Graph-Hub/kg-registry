@@ -23,6 +23,8 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
+  original_source: bigg
+  derived_from: obo-db-ingest
 - id: obo-db-ingest.bigg.compartment.owl
   name: bigg.compartment OWL
   description: bigg.compartment OWL
@@ -31,6 +33,8 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
+  original_source: bigg
+  derived_from: obo-db-ingest
 - id: obo-db-ingest.bigg.compartment.json
   name: bigg.compartment OBO Graph JSON
   description: bigg.compartment OBO Graph JSON
@@ -39,6 +43,8 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
+  original_source: bigg
+  derived_from: obo-db-ingest
 - id: obo-db-ingest.bigg.compartment.sssom.tsv
   name: bigg.compartment SSSOM
   description: bigg.compartment SSSOM
@@ -47,6 +53,8 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
+  original_source: bigg
+  derived_from: obo-db-ingest
 - id: obo-db-ingest.bigg.metabolite.obo
   name: bigg.metabolite OBO
   description: bigg.metabolite OBO
@@ -55,6 +63,8 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
+  original_source: bigg
+  derived_from: obo-db-ingest
 - id: obo-db-ingest.bigg.metabolite.owl
   name: bigg.metabolite OWL
   description: bigg.metabolite OWL
@@ -63,6 +73,8 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
+  original_source: bigg
+  derived_from: obo-db-ingest
 - id: obo-db-ingest.bigg.metabolite.json
   name: bigg.metabolite OBO Graph JSON
   description: bigg.metabolite OBO Graph JSON
@@ -71,6 +83,8 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
+  original_source: bigg
+  derived_from: obo-db-ingest
 - id: obo-db-ingest.bigg.metabolite.sssom.tsv
   name: bigg.metabolite SSSOM
   description: bigg.metabolite SSSOM
@@ -79,6 +93,8 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
+  original_source: bigg
+  derived_from: obo-db-ingest
 - id: obo-db-ingest.bigg.model.obo
   name: bigg.model OBO
   description: bigg.model OBO
@@ -87,6 +103,8 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
+  original_source: bigg
+  derived_from: obo-db-ingest
 - id: obo-db-ingest.bigg.model.owl
   name: bigg.model OWL
   description: bigg.model OWL
@@ -95,6 +113,8 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
+  original_source: bigg
+  derived_from: obo-db-ingest
 - id: obo-db-ingest.bigg.model.json
   name: bigg.model OBO Graph JSON
   description: bigg.model OBO Graph JSON
@@ -103,6 +123,8 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
+  original_source: bigg
+  derived_from: obo-db-ingest
 - id: obo-db-ingest.bigg.reaction.obo
   name: bigg.reaction OBO
   description: bigg.reaction OBO
@@ -111,6 +133,8 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
+  original_source: bigg
+  derived_from: obo-db-ingest
 - id: obo-db-ingest.bigg.reaction.owl
   name: bigg.reaction OWL
   description: bigg.reaction OWL
@@ -119,6 +143,8 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
+  original_source: bigg
+  derived_from: obo-db-ingest
 - id: obo-db-ingest.bigg.reaction.json
   name: bigg.reaction OBO Graph JSON
   description: bigg.reaction OBO Graph JSON
@@ -127,6 +153,8 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
+  original_source: bigg
+  derived_from: obo-db-ingest
 - id: obo-db-ingest.bigg.reaction.sssom.tsv
   name: bigg.reaction SSSOM
   description: bigg.reaction SSSOM
@@ -135,6 +163,8 @@ products:
   license:
     label: Custom
     id: http://bigg.ucsd.edu/license#license
+  original_source: bigg
+  derived_from: obo-db-ingest
 - id: obo-db-ingest.ccle.obo
   name: ccle OBO
   description: ccle OBO
