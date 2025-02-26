@@ -2,43 +2,16 @@
 layout: resource_detail
 activity_status: active
 id: rhea
-name: Rhea, the Annotated Reactions Database
-description: Rhea is an expert-curated knowledgebase of chemical and transport reactions
-  of biological interest
+name: Rhea
+description: >-
+  Rhea is an expert-curated knowledgebase of
+  chemical and transport reactions
+  of biological interest.
 domain: chemistry and biochemistry
 contacts:
-- category: Individual
-  orcid: 0000-0003-4423-4370
-  github: cthoyt
-  email: cthoyt@gmail.com
-  label: Charles Tapley Hoyt
-url: https://biopragmatics.github.io/obo-db-ingest/
-repository: https://github.com/biopragmatics/obo-db-ingest
-products:
-- id: rhea.owl
-  name: Rhea, the Annotated Reactions Database OWL release
-  description: OWL release of Rhea, the Annotated Reactions Database
-  tags:
-    - biopragmatics
-  url: https://w3id.org/biopragmatics/resources/rhea/rhea.owl
-  category: Product
-- id: rhea.obo
-  name: Rhea, the Annotated Reactions Database OBO release
-  description: OBO release of Rhea, the Annotated Reactions Database
-  tags:
-    - biopragmatics
-  url: https://w3id.org/biopragmatics/resources/rhea/rhea.obo
-  category: Product
-- id: rhea.sssom
-  name: Rhea, the Annotated Reactions Database SSSOM release
-  description: SSSOM release of Rhea, the Annotated Reactions Database
-  tags:
-    - biopragmatics
-  url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom
-  category: Product
-license:
-  label: CC BY 4.0
-  id: https://creativecommons.org/licenses/by/4.0/
+- category: Organization
+  label: Rhea Team
+url: https://www.rhea-db.org/
 category: DataSource
 ---
 
