@@ -55,6 +55,62 @@ page.is_obsolete %}
   <div class="col-md-8" style="padding-left: 0">
     {% assign stripped_content_size = content | strip | size %}
 
+    <div class="row">
+      <div class="card bg-light mb-3" style="max-width: 10rem;">
+          <div class="card-body">
+            <h5 class="card-title">Domain</h5>
+            <p class="card-text">{{page.domain}}</p>
+          </div>
+      </div>
+      <div class="card bg-light mb-3" style="max-width: 10rem;">
+          <div class="card-body">
+            <h5 class="card-title">License</h5>
+            {% if page.license %}
+              <p class="card-text"><a href="{{page.license.id}}">{{page.license.label}}</a></p>
+            {% else %}
+              <p class="card-text" style="color: red; font-weight: bold;">Warning: No license entered</p>
+            {% endif %}
+            </div>
+      </div>
+      <div class="card bg-light mb-3" style="max-width: 10rem;">
+        <div class="card-body">
+          <h5 class="card-title">Infores ID</h5>
+          {% if page.infored_id %}
+            <p class="card-text">infores:{{page.infores_id}}</a></p>
+          {% else %}
+            <p class="card-text" style="font-weight: bold;">Unknown</p>
+          {% endif %}
+          </div>
+    </div>
+    </div>
+
+    {% if page.contacts %}
+    <div class="card" style="margin-bottom: 1.5em;" id="contacts">
+      <div class="card-header">
+        <h4>Contacts</h4>
+      </div>
+      <div class="list-group list-group-flush">
+        {% for c in page.contacts %}
+        <div class="list-group-item">
+          {% if c.email %}
+            <a href="mailto:{{c.email}}">{{c.label}}</a>
+          {% else %}
+          {% if c.label %}
+            {{c.label}}
+          {% endif %}
+          {% endif %}
+          {% if c.orcid %}
+            ORCID:<a href="https://orcid.org/{{ c.orcid }}">{{ c.orcid }}</a>
+          {% endif %}
+          {% if c.github %}
+            Github:<a href="https://github.com/{{ c.github }}">{{ c.github }}</a>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
     {% if page.publications and page.publications.size > 0 %}
     <div class="card" style="margin-bottom: 1.5em;" id="publications">
       <div class="card-header">
@@ -210,74 +266,12 @@ page.is_obsolete %}
 
   <div class="col-md-4" style="width: auto;">
     <dl class="dl-horizontal" style="margin-left: 4em">
-      <dt>
-        ID Space
-        <span data-toggle="tooltip" title="ID prefix" data-html="true"> </span>
-      </dt>
-      <dd>
-        {{page.id}}
-      </dd>
-
-      <dt>Domain</dt>
-      <dd>
-        {{page.domain}}
-      </dd>
-
-      <dt>License</dt>
-      <dd>
-        {% if page.license %}
-        <a href="{{page.license.id}}">{{page.license.label}}</a>
-        {% if page.license.alert %}
-        <div class="alert alert-danger" role="alert">
-          <span
-            class="glyphicon glyphicon-exclamation-sign"
-            aria-hidden="true"
-          ></span>
-          <span class="sr-only">Warning:</span>
-          {{page.license.alert}}
-        </div>
-        {% endif %} {% else %}
-        <div class="alert alert-danger" role="alert">
-          <span
-            class="glyphicon glyphicon-exclamation-sign"
-            aria-hidden="true"
-          ></span>
-          <span class="sr-only">Warning:</span>
-          No license entered
-        </div>
-        {% endif %}
-      </dd>
 
       <!-- TODO: fix this, there is a name collision
       <dt>Homepage</dt>
       <dd>
         <a href="{{page.url}}">{{page.url}}</a>
       </dd> -->
-
-      <dt>Contacts</dt>
-      {% for c in page.contacts %}
-        {% if c.email %}
-        <dd>
-          <a href="mailto:{{c.email}}">{{c.label}}</a>
-        </dd>
-        {% else %}
-        {% if c.label %}
-        <dd>
-          {{c.label}}
-        </dd>
-        {% endif %}
-        {% endif %}
-        {% if c.orcid %}
-        <dd>
-          <a href="https://orcid.org/{{ c.orcid }}">{{ c.orcid }}</a>
-        </dd>
-        {% endif %}
-        {% if c.github %}
-        <dd>
-          <a href="https://github.com/{{ c.github }}">@{{ c.github }}</a>
-        </dd>
-        {% endif %}
-      {% endfor %}
 
       {% if page.repository and page.repository != page.homepage %}
       <dt>Repository</dt>
