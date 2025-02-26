@@ -235,6 +235,12 @@ classes:
         description: >-
           A description of the product.
         range: string
+      original_source:
+        description: >-
+          The original source of the product.
+          This only needs to be the identifier of the resource.
+          This may be the parent resource or another resource.
+        range: Resource
       derived_from:
         description: >-
           The resource that the product is derived from.
