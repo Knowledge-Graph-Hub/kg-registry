@@ -240,6 +240,8 @@ classes:
           The original source of the product.
           This only needs to be the identifier of the resource.
           This may be the parent resource or another resource.
+          Note this is not the same as components of a graph;
+          this should only be used when a single source is known.
         range: Resource
       derived_from:
         description: >-
