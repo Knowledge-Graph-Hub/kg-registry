@@ -15,7 +15,8 @@ from yamllint import config, linter
 __author__ = "cjm"
 HERE = pathlib.Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
-SOURCE_SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "schema", "kg_registry_schema.yaml")
+SOURCE_SCHEMA_PATH = ROOT.joinpath(
+    "src", "kg_registry", "kg_registry_schema", "schema", "kg_registry_schema.yaml")
 SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "kg_registry_schema.json")
 
 
@@ -99,7 +100,7 @@ def validate_markdown(args):
         # Check to see if we can parse the yaml frontmatter first
         if not frontmatter.check(fn):
             errs.append("%s does not contain frontmatter" % (fn))
-        
+
         # Run LinkML validator
         (obj, md) = load_md(fn)
         report = validate(instance=obj, schema=SOURCE_SCHEMA_PATH, target_class="Resource")
@@ -136,6 +137,10 @@ def concat_resource_yaml(args):
     read YAML files into an array and write an output YAML file.
     Output will be concatenated list of all resource metadata.
     Assumes that args.files is already sorted alphabetically.
+
+    This function also: 
+    * Propagates derived products to the source Resource pages
+    * Adds a logo to the license metadata if it exists.
     """
 
     def decorate_metadata(objs):
@@ -148,7 +153,7 @@ def concat_resource_yaml(args):
                 # https://creativecommons.org/about/downloads
                 license = obj["license"]
                 try:
-                    lurl = license["id"] # This should be a URL
+                    lurl = license["id"]  # This should be a URL
                 except KeyError:
                     print(f"ERROR: Could not find id for license in {obj['id']}")
                     sys.exit(1)
@@ -166,6 +171,35 @@ def concat_resource_yaml(args):
                 if logo:
                     license["logo"] = logo
 
+    def propagate_products(objs):
+        """
+        Propagates derived products to their source Resource pages.
+        For example, if the page for Aggregator A lists a product from Source S,
+        then the page for Source S should list Aggregator A's version of it as a derived product.
+        """
+
+        to_be_propagated = {}
+
+        # Search for applicable derived products first
+        for obj in objs:
+            if "products" in obj:
+                for product in obj["products"]:
+                    for field_name in ["original_source", "derived_from"]:
+                        if field_name in product and product[field_name] != obj["id"]:
+                            if field_name not in to_be_propagated:
+                                to_be_propagated[product[field_name]] = []
+                            to_be_propagated[product[field_name]].append(product)
+        print(
+            f"Found {len(to_be_propagated)} resources with products to propagate: {', '.join(to_be_propagated.keys())}")
+
+        # Now update the source Resource pages
+        for obj in objs:
+            if obj["id"] in to_be_propagated:
+                if "products" in obj:
+                    for product in to_be_propagated[obj["id"]]:
+                        if product not in obj["products"]:
+                            obj["products"].append(product)
+
     objs = []
     foundry = []
     library = []
@@ -179,7 +213,13 @@ def concat_resource_yaml(args):
         library.append(obj)
     objs = foundry + library + obsolete
     cfg["resources"] = objs
+
+    # Propagate derived products to the source Resource pages
+    propagate_products(objs)
+
+    # Add logos to licenses
     decorate_metadata(objs)
+
     with open(args.output, "w") as f:
         f.write(yaml.dump(cfg))
     return cfg
