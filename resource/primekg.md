@@ -3,7 +3,10 @@ layout: resource_detail
 activity_status: active
 id: primekg
 name: PrimeKG
-description: PrimeKG (Precision Medicine Knowledge Graph) integrates 20 high-quality biomedical resources to describe 17,080 diseases with over 4 million relationships across ten major biological scales.
+description: >-
+  PrimeKG (Precision Medicine Knowledge Graph) integrates 20
+  high-quality biomedical resources to describe 17,080 diseases
+  with over 4 million relationships across ten major biological scales.
 domain: health
 contacts:
 - category: Individual
@@ -18,6 +21,7 @@ products:
   description: The full PrimeKG dataset containing disease relationships.
   url: https://dataverse.harvard.edu/api/access/datafile/6180620
   category: GraphProduct
+  derived_from: primekg
 license:
   label: MIT License
   id: https://opensource.org/licenses/MIT
