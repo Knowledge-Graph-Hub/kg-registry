@@ -9,8 +9,10 @@ chr,active,PASS
 cl-kg,active,PASS
 clinical-data-kp,active,PASS
 connections-hypothesis-kp,active,PASS
+ctd,active,PASS
 drkg,active,PASS
 drugbank,active,PASS
+drugcentral,active,PASS
 eco-kg,active,PASS
 ecosim,active,PASS
 genetics-kp,active,PASS

@@ -40,12 +40,20 @@
             "@id": "http://purl.obolibrary.org/obo/CONNECTIONS-HYPOTHESIS-KP_",
             "@prefix": true
         },
+        "CTD": {
+            "@id": "http://purl.obolibrary.org/obo/CTD_",
+            "@prefix": true
+        },
         "DRKG": {
             "@id": "http://purl.obolibrary.org/obo/DRKG_",
             "@prefix": true
         },
         "DRUGBANK": {
             "@id": "http://purl.obolibrary.org/obo/DRUGBANK_",
+            "@prefix": true
+        },
+        "DRUGCENTRAL": {
+            "@id": "http://purl.obolibrary.org/obo/DRUGCENTRAL_",
             "@prefix": true
         },
         "ECO-KG": {
