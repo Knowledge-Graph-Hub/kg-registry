@@ -481,6 +481,13 @@
                     "description": "The human-readable name of the product.",
                     "type": "string"
                 },
+                "original_source": {
+                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "repository": {
                     "description": "A main version control repository for the product.",
                     "type": [
@@ -852,6 +859,13 @@
                         "null"
                     ]
                 },
+                "original_source": {
+                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "predicates": {
                     "description": "The predicate types in the graph.",
                     "items": {
@@ -981,6 +995,13 @@
                 "name": {
                     "description": "The human-readable name of the product.",
                     "type": "string"
+                },
+                "original_source": {
+                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "repository": {
                     "description": "A main version control repository for the product.",
@@ -1385,6 +1406,13 @@
                     "description": "The human-readable name of the product.",
                     "type": "string"
                 },
+                "original_source": {
+                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "repository": {
                     "description": "A main version control repository for the product.",
                     "type": [
@@ -1562,6 +1590,13 @@
                     "description": "The human-readable name of the product.",
                     "type": "string"
                 },
+                "original_source": {
+                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "repository": {
                     "description": "A main version control repository for the product.",
                     "type": [
@@ -1694,6 +1729,13 @@
                 "name": {
                     "description": "The human-readable name of the product.",
                     "type": "string"
+                },
+                "original_source": {
+                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "repository": {
                     "description": "A main version control repository for the product.",
