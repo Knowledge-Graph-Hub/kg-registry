@@ -21,18 +21,24 @@ products:
   description: Robokop KG (Automat)
   url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files
   category: GraphProduct
+  original_source: robokop
+  derived_from: automat
 - id: robokopplus
   name: robokopplus
   is_kgx: true
   description: Robokop Plus
   url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files
   category: GraphProduct
+  original_source: robokop
+  derived_from: automat
 - id: biolink_automat
   name: biolink_automat
   is_kgx: true
   description: Biolink Automat
   url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
   category: GraphProduct
+  original_source: biolink
+  derived_from: automat
 - id: ctd_automat
   name: ctd_automat
   is_kgx: true
@@ -40,6 +46,8 @@ products:
   url: https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files
   category: GraphProduct
   infores_id: automat-ctd
+  original_source: ctd
+  derived_from: automat
 - id: drugcentral_automat
   name: drugcentral_automat
   is_kgx: true
@@ -47,6 +55,8 @@ products:
   url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
   category: GraphProduct
   infores_id: automat-drug-central
+  original_source: drugcentral
+  derived_from: automat
 - id: gtex_automat
   name: gtex_automat
   is_kgx: true

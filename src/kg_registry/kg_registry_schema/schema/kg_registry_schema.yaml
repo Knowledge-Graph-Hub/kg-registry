@@ -235,6 +235,21 @@ classes:
         description: >-
           A description of the product.
         range: string
+      original_source:
+        description: >-
+          The original source of the product.
+          This only needs to be the identifier of the resource.
+          This may be the parent resource or another resource.
+          Note this is not the same as components of a graph;
+          this should only be used when a single source is known.
+        range: Resource
+      derived_from:
+        description: >-
+          The resource that the product is derived from.
+          This only needs to be the identifier of the resource.
+          It may be the parent resource or another resource,
+          e.g., an Aggregator.
+        range: Resource
       url:
         description: >-
           The URL of the product. This may be a link
