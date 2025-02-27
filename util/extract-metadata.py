@@ -6,6 +6,7 @@ import pathlib
 
 import frontmatter
 import yaml
+from copy import deepcopy
 from frontmatter.util import u
 from linkml.validator import validate
 from ruamel.yaml import YAML
@@ -192,13 +193,18 @@ def concat_resource_yaml(args):
         print(
             f"Found {len(to_be_propagated)} resources with products to propagate: {', '.join(to_be_propagated.keys())}")
 
+        print(to_be_propagated)
+
         # Now update the source Resource pages
         for obj in objs:
             if obj["id"] in to_be_propagated:
-                if "products" in obj:
-                    for product in to_be_propagated[obj["id"]]:
-                        if product not in obj["products"]:
-                            obj["products"].append(product)
+                print(f"Writing {len(to_be_propagated[obj["id"]])} product(s) to {obj['id']} entry")
+                if "products" not in obj:
+                    obj["products"] = []
+                for product in to_be_propagated[obj["id"]]:
+                    product_copy = deepcopy(product)
+                    if product_copy not in obj["products"]:
+                        obj["products"].append(product_copy)
 
     objs = []
     foundry = []
