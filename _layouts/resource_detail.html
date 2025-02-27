@@ -5,7 +5,7 @@ layout: default
 <div class="row">
   <h1>
     {% if page.depicted_by %}
-    <img alt="logo" src="{{page.depicted_by}}" style="max-height: 1em" />
+    <img alt="logo" src="{{page.depicted_by}}" style="max-height: 1em;" />
     {% endif %} {{ page.id }}
   </h1>
   {% if page.category %}
@@ -118,7 +118,7 @@ page.is_obsolete %}
     </div>
 
     {% if page.contacts %}
-    <div class="card" style="margin-bottom: 1.5em;" id="contacts">
+    <div class="card" style="margin-bottom: 1.5em" id="contacts">
       <div class="card-header">
         <h4>Contacts</h4>
       </div>
@@ -145,7 +145,7 @@ page.is_obsolete %}
     {% endif %}
 
     {% if page.publications and page.publications.size > 0 %}
-    <div class="card" style="margin-bottom: 1.5em;" id="publications">
+    <div class="card" style="margin-bottom: 1.5em" id="publications">
       <div class="card-header">
         <h4>Publications</h4>
       </div>
@@ -167,7 +167,7 @@ page.is_obsolete %}
     {% endif %}
 
     {% if page.funded_by %}
-    <div class="card" style="margin-bottom: 1.5em;">
+    <div class="card" style="margin-bottom: 1.5em">
       <div class="card-header">
         <h4>Funding</h4>
       </div>
@@ -182,11 +182,11 @@ page.is_obsolete %}
     {% endif %}
 
     {% if page.products and page.products.size > 0 %}
-    <div class="card" style="margin-bottom: 1.5em; width: auto;">
+    <div class="card" style="margin-bottom: 1.5em">
       <div class="card-header">
         <h4>Products</h4>
       </div>
-      <table class="table table-striped mb-0" style="width: auto;">
+      <table class="table table-striped mb-0">
         <thead>
           <tr>
             <th>ID</th>
@@ -295,17 +295,5 @@ page.is_obsolete %}
       </div>
     </div>
     {% endif %}
-  </div>
-
-  <div class="col-md-4" style="width: auto;">
-    <dl class="dl-horizontal" style="margin-left: 4em">
-
-      <!-- TODO: fix this, there is a name collision
-      <dt>Homepage</dt>
-      <dd>
-        <a href="{{page.url}}">{{page.url}}</a>
-      </dd> -->
-    </dl>
-
   </div>
 </div>
