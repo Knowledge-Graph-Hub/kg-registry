@@ -6,6 +6,7 @@ import pathlib
 
 import frontmatter
 import yaml
+from copy import deepcopy
 from frontmatter.util import u
 from linkml.validator import validate
 from ruamel.yaml import YAML
@@ -186,19 +187,37 @@ def concat_resource_yaml(args):
                 for product in obj["products"]:
                     for field_name in ["original_source", "derived_from"]:
                         if field_name in product and product[field_name] != obj["id"]:
-                            if field_name not in to_be_propagated:
+                            if product[field_name] not in to_be_propagated:
                                 to_be_propagated[product[field_name]] = []
-                            to_be_propagated[product[field_name]].append(product)
+                            to_be_propagated[product[field_name]].append(deepcopy(product))
         print(
             f"Found {len(to_be_propagated)} resources with products to propagate: {', '.join(to_be_propagated.keys())}")
 
-        # Now update the source Resource pages
+        # Now update the concatenated list of resources
+        # And write newly added products to their respective Resource pages
         for obj in objs:
             if obj["id"] in to_be_propagated:
-                if "products" in obj:
-                    for product in to_be_propagated[obj["id"]]:
-                        if product not in obj["products"]:
-                            obj["products"].append(product)
+                print(f"Writing {len(to_be_propagated[obj["id"]])} product(s) to {obj['id']} entry")
+
+                if "products" not in obj:
+                    obj["products"] = []
+
+                # Do the writing here
+                for product in to_be_propagated[obj["id"]]:
+
+                    # Write to the concatenated list of resources
+                    if product not in obj["products"]:
+                        obj["products"].append(product)
+
+                    # Write to the respective Resource page
+                    fn = f"resource/{obj['id']}.md"
+                    (metadata, md) = load_md(fn)
+                    if "products" not in metadata:
+                        metadata["products"] = []
+                    if product not in metadata["products"]:
+                        metadata["products"].append(product)
+                    with open(fn, "w") as f:
+                        f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
 
     objs = []
     foundry = []
