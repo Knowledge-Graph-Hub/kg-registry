@@ -12,7 +12,7 @@ contacts:
   email: kebedey@renci.org
   github: YaphetKG
   orcid: 0000-0002-5046-0246
-url: https://robokop.renci.org/api-docs/docs/category/automat
+homepage_url: https://robokop.renci.org/api-docs/docs/category/automat
 repository: ""
 products:
 - id: robokopkg

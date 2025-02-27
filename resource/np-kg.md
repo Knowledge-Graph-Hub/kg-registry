@@ -10,7 +10,7 @@ contacts:
 - category: Individual
   github: sanyabt
   label: Sanya Bathla Taneja
-url: https://doi.org/10.5281/zenodo.6814507
+homepage_url: https://doi.org/10.5281/zenodo.6814507
 repository: https://github.com/sanyabt/np-kg
 products:
 - id: NP-KG_v3.0.0.tsv

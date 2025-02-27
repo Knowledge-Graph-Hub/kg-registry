@@ -12,7 +12,7 @@ contacts:
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
-url: https://w3id.org/kgcl
+homepage_url: https://w3id.org/kgcl
 repository: https://github.com/INCATools/kgcl/
 products:
 - id: kgcl.owl

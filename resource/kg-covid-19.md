@@ -9,7 +9,7 @@ contacts:
 - category: Individual
   github: justaddcoffee
   label: Justin Reese
-url: https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki
+homepage_url: https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki
 repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 category: KnowledgeGraph
 products:

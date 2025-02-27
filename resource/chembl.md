@@ -10,7 +10,7 @@ contacts:
 - category: Organization
   label: ChEMBL
   email: chembl-help@ebi.ac.uk
-url: https://www.ebi.ac.uk/chembl/
+homepage_url: https://www.ebi.ac.uk/chembl/
 repository: https://github.com/chembl
 category: DataSource
 license:

@@ -12,7 +12,7 @@ contacts:
   github: sierra-moxon
   email: smoxon@lbl.gov
   label: Sierra Taylor Moxon
-url: https://biolink.github.io/biolink-model/
+homepage_url: https://biolink.github.io/biolink-model/
 repository: https://github.com/biolink/biolink-model/
 products:
 - id: biolink-model.owl.ttl

@@ -13,7 +13,7 @@ contacts:
 - category: Organization
   email: sgd-helpdesk@lists.stanford.edu
   label: SGD Helpdesk
-url: https://www.yeastgenome.org/
+homepage_url: https://www.yeastgenome.org/
 category: DataSource
 ---
 

@@ -12,7 +12,7 @@ contacts:
   email: kfecho@renci.org
   github: karafecho
   orcid: 0000-0002-6704-9306
-url: ""
+homepage_url: ""
 repository: ""
 products:
 - id: icees_kgx_files

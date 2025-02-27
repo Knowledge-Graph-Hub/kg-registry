@@ -11,7 +11,7 @@ domain: chemistry and biochemistry
 contacts:
 - category: Organization
   label: Comparative Toxicogenomics Database
-url: https://ctdbase.org/
+homepage_url: https://ctdbase.org/
 category: DataSource
 
 ---

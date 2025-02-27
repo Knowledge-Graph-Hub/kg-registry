@@ -11,7 +11,7 @@ contacts:
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
-url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
+homepage_url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
 repository: https://github.com/geneontology/neo/
 products:
 - id: neo.owl

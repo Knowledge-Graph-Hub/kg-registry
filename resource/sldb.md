@@ -9,7 +9,7 @@ contacts:
 - category: Individual
   github: pnrobinson
   label: Peter Robinson
-url: https://kghub.io/sldb/
+homepage_url: https://kghub.io/sldb/
 repository: https://github.com/monarch-initiative/SLDBGen
 category: KnowledgeGraph
 ---
