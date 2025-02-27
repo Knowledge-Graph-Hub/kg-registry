@@ -11,7 +11,7 @@ domain: other
 contacts:
 - category: Organization
   label: ORCID
-url: https://orcid.org/
+homepage_url: https://orcid.org/
 repository: https://github.com/ORCID
 category: DataResource
 ---

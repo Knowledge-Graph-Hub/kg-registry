@@ -12,7 +12,7 @@ contacts:
   github: balhoff
   email: balhoff@renci.org
   label: James P. Balhoff
-url: https://ubergraph.apps.renci.org/sparql
+homepage_url: https://ubergraph.apps.renci.org/sparql
 repository: https://github.com/INCATools/ubergraph
 products:
 - id: ubergraph.rdf

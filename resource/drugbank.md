@@ -10,7 +10,7 @@ contacts:
 - category: Organization
   email: info@drugbank.com
   label: DrugBank
-url: https://www.drugbank.com/
+homepage_url: https://www.drugbank.com/
 category: DataSource
 ---
 

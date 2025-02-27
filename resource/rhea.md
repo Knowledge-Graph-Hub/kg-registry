@@ -11,7 +11,7 @@ domain: chemistry and biochemistry
 contacts:
 - category: Organization
   label: Rhea Team
-url: https://www.rhea-db.org/
+homepage_url: https://www.rhea-db.org/
 category: DataSource
 ---
 

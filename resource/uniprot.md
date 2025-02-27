@@ -9,7 +9,7 @@ contacts:
 - category: Organization
   email: help@uniprot.org
   label: UniProt Consortium
-url: https://www.uniprot.org/
+homepage_url: https://www.uniprot.org/
 repository: https://www.uniprot.org/
 category: DataSource
 license:

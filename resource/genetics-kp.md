@@ -9,7 +9,7 @@ category: KnowledgeGraph
 contacts:
 - category: Individual
   label: "Jason Flannick"
-url: ""
+homepage_url: ""
 ---
 
 A Translator Knowledge Provider focusing on genetic data.

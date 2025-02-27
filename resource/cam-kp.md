@@ -10,7 +10,7 @@ contacts:
 - category: Individual
   label: "Jim Balhoff"
   email: balhoff@renci.org
-url: https://github.com/ExposuresProvider/cam-kp-api
+homepage_url: https://github.com/ExposuresProvider/cam-kp-api
 ---
 
 The “cam-kp” Exposures Knowledge Graph

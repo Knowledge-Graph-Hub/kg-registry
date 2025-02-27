@@ -9,7 +9,7 @@ contacts:
   label: J. Harry Caufield
 description: An ontology for accessing and comparing knowledge concerning phenotypes across species and genetic backgrounds.
 domain: phenotype
-url: https://github.com/obophenotype/phenio
+homepage_url: https://github.com/obophenotype/phenio
 license:
   label: CC0 1.0
   id: https://creativecommons.org/publicdomain/zero/1.0/

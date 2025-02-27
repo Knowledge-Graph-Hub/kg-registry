@@ -9,7 +9,7 @@ category: KnowledgeGraph
 contacts:
 - category: Individual
   label: Jim Balhoff
-url: ""
+homepage_url: ""
 repository: ""
 ---
 

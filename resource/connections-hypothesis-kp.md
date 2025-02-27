@@ -9,7 +9,7 @@ category: KnowledgeGraph
 contacts:
 - category: Individual
   label: "Gregory Hyde"
-url: https://github.com/di2ag/chp_api
+homepage_url: https://github.com/di2ag/chp_api
 ---
 
 A Translator Knowledge Provider exploring connections hypotheses.

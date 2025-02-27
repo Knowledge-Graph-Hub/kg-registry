@@ -14,7 +14,7 @@ contacts:
   orcid: 0000-0002-8367-0733
   github: https://github.com/bioannidis
   label: Vassilis N. Ioannidis
-url: https://github.com/gnn4dr/DRKG
+homepage_url: https://github.com/gnn4dr/DRKG
 repository: https://github.com/gnn4dr/DRKG
 category: KnowledgeGraph
 products:

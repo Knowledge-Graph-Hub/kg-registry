@@ -11,7 +11,7 @@ contacts:
   github: realmarcin
   email: MJoachimiak@lbl.gov
   label: Marcin P. Joachimiak
-url: https://kghub.org/kg-microbe/index.html
+homepage_url: https://kghub.org/kg-microbe/index.html
 repository: https://github.com/Knowledge-Graph-Hub/kg-microbe
 products:
 - id: kg-microbe.raw

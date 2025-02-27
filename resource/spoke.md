@@ -9,7 +9,7 @@ category: KnowledgeGraph
 contacts:
 - category: Individual
   label: "Sui Huang, Sergio Baranzini"
-url: https://spoke.ucsf.edu/
+homepage_url: https://spoke.ucsf.edu/
 repository: ""
 ---
 
