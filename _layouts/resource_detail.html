@@ -52,17 +52,17 @@ page.is_obsolete %}
 {% endunless %}{% endif %}
 
 <div class="row">
-  <div class="col-md-8" style="padding-left: 0">
+  <div class="col-md-8">
     {% assign stripped_content_size = content | strip | size %}
 
     <div class="row">
-      <div class="card bg-light mb-3" style="max-width: 10rem;">
+      <div class="card bg-light mb-3" style="max-width: 12rem;">
           <div class="card-body">
             <h5 class="card-title">Domain</h5>
             <p class="card-text">{{page.domain}}</p>
           </div>
       </div>
-      <div class="card bg-light mb-3" style="max-width: 10rem;">
+      <div class="card bg-light mb-3" style="max-width: 12rem;">
           <div class="card-body">
             <h5 class="card-title">License</h5>
             {% if page.license %}
@@ -72,16 +72,38 @@ page.is_obsolete %}
             {% endif %}
             </div>
       </div>
-      <div class="card bg-light mb-3" style="max-width: 10rem;">
+      <div class="card bg-light mb-3" style="max-width: 12rem;">
         <div class="card-body">
-          <h5 class="card-title">Infores ID</h5>
-          {% if page.infored_id %}
-            <p class="card-text">infores:{{page.infores_id}}</a></p>
+          <h5 class="card-title">Repository</h5>
+          {% if page.repository and page.repository contains "https://github.com/" %}
+            <p class="card-text"><a href="{{page.repository}}">Github</a></p>
+          {% elsif page.repository %}
+            <p class="card-text"><a href="{{page.repository}}">Repository</a></p>
           {% else %}
             <p class="card-text" style="font-weight: bold;">Unknown</p>
           {% endif %}
           </div>
-    </div>
+      </div>
+      <div class="card bg-light mb-3" style="max-width: 12rem;">
+        <div class="card-body">
+          <h5 class="card-title">Infores ID</h5>
+          {% if page.infored_id %}
+            <p class="card-text">infores:{{page.infores_id}}</p>
+          {% else %}
+            <p class="card-text" style="font-weight: bold;">Unknown</p>
+          {% endif %}
+          </div>
+      </div>
+      <div class="card bg-light mb-3" style="max-width: 12rem;">
+        <div class="card-body">
+          <h5 class="card-title">FAIRsharing ID</h5>
+          {% if page.fairsharing_id %}
+            <p class="card-text"><a href="https://fairsharing.org/{{page.fairsharing_id}}">{{page.fairsharing_id}}</a></p>
+          {% else %}
+            <p class="card-text" style="font-weight: bold;">Unknown</p>
+          {% endif %}
+          </div>
+      </div>
     </div>
 
     {% if page.contacts %}
@@ -93,17 +115,17 @@ page.is_obsolete %}
         {% for c in page.contacts %}
         <div class="list-group-item">
           {% if c.email %}
-            <a href="mailto:{{c.email}}">{{c.label}}</a>
+            <p><a href="mailto:{{c.email}}">{{c.label}}</a></p>
           {% else %}
           {% if c.label %}
-            {{c.label}}
+            <p>{{c.label}}</p>
           {% endif %}
           {% endif %}
-          {% if c.orcid %}
-            ORCID:<a href="https://orcid.org/{{ c.orcid }}">{{ c.orcid }}</a>
+            {% if c.orcid %}
+            <strong>ORCID:</strong><a href="https://orcid.org/{{ c.orcid }}">{{ c.orcid }}</a>
           {% endif %}
           {% if c.github %}
-            Github:<a href="https://github.com/{{ c.github }}">{{ c.github }}</a>
+            <strong>Github:</strong><a href="https://github.com/{{ c.github }}">{{ c.github }}</a>
           {% endif %}
         </div>
         {% endfor %}
@@ -272,27 +294,6 @@ page.is_obsolete %}
       <dd>
         <a href="{{page.url}}">{{page.url}}</a>
       </dd> -->
-
-      {% if page.repository and page.repository != page.homepage %}
-      <dt>Repository</dt>
-      <dd>
-        <a href="{{page.repository}}">{{page.repository}}</a>
-      </dd>
-      {% endif %}
-
-      {% if page.infores_id %}
-      <dt>Infores ID</dt>
-      <dd>
-        infores:{{page.infores_id}}
-      </dd>
-      {% endif %}
-
-      {% if page.fairsharing_id %}
-      <dt>FAIRsharing ID</dt>
-      <dd>
-        <a href="https://fairsharing.org/{{page.fairsharing_id}}">{{page.fairsharing_id}}</a>
-      </dd>
-      {% endif %}
 
       {% if page.repository and page.repository contains "https://github.com/" %}
       <dt>Stars</dt>
