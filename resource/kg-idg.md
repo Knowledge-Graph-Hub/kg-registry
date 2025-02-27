@@ -11,7 +11,7 @@ contacts:
   github: caufieldjh
   email: jhc@lbl.gov
   label: J. Harry Caufield
-url: https://kghub.org/kg-idg/index.html
+homepage_url: https://kghub.org/kg-idg/index.html
 repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 products:
 - id: kg-idg.tar.gz

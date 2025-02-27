@@ -11,7 +11,7 @@ contacts:
   email: ramseyst@oregonstate.edu
   github: saramsey
   orcid: 0000-0002-2168-5403
-url: https://github.com/RTXteam/RTX-KG2
+homepage_url: https://github.com/RTXteam/RTX-KG2
 repository: https://github.com/RTXteam/RTX-KG2
 license:
   label: CC BY 4.0

@@ -11,7 +11,7 @@ contacts:
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
-url: https://reactome.org
+homepage_url: https://reactome.org
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: reactome-hs-biopax.db.gz

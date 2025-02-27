@@ -10,7 +10,7 @@ contacts:
 - category: Individual
   label: "Sandrine Muller"
   orcid: 0000-0001-5998-3003
-url: ""
+homepage_url: ""
 repository: ""
 products:
 - id: nodes.tsv

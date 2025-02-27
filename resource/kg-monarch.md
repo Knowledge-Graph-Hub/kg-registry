@@ -11,7 +11,7 @@ contacts:
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
-url: https://kghub.org/kg-monarch/index.html
+homepage_url: https://kghub.org/kg-monarch/index.html
 repository: https://github.com/monarch-initiative/monarch-ingest
 products:
 - id: kg-monarch.tar.gz

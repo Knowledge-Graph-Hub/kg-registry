@@ -9,7 +9,7 @@ domain: biological systems
 contacts:
 - category: Organization
   label: Systems Biology Research Group at the University of California, San Diego
-url: http://bigg.ucsd.edu/
+homepage_url: http://bigg.ucsd.edu/
 repository: https://github.com/SBRG/bigg_models
 category: DataSource
 license:

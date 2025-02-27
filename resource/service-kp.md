@@ -9,7 +9,7 @@ category: KnowledgeGraph
 contacts:
 - category: Individual
   label: "Chunlei Wu"
-url: ""
+homepage_url: ""
 repository: ""
 ---
 

@@ -9,7 +9,7 @@ contacts:
 name: Data Distillery Knowledge Graph
 description: The Common Fund Data Ecosystem (CFDE) aims to facilitate better integration, and reuse of Common Fund data to accelerate discoveries in biomedical research.
 category: KnowledgeGraph
-url: https://dd-kg-ui.cfde.cloud/about
+homepage_url: https://dd-kg-ui.cfde.cloud/about
 domain: health
 ---
 

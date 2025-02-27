@@ -9,7 +9,7 @@ category: KnowledgeGraph
 contacts:
 - category: Individual
   label: Edgar Gatica
-url: ""
+homepage_url: ""
 repository: ""
 products:
 - id: targeted_assertions.tar.gz
