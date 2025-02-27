@@ -72,10 +72,9 @@ page.is_obsolete %}
       </div>
       <div class="card bg-light mb-3" style="max-width: 12rem;">
         <div class="card-body">
-          <!-- TODO: fix this, there is a name collision -->
           <h5 class="card-title">Homepage</h5>
-          {% if page.url %}
-            <p class="card-text"><a href="{{page.url}}">{{page.url}}</a></p>
+          {% if page.homepage_url %}
+            <p class="card-text"><a href="{{page.homepage_url}}">{{page.id}}</a></p>
           {% else %}
             <p class="card-text" style="font-weight: bold;">Unknown</p>
           {% endif %}
@@ -184,7 +183,7 @@ page.is_obsolete %}
       <div class="card-header">
         <h4>Products</h4>
       </div>
-      <table class="table table-striped mb-0">
+      <table class="table table-striped">
         <thead>
           <tr>
             <th>ID</th>
