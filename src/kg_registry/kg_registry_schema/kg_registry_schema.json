@@ -64,6 +64,13 @@
                         "null"
                     ]
                 },
+                "homepage_url": {
+                    "description": "The primary URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface, but it should preferentially be the main page documenting the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
@@ -138,13 +145,6 @@
                     },
                     "type": [
                         "array",
-                        "null"
-                    ]
-                },
-                "url": {
-                    "description": "The URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
-                    "type": [
-                        "string",
                         "null"
                     ]
                 },
@@ -291,6 +291,13 @@
                         "null"
                     ]
                 },
+                "homepage_url": {
+                    "description": "The primary URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface, but it should preferentially be the main page documenting the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
@@ -365,13 +372,6 @@
                     },
                     "type": [
                         "array",
-                        "null"
-                    ]
-                },
-                "url": {
-                    "description": "The URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
-                    "type": [
-                        "string",
                         "null"
                     ]
                 },
@@ -573,6 +573,13 @@
                         "null"
                     ]
                 },
+                "homepage_url": {
+                    "description": "The primary URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface, but it should preferentially be the main page documenting the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
@@ -647,13 +654,6 @@
                     },
                     "type": [
                         "array",
-                        "null"
-                    ]
-                },
-                "url": {
-                    "description": "The URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
-                    "type": [
-                        "string",
                         "null"
                     ]
                 },
@@ -1180,6 +1180,13 @@
                         "null"
                     ]
                 },
+                "homepage_url": {
+                    "description": "The primary URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface, but it should preferentially be the main page documenting the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
@@ -1254,13 +1261,6 @@
                     },
                     "type": [
                         "array",
-                        "null"
-                    ]
-                },
-                "url": {
-                    "description": "The URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
-                    "type": [
-                        "string",
                         "null"
                     ]
                 },
@@ -1907,6 +1907,13 @@
                         "null"
                     ]
                 },
+                "homepage_url": {
+                    "description": "The primary URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface, but it should preferentially be the main page documenting the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
@@ -1981,13 +1988,6 @@
                     },
                     "type": [
                         "array",
-                        "null"
-                    ]
-                },
-                "url": {
-                    "description": "The URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
-                    "type": [
-                        "string",
                         "null"
                     ]
                 },

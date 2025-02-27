@@ -71,11 +71,13 @@ classes:
         description: >-
           A description of the resource.
         range: string
-      url:
+      homepage_url:
         description: >-
-          The URL of the resource. This may be a link
+          The primary URL of the resource. This may be a link
           to download a specific file, a base URL to an API,
-          or a link to a graphical interface.
+          or a link to a graphical interface, but it should
+          preferentially be the main page documenting the
+          resource.
         range: uriorcurie
       repository:
         description: >-
