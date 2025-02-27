@@ -195,16 +195,32 @@ def concat_resource_yaml(args):
 
         print(to_be_propagated)
 
-        # Now update the source Resource pages
+        # Now update the concatenated list of resources
+        # And write newly added products to their respective Resource pages
         for obj in objs:
             if obj["id"] in to_be_propagated:
                 print(f"Writing {len(to_be_propagated[obj["id"]])} product(s) to {obj['id']} entry")
+
                 if "products" not in obj:
                     obj["products"] = []
+
+                # Do the writing here
                 for product in to_be_propagated[obj["id"]]:
                     product_copy = deepcopy(product)
+
+                    # Write to the concatenated list of resources
                     if product_copy not in obj["products"]:
                         obj["products"].append(product_copy)
+
+                    # Write to the respective Resource page
+                    fn = f"resource/{obj['id']}.md"
+                    (metadata, md) = load_md(fn)
+                    if "products" not in metadata:
+                        metadata["products"] = []
+                    if product_copy not in metadata["products"]:
+                        metadata["products"].append(product_copy)
+                    with open(fn, "w") as f:
+                        f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
 
     objs = []
     foundry = []
