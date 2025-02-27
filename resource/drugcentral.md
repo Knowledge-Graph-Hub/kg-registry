@@ -1,33 +1,39 @@
 ---
-layout: resource_detail
 activity_status: active
-id: drugcentral
-name: DrugCentral
-description: >-
-  DrugCentral is online drug information resource
-  created and maintained by Division of Translational
-  Informatics at University of New Mexico.
-domain: health
+category: DataSource
 contacts:
 - category: Organization
   label: DrugCentral
+description: DrugCentral is online drug information resource created and maintained
+  by Division of Translational Informatics at University of New Mexico.
+domain: health
 homepage_url: https://drugcentral.org/
-category: DataSource
+id: drugcentral
+layout: resource_detail
+name: DrugCentral
+products:
+- category: GraphProduct
+  derived_from: automat
+  description: DrugCentral Automat
+  id: drugcentral_automat
+  infores_id: automat-drug-central
+  is_kgx: true
+  name: drugcentral_automat
+  original_source: drugcentral
+  url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
 publications:
-- doi: doi:10.1093/nar/gkw993
+- authors:
+  - Ursu O
+  - Holmes J
+  - Knockel J
+  - Bologa CG
+  - Yang JJ
+  - Mathias SL
+  - Nelson SJ
+  - Oprea TI
+  doi: doi:10.1093/nar/gkw993
   id: doi:10.1093/nar/gkw993
-  year: "2017"
-  authors:
-    - Ursu O
-    - Holmes J
-    - Knockel J
-    - Bologa CG
-    - Yang JJ
-    - Mathias SL
-    - Nelson SJ
-    - Oprea TI
-  title: >-
-    DrugCentral: online drug compendium
+  title: 'DrugCentral: online drug compendium'
+  year: '2017'
 ---
-
 DrugCentral
