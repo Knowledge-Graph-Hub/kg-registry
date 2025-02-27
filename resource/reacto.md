@@ -11,7 +11,7 @@ contacts:
   github: goodb
   email: ben.mcgee.good@gmail.com
   label: Benjamin M. Good
-url: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
+homepage_url: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
 repository: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
 products:
 - id: reacto.owl

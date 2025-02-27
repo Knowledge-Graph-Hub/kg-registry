@@ -13,7 +13,7 @@ contacts:
   github: marinkaz
   label: Marinka Zitnik
   email: marinka@hms.harvard.edu
-url: https://zitniklab.hms.harvard.edu/projects/PrimeKG
+homepage_url: https://zitniklab.hms.harvard.edu/projects/PrimeKG
 repository: https://github.com/mims-harvard/PrimeKG
 products:
 - id: primekg.csv

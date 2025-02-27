@@ -11,7 +11,7 @@ contacts:
     label: Ugur Bayindir
     orcid: 0000-0002-6012-3729
     github: ubyndr
-url: https://cellular-semantics.github.io/CL_KG/
+homepage_url: https://cellular-semantics.github.io/CL_KG/
 repository: https://github.com/Cellular-Semantics/CL_KG
 license:
   label: Apache License 2.0

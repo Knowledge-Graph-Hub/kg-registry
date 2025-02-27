@@ -10,7 +10,7 @@ contacts:
   orcid: 0000-0002-6601-2165
 description: Translation of JGI GOLD path terms to OWL
 domain: environment
-url: https://gold.jgi.doe.gov/
+homepage_url: https://gold.jgi.doe.gov/
 products:
 - id: goldterms.owl
   url: https://w3id.org/goldterms/goldterms.owl

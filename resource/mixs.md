@@ -11,7 +11,7 @@ contacts:
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
-url: https://w3id.org/mixs
+homepage_url: https://w3id.org/mixs
 repository: https://w3id.org/mixs
 products:
 - id: mixs.owl

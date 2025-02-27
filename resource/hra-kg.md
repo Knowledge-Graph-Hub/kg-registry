@@ -8,7 +8,7 @@ domain: health
 contacts:
   - category: Individual
     label: Katy Börner
-url: https://apps.humanatlas.io/dashboard/data
+homepage_url: https://apps.humanatlas.io/dashboard/data
 repository: https://github.com/hubmapconsortium/hra-kg
 license:
   label: CC BY 4.0

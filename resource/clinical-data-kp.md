@@ -13,7 +13,7 @@ contacts:
   label: Vincent Emonet
 - category: Individual
   label: Michel Dumontier
-url: https://ncats.nih.gov/research/research-activities/translator/projects
+homepage_url: https://ncats.nih.gov/research/research-activities/translator/projects
 ---
 
 A Translator Knowledge Provider integrating clinical data.

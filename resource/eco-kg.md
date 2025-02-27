@@ -9,7 +9,7 @@ contacts:
 - category: Individual
   github: diatomsRcool
   label: Anne Thessen
-url: https://kghub.org/eco-kg/index.html
+homepage_url: https://kghub.org/eco-kg/index.html
 repository: https://github.com/Knowledge-Graph-Hub/eco-kg
 category: KnowledgeGraph
 ---

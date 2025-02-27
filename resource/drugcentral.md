@@ -11,7 +11,7 @@ domain: health
 contacts:
 - category: Organization
   label: DrugCentral
-url: https://drugcentral.org/
+homepage_url: https://drugcentral.org/
 category: DataSource
 publications:
 - doi: doi:10.1093/nar/gkw993

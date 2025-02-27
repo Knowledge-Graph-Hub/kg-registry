@@ -9,7 +9,7 @@ contacts:
 - category: Organization
   email: swisslipids@sib.swiss
   label: SwissLipids team
-url: https://www.swisslipids.org/
+homepage_url: https://www.swisslipids.org/
 repository: https://www.swisslipids.org/
 category: DataSource
 publications:

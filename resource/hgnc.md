@@ -11,7 +11,7 @@ contacts:
 - category: Organization
   email: hgnc@genenames.org
   label: HUGO Gene Nomenclature Committee
-url: https://www.genenames.org/
+homepage_url: https://www.genenames.org/
 repository: https://github.com/HGNC
 category: DataSource
 fairsharing_id: FAIRsharing.amcv1e

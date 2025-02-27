@@ -12,7 +12,7 @@ contacts:
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
-url: http://geneontology.org/go-cam/docs
+homepage_url: http://geneontology.org/go-cam/docs
 repository: https://github.com/geneontology/noctua
 publications:
 - doi: 10.1038/s41588-019-0500-1

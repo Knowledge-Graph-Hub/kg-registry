@@ -8,7 +8,7 @@ domain: health
 contacts:
   - category: Individual
     label: Deanne M. Taylor
-url: https://github.com/TaylorResearchLab/Petagraph
+homepage_url: https://github.com/TaylorResearchLab/Petagraph
 repository: https://github.com/TaylorResearchLab/Petagraph
 products:
 - id: petagraph

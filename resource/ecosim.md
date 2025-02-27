@@ -11,7 +11,7 @@ contacts:
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
-url: http://purl.obolibrary.org/obo/ecosim.owl
+homepage_url: http://purl.obolibrary.org/obo/ecosim.owl
 repository: http://purl.obolibrary.org/obo/ecosim.owl
 products:
 - id: ecosim.owl

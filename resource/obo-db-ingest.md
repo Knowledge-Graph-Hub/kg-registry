@@ -12,7 +12,7 @@ contacts:
   github: cthoyt
   email: cthoyt@gmail.com
   label: Charles Tapley Hoyt
-url: https://biopragmatics.github.io/obo-db-ingest/
+homepage_url: https://biopragmatics.github.io/obo-db-ingest/
 repository: https://github.com/biopragmatics/obo-db-ingest
 products:
 - id: obo-db-ingest.bigg.compartment.obo

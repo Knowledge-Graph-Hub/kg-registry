@@ -10,7 +10,7 @@ domain: biological systems
 contacts:
 - category: Organization
   label: InterPro
-url: https://www.ebi.ac.uk/interpro/
+homepage_url: https://www.ebi.ac.uk/interpro/
 repository: https://www.ebi.ac.uk/interpro/
 license:
   label: CC0-1.0

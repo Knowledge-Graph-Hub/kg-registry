@@ -11,7 +11,7 @@ contacts:
   label: Gustavo Glusman
 - category: Individual
   label: Guangrong Qin
-url: ""
+homepage_url: ""
 repository: ""
 ---
 

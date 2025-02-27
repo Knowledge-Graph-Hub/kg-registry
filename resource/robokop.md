@@ -9,7 +9,7 @@ contacts:
   - category: Individual
     label: Karamarie Fecho
     email: kfecho@copperlineprofessionalsolutions.com
-url: http://robokop.renci.org
+homepage_url: http://robokop.renci.org
 repository: https://github.com/NCATS-Gamma/robokop
 products:
 - id: robokopkg

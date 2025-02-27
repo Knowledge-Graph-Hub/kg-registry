@@ -12,7 +12,7 @@ contacts:
   email: kevinschaper@gmail.com
   github: kevinschaper
   orcid: 0000-0003-3311-7320
-url: ""
+homepage_url: ""
 repository: ""
 products:
 - id: monarch-kg.tar.gz
