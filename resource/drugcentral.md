@@ -10,6 +10,9 @@ domain: health
 homepage_url: https://drugcentral.org/
 id: drugcentral
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY-4.0
 name: DrugCentral
 products:
 - category: GraphProduct

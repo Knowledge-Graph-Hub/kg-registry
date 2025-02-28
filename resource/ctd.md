@@ -10,6 +10,9 @@ domain: chemistry and biochemistry
 homepage_url: https://ctdbase.org/
 id: ctd
 layout: resource_detail
+license:
+  id: https://ctdbase.org/about/legal.jsp
+  label: Custom
 name: Comparative Toxicogenomics Database
 products:
 - category: GraphProduct
