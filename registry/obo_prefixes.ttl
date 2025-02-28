@@ -6,7 +6,7 @@
 ,[ sh:prefix "BIGG" ; sh:namespace "http://purl.obolibrary.org/obo/BIGG_"]
 ,[ sh:prefix "BIOLINK" ; sh:namespace "http://purl.obolibrary.org/obo/BIOLINK_"]
 ,[ sh:prefix "CAM-KP" ; sh:namespace "http://purl.obolibrary.org/obo/CAM-KP_"]
-,[ sh:prefix "CFDE" ; sh:namespace "http://purl.obolibrary.org/obo/CFDE_"]
+,[ sh:prefix "CFDE-DDKG" ; sh:namespace "http://purl.obolibrary.org/obo/CFDE-DDKG_"]
 ,[ sh:prefix "CHEMBL" ; sh:namespace "http://purl.obolibrary.org/obo/CHEMBL_"]
 ,[ sh:prefix "CHR" ; sh:namespace "http://purl.obolibrary.org/obo/CHR_"]
 ,[ sh:prefix "CL-KG" ; sh:namespace "http://purl.obolibrary.org/obo/CL-KG_"]

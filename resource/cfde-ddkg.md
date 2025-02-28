@@ -1,15 +1,17 @@
 ---
 layout: resource_detail
 activity_status: active
-id: cfde
+id: cfde-ddkg
 contacts:
 - category: Individual
   label: "John Erol Evangelista"
   github: jeevangelista
-name: Data Distillery Knowledge Graph
-description: The Common Fund Data Ecosystem (CFDE) aims to facilitate better integration, and reuse of Common Fund data to accelerate discoveries in biomedical research.
+name: Data Distillery Knowledge Graph (DDKG)
+description: >-
+  The Common Fund Data Ecosystem (CFDE) aims to facilitate better integration, and reuse of Common Fund data to accelerate discoveries in biomedical research.The Data Distillery project aims to integrate summarized (“distilled”) Common Fund data within a knowledge graph. The purpose of the Data Distillery Knowledge Graph (DDKG) is to link multiple sources of expertly curated data, thus providing data integration across multiple Common Fund data coordinating centers (DCCs).
 category: KnowledgeGraph
 homepage_url: https://dd-kg-ui.cfde.cloud/about
+repository: https://github.com/MaayanLab/datadistillery-kg
 domain: health
 ---
 

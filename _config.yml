@@ -31,6 +31,9 @@ resources:
   homepage_url: https://robokop.renci.org/api-docs/docs/category/automat
   id: automat
   layout: resource_detail
+  license:
+    id: https://biopragmatics.github.io/obo-db-ingest/
+    label: Varies
   name: Automat
   products:
   - category: GraphProduct
@@ -162,7 +165,7 @@ resources:
     is_kgx: true
     name: ubergraph_automat
     url: https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files
-  repository: ''
+  repository: https://github.com/RobokopU24/
 - activity_status: active
   category: DataSource
   contacts:
@@ -466,7 +469,11 @@ resources:
   homepage_url: https://github.com/ExposuresProvider/cam-kp-api
   id: cam-kp
   layout: resource_detail
+  license:
+    id: https://opensource.org/licenses/MIT
+    label: MIT License
   name: Exposures KP (cam kp)
+  repository: https://github.com/ExposuresProvider/cam-kp-api
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -474,12 +481,17 @@ resources:
     github: jeevangelista
     label: John Erol Evangelista
   description: The Common Fund Data Ecosystem (CFDE) aims to facilitate better integration,
-    and reuse of Common Fund data to accelerate discoveries in biomedical research.
+    and reuse of Common Fund data to accelerate discoveries in biomedical research.The
+    Data Distillery project aims to integrate summarized (“distilled”) Common Fund
+    data within a knowledge graph. The purpose of the Data Distillery Knowledge Graph
+    (DDKG) is to link multiple sources of expertly curated data, thus providing data
+    integration across multiple Common Fund data coordinating centers (DCCs).
   domain: health
   homepage_url: https://dd-kg-ui.cfde.cloud/about
-  id: cfde
+  id: cfde-ddkg
   layout: resource_detail
-  name: Data Distillery Knowledge Graph
+  name: Data Distillery Knowledge Graph (DDKG)
+  repository: https://github.com/MaayanLab/datadistillery-kg
 - activity_status: active
   category: DataSource
   contacts:
@@ -616,6 +628,9 @@ resources:
   homepage_url: https://ctdbase.org/
   id: ctd
   layout: resource_detail
+  license:
+    id: https://ctdbase.org/about/legal.jsp
+    label: Custom
   name: Comparative Toxicogenomics Database
   products:
   - category: GraphProduct
@@ -674,6 +689,10 @@ resources:
   homepage_url: https://drugcentral.org/
   id: drugcentral
   layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
   name: DrugCentral
   products:
   - category: GraphProduct
@@ -1167,17 +1186,23 @@ resources:
     github: cmungall
     label: Christopher J. Mungall
     orcid: 0000-0002-6601-2165
-  description: Noctua Entity Ontology
+  description: 'This repository contains classes required by Noctua/Minerva for representing
+    entities that are object of ''enabled by'' relations, and similar molecular relationships.
+    This includes: genes, protein (gene-level generic proteins and isoforms), functional
+    RNAs, and complexes. These are represented as ontology classes, although NEO is
+    not really an ontology in a conventional sense: there is no hierarchy, it is organized
+    as a largely flat list.'
   domain: biological systems
-  homepage_url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
+  homepage_url: https://github.com/geneontology/neo/
   id: neo
   layout: resource_detail
-  name: neo
+  name: Noctua Entity Ontology
   products:
   - category: Product
     description: OWL release of neo
     id: neo.owl
     name: neo OWL release
+    url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
   repository: https://github.com/geneontology/neo/
 - activity_status: active
   category: KnowledgeGraph
@@ -3065,6 +3090,10 @@ resources:
   homepage_url: https://orcid.org/
   id: orcid
   layout: resource_detail
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
   name: ORCID
   repository: https://github.com/ORCID
 - activity_status: active
@@ -3250,7 +3279,33 @@ resources:
   homepage_url: https://www.rhea-db.org/
   id: rhea
   layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
   name: Rhea
+  publications:
+  - authors:
+    - Bansal P
+    - Morgat A
+    - Axelsen KB
+    - Muthukrishnan V
+    - Coudert E
+    - Aimo L
+    - Hyka-Nouspikel N
+    - Gasteiger E
+    - Kerhornou A
+    - Neto TB
+    - Pozzato M
+    - Blatter MC
+    - Ignatchenko A
+    - Redaschi N
+    - Bridge A
+    doi: doi:10.1093/nar/gkab1016
+    id: doi:10.1093/nar/gkab1016
+    preferred: true
+    title: Rhea, the reaction knowledgebase in 2022
+    year: '2021'
 - activity_status: active
   category: KnowledgeGraph
   contacts:
