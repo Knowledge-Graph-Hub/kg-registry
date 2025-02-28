@@ -35,5 +35,8 @@ publications:
   id: doi:10.1093/nar/gkw993
   title: 'DrugCentral: online drug compendium'
   year: '2017'
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY-4.0
 ---
 DrugCentral
