@@ -12,6 +12,9 @@ domain: health
 homepage_url: https://robokop.renci.org/api-docs/docs/category/automat
 id: automat
 layout: resource_detail
+license:
+  id: https://biopragmatics.github.io/obo-db-ingest/
+  label: Varies
 name: Automat
 products:
 - category: GraphProduct
@@ -144,8 +147,5 @@ products:
   name: ubergraph_automat
   url: https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files
 repository: https://github.com/RobokopU24/
-license:
-  id: https://biopragmatics.github.io/obo-db-ingest/
-  label: Varies
 ---
 A Translator Knowledge Provider offering multiple sub-graphs in KGX format.
