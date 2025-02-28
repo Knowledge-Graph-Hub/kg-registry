@@ -21,4 +21,7 @@ products:
   name: ctd_automat
   original_source: ctd
   url: https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files
+license:
+  id: https://ctdbase.org/about/legal.jsp
+  label: Custom
 ---
