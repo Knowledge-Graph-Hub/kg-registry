@@ -143,6 +143,9 @@ products:
   is_kgx: true
   name: ubergraph_automat
   url: https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files
-repository: ''
+repository: https://github.com/RobokopU24/
+license:
+  id: https://biopragmatics.github.io/obo-db-ingest/
+  label: Varies
 ---
 A Translator Knowledge Provider offering multiple sub-graphs in KGX format.
