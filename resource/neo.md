@@ -21,6 +21,7 @@ products:
   category: Product
   url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
 category: Resource
+
 ---
 
 Noctua Entity Ontology. Conversion of gene and gene-centric entity IDs from uniprot and MODs.
