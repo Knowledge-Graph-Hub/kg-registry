@@ -17,6 +17,13 @@ products:
   description: GP_KG.txt
   url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
   category: GraphProduct
+  node_count: 61146
+  edge_count: 1246726
+- id: gp-kg.kg-predict
+  name: KG-Predict
+  description: A computational framework for drug repurposing, used with GP-KG
+  url: http://nlp.case.edu/public/data/GPKG-Predict/code/
+  category: ProcessProduct
 publications:
 - authors:
   - Gao Z
