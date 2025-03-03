@@ -76,6 +76,10 @@
             "@id": "http://purl.obolibrary.org/obo/GOLDTERMS_",
             "@prefix": true
         },
+        "GP-KG": {
+            "@id": "http://purl.obolibrary.org/obo/GP-KG_",
+            "@prefix": true
+        },
         "HGNC": {
             "@id": "http://purl.obolibrary.org/obo/HGNC_",
             "@prefix": true
