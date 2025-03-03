@@ -21,6 +21,7 @@
 ,[ sh:prefix "GENETICS-KP" ; sh:namespace "http://purl.obolibrary.org/obo/GENETICS-KP_"]
 ,[ sh:prefix "GO-CAM" ; sh:namespace "http://purl.obolibrary.org/obo/GO-CAM_"]
 ,[ sh:prefix "GOLDTERMS" ; sh:namespace "http://purl.obolibrary.org/obo/GOLDTERMS_"]
+,[ sh:prefix "GP-KG" ; sh:namespace "http://purl.obolibrary.org/obo/GP-KG_"]
 ,[ sh:prefix "HGNC" ; sh:namespace "http://purl.obolibrary.org/obo/HGNC_"]
 ,[ sh:prefix "HRA-KG" ; sh:namespace "http://purl.obolibrary.org/obo/HRA-KG_"]
 ,[ sh:prefix "ICEES-KG" ; sh:namespace "http://purl.obolibrary.org/obo/ICEES-KG_"]
