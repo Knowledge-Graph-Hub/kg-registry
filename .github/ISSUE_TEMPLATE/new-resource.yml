@@ -1,7 +1,7 @@
 name: Request new resource
 description: Request addition of something new to the registry, including knowledge graphs, data models, mappings, or beyond.
 title: Add this resource - [Name Here]
-labels: [ New ]
+labels: [ new-resource ]
 
 body:
   - type: markdown

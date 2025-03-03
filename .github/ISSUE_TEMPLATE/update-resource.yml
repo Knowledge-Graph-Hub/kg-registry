@@ -1,7 +1,7 @@
 name: Update a resource in KG-Registry
 description: Request an update to a resource in the registry
 title: Update this resource - [Name Here]
-labels: [ Update ]
+labels: [ update-resource ]
 
 body:
   - type: markdown
