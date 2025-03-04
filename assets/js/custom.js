@@ -213,7 +213,7 @@ jQuery(document).ready(function() {
                     let license_label = "";
                     let description = data[i]['description'];
                     let resourcetype = data[i]['category'];
-                    let homepage = data[i]["url"];
+                    let homepage = data[i]["homepage_url"];
                     let publication = "";
                     let domainInner = ["Unknown"];
                     if (data[i]['license']) {
