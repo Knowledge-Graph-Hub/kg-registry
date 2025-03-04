@@ -11,6 +11,9 @@ contacts:
   label: Tiffany Callahan
 homepage_url: https://github.com/callahantiff/PheKnowLator
 repository: https://github.com/callahantiff/PheKnowLator
+license:
+  label: Apache License 2.0
+  id: https://www.apache.org/licenses/LICENSE-2.0
 category: KnowledgeGraph
 ---
 
