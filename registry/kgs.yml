@@ -444,6 +444,47 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
+    email: patrick.aloy@irbbarcelona.org
+    label: Patrick Aloy
+    orcid: 0000-0002-3557-0236
+  description: A knowledge graph of biological entities and their associations
+  domain: health
+  homepage_url: https://bioteque.irbbarcelona.org/
+  id: bioteque
+  layout: resource_detail
+  name: Bioteque
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    url: https://bioteque.irbbarcelona.org/downloads/embeddings
+  - category: ProcessProduct
+    description: Scripts used to preprocess and accommodate biomedical datasets into
+      the knowledge database behind the Bioteque repository.
+    id: bioteque.code
+    license:
+      id: https://opensource.org/licenses/MIT
+      label: MIT License
+    name: Bioteque code
+    url: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
+  publications:
+  - authors:
+    - Fernández-Torras A
+    - Duran-Frigola M
+    - Bertoni M
+    - Locatelli M
+    - Aloy P
+    doi: doi:10.1038/s41467-022-33026-0
+    id: doi:10.1038/s41467-022-33026-0
+    title: Integrating and formatting biomedical data as pre-calculated knowledge
+      graph embeddings in the Bioteque
+    year: '2022'
+  repository: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
+- activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Individual
     email: balhoff@renci.org
     label: Jim Balhoff
   description: The “cam-kp” Exposures Knowledge Graph (in development).

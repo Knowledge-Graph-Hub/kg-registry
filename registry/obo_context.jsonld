@@ -12,6 +12,10 @@
             "@id": "http://purl.obolibrary.org/obo/BIOLINK_",
             "@prefix": true
         },
+        "BIOTEQUE": {
+            "@id": "http://purl.obolibrary.org/obo/BIOTEQUE_",
+            "@prefix": true
+        },
         "CAM-KP": {
             "@id": "http://purl.obolibrary.org/obo/CAM-KP_",
             "@prefix": true

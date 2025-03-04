@@ -5,6 +5,7 @@
 [ sh:prefix "AUTOMAT" ; sh:namespace "http://purl.obolibrary.org/obo/AUTOMAT_"]
 ,[ sh:prefix "BIGG" ; sh:namespace "http://purl.obolibrary.org/obo/BIGG_"]
 ,[ sh:prefix "BIOLINK" ; sh:namespace "http://purl.obolibrary.org/obo/BIOLINK_"]
+,[ sh:prefix "BIOTEQUE" ; sh:namespace "http://purl.obolibrary.org/obo/BIOTEQUE_"]
 ,[ sh:prefix "CAM-KP" ; sh:namespace "http://purl.obolibrary.org/obo/CAM-KP_"]
 ,[ sh:prefix "CFDE-DDKG" ; sh:namespace "http://purl.obolibrary.org/obo/CFDE-DDKG_"]
 ,[ sh:prefix "CHEMBL" ; sh:namespace "http://purl.obolibrary.org/obo/CHEMBL_"]

@@ -2,6 +2,7 @@ Resource,Activity Status,Validation Status
 automat,active,PASS
 bigg,active,PASS
 biolink,active,PASS
+bioteque,active,PASS
 cam-kp,active,PASS
 cfde-ddkg,active,PASS
 chembl,active,PASS
