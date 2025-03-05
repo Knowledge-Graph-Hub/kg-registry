@@ -1174,7 +1174,8 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "label": "Katy Börner"
+                    "label": "Katy Börner",
+                    "orcid": "0000-0002-3321-6137"
                 }
             ],
             "description": "The HRA Knowledge Graph (HRA KG) is a linked open data resource that integrates anatomical structures, cell types, and biomarkers to support cross-scale biological queries.",
@@ -1184,10 +1185,47 @@
             "layout": "resource_detail",
             "license": {
                 "id": "http://creativecommons.org/licenses/by/4.0/",
-                "label": "CC BY 4.0",
+                "label": "CC-BY-4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
             },
             "name": "Human Reference Atlas Knowledge Graph (HRA KG)",
+            "products": [
+                {
+                    "category": "GraphProduct",
+                    "description": "The graph representation of the Human Reference Atlas (HRA) dataset, v2.2, Turtle format",
+                    "id": "hra-kg.graph.ttl",
+                    "name": "HRA KG graph data, v2.2, Turtle format",
+                    "url": "https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.ttl"
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "The graph representation of the Human Reference Atlas (HRA) dataset, v2.2, JSON-LD format",
+                    "id": "hra-kg.graph.json",
+                    "name": "HRA KG graph data, v2.2, JSON-LD format",
+                    "url": "https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.json"
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "The graph representation of the Human Reference Atlas (HRA) dataset, v2.2, RDF/XML format",
+                    "id": "hra-kg.graph.xml",
+                    "name": "HRA KG graph data, v2.2, RDF/XML format",
+                    "url": "https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.xml"
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "The graph representation of the Human Reference Atlas (HRA) dataset, v2.2, N-Triples format",
+                    "id": "hra-kg.graph.nt",
+                    "name": "HRA KG graph data, v2.2, N-Triples format",
+                    "url": "https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nt"
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "The graph representation of the Human Reference Atlas (HRA) dataset, v2.2, N-Quads format",
+                    "id": "hra-kg.graph.nq",
+                    "name": "HRA KG graph data, v2.2, N-Quads format",
+                    "url": "https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nq"
+                }
+            ],
             "repository": "https://github.com/hubmapconsortium/hra-kg"
         },
         {
@@ -4881,6 +4919,43 @@
             },
             "name": "uniprot",
             "repository": "https://www.uniprot.org/"
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
+            "contacts": [
+                {
+                    "category": "Organization",
+                    "email": "zfinadmn@zfin.org",
+                    "label": "Zebrafish Information Network"
+                }
+            ],
+            "description": "Zebrafish Information Network, including the Zebrafish Anatomical Ontology",
+            "domain": "biological systems",
+            "homepage_url": "https://zfin.org/",
+            "id": "zfin",
+            "layout": "resource_detail",
+            "license": {
+                "id": "https://creativecommons.org/licenses/by/4.0/",
+                "label": "CC-BY-4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+            },
+            "name": "ZFIN",
+            "products": [
+                {
+                    "category": "Product",
+                    "description": "Zebrafish Anatomical Ontology (OWL)",
+                    "id": "zfin.zfa",
+                    "license": {
+                        "id": "https://creativecommons.org/licenses/by/3.0/",
+                        "label": "CC-BY-3.0"
+                    },
+                    "name": "ZFA",
+                    "original_source": "zfin",
+                    "url": "http://purl.obolibrary.org/obo/zfa.owl"
+                }
+            ],
+            "repository": "https://github.com/ZFIN/"
         }
     ]
 }
