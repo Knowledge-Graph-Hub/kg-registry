@@ -1028,6 +1028,9 @@ resources:
   homepage_url: https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki
   id: kg-covid-19
   layout: resource_detail
+  license:
+    id: https://opensource.org/license/bsd-3-clause
+    label: BSD3
   name: KG-COVID-19
   products:
   - category: GraphProduct
@@ -1063,6 +1066,9 @@ resources:
   homepage_url: https://kghub.org/kg-idg/index.html
   id: kg-idg
   layout: resource_detail
+  license:
+    id: https://opensource.org/license/bsd-3-clause
+    label: BSD3
   name: KG-IDG
   products:
   - category: GraphProduct
@@ -1086,9 +1092,8 @@ resources:
   id: kg-microbe
   layout: resource_detail
   license:
-    id: https://creativecommons.org/publicdomain/zero/1.0/
-    label: CC0 1.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    id: https://opensource.org/license/bsd-3-clause
+    label: BSD3
   name: KG Microbe
   products:
   - category: GraphProduct
@@ -3209,6 +3214,9 @@ resources:
   homepage_url: https://github.com/callahantiff/PheKnowLator
   id: pheknowlator
   layout: resource_detail
+  license:
+    id: https://www.apache.org/licenses/LICENSE-2.0
+    label: Apache License 2.0
   name: PheKnowLator
   repository: https://github.com/callahantiff/PheKnowLator
 - activity_status: active
@@ -3225,9 +3233,8 @@ resources:
   id: phenio
   layout: resource_detail
   license:
-    id: https://creativecommons.org/publicdomain/zero/1.0/
-    label: CC0 1.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    id: https://opensource.org/license/bsd-3-clause
+    label: BSD3
   name: An integrated ontology for Phenomics
   products:
   - category: Product
@@ -3294,6 +3301,34 @@ resources:
     name: PrimeKG Full Dataset
     url: https://dataverse.harvard.edu/api/access/datafile/6180620
   repository: https://github.com/mims-harvard/PrimeKG
+- activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Individual
+    email: qnhu@sibs.ac.cn
+    label: Qian-Nan Hu
+  description: Rare Disease Bridge (RDBridge) offers search functions for genes, potential
+    drugs, pathways, literature, and medical imaging data that will support mechanistic
+    research, drug development, diagnosis, and treatment for rare diseases.
+  domain: health
+  homepage_url: http://rdb.lifesynther.com/
+  id: rdbridge
+  layout: resource_detail
+  name: RDBridge
+  publications:
+  - authors:
+    - Xing H
+    - Zhang D
+    - Cai P
+    - Zhang R
+    - Hu QN
+    doi: doi:10.1093/bioinformatics/btad440
+    id: doi:10.1093/bioinformatics/btad440
+    preferred: true
+    title: 'RDBridge: a knowledge graph of rare diseases based on large-scale text
+      mining'
+    year: '2023'
+  repository: http://rdb.lifesynther.com/
 - activity_status: active
   category: Resource
   contacts:
