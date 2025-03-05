@@ -222,6 +222,7 @@ class NamedThing(ConfiguredBaseModel):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    warnings: Optional[List[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
 
 
 class Registry(ConfiguredBaseModel):
@@ -277,6 +278,7 @@ class Resource(NamedThing):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    warnings: Optional[List[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
 
 
 class KnowledgeGraph(Resource):
@@ -317,6 +319,7 @@ class KnowledgeGraph(Resource):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    warnings: Optional[List[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
 
 
 class DataSource(Resource):
@@ -350,6 +353,7 @@ class DataSource(Resource):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    warnings: Optional[List[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
 
 
 class DataModel(Resource):
@@ -383,6 +387,7 @@ class DataModel(Resource):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    warnings: Optional[List[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
 
 
 class Aggregator(Resource):
@@ -416,6 +421,7 @@ class Aggregator(Resource):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    warnings: Optional[List[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
 
 
 class Product(NamedThing):
@@ -443,6 +449,7 @@ class Product(NamedThing):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    warnings: Optional[List[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
 
 
 class GraphProduct(Product):
@@ -474,6 +481,7 @@ class GraphProduct(Product):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    warnings: Optional[List[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
 
 
 class DataModelProduct(Product):
@@ -500,6 +508,7 @@ class DataModelProduct(Product):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    warnings: Optional[List[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
 
 
 class MappingProduct(Product):
@@ -526,6 +535,7 @@ class MappingProduct(Product):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    warnings: Optional[List[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
 
 
 class ProcessProduct(Product):
@@ -552,6 +562,7 @@ class ProcessProduct(Product):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    warnings: Optional[List[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
 
 
 class GraphicalInterface(Product):
@@ -578,6 +589,7 @@ class GraphicalInterface(Product):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    warnings: Optional[List[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
 
 
 class ProgrammingInterface(Product):
@@ -607,6 +619,7 @@ class ProgrammingInterface(Product):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    warnings: Optional[List[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
 
 
 class Individual(Contact):
@@ -680,6 +693,7 @@ class FundingSource(NamedThing):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    warnings: Optional[List[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
 
 
 class License(NamedThing):
@@ -700,6 +714,7 @@ class License(NamedThing):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    warnings: Optional[List[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
 
 
 class Publication(NamedThing):
@@ -719,6 +734,7 @@ class Publication(NamedThing):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    warnings: Optional[List[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
 
 
 class Usage(NamedThing):
@@ -743,6 +759,7 @@ class Usage(NamedThing):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    warnings: Optional[List[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
 
 
 class BiolinkCompatibility(ConfiguredBaseModel):
