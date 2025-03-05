@@ -62,8 +62,8 @@ products:
   url: https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
   category: GraphProduct
 license:
-  label: CC0 1.0
-  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: BSD3
+  id: https://opensource.org/license/bsd-3-clause
 category: KnowledgeGraph
 ---
 
