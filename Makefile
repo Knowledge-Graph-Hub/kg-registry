@@ -39,7 +39,7 @@ SOURCE_SCHEMA = src/kg_registry/kg_registry_schema/schema/kg_registry_schema.yam
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
 
-all: _config.yml registry/kgs.ttl registry/obo_context.jsonld registry/obo_prefixes.ttl
+all: _config.yml registry/kgs.ttl
 
 pull:
 	git pull
@@ -92,14 +92,6 @@ registry/kgs.yml: reports/metadata-grid.csv
 # Use a generic yaml->json conversion, but adding a @content
 registry/kgs.jsonld: registry/kgs.yml
 	./util/yaml2json.py $< > $@.tmp && mv $@.tmp $@
-
-registry/obo_context.jsonld: registry/kgs.yml
-	./util/processor.py -i $< extract-context  > $@.tmp && mv $@.tmp $@
-
-# generate triples mapping prefixes to their corresponding PURLs.
-# we use the SHACL vocabulary for this
-registry/obo_prefixes.ttl: registry/kgs.yml
-	./util/make-shacl-prefixes.py $<  > $@.tmp && mv $@.tmp $@
 
 # Use Apache-Jena RIOT to convert jsonld to n-triples
 # NOTE: UGLY HACK. If there is a problem then Jena will write WARN message (to stdout!!!), there appears to
