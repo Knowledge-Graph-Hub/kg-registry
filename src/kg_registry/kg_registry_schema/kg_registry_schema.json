@@ -164,6 +164,16 @@
                         "string",
                         "null"
                     ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -391,6 +401,16 @@
                         "string",
                         "null"
                     ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -509,6 +529,16 @@
                     "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 }
@@ -673,6 +703,16 @@
                         "string",
                         "null"
                     ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -740,6 +780,16 @@
                         }
                     ],
                     "description": "The organization providing the funding."
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -899,6 +949,16 @@
                         "string",
                         "null"
                     ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -1024,6 +1084,16 @@
                     "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 }
@@ -1280,6 +1350,16 @@
                         "string",
                         "null"
                     ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -1316,6 +1396,16 @@
                     "description": "The URL of a logo for the license. This is added at metadata parsing time.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 }
@@ -1436,6 +1526,16 @@
                         "string",
                         "null"
                     ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -1459,6 +1559,16 @@
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -1620,6 +1730,16 @@
                         "string",
                         "null"
                     ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -1760,6 +1880,16 @@
                         "string",
                         "null"
                     ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -1819,6 +1949,16 @@
                     "description": "The title of the publication.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -2007,6 +2147,16 @@
                         "string",
                         "null"
                     ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -2081,6 +2231,16 @@
                     "description": "The user implementing or working with the resource.",
                     "items": {
                         "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",

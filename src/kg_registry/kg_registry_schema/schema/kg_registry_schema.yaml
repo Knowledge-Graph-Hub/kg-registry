@@ -32,6 +32,7 @@ classes:
     slots:
       - id
       - category
+      - warnings
     class_uri: schema:Thing
 
   Registry:
@@ -563,6 +564,16 @@ slots:
   resources:
     description: A list of entries in the registry.
     range: Resource
+    inlined: true
+    inlined_as_list: true
+    multivalued: true
+  warnings:
+    description: >-
+      A list of warnings about an item to be displayed
+      in the interface. These should primarily warn
+      users about unavailable resources, broken links,
+      and other obstacles to using a resource.
+    range: string
     inlined: true
     inlined_as_list: true
     multivalued: true
