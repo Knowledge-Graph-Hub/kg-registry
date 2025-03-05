@@ -13,6 +13,9 @@ contacts:
   label: J. Harry Caufield
 homepage_url: https://kghub.org/kg-idg/index.html
 repository: https://github.com/Knowledge-Graph-Hub/kg-idg
+license:
+  label: BSD3
+  id: https://opensource.org/license/bsd-3-clause
 products:
 - id: kg-idg.tar.gz
   is_kgx: true
