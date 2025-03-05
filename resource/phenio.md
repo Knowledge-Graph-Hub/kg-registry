@@ -11,8 +11,8 @@ description: An ontology for accessing and comparing knowledge concerning phenot
 domain: phenotype
 homepage_url: https://github.com/obophenotype/phenio
 license:
-  label: CC0 1.0
-  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: BSD3
+  id: https://opensource.org/license/bsd-3-clause
 products:
 - id: phenio.owl
   description: OWL version of phenio
