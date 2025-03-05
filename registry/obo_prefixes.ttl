@@ -61,4 +61,5 @@
 ,[ sh:prefix "TEXT-MINING-KP" ; sh:namespace "http://purl.obolibrary.org/obo/TEXT-MINING-KP_"]
 ,[ sh:prefix "UBERGRAPH" ; sh:namespace "http://purl.obolibrary.org/obo/UBERGRAPH_"]
 ,[ sh:prefix "UNIPROT" ; sh:namespace "http://purl.obolibrary.org/obo/UNIPROT_"]
+,[ sh:prefix "ZFIN" ; sh:namespace "http://purl.obolibrary.org/obo/ZFIN_"]
 ] .
