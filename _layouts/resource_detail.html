@@ -114,6 +114,14 @@ page.is_obsolete %}
       </div>
     </div>
 
+    {% if page.warnings %} 
+      {% for warning in page.warnings %}
+        <div class="alert alert-warning" role="alert">
+          ⚠ {{warning}}
+        </div>
+      {% endfor %}
+    {% endif %}
+
     {% if page.contacts %}
     <div class="card" style="margin-bottom: 1.5em" id="contacts">
       <div class="card-header">

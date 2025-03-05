@@ -3329,6 +3329,8 @@ resources:
       mining'
     year: '2023'
   repository: http://rdb.lifesynther.com/
+  warnings:
+  - Homepage may be inaccessible (March 5 2025)
 - activity_status: active
   category: Resource
   contacts:
