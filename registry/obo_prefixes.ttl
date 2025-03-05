@@ -45,6 +45,7 @@
 ,[ sh:prefix "PHEKNOWLATOR" ; sh:namespace "http://purl.obolibrary.org/obo/PHEKNOWLATOR_"]
 ,[ sh:prefix "PHENIO" ; sh:namespace "http://purl.obolibrary.org/obo/PHENIO_"]
 ,[ sh:prefix "PRIMEKG" ; sh:namespace "http://purl.obolibrary.org/obo/PRIMEKG_"]
+,[ sh:prefix "RDBRIDGE" ; sh:namespace "http://purl.obolibrary.org/obo/RDBRIDGE_"]
 ,[ sh:prefix "REACTO" ; sh:namespace "http://purl.obolibrary.org/obo/REACTO_"]
 ,[ sh:prefix "REACTOME" ; sh:namespace "http://purl.obolibrary.org/obo/REACTOME_"]
 ,[ sh:prefix "RHEA" ; sh:namespace "http://purl.obolibrary.org/obo/RHEA_"]
