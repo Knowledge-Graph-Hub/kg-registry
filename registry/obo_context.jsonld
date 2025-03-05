@@ -235,6 +235,10 @@
         "UNIPROT": {
             "@id": "http://purl.obolibrary.org/obo/UNIPROT_",
             "@prefix": true
+        },
+        "ZFIN": {
+            "@id": "http://purl.obolibrary.org/obo/ZFIN_",
+            "@prefix": true
         }
     }
 }
