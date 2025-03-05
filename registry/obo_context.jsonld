@@ -172,6 +172,10 @@
             "@id": "http://purl.obolibrary.org/obo/PRIMEKG_",
             "@prefix": true
         },
+        "RDBRIDGE": {
+            "@id": "http://purl.obolibrary.org/obo/RDBRIDGE_",
+            "@prefix": true
+        },
         "REACTO": {
             "@id": "http://purl.obolibrary.org/obo/REACTO_",
             "@prefix": true
