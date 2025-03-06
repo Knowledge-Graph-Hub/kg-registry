@@ -12,6 +12,12 @@ contacts:
   label: DrugBank
 homepage_url: https://www.drugbank.com/
 category: DataSource
+products:
+- category: Product
+  description: Web interface for the DrugCentral Drug Knowledgebase
+  id: drugcentral.drugkb
+  name: DrugCentral Drug Knowledgebase
+  url: https://go.drugbank.com/drugs
 ---
 
 DrugBank
