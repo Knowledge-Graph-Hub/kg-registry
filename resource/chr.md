@@ -11,13 +11,14 @@ contacts:
   github: cmungall
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
-homepage_url: http://purl.obolibrary.org/obo/chr.owl
-repository: http://purl.obolibrary.org/obo/chr.owl
+homepage_url: https://monarch-initiative.github.io/monochrom/
+repository: https://github.com/monarch-initiative/monochrom/
 products:
 - id: chr.owl
   name: Monochrom Ontology OWL release
   description: OWL release of Monochrom Ontology
   category: DataModelProduct
+  url: http://purl.obolibrary.org/obo/chr.owl
 license:
   label: CC0 1.0
   id: https://creativecommons.org/publicdomain/zero/1.0/
