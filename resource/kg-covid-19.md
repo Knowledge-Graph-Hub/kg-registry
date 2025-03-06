@@ -21,7 +21,8 @@ products:
   description: KGX nodes and edges for KG-COVID-19
   url: https://kghub.io/kg-covid-19/
   category: GraphProduct
-  is_kgx: true
+  compatibility:
+  - standard: kgx
 
 ---
 

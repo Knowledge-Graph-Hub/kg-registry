@@ -23,7 +23,6 @@ products:
   description: Merged KG with ontology-grounded KG and literature-based graph as NetworkX multidigraph object
   url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.gpickle?download=1
   dump_format: gpickle
-  is_kgx: false
   category: GraphProduct
 license:
   label: CC-BY-4.0
