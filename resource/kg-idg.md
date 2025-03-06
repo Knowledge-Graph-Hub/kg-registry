@@ -18,7 +18,8 @@ license:
   id: https://opensource.org/license/bsd-3-clause
 products:
 - id: kg-idg.tar.gz
-  is_kgx: true
+  compatibility:
+  - standard: kgx
   name: KGX Distribution of KG-IDG
   description: KGX Distribution of KG-IDG
   url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz

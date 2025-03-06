@@ -16,11 +16,12 @@ license:
 name: DrugCentral
 products:
 - category: GraphProduct
+  compatibility:
+  - standard: kgx
   derived_from: automat
   description: DrugCentral Automat
   id: drugcentral_automat
   infores_id: automat-drug-central
-  is_kgx: true
   name: drugcentral_automat
   original_source: drugcentral
   url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files

@@ -23,16 +23,11 @@ products:
   name: phenio KG
   description: KGX version of phenio
   url: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
-  is_kgx: true
-  category: GraphProduct
-  biolink_compatibility:
-    is_compatible: true
+  compatibility:
+  - standard: kgx
+  - standard: biolink
     version: 4.2.5
-    produced_by:
-      id: phenio.kgx.repo
-      name: Process for producing KG-Phenio
-      url: https://github.com/Knowledge-Graph-Hub/kg-phenio
-      category: ProcessProduct
+  category: GraphProduct
 repository: https://github.com/monarch-initiative/phenio
 usages:
 - id: cross-species-inference
