@@ -192,12 +192,6 @@ classes:
         description: The components of the knowledge graph.
         range: Resource
         multivalued: true
-      conforms_to:
-        description: >-
-          The standard or standards that the knowledge graph conforms to.
-          This is not the same as its serialization.
-        range: GraphStandardEnum
-        multivalued: true
 
   DataSource:
     description: >-
@@ -289,11 +283,13 @@ classes:
           The Infores ID of the product.
           Do not include the 'infores' prefix.
         range: string
-      biolink_compatibility:
+      compatibility:
         description: >-
-          Whether the product is compatible with the Biolink Model.
-          This class contains several slots.
-        range: BiolinkCompatibility
+          A list of standards that the product conforms to.
+          This is not the same as its serialization.
+        range: StandardCompatibility
+        multivalued: true
+        inlined: true
       dump_format:
         description: >-
           The format of a dump of the product as a file.
@@ -319,10 +315,6 @@ classes:
         description: The node categories in the graph.
         range: string
         multivalued: true
-      is_kgx:
-        description: >-
-          Whether the graph is in KGX format.
-        range: boolean
 
   DataModelProduct:
     description: >-
@@ -516,28 +508,23 @@ classes:
           The type of usage.
         range: UsageEnum
 
-  BiolinkCompatibility:
+  StandardCompatibility:
     description: >-
-      Details about the compatibility of a product with the Biolink Model.
+      Details about the compatibility of a product with a
+      particular standard, including data models such as
+      Biolink Model and graph standards such as KGX.
     attributes:
-      is_compatible:
+      standard:
         description: >-
-          Whether the product is compatible with the Biolink Model.
-        range: boolean
-        required: true
+          The name of the standard that the product is
+          compatible with.
+        range: StandardEnum
       version:
         description: >-
-          The most recent version of the Biolink Model that the product is
+          If applicable, the most recent version of the
+          standard that the product is
           known to be compatible with, e.g., 4.2.5
         range: string
-      produced_by:
-        description: >-
-          The process that made this product Biolink compatible, if
-          it did not begin that way.
-          This is a Product, generally a ProcessProduct,
-          and should be described with a Product identifier.
-        range: Product
-        inlined: true
 
 # Slots
 slots:
@@ -713,16 +700,27 @@ enums:
       other:
         description: Another format not defined here.
 
-  GraphStandardEnum:
+  StandardEnum:
     description: >-
-      The standard or standards that a knowledge graph conforms to.
+      The standard or standards that a product conforms to.
       These are not serializations, but rather the higher-level
-      frameworks that the graph is built on.
+      frameworks that the product is built on.
     permissible_values:
+      biolink:
+        description: >-
+          The Biolink Model, a standard for representing
+          biological entities and relationships.
+        meaning: https://biolink.github.io/biolink-model/
       kghub:
         description: >-
           The KG-Hub standard, which is a general-purpose
           knowledge graph standard.
+        meaning: https://kghub.org/
+      kgx:
+        description: >-
+          The KGX standard, which is a graph exchange format
+          for knowledge graphs.
+        meaning: https://github.com/biolink/kgx/blob/master/specification/kgx-format.md
 
   TagEnum:
     description: >-
