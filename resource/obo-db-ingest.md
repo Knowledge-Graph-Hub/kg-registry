@@ -1788,6 +1788,8 @@ products:
     label: CC-BY-4.0
   name: zfin OBO
   url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
+  original_source: zfin
+  derived_from: obo-db-ingest
 - category: Product
   description: zfin OWL
   id: obo-db-ingest.zfin.owl
@@ -1796,6 +1798,8 @@ products:
     label: CC-BY-4.0
   name: zfin OWL
   url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
+  original_source: zfin
+  derived_from: obo-db-ingest
 - category: Product
   description: zfin OBO Graph JSON
   id: obo-db-ingest.zfin.json
@@ -1804,6 +1808,8 @@ products:
     label: CC-BY-4.0
   name: zfin OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
+  original_source: zfin
+  derived_from: obo-db-ingest
 - category: MappingProduct
   description: zfin SSSOM
   id: obo-db-ingest.zfin.sssom.tsv
@@ -1812,6 +1818,8 @@ products:
     label: CC-BY-4.0
   name: zfin SSSOM
   url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
+  original_source: zfin
+  derived_from: obo-db-ingest
 repository: https://github.com/biopragmatics/obo-db-ingest
 ---
 OBO Database Ingestion
