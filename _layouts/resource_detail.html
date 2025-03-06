@@ -197,8 +197,7 @@ page.is_obsolete %}
             <th>ID</th>
             <th>Name</th>
             <th>Category</th>
-            <th>KGX?</th>
-            <th>Biolink?</th>
+            <th>Standards</th>
             <th>Infores ID</th>
             <th>Description</th>
           </tr>
@@ -211,25 +210,12 @@ page.is_obsolete %}
             </td>
             <td>{{p.name}}</td>
             <td>{{p.category}}</td>
-            {% if p.is_kgx %}
+            {% if p.compatibility %}
             <td>
-              ✅
+              {% for entry in p.compatibility %}
+                {{ entry.standard }}{% if entry.version %} ({{ entry.version }}){% endif %}{% if forloop.last == false %}, {% endif %}
+              {% endfor %}
             </td>
-            {% else %}
-            <td>
-              ❌
-            </td>
-            {% endif %}
-            {% if p.biolink_compatibility %}
-              {% if p.biolink_compatibility.is_compatible == true %}
-              <td>
-                ✅
-              </td>
-              {% else %}
-              <td>
-                ❌
-              </td>
-              {% endif %}
             {% else %}
             <td>
               ❔
