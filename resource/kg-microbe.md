@@ -15,14 +15,16 @@ homepage_url: https://kghub.org/kg-microbe/index.html
 repository: https://github.com/Knowledge-Graph-Hub/kg-microbe
 products:
 - id: kg-microbe.raw
-  is_kgx: true
+  compatibility:
+  - standard: kgx
   name: KG-Microbe KGX Graph - Raw
   description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
   url: https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz
   compression: targz
   category: GraphProduct
 - id: kg-microbe.core
-  is_kgx: true
+  compatibility:
+  - standard: kgx
   name: KG-Microbe KGX Graph - Core
   description: >-
     The core KG KG-Microbe-Core with ontologies, organismal traits,
@@ -31,7 +33,8 @@ products:
   compression: targz
   category: GraphProduct
 - id: kg-microbe.biomedical
-  is_kgx: true
+  compatibility:
+  - standard: kgx
   name: KG-Microbe KGX Graph - Biomedical
   description: >-
     Core plus human biomedical data (ontologies, CTD, Wallen et al)
@@ -39,7 +42,8 @@ products:
   compression: targz
   category: GraphProduct
 - id: kg-microbe.function
-  is_kgx: true
+  compatibility:
+  - standard: kgx
   name: KG-Microbe KGX Graph - Function
   description: >-
     Core plus Uniprot genome annotations
@@ -47,7 +51,8 @@ products:
   compression: targz
   category: GraphProduct
 - id: kg-microbe.biomedical-function
-  is_kgx: true
+  compatibility:
+  - standard: kgx
   name: KG-Microbe KGX Graph - Biomedical-Function
   description: >-
     Biomedical plus Uniprot genome annotations
@@ -55,7 +60,8 @@ products:
   compression: targz
   category: GraphProduct
 - id: kg-microbe.uniprot
-  is_kgx: true
+  compatibility:
+  - standard: kgx
   name: KG-Microbe UniProt microbe transform
   description: UniProt proteins from microbes, as graph nodes and edges
   compression: targz

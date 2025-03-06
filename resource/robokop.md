@@ -24,18 +24,20 @@ products:
   name: ROBOKOP Knowledge Graph (KG)
   url: http://robokopkg.renci.org
 - category: GraphProduct
+  compatibility:
+  - standard: kgx
   derived_from: automat
   description: Robokop KG (Automat)
   id: robokopkg
-  is_kgx: true
   name: robokopkg
   original_source: robokop
   url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files
 - category: GraphProduct
+  compatibility:
+  - standard: kgx
   derived_from: automat
   description: Robokop Plus
   id: robokopplus
-  is_kgx: true
   name: robokopplus
   original_source: robokop
   url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files
