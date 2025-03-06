@@ -1781,45 +1781,45 @@ products:
   name: wikipathways OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.json
 - category: Product
+  derived_from: obo-db-ingest
   description: zfin OBO
   id: obo-db-ingest.zfin.obo
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: zfin OBO
-  url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
   original_source: zfin
-  derived_from: obo-db-ingest
+  url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
 - category: Product
+  derived_from: obo-db-ingest
   description: zfin OWL
   id: obo-db-ingest.zfin.owl
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: zfin OWL
-  url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
   original_source: zfin
-  derived_from: obo-db-ingest
+  url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
 - category: Product
+  derived_from: obo-db-ingest
   description: zfin OBO Graph JSON
   id: obo-db-ingest.zfin.json
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: zfin OBO Graph JSON
-  url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
   original_source: zfin
-  derived_from: obo-db-ingest
+  url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
 - category: MappingProduct
+  derived_from: obo-db-ingest
   description: zfin SSSOM
   id: obo-db-ingest.zfin.sssom.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: zfin SSSOM
-  url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
   original_source: zfin
-  derived_from: obo-db-ingest
+  url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
 repository: https://github.com/biopragmatics/obo-db-ingest
 ---
 OBO Database Ingestion
