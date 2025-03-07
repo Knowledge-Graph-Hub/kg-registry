@@ -52,8 +52,7 @@ page.is_obsolete %}
 {% endunless %}{% endif %}
 
 <div class="row">
-  <div class="col">
-    <div class="row">
+    <div class="row header-card-row">
       <div class="card bg-light mb-3" style="max-width: 12rem;">
           <div class="card-body">
             <h5 class="card-title">Domain</h5>
@@ -191,52 +190,54 @@ page.is_obsolete %}
       <div class="card-header">
         <h4>Products</h4>
       </div>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Category</th>
-            <th>Standards</th>
-            <th>Infores ID</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for p in page.products %}
-          <tr>
-            <td>
-              <a href="{{p.url}}">{{p.id}}</a>
-            </td>
-            <td>{{p.name}}</td>
-            <td>{{p.category}}</td>
-            {% if p.compatibility %}
-            <td>
-              {% for entry in p.compatibility %}
-                {{ entry.standard }}{% if entry.version %} ({{ entry.version }}){% endif %}{% if forloop.last == false %}, {% endif %}
-              {% endfor %}
-            </td>
-            {% else %}
-            <td>
-              ❔
-            </td>
-            {% endif %}
-            {% if p.infores_id %}
-            <td>
-              infores:{{p.infores_id}}
-            </td>
-            {% else %}
-            <td>
-                <span style="color: darkred;">unknown</span>
-            </td>
-            {% endif %}
-            <td>
-              {{p.description}}
-            </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Standards</th>
+              <th>Infores ID</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for p in page.products %}
+            <tr>
+              <td>
+                <a href="{{p.url}}">{{p.id}}</a>
+              </td>
+              <td>{{p.name}}</td>
+              <td>{{p.category}}</td>
+              {% if p.compatibility %}
+              <td>
+                {% for entry in p.compatibility %}
+                  {{ entry.standard }}{% if entry.version %} ({{ entry.version }}){% endif %}{% if forloop.last == false %}, {% endif %}
+                {% endfor %}
+              </td>
+              {% else %}
+              <td>
+                ❔
+              </td>
+              {% endif %}
+              {% if p.infores_id %}
+              <td>
+                infores:{{p.infores_id}}
+              </td>
+              {% else %}
+              <td>
+                  <span style="color: darkred;">unknown</span>
+              </td>
+              {% endif %}
+              <td>
+                {{p.description}}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
     </div>
     {% else %}
     <div class="alert alert-warning" role="alert">
@@ -286,5 +287,4 @@ page.is_obsolete %}
       </div>
     </div>
     {% endif %}
-  </div>
 </div>
