@@ -32,7 +32,12 @@ jobs:
         run: |
           poetry install --no-interaction
           poetry run make
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff-index --quiet HEAD || echo "true"
       - name: Commit files
+        if: steps.check_changes.outputs.changes_detected == 'true'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
