@@ -38,12 +38,10 @@ jobs:
           git diff-index --quiet HEAD || echo "changes_detected=true" >> $GITHUB_ENV
       - name: Commit files
         if: env.changes_detected == 'true'
-        id: commit_files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git commit -m "🚀 Automatically rebuilt derived files" -a
-          echo "true"
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         if: env.changes_detected == 'true'
