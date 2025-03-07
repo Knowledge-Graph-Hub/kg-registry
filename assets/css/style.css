@@ -43,3 +43,7 @@ Custom blockquote formatting
     margin-left: 20px;
     margin-bottom: 16px;
 }
+
+.header-card-row {
+  padding-left: calc(var(--bs-gutter-x)* .5);
+}
