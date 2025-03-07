@@ -32,13 +32,19 @@ jobs:
         run: |
           poetry install --no-interaction
           poetry run make
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff-index --quiet HEAD || echo "changes_detected=true" >> $GITHUB_ENV
       - name: Commit files
+        if: env.changes_detected == 'true'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git commit -m "🚀 Automatically rebuilt derived files" -a
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
+        if: env.changes_detected == 'true'
         with:
           commit-message: Update KG-Registry metadata
           title: 'Update KG-Registry metadata'
