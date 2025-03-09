@@ -283,6 +283,10 @@ classes:
         range: StandardCompatibility
         multivalued: true
         inlined: true
+      serialization:
+        description: >-
+          The serialization format of the product.
+        range: SerializationEnum
       dump_format:
         description: >-
           The format of a dump of the product as a file.
@@ -700,6 +704,35 @@ enums:
           This file ends in .pkl or .pickle.
       other:
         description: Another format not defined here.
+
+  SerializationEnum:
+    description: >-
+      The serialization format of a product.
+    permissible_values:
+      json:
+        description: The JSON serialization format.
+      jsonld:
+        description: The JSON-LD serialization format.
+      rdfxml:
+        description: The RDF/XML serialization format.
+      ttl:
+        description: The Turtle serialization format.
+      ntriples:
+        description: The N-Triples serialization format.
+      nquads:
+        description: The N-Quads serialization format.
+      owl:
+        description: The OWL format.
+      obo:
+        description: The OBO format.
+      graphql:
+        description: The GraphQL format.
+      protobuf:
+        description: The Protobuf format.
+      shacl:
+        description: The SHACL format.
+      shex:
+        description: The ShEx format.
 
   StandardEnum:
     description: >-
