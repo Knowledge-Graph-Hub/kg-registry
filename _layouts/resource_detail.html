@@ -197,8 +197,6 @@ page.is_obsolete %}
               <th>ID</th>
               <th>Name</th>
               <th>Category</th>
-              <th>Standards</th>
-              <th>Infores ID</th>
               <th>Description</th>
             </tr>
           </thead>
@@ -212,28 +210,8 @@ page.is_obsolete %}
                 <a href="{{p.url}}">{{p.name}}</a>
               </td>
               <td>{{p.category}}</td>
-              {% if p.compatibility %}
               <td>
-                {% for entry in p.compatibility %}
-                  {{ entry.standard }}{% if entry.version %} ({{ entry.version }}){% endif %}{% if forloop.last == false %}, {% endif %}
-                {% endfor %}
-              </td>
-              {% else %}
-              <td>
-                ❔
-              </td>
-              {% endif %}
-              {% if p.infores_id %}
-              <td>
-                infores:{{p.infores_id}}
-              </td>
-              {% else %}
-              <td>
-                  <span style="color: darkred;">unknown</span>
-              </td>
-              {% endif %}
-              <td>
-                {{p.description}}
+                {{ p.description | truncate: 40 }}
               </td>
             </tr>
             {% endfor %}
