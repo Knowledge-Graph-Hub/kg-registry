@@ -488,6 +488,10 @@
                         "null"
                     ]
                 },
+                "serialization": {
+                    "$ref": "#/$defs/SerializationEnum",
+                    "description": "The serialization format of the product."
+                },
                 "tags": {
                     "description": "Tags associated with the product.",
                     "items": {
@@ -912,6 +916,10 @@
                         "null"
                     ]
                 },
+                "serialization": {
+                    "$ref": "#/$defs/SerializationEnum",
+                    "description": "The serialization format of the product."
+                },
                 "tags": {
                     "description": "Tags associated with the product.",
                     "items": {
@@ -1046,6 +1054,10 @@
                         "string",
                         "null"
                     ]
+                },
+                "serialization": {
+                    "$ref": "#/$defs/SerializationEnum",
+                    "description": "The serialization format of the product."
                 },
                 "tags": {
                     "description": "Tags associated with the product.",
@@ -1490,6 +1502,10 @@
                         "null"
                     ]
                 },
+                "serialization": {
+                    "$ref": "#/$defs/SerializationEnum",
+                    "description": "The serialization format of the product."
+                },
                 "tags": {
                     "description": "Tags associated with the product.",
                     "items": {
@@ -1707,6 +1723,10 @@
                         "null"
                     ]
                 },
+                "serialization": {
+                    "$ref": "#/$defs/SerializationEnum",
+                    "description": "The serialization format of the product."
+                },
                 "tags": {
                     "description": "Tags associated with the product.",
                     "items": {
@@ -1841,6 +1861,10 @@
                         "string",
                         "null"
                     ]
+                },
+                "serialization": {
+                    "$ref": "#/$defs/SerializationEnum",
+                    "description": "The serialization format of the product."
                 },
                 "tags": {
                     "description": "Tags associated with the product.",
@@ -1997,6 +2021,10 @@
                         "string",
                         "null"
                     ]
+                },
+                "serialization": {
+                    "$ref": "#/$defs/SerializationEnum",
+                    "description": "The serialization format of the product."
                 },
                 "tags": {
                     "description": "Tags associated with the product.",
@@ -2307,6 +2335,25 @@
             ],
             "title": "Resource",
             "type": "object"
+        },
+        "SerializationEnum": {
+            "description": "The serialization format of a product.",
+            "enum": [
+                "json",
+                "jsonld",
+                "rdfxml",
+                "ttl",
+                "ntriples",
+                "nquads",
+                "owl",
+                "obo",
+                "graphql",
+                "protobuf",
+                "shacl",
+                "shex"
+            ],
+            "title": "SerializationEnum",
+            "type": "string"
         },
         "StandardCompatibility": {
             "additionalProperties": false,
