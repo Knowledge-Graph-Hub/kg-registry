@@ -216,7 +216,6 @@ classes:
 
   Product:
     is_a: NamedThing
-    abstract: true
     description: >-
       A top-level class for all products in the
       knowledge graph registry. This includes any specific
