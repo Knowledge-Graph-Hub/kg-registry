@@ -32,6 +32,16 @@ layout: default
 <div class="row">
   <div class="row header-card-row">
     <div class="card bg-light mb-3" style="max-width: 12rem;">
+      <div class="card-body">
+        <h5 class="card-title">Format</h5>
+        {% if page.format %}
+          <p class="card-text">{{page.format}}</p>
+        {% else %}
+          <p class="card-text" style="font-weight: bold;">Unknown</p>
+        {% endif %}
+        </div>
+  </div>
+    <div class="card bg-light mb-3" style="max-width: 12rem;">
         <div class="card-body">
           <h5 class="card-title">Provided By</h5>
             <p class="card-text"><a href="{{page.derived_from}}.html">{{page.derived_from}}</a></p>
