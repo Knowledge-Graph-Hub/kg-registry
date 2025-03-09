@@ -33,6 +33,7 @@ classes:
       - id
       - category
       - warnings
+      - layout
     class_uri: schema:Thing
 
   Registry:
@@ -153,13 +154,6 @@ classes:
         description: >-
           The Infores ID of the resource.
           Do not include the 'infores' prefix.
-        range: string
-      layout:
-        description: >-
-          The layout of the resource.
-          This is used to determine how to display the resource
-          in the web interface.
-          It should generally be 'resource_detail'.
         range: string
 
   KnowledgeGraph:
@@ -545,7 +539,7 @@ slots:
     # designates_type: true
     # is_class_field: true
     description: >-
-      The category of the resource.
+      The category of the entity.
       This should be identical to its class name.
   resources:
     description: A list of entries in the registry.
@@ -563,6 +557,14 @@ slots:
     inlined: true
     inlined_as_list: true
     multivalued: true
+  layout:
+    description: >-
+      The layout of the entity.
+      This is used to determine how to display the
+      entity in the web interface.
+      For resources, this is generally 'resource_detail'.
+      For products, this is generally 'product_detail'.
+    range: string
 
 # Types
 types:
