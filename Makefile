@@ -30,8 +30,8 @@
 
 RUN = poetry run
 
-# All KG .md files
-KGS := $(wildcard resource/*.md)
+# All resource .md files
+RESOURCES := $(shell find resource -type f -name '*.md')
 
 # Path to the source KG-Registry schema
 SOURCE_SCHEMA = src/kg_registry/kg_registry_schema/schema/kg_registry_schema.yaml
@@ -117,14 +117,14 @@ reports/metadata-grid.html: reports/metadata-grid.csv
 	./util/create-html-grid.py $< $@
 
 # Extract metadata from each resource .md file and combine into single yaml
-tmp/unsorted-resources.yml: $(KGS) | tmp
+tmp/unsorted-resources.yml: $(RESOURCES) | tmp
 	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
 
 # Run validation, including with LinkML validator
-extract-metadata: $(KGS)
+extract-metadata: $(RESOURCES)
 	./util/extract-metadata.py validate $^
 
-prettify: $(KGS)
+prettify: $(RESOURCES)
 	./util/extract-metadata.py prettify $^
 
 # Run tox tests (requires `pip install tox`)
