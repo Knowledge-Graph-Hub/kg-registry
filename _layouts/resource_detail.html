@@ -197,6 +197,7 @@ page.is_obsolete %}
               <th>ID</th>
               <th>Name</th>
               <th>Category</th>
+              <th>Format</th>
               <th>Description</th>
             </tr>
           </thead>
@@ -210,6 +211,13 @@ page.is_obsolete %}
                 <a href="{{p.url}}">{{p.name}}</a>
               </td>
               <td>{{p.category}}</td>
+              <td>
+                {% if p.format %}
+                  {{ p.format }}
+                {% else %}
+                ❔
+                {% endif %}
+              </td>
               <td>
                 {{ p.description | truncate: 40 }}
               </td>
