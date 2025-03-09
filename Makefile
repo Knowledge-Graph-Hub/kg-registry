@@ -31,6 +31,9 @@
 RUN = poetry run
 
 # All resource .md files
+# Note this includes pages for individual products, too
+# Those are used to build their own pages but are not included in
+# the main registry table
 RESOURCES := $(shell find resource -type f -name '*.md')
 
 # Path to the source KG-Registry schema
