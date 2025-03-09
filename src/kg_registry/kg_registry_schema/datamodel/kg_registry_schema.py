@@ -203,6 +203,8 @@ class SerializationEnum(str, Enum):
     shacl = "shacl"
     # The ShEx format.
     shex = "shex"
+    # The KGX standard, which is a graph exchange format for knowledge graphs.
+    kgx = "kgx"
 
 
 class StandardEnum(str, Enum):
@@ -213,8 +215,6 @@ class StandardEnum(str, Enum):
     biolink = "biolink"
     # The KG-Hub standard, which is a general-purpose knowledge graph standard.
     kghub = "kghub"
-    # The KGX standard, which is a graph exchange format for knowledge graphs.
-    kgx = "kgx"
 
 
 class TagEnum(str, Enum):
