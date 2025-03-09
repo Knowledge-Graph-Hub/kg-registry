@@ -206,11 +206,9 @@ page.is_obsolete %}
             {% for p in page.products %}
             <tr>
               <td>
-                <a href="{{p.id}}.html">{{p.id}}</a>
+                <a href="{{p.url}}">{{p.id}}</a>
               </td>
-              <td>
-                <a href="{{p.url}}">{{p.name}}</a>
-              </td>
+              <td>{{p.name}}</td>
               <td>{{p.category}}</td>
               {% if p.compatibility %}
               <td>
