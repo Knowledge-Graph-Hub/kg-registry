@@ -20,7 +20,7 @@
                     "description": "The status of the resource."
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -90,7 +90,7 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -205,7 +205,7 @@
             "description": "A contact point for a resource or product.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -224,7 +224,7 @@
                     "description": "The status of the resource."
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -294,7 +294,7 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -393,7 +393,7 @@
             "description": "A product that is a data model, such as an ontology or schema.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -447,6 +447,13 @@
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -525,7 +532,7 @@
                     "description": "The status of the resource."
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -595,7 +602,7 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -726,7 +733,7 @@
             "description": "A funding source for a resource.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -746,6 +753,13 @@
                         }
                     ],
                     "description": "The organization providing the funding."
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "warnings": {
                     "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
@@ -769,7 +783,7 @@
             "description": "A product that is a graph, represented as nodes and edges.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -830,6 +844,13 @@
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -931,7 +952,7 @@
             "description": "A product that is a graphical interface to a resource. Similar to the \"browsers\" field in OBO Foundry.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -985,6 +1006,13 @@
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -1059,7 +1087,7 @@
             "description": "An individual person.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1107,7 +1135,7 @@
                     "description": "The status of the resource."
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1215,7 +1243,7 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -1314,7 +1342,7 @@
             "description": "A license for a resource or product. The id field should be a URL to the license text, e.g., https://creativecommons.org/licenses/by/4.0/",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1326,6 +1354,13 @@
                 },
                 "label": {
                     "description": "The name of the license.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -1360,7 +1395,7 @@
             "description": "A product that is a mapping between two or more data sources.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1414,6 +1449,13 @@
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -1488,7 +1530,7 @@
             "description": "A generic grouping for any identifiable entity",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1497,6 +1539,13 @@
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "warnings": {
                     "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
@@ -1520,7 +1569,7 @@
             "description": "An organization.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1563,7 +1612,7 @@
             "description": "A product that is a process or algorithm.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1617,6 +1666,13 @@
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -1691,7 +1747,7 @@
             "description": "A top-level class for all products in the knowledge graph registry. This includes any specific files, APIs, or any other accessible representations of a resource.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1745,6 +1801,13 @@
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -1819,7 +1882,7 @@
             "description": "A product that is a programming interface (API) to a resource.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1896,6 +1959,13 @@
                     "description": "Whether the API is publicly accessible, or requires only publicly provided credentials.",
                     "type": [
                         "boolean",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
+                    "type": [
+                        "string",
                         "null"
                     ]
                 },
@@ -1978,7 +2048,7 @@
                     ]
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1997,6 +2067,13 @@
                 },
                 "journal": {
                     "description": "The journal the publication was published in.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -2067,7 +2144,7 @@
                     "description": "The status of the resource."
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -2137,7 +2214,7 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -2275,7 +2352,7 @@
             "description": "The usage of a resource. This may be actual, experimental, or theoretical.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -2294,6 +2371,13 @@
                 },
                 "label": {
                     "description": "The label of the usage.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
