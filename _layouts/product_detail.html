@@ -9,56 +9,40 @@ layout: default
     {% endif %} {{ page.id }}
   </h1>
   {% if page.category %}
-    {% if page.category == "Aggregator" %}
-      <p>is an <strong><em>Aggregator.</em></strong></p>
-    {% elsif page.category == "Resource" %}
-      <p>is a general purpose <strong><em>Resource.</em></strong></p>
-    {% elsif page.category == "KnowledgeGraph" %}
-      <p>is a <strong><em>Knowledge Graph.</em></strong></p>
-    {% elsif page.category == "DataSource" %}
-      <p>is a <strong><em>Data Source.</em></strong></p>
-    {% elsif page.category == "DataModel" %}
+    {% if page.category == "GraphProduct" %}
+      <p>is a <strong><em>Graph.</em></strong></p>
+    {% elsif page.category == "Product" %}
+      <p>is a general purpose <strong><em>Product.</em></strong></p>
+    {% elsif page.category == "MappingProduct" %}
+      <p>is a <strong><em>Mapping.</em></strong></p>
+    {% elsif page.category == "ProcessProduct" %}
+      <p>is a <strong><em>Process.</em></strong></p>
+    {% elsif page.category == "DataModelProduct" %}
       <p>is a <strong><em>Data Model or Ontology.</em></strong></p>
+    {% elsif page.category == "GraphicalInterface" %}
+      <p>is a <strong><em>Graphical Interface</em> for a product or resource.</strong></p>
+    {% elsif page.category == "ProgrammingInterface" %}
+      <p>is a <strong><em>Programming Interface</em> for a product or resource.</strong></p>
     {% endif %}
   {% endif %}
   <p>{{page.description}}</p>
 </div>
 
-{% if page.is_obsolete %}
-<div class="row">
-  <div class="alert alert-danger" role="alert">
-    This resource is deprecated!
-  </div>
-  {% for repl in page.replaced_by %}
-  <div class="alert alert-info" role="alert">
-    Consider using: <a href="{{repl}}.html">{{repl}}</a>
-  </div>
-  {% endfor %}
-</div>
-{% endif %} {% if page.activity_status == "inactive" %}{% unless
-page.is_obsolete %}
-<div class="row">
-  <div class="alert alert-warning" role="alert">
-    This resource is inactive. It may not be actively maintained.
-  </div>
-</div>
-{% endunless %}{% endif %} {% if page.activity_status == "orphaned" %}{% unless
-page.is_obsolete %}
-<div class="row">
-  <div class="alert alert-warning" role="alert">
-    This resource is orphaned. It is no longer maintained.
-  </div>
-</div>
-{% endunless %}{% endif %}
 <div class="col">
 <div class="row">
-    <div class="row header-card-row">
-      <div class="card bg-light mb-3" style="max-width: 12rem;">
-          <div class="card-body">
-            <h5 class="card-title">Domain</h5>
-            <p class="card-text">{{page.domain}}</p>
+  <div class="row header-card-row">
+    <div class="card bg-light mb-3" style="max-width: 12rem;">
+        <div class="card-body">
+          <h5 class="card-title">Provided By</h5>
+            <p class="card-text"><a href="{{page.derived_from}}.html">{{page.derived_from}}</a></p>
           </div>
-      </div>
+    </div>
+    <div class="card bg-light mb-3" style="max-width: 12rem;">
+      <div class="card-body">
+        <h5 class="card-title">Original Source</h5>
+          <p class="card-text"><a href="{{page.original_source}}.html">{{page.original_source}}</a></p>
+        </div>
+  </div>
       <div class="card bg-light mb-3" style="max-width: 12rem;">
           <div class="card-body">
             <h5 class="card-title">License</h5>
@@ -68,48 +52,6 @@ page.is_obsolete %}
               <p class="card-text" style="color: red; font-weight: bold;">Warning: No license entered</p>
             {% endif %}
             </div>
-      </div>
-      <div class="card bg-light mb-3" style="max-width: 12rem;">
-        <div class="card-body">
-          <h5 class="card-title">Homepage</h5>
-          {% if page.homepage_url %}
-            <p class="card-text"><a href="{{page.homepage_url}}">{{page.id}}</a></p>
-          {% else %}
-            <p class="card-text" style="font-weight: bold;">Unknown</p>
-          {% endif %}
-        </div>
-      </div>
-      <div class="card bg-light mb-3" style="max-width: 12rem;">
-        <div class="card-body">
-          <h5 class="card-title">Repository</h5>
-          {% if page.repository and page.repository contains "https://github.com/" %}
-            <p class="card-text"><a href="{{page.repository}}">Github</a></p>
-          {% elsif page.repository %}
-            <p class="card-text"><a href="{{page.repository}}">Repository</a></p>
-          {% else %}
-            <p class="card-text" style="font-weight: bold;">Unknown</p>
-          {% endif %}
-          </div>
-      </div>
-      <div class="card bg-light mb-3" style="max-width: 12rem;">
-        <div class="card-body">
-          <h5 class="card-title">Infores ID</h5>
-          {% if page.infored_id %}
-            <p class="card-text">infores:{{page.infores_id}}</p>
-          {% else %}
-            <p class="card-text" style="font-weight: bold;">Unknown</p>
-          {% endif %}
-          </div>
-      </div>
-      <div class="card bg-light mb-3" style="max-width: 12rem;">
-        <div class="card-body">
-          <h5 class="card-title">FAIRsharing ID</h5>
-          {% if page.fairsharing_id %}
-            <p class="card-text"><a href="https://fairsharing.org/{{page.fairsharing_id}}">{{page.fairsharing_id}}</a></p>
-          {% else %}
-            <p class="card-text" style="font-weight: bold;">Unknown</p>
-          {% endif %}
-          </div>
       </div>
     </div>
 
@@ -121,48 +63,17 @@ page.is_obsolete %}
       {% endfor %}
     {% endif %}
 
-    {% if page.contacts %}
-    <div class="card px-0" style="margin-bottom: 1.5em" id="contacts">
-      <div class="card-header">
-        <h4>Contacts</h4>
-      </div>
-      <div class="list-group list-group-flush">
-        {% for c in page.contacts %}
-        <div class="list-group-item">
-          {% if c.email %}
-            <p><a href="mailto:{{c.email}}">{{c.label}}</a></p>
-          {% else %}
-          {% if c.label %}
-            <p>{{c.label}}</p>
-          {% endif %}
-          {% endif %}
-            {% if c.orcid %}
-            <strong>ORCID:</strong><a href="https://orcid.org/{{ c.orcid }}">{{ c.orcid }}</a>
-          {% endif %}
-          {% if c.github %}
-            <strong>Github:</strong><a href="https://github.com/{{ c.github }}">{{ c.github }}</a>
-          {% endif %}
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-    {% endif %}
-
-    {% if page.publications and page.publications.size > 0 %}
+    {% if page.compatibility %}
     <div class="card px-0" style="margin-bottom: 1.5em" id="publications">
       <div class="card-header">
-        <h4>Publications</h4>
+        <h4>Compatibility</h4>
       </div>
       <div class="list-group list-group-flush">
-        {% for p in page.publications %}
+        {% for c in page.compatibility %}
         <div class="list-group-item">
-          {% if p.doi %}
-            <a href="http://dx.doi.org/{{p.doi}}">{{p.title}}</a>
-          {% else %}
-            <a href="{{p.id}}">{{p.title}}</a>
-          {% endif %}
-          {% if p.preferred %}
-          <span class="badge">Preferred</span>
+          {{c.standard}}
+          {% if c.version %}
+          <span class="badge badge-primary badge-pill">{{c.version}}</span>
           {% endif %}
         </div>
         {% endfor %}
@@ -170,122 +81,5 @@ page.is_obsolete %}
     </div>
     {% endif %}
 
-    {% if page.funded_by %}
-    <div class="card px-0" style="margin-bottom: 1.5em">
-      <div class="card-header">
-        <h4>Funding</h4>
-      </div>
-      <div class="list-group list-group-flush">
-        {% for p in page.funded_by %}
-        <div class="list-group-item">
-          <a href="{{ p.id }}">{{ p.title }}</a>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-    {% endif %}
-
-    {% if page.products and page.products.size > 0 %}
-    <div class="card px-0" style="margin-bottom: 1.5em">
-      <div class="card-header">
-        <h4>Products</h4>
-      </div>
-      <div class="table-responsive">
-        <table class="table table-striped mb-0">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Name</th>
-              <th>Category</th>
-              <th>Standards</th>
-              <th>Infores ID</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for p in page.products %}
-            <tr>
-              <td>
-                <a href="{{p.url}}">{{p.id}}</a>
-              </td>
-              <td>{{p.name}}</td>
-              <td>{{p.category}}</td>
-              {% if p.compatibility %}
-              <td>
-                {% for entry in p.compatibility %}
-                  {{ entry.standard }}{% if entry.version %} ({{ entry.version }}){% endif %}{% if forloop.last == false %}, {% endif %}
-                {% endfor %}
-              </td>
-              {% else %}
-              <td>
-                ❔
-              </td>
-              {% endif %}
-              {% if p.infores_id %}
-              <td>
-                infores:{{p.infores_id}}
-              </td>
-              {% else %}
-              <td>
-                  <span style="color: darkred;">unknown</span>
-              </td>
-              {% endif %}
-              <td>
-                {{p.description}}
-              </td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
-    </div>
-    {% else %}
-    <div class="alert alert-warning" role="alert">
-      No products available. You could <a href="https://github.com/Knowledge-Graph-Hub/kg-registry/issues/new?template=update-resource.yml">suggest one to add!</a>
-    </div>
-    {% endif %}
-
-    {% if page.usages %}
-    <div class="card px-0" style="margin-bottom: 1.5em;">
-      <div class="card-header">
-        <h4>Usages</h4>
-      </div>
-      <div class="list-group list-group-flush">
-        {% for p in page.usages %}
-        <div class="list-group-item">
-          <dl class="dl-horizontal" style="margin-bottom: 0">
-            <dt>{{p.label}}</dt>
-            <dd>{{p.description}}</dd>
-            {% if p.type %}
-            <dt>Type</dt>
-            <dd>{{p.type}}</dd>
-            {% endif %} {% if p.url %}
-            <dt>Link</dt>
-            <dd><a href="{{p.url}}">{{p.url}}</a></dd>
-            {% endif %} {% if p.publications %}
-            <dt>Publications</dt>
-            <dd>
-              <ul style="padding-left: 20px">
-                {% for publication in p.publications %}
-                <li><a href="https://doi.org/{{publication.doi}}">{{publication.title}}</a></li>
-                {% endfor %}
-              </ul>
-            </dd>
-            {% endif %} {% if p.users %}
-            <dt>Users</dt>
-            <dd>
-              <ul style="padding-left: 20px">
-                {% for user in p.users %}
-                <li>{{user.label}}</li>
-                {% endfor %}
-              </ul>
-            </dd>
-            {% endif %}
-          </dl>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-    {% endif %}
   </div>
 </div>
