@@ -400,7 +400,7 @@
                     ]
                 },
                 "compatibility": {
-                    "description": "A list of standards that the product conforms to. This is not the same as its serialization.",
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
                     "items": {
                         "$ref": "#/$defs/StandardCompatibility"
                     },
@@ -440,6 +440,10 @@
                 "dump_format": {
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
+                },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
                 },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
@@ -487,10 +491,6 @@
                         "string",
                         "null"
                     ]
-                },
-                "serialization": {
-                    "$ref": "#/$defs/SerializationEnum",
-                    "description": "The serialization format of the product."
                 },
                 "tags": {
                     "description": "Tags associated with the product.",
@@ -732,6 +732,26 @@
             "title": "DumpFormatEnum",
             "type": "string"
         },
+        "FormatEnum": {
+            "description": "The serialization/format of a product.",
+            "enum": [
+                "json",
+                "jsonld",
+                "rdfxml",
+                "ttl",
+                "ntriples",
+                "nquads",
+                "owl",
+                "obo",
+                "graphql",
+                "protobuf",
+                "shacl",
+                "shex",
+                "kgx"
+            ],
+            "title": "FormatEnum",
+            "type": "string"
+        },
         "FundingSource": {
             "additionalProperties": false,
             "description": "A funding source for a resource.",
@@ -794,7 +814,7 @@
                     ]
                 },
                 "compatibility": {
-                    "description": "A list of standards that the product conforms to. This is not the same as its serialization.",
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
                     "items": {
                         "$ref": "#/$defs/StandardCompatibility"
                     },
@@ -841,6 +861,10 @@
                         "integer",
                         "null"
                     ]
+                },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
                 },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
@@ -916,10 +940,6 @@
                         "null"
                     ]
                 },
-                "serialization": {
-                    "$ref": "#/$defs/SerializationEnum",
-                    "description": "The serialization format of the product."
-                },
                 "tags": {
                     "description": "Tags associated with the product.",
                     "items": {
@@ -967,7 +987,7 @@
                     ]
                 },
                 "compatibility": {
-                    "description": "A list of standards that the product conforms to. This is not the same as its serialization.",
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
                     "items": {
                         "$ref": "#/$defs/StandardCompatibility"
                     },
@@ -1007,6 +1027,10 @@
                 "dump_format": {
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
+                },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
                 },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
@@ -1054,10 +1078,6 @@
                         "string",
                         "null"
                     ]
-                },
-                "serialization": {
-                    "$ref": "#/$defs/SerializationEnum",
-                    "description": "The serialization format of the product."
                 },
                 "tags": {
                     "description": "Tags associated with the product.",
@@ -1414,7 +1434,7 @@
                     ]
                 },
                 "compatibility": {
-                    "description": "A list of standards that the product conforms to. This is not the same as its serialization.",
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
                     "items": {
                         "$ref": "#/$defs/StandardCompatibility"
                     },
@@ -1454,6 +1474,10 @@
                 "dump_format": {
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
+                },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
                 },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
@@ -1501,10 +1525,6 @@
                         "string",
                         "null"
                     ]
-                },
-                "serialization": {
-                    "$ref": "#/$defs/SerializationEnum",
-                    "description": "The serialization format of the product."
                 },
                 "tags": {
                     "description": "Tags associated with the product.",
@@ -1635,7 +1655,7 @@
                     ]
                 },
                 "compatibility": {
-                    "description": "A list of standards that the product conforms to. This is not the same as its serialization.",
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
                     "items": {
                         "$ref": "#/$defs/StandardCompatibility"
                     },
@@ -1675,6 +1695,10 @@
                 "dump_format": {
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
+                },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
                 },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
@@ -1722,10 +1746,6 @@
                         "string",
                         "null"
                     ]
-                },
-                "serialization": {
-                    "$ref": "#/$defs/SerializationEnum",
-                    "description": "The serialization format of the product."
                 },
                 "tags": {
                     "description": "Tags associated with the product.",
@@ -1774,7 +1794,7 @@
                     ]
                 },
                 "compatibility": {
-                    "description": "A list of standards that the product conforms to. This is not the same as its serialization.",
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
                     "items": {
                         "$ref": "#/$defs/StandardCompatibility"
                     },
@@ -1814,6 +1834,10 @@
                 "dump_format": {
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
+                },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
                 },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
@@ -1862,10 +1886,6 @@
                         "null"
                     ]
                 },
-                "serialization": {
-                    "$ref": "#/$defs/SerializationEnum",
-                    "description": "The serialization format of the product."
-                },
                 "tags": {
                     "description": "Tags associated with the product.",
                     "items": {
@@ -1913,7 +1933,7 @@
                     ]
                 },
                 "compatibility": {
-                    "description": "A list of standards that the product conforms to. This is not the same as its serialization.",
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
                     "items": {
                         "$ref": "#/$defs/StandardCompatibility"
                     },
@@ -1960,6 +1980,10 @@
                 "dump_format": {
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
+                },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
                 },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
@@ -2021,10 +2045,6 @@
                         "string",
                         "null"
                     ]
-                },
-                "serialization": {
-                    "$ref": "#/$defs/SerializationEnum",
-                    "description": "The serialization format of the product."
                 },
                 "tags": {
                     "description": "Tags associated with the product.",
@@ -2335,26 +2355,6 @@
             ],
             "title": "Resource",
             "type": "object"
-        },
-        "SerializationEnum": {
-            "description": "The serialization format of a product.",
-            "enum": [
-                "json",
-                "jsonld",
-                "rdfxml",
-                "ttl",
-                "ntriples",
-                "nquads",
-                "owl",
-                "obo",
-                "graphql",
-                "protobuf",
-                "shacl",
-                "shex",
-                "kgx"
-            ],
-            "title": "SerializationEnum",
-            "type": "string"
         },
         "StandardCompatibility": {
             "additionalProperties": false,

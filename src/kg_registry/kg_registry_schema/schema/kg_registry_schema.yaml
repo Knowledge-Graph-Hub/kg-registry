@@ -279,14 +279,15 @@ classes:
       compatibility:
         description: >-
           A list of standards that the product conforms to.
-          This is not the same as its serialization.
+          This is not the same as its serialization/format.
         range: StandardCompatibility
         multivalued: true
         inlined: true
-      serialization:
+      format:
         description: >-
-          The serialization format of the product.
-        range: SerializationEnum
+          The format or serialization of the product.
+          Generally corresponds to the file extension.
+        range: FormatEnum
       dump_format:
         description: >-
           The format of a dump of the product as a file.
@@ -705,22 +706,22 @@ enums:
       other:
         description: Another format not defined here.
 
-  SerializationEnum:
+  FormatEnum:
     description: >-
-      The serialization format of a product.
+      The serialization/format of a product.
     permissible_values:
       json:
-        description: The JSON serialization format.
+        description: The JSON format.
       jsonld:
-        description: The JSON-LD serialization format.
+        description: The JSON-LD format.
       rdfxml:
-        description: The RDF/XML serialization format.
+        description: The RDF/XML format.
       ttl:
-        description: The Turtle serialization format.
+        description: The Turtle format.
       ntriples:
-        description: The N-Triples serialization format.
+        description: The N-Triples format.
       nquads:
-        description: The N-Quads serialization format.
+        description: The N-Quads format.
       owl:
         description: The OWL format.
       obo:
