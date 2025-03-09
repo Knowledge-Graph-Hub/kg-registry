@@ -733,6 +733,11 @@ enums:
         description: The SHACL format.
       shex:
         description: The ShEx format.
+      kgx:
+        description: >-
+          The KGX standard, which is a graph exchange format
+          for knowledge graphs.
+        meaning: https://github.com/biolink/kgx/blob/master/specification/kgx-format.md
 
   StandardEnum:
     description: >-
@@ -750,11 +755,6 @@ enums:
           The KG-Hub standard, which is a general-purpose
           knowledge graph standard.
         meaning: https://kghub.org/
-      kgx:
-        description: >-
-          The KGX standard, which is a graph exchange format
-          for knowledge graphs.
-        meaning: https://github.com/biolink/kgx/blob/master/specification/kgx-format.md
 
   TagEnum:
     description: >-

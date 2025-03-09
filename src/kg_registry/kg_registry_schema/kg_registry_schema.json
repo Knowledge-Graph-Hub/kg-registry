@@ -2350,7 +2350,8 @@
                 "graphql",
                 "protobuf",
                 "shacl",
-                "shex"
+                "shex",
+                "kgx"
             ],
             "title": "SerializationEnum",
             "type": "string"
@@ -2378,8 +2379,7 @@
             "description": "The standard or standards that a product conforms to. These are not serializations, but rather the higher-level frameworks that the product is built on.",
             "enum": [
                 "biolink",
-                "kghub",
-                "kgx"
+                "kghub"
             ],
             "title": "StandardEnum",
             "type": "string"
