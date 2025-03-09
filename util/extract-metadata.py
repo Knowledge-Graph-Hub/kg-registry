@@ -103,8 +103,17 @@ def validate_markdown(args):
             errs.append("%s does not contain frontmatter" % (fn))
 
         # Run LinkML validator
+        # Different objects need to be validated against different
+        # parts of the schema
         (obj, md) = load_md(fn)
-        report = validate(instance=obj, schema=SOURCE_SCHEMA_PATH, target_class="Resource")
+
+        # If this is the root of the resource, validate against the Resource class
+        # Otherwise we assume it is a product and validate against the Product class
+        if obj.get("id") == pathlib.Path(fn).parent.name:
+            target_class = "Resource"
+        else:
+            target_class = "Product"
+        report = validate(instance=obj, schema=SOURCE_SCHEMA_PATH, target_class=target_class)
         if not report.results:
             print(f"No schema validation errors found for {fn}")
         else:
@@ -141,7 +150,7 @@ def concat_resource_yaml(args):
 
     This function also: 
     * Propagates derived products to the source Resource pages
-    * Adds a logo to the license metadata if it exists.
+    * Adds a logo to the license metadata if it exists
     """
 
     def decorate_metadata(objs):
@@ -237,7 +246,9 @@ def concat_resource_yaml(args):
             cfg = yaml.load(f.read(), Loader=yaml.SafeLoader)
     for fn in args.files:
         (obj, md) = load_md(fn)
-        library.append(obj)
+        # Check if the object is actually a product
+        if obj.get("id") == pathlib.Path(fn).parent.name:
+            library.append(obj)
     objs = foundry + library + obsolete
     cfg["resources"] = objs
 
