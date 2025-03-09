@@ -197,7 +197,9 @@ def concat_resource_yaml(args):
         # And write newly added products to their respective Resource pages
         for obj in objs:
             if obj["id"] in to_be_propagated:
-                print(f"Writing {len(to_be_propagated[obj["id"]])} product(s) to {obj['id']} entry")
+                print(f"{len(to_be_propagated[obj["id"]])} product(s) reference {obj['id']} entry")
+
+                total_written = 0
 
                 if "products" not in obj:
                     obj["products"] = []
@@ -208,9 +210,10 @@ def concat_resource_yaml(args):
                     # Write to the concatenated list of resources
                     if product not in obj["products"]:
                         obj["products"].append(product)
+                        total_written += 1
 
                     # Write to the respective Resource page
-                    fn = f"resource/{obj['id']}.md"
+                    fn = f"resource/{obj['id']}/{obj['id']}.md"
                     (metadata, md) = load_md(fn)
                     if "products" not in metadata:
                         metadata["products"] = []
@@ -218,6 +221,11 @@ def concat_resource_yaml(args):
                         metadata["products"].append(product)
                     with open(fn, "w") as f:
                         f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
+                
+                if total_written > 0:
+                    print(f" Wrote {str(total_written)} product(s) to {obj['id']} entry")
+                else:
+                    print(f" No new products written to {obj['id']} entry - may already exist")
 
     objs = []
     foundry = []
