@@ -19,12 +19,11 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
 products:
 - id: rtx_kgx_files
-  compatibility:
-  - standard: kgx
   name: RTX-KG2 KGX
   description: KGX distribution of the RTX-KG2
   url: https://github.com/ncats/translator-lfs-artifacts/blob/main/files/
   category: GraphProduct
+  format: kgx
 category: KnowledgeGraph
 ---
 

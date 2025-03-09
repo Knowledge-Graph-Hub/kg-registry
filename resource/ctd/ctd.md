@@ -16,10 +16,9 @@ license:
 name: Comparative Toxicogenomics Database
 products:
 - category: GraphProduct
-  compatibility:
-  - standard: kgx
   derived_from: automat
   description: CTD Automat
+  format: kgx
   id: ctd_automat
   infores_id: automat-ctd
   name: ctd_automat

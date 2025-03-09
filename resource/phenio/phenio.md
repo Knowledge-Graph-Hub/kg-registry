@@ -19,14 +19,15 @@ products:
   url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl
   name: phenio
   category: Product
+  format: owl
 - id: phenio.kgx
   name: phenio KG
   description: KGX version of phenio
   url: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
   compatibility:
-  - standard: kgx
   - standard: biolink
     version: 4.2.5
+  format: kgx
   category: GraphProduct
 repository: https://github.com/monarch-initiative/phenio
 usages:

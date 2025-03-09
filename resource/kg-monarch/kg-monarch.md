@@ -15,12 +15,11 @@ homepage_url: https://kghub.org/kg-monarch/index.html
 repository: https://github.com/monarch-initiative/monarch-ingest
 products:
 - id: kg-monarch.tar.gz
-  compatibility:
-  - standard: kgx
   name: KGX Distribution of KGM
   description: KGX Distribution of KGM
   url: https://kg-hub.berkeleybop.io/kg-monarch/current/kg-monarch.tar.gz
   category: GraphProduct
+  format: kgx
 license:
   label: CC0 1.0
   id: https://creativecommons.org/publicdomain/zero/1.0/

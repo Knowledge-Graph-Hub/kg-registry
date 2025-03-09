@@ -16,10 +16,9 @@ license:
 name: DrugCentral
 products:
 - category: GraphProduct
-  compatibility:
-  - standard: kgx
   derived_from: automat
   description: DrugCentral Automat
+  format: kgx
   id: drugcentral_automat
   infores_id: automat-drug-central
   name: drugcentral_automat
