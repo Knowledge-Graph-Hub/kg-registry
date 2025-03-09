@@ -22,7 +22,8 @@ products:
   - standard: biolink
     version: 4.2.5
   description: OWL release of Biolink Model
-  id: biolink-model.owl.ttl
+  format: owl
+  id: biolink.model.owl
   name: Biolink Model OWL release
   url: https://w3id.org/biolink/biolink-model.owl.ttl
 - category: DataModelProduct
@@ -30,7 +31,8 @@ products:
   - standard: biolink
     version: 4.2.5
   description: JSON schema release of Biolink Model
-  id: biolink-model.json
+  format: json
+  id: biolink.model.json
   name: Biolink Model JSON release
   url: https://w3id.org/biolink/biolink-model.json
 - category: DataModelProduct
@@ -38,7 +40,8 @@ products:
   - standard: biolink
     version: 4.2.5
   description: GraphQL release of Biolink Model
-  id: biolink-model.graphql
+  format: graphql
+  id: biolink.model.graphql
   name: Biolink Model GraphQL release
   url: https://w3id.org/biolink/biolink-model.graphql
 - category: DataModelProduct
@@ -46,12 +49,17 @@ products:
   - standard: biolink
     version: 4.2.5
   description: Protobuf release of Biolink Model
-  id: biolink-model.proto
+  format: protobuf
+  id: biolink.model.proto
   name: Biolink Model Protobuf release
   url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/protobuf/biolink_model.proto
 - category: DataModelProduct
+  compatibility:
+  - standard: biolink
+    version: 4.2.5
   description: SHACL release of Biolink Model
-  id: biolink-model.shacl
+  format: shacl
+  id: biolink.model.shacl
   name: Biolink Model SHACL release
   url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shacl/biolink_model.shacl.ttl
 - category: DataModelProduct
@@ -59,14 +67,21 @@ products:
   - standard: biolink
     version: 4.2.5
   description: ShEx release of Biolink Model
-  id: biolink-model.shex
+  format: shex
+  id: biolink.model.shex
   name: Biolink Model ShEx release
   url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
 - category: GraphProduct
-  compatibility:
-  - standard: kgx
   derived_from: automat
   description: Biolink Automat
+  id: biolink_automat
+  name: biolink_automat
+  original_source: biolink
+  url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
+- category: GraphProduct
+  derived_from: automat
+  description: Biolink Automat
+  format: kgx
   id: biolink_automat
   name: biolink_automat
   original_source: biolink

@@ -21,9 +21,7 @@ products:
   description: KGX nodes and edges for KG-COVID-19
   url: https://kghub.io/kg-covid-19/
   category: GraphProduct
-  compatibility:
-  - standard: kgx
-
+  format: kgx
 ---
 
 KG-COVID-19: a knowledge graph for COVID-19 and SARS-COV-2.

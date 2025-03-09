@@ -17,18 +17,16 @@ repository: https://github.com/broadinstitute/molecular-data-provider/
 products:
 - id: molecular-data-kp.nodes
   name: Nodes for Molecular Data KP
-  compatibility:
-  - standard: kgx
   description: KGX nodes for Molecular Data KP
   url: https://molepro.s3.amazonaws.com/nodes.tsv
   category: GraphProduct
+  format: kgx
 - id: molecular-data-kp.edges
   name: Edges for Molecular Data KP
-  compatibility:
-  - standard: kgx
   description: KGX edges for Molecular Data KP
   url: https://molepro.s3.amazonaws.com/edges.tsv
   category: GraphProduct
+  format: kgx
 - id: molecular-data-kp.api
   name: Open API for Molecular Data KP
   description: Open API for Molecular Data KP
