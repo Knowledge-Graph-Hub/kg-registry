@@ -26,7 +26,7 @@ products:
 - category: GraphProduct
   derived_from: automat
   description: Robokop KG (Automat)
-  format: kgx
+  format: kgx-jsonl
   id: automat.robokopkg
   name: robokopkg
   original_source: robokop
@@ -34,7 +34,7 @@ products:
 - category: GraphProduct
   derived_from: automat
   description: Robokop Plus
-  format: kgx
+  format: kgx-jsonl
   id: automat.robokopplus
   name: robokopplus
   original_source: robokop

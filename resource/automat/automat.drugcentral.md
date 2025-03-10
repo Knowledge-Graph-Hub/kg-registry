@@ -2,7 +2,7 @@
 category: GraphProduct
 derived_from: automat
 description: DrugCentral Automat
-format: kgx
+format: kgx-jsonl
 id: automat.drugcentral
 infores_id: automat-drug-central
 name: drugcentral_automat

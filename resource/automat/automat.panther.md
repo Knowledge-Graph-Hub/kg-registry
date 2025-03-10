@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: PANTHER Automat
-format: kgx
+format: kgx-jsonl
 id: automat.panther
 infores_id: automat-panther
 name: panther_automat

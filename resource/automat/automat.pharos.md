@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: PHAROS Automat
-format: kgx
+format: kgx-jsonl
 id: automat.pharos
 infores_id: automat-pharos
 name: pharos_automat
