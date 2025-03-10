@@ -1,0 +1,9 @@
+---
+category: GraphProduct
+description: PANTHER Automat
+format: kgx
+id: automat.panther
+infores_id: automat-panther
+name: panther_automat
+url: https://stars.renci.org/var/plater/bl-3.1.2/PANTHER_Automat/latest/kgx_files
+---

@@ -155,6 +155,21 @@ products:
   name: drugcentral_automat
   original_source: drugcentral
   url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
+- category: GraphProduct
+  derived_from: automat
+  description: Biolink Automat
+  id: biolink_automat
+  name: biolink_automat
+  original_source: biolink
+  url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
+- category: GraphProduct
+  derived_from: automat
+  description: Biolink Automat
+  format: kgx
+  id: biolink_automat
+  name: biolink_automat
+  original_source: biolink
+  url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
 repository: https://github.com/RobokopU24/
 ---
 A Translator Knowledge Provider offering multiple sub-graphs in KGX format.
