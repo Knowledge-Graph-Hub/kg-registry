@@ -120,6 +120,8 @@ reports/metadata-grid.html: reports/metadata-grid.csv
 	./util/create-html-grid.py $< $@
 
 # Extract metadata from each resource .md file and combine into single yaml
+# Also create product pages where needed
+# and propagate product entries to related resources
 tmp/unsorted-resources.yml: $(RESOURCES) | tmp
 	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
 
