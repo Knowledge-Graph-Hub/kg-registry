@@ -17,7 +17,7 @@ license:
   label: BSD3
   id: https://opensource.org/license/bsd-3-clause
 products:
-- id: kg-idg.tar.gz
+- id: kg-idg.graph
   name: KGX Distribution of KG-IDG
   description: KGX Distribution of KG-IDG
   url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz

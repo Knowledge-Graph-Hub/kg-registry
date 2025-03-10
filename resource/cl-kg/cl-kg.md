@@ -18,7 +18,7 @@ license:
   id: https://www.apache.org/licenses/LICENSE-2.0
 category: KnowledgeGraph
 products:
-- id: cl-kg.neo4j
+- id: cl-kg.interface.neo4j
   name: CL-KG Neo4j graph instance
   description: Publicly available Neo4j instance for CL-KG.
   category: ProgrammingInterface

@@ -15,11 +15,12 @@ contacts:
 homepage_url: https://github.com/geneontology/neo/
 repository: https://github.com/geneontology/neo/
 products:
-- id: neo.owl
+- id: neo.model
   name: neo OWL release
   description: OWL release of neo
   category: Product
   url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
+  format: owl
 category: Resource
 
 ---

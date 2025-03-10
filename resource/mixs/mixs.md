@@ -18,7 +18,7 @@ contacts:
 homepage_url: https://w3id.org/mixs
 repository: https://github.com/GenomicsStandardsConsortium/mixs
 products:
-- id: mixs.owl
+- id: mixs.model
   name: MIxS OWL release
   description: OWL release of mixs
   url: https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/refs/heads/main/project/owl/mixs.owl.ttl

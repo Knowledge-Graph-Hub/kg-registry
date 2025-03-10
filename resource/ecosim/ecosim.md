@@ -14,10 +14,11 @@ contacts:
 homepage_url: http://purl.obolibrary.org/obo/ecosim.owl
 repository: http://purl.obolibrary.org/obo/ecosim.owl
 products:
-- id: ecosim.owl
+- id: ecosim.model.owl
   name: ecosim OWL release
   description: OWL release of ecosim
   category: Product
+  format: owl
 category: Resource
 ---
 

@@ -18,7 +18,7 @@ homepage_url: https://github.com/gnn4dr/DRKG
 repository: https://github.com/gnn4dr/DRKG
 category: KnowledgeGraph
 products:
-- id: kg-idg.tar.gz
+- id: drkg.graph
   name: DRKG graph
   description: >-
     DRKG graph files, including a TSV of triples,

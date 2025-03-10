@@ -18,7 +18,7 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
   id: https://creativecommons.org/licenses/by/4.0/
 products:
-- id: rtx_kgx_files
+- id: rtx-kg2.graph
   name: RTX-KG2 KGX
   description: KGX distribution of the RTX-KG2
   url: https://github.com/ncats/translator-lfs-artifacts/blob/main/files/

@@ -14,13 +14,13 @@ license:
   label: BSD3
   id: https://opensource.org/license/bsd-3-clause
 products:
-- id: phenio.owl
+- id: phenio.model
   description: OWL version of phenio
   url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl
   name: phenio
   category: Product
   format: owl
-- id: phenio.kgx
+- id: phenio.graph
   name: phenio KG
   description: KGX version of phenio
   url: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
