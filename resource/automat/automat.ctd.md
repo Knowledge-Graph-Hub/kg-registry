@@ -2,7 +2,7 @@
 category: GraphProduct
 derived_from: automat
 description: CTD Automat
-format: kgx
+format: kgx-jsonl
 id: automat.ctd
 infores_id: automat-ctd
 name: ctd_automat

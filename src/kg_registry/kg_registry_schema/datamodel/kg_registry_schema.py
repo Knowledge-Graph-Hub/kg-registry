@@ -203,8 +203,14 @@ class FormatEnum(str, Enum):
     shacl = "shacl"
     # The ShEx format.
     shex = "shex"
-    # The KGX standard, which is a graph exchange format for knowledge graphs.
+    # The KGX standard, which is a graph exchange format for knowledge graphs. By default, this assumes KGX as TSV with separate node and edge files, usually named nodes.tsv and edges.tsv.
     kgx = "kgx"
+    # The KGX standard, which is a graph exchange format for knowledge graphs. This is the JSON format, with nodes and edges in a single file.
+    kgx_json = "kgx-json"
+    # The KGX standard, which is a graph exchange format for knowledge graphs. This is the JSON Lines format, with separate node and edge files, usually named nodes.jsonl and edges.jsonl.
+    kgx_jsonl = "kgx-jsonl"
+    # The KGX standard, which is a graph exchange format for knowledge graphs. This is the RDF Turtle (TTL) format, with nodes and edges in a single file.
+    kgx_rdf = "kgx-rdf"
 
 
 class StandardEnum(str, Enum):

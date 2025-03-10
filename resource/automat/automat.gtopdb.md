@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: GtoPdb Automat
-format: kgx
+format: kgx-jsonl
 id: automat.gtopdb
 infores_id: automat-gtopdb
 name: gtopdb_automat

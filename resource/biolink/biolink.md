@@ -74,22 +74,7 @@ products:
 - category: GraphProduct
   derived_from: automat
   description: Biolink Automat
-  id: biolink_automat
-  name: biolink_automat
-  original_source: biolink
-  url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
-- category: GraphProduct
-  derived_from: automat
-  description: Biolink Automat
-  format: kgx
-  id: biolink_automat
-  name: biolink_automat
-  original_source: biolink
-  url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
-- category: GraphProduct
-  derived_from: automat
-  description: Biolink Automat
-  format: kgx
+  format: kgx-jsonl
   id: automat.biolink
   name: biolink_automat
   original_source: biolink

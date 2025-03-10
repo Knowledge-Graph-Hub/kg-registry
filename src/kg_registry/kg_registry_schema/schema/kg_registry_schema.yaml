@@ -737,7 +737,28 @@ enums:
       kgx:
         description: >-
           The KGX standard, which is a graph exchange format
-          for knowledge graphs.
+          for knowledge graphs. By default, this assumes
+          KGX as TSV with separate node and edge files,
+          usually named nodes.tsv and edges.tsv.
+        meaning: https://github.com/biolink/kgx/blob/master/specification/kgx-format.md
+      kgx-json:
+        description: >-
+          The KGX standard, which is a graph exchange format
+          for knowledge graphs. This is the JSON format,
+          with nodes and edges in a single file.
+        meaning: https://github.com/biolink/kgx/blob/master/specification/kgx-format.md
+      kgx-jsonl:
+        description: >-
+          The KGX standard, which is a graph exchange format
+          for knowledge graphs. This is the JSON Lines format,
+          with separate node and edge files, usually named
+          nodes.jsonl and edges.jsonl.
+        meaning: https://github.com/biolink/kgx/blob/master/specification/kgx-format.md
+      kgx-rdf:
+        description: >-
+          The KGX standard, which is a graph exchange format
+          for knowledge graphs. This is the RDF Turtle (TTL) format,
+          with nodes and edges in a single file.
         meaning: https://github.com/biolink/kgx/blob/master/specification/kgx-format.md
 
   StandardEnum:

@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: HGNC Automat
-format: kgx
+format: kgx-jsonl
 id: automat.hgnc
 infores_id: automat-hgnc
 name: hgnc_automat
