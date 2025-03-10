@@ -184,6 +184,7 @@ def concat_resource_yaml(args):
                     license["logo"] = logo
 
     def generate_product_pages(objs):
+        layout_string = "layout: product_detail"
         for obj in objs:
             if "products" in obj:
                 for product in obj["products"]:
@@ -198,7 +199,7 @@ def concat_resource_yaml(args):
                             print(f"Creating page for product {product['id']}")
                         # Write the product to its own page
                         with open(fn, "w") as f:
-                            f.write("---\n" + yaml.dump(product) + "---\n")
+                            f.write("---\n" + yaml.dump(product) + layout_string + "\n---\n")
                             
 
     def propagate_products(objs):
