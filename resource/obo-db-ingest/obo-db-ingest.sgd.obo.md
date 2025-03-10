@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: sgd OBO
 url: https://w3id.org/biopragmatics/resources/sgd/sgd.obo
+layout: product_detail
 ---

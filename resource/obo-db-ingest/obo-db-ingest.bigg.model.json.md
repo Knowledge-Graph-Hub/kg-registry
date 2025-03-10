@@ -9,4 +9,5 @@ license:
 name: bigg.model OBO Graph JSON
 original_source: bigg
 url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.json
+layout: product_detail
 ---

@@ -7,4 +7,5 @@ license:
   label: Custom
 name: clinicaltrials OBO
 url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo
+layout: product_detail
 ---

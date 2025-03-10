@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: pombase OWL
 url: https://w3id.org/biopragmatics/resources/pombase/pombase.owl
+layout: product_detail
 ---

@@ -7,4 +7,5 @@ license:
   label: CC-BY-NC
 name: npass OWL
 url: https://w3id.org/biopragmatics/resources/npass/npass.owl
+layout: product_detail
 ---

@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: mgi OWL
 url: https://w3id.org/biopragmatics/resources/mgi/mgi.owl
+layout: product_detail
 ---

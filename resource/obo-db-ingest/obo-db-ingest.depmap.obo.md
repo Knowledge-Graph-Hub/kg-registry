@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: depmap OBO
 url: https://w3id.org/biopragmatics/resources/depmap/depmap.obo
+layout: product_detail
 ---

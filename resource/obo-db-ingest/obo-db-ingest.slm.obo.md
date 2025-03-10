@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: slm OBO
 url: https://w3id.org/biopragmatics/resources/slm/slm.obo
+layout: product_detail
 ---

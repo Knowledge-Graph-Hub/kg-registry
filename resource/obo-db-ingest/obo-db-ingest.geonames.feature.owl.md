@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: geonames.feature OWL
 url: https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.owl
+layout: product_detail
 ---

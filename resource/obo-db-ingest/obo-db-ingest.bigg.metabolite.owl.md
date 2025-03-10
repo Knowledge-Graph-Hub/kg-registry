@@ -9,4 +9,5 @@ license:
 name: bigg.metabolite OWL
 original_source: bigg
 url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.owl
+layout: product_detail
 ---

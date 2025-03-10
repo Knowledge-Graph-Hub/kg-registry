@@ -8,4 +8,5 @@ license:
   label: MIT License
 name: Bioteque code
 url: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
+layout: product_detail
 ---

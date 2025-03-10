@@ -5,4 +5,5 @@ format: owl
 id: neo.model
 name: neo OWL release
 url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
+layout: product_detail
 ---

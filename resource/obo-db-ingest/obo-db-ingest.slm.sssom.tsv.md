@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: slm SSSOM
 url: https://w3id.org/biopragmatics/resources/slm/slm.sssom.tsv
+layout: product_detail
 ---

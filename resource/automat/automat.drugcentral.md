@@ -8,4 +8,5 @@ infores_id: automat-drug-central
 name: drugcentral_automat
 original_source: drugcentral
 url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
+layout: product_detail
 ---

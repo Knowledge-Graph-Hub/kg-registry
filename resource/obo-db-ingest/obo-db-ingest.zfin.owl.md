@@ -9,4 +9,5 @@ license:
 name: zfin OWL
 original_source: zfin
 url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
+layout: product_detail
 ---

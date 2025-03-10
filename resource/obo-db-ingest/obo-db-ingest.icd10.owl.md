@@ -7,4 +7,5 @@ license:
   label: Custom
 name: icd10 OWL
 url: https://w3id.org/biopragmatics/resources/icd10/icd10.owl
+layout: product_detail
 ---

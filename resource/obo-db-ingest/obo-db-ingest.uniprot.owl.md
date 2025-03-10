@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: uniprot OWL
 url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl
+layout: product_detail
 ---

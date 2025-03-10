@@ -7,4 +7,5 @@ license:
   label: CC-BY-SA-4.0
 name: pharmgkb.disease OWL
 url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.owl
+layout: product_detail
 ---

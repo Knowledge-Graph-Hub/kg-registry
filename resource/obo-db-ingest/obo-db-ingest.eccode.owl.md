@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: eccode OWL
 url: https://w3id.org/biopragmatics/resources/eccode/eccode.owl
+layout: product_detail
 ---

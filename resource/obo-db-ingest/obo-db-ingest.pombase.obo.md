@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: pombase OBO
 url: https://w3id.org/biopragmatics/resources/pombase/pombase.obo
+layout: product_detail
 ---

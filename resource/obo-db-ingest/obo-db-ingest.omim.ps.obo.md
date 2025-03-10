@@ -7,4 +7,5 @@ license:
   label: Custom
 name: omim.ps OBO
 url: https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.obo
+layout: product_detail
 ---

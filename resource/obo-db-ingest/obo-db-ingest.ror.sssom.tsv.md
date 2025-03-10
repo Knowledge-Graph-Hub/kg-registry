@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: ror SSSOM
 url: https://w3id.org/biopragmatics/resources/ror/ror.sssom.tsv
+layout: product_detail
 ---

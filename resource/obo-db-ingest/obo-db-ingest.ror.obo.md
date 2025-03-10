@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: ror OBO
 url: https://w3id.org/biopragmatics/resources/ror/ror.obo
+layout: product_detail
 ---

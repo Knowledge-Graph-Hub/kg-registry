@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: geonames.feature OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.json
+layout: product_detail
 ---

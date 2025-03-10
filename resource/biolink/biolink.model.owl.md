@@ -8,4 +8,5 @@ format: owl
 id: biolink.model.owl
 name: Biolink Model OWL release
 url: https://w3id.org/biolink/biolink-model.owl.ttl
+layout: product_detail
 ---

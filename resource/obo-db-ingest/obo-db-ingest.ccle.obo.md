@@ -7,4 +7,5 @@ license:
   label: ODbL-1.0
 name: ccle OBO
 url: https://w3id.org/biopragmatics/resources/cdle/cdle.obo
+layout: product_detail
 ---

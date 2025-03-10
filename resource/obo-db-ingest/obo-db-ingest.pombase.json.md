@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: pombase OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/pombase/pombase.json
+layout: product_detail
 ---

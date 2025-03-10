@@ -7,4 +7,5 @@ license:
   label: Custom
 name: clinicaltrials SSSOM
 url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.sssom.tsv
+layout: product_detail
 ---

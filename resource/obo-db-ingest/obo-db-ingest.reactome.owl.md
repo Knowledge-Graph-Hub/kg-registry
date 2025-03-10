@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: reactome OWL
 url: https://w3id.org/biopragmatics/resources/reactome/reactome.owl
+layout: product_detail
 ---

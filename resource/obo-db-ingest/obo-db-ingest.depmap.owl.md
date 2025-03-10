@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: depmap OWL
 url: https://w3id.org/biopragmatics/resources/depmap/depmap.owl
+layout: product_detail
 ---

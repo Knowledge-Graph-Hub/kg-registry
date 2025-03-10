@@ -7,4 +7,5 @@ license:
   label: Custom
 name: clinicaltrials OWL
 url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl
+layout: product_detail
 ---

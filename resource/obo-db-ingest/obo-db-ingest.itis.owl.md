@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: itis OWL
 url: https://w3id.org/biopragmatics/resources/itis/itis.owl
+layout: product_detail
 ---

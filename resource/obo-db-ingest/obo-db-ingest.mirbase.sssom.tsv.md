@@ -7,4 +7,5 @@ license:
   label: public domain
 name: mirbase SSSOM
 url: https://w3id.org/biopragmatics/resources/mirbase/mirbase.sssom.tsv
+layout: product_detail
 ---

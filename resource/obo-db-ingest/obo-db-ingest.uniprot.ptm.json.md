@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: uniprot.ptm OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.json
+layout: product_detail
 ---

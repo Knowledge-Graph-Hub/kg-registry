@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: uniprot SSSOM
 url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.sssom.tsv
+layout: product_detail
 ---

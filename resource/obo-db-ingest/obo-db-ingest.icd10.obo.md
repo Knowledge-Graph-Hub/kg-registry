@@ -7,4 +7,5 @@ license:
   label: Custom
 name: icd10 OBO
 url: https://w3id.org/biopragmatics/resources/icd10/icd10.obo
+layout: product_detail
 ---

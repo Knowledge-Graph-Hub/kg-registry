@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: credit OWL
 url: https://w3id.org/biopragmatics/resources/credit/credit.owl
+layout: product_detail
 ---

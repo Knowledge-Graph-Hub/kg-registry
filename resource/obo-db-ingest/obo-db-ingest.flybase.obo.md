@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: flybase OBO
 url: https://w3id.org/biopragmatics/resources/flybase/flybase.obo
+layout: product_detail
 ---

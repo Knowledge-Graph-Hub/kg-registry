@@ -7,4 +7,5 @@ license:
   label: CC-BY-NC
 name: npass OBO
 url: https://w3id.org/biopragmatics/resources/npass/npass.obo
+layout: product_detail
 ---

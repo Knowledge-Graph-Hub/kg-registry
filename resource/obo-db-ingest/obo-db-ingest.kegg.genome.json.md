@@ -7,4 +7,5 @@ license:
   label: Custom
 name: kegg.genome OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.json
+layout: product_detail
 ---

@@ -9,4 +9,5 @@ license:
 name: bigg.reaction OBO
 original_source: bigg
 url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.obo
+layout: product_detail
 ---

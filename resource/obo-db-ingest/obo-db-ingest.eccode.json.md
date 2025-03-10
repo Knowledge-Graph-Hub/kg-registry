@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: eccode OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/eccode/eccode.json
+layout: product_detail
 ---

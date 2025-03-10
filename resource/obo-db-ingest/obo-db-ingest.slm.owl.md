@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: slm OWL
 url: https://w3id.org/biopragmatics/resources/slm/slm.owl
+layout: product_detail
 ---

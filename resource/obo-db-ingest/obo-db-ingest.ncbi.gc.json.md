@@ -7,4 +7,5 @@ license:
   label: public domain
 name: ncbi.gc OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.json
+layout: product_detail
 ---

@@ -7,4 +7,5 @@ license:
   label: CC-BY-SA-4.0
 name: pharmgkb.disease OBO
 url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.obo
+layout: product_detail
 ---

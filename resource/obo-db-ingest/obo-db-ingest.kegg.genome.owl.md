@@ -7,4 +7,5 @@ license:
   label: Custom
 name: kegg.genome OWL
 url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.owl
+layout: product_detail
 ---

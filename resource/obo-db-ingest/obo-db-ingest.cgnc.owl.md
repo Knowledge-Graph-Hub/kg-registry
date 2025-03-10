@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: cgnc OWL
 url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.owl
+layout: product_detail
 ---

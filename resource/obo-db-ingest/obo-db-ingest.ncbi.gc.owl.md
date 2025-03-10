@@ -7,4 +7,5 @@ license:
   label: public domain
 name: ncbi.gc OWL
 url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.owl
+layout: product_detail
 ---

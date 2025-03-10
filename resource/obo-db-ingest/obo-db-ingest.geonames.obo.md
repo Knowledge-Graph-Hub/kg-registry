@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: geonames OBO
 url: https://w3id.org/biopragmatics/resources/geonames/geonames.obo
+layout: product_detail
 ---

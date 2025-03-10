@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: civic.gid OWL
 url: https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.owl
+layout: product_detail
 ---

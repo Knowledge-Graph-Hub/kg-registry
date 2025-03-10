@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: flybase OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/flybase/flybase.json
+layout: product_detail
 ---

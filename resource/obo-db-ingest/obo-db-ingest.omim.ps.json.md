@@ -7,4 +7,5 @@ license:
   label: Custom
 name: omim.ps OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/omim.ps/omim.ps.json
+layout: product_detail
 ---

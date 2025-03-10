@@ -7,4 +7,5 @@ license:
   label: CC-BY-SA-4.0
 name: dictybase.gene OWL
 url: https://w3id.org/biopragmatics/resources/dictybase.gene/dictybase.gene.owl
+layout: product_detail
 ---

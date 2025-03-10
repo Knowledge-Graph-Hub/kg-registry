@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: interpro OWL
 url: https://w3id.org/biopragmatics/resources/interpro/interpro.owl
+layout: product_detail
 ---
