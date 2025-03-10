@@ -3416,7 +3416,7 @@ resources:
   description: An ontology for accessing and comparing knowledge concerning phenotypes
     across species and genetic backgrounds.
   domain: phenotype
-  homepage_url: https://github.com/obophenotype/phenio
+  homepage_url: https://monarch-initiative.github.io/phenio/
   id: phenio
   layout: resource_detail
   license:
@@ -3425,19 +3425,31 @@ resources:
   name: An integrated ontology for Phenomics
   products:
   - category: Product
+    derived_from: phenio
     description: OWL version of phenio
     format: owl
     id: phenio.model
+    license:
+      id: https://opensource.org/license/bsd-3-clause
+      label: BSD3
     name: phenio
+    original_source: phenio
+    repository: https://github.com/monarch-initiative/phenio
     url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl
   - category: GraphProduct
     compatibility:
     - standard: biolink
       version: 4.2.5
-    description: KGX version of phenio
+    derived_from: phenio
+    description: PHENIO as a KGX graph
     format: kgx
     id: phenio.graph
-    name: phenio KG
+    license:
+      id: https://opensource.org/license/bsd-3-clause
+      label: BSD3
+    name: KG-Phenio
+    original_source: phenio
+    repository: https://github.com/Knowledge-Graph-Hub/kg-phenio
     url: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
   repository: https://github.com/monarch-initiative/phenio
   usages:
