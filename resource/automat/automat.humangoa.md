@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: HumanGOA Automat
-format: kgx
+format: kgx-jsonl
 id: automat.humangoa
 infores_id: automat-human-goa
 name: humangoa_automat

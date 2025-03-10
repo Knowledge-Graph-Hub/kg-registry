@@ -2,7 +2,7 @@
 category: GraphProduct
 derived_from: automat
 description: Biolink Automat
-format: kgx
+format: kgx-jsonl
 id: automat.biolink
 name: biolink_automat
 original_source: biolink

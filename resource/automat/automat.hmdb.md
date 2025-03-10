@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: HMDB Automat
-format: kgx
+format: kgx-jsonl
 id: automat.hmdb
 infores_id: automat-hmdb
 name: hmdb_automat
