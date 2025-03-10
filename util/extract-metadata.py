@@ -108,11 +108,12 @@ def validate_markdown(args):
         (obj, md) = load_md(fn)
 
         # If this is the root of the resource, validate against the Resource class
-        # Otherwise we assume it is a product and validate against the Product class
+        # These pages will already contain child classes, so other
+        # pages don't need their own validation (it would be redundant)
         if obj.get("id") == pathlib.Path(fn).parent.name:
             target_class = "Resource"
         else:
-            target_class = "Product"
+            continue
         report = validate(instance=obj, schema=SOURCE_SCHEMA_PATH, target_class=target_class)
         if not report.results:
             print(f"No schema validation errors found for {fn}")
