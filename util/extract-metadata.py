@@ -148,7 +148,8 @@ def concat_resource_yaml(args):
     Output will be concatenated list of all resource metadata.
     Assumes that args.files is already sorted alphabetically.
 
-    This function also: 
+    This function also:
+    * Creates sub-pages for products as needed
     * Propagates derived products to the source Resource pages
     * Adds a logo to the license metadata if it exists
     """
@@ -180,6 +181,24 @@ def concat_resource_yaml(args):
                     )
                 if logo:
                     license["logo"] = logo
+
+    def generate_product_pages(objs):
+        for obj in objs:
+            if "products" in obj:
+                for product in obj["products"]:
+                    # Check if the product already has a sub-page
+                    # We will regenerate it anyway, in case the resource
+                    # metadata has changed
+                    if "id" in product and (product["id"]).startswith(obj["id"]):
+                        fn = f"resource/{obj['id']}/{product['id']}.md"
+                        if pathlib.Path(fn).exists():
+                            print(f"Updating page for product {product['id']}")
+                        else:
+                            print(f"Creating page for product {product['id']}")
+                        # Write the product to its own page
+                        with open(fn, "w") as f:
+                            f.write("---\n" + yaml.dump(product) + "---\n")
+                            
 
     def propagate_products(objs):
         """
@@ -251,6 +270,9 @@ def concat_resource_yaml(args):
             library.append(obj)
     objs = foundry + library + obsolete
     cfg["resources"] = objs
+
+    # Generate product pages
+    generate_product_pages(objs)
 
     # Propagate derived products to the source Resource pages
     propagate_products(objs)
