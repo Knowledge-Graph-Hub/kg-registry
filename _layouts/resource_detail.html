@@ -205,7 +205,13 @@ page.is_obsolete %}
             {% for p in page.products %}
             <tr>
               <td>
-                <a href="{{p.id}}.html">{{p.id}}</a>
+                {% if p.derived_from and p.derived_from == page.id %}
+                  <a href="{{p.id}}.html">{{p.id}}</a>
+                {% elsif p.derived_from %}
+                  <a href="/kg-registry/resource/{{p.derived_from}}/{{p.id}}.html">{{p.id}}</a>
+                {% else %}
+                  <a href="{{p.id}}.html">{{p.id}}</a>
+                {% endif %}
               </td>
               <td>
                 <a href="{{p.url}}">{{p.name}}</a>
