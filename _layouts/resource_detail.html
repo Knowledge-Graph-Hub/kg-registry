@@ -94,7 +94,7 @@ page.is_obsolete %}
       <div class="card bg-light mb-3" style="max-width: 12rem;">
         <div class="card-body">
           <h5 class="card-title">Infores ID</h5>
-          {% if page.infored_id %}
+          {% if page.infores_id %}
             <p class="card-text">infores:{{page.infores_id}}</p>
           {% else %}
             <p class="card-text" style="font-weight: bold;">Unknown</p>
@@ -184,12 +184,82 @@ page.is_obsolete %}
       </div>
     </div>
     {% endif %}
+    
+<!-- Check to see what kinds of products we have, if any -->
+    {% assign has_internal_products = false %}
+    {% assign has_external_products = false %}
+    {% assign has_no_products = false %}
+    {% if page.products %}
+      {% for p in page.products %}
+        {% if p.derived_from and p.derived_from == page.id %}
+          {% assign has_internal_products = true %}
+          {% continue %}
+        {% elsif p.derived_from %}
+          {% assign has_external_products = true %}
+          {% continue %}
+        {% else %}
+          {% assign has_internal_products = true %}
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      {% assign has_no_products = true %}
+    {% endif %}
 
-    {% if page.products and page.products.size > 0 %}
     <div class="card px-0" style="margin-bottom: 1.5em">
       <div class="card-header">
-        <h4>Products</h4>
+      <h4>Products</h4>
       </div>
+      {% if has_internal_products %}
+      <h5 style="margin-left: 0.5em; margin-top: 0.5em">From this Resource</h5>
+      <div class="table-responsive">
+      <table class="table table-striped mb-0">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Format</th>
+          <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for p in page.products %}
+        <tr>
+          {% if p.derived_from and p.derived_from == page.id %}
+          <td>
+            <a href="{{p.id}}.html">{{p.id}}</a>
+          </td>
+          {% elsif p.derived_from %}
+            </tr>
+            {% continue %}
+          {% else %}
+          <td>
+            <a href="{{p.id}}.html">{{p.id}}</a>
+          </td>
+          {% endif %}
+          <td>
+          <a href="{{p.url}}">{{p.name}}</a>
+          </td>
+          <td>{{p.category}}</td>
+          <td>
+          {% if p.format %}
+            {{ p.format }}
+          {% else %}
+          ❔
+          {% endif %}
+          </td>
+          <td>
+          {{ p.description | truncate: 40 }}
+          </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      </div>
+    </div>
+    {% endif %}
+    {% if has_external_products %}
+    <h5 style="margin-left: 0.5em; margin-top: 0.5em">From other Resources</h5>
       <div class="table-responsive">
         <table class="table table-striped mb-0">
           <thead>
@@ -197,53 +267,50 @@ page.is_obsolete %}
               <th>ID</th>
               <th>Name</th>
               <th>Category</th>
-              <th>Standards</th>
-              <th>Infores ID</th>
+              <th>Format</th>
               <th>Description</th>
             </tr>
           </thead>
           <tbody>
             {% for p in page.products %}
             <tr>
+                {% if p.derived_from and p.derived_from == page.id %}
+                  </tr>
+                  {% continue %}
+                {% elsif p.derived_from %}
+                <td>
+                  <a href="/kg-registry/resource/{{p.derived_from}}/{{p.id}}.html">{{p.id}}</a>
+                </td>
+                {% else %}
+                  </tr>
+                  {% continue %}
+                {% endif %}
               <td>
-                <a href="{{p.url}}">{{p.id}}</a>
+                <a href="{{p.url}}">{{p.name}}</a>
               </td>
-              <td>{{p.name}}</td>
               <td>{{p.category}}</td>
-              {% if p.compatibility %}
               <td>
-                {% for entry in p.compatibility %}
-                  {{ entry.standard }}{% if entry.version %} ({{ entry.version }}){% endif %}{% if forloop.last == false %}, {% endif %}
-                {% endfor %}
-              </td>
-              {% else %}
-              <td>
+                {% if p.format %}
+                  {{ p.format }}
+                {% else %}
                 ❔
+                {% endif %}
               </td>
-              {% endif %}
-              {% if p.infores_id %}
               <td>
-                infores:{{p.infores_id}}
-              </td>
-              {% else %}
-              <td>
-                  <span style="color: darkred;">unknown</span>
-              </td>
-              {% endif %}
-              <td>
-                {{p.description}}
+                {{ p.description | truncate: 40 }}
               </td>
             </tr>
             {% endfor %}
           </tbody>
         </table>
       </div>
-    </div>
-    {% else %}
+    {% endif %}
+    {% if has_no_products %}
     <div class="alert alert-warning" role="alert">
       No products available. You could <a href="https://github.com/Knowledge-Graph-Hub/kg-registry/issues/new?template=update-resource.yml">suggest one to add!</a>
     </div>
     {% endif %}
+   </div>
 
     {% if page.usages %}
     <div class="card px-0" style="margin-bottom: 1.5em;">
