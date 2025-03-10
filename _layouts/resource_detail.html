@@ -190,6 +190,7 @@ page.is_obsolete %}
       <div class="card-header">
         <h4>Products</h4>
       </div>
+      <h5 style="margin-left: 0.5em; margin-top: 0.5em">From this Resource</h5>
       <div class="table-responsive">
         <table class="table table-striped mb-0">
           <thead>
@@ -204,15 +205,63 @@ page.is_obsolete %}
           <tbody>
             {% for p in page.products %}
             <tr>
-              <td>
                 {% if p.derived_from and p.derived_from == page.id %}
+                <td>
                   <a href="{{p.id}}.html">{{p.id}}</a>
+                </td>
                 {% elsif p.derived_from %}
-                  <a href="/kg-registry/resource/{{p.derived_from}}/{{p.id}}.html">{{p.id}}</a>
+                  </tr>
+                  {% continue %}
                 {% else %}
+                <td>
                   <a href="{{p.id}}.html">{{p.id}}</a>
+                </td>
+                {% endif %}
+              <td>
+                <a href="{{p.url}}">{{p.name}}</a>
+              </td>
+              <td>{{p.category}}</td>
+              <td>
+                {% if p.format %}
+                  {{ p.format }}
+                {% else %}
+                ❔
                 {% endif %}
               </td>
+              <td>
+                {{ p.description | truncate: 40 }}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <h5 style="margin-left: 0.5em; margin-top: 0.5em">From other Resources</h5>
+      <div class="table-responsive">
+        <table class="table table-striped mb-0">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Format</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for p in page.products %}
+            <tr>
+                {% if p.derived_from and p.derived_from == page.id %}
+                  </tr>
+                  {% continue %}
+                {% elsif p.derived_from %}
+                <td>
+                  <a href="/kg-registry/resource/{{p.derived_from}}/{{p.id}}.html">{{p.id}}</a>
+                </td>
+                {% else %}
+                  </tr>
+                  {% continue %}
+                {% endif %}
               <td>
                 <a href="{{p.url}}">{{p.name}}</a>
               </td>
