@@ -16,7 +16,7 @@ contacts:
 homepage_url: https://zitniklab.hms.harvard.edu/projects/PrimeKG
 repository: https://github.com/mims-harvard/PrimeKG
 products:
-- id: primekg.csv
+- id: primekg.graph
   name: PrimeKG Full Dataset
   description: The full PrimeKG dataset containing disease relationships.
   url: https://dataverse.harvard.edu/api/access/datafile/6180620

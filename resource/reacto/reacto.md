@@ -13,15 +13,6 @@ contacts:
   label: Benjamin M. Good
 homepage_url: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
 repository: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
-products:
-- id: reacto.owl
-  name: Reactome Entity Ontology (REACTO) OWL release
-  description: OWL release of Reactome Entity Ontology (REACTO)
-  category: Product
-- id: reacto.obo
-  name: Reactome Entity Ontology (REACTO) OBO release
-  description: OBO release of Reactome Entity Ontology (REACTO)
-  category: Product
 category: Resource
 ---
 

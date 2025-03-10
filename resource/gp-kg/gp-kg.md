@@ -12,14 +12,14 @@ contacts:
 homepage_url: http://nlp.case.edu/public/data/GPKG-Predict/
 repository: http://nlp.case.edu/public/data/GPKG-Predict/
 products:
-- id: gp-kg
+- id: gp-kg.graph
   name: GP-KG
   description: GP_KG.txt
   url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
   category: GraphProduct
   node_count: 61146
   edge_count: 1246726
-- id: gp-kg.kg-predict
+- id: gp-kg.process.kg-predict
   name: KG-Predict
   description: A computational framework for drug repurposing, used with GP-KG
   url: http://nlp.case.edu/public/data/GPKG-Predict/code/

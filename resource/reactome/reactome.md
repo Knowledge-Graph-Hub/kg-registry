@@ -12,17 +12,12 @@ contacts:
   email: cjmungall@lbl.gov
   label: Christopher J. Mungall
 homepage_url: https://reactome.org
-repository: https://github.com/biopragmatics/obo-db-ingest
+repository: ""
 products:
-- id: reactome-hs-biopax.db.gz
+- id: reactome.data.human
   name: Reactome Human from BioPAX, sqlite
   description: Conversion from BioPAX, human subset
   url: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
-  category: Product
-- id: reactome-hs-biopragmatics.obo
-  name: Reactome Human, Biopragmatics
-  description: Biopragmatics provided conversion, human subset
-  url: https://w3id.org/biopragmatics/resources/reactome/reactome.obo
   category: Product
 category: DataSource
 ---

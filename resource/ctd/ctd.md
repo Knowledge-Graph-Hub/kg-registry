@@ -14,14 +14,4 @@ license:
   id: https://ctdbase.org/about/legal.jsp
   label: Custom
 name: Comparative Toxicogenomics Database
-products:
-- category: GraphProduct
-  derived_from: automat
-  description: CTD Automat
-  format: kgx
-  id: ctd_automat
-  infores_id: automat-ctd
-  name: ctd_automat
-  original_source: ctd
-  url: https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files
 ---

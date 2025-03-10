@@ -16,7 +16,7 @@ license:
   id: https://opensource.org/license/bsd-3-clause
 category: KnowledgeGraph
 products:
-- id: kg-covid-19.kgx
+- id: kg-covid-19.graph
   name: KG-COVID-19 graph
   description: KGX nodes and edges for KG-COVID-19
   url: https://kghub.io/kg-covid-19/

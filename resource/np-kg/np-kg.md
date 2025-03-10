@@ -13,12 +13,12 @@ contacts:
 homepage_url: https://doi.org/10.5281/zenodo.6814507
 repository: https://github.com/sanyabt/np-kg
 products:
-- id: NP-KG_v3.0.0.tsv
+- id: np-kg.graph.tsv
   name: NP-KG TSV
   description: Merged KG with ontology-grounded KG and literature-based graph as TSV file
   url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.tsv?download=1
   category: GraphProduct
-- id: NP-KG_v3.0.0.gpickle
+- id: np-kg.graph.networkx
   name: NP-KG gpickle
   description: Merged KG with ontology-grounded KG and literature-based graph as NetworkX multidigraph object
   url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.gpickle?download=1
