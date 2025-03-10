@@ -696,81 +696,81 @@ products:
   name: gtdb SSSOM
   url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.sssom.tsv
 - category: Product
+  derived_from: obo-db-ingest
   description: hgnc OBO
+  format: obo
   id: obo-db-ingest.hgnc.obo
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc OBO
-  url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo
-  format: obo
-  derived_from: obo-db-ingest
   original_source: hgnc
+  url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo
 - category: Product
+  derived_from: obo-db-ingest
   description: hgnc OWL
+  format: owl
   id: obo-db-ingest.hgnc.owl
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc OWL
-  url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl
-  format: owl
-  derived_from: obo-db-ingest
   original_source: hgnc
+  url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl
 - category: Product
+  derived_from: obo-db-ingest
   description: hgnc OBO Graph JSON
+  format: json
   id: obo-db-ingest.hgnc.json
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc OBO Graph JSON
-  url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.json
-  format: json
-  derived_from: obo-db-ingest
   original_source: hgnc
+  url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.json
 - category: MappingProduct
+  derived_from: obo-db-ingest
   description: hgnc SSSOM
   id: obo-db-ingest.hgnc.sssom.tsv
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc SSSOM
-  url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
-  derived_from: obo-db-ingest
   original_source: hgnc
+  url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
 - category: Product
+  derived_from: obo-db-ingest
   description: hgnc.genegroup OBO
+  format: obo
   id: obo-db-ingest.hgnc.genegroup.obo
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc.genegroup OBO
-  url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.obo
-  format: obo
-  derived_from: obo-db-ingest
   original_source: hgnc
+  url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.obo
 - category: Product
+  derived_from: obo-db-ingest
   description: hgnc.genegroup OWL
+  format: owl
   id: obo-db-ingest.hgnc.genegroup.owl
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc.genegroup OWL
-  url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.owl
-  format: owl
-  derived_from: obo-db-ingest
   original_source: hgnc
+  url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.owl
 - category: Product
+  derived_from: obo-db-ingest
   description: hgnc.genegroup OBO Graph JSON
+  format: json
   id: obo-db-ingest.hgnc.genegroup.json
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc.genegroup OBO Graph JSON
-  url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.json
-  format: json
-  derived_from: obo-db-ingest
   original_source: hgnc
+  url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.json
 - category: Product
   description: icd10 OBO
   id: obo-db-ingest.icd10.obo
