@@ -1370,6 +1370,18 @@ resources:
   name: Multiomics KP
   repository: ''
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    label: NCBI
+  description: The NCBI Gene resource
+  domain: biological systems
+  homepage_url: https://www.ncbi.nlm.nih.gov/gene/
+  id: ncbi-gene
+  layout: resource_detail
+  name: NCBI Gene
+  repository: ''
+- activity_status: active
   category: Resource
   contacts:
   - category: Individual
