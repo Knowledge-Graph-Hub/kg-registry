@@ -29,7 +29,7 @@
                     "derived_from": "automat",
                     "description": "Robokop KG (Automat)",
                     "format": "kgx",
-                    "id": "robokopkg",
+                    "id": "automat.robokopkg",
                     "name": "robokopkg",
                     "original_source": "robokop",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files"
@@ -39,7 +39,7 @@
                     "derived_from": "automat",
                     "description": "Robokop Plus",
                     "format": "kgx",
-                    "id": "robokopplus",
+                    "id": "automat.robokopplus",
                     "name": "robokopplus",
                     "original_source": "robokop",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files"
@@ -49,7 +49,7 @@
                     "derived_from": "automat",
                     "description": "Biolink Automat",
                     "format": "kgx",
-                    "id": "biolink_automat",
+                    "id": "automat.biolink",
                     "name": "biolink_automat",
                     "original_source": "biolink",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files"
@@ -59,7 +59,7 @@
                     "derived_from": "automat",
                     "description": "CTD Automat",
                     "format": "kgx",
-                    "id": "ctd_automat",
+                    "id": "automat.ctd",
                     "infores_id": "automat-ctd",
                     "name": "ctd_automat",
                     "original_source": "ctd",
@@ -70,7 +70,7 @@
                     "derived_from": "automat",
                     "description": "DrugCentral Automat",
                     "format": "kgx",
-                    "id": "drugcentral_automat",
+                    "id": "automat.drugcentral",
                     "infores_id": "automat-drug-central",
                     "name": "drugcentral_automat",
                     "original_source": "drugcentral",
@@ -80,7 +80,7 @@
                     "category": "GraphProduct",
                     "description": "GTEx Automat",
                     "format": "kgx",
-                    "id": "gtex_automat",
+                    "id": "automat.gtex",
                     "infores_id": "automat-gtex",
                     "name": "gtex_automat",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/GTEx_Automat/latest/kgx_files"
@@ -89,7 +89,7 @@
                     "category": "GraphProduct",
                     "description": "GtoPdb Automat",
                     "format": "kgx",
-                    "id": "gtopdb_automat",
+                    "id": "automat.gtopdb",
                     "infores_id": "automat-gtopdb",
                     "name": "gtopdb_automat",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/GtoPdb_Automat/latest/kgx_files"
@@ -98,7 +98,7 @@
                     "category": "GraphProduct",
                     "description": "GWASCatalog Automat",
                     "format": "kgx",
-                    "id": "gwascatalog_automat",
+                    "id": "automat.gwascatalog",
                     "infores_id": "automat-gwas-catalog",
                     "name": "gwascatalog_automat",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/GWASCatalog_Automat/latest/kgx_files"
@@ -107,7 +107,7 @@
                     "category": "GraphProduct",
                     "description": "Hetio Automat",
                     "format": "kgx",
-                    "id": "hetio_automat",
+                    "id": "automat.hetio",
                     "name": "hetio_automat",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/Hetio_Automat/latest/kgx_files"
                 },
@@ -115,7 +115,7 @@
                     "category": "GraphProduct",
                     "description": "HGNC Automat",
                     "format": "kgx",
-                    "id": "hgnc_automat",
+                    "id": "automat.hgnc",
                     "infores_id": "automat-hgnc",
                     "name": "hgnc_automat",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/HGNC_Automat/latest/kgx_files"
@@ -124,7 +124,7 @@
                     "category": "GraphProduct",
                     "description": "HMDB Automat",
                     "format": "kgx",
-                    "id": "hmdb_automat",
+                    "id": "automat.hmdb",
                     "infores_id": "automat-hmdb",
                     "name": "hmdb_automat",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/HMDB_Automat/latest/kgx_files"
@@ -133,7 +133,7 @@
                     "category": "GraphProduct",
                     "description": "HumanGOA Automat",
                     "format": "kgx",
-                    "id": "humangoa_automat",
+                    "id": "automat.humangoa",
                     "infores_id": "automat-human-goa",
                     "name": "humangoa_automat",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/HumanGOA_Automat/latest/kgx_files"
@@ -142,7 +142,7 @@
                     "category": "GraphProduct",
                     "description": "IntAct Automat",
                     "format": "kgx",
-                    "id": "intact_automat",
+                    "id": "automat.intact",
                     "infores_id": "automat-intact",
                     "name": "intact_automat",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/IntAct_Automat/latest/kgx_files"
@@ -151,7 +151,7 @@
                     "category": "GraphProduct",
                     "description": "OntologicalHierarchy Automat",
                     "format": "kgx",
-                    "id": "ontologicalhierarchy_automat",
+                    "id": "automat.ontologicalhierarchy",
                     "name": "ontologicalhierarchy_automat",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/OntologicalHierarchy_Automat/latest/kgx_files"
                 },
@@ -159,7 +159,7 @@
                     "category": "GraphProduct",
                     "description": "PANTHER Automat",
                     "format": "kgx",
-                    "id": "panther_automat",
+                    "id": "automat.panther",
                     "infores_id": "automat-panther",
                     "name": "panther_automat",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/PANTHER_Automat/latest/kgx_files"
@@ -168,7 +168,7 @@
                     "category": "GraphProduct",
                     "description": "PHAROS Automat",
                     "format": "kgx",
-                    "id": "pharos_automat",
+                    "id": "automat.pharos",
                     "infores_id": "automat-pharos",
                     "name": "pharos_automat",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/PHAROS_Automat/latest/kgx_files"
@@ -177,7 +177,7 @@
                     "category": "GraphProduct",
                     "description": "STRING-DB Automat",
                     "format": "kgx",
-                    "id": "stringdb_automat",
+                    "id": "automat.stringdb",
                     "name": "stringdb_automat",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/STRING-DB_Automat/latest/kgx_files"
                 },
@@ -185,7 +185,7 @@
                     "category": "GraphProduct",
                     "description": "UberGraph Automat",
                     "format": "kgx",
-                    "id": "ubergraph_automat",
+                    "id": "automat.ubergraph",
                     "name": "ubergraph_automat",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files"
                 },
@@ -194,7 +194,7 @@
                     "derived_from": "automat",
                     "description": "DrugCentral Automat",
                     "format": "kgx",
-                    "id": "drugcentral_automat",
+                    "id": "automat.drugcentral",
                     "infores_id": "automat-drug-central",
                     "name": "drugcentral_automat",
                     "original_source": "drugcentral",
@@ -204,87 +204,20 @@
                     "category": "GraphProduct",
                     "derived_from": "automat",
                     "description": "Biolink Automat",
-                    "format": "kgx",
                     "id": "biolink_automat",
                     "name": "biolink_automat",
                     "original_source": "biolink",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files"
-                },
-                {
-                    "category": "GraphProduct",
-                    "derived_from": "automat",
-                    "description": "CTD Automat",
-                    "format": "kgx",
-                    "id": "ctd_automat",
-                    "infores_id": "automat-ctd",
-                    "name": "ctd_automat",
-                    "original_source": "ctd",
-                    "url": "https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files"
-                },
-                {
-                    "category": "GraphProduct",
-                    "derived_from": "automat",
-                    "description": "Robokop KG (Automat)",
-                    "format": "kgx",
-                    "id": "robokopkg",
-                    "name": "robokopkg",
-                    "original_source": "robokop",
-                    "url": "https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files"
-                },
-                {
-                    "category": "GraphProduct",
-                    "derived_from": "automat",
-                    "description": "Robokop Plus",
-                    "format": "kgx",
-                    "id": "robokopplus",
-                    "name": "robokopplus",
-                    "original_source": "robokop",
-                    "url": "https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files"
                 },
                 {
                     "category": "GraphProduct",
                     "derived_from": "automat",
                     "description": "Biolink Automat",
+                    "format": "kgx",
                     "id": "biolink_automat",
                     "name": "biolink_automat",
                     "original_source": "biolink",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files"
-                },
-                {
-                    "category": "GraphProduct",
-                    "derived_from": "automat",
-                    "description": "Robokop KG (Automat)",
-                    "id": "robokopkg",
-                    "name": "robokopkg",
-                    "original_source": "robokop",
-                    "url": "https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files"
-                },
-                {
-                    "category": "GraphProduct",
-                    "derived_from": "automat",
-                    "description": "Robokop Plus",
-                    "id": "robokopplus",
-                    "name": "robokopplus",
-                    "original_source": "robokop",
-                    "url": "https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files"
-                },
-                {
-                    "category": "GraphProduct",
-                    "derived_from": "automat",
-                    "description": "Biolink Automat",
-                    "id": "biolink_automat",
-                    "name": "biolink_automat",
-                    "original_source": "biolink",
-                    "url": "https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files"
-                },
-                {
-                    "category": "GraphProduct",
-                    "derived_from": "automat",
-                    "description": "Robokop Plus",
-                    "id": "robokopplus",
-                    "name": "robokopplus",
-                    "original_source": "robokop",
-                    "url": "https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files"
                 }
             ],
             "repository": "https://github.com/RobokopU24/"
@@ -653,6 +586,16 @@
                     "name": "biolink_automat",
                     "original_source": "biolink",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files"
+                },
+                {
+                    "category": "GraphProduct",
+                    "derived_from": "automat",
+                    "description": "Biolink Automat",
+                    "format": "kgx",
+                    "id": "automat.biolink",
+                    "name": "biolink_automat",
+                    "original_source": "biolink",
+                    "url": "https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files"
                 }
             ],
             "publications": [
@@ -868,7 +811,8 @@
                 {
                     "category": "DataModelProduct",
                     "description": "OWL release of Monochrom Ontology",
-                    "id": "chr.owl",
+                    "format": "owl",
+                    "id": "chr.model.owl",
                     "name": "Monochrom Ontology OWL release",
                     "url": "http://purl.obolibrary.org/obo/chr.owl"
                 }
@@ -901,7 +845,7 @@
                     "category": "ProgrammingInterface",
                     "connection_url": "cl-kg-neo4j-db.cellgeni.sanger.ac.uk:443",
                     "description": "Publicly available Neo4j instance for CL-KG.",
-                    "id": "cl-kg.neo4j",
+                    "id": "cl-kg.api.neo4j",
                     "is_neo4j": true,
                     "is_public": true,
                     "name": "CL-KG Neo4j graph instance",
@@ -977,7 +921,7 @@
                     "derived_from": "automat",
                     "description": "CTD Automat",
                     "format": "kgx",
-                    "id": "ctd_automat",
+                    "id": "automat.ctd",
                     "infores_id": "automat-ctd",
                     "name": "ctd_automat",
                     "original_source": "ctd",
@@ -1007,7 +951,7 @@
                     "category": "GraphProduct",
                     "compression": "targz",
                     "description": "DRKG graph files, including a TSV of triples, embeddings, ID mappings, and a glossary of relation types.",
-                    "id": "kg-idg.tar.gz",
+                    "id": "drkg.graph",
                     "name": "DRKG graph",
                     "url": "https://dgl-data.s3-us-west-2.amazonaws.com/dataset/DRKG/drkg.tar.gz"
                 }
@@ -1066,7 +1010,7 @@
                     "derived_from": "automat",
                     "description": "DrugCentral Automat",
                     "format": "kgx",
-                    "id": "drugcentral_automat",
+                    "id": "automat.drugcentral",
                     "infores_id": "automat-drug-central",
                     "name": "drugcentral_automat",
                     "original_source": "drugcentral",
@@ -1132,7 +1076,8 @@
                 {
                     "category": "Product",
                     "description": "OWL release of ecosim",
-                    "id": "ecosim.owl",
+                    "format": "owl",
+                    "id": "ecosim.model.owl",
                     "name": "ecosim OWL release"
                 }
             ],
@@ -1223,7 +1168,8 @@
             "products": [
                 {
                     "category": "Product",
-                    "id": "goldterms.owl",
+                    "format": "owl",
+                    "id": "goldterms.data.owl",
                     "name": "main GOLDTERMS OWL release",
                     "url": "https://w3id.org/goldterms/goldterms.owl"
                 }
@@ -1251,7 +1197,7 @@
                     "category": "GraphProduct",
                     "description": "GP_KG.txt",
                     "edge_count": 1246726,
-                    "id": "gp-kg",
+                    "id": "gp-kg.graph",
                     "name": "GP-KG",
                     "node_count": 61146,
                     "url": "http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt"
@@ -1259,7 +1205,7 @@
                 {
                     "category": "ProcessProduct",
                     "description": "A computational framework for drug repurposing, used with GP-KG",
-                    "id": "gp-kg.kg-predict",
+                    "id": "gp-kg.process.kg-predict",
                     "name": "KG-Predict",
                     "url": "http://nlp.case.edu/public/data/GPKG-Predict/code/"
                 }
@@ -1336,6 +1282,7 @@
                 {
                     "category": "GraphProduct",
                     "description": "The graph representation of the Human Reference Atlas (HRA) dataset, v2.2, JSON-LD format",
+                    "format": "jsonld",
                     "id": "hra-kg.graph.json",
                     "name": "HRA KG graph data, v2.2, JSON-LD format",
                     "url": "https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.json"
@@ -1387,7 +1334,7 @@
                     "category": "GraphProduct",
                     "description": "KGX distribution of the ICEES Exposures KP",
                     "format": "kgx",
-                    "id": "icees_kgx_files",
+                    "id": "icees-kg.graph",
                     "name": "KGX distribution of the ICEES Exposures KP",
                     "url": "https://stars.renci.org/var/plater/bl-2.1/icees_kgx_files/"
                 }
@@ -1486,7 +1433,7 @@
                     "category": "GraphProduct",
                     "description": "KGX nodes and edges for KG-COVID-19",
                     "format": "kgx",
-                    "id": "kg-covid-19.kgx",
+                    "id": "kg-covid-19.graph",
                     "name": "KG-COVID-19 graph",
                     "url": "https://kghub.io/kg-covid-19/"
                 }
@@ -1538,7 +1485,7 @@
                     "category": "GraphProduct",
                     "description": "KGX Distribution of KG-IDG",
                     "format": "kgx",
-                    "id": "kg-idg.tar.gz",
+                    "id": "kg-idg.graph",
                     "name": "KGX Distribution of KG-IDG",
                     "url": "https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz"
                 }
@@ -1572,7 +1519,7 @@
                     "compression": "targz",
                     "description": "Raw source files for all KG-Microbe framework transforms (all 4 KGs)",
                     "format": "kgx",
-                    "id": "kg-microbe.raw",
+                    "id": "kg-microbe.graph.raw",
                     "name": "KG-Microbe KGX Graph - Raw",
                     "url": "https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz"
                 },
@@ -1581,7 +1528,7 @@
                     "compression": "targz",
                     "description": "The core KG KG-Microbe-Core with ontologies, organismal traits, and growth preferences.",
                     "format": "kgx",
-                    "id": "kg-microbe.core",
+                    "id": "kg-microbe.graph.core",
                     "name": "KG-Microbe KGX Graph - Core",
                     "url": "https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest"
                 },
@@ -1590,7 +1537,7 @@
                     "compression": "targz",
                     "description": "Core plus human biomedical data (ontologies, CTD, Wallen et al)",
                     "format": "kgx",
-                    "id": "kg-microbe.biomedical",
+                    "id": "kg-microbe.graph.biomedical",
                     "name": "KG-Microbe KGX Graph - Biomedical",
                     "url": "https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest"
                 },
@@ -1599,7 +1546,7 @@
                     "compression": "targz",
                     "description": "Core plus Uniprot genome annotations",
                     "format": "kgx",
-                    "id": "kg-microbe.function",
+                    "id": "kg-microbe.graph.function",
                     "name": "KG-Microbe KGX Graph - Function",
                     "url": "https://kghub.io/kg-microbe/KGMicrobe-function-20250222.tar.gz"
                 },
@@ -1608,17 +1555,19 @@
                     "compression": "targz",
                     "description": "Biomedical plus Uniprot genome annotations",
                     "format": "kgx",
-                    "id": "kg-microbe.biomedical-function",
+                    "id": "kg-microbe.graph.biomedical-function",
                     "name": "KG-Microbe KGX Graph - Biomedical-Function",
                     "url": "https://kghub.io/kg-microbe/KGMicrobe-biomedical-function-20250222.tar.gz"
                 },
                 {
                     "category": "GraphProduct",
                     "compression": "targz",
+                    "derived_from": "kg-microbe",
                     "description": "UniProt proteins from microbes, as graph nodes and edges",
                     "format": "kgx",
-                    "id": "kg-microbe.uniprot",
+                    "id": "kg-microbe.graph.uniprot",
                     "name": "KG-Microbe UniProt microbe transform",
+                    "original_source": "uniprot",
                     "url": "https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz"
                 }
             ],
@@ -1652,7 +1601,7 @@
                     "category": "GraphProduct",
                     "description": "KGX Distribution of KGM",
                     "format": "kgx",
-                    "id": "kg-monarch.tar.gz",
+                    "id": "kg-monarch.graph",
                     "name": "KGX Distribution of KGM",
                     "url": "https://kg-hub.berkeleybop.io/kg-monarch/current/kg-monarch.tar.gz"
                 }
@@ -1686,13 +1635,15 @@
                 {
                     "category": "DataModelProduct",
                     "description": "OWL release of Knowledge Graph Change Language",
-                    "id": "kgcl.owl",
+                    "format": "owl",
+                    "id": "kgcl.model.owl",
                     "name": "Knowledge Graph Change Language OWL release"
                 },
                 {
                     "category": "DataModelProduct",
                     "description": "OBO release of Knowledge Graph Change Language",
-                    "id": "kgcl.obo",
+                    "format": "obo",
+                    "id": "kgcl.model.obo",
                     "name": "Knowledge Graph Change Language OBO release"
                 }
             ],
@@ -1725,7 +1676,7 @@
                 {
                     "category": "DataModelProduct",
                     "description": "OWL release of mixs",
-                    "id": "mixs.owl",
+                    "id": "mixs.model",
                     "name": "MIxS OWL release",
                     "url": "https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/refs/heads/main/project/owl/mixs.owl.ttl"
                 }
@@ -1757,7 +1708,7 @@
                     "category": "GraphProduct",
                     "description": "KGX nodes for Molecular Data KP",
                     "format": "kgx",
-                    "id": "molecular-data-kp.nodes",
+                    "id": "molecular-data-kp.graph.nodes",
                     "name": "Nodes for Molecular Data KP",
                     "url": "https://molepro.s3.amazonaws.com/nodes.tsv"
                 },
@@ -1765,7 +1716,7 @@
                     "category": "GraphProduct",
                     "description": "KGX edges for Molecular Data KP",
                     "format": "kgx",
-                    "id": "molecular-data-kp.edges",
+                    "id": "molecular-data-kp.graph.edges",
                     "name": "Edges for Molecular Data KP",
                     "url": "https://molepro.s3.amazonaws.com/edges.tsv"
                 },
@@ -1824,7 +1775,8 @@
                 {
                     "category": "Product",
                     "description": "OWL release of neo",
-                    "id": "neo.owl",
+                    "format": "owl",
+                    "id": "neo.model",
                     "name": "neo OWL release",
                     "url": "http://purl.obolibrary.org/obo/go/noctua/neo.owl"
                 }
@@ -1856,7 +1808,7 @@
                 {
                     "category": "GraphProduct",
                     "description": "Merged KG with ontology-grounded KG and literature-based graph as TSV file",
-                    "id": "NP-KG_v3.0.0.tsv",
+                    "id": "np-kg.graph.tsv",
                     "name": "NP-KG TSV",
                     "url": "https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.tsv?download=1"
                 },
@@ -1864,7 +1816,7 @@
                     "category": "GraphProduct",
                     "description": "Merged KG with ontology-grounded KG and literature-based graph as NetworkX multidigraph object",
                     "dump_format": "gpickle",
-                    "id": "NP-KG_v3.0.0.gpickle",
+                    "id": "np-kg.graph.networkx",
                     "name": "NP-KG gpickle",
                     "url": "https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.gpickle?download=1"
                 }
@@ -4444,7 +4396,7 @@
                 {
                     "category": "GraphProduct",
                     "description": "A multi-omics biomedical knowledge graph",
-                    "id": "petagraph",
+                    "id": "petagraph.graph",
                     "name": "Petagraph Knowledge Graph (Neo4J)",
                     "url": "https://ubkg-downloads.xconsortia.org/"
                 }
@@ -4499,7 +4451,7 @@
                     "category": "Product",
                     "description": "OWL version of phenio",
                     "format": "owl",
-                    "id": "phenio.owl",
+                    "id": "phenio.model",
                     "name": "phenio",
                     "url": "https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl"
                 },
@@ -4513,7 +4465,7 @@
                     ],
                     "description": "KGX version of phenio",
                     "format": "kgx",
-                    "id": "phenio.kgx",
+                    "id": "phenio.graph",
                     "name": "phenio KG",
                     "url": "https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz"
                 }
@@ -4570,7 +4522,7 @@
                     "category": "GraphProduct",
                     "derived_from": "primekg",
                     "description": "The full PrimeKG dataset containing disease relationships.",
-                    "id": "primekg.csv",
+                    "id": "primekg.graph",
                     "name": "PrimeKG Full Dataset",
                     "url": "https://dataverse.harvard.edu/api/access/datafile/6180620"
                 }
@@ -4632,20 +4584,6 @@
             "id": "reacto",
             "layout": "resource_detail",
             "name": "Reactome Entity Ontology (REACTO)",
-            "products": [
-                {
-                    "category": "Product",
-                    "description": "OWL release of Reactome Entity Ontology (REACTO)",
-                    "id": "reacto.owl",
-                    "name": "Reactome Entity Ontology (REACTO) OWL release"
-                },
-                {
-                    "category": "Product",
-                    "description": "OBO release of Reactome Entity Ontology (REACTO)",
-                    "id": "reacto.obo",
-                    "name": "Reactome Entity Ontology (REACTO) OBO release"
-                }
-            ],
             "repository": "http://purl.obolibrary.org/obo/go/extensions/reacto.owl"
         },
         {
@@ -4670,19 +4608,12 @@
                 {
                     "category": "Product",
                     "description": "Conversion from BioPAX, human subset",
-                    "id": "reactome-hs-biopax.db.gz",
+                    "id": "reactome.data.human",
                     "name": "Reactome Human from BioPAX, sqlite",
                     "url": "https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz"
-                },
-                {
-                    "category": "Product",
-                    "description": "Biopragmatics provided conversion, human subset",
-                    "id": "reactome-hs-biopragmatics.obo",
-                    "name": "Reactome Human, Biopragmatics",
-                    "url": "https://w3id.org/biopragmatics/resources/reactome/reactome.obo"
                 }
             ],
-            "repository": "https://github.com/biopragmatics/obo-db-ingest"
+            "repository": ""
         },
         {
             "activity_status": "active",
@@ -4773,7 +4704,7 @@
                 {
                     "category": "Product",
                     "description": "A biomedical knowledge graph containing ~10 million nodes and ~250 million edges from ~30 biological data sources and bio-ontologies.",
-                    "id": "robokopkg",
+                    "id": "robokop.graph",
                     "name": "ROBOKOP Knowledge Graph (KG)",
                     "url": "http://robokopkg.renci.org"
                 },
@@ -4782,26 +4713,7 @@
                     "derived_from": "automat",
                     "description": "Robokop KG (Automat)",
                     "format": "kgx",
-                    "id": "robokopkg",
-                    "name": "robokopkg",
-                    "original_source": "robokop",
-                    "url": "https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files"
-                },
-                {
-                    "category": "GraphProduct",
-                    "derived_from": "automat",
-                    "description": "Robokop Plus",
-                    "id": "robokopplus",
-                    "name": "robokopplus",
-                    "original_source": "robokop",
-                    "url": "https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files"
-                },
-                {
-                    "category": "GraphProduct",
-                    "derived_from": "automat",
-                    "description": "Robokop KG (Automat)",
-                    "format": "kgx",
-                    "id": "robokopkg",
+                    "id": "automat.robokopkg",
                     "name": "robokopkg",
                     "original_source": "robokop",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files"
@@ -4811,25 +4723,7 @@
                     "derived_from": "automat",
                     "description": "Robokop Plus",
                     "format": "kgx",
-                    "id": "robokopplus",
-                    "name": "robokopplus",
-                    "original_source": "robokop",
-                    "url": "https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files"
-                },
-                {
-                    "category": "GraphProduct",
-                    "derived_from": "automat",
-                    "description": "Robokop KG (Automat)",
-                    "id": "robokopkg",
-                    "name": "robokopkg",
-                    "original_source": "robokop",
-                    "url": "https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files"
-                },
-                {
-                    "category": "GraphProduct",
-                    "derived_from": "automat",
-                    "description": "Robokop Plus",
-                    "id": "robokopplus",
+                    "id": "automat.robokopplus",
                     "name": "robokopplus",
                     "original_source": "robokop",
                     "url": "https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files"
@@ -4865,7 +4759,7 @@
                     "category": "GraphProduct",
                     "description": "KGX distribution of the RTX-KG2",
                     "format": "kgx",
-                    "id": "rtx_kgx_files",
+                    "id": "rtx-kg2.graph",
                     "name": "RTX-KG2 KGX",
                     "url": "https://github.com/ncats/translator-lfs-artifacts/blob/main/files/"
                 }
@@ -4964,7 +4858,7 @@
                     "category": "GraphProduct",
                     "description": "KGX distribution of the SRI-Reference KG",
                     "format": "kgx",
-                    "id": "monarch-kg.tar.gz",
+                    "id": "sri-reference-kg.graph",
                     "name": "SRI-Reference KG (KGX distribution)",
                     "url": "https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz"
                 }
@@ -5033,7 +4927,7 @@
                     "category": "GraphProduct",
                     "description": "Text Mining KP KGX distribution",
                     "format": "kgx",
-                    "id": "targeted_assertions.tar.gz",
+                    "id": "text-mining-kp.graph",
                     "name": "Text Mining KP KGX",
                     "url": "https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz"
                 }
@@ -5109,6 +5003,19 @@
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
             },
             "name": "uniprot",
+            "products": [
+                {
+                    "category": "GraphProduct",
+                    "compression": "targz",
+                    "derived_from": "kg-microbe",
+                    "description": "UniProt proteins from microbes, as graph nodes and edges",
+                    "format": "kgx",
+                    "id": "kg-microbe.graph.uniprot",
+                    "name": "KG-Microbe UniProt microbe transform",
+                    "original_source": "uniprot",
+                    "url": "https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz"
+                }
+            ],
             "repository": "https://www.uniprot.org/"
         },
         {
