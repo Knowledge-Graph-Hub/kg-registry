@@ -747,7 +747,10 @@
                 "protobuf",
                 "shacl",
                 "shex",
-                "kgx"
+                "kgx",
+                "kgx-json",
+                "kgx-jsonl",
+                "kgx-rdf"
             ],
             "title": "FormatEnum",
             "type": "string"

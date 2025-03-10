@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: GTEx Automat
-format: kgx
+format: kgx-jsonl
 id: automat.gtex
 infores_id: automat-gtex
 name: gtex_automat

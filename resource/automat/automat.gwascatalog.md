@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: GWASCatalog Automat
-format: kgx
+format: kgx-jsonl
 id: automat.gwascatalog
 infores_id: automat-gwas-catalog
 name: gwascatalog_automat

@@ -2,7 +2,7 @@
 category: GraphProduct
 derived_from: automat
 description: Robokop Plus
-format: kgx
+format: kgx-jsonl
 id: automat.robokopplus
 name: robokopplus
 original_source: robokop

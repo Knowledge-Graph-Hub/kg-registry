@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: IntAct Automat
-format: kgx
+format: kgx-jsonl
 id: automat.intact
 infores_id: automat-intact
 name: intact_automat
