@@ -33,6 +33,7 @@ classes:
       - id
       - category
       - warnings
+      - layout
     class_uri: schema:Thing
 
   Registry:
@@ -154,13 +155,6 @@ classes:
           The Infores ID of the resource.
           Do not include the 'infores' prefix.
         range: string
-      layout:
-        description: >-
-          The layout of the resource.
-          This is used to determine how to display the resource
-          in the web interface.
-          It should generally be 'resource_detail'.
-        range: string
 
   KnowledgeGraph:
     description: >-
@@ -216,7 +210,6 @@ classes:
 
   Product:
     is_a: NamedThing
-    abstract: true
     description: >-
       A top-level class for all products in the
       knowledge graph registry. This includes any specific
@@ -286,10 +279,15 @@ classes:
       compatibility:
         description: >-
           A list of standards that the product conforms to.
-          This is not the same as its serialization.
+          This is not the same as its serialization/format.
         range: StandardCompatibility
         multivalued: true
         inlined: true
+      format:
+        description: >-
+          The format or serialization of the product.
+          Generally corresponds to the file extension.
+        range: FormatEnum
       dump_format:
         description: >-
           The format of a dump of the product as a file.
@@ -546,7 +544,7 @@ slots:
     # designates_type: true
     # is_class_field: true
     description: >-
-      The category of the resource.
+      The category of the entity.
       This should be identical to its class name.
   resources:
     description: A list of entries in the registry.
@@ -564,6 +562,14 @@ slots:
     inlined: true
     inlined_as_list: true
     multivalued: true
+  layout:
+    description: >-
+      The layout of the entity.
+      This is used to determine how to display the
+      entity in the web interface.
+      For resources, this is generally 'resource_detail'.
+      For products, this is generally 'product_detail'.
+    range: string
 
 # Types
 types:
@@ -700,6 +706,40 @@ enums:
       other:
         description: Another format not defined here.
 
+  FormatEnum:
+    description: >-
+      The serialization/format of a product.
+    permissible_values:
+      json:
+        description: The JSON format.
+      jsonld:
+        description: The JSON-LD format.
+      rdfxml:
+        description: The RDF/XML format.
+      ttl:
+        description: The Turtle format.
+      ntriples:
+        description: The N-Triples format.
+      nquads:
+        description: The N-Quads format.
+      owl:
+        description: The OWL format.
+      obo:
+        description: The OBO format.
+      graphql:
+        description: The GraphQL format.
+      protobuf:
+        description: The Protobuf format.
+      shacl:
+        description: The SHACL format.
+      shex:
+        description: The ShEx format.
+      kgx:
+        description: >-
+          The KGX standard, which is a graph exchange format
+          for knowledge graphs.
+        meaning: https://github.com/biolink/kgx/blob/master/specification/kgx-format.md
+
   StandardEnum:
     description: >-
       The standard or standards that a product conforms to.
@@ -716,11 +756,6 @@ enums:
           The KG-Hub standard, which is a general-purpose
           knowledge graph standard.
         meaning: https://kghub.org/
-      kgx:
-        description: >-
-          The KGX standard, which is a graph exchange format
-          for knowledge graphs.
-        meaning: https://github.com/biolink/kgx/blob/master/specification/kgx-format.md
 
   TagEnum:
     description: >-

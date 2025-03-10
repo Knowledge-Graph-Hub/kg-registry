@@ -20,7 +20,7 @@
                     "description": "The status of the resource."
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -90,7 +90,7 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -205,7 +205,7 @@
             "description": "A contact point for a resource or product.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -224,7 +224,7 @@
                     "description": "The status of the resource."
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -294,7 +294,7 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -393,14 +393,14 @@
             "description": "A product that is a data model, such as an ontology or schema.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "compatibility": {
-                    "description": "A list of standards that the product conforms to. This is not the same as its serialization.",
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
                     "items": {
                         "$ref": "#/$defs/StandardCompatibility"
                     },
@@ -441,12 +441,23 @@
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -525,7 +536,7 @@
                     "description": "The status of the resource."
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -595,7 +606,7 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -721,12 +732,32 @@
             "title": "DumpFormatEnum",
             "type": "string"
         },
+        "FormatEnum": {
+            "description": "The serialization/format of a product.",
+            "enum": [
+                "json",
+                "jsonld",
+                "rdfxml",
+                "ttl",
+                "ntriples",
+                "nquads",
+                "owl",
+                "obo",
+                "graphql",
+                "protobuf",
+                "shacl",
+                "shex",
+                "kgx"
+            ],
+            "title": "FormatEnum",
+            "type": "string"
+        },
         "FundingSource": {
             "additionalProperties": false,
             "description": "A funding source for a resource.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -746,6 +777,13 @@
                         }
                     ],
                     "description": "The organization providing the funding."
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "warnings": {
                     "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
@@ -769,14 +807,14 @@
             "description": "A product that is a graph, represented as nodes and edges.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "compatibility": {
-                    "description": "A list of standards that the product conforms to. This is not the same as its serialization.",
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
                     "items": {
                         "$ref": "#/$defs/StandardCompatibility"
                     },
@@ -824,12 +862,23 @@
                         "null"
                     ]
                 },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -931,14 +980,14 @@
             "description": "A product that is a graphical interface to a resource. Similar to the \"browsers\" field in OBO Foundry.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "compatibility": {
-                    "description": "A list of standards that the product conforms to. This is not the same as its serialization.",
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
                     "items": {
                         "$ref": "#/$defs/StandardCompatibility"
                     },
@@ -979,12 +1028,23 @@
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -1059,7 +1119,7 @@
             "description": "An individual person.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1107,7 +1167,7 @@
                     "description": "The status of the resource."
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1215,7 +1275,7 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -1314,7 +1374,7 @@
             "description": "A license for a resource or product. The id field should be a URL to the license text, e.g., https://creativecommons.org/licenses/by/4.0/",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1326,6 +1386,13 @@
                 },
                 "label": {
                     "description": "The name of the license.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -1360,14 +1427,14 @@
             "description": "A product that is a mapping between two or more data sources.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "compatibility": {
-                    "description": "A list of standards that the product conforms to. This is not the same as its serialization.",
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
                     "items": {
                         "$ref": "#/$defs/StandardCompatibility"
                     },
@@ -1408,12 +1475,23 @@
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -1488,7 +1566,7 @@
             "description": "A generic grouping for any identifiable entity",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1497,6 +1575,13 @@
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "warnings": {
                     "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
@@ -1520,7 +1605,7 @@
             "description": "An organization.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1563,14 +1648,14 @@
             "description": "A product that is a process or algorithm.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "compatibility": {
-                    "description": "A list of standards that the product conforms to. This is not the same as its serialization.",
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
                     "items": {
                         "$ref": "#/$defs/StandardCompatibility"
                     },
@@ -1611,12 +1696,23 @@
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -1686,19 +1782,158 @@
             "title": "ProcessProduct",
             "type": "object"
         },
-        "ProgrammingInterface": {
+        "Product": {
             "additionalProperties": false,
-            "description": "A product that is a programming interface (API) to a resource.",
+            "description": "A top-level class for all products in the knowledge graph registry. This includes any specific files, APIs, or any other accessible representations of a resource.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "compatibility": {
-                    "description": "A list of standards that the product conforms to. This is not the same as its serialization.",
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
+                    "items": {
+                        "$ref": "#/$defs/StandardCompatibility"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "compression": {
+                    "$ref": "#/$defs/CompressionEnum",
+                    "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
+                },
+                "contacts": {
+                    "description": "The contact points for the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "derived_from": {
+                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "A description of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "dump_format": {
+                    "$ref": "#/$defs/DumpFormatEnum",
+                    "description": "The format of a dump of the product as a file. Note the product may also be compressed."
+                },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
+                },
+                "id": {
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
+                    "type": "string"
+                },
+                "infores_id": {
+                    "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "license": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/License"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The license of the product. This may differ from that of the parent resource."
+                },
+                "name": {
+                    "description": "The human-readable name of the product.",
+                    "type": "string"
+                },
+                "original_source": {
+                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "repository": {
+                    "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tags": {
+                    "description": "Tags associated with the product.",
+                    "items": {
+                        "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "name",
+                "id"
+            ],
+            "title": "Product",
+            "type": "object"
+        },
+        "ProgrammingInterface": {
+            "additionalProperties": false,
+            "description": "A product that is a programming interface (API) to a resource.",
+            "properties": {
+                "category": {
+                    "description": "The category of the entity. This should be identical to its class name.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "compatibility": {
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
                     "items": {
                         "$ref": "#/$defs/StandardCompatibility"
                     },
@@ -1746,6 +1981,10 @@
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
@@ -1768,6 +2007,13 @@
                     "description": "Whether the API is publicly accessible, or requires only publicly provided credentials.",
                     "type": [
                         "boolean",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
+                    "type": [
+                        "string",
                         "null"
                     ]
                 },
@@ -1850,7 +2096,7 @@
                     ]
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1869,6 +2115,13 @@
                 },
                 "journal": {
                     "description": "The journal the publication was published in.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -1939,7 +2192,7 @@
                     "description": "The status of the resource."
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -2009,7 +2262,7 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -2126,8 +2379,7 @@
             "description": "The standard or standards that a product conforms to. These are not serializations, but rather the higher-level frameworks that the product is built on.",
             "enum": [
                 "biolink",
-                "kghub",
-                "kgx"
+                "kghub"
             ],
             "title": "StandardEnum",
             "type": "string"
@@ -2147,7 +2399,7 @@
             "description": "The usage of a resource. This may be actual, experimental, or theoretical.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -2166,6 +2418,13 @@
                 },
                 "label": {
                     "description": "The label of the usage.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"

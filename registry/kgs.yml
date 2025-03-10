@@ -19,26 +19,144 @@ resources:
   name: Automat
   products:
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     derived_from: automat
     description: Robokop KG (Automat)
-    id: robokopkg
+    format: kgx
+    id: automat.robokopkg
     name: robokopkg
     original_source: robokop
     url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     derived_from: automat
     description: Robokop Plus
-    id: robokopplus
+    format: kgx
+    id: automat.robokopplus
     name: robokopplus
     original_source: robokop
     url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
+    derived_from: automat
+    description: Biolink Automat
+    format: kgx
+    id: automat.biolink
+    name: biolink_automat
+    original_source: biolink
+    url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
+  - category: GraphProduct
+    derived_from: automat
+    description: CTD Automat
+    format: kgx
+    id: automat.ctd
+    infores_id: automat-ctd
+    name: ctd_automat
+    original_source: ctd
+    url: https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files
+  - category: GraphProduct
+    derived_from: automat
+    description: DrugCentral Automat
+    format: kgx
+    id: automat.drugcentral
+    infores_id: automat-drug-central
+    name: drugcentral_automat
+    original_source: drugcentral
+    url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
+  - category: GraphProduct
+    description: GTEx Automat
+    format: kgx
+    id: automat.gtex
+    infores_id: automat-gtex
+    name: gtex_automat
+    url: https://stars.renci.org/var/plater/bl-3.1.2/GTEx_Automat/latest/kgx_files
+  - category: GraphProduct
+    description: GtoPdb Automat
+    format: kgx
+    id: automat.gtopdb
+    infores_id: automat-gtopdb
+    name: gtopdb_automat
+    url: https://stars.renci.org/var/plater/bl-3.1.2/GtoPdb_Automat/latest/kgx_files
+  - category: GraphProduct
+    description: GWASCatalog Automat
+    format: kgx
+    id: automat.gwascatalog
+    infores_id: automat-gwas-catalog
+    name: gwascatalog_automat
+    url: https://stars.renci.org/var/plater/bl-3.1.2/GWASCatalog_Automat/latest/kgx_files
+  - category: GraphProduct
+    description: Hetio Automat
+    format: kgx
+    id: automat.hetio
+    name: hetio_automat
+    url: https://stars.renci.org/var/plater/bl-3.1.2/Hetio_Automat/latest/kgx_files
+  - category: GraphProduct
+    description: HGNC Automat
+    format: kgx
+    id: automat.hgnc
+    infores_id: automat-hgnc
+    name: hgnc_automat
+    url: https://stars.renci.org/var/plater/bl-3.1.2/HGNC_Automat/latest/kgx_files
+  - category: GraphProduct
+    description: HMDB Automat
+    format: kgx
+    id: automat.hmdb
+    infores_id: automat-hmdb
+    name: hmdb_automat
+    url: https://stars.renci.org/var/plater/bl-3.1.2/HMDB_Automat/latest/kgx_files
+  - category: GraphProduct
+    description: HumanGOA Automat
+    format: kgx
+    id: automat.humangoa
+    infores_id: automat-human-goa
+    name: humangoa_automat
+    url: https://stars.renci.org/var/plater/bl-3.1.2/HumanGOA_Automat/latest/kgx_files
+  - category: GraphProduct
+    description: IntAct Automat
+    format: kgx
+    id: automat.intact
+    infores_id: automat-intact
+    name: intact_automat
+    url: https://stars.renci.org/var/plater/bl-3.1.2/IntAct_Automat/latest/kgx_files
+  - category: GraphProduct
+    description: OntologicalHierarchy Automat
+    format: kgx
+    id: automat.ontologicalhierarchy
+    name: ontologicalhierarchy_automat
+    url: https://stars.renci.org/var/plater/bl-3.1.2/OntologicalHierarchy_Automat/latest/kgx_files
+  - category: GraphProduct
+    description: PANTHER Automat
+    format: kgx
+    id: automat.panther
+    infores_id: automat-panther
+    name: panther_automat
+    url: https://stars.renci.org/var/plater/bl-3.1.2/PANTHER_Automat/latest/kgx_files
+  - category: GraphProduct
+    description: PHAROS Automat
+    format: kgx
+    id: automat.pharos
+    infores_id: automat-pharos
+    name: pharos_automat
+    url: https://stars.renci.org/var/plater/bl-3.1.2/PHAROS_Automat/latest/kgx_files
+  - category: GraphProduct
+    description: STRING-DB Automat
+    format: kgx
+    id: automat.stringdb
+    name: stringdb_automat
+    url: https://stars.renci.org/var/plater/bl-3.1.2/STRING-DB_Automat/latest/kgx_files
+  - category: GraphProduct
+    description: UberGraph Automat
+    format: kgx
+    id: automat.ubergraph
+    name: ubergraph_automat
+    url: https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files
+  - category: GraphProduct
+    derived_from: automat
+    description: DrugCentral Automat
+    format: kgx
+    id: automat.drugcentral
+    infores_id: automat-drug-central
+    name: drugcentral_automat
+    original_source: drugcentral
+    url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
+  - category: GraphProduct
     derived_from: automat
     description: Biolink Automat
     id: biolink_automat
@@ -46,125 +164,13 @@ resources:
     original_source: biolink
     url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     derived_from: automat
-    description: CTD Automat
-    id: ctd_automat
-    infores_id: automat-ctd
-    name: ctd_automat
-    original_source: ctd
-    url: https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files
-  - category: GraphProduct
-    compatibility:
-    - standard: kgx
-    derived_from: automat
-    description: DrugCentral Automat
-    id: drugcentral_automat
-    infores_id: automat-drug-central
-    name: drugcentral_automat
-    original_source: drugcentral
-    url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
-  - category: GraphProduct
-    compatibility:
-    - standard: kgx
-    description: GTEx Automat
-    id: gtex_automat
-    infores_id: automat-gtex
-    name: gtex_automat
-    url: https://stars.renci.org/var/plater/bl-3.1.2/GTEx_Automat/latest/kgx_files
-  - category: GraphProduct
-    compatibility:
-    - standard: kgx
-    description: GtoPdb Automat
-    id: gtopdb_automat
-    infores_id: automat-gtopdb
-    name: gtopdb_automat
-    url: https://stars.renci.org/var/plater/bl-3.1.2/GtoPdb_Automat/latest/kgx_files
-  - category: GraphProduct
-    compatibility:
-    - standard: kgx
-    description: GWASCatalog Automat
-    id: gwascatalog_automat
-    infores_id: automat-gwas-catalog
-    name: gwascatalog_automat
-    url: https://stars.renci.org/var/plater/bl-3.1.2/GWASCatalog_Automat/latest/kgx_files
-  - category: GraphProduct
-    compatibility:
-    - standard: kgx
-    description: Hetio Automat
-    id: hetio_automat
-    name: hetio_automat
-    url: https://stars.renci.org/var/plater/bl-3.1.2/Hetio_Automat/latest/kgx_files
-  - category: GraphProduct
-    compatibility:
-    - standard: kgx
-    description: HGNC Automat
-    id: hgnc_automat
-    infores_id: automat-hgnc
-    name: hgnc_automat
-    url: https://stars.renci.org/var/plater/bl-3.1.2/HGNC_Automat/latest/kgx_files
-  - category: GraphProduct
-    compatibility:
-    - standard: kgx
-    description: HMDB Automat
-    id: hmdb_automat
-    infores_id: automat-hmdb
-    name: hmdb_automat
-    url: https://stars.renci.org/var/plater/bl-3.1.2/HMDB_Automat/latest/kgx_files
-  - category: GraphProduct
-    compatibility:
-    - standard: kgx
-    description: HumanGOA Automat
-    id: humangoa_automat
-    infores_id: automat-human-goa
-    name: humangoa_automat
-    url: https://stars.renci.org/var/plater/bl-3.1.2/HumanGOA_Automat/latest/kgx_files
-  - category: GraphProduct
-    compatibility:
-    - standard: kgx
-    description: IntAct Automat
-    id: intact_automat
-    infores_id: automat-intact
-    name: intact_automat
-    url: https://stars.renci.org/var/plater/bl-3.1.2/IntAct_Automat/latest/kgx_files
-  - category: GraphProduct
-    compatibility:
-    - standard: kgx
-    description: OntologicalHierarchy Automat
-    id: ontologicalhierarchy_automat
-    name: ontologicalhierarchy_automat
-    url: https://stars.renci.org/var/plater/bl-3.1.2/OntologicalHierarchy_Automat/latest/kgx_files
-  - category: GraphProduct
-    compatibility:
-    - standard: kgx
-    description: PANTHER Automat
-    id: panther_automat
-    infores_id: automat-panther
-    name: panther_automat
-    url: https://stars.renci.org/var/plater/bl-3.1.2/PANTHER_Automat/latest/kgx_files
-  - category: GraphProduct
-    compatibility:
-    - standard: kgx
-    description: PHAROS Automat
-    id: pharos_automat
-    infores_id: automat-pharos
-    name: pharos_automat
-    url: https://stars.renci.org/var/plater/bl-3.1.2/PHAROS_Automat/latest/kgx_files
-  - category: GraphProduct
-    compatibility:
-    - standard: kgx
-    description: STRING-DB Automat
-    id: stringdb_automat
-    name: stringdb_automat
-    url: https://stars.renci.org/var/plater/bl-3.1.2/STRING-DB_Automat/latest/kgx_files
-  - category: GraphProduct
-    compatibility:
-    - standard: kgx
-    description: UberGraph Automat
-    id: ubergraph_automat
-    name: ubergraph_automat
-    url: https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files
+    description: Biolink Automat
+    format: kgx
+    id: biolink_automat
+    name: biolink_automat
+    original_source: biolink
+    url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
   repository: https://github.com/RobokopU24/
 - activity_status: active
   category: DataSource
@@ -373,7 +379,8 @@ resources:
     - standard: biolink
       version: 4.2.5
     description: OWL release of Biolink Model
-    id: biolink-model.owl.ttl
+    format: owl
+    id: biolink.model.owl
     name: Biolink Model OWL release
     url: https://w3id.org/biolink/biolink-model.owl.ttl
   - category: DataModelProduct
@@ -381,7 +388,8 @@ resources:
     - standard: biolink
       version: 4.2.5
     description: JSON schema release of Biolink Model
-    id: biolink-model.json
+    format: json
+    id: biolink.model.json
     name: Biolink Model JSON release
     url: https://w3id.org/biolink/biolink-model.json
   - category: DataModelProduct
@@ -389,7 +397,8 @@ resources:
     - standard: biolink
       version: 4.2.5
     description: GraphQL release of Biolink Model
-    id: biolink-model.graphql
+    format: graphql
+    id: biolink.model.graphql
     name: Biolink Model GraphQL release
     url: https://w3id.org/biolink/biolink-model.graphql
   - category: DataModelProduct
@@ -397,12 +406,17 @@ resources:
     - standard: biolink
       version: 4.2.5
     description: Protobuf release of Biolink Model
-    id: biolink-model.proto
+    format: protobuf
+    id: biolink.model.proto
     name: Biolink Model Protobuf release
     url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/protobuf/biolink_model.proto
   - category: DataModelProduct
+    compatibility:
+    - standard: biolink
+      version: 4.2.5
     description: SHACL release of Biolink Model
-    id: biolink-model.shacl
+    format: shacl
+    id: biolink.model.shacl
     name: Biolink Model SHACL release
     url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shacl/biolink_model.shacl.ttl
   - category: DataModelProduct
@@ -410,15 +424,30 @@ resources:
     - standard: biolink
       version: 4.2.5
     description: ShEx release of Biolink Model
-    id: biolink-model.shex
+    format: shex
+    id: biolink.model.shex
     name: Biolink Model ShEx release
     url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     derived_from: automat
     description: Biolink Automat
     id: biolink_automat
+    name: biolink_automat
+    original_source: biolink
+    url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
+  - category: GraphProduct
+    derived_from: automat
+    description: Biolink Automat
+    format: kgx
+    id: biolink_automat
+    name: biolink_automat
+    original_source: biolink
+    url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
+  - category: GraphProduct
+    derived_from: automat
+    description: Biolink Automat
+    format: kgx
+    id: automat.biolink
     name: biolink_automat
     original_source: biolink
     url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
@@ -599,7 +628,8 @@ resources:
   products:
   - category: DataModelProduct
     description: OWL release of Monochrom Ontology
-    id: chr.owl
+    format: owl
+    id: chr.model.owl
     name: Monochrom Ontology OWL release
     url: http://purl.obolibrary.org/obo/chr.owl
   repository: https://github.com/monarch-initiative/monochrom/
@@ -625,7 +655,7 @@ resources:
   - category: ProgrammingInterface
     connection_url: cl-kg-neo4j-db.cellgeni.sanger.ac.uk:443
     description: Publicly available Neo4j instance for CL-KG.
-    id: cl-kg.neo4j
+    id: cl-kg.api.neo4j
     is_neo4j: true
     is_public: true
     name: CL-KG Neo4j graph instance
@@ -676,11 +706,10 @@ resources:
   name: Comparative Toxicogenomics Database
   products:
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     derived_from: automat
     description: CTD Automat
-    id: ctd_automat
+    format: kgx
+    id: automat.ctd
     infores_id: automat-ctd
     name: ctd_automat
     original_source: ctd
@@ -705,7 +734,7 @@ resources:
     compression: targz
     description: DRKG graph files, including a TSV of triples, embeddings, ID mappings,
       and a glossary of relation types.
-    id: kg-idg.tar.gz
+    id: drkg.graph
     name: DRKG graph
     url: https://dgl-data.s3-us-west-2.amazonaws.com/dataset/DRKG/drkg.tar.gz
   repository: https://github.com/gnn4dr/DRKG
@@ -745,11 +774,10 @@ resources:
   name: DrugCentral
   products:
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     derived_from: automat
     description: DrugCentral Automat
-    id: drugcentral_automat
+    format: kgx
+    id: automat.drugcentral
     infores_id: automat-drug-central
     name: drugcentral_automat
     original_source: drugcentral
@@ -798,7 +826,8 @@ resources:
   products:
   - category: Product
     description: OWL release of ecosim
-    id: ecosim.owl
+    format: owl
+    id: ecosim.model.owl
     name: ecosim OWL release
   repository: http://purl.obolibrary.org/obo/ecosim.owl
 - activity_status: active
@@ -868,7 +897,8 @@ resources:
   name: GOLD Environmental Paths
   products:
   - category: Product
-    id: goldterms.owl
+    format: owl
+    id: goldterms.data.owl
     name: main GOLDTERMS OWL release
     url: https://w3id.org/goldterms/goldterms.owl
   repository: https://github.com/cmungall/gold-ontology
@@ -888,13 +918,13 @@ resources:
   - category: GraphProduct
     description: GP_KG.txt
     edge_count: 1246726
-    id: gp-kg
+    id: gp-kg.graph
     name: GP-KG
     node_count: 61146
     url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
   - category: ProcessProduct
     description: A computational framework for drug repurposing, used with GP-KG
-    id: gp-kg.kg-predict
+    id: gp-kg.process.kg-predict
     name: KG-Predict
     url: http://nlp.case.edu/public/data/GPKG-Predict/code/
   publications:
@@ -955,6 +985,7 @@ resources:
   - category: GraphProduct
     description: The graph representation of the Human Reference Atlas (HRA) dataset,
       v2.2, JSON-LD format
+    format: jsonld
     id: hra-kg.graph.json
     name: HRA KG graph data, v2.2, JSON-LD format
     url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.json
@@ -993,10 +1024,9 @@ resources:
   name: Exposures KP (icees-kg)
   products:
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     description: KGX distribution of the ICEES Exposures KP
-    id: icees_kgx_files
+    format: kgx
+    id: icees-kg.graph
     name: KGX distribution of the ICEES Exposures KP
     url: https://stars.renci.org/var/plater/bl-2.1/icees_kgx_files/
   repository: ''
@@ -1076,10 +1106,9 @@ resources:
   name: KG-COVID-19
   products:
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     description: KGX nodes and edges for KG-COVID-19
-    id: kg-covid-19.kgx
+    format: kgx
+    id: kg-covid-19.graph
     name: KG-COVID-19 graph
     url: https://kghub.io/kg-covid-19/
   repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
@@ -1115,10 +1144,9 @@ resources:
   name: KG-IDG
   products:
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     description: KGX Distribution of KG-IDG
-    id: kg-idg.tar.gz
+    format: kgx
+    id: kg-idg.graph
     name: KGX Distribution of KG-IDG
     url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
@@ -1141,53 +1169,49 @@ resources:
   name: KG Microbe
   products:
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     compression: targz
     description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
-    id: kg-microbe.raw
+    format: kgx
+    id: kg-microbe.graph.raw
     name: KG-Microbe KGX Graph - Raw
     url: https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     compression: targz
     description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
       growth preferences.
-    id: kg-microbe.core
+    format: kgx
+    id: kg-microbe.graph.core
     name: KG-Microbe KGX Graph - Core
     url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     compression: targz
     description: Core plus human biomedical data (ontologies, CTD, Wallen et al)
-    id: kg-microbe.biomedical
+    format: kgx
+    id: kg-microbe.graph.biomedical
     name: KG-Microbe KGX Graph - Biomedical
     url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     compression: targz
     description: Core plus Uniprot genome annotations
-    id: kg-microbe.function
+    format: kgx
+    id: kg-microbe.graph.function
     name: KG-Microbe KGX Graph - Function
     url: https://kghub.io/kg-microbe/KGMicrobe-function-20250222.tar.gz
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     compression: targz
     description: Biomedical plus Uniprot genome annotations
-    id: kg-microbe.biomedical-function
+    format: kgx
+    id: kg-microbe.graph.biomedical-function
     name: KG-Microbe KGX Graph - Biomedical-Function
     url: https://kghub.io/kg-microbe/KGMicrobe-biomedical-function-20250222.tar.gz
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     compression: targz
+    derived_from: kg-microbe
     description: UniProt proteins from microbes, as graph nodes and edges
-    id: kg-microbe.uniprot
+    format: kgx
+    id: kg-microbe.graph.uniprot
     name: KG-Microbe UniProt microbe transform
+    original_source: uniprot
     url: https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
   repository: https://github.com/Knowledge-Graph-Hub/kg-microbe
 - activity_status: active
@@ -1210,10 +1234,9 @@ resources:
   name: KG Monarch
   products:
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     description: KGX Distribution of KGM
-    id: kg-monarch.tar.gz
+    format: kgx
+    id: kg-monarch.graph
     name: KGX Distribution of KGM
     url: https://kg-hub.berkeleybop.io/kg-monarch/current/kg-monarch.tar.gz
   repository: https://github.com/monarch-initiative/monarch-ingest
@@ -1239,11 +1262,13 @@ resources:
   products:
   - category: DataModelProduct
     description: OWL release of Knowledge Graph Change Language
-    id: kgcl.owl
+    format: owl
+    id: kgcl.model.owl
     name: Knowledge Graph Change Language OWL release
   - category: DataModelProduct
     description: OBO release of Knowledge Graph Change Language
-    id: kgcl.obo
+    format: obo
+    id: kgcl.model.obo
     name: Knowledge Graph Change Language OBO release
   repository: https://github.com/INCATools/kgcl/
 - activity_status: active
@@ -1271,7 +1296,7 @@ resources:
   products:
   - category: DataModelProduct
     description: OWL release of mixs
-    id: mixs.owl
+    id: mixs.model
     name: MIxS OWL release
     url: https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/refs/heads/main/project/owl/mixs.owl.ttl
   repository: https://github.com/GenomicsStandardsConsortium/mixs
@@ -1293,17 +1318,15 @@ resources:
   name: MolePro
   products:
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     description: KGX nodes for Molecular Data KP
-    id: molecular-data-kp.nodes
+    format: kgx
+    id: molecular-data-kp.graph.nodes
     name: Nodes for Molecular Data KP
     url: https://molepro.s3.amazonaws.com/nodes.tsv
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     description: KGX edges for Molecular Data KP
-    id: molecular-data-kp.edges
+    format: kgx
+    id: molecular-data-kp.graph.edges
     name: Edges for Molecular Data KP
     url: https://molepro.s3.amazonaws.com/edges.tsv
   - category: ProgrammingInterface
@@ -1350,7 +1373,8 @@ resources:
   products:
   - category: Product
     description: OWL release of neo
-    id: neo.owl
+    format: owl
+    id: neo.model
     name: neo OWL release
     url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
   repository: https://github.com/geneontology/neo/
@@ -1376,14 +1400,14 @@ resources:
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
-    id: NP-KG_v3.0.0.tsv
+    id: np-kg.graph.tsv
     name: NP-KG TSV
     url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.tsv?download=1
   - category: GraphProduct
     description: Merged KG with ontology-grounded KG and literature-based graph as
       NetworkX multidigraph object
     dump_format: gpickle
-    id: NP-KG_v3.0.0.gpickle
+    id: np-kg.graph.networkx
     name: NP-KG gpickle
     url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.gpickle?download=1
   publications:
@@ -3274,7 +3298,7 @@ resources:
   products:
   - category: GraphProduct
     description: A multi-omics biomedical knowledge graph
-    id: petagraph
+    id: petagraph.graph
     name: Petagraph Knowledge Graph (Neo4J)
     url: https://ubkg-downloads.xconsortia.org/
   repository: https://github.com/TaylorResearchLab/Petagraph
@@ -3318,16 +3342,17 @@ resources:
   products:
   - category: Product
     description: OWL version of phenio
-    id: phenio.owl
+    format: owl
+    id: phenio.model
     name: phenio
     url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl
   - category: GraphProduct
     compatibility:
-    - standard: kgx
     - standard: biolink
       version: 4.2.5
     description: KGX version of phenio
-    id: phenio.kgx
+    format: kgx
+    id: phenio.graph
     name: phenio KG
     url: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
   repository: https://github.com/monarch-initiative/phenio
@@ -3371,7 +3396,7 @@ resources:
   - category: GraphProduct
     derived_from: primekg
     description: The full PrimeKG dataset containing disease relationships.
-    id: primekg.csv
+    id: primekg.graph
     name: PrimeKG Full Dataset
     url: https://dataverse.harvard.edu/api/access/datafile/6180620
   repository: https://github.com/mims-harvard/PrimeKG
@@ -3419,15 +3444,6 @@ resources:
   id: reacto
   layout: resource_detail
   name: Reactome Entity Ontology (REACTO)
-  products:
-  - category: Product
-    description: OWL release of Reactome Entity Ontology (REACTO)
-    id: reacto.owl
-    name: Reactome Entity Ontology (REACTO) OWL release
-  - category: Product
-    description: OBO release of Reactome Entity Ontology (REACTO)
-    id: reacto.obo
-    name: Reactome Entity Ontology (REACTO) OBO release
   repository: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
 - activity_status: active
   category: DataSource
@@ -3446,15 +3462,10 @@ resources:
   products:
   - category: Product
     description: Conversion from BioPAX, human subset
-    id: reactome-hs-biopax.db.gz
+    id: reactome.data.human
     name: Reactome Human from BioPAX, sqlite
     url: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
-  - category: Product
-    description: Biopragmatics provided conversion, human subset
-    id: reactome-hs-biopragmatics.obo
-    name: Reactome Human, Biopragmatics
-    url: https://w3id.org/biopragmatics/resources/reactome/reactome.obo
-  repository: https://github.com/biopragmatics/obo-db-ingest
+  repository: ''
 - activity_status: active
   category: DataSource
   contacts:
@@ -3527,24 +3538,22 @@ resources:
   - category: Product
     description: A biomedical knowledge graph containing ~10 million nodes and ~250
       million edges from ~30 biological data sources and bio-ontologies.
-    id: robokopkg
+    id: robokop.graph
     name: ROBOKOP Knowledge Graph (KG)
     url: http://robokopkg.renci.org
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     derived_from: automat
     description: Robokop KG (Automat)
-    id: robokopkg
+    format: kgx
+    id: automat.robokopkg
     name: robokopkg
     original_source: robokop
     url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     derived_from: automat
     description: Robokop Plus
-    id: robokopplus
+    format: kgx
+    id: automat.robokopplus
     name: robokopplus
     original_source: robokop
     url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files
@@ -3569,10 +3578,9 @@ resources:
   name: RTX-KG2
   products:
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     description: KGX distribution of the RTX-KG2
-    id: rtx_kgx_files
+    format: kgx
+    id: rtx-kg2.graph
     name: RTX-KG2 KGX
     url: https://github.com/ncats/translator-lfs-artifacts/blob/main/files/
   repository: https://github.com/RTXteam/RTX-KG2
@@ -3642,10 +3650,9 @@ resources:
   name: SRI-Reference KG
   products:
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     description: KGX distribution of the SRI-Reference KG
-    id: monarch-kg.tar.gz
+    format: kgx
+    id: sri-reference-kg.graph
     name: SRI-Reference KG (KGX distribution)
     url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
   repository: ''
@@ -3695,10 +3702,9 @@ resources:
   name: Text Mining KP
   products:
   - category: GraphProduct
-    compatibility:
-    - standard: kgx
     description: Text Mining KP KGX distribution
-    id: targeted_assertions.tar.gz
+    format: kgx
+    id: text-mining-kp.graph
     name: Text Mining KP KGX
     url: https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz
   repository: ''
@@ -3754,6 +3760,16 @@ resources:
     label: CC-BY-4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
   name: uniprot
+  products:
+  - category: GraphProduct
+    compression: targz
+    derived_from: kg-microbe
+    description: UniProt proteins from microbes, as graph nodes and edges
+    format: kgx
+    id: kg-microbe.graph.uniprot
+    name: KG-Microbe UniProt microbe transform
+    original_source: uniprot
+    url: https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
   repository: https://www.uniprot.org/
 - activity_status: active
   category: DataSource

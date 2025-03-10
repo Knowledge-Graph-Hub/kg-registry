@@ -1,0 +1,95 @@
+---
+layout: default
+---
+
+<div class="row">
+  <h1>
+    {% if page.depicted_by %}
+    <img alt="logo" src="{{page.depicted_by}}" style="max-height: 1em;" />
+    {% endif %} {{ page.id }}
+  </h1>
+  {% if page.category %}
+    {% if page.category == "GraphProduct" %}
+      <p>is a <strong><em>Graph.</em></strong></p>
+    {% elsif page.category == "Product" %}
+      <p>is a general purpose <strong><em>Product.</em></strong></p>
+    {% elsif page.category == "MappingProduct" %}
+      <p>is a <strong><em>Mapping.</em></strong></p>
+    {% elsif page.category == "ProcessProduct" %}
+      <p>is a <strong><em>Process.</em></strong></p>
+    {% elsif page.category == "DataModelProduct" %}
+      <p>is a <strong><em>Data Model or Ontology.</em></strong></p>
+    {% elsif page.category == "GraphicalInterface" %}
+      <p>is a <strong><em>Graphical Interface</em> for a product or resource.</strong></p>
+    {% elsif page.category == "ProgrammingInterface" %}
+      <p>is a <strong><em>Programming Interface</em> for a product or resource.</strong></p>
+    {% endif %}
+  {% endif %}
+  <p>{{page.description}}</p>
+</div>
+
+<div class="col">
+<div class="row">
+  <div class="row header-card-row">
+    <div class="card bg-light mb-3" style="max-width: 12rem;">
+      <div class="card-body">
+        <h5 class="card-title">Format</h5>
+        {% if page.format %}
+          <p class="card-text">{{page.format}}</p>
+        {% else %}
+          <p class="card-text" style="font-weight: bold;">Unknown</p>
+        {% endif %}
+        </div>
+  </div>
+    <div class="card bg-light mb-3" style="max-width: 12rem;">
+        <div class="card-body">
+          <h5 class="card-title">Provided By</h5>
+            <p class="card-text"><a href="{{page.derived_from}}.html">{{page.derived_from}}</a></p>
+          </div>
+    </div>
+    <div class="card bg-light mb-3" style="max-width: 12rem;">
+      <div class="card-body">
+        <h5 class="card-title">Original Source</h5>
+          <p class="card-text"><a href="{{page.original_source}}.html">{{page.original_source}}</a></p>
+        </div>
+  </div>
+      <div class="card bg-light mb-3" style="max-width: 12rem;">
+          <div class="card-body">
+            <h5 class="card-title">License</h5>
+            {% if page.license %}
+              <p class="card-text"><a href="{{page.license.id}}">{{page.license.label}}</a></p>
+            {% else %}
+              <p class="card-text" style="color: red; font-weight: bold;">Warning: No license entered</p>
+            {% endif %}
+            </div>
+      </div>
+    </div>
+
+    {% if page.warnings %} 
+      {% for warning in page.warnings %}
+        <div class="alert alert-warning" role="alert">
+          ⚠ {{warning}}
+        </div>
+      {% endfor %}
+    {% endif %}
+
+    {% if page.compatibility %}
+    <div class="card px-0" style="margin-bottom: 1.5em" id="publications">
+      <div class="card-header">
+        <h4>Compatibility</h4>
+      </div>
+      <div class="list-group list-group-flush">
+        {% for c in page.compatibility %}
+        <div class="list-group-item">
+          {{c.standard}}
+          {% if c.version %}
+          <span class="badge badge-primary badge-pill">{{c.version}}</span>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+</div>
