@@ -703,6 +703,9 @@ products:
     label: CC0-1.0
   name: hgnc OBO
   url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo
+  format: obo
+  derived_from: obo-db-ingest
+  original_source: hgnc
 - category: Product
   description: hgnc OWL
   id: obo-db-ingest.hgnc.owl
@@ -711,6 +714,9 @@ products:
     label: CC0-1.0
   name: hgnc OWL
   url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl
+  format: owl
+  derived_from: obo-db-ingest
+  original_source: hgnc
 - category: Product
   description: hgnc OBO Graph JSON
   id: obo-db-ingest.hgnc.json
@@ -719,6 +725,9 @@ products:
     label: CC0-1.0
   name: hgnc OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.json
+  format: json
+  derived_from: obo-db-ingest
+  original_source: hgnc
 - category: MappingProduct
   description: hgnc SSSOM
   id: obo-db-ingest.hgnc.sssom.tsv
@@ -727,6 +736,8 @@ products:
     label: CC0-1.0
   name: hgnc SSSOM
   url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
+  derived_from: obo-db-ingest
+  original_source: hgnc
 - category: Product
   description: hgnc.genegroup OBO
   id: obo-db-ingest.hgnc.genegroup.obo
@@ -735,6 +746,9 @@ products:
     label: CC0-1.0
   name: hgnc.genegroup OBO
   url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.obo
+  format: obo
+  derived_from: obo-db-ingest
+  original_source: hgnc
 - category: Product
   description: hgnc.genegroup OWL
   id: obo-db-ingest.hgnc.genegroup.owl
@@ -743,6 +757,9 @@ products:
     label: CC0-1.0
   name: hgnc.genegroup OWL
   url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.owl
+  format: owl
+  derived_from: obo-db-ingest
+  original_source: hgnc
 - category: Product
   description: hgnc.genegroup OBO Graph JSON
   id: obo-db-ingest.hgnc.genegroup.json
@@ -751,6 +768,9 @@ products:
     label: CC0-1.0
   name: hgnc.genegroup OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.json
+  format: json
+  derived_from: obo-db-ingest
+  original_source: hgnc
 - category: Product
   description: icd10 OBO
   id: obo-db-ingest.icd10.obo
