@@ -7,4 +7,5 @@ is_neo4j: true
 is_public: true
 name: CL-KG Neo4j graph instance
 url: https://cellular-semantics.sanger.ac.uk/browser/
+layout: product_detail
 ---

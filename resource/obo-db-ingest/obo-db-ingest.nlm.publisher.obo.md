@@ -7,4 +7,5 @@ license:
   label: public domain
 name: nlm.publisher OBO
 url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.obo
+layout: product_detail
 ---

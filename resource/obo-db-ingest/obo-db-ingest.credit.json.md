@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: credit OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/credit/credit.json
+layout: product_detail
 ---

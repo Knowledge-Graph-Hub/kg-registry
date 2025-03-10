@@ -7,4 +7,5 @@ license:
   label: Custom
 name: icd10 OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/icd10/icd10.json
+layout: product_detail
 ---

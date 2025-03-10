@@ -7,4 +7,5 @@ license:
   label: CC-BY-SA-3.0
 name: chembl.compound OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/chembl.compound/chembl.compound.json
+layout: product_detail
 ---

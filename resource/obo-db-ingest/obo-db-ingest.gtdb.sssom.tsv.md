@@ -7,4 +7,5 @@ license:
   label: CC-BY-SA-4.0
 name: gtdb SSSOM
 url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.sssom.tsv
+layout: product_detail
 ---

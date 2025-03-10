@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: interpro OBO
 url: https://w3id.org/biopragmatics/resources/interpro/interpro.obo
+layout: product_detail
 ---

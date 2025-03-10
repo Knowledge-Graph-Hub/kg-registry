@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: mesh OWL
 url: https://w3id.org/biopragmatics/resources/mesh/mesh.owl
+layout: product_detail
 ---

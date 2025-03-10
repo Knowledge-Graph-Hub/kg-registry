@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: rhea OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/rhea/rhea.json
+layout: product_detail
 ---

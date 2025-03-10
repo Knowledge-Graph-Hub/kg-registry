@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: rgd OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/rgd/rgd.json
+layout: product_detail
 ---

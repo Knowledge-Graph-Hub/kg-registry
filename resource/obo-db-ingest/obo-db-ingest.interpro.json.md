@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: interpro OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/interpro/interpro.json
+layout: product_detail
 ---

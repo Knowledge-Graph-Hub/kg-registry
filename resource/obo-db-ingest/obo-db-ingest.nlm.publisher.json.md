@@ -7,4 +7,5 @@ license:
   label: public domain
 name: nlm.publisher OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/nlm.publisher/nlm.publisher.json
+layout: product_detail
 ---

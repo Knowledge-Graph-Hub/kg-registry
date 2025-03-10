@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: cgnc OBO
 url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.obo
+layout: product_detail
 ---

@@ -7,4 +7,5 @@ license:
   label: CC-BY-SA-4.0
 name: gtdb OBO
 url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo
+layout: product_detail
 ---

@@ -4,4 +4,5 @@ description: OWL release of ecosim
 format: owl
 id: ecosim.model.owl
 name: ecosim OWL release
+layout: product_detail
 ---

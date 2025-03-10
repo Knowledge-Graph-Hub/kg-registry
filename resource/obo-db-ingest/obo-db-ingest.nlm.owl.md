@@ -7,4 +7,5 @@ license:
   label: public domain
 name: nlm OWL
 url: https://w3id.org/biopragmatics/resources/nlm/nlm.owl
+layout: product_detail
 ---

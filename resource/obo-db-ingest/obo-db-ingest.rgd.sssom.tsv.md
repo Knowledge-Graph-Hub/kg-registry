@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: rgd SSSOM
 url: https://w3id.org/biopragmatics/resources/rgd/rgd.sssom.tsv
+layout: product_detail
 ---

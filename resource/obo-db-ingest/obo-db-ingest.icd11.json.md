@@ -7,4 +7,5 @@ license:
   label: CC-BY-ND-3.0-IGO
 name: icd11 OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/icd11/icd11.json
+layout: product_detail
 ---

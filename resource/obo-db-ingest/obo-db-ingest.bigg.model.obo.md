@@ -9,4 +9,5 @@ license:
 name: bigg.model OBO
 original_source: bigg
 url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.obo
+layout: product_detail
 ---

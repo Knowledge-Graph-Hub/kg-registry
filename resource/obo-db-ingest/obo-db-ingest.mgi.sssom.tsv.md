@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: mgi SSSOM
 url: https://w3id.org/biopragmatics/resources/mgi/mgi.sssom.tsv
+layout: product_detail
 ---

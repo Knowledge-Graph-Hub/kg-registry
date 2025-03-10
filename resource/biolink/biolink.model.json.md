@@ -8,4 +8,5 @@ format: json
 id: biolink.model.json
 name: Biolink Model JSON release
 url: https://w3id.org/biolink/biolink-model.json
+layout: product_detail
 ---

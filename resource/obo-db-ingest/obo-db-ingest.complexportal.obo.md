@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: complexportal OBO
 url: https://w3id.org/biopragmatics/resources/complexportal/complexportal.obo
+layout: product_detail
 ---

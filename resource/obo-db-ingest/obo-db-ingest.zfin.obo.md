@@ -9,4 +9,5 @@ license:
 name: zfin OBO
 original_source: zfin
 url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
+layout: product_detail
 ---

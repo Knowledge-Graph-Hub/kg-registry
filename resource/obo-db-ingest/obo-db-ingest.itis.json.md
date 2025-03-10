@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: itis OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/itis/itis.json
+layout: product_detail
 ---

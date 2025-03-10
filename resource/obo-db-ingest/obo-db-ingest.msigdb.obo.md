@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: msigdb OBO
 url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo
+layout: product_detail
 ---

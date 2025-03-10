@@ -6,4 +6,5 @@ format: jsonld
 id: hra-kg.graph.json
 name: HRA KG graph data, v2.2, JSON-LD format
 url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.json
+layout: product_detail
 ---

@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: mesh OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/mesh/mesh.json
+layout: product_detail
 ---

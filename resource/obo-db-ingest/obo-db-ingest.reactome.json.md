@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: reactome OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/reactome/reactome.json
+layout: product_detail
 ---

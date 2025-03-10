@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: rhea SSSOM
 url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv
+layout: product_detail
 ---

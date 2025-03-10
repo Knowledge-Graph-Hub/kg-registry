@@ -9,4 +9,5 @@ license:
 name: bigg.metabolite OBO
 original_source: bigg
 url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.obo
+layout: product_detail
 ---

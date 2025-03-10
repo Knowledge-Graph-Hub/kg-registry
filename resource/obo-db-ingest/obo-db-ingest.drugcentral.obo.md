@@ -7,4 +7,5 @@ license:
   label: CC-BY-SA-4.0
 name: drugcentral OBO
 url: https://w3id.org/biopragmatics/resources/drugcentral/drugcentral.obo
+layout: product_detail
 ---

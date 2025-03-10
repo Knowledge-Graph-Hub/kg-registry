@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: hgnc SSSOM
 url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
+layout: product_detail
 ---

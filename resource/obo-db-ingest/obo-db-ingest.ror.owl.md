@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: ror OWL
 url: https://w3id.org/biopragmatics/resources/ror/ror.owl
+layout: product_detail
 ---

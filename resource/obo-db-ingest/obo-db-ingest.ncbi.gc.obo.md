@@ -7,4 +7,5 @@ license:
   label: public domain
 name: ncbi.gc OBO
 url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.obo
+layout: product_detail
 ---

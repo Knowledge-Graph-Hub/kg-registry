@@ -7,4 +7,5 @@ license:
   label: CC-BY-SA-4.0
 name: pharmgkb.pathways OBO
 url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.obo
+layout: product_detail
 ---

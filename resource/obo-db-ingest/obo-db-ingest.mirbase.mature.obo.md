@@ -7,4 +7,5 @@ license:
   label: public domain
 name: mirbase.mature OBO
 url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.obo
+layout: product_detail
 ---

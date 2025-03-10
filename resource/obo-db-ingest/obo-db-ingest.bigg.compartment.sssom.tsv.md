@@ -9,4 +9,5 @@ license:
 name: bigg.compartment SSSOM
 original_source: bigg
 url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
+layout: product_detail
 ---

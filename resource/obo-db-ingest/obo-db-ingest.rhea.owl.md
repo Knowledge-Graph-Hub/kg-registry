@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: rhea OWL
 url: https://w3id.org/biopragmatics/resources/rhea/rhea.owl
+layout: product_detail
 ---

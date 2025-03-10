@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: rgd OBO
 url: https://w3id.org/biopragmatics/resources/rgd/rgd.obo
+layout: product_detail
 ---

@@ -7,4 +7,5 @@ license:
   label: CC-BY-4.0
 name: msigdb SSSOM
 url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.sssom.tsv
+layout: product_detail
 ---

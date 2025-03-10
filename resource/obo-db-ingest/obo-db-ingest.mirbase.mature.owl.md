@@ -7,4 +7,5 @@ license:
   label: public domain
 name: mirbase.mature OWL
 url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.owl
+layout: product_detail
 ---

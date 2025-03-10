@@ -9,4 +9,5 @@ license:
 name: zfin OBO Graph JSON
 original_source: zfin
 url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
+layout: product_detail
 ---

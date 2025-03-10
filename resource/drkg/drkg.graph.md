@@ -6,4 +6,5 @@ description: DRKG graph files, including a TSV of triples, embeddings, ID mappin
 id: drkg.graph
 name: DRKG graph
 url: https://dgl-data.s3-us-west-2.amazonaws.com/dataset/DRKG/drkg.tar.gz
+layout: product_detail
 ---

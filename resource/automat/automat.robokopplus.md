@@ -7,4 +7,5 @@ id: automat.robokopplus
 name: robokopplus
 original_source: robokop
 url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files
+layout: product_detail
 ---

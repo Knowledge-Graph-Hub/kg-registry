@@ -9,4 +9,5 @@ license:
 name: bigg.compartment OWL
 original_source: bigg
 url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.owl
+layout: product_detail
 ---

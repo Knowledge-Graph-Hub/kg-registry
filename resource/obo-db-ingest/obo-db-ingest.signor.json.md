@@ -7,4 +7,5 @@ license:
   label: CC-BY-NC-4.0
 name: signor OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/signor/signor.json
+layout: product_detail
 ---

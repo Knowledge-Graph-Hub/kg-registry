@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: hgnc.genegroup OBO
 url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.obo
+layout: product_detail
 ---

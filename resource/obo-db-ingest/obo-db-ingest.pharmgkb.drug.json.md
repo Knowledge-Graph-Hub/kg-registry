@@ -7,4 +7,5 @@ license:
   label: CC-BY-SA-4.0
 name: pharmgkb.drug OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.json
+layout: product_detail
 ---

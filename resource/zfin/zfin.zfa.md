@@ -8,4 +8,5 @@ license:
 name: ZFA
 original_source: zfin
 url: http://purl.obolibrary.org/obo/zfa.owl
+layout: product_detail
 ---

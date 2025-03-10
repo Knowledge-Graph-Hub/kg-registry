@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: pfam OBO
 url: https://w3id.org/biopragmatics/resources/pfam/pfam.obo
+layout: product_detail
 ---

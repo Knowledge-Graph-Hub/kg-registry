@@ -9,4 +9,5 @@ license:
 name: bigg.model OWL
 original_source: bigg
 url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.owl
+layout: product_detail
 ---

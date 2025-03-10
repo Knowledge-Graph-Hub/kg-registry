@@ -7,4 +7,5 @@ license:
   label: ODbL-1.0
 name: pathbank OBO
 url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo
+layout: product_detail
 ---

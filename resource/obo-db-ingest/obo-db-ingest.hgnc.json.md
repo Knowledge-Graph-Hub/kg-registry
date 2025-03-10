@@ -7,4 +7,5 @@ license:
   label: CC0-1.0
 name: hgnc OBO Graph JSON
 url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.json
+layout: product_detail
 ---

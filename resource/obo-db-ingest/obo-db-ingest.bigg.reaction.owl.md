@@ -9,4 +9,5 @@ license:
 name: bigg.reaction OWL
 original_source: bigg
 url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.owl
+layout: product_detail
 ---

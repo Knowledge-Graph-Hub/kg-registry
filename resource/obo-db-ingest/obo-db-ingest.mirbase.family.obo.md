@@ -7,4 +7,5 @@ license:
   label: public domain
 name: mirbase.family OBO
 url: https://w3id.org/biopragmatics/resources/mirbase.family/mirbase.family.obo
+layout: product_detail
 ---
