@@ -33,6 +33,7 @@ kgcl,active,PASS
 mixs,active,PASS
 molecular-data-kp,active,PASS
 multiomics-kp,active,PASS
+ncbi-gene,active,PASS
 neo,active,PASS
 np-kg,active,PASS
 obo-db-ingest,active,PASS
