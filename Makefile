@@ -241,6 +241,7 @@ schema-docs: | build
 	$(RUN) gen-doc -d $(SCHEMA_DOC_DIR) $(SOURCE_SCHEMA)
 	for file in $(SCHEMA_DOC_DIR)/*; do \
 		sed -i 's/\.md)/\.html)/g' $$file; \
+		sed -i 's/href "..\/\([^"]*\)"/href "\1.html"/g' $$file; \
 		echo "---\nlayout: schema_doc\nmermaid: true\n---\n\n$$(cat $$file)" > $$file; \
 	done
 
