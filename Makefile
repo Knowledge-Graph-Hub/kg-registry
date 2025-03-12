@@ -240,6 +240,7 @@ reports/%.csv: registry/kgs.ttl sparql/%.sparql
 schema-docs: | build
 	$(RUN) gen-doc -d $(SCHEMA_DOC_DIR) $(SOURCE_SCHEMA)
 	for file in $(SCHEMA_DOC_DIR)/*; do \
+		sed -i 's/\.md)/\.html)/g' $$file; \
 		echo "---\nlayout: schema_doc\n---\n\n$$(cat $$file)" > $$file; \
 	done
 
