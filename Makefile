@@ -39,10 +39,13 @@ RESOURCES := $(shell find resource -type f -name '*.md')
 # Path to the source KG-Registry schema
 SOURCE_SCHEMA = src/kg_registry/kg_registry_schema/schema/kg_registry_schema.yaml
 
+# Path to the generated KG-Registry schema docs
+SCHEMA_DOC_DIR = docs/schema
+
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
 
-all: _config.yml registry/kgs.ttl
+all: _config.yml registry/kgs.ttl schema-docs
 
 pull:
 	git pull
@@ -231,5 +234,13 @@ jenkins-output.txt:
 
 reports/%.csv: registry/kgs.ttl sparql/%.sparql
 	arq --data $< --query sparql/$*.sparql --results csv > $@.tmp && mv $@.tmp $@
+
+# Generate schema documentation
+# and add the frontmatter to each page
+schema-docs: | build
+	$(RUN) gen-doc -d $(SCHEMA_DOC_DIR) $(SOURCE_SCHEMA)
+	for file in $(SCHEMA_DOC_DIR)/*; do \
+		echo "---\nlayout: schema_doc\n---\n\n$$(cat $$file)" > $$file; \
+	done
 
 include kg.Makefile
