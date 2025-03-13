@@ -26,6 +26,8 @@ products:
   id: biolink.model.owl
   name: Biolink Model OWL release
   url: https://w3id.org/biolink/biolink-model.owl.ttl
+  derived_from: biolink
+  original_source: biolink
 - category: DataModelProduct
   compatibility:
   - standard: biolink
@@ -35,6 +37,8 @@ products:
   id: biolink.model.json
   name: Biolink Model JSON release
   url: https://w3id.org/biolink/biolink-model.json
+  derived_from: biolink
+  original_source: biolink
 - category: DataModelProduct
   compatibility:
   - standard: biolink
@@ -44,6 +48,8 @@ products:
   id: biolink.model.graphql
   name: Biolink Model GraphQL release
   url: https://w3id.org/biolink/biolink-model.graphql
+  derived_from: biolink
+  original_source: biolink
 - category: DataModelProduct
   compatibility:
   - standard: biolink
@@ -53,6 +59,8 @@ products:
   id: biolink.model.proto
   name: Biolink Model Protobuf release
   url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/protobuf/biolink_model.proto
+  derived_from: biolink
+  original_source: biolink
 - category: DataModelProduct
   compatibility:
   - standard: biolink
@@ -62,6 +70,8 @@ products:
   id: biolink.model.shacl
   name: Biolink Model SHACL release
   url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shacl/biolink_model.shacl.ttl
+  derived_from: biolink
+  original_source: biolink
 - category: DataModelProduct
   compatibility:
   - standard: biolink
@@ -71,6 +81,8 @@ products:
   id: biolink.model.shex
   name: Biolink Model ShEx release
   url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
+  derived_from: biolink
+  original_source: biolink
 - category: GraphProduct
   derived_from: automat
   description: Biolink Automat
@@ -79,6 +91,8 @@ products:
   name: biolink_automat
   original_source: biolink
   url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
+  derived_from: biolink
+  original_source: biolink
 publications:
 - authors:
   - Unni DR

@@ -23,6 +23,8 @@ products:
   id: robokop.graph
   name: ROBOKOP Knowledge Graph (KG)
   url: http://robokopkg.renci.org
+  original_source: robokop
+  derived_from: robokop
 - category: GraphProduct
   derived_from: automat
   description: Robokop KG (Automat)
