@@ -16,6 +16,7 @@ license:
 name: ZFIN
 products:
 - category: Product
+  derived_from: zfin
   description: Zebrafish Anatomical Ontology (OWL)
   id: zfin.zfa
   license:

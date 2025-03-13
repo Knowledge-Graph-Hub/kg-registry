@@ -17,6 +17,8 @@ products:
   name: main GOLDTERMS OWL release
   category: Product
   format: owl
+  derived_from: goldterms
+  original_source: goldterms
 repository: https://github.com/cmungall/gold-ontology
 activity_status: active
 category: Resource

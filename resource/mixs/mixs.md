@@ -23,6 +23,8 @@ products:
   description: OWL release of mixs
   url: https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/refs/heads/main/project/owl/mixs.owl.ttl
   category: DataModelProduct
+  derived_from: mixs
+  original_source: mixs
 license:
   label: CC0 1.0
   id: https://creativecommons.org/publicdomain/zero/1.0/

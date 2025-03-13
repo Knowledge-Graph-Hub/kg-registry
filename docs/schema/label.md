@@ -23,10 +23,10 @@ URI: [kgr:label](https://w3id.org/bridge2ai/data-sheets-schema/label)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Individual](Individual.html) | An individual person |  no  |
-| [License](License.html) | A license for a resource or product |  no  |
 | [Usage](Usage.html) | The usage of a resource |  no  |
 | [Organization](Organization.html) | An organization |  no  |
+| [License](License.html) | A license for a resource or product |  no  |
+| [Individual](Individual.html) | An individual person |  no  |
 | [FundingSource](FundingSource.html) | A funding source for a resource |  no  |
 
 

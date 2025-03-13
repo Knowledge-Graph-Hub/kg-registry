@@ -21,6 +21,8 @@ products:
   url: https://stars.renci.org/var/plater/bl-2.1/icees_kgx_files/
   category: GraphProduct
   format: kgx
+  derived_from: icees-kg
+  original_source: icees-kg
 ---
 
 The ICEES-based Exposures Knowledge Graph.
