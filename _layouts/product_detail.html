@@ -65,6 +65,39 @@ layout: default
       </div>
     </div>
 
+  {% if page.derived_from and page.original_source %}
+  <div class="card bg-light mb-3" style="max-width: 48rem;">
+      <div class="card-body">
+        <h5 class="card-title">Provenance</h5>
+          {% if page.derived_from == page.original_source %}
+          <pre><code class="language-mermaid" style="display: flex; justify-content: center"> 
+            block-beta
+            columns 1
+            DataSource("{{page.original_source}}") space:1
+            Product("{{page.id}}")
+            DataSource  --> Product
+          
+            style Product stroke:#5588bb,stroke-width:5px;
+                
+          </code></pre>
+          {% else %}
+          <pre><code class="language-mermaid" style="display: flex; justify-content: center"> 
+            block-beta
+            columns 1
+            DataSource("{{page.original_source}}") space:1
+            Aggregator("{{page.derived_from}}") space:1
+            Product("{{page.id}}")
+            DataSource  --> Aggregator
+            Aggregator  --> Product  
+          
+            style Product stroke:#5588bb,stroke-width:5px;
+                
+          </code></pre>
+        {% endif %}
+      {% endif %}
+      </div>
+  </div>
+
     {% if page.warnings %} 
       {% for warning in page.warnings %}
         <div class="alert alert-warning" role="alert">
@@ -74,7 +107,7 @@ layout: default
     {% endif %}
 
     {% if page.compatibility %}
-    <div class="card px-0" style="margin-bottom: 1.5em" id="publications">
+    <div class="card px-0" style="margin-bottom: 1.5em; max-width: 48rem" id="publications">
       <div class="card-header">
         <h4>Compatibility</h4>
       </div>
