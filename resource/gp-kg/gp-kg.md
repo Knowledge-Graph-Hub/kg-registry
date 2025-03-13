@@ -19,11 +19,15 @@ products:
   category: GraphProduct
   node_count: 61146
   edge_count: 1246726
+  derived_from: gp-kg
+  original_source: gp-kg
 - id: gp-kg.process.kg-predict
   name: KG-Predict
   description: A computational framework for drug repurposing, used with GP-KG
   url: http://nlp.case.edu/public/data/GPKG-Predict/code/
   category: ProcessProduct
+  derived_from: gp-kg
+  original_source: gp-kg
 publications:
 - authors:
   - Gao Z

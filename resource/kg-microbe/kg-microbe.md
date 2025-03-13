@@ -19,39 +19,49 @@ name: KG Microbe
 products:
 - category: GraphProduct
   compression: targz
+  derived_from: kg-microbe
   description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
   format: kgx
   id: kg-microbe.graph.raw
   name: KG-Microbe KGX Graph - Raw
+  original_source: kg-microbe
   url: https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz
 - category: GraphProduct
   compression: targz
+  derived_from: kg-microbe
   description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
     growth preferences.
   format: kgx
   id: kg-microbe.graph.core
   name: KG-Microbe KGX Graph - Core
+  original_source: kg-microbe
   url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
+  derived_from: kg-microbe
   description: Core plus human biomedical data (ontologies, CTD, Wallen et al)
   format: kgx
   id: kg-microbe.graph.biomedical
   name: KG-Microbe KGX Graph - Biomedical
+  original_source: kg-microbe
   url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
+  derived_from: kg-microbe
   description: Core plus Uniprot genome annotations
   format: kgx
   id: kg-microbe.graph.function
   name: KG-Microbe KGX Graph - Function
+  original_source: kg-microbe
   url: https://kghub.io/kg-microbe/KGMicrobe-function-20250222.tar.gz
 - category: GraphProduct
   compression: targz
+  derived_from: kg-microbe
   description: Biomedical plus Uniprot genome annotations
   format: kgx
   id: kg-microbe.graph.biomedical-function
   name: KG-Microbe KGX Graph - Biomedical-Function
+  original_source: kg-microbe
   url: https://kghub.io/kg-microbe/KGMicrobe-biomedical-function-20250222.tar.gz
 - category: GraphProduct
   compression: targz

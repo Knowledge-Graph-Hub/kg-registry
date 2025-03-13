@@ -18,6 +18,8 @@ products:
   description: Network embeddings of the Bioteque graph
   url: https://bioteque.irbbarcelona.org/downloads/embeddings
   category: Product
+  derived_from: bioteque
+  original_source: bioteque
 - id: bioteque.code
   name: Bioteque code
   description: >-
@@ -27,6 +29,8 @@ products:
   license:
     label: MIT License
     id: https://opensource.org/licenses/MIT
+  derived_from: bioteque
+  original_source: bioteque
 publications:
 - authors:
   - Fernández-Torras A

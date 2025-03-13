@@ -381,56 +381,76 @@ resources:
     compatibility:
     - standard: biolink
       version: 4.2.5
+    derived_from: biolink
     description: OWL release of Biolink Model
     format: owl
     id: biolink.model.owl
     name: Biolink Model OWL release
+    original_source: biolink
     url: https://w3id.org/biolink/biolink-model.owl.ttl
   - category: DataModelProduct
     compatibility:
     - standard: biolink
       version: 4.2.5
+    derived_from: biolink
     description: JSON schema release of Biolink Model
     format: json
     id: biolink.model.json
     name: Biolink Model JSON release
+    original_source: biolink
     url: https://w3id.org/biolink/biolink-model.json
   - category: DataModelProduct
     compatibility:
     - standard: biolink
       version: 4.2.5
+    derived_from: biolink
     description: GraphQL release of Biolink Model
     format: graphql
     id: biolink.model.graphql
     name: Biolink Model GraphQL release
+    original_source: biolink
     url: https://w3id.org/biolink/biolink-model.graphql
   - category: DataModelProduct
     compatibility:
     - standard: biolink
       version: 4.2.5
+    derived_from: biolink
     description: Protobuf release of Biolink Model
     format: protobuf
     id: biolink.model.proto
     name: Biolink Model Protobuf release
+    original_source: biolink
     url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/protobuf/biolink_model.proto
   - category: DataModelProduct
     compatibility:
     - standard: biolink
       version: 4.2.5
+    derived_from: biolink
     description: SHACL release of Biolink Model
     format: shacl
     id: biolink.model.shacl
     name: Biolink Model SHACL release
+    original_source: biolink
     url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shacl/biolink_model.shacl.ttl
   - category: DataModelProduct
     compatibility:
     - standard: biolink
       version: 4.2.5
+    derived_from: biolink
     description: ShEx release of Biolink Model
     format: shex
     id: biolink.model.shex
     name: Biolink Model ShEx release
+    original_source: biolink
     url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
+  - category: GraphProduct
+    derived_from: biolink
+    description: Biolink Automat
+    format: kgx-jsonl
+    id: automat.biolink
+    name: biolink_automat
+    original_source: biolink
+    url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
   - category: GraphProduct
     derived_from: automat
     description: Biolink Automat
@@ -488,11 +508,14 @@ resources:
   name: Bioteque
   products:
   - category: Product
+    derived_from: bioteque
     description: Network embeddings of the Bioteque graph
     id: bioteque.embeddings
     name: Bioteque Embeddings
+    original_source: bioteque
     url: https://bioteque.irbbarcelona.org/downloads/embeddings
   - category: ProcessProduct
+    derived_from: bioteque
     description: Scripts used to preprocess and accommodate biomedical datasets into
       the knowledge database behind the Bioteque repository.
     id: bioteque.code
@@ -500,6 +523,7 @@ resources:
       id: https://opensource.org/licenses/MIT
       label: MIT License
     name: Bioteque code
+    original_source: bioteque
     url: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
   publications:
   - authors:
@@ -615,10 +639,12 @@ resources:
   name: Monochrom Ontology
   products:
   - category: DataModelProduct
+    derived_from: chr
     description: OWL release of Monochrom Ontology
     format: owl
     id: chr.model.owl
     name: Monochrom Ontology OWL release
+    original_source: chr
     url: http://purl.obolibrary.org/obo/chr.owl
   repository: https://github.com/monarch-initiative/monochrom/
 - activity_status: active
@@ -642,11 +668,13 @@ resources:
   products:
   - category: ProgrammingInterface
     connection_url: cl-kg-neo4j-db.cellgeni.sanger.ac.uk:443
+    derived_from: cl-kg
     description: Publicly available Neo4j instance for CL-KG.
     id: cl-kg.api.neo4j
     is_neo4j: true
     is_public: true
     name: CL-KG Neo4j graph instance
+    original_source: cl-kg
     url: https://cellular-semantics.sanger.ac.uk/browser/
   repository: https://github.com/Cellular-Semantics/CL_KG
 - activity_status: active
@@ -720,10 +748,12 @@ resources:
   products:
   - category: GraphProduct
     compression: targz
+    derived_from: drkg
     description: DRKG graph files, including a TSV of triples, embeddings, ID mappings,
       and a glossary of relation types.
     id: drkg.graph
     name: DRKG graph
+    original_source: drkg
     url: https://dgl-data.s3-us-west-2.amazonaws.com/dataset/DRKG/drkg.tar.gz
   repository: https://github.com/gnn4dr/DRKG
 - activity_status: active
@@ -813,10 +843,12 @@ resources:
   name: ecosim
   products:
   - category: Product
+    derived_from: ecosim
     description: OWL release of ecosim
     format: owl
     id: ecosim.model.owl
     name: ecosim OWL release
+    original_source: ecosim
   repository: http://purl.obolibrary.org/obo/ecosim.owl
 - activity_status: active
   category: KnowledgeGraph
@@ -885,9 +917,11 @@ resources:
   name: GOLD Environmental Paths
   products:
   - category: Product
+    derived_from: goldterms
     format: owl
     id: goldterms.data.owl
     name: main GOLDTERMS OWL release
+    original_source: goldterms
     url: https://w3id.org/goldterms/goldterms.owl
   repository: https://github.com/cmungall/gold-ontology
 - activity_status: active
@@ -904,16 +938,20 @@ resources:
   name: GP-KG
   products:
   - category: GraphProduct
+    derived_from: gp-kg
     description: GP_KG.txt
     edge_count: 1246726
     id: gp-kg.graph
     name: GP-KG
     node_count: 61146
+    original_source: gp-kg
     url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
   - category: ProcessProduct
+    derived_from: gp-kg
     description: A computational framework for drug repurposing, used with GP-KG
     id: gp-kg.process.kg-predict
     name: KG-Predict
+    original_source: gp-kg
     url: http://nlp.case.edu/public/data/GPKG-Predict/code/
   publications:
   - authors:
@@ -1059,35 +1097,49 @@ resources:
   name: Human Reference Atlas Knowledge Graph (HRA KG)
   products:
   - category: GraphProduct
+    derived_from: hra-kg
     description: The graph representation of the Human Reference Atlas (HRA) dataset,
       v2.2, Turtle format
+    format: ttl
     id: hra-kg.graph.ttl
     name: HRA KG graph data, v2.2, Turtle format
+    original_source: hra-kg
     url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.ttl
   - category: GraphProduct
+    derived_from: hra-kg
     description: The graph representation of the Human Reference Atlas (HRA) dataset,
       v2.2, JSON-LD format
     format: jsonld
     id: hra-kg.graph.json
     name: HRA KG graph data, v2.2, JSON-LD format
+    original_source: hra-kg
     url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.json
   - category: GraphProduct
+    derived_from: hra-kg
     description: The graph representation of the Human Reference Atlas (HRA) dataset,
       v2.2, RDF/XML format
+    format: rdfxml
     id: hra-kg.graph.xml
     name: HRA KG graph data, v2.2, RDF/XML format
+    original_source: hra-kg
     url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.xml
   - category: GraphProduct
+    derived_from: hra-kg
     description: The graph representation of the Human Reference Atlas (HRA) dataset,
       v2.2, N-Triples format
+    format: ntriples
     id: hra-kg.graph.nt
     name: HRA KG graph data, v2.2, N-Triples format
+    original_source: hra-kg
     url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nt
   - category: GraphProduct
+    derived_from: hra-kg
     description: The graph representation of the Human Reference Atlas (HRA) dataset,
       v2.2, N-Quads format
+    format: nquads
     id: hra-kg.graph.nq
     name: HRA KG graph data, v2.2, N-Quads format
+    original_source: hra-kg
     url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nq
   repository: https://github.com/hubmapconsortium/hra-kg
 - activity_status: active
@@ -1106,10 +1158,12 @@ resources:
   name: Exposures KP (icees-kg)
   products:
   - category: GraphProduct
+    derived_from: icees-kg
     description: KGX distribution of the ICEES Exposures KP
     format: kgx
     id: icees-kg.graph
     name: KGX distribution of the ICEES Exposures KP
+    original_source: icees-kg
     url: https://stars.renci.org/var/plater/bl-2.1/icees_kgx_files/
   repository: ''
 - activity_status: active
@@ -1188,10 +1242,12 @@ resources:
   name: KG-COVID-19
   products:
   - category: GraphProduct
+    derived_from: kg-covid-19
     description: KGX nodes and edges for KG-COVID-19
     format: kgx
     id: kg-covid-19.graph
     name: KG-COVID-19 graph
+    original_source: kg-covid-19
     url: https://kghub.io/kg-covid-19/
   repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 - activity_status: active
@@ -1226,10 +1282,12 @@ resources:
   name: KG-IDG
   products:
   - category: GraphProduct
+    derived_from: kg-idg
     description: KGX Distribution of KG-IDG
     format: kgx
     id: kg-idg.graph
     name: KGX Distribution of KG-IDG
+    original_source: kg-idg
     url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
@@ -1252,39 +1310,49 @@ resources:
   products:
   - category: GraphProduct
     compression: targz
+    derived_from: kg-microbe
     description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
     format: kgx
     id: kg-microbe.graph.raw
     name: KG-Microbe KGX Graph - Raw
+    original_source: kg-microbe
     url: https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz
   - category: GraphProduct
     compression: targz
+    derived_from: kg-microbe
     description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
       growth preferences.
     format: kgx
     id: kg-microbe.graph.core
     name: KG-Microbe KGX Graph - Core
+    original_source: kg-microbe
     url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
   - category: GraphProduct
     compression: targz
+    derived_from: kg-microbe
     description: Core plus human biomedical data (ontologies, CTD, Wallen et al)
     format: kgx
     id: kg-microbe.graph.biomedical
     name: KG-Microbe KGX Graph - Biomedical
+    original_source: kg-microbe
     url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
   - category: GraphProduct
     compression: targz
+    derived_from: kg-microbe
     description: Core plus Uniprot genome annotations
     format: kgx
     id: kg-microbe.graph.function
     name: KG-Microbe KGX Graph - Function
+    original_source: kg-microbe
     url: https://kghub.io/kg-microbe/KGMicrobe-function-20250222.tar.gz
   - category: GraphProduct
     compression: targz
+    derived_from: kg-microbe
     description: Biomedical plus Uniprot genome annotations
     format: kgx
     id: kg-microbe.graph.biomedical-function
     name: KG-Microbe KGX Graph - Biomedical-Function
+    original_source: kg-microbe
     url: https://kghub.io/kg-microbe/KGMicrobe-biomedical-function-20250222.tar.gz
   - category: GraphProduct
     compression: targz
@@ -1316,10 +1384,12 @@ resources:
   name: KG Monarch
   products:
   - category: GraphProduct
+    derived_from: kg-monarch
     description: KGX Distribution of KGM
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KGM
+    original_source: kg-monarch
     url: https://kg-hub.berkeleybop.io/kg-monarch/current/kg-monarch.tar.gz
   repository: https://github.com/monarch-initiative/monarch-ingest
 - activity_status: active
@@ -1343,15 +1413,19 @@ resources:
   name: Knowledge Graph Change Language
   products:
   - category: DataModelProduct
+    derived_from: kgcl
     description: OWL release of Knowledge Graph Change Language
     format: owl
     id: kgcl.model.owl
     name: Knowledge Graph Change Language OWL release
+    original_source: kgcl
   - category: DataModelProduct
+    derived_from: kgcl
     description: OBO release of Knowledge Graph Change Language
     format: obo
     id: kgcl.model.obo
     name: Knowledge Graph Change Language OBO release
+    original_source: kgcl
   repository: https://github.com/INCATools/kgcl/
 - activity_status: active
   category: DataModel
@@ -1377,9 +1451,11 @@ resources:
   name: MIxS
   products:
   - category: DataModelProduct
+    derived_from: mixs
     description: OWL release of mixs
     id: mixs.model
     name: MIxS OWL release
+    original_source: mixs
     url: https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/refs/heads/main/project/owl/mixs.owl.ttl
   repository: https://github.com/GenomicsStandardsConsortium/mixs
 - activity_status: active
@@ -1400,23 +1476,29 @@ resources:
   name: MolePro
   products:
   - category: GraphProduct
+    derived_from: molecular-data-kp
     description: KGX nodes for Molecular Data KP
     format: kgx
     id: molecular-data-kp.graph.nodes
     name: Nodes for Molecular Data KP
+    original_source: molecular-data-kp
     url: https://molepro.s3.amazonaws.com/nodes.tsv
   - category: GraphProduct
+    derived_from: molecular-data-kp
     description: KGX edges for Molecular Data KP
     format: kgx
     id: molecular-data-kp.graph.edges
     name: Edges for Molecular Data KP
+    original_source: molecular-data-kp
     url: https://molepro.s3.amazonaws.com/edges.tsv
   - category: ProgrammingInterface
     connection_url: https://translator.broadinstitute.org/molecular_data_provider/api
+    derived_from: molecular-data-kp
     description: Open API for Molecular Data KP
     id: molecular-data-kp.api
     is_public: true
     name: Open API for Molecular Data KP
+    original_source: molecular-data-kp
     url: https://translator.broadinstitute.org/molecular_data_provider/api
   repository: https://github.com/broadinstitute/molecular-data-provider/
 - activity_status: active
@@ -1454,10 +1536,12 @@ resources:
   name: Noctua Entity Ontology
   products:
   - category: Product
+    derived_from: neo
     description: OWL release of neo
     format: owl
     id: neo.model
     name: neo OWL release
+    original_source: neo
     url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
   repository: https://github.com/geneontology/neo/
 - activity_status: active
@@ -1480,17 +1564,21 @@ resources:
   name: NP-KG
   products:
   - category: GraphProduct
+    derived_from: np-kg
     description: Merged KG with ontology-grounded KG and literature-based graph as
       TSV file
     id: np-kg.graph.tsv
     name: NP-KG TSV
+    original_source: np-kg
     url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.tsv?download=1
   - category: GraphProduct
+    derived_from: np-kg
     description: Merged KG with ontology-grounded KG and literature-based graph as
       NetworkX multidigraph object
     dump_format: gpickle
     id: np-kg.graph.networkx
     name: NP-KG gpickle
+    original_source: np-kg
     url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.gpickle?download=1
   publications:
   - authors:
@@ -3399,9 +3487,11 @@ resources:
   name: Petagraph
   products:
   - category: GraphProduct
+    derived_from: petagraph
     description: A multi-omics biomedical knowledge graph
     id: petagraph.graph
     name: Petagraph Knowledge Graph (Neo4J)
+    original_source: petagraph
     url: https://ubkg-downloads.xconsortia.org/
   repository: https://github.com/TaylorResearchLab/Petagraph
 - activity_status: active
@@ -3512,6 +3602,7 @@ resources:
     description: The full PrimeKG dataset containing disease relationships.
     id: primekg.graph
     name: PrimeKG Full Dataset
+    original_source: primekg
     url: https://dataverse.harvard.edu/api/access/datafile/6180620
   repository: https://github.com/mims-harvard/PrimeKG
 - activity_status: active
@@ -3575,9 +3666,11 @@ resources:
   name: Reactome
   products:
   - category: Product
+    derived_from: reactome
     description: Conversion from BioPAX, human subset
     id: reactome.data.human
     name: Reactome Human from BioPAX, sqlite
+    original_source: reactome
     url: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
   repository: ''
 - activity_status: active
@@ -3650,10 +3743,12 @@ resources:
   name: ROBOKOP
   products:
   - category: Product
+    derived_from: robokop
     description: A biomedical knowledge graph containing ~10 million nodes and ~250
       million edges from ~30 biological data sources and bio-ontologies.
     id: robokop.graph
     name: ROBOKOP Knowledge Graph (KG)
+    original_source: robokop
     url: http://robokopkg.renci.org
   - category: GraphProduct
     derived_from: automat
@@ -3692,10 +3787,12 @@ resources:
   name: RTX-KG2
   products:
   - category: GraphProduct
+    derived_from: rtx-kg2
     description: KGX distribution of the RTX-KG2
     format: kgx
     id: rtx-kg2.graph
     name: RTX-KG2 KGX
+    original_source: rtx-kg2
     url: https://github.com/ncats/translator-lfs-artifacts/blob/main/files/
   repository: https://github.com/RTXteam/RTX-KG2
 - activity_status: active
@@ -3873,19 +3970,26 @@ resources:
   name: Ubergraph
   products:
   - category: Product
+    derived_from: ubergraph
     description: RDF of Ubergraph
     id: ubergraph.rdf
     name: Ubergraph RDF
+    original_source: ubergraph
     url: https://ubergraph.apps.renci.org/sparql
   - category: Product
+    derived_from: ubergraph
     description: Blazegraph journal of Ubergraph
     id: ubergraph.blazegraph.jnl
     name: Ubergraph blazegraph journal
+    original_source: ubergraph
     url: https://ubergraph.apps.renci.org/downloads/current/ubergraph.jnl.gz
   - category: Product
+    derived_from: ubergraph
     description: Ubergraph n-quads
+    format: nquads
     id: ubergraph.nquads
     name: Ubergraph n-quads
+    original_source: ubergraph
     url: https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz
   repository: https://github.com/INCATools/ubergraph
 - activity_status: active
@@ -3933,6 +4037,7 @@ resources:
   name: ZFIN
   products:
   - category: Product
+    derived_from: zfin
     description: Zebrafish Anatomical Ontology (OWL)
     id: zfin.zfa
     license:

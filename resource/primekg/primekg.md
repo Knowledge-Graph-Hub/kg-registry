@@ -22,6 +22,7 @@ products:
   url: https://dataverse.harvard.edu/api/access/datafile/6180620
   category: GraphProduct
   derived_from: primekg
+  original_source: primekg
 license:
   label: MIT License
   id: https://opensource.org/licenses/MIT
