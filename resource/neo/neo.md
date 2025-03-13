@@ -21,6 +21,8 @@ products:
   category: Product
   url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
   format: owl
+  derived_from: neo
+  original_source: neo
 category: Resource
 
 ---

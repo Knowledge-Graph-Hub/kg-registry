@@ -17,6 +17,8 @@ products:
   description: A multi-omics biomedical knowledge graph
   url: https://ubkg-downloads.xconsortia.org/
   category: GraphProduct
+  derived_from: petagraph
+  original_source: petagraph
 license:
   label: UMLS
   id: https://www.nlm.nih.gov/databases/umls.html

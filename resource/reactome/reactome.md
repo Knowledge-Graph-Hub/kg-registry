@@ -19,6 +19,8 @@ products:
   description: Conversion from BioPAX, human subset
   url: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
   category: Product
+  original_source: reactome
+  derived_from: reactome
 category: DataSource
 ---
 

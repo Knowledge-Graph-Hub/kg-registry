@@ -24,6 +24,7 @@ products:
   name: ZFA
   original_source: zfin
   url: http://purl.obolibrary.org/obo/zfa.owl
+  derived_from: zfin
 - category: Product
   derived_from: obo-db-ingest
   description: zfin OBO

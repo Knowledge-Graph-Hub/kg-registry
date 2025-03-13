@@ -20,6 +20,8 @@ products:
   url: https://kg-hub.berkeleybop.io/kg-monarch/current/kg-monarch.tar.gz
   category: GraphProduct
   format: kgx
+  derived_from: kg-monarch
+  original_source: kg-monarch
 license:
   label: CC0 1.0
   id: https://creativecommons.org/publicdomain/zero/1.0/
