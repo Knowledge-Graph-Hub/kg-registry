@@ -186,34 +186,34 @@ page.is_obsolete %}
     {% endif %}
     
 <!-- Check to see what kinds of products we have, if any -->
-    {% assign has_internal_products = false %}
-    {% assign has_external_products = false %}
-    {% assign has_no_products = false %}
-    {% if page.products %}
-      {% for p in page.products %}
-        {% if p.derived_from and p.derived_from == page.id %}
-          {% assign has_internal_products = true %}
-          {% continue %}
-        {% elsif p.derived_from %}
-          {% assign has_external_products = true %}
-          {% continue %}
-        {% else %}
-          {% assign has_internal_products = true %}
-        {% endif %}
-      {% endfor %}
+{% assign has_internal_products = false %}
+{% assign has_external_products = false %}
+{% assign has_no_products = false %}
+{% if page.products %}
+  {% for p in page.products %}
+    {% if p.secondary_source and p.secondary_source contains page.id %}
+      {% assign has_internal_products = true %}
+      {% continue %}
+    {% elsif p.secondary_source %}
+      {% assign has_external_products = true %}
+      {% continue %}
     {% else %}
-      {% assign has_no_products = true %}
+      {% assign has_internal_products = true %}
     {% endif %}
+  {% endfor %}
+{% else %}
+  {% assign has_no_products = true %}
+{% endif %}
 
-    <div class="card px-0" style="margin-bottom: 1.5em">
-      <div class="card-header">
-      <h4>Products</h4>
-      </div>
-      {% if has_internal_products %}
-      <h5 style="margin-left: 0.5em; margin-top: 0.5em">From this Resource</h5>
-      <div class="table-responsive">
-      <table class="table table-striped mb-0">
-        <thead>
+<div class="card px-0" style="margin-bottom: 1.5em">
+  <div class="card-header">
+    <h4>Products</h4>
+  </div>
+  {% if has_internal_products %}
+  <h5 style="margin-left: 0.5em; margin-top: 0.5em">From this Resource</h5>
+  <div class="table-responsive">
+    <table class="table table-striped mb-0">
+      <thead>
         <tr>
           <th>ID</th>
           <th>Name</th>
@@ -221,15 +221,15 @@ page.is_obsolete %}
           <th>Format</th>
           <th>Description</th>
         </tr>
-        </thead>
-        <tbody>
+      </thead>
+      <tbody>
         {% for p in page.products %}
         <tr>
-          {% if p.derived_from and p.derived_from == page.id %}
+          {% if p.secondary_source and p.secondary_source contains page.id %}
           <td>
             <a href="{{p.id}}.html">{{p.id}}</a>
           </td>
-          {% elsif p.derived_from %}
+          {% elsif p.secondary_source %}
             </tr>
             {% continue %}
           {% else %}
@@ -238,120 +238,118 @@ page.is_obsolete %}
           </td>
           {% endif %}
           <td>
-          <a href="{{p.url}}">{{p.name}}</a>
+            <a href="{{p.url}}">{{p.name}}</a>
           </td>
           <td>{{p.category}}</td>
           <td>
-          {% if p.format %}
-            {{ p.format }}
-          {% else %}
-          ❔
-          {% endif %}
+            {% if p.format %}
+              {{ p.format }}
+            {% else %}
+              ❔
+            {% endif %}
           </td>
           <td>
-          {{ p.description | truncate: 40 }}
+            {{ p.description | truncate: 40 }}
           </td>
         </tr>
         {% endfor %}
-        </tbody>
-      </table>
-      </div>
-      {% endif %}
-    {% if has_external_products %}
-    <h5 style="margin-left: 0.5em; margin-top: 0.5em">From other Resources</h5>
-      <div class="table-responsive">
-        <table class="table table-striped mb-0">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Name</th>
-              <th>Category</th>
-              <th>Format</th>
-              <th>Description</th>
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
+  {% if has_external_products %}
+  <h5 style="margin-left: 0.5em; margin-top: 0.5em">From other Resources</h5>
+  <div class="table-responsive">
+    <table class="table table-striped mb-0">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Format</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in page.products %}
+        <tr>
+          {% if p.secondary_source and p.secondary_source contains page.id %}
             </tr>
-          </thead>
-          <tbody>
-            {% for p in page.products %}
-            <tr>
-                {% if p.derived_from and p.derived_from == page.id %}
-                  </tr>
-                  {% continue %}
-                {% elsif p.derived_from %}
-                <td>
-                  <a href="/kg-registry/resource/{{p.derived_from}}/{{p.id}}.html">{{p.id}}</a>
-                </td>
-                {% else %}
-                  </tr>
-                  {% continue %}
-                {% endif %}
-              <td>
-                <a href="{{p.url}}">{{p.name}}</a>
-              </td>
-              <td>{{p.category}}</td>
-              <td>
-                {% if p.format %}
-                  {{ p.format }}
-                {% else %}
-                ❔
-                {% endif %}
-              </td>
-              <td>
-                {{ p.description | truncate: 40 }}
-              </td>
+            {% continue %}
+          {% elsif p.secondary_source %}
+          <td>
+            <a href="/kg-registry/resource/{{p.secondary_source | first}}/{{p.id}}.html">{{p.id}}</a>
+          </td>
+          {% else %}
             </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
-    {% endif %}
-    {% if has_no_products %}
-    <div class="alert alert-warning" role="alert">
-      No products available. You could <a href="https://github.com/Knowledge-Graph-Hub/kg-registry/issues/new?template=update-resource.yml">suggest one to add!</a>
-    </div>
-    {% endif %}
-   </div>
-
-    {% if page.usages %}
-    <div class="card px-0" style="margin-bottom: 1.5em;">
-      <div class="card-header">
-        <h4>Usages</h4>
-      </div>
-      <div class="list-group list-group-flush">
-        {% for p in page.usages %}
-        <div class="list-group-item">
-          <dl class="dl-horizontal" style="margin-bottom: 0">
-            <dt>{{p.label}}</dt>
-            <dd>{{p.description}}</dd>
-            {% if p.type %}
-            <dt>Type</dt>
-            <dd>{{p.type}}</dd>
-            {% endif %} {% if p.url %}
-            <dt>Link</dt>
-            <dd><a href="{{p.url}}">{{p.url}}</a></dd>
-            {% endif %} {% if p.publications %}
-            <dt>Publications</dt>
-            <dd>
-              <ul style="padding-left: 20px">
-                {% for publication in p.publications %}
-                <li><a href="https://doi.org/{{publication.doi}}">{{publication.title}}</a></li>
-                {% endfor %}
-              </ul>
-            </dd>
-            {% endif %} {% if p.users %}
-            <dt>Users</dt>
-            <dd>
-              <ul style="padding-left: 20px">
-                {% for user in p.users %}
-                <li>{{user.label}}</li>
-                {% endfor %}
-              </ul>
-            </dd>
+            {% continue %}
+          {% endif %}
+          <td>
+            <a href="{{p.url}}">{{p.name}}</a>
+          </td>
+          <td>{{p.category}}</td>
+          <td>
+            {% if p.format %}
+              {{ p.format }}
+            {% else %}
+              ❔
             {% endif %}
-          </dl>
-        </div>
+          </td>
+          <td>
+            {{ p.description | truncate: 40 }}
+          </td>
+        </tr>
         {% endfor %}
-      </div>
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
+  {% if has_no_products %}
+  <div class="alert alert-warning" role="alert">
+    No products available. You could <a href="https://github.com/Knowledge-Graph-Hub/kg-registry/issues/new?template=update-resource.yml">suggest one to add!</a>
+  </div>
+  {% endif %}
+</div>
+
+{% if page.usages %}
+<div class="card px-0" style="margin-bottom: 1.5em;">
+  <div class="card-header">
+    <h4>Usages</h4>
+  </div>
+  <div class="list-group list-group-flush">
+    {% for p in page.usages %}
+    <div class="list-group-item">
+      <dl class="dl-horizontal" style="margin-bottom: 0">
+        <dt>{{p.label}}</dt>
+        <dd>{{p.description}}</dd>
+        {% if p.type %}
+        <dt>Type</dt>
+        <dd>{{p.type}}</dd>
+        {% endif %} {% if p.url %}
+        <dt>Link</dt>
+        <dd><a href="{{p.url}}">{{p.url}}</a></dd>
+        {% endif %} {% if p.publications %}
+        <dt>Publications</dt>
+        <dd>
+          <ul style="padding-left: 20px">
+            {% for publication in p.publications %}
+            <li><a href="https://doi.org/{{publication.doi}}">{{publication.title}}</a></li>
+            {% endfor %}
+          </ul>
+        </dd>
+        {% endif %} {% if p.users %}
+        <dt>Users</dt>
+        <dd>
+          <ul style="padding-left: 20px">
+            {% for user in p.users %}
+            <li>{{user.label}}</li>
+            {% endfor %}
+          </ul>
+        </dd>
+        {% endif %}
+      </dl>
     </div>
-    {% endif %}
+    {% endfor %}
   </div>
 </div>
+{% endif %}
