@@ -18,28 +18,34 @@ license:
 name: ROBOKOP
 products:
 - category: Product
-  derived_from: robokop
+  secondary_source:
+  - robokop
   description: A biomedical knowledge graph containing ~10 million nodes and ~250
     million edges from ~30 biological data sources and bio-ontologies.
   id: robokop.graph
   name: ROBOKOP Knowledge Graph (KG)
-  original_source: robokop
+  original_source:
+  - robokop
   url: http://robokopkg.renci.org
 - category: GraphProduct
-  derived_from: automat
+  secondary_source:
+  - automat
   description: Robokop KG (Automat)
   format: kgx-jsonl
   id: automat.robokopkg
   name: robokopkg
-  original_source: robokop
+  original_source:
+  - robokop
   url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files
 - category: GraphProduct
-  derived_from: automat
+  secondary_source:
+  - automat
   description: Robokop Plus
   format: kgx-jsonl
   id: automat.robokopplus
   name: robokopplus
-  original_source: robokop
+  original_source:
+  - robokop
   url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files
 repository: https://github.com/NCATS-Gamma/robokop
 ---

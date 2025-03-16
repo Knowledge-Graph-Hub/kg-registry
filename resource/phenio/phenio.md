@@ -20,8 +20,10 @@ products:
   name: phenio
   category: Product
   format: owl
-  derived_from: phenio
-  original_source: phenio
+  secondary_source:
+  - phenio
+  original_source:
+  - phenio
   license:
     label: BSD3
     id: https://opensource.org/license/bsd-3-clause
@@ -35,8 +37,10 @@ products:
     version: 4.2.5
   format: kgx
   category: GraphProduct
-  derived_from: phenio
-  original_source: phenio
+  secondary_source:
+  - phenio
+  original_source:
+  - phenio
   license:
     label: BSD3
     id: https://opensource.org/license/bsd-3-clause

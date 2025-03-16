@@ -18,16 +18,20 @@ products:
   description: Merged KG with ontology-grounded KG and literature-based graph as TSV file
   url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.tsv?download=1
   category: GraphProduct
-  derived_from: np-kg
-  original_source: np-kg
+  secondary_source:
+  - np-kg
+  original_source:
+  - np-kg
 - id: np-kg.graph.networkx
   name: NP-KG gpickle
   description: Merged KG with ontology-grounded KG and literature-based graph as NetworkX multidigraph object
   url: https://zenodo.org/records/12536780/files/NP-KG_v3.0.0.gpickle?download=1
   dump_format: gpickle
   category: GraphProduct
-  derived_from: np-kg
-  original_source: np-kg
+  secondary_source:
+  - np-kg
+  original_source:
+  - np-kg
 license:
   label: CC-BY-4.0
   id: https://creativecommons.org/licenses/by/4.0/
