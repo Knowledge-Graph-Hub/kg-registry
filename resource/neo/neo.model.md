@@ -8,6 +8,6 @@ original_source:
 - neo
 secondary_source:
 - neo
-url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
+product_url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
 layout: product_detail
 ---

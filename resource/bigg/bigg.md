@@ -15,8 +15,6 @@ license:
 name: BiGG Models
 products:
 - category: Product
-  secondary_source:
-  - obo-db-ingest
   description: bigg.compartment OBO
   id: obo-db-ingest.bigg.compartment.obo
   license:
@@ -25,10 +23,10 @@ products:
   name: bigg.compartment OBO
   original_source:
   - bigg
-  url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.obo
-- category: Product
   secondary_source:
   - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.obo
+- category: Product
   description: bigg.compartment OWL
   id: obo-db-ingest.bigg.compartment.owl
   license:
@@ -37,10 +35,10 @@ products:
   name: bigg.compartment OWL
   original_source:
   - bigg
-  url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.owl
-- category: Product
   secondary_source:
   - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.owl
+- category: Product
   description: bigg.compartment OBO Graph JSON
   id: obo-db-ingest.bigg.compartment.json
   license:
@@ -49,10 +47,10 @@ products:
   name: bigg.compartment OBO Graph JSON
   original_source:
   - bigg
-  url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.json
-- category: MappingProduct
   secondary_source:
   - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.json
+- category: MappingProduct
   description: bigg.compartment SSSOM
   id: obo-db-ingest.bigg.compartment.sssom.tsv
   license:
@@ -61,10 +59,10 @@ products:
   name: bigg.compartment SSSOM
   original_source:
   - bigg
-  url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
-- category: Product
   secondary_source:
   - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
+- category: Product
   description: bigg.metabolite OBO
   id: obo-db-ingest.bigg.metabolite.obo
   license:
@@ -73,10 +71,10 @@ products:
   name: bigg.metabolite OBO
   original_source:
   - bigg
-  url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.obo
-- category: Product
   secondary_source:
   - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.obo
+- category: Product
   description: bigg.metabolite OWL
   id: obo-db-ingest.bigg.metabolite.owl
   license:
@@ -85,10 +83,10 @@ products:
   name: bigg.metabolite OWL
   original_source:
   - bigg
-  url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.owl
-- category: Product
   secondary_source:
   - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.owl
+- category: Product
   description: bigg.metabolite OBO Graph JSON
   id: obo-db-ingest.bigg.metabolite.json
   license:
@@ -97,10 +95,10 @@ products:
   name: bigg.metabolite OBO Graph JSON
   original_source:
   - bigg
-  url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.json
-- category: MappingProduct
   secondary_source:
   - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.json
+- category: MappingProduct
   description: bigg.metabolite SSSOM
   id: obo-db-ingest.bigg.metabolite.sssom.tsv
   license:
@@ -109,10 +107,10 @@ products:
   name: bigg.metabolite SSSOM
   original_source:
   - bigg
-  url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
-- category: Product
   secondary_source:
   - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
+- category: Product
   description: bigg.model OBO
   id: obo-db-ingest.bigg.model.obo
   license:
@@ -121,10 +119,10 @@ products:
   name: bigg.model OBO
   original_source:
   - bigg
-  url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.obo
-- category: Product
   secondary_source:
   - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.obo
+- category: Product
   description: bigg.model OWL
   id: obo-db-ingest.bigg.model.owl
   license:
@@ -133,10 +131,10 @@ products:
   name: bigg.model OWL
   original_source:
   - bigg
-  url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.owl
-- category: Product
   secondary_source:
   - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.owl
+- category: Product
   description: bigg.model OBO Graph JSON
   id: obo-db-ingest.bigg.model.json
   license:
@@ -145,10 +143,10 @@ products:
   name: bigg.model OBO Graph JSON
   original_source:
   - bigg
-  url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.json
-- category: Product
   secondary_source:
   - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.json
+- category: Product
   description: bigg.reaction OBO
   id: obo-db-ingest.bigg.reaction.obo
   license:
@@ -157,10 +155,10 @@ products:
   name: bigg.reaction OBO
   original_source:
   - bigg
-  url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.obo
-- category: Product
   secondary_source:
   - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.obo
+- category: Product
   description: bigg.reaction OWL
   id: obo-db-ingest.bigg.reaction.owl
   license:
@@ -169,10 +167,10 @@ products:
   name: bigg.reaction OWL
   original_source:
   - bigg
-  url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.owl
-- category: Product
   secondary_source:
   - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.owl
+- category: Product
   description: bigg.reaction OBO Graph JSON
   id: obo-db-ingest.bigg.reaction.json
   license:
@@ -181,10 +179,10 @@ products:
   name: bigg.reaction OBO Graph JSON
   original_source:
   - bigg
-  url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.json
-- category: MappingProduct
   secondary_source:
   - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.json
+- category: MappingProduct
   description: bigg.reaction SSSOM
   id: obo-db-ingest.bigg.reaction.sssom.tsv
   license:
@@ -193,7 +191,9 @@ products:
   name: bigg.reaction SSSOM
   original_source:
   - bigg
-  url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.sssom.tsv
 publications:
 - authors:
   - King ZA

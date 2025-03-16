@@ -7,6 +7,6 @@ original_source:
 - mixs
 secondary_source:
 - mixs
-url: https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/refs/heads/main/project/owl/mixs.owl.ttl
+product_url: https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/refs/heads/main/project/owl/mixs.owl.ttl
 layout: product_detail
 ---

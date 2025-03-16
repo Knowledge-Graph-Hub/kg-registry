@@ -18,7 +18,7 @@ products:
 - id: molecular-data-kp.graph.nodes
   name: Nodes for Molecular Data KP
   description: KGX nodes for Molecular Data KP
-  url: https://molepro.s3.amazonaws.com/nodes.tsv
+  product_url: https://molepro.s3.amazonaws.com/nodes.tsv
   category: GraphProduct
   format: kgx
   secondary_source:
@@ -28,7 +28,7 @@ products:
 - id: molecular-data-kp.graph.edges
   name: Edges for Molecular Data KP
   description: KGX edges for Molecular Data KP
-  url: https://molepro.s3.amazonaws.com/edges.tsv
+  product_url: https://molepro.s3.amazonaws.com/edges.tsv
   category: GraphProduct
   format: kgx
   secondary_source:
@@ -38,7 +38,7 @@ products:
 - id: molecular-data-kp.api
   name: Open API for Molecular Data KP
   description: Open API for Molecular Data KP
-  url: https://translator.broadinstitute.org/molecular_data_provider/api
+  product_url: https://translator.broadinstitute.org/molecular_data_provider/api
   category: ProgrammingInterface
   is_public: true
   connection_url: https://translator.broadinstitute.org/molecular_data_provider/api

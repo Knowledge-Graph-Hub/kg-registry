@@ -19,7 +19,7 @@ products:
   name: neo OWL release
   description: OWL release of neo
   category: Product
-  url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
+  product_url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
   format: owl
   secondary_source:
   - neo

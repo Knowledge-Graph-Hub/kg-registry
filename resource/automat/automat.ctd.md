@@ -9,6 +9,6 @@ original_source:
 - ctd
 secondary_source:
 - automat
-url: https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files
+product_url: https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files
 layout: product_detail
 ---

@@ -8,6 +8,6 @@ original_source:
 - kg-idg
 secondary_source:
 - kg-idg
-url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
+product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
 layout: product_detail
 ---

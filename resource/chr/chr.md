@@ -18,7 +18,7 @@ products:
   name: Monochrom Ontology OWL release
   description: OWL release of Monochrom Ontology
   category: DataModelProduct
-  url: http://purl.obolibrary.org/obo/chr.owl
+  product_url: http://purl.obolibrary.org/obo/chr.owl
   format: owl
   secondary_source:
   - chr

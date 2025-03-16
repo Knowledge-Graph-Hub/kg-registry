@@ -15,7 +15,7 @@ products:
 - id: petagraph.graph
   name: Petagraph Knowledge Graph (Neo4J)
   description: A multi-omics biomedical knowledge graph
-  url: https://ubkg-downloads.xconsortia.org/
+  product_url: https://ubkg-downloads.xconsortia.org/
   category: GraphProduct
   secondary_source:
   - petagraph

@@ -8,6 +8,6 @@ original_source:
 - molecular-data-kp
 secondary_source:
 - molecular-data-kp
-url: https://molepro.s3.amazonaws.com/edges.tsv
+product_url: https://molepro.s3.amazonaws.com/edges.tsv
 layout: product_detail
 ---

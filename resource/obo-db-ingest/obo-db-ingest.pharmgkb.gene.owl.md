@@ -6,6 +6,6 @@ license:
   id: https://creativecommons.org/licenses/by-sa/4.0/
   label: CC-BY-SA-4.0
 name: pharmgkb.gene OWL
-url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.owl
+product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.owl
 layout: product_detail
 ---

@@ -16,7 +16,7 @@ license:
 products:
 - id: phenio.model
   description: OWL version of phenio
-  url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl
+  product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl
   name: phenio
   category: Product
   format: owl
@@ -31,7 +31,7 @@ products:
 - id: phenio.graph
   name: KG-Phenio
   description: PHENIO as a KGX graph
-  url: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
+  product_url: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
   compatibility:
   - standard: biolink
     version: 4.2.5
@@ -50,11 +50,11 @@ usages:
 - id: cross-species-inference
   label: PHENIO is used by the Monarch Initiative for cross-species inference
   description: PHENIO is used by the Monarch Initiative for cross-species inference. As an example, the disease of Parkinsonism may compared on the basis of its phenotype in humans vs. mouse genes and genotypes known to impact these phenotypes.
-  url: https://monarchinitiative.org/HP:0001300#disease
+  product_url: https://monarchinitiative.org/HP:0001300#disease
   users:
   - category: Organization
     label: The Monarch Initiative
-    url: https://monarchinitiative.org/
+    product_url: https://monarchinitiative.org/
   publications:
   - preferred: true
     title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species"

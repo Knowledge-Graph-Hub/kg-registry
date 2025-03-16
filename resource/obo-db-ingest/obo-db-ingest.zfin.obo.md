@@ -10,6 +10,6 @@ original_source:
 - zfin
 secondary_source:
 - obo-db-ingest
-url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
+product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
 layout: product_detail
 ---

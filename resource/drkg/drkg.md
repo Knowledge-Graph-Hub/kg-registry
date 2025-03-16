@@ -24,7 +24,7 @@ products:
     DRKG graph files, including a TSV of triples,
     embeddings, ID mappings, and a glossary of
     relation types.
-  url: https://dgl-data.s3-us-west-2.amazonaws.com/dataset/DRKG/drkg.tar.gz
+  product_url: https://dgl-data.s3-us-west-2.amazonaws.com/dataset/DRKG/drkg.tar.gz
   compression: targz
   category: GraphProduct
   secondary_source:

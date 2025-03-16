@@ -11,6 +11,6 @@ original_source:
 - bioteque
 secondary_source:
 - bioteque
-url: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
+product_url: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
 layout: product_detail
 ---

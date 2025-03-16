@@ -30,6 +30,6 @@ products:
   original_source:
   - hgnc
   repository: https://github.com/elsevier-health/scibite-ontology
-  url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip
+  product_url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip
 ---
 SciBite

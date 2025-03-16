@@ -8,6 +8,6 @@ original_source:
 - robokop
 secondary_source:
 - robokop
-url: http://robokopkg.renci.org
+product_url: http://robokopkg.renci.org
 layout: product_detail
 ---

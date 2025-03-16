@@ -7,6 +7,6 @@ original_source:
 - goldterms
 secondary_source:
 - goldterms
-url: https://w3id.org/goldterms/goldterms.owl
+product_url: https://w3id.org/goldterms/goldterms.owl
 layout: product_detail
 ---

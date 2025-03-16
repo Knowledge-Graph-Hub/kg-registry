@@ -11,6 +11,6 @@ original_source:
 - biolink
 secondary_source:
 - biolink
-url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
+product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
 layout: product_detail
 ---

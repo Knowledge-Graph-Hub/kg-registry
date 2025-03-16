@@ -7,6 +7,6 @@ original_source:
 - ubergraph
 secondary_source:
 - ubergraph
-url: https://ubergraph.apps.renci.org/sparql
+product_url: https://ubergraph.apps.renci.org/sparql
 layout: product_detail
 ---

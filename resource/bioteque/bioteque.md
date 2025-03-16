@@ -16,7 +16,7 @@ products:
 - id: bioteque.embeddings
   name: Bioteque Embeddings
   description: Network embeddings of the Bioteque graph
-  url: https://bioteque.irbbarcelona.org/downloads/embeddings
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   category: Product
   secondary_source:
   - bioteque
@@ -26,7 +26,7 @@ products:
   name: Bioteque code
   description: >-
     Scripts used to preprocess and accommodate biomedical datasets into the knowledge database behind the Bioteque repository.
-  url: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
+  product_url: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
   category: ProcessProduct
   license:
     label: MIT License

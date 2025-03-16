@@ -11,6 +11,6 @@ original_source:
 - hgnc
 secondary_source:
 - obo-db-ingest
-url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.json
+product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.json
 layout: product_detail
 ---

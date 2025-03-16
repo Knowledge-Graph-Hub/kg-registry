@@ -6,6 +6,6 @@ license:
   id: https://clinicaltrials.gov/about-site/terms-conditions#availability
   label: Custom
 name: clinicaltrials SSSOM
-url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.sssom.tsv
+product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.sssom.tsv
 layout: product_detail
 ---

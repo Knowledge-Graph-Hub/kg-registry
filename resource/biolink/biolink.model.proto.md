@@ -11,6 +11,6 @@ original_source:
 - biolink
 secondary_source:
 - biolink
-url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/protobuf/biolink_model.proto
+product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/protobuf/biolink_model.proto
 layout: product_detail
 ---

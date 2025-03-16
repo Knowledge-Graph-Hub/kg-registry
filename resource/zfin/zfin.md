@@ -16,8 +16,6 @@ license:
 name: ZFIN
 products:
 - category: Product
-  secondary_source:
-  - zfin
   description: Zebrafish Anatomical Ontology (OWL)
   id: zfin.zfa
   license:
@@ -26,10 +24,10 @@ products:
   name: ZFA
   original_source:
   - zfin
-  url: http://purl.obolibrary.org/obo/zfa.owl
-- category: Product
   secondary_source:
-  - obo-db-ingest
+  - zfin
+  product_url: http://purl.obolibrary.org/obo/zfa.owl
+- category: Product
   description: zfin OBO
   id: obo-db-ingest.zfin.obo
   license:
@@ -38,10 +36,10 @@ products:
   name: zfin OBO
   original_source:
   - zfin
-  url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
-- category: Product
   secondary_source:
   - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
+- category: Product
   description: zfin OWL
   id: obo-db-ingest.zfin.owl
   license:
@@ -50,10 +48,10 @@ products:
   name: zfin OWL
   original_source:
   - zfin
-  url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
-- category: Product
   secondary_source:
   - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
+- category: Product
   description: zfin OBO Graph JSON
   id: obo-db-ingest.zfin.json
   license:
@@ -62,10 +60,10 @@ products:
   name: zfin OBO Graph JSON
   original_source:
   - zfin
-  url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
-- category: MappingProduct
   secondary_source:
   - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
+- category: MappingProduct
   description: zfin SSSOM
   id: obo-db-ingest.zfin.sssom.tsv
   license:
@@ -74,7 +72,9 @@ products:
   name: zfin SSSOM
   original_source:
   - zfin
-  url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
+  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
 repository: https://github.com/ZFIN/
 ---
 ZFIN

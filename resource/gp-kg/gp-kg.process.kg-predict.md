@@ -7,6 +7,6 @@ original_source:
 - gp-kg
 secondary_source:
 - gp-kg
-url: http://nlp.case.edu/public/data/GPKG-Predict/code/
+product_url: http://nlp.case.edu/public/data/GPKG-Predict/code/
 layout: product_detail
 ---

@@ -9,6 +9,6 @@ original_source:
 - kg-microbe
 secondary_source:
 - kg-microbe
-url: https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz
+product_url: https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz
 layout: product_detail
 ---

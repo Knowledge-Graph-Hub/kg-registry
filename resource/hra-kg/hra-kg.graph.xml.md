@@ -9,6 +9,6 @@ original_source:
 - hra-kg
 secondary_source:
 - hra-kg
-url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.xml
+product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.xml
 layout: product_detail
 ---
