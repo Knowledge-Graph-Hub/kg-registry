@@ -33,24 +33,46 @@ layout: default
   <div class="row header-card-row">
     <div class="card bg-light mb-3" style="max-width: 12rem;">
       <div class="card-body">
-        <h5 class="card-title">Format</h5>
-        {% if page.format %}
-          <p class="card-text">{{page.format}}</p>
+        <h5 class="card-title">URL</h5>
+        {% if page.product_url %}
+          <p class="card-text"><a href="{{page.product_url}}">{{page.product_url | split: '/' | last}}</a></p>
         {% else %}
           <p class="card-text" style="font-weight: bold;">Unknown</p>
         {% endif %}
         </div>
   </div>
+  <div class="card bg-light mb-3" style="max-width: 12rem;">
+    <div class="card-body">
+      <h5 class="card-title">Format</h5>
+      {% if page.format %}
+        <p class="card-text">{{page.format}}</p>
+      {% else %}
+        <p class="card-text" style="font-weight: bold;">Unknown</p>
+      {% endif %}
+      </div>
+    </div>
     <div class="card bg-light mb-3" style="max-width: 12rem;">
         <div class="card-body">
-          <h5 class="card-title">Provided By</h5>
-            <p class="card-text"><a href="/kg-registry/resource/{{page.derived_from}}/{{page.derived_from}}.html">{{page.derived_from}}</a></p>
+          <h5 class="card-title">Secondary Source(s)</h5>
+            {% if page.secondary_source %}
+              {% for source in page.secondary_source %}
+                <p class="card-text"><a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a></p>
+              {% endfor %}
+            {% else %}
+              <p class="card-text" style="font-weight: bold;">None</p>
+            {% endif %}
           </div>
     </div>
     <div class="card bg-light mb-3" style="max-width: 12rem;">
       <div class="card-body">
-        <h5 class="card-title">Original Source</h5>
-          <p class="card-text"><a href="/kg-registry/resource/{{page.original_source}}/{{page.original_source}}.html">{{page.original_source}}</a></p>
+        <h5 class="card-title">Original Source(s)</h5>
+        {% if page.original_source %}
+          {% for source in page.original_source %}
+            <p class="card-text"><a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a></p>
+          {% endfor %}
+        {% else %}
+          <p class="card-text" style="font-weight: bold;">None</p>
+        {% endif %}
         </div>
   </div>
       <div class="card bg-light mb-3" style="max-width: 12rem;">
@@ -65,11 +87,32 @@ layout: default
       </div>
     </div>
 
-  {% if page.derived_from and page.original_source %}
-  <div class="card bg-light mb-3" style="max-width: 48rem;">
+<!-- This diagram should probably reference the full registry,
+because some details may not be available from the current
+product (e.g., there may be multiple sources and they
+may be processed differently).
+The current diagram is rather hacky.
+TODO: restructure accordingly. -->
+  {% if page.secondary_source and page.original_source %}
+  <div class="card bg-light mb-3" style="max-width: 60rem;">
       <div class="card-body">
         <h5 class="card-title">Provenance</h5>
-          {% if page.derived_from == page.original_source %}
+        {% if page.original_source.size > 1 %}
+          <pre><code class="language-mermaid" style="display: flex; justify-content: center"> 
+            block-beta
+            columns 3
+            DataSourceA("{{page.original_source[0]}}") space:1
+            DataSourceB("{{page.original_source[1]}}") space:4
+            Aggregator("{{page.secondary_source}}") space:5
+            Product("{{page.id}}")
+            DataSourceA  --> Aggregator
+            DataSourceB  --> Aggregator
+            Aggregator  --> Product  
+          
+            style Product stroke:#5588bb,stroke-width:5px;
+                
+          </code></pre>
+          {% elsif page.secondary_source == page.original_source %}
           <pre><code class="language-mermaid" style="display: flex; justify-content: center"> 
             block-beta
             columns 1
@@ -85,7 +128,7 @@ layout: default
             block-beta
             columns 1
             DataSource("{{page.original_source}}") space:1
-            Aggregator("{{page.derived_from}}") space:1
+            Aggregator("{{page.secondary_source}}") space:1
             Product("{{page.id}}")
             DataSource  --> Aggregator
             Aggregator  --> Product  
@@ -107,7 +150,7 @@ layout: default
     {% endif %}
 
     {% if page.compatibility %}
-    <div class="card px-0" style="margin-bottom: 1.5em; max-width: 48rem" id="publications">
+    <div class="card px-0" style="margin-bottom: 1.5em; max-width: 60rem" id="publications">
       <div class="card-header">
         <h4>Compatibility</h4>
       </div>

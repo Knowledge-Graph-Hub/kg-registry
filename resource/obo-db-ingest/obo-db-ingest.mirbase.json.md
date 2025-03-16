@@ -6,6 +6,6 @@ license:
   id: https://creativecommons.org/public-domain/pdm/
   label: public domain
 name: mirbase OBO Graph JSON
-url: https://w3id.org/biopragmatics/resources/mirbase/mirbase.json
+product_url: https://w3id.org/biopragmatics/resources/mirbase/mirbase.json
 layout: product_detail
 ---

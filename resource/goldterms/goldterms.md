@@ -13,12 +13,14 @@ domain: environment
 homepage_url: https://gold.jgi.doe.gov/
 products:
 - id: goldterms.data.owl
-  url: https://w3id.org/goldterms/goldterms.owl
+  product_url: https://w3id.org/goldterms/goldterms.owl
   name: main GOLDTERMS OWL release
   category: Product
   format: owl
-  derived_from: goldterms
-  original_source: goldterms
+  secondary_source:
+  - goldterms
+  original_source:
+  - goldterms
 repository: https://github.com/cmungall/gold-ontology
 activity_status: active
 category: Resource

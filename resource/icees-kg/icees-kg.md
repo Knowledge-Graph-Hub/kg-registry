@@ -18,11 +18,13 @@ products:
 - id: icees-kg.graph
   name: KGX distribution of the ICEES Exposures KP
   description: KGX distribution of the ICEES Exposures KP
-  url: https://stars.renci.org/var/plater/bl-2.1/icees_kgx_files/
+  product_url: https://stars.renci.org/var/plater/bl-2.1/icees_kgx_files/
   category: GraphProduct
   format: kgx
-  derived_from: icees-kg
-  original_source: icees-kg
+  secondary_source:
+  - icees-kg
+  original_source:
+  - icees-kg
 ---
 
 The ICEES-based Exposures Knowledge Graph.

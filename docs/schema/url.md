@@ -23,15 +23,8 @@ URI: [kgr:url](https://w3id.org/bridge2ai/data-sheets-schema/url)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Usage](Usage.html) | The usage of a resource |  no  |
-| [ProgrammingInterface](ProgrammingInterface.html) | A product that is a programming interface (API) to a resource |  no  |
 | [Organization](Organization.html) | An organization |  no  |
-| [GraphicalInterface](GraphicalInterface.html) | A product that is a graphical interface to a resource |  no  |
-| [DataModelProduct](DataModelProduct.html) | A product that is a data model, such as an ontology or schema |  no  |
-| [ProcessProduct](ProcessProduct.html) | A product that is a process or algorithm |  no  |
-| [GraphProduct](GraphProduct.html) | A product that is a graph, represented as nodes and edges |  no  |
-| [MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources |  no  |
-| [Product](Product.html) | A top-level class for all products in the knowledge graph registry |  no  |
+| [Usage](Usage.html) | The usage of a resource |  no  |
 
 
 
@@ -73,7 +66,6 @@ URI: [kgr:url](https://w3id.org/bridge2ai/data-sheets-schema/url)
 name: url
 alias: url
 domain_of:
-- Product
 - Organization
 - Usage
 range: string

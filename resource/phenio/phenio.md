@@ -16,12 +16,14 @@ license:
 products:
 - id: phenio.model
   description: OWL version of phenio
-  url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl
+  product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl
   name: phenio
   category: Product
   format: owl
-  derived_from: phenio
-  original_source: phenio
+  secondary_source:
+  - phenio
+  original_source:
+  - phenio
   license:
     label: BSD3
     id: https://opensource.org/license/bsd-3-clause
@@ -29,14 +31,16 @@ products:
 - id: phenio.graph
   name: KG-Phenio
   description: PHENIO as a KGX graph
-  url: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
+  product_url: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
   compatibility:
   - standard: biolink
     version: 4.2.5
   format: kgx
   category: GraphProduct
-  derived_from: phenio
-  original_source: phenio
+  secondary_source:
+  - phenio
+  original_source:
+  - phenio
   license:
     label: BSD3
     id: https://opensource.org/license/bsd-3-clause

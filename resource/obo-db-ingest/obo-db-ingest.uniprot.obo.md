@@ -6,6 +6,6 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: uniprot OBO
-url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo
+product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo
 layout: product_detail
 ---

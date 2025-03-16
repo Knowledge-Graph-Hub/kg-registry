@@ -6,6 +6,6 @@ license:
   id: https://clinicaltrials.gov/about-site/terms-conditions#availability
   label: Custom
 name: clinicaltrials OBO Graph JSON
-url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json
+product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json
 layout: product_detail
 ---

@@ -14,7 +14,6 @@ name: SciBite
 products:
 - category: Product
   compression: zip
-  derived_from: scibite
   description: This HGNC OWL file is generated from the data at https://www.genenames.org/.
     It contains all genes in HGNC organised in a shallow hierarchy, classified by
     their locus type and gene group. Gene groups are also derived from HGNC. The ontology
@@ -26,8 +25,11 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: SciBite HGNC
-  original_source: hgnc
+  original_source:
+  - hgnc
+  product_url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip
   repository: https://github.com/elsevier-health/scibite-ontology
-  url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip
+  secondary_source:
+  - scibite
 ---
 SciBite

@@ -21,76 +21,90 @@ products:
   compatibility:
   - standard: biolink
     version: 4.2.5
-  derived_from: biolink
   description: OWL release of Biolink Model
   format: owl
   id: biolink.model.owl
   name: Biolink Model OWL release
-  original_source: biolink
-  url: https://w3id.org/biolink/biolink-model.owl.ttl
+  original_source:
+  - biolink
+  product_url: https://w3id.org/biolink/biolink-model.owl.ttl
+  secondary_source:
+  - biolink
 - category: DataModelProduct
   compatibility:
   - standard: biolink
     version: 4.2.5
-  derived_from: biolink
   description: JSON schema release of Biolink Model
   format: json
   id: biolink.model.json
   name: Biolink Model JSON release
-  original_source: biolink
-  url: https://w3id.org/biolink/biolink-model.json
+  original_source:
+  - biolink
+  product_url: https://w3id.org/biolink/biolink-model.json
+  secondary_source:
+  - biolink
 - category: DataModelProduct
   compatibility:
   - standard: biolink
     version: 4.2.5
-  derived_from: biolink
   description: GraphQL release of Biolink Model
   format: graphql
   id: biolink.model.graphql
   name: Biolink Model GraphQL release
-  original_source: biolink
-  url: https://w3id.org/biolink/biolink-model.graphql
+  original_source:
+  - biolink
+  product_url: https://w3id.org/biolink/biolink-model.graphql
+  secondary_source:
+  - biolink
 - category: DataModelProduct
   compatibility:
   - standard: biolink
     version: 4.2.5
-  derived_from: biolink
   description: Protobuf release of Biolink Model
   format: protobuf
   id: biolink.model.proto
   name: Biolink Model Protobuf release
-  original_source: biolink
-  url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/protobuf/biolink_model.proto
+  original_source:
+  - biolink
+  product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/protobuf/biolink_model.proto
+  secondary_source:
+  - biolink
 - category: DataModelProduct
   compatibility:
   - standard: biolink
     version: 4.2.5
-  derived_from: biolink
   description: SHACL release of Biolink Model
   format: shacl
   id: biolink.model.shacl
   name: Biolink Model SHACL release
-  original_source: biolink
-  url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shacl/biolink_model.shacl.ttl
+  original_source:
+  - biolink
+  product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shacl/biolink_model.shacl.ttl
+  secondary_source:
+  - biolink
 - category: DataModelProduct
   compatibility:
   - standard: biolink
     version: 4.2.5
-  derived_from: biolink
   description: ShEx release of Biolink Model
   format: shex
   id: biolink.model.shex
   name: Biolink Model ShEx release
-  original_source: biolink
-  url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
+  original_source:
+  - biolink
+  product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
+  secondary_source:
+  - biolink
 - category: GraphProduct
-  derived_from: biolink
   description: Biolink Automat
   format: kgx-jsonl
   id: automat.biolink
   name: biolink_automat
-  original_source: biolink
-  url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
+  original_source:
+  - biolink
+  product_url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
+  secondary_source:
+  - automat
 publications:
 - authors:
   - Unni DR

@@ -21,11 +21,13 @@ products:
 - id: rtx-kg2.graph
   name: RTX-KG2 KGX
   description: KGX distribution of the RTX-KG2
-  url: https://github.com/ncats/translator-lfs-artifacts/blob/main/files/
+  product_url: https://github.com/ncats/translator-lfs-artifacts/blob/main/files/
   category: GraphProduct
   format: kgx
-  original_source: rtx-kg2
-  derived_from: rtx-kg2
+  original_source:
+  - rtx-kg2
+  secondary_source:
+  - rtx-kg2
 category: KnowledgeGraph
 ---
 

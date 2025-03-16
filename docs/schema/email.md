@@ -23,8 +23,8 @@ URI: [kgr:email](https://w3id.org/bridge2ai/data-sheets-schema/email)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Individual](Individual.html) | An individual person |  no  |
 | [Organization](Organization.html) | An organization |  no  |
+| [Individual](Individual.html) | An individual person |  no  |
 
 
 

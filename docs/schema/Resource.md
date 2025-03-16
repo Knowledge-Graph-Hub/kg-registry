@@ -198,19 +198,19 @@ URI: [kgr:Resource](https://w3id.org/bridge2ai/data-sheets-schema/Resource)
 | [Registry](Registry.html) | [resources](resources.html) | range | [Resource](Resource.html) |
 | [KnowledgeGraph](KnowledgeGraph.html) | [components](components.html) | range | [Resource](Resource.html) |
 | [Product](Product.html) | [original_source](original_source.html) | range | [Resource](Resource.html) |
-| [Product](Product.html) | [derived_from](derived_from.html) | range | [Resource](Resource.html) |
+| [Product](Product.html) | [secondary_source](secondary_source.html) | range | [Resource](Resource.html) |
 | [GraphProduct](GraphProduct.html) | [original_source](original_source.html) | range | [Resource](Resource.html) |
-| [GraphProduct](GraphProduct.html) | [derived_from](derived_from.html) | range | [Resource](Resource.html) |
+| [GraphProduct](GraphProduct.html) | [secondary_source](secondary_source.html) | range | [Resource](Resource.html) |
 | [DataModelProduct](DataModelProduct.html) | [original_source](original_source.html) | range | [Resource](Resource.html) |
-| [DataModelProduct](DataModelProduct.html) | [derived_from](derived_from.html) | range | [Resource](Resource.html) |
+| [DataModelProduct](DataModelProduct.html) | [secondary_source](secondary_source.html) | range | [Resource](Resource.html) |
 | [MappingProduct](MappingProduct.html) | [original_source](original_source.html) | range | [Resource](Resource.html) |
-| [MappingProduct](MappingProduct.html) | [derived_from](derived_from.html) | range | [Resource](Resource.html) |
+| [MappingProduct](MappingProduct.html) | [secondary_source](secondary_source.html) | range | [Resource](Resource.html) |
 | [ProcessProduct](ProcessProduct.html) | [original_source](original_source.html) | range | [Resource](Resource.html) |
-| [ProcessProduct](ProcessProduct.html) | [derived_from](derived_from.html) | range | [Resource](Resource.html) |
+| [ProcessProduct](ProcessProduct.html) | [secondary_source](secondary_source.html) | range | [Resource](Resource.html) |
 | [GraphicalInterface](GraphicalInterface.html) | [original_source](original_source.html) | range | [Resource](Resource.html) |
-| [GraphicalInterface](GraphicalInterface.html) | [derived_from](derived_from.html) | range | [Resource](Resource.html) |
+| [GraphicalInterface](GraphicalInterface.html) | [secondary_source](secondary_source.html) | range | [Resource](Resource.html) |
 | [ProgrammingInterface](ProgrammingInterface.html) | [original_source](original_source.html) | range | [Resource](Resource.html) |
-| [ProgrammingInterface](ProgrammingInterface.html) | [derived_from](derived_from.html) | range | [Resource](Resource.html) |
+| [ProgrammingInterface](ProgrammingInterface.html) | [secondary_source](secondary_source.html) | range | [Resource](Resource.html) |
 
 
 
