@@ -22,8 +22,10 @@ products:
   url: https://kghub.io/kg-covid-19/
   category: GraphProduct
   format: kgx
-  derived_from: kg-covid-19
-  original_source: kg-covid-19
+  secondary_source:
+  - kg-covid-19
+  original_source:
+  - kg-covid-19
 ---
 
 KG-COVID-19: a knowledge graph for COVID-19 and SARS-COV-2.

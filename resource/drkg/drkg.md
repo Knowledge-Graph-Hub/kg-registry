@@ -27,8 +27,10 @@ products:
   url: https://dgl-data.s3-us-west-2.amazonaws.com/dataset/DRKG/drkg.tar.gz
   compression: targz
   category: GraphProduct
-  derived_from: drkg
-  original_source: drkg
+  secondary_source:
+  - drkg
+  original_source:
+  - drkg
 ---
 
 Drug Repurposing Knowledge Graph (DRKG)

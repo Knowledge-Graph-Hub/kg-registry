@@ -19,154 +19,184 @@ license:
 name: OBO Database Ingestion
 products:
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: bigg.compartment OBO
   id: obo-db-ingest.bigg.compartment.obo
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
   name: bigg.compartment OBO
-  original_source: bigg
+  original_source:
+  - bigg
   url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.obo
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: bigg.compartment OWL
   id: obo-db-ingest.bigg.compartment.owl
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
   name: bigg.compartment OWL
-  original_source: bigg
+  original_source:
+  - bigg
   url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.owl
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: bigg.compartment OBO Graph JSON
   id: obo-db-ingest.bigg.compartment.json
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
   name: bigg.compartment OBO Graph JSON
-  original_source: bigg
+  original_source:
+  - bigg
   url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.json
 - category: MappingProduct
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: bigg.compartment SSSOM
   id: obo-db-ingest.bigg.compartment.sssom.tsv
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
   name: bigg.compartment SSSOM
-  original_source: bigg
+  original_source:
+  - bigg
   url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: bigg.metabolite OBO
   id: obo-db-ingest.bigg.metabolite.obo
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
   name: bigg.metabolite OBO
-  original_source: bigg
+  original_source:
+  - bigg
   url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.obo
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: bigg.metabolite OWL
   id: obo-db-ingest.bigg.metabolite.owl
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
   name: bigg.metabolite OWL
-  original_source: bigg
+  original_source:
+  - bigg
   url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.owl
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: bigg.metabolite OBO Graph JSON
   id: obo-db-ingest.bigg.metabolite.json
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
   name: bigg.metabolite OBO Graph JSON
-  original_source: bigg
+  original_source:
+  - bigg
   url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.json
 - category: MappingProduct
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: bigg.metabolite SSSOM
   id: obo-db-ingest.bigg.metabolite.sssom.tsv
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
   name: bigg.metabolite SSSOM
-  original_source: bigg
+  original_source:
+  - bigg
   url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: bigg.model OBO
   id: obo-db-ingest.bigg.model.obo
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
   name: bigg.model OBO
-  original_source: bigg
+  original_source:
+  - bigg
   url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.obo
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: bigg.model OWL
   id: obo-db-ingest.bigg.model.owl
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
   name: bigg.model OWL
-  original_source: bigg
+  original_source:
+  - bigg
   url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.owl
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: bigg.model OBO Graph JSON
   id: obo-db-ingest.bigg.model.json
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
   name: bigg.model OBO Graph JSON
-  original_source: bigg
+  original_source:
+  - bigg
   url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.json
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: bigg.reaction OBO
   id: obo-db-ingest.bigg.reaction.obo
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
   name: bigg.reaction OBO
-  original_source: bigg
+  original_source:
+  - bigg
   url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.obo
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: bigg.reaction OWL
   id: obo-db-ingest.bigg.reaction.owl
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
   name: bigg.reaction OWL
-  original_source: bigg
+  original_source:
+  - bigg
   url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.owl
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: bigg.reaction OBO Graph JSON
   id: obo-db-ingest.bigg.reaction.json
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
   name: bigg.reaction OBO Graph JSON
-  original_source: bigg
+  original_source:
+  - bigg
   url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.json
 - category: MappingProduct
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: bigg.reaction SSSOM
   id: obo-db-ingest.bigg.reaction.sssom.tsv
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
   name: bigg.reaction SSSOM
-  original_source: bigg
+  original_source:
+  - bigg
   url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.sssom.tsv
 - category: Product
   description: ccle OBO
@@ -696,7 +726,8 @@ products:
   name: gtdb SSSOM
   url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.sssom.tsv
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: hgnc OBO
   format: obo
   id: obo-db-ingest.hgnc.obo
@@ -704,10 +735,12 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc OBO
-  original_source: hgnc
+  original_source:
+  - hgnc
   url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: hgnc OWL
   format: owl
   id: obo-db-ingest.hgnc.owl
@@ -715,10 +748,12 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc OWL
-  original_source: hgnc
+  original_source:
+  - hgnc
   url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: hgnc OBO Graph JSON
   format: json
   id: obo-db-ingest.hgnc.json
@@ -726,20 +761,24 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc OBO Graph JSON
-  original_source: hgnc
+  original_source:
+  - hgnc
   url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.json
 - category: MappingProduct
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: hgnc SSSOM
   id: obo-db-ingest.hgnc.sssom.tsv
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc SSSOM
-  original_source: hgnc
+  original_source:
+  - hgnc
   url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: hgnc.genegroup OBO
   format: obo
   id: obo-db-ingest.hgnc.genegroup.obo
@@ -747,10 +786,12 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc.genegroup OBO
-  original_source: hgnc
+  original_source:
+  - hgnc
   url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.obo
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: hgnc.genegroup OWL
   format: owl
   id: obo-db-ingest.hgnc.genegroup.owl
@@ -758,10 +799,12 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc.genegroup OWL
-  original_source: hgnc
+  original_source:
+  - hgnc
   url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.owl
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: hgnc.genegroup OBO Graph JSON
   format: json
   id: obo-db-ingest.hgnc.genegroup.json
@@ -769,7 +812,8 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc.genegroup OBO Graph JSON
-  original_source: hgnc
+  original_source:
+  - hgnc
   url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.json
 - category: Product
   description: icd10 OBO
@@ -1801,44 +1845,52 @@ products:
   name: wikipathways OBO Graph JSON
   url: https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.json
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: zfin OBO
   id: obo-db-ingest.zfin.obo
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: zfin OBO
-  original_source: zfin
+  original_source:
+  - zfin
   url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: zfin OWL
   id: obo-db-ingest.zfin.owl
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: zfin OWL
-  original_source: zfin
+  original_source:
+  - zfin
   url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
 - category: Product
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: zfin OBO Graph JSON
   id: obo-db-ingest.zfin.json
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: zfin OBO Graph JSON
-  original_source: zfin
+  original_source:
+  - zfin
   url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
 - category: MappingProduct
-  derived_from: obo-db-ingest
+  secondary_source:
+  - obo-db-ingest
   description: zfin SSSOM
   id: obo-db-ingest.zfin.sssom.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: zfin SSSOM
-  original_source: zfin
+  original_source:
+  - zfin
   url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
 repository: https://github.com/biopragmatics/obo-db-ingest
 ---

@@ -23,8 +23,10 @@ products:
   url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
   category: GraphProduct
   format: kgx
-  derived_from: kg-idg
-  original_source: kg-idg
+  secondary_source:
+  - kg-idg
+  original_source:
+  - kg-idg
 category: KnowledgeGraph
 ---
 

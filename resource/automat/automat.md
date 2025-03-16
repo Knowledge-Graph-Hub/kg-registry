@@ -18,46 +18,56 @@ license:
 name: Automat
 products:
 - category: GraphProduct
-  derived_from: automat
+  secondary_source:
+  - automat
   description: Robokop KG (Automat)
   format: kgx-jsonl
   id: automat.robokopkg
   name: robokopkg
-  original_source: robokop
+  original_source:
+  - robokop
   url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files
 - category: GraphProduct
-  derived_from: automat
+  secondary_source:
+  - automat
   description: Robokop Plus
   format: kgx-jsonl
   id: automat.robokopplus
   name: robokopplus
-  original_source: robokop
+  original_source:
+  - robokop
   url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files
 - category: GraphProduct
-  derived_from: automat
+  secondary_source:
+  - automat
   description: Biolink Automat
   format: kgx-jsonl
   id: automat.biolink
   name: biolink_automat
-  original_source: biolink
+  original_source:
+  - biolink
   url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
 - category: GraphProduct
-  derived_from: automat
+  secondary_source:
+  - automat
   description: CTD Automat
   format: kgx-jsonl
   id: automat.ctd
   infores_id: automat-ctd
   name: ctd_automat
-  original_source: ctd
+  original_source:
+  - ctd
   url: https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files
 - category: GraphProduct
-  derived_from: automat
+  secondary_source:
+  - automat
   description: DrugCentral Automat
   format: kgx-jsonl
   id: automat.drugcentral
   infores_id: automat-drug-central
   name: drugcentral_automat
-  original_source: drugcentral
+  original_source:
+  - drugcentral
   url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
 - category: GraphProduct
   description: GTEx Automat
@@ -147,13 +157,15 @@ products:
   name: ubergraph_automat
   url: https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files
 - category: GraphProduct
-  derived_from: automat
+  secondary_source:
+  - automat
   description: DrugCentral Automat
   format: kgx-jsonl
   id: automat.drugcentral
   infores_id: automat-drug-central
   name: drugcentral_automat
-  original_source: drugcentral
+  original_source:
+  - drugcentral
   url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
 repository: https://github.com/RobokopU24/
 ---

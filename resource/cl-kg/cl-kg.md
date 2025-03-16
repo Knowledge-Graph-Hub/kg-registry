@@ -26,8 +26,10 @@ products:
   is_public: true
   is_neo4j: true
   connection_url: cl-kg-neo4j-db.cellgeni.sanger.ac.uk:443
-  derived_from: cl-kg
-  original_source: cl-kg
+  secondary_source:
+  - cl-kg
+  original_source:
+  - cl-kg
 ---
 
 CL-KG is a knowledge graph integrating the cell ontology and linked ontologies with hierarchical annotations of single cell transcriptomics data from CellXGene.

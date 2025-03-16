@@ -21,16 +21,20 @@ products:
   url: https://molepro.s3.amazonaws.com/nodes.tsv
   category: GraphProduct
   format: kgx
-  derived_from: molecular-data-kp
-  original_source: molecular-data-kp
+  secondary_source:
+  - molecular-data-kp
+  original_source:
+  - molecular-data-kp
 - id: molecular-data-kp.graph.edges
   name: Edges for Molecular Data KP
   description: KGX edges for Molecular Data KP
   url: https://molepro.s3.amazonaws.com/edges.tsv
   category: GraphProduct
   format: kgx
-  derived_from: molecular-data-kp
-  original_source: molecular-data-kp
+  secondary_source:
+  - molecular-data-kp
+  original_source:
+  - molecular-data-kp
 - id: molecular-data-kp.api
   name: Open API for Molecular Data KP
   description: Open API for Molecular Data KP
@@ -38,8 +42,10 @@ products:
   category: ProgrammingInterface
   is_public: true
   connection_url: https://translator.broadinstitute.org/molecular_data_provider/api
-  derived_from: molecular-data-kp
-  original_source: molecular-data-kp
+  secondary_source:
+  - molecular-data-kp
+  original_source:
+  - molecular-data-kp
 license:
   label: MIT License
   id: https://opensource.org/licenses/MIT
