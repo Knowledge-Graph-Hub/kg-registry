@@ -33,14 +33,24 @@ layout: default
   <div class="row header-card-row">
     <div class="card bg-light mb-3" style="max-width: 12rem;">
       <div class="card-body">
-        <h5 class="card-title">Format</h5>
-        {% if page.format %}
-          <p class="card-text">{{page.format}}</p>
+        <h5 class="card-title">URL</h5>
+        {% if page.product_url %}
+          <p class="card-text"><a href="{{page.product_url}}">{{page.product_url | split: '/' | last}}</a></p>
         {% else %}
           <p class="card-text" style="font-weight: bold;">Unknown</p>
         {% endif %}
         </div>
   </div>
+  <div class="card bg-light mb-3" style="max-width: 12rem;">
+    <div class="card-body">
+      <h5 class="card-title">Format</h5>
+      {% if page.format %}
+        <p class="card-text">{{page.format}}</p>
+      {% else %}
+        <p class="card-text" style="font-weight: bold;">Unknown</p>
+      {% endif %}
+      </div>
+    </div>
     <div class="card bg-light mb-3" style="max-width: 12rem;">
         <div class="card-body">
           <h5 class="card-title">Secondary Source(s)</h5>
