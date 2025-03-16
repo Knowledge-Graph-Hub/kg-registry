@@ -5,16 +5,16 @@ mermaid: true
 
 
 
-# Slot: compression
+# Slot: produced_by
 
 
-_The type of compression used with the product. If this is not specified, it is assumed to be uncompressed._
+_The process(es) that produced the product, referred to by the identifier of each process._
 
 
 
 
 
-URI: [kgr:compression](https://w3id.org/bridge2ai/data-sheets-schema/compression)
+URI: [kgr:produced_by](https://w3id.org/bridge2ai/data-sheets-schema/produced_by)
 
 
 
@@ -44,7 +44,9 @@ URI: [kgr:compression](https://w3id.org/bridge2ai/data-sheets-schema/compression
 
 ## Properties
 
-* Range: [CompressionEnum](CompressionEnum.html)
+* Range: [ProcessProduct](ProcessProduct.html)
+
+* Multivalued: True
 
 
 
@@ -70,8 +72,8 @@ URI: [kgr:compression](https://w3id.org/bridge2ai/data-sheets-schema/compression
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
-| self | kgr:compression |
-| native | kgr:compression |
+| self | kgr:produced_by |
+| native | kgr:produced_by |
 
 
 
@@ -80,16 +82,17 @@ URI: [kgr:compression](https://w3id.org/bridge2ai/data-sheets-schema/compression
 
 <details>
 ```yaml
-name: compression
-description: The type of compression used with the product. If this is not specified,
-  it is assumed to be uncompressed.
+name: produced_by
+description: The process(es) that produced the product, referred to by the identifier
+  of each process.
 from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
 rank: 1000
-alias: compression
+alias: produced_by
 owner: Product
 domain_of:
 - Product
-range: CompressionEnum
+range: ProcessProduct
+multivalued: true
 
 ```
 </details>

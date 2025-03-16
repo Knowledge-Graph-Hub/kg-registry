@@ -57,15 +57,6 @@ URI: [kgr:GraphProduct](https://w3id.org/bridge2ai/data-sheets-schema/GraphProdu
     click Contact href "Contact.html"
 
         
-      GraphProduct : derived_from
-        
-          
-    
-    
-    GraphProduct --> "0..1" Resource : derived_from
-    click Resource href "Resource.html"
-
-        
       GraphProduct : description
         
       GraphProduct : dump_format
@@ -114,13 +105,33 @@ URI: [kgr:GraphProduct](https://w3id.org/bridge2ai/data-sheets-schema/GraphProdu
           
     
     
-    GraphProduct --> "0..1" Resource : original_source
+    GraphProduct --> "*" Resource : original_source
     click Resource href "Resource.html"
 
         
       GraphProduct : predicates
         
+      GraphProduct : produced_by
+        
+          
+    
+    
+    GraphProduct --> "*" ProcessProduct : produced_by
+    click ProcessProduct href "ProcessProduct.html"
+
+        
+      GraphProduct : product_url
+        
       GraphProduct : repository
+        
+      GraphProduct : secondary_source
+        
+          
+    
+    
+    GraphProduct --> "*" Resource : secondary_source
+    click Resource href "Resource.html"
+
         
       GraphProduct : tags
         
@@ -130,8 +141,6 @@ URI: [kgr:GraphProduct](https://w3id.org/bridge2ai/data-sheets-schema/GraphProdu
     GraphProduct --> "*" TagEnum : tags
     click TagEnum href "TagEnum.html"
 
-        
-      GraphProduct : url
         
       GraphProduct : warnings
         
@@ -159,9 +168,10 @@ URI: [kgr:GraphProduct](https://w3id.org/bridge2ai/data-sheets-schema/GraphProdu
 | [node_categories](node_categories.html) | * <br/> [String](String.html) | The node categories in the graph | direct |
 | [name](name.html) | 1 <br/> [String](String.html) | The human-readable name of the product | [Product](Product.html) |
 | [description](description.html) | 0..1 <br/> [String](String.html) | A description of the product | [Product](Product.html) |
-| [original_source](original_source.html) | 0..1 <br/> [Resource](Resource.html) | The original source of the product | [Product](Product.html) |
-| [derived_from](derived_from.html) | 0..1 <br/> [Resource](Resource.html) | The resource that the product is derived from | [Product](Product.html) |
-| [url](url.html) | 0..1 <br/> [Uriorcurie](Uriorcurie.html) | The URL of the product | [Product](Product.html) |
+| [original_source](original_source.html) | * <br/> [Resource](Resource.html) | The original source(s) of the product, referred to  by the identifier of each... | [Product](Product.html) |
+| [secondary_source](secondary_source.html) | * <br/> [Resource](Resource.html) | The source(s) of the product, other than its original source, referred to by ... | [Product](Product.html) |
+| [product_url](product_url.html) | 0..1 <br/> [Uriorcurie](Uriorcurie.html) | The URL of the product | [Product](Product.html) |
+| [produced_by](produced_by.html) | * <br/> [ProcessProduct](ProcessProduct.html) | The process(es) that produced the product, referred to by the identifier of e... | [Product](Product.html) |
 | [repository](repository.html) | 0..1 <br/> [Uriorcurie](Uriorcurie.html) | A main version control repository for the product | [Product](Product.html) |
 | [license](license.html) | 0..1 <br/> [License](License.html) | The license of the product | [Product](Product.html) |
 | [compression](compression.html) | 0..1 <br/> [CompressionEnum](CompressionEnum.html) | The type of compression used with the product | [Product](Product.html) |
@@ -339,10 +349,8 @@ attributes:
     range: string
   original_source:
     name: original_source
-    description: The original source of the product. This only needs to be the identifier
-      of the resource. This may be the parent resource or another resource. Note this
-      is not the same as components of a graph; this should only be used when a single
-      source is known.
+    description: The original source(s) of the product, referred to  by the identifier
+      of each resource. This may be the parent resource or another resource.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
     alias: original_source
@@ -350,31 +358,43 @@ attributes:
     domain_of:
     - Product
     range: Resource
-  derived_from:
-    name: derived_from
-    description: The resource that the product is derived from. This only needs to
-      be the identifier of the resource. It may be the parent resource or another
-      resource, e.g., an Aggregator.
+    multivalued: true
+  secondary_source:
+    name: secondary_source
+    description: The source(s) of the product, other than its original source, referred
+      to by the identifier of each resource. This may be an Aggregator or another
+      resource.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
-    alias: derived_from
+    alias: secondary_source
     owner: GraphProduct
     domain_of:
     - Product
     range: Resource
-  url:
-    name: url
+    multivalued: true
+  product_url:
+    name: product_url
     description: The URL of the product. This may be a link to download a specific
       file, a base URL to an API, or a link to a graphical interface.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
-    alias: url
+    alias: product_url
     owner: GraphProduct
     domain_of:
     - Product
-    - Organization
-    - Usage
     range: uriorcurie
+  produced_by:
+    name: produced_by
+    description: The process(es) that produced the product, referred to by the identifier
+      of each process.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: produced_by
+    owner: GraphProduct
+    domain_of:
+    - Product
+    range: ProcessProduct
+    multivalued: true
   repository:
     name: repository
     description: A main version control repository for the product.

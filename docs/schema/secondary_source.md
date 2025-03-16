@@ -5,16 +5,16 @@ mermaid: true
 
 
 
-# Slot: compression
+# Slot: secondary_source
 
 
-_The type of compression used with the product. If this is not specified, it is assumed to be uncompressed._
+_The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource._
 
 
 
 
 
-URI: [kgr:compression](https://w3id.org/bridge2ai/data-sheets-schema/compression)
+URI: [kgr:secondary_source](https://w3id.org/bridge2ai/data-sheets-schema/secondary_source)
 
 
 
@@ -44,7 +44,9 @@ URI: [kgr:compression](https://w3id.org/bridge2ai/data-sheets-schema/compression
 
 ## Properties
 
-* Range: [CompressionEnum](CompressionEnum.html)
+* Range: [Resource](Resource.html)
+
+* Multivalued: True
 
 
 
@@ -70,8 +72,8 @@ URI: [kgr:compression](https://w3id.org/bridge2ai/data-sheets-schema/compression
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
-| self | kgr:compression |
-| native | kgr:compression |
+| self | kgr:secondary_source |
+| native | kgr:secondary_source |
 
 
 
@@ -80,16 +82,17 @@ URI: [kgr:compression](https://w3id.org/bridge2ai/data-sheets-schema/compression
 
 <details>
 ```yaml
-name: compression
-description: The type of compression used with the product. If this is not specified,
-  it is assumed to be uncompressed.
+name: secondary_source
+description: The source(s) of the product, other than its original source, referred
+  to by the identifier of each resource. This may be an Aggregator or another resource.
 from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
 rank: 1000
-alias: compression
+alias: secondary_source
 owner: Product
 domain_of:
 - Product
-range: CompressionEnum
+range: Resource
+multivalued: true
 
 ```
 </details>

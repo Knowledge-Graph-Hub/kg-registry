@@ -8,7 +8,7 @@ mermaid: true
 # Class: MappingProduct
 
 
-_A product that is a mapping between two or more data sources._
+_A product that is a mapping between two or more data sources. The sources should be identified in the original_source field._
 
 
 
@@ -57,15 +57,6 @@ URI: [kgr:MappingProduct](https://w3id.org/bridge2ai/data-sheets-schema/MappingP
     click Contact href "Contact.html"
 
         
-      MappingProduct : derived_from
-        
-          
-    
-    
-    MappingProduct --> "0..1" Resource : derived_from
-    click Resource href "Resource.html"
-
-        
       MappingProduct : description
         
       MappingProduct : dump_format
@@ -108,11 +99,31 @@ URI: [kgr:MappingProduct](https://w3id.org/bridge2ai/data-sheets-schema/MappingP
           
     
     
-    MappingProduct --> "0..1" Resource : original_source
+    MappingProduct --> "*" Resource : original_source
     click Resource href "Resource.html"
 
         
+      MappingProduct : produced_by
+        
+          
+    
+    
+    MappingProduct --> "*" ProcessProduct : produced_by
+    click ProcessProduct href "ProcessProduct.html"
+
+        
+      MappingProduct : product_url
+        
       MappingProduct : repository
+        
+      MappingProduct : secondary_source
+        
+          
+    
+    
+    MappingProduct --> "*" Resource : secondary_source
+    click Resource href "Resource.html"
+
         
       MappingProduct : tags
         
@@ -122,8 +133,6 @@ URI: [kgr:MappingProduct](https://w3id.org/bridge2ai/data-sheets-schema/MappingP
     MappingProduct --> "*" TagEnum : tags
     click TagEnum href "TagEnum.html"
 
-        
-      MappingProduct : url
         
       MappingProduct : warnings
         
@@ -147,9 +156,10 @@ URI: [kgr:MappingProduct](https://w3id.org/bridge2ai/data-sheets-schema/MappingP
 | ---  | --- | --- | --- |
 | [name](name.html) | 1 <br/> [String](String.html) | The human-readable name of the product | [Product](Product.html) |
 | [description](description.html) | 0..1 <br/> [String](String.html) | A description of the product | [Product](Product.html) |
-| [original_source](original_source.html) | 0..1 <br/> [Resource](Resource.html) | The original source of the product | [Product](Product.html) |
-| [derived_from](derived_from.html) | 0..1 <br/> [Resource](Resource.html) | The resource that the product is derived from | [Product](Product.html) |
-| [url](url.html) | 0..1 <br/> [Uriorcurie](Uriorcurie.html) | The URL of the product | [Product](Product.html) |
+| [original_source](original_source.html) | * <br/> [Resource](Resource.html) | The original source(s) of the product, referred to  by the identifier of each... | [Product](Product.html) |
+| [secondary_source](secondary_source.html) | * <br/> [Resource](Resource.html) | The source(s) of the product, other than its original source, referred to by ... | [Product](Product.html) |
+| [product_url](product_url.html) | 0..1 <br/> [Uriorcurie](Uriorcurie.html) | The URL of the product | [Product](Product.html) |
+| [produced_by](produced_by.html) | * <br/> [ProcessProduct](ProcessProduct.html) | The process(es) that produced the product, referred to by the identifier of e... | [Product](Product.html) |
 | [repository](repository.html) | 0..1 <br/> [Uriorcurie](Uriorcurie.html) | A main version control repository for the product | [Product](Product.html) |
 | [license](license.html) | 0..1 <br/> [License](License.html) | The license of the product | [Product](Product.html) |
 | [compression](compression.html) | 0..1 <br/> [CompressionEnum](CompressionEnum.html) | The type of compression used with the product | [Product](Product.html) |
@@ -210,7 +220,8 @@ URI: [kgr:MappingProduct](https://w3id.org/bridge2ai/data-sheets-schema/MappingP
 <details>
 ```yaml
 name: MappingProduct
-description: A product that is a mapping between two or more data sources.
+description: A product that is a mapping between two or more data sources. The sources
+  should be identified in the original_source field.
 from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
 is_a: Product
 
@@ -222,7 +233,8 @@ is_a: Product
 <details>
 ```yaml
 name: MappingProduct
-description: A product that is a mapping between two or more data sources.
+description: A product that is a mapping between two or more data sources. The sources
+  should be identified in the original_source field.
 from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
 is_a: Product
 attributes:
@@ -250,10 +262,8 @@ attributes:
     range: string
   original_source:
     name: original_source
-    description: The original source of the product. This only needs to be the identifier
-      of the resource. This may be the parent resource or another resource. Note this
-      is not the same as components of a graph; this should only be used when a single
-      source is known.
+    description: The original source(s) of the product, referred to  by the identifier
+      of each resource. This may be the parent resource or another resource.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
     alias: original_source
@@ -261,31 +271,43 @@ attributes:
     domain_of:
     - Product
     range: Resource
-  derived_from:
-    name: derived_from
-    description: The resource that the product is derived from. This only needs to
-      be the identifier of the resource. It may be the parent resource or another
-      resource, e.g., an Aggregator.
+    multivalued: true
+  secondary_source:
+    name: secondary_source
+    description: The source(s) of the product, other than its original source, referred
+      to by the identifier of each resource. This may be an Aggregator or another
+      resource.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
-    alias: derived_from
+    alias: secondary_source
     owner: MappingProduct
     domain_of:
     - Product
     range: Resource
-  url:
-    name: url
+    multivalued: true
+  product_url:
+    name: product_url
     description: The URL of the product. This may be a link to download a specific
       file, a base URL to an API, or a link to a graphical interface.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     rank: 1000
-    alias: url
+    alias: product_url
     owner: MappingProduct
     domain_of:
     - Product
-    - Organization
-    - Usage
     range: uriorcurie
+  produced_by:
+    name: produced_by
+    description: The process(es) that produced the product, referred to by the identifier
+      of each process.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
+    alias: produced_by
+    owner: MappingProduct
+    domain_of:
+    - Product
+    range: ProcessProduct
+    multivalued: true
   repository:
     name: repository
     description: A main version control repository for the product.

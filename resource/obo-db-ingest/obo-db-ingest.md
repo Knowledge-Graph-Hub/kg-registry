@@ -19,8 +19,6 @@ license:
 name: OBO Database Ingestion
 products:
 - category: Product
-  secondary_source:
-  - obo-db-ingest
   description: bigg.compartment OBO
   id: obo-db-ingest.bigg.compartment.obo
   license:
@@ -30,9 +28,9 @@ products:
   original_source:
   - bigg
   product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.obo
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: bigg.compartment OWL
   id: obo-db-ingest.bigg.compartment.owl
   license:
@@ -42,9 +40,9 @@ products:
   original_source:
   - bigg
   product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.owl
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: bigg.compartment OBO Graph JSON
   id: obo-db-ingest.bigg.compartment.json
   license:
@@ -54,9 +52,9 @@ products:
   original_source:
   - bigg
   product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.json
-- category: MappingProduct
   secondary_source:
   - obo-db-ingest
+- category: MappingProduct
   description: bigg.compartment SSSOM
   id: obo-db-ingest.bigg.compartment.sssom.tsv
   license:
@@ -65,10 +63,11 @@ products:
   name: bigg.compartment SSSOM
   original_source:
   - bigg
+  - go
   product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: bigg.metabolite OBO
   id: obo-db-ingest.bigg.metabolite.obo
   license:
@@ -78,9 +77,9 @@ products:
   original_source:
   - bigg
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.obo
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: bigg.metabolite OWL
   id: obo-db-ingest.bigg.metabolite.owl
   license:
@@ -90,9 +89,9 @@ products:
   original_source:
   - bigg
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.owl
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: bigg.metabolite OBO Graph JSON
   id: obo-db-ingest.bigg.metabolite.json
   license:
@@ -102,9 +101,9 @@ products:
   original_source:
   - bigg
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.json
-- category: MappingProduct
   secondary_source:
   - obo-db-ingest
+- category: MappingProduct
   description: bigg.metabolite SSSOM
   id: obo-db-ingest.bigg.metabolite.sssom.tsv
   license:
@@ -114,9 +113,9 @@ products:
   original_source:
   - bigg
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: bigg.model OBO
   id: obo-db-ingest.bigg.model.obo
   license:
@@ -126,9 +125,9 @@ products:
   original_source:
   - bigg
   product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.obo
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: bigg.model OWL
   id: obo-db-ingest.bigg.model.owl
   license:
@@ -138,9 +137,9 @@ products:
   original_source:
   - bigg
   product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.owl
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: bigg.model OBO Graph JSON
   id: obo-db-ingest.bigg.model.json
   license:
@@ -150,9 +149,9 @@ products:
   original_source:
   - bigg
   product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.json
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: bigg.reaction OBO
   id: obo-db-ingest.bigg.reaction.obo
   license:
@@ -162,9 +161,9 @@ products:
   original_source:
   - bigg
   product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.obo
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: bigg.reaction OWL
   id: obo-db-ingest.bigg.reaction.owl
   license:
@@ -174,9 +173,9 @@ products:
   original_source:
   - bigg
   product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.owl
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: bigg.reaction OBO Graph JSON
   id: obo-db-ingest.bigg.reaction.json
   license:
@@ -186,9 +185,9 @@ products:
   original_source:
   - bigg
   product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.json
-- category: MappingProduct
   secondary_source:
   - obo-db-ingest
+- category: MappingProduct
   description: bigg.reaction SSSOM
   id: obo-db-ingest.bigg.reaction.sssom.tsv
   license:
@@ -198,6 +197,8 @@ products:
   original_source:
   - bigg
   product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: ccle OBO
   id: obo-db-ingest.ccle.obo
@@ -726,8 +727,6 @@ products:
   name: gtdb SSSOM
   product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.sssom.tsv
 - category: Product
-  secondary_source:
-  - obo-db-ingest
   description: hgnc OBO
   format: obo
   id: obo-db-ingest.hgnc.obo
@@ -738,9 +737,9 @@ products:
   original_source:
   - hgnc
   product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: hgnc OWL
   format: owl
   id: obo-db-ingest.hgnc.owl
@@ -751,9 +750,9 @@ products:
   original_source:
   - hgnc
   product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: hgnc OBO Graph JSON
   format: json
   id: obo-db-ingest.hgnc.json
@@ -764,9 +763,9 @@ products:
   original_source:
   - hgnc
   product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.json
-- category: MappingProduct
   secondary_source:
   - obo-db-ingest
+- category: MappingProduct
   description: hgnc SSSOM
   id: obo-db-ingest.hgnc.sssom.tsv
   license:
@@ -776,9 +775,9 @@ products:
   original_source:
   - hgnc
   product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: hgnc.genegroup OBO
   format: obo
   id: obo-db-ingest.hgnc.genegroup.obo
@@ -789,9 +788,9 @@ products:
   original_source:
   - hgnc
   product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.obo
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: hgnc.genegroup OWL
   format: owl
   id: obo-db-ingest.hgnc.genegroup.owl
@@ -802,9 +801,9 @@ products:
   original_source:
   - hgnc
   product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.owl
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: hgnc.genegroup OBO Graph JSON
   format: json
   id: obo-db-ingest.hgnc.genegroup.json
@@ -815,6 +814,8 @@ products:
   original_source:
   - hgnc
   product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.json
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: icd10 OBO
   id: obo-db-ingest.icd10.obo
@@ -1845,8 +1846,6 @@ products:
   name: wikipathways OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.json
 - category: Product
-  secondary_source:
-  - obo-db-ingest
   description: zfin OBO
   id: obo-db-ingest.zfin.obo
   license:
@@ -1856,9 +1855,9 @@ products:
   original_source:
   - zfin
   product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: zfin OWL
   id: obo-db-ingest.zfin.owl
   license:
@@ -1868,9 +1867,9 @@ products:
   original_source:
   - zfin
   product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
-- category: Product
   secondary_source:
   - obo-db-ingest
+- category: Product
   description: zfin OBO Graph JSON
   id: obo-db-ingest.zfin.json
   license:
@@ -1880,9 +1879,9 @@ products:
   original_source:
   - zfin
   product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
-- category: MappingProduct
   secondary_source:
   - obo-db-ingest
+- category: MappingProduct
   description: zfin SSSOM
   id: obo-db-ingest.zfin.sssom.tsv
   license:
@@ -1892,6 +1891,8 @@ products:
   original_source:
   - zfin
   product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
 repository: https://github.com/biopragmatics/obo-db-ingest
 ---
 OBO Database Ingestion
