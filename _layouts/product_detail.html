@@ -102,8 +102,8 @@ TODO: restructure accordingly. -->
             block-beta
             columns 3
             DataSourceA("{{page.original_source[0]}}") space:1
-            DataSourceB("{{page.original_source[1]}}") space:1
-            Aggregator("{{page.secondary_source}}") space:2
+            DataSourceB("{{page.original_source[1]}}") space:4
+            Aggregator("{{page.secondary_source}}") space:5
             Product("{{page.id}}")
             DataSourceA  --> Aggregator
             DataSourceB  --> Aggregator
