@@ -14,9 +14,9 @@ license:
 name: SciBite HGNC
 original_source:
 - hgnc
+product_url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip
 repository: https://github.com/elsevier-health/scibite-ontology
 secondary_source:
 - scibite
-product_url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip
 layout: product_detail
 ---

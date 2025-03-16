@@ -6,8 +6,8 @@ id: neo.model
 name: neo OWL release
 original_source:
 - neo
+product_url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
 secondary_source:
 - neo
-product_url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
 layout: product_detail
 ---

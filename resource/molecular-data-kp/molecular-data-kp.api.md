@@ -7,8 +7,8 @@ is_public: true
 name: Open API for Molecular Data KP
 original_source:
 - molecular-data-kp
+product_url: https://translator.broadinstitute.org/molecular_data_provider/api
 secondary_source:
 - molecular-data-kp
-product_url: https://translator.broadinstitute.org/molecular_data_provider/api
 layout: product_detail
 ---

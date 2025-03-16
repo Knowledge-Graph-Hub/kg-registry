@@ -9,8 +9,8 @@ id: biolink.model.graphql
 name: Biolink Model GraphQL release
 original_source:
 - biolink
+product_url: https://w3id.org/biolink/biolink-model.graphql
 secondary_source:
 - biolink
-product_url: https://w3id.org/biolink/biolink-model.graphql
 layout: product_detail
 ---

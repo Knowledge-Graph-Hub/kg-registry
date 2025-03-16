@@ -8,8 +8,8 @@ license:
 name: zfin OWL
 original_source:
 - zfin
+product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
 secondary_source:
 - obo-db-ingest
-product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
 layout: product_detail
 ---

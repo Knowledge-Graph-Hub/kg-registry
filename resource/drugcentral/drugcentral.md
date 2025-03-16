@@ -23,9 +23,9 @@ products:
   name: drugcentral_automat
   original_source:
   - drugcentral
+  product_url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
   secondary_source:
   - automat
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
 publications:
 - authors:
   - Ursu O

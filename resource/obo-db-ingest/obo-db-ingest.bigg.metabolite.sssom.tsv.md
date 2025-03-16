@@ -8,8 +8,8 @@ license:
 name: bigg.metabolite SSSOM
 original_source:
 - bigg
+product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
 secondary_source:
 - obo-db-ingest
-product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
 layout: product_detail
 ---

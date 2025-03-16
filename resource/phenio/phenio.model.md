@@ -9,9 +9,9 @@ license:
 name: phenio
 original_source:
 - phenio
+product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl
 repository: https://github.com/monarch-initiative/phenio
 secondary_source:
 - phenio
-product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl
 layout: product_detail
 ---

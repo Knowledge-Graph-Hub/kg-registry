@@ -5,8 +5,8 @@ id: petagraph.graph
 name: Petagraph Knowledge Graph (Neo4J)
 original_source:
 - petagraph
+product_url: https://ubkg-downloads.xconsortia.org/
 secondary_source:
 - petagraph
-product_url: https://ubkg-downloads.xconsortia.org/
 layout: product_detail
 ---

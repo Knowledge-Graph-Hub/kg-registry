@@ -28,9 +28,9 @@ products:
   name: hgnc OBO
   original_source:
   - hgnc
+  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo
 - category: Product
   description: hgnc OWL
   format: owl
@@ -41,9 +41,9 @@ products:
   name: hgnc OWL
   original_source:
   - hgnc
+  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl
 - category: Product
   description: hgnc OBO Graph JSON
   format: json
@@ -54,9 +54,9 @@ products:
   name: hgnc OBO Graph JSON
   original_source:
   - hgnc
+  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.json
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.json
 - category: MappingProduct
   description: hgnc SSSOM
   id: obo-db-ingest.hgnc.sssom.tsv
@@ -66,9 +66,9 @@ products:
   name: hgnc SSSOM
   original_source:
   - hgnc
+  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
 - category: Product
   description: hgnc.genegroup OBO
   format: obo
@@ -79,9 +79,9 @@ products:
   name: hgnc.genegroup OBO
   original_source:
   - hgnc
+  product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.obo
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.obo
 - category: Product
   description: hgnc.genegroup OWL
   format: owl
@@ -92,9 +92,9 @@ products:
   name: hgnc.genegroup OWL
   original_source:
   - hgnc
+  product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.owl
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.owl
 - category: Product
   description: hgnc.genegroup OBO Graph JSON
   format: json
@@ -105,9 +105,9 @@ products:
   name: hgnc.genegroup OBO Graph JSON
   original_source:
   - hgnc
+  product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.json
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.json
 - category: Product
   compression: zip
   description: This HGNC OWL file is generated from the data at https://www.genenames.org/.
@@ -123,10 +123,10 @@ products:
   name: SciBite HGNC
   original_source:
   - hgnc
+  product_url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip
   repository: https://github.com/elsevier-health/scibite-ontology
   secondary_source:
   - scibite
-  product_url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip
 repository: https://github.com/HGNC
 ---
 HUGO Gene Nomenclature Committee

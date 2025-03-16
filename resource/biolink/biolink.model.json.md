@@ -9,8 +9,8 @@ id: biolink.model.json
 name: Biolink Model JSON release
 original_source:
 - biolink
+product_url: https://w3id.org/biolink/biolink-model.json
 secondary_source:
 - biolink
-product_url: https://w3id.org/biolink/biolink-model.json
 layout: product_detail
 ---

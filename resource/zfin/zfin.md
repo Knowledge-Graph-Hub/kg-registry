@@ -24,9 +24,9 @@ products:
   name: ZFA
   original_source:
   - zfin
+  product_url: http://purl.obolibrary.org/obo/zfa.owl
   secondary_source:
   - zfin
-  product_url: http://purl.obolibrary.org/obo/zfa.owl
 - category: Product
   description: zfin OBO
   id: obo-db-ingest.zfin.obo
@@ -36,9 +36,9 @@ products:
   name: zfin OBO
   original_source:
   - zfin
+  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
 - category: Product
   description: zfin OWL
   id: obo-db-ingest.zfin.owl
@@ -48,9 +48,9 @@ products:
   name: zfin OWL
   original_source:
   - zfin
+  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
 - category: Product
   description: zfin OBO Graph JSON
   id: obo-db-ingest.zfin.json
@@ -60,9 +60,9 @@ products:
   name: zfin OBO Graph JSON
   original_source:
   - zfin
+  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
 - category: MappingProduct
   description: zfin SSSOM
   id: obo-db-ingest.zfin.sssom.tsv
@@ -72,9 +72,9 @@ products:
   name: zfin SSSOM
   original_source:
   - zfin
+  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
 repository: https://github.com/ZFIN/
 ---
 ZFIN

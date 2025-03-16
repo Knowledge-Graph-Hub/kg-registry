@@ -7,8 +7,8 @@ id: drkg.graph
 name: DRKG graph
 original_source:
 - drkg
+product_url: https://dgl-data.s3-us-west-2.amazonaws.com/dataset/DRKG/drkg.tar.gz
 secondary_source:
 - drkg
-product_url: https://dgl-data.s3-us-west-2.amazonaws.com/dataset/DRKG/drkg.tar.gz
 layout: product_detail
 ---

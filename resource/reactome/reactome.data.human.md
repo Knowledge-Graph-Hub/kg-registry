@@ -5,8 +5,8 @@ id: reactome.data.human
 name: Reactome Human from BioPAX, sqlite
 original_source:
 - reactome
+product_url: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
 secondary_source:
 - reactome
-product_url: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
 layout: product_detail
 ---
