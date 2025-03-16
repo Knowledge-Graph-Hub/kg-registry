@@ -9,6 +9,6 @@ original_source:
 - molecular-data-kp
 secondary_source:
 - molecular-data-kp
-url: https://translator.broadinstitute.org/molecular_data_provider/api
+product_url: https://translator.broadinstitute.org/molecular_data_provider/api
 layout: product_detail
 ---

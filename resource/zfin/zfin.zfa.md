@@ -10,6 +10,6 @@ original_source:
 - zfin
 secondary_source:
 - zfin
-url: http://purl.obolibrary.org/obo/zfa.owl
+product_url: http://purl.obolibrary.org/obo/zfa.owl
 layout: product_detail
 ---

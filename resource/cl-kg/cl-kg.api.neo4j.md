@@ -10,6 +10,6 @@ original_source:
 - cl-kg
 secondary_source:
 - cl-kg
-url: https://cellular-semantics.sanger.ac.uk/browser/
+product_url: https://cellular-semantics.sanger.ac.uk/browser/
 layout: product_detail
 ---

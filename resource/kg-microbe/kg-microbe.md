@@ -27,7 +27,7 @@ products:
   name: KG-Microbe KGX Graph - Raw
   original_source:
   - kg-microbe
-  url: https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz
+  product_url: https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz
 - category: GraphProduct
   compression: targz
   secondary_source:
@@ -39,7 +39,7 @@ products:
   name: KG-Microbe KGX Graph - Core
   original_source:
   - kg-microbe
-  url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   secondary_source:
@@ -50,7 +50,7 @@ products:
   name: KG-Microbe KGX Graph - Biomedical
   original_source:
   - kg-microbe
-  url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 - category: GraphProduct
   compression: targz
   secondary_source:
@@ -61,7 +61,7 @@ products:
   name: KG-Microbe KGX Graph - Function
   original_source:
   - kg-microbe
-  url: https://kghub.io/kg-microbe/KGMicrobe-function-20250222.tar.gz
+  product_url: https://kghub.io/kg-microbe/KGMicrobe-function-20250222.tar.gz
 - category: GraphProduct
   compression: targz
   secondary_source:
@@ -72,7 +72,7 @@ products:
   name: KG-Microbe KGX Graph - Biomedical-Function
   original_source:
   - kg-microbe
-  url: https://kghub.io/kg-microbe/KGMicrobe-biomedical-function-20250222.tar.gz
+  product_url: https://kghub.io/kg-microbe/KGMicrobe-biomedical-function-20250222.tar.gz
 - category: GraphProduct
   compression: targz
   secondary_source:
@@ -83,7 +83,7 @@ products:
   name: KG-Microbe UniProt microbe transform
   original_source:
   - uniprot
-  url: https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
+  product_url: https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
 repository: https://github.com/Knowledge-Graph-Hub/kg-microbe
 ---
 KG-Microbe.

@@ -12,6 +12,6 @@ original_source:
 repository: https://github.com/monarch-initiative/phenio
 secondary_source:
 - phenio
-url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl
+product_url: https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl
 layout: product_detail
 ---

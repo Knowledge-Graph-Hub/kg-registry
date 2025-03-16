@@ -6,6 +6,6 @@ license:
   id: https://creativecommons.org/public-domain/pdm/
   label: public domain
 name: mirbase.mature OBO
-url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.obo
+product_url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.obo
 layout: product_detail
 ---

@@ -15,6 +15,6 @@ original_source:
 repository: https://github.com/Knowledge-Graph-Hub/kg-phenio
 secondary_source:
 - phenio
-url: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
+product_url: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
 layout: product_detail
 ---

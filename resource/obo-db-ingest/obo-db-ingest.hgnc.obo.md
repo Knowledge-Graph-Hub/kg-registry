@@ -11,6 +11,6 @@ original_source:
 - hgnc
 secondary_source:
 - obo-db-ingest
-url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo
+product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo
 layout: product_detail
 ---

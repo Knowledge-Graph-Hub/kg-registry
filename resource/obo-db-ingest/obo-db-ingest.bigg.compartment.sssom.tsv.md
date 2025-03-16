@@ -10,6 +10,6 @@ original_source:
 - bigg
 secondary_source:
 - obo-db-ingest
-url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
+product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
 layout: product_detail
 ---

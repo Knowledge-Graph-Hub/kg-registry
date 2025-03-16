@@ -17,6 +17,6 @@ original_source:
 repository: https://github.com/elsevier-health/scibite-ontology
 secondary_source:
 - scibite
-url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip
+product_url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip
 layout: product_detail
 ---

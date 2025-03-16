@@ -17,7 +17,7 @@ products:
 - id: reactome.data.human
   name: Reactome Human from BioPAX, sqlite
   description: Conversion from BioPAX, human subset
-  url: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
+  product_url: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
   category: Product
   original_source:
   - reactome

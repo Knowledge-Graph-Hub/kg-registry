@@ -10,6 +10,6 @@ original_source:
 - bigg
 secondary_source:
 - obo-db-ingest
-url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.obo
+product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.obo
 layout: product_detail
 ---

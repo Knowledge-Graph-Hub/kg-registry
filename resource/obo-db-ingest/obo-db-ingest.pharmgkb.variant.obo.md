@@ -6,6 +6,6 @@ license:
   id: https://creativecommons.org/licenses/by-sa/4.0/
   label: CC-BY-SA-4.0
 name: pharmgkb.variant OBO
-url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.obo
+product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.obo
 layout: product_detail
 ---

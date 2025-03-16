@@ -9,6 +9,6 @@ original_source:
 - uniprot
 secondary_source:
 - kg-microbe
-url: https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
+product_url: https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
 layout: product_detail
 ---

@@ -6,6 +6,6 @@ license:
   id: https://creativecommons.org/licenses/by-nc/4.0/
   label: CC-BY-NC-4.0
 name: signor OBO
-url: https://w3id.org/biopragmatics/resources/signor/signor.obo
+product_url: https://w3id.org/biopragmatics/resources/signor/signor.obo
 layout: product_detail
 ---

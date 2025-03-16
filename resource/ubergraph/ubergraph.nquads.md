@@ -8,6 +8,6 @@ original_source:
 - ubergraph
 secondary_source:
 - ubergraph
-url: https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz
+product_url: https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz
 layout: product_detail
 ---

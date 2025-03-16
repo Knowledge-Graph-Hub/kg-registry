@@ -6,6 +6,6 @@ license:
   id: https://opendatacommons.org/licenses/odbl/1-0/
   label: ODbL-1.0
 name: ccle OBO
-url: https://w3id.org/biopragmatics/resources/cdle/cdle.obo
+product_url: https://w3id.org/biopragmatics/resources/cdle/cdle.obo
 layout: product_detail
 ---

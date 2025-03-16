@@ -11,6 +11,6 @@ original_source:
 - biolink
 secondary_source:
 - biolink
-url: https://w3id.org/biolink/biolink-model.owl.ttl
+product_url: https://w3id.org/biolink/biolink-model.owl.ttl
 layout: product_detail
 ---

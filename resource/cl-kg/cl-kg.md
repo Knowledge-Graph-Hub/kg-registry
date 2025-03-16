@@ -22,7 +22,7 @@ products:
   name: CL-KG Neo4j graph instance
   description: Publicly available Neo4j instance for CL-KG.
   category: ProgrammingInterface
-  url: https://cellular-semantics.sanger.ac.uk/browser/
+  product_url: https://cellular-semantics.sanger.ac.uk/browser/
   is_public: true
   is_neo4j: true
   connection_url: cl-kg-neo4j-db.cellgeni.sanger.ac.uk:443

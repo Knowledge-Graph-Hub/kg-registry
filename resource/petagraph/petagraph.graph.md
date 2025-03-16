@@ -7,6 +7,6 @@ original_source:
 - petagraph
 secondary_source:
 - petagraph
-url: https://ubkg-downloads.xconsortia.org/
+product_url: https://ubkg-downloads.xconsortia.org/
 layout: product_detail
 ---

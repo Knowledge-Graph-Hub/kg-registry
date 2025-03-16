@@ -21,7 +21,7 @@ products:
 - id: mixs.model
   name: MIxS OWL release
   description: OWL release of mixs
-  url: https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/refs/heads/main/project/owl/mixs.owl.ttl
+  product_url: https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/refs/heads/main/project/owl/mixs.owl.ttl
   category: DataModelProduct
   secondary_source:
   - mixs

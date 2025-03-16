@@ -15,7 +15,7 @@ products:
 - id: gp-kg.graph
   name: GP-KG
   description: GP_KG.txt
-  url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
   category: GraphProduct
   node_count: 61146
   edge_count: 1246726
@@ -26,7 +26,7 @@ products:
 - id: gp-kg.process.kg-predict
   name: KG-Predict
   description: A computational framework for drug repurposing, used with GP-KG
-  url: http://nlp.case.edu/public/data/GPKG-Predict/code/
+  product_url: http://nlp.case.edu/public/data/GPKG-Predict/code/
   category: ProcessProduct
   secondary_source:
   - gp-kg

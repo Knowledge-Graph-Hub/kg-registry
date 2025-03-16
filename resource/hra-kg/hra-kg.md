@@ -18,7 +18,7 @@ products:
 - id: hra-kg.graph.ttl
   name: HRA KG graph data, v2.2, Turtle format
   description: The graph representation of the Human Reference Atlas (HRA) dataset, v2.2, Turtle format
-  url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.ttl
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.ttl
   category: GraphProduct
   secondary_source:
   - hra-kg
@@ -28,7 +28,7 @@ products:
 - id: hra-kg.graph.json
   name: HRA KG graph data, v2.2, JSON-LD format
   description: The graph representation of the Human Reference Atlas (HRA) dataset, v2.2, JSON-LD format
-  url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.json
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.json
   category: GraphProduct
   format: jsonld
   secondary_source:
@@ -38,7 +38,7 @@ products:
 - id: hra-kg.graph.xml
   name: HRA KG graph data, v2.2, RDF/XML format
   description: The graph representation of the Human Reference Atlas (HRA) dataset, v2.2, RDF/XML format
-  url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.xml
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.xml
   category: GraphProduct
   secondary_source:
   - hra-kg
@@ -48,7 +48,7 @@ products:
 - id: hra-kg.graph.nt
   name: HRA KG graph data, v2.2, N-Triples format
   description: The graph representation of the Human Reference Atlas (HRA) dataset, v2.2, N-Triples format
-  url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nt
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nt
   category: GraphProduct
   secondary_source:
   - hra-kg
@@ -58,7 +58,7 @@ products:
 - id: hra-kg.graph.nq
   name: HRA KG graph data, v2.2, N-Quads format
   description: The graph representation of the Human Reference Atlas (HRA) dataset, v2.2, N-Quads format
-  url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nq
+  product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nq
   category: GraphProduct
   secondary_source:
   - hra-kg

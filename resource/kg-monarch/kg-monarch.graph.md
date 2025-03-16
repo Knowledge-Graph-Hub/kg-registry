@@ -8,6 +8,6 @@ original_source:
 - kg-monarch
 secondary_source:
 - kg-monarch
-url: https://kg-hub.berkeleybop.io/kg-monarch/current/kg-monarch.tar.gz
+product_url: https://kg-hub.berkeleybop.io/kg-monarch/current/kg-monarch.tar.gz
 layout: product_detail
 ---

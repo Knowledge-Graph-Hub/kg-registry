@@ -8,6 +8,6 @@ original_source:
 - kg-covid-19
 secondary_source:
 - kg-covid-19
-url: https://kghub.io/kg-covid-19/
+product_url: https://kghub.io/kg-covid-19/
 layout: product_detail
 ---

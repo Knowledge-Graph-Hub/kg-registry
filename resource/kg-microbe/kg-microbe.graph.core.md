@@ -10,6 +10,6 @@ original_source:
 - kg-microbe
 secondary_source:
 - kg-microbe
-url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
+product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 layout: product_detail
 ---

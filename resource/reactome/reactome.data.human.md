@@ -7,6 +7,6 @@ original_source:
 - reactome
 secondary_source:
 - reactome
-url: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
+product_url: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
 layout: product_detail
 ---

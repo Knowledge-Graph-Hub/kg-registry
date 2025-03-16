@@ -8,6 +8,6 @@ original_source:
 - chr
 secondary_source:
 - chr
-url: http://purl.obolibrary.org/obo/chr.owl
+product_url: http://purl.obolibrary.org/obo/chr.owl
 layout: product_detail
 ---

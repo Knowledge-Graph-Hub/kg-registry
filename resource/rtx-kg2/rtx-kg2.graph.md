@@ -8,6 +8,6 @@ original_source:
 - rtx-kg2
 secondary_source:
 - rtx-kg2
-url: https://github.com/ncats/translator-lfs-artifacts/blob/main/files/
+product_url: https://github.com/ncats/translator-lfs-artifacts/blob/main/files/
 layout: product_detail
 ---
