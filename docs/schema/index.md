@@ -28,7 +28,7 @@ Name: kg_registry_schema
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[DataModelProduct](DataModelProduct.html) | A product that is a data model, such as an ontology or schema. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[GraphicalInterface](GraphicalInterface.html) | A product that is a graphical interface to a resource. Similar to the "browsers" field in OBO Foundry. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[GraphProduct](GraphProduct.html) | A product that is a graph, represented as nodes and edges. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources. The sources should be identified in the original_source field. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ProcessProduct](ProcessProduct.html) | A product that is a process or algorithm. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ProgrammingInterface](ProgrammingInterface.html) | A product that is a programming interface (API) to a resource. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Publication](Publication.html) | A publication associated with a resource. Its id should be a DOI (with prefix), but a URL is acceptable if a DOI is not available. |
@@ -59,7 +59,6 @@ Name: kg_registry_schema
 | [creator](creator.html) | The person or organization responsible for creating the knowledge graph |
 | [date_created](date_created.html) | The date the knowledge graph was created |
 | [date_modified](date_modified.html) | The date the knowledge graph was last modified |
-| [derived_from](derived_from.html) | The resource that the product is derived from |
 | [description](description.html) | A description of the resource |
 | [doi](doi.html) | The DOI of the publication |
 | [domain](domain.html) | The domain that the resource is relevant to |
@@ -85,18 +84,21 @@ Name: kg_registry_schema
 | [node_categories](node_categories.html) | The node categories in the graph |
 | [node_count](node_count.html) | The number of nodes in the graph |
 | [orcid](orcid.html) | The ORCID of the individual |
-| [original_source](original_source.html) | The original source of the product |
+| [original_source](original_source.html) | The original source(s) of the product, referred to  by the identifier of each... |
 | [predicates](predicates.html) | The predicate types in the graph |
 | [preferred](preferred.html) | Whether this is the preferred publication for the resource |
+| [produced_by](produced_by.html) | The process(es) that produced the product, referred to by the identifier of e... |
+| [product_url](product_url.html) | The URL of the product |
 | [products](products.html) | The products or representations of the resource |
 | [publications](publications.html) | Publications associated with the resource |
 | [repository](repository.html) | A main version control repository for the resource |
 | [resources](resources.html) | A list of entries in the registry |
+| [secondary_source](secondary_source.html) | The source(s) of the product, other than its original source, referred to by ... |
 | [standard](standard.html) | The name of the standard that the product is compatible with |
 | [tags](tags.html) | Tags associated with the resource |
 | [title](title.html) | The title of the publication |
 | [type](type.html) | The type of usage |
-| [url](url.html) | The URL of the product |
+| [url](url.html) | The URL of a site for the organization |
 | [usages](usages.html) | The usage(s) of the resource |
 | [users](users.html) | The user implementing or working with the resource |
 | [version](version.html) | The version of the resource |

@@ -200,7 +200,6 @@ def concat_resource_yaml(args):
                         # Write the product to its own page
                         with open(fn, "w") as f:
                             f.write("---\n" + yaml.dump(product) + layout_string + "\n---\n")
-                            
 
     def propagate_products(objs):
         """
@@ -215,11 +214,13 @@ def concat_resource_yaml(args):
         for obj in objs:
             if "products" in obj:
                 for product in obj["products"]:
-                    for field_name in ["original_source", "derived_from"]:
-                        if field_name in product and product[field_name] != obj["id"]:
-                            if product[field_name] not in to_be_propagated:
-                                to_be_propagated[product[field_name]] = []
-                            to_be_propagated[product[field_name]].append(deepcopy(product))
+                    for field_name in ["original_source", "secondary_source"]:
+                        if field_name in product:
+                            for resource_id in product[field_name]:
+                                if resource_id != obj["id"]:
+                                    if resource_id not in to_be_propagated:
+                                        to_be_propagated[resource_id] = []
+                                    to_be_propagated[resource_id].append(deepcopy(product))
         print(
             f"Found {len(to_be_propagated)} resources with products to propagate: {', '.join(to_be_propagated.keys())}")
 
@@ -251,7 +252,7 @@ def concat_resource_yaml(args):
                         metadata["products"].append(product)
                     with open(fn, "w") as f:
                         f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
-                
+
                 if total_written > 0:
                     print(f" Wrote {str(total_written)} product(s) to {obj['id']} entry")
                 else:

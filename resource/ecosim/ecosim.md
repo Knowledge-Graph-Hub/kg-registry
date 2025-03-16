@@ -19,8 +19,10 @@ products:
   description: OWL release of ecosim
   category: Product
   format: owl
-  derived_from: ecosim
-  original_source: ecosim
+  secondary_source:
+  - ecosim
+  original_source:
+  - ecosim
 category: Resource
 ---
 

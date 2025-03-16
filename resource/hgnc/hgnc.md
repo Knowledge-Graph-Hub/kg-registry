@@ -19,7 +19,6 @@ license:
 name: HGNC
 products:
 - category: Product
-  derived_from: obo-db-ingest
   description: hgnc OBO
   format: obo
   id: obo-db-ingest.hgnc.obo
@@ -27,10 +26,12 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc OBO
-  original_source: hgnc
-  url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo
+  original_source:
+  - hgnc
+  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo
+  secondary_source:
+  - obo-db-ingest
 - category: Product
-  derived_from: obo-db-ingest
   description: hgnc OWL
   format: owl
   id: obo-db-ingest.hgnc.owl
@@ -38,10 +39,12 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc OWL
-  original_source: hgnc
-  url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl
+  original_source:
+  - hgnc
+  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl
+  secondary_source:
+  - obo-db-ingest
 - category: Product
-  derived_from: obo-db-ingest
   description: hgnc OBO Graph JSON
   format: json
   id: obo-db-ingest.hgnc.json
@@ -49,20 +52,24 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc OBO Graph JSON
-  original_source: hgnc
-  url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.json
+  original_source:
+  - hgnc
+  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.json
+  secondary_source:
+  - obo-db-ingest
 - category: MappingProduct
-  derived_from: obo-db-ingest
   description: hgnc SSSOM
   id: obo-db-ingest.hgnc.sssom.tsv
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc SSSOM
-  original_source: hgnc
-  url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
+  original_source:
+  - hgnc
+  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
-  derived_from: obo-db-ingest
   description: hgnc.genegroup OBO
   format: obo
   id: obo-db-ingest.hgnc.genegroup.obo
@@ -70,10 +77,12 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc.genegroup OBO
-  original_source: hgnc
-  url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.obo
+  original_source:
+  - hgnc
+  product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.obo
+  secondary_source:
+  - obo-db-ingest
 - category: Product
-  derived_from: obo-db-ingest
   description: hgnc.genegroup OWL
   format: owl
   id: obo-db-ingest.hgnc.genegroup.owl
@@ -81,10 +90,12 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc.genegroup OWL
-  original_source: hgnc
-  url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.owl
+  original_source:
+  - hgnc
+  product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.owl
+  secondary_source:
+  - obo-db-ingest
 - category: Product
-  derived_from: obo-db-ingest
   description: hgnc.genegroup OBO Graph JSON
   format: json
   id: obo-db-ingest.hgnc.genegroup.json
@@ -92,11 +103,13 @@ products:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc.genegroup OBO Graph JSON
-  original_source: hgnc
-  url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.json
+  original_source:
+  - hgnc
+  product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.json
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   compression: zip
-  derived_from: scibite
   description: This HGNC OWL file is generated from the data at https://www.genenames.org/.
     It contains all genes in HGNC organised in a shallow hierarchy, classified by
     their locus type and gene group. Gene groups are also derived from HGNC. The ontology
@@ -108,9 +121,12 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: SciBite HGNC
-  original_source: hgnc
+  original_source:
+  - hgnc
+  product_url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip
   repository: https://github.com/elsevier-health/scibite-ontology
-  url: https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip
+  secondary_source:
+  - scibite
 repository: https://github.com/HGNC
 ---
 HUGO Gene Nomenclature Committee

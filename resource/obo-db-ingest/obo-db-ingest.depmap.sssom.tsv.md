@@ -6,6 +6,6 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: depmap SSSOM
-url: https://w3id.org/biopragmatics/resources/depmap/depmap.sssom.tsv
+product_url: https://w3id.org/biopragmatics/resources/depmap/depmap.sssom.tsv
 layout: product_detail
 ---

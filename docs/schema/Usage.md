@@ -183,7 +183,6 @@ attributes:
     description: A URL for a description or example of the usage.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     domain_of:
-    - Product
     - Organization
     - Usage
     range: uriorcurie
@@ -261,7 +260,6 @@ attributes:
     alias: url
     owner: Usage
     domain_of:
-    - Product
     - Organization
     - Usage
     range: uriorcurie

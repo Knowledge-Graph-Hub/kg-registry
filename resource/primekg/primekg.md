@@ -19,10 +19,12 @@ products:
 - id: primekg.graph
   name: PrimeKG Full Dataset
   description: The full PrimeKG dataset containing disease relationships.
-  url: https://dataverse.harvard.edu/api/access/datafile/6180620
+  product_url: https://dataverse.harvard.edu/api/access/datafile/6180620
   category: GraphProduct
-  derived_from: primekg
-  original_source: primekg
+  secondary_source:
+  - primekg
+  original_source:
+  - primekg
 license:
   label: MIT License
   id: https://opensource.org/licenses/MIT

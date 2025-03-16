@@ -17,7 +17,7 @@ products:
   description: Web interface for the DrugCentral Drug Knowledgebase
   id: drugcentral.drugkb
   name: DrugCentral Drug Knowledgebase
-  url: https://go.drugbank.com/drugs
+  product_url: https://go.drugbank.com/drugs
 ---
 
 DrugBank
