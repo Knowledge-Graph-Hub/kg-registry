@@ -227,12 +227,11 @@ classes:
         range: string
       original_source:
         description: >-
-          The original source of the product.
-          This only needs to be the identifier of the resource.
+          The original source(s) of the product, referred to 
+          by the identifier of each resource.
           This may be the parent resource or another resource.
-          Note this is not the same as components of a graph;
-          this should only be used when a single source is known.
         range: Resource
+        multivalued: true
       derived_from:
         description: >-
           The resource that the product is derived from.
