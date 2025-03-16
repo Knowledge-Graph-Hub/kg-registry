@@ -423,13 +423,6 @@
                         "null"
                     ]
                 },
-                "derived_from": {
-                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -479,7 +472,27 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "produced_by": {
+                    "description": "The process(es) that produced the product, referred to by the identifier of each process.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "product_url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
                         "string",
                         "null"
@@ -492,6 +505,16 @@
                         "null"
                     ]
                 },
+                "secondary_source": {
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "tags": {
                     "description": "Tags associated with the product.",
                     "items": {
@@ -499,13 +522,6 @@
                     },
                     "type": [
                         "array",
-                        "null"
-                    ]
-                },
-                "url": {
-                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
-                    "type": [
-                        "string",
                         "null"
                     ]
                 },
@@ -840,13 +856,6 @@
                         "null"
                     ]
                 },
-                "derived_from": {
-                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -920,9 +929,12 @@
                     ]
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
                     "type": [
-                        "string",
+                        "array",
                         "null"
                     ]
                 },
@@ -936,10 +948,37 @@
                         "null"
                     ]
                 },
+                "produced_by": {
+                    "description": "The process(es) that produced the product, referred to by the identifier of each process.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "product_url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "repository": {
                     "description": "A main version control repository for the product.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "secondary_source": {
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -950,13 +989,6 @@
                     },
                     "type": [
                         "array",
-                        "null"
-                    ]
-                },
-                "url": {
-                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
-                    "type": [
-                        "string",
                         "null"
                     ]
                 },
@@ -1013,13 +1045,6 @@
                         "null"
                     ]
                 },
-                "derived_from": {
-                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -1069,7 +1094,27 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "produced_by": {
+                    "description": "The process(es) that produced the product, referred to by the identifier of each process.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "product_url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
                         "string",
                         "null"
@@ -1082,6 +1127,16 @@
                         "null"
                     ]
                 },
+                "secondary_source": {
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "tags": {
                     "description": "Tags associated with the product.",
                     "items": {
@@ -1089,13 +1144,6 @@
                     },
                     "type": [
                         "array",
-                        "null"
-                    ]
-                },
-                "url": {
-                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
-                    "type": [
-                        "string",
                         "null"
                     ]
                 },
@@ -1427,7 +1475,7 @@
         },
         "MappingProduct": {
             "additionalProperties": false,
-            "description": "A product that is a mapping between two or more data sources.",
+            "description": "A product that is a mapping between two or more data sources. The sources should be identified in the original_source field.",
             "properties": {
                 "category": {
                     "description": "The category of the entity. This should be identical to its class name.",
@@ -1457,13 +1505,6 @@
                     },
                     "type": [
                         "array",
-                        "null"
-                    ]
-                },
-                "derived_from": {
-                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
-                    "type": [
-                        "string",
                         "null"
                     ]
                 },
@@ -1516,7 +1557,27 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "produced_by": {
+                    "description": "The process(es) that produced the product, referred to by the identifier of each process.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "product_url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
                         "string",
                         "null"
@@ -1529,6 +1590,16 @@
                         "null"
                     ]
                 },
+                "secondary_source": {
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "tags": {
                     "description": "Tags associated with the product.",
                     "items": {
@@ -1536,13 +1607,6 @@
                     },
                     "type": [
                         "array",
-                        "null"
-                    ]
-                },
-                "url": {
-                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
-                    "type": [
-                        "string",
                         "null"
                     ]
                 },
@@ -1681,13 +1745,6 @@
                         "null"
                     ]
                 },
-                "derived_from": {
-                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -1737,7 +1794,27 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "produced_by": {
+                    "description": "The process(es) that produced the product, referred to by the identifier of each process.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "product_url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
                         "string",
                         "null"
@@ -1750,6 +1827,16 @@
                         "null"
                     ]
                 },
+                "secondary_source": {
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "tags": {
                     "description": "Tags associated with the product.",
                     "items": {
@@ -1757,13 +1844,6 @@
                     },
                     "type": [
                         "array",
-                        "null"
-                    ]
-                },
-                "url": {
-                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
-                    "type": [
-                        "string",
                         "null"
                     ]
                 },
@@ -1820,13 +1900,6 @@
                         "null"
                     ]
                 },
-                "derived_from": {
-                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -1876,7 +1949,27 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "produced_by": {
+                    "description": "The process(es) that produced the product, referred to by the identifier of each process.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "product_url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
                         "string",
                         "null"
@@ -1889,6 +1982,16 @@
                         "null"
                     ]
                 },
+                "secondary_source": {
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "tags": {
                     "description": "Tags associated with the product.",
                     "items": {
@@ -1896,13 +1999,6 @@
                     },
                     "type": [
                         "array",
-                        "null"
-                    ]
-                },
-                "url": {
-                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
-                    "type": [
-                        "string",
                         "null"
                     ]
                 },
@@ -1963,13 +2059,6 @@
                     },
                     "type": [
                         "array",
-                        "null"
-                    ]
-                },
-                "derived_from": {
-                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
-                    "type": [
-                        "string",
                         "null"
                     ]
                 },
@@ -2036,7 +2125,27 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "produced_by": {
+                    "description": "The process(es) that produced the product, referred to by the identifier of each process.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "product_url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
                         "string",
                         "null"
@@ -2049,6 +2158,16 @@
                         "null"
                     ]
                 },
+                "secondary_source": {
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "tags": {
                     "description": "Tags associated with the product.",
                     "items": {
@@ -2056,13 +2175,6 @@
                     },
                     "type": [
                         "array",
-                        "null"
-                    ]
-                },
-                "url": {
-                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
-                    "type": [
-                        "string",
                         "null"
                     ]
                 },
