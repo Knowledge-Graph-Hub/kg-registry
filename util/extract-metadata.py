@@ -214,7 +214,7 @@ def concat_resource_yaml(args):
         for obj in objs:
             if "products" in obj:
                 for product in obj["products"]:
-                    for field_name in ["original_source", "derived_from"]:
+                    for field_name in ["original_source", "secondary_source"]:
                         if field_name in product:
                             for resource_id in product[field_name]:
                                 if resource_id != obj["id"]:
