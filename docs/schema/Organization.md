@@ -149,8 +149,8 @@ attributes:
     name: url
     description: The URL of a site for the organization.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
     domain_of:
-    - Product
     - Organization
     - Usage
     range: uriorcurie
@@ -204,10 +204,10 @@ attributes:
     name: url
     description: The URL of a site for the organization.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    rank: 1000
     alias: url
     owner: Organization
     domain_of:
-    - Product
     - Organization
     - Usage
     range: uriorcurie

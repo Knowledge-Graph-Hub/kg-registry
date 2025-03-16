@@ -1,22 +1,38 @@
 ---
-layout: resource_detail
 activity_status: active
-id: go
-name: Gene Ontology
-description: The Gene Ontology resource, the world’s largest source of information on the functions of genes. This knowledge is both human-readable and machine-readable, and is a foundation for computational analysis of large-scale molecular biology and genetics experiments in biomedical research.
-domain: biological systems
 category: Resource
 contacts:
 - category: Organization
   email: help@geneontology.org
   label: Gene Ontology Helpdesk
+description: "The Gene Ontology resource, the world\u2019s largest source of information\
+  \ on the functions of genes. This knowledge is both human-readable and machine-readable,\
+  \ and is a foundation for computational analysis of large-scale molecular biology\
+  \ and genetics experiments in biomedical research."
+domain: biological systems
 homepage_url: https://geneontology.org/
-repository: https://github.com/geneontology
+id: go
+layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY-4.0
+name: Gene Ontology
+products:
+- category: MappingProduct
+  description: bigg.compartment SSSOM
+  id: obo-db-ingest.bigg.compartment.sssom.tsv
+  license:
+    id: http://bigg.ucsd.edu/license#license
+    label: Custom
+  name: bigg.compartment SSSOM
+  original_source:
+  - bigg
+  - go
+  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
 publications:
-- doi: 10.1038/75556
-  id: doi:10.1038/75556
-  year: "2000"
-  authors:
+- authors:
   - Ashburner M
   - Ball CA
   - Blake JA
@@ -37,12 +53,11 @@ publications:
   - Ringwald M
   - Rubin GM
   - Sherlock G
-  title: >-
-    Gene ontology: tool for the unification of biology
-- doi: 10.1093/genetics/iyad031
-  id: doi:10.1093/genetics/iyad031
-  year: "2023"
-  authors:
+  doi: 10.1038/75556
+  id: doi:10.1038/75556
+  title: 'Gene ontology: tool for the unification of biology'
+  year: '2000'
+- authors:
   - The Gene Ontology Consortium
   - Aleksander SA
   - Balhoff J
@@ -127,7 +142,7 @@ publications:
   - Tutaj MA
   - Vedi M
   - Wang S-J
-  - D’Eustachio PD
+  - "D\u2019Eustachio PD"
   - Aimo L
   - Axelsen K
   - Bridge A
@@ -200,11 +215,10 @@ publications:
   - Ramachandran S
   - Ruzicka L
   - Westerfield M
-  title: >-
-    The Gene Ontology knowledgebase in 2023
-license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC-BY-4.0
+  doi: 10.1093/genetics/iyad031
+  id: doi:10.1093/genetics/iyad031
+  title: The Gene Ontology knowledgebase in 2023
+  year: '2023'
+repository: https://github.com/geneontology
 ---
-
 Gene Ontology

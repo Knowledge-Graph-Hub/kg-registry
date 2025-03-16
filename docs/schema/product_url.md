@@ -5,16 +5,16 @@ mermaid: true
 
 
 
-# Slot: compression
+# Slot: product_url
 
 
-_The type of compression used with the product. If this is not specified, it is assumed to be uncompressed._
+_The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface._
 
 
 
 
 
-URI: [kgr:compression](https://w3id.org/bridge2ai/data-sheets-schema/compression)
+URI: [kgr:product_url](https://w3id.org/bridge2ai/data-sheets-schema/product_url)
 
 
 
@@ -44,7 +44,7 @@ URI: [kgr:compression](https://w3id.org/bridge2ai/data-sheets-schema/compression
 
 ## Properties
 
-* Range: [CompressionEnum](CompressionEnum.html)
+* Range: [Uriorcurie](Uriorcurie.html)
 
 
 
@@ -70,8 +70,8 @@ URI: [kgr:compression](https://w3id.org/bridge2ai/data-sheets-schema/compression
 
 | Mapping Type | Mapped Value |
 | ---  | ---  |
-| self | kgr:compression |
-| native | kgr:compression |
+| self | kgr:product_url |
+| native | kgr:product_url |
 
 
 
@@ -80,16 +80,16 @@ URI: [kgr:compression](https://w3id.org/bridge2ai/data-sheets-schema/compression
 
 <details>
 ```yaml
-name: compression
-description: The type of compression used with the product. If this is not specified,
-  it is assumed to be uncompressed.
+name: product_url
+description: The URL of the product. This may be a link to download a specific file,
+  a base URL to an API, or a link to a graphical interface.
 from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
 rank: 1000
-alias: compression
+alias: product_url
 owner: Product
 domain_of:
 - Product
-range: CompressionEnum
+range: uriorcurie
 
 ```
 </details>

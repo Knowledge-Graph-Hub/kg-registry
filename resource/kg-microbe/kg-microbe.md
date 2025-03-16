@@ -19,8 +19,6 @@ name: KG Microbe
 products:
 - category: GraphProduct
   compression: targz
-  secondary_source:
-  - kg-microbe
   description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
   format: kgx
   id: kg-microbe.graph.raw
@@ -28,10 +26,10 @@ products:
   original_source:
   - kg-microbe
   product_url: https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz
-- category: GraphProduct
-  compression: targz
   secondary_source:
   - kg-microbe
+- category: GraphProduct
+  compression: targz
   description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
     growth preferences.
   format: kgx
@@ -40,10 +38,10 @@ products:
   original_source:
   - kg-microbe
   product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
-- category: GraphProduct
-  compression: targz
   secondary_source:
   - kg-microbe
+- category: GraphProduct
+  compression: targz
   description: Core plus human biomedical data (ontologies, CTD, Wallen et al)
   format: kgx
   id: kg-microbe.graph.biomedical
@@ -51,10 +49,10 @@ products:
   original_source:
   - kg-microbe
   product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
-- category: GraphProduct
-  compression: targz
   secondary_source:
   - kg-microbe
+- category: GraphProduct
+  compression: targz
   description: Core plus Uniprot genome annotations
   format: kgx
   id: kg-microbe.graph.function
@@ -62,10 +60,10 @@ products:
   original_source:
   - kg-microbe
   product_url: https://kghub.io/kg-microbe/KGMicrobe-function-20250222.tar.gz
-- category: GraphProduct
-  compression: targz
   secondary_source:
   - kg-microbe
+- category: GraphProduct
+  compression: targz
   description: Biomedical plus Uniprot genome annotations
   format: kgx
   id: kg-microbe.graph.biomedical-function
@@ -73,10 +71,10 @@ products:
   original_source:
   - kg-microbe
   product_url: https://kghub.io/kg-microbe/KGMicrobe-biomedical-function-20250222.tar.gz
-- category: GraphProduct
-  compression: targz
   secondary_source:
   - kg-microbe
+- category: GraphProduct
+  compression: targz
   description: UniProt proteins from microbes, as graph nodes and edges
   format: kgx
   id: kg-microbe.graph.uniprot
@@ -84,6 +82,8 @@ products:
   original_source:
   - uniprot
   product_url: https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
+  secondary_source:
+  - kg-microbe
 repository: https://github.com/Knowledge-Graph-Hub/kg-microbe
 ---
 KG-Microbe.

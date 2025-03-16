@@ -18,8 +18,6 @@ license:
 name: Automat
 products:
 - category: GraphProduct
-  secondary_source:
-  - automat
   description: Robokop KG (Automat)
   format: kgx-jsonl
   id: automat.robokopkg
@@ -27,9 +25,9 @@ products:
   original_source:
   - robokop
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files
-- category: GraphProduct
   secondary_source:
   - automat
+- category: GraphProduct
   description: Robokop Plus
   format: kgx-jsonl
   id: automat.robokopplus
@@ -37,9 +35,9 @@ products:
   original_source:
   - robokop
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files
-- category: GraphProduct
   secondary_source:
   - automat
+- category: GraphProduct
   description: Biolink Automat
   format: kgx-jsonl
   id: automat.biolink
@@ -47,9 +45,9 @@ products:
   original_source:
   - biolink
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
-- category: GraphProduct
   secondary_source:
   - automat
+- category: GraphProduct
   description: CTD Automat
   format: kgx-jsonl
   id: automat.ctd
@@ -58,9 +56,9 @@ products:
   original_source:
   - ctd
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files
-- category: GraphProduct
   secondary_source:
   - automat
+- category: GraphProduct
   description: DrugCentral Automat
   format: kgx-jsonl
   id: automat.drugcentral
@@ -69,6 +67,8 @@ products:
   original_source:
   - drugcentral
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
+  secondary_source:
+  - automat
 - category: GraphProduct
   description: GTEx Automat
   format: kgx-jsonl
@@ -157,8 +157,6 @@ products:
   name: ubergraph_automat
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files
 - category: GraphProduct
-  secondary_source:
-  - automat
   description: DrugCentral Automat
   format: kgx-jsonl
   id: automat.drugcentral
@@ -167,6 +165,8 @@ products:
   original_source:
   - drugcentral
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
+  secondary_source:
+  - automat
 repository: https://github.com/RobokopU24/
 ---
 A Translator Knowledge Provider offering multiple sub-graphs in KGX format.
