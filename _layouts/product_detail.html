@@ -43,14 +43,26 @@ layout: default
   </div>
     <div class="card bg-light mb-3" style="max-width: 12rem;">
         <div class="card-body">
-          <h5 class="card-title">Provided By</h5>
-            <p class="card-text"><a href="/kg-registry/resource/{{page.derived_from}}/{{page.derived_from}}.html">{{page.derived_from}}</a></p>
+          <h5 class="card-title">Secondary Source(s)</h5>
+            {% if page.secondary_source %}
+              {% for source in page.secondary_source %}
+                <p class="card-text"><a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a></p>
+              {% endfor %}
+            {% else %}
+              <p class="card-text" style="font-weight: bold;">None</p>
+            {% endif %}
           </div>
     </div>
     <div class="card bg-light mb-3" style="max-width: 12rem;">
       <div class="card-body">
-        <h5 class="card-title">Original Source</h5>
-          <p class="card-text"><a href="/kg-registry/resource/{{page.original_source}}/{{page.original_source}}.html">{{page.original_source}}</a></p>
+        <h5 class="card-title">Original Source(s)</h5>
+        {% if page.original_source %}
+          {% for source in page.original_source %}
+            <p class="card-text"><a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a></p>
+          {% endfor %}
+        {% else %}
+          <p class="card-text" style="font-weight: bold;">None</p>
+        {% endif %}
         </div>
   </div>
       <div class="card bg-light mb-3" style="max-width: 12rem;">
@@ -65,11 +77,11 @@ layout: default
       </div>
     </div>
 
-  {% if page.derived_from and page.original_source %}
+  {% if page.secondary_source and page.original_source %}
   <div class="card bg-light mb-3" style="max-width: 48rem;">
       <div class="card-body">
         <h5 class="card-title">Provenance</h5>
-          {% if page.derived_from == page.original_source %}
+          {% if page.secondary_source == page.original_source %}
           <pre><code class="language-mermaid" style="display: flex; justify-content: center"> 
             block-beta
             columns 1
@@ -85,7 +97,7 @@ layout: default
             block-beta
             columns 1
             DataSource("{{page.original_source}}") space:1
-            Aggregator("{{page.derived_from}}") space:1
+            Aggregator("{{page.secondary_source}}") space:1
             Product("{{page.id}}")
             DataSource  --> Aggregator
             Aggregator  --> Product  
