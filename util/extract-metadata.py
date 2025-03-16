@@ -217,8 +217,8 @@ def concat_resource_yaml(args):
                     for field_name in ["original_source", "derived_from"]:
                         if field_name in product:
                             for resource_id in product[field_name]:
-                                if product[field_name] != obj["id"]:
-                                    if product[field_name] not in to_be_propagated:
+                                if resource_id != obj["id"]:
+                                    if resource_id not in to_be_propagated:
                                         to_be_propagated[resource_id] = []
                                     to_be_propagated[resource_id].append(deepcopy(product))
         print(
