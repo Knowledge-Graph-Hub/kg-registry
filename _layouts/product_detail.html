@@ -87,11 +87,32 @@ layout: default
       </div>
     </div>
 
+<!-- This diagram should probably reference the full registry,
+because some details may not be available from the current
+product (e.g., there may be multiple sources and they
+may be processed differently).
+The current diagram is rather hacky.
+TODO: restructure accordingly. -->
   {% if page.secondary_source and page.original_source %}
   <div class="card bg-light mb-3" style="max-width: 60rem;">
       <div class="card-body">
         <h5 class="card-title">Provenance</h5>
-          {% if page.secondary_source == page.original_source %}
+        {% if page.original_source.size > 1 %}
+          <pre><code class="language-mermaid" style="display: flex; justify-content: center"> 
+            block-beta
+            columns 3
+            DataSourceA("{{page.original_source[0]}}") space:1
+            DataSourceB("{{page.original_source[1]}}") space:1
+            Aggregator("{{page.secondary_source}}") space:2
+            Product("{{page.id}}")
+            DataSourceA  --> Aggregator
+            DataSourceB  --> Aggregator
+            Aggregator  --> Product  
+          
+            style Product stroke:#5588bb,stroke-width:5px;
+                
+          </code></pre>
+          {% elsif page.secondary_source == page.original_source %}
           <pre><code class="language-mermaid" style="display: flex; justify-content: center"> 
             block-beta
             columns 1
