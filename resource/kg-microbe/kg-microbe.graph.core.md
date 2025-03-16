@@ -8,8 +8,8 @@ id: kg-microbe.graph.core
 name: KG-Microbe KGX Graph - Core
 original_source:
 - kg-microbe
+product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 secondary_source:
 - kg-microbe
-product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 layout: product_detail
 ---

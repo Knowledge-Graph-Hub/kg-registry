@@ -8,8 +8,8 @@ license:
 name: zfin SSSOM
 original_source:
 - zfin
+product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
 secondary_source:
 - obo-db-ingest
-product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
 layout: product_detail
 ---

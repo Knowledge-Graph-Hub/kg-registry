@@ -8,8 +8,8 @@ license:
 name: hgnc SSSOM
 original_source:
 - hgnc
+product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
 secondary_source:
 - obo-db-ingest
-product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
 layout: product_detail
 ---

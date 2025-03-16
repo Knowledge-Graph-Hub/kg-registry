@@ -8,8 +8,8 @@ is_public: true
 name: CL-KG Neo4j graph instance
 original_source:
 - cl-kg
+product_url: https://cellular-semantics.sanger.ac.uk/browser/
 secondary_source:
 - cl-kg
-product_url: https://cellular-semantics.sanger.ac.uk/browser/
 layout: product_detail
 ---

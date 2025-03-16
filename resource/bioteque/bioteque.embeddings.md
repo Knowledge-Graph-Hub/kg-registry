@@ -5,8 +5,8 @@ id: bioteque.embeddings
 name: Bioteque Embeddings
 original_source:
 - bioteque
+product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
 secondary_source:
 - bioteque
-product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
 layout: product_detail
 ---

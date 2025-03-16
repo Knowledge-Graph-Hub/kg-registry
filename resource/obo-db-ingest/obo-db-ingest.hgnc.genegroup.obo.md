@@ -9,8 +9,8 @@ license:
 name: hgnc.genegroup OBO
 original_source:
 - hgnc
+product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.obo
 secondary_source:
 - obo-db-ingest
-product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.obo
 layout: product_detail
 ---

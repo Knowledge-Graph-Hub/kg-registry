@@ -8,8 +8,8 @@ license:
 name: zfin OBO Graph JSON
 original_source:
 - zfin
+product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
 secondary_source:
 - obo-db-ingest
-product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
 layout: product_detail
 ---

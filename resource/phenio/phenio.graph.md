@@ -12,9 +12,9 @@ license:
 name: KG-Phenio
 original_source:
 - phenio
+product_url: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
 repository: https://github.com/Knowledge-Graph-Hub/kg-phenio
 secondary_source:
 - phenio
-product_url: https://kg-hub.berkeleybop.io/kg-phenio/20241203/kg-phenio.tar.gz
 layout: product_detail
 ---

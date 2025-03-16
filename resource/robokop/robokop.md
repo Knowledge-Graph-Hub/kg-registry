@@ -24,9 +24,9 @@ products:
   name: ROBOKOP Knowledge Graph (KG)
   original_source:
   - robokop
+  product_url: http://robokopkg.renci.org
   secondary_source:
   - robokop
-  product_url: http://robokopkg.renci.org
 - category: GraphProduct
   description: Robokop KG (Automat)
   format: kgx-jsonl
@@ -34,9 +34,9 @@ products:
   name: robokopkg
   original_source:
   - robokop
+  product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files
   secondary_source:
   - automat
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files
 - category: GraphProduct
   description: Robokop Plus
   format: kgx-jsonl
@@ -44,9 +44,9 @@ products:
   name: robokopplus
   original_source:
   - robokop
+  product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files
   secondary_source:
   - automat
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files
 repository: https://github.com/NCATS-Gamma/robokop
 ---
 ### ROBOKOP: A Knowledge Graph System for Biomedical Question Answering

@@ -6,8 +6,8 @@ id: robokop.graph
 name: ROBOKOP Knowledge Graph (KG)
 original_source:
 - robokop
+product_url: http://robokopkg.renci.org
 secondary_source:
 - robokop
-product_url: http://robokopkg.renci.org
 layout: product_detail
 ---

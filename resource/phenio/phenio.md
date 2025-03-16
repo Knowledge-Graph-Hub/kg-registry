@@ -50,11 +50,11 @@ usages:
 - id: cross-species-inference
   label: PHENIO is used by the Monarch Initiative for cross-species inference
   description: PHENIO is used by the Monarch Initiative for cross-species inference. As an example, the disease of Parkinsonism may compared on the basis of its phenotype in humans vs. mouse genes and genotypes known to impact these phenotypes.
-  product_url: https://monarchinitiative.org/HP:0001300#disease
+  url: https://monarchinitiative.org/HP:0001300#disease
   users:
   - category: Organization
     label: The Monarch Initiative
-    product_url: https://monarchinitiative.org/
+    url: https://monarchinitiative.org/
   publications:
   - preferred: true
     title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species"

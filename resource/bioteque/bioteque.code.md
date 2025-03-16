@@ -9,8 +9,8 @@ license:
 name: Bioteque code
 original_source:
 - bioteque
+product_url: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
 secondary_source:
 - bioteque
-product_url: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
 layout: product_detail
 ---

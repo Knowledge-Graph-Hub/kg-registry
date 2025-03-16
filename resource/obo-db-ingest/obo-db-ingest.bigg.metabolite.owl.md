@@ -8,8 +8,8 @@ license:
 name: bigg.metabolite OWL
 original_source:
 - bigg
+product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.owl
 secondary_source:
 - obo-db-ingest
-product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.owl
 layout: product_detail
 ---

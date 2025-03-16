@@ -8,8 +8,8 @@ license:
 name: bigg.model OWL
 original_source:
 - bigg
+product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.owl
 secondary_source:
 - obo-db-ingest
-product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.owl
 layout: product_detail
 ---

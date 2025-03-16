@@ -23,9 +23,9 @@ products:
   name: bigg.compartment OBO
   original_source:
   - bigg
+  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.obo
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.obo
 - category: Product
   description: bigg.compartment OWL
   id: obo-db-ingest.bigg.compartment.owl
@@ -35,9 +35,9 @@ products:
   name: bigg.compartment OWL
   original_source:
   - bigg
+  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.owl
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.owl
 - category: Product
   description: bigg.compartment OBO Graph JSON
   id: obo-db-ingest.bigg.compartment.json
@@ -47,9 +47,9 @@ products:
   name: bigg.compartment OBO Graph JSON
   original_source:
   - bigg
+  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.json
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.json
 - category: MappingProduct
   description: bigg.compartment SSSOM
   id: obo-db-ingest.bigg.compartment.sssom.tsv
@@ -59,9 +59,9 @@ products:
   name: bigg.compartment SSSOM
   original_source:
   - bigg
+  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
 - category: Product
   description: bigg.metabolite OBO
   id: obo-db-ingest.bigg.metabolite.obo
@@ -71,9 +71,9 @@ products:
   name: bigg.metabolite OBO
   original_source:
   - bigg
+  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.obo
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.obo
 - category: Product
   description: bigg.metabolite OWL
   id: obo-db-ingest.bigg.metabolite.owl
@@ -83,9 +83,9 @@ products:
   name: bigg.metabolite OWL
   original_source:
   - bigg
+  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.owl
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.owl
 - category: Product
   description: bigg.metabolite OBO Graph JSON
   id: obo-db-ingest.bigg.metabolite.json
@@ -95,9 +95,9 @@ products:
   name: bigg.metabolite OBO Graph JSON
   original_source:
   - bigg
+  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.json
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.json
 - category: MappingProduct
   description: bigg.metabolite SSSOM
   id: obo-db-ingest.bigg.metabolite.sssom.tsv
@@ -107,9 +107,9 @@ products:
   name: bigg.metabolite SSSOM
   original_source:
   - bigg
+  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
 - category: Product
   description: bigg.model OBO
   id: obo-db-ingest.bigg.model.obo
@@ -119,9 +119,9 @@ products:
   name: bigg.model OBO
   original_source:
   - bigg
+  product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.obo
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.obo
 - category: Product
   description: bigg.model OWL
   id: obo-db-ingest.bigg.model.owl
@@ -131,9 +131,9 @@ products:
   name: bigg.model OWL
   original_source:
   - bigg
+  product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.owl
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.owl
 - category: Product
   description: bigg.model OBO Graph JSON
   id: obo-db-ingest.bigg.model.json
@@ -143,9 +143,9 @@ products:
   name: bigg.model OBO Graph JSON
   original_source:
   - bigg
+  product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.json
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.json
 - category: Product
   description: bigg.reaction OBO
   id: obo-db-ingest.bigg.reaction.obo
@@ -155,9 +155,9 @@ products:
   name: bigg.reaction OBO
   original_source:
   - bigg
+  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.obo
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.obo
 - category: Product
   description: bigg.reaction OWL
   id: obo-db-ingest.bigg.reaction.owl
@@ -167,9 +167,9 @@ products:
   name: bigg.reaction OWL
   original_source:
   - bigg
+  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.owl
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.owl
 - category: Product
   description: bigg.reaction OBO Graph JSON
   id: obo-db-ingest.bigg.reaction.json
@@ -179,9 +179,9 @@ products:
   name: bigg.reaction OBO Graph JSON
   original_source:
   - bigg
+  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.json
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.json
 - category: MappingProduct
   description: bigg.reaction SSSOM
   id: obo-db-ingest.bigg.reaction.sssom.tsv
@@ -191,9 +191,9 @@ products:
   name: bigg.reaction SSSOM
   original_source:
   - bigg
+  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.sssom.tsv
   secondary_source:
   - obo-db-ingest
-  product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.sssom.tsv
 publications:
 - authors:
   - King ZA

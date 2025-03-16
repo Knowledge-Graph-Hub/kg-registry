@@ -7,8 +7,8 @@ id: kg-microbe.graph.raw
 name: KG-Microbe KGX Graph - Raw
 original_source:
 - kg-microbe
+product_url: https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz
 secondary_source:
 - kg-microbe
-product_url: https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz
 layout: product_detail
 ---

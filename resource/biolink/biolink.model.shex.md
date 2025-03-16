@@ -9,8 +9,8 @@ id: biolink.model.shex
 name: Biolink Model ShEx release
 original_source:
 - biolink
+product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
 secondary_source:
 - biolink
-product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
 layout: product_detail
 ---
