@@ -327,6 +327,7 @@ classes:
   MappingProduct:
     description: >-
       A product that is a mapping between two or more data sources.
+      The sources should be identified in the original_source field.
     is_a: Product
 
   ProcessProduct:
