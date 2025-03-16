@@ -245,6 +245,12 @@ classes:
           to download a specific file, a base URL to an API,
           or a link to a graphical interface.
         range: uriorcurie
+      produced_by:
+        description: >-
+          The process(es) that produced the product,
+          referred to by the identifier of each process.
+        range: ProcessProduct
+        multivalued: true
       repository:
         description: >-
           A main version control repository for the product.
