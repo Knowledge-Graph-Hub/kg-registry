@@ -239,7 +239,7 @@ classes:
           This may be an Aggregator or another resource.
         range: Resource
         multivalued: true
-      url:
+      product_url:
         description: >-
           The URL of the product. This may be a link
           to download a specific file, a base URL to an API,
