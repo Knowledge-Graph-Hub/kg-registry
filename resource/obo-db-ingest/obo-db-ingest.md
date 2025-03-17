@@ -1600,36 +1600,61 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.sssom.tsv
 - category: Product
   description: rhea OBO
+  format: obo
   id: obo-db-ingest.rhea.obo
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: rhea OBO
+  original_source:
+  - rhea
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.obo
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: rhea OWL
+  format: owl
   id: obo-db-ingest.rhea.owl
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: rhea OWL
+  original_source:
+  - rhea
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.owl
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: rhea OBO Graph JSON
+  format: json
   id: obo-db-ingest.rhea.json
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: rhea OBO Graph JSON
+  original_source:
+  - rhea
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.json
+  secondary_source:
+  - obo-db-ingest
 - category: MappingProduct
-  description: rhea SSSOM
+  description: Rhea SSSOM
+  format: sssom
   id: obo-db-ingest.rhea.sssom.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
-  name: rhea SSSOM
+  name: Rhea SSSOM
+  original_source:
+  - rhea
+  - reactome
+  - kegg
+  - metacyc
+  - m-csa
+  - ecocyc
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: ror OBO
   id: obo-db-ingest.ror.obo

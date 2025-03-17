@@ -15,6 +15,7 @@ drkg,active,PASS
 drugbank,active,PASS
 drugcentral,active,PASS
 eco-kg,active,PASS
+ecocyc,active,PASS
 ecosim,active,PASS
 genetics-kp,active,PASS
 go,active,PASS
@@ -25,12 +26,15 @@ hgnc,active,PASS
 hra-kg,active,PASS
 icees-kg,active,PASS
 interpro,active,PASS
+kegg,active,PASS
 kg-covid-19,active,PASS
 kg-enp,active,PASS
 kg-idg,active,PASS
 kg-microbe,active,PASS
 kg-monarch,active,PASS
 kgcl,active,PASS
+m-csa,active,PASS
+metacyc,active,PASS
 mixs,active,PASS
 molecular-data-kp,active,PASS
 multiomics-kp,active,PASS
