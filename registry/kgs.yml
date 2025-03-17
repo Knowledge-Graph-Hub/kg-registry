@@ -3860,6 +3860,51 @@ resources:
   name: ORCID
   repository: https://github.com/ORCID
 - activity_status: active
+  category: DataResource
+  contacts:
+  - category: Organization
+    email: help@pankbase.org
+    label: PanKBase
+  description: PanKbase is a comprehensive, centralized resource for the study of
+    the human pancreas and diabetes. The PanKbase collective aims to integrate diverse
+    type 1 diabetes (T1D) datasets with expert-curated knowledge in a centralized,
+    open-source data hub.
+  domain: health
+  homepage_url: https://pankbase.org/
+  id: pankbase
+  layout: resource_detail
+  name: PanKBase
+  products:
+  - category: GraphicalInterface
+    description: Graphical interface for exploring the PanKGraph
+    id: pankbase.graph.site
+    name: PanKGraph Site
+    original_source:
+    - pankbase
+    product_url: https://pankgraph.org/
+    secondary_source:
+    - pankbase
+  - category: ProgrammingInterface
+    description: Programming interface for exploring the PanKGraph
+    id: pankbase.graph.api
+    name: PanKGraph API
+    original_source:
+    - pankbase
+    product_url: https://pankgraph.org/api
+    secondary_source:
+    - pankbase
+  - category: ProgrammingInterface
+    description: Programming interface for accessing contents of the PanKbase Data
+      Portal
+    id: pankbase.api
+    name: PanKBase Data Library API
+    original_source:
+    - pankbase
+    product_url: https://pankbase-db.github.io/pankbase-client-openapi-spec/
+    secondary_source:
+    - pankbase
+  repository: https://github.com/PanKbase-DB
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual

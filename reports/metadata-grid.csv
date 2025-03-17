@@ -39,6 +39,7 @@ np-kg,active,PASS
 obo-db-ingest,active,PASS
 ontology-kp,active,PASS
 orcid,active,PASS
+pankbase,active,PASS
 petagraph,active,PASS
 pheknowlator,active,PASS
 phenio,active,PASS
