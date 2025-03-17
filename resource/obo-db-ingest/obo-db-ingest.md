@@ -1606,6 +1606,11 @@ products:
     label: CC-BY-4.0
   name: rhea OBO
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.obo
+  format: obo
+  original_source:
+  - rhea
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: rhea OWL
   id: obo-db-ingest.rhea.owl
@@ -1614,6 +1619,11 @@ products:
     label: CC-BY-4.0
   name: rhea OWL
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.owl
+  format: owl
+  original_source:
+  - rhea
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: rhea OBO Graph JSON
   id: obo-db-ingest.rhea.json
@@ -1622,14 +1632,29 @@ products:
     label: CC-BY-4.0
   name: rhea OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.json
+  format: json
+  original_source:
+  - rhea
+  secondary_source:
+  - obo-db-ingest
 - category: MappingProduct
-  description: rhea SSSOM
+  description: Rhea SSSOM
   id: obo-db-ingest.rhea.sssom.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
-  name: rhea SSSOM
+  name: Rhea SSSOM
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv
+  format: sssom
+  original_source:
+  - rhea
+  - reactome
+  - kegg
+  - metacyc
+  - m-csa
+  - ecocyc
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: ror OBO
   id: obo-db-ingest.ror.obo
