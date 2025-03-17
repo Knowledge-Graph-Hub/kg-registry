@@ -1600,52 +1600,51 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/rgd/rgd.sssom.tsv
 - category: Product
   description: rhea OBO
+  format: obo
   id: obo-db-ingest.rhea.obo
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: rhea OBO
-  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.obo
-  format: obo
   original_source:
   - rhea
+  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.obo
   secondary_source:
   - obo-db-ingest
 - category: Product
   description: rhea OWL
+  format: owl
   id: obo-db-ingest.rhea.owl
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: rhea OWL
-  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.owl
-  format: owl
   original_source:
   - rhea
+  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.owl
   secondary_source:
   - obo-db-ingest
 - category: Product
   description: rhea OBO Graph JSON
+  format: json
   id: obo-db-ingest.rhea.json
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: rhea OBO Graph JSON
-  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.json
-  format: json
   original_source:
   - rhea
+  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.json
   secondary_source:
   - obo-db-ingest
 - category: MappingProduct
   description: Rhea SSSOM
+  format: sssom
   id: obo-db-ingest.rhea.sssom.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: Rhea SSSOM
-  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv
-  format: sssom
   original_source:
   - rhea
   - reactome
@@ -1653,6 +1652,7 @@ products:
   - metacyc
   - m-csa
   - ecocyc
+  product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv
   secondary_source:
   - obo-db-ingest
 - category: Product
