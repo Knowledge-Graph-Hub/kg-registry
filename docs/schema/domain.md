@@ -28,11 +28,11 @@ URI: [kgr:domain](https://w3id.org/bridge2ai/data-sheets-schema/domain)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |  no  |
-| [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
-| [DataModel](DataModel.html) | A data model, such as an ontology or schema |  no  |
 | [DataSource](DataSource.html) | A data source |  no  |
+| [KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |  no  |
 | [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
+| [DataModel](DataModel.html) | A data model, such as an ontology or schema |  no  |
+| [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
 
 
 
