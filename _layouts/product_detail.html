@@ -9,96 +9,96 @@ layout: default
     {% endif %} {{ page.id }}
   </h1>
   {% if page.category %}
-    {% if page.category == "GraphProduct" %}
-      <p>is a <strong><em>Graph.</em></strong></p>
-    {% elsif page.category == "Product" %}
-      <p>is a general purpose <strong><em>Product.</em></strong></p>
-    {% elsif page.category == "MappingProduct" %}
-      <p>is a <strong><em>Mapping.</em></strong></p>
-    {% elsif page.category == "ProcessProduct" %}
-      <p>is a <strong><em>Process.</em></strong></p>
-    {% elsif page.category == "DataModelProduct" %}
-      <p>is a <strong><em>Data Model or Ontology.</em></strong></p>
-    {% elsif page.category == "GraphicalInterface" %}
-      <p>is a <strong><em>Graphical Interface</em> for a product or resource.</strong></p>
-    {% elsif page.category == "ProgrammingInterface" %}
-      <p>is a <strong><em>Programming Interface</em> for a product or resource.</strong></p>
-    {% endif %}
+  {% if page.category == "GraphProduct" %}
+  <p>is a <strong><em>Graph.</em></strong></p>
+  {% elsif page.category == "Product" %}
+  <p>is a general purpose <strong><em>Product.</em></strong></p>
+  {% elsif page.category == "MappingProduct" %}
+  <p>is a <strong><em>Mapping.</em></strong></p>
+  {% elsif page.category == "ProcessProduct" %}
+  <p>is a <strong><em>Process.</em></strong></p>
+  {% elsif page.category == "DataModelProduct" %}
+  <p>is a <strong><em>Data Model or Ontology.</em></strong></p>
+  {% elsif page.category == "GraphicalInterface" %}
+  <p>is a <strong><em>Graphical Interface</em> for a product or resource.</strong></p>
+  {% elsif page.category == "ProgrammingInterface" %}
+  <p>is a <strong><em>Programming Interface</em> for a product or resource.</strong></p>
+  {% endif %}
   {% endif %}
   <p>{{page.description}}</p>
 </div>
 
 <div class="col">
-<div class="row">
-  <div class="row header-card-row">
-    <div class="card bg-light mb-3" style="max-width: 12rem;">
-      <div class="card-body">
-        <h5 class="card-title">URL</h5>
-        {% if page.product_url %}
+  <div class="row">
+    <div class="row header-card-row">
+      <div class="card bg-light mb-3" style="max-width: 12rem;">
+        <div class="card-body">
+          <h5 class="card-title">URL</h5>
+          {% if page.product_url %}
           <p class="card-text"><a href="{{page.product_url}}">{{page.product_url | split: '/' | last}}</a></p>
-        {% else %}
+          {% else %}
           <p class="card-text" style="font-weight: bold;">Unknown</p>
-        {% endif %}
+          {% endif %}
         </div>
-  </div>
-  <div class="card bg-light mb-3" style="max-width: 12rem;">
-    <div class="card-body">
-      <h5 class="card-title">Format</h5>
-      {% if page.format %}
-        <p class="card-text">{{page.format}}</p>
-      {% else %}
-        <p class="card-text" style="font-weight: bold;">Unknown</p>
-      {% endif %}
       </div>
-    </div>
-    <div class="card bg-light mb-3" style="max-width: 12rem;">
+      <div class="card bg-light mb-3" style="max-width: 12rem;">
+        <div class="card-body">
+          <h5 class="card-title">Format</h5>
+          {% if page.format %}
+          <p class="card-text">{{page.format}}</p>
+          {% else %}
+          <p class="card-text" style="font-weight: bold;">Unknown</p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="card bg-light mb-3" style="max-width: 12rem;">
         <div class="card-body">
           <h5 class="card-title">Secondary Source(s)</h5>
-            {% if page.secondary_source %}
-              {% for source in page.secondary_source %}
-                <p class="card-text"><a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a></p>
-              {% endfor %}
-            {% else %}
-              <p class="card-text" style="font-weight: bold;">None</p>
-            {% endif %}
-          </div>
-    </div>
-    <div class="card bg-light mb-3" style="max-width: 12rem;">
-      <div class="card-body">
-        <h5 class="card-title">Original Source(s)</h5>
-        {% if page.original_source %}
-          {% for source in page.original_source %}
-            <p class="card-text"><a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a></p>
+          {% if page.secondary_source %}
+          {% for source in page.secondary_source %}
+          <p class="card-text"><a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a></p>
           {% endfor %}
-        {% else %}
+          {% else %}
           <p class="card-text" style="font-weight: bold;">None</p>
-        {% endif %}
+          {% endif %}
         </div>
-  </div>
+      </div>
       <div class="card bg-light mb-3" style="max-width: 12rem;">
-          <div class="card-body">
-            <h5 class="card-title">License</h5>
-            {% if page.license %}
-              <p class="card-text"><a href="{{page.license.id}}">{{page.license.label}}</a></p>
-            {% else %}
-              <p class="card-text" style="color: red; font-weight: bold;">Warning: No license entered</p>
-            {% endif %}
-            </div>
+        <div class="card-body">
+          <h5 class="card-title">Original Source(s)</h5>
+          {% if page.original_source %}
+          {% for source in page.original_source %}
+          <p class="card-text"><a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a></p>
+          {% endfor %}
+          {% else %}
+          <p class="card-text" style="font-weight: bold;">None</p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="card bg-light mb-3" style="max-width: 12rem;">
+        <div class="card-body">
+          <h5 class="card-title">License</h5>
+          {% if page.license %}
+          <p class="card-text"><a href="{{page.license.id}}">{{page.license.label}}</a></p>
+          {% else %}
+          <p class="card-text" style="color: red; font-weight: bold;">Warning: No license entered</p>
+          {% endif %}
+        </div>
       </div>
     </div>
 
-<!-- This diagram should probably reference the full registry,
+    <!-- This diagram should probably reference the full registry,
 because some details may not be available from the current
 product (e.g., there may be multiple sources and they
 may be processed differently).
 The current diagram is rather hacky.
 TODO: restructure accordingly. -->
-  {% if page.secondary_source and page.original_source %}
-  <div class="card bg-light mb-3" style="max-width: 60rem;">
+    {% if page.secondary_source and page.original_source %}
+    <div class="card bg-light mb-3" style="max-width: 60rem;">
       <div class="card-body">
         <h5 class="card-title">Provenance</h5>
         {% if page.original_source.size > 1 %}
-          <pre><code class="language-mermaid" style="display: flex; justify-content: center"> 
+        <pre><code class="language-mermaid" style="display: flex; justify-content: center"> 
             block-beta
             columns 3
             DataSourceA("{{page.original_source[0]}}") space:1
@@ -112,8 +112,8 @@ TODO: restructure accordingly. -->
             style Product stroke:#5588bb,stroke-width:5px;
                 
           </code></pre>
-          {% elsif page.secondary_source == page.original_source %}
-          <pre><code class="language-mermaid" style="display: flex; justify-content: center"> 
+        {% elsif page.secondary_source == page.original_source %}
+        <pre><code class="language-mermaid" style="display: flex; justify-content: center"> 
             block-beta
             columns 1
             DataSource("{{page.original_source}}") space:1
@@ -123,8 +123,8 @@ TODO: restructure accordingly. -->
             style Product stroke:#5588bb,stroke-width:5px;
                 
           </code></pre>
-          {% else %}
-          <pre><code class="language-mermaid" style="display: flex; justify-content: center"> 
+        {% else %}
+        <pre><code class="language-mermaid" style="display: flex; justify-content: center"> 
             block-beta
             columns 1
             DataSource("{{page.original_source}}") space:1
@@ -137,16 +137,16 @@ TODO: restructure accordingly. -->
                 
           </code></pre>
         {% endif %}
-      {% endif %}
+        {% endif %}
       </div>
-  </div>
+    </div>
 
-    {% if page.warnings %} 
-      {% for warning in page.warnings %}
-        <div class="alert alert-warning" role="alert">
-          ⚠ {{warning}}
-        </div>
-      {% endfor %}
+    {% if page.warnings %}
+    {% for warning in page.warnings %}
+    <div class="alert alert-warning" role="alert">
+      ⚠ {{warning}}
+    </div>
+    {% endfor %}
     {% endif %}
 
     {% if page.compatibility %}
@@ -168,4 +168,13 @@ TODO: restructure accordingly. -->
     {% endif %}
 
   </div>
+
+  <div class="row">
+    <h4>
+      Is this information incorrect or incomplete? <a
+        href="https://github.com/Knowledge-Graph-Hub/kg-registry/issues/new?template=update-resource.yml">Request an
+        update.</a>
+    </h4>
+  </div>
+
 </div>
