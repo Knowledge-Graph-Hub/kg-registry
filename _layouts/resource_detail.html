@@ -9,17 +9,17 @@ layout: default
     {% endif %} {{ page.id }}
   </h1>
   {% if page.category %}
-    {% if page.category == "Aggregator" %}
-      <p>is an <strong><em>Aggregator.</em></strong></p>
-    {% elsif page.category == "Resource" %}
-      <p>is a general purpose <strong><em>Resource.</em></strong></p>
-    {% elsif page.category == "KnowledgeGraph" %}
-      <p>is a <strong><em>Knowledge Graph.</em></strong></p>
-    {% elsif page.category == "DataSource" %}
-      <p>is a <strong><em>Data Source.</em></strong></p>
-    {% elsif page.category == "DataModel" %}
-      <p>is a <strong><em>Data Model or Ontology.</em></strong></p>
-    {% endif %}
+  {% if page.category == "Aggregator" %}
+  <p>is an <strong><em>Aggregator.</em></strong></p>
+  {% elsif page.category == "Resource" %}
+  <p>is a general purpose <strong><em>Resource.</em></strong></p>
+  {% elsif page.category == "KnowledgeGraph" %}
+  <p>is a <strong><em>Knowledge Graph.</em></strong></p>
+  {% elsif page.category == "DataSource" %}
+  <p>is a <strong><em>Data Source.</em></strong></p>
+  {% elsif page.category == "DataModel" %}
+  <p>is a <strong><em>Data Model or Ontology.</em></strong></p>
+  {% endif %}
   {% endif %}
   <p>{{page.description}}</p>
 </div>
@@ -51,31 +51,31 @@ page.is_obsolete %}
 </div>
 {% endunless %}{% endif %}
 <div class="col">
-<div class="row">
+  <div class="row">
     <div class="row header-card-row">
       <div class="card bg-light mb-3" style="max-width: 12rem;">
-          <div class="card-body">
-            <h5 class="card-title">Domain</h5>
-            <p class="card-text">{{page.domain}}</p>
-          </div>
+        <div class="card-body">
+          <h5 class="card-title">Domain</h5>
+          <p class="card-text">{{page.domain}}</p>
+        </div>
       </div>
       <div class="card bg-light mb-3" style="max-width: 12rem;">
-          <div class="card-body">
-            <h5 class="card-title">License</h5>
-            {% if page.license %}
-              <p class="card-text"><a href="{{page.license.id}}">{{page.license.label}}</a></p>
-            {% else %}
-              <p class="card-text" style="color: red; font-weight: bold;">Warning: No license entered</p>
-            {% endif %}
-            </div>
+        <div class="card-body">
+          <h5 class="card-title">License</h5>
+          {% if page.license %}
+          <p class="card-text"><a href="{{page.license.id}}">{{page.license.label}}</a></p>
+          {% else %}
+          <p class="card-text" style="color: red; font-weight: bold;">Warning: No license entered</p>
+          {% endif %}
+        </div>
       </div>
       <div class="card bg-light mb-3" style="max-width: 12rem;">
         <div class="card-body">
           <h5 class="card-title">Homepage</h5>
           {% if page.homepage_url %}
-            <p class="card-text"><a href="{{page.homepage_url}}">{{page.id}}</a></p>
+          <p class="card-text"><a href="{{page.homepage_url}}">{{page.id}}</a></p>
           {% else %}
-            <p class="card-text" style="font-weight: bold;">Unknown</p>
+          <p class="card-text" style="font-weight: bold;">Unknown</p>
           {% endif %}
         </div>
       </div>
@@ -83,46 +83,46 @@ page.is_obsolete %}
         <div class="card-body">
           <h5 class="card-title">Repository</h5>
           {% if page.repository and page.repository contains "https://github.com/" %}
-            <p class="card-text"><a href="{{page.repository}}">Github</a></p>
+          <p class="card-text"><a href="{{page.repository}}">Github</a></p>
           {% elsif page.repository %}
-            <p class="card-text"><a href="{{page.repository}}">Repository</a></p>
+          <p class="card-text"><a href="{{page.repository}}">Repository</a></p>
           {% else %}
-            <p class="card-text" style="font-weight: bold;">Unknown</p>
+          <p class="card-text" style="font-weight: bold;">Unknown</p>
           {% endif %}
-          </div>
+        </div>
       </div>
       <div class="card bg-light mb-3" style="max-width: 12rem;">
         <div class="card-body">
           <h5 class="card-title">Infores ID</h5>
           {% if page.infores_id %}
-            <p class="card-text">infores:{{page.infores_id}}</p>
+          <p class="card-text">infores:{{page.infores_id}}</p>
           {% else %}
-            <p class="card-text" style="font-weight: bold;">Unknown</p>
+          <p class="card-text" style="font-weight: bold;">Unknown</p>
           {% endif %}
-          </div>
+        </div>
       </div>
       <div class="card bg-light mb-3" style="max-width: 12rem;">
         <div class="card-body">
           <h5 class="card-title">FAIRsharing ID</h5>
           {% if page.fairsharing_id %}
-            <p class="card-text"><a href="https://fairsharing.org/{{page.fairsharing_id}}">{{page.fairsharing_id}}</a></p>
+          <p class="card-text"><a href="https://fairsharing.org/{{page.fairsharing_id}}">{{page.fairsharing_id}}</a></p>
           {% else %}
-            <p class="card-text" style="font-weight: bold;">Unknown</p>
+          <p class="card-text" style="font-weight: bold;">Unknown</p>
           {% endif %}
-          </div>
+        </div>
       </div>
     </div>
 
-    {% if page.warnings %} 
-      {% for warning in page.warnings %}
-        <div class="alert alert-warning" role="alert">
-          ⚠ {{warning}}
-        </div>
-      {% endfor %}
+    {% if page.warnings %}
+    {% for warning in page.warnings %}
+    <div class="alert alert-warning" role="alert">
+      ⚠ {{warning}}
+    </div>
+    {% endfor %}
     {% endif %}
 
     {% if page.contacts %}
-    <div class="card px-0" style="margin-bottom: 1.5em" id="contacts">
+    <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem" id="contacts">
       <div class="card-header">
         <h4>Contacts</h4>
       </div>
@@ -130,17 +130,17 @@ page.is_obsolete %}
         {% for c in page.contacts %}
         <div class="list-group-item">
           {% if c.email %}
-            <p><a href="mailto:{{c.email}}">{{c.label}}</a></p>
+          <p><a href="mailto:{{c.email}}">{{c.label}}</a></p>
           {% else %}
           {% if c.label %}
-            <p>{{c.label}}</p>
+          <p>{{c.label}}</p>
           {% endif %}
           {% endif %}
-            {% if c.orcid %}
-            <strong>ORCID:</strong><a href="https://orcid.org/{{ c.orcid }}">{{ c.orcid }}</a>
+          {% if c.orcid %}
+          <strong>ORCID:</strong><a href="https://orcid.org/{{ c.orcid }}">{{ c.orcid }}</a>
           {% endif %}
           {% if c.github %}
-            <strong>Github:</strong><a href="https://github.com/{{ c.github }}">{{ c.github }}</a>
+          <strong>Github:</strong><a href="https://github.com/{{ c.github }}">{{ c.github }}</a>
           {% endif %}
         </div>
         {% endfor %}
@@ -149,7 +149,7 @@ page.is_obsolete %}
     {% endif %}
 
     {% if page.publications and page.publications.size > 0 %}
-    <div class="card px-0" style="margin-bottom: 1.5em" id="publications">
+    <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem" id="publications">
       <div class="card-header">
         <h4>Publications</h4>
       </div>
@@ -157,9 +157,9 @@ page.is_obsolete %}
         {% for p in page.publications %}
         <div class="list-group-item">
           {% if p.doi %}
-            <a href="http://dx.doi.org/{{p.doi}}">{{p.title}}</a>
+          <a href="http://dx.doi.org/{{p.doi}}">{{p.title}}</a>
           {% else %}
-            <a href="{{p.id}}">{{p.title}}</a>
+          <a href="{{p.id}}">{{p.title}}</a>
           {% endif %}
           {% if p.preferred %}
           <span class="badge">Preferred</span>
@@ -171,7 +171,7 @@ page.is_obsolete %}
     {% endif %}
 
     {% if page.funded_by %}
-    <div class="card px-0" style="margin-bottom: 1.5em">
+    <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem" id="funding">
       <div class="card-header">
         <h4>Funding</h4>
       </div>
@@ -184,172 +184,185 @@ page.is_obsolete %}
       </div>
     </div>
     {% endif %}
-    
-<!-- Check to see what kinds of products we have, if any -->
-{% assign has_internal_products = false %}
-{% assign has_external_products = false %}
-{% assign has_no_products = false %}
-{% if page.products %}
-  {% for p in page.products %}
+
+    <!-- Check to see what kinds of products we have, if any -->
+    {% assign has_internal_products = false %}
+    {% assign has_external_products = false %}
+    {% assign has_no_products = false %}
+    {% if page.products %}
+    {% for p in page.products %}
     {% if p.secondary_source and p.secondary_source contains page.id %}
-      {% assign has_internal_products = true %}
-      {% continue %}
+    {% assign has_internal_products = true %}
+    {% continue %}
     {% elsif p.secondary_source %}
-      {% assign has_external_products = true %}
-      {% continue %}
+    {% assign has_external_products = true %}
+    {% continue %}
     {% else %}
-      {% assign has_internal_products = true %}
+    {% assign has_internal_products = true %}
     {% endif %}
-  {% endfor %}
-{% else %}
-  {% assign has_no_products = true %}
-{% endif %}
-
-<div class="card px-0" style="margin-bottom: 1.5em">
-  <div class="card-header">
-    <h4>Products</h4>
-  </div>
-  {% if has_internal_products %}
-  <h5 style="margin-left: 0.5em; margin-top: 0.5em">From this Resource</h5>
-  <div class="table-responsive">
-    <table class="table table-striped mb-0">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Category</th>
-          <th>Format</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for p in page.products %}
-        <tr>
-          {% if p.secondary_source and p.secondary_source contains page.id %}
-          <td>
-            <a href="{{p.id}}.html">{{p.id}}</a>
-          </td>
-          {% elsif p.secondary_source %}
-            </tr>
-            {% continue %}
-          {% else %}
-          <td>
-            <a href="{{p.id}}.html">{{p.id}}</a>
-          </td>
-          {% endif %}
-          <td>
-            <a href="{{p.url}}">{{p.name}}</a>
-          </td>
-          <td>{{p.category}}</td>
-          <td>
-            {% if p.format %}
-              {{ p.format }}
-            {% else %}
-              ❔
-            {% endif %}
-          </td>
-          <td>
-            {{ p.description | truncate: 40 }}
-          </td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
-  {% endif %}
-  {% if has_external_products %}
-  <h5 style="margin-left: 0.5em; margin-top: 0.5em">From other Resources</h5>
-  <div class="table-responsive">
-    <table class="table table-striped mb-0">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Category</th>
-          <th>Format</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for p in page.products %}
-        <tr>
-          {% if p.secondary_source and p.secondary_source contains page.id %}
-            </tr>
-            {% continue %}
-          {% elsif p.secondary_source %}
-          <td>
-            <a href="/kg-registry/resource/{{p.secondary_source | first}}/{{p.id}}.html">{{p.id}}</a>
-          </td>
-          {% else %}
-            </tr>
-            {% continue %}
-          {% endif %}
-          <td>
-            <a href="{{p.url}}">{{p.name}}</a>
-          </td>
-          <td>{{p.category}}</td>
-          <td>
-            {% if p.format %}
-              {{ p.format }}
-            {% else %}
-              ❔
-            {% endif %}
-          </td>
-          <td>
-            {{ p.description | truncate: 40 }}
-          </td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
-  {% endif %}
-  {% if has_no_products %}
-  <div class="alert alert-warning" role="alert">
-    No products available. You could <a href="https://github.com/Knowledge-Graph-Hub/kg-registry/issues/new?template=update-resource.yml">suggest one to add!</a>
-  </div>
-  {% endif %}
-</div>
-
-{% if page.usages %}
-<div class="card px-0" style="margin-bottom: 1.5em;">
-  <div class="card-header">
-    <h4>Usages</h4>
-  </div>
-  <div class="list-group list-group-flush">
-    {% for p in page.usages %}
-    <div class="list-group-item">
-      <dl class="dl-horizontal" style="margin-bottom: 0">
-        <dt>{{p.label}}</dt>
-        <dd>{{p.description}}</dd>
-        {% if p.type %}
-        <dt>Type</dt>
-        <dd>{{p.type}}</dd>
-        {% endif %} {% if p.url %}
-        <dt>Link</dt>
-        <dd><a href="{{p.url}}">{{p.url}}</a></dd>
-        {% endif %} {% if p.publications %}
-        <dt>Publications</dt>
-        <dd>
-          <ul style="padding-left: 20px">
-            {% for publication in p.publications %}
-            <li><a href="https://doi.org/{{publication.doi}}">{{publication.title}}</a></li>
-            {% endfor %}
-          </ul>
-        </dd>
-        {% endif %} {% if p.users %}
-        <dt>Users</dt>
-        <dd>
-          <ul style="padding-left: 20px">
-            {% for user in p.users %}
-            <li>{{user.label}}</li>
-            {% endfor %}
-          </ul>
-        </dd>
-        {% endif %}
-      </dl>
-    </div>
     {% endfor %}
+    {% else %}
+    {% assign has_no_products = true %}
+    {% endif %}
+
+    <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem" id="products">
+      <div class="card-header">
+        <h4>Products</h4>
+      </div>
+      {% if has_internal_products %}
+      <h5 style="margin-left: 0.5em; margin-top: 0.5em">From this Resource</h5>
+      <div class="table-responsive">
+        <table class="table table-striped mb-0">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Format</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for p in page.products %}
+            <tr>
+              {% if p.secondary_source and p.secondary_source contains page.id %}
+              <td>
+                <a href="{{p.id}}.html">{{p.id}}</a>
+              </td>
+              {% elsif p.secondary_source %}
+            </tr>
+            {% continue %}
+            {% else %}
+            <td>
+              <a href="{{p.id}}.html">{{p.id}}</a>
+            </td>
+            {% endif %}
+            <td>
+              <a href="{{p.url}}">{{p.name}}</a>
+            </td>
+            <td>{{p.category}}</td>
+            <td>
+              {% if p.format %}
+              {{ p.format }}
+              {% else %}
+              ❔
+              {% endif %}
+            </td>
+            <td>
+              {{ p.description | truncate: 40 }}
+            </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+      {% if has_external_products %}
+      <h5 style="margin-left: 0.5em; margin-top: 0.5em">From other Resources</h5>
+      <div class="table-responsive">
+        <table class="table table-striped mb-0">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Format</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for p in page.products %}
+            <tr>
+              {% if p.secondary_source and p.secondary_source contains page.id %}
+            </tr>
+            {% continue %}
+            {% elsif p.secondary_source %}
+            <td>
+              <a href="/kg-registry/resource/{{p.secondary_source | first}}/{{p.id}}.html">{{p.id}}</a>
+            </td>
+            {% else %}
+            </tr>
+            {% continue %}
+            {% endif %}
+            <td>
+              <a href="{{p.url}}">{{p.name}}</a>
+            </td>
+            <td>{{p.category}}</td>
+            <td>
+              {% if p.format %}
+              {{ p.format }}
+              {% else %}
+              ❔
+              {% endif %}
+            </td>
+            <td>
+              {{ p.description | truncate: 40 }}
+            </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+      {% if has_no_products %}
+      <div class="alert alert-warning" role="alert">
+        No products available. You could <a
+          href="https://github.com/Knowledge-Graph-Hub/kg-registry/issues/new?template=update-resource.yml">suggest one
+          to add!</a>
+      </div>
+      {% endif %}
+    </div>
+
+    {% if page.usages %}
+    <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem">
+      <div class="card-header">
+        <h4>Usages</h4>
+      </div>
+      <div class="list-group list-group-flush">
+        {% for p in page.usages %}
+        <div class="list-group-item">
+          <dl class="dl-horizontal" style="margin-bottom: 0">
+            <dt>{{p.label}}</dt>
+            <dd>{{p.description}}</dd>
+            {% if p.type %}
+            <dt>Type</dt>
+            <dd>{{p.type}}</dd>
+            {% endif %} {% if p.url %}
+            <dt>Link</dt>
+            <dd><a href="{{p.url}}">{{p.url}}</a></dd>
+            {% endif %} {% if p.publications %}
+            <dt>Publications</dt>
+            <dd>
+              <ul style="padding-left: 20px">
+                {% for publication in p.publications %}
+                <li><a href="https://doi.org/{{publication.doi}}">{{publication.title}}</a></li>
+                {% endfor %}
+              </ul>
+            </dd>
+            {% endif %} {% if p.users %}
+            <dt>Users</dt>
+            <dd>
+              <ul style="padding-left: 20px">
+                {% for user in p.users %}
+                <li>{{user.label}}</li>
+                {% endfor %}
+              </ul>
+            </dd>
+            {% endif %}
+          </dl>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
   </div>
+
+  <div class="row">
+    <h4>
+      Is this information incorrect or incomplete? <a
+        href="https://github.com/Knowledge-Graph-Hub/kg-registry/issues/new?template=update-resource.yml">Request an
+        update.</a>
+    </h4>
+  </div>
+
 </div>
-{% endif %}
