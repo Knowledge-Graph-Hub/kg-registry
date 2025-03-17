@@ -211,6 +211,8 @@ class FormatEnum(str, Enum):
     kgx_jsonl = "kgx-jsonl"
     # The KGX standard, which is a graph exchange format for knowledge graphs. This is the RDF Turtle (TTL) format, with nodes and edges in a single file.
     kgx_rdf = "kgx-rdf"
+    # The Simple Standard for Sharing Ontological Mappings (SSSOM) format, which a format for mapping between different ontologies and other identifier systems.
+    sssom = "sssom"
 
 
 class StandardEnum(str, Enum):
