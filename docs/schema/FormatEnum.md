@@ -34,6 +34,7 @@ URI: [FormatEnum](FormatEnum.html)
 | kgx-json | https://github.com/biolink/kgx/blob/master/specification/kgx-format.md | The KGX standard, which is a graph exchange format for knowledge graphs |
 | kgx-jsonl | https://github.com/biolink/kgx/blob/master/specification/kgx-format.md | The KGX standard, which is a graph exchange format for knowledge graphs |
 | kgx-rdf | https://github.com/biolink/kgx/blob/master/specification/kgx-format.md | The KGX standard, which is a graph exchange format for knowledge graphs |
+| sssom | https://mapping-commons.github.io/sssom/ | The Simple Standard for Sharing Ontological Mappings (SSSOM) format, which a ... |
 
 
 
@@ -135,6 +136,12 @@ permissible_values:
       graphs. This is the RDF Turtle (TTL) format, with nodes and edges in a single
       file.
     meaning: https://github.com/biolink/kgx/blob/master/specification/kgx-format.md
+  sssom:
+    text: sssom
+    description: The Simple Standard for Sharing Ontological Mappings (SSSOM) format,
+      which a format for mapping between different ontologies and other identifier
+      systems.
+    meaning: https://mapping-commons.github.io/sssom/
 
 ```
 </details>

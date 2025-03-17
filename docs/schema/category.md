@@ -33,26 +33,26 @@ URI: [kgr:category](https://w3id.org/bridge2ai/data-sheets-schema/category)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
+| [GraphProduct](GraphProduct.html) | A product that is a graph, represented as nodes and edges |  no  |
+| [DataSource](DataSource.html) | A data source |  no  |
 | [Individual](Individual.html) | An individual person |  no  |
-| [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
-| [License](License.html) | A license for a resource or product |  no  |
-| [Contact](Contact.html) | A contact point for a resource or product |  no  |
-| [DataModel](DataModel.html) | A data model, such as an ontology or schema |  no  |
-| [Organization](Organization.html) | An organization |  no  |
-| [MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources |  no  |
-| [Product](Product.html) | A top-level class for all products in the knowledge graph registry |  no  |
+| [DataModelProduct](DataModelProduct.html) | A product that is a data model, such as an ontology or schema |  no  |
+| [KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |  no  |
 | [ProgrammingInterface](ProgrammingInterface.html) | A product that is a programming interface (API) to a resource |  no  |
-| [Usage](Usage.html) | The usage of a resource |  no  |
 | [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
 | [NamedThing](NamedThing.html) | A generic grouping for any identifiable entity |  no  |
+| [License](License.html) | A license for a resource or product |  no  |
 | [GraphicalInterface](GraphicalInterface.html) | A product that is a graphical interface to a resource |  no  |
-| [ProcessProduct](ProcessProduct.html) | A product that is a process or algorithm |  no  |
+| [DataModel](DataModel.html) | A data model, such as an ontology or schema |  no  |
 | [FundingSource](FundingSource.html) | A funding source for a resource |  no  |
 | [Publication](Publication.html) | A publication associated with a resource |  no  |
-| [DataSource](DataSource.html) | A data source |  no  |
-| [KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |  no  |
-| [GraphProduct](GraphProduct.html) | A product that is a graph, represented as nodes and edges |  no  |
-| [DataModelProduct](DataModelProduct.html) | A product that is a data model, such as an ontology or schema |  no  |
+| [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
+| [Usage](Usage.html) | The usage of a resource |  no  |
+| [ProcessProduct](ProcessProduct.html) | A product that is a process or algorithm |  no  |
+| [Organization](Organization.html) | An organization |  no  |
+| [Product](Product.html) | A top-level class for all products in the knowledge graph registry |  no  |
+| [MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources |  no  |
+| [Contact](Contact.html) | A contact point for a resource or product |  no  |
 
 
 

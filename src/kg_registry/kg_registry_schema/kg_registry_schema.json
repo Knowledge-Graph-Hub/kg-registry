@@ -766,7 +766,8 @@
                 "kgx",
                 "kgx-json",
                 "kgx-jsonl",
-                "kgx-rdf"
+                "kgx-rdf",
+                "sssom"
             ],
             "title": "FormatEnum",
             "type": "string"
