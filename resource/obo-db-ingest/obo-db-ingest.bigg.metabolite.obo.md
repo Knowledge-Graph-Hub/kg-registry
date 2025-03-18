@@ -1,6 +1,7 @@
 ---
 category: Product
 description: bigg.metabolite OBO
+format: obo
 id: obo-db-ingest.bigg.metabolite.obo
 license:
   id: http://bigg.ucsd.edu/license#license

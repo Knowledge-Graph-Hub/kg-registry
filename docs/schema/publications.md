@@ -23,12 +23,12 @@ URI: [kgr:publications](https://w3id.org/bridge2ai/data-sheets-schema/publicatio
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [DataSource](DataSource.html) | A data source |  no  |
-| [DataModel](DataModel.html) | A data model, such as an ontology or schema |  no  |
-| [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
-| [Usage](Usage.html) | The usage of a resource |  no  |
-| [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
 | [KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |  no  |
+| [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
+| [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
+| [DataSource](DataSource.html) | A data source |  no  |
+| [Usage](Usage.html) | The usage of a resource |  no  |
+| [DataModel](DataModel.html) | A data model, such as an ontology or schema |  no  |
 
 
 

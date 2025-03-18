@@ -250,6 +250,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.compartment OBO",
+                    "format": "obo",
                     "id": "obo-db-ingest.bigg.compartment.obo",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -267,6 +268,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.compartment OWL",
+                    "format": "owl",
                     "id": "obo-db-ingest.bigg.compartment.owl",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -284,6 +286,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.compartment OBO Graph JSON",
+                    "format": "json",
                     "id": "obo-db-ingest.bigg.compartment.json",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -301,6 +304,7 @@
                 {
                     "category": "MappingProduct",
                     "description": "bigg.compartment SSSOM",
+                    "format": "sssom",
                     "id": "obo-db-ingest.bigg.compartment.sssom.tsv",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -319,6 +323,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.metabolite OBO",
+                    "format": "obo",
                     "id": "obo-db-ingest.bigg.metabolite.obo",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -336,6 +341,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.metabolite OWL",
+                    "format": "owl",
                     "id": "obo-db-ingest.bigg.metabolite.owl",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -353,6 +359,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.metabolite OBO Graph JSON",
+                    "format": "json",
                     "id": "obo-db-ingest.bigg.metabolite.json",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -370,6 +377,7 @@
                 {
                     "category": "MappingProduct",
                     "description": "bigg.metabolite SSSOM",
+                    "format": "sssom",
                     "id": "obo-db-ingest.bigg.metabolite.sssom.tsv",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -377,7 +385,11 @@
                     },
                     "name": "bigg.metabolite SSSOM",
                     "original_source": [
-                        "bigg"
+                        "chebi",
+                        "bigg",
+                        "biocyc",
+                        "kegg",
+                        "reactome"
                     ],
                     "product_url": "https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv",
                     "secondary_source": [
@@ -387,6 +399,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.model OBO",
+                    "format": "obo",
                     "id": "obo-db-ingest.bigg.model.obo",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -404,6 +417,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.model OWL",
+                    "format": "owl",
                     "id": "obo-db-ingest.bigg.model.owl",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -421,6 +435,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.model OBO Graph JSON",
+                    "format": "json",
                     "id": "obo-db-ingest.bigg.model.json",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -438,6 +453,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.reaction OBO",
+                    "format": "obo",
                     "id": "obo-db-ingest.bigg.reaction.obo",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -455,6 +471,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.reaction OWL",
+                    "format": "owl",
                     "id": "obo-db-ingest.bigg.reaction.owl",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -472,6 +489,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.reaction OBO Graph JSON",
+                    "format": "json",
                     "id": "obo-db-ingest.bigg.reaction.json",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -489,6 +507,7 @@
                 {
                     "category": "MappingProduct",
                     "description": "bigg.reaction SSSOM",
+                    "format": "sssom",
                     "id": "obo-db-ingest.bigg.reaction.sssom.tsv",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -499,6 +518,24 @@
                         "bigg"
                     ],
                     "product_url": "https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.sssom.tsv",
+                    "secondary_source": [
+                        "obo-db-ingest"
+                    ]
+                },
+                {
+                    "category": "MappingProduct",
+                    "description": "bigg.compartment SSSOM",
+                    "id": "obo-db-ingest.bigg.compartment.sssom.tsv",
+                    "license": {
+                        "id": "http://bigg.ucsd.edu/license#license",
+                        "label": "Custom"
+                    },
+                    "name": "bigg.compartment SSSOM",
+                    "original_source": [
+                        "bigg",
+                        "go"
+                    ],
+                    "product_url": "https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv",
                     "secondary_source": [
                         "obo-db-ingest"
                     ]
@@ -525,6 +562,51 @@
                 }
             ],
             "repository": "https://github.com/SBRG/bigg_models"
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
+            "contacts": [
+                {
+                    "category": "Organization",
+                    "email": "biocyc-support@sri.com",
+                    "label": "BioCyc"
+                }
+            ],
+            "description": "BioCyc is a collection of 20,070 Pathway/Genome Databases (PGDBs) for model eukaryotes and for thousands of microbes, plus software tools for exploring them. BioCyc is an encyclopedic reference that contains curated data from 146,000 publications.",
+            "domain": "biological systems",
+            "homepage_url": "https://biocyc.org/",
+            "id": "biocyc",
+            "layout": "resource_detail",
+            "license": {
+                "id": "https://biocyc.org/download.shtml",
+                "label": "Varies"
+            },
+            "name": "BioCyc",
+            "products": [
+                {
+                    "category": "MappingProduct",
+                    "description": "bigg.metabolite SSSOM",
+                    "format": "sssom",
+                    "id": "obo-db-ingest.bigg.metabolite.sssom.tsv",
+                    "license": {
+                        "id": "http://bigg.ucsd.edu/license#license",
+                        "label": "Custom"
+                    },
+                    "name": "bigg.metabolite SSSOM",
+                    "original_source": [
+                        "chebi",
+                        "bigg",
+                        "biocyc",
+                        "kegg",
+                        "reactome"
+                    ],
+                    "product_url": "https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv",
+                    "secondary_source": [
+                        "obo-db-ingest"
+                    ]
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -813,6 +895,96 @@
         },
         {
             "activity_status": "active",
+            "category": "DataSource",
+            "contacts": [
+                {
+                    "category": "Organization",
+                    "label": "CCLE"
+                }
+            ],
+            "description": "CCLE is the Cancer Cell Line Encyclopedia, a collaboration between the Broad Institute and the Novartis Institutes for Biomedical Research.",
+            "domain": "health",
+            "homepage_url": "https://sites.broadinstitute.org/ccle/",
+            "id": "ccle",
+            "layout": "resource_detail",
+            "name": "CCLE",
+            "products": [
+                {
+                    "category": "Product",
+                    "description": "ccle OBO",
+                    "format": "obo",
+                    "id": "obo-db-ingest.ccle.obo",
+                    "license": {
+                        "id": "https://opendatacommons.org/licenses/odbl/1-0/",
+                        "label": "ODbL-1.0"
+                    },
+                    "name": "ccle OBO",
+                    "original_source": [
+                        "ccle"
+                    ],
+                    "product_url": "https://w3id.org/biopragmatics/resources/ccle/ccle.obo",
+                    "secondary_source": [
+                        "obo-db-ingest"
+                    ]
+                },
+                {
+                    "category": "Product",
+                    "description": "ccle OWL",
+                    "format": "owl",
+                    "id": "obo-db-ingest.ccle.owl",
+                    "license": {
+                        "id": "https://opendatacommons.org/licenses/odbl/1-0/",
+                        "label": "ODbL-1.0"
+                    },
+                    "name": "ccle OWL",
+                    "original_source": [
+                        "ccle"
+                    ],
+                    "product_url": "https://w3id.org/biopragmatics/resources/ccle/ccle.owl",
+                    "secondary_source": [
+                        "obo-db-ingest"
+                    ]
+                },
+                {
+                    "category": "Product",
+                    "description": "ccle OBO Graph JSON",
+                    "format": "json",
+                    "id": "obo-db-ingest.ccle.json",
+                    "license": {
+                        "id": "https://opendatacommons.org/licenses/odbl/1-0/",
+                        "label": "ODbL-1.0"
+                    },
+                    "name": "ccle OBO Graph JSON",
+                    "original_source": [
+                        "ccle"
+                    ],
+                    "product_url": "https://w3id.org/biopragmatics/resources/ccle/ccle.json",
+                    "secondary_source": [
+                        "obo-db-ingest"
+                    ]
+                },
+                {
+                    "category": "MappingProduct",
+                    "description": "ccle SSSOM",
+                    "format": "sssom",
+                    "id": "obo-db-ingest.ccle.sssom.tsv",
+                    "license": {
+                        "id": "https://opendatacommons.org/licenses/odbl/1-0/",
+                        "label": "ODbL-1.0"
+                    },
+                    "name": "ccle SSSOM",
+                    "original_source": [
+                        "ccle"
+                    ],
+                    "product_url": "https://w3id.org/biopragmatics/resources/ccle/ccle.sssom.tsv",
+                    "secondary_source": [
+                        "obo-db-ingest"
+                    ]
+                }
+            ]
+        },
+        {
+            "activity_status": "active",
             "category": "KnowledgeGraph",
             "contacts": [
                 {
@@ -828,6 +1000,52 @@
             "layout": "resource_detail",
             "name": "Data Distillery Knowledge Graph (DDKG)",
             "repository": "https://github.com/MaayanLab/datadistillery-kg"
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
+            "contacts": [
+                {
+                    "category": "Organization",
+                    "label": "ChEBI"
+                }
+            ],
+            "description": "Chemical Entities of Biological Interest (ChEBI) is a freely available dictionary of molecular entities focused on ‘small’ chemical compounds.",
+            "domain": "chemistry and biochemistry",
+            "homepage_url": "https://www.ebi.ac.uk/chebi/",
+            "id": "chebi",
+            "layout": "resource_detail",
+            "license": {
+                "id": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "label": "CC-BY-SA-4.0",
+                "logo": "https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png"
+            },
+            "name": "ChEBI",
+            "products": [
+                {
+                    "category": "MappingProduct",
+                    "description": "bigg.metabolite SSSOM",
+                    "format": "sssom",
+                    "id": "obo-db-ingest.bigg.metabolite.sssom.tsv",
+                    "license": {
+                        "id": "http://bigg.ucsd.edu/license#license",
+                        "label": "Custom"
+                    },
+                    "name": "bigg.metabolite SSSOM",
+                    "original_source": [
+                        "chebi",
+                        "bigg",
+                        "biocyc",
+                        "kegg",
+                        "reactome"
+                    ],
+                    "product_url": "https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv",
+                    "secondary_source": [
+                        "obo-db-ingest"
+                    ]
+                }
+            ],
+            "repository": "https://github.com/ebi-chebi/ChEBI"
         },
         {
             "activity_status": "active",
@@ -1301,6 +1519,25 @@
                 {
                     "category": "MappingProduct",
                     "description": "bigg.compartment SSSOM",
+                    "id": "obo-db-ingest.bigg.compartment.sssom.tsv",
+                    "license": {
+                        "id": "http://bigg.ucsd.edu/license#license",
+                        "label": "Custom"
+                    },
+                    "name": "bigg.compartment SSSOM",
+                    "original_source": [
+                        "bigg",
+                        "go"
+                    ],
+                    "product_url": "https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv",
+                    "secondary_source": [
+                        "obo-db-ingest"
+                    ]
+                },
+                {
+                    "category": "MappingProduct",
+                    "description": "bigg.compartment SSSOM",
+                    "format": "sssom",
                     "id": "obo-db-ingest.bigg.compartment.sssom.tsv",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -2070,6 +2307,28 @@
                     "secondary_source": [
                         "obo-db-ingest"
                     ]
+                },
+                {
+                    "category": "MappingProduct",
+                    "description": "bigg.metabolite SSSOM",
+                    "format": "sssom",
+                    "id": "obo-db-ingest.bigg.metabolite.sssom.tsv",
+                    "license": {
+                        "id": "http://bigg.ucsd.edu/license#license",
+                        "label": "Custom"
+                    },
+                    "name": "bigg.metabolite SSSOM",
+                    "original_source": [
+                        "chebi",
+                        "bigg",
+                        "biocyc",
+                        "kegg",
+                        "reactome"
+                    ],
+                    "product_url": "https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv",
+                    "secondary_source": [
+                        "obo-db-ingest"
+                    ]
                 }
             ]
         },
@@ -2777,6 +3036,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.compartment OBO",
+                    "format": "obo",
                     "id": "obo-db-ingest.bigg.compartment.obo",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -2794,6 +3054,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.compartment OWL",
+                    "format": "owl",
                     "id": "obo-db-ingest.bigg.compartment.owl",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -2811,6 +3072,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.compartment OBO Graph JSON",
+                    "format": "json",
                     "id": "obo-db-ingest.bigg.compartment.json",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -2828,6 +3090,7 @@
                 {
                     "category": "MappingProduct",
                     "description": "bigg.compartment SSSOM",
+                    "format": "sssom",
                     "id": "obo-db-ingest.bigg.compartment.sssom.tsv",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -2846,6 +3109,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.metabolite OBO",
+                    "format": "obo",
                     "id": "obo-db-ingest.bigg.metabolite.obo",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -2863,6 +3127,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.metabolite OWL",
+                    "format": "owl",
                     "id": "obo-db-ingest.bigg.metabolite.owl",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -2880,6 +3145,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.metabolite OBO Graph JSON",
+                    "format": "json",
                     "id": "obo-db-ingest.bigg.metabolite.json",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -2897,6 +3163,7 @@
                 {
                     "category": "MappingProduct",
                     "description": "bigg.metabolite SSSOM",
+                    "format": "sssom",
                     "id": "obo-db-ingest.bigg.metabolite.sssom.tsv",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -2904,7 +3171,11 @@
                     },
                     "name": "bigg.metabolite SSSOM",
                     "original_source": [
-                        "bigg"
+                        "chebi",
+                        "bigg",
+                        "biocyc",
+                        "kegg",
+                        "reactome"
                     ],
                     "product_url": "https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv",
                     "secondary_source": [
@@ -2914,6 +3185,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.model OBO",
+                    "format": "obo",
                     "id": "obo-db-ingest.bigg.model.obo",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -2931,6 +3203,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.model OWL",
+                    "format": "owl",
                     "id": "obo-db-ingest.bigg.model.owl",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -2948,6 +3221,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.model OBO Graph JSON",
+                    "format": "json",
                     "id": "obo-db-ingest.bigg.model.json",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -2965,6 +3239,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.reaction OBO",
+                    "format": "obo",
                     "id": "obo-db-ingest.bigg.reaction.obo",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -2982,6 +3257,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.reaction OWL",
+                    "format": "owl",
                     "id": "obo-db-ingest.bigg.reaction.owl",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -2999,6 +3275,7 @@
                 {
                     "category": "Product",
                     "description": "bigg.reaction OBO Graph JSON",
+                    "format": "json",
                     "id": "obo-db-ingest.bigg.reaction.json",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -3016,6 +3293,7 @@
                 {
                     "category": "MappingProduct",
                     "description": "bigg.reaction SSSOM",
+                    "format": "sssom",
                     "id": "obo-db-ingest.bigg.reaction.sssom.tsv",
                     "license": {
                         "id": "http://bigg.ucsd.edu/license#license",
@@ -3033,46 +3311,74 @@
                 {
                     "category": "Product",
                     "description": "ccle OBO",
+                    "format": "obo",
                     "id": "obo-db-ingest.ccle.obo",
                     "license": {
                         "id": "https://opendatacommons.org/licenses/odbl/1-0/",
                         "label": "ODbL-1.0"
                     },
                     "name": "ccle OBO",
-                    "product_url": "https://w3id.org/biopragmatics/resources/cdle/cdle.obo"
+                    "original_source": [
+                        "ccle"
+                    ],
+                    "product_url": "https://w3id.org/biopragmatics/resources/ccle/ccle.obo",
+                    "secondary_source": [
+                        "obo-db-ingest"
+                    ]
                 },
                 {
                     "category": "Product",
                     "description": "ccle OWL",
+                    "format": "owl",
                     "id": "obo-db-ingest.ccle.owl",
                     "license": {
                         "id": "https://opendatacommons.org/licenses/odbl/1-0/",
                         "label": "ODbL-1.0"
                     },
                     "name": "ccle OWL",
-                    "product_url": "https://w3id.org/biopragmatics/resources/cdle/cdle.owl"
+                    "original_source": [
+                        "ccle"
+                    ],
+                    "product_url": "https://w3id.org/biopragmatics/resources/ccle/ccle.owl",
+                    "secondary_source": [
+                        "obo-db-ingest"
+                    ]
                 },
                 {
                     "category": "Product",
                     "description": "ccle OBO Graph JSON",
+                    "format": "json",
                     "id": "obo-db-ingest.ccle.json",
                     "license": {
                         "id": "https://opendatacommons.org/licenses/odbl/1-0/",
                         "label": "ODbL-1.0"
                     },
                     "name": "ccle OBO Graph JSON",
-                    "product_url": "https://w3id.org/biopragmatics/resources/cdle/cdle.json"
+                    "original_source": [
+                        "ccle"
+                    ],
+                    "product_url": "https://w3id.org/biopragmatics/resources/ccle/ccle.json",
+                    "secondary_source": [
+                        "obo-db-ingest"
+                    ]
                 },
                 {
                     "category": "MappingProduct",
                     "description": "ccle SSSOM",
+                    "format": "sssom",
                     "id": "obo-db-ingest.ccle.sssom.tsv",
                     "license": {
                         "id": "https://opendatacommons.org/licenses/odbl/1-0/",
                         "label": "ODbL-1.0"
                     },
                     "name": "ccle SSSOM",
-                    "product_url": "https://w3id.org/biopragmatics/resources/cdle/cdle.sssom.tsv"
+                    "original_source": [
+                        "ccle"
+                    ],
+                    "product_url": "https://w3id.org/biopragmatics/resources/ccle/ccle.sssom.tsv",
+                    "secondary_source": [
+                        "obo-db-ingest"
+                    ]
                 },
                 {
                     "category": "Product",
@@ -5397,6 +5703,24 @@
                     "secondary_source": [
                         "obo-db-ingest"
                     ]
+                },
+                {
+                    "category": "MappingProduct",
+                    "description": "bigg.compartment SSSOM",
+                    "id": "obo-db-ingest.bigg.compartment.sssom.tsv",
+                    "license": {
+                        "id": "http://bigg.ucsd.edu/license#license",
+                        "label": "Custom"
+                    },
+                    "name": "bigg.compartment SSSOM",
+                    "original_source": [
+                        "bigg",
+                        "go"
+                    ],
+                    "product_url": "https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv",
+                    "secondary_source": [
+                        "obo-db-ingest"
+                    ]
                 }
             ],
             "repository": "https://github.com/biopragmatics/obo-db-ingest"
@@ -5797,6 +6121,28 @@
                         "ecocyc"
                     ],
                     "product_url": "https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv",
+                    "secondary_source": [
+                        "obo-db-ingest"
+                    ]
+                },
+                {
+                    "category": "MappingProduct",
+                    "description": "bigg.metabolite SSSOM",
+                    "format": "sssom",
+                    "id": "obo-db-ingest.bigg.metabolite.sssom.tsv",
+                    "license": {
+                        "id": "http://bigg.ucsd.edu/license#license",
+                        "label": "Custom"
+                    },
+                    "name": "bigg.metabolite SSSOM",
+                    "original_source": [
+                        "chebi",
+                        "bigg",
+                        "biocyc",
+                        "kegg",
+                        "reactome"
+                    ],
+                    "product_url": "https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv",
                     "secondary_source": [
                         "obo-db-ingest"
                     ]
