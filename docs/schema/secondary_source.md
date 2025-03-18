@@ -28,13 +28,13 @@ URI: [kgr:secondary_source](https://w3id.org/bridge2ai/data-sheets-schema/second
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [GraphProduct](GraphProduct.html) | A product that is a graph, represented as nodes and edges |  no  |
 | [Product](Product.html) | A top-level class for all products in the knowledge graph registry |  no  |
-| [DataModelProduct](DataModelProduct.html) | A product that is a data model, such as an ontology or schema |  no  |
-| [GraphicalInterface](GraphicalInterface.html) | A product that is a graphical interface to a resource |  no  |
-| [ProgrammingInterface](ProgrammingInterface.html) | A product that is a programming interface (API) to a resource |  no  |
 | [MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources |  no  |
+| [GraphicalInterface](GraphicalInterface.html) | A product that is a graphical interface to a resource |  no  |
 | [ProcessProduct](ProcessProduct.html) | A product that is a process or algorithm |  no  |
+| [GraphProduct](GraphProduct.html) | A product that is a graph, represented as nodes and edges |  no  |
+| [ProgrammingInterface](ProgrammingInterface.html) | A product that is a programming interface (API) to a resource |  no  |
+| [DataModelProduct](DataModelProduct.html) | A product that is a data model, such as an ontology or schema |  no  |
 
 
 
