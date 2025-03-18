@@ -30,16 +30,22 @@
 
 RUN = poetry run
 
-# All KG .md files
-KGS := $(wildcard resource/*.md)
+# All resource .md files
+# Note this includes pages for individual products, too
+# Those are used to build their own pages but are not included in
+# the main registry table
+RESOURCES := $(shell find resource -type f -name '*.md')
 
 # Path to the source KG-Registry schema
 SOURCE_SCHEMA = src/kg_registry/kg_registry_schema/schema/kg_registry_schema.yaml
 
+# Path to the generated KG-Registry schema docs
+SCHEMA_DOC_DIR = docs/schema
+
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
 
-all: _config.yml registry/kgs.ttl registry/obo_context.jsonld registry/obo_prefixes.ttl
+all: _config.yml registry/kgs.ttl schema-docs
 
 pull:
 	git pull
@@ -93,14 +99,6 @@ registry/kgs.yml: reports/metadata-grid.csv
 registry/kgs.jsonld: registry/kgs.yml
 	./util/yaml2json.py $< > $@.tmp && mv $@.tmp $@
 
-registry/obo_context.jsonld: registry/kgs.yml
-	./util/processor.py -i $< extract-context  > $@.tmp && mv $@.tmp $@
-
-# generate triples mapping prefixes to their corresponding PURLs.
-# we use the SHACL vocabulary for this
-registry/obo_prefixes.ttl: registry/kgs.yml
-	./util/make-shacl-prefixes.py $<  > $@.tmp && mv $@.tmp $@
-
 # Use Apache-Jena RIOT to convert jsonld to n-triples
 # NOTE: UGLY HACK. If there is a problem then Jena will write WARN message (to stdout!!!), there appears to
 #  be no way to get it to flag this even with strict and check options, so we do a check with grep, ugh.
@@ -125,14 +123,16 @@ reports/metadata-grid.html: reports/metadata-grid.csv
 	./util/create-html-grid.py $< $@
 
 # Extract metadata from each resource .md file and combine into single yaml
-tmp/unsorted-resources.yml: $(KGS) | tmp
+# Also create product pages where needed
+# and propagate product entries to related resources
+tmp/unsorted-resources.yml: $(RESOURCES) | tmp
 	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
 
 # Run validation, including with LinkML validator
-extract-metadata: $(KGS)
+extract-metadata: $(RESOURCES)
 	./util/extract-metadata.py validate $^
 
-prettify: $(KGS)
+prettify: $(RESOURCES)
 	./util/extract-metadata.py prettify $^
 
 # Run tox tests (requires `pip install tox`)
@@ -234,5 +234,15 @@ jenkins-output.txt:
 
 reports/%.csv: registry/kgs.ttl sparql/%.sparql
 	arq --data $< --query sparql/$*.sparql --results csv > $@.tmp && mv $@.tmp $@
+
+# Generate schema documentation
+# and add the frontmatter to each page
+schema-docs: | build
+	$(RUN) gen-doc -d $(SCHEMA_DOC_DIR) $(SOURCE_SCHEMA)
+	for file in $(SCHEMA_DOC_DIR)/*; do \
+		sed -i 's/\.md)/\.html)/g' $$file; \
+		sed -i 's/href "..\/\([^"]*\)"/href "\1.html"/g' $$file; \
+		echo "---\nlayout: schema_doc\nmermaid: true\n---\n\n$$(cat $$file)" > $$file; \
+	done
 
 include kg.Makefile

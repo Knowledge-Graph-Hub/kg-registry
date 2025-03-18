@@ -318,7 +318,7 @@ jQuery(document).ready(function() {
                     let template = `
                         <tr class="${tr_class}">
                             <th scope="row">
-                                <a href="resource/${id}.html">
+                                <a href="resource/${id}/${id}.html">
                                     ${id}
                                 </a>
                             </td>
