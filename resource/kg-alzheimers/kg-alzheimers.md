@@ -14,12 +14,18 @@ contacts:
 homepage_url: https://kghub.org/kg-alzheimers/index.html
 repository: https://github.com/Knowledge-Graph-Hub/kg-alzheimers
 products:
-- id: kg-alzheimers.tar.gz
+- id: kg-alzheimers.graph
   is_kgx: true
   name: KGX Distribution of KG-Alzheimers
   description: KGX Distribution of KG-Alzheimers
-  url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
+  product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
   category: GraphProduct
+  primary_source:
+  - kg-alzheimers
+  secondary_source:
+  - kg-alzheimers
+  format: kgx
+  compression: targz
 license:
   label: CC0 1.0
   id: https://creativecommons.org/publicdomain/zero/1.0/
