@@ -15,7 +15,6 @@ homepage_url: https://kghub.org/kg-alzheimers/index.html
 repository: https://github.com/Knowledge-Graph-Hub/kg-alzheimers
 products:
 - id: kg-alzheimers.graph
-  is_kgx: true
   name: KGX Distribution of KG-Alzheimers
   description: KGX Distribution of KG-Alzheimers
   product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
