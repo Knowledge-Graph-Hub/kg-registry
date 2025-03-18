@@ -20,7 +20,7 @@
                     "description": "The status of the resource."
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -90,7 +90,7 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -164,6 +164,16 @@
                         "string",
                         "null"
                     ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -172,39 +182,6 @@
                 "id"
             ],
             "title": "Aggregator",
-            "type": "object"
-        },
-        "BiolinkCompatibility": {
-            "additionalProperties": false,
-            "description": "Details about the compatibility of a product with the Biolink Model.",
-            "properties": {
-                "is_compatible": {
-                    "description": "Whether the product is compatible with the Biolink Model.",
-                    "type": "boolean"
-                },
-                "produced_by": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Product"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The process that made this product Biolink compatible, if it did not begin that way. This is a Product, generally a ProcessProduct, and should be described with a Product identifier."
-                },
-                "version": {
-                    "description": "The most recent version of the Biolink Model that the product is known to be compatible with, e.g., 4.2.5",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                }
-            },
-            "required": [
-                "is_compatible"
-            ],
-            "title": "BiolinkCompatibility",
             "type": "object"
         },
         "CompressionEnum": {
@@ -228,7 +205,7 @@
             "description": "A contact point for a resource or product.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -247,7 +224,7 @@
                     "description": "The status of the resource."
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -317,7 +294,7 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -391,6 +368,16 @@
                         "string",
                         "null"
                     ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -405,21 +392,20 @@
             "additionalProperties": false,
             "description": "A product that is a data model, such as an ontology or schema.",
             "properties": {
-                "biolink_compatibility": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/BiolinkCompatibility"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "Whether the product is compatible with the Biolink Model. This class contains several slots."
-                },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "compatibility": {
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
+                    "items": {
+                        "$ref": "#/$defs/StandardCompatibility"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -437,13 +423,6 @@
                         "null"
                     ]
                 },
-                "derived_from": {
-                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -455,12 +434,23 @@
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -482,7 +472,27 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "produced_by": {
+                    "description": "The process(es) that produced the product, referred to by the identifier of each process.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "product_url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
                         "string",
                         "null"
@@ -492,6 +502,16 @@
                     "description": "A main version control repository for the product.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "secondary_source": {
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -505,10 +525,13 @@
                         "null"
                     ]
                 },
-                "url": {
-                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
                     "type": [
-                        "string",
+                        "array",
                         "null"
                     ]
                 }
@@ -529,7 +552,7 @@
                     "description": "The status of the resource."
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -599,7 +622,7 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -671,6 +694,16 @@
                     "description": "The version of the resource.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 }
@@ -715,12 +748,36 @@
             "title": "DumpFormatEnum",
             "type": "string"
         },
+        "FormatEnum": {
+            "description": "The serialization/format of a product.",
+            "enum": [
+                "json",
+                "jsonld",
+                "rdfxml",
+                "ttl",
+                "ntriples",
+                "nquads",
+                "owl",
+                "obo",
+                "graphql",
+                "protobuf",
+                "shacl",
+                "shex",
+                "kgx",
+                "kgx-json",
+                "kgx-jsonl",
+                "kgx-rdf",
+                "sssom"
+            ],
+            "title": "FormatEnum",
+            "type": "string"
+        },
         "FundingSource": {
             "additionalProperties": false,
             "description": "A funding source for a resource.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -740,6 +797,23 @@
                         }
                     ],
                     "description": "The organization providing the funding."
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -752,21 +826,20 @@
             "additionalProperties": false,
             "description": "A product that is a graph, represented as nodes and edges.",
             "properties": {
-                "biolink_compatibility": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/BiolinkCompatibility"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "Whether the product is compatible with the Biolink Model. This class contains several slots."
-                },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "compatibility": {
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
+                    "items": {
+                        "$ref": "#/$defs/StandardCompatibility"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -781,13 +854,6 @@
                     },
                     "type": [
                         "array",
-                        "null"
-                    ]
-                },
-                "derived_from": {
-                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
-                    "type": [
-                        "string",
                         "null"
                     ]
                 },
@@ -809,6 +875,10 @@
                         "null"
                     ]
                 },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
@@ -820,10 +890,10 @@
                         "null"
                     ]
                 },
-                "is_kgx": {
-                    "description": "Whether the graph is in KGX format.",
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
-                        "boolean",
+                        "string",
                         "null"
                     ]
                 },
@@ -860,9 +930,12 @@
                     ]
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
                     "type": [
-                        "string",
+                        "array",
                         "null"
                     ]
                 },
@@ -876,10 +949,37 @@
                         "null"
                     ]
                 },
+                "produced_by": {
+                    "description": "The process(es) that produced the product, referred to by the identifier of each process.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "product_url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "repository": {
                     "description": "A main version control repository for the product.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "secondary_source": {
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -893,10 +993,13 @@
                         "null"
                     ]
                 },
-                "url": {
-                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
                     "type": [
-                        "string",
+                        "array",
                         "null"
                     ]
                 }
@@ -908,33 +1011,24 @@
             "title": "GraphProduct",
             "type": "object"
         },
-        "GraphStandardEnum": {
-            "description": "The standard or standards that a knowledge graph conforms to. These are not serializations, but rather the higher-level frameworks that the graph is built on.",
-            "enum": [
-                "kghub"
-            ],
-            "title": "GraphStandardEnum",
-            "type": "string"
-        },
         "GraphicalInterface": {
             "additionalProperties": false,
             "description": "A product that is a graphical interface to a resource. Similar to the \"browsers\" field in OBO Foundry.",
             "properties": {
-                "biolink_compatibility": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/BiolinkCompatibility"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "Whether the product is compatible with the Biolink Model. This class contains several slots."
-                },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "compatibility": {
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
+                    "items": {
+                        "$ref": "#/$defs/StandardCompatibility"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -952,13 +1046,6 @@
                         "null"
                     ]
                 },
-                "derived_from": {
-                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -970,12 +1057,23 @@
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -997,7 +1095,27 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "produced_by": {
+                    "description": "The process(es) that produced the product, referred to by the identifier of each process.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "product_url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
                         "string",
                         "null"
@@ -1007,6 +1125,16 @@
                     "description": "A main version control repository for the product.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "secondary_source": {
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1020,10 +1148,13 @@
                         "null"
                     ]
                 },
-                "url": {
-                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
                     "type": [
-                        "string",
+                        "array",
                         "null"
                     ]
                 }
@@ -1040,7 +1171,7 @@
             "description": "An individual person.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1088,7 +1219,7 @@
                     "description": "The status of the resource."
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1098,16 +1229,6 @@
                     "description": "The components of the knowledge graph.",
                     "items": {
                         "type": "string"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
-                "conforms_to": {
-                    "description": "The standard or standards that the knowledge graph conforms to. This is not the same as its serialization.",
-                    "items": {
-                        "$ref": "#/$defs/GraphStandardEnum"
                     },
                     "type": [
                         "array",
@@ -1206,7 +1327,7 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -1280,6 +1401,16 @@
                         "string",
                         "null"
                     ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -1295,7 +1426,7 @@
             "description": "A license for a resource or product. The id field should be a URL to the license text, e.g., https://creativecommons.org/licenses/by/4.0/",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1312,10 +1443,27 @@
                         "null"
                     ]
                 },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "logo": {
                     "description": "The URL of a logo for the license. This is added at metadata parsing time.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 }
@@ -1328,23 +1476,22 @@
         },
         "MappingProduct": {
             "additionalProperties": false,
-            "description": "A product that is a mapping between two or more data sources.",
+            "description": "A product that is a mapping between two or more data sources. The sources should be identified in the original_source field.",
             "properties": {
-                "biolink_compatibility": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/BiolinkCompatibility"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "Whether the product is compatible with the Biolink Model. This class contains several slots."
-                },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "compatibility": {
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
+                    "items": {
+                        "$ref": "#/$defs/StandardCompatibility"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1362,13 +1509,6 @@
                         "null"
                     ]
                 },
-                "derived_from": {
-                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -1380,12 +1520,23 @@
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -1407,7 +1558,27 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "produced_by": {
+                    "description": "The process(es) that produced the product, referred to by the identifier of each process.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "product_url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
                         "string",
                         "null"
@@ -1417,6 +1588,16 @@
                     "description": "A main version control repository for the product.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "secondary_source": {
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1430,10 +1611,13 @@
                         "null"
                     ]
                 },
-                "url": {
-                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
                     "type": [
-                        "string",
+                        "array",
                         "null"
                     ]
                 }
@@ -1450,7 +1634,7 @@
             "description": "A generic grouping for any identifiable entity",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1459,6 +1643,23 @@
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -1472,7 +1673,7 @@
             "description": "An organization.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1514,21 +1715,20 @@
             "additionalProperties": false,
             "description": "A product that is a process or algorithm.",
             "properties": {
-                "biolink_compatibility": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/BiolinkCompatibility"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "Whether the product is compatible with the Biolink Model. This class contains several slots."
-                },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "compatibility": {
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
+                    "items": {
+                        "$ref": "#/$defs/StandardCompatibility"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1546,13 +1746,6 @@
                         "null"
                     ]
                 },
-                "derived_from": {
-                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -1564,12 +1757,23 @@
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
                 },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -1591,7 +1795,27 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "produced_by": {
+                    "description": "The process(es) that produced the product, referred to by the identifier of each process.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "product_url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
                         "string",
                         "null"
@@ -1601,6 +1825,16 @@
                     "description": "A main version control repository for the product.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "secondary_source": {
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1614,10 +1848,13 @@
                         "null"
                     ]
                 },
-                "url": {
-                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
                     "type": [
-                        "string",
+                        "array",
                         "null"
                     ]
                 }
@@ -1629,25 +1866,179 @@
             "title": "ProcessProduct",
             "type": "object"
         },
-        "ProgrammingInterface": {
+        "Product": {
             "additionalProperties": false,
-            "description": "A product that is a programming interface (API) to a resource.",
+            "description": "A top-level class for all products in the knowledge graph registry. This includes any specific files, APIs, or any other accessible representations of a resource.",
             "properties": {
-                "biolink_compatibility": {
+                "category": {
+                    "description": "The category of the entity. This should be identical to its class name.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "compatibility": {
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
+                    "items": {
+                        "$ref": "#/$defs/StandardCompatibility"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "compression": {
+                    "$ref": "#/$defs/CompressionEnum",
+                    "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
+                },
+                "contacts": {
+                    "description": "The contact points for the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "A description of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "dump_format": {
+                    "$ref": "#/$defs/DumpFormatEnum",
+                    "description": "The format of a dump of the product as a file. Note the product may also be compressed."
+                },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
+                },
+                "id": {
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
+                    "type": "string"
+                },
+                "infores_id": {
+                    "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "license": {
                     "anyOf": [
                         {
-                            "$ref": "#/$defs/BiolinkCompatibility"
+                            "$ref": "#/$defs/License"
                         },
                         {
                             "type": "null"
                         }
                     ],
-                    "description": "Whether the product is compatible with the Biolink Model. This class contains several slots."
+                    "description": "The license of the product. This may differ from that of the parent resource."
                 },
-                "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                "name": {
+                    "description": "The human-readable name of the product.",
+                    "type": "string"
+                },
+                "original_source": {
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "produced_by": {
+                    "description": "The process(es) that produced the product, referred to by the identifier of each process.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "product_url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "repository": {
+                    "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "secondary_source": {
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "tags": {
+                    "description": "Tags associated with the product.",
+                    "items": {
+                        "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "name",
+                "id"
+            ],
+            "title": "Product",
+            "type": "object"
+        },
+        "ProgrammingInterface": {
+            "additionalProperties": false,
+            "description": "A product that is a programming interface (API) to a resource.",
+            "properties": {
+                "category": {
+                    "description": "The category of the entity. This should be identical to its class name.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "compatibility": {
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
+                    "items": {
+                        "$ref": "#/$defs/StandardCompatibility"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1672,13 +2063,6 @@
                         "null"
                     ]
                 },
-                "derived_from": {
-                    "description": "The resource that the product is derived from. This only needs to be the identifier of the resource. It may be the parent resource or another resource, e.g., an Aggregator.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -1689,6 +2073,10 @@
                 "dump_format": {
                     "$ref": "#/$defs/DumpFormatEnum",
                     "description": "The format of a dump of the product as a file. Note the product may also be compressed."
+                },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
                 },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
@@ -1715,6 +2103,13 @@
                         "null"
                     ]
                 },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "license": {
                     "anyOf": [
                         {
@@ -1731,7 +2126,27 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source of the product. This only needs to be the identifier of the resource. This may be the parent resource or another resource. Note this is not the same as components of a graph; this should only be used when a single source is known.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "produced_by": {
+                    "description": "The process(es) that produced the product, referred to by the identifier of each process.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "product_url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
                     "type": [
                         "string",
                         "null"
@@ -1741,6 +2156,16 @@
                     "description": "A main version control repository for the product.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "secondary_source": {
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1754,10 +2179,13 @@
                         "null"
                     ]
                 },
-                "url": {
-                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
                     "type": [
-                        "string",
+                        "array",
                         "null"
                     ]
                 }
@@ -1784,7 +2212,7 @@
                     ]
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1808,6 +2236,13 @@
                         "null"
                     ]
                 },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "preferred": {
                     "description": "Whether this is the preferred publication for the resource.",
                     "type": [
@@ -1819,6 +2254,16 @@
                     "description": "The title of the publication.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1863,7 +2308,7 @@
                     "description": "The status of the resource."
                 },
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -1933,7 +2378,7 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the resource. This is used to determine how to display the resource in the web interface. It should generally be 'resource_detail'.",
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -2007,6 +2452,16 @@
                         "string",
                         "null"
                     ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -2016,6 +2471,34 @@
             ],
             "title": "Resource",
             "type": "object"
+        },
+        "StandardCompatibility": {
+            "additionalProperties": false,
+            "description": "Details about the compatibility of a product with a particular standard, including data models such as Biolink Model and graph standards such as KGX.",
+            "properties": {
+                "standard": {
+                    "$ref": "#/$defs/StandardEnum",
+                    "description": "The name of the standard that the product is compatible with."
+                },
+                "version": {
+                    "description": "If applicable, the most recent version of the standard that the product is known to be compatible with, e.g., 4.2.5",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "title": "StandardCompatibility",
+            "type": "object"
+        },
+        "StandardEnum": {
+            "description": "The standard or standards that a product conforms to. These are not serializations, but rather the higher-level frameworks that the product is built on.",
+            "enum": [
+                "biolink",
+                "kghub"
+            ],
+            "title": "StandardEnum",
+            "type": "string"
         },
         "TagEnum": {
             "description": "General-purpose tags that can be associated with resources.",
@@ -2032,7 +2515,7 @@
             "description": "The usage of a resource. This may be actual, experimental, or theoretical.",
             "properties": {
                 "category": {
-                    "description": "The category of the resource. This should be identical to its class name.",
+                    "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
                         "null"
@@ -2051,6 +2534,13 @@
                 },
                 "label": {
                     "description": "The label of the usage.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
                     "type": [
                         "string",
                         "null"
@@ -2081,6 +2571,16 @@
                     "description": "The user implementing or working with the resource.",
                     "items": {
                         "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",

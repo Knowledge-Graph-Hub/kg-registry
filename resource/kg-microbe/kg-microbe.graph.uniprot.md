@@ -1,0 +1,14 @@
+---
+category: GraphProduct
+compression: targz
+description: UniProt proteins from microbes, as graph nodes and edges
+format: kgx
+id: kg-microbe.graph.uniprot
+name: KG-Microbe UniProt microbe transform
+original_source:
+- uniprot
+product_url: https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
+secondary_source:
+- kg-microbe
+layout: product_detail
+---

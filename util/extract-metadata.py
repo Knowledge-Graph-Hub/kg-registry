@@ -103,8 +103,18 @@ def validate_markdown(args):
             errs.append("%s does not contain frontmatter" % (fn))
 
         # Run LinkML validator
+        # Different objects need to be validated against different
+        # parts of the schema
         (obj, md) = load_md(fn)
-        report = validate(instance=obj, schema=SOURCE_SCHEMA_PATH, target_class="Resource")
+
+        # If this is the root of the resource, validate against the Resource class
+        # These pages will already contain child classes, so other
+        # pages don't need their own validation (it would be redundant)
+        if obj.get("id") == pathlib.Path(fn).parent.name:
+            target_class = "Resource"
+        else:
+            continue
+        report = validate(instance=obj, schema=SOURCE_SCHEMA_PATH, target_class=target_class)
         if not report.results:
             print(f"No schema validation errors found for {fn}")
         else:
@@ -139,9 +149,10 @@ def concat_resource_yaml(args):
     Output will be concatenated list of all resource metadata.
     Assumes that args.files is already sorted alphabetically.
 
-    This function also: 
+    This function also:
+    * Creates sub-pages for products as needed
     * Propagates derived products to the source Resource pages
-    * Adds a logo to the license metadata if it exists.
+    * Adds a logo to the license metadata if it exists
     """
 
     def decorate_metadata(objs):
@@ -172,6 +183,24 @@ def concat_resource_yaml(args):
                 if logo:
                     license["logo"] = logo
 
+    def generate_product_pages(objs):
+        layout_string = "layout: product_detail"
+        for obj in objs:
+            if "products" in obj:
+                for product in obj["products"]:
+                    # Check if the product already has a sub-page
+                    # We will regenerate it anyway, in case the resource
+                    # metadata has changed
+                    if "id" in product and (product["id"]).startswith(obj["id"]):
+                        fn = f"resource/{obj['id']}/{product['id']}.md"
+                        if pathlib.Path(fn).exists():
+                            print(f"Updating page for product {product['id']}")
+                        else:
+                            print(f"Creating page for product {product['id']}")
+                        # Write the product to its own page
+                        with open(fn, "w") as f:
+                            f.write("---\n" + yaml.dump(product) + layout_string + "\n---\n")
+
     def propagate_products(objs):
         """
         Propagates derived products to their source Resource pages.
@@ -185,11 +214,13 @@ def concat_resource_yaml(args):
         for obj in objs:
             if "products" in obj:
                 for product in obj["products"]:
-                    for field_name in ["original_source", "derived_from"]:
-                        if field_name in product and product[field_name] != obj["id"]:
-                            if product[field_name] not in to_be_propagated:
-                                to_be_propagated[product[field_name]] = []
-                            to_be_propagated[product[field_name]].append(deepcopy(product))
+                    for field_name in ["original_source", "secondary_source"]:
+                        if field_name in product:
+                            for resource_id in product[field_name]:
+                                if resource_id != obj["id"]:
+                                    if resource_id not in to_be_propagated:
+                                        to_be_propagated[resource_id] = []
+                                    to_be_propagated[resource_id].append(deepcopy(product))
         print(
             f"Found {len(to_be_propagated)} resources with products to propagate: {', '.join(to_be_propagated.keys())}")
 
@@ -197,7 +228,9 @@ def concat_resource_yaml(args):
         # And write newly added products to their respective Resource pages
         for obj in objs:
             if obj["id"] in to_be_propagated:
-                print(f"Writing {len(to_be_propagated[obj["id"]])} product(s) to {obj['id']} entry")
+                print(f"{len(to_be_propagated[obj["id"]])} product(s) reference {obj['id']} entry")
+
+                total_written = 0
 
                 if "products" not in obj:
                     obj["products"] = []
@@ -208,9 +241,10 @@ def concat_resource_yaml(args):
                     # Write to the concatenated list of resources
                     if product not in obj["products"]:
                         obj["products"].append(product)
+                        total_written += 1
 
                     # Write to the respective Resource page
-                    fn = f"resource/{obj['id']}.md"
+                    fn = f"resource/{obj['id']}/{obj['id']}.md"
                     (metadata, md) = load_md(fn)
                     if "products" not in metadata:
                         metadata["products"] = []
@@ -218,6 +252,11 @@ def concat_resource_yaml(args):
                         metadata["products"].append(product)
                     with open(fn, "w") as f:
                         f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
+
+                if total_written > 0:
+                    print(f" Wrote {str(total_written)} product(s) to {obj['id']} entry")
+                else:
+                    print(f" No new products written to {obj['id']} entry - may already exist")
 
     objs = []
     foundry = []
@@ -229,9 +268,14 @@ def concat_resource_yaml(args):
             cfg = yaml.load(f.read(), Loader=yaml.SafeLoader)
     for fn in args.files:
         (obj, md) = load_md(fn)
-        library.append(obj)
+        # Check if the object is actually a product
+        if obj.get("id") == pathlib.Path(fn).parent.name:
+            library.append(obj)
     objs = foundry + library + obsolete
     cfg["resources"] = objs
+
+    # Generate product pages
+    generate_product_pages(objs)
 
     # Propagate derived products to the source Resource pages
     propagate_products(objs)
