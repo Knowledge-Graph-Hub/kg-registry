@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: bigg.reaction SSSOM
+format: sssom
 id: obo-db-ingest.bigg.reaction.sssom.tsv
 license:
   id: http://bigg.ucsd.edu/license#license

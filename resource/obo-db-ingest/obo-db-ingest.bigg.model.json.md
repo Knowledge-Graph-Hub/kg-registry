@@ -1,6 +1,7 @@
 ---
 category: Product
 description: bigg.model OBO Graph JSON
+format: json
 id: obo-db-ingest.bigg.model.json
 license:
   id: http://bigg.ucsd.edu/license#license

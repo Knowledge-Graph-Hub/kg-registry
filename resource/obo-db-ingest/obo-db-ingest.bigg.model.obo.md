@@ -1,6 +1,7 @@
 ---
 category: Product
 description: bigg.model OBO
+format: obo
 id: obo-db-ingest.bigg.model.obo
 license:
   id: http://bigg.ucsd.edu/license#license

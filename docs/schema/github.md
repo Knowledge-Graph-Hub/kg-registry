@@ -23,8 +23,8 @@ URI: [kgr:github](https://w3id.org/bridge2ai/data-sheets-schema/github)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Organization](Organization.html) | An organization |  no  |
 | [Individual](Individual.html) | An individual person |  no  |
+| [Organization](Organization.html) | An organization |  no  |
 
 
 
