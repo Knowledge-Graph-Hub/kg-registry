@@ -28,11 +28,11 @@ URI: [kgr:language](https://w3id.org/bridge2ai/data-sheets-schema/language)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
 | [DataSource](DataSource.html) | A data source |  no  |
-| [KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |  no  |
 | [DataModel](DataModel.html) | A data model, such as an ontology or schema |  no  |
+| [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
 | [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
+| [KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |  no  |
 
 
 

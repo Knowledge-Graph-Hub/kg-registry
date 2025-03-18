@@ -2079,6 +2079,48 @@
             "contacts": [
                 {
                     "category": "Individual",
+                    "email": "jhc@lbl.gov",
+                    "github": "caufieldjh",
+                    "label": "J. Harry Caufield",
+                    "orcid": "0000-0001-5705-7831"
+                }
+            ],
+            "description": "A Knowledge Graph for integrating data related to Alzheimer's disease, supporting Retrieval-Augmented Generation (RAG) and AI assistant development for Alzheimer's disease research.",
+            "domain": "health",
+            "homepage_url": "https://kghub.org/kg-alzheimers/index.html",
+            "id": "kg-alzheimers",
+            "layout": "resource_detail",
+            "license": {
+                "id": "https://creativecommons.org/publicdomain/zero/1.0/",
+                "label": "CC0 1.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
+            },
+            "name": "KG-Alzheimers",
+            "products": [
+                {
+                    "category": "GraphProduct",
+                    "compression": "targz",
+                    "description": "KGX Distribution of KG-Alzheimers",
+                    "format": "kgx",
+                    "id": "kg-alzheimers.graph",
+                    "name": "KGX Distribution of KG-Alzheimers",
+                    "original_source": [
+                        "kg-alzheimers"
+                    ],
+                    "product_url": "https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz",
+                    "secondary_source": [
+                        "kg-alzheimers"
+                    ]
+                }
+            ],
+            "repository": "https://github.com/Knowledge-Graph-Hub/kg-alzheimers"
+        },
+        {
+            "activity_status": "active",
+            "category": "KnowledgeGraph",
+            "contacts": [
+                {
+                    "category": "Individual",
                     "github": "justaddcoffee",
                     "label": "Justin Reese"
                 }
