@@ -19,7 +19,7 @@ products:
   description: KGX Distribution of KG-Alzheimers
   product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
   category: GraphProduct
-  primary_source:
+  original_source:
   - kg-alzheimers
   secondary_source:
   - kg-alzheimers
