@@ -28,23 +28,23 @@ URI: [dcterms:identifier](http://purl.org/dc/terms/identifier)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
-| [GraphProduct](GraphProduct.html) | A product that is a graph, represented as nodes and edges |  no  |
-| [DataSource](DataSource.html) | A data source |  no  |
+| [FundingSource](FundingSource.html) | A funding source for a resource |  no  |
 | [Product](Product.html) | A top-level class for all products in the knowledge graph registry |  no  |
-| [DataModelProduct](DataModelProduct.html) | A product that is a data model, such as an ontology or schema |  no  |
-| [KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |  no  |
+| [DataSource](DataSource.html) | A data source |  no  |
+| [MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources |  no  |
+| [DataModel](DataModel.html) | A data model, such as an ontology or schema |  no  |
+| [GraphProduct](GraphProduct.html) | A product that is a graph, represented as nodes and edges |  no  |
+| [ProcessProduct](ProcessProduct.html) | A product that is a process or algorithm |  no  |
+| [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
+| [NamedThing](NamedThing.html) | A generic grouping for any identifiable entity |  no  |
 | [GraphicalInterface](GraphicalInterface.html) | A product that is a graphical interface to a resource |  no  |
 | [ProgrammingInterface](ProgrammingInterface.html) | A product that is a programming interface (API) to a resource |  no  |
-| [MappingProduct](MappingProduct.html) | A product that is a mapping between two or more data sources |  no  |
-| [License](License.html) | A license for a resource or product |  no  |
-| [Usage](Usage.html) | The usage of a resource |  no  |
-| [ProcessProduct](ProcessProduct.html) | A product that is a process or algorithm |  no  |
-| [DataModel](DataModel.html) | A data model, such as an ontology or schema |  no  |
-| [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
-| [FundingSource](FundingSource.html) | A funding source for a resource |  no  |
 | [Publication](Publication.html) | A publication associated with a resource |  no  |
-| [NamedThing](NamedThing.html) | A generic grouping for any identifiable entity |  no  |
+| [Usage](Usage.html) | The usage of a resource |  no  |
+| [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
+| [License](License.html) | A license for a resource or product |  no  |
+| [DataModelProduct](DataModelProduct.html) | A product that is a data model, such as an ontology or schema |  no  |
+| [KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |  no  |
 
 
 
