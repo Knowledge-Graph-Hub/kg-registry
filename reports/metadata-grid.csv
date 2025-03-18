@@ -1,10 +1,13 @@
 Resource,Activity Status,Validation Status
 automat,active,PASS
 bigg,active,PASS
+biocyc,active,PASS
 biolink,active,PASS
 bioteque,active,PASS
 cam-kp,active,PASS
+ccle,active,PASS
 cfde-ddkg,active,PASS
+chebi,active,PASS
 chembl,active,PASS
 chr,active,PASS
 cl-kg,active,PASS

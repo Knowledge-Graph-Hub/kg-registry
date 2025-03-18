@@ -1,6 +1,7 @@
 ---
 category: Product
 description: bigg.model OWL
+format: owl
 id: obo-db-ingest.bigg.model.owl
 license:
   id: http://bigg.ucsd.edu/license#license

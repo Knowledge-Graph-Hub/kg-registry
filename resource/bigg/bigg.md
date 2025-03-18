@@ -16,6 +16,7 @@ name: BiGG Models
 products:
 - category: Product
   description: bigg.compartment OBO
+  format: obo
   id: obo-db-ingest.bigg.compartment.obo
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -28,6 +29,7 @@ products:
   - obo-db-ingest
 - category: Product
   description: bigg.compartment OWL
+  format: owl
   id: obo-db-ingest.bigg.compartment.owl
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -40,6 +42,7 @@ products:
   - obo-db-ingest
 - category: Product
   description: bigg.compartment OBO Graph JSON
+  format: json
   id: obo-db-ingest.bigg.compartment.json
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -52,6 +55,7 @@ products:
   - obo-db-ingest
 - category: MappingProduct
   description: bigg.compartment SSSOM
+  format: sssom
   id: obo-db-ingest.bigg.compartment.sssom.tsv
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -65,6 +69,7 @@ products:
   - obo-db-ingest
 - category: Product
   description: bigg.metabolite OBO
+  format: obo
   id: obo-db-ingest.bigg.metabolite.obo
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -77,6 +82,7 @@ products:
   - obo-db-ingest
 - category: Product
   description: bigg.metabolite OWL
+  format: owl
   id: obo-db-ingest.bigg.metabolite.owl
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -89,6 +95,7 @@ products:
   - obo-db-ingest
 - category: Product
   description: bigg.metabolite OBO Graph JSON
+  format: json
   id: obo-db-ingest.bigg.metabolite.json
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -101,18 +108,24 @@ products:
   - obo-db-ingest
 - category: MappingProduct
   description: bigg.metabolite SSSOM
+  format: sssom
   id: obo-db-ingest.bigg.metabolite.sssom.tsv
   license:
     id: http://bigg.ucsd.edu/license#license
     label: Custom
   name: bigg.metabolite SSSOM
   original_source:
+  - chebi
   - bigg
+  - biocyc
+  - kegg
+  - reactome
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
   secondary_source:
   - obo-db-ingest
 - category: Product
   description: bigg.model OBO
+  format: obo
   id: obo-db-ingest.bigg.model.obo
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -125,6 +138,7 @@ products:
   - obo-db-ingest
 - category: Product
   description: bigg.model OWL
+  format: owl
   id: obo-db-ingest.bigg.model.owl
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -137,6 +151,7 @@ products:
   - obo-db-ingest
 - category: Product
   description: bigg.model OBO Graph JSON
+  format: json
   id: obo-db-ingest.bigg.model.json
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -149,6 +164,7 @@ products:
   - obo-db-ingest
 - category: Product
   description: bigg.reaction OBO
+  format: obo
   id: obo-db-ingest.bigg.reaction.obo
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -161,6 +177,7 @@ products:
   - obo-db-ingest
 - category: Product
   description: bigg.reaction OWL
+  format: owl
   id: obo-db-ingest.bigg.reaction.owl
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -173,6 +190,7 @@ products:
   - obo-db-ingest
 - category: Product
   description: bigg.reaction OBO Graph JSON
+  format: json
   id: obo-db-ingest.bigg.reaction.json
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -185,6 +203,7 @@ products:
   - obo-db-ingest
 - category: MappingProduct
   description: bigg.reaction SSSOM
+  format: sssom
   id: obo-db-ingest.bigg.reaction.sssom.tsv
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -193,6 +212,19 @@ products:
   original_source:
   - bigg
   product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: MappingProduct
+  description: bigg.compartment SSSOM
+  id: obo-db-ingest.bigg.compartment.sssom.tsv
+  license:
+    id: http://bigg.ucsd.edu/license#license
+    label: Custom
+  name: bigg.compartment SSSOM
+  original_source:
+  - bigg
+  - go
+  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
   secondary_source:
   - obo-db-ingest
 publications:

@@ -1,6 +1,7 @@
 ---
 category: Product
 description: bigg.reaction OWL
+format: owl
 id: obo-db-ingest.bigg.reaction.owl
 license:
   id: http://bigg.ucsd.edu/license#license

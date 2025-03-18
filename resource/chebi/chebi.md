@@ -6,8 +6,8 @@ contacts:
   label: ChEBI
 description: "Chemical Entities of Biological Interest (ChEBI) is a freely available\
   \ dictionary of molecular entities focused on \u2018small\u2019 chemical compounds."
-homepage_url: https://www.ebi.ac.uk/chebi/
 domain: chemistry and biochemistry
+homepage_url: https://www.ebi.ac.uk/chebi/
 id: chebi
 layout: resource_detail
 license:

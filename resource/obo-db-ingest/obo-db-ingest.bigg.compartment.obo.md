@@ -1,6 +1,7 @@
 ---
 category: Product
 description: bigg.compartment OBO
+format: obo
 id: obo-db-ingest.bigg.compartment.obo
 license:
   id: http://bigg.ucsd.edu/license#license
