@@ -30,6 +30,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.obo
   secondary_source:
   - obo-db-ingest
+  format: obo
 - category: Product
   description: bigg.compartment OWL
   id: obo-db-ingest.bigg.compartment.owl
@@ -42,6 +43,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.owl
   secondary_source:
   - obo-db-ingest
+  format: owl
 - category: Product
   description: bigg.compartment OBO Graph JSON
   id: obo-db-ingest.bigg.compartment.json
@@ -54,6 +56,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.json
   secondary_source:
   - obo-db-ingest
+  format: json
 - category: MappingProduct
   description: bigg.compartment SSSOM
   id: obo-db-ingest.bigg.compartment.sssom.tsv
@@ -67,6 +70,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
   secondary_source:
   - obo-db-ingest
+  format: sssom
 - category: Product
   description: bigg.metabolite OBO
   id: obo-db-ingest.bigg.metabolite.obo
@@ -79,6 +83,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.obo
   secondary_source:
   - obo-db-ingest
+  format: obo
 - category: Product
   description: bigg.metabolite OWL
   id: obo-db-ingest.bigg.metabolite.owl
@@ -91,6 +96,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.owl
   secondary_source:
   - obo-db-ingest
+  format: owl
 - category: Product
   description: bigg.metabolite OBO Graph JSON
   id: obo-db-ingest.bigg.metabolite.json
@@ -103,6 +109,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.json
   secondary_source:
   - obo-db-ingest
+  format: json
 - category: MappingProduct
   description: bigg.metabolite SSSOM
   id: obo-db-ingest.bigg.metabolite.sssom.tsv
@@ -111,10 +118,15 @@ products:
     label: Custom
   name: bigg.metabolite SSSOM
   original_source:
+  - chebi
   - bigg
+  - biocyc
+  - kegg
+  - reactome
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
   secondary_source:
   - obo-db-ingest
+  format: sssom
 - category: Product
   description: bigg.model OBO
   id: obo-db-ingest.bigg.model.obo
@@ -127,6 +139,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.obo
   secondary_source:
   - obo-db-ingest
+  format: obo
 - category: Product
   description: bigg.model OWL
   id: obo-db-ingest.bigg.model.owl
@@ -139,6 +152,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.owl
   secondary_source:
   - obo-db-ingest
+  format: owl
 - category: Product
   description: bigg.model OBO Graph JSON
   id: obo-db-ingest.bigg.model.json
@@ -151,6 +165,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.json
   secondary_source:
   - obo-db-ingest
+  format: json
 - category: Product
   description: bigg.reaction OBO
   id: obo-db-ingest.bigg.reaction.obo
@@ -163,6 +178,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.obo
   secondary_source:
   - obo-db-ingest
+  format: obo
 - category: Product
   description: bigg.reaction OWL
   id: obo-db-ingest.bigg.reaction.owl
@@ -175,6 +191,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.owl
   secondary_source:
   - obo-db-ingest
+  format: owl
 - category: Product
   description: bigg.reaction OBO Graph JSON
   id: obo-db-ingest.bigg.reaction.json
@@ -187,6 +204,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.json
   secondary_source:
   - obo-db-ingest
+  format: json
 - category: MappingProduct
   description: bigg.reaction SSSOM
   id: obo-db-ingest.bigg.reaction.sssom.tsv
@@ -199,6 +217,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.sssom.tsv
   secondary_source:
   - obo-db-ingest
+  format: sssom
 - category: Product
   description: ccle OBO
   id: obo-db-ingest.ccle.obo
@@ -206,7 +225,12 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
     label: ODbL-1.0
   name: ccle OBO
-  product_url: https://w3id.org/biopragmatics/resources/cdle/cdle.obo
+  product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.obo
+  format: obo
+  original_source:
+  - ccle
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: ccle OWL
   id: obo-db-ingest.ccle.owl
@@ -214,7 +238,12 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
     label: ODbL-1.0
   name: ccle OWL
-  product_url: https://w3id.org/biopragmatics/resources/cdle/cdle.owl
+  product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.owl
+  format: owl
+  original_source:
+  - ccle
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: ccle OBO Graph JSON
   id: obo-db-ingest.ccle.json
@@ -222,7 +251,12 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
     label: ODbL-1.0
   name: ccle OBO Graph JSON
-  product_url: https://w3id.org/biopragmatics/resources/cdle/cdle.json
+  product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.json
+  format: json
+  original_source:
+  - ccle
+  secondary_source:
+  - obo-db-ingest
 - category: MappingProduct
   description: ccle SSSOM
   id: obo-db-ingest.ccle.sssom.tsv
@@ -230,7 +264,12 @@ products:
     id: https://opendatacommons.org/licenses/odbl/1-0/
     label: ODbL-1.0
   name: ccle SSSOM
-  product_url: https://w3id.org/biopragmatics/resources/cdle/cdle.sssom.tsv
+  product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.sssom.tsv
+  format: sssom
+  original_source:
+  - ccle
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: cgnc OBO
   id: obo-db-ingest.cgnc.obo
