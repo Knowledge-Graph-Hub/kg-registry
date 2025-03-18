@@ -28,11 +28,11 @@ URI: [kgr:products](https://w3id.org/bridge2ai/data-sheets-schema/products)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [DataSource](DataSource.html) | A data source |  no  |
-| [DataModel](DataModel.html) | A data model, such as an ontology or schema |  no  |
+| [KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |  no  |
 | [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
 | [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
-| [KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |  no  |
+| [DataSource](DataSource.html) | A data source |  no  |
+| [DataModel](DataModel.html) | A data model, such as an ontology or schema |  no  |
 
 
 

@@ -23,8 +23,8 @@ URI: [kgr:url](https://w3id.org/bridge2ai/data-sheets-schema/url)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Organization](Organization.html) | An organization |  no  |
 | [Usage](Usage.html) | The usage of a resource |  no  |
+| [Organization](Organization.html) | An organization |  no  |
 
 
 

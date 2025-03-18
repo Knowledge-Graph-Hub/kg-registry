@@ -1,6 +1,7 @@
 ---
 category: Product
 description: bigg.reaction OBO
+format: obo
 id: obo-db-ingest.bigg.reaction.obo
 license:
   id: http://bigg.ucsd.edu/license#license

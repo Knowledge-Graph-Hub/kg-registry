@@ -20,6 +20,7 @@ name: OBO Database Ingestion
 products:
 - category: Product
   description: bigg.compartment OBO
+  format: obo
   id: obo-db-ingest.bigg.compartment.obo
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -30,9 +31,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.obo
   secondary_source:
   - obo-db-ingest
-  format: obo
 - category: Product
   description: bigg.compartment OWL
+  format: owl
   id: obo-db-ingest.bigg.compartment.owl
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -43,9 +44,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.owl
   secondary_source:
   - obo-db-ingest
-  format: owl
 - category: Product
   description: bigg.compartment OBO Graph JSON
+  format: json
   id: obo-db-ingest.bigg.compartment.json
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -56,9 +57,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.json
   secondary_source:
   - obo-db-ingest
-  format: json
 - category: MappingProduct
   description: bigg.compartment SSSOM
+  format: sssom
   id: obo-db-ingest.bigg.compartment.sssom.tsv
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -70,9 +71,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
   secondary_source:
   - obo-db-ingest
-  format: sssom
 - category: Product
   description: bigg.metabolite OBO
+  format: obo
   id: obo-db-ingest.bigg.metabolite.obo
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -83,9 +84,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.obo
   secondary_source:
   - obo-db-ingest
-  format: obo
 - category: Product
   description: bigg.metabolite OWL
+  format: owl
   id: obo-db-ingest.bigg.metabolite.owl
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -96,9 +97,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.owl
   secondary_source:
   - obo-db-ingest
-  format: owl
 - category: Product
   description: bigg.metabolite OBO Graph JSON
+  format: json
   id: obo-db-ingest.bigg.metabolite.json
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -109,9 +110,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.json
   secondary_source:
   - obo-db-ingest
-  format: json
 - category: MappingProduct
   description: bigg.metabolite SSSOM
+  format: sssom
   id: obo-db-ingest.bigg.metabolite.sssom.tsv
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -126,9 +127,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
   secondary_source:
   - obo-db-ingest
-  format: sssom
 - category: Product
   description: bigg.model OBO
+  format: obo
   id: obo-db-ingest.bigg.model.obo
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -139,9 +140,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.obo
   secondary_source:
   - obo-db-ingest
-  format: obo
 - category: Product
   description: bigg.model OWL
+  format: owl
   id: obo-db-ingest.bigg.model.owl
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -152,9 +153,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.owl
   secondary_source:
   - obo-db-ingest
-  format: owl
 - category: Product
   description: bigg.model OBO Graph JSON
+  format: json
   id: obo-db-ingest.bigg.model.json
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -165,9 +166,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.model/bigg.model.json
   secondary_source:
   - obo-db-ingest
-  format: json
 - category: Product
   description: bigg.reaction OBO
+  format: obo
   id: obo-db-ingest.bigg.reaction.obo
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -178,9 +179,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.obo
   secondary_source:
   - obo-db-ingest
-  format: obo
 - category: Product
   description: bigg.reaction OWL
+  format: owl
   id: obo-db-ingest.bigg.reaction.owl
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -191,9 +192,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.owl
   secondary_source:
   - obo-db-ingest
-  format: owl
 - category: Product
   description: bigg.reaction OBO Graph JSON
+  format: json
   id: obo-db-ingest.bigg.reaction.json
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -204,9 +205,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.json
   secondary_source:
   - obo-db-ingest
-  format: json
 - category: MappingProduct
   description: bigg.reaction SSSOM
+  format: sssom
   id: obo-db-ingest.bigg.reaction.sssom.tsv
   license:
     id: http://bigg.ucsd.edu/license#license
@@ -217,57 +218,56 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.sssom.tsv
   secondary_source:
   - obo-db-ingest
-  format: sssom
 - category: Product
   description: ccle OBO
+  format: obo
   id: obo-db-ingest.ccle.obo
   license:
     id: https://opendatacommons.org/licenses/odbl/1-0/
     label: ODbL-1.0
   name: ccle OBO
-  product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.obo
-  format: obo
   original_source:
   - ccle
+  product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.obo
   secondary_source:
   - obo-db-ingest
 - category: Product
   description: ccle OWL
+  format: owl
   id: obo-db-ingest.ccle.owl
   license:
     id: https://opendatacommons.org/licenses/odbl/1-0/
     label: ODbL-1.0
   name: ccle OWL
-  product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.owl
-  format: owl
   original_source:
   - ccle
+  product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.owl
   secondary_source:
   - obo-db-ingest
 - category: Product
   description: ccle OBO Graph JSON
+  format: json
   id: obo-db-ingest.ccle.json
   license:
     id: https://opendatacommons.org/licenses/odbl/1-0/
     label: ODbL-1.0
   name: ccle OBO Graph JSON
-  product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.json
-  format: json
   original_source:
   - ccle
+  product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.json
   secondary_source:
   - obo-db-ingest
 - category: MappingProduct
   description: ccle SSSOM
+  format: sssom
   id: obo-db-ingest.ccle.sssom.tsv
   license:
     id: https://opendatacommons.org/licenses/odbl/1-0/
     label: ODbL-1.0
   name: ccle SSSOM
-  product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.sssom.tsv
-  format: sssom
   original_source:
   - ccle
+  product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.sssom.tsv
   secondary_source:
   - obo-db-ingest
 - category: Product
@@ -1955,6 +1955,19 @@ products:
   original_source:
   - zfin
   product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: MappingProduct
+  description: bigg.compartment SSSOM
+  id: obo-db-ingest.bigg.compartment.sssom.tsv
+  license:
+    id: http://bigg.ucsd.edu/license#license
+    label: Custom
+  name: bigg.compartment SSSOM
+  original_source:
+  - bigg
+  - go
+  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
   secondary_source:
   - obo-db-ingest
 repository: https://github.com/biopragmatics/obo-db-ingest

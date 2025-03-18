@@ -1,6 +1,7 @@
 ---
 category: Product
 description: bigg.metabolite OBO Graph JSON
+format: json
 id: obo-db-ingest.bigg.metabolite.json
 license:
   id: http://bigg.ucsd.edu/license#license

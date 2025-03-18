@@ -25,8 +25,8 @@ URI: [kgr:label](https://w3id.org/bridge2ai/data-sheets-schema/label)
 | --- | --- | --- |
 | [Individual](Individual.html) | An individual person |  no  |
 | [FundingSource](FundingSource.html) | A funding source for a resource |  no  |
-| [Usage](Usage.html) | The usage of a resource |  no  |
 | [Organization](Organization.html) | An organization |  no  |
+| [Usage](Usage.html) | The usage of a resource |  no  |
 | [License](License.html) | A license for a resource or product |  no  |
 
 
