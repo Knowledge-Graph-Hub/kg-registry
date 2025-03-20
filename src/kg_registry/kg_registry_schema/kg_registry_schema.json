@@ -743,6 +743,7 @@
             "enum": [
                 "gpickle",
                 "pickle",
+                "neo4j",
                 "other"
             ],
             "title": "DumpFormatEnum",
