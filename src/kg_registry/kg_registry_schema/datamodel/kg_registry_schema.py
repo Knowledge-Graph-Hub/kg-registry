@@ -171,6 +171,8 @@ class DumpFormatEnum(str, Enum):
     gpickle = "gpickle"
     # The pickle format, or the output of pickling a Python object. This file ends in .pkl or .pickle.
     pickle = "pickle"
+    # The Neo4j dump format, or the output of a Neo4j database dump. The file usually ends in .db, .dump, or .db.dump.
+    neo4j = "neo4j"
     # Another format not defined here.
     other = "other"
 

@@ -709,6 +709,11 @@ enums:
           The pickle format, or the output of
           pickling a Python object.
           This file ends in .pkl or .pickle.
+      neo4j:
+        description: >-
+          The Neo4j dump format, or the output of
+          a Neo4j database dump. The file usually
+          ends in .db, .dump, or .db.dump.
       other:
         description: Another format not defined here.
 
