@@ -45,7 +45,12 @@ SCHEMA_DOC_DIR = docs/schema
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
 
-all: _config.yml registry/kgs.ttl schema-docs
+all: _config.yml registry/kgs.ttl 
+
+# This is minimal for now, but
+# will be expanded to include other docs
+# requiring dynamic updates
+docs: schema-docs
 
 pull:
 	git pull
@@ -237,7 +242,7 @@ reports/%.csv: registry/kgs.ttl sparql/%.sparql
 
 # Generate schema documentation
 # and add the frontmatter to each page
-schema-docs: | build
+schema-docs:
 	$(RUN) gen-doc -d $(SCHEMA_DOC_DIR) $(SOURCE_SCHEMA)
 	for file in $(SCHEMA_DOC_DIR)/*; do \
 		sed -i 's/\.md)/\.html)/g' $$file; \
