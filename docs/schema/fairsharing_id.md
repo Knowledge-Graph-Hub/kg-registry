@@ -28,11 +28,11 @@ URI: [kgr:fairsharing_id](https://w3id.org/bridge2ai/data-sheets-schema/fairshar
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |  no  |
-| [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
+| [DataModel](DataModel.html) | A data model, such as an ontology or schema |  no  |
 | [Aggregator](Aggregator.html) | An aggregator of data sources |  no  |
 | [DataSource](DataSource.html) | A data source |  no  |
-| [DataModel](DataModel.html) | A data model, such as an ontology or schema |  no  |
+| [Resource](Resource.html) | A top-level class for all resources in the knowledge graph registry |  no  |
+| [KnowledgeGraph](KnowledgeGraph.html) | A knowledge graph resource |  no  |
 
 
 
