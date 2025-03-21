@@ -53,30 +53,6 @@ layout: default
       </div>
       <div class="card bg-light mb-3" style="max-width: 12rem;">
         <div class="card-body">
-          <h5 class="card-title">Secondary Source(s)</h5>
-          {% if page.secondary_source %}
-          {% for source in page.secondary_source %}
-          <p class="card-text"><a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a></p>
-          {% endfor %}
-          {% else %}
-          <p class="card-text" style="font-weight: bold;">None</p>
-          {% endif %}
-        </div>
-      </div>
-      <div class="card bg-light mb-3" style="max-width: 12rem;">
-        <div class="card-body">
-          <h5 class="card-title">Original Source(s)</h5>
-          {% if page.original_source %}
-          {% for source in page.original_source %}
-          <p class="card-text"><a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a></p>
-          {% endfor %}
-          {% else %}
-          <p class="card-text" style="font-weight: bold;">None</p>
-          {% endif %}
-        </div>
-      </div>
-      <div class="card bg-light mb-3" style="max-width: 12rem;">
-        <div class="card-body">
           <h5 class="card-title">License</h5>
           {% if page.license %}
           <p class="card-text"><a href="{{page.license.id}}">{{page.license.label}}</a></p>
