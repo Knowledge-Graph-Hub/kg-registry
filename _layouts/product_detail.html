@@ -53,30 +53,6 @@ layout: default
       </div>
       <div class="card bg-light mb-3" style="max-width: 12rem;">
         <div class="card-body">
-          <h5 class="card-title">Secondary Source(s)</h5>
-          {% if page.secondary_source %}
-          {% for source in page.secondary_source %}
-          <p class="card-text"><a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a></p>
-          {% endfor %}
-          {% else %}
-          <p class="card-text" style="font-weight: bold;">None</p>
-          {% endif %}
-        </div>
-      </div>
-      <div class="card bg-light mb-3" style="max-width: 12rem;">
-        <div class="card-body">
-          <h5 class="card-title">Original Source(s)</h5>
-          {% if page.original_source %}
-          {% for source in page.original_source %}
-          <p class="card-text"><a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a></p>
-          {% endfor %}
-          {% else %}
-          <p class="card-text" style="font-weight: bold;">None</p>
-          {% endif %}
-        </div>
-      </div>
-      <div class="card bg-light mb-3" style="max-width: 12rem;">
-        <div class="card-body">
           <h5 class="card-title">License</h5>
           {% if page.license %}
           <p class="card-text"><a href="{{page.license.id}}">{{page.license.label}}</a></p>
@@ -86,6 +62,14 @@ layout: default
         </div>
       </div>
     </div>
+
+    {% if page.warnings %}
+    {% for warning in page.warnings %}
+    <div class="alert alert-warning" role="alert">
+      ⚠ {{warning}}
+    </div>
+    {% endfor %}
+    {% endif %}
 
     <!-- This diagram should probably reference the full registry,
 because some details may not be available from the current
@@ -141,16 +125,54 @@ TODO: restructure accordingly. -->
       </div>
     </div>
 
-    {% if page.warnings %}
-    {% for warning in page.warnings %}
-    <div class="alert alert-warning" role="alert">
-      ⚠ {{warning}}
+    <div class="card px-0" style="margin-bottom: 1.5em; max-width: 60rem" id="sources">
+      <div class="card-header">
+        <h4>Sources</h4>
+      </div>
+      {% if page.original_source %}
+      <h5 style="margin-left: 0.5em; margin-top: 0.5em">Original Source(s)</h5>
+      <div class="table-responsive">
+        <table class="table table-striped mb-0">
+          <thead>
+            <tr>
+              <th>ID</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for source in page.original_source %}
+            <tr>
+              <td>
+                <a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a>
+              </td>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+      {% if page.secondary_source %}
+      <h5 style="margin-left: 0.5em; margin-top: 0.5em">Secondary Source(s)</h5>
+      <div class="table-responsive">
+        <table class="table table-striped mb-0">
+          <thead>
+            <tr>
+              <th>ID</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for source in page.secondary_source %}
+            <tr>
+              <td>
+                <a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a>
+              </td>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
     </div>
-    {% endfor %}
-    {% endif %}
 
     {% if page.compatibility %}
-    <div class="card px-0" style="margin-bottom: 1.5em; max-width: 60rem" id="publications">
+    <div class="card px-0" style="margin-bottom: 1.5em; max-width: 60rem" id="compatibility">
       <div class="card-header">
         <h4>Compatibility</h4>
       </div>
