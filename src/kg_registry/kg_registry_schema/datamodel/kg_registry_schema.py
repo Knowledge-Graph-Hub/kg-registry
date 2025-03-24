@@ -219,6 +219,10 @@ class FormatEnum(str, Enum):
     sdf = "sdf"
     # A ChEBI-specific SDF format. Unlike the general SDF format, Each data item may be longer than 80 characters and has no maximum limit. Each line after the Data Header is a separate data item. For example, each new line in the synonyms is a separate synonym.
     chebi_sdf = "chebi_sdf"
+    # The Tab-Separated Values (TSV) format.
+    tsv = "tsv"
+    # The Comma-Separated Values (CSV) format.
+    csv = "csv"
 
 
 class StandardEnum(str, Enum):

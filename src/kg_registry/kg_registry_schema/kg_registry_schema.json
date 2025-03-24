@@ -770,7 +770,9 @@
                 "kgx-rdf",
                 "sssom",
                 "sdf",
-                "chebi_sdf"
+                "chebi_sdf",
+                "tsv",
+                "csv"
             ],
             "title": "FormatEnum",
             "type": "string"

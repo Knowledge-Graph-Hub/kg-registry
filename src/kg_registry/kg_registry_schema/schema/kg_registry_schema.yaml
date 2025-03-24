@@ -787,6 +787,10 @@ enums:
           Each line after the Data Header is a separate data item.
           For example, each new line in the synonyms is a separate synonym.
         meaning: https://docs.google.com/document/d/11G6SmTtQRQYFT7l9h5K0faUHiAaekcLeOweMOOTIpME/edit?pli=1&tab=t.0#heading=h.7ocxce8u265h
+      tsv:
+        description: The Tab-Separated Values (TSV) format.
+      csv:
+        description: The Comma-Separated Values (CSV) format.
 
   StandardEnum:
     description: >-
