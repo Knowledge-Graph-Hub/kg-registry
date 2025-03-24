@@ -32,6 +32,34 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
   secondary_source:
   - obo-db-ingest
+- category: Product
+  description: ChEBI chemical structures and additional data in SDF format. This file contains only the chemical structure, ChEBI identifier and ChEBI Name.
+  format: chebi_sdf
+  id: chebi.structures.lite
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: ChEBI structures (lite)
+  original_source:
+  - chebi
+  product_url: https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/ChEBI_lite_3star.sdf.gz
+  secondary_source:
+  - chebi
+  compression: gzip
+- category: Product
+  description: ChEBI chemical structures and additional data in SDF format. This file contains all the chemical structures and associated information. Note that it excludes any ontological information as ontological classes are not able to be represented as they do not contain a structure.
+  format: chebi_sdf
+  id: chebi.structures.complete
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: ChEBI structures (complete)
+  original_source:
+  - chebi
+  product_url: https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/ChEBI_complete_3star.sdf.gz
+  secondary_source:
+  - chebi
+  compression: gzip
 repository: https://github.com/ebi-chebi/ChEBI
 ---
 ChEBI
