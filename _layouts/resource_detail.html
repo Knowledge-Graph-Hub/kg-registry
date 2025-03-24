@@ -245,7 +245,7 @@ page.is_obsolete %}
             <td>{{p.category}}</td>
             <td>
               {% if p.format %}
-              <span title="This is a tooltip" style="text-decoration: underline dotted; cursor: help;">{{ p.format }}</span>
+              <span title="{{ site.data.schema.enums.FormatEnum.permissible_values[p.format].description }}" style="text-decoration: underline dotted; cursor: help;">{{ p.format }}</span>
               {% else %}
               ❔
               {% endif %}
@@ -292,7 +292,7 @@ page.is_obsolete %}
             <td>{{p.category}}</td>
             <td>
               {% if p.format %}
-              <span title="This is a tooltip" style="text-decoration: underline dotted; cursor: help;">{{ p.format }}</span>
+              <span title="{{ site.data.schema.enums.FormatEnum.permissible_values[p.format].description }}" style="text-decoration: underline dotted; cursor: help;">{{ p.format }}</span>
               {% else %}
               ❔
               {% endif %}
