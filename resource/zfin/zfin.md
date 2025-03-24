@@ -77,6 +77,7 @@ products:
   - obo-db-ingest
 - category: Product
   description: Phenotype of Zebrafish Genes
+  format: tsv
   id: zfin.gene-to-phenotype
   license:
     id: https://creativecommons.org/licenses/by/4.0/
@@ -87,9 +88,9 @@ products:
   product_url: https://zfin.org/downloads/phenoGeneCleanData_fish.txt
   secondary_source:
   - zfin
-  format: tsv
 - category: Product
   description: Phenotype of Zebrafish Genes
+  format: tsv
   id: zfin.gene-to-publication
   license:
     id: https://creativecommons.org/licenses/by/4.0/
@@ -100,7 +101,6 @@ products:
   product_url: https://zfin.org/downloads/gene_publication.txt
   secondary_source:
   - zfin
-  format: tsv
 repository: https://github.com/ZFIN/
 ---
 ZFIN

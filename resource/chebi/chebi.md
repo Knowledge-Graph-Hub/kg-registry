@@ -33,7 +33,9 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  description: ChEBI chemical structures and additional data in SDF format. This file contains only the chemical structure, ChEBI identifier and ChEBI Name.
+  compression: gzip
+  description: ChEBI chemical structures and additional data in SDF format. This file
+    contains only the chemical structure, ChEBI identifier and ChEBI Name.
   format: chebi_sdf
   id: chebi.structures.lite
   license:
@@ -45,9 +47,12 @@ products:
   product_url: https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/ChEBI_lite_3star.sdf.gz
   secondary_source:
   - chebi
-  compression: gzip
 - category: Product
-  description: ChEBI chemical structures and additional data in SDF format. This file contains all the chemical structures and associated information. Note that it excludes any ontological information as ontological classes are not able to be represented as they do not contain a structure.
+  compression: gzip
+  description: ChEBI chemical structures and additional data in SDF format. This file
+    contains all the chemical structures and associated information. Note that it
+    excludes any ontological information as ontological classes are not able to be
+    represented as they do not contain a structure.
   format: chebi_sdf
   id: chebi.structures.complete
   license:
@@ -59,7 +64,6 @@ products:
   product_url: https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/ChEBI_complete_3star.sdf.gz
   secondary_source:
   - chebi
-  compression: gzip
 repository: https://github.com/ebi-chebi/ChEBI
 ---
 ChEBI
