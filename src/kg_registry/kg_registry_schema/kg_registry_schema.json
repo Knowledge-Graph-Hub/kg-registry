@@ -768,7 +768,11 @@
                 "kgx-json",
                 "kgx-jsonl",
                 "kgx-rdf",
-                "sssom"
+                "sssom",
+                "sdf",
+                "chebi_sdf",
+                "tsv",
+                "csv"
             ],
             "title": "FormatEnum",
             "type": "string"
