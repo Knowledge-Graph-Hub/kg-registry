@@ -722,30 +722,77 @@ enums:
       The serialization/format of a product.
     permissible_values:
       json:
-        description: The JSON format.
+        description: >-
+          The JavaScript Object Notation (JSON) format,
+          a lightweight data-interchange format that's
+          easy for humans to read and write and easy
+          for machines to parse and generate.
       jsonld:
-        description: The JSON-LD format.
+        description: >-
+          The JSON for Linked Data (JSON-LD) format,
+          which extends JSON with semantics for linked data
+          by providing a method of encoding linked data using
+          JSON. It enables data in JSON to be interpreted as RDF
+          and allows JSON data to be interoperable at Web-scale.
       rdfxml:
-        description: The RDF/XML format.
+        description: >-
+          The RDF/XML format, an XML syntax for expressing RDF
+          graphs as an XML document. It was the first standardized
+          syntax for RDF and is widely used for interchange and archiving.
       ttl:
-        description: The Turtle format.
+        description: >-
+          The Turtle (TTL) format, a textual syntax for RDF that
+          allows RDF graphs to be written in a compact and natural
+          text form. Turtle provides prefixes and keywords that make
+          RDF data more readable compared to XML or N-Triples formats.
       ntriples:
-        description: The N-Triples format.
+        description: >-
+          The N-Triples format, a line-based, plain text serialization
+          format for RDF graphs. Each line contains a single RDF triple
+          consisting of subject, predicate, and object, separated by
+          whitespace and terminated by a period.
       nquads:
-        description: The N-Quads format.
+        description: >-
+          The N-Quads format, an extension of the N-Triples format
+          that adds an optional fourth element to represent the graph
+          name or context. This allows for representing multiple RDF
+          graphs in a single document while maintaining their separation.
       owl:
-        description: The OWL format.
+        description: >-
+          The Web Ontology Language (OWL) format, a semantic web language
+          designed to represent rich and complex knowledge about things
+          and their relationships. OWL builds on RDF and adds more
+          vocabulary for describing properties and classes.
       obo:
-        description: The OBO format.
+        description: >-
+          The Open Biomedical Ontologies (OBO) format, a file format for
+          representing ontologies in the biomedical domain. It's designed
+          to be simple and human-readable while supporting the necessary
+          expressivity for representing biological concepts.
       graphql:
-        description: The GraphQL format.
+        description: >-
+          The GraphQL format, a query language for APIs and a runtime for
+          executing those queries against your data. It allows clients to
+          request exactly what they need and makes it easier to evolve APIs over time.
       protobuf:
-        description: The Protobuf format.
+        description: >-
+          The Protocol Buffers (Protobuf) format, a language-neutral,
+          platform-neutral, extensible mechanism for serializing structured
+          data. It's smaller, faster, and simpler than XML, designed for
+          high-performance data interchange.
       shacl:
-        description: The SHACL format.
+        description: >-
+          The Shapes Constraint Language (SHACL) format, a language for
+          validating RDF graphs against a set of conditions. SHACL allows
+          for defining constraints on RDF graphs, including the structure,
+          values, and other features of data.
       shex:
-        description: The ShEx format.
-      kgx:
+        description: >-
+          The Shape Expressions (ShEx) format, a language for validating
+          and describing RDF data. ShEx provides a concise, human-readable
+          syntax for expressing constraints on RDF graphs, including cardinality
+          constraints and datatype restrictions.
+      kgx:  
         description: >-
           The KGX standard, which is a graph exchange format
           for knowledge graphs. By default, this assumes
@@ -788,9 +835,15 @@ enums:
           For example, each new line in the synonyms is a separate synonym.
         meaning: https://docs.google.com/document/d/11G6SmTtQRQYFT7l9h5K0faUHiAaekcLeOweMOOTIpME/edit?pli=1&tab=t.0#heading=h.7ocxce8u265h
       tsv:
-        description: The Tab-Separated Values (TSV) format.
+        description: >-
+          The Tab-Separated Values (TSV) format. It has
+          rows of data separated by newlines, and columns
+          separated by tabs.
       csv:
-        description: The Comma-Separated Values (CSV) format.
+        description: >-
+          The Comma-Separated Values (CSV) format. It has
+          rows of data separated by newlines, and columns
+          separated by commas.
 
   StandardEnum:
     description: >-
