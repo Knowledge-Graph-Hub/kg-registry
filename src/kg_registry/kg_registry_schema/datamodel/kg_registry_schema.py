@@ -181,29 +181,29 @@ class FormatEnum(str, Enum):
     """
     The serialization/format of a product.
     """
-    # The JSON format.
+    # The JavaScript Object Notation (JSON) format, a lightweight data-interchange format that's easy for humans to read and write and easy for machines to parse and generate.
     json = "json"
-    # The JSON-LD format.
+    # The JSON for Linked Data (JSON-LD) format, which extends JSON with semantics for linked data by providing a method of encoding linked data using JSON. It enables data in JSON to be interpreted as RDF and allows JSON data to be interoperable at Web-scale.
     jsonld = "jsonld"
-    # The RDF/XML format.
+    # The RDF/XML format, an XML syntax for expressing RDF graphs as an XML document. It was the first standardized syntax for RDF and is widely used for interchange and archiving.
     rdfxml = "rdfxml"
-    # The Turtle format.
+    # The Turtle (TTL) format, a textual syntax for RDF that allows RDF graphs to be written in a compact and natural text form. Turtle provides prefixes and keywords that make RDF data more readable compared to XML or N-Triples formats.
     ttl = "ttl"
-    # The N-Triples format.
+    # The N-Triples format, a line-based, plain text serialization format for RDF graphs. Each line contains a single RDF triple consisting of subject, predicate, and object, separated by whitespace and terminated by a period.
     ntriples = "ntriples"
-    # The N-Quads format.
+    # The N-Quads format, an extension of the N-Triples format that adds an optional fourth element to represent the graph name or context. This allows for representing multiple RDF graphs in a single document while maintaining their separation.
     nquads = "nquads"
-    # The OWL format.
+    # The Web Ontology Language (OWL) format, a semantic web language designed to represent rich and complex knowledge about things and their relationships. OWL builds on RDF and adds more vocabulary for describing properties and classes.
     owl = "owl"
-    # The OBO format.
+    # The Open Biomedical Ontologies (OBO) format, a file format for representing ontologies in the biomedical domain. It's designed to be simple and human-readable while supporting the necessary expressivity for representing biological concepts.
     obo = "obo"
-    # The GraphQL format.
+    # The GraphQL format, a query language for APIs and a runtime for executing those queries against your data. It allows clients to request exactly what they need and makes it easier to evolve APIs over time.
     graphql = "graphql"
-    # The Protobuf format.
+    # The Protocol Buffers (Protobuf) format, a language-neutral, platform-neutral, extensible mechanism for serializing structured data. It's smaller, faster, and simpler than XML, designed for high-performance data interchange.
     protobuf = "protobuf"
-    # The SHACL format.
+    # The Shapes Constraint Language (SHACL) format, a language for validating RDF graphs against a set of conditions. SHACL allows for defining constraints on RDF graphs, including the structure, values, and other features of data.
     shacl = "shacl"
-    # The ShEx format.
+    # The Shape Expressions (ShEx) format, a language for validating and describing RDF data. ShEx provides a concise, human-readable syntax for expressing constraints on RDF graphs, including cardinality constraints and datatype restrictions.
     shex = "shex"
     # The KGX standard, which is a graph exchange format for knowledge graphs. By default, this assumes KGX as TSV with separate node and edge files, usually named nodes.tsv and edges.tsv.
     kgx = "kgx"
@@ -219,9 +219,9 @@ class FormatEnum(str, Enum):
     sdf = "sdf"
     # A ChEBI-specific SDF format. Unlike the general SDF format, Each data item may be longer than 80 characters and has no maximum limit. Each line after the Data Header is a separate data item. For example, each new line in the synonyms is a separate synonym.
     chebi_sdf = "chebi_sdf"
-    # The Tab-Separated Values (TSV) format.
+    # The Tab-Separated Values (TSV) format. It has rows of data separated by newlines, and columns separated by tabs.
     tsv = "tsv"
-    # The Comma-Separated Values (CSV) format.
+    # The Comma-Separated Values (CSV) format. It has rows of data separated by newlines, and columns separated by commas.
     csv = "csv"
 
 
