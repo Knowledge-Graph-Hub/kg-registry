@@ -215,6 +215,10 @@ class FormatEnum(str, Enum):
     kgx_rdf = "kgx-rdf"
     # The Simple Standard for Sharing Ontological Mappings (SSSOM) format, which a format for mapping between different ontologies and other identifier systems.
     sssom = "sssom"
+    # The Structure Data File (SDF) format.
+    sdf = "sdf"
+    # A ChEBI-specific SDF format. Unlike the general SDF format, Each data item may be longer than 80 characters and has no maximum limit. Each line after the Data Header is a separate data item. For example, each new line in the synonyms is a separate synonym.
+    chebi_sdf = "chebi_sdf"
 
 
 class StandardEnum(str, Enum):
