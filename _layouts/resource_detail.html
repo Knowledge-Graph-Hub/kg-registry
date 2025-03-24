@@ -56,7 +56,7 @@ page.is_obsolete %}
       <div class="card bg-light mb-3" style="max-width: 12rem;">
         <div class="card-body">
           <h5 class="card-title">Domain</h5>
-          <p class="card-text">{{page.domain}}</p>
+          <p class="card-text"><span title="This is a tooltip" style="text-decoration: underline dotted; cursor: help;">{{ page.domain }}</span></p>
         </div>
       </div>
       <div class="card bg-light mb-3" style="max-width: 12rem;">
@@ -243,7 +243,7 @@ page.is_obsolete %}
             <td>{{p.category}}</td>
             <td>
               {% if p.format %}
-              {{ p.format }}
+              <span title="This is a tooltip" style="text-decoration: underline dotted; cursor: help;">{{ p.format }}</span>
               {% else %}
               ❔
               {% endif %}
@@ -290,7 +290,7 @@ page.is_obsolete %}
             <td>{{p.category}}</td>
             <td>
               {% if p.format %}
-              {{ p.format }}
+              <span title="This is a tooltip" style="text-decoration: underline dotted; cursor: help;">{{ p.format }}</span>
               {% else %}
               ❔
               {% endif %}
