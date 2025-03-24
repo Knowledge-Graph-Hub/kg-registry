@@ -45,7 +45,7 @@ layout: default
         <div class="card-body">
           <h5 class="card-title">Format</h5>
           {% if page.format %}
-          <p class="card-text">{{page.format}}</p>
+          <p class="card-text"><span title="This is a tooltip" style="text-decoration: underline dotted; cursor: help;">{{ page.format }}</span></p>
           {% else %}
           <p class="card-text" style="font-weight: bold;">Unknown</p>
           {% endif %}
