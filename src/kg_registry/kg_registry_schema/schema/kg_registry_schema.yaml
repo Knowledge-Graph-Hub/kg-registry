@@ -777,6 +777,16 @@ enums:
           which a format for mapping between different ontologies and
           other identifier systems.
         meaning: https://mapping-commons.github.io/sssom/
+      sdf:
+        description: The Structure Data File (SDF) format.
+        meaning: https://www.fda.gov/media/151718/download
+      chebi_sdf:
+        description: >-
+          A ChEBI-specific SDF format. Unlike the general SDF format,
+          Each data item may be longer than 80 characters and has no maximum limit.
+          Each line after the Data Header is a separate data item.
+          For example, each new line in the synonyms is a separate synonym.
+        meaning: https://docs.google.com/document/d/11G6SmTtQRQYFT7l9h5K0faUHiAaekcLeOweMOOTIpME/edit?pli=1&tab=t.0#heading=h.7ocxce8u265h
 
   StandardEnum:
     description: >-
