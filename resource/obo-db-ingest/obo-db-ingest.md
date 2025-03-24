@@ -272,36 +272,56 @@ products:
   - obo-db-ingest
 - category: Product
   description: cgnc OBO
+  format: obo
   id: obo-db-ingest.cgnc.obo
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: cgnc OBO
+  original_source:
+  - cgnc
   product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.obo
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: cgnc OWL
+  format: owl
   id: obo-db-ingest.cgnc.owl
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: cgnc OWL
+  original_source:
+  - cgnc
   product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.owl
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: cgnc OBO Graph JSON
+  format: json
   id: obo-db-ingest.cgnc.json
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: cgnc OBO Graph JSON
+  original_source:
+  - cgnc
   product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.json
+  secondary_source:
+  - obo-db-ingest
 - category: MappingProduct
   description: cgnc SSSOM
+  format: sssom
   id: obo-db-ingest.cgnc.sssom.tsv
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC-BY-4.0
   name: cgnc SSSOM
+  original_source:
+  - cgnc
   product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: chembl.compound OBO
   id: obo-db-ingest.chembl.compound.obo

@@ -3,9 +3,11 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Organization
-  label: CGNC
   email: agbase@email.arizona.edu
-description: CGNC is the Chicken Gene Nomenclature Consortium. It is  an international group of researchers interested in providing standardized gene nomenclature for chicken genes.
+  label: CGNC
+description: CGNC is the Chicken Gene Nomenclature Consortium. It is  an international
+  group of researchers interested in providing standardized gene nomenclature for
+  chicken genes.
 domain: organisms
 homepage_url: http://birdgenenames.org/cgnc/
 id: cgnc
@@ -13,8 +15,8 @@ layout: resource_detail
 name: CGNC
 products:
 - category: Product
-  description: >-
-    All CGNC public data, including CGNC ID, Entrez Gene ID, Ensembl Gene ID, gene symbol, gene name, gene synonym, curation status and last edit date.
+  description: All CGNC public data, including CGNC ID, Entrez Gene ID, Ensembl Gene
+    ID, gene symbol, gene name, gene synonym, curation status and last edit date.
   format: tsv
   id: cgnc.genes
   name: CGNC Genes
@@ -23,10 +25,62 @@ products:
   product_url: http://birdgenenames.org/cgnc/downloads.jsp?file=standard
   secondary_source:
   - cgnc
+- category: Product
+  description: cgnc OBO
+  format: obo
+  id: obo-db-ingest.cgnc.obo
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: cgnc OBO
+  original_source:
+  - cgnc
+  product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.obo
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: cgnc OWL
+  format: owl
+  id: obo-db-ingest.cgnc.owl
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: cgnc OWL
+  original_source:
+  - cgnc
+  product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.owl
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: cgnc OBO Graph JSON
+  format: json
+  id: obo-db-ingest.cgnc.json
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: cgnc OBO Graph JSON
+  original_source:
+  - cgnc
+  product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.json
+  secondary_source:
+  - obo-db-ingest
+- category: MappingProduct
+  description: cgnc SSSOM
+  format: sssom
+  id: obo-db-ingest.cgnc.sssom.tsv
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: cgnc SSSOM
+  original_source:
+  - cgnc
+  product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
 publications:
 - authors:
   - Burt DW
-  - CarrÎ W
+  - "Carr\xCE W"
   - Fell M
   - Law AS
   - Antin PB
