@@ -844,6 +844,27 @@ enums:
           The Comma-Separated Values (CSV) format. It has
           rows of data separated by newlines, and columns
           separated by commas.
+      xml:
+        description: >-
+          The Extensible Markup Language (XML) format.
+          It is a markup language that defines a set of rules
+          for encoding documents in a format that is both human-readable
+          and machine-readable.
+      fasta:
+        description: >-
+          The FASTA format, a text-based format for representing
+          nucleotide or peptide sequences. It consists of a single
+          header line followed by one or more lines of sequence data.
+      http:
+        description: >-
+          The Hypertext Transfer Protocol (HTTP) format.
+          This is a protocol for transferring data over the web.
+          If a product is in this format, it is likely an web site
+          or API.
+      postgres:
+        description: >-
+          The PostgreSQL format, a relational database management system.
+          If a product is in this format, it is likely a PostgreSQL database dump.
 
   StandardEnum:
     description: >-
