@@ -861,6 +861,10 @@ enums:
           This is a protocol for transferring data over the web.
           If a product is in this format, it is likely an web site
           or API.
+      postgres:
+        description: >-
+          The PostgreSQL format, a relational database management system.
+          If a product is in this format, it is likely a PostgreSQL database dump.
 
   StandardEnum:
     description: >-

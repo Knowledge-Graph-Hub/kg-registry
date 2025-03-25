@@ -229,6 +229,8 @@ class FormatEnum(str, Enum):
     fasta = "fasta"
     # The Hypertext Transfer Protocol (HTTP) format. This is a protocol for transferring data over the web. If a product is in this format, it is likely an web site or API.
     http = "http"
+    # The PostgreSQL format, a relational database management system. If a product is in this format, it is likely a PostgreSQL database dump.
+    postgres = "postgres"
 
 
 class StandardEnum(str, Enum):
