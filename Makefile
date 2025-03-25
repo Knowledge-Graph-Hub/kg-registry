@@ -42,10 +42,13 @@ SOURCE_SCHEMA = src/kg_registry/kg_registry_schema/schema/kg_registry_schema.yam
 # Path to the generated KG-Registry schema docs
 SCHEMA_DOC_DIR = docs/schema
 
+# Path to the generated KG-Registry schema directory
+SCHEMA_DIR = src/kg_registry/kg_registry_schema
+
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
 
-all: _config.yml registry/kgs.ttl 
+all: _config.yml registry/kgs.ttl refresh-schema
 
 # This is minimal for now, but
 # will be expanded to include other docs
@@ -79,10 +82,6 @@ reports:
 
 reports/robot:
 	mkdir -p $@
-
-# reports/principles:
-# 	mkdir -p $@
-
 
 ### Build Configuration Files
 
@@ -148,58 +147,11 @@ tox:
 ## Metadata Maintenance ##
 ##########################
 
-# Use SPARQL queries to Wikidata to enrich the
-# OBO operations committee metadata file
-.PHONY: update-operations-metadata
-update-operations-metadata:
-	python -m obofoundry update-operations-metadata
-
-### OBO Dashboard
-
-# This is the Jenkins job
-# The reports will be archived
-
-dashboard: build/dashboard.zip
-
 # Build directories
 build:
 	mkdir -p $@
 build/resource:
 	mkdir -p $@
-
-# reboot the JVM for Py4J
-reboot:
-	bash ./util/reboot.sh
-
-# This version of ROBOT includes features for starting Py4J
-# This will be changed to ROBOT release once feature is released
-#.PHONY: build/robot.jar
-build/robot.jar: | build
-	curl -o $@ -Lk \
-	https://build.obolibrary.io/job/ontodev/job/robot/job/py4j/lastSuccessfulBuild/artifact/bin/robot.jar
-
-# This version of ROBOT includes features for removing external axioms to create 'base' artefacts
-# This will be removed once this feature is released
-#.PHONY: build/robot-foreign.jar
-build/robot-foreign.jar: | build
-	curl -o $@ -Lk \
-	https://build.obolibrary.io/job/ontodev/job/robot/job/562-feature/lastSuccessfulBuild/artifact/bin/robot.jar
-
-# Generate the initial dashboard results file
-# ALWAYS make sure nothing is running on port 25333
-# Then boot Py4J gateway to ROBOT on that port
-# reports/dashboard.csv: registry/kgs.yml | \
-# reports/robot reports/principles build/resource build/robot.jar build/robot-foreign.jar
-# 	make reboot
-# 	./util/principles/dashboard.py $< $@ --big false
-
-# reports/big-dashboard.csv: reports/dashboard.csv
-# 	make reboot
-# 	./util/principles/dashboard.py registry/kgs.yml $@ --big true
-
-# # Combine the dashboard files
-# reports/dashboard-full.csv: reports/dashboard.csv reports/big-dashboard.csv registry/kgs.yml
-# 	./util/principles/sort_tables.py $^ $@
 
 # Generate the HTML grid output for dashboard
 reports/dashboard.html: reports/dashboard-full.csv
@@ -232,11 +184,6 @@ valid-purl-report.txt: registry/kgs.yml
 sparql-consistency-report.txt: registry/kgs.yml
 	./util/processor.py -i $< sparql-compare > $@.tmp && mv $@.tmp $@
 
-# output of central OBO build
-# See FAQ for more details, and also README.md
-jenkins-output.txt:
-	wget http://build.berkeleybop.org/job/simple-build-obo-all/lastBuild/consoleFull -O $@
-
 reports/%.csv: registry/kgs.ttl sparql/%.sparql
 	arq --data $< --query sparql/$*.sparql --results csv > $@.tmp && mv $@.tmp $@
 
@@ -249,5 +196,15 @@ schema-docs:
 		sed -i 's/href "..\/\([^"]*\)"/href "\1.html"/g' $$file; \
 		echo "---\nlayout: schema_doc\nmermaid: true\n---\n\n$$(cat $$file)" > $$file; \
 	done
+
+# Generate the schema files
+refresh-schema: clean-schema $(SCHEMA_DIR)/datamodel/kg_registry_schema.py $(SCHEMA_DIR)/kg_registry_schema.json
+	cp $(SCHEMA_DIR)/schema/kg_registry_schema.yaml _data/schema.yaml
+
+$(SCHEMA_DIR)/datamodel/%.py: $(SCHEMA_DIR)/schema/%.yaml
+	$(RUN) gen-pydantic $< > $@
+
+$(SCHEMA_DIR)/%.json: $(SCHEMA_DIR)/schema/%.yaml
+	$(RUN) gen-json-schema $< > $@
 
 include kg.Makefile
