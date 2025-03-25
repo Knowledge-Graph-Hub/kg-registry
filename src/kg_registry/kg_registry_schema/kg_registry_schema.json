@@ -775,7 +775,8 @@
                 "csv",
                 "xml",
                 "fasta",
-                "http"
+                "http",
+                "postgres"
             ],
             "title": "FormatEnum",
             "type": "string"
