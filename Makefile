@@ -45,7 +45,7 @@ SCHEMA_DOC_DIR = docs/schema
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
 
-all: _config.yml registry/kgs.ttl 
+all: _config.yml registry/kgs.ttl refresh-schema
 
 # This is minimal for now, but
 # will be expanded to include other docs
@@ -249,5 +249,11 @@ schema-docs:
 		sed -i 's/href "..\/\([^"]*\)"/href "\1.html"/g' $$file; \
 		echo "---\nlayout: schema_doc\nmermaid: true\n---\n\n$$(cat $$file)" > $$file; \
 	done
+
+# Generate the schema files
+refresh-schema: clean-schema $(SCHEMA_DIR)/datamodel/kg_registry_schema.py $(SCHEMA_DIR)/kg_registry_schema.json _data/schema.yaml
+
+_data/schema.yaml:
+	cp $(SCHEMA_DIR)/schema/kg_registry_schema.yaml _data/schema.yaml
 
 include kg.Makefile
