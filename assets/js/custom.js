@@ -1,6 +1,5 @@
 /*
-This script requires underscore.min.js for access to the underscore `_` object.
-This doesn't appear to be documented anywhere what it does or why.
+Custom JS for KG-Registry
 */
 
 jQuery(document).ready(function() {
@@ -15,21 +14,22 @@ jQuery(document).ready(function() {
                     url: '/search.json',
                     dataType: 'json',
                     success: function(resp) {
-                        data = _(resp).chain()
-                            .compact()
+                        // Replace _.chain().compact().map().value() with native methods
+                        data = resp
+                            .filter(p => p != null) // compact equivalent (removes null/undefined)
                             .map(function(p) {
                                 p.words = (p.title.toLowerCase() + ' ' + p.summary.toLowerCase()).match(/(\w+)/g);
                                 return p;
-                            })
-                            .value();
+                            });
                         find(phrase);
                     }
                 });
             }
 
-            matches = _(data).filter(function(p) {
-                return _(phrase).filter(function(a) {
-                    return _(p.words).any(function(b) {
+            // Replace _.filter and _.any with native methods
+            matches = data.filter(function(p) {
+                return phrase.filter(function(a) {
+                    return p.words.some(function(b) { // _.any() -> Array.some()
                         return a === b || b.indexOf(a) === 0;
                     });
                 }).length === phrase.length;
@@ -42,7 +42,9 @@ jQuery(document).ready(function() {
             $('#search-results', search).show();
             $('#close', search).show();
         };
-        $('input', search).bind("focus", _(function() {
+
+        // Use the debounce function defined later in the file
+        function handleSearch() {
             $('#search-results', search).empty();
             $('#search-results', search).hide();
             $('#close', search).hide();
@@ -52,7 +54,10 @@ jQuery(document).ready(function() {
                 find(phrase.toLowerCase().match(/(\w+)/g));
             }
             return false;
-        }).debounce(100));
+        }
+
+        // Replace _.debounce with the existing debounce function
+        $('input', search).bind("focus", debounce(handleSearch, 100));
 
         $('#close', search).bind("click", function() {
             $('#search-results', search).hide();
@@ -60,17 +65,8 @@ jQuery(document).ready(function() {
             return false;
         });
 
-        $('input', search).keyup(_(function() {
-            $('#search-results', search).empty();
-            $('#search-results', search).hide();
-            $('#close', search).hide();
-
-            var phrase = $('input', search).val();
-            if (phrase.length >= 4) {
-                find(phrase.toLowerCase().match(/(\w+)/g));
-            }
-            return false;
-        }).debounce(100));
+        // Replace _.debounce with the existing debounce function
+        $('input', search).keyup(debounce(handleSearch, 100));
     };
     search();
     //set the first character os string to uppercase
