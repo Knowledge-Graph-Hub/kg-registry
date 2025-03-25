@@ -223,6 +223,14 @@ class FormatEnum(str, Enum):
     tsv = "tsv"
     # The Comma-Separated Values (CSV) format. It has rows of data separated by newlines, and columns separated by commas.
     csv = "csv"
+    # The Extensible Markup Language (XML) format. It is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.
+    xml = "xml"
+    # The FASTA format, a text-based format for representing nucleotide or peptide sequences. It consists of a single header line followed by one or more lines of sequence data.
+    fasta = "fasta"
+    # The Hypertext Transfer Protocol (HTTP) format. This is a protocol for transferring data over the web. If a product is in this format, it is likely an web site or API.
+    http = "http"
+    # The PostgreSQL format, a relational database management system. If a product is in this format, it is likely a PostgreSQL database dump.
+    postgres = "postgres"
 
 
 class StandardEnum(str, Enum):

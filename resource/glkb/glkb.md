@@ -21,6 +21,7 @@ products:
   product_url: https://glkb.dcmb.med.umich.edu/
   secondary_source:
   - glkb
+  format: http
 publications:
 - authors:
   - Huang Y

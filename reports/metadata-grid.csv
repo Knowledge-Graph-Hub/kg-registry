@@ -52,9 +52,11 @@ obo-db-ingest,active,PASS
 ontology-kp,active,PASS
 orcid,active,PASS
 pankbase,active,PASS
+panther,active,PASS
 petagraph,active,PASS
 pheknowlator,active,PASS
 phenio,active,PASS
+pombase,active,PASS
 primekg,active,PASS
 rdbridge,active,PASS
 reacto,active,PASS

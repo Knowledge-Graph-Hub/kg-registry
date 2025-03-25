@@ -772,7 +772,11 @@
                 "sdf",
                 "chebi_sdf",
                 "tsv",
-                "csv"
+                "csv",
+                "xml",
+                "fasta",
+                "http",
+                "postgres"
             ],
             "title": "FormatEnum",
             "type": "string"
