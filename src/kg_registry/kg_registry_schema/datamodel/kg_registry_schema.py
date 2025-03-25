@@ -227,6 +227,8 @@ class FormatEnum(str, Enum):
     xml = "xml"
     # The FASTA format, a text-based format for representing nucleotide or peptide sequences. It consists of a single header line followed by one or more lines of sequence data.
     fasta = "fasta"
+    # The Hypertext Transfer Protocol (HTTP) format. This is a protocol for transferring data over the web. If a product is in this format, it is likely an web site or API.
+    http = "http"
 
 
 class StandardEnum(str, Enum):

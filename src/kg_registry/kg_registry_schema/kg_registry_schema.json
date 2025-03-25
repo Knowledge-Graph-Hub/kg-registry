@@ -774,7 +774,8 @@
                 "tsv",
                 "csv",
                 "xml",
-                "fasta"
+                "fasta",
+                "http"
             ],
             "title": "FormatEnum",
             "type": "string"
