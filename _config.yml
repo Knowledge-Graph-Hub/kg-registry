@@ -1158,6 +1158,17 @@ resources:
     product_url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
     secondary_source:
     - automat
+  - category: Product
+    compression: gzip
+    description: PostgreSQL (v14.5) database dump of all information in DrugCentral.
+    format: postgres
+    id: drugcentral.data
+    name: DrugCentral Database dump
+    original_source:
+    - drugcentral
+    product_url: https://unmtid-dbs.net/download/drugcentral.dump.11012023.sql.gz
+    secondary_source:
+    - drugcentral
   publications:
   - authors:
     - Ursu O
@@ -1318,6 +1329,7 @@ resources:
   products:
   - category: GraphicalInterface
     description: Graphical interface for GLKB
+    format: http
     id: glkb.site
     name: GLKB Site
     original_source:
@@ -4672,6 +4684,23 @@ resources:
     - pankbase
   repository: https://github.com/PanKbase-DB
 - activity_status: active
+  category: Resource
+  contacts:
+  - category: Organization
+    email: pantherfeedback@yahoo.com
+    label: PANTHER
+  description: PANTHER is a Protein ANalysis THrough Evolutionary Relationships Classification
+    System. The mission of the PANTHER knowledgebase is to support biomedical and
+    other research by providing comprehensive information about the evolution of protein-coding
+    gene families, particularly protein phylogeny, function and genetic variation
+    impacting that function.
+  domain: biological systems
+  homepage_url: https://www.pantherdb.org/
+  id: panther
+  layout: resource_detail
+  name: PANTHER
+  repository: https://data.pantherdb.org/ftp/
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -4788,6 +4817,71 @@ resources:
     - category: Organization
       label: The Monarch Initiative
       url: https://monarchinitiative.org/
+- activity_status: active
+  category: Resource
+  contacts:
+  - category: Organization
+    email: helpdesk@pombase.org
+    label: PomBase
+  description: PomBase is a comprehensive database for the fission yeast Schizosaccharomyces
+    pombe, providing structural and functional annotation, literature curation and
+    access to large-scale data sets.
+  domain: organisms
+  homepage_url: https://www.pombase.org/
+  id: pombase
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: PomBase
+  products:
+  - category: Product
+    description: Tab-delimited file of systematic ID, primary gene name (where assigned),
+      and all synonyms for each gene
+    format: tsv
+    id: pombase.genes
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: PomBase gene names
+    original_source:
+    - pombase
+    product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names.tsv
+    secondary_source:
+    - pombase
+  - category: Product
+    description: Tab-delimited file of systematic ID, primary gene name (where assigned),
+      chromosome, product description, UniProtKB accession, all synonyms, and product
+      type (protein coding, ncRNA, etc.) for each gene
+    format: tsv
+    id: pombase.genes-products
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: PomBase gene names and products
+    original_source:
+    - uniprot
+    - pombase
+    product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
+    secondary_source:
+    - pombase
+  - category: MappingProduct
+    description: Tab-delimited file with the PomBase systematic identifier for each
+      protein-coding gene mapped to the corresponding UniProt accession number
+    format: tsv
+    id: pombase.to-uniprot
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: PomBase to UniProt map
+    original_source:
+    - uniprot
+    - pombase
+    product_url: https://www.pombase.org/data/names_and_identifiers/PomBase2UniProt.tsv
+    secondary_source:
+    - pombase
+  repository: https://www.pombase.org/datasets
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -5343,7 +5437,82 @@ resources:
     product_url: https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
     secondary_source:
     - kg-microbe
-  repository: https://www.uniprot.org/
+  - category: Product
+    compression: gzip
+    description: The Reviewed (Swiss-Prot) section of UniProt proteins
+    format: kgx
+    id: uniprot.swissprot.xml
+    name: Reviewed (Swiss-Prot) XML
+    original_source:
+    - uniprot
+    product_url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.xml.gz
+    secondary_source:
+    - uniprot
+  - category: Product
+    compression: gzip
+    description: The Reviewed (Swiss-Prot) section of UniProt proteins
+    format: fasta
+    id: uniprot.swissprot.xml
+    name: Reviewed (Swiss-Prot) FASTA
+    original_source:
+    - uniprot
+    product_url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
+    secondary_source:
+    - uniprot
+  - category: Product
+    compression: gzip
+    description: The Unreviewed (TrEMBL) section of UniProt proteins
+    format: xml
+    id: uniprot.swissprot.xml
+    name: Unreviewed (TrEMBL) XML
+    original_source:
+    - uniprot
+    product_url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.xml.gz
+    secondary_source:
+    - uniprot
+  - category: Product
+    compression: gzip
+    description: The Unreviewed (TrEMBL) section of UniProt proteins
+    format: fasta
+    id: uniprot.swissprot.xml
+    name: Unreviewed (TrEMBL) FASTA
+    original_source:
+    - uniprot
+    product_url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.fasta.gz
+    secondary_source:
+    - uniprot
+  - category: Product
+    description: Tab-delimited file of systematic ID, primary gene name (where assigned),
+      chromosome, product description, UniProtKB accession, all synonyms, and product
+      type (protein coding, ncRNA, etc.) for each gene
+    format: tsv
+    id: pombase.genes-products
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: PomBase gene names and products
+    original_source:
+    - uniprot
+    - pombase
+    product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
+    secondary_source:
+    - pombase
+  - category: MappingProduct
+    description: Tab-delimited file with the PomBase systematic identifier for each
+      protein-coding gene mapped to the corresponding UniProt accession number
+    format: tsv
+    id: pombase.to-uniprot
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: PomBase to UniProt map
+    original_source:
+    - uniprot
+    - pombase
+    product_url: https://www.pombase.org/data/names_and_identifiers/PomBase2UniProt.tsv
+    secondary_source:
+    - pombase
+  repository: https://www.uniprot.org/help/downloads
 - activity_status: active
   category: DataSource
   contacts:

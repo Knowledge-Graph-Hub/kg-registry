@@ -1,6 +1,7 @@
 ---
 category: GraphicalInterface
 description: Graphical interface for GLKB
+format: http
 id: glkb.site
 name: GLKB Site
 original_source:
