@@ -538,8 +538,14 @@ jQuery(document).ready(function() {
         });
     }
     
+    // Helper function to format resource type names from camelCase to space-separated words
+    function formatResourceType(resourceType) {
+        // Convert camelCase to space-separated words (e.g., "DataModel" to "Data Model")
+        return resourceType.replace(/([a-z])([A-Z])/g, '$1 $2');
+    }
+    
     // Helper function to populate dropdowns
-    function populateDropdown(selector, items, emptyOption = true) {
+    function populateDropdown(selector, items, emptyOption = true, formatFunction = null) {
         const dropdown = $(selector);
         dropdown.empty();
         
@@ -551,8 +557,11 @@ jQuery(document).ready(function() {
         const fragment = document.createDocumentFragment();
         items.forEach(item => {
             const option = document.createElement('option');
-            option.value = item;
-            option.textContent = item;
+            option.value = item; // Keep the original value for filtering
+            
+            // Apply formatting function if provided, otherwise use the item as is
+            option.textContent = formatFunction ? formatFunction(item) : item;
+            
             fragment.appendChild(option);
         });
         
@@ -592,7 +601,9 @@ jQuery(document).ready(function() {
             
             // Populate dropdowns (avoids duplication)
             populateDropdown("#dd-domains", domains);
-            populateDropdown("#dd-resourcetypes", resourceTypes);
+            
+            // Use the formatResourceType function for resource types dropdown
+            populateDropdown("#dd-resourcetypes", resourceTypes, true, formatResourceType);
             
             // Render initial table
             renderTable(data.ontologies);
