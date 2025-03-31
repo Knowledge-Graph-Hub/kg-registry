@@ -41,7 +41,7 @@ products:
   compression: gzip
   description: The Reviewed (Swiss-Prot) section of UniProt proteins
   format: fasta
-  id: uniprot.swissprot.xml
+  id: uniprot.swissprot.fasta
   name: Reviewed (Swiss-Prot) FASTA
   original_source:
   - uniprot
@@ -52,7 +52,7 @@ products:
   compression: gzip
   description: The Unreviewed (TrEMBL) section of UniProt proteins
   format: xml
-  id: uniprot.swissprot.xml
+  id: uniprot.trembl.xml
   name: Unreviewed (TrEMBL) XML
   original_source:
   - uniprot
@@ -63,7 +63,7 @@ products:
   compression: gzip
   description: The Unreviewed (TrEMBL) section of UniProt proteins
   format: fasta
-  id: uniprot.swissprot.xml
+  id: uniprot.trembl.fasta
   name: Unreviewed (TrEMBL) FASTA
   original_source:
   - uniprot
