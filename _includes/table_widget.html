@@ -9,7 +9,7 @@
     <div class="pe-1 pb-1 filter-column">
         <div>
             <div>
-                <label for="dd-domains" style="font-size:x-small">Knowledge Graph Domains</label>
+                <label for="dd-domains" style="font-size:x-small">Knowledge Graph Domains (Resources may belong to multiple domains)</label>
                 <select id="dd-domains" class="w-100 form-select-sm">
                     <option selected value="">All Domains</option>
                 </select>
@@ -31,6 +31,7 @@
                         checked
                 />
                 <label class="form-check-label" for="groupByDomain">Group By Domain</label>
+                <label class="form-check-label" for="groupByDomain" data-bs-toggle="tooltip" title="Resources in multiple domains will appear in each domain section">(?)</label>
             </div>
             <div class="form-group form-check mt-2">
                 <input
