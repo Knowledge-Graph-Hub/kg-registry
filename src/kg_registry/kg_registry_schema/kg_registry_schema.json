@@ -43,9 +43,12 @@
                         "null"
                     ]
                 },
-                "domain": {
-                    "$ref": "#/$defs/DomainEnum",
-                    "description": "The domain that the resource is relevant to. This is not multivalued."
+                "domains": {
+                    "description": "The domain(s) that the resource is relevant to.",
+                    "items": {
+                        "$ref": "#/$defs/DomainEnum"
+                    },
+                    "type": "array"
                 },
                 "fairsharing_id": {
                     "description": "The FAIRsharing ID of the resource.",
@@ -178,7 +181,7 @@
             },
             "required": [
                 "name",
-                "domain",
+                "domains",
                 "id"
             ],
             "title": "Aggregator",
@@ -247,9 +250,12 @@
                         "null"
                     ]
                 },
-                "domain": {
-                    "$ref": "#/$defs/DomainEnum",
-                    "description": "The domain that the resource is relevant to. This is not multivalued."
+                "domains": {
+                    "description": "The domain(s) that the resource is relevant to.",
+                    "items": {
+                        "$ref": "#/$defs/DomainEnum"
+                    },
+                    "type": "array"
                 },
                 "fairsharing_id": {
                     "description": "The FAIRsharing ID of the resource.",
@@ -382,7 +388,7 @@
             },
             "required": [
                 "name",
-                "domain",
+                "domains",
                 "id"
             ],
             "title": "DataModel",
@@ -575,9 +581,12 @@
                         "null"
                     ]
                 },
-                "domain": {
-                    "$ref": "#/$defs/DomainEnum",
-                    "description": "The domain that the resource is relevant to. This is not multivalued."
+                "domains": {
+                    "description": "The domain(s) that the resource is relevant to.",
+                    "items": {
+                        "$ref": "#/$defs/DomainEnum"
+                    },
+                    "type": "array"
                 },
                 "fairsharing_id": {
                     "description": "The FAIRsharing ID of the resource.",
@@ -710,14 +719,14 @@
             },
             "required": [
                 "name",
-                "domain",
+                "domains",
                 "id"
             ],
             "title": "DataSource",
             "type": "object"
         },
         "DomainEnum": {
-            "description": "The domain that a resource is most relevant to.",
+            "description": "A domain that a resource is relevant to.",
             "enum": [
                 "upper",
                 "anatomy and development",
@@ -1289,9 +1298,12 @@
                         "null"
                     ]
                 },
-                "domain": {
-                    "$ref": "#/$defs/DomainEnum",
-                    "description": "The domain that the resource is relevant to. This is not multivalued."
+                "domains": {
+                    "description": "The domain(s) that the resource is relevant to.",
+                    "items": {
+                        "$ref": "#/$defs/DomainEnum"
+                    },
+                    "type": "array"
                 },
                 "fairsharing_id": {
                     "description": "The FAIRsharing ID of the resource.",
@@ -1424,7 +1436,7 @@
             },
             "required": [
                 "name",
-                "domain",
+                "domains",
                 "id"
             ],
             "title": "KnowledgeGraph",
@@ -2340,9 +2352,12 @@
                         "null"
                     ]
                 },
-                "domain": {
-                    "$ref": "#/$defs/DomainEnum",
-                    "description": "The domain that the resource is relevant to. This is not multivalued."
+                "domains": {
+                    "description": "The domain(s) that the resource is relevant to.",
+                    "items": {
+                        "$ref": "#/$defs/DomainEnum"
+                    },
+                    "type": "array"
                 },
                 "fairsharing_id": {
                     "description": "The FAIRsharing ID of the resource.",
@@ -2475,7 +2490,7 @@
             },
             "required": [
                 "name",
-                "domain",
+                "domains",
                 "id"
             ],
             "title": "Resource",
