@@ -1,13 +1,13 @@
 ---
 category: Product
 compression: gzip
-description: The Unreviewed (TrEMBL) section of UniProt proteins
-format: fasta
+description: The Reviewed (Swiss-Prot) section of UniProt proteins
+format: kgx
 id: uniprot.swissprot.xml
-name: Unreviewed (TrEMBL) FASTA
+name: Reviewed (Swiss-Prot) XML
 original_source:
 - uniprot
-product_url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.fasta.gz
+product_url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.xml.gz
 secondary_source:
 - uniprot
 layout: product_detail
