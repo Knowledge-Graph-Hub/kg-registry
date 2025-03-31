@@ -5,7 +5,8 @@ id: kgcl
 name: Knowledge Graph Change Language
 description: A data model for describing change operations at a high level on an ontology
   or ontology-like artefact, such as a Knowledge Graph
-domain: other
+domains:
+- other
 contacts:
 - category: Individual
   orcid: 0000-0002-6601-2165

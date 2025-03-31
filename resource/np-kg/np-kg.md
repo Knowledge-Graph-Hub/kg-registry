@@ -5,7 +5,8 @@ id: np-kg
 name: NP-KG
 description: >-
     NP-KG is a graph framework that creates a biomedical knowledge graph to identify and generate mechanistic hypotheses for pharmacokinetic natural product-drug interactions (NPDIs).
-domain: health
+domains:
+- health
 contacts:
 - category: Individual
   github: sanyabt

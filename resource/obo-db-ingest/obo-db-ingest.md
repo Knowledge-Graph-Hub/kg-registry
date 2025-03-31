@@ -9,7 +9,8 @@ contacts:
   orcid: 0000-0003-4423-4370
 description: A set of databases formalized in OBO, OWL, and OBO Graph JSON formats,
   as well as mappings and nodelists.
-domain: upper
+domains:
+- upper
 homepage_url: https://biopragmatics.github.io/obo-db-ingest/
 id: obo-db-ingest
 layout: resource_detail

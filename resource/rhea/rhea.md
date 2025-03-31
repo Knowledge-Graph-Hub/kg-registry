@@ -6,7 +6,8 @@ contacts:
   label: Rhea Team
 description: Rhea is an expert-curated knowledgebase of chemical and transport reactions
   of biological interest.
-domain: chemistry and biochemistry
+domains:
+- chemistry and biochemistry
 homepage_url: https://www.rhea-db.org/
 id: rhea
 layout: resource_detail

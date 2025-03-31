@@ -7,7 +7,8 @@ contacts:
   label: Prabha Garg
 description: >-
     MedKG is a comprehensive and continuously updated knowledge graph designed to address challenges in precision medicine and drug discovery. MedKG integrates data from 35 authoritative sources, encompassing 34 node types and 79 relationships. A Continuous Integration/Continuous Update pipeline ensures MedKG remains current, addressing a critical limitation of static knowledge bases. The integration of molecular embeddings enhances semantic analysis capabilities, bridging the gap between chemical structures and biological entities.
-domain: biological systems
+domains:
+- biological systems
 homepage_url: http://pitools.niper.ac.in/medkg/
 id: medkg
 layout: resource_detail

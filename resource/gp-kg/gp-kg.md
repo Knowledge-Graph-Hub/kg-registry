@@ -4,7 +4,8 @@ activity_status: active
 id: gp-kg
 name: GP-KG
 description: A knowledge graph for drug repurposing
-domain: health
+domains:
+- health
 contacts:
 - category: Individual
   email: rxx@case.edu

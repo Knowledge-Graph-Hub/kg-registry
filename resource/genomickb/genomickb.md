@@ -9,7 +9,8 @@ contacts:
   email: drjieliu@umich.edu
   label: Jie Liu
 description: Genomic Knowledgebase (GenomicKB) is a database that uses a knowledge graph to consolidate genomic datasets and annotations. GenomicKB integrates data from more than 30 consortia, in which the genomic entities and relationships are represented as diverse nodes and edges with properties.
-domain: biological systems
+domains:
+- biological systems
 homepage_url: https://gkb.dcmb.med.umich.edu/
 id: genomickb
 layout: resource_detail

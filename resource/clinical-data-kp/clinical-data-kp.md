@@ -4,7 +4,8 @@ activity_status: active
 id: clinical-data-kp
 name: Clinical Data KP
 description: A Translator Knowledge Provider integrating clinical data.
-domain: health
+domains:
+- health
 category: KnowledgeGraph
 contacts:
 - category: Individual

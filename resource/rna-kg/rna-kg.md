@@ -4,7 +4,8 @@ activity_status: active
 id: rna-kg
 name: RNA-KG
 description: An ontology-based KG for representing interactions involving RNA molecules.
-domain: organisms
+domains:
+- organisms
 contacts:
 - category: Individual
   github: emanuelecavalleri

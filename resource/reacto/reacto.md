@@ -4,7 +4,8 @@ activity_status: active
 id: reacto
 name: Reactome Entity Ontology (REACTO)
 description: Representation of entities in Reactome
-domain: biological systems
+domains:
+- biological systems
 contacts:
 - category: Individual
   orcid: 0000-0002-7334-7852

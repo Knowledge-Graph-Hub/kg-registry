@@ -7,7 +7,8 @@ description: >-
   ORCID is a free, unique, persistent identifier (PID)
   for individuals to use as they engage in research,
   scholarship, and innovation activities.
-domain: other
+domains:
+- other
 contacts:
 - category: Organization
   label: ORCID

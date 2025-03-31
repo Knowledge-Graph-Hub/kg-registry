@@ -4,7 +4,8 @@ activity_status: active
 id: ontology-kp
 name: Ontology KP
 description: A Translator Knowledge Provider dedicated to ontology-based services.
-domain: other
+domains:
+- other
 category: KnowledgeGraph
 contacts:
 - category: Individual

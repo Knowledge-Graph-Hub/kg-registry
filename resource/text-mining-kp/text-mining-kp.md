@@ -4,7 +4,8 @@ activity_status: active
 id: text-mining-kp
 name: Text Mining KP
 description: A Translator Knowledge Provider applying text-mined assertions.
-domain: other
+domains:
+- other
 category: KnowledgeGraph
 contacts:
 - category: Individual

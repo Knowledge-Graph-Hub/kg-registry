@@ -5,7 +5,8 @@ id: neo
 name: Noctua Entity Ontology
 description: >-
   This repository contains classes required by Noctua/Minerva for representing entities that are object of 'enabled by' relations, and similar molecular relationships. This includes: genes, protein (gene-level generic proteins and isoforms), functional RNAs, and complexes. These are represented as ontology classes, although NEO is not really an ontology in a conventional sense: there is no hierarchy, it is organized as a largely flat list.
-domain: biological systems
+domains:
+- biological systems
 contacts:
 - category: Individual
   orcid: 0000-0002-6601-2165

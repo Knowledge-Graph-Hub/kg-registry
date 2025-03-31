@@ -9,7 +9,8 @@ description: "The Gene Ontology resource, the world\u2019s largest source of inf
   \ on the functions of genes. This knowledge is both human-readable and machine-readable,\
   \ and is a foundation for computational analysis of large-scale molecular biology\
   \ and genetics experiments in biomedical research."
-domain: biological systems
+domains:
+- biological systems
 homepage_url: https://geneontology.org/
 id: go
 layout: resource_detail

@@ -5,7 +5,8 @@ id: chembl
 name: ChEMBL
 description: >-
     ChEMBL is a manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs.
-domain: chemistry and biochemistry
+domains:
+- chemistry and biochemistry
 contacts:
 - category: Organization
   label: ChEMBL

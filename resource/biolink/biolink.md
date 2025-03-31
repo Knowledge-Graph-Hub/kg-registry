@@ -8,7 +8,8 @@ contacts:
   label: Sierra Taylor Moxon
   orcid: 0000-0002-8719-7760
 description: Entity and association taxonomy and datamodel for life-sciences data
-domain: upper
+domains:
+- upper
 homepage_url: https://biolink.github.io/biolink-model/
 id: biolink
 layout: resource_detail

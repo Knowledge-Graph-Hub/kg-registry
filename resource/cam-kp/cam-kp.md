@@ -4,7 +4,8 @@ activity_status: active
 id: cam-kp
 name: Exposures KP (cam kp)
 description: The “cam-kp” Exposures Knowledge Graph (in development).
-domain: health
+domains:
+- health
 category: KnowledgeGraph
 contacts:
 - category: Individual
