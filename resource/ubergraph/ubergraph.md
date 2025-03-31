@@ -4,7 +4,8 @@ activity_status: active
 id: ubergraph
 name: Ubergraph
 description: Ubergraph is an RDF triplestore integrating OBO ontologies into a unified semantic graph
-domain: other
+domains:
+- other
 category: KnowledgeGraph
 contacts:
 - category: Individual

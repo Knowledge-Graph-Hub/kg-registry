@@ -8,7 +8,8 @@ contacts:
 description: ROBOKOP (Reasoning Over Biomedical Objects linked in Knowledge Oriented
   Pathways) is an open-source biomedical knowledge graph system that enables complex
   queries over a large-scale integrated knowledge graph.
-domain: health
+domains:
+- health
 homepage_url: http://robokop.renci.org
 id: robokop
 layout: resource_detail

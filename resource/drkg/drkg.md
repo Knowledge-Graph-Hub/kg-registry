@@ -8,7 +8,8 @@ description: >-
   comprehensive biological knowledge graph relating
   genes, compounds, diseases, biological processes,
   side effects and symptoms.
-domain: health
+domains:
+- health
 contacts:
 - category: Individual
   orcid: 0000-0002-8367-0733

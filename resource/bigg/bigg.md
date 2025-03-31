@@ -5,7 +5,8 @@ contacts:
 - category: Organization
   label: Systems Biology Research Group at the University of California, San Diego
 description: BiGG Models is a knowledgebase of genome-scale metabolic network reconstructions.
-domain: biological systems
+domains:
+- biological systems
 homepage_url: http://bigg.ucsd.edu/
 id: bigg
 layout: resource_detail

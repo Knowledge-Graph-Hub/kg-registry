@@ -4,7 +4,8 @@ activity_status: active
 id: rtx-kg2
 name: RTX-KG2
 description: A comprehensive knowledge graph from the RTX team.
-domain: health
+domains:
+- health
 contacts:
 - category: Individual
   label: Stephen Ramsey

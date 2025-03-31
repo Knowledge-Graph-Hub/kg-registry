@@ -8,7 +8,8 @@ description: >-
   collects information and maintains a database of
   the molecular biology of the yeast Saccharomyces
   cerevisiae.
-domain: biological systems
+domains:
+- biological systems
 contacts:
 - category: Organization
   email: sgd-helpdesk@lists.stanford.edu

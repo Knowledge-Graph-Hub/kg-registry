@@ -8,7 +8,8 @@ contacts:
   github: caufieldjh
   label: J. Harry Caufield
 description: An ontology for accessing and comparing knowledge concerning phenotypes across species and genetic backgrounds.
-domain: phenotype
+domains:
+- phenotype
 homepage_url: https://monarch-initiative.github.io/phenio/
 license:
   label: BSD3

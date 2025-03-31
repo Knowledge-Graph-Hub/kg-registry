@@ -4,7 +4,8 @@ activity_status: active
 id: kg-monarch
 name: KG Monarch
 description: Monarch Initiative Knowledge Graph
-domain: health
+domains:
+- health
 contacts:
 - category: Individual
   orcid: 0000-0002-6601-2165

@@ -4,7 +4,8 @@ activity_status: active
 id: chr
 name: Monochrom Ontology
 description: Automatic translation of UCSC chromosome bands to OWL classes
-domain: chemistry and biochemistry
+domains:
+- chemistry and biochemistry
 contacts:
 - category: Individual
   orcid: 0000-0002-6601-2165

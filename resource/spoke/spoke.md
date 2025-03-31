@@ -4,7 +4,8 @@ activity_status: active
 id: spoke
 name: SPOKE
 description: A Knowledge Graph from UCSF covering many aspects of biomedicine.
-domain: health
+domains:
+- health
 category: KnowledgeGraph
 contacts:
 - category: Individual

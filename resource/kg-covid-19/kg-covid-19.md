@@ -4,7 +4,8 @@ activity_status: active
 id: kg-covid-19
 name: KG-COVID-19
 description: A knowledge graph for COVID-19 and SARS-COV-2.
-domain: organisms
+domains:
+- organisms
 contacts:
 - category: Individual
   github: justaddcoffee

@@ -6,7 +6,8 @@ contacts:
   email: help@uniprot.org
   label: UniProt Consortium
 description: UniProt Protein Knowledge Base
-domain: biological systems
+domains:
+- biological systems
 homepage_url: https://www.uniprot.org/
 id: uniprot
 layout: resource_detail

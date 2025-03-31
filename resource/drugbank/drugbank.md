@@ -5,7 +5,8 @@ id: drugbank
 name: DrugBank
 description: >-
   DrugBank Online is a data resource for drugs and drug products.
-domain: health
+domains:
+- health
 contacts:
 - category: Organization
   email: info@drugbank.com

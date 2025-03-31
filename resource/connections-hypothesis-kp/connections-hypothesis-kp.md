@@ -4,7 +4,8 @@ activity_status: active
 id: connections-hypothesis-kp
 name: Connections Hypothesis KP
 description: A Translator Knowledge Provider exploring connections hypotheses.
-domain: health
+domains:
+- health
 category: KnowledgeGraph
 contacts:
 - category: Individual

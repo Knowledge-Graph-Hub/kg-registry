@@ -4,7 +4,8 @@ activity_status: active
 id: icees-kg
 name: Exposures KP (icees-kg)
 description: The ICEES-based Exposures Knowledge Graph.
-domain: health
+domains:
+- health
 category: KnowledgeGraph
 contacts:
 - category: Individual
