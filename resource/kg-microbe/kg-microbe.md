@@ -9,7 +9,9 @@ contacts:
 description: A Knowledge Graph about microbes. The KG is designed to integrate diverse
   knowledge about microbes from a variety of structured and unstructured sources.
 domains:
+- microbiology
 - organisms
+- phenotype
 homepage_url: https://kghub.org/kg-microbe/index.html
 id: kg-microbe
 layout: resource_detail
