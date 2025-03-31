@@ -222,6 +222,7 @@ page.is_obsolete %}
             <tr>
               <th>ID</th>
               <th>Name</th>
+              <th>URL</th>
               <th>Category</th>
               <th>Format</th>
               <th>Description</th>
@@ -244,6 +245,13 @@ page.is_obsolete %}
             {% endif %}
             <td>
               {{p.name}}
+            </td>
+            <td>
+              {% if p.product_url %}
+              <a href="{{p.product_url}}">{{p.product_url | split: '/' | last}}</a>
+              {% else %}
+              ❔
+              {% endif %}
             </td>
             <td>{{p.category}}</td>
             <td>
@@ -270,6 +278,7 @@ page.is_obsolete %}
             <tr>
               <th>ID</th>
               <th>Name</th>
+              <th>URL</th>
               <th>Category</th>
               <th>Format</th>
               <th>Description</th>
@@ -291,6 +300,13 @@ page.is_obsolete %}
             {% endif %}
             <td>
               {{p.name}}
+            </td>
+            <td>
+              {% if p.product_url %}
+              <a href="{{p.product_url}}">{{p.product_url | split: '/' | last}}</a>
+              {% else %}
+              ❔
+              {% endif %}
             </td>
             <td>{{p.category}}</td>
             <td>
