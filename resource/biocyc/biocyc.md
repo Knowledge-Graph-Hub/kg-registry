@@ -9,7 +9,8 @@ description: BioCyc is a collection of 20,070 Pathway/Genome Databases (PGDBs) f
   model eukaryotes and for thousands of microbes, plus software tools for exploring
   them. BioCyc is an encyclopedic reference that contains curated data from 146,000
   publications.
-domain: biological systems
+domains:
+- biological systems
 homepage_url: https://biocyc.org/
 id: biocyc
 layout: resource_detail

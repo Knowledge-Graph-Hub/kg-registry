@@ -257,14 +257,20 @@ jQuery(document).ready(function() {
                              `(${item.activity_status})` : "";
             
             // Pre-compute domain for faster sorting
-            const domainValue = item.domain ? item.domain.trim() : "Unknown";
+            const domainValues = Array.isArray(item.domains) ? 
+                             item.domains.map(d => d.trim()) : 
+                             Array.isArray(item.domain) ? // Backward compatibility
+                             item.domain.map(d => d.trim()) :
+                             [(item.domains ? item.domains.trim() : 
+                              item.domain ? item.domain.trim() : "Unknown")];
             
             return {
                 item,
                 id,
                 is_inactive,
                 is_obsolete,
-                domainValue
+                domainValues,
+                domainValue: domainValues[0] // Keep for backward compatibility
             };
         });
         
@@ -301,7 +307,11 @@ jQuery(document).ready(function() {
             // Get unique domains safely
             const domainSet = new Set();
             processedData.forEach(item => {
-                if (item && item.domainValue) {
+                if (item && item.domainValues && Array.isArray(item.domainValues)) {
+                    // Add each domain from the array to the set
+                    item.domainValues.forEach(d => domainSet.add(d));
+                } else if (item && item.domainValue) {
+                    // For backward compatibility
                     domainSet.add(item.domainValue);
                 }
             });
@@ -323,15 +333,17 @@ jQuery(document).ready(function() {
                 // Skip undefined items
                 if (!item) continue;
                 
-                const {item: originalItem, id, is_inactive, is_obsolete, domainValue} = item;
+                const {item: originalItem, id, is_inactive, is_obsolete, domainValues} = item;
                 const template = createTableRow(originalItem, id, is_inactive, is_obsolete);
                 
-                if (domain && domainValue) {
-                    // Make sure the domain exists in our buckets
-                    if (!tableDomainhtml[domainValue]) {
-                        tableDomainhtml[domainValue] = '';
-                    }
-                    tableDomainhtml[domainValue] += template;
+                if (domain && domainValues && Array.isArray(domainValues)) {
+                    // Add the row to each of its domains
+                    domainValues.forEach(domainValue => {
+                        if (!tableDomainhtml[domainValue]) {
+                            tableDomainhtml[domainValue] = '';
+                        }
+                        tableDomainhtml[domainValue] += template;
+                    });
                 } else {
                     table += template;
                 }
@@ -433,13 +445,28 @@ jQuery(document).ready(function() {
         return JsonData.filter((row) => {
             // Skip undefined values with defaults
             const id = (row.id || '').toLowerCase();
-            const domain = (row.domain || '').toLowerCase();
             const title = (row.title || '').toLowerCase();
             const description = (row.description || '').toLowerCase();
             
+            // Handle domains as array or string
+            let domainMatch = false;
+            if (Array.isArray(row.domains)) {
+                domainMatch = row.domains.some(d => 
+                    (d || '').toLowerCase().includes(term)
+                );
+            } else if (Array.isArray(row.domain)) { // Backward compatibility
+                domainMatch = row.domain.some(d => 
+                    (d || '').toLowerCase().includes(term)
+                );
+            } else if (row.domains) {
+                domainMatch = row.domains.toLowerCase().includes(term);
+            } else if (row.domain) { // Backward compatibility
+                domainMatch = row.domain.toLowerCase().includes(term);
+            }
+            
             // Check each field, return as soon as a match is found (faster)
             if (id.includes(term)) return true;
-            if (domain.includes(term)) return true;
+            if (domainMatch) return true;
             if (title.includes(term)) return true;
             if (description.includes(term)) return true;
             
@@ -470,7 +497,15 @@ jQuery(document).ready(function() {
         }
         
         if (selectedDomain) {
-            filteredData = filteredData.filter(x => x.domain && x.domain.includes(selectedDomain));
+            filteredData = filteredData.filter(x => {
+                if (Array.isArray(x.domains)) {
+                    return x.domains.some(d => d.includes(selectedDomain));
+                } else if (Array.isArray(x.domain)) { // Backward compatibility
+                    return x.domain.some(d => d.includes(selectedDomain));
+                }
+                return (x.domains && x.domains.includes(selectedDomain)) || 
+                       (x.domain && x.domain.includes(selectedDomain)); // Backward compatibility
+            });
         }
         
         // Apply search filter
@@ -525,6 +560,17 @@ jQuery(document).ready(function() {
      */
     function sortByField(data, sortField) {
         return data.sort(function(a, b) {
+            // Handle domain/domains property name change
+            if (sortField === "domain") {
+                const aValue = a.domains || a.domain || "";
+                const bValue = b.domains || b.domain || "";
+                const aString = Array.isArray(aValue) ? aValue[0] || "" : aValue;
+                const bString = Array.isArray(bValue) ? bValue[0] || "" : bValue;
+                
+                return aString.toLowerCase().localeCompare(bString.toLowerCase());
+            }
+            
+            // Handle regular fields
             if (a[sortField] === undefined || b[sortField] === undefined) {
                 return 0;
             }
@@ -583,11 +629,23 @@ jQuery(document).ready(function() {
             // Show table container immediately
             $tableMain.css('display', 'block');
             
-            // Extract domains (fix for duplication issue)
+            // Extract domains (handling multi-valued domains)
             const domains = [...new Set(
                 data.resources
-                    .filter(r => r.domain !== undefined)
-                    .map(r => r.domain.trim())
+                    .filter(r => r.domains !== undefined || r.domain !== undefined)
+                    .flatMap(r => {
+                        // Handle both array and string values, and both property names
+                        if (Array.isArray(r.domains)) {
+                            return r.domains.map(d => d.trim());
+                        } else if (Array.isArray(r.domain)) { // Backward compatibility
+                            return r.domain.map(d => d.trim());
+                        } else if (r.domains) {
+                            return [r.domains.trim()];
+                        } else if (r.domain) { // Backward compatibility
+                            return [r.domain.trim()];
+                        }
+                        return ["Unknown"];
+                    })
             )];
             domains.sort();
             
@@ -606,7 +664,7 @@ jQuery(document).ready(function() {
             populateDropdown("#dd-resourcetypes", resourceTypes, true, formatResourceType);
             
             // Render initial table
-            renderTable(data.ontologies);
+            renderTable(data.resources);
             
             // Set up event handlers with debounce
             const filterHandler = debounce(() => apply_all_filters(data), 100);

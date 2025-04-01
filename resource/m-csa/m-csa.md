@@ -12,7 +12,8 @@ description: The Mechanism and Catalytic Site Atlas (M-CSA) is a database of enz
   individual chemical steps of the mechanism as schemes with electron flow arrows.
   'Catalytic Site' entries annotate the catalytic residues necessary for the reaction,
   but do not show the mechanism.
-domain: biological systems
+domains:
+- biological systems
 homepage_url: https://www.ebi.ac.uk/thornton-srv/m-csa/
 id: m-csa
 layout: resource_detail

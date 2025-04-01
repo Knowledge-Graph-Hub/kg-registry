@@ -7,7 +7,8 @@ contacts:
   label: HUGO Gene Nomenclature Committee
 description: HGNC is the HUGO Gene Nomenclature Committee. It is a resource for approved
   human gene names.
-domain: biological systems
+domains:
+- biological systems
 fairsharing_id: FAIRsharing.amcv1e
 homepage_url: https://www.genenames.org/
 id: hgnc

@@ -27,7 +27,8 @@ resources:
     orcid: 0000-0002-5046-0246
   description: A Translator Knowledge Provider offering multiple sub-graphs in KGX
     format.
-  domain: health
+  domains:
+  - health
   homepage_url: https://robokop.renci.org/api-docs/docs/category/automat
   id: automat
   layout: resource_detail
@@ -193,7 +194,8 @@ resources:
   - category: Organization
     label: Systems Biology Research Group at the University of California, San Diego
   description: BiGG Models is a knowledgebase of genome-scale metabolic network reconstructions.
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: http://bigg.ucsd.edu/
   id: bigg
   layout: resource_detail
@@ -443,7 +445,8 @@ resources:
     model eukaryotes and for thousands of microbes, plus software tools for exploring
     them. BioCyc is an encyclopedic reference that contains curated data from 146,000
     publications.
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: https://biocyc.org/
   id: biocyc
   layout: resource_detail
@@ -478,7 +481,8 @@ resources:
     label: Sierra Taylor Moxon
     orcid: 0000-0002-8719-7760
   description: Entity and association taxonomy and datamodel for life-sciences data
-  domain: upper
+  domains:
+  - upper
   homepage_url: https://biolink.github.io/biolink-model/
   id: biolink
   layout: resource_detail
@@ -618,7 +622,8 @@ resources:
     label: Patrick Aloy
     orcid: 0000-0002-3557-0236
   description: A knowledge graph of biological entities and their associations
-  domain: health
+  domains:
+  - health
   homepage_url: https://bioteque.irbbarcelona.org/
   id: bioteque
   layout: resource_detail
@@ -666,7 +671,8 @@ resources:
     email: balhoff@renci.org
     label: Jim Balhoff
   description: The “cam-kp” Exposures Knowledge Graph (in development).
-  domain: health
+  domains:
+  - health
   homepage_url: https://github.com/ExposuresProvider/cam-kp-api
   id: cam-kp
   layout: resource_detail
@@ -682,7 +688,8 @@ resources:
     label: CCLE
   description: CCLE is the Cancer Cell Line Encyclopedia, a collaboration between
     the Broad Institute and the Novartis Institutes for Biomedical Research.
-  domain: health
+  domains:
+  - health
   homepage_url: https://sites.broadinstitute.org/ccle/
   id: ccle
   layout: resource_detail
@@ -752,7 +759,8 @@ resources:
     data within a knowledge graph. The purpose of the Data Distillery Knowledge Graph
     (DDKG) is to link multiple sources of expertly curated data, thus providing data
     integration across multiple Common Fund data coordinating centers (DCCs).
-  domain: health
+  domains:
+  - health
   homepage_url: https://dd-kg-ui.cfde.cloud/about
   id: cfde-ddkg
   layout: resource_detail
@@ -767,7 +775,8 @@ resources:
   description: CGNC is the Chicken Gene Nomenclature Consortium. It is  an international
     group of researchers interested in providing standardized gene nomenclature for
     chicken genes.
-  domain: organisms
+  domains:
+  - organisms
   homepage_url: http://birdgenenames.org/cgnc/
   id: cgnc
   layout: resource_detail
@@ -860,7 +869,8 @@ resources:
     label: ChEBI
   description: Chemical Entities of Biological Interest (ChEBI) is a freely available
     dictionary of molecular entities focused on ‘small’ chemical compounds.
-  domain: chemistry and biochemistry
+  domains:
+  - chemistry and biochemistry
   homepage_url: https://www.ebi.ac.uk/chebi/
   id: chebi
   layout: resource_detail
@@ -929,7 +939,8 @@ resources:
   description: ChEMBL is a manually curated database of bioactive molecules with drug-like
     properties. It brings together chemical, bioactivity and genomic data to aid the
     translation of genomic information into effective new drugs.
-  domain: chemistry and biochemistry
+  domains:
+  - chemistry and biochemistry
   homepage_url: https://www.ebi.ac.uk/chembl/
   id: chembl
   layout: resource_detail
@@ -976,7 +987,8 @@ resources:
     label: Christopher J. Mungall
     orcid: 0000-0002-6601-2165
   description: Automatic translation of UCSC chromosome bands to OWL classes
-  domain: chemistry and biochemistry
+  domains:
+  - chemistry and biochemistry
   homepage_url: https://monarch-initiative.github.io/monochrom/
   id: chr
   layout: resource_detail
@@ -1007,7 +1019,8 @@ resources:
   description: CL-KG is a knowledge graph integrating the cell ontology and linked
     ontologies with hierarchical annotations of single cell transcriptomics data from
     CellXGene.
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: https://cellular-semantics.github.io/CL_KG/
   id: cl-kg
   layout: resource_detail
@@ -1041,7 +1054,8 @@ resources:
     email: michel.dumontier@maastrichtuniversity.nl
     label: Michel Dumontier
   description: A Translator Knowledge Provider integrating clinical data.
-  domain: health
+  domains:
+  - health
   homepage_url: https://ncats.nih.gov/research/research-activities/translator/projects
   id: clinical-data-kp
   layout: resource_detail
@@ -1052,7 +1066,8 @@ resources:
   - category: Individual
     label: Gregory Hyde
   description: A Translator Knowledge Provider exploring connections hypotheses.
-  domain: health
+  domains:
+  - health
   homepage_url: https://github.com/di2ag/chp_api
   id: connections-hypothesis-kp
   layout: resource_detail
@@ -1064,7 +1079,8 @@ resources:
     label: Comparative Toxicogenomics Database
   description: CTD is a robust, publicly available database that aims to advance understanding
     about how environmental exposures affect human health.
-  domain: chemistry and biochemistry
+  domains:
+  - chemistry and biochemistry
   homepage_url: https://ctdbase.org/
   id: ctd
   layout: resource_detail
@@ -1094,7 +1110,8 @@ resources:
   description: Drug Repurposing Knowledge Graph (DRKG) is a comprehensive biological
     knowledge graph relating genes, compounds, diseases, biological processes, side
     effects and symptoms.
-  domain: health
+  domains:
+  - health
   homepage_url: https://github.com/gnn4dr/DRKG
   id: drkg
   layout: resource_detail
@@ -1119,7 +1136,8 @@ resources:
     email: info@drugbank.com
     label: DrugBank
   description: DrugBank Online is a data resource for drugs and drug products.
-  domain: health
+  domains:
+  - health
   homepage_url: https://www.drugbank.com/
   id: drugbank
   layout: resource_detail
@@ -1137,7 +1155,8 @@ resources:
     label: DrugCentral
   description: DrugCentral is online drug information resource created and maintained
     by Division of Translational Informatics at University of New Mexico.
-  domain: health
+  domains:
+  - health
   homepage_url: https://drugcentral.org/
   id: drugcentral
   layout: resource_detail
@@ -1190,7 +1209,8 @@ resources:
     github: diatomsRcool
     label: Anne Thessen
   description: A knowledge graph of plant traits starting with Planteome and EOL TraitBank.
-  domain: organisms
+  domains:
+  - organisms
   homepage_url: https://kghub.org/eco-kg/index.html
   id: eco-kg
   layout: resource_detail
@@ -1206,7 +1226,8 @@ resources:
     coli K-12 substr. MG1655. Use EcoCyc to search for knowledge on E. coli genes,
     regulation, and metabolism; analyze transcriptomics data; perform comparative
     analyses; and run a metabolic model.
-  domain: microbiology
+  domains:
+  - microbiology
   homepage_url: https://ecocyc.org/
   id: ecocyc
   layout: resource_detail
@@ -1242,7 +1263,8 @@ resources:
     label: Christopher J. Mungall
     orcid: 0000-0002-6601-2165
   description: Ontology rendering of the EcoSIM Land System Model
-  domain: environment
+  domains:
+  - environment
   homepage_url: http://purl.obolibrary.org/obo/ecosim.owl
   id: ecosim
   layout: resource_detail
@@ -1264,7 +1286,8 @@ resources:
   - category: Individual
     label: Jason Flannick
   description: A Translator Knowledge Provider focusing on genetic data.
-  domain: health
+  domains:
+  - health
   homepage_url: ''
   id: genetics-kp
   layout: resource_detail
@@ -1282,7 +1305,8 @@ resources:
     graph to consolidate genomic datasets and annotations. GenomicKB integrates data
     from more than 30 consortia, in which the genomic entities and relationships are
     represented as diverse nodes and edges with properties.
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: https://gkb.dcmb.med.umich.edu/
   id: genomickb
   layout: resource_detail
@@ -1321,7 +1345,8 @@ resources:
     14.6 million biomedical relationships. This collection is curated from 33 million
     PubMed abstracts and nine well-established biomedical repositories, offering an
     unparalleled wealth of knowledge for researchers and practitioners in the field.
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: https://glkb.dcmb.med.umich.edu/
   id: glkb
   layout: resource_detail
@@ -1379,7 +1404,8 @@ resources:
     on the functions of genes. This knowledge is both human-readable and machine-readable,
     and is a foundation for computational analysis of large-scale molecular biology
     and genetics experiments in biomedical research.
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: https://geneontology.org/
   id: go
   layout: resource_detail
@@ -1615,7 +1641,8 @@ resources:
     orcid: 0000-0002-6601-2165
   description: A structured framework for integrating Gene Ontology annotations into
     computable models of biological functions.
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: http://geneontology.org/go-cam/docs
   id: go-cam
   layout: resource_detail
@@ -1654,7 +1681,8 @@ resources:
     label: Chris Mungall
     orcid: 0000-0002-6601-2165
   description: Translation of JGI GOLD path terms to OWL
-  domain: environment
+  domains:
+  - environment
   homepage_url: https://gold.jgi.doe.gov/
   id: goldterms
   layout: resource_detail
@@ -1677,7 +1705,8 @@ resources:
     email: rxx@case.edu
     label: Rong Xu
   description: A knowledge graph for drug repurposing
-  domain: health
+  domains:
+  - health
   homepage_url: http://nlp.case.edu/public/data/GPKG-Predict/
   id: gp-kg
   layout: resource_detail
@@ -1721,7 +1750,8 @@ resources:
     label: HUGO Gene Nomenclature Committee
   description: HGNC is the HUGO Gene Nomenclature Committee. It is a resource for
     approved human gene names.
-  domain: biological systems
+  domains:
+  - biological systems
   fairsharing_id: FAIRsharing.amcv1e
   homepage_url: https://www.genenames.org/
   id: hgnc
@@ -1852,7 +1882,8 @@ resources:
   description: The HRA Knowledge Graph (HRA KG) is a linked open data resource that
     integrates anatomical structures, cell types, and biomarkers to support cross-scale
     biological queries.
-  domain: health
+  domains:
+  - health
   homepage_url: https://apps.humanatlas.io/dashboard/data
   id: hra-kg
   layout: resource_detail
@@ -1927,7 +1958,8 @@ resources:
     label: Kara Fecho
     orcid: 0000-0002-6704-9306
   description: The ICEES-based Exposures Knowledge Graph.
-  domain: health
+  domains:
+  - health
   homepage_url: ''
   id: icees-kg
   layout: resource_detail
@@ -1952,7 +1984,8 @@ resources:
   description: InterPro is a database of protein families, domains and functional
     sites in which identifiable features found in known proteins can be applied to
     unknown protein sequences.
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: https://www.ebi.ac.uk/interpro/
   id: interpro
   layout: resource_detail
@@ -2013,7 +2046,8 @@ resources:
     such as the cell, the organism and the ecosystem, from molecular-level information,
     especially large-scale molecular datasets generated by genome sequencing and other
     high-throughput experimental technologies.
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: https://www.genome.jp/kegg/
   id: kegg
   layout: resource_detail
@@ -2068,7 +2102,8 @@ resources:
   description: A Knowledge Graph for integrating data related to Alzheimer's disease,
     supporting Retrieval-Augmented Generation (RAG) and AI assistant development for
     Alzheimer's disease research.
-  domain: health
+  domains:
+  - health
   homepage_url: https://kghub.org/kg-alzheimers/index.html
   id: kg-alzheimers
   layout: resource_detail
@@ -2097,7 +2132,8 @@ resources:
     github: justaddcoffee
     label: Justin Reese
   description: A knowledge graph for COVID-19 and SARS-COV-2.
-  domain: organisms
+  domains:
+  - organisms
   homepage_url: https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki
   id: kg-covid-19
   layout: resource_detail
@@ -2124,7 +2160,8 @@ resources:
     github: oolonek
     label: Pierre-Marie Allard
   description: Experimental natural products knowledge graph.
-  domain: organisms
+  domains:
+  - organisms
   homepage_url: https://enpkg.commons-lab.org/
   id: kg-enp
   layout: resource_detail
@@ -2139,7 +2176,8 @@ resources:
     label: J. Harry Caufield
     orcid: 0000-0001-5705-7831
   description: a Knowledge Graph for Illuminating the Druggable Genome
-  domain: health
+  domains:
+  - health
   homepage_url: https://kghub.org/kg-idg/index.html
   id: kg-idg
   layout: resource_detail
@@ -2168,7 +2206,10 @@ resources:
     label: Marcin P. Joachimiak
   description: A Knowledge Graph about microbes. The KG is designed to integrate diverse
     knowledge about microbes from a variety of structured and unstructured sources.
-  domain: organisms
+  domains:
+  - microbiology
+  - organisms
+  - phenotype
   homepage_url: https://kghub.org/kg-microbe/index.html
   id: kg-microbe
   layout: resource_detail
@@ -2257,7 +2298,8 @@ resources:
     label: Christopher J. Mungall
     orcid: 0000-0002-6601-2165
   description: Monarch Initiative Knowledge Graph
-  domain: health
+  domains:
+  - health
   homepage_url: https://kghub.org/kg-monarch/index.html
   id: kg-monarch
   layout: resource_detail
@@ -2288,7 +2330,8 @@ resources:
     orcid: 0000-0002-6601-2165
   description: A data model for describing change operations at a high level on an
     ontology or ontology-like artefact, such as a Knowledge Graph
-  domain: other
+  domains:
+  - other
   homepage_url: https://w3id.org/kgcl
   id: kgcl
   layout: resource_detail
@@ -2330,7 +2373,8 @@ resources:
     individual chemical steps of the mechanism as schemes with electron flow arrows.
     'Catalytic Site' entries annotate the catalytic residues necessary for the reaction,
     but do not show the mechanism.
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: https://www.ebi.ac.uk/thornton-srv/m-csa/
   id: m-csa
   layout: resource_detail
@@ -2371,7 +2415,8 @@ resources:
     addressing a critical limitation of static knowledge bases. The integration of
     molecular embeddings enhances semantic analysis capabilities, bridging the gap
     between chemical structures and biological entities.
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: http://pitools.niper.ac.in/medkg/
   id: medkg
   layout: resource_detail
@@ -2407,7 +2452,8 @@ resources:
     primary and secondary metabolism, as well as associated metabolites, reactions,
     enzymes, and genes. The goal of MetaCyc is to catalog the universe of metabolism
     by storing a representative sample of each experimentally elucidated pathway.
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: https://metacyc.org/
   id: metacyc
   layout: resource_detail
@@ -2447,7 +2493,8 @@ resources:
     any genomic sequence. The standard has Terms that describe characteristics of
     a sample that addresses: What is the source of the sequence? In what kind of environment
     was the sample collected? What methods were utilized to process the sample?'
-  domain: environment
+  domains:
+  - environment
   homepage_url: https://w3id.org/mixs
   id: mixs
   layout: resource_detail
@@ -2475,7 +2522,8 @@ resources:
     orcid: 0000-0001-5998-3003
   description: MolePro is a Molecular Data Provider translating molecular scale to
     systems scale through a Reasoner API. It is a Translator Knowledge Provider.
-  domain: health
+  domains:
+  - health
   homepage_url: https://github.com/broadinstitute/molecular-data-provider/
   id: molecular-data-kp
   layout: resource_detail
@@ -2524,7 +2572,8 @@ resources:
   - category: Individual
     label: Guangrong Qin
   description: A Translator Knowledge Provider incorporating multiomics data.
-  domain: health
+  domains:
+  - health
   homepage_url: ''
   id: multiomics-kp
   layout: resource_detail
@@ -2544,7 +2593,8 @@ resources:
     RNAs, and complexes. These are represented as ontology classes, although NEO is
     not really an ontology in a conventional sense: there is no hierarchy, it is organized
     as a largely flat list.'
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: https://github.com/geneontology/neo/
   id: neo
   layout: resource_detail
@@ -2570,7 +2620,8 @@ resources:
   description: NP-KG is a graph framework that creates a biomedical knowledge graph
     to identify and generate mechanistic hypotheses for pharmacokinetic natural product-drug
     interactions (NPDIs).
-  domain: health
+  domains:
+  - health
   homepage_url: https://doi.org/10.5281/zenodo.6814507
   id: np-kg
   layout: resource_detail
@@ -2627,7 +2678,8 @@ resources:
     orcid: 0000-0003-4423-4370
   description: A set of databases formalized in OBO, OWL, and OBO Graph JSON formats,
     as well as mappings and nodelists.
-  domain: upper
+  domains:
+  - upper
   homepage_url: https://biopragmatics.github.io/obo-db-ingest/
   id: obo-db-ingest
   layout: resource_detail
@@ -4615,7 +4667,8 @@ resources:
   - category: Individual
     label: Jim Balhoff
   description: A Translator Knowledge Provider dedicated to ontology-based services.
-  domain: other
+  domains:
+  - other
   homepage_url: ''
   id: ontology-kp
   layout: resource_detail
@@ -4628,7 +4681,8 @@ resources:
     label: ORCID
   description: ORCID is a free, unique, persistent identifier (PID) for individuals
     to use as they engage in research, scholarship, and innovation activities.
-  domain: other
+  domains:
+  - other
   homepage_url: https://orcid.org/
   id: orcid
   layout: resource_detail
@@ -4648,7 +4702,8 @@ resources:
     the human pancreas and diabetes. The PanKbase collective aims to integrate diverse
     type 1 diabetes (T1D) datasets with expert-curated knowledge in a centralized,
     open-source data hub.
-  domain: health
+  domains:
+  - health
   homepage_url: https://pankbase.org/
   id: pankbase
   layout: resource_detail
@@ -4694,7 +4749,8 @@ resources:
     other research by providing comprehensive information about the evolution of protein-coding
     gene families, particularly protein phylogeny, function and genetic variation
     impacting that function.
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: https://www.pantherdb.org/
   id: panther
   layout: resource_detail
@@ -4710,7 +4766,8 @@ resources:
     and clinical data, built on the Unified Biomedical Knowledge Graph (UBKG). Petagraph
     connects genomic, transcriptomic, proteomic, and clinical data, supporting advanced
     biomedical research and machine learning applications.
-  domain: health
+  domains:
+  - health
   homepage_url: https://github.com/TaylorResearchLab/Petagraph
   id: petagraph
   layout: resource_detail
@@ -4740,7 +4797,8 @@ resources:
     to build complex KGs that are Semantic Web compliant and amenable to automatic
     Web Ontology Language (OWL) reasoning, generate contemporary property graphs,
     and are importable by today’s popular graph toolkits.
-  domain: organisms
+  domains:
+  - organisms
   homepage_url: https://github.com/callahantiff/PheKnowLator
   id: pheknowlator
   layout: resource_detail
@@ -4758,7 +4816,8 @@ resources:
     label: J. Harry Caufield
   description: An ontology for accessing and comparing knowledge concerning phenotypes
     across species and genetic backgrounds.
-  domain: phenotype
+  domains:
+  - phenotype
   homepage_url: https://monarch-initiative.github.io/phenio/
   id: phenio
   layout: resource_detail
@@ -4826,7 +4885,8 @@ resources:
   description: PomBase is a comprehensive database for the fission yeast Schizosaccharomyces
     pombe, providing structural and functional annotation, literature curation and
     access to large-scale data sets.
-  domain: organisms
+  domains:
+  - organisms
   homepage_url: https://www.pombase.org/
   id: pombase
   layout: resource_detail
@@ -4892,7 +4952,8 @@ resources:
   description: PrimeKG (Precision Medicine Knowledge Graph) integrates 20 high-quality
     biomedical resources to describe 17,080 diseases with over 4 million relationships
     across ten major biological scales.
-  domain: health
+  domains:
+  - health
   homepage_url: https://zitniklab.hms.harvard.edu/projects/PrimeKG
   id: primekg
   layout: resource_detail
@@ -4920,7 +4981,8 @@ resources:
   description: Rare Disease Bridge (RDBridge) offers search functions for genes, potential
     drugs, pathways, literature, and medical imaging data that will support mechanistic
     research, drug development, diagnosis, and treatment for rare diseases.
-  domain: health
+  domains:
+  - health
   homepage_url: http://rdb.lifesynther.com/
   id: rdbridge
   layout: resource_detail
@@ -4950,7 +5012,8 @@ resources:
     label: Benjamin M. Good
     orcid: 0000-0002-7334-7852
   description: Representation of entities in Reactome
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
   id: reacto
   layout: resource_detail
@@ -4965,7 +5028,8 @@ resources:
     label: Christopher J. Mungall
     orcid: 0000-0002-6601-2165
   description: Reactome from Biopax
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: https://reactome.org
   id: reactome
   layout: resource_detail
@@ -5023,7 +5087,8 @@ resources:
     label: Rhea Team
   description: Rhea is an expert-curated knowledgebase of chemical and transport reactions
     of biological interest.
-  domain: chemistry and biochemistry
+  domains:
+  - chemistry and biochemistry
   homepage_url: https://www.rhea-db.org/
   id: rhea
   layout: resource_detail
@@ -5119,7 +5184,8 @@ resources:
     github: emanuelecavalleri
     label: Emanuele Cavalleri
   description: An ontology-based KG for representing interactions involving RNA molecules.
-  domain: organisms
+  domains:
+  - organisms
   homepage_url: RNA-KG.anacleto.di.unimi.it/
   id: rna-kg
   layout: resource_detail
@@ -5134,7 +5200,8 @@ resources:
   description: ROBOKOP (Reasoning Over Biomedical Objects linked in Knowledge Oriented
     Pathways) is an open-source biomedical knowledge graph system that enables complex
     queries over a large-scale integrated knowledge graph.
-  domain: health
+  domains:
+  - health
   homepage_url: http://robokop.renci.org
   id: robokop
   layout: resource_detail
@@ -5183,7 +5250,8 @@ resources:
     label: Stephen Ramsey
     orcid: 0000-0002-2168-5403
   description: A comprehensive knowledge graph from the RTX team.
-  domain: health
+  domains:
+  - health
   homepage_url: https://github.com/RTXteam/RTX-KG2
   id: rtx-kg2
   layout: resource_detail
@@ -5211,7 +5279,8 @@ resources:
     github: emmaco
     label: Emma Cooke
   description: Data produced by SciBite
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: https://scibite.com/
   id: scibite
   layout: resource_detail
@@ -5242,7 +5311,8 @@ resources:
   - category: Individual
     label: Chunlei Wu
   description: A Translator Knowledge Provider
-  domain: health
+  domains:
+  - health
   homepage_url: ''
   id: service-kp
   layout: resource_detail
@@ -5256,7 +5326,8 @@ resources:
     label: SGD Helpdesk
   description: The Saccharomyces Genome Database (SGD) project collects information
     and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae.
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: https://www.yeastgenome.org/
   id: sgd
   layout: resource_detail
@@ -5268,7 +5339,8 @@ resources:
     github: pnrobinson
     label: Peter Robinson
   description: A graph of synthetic lethal interactions.
-  domain: organisms
+  domains:
+  - organisms
   homepage_url: https://kghub.io/sldb/
   id: sldb
   layout: resource_detail
@@ -5280,7 +5352,8 @@ resources:
   - category: Individual
     label: Sui Huang, Sergio Baranzini
   description: A Knowledge Graph from UCSF covering many aspects of biomedicine.
-  domain: health
+  domains:
+  - health
   homepage_url: https://spoke.ucsf.edu/
   id: spoke
   layout: resource_detail
@@ -5295,7 +5368,8 @@ resources:
     label: Kevin Schaper
     orcid: 0000-0003-3311-7320
   description: The Monarch Initiative’s SRI reference knowledge graph.
-  domain: health
+  domains:
+  - health
   homepage_url: ''
   id: sri-reference-kg
   layout: resource_detail
@@ -5315,7 +5389,8 @@ resources:
     email: swisslipids@sib.swiss
     label: SwissLipids team
   description: SwissLipids is a knowledge resource for lipids and their biology.
-  domain: chemistry and biochemistry
+  domains:
+  - chemistry and biochemistry
   homepage_url: https://www.swisslipids.org/
   id: swisslipid
   layout: resource_detail
@@ -5347,7 +5422,8 @@ resources:
   - category: Individual
     label: Edgar Gatica
   description: A Translator Knowledge Provider applying text-mined assertions.
-  domain: other
+  domains:
+  - other
   homepage_url: ''
   id: text-mining-kp
   layout: resource_detail
@@ -5370,7 +5446,8 @@ resources:
     orcid: 0000-0002-8688-6599
   description: Ubergraph is an RDF triplestore integrating OBO ontologies into a unified
     semantic graph
-  domain: other
+  domains:
+  - other
   homepage_url: https://ubergraph.apps.renci.org/sparql
   id: ubergraph
   layout: resource_detail
@@ -5416,7 +5493,8 @@ resources:
     email: help@uniprot.org
     label: UniProt Consortium
   description: UniProt Protein Knowledge Base
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: https://www.uniprot.org/
   id: uniprot
   layout: resource_detail
@@ -5520,7 +5598,8 @@ resources:
     email: zfinadmn@zfin.org
     label: Zebrafish Information Network
   description: Zebrafish Information Network, including the Zebrafish Anatomical Ontology
-  domain: biological systems
+  domains:
+  - biological systems
   homepage_url: https://zfin.org/
   id: zfin
   layout: resource_detail

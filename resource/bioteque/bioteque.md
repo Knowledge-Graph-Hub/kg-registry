@@ -4,7 +4,8 @@ activity_status: active
 id: bioteque
 name: Bioteque
 description: A knowledge graph of biological entities and their associations
-domain: health
+domains:
+- health
 contacts:
 - category: Individual
   email: patrick.aloy@irbbarcelona.org

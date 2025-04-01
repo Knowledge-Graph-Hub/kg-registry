@@ -4,7 +4,8 @@ activity_status: active
 id: hra-kg
 name: Human Reference Atlas Knowledge Graph (HRA KG)
 description: The HRA Knowledge Graph (HRA KG) is a linked open data resource that integrates anatomical structures, cell types, and biomarkers to support cross-scale biological queries.
-domain: health
+domains:
+- health
 contacts:
   - category: Individual
     label: Katy Börner

@@ -4,7 +4,8 @@ activity_status: active
 id: multiomics-kp
 name: Multiomics KP
 description: A Translator Knowledge Provider incorporating multiomics data.
-domain: health
+domains:
+- health
 category: KnowledgeGraph
 contacts:
 - category: Individual

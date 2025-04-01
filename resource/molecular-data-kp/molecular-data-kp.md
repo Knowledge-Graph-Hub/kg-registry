@@ -6,7 +6,8 @@ name: MolePro
 description: >-
   MolePro is a Molecular Data Provider translating molecular scale to systems scale through a Reasoner API.
   It is a Translator Knowledge Provider.
-domain: health
+domains:
+- health
 category: KnowledgeGraph
 contacts:
 - category: Individual

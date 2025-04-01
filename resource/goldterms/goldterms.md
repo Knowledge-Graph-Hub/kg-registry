@@ -9,7 +9,8 @@ contacts:
   label: Chris Mungall
   orcid: 0000-0002-6601-2165
 description: Translation of JGI GOLD path terms to OWL
-domain: environment
+domains:
+- environment
 homepage_url: https://gold.jgi.doe.gov/
 products:
 - id: goldterms.data.owl

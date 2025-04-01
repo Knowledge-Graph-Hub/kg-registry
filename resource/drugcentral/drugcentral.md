@@ -6,7 +6,8 @@ contacts:
   label: DrugCentral
 description: DrugCentral is online drug information resource created and maintained
   by Division of Translational Informatics at University of New Mexico.
-domain: health
+domains:
+- health
 homepage_url: https://drugcentral.org/
 id: drugcentral
 layout: resource_detail

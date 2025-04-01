@@ -4,7 +4,8 @@ activity_status: active
 id: sri-reference-kg
 name: SRI-Reference KG
 description: The Monarch Initiative’s SRI reference knowledge graph.
-domain: health
+domains:
+- health
 category: KnowledgeGraph
 contacts:
 - category: Individual

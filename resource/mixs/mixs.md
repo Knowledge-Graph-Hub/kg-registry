@@ -8,7 +8,8 @@ description: >-
   What is the source of the sequence?
   In what kind of environment was the sample collected?
   What methods were utilized to process the sample?
-domain: environment
+domains:
+- environment
 contacts:
 - category: Individual
   orcid: 0000-0002-6601-2165

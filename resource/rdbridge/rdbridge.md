@@ -7,7 +7,8 @@ description: >-
     Rare Disease Bridge (RDBridge) offers search functions for genes, potential drugs,
     pathways, literature, and medical imaging data that will support mechanistic research,
     drug development, diagnosis, and treatment for rare diseases.
-domain: health
+domains:
+- health
 contacts:
 - category: Individual
   label: Qian-Nan Hu

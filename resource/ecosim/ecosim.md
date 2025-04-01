@@ -4,7 +4,8 @@ activity_status: active
 id: ecosim
 name: ecosim
 description: Ontology rendering of the EcoSIM Land System Model
-domain: environment
+domains:
+- environment
 contacts:
 - category: Individual
   orcid: 0000-0002-6601-2165
