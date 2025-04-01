@@ -4,7 +4,8 @@ activity_status: active
 id: kg-idg
 name: KG-IDG
 description: a Knowledge Graph for Illuminating the Druggable Genome
-domain: health
+domains:
+- health
 contacts:
 - category: Individual
   orcid: 0000-0001-5705-7831

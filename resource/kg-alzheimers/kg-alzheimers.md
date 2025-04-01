@@ -4,7 +4,8 @@ activity_status: active
 id: kg-alzheimers
 name: KG-Alzheimers
 description: A Knowledge Graph for integrating data related to Alzheimer's disease, supporting Retrieval-Augmented Generation (RAG) and AI assistant development for Alzheimer's disease research.
-domain: health
+domains:
+- health
 contacts:
 - category: Individual
   orcid: 0000-0001-5705-7831

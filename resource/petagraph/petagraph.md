@@ -4,7 +4,8 @@ activity_status: active
 id: petagraph
 name: Petagraph
 description: Petagraph is a large-scale biomedical knowledge graph integrating multi-omics and clinical data, built on the Unified Biomedical Knowledge Graph (UBKG). Petagraph connects genomic, transcriptomic, proteomic, and clinical data, supporting advanced biomedical research and machine learning applications.
-domain: health
+domains:
+- health
 contacts:
   - category: Individual
     label: Deanne M. Taylor

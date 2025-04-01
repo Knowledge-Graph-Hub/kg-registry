@@ -8,7 +8,8 @@ contacts:
   label: Christopher J. Mungall
   orcid: 0000-0002-6601-2165
 description: Reactome from Biopax
-domain: biological systems
+domains:
+- biological systems
 homepage_url: https://reactome.org
 id: reactome
 layout: resource_detail

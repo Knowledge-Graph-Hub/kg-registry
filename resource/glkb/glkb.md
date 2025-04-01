@@ -6,7 +6,8 @@ contacts:
   email: drjieliu@umich.edu
   label: Jie Liu
 description: The Genomic Literature Knowledge Base (GLKB) is a comprehensive and powerful resource that integrates over 263 million biomedical terms and more than 14.6 million biomedical relationships. This collection is curated from 33 million PubMed abstracts and nine well-established biomedical repositories, offering an unparalleled wealth of knowledge for researchers and practitioners in the field.
-domain: biological systems
+domains:
+- biological systems
 homepage_url: https://glkb.dcmb.med.umich.edu/
 id: glkb
 layout: resource_detail

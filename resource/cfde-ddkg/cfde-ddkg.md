@@ -12,7 +12,8 @@ description: >-
 category: KnowledgeGraph
 homepage_url: https://dd-kg-ui.cfde.cloud/about
 repository: https://github.com/MaayanLab/datadistillery-kg
-domain: health
+domains:
+- health
 ---
 
 The Common Fund Data Ecosystem (CFDE) aims to facilitate better integration, and reuse 

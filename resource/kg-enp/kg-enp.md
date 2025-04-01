@@ -4,7 +4,8 @@ activity_status: active
 id: kg-enp
 name: kg-enp
 description: Experimental natural products knowledge graph.
-domain: organisms
+domains:
+- organisms
 contacts:
 - category: Individual
   github: oolonek

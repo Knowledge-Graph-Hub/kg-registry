@@ -2,8 +2,6 @@
 layout: default
 ---
 
-{% assign domain_desc = site.data.schema.enums.DomainEnum.permissible_values[page.domain] %}
-
 <div class="row">
   <h1>
     {% if page.depicted_by %}
@@ -57,8 +55,13 @@ page.is_obsolete %}
     <div class="row header-card-row">
       <div class="card bg-light mb-3" style="max-width: 12rem;">
         <div class="card-body">
-          <h5 class="card-title">Domain</h5>
-          <p class="card-text"><span title= "{{ domain_desc.description }}" style="text-decoration: underline dotted; cursor: help;">{{ page.domain }}</span></p>
+          <h5 class="card-title">Domains</h5>
+            <p class="card-text">
+            {% for domain in page.domains %}
+              {% assign domain_desc = site.data.schema.enums.DomainEnum.permissible_values[domain] %}
+              <span title="{{ domain_desc.description }}" style="text-decoration: underline dotted; cursor: help;">{{ domain }}</span>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+            </p>
         </div>
       </div>
       <div class="card bg-light mb-3" style="max-width: 12rem;">
@@ -219,6 +222,7 @@ page.is_obsolete %}
             <tr>
               <th>ID</th>
               <th>Name</th>
+              <th>URL</th>
               <th>Category</th>
               <th>Format</th>
               <th>Description</th>
@@ -240,7 +244,14 @@ page.is_obsolete %}
             </td>
             {% endif %}
             <td>
-              <a href="{{p.url}}">{{p.name}}</a>
+              {{p.name}}
+            </td>
+            <td>
+              {% if p.product_url %}
+              <a href="{{p.product_url}}">{{p.product_url | split: '/' | last}}</a>
+              {% else %}
+              ❔
+              {% endif %}
             </td>
             <td>{{p.category}}</td>
             <td>
@@ -267,6 +278,7 @@ page.is_obsolete %}
             <tr>
               <th>ID</th>
               <th>Name</th>
+              <th>URL</th>
               <th>Category</th>
               <th>Format</th>
               <th>Description</th>
@@ -287,7 +299,14 @@ page.is_obsolete %}
             {% continue %}
             {% endif %}
             <td>
-              <a href="{{p.url}}">{{p.name}}</a>
+              {{p.name}}
+            </td>
+            <td>
+              {% if p.product_url %}
+              <a href="{{p.product_url}}">{{p.product_url | split: '/' | last}}</a>
+              {% else %}
+              ❔
+              {% endif %}
             </td>
             <td>{{p.category}}</td>
             <td>

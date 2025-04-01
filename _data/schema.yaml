@@ -117,12 +117,12 @@ classes:
         multivalued: true
         inlined: true
         inlined_as_list: true
-      domain:
+      domains:
         description: >-
-          The domain that the resource is relevant to.
-          This is not multivalued.
+          The domain(s) that the resource is relevant to.
         range: DomainEnum
         required: true
+        multivalued: true
       tags:
         description: Tags associated with the resource.
         range: TagEnum
@@ -644,7 +644,7 @@ enums:
 
   DomainEnum:
     description: >-
-      The domain that a resource is most relevant to.
+      A domain that a resource is relevant to.
     permissible_values:
       upper:
         description: >-

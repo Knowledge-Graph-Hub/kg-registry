@@ -7,7 +7,8 @@ description: >-
   PrimeKG (Precision Medicine Knowledge Graph) integrates 20
   high-quality biomedical resources to describe 17,080 diseases
   with over 4 million relationships across ten major biological scales.
-domain: health
+domains:
+- health
 contacts:
 - category: Individual
   github: marinkaz

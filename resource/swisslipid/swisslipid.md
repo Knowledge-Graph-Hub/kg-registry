@@ -4,7 +4,8 @@ activity_status: active
 id: swisslipid
 name: swisslipid
 description: SwissLipids is a knowledge resource for lipids and their biology.
-domain: chemistry and biochemistry
+domains:
+- chemistry and biochemistry
 contacts:
 - category: Organization
   email: swisslipids@sib.swiss

@@ -6,7 +6,8 @@ contacts:
   github: emmaco
   label: Emma Cooke
 description: Data produced by SciBite
-domain: biological systems
+domains:
+- biological systems
 homepage_url: https://scibite.com/
 id: scibite
 layout: resource_detail

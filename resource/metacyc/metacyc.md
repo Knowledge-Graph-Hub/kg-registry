@@ -10,7 +10,8 @@ description: MetaCyc is a curated database of experimentally elucidated metaboli
   and secondary metabolism, as well as associated metabolites, reactions, enzymes,
   and genes. The goal of MetaCyc is to catalog the universe of metabolism by storing
   a representative sample of each experimentally elucidated pathway.
-domain: biological systems
+domains:
+- biological systems
 homepage_url: https://metacyc.org/
 id: metacyc
 layout: resource_detail

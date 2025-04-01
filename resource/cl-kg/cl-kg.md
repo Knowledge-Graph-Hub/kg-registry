@@ -5,7 +5,8 @@ id: cl-kg
 name: Cell Ontology Knowledge Graph (CL-KG)
 description: >-
     CL-KG is a knowledge graph integrating the cell ontology and linked ontologies with hierarchical annotations of single cell transcriptomics data from CellXGene.
-domain: biological systems
+domains:
+- biological systems
 contacts:
   - category: Individual
     label: Ugur Bayindir

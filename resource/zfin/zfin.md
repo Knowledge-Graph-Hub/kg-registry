@@ -6,7 +6,8 @@ contacts:
   email: zfinadmn@zfin.org
   label: Zebrafish Information Network
 description: Zebrafish Information Network, including the Zebrafish Anatomical Ontology
-domain: biological systems
+domains:
+- biological systems
 homepage_url: https://zfin.org/
 id: zfin
 layout: resource_detail

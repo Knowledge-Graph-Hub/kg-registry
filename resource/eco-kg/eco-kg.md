@@ -4,7 +4,8 @@ activity_status: active
 id: eco-kg
 name: eco-KG
 description: A knowledge graph of plant traits starting with Planteome and EOL TraitBank.
-domain: organisms
+domains:
+- organisms
 contacts:
 - category: Individual
   github: diatomsRcool

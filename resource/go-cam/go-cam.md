@@ -4,7 +4,8 @@ activity_status: active
 id: go-cam
 name: Gene Ontology Causal Activity Modeling (GO-CAM)
 description: A structured framework for integrating Gene Ontology annotations into computable models of biological functions.
-domain: biological systems
+domains:
+- biological systems
 category: DataModel
 contacts:
 - category: Individual

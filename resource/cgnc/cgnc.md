@@ -8,7 +8,8 @@ contacts:
 description: CGNC is the Chicken Gene Nomenclature Consortium. It is  an international
   group of researchers interested in providing standardized gene nomenclature for
   chicken genes.
-domain: organisms
+domains:
+- organisms
 homepage_url: http://birdgenenames.org/cgnc/
 id: cgnc
 layout: resource_detail

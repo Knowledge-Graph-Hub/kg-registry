@@ -4,7 +4,8 @@ activity_status: active
 id: sldb
 name: sldb
 description: A graph of synthetic lethal interactions.
-domain: organisms
+domains:
+- organisms
 contacts:
 - category: Individual
   github: pnrobinson
