@@ -34,6 +34,7 @@ publications:
     title: "A comprehensive large-scale biomedical knowledge graph for AI-powered data-driven biomedical research"
     doi: 10.1038/s42256-025-01014-w
     preferred: true
+    id: doi:10.1038/s42256-025-01014-w
 contacts:
   - category: Individual
     label: "Jinfeng Zhang"
