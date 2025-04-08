@@ -1977,6 +1977,89 @@ resources:
     - icees-kg
   repository: ''
 - activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Individual
+    email: jinfeng@insilicom.com
+    label: Jinfeng Zhang
+  description: A large-scale KG assembled from PubMed abstracts.
+  domains:
+  - health
+  homepage_url: https://biokde.insilicom.com/
+  id: ikraph
+  layout: resource_detail
+  name: iKraph
+  products:
+  - category: GraphicalInterface
+    description: Biomedical Knowledge Discovery Engine. Interface for iKraph
+    id: ikraph.site
+    name: BioKDE
+    original_source:
+    - ikraph
+    product_url: https://biokde.insilicom.com/
+    secondary_source:
+    - ikraph
+  - category: ProcessProduct
+    description: Code for named entity recognition, relation extraction, and drug
+      repurposing in assembly and analysis of iKraph
+    id: ikraph.code
+    name: iKraph Code
+    original_source:
+    - ikraph
+    product_url: https://github.com/myinsilicom/iKraph
+    secondary_source:
+    - ikraph
+  - category: GraphProduct
+    compression: targz
+    description: Graph metadata for iKraph, including a list of relations, entity
+      type-specific metadata, data sources, and drug repurposing predictions.
+    format: json
+    id: ikraph.graph
+    name: iKraph graph metadata
+    original_source:
+    - ikraph
+    product_url: https://zenodo.org/records/14851275/files/data.tar.gz?download=1
+    secondary_source:
+    - ikraph
+  - category: GraphProduct
+    compression: targz
+    description: Graph data for iKraph
+    id: ikraph.graph
+    name: iKraph graph data
+    original_source:
+    - ikraph
+    product_url: https://zenodo.org/records/14851275/files/iKraph_full.tar.gz?download=1
+    secondary_source:
+    - ikraph
+  publications:
+  - authors:
+    - Zhang Y
+    - Sui X
+    - Pan F
+    - Yu K
+    - Li K
+    - Tian S
+    - Erdengasileng A
+    - Han Q
+    - Wang W
+    - Wang J
+    - Wang J
+    - Sun D
+    - Chung H
+    - Zhou J
+    - Zhou E
+    - Lee B
+    - Zhang P
+    - Qiu X
+    - Zhao T
+    - Zhang J
+    doi: 10.1038/s42256-025-01014-w
+    id: doi:10.1038/s42256-025-01014-w
+    preferred: true
+    title: A comprehensive large-scale biomedical knowledge graph for AI-powered data-driven
+      biomedical research
+  repository: https://github.com/myinsilicom/iKraph
+- activity_status: active
   category: DataSource
   contacts:
   - category: Organization
