@@ -31,6 +31,7 @@ gp-kg,active,PASS
 hgnc,active,PASS
 hra-kg,active,PASS
 icees-kg,active,PASS
+ikraph,active,PASS
 interpro,active,PASS
 kegg,active,PASS
 kg-alzheimers,active,PASS
