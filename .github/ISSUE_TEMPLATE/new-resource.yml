@@ -6,7 +6,13 @@ labels: [ new-resource ]
 body:
   - type: markdown
     attributes:
-      value: This is the form for requesting a new resource (e.g., a knowledge graph) in KG-Registry.
+      value: This is the form for requesting a new resource (e.g., a knowledge graph) in KG-Registry. Not all fields are required, but the more information you provide, the more detail we can provide in the registry. If you have any questions, please feel free to open a specific issue.
+  
+  # Basic Information Section
+  - type: markdown
+    attributes:
+      value: ## Basic Information
+  
   - type: dropdown
     id: resource_type
     attributes:
@@ -17,10 +23,11 @@ body:
         - Knowledge Graph
         - Data Source
         - Data Model
-        - Mappings
+        - Aggregator
         - Other
     validations:
       required: true
+  
   - type: input
     id: name
     attributes:
@@ -29,14 +36,218 @@ body:
       placeholder: e.g., KG-Tofu
     validations:
       required: true
-  - type: input
+  
+  - type: textarea
     id: description
     attributes:
       label: Description
-      description: What is the description of this entity, in a sentence or two at most?
+      description: A detailed description of the resource. Must be at least 10 characters.
       placeholder: e.g., A graph describing knowledge about soy milk curds.
     validations:
       required: true
+      min_length: 10
+
+  - type: input
+    id: homepage_url
+    attributes:
+      label: Homepage URL
+      description: The primary URL of the resource or its documentation. This should _not_ be a link to download a specific file or a base URL to an API.
+      placeholder: e.g., https://example.org/kg-tofu
+    validations:
+      required: false
+
+  - type: input
+    id: repository
+    attributes:
+      label: Repository
+      description: A main version control repository for the resource. Often a GitHub or GitLab URL.
+      placeholder: e.g., https://github.com/org/kg-tofu
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The version of the resource, if known.
+      placeholder: e.g., 1.0.0
+    validations:
+      required: false
+
+  # Domains and Tags Section
+  - type: markdown
+    attributes:
+      value: ## Domains and Tags
+  
+  - type: dropdown
+    id: domains
+    attributes:
+      label: Domains
+      description: The domain(s) that the resource is relevant to.
+      multiple: true
+      options:
+        - agriculture
+        - anatomy and development
+        - biological systems
+        - chemistry and biochemistry
+        - environment
+        - health
+        - information technology
+        - investigations
+        - microbiology
+        - nutrition
+        - organisms
+        - other
+        - phenotype
+        - simulation
+        - upper
+    validations:
+      required: false
+
+  # Contacts Section
+  - type: markdown
+    attributes:
+      value: ## Contacts
+
+  - type: dropdown
+    id: contact_type
+    attributes:
+      label: Contact Type
+      description: Is the contact for this resource an individual or an organization?
+      multiple: false
+      options:
+        - Individual
+        - Organization
+    validations:
+      required: false
+
+  - type: input
+    id: contact_name
+    attributes:
+      label: Contact Name
+      description: What is the name of the primary contact for this resource? This may be a person or an organization.
+      placeholder: e.g., Tabatha Butterscotch
+    validations:
+      required: false
+
+  - type: input
+    id: contact_email
+    attributes:
+      label: Contact Email
+      description: What is the email address of the primary contact for this resource? This may be for a person or an organization.
+      placeholder: e.g., tbutterscotch@kgtofu.org
+    validations:
+      required: false
+
+  # License Information
+  - type: markdown
+    attributes:
+      value: ## License Information
+
+  - type: input
+    id: license_label
+    attributes:
+      label: License Name
+      description: The name of the license for the resource. This should be a human-readable name.
+      placeholder: e.g., CC BY 4.0
+    validations:
+      required: false
+
+  # Product Information
+  - type: markdown
+    attributes:
+      value: ## Product Information
+      
+  - type: markdown
+    attributes:
+      value: Resources may have multiple products or representations, including knowledge graphs, interfaces, and code for data processing. Please provide details for at least one product.
+  
+  - type: input
+    id: product_name
+    attributes:
+      label: Product Name
+      description: The name of a product.
+      placeholder: e.g., KG-Tofu Graph Data
+    validations:
+      required: false
+
+  - type: textarea
+    id: product_description
+    attributes:
+      label: Product Description
+      description: A description of the product.
+      placeholder: e.g., A downloadable TSV format of the KG-Tofu knowledge graph.
+    validations:
+      required: false
+
+  - type: input
+    id: product_url
+    attributes:
+      label: Product URL
+      description: The URL of the product (download link, API endpoint, etc.).
+      placeholder: e.g., https://example.org/kg-tofu/download
+    validations:
+      required: false
+
+  - type: dropdown
+    id: product_format
+    attributes:
+      label: Product Format
+      description: The format/serialization of the product. If the product is a web site, use 'http'. If the format is not included here, use 'other'.
+      multiple: false
+      options:
+        - chebi_sdf
+        - csv
+        - fasta
+        - graphql
+        - http
+        - json
+        - jsonld
+        - kgx
+        - kgx-json
+        - kgx-jsonl
+        - kgx-rdf
+        - nquads
+        - ntriples
+        - obo
+        - other
+        - owl
+        - postgres
+        - protobuf
+        - rdfxml
+        - sdf
+        - shacl
+        - shex
+        - sssom
+        - tsv
+        - ttl
+        - xml
+    validations:
+      required: false
+
+  # Additional Information
+  - type: markdown
+    attributes:
+      value: ## Additional Information
+  
+  - type: input
+    id: publications
+    attributes:
+      label: Publications
+      description: DOIs for publications associated with the resource (comma separated).
+      placeholder: e.g., doi:10.1038/s41597-020-0524-5
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Additional Information
+      description: Any other information about the resource or its products that might be relevant.
+      placeholder: e.g., This resource is updated monthly and forms part of a larger ecosystem of knowledge graphs.
+    validations:
+      required: false
+
   - type: input
     id: contributor_name
     attributes:
@@ -45,6 +256,7 @@ body:
       placeholder: e.g., Tabatha Butterscotch
     validations:
       required: true
+  
   - type: input
     id: contributor_github
     attributes:
@@ -52,7 +264,8 @@ body:
       description: What is your GitHub name, without the @ symbol?
       placeholder: e.g., tbuttersco
     validations:
-      required: true
+      required: false
+  
   - type: input
     id: contributor_orcid
     attributes:
