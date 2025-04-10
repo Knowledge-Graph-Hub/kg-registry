@@ -1,4 +1,4 @@
-name: Request new resource
+name: Request new resource in KG-Registry
 description: Request addition of something new to the registry, including knowledge graphs, data models, mappings, or beyond.
 title: Add this resource - [Name Here]
 labels: [ new-resource ]
@@ -8,10 +8,9 @@ body:
     attributes:
       value: This is the form for requesting a new resource (e.g., a knowledge graph) in KG-Registry. Not all fields are required, but the more information you provide, the more detail we can provide in the registry. If you have any questions, please feel free to open a specific issue.
   
-  # Basic Information Section
   - type: markdown
     attributes:
-      value: ## Basic Information
+      value: "## Basic Information"
   
   - type: dropdown
     id: resource_type
@@ -41,17 +40,16 @@ body:
     id: description
     attributes:
       label: Description
-      description: A detailed description of the resource. Must be at least 10 characters.
+      description: A detailed description of the resource.
       placeholder: e.g., A graph describing knowledge about soy milk curds.
     validations:
       required: true
-      min_length: 10
 
   - type: input
     id: homepage_url
     attributes:
       label: Homepage URL
-      description: The primary URL of the resource or its documentation. This should _not_ be a link to download a specific file or a base URL to an API.
+      description: The primary URL of the resource or its documentation. This should not be a link to download a specific file or a base URL to an API.
       placeholder: e.g., https://example.org/kg-tofu
     validations:
       required: false
@@ -74,10 +72,9 @@ body:
     validations:
       required: false
 
-  # Domains and Tags Section
   - type: markdown
     attributes:
-      value: ## Domains and Tags
+      value: "## Domains and Tags"
   
   - type: dropdown
     id: domains
@@ -104,10 +101,9 @@ body:
     validations:
       required: false
 
-  # Contacts Section
   - type: markdown
     attributes:
-      value: ## Contacts
+      value: "## Contacts"
 
   - type: dropdown
     id: contact_type
@@ -139,10 +135,9 @@ body:
     validations:
       required: false
 
-  # License Information
   - type: markdown
     attributes:
-      value: ## License Information
+      value: "## License Information"
 
   - type: input
     id: license_label
@@ -153,10 +148,9 @@ body:
     validations:
       required: false
 
-  # Product Information
   - type: markdown
     attributes:
-      value: ## Product Information
+      value: "## Product Information"
       
   - type: markdown
     attributes:
@@ -225,10 +219,9 @@ body:
     validations:
       required: false
 
-  # Additional Information
   - type: markdown
     attributes:
-      value: ## Additional Information
+      value: "## Additional Information"
   
   - type: input
     id: publications
