@@ -8,8 +8,10 @@ domains:
 - organisms
 contacts:
 - category: Individual
-  github: diatomsRcool
   label: Anne Thessen
+  contact_details:
+  - contact_type: github
+    value: diatomsRcool
 homepage_url: https://kghub.org/eco-kg/index.html
 repository: https://github.com/Knowledge-Graph-Hub/eco-kg
 category: KnowledgeGraph

@@ -10,12 +10,16 @@ category: KnowledgeGraph
 contacts:
 - category: Individual
   label: Casey Ta
-  email: ct2865@columbia.edu
+  contact_details:
+  - contact_type: email
+    value: ct2865@columbia.edu
 - category: Individual
   label: Vincent Emonet
 - category: Individual
   label: Michel Dumontier
-  email: michel.dumontier@maastrichtuniversity.nl
+  contact_details:
+  - contact_type: email
+    value: michel.dumontier@maastrichtuniversity.nl
 homepage_url: https://ncats.nih.gov/research/research-activities/translator/projects
 ---
 

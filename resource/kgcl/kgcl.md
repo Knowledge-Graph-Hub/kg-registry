@@ -9,10 +9,13 @@ domains:
 - other
 contacts:
 - category: Individual
-  orcid: 0000-0002-6601-2165
-  github: cmungall
-  email: cjmungall@lbl.gov
   label: Christopher J. Mungall
+  orcid: 0000-0002-6601-2165
+  contact_details:
+  - contact_type: email
+    value: cjmungall@lbl.gov
+  - contact_type: github
+    value: cmungall
 homepage_url: https://w3id.org/kgcl
 repository: https://github.com/INCATools/kgcl/
 products:

@@ -3,15 +3,20 @@ layout: resource_detail
 activity_status: active
 id: kg-alzheimers
 name: KG-Alzheimers
-description: A Knowledge Graph for integrating data related to Alzheimer's disease, supporting Retrieval-Augmented Generation (RAG) and AI assistant development for Alzheimer's disease research.
+description: A Knowledge Graph for integrating data related to Alzheimer's disease,
+  supporting Retrieval-Augmented Generation (RAG) and AI assistant development for
+  Alzheimer's disease research.
 domains:
 - health
 contacts:
 - category: Individual
-  orcid: 0000-0001-5705-7831
-  github: caufieldjh
-  email: jhc@lbl.gov
   label: J. Harry Caufield
+  orcid: 0000-0001-5705-7831
+  contact_details:
+  - contact_type: email
+    value: jhc@lbl.gov
+  - contact_type: github
+    value: caufieldjh
 homepage_url: https://kghub.org/kg-alzheimers/index.html
 repository: https://github.com/Knowledge-Graph-Hub/kg-alzheimers
 products:
