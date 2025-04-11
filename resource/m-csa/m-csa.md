@@ -3,7 +3,9 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Individual
-  email: ribeiro@ebi.ac.uk
+  contact_details:
+  - contact_type: email
+    value: ribeiro@ebi.ac.uk
   label: "Ant\xF3nio JM Ribeiro"
 description: The Mechanism and Catalytic Site Atlas (M-CSA) is a database of enzyme
   reaction mechanisms. It provides annotation on the protein, catalytic residues,

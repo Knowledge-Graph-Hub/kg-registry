@@ -3,7 +3,9 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Organization
-  email: zfinadmn@zfin.org
+  contact_details:
+  - contact_type: email
+    value: zfinadmn@zfin.org
   label: Zebrafish Information Network
 description: Zebrafish Information Network, including the Zebrafish Anatomical Ontology
 domains:

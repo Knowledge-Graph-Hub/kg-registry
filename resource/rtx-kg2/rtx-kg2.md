@@ -9,9 +9,12 @@ domains:
 contacts:
 - category: Individual
   label: Stephen Ramsey
-  email: ramseyst@oregonstate.edu
-  github: saramsey
   orcid: 0000-0002-2168-5403
+  contact_details:
+  - contact_type: email
+    value: ramseyst@oregonstate.edu
+  - contact_type: github
+    value: saramsey
 homepage_url: https://github.com/RTXteam/RTX-KG2
 repository: https://github.com/RTXteam/RTX-KG2
 license:

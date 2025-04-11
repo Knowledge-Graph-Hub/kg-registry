@@ -4,10 +4,13 @@ id: goldterms
 name: GOLD Environmental Paths
 contacts:
 - category: Individual
-  email: cjmungall@lbl.gov
-  github: cmungall
   label: Chris Mungall
   orcid: 0000-0002-6601-2165
+  contact_details:
+  - contact_type: email
+    value: cjmungall@lbl.gov
+  - contact_type: github
+    value: cmungall
 description: Translation of JGI GOLD path terms to OWL
 domains:
 - environment

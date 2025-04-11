@@ -3,14 +3,15 @@ layout: resource_detail
 activity_status: active
 id: drugbank
 name: DrugBank
-description: >-
-  DrugBank Online is a data resource for drugs and drug products.
+description: DrugBank Online is a data resource for drugs and drug products.
 domains:
 - health
 contacts:
 - category: Organization
-  email: info@drugbank.com
   label: DrugBank
+  contact_details:
+  - contact_type: email
+    value: info@drugbank.com
 homepage_url: https://www.drugbank.com/
 category: DataSource
 products:
