@@ -14,6 +14,7 @@ chr,active,PASS
 cl-kg,active,PASS
 clinical-data-kp,active,PASS
 connections-hypothesis-kp,active,PASS
+cpathkg,active,PASS
 ctd,active,PASS
 drkg,active,PASS
 drugbank,active,PASS

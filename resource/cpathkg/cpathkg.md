@@ -4,7 +4,8 @@ category: KnowledgeGraph
 contacts:
 - category: Organization
   label: Critical Path Institute
-description: The C-Path Knowledge Graph project is intended to increase discoverability of rare disease datasets through integration with the Monarch Knowlege Graph.
+description: The C-Path Knowledge Graph project is intended to increase discoverability
+  of rare disease datasets through integration with the Monarch Knowlege Graph.
 domains:
 - health
 id: cpathkg
@@ -12,7 +13,11 @@ layout: resource_detail
 name: C-Path Knowledge Graph
 products:
 - category: ProcessProduct
-  description: This repository is a code reference for the C-Path Knowledge Graph project, to increase discoverability of rare disease datasets through integration with the Monarch Knowlege Graph. Note that this is only a reference to scripts and queries associated with this project and is not provided as a runnable project because these workflows depend on an internal data catalog.
+  description: This repository is a code reference for the C-Path Knowledge Graph
+    project, to increase discoverability of rare disease datasets through integration
+    with the Monarch Knowlege Graph. Note that this is only a reference to scripts
+    and queries associated with this project and is not provided as a runnable project
+    because these workflows depend on an internal data catalog.
   id: cpathkg.code
   name: C-Path Knowledge Graph Integration
   original_source:
@@ -32,7 +37,8 @@ publications:
   - Vasilevsky N
   doi: 10.1093/jamiaopen/ooaf001
   id: doi:10.1093/jamiaopen/ooaf001
-  title: Increased discoverability of rare disease datasets through knowledge graph integration
+  title: Increased discoverability of rare disease datasets through knowledge graph
+    integration
   year: '2025'
 ---
 C-Path KG
