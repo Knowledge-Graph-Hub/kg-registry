@@ -8,8 +8,10 @@ domains:
 - health
 contacts:
 - category: Individual
-  email: rxx@case.edu
   label: Rong Xu
+  contact_details:
+  - contact_type: email
+    value: rxx@case.edu
 homepage_url: http://nlp.case.edu/public/data/GPKG-Predict/
 repository: http://nlp.case.edu/public/data/GPKG-Predict/
 products:
@@ -40,8 +42,7 @@ publications:
   - Xu R
   doi: doi:10.1016/j.jbi.2022.104133
   id: doi:10.1016/j.jbi.2022.104133
-  title: >-
-    KG-Predict: A knowledge graph computational framework for drug repurposing
+  title: 'KG-Predict: A knowledge graph computational framework for drug repurposing'
   year: '2022'
 category: KnowledgeGraph
 ---

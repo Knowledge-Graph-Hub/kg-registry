@@ -3,15 +3,17 @@ layout: resource_detail
 activity_status: active
 id: cl-kg
 name: Cell Ontology Knowledge Graph (CL-KG)
-description: >-
-    CL-KG is a knowledge graph integrating the cell ontology and linked ontologies with hierarchical annotations of single cell transcriptomics data from CellXGene.
+description: CL-KG is a knowledge graph integrating the cell ontology and linked ontologies
+  with hierarchical annotations of single cell transcriptomics data from CellXGene.
 domains:
 - biological systems
 contacts:
-  - category: Individual
-    label: Ugur Bayindir
-    orcid: 0000-0002-6012-3729
-    github: ubyndr
+- category: Individual
+  label: Ugur Bayindir
+  orcid: 0000-0002-6012-3729
+  contact_details:
+  - contact_type: github
+    value: ubyndr
 homepage_url: https://cellular-semantics.github.io/CL_KG/
 repository: https://github.com/Cellular-Semantics/CL_KG
 license:

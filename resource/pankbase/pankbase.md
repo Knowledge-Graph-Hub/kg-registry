@@ -3,14 +3,18 @@ layout: resource_detail
 activity_status: active
 id: pankbase
 name: PanKBase
-description: >-
-  PanKbase is a comprehensive, centralized resource for the study of the human pancreas and diabetes. The PanKbase collective aims to integrate diverse type 1 diabetes (T1D) datasets with expert-curated knowledge in a centralized, open-source data hub.
+description: PanKbase is a comprehensive, centralized resource for the study of the
+  human pancreas and diabetes. The PanKbase collective aims to integrate diverse type
+  1 diabetes (T1D) datasets with expert-curated knowledge in a centralized, open-source
+  data hub.
 domains:
 - health
 contacts:
 - category: Organization
   label: PanKBase
-  email: help@pankbase.org
+  contact_details:
+  - contact_type: email
+    value: help@pankbase.org
 homepage_url: https://pankbase.org/
 repository: https://github.com/PanKbase-DB
 category: DataResource

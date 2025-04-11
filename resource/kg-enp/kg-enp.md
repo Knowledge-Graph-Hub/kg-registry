@@ -8,8 +8,10 @@ domains:
 - organisms
 contacts:
 - category: Individual
-  github: oolonek
   label: Pierre-Marie Allard
+  contact_details:
+  - contact_type: github
+    value: oolonek
 homepage_url: https://enpkg.commons-lab.org/
 repository: https://github.com/enpkg/enpkg_full
 category: KnowledgeGraph

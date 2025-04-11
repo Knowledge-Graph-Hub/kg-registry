@@ -3,17 +3,19 @@ layout: resource_detail
 activity_status: active
 id: primekg
 name: PrimeKG
-description: >-
-  PrimeKG (Precision Medicine Knowledge Graph) integrates 20
-  high-quality biomedical resources to describe 17,080 diseases
-  with over 4 million relationships across ten major biological scales.
+description: PrimeKG (Precision Medicine Knowledge Graph) integrates 20 high-quality
+  biomedical resources to describe 17,080 diseases with over 4 million relationships
+  across ten major biological scales.
 domains:
 - health
 contacts:
 - category: Individual
-  github: marinkaz
   label: Marinka Zitnik
-  email: marinka@hms.harvard.edu
+  contact_details:
+  - contact_type: email
+    value: marinka@hms.harvard.edu
+  - contact_type: github
+    value: marinkaz
 homepage_url: https://zitniklab.hms.harvard.edu/projects/PrimeKG
 repository: https://github.com/mims-harvard/PrimeKG
 products:

@@ -213,10 +213,65 @@
                         "string",
                         "null"
                     ]
+                },
+                "contact_details": {
+                    "description": "A field for contact details, including email, GitHub, and contact-specific URLs.",
+                    "items": {
+                        "$ref": "#/$defs/ContactDetails"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "title": "Contact",
             "type": "object"
+        },
+        "ContactDetails": {
+            "additionalProperties": false,
+            "description": "A field for details about how to contact a person or organization.",
+            "properties": {
+                "contact_type": {
+                    "$ref": "#/$defs/ContactTypeEnum",
+                    "description": "The type of contact detail."
+                },
+                "contact_type_name": {
+                    "description": "The name of the contact detail, if the contact_type is \"other\". For example, if the contact value is a username at the Gumball Project's GitLab, this may be \"Gumball Project GitLab\".",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "contact_type_url": {
+                    "description": "The URL of the contact detail, if the contact_type is \"other\". For example, if the contact value is a username at the Gumball Project's GitLab, this may be \"https://gitlab.gumballproject.org/\".",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "value": {
+                    "description": "The value of the contact detail. For example, an email address or URL. Do not include a prefix.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "contact_type",
+                "value"
+            ],
+            "title": "ContactDetails",
+            "type": "object"
+        },
+        "ContactTypeEnum": {
+            "description": "The type of contact detail.",
+            "enum": [
+                "email",
+                "github",
+                "url",
+                "other"
+            ],
+            "title": "ContactTypeEnum",
+            "type": "string"
         },
         "DataModel": {
             "additionalProperties": false,
@@ -1195,17 +1250,13 @@
                         "null"
                     ]
                 },
-                "email": {
-                    "description": "The email address of the individual.",
+                "contact_details": {
+                    "description": "A field for contact details, including email, GitHub, and contact-specific URLs.",
+                    "items": {
+                        "$ref": "#/$defs/ContactDetails"
+                    },
                     "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "github": {
-                    "description": "The GitHub username of the individual. Do not include a prefix.",
-                    "type": [
-                        "string",
+                        "array",
                         "null"
                     ]
                 },
@@ -1700,29 +1751,18 @@
                         "null"
                     ]
                 },
-                "email": {
-                    "description": "The email address of the organization.",
+                "contact_details": {
+                    "description": "A field for contact details, including email, GitHub, and contact-specific URLs.",
+                    "items": {
+                        "$ref": "#/$defs/ContactDetails"
+                    },
                     "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "github": {
-                    "description": "The GitHub organization name. Do not include a prefix.",
-                    "type": [
-                        "string",
+                        "array",
                         "null"
                     ]
                 },
                 "label": {
                     "description": "The name of the organization.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "url": {
-                    "description": "The URL of a site for the organization.",
                     "type": [
                         "string",
                         "null"

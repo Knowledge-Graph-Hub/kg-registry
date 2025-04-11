@@ -3,8 +3,11 @@ activity_status: active
 category: DataModel
 contacts:
 - category: Individual
-  email: smoxon@lbl.gov
-  github: sierra-moxon
+  contact_details:
+  - contact_type: email
+    value: smoxon@lbl.gov
+  - contact_type: github
+    value: sierra-moxon
   label: Sierra Taylor Moxon
   orcid: 0000-0002-8719-7760
 description: Entity and association taxonomy and datamodel for life-sciences data

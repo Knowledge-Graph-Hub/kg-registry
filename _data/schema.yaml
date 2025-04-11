@@ -47,6 +47,7 @@ classes:
       A contact point for a resource or product.
     slots:
       - category
+      - contact_details
 
   ## Resource Classes
 
@@ -365,6 +366,40 @@ classes:
 
   ## Other Classes
 
+  ContactDetails:
+    description: >-
+      A field for details about how to
+      contact a person or organization.
+    attributes:
+      contact_type:
+        description: >-
+          The type of contact detail.
+        range: ContactTypeEnum
+        required: true
+      contact_type_name:
+        description: >-
+          The name of the contact detail,
+          if the contact_type is "other".
+          For example, if the contact value
+          is a username at the Gumball Project's
+          GitLab, this may be "Gumball Project GitLab".
+        range: string
+      contact_type_url:
+        description: >-
+          The URL of the contact detail,
+          if the contact_type is "other".
+          For example, if the contact value
+          is a username at the Gumball Project's
+          GitLab, this may be "https://gitlab.gumballproject.org/".
+        range: uriorcurie
+      value:
+        description: >-
+          The value of the contact detail.
+          For example, an email address or URL.
+          Do not include a prefix.
+        range: string
+        required: true
+
   Individual:
     description: >-
       An individual person.
@@ -373,15 +408,6 @@ classes:
       label:
         description: >-
           The name of the individual.
-        range: string
-      email:
-        description: >-
-          The email address of the individual.
-        range: string
-      github:
-        description: >-
-          The GitHub username of the individual.
-          Do not include a prefix.
         range: string
       orcid:
         description: >-
@@ -399,19 +425,6 @@ classes:
         description: >-
           The name of the organization.
         range: string
-      email:
-        description: >-
-          The email address of the organization.
-        range: string
-      github:
-        description: >-
-          The GitHub organization name.
-          Do not include a prefix.
-        range: string
-      url:
-        description: >-
-          The URL of a site for the organization.
-        range: uriorcurie
 
   FundingSource:
     is_a: NamedThing
@@ -552,6 +565,14 @@ slots:
     description: >-
       The category of the entity.
       This should be identical to its class name.
+  contact_details:
+    description: >-
+      A field for contact details, including
+      email, GitHub, and contact-specific URLs.
+    range: ContactDetails
+    inlined: true
+    inlined_as_list: true
+    multivalued: true
   resources:
     description: A list of entries in the registry.
     range: Resource
@@ -641,6 +662,25 @@ enums:
           This file ends in .7z.
       other:
         description: Another compression format not defined here.
+
+  ContactTypeEnum:
+    description: >-
+      The type of contact detail.
+    permissible_values:
+      email:
+        description: >-
+          An email address for the contact.
+      github:
+        description: >-
+          A GitHub username for the contact.
+      url:
+        description: >-
+          A URL for the contact. For an individual, this may be
+          a profile on an official website. For an organization,
+          this may be a link to the organization's site or
+          a documentation landing page.
+      other:
+        description: Another type of contact detail not defined here.
 
   DomainEnum:
     description: >-

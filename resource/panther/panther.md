@@ -4,10 +4,15 @@ id: panther
 name: PANTHER
 contacts:
 - category: Organization
-  email: pantherfeedback@yahoo.com
   label: PANTHER
-description: >-
-    PANTHER is a Protein ANalysis THrough Evolutionary Relationships Classification System. The mission of the PANTHER knowledgebase is to support biomedical and other research by providing comprehensive information about the evolution of protein-coding gene families, particularly protein phylogeny, function and genetic variation impacting that function.
+  contact_details:
+  - contact_type: email
+    value: pantherfeedback@yahoo.com
+description: PANTHER is a Protein ANalysis THrough Evolutionary Relationships Classification
+  System. The mission of the PANTHER knowledgebase is to support biomedical and other
+  research by providing comprehensive information about the evolution of protein-coding
+  gene families, particularly protein phylogeny, function and genetic variation impacting
+  that function.
 domains:
 - biological systems
 homepage_url: https://www.pantherdb.org/

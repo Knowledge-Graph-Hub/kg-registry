@@ -4,10 +4,14 @@ id: phenio
 name: An integrated ontology for Phenomics
 contacts:
 - category: Individual
-  email: jhc@lbl.gov
-  github: caufieldjh
   label: J. Harry Caufield
-description: An ontology for accessing and comparing knowledge concerning phenotypes across species and genetic backgrounds.
+  contact_details:
+  - contact_type: email
+    value: jhc@lbl.gov
+  - contact_type: github
+    value: caufieldjh
+description: An ontology for accessing and comparing knowledge concerning phenotypes
+  across species and genetic backgrounds.
 domains:
 - phenotype
 homepage_url: https://monarch-initiative.github.io/phenio/
@@ -50,15 +54,20 @@ repository: https://github.com/monarch-initiative/phenio
 usages:
 - id: cross-species-inference
   label: PHENIO is used by the Monarch Initiative for cross-species inference
-  description: PHENIO is used by the Monarch Initiative for cross-species inference. As an example, the disease of Parkinsonism may compared on the basis of its phenotype in humans vs. mouse genes and genotypes known to impact these phenotypes.
+  description: PHENIO is used by the Monarch Initiative for cross-species inference.
+    As an example, the disease of Parkinsonism may compared on the basis of its phenotype
+    in humans vs. mouse genes and genotypes known to impact these phenotypes.
   url: https://monarchinitiative.org/HP:0001300#disease
   users:
   - category: Organization
     label: The Monarch Initiative
-    url: https://monarchinitiative.org/
+    contact_details:
+    - contact_type: url
+      value: https://monarchinitiative.org/
   publications:
   - preferred: true
-    title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species"
+    title: 'The Monarch Initiative: an integrative data and analytic platform connecting
+      phenotypes to genotypes across species'
     doi: doi:10.1093/nar/gkw1128
     id: doi:10.1093/nar/gkw1128
   type: actual

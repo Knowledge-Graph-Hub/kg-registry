@@ -127,6 +127,20 @@ class CompressionEnum(str, Enum):
     other = "other"
 
 
+class ContactTypeEnum(str, Enum):
+    """
+    The type of contact detail.
+    """
+    # An email address for the contact.
+    email = "email"
+    # A GitHub username for the contact.
+    github = "github"
+    # A URL for the contact. For an individual, this may be a profile on an official website. For an organization, this may be a link to the organization's site or a documentation landing page.
+    url = "url"
+    # Another type of contact detail not defined here.
+    other = "other"
+
+
 class DomainEnum(str, Enum):
     """
     A domain that a resource is relevant to.
@@ -305,6 +319,7 @@ class Contact(ConfiguredBaseModel):
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    contact_details: Optional[List[ContactDetails]] = Field(default=None, description="""A field for contact details, including email, GitHub, and contact-specific URLs.""", json_schema_extra = { "linkml_meta": {'alias': 'contact_details', 'domain_of': ['Contact']} })
 
 
 class Resource(NamedThing):
@@ -701,6 +716,18 @@ class ProgrammingInterface(Product):
     layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
 
 
+class ContactDetails(ConfiguredBaseModel):
+    """
+    A field for details about how to contact a person or organization.
+    """
+    linkml_meta: ClassVar[LinkMLMeta] = LinkMLMeta({'from_schema': 'https://w3id.org/knowledge-graph-hub/kg_registry_schema'})
+
+    contact_type: ContactTypeEnum = Field(default=..., description="""The type of contact detail.""", json_schema_extra = { "linkml_meta": {'alias': 'contact_type', 'domain_of': ['ContactDetails']} })
+    contact_type_name: Optional[str] = Field(default=None, description="""The name of the contact detail, if the contact_type is \"other\". For example, if the contact value is a username at the Gumball Project's GitLab, this may be \"Gumball Project GitLab\".""", json_schema_extra = { "linkml_meta": {'alias': 'contact_type_name', 'domain_of': ['ContactDetails']} })
+    contact_type_url: Optional[str] = Field(default=None, description="""The URL of the contact detail, if the contact_type is \"other\". For example, if the contact value is a username at the Gumball Project's GitLab, this may be \"https://gitlab.gumballproject.org/\".""", json_schema_extra = { "linkml_meta": {'alias': 'contact_type_url', 'domain_of': ['ContactDetails']} })
+    value: str = Field(default=..., description="""The value of the contact detail. For example, an email address or URL. Do not include a prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'value', 'domain_of': ['ContactDetails']} })
+
+
 class Individual(Contact):
     """
     An individual person.
@@ -713,13 +740,12 @@ class Individual(Contact):
                        'FundingSource',
                        'License',
                        'Usage']} })
-    email: Optional[str] = Field(default=None, description="""The email address of the individual.""", json_schema_extra = { "linkml_meta": {'alias': 'email', 'domain_of': ['Individual', 'Organization']} })
-    github: Optional[str] = Field(default=None, description="""The GitHub username of the individual. Do not include a prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'github', 'domain_of': ['Individual', 'Organization']} })
     orcid: Optional[str] = Field(default=None, description="""The ORCID of the individual. Do not include the \"https://orcid.org/\" prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'orcid', 'domain_of': ['Individual']} })
     category: Optional[str] = Field(default=None, description="""The category of the entity. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    contact_details: Optional[List[ContactDetails]] = Field(default=None, description="""A field for contact details, including email, GitHub, and contact-specific URLs.""", json_schema_extra = { "linkml_meta": {'alias': 'contact_details', 'domain_of': ['Contact']} })
 
     @field_validator('orcid')
     def pattern_orcid(cls, v):
@@ -746,13 +772,11 @@ class Organization(Contact):
                        'FundingSource',
                        'License',
                        'Usage']} })
-    email: Optional[str] = Field(default=None, description="""The email address of the organization.""", json_schema_extra = { "linkml_meta": {'alias': 'email', 'domain_of': ['Individual', 'Organization']} })
-    github: Optional[str] = Field(default=None, description="""The GitHub organization name. Do not include a prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'github', 'domain_of': ['Individual', 'Organization']} })
-    url: Optional[str] = Field(default=None, description="""The URL of a site for the organization.""", json_schema_extra = { "linkml_meta": {'alias': 'url', 'domain_of': ['Organization', 'Usage']} })
     category: Optional[str] = Field(default=None, description="""The category of the entity. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
+    contact_details: Optional[List[ContactDetails]] = Field(default=None, description="""A field for contact details, including email, GitHub, and contact-specific URLs.""", json_schema_extra = { "linkml_meta": {'alias': 'contact_details', 'domain_of': ['Contact']} })
 
 
 class FundingSource(NamedThing):
@@ -832,7 +856,7 @@ class Usage(NamedThing):
                        'License',
                        'Usage']} })
     description: Optional[str] = Field(default=None, description="""A description of the usage.""", json_schema_extra = { "linkml_meta": {'alias': 'description', 'domain_of': ['Resource', 'Product', 'Usage']} })
-    url: Optional[str] = Field(default=None, description="""A URL for a description or example of the usage.""", json_schema_extra = { "linkml_meta": {'alias': 'url', 'domain_of': ['Organization', 'Usage']} })
+    url: Optional[str] = Field(default=None, description="""A URL for a description or example of the usage.""", json_schema_extra = { "linkml_meta": {'alias': 'url', 'domain_of': ['Usage']} })
     users: Optional[List[Contact]] = Field(default=None, description="""The user implementing or working with the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'users', 'domain_of': ['Usage']} })
     publications: Optional[List[Publication]] = Field(default=None, description="""Publications associated with the usage.""", json_schema_extra = { "linkml_meta": {'alias': 'publications', 'domain_of': ['Resource', 'Usage']} })
     type: Optional[UsageEnum] = Field(default=None, description="""The type of usage.""", json_schema_extra = { "linkml_meta": {'alias': 'type', 'domain_of': ['Usage']} })
@@ -872,6 +896,7 @@ MappingProduct.model_rebuild()
 ProcessProduct.model_rebuild()
 GraphicalInterface.model_rebuild()
 ProgrammingInterface.model_rebuild()
+ContactDetails.model_rebuild()
 Individual.model_rebuild()
 Organization.model_rebuild()
 FundingSource.model_rebuild()

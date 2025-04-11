@@ -9,12 +9,15 @@ domains:
 category: KnowledgeGraph
 contacts:
 - category: Individual
-  label: "Kara Fecho"
-  email: kfecho@renci.org
-  github: karafecho
+  label: Kara Fecho
   orcid: 0000-0002-6704-9306
-homepage_url: ""
-repository: ""
+  contact_details:
+  - contact_type: email
+    value: kfecho@renci.org
+  - contact_type: github
+    value: karafecho
+homepage_url: ''
+repository: ''
 products:
 - id: icees-kg.graph
   name: KGX distribution of the ICEES Exposures KP

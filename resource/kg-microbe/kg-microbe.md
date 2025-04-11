@@ -3,8 +3,11 @@ activity_status: active
 category: KnowledgeGraph
 contacts:
 - category: Individual
-  email: MJoachimiak@lbl.gov
-  github: realmarcin
+  contact_details:
+  - contact_type: email
+    value: MJoachimiak@lbl.gov
+  - contact_type: github
+    value: realmarcin
   label: Marcin P. Joachimiak
 description: A Knowledge Graph about microbes. The KG is designed to integrate diverse
   knowledge about microbes from a variety of structured and unstructured sources.

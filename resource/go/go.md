@@ -3,7 +3,9 @@ activity_status: active
 category: Resource
 contacts:
 - category: Organization
-  email: help@geneontology.org
+  contact_details:
+  - contact_type: email
+    value: help@geneontology.org
   label: Gene Ontology Helpdesk
 description: "The Gene Ontology resource, the world\u2019s largest source of information\
   \ on the functions of genes. This knowledge is both human-readable and machine-readable,\

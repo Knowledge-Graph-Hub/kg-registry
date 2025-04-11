@@ -3,8 +3,11 @@ resources:
   category: Aggregator
   contacts:
   - category: Individual
-    email: kebedey@renci.org
-    github: YaphetKG
+    contact_details:
+    - contact_type: email
+      value: kebedey@renci.org
+    - contact_type: github
+      value: YaphetKG
     label: Yaphet Kebede
     orcid: 0000-0002-5046-0246
   description: A Translator Knowledge Provider offering multiple sub-graphs in KGX
@@ -421,7 +424,9 @@ resources:
   category: DataSource
   contacts:
   - category: Organization
-    email: biocyc-support@sri.com
+    contact_details:
+    - contact_type: email
+      value: biocyc-support@sri.com
     label: BioCyc
   description: BioCyc is a collection of 20,070 Pathway/Genome Databases (PGDBs) for
     model eukaryotes and for thousands of microbes, plus software tools for exploring
@@ -458,8 +463,11 @@ resources:
   category: DataModel
   contacts:
   - category: Individual
-    email: smoxon@lbl.gov
-    github: sierra-moxon
+    contact_details:
+    - contact_type: email
+      value: smoxon@lbl.gov
+    - contact_type: github
+      value: sierra-moxon
     label: Sierra Taylor Moxon
     orcid: 0000-0002-8719-7760
   description: Entity and association taxonomy and datamodel for life-sciences data
@@ -614,7 +622,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: patrick.aloy@irbbarcelona.org
+    contact_details:
+    - contact_type: email
+      value: patrick.aloy@irbbarcelona.org
     label: Patrick Aloy
     orcid: 0000-0002-3557-0236
   description: A knowledge graph of biological entities and their associations
@@ -664,7 +674,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: balhoff@renci.org
+    contact_details:
+    - contact_type: email
+      value: balhoff@renci.org
     label: Jim Balhoff
   description: The “cam-kp” Exposures Knowledge Graph (in development).
   domains:
@@ -747,7 +759,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    github: jeevangelista
+    contact_details:
+    - contact_type: github
+      value: jeevangelista
     label: John Erol Evangelista
   description: The Common Fund Data Ecosystem (CFDE) aims to facilitate better integration,
     and reuse of Common Fund data to accelerate discoveries in biomedical research.The
@@ -766,7 +780,9 @@ resources:
   category: DataSource
   contacts:
   - category: Organization
-    email: agbase@email.arizona.edu
+    contact_details:
+    - contact_type: email
+      value: agbase@email.arizona.edu
     label: CGNC
   description: CGNC is the Chicken Gene Nomenclature Consortium. It is  an international
     group of researchers interested in providing standardized gene nomenclature for
@@ -930,7 +946,9 @@ resources:
   category: DataSource
   contacts:
   - category: Organization
-    email: chembl-help@ebi.ac.uk
+    contact_details:
+    - contact_type: email
+      value: chembl-help@ebi.ac.uk
     label: ChEMBL
   description: ChEMBL is a manually curated database of bioactive molecules with drug-like
     properties. It brings together chemical, bioactivity and genomic data to aid the
@@ -978,8 +996,11 @@ resources:
   category: DataModel
   contacts:
   - category: Individual
-    email: cjmungall@lbl.gov
-    github: cmungall
+    contact_details:
+    - contact_type: email
+      value: cjmungall@lbl.gov
+    - contact_type: github
+      value: cmungall
     label: Christopher J. Mungall
     orcid: 0000-0002-6601-2165
   description: Automatic translation of UCSC chromosome bands to OWL classes
@@ -1009,7 +1030,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    github: ubyndr
+    contact_details:
+    - contact_type: github
+      value: ubyndr
     label: Ugur Bayindir
     orcid: 0000-0002-6012-3729
   description: CL-KG is a knowledge graph integrating the cell ontology and linked
@@ -1042,12 +1065,16 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: ct2865@columbia.edu
+    contact_details:
+    - contact_type: email
+      value: ct2865@columbia.edu
     label: Casey Ta
   - category: Individual
     label: Vincent Emonet
   - category: Individual
-    email: michel.dumontier@maastrichtuniversity.nl
+    contact_details:
+    - contact_type: email
+      value: michel.dumontier@maastrichtuniversity.nl
     label: Michel Dumontier
   description: A Translator Knowledge Provider integrating clinical data.
   domains:
@@ -1073,6 +1100,15 @@ resources:
   contacts:
   - category: Organization
     label: Critical Path Institute
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: ibraun@c-path.org
+    - contact_type: other
+      contact_type_name: Critical Path Institute GitLab
+      contact_type_url: https://gitlab.c-path.org/
+      value: ibraun
+    label: Ian Braun
   description: The C-Path Knowledge Graph project is intended to increase discoverability
     of rare disease datasets through integration with the Monarch Knowlege Graph.
   domains:
@@ -1141,7 +1177,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    github: https://github.com/bioannidis
+    contact_details:
+    - contact_type: github
+      value: https://github.com/bioannidis
     label: Vassilis N. Ioannidis
     orcid: 0000-0002-8367-0733
   description: Drug Repurposing Knowledge Graph (DRKG) is a comprehensive biological
@@ -1170,7 +1208,9 @@ resources:
   category: DataSource
   contacts:
   - category: Organization
-    email: info@drugbank.com
+    contact_details:
+    - contact_type: email
+      value: info@drugbank.com
     label: DrugBank
   description: DrugBank Online is a data resource for drugs and drug products.
   domains:
@@ -1243,7 +1283,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    github: diatomsRcool
+    contact_details:
+    - contact_type: github
+      value: diatomsRcool
     label: Anne Thessen
   description: A knowledge graph of plant traits starting with Planteome and EOL TraitBank.
   domains:
@@ -1257,7 +1299,9 @@ resources:
   category: DataSource
   contacts:
   - category: Organization
-    email: biocyc-support@sri.com
+    contact_details:
+    - contact_type: email
+      value: biocyc-support@sri.com
     label: EcoCyc
   description: EcoCyc captures information from 44,000 publications for Escherichia
     coli K-12 substr. MG1655. Use EcoCyc to search for knowledge on E. coli genes,
@@ -1295,8 +1339,11 @@ resources:
   category: Resource
   contacts:
   - category: Individual
-    email: cjmungall@lbl.gov
-    github: cmungall
+    contact_details:
+    - contact_type: email
+      value: cjmungall@lbl.gov
+    - contact_type: github
+      value: cmungall
     label: Christopher J. Mungall
     orcid: 0000-0002-6601-2165
   description: Ontology rendering of the EcoSIM Land System Model
@@ -1333,10 +1380,14 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: wyq@umich.edu
+    contact_details:
+    - contact_type: email
+      value: wyq@umich.edu
     label: Yiqun Wang
   - category: Individual
-    email: drjieliu@umich.edu
+    contact_details:
+    - contact_type: email
+      value: drjieliu@umich.edu
     label: Jie Liu
   description: Genomic Knowledgebase (GenomicKB) is a database that uses a knowledge
     graph to consolidate genomic datasets and annotations. GenomicKB integrates data
@@ -1375,7 +1426,9 @@ resources:
   category: DataSource
   contacts:
   - category: Individual
-    email: drjieliu@umich.edu
+    contact_details:
+    - contact_type: email
+      value: drjieliu@umich.edu
     label: Jie Liu
   description: The Genomic Literature Knowledge Base (GLKB) is a comprehensive and
     powerful resource that integrates over 263 million biomedical terms and more than
@@ -1435,7 +1488,9 @@ resources:
   category: Resource
   contacts:
   - category: Organization
-    email: help@geneontology.org
+    contact_details:
+    - contact_type: email
+      value: help@geneontology.org
     label: Gene Ontology Helpdesk
   description: The Gene Ontology resource, the world’s largest source of information
     on the functions of genes. This knowledge is both human-readable and machine-readable,
@@ -1672,8 +1727,11 @@ resources:
   category: DataModel
   contacts:
   - category: Individual
-    email: cjmungall@lbl.gov
-    github: cmungall
+    contact_details:
+    - contact_type: email
+      value: cjmungall@lbl.gov
+    - contact_type: github
+      value: cmungall
     label: Christopher J. Mungall
     orcid: 0000-0002-6601-2165
   description: A structured framework for integrating Gene Ontology annotations into
@@ -1713,8 +1771,11 @@ resources:
   category: Resource
   contacts:
   - category: Individual
-    email: cjmungall@lbl.gov
-    github: cmungall
+    contact_details:
+    - contact_type: email
+      value: cjmungall@lbl.gov
+    - contact_type: github
+      value: cmungall
     label: Chris Mungall
     orcid: 0000-0002-6601-2165
   description: Translation of JGI GOLD path terms to OWL
@@ -1739,7 +1800,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: rxx@case.edu
+    contact_details:
+    - contact_type: email
+      value: rxx@case.edu
     label: Rong Xu
   description: A knowledge graph for drug repurposing
   domains:
@@ -1783,7 +1846,9 @@ resources:
   category: DataSource
   contacts:
   - category: Organization
-    email: hgnc@genenames.org
+    contact_details:
+    - contact_type: email
+      value: hgnc@genenames.org
     label: HUGO Gene Nomenclature Committee
   description: HGNC is the HUGO Gene Nomenclature Committee. It is a resource for
     approved human gene names.
@@ -1990,8 +2055,11 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: kfecho@renci.org
-    github: karafecho
+    contact_details:
+    - contact_type: email
+      value: kfecho@renci.org
+    - contact_type: github
+      value: karafecho
     label: Kara Fecho
     orcid: 0000-0002-6704-9306
   description: The ICEES-based Exposures Knowledge Graph.
@@ -2017,7 +2085,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: jinfeng@insilicom.com
+    contact_details:
+    - contact_type: email
+      value: jinfeng@insilicom.com
     label: Jinfeng Zhang
   description: A large-scale KG assembled from PubMed abstracts.
   domains:
@@ -2215,8 +2285,11 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: jhc@lbl.gov
-    github: caufieldjh
+    contact_details:
+    - contact_type: email
+      value: jhc@lbl.gov
+    - contact_type: github
+      value: caufieldjh
     label: J. Harry Caufield
     orcid: 0000-0001-5705-7831
   description: A Knowledge Graph for integrating data related to Alzheimer's disease,
@@ -2249,7 +2322,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    github: justaddcoffee
+    contact_details:
+    - contact_type: github
+      value: justaddcoffee
     label: Justin Reese
   description: A knowledge graph for COVID-19 and SARS-COV-2.
   domains:
@@ -2277,7 +2352,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    github: oolonek
+    contact_details:
+    - contact_type: github
+      value: oolonek
     label: Pierre-Marie Allard
   description: Experimental natural products knowledge graph.
   domains:
@@ -2291,8 +2368,11 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: jhc@lbl.gov
-    github: caufieldjh
+    contact_details:
+    - contact_type: email
+      value: jhc@lbl.gov
+    - contact_type: github
+      value: caufieldjh
     label: J. Harry Caufield
     orcid: 0000-0001-5705-7831
   description: a Knowledge Graph for Illuminating the Druggable Genome
@@ -2321,8 +2401,11 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: MJoachimiak@lbl.gov
-    github: realmarcin
+    contact_details:
+    - contact_type: email
+      value: MJoachimiak@lbl.gov
+    - contact_type: github
+      value: realmarcin
     label: Marcin P. Joachimiak
   description: A Knowledge Graph about microbes. The KG is designed to integrate diverse
     knowledge about microbes from a variety of structured and unstructured sources.
@@ -2413,8 +2496,11 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: cjmungall@lbl.gov
-    github: cmungall
+    contact_details:
+    - contact_type: email
+      value: cjmungall@lbl.gov
+    - contact_type: github
+      value: cmungall
     label: Christopher J. Mungall
     orcid: 0000-0002-6601-2165
   description: Monarch Initiative Knowledge Graph
@@ -2458,8 +2544,11 @@ resources:
   category: DataModel
   contacts:
   - category: Individual
-    email: cjmungall@lbl.gov
-    github: cmungall
+    contact_details:
+    - contact_type: email
+      value: cjmungall@lbl.gov
+    - contact_type: github
+      value: cmungall
     label: Christopher J. Mungall
     orcid: 0000-0002-6601-2165
   description: A data model for describing change operations at a high level on an
@@ -2498,7 +2587,9 @@ resources:
   category: DataSource
   contacts:
   - category: Individual
-    email: ribeiro@ebi.ac.uk
+    contact_details:
+    - contact_type: email
+      value: ribeiro@ebi.ac.uk
     label: António JM Ribeiro
   description: The Mechanism and Catalytic Site Atlas (M-CSA) is a database of enzyme
     reaction mechanisms. It provides annotation on the protein, catalytic residues,
@@ -2540,7 +2631,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: prabhagarg@niper.ac.in
+    contact_details:
+    - contact_type: email
+      value: prabhagarg@niper.ac.in
     label: Prabha Garg
   description: MedKG is a comprehensive and continuously updated knowledge graph designed
     to address challenges in precision medicine and drug discovery. MedKG integrates
@@ -2579,7 +2672,9 @@ resources:
   category: DataSource
   contacts:
   - category: Organization
-    email: biocyc-support@sri.com
+    contact_details:
+    - contact_type: email
+      value: biocyc-support@sri.com
     label: MetaCyc
   description: MetaCyc is a curated database of experimentally elucidated metabolic
     pathways from all domains of life. MetaCyc contains pathways involved in both
@@ -2618,8 +2713,11 @@ resources:
   category: DataModel
   contacts:
   - category: Individual
-    email: cjmungall@lbl.gov
-    github: cmungall
+    contact_details:
+    - contact_type: email
+      value: cjmungall@lbl.gov
+    - contact_type: github
+      value: cmungall
     label: Christopher J. Mungall
     orcid: 0000-0002-6601-2165
   description: 'MIxS, or the Minimum Information about any (X) Sequence is a standard
@@ -2717,8 +2815,11 @@ resources:
   category: Resource
   contacts:
   - category: Individual
-    email: cjmungall@lbl.gov
-    github: cmungall
+    contact_details:
+    - contact_type: email
+      value: cjmungall@lbl.gov
+    - contact_type: github
+      value: cmungall
     label: Christopher J. Mungall
     orcid: 0000-0002-6601-2165
   description: 'This repository contains classes required by Noctua/Minerva for representing
@@ -2749,7 +2850,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    github: sanyabt
+    contact_details:
+    - contact_type: github
+      value: sanyabt
     label: Sanya Bathla Taneja
   description: NP-KG is a graph framework that creates a biomedical knowledge graph
     to identify and generate mechanistic hypotheses for pharmacokinetic natural product-drug
@@ -2806,8 +2909,11 @@ resources:
   category: Aggregator
   contacts:
   - category: Individual
-    email: cthoyt@gmail.com
-    github: cthoyt
+    contact_details:
+    - contact_type: email
+      value: cthoyt@gmail.com
+    - contact_type: github
+      value: cthoyt
     label: Charles Tapley Hoyt
     orcid: 0000-0003-4423-4370
   description: A set of databases formalized in OBO, OWL, and OBO Graph JSON formats,
@@ -4830,7 +4936,9 @@ resources:
   category: DataResource
   contacts:
   - category: Organization
-    email: help@pankbase.org
+    contact_details:
+    - contact_type: email
+      value: help@pankbase.org
     label: PanKBase
   description: PanKbase is a comprehensive, centralized resource for the study of
     the human pancreas and diabetes. The PanKbase collective aims to integrate diverse
@@ -4876,7 +4984,9 @@ resources:
   category: Resource
   contacts:
   - category: Organization
-    email: pantherfeedback@yahoo.com
+    contact_details:
+    - contact_type: email
+      value: pantherfeedback@yahoo.com
     label: PANTHER
   description: PANTHER is a Protein ANalysis THrough Evolutionary Relationships Classification
     System. The mission of the PANTHER knowledgebase is to support biomedical and
@@ -4894,7 +5004,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    github: taylordm
+    contact_details:
+    - contact_type: github
+      value: taylordm
     label: Deanne M. Taylor
   description: Petagraph is a large-scale biomedical knowledge graph integrating multi-omics
     and clinical data, built on the Unified Biomedical Knowledge Graph (UBKG). Petagraph
@@ -4924,7 +5036,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    github: https://github.com/callahantiff/
+    contact_details:
+    - contact_type: github
+      value: https://github.com/callahantiff/
     label: Tiffany Callahan
   description: PheKnowLator (Phenotype Knowledge Translator) or pkt_kg is the first
     fully customizable knowledge graph (KG) construction framework enabling users
@@ -4945,8 +5059,11 @@ resources:
   category: Resource
   contacts:
   - category: Individual
-    email: jhc@lbl.gov
-    github: caufieldjh
+    contact_details:
+    - contact_type: email
+      value: jhc@lbl.gov
+    - contact_type: github
+      value: caufieldjh
     label: J. Harry Caufield
   description: An ontology for accessing and comparing knowledge concerning phenotypes
     across species and genetic backgrounds.
@@ -5008,13 +5125,17 @@ resources:
     url: https://monarchinitiative.org/HP:0001300#disease
     users:
     - category: Organization
+      contact_details:
+      - contact_type: url
+        value: https://monarchinitiative.org/
       label: The Monarch Initiative
-      url: https://monarchinitiative.org/
 - activity_status: active
   category: Resource
   contacts:
   - category: Organization
-    email: helpdesk@pombase.org
+    contact_details:
+    - contact_type: email
+      value: helpdesk@pombase.org
     label: PomBase
   description: PomBase is a comprehensive database for the fission yeast Schizosaccharomyces
     pombe, providing structural and functional annotation, literature curation and
@@ -5080,8 +5201,11 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: marinka@hms.harvard.edu
-    github: marinkaz
+    contact_details:
+    - contact_type: email
+      value: marinka@hms.harvard.edu
+    - contact_type: github
+      value: marinkaz
     label: Marinka Zitnik
   description: PrimeKG (Precision Medicine Knowledge Graph) integrates 20 high-quality
     biomedical resources to describe 17,080 diseases with over 4 million relationships
@@ -5110,7 +5234,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: qnhu@sibs.ac.cn
+    contact_details:
+    - contact_type: email
+      value: qnhu@sibs.ac.cn
     label: Qian-Nan Hu
   description: Rare Disease Bridge (RDBridge) offers search functions for genes, potential
     drugs, pathways, literature, and medical imaging data that will support mechanistic
@@ -5141,8 +5267,11 @@ resources:
   category: Resource
   contacts:
   - category: Individual
-    email: ben.mcgee.good@gmail.com
-    github: goodb
+    contact_details:
+    - contact_type: email
+      value: ben.mcgee.good@gmail.com
+    - contact_type: github
+      value: goodb
     label: Benjamin M. Good
     orcid: 0000-0002-7334-7852
   description: Representation of entities in Reactome
@@ -5157,8 +5286,11 @@ resources:
   category: DataSource
   contacts:
   - category: Individual
-    email: cjmungall@lbl.gov
-    github: cmungall
+    contact_details:
+    - contact_type: email
+      value: cjmungall@lbl.gov
+    - contact_type: github
+      value: cmungall
     label: Christopher J. Mungall
     orcid: 0000-0002-6601-2165
   description: Reactome from Biopax
@@ -5315,7 +5447,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    github: emanuelecavalleri
+    contact_details:
+    - contact_type: github
+      value: emanuelecavalleri
     label: Emanuele Cavalleri
   description: An ontology-based KG for representing interactions involving RNA molecules.
   domains:
@@ -5329,7 +5463,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: kfecho@copperlineprofessionalsolutions.com
+    contact_details:
+    - contact_type: email
+      value: kfecho@copperlineprofessionalsolutions.com
     label: Karamarie Fecho
   description: ROBOKOP (Reasoning Over Biomedical Objects linked in Knowledge Oriented
     Pathways) is an open-source biomedical knowledge graph system that enables complex
@@ -5379,8 +5515,11 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: ramseyst@oregonstate.edu
-    github: saramsey
+    contact_details:
+    - contact_type: email
+      value: ramseyst@oregonstate.edu
+    - contact_type: github
+      value: saramsey
     label: Stephen Ramsey
     orcid: 0000-0002-2168-5403
   description: A comprehensive knowledge graph from the RTX team.
@@ -5410,7 +5549,9 @@ resources:
   category: Resource
   contacts:
   - category: Individual
-    github: emmaco
+    contact_details:
+    - contact_type: github
+      value: emmaco
     label: Emma Cooke
   description: Data produced by SciBite
   domains:
@@ -5456,7 +5597,9 @@ resources:
   category: DataSource
   contacts:
   - category: Organization
-    email: sgd-helpdesk@lists.stanford.edu
+    contact_details:
+    - contact_type: email
+      value: sgd-helpdesk@lists.stanford.edu
     label: SGD Helpdesk
   description: The Saccharomyces Genome Database (SGD) project collects information
     and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae.
@@ -5470,7 +5613,9 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    github: pnrobinson
+    contact_details:
+    - contact_type: github
+      value: pnrobinson
     label: Peter Robinson
   description: A graph of synthetic lethal interactions.
   domains:
@@ -5497,8 +5642,11 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: kevinschaper@gmail.com
-    github: kevinschaper
+    contact_details:
+    - contact_type: email
+      value: kevinschaper@gmail.com
+    - contact_type: github
+      value: kevinschaper
     label: Kevin Schaper
     orcid: 0000-0003-3311-7320
   description: The Monarch Initiative’s SRI reference knowledge graph.
@@ -5520,7 +5668,9 @@ resources:
   category: DataSource
   contacts:
   - category: Organization
-    email: swisslipids@sib.swiss
+    contact_details:
+    - contact_type: email
+      value: swisslipids@sib.swiss
     label: SwissLipids team
   description: SwissLipids is a knowledge resource for lipids and their biology.
   domains:
@@ -5574,8 +5724,11 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    email: balhoff@renci.org
-    github: balhoff
+    contact_details:
+    - contact_type: email
+      value: balhoff@renci.org
+    - contact_type: github
+      value: balhoff
     label: James P. Balhoff
     orcid: 0000-0002-8688-6599
   description: Ubergraph is an RDF triplestore integrating OBO ontologies into a unified
@@ -5624,7 +5777,9 @@ resources:
   category: DataSource
   contacts:
   - category: Organization
-    email: help@uniprot.org
+    contact_details:
+    - contact_type: email
+      value: help@uniprot.org
     label: UniProt Consortium
   description: UniProt Protein Knowledge Base
   domains:
@@ -5729,7 +5884,9 @@ resources:
   category: DataSource
   contacts:
   - category: Organization
-    email: zfinadmn@zfin.org
+    contact_details:
+    - contact_type: email
+      value: zfinadmn@zfin.org
     label: Zebrafish Information Network
   description: Zebrafish Information Network, including the Zebrafish Anatomical Ontology
   domains:

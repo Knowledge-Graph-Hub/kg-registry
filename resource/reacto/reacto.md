@@ -8,10 +8,13 @@ domains:
 - biological systems
 contacts:
 - category: Individual
-  orcid: 0000-0002-7334-7852
-  github: goodb
-  email: ben.mcgee.good@gmail.com
   label: Benjamin M. Good
+  orcid: 0000-0002-7334-7852
+  contact_details:
+  - contact_type: email
+    value: ben.mcgee.good@gmail.com
+  - contact_type: github
+    value: goodb
 homepage_url: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
 repository: http://purl.obolibrary.org/obo/go/extensions/reacto.owl
 category: Resource

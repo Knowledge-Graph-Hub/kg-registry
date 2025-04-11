@@ -8,8 +8,10 @@ domains:
 - organisms
 contacts:
 - category: Individual
-  github: pnrobinson
   label: Peter Robinson
+  contact_details:
+  - contact_type: github
+    value: pnrobinson
 homepage_url: https://kghub.io/sldb/
 repository: https://github.com/monarch-initiative/SLDBGen
 category: KnowledgeGraph

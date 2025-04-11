@@ -3,23 +3,27 @@ layout: resource_detail
 activity_status: active
 id: go-cam
 name: Gene Ontology Causal Activity Modeling (GO-CAM)
-description: A structured framework for integrating Gene Ontology annotations into computable models of biological functions.
+description: A structured framework for integrating Gene Ontology annotations into
+  computable models of biological functions.
 domains:
 - biological systems
 category: DataModel
 contacts:
 - category: Individual
-  orcid: 0000-0002-6601-2165
-  github: cmungall
-  email: cjmungall@lbl.gov
   label: Christopher J. Mungall
+  orcid: 0000-0002-6601-2165
+  contact_details:
+  - contact_type: email
+    value: cjmungall@lbl.gov
+  - contact_type: github
+    value: cmungall
 homepage_url: http://geneontology.org/go-cam/docs
 repository: https://github.com/geneontology/noctua
 publications:
 - doi: 10.1038/s41588-019-0500-1
   id: doi:10.1038/s41588-019-0500-1
   preferred: true
-  year: "2019"
+  year: '2019'
   authors:
   - Paul D Thomas
   - David P Hill
@@ -33,8 +37,7 @@ publications:
   - Pascale Gaudet
   - Suzanna E Lewis
   - Christopher J Mungall
-  title: >-
-    Gene Ontology Causal Activity Modeling (GO-CAM) moves beyond GO annotations
+  title: Gene Ontology Causal Activity Modeling (GO-CAM) moves beyond GO annotations
     to structured descriptions of biological functions and systems
 license:
   label: CC0 1.0

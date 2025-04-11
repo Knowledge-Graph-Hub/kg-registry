@@ -3,8 +3,11 @@ activity_status: active
 category: Aggregator
 contacts:
 - category: Individual
-  email: cthoyt@gmail.com
-  github: cthoyt
+  contact_details:
+  - contact_type: email
+    value: cthoyt@gmail.com
+  - contact_type: github
+    value: cthoyt
   label: Charles Tapley Hoyt
   orcid: 0000-0003-4423-4370
 description: A set of databases formalized in OBO, OWL, and OBO Graph JSON formats,

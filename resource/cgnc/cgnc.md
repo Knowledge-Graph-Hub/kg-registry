@@ -3,7 +3,9 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Organization
-  email: agbase@email.arizona.edu
+  contact_details:
+  - contact_type: email
+    value: agbase@email.arizona.edu
   label: CGNC
 description: CGNC is the Chicken Gene Nomenclature Consortium. It is  an international
   group of researchers interested in providing standardized gene nomenclature for
