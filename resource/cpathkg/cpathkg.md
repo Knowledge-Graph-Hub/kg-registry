@@ -5,7 +5,6 @@ contacts:
 - category: Organization
   label: Critical Path Institute
 - category: Individual
-  label: Ian Braun
   contact_details:
   - contact_type: email
     value: ibraun@c-path.org
@@ -13,6 +12,7 @@ contacts:
     contact_type_name: Critical Path Institute GitLab
     contact_type_url: https://gitlab.c-path.org/
     value: ibraun
+  label: Ian Braun
 description: The C-Path Knowledge Graph project is intended to increase discoverability
   of rare disease datasets through integration with the Monarch Knowlege Graph.
 domains:
