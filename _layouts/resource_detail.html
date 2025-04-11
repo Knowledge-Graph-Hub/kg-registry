@@ -134,18 +134,48 @@ page.is_obsolete %}
       <div class="list-group list-group-flush">
         {% for c in page.contacts %}
         <div class="list-group-item">
-          {% if c.email %}
-          <p><a href="mailto:{{c.email}}">{{c.label}}</a></p>
-          {% else %}
           {% if c.label %}
+          {% assign email = null %}
+          {% assign github = null %}
+          {% assign other_details = null %}
+          {% if c.contact_details %}
+            {% assign other_details = false %}
+            {% for detail in c.contact_details %}
+              {% if detail.contact_type == 'email' %}
+                {% assign email = detail.value %}
+              {% elsif detail.contact_type == 'github' %}
+                {% assign github = detail.value %}
+              {% else %}
+                {% assign other_details = true %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          
+          {% if email %}
+          <p><a href="mailto:{{email}}">{{c.label}}</a></p>
+          {% else %}
           <p>{{c.label}}</p>
           {% endif %}
           {% endif %}
+          
           {% if c.orcid %}
-          <strong>ORCID:</strong><a href="https://orcid.org/{{ c.orcid }}">{{ c.orcid }}</a>
+          <p><strong>ORCID: </strong><a href="https://orcid.org/{{ c.orcid }}">{{ c.orcid }}</a></p>
           {% endif %}
-          {% if c.github %}
-          <strong>Github:</strong><a href="https://github.com/{{ c.github }}">{{ c.github }}</a>
+          
+          {% if github %}
+          <p><strong>Github: </strong><a href="https://github.com/{{ github }}">{{ github }}</a></p>
+          {% endif %}
+          
+          {% if other_details %}
+            {% for detail in c.contact_details %}
+              {% if detail.contact_type != 'email' and detail.contact_type != 'github' %}
+                {% if detail.contact_type_url %}
+                <p><strong>{{ detail.contact_type_name }}: </strong>{{ detail.value }} (<a href="{{ detail.contact_type_url }}">site</a>)</p>
+                {% else %}
+                <p><strong>{{ detail.contact_type_name }}: </strong>{{ detail.value }}</p>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
           {% endif %}
         </div>
         {% endfor %}
