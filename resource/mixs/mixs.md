@@ -3,19 +3,22 @@ layout: resource_detail
 activity_status: active
 id: mixs
 name: MIxS
-description: >-
-  MIxS, or the Minimum Information about any (X) Sequence is a standard for describing the contextual information about the sampling and sequencing of any genomic sequence. The standard has Terms that describe characteristics of a sample that addresses:
-  What is the source of the sequence?
-  In what kind of environment was the sample collected?
-  What methods were utilized to process the sample?
+description: 'MIxS, or the Minimum Information about any (X) Sequence is a standard
+  for describing the contextual information about the sampling and sequencing of any
+  genomic sequence. The standard has Terms that describe characteristics of a sample
+  that addresses: What is the source of the sequence? In what kind of environment
+  was the sample collected? What methods were utilized to process the sample?'
 domains:
 - environment
 contacts:
 - category: Individual
-  orcid: 0000-0002-6601-2165
-  github: cmungall
-  email: cjmungall@lbl.gov
   label: Christopher J. Mungall
+  orcid: 0000-0002-6601-2165
+  contact_details:
+  - contact_type: email
+    value: cjmungall@lbl.gov
+  - contact_type: github
+    value: cmungall
 homepage_url: https://w3id.org/mixs
 repository: https://github.com/GenomicsStandardsConsortium/mixs
 products:

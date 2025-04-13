@@ -3,7 +3,9 @@ activity_status: active
 category: Resource
 contacts:
 - category: Individual
-  github: emmaco
+  contact_details:
+  - contact_type: github
+    value: emmaco
   label: Emma Cooke
 description: Data produced by SciBite
 domains:

@@ -7,8 +7,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "kebedey@renci.org",
-                    "github": "YaphetKG",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "kebedey@renci.org"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "YaphetKG"
+                        }
+                    ],
                     "label": "Yaphet Kebede",
                     "orcid": "0000-0002-5046-0246"
                 }
@@ -573,7 +581,12 @@
             "contacts": [
                 {
                     "category": "Organization",
-                    "email": "biocyc-support@sri.com",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "biocyc-support@sri.com"
+                        }
+                    ],
                     "label": "BioCyc"
                 }
             ],
@@ -620,8 +633,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "smoxon@lbl.gov",
-                    "github": "sierra-moxon",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "smoxon@lbl.gov"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "sierra-moxon"
+                        }
+                    ],
                     "label": "Sierra Taylor Moxon",
                     "orcid": "0000-0002-8719-7760"
                 }
@@ -833,7 +854,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "patrick.aloy@irbbarcelona.org",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "patrick.aloy@irbbarcelona.org"
+                        }
+                    ],
                     "label": "Patrick Aloy",
                     "orcid": "0000-0002-3557-0236"
                 }
@@ -901,7 +927,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "balhoff@renci.org",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "balhoff@renci.org"
+                        }
+                    ],
                     "label": "Jim Balhoff"
                 }
             ],
@@ -1017,7 +1048,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "github": "jeevangelista",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "jeevangelista"
+                        }
+                    ],
                     "label": "John Erol Evangelista"
                 }
             ],
@@ -1037,7 +1073,12 @@
             "contacts": [
                 {
                     "category": "Organization",
-                    "email": "agbase@email.arizona.edu",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "agbase@email.arizona.edu"
+                        }
+                    ],
                     "label": "CGNC"
                 }
             ],
@@ -1250,7 +1291,12 @@
             "contacts": [
                 {
                     "category": "Organization",
-                    "email": "chembl-help@ebi.ac.uk",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "chembl-help@ebi.ac.uk"
+                        }
+                    ],
                     "label": "ChEMBL"
                 }
             ],
@@ -1306,8 +1352,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "cjmungall@lbl.gov",
-                    "github": "cmungall",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "cjmungall@lbl.gov"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "cmungall"
+                        }
+                    ],
                     "label": "Christopher J. Mungall",
                     "orcid": "0000-0002-6601-2165"
                 }
@@ -1349,7 +1403,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "github": "ubyndr",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "ubyndr"
+                        }
+                    ],
                     "label": "Ugur Bayindir",
                     "orcid": "0000-0002-6012-3729"
                 }
@@ -1392,7 +1451,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "ct2865@columbia.edu",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "ct2865@columbia.edu"
+                        }
+                    ],
                     "label": "Casey Ta"
                 },
                 {
@@ -1401,7 +1465,12 @@
                 },
                 {
                     "category": "Individual",
-                    "email": "michel.dumontier@maastrichtuniversity.nl",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "michel.dumontier@maastrichtuniversity.nl"
+                        }
+                    ],
                     "label": "Michel Dumontier"
                 }
             ],
@@ -1439,6 +1508,22 @@
                 {
                     "category": "Organization",
                     "label": "Critical Path Institute"
+                },
+                {
+                    "category": "Individual",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "ibraun@c-path.org"
+                        },
+                        {
+                            "contact_type": "other",
+                            "contact_type_name": "Critical Path Institute GitLab",
+                            "contact_type_url": "https://gitlab.c-path.org/",
+                            "value": "ibraun"
+                        }
+                    ],
+                    "label": "Ian Braun"
                 }
             ],
             "description": "The C-Path Knowledge Graph project is intended to increase discoverability of rare disease datasets through integration with the Monarch Knowlege Graph.",
@@ -1527,7 +1612,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "github": "https://github.com/bioannidis",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "https://github.com/bioannidis"
+                        }
+                    ],
                     "label": "Vassilis N. Ioannidis",
                     "orcid": "0000-0002-8367-0733"
                 }
@@ -1564,7 +1654,12 @@
             "contacts": [
                 {
                     "category": "Organization",
-                    "email": "info@drugbank.com",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "info@drugbank.com"
+                        }
+                    ],
                     "label": "DrugBank"
                 }
             ],
@@ -1665,7 +1760,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "github": "diatomsRcool",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "diatomsRcool"
+                        }
+                    ],
                     "label": "Anne Thessen"
                 }
             ],
@@ -1685,7 +1785,12 @@
             "contacts": [
                 {
                     "category": "Organization",
-                    "email": "biocyc-support@sri.com",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "biocyc-support@sri.com"
+                        }
+                    ],
                     "label": "EcoCyc"
                 }
             ],
@@ -1733,8 +1838,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "cjmungall@lbl.gov",
-                    "github": "cmungall",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "cjmungall@lbl.gov"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "cmungall"
+                        }
+                    ],
                     "label": "Christopher J. Mungall",
                     "orcid": "0000-0002-6601-2165"
                 }
@@ -1788,12 +1901,22 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "wyq@umich.edu",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "wyq@umich.edu"
+                        }
+                    ],
                     "label": "Yiqun Wang"
                 },
                 {
                     "category": "Individual",
-                    "email": "drjieliu@umich.edu",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "drjieliu@umich.edu"
+                        }
+                    ],
                     "label": "Jie Liu"
                 }
             ],
@@ -1845,7 +1968,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "drjieliu@umich.edu",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "drjieliu@umich.edu"
+                        }
+                    ],
                     "label": "Jie Liu"
                 }
             ],
@@ -1916,7 +2044,12 @@
             "contacts": [
                 {
                     "category": "Organization",
-                    "email": "help@geneontology.org",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "help@geneontology.org"
+                        }
+                    ],
                     "label": "Gene Ontology Helpdesk"
                 }
             ],
@@ -2175,8 +2308,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "cjmungall@lbl.gov",
-                    "github": "cmungall",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "cjmungall@lbl.gov"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "cmungall"
+                        }
+                    ],
                     "label": "Christopher J. Mungall",
                     "orcid": "0000-0002-6601-2165"
                 }
@@ -2225,8 +2366,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "cjmungall@lbl.gov",
-                    "github": "cmungall",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "cjmungall@lbl.gov"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "cmungall"
+                        }
+                    ],
                     "label": "Chris Mungall",
                     "orcid": "0000-0002-6601-2165"
                 }
@@ -2262,7 +2411,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "rxx@case.edu",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "rxx@case.edu"
+                        }
+                    ],
                     "label": "Rong Xu"
                 }
             ],
@@ -2325,7 +2479,12 @@
             "contacts": [
                 {
                     "category": "Organization",
-                    "email": "hgnc@genenames.org",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "hgnc@genenames.org"
+                        }
+                    ],
                     "label": "HUGO Gene Nomenclature Committee"
                 }
             ],
@@ -2596,8 +2755,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "kfecho@renci.org",
-                    "github": "karafecho",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "kfecho@renci.org"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "karafecho"
+                        }
+                    ],
                     "label": "Kara Fecho",
                     "orcid": "0000-0002-6704-9306"
                 }
@@ -2634,7 +2801,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "jinfeng@insilicom.com",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "jinfeng@insilicom.com"
+                        }
+                    ],
                     "label": "Jinfeng Zhang"
                 }
             ],
@@ -2879,8 +3051,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "jhc@lbl.gov",
-                    "github": "caufieldjh",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "jhc@lbl.gov"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "caufieldjh"
+                        }
+                    ],
                     "label": "J. Harry Caufield",
                     "orcid": "0000-0001-5705-7831"
                 }
@@ -2923,7 +3103,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "github": "justaddcoffee",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "justaddcoffee"
+                        }
+                    ],
                     "label": "Justin Reese"
                 }
             ],
@@ -2963,7 +3148,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "github": "oolonek",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "oolonek"
+                        }
+                    ],
                     "label": "Pierre-Marie Allard"
                 }
             ],
@@ -2983,8 +3173,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "jhc@lbl.gov",
-                    "github": "caufieldjh",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "jhc@lbl.gov"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "caufieldjh"
+                        }
+                    ],
                     "label": "J. Harry Caufield",
                     "orcid": "0000-0001-5705-7831"
                 }
@@ -3025,8 +3223,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "MJoachimiak@lbl.gov",
-                    "github": "realmarcin",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "MJoachimiak@lbl.gov"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "realmarcin"
+                        }
+                    ],
                     "label": "Marcin P. Joachimiak"
                 }
             ],
@@ -3148,8 +3354,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "cjmungall@lbl.gov",
-                    "github": "cmungall",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "cjmungall@lbl.gov"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "cmungall"
+                        }
+                    ],
                     "label": "Christopher J. Mungall",
                     "orcid": "0000-0002-6601-2165"
                 }
@@ -3205,8 +3419,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "cjmungall@lbl.gov",
-                    "github": "cmungall",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "cjmungall@lbl.gov"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "cmungall"
+                        }
+                    ],
                     "label": "Christopher J. Mungall",
                     "orcid": "0000-0002-6601-2165"
                 }
@@ -3260,7 +3482,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "ribeiro@ebi.ac.uk",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "ribeiro@ebi.ac.uk"
+                        }
+                    ],
                     "label": "António JM Ribeiro"
                 }
             ],
@@ -3309,7 +3536,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "prabhagarg@niper.ac.in",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "prabhagarg@niper.ac.in"
+                        }
+                    ],
                     "label": "Prabha Garg"
                 }
             ],
@@ -3356,7 +3588,12 @@
             "contacts": [
                 {
                     "category": "Organization",
-                    "email": "biocyc-support@sri.com",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "biocyc-support@sri.com"
+                        }
+                    ],
                     "label": "MetaCyc"
                 }
             ],
@@ -3404,8 +3641,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "cjmungall@lbl.gov",
-                    "github": "cmungall",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "cjmungall@lbl.gov"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "cmungall"
+                        }
+                    ],
                     "label": "Christopher J. Mungall",
                     "orcid": "0000-0002-6601-2165"
                 }
@@ -3538,8 +3783,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "cjmungall@lbl.gov",
-                    "github": "cmungall",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "cjmungall@lbl.gov"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "cmungall"
+                        }
+                    ],
                     "label": "Christopher J. Mungall",
                     "orcid": "0000-0002-6601-2165"
                 }
@@ -3576,7 +3829,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "github": "sanyabt",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "sanyabt"
+                        }
+                    ],
                     "label": "Sanya Bathla Taneja"
                 }
             ],
@@ -3648,8 +3906,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "cthoyt@gmail.com",
-                    "github": "cthoyt",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "cthoyt@gmail.com"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "cthoyt"
+                        }
+                    ],
                     "label": "Charles Tapley Hoyt",
                     "orcid": "0000-0003-4423-4370"
                 }
@@ -6436,7 +6702,12 @@
             "contacts": [
                 {
                     "category": "Organization",
-                    "email": "help@pankbase.org",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "help@pankbase.org"
+                        }
+                    ],
                     "label": "PanKBase"
                 }
             ],
@@ -6497,7 +6768,12 @@
             "contacts": [
                 {
                     "category": "Organization",
-                    "email": "pantherfeedback@yahoo.com",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "pantherfeedback@yahoo.com"
+                        }
+                    ],
                     "label": "PANTHER"
                 }
             ],
@@ -6517,7 +6793,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "github": "taylordm",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "taylordm"
+                        }
+                    ],
                     "label": "Deanne M. Taylor"
                 }
             ],
@@ -6556,7 +6837,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "github": "https://github.com/callahantiff/",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "https://github.com/callahantiff/"
+                        }
+                    ],
                     "label": "Tiffany Callahan"
                 }
             ],
@@ -6580,8 +6866,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "jhc@lbl.gov",
-                    "github": "caufieldjh",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "jhc@lbl.gov"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "caufieldjh"
+                        }
+                    ],
                     "label": "J. Harry Caufield"
                 }
             ],
@@ -6662,8 +6956,13 @@
                     "users": [
                         {
                             "category": "Organization",
-                            "label": "The Monarch Initiative",
-                            "url": "https://monarchinitiative.org/"
+                            "contact_details": [
+                                {
+                                    "contact_type": "url",
+                                    "value": "https://monarchinitiative.org/"
+                                }
+                            ],
+                            "label": "The Monarch Initiative"
                         }
                     ]
                 }
@@ -6675,7 +6974,12 @@
             "contacts": [
                 {
                     "category": "Organization",
-                    "email": "helpdesk@pombase.org",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "helpdesk@pombase.org"
+                        }
+                    ],
                     "label": "PomBase"
                 }
             ],
@@ -6758,8 +7062,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "marinka@hms.harvard.edu",
-                    "github": "marinkaz",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "marinka@hms.harvard.edu"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "marinkaz"
+                        }
+                    ],
                     "label": "Marinka Zitnik"
                 }
             ],
@@ -6798,7 +7110,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "qnhu@sibs.ac.cn",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "qnhu@sibs.ac.cn"
+                        }
+                    ],
                     "label": "Qian-Nan Hu"
                 }
             ],
@@ -6837,8 +7154,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "ben.mcgee.good@gmail.com",
-                    "github": "goodb",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "ben.mcgee.good@gmail.com"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "goodb"
+                        }
+                    ],
                     "label": "Benjamin M. Good",
                     "orcid": "0000-0002-7334-7852"
                 }
@@ -6859,8 +7184,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "cjmungall@lbl.gov",
-                    "github": "cmungall",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "cjmungall@lbl.gov"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "cmungall"
+                        }
+                    ],
                     "label": "Christopher J. Mungall",
                     "orcid": "0000-0002-6601-2165"
                 }
@@ -7069,7 +7402,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "github": "emanuelecavalleri",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "emanuelecavalleri"
+                        }
+                    ],
                     "label": "Emanuele Cavalleri"
                 }
             ],
@@ -7089,7 +7427,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "kfecho@copperlineprofessionalsolutions.com",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "kfecho@copperlineprofessionalsolutions.com"
+                        }
+                    ],
                     "label": "Karamarie Fecho"
                 }
             ],
@@ -7156,8 +7499,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "ramseyst@oregonstate.edu",
-                    "github": "saramsey",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "ramseyst@oregonstate.edu"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "saramsey"
+                        }
+                    ],
                     "label": "Stephen Ramsey",
                     "orcid": "0000-0002-2168-5403"
                 }
@@ -7199,7 +7550,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "github": "emmaco",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "emmaco"
+                        }
+                    ],
                     "label": "Emma Cooke"
                 }
             ],
@@ -7259,7 +7615,12 @@
             "contacts": [
                 {
                     "category": "Organization",
-                    "email": "sgd-helpdesk@lists.stanford.edu",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "sgd-helpdesk@lists.stanford.edu"
+                        }
+                    ],
                     "label": "SGD Helpdesk"
                 }
             ],
@@ -7278,7 +7639,12 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "github": "pnrobinson",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "pnrobinson"
+                        }
+                    ],
                     "label": "Peter Robinson"
                 }
             ],
@@ -7317,8 +7683,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "kevinschaper@gmail.com",
-                    "github": "kevinschaper",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "kevinschaper@gmail.com"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "kevinschaper"
+                        }
+                    ],
                     "label": "Kevin Schaper",
                     "orcid": "0000-0003-3311-7320"
                 }
@@ -7349,7 +7723,12 @@
             "contacts": [
                 {
                     "category": "Organization",
-                    "email": "swisslipids@sib.swiss",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "swisslipids@sib.swiss"
+                        }
+                    ],
                     "label": "SwissLipids team"
                 }
             ],
@@ -7422,8 +7801,16 @@
             "contacts": [
                 {
                     "category": "Individual",
-                    "email": "balhoff@renci.org",
-                    "github": "balhoff",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "balhoff@renci.org"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "balhoff"
+                        }
+                    ],
                     "label": "James P. Balhoff",
                     "orcid": "0000-0002-8688-6599"
                 }
@@ -7491,7 +7878,12 @@
             "contacts": [
                 {
                     "category": "Organization",
-                    "email": "help@uniprot.org",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "help@uniprot.org"
+                        }
+                    ],
                     "label": "UniProt Consortium"
                 }
             ],
@@ -7631,7 +8023,12 @@
             "contacts": [
                 {
                     "category": "Organization",
-                    "email": "zfinadmn@zfin.org",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "zfinadmn@zfin.org"
+                        }
+                    ],
                     "label": "Zebrafish Information Network"
                 }
             ],

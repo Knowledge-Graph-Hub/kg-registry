@@ -3,7 +3,9 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Organization
-  email: help@uniprot.org
+  contact_details:
+  - contact_type: email
+    value: help@uniprot.org
   label: UniProt Consortium
 description: UniProt Protein Knowledge Base
 domains:

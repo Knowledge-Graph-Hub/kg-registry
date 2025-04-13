@@ -3,7 +3,9 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Organization
-  email: hgnc@genenames.org
+  contact_details:
+  - contact_type: email
+    value: hgnc@genenames.org
   label: HUGO Gene Nomenclature Committee
 description: HGNC is the HUGO Gene Nomenclature Committee. It is a resource for approved
   human gene names.

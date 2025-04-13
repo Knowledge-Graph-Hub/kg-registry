@@ -8,9 +8,11 @@ domains:
 - health
 contacts:
 - category: Individual
-  email: patrick.aloy@irbbarcelona.org
   label: Patrick Aloy
   orcid: 0000-0002-3557-0236
+  contact_details:
+  - contact_type: email
+    value: patrick.aloy@irbbarcelona.org
 homepage_url: https://bioteque.irbbarcelona.org/
 repository: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
 products:
@@ -25,8 +27,8 @@ products:
   - bioteque
 - id: bioteque.code
   name: Bioteque code
-  description: >-
-    Scripts used to preprocess and accommodate biomedical datasets into the knowledge database behind the Bioteque repository.
+  description: Scripts used to preprocess and accommodate biomedical datasets into
+    the knowledge database behind the Bioteque repository.
   product_url: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
   category: ProcessProduct
   license:
@@ -38,15 +40,15 @@ products:
   - bioteque
 publications:
 - authors:
-  - Fernández-Torras A
+  - "Fern\xE1ndez-Torras A"
   - Duran-Frigola M
   - Bertoni M
   - Locatelli M
   - Aloy P
   doi: doi:10.1038/s41467-022-33026-0
   id: doi:10.1038/s41467-022-33026-0
-  title: >-
-    Integrating and formatting biomedical data as pre-calculated knowledge graph embeddings in the Bioteque
+  title: Integrating and formatting biomedical data as pre-calculated knowledge graph
+    embeddings in the Bioteque
   year: '2022'
 category: KnowledgeGraph
 ---

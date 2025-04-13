@@ -3,7 +3,9 @@ activity_status: active
 category: Resource
 contacts:
 - category: Organization
-  email: helpdesk@pombase.org
+  contact_details:
+  - contact_type: email
+    value: helpdesk@pombase.org
   label: PomBase
 description: PomBase is a comprehensive database for the fission yeast Schizosaccharomyces
   pombe, providing structural and functional annotation, literature curation and access

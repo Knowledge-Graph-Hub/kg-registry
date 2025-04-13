@@ -3,7 +3,9 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Organization
-  email: biocyc-support@sri.com
+  contact_details:
+  - contact_type: email
+    value: biocyc-support@sri.com
   label: MetaCyc
 description: MetaCyc is a curated database of experimentally elucidated metabolic
   pathways from all domains of life. MetaCyc contains pathways involved in both primary

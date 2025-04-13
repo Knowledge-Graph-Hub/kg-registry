@@ -3,12 +3,19 @@ activity_status: active
 category: KnowledgeGraph
 contacts:
 - category: Individual
-  email: wyq@umich.edu
   label: Yiqun Wang
+  contact_details:
+  - contact_type: email
+    value: wyq@umich.edu
 - category: Individual
-  email: drjieliu@umich.edu
   label: Jie Liu
-description: Genomic Knowledgebase (GenomicKB) is a database that uses a knowledge graph to consolidate genomic datasets and annotations. GenomicKB integrates data from more than 30 consortia, in which the genomic entities and relationships are represented as diverse nodes and edges with properties.
+  contact_details:
+  - contact_type: email
+    value: drjieliu@umich.edu
+description: Genomic Knowledgebase (GenomicKB) is a database that uses a knowledge
+  graph to consolidate genomic datasets and annotations. GenomicKB integrates data
+  from more than 30 consortia, in which the genomic entities and relationships are
+  represented as diverse nodes and edges with properties.
 domains:
 - biological systems
 homepage_url: https://gkb.dcmb.med.umich.edu/
