@@ -3,8 +3,11 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Individual
-  email: cjmungall@lbl.gov
-  github: cmungall
+  contact_details:
+  - contact_type: email
+    value: cjmungall@lbl.gov
+  - contact_type: github
+    value: cmungall
   label: Christopher J. Mungall
   orcid: 0000-0002-6601-2165
 description: Reactome from Biopax

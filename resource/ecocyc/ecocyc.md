@@ -3,7 +3,9 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Organization
-  email: biocyc-support@sri.com
+  contact_details:
+  - contact_type: email
+    value: biocyc-support@sri.com
   label: EcoCyc
 description: EcoCyc captures information from 44,000 publications for Escherichia
   coli K-12 substr. MG1655. Use EcoCyc to search for knowledge on E. coli genes, regulation,

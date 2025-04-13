@@ -3,8 +3,11 @@ activity_status: active
 category: Aggregator
 contacts:
 - category: Individual
-  email: kebedey@renci.org
-  github: YaphetKG
+  contact_details:
+  - contact_type: email
+    value: kebedey@renci.org
+  - contact_type: github
+    value: YaphetKG
   label: Yaphet Kebede
   orcid: 0000-0002-5046-0246
 description: A Translator Knowledge Provider offering multiple sub-graphs in KGX format.

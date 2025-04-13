@@ -3,7 +3,9 @@ activity_status: active
 category: KnowledgeGraph
 contacts:
 - category: Individual
-  email: kfecho@copperlineprofessionalsolutions.com
+  contact_details:
+  - contact_type: email
+    value: kfecho@copperlineprofessionalsolutions.com
   label: Karamarie Fecho
 description: ROBOKOP (Reasoning Over Biomedical Objects linked in Knowledge Oriented
   Pathways) is an open-source biomedical knowledge graph system that enables complex

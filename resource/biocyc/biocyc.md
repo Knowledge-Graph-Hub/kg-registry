@@ -3,7 +3,9 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Organization
-  email: biocyc-support@sri.com
+  contact_details:
+  - contact_type: email
+    value: biocyc-support@sri.com
   label: BioCyc
 description: BioCyc is a collection of 20,070 Pathway/Genome Databases (PGDBs) for
   model eukaryotes and for thousands of microbes, plus software tools for exploring
