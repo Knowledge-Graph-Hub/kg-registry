@@ -389,19 +389,6 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.sssom.tsv
     secondary_source:
     - obo-db-ingest
-  - category: MappingProduct
-    description: bigg.compartment SSSOM
-    id: obo-db-ingest.bigg.compartment.sssom.tsv
-    license:
-      id: http://bigg.ucsd.edu/license#license
-      label: Custom
-    name: bigg.compartment SSSOM
-    original_source:
-    - bigg
-    - go
-    product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
-    secondary_source:
-    - obo-db-ingest
   publications:
   - authors:
     - King ZA
@@ -1509,19 +1496,6 @@ resources:
   products:
   - category: MappingProduct
     description: bigg.compartment SSSOM
-    id: obo-db-ingest.bigg.compartment.sssom.tsv
-    license:
-      id: http://bigg.ucsd.edu/license#license
-      label: Custom
-    name: bigg.compartment SSSOM
-    original_source:
-    - bigg
-    - go
-    product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
-    secondary_source:
-    - obo-db-ingest
-  - category: MappingProduct
-    description: bigg.compartment SSSOM
     format: sssom
     id: obo-db-ingest.bigg.compartment.sssom.tsv
     license:
@@ -2131,7 +2105,7 @@ resources:
   - category: GraphProduct
     compression: targz
     description: Graph data for iKraph
-    id: ikraph.graph
+    id: ikraph.graphdata
     name: iKraph graph data
     original_source:
     - ikraph
@@ -4885,19 +4859,6 @@ resources:
     original_source:
     - zfin
     product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
-    secondary_source:
-    - obo-db-ingest
-  - category: MappingProduct
-    description: bigg.compartment SSSOM
-    id: obo-db-ingest.bigg.compartment.sssom.tsv
-    license:
-      id: http://bigg.ucsd.edu/license#license
-      label: Custom
-    name: bigg.compartment SSSOM
-    original_source:
-    - bigg
-    - go
-    product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
     secondary_source:
     - obo-db-ingest
   repository: https://github.com/biopragmatics/obo-db-ingest
