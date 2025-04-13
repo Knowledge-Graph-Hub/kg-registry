@@ -1,4 +1,4 @@
-"""This script annotates an ORCID identifier to each ontology's contact person.
+"""This script annotates an ORCID identifier to each resource's contact person.
 
 Run with: ``python annotate_orcid.py``. However, it makes sense to update the mapping at
 https://github.com/cthoyt/obo-community-health first in case there are new mappings available.
@@ -17,7 +17,7 @@ import yaml
 from tqdm import tqdm
 
 HERE = pathlib.Path(__file__).parent.resolve()
-RESOURCE_DIRECTORY = HERE.parent.joinpath("ontology").resolve()
+RESOURCE_DIRECTORY = HERE.parent.joinpath("resource").resolve()
 
 
 def update_orcid(path: Union[str, pathlib.Path]) -> None:

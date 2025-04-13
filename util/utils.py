@@ -12,14 +12,14 @@ __all__ = [
 
 HERE = pathlib.Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
-RESOURCE_DIRECTORY = ROOT.joinpath("ontology").resolve()
+RESOURCE_DIRECTORY = ROOT.joinpath("resource").resolve()
 
 SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "kg_registry_schema.json")
 
 
 def get_data() -> Mapping[str, Mapping[str, Any]]:
-    """Get the ontology metadata for all ontologies by parsing the frontmatter.."""
-    ontologies = {}
+    """Get the resource metadata for all resources by parsing the frontmatter."""
+    resources = {}
     for path in RESOURCE_DIRECTORY.glob("*.md"):
         with path.open() as file:
             lines = [line.rstrip("\n") for line in file]
@@ -29,5 +29,5 @@ def get_data() -> Mapping[str, Mapping[str, Any]]:
 
         # Load the data like it is YAML
         data = yaml.safe_load(StringIO("\n".join(lines[1:idx])))
-        ontologies[data["id"]] = data
-    return ontologies
+        resources[data["id"]] = data
+    return resources

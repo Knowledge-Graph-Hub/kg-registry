@@ -1,6 +1,4 @@
-# -*- coding: utf-8 -*-
-
-"""This script sorts the ordering of the metadata in each ontology markdown file.
+"""This script sorts the ordering of the metadata in each resource markdown file.
 
 Run with: ``python standardize_metadata.py``.
 
@@ -15,7 +13,7 @@ import click
 import yaml
 from yaml import MappingNode, SafeDumper, ScalarNode
 
-from obofoundry.constants import DATA_DIRECTORY
+from kg_registry.constants import RESOURCE_DIRECTORY
 
 
 def _sort_key(kv):
@@ -98,21 +96,15 @@ def update_markdown(path: pathlib.Path) -> None:
         print("---", file=file)
         print(dumped, file=file)
         print("---", file=file)
-        for line in lines[idx + 1 :]:
+        for line in lines[idx + 1:]:
             print(line, file=file)
 
 
 @click.command(name="standarize-metadata")
 def main():
-    """Standardize ontology and other metadata."""
+    """Standardize metadata."""
     for path in RESOURCE_DIRECTORY.glob("*.md"):
         update_markdown(path)
-
-    path = DATA_DIRECTORY.joinpath("operations.yml")
-    t = yaml.safe_load(path.read_text())
-    t["members"] = sorted(t["members"], key=itemgetter("name"))
-    path.write_text(yaml.safe_dump(t, sort_keys=True, width=float("inf"), allow_unicode=True))
-
 
 if __name__ == "__main__":
     main()

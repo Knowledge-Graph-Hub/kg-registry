@@ -3,7 +3,7 @@
 import requests
 import yaml
 
-from obofoundry.constants import ROOT
+from kg_registry.constants import RESOURCE_DIRECTORY, ROOT
 
 __all__ = [
     "get_data",
@@ -36,7 +36,7 @@ WIKIDATA_SPARQL = "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
 
 def query_wikidata(query: str):
     """Query the Wikidata SPARQL endpoint and return JSON."""
-    headers = {"User-Agent": "obofoundry/1.0 (https://obofoundry.org)"}
+    headers = {"User-Agent": "kgregistry/1.0 (https://kghub.org/kg-registry/)"}
     res = requests.get(WIKIDATA_SPARQL, params={"query": query, "format": "json"}, headers=headers)
     res.raise_for_status()
     res_json = res.json()
@@ -44,12 +44,12 @@ def query_wikidata(query: str):
 
 
 def get_new_data():
-    """Get records for ontologies that have additional checks.
+    """Get records for resources that have additional checks.
 
     So far, this applies in the following scenarios:
 
-    1. New ontologies, i.e.,
-       there's a markdown file for the ontology in the ``/ontologies`` directory
+    1. New resources, i.e.,
+       there's a markdown file for the resource in the ``/resource`` directory
        but has it not yet been published and does not appear in the config.yml
     """
     data = get_data()
