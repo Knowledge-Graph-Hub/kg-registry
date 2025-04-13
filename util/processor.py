@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import argparse
-import datetime
 import logging
 import sys
 import time
@@ -17,7 +16,7 @@ __author__ = "cjm"
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Helper utils for OBO",
+        description="Helper utils for KG-Registry",
         formatter_class=argparse.RawTextHelpFormatter,
     )
     parser.add_argument(
@@ -61,13 +60,13 @@ def main():
 
     with open(args.input, "r") as f:
         obj = yaml.load(f, Loader=yaml.SafeLoader)
-        ontologies = obj["resources"]
+        resources = obj["resources"]
 
     func = args.function
-    func(ontologies, args)
+    func(resources, args)
 
 
-def check_urls(ontologies, args):
+def check_urls(resources, args):
     """
     Ensure PURLs resolve
     """
@@ -83,10 +82,10 @@ def check_urls(ontologies, args):
             return True
 
     failed_ids = []
-    for ont in ontologies:
+    for ont in resources:
         for p in ont.get("products", []):
             pid = p["id"]
-            if not test_url(p.get("ontology_purl")):
+            if not test_url(p.get("resource_purl")):
                 failed_ids.append(pid)
     if len(failed_ids) > 0:
         print("FAILURES:")
@@ -95,9 +94,9 @@ def check_urls(ontologies, args):
         exit(1)
 
 
-def extract_context(ontologies, args):
+def extract_context(resources, args):
     """
-    Writes to STDOUT a sorted JSON map from ontology prefixes to PURLs
+    Writes to STDOUT a sorted JSON map from resource prefixes to PURLs
     """
 
     def has_obo_prefix(obj):
@@ -106,7 +105,7 @@ def extract_context(ontologies, args):
         )
 
     prefix_map = {}
-    for obj in ontologies:
+    for obj in resources:
         if has_obo_prefix(obj):
             prefix = obj.get("preferredPrefix") or obj["id"].upper()
             prefix_map[prefix] = {
@@ -121,18 +120,18 @@ def extract_context(ontologies, args):
     )
 
 
-def write_all_contributors(ontologies, args):
+def write_all_contributors(resources, args):
     """
-    Query github API for all contributors to an ontology,
+    Query github API for all contributors to a resource,
     write results as json
     """
     results = []
-    for ont_obj in ontologies:
+    for ont_obj in resources:
         id = ont_obj["id"]
         logging.info("Getting info for {}".format(id))
         repo_path = get_repo_path(ont_obj)
         if repo_path is not None:
-            contribs = list(get_ontology_contributors(repo_path))
+            contribs = list(get_resource_contributors(repo_path))
             print("CONTRIBS({})=={}".format(id, contribs))
             for c in contribs:
                 print("#{}\t{}\n".format(id, c["login"]))
@@ -142,7 +141,7 @@ def write_all_contributors(ontologies, args):
     print(dumps(results, sort_keys=True, indent=4, separators=(",", ": ")))
 
 
-def get_ontology_contributors(repo_path):
+def get_resource_contributors(repo_path):
     """
     Get individual contributors to a org/repo_path
     repo_path is a string "org/repo"
@@ -216,66 +215,6 @@ def run_sparql(obj, p, expected_value, q):
     else:
         msg = "UNDECLARED_REMOTE"
     print(id + " " + p + " " + msg)
-
-
-def sparql_compare_ont(obj):
-    """
-    Some ontologies will directly declare some subset of the OBO metadata
-    directly in the ontology header. In the majority of cases we should
-    yield to the provider. However, we reserve the right to override. For
-    example, OBO may have particular guidelines about the length of the title,
-    required for coherency within the registry. All differences should be
-    discussed with the provider and an accomodation reached
-    """
-    if "ontology_purl" not in obj:
-        return
-
-    purl = obj["ontology_purl"]
-    # this could be made more declarative, or driven by the context.jsonld mapping;
-    # however, for now this is relatively simple and easy to understand:
-    run_sparql(
-        obj,
-        "license",
-        obj["license"]["url"] if "license" in obj else "",
-        "SELECT DISTINCT ?license WHERE {<"
-        + purl
-        + "> <http://purl.org/dc/elements/1.1/license> ?license}",
-    )
-    run_sparql(
-        obj,
-        "title",
-        obj["title"] if "title" in obj else "",
-        "SELECT DISTINCT ?title WHERE {<"
-        + purl
-        + "> <http://purl.org/dc/elements/1.1/title> ?title}",
-    )
-    run_sparql(
-        obj,
-        "description",
-        obj["description"] if "description" in obj else "",
-        "SELECT DISTINCT ?description WHERE {<"
-        + purl
-        + "> <http://purl.org/dc/elements/1.1/description> ?description}",
-    )
-    run_sparql(
-        obj,
-        "homepage",
-        obj["homepage"] if "homepage" in obj else "",
-        "SELECT DISTINCT ?homepage WHERE {<"
-        + purl
-        + "> <http://xmlns.com/foaf/0.1/homepage> ?homepage}",
-    )
-
-
-def sparql_compare_all(ontologies, args):
-    """
-    Run sparql_compare_ont() on all the given ontologies.
-    """
-    # The `args` parameter is not used here but it is convenient to have it in our definition, since
-    # whether this function or one of the other main `subcommands` of this script is called is
-    # determine dynamically, and we want all of the subcommands to have a consistent signature.
-    for obj in ontologies:
-        sparql_compare_ont(obj)
 
 
 if __name__ == "__main__":
