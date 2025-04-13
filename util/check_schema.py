@@ -1,6 +1,4 @@
-# -*- coding: utf-8 -*-
-
-"""A script for automatically checking the schema compliance of all ontologies.
+"""A script for automatically checking the schema compliance of all resources.
 
 Run with: ``python check_schema.py``.
 
@@ -29,17 +27,17 @@ def main(max_cutoff: int, links: bool):
 
 
 def _check_schema(max_cutoff: int = 3, links: bool = True):
-    ontologies = get_data()
+    resources = get_data()
 
     property_usage = Counter()
-    for data in ontologies.values():
+    for data in resources.values():
         for key in data:
             property_usage[key] += 1
 
     keys = {k for k, v in property_usage.items() if v <= max_cutoff}
 
     r = defaultdict(set)
-    for prefix, data in ontologies.items():
+    for prefix, data in resources.items():
         for key in keys:
             if key in data:
                 r[key].add(prefix)
@@ -52,7 +50,7 @@ def _check_schema(max_cutoff: int = 3, links: bool = True):
                     k,
                     ", ".join(
                         (
-                            f"[{prefix}](https://obofoundry.org/ontologies/{prefix})"
+                            f"[{prefix}](https://obofoundry.org/resources/{prefix})"
                             if links
                             else prefix
                         )

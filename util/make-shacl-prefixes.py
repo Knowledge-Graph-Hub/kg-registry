@@ -1,6 +1,5 @@
-#!/usr/bin/env python3
+"""Utilities for producing SHACL prefixes for resources"""
 
-import csv
 import sys
 from argparse import ArgumentParser
 
@@ -9,7 +8,7 @@ import yaml
 
 def main(args):
     """
-    Takes ontologies.yml file and makes a triple file with SHACL prefixes.
+    Takes main yaml file and makes a triple file with SHACL prefixes.
 
     For example, for uberon it will generate:
 
@@ -30,7 +29,7 @@ def main(args):
     """
     parser = ArgumentParser(
         description="""
-  Takes ontologies.yml file and makes a triple file with shacl prefixes"""
+  Takes main yml file and makes a triple file with shacl prefixes"""
     )
     parser.add_argument("input")
     args = parser.parse_args()
@@ -42,11 +41,8 @@ def main(args):
     print("[")
     print(" sh:declare")
     sep = ""
-    for ont in data["resources"]:
-        # if ont.get("is_obsolete", False):
-        #    continue
-        # See https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1976
-        prefix = ont.get("preferredPrefix", ont["id"].upper())
+    for resource in data["resources"]:
+        prefix = resource.get("preferredPrefix", resource["id"].upper())
         print(
             f'{sep}[ sh:prefix "{prefix}" ; sh:namespace "http://purl.obolibrary.org/obo/{prefix}_"]'
         )
