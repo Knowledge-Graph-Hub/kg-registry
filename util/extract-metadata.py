@@ -263,9 +263,11 @@ def concat_resource_yaml(args):
 
         # Now update the concatenated list of resources
         # And write newly added products to their respective Resource pages
+        print("Cross-resource references:")
+        print("Resource Name\tCount of products referencing")
         for obj in objs:
             if obj["id"] in to_be_propagated:
-                print(f"{len(to_be_propagated[obj["id"]])} product(s) reference {obj['id']} entry")
+                print(f"{obj['id']}\t{len(to_be_propagated[obj["id"]])}")
 
                 total_written = 0
 
@@ -292,8 +294,6 @@ def concat_resource_yaml(args):
 
                 if total_written > 0:
                     print(f" Wrote {str(total_written)} product(s) to {obj['id']} entry")
-                else:
-                    print(f" No new products written to {obj['id']} entry - may already exist")
 
     objs = []
     foundry = []
