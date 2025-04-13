@@ -10,14 +10,14 @@ import pathlib
 import click
 
 HERE = pathlib.Path(__file__).parent.resolve()
-RESOURCE_DIRECTORY = HERE.parent.joinpath("ontology").resolve()
+RESOURCE_DIRECTORY = HERE.parent.joinpath("resource").resolve()
 
 
 @click.command()
 @click.argument("old_label")
 @click.argument("new_label")
 def main(old_label: str, new_label: str):
-    """Rename domains across all ontologies."""
+    """Rename domains across all resources."""
     old_line = f"domain: {old_label}"
     new_line = f"domain: {new_label}"
 
