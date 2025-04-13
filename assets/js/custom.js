@@ -554,7 +554,7 @@ jQuery(document).ready(function() {
     }
     
     /**
-     * Sort json ontology data by the given sort field
+     * Sort json resource data by the given sort field
      * @param {Object} data
      * @param {string|number} sortField
      */

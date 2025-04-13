@@ -12,24 +12,12 @@ import yaml
 # Path to JSON schema file:
 HERE = pathlib.Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
-RESOURCE_DIRECTORY = ROOT.joinpath("ontology").resolve()
+RESOURCE_DIRECTORY = ROOT.joinpath("resource").resolve()
 
 SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "kg_registry_schema.json")
 
 # The metadata grid to be generated:
 metadata_grid = {}
-
-
-#: These ontologies have invalid licenses, but they're grandfathered in
-LEGACY_LICENSE_PREFIXES = {
-    "gsso",
-    "hp",
-    "kisao",
-    "mamo",
-    "sbo",
-    "scdo",
-    "txpo",
-}
 
 
 def main():
@@ -111,10 +99,10 @@ def get_schema():
 def validate_metadata(item, schema):
     """Given an item and a schema, validate the item against the
     schema. Add the full results to the metadata_grid and return a map of
-    errors, warnings, and infos for any active ontologies."""
+    errors, warnings, and infos for any active resources."""
     global metadata_grid
 
-    ont_id = item["id"]
+    resource_id = item["id"]
     # these lists will be displayed on the console:
     errors = []
     warnings = []
@@ -123,10 +111,9 @@ def validate_metadata(item, schema):
     results = {}
 
     # determine how to sort this item in the grid:
-    results["foundry"] = False  # True if item.get("in_foundry_order") == 1 else False
     results["obsolete"] = True if item.get("is_obsolete") is True else False
     # if there is no status, put them at the bottom with inactive:
-    results["ontology_status"] = (
+    results["resource_status"] = (
         item["activity_status"] if "activity_status" in item else "inactive"
     )
 
@@ -147,7 +134,7 @@ def validate_metadata(item, schema):
         if title in list(ve.absolute_schema_path) or title in schema["properties"]:
             if title in list(ve.absolute_schema_path):
                 title_index = list(ve.absolute_schema_path).index(title)
-                path = list(ve.absolute_schema_path)[0 : (title_index + 1)]
+                path = list(ve.absolute_schema_path)[0: (title_index + 1)]
             else:
                 path = ["properties", title]
             abs_schema = schema
@@ -179,11 +166,10 @@ def validate_metadata(item, schema):
 
         # these cases will not cause test failure and will not be logged
         # the results are just added to the metadata grid:
-        # - orphaned ontology on contact or license or repository check
-        # - inactive ontology
-        # - obsolete ontology
-        # - ontology annotated with `validate: false`
-        # - ontology in legacy license exception list
+        # - orphaned resource on contact or license or repository check
+        # - inactive resource
+        # - obsolete resource
+        # - resource annotated with `validate: false`
         if not (
             (
                 item.get("activity_status") == "orphaned"
@@ -194,7 +180,6 @@ def validate_metadata(item, schema):
                 or item.get("activity_status") == "inactive"
                 or item.get("validate") is False
             )
-            or (title == "license" and ont_id in LEGACY_LICENSE_PREFIXES)
         ):
             # get a message for displaying on terminal
             msg = ve.message
@@ -212,8 +197,8 @@ def validate_metadata(item, schema):
                         if search:
                             msg = format_license_msg(search.group(1))
 
-            # format the message with the ontology ID
-            msg = "%s %s: %s" % (ont_id.upper(), title, msg)
+            # format the message with the resource ID
+            msg = "%s %s: %s" % (resource_id.upper(), title, msg)
 
             # append to correct set of warnings
             if level == "error":
@@ -235,7 +220,7 @@ def validate_metadata(item, schema):
         results["validation_status"] = "INFO"
     else:
         results["validation_status"] = "PASS"
-    metadata_grid[ont_id] = results
+    metadata_grid[resource_id] = results
 
     return {"error": errors, "warn": warnings, "info": infos}
 
@@ -250,7 +235,7 @@ def format_license_msg(substr):
 
 
 def update_results(results, add):
-    """Given a map of results for all ontologies and a map of results to add,
+    """Given a map of results for all resources and a map of results to add,
     append the results to the lists in the map."""
     results["error"] = results["error"] + add["error"]
     results["warn"] = results["warn"] + add["warn"]
@@ -261,43 +246,35 @@ def update_results(results, add):
 def sort_grid(metadata_grid):
     """
     Given a metadata grid as a map, sort the grid based on:
-    1. Foundry status
-    2. Ontology activity status
-    3. Validation status
-    4. Alphabetical
+    1. Resource activity status
+    2. Validation status
+    3. Alphabetical
     Return a sorted list of IDs.
     """
-    foundry = {"PASS": [], "INFO": [], "WARN": [], "FAIL": []}
     active = {"PASS": [], "INFO": [], "WARN": [], "FAIL": []}
     orphaned = {"PASS": [], "INFO": [], "WARN": [], "FAIL": []}
     inactive = {"PASS": [], "INFO": [], "WARN": [], "FAIL": []}
     obsolete = {"PASS": [], "INFO": [], "WARN": [], "FAIL": []}
 
-    for ont_id, results in metadata_grid.items():
-        # get the info about the ontology to sort on
-        ontology_status = results["ontology_status"]
+    for resource_id, results in metadata_grid.items():
+        # get the info about the resource to sort on
+        resource_status = results["resource_status"]
         validation_status = results["validation_status"]
 
-        # foundry ontologies are displayed first
-        # they must be active
-        if results["foundry"]:
-            foundry[validation_status].append(ont_id)
-            continue
-
-        # obsolete ontologies are displayed last
+        # obsolete resources are displayed last
         # they are always inactive
         # (inactive does not mean obsolete)
         if results["obsolete"]:
-            obsolete[validation_status].append(ont_id)
+            obsolete[validation_status].append(resource_id)
             continue
 
         # finally, sort by: active, orphaned, inactive
-        if ontology_status == "active":
-            active[validation_status].append(ont_id)
-        elif ontology_status == "orphaned":
-            orphaned[validation_status].append(ont_id)
-        elif ontology_status == "inactive":
-            inactive[validation_status].append(ont_id)
+        if resource_status == "active":
+            active[validation_status].append(resource_id)
+        elif resource_status == "orphaned":
+            orphaned[validation_status].append(resource_id)
+        elif resource_status == "inactive":
+            inactive[validation_status].append(resource_id)
 
     # concatenate everything to a sorted list:
     def sort_list(arr):
@@ -307,7 +284,7 @@ def sort_grid(metadata_grid):
         return arr
 
     sort = []
-    for ont_type in [foundry, active, orphaned, inactive, obsolete]:
+    for ont_type in [active, orphaned, inactive, obsolete]:
         for v_status in ["PASS", "INFO", "WARN", "FAIL"]:
             sort = sort + sort_list(ont_type[v_status])
 
@@ -337,12 +314,12 @@ def save_grid(metadata_grid, headers, grid_outfile):
 
     with open(grid_outfile, "w") as f:
         f.write(header)
-        for ont_id in sort_order:
-            results = metadata_grid[ont_id]
+        for resource_id in sort_order:
+            results = metadata_grid[resource_id]
             s = "{1}{0}{2}{0}{3}".format(
                 separator,
-                ont_id,
-                results["ontology_status"],
+                resource_id,
+                results["resource_status"],
                 results["validation_status"],
             )
             for h in headers:
