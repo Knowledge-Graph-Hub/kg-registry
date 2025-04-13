@@ -133,8 +133,9 @@ tmp/unsorted-resources.yml: $(RESOURCES) | tmp
 	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
 
 # Run validation, including with LinkML validator
+# But don't show the whole command because it is very long
 extract-metadata: $(RESOURCES)
-	./util/extract-metadata.py validate $^
+	@./util/extract-metadata.py validate $^
 
 prettify: $(RESOURCES)
 	./util/extract-metadata.py prettify $^
