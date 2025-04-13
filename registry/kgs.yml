@@ -1819,6 +1819,82 @@ resources:
 - activity_status: active
   category: DataSource
   contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: liangcheng@hrbmu.edu.cn
+    label: Liang Cheng
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: xuezhang@hrbmu.edu.cn
+    label: Xue Zhang
+  description: A manually curated database of target genes of gut microbes and microbial
+    metabolites in humans and mice.
+  domains:
+  - biological systems
+  - microbiology
+  homepage_url: http://bio-computing.hrbmu.edu.cn/gutmgene
+  id: gutmgene
+  layout: resource_detail
+  name: GutMGene
+  products:
+  - category: GraphicalInterface
+    description: GutMGene data and interface
+    id: gutmgene.site
+    name: GutMGene site
+    original_source:
+    - gutmgene
+    product_url: http://bio-computing.hrbmu.edu.cn/gutmgene
+    secondary_source:
+    - gutmgene
+  - category: ProcessProduct
+    description: Code for generating MGMLink
+    id: mgmlink.code
+    name: MGMLink code
+    original_source:
+    - gutmgene
+    - pheknowlator
+    product_url: https://github.com/bsantan/MGMLink
+    secondary_source:
+    - mgmlink
+  publications:
+  - authors:
+    - Cheng L
+    - Qi C
+    - Yang H
+    - Lu M
+    - Cai Y
+    - Fu T
+    - Ren J
+    - Jin Q
+    - Zhang X
+    doi: 10.1093/nar/gkab786
+    id: doi:10.1093/nar/gkab786
+    title: '''gutMGene: a comprehensive database for target genes of gut microbes
+      and microbial metabolites'''
+    year: '2021'
+  - authors:
+    - Qi C
+    - He G
+    - Qian K
+    - Guan S
+    - Li Z
+    - Liang S
+    - Liu J
+    - Ke X
+    - Zhang S
+    - Lu M
+    - Cheng L
+    - Zhang X
+    doi: 10.1093/nar/gkae1002
+    id: doi:10.1093/nar/gkae1002
+    title: '''gutMGene v2.0: an updated comprehensive database fortarget genes of
+      gut microbes and microbial metabolites'''
+    year: '2025'
+- activity_status: active
+  category: DataSource
+  contacts:
   - category: Organization
     contact_details:
     - contact_type: email
@@ -2683,6 +2759,43 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv
     secondary_source:
     - obo-db-ingest
+- activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: github
+      value: bsantan
+    label: Brook Santangelo
+  description: A knowledge graph of linked microbes, genes and metabolites.
+  domains:
+  - biological systems
+  - microbiology
+  id: mgmlink
+  layout: resource_detail
+  name: MGMLink
+  products:
+  - category: ProcessProduct
+    description: Code for generating MGMLink
+    id: mgmlink.code
+    name: MGMLink code
+    original_source:
+    - gutmgene
+    - pheknowlator
+    product_url: https://github.com/bsantan/MGMLink
+    secondary_source:
+    - mgmlink
+  publications:
+  - authors:
+    - Santangelo BE
+    - Bada M
+    - Hunter LE
+    - Lozupone C
+    doi: 10.1038/s41598-025-91230-6
+    id: doi:10.1038/s41598-025-91230-6
+    title: '''Hypothesizing mechanistic links between microbes and disease using knowledge
+      graphs'''
+    year: '2025'
 - activity_status: active
   category: DataModel
   contacts:
@@ -5015,6 +5128,37 @@ resources:
     id: https://www.apache.org/licenses/LICENSE-2.0
     label: Apache License 2.0
   name: PheKnowLator
+  products:
+  - category: ProcessProduct
+    description: Code for generating PheKnowLator
+    id: pheknowlator.code
+    name: PheKnowLator code
+    original_source:
+    - pheknowlator
+    product_url: https://github.com/callahantiff/PheKnowLator
+    secondary_source:
+    - pheknowlator
+  - category: ProcessProduct
+    description: Code for generating MGMLink
+    id: mgmlink.code
+    name: MGMLink code
+    original_source:
+    - gutmgene
+    - pheknowlator
+    product_url: https://github.com/bsantan/MGMLink
+    secondary_source:
+    - mgmlink
+  publications:
+  - authors:
+    - Callahan TJ
+    - Tripodi IJ
+    - Hunter LE
+    - Baumgartner WA Jr
+    doi: 10.1101/2020.04.30.071407
+    id: doi:10.1101/2020.04.30.071407
+    title: '''A Framework for Automated Construction of Heterogeneous Large-Scale
+      Biomedical Knowledge Graphs'''
+    year: '2020'
   repository: https://github.com/callahantiff/PheKnowLator
 - activity_status: active
   category: Resource

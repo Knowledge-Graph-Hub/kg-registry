@@ -12,7 +12,8 @@ contacts:
   - contact_type: email
     value: xuezhang@hrbmu.edu.cn
   label: Xue Zhang
-description: A manually curated database of target genes of gut microbes and microbial metabolites in humans and mice.
+description: A manually curated database of target genes of gut microbes and microbial
+  metabolites in humans and mice.
 domains:
 - biological systems
 - microbiology
@@ -30,6 +31,16 @@ products:
   product_url: http://bio-computing.hrbmu.edu.cn/gutmgene
   secondary_source:
   - gutmgene
+- category: ProcessProduct
+  description: Code for generating MGMLink
+  id: mgmlink.code
+  name: MGMLink code
+  original_source:
+  - gutmgene
+  - pheknowlator
+  product_url: https://github.com/bsantan/MGMLink
+  secondary_source:
+  - mgmlink
 publications:
 - authors:
   - Cheng L
@@ -43,7 +54,8 @@ publications:
   - Zhang X
   doi: 10.1093/nar/gkab786
   id: doi:10.1093/nar/gkab786
-  title: '''gutMGene: a comprehensive database for target genes of gut microbes and microbial metabolites'''
+  title: '''gutMGene: a comprehensive database for target genes of gut microbes and
+    microbial metabolites'''
   year: '2021'
 - authors:
   - Qi C
@@ -60,7 +72,8 @@ publications:
   - Zhang X
   doi: 10.1093/nar/gkae1002
   id: doi:10.1093/nar/gkae1002
-  title: '''gutMGene v2.0: an updated comprehensive database fortarget genes of gut microbes and microbial metabolites'''
+  title: '''gutMGene v2.0: an updated comprehensive database fortarget genes of gut
+    microbes and microbial metabolites'''
   year: '2025'
 ---
 GutMGene
