@@ -129,12 +129,14 @@ reports/metadata-grid.html: reports/metadata-grid.csv
 # Extract metadata from each resource .md file and combine into single yaml
 # Also create product pages where needed
 # and propagate product entries to related resources
+# But don't show the whole command because it is very long
 tmp/unsorted-resources.yml: $(RESOURCES) | tmp
-	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
+	@./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
 
 # Run validation, including with LinkML validator
+# But don't show the whole command because it is very long
 extract-metadata: $(RESOURCES)
-	./util/extract-metadata.py validate $^
+	@./util/extract-metadata.py validate $^
 
 prettify: $(RESOURCES)
 	./util/extract-metadata.py prettify $^

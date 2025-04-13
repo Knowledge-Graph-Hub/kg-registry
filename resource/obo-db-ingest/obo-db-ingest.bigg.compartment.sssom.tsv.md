@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: bigg.compartment SSSOM
+format: sssom
 id: obo-db-ingest.bigg.compartment.sssom.tsv
 license:
   id: http://bigg.ucsd.edu/license#license

@@ -74,7 +74,7 @@ products:
   - ikraph
   compression: targz
   format: json
-- id: ikraph.graph
+- id: ikraph.graphdata
   name: iKraph graph data
   description: Graph data for iKraph
   product_url: https://zenodo.org/records/14851275/files/iKraph_full.tar.gz?download=1
