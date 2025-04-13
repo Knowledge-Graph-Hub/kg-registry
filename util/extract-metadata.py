@@ -115,9 +115,7 @@ def validate_markdown(args):
         else:
             continue
         report = validate(instance=obj, schema=SOURCE_SCHEMA_PATH, target_class=target_class)
-        if not report.results:
-            print(f"No schema validation errors found for {fn}")
-        else:
+        if report.results:
             for result in report.results:
                 if result.severity == "ERROR":
                     errs.append(f"{fn}: {result.message}")
