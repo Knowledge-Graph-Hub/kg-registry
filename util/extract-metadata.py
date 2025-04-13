@@ -186,15 +186,54 @@ def concat_resource_yaml(args):
         for obj in objs:
             if "products" in obj:
                 for product in obj["products"]:
-                    # Check if the product already has a sub-page
-                    # We will regenerate it anyway, in case the resource
-                    # metadata has changed
+                    # Only create pages for products with IDs that start with the resource ID
                     if "id" in product and (product["id"]).startswith(obj["id"]):
                         fn = f"resource/{obj['id']}/{product['id']}.md"
-                        if pathlib.Path(fn).exists():
-                            print(f"Updating page for product {product['id']}")
+                        file_path = pathlib.Path(fn)
+
+                        # Create a copy of the product to add layout
+                        product_with_layout = deepcopy(product)
+
+                        # Check if file exists
+                        if file_path.exists():
+                            try:
+                                # Load existing product data
+                                existing_product = frontmatter.load(fn).metadata
+
+                                # Remove layout from comparison if it exists
+                                existing_product_copy = deepcopy(existing_product)
+                                if "layout" in existing_product_copy:
+                                    del existing_product_copy["layout"]
+
+                                # Compare content (ignoring order)
+                                if yaml.dump(sorted(product.items())) == yaml.dump(sorted(existing_product_copy.items())):
+                                    continue
+                                else:
+                                    print(
+                                        f"Updating page for product {product['id']} - content changed")
+                                    # Show what's different
+                                    product_keys = set(product.keys())
+                                    existing_keys = set(existing_product_copy.keys())
+
+                                    # Show added or removed keys
+                                    added_keys = product_keys - existing_keys
+                                    removed_keys = existing_keys - product_keys
+                                    if added_keys:
+                                        print(f"  Added fields: {', '.join(added_keys)}")
+                                    if removed_keys:
+                                        print(f"  Removed fields: {', '.join(removed_keys)}")
+
+                                    # Show changed values for common keys
+                                    common_keys = product_keys.intersection(existing_keys)
+                                    for key in common_keys:
+                                        if product[key] != existing_product_copy.get(key):
+                                            print(f"  Changed '{key}'")
+                            except Exception as e:
+                                print(
+                                    f"Error reading existing product file {fn}, will recreate: {str(e)}")
                         else:
-                            print(f"Creating page for product {product['id']}")
+                            print(f"Creating new page for product {product['id']}")
+
                         # Write the product to its own page
                         with open(fn, "w") as f:
                             f.write("---\n" + yaml.dump(product) + layout_string + "\n---\n")
