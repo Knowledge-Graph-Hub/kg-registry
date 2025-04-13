@@ -29,6 +29,7 @@ go,active,PASS
 go-cam,active,PASS
 goldterms,active,PASS
 gp-kg,active,PASS
+gutmgene,active,PASS
 hgnc,active,PASS
 hra-kg,active,PASS
 icees-kg,active,PASS
@@ -45,6 +46,7 @@ kgcl,active,PASS
 m-csa,active,PASS
 medkg,active,PASS
 metacyc,active,PASS
+mgmlink,active,PASS
 mixs,active,PASS
 molecular-data-kp,active,PASS
 multiomics-kp,active,PASS
