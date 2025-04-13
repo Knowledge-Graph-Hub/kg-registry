@@ -15,7 +15,7 @@ from bioregistry.license_standardizer import LICENSES
 from tqdm import tqdm
 
 HERE = pathlib.Path(__file__).parent.resolve()
-RESOURCE_DIRECTORY = HERE.parent.joinpath("ontology").resolve()
+RESOURCE_DIRECTORY = HERE.parent.joinpath("resource").resolve()
 
 
 def update_markdown(path: Union[str, pathlib.Path]) -> None:
