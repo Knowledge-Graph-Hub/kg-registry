@@ -231,14 +231,22 @@ classes:
           The original source(s) of the product, referred to 
           by the identifier of each resource.
           This may be the parent resource or another resource.
-        range: Resource
+          This may also be a specific product.
+        range: NamedThing
+        any_of:
+          - range: Resource
+          - range: Product
         multivalued: true
       secondary_source:
         description: >-
           The source(s) of the product, other than its original
           source, referred to by the identifier of each resource.
           This may be an Aggregator or another resource.
-        range: Resource
+          This may also be a specific product.
+        range: NamedThing
+        any_of:
+          - range: Resource
+          - range: Product
         multivalued: true
       product_url:
         description: >-

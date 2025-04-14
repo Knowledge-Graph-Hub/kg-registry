@@ -533,8 +533,16 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.",
                     "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
                         "type": "string"
                     },
                     "type": [
@@ -567,8 +575,16 @@
                     ]
                 },
                 "secondary_source": {
-                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.",
                     "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
                         "type": "string"
                     },
                     "type": [
@@ -1003,8 +1019,16 @@
                     ]
                 },
                 "original_source": {
-                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.",
                     "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
                         "type": "string"
                     },
                     "type": [
@@ -1047,8 +1071,16 @@
                     ]
                 },
                 "secondary_source": {
-                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.",
                     "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
                         "type": "string"
                     },
                     "type": [
@@ -1168,8 +1200,16 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.",
                     "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
                         "type": "string"
                     },
                     "type": [
@@ -1202,8 +1242,16 @@
                     ]
                 },
                 "secondary_source": {
-                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.",
                     "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
                         "type": "string"
                     },
                     "type": [
@@ -1630,8 +1678,16 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.",
                     "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
                         "type": "string"
                     },
                     "type": [
@@ -1664,8 +1720,16 @@
                     ]
                 },
                 "secondary_source": {
-                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.",
                     "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
                         "type": "string"
                     },
                     "type": [
@@ -1856,8 +1920,16 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.",
                     "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
                         "type": "string"
                     },
                     "type": [
@@ -1890,8 +1962,16 @@
                     ]
                 },
                 "secondary_source": {
-                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.",
                     "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
                         "type": "string"
                     },
                     "type": [
@@ -2011,8 +2091,16 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.",
                     "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
                         "type": "string"
                     },
                     "type": [
@@ -2045,8 +2133,16 @@
                     ]
                 },
                 "secondary_source": {
-                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.",
                     "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
                         "type": "string"
                     },
                     "type": [
@@ -2187,8 +2283,16 @@
                     "type": "string"
                 },
                 "original_source": {
-                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource.",
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.",
                     "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
                         "type": "string"
                     },
                     "type": [
@@ -2221,8 +2325,16 @@
                     ]
                 },
                 "secondary_source": {
-                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource.",
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.",
                     "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
                         "type": "string"
                     },
                     "type": [
