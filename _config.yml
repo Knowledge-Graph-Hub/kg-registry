@@ -2958,9 +2958,14 @@ resources:
     contact_details:
     - contact_type: email
       value: richard.scheuermann@nih.gov
+    label: Richard Scheuermann
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: matthew.diller@nih.gov
     - contact_type: github
       value: dillerm
-    label: Richard Scheuermann
+    label: Matthew Diller
     orcid: 0000-0001-6378-1703
   description: A knowledge graph that contains knowledge about cellular phenotypes
     (cell types and cell states) that has been gathered through single cell technologies
