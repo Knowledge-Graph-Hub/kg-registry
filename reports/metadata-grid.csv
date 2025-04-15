@@ -51,6 +51,7 @@ mixs,active,PASS
 molecular-data-kp,active,PASS
 multiomics-kp,active,PASS
 neo,active,PASS
+nlm-ckn,active,PASS
 np-kg,active,PASS
 obo-db-ingest,active,PASS
 ontology-kp,active,PASS

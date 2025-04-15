@@ -2938,6 +2938,36 @@ resources:
   contacts:
   - category: Individual
     contact_details:
+    - contact_type: email
+      value: richard.scheuermann@nih.gov
+    - contact_type: github
+      value: dillerm
+    label: Richard Scheuermann
+    orcid: 0000-0001-6378-1703
+  description: A knowledge graph that contains knowledge about cellular phenotypes
+    (cell types and cell states) that has been gathered through single cell technologies
+    and related experiments. NLM-CKN is populated using validated computational analysis
+    pipelines and natural language processing of scientific literature and integrated
+    with other public sources of relevant knowledge about genes, anatomical structures,
+    diseases, and drugs.
+  domains:
+  - biological systems
+  - health
+  id: nlm-ckn
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+  name: NLM-CKN
+  repository: https://github.com/NIH-NLM/cell-kn-mvp
+  warnings:
+  - Private repository as of April 15 2025
+- activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Individual
+    contact_details:
     - contact_type: github
       value: sanyabt
     label: Sanya Bathla Taneja
