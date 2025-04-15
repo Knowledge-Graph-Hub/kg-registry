@@ -10,10 +10,15 @@ domains:
 contacts:
 - category: Individual
   label: Richard Scheuermann
-  orcid: 0000-0001-6378-1703
   contact_details:
   - contact_type: email
     value: richard.scheuermann@nih.gov
+- category: Individual
+  label: Matthew Diller
+  orcid: 0000-0001-6378-1703
+  contact_details:
+  - contact_type: email
+    value: matthew.diller@nih.gov
   - contact_type: github
     value: dillerm
 repository: https://github.com/NIH-NLM/cell-kn-mvp
