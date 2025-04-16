@@ -124,7 +124,7 @@ layout: default
     {% if page.contacts %}
     <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem" id="contacts">
       <div class="card-header">
-        <h4>Contacts</h4>
+        <h4><i class="bi bi-person-workspace"></i> Contacts</h4>
       </div>
       <div class="list-group list-group-flush">
         {% for c in page.contacts %}
@@ -181,7 +181,7 @@ layout: default
     {% if page.publications and page.publications.size > 0 %}
     <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem" id="publications">
       <div class="card-header">
-        <h4>Publications</h4>
+        <h4><i class="bi bi-newspaper"></i> Publications</h4>
       </div>
       <div class="list-group list-group-flush">
         {% for p in page.publications %}
@@ -237,7 +237,7 @@ layout: default
 
     <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem" id="products">
       <div class="card-header">
-        <h4>Products</h4>
+        <h4><i class="bi bi-box-seam-fill"></i> Products</h4>
       </div>
       {% if has_internal_products %}
       <h5 style="margin-left: 0.5em; margin-top: 0.5em">From this Resource</h5>
@@ -362,7 +362,7 @@ layout: default
     {% if page.usages %}
     <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem">
       <div class="card-header">
-        <h4>Usages</h4>
+        <h4><i class="bi bi-bucket-fill"></i> Usages</h4>
       </div>
       <div class="list-group list-group-flush">
         {% for p in page.usages %}
