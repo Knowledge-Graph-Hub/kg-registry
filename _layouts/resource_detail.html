@@ -24,32 +24,27 @@ layout: default
   <p>{{page.description}}</p>
 </div>
 
-{% if page.is_obsolete %}
+{% if page.activity_status == "inactive" %}
 <div class="row">
-  <div class="alert alert-danger" role="alert">
-    This resource is deprecated!
-  </div>
-  {% for repl in page.replaced_by %}
-  <div class="alert alert-info" role="alert">
-    Consider using: <a href="{{repl}}.html">{{repl}}</a>
-  </div>
-  {% endfor %}
-</div>
-{% endif %} {% if page.activity_status == "inactive" %}{% unless
-page.is_obsolete %}
-<div class="row">
-  <div class="alert alert-warning" role="alert">
+  <div class="alert alert-warning" style="max-width: 72rem" role="alert">
     This resource is inactive. It may not be actively maintained.
   </div>
 </div>
-{% endunless %}{% endif %} {% if page.activity_status == "orphaned" %}{% unless
-page.is_obsolete %}
+{% endif %}
+{% if page.activity_status == "orphaned" %}
 <div class="row">
-  <div class="alert alert-warning" role="alert">
-    This resource is orphaned. It is no longer maintained.
+  <div class="alert alert-warning" style="max-width: 72rem" role="alert">
+    This resource is orphaned. It is no longer maintained and its availability may vary.
   </div>
 </div>
-{% endunless %}{% endif %}
+{% endif %}
+{% if page.activity_status == "unresponsive" %}
+<div class="row">
+  <div class="alert alert-warning" style="max-width: 72rem" role="alert">
+    This resource is unresponsive. It is not consistently available but we continue to provide its metadata.
+  </div>
+</div>
+{% endif %}
 <div class="col">
   <div class="row">
     <div class="row header-card-row">
