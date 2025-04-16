@@ -3,24 +3,39 @@ layout: default
 ---
 
 <div class="row">
+  {% assign category = page.category %}
+  {% assign category_icons =
+  "Aggregator:grid-3x3:Aggregator,Resource:archive:General purpose Resource,KnowledgeGraph:globe:Knowledge Graph,DataSource:shop:Data Source,DataModel:diagram-3:Data Model or Ontology" | split: "," %}
+
+  {% assign icon_name = "" %}
+  {% assign category_name = "" %}
+  {% assign found_category = false %}
+
+  {% for item in category_icons %}
+  {% assign parts = item | split: ":" %}
+  {% assign category_key = parts[0] | strip %}
+  {% if category_key == category %}
+  {% assign icon_name = parts[1] | strip %}
+  {% assign category_name = parts[2] | strip %}
+  {% assign found_category = true %}
+  {% break %}
+  {% endif %}
+  {% endfor %}
+
+  {% if found_category != true %}
+  {% assign icon_name = "box" %}
+  {% assign category_name = "Product" %}
+  {% endif %}
+
   <h1>
     {% if page.depicted_by %}
     <img alt="logo" src="{{page.depicted_by}}" style="max-height: 1em;" />
-    {% endif %} {{ page.id }}
+    {% endif %}
+    <i class="bi bi-{{icon_name}}"></i> {{ page.id }}
   </h1>
-  {% if page.category %}
-  {% if page.category == "Aggregator" %}
-  <p>is an <strong><em>Aggregator.</em></strong></p>
-  {% elsif page.category == "Resource" %}
-  <p>is a general purpose <strong><em>Resource.</em></strong></p>
-  {% elsif page.category == "KnowledgeGraph" %}
-  <p>is a <strong><em>Knowledge Graph.</em></strong></p>
-  {% elsif page.category == "DataSource" %}
-  <p>is a <strong><em>Data Source.</em></strong></p>
-  {% elsif page.category == "DataModel" %}
-  <p>is a <strong><em>Data Model or Ontology.</em></strong></p>
-  {% endif %}
-  {% endif %}
+
+  <p>is a <strong><em>{{category_name}}.</em></strong></p>
+
   <p style="max-width: 72rem">{{page.description}}</p>
 </div>
 
@@ -51,12 +66,13 @@ layout: default
       <div class="card bg-light mb-3" style="max-width: 12rem;">
         <div class="card-body">
           <h5 class="card-title">Domains</h5>
-            <p class="card-text">
+          <p class="card-text">
             {% for domain in page.domains %}
-              {% assign domain_desc = site.data.schema.enums.DomainEnum.permissible_values[domain] %}
-              <span title="{{ domain_desc.description }}" style="text-decoration: underline dotted; cursor: help;">{{ domain }}</span>{% unless forloop.last %}, {% endunless %}
+            {% assign domain_desc = site.data.schema.enums.DomainEnum.permissible_values[domain] %}
+            <span title="{{ domain_desc.description }}" style="text-decoration: underline dotted; cursor: help;">{{
+              domain }}</span>{% unless forloop.last %}, {% endunless %}
             {% endfor %}
-            </p>
+          </p>
         </div>
       </div>
       <div class="card bg-light mb-3" style="max-width: 12rem;">
@@ -85,7 +101,8 @@ layout: default
           {% if page.repository and page.repository != "" and page.repository contains "https://github.com/" %}
           <p class="card-text"><a href="{{page.repository}}"><i class="bi bi-github"></i> GitHub</a></p>
           {% elsif page.repository and page.repository != "" %}
-            <p class="card-text"><a href="{{page.repository}}"><i class="bi bi-code-square"></i> {{ page.repository | split: '//' | last | split: '/' | first }}</a></p>
+          <p class="card-text"><a href="{{page.repository}}"><i class="bi bi-code-square"></i> {{ page.repository |
+              split: '//' | last | split: '/' | first }}</a></p>
           {% else %}
           <p class="card-text" style="font-weight: bold;">Unknown</p>
           {% endif %}
@@ -134,43 +151,44 @@ layout: default
           {% assign github = null %}
           {% assign other_details = null %}
           {% if c.contact_details %}
-            {% assign other_details = false %}
-            {% for detail in c.contact_details %}
-              {% if detail.contact_type == 'email' %}
-                {% assign email = detail.value %}
-              {% elsif detail.contact_type == 'github' %}
-                {% assign github = detail.value %}
-              {% else %}
-                {% assign other_details = true %}
-              {% endif %}
-            {% endfor %}
+          {% assign other_details = false %}
+          {% for detail in c.contact_details %}
+          {% if detail.contact_type == 'email' %}
+          {% assign email = detail.value %}
+          {% elsif detail.contact_type == 'github' %}
+          {% assign github = detail.value %}
+          {% else %}
+          {% assign other_details = true %}
           {% endif %}
-          
+          {% endfor %}
+          {% endif %}
+
           {% if email %}
           <p><a href="mailto:{{email}}">{{c.label}}</a></p>
           {% else %}
           <p>{{c.label}}</p>
           {% endif %}
           {% endif %}
-          
+
           {% if c.orcid %}
           <p><strong>ORCID: </strong><a href="https://orcid.org/{{ c.orcid }}">{{ c.orcid }}</a></p>
           {% endif %}
-          
+
           {% if github %}
           <p><strong>Github: </strong><a href="https://github.com/{{ github }}">{{ github }}</a></p>
           {% endif %}
-          
+
           {% if other_details %}
-            {% for detail in c.contact_details %}
-              {% if detail.contact_type != 'email' and detail.contact_type != 'github' %}
-                {% if detail.contact_type_url %}
-                <p><strong>{{ detail.contact_type_name }}: </strong>{{ detail.value }} (<a href="{{ detail.contact_type_url }}">site</a>)</p>
-                {% else %}
-                <p><strong>{{ detail.contact_type_name }}: </strong>{{ detail.value }}</p>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
+          {% for detail in c.contact_details %}
+          {% if detail.contact_type != 'email' and detail.contact_type != 'github' %}
+          {% if detail.contact_type_url %}
+          <p><strong>{{ detail.contact_type_name }}: </strong>{{ detail.value }} (<a
+              href="{{ detail.contact_type_url }}">site</a>)</p>
+          {% else %}
+          <p><strong>{{ detail.contact_type_name }}: </strong>{{ detail.value }}</p>
+          {% endif %}
+          {% endif %}
+          {% endfor %}
           {% endif %}
         </div>
         {% endfor %}
@@ -281,7 +299,8 @@ layout: default
             <td>{{p.category}}</td>
             <td>
               {% if p.format %}
-              <span title="{{ site.data.schema.enums.FormatEnum.permissible_values[p.format].description }}" style="text-decoration: underline dotted; cursor: help;">{{ p.format }}</span>
+              <span title="{{ site.data.schema.enums.FormatEnum.permissible_values[p.format].description }}"
+                style="text-decoration: underline dotted; cursor: help;">{{ p.format }}</span>
               {% else %}
               ❔
               {% endif %}
@@ -336,7 +355,8 @@ layout: default
             <td>{{p.category}}</td>
             <td>
               {% if p.format %}
-              <span title="{{ site.data.schema.enums.FormatEnum.permissible_values[p.format].description }}" style="text-decoration: underline dotted; cursor: help;">{{ p.format }}</span>
+              <span title="{{ site.data.schema.enums.FormatEnum.permissible_values[p.format].description }}"
+                style="text-decoration: underline dotted; cursor: help;">{{ p.format }}</span>
               {% else %}
               ❔
               {% endif %}
