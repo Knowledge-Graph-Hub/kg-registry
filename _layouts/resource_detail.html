@@ -82,10 +82,10 @@ layout: default
       <div class="card bg-light mb-3" style="max-width: 12rem;">
         <div class="card-body">
           <h5 class="card-title">Repository</h5>
-          {% if page.repository and page.repository contains "https://github.com/" %}
-          <p class="card-text"><a href="{{page.repository}}">Github</a></p>
-          {% elsif page.repository %}
-          <p class="card-text"><a href="{{page.repository}}">Repository</a></p>
+          {% if page.repository and page.repository != "" and page.repository contains "https://github.com/" %}
+          <p class="card-text"><a href="{{page.repository}}"><i class="bi bi-github"></i> GitHub</a></p>
+          {% elsif page.repository and page.repository != "" %}
+            <p class="card-text"><a href="{{page.repository}}"><i class="bi bi-code-square"></i> {{ page.repository | split: '//' | last | split: '/' | first }}</a></p>
           {% else %}
           <p class="card-text" style="font-weight: bold;">Unknown</p>
           {% endif %}
