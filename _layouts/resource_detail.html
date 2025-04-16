@@ -34,7 +34,7 @@ layout: default
     <i class="bi bi-{{icon_name}}"></i> {{ page.id }}
   </h1>
 
-  <p>is a <strong><em>{{category_name}}.</em></strong></p>
+  <p>is{% if category_name == "Aggregator" %} an{% else %} a{% endif %} <strong><em>{{category_name}}.</em></strong></p>
 
   <p style="max-width: 72rem">{{page.description}}</p>
 </div>
