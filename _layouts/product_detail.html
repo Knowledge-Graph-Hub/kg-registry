@@ -3,28 +3,38 @@ layout: default
 ---
 
 <div class="row">
+  {% assign category = page.category %}
+  {% assign category_icons = "GraphProduct:globe:Graph,Product:box:Product,MappingProduct:map:Mapping,ProcessProduct:gear:Process,DataModelProduct:diagram-3:Data Model or Ontology,GraphicalInterface:window:Graphical Interface,ProgrammingInterface:code-square:Programming Interface" | split: "," %}
+
+  {% assign icon_name = "" %}
+  {% assign category_name = "" %}
+  {% assign found_category = false %}
+
+  {% for item in category_icons %}
+  {% assign parts = item | split: ":" %}
+  {% assign category_key = parts[0] | strip %}
+  {% if category_key == category %}
+  {% assign icon_name = parts[1] | strip %}
+  {% assign category_name = parts[2] | strip %}
+  {% assign found_category = true %}
+  {% break %}
+  {% endif %}
+  {% endfor %}
+  
+  {% if found_category != true %}
+  {% assign icon_name = "box" %}
+  {% assign category_name = "Product" %}
+  {% endif %}
+
   <h1>
     {% if page.depicted_by %}
     <img alt="logo" src="{{page.depicted_by}}" style="max-height: 1em;" />
-    {% endif %} {{ page.id }}
+    {% endif %}
+    <i class="bi bi-{{icon_name}}"></i> {{ page.id }}
   </h1>
-  {% if page.category %}
-  {% if page.category == "GraphProduct" %}
-  <p>is a <strong><em>Graph.</em></strong></p>
-  {% elsif page.category == "Product" %}
-  <p>is a general purpose <strong><em>Product.</em></strong></p>
-  {% elsif page.category == "MappingProduct" %}
-  <p>is a <strong><em>Mapping.</em></strong></p>
-  {% elsif page.category == "ProcessProduct" %}
-  <p>is a <strong><em>Process.</em></strong></p>
-  {% elsif page.category == "DataModelProduct" %}
-  <p>is a <strong><em>Data Model or Ontology.</em></strong></p>
-  {% elsif page.category == "GraphicalInterface" %}
-  <p>is a <strong><em>Graphical Interface</em> for a product or resource.</strong></p>
-  {% elsif page.category == "ProgrammingInterface" %}
-  <p>is a <strong><em>Programming Interface</em> for a product or resource.</strong></p>
-  {% endif %}
-  {% endif %}
+
+  <p>is a <strong><em>{{category_name}}.</em></strong></p>
+
   <p>{{page.description}}</p>
 </div>
 
@@ -45,7 +55,9 @@ layout: default
         <div class="card-body">
           <h5 class="card-title">Format</h5>
           {% if page.format %}
-          <p class="card-text"><span title="{{ site.data.schema.enums.FormatEnum.permissible_values[page.format].description }}" style="text-decoration: underline dotted; cursor: help;">{{ page.format }}</span></p>
+          <p class="card-text"><span
+              title="{{ site.data.schema.enums.FormatEnum.permissible_values[page.format].description }}"
+              style="text-decoration: underline dotted; cursor: help;">{{ page.format }}</span></p>
           {% else %}
           <p class="card-text" style="font-weight: bold;">Unknown</p>
           {% endif %}
@@ -144,7 +156,7 @@ TODO: restructure accordingly. -->
               <td>
                 <a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a>
               </td>
-            {% endfor %}
+              {% endfor %}
           </tbody>
         </table>
       </div>
@@ -164,7 +176,7 @@ TODO: restructure accordingly. -->
               <td>
                 <a href="/kg-registry/resource/{{source}}/{{source}}.html">{{source}}</a>
               </td>
-            {% endfor %}
+              {% endfor %}
           </tbody>
         </table>
       </div>
