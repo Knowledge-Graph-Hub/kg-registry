@@ -80,7 +80,7 @@ TODO: restructure accordingly. -->
     {% if page.secondary_source and page.original_source %}
     <div class="card bg-light mb-3" style="max-width: 60rem;">
       <div class="card-body">
-        <h5 class="card-title">Provenance</h5>
+        <h4 class="card-title"><i class="bi bi-arrow-down-right-square-fill"></i> Provenance</h4>
         {% if page.original_source.size > 1 %}
         <pre><code class="language-mermaid" style="display: flex; justify-content: center"> 
             block-beta
@@ -127,7 +127,7 @@ TODO: restructure accordingly. -->
 
     <div class="card px-0" style="margin-bottom: 1.5em; max-width: 60rem" id="sources">
       <div class="card-header">
-        <h4>Sources</h4>
+        <h4><i class="bi bi-signpost-split-fill"></i> Sources</h4>
       </div>
       {% if page.original_source %}
       <h5 style="margin-left: 0.5em; margin-top: 0.5em">Original Source(s)</h5>
@@ -174,14 +174,14 @@ TODO: restructure accordingly. -->
     {% if page.compatibility %}
     <div class="card px-0" style="margin-bottom: 1.5em; max-width: 60rem" id="compatibility">
       <div class="card-header">
-        <h4>Compatibility</h4>
+        <h4><i class="bi bi-heart-fill"></i> Compatibility</h4>
       </div>
       <div class="list-group list-group-flush">
         {% for c in page.compatibility %}
         <div class="list-group-item">
           {{c.standard}}
           {% if c.version %}
-          <span class="badge badge-primary badge-pill">{{c.version}}</span>
+          ({{c.version}})
           {% endif %}
         </div>
         {% endfor %}
