@@ -22,10 +22,14 @@ jQuery(document).ready(function() {
     const $ddResourceTypes = $("#dd-resourcetypes");
     
     function search() {
-        $('#close', search).hide();
+        // Cache selectors inside search for efficiency
+        const $search = $('#search');
+        const $searchResults = $('#search-results', $search);
+        const $close = $('#close', $search);
+        const $input = $('input', $search);
+        $close.hide();
         var data = false;
         var matches = false;
-        var search = $('#search');
         var find = function(phrase) {
             if (!data) {
                 return $.ajax({
@@ -67,17 +71,17 @@ jQuery(document).ready(function() {
                 fragment.appendChild(li);
             });
             
-            $('#search-results', search).append(fragment);
-            $('#search-results', search).show();
-            $('#close', search).show();
+            $searchResults.append(fragment);
+            $searchResults.show();
+            $close.show();
         };
 
         function handleSearch() {
-            $('#search-results', search).empty();
-            $('#search-results', search).hide();
-            $('#close', search).hide();
+            $searchResults.empty();
+            $searchResults.hide();
+            $close.hide();
 
-            var phrase = $('input', search).val();
+            var phrase = $input.val();
             if (phrase.length >= 4) {
                 const words = phrase.toLowerCase().match(/(\w+)/g);
                 if (words && words.length) {
@@ -87,16 +91,14 @@ jQuery(document).ready(function() {
             return false;
         }
 
-        // Use passive event listeners where possible
-        $('input', search).bind("focus", debounce(handleSearch, 100));
+        // Use a single delegated event handler for input events
+        $search.on('keyup focus', 'input', debounce(handleSearch, 100));
 
-        $('#close', search).bind("click", function() {
-            $('#search-results', search).hide();
-            $('#close', search).hide();
+        $close.on('click', function() {
+            $searchResults.hide();
+            $close.hide();
             return false;
         });
-
-        $('input', search).keyup(debounce(handleSearch, 100));
     };
     
     // Set the first character of string to uppercase
