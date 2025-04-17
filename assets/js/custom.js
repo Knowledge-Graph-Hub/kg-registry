@@ -20,6 +20,7 @@ jQuery(document).ready(function() {
     const $searchVal = $("#searchVal");
     const $ddDomains = $("#dd-domains");
     const $ddResourceTypes = $("#dd-resourcetypes");
+    const $ddCollections = $("#dd-collections");
     
     function search() {
         // Cache selectors inside search for efficiency
@@ -486,6 +487,7 @@ jQuery(document).ready(function() {
         // Get filter values once
         const selectedDomain = $ddDomains.children("option:selected").val();
         const selectedResourceType = $ddResourceTypes.children("option:selected").val();
+        const selectedCollection = $ddCollections.children("option:selected").val();
         
         // Check for empty data to avoid errors
         if (!data || !data.resources) return;
@@ -507,6 +509,15 @@ jQuery(document).ready(function() {
                 }
                 return (x.domains && x.domains.includes(selectedDomain)) || 
                        (x.domain && x.domain.includes(selectedDomain)); // Backward compatibility
+            });
+        }
+        
+        if (selectedCollection) {
+            filteredData = filteredData.filter(x => {
+                if (Array.isArray(x.collection)) {
+                    return x.collection.some(c => c.includes(selectedCollection));
+                }
+                return x.collection && x.collection.includes(selectedCollection);
             });
         }
         
@@ -659,11 +670,27 @@ jQuery(document).ready(function() {
             )];
             resourceTypes.sort();
             
+            // Extract collections
+            const collections = [...new Set(
+                data.resources
+                    .filter(r => r.collection !== undefined)
+                    .flatMap(r => {
+                        if (Array.isArray(r.collection)) {
+                            return r.collection.map(c => c.trim());
+                        }
+                        return [r.collection.trim()];
+                    })
+            )];
+            collections.sort();
+            
             // Populate dropdowns (avoids duplication)
             populateDropdown("#dd-domains", domains);
             
             // Use the formatResourceType function for resource types dropdown
             populateDropdown("#dd-resourcetypes", resourceTypes, true, formatResourceType);
+            
+            // Populate collections dropdown with capitalized entries
+            populateDropdown("#dd-collections", collections, true, capitalize);
             
             // Render initial table
             renderTable(data.resources);
@@ -674,6 +701,7 @@ jQuery(document).ready(function() {
             $("[data-filter]").on("change", filterHandler);
             $ddDomains.on("change", filterHandler);
             $ddResourceTypes.on("change", filterHandler);
+            $ddCollections.on("change", filterHandler);
             $searchVal.on("keyup", filterHandler);
             
             // Create observer for table sorting
