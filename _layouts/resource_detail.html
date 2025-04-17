@@ -41,12 +41,14 @@ layout: default
     It is part of 
     {% if page.collection.size == 1 %}
       {% assign collection_desc = site.data.schema.enums.CollectionEnum.permissible_values[page.collection[0]] %}
-      the <span title="{{ collection_desc.description }}" style="text-decoration: underline dotted; cursor: help;"><strong>{{ page.collection[0] | capitalize }}</strong></span> collection.
+      {% assign tooltip_text = collection_desc.description | default: "A collection of related resources" %}
+      the <span title="{{ tooltip_text }}" style="text-decoration: underline dotted; cursor: help;"><strong>{{ page.collection[0] | capitalize }}</strong></span> collection.
     {% else %}
       these collections:
       {% for collection in page.collection %}
       {% assign collection_desc = site.data.schema.enums.CollectionEnum.permissible_values[collection] %}
-      <span title="{{ collection_desc.description }}" style="text-decoration: underline dotted; cursor: help;"><strong>{{ collection | capitalize }}</strong></span>{% unless forloop.last %}, {% endunless %}
+      {% assign tooltip_text = collection_desc.description | default: "A collection of related resources" %}
+      <span title="{{ tooltip_text }}" style="text-decoration: underline dotted; cursor: help;"><strong>{{ collection | capitalize }}</strong></span>{% unless forloop.last %}, {% endunless %}
       {% endfor %}
     {% endif %}
   </p>
