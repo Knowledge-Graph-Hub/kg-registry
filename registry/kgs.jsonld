@@ -6823,7 +6823,7 @@
         },
         {
             "activity_status": "active",
-            "category": "DataResource",
+            "category": "DataSource",
             "contacts": [
                 {
                     "category": "Organization",
@@ -6847,7 +6847,7 @@
         },
         {
             "activity_status": "active",
-            "category": "DataResource",
+            "category": "DataSource",
             "contacts": [
                 {
                     "category": "Organization",
