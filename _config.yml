@@ -1068,6 +1068,8 @@ resources:
   repository: https://github.com/Cellular-Semantics/CL_KG
 - activity_status: active
   category: KnowledgeGraph
+  collection:
+  - translator
   contacts:
   - category: Individual
     contact_details:
@@ -2853,6 +2855,8 @@ resources:
   repository: https://github.com/GenomicsStandardsConsortium/mixs
 - activity_status: active
   category: KnowledgeGraph
+  collection:
+  - translator
   contacts:
   - category: Individual
     label: Sandrine Muller
@@ -5670,6 +5674,8 @@ resources:
   repository: https://github.com/NCATS-Gamma/robokop
 - activity_status: active
   category: KnowledgeGraph
+  collection:
+  - translator
   contacts:
   - category: Individual
     contact_details:
@@ -5859,6 +5865,8 @@ resources:
   repository: https://www.swisslipids.org/
 - activity_status: active
   category: KnowledgeGraph
+  collection:
+  - translator
   contacts:
   - category: Individual
     label: Edgar Gatica
