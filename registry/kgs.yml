@@ -5023,7 +5023,7 @@ resources:
   name: Ontology KP
   repository: ''
 - activity_status: active
-  category: DataResource
+  category: DataSource
   contacts:
   - category: Organization
     label: ORCID
@@ -5041,7 +5041,7 @@ resources:
   name: ORCID
   repository: https://github.com/ORCID
 - activity_status: active
-  category: DataResource
+  category: DataSource
   contacts:
   - category: Organization
     contact_details:
