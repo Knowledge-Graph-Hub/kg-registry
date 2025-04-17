@@ -1430,6 +1430,9 @@
         {
             "activity_status": "active",
             "category": "KnowledgeGraph",
+            "collection": [
+                "translator"
+            ],
             "contacts": [
                 {
                     "category": "Individual",
@@ -3809,6 +3812,9 @@
         {
             "activity_status": "active",
             "category": "KnowledgeGraph",
+            "collection": [
+                "translator"
+            ],
             "contacts": [
                 {
                     "category": "Individual",
@@ -7688,6 +7694,9 @@
         {
             "activity_status": "active",
             "category": "KnowledgeGraph",
+            "collection": [
+                "translator"
+            ],
             "contacts": [
                 {
                     "category": "Individual",
@@ -7961,6 +7970,9 @@
         {
             "activity_status": "active",
             "category": "KnowledgeGraph",
+            "collection": [
+                "translator"
+            ],
             "contacts": [
                 {
                     "category": "Individual",
