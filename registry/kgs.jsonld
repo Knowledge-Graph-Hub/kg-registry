@@ -4,6 +4,9 @@
         {
             "activity_status": "active",
             "category": "Aggregator",
+            "collection": [
+                "translator"
+            ],
             "contacts": [
                 {
                     "category": "Individual",
@@ -1471,6 +1474,9 @@
         {
             "activity_status": "active",
             "category": "KnowledgeGraph",
+            "collection": [
+                "translator"
+            ],
             "contacts": [
                 {
                     "category": "Individual",
@@ -1865,6 +1871,9 @@
         {
             "activity_status": "active",
             "category": "KnowledgeGraph",
+            "collection": [
+                "translator"
+            ],
             "contacts": [
                 {
                     "category": "Individual",
@@ -1875,7 +1884,6 @@
             "domains": [
                 "health"
             ],
-            "homepage_url": "",
             "id": "genetics-kp",
             "layout": "resource_detail",
             "name": "Genetics KP"
@@ -3884,6 +3892,9 @@
         {
             "activity_status": "active",
             "category": "KnowledgeGraph",
+            "collection": [
+                "translator"
+            ],
             "contacts": [
                 {
                     "category": "Individual",
@@ -3898,11 +3909,9 @@
             "domains": [
                 "health"
             ],
-            "homepage_url": "",
             "id": "multiomics-kp",
             "layout": "resource_detail",
-            "name": "Multiomics KP",
-            "repository": ""
+            "name": "Multiomics KP"
         },
         {
             "activity_status": "active",
@@ -6811,6 +6820,9 @@
         {
             "activity_status": "active",
             "category": "KnowledgeGraph",
+            "collection": [
+                "translator"
+            ],
             "contacts": [
                 {
                     "category": "Individual",
@@ -6821,11 +6833,9 @@
             "domains": [
                 "other"
             ],
-            "homepage_url": "",
             "id": "ontology-kp",
             "layout": "resource_detail",
-            "name": "Ontology KP",
-            "repository": ""
+            "name": "Ontology KP"
         },
         {
             "activity_status": "active",
@@ -7794,6 +7804,9 @@
         {
             "activity_status": "active",
             "category": "KnowledgeGraph",
+            "collection": [
+                "translator"
+            ],
             "contacts": [
                 {
                     "category": "Individual",
@@ -7804,11 +7817,9 @@
             "domains": [
                 "health"
             ],
-            "homepage_url": "",
             "id": "service-kp",
             "layout": "resource_detail",
-            "name": "Service KP",
-            "repository": ""
+            "name": "Service KP"
         },
         {
             "activity_status": "active",

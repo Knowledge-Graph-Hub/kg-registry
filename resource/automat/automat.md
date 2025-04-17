@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: Aggregator
+collection:
+- translator
 contacts:
 - category: Individual
   contact_details:

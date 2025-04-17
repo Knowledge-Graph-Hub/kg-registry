@@ -10,8 +10,8 @@ category: KnowledgeGraph
 contacts:
 - category: Individual
   label: "Chunlei Wu"
-homepage_url: ""
-repository: ""
+collection:
+- translator
 ---
 
 A Translator Knowledge Provider providing...
