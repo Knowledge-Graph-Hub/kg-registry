@@ -14,7 +14,7 @@ contacts:
   label: ORCID
 homepage_url: https://orcid.org/
 repository: https://github.com/ORCID
-category: DataResource
+category: DataSource
 license:
   label: CC0 1.0
   id: https://creativecommons.org/publicdomain/zero/1.0/
