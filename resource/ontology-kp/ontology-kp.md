@@ -10,8 +10,8 @@ category: KnowledgeGraph
 contacts:
 - category: Individual
   label: Jim Balhoff
-homepage_url: ""
-repository: ""
+collection:
+- translator
 ---
 
 A Translator Knowledge Provider dedicated to ontology-based services.

@@ -12,8 +12,8 @@ contacts:
   label: Gustavo Glusman
 - category: Individual
   label: Guangrong Qin
-homepage_url: ""
-repository: ""
+collection:
+- translator
 ---
 
 A Translator Knowledge Provider incorporating multiomics data.

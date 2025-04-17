@@ -11,6 +11,8 @@ contacts:
 - category: Individual
   label: "Gregory Hyde"
 homepage_url: https://github.com/di2ag/chp_api
+collection:
+- translator
 ---
 
 A Translator Knowledge Provider exploring connections hypotheses.

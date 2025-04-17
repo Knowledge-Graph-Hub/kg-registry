@@ -1,6 +1,8 @@
 resources:
 - activity_status: active
   category: Aggregator
+  collection:
+  - translator
   contacts:
   - category: Individual
     contact_details:
@@ -1074,6 +1076,8 @@ resources:
   name: Clinical Data KP
 - activity_status: active
   category: KnowledgeGraph
+  collection:
+  - translator
   contacts:
   - category: Individual
     label: Gregory Hyde
@@ -1355,13 +1359,14 @@ resources:
   repository: http://purl.obolibrary.org/obo/ecosim.owl
 - activity_status: active
   category: KnowledgeGraph
+  collection:
+  - translator
   contacts:
   - category: Individual
     label: Jason Flannick
   description: A Translator Knowledge Provider focusing on genetic data.
   domains:
   - health
-  homepage_url: ''
   id: genetics-kp
   layout: resource_detail
   name: Genetics KP
@@ -2889,6 +2894,8 @@ resources:
   repository: https://github.com/broadinstitute/molecular-data-provider/
 - activity_status: active
   category: KnowledgeGraph
+  collection:
+  - translator
   contacts:
   - category: Individual
     label: Gustavo Glusman
@@ -2897,11 +2904,9 @@ resources:
   description: A Translator Knowledge Provider incorporating multiomics data.
   domains:
   - health
-  homepage_url: ''
   id: multiomics-kp
   layout: resource_detail
   name: Multiomics KP
-  repository: ''
 - activity_status: active
   category: Resource
   contacts:
@@ -5015,17 +5020,17 @@ resources:
   repository: https://github.com/biopragmatics/obo-db-ingest
 - activity_status: active
   category: KnowledgeGraph
+  collection:
+  - translator
   contacts:
   - category: Individual
     label: Jim Balhoff
   description: A Translator Knowledge Provider dedicated to ontology-based services.
   domains:
   - other
-  homepage_url: ''
   id: ontology-kp
   layout: resource_detail
   name: Ontology KP
-  repository: ''
 - activity_status: active
   category: DataSource
   contacts:
@@ -5727,17 +5732,17 @@ resources:
     - scibite
 - activity_status: active
   category: KnowledgeGraph
+  collection:
+  - translator
   contacts:
   - category: Individual
     label: Chunlei Wu
   description: A Translator Knowledge Provider
   domains:
   - health
-  homepage_url: ''
   id: service-kp
   layout: resource_detail
   name: Service KP
-  repository: ''
 - activity_status: active
   category: DataSource
   contacts:
