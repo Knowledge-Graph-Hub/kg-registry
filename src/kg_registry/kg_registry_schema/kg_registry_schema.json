@@ -26,6 +26,16 @@
                         "null"
                     ]
                 },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "contacts": {
                     "description": "The contact point(s) for the resource. May be an individual or organization.",
                     "items": {
@@ -187,6 +197,14 @@
             "title": "Aggregator",
             "type": "object"
         },
+        "CollectionEnum": {
+            "description": "Specific collections for grouping KG-Registry entries.",
+            "enum": [
+                "translator"
+            ],
+            "title": "CollectionEnum",
+            "type": "string"
+        },
         "CompressionEnum": {
             "description": "The type of compression used with a product.",
             "enum": [
@@ -285,6 +303,16 @@
                     "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -460,6 +488,16 @@
                         "null"
                     ]
                 },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "compatibility": {
                     "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
                     "items": {
@@ -632,6 +670,16 @@
                     "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -872,6 +920,16 @@
                         "null"
                     ]
                 },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
@@ -919,6 +977,16 @@
                     "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1124,6 +1192,16 @@
                     "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1342,6 +1420,16 @@
                         "null"
                     ]
                 },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "components": {
                     "description": "The components of the knowledge graph.",
                     "items": {
@@ -1552,6 +1640,16 @@
                         "null"
                     ]
                 },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
@@ -1602,6 +1700,16 @@
                     "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1776,6 +1884,16 @@
                         "null"
                     ]
                 },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
@@ -1844,6 +1962,16 @@
                     "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -2018,6 +2146,16 @@
                         "null"
                     ]
                 },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "compatibility": {
                     "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
                     "items": {
@@ -2186,6 +2324,16 @@
                     "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -2391,6 +2539,16 @@
                         "null"
                     ]
                 },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "doi": {
                     "description": "The DOI of the publication. This should include the doi: prefix.",
                     "type": [
@@ -2484,6 +2642,16 @@
                     "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -2694,6 +2862,16 @@
                     "description": "The category of the entity. This should be identical to its class name.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },

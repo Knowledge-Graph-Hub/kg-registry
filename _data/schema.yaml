@@ -34,6 +34,7 @@ classes:
       - category
       - warnings
       - layout
+      - collection
     class_uri: schema:Thing
 
   Registry:
@@ -605,6 +606,13 @@ slots:
       For resources, this is generally 'resource_detail'.
       For products, this is generally 'product_detail'.
     range: string
+  collection:
+    description: >-
+      A collection of entries in the registry.
+      This is used to group related entries together.
+      This is multivalued to allow for multiple collections.
+    range: CollectionEnum
+    multivalued: true
 
 # Types
 types:
@@ -963,3 +971,13 @@ enums:
       other:
         description: >-
           The resource is used in a way not defined here.
+
+  CollectionEnum:
+    description: >-
+      Specific collections for grouping KG-Registry entries.
+    permissible_values:
+      translator:
+        description: >-
+          This entity is part of those developed and used
+          by the NCATS Biomedical Translator program.
+        meaning: https://ncats.nih.gov/research/research-activities/translator 

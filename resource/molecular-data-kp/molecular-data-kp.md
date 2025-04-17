@@ -50,6 +50,8 @@ products:
 license:
   label: MIT License
   id: https://opensource.org/licenses/MIT
+collection:
+- translator
 ---
 
 A Translator Knowledge Provider for molecular data.
