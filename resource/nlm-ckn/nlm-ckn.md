@@ -3,10 +3,11 @@ layout: resource_detail
 activity_status: active
 id: nlm-ckn
 name: NLM-CKN
-description: A knowledge graph that contains knowledge about cellular phenotypes (cell types and cell states) that has been gathered through single cell technologies and related experiments. NLM-CKN is populated using validated computational analysis pipelines and natural language processing of scientific literature and integrated with other public sources of relevant knowledge about genes, anatomical structures, diseases, and drugs.
+description: The NLM Cell Knowledge Network, a knowledge graph that contains knowledge about cellular phenotypes (cell types and cell states) that has been gathered through single cell technologies and related experiments. NLM-CKN is populated using validated computational analysis pipelines and natural language processing of scientific literature and integrated with other public sources of relevant knowledge about genes, anatomical structures, diseases, and drugs.
 domains:
 - biological systems
 - health
+- phenotype
 contacts:
 - category: Individual
   label: Richard Scheuermann
@@ -26,8 +27,6 @@ license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0-1.0
 category: KnowledgeGraph
-warnings:
-- "Private repository as of April 15 2025"
 ---
 
 A knowledge graph that contains knowledge about cellular phenotypes (cell types and cell states) that has been gathered through single cell technologies and related experiments. NLM-CKN is populated using validated computational analysis pipelines and natural language processing of scientific literature and integrated with other public sources of relevant knowledge about genes, anatomical structures, diseases, and drugs.
