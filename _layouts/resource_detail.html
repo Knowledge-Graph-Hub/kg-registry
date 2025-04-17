@@ -5,7 +5,8 @@ layout: default
 <div class="row">
   {% assign category = page.category %}
   {% assign category_icons =
-  "Aggregator:grid-3x3:Aggregator,Resource:archive:General purpose Resource,KnowledgeGraph:globe:Knowledge Graph,DataSource:shop:Data Source,DataModel:diagram-3:Data Model or Ontology" | split: "," %}
+  "Aggregator:grid-3x3:Aggregator,Resource:archive:General purpose Resource,KnowledgeGraph:globe:Knowledge
+  Graph,DataSource:shop:Data Source,DataModel:diagram-3:Data Model or Ontology" | split: "," %}
 
   {% assign icon_name = "" %}
   {% assign category_name = "" %}
@@ -35,21 +36,24 @@ layout: default
   </h1>
 
   <p>is{% if category_name == "Aggregator" %} an{% else %} a{% endif %} <strong><em>{{category_name}}.</em></strong></p>
-  
+
   {% if page.collection %}
   <p>
-    It is part of 
+    It is part of
     {% if page.collection.size == 1 %}
-      {% assign collection_desc = site.data.schema.enums.CollectionEnum.permissible_values[page.collection[0]] %}
-      {% assign tooltip_text = collection_desc.description | default: "A collection of related resources" %}
-      the <span title="{{ tooltip_text }}" style="text-decoration: underline dotted; cursor: help;"><strong>{{ page.collection[0] | capitalize }}</strong></span> collection.
+    {% assign collection = page.collection[0] %}
+    {% assign collection_desc = site.data.schema.enums.CollectionEnum.permissible_values[collection] %}
+    {% assign tooltip_text = collection_desc.description | default: "A collection of related resources" %}
+    the <span title="{{ tooltip_text }}" style="text-decoration: underline dotted; cursor: help;"><strong>{{
+        page.collection[0] | capitalize }}</strong></span> collection.
     {% else %}
-      these collections:
-      {% for collection in page.collection %}
-      {% assign collection_desc = site.data.schema.enums.CollectionEnum.permissible_values[collection] %}
-      {% assign tooltip_text = collection_desc.description | default: "A collection of related resources" %}
-      <span title="{{ tooltip_text }}" style="text-decoration: underline dotted; cursor: help;"><strong>{{ collection | capitalize }}</strong></span>{% unless forloop.last %}, {% endunless %}
-      {% endfor %}
+    these collections:
+    {% for collection in page.collection %}
+    {% assign collection_desc = site.data.schema.enums.CollectionEnum.permissible_values[collection] %}
+    {% assign tooltip_text = collection_desc.description | default: "A collection of related resources" %}
+    <span title="{{ tooltip_text }}" style="text-decoration: underline dotted; cursor: help;"><strong>{{ collection |
+        capitalize }}</strong></span>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
     {% endif %}
   </p>
   {% endif %}
@@ -100,7 +104,7 @@ layout: default
           <p class="card-text"><a href="{{page.license.id}}">{{page.license.label}}</a></p>
           {% else %}
           <p class="card-text" style="color: red; font-weight: bold;">Warning: No license entered</p>
-          </div>
+        </div>
         {% endif %}
       </div>
       <div class="card bg-light mb-3" style="max-width: 12rem;">
