@@ -19,6 +19,8 @@ products:
   product_url: https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz
   category: GraphProduct
   format: kgx
+collection:
+- translator
 ---
 
 A Translator Knowledge Provider applying text-mined assertions.

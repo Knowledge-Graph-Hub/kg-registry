@@ -21,6 +21,8 @@ contacts:
   - contact_type: email
     value: michel.dumontier@maastrichtuniversity.nl
 homepage_url: https://ncats.nih.gov/research/research-activities/translator/projects
+collection:
+- translator
 ---
 
 A Translator Knowledge Provider integrating clinical data.

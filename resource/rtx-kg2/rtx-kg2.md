@@ -33,6 +33,8 @@ products:
   secondary_source:
   - rtx-kg2
 category: KnowledgeGraph
+collection:
+- translator
 ---
 
 A comprehensive knowledge graph from the RTX team.
