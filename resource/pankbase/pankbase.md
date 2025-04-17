@@ -17,7 +17,7 @@ contacts:
     value: help@pankbase.org
 homepage_url: https://pankbase.org/
 repository: https://github.com/PanKbase-DB
-category: DataResource
+category: DataSource
 products:
 - id: pankbase.graph.site
   name: PanKGraph Site
