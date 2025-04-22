@@ -14,15 +14,17 @@ contacts:
     value: sabrinatoro
   label: Sabrina Toro
   orcid: 0000-0002-4142-7153
-description: The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world. The name Mondo comes from the Latin word ‘mundus’ and means ‘for the world.’
+description: "The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions\
+  \ across the world. The name Mondo comes from the Latin word \u2018mundus\u2019\
+  \ and means \u2018for the world.\u2019"
 domains:
 - health
 homepage_url: https://mondo.monarchinitiative.org/
 id: mondo
 layout: resource_detail
 license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC-BY-4.0
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY-4.0
 name: Mondo Disease Ontology
 products:
 - category: DataModelProduct
@@ -76,6 +78,32 @@ products:
   product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
   secondary_source:
   - mondo
+- category: GraphProduct
+  description: Nodes for the Drug Approvals KP, v0.3.7
+  format: kgx
+  id: drug-approvals-kp.graph.nodes
+  name: Drug Approvals KP Graph Nodes
+  original_source:
+  - chebi
+  - do
+  - hp
+  - mondo
+  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
+  secondary_source:
+  - drug-approvals-kp
+- category: GraphProduct
+  description: Nodes for the Drug Approvals KP, v0.3.7
+  format: kgx
+  id: drug-approvals-kp.graph.edges
+  name: Drug Approvals KP Graph Nodes
+  original_source:
+  - chebi
+  - do
+  - hp
+  - mondo
+  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
+  secondary_source:
+  - drug-approvals-kp
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 ---
 MONDO Disease Ontology
