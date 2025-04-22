@@ -1266,6 +1266,40 @@
                     "secondary_source": [
                         "chebi"
                     ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Nodes for the Drug Approvals KP, v0.3.7",
+                    "format": "kgx",
+                    "id": "drug-approvals-kp.graph.nodes",
+                    "name": "Drug Approvals KP Graph Nodes",
+                    "original_source": [
+                        "chebi",
+                        "do",
+                        "hp",
+                        "mondo"
+                    ],
+                    "product_url": "https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv",
+                    "secondary_source": [
+                        "drug-approvals-kp"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Nodes for the Drug Approvals KP, v0.3.7",
+                    "format": "kgx",
+                    "id": "drug-approvals-kp.graph.edges",
+                    "name": "Drug Approvals KP Graph Nodes",
+                    "original_source": [
+                        "chebi",
+                        "do",
+                        "hp",
+                        "mondo"
+                    ],
+                    "product_url": "https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv",
+                    "secondary_source": [
+                        "drug-approvals-kp"
+                    ]
                 }
             ],
             "repository": "https://github.com/ebi-chebi/ChEBI"
@@ -1599,6 +1633,133 @@
         },
         {
             "activity_status": "active",
+            "category": "DataModel",
+            "contacts": [
+                {
+                    "category": "Individual",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "lschriml@som.umaryland.edu"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "lschriml"
+                        }
+                    ],
+                    "label": "Lynn Schriml"
+                }
+            ],
+            "description": "A community-driven, community-accepted ontology of diseases for clinical research and medicine inclusive of genetic, environmental and infectious diseases.",
+            "domains": [
+                "health"
+            ],
+            "homepage_url": "https://disease-ontology.org/",
+            "id": "do",
+            "layout": "resource_detail",
+            "license": {
+                "id": "https://creativecommons.org/publicdomain/zero/1.0/",
+                "label": "CC0 1.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
+            },
+            "name": "Human Disease Ontology",
+            "products": [
+                {
+                    "category": "DataModelProduct",
+                    "description": "OWL release of DO (doid.owl). This file contains DO's is_a asserted hierarchy plus equivalent axioms to other OBO Foundry ontologies.",
+                    "format": "owl",
+                    "id": "do.owl",
+                    "name": "Human Disease Ontology OWL release",
+                    "original_source": [
+                        "do"
+                    ],
+                    "product_url": "https://purl.obolibrary.org/obo/doid.owl",
+                    "secondary_source": [
+                        "do"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "OBO release of DO (doid.obo). This file omits the equivalent axioms.",
+                    "format": "obo",
+                    "id": "do.obo",
+                    "name": "Human Disease Ontology OBO release",
+                    "original_source": [
+                        "do"
+                    ],
+                    "product_url": "https://purl.obolibrary.org/obo/doid.obo",
+                    "secondary_source": [
+                        "do"
+                    ]
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "Utility code for supporting the operations of the Human Disease Ontology",
+                    "id": "do.code.utils",
+                    "name": "DO.utils",
+                    "original_source": [
+                        "do"
+                    ],
+                    "product_url": "https://github.com/DiseaseOntology/DO.utils",
+                    "secondary_source": [
+                        "do"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Nodes for the Drug Approvals KP, v0.3.7",
+                    "format": "kgx",
+                    "id": "drug-approvals-kp.graph.nodes",
+                    "name": "Drug Approvals KP Graph Nodes",
+                    "original_source": [
+                        "chebi",
+                        "do",
+                        "hp",
+                        "mondo"
+                    ],
+                    "product_url": "https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv",
+                    "secondary_source": [
+                        "drug-approvals-kp"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Nodes for the Drug Approvals KP, v0.3.7",
+                    "format": "kgx",
+                    "id": "drug-approvals-kp.graph.edges",
+                    "name": "Drug Approvals KP Graph Nodes",
+                    "original_source": [
+                        "chebi",
+                        "do",
+                        "hp",
+                        "mondo"
+                    ],
+                    "product_url": "https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv",
+                    "secondary_source": [
+                        "drug-approvals-kp"
+                    ]
+                },
+                {
+                    "category": "MappingProduct",
+                    "description": "MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.",
+                    "format": "sssom",
+                    "id": "mondo.sssom",
+                    "name": "MONDO SSSOM",
+                    "original_source": [
+                        "do",
+                        "hp",
+                        "hgnc"
+                    ],
+                    "product_url": "https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv",
+                    "secondary_source": [
+                        "mondo"
+                    ]
+                }
+            ],
+            "repository": "https://github.com/DiseaseOntology/HumanDiseaseOntology"
+        },
+        {
+            "activity_status": "active",
             "category": "KnowledgeGraph",
             "contacts": [
                 {
@@ -1638,6 +1799,86 @@
                 }
             ],
             "repository": "https://github.com/gnn4dr/DRKG"
+        },
+        {
+            "activity_status": "active",
+            "category": "KnowledgeGraph",
+            "collection": [
+                "translator"
+            ],
+            "contacts": [
+                {
+                    "category": "Individual",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "gglusman@isbscience.org"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "gglusman"
+                        }
+                    ],
+                    "label": "Gwênlyn Glusman"
+                }
+            ],
+            "description": "A Translator knowledge provider focused on drug approval status and other drug-related metadata.",
+            "domains": [
+                "health"
+            ],
+            "id": "drug-approvals-kp",
+            "layout": "resource_detail",
+            "name": "Drug Approvals KP",
+            "products": [
+                {
+                    "category": "GraphProduct",
+                    "description": "Nodes for the Drug Approvals KP, v0.3.7",
+                    "format": "kgx",
+                    "id": "drug-approvals-kp.graph.nodes",
+                    "name": "Drug Approvals KP Graph Nodes",
+                    "original_source": [
+                        "chebi",
+                        "do",
+                        "hp",
+                        "mondo"
+                    ],
+                    "product_url": "https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv",
+                    "secondary_source": [
+                        "drug-approvals-kp"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Nodes for the Drug Approvals KP, v0.3.7",
+                    "format": "kgx",
+                    "id": "drug-approvals-kp.graph.edges",
+                    "name": "Drug Approvals KP Graph Nodes",
+                    "original_source": [
+                        "chebi",
+                        "do",
+                        "hp",
+                        "mondo"
+                    ],
+                    "product_url": "https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv",
+                    "secondary_source": [
+                        "drug-approvals-kp"
+                    ]
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "Code for the Drug Approvals KP",
+                    "id": "drug-approvals-kp.code",
+                    "name": "Drug Approvals KP code",
+                    "original_source": [
+                        "drug-approvals-kp"
+                    ],
+                    "product_url": "https://github.com/multiomicsKP/drug_approvals_kp",
+                    "secondary_source": [
+                        "drug-approvals-kp"
+                    ]
+                }
+            ],
+            "repository": "https://github.com/multiomicsKP/drug_approvals_kp"
         },
         {
             "activity_status": "active",
@@ -2726,9 +2967,147 @@
                     "secondary_source": [
                         "scibite"
                     ]
+                },
+                {
+                    "category": "MappingProduct",
+                    "description": "MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.",
+                    "format": "sssom",
+                    "id": "mondo.sssom",
+                    "name": "MONDO SSSOM",
+                    "original_source": [
+                        "do",
+                        "hp",
+                        "hgnc"
+                    ],
+                    "product_url": "https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv",
+                    "secondary_source": [
+                        "mondo"
+                    ]
                 }
             ],
             "repository": "https://github.com/HGNC"
+        },
+        {
+            "activity_status": "active",
+            "category": "DataModel",
+            "contacts": [
+                {
+                    "category": "Individual",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "pnrobinson"
+                        }
+                    ],
+                    "label": "Peter Robinson"
+                }
+            ],
+            "description": "An ontology developed by the Monarch Initiative used to describe human phenotypic abnormalities seen in genetic disorders and clinical research. It provides a structured representation of abnormal characteristics associated with diseases. HPO helps researchers and clinicians share and integrate phenotypic data, making understanding and diagnosing genetic disorders easier. It uses a hierarchical organization and semantic relationships between terms and allows for annotation of genes and diseases. HPO is used in multiple diagnosis and variant prioritization tools, aiding healthcare professionals and researchers in identifying and classifying genetic conditions.",
+            "domains": [
+                "phenotype"
+            ],
+            "homepage_url": "https://hpo.jax.org/",
+            "id": "hp",
+            "layout": "resource_detail",
+            "license": {
+                "id": "https://hpo.jax.org/license",
+                "label": "Custom"
+            },
+            "name": "Human Phenotype Ontology",
+            "products": [
+                {
+                    "category": "DataModelProduct",
+                    "description": "OWL release of HP",
+                    "format": "owl",
+                    "id": "hp.owl",
+                    "name": "Human Phenotype Ontology OWL release",
+                    "original_source": [
+                        "hp"
+                    ],
+                    "product_url": "http://purl.obolibrary.org/obo/hp.owl",
+                    "secondary_source": [
+                        "hp"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "OBO release of HP",
+                    "format": "obo",
+                    "id": "hp.obo",
+                    "name": "Human Phenotype Ontology OBO release",
+                    "original_source": [
+                        "hp"
+                    ],
+                    "product_url": "http://purl.obolibrary.org/obo/hp.obo",
+                    "secondary_source": [
+                        "hp"
+                    ]
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "Code for Human Phenotype Ontology",
+                    "id": "hp.code",
+                    "name": "HP Code",
+                    "original_source": [
+                        "hp"
+                    ],
+                    "product_url": "https://github.com/obophenotype/human-phenotype-ontology",
+                    "secondary_source": [
+                        "hp"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Nodes for the Drug Approvals KP, v0.3.7",
+                    "format": "kgx",
+                    "id": "drug-approvals-kp.graph.nodes",
+                    "name": "Drug Approvals KP Graph Nodes",
+                    "original_source": [
+                        "chebi",
+                        "do",
+                        "hp",
+                        "mondo"
+                    ],
+                    "product_url": "https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv",
+                    "secondary_source": [
+                        "drug-approvals-kp"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Nodes for the Drug Approvals KP, v0.3.7",
+                    "format": "kgx",
+                    "id": "drug-approvals-kp.graph.edges",
+                    "name": "Drug Approvals KP Graph Nodes",
+                    "original_source": [
+                        "chebi",
+                        "do",
+                        "hp",
+                        "mondo"
+                    ],
+                    "product_url": "https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv",
+                    "secondary_source": [
+                        "drug-approvals-kp"
+                    ]
+                },
+                {
+                    "category": "MappingProduct",
+                    "description": "MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.",
+                    "format": "sssom",
+                    "id": "mondo.sssom",
+                    "name": "MONDO SSSOM",
+                    "original_source": [
+                        "do",
+                        "hp",
+                        "hgnc"
+                    ],
+                    "product_url": "https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv",
+                    "secondary_source": [
+                        "mondo"
+                    ]
+                }
+            ],
+            "repository": "https://github.com/obophenotype/human-phenotype-ontology"
         },
         {
             "activity_status": "active",
@@ -3888,6 +4267,155 @@
                 }
             ],
             "repository": "https://github.com/broadinstitute/molecular-data-provider/"
+        },
+        {
+            "activity_status": "active",
+            "category": "DataModel",
+            "contacts": [
+                {
+                    "category": "Individual",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "nicolevasilevsky"
+                        }
+                    ],
+                    "label": "Nicole Vasilevsky",
+                    "orcid": "0000-0001-5208-3432"
+                },
+                {
+                    "category": "Individual",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "sabrinatoro"
+                        }
+                    ],
+                    "label": "Sabrina Toro",
+                    "orcid": "0000-0002-4142-7153"
+                }
+            ],
+            "description": "The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world. The name Mondo comes from the Latin word ‘mundus’ and means ‘for the world.’",
+            "domains": [
+                "health"
+            ],
+            "homepage_url": "https://mondo.monarchinitiative.org/",
+            "id": "mondo",
+            "layout": "resource_detail",
+            "license": {
+                "id": "https://creativecommons.org/licenses/by/4.0/",
+                "label": "CC-BY-4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+            },
+            "name": "Mondo Disease Ontology",
+            "products": [
+                {
+                    "category": "DataModelProduct",
+                    "description": "OWL release of MONDO. The Complete ontology with merged imports.",
+                    "format": "owl",
+                    "id": "mondo.owl",
+                    "name": "Mondo Disease Ontology OWL release",
+                    "original_source": [
+                        "mondo"
+                    ],
+                    "product_url": "https://purl.obolibrary.org/obo/mondo.owl",
+                    "secondary_source": [
+                        "mondo"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "OBO release of MONDO.",
+                    "format": "obo",
+                    "id": "mondo.obo",
+                    "name": "Mondo Disease Ontology OBO release",
+                    "original_source": [
+                        "mondo"
+                    ],
+                    "product_url": "https://purl.obolibrary.org/obo/mondo.obo",
+                    "secondary_source": [
+                        "mondo"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "JSON release of MONDO (obograph json).",
+                    "format": "json",
+                    "id": "mondo.json",
+                    "name": "Mondo Disease Ontology JSON release",
+                    "original_source": [
+                        "mondo"
+                    ],
+                    "product_url": "https://purl.obolibrary.org/obo/mondo.json",
+                    "secondary_source": [
+                        "mondo"
+                    ]
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "Utility code for supporting the operations of the Human Disease Ontology",
+                    "id": "do.code.utils",
+                    "name": "DO.utils",
+                    "original_source": [
+                        "do"
+                    ],
+                    "product_url": "https://github.com/DiseaseOntology/DO.utils",
+                    "secondary_source": [
+                        "do"
+                    ]
+                },
+                {
+                    "category": "MappingProduct",
+                    "description": "MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.",
+                    "format": "sssom",
+                    "id": "mondo.sssom",
+                    "name": "MONDO SSSOM",
+                    "original_source": [
+                        "do",
+                        "hp",
+                        "hgnc"
+                    ],
+                    "product_url": "https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv",
+                    "secondary_source": [
+                        "mondo"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Nodes for the Drug Approvals KP, v0.3.7",
+                    "format": "kgx",
+                    "id": "drug-approvals-kp.graph.nodes",
+                    "name": "Drug Approvals KP Graph Nodes",
+                    "original_source": [
+                        "chebi",
+                        "do",
+                        "hp",
+                        "mondo"
+                    ],
+                    "product_url": "https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv",
+                    "secondary_source": [
+                        "drug-approvals-kp"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Nodes for the Drug Approvals KP, v0.3.7",
+                    "format": "kgx",
+                    "id": "drug-approvals-kp.graph.edges",
+                    "name": "Drug Approvals KP Graph Nodes",
+                    "original_source": [
+                        "chebi",
+                        "do",
+                        "hp",
+                        "mondo"
+                    ],
+                    "product_url": "https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv",
+                    "secondary_source": [
+                        "drug-approvals-kp"
+                    ]
+                }
+            ],
+            "repository": "https://github.com/DiseaseOntology/HumanDiseaseOntology"
         },
         {
             "activity_status": "active",
