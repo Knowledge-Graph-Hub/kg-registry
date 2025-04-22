@@ -16,7 +16,9 @@ clinical-data-kp,active,PASS
 connections-hypothesis-kp,active,PASS
 cpathkg,active,PASS
 ctd,active,PASS
+do,active,PASS
 drkg,active,PASS
+drug-approvals-kp,active,PASS
 drugbank,active,PASS
 drugcentral,active,PASS
 eco-kg,active,PASS
@@ -31,6 +33,7 @@ goldterms,active,PASS
 gp-kg,active,PASS
 gutmgene,active,PASS
 hgnc,active,PASS
+hp,active,PASS
 hra-kg,active,PASS
 icees-kg,active,PASS
 ikraph,active,PASS
@@ -49,6 +52,7 @@ metacyc,active,PASS
 mgmlink,active,PASS
 mixs,active,PASS
 molecular-data-kp,active,PASS
+mondo,active,PASS
 multiomics-kp,active,PASS
 neo,active,PASS
 nlm-ckn,active,PASS
