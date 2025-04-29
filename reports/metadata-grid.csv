@@ -54,6 +54,7 @@ mixs,active,PASS
 molecular-data-kp,active,PASS
 mondo,active,PASS
 multiomics-kp,active,PASS
+ncbi-gene,active,PASS
 neo,active,PASS
 nlm-ckn,active,PASS
 np-kg,active,PASS
