@@ -1,6 +1,7 @@
 ---
 category: Product
 description: mesh OBO
+format: obo
 id: obo-db-ingest.mesh.obo
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

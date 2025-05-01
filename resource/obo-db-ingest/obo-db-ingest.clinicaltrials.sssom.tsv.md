@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: clinicaltrials SSSOM
+format: sssom
 id: obo-db-ingest.clinicaltrials.sssom.tsv
 license:
   id: https://clinicaltrials.gov/about-site/terms-conditions#availability

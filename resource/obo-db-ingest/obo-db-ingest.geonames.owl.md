@@ -1,6 +1,7 @@
 ---
 category: Product
 description: geonames OWL
+format: owl
 id: obo-db-ingest.geonames.owl
 license:
   id: https://creativecommons.org/licenses/by/4.0/

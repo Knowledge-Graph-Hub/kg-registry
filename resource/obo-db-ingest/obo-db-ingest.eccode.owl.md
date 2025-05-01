@@ -1,6 +1,7 @@
 ---
 category: Product
 description: eccode OWL
+format: owl
 id: obo-db-ingest.eccode.owl
 license:
   id: https://creativecommons.org/licenses/by/4.0/

@@ -1,6 +1,7 @@
 ---
 category: Product
 description: interpro OBO
+format: obo
 id: obo-db-ingest.interpro.obo
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

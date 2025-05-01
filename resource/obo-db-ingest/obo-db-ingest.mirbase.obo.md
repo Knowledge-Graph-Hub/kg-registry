@@ -1,6 +1,7 @@
 ---
 category: Product
 description: mirbase OBO
+format: obo
 id: obo-db-ingest.mirbase.obo
 license:
   id: https://creativecommons.org/public-domain/pdm/

@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: uniprot SSSOM
+format: sssom
 id: obo-db-ingest.uniprot.sssom.tsv
 license:
   id: https://creativecommons.org/licenses/by/4.0/

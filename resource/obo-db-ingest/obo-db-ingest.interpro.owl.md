@@ -1,6 +1,7 @@
 ---
 category: Product
 description: interpro OWL
+format: owl
 id: obo-db-ingest.interpro.owl
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

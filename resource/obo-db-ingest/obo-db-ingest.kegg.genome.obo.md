@@ -1,6 +1,7 @@
 ---
 category: Product
 description: kegg.genome OBO
+format: obo
 id: obo-db-ingest.kegg.genome.obo
 license:
   id: https://www.kegg.jp/kegg/legal.html

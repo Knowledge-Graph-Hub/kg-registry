@@ -1,6 +1,7 @@
 ---
 category: Product
 description: gtdb OBO
+format: obo
 id: obo-db-ingest.gtdb.obo
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/

@@ -1,6 +1,7 @@
 ---
 category: Product
 description: npass OWL
+format: owl
 id: obo-db-ingest.npass.owl
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/

@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: gtdb SSSOM
+format: sssom
 id: obo-db-ingest.gtdb.sssom.tsv
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/

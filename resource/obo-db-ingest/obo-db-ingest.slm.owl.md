@@ -1,6 +1,7 @@
 ---
 category: Product
 description: slm OWL
+format: owl
 id: obo-db-ingest.slm.owl
 license:
   id: https://creativecommons.org/licenses/by/4.0/

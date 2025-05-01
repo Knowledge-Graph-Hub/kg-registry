@@ -1,6 +1,7 @@
 ---
 category: Product
 description: uniprot.ptm OBO
+format: obo
 id: obo-db-ingest.uniprot.ptm.obo
 license:
   id: https://creativecommons.org/licenses/by/4.0/

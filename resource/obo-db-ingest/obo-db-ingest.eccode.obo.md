@@ -1,6 +1,7 @@
 ---
 category: Product
 description: eccode OBO
+format: obo
 id: obo-db-ingest.eccode.obo
 license:
   id: https://creativecommons.org/licenses/by/4.0/

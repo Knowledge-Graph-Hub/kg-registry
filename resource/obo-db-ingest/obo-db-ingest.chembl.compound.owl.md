@@ -1,6 +1,7 @@
 ---
 category: Product
 description: chembl.compound OWL
+format: owl
 id: obo-db-ingest.chembl.compound.owl
 license:
   id: https://creativecommons.org/licenses/by-sa/3.0/

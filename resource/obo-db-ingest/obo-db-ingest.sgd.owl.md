@@ -1,6 +1,7 @@
 ---
 category: Product
 description: sgd OWL
+format: owl
 id: obo-db-ingest.sgd.owl
 license:
   id: https://creativecommons.org/licenses/by/4.0/

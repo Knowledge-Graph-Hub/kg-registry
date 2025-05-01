@@ -1,6 +1,7 @@
 ---
 category: Product
 description: drugcentral OBO
+format: obo
 id: obo-db-ingest.drugcentral.obo
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/

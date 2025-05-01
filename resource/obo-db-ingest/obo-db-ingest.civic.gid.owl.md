@@ -1,6 +1,7 @@
 ---
 category: Product
 description: civic.gid OWL
+format: owl
 id: obo-db-ingest.civic.gid.owl
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

@@ -1,6 +1,7 @@
 ---
 category: Product
 description: gtdb OBO Graph JSON
+format: json
 id: obo-db-ingest.gtdb.json
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/

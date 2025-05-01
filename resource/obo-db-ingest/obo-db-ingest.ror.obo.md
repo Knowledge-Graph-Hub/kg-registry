@@ -1,6 +1,7 @@
 ---
 category: Product
 description: ror OBO
+format: obo
 id: obo-db-ingest.ror.obo
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

@@ -1,6 +1,7 @@
 ---
 category: Product
 description: kegg.genome OWL
+format: owl
 id: obo-db-ingest.kegg.genome.owl
 license:
   id: https://www.kegg.jp/kegg/legal.html

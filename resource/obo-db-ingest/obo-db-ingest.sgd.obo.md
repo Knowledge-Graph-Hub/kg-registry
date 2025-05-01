@@ -1,6 +1,7 @@
 ---
 category: Product
 description: sgd OBO
+format: obo
 id: obo-db-ingest.sgd.obo
 license:
   id: https://creativecommons.org/licenses/by/4.0/

@@ -1,6 +1,7 @@
 ---
 category: Product
 description: geonames.feature OBO
+format: obo
 id: obo-db-ingest.geonames.feature.obo
 license:
   id: https://creativecommons.org/licenses/by/4.0/

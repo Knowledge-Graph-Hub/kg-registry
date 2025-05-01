@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: rgd SSSOM
+format: sssom
 id: obo-db-ingest.rgd.sssom.tsv
 license:
   id: https://creativecommons.org/licenses/by/4.0/

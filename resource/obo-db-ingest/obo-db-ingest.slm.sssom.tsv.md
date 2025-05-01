@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: slm SSSOM
+format: sssom
 id: obo-db-ingest.slm.sssom.tsv
 license:
   id: https://creativecommons.org/licenses/by/4.0/
