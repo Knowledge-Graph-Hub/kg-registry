@@ -1562,6 +1562,10 @@ products:
   name: pharmgkb.disease OBO
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.obo
   format: obo
+  original_source:
+  - pharmgkb
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.disease OWL
   id: obo-db-ingest.pharmgkb.disease.owl
@@ -1571,6 +1575,10 @@ products:
   name: pharmgkb.disease OWL
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.owl
   format: owl
+  original_source:
+  - pharmgkb
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.disease OBO Graph JSON
   id: obo-db-ingest.pharmgkb.disease.json
@@ -1580,6 +1588,10 @@ products:
   name: pharmgkb.disease OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.json
   format: json
+  original_source:
+  - pharmgkb
+  secondary_source:
+  - obo-db-ingest
 - category: MappingProduct
   description: pharmgkb.disease SSSOM
   id: obo-db-ingest.pharmgkb.disease.sssom.tsv
@@ -1589,6 +1601,10 @@ products:
   name: pharmgkb.disease SSSOM
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.sssom.tsv
   format: sssom
+  original_source:
+  - pharmgkb
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.drug OBO
   id: obo-db-ingest.pharmgkb.drug.obo
@@ -1598,6 +1614,10 @@ products:
   name: pharmgkb.drug OBO
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.obo
   format: obo
+  original_source:
+  - pharmgkb.drugs
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.drug OWL
   id: obo-db-ingest.pharmgkb.drug.owl
@@ -1607,6 +1627,10 @@ products:
   name: pharmgkb.drug OWL
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.owl
   format: owl
+  original_source:
+  - pharmgkb.drugs
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.drug OBO Graph JSON
   id: obo-db-ingest.pharmgkb.drug.json
@@ -1616,6 +1640,10 @@ products:
   name: pharmgkb.drug OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.json
   format: json
+  original_source:
+  - pharmgkb.drugs
+  secondary_source:
+  - obo-db-ingest
 - category: MappingProduct
   description: pharmgkb.drug SSSOM
   id: obo-db-ingest.pharmgkb.drug.sssom.tsv
@@ -1625,6 +1653,10 @@ products:
   name: pharmgkb.drug SSSOM
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.sssom.tsv
   format: sssom
+  original_source:
+  - pharmgkb.drugs
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.gene OBO
   id: obo-db-ingest.pharmgkb.gene.obo
@@ -1634,6 +1666,10 @@ products:
   name: pharmgkb.gene OBO
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.obo
   format: obo
+  original_source:
+  - pharmgkb.genes
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.gene OWL
   id: obo-db-ingest.pharmgkb.gene.owl
@@ -1643,6 +1679,10 @@ products:
   name: pharmgkb.gene OWL
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.owl
   format: owl
+  original_source:
+  - pharmgkb.genes
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.gene OBO Graph JSON
   id: obo-db-ingest.pharmgkb.gene.json
@@ -1652,6 +1692,10 @@ products:
   name: pharmgkb.gene OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.json
   format: json
+  original_source:
+  - pharmgkb.genes
+  secondary_source:
+  - obo-db-ingest
 - category: MappingProduct
   description: pharmgkb.gene SSSOM
   id: obo-db-ingest.pharmgkb.gene.sssom.tsv
@@ -1661,6 +1705,10 @@ products:
   name: pharmgkb.gene SSSOM
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.sssom.tsv
   format: sssom
+  original_source:
+  - pharmgkb.genes
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.pathways OBO
   id: obo-db-ingest.pharmgkb.pathways.obo
@@ -1670,6 +1718,10 @@ products:
   name: pharmgkb.pathways OBO
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.obo
   format: obo
+  original_source:
+  - pharmgkb
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.pathways OWL
   id: obo-db-ingest.pharmgkb.pathways.owl
@@ -1679,6 +1731,10 @@ products:
   name: pharmgkb.pathways OWL
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.owl
   format: owl
+  original_source:
+  - pharmgkb
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.pathways OBO Graph JSON
   id: obo-db-ingest.pharmgkb.pathways.json
@@ -1688,6 +1744,10 @@ products:
   name: pharmgkb.pathways OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.json
   format: json
+  original_source:
+  - pharmgkb
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.variant OBO
   id: obo-db-ingest.pharmgkb.variant.obo
@@ -1697,6 +1757,10 @@ products:
   name: pharmgkb.variant OBO
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.obo
   format: obo
+  original_source:
+  - pharmgkb.variants
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.variant OWL
   id: obo-db-ingest.pharmgkb.variant.owl
@@ -1706,6 +1770,10 @@ products:
   name: pharmgkb.variant OWL
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.owl
   format: owl
+  original_source:
+  - pharmgkb.variants
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pharmgkb.variant OBO Graph JSON
   id: obo-db-ingest.pharmgkb.variant.json
@@ -1715,6 +1783,10 @@ products:
   name: pharmgkb.variant OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.json
   format: json
+  original_source:
+  - pharmgkb.variants
+  secondary_source:
+  - obo-db-ingest
 - category: MappingProduct
   description: pharmgkb.variant SSSOM
   id: obo-db-ingest.pharmgkb.variant.sssom.tsv
@@ -1724,6 +1796,10 @@ products:
   name: pharmgkb.variant SSSOM
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.sssom.tsv
   format: sssom
+  original_source:
+  - pharmgkb.variants
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: pid.pathway OBO
   id: obo-db-ingest.pid.pathway.obo
