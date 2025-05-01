@@ -1,6 +1,7 @@
 ---
 category: Product
 description: depmap OWL
+format: owl
 id: obo-db-ingest.depmap.owl
 license:
   id: https://creativecommons.org/licenses/by/4.0/

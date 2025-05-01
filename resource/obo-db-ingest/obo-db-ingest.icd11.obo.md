@@ -1,6 +1,7 @@
 ---
 category: Product
 description: icd11 OBO
+format: obo
 id: obo-db-ingest.icd11.obo
 license:
   id: https://creativecommons.org/licenses/by-nc-nd/3.0/igo/deed.en

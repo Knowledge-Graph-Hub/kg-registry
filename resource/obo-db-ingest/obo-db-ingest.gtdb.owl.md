@@ -1,6 +1,7 @@
 ---
 category: Product
 description: gtdb OWL
+format: owl
 id: obo-db-ingest.gtdb.owl
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/

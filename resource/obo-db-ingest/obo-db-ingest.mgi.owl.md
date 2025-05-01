@@ -1,6 +1,7 @@
 ---
 category: Product
 description: mgi OWL
+format: owl
 id: obo-db-ingest.mgi.owl
 license:
   id: https://creativecommons.org/licenses/by/4.0/

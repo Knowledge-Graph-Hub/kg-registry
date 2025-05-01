@@ -1,6 +1,7 @@
 ---
 category: Product
 description: mirbase.family OWL
+format: owl
 id: obo-db-ingest.mirbase.family.owl
 license:
   id: https://creativecommons.org/public-domain/pdm/

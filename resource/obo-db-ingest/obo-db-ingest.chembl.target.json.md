@@ -1,6 +1,7 @@
 ---
 category: Product
 description: chembl.target OBO Graph JSON
+format: json
 id: obo-db-ingest.chembl.target.json
 license:
   id: https://creativecommons.org/licenses/by-sa/3.0/

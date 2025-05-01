@@ -1,6 +1,7 @@
 ---
 category: Product
 description: wikipathways OBO Graph JSON
+format: json
 id: obo-db-ingest.wikipathways.json
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

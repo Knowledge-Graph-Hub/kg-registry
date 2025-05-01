@@ -1,6 +1,7 @@
 ---
 category: Product
 description: chembl.target OWL
+format: owl
 id: obo-db-ingest.chembl.target.owl
 license:
   id: https://creativecommons.org/licenses/by-sa/3.0/

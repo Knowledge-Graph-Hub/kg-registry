@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: drugcentral SSSOM
+format: sssom
 id: obo-db-ingest.drugcentral.sssom.tsv
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/

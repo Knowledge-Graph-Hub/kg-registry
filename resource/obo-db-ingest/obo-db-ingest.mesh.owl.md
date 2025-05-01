@@ -1,6 +1,7 @@
 ---
 category: Product
 description: mesh OWL
+format: owl
 id: obo-db-ingest.mesh.owl
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

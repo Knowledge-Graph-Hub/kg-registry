@@ -1,6 +1,7 @@
 ---
 category: Product
 description: npass OBO Graph JSON
+format: json
 id: obo-db-ingest.npass.json
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/

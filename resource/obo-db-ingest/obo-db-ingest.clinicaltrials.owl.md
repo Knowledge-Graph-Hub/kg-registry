@@ -1,6 +1,7 @@
 ---
 category: Product
 description: clinicaltrials OWL
+format: owl
 id: obo-db-ingest.clinicaltrials.owl
 license:
   id: https://clinicaltrials.gov/about-site/terms-conditions#availability

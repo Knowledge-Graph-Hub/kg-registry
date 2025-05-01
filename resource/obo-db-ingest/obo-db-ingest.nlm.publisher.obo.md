@@ -1,6 +1,7 @@
 ---
 category: Product
 description: nlm.publisher OBO
+format: obo
 id: obo-db-ingest.nlm.publisher.obo
 license:
   id: https://creativecommons.org/public-domain/pdm/

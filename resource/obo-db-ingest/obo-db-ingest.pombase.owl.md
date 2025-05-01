@@ -1,6 +1,7 @@
 ---
 category: Product
 description: pombase OWL
+format: owl
 id: obo-db-ingest.pombase.owl
 license:
   id: https://creativecommons.org/licenses/by/4.0/

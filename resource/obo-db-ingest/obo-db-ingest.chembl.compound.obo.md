@@ -1,6 +1,7 @@
 ---
 category: Product
 description: chembl.compound OBO
+format: obo
 id: obo-db-ingest.chembl.compound.obo
 license:
   id: https://creativecommons.org/licenses/by-sa/3.0/

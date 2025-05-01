@@ -1,6 +1,7 @@
 ---
 category: Product
 description: civic.gid OBO Graph JSON
+format: json
 id: obo-db-ingest.civic.gid.json
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

@@ -1,6 +1,7 @@
 ---
 category: Product
 description: ncbi.gc OBO Graph JSON
+format: json
 id: obo-db-ingest.ncbi.gc.json
 license:
   id: https://creativecommons.org/public-domain/pdm/

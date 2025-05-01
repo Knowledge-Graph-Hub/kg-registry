@@ -1,6 +1,7 @@
 ---
 category: Product
 description: icd11 OBO Graph JSON
+format: json
 id: obo-db-ingest.icd11.json
 license:
   id: https://creativecommons.org/licenses/by-nc-nd/3.0/igo/deed.en

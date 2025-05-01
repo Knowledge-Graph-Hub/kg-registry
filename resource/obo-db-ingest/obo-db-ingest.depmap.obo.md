@@ -1,6 +1,7 @@
 ---
 category: Product
 description: depmap OBO
+format: obo
 id: obo-db-ingest.depmap.obo
 license:
   id: https://creativecommons.org/licenses/by/4.0/

@@ -1,6 +1,7 @@
 ---
 category: Product
 description: itis OWL
+format: owl
 id: obo-db-ingest.itis.owl
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

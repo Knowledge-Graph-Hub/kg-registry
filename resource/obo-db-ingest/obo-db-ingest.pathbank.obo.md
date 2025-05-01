@@ -1,6 +1,7 @@
 ---
 category: Product
 description: pathbank OBO
+format: obo
 id: obo-db-ingest.pathbank.obo
 license:
   id: https://opendatacommons.org/licenses/odbl/1-0/

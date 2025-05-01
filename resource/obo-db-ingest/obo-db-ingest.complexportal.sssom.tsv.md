@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: complexportal SSSOM
+format: sssom
 id: obo-db-ingest.complexportal.sssom.tsv
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
