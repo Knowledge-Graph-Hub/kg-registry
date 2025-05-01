@@ -1,6 +1,7 @@
 ---
 category: Product
 description: geonames.feature OBO Graph JSON
+format: json
 id: obo-db-ingest.geonames.feature.json
 license:
   id: https://creativecommons.org/licenses/by/4.0/

@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: eccode SSSOM
+format: sssom
 id: obo-db-ingest.eccode.sssom.tsv
 license:
   id: https://creativecommons.org/licenses/by/4.0/

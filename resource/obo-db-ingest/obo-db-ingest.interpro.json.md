@@ -1,6 +1,7 @@
 ---
 category: Product
 description: interpro OBO Graph JSON
+format: json
 id: obo-db-ingest.interpro.json
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

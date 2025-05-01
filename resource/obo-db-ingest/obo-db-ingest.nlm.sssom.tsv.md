@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: nlm SSSOM
+format: sssom
 id: obo-db-ingest.nlm.sssom.tsv
 license:
   id: https://creativecommons.org/public-domain/pdm/

@@ -1,6 +1,7 @@
 ---
 category: Product
 description: flybase OBO
+format: obo
 id: obo-db-ingest.flybase.obo
 license:
   id: https://creativecommons.org/licenses/by/4.0/

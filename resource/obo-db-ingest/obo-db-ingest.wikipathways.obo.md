@@ -1,6 +1,7 @@
 ---
 category: Product
 description: wikipathways OBO
+format: obo
 id: obo-db-ingest.wikipathways.obo
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

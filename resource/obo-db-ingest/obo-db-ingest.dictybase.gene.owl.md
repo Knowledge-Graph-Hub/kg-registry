@@ -1,6 +1,7 @@
 ---
 category: Product
 description: dictybase.gene OWL
+format: owl
 id: obo-db-ingest.dictybase.gene.owl
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/

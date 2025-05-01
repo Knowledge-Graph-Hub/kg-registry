@@ -1,6 +1,7 @@
 ---
 category: Product
 description: drugcentral OBO Graph JSON
+format: json
 id: obo-db-ingest.drugcentral.json
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/

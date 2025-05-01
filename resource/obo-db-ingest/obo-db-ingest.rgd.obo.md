@@ -1,6 +1,7 @@
 ---
 category: Product
 description: rgd OBO
+format: obo
 id: obo-db-ingest.rgd.obo
 license:
   id: https://creativecommons.org/licenses/by/4.0/

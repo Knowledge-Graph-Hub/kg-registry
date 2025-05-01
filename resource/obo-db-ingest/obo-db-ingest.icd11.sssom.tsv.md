@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: icd11 SSSOM
+format: sssom
 id: obo-db-ingest.icd11.sssom.tsv
 license:
   id: https://creativecommons.org/licenses/by-nc-nd/3.0/igo/deed.en

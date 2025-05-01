@@ -1,6 +1,7 @@
 ---
 category: Product
 description: mesh OBO Graph JSON
+format: json
 id: obo-db-ingest.mesh.json
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

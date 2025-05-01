@@ -1,6 +1,7 @@
 ---
 category: Product
 description: credit OWL
+format: owl
 id: obo-db-ingest.credit.owl
 license:
   id: https://creativecommons.org/licenses/by/4.0/

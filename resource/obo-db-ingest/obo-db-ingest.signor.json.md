@@ -1,6 +1,7 @@
 ---
 category: Product
 description: signor OBO Graph JSON
+format: json
 id: obo-db-ingest.signor.json
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/

@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: ncbi.gc SSSOM
+format: sssom
 id: obo-db-ingest.ncbi.gc.sssom.tsv
 license:
   id: https://creativecommons.org/public-domain/pdm/

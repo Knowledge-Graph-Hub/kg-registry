@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: msigdb SSSOM
+format: sssom
 id: obo-db-ingest.msigdb.sssom.tsv
 license:
   id: https://creativecommons.org/licenses/by/4.0/

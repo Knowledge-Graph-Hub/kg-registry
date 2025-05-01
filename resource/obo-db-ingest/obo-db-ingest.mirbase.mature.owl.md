@@ -1,6 +1,7 @@
 ---
 category: Product
 description: mirbase.mature OWL
+format: owl
 id: obo-db-ingest.mirbase.mature.owl
 license:
   id: https://creativecommons.org/public-domain/pdm/

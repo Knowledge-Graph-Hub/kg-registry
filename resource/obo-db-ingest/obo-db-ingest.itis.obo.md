@@ -1,6 +1,7 @@
 ---
 category: Product
 description: itis OBO
+format: obo
 id: obo-db-ingest.itis.obo
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

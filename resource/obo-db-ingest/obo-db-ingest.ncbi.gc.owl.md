@@ -1,6 +1,7 @@
 ---
 category: Product
 description: ncbi.gc OWL
+format: owl
 id: obo-db-ingest.ncbi.gc.owl
 license:
   id: https://creativecommons.org/public-domain/pdm/

@@ -1,6 +1,7 @@
 ---
 category: Product
 description: mgi OBO Graph JSON
+format: json
 id: obo-db-ingest.mgi.json
 license:
   id: https://creativecommons.org/licenses/by/4.0/

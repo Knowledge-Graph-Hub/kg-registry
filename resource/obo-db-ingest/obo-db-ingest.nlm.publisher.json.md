@@ -1,6 +1,7 @@
 ---
 category: Product
 description: nlm.publisher OBO Graph JSON
+format: json
 id: obo-db-ingest.nlm.publisher.json
 license:
   id: https://creativecommons.org/public-domain/pdm/

@@ -1,6 +1,7 @@
 ---
 category: Product
 description: nlm OWL
+format: owl
 id: obo-db-ingest.nlm.owl
 license:
   id: https://creativecommons.org/public-domain/pdm/

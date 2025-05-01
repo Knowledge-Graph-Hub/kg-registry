@@ -1,6 +1,7 @@
 ---
 category: Product
 description: mirbase OBO Graph JSON
+format: json
 id: obo-db-ingest.mirbase.json
 license:
   id: https://creativecommons.org/public-domain/pdm/

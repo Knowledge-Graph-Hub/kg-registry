@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: civic.gid SSSOM
+format: sssom
 id: obo-db-ingest.civic.gid.sssom.tsv
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

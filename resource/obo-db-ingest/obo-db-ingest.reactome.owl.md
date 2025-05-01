@@ -1,6 +1,7 @@
 ---
 category: Product
 description: reactome OWL
+format: owl
 id: obo-db-ingest.reactome.owl
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

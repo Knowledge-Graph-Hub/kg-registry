@@ -1,6 +1,7 @@
 ---
 category: Product
 description: uniprot OWL
+format: owl
 id: obo-db-ingest.uniprot.owl
 license:
   id: https://creativecommons.org/licenses/by/4.0/

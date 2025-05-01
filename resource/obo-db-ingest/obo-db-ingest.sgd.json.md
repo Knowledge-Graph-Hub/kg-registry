@@ -1,6 +1,7 @@
 ---
 category: Product
 description: sgd OBO Graph JSON
+format: json
 id: obo-db-ingest.sgd.json
 license:
   id: https://creativecommons.org/licenses/by/4.0/

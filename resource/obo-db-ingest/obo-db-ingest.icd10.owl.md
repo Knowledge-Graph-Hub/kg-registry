@@ -1,6 +1,7 @@
 ---
 category: Product
 description: icd10 OWL
+format: owl
 id: obo-db-ingest.icd10.owl
 license:
   id: https://cdn.who.int/media/docs/default-source/publishing-policies/copyright/who-faq-licensing-icd-10.pdf

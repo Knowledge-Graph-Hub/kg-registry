@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: chembl.target SSSOM
+format: sssom
 id: obo-db-ingest.chembl.target.sssom.tsv
 license:
   id: https://creativecommons.org/licenses/by-sa/3.0/

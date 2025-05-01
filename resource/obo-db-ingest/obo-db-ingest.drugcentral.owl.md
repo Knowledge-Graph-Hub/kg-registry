@@ -1,6 +1,7 @@
 ---
 category: Product
 description: drugcentral OWL
+format: owl
 id: obo-db-ingest.drugcentral.owl
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/

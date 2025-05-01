@@ -1,6 +1,7 @@
 ---
 category: Product
 description: pfam OBO
+format: obo
 id: obo-db-ingest.pfam.obo
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
