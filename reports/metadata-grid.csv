@@ -21,6 +21,7 @@ drkg,active,PASS
 drug-approvals-kp,active,PASS
 drugbank,active,PASS
 drugcentral,active,PASS
+ebrains,active,PASS
 eco-kg,active,PASS
 ecocyc,active,PASS
 ecosim,active,PASS
