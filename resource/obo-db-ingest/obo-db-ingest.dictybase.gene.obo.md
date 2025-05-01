@@ -1,6 +1,7 @@
 ---
 category: Product
 description: dictybase.gene OBO
+format: obo
 id: obo-db-ingest.dictybase.gene.obo
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/

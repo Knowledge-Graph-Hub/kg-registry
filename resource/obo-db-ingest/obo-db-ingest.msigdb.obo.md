@@ -1,6 +1,7 @@
 ---
 category: Product
 description: msigdb OBO
+format: obo
 id: obo-db-ingest.msigdb.obo
 license:
   id: https://creativecommons.org/licenses/by/4.0/

@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: npass SSSOM
+format: sssom
 id: obo-db-ingest.npass.sssom.tsv
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/

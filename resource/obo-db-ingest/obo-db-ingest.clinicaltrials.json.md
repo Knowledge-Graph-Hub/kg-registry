@@ -1,6 +1,7 @@
 ---
 category: Product
 description: clinicaltrials OBO Graph JSON
+format: json
 id: obo-db-ingest.clinicaltrials.json
 license:
   id: https://clinicaltrials.gov/about-site/terms-conditions#availability

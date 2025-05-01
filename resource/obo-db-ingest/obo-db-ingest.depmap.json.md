@@ -1,6 +1,7 @@
 ---
 category: Product
 description: depmap OBO Graph JSON
+format: json
 id: obo-db-ingest.depmap.json
 license:
   id: https://creativecommons.org/licenses/by/4.0/

@@ -1,6 +1,7 @@
 ---
 category: Product
 description: uniprot.ptm OBO Graph JSON
+format: json
 id: obo-db-ingest.uniprot.ptm.json
 license:
   id: https://creativecommons.org/licenses/by/4.0/

@@ -1,6 +1,7 @@
 ---
 category: Product
 description: signor OBO
+format: obo
 id: obo-db-ingest.signor.obo
 license:
   id: https://creativecommons.org/licenses/by-nc/4.0/

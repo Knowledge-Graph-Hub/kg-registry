@@ -1,6 +1,7 @@
 ---
 category: Product
 description: wikipathways OWL
+format: owl
 id: obo-db-ingest.wikipathways.owl
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

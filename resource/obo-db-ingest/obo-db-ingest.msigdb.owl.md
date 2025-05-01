@@ -1,6 +1,7 @@
 ---
 category: Product
 description: msigdb OWL
+format: owl
 id: obo-db-ingest.msigdb.owl
 license:
   id: https://creativecommons.org/licenses/by/4.0/

@@ -1,6 +1,7 @@
 ---
 category: Product
 description: ncbi.gc OBO
+format: obo
 id: obo-db-ingest.ncbi.gc.obo
 license:
   id: https://creativecommons.org/public-domain/pdm/

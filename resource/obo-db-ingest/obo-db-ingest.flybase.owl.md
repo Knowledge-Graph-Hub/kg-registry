@@ -1,6 +1,7 @@
 ---
 category: Product
 description: flybase OWL
+format: owl
 id: obo-db-ingest.flybase.owl
 license:
   id: https://creativecommons.org/licenses/by/4.0/

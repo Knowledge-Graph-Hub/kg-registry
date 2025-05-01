@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: pathbank SSSOM
+format: sssom
 id: obo-db-ingest.pathbank.sssom.tsv
 license:
   id: https://opendatacommons.org/licenses/odbl/1-0/

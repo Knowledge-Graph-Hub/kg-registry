@@ -1,6 +1,7 @@
 ---
 category: Product
 description: pfam OWL
+format: owl
 id: obo-db-ingest.pfam.owl
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

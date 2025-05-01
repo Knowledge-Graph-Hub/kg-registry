@@ -1,6 +1,7 @@
 ---
 category: Product
 description: chembl.target OBO
+format: obo
 id: obo-db-ingest.chembl.target.obo
 license:
   id: https://creativecommons.org/licenses/by-sa/3.0/

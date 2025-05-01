@@ -1,6 +1,7 @@
 ---
 category: MappingProduct
 description: mirbase SSSOM
+format: sssom
 id: obo-db-ingest.mirbase.sssom.tsv
 license:
   id: https://creativecommons.org/public-domain/pdm/

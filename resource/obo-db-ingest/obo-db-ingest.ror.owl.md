@@ -1,6 +1,7 @@
 ---
 category: Product
 description: ror OWL
+format: owl
 id: obo-db-ingest.ror.owl
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

@@ -1,6 +1,7 @@
 ---
 category: Product
 description: icd11 OWL
+format: owl
 id: obo-db-ingest.icd11.owl
 license:
   id: https://creativecommons.org/licenses/by-nc-nd/3.0/igo/deed.en

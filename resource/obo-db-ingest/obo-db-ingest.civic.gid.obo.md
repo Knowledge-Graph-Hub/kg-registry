@@ -1,6 +1,7 @@
 ---
 category: Product
 description: civic.gid OBO
+format: obo
 id: obo-db-ingest.civic.gid.obo
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

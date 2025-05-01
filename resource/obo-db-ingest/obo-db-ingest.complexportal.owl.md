@@ -1,6 +1,7 @@
 ---
 category: Product
 description: complexportal OWL
+format: owl
 id: obo-db-ingest.complexportal.owl
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

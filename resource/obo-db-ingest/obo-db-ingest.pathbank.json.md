@@ -1,6 +1,7 @@
 ---
 category: Product
 description: pathbank OBO Graph JSON
+format: json
 id: obo-db-ingest.pathbank.json
 license:
   id: https://opendatacommons.org/licenses/odbl/1-0/

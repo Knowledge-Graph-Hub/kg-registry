@@ -1,6 +1,7 @@
 ---
 category: Product
 description: omim.ps OBO
+format: obo
 id: obo-db-ingest.omim.ps.obo
 license:
   id: https://www.omim.org/help/agreement

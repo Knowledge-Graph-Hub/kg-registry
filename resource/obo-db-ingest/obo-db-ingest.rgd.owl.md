@@ -1,6 +1,7 @@
 ---
 category: Product
 description: rgd OWL
+format: owl
 id: obo-db-ingest.rgd.owl
 license:
   id: https://creativecommons.org/licenses/by/4.0/

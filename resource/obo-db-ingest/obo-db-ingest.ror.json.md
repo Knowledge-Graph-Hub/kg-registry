@@ -1,6 +1,7 @@
 ---
 category: Product
 description: ror OBO Graph JSON
+format: json
 id: obo-db-ingest.ror.json
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

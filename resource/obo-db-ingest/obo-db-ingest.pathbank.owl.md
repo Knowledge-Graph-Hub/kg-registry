@@ -1,6 +1,7 @@
 ---
 category: Product
 description: pathbank OWL
+format: owl
 id: obo-db-ingest.pathbank.owl
 license:
   id: https://opendatacommons.org/licenses/odbl/1-0/
