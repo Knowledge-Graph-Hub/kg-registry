@@ -7,7 +7,9 @@ contacts:
   - contact_type: url
     value: https://glygen.org/contact-us/
   label: GlyGen Team
-description: GlyGen is an integrated, data-driven resource for glycoproteins, glycans, and carbohydrate-active enzymes, providing researchers with comprehensive, high-quality data on glycobiology.
+description: GlyGen is an integrated, data-driven resource for glycoproteins, glycans,
+  and carbohydrate-active enzymes, providing researchers with comprehensive, high-quality
+  data on glycobiology.
 domains:
 - chemistry and biochemistry
 - biological systems
@@ -22,23 +24,23 @@ products:
 - category: GraphicalInterface
   description: Web interface for exploring GlyGen data
   id: glygen.site
+  is_public: true
   name: GlyGen Website
   original_source:
   - glygen
   product_url: https://glygen.org/
   secondary_source:
   - glygen
-  is_public: true
 - category: ProgrammingInterface
   description: RESTful API for accessing GlyGen data
   id: glygen.api
+  is_public: true
   name: GlyGen API
   original_source:
   - glygen
   product_url: https://api.glygen.org/
   secondary_source:
   - glygen
-  is_public: true
 - category: GraphicalInterface
   description: Interface for searching GlyGen protein and glycan data
   format: csv
@@ -49,7 +51,17 @@ products:
   product_url: https://data.glygen.org/
   secondary_source:
   - glygen
-repository: https://github.com/glygener/glygen-backend-api
+- category: GraphProduct
+  compression: zip
+  description: Nodes from GlyGen Biomarker Database
+  format: csv
+  id: biomarkerkg.nodes.biomarker
+  name: BKG Biomarker Nodes
+  original_source:
+  - glygen
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Biomarker.nodes.zip
+  secondary_source:
+  - biomarkerkg
 publications:
 - authors:
   - Kahsay R
@@ -79,6 +91,7 @@ publications:
   preferred: true
   title: GlyGen - Computational and informatics resources for glycoscience
   year: '2020'
+repository: https://github.com/glygener/glygen-backend-api
 ---
 GlyGen is a data integration and dissemination project for carbohydrate and glycoconjugate related data. It provides researchers with a comprehensive, integrated, and unified resource for glycan and glycoprotein information, bringing together data from multiple international data sources and partners.
 

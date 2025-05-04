@@ -9,7 +9,10 @@ contacts:
   - contact_type: url
     value: https://www.ncbi.nlm.nih.gov/home/about/contact/
   label: National Center for Biotechnology Information (NCBI)
-description: dbSNP contains human single nucleotide variations, microsatellites, and small-scale insertions and deletions along with publication, population frequency, molecular consequence, and genomic and RefSeq mapping information for both common variations and clinical mutations.
+description: dbSNP contains human single nucleotide variations, microsatellites, and
+  small-scale insertions and deletions along with publication, population frequency,
+  molecular consequence, and genomic and RefSeq mapping information for both common
+  variations and clinical mutations.
 domains:
 - biological systems
 - health
@@ -24,27 +27,27 @@ products:
 - category: GraphicalInterface
   description: Web interface for searching and exploring dbSNP data
   id: dbsnp.site
+  is_public: true
   name: dbSNP Web Interface
   original_source:
   - dbsnp
   product_url: https://www.ncbi.nlm.nih.gov/snp/
   secondary_source:
   - dbsnp
-  is_public: true
 - category: ProgrammingInterface
   description: Programmatic access to dbSNP data via the NCBI E-utilities API
   id: dbsnp.api
+  is_public: true
   name: dbSNP E-utilities API
   original_source:
   - dbsnp
   product_url: https://www.ncbi.nlm.nih.gov/books/NBK25500/
   secondary_source:
   - dbsnp
-  is_public: true
 - category: Product
+  compression: gzip
   description: JSON format files with dbSNP RefSNP data
   format: json
-  compression: gzip
   id: dbsnp.json
   name: dbSNP JSON Files
   original_source:
@@ -53,16 +56,27 @@ products:
   secondary_source:
   - dbsnp
 - category: ProgrammingInterface
-  description: NCBI Variation Services API for accessing and manipulating variant data
+  description: NCBI Variation Services API for accessing and manipulating variant
+    data
   id: dbsnp.variation.api
+  is_public: true
   name: NCBI Variation Services API
   original_source:
   - dbsnp
   product_url: https://api.ncbi.nlm.nih.gov/variation/v0/
   secondary_source:
   - dbsnp
-  is_public: true
-repository: https://github.com/ncbi/dbsnp
+- category: GraphProduct
+  compression: zip
+  description: Nodes from dbSNP
+  format: csv
+  id: biomarkerkg.nodes.variant
+  name: BKG Variant Nodes
+  original_source:
+  - dbsnp
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Variant.nodes.zip
+  secondary_source:
+  - biomarkerkg
 publications:
 - authors:
   - Sherry ST
@@ -74,7 +88,8 @@ publications:
   - Sirotkin K
   doi: doi:10.1093/nar/29.1.308
   id: doi:10.1093/nar/29.1.308
-  title: dbSNP - Database for Single Nucleotide Polymorphisms and Other Classes of Minor Genetic Variation
+  title: dbSNP - Database for Single Nucleotide Polymorphisms and Other Classes of
+    Minor Genetic Variation
   year: '2001'
 - authors:
   - Kitts A
@@ -86,6 +101,7 @@ publications:
   preferred: true
   title: The evolution of dbSNP - 25 years of impact in genomic research
   year: '2023'
+repository: https://github.com/ncbi/dbsnp
 ---
 dbSNP (Database of Single Nucleotide Polymorphisms) is a public archive for genetic variation established in 1999 by the National Center for Biotechnology Information (NCBI) in collaboration with the National Human Genome Research Institute (NHGRI). It serves as a central repository for both single nucleotide variations and small-scale insertions and deletions (indels).
 

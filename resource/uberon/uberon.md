@@ -10,7 +10,9 @@ contacts:
     value: cmungall
   label: Christopher J. Mungall
   orcid: 0000-0002-6601-2165
-description: An integrated cross-species anatomy ontology representing a variety of anatomical structures across taxonomic groups, with a focus on vertebrates and model organisms.
+description: An integrated cross-species anatomy ontology representing a variety of
+  anatomical structures across taxonomic groups, with a focus on vertebrates and model
+  organisms.
 domains:
 - anatomy and development
 - organisms
@@ -52,6 +54,17 @@ products:
   product_url: http://purl.obolibrary.org/obo/uberon/basic.owl
   secondary_source:
   - uberon
+- category: GraphProduct
+  compression: zip
+  description: Nodes from Uber-Anatomy Ontology
+  format: csv
+  id: biomarkerkg.nodes.anatomy
+  name: BKG Anatomy Nodes
+  original_source:
+  - uberon
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.nodes.zip
+  secondary_source:
+  - biomarkerkg
 repository: https://github.com/obophenotype/uberon
 ---
 The Uber-Anatomy Ontology (UBERON) is a comprehensive cross-species anatomy ontology representing anatomical structures, cells, and tissues across metazoans. It serves as an integrative resource that connects various species-specific anatomy ontologies and provides a unified framework for comparative analysis.
