@@ -3,6 +3,7 @@ automat,active,PASS
 bigg,active,PASS
 biocyc,active,PASS
 biolink,active,PASS
+biomarkerkg,active,PASS
 bioteque,active,PASS
 cam-kp,active,PASS
 ccle,active,PASS
@@ -16,6 +17,7 @@ clinical-data-kp,active,PASS
 connections-hypothesis-kp,active,PASS
 cpathkg,active,PASS
 ctd,active,PASS
+dbsnp,active,PASS
 do,active,PASS
 drkg,active,PASS
 drug-approvals-kp,active,PASS
@@ -28,6 +30,7 @@ ecosim,active,PASS
 genetics-kp,active,PASS
 genomickb,active,PASS
 glkb,active,PASS
+glygen,active,PASS
 go,active,PASS
 go-cam,active,PASS
 goldterms,active,PASS
@@ -69,6 +72,7 @@ pheknowlator,active,PASS
 phenio,active,PASS
 pombase,active,PASS
 primekg,active,PASS
+pubchem,active,PASS
 rdbridge,active,PASS
 reacto,active,PASS
 reactome,active,PASS
@@ -85,5 +89,6 @@ sri-reference-kg,active,PASS
 swisslipid,active,PASS
 text-mining-kp,active,PASS
 ubergraph,active,PASS
+uberon,active,PASS
 uniprot,active,PASS
 zfin,active,PASS

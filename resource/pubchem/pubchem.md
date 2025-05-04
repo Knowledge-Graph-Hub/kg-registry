@@ -9,7 +9,9 @@ contacts:
   - contact_type: url
     value: https://pubchem.ncbi.nlm.nih.gov/contact
   label: National Center for Biotechnology Information (NCBI)
-description: PubChem is an open chemistry database that collects information on chemical structures, identifiers, chemical and physical properties, biological activities, patents, health, safety, toxicity data, and other information.
+description: PubChem is an open chemistry database that collects information on chemical
+  structures, identifiers, chemical and physical properties, biological activities,
+  patents, health, safety, toxicity data, and other information.
 domains:
 - chemistry and biochemistry
 - health
@@ -22,9 +24,9 @@ license:
 name: PubChem
 products:
 - category: Product
+  compression: gzip
   description: Compound structures, properties, and other information in ASN.1 format
   format: xml
-  compression: gzip
   id: pubchem.compounds.asn
   name: PubChem Compounds ASN
   original_source:
@@ -33,9 +35,9 @@ products:
   secondary_source:
   - pubchem
 - category: Product
+  compression: gzip
   description: Compound structures, properties, and other information in SDF format
   format: sdf
-  compression: gzip
   id: pubchem.compounds.sdf
   name: PubChem Compounds SDF
   original_source:
@@ -44,9 +46,9 @@ products:
   secondary_source:
   - pubchem
 - category: Product
+  compression: gzip
   description: PubChem substance information in ASN.1 format
   format: xml
-  compression: gzip
   id: pubchem.substances.asn
   name: PubChem Substances ASN
   original_source:
@@ -55,9 +57,9 @@ products:
   secondary_source:
   - pubchem
 - category: Product
+  compression: gzip
   description: PubChem substance information in SDF format
   format: sdf
-  compression: gzip
   id: pubchem.substances.sdf
   name: PubChem Substances SDF
   original_source:
@@ -66,9 +68,9 @@ products:
   secondary_source:
   - pubchem
 - category: Product
+  compression: gzip
   description: PubChem BioAssay data in ASN.1 format
   format: xml
-  compression: gzip
   id: pubchem.bioassay.asn
   name: PubChem BioAssay ASN
   original_source:
@@ -77,9 +79,9 @@ products:
   secondary_source:
   - pubchem
 - category: Product
+  compression: gzip
   description: PubChem BioAssay data in XML format
   format: xml
-  compression: gzip
   id: pubchem.bioassay.xml
   name: PubChem BioAssay XML
   original_source:
@@ -90,14 +92,24 @@ products:
 - category: ProgrammingInterface
   description: The PubChem Power User Gateway (PUG) REST service
   id: pubchem.pug.rest
+  is_public: true
   name: PubChem PUG REST API
   original_source:
   - pubchem
   product_url: https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest
   secondary_source:
   - pubchem
-  is_public: true
-repository: https://github.com/ncbi/NCBI-Datasets
+- category: GraphProduct
+  compression: zip
+  description: Nodes from PubChem Database
+  format: csv
+  id: biomarkerkg.nodes.compound
+  name: BKG Compound Nodes
+  original_source:
+  - pubchem
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Compound.nodes.zip
+  secondary_source:
+  - biomarkerkg
 publications:
 - authors:
   - Kim S
@@ -118,6 +130,7 @@ publications:
   preferred: true
   title: PubChem 2019 update - improved access to chemical data
   year: '2019'
+repository: https://github.com/ncbi/NCBI-Datasets
 ---
 PubChem is a database of chemical molecules and their activities against biological assays maintained by the National Center for Biotechnology Information (NCBI), a component of the National Library of Medicine, which is part of the United States National Institutes of Health (NIH).
 
