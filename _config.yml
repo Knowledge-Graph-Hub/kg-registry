@@ -628,6 +628,158 @@ resources:
 - activity_status: active
   category: KnowledgeGraph
   contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: avi.maayan@mssm.edu
+    label: MaayanLab
+  description: Biomarker Knowledge Graph (BKG) is a comprehensive resource for biomarker
+    data that integrates multiple biomedical resources to connect biomarkers with
+    anatomical structures, compounds, conditions, roles, and variants.
+  domains:
+  - health
+  - biological systems
+  homepage_url: https://bkg.dev.maayanlab.cloud/
+  id: biomarkerkg
+  layout: resource_detail
+  name: Biomarker Knowledge Graph
+  products:
+  - category: GraphicalInterface
+    description: Web interface to explore and query the Biomarker Knowledge Graph
+    id: biomarkerkg.site
+    name: BKG Explorer
+    original_source:
+    - biomarkerkg
+    product_url: https://bkg.dev.maayanlab.cloud/
+    secondary_source:
+    - biomarkerkg
+  - category: GraphProduct
+    compression: zip
+    description: Nodes from Uber-Anatomy Ontology
+    format: csv
+    id: biomarkerkg.nodes.anatomy
+    name: BKG Anatomy Nodes
+    original_source:
+    - uberon
+    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.nodes.zip
+    secondary_source:
+    - biomarkerkg
+  - category: GraphProduct
+    compression: zip
+    description: Nodes from GlyGen Biomarker Database
+    format: csv
+    id: biomarkerkg.nodes.biomarker
+    name: BKG Biomarker Nodes
+    original_source:
+    - glygen
+    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Biomarker.nodes.zip
+    secondary_source:
+    - biomarkerkg
+  - category: GraphProduct
+    compression: zip
+    description: Nodes from PubChem Database
+    format: csv
+    id: biomarkerkg.nodes.compound
+    name: BKG Compound Nodes
+    original_source:
+    - pubchem
+    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Compound.nodes.zip
+    secondary_source:
+    - biomarkerkg
+  - category: GraphProduct
+    compression: zip
+    description: Nodes from Human Disease Ontology
+    format: csv
+    id: biomarkerkg.nodes.condition
+    name: BKG Condition Nodes
+    original_source:
+    - do
+    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.nodes.zip
+    secondary_source:
+    - biomarkerkg
+  - category: GraphProduct
+    compression: zip
+    description: Nodes from OBCI
+    format: csv
+    id: biomarkerkg.nodes.role
+    name: BKG Role Nodes
+    original_source:
+    - biomarkerkg
+    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Role.nodes.zip
+    secondary_source:
+    - biomarkerkg
+  - category: GraphProduct
+    compression: zip
+    description: Nodes from dbSNP
+    format: csv
+    id: biomarkerkg.nodes.variant
+    name: BKG Variant Nodes
+    original_source:
+    - dbsnp
+    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Variant.nodes.zip
+    secondary_source:
+    - biomarkerkg
+  - category: GraphProduct
+    compression: zip
+    description: Biomarker to Anatomy relationships (determined_using_sample_from)
+    format: csv
+    id: biomarkerkg.edges.anatomy
+    name: BKG Anatomy Edges
+    original_source:
+    - biomarkerkg
+    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.edges.zip
+    secondary_source:
+    - biomarkerkg
+  - category: GraphProduct
+    compression: zip
+    description: Biomarker to Compound relationships (indicated_by_above_normal_level_of,
+      indicated_by_below_normal_level_of)
+    format: csv
+    id: biomarkerkg.edges.compound
+    name: BKG Compound Edges
+    original_source:
+    - biomarkerkg
+    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Compound.edges.zip
+    secondary_source:
+    - biomarkerkg
+  - category: GraphProduct
+    compression: zip
+    description: Biomarker to Condition relationships (diagnostic_for, indicates_risk_of_developing,
+      prognostic_for)
+    format: csv
+    id: biomarkerkg.edges.condition
+    name: BKG Condition Edges
+    original_source:
+    - biomarkerkg
+    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.edges.zip
+    secondary_source:
+    - biomarkerkg
+  - category: GraphProduct
+    compression: zip
+    description: Biomarker to Role relationships (has_best_classification)
+    format: csv
+    id: biomarkerkg.edges.role
+    name: BKG Role Edges
+    original_source:
+    - biomarkerkg
+    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Role.edges.zip
+    secondary_source:
+    - biomarkerkg
+  - category: GraphProduct
+    compression: zip
+    description: Biomarker to Variant relationships (indicated_by_presence_of)
+    format: csv
+    id: biomarkerkg.edges.variant
+    name: BKG Variant Edges
+    original_source:
+    - biomarkerkg
+    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Variant.edges.zip
+    secondary_source:
+    - biomarkerkg
+  repository: https://github.com/MaayanLab/BiomarkerKG
+- activity_status: active
+  category: KnowledgeGraph
+  contacts:
   - category: Individual
     contact_details:
     - contact_type: email
@@ -1211,6 +1363,109 @@ resources:
     secondary_source:
     - automat
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: info@ncbi.nlm.nih.gov
+    - contact_type: url
+      value: https://www.ncbi.nlm.nih.gov/home/about/contact/
+    label: National Center for Biotechnology Information (NCBI)
+  description: dbSNP contains human single nucleotide variations, microsatellites,
+    and small-scale insertions and deletions along with publication, population frequency,
+    molecular consequence, and genomic and RefSeq mapping information for both common
+    variations and clinical mutations.
+  domains:
+  - biological systems
+  - health
+  homepage_url: https://www.ncbi.nlm.nih.gov/snp/
+  id: dbsnp
+  layout: resource_detail
+  license:
+    id: https://www.ncbi.nlm.nih.gov/home/about/policies/
+    label: Public Domain
+  name: dbSNP
+  products:
+  - category: GraphicalInterface
+    description: Web interface for searching and exploring dbSNP data
+    id: dbsnp.site
+    is_public: true
+    name: dbSNP Web Interface
+    original_source:
+    - dbsnp
+    product_url: https://www.ncbi.nlm.nih.gov/snp/
+    secondary_source:
+    - dbsnp
+  - category: ProgrammingInterface
+    description: Programmatic access to dbSNP data via the NCBI E-utilities API
+    id: dbsnp.api
+    is_public: true
+    name: dbSNP E-utilities API
+    original_source:
+    - dbsnp
+    product_url: https://www.ncbi.nlm.nih.gov/books/NBK25500/
+    secondary_source:
+    - dbsnp
+  - category: Product
+    compression: gzip
+    description: JSON format files with dbSNP RefSNP data
+    format: json
+    id: dbsnp.json
+    name: dbSNP JSON Files
+    original_source:
+    - dbsnp
+    product_url: https://ftp.ncbi.nih.gov/snp/latest_release/JSON/
+    secondary_source:
+    - dbsnp
+  - category: ProgrammingInterface
+    description: NCBI Variation Services API for accessing and manipulating variant
+      data
+    id: dbsnp.variation.api
+    is_public: true
+    name: NCBI Variation Services API
+    original_source:
+    - dbsnp
+    product_url: https://api.ncbi.nlm.nih.gov/variation/v0/
+    secondary_source:
+    - dbsnp
+  - category: GraphProduct
+    compression: zip
+    description: Nodes from dbSNP
+    format: csv
+    id: biomarkerkg.nodes.variant
+    name: BKG Variant Nodes
+    original_source:
+    - dbsnp
+    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Variant.nodes.zip
+    secondary_source:
+    - biomarkerkg
+  publications:
+  - authors:
+    - Sherry ST
+    - Ward MH
+    - Kholodov M
+    - Baker J
+    - Phan L
+    - Smigielski EM
+    - Sirotkin K
+    doi: doi:10.1093/nar/29.1.308
+    id: doi:10.1093/nar/29.1.308
+    title: dbSNP - Database for Single Nucleotide Polymorphisms and Other Classes
+      of Minor Genetic Variation
+    year: '2001'
+  - authors:
+    - Kitts A
+    - Phan L
+    - Ward M
+    - Holmes JB
+    doi: doi:10.1093/nar/gkad1045
+    id: doi:10.1093/nar/gkad1045
+    preferred: true
+    title: The evolution of dbSNP - 25 years of impact in genomic research
+    year: '2023'
+  repository: https://github.com/ncbi/dbsnp
+- activity_status: active
   category: DataModel
   contacts:
   - category: Individual
@@ -1301,6 +1556,17 @@ resources:
     product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
     secondary_source:
     - mondo
+  - category: GraphProduct
+    compression: zip
+    description: Nodes from Human Disease Ontology
+    format: csv
+    id: biomarkerkg.nodes.condition
+    name: BKG Condition Nodes
+    original_source:
+    - do
+    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.nodes.zip
+    secondary_source:
+    - biomarkerkg
   repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 - activity_status: active
   category: KnowledgeGraph
@@ -1709,6 +1975,100 @@ resources:
     id: doi:10.1101/2024.09.22.614323
     title: Building a literature knowledge base towards transparent biomedical AI
     year: '2025'
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://glygen.org/contact-us/
+    label: GlyGen Team
+  description: GlyGen is an integrated, data-driven resource for glycoproteins, glycans,
+    and carbohydrate-active enzymes, providing researchers with comprehensive, high-quality
+    data on glycobiology.
+  domains:
+  - chemistry and biochemistry
+  - biological systems
+  homepage_url: https://glygen.org/
+  id: glygen
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: GlyGen
+  products:
+  - category: GraphicalInterface
+    description: Web interface for exploring GlyGen data
+    id: glygen.site
+    is_public: true
+    name: GlyGen Website
+    original_source:
+    - glygen
+    product_url: https://glygen.org/
+    secondary_source:
+    - glygen
+  - category: ProgrammingInterface
+    description: RESTful API for accessing GlyGen data
+    id: glygen.api
+    is_public: true
+    name: GlyGen API
+    original_source:
+    - glygen
+    product_url: https://api.glygen.org/
+    secondary_source:
+    - glygen
+  - category: GraphicalInterface
+    description: Interface for searching GlyGen protein and glycan data
+    format: csv
+    id: glygen.data.site
+    name: GlyGen Data Downloads
+    original_source:
+    - glygen
+    product_url: https://data.glygen.org/
+    secondary_source:
+    - glygen
+  - category: GraphProduct
+    compression: zip
+    description: Nodes from GlyGen Biomarker Database
+    format: csv
+    id: biomarkerkg.nodes.biomarker
+    name: BKG Biomarker Nodes
+    original_source:
+    - glygen
+    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Biomarker.nodes.zip
+    secondary_source:
+    - biomarkerkg
+  publications:
+  - authors:
+    - Kahsay R
+    - Vora J
+    - Navelkar R
+    - Mousavi R
+    - Bittremieux W
+    - Bakker H
+    - Moremen K
+    - Ten F
+    - Abrahams D
+    - Campbell M
+    - Glushka J
+    - Ranzinger R
+    - York W
+    - Haslam S
+    - Dell A
+    - Packer N
+    - Bourne P
+    - Azadi P
+    - Aoki-Kinoshita K
+    - Lisacek F
+    - Tiemeyer M
+    - Neelamegham S
+    doi: doi:10.1093/glycob/cwaa085
+    id: doi:10.1093/glycob/cwaa085
+    preferred: true
+    title: GlyGen - Computational and informatics resources for glycoscience
+    year: '2020'
+  repository: https://github.com/glygener/glygen-backend-api
 - activity_status: active
   category: Resource
   contacts:
@@ -6420,6 +6780,138 @@ resources:
     - primekg
   repository: https://github.com/mims-harvard/PrimeKG
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: info@ncbi.nlm.nih.gov
+    - contact_type: url
+      value: https://pubchem.ncbi.nlm.nih.gov/contact
+    label: National Center for Biotechnology Information (NCBI)
+  description: PubChem is an open chemistry database that collects information on
+    chemical structures, identifiers, chemical and physical properties, biological
+    activities, patents, health, safety, toxicity data, and other information.
+  domains:
+  - chemistry and biochemistry
+  - health
+  homepage_url: https://pubchem.ncbi.nlm.nih.gov/
+  id: pubchem
+  layout: resource_detail
+  license:
+    id: https://www.ncbi.nlm.nih.gov/home/about/policies/
+    label: Public Domain
+  name: PubChem
+  products:
+  - category: Product
+    compression: gzip
+    description: Compound structures, properties, and other information in ASN.1 format
+    format: xml
+    id: pubchem.compounds.asn
+    name: PubChem Compounds ASN
+    original_source:
+    - pubchem
+    product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Compound/CURRENT-Full/ASN/
+    secondary_source:
+    - pubchem
+  - category: Product
+    compression: gzip
+    description: Compound structures, properties, and other information in SDF format
+    format: sdf
+    id: pubchem.compounds.sdf
+    name: PubChem Compounds SDF
+    original_source:
+    - pubchem
+    product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Compound/CURRENT-Full/SDF/
+    secondary_source:
+    - pubchem
+  - category: Product
+    compression: gzip
+    description: PubChem substance information in ASN.1 format
+    format: xml
+    id: pubchem.substances.asn
+    name: PubChem Substances ASN
+    original_source:
+    - pubchem
+    product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/ASN/
+    secondary_source:
+    - pubchem
+  - category: Product
+    compression: gzip
+    description: PubChem substance information in SDF format
+    format: sdf
+    id: pubchem.substances.sdf
+    name: PubChem Substances SDF
+    original_source:
+    - pubchem
+    product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/SDF/
+    secondary_source:
+    - pubchem
+  - category: Product
+    compression: gzip
+    description: PubChem BioAssay data in ASN.1 format
+    format: xml
+    id: pubchem.bioassay.asn
+    name: PubChem BioAssay ASN
+    original_source:
+    - pubchem
+    product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Bioassay/ASN/
+    secondary_source:
+    - pubchem
+  - category: Product
+    compression: gzip
+    description: PubChem BioAssay data in XML format
+    format: xml
+    id: pubchem.bioassay.xml
+    name: PubChem BioAssay XML
+    original_source:
+    - pubchem
+    product_url: https://ftp.ncbi.nlm.nih.gov/pubchem/Bioassay/XML/
+    secondary_source:
+    - pubchem
+  - category: ProgrammingInterface
+    description: The PubChem Power User Gateway (PUG) REST service
+    id: pubchem.pug.rest
+    is_public: true
+    name: PubChem PUG REST API
+    original_source:
+    - pubchem
+    product_url: https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest
+    secondary_source:
+    - pubchem
+  - category: GraphProduct
+    compression: zip
+    description: Nodes from PubChem Database
+    format: csv
+    id: biomarkerkg.nodes.compound
+    name: BKG Compound Nodes
+    original_source:
+    - pubchem
+    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Compound.nodes.zip
+    secondary_source:
+    - biomarkerkg
+  publications:
+  - authors:
+    - Kim S
+    - Chen J
+    - Cheng T
+    - Gindulyte A
+    - He J
+    - He S
+    - Li Q
+    - Shoemaker BA
+    - Thiessen PA
+    - Yu B
+    - Zaslavsky L
+    - Zhang J
+    - Bolton EE
+    doi: doi:10.1093/nar/gky1033
+    id: doi:10.1093/nar/gky1033
+    preferred: true
+    title: PubChem 2019 update - improved access to chemical data
+    year: '2019'
+  repository: https://github.com/ncbi/NCBI-Datasets
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -6966,6 +7458,74 @@ resources:
     secondary_source:
     - ubergraph
   repository: https://github.com/INCATools/ubergraph
+- activity_status: active
+  category: DataModel
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: cjmungall@lbl.gov
+    - contact_type: github
+      value: cmungall
+    label: Christopher J. Mungall
+    orcid: 0000-0002-6601-2165
+  description: An integrated cross-species anatomy ontology representing a variety
+    of anatomical structures across taxonomic groups, with a focus on vertebrates
+    and model organisms.
+  domains:
+  - anatomy and development
+  - organisms
+  homepage_url: https://obophenotype.github.io/uberon/
+  id: uberon
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/3.0/
+    label: CC-BY-3.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: Uber-Anatomy Ontology
+  products:
+  - category: DataModelProduct
+    description: OWL release of UBERON. The Complete ontology with merged imports.
+    format: owl
+    id: uberon.owl
+    name: UBERON OWL release
+    original_source:
+    - uberon
+    product_url: http://purl.obolibrary.org/obo/uberon.owl
+    secondary_source:
+    - uberon
+  - category: DataModelProduct
+    description: OBO release of UBERON
+    format: obo
+    id: uberon.obo
+    name: UBERON OBO release
+    original_source:
+    - uberon
+    product_url: http://purl.obolibrary.org/obo/uberon.obo
+    secondary_source:
+    - uberon
+  - category: DataModelProduct
+    description: Basic edition of UBERON in OWL format, with minimal imports
+    format: owl
+    id: uberon.basic.owl
+    name: UBERON Basic OWL release
+    original_source:
+    - uberon
+    product_url: http://purl.obolibrary.org/obo/uberon/basic.owl
+    secondary_source:
+    - uberon
+  - category: GraphProduct
+    compression: zip
+    description: Nodes from Uber-Anatomy Ontology
+    format: csv
+    id: biomarkerkg.nodes.anatomy
+    name: BKG Anatomy Nodes
+    original_source:
+    - uberon
+    product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.nodes.zip
+    secondary_source:
+    - biomarkerkg
+  repository: https://github.com/obophenotype/uberon
 - activity_status: active
   category: DataSource
   contacts:

@@ -89,6 +89,17 @@ products:
   product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
   secondary_source:
   - mondo
+- category: GraphProduct
+  compression: zip
+  description: Nodes from Human Disease Ontology
+  format: csv
+  id: biomarkerkg.nodes.condition
+  name: BKG Condition Nodes
+  original_source:
+  - do
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.nodes.zip
+  secondary_source:
+  - biomarkerkg
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 ---
 Human Disease Ontology
