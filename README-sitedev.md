@@ -10,7 +10,7 @@ Because Jekyll can be difficult to install, Docker provides an
 alternative for running the `serve` command, then open http://localhost:4000:
 
 ```shell
-$ docker run --rm --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:3.5 jekyll serve
+$ docker run --rm --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:4.2.0 jekyll serve
 ```
 
 You can make changes locally and the Docker image will automatically update.
