@@ -89,6 +89,7 @@ product (e.g., there may be multiple sources and they
 may be processed differently).
 The current diagram is rather hacky.
 TODO: restructure accordingly. -->
+    {% if page.original_source or page.secondary_source %}
     {% if page.secondary_source and page.original_source %}
     <div class="card bg-light mb-3" style="max-width: 60rem;">
       <div class="card-body">
@@ -182,6 +183,11 @@ TODO: restructure accordingly. -->
       </div>
       {% endif %}
     </div>
+    {% else %}
+    <div class="alert alert-warning" role="alert" style="max-width: 60rem">
+      ⚠ Sources are not defined for this product.
+    </div>
+    {% endif %}
 
     {% if page.compatibility %}
     <div class="card px-0" style="margin-bottom: 1.5em; max-width: 60rem" id="compatibility">
