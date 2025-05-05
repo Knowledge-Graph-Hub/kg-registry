@@ -241,8 +241,12 @@ class FormatEnum(str, Enum):
     fasta = "fasta"
     # The Hypertext Transfer Protocol (HTTP) format. This is a protocol for transferring data over the web. If a product is in this format, it is likely an web site or API.
     http = "http"
-    # The PostgreSQL format, a relational database management system. If a product is in this format, it is likely a PostgreSQL database dump.
+    # The PostgreSQL relational database management system. If a product is in this format, it is likely a PostgreSQL database dump.
     postgres = "postgres"
+    # The MySQL relational database management system. If a product is in this format, it is likely a MySQL database dump.
+    mysql = "mysql"
+    # The SQLite relational database management system. If a product is in this format, it is likely a SQLite database dump.
+    sqlite = "sqlite"
 
 
 class StandardEnum(str, Enum):

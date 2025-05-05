@@ -919,8 +919,16 @@ enums:
           or API.
       postgres:
         description: >-
-          The PostgreSQL format, a relational database management system.
+          The PostgreSQL relational database management system.
           If a product is in this format, it is likely a PostgreSQL database dump.
+      mysql:
+        description: >-
+          The MySQL relational database management system.
+          If a product is in this format, it is likely a MySQL database dump.
+      sqlite:
+        description: >-
+          The SQLite relational database management system.
+          If a product is in this format, it is likely a SQLite database dump.
 
   StandardEnum:
     description: >-

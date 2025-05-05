@@ -904,7 +904,9 @@
                 "xml",
                 "fasta",
                 "http",
-                "postgres"
+                "postgres",
+                "mysql",
+                "sqlite"
             ],
             "title": "FormatEnum",
             "type": "string"

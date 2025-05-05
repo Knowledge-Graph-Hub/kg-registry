@@ -1,31 +1,123 @@
 ---
-layout: resource_detail
 activity_status: active
-id: chembl
-name: ChEMBL
+category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: chembl-help@ebi.ac.uk
+  label: ChEMBL
 description: ChEMBL is a manually curated database of bioactive molecules with drug-like
   properties. It brings together chemical, bioactivity and genomic data to aid the
   translation of genomic information into effective new drugs.
 domains:
 - chemistry and biochemistry
-contacts:
-- category: Organization
-  label: ChEMBL
-  contact_details:
-  - contact_type: email
-    value: chembl-help@ebi.ac.uk
 homepage_url: https://www.ebi.ac.uk/chembl/
-repository: https://github.com/chembl
-category: DataSource
+id: chembl
+layout: resource_detail
 license:
-  label: CC-BY-SA-3.0
   id: https://creativecommons.org/licenses/by-sa/3.0/
+  label: CC-BY-SA-3.0
+name: ChEMBL
+products:
+- category: GraphicalInterface
+  description: Web interface for searching and exploring ChEMBL data
+  id: chembl.site
+  is_public: true
+  name: ChEMBL Web Interface
+  original_source:
+  - chembl
+  product_url: https://www.ebi.ac.uk/chembl/
+  secondary_source:
+  - chembl
+- category: ProgrammingInterface
+  description: RESTful API for accessing ChEMBL data programmatically
+  id: chembl.api
+  is_public: true
+  name: ChEMBL API
+  original_source:
+  - chembl
+  product_url: https://www.ebi.ac.uk/chembl/api/data/docs
+  secondary_source:
+  - chembl
+- category: Product
+  compression: gzip
+  description: PostgreSQL database dump of the complete ChEMBL database
+  format: postgres
+  id: chembl.postgres
+  name: ChEMBL PostgreSQL
+  original_source:
+  - chembl
+  product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
+  secondary_source:
+  - chembl
+- category: Product
+  compression: gzip
+  description: MySQL database dump of the complete ChEMBL database
+  format: mysql
+  id: chembl.mysql
+  name: ChEMBL MySQL
+  original_source:
+  - chembl
+  product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
+  secondary_source:
+  - chembl
+- category: Product
+  compression: gzip
+  description: SQLite database file containing the complete ChEMBL database
+  format: sqlite
+  id: chembl.sqlite
+  name: ChEMBL SQLite
+  original_source:
+  - chembl
+  product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
+  secondary_source:
+  - chembl
+- category: Product
+  compression: gzip
+  description: Structure data files for all chemical compounds in ChEMBL
+  format: sdf
+  id: chembl.sdf
+  name: ChEMBL SDF
+  original_source:
+  - chembl
+  product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/
+  secondary_source:
+  - chembl
+- category: Product
+  compression: gzip
+  description: RDF version of the ChEMBL database
+  format: ttl
+  id: chembl.rdf
+  name: ChEMBL RDF
+  original_source:
+  - chembl
+  product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/latest/
+  secondary_source:
+  - chembl
+- category: ProgrammingInterface
+  description: SPARQL endpoint for the ChEMBL RDF data
+  id: chembl.sparql
+  is_public: true
+  name: ChEMBL SPARQL
+  original_source:
+  - chembl
+  product_url: https://www.ebi.ac.uk/rdf/services/sparql
+  secondary_source:
+  - chembl
+- category: MappingProduct
+  description: Mapping between chembl_35 target chembl_ids and UniProt accessions
+  id: chembl.map_to_uniprot
+  is_public: true
+  name: ChEMBL map to UniProt
+  original_source:
+  - chembl
+  - uniprot
+  product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_uniprot_mapping.txt
+  secondary_source:
+  - chembl
 publications:
-- doi: doi:10.1093/nar/gkad1004
-  id: doi:10.1093/nar/gkad1004
-  preferred: true
-  year: '2023'
-  authors:
+- authors:
   - Zdrazil B
   - Felix E
   - Hunter F
@@ -46,8 +138,21 @@ publications:
   - Monecke PM
   - Landrum GA
   - Leach AR
+  doi: doi:10.1093/nar/gkad1004
+  id: doi:10.1093/nar/gkad1004
+  preferred: true
   title: 'The ChEMBL Database in 2023: a drug discovery platform spanning multiple
     bioactivity data types and time periods'
+  year: '2023'
+repository: https://github.com/chembl
 ---
-
 ChEMBL is a manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs.
+
+The database contains detailed information on:
+- Over 2 million compounds
+- More than 1 million assays
+- Binding, functional, and ADMET data
+- Over 15,000 targets, including proteins, cells, and organisms
+- Around 90,000 publications and documents
+
+ChEMBL is widely used in drug discovery, pharmacology research, chemical biology, and medicinal chemistry. The database undergoes regular updates, with new data releases typically occurring 3-4 times per year.
