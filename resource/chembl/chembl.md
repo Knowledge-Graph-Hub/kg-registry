@@ -107,8 +107,8 @@ products:
   is_public: true
 - category: MappingProduct
   description: Mapping between chembl_35 target chembl_ids and UniProt accessions
-  id: chembl.sparql
-  name: ChEMBL SPARQL
+  id: chembl.map_to_uniprot
+  name: ChEMBL map to UniProt
   original_source:
   - chembl
   - uniprot
