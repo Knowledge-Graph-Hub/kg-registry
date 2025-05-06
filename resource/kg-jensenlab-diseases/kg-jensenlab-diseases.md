@@ -11,7 +11,8 @@ contacts:
   - contact_type: github
     value: colleenXu
   label: "Colleen Xu"
-description: An ingest of Jensen Lab's DISEASES resource, for Translator use 
+description: >-
+  An ingest of Jensen Lab's DISEASES resource, for Translator use
   (NodeNormed, output in Translator standards)
 domains:
 - health
