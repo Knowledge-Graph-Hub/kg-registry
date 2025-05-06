@@ -929,6 +929,11 @@ enums:
         description: >-
           The SQLite relational database management system.
           If a product is in this format, it is likely a SQLite database dump.
+      trapi-jsonl:
+        description: >-
+          The Translator Reasoner API (TRAPI) format, which is a JSON Lines format
+          for TRAPI responses.
+        meaning: https://raw.githubusercontent.com/NCATSTranslator/ReasonerAPI/refs/heads/master/TranslatorReasonerAPI.yaml
 
   StandardEnum:
     description: >-

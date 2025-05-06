@@ -247,6 +247,8 @@ class FormatEnum(str, Enum):
     mysql = "mysql"
     # The SQLite relational database management system. If a product is in this format, it is likely a SQLite database dump.
     sqlite = "sqlite"
+    # The Translator Reasoner API (TRAPI) format, which is a JSON Lines format for TRAPI responses.
+    trapi_jsonl = "trapi-jsonl"
 
 
 class StandardEnum(str, Enum):
