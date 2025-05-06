@@ -906,7 +906,8 @@
                 "http",
                 "postgres",
                 "mysql",
-                "sqlite"
+                "sqlite",
+                "trapi-jsonl"
             ],
             "title": "FormatEnum",
             "type": "string"
