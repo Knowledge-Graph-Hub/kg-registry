@@ -18,6 +18,7 @@ domains:
 id: kg-jensenlab-diseases
 layout: resource_detail
 name: JensenLab DISEASES KG
+repository: https://github.com/biothings/pending.api/tree/translator-output/plugins/DISEASES
 products:
 - category: GraphProduct
   description: KGX nodes file for JensenLab DISEASES KG
