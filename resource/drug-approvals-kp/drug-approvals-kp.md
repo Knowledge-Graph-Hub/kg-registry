@@ -20,7 +20,7 @@ layout: resource_detail
 name: Drug Approvals KP
 products:
 - category: GraphProduct
-  description: Nodes for the Drug Approvals KP, v0.3.7
+  description: Nodes for the Drug Approvals KP, v0.3.9
   format: kgx
   id: drug-approvals-kp.graph.nodes
   name: Drug Approvals KP Graph Nodes
@@ -29,20 +29,20 @@ products:
   - do
   - hp
   - mondo
-  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
+  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
   secondary_source:
   - drug-approvals-kp
 - category: GraphProduct
-  description: Nodes for the Drug Approvals KP, v0.3.7
+  description: Edges for the Drug Approvals KP, v0.3.9
   format: kgx
   id: drug-approvals-kp.graph.edges
-  name: Drug Approvals KP Graph Nodes
+  name: Drug Approvals KP Graph Edges
   original_source:
   - chebi
   - do
   - hp
   - mondo
-  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
+  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
   secondary_source:
   - drug-approvals-kp
 - category: ProcessProduct
