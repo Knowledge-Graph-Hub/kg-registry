@@ -1,5 +1,6 @@
 Resource,Activity Status,Validation Status
 automat,active,PASS
+bgee,active,PASS
 bigg,active,PASS
 biocyc,active,PASS
 biolink,active,PASS
@@ -7,6 +8,7 @@ biomarkerkg,active,PASS
 bioteque,active,PASS
 cam-kp,active,PASS
 ccle,active,PASS
+cellosaurus,active,PASS
 cfde-ddkg,active,PASS
 cgnc,active,PASS
 chebi,active,PASS
@@ -30,6 +32,7 @@ ecosim,active,PASS
 genetics-kp,active,PASS
 genomickb,active,PASS
 glkb,active,PASS
+glyconnect,active,PASS
 glygen,active,PASS
 go,active,PASS
 go-cam,active,PASS
@@ -54,6 +57,7 @@ kgcl,active,PASS
 m-csa,active,PASS
 medkg,active,PASS
 metacyc,active,PASS
+metanetx,active,PASS
 mgmlink,active,PASS
 mixs,active,PASS
 molecular-data-kp,active,PASS
@@ -63,8 +67,10 @@ neo,active,PASS
 nlm-ckn,active,PASS
 np-kg,active,PASS
 obo-db-ingest,active,PASS
+oma,active,PASS
 ontology-kp,active,PASS
 orcid,active,PASS
+orthodb,active,PASS
 pankbase,active,PASS
 panther,active,PASS
 petagraph,active,PASS
@@ -84,6 +90,7 @@ rtx-kg2,active,PASS
 scibite,active,PASS
 service-kp,active,PASS
 sgd,active,PASS
+sibils,active,PASS
 sldb,active,PASS
 spoke,active,PASS
 sri-reference-kg,active,PASS
