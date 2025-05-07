@@ -197,6 +197,190 @@ resources:
   category: DataSource
   contacts:
   - category: Organization
+    contact_details:
+    - contact_type: email
+      value: bgee@sib.swiss
+    - contact_type: url
+      value: https://www.bgee.org/contact/
+    label: Bgee Team - SIB Swiss Institute of Bioinformatics
+  description: Bgee is a database for retrieval and comparison of gene expression
+    patterns across multiple animal species, providing information about gene expression
+    in different anatomical structures, developmental stages, and species.
+  domains:
+  - biological systems
+  - organisms
+  homepage_url: https://www.bgee.org/
+  id: bgee
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: Bgee - Gene Expression Database
+  products:
+  - category: GraphicalInterface
+    description: Web interface for exploring Bgee data
+    id: bgee.site
+    is_public: true
+    name: Bgee Web Interface
+    original_source:
+    - bgee
+    product_url: https://www.bgee.org/
+    secondary_source:
+    - bgee
+  - category: ProgrammingInterface
+    description: SPARQL endpoint for querying Bgee RDF data
+    id: bgee.sparql
+    is_public: true
+    name: Bgee SPARQL Endpoint
+    original_source:
+    - bgee
+    product_url: https://www.bgee.org/sparql/
+    secondary_source:
+    - bgee
+  - category: Product
+    compression: zip
+    description: Complete data dump of Bgee expression data for all species
+    format: tsv
+    id: bgee.expr_calls
+    name: Bgee Expression Calls
+    original_source:
+    - bgee
+    product_url: https://www.bgee.org/download/data-dumps/current/expr_calls/
+    secondary_source:
+    - bgee
+  - category: Product
+    compression: zip
+    description: RNA-Seq data processed and formatted for the Bgee database
+    format: tsv
+    id: bgee.rnaseq
+    name: Bgee RNA-Seq Data
+    original_source:
+    - bgee
+    product_url: https://www.bgee.org/download/data-dumps/current/rna_seq/
+    secondary_source:
+    - bgee
+  - category: Product
+    compression: zip
+    description: Processed Affymetrix microarray data for the Bgee database
+    format: tsv
+    id: bgee.affymetrix
+    name: Bgee Affymetrix Data
+    original_source:
+    - bgee
+    product_url: https://www.bgee.org/download/data-dumps/current/affymetrix/
+    secondary_source:
+    - bgee
+  - category: Product
+    compression: zip
+    description: In Situ Hybridization data in the Bgee database
+    format: tsv
+    id: bgee.in_situ
+    name: Bgee In Situ Hybridization Data
+    original_source:
+    - bgee
+    product_url: https://www.bgee.org/download/data-dumps/current/in_situ/
+    secondary_source:
+    - bgee
+  - category: Product
+    compression: zip
+    description: EST (Expressed Sequence Tag) expression data in the Bgee database
+    format: tsv
+    id: bgee.est
+    name: Bgee EST Data
+    original_source:
+    - bgee
+    product_url: https://www.bgee.org/download/data-dumps/current/est/
+    secondary_source:
+    - bgee
+  - category: Product
+    compression: zip
+    description: Single-cell RNA-Seq processed data in the Bgee database
+    format: tsv
+    id: bgee.sc_rnaseq
+    name: Bgee Single-cell RNA-Seq Data
+    original_source:
+    - bgee
+    product_url: https://www.bgee.org/download/data-dumps/current/sc_rnaseq/
+    secondary_source:
+    - bgee
+  - category: Product
+    compression: zip
+    description: Anatomical homology information used in Bgee
+    format: tsv
+    id: bgee.homology
+    name: Bgee Anatomical Homology Data
+    original_source:
+    - bgee
+    product_url: https://www.bgee.org/download/data-dumps/current/homology/
+    secondary_source:
+    - bgee
+  - category: Product
+    compression: zip
+    description: RDF version of the Bgee data for semantic web applications
+    format: ttl
+    id: bgee.rdf
+    name: Bgee RDF Data
+    original_source:
+    - bgee
+    product_url: https://www.bgee.org/download/data-dumps/current/rdf/
+    secondary_source:
+    - bgee
+  publications:
+  - authors:
+    - Bastian FB
+    - Brandulas Cammarata A
+    - Carsanaro S
+    - Detering H
+    - Huang W-T
+    - Joye S
+    - Niknejad A
+    - Nyamari M
+    - Mendes de Farias T
+    - Moretti S
+    - Tzivanopoulou M
+    - Wollbrett J
+    - Robinson-Rechavi M
+    doi: doi:10.1093/nar/gkae1118
+    id: doi:10.1093/nar/gkae1118
+    preferred: true
+    title: Bgee in 2024 - focus on curated single-cell RNA-seq datasets, and query
+      tools
+    year: '2025'
+  - authors:
+    - Bastian FB
+    - Roux J
+    - Niknejad A
+    - Comte A
+    - Fonseca Costa SS
+    - de Farias TM
+    - Moretti S
+    - Parmentier G
+    - de Laval VR
+    - Rosikiewicz M
+    - Wollbrett J
+    - Echchiki A
+    - Escoriza A
+    - Gharib WH
+    - Gonzales-Porta M
+    - Jarosz Y
+    - Laurenczy B
+    - Moret P
+    - Person E
+    - Roelli P
+    - Sanjeev K
+    - Seppey M
+    - Robinson-Rechavi M
+    doi: doi:10.1093/nar/gkaa793
+    id: doi:10.1093/nar/gkaa793
+    title: The Bgee suite - integrated curated expression atlas and comparative transcriptomics
+      in animals
+    year: '2021'
+  repository: https://github.com/BgeeDB/bgee_apps
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
     label: Systems Biology Research Group at the University of California, San Diego
   description: BiGG Models is a knowledgebase of genome-scale metabolic network reconstructions.
   domains:
@@ -915,6 +1099,126 @@ resources:
     secondary_source:
     - obo-db-ingest
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: amos.bairoch@sib.swiss
+    label: Amos Bairoch
+    orcid: 0000-0002-2261-7130
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://web.expasy.org/groups/calipho/
+    - contact_type: email
+      value: cellosaurus@sib.swiss
+    label: CALIPHO Group - SIB Swiss Institute of Bioinformatics
+  description: Cellosaurus is a knowledge resource on cell lines providing information
+    on cell lines from vertebrates, invertebrates, and plants, including standardized
+    nomenclature, cross-references to other databases, and information on problematic
+    cell lines.
+  domains:
+  - biological systems
+  - health
+  homepage_url: https://www.cellosaurus.org/
+  id: cellosaurus
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: Cellosaurus
+  products:
+  - category: GraphicalInterface
+    description: Web interface for searching and exploring Cellosaurus data
+    id: cellosaurus.site
+    is_public: true
+    name: Cellosaurus Web Interface
+    original_source:
+    - cellosaurus
+    product_url: https://www.cellosaurus.org/
+    secondary_source:
+    - cellosaurus
+  - category: Product
+    description: Complete Cellosaurus data in flat text format
+    format: tsv
+    id: cellosaurus.txt
+    name: Cellosaurus Text
+    original_source:
+    - cellosaurus
+    product_url: https://ftp.expasy.org/databases/cellosaurus/cellosaurus.txt
+    secondary_source:
+    - cellosaurus
+  - category: Product
+    description: Cellosaurus data in XML format
+    format: xml
+    id: cellosaurus.xml
+    name: Cellosaurus XML
+    original_source:
+    - cellosaurus
+    product_url: https://ftp.expasy.org/databases/cellosaurus/cellosaurus.xml
+    secondary_source:
+    - cellosaurus
+  - category: MappingProduct
+    description: Cellosaurus cross-references in tab-delimited format
+    format: tsv
+    id: cellosaurus.xrefs
+    name: Cellosaurus Cross-references
+    original_source:
+    - cellosaurus
+    product_url: https://ftp.expasy.org/databases/cellosaurus/cellosaurus_xrefs.tsv
+    secondary_source:
+    - cellosaurus
+  - category: Product
+    description: Complete Cellosaurus data in RDF format using the Turtle syntax
+    format: ttl
+    id: cellosaurus.rdf
+    name: Cellosaurus RDF
+    original_source:
+    - cellosaurus
+    product_url: https://ftp.expasy.org/databases/cellosaurus/cellosaurus.ttl
+    secondary_source:
+    - cellosaurus
+  - category: ProgrammingInterface
+    description: RESTful API for programmatic access to Cellosaurus data
+    id: cellosaurus.api.rest
+    is_public: true
+    name: Cellosaurus API
+    original_source:
+    - cellosaurus
+    product_url: https://api.cellosaurus.org/
+    secondary_source:
+    - cellosaurus
+  - category: ProgrammingInterface
+    description: SPARQL endpoint for querying Cellosaurus RDF data
+    id: cellosaurus.api.sparql
+    is_public: true
+    name: Cellosaurus SPARQL Endpoint
+    original_source:
+    - cellosaurus
+    product_url: https://api.cellosaurus.org/sparql-editor
+    secondary_source:
+    - cellosaurus
+  - category: ProcessProduct
+    description: CLASTR tool for STR similarity search across cell lines
+    id: cellosaurus.clastr
+    name: CLASTR STR Similarity Search
+    original_source:
+    - cellosaurus
+    product_url: https://www.cellosaurus.org/str-search/
+    secondary_source:
+    - cellosaurus
+  publications:
+  - authors:
+    - Bairoch A
+    doi: doi:10.7171/jbt.18-2902-002
+    id: doi:10.7171/jbt.18-2902-002
+    preferred: true
+    title: The Cellosaurus, a cell-line knowledge resource
+    year: '2018'
+  repository: https://github.com/calipho-sib/cellosaurus
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -1124,6 +1428,32 @@ resources:
     - hp
     - mondo
     product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
+    secondary_source:
+    - drug-approvals-kp
+  - category: GraphProduct
+    description: Nodes for the Drug Approvals KP, v0.3.9
+    format: kgx
+    id: drug-approvals-kp.graph.nodes
+    name: Drug Approvals KP Graph Nodes
+    original_source:
+    - chebi
+    - do
+    - hp
+    - mondo
+    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
+    secondary_source:
+    - drug-approvals-kp
+  - category: GraphProduct
+    description: Edges for the Drug Approvals KP, v0.3.9
+    format: kgx
+    id: drug-approvals-kp.graph.edges
+    name: Drug Approvals KP Graph Edges
+    original_source:
+    - chebi
+    - do
+    - hp
+    - mondo
+    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
     secondary_source:
     - drug-approvals-kp
   repository: https://github.com/ebi-chebi/ChEBI
@@ -1664,6 +1994,32 @@ resources:
     product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.nodes.zip
     secondary_source:
     - biomarkerkg
+  - category: GraphProduct
+    description: Nodes for the Drug Approvals KP, v0.3.9
+    format: kgx
+    id: drug-approvals-kp.graph.nodes
+    name: Drug Approvals KP Graph Nodes
+    original_source:
+    - chebi
+    - do
+    - hp
+    - mondo
+    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
+    secondary_source:
+    - drug-approvals-kp
+  - category: GraphProduct
+    description: Edges for the Drug Approvals KP, v0.3.9
+    format: kgx
+    id: drug-approvals-kp.graph.edges
+    name: Drug Approvals KP Graph Edges
+    original_source:
+    - chebi
+    - do
+    - hp
+    - mondo
+    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
+    secondary_source:
+    - drug-approvals-kp
   repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 - activity_status: active
   category: KnowledgeGraph
@@ -1717,6 +2073,41 @@ resources:
   name: Drug Approvals KP
   products:
   - category: GraphProduct
+    description: Nodes for the Drug Approvals KP, v0.3.9
+    format: kgx
+    id: drug-approvals-kp.graph.nodes
+    name: Drug Approvals KP Graph Nodes
+    original_source:
+    - chebi
+    - do
+    - hp
+    - mondo
+    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
+    secondary_source:
+    - drug-approvals-kp
+  - category: GraphProduct
+    description: Edges for the Drug Approvals KP, v0.3.9
+    format: kgx
+    id: drug-approvals-kp.graph.edges
+    name: Drug Approvals KP Graph Edges
+    original_source:
+    - chebi
+    - do
+    - hp
+    - mondo
+    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
+    secondary_source:
+    - drug-approvals-kp
+  - category: ProcessProduct
+    description: Code for the Drug Approvals KP
+    id: drug-approvals-kp.code
+    name: Drug Approvals KP code
+    original_source:
+    - drug-approvals-kp
+    product_url: https://github.com/multiomicsKP/drug_approvals_kp
+    secondary_source:
+    - drug-approvals-kp
+  - category: GraphProduct
     description: Nodes for the Drug Approvals KP, v0.3.7
     format: kgx
     id: drug-approvals-kp.graph.nodes
@@ -1740,15 +2131,6 @@ resources:
     - hp
     - mondo
     product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
-    secondary_source:
-    - drug-approvals-kp
-  - category: ProcessProduct
-    description: Code for the Drug Approvals KP
-    id: drug-approvals-kp.code
-    name: Drug Approvals KP code
-    original_source:
-    - drug-approvals-kp
-    product_url: https://github.com/multiomicsKP/drug_approvals_kp
     secondary_source:
     - drug-approvals-kp
   repository: https://github.com/multiomicsKP/drug_approvals_kp
@@ -2072,6 +2454,104 @@ resources:
     id: doi:10.1101/2024.09.22.614323
     title: Building a literature knowledge base towards transparent biomedical AI
     year: '2025'
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: glyconnect@sib.swiss
+    - contact_type: url
+      value: https://glyconnect.expasy.org/
+    label: GlyConnect Team - SIB Swiss Institute of Bioinformatics
+  description: GlyConnect is a knowledgebase of glycoproteins spanning protein, glycosite
+    and glycan information, with data on various species, tissues, and disease associations.
+  domains:
+  - biological systems
+  - chemistry and biochemistry
+  homepage_url: https://glyconnect.expasy.org/
+  id: glyconnect
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: GlyConnect
+  products:
+  - category: GraphicalInterface
+    description: Web interface for exploring GlyConnect data
+    id: glyconnect.site
+    is_public: true
+    name: GlyConnect Web Interface
+    original_source:
+    - glyconnect
+    product_url: https://glyconnect.expasy.org/
+    secondary_source:
+    - glyconnect
+  - category: ProgrammingInterface
+    description: RESTful API for accessing GlyConnect data
+    id: glyconnect.api.rest
+    is_public: true
+    name: GlyConnect RESTful API
+    original_source:
+    - glyconnect
+    product_url: https://glyconnect.expasy.org/api
+    secondary_source:
+    - glyconnect
+  - category: ProgrammingInterface
+    description: SPARQL endpoint for querying GlyConnect RDF data
+    id: glyconnect.api.sparql
+    is_public: true
+    name: GlyConnect SPARQL Endpoint
+    original_source:
+    - glyconnect
+    product_url: https://glyconnect.expasy.org/rdf
+    secondary_source:
+    - glyconnect
+  - category: Product
+    description: Compositions dataset containing glycan compositions
+    format: csv
+    id: glyconnect.compositions
+    name: GlyConnect Glycan Compositions
+    original_source:
+    - glyconnect
+    product_url: https://glyconnect.expasy.org/downloads/compositions/
+    secondary_source:
+    - glyconnect
+  - category: Product
+    description: Immunoglobulins dataset containing glycans commonly found on immunoglobulins
+    format: csv
+    id: glyconnect.immunoglobulins
+    name: GlyConnect Immunoglobulins Dataset
+    original_source:
+    - glyconnect
+    product_url: https://glyconnect.expasy.org/downloads/Immunoglobulins/
+    secondary_source:
+    - glyconnect
+  - category: Product
+    description: RDF version of the GlyConnect data for semantic web applications
+    format: ttl
+    id: glyconnect.rdf
+    name: GlyConnect RDF Data
+    original_source:
+    - glyconnect
+    product_url: https://glyconnect.expasy.org/downloads/rdf/
+    secondary_source:
+    - glyconnect
+  publications:
+  - authors:
+    - Alocci D
+    - Mariethoz J
+    - Gastaldello A
+    - Gasteiger E
+    - Karlsson NG
+    - Kolarich D
+    - Packer NH
+    - Lisacek F
+    doi: doi:10.1021/acs.jproteome.8b00766
+    id: doi:10.1021/acs.jproteome.8b00766
+    title: 'GlyConnect: Glycoproteomics Goes Visual, Interactive, and Analytical'
+    year: '2019'
 - activity_status: active
   category: DataSource
   contacts:
@@ -2838,6 +3318,32 @@ resources:
     product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
     secondary_source:
     - mondo
+  - category: GraphProduct
+    description: Nodes for the Drug Approvals KP, v0.3.9
+    format: kgx
+    id: drug-approvals-kp.graph.nodes
+    name: Drug Approvals KP Graph Nodes
+    original_source:
+    - chebi
+    - do
+    - hp
+    - mondo
+    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
+    secondary_source:
+    - drug-approvals-kp
+  - category: GraphProduct
+    description: Edges for the Drug Approvals KP, v0.3.9
+    format: kgx
+    id: drug-approvals-kp.graph.edges
+    name: Drug Approvals KP Graph Edges
+    original_source:
+    - chebi
+    - do
+    - hp
+    - mondo
+    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
+    secondary_source:
+    - drug-approvals-kp
   repository: https://github.com/obophenotype/human-phenotype-ontology
 - activity_status: active
   category: KnowledgeGraph
@@ -3613,6 +4119,130 @@ resources:
     secondary_source:
     - obo-db-ingest
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: help@metanetx.org
+    - contact_type: url
+      value: https://www.metanetx.org/
+    label: MetaNetX Team - SIB Swiss Institute of Bioinformatics
+  description: MetaNetX is an online platform for accessing, analyzing, and manipulating
+    genome-scale metabolic networks (GSM) and biochemical pathways, integrating data
+    from multiple sources with a unified namespace for metabolites and biochemical
+    reactions.
+  domains:
+  - biological systems
+  - chemistry and biochemistry
+  homepage_url: https://www.metanetx.org/
+  id: metanetx
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: MetaNetX
+  products:
+  - category: GraphicalInterface
+    description: Web interface for exploring and analyzing metabolic networks
+    id: metanetx.site
+    is_public: true
+    name: MetaNetX Web Interface
+    original_source:
+    - metanetx
+    product_url: https://www.metanetx.org/
+    secondary_source:
+    - metanetx
+  - category: ProgrammingInterface
+    description: SPARQL endpoint for querying MetaNetX RDF data
+    id: metanetx.sparql
+    is_public: true
+    name: MetaNetX SPARQL Endpoint
+    original_source:
+    - metanetx
+    product_url: https://rdf.metanetx.org/
+    secondary_source:
+    - metanetx
+  - category: Product
+    description: MNXref unified namespace for metabolites across databases
+    format: tsv
+    id: metanetx.mnxref.metabolites
+    name: MetaNetX MNXref Metabolites
+    original_source:
+    - metanetx
+    product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/chem_xref.tsv
+    secondary_source:
+    - metanetx
+  - category: Product
+    description: MNXref unified namespace for reactions across databases
+    format: tsv
+    id: metanetx.mnxref.reactions
+    name: MetaNetX MNXref Reactions
+    original_source:
+    - metanetx
+    product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/reac_xref.tsv
+    secondary_source:
+    - metanetx
+  - category: Product
+    compression: gzip
+    description: RDF version of the MetaNetX data for semantic web applications
+    format: ttl
+    id: metanetx.rdf
+    name: MetaNetX RDF Data
+    original_source:
+    - metanetx
+    product_url: https://www.metanetx.org/ftp/latest/metanetx.ttl.gz
+    secondary_source:
+    - metanetx
+  publications:
+  - authors:
+    - Moretti S
+    - Tran VDT
+    - Mehl F
+    - Ibberson M
+    - Pagni M
+    doi: doi:10.1093/nar/gkaa992
+    id: doi:10.1093/nar/gkaa992
+    preferred: true
+    title: MetaNetX/MNXref - unified namespace for metabolites and biochemical reactions
+      in the context of metabolic models
+    year: '2021'
+  - authors:
+    - Moretti S
+    - Martin O
+    - Tran VDT
+    - Bridge A
+    - Morgat A
+    - Pagni M
+    doi: doi:10.1093/nar/gkv1117
+    id: doi:10.1093/nar/gkv1117
+    title: MetaNetX/MNXref - reconciliation of metabolites and biochemical reactions
+      to bring together genome-scale metabolic networks
+    year: '2016'
+  - authors:
+    - Ganter M
+    - Bernard T
+    - Moretti S
+    - Stelling J
+    - Pagni M
+    doi: doi:10.1093/bioinformatics/btt036
+    id: doi:10.1093/bioinformatics/btt036
+    title: MetaNetX.org - a website and repository for accessing, analysing and manipulating
+      metabolic networks
+    year: '2013'
+  - authors:
+    - Bernard T
+    - Bridge A
+    - Morgat A
+    - Moretti S
+    - Xenarios I
+    - Pagni M
+    doi: doi:10.1093/bib/bbs058
+    id: doi:10.1093/bib/bbs058
+    title: Reconciliation of metabolites and biochemical reactions for metabolic networks
+    year: '2014'
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -3842,6 +4472,32 @@ resources:
     - hp
     - mondo
     product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
+    secondary_source:
+    - drug-approvals-kp
+  - category: GraphProduct
+    description: Nodes for the Drug Approvals KP, v0.3.9
+    format: kgx
+    id: drug-approvals-kp.graph.nodes
+    name: Drug Approvals KP Graph Nodes
+    original_source:
+    - chebi
+    - do
+    - hp
+    - mondo
+    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
+    secondary_source:
+    - drug-approvals-kp
+  - category: GraphProduct
+    description: Edges for the Drug Approvals KP, v0.3.9
+    format: kgx
+    id: drug-approvals-kp.graph.edges
+    name: Drug Approvals KP Graph Edges
+    original_source:
+    - chebi
+    - do
+    - hp
+    - mondo
+    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
     secondary_source:
     - drug-approvals-kp
   repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
@@ -6298,6 +6954,173 @@ resources:
     - obo-db-ingest
   repository: https://github.com/biopragmatics/obo-db-ingest
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: contact@omabrowser.org
+    - contact_type: url
+      value: https://omabrowser.org/contact/
+    label: OMA Team - SIB Swiss Institute of Bioinformatics
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: adrian.altenhoff@inf.ethz.ch
+    - contact_type: url
+      value: https://omabrowser.org/oma/team/
+    label: Adrian Altenhoff
+  description: OMA (Orthologous MAtrix) is a database of orthologous genes among multiple
+    species, providing a systematic classification of orthologs across complete genomes.
+  domains:
+  - biological systems
+  - organisms
+  homepage_url: https://omabrowser.org/
+  id: oma
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: OMA
+  products:
+  - category: GraphicalInterface
+    description: Web interface for exploring OMA data
+    id: oma.site
+    is_public: true
+    name: OMA Browser
+    original_source:
+    - oma
+    product_url: https://omabrowser.org/oma/
+    secondary_source:
+    - oma
+  - category: ProgrammingInterface
+    description: RESTful API for accessing OMA data
+    id: oma.api.rest
+    is_public: true
+    name: OMA REST API
+    original_source:
+    - oma
+    product_url: https://omabrowser.org/api/
+    secondary_source:
+    - oma
+  - category: ProgrammingInterface
+    description: SPARQL endpoint for accessing OMA data
+    id: oma.api.sparql
+    is_public: true
+    name: OMA SPARQL
+    original_source:
+    - oma
+    product_url: https://sparql.omabrowser.org/lode/sparql
+    secondary_source:
+    - oma
+  - category: Product
+    compression: gzip
+    description: OMA orthology groups in plain text format
+    id: oma.groups.txt
+    name: OMA Groups (Text)
+    original_source:
+    - oma
+    product_url: https://omabrowser.org/oma/current/OmaGroups.txt.gz
+    secondary_source:
+    - oma
+  - category: Product
+    description: OMA orthology groups in OrthoXML format
+    format: xml
+    id: oma.groups.orthoxml
+    name: OMA Groups (OrthoXML)
+    original_source:
+    - oma
+    product_url: https://omabrowser.org/oma/current/OmaGroups.orthoxml
+    secondary_source:
+    - oma
+  - category: Product
+    description: Hierarchical Orthologous Groups (HOGs) in OrthoXML format
+    format: xml
+    id: oma.hogs.orthoxml
+    name: OMA HOGs (OrthoXML)
+    original_source:
+    - oma
+    product_url: https://omabrowser.org/oma/current/OmaHOGs.orthoxml
+    secondary_source:
+    - oma
+  - category: Product
+    compression: gzip
+    description: Pairwise orthologs in tab-separated text format
+    format: tsv
+    id: oma.pairs.txt
+    name: OMA Pairwise Orthologs
+    original_source:
+    - oma
+    product_url: https://omabrowser.org/oma/current/OrthologousPairs.txt.gz
+    secondary_source:
+    - oma
+  - category: Product
+    compression: gzip
+    description: Protein sequences from all genomes in FASTA format
+    format: fasta
+    id: oma.proteins.fasta
+    name: OMA Protein Sequences
+    original_source:
+    - oma
+    product_url: https://omabrowser.org/oma/current/oma-proteins.fa.gz
+    secondary_source:
+    - oma
+  - category: Product
+    compression: gzip
+    description: cDNA sequences for Eukaryotic genomes in FASTA format
+    format: fasta
+    id: oma.cdna.eukaryotes.fasta
+    name: OMA cDNA Sequences (Eukaryotes)
+    original_source:
+    - oma
+    product_url: https://omabrowser.org/oma/current/oma-eukaryotes.cdna.fa.gz
+    secondary_source:
+    - oma
+  - category: Product
+    compression: gzip
+    description: cDNA sequences for Prokaryotic genomes in FASTA format
+    format: fasta
+    id: oma.cdna.prokaryotes.fasta
+    name: OMA cDNA Sequences (Prokaryotes)
+    original_source:
+    - oma
+    product_url: https://omabrowser.org/oma/current/oma-prokaryotes.cdna.fa.gz
+    secondary_source:
+    - oma
+  - category: Product
+    description: OMA Browser database in HDF5 format
+    id: oma.hdf5
+    name: OMA Browser Database (HDF5)
+    original_source:
+    - oma
+    product_url: https://omabrowser.org/oma/current/OmaServer.h5
+    secondary_source:
+    - oma
+  - category: Product
+    compression: gzip
+    description: OMA data in RDF format (Turtle syntax)
+    format: ttl
+    id: oma.rdf
+    name: OMA RDF Data
+    original_source:
+    - oma
+    product_url: https://omabrowser.org/oma/current/OMA.ttl.gz
+    secondary_source:
+    - oma
+  - category: MappingProduct
+    compression: gzip
+    description: Mapping of OMA identifiers to UniProt accession numbers
+    format: tsv
+    id: oma.mapping.uniprot
+    name: OMA to UniProt Mapping
+    original_source:
+    - oma
+    - uniprot
+    product_url: https://omabrowser.org/oma/current/oma-uniprot.txt.gz
+    secondary_source:
+    - oma
+- activity_status: active
   category: KnowledgeGraph
   collection:
   - translator
@@ -6328,6 +7151,181 @@ resources:
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
   name: ORCID
   repository: https://github.com/ORCID
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: support@orthodb.org
+    - contact_type: url
+      value: https://www.orthodb.org/
+    label: Evgeny Zdobnov Lab - SIB Swiss Institute of Bioinformatics
+  description: OrthoDB is a comprehensive database of orthologous protein-coding genes
+    across multiple species, providing evolutionary and functional annotations of
+    orthologous groups.
+  domains:
+  - biological systems
+  - organisms
+  homepage_url: https://www.orthodb.org/
+  id: orthodb
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: OrthoDB
+  products:
+  - category: GraphicalInterface
+    description: Web interface for exploring OrthoDB data
+    id: orthodb.site
+    is_public: true
+    name: OrthoDB Web Interface
+    original_source:
+    - orthodb
+    product_url: https://www.orthodb.org/
+    secondary_source:
+    - orthodb
+  - category: ProgrammingInterface
+    description: SPARQL endpoint for querying OrthoDB data
+    id: orthodb.api.sparql
+    is_public: true
+    name: OrthoDB SPARQL Endpoint
+    original_source:
+    - orthodb
+    product_url: https://sparql.orthodb.org/
+    secondary_source:
+    - orthodb
+  - category: ProgrammingInterface
+    description: RESTful API for programmatic access to OrthoDB data
+    id: orthodb.api.rest
+    is_public: true
+    name: OrthoDB API
+    original_source:
+    - orthodb
+    product_url: https://www.orthodb.org/api/
+    secondary_source:
+    - orthodb
+  - category: Product
+    compression: gzip
+    description: Tab-separated file with species information based on NCBI taxonomy
+    format: tsv
+    id: orthodb.species
+    name: OrthoDB Species Data
+    original_source:
+    - orthodb
+    product_url: https://data.orthodb.org/current/download/odb12v1_species.tab.gz
+    secondary_source:
+    - orthodb
+  - category: Product
+    compression: gzip
+    description: Tab-separated file with information about orthologous groups
+    format: tsv
+    id: orthodb.ogs
+    name: OrthoDB Orthologous Groups
+    original_source:
+    - orthodb
+    product_url: https://data.orthodb.org/current/download/odb12v1_OGs.tab.gz
+    secondary_source:
+    - orthodb
+  - category: MappingProduct
+    compression: gzip
+    description: Tab-separated file mapping orthologous groups to genes
+    format: tsv
+    id: orthodb.og2genes
+    name: OrthoDB OG to Genes Mapping
+    original_source:
+    - orthodb
+    product_url: https://data.orthodb.org/current/download/odb12v1_OG2genes.tab.gz
+    secondary_source:
+    - orthodb
+  - category: Product
+    compression: gzip
+    description: Tab-separated file with gene information and annotations
+    format: tsv
+    id: orthodb.genes
+    name: OrthoDB Genes Data
+    original_source:
+    - orthodb
+    product_url: https://data.orthodb.org/current/download/odb12v1_genes.tab.gz
+    secondary_source:
+    - orthodb
+  - category: MappingProduct
+    compression: gzip
+    description: Tab-separated file with gene cross-references to other databases
+    format: tsv
+    id: orthodb.gene_xrefs
+    name: OrthoDB Gene Cross-references
+    original_source:
+    - orthodb
+    product_url: https://data.orthodb.org/current/download/odb12v1_gene_xrefs.tab.gz
+    secondary_source:
+    - orthodb
+  - category: Product
+    compression: gzip
+    description: Tab-separated file with orthologous group functional annotations
+      including GO, COG, and InterPro
+    format: tsv
+    id: orthodb.og_xrefs
+    name: OrthoDB OG Functional Annotations
+    original_source:
+    - orthodb
+    product_url: https://data.orthodb.org/current/download/odb12v1_OG_xrefs.tab.gz
+    secondary_source:
+    - orthodb
+  - category: Product
+    compression: gzip
+    description: FASTA-formatted amino acid sequences for all genes
+    format: fasta
+    id: orthodb.aa_fasta
+    name: OrthoDB Protein Sequences
+    original_source:
+    - orthodb
+    product_url: https://data.orthodb.org/current/download/odb12v1_aa_fasta.gz
+    secondary_source:
+    - orthodb
+  - category: Product
+    compression: gzip
+    description: FASTA-formatted coding sequences for all genes
+    format: fasta
+    id: orthodb.cds_fasta
+    name: OrthoDB CDS Sequences
+    original_source:
+    - orthodb
+    product_url: https://data.orthodb.org/current/download/odb12v1_cds_fasta.gz
+    secondary_source:
+    - orthodb
+  publications:
+  - authors:
+    - Kriventseva EV
+    - Kuznetsov D
+    - Tegenfeldt F
+    - Manni M
+    - Dias R
+    - Simão FA
+    - Zdobnov EM
+    doi: doi:10.1093/nar/gky1053
+    id: doi:10.1093/nar/gky1053
+    title: OrthoDB v10 - sampling the diversity of animal, plant, fungal, protist,
+      bacterial and viral genomes for evolutionary and functional annotations of orthologs
+    year: '2019'
+  - authors:
+    - Zdobnov EM
+    - Tegenfeldt F
+    - Kuznetsov D
+    - Waterhouse RM
+    - Simão FA
+    - Ioannidis P
+    - Seppey M
+    - Loetscher A
+    - Kriventseva EV
+    doi: doi:10.1093/nar/gkw1119
+    id: doi:10.1093/nar/gkw1119
+    preferred: true
+    title: OrthoDB v9.1 - cataloging evolutionary and functional annotations for animal,
+      fungal, plant, archaeal, bacterial and viral orthologs
+    year: '2017'
+  repository: https://github.com/zdobnov-lab/orthodb
 - activity_status: active
   category: DataSource
   contacts:
@@ -7429,6 +8427,100 @@ resources:
   layout: resource_detail
   name: Saccharomyces Genome Database
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: julien.gobeill@hesge.ch
+    label: Julien Gobeill
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://sibils.org/
+    label: SIBiLS - Swiss Institute of Bioinformatics Literature Services
+  description: SIBiLS (Swiss Institute of Bioinformatics Literature Services) provides
+    personalized information retrieval in biological literature, with customizable
+    search in semantically enriched contents based on keywords and mapped biomedical
+    entities from standardized vocabularies.
+  domains:
+  - biological systems
+  - health
+  homepage_url: https://sibils.org/
+  id: sibils
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/3.0/ch/
+    label: CC-BY-3.0-CH
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: SIBiLS
+  products:
+  - category: GraphicalInterface
+    description: Web interface for exploring SIBiLS data
+    id: sibils.site
+    is_public: true
+    name: SIBiLS Web Interface
+    original_source:
+    - sibils
+    product_url: https://sibils.org/
+    secondary_source:
+    - sibils
+  - category: ProgrammingInterface
+    description: SPARQL endpoint for querying SIBiLS data
+    id: sibils.api.sparql
+    is_public: true
+    name: SIBiLS SPARQL Endpoint
+    original_source:
+    - sibils
+    product_url: https://sparql.sibils.org/sparql
+    secondary_source:
+    - sibils
+  - category: ProgrammingInterface
+    description: RESTful API for fetching annotated contents from SIBiLS collections
+    id: sibils.api.rest.fetch
+    is_public: true
+    name: SIBiLS Fetch API
+    original_source:
+    - sibils
+    product_url: https://sibils.org/API#Fetch-API
+    secondary_source:
+    - sibils
+  - category: ProgrammingInterface
+    description: RESTful API for customizable search in SIBiLS collections
+    id: sibils.api.rest.search
+    is_public: true
+    name: SIBiLS Search API
+    original_source:
+    - sibils
+    product_url: https://sibils.org/API#Customizable-search-API
+    secondary_source:
+    - sibils
+  - category: ProgrammingInterface
+    description: RESTful API for question answering using natural language in SIBiLS
+      collections
+    id: sibils.api.rest.qa
+    is_public: true
+    name: SIBiLS Question Answering API
+    original_source:
+    - sibils
+    product_url: https://sibils.org/API#Question-Answering-API
+    secondary_source:
+    - sibils
+  publications:
+  - authors:
+    - Gobeill J
+    - Caucheteur D
+    - Michel PA
+    - Mottin L
+    - Pasche E
+    - Ruch P
+    doi: doi:10.1093/nar/gkaa328
+    id: doi:10.1093/nar/gkaa328
+    preferred: true
+    title: 'SIB Literature Services: RESTful customizable search engines in biomedical
+      literature, enriched with automatically mapped biomedical concepts'
+    year: '2020'
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -7779,6 +8871,18 @@ resources:
     product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_uniprot_mapping.txt
     secondary_source:
     - chembl
+  - category: MappingProduct
+    compression: gzip
+    description: Mapping of OMA identifiers to UniProt accession numbers
+    format: tsv
+    id: oma.mapping.uniprot
+    name: OMA to UniProt Mapping
+    original_source:
+    - oma
+    - uniprot
+    product_url: https://omabrowser.org/oma/current/oma-uniprot.txt.gz
+    secondary_source:
+    - oma
   repository: https://www.uniprot.org/help/downloads
 - activity_status: active
   category: DataSource
