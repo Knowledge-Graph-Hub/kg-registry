@@ -171,6 +171,7 @@ layout: default
           {% if c.label %}
           {% assign email = null %}
           {% assign github = null %}
+          {% assign url = null %}
           {% assign other_details = null %}
           {% if c.contact_details %}
           {% assign other_details = false %}
@@ -179,6 +180,8 @@ layout: default
           {% assign email = detail.value %}
           {% elsif detail.contact_type == 'github' %}
           {% assign github = detail.value %}
+          {% elsif detail.contact_type == 'url' %}
+          {% assign url = detail.value %}
           {% else %}
           {% assign other_details = true %}
           {% endif %}
@@ -187,6 +190,8 @@ layout: default
 
           {% if email %}
           <p><a href="mailto:{{email}}">{{c.label}}</a></p>
+          {% elsif url %}
+          <p><a href="{{url}}">{{c.label}}</a></p>
           {% else %}
           <p>{{c.label}}</p>
           {% endif %}
@@ -200,9 +205,13 @@ layout: default
           <p><strong>Github: </strong><a href="https://github.com/{{ github }}">{{ github }}</a></p>
           {% endif %}
 
+          {% if url %}
+          <p><strong>URL: </strong><a href="{{ url }}">{{ url }}</a></p>
+          {% endif %}
+
           {% if other_details %}
           {% for detail in c.contact_details %}
-          {% if detail.contact_type != 'email' and detail.contact_type != 'github' %}
+          {% if detail.contact_type != 'email' and detail.contact_type != 'github' and detail.contact_type != 'url' %}
           {% if detail.contact_type_url %}
           <p><strong>{{ detail.contact_type_name }}: </strong>{{ detail.value }} (<a
               href="{{ detail.contact_type_url }}">site</a>)</p>
