@@ -129,27 +129,29 @@ jQuery(document).ready(function() {
                 <table id="ont_table" class="table table-hover sortable">
                     <thead>
                         <tr>
-                            <th scope="col" style="min-width: 4em;">
+                            <th scope="col" style="width: 15%; vertical-align: middle;">
                                 <span class="sort-button" title="Sort by ID" data-sort="id" >
                                     ID <i class="bi-chevron-up" aria-hidden="true"></i>
                                 </span>
                             </th>
-                            <th scope="col">
+                            <th scope="col" style="width: 15%; vertical-align: middle;">
                                 <span class="sort-button" title="Sort by name" data-sort="name" >
                                     Name <i class="bi-chevron-up" aria-hidden="true"></i>
                                 </span>
                             </th>
-                            <th scope="col">
+                            <th scope="col" style="width: 30%; vertical-align: middle;">
                                 <span>Description</span>
                             </th>
-                            <th scope="col" style="width: 30px;"></th>
-                            <th scope="col">
+                            <th scope="col" style="width: 5%; vertical-align: middle;" class="text-center">
+                                <span title="Category Icon"></span>
+                            </th>
+                            <th scope="col" style="width: 15%; vertical-align: middle;">
                                 <span>Resource Type</span>
                             </th>
-                            <th scope="col">
+                            <th scope="col" style="width: 10%; vertical-align: middle;">
                                 <span>Quick Access</span>
                             </th>
-                            <th scope="col">
+                            <th scope="col" style="width: 10%; vertical-align: middle;">
                                 <span class="sort-button" title="Sort by status" data-sort="license" >
                                     License <i class="bi-chevron-up" aria-hidden="true"></i>
                                 </span>
@@ -184,25 +186,25 @@ jQuery(document).ready(function() {
         
         return `
             <tr class="${is_inactive}">
-                <th scope="row">
+                <th scope="row" style="vertical-align: middle;">
                     <a href="resource/${id}/${id}.html">
                         ${id}
                     </a>
-                </td>
-                <td>
+                </th>
+                <td style="vertical-align: middle;">
                     ${title}
                 </td>
-                <td>
+                <td style="vertical-align: middle;">
                     <span style="background-color: #ff8d82">${is_obsolete}</span>
                     ${description}
                 </td>
                 <td class="text-center" style="vertical-align: middle;">
                     <i class="bi bi-${iconName}" style="font-size: 1.75em; color: #0d6efd;"></i>
                 </td>
-                <td>
+                <td style="vertical-align: middle;">
                     ${resourcetype}
                 </td>
-                <td>
+                <td style="vertical-align: middle;">
                     <div class="btn-group btn-group-sm" role="group">
                         <a class="btn btn-outline-primary" href="${homepage}" aria-label="Go to the homepage for ${title}" title="Go to the homepage for ${title}">
                             <i class="bi-house" aria-hidden="true"></i>
@@ -210,7 +212,7 @@ jQuery(document).ready(function() {
                         ${createPublicationButton(item, title)}
                     </div>
                 </td>
-                <td>
+                <td style="vertical-align: middle;">
                     ${license_box}
                 </td>
             </tr>
