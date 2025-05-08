@@ -48,6 +48,7 @@ interpro,active,PASS
 kegg,active,PASS
 kg-alzheimers,active,PASS
 kg-covid-19,active,PASS
+kg-ebi-gene2pheno,active,PASS
 kg-enp,active,PASS
 kg-idg,active,PASS
 kg-jensenlab-diseases,active,PASS
