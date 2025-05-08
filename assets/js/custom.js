@@ -37,6 +37,16 @@ jQuery(document).ready(function () {
     const $ddDomains = $("#dd-domains");
     const $ddResourceTypes = $("#dd-resourcetypes");
     const $ddCollections = $("#dd-collections");
+    const $resourceCount = $("#resource-count");
+
+    // Update resource count display
+    function updateResourceCount(count, totalCount) {
+        if (count === totalCount) {
+            $resourceCount.text(count + " resources");
+        } else {
+            $resourceCount.text(count + " of " + totalCount + " resources");
+        }
+    }
 
     function search() {
         // Cache selectors inside search for efficiency
@@ -270,12 +280,22 @@ jQuery(document).ready(function () {
         // Show loading indicator right away
         $tableDiv.html('<div class="loading-indicator">Loading resources...</div>');
 
+        // Initialize total resource count
+        let totalCount = 0;
+        if (data && Array.isArray(data)) {
+            totalCount = data.length;
+        }
+
         // Check if data is valid before processing
         if (!data || !Array.isArray(data) || data.length === 0) {
             $tableDiv.html('<div class="alert alert-info">No resources found - please try another search.</div>');
             $tableMain.css('display', 'block');
+            updateResourceCount(0, totalCount);
             return;
         }
+
+        // Update resource count immediately
+        updateResourceCount(totalCount, totalCount);
 
         // Preprocess data before manipulation
         const processedData = data.map(item => {
@@ -322,8 +342,12 @@ jQuery(document).ready(function () {
         if (!processedData || !Array.isArray(processedData) || processedData.length === 0) {
             $tableDiv.html('<div class="alert alert-info">No resources found matching your criteria.</div>');
             $tableMain.css('display', 'block');
+            updateResourceCount(0, window.totalResourceCount || 0);
             return;
         }
+
+        // Update the count with filtered data length
+        updateResourceCount(processedData.length, window.totalResourceCount || processedData.length);
 
         let table = '';
         let domainTables = '';
@@ -518,6 +542,9 @@ jQuery(document).ready(function () {
         // Check for empty data to avoid errors
         if (!data || !data.resources) return;
 
+        // Store total count for reference in updating resource count
+        window.totalResourceCount = data.resources.length;
+
         // Filter in steps for better performance
         let filteredData = data.resources.filter(x => x.category !== undefined);
 
@@ -667,6 +694,10 @@ jQuery(document).ready(function () {
         .then((data) => {
             // Show table container immediately
             $tableMain.css('display', 'block');
+            
+            // Store total count and update display
+            window.totalResourceCount = data.resources.length;
+            updateResourceCount(data.resources.length, data.resources.length);
 
             // Extract domains (handling multi-valued domains)
             const domains = [...new Set(
@@ -746,5 +777,6 @@ jQuery(document).ready(function () {
         .catch(error => {
             console.error('Error loading data:', error);
             $tableDiv.html('<div class="alert alert-danger">Failed to load data. Please try refreshing the page.</div>');
+            updateResourceCount(0, 0);
         });
 });
