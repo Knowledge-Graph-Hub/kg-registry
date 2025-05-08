@@ -9,7 +9,7 @@ domains:
 category: KnowledgeGraph
 contacts:
 - category: Individual
-  label: Gustavo Glusman
+  label: Gwênlyn Glusman
 - category: Individual
   label: Guangrong Qin
 collection:
