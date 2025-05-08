@@ -16,7 +16,8 @@ contacts:
   - contact_type: url
     value: https://omabrowser.org/oma/team/
   label: Adrian Altenhoff
-description: OMA (Orthologous MAtrix) is a database of orthologous genes among multiple species, providing a systematic classification of orthologs across complete genomes.
+description: OMA (Orthologous MAtrix) is a database of orthologous genes among multiple
+  species, providing a systematic classification of orthologs across complete genomes.
 domains:
 - biological systems
 - organisms
@@ -31,34 +32,35 @@ products:
 - category: GraphicalInterface
   description: Web interface for exploring OMA data
   id: oma.site
+  is_public: true
   name: OMA Browser
   original_source:
   - oma
   product_url: https://omabrowser.org/oma/
   secondary_source:
   - oma
-  is_public: true
 - category: ProgrammingInterface
   description: RESTful API for accessing OMA data
   id: oma.api.rest
+  is_public: true
   name: OMA REST API
   original_source:
   - oma
   product_url: https://omabrowser.org/api/
   secondary_source:
   - oma
-  is_public: true
 - category: ProgrammingInterface
   description: SPARQL endpoint for accessing OMA data
   id: oma.api.sparql
+  is_public: true
   name: OMA SPARQL
   original_source:
   - oma
   product_url: https://sparql.omabrowser.org/lode/sparql
   secondary_source:
   - oma
-  is_public: true
 - category: Product
+  compression: gzip
   description: OMA orthology groups in plain text format
   id: oma.groups.txt
   name: OMA Groups (Text)
@@ -67,7 +69,6 @@ products:
   product_url: https://omabrowser.org/oma/current/OmaGroups.txt.gz
   secondary_source:
   - oma
-  compression: gzip
 - category: Product
   description: OMA orthology groups in OrthoXML format
   format: xml
@@ -89,6 +90,7 @@ products:
   secondary_source:
   - oma
 - category: Product
+  compression: gzip
   description: Pairwise orthologs in tab-separated text format
   format: tsv
   id: oma.pairs.txt
@@ -98,8 +100,8 @@ products:
   product_url: https://omabrowser.org/oma/current/OrthologousPairs.txt.gz
   secondary_source:
   - oma
-  compression: gzip
 - category: Product
+  compression: gzip
   description: Protein sequences from all genomes in FASTA format
   format: fasta
   id: oma.proteins.fasta
@@ -109,8 +111,8 @@ products:
   product_url: https://omabrowser.org/oma/current/oma-proteins.fa.gz
   secondary_source:
   - oma
-  compression: gzip
 - category: Product
+  compression: gzip
   description: cDNA sequences for Eukaryotic genomes in FASTA format
   format: fasta
   id: oma.cdna.eukaryotes.fasta
@@ -120,8 +122,8 @@ products:
   product_url: https://omabrowser.org/oma/current/oma-eukaryotes.cdna.fa.gz
   secondary_source:
   - oma
-  compression: gzip
 - category: Product
+  compression: gzip
   description: cDNA sequences for Prokaryotic genomes in FASTA format
   format: fasta
   id: oma.cdna.prokaryotes.fasta
@@ -131,7 +133,6 @@ products:
   product_url: https://omabrowser.org/oma/current/oma-prokaryotes.cdna.fa.gz
   secondary_source:
   - oma
-  compression: gzip
 - category: Product
   description: OMA Browser database in HDF5 format
   id: oma.hdf5
@@ -142,6 +143,7 @@ products:
   secondary_source:
   - oma
 - category: Product
+  compression: gzip
   description: OMA data in RDF format (Turtle syntax)
   format: ttl
   id: oma.rdf
@@ -151,8 +153,8 @@ products:
   product_url: https://omabrowser.org/oma/current/OMA.ttl.gz
   secondary_source:
   - oma
-  compression: gzip
 - category: MappingProduct
+  compression: gzip
   description: Mapping of OMA identifiers to UniProt accession numbers
   format: tsv
   id: oma.mapping.uniprot
@@ -163,7 +165,6 @@ products:
   product_url: https://omabrowser.org/oma/current/oma-uniprot.txt.gz
   secondary_source:
   - oma
-  compression: gzip
 ---
 OMA (Orthologous MAtrix) is a comprehensive database of orthologous gene relationships across multiple species. It provides a systematic and efficient approach to identifying orthologs among complete genomes, which are genes in different species that evolved from a common ancestor through speciation.
 
