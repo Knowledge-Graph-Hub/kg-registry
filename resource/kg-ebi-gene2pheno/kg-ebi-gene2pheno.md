@@ -24,19 +24,19 @@ products:
 - category: GraphProduct
   description: KGX nodes file for EBI Gene2Phenotype KG
   format: kgx-jsonl
-  id: kg-ebi-gene2pheno_kgx-nodes
+  id: kg-ebi-gene2pheno.nodes.kgx
   name: EBI gene2pheno KGX nodes
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/ebi_gene2phenotype/EBIgene2pheno_kgx_nodes.jsonl
 - category: GraphProduct
   description: KGX edges file for EBI Gene2Phenotype KG
   format: kgx-jsonl
-  id: kg-ebi-gene2pheno_kgx-edges
+  id: kg-ebi-gene2pheno.edges.kgx
   name: EBI gene2pheno KGX edges
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/ebi_gene2phenotype/EBIgene2pheno_kgx_edges.jsonl
 - category: GraphProduct
   description: TRAPI edges file for EBI Gene2Phenotype KG
   format: trapi-jsonl
-  id: kg-ebi-gene2pheno_trapi-edges
+  id: kg-ebi-gene2pheno.edges.trapi
   name: EBI gene2pheno TRAPI edges
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/ebi_gene2phenotype/EBIgene2pheno_trapi_edges.jsonl
 ---
