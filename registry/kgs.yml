@@ -4489,7 +4489,7 @@ resources:
   - translator
   contacts:
   - category: Individual
-    label: Gustavo Glusman
+    label: Gwênlyn Glusman
   - category: Individual
     label: Guangrong Qin
   description: A Translator Knowledge Provider incorporating multiomics data.
