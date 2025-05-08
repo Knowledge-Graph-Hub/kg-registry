@@ -13,6 +13,22 @@ jQuery(document).ready(function() {
             }, timeout);
         };
     }
+    
+    // Category to icon mapping (matches resource_detail.html)
+    const categoryIcons = {
+        "Aggregator": "grid-3x3",
+        "Resource": "archive",
+        "KnowledgeGraph": "globe",
+        "DataSource": "shop",
+        "DataModel": "diagram-3",
+        "GraphProduct": "globe",
+        "Product": "box",
+        "MappingProduct": "map",
+        "ProcessProduct": "gear",
+        "DataModelProduct": "diagram-3",
+        "GraphicalInterface": "window",
+        "ProgrammingInterface": "code-square"
+    };
 
     // Cache frequently accessed DOM elements
     const $tableDiv = $("#tableDiv");
@@ -126,6 +142,7 @@ jQuery(document).ready(function() {
                             <th scope="col">
                                 <span>Description</span>
                             </th>
+                            <th scope="col" style="width: 30px;"></th>
                             <th scope="col">
                                 <span>Resource Type</span>
                             </th>
@@ -155,11 +172,15 @@ jQuery(document).ready(function() {
                            item.description.toString().slice(0, 140).trim() + '...' : 
                            item.description) : 
                           '';
-        const resourcetype = item.category ? 
-                           item.category.replace(/([a-z])([A-Z])/g, '$1 $2') : 
+        const category = item.category || '';
+        const resourcetype = category ? 
+                           category.replace(/([a-z])([A-Z])/g, '$1 $2') : 
                            '';
         const homepage = item.homepage_url || '#';
         const license_box = createLicenseBox(item);
+        
+        // Get the icon for the category
+        const iconName = categoryIcons[category] || 'box';
         
         return `
             <tr class="${is_inactive}">
@@ -174,6 +195,9 @@ jQuery(document).ready(function() {
                 <td>
                     <span style="background-color: #ff8d82">${is_obsolete}</span>
                     ${description}
+                </td>
+                <td class="text-center" style="vertical-align: middle;">
+                    <i class="bi bi-${iconName}" style="font-size: 1.75em; color: #0d6efd;"></i>
                 </td>
                 <td>
                     ${resourcetype}
