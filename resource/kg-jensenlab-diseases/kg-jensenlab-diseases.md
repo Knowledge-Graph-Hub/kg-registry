@@ -24,19 +24,19 @@ products:
 - category: GraphProduct
   description: KGX nodes file for JensenLab DISEASES KG
   format: kgx-jsonl
-  id: kg-jensenlab-diseases_kgx-nodes
+  id: kg-jensenlab-diseases.nodes.kgx
   name: DISEASES KGX nodes
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_nodes.jsonl
 - category: GraphProduct
   description: KGX edges file for JensenLab DISEASES KG
   format: kgx-jsonl
-  id: kg-jensenlab-diseases_kgx-edges
+  id: kg-jensenlab-diseases.edges.kgx
   name: DISEASES KGX edges
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_kgx_edges.jsonl
 - category: GraphProduct
   description: TRAPI edges file for JensenLab DISEASES KG
   format: trapi-jsonl
-  id: kg-jensenlab-diseases_trapi-edges
+  id: kg-jensenlab-diseases.edges.trapi
   name: DISEASES TRAPI edges
   product_url: https://github.com/biothings/pending.api/blob/translator-output/plugins/DISEASES/DISEASES_trapi_edges.jsonl
 ---
