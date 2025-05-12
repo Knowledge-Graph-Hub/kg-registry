@@ -56,6 +56,87 @@ products:
   product_url: https://edir.ecidbase.org/
   secondary_source:
   - ecid
+- category: Product
+  description: Compound lists from 73 untargeted datasets with 3,329 unique 2D structures.
+  id: ecid.compound.lists
+  name: ECID Compound Lists
+  is_public: true
+  product_url: https://zenodo.org/records/15204234
+  original_source:
+  - ecid
+  secondary_source:
+  - ecid
+- category: Product
+  description: Analytes measured by targeted assays for the NIEHS HHEAR program.
+  id: ecid.hhear.analyte.list
+  name: HHEAR Analyte List
+  is_public: true
+  product_url: https://zenodo.org/records/15127651
+  original_source:
+  - ecid
+  secondary_source:
+  - ecid
+- category: Product
+  description: Chemical analytes reported for the ECHO cohort measured by targeted assays.
+  id: ecid.echo.analyte.list
+  name: ECHO Analyte List
+  is_public: true
+  product_url: https://zenodo.org/records/15127650
+  original_source:
+  - ecid
+  secondary_source:
+  - ecid
+- category: Product
+  description: Selected datasets (n=289) for computing and curating inter-chemical correlations.
+  id: ecid.dataset.list
+  name: ECID Dataset List
+  is_public: true
+  product_url: https://zenodo.org/records/15122961
+  original_source:
+  - ecid
+  secondary_source:
+  - ecid
+- category: Product
+  description: Chemical analytes reported by the NHANES biomonitoring survey.
+  id: ecid.nhanes.analyte.list
+  name: NHANES Analyte List
+  is_public: true
+  product_url: https://zenodo.org/records/11528668
+  original_source:
+  - ecid
+  secondary_source:
+  - ecid
+- category: Product
+  description: Metabolite and chemical names reported by Metabolon Inc. in PMC articles.
+  id: ecid.metabolomics.data.dictionary
+  name: Metabolomics Data Dictionary
+  is_public: true
+  product_url: https://zenodo.org/records/10974865
+  original_source:
+  - ecid
+  secondary_source:
+  - ecid
+- category: Product
+  description: mwTAB files processed to yield curated compound names and identifiers.
+  id: ecid.metabolomics.workbench.dictionary
+  name: Metabolomics WorkBench Compound Dictionary
+  is_public: true
+  product_url: https://zenodo.org/records/10963201
+  original_source:
+  - ecid
+  secondary_source:
+  - ecid
+- category: Product
+  description: Catalogues chemicals expected and detected in human blood specimens.
+  id: ecid.bloodexposome.data
+  name: Blood Exposome Database
+  is_public: true
+  product_url: https://zenodo.org/records/8146024
+  original_source:
+  - ecid
+  secondary_source:
+  - ecid
+  format: csv
 ---
 
 # Exposome Correlation and Interpretation Database (ECID)
