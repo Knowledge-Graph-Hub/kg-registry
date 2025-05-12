@@ -2231,6 +2231,152 @@ resources:
     - ebrains
   repository: https://github.com/HumanBrainProject/kg-core
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.ecidbase.org/contact
+    label: Integrated Data Science Laboratory for Metabolomics and Exposomics (IDSL-ME)
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: dinesh.barupal@mssm.edu
+    label: Dinesh Kumar Barupal
+  description: ECID is a biomedical knowledgebase of curated inter-chemical correlations
+    from the core chemical datasets in exposomics. These datasets are prioritized
+    from human biomonitoring studies using targeted and untargeted assays. ECID has
+    applications in characterizing and understanding the effects of exposome chemicals
+    on the human health.
+  domains:
+  - environment
+  - health
+  - chemistry and biochemistry
+  homepage_url: https://www.ecidbase.org/
+  id: ecid
+  layout: resource_detail
+  name: ECID
+  products:
+  - category: GraphicalInterface
+    description: Interface for the Chemical Correlation Database for exploring curated
+      inter-chemical correlations
+    id: ecid.ccdb.site
+    is_public: true
+    name: CCDB
+    original_source:
+    - ecid
+    product_url: https://ccdb.ecidbase.org/
+    secondary_source:
+    - ecid
+  - category: GraphicalInterface
+    description: Interface for Exposome Data Interpretation Resource for interpreting
+      inter-chemical correlations
+    id: ecid.edir.site
+    is_public: true
+    name: EDIR
+    original_source:
+    - ecid
+    product_url: https://edir.ecidbase.org/
+    secondary_source:
+    - ecid
+  - category: Product
+    description: Compound lists from 73 untargeted datasets with 3,329 unique 2D structures.
+    id: ecid.compound.lists
+    is_public: true
+    name: ECID Compound Lists
+    original_source:
+    - ecid
+    product_url: https://zenodo.org/records/15204234
+    secondary_source:
+    - ecid
+  - category: Product
+    description: Analytes measured by targeted assays for the NIEHS HHEAR program.
+    id: ecid.hhear.analyte.list
+    is_public: true
+    name: HHEAR Analyte List
+    original_source:
+    - ecid
+    product_url: https://zenodo.org/records/15127651
+    secondary_source:
+    - ecid
+  - category: Product
+    description: Chemical analytes reported for the ECHO cohort measured by targeted
+      assays.
+    id: ecid.echo.analyte.list
+    is_public: true
+    name: ECHO Analyte List
+    original_source:
+    - ecid
+    product_url: https://zenodo.org/records/15127650
+    secondary_source:
+    - ecid
+  - category: Product
+    description: Selected datasets (n=289) for computing and curating inter-chemical
+      correlations.
+    id: ecid.dataset.list
+    is_public: true
+    name: ECID Dataset List
+    original_source:
+    - ecid
+    product_url: https://zenodo.org/records/15122961
+    secondary_source:
+    - ecid
+  - category: Product
+    description: Chemical analytes reported by the NHANES biomonitoring survey.
+    id: ecid.nhanes.analyte.list
+    is_public: true
+    name: NHANES Analyte List
+    original_source:
+    - ecid
+    product_url: https://zenodo.org/records/11528668
+    secondary_source:
+    - ecid
+  - category: Product
+    description: Metabolite and chemical names reported by Metabolon Inc. in PMC articles.
+    id: ecid.metabolomics.data.dictionary
+    is_public: true
+    name: Metabolomics Data Dictionary
+    original_source:
+    - ecid
+    product_url: https://zenodo.org/records/10974865
+    secondary_source:
+    - ecid
+  - category: Product
+    description: mwTAB files processed to yield curated compound names and identifiers.
+    id: ecid.metabolomics.workbench.dictionary
+    is_public: true
+    name: Metabolomics WorkBench Compound Dictionary
+    original_source:
+    - ecid
+    product_url: https://zenodo.org/records/10963201
+    secondary_source:
+    - ecid
+  - category: Product
+    description: Catalogues chemicals expected and detected in human blood specimens.
+    format: csv
+    id: ecid.bloodexposome.data
+    is_public: true
+    name: Blood Exposome Database
+    original_source:
+    - ecid
+    product_url: https://zenodo.org/records/8146024
+    secondary_source:
+    - ecid
+  publications:
+  - authors:
+    - Barupal DK
+    - Mahajan P
+    - Fakouri-Baygi S
+    - Wright RO
+    - Arora M
+    - Teitelbaum SL
+    doi: doi:10.1016/j.envint.2022.107240
+    id: doi:10.1016/j.envint.2022.107240
+    title: 'CCDB: A database for exploring inter-chemical correlations in metabolomics
+      and exposomics datasets'
+    year: '2022'
+  repository: https://github.com/idslme/ecid
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
