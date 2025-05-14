@@ -367,6 +367,9 @@ resources:
   description: BiGG Models is a knowledgebase of genome-scale metabolic network reconstructions.
   domains:
   - biological systems
+  - systems biology
+  - pathways
+  - simulation
   homepage_url: http://bigg.ucsd.edu/
   id: bigg
   layout: resource_detail
@@ -1675,6 +1678,9 @@ resources:
   description: A Translator Knowledge Provider integrating clinical data.
   domains:
   - health
+  - clinical
+  - digital health
+  - medical imaging
   homepage_url: https://ncats.nih.gov/research/research-activities/translator/projects
   id: clinical-data-kp
   layout: resource_detail
@@ -2050,6 +2056,9 @@ resources:
     other drug-related metadata.
   domains:
   - health
+  - pharmacology
+  - drug discovery
+  - biomedical
   id: drug-approvals-kp
   layout: resource_detail
   name: Drug Approvals KP
@@ -2203,6 +2212,8 @@ resources:
     tools and computing facilities for brain-related research.
   domains:
   - health
+  - neuroscience
+  - biomedical
   homepage_url: https://docs.kg.ebrains.eu/
   id: ebrains
   layout: resource_detail
@@ -2252,6 +2263,9 @@ resources:
   - environment
   - health
   - chemistry and biochemistry
+  - public health
+  - social determinants
+  - biomedical
   homepage_url: https://www.ecidbase.org/
   id: ecid
   layout: resource_detail
@@ -2493,6 +2507,8 @@ resources:
     represented as diverse nodes and edges with properties.
   domains:
   - biological systems
+  - genomics
+  - biomedical
   homepage_url: https://gkb.dcmb.med.umich.edu/
   id: genomickb
   layout: resource_detail
@@ -3484,6 +3500,9 @@ resources:
     biological queries.
   domains:
   - health
+  - anatomy and development
+  - biological systems
+  - biomedical
   homepage_url: https://apps.humanatlas.io/dashboard/data
   id: hra-kg
   layout: resource_detail
@@ -3795,6 +3814,8 @@ resources:
     Alzheimer's disease research.
   domains:
   - health
+  - neuroscience
+  - biomedical
   homepage_url: https://kghub.org/kg-alzheimers/index.html
   id: kg-alzheimers
   layout: resource_detail
@@ -3827,6 +3848,9 @@ resources:
   description: A knowledge graph for COVID-19 and SARS-COV-2.
   domains:
   - organisms
+  - health
+  - microbiology
+  - public health
   homepage_url: https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki
   id: kg-covid-19
   layout: resource_detail
@@ -3989,6 +4013,8 @@ resources:
   - microbiology
   - organisms
   - phenotype
+  - microbiome
+  - biological systems
   homepage_url: https://kghub.org/kg-microbe/index.html
   id: kg-microbe
   layout: resource_detail
@@ -4765,6 +4791,9 @@ resources:
     interactions (NPDIs).
   domains:
   - health
+  - pharmacology
+  - drug discovery
+  - biomedical
   homepage_url: https://doi.org/10.5281/zenodo.6814507
   id: np-kg
   layout: resource_detail
@@ -7606,6 +7635,9 @@ resources:
   domains:
   - health
   - chemistry and biochemistry
+  - pharmacology
+  - genomics
+  - precision medicine
   homepage_url: https://www.pharmgkb.org/
   id: pharmgkb
   layout: resource_detail
@@ -8062,6 +8094,10 @@ resources:
     across ten major biological scales.
   domains:
   - health
+  - precision medicine
+  - biomedical
+  - pathways
+  - systems biology
   homepage_url: https://zitniklab.hms.harvard.edu/projects/PrimeKG
   id: primekg
   layout: resource_detail
@@ -8278,6 +8314,9 @@ resources:
   description: Reactome from Biopax
   domains:
   - biological systems
+  - pathways
+  - systems biology
+  - biomedical
   homepage_url: https://reactome.org
   id: reactome
   layout: resource_detail
@@ -8932,6 +8971,8 @@ resources:
   description: UniProt Protein Knowledge Base
   domains:
   - biological systems
+  - proteomics
+  - biomedical
   homepage_url: https://www.uniprot.org/
   id: uniprot
   layout: resource_detail
