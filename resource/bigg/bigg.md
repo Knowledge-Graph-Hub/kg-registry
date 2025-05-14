@@ -7,6 +7,9 @@ contacts:
 description: BiGG Models is a knowledgebase of genome-scale metabolic network reconstructions.
 domains:
 - biological systems
+- systems biology
+- pathways
+- simulation
 homepage_url: http://bigg.ucsd.edu/
 id: bigg
 layout: resource_detail

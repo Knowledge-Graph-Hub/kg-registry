@@ -6,6 +6,8 @@ name: EBRAINS Knowledge Graph
 description: A knowledge graph for the EBRAINS project, an infrastructure for data, tools and computing facilities for brain-related research.
 domains:
 - health
+- neuroscience
+- biomedical
 contacts:
 - category: Organization
   label: EBRAINS team

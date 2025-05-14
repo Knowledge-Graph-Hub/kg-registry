@@ -6,6 +6,9 @@ name: Clinical Data KP
 description: A Translator Knowledge Provider integrating clinical data.
 domains:
 - health
+- clinical
+- digital health
+- medical imaging
 category: KnowledgeGraph
 contacts:
 - category: Individual
