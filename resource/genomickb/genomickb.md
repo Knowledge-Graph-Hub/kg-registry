@@ -18,6 +18,8 @@ description: Genomic Knowledgebase (GenomicKB) is a database that uses a knowled
   represented as diverse nodes and edges with properties.
 domains:
 - biological systems
+- genomics
+- biomedical
 homepage_url: https://gkb.dcmb.med.umich.edu/
 id: genomickb
 layout: resource_detail

@@ -702,52 +702,127 @@ enums:
     description: >-
       A domain that a resource is relevant to.
     permissible_values:
+      agriculture:
+        description: >-
+          The agricultural sciences.
+      anatomy and development:
+        description: >-
+          The anatomy and development of organisms.
+      biological systems:
+        description: >-
+          The biological sciences and systems.
+      biomedical:
+        description: >-
+          The biomedical sciences, including the study of
+          biological systems and their interactions.
+      chemistry and biochemistry:
+        description: >-
+          The chemical and biochemical sciences.
+      clinical:
+        description: >-
+          The clinical sciences, including clinical trials and
+          patient data.
+      digital health:
+        description: >-
+          The use of digital technologies for healthcare, including telemedicine,
+          wearable devices, health information technology, and personalized medicine.
+      drug discovery:
+        description: >-
+          The process of identifying and developing new candidate medications, including
+          target identification, validation, and compound screening.
+      environment:
+        description: >-
+          The environment and ecosystems.
+      genomics:
+        description: >-
+          The study of genomes, including genome structure, evolution, 
+          function, mapping, and editing.
+      health:
+        description: >-
+          The health and diseases of organisms.
+      immunology:
+        description: >-
+          The study of the immune system, including its structure and function,
+          disorders, and therapeutic applications.
+      information technology:
+        description: >-
+          The information technology sciences.
+      investigations:
+        description: >-
+          Research investigations into specific topics.
+      literature:
+        description: >-
+          The literature and publications of a domain.
+      medical imaging:
+        description: >-
+          Techniques and processes for creating visual representations of the interior
+          of a body for clinical analysis and medical intervention.
+      microbiome:
+        description: >-
+          The study of microbial communities, their genomes, and their
+          influence on hosts and environments.
+      microbiology:
+        description: >-
+          The microbiological sciences.
+      neuroscience:
+        description: >-
+          The scientific study of the nervous system, including 
+          brain structure, function, and disorders.
+      nutrition:
+        description: >-
+          The nutritional sciences, including diet and metabolomics.
+      organisms:
+        description: >-
+          Specific organisms.
+      other:
+        description: >-
+          Another domain not defined here.
+      pathways:
+        description: >-
+          Biological pathways, including metabolic, signaling, and regulatory networks
+          that control cellular processes.
+      pharmacology:
+        description: >-
+          The study of how drugs interact with biological systems, including 
+          drug discovery, development, and therapeutic uses.
+      phenotype:
+        description: >-
+          The phenotypes of organisms.
+      precision medicine:
+        description: >-
+          An approach to disease treatment and prevention that takes into account
+          individual variability in genes, environment, and lifestyle.
+      proteomics:
+        description: >-
+          The large-scale study of proteins, their structures, 
+          functions, and interactions.
+      public health:
+        description: >-
+          The science of protecting and improving the health of people and their 
+          communities, including epidemiology and population health.
+      simulation:
+        description: >-
+          Simulation and modeling of specific phenomena.
+      social determinants:
+        description: >-
+          The social, economic, and environmental factors that influence health outcomes
+          and contribute to health disparities.
+      systems biology:
+        description: >-
+          The computational and mathematical analysis of complex biological systems
+          and their interactions.
+      synthetic biology:
+        description: >-
+          The design and construction of new biological parts, devices, and systems,
+          or the redesign of existing natural biological systems.
+      translational:
+        description: >-
+          The translational sciences, including the translation
+          of research into practice.
       upper:
         description: >-
           The upper-level domain, for general-purpose data
           representation and integration.
-      anatomy and development:
-        description: >-
-          The anatomy and development of organisms.
-      health:
-        description: >-
-          The health and diseases of organisms.
-      phenotype:
-        description: >-
-          The phenotypes of organisms.
-      investigations:
-        description: >-
-          Research investigations into specific topics.
-      environment:
-        description: >-
-          The environment and ecosystems.
-      chemistry and biochemistry:
-        description: >-
-          The chemical and biochemical sciences.
-      microbiology:
-        description: >-
-          The microbiological sciences.
-      agriculture:
-        description: >-
-          The agricultural sciences.
-      nutrition:
-        description: >-
-          The nutritional sciences, including diet and metabolomics.
-      biological systems:
-        description: >-
-          The biological sciences and systems.
-      information technology:
-        description: >-
-          The information technology sciences.
-      organisms:
-        description: >-
-          Specific organisms.
-      simulation:
-        description: >-
-          Simulation and modeling of specific phenomena.
-      other:
-        description: >-
-          Another domain not defined here.
 
   DumpFormatEnum:
     description: >-

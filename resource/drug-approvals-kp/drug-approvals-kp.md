@@ -15,6 +15,9 @@ description: A Translator knowledge provider focused on drug approval status and
   drug-related metadata.
 domains:
 - health
+- pharmacology
+- drug discovery
+- biomedical
 id: drug-approvals-kp
 layout: resource_detail
 name: Drug Approvals KP

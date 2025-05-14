@@ -12,6 +12,9 @@ description: PharmGKB collects, curates and disseminates knowledge about clinica
 domains:
 - health
 - chemistry and biochemistry
+- pharmacology
+- genomics
+- precision medicine
 homepage_url: https://www.pharmgkb.org/
 id: pharmgkb
 layout: resource_detail
