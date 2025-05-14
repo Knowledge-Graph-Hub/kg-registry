@@ -8,6 +8,9 @@ description: NP-KG is a graph framework that creates a biomedical knowledge grap
   interactions (NPDIs).
 domains:
 - health
+- pharmacology
+- drug discovery
+- biomedical
 contacts:
 - category: Individual
   label: Sanya Bathla Taneja

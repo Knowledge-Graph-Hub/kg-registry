@@ -10,6 +10,8 @@ contacts:
 description: UniProt Protein Knowledge Base
 domains:
 - biological systems
+- proteomics
+- biomedical
 homepage_url: https://www.uniprot.org/
 id: uniprot
 layout: resource_detail
