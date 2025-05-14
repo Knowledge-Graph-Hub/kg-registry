@@ -18,6 +18,9 @@ domains:
   - environment
   - health
   - chemistry and biochemistry
+  - public health
+  - social determinants
+  - biomedical
 homepage_url: https://www.ecidbase.org/
 id: ecid
 layout: resource_detail

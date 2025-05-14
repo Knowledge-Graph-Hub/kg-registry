@@ -8,6 +8,8 @@ description: A Knowledge Graph for integrating data related to Alzheimer's disea
   Alzheimer's disease research.
 domains:
 - health
+- neuroscience
+- biomedical
 contacts:
 - category: Individual
   label: J. Harry Caufield

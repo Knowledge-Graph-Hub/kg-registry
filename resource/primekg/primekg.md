@@ -8,6 +8,10 @@ description: PrimeKG (Precision Medicine Knowledge Graph) integrates 20 high-qua
   across ten major biological scales.
 domains:
 - health
+- precision medicine
+- biomedical
+- pathways
+- systems biology
 contacts:
 - category: Individual
   label: Marinka Zitnik

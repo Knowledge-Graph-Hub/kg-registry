@@ -6,6 +6,9 @@ name: KG-COVID-19
 description: A knowledge graph for COVID-19 and SARS-COV-2.
 domains:
 - organisms
+- health
+- microbiology
+- public health
 contacts:
 - category: Individual
   label: Justin Reese

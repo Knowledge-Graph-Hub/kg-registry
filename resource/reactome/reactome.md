@@ -13,6 +13,9 @@ contacts:
 description: Reactome from Biopax
 domains:
 - biological systems
+- pathways
+- systems biology
+- biomedical
 homepage_url: https://reactome.org
 id: reactome
 layout: resource_detail
