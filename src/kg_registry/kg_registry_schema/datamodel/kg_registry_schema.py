@@ -143,36 +143,74 @@ class DomainEnum(str, Enum):
     """
     A domain that a resource is relevant to.
     """
-    # The upper-level domain, for general-purpose data representation and integration.
-    upper = "upper"
-    # The anatomy and development of organisms.
-    anatomy_and_development = "anatomy and development"
-    # The health and diseases of organisms.
-    health = "health"
-    # The phenotypes of organisms.
-    phenotype = "phenotype"
-    # Research investigations into specific topics.
-    investigations = "investigations"
-    # The environment and ecosystems.
-    environment = "environment"
-    # The chemical and biochemical sciences.
-    chemistry_and_biochemistry = "chemistry and biochemistry"
-    # The microbiological sciences.
-    microbiology = "microbiology"
     # The agricultural sciences.
     agriculture = "agriculture"
-    # The nutritional sciences, including diet and metabolomics.
-    nutrition = "nutrition"
+    # The anatomy and development of organisms.
+    anatomy_and_development = "anatomy and development"
     # The biological sciences and systems.
     biological_systems = "biological systems"
+    # The biomedical sciences, including the study of biological systems and their interactions.
+    biomedical = "biomedical"
+    # The chemical and biochemical sciences.
+    chemistry_and_biochemistry = "chemistry and biochemistry"
+    # The clinical sciences, including clinical trials and patient data.
+    clinical = "clinical"
+    # The use of digital technologies for healthcare, including telemedicine, wearable devices, health information technology, and personalized medicine.
+    digital_health = "digital health"
+    # The process of identifying and developing new candidate medications, including target identification, validation, and compound screening.
+    drug_discovery = "drug discovery"
+    # The environment and ecosystems.
+    environment = "environment"
+    # The study of genomes, including genome structure, evolution,  function, mapping, and editing.
+    genomics = "genomics"
+    # The health and diseases of organisms.
+    health = "health"
+    # The study of the immune system, including its structure and function, disorders, and therapeutic applications.
+    immunology = "immunology"
     # The information technology sciences.
     information_technology = "information technology"
+    # Research investigations into specific topics.
+    investigations = "investigations"
+    # The literature and publications of a domain.
+    literature = "literature"
+    # Techniques and processes for creating visual representations of the interior of a body for clinical analysis and medical intervention.
+    medical_imaging = "medical imaging"
+    # The study of microbial communities, their genomes, and their influence on hosts and environments.
+    microbiome = "microbiome"
+    # The microbiological sciences.
+    microbiology = "microbiology"
+    # The scientific study of the nervous system, including  brain structure, function, and disorders.
+    neuroscience = "neuroscience"
+    # The nutritional sciences, including diet and metabolomics.
+    nutrition = "nutrition"
     # Specific organisms.
     organisms = "organisms"
-    # Simulation and modeling of specific phenomena.
-    simulation = "simulation"
     # Another domain not defined here.
     other = "other"
+    # Biological pathways, including metabolic, signaling, and regulatory networks that control cellular processes.
+    pathways = "pathways"
+    # The study of how drugs interact with biological systems, including  drug discovery, development, and therapeutic uses.
+    pharmacology = "pharmacology"
+    # The phenotypes of organisms.
+    phenotype = "phenotype"
+    # An approach to disease treatment and prevention that takes into account individual variability in genes, environment, and lifestyle.
+    precision_medicine = "precision medicine"
+    # The large-scale study of proteins, their structures,  functions, and interactions.
+    proteomics = "proteomics"
+    # The science of protecting and improving the health of people and their  communities, including epidemiology and population health.
+    public_health = "public health"
+    # Simulation and modeling of specific phenomena.
+    simulation = "simulation"
+    # The social, economic, and environmental factors that influence health outcomes and contribute to health disparities.
+    social_determinants = "social determinants"
+    # The computational and mathematical analysis of complex biological systems and their interactions.
+    systems_biology = "systems biology"
+    # The design and construction of new biological parts, devices, and systems, or the redesign of existing natural biological systems.
+    synthetic_biology = "synthetic biology"
+    # The translational sciences, including the translation of research into practice.
+    translational = "translational"
+    # The upper-level domain, for general-purpose data representation and integration.
+    upper = "upper"
 
 
 class DumpFormatEnum(str, Enum):
