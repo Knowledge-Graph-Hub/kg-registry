@@ -1009,6 +1009,14 @@ enums:
           The Translator Reasoner API (TRAPI) format, which is a JSON Lines format
           for TRAPI responses.
         meaning: https://raw.githubusercontent.com/NCATSTranslator/ReasonerAPI/refs/heads/master/TranslatorReasonerAPI.yaml
+      yaml:
+        description: >-
+          The YAML Ain't Markup Language (YAML) format,
+          a human-readable data serialization format.
+          It is often used for configuration files and
+          data exchange between languages with different
+          data structures.
+        meaning: https://yaml.org/
 
   StandardEnum:
     description: >-
