@@ -287,6 +287,8 @@ class FormatEnum(str, Enum):
     sqlite = "sqlite"
     # The Translator Reasoner API (TRAPI) format, which is a JSON Lines format for TRAPI responses.
     trapi_jsonl = "trapi-jsonl"
+    # The YAML Ain't Markup Language (YAML) format, a human-readable data serialization format. It is often used for configuration files and data exchange between languages with different data structures.
+    yaml = "yaml"
 
 
 class StandardEnum(str, Enum):
