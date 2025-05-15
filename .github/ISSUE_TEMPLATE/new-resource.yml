@@ -86,17 +86,36 @@ body:
         - agriculture
         - anatomy and development
         - biological systems
+        - biomedical
         - chemistry and biochemistry
+        - clinical
+        - digital health
+        - drug discovery
         - environment
+        - genomics
         - health
+        - immunology
         - information technology
         - investigations
+        - literature
+        - medical imaging
+        - microbiome
         - microbiology
+        - neuroscience
         - nutrition
         - organisms
         - other
+        - pathways
+        - pharmacology
         - phenotype
+        - precision medicine
+        - proteomics
+        - public health
         - simulation
+        - social determinants
+        - systems biology
+        - synthetic biology
+        - translational
         - upper
     validations:
       required: false
