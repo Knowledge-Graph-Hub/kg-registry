@@ -82,6 +82,7 @@ phenio,active,PASS
 pombase,active,PASS
 primekg,active,PASS
 pubchem,active,PASS
+pubtator,active,PASS
 rdbridge,active,PASS
 reacto,active,PASS
 reactome,active,PASS
