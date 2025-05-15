@@ -1,7 +1,9 @@
 ---
 category: GraphicalInterface
 description: Graphical interface for exploring the PanKGraph
+format: http
 id: pankbase.graph.site
+is_public: true
 name: PanKGraph Site
 original_source:
 - pankbase
