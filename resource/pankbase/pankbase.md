@@ -28,9 +28,6 @@ contacts:
     value: https://hirnetwork.org/
 homepage_url: https://pankbase.org/
 repository: https://github.com/PanKbase-DB
-funding:
-- id: niddk
-  label: National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)
 license:
   id: https://opensource.org/licenses/MIT
   label: MIT License
@@ -44,13 +41,6 @@ products:
   - pankbase
   original_source:
   - pankbase
-  format: neo4j
-  node_categories:
-  - gene
-  - protein
-  - pathway
-  - diabetes marker
-  - pancreatic cell
 - id: pankbase.graph.site
   name: PanKGraph Site
   description: Graphical interface for exploring the PanKGraph
