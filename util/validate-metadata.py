@@ -16,6 +16,8 @@ RESOURCE_DIRECTORY = ROOT.joinpath("resource").resolve()
 
 SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "kg_registry_schema.json")
 
+INACTIVE_STATUSES = ["inactive", "orphaned", "unresponsive"]
+
 # The metadata grid to be generated:
 metadata_grid = {}
 
@@ -111,7 +113,7 @@ def validate_metadata(item, schema):
     results = {}
 
     # determine how to sort this item in the grid:
-    results["obsolete"] = True if item.get("is_obsolete") is True else False
+    results["inactive"] = True if item.get("activity_status") in INACTIVE_STATUSES else False
     # if there is no status, put them at the bottom with inactive:
     results["resource_status"] = (
         item["activity_status"] if "activity_status" in item else "inactive"
@@ -165,20 +167,11 @@ def validate_metadata(item, schema):
             has_info = True
 
         # these cases will not cause test failure and will not be logged
-        # the results are just added to the metadata grid:
-        # - orphaned resource on contact or license or repository check
-        # - inactive resource
-        # - obsolete resource
-        # - resource annotated with `validate: false`
+        # the results are just added to the metadata grid
         if not (
             (
-                item.get("activity_status") == "orphaned"
+                item.get("activity_status") in INACTIVE_STATUSES 
                 and title in ["contact", "license", "repository"]
-            )
-            or (
-                item.get("is_obsolete") is True
-                or item.get("activity_status") == "inactive"
-                or item.get("validate") is False
             )
         ):
             # get a message for displaying on terminal
@@ -252,27 +245,22 @@ def sort_grid(metadata_grid):
     Return a sorted list of IDs.
     """
     active = {"PASS": [], "INFO": [], "WARN": [], "FAIL": []}
-    orphaned = {"PASS": [], "INFO": [], "WARN": [], "FAIL": []}
     inactive = {"PASS": [], "INFO": [], "WARN": [], "FAIL": []}
-    obsolete = {"PASS": [], "INFO": [], "WARN": [], "FAIL": []}
 
     for resource_id, results in metadata_grid.items():
         # get the info about the resource to sort on
         resource_status = results["resource_status"]
         validation_status = results["validation_status"]
 
-        # obsolete resources are displayed last
+        # inactive resources are displayed last
         # they are always inactive
-        # (inactive does not mean obsolete)
-        if results["obsolete"]:
-            obsolete[validation_status].append(resource_id)
+        if results["inactive"]:
+            inactive[validation_status].append(resource_id)
             continue
 
-        # finally, sort by: active, orphaned, inactive
+        # finally, sort by: active, inactive
         if resource_status == "active":
             active[validation_status].append(resource_id)
-        elif resource_status == "orphaned":
-            orphaned[validation_status].append(resource_id)
         elif resource_status == "inactive":
             inactive[validation_status].append(resource_id)
 
@@ -284,7 +272,7 @@ def sort_grid(metadata_grid):
         return arr
 
     sort = []
-    for ont_type in [active, orphaned, inactive, obsolete]:
+    for ont_type in [active, inactive]:
         for v_status in ["PASS", "INFO", "WARN", "FAIL"]:
             sort = sort + sort_list(ont_type[v_status])
 
