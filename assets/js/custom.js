@@ -587,28 +587,9 @@ jQuery(document).ready(function () {
      */
     function applyFilters(data) {
         const selector = $("[data-filter]");
-        const domain = selector[0].checked;
-        const hideactive = selector[1].checked;
-        const hideObsolete = selector[2].checked;
+        const domain = selector[0] && selector[0].checked;
 
         let filteredData = data;
-
-        // Apply filters in a single pass
-        if (hideactive || hideObsolete) {
-            filteredData = data.filter(item => {
-                // Skip items that should be hidden by activity status
-                if (hideactive && item.activity_status !== "active") {
-                    return false;
-                }
-
-                // Skip obsolete items if requested
-                if (hideObsolete && item.is_obsolete === true) {
-                    return false;
-                }
-
-                return true;
-            });
-        }
 
         // Sort if domain grouping is requested
         if (domain) {
