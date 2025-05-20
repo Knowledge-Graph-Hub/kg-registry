@@ -2905,27 +2905,90 @@
                         {
                             "contact_type": "email",
                             "value": "info@drugbank.com"
+                        },
+                        {
+                            "contact_type": "url",
+                            "value": "https://www.drugbank.com/contact"
                         }
                     ],
                     "label": "DrugBank"
                 }
             ],
-            "description": "DrugBank Online is a data resource for drugs and drug products.",
+            "description": "DrugBank Online is a comprehensive, publicly accessible database containing detailed information on drugs and drug targets, combining chemical, pharmacological, pharmaceutical data with drug target information including sequence, structure, and pathway details.",
             "domains": [
-                "health"
+                "health",
+                "chemistry and biochemistry",
+                "pharmacology",
+                "genomics",
+                "proteomics"
             ],
             "homepage_url": "https://www.drugbank.com/",
             "id": "drugbank",
             "layout": "resource_detail",
+            "license": {
+                "id": "https://go.drugbank.com/legal/terms_of_use",
+                "label": "Custom (free for academic research with license)"
+            },
             "name": "DrugBank",
             "products": [
                 {
-                    "category": "Product",
-                    "description": "Web interface for the DrugCentral Drug Knowledgebase",
-                    "id": "drugcentral.drugkb",
-                    "name": "DrugCentral Drug Knowledgebase",
-                    "product_url": "https://go.drugbank.com/drugs"
+                    "category": "GraphicalInterface",
+                    "description": "Web interface for browsing and searching the DrugBank database",
+                    "format": "http",
+                    "id": "drugbank.web",
+                    "name": "DrugBank Online",
+                    "original_source": [
+                        "drugbank"
+                    ],
+                    "product_url": "https://go.drugbank.com/"
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "Academic access to DrugBank database dumps in XML and other formats",
+                    "format": "xml",
+                    "id": "drugbank.academic",
+                    "license": {
+                        "id": "https://go.drugbank.com/legal/terms_of_use",
+                        "label": "Academic License"
+                    },
+                    "name": "DrugBank Academic Downloads",
+                    "original_source": [
+                        "drugbank"
+                    ],
+                    "product_url": "https://go.drugbank.com/releases/latest"
+                },
+                {
+                    "category": "ProgrammingInterface",
+                    "connection_url": "https://www.drugbank.com/clinical",
+                    "description": "Clinical API for integrating DrugBank data into healthcare applications",
+                    "id": "drugbank.clinical.api",
+                    "is_public": true,
+                    "name": "DrugBank Clinical API",
+                    "original_source": [
+                        "drugbank"
+                    ],
+                    "product_url": "https://www.drugbank.com/clinical"
                 }
+            ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1093/nar/gkad976",
+                    "journal": "Nucleic Acids Research",
+                    "preferred": true,
+                    "title": "DrugBank 6.0 - The DrugBank Knowledgebase for 2024",
+                    "year": "2024"
+                },
+                {
+                    "id": "https://doi.org/10.1093/nar/gkx1037",
+                    "journal": "Nucleic Acids Research",
+                    "title": "DrugBank 5.0 - A major update to the DrugBank database for 2018",
+                    "year": "2018"
+                }
+            ],
+            "repository": "https://go.drugbank.com/releases/latest",
+            "tags": [
+                "core",
+                "biopragmatics"
             ]
         },
         {
@@ -3260,6 +3323,9 @@
         {
             "activity_status": "active",
             "category": "KnowledgeGraph",
+            "collection": [
+                "translator"
+            ],
             "contacts": [
                 {
                     "category": "Individual",
@@ -3267,24 +3333,81 @@
                         {
                             "contact_type": "github",
                             "value": "diatomsRcool"
+                        },
+                        {
+                            "contact_type": "email",
+                            "value": "annethessen@gmail.com"
                         }
                     ],
                     "label": "Anne Thessen"
+                },
+                {
+                    "category": "Organization",
+                    "contact_details": [
+                        {
+                            "contact_type": "url",
+                            "value": "https://kghub.org"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "Knowledge Graph Hub"
+                        }
+                    ],
+                    "label": "Knowledge Graph Hub"
                 }
             ],
             "description": "A knowledge graph of plant traits starting with Planteome and EOL TraitBank.",
             "domains": [
-                "organisms"
+                "organisms",
+                "environment",
+                "biological systems"
             ],
             "homepage_url": "https://kghub.org/eco-kg/index.html",
             "id": "eco-kg",
             "layout": "resource_detail",
+            "license": {
+                "id": "https://creativecommons.org/licenses/by/4.0/",
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+            },
             "name": "eco-KG",
-            "repository": "https://github.com/Knowledge-Graph-Hub/eco-kg"
+            "products": [
+                {
+                    "category": "GraphProduct",
+                    "compression": "tar",
+                    "description": "Knowledge graph containing plant traits data from Planteome and EOL TraitBank",
+                    "format": "kgx",
+                    "id": "eco-kg.graph",
+                    "name": "eco-KG Graph",
+                    "original_source": [
+                        "eco-kg"
+                    ],
+                    "product_url": "https://kg-hub.berkeleybop.io/eco-kg/"
+                },
+                {
+                    "category": "ProgrammingInterface",
+                    "connection_url": "https://kghub.org/eco-kg/api",
+                    "description": "API for accessing eco-KG data",
+                    "id": "eco-kg.api",
+                    "is_public": true,
+                    "name": "eco-KG API",
+                    "original_source": [
+                        "eco-kg"
+                    ],
+                    "product_url": "https://kghub.org/eco-kg/api"
+                }
+            ],
+            "repository": "https://github.com/Knowledge-Graph-Hub/eco-kg",
+            "tags": [
+                "core"
+            ]
         },
         {
             "activity_status": "active",
             "category": "DataSource",
+            "collection": [
+                "translator"
+            ],
             "contacts": [
                 {
                     "category": "Organization",
@@ -3292,6 +3415,10 @@
                         {
                             "contact_type": "email",
                             "value": "biocyc-support@sri.com"
+                        },
+                        {
+                            "contact_type": "url",
+                            "value": "https://ecocyc.org/contact.shtml"
                         }
                     ],
                     "label": "EcoCyc"
@@ -3299,7 +3426,10 @@
             ],
             "description": "EcoCyc captures information from 44,000 publications for Escherichia coli K-12 substr. MG1655. Use EcoCyc to search for knowledge on E. coli genes, regulation, and metabolism; analyze transcriptomics data; perform comparative analyses; and run a metabolic model.",
             "domains": [
-                "microbiology"
+                "microbiology",
+                "genomics",
+                "biological systems",
+                "pathways"
             ],
             "homepage_url": "https://ecocyc.org/",
             "id": "ecocyc",
@@ -3332,8 +3462,41 @@
                     "secondary_source": [
                         "obo-db-ingest"
                     ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "Web interface for EcoCyc database",
+                    "id": "ecocyc.web",
+                    "name": "EcoCyc Web Interface",
+                    "original_source": [
+                        "ecocyc"
+                    ],
+                    "product_url": "https://ecocyc.org/"
+                },
+                {
+                    "category": "ProgrammingInterface",
+                    "connection_url": "https://ecocyc.org/web-services.shtml",
+                    "description": "Web services and APIs for programmatic access to EcoCyc data",
+                    "id": "ecocyc.api",
+                    "is_public": true,
+                    "name": "EcoCyc Web Services",
+                    "original_source": [
+                        "ecocyc"
+                    ],
+                    "product_url": "https://ecocyc.org/web-services.shtml"
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "Metabolic model for E. coli K-12 derived from EcoCyc",
+                    "id": "ecocyc.metabolic_model",
+                    "name": "EcoCyc Metabolic Model",
+                    "original_source": [
+                        "ecocyc"
+                    ],
+                    "product_url": "http://www.biomedcentral.com/1752-0509/8/79"
                 }
-            ]
+            ],
+            "repository": "https://biocyc.org/download.shtml"
         },
         {
             "activity_status": "active",
@@ -4183,7 +4346,10 @@
         },
         {
             "activity_status": "active",
-            "category": "Resource",
+            "category": "DataModel",
+            "collection": [
+                "translator"
+            ],
             "contacts": [
                 {
                     "category": "Individual",
@@ -4201,20 +4367,27 @@
                     "orcid": "0000-0002-6601-2165"
                 }
             ],
-            "description": "Translation of JGI GOLD path terms to OWL",
+            "description": "Translation of JGI GOLD (Genomes OnLine Database) ecosystem classification paths to OWL, plus mappings to MIxS and environment ontologies like ENVO.",
             "domains": [
-                "environment"
+                "environment",
+                "microbiology",
+                "genomics",
+                "biological systems"
             ],
             "homepage_url": "https://gold.jgi.doe.gov/",
             "id": "goldterms",
             "layout": "resource_detail",
+            "license": {
+                "id": "https://github.com/cmungall/gold-ontology/blob/main/LICENSE",
+                "label": "BSD 3-Clause License"
+            },
             "name": "GOLD Environmental Paths",
             "products": [
                 {
-                    "category": "Product",
+                    "category": "DataModelProduct",
                     "format": "owl",
                     "id": "goldterms.data.owl",
-                    "name": "main GOLDTERMS OWL release",
+                    "name": "Main GOLDTERMS OWL release",
                     "original_source": [
                         "goldterms"
                     ],
@@ -4222,9 +4395,39 @@
                     "secondary_source": [
                         "goldterms"
                     ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "format": "owl",
+                    "id": "goldterms.bioportal",
+                    "name": "GOLDTERMS on BioPortal",
+                    "original_source": [
+                        "goldterms"
+                    ],
+                    "product_url": "https://bioportal.bioontology.org/ontologies/GOLDTERMS",
+                    "secondary_source": [
+                        "goldterms"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "format": "yaml",
+                    "id": "goldterms.definitions.yaml",
+                    "name": "GOLD definitions in YAML format",
+                    "original_source": [
+                        "goldterms"
+                    ],
+                    "product_url": "https://github.com/cmungall/gold-ontology/blob/main/gold_definitions.yaml",
+                    "secondary_source": [
+                        "goldterms"
+                    ]
                 }
             ],
-            "repository": "https://github.com/cmungall/gold-ontology"
+            "repository": "https://github.com/cmungall/gold-ontology",
+            "tags": [
+                "biopragmatics",
+                "core"
+            ]
         },
         {
             "activity_status": "active",
