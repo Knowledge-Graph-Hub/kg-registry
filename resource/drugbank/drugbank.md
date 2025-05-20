@@ -6,7 +6,7 @@ name: DrugBank
 description: DrugBank Online is a comprehensive, publicly accessible database containing detailed information on drugs and drug targets, combining chemical, pharmacological, pharmaceutical data with drug target information including sequence, structure, and pathway details.
 domains:
 - health
-- chemistry
+- chemistry and biochemistry
 - pharmacology
 - genomics
 - proteomics
@@ -35,7 +35,7 @@ products:
   product_url: https://go.drugbank.com/
   original_source:
   - drugbank
-  format: html
+  format: http
 - category: DataModelProduct
   description: Academic access to DrugBank database dumps in XML and other formats
   id: drugbank.academic
@@ -60,12 +60,12 @@ publications:
 - id: https://doi.org/10.1093/nar/gkad976
   title: DrugBank 6.0 - The DrugBank Knowledgebase for 2024
   journal: Nucleic Acids Research
-  year: 2024
+  year: '2024'
   preferred: true
 - id: https://doi.org/10.1093/nar/gkx1037
   title: DrugBank 5.0 - A major update to the DrugBank database for 2018
   journal: Nucleic Acids Research
-  year: 2018
+  year: '2018'
 ---
 
 DrugBank is a comprehensive knowledge base combining detailed drug information (chemical, pharmacological, and pharmaceutical) with extensive drug target information (sequence, structure, and pathway). 

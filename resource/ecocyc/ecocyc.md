@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataSource
+collection:
+- translator
 contacts:
 - category: Organization
   contact_details:
@@ -18,7 +20,6 @@ domains:
 - genomics
 - biological systems
 - pathways
-- metabolomics
 homepage_url: https://ecocyc.org/
 id: ecocyc
 layout: resource_detail
@@ -26,7 +27,6 @@ license:
   id: https://ecocyc.org/download.shtml
   label: Varies
 name: EcoCyc
-repository: https://biocyc.org/download.shtml
 products:
 - category: MappingProduct
   description: Rhea SSSOM
@@ -50,29 +50,27 @@ products:
   description: Web interface for EcoCyc database
   id: ecocyc.web
   name: EcoCyc Web Interface
-  product_url: https://ecocyc.org/
   original_source:
   - ecocyc
+  product_url: https://ecocyc.org/
 - category: ProgrammingInterface
+  connection_url: https://ecocyc.org/web-services.shtml
   description: Web services and APIs for programmatic access to EcoCyc data
   id: ecocyc.api
-  name: EcoCyc Web Services
-  product_url: https://ecocyc.org/web-services.shtml
   is_public: true
-  connection_url: https://ecocyc.org/web-services.shtml
+  name: EcoCyc Web Services
   original_source:
   - ecocyc
+  product_url: https://ecocyc.org/web-services.shtml
 - category: ProcessProduct
   description: Metabolic model for E. coli K-12 derived from EcoCyc
   id: ecocyc.metabolic_model
   name: EcoCyc Metabolic Model
-  product_url: http://www.biomedcentral.com/1752-0509/8/79
   original_source:
   - ecocyc
-collection:
-- translator
+  product_url: http://www.biomedcentral.com/1752-0509/8/79
+repository: https://biocyc.org/download.shtml
 ---
-
 EcoCyc is a comprehensive database that captures information from over 44,000 publications for Escherichia coli K-12 substr. MG1655. It is part of the larger BioCyc collection of thousands of Pathway/Genome Databases for sequenced genomes. 
 
 EcoCyc provides detailed information on:
