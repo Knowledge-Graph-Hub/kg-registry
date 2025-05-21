@@ -1,8 +1,14 @@
 ---
-layout: resource_detail
 activity_status: active
-id: interpro
-name: InterPro
+category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: interpro-help@ebi.ac.uk
+  - contact_type: url
+    value: https://www.ebi.ac.uk/interpro/contact/
+  label: InterPro
 description: InterPro is a database of protein families, domains and functional sites
   in which identifiable features found in known proteins can be applied to unknown
   protein sequences.
@@ -10,117 +16,108 @@ domains:
 - biological systems
 - proteomics
 - genomics
-- bioinformatics
 - drug discovery
-contacts:
-- category: Organization
-  label: InterPro
-  contact_details:
-  - contact_type: email
-    value: interpro-help@ebi.ac.uk
-  - contact_type: url
-    value: https://www.ebi.ac.uk/interpro/contact/
 homepage_url: https://www.ebi.ac.uk/interpro/
-repository: https://www.ebi.ac.uk/interpro/
+id: interpro
+layout: resource_detail
 license:
-  label: CC0-1.0
   id: https://creativecommons.org/publicdomain/zero/1.0/
-category: DataSource
+  label: CC0-1.0
+name: InterPro
 products:
 - category: GraphicalInterface
+  description: Web interface for browsing and searching the InterPro database
+  format: http
   id: interpro.web
   name: InterPro Web Interface
-  description: Web interface for browsing and searching the InterPro database
+  original_source:
+  - interpro
   product_url: https://www.ebi.ac.uk/interpro/
-  original_source:
-  - interpro
-  format: http
 - category: ProgrammingInterface
-  id: interpro.api
-  name: InterPro API
-  description: RESTful API for programmatic access to InterPro data
-  product_url: https://www.ebi.ac.uk/interpro/api/
-  is_public: true
   connection_url: https://www.ebi.ac.uk/interpro/api/
+  description: RESTful API for programmatic access to InterPro data
+  id: interpro.api
+  is_public: true
+  name: InterPro API
   original_source:
   - interpro
+  product_url: https://www.ebi.ac.uk/interpro/api/
 - category: ProcessProduct
+  compression: targz
+  description: Software package for scanning protein sequences against InterPro's
+    signatures
   id: interpro.interproscan
   name: InterProScan
-  description: Software package for scanning protein sequences against InterPro's signatures
-  product_url: http://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.74-105.0/interproscan-5.74-105.0-64-bit.tar.gz
   original_source:
   - interpro
-  compression: targz
+  product_url: http://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.74-105.0/interproscan-5.74-105.0-64-bit.tar.gz
 - category: DataModelProduct
+  description: Complete list of InterPro entries with their types and short names
+  format: tsv
   id: interpro.entry_list
   name: InterPro Entry List
-  description: Complete list of InterPro entries with their types and short names
-  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/entry.list
   original_source:
   - interpro
-  format: tsv
+  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/entry.list
 - category: DataModelProduct
+  compression: gzip
+  description: Complete InterPro database in XML format containing entries, member
+    database signatures, GO terms, and relationships
+  format: xml
   id: interpro.xml
   name: InterPro XML
-  description: Complete InterPro database in XML format containing entries, member database signatures, GO terms, and relationships
-  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro.xml.gz
   original_source:
   - interpro
-  format: xml
-  compression: gzip
+  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro.xml.gz
 - category: MappingProduct
+  compression: gzip
+  description: Complete set of matches between protein sequences and InterPro entries/signatures
+  format: xml
   id: interpro.match_complete
   name: InterPro Match Complete
-  description: Complete set of matches between protein sequences and InterPro entries/signatures
-  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/match_complete.xml.gz
   original_source:
   - interpro
-  format: xml
-  compression: gzip
+  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/match_complete.xml.gz
 - category: MappingProduct
+  compression: targz
+  description: InterPro matches for UniParc protein sequences
+  format: xml
   id: interpro.uniparc_match
   name: UniParc Match
-  description: InterPro matches for UniParc protein sequences
-  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/uniparc_match.tar.gz
   original_source:
   - interpro
-  format: xml
-  compression: targz
+  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/uniparc_match.tar.gz
 - category: MappingProduct
+  compression: gzip
+  description: Mappings of protein sequences to InterPro entries in a tab-delimited
+    format
+  format: tsv
   id: interpro.protein2ipr
   name: Protein to InterPro Mappings
-  description: Mappings of protein sequences to InterPro entries in a tab-delimited format
-  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/protein2ipr.dat.gz
   original_source:
   - interpro
-  format: tsv
-  compression: gzip
+  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/protein2ipr.dat.gz
 - category: DataModelProduct
+  description: Hierarchical relationships between InterPro entries
+  format: tsv
   id: interpro.parent_child_tree
   name: Parent-Child Tree
-  description: Hierarchical relationships between InterPro entries
-  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/ParentChildTreeFile.txt
   original_source:
   - interpro
-  format: tsv
+  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/ParentChildTreeFile.txt
 - category: MappingProduct
+  description: Mappings between InterPro entries and Gene Ontology (GO) terms
+  format: tsv
   id: interpro.interpro2go
   name: InterPro to GO Mappings
-  description: Mappings between InterPro entries and Gene Ontology (GO) terms
-  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go
   original_source:
   - go
   - interpro
+  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go
   secondary_source:
   - interpro
-  format: tsv
 publications:
-- doi: doi:10.1093/nar/gkae1082
-  id: doi:10.1093/nar/gkae1082
-  preferred: true
-  year: "2024"
-  authors:
+- authors:
   - Blum M
   - Andreeva A
   - Florentino LC
@@ -139,7 +136,7 @@ publications:
   - Gough J
   - Haft DH
   - Letunic I
-  - Llinares-López F
+  - "Llinares-L\xF3pez F"
   - Marchler-Bauer A
   - Meng-Papaxanthos L
   - Mi H
@@ -155,10 +152,13 @@ publications:
   - Tosatto SCE
   - Wu CH
   - Bateman A
-  title: >-
-    InterPro: the protein sequence classification resource in 2025
+  doi: doi:10.1093/nar/gkae1082
+  id: doi:10.1093/nar/gkae1082
+  preferred: true
+  title: 'InterPro: the protein sequence classification resource in 2025'
+  year: '2024'
+repository: https://www.ebi.ac.uk/interpro/
 ---
-
 InterPro is a database of protein families, domains and functional sites in which identifiable features found in known proteins can be applied to unknown protein sequences.
 
 ## Overview
