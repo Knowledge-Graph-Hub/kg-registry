@@ -2307,6 +2307,45 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
   secondary_source:
   - obo-db-ingest
+- category: DataModelProduct
+  description: kegg.genome OBO
+  format: obo
+  id: obo-db-ingest.kegg.genome.obo
+  license:
+    id: https://www.kegg.jp/kegg/legal.html
+    label: Custom
+  name: kegg.genome OBO
+  original_source:
+  - kegg
+  product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.obo
+  secondary_source:
+  - obo-db-ingest
+- category: DataModelProduct
+  description: kegg.genome OWL
+  format: owl
+  id: obo-db-ingest.kegg.genome.owl
+  license:
+    id: https://www.kegg.jp/kegg/legal.html
+    label: Custom
+  name: kegg.genome OWL
+  original_source:
+  - kegg
+  product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.owl
+  secondary_source:
+  - obo-db-ingest
+- category: DataModelProduct
+  description: kegg.genome OBO Graph JSON
+  format: json
+  id: obo-db-ingest.kegg.genome.json
+  license:
+    id: https://www.kegg.jp/kegg/legal.html
+    label: Custom
+  name: kegg.genome OBO Graph JSON
+  original_source:
+  - kegg
+  product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.json
+  secondary_source:
+  - obo-db-ingest
 repository: https://github.com/biopragmatics/obo-db-ingest
 ---
 OBO Database Ingestion
