@@ -4,6 +4,11 @@ category: DataSource
 contacts:
 - category: Organization
   label: KEGG
+  contact_details:
+  - contact_type: email
+    value: feedback@genome.jp
+  - contact_type: url
+    value: https://www.kegg.jp/feedback/
 description: The Kyoto Encyclopedia of Genes and Genomes (KEGG) is a database resource
   for understanding high-level functions and utilities of the biological system, such
   as the cell, the organism and the ecosystem, from molecular-level information, especially
@@ -11,6 +16,15 @@ description: The Kyoto Encyclopedia of Genes and Genomes (KEGG) is a database re
   experimental technologies.
 domains:
 - biological systems
+- pathways
+- pharmacology
+- drug discovery
+- genomics
+- proteomics
+- chemistry and biochemistry
+- health
+- disease
+- metabolic networks
 homepage_url: https://www.genome.jp/kegg/
 id: kegg
 layout: resource_detail
@@ -18,6 +32,10 @@ license:
   id: https://www.kegg.jp/feedback/copyright.html
   label: By request
 name: KEGG
+publications:
+- id: doi:10.1093/nar/gkae909
+  title: KEGG biological systems database as a model of the real world
+  preferred: true
 products:
 - category: MappingProduct
   description: Rhea SSSOM
@@ -54,5 +72,206 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
   secondary_source:
   - obo-db-ingest
+- category: DataModelProduct
+  description: kegg.genome OBO
+  format: obo
+  id: obo-db-ingest.kegg.genome.obo
+  license:
+    id: https://www.kegg.jp/kegg/legal.html
+    label: Custom
+  name: kegg.genome OBO
+  original_source:
+  - kegg
+  product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.obo
+  secondary_source:
+  - obo-db-ingest
+- category: DataModelProduct
+  description: kegg.genome OWL
+  format: owl
+  id: obo-db-ingest.kegg.genome.owl
+  license:
+    id: https://www.kegg.jp/kegg/legal.html
+    label: Custom
+  name: kegg.genome OWL
+  original_source:
+  - kegg
+  product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.owl
+  secondary_source:
+  - obo-db-ingest
+- category: DataModelProduct
+  description: kegg.genome OBO Graph JSON
+  format: json
+  id: obo-db-ingest.kegg.genome.json
+  license:
+    id: https://www.kegg.jp/kegg/legal.html
+    label: Custom
+  name: kegg.genome OBO Graph JSON
+  original_source:
+  - kegg
+  product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.json
+  secondary_source:
+  - obo-db-ingest
+- category: GraphicalInterface
+  id: kegg.web
+  name: KEGG Web Interface
+  description: Web interface for browsing and searching the KEGG database, including pathway maps, BRITE hierarchies, and other KEGG content
+  product_url: https://www.kegg.jp/kegg/
+  original_source:
+  - kegg
+  format: http
+- category: GraphicalInterface
+  id: kegg.medicus
+  name: KEGG MEDICUS
+  description: Web interface for integrated drug and disease information with a focus on drug interactions and health information
+  product_url: https://www.kegg.jp/kegg/medicus.html
+  original_source:
+  - kegg
+  format: http
+- category: GraphicalInterface
+  id: kegg.webapps
+  name: KEGG Web Apps
+  description: Interactive web applications for KEGG pathway viewing with coloring features and other visualization tools
+  product_url: https://www.kegg.jp/kegg/webapp/
+  original_source:
+  - kegg
+  format: http
+- category: ProgrammingInterface
+  id: kegg.api
+  name: KEGG REST API
+  description: REST-style Application Programming Interface to the KEGG database resource
+  product_url: https://www.kegg.jp/kegg/rest/
+  is_public: true
+  connection_url: https://rest.kegg.jp/
+  original_source:
+  - kegg
+- category: Product
+  id: kegg.pathway
+  name: KEGG PATHWAY
+  description: KEGG pathway maps representing molecular interaction and reaction networks
+  product_url: https://www.kegg.jp/kegg/pathway.html
+  original_source:
+  - kegg
+- category: DataModelProduct
+  id: kegg.brite
+  name: KEGG BRITE
+  description: BRITE hierarchies and tables for functional hierarchies of biological objects
+  product_url: https://www.kegg.jp/kegg/brite.html
+  original_source:
+  - kegg
+- category: Product
+  id: kegg.module
+  name: KEGG MODULE
+  description: KEGG modules representing tighter functional units within KEGG pathways
+  product_url: https://www.kegg.jp/kegg/module.html
+  original_source:
+  - kegg
+- category: Product
+  id: kegg.orthology
+  name: KEGG ORTHOLOGY
+  description: KO (KEGG Orthology) groups representing ortholog groups of genes
+  product_url: https://www.kegg.jp/kegg/ko.html
+  original_source:
+  - kegg
+- category: Product
+  id: kegg.genes
+  name: KEGG GENES
+  description: Gene catalogs of completely sequenced genomes
+  product_url: https://www.kegg.jp/kegg/genes.html
+  original_source:
+  - kegg
+- category: Product
+  id: kegg.genome
+  name: KEGG GENOME
+  description: Collection of organisms with complete genome sequences
+  product_url: https://www.kegg.jp/kegg/genome/
+  original_source:
+  - kegg
+  format: flat
+- category: Product
+  id: kegg.compound
+  name: KEGG COMPOUND
+  description: Collection of small molecules and biopolymers
+  product_url: https://www.kegg.jp/kegg/compound/
+  original_source:
+  - kegg
+- category: Product
+  id: kegg.glycan
+  name: KEGG GLYCAN
+  description: Collection of glycans
+  product_url: https://www.kegg.jp/kegg/glycan/
+  original_source:
+  - kegg
+- category: Product
+  id: kegg.reaction
+  name: KEGG REACTION
+  description: Collection of biochemical reactions
+  product_url: https://www.kegg.jp/kegg/reaction/
+  original_source:
+  - kegg
+  format: flat
+- category: Product
+  id: kegg.disease
+  name: KEGG DISEASE
+  description: Collection of human diseases
+  product_url: https://www.kegg.jp/kegg/disease/
+  original_source:
+  - kegg
+  format: flat
+- category: Product
+  id: kegg.drug
+  name: KEGG DRUG
+  description: Collection of drugs
+  product_url: https://www.kegg.jp/kegg/drug/
+  original_source:
+  - kegg
+- category: DataModelProduct
+  id: kegg.pathway.kgml
+  name: KEGG Pathway KGML
+  description: KEGG pathway maps in KGML (KEGG Markup Language) format, an XML representation of KEGG pathway maps
+  product_url: https://www.genome.jp/kegg/xml/
+  original_source:
+  - kegg
+  format: xml
+- category: ProcessProduct
+  id: kegg.mapper
+  name: KEGG Mapper
+  description: Collection of tools for mapping molecular datasets to KEGG pathway maps, BRITE hierarchies, and modules
+  product_url: https://www.kegg.jp/kegg/mapper/
+  original_source:
+  - kegg
+- category: ProcessProduct
+  id: kegg.syntax
+  name: KEGG Syntax
+  description: Tools for analyzing conserved genes, gene sets, and gene order
+  product_url: https://www.kegg.jp/kegg/syntax/
+  original_source:
+  - kegg
+- category: ProcessProduct
+  id: kegg.annotation
+  name: KEGG Annotation
+  description: Tools for KO (KEGG Orthology) assignment and validation
+  product_url: https://www.kegg.jp/kegg/annotation/
+  original_source:
+  - kegg
+- category: ProcessProduct
+  id: kegg.blastkoala
+  name: BlastKOALA
+  description: BLAST-based KO annotation and KEGG mapping tool
+  product_url: https://www.kegg.jp/blastkoala/
+  original_source:
+  - kegg
 ---
-KEGG
+## Kyoto Encyclopedia of Genes and Genomes (KEGG)
+
+KEGG is a comprehensive resource for understanding high-level functions and utilities of biological systems. It integrates genomic, chemical, and systemic functional information to provide a computational representation of biological systems and their relationships to genetic diseases and drugs.
+
+Key components of KEGG include:
+
+1. **KEGG PATHWAY**: Manually curated pathway maps representing molecular interaction and reaction networks
+2. **KEGG BRITE**: Hierarchical classifications of biological entities
+3. **KEGG MODULE**: Functional units within pathways
+4. **KEGG GENES**: Gene catalogs from complete genomes
+5. **KEGG COMPOUND/GLYCAN/REACTION**: Chemical information
+6. **KEGG DISEASE/DRUG**: Health-related information
+
+KEGG is widely used for pathway mapping, functional annotation, and systems biology research.
