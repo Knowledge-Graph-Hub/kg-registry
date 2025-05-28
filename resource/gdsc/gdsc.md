@@ -17,13 +17,17 @@ contacts:
   - contact_type: url
     value: http://www.massgeneral.org/cancer/
   label: Massachusetts General Hospital Cancer Center
-description: The Genomics of Drug Sensitivity in Cancer (GDSC) is a database and resource that characterizes cancer cell lines and their responses to anti-cancer drugs. It contains drug screening data for over 1000 cancer cell lines with hundreds of compounds, as well as genomic feature data such as mutations, copy number variations, methylation, and gene expression. The aim is to identify molecular features of cancers that predict response to anti-cancer drugs.
+description: The Genomics of Drug Sensitivity in Cancer (GDSC) is a database and resource
+  that characterizes cancer cell lines and their responses to anti-cancer drugs. It
+  contains drug screening data for over 1000 cancer cell lines with hundreds of compounds,
+  as well as genomic feature data such as mutations, copy number variations, methylation,
+  and gene expression. The aim is to identify molecular features of cancers that predict
+  response to anti-cancer drugs.
 domains:
 - biomedical
 - health
 - drug discovery
 - genomics
-- cancer
 - pharmacology
 homepage_url: https://www.cancerrxgene.org/
 id: gdsc
@@ -34,7 +38,8 @@ license:
 name: Genomics of Drug Sensitivity in Cancer
 products:
 - category: GraphicalInterface
-  description: Web interface for searching and browsing GDSC data including cell lines, compounds, and genomic features
+  description: Web interface for searching and browsing GDSC data including cell lines,
+    compounds, and genomic features
   format: http
   id: gdsc.site
   name: GDSC Web Interface
@@ -50,7 +55,8 @@ products:
   - gdsc
   product_url: https://www.cancerrxgene.org/downloads/drug_data
 - category: Product
-  description: ANOVA analysis results of associations between drug sensitivity and genomic features
+  description: ANOVA analysis results of associations between drug sensitivity and
+    genomic features
   format: csv
   id: gdsc.anova
   name: GDSC ANOVA Results
@@ -58,7 +64,8 @@ products:
   - gdsc
   product_url: https://www.cancerrxgene.org/downloads/anova
 - category: Product
-  description: Genetic feature data including mutations, copy number variations, gene expression, and methylation
+  description: Genetic feature data including mutations, copy number variations, gene
+    expression, and methylation
   format: csv
   id: gdsc.genetic_features
   name: GDSC Genetic Features
@@ -73,137 +80,181 @@ products:
   original_source:
   - gdsc
   product_url: https://ftp.sanger.ac.uk/project/cancerrxgene/releases/
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - ncbigene
+  - medline
+  - mesh
+  - pid
+  - do
+  - diseases
+  - drugcentral
+  - go
+  - gwas-catalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
+  secondary_source:
+  - spoke
 publications:
 - authors:
-  - "Yang W"
-  - "Soares J"
-  - "Greninger P"
-  - "Edelman EJ"
-  - "Lightfoot H"
-  - "Forbes S"
-  - "Bindal N"
-  - "Beare D"
-  - "Smith JA"
-  - "Thompson IR"
-  - "Ramaswamy S"
-  - "Futreal PA"
-  - "Haber DA"
-  - "Stratton MR"
-  - "Benes C"
-  - "McDermott U"
-  - "Garnett MJ"
+  - Yang W
+  - Soares J
+  - Greninger P
+  - Edelman EJ
+  - Lightfoot H
+  - Forbes S
+  - Bindal N
+  - Beare D
+  - Smith JA
+  - Thompson IR
+  - Ramaswamy S
+  - Futreal PA
+  - Haber DA
+  - Stratton MR
+  - Benes C
+  - McDermott U
+  - Garnett MJ
   doi: doi:10.1093/nar/gks1111
   id: http://doi.org/10.1093/nar/gks1111
   journal: Nucleic Acids Research
   preferred: true
-  title: Genomics of Drug Sensitivity in Cancer (GDSC): a resource for therapeutic biomarker discovery in cancer cells
-  year: "2013"
+  title: 'Genomics of Drug Sensitivity in Cancer (GDSC): a resource for therapeutic
+    biomarker discovery in cancer cells'
+  year: '2013'
 - authors:
-  - "Iorio F"
-  - "Knijnenburg TA"
-  - "Vis DJ"
-  - "Bignell GR"
-  - "Menden MP"
-  - "Schubert M"
-  - "Aben N"
-  - "Gonçalves E"
-  - "Barthorpe S"
-  - "Lightfoot H"
-  - "Cokelaer T"
-  - "Greninger P"
-  - "van Dyk E"
-  - "Chang H"
-  - "de Silva H"
-  - "Heyn H"
-  - "Deng X"
-  - "Egan RK"
-  - "Liu Q"
-  - "Mironenko T"
-  - "Mitropoulos X"
-  - "Richardson L"
-  - "Wang J"
-  - "Zhang T"
-  - "Moran S"
-  - "Sayols S"
-  - "Soleimani M"
-  - "Tamborero D"
-  - "Lopez-Bigas N"
-  - "Ross-Macdonald P"
-  - "Esteller M"
-  - "Gray NS"
-  - "Haber DA"
-  - "Stratton MR"
-  - "Benes CH"
-  - "Wessels LFA"
-  - "Saez-Rodriguez J"
-  - "McDermott U"
-  - "Garnett MJ"
+  - Iorio F
+  - Knijnenburg TA
+  - Vis DJ
+  - Bignell GR
+  - Menden MP
+  - Schubert M
+  - Aben N
+  - "Gon\xE7alves E"
+  - Barthorpe S
+  - Lightfoot H
+  - Cokelaer T
+  - Greninger P
+  - van Dyk E
+  - Chang H
+  - de Silva H
+  - Heyn H
+  - Deng X
+  - Egan RK
+  - Liu Q
+  - Mironenko T
+  - Mitropoulos X
+  - Richardson L
+  - Wang J
+  - Zhang T
+  - Moran S
+  - Sayols S
+  - Soleimani M
+  - Tamborero D
+  - Lopez-Bigas N
+  - Ross-Macdonald P
+  - Esteller M
+  - Gray NS
+  - Haber DA
+  - Stratton MR
+  - Benes CH
+  - Wessels LFA
+  - Saez-Rodriguez J
+  - McDermott U
+  - Garnett MJ
   id: https://doi.org/10.1016/j.cell.2016.06.017
   journal: Cell
   title: A landscape of pharmacogenomic interactions in cancer
-  year: "2016"
+  year: '2016'
 - authors:
-  - "Garnett MJ"
-  - "Edelman EJ"
-  - "Heidorn SJ"
-  - "Greenman CD"
-  - "Dastur A"
-  - "Lau KW"
-  - "Greninger P"
-  - "Thompson IR"
-  - "Luo X"
-  - "Soares J"
-  - "Liu Q"
-  - "Iorio F"
-  - "Surdez D"
-  - "Chen L"
-  - "Milano RJ"
-  - "Bignell GR"
-  - "Tam AT"
-  - "Davies H"
-  - "Stevenson JA"
-  - "Barthorpe S"
-  - "Lutz SR"
-  - "Kogera F"
-  - "Lawrence K"
-  - "McLaren-Douglas A"
-  - "Mitropoulos X"
-  - "Mironenko T"
-  - "Thi H"
-  - "Richardson L"
-  - "Zhou W"
-  - "Jewitt F"
-  - "Zhang T"
-  - "O'Brien P"
-  - "Boisvert JL"
-  - "Price S"
-  - "Hur W"
-  - "Yang W"
-  - "Deng X"
-  - "Butler A"
-  - "Choi HG"
-  - "Chang JW"
-  - "Baselga J"
-  - "Stamenkovic I"
-  - "Engelman JA"
-  - "Sharma SV"
-  - "Delattre O"
-  - "Saez-Rodriguez J"
-  - "Gray NS"
-  - "Settleman J"
-  - "Futreal PA"
-  - "Haber DA"
-  - "Stratton MR"
-  - "Ramaswamy S"
-  - "McDermott U"
-  - "Benes CH"
+  - Garnett MJ
+  - Edelman EJ
+  - Heidorn SJ
+  - Greenman CD
+  - Dastur A
+  - Lau KW
+  - Greninger P
+  - Thompson IR
+  - Luo X
+  - Soares J
+  - Liu Q
+  - Iorio F
+  - Surdez D
+  - Chen L
+  - Milano RJ
+  - Bignell GR
+  - Tam AT
+  - Davies H
+  - Stevenson JA
+  - Barthorpe S
+  - Lutz SR
+  - Kogera F
+  - Lawrence K
+  - McLaren-Douglas A
+  - Mitropoulos X
+  - Mironenko T
+  - Thi H
+  - Richardson L
+  - Zhou W
+  - Jewitt F
+  - Zhang T
+  - O'Brien P
+  - Boisvert JL
+  - Price S
+  - Hur W
+  - Yang W
+  - Deng X
+  - Butler A
+  - Choi HG
+  - Chang JW
+  - Baselga J
+  - Stamenkovic I
+  - Engelman JA
+  - Sharma SV
+  - Delattre O
+  - Saez-Rodriguez J
+  - Gray NS
+  - Settleman J
+  - Futreal PA
+  - Haber DA
+  - Stratton MR
+  - Ramaswamy S
+  - McDermott U
+  - Benes CH
   id: https://doi.org/10.1038/nature11005
   journal: Nature
-  title: Systematic identification of genomic markers of drug sensitivity in cancer cells
-  year: "2012"
+  title: Systematic identification of genomic markers of drug sensitivity in cancer
+    cells
+  year: '2012'
 repository: https://github.com/CancerRxGene
 ---
-
 ## Overview
 
 The Genomics of Drug Sensitivity in Cancer (GDSC) is a major collaboration between the Cancer Genome Project at the Wellcome Sanger Institute (UK) and the Center for Molecular Therapeutics at Massachusetts General Hospital Cancer Center (USA). The project aims to discover therapeutic biomarkers that can help identify patients most likely to respond to different anti-cancer drugs.
