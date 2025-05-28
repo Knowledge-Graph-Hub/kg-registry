@@ -78,7 +78,23 @@ products:
   description: "The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources."
   category: GraphProduct
   original_source:
-  - spoke
+  - ncbigene
+  - medline
+  - mesh
+  - pid
+  - do
+  - diseases
+  - drugcentral
+  - go
+  - gwas-catalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
   secondary_source:
   - spoke
 - id: spoke.neighborhood_explorer
