@@ -12,15 +12,20 @@ contacts:
   - contact_type: email
     value: help@bv-brc.org
   label: BV-BRC Help Desk
-description: The Bacterial and Viral Bioinformatics Resource Center (BV-BRC) is a comprehensive resource for bacterial and viral infectious disease research that combines the data, technology, and extensive user communities from two long-running centers - PATRIC (the bacterial system) and IRD/ViPR (the viral systems). BV-BRC provides integrated data, advanced bioinformatics tools, and workflows to support the scientific community in understanding and combating infectious diseases.
+description: The Bacterial and Viral Bioinformatics Resource Center (BV-BRC) is a
+  comprehensive resource for bacterial and viral infectious disease research that
+  combines the data, technology, and extensive user communities from two long-running
+  centers - PATRIC (the bacterial system) and IRD/ViPR (the viral systems). BV-BRC
+  provides integrated data, advanced bioinformatics tools, and workflows to support
+  the scientific community in understanding and combating infectious diseases.
 domains:
 - microbiology
 - genomics
 - health
-- infectious diseases
 - biomedical
 homepage_url: https://www.bv-brc.org/
 id: bv-brc
+layout: resource_detail
 license:
   id: https://www.bv-brc.org/about
   label: Custom
@@ -33,7 +38,8 @@ products:
   name: BV-BRC Web Interface
   product_url: https://www.bv-brc.org/
 - category: ProgrammingInterface
-  description: Application Programming Interface for programmatic access to BV-BRC data
+  description: Application Programming Interface for programmatic access to BV-BRC
+    data
   format: http
   id: bv-brc.api
   is_public: true
@@ -51,58 +57,100 @@ products:
   id: bv-brc.ftp
   name: BV-BRC FTP
   product_url: https://www.bv-brc.org/docs/quick_references/ftp.html
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - ncbigene
+  - medline
+  - mesh
+  - pid
+  - do
+  - diseases
+  - drugcentral
+  - go
+  - gwas-catalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
+  secondary_source:
+  - spoke
 publications:
 - authors:
-  - "Olson RD"
-  - "Assaf R"
-  - "Brettin T"
-  - "Conrad N"
-  - "Cucinell C"
-  - "Davis JJ"
-  - "Dempsey DM"
-  - "Dickerman A"
-  - "Dietrich EM"
-  - "Kenyon RW"
-  - "Kuscuoglu M"
-  - "Lefkowitz EJ"
-  - "Lu J"
-  - "Machi D"
-  - "Macken C"
-  - "Mao C"
-  - "Niewiadomska A"
-  - "Nguyen M"
-  - "Olsen GJ"
-  - "Overbeek JC"
-  - "Parrello B"
-  - "Parrello V"
-  - "Porter JS"
-  - "Pusch GD"
-  - "Shukla M"
-  - "Singh I"
-  - "Stewart L"
-  - "Tan G"
-  - "Thomas C"
-  - "VanOeffelen M"
-  - "Vonstein V"
-  - "Wallace ZS"
-  - "Warren AS"
-  - "Wattam AR"
-  - "Xia F"
-  - "Yoo H"
-  - "Zhang Y"
-  - "Zmasek CM"
-  - "Scheuermann RH"
-  - "Stevens RL"
+  - Olson RD
+  - Assaf R
+  - Brettin T
+  - Conrad N
+  - Cucinell C
+  - Davis JJ
+  - Dempsey DM
+  - Dickerman A
+  - Dietrich EM
+  - Kenyon RW
+  - Kuscuoglu M
+  - Lefkowitz EJ
+  - Lu J
+  - Machi D
+  - Macken C
+  - Mao C
+  - Niewiadomska A
+  - Nguyen M
+  - Olsen GJ
+  - Overbeek JC
+  - Parrello B
+  - Parrello V
+  - Porter JS
+  - Pusch GD
+  - Shukla M
+  - Singh I
+  - Stewart L
+  - Tan G
+  - Thomas C
+  - VanOeffelen M
+  - Vonstein V
+  - Wallace ZS
+  - Warren AS
+  - Wattam AR
+  - Xia F
+  - Yoo H
+  - Zhang Y
+  - Zmasek CM
+  - Scheuermann RH
+  - Stevens RL
   doi: doi:10.1093/nar/gkac1003
   id: https://pubmed.ncbi.nlm.nih.gov/36350631/
   journal: Nucleic Acids Research
   preferred: true
-  title: Introducing the Bacterial and Viral Bioinformatics Resource Center (BV-BRC): a resource combining PATRIC, IRD and ViPR
-  year: "2022"
+  title: 'Introducing the Bacterial and Viral Bioinformatics Resource Center (BV-BRC):
+    a resource combining PATRIC, IRD and ViPR'
+  year: '2022'
 repository: https://github.com/BV-BRC
-layout: resource_detail
 ---
-
 ## Overview
 
 The Bacterial and Viral Bioinformatics Resource Center (BV-BRC) is an information system designed to support the biomedical research community's work on bacterial and viral infectious diseases via integration of vital pathogen information with rich data and analysis tools. BV-BRC combines the data, technology, and extensive user communities from two long-running centers: PATRIC, the bacterial system, and IRD/ViPR, the viral systems.
