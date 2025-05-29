@@ -3,13 +3,17 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Organization
-  label: BD2K-LINCS Data Coordination and Integration Center
   contact_details:
   - contact_type: email
     value: ilincs@googlegroups.com
+  label: BD2K-LINCS Data Coordination and Integration Center
 - category: Organization
   label: National Institutes of Health (NIH) Common Fund
-description: The Library of Integrated Network-based Cellular Signatures (LINCS) is a comprehensive collection of data that catalogs how human cells globally respond to chemical, genetic, and disease perturbations. It aims to better understand human disease and advance the development of new therapies by assembling an integrated picture of the range of responses of human cells exposed to many perturbations.
+description: The Library of Integrated Network-based Cellular Signatures (LINCS) is
+  a comprehensive collection of data that catalogs how human cells globally respond
+  to chemical, genetic, and disease perturbations. It aims to better understand human
+  disease and advance the development of new therapies by assembling an integrated
+  picture of the range of responses of human cells exposed to many perturbations.
 domains:
 - biomedical
 - drug discovery
@@ -22,7 +26,8 @@ id: lincs
 name: LINCS
 products:
 - category: GraphicalInterface
-  description: Web interface that allows users to explore, analyze, and visualize LINCS signatures and datasets.
+  description: Web interface that allows users to explore, analyze, and visualize
+    LINCS signatures and datasets.
   id: lincs.portal
   name: LINCS Data Portal 2.0
   product_url: https://lincsportal.ccs.miami.edu/signatures/home
@@ -32,6 +37,133 @@ products:
   is_public: true
   name: LINCS API
   product_url: https://lincsportal.ccs.miami.edu/sigc-api/swagger-ui.html#/
+- category: GraphProduct
+  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
+    instances as neo4j graph databases, running in a Docker container. Requires UMLS
+    API key to access.
+  dump_format: neo4j
+  id: ubkg.neo4j
+  name: UBKG Neo4j Docker Distribution
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - do
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - cmap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - nposckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+- category: GraphProduct
+  description: Ontology CSV files that can be imported into a neo4j instance to create
+    a UBKG database. Requires UMLS API key to access.
+  format: csv
+  id: ubkg.csv
+  name: UBKG Ontology CSV Files
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - do
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - cmap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - nposckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
 publications:
 - authors:
   - Keenan AB
@@ -53,7 +185,7 @@ publications:
   - Koleti A
   - Vidovic D
   - Chung C
-  - Schürer SC
+  - "Sch\xFCrer SC"
   - Vasiliauskas J
   - Pilarczyk M
   - Shamsaei B
@@ -145,8 +277,9 @@ publications:
   id: https://doi.org/10.1016/j.cels.2017.11.001
   journal: Cell Systems
   preferred: true
-  title: The Library of Integrated Network-Based Cellular Signatures NIH Program - System-Level Cataloging of Human Cells Response to Perturbations
-  year: "2018"
+  title: The Library of Integrated Network-Based Cellular Signatures NIH Program -
+    System-Level Cataloging of Human Cells Response to Perturbations
+  year: '2018'
 - authors:
   - Koleti A
   - Terryn R
@@ -176,12 +309,14 @@ publications:
   - Medvedovic M
   - Ma'ayan A
   - Pillai A
-  - Schürer SC
+  - "Sch\xFCrer SC"
   doi: doi:10.1093/nar/gkx1063
   id: https://doi.org/10.1093/nar/gkx1063
   journal: Nucleic Acids Research
-  title: Data Portal for the Library of Integrated Network-based Cellular Signatures (LINCS) program - integrated access to diverse large-scale cellular perturbation response data
-  year: "2018"
+  title: Data Portal for the Library of Integrated Network-based Cellular Signatures
+    (LINCS) program - integrated access to diverse large-scale cellular perturbation
+    response data
+  year: '2018'
 - authors:
   - Shen JP
   - Ozerov IV
@@ -195,8 +330,9 @@ publications:
   doi: doi:10.1038/s41467-022-32205-3
   id: https://doi.org/10.1038/s41467-022-32205-3
   journal: Nature Communications
-  title: Connecting omics signatures of diseases, drugs, and mechanisms of actions with iLINCS
-  year: "2022"
+  title: Connecting omics signatures of diseases, drugs, and mechanisms of actions
+    with iLINCS
+  year: '2022'
 ---
 The Library of Integrated Network-based Cellular Signatures (LINCS) is an NIH Common Fund program that catalogs how human cells globally respond to chemical, genetic, and disease perturbations. By assembling an integrated picture of the range of responses of human cells exposed to many perturbations, the LINCS program aims to better understand human disease and to advance the development of new therapies.
 

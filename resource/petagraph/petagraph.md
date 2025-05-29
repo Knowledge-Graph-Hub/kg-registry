@@ -1,48 +1,53 @@
 ---
 activity_status: active
-id: petagraph
-name: Petagraph
-description: Petagraph is a large-scale biomedical knowledge graph that encompasses over 32 million nodes and 118 million relationships, integrating multi-omics and clinical data. Built on the Unified Biomedical Knowledge Graph (UBKG), Petagraph leverages more than 180 ontologies and standards to embed millions of quantitative genomics data points within a richly connected annotation environment.
-domains:
-- health
-- biomedical
-- genomics
-- knowledge representation
+category: KnowledgeGraph
 contacts:
 - category: Individual
-  label: Deanne M. Taylor
   contact_details:
   - contact_type: github
     value: taylordm
   - contact_type: email
     value: taylordm@chop.edu
+  label: Deanne M. Taylor
 - category: Organization
-  label: Taylor Research Lab
   contact_details:
   - contact_type: github
     value: TaylorResearchLab
   - contact_type: url
     value: https://taylorlab.chop.edu/
+  label: Taylor Research Lab
+description: Petagraph is a large-scale biomedical knowledge graph that encompasses
+  over 32 million nodes and 118 million relationships, integrating multi-omics and
+  clinical data. Built on the Unified Biomedical Knowledge Graph (UBKG), Petagraph
+  leverages more than 180 ontologies and standards to embed millions of quantitative
+  genomics data points within a richly connected annotation environment.
+domains:
+- health
+- biomedical
+- genomics
 homepage_url: https://github.com/TaylorResearchLab/Petagraph
-repository: https://github.com/TaylorResearchLab/Petagraph
+id: petagraph
+license:
+  id: https://www.nlm.nih.gov/databases/umls.html
+  label: UMLS License Agreement
+name: Petagraph
 products:
-- id: petagraph.graph
-  name: Petagraph Knowledge Graph (Neo4J)
-  description: A comprehensive multi-omics biomedical knowledge graph connecting genomic, transcriptomic, proteomic, and clinical data. Contains over 32 million nodes and 118 million relationships.
-  product_url: https://ubkg-downloads.xconsortia.org/
-  category: GraphProduct
+- category: GraphProduct
+  description: A comprehensive multi-omics biomedical knowledge graph connecting genomic,
+    transcriptomic, proteomic, and clinical data. Contains over 32 million nodes and
+    118 million relationships.
   dump_format: neo4j
-  node_count: 32000000
   edge_count: 118000000
-  secondary_source:
-  - ubkg
+  id: petagraph.graph
+  name: Petagraph Knowledge Graph (Neo4J)
+  node_count: 32000000
   original_source:
   - petagraph
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
 publications:
-- id: https://doi.org/10.1038/s41597-024-04070-w
-  preferred: true
-  title: "Petagraph: A large-scale unifying knowledge graph framework for integrating biomolecular and biomedical data"
-  authors:
+- authors:
   - Benjamin J. Stear
   - Taha Mohseni Ahooyi
   - J. Alan Simmons
@@ -55,15 +60,15 @@ publications:
   - Christopher M. Nemarich
   - Jonathan C. Silverstein
   - Deanne M. Taylor
-  journal: Scientific Data
-  year: "2024"
   doi: doi:10.1038/s41597-024-04070-w
-license:
-  label: UMLS License Agreement
-  id: https://www.nlm.nih.gov/databases/umls.html
-category: KnowledgeGraph
+  id: https://doi.org/10.1038/s41597-024-04070-w
+  journal: Scientific Data
+  preferred: true
+  title: 'Petagraph: A large-scale unifying knowledge graph framework for integrating
+    biomolecular and biomedical data'
+  year: '2024'
+repository: https://github.com/TaylorResearchLab/Petagraph
 ---
-
 ## Petagraph: A Large-Scale Biomedical Knowledge Graph
 
 **Petagraph** is a comprehensive biomedical knowledge graph that encompasses over 32 million nodes and 118 million relationships. It provides a cohesive data environment that enables users to efficiently analyze, annotate, and discern relationships within and across complex multi-omics datasets.

@@ -4,6 +4,7 @@ bgee,active,PASS
 bigg,active,PASS
 biocyc,active,PASS
 biolink,active,PASS
+biomarker,active,PASS
 biomarkerkg,active,PASS
 bioteque,active,PASS
 bv-brc,active,PASS
@@ -79,6 +80,7 @@ np-kg,active,PASS
 obo-db-ingest,active,PASS
 oma,active,PASS
 ontology-kp,active,PASS
+opentargets,active,PASS
 orcid,active,PASS
 orthodb,active,PASS
 pankbase,active,PASS
@@ -111,6 +113,7 @@ swisslipid,active,PASS
 text-mining-kp,active,PASS
 ubergraph,active,PASS
 uberon,active,PASS
+ubkg,active,PASS
 uniprot,active,PASS
 zfin,active,PASS
 rdbridge,unresponsive,PASS

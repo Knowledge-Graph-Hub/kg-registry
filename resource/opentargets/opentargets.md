@@ -22,7 +22,8 @@ license:
 name: Open Targets
 products:
 - category: GraphicalInterface
-  description: The Open Targets Platform integrates and visualizes public data on target-disease associations to assist in drug target identification and prioritization.
+  description: The Open Targets Platform integrates and visualizes public data on
+    target-disease associations to assist in drug target identification and prioritization.
   format: http
   id: opentargets.platform
   name: Open Targets Platform
@@ -40,30 +41,158 @@ products:
   is_public: true
   name: Open Targets Platform REST API
   product_url: https://api.platform.opentargets.org/api/v4/rest
+- category: GraphProduct
+  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
+    instances as neo4j graph databases, running in a Docker container. Requires UMLS
+    API key to access.
+  dump_format: neo4j
+  id: ubkg.neo4j
+  name: UBKG Neo4j Docker Distribution
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - do
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - cmap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - nposckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+- category: GraphProduct
+  description: Ontology CSV files that can be imported into a neo4j instance to create
+    a UBKG database. Requires UMLS API key to access.
+  format: csv
+  id: ubkg.csv
+  name: UBKG Ontology CSV Files
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - do
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - cmap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - nposckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
 publications:
 - authors:
-    - Diederik S. Laman Trip
-    - Marc van Oostrum
-    - Danish Memon
-    - Fabian Frommelt
-    - Delora Baptista
-    - Kalpana Panneerselvam
-    - Glyn Bradley
-    - Luana Licata
-    - Henning Hermjakob
-    - Sandra Orchard
-    - Gosia Trynka
-    - Ellen M. McDonagh
-    - Andrea Fossati
-    - Ruedi Aebersold
-    - Matthias Gstaiger
-    - Bernd Wollscheid
-    - Pedro Beltrao
+  - Diederik S. Laman Trip
+  - Marc van Oostrum
+  - Danish Memon
+  - Fabian Frommelt
+  - Delora Baptista
+  - Kalpana Panneerselvam
+  - Glyn Bradley
+  - Luana Licata
+  - Henning Hermjakob
+  - Sandra Orchard
+  - Gosia Trynka
+  - Ellen M. McDonagh
+  - Andrea Fossati
+  - Ruedi Aebersold
+  - Matthias Gstaiger
+  - Bernd Wollscheid
+  - Pedro Beltrao
   doi: doi:10.1038/s41587-025-02659-z
   id: https://doi.org/10.1038/s41587-025-02659-z
   journal: Nature Biotechnology
   preferred: true
-  title: A tissue-specific atlas of protein–protein associations enables prioritization of candidate disease genes
+  title: "A tissue-specific atlas of protein\u2013protein associations enables prioritization\
+    \ of candidate disease genes"
   year: '2025'
 - authors:
   - Cruz-Castillo, C.
@@ -81,7 +210,8 @@ publications:
   doi: doi:10.1093/bioinformatics/btaf070
   id: https://doi.org/10.1093/bioinformatics/btaf070
   journal: Bioinformatics
-  title: Associations on the Fly, a new feature aiming to facilitate exploration of the Open Targets Platform evidence
+  title: Associations on the Fly, a new feature aiming to facilitate exploration of
+    the Open Targets Platform evidence
   year: '2025'
 repository: https://github.com/opentargets
 ---
