@@ -880,7 +880,8 @@
                 "systems biology",
                 "synthetic biology",
                 "translational",
-                "upper"
+                "upper",
+                "food science"
             ],
             "title": "DomainEnum",
             "type": "string"
