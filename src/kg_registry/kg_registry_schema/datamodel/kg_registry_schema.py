@@ -289,6 +289,8 @@ class FormatEnum(str, Enum):
     trapi_jsonl = "trapi-jsonl"
     # The YAML Ain't Markup Language (YAML) format, a human-readable data serialization format. It is often used for configuration files and data exchange between languages with different data structures.
     yaml = "yaml"
+    # The Variant Call Format (VCF), a text file format for storing gene sequence variations. It is commonly used in bioinformatics to store gene sequence variations, such as single nucleotide polymorphisms (SNPs).
+    vcf = "vcf"
 
 
 class StandardEnum(str, Enum):
