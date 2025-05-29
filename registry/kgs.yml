@@ -308,6 +308,74 @@ resources:
     product_url: https://www.bgee.org/download/data-dumps/current/rdf/
     secondary_source:
     - bgee
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
   publications:
   - authors:
     - Bastian FB
@@ -999,6 +1067,157 @@ resources:
     year: '2022'
   repository: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.bv-brc.org/
+    label: Bacterial and Viral Bioinformatics Resource Center
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: help@bv-brc.org
+    label: BV-BRC Help Desk
+  description: The Bacterial and Viral Bioinformatics Resource Center (BV-BRC) is
+    a comprehensive resource for bacterial and viral infectious disease research that
+    combines the data, technology, and extensive user communities from two long-running
+    centers - PATRIC (the bacterial system) and IRD/ViPR (the viral systems). BV-BRC
+    provides integrated data, advanced bioinformatics tools, and workflows to support
+    the scientific community in understanding and combating infectious diseases.
+  domains:
+  - microbiology
+  - genomics
+  - health
+  - biomedical
+  homepage_url: https://www.bv-brc.org/
+  id: bv-brc
+  layout: resource_detail
+  license:
+    id: https://www.bv-brc.org/about
+    label: Custom
+  name: Bacterial and Viral Bioinformatics Resource Center
+  products:
+  - category: GraphicalInterface
+    description: Web-based interface providing access to BV-BRC data, tools, and services
+    format: http
+    id: bv-brc.site
+    name: BV-BRC Web Interface
+    product_url: https://www.bv-brc.org/
+  - category: ProgrammingInterface
+    description: Application Programming Interface for programmatic access to BV-BRC
+      data
+    format: http
+    id: bv-brc.api
+    is_public: true
+    name: BV-BRC Data API
+    product_url: https://www.bv-brc.org/api/doc/
+  - category: ProcessProduct
+    description: Command Line Interface for batch access to BV-BRC data and services
+    format: http
+    id: bv-brc.cli
+    name: BV-BRC CLI
+    product_url: https://www.bv-brc.org/docs/cli_tutorial/index.html
+  - category: Product
+    description: FTP server providing direct access to BV-BRC data files
+    format: http
+    id: bv-brc.ftp
+    name: BV-BRC FTP
+    product_url: https://www.bv-brc.org/docs/quick_references/ftp.html
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
+  publications:
+  - authors:
+    - Olson RD
+    - Assaf R
+    - Brettin T
+    - Conrad N
+    - Cucinell C
+    - Davis JJ
+    - Dempsey DM
+    - Dickerman A
+    - Dietrich EM
+    - Kenyon RW
+    - Kuscuoglu M
+    - Lefkowitz EJ
+    - Lu J
+    - Machi D
+    - Macken C
+    - Mao C
+    - Niewiadomska A
+    - Nguyen M
+    - Olsen GJ
+    - Overbeek JC
+    - Parrello B
+    - Parrello V
+    - Porter JS
+    - Pusch GD
+    - Shukla M
+    - Singh I
+    - Stewart L
+    - Tan G
+    - Thomas C
+    - VanOeffelen M
+    - Vonstein V
+    - Wallace ZS
+    - Warren AS
+    - Wattam AR
+    - Xia F
+    - Yoo H
+    - Zhang Y
+    - Zmasek CM
+    - Scheuermann RH
+    - Stevens RL
+    doi: doi:10.1093/nar/gkac1003
+    id: https://pubmed.ncbi.nlm.nih.gov/36350631/
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'Introducing the Bacterial and Viral Bioinformatics Resource Center (BV-BRC):
+      a resource combining PATRIC, IRD and ViPR'
+    year: '2022'
+  repository: https://github.com/BV-BRC
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -1560,6 +1779,49 @@ resources:
     product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_uniprot_mapping.txt
     secondary_source:
     - chembl
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
   publications:
   - authors:
     - Zdrazil B
@@ -1624,6 +1886,224 @@ resources:
     - chr
   repository: https://github.com/monarch-initiative/monochrom/
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: help@civicdb.org
+    label: CIViC Support
+  - category: Organization
+    label: The McDonnell Genome Institute at Washington University School of Medicine
+  description: The Clinical Interpretation of Variants in Cancer (CIViC) knowledgebase
+    is a free and open resource for public use that enables the interpretation of
+    variants in cancer by providing community-curated information about the clinical
+    significance of genomic variants.
+  domains:
+  - biomedical
+  - health
+  - genomics
+  - clinical
+  - precision medicine
+  homepage_url: https://civicdb.org/
+  id: civic
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+  name: CIViC
+  products:
+  - category: GraphicalInterface
+    description: Web interface that allows searching, browsing, and curating content
+      in the CIViC database.
+    id: civic.site
+    name: CIViC Web Interface
+    product_url: https://civicdb.org/
+  - category: ProgrammingInterface
+    description: GraphQL API for programmatic access to the CIViC database.
+    id: civic.api.v2
+    is_public: true
+    name: CIViC GraphQL API (V2)
+    product_url: https://civicdb.org/api/graphiql
+  - category: ProgrammingInterface
+    description: REST API for programmatic access to the CIViC database (deprecated
+      but still accessible).
+    id: civic.api.v1
+    is_public: true
+    name: CIViC REST API (V1 - Deprecated)
+    product_url: https://v1.civicdb.org/api
+  - category: Product
+    description: CIViC Feature summaries, nightly version
+    format: tsv
+    id: civic.data.features
+    name: CIViC Features (Nightly)
+    product_url: https://civicdb.org/downloads/nightly/nightly-FeatureSummaries.tsv
+  - category: Product
+    description: CIViC Variant summaries, nightly version
+    format: tsv
+    id: civic.data.variants
+    name: CIViC Variants (Nightly)
+    product_url: https://civicdb.org/downloads/nightly/nightly-VariantSummaries.tsv
+  - category: Product
+    description: CIViC Molecular Profile summaries, nightly version
+    format: tsv
+    id: civic.data.molecularprofile
+    name: CIViC Molecular Profiles (Nightly)
+    product_url: https://civicdb.org/downloads/nightly/nightly-MolecularProfileSummaries.tsv
+  - category: Product
+    description: CIViC Clinical Evidence summaries, nightly version
+    format: tsv
+    id: civic.data.evidence
+    name: CIViC Clinical Evidence (Nightly)
+    product_url: https://civicdb.org/downloads/nightly/nightly-ClinicalEvidenceSummaries.tsv
+  - category: Product
+    description: CIViC Variant Group summaries, nightly version
+    format: tsv
+    id: civic.data.variantgroups
+    name: CIViC Variant Groups (Nightly)
+    product_url: https://civicdb.org/downloads/nightly/nightly-VariantGroupSummaries.tsv
+  - category: Product
+    description: CIViC Assertion summaries, nightly version
+    format: tsv
+    id: civic.data.assertions
+    name: CIViC Assertions (Nightly)
+    product_url: https://civicdb.org/downloads/nightly/nightly-AssertionSummaries.tsv
+  - category: Product
+    description: CIViC Accepted Variants, nightly version
+    format: vcf
+    id: civic.data.acceptedvariants
+    name: CIViC Accepted Variants (Nightly)
+    product_url: https://civicdb.org/downloads/nightly/nightly-civic_accepted.vcf
+  - category: Product
+    description: CIViC Accepted and Submitted Variants, nightly version
+    format: vcf
+    id: civic.data.acceptedsubmittedvariants
+    name: CIViC Accepted and Submitted Variants (Nightly)
+    product_url: https://civicdb.org/downloads/nightly/nightly-civic_accepted_and_submitted.vcf
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
+  publications:
+  - authors:
+    - Griffith M
+    - Spies NC
+    - Krysiak K
+    - McMichael JF
+    - Coffman AC
+    - Danos AM
+    - Ainscough BJ
+    - Ramirez CA
+    - Rieke DT
+    - Kujan L
+    - Barnell EK
+    - Wagner AH
+    - Skidmore ZL
+    - Wollam A
+    - Liu CJ
+    - Jones MR
+    - Bilski RL
+    - Lesurf R
+    - Feng YY
+    - Shah NM
+    - Bonakdar M
+    - Trani L
+    - Matlock M
+    - Ramu A
+    - Campbell KM
+    - Spies GC
+    - Graubert AP
+    - Gangavarapu K
+    - Eldred JM
+    - Larson DE
+    - Walker JR
+    - Good BM
+    - Wu C
+    - Su AI
+    - Dienstmann R
+    - Margolin AA
+    - Tamborero D
+    - Lopez-Bigas N
+    - Jones SJ
+    - Bose R
+    - Spencer DH
+    - Wartman LD
+    - Wilson RK
+    - Mardis ER
+    - Griffith OL
+    doi: doi:10.1038/ng.3774
+    id: https://doi.org/10.1038/ng.3774
+    journal: Nature Genetics
+    title: CIViC is a community knowledgebase for expert crowdsourcing the clinical
+      interpretation of variants in cancer
+    year: '2017'
+  - authors:
+    - Danos AM
+    - Ritter DI
+    - Wagner AH
+    - Krysiak K
+    - Sonkin D
+    - Micheel C
+    - McCoy M
+    - Rao S
+    - Raca G
+    - Boca SM
+    - Roy A
+    - Barnell EK
+    - McMichael JF
+    - Kiwala S
+    - Coffman AC
+    - Kujan L
+    - Kulkarni S
+    - Griffith M
+    - Madhavan S
+    - Griffith OL
+    doi: doi:10.1186/s13073-019-0687-x
+    id: https://doi.org/10.1186/s13073-019-0687-x
+    journal: Genome Medicine
+    title: Standard operating procedure for curation and clinical interpretation of
+      variants in cancer
+    year: '2019'
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -1685,6 +2165,122 @@ resources:
   id: clinical-data-kp
   layout: resource_detail
   name: Clinical Data KP
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://clinicaltrials.gov
+    label: ClinicalTrials.gov
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: register@clinicaltrials.gov
+    label: ClinicalTrials.gov Help Desk
+  description: ClinicalTrials.gov is a registry and results database of publicly and
+    privately supported clinical studies of human participants conducted around the
+    world. It is maintained by the National Library of Medicine (NLM) at the National
+    Institutes of Health (NIH). The database provides information about clinical trials
+    including their purpose, eligibility criteria, locations, and current status.
+  domains:
+  - clinical
+  - health
+  - public health
+  - biomedical
+  - translational
+  fairsharing_id: FAIRsharing.mewhad
+  homepage_url: https://clinicaltrials.gov/
+  id: clinicaltrialsgov
+  layout: resource_detail
+  license:
+    id: https://clinicaltrials.gov/about-site/terms-conditions
+    label: Public Domain
+  name: ClinicalTrials.gov
+  products:
+  - category: GraphicalInterface
+    description: Web interface for searching and accessing clinical trial data
+    format: http
+    id: clinicaltrialsgov.site
+    name: ClinicalTrials.gov Web Interface
+    original_source:
+    - clinicaltrialsgov
+    product_url: https://clinicaltrials.gov/
+  - category: ProgrammingInterface
+    description: API for programmatic access to ClinicalTrials.gov data
+    format: http
+    id: clinicaltrialsgov.api
+    is_public: true
+    name: ClinicalTrials.gov API
+    original_source:
+    - clinicaltrialsgov
+    product_url: https://clinicaltrials.gov/data-api/
+  - category: Product
+    description: Database for Aggregate Analysis of ClinicalTrials.gov (AACT) providing
+      normalized metadata across trials
+    format: postgres
+    id: clinicaltrialsgov.aact
+    name: AACT Database
+    original_source:
+    - clinicaltrialsgov
+    product_url: https://aact.ctti-clinicaltrials.org/
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
+  publications:
+  - authors:
+    - Zarin DA
+    - Tse T
+    - Williams RJ
+    - Califf RM
+    - Ide NC
+    doi: doi:10.1056/NEJMsa1012065
+    id: https://pubmed.ncbi.nlm.nih.gov/21366476/
+    journal: The New England Journal of Medicine
+    preferred: true
+    title: The ClinicalTrials.gov results database--update and key issues
+    year: '2011'
+  repository: https://github.com/ctti-clinicaltrials/aact
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -2008,6 +2604,74 @@ resources:
     product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
     secondary_source:
     - drug-approvals-kp
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
   repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 - activity_status: active
   category: KnowledgeGraph
@@ -2181,6 +2845,74 @@ resources:
     original_source:
     - drugbank
     product_url: https://www.drugbank.com/clinical
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
   publications:
   - id: https://doi.org/10.1093/nar/gkad976
     journal: Nucleic Acids Research
@@ -2235,6 +2967,74 @@ resources:
     product_url: https://unmtid-dbs.net/download/drugcentral.dump.11012023.sql.gz
     secondary_source:
     - drugcentral
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
   publications:
   - authors:
     - Ursu O
@@ -2645,6 +3445,484 @@ resources:
     name: EMI KG SPARQL Query Editor
     product_url: https://sib-swiss.github.io/sparql-editor/dbgi
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: shhan@ualberta.ca
+    label: Scott Han
+  - category: Organization
+    label: The Metabolomics Innovation Centre (TMIC)
+  description: The Food Database (FooDB) is the world's largest and most comprehensive
+    resource on food constituents, chemistry, and biology. It provides detailed information
+    about the chemical constituents found in food, designed for applications in nutrition,
+    food science, dietary planning, and general education.
+  domains:
+  - biomedical
+  - food science
+  - nutrition
+  - health
+  homepage_url: https://foodb.ca/
+  id: foodb
+  license:
+    id: https://creativecommons.org/licenses/by-nc/4.0/
+    label: CC-BY-NC-4.0
+  name: FooDB
+  products:
+  - category: GraphicalInterface
+    description: Web interface that allows searching, browsing, and exploring food
+      compounds and their properties.
+    id: foodb.web
+    name: FooDB Web Interface
+    product_url: https://foodb.ca/
+  - category: Product
+    compression: targz
+    description: Complete FooDB database in CSV format
+    format: csv
+    id: foodb.data.csv
+    name: FooDB CSV Data
+    product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz
+  - category: Product
+    compression: targz
+    description: Complete FooDB database in XML format
+    format: xml
+    id: foodb.data.xml
+    name: FooDB XML Data
+    product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz
+  - category: Product
+    compression: zip
+    description: Complete FooDB database in JSON format
+    format: json
+    id: foodb.data.json
+    name: FooDB JSON Data
+    product_url: https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip
+  - category: Product
+    compression: targz
+    description: Complete FooDB database as MySQL dump
+    id: foodb.data.mysql
+    name: FooDB MySQL Dump
+    product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz
+  - category: Product
+    compression: zip
+    description: Experimental C-MS Spectra data from FooDB
+    id: foodb.data.experimental_cms
+    name: FooDB Experimental C-MS Spectra
+    product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip
+  - category: Product
+    compression: zip
+    description: Predicted C-MS Spectra data from FooDB
+    id: foodb.data.predicted_cms
+    name: FooDB Predicted C-MS Spectra
+    product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip
+  - category: Product
+    compression: zip
+    description: Experimental MS-MS Spectra data from FooDB
+    id: foodb.data.experimental_msms
+    name: FooDB Experimental MS-MS Spectra
+    product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip
+  - category: Product
+    compression: zip
+    description: Predicted MS-MS Spectra data from FooDB
+    id: foodb.data.predicted_msms
+    name: FooDB Predicted MS-MS Spectra
+    product_url: https://foodb.ca/public/system/downloads/foodb_predicted_msms_spectra.zip
+  - category: Product
+    compression: zip
+    description: NMR Spectra data from FooDB
+    id: foodb.data.nmr
+    name: FooDB NMR Spectra
+    product_url: https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip
+  - category: Product
+    compression: zip
+    description: Free Induction Decay (FID) files from FooDB
+    id: foodb.data.fid
+    name: FooDB FID Files
+    product_url: https://foodb.ca/public/system/downloads/foodb_fid_files.zip
+  - category: Product
+    compression: zip
+    description: Image files of compounds, foods, and chemical structures
+    id: foodb.data.images
+    name: FooDB Image Files
+    product_url: https://foodb.ca/public/system/downloads/foodb_image_files.zip
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
+  publications:
+  - authors:
+    - Wishart DS
+    - Knox C
+    - Guo AC
+    - Eisner R
+    - Young N
+    - Gautam B
+    - Hau DD
+    - Psychogios N
+    - Dong E
+    - Bouatra S
+    - Mandal R
+    - Sinelnikov I
+    - Xia J
+    - Jia L
+    - Cruz JA
+    - Lim E
+    - Sobsey CA
+    - Shrivastava S
+    - Huang P
+    - Liu P
+    - Fang L
+    - Peng J
+    - Fradette R
+    - Cheng D
+    - Tzur D
+    - Clements M
+    - Lewis A
+    - De Souza A
+    - Zuniga A
+    - Dawe M
+    - Xiong Y
+    - Clive D
+    - Greiner R
+    - Nazyrova A
+    - Shaykhutdinov R
+    - Li L
+    - Vogel HJ
+    - Forsythe I
+    doi: doi:10.1093/nar/gkn810
+    id: https://doi.org/10.1093/nar/gkn810
+    journal: Nucleic Acids Research
+    preferred: true
+    title: HMDB - a knowledgebase for the human metabolome
+    year: '2009'
+  - authors:
+    - Wishart DS
+    - Feunang YD
+    - Marcu A
+    - Guo AC
+    - Liang K
+    - Vázquez-Fresno R
+    - Sajed T
+    - Johnson D
+    - Li C
+    - Karu N
+    - Sayeeda Z
+    - Lo E
+    - Assempour N
+    - Berjanskii M
+    - Singhal S
+    - Arndt D
+    - Liang Y
+    - Badran H
+    - Grant J
+    - Serra-Cayuela A
+    - Liu Y
+    - Mandal R
+    - Neveu V
+    - Pon A
+    - Knox C
+    - Wilson M
+    - Manach C
+    - Scalbert A
+    id: https://doi.org/10.1093/nar/gkx1089
+    journal: Nucleic Acids Research
+    title: HMDB 4.0 - The Human Metabolome Database for 2018
+    year: '2018'
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.cancerrxgene.org/
+    label: Genomics of Drug Sensitivity in Cancer Project
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.sanger.ac.uk/
+    label: Wellcome Sanger Institute
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: http://www.massgeneral.org/cancer/
+    label: Massachusetts General Hospital Cancer Center
+  description: The Genomics of Drug Sensitivity in Cancer (GDSC) is a database and
+    resource that characterizes cancer cell lines and their responses to anti-cancer
+    drugs. It contains drug screening data for over 1000 cancer cell lines with hundreds
+    of compounds, as well as genomic feature data such as mutations, copy number variations,
+    methylation, and gene expression. The aim is to identify molecular features of
+    cancers that predict response to anti-cancer drugs.
+  domains:
+  - biomedical
+  - health
+  - drug discovery
+  - genomics
+  - pharmacology
+  homepage_url: https://www.cancerrxgene.org/
+  id: gdsc
+  layout: resource_detail
+  license:
+    id: https://www.cancerrxgene.org/legal
+    label: Custom (non-commercial research use)
+  name: Genomics of Drug Sensitivity in Cancer
+  products:
+  - category: GraphicalInterface
+    description: Web interface for searching and browsing GDSC data including cell
+      lines, compounds, and genomic features
+    format: http
+    id: gdsc.site
+    name: GDSC Web Interface
+    original_source:
+    - gdsc
+    product_url: https://www.cancerrxgene.org/
+  - category: Product
+    description: Drug sensitivity data including IC50 values for cancer cell lines
+    format: csv
+    id: gdsc.drug_data
+    name: GDSC Drug Sensitivity Data
+    original_source:
+    - gdsc
+    product_url: https://www.cancerrxgene.org/downloads/drug_data
+  - category: Product
+    description: ANOVA analysis results of associations between drug sensitivity and
+      genomic features
+    format: csv
+    id: gdsc.anova
+    name: GDSC ANOVA Results
+    original_source:
+    - gdsc
+    product_url: https://www.cancerrxgene.org/downloads/anova
+  - category: Product
+    description: Genetic feature data including mutations, copy number variations,
+      gene expression, and methylation
+    format: csv
+    id: gdsc.genetic_features
+    name: GDSC Genetic Features
+    original_source:
+    - gdsc
+    product_url: https://www.cancerrxgene.org/downloads/genetic_features
+  - category: Product
+    description: FTP repository with all GDSC data releases and archives
+    format: csv
+    id: gdsc.ftp
+    name: GDSC FTP Data Repository
+    original_source:
+    - gdsc
+    product_url: https://ftp.sanger.ac.uk/project/cancerrxgene/releases/
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
+  publications:
+  - authors:
+    - Yang W
+    - Soares J
+    - Greninger P
+    - Edelman EJ
+    - Lightfoot H
+    - Forbes S
+    - Bindal N
+    - Beare D
+    - Smith JA
+    - Thompson IR
+    - Ramaswamy S
+    - Futreal PA
+    - Haber DA
+    - Stratton MR
+    - Benes C
+    - McDermott U
+    - Garnett MJ
+    doi: doi:10.1093/nar/gks1111
+    id: http://doi.org/10.1093/nar/gks1111
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'Genomics of Drug Sensitivity in Cancer (GDSC): a resource for therapeutic
+      biomarker discovery in cancer cells'
+    year: '2013'
+  - authors:
+    - Iorio F
+    - Knijnenburg TA
+    - Vis DJ
+    - Bignell GR
+    - Menden MP
+    - Schubert M
+    - Aben N
+    - Gonçalves E
+    - Barthorpe S
+    - Lightfoot H
+    - Cokelaer T
+    - Greninger P
+    - van Dyk E
+    - Chang H
+    - de Silva H
+    - Heyn H
+    - Deng X
+    - Egan RK
+    - Liu Q
+    - Mironenko T
+    - Mitropoulos X
+    - Richardson L
+    - Wang J
+    - Zhang T
+    - Moran S
+    - Sayols S
+    - Soleimani M
+    - Tamborero D
+    - Lopez-Bigas N
+    - Ross-Macdonald P
+    - Esteller M
+    - Gray NS
+    - Haber DA
+    - Stratton MR
+    - Benes CH
+    - Wessels LFA
+    - Saez-Rodriguez J
+    - McDermott U
+    - Garnett MJ
+    id: https://doi.org/10.1016/j.cell.2016.06.017
+    journal: Cell
+    title: A landscape of pharmacogenomic interactions in cancer
+    year: '2016'
+  - authors:
+    - Garnett MJ
+    - Edelman EJ
+    - Heidorn SJ
+    - Greenman CD
+    - Dastur A
+    - Lau KW
+    - Greninger P
+    - Thompson IR
+    - Luo X
+    - Soares J
+    - Liu Q
+    - Iorio F
+    - Surdez D
+    - Chen L
+    - Milano RJ
+    - Bignell GR
+    - Tam AT
+    - Davies H
+    - Stevenson JA
+    - Barthorpe S
+    - Lutz SR
+    - Kogera F
+    - Lawrence K
+    - McLaren-Douglas A
+    - Mitropoulos X
+    - Mironenko T
+    - Thi H
+    - Richardson L
+    - Zhou W
+    - Jewitt F
+    - Zhang T
+    - O'Brien P
+    - Boisvert JL
+    - Price S
+    - Hur W
+    - Yang W
+    - Deng X
+    - Butler A
+    - Choi HG
+    - Chang JW
+    - Baselga J
+    - Stamenkovic I
+    - Engelman JA
+    - Sharma SV
+    - Delattre O
+    - Saez-Rodriguez J
+    - Gray NS
+    - Settleman J
+    - Futreal PA
+    - Haber DA
+    - Stratton MR
+    - Ramaswamy S
+    - McDermott U
+    - Benes CH
+    id: https://doi.org/10.1038/nature11005
+    journal: Nature
+    title: Systematic identification of genomic markers of drug sensitivity in cancer
+      cells
+    year: '2012'
+  repository: https://github.com/CancerRxGene
+- activity_status: active
   category: KnowledgeGraph
   collection:
   - translator
@@ -3007,6 +4285,74 @@ resources:
     product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go
     secondary_source:
     - interpro
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
   publications:
   - authors:
     - Ashburner M
@@ -4065,6 +5411,49 @@ resources:
     product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go
     secondary_source:
     - interpro
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
   publications:
   - authors:
     - Blum M
@@ -4367,6 +5756,49 @@ resources:
     original_source:
     - kegg
     product_url: https://www.kegg.jp/blastkoala/
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
   publications:
   - id: doi:10.1093/nar/gkae909
     preferred: true
@@ -4819,6 +6251,213 @@ resources:
 - activity_status: active
   category: DataSource
   contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: ilincs@googlegroups.com
+    label: BD2K-LINCS Data Coordination and Integration Center
+  - category: Organization
+    label: National Institutes of Health (NIH) Common Fund
+  description: The Library of Integrated Network-based Cellular Signatures (LINCS)
+    is a comprehensive collection of data that catalogs how human cells globally respond
+    to chemical, genetic, and disease perturbations. It aims to better understand
+    human disease and advance the development of new therapies by assembling an integrated
+    picture of the range of responses of human cells exposed to many perturbations.
+  domains:
+  - biomedical
+  - drug discovery
+  - systems biology
+  - genomics
+  - proteomics
+  - precision medicine
+  homepage_url: https://lincsportal.ccs.miami.edu/signatures/home
+  id: lincs
+  name: LINCS
+  products:
+  - category: GraphicalInterface
+    description: Web interface that allows users to explore, analyze, and visualize
+      LINCS signatures and datasets.
+    id: lincs.portal
+    name: LINCS Data Portal 2.0
+    product_url: https://lincsportal.ccs.miami.edu/signatures/home
+  - category: ProgrammingInterface
+    description: API for programmatic access to LINCS data and signatures.
+    id: lincs.api
+    is_public: true
+    name: LINCS API
+    product_url: https://lincsportal.ccs.miami.edu/sigc-api/swagger-ui.html#/
+  publications:
+  - authors:
+    - Keenan AB
+    - Jenkins SL
+    - Jagodnik KM
+    - Koplev S
+    - He E
+    - Torre D
+    - Wang Z
+    - Dohlman AB
+    - Silverstein MC
+    - Lachmann A
+    - Kuleshov MV
+    - Ma'ayan A
+    - Stathias V
+    - Terryn R
+    - Cooper D
+    - Forlin M
+    - Koleti A
+    - Vidovic D
+    - Chung C
+    - Schürer SC
+    - Vasiliauskas J
+    - Pilarczyk M
+    - Shamsaei B
+    - Fazel M
+    - Ren Y
+    - Niu W
+    - Clark NA
+    - White S
+    - Mahi N
+    - Zhang L
+    - Kouril M
+    - Reichard JF
+    - Sivaganesan S
+    - Medvedovic M
+    - Meller J
+    - Koch RJ
+    - Birtwistle MR
+    - Iyengar R
+    - Sobie EA
+    - Azeloglu EU
+    - Kaye J
+    - Osterloh J
+    - Haston K
+    - Kalra J
+    - Finkbiener S
+    - Li J
+    - Milani P
+    - Adam M
+    - Escalante-Chong R
+    - Sachs K
+    - Lenail A
+    - Ramamoorthy D
+    - Fraenkel E
+    - Daigle G
+    - Hussain U
+    - Coye A
+    - Rothstein J
+    - Sareen D
+    - Ornelas L
+    - Banuelos M
+    - Mandefro B
+    - Ho R
+    - Svendsen CN
+    - Lim RG
+    - Stocksdale J
+    - Casale MS
+    - Thompson TG
+    - Wu J
+    - Thompson LM
+    - Dardov V
+    - Venkatraman V
+    - Matlock A
+    - Van Eyk JE
+    - Jaffe JD
+    - Papanastasiou M
+    - Subramanian A
+    - Golub TR
+    - Erickson SD
+    - Fallahi-Sichani M
+    - Hafner M
+    - Gray NS
+    - Lin JR
+    - Mills CE
+    - Muhlich JL
+    - Niepel M
+    - Shamu CE
+    - Williams EH
+    - Wrobel D
+    - Sorger PK
+    - Heiser LM
+    - Gray JW
+    - Korkola JE
+    - Mills GB
+    - LaBarge M
+    - Feiler HS
+    - Dane MA
+    - Bucher E
+    - Nederlof M
+    - Sudar D
+    - Gross S
+    - Kilburn DF
+    - Smith R
+    - Devlin K
+    - Margolis R
+    - Derr L
+    - Lee A
+    - Pillai A
+    doi: doi:10.1016/j.cels.2017.11.001
+    id: https://doi.org/10.1016/j.cels.2017.11.001
+    journal: Cell Systems
+    preferred: true
+    title: The Library of Integrated Network-Based Cellular Signatures NIH Program
+      - System-Level Cataloging of Human Cells Response to Perturbations
+    year: '2018'
+  - authors:
+    - Koleti A
+    - Terryn R
+    - Stathias V
+    - Chung C
+    - Cooper DJ
+    - Turner JP
+    - Vidovic D
+    - Forlin M
+    - Kelley TT
+    - D'Urso A
+    - Allen BK
+    - Torre D
+    - Jagodnik KM
+    - Wang L
+    - Jenkins SL
+    - Mader C
+    - Niu W
+    - Fazel M
+    - Mahi N
+    - Pilarczyk M
+    - Clark N
+    - Shamsaei B
+    - Meller J
+    - Vasiliauskas J
+    - Reichard J
+    - Medvedovic M
+    - Ma'ayan A
+    - Pillai A
+    - Schürer SC
+    doi: doi:10.1093/nar/gkx1063
+    id: https://doi.org/10.1093/nar/gkx1063
+    journal: Nucleic Acids Research
+    title: Data Portal for the Library of Integrated Network-based Cellular Signatures
+      (LINCS) program - integrated access to diverse large-scale cellular perturbation
+      response data
+    year: '2018'
+  - authors:
+    - Shen JP
+    - Ozerov IV
+    - Zhavoronkov A
+    - Keenan AB
+    - Koplev S
+    - Jenkins SL
+    - Jagodnik KM
+    - Hallen A
+    - Ma'ayan A
+    doi: doi:10.1038/s41467-022-32205-3
+    id: https://doi.org/10.1038/s41467-022-32205-3
+    journal: Nature Communications
+    title: Connecting omics signatures of diseases, drugs, and mechanisms of actions
+      with iLINCS
+    year: '2022'
+- activity_status: active
+  category: DataSource
+  contacts:
   - category: Individual
     contact_details:
     - contact_type: email
@@ -4942,6 +6581,49 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv
     secondary_source:
     - obo-db-ingest
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
 - activity_status: active
   category: DataSource
   contacts:
@@ -5340,6 +7022,154 @@ resources:
   id: multiomics-kp
   layout: resource_detail
   name: Multiomics KP
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.ncbi.nlm.nih.gov/taxonomy
+    label: NCBI Taxonomy Database
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: info@ncbi.nlm.nih.gov
+    label: NCBI Help Desk
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: frederic.bastian@unil.ch
+    label: Frederic Bastian
+  description: The NCBI Taxonomy Database is the standard nomenclature and classification
+    repository for the International Nucleotide Sequence Database Collaboration (INSDC),
+    comprising the GenBank, ENA (EMBL), and DDBJ databases. It includes organism names
+    and taxonomic lineages for each of the sequences represented in the INSDC's nucleotide
+    and protein sequence databases. The taxonomy database is manually curated by a
+    small group of scientists at the NCBI who use current taxonomic literature to
+    maintain a phylogenetic taxonomy for source organisms represented in sequence
+    databases.
+  domains:
+  - organisms
+  fairsharing_id: FAIRsharing.fj07xj
+  homepage_url: https://www.ncbi.nlm.nih.gov/taxonomy
+  id: ncbitaxon
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+  name: NCBI Taxonomy
+  products:
+  - category: Product
+    description: NCBI Taxonomy database in dump format containing hierarchical taxonomic
+      classification data
+    id: ncbitaxon.dump
+    name: NCBI Taxonomy Dump Files
+    original_source:
+    - ncbitaxon
+    product_url: https://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz
+  - category: Product
+    description: NCBI Taxonomy containing the new-style taxonomy dump files with extended
+      node data
+    id: ncbitaxon.new_dump
+    name: NCBI Taxonomy New-Style Dump Files
+    original_source:
+    - ncbitaxon
+    product_url: https://ftp.ncbi.nih.gov/pub/taxonomy/new_taxdump/new_taxdump.tar.gz
+  - category: GraphicalInterface
+    description: Web interface for browsing and searching the NCBI Taxonomy database
+    id: ncbitaxon.web
+    name: NCBI Taxonomy Browser
+    original_source:
+    - ncbitaxon
+    product_url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi
+  - category: DataModelProduct
+    description: OWL format version of the NCBI Taxonomy, automatically translated
+      from the NCBI taxonomy database
+    format: owl
+    id: ncbitaxon.owl
+    name: NCBI Taxonomy OWL
+    original_source:
+    - ncbitaxon
+    product_url: http://purl.obolibrary.org/obo/ncbitaxon.owl
+  - category: DataModelProduct
+    description: OBO format version of the NCBI Taxonomy, providing a standardized
+      representation for use with other OBO ontologies
+    format: obo
+    id: ncbitaxon.obo
+    name: NCBI Taxonomy OBO
+    original_source:
+    - ncbitaxon
+    product_url: http://purl.obolibrary.org/obo/ncbitaxon.obo
+  - category: DataModelProduct
+    description: OBOGraphs JSON version of the NCBI Taxonomy
+    format: json
+    id: ncbitaxon.json
+    name: NCBI Taxonomy JSON
+    original_source:
+    - ncbitaxon
+    product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
+  - category: DataModelProduct
+    description: Slimmed-down version of the NCBI Taxonomy ontology containing commonly
+      used taxa
+    format: owl
+    id: ncbitaxon.taxslim
+    name: NCBI Taxonomy Slim
+    original_source:
+    - ncbitaxon
+    product_url: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
+  publications:
+  - authors:
+    - Scott Federhen
+    id: doi:10.1093/nar/gkr1178
+    journal: Nucleic Acids Research
+    preferred: true
+    title: The NCBI Taxonomy database
+    year: '2012'
+  repository: https://github.com/obophenotype/ncbitaxon
 - activity_status: active
   category: Resource
   contacts:
@@ -8290,6 +10120,110 @@ resources:
   name: PANTHER
   repository: https://data.pantherdb.org/ftp/
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://github.com/bio-ontology-research-group
+    label: Bio-Ontology Research Group
+  - category: Individual
+    contact_details:
+    - contact_type: github
+      value: bio-ontology-research-group
+    label: Bio-Ontology Research Group
+  description: PathoPhenoDB is a database of human pathogens, the diseases and phenotypes
+    they elicit in human organisms, and information related to drug treatments and
+    mechanisms of drug resistance. Specifically, PathoPhenoDB contains associations
+    between pathogens and diseases, between pathogens and phenotypes, between drugs
+    that are approved to treat particular pathogens, and it identifies genes or proteins
+    within pathogens that can convey resistance to particular drugs.
+  domains:
+  - health
+  - microbiology
+  - pharmacology
+  - drug discovery
+  homepage_url: http://patho.phenomebrowser.net/
+  id: pathophenodb
+  layout: resource_detail
+  name: PathoPhenoDB
+  products:
+  - category: GraphProduct
+    description: PathoPhenoDB data containing pathogen-disease and pathogen-phenotype
+      associations
+    format: ntriples
+    id: pathophenodb.data
+    name: PathoPhenoDB RDF data, version 3
+    original_source:
+    - pathophenodb
+    product_url: http://patho.phenomebrowser.net/media/downloads/patho_pheno_withsymbols.nt
+  - category: GraphicalInterface
+    description: Web interface for querying and browsing PathoPhenoDB data
+    id: pathophenodb.web
+    name: PathoPhenoDB Web Interface
+    original_source:
+    - pathophenodb
+    product_url: http://patho.phenomebrowser.net/
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
+  publications:
+  - authors:
+    - Şenay Kafkas
+    - Marwa Abdelhakim
+    - Yasmeen Hashish
+    - Maxat Kulmanov
+    - Marwa Abdellatif
+    - Paul N. Schofield
+    - Robert Hoehndorf
+    id: http://doi.org/10.1038/s41597-019-0090-x
+    journal: Scientific Data
+    preferred: true
+    title: PathoPhenoDB, linking human pathogens to their phenotypes in support of
+      infectious disease research
+    year: '2019'
+  repository: https://github.com/bio-ontology-research-group/pathophenodb
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -8321,6 +10255,172 @@ resources:
     secondary_source:
     - petagraph
   repository: https://github.com/TaylorResearchLab/Petagraph
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: pfam-help@ebi.ac.uk
+    - contact_type: url
+      value: https://www.ebi.ac.uk/support/pfam
+    label: European Bioinformatics Institute (EMBL-EBI)
+  description: Pfam is a large collection of protein families, each represented by
+    multiple sequence alignments and hidden Markov models (HMMs), providing annotations
+    of protein domains and functional sites.
+  domains:
+  - proteomics
+  homepage_url: https://www.ebi.ac.uk/interpro/entry/pfam/
+  id: pfam
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: Creative Commons Zero (CC0)
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+  name: Pfam
+  products:
+  - category: GraphicalInterface
+    description: The core Pfam database containing protein families, multiple sequence
+      alignments, and hidden Markov models.
+    id: pfam.site
+    name: Interface for the Pfam Database
+    product_url: https://www.ebi.ac.uk/interpro/entry/pfam/#table
+  - category: Product
+    description: The Pfam HMM library for Pfam-A families, used for searching protein
+      sequences against Pfam.
+    id: pfam.a.models
+    name: Pfam-A HMM Library
+    product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
+  - category: Product
+    description: The Pfam HMM data for Pfam-A families, used for searching protein
+      sequences against Pfam.
+    id: pfam.a.data
+    name: Pfam-A HMM data
+    product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.dat.gz
+  - category: Product
+    description: Pfam-A Seed alignment.
+    id: pfam.a.seedalignment
+    name: Pfam-A Seed alignment
+    product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.seed.gz
+  - category: Product
+    description: Pfam-A Full alignment.
+    id: pfam.a.fullalignment
+    name: Pfam-A Full alignment
+    product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.full.gz
+  - category: ProgrammingInterface
+    description: REST API for programmatic access to Pfam data via the InterPro database.
+    format: json
+    id: pfam.api
+    name: InterPro API
+    product_url: https://www.ebi.ac.uk/interpro/api/
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
+  publications:
+  - authors:
+    - T. Paysan-Lafosse
+    - A. Andreeva
+    - M. Blum
+    - S. Chuguransky
+    - T. Grego
+    - B. Lazaro Pinto
+    - G.A. Salazar
+    - M.L. Bileschi
+    - F. Llinares-López
+    - L. Meng-Papaxanthos
+    - L.J. Colwell
+    - NV. Grishin
+    - R.D. Schaeffer
+    - D.Clementel
+    - S.C.E Tosatto
+    - E. Sonnhammer
+    - V. Wood
+    - A. Bateman
+    id: https://doi.org/10.1093/nar/gkae997
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'The Pfam protein families database: embracing AI/ML'
+    year: '2024'
+  - authors:
+    - J. Mistry
+    - S. Chuguransky
+    - L. Williams
+    - M. Qureshi
+    - G.A. Salazar
+    - E.L.L. Sonnhammer
+    - S.C.E. Tosatto
+    - L. Paladin
+    - S. Raj
+    - L.J. Richardson
+    - R.D. Finn
+    - A. Bateman
+    id: https://doi.org/10.1093/nar/gkaa913
+    journal: Nucleic Acids Research
+    title: 'Pfam: The protein families database in 2021'
+    year: '2020'
+  - authors:
+    - S. El-Gebali
+    - J. Mistry
+    - A. Bateman
+    - S.R. Eddy
+    - A. Luciani
+    - S.C. Potter
+    - M. Qureshi
+    - L.J. Richardson
+    - G.A. Salazar
+    - A. Smart
+    - E.L.L. Sonnhammer
+    - L. Hirsh
+    - L. Paladin
+    - D. Piovesan
+    - S.C.E. Tosatto
+    - R.D. Finn
+    id: https://doi.org/10.1093/nar/gky995
+    journal: Nucleic Acids Research
+    title: The Pfam protein families database in 2019
+    year: '2019'
+  repository: ''
+  version: '37.0'
 - activity_status: active
   category: Resource
   contacts:
@@ -8818,6 +10918,121 @@ resources:
 - activity_status: active
   category: DataSource
   contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: qifang.xu@fccc.edu
+    label: Qifang Xu
+  - category: Individual
+    label: Roland L. Dunbrack Jr
+  - category: Organization
+    label: Fox Chase Cancer Center
+  description: The Protein Common Interface Database (ProtCID) provides comprehensive,
+    PDB-wide structural information on protein interactions, identifying and clustering
+    interfaces observed in multiple crystal forms of homologous proteins.
+  domains:
+  - proteomics
+  - chemistry and biochemistry
+  - biological systems
+  homepage_url: http://dunbrack2.fccc.edu/protcid/
+  id: protcid
+  layout: resource_detail
+  license:
+    id: https://dunbrack2.fccc.edu/ProtCID/About.aspx
+    label: Custom
+  name: ProtCID
+  products:
+  - category: Product
+    description: Database containing protein-protein interfaces, domain-domain interfaces,
+      protein-peptide interfaces, and protein-ligand interactions based on structural
+      data from the PDB.
+    id: protcid.database
+    name: ProtCID Database
+  - category: GraphicalInterface
+    description: Web interface for searching and visualizing protein interaction data
+      from ProtCID.
+    id: protcid.site
+    name: ProtCID Web Interface
+    product_url: https://dunbrack2.fccc.edu/ProtCID/Search/search.aspx
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
+  publications:
+  - authors:
+    - Qifang Xu
+    - Roland L. Dunbrack
+    id: https://doi.org/10.1038/s41467-020-14301-4
+    journal: Nature Communications
+    preferred: true
+    title: 'ProtCID: a data resource for structural information on protein interactions'
+    year: '2020'
+  - authors:
+    - Qifang Xu
+    - Roland L. Dunbrack
+    id: https://doi.org/10.1093/nar/gkq1059
+    journal: Nucleic Acids Research
+    title: The protein common interface database (ProtCID) - a comprehensive database
+      of interactions of homologous proteins in multiple crystal forms
+    year: '2011'
+  - authors:
+    - Qifang Xu
+    - Adrian Canutescu
+    - Zhenyu Wang
+    - Mu Tian
+    - Thomas Biesiada
+    - Roland L. Dunbrack
+    id: https://doi.org/10.1016/j.jmb.2008.06.002
+    journal: Journal of Molecular Biology
+    title: Statistical Analysis of Interface Similarity in Crystals of Homologous
+      Proteins
+    year: '2008'
+  repository: ''
+  tags:
+  - core
+  version: '3.0'
+- activity_status: active
+  category: DataSource
+  contacts:
   - category: Organization
     contact_details:
     - contact_type: email
@@ -9114,6 +11329,74 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
     secondary_source:
     - obo-db-ingest
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
   repository: ''
 - activity_status: active
   category: DataSource
@@ -9494,15 +11777,163 @@ resources:
   category: KnowledgeGraph
   contacts:
   - category: Individual
-    label: Sui Huang, Sergio Baranzini
-  description: A Knowledge Graph from UCSF covering many aspects of biomedicine.
+    contact_details:
+    - contact_type: email
+      value: sergio.baranzini@ucsf.edu
+    label: Sergio Baranzini
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: sui.huang@ucsf.edu
+    label: Sui Huang
+  - category: Organization
+    label: University of California, San Francisco
+  description: Scalable Precision Medicine Open Knowledge Engine (SPOKE) is a comprehensive
+    biomedical knowledge graph that connects diverse data from multiple domains to
+    enable discovery and precision medicine applications.
   domains:
+  - biomedical
   - health
+  - genomics
+  - clinical
+  - drug discovery
+  - precision medicine
+  - pharmacology
   homepage_url: https://spoke.ucsf.edu/
   id: spoke
   layout: resource_detail
+  license:
+    id: https://spoke.rbvi.ucsf.edu/docs/licenses.html
+    label: Multiple licenses (see individual data sources)
   name: SPOKE
-  repository: ''
+  products:
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
+  - category: GraphicalInterface
+    description: Web interface that allows searching SPOKE for a node of interest
+      and viewing its immediate connectivity neighborhood.
+    id: spoke.neighborhood_explorer
+    name: SPOKE Neighborhood Explorer
+    product_url: https://spoke.rbvi.ucsf.edu/neighborhood.html
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - spoke
+    secondary_source:
+    - spoke
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  publications:
+  - authors:
+    - John H Morris
+    - Karthik Soman
+    - Riley E Akbas
+    - X Zhou
+    - B Smith
+    - Elaine C Meng
+    - CC Huang
+    - Gabriel Cerono
+    - G Schenk
+    - Angela Rizk-Jackson
+    - Sergio E Baranzini
+    id: https://doi.org/10.1093/bioinformatics/btad080
+    journal: Bioinformatics
+    preferred: true
+    title: 'The scalable precision medicine open knowledge engine (SPOKE): a massive
+      knowledge graph of biomedical information'
+    year: '2023'
+  - authors:
+    - Charlotte A Nelson
+    - Atul J Butte
+    - Sergio E Baranzini
+    id: https://doi.org/10.1038/s41467-019-11069-0
+    journal: Nature Communications
+    title: Integrating biomedical research and electronic health records to create
+      knowledge-based biologically meaningful machine-readable embeddings
+    year: '2019'
+  - authors:
+    - Daniel Scott Himmelstein
+    - Antoine Lizee
+    - Christine Hessler
+    - Leo Brueggeman
+    - Sabrina L Chen
+    - Dexter Hadley
+    - Ari Green
+    - Pouya Khankhanian
+    - Sergio E Baranzini
+    id: https://doi.org/10.7554/eLife.26726
+    journal: eLife
+    title: Systematic integration of biomedical knowledge prioritizes drugs for repurposing
+    year: '2017'
+  repository: https://github.com/baranzini-lab/SPOKE
+  version: '2.0'
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -9707,6 +12138,74 @@ resources:
     product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.nodes.zip
     secondary_source:
     - biomarkerkg
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
   repository: https://github.com/obophenotype/uberon
 - activity_status: active
   category: DataSource
@@ -9839,6 +12338,49 @@ resources:
     product_url: https://omabrowser.org/oma/current/oma-uniprot.txt.gz
     secondary_source:
     - oma
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
   repository: https://www.uniprot.org/help/downloads
 - activity_status: active
   category: DataSource
@@ -10055,3 +12597,187 @@ resources:
   repository: http://rdb.lifesynther.com/
   warnings:
   - Homepage may be inaccessible (March 5 2025)
+- activity_status: inactive
+  category: DataSource
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: michael.kuhn@gmail.com
+    label: Michael Kuhn
+  - category: Organization
+    label: European Molecular Biology Laboratory (EMBL)
+  description: SIDER (Side Effect Resource) contains information on marketed medicines
+    and their recorded adverse drug reactions. The information is extracted from public
+    documents and package inserts, including side effect frequency, drug and side
+    effect classifications, and links to further information.
+  domains:
+  - biomedical
+  - pharmacology
+  - drug discovery
+  - health
+  homepage_url: http://sideeffects.embl.de/
+  id: sider
+  license:
+    id: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    label: CC-BY-NC-4.0
+  name: SIDER
+  products:
+  - category: GraphicalInterface
+    description: Web interface that allows searching and browsing drugs and their
+      side effects.
+    id: sider.web
+    name: SIDER Web Interface
+    product_url: http://sideeffects.embl.de/
+  - category: Product
+    description: Tab-separated file mapping drugs to their names and synonyms.
+    format: tsv
+    id: sider.drug_names
+    name: SIDER Drug Names
+    product_url: http://sideeffects.embl.de/media/download/drug_names.tsv
+  - category: MappingProduct
+    description: Tab-separated file mapping drugs to their ATC codes.
+    format: tsv
+    id: sider.drug_atc
+    name: SIDER Drug ATC Codes
+    product_url: http://sideeffects.embl.de/media/download/drug_atc.tsv
+  - category: Product
+    compression: gzip
+    description: Tab-separated file containing all drug indications extracted from
+      drug labels using MedDRA terminology.
+    format: tsv
+    id: sider.meddra_all_indications
+    name: SIDER MedDRA All Indications
+    product_url: http://sideeffects.embl.de/media/download/meddra_all_indications.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Tab-separated file containing all side effects extracted from drug
+      labels using MedDRA terminology.
+    format: tsv
+    id: sider.meddra_all_se
+    name: SIDER MedDRA All Side Effects
+    product_url: http://sideeffects.embl.de/media/download/meddra_all_se.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Tab-separated file containing side effect frequency information extracted
+      from drug labels using MedDRA terminology.
+    format: tsv
+    id: sider.meddra_freq
+    name: SIDER MedDRA Frequency
+    product_url: http://sideeffects.embl.de/media/download/meddra_freq.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Tab-separated file containing all original label indications extracted
+      from drug labels using MedDRA terminology.
+    format: tsv
+    id: sider.meddra_all_label_indications
+    name: SIDER MedDRA All Label Indications
+    product_url: http://sideeffects.embl.de/media/download/meddra_all_label_indications.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Tab-separated file containing all original label side effects extracted
+      from drug labels using MedDRA terminology.
+    format: tsv
+    id: sider.meddra_all_label_se
+    name: SIDER MedDRA All Label Side Effects
+    product_url: http://sideeffects.embl.de/media/download/meddra_all_label_se.tsv.gz
+  - category: Product
+    compression: gzip
+    description: Tab-separated file mapping MedDRA terms to their concept ID.
+    format: tsv
+    id: sider.meddra
+    name: SIDER MedDRA Dictionary
+    product_url: http://sideeffects.embl.de/media/download/meddra.tsv.gz
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  publications:
+  - authors:
+    - Kuhn M
+    - Letunic I
+    - Jensen LJ
+    - Bork P
+    doi: doi:10.1093/nar/gkv1075
+    id: https://doi.org/10.1093/nar/gkv1075
+    journal: Nucleic Acids Research
+    preferred: true
+    title: The SIDER database of drugs and side effects
+    year: '2016'
+  - authors:
+    - Kuhn M
+    - Campillos M
+    - Letunic I
+    - Jensen LJ
+    - Bork P
+    doi: doi:10.1038/msb.2009.98
+    id: https://doi.org/10.1038/msb.2009.98
+    journal: Molecular Systems Biology
+    title: A side effect resource to capture phenotypic effects of drugs
+    year: '2010'
+  warnings:
+  - The last release for this resource was on October 21, 2015.
