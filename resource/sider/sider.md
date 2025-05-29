@@ -1,8 +1,6 @@
 ---
 activity_status: inactive
 category: DataSource
-warnings:
-  - The last release for this resource was on October 21, 2015.
 contacts:
 - category: Individual
   contact_details:
@@ -11,13 +9,15 @@ contacts:
   label: Michael Kuhn
 - category: Organization
   label: European Molecular Biology Laboratory (EMBL)
-description: SIDER (Side Effect Resource) contains information on marketed medicines and their recorded adverse drug reactions. The information is extracted from public documents and package inserts, including side effect frequency, drug and side effect classifications, and links to further information.
+description: SIDER (Side Effect Resource) contains information on marketed medicines
+  and their recorded adverse drug reactions. The information is extracted from public
+  documents and package inserts, including side effect frequency, drug and side effect
+  classifications, and links to further information.
 domains:
 - biomedical
 - pharmacology
 - drug discovery
 - health
-- adverse drug reactions
 homepage_url: http://sideeffects.embl.de/
 id: sider
 license:
@@ -26,7 +26,8 @@ license:
 name: SIDER
 products:
 - category: GraphicalInterface
-  description: Web interface that allows searching and browsing drugs and their side effects.
+  description: Web interface that allows searching and browsing drugs and their side
+    effects.
   id: sider.web
   name: SIDER Web Interface
   product_url: http://sideeffects.embl.de/
@@ -44,35 +45,40 @@ products:
   product_url: http://sideeffects.embl.de/media/download/drug_atc.tsv
 - category: Product
   compression: gzip
-  description: Tab-separated file containing all drug indications extracted from drug labels using MedDRA terminology.
+  description: Tab-separated file containing all drug indications extracted from drug
+    labels using MedDRA terminology.
   format: tsv
   id: sider.meddra_all_indications
   name: SIDER MedDRA All Indications
   product_url: http://sideeffects.embl.de/media/download/meddra_all_indications.tsv.gz
 - category: Product
   compression: gzip
-  description: Tab-separated file containing all side effects extracted from drug labels using MedDRA terminology.
+  description: Tab-separated file containing all side effects extracted from drug
+    labels using MedDRA terminology.
   format: tsv
   id: sider.meddra_all_se
   name: SIDER MedDRA All Side Effects
   product_url: http://sideeffects.embl.de/media/download/meddra_all_se.tsv.gz
 - category: Product
   compression: gzip
-  description: Tab-separated file containing side effect frequency information extracted from drug labels using MedDRA terminology.
+  description: Tab-separated file containing side effect frequency information extracted
+    from drug labels using MedDRA terminology.
   format: tsv
   id: sider.meddra_freq
   name: SIDER MedDRA Frequency
   product_url: http://sideeffects.embl.de/media/download/meddra_freq.tsv.gz
 - category: Product
   compression: gzip
-  description: Tab-separated file containing all original label indications extracted from drug labels using MedDRA terminology.
+  description: Tab-separated file containing all original label indications extracted
+    from drug labels using MedDRA terminology.
   format: tsv
   id: sider.meddra_all_label_indications
   name: SIDER MedDRA All Label Indications
   product_url: http://sideeffects.embl.de/media/download/meddra_all_label_indications.tsv.gz
 - category: Product
   compression: gzip
-  description: Tab-separated file containing all original label side effects extracted from drug labels using MedDRA terminology.
+  description: Tab-separated file containing all original label side effects extracted
+    from drug labels using MedDRA terminology.
   format: tsv
   id: sider.meddra_all_label_se
   name: SIDER MedDRA All Label Side Effects
@@ -84,6 +90,74 @@ products:
   id: sider.meddra
   name: SIDER MedDRA Dictionary
   product_url: http://sideeffects.embl.de/media/download/meddra.tsv.gz
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - ncbigene
+  - medline
+  - mesh
+  - pid
+  - do
+  - diseases
+  - drugcentral
+  - go
+  - gwas-catalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
+  secondary_source:
+  - spoke
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - ncbigene
+  - medline
+  - mesh
+  - pid
+  - do
+  - diseases
+  - drugcentral
+  - go
+  - gwas-catalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  secondary_source:
+  - spoke
 publications:
 - authors:
   - Kuhn M
@@ -95,7 +169,7 @@ publications:
   journal: Nucleic Acids Research
   preferred: true
   title: The SIDER database of drugs and side effects
-  year: "2016"
+  year: '2016'
 - authors:
   - Kuhn M
   - Campillos M
@@ -106,7 +180,9 @@ publications:
   id: https://doi.org/10.1038/msb.2009.98
   journal: Molecular Systems Biology
   title: A side effect resource to capture phenotypic effects of drugs
-  year: "2010"
+  year: '2010'
+warnings:
+- The last release for this resource was on October 21, 2015.
 ---
 SIDER (Side Effect Resource) is a database of drugs and their side effects, which was developed at the European Molecular Biology Laboratory (EMBL). The database contains information extracted from public documents and package inserts, providing valuable data on marketed medicines and their recorded adverse drug reactions.
 

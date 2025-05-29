@@ -79,7 +79,7 @@ products:
   - cl
   - kegg
   - metacyc
-  - patric
+  - bv-brc
   - ncbitaxon
   - pathophenodb
   - pfam

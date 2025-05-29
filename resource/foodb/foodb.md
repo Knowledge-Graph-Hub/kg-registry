@@ -9,14 +9,15 @@ contacts:
   label: Scott Han
 - category: Organization
   label: The Metabolomics Innovation Centre (TMIC)
-description: The Food Database (FooDB) is the world's largest and most comprehensive resource on food constituents, chemistry, and biology. It provides detailed information about the chemical constituents found in food, designed for applications in nutrition, food science, dietary planning, and general education.
+description: The Food Database (FooDB) is the world's largest and most comprehensive
+  resource on food constituents, chemistry, and biology. It provides detailed information
+  about the chemical constituents found in food, designed for applications in nutrition,
+  food science, dietary planning, and general education.
 domains:
 - biomedical
 - food science
 - nutrition
-- metabolomics
 - health
-- chemistry
 homepage_url: https://foodb.ca/
 id: foodb
 license:
@@ -25,7 +26,8 @@ license:
 name: FooDB
 products:
 - category: GraphicalInterface
-  description: Web interface that allows searching, browsing, and exploring food compounds and their properties.
+  description: Web interface that allows searching, browsing, and exploring food compounds
+    and their properties.
   id: foodb.web
   name: FooDB Web Interface
   product_url: https://foodb.ca/
@@ -53,8 +55,6 @@ products:
 - category: Product
   compression: targz
   description: Complete FooDB database as MySQL dump
-  dump_format: sql
-  format: sql
   id: foodb.data.mysql
   name: FooDB MySQL Dump
   product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz
@@ -100,6 +100,49 @@ products:
   id: foodb.data.images
   name: FooDB Image Files
   product_url: https://foodb.ca/public/system/downloads/foodb_image_files.zip
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - ncbigene
+  - medline
+  - mesh
+  - pid
+  - do
+  - diseases
+  - drugcentral
+  - go
+  - gwas-catalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
+  secondary_source:
+  - spoke
 publications:
 - authors:
   - Wishart DS
@@ -145,14 +188,14 @@ publications:
   journal: Nucleic Acids Research
   preferred: true
   title: HMDB - a knowledgebase for the human metabolome
-  year: "2009"
+  year: '2009'
 - authors:
   - Wishart DS
   - Feunang YD
   - Marcu A
   - Guo AC
   - Liang K
-  - Vázquez-Fresno R
+  - "V\xE1zquez-Fresno R"
   - Sajed T
   - Johnson D
   - Li C
@@ -178,7 +221,7 @@ publications:
   id: https://doi.org/10.1093/nar/gkx1089
   journal: Nucleic Acids Research
   title: HMDB 4.0 - The Human Metabolome Database for 2018
-  year: "2018"
+  year: '2018'
 ---
 FooDB (The Food Database) is the world's largest and most comprehensive resource on food constituents, chemistry, and biology. It is maintained by The Metabolomics Innovation Centre (TMIC), a nationally-funded research and core facility in Canada.
 

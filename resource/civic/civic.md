@@ -9,14 +9,16 @@ contacts:
   label: CIViC Support
 - category: Organization
   label: The McDonnell Genome Institute at Washington University School of Medicine
-description: The Clinical Interpretation of Variants in Cancer (CIViC) knowledgebase is a free and open resource for public use that enables the interpretation of variants in cancer by providing community-curated information about the clinical significance of genomic variants.
+description: The Clinical Interpretation of Variants in Cancer (CIViC) knowledgebase
+  is a free and open resource for public use that enables the interpretation of variants
+  in cancer by providing community-curated information about the clinical significance
+  of genomic variants.
 domains:
 - biomedical
 - health
 - genomics
 - clinical
 - precision medicine
-- cancer
 homepage_url: https://civicdb.org/
 id: civic
 license:
@@ -25,7 +27,8 @@ license:
 name: CIViC
 products:
 - category: GraphicalInterface
-  description: Web interface that allows searching, browsing, and curating content in the CIViC database.
+  description: Web interface that allows searching, browsing, and curating content
+    in the CIViC database.
   id: civic.site
   name: CIViC Web Interface
   product_url: https://civicdb.org/
@@ -36,59 +39,103 @@ products:
   name: CIViC GraphQL API (V2)
   product_url: https://civicdb.org/api/graphiql
 - category: ProgrammingInterface
-  description: REST API for programmatic access to the CIViC database (deprecated but still accessible).
+  description: REST API for programmatic access to the CIViC database (deprecated
+    but still accessible).
   id: civic.api.v1
   is_public: true
   name: CIViC REST API (V1 - Deprecated)
   product_url: https://v1.civicdb.org/api
 - category: Product
   description: CIViC Feature summaries, nightly version
+  format: tsv
   id: civic.data.features
   name: CIViC Features (Nightly)
   product_url: https://civicdb.org/downloads/nightly/nightly-FeatureSummaries.tsv
-  format: tsv
 - category: Product
   description: CIViC Variant summaries, nightly version
+  format: tsv
   id: civic.data.variants
   name: CIViC Variants (Nightly)
   product_url: https://civicdb.org/downloads/nightly/nightly-VariantSummaries.tsv
-  format: tsv
 - category: Product
   description: CIViC Molecular Profile summaries, nightly version
+  format: tsv
   id: civic.data.molecularprofile
   name: CIViC Molecular Profiles (Nightly)
   product_url: https://civicdb.org/downloads/nightly/nightly-MolecularProfileSummaries.tsv
-  format: tsv
 - category: Product
   description: CIViC Clinical Evidence summaries, nightly version
+  format: tsv
   id: civic.data.evidence
   name: CIViC Clinical Evidence (Nightly)
   product_url: https://civicdb.org/downloads/nightly/nightly-ClinicalEvidenceSummaries.tsv
-  format: tsv
 - category: Product
   description: CIViC Variant Group summaries, nightly version
+  format: tsv
   id: civic.data.variantgroups
   name: CIViC Variant Groups (Nightly)
   product_url: https://civicdb.org/downloads/nightly/nightly-VariantGroupSummaries.tsv
-  format: tsv
 - category: Product
   description: CIViC Assertion summaries, nightly version
+  format: tsv
   id: civic.data.assertions
   name: CIViC Assertions (Nightly)
   product_url: https://civicdb.org/downloads/nightly/nightly-AssertionSummaries.tsv
-  format: tsv
 - category: Product
   description: CIViC Accepted Variants, nightly version
+  format: vcf
   id: civic.data.acceptedvariants
   name: CIViC Accepted Variants (Nightly)
   product_url: https://civicdb.org/downloads/nightly/nightly-civic_accepted.vcf
-  format: vcf
 - category: Product
   description: CIViC Accepted and Submitted Variants, nightly version
+  format: vcf
   id: civic.data.acceptedsubmittedvariants
   name: CIViC Accepted and Submitted Variants (Nightly)
   product_url: https://civicdb.org/downloads/nightly/nightly-civic_accepted_and_submitted.vcf
-  format: vcf
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - ncbigene
+  - medline
+  - mesh
+  - pid
+  - do
+  - diseases
+  - drugcentral
+  - go
+  - gwas-catalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
+  secondary_source:
+  - spoke
 publications:
 - authors:
   - Griffith M
@@ -139,8 +186,9 @@ publications:
   doi: doi:10.1038/ng.3774
   id: https://doi.org/10.1038/ng.3774
   journal: Nature Genetics
-  title: CIViC is a community knowledgebase for expert crowdsourcing the clinical interpretation of variants in cancer
-  year: "2017"
+  title: CIViC is a community knowledgebase for expert crowdsourcing the clinical
+    interpretation of variants in cancer
+  year: '2017'
 - authors:
   - Danos AM
   - Ritter DI
@@ -165,6 +213,7 @@ publications:
   doi: doi:10.1186/s13073-019-0687-x
   id: https://doi.org/10.1186/s13073-019-0687-x
   journal: Genome Medicine
-  title: Standard operating procedure for curation and clinical interpretation of variants in cancer
-  year: "2019"
+  title: Standard operating procedure for curation and clinical interpretation of
+    variants in cancer
+  year: '2019'
 ---

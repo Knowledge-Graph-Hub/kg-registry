@@ -9,7 +9,9 @@ contacts:
   - contact_type: url
     value: https://www.bgee.org/contact/
   label: Bgee Team - SIB Swiss Institute of Bioinformatics
-description: Bgee is a database for retrieval and comparison of gene expression patterns across multiple animal species, providing information about gene expression in different anatomical structures, developmental stages, and species.
+description: Bgee is a database for retrieval and comparison of gene expression patterns
+  across multiple animal species, providing information about gene expression in different
+  anatomical structures, developmental stages, and species.
 domains:
 - biological systems
 - organisms
@@ -24,27 +26,27 @@ products:
 - category: GraphicalInterface
   description: Web interface for exploring Bgee data
   id: bgee.site
+  is_public: true
   name: Bgee Web Interface
   original_source:
   - bgee
   product_url: https://www.bgee.org/
   secondary_source:
   - bgee
-  is_public: true
 - category: ProgrammingInterface
   description: SPARQL endpoint for querying Bgee RDF data
   id: bgee.sparql
+  is_public: true
   name: Bgee SPARQL Endpoint
   original_source:
   - bgee
   product_url: https://www.bgee.org/sparql/
   secondary_source:
   - bgee
-  is_public: true
 - category: Product
+  compression: zip
   description: Complete data dump of Bgee expression data for all species
   format: tsv
-  compression: zip
   id: bgee.expr_calls
   name: Bgee Expression Calls
   original_source:
@@ -53,9 +55,9 @@ products:
   secondary_source:
   - bgee
 - category: Product
+  compression: zip
   description: RNA-Seq data processed and formatted for the Bgee database
   format: tsv
-  compression: zip
   id: bgee.rnaseq
   name: Bgee RNA-Seq Data
   original_source:
@@ -64,9 +66,9 @@ products:
   secondary_source:
   - bgee
 - category: Product
+  compression: zip
   description: Processed Affymetrix microarray data for the Bgee database
   format: tsv
-  compression: zip
   id: bgee.affymetrix
   name: Bgee Affymetrix Data
   original_source:
@@ -75,9 +77,9 @@ products:
   secondary_source:
   - bgee
 - category: Product
+  compression: zip
   description: In Situ Hybridization data in the Bgee database
   format: tsv
-  compression: zip
   id: bgee.in_situ
   name: Bgee In Situ Hybridization Data
   original_source:
@@ -86,9 +88,9 @@ products:
   secondary_source:
   - bgee
 - category: Product
+  compression: zip
   description: EST (Expressed Sequence Tag) expression data in the Bgee database
   format: tsv
-  compression: zip
   id: bgee.est
   name: Bgee EST Data
   original_source:
@@ -97,9 +99,9 @@ products:
   secondary_source:
   - bgee
 - category: Product
+  compression: zip
   description: Single-cell RNA-Seq processed data in the Bgee database
   format: tsv
-  compression: zip
   id: bgee.sc_rnaseq
   name: Bgee Single-cell RNA-Seq Data
   original_source:
@@ -108,9 +110,9 @@ products:
   secondary_source:
   - bgee
 - category: Product
+  compression: zip
   description: Anatomical homology information used in Bgee
   format: tsv
-  compression: zip
   id: bgee.homology
   name: Bgee Anatomical Homology Data
   original_source:
@@ -119,9 +121,9 @@ products:
   secondary_source:
   - bgee
 - category: Product
+  compression: zip
   description: RDF version of the Bgee data for semantic web applications
   format: ttl
-  compression: zip
   id: bgee.rdf
   name: Bgee RDF Data
   original_source:
@@ -129,7 +131,74 @@ products:
   product_url: https://www.bgee.org/download/data-dumps/current/rdf/
   secondary_source:
   - bgee
-repository: https://github.com/BgeeDB/bgee_apps
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - ncbigene
+  - medline
+  - mesh
+  - pid
+  - do
+  - diseases
+  - drugcentral
+  - go
+  - gwas-catalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  secondary_source:
+  - spoke
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - ncbigene
+  - medline
+  - mesh
+  - pid
+  - do
+  - diseases
+  - drugcentral
+  - go
+  - gwas-catalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
+  secondary_source:
+  - spoke
 publications:
 - authors:
   - Bastian FB
@@ -176,8 +245,10 @@ publications:
   - Robinson-Rechavi M
   doi: doi:10.1093/nar/gkaa793
   id: doi:10.1093/nar/gkaa793
-  title: The Bgee suite - integrated curated expression atlas and comparative transcriptomics in animals
+  title: The Bgee suite - integrated curated expression atlas and comparative transcriptomics
+    in animals
   year: '2021'
+repository: https://github.com/BgeeDB/bgee_apps
 ---
 Bgee (Background Expression) is a database for retrieval and comparison of gene expression patterns across multiple animal species. It integrates multiple data types (RNA-Seq, Affymetrix microarrays, in situ hybridization, EST data, and single-cell RNA-Seq) to provide a unified view of gene expression patterns across diverse anatomical structures, developmental stages, and species.
 
