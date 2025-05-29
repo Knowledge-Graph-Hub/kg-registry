@@ -12,7 +12,11 @@ contacts:
   - contact_type: email
     value: register@clinicaltrials.gov
   label: ClinicalTrials.gov Help Desk
-description: ClinicalTrials.gov is a registry and results database of publicly and privately supported clinical studies of human participants conducted around the world. It is maintained by the National Library of Medicine (NLM) at the National Institutes of Health (NIH). The database provides information about clinical trials including their purpose, eligibility criteria, locations, and current status.
+description: ClinicalTrials.gov is a registry and results database of publicly and
+  privately supported clinical studies of human participants conducted around the
+  world. It is maintained by the National Library of Medicine (NLM) at the National
+  Institutes of Health (NIH). The database provides information about clinical trials
+  including their purpose, eligibility criteria, locations, and current status.
 domains:
 - clinical
 - health
@@ -46,29 +50,72 @@ products:
   - clinicaltrialsgov
   product_url: https://clinicaltrials.gov/data-api/
 - category: Product
-  description: Database for Aggregate Analysis of ClinicalTrials.gov (AACT) providing normalized metadata across trials
+  description: Database for Aggregate Analysis of ClinicalTrials.gov (AACT) providing
+    normalized metadata across trials
   format: postgres
   id: clinicaltrialsgov.aact
   name: AACT Database
   original_source:
   - clinicaltrialsgov
   product_url: https://aact.ctti-clinicaltrials.org/
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - ncbigene
+  - medline
+  - mesh
+  - pid
+  - do
+  - diseases
+  - drugcentral
+  - go
+  - gwas-catalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
+  secondary_source:
+  - spoke
 publications:
 - authors:
-  - "Zarin DA"
-  - "Tse T"
-  - "Williams RJ"
-  - "Califf RM"
-  - "Ide NC"
+  - Zarin DA
+  - Tse T
+  - Williams RJ
+  - Califf RM
+  - Ide NC
   doi: doi:10.1056/NEJMsa1012065
   id: https://pubmed.ncbi.nlm.nih.gov/21366476/
   journal: The New England Journal of Medicine
   preferred: true
   title: The ClinicalTrials.gov results database--update and key issues
-  year: "2011"
+  year: '2011'
 repository: https://github.com/ctti-clinicaltrials/aact
 ---
-
 ## Overview
 
 ClinicalTrials.gov is a registry and results database of publicly and privately supported clinical studies of human participants conducted around the world. The resource was established in 2000 in response to the Food and Drug Administration Modernization Act of 1997 (FDAMA) and is maintained by the National Library of Medicine (NLM) at the National Institutes of Health (NIH).
