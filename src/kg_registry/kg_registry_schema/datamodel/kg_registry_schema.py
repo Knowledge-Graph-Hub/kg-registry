@@ -211,6 +211,8 @@ class DomainEnum(str, Enum):
     translational = "translational"
     # The upper-level domain, for general-purpose data representation and integration.
     upper = "upper"
+    # The study of food, including its production, processing, preservation, and consumption.
+    food_science = "food science"
 
 
 class DumpFormatEnum(str, Enum):

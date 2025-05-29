@@ -823,6 +823,10 @@ enums:
         description: >-
           The upper-level domain, for general-purpose data
           representation and integration.
+      food science:
+        description: >-
+          The study of food, including its production, processing,
+          preservation, and consumption.
 
   DumpFormatEnum:
     description: >-
