@@ -139,38 +139,8 @@ publications:
   doi: doi:10.1038/ng.3774
   id: https://doi.org/10.1038/ng.3774
   journal: Nature Genetics
-  preferred: true
   title: CIViC is a community knowledgebase for expert crowdsourcing the clinical interpretation of variants in cancer
   year: "2017"
-- authors:
-  - Danos AM
-  - Krysiak K
-  - Barnell EK
-  - Coffman AC
-  - McMichael JF
-  - Kiwala S
-  - Spies NC
-  - Sheta LM
-  - Pema SP
-  - Kujan L
-  - Clark KA
-  - Wollam AZ
-  - Rao S
-  - Ritter DI
-  - Sonkin D
-  - Raca G
-  - Lin WH
-  - Grisdale CJ
-  - Kim RH
-  - Wagner AH
-  - Madhavan S
-  - Griffith M
-  - Griffith OL
-  doi: doi:10.1093/nar/gkac979
-  id: https://doi.org/10.1093/nar/gkac979
-  journal: Nucleic Acids Research
-  title: Evolution of the open-access CIViC knowledgebase is driven by the needs of the cancer variant interpretation community
-  year: "2022"
 - authors:
   - Danos AM
   - Ritter DI
@@ -197,24 +167,4 @@ publications:
   journal: Genome Medicine
   title: Standard operating procedure for curation and clinical interpretation of variants in cancer
   year: "2019"
-tags:
-- data source
-- cancer genomics
-- variant interpretation
-- clinical decision support
-- expert curation
-- community-driven
-usages:
-- id: civic.usage.clinical-decision-support
-  name: Clinical Decision Support
-  description: CIViC is used by researchers and clinicians to support clinical decision-making by providing evidence-based interpretations of genomic variants in cancer.
-- id: civic.usage.variant-annotation
-  name: Variant Annotation
-  description: CIViC provides detailed annotations of genomic variants, including their clinical significance, predictive and prognostic value, and diagnostic implications.
-- id: civic.usage.research
-  name: Cancer Research
-  description: CIViC supports cancer research by providing a centralized resource for understanding the clinical relevance of genomic alterations.
-- id: civic.usage.knowledge-integration
-  name: Knowledge Integration
-  description: CIViC data is integrated into various clinical genomics pipelines, knowledge graphs, and cancer-focused databases.
-version: "2.0"
+---
