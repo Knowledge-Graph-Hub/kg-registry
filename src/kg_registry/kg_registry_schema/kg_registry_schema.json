@@ -880,7 +880,8 @@
                 "systems biology",
                 "synthetic biology",
                 "translational",
-                "upper"
+                "upper",
+                "food science"
             ],
             "title": "DomainEnum",
             "type": "string"
@@ -927,7 +928,8 @@
                 "mysql",
                 "sqlite",
                 "trapi-jsonl",
-                "yaml"
+                "yaml",
+                "vcf"
             ],
             "title": "FormatEnum",
             "type": "string"

@@ -6,6 +6,7 @@ biocyc,active,PASS
 biolink,active,PASS
 biomarkerkg,active,PASS
 bioteque,active,PASS
+bv-brc,active,PASS
 cam-kp,active,PASS
 ccle,active,PASS
 cellosaurus,active,PASS
@@ -14,8 +15,10 @@ cgnc,active,PASS
 chebi,active,PASS
 chembl,active,PASS
 chr,active,PASS
+civic,active,PASS
 cl-kg,active,PASS
 clinical-data-kp,active,PASS
+clinicaltrialsgov,active,PASS
 connections-hypothesis-kp,active,PASS
 cpathkg,active,PASS
 ctd,active,PASS
@@ -31,6 +34,8 @@ eco-kg,active,PASS
 ecocyc,active,PASS
 ecosim,active,PASS
 emikg,active,PASS
+foodb,active,PASS
+gdsc,active,PASS
 genetics-kp,active,PASS
 genomickb,active,PASS
 glkb,active,PASS
@@ -57,6 +62,7 @@ kg-jensenlab-diseases,active,PASS
 kg-microbe,active,PASS
 kg-monarch,active,PASS
 kgcl,active,PASS
+lincs,active,PASS
 m-csa,active,PASS
 medkg,active,PASS
 metacyc,active,PASS
@@ -66,6 +72,7 @@ mixs,active,PASS
 molecular-data-kp,active,PASS
 mondo,active,PASS
 multiomics-kp,active,PASS
+ncbitaxon,active,PASS
 neo,active,PASS
 nlm-ckn,active,PASS
 np-kg,active,PASS
@@ -76,12 +83,15 @@ orcid,active,PASS
 orthodb,active,PASS
 pankbase,active,PASS
 panther,active,PASS
+pathophenodb,active,PASS
 petagraph,active,PASS
+pfam,active,PASS
 pharmgkb,active,PASS
 pheknowlator,active,PASS
 phenio,active,PASS
 pombase,active,PASS
 primekg,active,PASS
+protcid,active,PASS
 pubchem,active,PASS
 pubtator,active,PASS
 reacto,active,PASS
@@ -104,3 +114,4 @@ uberon,active,PASS
 uniprot,active,PASS
 zfin,active,PASS
 rdbridge,unresponsive,PASS
+sider,inactive,PASS
