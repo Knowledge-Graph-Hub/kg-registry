@@ -24,6 +24,7 @@ connections-hypothesis-kp,active,PASS
 cpathkg,active,PASS
 ctd,active,PASS
 dbsnp,active,PASS
+dgidb,active,PASS
 do,active,PASS
 drkg,active,PASS
 drug-approvals-kp,active,PASS
@@ -35,6 +36,7 @@ eco-kg,active,PASS
 ecocyc,active,PASS
 ecosim,active,PASS
 emikg,active,PASS
+ensembl,active,PASS
 foodb,active,PASS
 gdsc,active,PASS
 genetics-kp,active,PASS
@@ -46,6 +48,7 @@ go,active,PASS
 go-cam,active,PASS
 goldterms,active,PASS
 gp-kg,active,PASS
+gtopdb,active,PASS
 gutmgene,active,PASS
 hgnc,active,PASS
 hp,active,PASS
@@ -117,4 +120,5 @@ ubkg,active,PASS
 uniprot,active,PASS
 zfin,active,PASS
 rdbridge,unresponsive,PASS
+semmeddb,inactive,PASS
 sider,inactive,PASS
