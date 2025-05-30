@@ -1,0 +1,136 @@
+---
+layout: resource_detail
+activity_status: active
+id: dgidb
+name: DGIdb
+description: The Drug Gene Interaction Database (DGIdb) is a resource that consolidates disparate data sources describing drug-gene interactions and gene druggability to help researchers identify actionable drug targets or repurposable drugs for genes of interest.
+domains:
+- health
+- pharmacology
+- drug discovery
+- genomics
+- precision medicine
+contacts:
+- category: Organization
+  label: Griffith Lab
+  contact_details:
+  - contact_type: email
+    value: help@dgidb.org
+  - contact_type: url
+    value: http://www.griffithlab.com
+homepage_url: https://dgidb.org
+repository: https://github.com/griffithlab/dgi-db
+license:
+  label: MIT
+  id: https://opensource.org/licenses/MIT
+products:
+- id: dgidb.api
+  name: DGIdb API
+  description: API for programmatically accessing the Drug Gene Interaction Database
+  product_url: https://dgidb.org/api
+  category: ProgrammingInterface
+  is_public: true
+publications:
+- authors:
+  - Cotto KC
+  - Wagner AH
+  - Feng YY
+  - Kiwala S
+  - Coffman AC
+  - Spies G
+  - Wollam A
+  - Spies NC
+  - Griffith OL
+  - Griffith M
+  doi: doi:10.1093/nar/gkx1143
+  id: https://doi.org/10.1093/nar/gkx1143
+  journal: Nucleic Acids Research
+  preferred: true
+  title: "DGIdb 3.0: a redesign and expansion of the drug-gene interaction database"
+  year: '2018'
+- authors:
+  - Wagner AH
+  - Coffman AC
+  - Ainscough BJ
+  - Spies NC
+  - Skidmore ZL
+  - Campbell KM
+  - Krysiak K
+  - Pan D
+  - McMichael JF
+  - Eldred JM
+  - Walker JR
+  - Wilson RK
+  - Mardis ER
+  - Griffith M
+  - Griffith OL
+  doi: doi:10.1093/nar/gkv1165
+  id: https://doi.org/10.1093/nar/gkv1165
+  journal: Nucleic Acids Research
+  title: "DGIdb 2.0: mining clinically relevant drug-gene interactions"
+  year: '2016'
+- authors:
+  - Griffith M
+  - Griffith OL
+  - Coffman AC
+  - Weible JV
+  - McMichael JF
+  - Spies NC
+  - Koval J
+  - Das I
+  - Callaway MB
+  - Eldred JM
+  - Miller CA
+  - Subramanian J
+  - Govindan R
+  - Kumar RD
+  - Bose R
+  - Ding L
+  - Walker JR
+  - Larson DE
+  - Dooling DJ
+  - Smith SM
+  - Ley TJ
+  - Mardis ER
+  - Wilson RK
+  doi: doi:10.1038/nmeth.2689
+  id: https://doi.org/10.1038/nmeth.2689
+  journal: Nature Methods
+  title: "DGIdb - mining the druggable genome"
+  year: '2013'
+category: DataSource
+---
+
+## DGIdb: Drug Gene Interaction Database
+
+The Drug Gene Interaction Database (DGIdb) is a web resource that consolidates disparate data sources describing drug-gene interactions and gene druggability information. DGIdb helps researchers to prioritize the investigation of drug-gene interactions and identify actionable drug targets or repurposable drugs for genes of interest.
+
+### Key Features
+
+- **Comprehensive Integration**: Combines data from multiple sources of drug-gene interactions and druggable gene categories
+- **Advanced Search**: Search for drug-gene interactions involving genes or drugs of interest
+- **Druggable Gene Categories**: Browse druggable gene categories to identify genes that are potentially druggable
+- **API Access**: Programmatically access DGIdb data through a JSON-based API
+- **Regular Updates**: Continually updated with new drug-gene interaction sources
+
+### Applications
+
+DGIdb can be used to:
+
+- Identify potential drug targets among a set of genes
+- Find existing drugs that might interact with genes of interest
+- Identify druggable genes within disease-specific gene sets
+- Prioritize genes for experimental follow-up
+- Support precision medicine initiatives by connecting genomic data to potential therapeutic options
+
+### Data Sources
+
+DGIdb integrates data from various sources including:
+
+- Drug databases
+- Gene interaction databases
+- Clinical trial repositories
+- Pharmaceutical knowledge bases
+- Literature mining resources
+
+This integration provides researchers with a comprehensive resource for drug-gene interaction information to support drug discovery and repurposing efforts in genomic medicine.
