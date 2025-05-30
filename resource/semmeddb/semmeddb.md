@@ -7,12 +7,15 @@ contacts:
   - contact_type: email
     value: support@nlm.nih.gov
   label: National Library of Medicine
-description: SemMedDB is a repository of semantic predications (subject-predicate-object triples) extracted from biomedical literature by SemRep, a natural language processing system. It contains over 130 million semantic predications extracted from more than 37 million PubMed citations, supporting biomedical knowledge discovery, literature-based discovery, and clinical applications.
+description: SemMedDB is a repository of semantic predications (subject-predicate-object
+  triples) extracted from biomedical literature by SemRep, a natural language processing
+  system. It contains over 130 million semantic predications extracted from more than
+  37 million PubMed citations, supporting biomedical knowledge discovery, literature-based
+  discovery, and clinical applications.
 domains:
 - biomedical
 - literature
 - health
-- knowledge graph
 - clinical
 - drug discovery
 - genomics
@@ -26,24 +29,29 @@ license:
 name: Semantic MEDLINE Database (SemMedDB)
 products:
 - category: Product
-  description: MySQL database containing over 130 million semantic predications extracted from more than 37 million PubMed citations (processed using MEDLINE BASELINE 2022 + PubMed Update Files through May 8, 2024)
+  description: MySQL database containing over 130 million semantic predications extracted
+    from more than 37 million PubMed citations (processed using MEDLINE BASELINE 2022
+    + PubMed Update Files through May 8, 2024)
   id: semmeddb.mysql
   name: SemMedDB MySQL Database
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_MySQL_database.html
 - category: Product
-  description: CSV file containing citation information for all PubMed articles in SemMedDB
+  description: CSV file containing citation information for all PubMed articles in
+    SemMedDB
   format: csv
   id: semmeddb.citations.csv
   name: SemMedDB Citations CSV
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv
 - category: Product
-  description: CSV file containing entity information with UMLS concept identifiers, names, and semantic types
+  description: CSV file containing entity information with UMLS concept identifiers,
+    names, and semantic types
   format: csv
   id: semmeddb.entity.csv
   name: SemMedDB Entity CSV
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/ENTITY.csv
 - category: Product
-  description: CSV file containing semantic predications with subject-predicate-object triples and associated metadata
+  description: CSV file containing semantic predications with subject-predicate-object
+    triples and associated metadata
   format: csv
   id: semmeddb.predication.csv
   name: SemMedDB Predication CSV
@@ -55,10 +63,94 @@ products:
   name: SemMedDB Sentence CSV
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv
 - category: ProcessProduct
-  description: The SemRep natural language processing system that extracts semantic predications from biomedical literature to create SemMedDB
+  description: The SemRep natural language processing system that extracts semantic
+    predications from biomedical literature to create SemMedDB
   id: semrep.tool
   name: SemRep NLP System
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemRep_download.html
+- category: GraphProduct
+  description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+  format: kgx-jsonl
+  id: rtx-kg2.graph.nodes
+  name: RTX-KG2.10.1c KGX JSONL Nodes
+  original_source:
+  - chembl
+  - drugbank
+  - kegg
+  - reactome
+  - go
+  - drugcentral
+  - uniprot
+  - mondo
+  - hp
+  - chebi
+  - uberon
+  - ncbitaxon
+  - dgidb
+  - disgenet
+  - ensembl
+  - gtopdb
+  - rtx-kg2
+  - semmeddb
+  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+  secondary_source:
+  - rtx-kg2.code
+- category: GraphProduct
+  description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+  format: kgx-jsonl
+  id: rtx-kg2.graph.edges
+  name: RTX-KG2.10.1c KGX JSONL Edges
+  original_source:
+  - chembl
+  - drugbank
+  - kegg
+  - reactome
+  - go
+  - drugcentral
+  - uniprot
+  - mondo
+  - hp
+  - chebi
+  - uberon
+  - ncbitaxon
+  - dgidb
+  - disgenet
+  - ensembl
+  - gtopdb
+  - rtx-kg2
+  - semmeddb
+  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+  secondary_source:
+  - rtx-kg2.code
+- category: ProgrammingInterface
+  description: Neo4j distribution of the RTX-KG2 as a graph database
+  dump_format: neo4j
+  id: rtx-kg2.neo4j
+  is_neo4j: true
+  is_public: false
+  name: RTX-KG2 Neo4j
+  original_source:
+  - chembl
+  - drugbank
+  - kegg
+  - reactome
+  - go
+  - drugcentral
+  - uniprot
+  - mondo
+  - hp
+  - chebi
+  - uberon
+  - ncbitaxon
+  - dgidb
+  - disgenet
+  - ensembl
+  - gtopdb
+  - rtx-kg2
+  - semmeddb
+  product_url: https://arax.ncats.io/
+  secondary_source:
+  - rtx-kg2.code
 publications:
 - authors:
   - Kilicoglu H
@@ -70,9 +162,8 @@ publications:
   id: https://doi.org/10.1093/bioinformatics/bts591
   journal: Bioinformatics
   preferred: true
-  title: "SemMedDB: a PubMed-scale repository of biomedical semantic predications"
+  title: 'SemMedDB: a PubMed-scale repository of biomedical semantic predications'
   year: '2012'
-  url: https://academic.oup.com/bioinformatics/article/28/23/3158/192209
 - authors:
   - Kilicoglu H
   - Rosemblat G
@@ -84,7 +175,6 @@ publications:
   journal: BMC Bioinformatics
   title: Broad-coverage biomedical relation extraction with SemRep
   year: '2020'
-  url: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-3517-7
 - authors:
   - Kilicoglu H
   - Rosemblat G
@@ -95,18 +185,16 @@ publications:
   journal: BMC Bioinformatics
   title: Constructing a semantic predication gold standard from the biomedical literature
   year: '2011'
-  url: https://pubmed.ncbi.nlm.nih.gov/22185221/
 - authors:
   - Rindflesch TC
   - Fiszman M
   doi: 10.1016/j.jbi.2003.11.003
   id: https://doi.org/10.1016/j.jbi.2003.11.003
   journal: Journal of Biomedical Informatics
-  title: The interaction of domain knowledge and linguistic structure in natural language processing: interpreting hypernymic propositions in biomedical text
+  title: 'The interaction of domain knowledge and linguistic structure in natural
+    language processing: interpreting hypernymic propositions in biomedical text'
   year: '2003'
-  url: https://pubmed.ncbi.nlm.nih.gov/14759819/
 ---
-
 ## Overview
 
 The Semantic MEDLINE Database (SemMedDB) is a large-scale repository of semantic predications (subject-predicate-object triples) extracted from the biomedical literature by the SemRep natural language processing system. It provides a structured representation of biomedical knowledge contained in PubMed citations, where concepts are normalized to the Unified Medical Language System (UMLS) Metathesaurus, and their relationships are based on the UMLS Semantic Network.

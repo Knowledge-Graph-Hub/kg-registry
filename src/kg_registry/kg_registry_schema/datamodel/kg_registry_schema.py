@@ -91,252 +91,444 @@ class ActivityStatusEnum(str, Enum):
     """
     The status of a resource. Corresponds to those used by OBO Foundry.
     """
-    # The resource is active and available.
     active = "active"
-    # The resource is inactive. Its availability may vary.
+    """
+    The resource is active and available.
+    """
     inactive = "inactive"
-    # The resource is not actively maintained. Its availability may vary.
+    """
+    The resource is inactive. Its availability may vary.
+    """
     orphaned = "orphaned"
-    # The resource is no longer accessible. Only its metadata is available.
+    """
+    The resource is not actively maintained. Its availability may vary.
+    """
     unresponsive = "unresponsive"
+    """
+    The resource is no longer accessible. Only its metadata is available.
+    """
 
 
 class CompressionEnum(str, Enum):
     """
     The type of compression used with a product.
     """
-    # The gpickle format, or the output of pickling a NetworkX graph object. This file ends in .gpickle.
     gpickle = "gpickle"
-    # The gzip compression algorithm. This file ends in .gz.
+    """
+    The gpickle format, or the output of pickling a NetworkX graph object. This file ends in .gpickle.
+    """
     gzip = "gzip"
-    # The pickle format, or the output of pickling a Python object. This file ends in .pkl or .pickle.
+    """
+    The gzip compression algorithm. This file ends in .gz.
+    """
     pickle = "pickle"
-    # The tar archive format. This file ends in .tar.
+    """
+    The pickle format, or the output of pickling a Python object. This file ends in .pkl or .pickle.
+    """
     tar = "tar"
-    # A tar archive that is also gzip compressed. This file ends in .tar.gz.
+    """
+    The tar archive format. This file ends in .tar.
+    """
     targz = "targz"
-    # The rar archive format. This file ends in .rar.
+    """
+    A tar archive that is also gzip compressed. This file ends in .tar.gz.
+    """
     rar = "rar"
-    # The zip archive format. This file ends in .zip.
+    """
+    The rar archive format. This file ends in .rar.
+    """
     zip = "zip"
-    # The 7z archive format. This file ends in .7z.
+    """
+    The zip archive format. This file ends in .zip.
+    """
     number_7z = "7z"
-    # Another compression format not defined here.
+    """
+    The 7z archive format. This file ends in .7z.
+    """
     other = "other"
+    """
+    Another compression format not defined here.
+    """
 
 
 class ContactTypeEnum(str, Enum):
     """
     The type of contact detail.
     """
-    # An email address for the contact.
     email = "email"
-    # A GitHub username for the contact.
+    """
+    An email address for the contact.
+    """
     github = "github"
-    # A URL for the contact. For an individual, this may be a profile on an official website. For an organization, this may be a link to the organization's site or a documentation landing page.
+    """
+    A GitHub username for the contact.
+    """
     url = "url"
-    # Another type of contact detail not defined here.
+    """
+    A URL for the contact. For an individual, this may be a profile on an official website. For an organization, this may be a link to the organization's site or a documentation landing page.
+    """
     other = "other"
+    """
+    Another type of contact detail not defined here.
+    """
 
 
 class DomainEnum(str, Enum):
     """
     A domain that a resource is relevant to.
     """
-    # The agricultural sciences.
     agriculture = "agriculture"
-    # The anatomy and development of organisms.
+    """
+    The agricultural sciences.
+    """
     anatomy_and_development = "anatomy and development"
-    # The biological sciences and systems.
+    """
+    The anatomy and development of organisms.
+    """
     biological_systems = "biological systems"
-    # The biomedical sciences, including the study of biological systems and their interactions.
+    """
+    The biological sciences and systems.
+    """
     biomedical = "biomedical"
-    # The chemical and biochemical sciences.
+    """
+    The biomedical sciences, including the study of biological systems and their interactions.
+    """
     chemistry_and_biochemistry = "chemistry and biochemistry"
-    # The clinical sciences, including clinical trials and patient data.
+    """
+    The chemical and biochemical sciences.
+    """
     clinical = "clinical"
-    # The use of digital technologies for healthcare, including telemedicine, wearable devices, health information technology, and personalized medicine.
+    """
+    The clinical sciences, including clinical trials and patient data.
+    """
     digital_health = "digital health"
-    # The process of identifying and developing new candidate medications, including target identification, validation, and compound screening.
+    """
+    The use of digital technologies for healthcare, including telemedicine, wearable devices, health information technology, and personalized medicine.
+    """
     drug_discovery = "drug discovery"
-    # The environment and ecosystems.
+    """
+    The process of identifying and developing new candidate medications, including target identification, validation, and compound screening.
+    """
     environment = "environment"
-    # The study of genomes, including genome structure, evolution,  function, mapping, and editing.
+    """
+    The environment and ecosystems.
+    """
     genomics = "genomics"
-    # The health and diseases of organisms.
+    """
+    The study of genomes, including genome structure, evolution,  function, mapping, and editing.
+    """
     health = "health"
-    # The study of the immune system, including its structure and function, disorders, and therapeutic applications.
+    """
+    The health and diseases of organisms.
+    """
     immunology = "immunology"
-    # The information technology sciences.
+    """
+    The study of the immune system, including its structure and function, disorders, and therapeutic applications.
+    """
     information_technology = "information technology"
-    # Research investigations into specific topics.
+    """
+    The information technology sciences.
+    """
     investigations = "investigations"
-    # The literature and publications of a domain.
+    """
+    Research investigations into specific topics.
+    """
     literature = "literature"
-    # Techniques and processes for creating visual representations of the interior of a body for clinical analysis and medical intervention.
+    """
+    The literature and publications of a domain.
+    """
     medical_imaging = "medical imaging"
-    # The study of microbial communities, their genomes, and their influence on hosts and environments.
+    """
+    Techniques and processes for creating visual representations of the interior of a body for clinical analysis and medical intervention.
+    """
     microbiome = "microbiome"
-    # The microbiological sciences.
+    """
+    The study of microbial communities, their genomes, and their influence on hosts and environments.
+    """
     microbiology = "microbiology"
-    # The scientific study of the nervous system, including  brain structure, function, and disorders.
+    """
+    The microbiological sciences.
+    """
     neuroscience = "neuroscience"
-    # The nutritional sciences, including diet and metabolomics.
+    """
+    The scientific study of the nervous system, including  brain structure, function, and disorders.
+    """
     nutrition = "nutrition"
-    # Specific organisms.
+    """
+    The nutritional sciences, including diet and metabolomics.
+    """
     organisms = "organisms"
-    # Another domain not defined here.
+    """
+    Specific organisms.
+    """
     other = "other"
-    # Biological pathways, including metabolic, signaling, and regulatory networks that control cellular processes.
+    """
+    Another domain not defined here.
+    """
     pathways = "pathways"
-    # The study of how drugs interact with biological systems, including  drug discovery, development, and therapeutic uses.
+    """
+    Biological pathways, including metabolic, signaling, and regulatory networks that control cellular processes.
+    """
     pharmacology = "pharmacology"
-    # The phenotypes of organisms.
+    """
+    The study of how drugs interact with biological systems, including  drug discovery, development, and therapeutic uses.
+    """
     phenotype = "phenotype"
-    # An approach to disease treatment and prevention that takes into account individual variability in genes, environment, and lifestyle.
+    """
+    The phenotypes of organisms.
+    """
     precision_medicine = "precision medicine"
-    # The large-scale study of proteins, their structures,  functions, and interactions.
+    """
+    An approach to disease treatment and prevention that takes into account individual variability in genes, environment, and lifestyle.
+    """
     proteomics = "proteomics"
-    # The science of protecting and improving the health of people and their  communities, including epidemiology and population health.
+    """
+    The large-scale study of proteins, their structures,  functions, and interactions.
+    """
     public_health = "public health"
-    # Simulation and modeling of specific phenomena.
+    """
+    The science of protecting and improving the health of people and their  communities, including epidemiology and population health.
+    """
     simulation = "simulation"
-    # The social, economic, and environmental factors that influence health outcomes and contribute to health disparities.
+    """
+    Simulation and modeling of specific phenomena.
+    """
     social_determinants = "social determinants"
-    # The computational and mathematical analysis of complex biological systems and their interactions.
+    """
+    The social, economic, and environmental factors that influence health outcomes and contribute to health disparities.
+    """
     systems_biology = "systems biology"
-    # The design and construction of new biological parts, devices, and systems, or the redesign of existing natural biological systems.
+    """
+    The computational and mathematical analysis of complex biological systems and their interactions.
+    """
     synthetic_biology = "synthetic biology"
-    # The translational sciences, including the translation of research into practice.
+    """
+    The design and construction of new biological parts, devices, and systems, or the redesign of existing natural biological systems.
+    """
     translational = "translational"
-    # The upper-level domain, for general-purpose data representation and integration.
+    """
+    The translational sciences, including the translation of research into practice.
+    """
     upper = "upper"
-    # The study of food, including its production, processing, preservation, and consumption.
+    """
+    The upper-level domain, for general-purpose data representation and integration.
+    """
     food_science = "food science"
+    """
+    The study of food, including its production, processing, preservation, and consumption.
+    """
 
 
 class DumpFormatEnum(str, Enum):
     """
     The format of a dump of a product, generally a graph, as a file. Note the product may also be compressed.
     """
-    # The gpickle format, or the output of pickling a NetworkX graph object. This file ends in .gpickle.
     gpickle = "gpickle"
-    # The pickle format, or the output of pickling a Python object. This file ends in .pkl or .pickle.
+    """
+    The gpickle format, or the output of pickling a NetworkX graph object. This file ends in .gpickle.
+    """
     pickle = "pickle"
-    # The Neo4j dump format, or the output of a Neo4j database dump. The file usually ends in .db, .dump, or .db.dump.
+    """
+    The pickle format, or the output of pickling a Python object. This file ends in .pkl or .pickle.
+    """
     neo4j = "neo4j"
-    # Another format not defined here.
+    """
+    The Neo4j dump format, or the output of a Neo4j database dump. The file usually ends in .db, .dump, or .db.dump.
+    """
     other = "other"
+    """
+    Another format not defined here.
+    """
 
 
 class FormatEnum(str, Enum):
     """
     The serialization/format of a product.
     """
-    # The JavaScript Object Notation (JSON) format, a lightweight data-interchange format that's easy for humans to read and write and easy for machines to parse and generate.
     json = "json"
-    # The JSON for Linked Data (JSON-LD) format, which extends JSON with semantics for linked data by providing a method of encoding linked data using JSON. It enables data in JSON to be interpreted as RDF and allows JSON data to be interoperable at Web-scale.
+    """
+    The JavaScript Object Notation (JSON) format, a lightweight data-interchange format that's easy for humans to read and write and easy for machines to parse and generate.
+    """
     jsonld = "jsonld"
-    # The RDF/XML format, an XML syntax for expressing RDF graphs as an XML document. It was the first standardized syntax for RDF and is widely used for interchange and archiving.
+    """
+    The JSON for Linked Data (JSON-LD) format, which extends JSON with semantics for linked data by providing a method of encoding linked data using JSON. It enables data in JSON to be interpreted as RDF and allows JSON data to be interoperable at Web-scale.
+    """
     rdfxml = "rdfxml"
-    # The Turtle (TTL) format, a textual syntax for RDF that allows RDF graphs to be written in a compact and natural text form. Turtle provides prefixes and keywords that make RDF data more readable compared to XML or N-Triples formats.
+    """
+    The RDF/XML format, an XML syntax for expressing RDF graphs as an XML document. It was the first standardized syntax for RDF and is widely used for interchange and archiving.
+    """
     ttl = "ttl"
-    # The N-Triples format, a line-based, plain text serialization format for RDF graphs. Each line contains a single RDF triple consisting of subject, predicate, and object, separated by whitespace and terminated by a period.
+    """
+    The Turtle (TTL) format, a textual syntax for RDF that allows RDF graphs to be written in a compact and natural text form. Turtle provides prefixes and keywords that make RDF data more readable compared to XML or N-Triples formats.
+    """
     ntriples = "ntriples"
-    # The N-Quads format, an extension of the N-Triples format that adds an optional fourth element to represent the graph name or context. This allows for representing multiple RDF graphs in a single document while maintaining their separation.
+    """
+    The N-Triples format, a line-based, plain text serialization format for RDF graphs. Each line contains a single RDF triple consisting of subject, predicate, and object, separated by whitespace and terminated by a period.
+    """
     nquads = "nquads"
-    # The Web Ontology Language (OWL) format, a semantic web language designed to represent rich and complex knowledge about things and their relationships. OWL builds on RDF and adds more vocabulary for describing properties and classes.
+    """
+    The N-Quads format, an extension of the N-Triples format that adds an optional fourth element to represent the graph name or context. This allows for representing multiple RDF graphs in a single document while maintaining their separation.
+    """
     owl = "owl"
-    # The Open Biomedical Ontologies (OBO) format, a file format for representing ontologies in the biomedical domain. It's designed to be simple and human-readable while supporting the necessary expressivity for representing biological concepts.
+    """
+    The Web Ontology Language (OWL) format, a semantic web language designed to represent rich and complex knowledge about things and their relationships. OWL builds on RDF and adds more vocabulary for describing properties and classes.
+    """
     obo = "obo"
-    # The GraphQL format, a query language for APIs and a runtime for executing those queries against your data. It allows clients to request exactly what they need and makes it easier to evolve APIs over time.
+    """
+    The Open Biomedical Ontologies (OBO) format, a file format for representing ontologies in the biomedical domain. It's designed to be simple and human-readable while supporting the necessary expressivity for representing biological concepts.
+    """
     graphql = "graphql"
-    # The Protocol Buffers (Protobuf) format, a language-neutral, platform-neutral, extensible mechanism for serializing structured data. It's smaller, faster, and simpler than XML, designed for high-performance data interchange.
+    """
+    The GraphQL format, a query language for APIs and a runtime for executing those queries against your data. It allows clients to request exactly what they need and makes it easier to evolve APIs over time.
+    """
     protobuf = "protobuf"
-    # The Shapes Constraint Language (SHACL) format, a language for validating RDF graphs against a set of conditions. SHACL allows for defining constraints on RDF graphs, including the structure, values, and other features of data.
+    """
+    The Protocol Buffers (Protobuf) format, a language-neutral, platform-neutral, extensible mechanism for serializing structured data. It's smaller, faster, and simpler than XML, designed for high-performance data interchange.
+    """
     shacl = "shacl"
-    # The Shape Expressions (ShEx) format, a language for validating and describing RDF data. ShEx provides a concise, human-readable syntax for expressing constraints on RDF graphs, including cardinality constraints and datatype restrictions.
+    """
+    The Shapes Constraint Language (SHACL) format, a language for validating RDF graphs against a set of conditions. SHACL allows for defining constraints on RDF graphs, including the structure, values, and other features of data.
+    """
     shex = "shex"
-    # The KGX standard, which is a graph exchange format for knowledge graphs. By default, this assumes KGX as TSV with separate node and edge files, usually named nodes.tsv and edges.tsv.
+    """
+    The Shape Expressions (ShEx) format, a language for validating and describing RDF data. ShEx provides a concise, human-readable syntax for expressing constraints on RDF graphs, including cardinality constraints and datatype restrictions.
+    """
     kgx = "kgx"
-    # The KGX standard, which is a graph exchange format for knowledge graphs. This is the JSON format, with nodes and edges in a single file.
+    """
+    The KGX standard, which is a graph exchange format for knowledge graphs. By default, this assumes KGX as TSV with separate node and edge files, usually named nodes.tsv and edges.tsv.
+    """
     kgx_json = "kgx-json"
-    # The KGX standard, which is a graph exchange format for knowledge graphs. This is the JSON Lines format, with separate node and edge files, usually named nodes.jsonl and edges.jsonl.
+    """
+    The KGX standard, which is a graph exchange format for knowledge graphs. This is the JSON format, with nodes and edges in a single file.
+    """
     kgx_jsonl = "kgx-jsonl"
-    # The KGX standard, which is a graph exchange format for knowledge graphs. This is the RDF Turtle (TTL) format, with nodes and edges in a single file.
+    """
+    The KGX standard, which is a graph exchange format for knowledge graphs. This is the JSON Lines format, with separate node and edge files, usually named nodes.jsonl and edges.jsonl.
+    """
     kgx_rdf = "kgx-rdf"
-    # The Simple Standard for Sharing Ontological Mappings (SSSOM) format, which a format for mapping between different ontologies and other identifier systems.
+    """
+    The KGX standard, which is a graph exchange format for knowledge graphs. This is the RDF Turtle (TTL) format, with nodes and edges in a single file.
+    """
     sssom = "sssom"
-    # The Structure Data File (SDF) format.
+    """
+    The Simple Standard for Sharing Ontological Mappings (SSSOM) format, which a format for mapping between different ontologies and other identifier systems.
+    """
     sdf = "sdf"
-    # A ChEBI-specific SDF format. Unlike the general SDF format, Each data item may be longer than 80 characters and has no maximum limit. Each line after the Data Header is a separate data item. For example, each new line in the synonyms is a separate synonym.
+    """
+    The Structure Data File (SDF) format.
+    """
     chebi_sdf = "chebi_sdf"
-    # The Tab-Separated Values (TSV) format. It has rows of data separated by newlines, and columns separated by tabs.
+    """
+    A ChEBI-specific SDF format. Unlike the general SDF format, Each data item may be longer than 80 characters and has no maximum limit. Each line after the Data Header is a separate data item. For example, each new line in the synonyms is a separate synonym.
+    """
     tsv = "tsv"
-    # The Comma-Separated Values (CSV) format. It has rows of data separated by newlines, and columns separated by commas.
+    """
+    The Tab-Separated Values (TSV) format. It has rows of data separated by newlines, and columns separated by tabs.
+    """
     csv = "csv"
-    # The Extensible Markup Language (XML) format. It is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.
+    """
+    The Comma-Separated Values (CSV) format. It has rows of data separated by newlines, and columns separated by commas.
+    """
     xml = "xml"
-    # The FASTA format, a text-based format for representing nucleotide or peptide sequences. It consists of a single header line followed by one or more lines of sequence data.
+    """
+    The Extensible Markup Language (XML) format. It is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.
+    """
     fasta = "fasta"
-    # The Hypertext Transfer Protocol (HTTP) format. This is a protocol for transferring data over the web. If a product is in this format, it is likely an web site or API.
+    """
+    The FASTA format, a text-based format for representing nucleotide or peptide sequences. It consists of a single header line followed by one or more lines of sequence data.
+    """
     http = "http"
-    # The PostgreSQL relational database management system. If a product is in this format, it is likely a PostgreSQL database dump.
+    """
+    The Hypertext Transfer Protocol (HTTP) format. This is a protocol for transferring data over the web. If a product is in this format, it is likely an web site or API.
+    """
     postgres = "postgres"
-    # The MySQL relational database management system. If a product is in this format, it is likely a MySQL database dump.
+    """
+    The PostgreSQL relational database management system. If a product is in this format, it is likely a PostgreSQL database dump.
+    """
     mysql = "mysql"
-    # The SQLite relational database management system. If a product is in this format, it is likely a SQLite database dump.
+    """
+    The MySQL relational database management system. If a product is in this format, it is likely a MySQL database dump.
+    """
     sqlite = "sqlite"
-    # The Translator Reasoner API (TRAPI) format, which is a JSON Lines format for TRAPI responses.
+    """
+    The SQLite relational database management system. If a product is in this format, it is likely a SQLite database dump.
+    """
     trapi_jsonl = "trapi-jsonl"
-    # The YAML Ain't Markup Language (YAML) format, a human-readable data serialization format. It is often used for configuration files and data exchange between languages with different data structures.
+    """
+    The Translator Reasoner API (TRAPI) format, which is a JSON Lines format for TRAPI responses.
+    """
     yaml = "yaml"
-    # The Variant Call Format (VCF), a text file format for storing gene sequence variations. It is commonly used in bioinformatics to store gene sequence variations, such as single nucleotide polymorphisms (SNPs).
+    """
+    The YAML Ain't Markup Language (YAML) format, a human-readable data serialization format. It is often used for configuration files and data exchange between languages with different data structures.
+    """
     vcf = "vcf"
+    """
+    The Variant Call Format (VCF), a text file format for storing gene sequence variations. It is commonly used in bioinformatics to store gene sequence variations, such as single nucleotide polymorphisms (SNPs).
+    """
 
 
 class StandardEnum(str, Enum):
     """
     The standard or standards that a product conforms to. These are not serializations, but rather the higher-level frameworks that the product is built on.
     """
-    # The Biolink Model, a standard for representing biological entities and relationships.
     biolink = "biolink"
-    # The KG-Hub standard, which is a general-purpose knowledge graph standard.
+    """
+    The Biolink Model, a standard for representing biological entities and relationships.
+    """
     kghub = "kghub"
+    """
+    The KG-Hub standard, which is a general-purpose knowledge graph standard.
+    """
 
 
 class TagEnum(str, Enum):
     """
     General-purpose tags that can be associated with resources.
     """
-    # A resource or product aggregated by the BioPragmatics project.
     biopragmatics = "biopragmatics"
-    # A core KG-Hub resource.
+    """
+    A resource or product aggregated by the BioPragmatics project.
+    """
     core = "core"
-    # A resource used by the NCATS Translator program.
+    """
+    A core KG-Hub resource.
+    """
     translator = "translator"
+    """
+    A resource used by the NCATS Translator program.
+    """
 
 
 class UsageEnum(str, Enum):
     """
     The type of usage of a resource.
     """
-    # The resource is actually used in the specified way.
     actual = "actual"
-    # The resource is used in the specified way for experimental purposes.
+    """
+    The resource is actually used in the specified way.
+    """
     experimental = "experimental"
-    # The resource is not used in the specified way, but it could be.
+    """
+    The resource is used in the specified way for experimental purposes.
+    """
     theoretical = "theoretical"
-    # The resource is used in a way not defined here.
+    """
+    The resource is not used in the specified way, but it could be.
+    """
     other = "other"
+    """
+    The resource is used in a way not defined here.
+    """
 
 
 class CollectionEnum(str, Enum):
     """
     Specific collections for grouping KG-Registry entries.
     """
-    # This entity is part of those developed and used by the NCATS Biomedical Translator program.
     translator = "translator"
+    """
+    This entity is part of those developed and used by the NCATS Biomedical Translator program.
+    """
 
 
 
@@ -847,13 +1039,14 @@ class Individual(Contact):
     @field_validator('orcid')
     def pattern_orcid(cls, v):
         pattern=re.compile(r"^\d{4}-\d{4}-\d{4}-\d{3}(\d|X)$")
-        if isinstance(v,list):
+        if isinstance(v, list):
             for element in v:
-                if isinstance(v, str) and not pattern.match(element):
-                    raise ValueError(f"Invalid orcid format: {element}")
-        elif isinstance(v,str):
-            if not pattern.match(v):
-                raise ValueError(f"Invalid orcid format: {v}")
+                if isinstance(element, str) and not pattern.match(element):
+                    err_msg = f"Invalid orcid format: {element}"
+                    raise ValueError(err_msg)
+        elif isinstance(v, str) and not pattern.match(v):
+            err_msg = f"Invalid orcid format: {v}"
+            raise ValueError(err_msg)
         return v
 
 
