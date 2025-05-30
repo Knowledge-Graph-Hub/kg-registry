@@ -26,27 +26,45 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
   id: https://creativecommons.org/licenses/by/4.0/
 products:
-- id: rtx-kg2.graph
-  name: RTX-KG2 KGX
-  description: KGX distribution of the RTX-KG2
-  product_url: https://github.com/ncats/translator-lfs-artifacts/blob/main/files/
+- id: rtx-kg2.graph.nodes
+  name: RTX-KG2.10.1c KGX JSONL Nodes
+  description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   category: GraphProduct
-  format: kgx
+  format: kgx-jsonl
   original_source:
   - rtx-kg2
+  secondary_source:
+  - rtx-kg2.code
+- id: rtx-kg2.graph.edges
+  name: RTX-KG2.10.1c KGX JSONL Edges
+  description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+  category: GraphProduct
+  format: kgx-jsonl
+  original_source:
+  - rtx-kg2
+  secondary_source:
+  - rtx-kg2.code
+- id: rtx-kg2.code
+  name: Code for building RTX-KG2
+  description: Code for building RTX-KG2, in Python
+  product_url: https://github.com/RTXteam/RTX-KG2
+  category: ProcessProduct
   secondary_source:
   - rtx-kg2
 - id: rtx-kg2.neo4j
   name: RTX-KG2 Neo4j
   description: Neo4j distribution of the RTX-KG2 as a graph database
   product_url: https://arax.ncats.io/
-  category: GraphProduct
+  category: ProgrammingInterface
   dump_format: neo4j
   original_source:
   - rtx-kg2
   secondary_source:
-  - rtx-kg2
+  - rtx-kg2.code
   is_neo4j: true
+  is_public: false
 publications:
 - authors:
   - Wood EC
