@@ -1939,6 +1939,169 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
   repository: https://github.com/ebi-chebi/ChEBI
 - activity_status: active
   category: DataSource
@@ -2101,6 +2264,169 @@ resources:
     - protcid
     secondary_source:
     - spoke
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
   publications:
   - authors:
     - Zdrazil B
@@ -2756,6 +3082,272 @@ resources:
     year: '2023'
   repository: https://github.com/ncbi/dbsnp
 - activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: help@dgidb.org
+    - contact_type: url
+      value: http://www.griffithlab.com
+    label: Griffith Lab
+  description: The Drug Gene Interaction Database (DGIdb) is a resource that consolidates
+    disparate data sources describing drug-gene interactions and gene druggability
+    to help researchers identify actionable drug targets or repurposable drugs for
+    genes of interest.
+  domains:
+  - health
+  - pharmacology
+  - drug discovery
+  - genomics
+  - precision medicine
+  homepage_url: https://dgidb.org
+  id: dgidb
+  layout: resource_detail
+  license:
+    id: https://opensource.org/licenses/MIT
+    label: MIT
+  name: DGIdb
+  products:
+  - category: ProgrammingInterface
+    description: API for programmatically accessing the Drug Gene Interaction Database
+    id: dgidb.api
+    is_public: true
+    name: DGIdb API
+    product_url: https://dgidb.org/api
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  publications:
+  - authors:
+    - Cotto KC
+    - Wagner AH
+    - Feng YY
+    - Kiwala S
+    - Coffman AC
+    - Spies G
+    - Wollam A
+    - Spies NC
+    - Griffith OL
+    - Griffith M
+    doi: doi:10.1093/nar/gkx1143
+    id: https://doi.org/10.1093/nar/gkx1143
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'DGIdb 3.0: a redesign and expansion of the drug-gene interaction database'
+    year: '2018'
+  - authors:
+    - Wagner AH
+    - Coffman AC
+    - Ainscough BJ
+    - Spies NC
+    - Skidmore ZL
+    - Campbell KM
+    - Krysiak K
+    - Pan D
+    - McMichael JF
+    - Eldred JM
+    - Walker JR
+    - Wilson RK
+    - Mardis ER
+    - Griffith M
+    - Griffith OL
+    doi: doi:10.1093/nar/gkv1165
+    id: https://doi.org/10.1093/nar/gkv1165
+    journal: Nucleic Acids Research
+    title: 'DGIdb 2.0: mining clinically relevant drug-gene interactions'
+    year: '2016'
+  - authors:
+    - Griffith M
+    - Griffith OL
+    - Coffman AC
+    - Weible JV
+    - McMichael JF
+    - Spies NC
+    - Koval J
+    - Das I
+    - Callaway MB
+    - Eldred JM
+    - Miller CA
+    - Subramanian J
+    - Govindan R
+    - Kumar RD
+    - Bose R
+    - Ding L
+    - Walker JR
+    - Larson DE
+    - Dooling DJ
+    - Smith SM
+    - Ley TJ
+    - Mardis ER
+    - Wilson RK
+    doi: doi:10.1038/nmeth.2689
+    id: https://doi.org/10.1038/nmeth.2689
+    journal: Nature Methods
+    title: DGIdb - mining the druggable genome
+    year: '2013'
+  repository: https://github.com/griffithlab/dgi-db
+- activity_status: active
   category: DataModel
   contacts:
   - category: Individual
@@ -3319,6 +3911,169 @@ resources:
     - protcid
     secondary_source:
     - spoke
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
   publications:
   - id: https://doi.org/10.1093/nar/gkad976
     journal: Nucleic Acids Research
@@ -3441,6 +4196,169 @@ resources:
     - protcid
     secondary_source:
     - spoke
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
   publications:
   - authors:
     - Ursu O
@@ -3850,6 +4768,245 @@ resources:
     id: emikg.web
     name: EMI KG SPARQL Query Editor
     product_url: https://sib-swiss.github.io/sparql-editor/dbgi
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: helpdesk@ensembl.org
+    label: Ensembl Help Desk
+  description: A genome browser for vertebrate genomes that supports research in comparative
+    genomics, evolution, sequence variation, and transcriptional regulation
+  domains:
+  - genomics
+  homepage_url: https://www.ensembl.org
+  id: ensembl
+  infores_id: ensembl
+  layout: resource_detail
+  license:
+    id: http://www.apache.org/licenses/LICENSE-2.0
+    label: Apache License, Version 2.0
+  name: Ensembl
+  products:
+  - category: GraphicalInterface
+    description: A web-based platform for browsing and analyzing vertebrate genomes,
+      including gene annotations, comparative genomics, and variation data.
+    id: ensembl.browser
+    name: Ensembl Genome Browser
+    product_url: https://www.ensembl.org
+  - category: GraphicalInterface
+    description: A data mining tool that allows extraction of data without programming
+      knowledge or understanding of the underlying database structure.
+    id: ensembl.biomart
+    name: BioMart
+    product_url: https://www.ensembl.org/biomart/martview
+  - category: ProcessProduct
+    description: A tool to analyze variants and predict the functional consequences
+      of known and unknown variants.
+    id: ensembl.vep
+    name: Variant Effect Predictor (VEP)
+    product_url: https://www.ensembl.org/info/docs/tools/vep/
+  - category: ProcessProduct
+    description: Tool to search Ensembl genomes for DNA or protein sequences.
+    id: ensembl.blast
+    name: BLAST/BLAT
+    product_url: https://www.ensembl.org/Multi/Tools/Blast
+  - category: ProgrammingInterface
+    description: Programmatic access to all Ensembl data using Perl scripts.
+    id: ensembl.api.perl
+    name: Ensembl Perl API
+    product_url: https://github.com/Ensembl/
+    repository: https://github.com/Ensembl/
+  - category: ProgrammingInterface
+    description: RESTful API that allows access to Ensembl data using various programming
+      languages.
+    id: ensembl.api.rest
+    name: Ensembl REST API
+    product_url: https://rest.ensembl.org
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  publications:
+  - authors:
+    - Dyer SC
+    - Austine-Orimoloye O
+    - Azov AG
+    - Barba M
+    - Barnes I
+    - Barrera-Enriquez VP
+    - Becker A
+    - Bennett R
+    - Beracochea M
+    - Berry A
+    - Ensembl team
+    doi: doi:10.1093/nar/gkae1071
+    id: https://doi.org/10.1093/nar/gkae1071
+    journal: Nucleic Acids Research
+    preferred: true
+    title: Ensembl 2025
+    year: '2025'
+  repository: https://github.com/Ensembl/
 - activity_status: active
   category: DataSource
   contacts:
@@ -4759,6 +5916,169 @@ resources:
     - protcid
     secondary_source:
     - spoke
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
   publications:
   - authors:
     - Ashburner M
@@ -5151,6 +6471,287 @@ resources:
     title: 'KG-Predict: A knowledge graph computational framework for drug repurposing'
     year: '2022'
   repository: http://nlp.case.edu/public/data/GPKG-Predict/
+- activity_status: active
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: enquiries@guidetopharmacology.org
+    label: Guide to Pharmacology Help Desk
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: jamie.davies@ed.ac.uk
+    label: Jamie Davies
+  description: The IUPHAR/BPS Guide to PHARMACOLOGY is an expert-curated resource
+    providing quantitative information on drug targets and the substances that act
+    on them, including approved drugs and experimental therapeutics
+  domains:
+  - pharmacology
+  - health
+  - biomedical
+  - drug discovery
+  - translational
+  homepage_url: https://www.guidetopharmacology.org
+  id: gtopdb
+  infores_id: gtopdb
+  layout: resource_detail
+  license:
+    id: http://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+    logo: https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png
+  name: Guide to Pharmacology
+  products:
+  - category: GraphicalInterface
+    description: A web-based interface for accessing and browsing drug target data,
+      ligand information, and pharmacological interactions
+    id: gtopdb.web
+    name: Guide to Pharmacology Web Interface
+    product_url: https://www.guidetopharmacology.org
+  - category: ProgrammingInterface
+    description: RESTful web services enabling computational access to most of the
+      GtoPdb data in JSON format
+    id: gtopdb.api.rest
+    name: Guide to Pharmacology REST API
+    product_url: https://www.guidetopharmacology.org/webServices.jsp
+  - category: Product
+    description: Complete list of drug targets and their families with detailed information
+    format: csv
+    id: gtopdb.targets.csv
+    name: GtoPdb Targets and Families
+    product_url: https://www.guidetopharmacology.org/DATA/targets_and_families.csv
+  - category: Product
+    description: Complete list of ligands including drugs, small molecules, and other
+      bioactive compounds
+    format: csv
+    id: gtopdb.ligands.csv
+    name: GtoPdb Ligands Dataset
+    product_url: https://www.guidetopharmacology.org/DATA/ligands.csv
+  - category: Product
+    description: Comprehensive dataset of all interactions between ligands and targets
+    format: csv
+    id: gtopdb.interactions.csv
+    name: GtoPdb Interactions Dataset
+    product_url: https://www.guidetopharmacology.org/DATA/interactions.csv
+  - category: Product
+    description: Detailed interactions list for approved drugs and their targets
+    format: csv
+    id: gtopdb.approved_drugs.csv
+    name: GtoPdb Approved Drugs Dataset
+    product_url: https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv
+  - category: Product
+    description: SDF file containing chemical structures with SMILES for all ligands
+      in the database
+    format: sdf
+    id: gtopdb.download.sdf
+    name: GtoPdb Ligand SDF File
+    product_url: https://www.guidetopharmacology.org/DATA/all_ligands.sdf
+  - category: Product
+    description: RDF/linked data format of the GtoPdb data (target-ligand interactions
+      with supporting information)
+    format: rdfxml
+    id: gtopdb.download.rdf
+    name: GtoPdb RDF Dataset
+    product_url: https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3
+  - category: Product
+    description: Complete PostgreSQL database dump of the current Guide to Pharmacology
+      database
+    id: gtopdb.database
+    name: GtoPdb Full Database
+    product_url: https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip
+  - category: GraphicalInterface
+    description: An extension of the Guide to PHARMACOLOGY database providing immunological
+      access-point to GtoPdb data
+    id: gtopdb.immunopharmacology
+    name: Guide to IMMUNOPHARMACOLOGY
+    product_url: https://www.guidetopharmacology.org/immuno/index.jsp
+  - category: GraphicalInterface
+    description: A specialized portal providing optimized access for the malaria research
+      community
+    id: gtopdb.malaria
+    name: Guide to MALARIA PHARMACOLOGY
+    product_url: https://www.guidetopharmacology.org/malaria/index.jsp
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  publications:
+  - authors:
+    - Harding SD
+    - Armstrong JF
+    - Faccenda E
+    - Southan C
+    - Alexander SPH
+    - Davenport AP
+    - Spedding M
+    - Davies JA
+    doi: doi:10.1093/nar/gkad944
+    id: https://doi.org/10.1093/nar/gkad944
+    journal: Nucleic Acids Research
+    preferred: true
+    title: The IUPHAR/BPS Guide to PHARMACOLOGY in 2024
+    year: '2024'
+  repository: https://www.guidetopharmacology.org/download.jsp
 - activity_status: active
   category: DataSource
   contacts:
@@ -5758,6 +7359,169 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
   repository: https://github.com/obophenotype/human-phenotype-ontology
 - activity_status: active
   category: KnowledgeGraph
@@ -6459,6 +8223,169 @@ resources:
     - protcid
     secondary_source:
     - spoke
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
   publications:
   - id: doi:10.1093/nar/gkae909
     preferred: true
@@ -7920,6 +9847,169 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
   repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 - activity_status: active
   category: KnowledgeGraph
@@ -8075,6 +10165,169 @@ resources:
     - protcid
     secondary_source:
     - spoke
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
   publications:
   - authors:
     - Scott Federhen
@@ -12690,6 +14943,169 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
   repository: ''
 - activity_status: active
   category: DataSource
@@ -12869,9 +15285,16 @@ resources:
       value: saramsey
     label: Stephen Ramsey
     orcid: 0000-0002-2168-5403
-  description: A comprehensive knowledge graph from the RTX team.
+  description: RTX-KG2 is a comprehensive biomedical knowledge graph that integrates
+    information from over 80 structured knowledge sources into a semantically standardized
+    model, supporting translational biomedicine and the ARAX biomedical reasoning
+    system.
   domains:
   - health
+  - biomedical
+  - biological systems
+  - genomics
+  - pharmacology
   homepage_url: https://github.com/RTXteam/RTX-KG2
   id: rtx-kg2
   layout: resource_detail
@@ -12882,15 +15305,192 @@ resources:
   name: RTX-KG2
   products:
   - category: GraphProduct
-    description: KGX distribution of the RTX-KG2
-    format: kgx
-    id: rtx-kg2.graph
-    name: RTX-KG2 KGX
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
     original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
     - rtx-kg2
-    product_url: https://github.com/ncats/translator-lfs-artifacts/blob/main/files/
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProcessProduct
+    description: Code for building RTX-KG2, in Python
+    id: rtx-kg2.code
+    name: Code for building RTX-KG2
+    product_url: https://github.com/RTXteam/RTX-KG2
     secondary_source:
     - rtx-kg2
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  publications:
+  - authors:
+    - Wood EC
+    - Glen AK
+    - Kvarfordt LG
+    - Colby LA
+    - Unni DR
+    - Himmelstein DS
+    - Lee AY
+    - Ramsey SA
+    doi: doi:10.1186/s12859-022-04932-3
+    id: https://doi.org/10.1186/s12859-022-04932-3
+    journal: BMC Bioinformatics
+    preferred: true
+    title: 'RTX-KG2: a system for building a semantically standardized knowledge graph
+      for translational biomedicine'
+    year: '2022'
   repository: https://github.com/RTXteam/RTX-KG2
 - activity_status: active
   category: Resource
@@ -13626,6 +16226,169 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
   repository: https://github.com/obophenotype/uberon
 - activity_status: active
   category: KnowledgeGraph
@@ -14119,6 +16882,169 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
   repository: https://www.uniprot.org/help/downloads
 - activity_status: active
   category: DataSource
@@ -14335,6 +17261,201 @@ resources:
   repository: http://rdb.lifesynther.com/
   warnings:
   - Homepage may be inaccessible (March 5 2025)
+- activity_status: inactive
+  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: support@nlm.nih.gov
+    label: National Library of Medicine
+  description: SemMedDB is a repository of semantic predications (subject-predicate-object
+    triples) extracted from biomedical literature by SemRep, a natural language processing
+    system. It contains over 130 million semantic predications extracted from more
+    than 37 million PubMed citations, supporting biomedical knowledge discovery, literature-based
+    discovery, and clinical applications.
+  domains:
+  - biomedical
+  - literature
+  - health
+  - clinical
+  - drug discovery
+  - genomics
+  - pharmacology
+  homepage_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_download.html
+  id: semmeddb
+  layout: resource_detail
+  license:
+    id: https://www.nlm.nih.gov/web_policies.html
+    label: UMLS License
+  name: Semantic MEDLINE Database (SemMedDB)
+  products:
+  - category: Product
+    description: MySQL database containing over 130 million semantic predications
+      extracted from more than 37 million PubMed citations (processed using MEDLINE
+      BASELINE 2022 + PubMed Update Files through May 8, 2024)
+    id: semmeddb.mysql
+    name: SemMedDB MySQL Database
+    product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_MySQL_database.html
+  - category: Product
+    description: CSV file containing citation information for all PubMed articles
+      in SemMedDB
+    format: csv
+    id: semmeddb.citations.csv
+    name: SemMedDB Citations CSV
+    product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv
+  - category: Product
+    description: CSV file containing entity information with UMLS concept identifiers,
+      names, and semantic types
+    format: csv
+    id: semmeddb.entity.csv
+    name: SemMedDB Entity CSV
+    product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/ENTITY.csv
+  - category: Product
+    description: CSV file containing semantic predications with subject-predicate-object
+      triples and associated metadata
+    format: csv
+    id: semmeddb.predication.csv
+    name: SemMedDB Predication CSV
+    product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/PREDICATION.csv
+  - category: Product
+    description: CSV file containing sentence information from PubMed citations
+    format: csv
+    id: semmeddb.sentence.csv
+    name: SemMedDB Sentence CSV
+    product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv
+  - category: ProcessProduct
+    description: The SemRep natural language processing system that extracts semantic
+      predications from biomedical literature to create SemMedDB
+    id: semrep.tool
+    name: SemRep NLP System
+    product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemRep_download.html
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  publications:
+  - authors:
+    - Kilicoglu H
+    - Shin D
+    - Fiszman M
+    - Rosemblat G
+    - Rindflesch TC
+    doi: 10.1093/bioinformatics/bts591
+    id: https://doi.org/10.1093/bioinformatics/bts591
+    journal: Bioinformatics
+    preferred: true
+    title: 'SemMedDB: a PubMed-scale repository of biomedical semantic predications'
+    year: '2012'
+  - authors:
+    - Kilicoglu H
+    - Rosemblat G
+    - Fiszman M
+    - Shin D
+    - Rindflesch TC
+    doi: 10.1186/s12859-020-3517-7
+    id: https://doi.org/10.1186/s12859-020-3517-7
+    journal: BMC Bioinformatics
+    title: Broad-coverage biomedical relation extraction with SemRep
+    year: '2020'
+  - authors:
+    - Kilicoglu H
+    - Rosemblat G
+    - Fiszman M
+    - Rindflesch TC
+    doi: 10.1186/1471-2105-12-486
+    id: https://doi.org/10.1186/1471-2105-12-486
+    journal: BMC Bioinformatics
+    title: Constructing a semantic predication gold standard from the biomedical literature
+    year: '2011'
+  - authors:
+    - Rindflesch TC
+    - Fiszman M
+    doi: 10.1016/j.jbi.2003.11.003
+    id: https://doi.org/10.1016/j.jbi.2003.11.003
+    journal: Journal of Biomedical Informatics
+    title: 'The interaction of domain knowledge and linguistic structure in natural
+      language processing: interpreting hypernymic propositions in biomedical text'
+    year: '2003'
 - activity_status: inactive
   category: DataSource
   contacts:

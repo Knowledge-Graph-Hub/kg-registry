@@ -1,35 +1,201 @@
 ---
-layout: resource_detail
 activity_status: active
-id: dgidb
-name: DGIdb
-description: The Drug Gene Interaction Database (DGIdb) is a resource that consolidates disparate data sources describing drug-gene interactions and gene druggability to help researchers identify actionable drug targets or repurposable drugs for genes of interest.
+category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: help@dgidb.org
+  - contact_type: url
+    value: http://www.griffithlab.com
+  label: Griffith Lab
+description: The Drug Gene Interaction Database (DGIdb) is a resource that consolidates
+  disparate data sources describing drug-gene interactions and gene druggability to
+  help researchers identify actionable drug targets or repurposable drugs for genes
+  of interest.
 domains:
 - health
 - pharmacology
 - drug discovery
 - genomics
 - precision medicine
-contacts:
-- category: Organization
-  label: Griffith Lab
-  contact_details:
-  - contact_type: email
-    value: help@dgidb.org
-  - contact_type: url
-    value: http://www.griffithlab.com
 homepage_url: https://dgidb.org
-repository: https://github.com/griffithlab/dgi-db
+id: dgidb
+layout: resource_detail
 license:
-  label: MIT
   id: https://opensource.org/licenses/MIT
+  label: MIT
+name: DGIdb
 products:
-- id: dgidb.api
-  name: DGIdb API
+- category: ProgrammingInterface
   description: API for programmatically accessing the Drug Gene Interaction Database
-  product_url: https://dgidb.org/api
-  category: ProgrammingInterface
+  id: dgidb.api
   is_public: true
+  name: DGIdb API
+  product_url: https://dgidb.org/api
+- category: GraphProduct
+  description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+  format: kgx-jsonl
+  id: rtx-kg2.graph.nodes
+  name: RTX-KG2.10.1c KGX JSONL Nodes
+  original_source:
+  - chembl
+  - drugbank
+  - kegg
+  - reactome
+  - go
+  - drugcentral
+  - uniprot
+  - mondo
+  - hp
+  - chebi
+  - uberon
+  - ncbitaxon
+  - dgidb
+  - disgenet
+  - ensembl
+  - gtopdb
+  - rtx-kg2
+  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+  secondary_source:
+  - rtx-kg2.code
+- category: GraphProduct
+  description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+  format: kgx-jsonl
+  id: rtx-kg2.graph.edges
+  name: RTX-KG2.10.1c KGX JSONL Edges
+  original_source:
+  - chembl
+  - drugbank
+  - kegg
+  - reactome
+  - go
+  - drugcentral
+  - uniprot
+  - mondo
+  - hp
+  - chebi
+  - uberon
+  - ncbitaxon
+  - dgidb
+  - disgenet
+  - ensembl
+  - gtopdb
+  - rtx-kg2
+  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+  secondary_source:
+  - rtx-kg2.code
+- category: ProgrammingInterface
+  description: Neo4j distribution of the RTX-KG2 as a graph database
+  dump_format: neo4j
+  id: rtx-kg2.neo4j
+  is_neo4j: true
+  is_public: false
+  name: RTX-KG2 Neo4j
+  original_source:
+  - chembl
+  - drugbank
+  - kegg
+  - reactome
+  - go
+  - drugcentral
+  - uniprot
+  - mondo
+  - hp
+  - chebi
+  - uberon
+  - ncbitaxon
+  - dgidb
+  - disgenet
+  - ensembl
+  - gtopdb
+  - rtx-kg2
+  product_url: https://arax.ncats.io/
+  secondary_source:
+  - rtx-kg2.code
+- category: GraphProduct
+  description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+  format: kgx-jsonl
+  id: rtx-kg2.graph.nodes
+  name: RTX-KG2.10.1c KGX JSONL Nodes
+  original_source:
+  - chembl
+  - drugbank
+  - kegg
+  - reactome
+  - go
+  - drugcentral
+  - uniprot
+  - mondo
+  - hp
+  - chebi
+  - uberon
+  - ncbitaxon
+  - dgidb
+  - disgenet
+  - ensembl
+  - gtopdb
+  - rtx-kg2
+  - semmeddb
+  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+  secondary_source:
+  - rtx-kg2.code
+- category: GraphProduct
+  description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+  format: kgx-jsonl
+  id: rtx-kg2.graph.edges
+  name: RTX-KG2.10.1c KGX JSONL Edges
+  original_source:
+  - chembl
+  - drugbank
+  - kegg
+  - reactome
+  - go
+  - drugcentral
+  - uniprot
+  - mondo
+  - hp
+  - chebi
+  - uberon
+  - ncbitaxon
+  - dgidb
+  - disgenet
+  - ensembl
+  - gtopdb
+  - rtx-kg2
+  - semmeddb
+  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+  secondary_source:
+  - rtx-kg2.code
+- category: ProgrammingInterface
+  description: Neo4j distribution of the RTX-KG2 as a graph database
+  dump_format: neo4j
+  id: rtx-kg2.neo4j
+  is_neo4j: true
+  is_public: false
+  name: RTX-KG2 Neo4j
+  original_source:
+  - chembl
+  - drugbank
+  - kegg
+  - reactome
+  - go
+  - drugcentral
+  - uniprot
+  - mondo
+  - hp
+  - chebi
+  - uberon
+  - ncbitaxon
+  - dgidb
+  - disgenet
+  - ensembl
+  - gtopdb
+  - rtx-kg2
+  - semmeddb
+  product_url: https://arax.ncats.io/
+  secondary_source:
+  - rtx-kg2.code
 publications:
 - authors:
   - Cotto KC
@@ -46,7 +212,7 @@ publications:
   id: https://doi.org/10.1093/nar/gkx1143
   journal: Nucleic Acids Research
   preferred: true
-  title: "DGIdb 3.0: a redesign and expansion of the drug-gene interaction database"
+  title: 'DGIdb 3.0: a redesign and expansion of the drug-gene interaction database'
   year: '2018'
 - authors:
   - Wagner AH
@@ -67,7 +233,7 @@ publications:
   doi: doi:10.1093/nar/gkv1165
   id: https://doi.org/10.1093/nar/gkv1165
   journal: Nucleic Acids Research
-  title: "DGIdb 2.0: mining clinically relevant drug-gene interactions"
+  title: 'DGIdb 2.0: mining clinically relevant drug-gene interactions'
   year: '2016'
 - authors:
   - Griffith M
@@ -96,11 +262,10 @@ publications:
   doi: doi:10.1038/nmeth.2689
   id: https://doi.org/10.1038/nmeth.2689
   journal: Nature Methods
-  title: "DGIdb - mining the druggable genome"
+  title: DGIdb - mining the druggable genome
   year: '2013'
-category: DataSource
+repository: https://github.com/griffithlab/dgi-db
 ---
-
 ## DGIdb: Drug Gene Interaction Database
 
 The Drug Gene Interaction Database (DGIdb) is a web resource that consolidates disparate data sources describing drug-gene interactions and gene druggability information. DGIdb helps researchers to prioritize the investigation of drug-gene interactions and identify actionable drug targets or repurposable drugs for genes of interest.
