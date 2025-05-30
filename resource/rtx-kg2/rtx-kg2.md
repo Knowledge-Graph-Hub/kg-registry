@@ -33,6 +33,18 @@ products:
   category: GraphProduct
   format: kgx-jsonl
   original_source:
+  - chembl
+  - drugbank
+  - kegg
+  - reactome
+  - go
+  - drugcentral
+  - uniprot
+  - mondo
+  - hp
+  - chebi
+  - uberon
+  - ncbitaxon
   - rtx-kg2
   secondary_source:
   - rtx-kg2.code
@@ -43,6 +55,18 @@ products:
   category: GraphProduct
   format: kgx-jsonl
   original_source:
+  - chembl
+  - drugbank
+  - kegg
+  - reactome
+  - go
+  - drugcentral
+  - uniprot
+  - mondo
+  - hp
+  - chebi
+  - uberon
+  - ncbitaxon
   - rtx-kg2
   secondary_source:
   - rtx-kg2.code
@@ -97,6 +121,33 @@ RTX-KG2 is the second-generation knowledge graph for the [ARAX](https://github.c
 - **Rich Connectivity**: Contains millions of nodes and edges representing biomedical entities and their relationships
 - **Multiple Formats**: Available in JSON, KGX format, and as a Neo4j graph database
 - **Supporting Translational Medicine**: Designed to enable advanced reasoning across complex biomedical knowledge
+
+### Knowledge Sources
+
+RTX-KG2 integrates data from numerous biomedical knowledge sources, including but not limited to:
+
+#### Data Sources
+- ChEMBL: A manually curated database of bioactive molecules with drug-like properties
+- DrugBank: A comprehensive database containing detailed drug and drug target information
+- KEGG: The Kyoto Encyclopedia of Genes and Genomes
+- Reactome: A curated pathway database
+- DisGeNET: A database of gene-disease associations
+- SemMedDB: A repository of semantic predications extracted from biomedical literature
+- UMLS: The Unified Medical Language System
+- UniProtKB: Universal Protein Resource Knowledgebase
+- HMDB: Human Metabolome Database
+- IntAct: Molecular interaction database
+- NCBIGene: NCBI's gene database
+- SMPDB: Small Molecule Pathway Database
+
+#### Ontologies
+- Gene Ontology (GO): Comprehensive compendium of gene and gene product attributes
+- MONDO: Monarch Disease Ontology
+- Human Phenotype Ontology (HP): Standardized vocabulary of phenotypic abnormalities
+- ChEBI: Chemical Entities of Biological Interest
+- UBERON: Integrated cross-species anatomy ontology
+- NCBITaxon: NCBI Taxonomy
+- Disease Ontology (DO): Standardized ontology for human disease
 
 ### Applications
 
