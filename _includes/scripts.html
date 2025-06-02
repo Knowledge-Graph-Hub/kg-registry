@@ -1,22 +1,271 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
 
 <!-- prism.js is for code blocks, see https://prismjs.com -->
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 
-<script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-
-    mermaid.initialize({ startOnLoad: false,
-                         theme: 'neutral',
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        renderProvenanceDiagrams();
     });
 
-    async function runMermaid() {
-        await mermaid.run({
-            querySelector: 'pre > code.language-mermaid',
+    // D3.js Provenance Diagram renderer
+    function renderProvenanceDiagrams() {
+        const provenanceContainers = document.querySelectorAll('.provenance-diagram');
+        
+        provenanceContainers.forEach(container => {
+            const data = JSON.parse(container.getAttribute('data-provenance'));
+            renderD3Diagram(container, data);
         });
     }
 
-    document.addEventListener('DOMContentLoaded', runMermaid);
+    function renderD3Diagram(container, data) {
+        // Clear any existing content
+        container.innerHTML = '';
+        
+        // Set up dimensions and spacing
+        const width = 600;
+        const height = 300;
+        const nodeWidth = 150;
+        const nodeHeight = 40;
+        const nodePadding = 50;
+        
+        // Create SVG
+        const svg = d3.select(container)
+            .append('svg')
+            .attr('width', width)
+            .attr('height', height)
+            .attr('class', 'provenance-svg');
+            
+        // Create a group for the entire diagram
+        const g = svg.append('g')
+            .attr('transform', 'translate(10, 20)');
+            
+        // Add a subtle data flow indicator
+        svg.append('text')
+            .attr('class', 'direction-indicator')
+            .attr('x', width / 2)
+            .attr('y', height - 10)
+            .attr('text-anchor', 'middle')
+            .text('Data Flow →');
+            
+        // Process the data to create node positions
+        const nodes = [];
+        const links = [];
+        
+        // Calculate horizontal positions
+        // Left section for original sources, middle for secondary, right for product
+        const leftMargin = 20;
+        const rightMargin = width - nodeWidth - 20;
+        const middlePosition = width / 2 - nodeWidth / 2;
+        
+        // Product node is always at the right
+        const productNode = {
+            id: data.product,
+            name: data.product,
+            x: rightMargin,
+            y: height / 2 - nodeHeight / 2,
+            type: 'product'
+        };
+        nodes.push(productNode);
+        
+        // Process secondary sources (middle)
+        if (data.secondarySources && data.secondarySources.length > 0) {
+            const secondaryX = middlePosition;
+            data.secondarySources.forEach((source, i) => {
+                // For multiple secondary sources, distribute them vertically
+                const y = data.secondarySources.length > 1 
+                    ? (height / (data.secondarySources.length + 1)) * (i + 1) - nodeHeight / 2
+                    : height / 2 - nodeHeight / 2;
+                    
+                const node = {
+                    id: source,
+                    name: source,
+                    x: secondaryX,
+                    y: y,
+                    type: 'secondary'
+                };
+                nodes.push(node);
+                
+                // Link to product
+                links.push({
+                    source: node,
+                    target: productNode
+                });
+            });
+        }
+        
+        // Process original sources (left)
+        if (data.originalSources && data.originalSources.length > 0) {
+            const originalX = leftMargin;
+            const spacing = height / (data.originalSources.length + 1);
+            
+            data.originalSources.forEach((source, i) => {
+                const node = {
+                    id: source,
+                    name: source,
+                    x: originalX,
+                    y: (i + 1) * spacing - nodeHeight / 2,
+                    type: 'original'
+                };
+                nodes.push(node);
+                
+                // Link to secondary source or product
+                if (data.secondarySources && data.secondarySources.length > 0) {
+                    // Link to each secondary source
+                    nodes.filter(n => n.type === 'secondary').forEach(target => {
+                        links.push({
+                            source: node,
+                            target: target
+                        });
+                    });
+                } else {
+                    // Link directly to product if no secondary sources
+                    links.push({
+                        source: node,
+                        target: productNode
+                    });
+                }
+            });
+        }
+        
+        // Create links (arrows)
+        const arrows = g.selectAll('.arrow')
+            .data(links)
+            .enter()
+            .append('g')
+            .attr('class', 'arrow');
+            
+        // Add path for each arrow
+        arrows.append('path')
+            .attr('d', d => {
+                const sourceX = d.source.x + nodeWidth;
+                const sourceY = d.source.y + nodeHeight / 2;
+                const targetX = d.target.x;
+                const targetY = d.target.y + nodeHeight / 2;
+                
+                return `M${sourceX},${sourceY} C${sourceX + 30},${sourceY} ${targetX - 30},${targetY} ${targetX},${targetY}`;
+            })
+            .attr('fill', 'none')
+            .attr('stroke', '#999')
+            .attr('stroke-width', 2)
+            .attr('marker-end', 'url(#arrowhead)');
+            
+        // Add arrowhead marker definition
+        svg.append('defs').append('marker')
+            .attr('id', 'arrowhead')
+            .attr('viewBox', '0 -5 10 10')
+            .attr('refX', 8)
+            .attr('refY', 0)
+            .attr('markerWidth', 6)
+            .attr('markerHeight', 6)
+            .attr('orient', 'auto')
+            .append('path')
+            .attr('d', 'M0,-5L10,0L0,5')
+            .attr('fill', '#999');
+            
+        // Create nodes
+        const nodeGroups = g.selectAll('.node')
+            .data(nodes)
+            .enter()
+            .append('g')
+            .attr('class', d => `node ${d.type}`)
+            .attr('transform', d => `translate(${d.x}, ${d.y})`)
+            .on('click', function(event, d) {
+                // Navigate to the resource page when clicking a node
+                window.location.href = `/kg-registry/resource/${d.id}/${d.id}.html`;
+            })
+            .on('mouseover', function(event, d) {
+                // Highlight connected links and nodes
+                d3.select(this).select('rect')
+                    .attr('stroke-width', d.type === 'product' ? 4 : 2)
+                    .attr('filter', 'brightness(1.1)');
+                
+                // Highlight connected arrows
+                arrows.selectAll('path')
+                    .attr('stroke-width', link => 
+                        (link.source.id === d.id || link.target.id === d.id) ? 3 : 2
+                    )
+                    .attr('stroke', link => 
+                        (link.source.id === d.id || link.target.id === d.id) ? '#666' : '#999'
+                    );
+            })
+            .on('mouseout', function(event, d) {
+                // Reset highlights
+                d3.select(this).select('rect')
+                    .attr('stroke-width', d.type === 'product' ? 3 : 1)
+                    .attr('filter', null);
+                
+                // Reset arrows
+                arrows.selectAll('path')
+                    .attr('stroke-width', 2)
+                    .attr('stroke', '#999');
+            });
+            
+        // Add rectangle for each node
+        nodeGroups.append('rect')
+            .attr('width', nodeWidth)
+            .attr('height', nodeHeight)
+            .attr('rx', 5)
+            .attr('ry', 5)
+            .attr('fill', d => {
+                if (d.type === 'product') return '#5588bb';
+                if (d.type === 'secondary') return '#88bb55';
+                return '#ddaa44';
+            })
+            .attr('stroke', '#333')
+            .attr('stroke-width', d => d.type === 'product' ? 3 : 1)
+            .attr('cursor', 'pointer');
+            
+        // Add text for each node
+        nodeGroups.append('text')
+            .attr('x', nodeWidth / 2)
+            .attr('y', nodeHeight / 2)
+            .attr('text-anchor', 'middle')
+            .attr('dominant-baseline', 'middle')
+            .attr('fill', 'white')
+            .text(d => {
+                // Truncate long names
+                return d.name.length > 18 ? d.name.substring(0, 15) + '...' : d.name;
+            })
+            .append('title')  // Add tooltip for full name
+            .text(d => d.name);
+            
+        // Add a legend
+        const legend = svg.append('g')
+            .attr('class', 'legend')
+            .attr('transform', `translate(${width - 130}, 10)`);
+            
+        const legendItems = [
+            { type: 'original', label: 'Original Source' },
+            { type: 'secondary', label: 'Secondary Source' },
+            { type: 'product', label: 'Product' }
+        ];
+        
+        const legendGroups = legend.selectAll('.legend-item')
+            .data(legendItems)
+            .enter()
+            .append('g')
+            .attr('class', 'legend-item')
+            .attr('transform', (d, i) => `translate(0, ${i * 20})`);
+            
+        legendGroups.append('rect')
+            .attr('width', 15)
+            .attr('height', 15)
+            .attr('rx', 2)
+            .attr('ry', 2)
+            .attr('fill', d => {
+                if (d.type === 'product') return '#5588bb';
+                if (d.type === 'secondary') return '#88bb55';
+                return '#ddaa44';
+            });
+            
+        legendGroups.append('text')
+            .attr('x', 20)
+            .attr('y', 12)
+            .attr('font-size', '10px')
+            .text(d => d.label);
+    }
   </script>
