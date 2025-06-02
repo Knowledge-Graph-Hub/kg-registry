@@ -8,23 +8,67 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        renderProvenanceDiagrams();
+        // Call the async function without waiting for it
+        renderProvenanceDiagrams().catch(console.error);
 
         // Add window resize listener to adjust diagrams on window resize
         window.addEventListener('resize', function () {
             // Debounce the resize event
             if (this.resizeTimeout) clearTimeout(this.resizeTimeout);
             this.resizeTimeout = setTimeout(function () {
-                renderProvenanceDiagrams();
+                renderProvenanceDiagrams().catch(console.error);
             }, 200);
         });
     });
 
-    // D3.js Provenance Diagram renderer
-    function renderProvenanceDiagrams() {
-        const provenanceContainers = document.querySelectorAll('.provenance-diagram');
+    // Function to fetch resource category and icon
+    async function fetchCategoryIcon(resourceId) {
+        try {
+            const response = await fetch(`/kg-registry/resource/${resourceId}/${resourceId}.html`);
+            if (!response.ok) {
+                return { category: 'unknown', icon: 'box' };
+            }
+            const html = await response.text();
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            
+            // Look for the header with the icon
+            const header = doc.querySelector('h1 .bi');
+            if (header) {
+                const iconClass = header.className;
+                // Extract the icon name from "bi bi-iconname"
+                const iconName = iconClass.replace('bi bi-', '');
+                return { category: 'found', icon: iconName };
+            }
+            
+            return { category: 'unknown', icon: 'box' };
+        } catch (error) {
+            console.error('Error fetching resource category:', error);
+            return { category: 'error', icon: 'box' };
+        }
+    }
 
-        provenanceContainers.forEach(container => {
+    // Category to icon mapping
+    const categoryIcons = {
+        "Aggregator": "grid-3x3",
+        "Resource": "archive",
+        "KnowledgeGraph": "globe",
+        "DataSource": "shop",
+        "DataModel": "diagram-3",
+        "GraphProduct": "globe",
+        "Product": "box",
+        "MappingProduct": "map",
+        "ProcessProduct": "gear",
+        "DataModelProduct": "diagram-3",
+        "GraphicalInterface": "window",
+        "ProgrammingInterface": "code-square"
+    };
+
+    // D3.js Provenance Diagram renderer
+    async function renderProvenanceDiagrams() {
+        const provenanceContainers = document.querySelectorAll('.provenance-diagram');
+        
+        for (const container of provenanceContainers) {
             const data = JSON.parse(container.getAttribute('data-provenance'));
 
             // Calculate appropriate height based on number of sources
@@ -45,17 +89,17 @@
             container.style.height = `${calculatedHeight}px`;
 
             // Render the diagram with the calculated height
-            renderD3Diagram(container, data, calculatedHeight);
+            await renderD3Diagram(container, data, calculatedHeight);
 
             // Also set the height on the parent card
             const cardBody = container.closest('.card-body');
             if (cardBody) {
                 cardBody.style.minHeight = `${calculatedHeight + 70}px`; // Add some extra padding
             }
-        });
+        }
     }
 
-    function renderD3Diagram(container, data, height) {
+    async function renderD3Diagram(container, data, height) {
         // Clear any existing content
         container.innerHTML = '';
 
@@ -65,6 +109,55 @@
         const nodeWidth = 150;
         const nodeHeight = 50; // Increased node height for better text fit
         const nodePadding = 50;
+        
+        // Preload category icons for each resource
+        const resourceIcons = {};
+        
+        // Add product category icon - we know it's a product type already
+        const productCategory = container.getAttribute('data-product-category');
+        const productIcon = container.getAttribute('data-product-icon');
+        
+        if (productCategory && productIcon) {
+            // Use the category and icon from the data attributes
+            resourceIcons[data.product] = { 
+                category: productCategory, 
+                icon: productIcon
+            };
+        } else {
+            // Fallback to default Product icon
+            resourceIcons[data.product] = { 
+                category: 'Product', 
+                icon: categoryIcons['Product'] || 'box' 
+            };
+        }
+        
+        // Load all source icons asynchronously
+        const fetchPromises = [];
+        
+        // Load original source icons
+        if (data.originalSources && data.originalSources.length > 0) {
+            for (const source of data.originalSources) {
+                fetchPromises.push(
+                    fetchCategoryIcon(source).then(result => {
+                        resourceIcons[source] = result;
+                    })
+                );
+            }
+        }
+        
+        // Load secondary source icons
+        if (data.secondarySources && data.secondarySources.length > 0) {
+            for (const source of data.secondarySources) {
+                fetchPromises.push(
+                    fetchCategoryIcon(source).then(result => {
+                        resourceIcons[source] = result;
+                    })
+                );
+            }
+        }
+        
+        // Wait for all icon data to be loaded
+        await Promise.all(fetchPromises);
 
         // Create SVG
         const svg = d3.select(container)
@@ -342,6 +435,38 @@
             })
             .append('title')  // Add tooltip for full name
             .text(d => d.name);
+            
+        // Add category icons to each node
+        nodeGroups.append('g')
+            .attr('class', 'node-icon')
+            .attr('transform', d => `translate(${nodeWidth - 22}, 10)`) // Position in top-right corner with padding
+            .each(function(d) {
+                const iconGroup = d3.select(this);
+                const iconData = resourceIcons[d.id];
+                
+                if (iconData && iconData.icon) {
+                    // Create icon background circle
+                    iconGroup.append('circle')
+                        .attr('r', 10)
+                        .attr('fill', 'white')
+                        .attr('opacity', 0.9);
+                        
+                    // Create SVG for Bootstrap icon
+                    // Use foreign object to embed HTML icon
+                    iconGroup.append('foreignObject')
+                        .attr('width', 20)
+                        .attr('height', 20)
+                        .attr('x', -10)
+                        .attr('y', -10)
+                        .html(`<div style="width:20px;height:20px;display:flex;align-items:center;justify-content:center">
+                            <i class="bi bi-${iconData.icon}" style="font-size:12px;color:#333;"></i>
+                        </div>`);
+                        
+                    // Add tooltip with category name
+                    iconGroup.append('title')
+                        .text(iconData.category || 'Resource');
+                }
+            });
 
         // Add a legend (horizontal layout)
         const legend = svg.append('g')
