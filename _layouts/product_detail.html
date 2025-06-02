@@ -94,7 +94,9 @@ layout: default
             "product": "{{page.id}}",
             "originalSources": [{% for source in page.original_source %}"{{source}}"{% unless forloop.last %},{% endunless %}{% endfor %}],
             "secondarySources": [{% if page.secondary_source.first != nil %}{% for source in page.secondary_source %}"{{source}}"{% unless forloop.last %},{% endunless %}{% endfor %}{% else %}"{{page.secondary_source}}"{% endif %}]
-          }'>
+          }'
+          data-product-category="{{category}}"
+          data-product-icon="{{icon_name}}">
         </div>
         {% elsif page.original_source %}
         <div class="provenance-diagram" style="width: 100%;" 
@@ -102,7 +104,9 @@ layout: default
             "product": "{{page.id}}",
             "originalSources": [{% for source in page.original_source %}"{{source}}"{% unless forloop.last %},{% endunless %}{% endfor %}],
             "secondarySources": []
-          }'>
+          }'
+          data-product-category="{{category}}"
+          data-product-icon="{{icon_name}}">
         </div>
         {% elsif page.secondary_source %}
         <div class="provenance-diagram" style="width: 100%;" 
@@ -110,7 +114,9 @@ layout: default
             "product": "{{page.id}}",
             "originalSources": [],
             "secondarySources": [{% if page.secondary_source.first != nil %}{% for source in page.secondary_source %}"{{source}}"{% unless forloop.last %},{% endunless %}{% endfor %}{% else %}"{{page.secondary_source}}"{% endif %}]
-          }'>
+          }'
+          data-product-category="{{category}}"
+          data-product-icon="{{icon_name}}">
         </div>
         {% endif %}
       </div>

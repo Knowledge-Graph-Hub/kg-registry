@@ -55,6 +55,21 @@
   fill: #ddaa44;
 }
 
+/* Node icon styles */
+.node-icon {
+  pointer-events: none;
+}
+
+.node-icon circle {
+  stroke: #333;
+  stroke-width: 0.5;
+}
+
+.node-icon i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* Legend styles */
 .legend {
   font-family: 'Helvetica Neue', Arial, sans-serif;
