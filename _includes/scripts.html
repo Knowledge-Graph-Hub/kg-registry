@@ -1,22 +1,1208 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
 
 <!-- prism.js is for code blocks, see https://prismjs.com -->
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 
-<script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Call the async function without waiting for it
+        renderProvenanceDiagrams().catch(console.error);
 
-    mermaid.initialize({ startOnLoad: false,
-                         theme: 'neutral',
+        // Add window resize listener to adjust diagrams on window resize
+        window.addEventListener('resize', function () {
+            // Debounce the resize event
+            if (this.resizeTimeout) clearTimeout(this.resizeTimeout);
+            this.resizeTimeout = setTimeout(function () {
+                renderProvenanceDiagrams().catch(console.error);
+            }, 200);
+        });
+        
+        // Add event listeners for PROV export links
+        document.querySelectorAll('.export-prov-xml, .export-prov-rdf, .export-prov-json, .export-prov-svg').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Find the closest provenance diagram
+                const diagramContainer = this.closest('.card-body').querySelector('.provenance-diagram');
+                if (!diagramContainer) return;
+                
+                // Get the provenance data
+                const data = JSON.parse(diagramContainer.getAttribute('data-provenance'));
+                
+                // Get the format from the link
+                const format = this.getAttribute('data-format') || 'xml';
+                
+                // Generate the appropriate format
+                let content, mimeType, fileExtension;
+                
+                switch(format) {
+                    case 'rdf':
+                        content = generateProvRDF(data);
+                        mimeType = 'text/turtle';
+                        fileExtension = 'ttl';
+                        break;
+                    case 'json':
+                        content = generateProvJSON(data);
+                        mimeType = 'application/json';
+                        fileExtension = 'json';
+                        break;
+                    case 'svg':
+                        // Export the SVG content directly
+                        const svgElement = diagramContainer.querySelector('svg');
+                        if (!svgElement) return;
+                        
+                        // Clone the SVG to avoid modifying the displayed one
+                        const svgClone = svgElement.cloneNode(true);
+                        
+                        // Add proper XML namespace and styling for standalone use
+                        svgClone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+                        svgClone.setAttribute('xmlns:xlink', 'http://www.w3.org/1999/xlink');
+                        
+                        // Add embedded CSS to ensure styles are preserved
+                        const style = document.createElement('style');
+                        style.textContent = `
+                            .node-box { fill: #f5f5f5; stroke: #aaa; stroke-width: 1px; rx: 5px; ry: 5px; }
+                            .node-text { font-family: Arial, sans-serif; font-size: 12px; fill: #333; }
+                            .node-icon-circle { fill: #fff; stroke: #999; stroke-width: 1px; }
+                            .node-icon-symbol { fill: #555; font-family: bootstrap-icons; font-size: 14px; }
+                            .link-path { stroke: #999; stroke-width: 1.5px; fill: none; stroke-dasharray: 2,2; }
+                            .link-arrow { fill: #999; }
+                            .direction-indicator { fill: #aaa; font-size: 10px; font-style: italic; }
+                            .legend-text { font-family: Arial, sans-serif; font-size: 11px; fill: #666; }
+                            .legend-item { font-family: Arial, sans-serif; font-size: 11px; fill: #333; }
+                        `;
+                        svgClone.insertBefore(style, svgClone.firstChild);
+                        
+                        content = new XMLSerializer().serializeToString(svgClone);
+                        mimeType = 'image/svg+xml';
+                        fileExtension = 'svg';
+                        break;
+                    case 'xml':
+                    default:
+                        content = generateProvXML(data);
+                        mimeType = 'application/xml';
+                        fileExtension = 'xml';
+                        break;
+                }
+                
+                // Create a blob with the content
+                const blob = new Blob([content], { type: mimeType });
+                
+                // Create a download link
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `${data.product}_provenance.${fileExtension}`;
+                
+                // Trigger the download
+                document.body.appendChild(a);
+                a.click();
+                
+                // Show a notification toast
+                showExportNotification(format, data.product);
+                
+                // Clean up
+                setTimeout(() => {
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                }, 0);
+            });
+        });
+        
+        // Function to display a toast notification when file is exported
+        function showExportNotification(format, productName) {
+            // Create the toast container if it doesn't exist
+            let toastContainer = document.getElementById('toast-container');
+            if (!toastContainer) {
+                toastContainer = document.createElement('div');
+                toastContainer.id = 'toast-container';
+                toastContainer.className = 'toast-container position-fixed bottom-0 end-0 p-3';
+                document.body.appendChild(toastContainer);
+            }
+            
+            // Format names for the notification
+            let formatName;
+            switch(format) {
+                case 'rdf': formatName = 'PROV-RDF (Turtle)'; break;
+                case 'json': formatName = 'PROV-JSON'; break;
+                case 'svg': formatName = 'SVG Image'; break;
+                case 'xml': 
+                default: formatName = 'PROV-XML'; break;
+            }
+            
+            // Create a unique ID for this toast
+            const toastId = 'toast-' + Date.now();
+            
+            // Create the toast HTML
+            const toastHtml = `
+                <div id="${toastId}" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <i class="bi bi-check-circle-fill me-2" style="color: #28a745;"></i>
+                        <strong class="me-auto">Export Successful</strong>
+                        <small>Just now</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        ${formatName} for <strong>${productName}</strong> has been downloaded.
+                    </div>
+                </div>
+            `;
+            
+            // Add the toast to the container
+            toastContainer.insertAdjacentHTML('beforeend', toastHtml);
+            
+            // Initialize the toast and show it
+            const toastElement = document.getElementById(toastId);
+            const toast = new bootstrap.Toast(toastElement, { autohide: true, delay: 3000 });
+            toast.show();
+            
+            // Remove the toast from DOM after it's hidden
+            toastElement.addEventListener('hidden.bs.toast', function () {
+                toastElement.remove();
+            });
+        }
     });
 
-    async function runMermaid() {
-        await mermaid.run({
-            querySelector: 'pre > code.language-mermaid',
-        });
+    // Function to fetch resource category and icon
+    async function fetchCategoryIcon(resourceId) {
+        try {
+            const response = await fetch(`/kg-registry/resource/${resourceId}/${resourceId}.html`);
+            if (!response.ok) {
+                return { category: 'unknown', icon: 'box' };
+            }
+            const html = await response.text();
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            
+            // Look for the header with the icon
+            const header = doc.querySelector('h1 .bi');
+            if (header) {
+                const iconClass = header.className;
+                // Extract the icon name from "bi bi-iconname"
+                const iconName = iconClass.replace('bi bi-', '');
+                return { category: 'found', icon: iconName };
+            }
+            
+            return { category: 'unknown', icon: 'box' };
+        } catch (error) {
+            console.error('Error fetching resource category:', error);
+            return { category: 'error', icon: 'box' };
+        }
     }
 
-    document.addEventListener('DOMContentLoaded', runMermaid);
-  </script>
+    // Category to icon mapping
+    const categoryIcons = {
+        "Aggregator": "grid-3x3",
+        "Resource": "archive",
+        "KnowledgeGraph": "globe",
+        "DataSource": "shop",
+        "DataModel": "diagram-3",
+        "GraphProduct": "globe",
+        "Product": "box",
+        "MappingProduct": "map",
+        "ProcessProduct": "gear",
+        "DataModelProduct": "diagram-3",
+        "GraphicalInterface": "window",
+        "ProgrammingInterface": "code-square"
+    };
+
+    // Function to validate PROV export data
+    function validateProvData(data) {
+        // Create a validated copy of the data
+        const validated = {
+            product: data.product || 'unknown',
+            originalSources: [],
+            secondarySources: []
+        };
+        
+        // Validate original sources (ensure it's an array of strings)
+        if (data.originalSources && Array.isArray(data.originalSources)) {
+            validated.originalSources = data.originalSources.filter(source => 
+                typeof source === 'string' && source.trim() !== ''
+            );
+        }
+        
+        // Validate secondary sources (ensure it's an array of strings)
+        if (data.secondarySources && Array.isArray(data.secondarySources)) {
+            validated.secondarySources = data.secondarySources.filter(source => 
+                typeof source === 'string' && source.trim() !== ''
+            );
+        }
+        
+        return validated;
+    }
+
+    // Function to generate PROV XML representation of provenance data
+    function generateProvXML(data) {
+        // Validate data first
+        const validatedData = validateProvData(data);
+        
+        // Create the timestamp for the XML
+        const now = new Date();
+        const timestamp = now.toISOString();
+        const kgRegistryUrl = window.location.origin + '/kg-registry/';
+        
+        // Start the XML document
+        let xml = `<?xml version="1.0" encoding="UTF-8"?>
+<prov:document xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:kgr="https://w3id.org/bridge2ai/data-sheets-schema/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <!-- KG-Registry Bundle Information -->
+    <prov:entity prov:id="kgr:registry">
+        <prov:label>KG-Registry</prov:label>
+        <prov:type>kgr:Registry</prov:type>
+        <rdfs:seeAlso>${kgRegistryUrl}</rdfs:seeAlso>
+    </prov:entity>
+    
+    <!-- Product entity -->
+    <prov:entity prov:id="kgr:${validatedData.product}">
+        <prov:label>${validatedData.product}</prov:label>
+        <prov:type>kgr:Product</prov:type>
+        <prov:generatedAtTime>${timestamp}</prov:generatedAtTime>
+        <rdfs:seeAlso>${kgRegistryUrl}resource/${validatedData.product}/${validatedData.product}.html</rdfs:seeAlso>
+    </prov:entity>`;
+        
+        // Add secondary sources
+        if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
+            for (const source of validatedData.secondarySources) {
+                // Add the entity
+                xml += `
+    
+    <!-- Secondary source entity -->
+    <prov:entity prov:id="kgr:${source}">
+        <prov:label>${source}</prov:label>
+        <prov:type>kgr:Resource</prov:type>
+        <prov:type>kgr:secondary_source</prov:type>
+        <rdfs:seeAlso>${kgRegistryUrl}resource/${source}/${source}.html</rdfs:seeAlso>
+    </prov:entity>
+    
+    <!-- Derivation relation: product was derived from secondary source -->
+    <prov:wasDerivedFrom>
+        <prov:generatedEntity prov:ref="kgr:${validatedData.product}"/>
+        <prov:usedEntity prov:ref="kgr:${source}"/>
+        <prov:type>prov:Derivation</prov:type>
+    </prov:wasDerivedFrom>`;
+            }
+        }
+        
+        // Add original sources
+        if (validatedData.originalSources && validatedData.originalSources.length > 0) {
+            for (const source of validatedData.originalSources) {
+                // Add the entity
+                xml += `
+    
+    <!-- Original source entity -->
+    <prov:entity prov:id="kgr:${source}">
+        <prov:label>${source}</prov:label>
+        <prov:type>kgr:Resource</prov:type>
+        <prov:type>kgr:original_source</prov:type>
+        <rdfs:seeAlso>${kgRegistryUrl}resource/${source}/${source}.html</rdfs:seeAlso>
+    </prov:entity>`;
+                
+                // If there are secondary sources, connect original to secondary
+                if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
+                    for (const secondarySource of validatedData.secondarySources) {
+                        xml += `
+    
+    <!-- Derivation relation: secondary source was derived from original source -->
+    <prov:wasDerivedFrom>
+        <prov:generatedEntity prov:ref="kgr:${secondarySource}"/>
+        <prov:usedEntity prov:ref="kgr:${source}"/>
+        <prov:type>prov:Derivation</prov:type>
+    </prov:wasDerivedFrom>`;
+                    }
+                } else {
+                    // If no secondary sources, connect original directly to product
+                    xml += `
+    
+    <!-- Derivation relation: product was derived from original source -->
+    <prov:wasDerivedFrom>
+        <prov:generatedEntity prov:ref="kgr:${validatedData.product}"/>
+        <prov:usedEntity prov:ref="kgr:${source}"/>
+        <prov:type>prov:Derivation</prov:type>
+    </prov:wasDerivedFrom>`;
+                }
+            }
+        }
+        
+        // Close the XML document
+        xml += `
+</prov:document>`;
+        
+        return xml;
+    }
+
+    // Function to generate PROV RDF (Turtle) representation of provenance data
+    function generateProvRDF(data) {
+        // Validate data first
+        const validatedData = validateProvData(data);
+        
+        // Create the timestamp for the RDF
+        const now = new Date();
+        const timestamp = now.toISOString();
+        const kgRegistryUrl = window.location.origin + '/kg-registry/';
+        
+        // Start the RDF document (Turtle format)
+        let rdf = `@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix kgr: <https://w3id.org/bridge2ai/data-sheets-schema/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# KG-Registry Bundle Information
+kgr:registry a prov:Entity ;
+    prov:type kgr:Registry ;
+    rdfs:label "KG-Registry" ;
+    rdfs:seeAlso "${kgRegistryUrl}" .
+
+# Product entity
+kgr:${validatedData.product} a prov:Entity ;
+    prov:type kgr:Product ;
+    rdfs:label "${validatedData.product}" ;
+    prov:generatedAtTime "${timestamp}"^^xsd:dateTime ;
+    rdfs:seeAlso "${kgRegistryUrl}resource/${validatedData.product}/${validatedData.product}.html" .
+`;
+        
+        // Add secondary sources
+        if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
+            for (const source of validatedData.secondarySources) {
+                // Add the entity
+                rdf += `
+# Secondary source entity
+kgr:${source} a prov:Entity ;
+    prov:type kgr:Resource , kgr:secondary_source ;
+    rdfs:label "${source}" ;
+    rdfs:seeAlso "${kgRegistryUrl}resource/${source}/${source}.html" .
+
+# Derivation relation: product was derived from secondary source
+kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
+`;
+            }
+        }
+        
+        // Add original sources
+        if (validatedData.originalSources && validatedData.originalSources.length > 0) {
+            for (const source of validatedData.originalSources) {
+                // Add the entity
+                rdf += `
+# Original source entity
+kgr:${source} a prov:Entity ;
+    prov:type kgr:Resource , kgr:original_source ;
+    rdfs:label "${source}" ;
+    rdfs:seeAlso "${kgRegistryUrl}resource/${source}/${source}.html" .
+`;
+                
+                // If there are secondary sources, connect original to secondary
+                if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
+                    for (const secondarySource of validatedData.secondarySources) {
+                        rdf += `
+# Derivation relation: secondary source was derived from original source
+kgr:${secondarySource} prov:wasDerivedFrom kgr:${source} .
+`;
+                    }
+                } else {
+                    // If no secondary sources, connect original directly to product
+                    rdf += `
+# Derivation relation: product was derived from original source
+kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
+`;
+                }
+            }
+        }
+        
+        return rdf;
+    }
+
+    // Function to generate PROV JSON representation of provenance data
+    function generateProvJSON(data) {
+        // Validate data first
+        const validatedData = validateProvData(data);
+        
+        // Create the timestamp for the JSON
+        const now = new Date();
+        const timestamp = now.toISOString();
+        const kgRegistryUrl = window.location.origin + '/kg-registry/';
+        
+        // Create the JSON object structure according to PROV-JSON spec
+        const provJSON = {
+            "prefix": {
+                "prov": "http://www.w3.org/ns/prov#",
+                "kgr": "https://w3id.org/bridge2ai/data-sheets-schema/",
+                "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+                "xsd": "http://www.w3.org/2001/XMLSchema#"
+            },
+            "entity": {
+                "kgr:registry": {
+                    "prov:type": { "$": "kgr:Registry", "type": "prov:QUALIFIED_NAME" },
+                    "rdfs:label": "KG-Registry",
+                    "rdfs:seeAlso": kgRegistryUrl
+                },
+                [`kgr:${validatedData.product}`]: {
+                    "prov:type": { "$": "kgr:Product", "type": "prov:QUALIFIED_NAME" },
+                    "rdfs:label": validatedData.product,
+                    "prov:generatedAtTime": { "$": timestamp, "type": "xsd:dateTime" },
+                    "rdfs:seeAlso": `${kgRegistryUrl}resource/${validatedData.product}/${validatedData.product}.html`
+                }
+            },
+            "wasDerivedFrom": {}
+        };
+        
+        // Add secondary sources
+        if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
+            validatedData.secondarySources.forEach((source, index) => {
+                // Add entity
+                provJSON.entity[`kgr:${source}`] = {
+                    "prov:type": [
+                        { "$": "kgr:Resource", "type": "prov:QUALIFIED_NAME" },
+                        { "$": "kgr:secondary_source", "type": "prov:QUALIFIED_NAME" }
+                    ],
+                    "rdfs:label": source,
+                    "rdfs:seeAlso": `${kgRegistryUrl}resource/${source}/${source}.html`
+                };
+                
+                // Add derivation relation: product was derived from secondary source
+                provJSON.wasDerivedFrom[`_:wasDerivedFrom${index}`] = {
+                    "prov:generatedEntity": { "$": `kgr:${validatedData.product}`, "type": "prov:QUALIFIED_NAME" },
+                    "prov:usedEntity": { "$": `kgr:${source}`, "type": "prov:QUALIFIED_NAME" },
+                    "prov:type": { "$": "prov:Derivation", "type": "prov:QUALIFIED_NAME" }
+                };
+            });
+        }
+        
+        // Add original sources
+        if (validatedData.originalSources && validatedData.originalSources.length > 0) {
+            validatedData.originalSources.forEach((source, index) => {
+                // Add entity
+                provJSON.entity[`kgr:${source}`] = {
+                    "prov:type": [
+                        { "$": "kgr:Resource", "type": "prov:QUALIFIED_NAME" },
+                        { "$": "kgr:original_source", "type": "prov:QUALIFIED_NAME" }
+                    ],
+                    "rdfs:label": source,
+                    "rdfs:seeAlso": `${kgRegistryUrl}resource/${source}/${source}.html`
+                };
+                
+                // If there are secondary sources, connect original to secondary
+                if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
+                    validatedData.secondarySources.forEach((secondarySource, sIndex) => {
+                        provJSON.wasDerivedFrom[`_:wasDerivedFrom${index}_${sIndex}`] = {
+                            "prov:generatedEntity": { "$": `kgr:${secondarySource}`, "type": "prov:QUALIFIED_NAME" },
+                            "prov:usedEntity": { "$": `kgr:${source}`, "type": "prov:QUALIFIED_NAME" },
+                            "prov:type": { "$": "prov:Derivation", "type": "prov:QUALIFIED_NAME" }
+                        };
+                    });
+                } else {
+                    // If no secondary sources, connect original directly to product
+                    provJSON.wasDerivedFrom[`_:wasDerivedFrom${index}_direct`] = {
+                        "prov:generatedEntity": { "$": `kgr:${validatedData.product}`, "type": "prov:QUALIFIED_NAME" },
+                        "prov:usedEntity": { "$": `kgr:${source}`, "type": "prov:QUALIFIED_NAME" },
+                        "prov:type": { "$": "prov:Derivation", "type": "prov:QUALIFIED_NAME" }
+                    };
+                }
+            });
+        }
+        
+        return JSON.stringify(provJSON, null, 2);
+    }
+
+    // D3.js Provenance Diagram renderer
+    async function renderProvenanceDiagrams() {
+        const provenanceContainers = document.querySelectorAll('.provenance-diagram');
+        
+        for (const container of provenanceContainers) {
+            const data = JSON.parse(container.getAttribute('data-provenance'));
+
+            // Set up the legend toggle button
+            const containerCardBody = container.closest('.card-body');
+            const legendToggleBtn = containerCardBody.querySelector('.legend-toggle-button');
+            if (legendToggleBtn) {
+                legendToggleBtn.addEventListener('click', function() {
+                    const svg = container.querySelector('svg');
+                    const legends = svg.querySelectorAll('.legend');
+                    legends.forEach(legend => {
+                        legend.classList.toggle('hidden');
+                    });
+                    
+                    // Update icon to show active/inactive state
+                    const icon = this.querySelector('i');
+                    if (svg.querySelector('.legend.hidden')) {
+                        icon.classList.remove('bi-list-check');
+                        icon.classList.add('bi-list-ul');
+                    } else {
+                        icon.classList.remove('bi-list-ul');
+                        icon.classList.add('bi-list-check');
+                    }
+                });
+            }
+
+            // Calculate appropriate height based on number of sources
+            const originalSourceCount = data.originalSources ? data.originalSources.length : 0;
+            const secondarySourceCount = data.secondarySources ? data.secondarySources.length : 0;
+
+            // Base height + additional height per source (with some minimum)
+            const minHeight = 300; // Minimum height
+            const heightPerSource = 70; // Add this much height per source
+
+            // Calculate height based on whichever is larger: original or secondary sources
+            const calculatedHeight = Math.max(
+                minHeight,
+                Math.max(originalSourceCount, secondarySourceCount) * heightPerSource + 100
+            );
+
+            // Set height on the container
+            container.style.height = `${calculatedHeight}px`;
+
+            // Render the diagram with the calculated height
+            await renderD3Diagram(container, data, calculatedHeight);
+
+            // Also set the height on the parent card
+            const cardBody = container.closest('.card-body');
+            if (cardBody) {
+                cardBody.style.minHeight = `${calculatedHeight + 70}px`; // Add some extra padding
+            }
+            
+            // Add drag and drop functionality
+            addDragAndDrop(container);
+        }
+    }
+
+    async function renderD3Diagram(container, data, height) {
+        // Clear any existing content
+        container.innerHTML = '';
+
+        // Set up dimensions and spacing
+        const width = 600;
+        // Use the dynamic height passed from the parent function
+        const baseNodeWidth = 150;
+        const nodeHeight = 50; // Increased node height for better text fit
+        const nodePadding = 50;
+        
+        // Function to calculate node width dynamically based on text length
+        function calculateNodeWidth(name) {
+            // Base width for all nodes
+            const minWidth = baseNodeWidth;
+            // Max width is 50% wider than base width
+            const maxWidth = minWidth * 1.5;
+            
+            // Estimate width needed based on text length (rough estimate: ~8px per character)
+            const estimatedWidth = Math.max(minWidth, name.length * 8);
+            
+            // Clamp the width between min and max values
+            return Math.min(maxWidth, estimatedWidth);
+        }
+        
+        // Preload category icons for each resource
+        const resourceIcons = {};
+        
+        // Add product category icon - we know it's a product type already
+        const productCategory = container.getAttribute('data-product-category');
+        const productIcon = container.getAttribute('data-product-icon');
+        
+        if (productCategory && productIcon) {
+            // Use the category and icon from the data attributes
+            resourceIcons[data.product] = { 
+                category: productCategory, 
+                icon: productIcon
+            };
+        } else {
+            // Fallback to default Product icon
+            resourceIcons[data.product] = { 
+                category: 'Product', 
+                icon: categoryIcons['Product'] || 'box' 
+            };
+        }
+        
+        // Load all source icons asynchronously
+        const fetchPromises = [];
+        
+        // Load original source icons
+        if (data.originalSources && data.originalSources.length > 0) {
+            for (const source of data.originalSources) {
+                fetchPromises.push(
+                    fetchCategoryIcon(source).then(result => {
+                        resourceIcons[source] = result;
+                    })
+                );
+            }
+        }
+        
+        // Load secondary source icons
+        if (data.secondarySources && data.secondarySources.length > 0) {
+            for (const source of data.secondarySources) {
+                fetchPromises.push(
+                    fetchCategoryIcon(source).then(result => {
+                        resourceIcons[source] = result;
+                    })
+                );
+            }
+        }
+        
+        // Wait for all icon data to be loaded
+        await Promise.all(fetchPromises);
+
+        // Create SVG
+        const svg = d3.select(container)
+            .append('svg')
+            .attr('width', width)
+            .attr('height', height)
+            .attr('class', 'provenance-svg');
+
+        // Create a group for the entire diagram
+        const g = svg.append('g')
+            .attr('transform', 'translate(10, 20)');
+
+        // Add a subtle data flow indicator
+        svg.append('text')
+            .attr('class', 'direction-indicator')
+            .attr('x', width / 2)
+            .attr('y', height - 10)
+            .attr('text-anchor', 'middle')
+            .attr('font-size', '14px') // Increased font size
+            .text('Data Flow →');
+
+        // Process the data to create node positions
+        const nodes = [];
+        const links = [];
+
+        // Calculate horizontal positions
+        // Left section for original sources, middle for secondary, right for product
+        const leftMargin = 20; // Left edge margin
+        const rightMargin = width - baseNodeWidth - 20; // Right edge margin
+        const middlePosition = width / 2 - baseNodeWidth / 2; // Center position for secondary sources
+
+        // Define the diagram's horizontal layout zones more explicitly 
+        const originalSourceZone = width * 0.15; // Original sources at about 15% from left
+        const secondarySourceZone = width * 0.55; // Secondary sources at about 55% from left
+
+        // Product node is always at the right
+        const productNodeWidth = calculateNodeWidth(data.product);
+        const productNode = {
+            id: data.product,
+            name: data.product,
+            width: productNodeWidth, // Store node width for later use
+            x: rightMargin,
+            y: height / 2 - nodeHeight / 2,
+            type: 'product'
+        };
+        nodes.push(productNode);
+
+        // Process secondary sources (middle)
+        if (data.secondarySources && data.secondarySources.length > 0) {
+            // Use the secondarySourceZone position
+            const secondaryX = secondarySourceZone - baseNodeWidth / 2; // Center the node on the zone
+
+            // If there's only one secondary source, center it vertically like the product node
+            if (data.secondarySources.length === 1) {
+                const nodeName = data.secondarySources[0];
+                const nodeWidth = calculateNodeWidth(nodeName);
+                const node = {
+                    id: nodeName,
+                    name: nodeName,
+                    width: nodeWidth, // Store node width for later use
+                    x: secondaryX,
+                    y: height / 2 - nodeHeight / 2, // Same vertical centering as product node
+                    type: 'secondary'
+                };
+                nodes.push(node);
+
+                // Link to product
+                links.push({
+                    source: node,
+                    target: productNode
+                });
+            } else {
+                // For multiple secondary sources, distribute them evenly
+                const spacing = (height - 60) / (data.secondarySources.length + 1);
+                const startY = 30; // Start further from the top
+
+                data.secondarySources.forEach((source, i) => {
+                    const nodeWidth = calculateNodeWidth(source);
+                    const node = {
+                        id: source,
+                        name: source,
+                        width: nodeWidth, // Store node width for later use
+                        x: secondaryX,
+                        y: startY + (i + 1) * spacing - nodeHeight / 2,
+                        type: 'secondary'
+                    };
+                    nodes.push(node);
+
+                    // Link to product
+                    links.push({
+                        source: node,
+                        target: productNode
+                    });
+                });
+            }
+        }
+
+        // Process original sources (left)
+        if (data.originalSources && data.originalSources.length > 0) {
+            // Use the originalSourceZone position
+            const originalBaseX = originalSourceZone - baseNodeWidth / 2; // Center the node on the zone
+            const staggerWidth = 20; // How much to stagger horizontally
+
+            // If there's only one original source, center it vertically like the product node
+            if (data.originalSources.length === 1) {
+                const nodeName = data.originalSources[0];
+                const nodeWidth = calculateNodeWidth(nodeName);
+                const node = {
+                    id: nodeName,
+                    name: nodeName,
+                    width: nodeWidth, // Store node width for later use
+                    x: originalBaseX,
+                    y: height / 2 - nodeHeight / 2, // Same vertical centering as product node
+                    type: 'original'
+                };
+                nodes.push(node);
+
+                // Link to secondary source or product
+                if (data.secondarySources && data.secondarySources.length > 0) {
+                    // Link to each secondary source
+                    nodes.filter(n => n.type === 'secondary').forEach(target => {
+                        links.push({
+                            source: node,
+                            target: target
+                        });
+                    });
+                } else {
+                    // Link directly to product if no secondary sources
+                    links.push({
+                        source: node,
+                        target: productNode
+                    });
+                }
+            } else {
+                // For multiple original sources, distribute them evenly and stagger them horizontally
+                const spacing = (height - 60) / (data.originalSources.length + 1);
+                const startY = 30; // Start further from the top
+
+                data.originalSources.forEach((source, i) => {
+                    // Alternate between originalBaseX and originalBaseX + staggerWidth
+                    // Maintain the staggering effect
+                    const staggeredX = i % 2 === 0 ? originalBaseX : originalBaseX + staggerWidth;
+                    const nodeWidth = calculateNodeWidth(source);
+                    
+                    const node = {
+                        id: source,
+                        name: source,
+                        width: nodeWidth, // Store node width for later use
+                        x: staggeredX,
+                        y: startY + (i + 1) * spacing - nodeHeight / 2,
+                        type: 'original'
+                    };
+                    nodes.push(node);
+
+                    // Link to secondary source or product
+                    if (data.secondarySources && data.secondarySources.length > 0) {
+                        // Link to each secondary source
+                        nodes.filter(n => n.type === 'secondary').forEach(target => {
+                            links.push({
+                                source: node,
+                                target: target
+                            });
+                        });
+                    } else {
+                        // Link directly to product if no secondary sources
+                        links.push({
+                            source: node,
+                            target: productNode
+                        });
+                    }
+                });
+            }
+        }
+
+        // Create links (arrows)
+        const arrows = g.selectAll('.arrow')
+            .data(links)
+            .enter()
+            .append('g')
+            .attr('class', 'arrow');
+
+        // Add path for each arrow
+        arrows.append('path')
+            .attr('d', d => {
+                const sourceWidth = d.source.width || baseNodeWidth; // Use stored width or fallback to base width
+                const sourceX = d.source.x + sourceWidth;
+                const sourceY = d.source.y + nodeHeight / 2;
+                const targetX = d.target.x;
+                const targetY = d.target.y + nodeHeight / 2;
+
+                // Calculate distance between source and target
+                const distance = targetX - sourceX;
+
+                // For long distances (original to secondary), use a more gentle curve
+                // For shorter distances (secondary to product), use a tighter curve
+                const isLongDistance = distance > width * 0.25;
+
+                // Adjust control points based on distance
+                const controlPoint1X = sourceX + (isLongDistance ? distance * 0.25 : distance * 0.4);
+                const controlPoint2X = targetX - (isLongDistance ? distance * 0.25 : distance * 0.4);
+
+                return `M${sourceX},${sourceY} C${controlPoint1X},${sourceY} ${controlPoint2X},${targetY} ${targetX},${targetY}`;
+            })
+            .attr('fill', 'none')
+            .attr('stroke', '#999')
+            .attr('stroke-width', 2)
+            .attr('marker-end', 'url(#arrowhead)');
+
+        // Add arrowhead marker definition
+        svg.append('defs').append('marker')
+            .attr('id', 'arrowhead')
+            .attr('viewBox', '0 -5 10 10')
+            .attr('refX', 8)
+            .attr('refY', 0)
+            .attr('markerWidth', 6)
+            .attr('markerHeight', 6)
+            .attr('orient', 'auto')
+            .append('path')
+            .attr('d', 'M0,-5L10,0L0,5')
+            .attr('fill', '#999');
+
+        // Create nodes
+        const nodeGroups = g.selectAll('.node')
+            .data(nodes)
+            .enter()
+            .append('g')
+            .attr('class', d => `node ${d.type}`)
+            .attr('transform', d => `translate(${d.x}, ${d.y})`)
+            .on('click', function (event, d) {
+                // Only navigate if it's not the product node (since we're already on the product page)
+                if (d.type !== 'product') {
+                    window.location.href = `/kg-registry/resource/${d.id}/${d.id}.html`;
+                }
+            })
+            .on('mouseover', function (event, d) {
+                // Highlight connected links and nodes
+                d3.select(this).select('rect')
+                    .attr('stroke-width', d.type === 'product' ? 4 : 2)
+                    .attr('filter', 'brightness(1.1)');
+
+                // Highlight connected arrows
+                arrows.selectAll('path')
+                    .attr('stroke-width', link =>
+                        (link.source.id === d.id || link.target.id === d.id) ? 3 : 2
+                    )
+                    .attr('stroke', link =>
+                        (link.source.id === d.id || link.target.id === d.id) ? '#666' : '#999'
+                    );
+            })
+            .on('mouseout', function (event, d) {
+                // Reset highlights
+                d3.select(this).select('rect')
+                    .attr('stroke-width', d.type === 'product' ? 3 : 1)
+                    .attr('filter', null);
+
+                // Reset arrows
+                arrows.selectAll('path')
+                    .attr('stroke-width', 2)
+                    .attr('stroke', '#999');
+            });
+
+        // Add rectangle for each node
+        nodeGroups.append('rect')
+            .attr('width', d => calculateNodeWidth(d.name))
+            .attr('height', nodeHeight)
+            .attr('rx', 5)
+            .attr('ry', 5)
+            .attr('fill', d => {
+                if (d.type === 'product') return '#3366cc'; // Accessible blue for products
+                if (d.type === 'secondary') return '#9933cc'; // Accessible purple for secondary sources
+                return '#ff8800'; // Accessible orange for original sources
+            })
+            .attr('stroke', '#333')
+            .attr('stroke-width', d => d.type === 'product' ? 3 : 1)
+            .attr('cursor', d => d.type === 'product' ? 'default' : 'pointer');
+
+        // Add text for each node
+        nodeGroups.append('text')
+            .attr('x', d => calculateNodeWidth(d.name) / 2 + 12) // Center text in dynamic width node, with offset for icon
+            .attr('y', nodeHeight / 2)
+            .attr('text-anchor', 'middle')
+            .attr('dominant-baseline', 'middle')
+            .attr('fill', 'white')
+            .attr('font-size', '14px') // Increased font size
+            .text(d => {
+                // Use more of the available space - truncate only if necessary
+                const nodeWidth = calculateNodeWidth(d.name);
+                const maxChars = Math.floor((nodeWidth - 40) / 8); // Approximate chars that fit, leaving space for icon
+                return d.name.length > maxChars ? d.name.substring(0, maxChars - 3) + '...' : d.name;
+            })
+            .append('title')  // Add tooltip for full name
+            .text(d => d.name);
+            
+        // Add category icons to each node
+        nodeGroups.append('g')
+            .attr('class', 'node-icon')
+            .attr('transform', d => `translate(25, ${nodeHeight/2})`) // Left-aligned position, vertically centered
+            .each(function(d) {
+                const iconGroup = d3.select(this);
+                const iconData = resourceIcons[d.id];
+                
+                if (iconData && iconData.icon) {
+                    // Create icon background circle
+                    iconGroup.append('circle')
+                        .attr('r', 15) // Bigger circle
+                        .attr('fill', 'white')
+                        .attr('opacity', 0.9);
+                        
+                    // Create SVG for Bootstrap icon
+                    // Use foreign object to embed HTML icon
+                    iconGroup.append('foreignObject')
+                        .attr('width', 30) // Bigger icon container
+                        .attr('height', 30) // Bigger icon container
+                        .attr('x', -15) // Half of width
+                        .attr('y', -15) // Half of height
+                        .html(`<div style="width:30px;height:30px;display:flex;align-items:center;justify-content:center">
+                            <i class="bi bi-${iconData.icon}" style="font-size:18px;color:#333;"></i>
+                        </div>`);
+                        
+                    // Add tooltip with category name
+                    iconGroup.append('title')
+                        .text(iconData.category || 'Resource');
+                }
+            });
+
+        // Add a legend (horizontal layout) - initially hidden
+        const legend = svg.append('g')
+            .attr('class', 'legend hidden')
+            .attr('transform', `translate(${width / 2 - 300}, 10)`); // Centered at the top, adjusted for larger text
+
+        const legendItems = [
+            { type: 'original', label: 'Original Source' },
+            { type: 'secondary', label: 'Secondary Source' },
+            { type: 'product', label: 'Product' }
+        ];
+
+        const legendItemWidth = 180; // Width for each legend item, increased to accommodate icons
+
+        const legendGroups = legend.selectAll('.legend-item')
+            .data(legendItems)
+            .enter()
+            .append('g')
+            .attr('class', 'legend-item')
+            .attr('transform', (d, i) => `translate(${i * legendItemWidth}, 0)`); // Horizontal layout
+
+        // Add color squares of the same size as icon circles (18x18)
+        legendGroups.append('rect')
+            .attr('width', 18) // Width of color box - match icon circle diameter
+            .attr('height', 18) // Height of color box - match icon circle diameter
+            .attr('rx', 3) // Corner radius
+            .attr('ry', 3) // Corner radius
+            .attr('y', -9) // Shift up half height to align centers with icon circles
+            .attr('fill', d => {
+                if (d.type === 'product') return '#3366cc'; // Accessible blue for products
+                if (d.type === 'secondary') return '#9933cc'; // Accessible purple for secondary sources
+                return '#ff8800'; // Accessible orange for original sources
+            });
+
+        legendGroups.append('text')
+            .attr('x', 24) // Position text to the right of the rectangle
+            .attr('y', 0) // Center text vertically at same level as icon labels
+            .attr('dominant-baseline', 'middle') // Align vertically
+            .attr('font-size', '14px') // Increased font size for better readability
+            .text(d => d.label);
+            
+        // Add a second section to the legend for icon types
+        const iconLegendGroup = svg.append('g')
+            .attr('class', 'legend legend-icons hidden')
+            .attr('transform', `translate(${width / 2 - 300}, 45)`); // Position below the main legend, adjusted for larger text
+            
+        // Common icon categories that appear often
+        const iconLegendItems = [
+            { category: 'KnowledgeGraph', icon: 'globe', label: 'Knowledge Graph' },
+            { category: 'DataSource', icon: 'shop', label: 'Data Source' },
+            { category: 'Resource', icon: 'archive', label: 'Resource' },
+            { category: 'DataModel', icon: 'diagram-3', label: 'Data Model' },
+            { category: 'Product', icon: 'box', label: 'Generic Product' }
+        ];
+        
+        const iconLegendItemWidth = 180; // Width for each icon legend item, increased for larger text
+        
+        // Create icon legend items
+        const iconGroups = iconLegendGroup.selectAll('.legend-icon-item')
+            .data(iconLegendItems)
+            .enter()
+            .append('g')
+            .attr('class', 'legend-icon-item')
+            .attr('transform', (d, i) => {
+                // Create two rows of icons if more than 3
+                const row = Math.floor(i / 3);
+                const col = i % 3;
+                return `translate(${col * iconLegendItemWidth}, ${row * 30})`; // Increased vertical spacing between rows
+            });
+            
+        // Add icon circles
+        iconGroups.append('circle')
+            .attr('r', 9)
+            .attr('fill', 'white')
+            .attr('stroke', '#999')
+            .attr('stroke-width', '1px');
+            
+        // Add icons using foreignObject with HTML (same approach as in the main diagram)
+        iconGroups.each(function(d) {
+            const group = d3.select(this);
+            group.append('foreignObject')
+                .attr('width', 18) 
+                .attr('height', 18)
+                .attr('x', -9) // Center horizontally
+                .attr('y', -9) // Center vertically
+                .html(d => `<div style="width:18px;height:18px;display:flex;align-items:center;justify-content:center">
+                    <i class="bi bi-${d.icon}" style="font-size:13px;color:#333;"></i>
+                </div>`);
+        });
+            
+        // Add labels
+        iconGroups.append('text')
+            .attr('x', 14) // Position to the right of the icon
+            .attr('y', 0) // Center vertically
+            .attr('dominant-baseline', 'middle')
+            .attr('font-size', '14px') // Increased font size for better readability
+            .attr('fill', '#333')
+            .text(d => d.label);
+
+        // Add drag and drop functionality
+        function addDragAndDrop(container) {
+            // Find the SVG element in the container
+            const svg = container.querySelector('svg');
+            if (!svg) return;
+            
+            // No instruction overlay - we'll keep the functionality without the message
+            
+            // Set up drag functionality
+            let isDragging = false;
+            let startX, startY;
+            let currentTranslateX = 0, currentTranslateY = 0;
+            
+            // Get the main group element
+            const mainGroup = svg.querySelector('g');
+            
+            // Initialize transform if not already set
+            const currentTransform = mainGroup.getAttribute('transform') || 'translate(10, 20)';
+            const match = /translate\(([^,]+),\s*([^)]+)\)/.exec(currentTransform);
+            if (match) {
+                currentTranslateX = parseFloat(match[1]);
+                currentTranslateY = parseFloat(match[2]);
+            }
+            
+            // Mouse events for dragging
+            svg.addEventListener('mousedown', function(e) {
+                // Only start drag if not clicking on a node
+                if (e.target.closest('.node')) return;
+                
+                isDragging = true;
+                startX = e.clientX;
+                startY = e.clientY;
+                svg.style.cursor = 'grabbing';
+            });
+            
+            svg.addEventListener('mousemove', function(e) {
+                if (!isDragging) return;
+                
+                const dx = e.clientX - startX;
+                const dy = e.clientY - startY;
+                
+                // Update the transform
+                mainGroup.setAttribute('transform', `translate(${currentTranslateX + dx}, ${currentTranslateY + dy})`);
+            });
+            
+            svg.addEventListener('mouseup', function(e) {
+                if (!isDragging) return;
+                
+                // Update the current position
+                const dx = e.clientX - startX;
+                const dy = e.clientY - startY;
+                currentTranslateX += dx;
+                currentTranslateY += dy;
+                
+                isDragging = false;
+                svg.style.cursor = 'grab';
+            });
+            
+            svg.addEventListener('mouseleave', function() {
+                if (isDragging) {
+                    isDragging = false;
+                    svg.style.cursor = 'grab';
+                }
+            });
+            
+            // Touch events for mobile devices
+            svg.addEventListener('touchstart', function(e) {
+                // Prevent scrolling while dragging
+                e.preventDefault();
+                
+                // Only start drag if not touching a node
+                if (e.target.closest('.node')) return;
+                
+                isDragging = true;
+                startX = e.touches[0].clientX;
+                startY = e.touches[0].clientY;
+            });
+            
+            svg.addEventListener('touchmove', function(e) {
+                if (!isDragging) return;
+                
+                // Prevent scrolling while dragging
+                e.preventDefault();
+                
+                const dx = e.touches[0].clientX - startX;
+                const dy = e.touches[0].clientY - startY;
+                
+                // Update the transform
+                mainGroup.setAttribute('transform', `translate(${currentTranslateX + dx}, ${currentTranslateY + dy})`);
+            });
+            
+            svg.addEventListener('touchend', function(e) {
+                if (!isDragging) return;
+                
+                // Update the current position based on the last known touch position
+                const lastTouch = e.changedTouches[0];
+                const dx = lastTouch.clientX - startX;
+                const dy = lastTouch.clientY - startY;
+                currentTranslateX += dx;
+                currentTranslateY += dy;
+                
+                isDragging = false;
+            });
+            
+            // Set initial cursor
+            svg.style.cursor = 'grab';
+        }
+        
+        // Add drag and drop to the container
+        addDragAndDrop(container);
+    }
+
+    // Add keyboard shortcut to reset the diagram position
+    document.addEventListener('keydown', function(e) {
+        // Only respond if a diagram is focused or the event is in the context of a diagram
+        const focusedDiagram = document.activeElement.closest('.provenance-diagram');
+        if (!focusedDiagram) return;
+        
+        // Reset position on 'R' key press
+        if (e.key === 'r' || e.key === 'R') {
+            const mainGroup = focusedDiagram.querySelector('svg g');
+            if (mainGroup) {
+                // Reset to initial position
+                mainGroup.setAttribute('transform', 'translate(10, 20)');
+                currentTranslateX = 10;
+                currentTranslateY = 20;
+                
+                // Show a short notification
+                const resetMsg = document.createElement('div');
+                resetMsg.className = 'reset-notification';
+                resetMsg.textContent = 'Diagram position reset';
+                focusedDiagram.appendChild(resetMsg);
+                
+                // Remove after animation completes
+                setTimeout(() => resetMsg.remove(), 1500);
+            }
+        }
+    });
+</script>
