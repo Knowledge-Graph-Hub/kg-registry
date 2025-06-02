@@ -103,11 +103,8 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
                 },
                 "license": {
                     "anyOf": [
@@ -192,7 +189,8 @@
             "required": [
                 "name",
                 "domains",
-                "id"
+                "id",
+                "layout"
             ],
             "title": "Aggregator",
             "type": "object"
@@ -383,11 +381,8 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
                 },
                 "license": {
                     "anyOf": [
@@ -472,7 +467,8 @@
             "required": [
                 "name",
                 "domains",
-                "id"
+                "id",
+                "layout"
             ],
             "title": "DataModel",
             "type": "object"
@@ -549,11 +545,8 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
                 },
                 "license": {
                     "anyOf": [
@@ -653,7 +646,8 @@
             },
             "required": [
                 "name",
-                "id"
+                "id",
+                "layout"
             ],
             "title": "DataModelProduct",
             "type": "object"
@@ -750,11 +744,8 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
                 },
                 "license": {
                     "anyOf": [
@@ -839,7 +830,8 @@
             "required": [
                 "name",
                 "domains",
-                "id"
+                "id",
+                "layout"
             ],
             "title": "DataSource",
             "type": "object"
@@ -971,11 +963,8 @@
                     "description": "The organization providing the funding."
                 },
                 "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
                 },
                 "warnings": {
                     "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
@@ -989,7 +978,8 @@
                 }
             },
             "required": [
-                "id"
+                "id",
+                "layout"
             ],
             "title": "FundingSource",
             "type": "object"
@@ -1073,11 +1063,8 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
                 },
                 "license": {
                     "anyOf": [
@@ -1204,7 +1191,8 @@
             },
             "required": [
                 "name",
-                "id"
+                "id",
+                "layout"
             ],
             "title": "GraphProduct",
             "type": "object"
@@ -1281,11 +1269,8 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
                 },
                 "license": {
                     "anyOf": [
@@ -1385,7 +1370,8 @@
             },
             "required": [
                 "name",
-                "id"
+                "id",
+                "layout"
             ],
             "title": "GraphicalInterface",
             "type": "object"
@@ -1560,11 +1546,8 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
                 },
                 "license": {
                     "anyOf": [
@@ -1649,7 +1632,8 @@
             "required": [
                 "name",
                 "domains",
-                "id"
+                "id",
+                "layout"
             ],
             "title": "KnowledgeGraph",
             "type": "object"
@@ -1687,11 +1671,8 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
                 },
                 "logo": {
                     "description": "The URL of a logo for the license. This is added at metadata parsing time.",
@@ -1712,7 +1693,8 @@
                 }
             },
             "required": [
-                "id"
+                "id",
+                "layout"
             ],
             "title": "License",
             "type": "object"
@@ -1789,11 +1771,8 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
                 },
                 "license": {
                     "anyOf": [
@@ -1893,7 +1872,8 @@
             },
             "required": [
                 "name",
-                "id"
+                "id",
+                "layout"
             ],
             "title": "MappingProduct",
             "type": "object"
@@ -1924,11 +1904,8 @@
                     "type": "string"
                 },
                 "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
                 },
                 "warnings": {
                     "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
@@ -1942,7 +1919,8 @@
                 }
             },
             "required": [
-                "id"
+                "id",
+                "layout"
             ],
             "title": "NamedThing",
             "type": "object"
@@ -2051,11 +2029,8 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
                 },
                 "license": {
                     "anyOf": [
@@ -2155,7 +2130,8 @@
             },
             "required": [
                 "name",
-                "id"
+                "id",
+                "layout"
             ],
             "title": "ProcessProduct",
             "type": "object"
@@ -2232,11 +2208,8 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
                 },
                 "license": {
                     "anyOf": [
@@ -2336,7 +2309,8 @@
             },
             "required": [
                 "name",
-                "id"
+                "id",
+                "layout"
             ],
             "title": "Product",
             "type": "object"
@@ -2434,11 +2408,8 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
                 },
                 "license": {
                     "anyOf": [
@@ -2538,7 +2509,8 @@
             },
             "required": [
                 "name",
-                "id"
+                "id",
+                "layout"
             ],
             "title": "ProgrammingInterface",
             "type": "object"
@@ -2593,11 +2565,8 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
                 },
                 "preferred": {
                     "description": "Whether this is the preferred publication for the resource.",
@@ -2632,7 +2601,8 @@
                 }
             },
             "required": [
-                "id"
+                "id",
+                "layout"
             ],
             "title": "Publication",
             "type": "object"
@@ -2747,11 +2717,8 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
                 },
                 "license": {
                     "anyOf": [
@@ -2836,7 +2803,8 @@
             "required": [
                 "name",
                 "domains",
-                "id"
+                "id",
+                "layout"
             ],
             "title": "Resource",
             "type": "object"
@@ -2919,11 +2887,8 @@
                     ]
                 },
                 "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
                 },
                 "publications": {
                     "description": "Publications associated with the usage.",
@@ -2968,7 +2933,8 @@
                 }
             },
             "required": [
-                "id"
+                "id",
+                "layout"
             ],
             "title": "Usage",
             "type": "object"

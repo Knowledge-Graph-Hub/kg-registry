@@ -545,7 +545,7 @@ class NamedThing(ConfiguredBaseModel):
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
-    layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
+    layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
     collection: Optional[list[CollectionEnum]] = Field(default=None, description="""A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.""", json_schema_extra = { "linkml_meta": {'alias': 'collection', 'domain_of': ['NamedThing']} })
 
 
@@ -603,7 +603,7 @@ class Resource(NamedThing):
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
-    layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
+    layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
     collection: Optional[list[CollectionEnum]] = Field(default=None, description="""A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.""", json_schema_extra = { "linkml_meta": {'alias': 'collection', 'domain_of': ['NamedThing']} })
 
 
@@ -644,7 +644,7 @@ class KnowledgeGraph(Resource):
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
-    layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
+    layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
     collection: Optional[list[CollectionEnum]] = Field(default=None, description="""A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.""", json_schema_extra = { "linkml_meta": {'alias': 'collection', 'domain_of': ['NamedThing']} })
 
 
@@ -679,7 +679,7 @@ class DataSource(Resource):
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
-    layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
+    layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
     collection: Optional[list[CollectionEnum]] = Field(default=None, description="""A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.""", json_schema_extra = { "linkml_meta": {'alias': 'collection', 'domain_of': ['NamedThing']} })
 
 
@@ -714,7 +714,7 @@ class DataModel(Resource):
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
-    layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
+    layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
     collection: Optional[list[CollectionEnum]] = Field(default=None, description="""A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.""", json_schema_extra = { "linkml_meta": {'alias': 'collection', 'domain_of': ['NamedThing']} })
 
 
@@ -749,7 +749,7 @@ class Aggregator(Resource):
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
-    layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
+    layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
     collection: Optional[list[CollectionEnum]] = Field(default=None, description="""A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.""", json_schema_extra = { "linkml_meta": {'alias': 'collection', 'domain_of': ['NamedThing']} })
 
 
@@ -784,7 +784,7 @@ class Product(NamedThing):
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
-    layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
+    layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
     collection: Optional[list[CollectionEnum]] = Field(default=None, description="""A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.""", json_schema_extra = { "linkml_meta": {'alias': 'collection', 'domain_of': ['NamedThing']} })
 
 
@@ -823,7 +823,7 @@ class GraphProduct(Product):
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
-    layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
+    layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
     collection: Optional[list[CollectionEnum]] = Field(default=None, description="""A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.""", json_schema_extra = { "linkml_meta": {'alias': 'collection', 'domain_of': ['NamedThing']} })
 
 
@@ -858,7 +858,7 @@ class DataModelProduct(Product):
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
-    layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
+    layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
     collection: Optional[list[CollectionEnum]] = Field(default=None, description="""A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.""", json_schema_extra = { "linkml_meta": {'alias': 'collection', 'domain_of': ['NamedThing']} })
 
 
@@ -893,7 +893,7 @@ class MappingProduct(Product):
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
-    layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
+    layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
     collection: Optional[list[CollectionEnum]] = Field(default=None, description="""A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.""", json_schema_extra = { "linkml_meta": {'alias': 'collection', 'domain_of': ['NamedThing']} })
 
 
@@ -928,7 +928,7 @@ class ProcessProduct(Product):
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
-    layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
+    layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
     collection: Optional[list[CollectionEnum]] = Field(default=None, description="""A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.""", json_schema_extra = { "linkml_meta": {'alias': 'collection', 'domain_of': ['NamedThing']} })
 
 
@@ -963,7 +963,7 @@ class GraphicalInterface(Product):
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
-    layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
+    layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
     collection: Optional[list[CollectionEnum]] = Field(default=None, description="""A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.""", json_schema_extra = { "linkml_meta": {'alias': 'collection', 'domain_of': ['NamedThing']} })
 
 
@@ -1001,7 +1001,7 @@ class ProgrammingInterface(Product):
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
-    layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
+    layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
     collection: Optional[list[CollectionEnum]] = Field(default=None, description="""A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.""", json_schema_extra = { "linkml_meta": {'alias': 'collection', 'domain_of': ['NamedThing']} })
 
 
@@ -1087,7 +1087,7 @@ class FundingSource(NamedThing):
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
-    layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
+    layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
     collection: Optional[list[CollectionEnum]] = Field(default=None, description="""A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.""", json_schema_extra = { "linkml_meta": {'alias': 'collection', 'domain_of': ['NamedThing']} })
 
 
@@ -1110,7 +1110,7 @@ class License(NamedThing):
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
-    layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
+    layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
     collection: Optional[list[CollectionEnum]] = Field(default=None, description="""A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.""", json_schema_extra = { "linkml_meta": {'alias': 'collection', 'domain_of': ['NamedThing']} })
 
 
@@ -1132,7 +1132,7 @@ class Publication(NamedThing):
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
-    layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
+    layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
     collection: Optional[list[CollectionEnum]] = Field(default=None, description="""A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.""", json_schema_extra = { "linkml_meta": {'alias': 'collection', 'domain_of': ['NamedThing']} })
 
 
@@ -1159,7 +1159,7 @@ class Usage(NamedThing):
          'domain_of': ['NamedThing', 'Contact'],
          'is_a': 'type'} })
     warnings: Optional[list[str]] = Field(default=None, description="""A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.""", json_schema_extra = { "linkml_meta": {'alias': 'warnings', 'domain_of': ['NamedThing']} })
-    layout: Optional[str] = Field(default=None, description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
+    layout: str = Field(default=..., description="""The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.""", json_schema_extra = { "linkml_meta": {'alias': 'layout', 'domain_of': ['NamedThing']} })
     collection: Optional[list[CollectionEnum]] = Field(default=None, description="""A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.""", json_schema_extra = { "linkml_meta": {'alias': 'collection', 'domain_of': ['NamedThing']} })
 
 
