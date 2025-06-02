@@ -578,9 +578,23 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
         // Set up dimensions and spacing
         const width = 600;
         // Use the dynamic height passed from the parent function
-        const nodeWidth = 150;
+        const baseNodeWidth = 150;
         const nodeHeight = 50; // Increased node height for better text fit
         const nodePadding = 50;
+        
+        // Function to calculate node width dynamically based on text length
+        function calculateNodeWidth(name) {
+            // Base width for all nodes
+            const minWidth = baseNodeWidth;
+            // Max width is 50% wider than base width
+            const maxWidth = minWidth * 1.5;
+            
+            // Estimate width needed based on text length (rough estimate: ~8px per character)
+            const estimatedWidth = Math.max(minWidth, name.length * 8);
+            
+            // Clamp the width between min and max values
+            return Math.min(maxWidth, estimatedWidth);
+        }
         
         // Preload category icons for each resource
         const resourceIcons = {};
@@ -658,17 +672,19 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
         // Calculate horizontal positions
         // Left section for original sources, middle for secondary, right for product
         const leftMargin = 20; // Left edge margin
-        const rightMargin = width - nodeWidth - 20; // Right edge margin
-        const middlePosition = width / 2 - nodeWidth / 2; // Center position for secondary sources
+        const rightMargin = width - baseNodeWidth - 20; // Right edge margin
+        const middlePosition = width / 2 - baseNodeWidth / 2; // Center position for secondary sources
 
         // Define the diagram's horizontal layout zones more explicitly 
         const originalSourceZone = width * 0.15; // Original sources at about 15% from left
         const secondarySourceZone = width * 0.55; // Secondary sources at about 55% from left
 
         // Product node is always at the right
+        const productNodeWidth = calculateNodeWidth(data.product);
         const productNode = {
             id: data.product,
             name: data.product,
+            width: productNodeWidth, // Store node width for later use
             x: rightMargin,
             y: height / 2 - nodeHeight / 2,
             type: 'product'
@@ -678,13 +694,16 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
         // Process secondary sources (middle)
         if (data.secondarySources && data.secondarySources.length > 0) {
             // Use the secondarySourceZone position
-            const secondaryX = secondarySourceZone - nodeWidth / 2; // Center the node on the zone
+            const secondaryX = secondarySourceZone - baseNodeWidth / 2; // Center the node on the zone
 
             // If there's only one secondary source, center it vertically like the product node
             if (data.secondarySources.length === 1) {
+                const nodeName = data.secondarySources[0];
+                const nodeWidth = calculateNodeWidth(nodeName);
                 const node = {
-                    id: data.secondarySources[0],
-                    name: data.secondarySources[0],
+                    id: nodeName,
+                    name: nodeName,
+                    width: nodeWidth, // Store node width for later use
                     x: secondaryX,
                     y: height / 2 - nodeHeight / 2, // Same vertical centering as product node
                     type: 'secondary'
@@ -702,9 +721,11 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
                 const startY = 30; // Start further from the top
 
                 data.secondarySources.forEach((source, i) => {
+                    const nodeWidth = calculateNodeWidth(source);
                     const node = {
                         id: source,
                         name: source,
+                        width: nodeWidth, // Store node width for later use
                         x: secondaryX,
                         y: startY + (i + 1) * spacing - nodeHeight / 2,
                         type: 'secondary'
@@ -723,14 +744,17 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
         // Process original sources (left)
         if (data.originalSources && data.originalSources.length > 0) {
             // Use the originalSourceZone position
-            const originalBaseX = originalSourceZone - nodeWidth / 2; // Center the node on the zone
+            const originalBaseX = originalSourceZone - baseNodeWidth / 2; // Center the node on the zone
             const staggerWidth = 20; // How much to stagger horizontally
 
             // If there's only one original source, center it vertically like the product node
             if (data.originalSources.length === 1) {
+                const nodeName = data.originalSources[0];
+                const nodeWidth = calculateNodeWidth(nodeName);
                 const node = {
-                    id: data.originalSources[0],
-                    name: data.originalSources[0],
+                    id: nodeName,
+                    name: nodeName,
+                    width: nodeWidth, // Store node width for later use
                     x: originalBaseX,
                     y: height / 2 - nodeHeight / 2, // Same vertical centering as product node
                     type: 'original'
@@ -762,10 +786,12 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
                     // Alternate between originalBaseX and originalBaseX + staggerWidth
                     // Maintain the staggering effect
                     const staggeredX = i % 2 === 0 ? originalBaseX : originalBaseX + staggerWidth;
-
+                    const nodeWidth = calculateNodeWidth(source);
+                    
                     const node = {
                         id: source,
                         name: source,
+                        width: nodeWidth, // Store node width for later use
                         x: staggeredX,
                         y: startY + (i + 1) * spacing - nodeHeight / 2,
                         type: 'original'
@@ -802,7 +828,8 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
         // Add path for each arrow
         arrows.append('path')
             .attr('d', d => {
-                const sourceX = d.source.x + nodeWidth;
+                const sourceWidth = d.source.width || baseNodeWidth; // Use stored width or fallback to base width
+                const sourceX = d.source.x + sourceWidth;
                 const sourceY = d.source.y + nodeHeight / 2;
                 const targetX = d.target.x;
                 const targetY = d.target.y + nodeHeight / 2;
@@ -880,7 +907,7 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
 
         // Add rectangle for each node
         nodeGroups.append('rect')
-            .attr('width', nodeWidth)
+            .attr('width', d => calculateNodeWidth(d.name))
             .attr('height', nodeHeight)
             .attr('rx', 5)
             .attr('ry', 5)
@@ -895,15 +922,17 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
 
         // Add text for each node
         nodeGroups.append('text')
-            .attr('x', nodeWidth / 2 + 12) // Shift text more to the right to make room for the larger icon
+            .attr('x', d => calculateNodeWidth(d.name) / 2 + 12) // Center text in dynamic width node, with offset for icon
             .attr('y', nodeHeight / 2)
             .attr('text-anchor', 'middle')
             .attr('dominant-baseline', 'middle')
             .attr('fill', 'white')
             .attr('font-size', '14px') // Increased font size
             .text(d => {
-                // Truncate long names
-                return d.name.length > 15 ? d.name.substring(0, 12) + '...' : d.name;
+                // Use more of the available space - truncate only if necessary
+                const nodeWidth = calculateNodeWidth(d.name);
+                const maxChars = Math.floor((nodeWidth - 40) / 8); // Approximate chars that fit, leaving space for icon
+                return d.name.length > maxChars ? d.name.substring(0, maxChars - 3) + '...' : d.name;
             })
             .append('title')  // Add tooltip for full name
             .text(d => d.name);
@@ -911,7 +940,7 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
         // Add category icons to each node
         nodeGroups.append('g')
             .attr('class', 'node-icon')
-            .attr('transform', d => `translate(25, ${nodeHeight/2})`) // Position slightly more to the right, vertically centered
+            .attr('transform', d => `translate(25, ${nodeHeight/2})`) // Left-aligned position, vertically centered
             .each(function(d) {
                 const iconGroup = d3.select(this);
                 const iconData = resourceIcons[d.id];
