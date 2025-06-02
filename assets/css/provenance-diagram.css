@@ -75,7 +75,15 @@
 
 /* Legend styles */
 .legend {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s;
   font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.legend.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .legend-item {
@@ -86,6 +94,50 @@
 .legend-item text {
   font-size: 14px;
   fill: #333;
+}
+
+/* Legend toggle button */
+.legend-toggle-button {
+  margin-left: 5px;
+  padding: 2px 6px;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #888;
+  transition: all 0.2s ease;
+}
+
+.legend-toggle-button:hover {
+  background-color: #f5f5f5;
+  color: #555;
+  border-color: #ccc;
+}
+
+.legend-toggle-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(85, 136, 187, 0.25);
+}
+
+.legend-toggle-button i {
+  font-size: 0.8em;
+}
+
+.legend-icons {
+  margin-top: 15px; /* Increased margin for better separation */
+  padding-top: 8px; /* Increased padding */
+  border-top: 1px dashed #ddd;
+}
+
+.legend-icon-item {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  font-size: 14px; /* Match the increased font size */
+}
+
+.legend-icon-symbol {
+  font-family: bootstrap-icons;
+  font-size: 14px; /* Match the increased font size */
 }
 
 /* Data flow direction indicator - horizontal layout */
@@ -272,4 +324,11 @@
 
 .provenance-help:hover {
   color: #555;
+}
+
+/* Make sure both legend sections share the same visibility state */
+.legend.hidden,
+.legend-icons.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
