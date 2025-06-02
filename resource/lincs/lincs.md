@@ -23,6 +23,7 @@ domains:
 - precision medicine
 homepage_url: https://lincsportal.ccs.miami.edu/signatures/home
 id: lincs
+layout: resource_detail
 name: LINCS
 products:
 - category: GraphicalInterface
