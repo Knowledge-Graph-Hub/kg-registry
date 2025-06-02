@@ -960,24 +960,7 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
             const svg = container.querySelector('svg');
             if (!svg) return;
             
-            // Add an instruction overlay
-            const instructionOverlay = document.createElement('div');
-            instructionOverlay.className = 'drag-instruction-overlay';
-            instructionOverlay.innerHTML = `
-                <div class="drag-instruction">
-                    <i class="bi bi-arrows-move"></i>
-                    <span>Click and drag to reposition the diagram</span>
-                </div>
-            `;
-            container.appendChild(instructionOverlay);
-            
-            // Hide the instruction after a few seconds
-            setTimeout(() => {
-                instructionOverlay.style.opacity = '0';
-                setTimeout(() => {
-                    instructionOverlay.remove();
-                }, 1000);
-            }, 3000);
+            // No instruction overlay - we'll keep the functionality without the message
             
             // Set up drag functionality
             let isDragging = false;
