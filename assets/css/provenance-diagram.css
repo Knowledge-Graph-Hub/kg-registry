@@ -2,6 +2,8 @@
 .provenance-diagram {
   overflow: visible;
   margin: 0 auto;
+  min-height: 300px; /* Minimum height */
+  transition: height 0.3s ease; /* Smooth transition when height changes */
 }
 
 .provenance-svg {
@@ -22,7 +24,7 @@
 .node text {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   pointer-events: none;
 }
 
@@ -48,9 +50,24 @@
   fill: #ddaa44;
 }
 
+/* Legend styles */
+.legend {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.legend-item {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.legend-item text {
+  font-size: 14px;
+  fill: #333;
+}
+
 /* Data flow direction indicator - horizontal layout */
 .direction-indicator {
-  font-size: 10px;
+  font-size: 14px;
   fill: #666;
   font-style: italic;
 }
