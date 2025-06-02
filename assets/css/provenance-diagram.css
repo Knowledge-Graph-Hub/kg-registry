@@ -45,15 +45,15 @@
 
 /* Node type styles */
 .node.product rect {
-  fill: #5588bb;
+  fill: #3366cc; /* Accessible blue for products */
 }
 
 .node.secondary rect {
-  fill: #88bb55;
+  fill: #9933cc; /* Accessible purple for secondary sources */
 }
 
 .node.original rect {
-  fill: #ddaa44;
+  fill: #ff8800; /* Accessible orange for original sources */
 }
 
 /* Node icon styles */

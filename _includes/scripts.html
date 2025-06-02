@@ -885,9 +885,9 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
             .attr('rx', 5)
             .attr('ry', 5)
             .attr('fill', d => {
-                if (d.type === 'product') return '#5588bb';
-                if (d.type === 'secondary') return '#88bb55';
-                return '#ddaa44';
+                if (d.type === 'product') return '#3366cc'; // Accessible blue for products
+                if (d.type === 'secondary') return '#9933cc'; // Accessible purple for secondary sources
+                return '#ff8800'; // Accessible orange for original sources
             })
             .attr('stroke', '#333')
             .attr('stroke-width', d => d.type === 'product' ? 3 : 1)
@@ -968,9 +968,9 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
             .attr('ry', 3) // Corner radius
             .attr('y', -9) // Shift up half height to align centers with icon circles
             .attr('fill', d => {
-                if (d.type === 'product') return '#5588bb';
-                if (d.type === 'secondary') return '#88bb55';
-                return '#ddaa44';
+                if (d.type === 'product') return '#3366cc'; // Accessible blue for products
+                if (d.type === 'secondary') return '#9933cc'; // Accessible purple for secondary sources
+                return '#ff8800'; // Accessible orange for original sources
             });
 
         legendGroups.append('text')
