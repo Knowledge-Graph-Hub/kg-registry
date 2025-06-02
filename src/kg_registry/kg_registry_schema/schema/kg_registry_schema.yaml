@@ -34,6 +34,7 @@ classes:
       - category
       - warnings
       - collection
+      - layout
     class_uri: schema:Thing
 
   Registry:
@@ -60,8 +61,9 @@ classes:
       part of a the same parent resource.
     close_mappings:
       - schema:CreativeWork
-    slots:
-      - layout
+    slot_usage:
+      layout:
+        required: true
     attributes:
       activity_status:
         description: >-
@@ -218,8 +220,6 @@ classes:
       knowledge graph registry. This includes any specific
       files, APIs, or any other accessible representations of
       a resource.
-    slots:
-      - layout
     attributes:
       name:
         description: >-
@@ -608,11 +608,10 @@ slots:
       entity in the web interface.
       For resources, this is generally 'resource_detail'.
       For products, this is generally 'product_detail'.
-      This slot is mandatory - if not specified,
+      If a value for this slot is not specified,
       pages won't contain anything from their
       header metadata.
     range: string
-    required: true
   collection:
     description: >-
       A collection of entries in the registry.
