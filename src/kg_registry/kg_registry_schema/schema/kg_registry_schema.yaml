@@ -33,7 +33,6 @@ classes:
       - id
       - category
       - warnings
-      - layout
       - collection
     class_uri: schema:Thing
 
@@ -61,6 +60,8 @@ classes:
       part of a the same parent resource.
     close_mappings:
       - schema:CreativeWork
+    slots:
+      - layout
     attributes:
       activity_status:
         description: >-
@@ -217,6 +218,8 @@ classes:
       knowledge graph registry. This includes any specific
       files, APIs, or any other accessible representations of
       a resource.
+    slots:
+      - layout
     attributes:
       name:
         description: >-
