@@ -2512,6 +2512,7 @@ resources:
   - precision medicine
   homepage_url: https://civicdb.org/
   id: civic
+  layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0 1.0
@@ -5028,6 +5029,7 @@ resources:
   - health
   homepage_url: https://foodb.ca/
   id: foodb
+  layout: resource_detail
   license:
     id: https://creativecommons.org/licenses/by-nc/4.0/
     label: CC-BY-NC-4.0
@@ -8859,6 +8861,7 @@ resources:
   - precision medicine
   homepage_url: https://lincsportal.ccs.miami.edu/signatures/home
   id: lincs
+  layout: resource_detail
   name: LINCS
   products:
   - category: GraphicalInterface
@@ -13013,6 +13016,7 @@ resources:
   - biomedical
   homepage_url: https://www.opentargets.org/
   id: opentargets
+  layout: resource_detail
   license:
     id: https://www.apache.org/licenses/LICENSE-2.0
     label: Apache License 2.0
@@ -13633,6 +13637,7 @@ resources:
   - genomics
   homepage_url: https://github.com/TaylorResearchLab/Petagraph
   id: petagraph
+  layout: resource_detail
   license:
     id: https://www.nlm.nih.gov/databases/umls.html
     label: UMLS License Agreement
@@ -16415,6 +16420,7 @@ resources:
   - genomics
   homepage_url: https://ubkg.docs.xconsortia.org/
   id: ubkg
+  layout: resource_detail
   license:
     id: https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf
     label: UMLS License Agreement
@@ -17477,6 +17483,7 @@ resources:
   - health
   homepage_url: http://sideeffects.embl.de/
   id: sider
+  layout: resource_detail
   license:
     id: https://creativecommons.org/licenses/by-nc-sa/4.0/
     label: CC-BY-NC-4.0

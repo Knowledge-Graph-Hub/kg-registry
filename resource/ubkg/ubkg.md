@@ -1,6 +1,5 @@
 ---
 activity_status: active
-layout: resource_detail
 category: KnowledgeGraph
 contacts:
 - category: Organization
@@ -25,6 +24,7 @@ domains:
 - genomics
 homepage_url: https://ubkg.docs.xconsortia.org/
 id: ubkg
+layout: resource_detail
 license:
   id: https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf
   label: UMLS License Agreement
