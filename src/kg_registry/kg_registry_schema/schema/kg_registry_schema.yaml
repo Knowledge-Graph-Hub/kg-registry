@@ -605,7 +605,11 @@ slots:
       entity in the web interface.
       For resources, this is generally 'resource_detail'.
       For products, this is generally 'product_detail'.
+      This slot is mandatory - if not specified,
+      pages won't contain anything from their
+      header metadata.
     range: string
+    required: true
   collection:
     description: >-
       A collection of entries in the registry.
