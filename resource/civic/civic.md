@@ -21,6 +21,7 @@ domains:
 - precision medicine
 homepage_url: https://civicdb.org/
 id: civic
+layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0

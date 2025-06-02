@@ -27,6 +27,7 @@ domains:
 - genomics
 homepage_url: https://github.com/TaylorResearchLab/Petagraph
 id: petagraph
+layout: resource_detail
 license:
   id: https://www.nlm.nih.gov/databases/umls.html
   label: UMLS License Agreement

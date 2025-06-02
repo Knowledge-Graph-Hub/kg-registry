@@ -20,6 +20,7 @@ domains:
 - health
 homepage_url: http://sideeffects.embl.de/
 id: sider
+layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-nc-sa/4.0/
   label: CC-BY-NC-4.0
