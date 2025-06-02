@@ -423,7 +423,7 @@
 
         // Add text for each node
         nodeGroups.append('text')
-            .attr('x', nodeWidth / 2)
+            .attr('x', nodeWidth / 2 + 12) // Shift text more to the right to make room for the larger icon
             .attr('y', nodeHeight / 2)
             .attr('text-anchor', 'middle')
             .attr('dominant-baseline', 'middle')
@@ -431,7 +431,7 @@
             .attr('font-size', '14px') // Increased font size
             .text(d => {
                 // Truncate long names
-                return d.name.length > 18 ? d.name.substring(0, 15) + '...' : d.name;
+                return d.name.length > 15 ? d.name.substring(0, 12) + '...' : d.name;
             })
             .append('title')  // Add tooltip for full name
             .text(d => d.name);
@@ -439,7 +439,7 @@
         // Add category icons to each node
         nodeGroups.append('g')
             .attr('class', 'node-icon')
-            .attr('transform', d => `translate(${nodeWidth - 22}, 10)`) // Position in top-right corner with padding
+            .attr('transform', d => `translate(25, ${nodeHeight/2})`) // Position slightly more to the right, vertically centered
             .each(function(d) {
                 const iconGroup = d3.select(this);
                 const iconData = resourceIcons[d.id];
@@ -447,19 +447,19 @@
                 if (iconData && iconData.icon) {
                     // Create icon background circle
                     iconGroup.append('circle')
-                        .attr('r', 10)
+                        .attr('r', 15) // Bigger circle
                         .attr('fill', 'white')
                         .attr('opacity', 0.9);
                         
                     // Create SVG for Bootstrap icon
                     // Use foreign object to embed HTML icon
                     iconGroup.append('foreignObject')
-                        .attr('width', 20)
-                        .attr('height', 20)
-                        .attr('x', -10)
-                        .attr('y', -10)
-                        .html(`<div style="width:20px;height:20px;display:flex;align-items:center;justify-content:center">
-                            <i class="bi bi-${iconData.icon}" style="font-size:12px;color:#333;"></i>
+                        .attr('width', 30) // Bigger icon container
+                        .attr('height', 30) // Bigger icon container
+                        .attr('x', -15) // Half of width
+                        .attr('y', -15) // Half of height
+                        .html(`<div style="width:30px;height:30px;display:flex;align-items:center;justify-content:center">
+                            <i class="bi bi-${iconData.icon}" style="font-size:18px;color:#333;"></i>
                         </div>`);
                         
                     // Add tooltip with category name
