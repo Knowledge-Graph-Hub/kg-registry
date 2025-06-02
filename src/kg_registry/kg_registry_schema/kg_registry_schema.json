@@ -187,10 +187,10 @@
                 }
             },
             "required": [
+                "layout",
                 "name",
                 "domains",
-                "id",
-                "layout"
+                "id"
             ],
             "title": "Aggregator",
             "type": "object"
@@ -465,10 +465,10 @@
                 }
             },
             "required": [
+                "layout",
                 "name",
                 "domains",
-                "id",
-                "layout"
+                "id"
             ],
             "title": "DataModel",
             "type": "object"
@@ -645,9 +645,9 @@
                 }
             },
             "required": [
+                "layout",
                 "name",
-                "id",
-                "layout"
+                "id"
             ],
             "title": "DataModelProduct",
             "type": "object"
@@ -828,10 +828,10 @@
                 }
             },
             "required": [
+                "layout",
                 "name",
                 "domains",
-                "id",
-                "layout"
+                "id"
             ],
             "title": "DataSource",
             "type": "object"
@@ -962,10 +962,6 @@
                     ],
                     "description": "The organization providing the funding."
                 },
-                "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
-                    "type": "string"
-                },
                 "warnings": {
                     "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
                     "items": {
@@ -978,8 +974,7 @@
                 }
             },
             "required": [
-                "id",
-                "layout"
+                "id"
             ],
             "title": "FundingSource",
             "type": "object"
@@ -1190,9 +1185,9 @@
                 }
             },
             "required": [
+                "layout",
                 "name",
-                "id",
-                "layout"
+                "id"
             ],
             "title": "GraphProduct",
             "type": "object"
@@ -1369,9 +1364,9 @@
                 }
             },
             "required": [
+                "layout",
                 "name",
-                "id",
-                "layout"
+                "id"
             ],
             "title": "GraphicalInterface",
             "type": "object"
@@ -1630,10 +1625,10 @@
                 }
             },
             "required": [
+                "layout",
                 "name",
                 "domains",
-                "id",
-                "layout"
+                "id"
             ],
             "title": "KnowledgeGraph",
             "type": "object"
@@ -1670,10 +1665,6 @@
                         "null"
                     ]
                 },
-                "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
-                    "type": "string"
-                },
                 "logo": {
                     "description": "The URL of a logo for the license. This is added at metadata parsing time.",
                     "type": [
@@ -1693,8 +1684,7 @@
                 }
             },
             "required": [
-                "id",
-                "layout"
+                "id"
             ],
             "title": "License",
             "type": "object"
@@ -1871,9 +1861,9 @@
                 }
             },
             "required": [
+                "layout",
                 "name",
-                "id",
-                "layout"
+                "id"
             ],
             "title": "MappingProduct",
             "type": "object"
@@ -1903,10 +1893,6 @@
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
-                "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
-                    "type": "string"
-                },
                 "warnings": {
                     "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
                     "items": {
@@ -1919,8 +1905,7 @@
                 }
             },
             "required": [
-                "id",
-                "layout"
+                "id"
             ],
             "title": "NamedThing",
             "type": "object"
@@ -2129,9 +2114,9 @@
                 }
             },
             "required": [
+                "layout",
                 "name",
-                "id",
-                "layout"
+                "id"
             ],
             "title": "ProcessProduct",
             "type": "object"
@@ -2308,9 +2293,9 @@
                 }
             },
             "required": [
+                "layout",
                 "name",
-                "id",
-                "layout"
+                "id"
             ],
             "title": "Product",
             "type": "object"
@@ -2508,9 +2493,9 @@
                 }
             },
             "required": [
+                "layout",
                 "name",
-                "id",
-                "layout"
+                "id"
             ],
             "title": "ProgrammingInterface",
             "type": "object"
@@ -2564,10 +2549,6 @@
                         "null"
                     ]
                 },
-                "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
-                    "type": "string"
-                },
                 "preferred": {
                     "description": "Whether this is the preferred publication for the resource.",
                     "type": [
@@ -2601,8 +2582,7 @@
                 }
             },
             "required": [
-                "id",
-                "layout"
+                "id"
             ],
             "title": "Publication",
             "type": "object"
@@ -2801,10 +2781,10 @@
                 }
             },
             "required": [
+                "layout",
                 "name",
                 "domains",
-                "id",
-                "layout"
+                "id"
             ],
             "title": "Resource",
             "type": "object"
@@ -2886,10 +2866,6 @@
                         "null"
                     ]
                 },
-                "layout": {
-                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. This slot is mandatory - if not specified, pages won't contain anything from their header metadata.",
-                    "type": "string"
-                },
                 "publications": {
                     "description": "Publications associated with the usage.",
                     "items": {
@@ -2933,8 +2909,7 @@
                 }
             },
             "required": [
-                "id",
-                "layout"
+                "id"
             ],
             "title": "Usage",
             "type": "object"
