@@ -517,6 +517,29 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
         for (const container of provenanceContainers) {
             const data = JSON.parse(container.getAttribute('data-provenance'));
 
+            // Set up the legend toggle button
+            const containerCardBody = container.closest('.card-body');
+            const legendToggleBtn = containerCardBody.querySelector('.legend-toggle-button');
+            if (legendToggleBtn) {
+                legendToggleBtn.addEventListener('click', function() {
+                    const svg = container.querySelector('svg');
+                    const legends = svg.querySelectorAll('.legend');
+                    legends.forEach(legend => {
+                        legend.classList.toggle('hidden');
+                    });
+                    
+                    // Update icon to show active/inactive state
+                    const icon = this.querySelector('i');
+                    if (svg.querySelector('.legend.hidden')) {
+                        icon.classList.remove('bi-list-check');
+                        icon.classList.add('bi-list-ul');
+                    } else {
+                        icon.classList.remove('bi-list-ul');
+                        icon.classList.add('bi-list-check');
+                    }
+                });
+            }
+
             // Calculate appropriate height based on number of sources
             const originalSourceCount = data.originalSources ? data.originalSources.length : 0;
             const secondarySourceCount = data.secondarySources ? data.secondarySources.length : 0;
@@ -917,10 +940,10 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
                 }
             });
 
-        // Add a legend (horizontal layout)
+        // Add a legend (horizontal layout) - initially hidden
         const legend = svg.append('g')
-            .attr('class', 'legend')
-            .attr('transform', `translate(${width / 2 - 250}, 10)`); // Centered at the top
+            .attr('class', 'legend hidden')
+            .attr('transform', `translate(${width / 2 - 300}, 10)`); // Centered at the top, adjusted for larger text
 
         const legendItems = [
             { type: 'original', label: 'Original Source' },
@@ -928,7 +951,7 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
             { type: 'product', label: 'Product' }
         ];
 
-        const legendItemWidth = 160; // Width for each legend item
+        const legendItemWidth = 180; // Width for each legend item, increased to accommodate icons
 
         const legendGroups = legend.selectAll('.legend-item')
             .data(legendItems)
@@ -937,11 +960,13 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
             .attr('class', 'legend-item')
             .attr('transform', (d, i) => `translate(${i * legendItemWidth}, 0)`); // Horizontal layout
 
+        // Add color squares of the same size as icon circles (18x18)
         legendGroups.append('rect')
-            .attr('width', 18) // Width of color box
-            .attr('height', 18) // Height of color box
+            .attr('width', 18) // Width of color box - match icon circle diameter
+            .attr('height', 18) // Height of color box - match icon circle diameter
             .attr('rx', 3) // Corner radius
             .attr('ry', 3) // Corner radius
+            .attr('y', -9) // Shift up half height to align centers with icon circles
             .attr('fill', d => {
                 if (d.type === 'product') return '#5588bb';
                 if (d.type === 'secondary') return '#88bb55';
@@ -950,8 +975,67 @@ kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
 
         legendGroups.append('text')
             .attr('x', 24) // Position text to the right of the rectangle
-            .attr('y', 14) // Vertical alignment
-            .attr('font-size', '14px') // Font size
+            .attr('y', 0) // Center text vertically at same level as icon labels
+            .attr('dominant-baseline', 'middle') // Align vertically
+            .attr('font-size', '14px') // Increased font size for better readability
+            .text(d => d.label);
+            
+        // Add a second section to the legend for icon types
+        const iconLegendGroup = svg.append('g')
+            .attr('class', 'legend legend-icons hidden')
+            .attr('transform', `translate(${width / 2 - 300}, 45)`); // Position below the main legend, adjusted for larger text
+            
+        // Common icon categories that appear often
+        const iconLegendItems = [
+            { category: 'KnowledgeGraph', icon: 'globe', label: 'Knowledge Graph' },
+            { category: 'DataSource', icon: 'shop', label: 'Data Source' },
+            { category: 'Resource', icon: 'archive', label: 'Resource' },
+            { category: 'DataModel', icon: 'diagram-3', label: 'Data Model' },
+            { category: 'Product', icon: 'box', label: 'Generic Product' }
+        ];
+        
+        const iconLegendItemWidth = 180; // Width for each icon legend item, increased for larger text
+        
+        // Create icon legend items
+        const iconGroups = iconLegendGroup.selectAll('.legend-icon-item')
+            .data(iconLegendItems)
+            .enter()
+            .append('g')
+            .attr('class', 'legend-icon-item')
+            .attr('transform', (d, i) => {
+                // Create two rows of icons if more than 3
+                const row = Math.floor(i / 3);
+                const col = i % 3;
+                return `translate(${col * iconLegendItemWidth}, ${row * 30})`; // Increased vertical spacing between rows
+            });
+            
+        // Add icon circles
+        iconGroups.append('circle')
+            .attr('r', 9)
+            .attr('fill', 'white')
+            .attr('stroke', '#999')
+            .attr('stroke-width', '1px');
+            
+        // Add icons using foreignObject with HTML (same approach as in the main diagram)
+        iconGroups.each(function(d) {
+            const group = d3.select(this);
+            group.append('foreignObject')
+                .attr('width', 18) 
+                .attr('height', 18)
+                .attr('x', -9) // Center horizontally
+                .attr('y', -9) // Center vertically
+                .html(d => `<div style="width:18px;height:18px;display:flex;align-items:center;justify-content:center">
+                    <i class="bi bi-${d.icon}" style="font-size:13px;color:#333;"></i>
+                </div>`);
+        });
+            
+        // Add labels
+        iconGroups.append('text')
+            .attr('x', 14) // Position to the right of the icon
+            .attr('y', 0) // Center vertically
+            .attr('dominant-baseline', 'middle')
+            .attr('font-size', '14px') // Increased font size for better readability
+            .attr('fill', '#333')
             .text(d => d.label);
 
         // Add drag and drop functionality
