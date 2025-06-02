@@ -9,6 +9,15 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         renderProvenanceDiagrams();
+        
+        // Add window resize listener to adjust diagrams on window resize
+        window.addEventListener('resize', function() {
+            // Debounce the resize event
+            if (this.resizeTimeout) clearTimeout(this.resizeTimeout);
+            this.resizeTimeout = setTimeout(function() {
+                renderProvenanceDiagrams();
+            }, 200);
+        });
     });
 
     // D3.js Provenance Diagram renderer
@@ -17,19 +26,44 @@
         
         provenanceContainers.forEach(container => {
             const data = JSON.parse(container.getAttribute('data-provenance'));
-            renderD3Diagram(container, data);
+            
+            // Calculate appropriate height based on number of sources
+            const originalSourceCount = data.originalSources ? data.originalSources.length : 0;
+            const secondarySourceCount = data.secondarySources ? data.secondarySources.length : 0;
+            
+            // Base height + additional height per source (with some minimum)
+            const minHeight = 300; // Minimum height
+            const heightPerSource = 70; // Add this much height per source
+            
+            // Calculate height based on whichever is larger: original or secondary sources
+            const calculatedHeight = Math.max(
+                minHeight,
+                Math.max(originalSourceCount, secondarySourceCount) * heightPerSource + 100
+            );
+            
+            // Set height on the container
+            container.style.height = `${calculatedHeight}px`;
+            
+            // Render the diagram with the calculated height
+            renderD3Diagram(container, data, calculatedHeight);
+            
+            // Also set the height on the parent card
+            const cardBody = container.closest('.card-body');
+            if (cardBody) {
+                cardBody.style.minHeight = `${calculatedHeight + 70}px`; // Add some extra padding
+            }
         });
     }
 
-    function renderD3Diagram(container, data) {
+    function renderD3Diagram(container, data, height) {
         // Clear any existing content
         container.innerHTML = '';
         
         // Set up dimensions and spacing
         const width = 600;
-        const height = 300;
+        // Use the dynamic height passed from the parent function
         const nodeWidth = 150;
-        const nodeHeight = 40;
+        const nodeHeight = 50; // Increased node height for better text fit
         const nodePadding = 50;
         
         // Create SVG
@@ -49,6 +83,7 @@
             .attr('x', width / 2)
             .attr('y', height - 10)
             .attr('text-anchor', 'middle')
+            .attr('font-size', '14px') // Increased font size
             .text('Data Flow →');
             
         // Process the data to create node positions
@@ -74,17 +109,14 @@
         // Process secondary sources (middle)
         if (data.secondarySources && data.secondarySources.length > 0) {
             const secondaryX = middlePosition;
-            data.secondarySources.forEach((source, i) => {
-                // For multiple secondary sources, distribute them vertically
-                const y = data.secondarySources.length > 1 
-                    ? (height / (data.secondarySources.length + 1)) * (i + 1) - nodeHeight / 2
-                    : height / 2 - nodeHeight / 2;
-                    
+            
+            // If there's only one secondary source, center it vertically like the product node
+            if (data.secondarySources.length === 1) {
                 const node = {
-                    id: source,
-                    name: source,
+                    id: data.secondarySources[0],
+                    name: data.secondarySources[0],
                     x: secondaryX,
-                    y: y,
+                    y: height / 2 - nodeHeight / 2, // Same vertical centering as product node
                     type: 'secondary'
                 };
                 nodes.push(node);
@@ -94,20 +126,41 @@
                     source: node,
                     target: productNode
                 });
-            });
+            } else {
+                // For multiple secondary sources, distribute them evenly
+                const spacing = (height - 60) / (data.secondarySources.length + 1);
+                const startY = 30; // Start further from the top
+                
+                data.secondarySources.forEach((source, i) => {
+                    const node = {
+                        id: source,
+                        name: source,
+                        x: secondaryX,
+                        y: startY + (i + 1) * spacing - nodeHeight / 2,
+                        type: 'secondary'
+                    };
+                    nodes.push(node);
+                    
+                    // Link to product
+                    links.push({
+                        source: node,
+                        target: productNode
+                    });
+                });
+            }
         }
         
         // Process original sources (left)
         if (data.originalSources && data.originalSources.length > 0) {
             const originalX = leftMargin;
-            const spacing = height / (data.originalSources.length + 1);
             
-            data.originalSources.forEach((source, i) => {
+            // If there's only one original source, center it vertically like the product node
+            if (data.originalSources.length === 1) {
                 const node = {
-                    id: source,
-                    name: source,
+                    id: data.originalSources[0],
+                    name: data.originalSources[0],
                     x: originalX,
-                    y: (i + 1) * spacing - nodeHeight / 2,
+                    y: height / 2 - nodeHeight / 2, // Same vertical centering as product node
                     type: 'original'
                 };
                 nodes.push(node);
@@ -128,7 +181,39 @@
                         target: productNode
                     });
                 }
-            });
+            } else {
+                // For multiple original sources, distribute them evenly
+                const spacing = (height - 60) / (data.originalSources.length + 1);
+                const startY = 30; // Start further from the top
+                
+                data.originalSources.forEach((source, i) => {
+                    const node = {
+                        id: source,
+                        name: source,
+                        x: originalX,
+                        y: startY + (i + 1) * spacing - nodeHeight / 2,
+                        type: 'original'
+                    };
+                    nodes.push(node);
+                    
+                    // Link to secondary source or product
+                    if (data.secondarySources && data.secondarySources.length > 0) {
+                        // Link to each secondary source
+                        nodes.filter(n => n.type === 'secondary').forEach(target => {
+                            links.push({
+                                source: node,
+                                target: target
+                            });
+                        });
+                    } else {
+                        // Link directly to product if no secondary sources
+                        links.push({
+                            source: node,
+                            target: productNode
+                        });
+                    }
+                });
+            }
         }
         
         // Create links (arrows)
@@ -226,6 +311,7 @@
             .attr('text-anchor', 'middle')
             .attr('dominant-baseline', 'middle')
             .attr('fill', 'white')
+            .attr('font-size', '14px') // Increased font size
             .text(d => {
                 // Truncate long names
                 return d.name.length > 18 ? d.name.substring(0, 15) + '...' : d.name;
@@ -233,10 +319,10 @@
             .append('title')  // Add tooltip for full name
             .text(d => d.name);
             
-        // Add a legend
+        // Add a legend (horizontal layout)
         const legend = svg.append('g')
             .attr('class', 'legend')
-            .attr('transform', `translate(${width - 130}, 10)`);
+            .attr('transform', `translate(${width/2 - 250}, 10)`); // Centered at the top
             
         const legendItems = [
             { type: 'original', label: 'Original Source' },
@@ -244,18 +330,20 @@
             { type: 'product', label: 'Product' }
         ];
         
+        const legendItemWidth = 160; // Width for each legend item
+        
         const legendGroups = legend.selectAll('.legend-item')
             .data(legendItems)
             .enter()
             .append('g')
             .attr('class', 'legend-item')
-            .attr('transform', (d, i) => `translate(0, ${i * 20})`);
+            .attr('transform', (d, i) => `translate(${i * legendItemWidth}, 0)`); // Horizontal layout
             
         legendGroups.append('rect')
-            .attr('width', 15)
-            .attr('height', 15)
-            .attr('rx', 2)
-            .attr('ry', 2)
+            .attr('width', 18) // Width of color box
+            .attr('height', 18) // Height of color box
+            .attr('rx', 3) // Corner radius
+            .attr('ry', 3) // Corner radius
             .attr('fill', d => {
                 if (d.type === 'product') return '#5588bb';
                 if (d.type === 'secondary') return '#88bb55';
@@ -263,9 +351,9 @@
             });
             
         legendGroups.append('text')
-            .attr('x', 20)
-            .attr('y', 12)
-            .attr('font-size', '10px')
+            .attr('x', 24) // Position text to the right of the rectangle
+            .attr('y', 14) // Vertical alignment
+            .attr('font-size', '14px') // Font size
             .text(d => d.label);
     }
   </script>
