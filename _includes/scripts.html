@@ -19,6 +19,42 @@
                 renderProvenanceDiagrams().catch(console.error);
             }, 200);
         });
+        
+        // Add event listeners for PROV-XML export links
+        document.querySelectorAll('.export-prov-xml').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Find the closest provenance diagram
+                const diagramContainer = this.closest('.card-body').querySelector('.provenance-diagram');
+                if (!diagramContainer) return;
+                
+                // Get the provenance data
+                const data = JSON.parse(diagramContainer.getAttribute('data-provenance'));
+                
+                // Generate the PROV XML
+                const xml = generateProvXML(data);
+                
+                // Create a blob with the XML
+                const blob = new Blob([xml], { type: 'application/xml' });
+                
+                // Create a download link
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `${data.product}_provenance.xml`;
+                
+                // Trigger the download
+                document.body.appendChild(a);
+                a.click();
+                
+                // Clean up
+                setTimeout(() => {
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                }, 0);
+            });
+        });
     });
 
     // Function to fetch resource category and icon
@@ -63,6 +99,106 @@
         "GraphicalInterface": "window",
         "ProgrammingInterface": "code-square"
     };
+
+    // Function to generate PROV XML representation of provenance data
+    function generateProvXML(data) {
+        // Create the timestamp for the XML
+        const now = new Date();
+        const timestamp = now.toISOString();
+        const kgRegistryUrl = window.location.origin + '/kg-registry/';
+        
+        // Start the XML document
+        let xml = `<?xml version="1.0" encoding="UTF-8"?>
+<prov:document xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:kgr="https://w3id.org/bridge2ai/data-sheets-schema/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <!-- KG-Registry Bundle Information -->
+    <prov:entity prov:id="kgr:registry">
+        <prov:label>KG-Registry</prov:label>
+        <prov:type>kgr:Registry</prov:type>
+        <rdfs:seeAlso>${kgRegistryUrl}</rdfs:seeAlso>
+    </prov:entity>
+    
+    <!-- Product entity -->
+    <prov:entity prov:id="kgr:${data.product}">
+        <prov:label>${data.product}</prov:label>
+        <prov:type>kgr:Product</prov:type>
+        <prov:generatedAtTime>${timestamp}</prov:generatedAtTime>
+        <rdfs:seeAlso>${kgRegistryUrl}resource/${data.product}/${data.product}.html</rdfs:seeAlso>
+    </prov:entity>`;
+        
+        // Add secondary sources
+        if (data.secondarySources && data.secondarySources.length > 0) {
+            for (const source of data.secondarySources) {
+                // Add the entity
+                xml += `
+    
+    <!-- Secondary source entity -->
+    <prov:entity prov:id="kgr:${source}">
+        <prov:label>${source}</prov:label>
+        <prov:type>kgr:Resource</prov:type>
+        <prov:type>kgr:secondary_source</prov:type>
+        <rdfs:seeAlso>${kgRegistryUrl}resource/${source}/${source}.html</rdfs:seeAlso>
+    </prov:entity>
+    
+    <!-- Derivation relation: product was derived from secondary source -->
+    <prov:wasDerivedFrom>
+        <prov:generatedEntity prov:ref="kgr:${data.product}"/>
+        <prov:usedEntity prov:ref="kgr:${source}"/>
+        <prov:type>prov:Derivation</prov:type>
+    </prov:wasDerivedFrom>`;
+            }
+        }
+        
+        // Add original sources
+        if (data.originalSources && data.originalSources.length > 0) {
+            for (const source of data.originalSources) {
+                // Add the entity
+                xml += `
+    
+    <!-- Original source entity -->
+    <prov:entity prov:id="kgr:${source}">
+        <prov:label>${source}</prov:label>
+        <prov:type>kgr:Resource</prov:type>
+        <prov:type>kgr:original_source</prov:type>
+        <rdfs:seeAlso>${kgRegistryUrl}resource/${source}/${source}.html</rdfs:seeAlso>
+    </prov:entity>`;
+                
+                // If there are secondary sources, connect original to secondary
+                if (data.secondarySources && data.secondarySources.length > 0) {
+                    for (const secondarySource of data.secondarySources) {
+                        xml += `
+    
+    <!-- Derivation relation: secondary source was derived from original source -->
+    <prov:wasDerivedFrom>
+        <prov:generatedEntity prov:ref="kgr:${secondarySource}"/>
+        <prov:usedEntity prov:ref="kgr:${source}"/>
+        <prov:type>prov:Derivation</prov:type>
+    </prov:wasDerivedFrom>`;
+                    }
+                } else {
+                    // If no secondary sources, connect original directly to product
+                    xml += `
+    
+    <!-- Derivation relation: product was derived from original source -->
+    <prov:wasDerivedFrom>
+        <prov:generatedEntity prov:ref="kgr:${data.product}"/>
+        <prov:usedEntity prov:ref="kgr:${source}"/>
+        <prov:type>prov:Derivation</prov:type>
+    </prov:wasDerivedFrom>`;
+                }
+            }
+        }
+        
+        // Close the XML document
+        xml += `
+</prov:document>`;
+        
+        return xml;
+    }
 
     // D3.js Provenance Diagram renderer
     async function renderProvenanceDiagrams() {

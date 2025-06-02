@@ -87,7 +87,11 @@ layout: default
     {% if page.original_source or page.secondary_source %}
     <div class="card bg-light mb-3" style="max-width: 60rem;">
       <div class="card-body">
-        <h4 class="card-title"><i class="bi bi-arrow-down-right-square-fill"></i> Provenance</h4>
+        <h4 class="card-title"><i class="bi bi-arrow-down-right-square-fill"></i> Provenance 
+          <small><a href="#" class="export-prov-xml" data-product="{{page.id}}" title="Export as PROV-XML">
+            <i class="bi bi-download"></i> PROV-XML
+          </a></small>
+        </h4>
         {% if page.secondary_source and page.original_source %}
         <div class="provenance-diagram" style="width: 100%;" 
           data-provenance='{
