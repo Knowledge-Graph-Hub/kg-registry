@@ -18,6 +18,11 @@
 
 .node:hover rect {
   filter: brightness(1.1);
+}
+
+/* Only show pointer cursor on non-product nodes */
+.node.original:hover rect,
+.node.secondary:hover rect {
   cursor: pointer;
 }
 
