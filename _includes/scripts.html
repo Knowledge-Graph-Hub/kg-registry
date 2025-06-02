@@ -20,8 +20,8 @@
             }, 200);
         });
         
-        // Add event listeners for PROV-XML export links
-        document.querySelectorAll('.export-prov-xml').forEach(link => {
+        // Add event listeners for PROV export links
+        document.querySelectorAll('.export-prov-xml, .export-prov-rdf, .export-prov-json, .export-prov-svg').forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
                 
@@ -32,21 +32,77 @@
                 // Get the provenance data
                 const data = JSON.parse(diagramContainer.getAttribute('data-provenance'));
                 
-                // Generate the PROV XML
-                const xml = generateProvXML(data);
+                // Get the format from the link
+                const format = this.getAttribute('data-format') || 'xml';
                 
-                // Create a blob with the XML
-                const blob = new Blob([xml], { type: 'application/xml' });
+                // Generate the appropriate format
+                let content, mimeType, fileExtension;
+                
+                switch(format) {
+                    case 'rdf':
+                        content = generateProvRDF(data);
+                        mimeType = 'text/turtle';
+                        fileExtension = 'ttl';
+                        break;
+                    case 'json':
+                        content = generateProvJSON(data);
+                        mimeType = 'application/json';
+                        fileExtension = 'json';
+                        break;
+                    case 'svg':
+                        // Export the SVG content directly
+                        const svgElement = diagramContainer.querySelector('svg');
+                        if (!svgElement) return;
+                        
+                        // Clone the SVG to avoid modifying the displayed one
+                        const svgClone = svgElement.cloneNode(true);
+                        
+                        // Add proper XML namespace and styling for standalone use
+                        svgClone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+                        svgClone.setAttribute('xmlns:xlink', 'http://www.w3.org/1999/xlink');
+                        
+                        // Add embedded CSS to ensure styles are preserved
+                        const style = document.createElement('style');
+                        style.textContent = `
+                            .node-box { fill: #f5f5f5; stroke: #aaa; stroke-width: 1px; rx: 5px; ry: 5px; }
+                            .node-text { font-family: Arial, sans-serif; font-size: 12px; fill: #333; }
+                            .node-icon-circle { fill: #fff; stroke: #999; stroke-width: 1px; }
+                            .node-icon-symbol { fill: #555; font-family: bootstrap-icons; font-size: 14px; }
+                            .link-path { stroke: #999; stroke-width: 1.5px; fill: none; stroke-dasharray: 2,2; }
+                            .link-arrow { fill: #999; }
+                            .direction-indicator { fill: #aaa; font-size: 10px; font-style: italic; }
+                            .legend-text { font-family: Arial, sans-serif; font-size: 11px; fill: #666; }
+                            .legend-item { font-family: Arial, sans-serif; font-size: 11px; fill: #333; }
+                        `;
+                        svgClone.insertBefore(style, svgClone.firstChild);
+                        
+                        content = new XMLSerializer().serializeToString(svgClone);
+                        mimeType = 'image/svg+xml';
+                        fileExtension = 'svg';
+                        break;
+                    case 'xml':
+                    default:
+                        content = generateProvXML(data);
+                        mimeType = 'application/xml';
+                        fileExtension = 'xml';
+                        break;
+                }
+                
+                // Create a blob with the content
+                const blob = new Blob([content], { type: mimeType });
                 
                 // Create a download link
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = `${data.product}_provenance.xml`;
+                a.download = `${data.product}_provenance.${fileExtension}`;
                 
                 // Trigger the download
                 document.body.appendChild(a);
                 a.click();
+                
+                // Show a notification toast
+                showExportNotification(format, data.product);
                 
                 // Clean up
                 setTimeout(() => {
@@ -55,6 +111,59 @@
                 }, 0);
             });
         });
+        
+        // Function to display a toast notification when file is exported
+        function showExportNotification(format, productName) {
+            // Create the toast container if it doesn't exist
+            let toastContainer = document.getElementById('toast-container');
+            if (!toastContainer) {
+                toastContainer = document.createElement('div');
+                toastContainer.id = 'toast-container';
+                toastContainer.className = 'toast-container position-fixed bottom-0 end-0 p-3';
+                document.body.appendChild(toastContainer);
+            }
+            
+            // Format names for the notification
+            let formatName;
+            switch(format) {
+                case 'rdf': formatName = 'PROV-RDF (Turtle)'; break;
+                case 'json': formatName = 'PROV-JSON'; break;
+                case 'svg': formatName = 'SVG Image'; break;
+                case 'xml': 
+                default: formatName = 'PROV-XML'; break;
+            }
+            
+            // Create a unique ID for this toast
+            const toastId = 'toast-' + Date.now();
+            
+            // Create the toast HTML
+            const toastHtml = `
+                <div id="${toastId}" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <i class="bi bi-check-circle-fill me-2" style="color: #28a745;"></i>
+                        <strong class="me-auto">Export Successful</strong>
+                        <small>Just now</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        ${formatName} for <strong>${productName}</strong> has been downloaded.
+                    </div>
+                </div>
+            `;
+            
+            // Add the toast to the container
+            toastContainer.insertAdjacentHTML('beforeend', toastHtml);
+            
+            // Initialize the toast and show it
+            const toastElement = document.getElementById(toastId);
+            const toast = new bootstrap.Toast(toastElement, { autohide: true, delay: 3000 });
+            toast.show();
+            
+            // Remove the toast from DOM after it's hidden
+            toastElement.addEventListener('hidden.bs.toast', function () {
+                toastElement.remove();
+            });
+        }
     });
 
     // Function to fetch resource category and icon
@@ -100,8 +209,37 @@
         "ProgrammingInterface": "code-square"
     };
 
+    // Function to validate PROV export data
+    function validateProvData(data) {
+        // Create a validated copy of the data
+        const validated = {
+            product: data.product || 'unknown',
+            originalSources: [],
+            secondarySources: []
+        };
+        
+        // Validate original sources (ensure it's an array of strings)
+        if (data.originalSources && Array.isArray(data.originalSources)) {
+            validated.originalSources = data.originalSources.filter(source => 
+                typeof source === 'string' && source.trim() !== ''
+            );
+        }
+        
+        // Validate secondary sources (ensure it's an array of strings)
+        if (data.secondarySources && Array.isArray(data.secondarySources)) {
+            validated.secondarySources = data.secondarySources.filter(source => 
+                typeof source === 'string' && source.trim() !== ''
+            );
+        }
+        
+        return validated;
+    }
+
     // Function to generate PROV XML representation of provenance data
     function generateProvXML(data) {
+        // Validate data first
+        const validatedData = validateProvData(data);
+        
         // Create the timestamp for the XML
         const now = new Date();
         const timestamp = now.toISOString();
@@ -123,16 +261,16 @@
     </prov:entity>
     
     <!-- Product entity -->
-    <prov:entity prov:id="kgr:${data.product}">
-        <prov:label>${data.product}</prov:label>
+    <prov:entity prov:id="kgr:${validatedData.product}">
+        <prov:label>${validatedData.product}</prov:label>
         <prov:type>kgr:Product</prov:type>
         <prov:generatedAtTime>${timestamp}</prov:generatedAtTime>
-        <rdfs:seeAlso>${kgRegistryUrl}resource/${data.product}/${data.product}.html</rdfs:seeAlso>
+        <rdfs:seeAlso>${kgRegistryUrl}resource/${validatedData.product}/${validatedData.product}.html</rdfs:seeAlso>
     </prov:entity>`;
         
         // Add secondary sources
-        if (data.secondarySources && data.secondarySources.length > 0) {
-            for (const source of data.secondarySources) {
+        if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
+            for (const source of validatedData.secondarySources) {
                 // Add the entity
                 xml += `
     
@@ -146,7 +284,7 @@
     
     <!-- Derivation relation: product was derived from secondary source -->
     <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="kgr:${data.product}"/>
+        <prov:generatedEntity prov:ref="kgr:${validatedData.product}"/>
         <prov:usedEntity prov:ref="kgr:${source}"/>
         <prov:type>prov:Derivation</prov:type>
     </prov:wasDerivedFrom>`;
@@ -154,8 +292,8 @@
         }
         
         // Add original sources
-        if (data.originalSources && data.originalSources.length > 0) {
-            for (const source of data.originalSources) {
+        if (validatedData.originalSources && validatedData.originalSources.length > 0) {
+            for (const source of validatedData.originalSources) {
                 // Add the entity
                 xml += `
     
@@ -168,8 +306,8 @@
     </prov:entity>`;
                 
                 // If there are secondary sources, connect original to secondary
-                if (data.secondarySources && data.secondarySources.length > 0) {
-                    for (const secondarySource of data.secondarySources) {
+                if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
+                    for (const secondarySource of validatedData.secondarySources) {
                         xml += `
     
     <!-- Derivation relation: secondary source was derived from original source -->
@@ -185,7 +323,7 @@
     
     <!-- Derivation relation: product was derived from original source -->
     <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="kgr:${data.product}"/>
+        <prov:generatedEntity prov:ref="kgr:${validatedData.product}"/>
         <prov:usedEntity prov:ref="kgr:${source}"/>
         <prov:type>prov:Derivation</prov:type>
     </prov:wasDerivedFrom>`;
@@ -198,6 +336,178 @@
 </prov:document>`;
         
         return xml;
+    }
+
+    // Function to generate PROV RDF (Turtle) representation of provenance data
+    function generateProvRDF(data) {
+        // Validate data first
+        const validatedData = validateProvData(data);
+        
+        // Create the timestamp for the RDF
+        const now = new Date();
+        const timestamp = now.toISOString();
+        const kgRegistryUrl = window.location.origin + '/kg-registry/';
+        
+        // Start the RDF document (Turtle format)
+        let rdf = `@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix kgr: <https://w3id.org/bridge2ai/data-sheets-schema/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# KG-Registry Bundle Information
+kgr:registry a prov:Entity ;
+    prov:type kgr:Registry ;
+    rdfs:label "KG-Registry" ;
+    rdfs:seeAlso "${kgRegistryUrl}" .
+
+# Product entity
+kgr:${validatedData.product} a prov:Entity ;
+    prov:type kgr:Product ;
+    rdfs:label "${validatedData.product}" ;
+    prov:generatedAtTime "${timestamp}"^^xsd:dateTime ;
+    rdfs:seeAlso "${kgRegistryUrl}resource/${validatedData.product}/${validatedData.product}.html" .
+`;
+        
+        // Add secondary sources
+        if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
+            for (const source of validatedData.secondarySources) {
+                // Add the entity
+                rdf += `
+# Secondary source entity
+kgr:${source} a prov:Entity ;
+    prov:type kgr:Resource , kgr:secondary_source ;
+    rdfs:label "${source}" ;
+    rdfs:seeAlso "${kgRegistryUrl}resource/${source}/${source}.html" .
+
+# Derivation relation: product was derived from secondary source
+kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
+`;
+            }
+        }
+        
+        // Add original sources
+        if (validatedData.originalSources && validatedData.originalSources.length > 0) {
+            for (const source of validatedData.originalSources) {
+                // Add the entity
+                rdf += `
+# Original source entity
+kgr:${source} a prov:Entity ;
+    prov:type kgr:Resource , kgr:original_source ;
+    rdfs:label "${source}" ;
+    rdfs:seeAlso "${kgRegistryUrl}resource/${source}/${source}.html" .
+`;
+                
+                // If there are secondary sources, connect original to secondary
+                if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
+                    for (const secondarySource of validatedData.secondarySources) {
+                        rdf += `
+# Derivation relation: secondary source was derived from original source
+kgr:${secondarySource} prov:wasDerivedFrom kgr:${source} .
+`;
+                    }
+                } else {
+                    // If no secondary sources, connect original directly to product
+                    rdf += `
+# Derivation relation: product was derived from original source
+kgr:${validatedData.product} prov:wasDerivedFrom kgr:${source} .
+`;
+                }
+            }
+        }
+        
+        return rdf;
+    }
+
+    // Function to generate PROV JSON representation of provenance data
+    function generateProvJSON(data) {
+        // Validate data first
+        const validatedData = validateProvData(data);
+        
+        // Create the timestamp for the JSON
+        const now = new Date();
+        const timestamp = now.toISOString();
+        const kgRegistryUrl = window.location.origin + '/kg-registry/';
+        
+        // Create the JSON object structure according to PROV-JSON spec
+        const provJSON = {
+            "prefix": {
+                "prov": "http://www.w3.org/ns/prov#",
+                "kgr": "https://w3id.org/bridge2ai/data-sheets-schema/",
+                "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+                "xsd": "http://www.w3.org/2001/XMLSchema#"
+            },
+            "entity": {
+                "kgr:registry": {
+                    "prov:type": { "$": "kgr:Registry", "type": "prov:QUALIFIED_NAME" },
+                    "rdfs:label": "KG-Registry",
+                    "rdfs:seeAlso": kgRegistryUrl
+                },
+                [`kgr:${validatedData.product}`]: {
+                    "prov:type": { "$": "kgr:Product", "type": "prov:QUALIFIED_NAME" },
+                    "rdfs:label": validatedData.product,
+                    "prov:generatedAtTime": { "$": timestamp, "type": "xsd:dateTime" },
+                    "rdfs:seeAlso": `${kgRegistryUrl}resource/${validatedData.product}/${validatedData.product}.html`
+                }
+            },
+            "wasDerivedFrom": {}
+        };
+        
+        // Add secondary sources
+        if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
+            validatedData.secondarySources.forEach((source, index) => {
+                // Add entity
+                provJSON.entity[`kgr:${source}`] = {
+                    "prov:type": [
+                        { "$": "kgr:Resource", "type": "prov:QUALIFIED_NAME" },
+                        { "$": "kgr:secondary_source", "type": "prov:QUALIFIED_NAME" }
+                    ],
+                    "rdfs:label": source,
+                    "rdfs:seeAlso": `${kgRegistryUrl}resource/${source}/${source}.html`
+                };
+                
+                // Add derivation relation: product was derived from secondary source
+                provJSON.wasDerivedFrom[`_:wasDerivedFrom${index}`] = {
+                    "prov:generatedEntity": { "$": `kgr:${validatedData.product}`, "type": "prov:QUALIFIED_NAME" },
+                    "prov:usedEntity": { "$": `kgr:${source}`, "type": "prov:QUALIFIED_NAME" },
+                    "prov:type": { "$": "prov:Derivation", "type": "prov:QUALIFIED_NAME" }
+                };
+            });
+        }
+        
+        // Add original sources
+        if (validatedData.originalSources && validatedData.originalSources.length > 0) {
+            validatedData.originalSources.forEach((source, index) => {
+                // Add entity
+                provJSON.entity[`kgr:${source}`] = {
+                    "prov:type": [
+                        { "$": "kgr:Resource", "type": "prov:QUALIFIED_NAME" },
+                        { "$": "kgr:original_source", "type": "prov:QUALIFIED_NAME" }
+                    ],
+                    "rdfs:label": source,
+                    "rdfs:seeAlso": `${kgRegistryUrl}resource/${source}/${source}.html`
+                };
+                
+                // If there are secondary sources, connect original to secondary
+                if (validatedData.secondarySources && validatedData.secondarySources.length > 0) {
+                    validatedData.secondarySources.forEach((secondarySource, sIndex) => {
+                        provJSON.wasDerivedFrom[`_:wasDerivedFrom${index}_${sIndex}`] = {
+                            "prov:generatedEntity": { "$": `kgr:${secondarySource}`, "type": "prov:QUALIFIED_NAME" },
+                            "prov:usedEntity": { "$": `kgr:${source}`, "type": "prov:QUALIFIED_NAME" },
+                            "prov:type": { "$": "prov:Derivation", "type": "prov:QUALIFIED_NAME" }
+                        };
+                    });
+                } else {
+                    // If no secondary sources, connect original directly to product
+                    provJSON.wasDerivedFrom[`_:wasDerivedFrom${index}_direct`] = {
+                        "prov:generatedEntity": { "$": `kgr:${validatedData.product}`, "type": "prov:QUALIFIED_NAME" },
+                        "prov:usedEntity": { "$": `kgr:${source}`, "type": "prov:QUALIFIED_NAME" },
+                        "prov:type": { "$": "prov:Derivation", "type": "prov:QUALIFIED_NAME" }
+                    };
+                }
+            });
+        }
+        
+        return JSON.stringify(provJSON, null, 2);
     }
 
     // D3.js Provenance Diagram renderer
@@ -232,6 +542,9 @@
             if (cardBody) {
                 cardBody.style.minHeight = `${calculatedHeight + 70}px`; // Add some extra padding
             }
+            
+            // Add drag and drop functionality
+            addDragAndDrop(container);
         }
     }
 
@@ -640,5 +953,160 @@
             .attr('y', 14) // Vertical alignment
             .attr('font-size', '14px') // Font size
             .text(d => d.label);
+
+        // Add drag and drop functionality
+        function addDragAndDrop(container) {
+            // Find the SVG element in the container
+            const svg = container.querySelector('svg');
+            if (!svg) return;
+            
+            // Add an instruction overlay
+            const instructionOverlay = document.createElement('div');
+            instructionOverlay.className = 'drag-instruction-overlay';
+            instructionOverlay.innerHTML = `
+                <div class="drag-instruction">
+                    <i class="bi bi-arrows-move"></i>
+                    <span>Click and drag to reposition the diagram</span>
+                </div>
+            `;
+            container.appendChild(instructionOverlay);
+            
+            // Hide the instruction after a few seconds
+            setTimeout(() => {
+                instructionOverlay.style.opacity = '0';
+                setTimeout(() => {
+                    instructionOverlay.remove();
+                }, 1000);
+            }, 3000);
+            
+            // Set up drag functionality
+            let isDragging = false;
+            let startX, startY;
+            let currentTranslateX = 0, currentTranslateY = 0;
+            
+            // Get the main group element
+            const mainGroup = svg.querySelector('g');
+            
+            // Initialize transform if not already set
+            const currentTransform = mainGroup.getAttribute('transform') || 'translate(10, 20)';
+            const match = /translate\(([^,]+),\s*([^)]+)\)/.exec(currentTransform);
+            if (match) {
+                currentTranslateX = parseFloat(match[1]);
+                currentTranslateY = parseFloat(match[2]);
+            }
+            
+            // Mouse events for dragging
+            svg.addEventListener('mousedown', function(e) {
+                // Only start drag if not clicking on a node
+                if (e.target.closest('.node')) return;
+                
+                isDragging = true;
+                startX = e.clientX;
+                startY = e.clientY;
+                svg.style.cursor = 'grabbing';
+            });
+            
+            svg.addEventListener('mousemove', function(e) {
+                if (!isDragging) return;
+                
+                const dx = e.clientX - startX;
+                const dy = e.clientY - startY;
+                
+                // Update the transform
+                mainGroup.setAttribute('transform', `translate(${currentTranslateX + dx}, ${currentTranslateY + dy})`);
+            });
+            
+            svg.addEventListener('mouseup', function(e) {
+                if (!isDragging) return;
+                
+                // Update the current position
+                const dx = e.clientX - startX;
+                const dy = e.clientY - startY;
+                currentTranslateX += dx;
+                currentTranslateY += dy;
+                
+                isDragging = false;
+                svg.style.cursor = 'grab';
+            });
+            
+            svg.addEventListener('mouseleave', function() {
+                if (isDragging) {
+                    isDragging = false;
+                    svg.style.cursor = 'grab';
+                }
+            });
+            
+            // Touch events for mobile devices
+            svg.addEventListener('touchstart', function(e) {
+                // Prevent scrolling while dragging
+                e.preventDefault();
+                
+                // Only start drag if not touching a node
+                if (e.target.closest('.node')) return;
+                
+                isDragging = true;
+                startX = e.touches[0].clientX;
+                startY = e.touches[0].clientY;
+            });
+            
+            svg.addEventListener('touchmove', function(e) {
+                if (!isDragging) return;
+                
+                // Prevent scrolling while dragging
+                e.preventDefault();
+                
+                const dx = e.touches[0].clientX - startX;
+                const dy = e.touches[0].clientY - startY;
+                
+                // Update the transform
+                mainGroup.setAttribute('transform', `translate(${currentTranslateX + dx}, ${currentTranslateY + dy})`);
+            });
+            
+            svg.addEventListener('touchend', function(e) {
+                if (!isDragging) return;
+                
+                // Update the current position based on the last known touch position
+                const lastTouch = e.changedTouches[0];
+                const dx = lastTouch.clientX - startX;
+                const dy = lastTouch.clientY - startY;
+                currentTranslateX += dx;
+                currentTranslateY += dy;
+                
+                isDragging = false;
+            });
+            
+            // Set initial cursor
+            svg.style.cursor = 'grab';
+        }
+        
+        // Add drag and drop to the container
+        addDragAndDrop(container);
     }
+
+    // Add keyboard shortcut to reset the diagram position
+    document.addEventListener('keydown', function(e) {
+        // Only respond if a diagram is focused or the event is in the context of a diagram
+        const focusedDiagram = document.activeElement.closest('.provenance-diagram');
+        if (!focusedDiagram) return;
+        
+        // Reset position on 'R' key press
+        if (e.key === 'r' || e.key === 'R') {
+            const mainGroup = focusedDiagram.querySelector('svg g');
+            if (mainGroup) {
+                // Reset to initial position
+                mainGroup.setAttribute('transform', 'translate(10, 20)');
+                currentTranslateX = 10;
+                currentTranslateY = 20;
+                
+                // Show a short notification
+                const resetMsg = document.createElement('div');
+                resetMsg.className = 'reset-notification';
+                resetMsg.textContent = 'Diagram position reset';
+                focusedDiagram.appendChild(resetMsg);
+                
+                // Remove after animation completes
+                setTimeout(() => resetMsg.remove(), 1500);
+            }
+        }
+    });
 </script>

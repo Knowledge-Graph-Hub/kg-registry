@@ -87,10 +87,23 @@ layout: default
     {% if page.original_source or page.secondary_source %}
     <div class="card bg-light mb-3" style="max-width: 60rem;">
       <div class="card-body">
-        <h4 class="card-title"><i class="bi bi-arrow-down-right-square-fill"></i> Provenance 
-          <small><a href="#" class="export-prov-xml" data-product="{{page.id}}" title="Export as PROV-XML">
-            <i class="bi bi-download"></i> PROV-XML
-          </a></small>
+        <h4 class="card-title">
+          <i class="bi bi-arrow-down-right-square-fill"></i> Provenance 
+          <span class="provenance-help" title="Drag to reposition diagram. Press 'R' to reset position.">
+            <i class="bi bi-question-circle"></i>
+          </span>
+          <div class="dropdown export-dropdown">
+            <button class="btn btn-sm dropdown-toggle export-menu-button" type="button" id="exportDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-download"></i> Export
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="exportDropdown">
+              <li><a class="dropdown-item export-prov-xml" href="#" data-product="{{page.id}}" data-format="xml"><i class="bi bi-file-earmark-code"></i> PROV-XML</a></li>
+              <li><a class="dropdown-item export-prov-rdf" href="#" data-product="{{page.id}}" data-format="rdf"><i class="bi bi-filetype-ttl"></i> PROV-RDF (Turtle)</a></li>
+              <li><a class="dropdown-item export-prov-json" href="#" data-product="{{page.id}}" data-format="json"><i class="bi bi-filetype-json"></i> PROV-JSON</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item export-prov-svg" href="#" data-product="{{page.id}}" data-format="svg"><i class="bi bi-filetype-svg"></i> SVG Image</a></li>
+            </ul>
+          </div>
         </h4>
         {% if page.secondary_source and page.original_source %}
         <div class="provenance-diagram" style="width: 100%;" 
