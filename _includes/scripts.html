@@ -92,9 +92,13 @@
         
         // Calculate horizontal positions
         // Left section for original sources, middle for secondary, right for product
-        const leftMargin = 20;
-        const rightMargin = width - nodeWidth - 20;
-        const middlePosition = width / 2 - nodeWidth / 2;
+        const leftMargin = 20; // Left edge margin
+        const rightMargin = width - nodeWidth - 20; // Right edge margin
+        const middlePosition = width / 2 - nodeWidth / 2; // Center position for secondary sources
+        
+        // Define the diagram's horizontal layout zones more explicitly 
+        const originalSourceZone = width * 0.15; // Original sources at about 15% from left
+        const secondarySourceZone = width * 0.55; // Secondary sources at about 55% from left
         
         // Product node is always at the right
         const productNode = {
@@ -108,7 +112,8 @@
         
         // Process secondary sources (middle)
         if (data.secondarySources && data.secondarySources.length > 0) {
-            const secondaryX = middlePosition;
+            // Use the secondarySourceZone position
+            const secondaryX = secondarySourceZone - nodeWidth/2; // Center the node on the zone
             
             // If there's only one secondary source, center it vertically like the product node
             if (data.secondarySources.length === 1) {
@@ -152,14 +157,16 @@
         
         // Process original sources (left)
         if (data.originalSources && data.originalSources.length > 0) {
-            const originalX = leftMargin;
+            // Use the originalSourceZone position
+            const originalBaseX = originalSourceZone - nodeWidth/2; // Center the node on the zone
+            const staggerWidth = 20; // How much to stagger horizontally
             
             // If there's only one original source, center it vertically like the product node
             if (data.originalSources.length === 1) {
                 const node = {
                     id: data.originalSources[0],
                     name: data.originalSources[0],
-                    x: originalX,
+                    x: originalBaseX,
                     y: height / 2 - nodeHeight / 2, // Same vertical centering as product node
                     type: 'original'
                 };
@@ -182,15 +189,19 @@
                     });
                 }
             } else {
-                // For multiple original sources, distribute them evenly
+                // For multiple original sources, distribute them evenly and stagger them horizontally
                 const spacing = (height - 60) / (data.originalSources.length + 1);
                 const startY = 30; // Start further from the top
                 
                 data.originalSources.forEach((source, i) => {
+                    // Alternate between originalBaseX and originalBaseX + staggerWidth
+                    // Maintain the staggering effect
+                    const staggeredX = i % 2 === 0 ? originalBaseX : originalBaseX + staggerWidth;
+                    
                     const node = {
                         id: source,
                         name: source,
-                        x: originalX,
+                        x: staggeredX,
                         y: startY + (i + 1) * spacing - nodeHeight / 2,
                         type: 'original'
                     };
@@ -231,7 +242,18 @@
                 const targetX = d.target.x;
                 const targetY = d.target.y + nodeHeight / 2;
                 
-                return `M${sourceX},${sourceY} C${sourceX + 30},${sourceY} ${targetX - 30},${targetY} ${targetX},${targetY}`;
+                // Calculate distance between source and target
+                const distance = targetX - sourceX;
+                
+                // For long distances (original to secondary), use a more gentle curve
+                // For shorter distances (secondary to product), use a tighter curve
+                const isLongDistance = distance > width * 0.25;
+                
+                // Adjust control points based on distance
+                const controlPoint1X = sourceX + (isLongDistance ? distance * 0.25 : distance * 0.4);
+                const controlPoint2X = targetX - (isLongDistance ? distance * 0.25 : distance * 0.4);
+                
+                return `M${sourceX},${sourceY} C${controlPoint1X},${sourceY} ${controlPoint2X},${targetY} ${targetX},${targetY}`;
             })
             .attr('fill', 'none')
             .attr('stroke', '#999')
