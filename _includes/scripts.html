@@ -7,14 +7,14 @@
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         renderProvenanceDiagrams();
-        
+
         // Add window resize listener to adjust diagrams on window resize
-        window.addEventListener('resize', function() {
+        window.addEventListener('resize', function () {
             // Debounce the resize event
             if (this.resizeTimeout) clearTimeout(this.resizeTimeout);
-            this.resizeTimeout = setTimeout(function() {
+            this.resizeTimeout = setTimeout(function () {
                 renderProvenanceDiagrams();
             }, 200);
         });
@@ -23,30 +23,30 @@
     // D3.js Provenance Diagram renderer
     function renderProvenanceDiagrams() {
         const provenanceContainers = document.querySelectorAll('.provenance-diagram');
-        
+
         provenanceContainers.forEach(container => {
             const data = JSON.parse(container.getAttribute('data-provenance'));
-            
+
             // Calculate appropriate height based on number of sources
             const originalSourceCount = data.originalSources ? data.originalSources.length : 0;
             const secondarySourceCount = data.secondarySources ? data.secondarySources.length : 0;
-            
+
             // Base height + additional height per source (with some minimum)
             const minHeight = 300; // Minimum height
             const heightPerSource = 70; // Add this much height per source
-            
+
             // Calculate height based on whichever is larger: original or secondary sources
             const calculatedHeight = Math.max(
                 minHeight,
                 Math.max(originalSourceCount, secondarySourceCount) * heightPerSource + 100
             );
-            
+
             // Set height on the container
             container.style.height = `${calculatedHeight}px`;
-            
+
             // Render the diagram with the calculated height
             renderD3Diagram(container, data, calculatedHeight);
-            
+
             // Also set the height on the parent card
             const cardBody = container.closest('.card-body');
             if (cardBody) {
@@ -58,25 +58,25 @@
     function renderD3Diagram(container, data, height) {
         // Clear any existing content
         container.innerHTML = '';
-        
+
         // Set up dimensions and spacing
         const width = 600;
         // Use the dynamic height passed from the parent function
         const nodeWidth = 150;
         const nodeHeight = 50; // Increased node height for better text fit
         const nodePadding = 50;
-        
+
         // Create SVG
         const svg = d3.select(container)
             .append('svg')
             .attr('width', width)
             .attr('height', height)
             .attr('class', 'provenance-svg');
-            
+
         // Create a group for the entire diagram
         const g = svg.append('g')
             .attr('transform', 'translate(10, 20)');
-            
+
         // Add a subtle data flow indicator
         svg.append('text')
             .attr('class', 'direction-indicator')
@@ -85,21 +85,21 @@
             .attr('text-anchor', 'middle')
             .attr('font-size', '14px') // Increased font size
             .text('Data Flow →');
-            
+
         // Process the data to create node positions
         const nodes = [];
         const links = [];
-        
+
         // Calculate horizontal positions
         // Left section for original sources, middle for secondary, right for product
         const leftMargin = 20; // Left edge margin
         const rightMargin = width - nodeWidth - 20; // Right edge margin
         const middlePosition = width / 2 - nodeWidth / 2; // Center position for secondary sources
-        
+
         // Define the diagram's horizontal layout zones more explicitly 
         const originalSourceZone = width * 0.15; // Original sources at about 15% from left
         const secondarySourceZone = width * 0.55; // Secondary sources at about 55% from left
-        
+
         // Product node is always at the right
         const productNode = {
             id: data.product,
@@ -109,12 +109,12 @@
             type: 'product'
         };
         nodes.push(productNode);
-        
+
         // Process secondary sources (middle)
         if (data.secondarySources && data.secondarySources.length > 0) {
             // Use the secondarySourceZone position
-            const secondaryX = secondarySourceZone - nodeWidth/2; // Center the node on the zone
-            
+            const secondaryX = secondarySourceZone - nodeWidth / 2; // Center the node on the zone
+
             // If there's only one secondary source, center it vertically like the product node
             if (data.secondarySources.length === 1) {
                 const node = {
@@ -125,7 +125,7 @@
                     type: 'secondary'
                 };
                 nodes.push(node);
-                
+
                 // Link to product
                 links.push({
                     source: node,
@@ -135,7 +135,7 @@
                 // For multiple secondary sources, distribute them evenly
                 const spacing = (height - 60) / (data.secondarySources.length + 1);
                 const startY = 30; // Start further from the top
-                
+
                 data.secondarySources.forEach((source, i) => {
                     const node = {
                         id: source,
@@ -145,7 +145,7 @@
                         type: 'secondary'
                     };
                     nodes.push(node);
-                    
+
                     // Link to product
                     links.push({
                         source: node,
@@ -154,13 +154,13 @@
                 });
             }
         }
-        
+
         // Process original sources (left)
         if (data.originalSources && data.originalSources.length > 0) {
             // Use the originalSourceZone position
-            const originalBaseX = originalSourceZone - nodeWidth/2; // Center the node on the zone
+            const originalBaseX = originalSourceZone - nodeWidth / 2; // Center the node on the zone
             const staggerWidth = 20; // How much to stagger horizontally
-            
+
             // If there's only one original source, center it vertically like the product node
             if (data.originalSources.length === 1) {
                 const node = {
@@ -171,7 +171,7 @@
                     type: 'original'
                 };
                 nodes.push(node);
-                
+
                 // Link to secondary source or product
                 if (data.secondarySources && data.secondarySources.length > 0) {
                     // Link to each secondary source
@@ -192,12 +192,12 @@
                 // For multiple original sources, distribute them evenly and stagger them horizontally
                 const spacing = (height - 60) / (data.originalSources.length + 1);
                 const startY = 30; // Start further from the top
-                
+
                 data.originalSources.forEach((source, i) => {
                     // Alternate between originalBaseX and originalBaseX + staggerWidth
                     // Maintain the staggering effect
                     const staggeredX = i % 2 === 0 ? originalBaseX : originalBaseX + staggerWidth;
-                    
+
                     const node = {
                         id: source,
                         name: source,
@@ -206,7 +206,7 @@
                         type: 'original'
                     };
                     nodes.push(node);
-                    
+
                     // Link to secondary source or product
                     if (data.secondarySources && data.secondarySources.length > 0) {
                         // Link to each secondary source
@@ -226,14 +226,14 @@
                 });
             }
         }
-        
+
         // Create links (arrows)
         const arrows = g.selectAll('.arrow')
             .data(links)
             .enter()
             .append('g')
             .attr('class', 'arrow');
-            
+
         // Add path for each arrow
         arrows.append('path')
             .attr('d', d => {
@@ -241,25 +241,25 @@
                 const sourceY = d.source.y + nodeHeight / 2;
                 const targetX = d.target.x;
                 const targetY = d.target.y + nodeHeight / 2;
-                
+
                 // Calculate distance between source and target
                 const distance = targetX - sourceX;
-                
+
                 // For long distances (original to secondary), use a more gentle curve
                 // For shorter distances (secondary to product), use a tighter curve
                 const isLongDistance = distance > width * 0.25;
-                
+
                 // Adjust control points based on distance
                 const controlPoint1X = sourceX + (isLongDistance ? distance * 0.25 : distance * 0.4);
                 const controlPoint2X = targetX - (isLongDistance ? distance * 0.25 : distance * 0.4);
-                
+
                 return `M${sourceX},${sourceY} C${controlPoint1X},${sourceY} ${controlPoint2X},${targetY} ${targetX},${targetY}`;
             })
             .attr('fill', 'none')
             .attr('stroke', '#999')
             .attr('stroke-width', 2)
             .attr('marker-end', 'url(#arrowhead)');
-            
+
         // Add arrowhead marker definition
         svg.append('defs').append('marker')
             .attr('id', 'arrowhead')
@@ -272,7 +272,7 @@
             .append('path')
             .attr('d', 'M0,-5L10,0L0,5')
             .attr('fill', '#999');
-            
+
         // Create nodes
         const nodeGroups = g.selectAll('.node')
             .data(nodes)
@@ -280,37 +280,39 @@
             .append('g')
             .attr('class', d => `node ${d.type}`)
             .attr('transform', d => `translate(${d.x}, ${d.y})`)
-            .on('click', function(event, d) {
-                // Navigate to the resource page when clicking a node
-                window.location.href = `/kg-registry/resource/${d.id}/${d.id}.html`;
+            .on('click', function (event, d) {
+                // Only navigate if it's not the product node (since we're already on the product page)
+                if (d.type !== 'product') {
+                    window.location.href = `/kg-registry/resource/${d.id}/${d.id}.html`;
+                }
             })
-            .on('mouseover', function(event, d) {
+            .on('mouseover', function (event, d) {
                 // Highlight connected links and nodes
                 d3.select(this).select('rect')
                     .attr('stroke-width', d.type === 'product' ? 4 : 2)
                     .attr('filter', 'brightness(1.1)');
-                
+
                 // Highlight connected arrows
                 arrows.selectAll('path')
-                    .attr('stroke-width', link => 
+                    .attr('stroke-width', link =>
                         (link.source.id === d.id || link.target.id === d.id) ? 3 : 2
                     )
-                    .attr('stroke', link => 
+                    .attr('stroke', link =>
                         (link.source.id === d.id || link.target.id === d.id) ? '#666' : '#999'
                     );
             })
-            .on('mouseout', function(event, d) {
+            .on('mouseout', function (event, d) {
                 // Reset highlights
                 d3.select(this).select('rect')
                     .attr('stroke-width', d.type === 'product' ? 3 : 1)
                     .attr('filter', null);
-                
+
                 // Reset arrows
                 arrows.selectAll('path')
                     .attr('stroke-width', 2)
                     .attr('stroke', '#999');
             });
-            
+
         // Add rectangle for each node
         nodeGroups.append('rect')
             .attr('width', nodeWidth)
@@ -324,8 +326,8 @@
             })
             .attr('stroke', '#333')
             .attr('stroke-width', d => d.type === 'product' ? 3 : 1)
-            .attr('cursor', 'pointer');
-            
+            .attr('cursor', d => d.type === 'product' ? 'default' : 'pointer');
+
         // Add text for each node
         nodeGroups.append('text')
             .attr('x', nodeWidth / 2)
@@ -340,27 +342,27 @@
             })
             .append('title')  // Add tooltip for full name
             .text(d => d.name);
-            
+
         // Add a legend (horizontal layout)
         const legend = svg.append('g')
             .attr('class', 'legend')
-            .attr('transform', `translate(${width/2 - 250}, 10)`); // Centered at the top
-            
+            .attr('transform', `translate(${width / 2 - 250}, 10)`); // Centered at the top
+
         const legendItems = [
             { type: 'original', label: 'Original Source' },
             { type: 'secondary', label: 'Secondary Source' },
             { type: 'product', label: 'Product' }
         ];
-        
+
         const legendItemWidth = 160; // Width for each legend item
-        
+
         const legendGroups = legend.selectAll('.legend-item')
             .data(legendItems)
             .enter()
             .append('g')
             .attr('class', 'legend-item')
             .attr('transform', (d, i) => `translate(${i * legendItemWidth}, 0)`); // Horizontal layout
-            
+
         legendGroups.append('rect')
             .attr('width', 18) // Width of color box
             .attr('height', 18) // Height of color box
@@ -371,11 +373,11 @@
                 if (d.type === 'secondary') return '#88bb55';
                 return '#ddaa44';
             });
-            
+
         legendGroups.append('text')
             .attr('x', 24) // Position text to the right of the rectangle
             .attr('y', 14) // Vertical alignment
             .attr('font-size', '14px') // Font size
             .text(d => d.label);
     }
-  </script>
+</script>
