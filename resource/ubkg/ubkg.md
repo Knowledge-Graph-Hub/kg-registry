@@ -1,5 +1,6 @@
 ---
 activity_status: active
+layout: resource_detail
 category: KnowledgeGraph
 contacts:
 - category: Organization
@@ -191,3 +192,4 @@ usages:
   type: actual
   url: https://doi.org/10.1038/s41597-024-04070-w
 ---
+test test
