@@ -24,6 +24,7 @@ domains:
 - genomics
 homepage_url: https://ubkg.docs.xconsortia.org/
 id: ubkg
+layout: resource_detail
 license:
   id: https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf
   label: UMLS License Agreement
@@ -191,3 +192,4 @@ usages:
   type: actual
   url: https://doi.org/10.1038/s41597-024-04070-w
 ---
+test test

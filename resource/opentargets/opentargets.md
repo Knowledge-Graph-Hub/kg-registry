@@ -16,6 +16,7 @@ domains:
 - biomedical
 homepage_url: https://www.opentargets.org/
 id: opentargets
+layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0
   label: Apache License 2.0
