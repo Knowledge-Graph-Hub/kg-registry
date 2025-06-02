@@ -145,7 +145,7 @@
   margin: 0.3rem 0;
 }
 
-/* Format-specific icon colors */
+/* Format-specific icon colors - all consistent with 5px right margin */
 .export-prov-xml .bi {
   color: #007acc;
 }
@@ -162,26 +162,20 @@
   color: #FF8A3C;
 }
 
-/* Legacy export link styles (kept for backward compatibility) */
-.export-prov-xml {
-  font-size: 0.75em;
-  margin-left: 15px;
-  text-decoration: none;
-  color: #666;
-  padding: 2px 6px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  transition: all 0.2s ease;
+/* Legacy export styles - applied to all export types for consistency */
+.export-prov-xml,
+.export-prov-rdf,
+.export-prov-json,
+.export-prov-svg {
+  /* No specific styling here - let the dropdown-item class handle this */
 }
 
-.export-prov-xml:hover {
-  background-color: #f0f0f0;
-  color: #333;
-  text-decoration: none;
-}
-
-.export-prov-xml .bi {
-  margin-right: 2px;
+/* Make sure all icons have consistent margin */
+.export-prov-xml .bi,
+.export-prov-rdf .bi,
+.export-prov-json .bi,
+.export-prov-svg .bi {
+  margin-right: 5px;
 }
 
 /* Toast notification styles */
