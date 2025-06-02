@@ -1,0 +1,334 @@
+/* Styles for D3.js Provenance Diagram */
+.provenance-diagram {
+  position: relative;
+  overflow: visible;
+  margin: 0 auto;
+  min-height: 300px; /* Minimum height */
+  transition: height 0.3s ease; /* Smooth transition when height changes */
+}
+
+.provenance-svg {
+  display: block;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.node rect {
+  transition: all 0.3s ease;
+}
+
+.node:hover rect {
+  filter: brightness(1.1);
+}
+
+/* Only show pointer cursor on non-product nodes */
+.node.original:hover rect,
+.node.secondary:hover rect {
+  cursor: pointer;
+}
+
+.node text {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.arrow path {
+  transition: stroke-width 0.2s ease;
+}
+
+.arrow:hover path {
+  stroke-width: 3px;
+  stroke: #666;
+}
+
+/* Node type styles */
+.node.product rect {
+  fill: #3366cc; /* Accessible blue for products */
+}
+
+.node.secondary rect {
+  fill: #9933cc; /* Accessible purple for secondary sources */
+}
+
+.node.original rect {
+  fill: #ff8800; /* Accessible orange for original sources */
+}
+
+/* Node icon styles */
+.node-icon {
+  pointer-events: none;
+}
+
+.node-icon circle {
+  stroke: #333;
+  stroke-width: 0.5;
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+.node-icon i {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 500;
+}
+
+/* Legend styles */
+.legend {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.legend.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.legend-item {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.legend-item text {
+  font-size: 14px;
+  fill: #333;
+}
+
+/* Legend toggle button */
+.legend-toggle-button {
+  margin-left: 5px;
+  padding: 2px 6px;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #888;
+  transition: all 0.2s ease;
+}
+
+.legend-toggle-button:hover {
+  background-color: #f5f5f5;
+  color: #555;
+  border-color: #ccc;
+}
+
+.legend-toggle-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(85, 136, 187, 0.25);
+}
+
+.legend-toggle-button i {
+  font-size: 0.8em;
+}
+
+.legend-icons {
+  margin-top: 15px; /* Increased margin for better separation */
+  padding-top: 8px; /* Increased padding */
+  border-top: 1px dashed #ddd;
+}
+
+.legend-icon-item {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  font-size: 14px; /* Match the increased font size */
+}
+
+.legend-icon-symbol {
+  font-family: bootstrap-icons;
+  font-size: 14px; /* Match the increased font size */
+}
+
+/* Data flow direction indicator - horizontal layout */
+.direction-indicator {
+  font-size: 14px;
+  fill: #666;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .provenance-svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Export menu styles */
+.export-dropdown {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.export-menu-button {
+  font-size: 0.75em;
+  color: #666;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 2px 8px;
+  transition: all 0.2s ease;
+}
+
+.export-menu-button:hover,
+.export-menu-button:focus {
+  background-color: #f0f0f0;
+  color: #333;
+  border-color: #999;
+}
+
+.dropdown-item {
+  font-size: 0.9em;
+  padding: 0.4rem 1rem;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown-item .bi {
+  margin-right: 5px;
+  color: #555;
+}
+
+.dropdown-divider {
+  margin: 0.3rem 0;
+}
+
+/* Format-specific icon colors - all consistent with 5px right margin */
+.export-prov-xml .bi {
+  color: #007acc;
+}
+
+.export-prov-rdf .bi {
+  color: #5C8DBC;
+}
+
+.export-prov-json .bi {
+  color: #F5BB12;
+}
+
+.export-prov-svg .bi {
+  color: #FF8A3C;
+}
+
+/* Legacy export styles - applied to all export types for consistency */
+.export-prov-xml,
+.export-prov-rdf,
+.export-prov-json,
+.export-prov-svg {
+  /* No specific styling here - let the dropdown-item class handle this */
+}
+
+/* Make sure all icons have consistent margin */
+.export-prov-xml .bi,
+.export-prov-rdf .bi,
+.export-prov-json .bi,
+.export-prov-svg .bi {
+  margin-right: 5px;
+}
+
+/* Toast notification styles */
+.toast-container {
+  z-index: 1060;
+}
+
+.toast {
+  min-width: 250px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.toast-header {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.toast-body {
+  padding: 0.75rem;
+}
+
+/* Drag and drop instruction overlay */
+.drag-instruction-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.drag-instruction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.drag-instruction i {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.drag-instruction span {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Reset notification */
+.reset-notification {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  animation: fadeInOut 1.5s ease forwards;
+  z-index: 20;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Help button */
+.provenance-help {
+  display: inline-block;
+  margin-left: 8px;
+  cursor: help;
+  color: #888;
+  font-size: 0.8em;
+  vertical-align: middle;
+  transition: color 0.2s ease;
+}
+
+.provenance-help:hover {
+  color: #555;
+}
+
+/* Make sure both legend sections share the same visibility state */
+.legend.hidden,
+.legend-icons.hidden {
+  opacity: 0;
+  visibility: hidden;
+}

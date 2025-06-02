@@ -83,57 +83,61 @@ layout: default
     {% endfor %}
     {% endif %}
 
-    <!-- This diagram should probably reference the full registry,
-because some details may not be available from the current
-product (e.g., there may be multiple sources and they
-may be processed differently).
-The current diagram is rather hacky.
-TODO: restructure accordingly. -->
+    <!-- Provenance visualization using D3.js -->
     {% if page.original_source or page.secondary_source %}
-    {% if page.secondary_source and page.original_source %}
     <div class="card bg-light mb-3" style="max-width: 60rem;">
       <div class="card-body">
-        <h4 class="card-title"><i class="bi bi-arrow-down-right-square-fill"></i> Provenance</h4>
-        {% if page.original_source.size > 1 %}
-        <pre><code class="language-mermaid" style="display: flex; justify-content: center"> 
-            block-beta
-            columns 3
-            DataSourceA("{{page.original_source[0]}}") space:1
-            DataSourceB("{{page.original_source[1]}}") space:4
-            Aggregator("{{page.secondary_source}}") space:5
-            Product("{{page.id}}")
-            DataSourceA  --> Aggregator
-            DataSourceB  --> Aggregator
-            Aggregator  --> Product  
-          
-            style Product stroke:#5588bb,stroke-width:5px;
-                
-          </code></pre>
-        {% elsif page.secondary_source == page.original_source %}
-        <pre><code class="language-mermaid" style="display: flex; justify-content: center"> 
-            block-beta
-            columns 1
-            DataSource("{{page.original_source}}") space:1
-            Product("{{page.id}}")
-            DataSource  --> Product
-          
-            style Product stroke:#5588bb,stroke-width:5px;
-                
-          </code></pre>
-        {% else %}
-        <pre><code class="language-mermaid" style="display: flex; justify-content: center"> 
-            block-beta
-            columns 1
-            DataSource("{{page.original_source}}") space:1
-            Aggregator("{{page.secondary_source}}") space:1
-            Product("{{page.id}}")
-            DataSource  --> Aggregator
-            Aggregator  --> Product  
-          
-            style Product stroke:#5588bb,stroke-width:5px;
-                
-          </code></pre>
-        {% endif %}
+        <h4 class="card-title">
+          <i class="bi bi-arrow-down-right-square-fill"></i> Provenance 
+          <span class="provenance-help" title="Click and drag to reposition. Press 'R' to reset position.">
+            <i class="bi bi-question-circle"></i>
+          </span>
+          <button class="btn btn-sm legend-toggle-button" type="button" title="Toggle Legend and Icon Key">
+            <i class="bi bi-list-ul"></i>
+          </button>
+          <div class="dropdown export-dropdown">
+            <button class="btn btn-sm dropdown-toggle export-menu-button" type="button" id="exportDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-download"></i> Export
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="exportDropdown">
+              <li><a class="dropdown-item export-prov-xml" href="#" data-product="{{page.id}}" data-format="xml"><i class="bi bi-filetype-xml"></i> PROV-XML</a></li>
+              <li><a class="dropdown-item export-prov-rdf" href="#" data-product="{{page.id}}" data-format="rdf"><i class="bi bi-filetype-txt"></i> PROV-RDF (Turtle)</a></li>
+              <li><a class="dropdown-item export-prov-json" href="#" data-product="{{page.id}}" data-format="json"><i class="bi bi-filetype-json"></i> PROV-JSON</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item export-prov-svg" href="#" data-product="{{page.id}}" data-format="svg"><i class="bi bi-filetype-svg"></i> SVG Image</a></li>
+            </ul>
+          </div>
+        </h4>
+        {% if page.secondary_source and page.original_source %}
+        <div class="provenance-diagram" style="width: 100%;" 
+          data-provenance='{
+            "product": "{{page.id}}",
+            "originalSources": [{% for source in page.original_source %}"{{source}}"{% unless forloop.last %},{% endunless %}{% endfor %}],
+            "secondarySources": [{% if page.secondary_source.first != nil %}{% for source in page.secondary_source %}"{{source}}"{% unless forloop.last %},{% endunless %}{% endfor %}{% else %}"{{page.secondary_source}}"{% endif %}]
+          }'
+          data-product-category="{{category}}"
+          data-product-icon="{{icon_name}}">
+        </div>
+        {% elsif page.original_source %}
+        <div class="provenance-diagram" style="width: 100%;" 
+          data-provenance='{
+            "product": "{{page.id}}",
+            "originalSources": [{% for source in page.original_source %}"{{source}}"{% unless forloop.last %},{% endunless %}{% endfor %}],
+            "secondarySources": []
+          }'
+          data-product-category="{{category}}"
+          data-product-icon="{{icon_name}}">
+        </div>
+        {% elsif page.secondary_source %}
+        <div class="provenance-diagram" style="width: 100%;" 
+          data-provenance='{
+            "product": "{{page.id}}",
+            "originalSources": [],
+            "secondarySources": [{% if page.secondary_source.first != nil %}{% for source in page.secondary_source %}"{{source}}"{% unless forloop.last %},{% endunless %}{% endfor %}{% else %}"{{page.secondary_source}}"{% endif %}]
+          }'
+          data-product-category="{{category}}"
+          data-product-icon="{{icon_name}}">
+        </div>
         {% endif %}
       </div>
     </div>
