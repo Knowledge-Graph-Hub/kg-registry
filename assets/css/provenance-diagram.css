@@ -1,0 +1,64 @@
+/* Styles for D3.js Provenance Diagram */
+.provenance-diagram {
+  overflow: visible;
+  margin: 0 auto;
+}
+
+.provenance-svg {
+  display: block;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.node rect {
+  transition: all 0.3s ease;
+}
+
+.node:hover rect {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+.node text {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.arrow path {
+  transition: stroke-width 0.2s ease;
+}
+
+.arrow:hover path {
+  stroke-width: 3px;
+  stroke: #666;
+}
+
+/* Node type styles */
+.node.product rect {
+  fill: #5588bb;
+}
+
+.node.secondary rect {
+  fill: #88bb55;
+}
+
+.node.original rect {
+  fill: #ddaa44;
+}
+
+/* Data flow direction indicator - horizontal layout */
+.direction-indicator {
+  font-size: 10px;
+  fill: #666;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .provenance-svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
