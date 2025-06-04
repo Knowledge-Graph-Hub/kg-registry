@@ -24,8 +24,9 @@ original_source:
 - ensembl
 - gtopdb
 - rtx-kg2
+- semmeddb
 product_url: https://arax.ncats.io/
 secondary_source:
-- rtx-kg2.code
+- rtx-kg2
 layout: product_detail
 ---

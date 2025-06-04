@@ -1,5 +1,145 @@
 resources:
 - activity_status: active
+  category: DataSource
+  description: Stub Resource page for 4dn. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - other
+  id: 4dn
+  layout: resource_detail
+  name: 4dn
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: Aggregator
   collection:
   - translator
@@ -163,17 +303,6 @@ resources:
     id: automat.ubergraph
     name: ubergraph_automat
     product_url: https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files
-  - category: GraphProduct
-    description: DrugCentral Automat
-    format: kgx-jsonl
-    id: automat.drugcentral
-    infores_id: automat-drug-central
-    name: drugcentral_automat
-    original_source:
-    - drugcentral
-    product_url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
-    secondary_source:
-    - automat
   repository: https://github.com/RobokopU24/
 - activity_status: active
   category: DataSource
@@ -331,49 +460,6 @@ resources:
     - drugbank
     - sider
     - bgee
-    secondary_source:
-    - spoke
-  - category: GraphProduct
-    description: The SPOKE knowledge graph containing nodes and edges from multiple
-      biomedical data sources.
-    id: spoke.graph
-    name: SPOKE Graph
-    original_source:
-    - ncbigene
-    - medline
-    - mesh
-    - pid
-    - do
-    - diseases
-    - drugcentral
-    - go
-    - gwas-catalog
-    - reactome
-    - lincs-l1000
-    - uberon
-    - wikipathways
-    - bindingdb
-    - drugbank
-    - sider
-    - bgee
-    - uniprot
-    - string
-    - omim
-    - chembl
-    - foodb
-    - civic
-    - gdsc
-    - clinicaltrialsgov
-    - hpa
-    - cl
-    - kegg
-    - metacyc
-    - bv-brc
-    - ncbitaxon
-    - pathophenodb
-    - pfam
-    - interpro
-    - protcid
     secondary_source:
     - spoke
   publications:
@@ -664,6 +750,44 @@ resources:
       models'
     year: '2016'
   repository: https://github.com/SBRG/bigg_models
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for bindingdb. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: bindingdb
+  layout: resource_detail
+  name: Bindingdb
+  products:
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -1787,32 +1911,6 @@ resources:
     secondary_source:
     - drug-approvals-kp
   - category: GraphProduct
-    description: Nodes for the Drug Approvals KP, v0.3.9
-    format: kgx
-    id: drug-approvals-kp.graph.nodes
-    name: Drug Approvals KP Graph Nodes
-    original_source:
-    - chebi
-    - do
-    - hp
-    - mondo
-    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
-    secondary_source:
-    - drug-approvals-kp
-  - category: GraphProduct
-    description: Edges for the Drug Approvals KP, v0.3.9
-    format: kgx
-    id: drug-approvals-kp.graph.edges
-    name: Drug Approvals KP Graph Edges
-    original_source:
-    - chebi
-    - do
-    - hp
-    - mondo
-    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
-    secondary_source:
-    - drug-approvals-kp
-  - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
       UBKG instances as neo4j graph databases, running in a Docker container. Requires
       UMLS API key to access.
@@ -2016,89 +2114,6 @@ resources:
     - ensembl
     - gtopdb
     - rtx-kg2
-    product_url: https://arax.ncats.io/
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.nodes
-    name: RTX-KG2.10.1c KGX JSONL Nodes
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.edges
-    name: RTX-KG2.10.1c KGX JSONL Edges
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: ProgrammingInterface
-    description: Neo4j distribution of the RTX-KG2 as a graph database
-    dump_format: neo4j
-    id: rtx-kg2.neo4j
-    is_neo4j: true
-    is_public: false
-    name: RTX-KG2 Neo4j
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2.code
@@ -2341,89 +2356,6 @@ resources:
     - ensembl
     - gtopdb
     - rtx-kg2
-    product_url: https://arax.ncats.io/
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.nodes
-    name: RTX-KG2.10.1c KGX JSONL Nodes
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.edges
-    name: RTX-KG2.10.1c KGX JSONL Edges
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: ProgrammingInterface
-    description: Neo4j distribution of the RTX-KG2 as a graph database
-    dump_format: neo4j
-    id: rtx-kg2.neo4j
-    is_neo4j: true
-    is_public: false
-    name: RTX-KG2 Neo4j
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2.code
@@ -2710,6 +2642,189 @@ resources:
       variants in cancer
     year: '2019'
 - activity_status: active
+  category: DataSource
+  description: Stub Resource page for cl. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - other
+  id: cl
+  layout: resource_detail
+  name: Cl
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -2744,6 +2859,146 @@ resources:
     secondary_source:
     - cl-kg
   repository: https://github.com/Cellular-Semantics/CL_KG
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for clingen. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: clingen
+  layout: resource_detail
+  name: Clingen
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -2887,6 +3142,286 @@ resources:
     title: The ClinicalTrials.gov results database--update and key issues
     year: '2011'
   repository: https://github.com/ctti-clinicaltrials/aact
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for clinvar. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: clinvar
+  layout: resource_detail
+  name: Clinvar
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for cmap. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: cmap
+  layout: resource_detail
+  name: Cmap
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -3084,6 +3619,146 @@ resources:
   repository: https://github.com/ncbi/dbsnp
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for dct. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - other
+  id: dct
+  layout: resource_detail
+  name: Dct
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   contacts:
   - category: Organization
     contact_details:
@@ -3196,89 +3871,6 @@ resources:
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2.code
-  - category: GraphProduct
-    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.nodes
-    name: RTX-KG2.10.1c KGX JSONL Nodes
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.edges
-    name: RTX-KG2.10.1c KGX JSONL Edges
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: ProgrammingInterface
-    description: Neo4j distribution of the RTX-KG2 as a graph database
-    dump_format: neo4j
-    id: rtx-kg2.neo4j
-    is_neo4j: true
-    is_public: false
-    name: RTX-KG2 Neo4j
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://arax.ncats.io/
-    secondary_source:
-    - rtx-kg2.code
   publications:
   - authors:
     - Cotto KC
@@ -3348,6 +3940,264 @@ resources:
     title: DGIdb - mining the druggable genome
     year: '2013'
   repository: https://github.com/griffithlab/dgi-db
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for diseases. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: diseases
+  layout: resource_detail
+  name: Diseases
+  products:
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for disgenet. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: disgenet
+  layout: resource_detail
+  name: Disgenet
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+    - rtx-kg2.code
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+    - chembl
+    - drugbank
+    - kegg
+    - reactome
+    - go
+    - drugcentral
+    - uniprot
+    - mondo
+    - hp
+    - chebi
+    - uberon
+    - ncbitaxon
+    - dgidb
+    - disgenet
+    - ensembl
+    - gtopdb
+    - rtx-kg2
+    product_url: https://arax.ncats.io/
+    secondary_source:
+    - rtx-kg2.code
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataModel
   contacts:
@@ -3451,32 +4301,6 @@ resources:
     secondary_source:
     - biomarkerkg
   - category: GraphProduct
-    description: Nodes for the Drug Approvals KP, v0.3.9
-    format: kgx
-    id: drug-approvals-kp.graph.nodes
-    name: Drug Approvals KP Graph Nodes
-    original_source:
-    - chebi
-    - do
-    - hp
-    - mondo
-    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
-    secondary_source:
-    - drug-approvals-kp
-  - category: GraphProduct
-    description: Edges for the Drug Approvals KP, v0.3.9
-    format: kgx
-    id: drug-approvals-kp.graph.edges
-    name: Drug Approvals KP Graph Edges
-    original_source:
-    - chebi
-    - do
-    - hp
-    - mondo
-    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
-    secondary_source:
-    - drug-approvals-kp
-  - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.
     id: spoke.graph
@@ -3499,49 +4323,6 @@ resources:
     - drugbank
     - sider
     - bgee
-    secondary_source:
-    - spoke
-  - category: GraphProduct
-    description: The SPOKE knowledge graph containing nodes and edges from multiple
-      biomedical data sources.
-    id: spoke.graph
-    name: SPOKE Graph
-    original_source:
-    - ncbigene
-    - medline
-    - mesh
-    - pid
-    - do
-    - diseases
-    - drugcentral
-    - go
-    - gwas-catalog
-    - reactome
-    - lincs-l1000
-    - uberon
-    - wikipathways
-    - bindingdb
-    - drugbank
-    - sider
-    - bgee
-    - uniprot
-    - string
-    - omim
-    - chembl
-    - foodb
-    - civic
-    - gdsc
-    - clinicaltrialsgov
-    - hpa
-    - cl
-    - kegg
-    - metacyc
-    - bv-brc
-    - ncbitaxon
-    - pathophenodb
-    - pfam
-    - interpro
-    - protcid
     secondary_source:
     - spoke
   - category: GraphProduct
@@ -3761,32 +4542,6 @@ resources:
     product_url: https://github.com/multiomicsKP/drug_approvals_kp
     secondary_source:
     - drug-approvals-kp
-  - category: GraphProduct
-    description: Nodes for the Drug Approvals KP, v0.3.7
-    format: kgx
-    id: drug-approvals-kp.graph.nodes
-    name: Drug Approvals KP Graph Nodes
-    original_source:
-    - chebi
-    - do
-    - hp
-    - mondo
-    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
-    secondary_source:
-    - drug-approvals-kp
-  - category: GraphProduct
-    description: Nodes for the Drug Approvals KP, v0.3.7
-    format: kgx
-    id: drug-approvals-kp.graph.edges
-    name: Drug Approvals KP Graph Nodes
-    original_source:
-    - chebi
-    - do
-    - hp
-    - mondo
-    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
-    secondary_source:
-    - drug-approvals-kp
   repository: https://github.com/multiomicsKP/drug_approvals_kp
 - activity_status: active
   category: DataSource
@@ -3870,49 +4625,6 @@ resources:
     secondary_source:
     - spoke
   - category: GraphProduct
-    description: The SPOKE knowledge graph containing nodes and edges from multiple
-      biomedical data sources.
-    id: spoke.graph
-    name: SPOKE Graph
-    original_source:
-    - ncbigene
-    - medline
-    - mesh
-    - pid
-    - do
-    - diseases
-    - drugcentral
-    - go
-    - gwas-catalog
-    - reactome
-    - lincs-l1000
-    - uberon
-    - wikipathways
-    - bindingdb
-    - drugbank
-    - sider
-    - bgee
-    - uniprot
-    - string
-    - omim
-    - chembl
-    - foodb
-    - civic
-    - gdsc
-    - clinicaltrialsgov
-    - hpa
-    - cl
-    - kegg
-    - metacyc
-    - bv-brc
-    - ncbitaxon
-    - pathophenodb
-    - pfam
-    - interpro
-    - protcid
-    secondary_source:
-    - spoke
-  - category: GraphProduct
     description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
     format: kgx-jsonl
     id: rtx-kg2.graph.nodes
@@ -3989,89 +4701,6 @@ resources:
     - ensembl
     - gtopdb
     - rtx-kg2
-    product_url: https://arax.ncats.io/
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.nodes
-    name: RTX-KG2.10.1c KGX JSONL Nodes
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.edges
-    name: RTX-KG2.10.1c KGX JSONL Edges
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: ProgrammingInterface
-    description: Neo4j distribution of the RTX-KG2 as a graph database
-    dump_format: neo4j
-    id: rtx-kg2.neo4j
-    is_neo4j: true
-    is_public: false
-    name: RTX-KG2 Neo4j
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2.code
@@ -4155,49 +4784,6 @@ resources:
     secondary_source:
     - spoke
   - category: GraphProduct
-    description: The SPOKE knowledge graph containing nodes and edges from multiple
-      biomedical data sources.
-    id: spoke.graph
-    name: SPOKE Graph
-    original_source:
-    - ncbigene
-    - medline
-    - mesh
-    - pid
-    - do
-    - diseases
-    - drugcentral
-    - go
-    - gwas-catalog
-    - reactome
-    - lincs-l1000
-    - uberon
-    - wikipathways
-    - bindingdb
-    - drugbank
-    - sider
-    - bgee
-    - uniprot
-    - string
-    - omim
-    - chembl
-    - foodb
-    - civic
-    - gdsc
-    - clinicaltrialsgov
-    - hpa
-    - cl
-    - kegg
-    - metacyc
-    - bv-brc
-    - ncbitaxon
-    - pathophenodb
-    - pfam
-    - interpro
-    - protcid
-    secondary_source:
-    - spoke
-  - category: GraphProduct
     description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
     format: kgx-jsonl
     id: rtx-kg2.graph.nodes
@@ -4274,89 +4860,6 @@ resources:
     - ensembl
     - gtopdb
     - rtx-kg2
-    product_url: https://arax.ncats.io/
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.nodes
-    name: RTX-KG2.10.1c KGX JSONL Nodes
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.edges
-    name: RTX-KG2.10.1c KGX JSONL Edges
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: ProgrammingInterface
-    description: Neo4j distribution of the RTX-KG2 as a graph database
-    dump_format: neo4j
-    id: rtx-kg2.neo4j
-    is_neo4j: true
-    is_public: false
-    name: RTX-KG2 Neo4j
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2.code
@@ -4720,6 +5223,286 @@ resources:
     - ecosim
   repository: http://purl.obolibrary.org/obo/ecosim.owl
 - activity_status: active
+  category: DataSource
+  description: Stub Resource page for edam. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: edam
+  layout: resource_detail
+  name: Edam
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for efo. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - other
+  id: efo
+  layout: resource_detail
+  name: Efo
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -4905,89 +5688,6 @@ resources:
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2.code
-  - category: GraphProduct
-    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.nodes
-    name: RTX-KG2.10.1c KGX JSONL Nodes
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.edges
-    name: RTX-KG2.10.1c KGX JSONL Edges
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: ProgrammingInterface
-    description: Neo4j distribution of the RTX-KG2 as a graph database
-    dump_format: neo4j
-    id: rtx-kg2.neo4j
-    is_neo4j: true
-    is_public: false
-    name: RTX-KG2 Neo4j
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://arax.ncats.io/
-    secondary_source:
-    - rtx-kg2.code
   publications:
   - authors:
     - Dyer SC
@@ -5008,6 +5708,426 @@ resources:
     title: Ensembl 2025
     year: '2025'
   repository: https://github.com/Ensembl/
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for erccrbp. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: erccrbp
+  layout: resource_detail
+  name: Erccrbp
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for erccreg. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: erccreg
+  layout: resource_detail
+  name: Erccreg
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for faldo. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: faldo
+  layout: resource_detail
+  name: Faldo
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -5488,6 +6608,146 @@ resources:
     year: '2012'
   repository: https://github.com/CancerRxGene
 - activity_status: active
+  category: DataSource
+  description: Stub Resource page for gencode. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: gencode
+  layout: resource_detail
+  name: Gencode
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: KnowledgeGraph
   collection:
   - translator
@@ -5612,6 +6872,146 @@ resources:
     year: '2025'
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for glycocoo. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: glycocoo
+  layout: resource_detail
+  name: Glycocoo
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   contacts:
   - category: Organization
     contact_details:
@@ -5708,6 +7108,146 @@ resources:
     id: doi:10.1021/acs.jproteome.8b00766
     title: 'GlyConnect: Glycoproteomics Goes Visual, Interactive, and Analytical'
     year: '2019'
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for glycordf. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: glycordf
+  layout: resource_detail
+  name: Glycordf
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -5876,49 +7416,6 @@ resources:
     secondary_source:
     - spoke
   - category: GraphProduct
-    description: The SPOKE knowledge graph containing nodes and edges from multiple
-      biomedical data sources.
-    id: spoke.graph
-    name: SPOKE Graph
-    original_source:
-    - ncbigene
-    - medline
-    - mesh
-    - pid
-    - do
-    - diseases
-    - drugcentral
-    - go
-    - gwas-catalog
-    - reactome
-    - lincs-l1000
-    - uberon
-    - wikipathways
-    - bindingdb
-    - drugbank
-    - sider
-    - bgee
-    - uniprot
-    - string
-    - omim
-    - chembl
-    - foodb
-    - civic
-    - gdsc
-    - clinicaltrialsgov
-    - hpa
-    - cl
-    - kegg
-    - metacyc
-    - bv-brc
-    - ncbitaxon
-    - pathophenodb
-    - pfam
-    - interpro
-    - protcid
-    secondary_source:
-    - spoke
-  - category: GraphProduct
     description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
     format: kgx-jsonl
     id: rtx-kg2.graph.nodes
@@ -5995,89 +7492,6 @@ resources:
     - ensembl
     - gtopdb
     - rtx-kg2
-    product_url: https://arax.ncats.io/
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.nodes
-    name: RTX-KG2.10.1c KGX JSONL Nodes
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.edges
-    name: RTX-KG2.10.1c KGX JSONL Edges
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: ProgrammingInterface
-    description: Neo4j distribution of the RTX-KG2 as a graph database
-    dump_format: neo4j
-    id: rtx-kg2.neo4j
-    is_neo4j: true
-    is_public: false
-    name: RTX-KG2 Neo4j
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2.code
@@ -6475,6 +7889,146 @@ resources:
   repository: http://nlp.case.edu/public/data/GPKG-Predict/
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for gtex. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: gtex
+  layout: resource_detail
+  name: Gtex
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   contacts:
   - category: Organization
     contact_details:
@@ -6654,89 +8208,6 @@ resources:
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2.code
-  - category: GraphProduct
-    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.nodes
-    name: RTX-KG2.10.1c KGX JSONL Nodes
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.edges
-    name: RTX-KG2.10.1c KGX JSONL Edges
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: ProgrammingInterface
-    description: Neo4j distribution of the RTX-KG2 as a graph database
-    dump_format: neo4j
-    id: rtx-kg2.neo4j
-    is_neo4j: true
-    is_public: false
-    name: RTX-KG2 Neo4j
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://arax.ncats.io/
-    secondary_source:
-    - rtx-kg2.code
   publications:
   - authors:
     - Harding SD
@@ -6830,6 +8301,44 @@ resources:
     title: '''gutMGene v2.0: an updated comprehensive database fortarget genes of
       gut microbes and microbial metabolites'''
     year: '2025'
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for gwas-catalog. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: gwas-catalog
+  layout: resource_detail
+  name: Gwas-catalog
+  products:
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -6974,18 +8483,6 @@ resources:
     product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
     secondary_source:
     - mondo
-  - category: MappingProduct
-    description: hgnc SSSOM
-    id: obo-db-ingest.hgnc.sssom.tsv
-    license:
-      id: https://creativecommons.org.publicdomain/zero/1.0/
-      label: CC0-1.0
-    name: hgnc SSSOM
-    original_source:
-    - hgnc
-    product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
-    secondary_source:
-    - obo-db-ingest
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
       UBKG instances as neo4j graph databases, running in a Docker container. Requires
@@ -7209,32 +8706,6 @@ resources:
     secondary_source:
     - mondo
   - category: GraphProduct
-    description: Nodes for the Drug Approvals KP, v0.3.9
-    format: kgx
-    id: drug-approvals-kp.graph.nodes
-    name: Drug Approvals KP Graph Nodes
-    original_source:
-    - chebi
-    - do
-    - hp
-    - mondo
-    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
-    secondary_source:
-    - drug-approvals-kp
-  - category: GraphProduct
-    description: Edges for the Drug Approvals KP, v0.3.9
-    format: kgx
-    id: drug-approvals-kp.graph.edges
-    name: Drug Approvals KP Graph Edges
-    original_source:
-    - chebi
-    - do
-    - hp
-    - mondo
-    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
-    secondary_source:
-    - drug-approvals-kp
-  - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
       UBKG instances as neo4j graph databases, running in a Docker container. Requires
       UMLS API key to access.
@@ -7441,90 +8912,203 @@ resources:
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2.code
-  - category: GraphProduct
-    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.nodes
-    name: RTX-KG2.10.1c KGX JSONL Nodes
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.edges
-    name: RTX-KG2.10.1c KGX JSONL Edges
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: ProgrammingInterface
-    description: Neo4j distribution of the RTX-KG2 as a graph database
-    dump_format: neo4j
-    id: rtx-kg2.neo4j
-    is_neo4j: true
-    is_public: false
-    name: RTX-KG2 Neo4j
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://arax.ncats.io/
-    secondary_source:
-    - rtx-kg2.code
   repository: https://github.com/obophenotype/human-phenotype-ontology
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for hpa. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - other
+  id: hpa
+  layout: resource_detail
+  name: Hpa
+  products:
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for hra. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - other
+  id: hra
+  layout: resource_detail
+  name: Hra
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -7604,6 +9188,426 @@ resources:
     secondary_source:
     - hra-kg
   repository: https://github.com/hubmapconsortium/hra-kg
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for hsapdv. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: hsapdv
+  layout: resource_detail
+  name: Hsapdv
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for hubmap. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: hubmap
+  layout: resource_detail
+  name: Hubmap
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for icd10. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: icd10
+  layout: resource_detail
+  name: Icd10
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -8305,89 +10309,6 @@ resources:
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2.code
-  - category: GraphProduct
-    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.nodes
-    name: RTX-KG2.10.1c KGX JSONL Nodes
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.edges
-    name: RTX-KG2.10.1c KGX JSONL Edges
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: ProgrammingInterface
-    description: Neo4j distribution of the RTX-KG2 as a graph database
-    dump_format: neo4j
-    id: rtx-kg2.neo4j
-    is_neo4j: true
-    is_public: false
-    name: RTX-KG2 Neo4j
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://arax.ncats.io/
-    secondary_source:
-    - rtx-kg2.code
   publications:
   - id: doi:10.1093/nar/gkae909
     preferred: true
@@ -8839,6 +10760,146 @@ resources:
   version: 0.7.0
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for kidsfirst. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: kidsfirst
+  layout: resource_detail
+  name: Kidsfirst
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   contacts:
   - category: Organization
     contact_details:
@@ -9174,6 +11235,184 @@ resources:
     year: '2022'
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for lincs-l1000. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: lincs-l1000
+  layout: resource_detail
+  name: Lincs-l1000
+  products:
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for loinc. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: loinc
+  layout: resource_detail
+  name: Loinc
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   contacts:
   - category: Individual
     contact_details:
@@ -9257,6 +11496,82 @@ resources:
     title: '''MedKG: enabling drug discovery through a unified biomedical knowledge
       graph'''
     year: '2025'
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for medline. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: medline
+  layout: resource_detail
+  name: Medline
+  products:
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for mesh. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: mesh
+  layout: resource_detail
+  name: Mesh
+  products:
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -9503,6 +11818,146 @@ resources:
       graphs'''
     year: '2025'
 - activity_status: active
+  category: DataSource
+  description: Stub Resource page for mi. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - other
+  id: mi
+  layout: resource_detail
+  name: Mi
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: DataModel
   contacts:
   - category: Individual
@@ -9695,32 +12150,6 @@ resources:
     - hp
     - mondo
     product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
-    secondary_source:
-    - drug-approvals-kp
-  - category: GraphProduct
-    description: Nodes for the Drug Approvals KP, v0.3.9
-    format: kgx
-    id: drug-approvals-kp.graph.nodes
-    name: Drug Approvals KP Graph Nodes
-    original_source:
-    - chebi
-    - do
-    - hp
-    - mondo
-    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
-    secondary_source:
-    - drug-approvals-kp
-  - category: GraphProduct
-    description: Edges for the Drug Approvals KP, v0.3.9
-    format: kgx
-    id: drug-approvals-kp.graph.edges
-    name: Drug Approvals KP Graph Edges
-    original_source:
-    - chebi
-    - do
-    - hp
-    - mondo
-    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
     secondary_source:
     - drug-approvals-kp
   - category: GraphProduct
@@ -9930,90 +12359,427 @@ resources:
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2.code
-  - category: GraphProduct
-    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.nodes
-    name: RTX-KG2.10.1c KGX JSONL Nodes
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.edges
-    name: RTX-KG2.10.1c KGX JSONL Edges
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: ProgrammingInterface
-    description: Neo4j distribution of the RTX-KG2 as a graph database
-    dump_format: neo4j
-    id: rtx-kg2.neo4j
-    is_neo4j: true
-    is_public: false
-    name: RTX-KG2 Neo4j
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://arax.ncats.io/
-    secondary_source:
-    - rtx-kg2.code
   repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for motrpac. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: motrpac
+  layout: resource_detail
+  name: Motrpac
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for mp. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - other
+  id: mp
+  layout: resource_detail
+  name: Mp
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for msigdb. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: msigdb
+  layout: resource_detail
+  name: Msigdb
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -10029,6 +12795,184 @@ resources:
   id: multiomics-kp
   layout: resource_detail
   name: Multiomics KP
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for mw. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - other
+  id: mw
+  layout: resource_detail
+  name: Mw
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for ncbigene. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: ncbigene
+  layout: resource_detail
+  name: Ncbigene
+  products:
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -10248,89 +13192,6 @@ resources:
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2.code
-  - category: GraphProduct
-    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.nodes
-    name: RTX-KG2.10.1c KGX JSONL Nodes
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.edges
-    name: RTX-KG2.10.1c KGX JSONL Edges
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: ProgrammingInterface
-    description: Neo4j distribution of the RTX-KG2 as a graph database
-    dump_format: neo4j
-    id: rtx-kg2.neo4j
-    is_neo4j: true
-    is_public: false
-    name: RTX-KG2 Neo4j
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://arax.ncats.io/
-    secondary_source:
-    - rtx-kg2.code
   publications:
   - authors:
     - Scott Federhen
@@ -10471,6 +13332,566 @@ resources:
       Interactions'''
     year: '2023'
   repository: https://github.com/sanyabt/np-kg
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for npo. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - other
+  id: npo
+  layout: resource_detail
+  name: Npo
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for nposckan. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: nposckan
+  layout: resource_detail
+  name: Nposckan
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for obi. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - other
+  id: obi
+  layout: resource_detail
+  name: Obi
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for obib. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: obib
+  layout: resource_detail
+  name: Obib
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: Aggregator
   contacts:
@@ -12731,93 +16152,6 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
     secondary_source:
     - obo-db-ingest
-  - category: MappingProduct
-    description: hgnc SSSOM
-    id: obo-db-ingest.hgnc.sssom.tsv
-    license:
-      id: https://creativecommons.org/publicdomain/zero/1.0/
-      label: CC0-1.0
-    name: hgnc SSSOM
-    original_source:
-    - hgnc
-    product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
-    secondary_source:
-    - obo-db-ingest
-  - category: Product
-    description: zfin OBO
-    id: obo-db-ingest.zfin.obo
-    license:
-      id: https://creativecommons.org/licenses/by/4.0/
-      label: CC-BY-4.0
-    name: zfin OBO
-    original_source:
-    - zfin
-    product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
-    secondary_source:
-    - obo-db-ingest
-  - category: Product
-    description: zfin OWL
-    id: obo-db-ingest.zfin.owl
-    license:
-      id: https://creativecommons.org/licenses/by/4.0/
-      label: CC-BY-4.0
-    name: zfin OWL
-    original_source:
-    - zfin
-    product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
-    secondary_source:
-    - obo-db-ingest
-  - category: Product
-    description: zfin OBO Graph JSON
-    id: obo-db-ingest.zfin.json
-    license:
-      id: https://creativecommons.org/licenses/by/4.0/
-      label: CC-BY-4.0
-    name: zfin OBO Graph JSON
-    original_source:
-    - zfin
-    product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
-    secondary_source:
-    - obo-db-ingest
-  - category: DataModelProduct
-    description: kegg.genome OBO
-    format: obo
-    id: obo-db-ingest.kegg.genome.obo
-    license:
-      id: https://www.kegg.jp/kegg/legal.html
-      label: Custom
-    name: kegg.genome OBO
-    original_source:
-    - kegg
-    product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.obo
-    secondary_source:
-    - obo-db-ingest
-  - category: DataModelProduct
-    description: kegg.genome OWL
-    format: owl
-    id: obo-db-ingest.kegg.genome.owl
-    license:
-      id: https://www.kegg.jp/kegg/legal.html
-      label: Custom
-    name: kegg.genome OWL
-    original_source:
-    - kegg
-    product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.owl
-    secondary_source:
-    - obo-db-ingest
-  - category: DataModelProduct
-    description: kegg.genome OBO Graph JSON
-    format: json
-    id: obo-db-ingest.kegg.genome.json
-    license:
-      id: https://www.kegg.jp/kegg/legal.html
-      label: Custom
-    name: kegg.genome OBO Graph JSON
-    original_source:
-    - kegg
-    product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.json
-    secondary_source:
-    - obo-db-ingest
   repository: https://github.com/biopragmatics/obo-db-ingest
 - activity_status: active
   category: DataSource
@@ -12986,6 +16320,62 @@ resources:
     product_url: https://omabrowser.org/oma/current/oma-uniprot.txt.gz
     secondary_source:
     - oma
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for omim. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: omim
+  layout: resource_detail
+  name: Omim
+  products:
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -13233,6 +16623,146 @@ resources:
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
   name: ORCID
   repository: https://github.com/ORCID
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for ordo. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: ordo
+  layout: resource_detail
+  name: Ordo
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -13610,6 +17140,146 @@ resources:
     year: '2019'
   repository: https://github.com/bio-ontology-research-group/pathophenodb
 - activity_status: active
+  category: DataSource
+  description: Stub Resource page for pato. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: pato
+  layout: resource_detail
+  name: Pato
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -13845,6 +17515,146 @@ resources:
     year: '2019'
   repository: ''
   version: '37.0'
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for pgo. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - other
+  id: pgo
+  layout: resource_detail
+  name: Pgo
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: Resource
   contacts:
@@ -14234,6 +18044,44 @@ resources:
       - contact_type: url
         value: https://monarchinitiative.org/
       label: The Monarch Initiative
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for pid. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - other
+  id: pid
+  layout: resource_detail
+  name: Pid
+  products:
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: Resource
   contacts:
@@ -14779,49 +18627,6 @@ resources:
     secondary_source:
     - spoke
   - category: GraphProduct
-    description: The SPOKE knowledge graph containing nodes and edges from multiple
-      biomedical data sources.
-    id: spoke.graph
-    name: SPOKE Graph
-    original_source:
-    - ncbigene
-    - medline
-    - mesh
-    - pid
-    - do
-    - diseases
-    - drugcentral
-    - go
-    - gwas-catalog
-    - reactome
-    - lincs-l1000
-    - uberon
-    - wikipathways
-    - bindingdb
-    - drugbank
-    - sider
-    - bgee
-    - uniprot
-    - string
-    - omim
-    - chembl
-    - foodb
-    - civic
-    - gdsc
-    - clinicaltrialsgov
-    - hpa
-    - cl
-    - kegg
-    - metacyc
-    - bv-brc
-    - ncbitaxon
-    - pathophenodb
-    - pfam
-    - interpro
-    - protcid
-    secondary_source:
-    - spoke
-  - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
       UBKG instances as neo4j graph databases, running in a Docker container. Requires
       UMLS API key to access.
@@ -15025,89 +18830,6 @@ resources:
     - ensembl
     - gtopdb
     - rtx-kg2
-    product_url: https://arax.ncats.io/
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.nodes
-    name: RTX-KG2.10.1c KGX JSONL Nodes
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.edges
-    name: RTX-KG2.10.1c KGX JSONL Edges
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: ProgrammingInterface
-    description: Neo4j distribution of the RTX-KG2 as a graph database
-    dump_format: neo4j
-    id: rtx-kg2.neo4j
-    is_neo4j: true
-    is_public: false
-    name: RTX-KG2 Neo4j
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2.code
@@ -15335,7 +19057,7 @@ resources:
     - semmeddb
     product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
     secondary_source:
-    - rtx-kg2.code
+    - rtx-kg2
   - category: GraphProduct
     description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
     format: kgx-jsonl
@@ -15362,7 +19084,7 @@ resources:
     - semmeddb
     product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
     secondary_source:
-    - rtx-kg2.code
+    - rtx-kg2
   - category: ProcessProduct
     description: Code for building RTX-KG2, in Python
     id: rtx-kg2.code
@@ -15398,87 +19120,7 @@ resources:
     - semmeddb
     product_url: https://arax.ncats.io/
     secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.nodes
-    name: RTX-KG2.10.1c KGX JSONL Nodes
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
     - rtx-kg2
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.edges
-    name: RTX-KG2.10.1c KGX JSONL Edges
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: ProgrammingInterface
-    description: Neo4j distribution of the RTX-KG2 as a graph database
-    dump_format: neo4j
-    id: rtx-kg2.neo4j
-    is_neo4j: true
-    is_public: false
-    name: RTX-KG2 Neo4j
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    product_url: https://arax.ncats.io/
-    secondary_source:
-    - rtx-kg2.code
   publications:
   - authors:
     - Wood EC
@@ -15497,6 +19139,146 @@ resources:
       for translational biomedicine'
     year: '2022'
   repository: https://github.com/RTXteam/RTX-KG2
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for sbo. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - other
+  id: sbo
+  layout: resource_detail
+  name: Sbo
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: Resource
   contacts:
@@ -15532,6 +19314,146 @@ resources:
     repository: https://github.com/elsevier-health/scibite-ontology
     secondary_source:
     - scibite
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for sennet. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: sennet
+  layout: resource_detail
+  name: Sennet
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -15672,6 +19594,146 @@ resources:
   name: sldb
   repository: https://github.com/monarch-initiative/SLDBGen
 - activity_status: active
+  category: DataSource
+  description: Stub Resource page for snomedct. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: snomedct
+  layout: resource_detail
+  name: Snomedct
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -15754,40 +19816,6 @@ resources:
     id: spoke.neighborhood_explorer
     name: SPOKE Neighborhood Explorer
     product_url: https://spoke.rbvi.ucsf.edu/neighborhood.html
-  - category: GraphProduct
-    description: The SPOKE knowledge graph containing nodes and edges from multiple
-      biomedical data sources.
-    id: spoke.graph
-    name: SPOKE Graph
-    original_source:
-    - spoke
-    secondary_source:
-    - spoke
-  - category: GraphProduct
-    description: The SPOKE knowledge graph containing nodes and edges from multiple
-      biomedical data sources.
-    id: spoke.graph
-    name: SPOKE Graph
-    original_source:
-    - ncbigene
-    - medline
-    - mesh
-    - pid
-    - do
-    - diseases
-    - drugcentral
-    - go
-    - gwas-catalog
-    - reactome
-    - lincs-l1000
-    - uberon
-    - wikipathways
-    - bindingdb
-    - drugbank
-    - sider
-    - bgee
-    secondary_source:
-    - spoke
   publications:
   - authors:
     - John H Morris
@@ -15858,6 +19886,329 @@ resources:
     name: SRI-Reference KG (KGX distribution)
     product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
   repository: ''
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for stellar. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: stellar
+  layout: resource_detail
+  name: Stellar
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for string. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: string
+  layout: resource_detail
+  name: String
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -16059,49 +20410,6 @@ resources:
     - drugbank
     - sider
     - bgee
-    secondary_source:
-    - spoke
-  - category: GraphProduct
-    description: The SPOKE knowledge graph containing nodes and edges from multiple
-      biomedical data sources.
-    id: spoke.graph
-    name: SPOKE Graph
-    original_source:
-    - ncbigene
-    - medline
-    - mesh
-    - pid
-    - do
-    - diseases
-    - drugcentral
-    - go
-    - gwas-catalog
-    - reactome
-    - lincs-l1000
-    - uberon
-    - wikipathways
-    - bindingdb
-    - drugbank
-    - sider
-    - bgee
-    - uniprot
-    - string
-    - omim
-    - chembl
-    - foodb
-    - civic
-    - gdsc
-    - clinicaltrialsgov
-    - hpa
-    - cl
-    - kegg
-    - metacyc
-    - bv-brc
-    - ncbitaxon
-    - pathophenodb
-    - pfam
-    - interpro
-    - protcid
     secondary_source:
     - spoke
   - category: GraphProduct
@@ -16308,89 +20616,6 @@ resources:
     - ensembl
     - gtopdb
     - rtx-kg2
-    product_url: https://arax.ncats.io/
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.nodes
-    name: RTX-KG2.10.1c KGX JSONL Nodes
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.edges
-    name: RTX-KG2.10.1c KGX JSONL Edges
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: ProgrammingInterface
-    description: Neo4j distribution of the RTX-KG2 as a graph database
-    dump_format: neo4j
-    id: rtx-kg2.neo4j
-    is_neo4j: true
-    is_public: false
-    name: RTX-KG2 Neo4j
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2.code
@@ -16968,90 +21193,312 @@ resources:
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2.code
-  - category: GraphProduct
-    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.nodes
-    name: RTX-KG2.10.1c KGX JSONL Nodes
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: GraphProduct
-    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-    format: kgx-jsonl
-    id: rtx-kg2.graph.edges
-    name: RTX-KG2.10.1c KGX JSONL Edges
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-    secondary_source:
-    - rtx-kg2.code
-  - category: ProgrammingInterface
-    description: Neo4j distribution of the RTX-KG2 as a graph database
-    dump_format: neo4j
-    id: rtx-kg2.neo4j
-    is_neo4j: true
-    is_public: false
-    name: RTX-KG2 Neo4j
-    original_source:
-    - chembl
-    - drugbank
-    - kegg
-    - reactome
-    - go
-    - drugcentral
-    - uniprot
-    - mondo
-    - hp
-    - chebi
-    - uberon
-    - ncbitaxon
-    - dgidb
-    - disgenet
-    - ensembl
-    - gtopdb
-    - rtx-kg2
-    - semmeddb
-    product_url: https://arax.ncats.io/
-    secondary_source:
-    - rtx-kg2.code
   repository: https://www.uniprot.org/help/downloads
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for uo. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - other
+  id: uo
+  layout: resource_detail
+  name: Uo
+  products:
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for wikipathways. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - other
+  id: wikipathways
+  layout: resource_detail
+  name: Wikipathways
+  products:
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwas-catalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    secondary_source:
+    - spoke
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone
+      UBKG instances as neo4j graph databases, running in a Docker container. Requires
+      UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to
+      create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+    - hgnc
+    - loinc
+    - icd10
+    - snomedct
+    - uberon
+    - pato
+    - cl
+    - do
+    - obi
+    - obib
+    - edam
+    - hsapdv
+    - sbo
+    - mi
+    - chebi
+    - mp
+    - ordo
+    - uniprot
+    - uo
+    - mondo
+    - efo
+    - pgo
+    - gencode
+    - reactome
+    - hra
+    - hubmap
+    - sennet
+    - stellar
+    - dct
+    - clinvar
+    - cmap
+    - hp
+    - mp
+    - msigdb
+    - wikipathways
+    - clingen
+    - string
+    - 4dn
+    - erccrbp
+    - erccreg
+    - faldo
+    - glycordf
+    - glycocoo
+    - gtex
+    - kidsfirst
+    - lincs
+    - motrpac
+    - mw
+    - npo
+    - nposckan
+    - disgenet
+    - biomarker
+    - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+    - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -17158,45 +21605,6 @@ resources:
     product_url: https://zfin.org/downloads/gene_publication.txt
     secondary_source:
     - zfin
-  - category: Product
-    description: zfin OBO
-    format: obo
-    id: obo-db-ingest.zfin.obo
-    license:
-      id: https://creativecommons.org/licenses/by/4.0/
-      label: CC-BY-4.0
-    name: zfin OBO
-    original_source:
-    - zfin
-    product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
-    secondary_source:
-    - obo-db-ingest
-  - category: Product
-    description: zfin OWL
-    format: owl
-    id: obo-db-ingest.zfin.owl
-    license:
-      id: https://creativecommons.org/licenses/by/4.0/
-      label: CC-BY-4.0
-    name: zfin OWL
-    original_source:
-    - zfin
-    product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
-    secondary_source:
-    - obo-db-ingest
-  - category: Product
-    description: zfin OBO Graph JSON
-    format: json
-    id: obo-db-ingest.zfin.json
-    license:
-      id: https://creativecommons.org/licenses/by/4.0/
-      label: CC-BY-4.0
-    name: zfin OBO Graph JSON
-    original_source:
-    - zfin
-    product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
-    secondary_source:
-    - obo-db-ingest
   repository: https://github.com/ZFIN/
 - activity_status: unresponsive
   category: KnowledgeGraph
@@ -17595,31 +22003,6 @@ resources:
     - pfam
     - interpro
     - protcid
-    secondary_source:
-    - spoke
-  - category: GraphProduct
-    description: The SPOKE knowledge graph containing nodes and edges from multiple
-      biomedical data sources.
-    id: spoke.graph
-    name: SPOKE Graph
-    original_source:
-    - ncbigene
-    - medline
-    - mesh
-    - pid
-    - do
-    - diseases
-    - drugcentral
-    - go
-    - gwas-catalog
-    - reactome
-    - lincs-l1000
-    - uberon
-    - wikipathways
-    - bindingdb
-    - drugbank
-    - sider
-    - bgee
     secondary_source:
     - spoke
   publications:

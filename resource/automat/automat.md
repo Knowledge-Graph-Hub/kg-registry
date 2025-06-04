@@ -162,17 +162,6 @@ products:
   id: automat.ubergraph
   name: ubergraph_automat
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files
-- category: GraphProduct
-  description: DrugCentral Automat
-  format: kgx-jsonl
-  id: automat.drugcentral
-  infores_id: automat-drug-central
-  name: drugcentral_automat
-  original_source:
-  - drugcentral
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
-  secondary_source:
-  - automat
 repository: https://github.com/RobokopU24/
 ---
 A Translator Knowledge Provider offering multiple sub-graphs in KGX format.
