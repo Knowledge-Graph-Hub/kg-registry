@@ -243,6 +243,7 @@ def concat_resource_yaml(args):
         Propagates derived products to their source Resource pages.
         For example, if the page for Aggregator A lists a product from Source S,
         then the page for Source S should list Aggregator A's version of it as a derived product.
+        Also removes duplicate products (with the same ID) from Resource pages.
         """
 
         to_be_propagated = {}
@@ -260,6 +261,54 @@ def concat_resource_yaml(args):
                                     to_be_propagated[resource_id].append(deepcopy(product))
         print(
             f"Found {len(to_be_propagated)} resources with products to propagate: {', '.join(to_be_propagated.keys())}")
+
+        # Remove duplicate products from all resources first
+        for obj in objs:
+            if "products" in obj and len(obj["products"]) > 0:
+                # Deduplicate products based on ID
+                unique_products = []
+                product_ids = set()
+                
+                for product in obj["products"]:
+                    if "id" in product:
+                        product_id = product["id"]
+                        if product_id not in product_ids:
+                            product_ids.add(product_id)
+                            unique_products.append(product)
+                    else:
+                        # For products without ID, keep them all
+                        unique_products.append(product)
+                
+                # If we removed any duplicates, update the products list
+                if len(unique_products) < len(obj["products"]):
+                    print(f"Removed {len(obj['products']) - len(unique_products)} duplicate products from {obj['id']}")
+                    obj["products"] = unique_products
+                    
+                    # Also update the resource page file
+                    fn = f"resource/{obj['id']}/{obj['id']}.md"
+                    try:
+                        (metadata, md) = load_md(fn)
+                        if "products" in metadata:
+                            # Deduplicate the products in the metadata
+                            unique_metadata_products = []
+                            metadata_product_ids = set()
+                            
+                            for product in metadata["products"]:
+                                if "id" in product:
+                                    product_id = product["id"]
+                                    if product_id not in metadata_product_ids:
+                                        metadata_product_ids.add(product_id)
+                                        unique_metadata_products.append(product)
+                                else:
+                                    # For products without ID, keep them all
+                                    unique_metadata_products.append(product)
+                            
+                            if len(unique_metadata_products) < len(metadata["products"]):
+                                metadata["products"] = unique_metadata_products
+                                with open(fn, "w") as f:
+                                    f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
+                    except Exception as e:
+                        print(f"Error updating resource file {fn}: {str(e)}")
 
         # Now update the concatenated list of resources
         # And write newly added products to their respective Resource pages
