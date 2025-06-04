@@ -1,6 +1,7 @@
 ---
 category: Product
 description: zfin OBO
+format: obo
 id: obo-db-ingest.zfin.obo
 license:
   id: https://creativecommons.org/licenses/by/4.0/

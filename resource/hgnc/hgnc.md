@@ -142,18 +142,6 @@ products:
   product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
   secondary_source:
   - mondo
-- category: MappingProduct
-  description: hgnc SSSOM
-  id: obo-db-ingest.hgnc.sssom.tsv
-  license:
-    id: https://creativecommons.org.publicdomain/zero/1.0/
-    label: CC0-1.0
-  name: hgnc SSSOM
-  original_source:
-  - hgnc
-  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
-  secondary_source:
-  - obo-db-ingest
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
