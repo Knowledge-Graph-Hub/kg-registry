@@ -151,6 +151,7 @@ def concat_resource_yaml(args):
     * Creates sub-pages for products as needed
     * Propagates derived products to the source Resource pages
     * Adds a logo to the license metadata if it exists
+    * Creates stub Resource pages for sources mentioned in products but don't have a page yet
     """
 
     def decorate_metadata(objs):
@@ -237,6 +238,88 @@ def concat_resource_yaml(args):
                         # Write the product to its own page
                         with open(fn, "w") as f:
                             f.write("---\n" + yaml.dump(product) + layout_string + "\n---\n")
+                            
+    def create_stub_resource_pages(objs):
+        """
+        Create stub Resource pages for sources mentioned in products but don't have a page yet.
+        For example, if a product references 'disgenet' as an original_source but there's no
+        resource/disgenet/disgenet.md file, create one with minimal information.
+        """
+        # First collect all resource IDs mentioned in products
+        referenced_resources = set()
+        for obj in objs:
+            if "products" in obj:
+                for product in obj["products"]:
+                    # Check original_source and secondary_source fields
+                    for field_name in ["original_source", "secondary_source"]:
+                        if field_name in product and isinstance(product[field_name], list):
+                            for resource_id in product[field_name]:
+                                if resource_id and isinstance(resource_id, str):
+                                    referenced_resources.add(resource_id)
+        
+        # Get the list of existing resource directories
+        existing_resources = set()
+        resource_dir = pathlib.Path(ROOT / "resource")
+        if resource_dir.exists() and resource_dir.is_dir():
+            for path in resource_dir.iterdir():
+                if path.is_dir():
+                    existing_resources.add(path.name)
+        
+        # Find resources mentioned but don't have a directory
+        missing_resources = referenced_resources - existing_resources
+        if missing_resources:
+            print(f"Found {len(missing_resources)} resources mentioned but missing pages: {', '.join(missing_resources)}")
+        else:
+            print("No missing resource pages detected.")
+            return
+        
+        # Create stub pages for missing resources
+        stubs_created = 0
+        for resource_id in missing_resources:
+            # Skip resources with invalid characters (only allow alphanumeric, hyphen, and underscore)
+            # Specifically check for dots to handle cases like "pharmgkb.drugs"
+            if '.' in resource_id or not all(c.isalnum() or c in '-_' for c in resource_id):
+                print(f"Skipping creation of stub for resource '{resource_id}' due to invalid characters")
+                continue
+                
+            # Create the directory if it doesn't exist
+            resource_dir = ROOT / "resource" / resource_id
+            resource_dir.mkdir(parents=True, exist_ok=True)
+            
+            # Check if the main resource file already exists
+            resource_file = resource_dir / f"{resource_id}.md"
+            if resource_file.exists():
+                print(f"Resource file {resource_file} already exists, skipping")
+                continue
+                
+            print(f"Creating stub Resource page for {resource_id}")
+            
+            # Create a minimal resource stub
+            stub_content = {
+                "layout": "resource_detail",
+                "activity_status": "active",
+                "id": resource_id,
+                "name": resource_id.capitalize(),
+                "description": f"Stub Resource page for {resource_id}. This page was automatically generated because it was referenced by other resources.",
+                "domains": ["other"],  # Default domain
+                "category": "DataSource",  # Default category
+                "warnings": [
+                    "This is an automatically generated stub page. Please replace with accurate information about this resource."
+                ]
+            }
+            
+            # Write the stub page using the same YAML handler for consistency
+            try:
+                with open(resource_file, "w") as f:
+                    f.write("---\n")
+                    yaml.dump(stub_content, f)
+                    f.write("---\n")
+                    f.write(f"\n# {resource_id.capitalize()}\n\nThis is an automatically generated stub page for {resource_id}. Please update with proper information.\n")
+                stubs_created += 1
+            except Exception as e:
+                print(f"Error creating stub page for {resource_id}: {str(e)}")
+        
+        print(f"Created {stubs_created} stub resource pages")
 
     def propagate_products(objs):
         """
@@ -268,7 +351,7 @@ def concat_resource_yaml(args):
                 # Deduplicate products based on ID
                 unique_products = []
                 product_ids = set()
-                
+
                 for product in obj["products"]:
                     if "id" in product:
                         product_id = product["id"]
@@ -278,12 +361,13 @@ def concat_resource_yaml(args):
                     else:
                         # For products without ID, keep them all
                         unique_products.append(product)
-                
+
                 # If we removed any duplicates, update the products list
                 if len(unique_products) < len(obj["products"]):
-                    print(f"Removed {len(obj['products']) - len(unique_products)} duplicate products from {obj['id']}")
+                    print(
+                        f"Removed {len(obj['products']) - len(unique_products)} duplicate products from {obj['id']}")
                     obj["products"] = unique_products
-                    
+
                     # Also update the resource page file
                     fn = f"resource/{obj['id']}/{obj['id']}.md"
                     try:
@@ -292,7 +376,7 @@ def concat_resource_yaml(args):
                             # Deduplicate the products in the metadata
                             unique_metadata_products = []
                             metadata_product_ids = set()
-                            
+
                             for product in metadata["products"]:
                                 if "id" in product:
                                     product_id = product["id"]
@@ -302,7 +386,7 @@ def concat_resource_yaml(args):
                                 else:
                                     # For products without ID, keep them all
                                     unique_metadata_products.append(product)
-                            
+
                             if len(unique_metadata_products) < len(metadata["products"]):
                                 metadata["products"] = unique_metadata_products
                                 with open(fn, "w") as f:
@@ -391,6 +475,9 @@ def concat_resource_yaml(args):
 
     # Generate product pages
     generate_product_pages(objs)
+
+    # Create stub pages for resources mentioned in products but don't have a page yet
+    create_stub_resource_pages(objs)
 
     # Propagate derived products to the source Resource pages
     propagate_products(objs)
