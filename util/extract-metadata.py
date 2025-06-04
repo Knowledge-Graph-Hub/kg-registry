@@ -276,21 +276,50 @@ def concat_resource_yaml(args):
 
                 # Do the writing here
                 for product in to_be_propagated[obj["id"]]:
+                    # Check if a product with the same ID already exists
+                    product_exists = False
+                    if "id" in product:
+                        product_id = product["id"]
+                        # Check in the concatenated list of resources
+                        for existing_product in obj["products"]:
+                            if "id" in existing_product and existing_product["id"] == product_id:
+                                product_exists = True
+                                break
 
-                    # Write to the concatenated list of resources
-                    if product not in obj["products"]:
-                        obj["products"].append(product)
-                        total_written += 1
+                        if not product_exists:
+                            obj["products"].append(product)
+                            total_written += 1
+                    else:
+                        # Fall back to full object comparison if no ID exists
+                        if product not in obj["products"]:
+                            obj["products"].append(product)
+                            total_written += 1
 
                     # Write to the respective Resource page
                     fn = f"resource/{obj['id']}/{obj['id']}.md"
                     (metadata, md) = load_md(fn)
                     if "products" not in metadata:
                         metadata["products"] = []
-                    if product not in metadata["products"]:
-                        metadata["products"].append(product)
-                    with open(fn, "w") as f:
-                        f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
+
+                    # Check if a product with the same ID already exists in the Resource page
+                    metadata_product_exists = False
+                    if "id" in product:
+                        product_id = product["id"]
+                        for existing_product in metadata["products"]:
+                            if "id" in existing_product and existing_product["id"] == product_id:
+                                metadata_product_exists = True
+                                break
+
+                        if not metadata_product_exists:
+                            metadata["products"].append(product)
+                            with open(fn, "w") as f:
+                                f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
+                    else:
+                        # Fall back to full object comparison if no ID exists
+                        if product not in metadata["products"]:
+                            metadata["products"].append(product)
+                            with open(fn, "w") as f:
+                                f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
 
                 if total_written > 0:
                     print(f" Wrote {str(total_written)} product(s) to {obj['id']} entry")
