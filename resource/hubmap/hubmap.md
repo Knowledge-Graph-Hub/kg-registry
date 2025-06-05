@@ -4,7 +4,7 @@ category: DataSource
 description: Stub Resource page for hubmap. This page was automatically generated
   because it was referenced by other resources.
 domains:
-- other
+- stub
 id: hubmap
 layout: resource_detail
 name: Hubmap

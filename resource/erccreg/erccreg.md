@@ -4,7 +4,7 @@ category: DataSource
 description: Stub Resource page for erccreg. This page was automatically generated
   because it was referenced by other resources.
 domains:
-- other
+- stub
 id: erccreg
 layout: resource_detail
 name: Erccreg

@@ -4,7 +4,7 @@ category: DataSource
 description: Stub Resource page for lincs-l1000. This page was automatically generated
   because it was referenced by other resources.
 domains:
-- other
+- stub
 id: lincs-l1000
 layout: resource_detail
 name: Lincs-l1000

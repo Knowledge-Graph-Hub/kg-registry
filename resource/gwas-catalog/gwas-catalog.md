@@ -4,7 +4,7 @@ category: DataSource
 description: Stub Resource page for gwas-catalog. This page was automatically generated
   because it was referenced by other resources.
 domains:
-- other
+- stub
 id: gwas-catalog
 layout: resource_detail
 name: Gwas-catalog

@@ -4,7 +4,7 @@ category: DataSource
 description: Stub Resource page for pato. This page was automatically generated because
   it was referenced by other resources.
 domains:
-- other
+- stub
 id: pato
 layout: resource_detail
 name: Pato

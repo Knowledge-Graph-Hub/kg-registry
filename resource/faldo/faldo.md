@@ -4,7 +4,7 @@ category: DataSource
 description: Stub Resource page for faldo. This page was automatically generated because
   it was referenced by other resources.
 domains:
-- other
+- stub
 id: faldo
 layout: resource_detail
 name: Faldo

@@ -4,7 +4,7 @@ category: DataSource
 description: Stub Resource page for pid. This page was automatically generated because
   it was referenced by other resources.
 domains:
-- other
+- stub
 id: pid
 layout: resource_detail
 name: Pid
