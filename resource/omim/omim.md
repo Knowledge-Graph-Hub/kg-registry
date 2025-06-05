@@ -4,7 +4,7 @@ category: DataSource
 description: Stub Resource page for omim. This page was automatically generated because
   it was referenced by other resources.
 domains:
-- other
+- stub
 id: omim
 layout: resource_detail
 name: Omim

@@ -4,7 +4,7 @@ category: DataSource
 description: Stub Resource page for ordo. This page was automatically generated because
   it was referenced by other resources.
 domains:
-- other
+- stub
 id: ordo
 layout: resource_detail
 name: Ordo

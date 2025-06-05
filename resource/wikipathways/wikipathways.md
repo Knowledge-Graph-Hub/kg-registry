@@ -5,7 +5,6 @@ description: WikiPathways is an open, collaborative platform dedicated to the cu
   of biological pathways contributed, updated, and used by the research community.
 domains:
 - pathways
-- biology
 - genomics
 - biomedical
 homepage_url: https://www.wikipathways.org/
@@ -39,7 +38,8 @@ publications:
 - authors:
   - Agrawal A
   - et al.
-  doi: https://doi.org/10.1093/nar/gkad960
+  doi: doi:10.1093/nar/gkad960
+  id: https://doi.org/10.1093/nar/gkad960
   journal: Nucleic Acids Research
   preferred: true
   title: WikiPathways 2024 - next generation pathway database
@@ -47,7 +47,8 @@ publications:
 - authors:
   - Martens M
   - et al.
-  doi: https://doi.org/10.1093/NAR/gkaa1024
+  doi: doi:10.1093/NAR/gkaa1024
+  id: https://doi.org/10.1093/NAR/gkaa1024
   journal: Nucleic Acids Research
   title: WikiPathways - connecting communities
   year: "2021"

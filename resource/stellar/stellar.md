@@ -1,23 +1,6 @@
 ---
 activity_status: active
 category: Resource
-description: STELLAR is a geometric deep learning method for cell type discovery and identification
-  in spatially resolved single-cell datasets. It automatically assigns cells to known
-  cell types and discovers novel cell types by transferring annotations across different
-  dissection regions, tissues, and donors.
-domains:
-- biomedical
-- genomics
-- biology
-- machine learning
-homepage_url: https://snap.stanford.edu/stellar/
-id: stellar
-layout: resource_detail
-license:
-  id: https://opensource.org/licenses/MIT
-  label: MIT License
-name: STELLAR
-repository: https://github.com/snap-stanford/stellar
 contacts:
 - category: Individual
   contact_details:
@@ -28,29 +11,31 @@ contacts:
   contact_details:
   - contact_type: url
     value: https://cs.stanford.edu/~mbrbic/
-  label: Maria Brbić
-publications:
-- authors:
-  - Brbić M
-  - Cao K
-  - Hickey JW
-  - Tan Y
-  - Snyder MP
-  - Nolan GP
-  - Leskovec J
-  doi: https://doi.org/10.1038/s41592-022-01651-8
-  journal: Nature Methods
-  preferred: true
-  title: Annotation of spatially resolved single-cell data with STELLAR
-  year: "2022"
+  label: "Maria Brbi\u0107"
+description: STELLAR is a geometric deep learning method for cell type discovery and
+  identification in spatially resolved single-cell datasets. It automatically assigns
+  cells to known cell types and discovers novel cell types by transferring annotations
+  across different dissection regions, tissues, and donors.
+domains:
+- biomedical
+- genomics
+homepage_url: https://snap.stanford.edu/stellar/
+id: stellar
+layout: resource_detail
+license:
+  id: https://opensource.org/licenses/MIT
+  label: MIT License
+name: STELLAR
 products:
 - category: ProcessProduct
-  description: PyTorch implementation of the STELLAR algorithm for cell-type discovery and identification
+  description: PyTorch implementation of the STELLAR algorithm for cell-type discovery
+    and identification
   id: stellar.code
   name: STELLAR Code
   product_url: https://github.com/snap-stanford/stellar
 - category: GraphicalInterface
-  description: Demo Jupyter notebook showing example usage of STELLAR on downsampled datasets
+  description: Demo Jupyter notebook showing example usage of STELLAR on downsampled
+    datasets
   id: stellar.demo
   name: STELLAR Demo Notebook
   product_url: https://github.com/snap-stanford/stellar/blob/main/demo.ipynb
@@ -185,70 +170,23 @@ products:
   product_url: https://ubkg-downloads.xconsortia.org/
   secondary_source:
   - ubkg
-- category: GraphProduct
-  description: Ontology CSV files that can be imported into a neo4j instance to create
-    a UBKG database. Requires UMLS API key to access.
-  format: csv
-  id: ubkg.csv
-  name: UBKG Ontology CSV Files
-  original_source:
-  - hgnc
-  - loinc
-  - icd10
-  - snomedct
-  - uberon
-  - pato
-  - cl
-  - do
-  - obi
-  - obib
-  - edam
-  - hsapdv
-  - sbo
-  - mi
-  - chebi
-  - mp
-  - ordo
-  - uniprot
-  - uo
-  - mondo
-  - efo
-  - pgo
-  - gencode
-  - reactome
-  - hra
-  - hubmap
-  - sennet
-  - stellar
-  - dct
-  - clinvar
-  - cmap
-  - hp
-  - msigdb
-  - wikipathways
-  - clingen
-  - string
-  - 4dn
-  - erccrbp
-  - erccreg
-  - faldo
-  - glycordf
-  - glycocoo
-  - gtex
-  - kidsfirst
-  - lincs
-  - motrpac
-  - mw
-  - npo
-  - nposckan
-  - disgenet
-  - biomarker
-  - opentargets
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - ubkg
+publications:
+- authors:
+  - "Brbi\u0107 M"
+  - Cao K
+  - Hickey JW
+  - Tan Y
+  - Snyder MP
+  - Nolan GP
+  - Leskovec J
+  doi: doi:10.1038/s41592-022-01651-8
+  id: https://doi.org/10.1038/s41592-022-01651-8
+  journal: Nature Methods
+  preferred: true
+  title: Annotation of spatially resolved single-cell data with STELLAR
+  year: '2022'
+repository: https://github.com/snap-stanford/stellar
 ---
-
 # STELLAR - Spatially Resolved Single-Cell Data Analysis
 
 STELLAR (SpaTial cELl LeARning) is a geometric deep learning tool for cell-type discovery and identification in spatially resolved single-cell datasets. Developed at Stanford University, it uses graph convolutional neural networks to analyze spatial relationships between cells in tissue samples.

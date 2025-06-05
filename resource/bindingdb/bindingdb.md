@@ -4,7 +4,7 @@ category: DataSource
 description: Stub Resource page for bindingdb. This page was automatically generated
   because it was referenced by other resources.
 domains:
-- other
+- stub
 id: bindingdb
 layout: resource_detail
 name: Bindingdb
