@@ -875,7 +875,8 @@
                 "synthetic biology",
                 "translational",
                 "upper",
-                "food science"
+                "food science",
+                "stub"
             ],
             "title": "DomainEnum",
             "type": "string"
