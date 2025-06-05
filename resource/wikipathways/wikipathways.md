@@ -1,13 +1,56 @@
 ---
 activity_status: active
 category: DataSource
-description: Stub Resource page for wikipathways. This page was automatically generated
-  because it was referenced by other resources.
+description: WikiPathways is an open, collaborative platform dedicated to the curation
+  of biological pathways contributed, updated, and used by the research community.
 domains:
-- other
+- pathways
+- biology
+- genomics
+- biomedical
+homepage_url: https://www.wikipathways.org/
 id: wikipathways
 layout: resource_detail
-name: Wikipathways
+license:
+  id: https://creativecommons.org/share-your-work/public-domain/cc0/
+  label: CC0 (Creative Commons Zero)
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+name: WikiPathways
+repository: https://github.com/wikipathways/wikipathways-database
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: github
+    value: https://github.com/wikipathways
+  - contact_type: url
+    value: https://www.wikipathways.org/
+  label: WikiPathways Team
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: apico@gladstone.ucsf.edu
+  label: Alex Pico
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: martina.kutmon@maastrichtuniversity.nl
+  label: Martina Kutmon
+publications:
+- authors:
+  - Agrawal A
+  - et al.
+  doi: https://doi.org/10.1093/nar/gkad960
+  journal: Nucleic Acids Research
+  preferred: true
+  title: WikiPathways 2024 - next generation pathway database
+  year: "2024"
+- authors:
+  - Martens M
+  - et al.
+  doi: https://doi.org/10.1093/NAR/gkaa1024
+  journal: Nucleic Acids Research
+  title: WikiPathways - connecting communities
+  year: "2021"
 products:
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -34,6 +77,39 @@ products:
   - bgee
   secondary_source:
   - spoke
+- category: Product
+  description: Pathways in Graphical Pathway Markup Language (GPML) format, which is a custom XML format for biological pathways
+  format: xml
+  id: wikipathways.gpml
+  name: WikiPathways GPML
+  product_url: https://data.wikipathways.org/current/gpml/
+- category: Product
+  description: Pathways in Gene Matrix Transposed (GMT) format for Gene Set Enrichment Analysis
+  format: tsv
+  id: wikipathways.gmt
+  name: WikiPathways GMT
+  product_url: https://data.wikipathways.org/current/gmt/
+- category: Product
+  description: Pathways in RDF (Resource Description Framework) format
+  format: ttl
+  id: wikipathways.rdf
+  name: WikiPathways RDF
+  product_url: http://data.wikipathways.org/current/rdf/
+- category: ProgrammingInterface
+  description: SPARQL endpoint for querying WikiPathways content
+  id: wikipathways.sparql
+  name: WikiPathways SPARQL Endpoint
+  product_url: https://sparql.wikipathways.org/
+- category: ProgrammingInterface
+  description: Web service API for programmatic access to WikiPathways content
+  id: wikipathways.api
+  name: WikiPathways API
+  product_url: https://webservice.wikipathways.org/ui/
+- category: GraphicalInterface
+  description: The main web interface for browsing, viewing, and downloading pathways
+  id: wikipathways.web
+  name: WikiPathways Web Interface
+  product_url: https://www.wikipathways.org/
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -161,10 +237,38 @@ products:
   product_url: https://ubkg-downloads.xconsortia.org/
   secondary_source:
   - ubkg
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
 ---
-# Wikipathways
 
-This is an automatically generated stub page for wikipathways. Please update with proper information.
+# WikiPathways
+
+WikiPathways is an open, collaborative platform dedicated to the curation of biological pathways. It was established to facilitate the contribution and maintenance of pathway information by the biology community. The platform provides intuitive views of the myriad interactions underlying biological processes using a familiar web-based format that reduces barriers to participation in pathway modeling.
+
+## Features
+
+- Community-curated biological pathway database
+- Open science platform with CC0 licensing
+- Multiple data formats: GPML (XML), GMT, RDF, SVG, PNG
+- Programmatic access via API, SPARQL endpoint, R and Python packages
+- Integration with pathway analysis tools like PathVisio and Cytoscape
+
+## Access and Usage
+
+Each pathway at WikiPathways has a dedicated page displaying the current diagram, description, authors, references, citations, annotations, download options, and component gene and protein lists. Pathways can be edited using the WikiPathways plugin for PathVisio.
+
+The pathway content is freely available for download in various data and image formats, including:
+- GPML: A custom XML format compatible with pathway visualization and analysis tools
+- GMT: Gene Matrix Transposed format for Gene Set Enrichment Analysis
+- RDF: Resource Description Framework for semantic web applications
+- SVG and PNG: For visualization and publication
+
+## Programmatic Access
+
+- **rWikiPathways**: R package for programmatic access
+- **pywikipathways**: Python package for the WikiPathways API
+- **SPARQL endpoint**: For querying the WikiPathways RDF data
+- **Web service API**: RESTful API for accessing WikiPathways data
+
+## Citations
+
+WikiPathways recommends citing their latest database article:
+- Agrawal A, et al. (2024) WikiPathways 2024: next generation pathway database. NAR. https://doi.org/10.1093/nar/gkad960
