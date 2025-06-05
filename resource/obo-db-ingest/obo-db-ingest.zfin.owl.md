@@ -1,6 +1,7 @@
 ---
 category: Product
 description: zfin OWL
+format: owl
 id: obo-db-ingest.zfin.owl
 license:
   id: https://creativecommons.org/licenses/by/4.0/
