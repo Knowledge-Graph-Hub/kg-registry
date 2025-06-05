@@ -22,7 +22,7 @@ resources:
   description: Stub Resource page for 4dn. This page was automatically generated because
     it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: 4dn
   layout: resource_detail
   name: 4dn
@@ -773,7 +773,7 @@ resources:
   description: Stub Resource page for bindingdb. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: bindingdb
   layout: resource_detail
   name: Bindingdb
@@ -2664,7 +2664,7 @@ resources:
   description: Stub Resource page for cl. This page was automatically generated because
     it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: cl
   layout: resource_detail
   name: Cl
@@ -2882,7 +2882,7 @@ resources:
   description: Stub Resource page for clingen. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: clingen
   layout: resource_detail
   name: Clingen
@@ -3165,7 +3165,7 @@ resources:
   description: Stub Resource page for clinvar. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: clinvar
   layout: resource_detail
   name: Clinvar
@@ -3305,7 +3305,7 @@ resources:
   description: Stub Resource page for cmap. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: cmap
   layout: resource_detail
   name: Cmap
@@ -3640,7 +3640,7 @@ resources:
   description: Stub Resource page for dct. This page was automatically generated because
     it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: dct
   layout: resource_detail
   name: Dct
@@ -3963,7 +3963,7 @@ resources:
   description: Stub Resource page for diseases. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: diseases
   layout: resource_detail
   name: Diseases
@@ -4001,7 +4001,7 @@ resources:
   description: Stub Resource page for disgenet. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: disgenet
   layout: resource_detail
   name: Disgenet
@@ -5245,7 +5245,7 @@ resources:
   description: Stub Resource page for edam. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: edam
   layout: resource_detail
   name: Edam
@@ -5385,7 +5385,7 @@ resources:
   description: Stub Resource page for efo. This page was automatically generated because
     it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: efo
   layout: resource_detail
   name: Efo
@@ -5731,7 +5731,7 @@ resources:
   description: Stub Resource page for erccrbp. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: erccrbp
   layout: resource_detail
   name: Erccrbp
@@ -5871,7 +5871,7 @@ resources:
   description: Stub Resource page for erccreg. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: erccreg
   layout: resource_detail
   name: Erccreg
@@ -6011,7 +6011,7 @@ resources:
   description: Stub Resource page for faldo. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: faldo
   layout: resource_detail
   name: Faldo
@@ -6630,7 +6630,7 @@ resources:
   description: Stub Resource page for gencode. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: gencode
   layout: resource_detail
   name: Gencode
@@ -6893,7 +6893,7 @@ resources:
   description: Stub Resource page for glycocoo. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: glycocoo
   layout: resource_detail
   name: Glycocoo
@@ -7131,7 +7131,7 @@ resources:
   description: Stub Resource page for glycordf. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: glycordf
   layout: resource_detail
   name: Glycordf
@@ -7910,7 +7910,7 @@ resources:
   description: Stub Resource page for gtex. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: gtex
   layout: resource_detail
   name: Gtex
@@ -8324,7 +8324,7 @@ resources:
   description: Stub Resource page for gwas-catalog. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: gwas-catalog
   layout: resource_detail
   name: Gwas-catalog
@@ -8936,7 +8936,7 @@ resources:
   description: Stub Resource page for hpa. This page was automatically generated because
     it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: hpa
   layout: resource_detail
   name: Hpa
@@ -8992,7 +8992,7 @@ resources:
   description: Stub Resource page for hra. This page was automatically generated because
     it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: hra
   layout: resource_detail
   name: Hra
@@ -9211,7 +9211,7 @@ resources:
   description: Stub Resource page for hsapdv. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: hsapdv
   layout: resource_detail
   name: Hsapdv
@@ -9351,7 +9351,7 @@ resources:
   description: Stub Resource page for hubmap. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: hubmap
   layout: resource_detail
   name: Hubmap
@@ -9491,7 +9491,7 @@ resources:
   description: Stub Resource page for icd10. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: icd10
   layout: resource_detail
   name: Icd10
@@ -10781,7 +10781,7 @@ resources:
   description: Stub Resource page for kidsfirst. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: kidsfirst
   layout: resource_detail
   name: Kidsfirst
@@ -11256,7 +11256,7 @@ resources:
   description: Stub Resource page for lincs-l1000. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: lincs-l1000
   layout: resource_detail
   name: Lincs-l1000
@@ -11294,7 +11294,7 @@ resources:
   description: Stub Resource page for loinc. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: loinc
   layout: resource_detail
   name: Loinc
@@ -11519,7 +11519,7 @@ resources:
   description: Stub Resource page for medline. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: medline
   layout: resource_detail
   name: Medline
@@ -11557,7 +11557,7 @@ resources:
   description: Stub Resource page for mesh. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: mesh
   layout: resource_detail
   name: Mesh
@@ -11840,7 +11840,7 @@ resources:
   description: Stub Resource page for mi. This page was automatically generated because
     it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: mi
   layout: resource_detail
   name: Mi
@@ -12383,7 +12383,7 @@ resources:
   description: Stub Resource page for motrpac. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: motrpac
   layout: resource_detail
   name: Motrpac
@@ -12523,7 +12523,7 @@ resources:
   description: Stub Resource page for mp. This page was automatically generated because
     it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: mp
   layout: resource_detail
   name: Mp
@@ -12663,7 +12663,7 @@ resources:
   description: Stub Resource page for msigdb. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: msigdb
   layout: resource_detail
   name: Msigdb
@@ -12818,7 +12818,7 @@ resources:
   description: Stub Resource page for mw. This page was automatically generated because
     it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: mw
   layout: resource_detail
   name: Mw
@@ -12958,7 +12958,7 @@ resources:
   description: Stub Resource page for ncbigene. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: ncbigene
   layout: resource_detail
   name: Ncbigene
@@ -13355,7 +13355,7 @@ resources:
   description: Stub Resource page for npo. This page was automatically generated because
     it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: npo
   layout: resource_detail
   name: Npo
@@ -13495,7 +13495,7 @@ resources:
   description: Stub Resource page for nposckan. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: nposckan
   layout: resource_detail
   name: Nposckan
@@ -13635,7 +13635,7 @@ resources:
   description: Stub Resource page for obi. This page was automatically generated because
     it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: obi
   layout: resource_detail
   name: Obi
@@ -13775,7 +13775,7 @@ resources:
   description: Stub Resource page for obib. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: obib
   layout: resource_detail
   name: Obib
@@ -16343,7 +16343,7 @@ resources:
   description: Stub Resource page for omim. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: omim
   layout: resource_detail
   name: Omim
@@ -16646,7 +16646,7 @@ resources:
   description: Stub Resource page for ordo. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: ordo
   layout: resource_detail
   name: Ordo
@@ -17162,7 +17162,7 @@ resources:
   description: Stub Resource page for pato. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: pato
   layout: resource_detail
   name: Pato
@@ -17538,7 +17538,7 @@ resources:
   description: Stub Resource page for pgo. This page was automatically generated because
     it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: pgo
   layout: resource_detail
   name: Pgo
@@ -18067,7 +18067,7 @@ resources:
   description: Stub Resource page for pid. This page was automatically generated because
     it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: pid
   layout: resource_detail
   name: Pid
@@ -19162,7 +19162,7 @@ resources:
   description: Stub Resource page for sbo. This page was automatically generated because
     it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: sbo
   layout: resource_detail
   name: Sbo
@@ -19337,7 +19337,7 @@ resources:
   description: Stub Resource page for sennet. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: sennet
   layout: resource_detail
   name: Sennet
@@ -19616,7 +19616,7 @@ resources:
   description: Stub Resource page for snomedct. This page was automatically generated
     because it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: snomedct
   layout: resource_detail
   name: Snomedct
@@ -19905,15 +19905,50 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
   repository: ''
 - activity_status: active
-  category: DataSource
-  description: Stub Resource page for stellar. This page was automatically generated
-    because it was referenced by other resources.
+  category: Resource
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: url
+      value: https://cs.stanford.edu/~jure/
+    label: Jure Leskovec
+  - category: Individual
+    contact_details:
+    - contact_type: url
+      value: https://cs.stanford.edu/~mbrbic/
+    label: Maria Brbić
+  description: STELLAR is a geometric deep learning method for cell type discovery
+    and identification in spatially resolved single-cell datasets. It automatically
+    assigns cells to known cell types and discovers novel cell types by transferring
+    annotations across different dissection regions, tissues, and donors.
   domains:
-  - other
+  - biomedical
+  - genomics
+  homepage_url: https://snap.stanford.edu/stellar/
   id: stellar
   layout: resource_detail
-  name: Stellar
+  license:
+    id: https://opensource.org/licenses/MIT
+    label: MIT License
+  name: STELLAR
   products:
+  - category: ProcessProduct
+    description: PyTorch implementation of the STELLAR algorithm for cell-type discovery
+      and identification
+    id: stellar.code
+    name: STELLAR Code
+    product_url: https://github.com/snap-stanford/stellar
+  - category: GraphicalInterface
+    description: Demo Jupyter notebook showing example usage of STELLAR on downsampled
+      datasets
+    id: stellar.demo
+    name: STELLAR Demo Notebook
+    product_url: https://github.com/snap-stanford/stellar/blob/main/demo.ipynb
+  - category: Product
+    description: CODEX multiplexed imaging datasets used in STELLAR research
+    id: stellar.datasets
+    name: STELLAR Datasets
+    product_url: https://datadryad.org/stash/share/1OQtxew0Unh3iAdP-ELew-ctwuPTBz6Oy8uuyxqliZk
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
       UBKG instances as neo4j graph databases, running in a Docker container. Requires
@@ -19954,7 +19989,6 @@ resources:
     - clinvar
     - cmap
     - hp
-    - mp
     - msigdb
     - wikipathways
     - clingen
@@ -20041,19 +20075,79 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  publications:
+  - authors:
+    - Brbić M
+    - Cao K
+    - Hickey JW
+    - Tan Y
+    - Snyder MP
+    - Nolan GP
+    - Leskovec J
+    doi: doi:10.1038/s41592-022-01651-8
+    id: https://doi.org/10.1038/s41592-022-01651-8
+    journal: Nature Methods
+    preferred: true
+    title: Annotation of spatially resolved single-cell data with STELLAR
+    year: '2022'
+  repository: https://github.com/snap-stanford/stellar
 - activity_status: active
   category: DataSource
-  description: Stub Resource page for string. This page was automatically generated
-    because it was referenced by other resources.
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://string-db.org/
+    label: STRING Consortium
+  description: STRING is a database of known and predicted protein-protein interactions.
+    The interactions include direct (physical) and indirect (functional) associations
+    derived from computational prediction, knowledge transfer between organisms, and
+    interactions aggregated from other primary databases.
   domains:
-  - other
+  - genomics
+  - biomedical
+  - proteomics
+  homepage_url: https://string-db.org/
   id: string
   layout: resource_detail
-  name: String
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: Creative Commons Attribution 4.0 International (CC BY 4.0)
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: STRING
   products:
+  - category: GraphProduct
+    compression: gzip
+    description: Complete protein-protein interaction network data with confidence
+      scores
+    format: tsv
+    id: string.protein.links
+    name: STRING Protein Links
+    product_url: https://stringdb-downloads.org/download/protein.links.v12.0.txt.gz
+  - category: GraphProduct
+    compression: gzip
+    description: Detailed protein network data including subscores per evidence channel
+    format: tsv
+    id: string.protein.links.detailed
+    name: STRING Protein Links Detailed
+    product_url: https://stringdb-downloads.org/download/protein.links.detailed.v12.0.txt.gz
+  - category: GraphProduct
+    compression: gzip
+    description: Complete database dump containing all network nodes, edges, and scores
+    id: string.database
+    name: STRING Database Dump
+    product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
+  - category: ProgrammingInterface
+    description: RESTful API for programmatic access to STRING data
+    id: string.api
+    name: STRING REST API
+    product_url: https://string-db.org/cgi/help?subpage=api
+  - category: GraphicalInterface
+    description: Web interface for searching, visualizing, and analyzing protein-protein
+      interaction networks
+    id: string.web
+    name: STRING Web Interface
+    product_url: https://string-db.org/
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
       UBKG instances as neo4j graph databases, running in a Docker container. Requires
@@ -20094,7 +20188,6 @@ resources:
     - clinvar
     - cmap
     - hp
-    - mp
     - msigdb
     - wikipathways
     - clingen
@@ -20224,9 +20317,29 @@ resources:
     - protcid
     secondary_source:
     - spoke
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  publications:
+  - authors:
+    - Szklarczyk D
+    - Kirsch R
+    - Koutrouli M
+    - Nastou K
+    - Mehryary F
+    - Hachilif R
+    - Annika GL
+    - Fang T
+    - Doncheva NT
+    - Pyysalo S
+    - Bork P
+    - Jensen LJ
+    - von Mering C
+    doi: doi:10.1093/nar/gkac1000
+    id: https://doi.org/10.1093/nar/gkac1000
+    journal: Nucleic Acids Research
+    preferred: true
+    title: The STRING database in 2023 - protein-protein association networks and
+      functional enrichment analyses for any sequenced genome of interest
+    year: '2023'
+  version: '12.0'
 - activity_status: active
   category: DataSource
   contacts:
@@ -21217,7 +21330,7 @@ resources:
   description: Stub Resource page for uo. This page was automatically generated because
     it was referenced by other resources.
   domains:
-  - other
+  - stub
   id: uo
   layout: resource_detail
   name: Uo
@@ -21354,13 +21467,38 @@ resources:
     about this resource.
 - activity_status: active
   category: DataSource
-  description: Stub Resource page for wikipathways. This page was automatically generated
-    because it was referenced by other resources.
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: github
+      value: https://github.com/wikipathways
+    - contact_type: url
+      value: https://www.wikipathways.org/
+    label: WikiPathways Team
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: apico@gladstone.ucsf.edu
+    label: Alex Pico
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: martina.kutmon@maastrichtuniversity.nl
+    label: Martina Kutmon
+  description: WikiPathways is an open, collaborative platform dedicated to the curation
+    of biological pathways contributed, updated, and used by the research community.
   domains:
-  - other
+  - pathways
+  - genomics
+  - biomedical
+  homepage_url: https://www.wikipathways.org/
   id: wikipathways
   layout: resource_detail
-  name: Wikipathways
+  license:
+    id: https://creativecommons.org/share-your-work/public-domain/cc0/
+    label: CC0 (Creative Commons Zero)
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+  name: WikiPathways
   products:
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -21387,6 +21525,41 @@ resources:
     - bgee
     secondary_source:
     - spoke
+  - category: Product
+    description: Pathways in Graphical Pathway Markup Language (GPML) format, which
+      is a custom XML format for biological pathways
+    format: xml
+    id: wikipathways.gpml
+    name: WikiPathways GPML
+    product_url: https://data.wikipathways.org/current/gpml/
+  - category: Product
+    description: Pathways in Gene Matrix Transposed (GMT) format for Gene Set Enrichment
+      Analysis
+    format: tsv
+    id: wikipathways.gmt
+    name: WikiPathways GMT
+    product_url: https://data.wikipathways.org/current/gmt/
+  - category: Product
+    description: Pathways in RDF (Resource Description Framework) format
+    format: ttl
+    id: wikipathways.rdf
+    name: WikiPathways RDF
+    product_url: http://data.wikipathways.org/current/rdf/
+  - category: ProgrammingInterface
+    description: SPARQL endpoint for querying WikiPathways content
+    id: wikipathways.sparql
+    name: WikiPathways SPARQL Endpoint
+    product_url: https://sparql.wikipathways.org/
+  - category: ProgrammingInterface
+    description: Web service API for programmatic access to WikiPathways content
+    id: wikipathways.api
+    name: WikiPathways API
+    product_url: https://webservice.wikipathways.org/ui/
+  - category: GraphicalInterface
+    description: The main web interface for browsing, viewing, and downloading pathways
+    id: wikipathways.web
+    name: WikiPathways Web Interface
+    product_url: https://www.wikipathways.org/
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
       UBKG instances as neo4j graph databases, running in a Docker container. Requires
@@ -21514,9 +21687,25 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  publications:
+  - authors:
+    - Agrawal A
+    - et al.
+    doi: doi:10.1093/nar/gkad960
+    id: https://doi.org/10.1093/nar/gkad960
+    journal: Nucleic Acids Research
+    preferred: true
+    title: WikiPathways 2024 - next generation pathway database
+    year: '2024'
+  - authors:
+    - Martens M
+    - et al.
+    doi: doi:10.1093/NAR/gkaa1024
+    id: https://doi.org/10.1093/NAR/gkaa1024
+    journal: Nucleic Acids Research
+    title: WikiPathways - connecting communities
+    year: '2021'
+  repository: https://github.com/wikipathways/wikipathways-database
 - activity_status: active
   category: DataSource
   contacts:

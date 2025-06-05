@@ -4,7 +4,7 @@ category: DataSource
 description: Stub Resource page for dct. This page was automatically generated because
   it was referenced by other resources.
 domains:
-- other
+- stub
 id: dct
 layout: resource_detail
 name: Dct
