@@ -301,7 +301,7 @@ def concat_resource_yaml(args):
                 "id": resource_id,
                 "name": resource_id.capitalize(),
                 "description": f"Stub Resource page for {resource_id}. This page was automatically generated because it was referenced by other resources.",
-                "domains": ["other"],  # Default domain
+                "domains": ["stub"],  # Use 'stub' domain to identify auto-generated pages
                 "category": "DataSource",  # Default category
                 "warnings": [
                     "This is an automatically generated stub page. Please replace with accurate information about this resource."
@@ -320,6 +320,45 @@ def concat_resource_yaml(args):
                 print(f"Error creating stub page for {resource_id}: {str(e)}")
         
         print(f"Created {stubs_created} stub resource pages")
+
+    def update_stub_domains(objs):
+        """
+        Update the domains of existing stub resource pages from 'other' to 'stub'.
+        This helps identify automatically generated pages vs. manually created ones.
+        """
+        updated_count = 0
+        for obj in objs:
+            # Check if this is likely a stub page
+            if "domains" in obj and "warnings" in obj:
+                is_stub = False
+                # Check if warnings contains the stub warning message
+                for warning in obj["warnings"]:
+                    if "automatically generated stub page" in warning:
+                        is_stub = True
+                        break
+                
+                # If it's a stub and using 'other' domain, update it to 'stub'
+                if is_stub and "domains" in obj and obj["domains"] == ["other"]:
+                    # Update the domain in the in-memory object
+                    obj["domains"] = ["stub"]
+                    
+                    # Update the resource page file
+                    fn = f"resource/{obj['id']}/{obj['id']}.md"
+                    try:
+                        (metadata, md) = load_md(fn)
+                        if "domains" in metadata and metadata["domains"] == ["other"]:
+                            metadata["domains"] = ["stub"]
+                            with open(fn, "w") as f:
+                                f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
+                            updated_count += 1
+                            print(f"Updated domain for stub resource {obj['id']} from 'other' to 'stub'")
+                    except Exception as e:
+                        print(f"Error updating domain for resource {obj['id']}: {str(e)}")
+        
+        if updated_count > 0:
+            print(f"Updated domains for {updated_count} stub resources from 'other' to 'stub'")
+        else:
+            print("No stub resources needed domain updates")
 
     def propagate_products(objs):
         """
@@ -484,6 +523,9 @@ def concat_resource_yaml(args):
 
     # Add logos to licenses
     decorate_metadata(objs)
+
+    # Update domains of existing stub resources
+    update_stub_domains(objs)
 
     with open(args.output, "w") as f:
         f.write(yaml.dump(cfg))
