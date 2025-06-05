@@ -104,45 +104,6 @@ products:
   product_url: https://zfin.org/downloads/gene_publication.txt
   secondary_source:
   - zfin
-- category: Product
-  description: zfin OBO
-  format: obo
-  id: obo-db-ingest.zfin.obo
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC-BY-4.0
-  name: zfin OBO
-  original_source:
-  - zfin
-  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: zfin OWL
-  format: owl
-  id: obo-db-ingest.zfin.owl
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC-BY-4.0
-  name: zfin OWL
-  original_source:
-  - zfin
-  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
-  secondary_source:
-  - obo-db-ingest
-- category: Product
-  description: zfin OBO Graph JSON
-  format: json
-  id: obo-db-ingest.zfin.json
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC-BY-4.0
-  name: zfin OBO Graph JSON
-  original_source:
-  - zfin
-  product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
-  secondary_source:
-  - obo-db-ingest
 repository: https://github.com/ZFIN/
 ---
 ZFIN

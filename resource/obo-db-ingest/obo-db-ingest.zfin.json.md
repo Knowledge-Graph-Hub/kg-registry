@@ -1,6 +1,7 @@
 ---
 category: Product
 description: zfin OBO Graph JSON
+format: json
 id: obo-db-ingest.zfin.json
 license:
   id: https://creativecommons.org/licenses/by/4.0/
