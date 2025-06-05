@@ -4,7 +4,7 @@ category: DataSource
 description: Stub Resource page for hsapdv. This page was automatically generated
   because it was referenced by other resources.
 domains:
-- other
+- stub
 id: hsapdv
 layout: resource_detail
 name: Hsapdv

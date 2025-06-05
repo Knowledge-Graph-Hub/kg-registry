@@ -4,7 +4,7 @@ category: DataSource
 description: Stub Resource page for icd10. This page was automatically generated because
   it was referenced by other resources.
 domains:
-- other
+- stub
 id: icd10
 layout: resource_detail
 name: Icd10

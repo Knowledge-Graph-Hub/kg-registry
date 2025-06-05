@@ -6,6 +6,7 @@ description: STRING is a database of known and predicted protein-protein interac
   computational prediction, knowledge transfer between organisms, and interactions aggregated
   from other primary databases.
 domains:
+- biology
 - genomics
 - biomedical
 - proteomics
@@ -39,8 +40,7 @@ publications:
   - Bork P
   - Jensen LJ
   - von Mering C
-  doi: doi:10.1093/nar/gkac1000
-  id: https://doi.org/10.1093/nar/gkac1000
+  doi: https://doi.org/10.1093/nar/gkac1000
   journal: Nucleic Acids Research
   preferred: true
   title: The STRING database in 2023 - protein-protein association networks and functional enrichment analyses for any sequenced genome of interest
@@ -62,6 +62,7 @@ products:
   product_url: https://stringdb-downloads.org/download/protein.links.detailed.v12.0.txt.gz
 - category: GraphProduct
   description: Complete database dump containing all network nodes, edges, and scores
+  format: sql
   compression: gzip
   id: string.database
   name: STRING Database Dump
@@ -116,6 +117,7 @@ products:
   - clinvar
   - cmap
   - hp
+  - mp
   - msigdb
   - wikipathways
   - clingen
@@ -245,6 +247,8 @@ products:
   - protcid
   secondary_source:
   - spoke
+warnings:
+- This page was updated from a previously auto-generated stub page.
 ---
 
 # STRING - Protein-Protein Interaction Networks

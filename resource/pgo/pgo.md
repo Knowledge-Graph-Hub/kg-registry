@@ -4,7 +4,7 @@ category: DataSource
 description: Stub Resource page for pgo. This page was automatically generated because
   it was referenced by other resources.
 domains:
-- other
+- stub
 id: pgo
 layout: resource_detail
 name: Pgo

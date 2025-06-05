@@ -4,7 +4,7 @@ category: DataSource
 description: Stub Resource page for clinvar. This page was automatically generated
   because it was referenced by other resources.
 domains:
-- other
+- stub
 id: clinvar
 layout: resource_detail
 name: Clinvar

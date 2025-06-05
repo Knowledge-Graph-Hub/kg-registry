@@ -4,7 +4,7 @@ category: DataSource
 description: Stub Resource page for gencode. This page was automatically generated
   because it was referenced by other resources.
 domains:
-- other
+- stub
 id: gencode
 layout: resource_detail
 name: Gencode
