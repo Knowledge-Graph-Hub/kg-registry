@@ -8,8 +8,7 @@ contacts:
     value: support@4dnucleome.org
   - contact_type: url
     value: https://data.4dnucleome.org/help/about/contact-us
-  name: Data Coordination and Integration Center (DCIC)
-  organization: 4D Nucleome Network
+  label: 4D Nucleome Network Data Coordination and Integration Center (DCIC)
 description: The 4D Nucleome (4DN) Network aims to understand the principles underlying
   nuclear organization in space and time (the 4th dimension). The 4DN Data Portal
   provides a platform to search, visualize, and download nucleomics data generated
