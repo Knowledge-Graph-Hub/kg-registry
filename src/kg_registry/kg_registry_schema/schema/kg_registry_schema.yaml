@@ -8,7 +8,7 @@ description: |-
 license: GPL-3.0
 see_also:
   - https://kghub.org/kg-registry/
-version: 0.0.2
+version: 0.0.3
 
 prefixes:
   kgr: https://w3id.org/bridge2ai/data-sheets-schema/
