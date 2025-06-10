@@ -11,11 +11,11 @@ contacts:
   name: ClinGen
   organization: Clinical Genome Resource
 description: The Clinical Genome Resource (ClinGen) is a National Institutes of Health
-  (NIH)-funded resource dedicated to building a central resource that defines the clinical
-  relevance of genes and variants for use in precision medicine and research. ClinGen
-  brings together clinical and research experts to develop standard approaches for interpreting
-  genomic variants, curate evidence for gene-disease relationships, and share this knowledge
-  through freely accessible databases.
+  (NIH)-funded resource dedicated to building a central resource that defines the
+  clinical relevance of genes and variants for use in precision medicine and research.
+  ClinGen brings together clinical and research experts to develop standard approaches
+  for interpreting genomic variants, curate evidence for gene-disease relationships,
+  and share this knowledge through freely accessible databases.
 domains:
 - genomics
 - biomedical
@@ -25,49 +25,192 @@ homepage_url: https://clinicalgenome.org/
 id: clingen
 layout: resource_detail
 license:
-  name: CC0 1.0 Universal
-  url: https://creativecommons.org/publicdomain/zero/1.0/
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
 name: ClinGen
 products:
 - category: DataProduct
-  description: ClinGen Gene-Disease Validity curations assess the strength of evidence supporting or refuting a gene's role in a given disease. These curations classify evidence as Definitive, Strong, Moderate, Limited, No Reported Evidence, or Disputed.
+  description: ClinGen Gene-Disease Validity curations assess the strength of evidence
+    supporting or refuting a gene's role in a given disease. These curations classify
+    evidence as Definitive, Strong, Moderate, Limited, No Reported Evidence, or Disputed.
   format: csv
   id: clingen.gene-disease
   name: Gene-Disease Validity Curations
   product_url: https://search.clinicalgenome.org/kb/gene-validity
 - category: DataProduct
-  description: ClinGen Dosage Sensitivity curations evaluate whether genes and genomic regions are sensitive to copy number variation. These curations determine if haploinsufficiency (loss of one copy) or triplosensitivity (gain of one copy) of a gene/region causes disease.
+  description: ClinGen Dosage Sensitivity curations evaluate whether genes and genomic
+    regions are sensitive to copy number variation. These curations determine if haploinsufficiency
+    (loss of one copy) or triplosensitivity (gain of one copy) of a gene/region causes
+    disease.
   format: tsv
   id: clingen.dosage
   name: Dosage Sensitivity Curations
   product_url: https://search.clinicalgenome.org/kb/gene-dosage
 - category: DataProduct
-  description: ClinGen Clinical Actionability evaluations assess the clinical actions available to manage risk for patients with specific genetic disorders. These curations score the actionability of gene-disease pairs based on severity, likelihood of disease, efficacy of interventions, and knowledge base.
+  description: ClinGen Clinical Actionability evaluations assess the clinical actions
+    available to manage risk for patients with specific genetic disorders. These curations
+    score the actionability of gene-disease pairs based on severity, likelihood of
+    disease, efficacy of interventions, and knowledge base.
   format: tsv
   id: clingen.actionability
   name: Clinical Actionability Curations
   product_url: https://search.clinicalgenome.org/kb/actionability
 - category: DataProduct
-  description: ClinGen Variant Pathogenicity curations assess the clinical significance of genetic variants based on ACMG/AMP guidelines. Expert panels classify variants as Pathogenic, Likely Pathogenic, Uncertain Significance, Likely Benign, or Benign.
+  description: ClinGen Variant Pathogenicity curations assess the clinical significance
+    of genetic variants based on ACMG/AMP guidelines. Expert panels classify variants
+    as Pathogenic, Likely Pathogenic, Uncertain Significance, Likely Benign, or Benign.
   format: csv
   id: clingen.variant
   name: Variant Pathogenicity Curations
   product_url: https://search.clinicalgenome.org/kb/variant-pathogenicity/all
 - category: ProgrammingInterface
-  description: REST API providing access to ClinGen's Evidence Repository for variant pathogenicity assessments. Allows programmatic retrieval of structured evidence used to evaluate the clinical significance of genetic variants.
+  description: REST API providing access to ClinGen's Evidence Repository for variant
+    pathogenicity assessments. Allows programmatic retrieval of structured evidence
+    used to evaluate the clinical significance of genetic variants.
   id: clingen.evrepo.api
   name: ClinGen Evidence Repository API
   product_url: https://erepo.clinicalgenome.org/evrepo/api/
 - category: GraphicalInterface
-  description: Web-based interface for accessing ClinGen's curated data. Allows users to search and browse curated gene-disease pairs, variant interpretations, and other ClinGen resources.
+  description: Web-based interface for accessing ClinGen's curated data. Allows users
+    to search and browse curated gene-disease pairs, variant interpretations, and
+    other ClinGen resources.
   id: clingen.web.interface
   name: ClinGen Search Interface
   product_url: https://search.clinicalgenome.org/
 - category: ProcessProduct
-  description: Framework for standardized interpretation of genetic variants, including disease-specific modifications to the ACMG/AMP guidelines. These frameworks guide variant classification by expert panels and clinical laboratories.
+  description: Framework for standardized interpretation of genetic variants, including
+    disease-specific modifications to the ACMG/AMP guidelines. These frameworks guide
+    variant classification by expert panels and clinical laboratories.
   id: clingen.variant.frameworks
   name: Variant Interpretation Frameworks
   product_url: https://www.clinicalgenome.org/working-groups/sequence-variant-interpretation/
+- category: GraphProduct
+  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
+    instances as neo4j graph databases, running in a Docker container. Requires UMLS
+    API key to access.
+  dump_format: neo4j
+  id: ubkg.neo4j
+  name: UBKG Neo4j Docker Distribution
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - do
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - cmap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - nposckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+- category: GraphProduct
+  description: Ontology CSV files that can be imported into a neo4j instance to create
+    a UBKG database. Requires UMLS API key to access.
+  format: csv
+  id: ubkg.csv
+  name: UBKG Ontology CSV Files
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - do
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - cmap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - nposckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
 publications:
 - authors:
   - Rehm HL
@@ -82,15 +225,16 @@ publications:
   id: https://doi.org/10.1056/NEJMsr1406261
   journal: New England Journal of Medicine
   preferred: true
-  title: ClinGen — The Clinical Genome Resource
-  year: "2015"
+  title: "ClinGen \u2014 The Clinical Genome Resource"
+  year: '2015'
 - authors:
   - ClinGen Consortium
   doi: doi:10.1016/j.gim.2024.101228
   id: https://doi.org/10.1016/j.gim.2024.101228
   journal: Genetics in Medicine
-  title: "The Clinical Genome Resource (ClinGen): Advancing genomic knowledge through global curation"
-  year: "2024"
+  title: 'The Clinical Genome Resource (ClinGen): Advancing genomic knowledge through
+    global curation'
+  year: '2024'
 ---
 # ClinGen - Clinical Genome Resource
 
