@@ -45,7 +45,8 @@ classes:
 
   Contact:
     description: >-
-      A contact point for a resource or product.
+      A contact point for a resource or product,
+      or a curator of a resource or product.
     slots:
       - category
       - contact_details
@@ -110,6 +111,14 @@ classes:
       contacts:
         description: >-
           The contact point(s) for the resource.
+          May be an individual or organization.
+        range: Contact
+        multivalued: true
+        inlined: true
+        inlined_as_list: true
+      curators:
+        description: >-
+          The curator(s) of the resource.
           May be an individual or organization.
         range: Contact
         multivalued: true
@@ -282,6 +291,12 @@ classes:
       contacts:
         description: >-
           The contact points for the product.
+          May be an individual or organization.
+        range: Contact
+        multivalued: true
+      curators:
+        description: >-
+          The curator(s) of the product.
           May be an individual or organization.
         range: Contact
         multivalued: true
