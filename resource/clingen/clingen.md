@@ -8,8 +8,7 @@ contacts:
     value: support@clinicalgenome.org
   - contact_type: url
     value: https://clinicalgenome.org/about/contact-clingen/
-  name: ClinGen
-  organization: Clinical Genome Resource
+  label: ClinGen
 description: The Clinical Genome Resource (ClinGen) is a National Institutes of Health
   (NIH)-funded resource dedicated to building a central resource that defines the
   clinical relevance of genes and variants for use in precision medicine and research.
