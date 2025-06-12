@@ -35,6 +35,8 @@ classes:
       - warnings
       - collection
       - layout
+      - creation_date
+      - last_modified_date
     class_uri: schema:Thing
 
   Registry:
@@ -634,6 +636,17 @@ slots:
       This is multivalued to allow for multiple collections.
     range: CollectionEnum
     multivalued: true
+  creation_date:
+    description: >-
+      The date the entry was created.
+      This is used to determine the age of the entity.
+      It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.
+    range: datetime
+  last_modified_date:
+    description: >-
+      The date the entry was last modified.
+      It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.
+    range: datetime
 
 # Types
 types:
