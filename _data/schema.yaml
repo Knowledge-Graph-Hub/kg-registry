@@ -8,7 +8,7 @@ description: |-
 license: GPL-3.0
 see_also:
   - https://kghub.org/kg-registry/
-version: 0.0.2
+version: 0.0.3
 
 prefixes:
   kgr: https://w3id.org/bridge2ai/data-sheets-schema/
@@ -35,6 +35,8 @@ classes:
       - warnings
       - collection
       - layout
+      - creation_date
+      - last_modified_date
     class_uri: schema:Thing
 
   Registry:
@@ -45,7 +47,8 @@ classes:
 
   Contact:
     description: >-
-      A contact point for a resource or product.
+      A contact point for a resource or product,
+      or a curator of a resource or product.
     slots:
       - category
       - contact_details
@@ -110,6 +113,14 @@ classes:
       contacts:
         description: >-
           The contact point(s) for the resource.
+          May be an individual or organization.
+        range: Contact
+        multivalued: true
+        inlined: true
+        inlined_as_list: true
+      curators:
+        description: >-
+          The curator(s) of the resource.
           May be an individual or organization.
         range: Contact
         multivalued: true
@@ -282,6 +293,12 @@ classes:
       contacts:
         description: >-
           The contact points for the product.
+          May be an individual or organization.
+        range: Contact
+        multivalued: true
+      curators:
+        description: >-
+          The curator(s) of the product.
           May be an individual or organization.
         range: Contact
         multivalued: true
@@ -619,6 +636,17 @@ slots:
       This is multivalued to allow for multiple collections.
     range: CollectionEnum
     multivalued: true
+  creation_date:
+    description: >-
+      The date the entry was created.
+      This is used to determine the age of the entity.
+      It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.
+    range: datetime
+  last_modified_date:
+    description: >-
+      The date the entry was last modified.
+      It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.
+    range: datetime
 
 # Types
 types:
