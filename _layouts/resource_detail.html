@@ -528,4 +528,18 @@ layout: default
     </h4>
   </div>
 
+  {% if page.creation_date or page.last_modified_date %}
+  <div class="row">
+    <p class="text-muted small" style="margin-top: 1em;">
+      {% if page.creation_date %}
+      <span title="Date this entry was created">Created: {{ page.creation_date | date: "%B %d, %Y" }}</span>
+      {% endif %}
+      {% if page.creation_date and page.last_modified_date %} | {% endif %}
+      {% if page.last_modified_date %}
+      <span title="Date this entry was last updated">Last modified: {{ page.last_modified_date | date: "%B %d, %Y" }}</span>
+      {% endif %}
+    </p>
+  </div>
+  {% endif %}
+
 </div>
