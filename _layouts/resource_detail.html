@@ -452,6 +452,72 @@ layout: default
       </div>
       {% endif %}
     </div>
+
+    {% if page.curators %}
+    <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem" id="curators">
+      <div class="card-header">
+        <h4><i class="bi bi-people-fill"></i> KG-Registry Curators</h4>
+      </div>
+      <div class="list-group list-group-flush">
+        {% for c in page.curators %}
+        <div class="list-group-item">
+          {% if c.label %}
+          {% assign email = null %}
+          {% assign github = null %}
+          {% assign url = null %}
+          {% assign other_details = null %}
+          {% if c.contact_details %}
+          {% assign other_details = false %}
+          {% for detail in c.contact_details %}
+          {% if detail.contact_type == 'email' %}
+          {% assign email = detail.value %}
+          {% elsif detail.contact_type == 'github' %}
+          {% assign github = detail.value %}
+          {% elsif detail.contact_type == 'url' %}
+          {% assign url = detail.value %}
+          {% else %}
+          {% assign other_details = true %}
+          {% endif %}
+          {% endfor %}
+          {% endif %}
+
+          {% if email %}
+          <p><a href="mailto:{{email}}">{{c.label}}</a></p>
+          {% elsif url %}
+          <p><a href="{{url}}">{{c.label}}</a></p>
+          {% else %}
+          <p>{{c.label}}</p>
+          {% endif %}
+          {% endif %}
+
+          {% if c.orcid %}
+          <p><strong>ORCID: </strong><a href="https://orcid.org/{{ c.orcid }}">{{ c.orcid }}</a></p>
+          {% endif %}
+
+          {% if github %}
+          <p><strong>Github: </strong><a href="https://github.com/{{ github }}">{{ github }}</a></p>
+          {% endif %}
+
+          {% if url %}
+          <p><strong>URL: </strong><a href="{{ url }}">{{ url }}</a></p>
+          {% endif %}
+
+          {% if other_details %}
+          {% for detail in c.contact_details %}
+          {% if detail.contact_type != 'email' and detail.contact_type != 'github' and detail.contact_type != 'url' %}
+          {% if detail.contact_type_url %}
+          <p><strong>{{ detail.contact_type_name }}: </strong>{{ detail.value }} (<a href="{{ detail.contact_type_url }}">site</a>)</p>
+          {% else %}
+          <p><strong>{{ detail.contact_type_name }}: </strong>{{ detail.value }}</p>
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
   </div>
 
   <div class="row">
