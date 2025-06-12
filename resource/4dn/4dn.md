@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataSource
+creation_date: "2025-06-10T00:00:00Z"
+last_modified_date: "2025-06-12T20:16:27Z"
 contacts:
 - category: Organization
   contact_details:
@@ -9,6 +11,12 @@ contacts:
   - contact_type: url
     value: https://data.4dnucleome.org/help/about/contact-us
   label: 4D Nucleome Network Data Coordination and Integration Center (DCIC)
+curators:
+- category: Individual
+  contact_details:
+  - contact_type: github
+    value: caufieldjh
+  label: Harry Caufield
 description: The 4D Nucleome (4DN) Network aims to understand the principles underlying
   nuclear organization in space and time (the 4th dimension). The 4DN Data Portal
   provides a platform to search, visualize, and download nucleomics data generated
