@@ -46,6 +46,24 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "curators": {
+                    "description": "The curator(s) of the resource. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "description": {
                     "description": "A description of the resource.",
                     "type": [
@@ -97,6 +115,14 @@
                 },
                 "language": {
                     "description": "The human language of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
                     "type": [
                         "string",
                         "null"
@@ -221,7 +247,7 @@
         },
         "Contact": {
             "additionalProperties": false,
-            "description": "A contact point for a resource or product.",
+            "description": "A contact point for a resource or product, or a curator of a resource or product.",
             "properties": {
                 "category": {
                     "description": "The category of the entity. This should be identical to its class name.",
@@ -324,6 +350,24 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "curators": {
+                    "description": "The curator(s) of the resource. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "description": {
                     "description": "A description of the resource.",
                     "type": [
@@ -375,6 +419,14 @@
                 },
                 "language": {
                     "description": "The human language of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
                     "type": [
                         "string",
                         "null"
@@ -518,6 +570,24 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "curators": {
+                    "description": "The curator(s) of the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -539,6 +609,14 @@
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
                     "type": [
                         "string",
                         "null"
@@ -689,6 +767,24 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "curators": {
+                    "description": "The curator(s) of the resource. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "description": {
                     "description": "A description of the resource.",
                     "type": [
@@ -740,6 +836,14 @@
                 },
                 "language": {
                     "description": "The human language of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
                     "type": [
                         "string",
                         "null"
@@ -950,6 +1054,14 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
@@ -964,6 +1076,14 @@
                         }
                     ],
                     "description": "The organization providing the funding."
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "layout": {
                     "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.",
@@ -1034,6 +1154,24 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "curators": {
+                    "description": "The curator(s) of the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -1062,6 +1200,14 @@
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
                     "type": [
                         "string",
                         "null"
@@ -1249,6 +1395,24 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "curators": {
+                    "description": "The curator(s) of the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -1270,6 +1434,14 @@
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
                     "type": [
                         "string",
                         "null"
@@ -1477,10 +1649,28 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "creator": {
                     "description": "The person or organization responsible for creating the knowledge graph.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "curators": {
+                    "description": "The curator(s) of the resource. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1549,6 +1739,14 @@
                 },
                 "language": {
                     "description": "The human language of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
                     "type": [
                         "string",
                         "null"
@@ -1668,12 +1866,28 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
                 },
                 "label": {
                     "description": "The name of the license.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
                     "type": [
                         "string",
                         "null"
@@ -1755,6 +1969,24 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "curators": {
+                    "description": "The curator(s) of the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -1776,6 +2008,14 @@
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
                     "type": [
                         "string",
                         "null"
@@ -1912,9 +2152,25 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "The identifier of an entity. This is used to identify it within the registry.",
                     "type": "string"
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "layout": {
                     "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.",
@@ -2017,6 +2273,24 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "curators": {
+                    "description": "The curator(s) of the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -2038,6 +2312,14 @@
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
                     "type": [
                         "string",
                         "null"
@@ -2198,6 +2480,24 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "curators": {
+                    "description": "The curator(s) of the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -2219,6 +2519,14 @@
                 },
                 "infores_id": {
                     "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
                     "type": [
                         "string",
                         "null"
@@ -2386,6 +2694,24 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "curators": {
+                    "description": "The curator(s) of the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "description": {
                     "description": "A description of the product.",
                     "type": [
@@ -2423,6 +2749,14 @@
                     "description": "Whether the API is publicly accessible, or requires only publicly provided credentials.",
                     "type": [
                         "boolean",
+                        "null"
+                    ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
                         "null"
                     ]
                 },
@@ -2567,6 +2901,14 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "doi": {
                     "description": "The DOI of the publication. This should include the doi: prefix.",
                     "type": [
@@ -2580,6 +2922,14 @@
                 },
                 "journal": {
                     "description": "The journal the publication was published in.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
                     "type": [
                         "string",
                         "null"
@@ -2683,6 +3033,24 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "curators": {
+                    "description": "The curator(s) of the resource. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "description": {
                     "description": "A description of the resource.",
                     "type": [
@@ -2734,6 +3102,14 @@
                 },
                 "language": {
                     "description": "The human language of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
                     "type": [
                         "string",
                         "null"
@@ -2891,6 +3267,14 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "description": {
                     "description": "A description of the usage.",
                     "type": [
@@ -2904,6 +3288,14 @@
                 },
                 "label": {
                     "description": "The label of the usage.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
                     "type": [
                         "string",
                         "null"
@@ -2982,5 +3374,5 @@
     "metamodel_version": "1.7.0",
     "title": "kg_registry_schema",
     "type": "object",
-    "version": "0.0.2"
+    "version": "0.0.3"
 }
