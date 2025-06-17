@@ -317,6 +317,10 @@ class DomainEnum(str, Enum):
     """
     The study of food, including its production, processing, preservation, and consumption.
     """
+    plant_science = "plant science"
+    """
+    The study of plants, including their biology, ecology, and interactions with the environment.
+    """
     stub = "stub"
     """
     This is not a domain, but rather a category for resources that are not yet categorized and exist only as a placeholder.
@@ -468,6 +472,26 @@ class FormatEnum(str, Enum):
     vcf = "vcf"
     """
     The Variant Call Format (VCF), a text file format for storing gene sequence variations. It is commonly used in bioinformatics to store gene sequence variations, such as single nucleotide polymorphisms (SNPs).
+    """
+    sbgnml = "sbgnml"
+    """
+    The Systems Biology Graphical Notation (SBGN) XML format, which is a standard for representing biological pathways and processes in a graphical form.
+    """
+    sbml = "sbml"
+    """
+    The Systems Biology Markup Language (SBML) XML format, which is a computer-readable format for representing models of biological processes.
+    """
+    sif = "sif"
+    """
+    The Simple Interaction Format (SIF), a simple text format for representing interactions between biological entities. It is often used to represent networks of interactions.
+    """
+    dot = "dot"
+    """
+    The DOT format, a plain text graph description language used to define the structure of graphs. It is often used with Graphviz to visualize graphs.
+    """
+    boolnet = "boolnet"
+    """
+    The Boolean Network (BoolNet) format, which is a format for representing Boolean networks. Used with the BoolNet package in R for modeling and analyzing biological networks.
     """
 
 
