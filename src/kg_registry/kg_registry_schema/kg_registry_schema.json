@@ -1029,7 +1029,12 @@
                 "sqlite",
                 "trapi-jsonl",
                 "yaml",
-                "vcf"
+                "vcf",
+                "sbgnml",
+                "sbml",
+                "sif",
+                "dot",
+                "boolnet"
             ],
             "title": "FormatEnum",
             "type": "string"
