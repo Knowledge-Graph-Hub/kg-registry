@@ -317,6 +317,10 @@ class DomainEnum(str, Enum):
     """
     The study of food, including its production, processing, preservation, and consumption.
     """
+    plant_science = "plant science"
+    """
+    The study of plants, including their biology, ecology, and interactions with the environment.
+    """
     stub = "stub"
     """
     This is not a domain, but rather a category for resources that are not yet categorized and exist only as a placeholder.

@@ -861,6 +861,10 @@ enums:
         description: >-
           The study of food, including its production, processing,
           preservation, and consumption.
+      plant science:
+        description: >-
+          The study of plants, including their biology, ecology,
+          and interactions with the environment.
       stub:
         description: >-
           This is not a domain, but rather a category for
