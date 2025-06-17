@@ -29,8 +29,8 @@ homepage_url: https://skm.nib.si/
 repository: https://github.com/NIB-SI/skm-tools
 category: KnowledgeGraph
 license:
-  label: CC-BY-4.0
-  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY-NC-SA-3.0
+  id: http://creativecommons.org/licenses/by-nc-sa/3.0/
 version: "1.0"
 language: en
 publications:
