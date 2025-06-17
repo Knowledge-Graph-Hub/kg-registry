@@ -861,6 +861,10 @@ enums:
         description: >-
           The study of food, including its production, processing,
           preservation, and consumption.
+      plant science:
+        description: >-
+          The study of plants, including their biology, ecology,
+          and interactions with the environment.
       stub:
         description: >-
           This is not a domain, but rather a category for
@@ -1067,6 +1071,36 @@ enums:
           It is commonly used in bioinformatics to store
           gene sequence variations, such as single nucleotide polymorphisms (SNPs).
         meaning: https://samtools.github.io/hts-specs/VCFv4.5.pdf
+      sbgnml:
+        description: >-
+          The Systems Biology Graphical Notation (SBGN) XML format,
+          which is a standard for representing biological pathways
+          and processes in a graphical form.
+        meaning: https://sbgn.github.io/sbgn/
+      sbml:
+        description: >-
+          The Systems Biology Markup Language (SBML) XML format,
+          which is a computer-readable format for representing
+          models of biological processes.
+        meaning: https://sbml.org/
+      sif:
+        description: >-
+          The Simple Interaction Format (SIF), a simple text format
+          for representing interactions between biological entities.
+          It is often used to represent networks of interactions.
+        meaning: https://www.cytoscape.org/sif.html
+      dot:
+        description: >-
+          The DOT format, a plain text graph description language
+          used to define the structure of graphs. It is often used
+          with Graphviz to visualize graphs.
+        meaning: https://graphviz.org/doc/info/lang.html
+      boolnet:
+        description: >-
+          The Boolean Network (BoolNet) format, which is a format
+          for representing Boolean networks. Used with the BoolNet package
+          in R for modeling and analyzing biological networks.
+        meaning: https://cran.r-project.org/package=BoolNet
 
   StandardEnum:
     description: >-

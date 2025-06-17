@@ -980,6 +980,7 @@
                 "translational",
                 "upper",
                 "food science",
+                "plant science",
                 "stub"
             ],
             "title": "DomainEnum",
@@ -1028,7 +1029,12 @@
                 "sqlite",
                 "trapi-jsonl",
                 "yaml",
-                "vcf"
+                "vcf",
+                "sbgnml",
+                "sbml",
+                "sif",
+                "dot",
+                "boolnet"
             ],
             "title": "FormatEnum",
             "type": "string"
