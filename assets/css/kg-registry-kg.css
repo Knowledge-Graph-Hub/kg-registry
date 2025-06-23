@@ -166,6 +166,43 @@ text.highlighted {
   color: #333;
 }
 
+/* Loading overlay */
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  transition: opacity 0.5s ease;
+}
+
+.loading-message {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.progress-container {
+  width: 60%;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #007bff;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
 /* Responsive adjustments */
 @media (max-width: 992px) {
   .graph-visualization {

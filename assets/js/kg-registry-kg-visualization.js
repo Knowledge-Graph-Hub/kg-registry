@@ -72,9 +72,68 @@ let nodeConnections = {}; // Store pre-computed connections for each node
 
 // Initialize the visualization
 document.addEventListener('DOMContentLoaded', () => {
+  // Create loading overlay
+  createLoadingOverlay();
+  
   // Load data and initialize
   loadData().then(initializeGraph);
 });
+
+/**
+ * Create a loading overlay with progress bar
+ */
+function createLoadingOverlay() {
+  const container = document.getElementById('graph-container');
+  
+  // Create loading overlay
+  const overlay = document.createElement('div');
+  overlay.className = 'loading-overlay';
+  overlay.id = 'loading-overlay';
+  
+  // Add loading message
+  const message = document.createElement('div');
+  message.className = 'loading-message';
+  message.textContent = 'Building graph visualization...';
+  overlay.appendChild(message);
+  
+  // Add progress container
+  const progressContainer = document.createElement('div');
+  progressContainer.className = 'progress-container';
+  
+  // Add progress bar
+  const progressBar = document.createElement('div');
+  progressBar.className = 'progress-bar';
+  progressBar.id = 'graph-progress-bar';
+  progressContainer.appendChild(progressBar);
+  
+  overlay.appendChild(progressContainer);
+  container.appendChild(overlay);
+}
+
+/**
+ * Update progress bar
+ */
+function updateProgress(percent) {
+  const progressBar = document.getElementById('graph-progress-bar');
+  if (progressBar) {
+    progressBar.style.width = `${percent}%`;
+  }
+}
+
+/**
+ * Hide loading overlay
+ */
+function hideLoadingOverlay() {
+  const overlay = document.getElementById('loading-overlay');
+  if (overlay) {
+    overlay.style.opacity = '0';
+    setTimeout(() => {
+      if (overlay.parentNode) {
+        overlay.parentNode.removeChild(overlay);
+      }
+    }, 500); // Remove after transition completes
+  }
+}
 
 /**
  * Load KG-Registry data from kgs.yml
@@ -280,13 +339,18 @@ function setupD3Visualization() {
   // Create container for all elements
   const g = svg.append('g');
   
-  // Add zoom behavior
-  svg.call(d3.zoom()
+  // Create zoom behavior
+  const zoom = d3.zoom()
     .scaleExtent([0.1, 4])
     .on('zoom', (event) => {
       g.attr('transform', event.transform);
-    })
-  );
+    });
+  
+  // Add zoom behavior to SVG
+  svg.call(zoom);
+  
+  // Store zoom function for later use
+  svg.zoomFunction = zoom;
   
   // Create link elements
   linkElements = g.append('g')
@@ -337,7 +401,28 @@ function setupD3Visualization() {
     .force('link', d3.forceLink(graph.links).id(d => d.id).distance(config.simulation.distance))
     .force('charge', d3.forceManyBody().strength(config.simulation.strength))
     .force('center', d3.forceCenter(width / 2, height / 2))
-    .on('tick', ticked);
+    .on('tick', ticked)
+    .on('end', () => {
+      // Once the simulation has stabilized, fit the graph to the view
+      updateProgress(100);
+      setTimeout(() => {
+        fitGraphToView();
+        hideLoadingOverlay();
+      }, 500); // Short delay to ensure progress bar reaches 100%
+    });
+  
+  // Update progress during simulation
+  let progressTicks = 0;
+  const totalTicks = 300; // Approximate number of ticks expected
+  
+  // Override tick function to update progress
+  const originalTick = simulation.tick;
+  simulation.tick = function() {
+    originalTick.call(this);
+    progressTicks++;
+    const progressPercent = Math.min(95, Math.floor((progressTicks / totalTicks) * 100));
+    updateProgress(progressPercent);
+  };
 }
 
 /**
@@ -357,6 +442,69 @@ function ticked() {
   textElements
     .attr('x', d => d.x)
     .attr('y', d => d.y);
+}
+
+/**
+ * Fit the entire graph to the view
+ */
+function fitGraphToView() {
+  if (!svg || !graph.nodes.length) return;
+  
+  const container = document.getElementById('graph-container');
+  const width = container.clientWidth;
+  const height = container.clientHeight;
+  
+  // Calculate bounds of all nodes
+  const bounds = {
+    minX: Infinity,
+    minY: Infinity,
+    maxX: -Infinity,
+    maxY: -Infinity
+  };
+  
+  graph.nodes.forEach(node => {
+    bounds.minX = Math.min(bounds.minX, node.x || 0);
+    bounds.minY = Math.min(bounds.minY, node.y || 0);
+    bounds.maxX = Math.max(bounds.maxX, node.x || 0);
+    bounds.maxY = Math.max(bounds.maxY, node.y || 0);
+  });
+  
+  // Add padding (proportional to container size)
+  const paddingRatio = 0.1; // 10% padding
+  const paddingX = width * paddingRatio;
+  const paddingY = height * paddingRatio;
+  
+  bounds.minX -= paddingX;
+  bounds.minY -= paddingY;
+  bounds.maxX += paddingX;
+  bounds.maxY += paddingY;
+  
+  // Calculate the scale to fit the bounds
+  const dx = bounds.maxX - bounds.minX;
+  const dy = bounds.maxY - bounds.minY;
+  
+  // Adjust scale to not be too zoomed out or in
+  // Use 0.95 instead of 0.9 to show a bit more of the graph
+  let scale = Math.min(width / dx, height / dy) * 0.95;
+  
+  // Limit minimum scale to avoid excessive zoom-out for large graphs
+  // and maximum scale to avoid too much zoom-in for small graphs
+  scale = Math.max(0.3, Math.min(scale, 1.2));
+  
+  // Calculate the translation to center the graph
+  const centerX = (bounds.minX + bounds.maxX) / 2;
+  const centerY = (bounds.minY + bounds.maxY) / 2;
+  
+  const translateX = width / 2 - centerX * scale;
+  const translateY = height / 2 - centerY * scale;
+  
+  // Apply the transform with a smooth transition
+  svg.transition()
+    .duration(750) // Smooth transition duration
+    .call(svg.zoomFunction.transform, d3.zoomIdentity
+      .translate(translateX, translateY)
+      .scale(scale)
+    );
 }
 
 /**
@@ -534,6 +682,9 @@ function resetGraph() {
   // Reset selected node
   selectedNode = null;
   hideNodeDetails();
+  
+  // After simulation restarts, fit the graph to view
+  simulation.on('end', () => fitGraphToView());
 }
 
 /**
