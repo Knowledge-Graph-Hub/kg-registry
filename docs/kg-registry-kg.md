@@ -57,7 +57,7 @@ The visualization uses data from the `registry/kgs.yml` file, which contains the
    - Keyboard navigation support
    - Responsive design for various screen sizes
 
-## Automatic Zoom-to-Fit
+## Automatic Zoom-to-Fit and Loading Progress
 
 The visualization includes an automatic zoom-to-fit feature that ensures the entire graph is visible:
 
@@ -67,11 +67,13 @@ The visualization includes an automatic zoom-to-fit feature that ensures the ent
 
 3. **Smooth Transitions**: The zoom-to-fit uses smooth transitions for a better user experience.
 
-4. **Loading Progress Indicator**: A loading bar shows progress while the force-directed layout is being calculated.
+4. **Loading Overlay**: A semi-transparent overlay with a message appears while the graph is being built.
 
-5. **Balanced Zoom Level**: The zoom level is carefully balanced to avoid excessive zoom-out for large graphs or too much zoom-in for small graphs.
+5. **Progress Bar**: A progress bar shows the current state of the force-directed layout calculation, giving users feedback during processing of large graphs.
 
-This feature helps users get a complete overview of the graph structure before diving into specific sections.
+6. **Balanced Zoom Level**: The zoom level is carefully balanced to avoid excessive zoom-out for large graphs or too much zoom-in for small graphs.
+
+This feature helps users get a complete overview of the graph structure before diving into specific sections and provides visual feedback during the loading process.
 
 ## Performance Optimizations
 
@@ -90,6 +92,31 @@ Several optimizations have been implemented to improve the visualization perform
 6. **Optimized Filtering**: Improved algorithms for filtering and highlighting nodes and connections.
 
 These optimizations significantly improve performance when working with large graphs, especially when selecting nodes and highlighting their connections.
+
+## Node Uniqueness Handling
+
+To ensure data integrity and proper visualization, the implementation handles node uniqueness with several mechanisms:
+
+1. **Node Map Tracking**: A `nodeMap` object tracks all created nodes by their IDs to prevent duplicates.
+
+2. **Placeholder Node Creation**: When a node references another node that hasn't been defined yet, a placeholder node is created. This placeholder is later updated with complete information when the referenced node is properly defined.
+
+3. **Smart Duplicate Prevention**: 
+   - During data processing, the system checks if a node with the same ID already exists before creating a new one
+   - For product nodes, it properly updates existing nodes with additional information instead of creating duplicates
+   - For resource nodes, it ensures component relationships are properly established without duplication
+
+4. **Final Validation**: A final validation step ensures no duplicate nodes exist in the final graph by:
+   - Using a Set to track unique node IDs
+   - Keeping only the first instance of each node
+   - Logging warnings about duplicate nodes for debugging
+   - Filtering links to ensure they only reference valid nodes
+
+5. **Link Validation**: The system ensures all links reference existing nodes and removes invalid links.
+
+6. **Parent-Child Relationship Validation**: Product nodes with invalid parent references are identified and reported.
+
+This comprehensive approach ensures the graph visualization accurately represents the data without duplication or missing relationships.
 
 ## Maintenance
 
