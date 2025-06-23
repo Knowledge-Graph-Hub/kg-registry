@@ -1,8 +1,30 @@
 /**
- * KG-Registry Knowledge Graph Visualization
- * This script renders a force-directed graph of the KG-Registry resources and their relationships
- * using D3.js and PixiJS for high-performance rendering.
+ * Helper function to truncate text with ellipsis
  */
+function truncateText(text, maxLength = 20) {
+  if (text && text.length > maxLength) {
+    return text.substring(0, maxLength - 3) + '...';
+  }
+  return text;
+}
+
+/**
+ * Generate a link to the registry page for a node
+ */
+function generateRegistryLink(node) {
+  const id = node.id;
+  
+  // Check if this is a resource or a product
+  if (node.parentId) {
+    // This is a product
+    const resourceId = node.parentId;
+    const productId = node.id;
+    return `<a href="/kg-registry/resource/${resourceId}/${productId}.html">${id}</a>`;
+  } else {
+    // This is a resource
+    return `<a href="/kg-registry/resource/${id}/${id}.html">${id}</a>`;
+  }
+}
 
 // Configuration
 const config = {
@@ -102,7 +124,15 @@ function processData(data) {
         resource.products.forEach((product, index) => {
           if (!product.category) return;
           
-          const productId = `${resource.id}_product_${index}`;
+          // Use the product ID if available, otherwise generate one
+          let productId;
+          if (product.id) {
+            productId = product.id;
+          } else {
+            // Fall back to a generated ID
+            productId = `${resource.id}_product_${index}`;
+          }
+          
           const productNode = {
             id: productId,
             name: product.description || `Product ${index}`,
@@ -265,7 +295,7 @@ function setupD3Visualization() {
   
   // Add tooltips using title
   nodeElements.append('title')
-    .text(d => `${d.name} (${d.type})\n${d.description || ''}`);
+    .text(d => `${d.name} (${d.type})\nID: ${d.id}\n${d.description || ''}`);
   
   // Create text labels
   textElements = g.append('g')
@@ -273,7 +303,7 @@ function setupD3Visualization() {
     .data(graph.nodes)
     .enter()
     .append('text')
-    .text(d => d.name)
+    .text(d => truncateText(d.name))
     .attr('font-size', 12)
     .attr('dx', 15)
     .attr('dy', 4);
@@ -479,7 +509,7 @@ function showNodeDetails(node) {
   
   // Add details
   const details = [
-    { label: 'ID', value: node.id },
+    { label: 'ID', value: generateRegistryLink(node) },
     { label: 'Type', value: node.type },
     { label: 'Description', value: node.description || 'No description available' }
   ];
