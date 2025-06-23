@@ -2,11 +2,13 @@
 
 .graph-visualization {
   width: 100%;
-  height: 800px;
+  height: 700px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f8f9fa;
   overflow: hidden;
+  position: sticky;
+  top: 20px;
 }
 
 .node {
@@ -29,22 +31,23 @@
 #graph-legend {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   margin-top: 10px;
 }
 
 .legend-item {
   display: flex;
   align-items: center;
-  margin-right: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 .legend-color {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
   border-radius: 3px;
+  flex-shrink: 0;
 }
 
 .controls-container {
@@ -79,16 +82,16 @@
 /* Node detail panel */
 .node-details {
   position: fixed;
-  top: 10px;
-  right: 10px;
-  width: 300px;
+  top: 70px;
+  right: 20px;
+  width: 350px;
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 15px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   display: none;
-  z-index: 100;
+  z-index: 1000;
   max-height: 80vh;
   overflow-y: auto;
 }
@@ -127,9 +130,12 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .graph-visualization {
     height: 500px;
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
   }
   
   .node-details {
@@ -141,5 +147,11 @@
     left: 0;
     border-radius: 5px 5px 0 0;
     max-height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .graph-visualization {
+    height: 400px;
   }
 }
