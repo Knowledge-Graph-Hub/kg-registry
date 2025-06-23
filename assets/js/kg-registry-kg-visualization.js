@@ -380,6 +380,7 @@ function setupControls() {
   
   document.getElementById('search-input').addEventListener('input', searchNodes);
   document.getElementById('reset-graph').addEventListener('click', resetGraph);
+  document.getElementById('kgs-only').addEventListener('click', showKnowledgeGraphsOnly);
 }
 
 /**
@@ -475,6 +476,48 @@ function resetGraph() {
   
   // Reset simulation
   simulation.alpha(1).restart();
+  
+  // Reset button styles
+  document.getElementById('reset-graph').classList.add('btn-primary');
+  document.getElementById('reset-graph').classList.remove('btn-outline-primary');
+  document.getElementById('kgs-only').classList.add('btn-outline-primary');
+  document.getElementById('kgs-only').classList.remove('btn-primary');
+}
+
+/**
+ * Filter to show only KnowledgeGraph nodes and edges between them
+ */
+function showKnowledgeGraphsOnly() {
+  // Reset search input and node type filter
+  document.getElementById('search-input').value = '';
+  document.getElementById('node-type-filter').value = 'all';
+  
+  // Hide all nodes and links initially
+  nodeElements.style('opacity', 0);
+  linkElements.style('opacity', 0);
+  textElements.style('opacity', 0);
+  
+  // Get all KnowledgeGraph nodes
+  const kgNodes = graph.nodes.filter(node => node.type === 'KnowledgeGraph');
+  const kgNodeIds = new Set(kgNodes.map(node => node.id));
+  
+  // Show only KnowledgeGraph nodes
+  nodeElements.filter(node => node.type === 'KnowledgeGraph')
+    .style('opacity', 1);
+  
+  textElements.filter(node => node.type === 'KnowledgeGraph')
+    .style('opacity', 1);
+  
+  // Show only links between KnowledgeGraph nodes
+  linkElements.filter(link => 
+    kgNodeIds.has(link.source.id) && kgNodeIds.has(link.target.id)
+  ).style('opacity', config.links.opacity.default);
+  
+  // Update UI to indicate the filter is active
+  document.getElementById('kgs-only').classList.remove('btn-outline-primary');
+  document.getElementById('kgs-only').classList.add('btn-primary');
+  document.getElementById('reset-graph').classList.remove('btn-primary');
+  document.getElementById('reset-graph').classList.add('btn-outline-primary');
 }
 
 /**
