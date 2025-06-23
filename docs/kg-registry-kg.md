@@ -22,6 +22,7 @@ The KG-Registry Knowledge Graph (KG-Registry-KG) visualizes the relationships be
 - Node selection and highlighting of connections
 - Detailed information panel for selected nodes
 - Zoom and pan capabilities
+- Automatic zoom-to-fit behavior to show the entire graph on initial load
 - "KGs Only" button to filter and show only KnowledgeGraph nodes and their connections
 - Responsive design
 
@@ -55,6 +56,22 @@ The visualization uses data from the `registry/kgs.yml` file, which contains the
    - High-contrast color scheme
    - Keyboard navigation support
    - Responsive design for various screen sizes
+
+## Automatic Zoom-to-Fit
+
+The visualization includes an automatic zoom-to-fit feature that ensures the entire graph is visible:
+
+1. **Initial Load**: When the graph first loads, it automatically calculates the bounding box of all nodes and zooms to fit the entire graph in the view.
+
+2. **After Reset**: When the "Reset Graph" button is clicked, the graph will re-center and zoom to fit all nodes after the simulation stabilizes.
+
+3. **Smooth Transitions**: The zoom-to-fit uses smooth transitions for a better user experience.
+
+4. **Loading Progress Indicator**: A loading bar shows progress while the force-directed layout is being calculated.
+
+5. **Balanced Zoom Level**: The zoom level is carefully balanced to avoid excessive zoom-out for large graphs or too much zoom-in for small graphs.
+
+This feature helps users get a complete overview of the graph structure before diving into specific sections.
 
 ## Performance Optimizations
 
