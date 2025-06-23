@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div class="col-12">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.description }}</p>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-lg-9">
+    <div id="graph-container" class="graph-visualization">
+      <!-- Graph visualization will be rendered here -->
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3>Controls</h3>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="node-type-filter" class="form-label">Filter by Node Type:</label>
+          <select id="node-type-filter" class="form-select">
+            <option value="all" selected>All Types</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="search-input" class="form-label">Search Nodes:</label>
+          <input type="text" id="search-input" class="form-control" placeholder="Enter node name or ID">
+        </div>
+        <div class="mb-3">
+          <div class="btn-group w-100" role="group">
+            <button id="reset-graph" class="btn btn-primary">Reset Graph</button>
+            <button id="kgs-only" class="btn btn-outline-primary">KGs Only</button>
+          </div>
+        </div>
+        
+        <div class="mt-4 text-muted">
+          <small>
+            <span id="node-count">0</span> nodes / 
+            <span id="edge-count">0</span> edges
+          </small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <h3>Legend</h3>
+      </div>
+      <div class="card-body">
+        <div id="graph-legend"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ content }}
