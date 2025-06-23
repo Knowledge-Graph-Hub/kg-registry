@@ -19,6 +19,7 @@ permalink: /kg-registry-kg/
         <li><strong>Click and drag</strong> nodes to reposition them</li>
         <li><strong>Click</strong> on a node to see its details and highlight its connections</li>
         <li><strong>Use the controls</strong> on the right to filter by node type or search for specific resources</li>
+        <li><strong>Click "KGs Only"</strong> to focus only on Knowledge Graph nodes and their connections</li>
         <li><strong>Zoom</strong> in and out using the mouse wheel or pinch gestures</li>
       </ul>
     </div>

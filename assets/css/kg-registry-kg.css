@@ -28,6 +28,21 @@
   stroke-opacity: 0.6;
 }
 
+/* Button styles */
+.btn-group {
+  display: flex;
+  gap: 5px;
+}
+
+.btn-group .btn {
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
 #graph-legend {
   display: flex;
   flex-wrap: wrap;
