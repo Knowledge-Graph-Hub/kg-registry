@@ -196,6 +196,10 @@ function processData(data) {
 function initializeGraph(data) {
   graph = data;
   
+  // Update counters
+  document.getElementById('node-count').textContent = graph.nodes.length;
+  document.getElementById('edge-count').textContent = graph.links.length;
+  
   // If using pure D3
   setupD3Visualization();
   
@@ -310,7 +314,10 @@ function ticked() {
 function createLegend() {
   const legend = d3.select('#graph-legend');
   
-  Object.entries(config.colors).forEach(([type, color]) => {
+  // Sort types alphabetically for better organization
+  const sortedTypes = Object.entries(config.colors).sort((a, b) => a[0].localeCompare(b[0]));
+  
+  sortedTypes.forEach(([type, color]) => {
     const item = legend.append('div')
       .attr('class', 'legend-item');
     

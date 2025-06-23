@@ -9,30 +9,14 @@ layout: default
   </div>
 </div>
 
-<div class="row">
-  <div class="col-12">
+<div class="row mt-4">
+  <div class="col-lg-9">
     <div id="graph-container" class="graph-visualization">
       <!-- Graph visualization will be rendered here -->
     </div>
   </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col-12">
-    <div class="card">
-      <div class="card-header">
-        <h3>Legend</h3>
-      </div>
-      <div class="card-body">
-        <div id="graph-legend"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col-12">
-    <div class="card">
+  <div class="col-lg-3">
+    <div class="card mb-4">
       <div class="card-header">
         <h3>Controls</h3>
       </div>
@@ -48,6 +32,22 @@ layout: default
           <input type="text" id="search-input" class="form-control" placeholder="Enter node name or ID">
         </div>
         <button id="reset-graph" class="btn btn-primary">Reset Graph</button>
+        
+        <div class="mt-4 text-muted">
+          <small>
+            <span id="node-count">0</span> nodes / 
+            <span id="edge-count">0</span> edges
+          </small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <h3>Legend</h3>
+      </div>
+      <div class="card-body">
+        <div id="graph-legend"></div>
       </div>
     </div>
   </div>
