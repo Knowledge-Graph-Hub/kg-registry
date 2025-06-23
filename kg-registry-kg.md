@@ -5,7 +5,11 @@ description: An interactive visualization of the Knowledge Graph Registry resour
 permalink: /kg-registry-kg/
 ---
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js"></script>
+<!-- D3.js and JS-YAML for data loading and graph layout -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+
+<!-- Custom visualization scripts and styles -->
 <script src="{{ site.baseurl }}/assets/js/kg-registry-kg-visualization.js"></script>
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/kg-registry-kg.css">
 
