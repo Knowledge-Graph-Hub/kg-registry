@@ -165,17 +165,28 @@ function processData(data) {
     data.resources.forEach(resource => {
       if (!resource.id) return;
       
-      const node = {
-        id: resource.id,
-        name: resource.name || resource.id,
-        type: resource.category || 'Resource',
-        description: resource.description || '',
-        url: resource.homepage_url || '',
-        domains: resource.domains || []
-      };
-      
-      nodes.push(node);
-      nodeMap[resource.id] = node;
+      // Create or update the resource node
+      if (!nodeMap[resource.id]) {
+        const node = {
+          id: resource.id,
+          name: resource.name || resource.id,
+          type: resource.category || 'Resource',
+          description: resource.description || '',
+          url: resource.homepage_url || '',
+          domains: resource.domains || []
+        };
+        
+        nodes.push(node);
+        nodeMap[resource.id] = node;
+      } else {
+        // Update existing placeholder node with real data
+        const existingNode = nodeMap[resource.id];
+        existingNode.name = resource.name || resource.id;
+        existingNode.type = resource.category || 'Resource';
+        existingNode.description = resource.description || existingNode.description || '';
+        existingNode.url = resource.homepage_url || existingNode.url || '';
+        existingNode.domains = resource.domains || existingNode.domains || [];
+      }
       
       // Add products as nodes
       if (resource.products && Array.isArray(resource.products)) {
@@ -191,28 +202,72 @@ function processData(data) {
             productId = `${resource.id}_product_${index}`;
           }
           
-          const productNode = {
-            id: productId,
-            name: product.description || productId, // Use ID instead of generic "Product X" name
-            type: product.category,
-            url: product.product_url || '',
-            parentId: resource.id
-          };
+          // Create or update the product node
+          if (!nodeMap[productId]) {
+            // Create new product node
+            const productNode = {
+              id: productId,
+              name: product.description || productId, // Use ID instead of generic "Product X" name
+              type: product.category,
+              url: product.product_url || '',
+              parentId: resource.id
+            };
+            
+            nodes.push(productNode);
+            nodeMap[productId] = productNode;
+          } else {
+            // Update existing node with product data
+            const existingNode = nodeMap[productId];
+            existingNode.name = product.description || existingNode.name || productId;
+            existingNode.type = product.category || existingNode.type;
+            existingNode.url = product.product_url || existingNode.url || '';
+            
+            // Only update parentId if it's not already set
+            if (!existingNode.parentId) {
+              existingNode.parentId = resource.id;
+            }
+            // If both have parents, keep the original parent (first one processed)
+          }
           
-          nodes.push(productNode);
-          nodeMap[productId] = productNode;
+          // Create link from resource to product if it doesn't exist yet
+          const existingProductLink = links.find(link => 
+            link.source === resource.id && link.target === productId && link.type === 'has_product'
+          );
           
-          // Create link from resource to product
-          links.push({
-            source: resource.id,
-            target: productId,
-            type: 'has_product'
-          });
+          if (!existingProductLink) {
+            links.push({
+              source: resource.id,
+              target: productId,
+              type: 'has_product'
+            });
+          }
           
           // If this product references other resources
           if (product.original_source && Array.isArray(product.original_source)) {
             product.original_source.forEach(sourceId => {
-              if (nodeMap[sourceId]) {
+              // Check if the source exists, if not, create a placeholder that can be updated later
+              if (!nodeMap[sourceId]) {
+                console.log(`Warning: Referenced source ${sourceId} not found in registry. Creating placeholder.`);
+                // Create a placeholder node that will be updated if this resource is defined later
+                const placeholderNode = {
+                  id: sourceId,
+                  name: sourceId,
+                  type: 'Resource', // Default type
+                  description: 'Referenced resource',
+                  url: '',
+                  domains: []
+                };
+                nodes.push(placeholderNode);
+                nodeMap[sourceId] = placeholderNode;
+              }
+              
+              // Add the link if it doesn't exist yet
+              const existingLink = links.find(link => 
+                (link.source === productId && link.target === sourceId && link.type === 'derived_from') ||
+                (link.source === sourceId && link.target === productId && link.type === 'derived_from')
+              );
+              
+              if (!existingLink) {
                 links.push({
                   source: productId,
                   target: sourceId,
@@ -227,7 +282,29 @@ function processData(data) {
       // Add links for related resources
       if (resource.components && Array.isArray(resource.components)) {
         resource.components.forEach(componentId => {
-          if (nodeMap[componentId]) {
+          // Check if the component exists, if not, create a placeholder
+          if (!nodeMap[componentId]) {
+            console.log(`Warning: Referenced component ${componentId} not found in registry. Creating placeholder.`);
+            // Create a placeholder node that will be updated if this resource is defined later
+            const placeholderNode = {
+              id: componentId,
+              name: componentId,
+              type: 'Resource', // Default type
+              description: 'Referenced component resource',
+              url: '',
+              domains: []
+            };
+            nodes.push(placeholderNode);
+            nodeMap[componentId] = placeholderNode;
+          }
+          
+          // Add the link if it doesn't already exist
+          const existingLink = links.find(link => 
+            (link.source === resource.id && link.target === componentId && link.type === 'has_component') ||
+            (link.source === componentId && link.target === resource.id && link.type === 'has_component')
+          );
+          
+          if (!existingLink) {
             links.push({
               source: resource.id,
               target: componentId,
@@ -257,10 +334,18 @@ function processData(data) {
       // Connect resources with the same domain
       for (let i = 0; i < resourceIds.length; i++) {
         for (let j = i + 1; j < resourceIds.length; j++) {
+          // Only create links between resources that actually exist in the nodeMap
+          if (!nodeMap[resourceIds[i]] || !nodeMap[resourceIds[j]]) {
+            continue;
+          }
+          
           // Avoid duplicate links
-          const existingLink = links.find(link => 
-            (link.source === resourceIds[i] && link.target === resourceIds[j]) ||
-            (link.source === resourceIds[j] && link.target === resourceIds[i])
+          const existingLink = links.some(link => 
+            (
+              (link.source === resourceIds[i] && link.target === resourceIds[j]) ||
+              (link.source === resourceIds[j] && link.target === resourceIds[i])
+            ) && 
+            (link.type === 'shared_domain' || link.type === 'has_component')
           );
           
           if (!existingLink) {
@@ -275,12 +360,42 @@ function processData(data) {
     });
   }
 
-  // Pre-compute node connections (optimization)
+  // Final validation to ensure no duplicate nodes
+  const uniqueNodeIds = new Set();
+  const finalNodes = [];
+  const duplicateNodeIds = [];
+
+  // Only keep one node per unique ID
   nodes.forEach(node => {
+    if (!uniqueNodeIds.has(node.id)) {
+      uniqueNodeIds.add(node.id);
+      finalNodes.push(node);
+    } else {
+      duplicateNodeIds.push(node.id);
+      console.log(`Warning: Duplicate node ID detected: ${node.id}. Keeping only first instance.`);
+    }
+  });
+
+  // Log summary of duplicates if any
+  if (duplicateNodeIds.length > 0) {
+    console.log(`Found ${duplicateNodeIds.length} duplicate node IDs: ${duplicateNodeIds.join(', ')}`);
+  }
+
+  // Pre-compute node connections (optimization)
+  finalNodes.forEach(node => {
     nodeConnections[node.id] = {
       connected: new Set(),
       links: new Set()
     };
+  });
+
+  // Final validation for product nodes - ensure they all have valid parent resources
+  finalNodes.forEach(node => {
+    if (node.parentId && !uniqueNodeIds.has(node.parentId)) {
+      console.log(`Warning: Product node ${node.id} references non-existent parent resource ${node.parentId}`);
+      // Either remove the invalid parentId or keep it for reference
+      // node.parentId = null; // Uncomment to remove invalid parentId
+    }
   });
 
   // Process links to build connection map
@@ -301,7 +416,44 @@ function processData(data) {
     }
   });
   
-  return { nodes, links };
+  // Fix link references to ensure they point to nodes that exist
+  const finalLinks = [];
+  const invalidLinks = [];
+  
+  links.forEach(link => {
+    const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
+    const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+    
+    if (uniqueNodeIds.has(sourceId) && uniqueNodeIds.has(targetId)) {
+      // Check for duplicate links
+      const isDuplicate = finalLinks.some(existingLink => {
+        const existingSourceId = typeof existingLink.source === 'object' ? existingLink.source.id : existingLink.source;
+        const existingTargetId = typeof existingLink.target === 'object' ? existingLink.target.id : existingLink.target;
+        
+        return (
+          (existingSourceId === sourceId && existingTargetId === targetId && existingLink.type === link.type) ||
+          // For undirected links, consider both directions
+          (link.type === 'has_component' || link.type === 'shared_domain') && 
+          (existingSourceId === targetId && existingTargetId === sourceId && existingLink.type === link.type)
+        );
+      });
+      
+      if (!isDuplicate) {
+        finalLinks.push(link);
+      }
+    } else {
+      invalidLinks.push({ source: sourceId, target: targetId, type: link.type });
+    }
+  });
+  
+  // Log info about invalid links
+  if (invalidLinks.length > 0) {
+    console.log(`Filtered out ${invalidLinks.length} invalid links with missing node references.`);
+  }
+  
+  console.log(`Graph created with ${finalNodes.length} nodes and ${finalLinks.length} links.`);
+  
+  return { nodes: finalNodes, links: finalLinks };
 }
 
 /**
