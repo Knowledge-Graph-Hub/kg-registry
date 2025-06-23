@@ -133,7 +133,7 @@ function processData(data) {
           
           const productNode = {
             id: productId,
-            name: product.description || `Product ${index}`,
+            name: product.description || productId, // Use ID instead of generic "Product X" name
             type: product.category,
             url: product.product_url || '',
             parentId: resource.id

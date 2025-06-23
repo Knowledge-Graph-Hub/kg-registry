@@ -38,6 +38,9 @@ The visualization uses data from the `registry/kgs.yml` file, which contains the
    - Resources from `kgs.yml` are represented as nodes
    - Relationships between resources are represented as links
    - Product nodes use their registry IDs for consistent linking
+   - Node names are determined using the following precedence:
+     - For resources: the `name` property from kgs.yml, falling back to the resource `id` if not available
+     - For products: the `description` property, falling back to the product `id` if not available
 
 3. **Interactive Features:**
    - Drag nodes to reposition them
