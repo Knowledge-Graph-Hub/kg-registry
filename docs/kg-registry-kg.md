@@ -56,12 +56,23 @@ The visualization uses data from the `registry/kgs.yml` file, which contains the
    - Keyboard navigation support
    - Responsive design for various screen sizes
 
-## Usage Tips
+## Performance Optimizations
 
-- Use the "KGs Only" button to focus specifically on Knowledge Graph resources
-- Use the search feature to quickly find specific nodes by name or ID
-- Click on node IDs in the details panel to navigate to the corresponding registry page
-- Drag nodes to arrange the graph in a way that makes sense for your exploration
+Several optimizations have been implemented to improve the visualization performance, especially for larger graphs:
+
+1. **Pre-computed Node Connections**: Connections between nodes are calculated once when the data loads, rather than recomputing them every time a node is selected.
+
+2. **CSS Class-based Styling**: Uses CSS class toggling instead of direct style manipulation for better performance.
+
+3. **Batched DOM Updates**: Uses requestAnimationFrame to batch visual updates for smoother performance.
+
+4. **Efficient DOM Manipulation**: Uses DocumentFragment for building complex DOM structures in memory before adding them to the page.
+
+5. **Reduced DOM Reflows**: Minimizes style recalculations by using CSS transitions for animations.
+
+6. **Optimized Filtering**: Improved algorithms for filtering and highlighting nodes and connections.
+
+These optimizations significantly improve performance when working with large graphs, especially when selecting nodes and highlighting their connections.
 
 ## Maintenance
 
