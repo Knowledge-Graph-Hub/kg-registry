@@ -268,6 +268,230 @@
         },
         {
             "activity_status": "active",
+            "category": "KnowledgeGraph",
+            "contacts": [
+                {
+                    "category": "Individual",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "EpistasisLab"
+                        },
+                        {
+                            "contact_type": "url",
+                            "value": "https://alzkb.ai/"
+                        }
+                    ],
+                    "label": "Joseph D Romano"
+                }
+            ],
+            "curators": [
+                {
+                    "category": "Individual",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "caufieldjh"
+                        }
+                    ],
+                    "label": "Harry Caufield"
+                }
+            ],
+            "description": "A knowledge base for AI research in Alzheimer Disease, based on graph databases.",
+            "domains": [
+                "neuroscience",
+                "biomedical",
+                "health",
+                "drug discovery",
+                "genomics"
+            ],
+            "homepage_url": "https://alzkb.ai/Home",
+            "id": "alzkb",
+            "layout": "resource_detail",
+            "name": "Alzheimer's Knowledge Base",
+            "products": [
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                }
+            ],
+            "publications": [
+                {
+                    "authors": [
+                        "Joseph D Romano",
+                        "Van Truong",
+                        "Rachit Kumar",
+                        "Mythreye Venkatesan",
+                        "Britney E Graham",
+                        "Yun Hao",
+                        "Nick Matsumoto",
+                        "Xi Li",
+                        "Zhiping Wang",
+                        "Marylyn D Ritchie",
+                        "Li Shen",
+                        "Jason H Moore"
+                    ],
+                    "doi": "doi:10.2196/46777",
+                    "id": "https://doi.org/10.2196/46777",
+                    "journal": "Journal of Medical Internet Research",
+                    "preferred": true,
+                    "title": "The Alzheimer's Knowledge Base: A Knowledge Graph for Alzheimer Disease Research",
+                    "year": "2024"
+                }
+            ],
+            "repository": "https://github.com/EpistasisLab/AlzKB"
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
+            "description": "Stub Resource page for aop-db. This page was automatically generated because it was referenced by other resources.",
+            "domains": [
+                "stub"
+            ],
+            "id": "aop-db",
+            "layout": "resource_detail",
+            "name": "Aop-db",
+            "products": [
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                }
+            ],
+            "warnings": [
+                "This is an automatically generated stub page. Please replace with accurate information about this resource."
+            ]
+        },
+        {
+            "activity_status": "active",
             "category": "Aggregator",
             "collection": [
                 "translator"
@@ -698,6 +922,75 @@
                     ],
                     "secondary_source": [
                         "spoke"
+                    ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
                     ]
                 }
             ],
@@ -5336,6 +5629,75 @@
                     "secondary_source": [
                         "rtx-kg2.code"
                     ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
                 }
             ],
             "warnings": [
@@ -5639,6 +6001,75 @@
                     "product_url": "https://ubkg-downloads.xconsortia.org/",
                     "secondary_source": [
                         "ubkg"
+                    ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
                     ]
                 }
             ],
@@ -5962,6 +6393,75 @@
                     "secondary_source": [
                         "rtx-kg2.code"
                     ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
                 }
             ],
             "publications": [
@@ -6176,6 +6676,91 @@
                     "title": "DrugCentral: online drug compendium",
                     "year": "2017"
                 }
+            ]
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
+            "description": "Stub Resource page for dsstox. This page was automatically generated because it was referenced by other resources.",
+            "domains": [
+                "stub"
+            ],
+            "id": "dsstox",
+            "layout": "resource_detail",
+            "name": "Dsstox",
+            "products": [
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                }
+            ],
+            "warnings": [
+                "This is an automatically generated stub page. Please replace with accurate information about this resource."
             ]
         },
         {
@@ -9271,6 +9856,75 @@
                     "secondary_source": [
                         "rtx-kg2.code"
                     ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
                 }
             ],
             "publications": [
@@ -10286,11 +10940,266 @@
                     "secondary_source": [
                         "spoke"
                     ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
                 }
             ],
             "warnings": [
                 "This is an automatically generated stub page. Please replace with accurate information about this resource."
             ]
+        },
+        {
+            "activity_status": "active",
+            "category": "KnowledgeGraph",
+            "contacts": [
+                {
+                    "category": "Individual",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "daniel.himmelstein@gmail.com"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "dhimmel"
+                        }
+                    ],
+                    "label": "Daniel Himmelstein"
+                }
+            ],
+            "description": "Hetionet is an integrative network of biomedical knowledge assembled from 29 different databases of genes, compounds, diseases, and more. It combines over 50 years of biomedical information into a single resource.",
+            "domains": [
+                "biomedical",
+                "drug discovery",
+                "genomics",
+                "health",
+                "biological systems"
+            ],
+            "homepage_url": "https://het.io/",
+            "id": "hetionet",
+            "layout": "resource_detail",
+            "license": {
+                "id": "https://creativecommons.org/licenses/by/4.0/",
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+            },
+            "name": "Hetionet",
+            "products": [
+                {
+                    "category": "GraphicalInterface",
+                    "description": "Browser for complete Hetionet v1.0 graph database in Neo4j",
+                    "format": "http",
+                    "id": "hetionet.neo4j",
+                    "name": "Hetionet v1.0 Neo4j Database",
+                    "product_url": "https://neo4j.het.io/browser/"
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Hetionet v1.0 in JSON format",
+                    "format": "json",
+                    "id": "hetionet.data.json",
+                    "name": "Hetionet v1.0 JSON",
+                    "product_url": "https://github.com/hetio/hetionet/blob/master/hetnet/json/hetionet-v1.0.json.bz2"
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Hetionet v1.0 as a Neo4j database",
+                    "id": "hetionet.data.neo4j",
+                    "name": "Hetionet v1.0 Neo4j",
+                    "product_url": "https://github.com/hetio/hetionet/blob/master/hetnet/neo4j/hetionet-v1.0.db.tar.bz2"
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Hetionet v1.0 as SIF edges",
+                    "format": "sif",
+                    "id": "hetionet.data.edges",
+                    "name": "Hetionet v1.0 edges (SIF)",
+                    "product_url": "https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-edges.sif.gz"
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Hetionet v1.0 as TSV nodes",
+                    "format": "tsv",
+                    "id": "hetionet.data.nodes",
+                    "name": "Hetionet v1.0 nodes (TSV)",
+                    "product_url": "https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-nodes.tsv"
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "Python package for creating, querying, and operating on hetnets (heterogeneous networks)",
+                    "id": "hetnetpy",
+                    "name": "hetnetpy",
+                    "product_url": "https://github.com/hetio/hetnetpy"
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "Web application to search and explore connectivity between nodes in Hetionet",
+                    "format": "http",
+                    "id": "hetionet.search",
+                    "name": "Hetnet Connectivity Search",
+                    "product_url": "https://het.io/search"
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                }
+            ],
+            "publications": [
+                {
+                    "authors": [
+                        "Daniel S Himmelstein",
+                        "Michael Zietz",
+                        "Vincent Rubinetti",
+                        "Kyle Kloster",
+                        "Benjamin J Heil",
+                        "Faisal Alquaddoomi",
+                        "Dongbo Hu",
+                        "David N Nicholson",
+                        "Yun Hao",
+                        "Blair D Sullivan",
+                        "Michael W Nagle",
+                        "Casey S Greene"
+                    ],
+                    "doi": "doi:10.1093/gigascience/giad047",
+                    "id": "https://doi.org/10.1093/gigascience/giad047",
+                    "journal": "GigaScience",
+                    "title": "Hetnet connectivity search provides rapid insights into how biomedical entities are related",
+                    "year": "2023"
+                }
+            ],
+            "repository": "https://github.com/hetio/hetionet"
         },
         {
             "activity_status": "active",
@@ -11274,6 +12183,91 @@
                 }
             ],
             "repository": "https://github.com/hubmapconsortium/hra-kg"
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
+            "description": "Stub Resource page for hrpimp. This page was automatically generated because it was referenced by other resources.",
+            "domains": [
+                "stub"
+            ],
+            "id": "hrpimp",
+            "layout": "resource_detail",
+            "name": "Hrpimp",
+            "products": [
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                }
+            ],
+            "warnings": [
+                "This is an automatically generated stub page. Please replace with accurate information about this resource."
+            ]
         },
         {
             "activity_status": "active",
@@ -13777,6 +14771,75 @@
                     "secondary_source": [
                         "spoke"
                     ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
                 }
             ],
             "warnings": [
@@ -14118,6 +15181,75 @@
                     ],
                     "secondary_source": [
                         "spoke"
+                    ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
                     ]
                 }
             ],
@@ -15738,6 +16870,75 @@
                     ],
                     "secondary_source": [
                         "spoke"
+                    ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
                     ]
                 }
             ],
@@ -21702,6 +22903,91 @@
         },
         {
             "activity_status": "active",
+            "category": "DataSource",
+            "description": "Stub Resource page for pharmacotherapydb. This page was automatically generated because it was referenced by other resources.",
+            "domains": [
+                "stub"
+            ],
+            "id": "pharmacotherapydb",
+            "layout": "resource_detail",
+            "name": "Pharmacotherapydb",
+            "products": [
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                }
+            ],
+            "warnings": [
+                "This is an automatically generated stub page. Please replace with accurate information about this resource."
+            ]
+        },
+        {
+            "activity_status": "active",
             "category": "Resource",
             "contacts": [
                 {
@@ -22259,6 +23545,75 @@
                     "secondary_source": [
                         "spoke"
                     ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
                 }
             ],
             "warnings": [
@@ -22696,6 +24051,75 @@
                     "product_url": "https://s3.amazonaws.com/maayan-kg/biomarker-kg/Compound.nodes.zip",
                     "secondary_source": [
                         "biomarkerkg"
+                    ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
                     ]
                 }
             ],
@@ -23197,6 +24621,75 @@
                     "product_url": "https://arax.ncats.io/",
                     "secondary_source": [
                         "rtx-kg2.code"
+                    ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
                     ]
                 }
             ],
@@ -25311,6 +26804,91 @@
         },
         {
             "activity_status": "active",
+            "category": "DataSource",
+            "description": "Stub Resource page for tissues. This page was automatically generated because it was referenced by other resources.",
+            "domains": [
+                "stub"
+            ],
+            "id": "tissues",
+            "layout": "resource_detail",
+            "name": "Tissues",
+            "products": [
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                }
+            ],
+            "warnings": [
+                "This is an automatically generated stub page. Please replace with accurate information about this resource."
+            ]
+        },
+        {
+            "activity_status": "active",
             "category": "KnowledgeGraph",
             "contacts": [
                 {
@@ -25728,6 +27306,75 @@
                     "product_url": "https://arax.ncats.io/",
                     "secondary_source": [
                         "rtx-kg2.code"
+                    ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
                     ]
                 }
             ],
@@ -26803,6 +28450,75 @@
                     "secondary_source": [
                         "ubkg"
                     ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
                 }
             ],
             "publications": [
@@ -27461,6 +29177,75 @@
                     ],
                     "secondary_source": [
                         "spoke"
+                    ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwas-catalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
                     ]
                 }
             ],

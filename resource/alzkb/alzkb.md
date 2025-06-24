@@ -50,7 +50,7 @@ publications:
 products:
 - id: alzkb.browser
   name: AlzKB Graph Database Browser
-  description: A browser interface for a knowledge graph for Alzheimer's Disease. 
+  description: A browser interface for a knowledge graph for Alzheimer's Disease.
   product_url: https://alzkb.ai:7473/login
   category: GraphicalInterface
   format: http
@@ -70,7 +70,6 @@ products:
   - pharmacotherapydb
   - pid
   - pubchem
-  - reactome
   - reactome
   - sider
   - tissues
