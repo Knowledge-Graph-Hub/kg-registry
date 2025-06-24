@@ -1,5 +1,7 @@
 Resource,Activity Status,Validation Status
 4dn,active,PASS
+alzkb,active,PASS
+aop-db,active,PASS
 automat,active,PASS
 bgee,active,PASS
 bigg,active,PASS
@@ -39,6 +41,7 @@ drkg,active,PASS
 drug-approvals-kp,active,PASS
 drugbank,active,PASS
 drugcentral,active,PASS
+dsstox,active,PASS
 ebrains,active,PASS
 ecid,active,PASS
 eco-kg,active,PASS
@@ -69,11 +72,13 @@ gtex,active,PASS
 gtopdb,active,PASS
 gutmgene,active,PASS
 gwas-catalog,active,PASS
+hetionet,active,PASS
 hgnc,active,PASS
 hp,active,PASS
 hpa,active,PASS
 hra,active,PASS
 hra-kg,active,PASS
+hrpimp,active,PASS
 hsapdv,active,PASS
 hubmap,active,PASS
 icd10,active,PASS
@@ -134,6 +139,7 @@ pato,active,PASS
 petagraph,active,PASS
 pfam,active,PASS
 pgo,active,PASS
+pharmacotherapydb,active,PASS
 pharmgkb,active,PASS
 pheknowlator,active,PASS
 phenio,active,PASS
@@ -164,6 +170,7 @@ stellar,active,PASS
 string,active,PASS
 swisslipid,active,PASS
 text-mining-kp,active,PASS
+tissues,active,PASS
 ubergraph,active,PASS
 uberon,active,PASS
 ubkg,active,PASS
