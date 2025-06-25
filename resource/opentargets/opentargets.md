@@ -1,6 +1,10 @@
 ---
 activity_status: active
 category: KnowledgeGraph
+description: >-
+  Open Targets is a collaborative effort to systematically identify
+  and prioritise the best targets to safely and effectively treat rare
+  and common diseases.
 contacts:
 - category: Organization
   contact_details:
