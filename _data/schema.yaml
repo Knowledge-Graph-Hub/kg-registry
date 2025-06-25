@@ -391,7 +391,14 @@ classes:
           For example, a URL to a specific Neo4j database.
           Do not include a prefix.
         range: uriorcurie
-      
+  
+  DocumentationProduct:
+    description: >-
+      A product that is documentation for a resource.
+      This may be a website, a stand-alone document,
+      or a collection of documents.
+    is_a: Product
+
 
   ## Other Classes
 

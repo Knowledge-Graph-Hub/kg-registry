@@ -57,6 +57,10 @@ They may have these attributes:
   - `is_neo4j`: True if the interface is for a Neo4j database
   - `connection_url`: The URL leading directly to the interface
 
+### DocumentationProduct
+
+These Products are documentation for a resource. This may be a website, a stand-alone document, or a collection of documents.
+
 ## Formats
 
 Products may have one of the following formats:

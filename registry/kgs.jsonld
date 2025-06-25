@@ -1505,6 +1505,34 @@
             "name": "Biolink-Model",
             "products": [
                 {
+                    "category": "DocumentationProduct",
+                    "description": "Biolink Model Documentation",
+                    "format": "http",
+                    "id": "biolink.docs",
+                    "name": "Biolink Model Documentation",
+                    "original_source": [
+                        "biolink"
+                    ],
+                    "product_url": "https://biolink.github.io/biolink-model/",
+                    "secondary_source": [
+                        "biolink"
+                    ]
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "Information Resource Registry Model documentation, including descriptions of the information resource (infores) registry itself.",
+                    "format": "http",
+                    "id": "biolink.infores.docs",
+                    "name": "Information Resource Registry Model Documentation",
+                    "original_source": [
+                        "biolink"
+                    ],
+                    "product_url": "https://biolink.github.io/information-resource-registry/",
+                    "secondary_source": [
+                        "biolink"
+                    ]
+                },
+                {
                     "category": "DataModelProduct",
                     "compatibility": [
                         {
