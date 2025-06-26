@@ -584,6 +584,123 @@ resources:
   repository: https://github.com/RobokopU24/
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for bfo. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: bfo
+  layout: resource_detail
+  name: Bfo
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   contacts:
   - category: Organization
     contact_details:
@@ -1702,6 +1819,123 @@ resources:
       graph embeddings in the Bioteque
     year: '2022'
   repository: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for bto. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: bto
+  layout: resource_detail
+  name: Bto
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -3950,6 +4184,123 @@ resources:
     about this resource.
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for clo. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: clo
+  layout: resource_detail
+  name: Clo
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   description: Stub Resource page for cmap. This page was automatically generated
     because it was referenced by other resources.
   domains:
@@ -4085,6 +4436,123 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for cob. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: cob
+  layout: resource_detail
+  name: Cob
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -4283,6 +4751,123 @@ resources:
     title: The evolution of dbSNP - 25 years of impact in genomic research
     year: '2023'
   repository: https://github.com/ncbi/dbsnp
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for dc. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: dc
+  layout: resource_detail
+  name: Dc
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   description: Stub Resource page for dct. This page was automatically generated because
@@ -6251,6 +6836,123 @@ resources:
   repository: http://purl.obolibrary.org/obo/ecosim.owl
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for ecto. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: ecto
+  layout: resource_detail
+  name: Ecto
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   description: Stub Resource page for edam. This page was automatically generated
     because it was referenced by other resources.
   domains:
@@ -7298,6 +8000,357 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for fbbt. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: fbbt
+  layout: resource_detail
+  name: Fbbt
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for fbdv. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: fbdv
+  layout: resource_detail
+  name: Fbdv
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for fma. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: fma
+  layout: resource_detail
+  name: Fma
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -9739,6 +10792,123 @@ resources:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
 - activity_status: active
+  category: DataSource
+  description: Stub Resource page for hancestro. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: hancestro
+  layout: resource_detail
+  name: Hancestro
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -11199,6 +12369,123 @@ resources:
     about this resource.
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for iao. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: iao
+  layout: resource_detail
+  name: Iao
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   description: Stub Resource page for icd10. This page was automatically generated
     because it was referenced by other resources.
   domains:
@@ -11334,6 +12621,15 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  - category: MappingProduct
+    description: The biannual release of the SNOMED CT to ICD-10-CM Map, which maps
+      SNOMED CT concepts to ICD-10-CM codes.
+    id: snomedct.icd10cm.map
+    name: SNOMED CT to ICD-10-CM Map
+    original_source:
+    - snomedct
+    - icd10
+    product_url: https://download.nlm.nih.gov/mlb/utsauth/ICD10CM/SNOMED_CT_to_ICD-10-CM_Resources_20250301.zip
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -11367,6 +12663,123 @@ resources:
     secondary_source:
     - icees-kg
   repository: ''
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for ido. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: ido
+  layout: resource_detail
+  name: Ido
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -13246,6 +14659,123 @@ resources:
     secondary_source:
     - obo-db-ingest
 - activity_status: active
+  category: DataSource
+  description: Stub Resource page for ma. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: ma
+  layout: resource_detail
+  name: Ma
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -14701,6 +16231,123 @@ resources:
     about this resource.
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for mpath. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: mpath
+  layout: resource_detail
+  name: Mpath
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   description: Stub Resource page for msigdb. This page was automatically generated
     because it was referenced by other resources.
   domains:
@@ -15426,6 +17073,123 @@ resources:
     year: '2012'
   repository: https://github.com/obophenotype/ncbitaxon
 - activity_status: active
+  category: DataSource
+  description: Stub Resource page for ncit. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: ncit
+  layout: resource_detail
+  name: Ncit
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: Resource
   contacts:
   - category: Individual
@@ -15861,6 +17625,123 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for oba. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: oba
+  layout: resource_detail
+  name: Oba
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -18511,6 +20392,240 @@ resources:
   repository: https://github.com/biopragmatics/obo-db-ingest
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for ogms. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: ogms
+  layout: resource_detail
+  name: Ogms
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for oio. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: oio
+  layout: resource_detail
+  name: Oio
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   contacts:
   - category: Organization
     contact_details:
@@ -18729,6 +20844,240 @@ resources:
     - protcid
     secondary_source:
     - spoke
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for omit. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: omit
+  layout: resource_detail
+  name: Omit
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for omo. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: omo
+  layout: resource_detail
+  name: Omo
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -20784,6 +23133,123 @@ resources:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
 - activity_status: active
+  category: DataSource
+  description: Stub Resource page for po. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: po
+  layout: resource_detail
+  name: Po
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: Resource
   contacts:
   - category: Organization
@@ -20851,6 +23317,123 @@ resources:
     secondary_source:
     - pombase
   repository: https://www.pombase.org/datasets
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for pr. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: pr
+  layout: resource_detail
+  name: Pr
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -21771,6 +24354,123 @@ resources:
   name: RNA-KG
   repository: https://github.com/AnacletoLAB/RNA-KG
 - activity_status: active
+  category: DataSource
+  description: Stub Resource page for ro. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: ro
+  layout: resource_detail
+  name: Ro
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -22137,6 +24837,123 @@ resources:
     repository: https://github.com/elsevier-health/scibite-ontology
     secondary_source:
     - scibite
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for semapv. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: semapv
+  layout: resource_detail
+  name: Semapv
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   description: Stub Resource page for sennet. This page was automatically generated
@@ -22606,6 +25423,123 @@ resources:
   repository: https://github.com/NIB-SI/skm-tools
   version: '1.0'
 - activity_status: active
+  category: DataSource
+  description: Stub Resource page for skos. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: skos
+  layout: resource_detail
+  name: Skos
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -22622,15 +25556,81 @@ resources:
   name: sldb
   repository: https://github.com/monarch-initiative/SLDBGen
 - activity_status: active
-  category: DataSource
-  description: Stub Resource page for snomedct. This page was automatically generated
-    because it was referenced by other resources.
+  category: DataModel
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: info@snomed.org
+    - contact_type: url
+      value: https://www.snomed.org/contact-us
+    label: SNOMED International
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: custserv@nlm.nih.gov
+    - contact_type: url
+      value: https://www.nlm.nih.gov/healthit/snomedct/index.html
+    label: National Library of Medicine (NLM)
+  description: SNOMED CT (Systematized Nomenclature of Medicine Clinical Terms) is
+    the most comprehensive, multilingual clinical healthcare terminology in the world.
+    It provides a standardized way to represent clinical phrases captured by clinicians
+    and enables automatic interpretation of these terms. SNOMED CT includes more than
+    360,000 active concepts with unique meanings and formal logic-based definitions
+    organized into hierarchies.
   domains:
-  - stub
+  - biomedical
+  - clinical
+  - health
+  homepage_url: https://www.snomed.org/
   id: snomedct
   layout: resource_detail
-  name: Snomedct
+  license:
+    id: https://www.snomed.org/snomed-ct/get-snomed
+    label: SNOMED CT Affiliate License
+  name: SNOMED CT
   products:
+  - category: DataModelProduct
+    description: The biannual release of the US Edition of SNOMED CT, combining content
+      from both the US Extension and International releases.
+    id: snomedct.us.content
+    name: SNOMED CT US Edition
+    original_source:
+    - snomedct
+    product_url: https://download.nlm.nih.gov/mlb/utsauth/USExt/doc_SnomedCT-USEdition-ReleaseNotes_Current_en-US_US1000124_20250301.pdf
+  - category: DataModelProduct
+    description: The monthly release of the International Edition of SNOMED CT, the
+      core release from SNOMED International, as RF2 files.
+    id: snomedct.international.content
+    name: SNOMED CT International Edition
+    original_source:
+    - snomedct
+    product_url: https://download.nlm.nih.gov/umls/kss/IHTSDO2025/IHTSDO20250601/SnomedCT_InternationalRF2_PRODUCTION_20250601T120000Z.zip
+  - category: MappingProduct
+    description: The biannual release of the SNOMED CT to ICD-10-CM Map, which maps
+      SNOMED CT concepts to ICD-10-CM codes.
+    id: snomedct.icd10cm.map
+    name: SNOMED CT to ICD-10-CM Map
+    original_source:
+    - snomedct
+    - icd10
+    product_url: https://download.nlm.nih.gov/mlb/utsauth/ICD10CM/SNOMED_CT_to_ICD-10-CM_Resources_20250301.zip
+  - category: GraphicalInterface
+    description: The SNOMED International browser for exploring the SNOMED CT terminology.
+    format: http
+    id: snomedct.browser
+    name: SNOMED CT Browser
+    original_source:
+    - snomedct
+    product_url: https://browser.ihtsdotools.org/
+  - category: DataModelProduct
+    description: A frequently used subset of SNOMED CT concepts for nursing documentation
+      in electronic health records. August 2017 release.
+    id: snomedct.nursing
+    name: SNOMED CT Nursing Problem List Subset
+    original_source:
+    - snomedct
+    product_url: https://download.nlm.nih.gov/mlb/utsauth/NursingProblemListSubset/SNOMEDCT_Nursing_201708.csv
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
       UBKG instances as neo4j graph databases, running in a Docker container. Requires
@@ -22758,6 +25758,121 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  repository: https://browser.ihtsdotools.org/
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for so. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: so
+  layout: resource_detail
+  name: So
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -23479,6 +26594,123 @@ resources:
     secondary_source:
     - alzkb
     - hetionet
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for to. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: to
+  layout: resource_detail
+  name: To
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -24575,15 +27807,79 @@ resources:
     - rtx-kg2.code
   repository: https://www.uniprot.org/help/downloads
 - activity_status: active
-  category: DataSource
-  description: Stub Resource page for uo. This page was automatically generated because
-    it was referenced by other resources.
+  category: DataModel
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: g.gkoutos@gmail.com
+    - contact_type: github
+      value: gkoutos
+    label: George Gkoutos
+    orcid: 0000-0002-2061-091X
+  description: The Units Ontology (UO) provides a standardized vocabulary for units
+    of measurement to facilitate consistent representation and integration of quantitative
+    data in scientific research. It includes SI units, their derivatives, and commonly
+    used units across scientific domains.
   domains:
-  - stub
+  - upper
+  homepage_url: https://github.com/bio-ontology-research-group/unit-ontology
   id: uo
   layout: resource_detail
-  name: Uo
+  license:
+    id: https://creativecommons.org/licenses/by/3.0/
+    label: CC BY 3.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: Units of Measurement Ontology
   products:
+  - category: DataModelProduct
+    description: The latest release of UO in OWL format
+    format: owl
+    id: uo.owl
+    name: UO OWL
+    original_source:
+    - uo
+    product_url: http://purl.obolibrary.org/obo/uo.owl
+  - category: DataModelProduct
+    description: The latest release of UO in OBO format
+    format: obo
+    id: uo.obo
+    name: UO OBO
+    original_source:
+    - uo
+    product_url: http://purl.obolibrary.org/obo/uo.obo
+  - category: DataModelProduct
+    description: The latest release of UO in JSON format
+    format: json
+    id: uo.json
+    name: UO JSON
+    original_source:
+    - uo
+    product_url: http://purl.obolibrary.org/obo/uo.json
+  - category: GraphicalInterface
+    description: Browse UO with Ontology Lookup Service (OLS)
+    format: http
+    id: uo.ols
+    name: UO in OLS
+    original_source:
+    - uo
+    product_url: https://www.ebi.ac.uk/ols/ontologies/uo
+  - category: GraphicalInterface
+    description: Browse UO with OntoBee
+    format: http
+    id: uo.ontobee
+    name: UO in OntoBee
+    original_source:
+    - uo
+    product_url: https://ontobee.org/ontology/uo
+  - category: GraphicalInterface
+    description: Browse UO with BioPortal
+    format: http
+    id: uo.bioportal
+    name: UO in BioPortal
+    original_source:
+    - uo
+    product_url: https://bioportal.bioontology.org/ontologies/UO
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
       UBKG instances as neo4j graph databases, running in a Docker container. Requires
@@ -24711,6 +28007,132 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  publications:
+  - authors:
+    - Georgios V Gkoutos
+    - Paul N Schofield
+    - Robert Hoehndorf
+    doi: 10.1093/database/bas033
+    id: doi:10.1093/database/bas033
+    journal: Database (Oxford)
+    preferred: true
+    title: The Units Ontology - a tool for integrating units of measurement in science
+    year: '2012'
+  repository: https://github.com/bio-ontology-research-group/unit-ontology
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for wbls. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: wbls
+  layout: resource_detail
+  name: Wbls
+  products:
   - category: DataModelProduct
     description: The latest release of EFO in OWL format
     format: owl
@@ -25120,6 +28542,123 @@ resources:
     title: WikiPathways - connecting communities
     year: '2021'
   repository: https://github.com/wikipathways/wikipathways-database
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for zfa. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: zfa
+  layout: resource_detail
+  name: Zfa
+  products:
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
