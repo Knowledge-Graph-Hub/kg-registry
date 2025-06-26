@@ -21,7 +21,6 @@ domains:
 - biomedical
 - clinical
 - health
-- anatomy
 homepage_url: https://www.snomed.org/
 id: snomedct
 layout: resource_detail
