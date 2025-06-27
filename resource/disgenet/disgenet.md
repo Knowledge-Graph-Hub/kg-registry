@@ -7,7 +7,11 @@ contacts:
   - contact_type: email
     value: info@disgenet.com
   label: MedBioinformatics Solutions SL
-description: DisGeNET is the world's largest and most extensive gene-disease association (GDA) network, integrating data from expert-curated repositories, GWAS catalogs, animal models, and scientific literature. It contains gene-disease associations, variant-disease associations, and disease-disease associations with extensive evidence supporting each connection.
+description: DisGeNET is the world's largest and most extensive gene-disease association
+  (GDA) network, integrating data from expert-curated repositories, GWAS catalogs,
+  animal models, and scientific literature. It contains gene-disease associations,
+  variant-disease associations, and disease-disease associations with extensive evidence
+  supporting each connection.
 domains:
 - biomedical
 - genomics
@@ -22,24 +26,10 @@ license:
   id: https://www.disgenet.com/Legal
   label: DisGeNET License
 name: DisGeNET
-publications:
-- id: doi:10.1093/nar/gkz1021
-  title: The DisGeNET knowledge platform for disease genomics - 2019 update
-  preferred: true
-  authors:
-  - Janet Piñero
-  - Juan Manuel Ramírez-Anguita
-  - Josep Saüch-Pitarch
-  - Francesco Ronzano
-  - Emilio Centeno
-  - Ferran Sanz
-  - Laura I. Furlong
-  journal: Nucleic Acids Research
-  year: "2020"
-  doi: 10.1093/nar/gkz1021
 products:
 - category: GraphProduct
-  description: DisGeNET data, including gene to disease associations and variant to disease associations (requires registration and subscription).
+  description: DisGeNET data, including gene to disease associations and variant to
+    disease associations (requires registration and subscription).
   id: disgenet.data
   name: DisGeNET Data
   original_source:
@@ -57,9 +47,9 @@ products:
   - ukbiobank
   - finngen
   - clinicaltrialsgov
+  product_url: https://www.disgenet.com/
   secondary_source:
   - disgenet
-  product_url: https://www.disgenet.com/
 - category: ProgrammingInterface
   description: API access to DisGeNET data (requires registration and subscription).
   format: http
@@ -67,9 +57,9 @@ products:
   name: DisGeNET API
   original_source:
   - disgenet
+  product_url: https://www.disgenet.com/
   secondary_source:
   - disgenet
-  product_url: https://www.disgenet.com/
 - category: GraphicalInterface
   description: Browser for DisGeNET data (requires registration and subscription).
   format: http
@@ -77,9 +67,9 @@ products:
   name: DisGeNET Browser
   original_source:
   - disgenet
+  product_url: https://www.disgenet.com/search?view=ALL&idents=ALL&source=ALL&tab=GDA
   secondary_source:
   - disgenet
-  product_url: https://www.disgenet.com/search?view=ALL&idents=ALL&source=ALL&tab=GDA
 - category: GraphProduct
   description: Ontology CSV files that can be imported into a neo4j instance to create
     a UBKG database. Requires UMLS API key to access.
@@ -284,8 +274,86 @@ products:
   secondary_source:
   - alzkb
   - hetionet
+- category: GraphProduct
+  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
+    instances as neo4j graph databases, running in a Docker container. Requires UMLS
+    API key to access.
+  dump_format: neo4j
+  id: ubkg.neo4j
+  name: UBKG Neo4j Docker Distribution
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - do
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - cmap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - nposckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+publications:
+- authors:
+  - "Janet Pi\xF1ero"
+  - "Juan Manuel Ram\xEDrez-Anguita"
+  - "Josep Sa\xFCch-Pitarch"
+  - Francesco Ronzano
+  - Emilio Centeno
+  - Ferran Sanz
+  - Laura I. Furlong
+  doi: 10.1093/nar/gkz1021
+  id: doi:10.1093/nar/gkz1021
+  journal: Nucleic Acids Research
+  preferred: true
+  title: The DisGeNET knowledge platform for disease genomics - 2019 update
+  year: '2020'
 ---
-
 # DisGeNET
 
 DisGeNET is the world's largest and most extensive gene-disease association network, integrating data from numerous expert-curated repositories, GWAS catalogs, animal models, and the scientific literature. It provides a comprehensive resource for investigating the genetic basis of human diseases and facilitates research in genomics, precision medicine, and drug discovery.

@@ -7,7 +7,12 @@ contacts:
   - contact_type: email
     value: clinvar@ncbi.nlm.nih.gov
   label: ClinVar Team, National Center for Biotechnology Information (NCBI)
-description: ClinVar is a freely accessible, public archive of reports of human genetic variations and their relationships to human health. It collects and presents data on variants found in patient samples, classifications for diseases and drug responses, and supporting evidence. ClinVar enables access to and communication about the clinical significance of genetic variants, providing healthcare professionals, researchers, and the public with vital information for interpreting genetic test results.
+description: ClinVar is a freely accessible, public archive of reports of human genetic
+  variations and their relationships to human health. It collects and presents data
+  on variants found in patient samples, classifications for diseases and drug responses,
+  and supporting evidence. ClinVar enables access to and communication about the clinical
+  significance of genetic variants, providing healthcare professionals, researchers,
+  and the public with vital information for interpreting genetic test results.
 domains:
 - biomedical
 - genomics
@@ -22,94 +27,45 @@ license:
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/
   label: NCBI and NLM Data Usage Policies and Disclaimers
 name: ClinVar
-publications:
-- id: doi:10.1093/nar/gkae1090
-  title: "ClinVar: updates to support classifications of both germline and somatic variants"
-  preferred: true
-  authors:
-  - Landrum MJ
-  - Chitipiralla S
-  - Kaur K
-  - Brown G
-  - Chen C
-  - Hart J
-  - Hoffman D
-  - Jang W
-  - Liu C
-  - Maddipatla Z
-  - Maiti R
-  - Mitchell J
-  - Rezaie T
-  - Riley G
-  - Song G
-  - Yang J
-  - Ziyabari L
-  - Russette A
-  - Kattman BL
-  journal: Nucleic Acids Research
-  year: "2024"
-  doi: 10.1093/nar/gkae1090
-- id: doi:10.1093/nar/gkx1153
-  title: ClinVar - improving access to variant interpretations and supporting evidence
-  authors:
-  - Landrum MJ
-  - Lee JM
-  - Benson M
-  - Brown GR
-  - Chao C
-  - Chitipiralla S
-  - Gu B
-  - Hart J
-  - Hoffman D
-  - Jang W
-  - Karapetyan K
-  - Katz K
-  - Liu C
-  - Maddipatla Z
-  - Malheiro A
-  - McDaniel K
-  - Ovetsky M
-  - Riley G
-  - Zhou G
-  - Holmes JB
-  - Kattman BL
-  - Maglott DR
-  journal: Nucleic Acids Research
-  year: "2018"
-  doi: 10.1093/nar/gkx1153
 products:
 - category: Product
-  description: Complete public data set in XML format containing comprehensive variant information, clinical significance classifications, and supporting evidence.
+  description: Complete public data set in XML format containing comprehensive variant
+    information, clinical significance classifications, and supporting evidence.
   format: xml
   id: clinvar.xml
   name: ClinVar XML
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/clinvar/xml/
 - category: Product
-  description: ClinVar data in VCF format for GRCh37 human genome assembly, containing variant information and clinical significance.
+  description: ClinVar data in VCF format for GRCh37 human genome assembly, containing
+    variant information and clinical significance.
   format: vcf
   id: clinvar.vcf.grch37
   name: ClinVar VCF (GRCh37)
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh37/
 - category: Product
-  description: ClinVar data in VCF format for GRCh38 human genome assembly, containing variant information and clinical significance.
+  description: ClinVar data in VCF format for GRCh38 human genome assembly, containing
+    variant information and clinical significance.
   format: vcf
   id: clinvar.vcf.grch38
   name: ClinVar VCF (GRCh38)
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/
 - category: Product
-  description: Tab-delimited files summarizing variant data, gene-condition relationships, and other aspects of ClinVar data.
+  description: Tab-delimited files summarizing variant data, gene-condition relationships,
+    and other aspects of ClinVar data.
   format: tsv
   id: clinvar.tab
   name: ClinVar Tab-Delimited Files
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/
 - category: ProgrammingInterface
-  description: API access to ClinVar data through NCBI's E-utilities, supporting programmatic queries and data retrieval.
+  description: API access to ClinVar data through NCBI's E-utilities, supporting programmatic
+    queries and data retrieval.
   format: http
   id: clinvar.api
   name: ClinVar API (E-utilities)
   product_url: https://www.ncbi.nlm.nih.gov/clinvar/docs/maintenance_use/
 - category: GraphicalInterface
-  description: Web interface for searching and browsing ClinVar data, with detailed variant information and evidence.
+  description: Web interface for searching and browsing ClinVar data, with detailed
+    variant information and evidence.
   format: http
   id: clinvar.web
   name: ClinVar Web Interface
@@ -241,6 +197,85 @@ products:
   product_url: https://ubkg-downloads.xconsortia.org/
   secondary_source:
   - ubkg
+- category: GraphProduct
+  description: DisGeNET data, including gene to disease associations and variant to
+    disease associations (requires registration and subscription).
+  id: disgenet.data
+  name: DisGeNET Data
+  original_source:
+  - clingen
+  - clinvar
+  - mgd
+  - rgd
+  - orphanet
+  - psygenet
+  - uniprot
+  - disgenet
+  - hp
+  - gwascat
+  - phewascat
+  - ukbiobank
+  - finngen
+  - clinicaltrialsgov
+  product_url: https://www.disgenet.com/
+  secondary_source:
+  - disgenet
+publications:
+- authors:
+  - Landrum MJ
+  - Chitipiralla S
+  - Kaur K
+  - Brown G
+  - Chen C
+  - Hart J
+  - Hoffman D
+  - Jang W
+  - Liu C
+  - Maddipatla Z
+  - Maiti R
+  - Mitchell J
+  - Rezaie T
+  - Riley G
+  - Song G
+  - Yang J
+  - Ziyabari L
+  - Russette A
+  - Kattman BL
+  doi: 10.1093/nar/gkae1090
+  id: doi:10.1093/nar/gkae1090
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'ClinVar: updates to support classifications of both germline and somatic
+    variants'
+  year: '2024'
+- authors:
+  - Landrum MJ
+  - Lee JM
+  - Benson M
+  - Brown GR
+  - Chao C
+  - Chitipiralla S
+  - Gu B
+  - Hart J
+  - Hoffman D
+  - Jang W
+  - Karapetyan K
+  - Katz K
+  - Liu C
+  - Maddipatla Z
+  - Malheiro A
+  - McDaniel K
+  - Ovetsky M
+  - Riley G
+  - Zhou G
+  - Holmes JB
+  - Kattman BL
+  - Maglott DR
+  doi: 10.1093/nar/gkx1153
+  id: doi:10.1093/nar/gkx1153
+  journal: Nucleic Acids Research
+  title: ClinVar - improving access to variant interpretations and supporting evidence
+  year: '2018'
 ---
 # ClinVar
 
