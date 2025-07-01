@@ -1108,6 +1108,17 @@ enums:
           for representing Boolean networks. Used with the BoolNet package
           in R for modeling and analyzing biological networks.
         meaning: https://cran.r-project.org/package=BoolNet
+      doc:
+        description: >-
+          The Microsoft Word Document (DOC) format, a binary file format
+          used by Microsoft Word. It is commonly used for word processing documents.
+      docx:
+        description: >-
+          The Microsoft Word Open XML Document (DOCX) format,
+          a modern file format for Microsoft Word documents.
+          It is a zipped, XML-based file format that allows for
+          more efficient storage and better compatibility with other software,
+          as compared to the older DOC format.
 
   StandardEnum:
     description: >-

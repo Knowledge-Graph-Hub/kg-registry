@@ -4642,15 +4642,47 @@ resources:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
 - activity_status: active
-  category: DataSource
-  description: Stub Resource page for cob. This page was automatically generated because
-    it was referenced by other resources.
+  category: DataModel
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: bpeters@lji.org
+    label: Bjoern Peters
+  description: The Core Ontology for Biology and Biomedicine (COB) brings together
+    key terms from a wide range of OBO Foundry projects into a single, small ontology
+    to improve interoperability and term reuse across the OBO community.
   domains:
-  - stub
+  - upper
+  - biomedical
+  - biological systems
+  homepage_url: https://obofoundry.org/COB/
   id: cob
   layout: resource_detail
-  name: Cob
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+  name: Core Ontology for Biology and Biomedicine
   products:
+  - category: DataModelProduct
+    description: Core Ontology for Biology and Biomedicine, main ontology
+    format: owl
+    id: cob.owl
+    name: COB OWL
+    product_url: http://purl.obolibrary.org/obo/cob.owl
+  - category: DataModelProduct
+    description: Base module for COB
+    format: owl
+    id: cob.base
+    name: COB Base Module
+    product_url: http://purl.obolibrary.org/obo/cob/cob-base.owl
+  - category: DataModelProduct
+    description: COB with native IDs preserved rather than rewired to OBO IDs
+    format: owl
+    id: cob.native
+    name: COB Native Module
+    product_url: http://purl.obolibrary.org/obo/cob/cob-native.owl
   - category: DataModelProduct
     description: The latest release of EFO in OWL format
     format: owl
@@ -4755,9 +4787,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  repository: https://github.com/OBOFoundry/COB
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -6692,14 +6722,56 @@ resources:
     year: '2017'
 - activity_status: active
   category: DataSource
-  description: Stub Resource page for dsstox. This page was automatically generated
-    because it was referenced by other resources.
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: EPA_ComptoxTools@epa.gov
+    label: EPA CCTE
+  description: EPA's Distributed Structure-Searchable Toxicity (DSSTox) Database contains
+    curated chemical substances mapped to data including chemical identifiers and
+    structure representations, providing the chemical underpinning for EPA's computational
+    toxicology tools.
   domains:
-  - stub
+  - biomedical
+  - chemistry and biochemistry
+  - environment
+  - health
+  homepage_url: https://www.epa.gov/comptox-tools/distributed-structure-searchable-toxicity-dsstox-database
   id: dsstox
   layout: resource_detail
-  name: Dsstox
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+  name: DSSTox
   products:
+  - category: Product
+    description: The complete DSSTox database containing over 1.2 million chemical
+      substances with identifiers and structures
+    format: csv
+    id: dsstox.complete
+    name: DSSTox Complete Database
+    product_url: https://doi.org/10.23645/epacomptox.5588566
+  - category: GraphicalInterface
+    description: The CompTox Chemicals Dashboard provides access to the DSSTox database
+      through a web interface
+    format: http
+    id: dsstox.dashboard
+    name: CompTox Chemicals Dashboard
+    product_url: https://comptox.epa.gov/dashboard
+  - category: ProgrammingInterface
+    description: Public API for programmatic access to DSSTox data
+    id: dsstox.api
+    is_public: true
+    name: CompTox API
+    product_url: https://api-ccte.epa.gov/docs/index.html
+  - category: DocumentationProduct
+    description: Documentation for the DSSTox database
+    format: docx
+    id: dsstox.description
+    name: DSSToxDB Description
+    product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
     format: http
@@ -6761,9 +6833,26 @@ resources:
     secondary_source:
     - alzkb
     - hetionet
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  publications:
+  - authors:
+    - Williams AJ
+    - Grulke CM
+    - Edwards J
+    - McEachran AD
+    - Mansouri K
+    - Baker NC
+    - Patlewicz G
+    - Shah I
+    - Wambaugh JF
+    - Judson RS
+    - Richard AM
+    doi: 10.1186/s13321-017-0247-6
+    id: doi:10.1186/s13321-017-0247-6
+    journal: Journal of Cheminformatics
+    preferred: true
+    title: 'The CompTox Chemistry Dashboard: a community data resource for environmental
+      chemistry'
+    year: '2017'
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -8509,6 +8598,42 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for finngen. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: finngen
+  layout: resource_detail
+  name: Finngen
+  products:
+  - category: GraphProduct
+    description: DisGeNET data, including gene to disease associations and variant
+      to disease associations (requires registration and subscription).
+    id: disgenet.data
+    name: DisGeNET Data
+    original_source:
+    - clingen
+    - clinvar
+    - mgd
+    - rgd
+    - orphanet
+    - psygenet
+    - uniprot
+    - disgenet
+    - hp
+    - gwascat
+    - phewascat
+    - ukbiobank
+    - finngen
+    - clinicaltrialsgov
+    product_url: https://www.disgenet.com/
+    secondary_source:
+    - disgenet
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -11063,6 +11188,42 @@ resources:
     secondary_source:
     - alzkb
     - hetionet
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for gwascat. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: gwascat
+  layout: resource_detail
+  name: Gwascat
+  products:
+  - category: GraphProduct
+    description: DisGeNET data, including gene to disease associations and variant
+      to disease associations (requires registration and subscription).
+    id: disgenet.data
+    name: DisGeNET Data
+    original_source:
+    - clingen
+    - clinvar
+    - mgd
+    - rgd
+    - orphanet
+    - psygenet
+    - uniprot
+    - disgenet
+    - hp
+    - gwascat
+    - phewascat
+    - ukbiobank
+    - finngen
+    - clinicaltrialsgov
+    product_url: https://www.disgenet.com/
+    secondary_source:
+    - disgenet
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -15459,6 +15620,42 @@ resources:
     id: doi:10.1093/bib/bbs058
     title: Reconciliation of metabolites and biochemical reactions for metabolic networks
     year: '2014'
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for mgd. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: mgd
+  layout: resource_detail
+  name: Mgd
+  products:
+  - category: GraphProduct
+    description: DisGeNET data, including gene to disease associations and variant
+      to disease associations (requires registration and subscription).
+    id: disgenet.data
+    name: DisGeNET Data
+    original_source:
+    - clingen
+    - clinvar
+    - mgd
+    - rgd
+    - orphanet
+    - psygenet
+    - uniprot
+    - disgenet
+    - hp
+    - gwascat
+    - phewascat
+    - ukbiobank
+    - finngen
+    - clinicaltrialsgov
+    product_url: https://www.disgenet.com/
+    secondary_source:
+    - disgenet
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -21874,6 +22071,42 @@ resources:
     about this resource.
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for orphanet. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: orphanet
+  layout: resource_detail
+  name: Orphanet
+  products:
+  - category: GraphProduct
+    description: DisGeNET data, including gene to disease associations and variant
+      to disease associations (requires registration and subscription).
+    id: disgenet.data
+    name: DisGeNET Data
+    original_source:
+    - clingen
+    - clinvar
+    - mgd
+    - rgd
+    - orphanet
+    - psygenet
+    - uniprot
+    - disgenet
+    - hp
+    - gwascat
+    - phewascat
+    - ukbiobank
+    - finngen
+    - clinicaltrialsgov
+    product_url: https://www.disgenet.com/
+    secondary_source:
+    - disgenet
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   contacts:
   - category: Organization
     contact_details:
@@ -23333,6 +23566,42 @@ resources:
       label: The Monarch Initiative
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for phewascat. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: phewascat
+  layout: resource_detail
+  name: Phewascat
+  products:
+  - category: GraphProduct
+    description: DisGeNET data, including gene to disease associations and variant
+      to disease associations (requires registration and subscription).
+    id: disgenet.data
+    name: DisGeNET Data
+    original_source:
+    - clingen
+    - clinvar
+    - mgd
+    - rgd
+    - orphanet
+    - psygenet
+    - uniprot
+    - disgenet
+    - hp
+    - gwascat
+    - phewascat
+    - ukbiobank
+    - finngen
+    - clinicaltrialsgov
+    product_url: https://www.disgenet.com/
+    secondary_source:
+    - disgenet
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   description: Stub Resource page for pid. This page was automatically generated because
     it was referenced by other resources.
   domains:
@@ -23884,6 +24153,42 @@ resources:
   tags:
   - core
   version: '3.0'
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for psygenet. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: psygenet
+  layout: resource_detail
+  name: Psygenet
+  products:
+  - category: GraphProduct
+    description: DisGeNET data, including gene to disease associations and variant
+      to disease associations (requires registration and subscription).
+    id: disgenet.data
+    name: DisGeNET Data
+    original_source:
+    - clingen
+    - clinvar
+    - mgd
+    - rgd
+    - orphanet
+    - psygenet
+    - uniprot
+    - disgenet
+    - hp
+    - gwascat
+    - phewascat
+    - ukbiobank
+    - finngen
+    - clinicaltrialsgov
+    product_url: https://www.disgenet.com/
+    secondary_source:
+    - disgenet
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -24538,6 +24843,42 @@ resources:
     - alzkb
     - hetionet
   repository: ''
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for rgd. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: rgd
+  layout: resource_detail
+  name: Rgd
+  products:
+  - category: GraphProduct
+    description: DisGeNET data, including gene to disease associations and variant
+      to disease associations (requires registration and subscription).
+    id: disgenet.data
+    name: DisGeNET Data
+    original_source:
+    - clingen
+    - clinvar
+    - mgd
+    - rgd
+    - orphanet
+    - psygenet
+    - uniprot
+    - disgenet
+    - hp
+    - gwascat
+    - phewascat
+    - ukbiobank
+    - finngen
+    - clinicaltrialsgov
+    product_url: https://www.disgenet.com/
+    secondary_source:
+    - disgenet
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -27722,6 +28063,42 @@ resources:
     label: UBKG is part of Petagraph
     type: actual
     url: https://doi.org/10.1038/s41597-024-04070-w
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for ukbiobank. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: ukbiobank
+  layout: resource_detail
+  name: Ukbiobank
+  products:
+  - category: GraphProduct
+    description: DisGeNET data, including gene to disease associations and variant
+      to disease associations (requires registration and subscription).
+    id: disgenet.data
+    name: DisGeNET Data
+    original_source:
+    - clingen
+    - clinvar
+    - mgd
+    - rgd
+    - orphanet
+    - psygenet
+    - uniprot
+    - disgenet
+    - hp
+    - gwascat
+    - phewascat
+    - ukbiobank
+    - finngen
+    - clinicaltrialsgov
+    product_url: https://www.disgenet.com/
+    secondary_source:
+    - disgenet
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
