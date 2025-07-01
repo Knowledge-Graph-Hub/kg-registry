@@ -7,12 +7,14 @@ contacts:
   - contact_type: email
     value: EPA_ComptoxTools@epa.gov
   label: EPA CCTE
-description: EPA's Distributed Structure-Searchable Toxicity (DSSTox) Database contains curated chemical substances mapped to data including chemical identifiers and structure representations, providing the chemical underpinning for EPA's computational toxicology tools.
+description: EPA's Distributed Structure-Searchable Toxicity (DSSTox) Database contains
+  curated chemical substances mapped to data including chemical identifiers and structure
+  representations, providing the chemical underpinning for EPA's computational toxicology
+  tools.
 domains:
 - biomedical
 - chemistry and biochemistry
 - environment
-- toxicology
 - health
 homepage_url: https://www.epa.gov/comptox-tools/distributed-structure-searchable-toxicity-dsstox-database
 id: dsstox
@@ -21,6 +23,94 @@ license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0
 name: DSSTox
+products:
+- category: Product
+  description: The complete DSSTox database containing over 1.2 million chemical substances
+    with identifiers and structures
+  format: csv
+  id: dsstox.complete
+  name: DSSTox Complete Database
+  product_url: https://doi.org/10.23645/epacomptox.5588566
+- category: GraphicalInterface
+  description: The CompTox Chemicals Dashboard provides access to the DSSTox database
+    through a web interface
+  format: http
+  id: dsstox.dashboard
+  name: CompTox Chemicals Dashboard
+  product_url: https://comptox.epa.gov/dashboard
+- category: ProgrammingInterface
+  description: Public API for programmatic access to DSSTox data
+  id: dsstox.api
+  is_public: true
+  name: CompTox API
+  product_url: https://api-ccte.epa.gov/docs/index.html
+- category: DocumentationProduct
+  description: Documentation for the DSSTox database
+  format: docx
+  id: dsstox.description
+  name: DSSToxDB Description
+  product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
+- category: GraphicalInterface
+  description: A browser interface for a knowledge graph for Alzheimer's Disease.
+  format: http
+  id: alzkb.browser
+  name: AlzKB Graph Database Browser
+  original_source:
+  - aop-db
+  - bgee
+  - disgenet
+  - do
+  - drugbank
+  - dsstox
+  - go
+  - gwas-catalog
+  - hrpimp
+  - lincs-l1000
+  - mesh
+  - ncbigene
+  - pharmacotherapydb
+  - pid
+  - pubchem
+  - reactome
+  - reactome
+  - sider
+  - tissues
+  - uberon
+  - wikipathways
+  product_url: https://alzkb.ai:7473/login
+  secondary_source:
+  - alzkb
+  - hetionet
+- category: GraphProduct
+  description: Memgraph data release for AlzKB.
+  id: alzkb.data
+  name: AlzKB Data Release (Version 2.0.0)
+  original_source:
+  - aop-db
+  - bgee
+  - disgenet
+  - do
+  - drugbank
+  - dsstox
+  - go
+  - gwas-catalog
+  - hrpimp
+  - lincs-l1000
+  - mesh
+  - ncbigene
+  - pharmacotherapydb
+  - pid
+  - pubchem
+  - reactome
+  - reactome
+  - sider
+  - tissues
+  - uberon
+  - wikipathways
+  product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
+  secondary_source:
+  - alzkb
+  - hetionet
 publications:
 - authors:
   - Williams AJ
@@ -38,31 +128,9 @@ publications:
   id: doi:10.1186/s13321-017-0247-6
   journal: Journal of Cheminformatics
   preferred: true
-  title: 'The CompTox Chemistry Dashboard: a community data resource for environmental chemistry'
+  title: 'The CompTox Chemistry Dashboard: a community data resource for environmental
+    chemistry'
   year: '2017'
-products:
-- category: Product
-  description: The complete DSSTox database containing over 1.2 million chemical substances with identifiers and structures
-  id: dsstox.complete
-  name: DSSTox Complete Database
-  product_url: https://doi.org/10.23645/epacomptox.5588566
-- category: GraphicalInterface
-  description: The CompTox Chemicals Dashboard provides access to the DSSTox database through a web interface
-  format: html
-  id: dsstox.dashboard
-  name: CompTox Chemicals Dashboard
-  product_url: https://comptox.epa.gov/dashboard
-- category: API
-  description: Public API for programmatic access to DSSTox data
-  id: dsstox.api
-  name: CompTox API
-  product_url: https://api-ccte.epa.gov/docs/index.html
-- category: DocumentationProduct
-  description: Documentation for the DSSTox database 
-  format: docx
-  id: dsstox.description
-  name: DSSToxDB Description
-  product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
 ---
 # DSSTox
 
