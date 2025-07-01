@@ -493,6 +493,14 @@ class FormatEnum(str, Enum):
     """
     The Boolean Network (BoolNet) format, which is a format for representing Boolean networks. Used with the BoolNet package in R for modeling and analyzing biological networks.
     """
+    doc = "doc"
+    """
+    The Microsoft Word Document (DOC) format, a binary file format used by Microsoft Word. It is commonly used for word processing documents.
+    """
+    docx = "docx"
+    """
+    The Microsoft Word Open XML Document (DOCX) format, a modern file format for Microsoft Word documents. It is a zipped, XML-based file format that allows for more efficient storage and better compatibility with other software, as compared to the older DOC format.
+    """
 
 
 class StandardEnum(str, Enum):
