@@ -1241,7 +1241,9 @@
                 "sbml",
                 "sif",
                 "dot",
-                "boolnet"
+                "boolnet",
+                "doc",
+                "docx"
             ],
             "title": "FormatEnum",
             "type": "string"
