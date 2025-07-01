@@ -62,6 +62,7 @@ erccreg,active,PASS
 faldo,active,PASS
 fbbt,active,PASS
 fbdv,active,PASS
+finngen,active,PASS
 fma,active,PASS
 foodb,active,PASS
 gdsc,active,PASS
@@ -81,6 +82,7 @@ gtex,active,PASS
 gtopdb,active,PASS
 gutmgene,active,PASS
 gwas-catalog,active,PASS
+gwascat,active,PASS
 hancestro,active,PASS
 hetionet,active,PASS
 hgnc,active,PASS
@@ -118,6 +120,7 @@ medline,active,PASS
 mesh,active,PASS
 metacyc,active,PASS
 metanetx,active,PASS
+mgd,active,PASS
 mgmlink,active,PASS
 mi,active,PASS
 mixs,active,PASS
@@ -151,6 +154,7 @@ ontology-kp,active,PASS
 opentargets,active,PASS
 orcid,active,PASS
 ordo,active,PASS
+orphanet,active,PASS
 orthodb,active,PASS
 pankbase,active,PASS
 panther,active,PASS
@@ -163,16 +167,19 @@ pharmacotherapydb,active,PASS
 pharmgkb,active,PASS
 pheknowlator,active,PASS
 phenio,active,PASS
+phewascat,active,PASS
 pid,active,PASS
 po,active,PASS
 pombase,active,PASS
 pr,active,PASS
 primekg,active,PASS
 protcid,active,PASS
+psygenet,active,PASS
 pubchem,active,PASS
 pubtator,active,PASS
 reacto,active,PASS
 reactome,active,PASS
+rgd,active,PASS
 rhea,active,PASS
 rna-kg,active,PASS
 ro,active,PASS
@@ -201,6 +208,7 @@ to,active,PASS
 ubergraph,active,PASS
 uberon,active,PASS
 ubkg,active,PASS
+ukbiobank,active,PASS
 uniprot,active,PASS
 uo,active,PASS
 wbls,active,PASS
