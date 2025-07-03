@@ -236,7 +236,7 @@ layout: default
         {% for p in page.publications %}
         <div class="list-group-item">
           {% if p.doi %}
-          <a href="http://dx.doi.org/{{p.doi}}">{{p.title}}</a>
+          <a href="https://doi.org/{{p.doi | remove: 'doi:'}}">{{p.title}}</a>
           {% else %}
           <a href="{{p.id}}">{{p.title}}</a>
           {% endif %}
@@ -432,7 +432,7 @@ layout: default
             <dd>
               <ul style="padding-left: 20px">
                 {% for publication in p.publications %}
-                <li><a href="https://doi.org/{{publication.doi}}">{{publication.title}}</a></li>
+                <li><a href="https://doi.org/{{publication.doi | remove: 'doi:'}}">{{publication.title}}</a></li>
                 {% endfor %}
               </ul>
             </dd>

@@ -1,0 +1,10 @@
+<!-- DOI normalization helper functions -->
+{% comment %}
+  This helper provides functions to normalize DOI strings by removing the 'doi:' prefix if present.
+  This ensures DOI URLs are generated correctly when combined with resolver URLs.
+{% endcomment %}
+
+{% comment %}
+  Usage: {% assign normalized_doi = doi_value | remove: 'doi:' %}
+  This Liquid filter removes the 'doi:' prefix from DOI strings if present.
+{% endcomment %}

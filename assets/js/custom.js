@@ -242,9 +242,14 @@ jQuery(document).ready(function () {
             `<a href="${license_url}">${license_label}</a>`;
     }
 
+    // Helper function to normalize DOI by removing 'doi:' prefix if present
+    function normalizeDoi(doi) {
+        return doi ? doi.replace(/^doi:/, '') : doi;
+    }
+
     function createPublicationButton(item, title) {
         return (item.publications && item.publications.length > 0) ?
-            `<a role="button" class="btn btn-outline-primary" href="http://dx.doi.org/${item.publications[0].id}" aria-label="View the primary publication for ${title}" title="View the primary publication for ${title}">
+            `<a role="button" class="btn btn-outline-primary" href="https://doi.org/${normalizeDoi(item.publications[0].id)}" aria-label="View the primary publication for ${title}" title="View the primary publication for ${title}">
                 <i class="bi-book" aria-hidden="true"></i>
             </a>` :
             `<a role="button" class="btn btn-outline-primary disabled">
