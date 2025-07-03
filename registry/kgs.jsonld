@@ -9517,13 +9517,33 @@
         {
             "activity_status": "active",
             "category": "DataSource",
-            "description": "Stub Resource page for erccrbp. This page was automatically generated because it was referenced by other resources.",
-            "domains": [
-                "stub"
+            "contacts": [
+                {
+                    "category": "Organization",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "info@exrna.org"
+                        }
+                    ],
+                    "label": "Extracellular RNA Communication Consortium"
+                }
             ],
+            "description": "ERCC RNA Binding Protein dataset (ERCCRBP) is a collection of data focused on RNA binding proteins involved in extracellular RNA functions as part of the NIH Common Fund's Extracellular RNA Communication Consortium (ERCC) program. This dataset provides insights into the protein-RNA interactions important for exRNA stability, transport, and signaling.",
+            "domains": [
+                "biomedical",
+                "genomics",
+                "chemistry and biochemistry"
+            ],
+            "homepage_url": "https://exrna.org/",
             "id": "erccrbp",
             "layout": "resource_detail",
-            "name": "Erccrbp",
+            "license": {
+                "id": "https://creativecommons.org/licenses/by/4.0/",
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+            },
+            "name": "ERCC RNA Binding Protein Dataset",
             "products": [
                 {
                     "category": "GraphProduct",
@@ -9657,21 +9677,38 @@
                         "ubkg"
                     ]
                 }
-            ],
-            "warnings": [
-                "This is an automatically generated stub page. Please replace with accurate information about this resource."
             ]
         },
         {
             "activity_status": "active",
             "category": "DataSource",
-            "description": "Stub Resource page for erccreg. This page was automatically generated because it was referenced by other resources.",
-            "domains": [
-                "stub"
+            "contacts": [
+                {
+                    "category": "Organization",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "info@exrna.org"
+                        }
+                    ],
+                    "label": "Extracellular RNA Communication Consortium"
+                }
             ],
+            "description": "ERCC Regulatory Element dataset (erccreg) is a collection of data related to regulatory elements of extracellular RNA as part of the NIH Common Fund's Extracellular RNA Communication Consortium (ERCC) program. This dataset focuses on RNA-based regulatory mechanisms involved in extracellular communication.",
+            "domains": [
+                "biomedical",
+                "genomics",
+                "chemistry and biochemistry"
+            ],
+            "homepage_url": "https://exrna.org/",
             "id": "erccreg",
             "layout": "resource_detail",
-            "name": "Erccreg",
+            "license": {
+                "id": "https://creativecommons.org/licenses/by/4.0/",
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+            },
+            "name": "ERCC Regulatory Element Dataset",
             "products": [
                 {
                     "category": "GraphProduct",
@@ -9805,9 +9842,6 @@
                         "ubkg"
                     ]
                 }
-            ],
-            "warnings": [
-                "This is an automatically generated stub page. Please replace with accurate information about this resource."
             ]
         },
         {
@@ -31501,15 +31535,72 @@
         },
         {
             "activity_status": "active",
-            "category": "DataSource",
-            "description": "Stub Resource page for so. This page was automatically generated because it was referenced by other resources.",
-            "domains": [
-                "stub"
+            "category": "DataModel",
+            "contacts": [
+                {
+                    "category": "Individual",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "keilbeck@genetics.utah.edu"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "keilbeck"
+                        }
+                    ],
+                    "label": "Karen Eilbeck",
+                    "orcid": "0000-0002-0831-6427"
+                }
             ],
+            "description": "The Sequence Ontology (SO) is a structured controlled vocabulary for the features and attributes of biological sequences. SO provides a common set of terms and definitions that facilitate the exchange, analysis, and management of genomic data.",
+            "domains": [
+                "biomedical",
+                "chemistry and biochemistry",
+                "genomics"
+            ],
+            "homepage_url": "http://www.sequenceontology.org/",
             "id": "so",
             "layout": "resource_detail",
-            "name": "So",
+            "license": {
+                "id": "https://creativecommons.org/licenses/by/4.0/",
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+            },
+            "name": "Sequence Ontology",
             "products": [
+                {
+                    "category": "DataModelProduct",
+                    "description": "Main SO release in OWL Format",
+                    "format": "owl",
+                    "id": "so.owl",
+                    "name": "SO OWL",
+                    "product_url": "http://purl.obolibrary.org/obo/so.owl"
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "Main SO release in OBO Format",
+                    "format": "obo",
+                    "id": "so.obo",
+                    "name": "SO OBO",
+                    "product_url": "http://purl.obolibrary.org/obo/so.obo"
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "Sequence Ontology Feature Annotation (SOFA) subset in OWL format. This subset includes only locatable sequence features and is designed for use in such outputs as GFF3.",
+                    "format": "owl",
+                    "id": "sofa.owl",
+                    "name": "SOFA OWL",
+                    "product_url": "http://purl.obolibrary.org/obo/so/subsets/SOFA.owl"
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "Sequence Ontology Feature Annotation (SOFA) subset in OBO format. This subset includes only locatable sequence features and is designed for use in such outputs as GFF3.",
+                    "format": "obo",
+                    "id": "sofa.obo",
+                    "name": "SOFA OBO",
+                    "product_url": "http://purl.obolibrary.org/obo/so/subsets/SOFA.obo"
+                },
                 {
                     "category": "DataModelProduct",
                     "description": "The latest release of EFO in OWL format",
@@ -31623,9 +31714,38 @@
                     ]
                 }
             ],
-            "warnings": [
-                "This is an automatically generated stub page. Please replace with accurate information about this resource."
-            ]
+            "publications": [
+                {
+                    "authors": [
+                        "Eilbeck K",
+                        "Lewis SE",
+                        "Mungall CJ",
+                        "Yandell M",
+                        "Stein L",
+                        "Durbin R",
+                        "Ashburner M"
+                    ],
+                    "doi": "10.1186/gb-2005-6-5-r44",
+                    "id": "doi:10.1186/gb-2005-6-5-r44",
+                    "journal": "Genome Biology",
+                    "preferred": true,
+                    "title": "The Sequence Ontology: a tool for the unification of genome annotations",
+                    "year": "2005"
+                },
+                {
+                    "authors": [
+                        "Mungall CJ",
+                        "Batchelor C",
+                        "Eilbeck K"
+                    ],
+                    "doi": "10.1016/j.jbi.2010.03.002",
+                    "id": "doi:10.1016/j.jbi.2010.03.002",
+                    "journal": "Journal of Biomedical Informatics",
+                    "title": "Evolution of the Sequence Ontology terms and relationships",
+                    "year": "2010"
+                }
+            ],
+            "repository": "https://github.com/The-Sequence-Ontology/SO-Ontologies"
         },
         {
             "activity_status": "active",
