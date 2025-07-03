@@ -3,20 +3,18 @@ activity_status: active
 category: DataModel
 contacts:
 - category: Individual
+  orcid: 0000-0002-0831-6427
   contact_details:
   - contact_type: email
     value: keilbeck@genetics.utah.edu
-  - contact_type: orcid
-    value: 0000-0002-0831-6427
   - contact_type: github
     value: keilbeck
   label: Karen Eilbeck
-description: The Sequence Ontology (SO) is a structured controlled vocabulary for the
-  features and attributes of biological sequences. SO provides a common set of terms
-  and definitions that facilitate the exchange, analysis, and management of genomic
-  data.
+description: The Sequence Ontology (SO) is a structured controlled vocabulary for
+  the features and attributes of biological sequences. SO provides a common set of
+  terms and definitions that facilitate the exchange, analysis, and management of
+  genomic data.
 domains:
-- biology
 - biomedical
 - chemistry and biochemistry
 - genomics
@@ -27,7 +25,6 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 name: Sequence Ontology
-repository: https://github.com/The-Sequence-Ontology/SO-Ontologies
 products:
 - category: DataModelProduct
   description: Main SO release in OWL Format
@@ -42,17 +39,125 @@ products:
   name: SO OBO
   product_url: http://purl.obolibrary.org/obo/so.obo
 - category: DataModelProduct
-  description: Sequence Ontology Feature Annotation (SOFA) subset in OWL format. This subset includes only locatable sequence features and is designed for use in such outputs as GFF3.
+  description: Sequence Ontology Feature Annotation (SOFA) subset in OWL format. This
+    subset includes only locatable sequence features and is designed for use in such
+    outputs as GFF3.
   format: owl
   id: sofa.owl
   name: SOFA OWL
   product_url: http://purl.obolibrary.org/obo/so/subsets/SOFA.owl
 - category: DataModelProduct
-  description: Sequence Ontology Feature Annotation (SOFA) subset in OBO format. This subset includes only locatable sequence features and is designed for use in such outputs as GFF3.
+  description: Sequence Ontology Feature Annotation (SOFA) subset in OBO format. This
+    subset includes only locatable sequence features and is designed for use in such
+    outputs as GFF3.
   format: obo
   id: sofa.obo
   name: SOFA OBO
   product_url: http://purl.obolibrary.org/obo/so/subsets/SOFA.obo
+- category: DataModelProduct
+  description: The latest release of EFO in OWL format
+  format: owl
+  id: efo.owl
+  name: EFO OWL
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - do
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_url: https://www.ebi.ac.uk/efo/efo.owl
+  secondary_source:
+  - efo
+- category: DataModelProduct
+  description: The latest release of EFO in OBO format
+  format: obo
+  id: efo.obo
+  name: EFO OBO
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - do
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_url: https://www.ebi.ac.uk/efo/efo.obo
+  secondary_source:
+  - efo
 publications:
 - authors:
   - Eilbeck K
@@ -75,8 +180,9 @@ publications:
   doi: 10.1016/j.jbi.2010.03.002
   id: doi:10.1016/j.jbi.2010.03.002
   journal: Journal of Biomedical Informatics
-  title: 'Evolution of the Sequence Ontology terms and relationships'
+  title: Evolution of the Sequence Ontology terms and relationships
   year: '2010'
+repository: https://github.com/The-Sequence-Ontology/SO-Ontologies
 ---
 # Sequence Ontology
 
