@@ -3087,7 +3087,7 @@
         },
         "Publication": {
             "additionalProperties": false,
-            "description": "A publication associated with a resource. Its id should be a DOI (with prefix), but a URL is acceptable if a DOI is not available.",
+            "description": "A publication associated with a resource. Its id should be in CURIE format, so it may be a DOI (with prefix) or a URL.",
             "properties": {
                 "authors": {
                     "description": "The authors of the publication.",
@@ -3125,7 +3125,7 @@
                     ]
                 },
                 "doi": {
-                    "description": "The DOI of the publication. This should include the doi: prefix.",
+                    "description": "The DOI of the publication. This does not need to include a prefix of any kind, as it will be formatted as a URL.",
                     "type": [
                         "string",
                         "null"
