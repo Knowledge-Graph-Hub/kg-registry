@@ -131,3 +131,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .idea/
+
+# DuckDB database files
+*.duckdb
+*.duckdb.wal
