@@ -1,0 +1,530 @@
+{
+  "stats": {
+    "total_resources": 219,
+    "active_resources": 216,
+    "by_category": {
+      "DataSource": 139,
+      "KnowledgeGraph": 53,
+      "DataModel": 15,
+      "Resource": 10,
+      "Aggregator": 2
+    },
+    "by_domain": {
+      "stub": 78,
+      "health": 68,
+      "biological systems": 48,
+      "biomedical": 43,
+      "genomics": 33,
+      "chemistry and biochemistry": 20,
+      "organisms": 15,
+      "drug discovery": 15,
+      "pharmacology": 14,
+      "clinical": 11,
+      "precision medicine": 10,
+      "proteomics": 9,
+      "pathways": 8,
+      "microbiology": 8,
+      "environment": 6,
+      "phenotype": 5,
+      "systems biology": 5,
+      "upper": 4,
+      "translational": 4,
+      "other": 4,
+      "public health": 3,
+      "neuroscience": 3,
+      "medical imaging": 2,
+      "anatomy and development": 2,
+      "literature": 2,
+      "simulation": 1,
+      "digital health": 1,
+      "social determinants": 1,
+      "food science": 1,
+      "plant science": 1,
+      "microbiome": 1,
+      "nutrition": 1,
+      "information technology": 1
+    }
+  },
+  "active_knowledge_graphs": [
+    {
+      "id": "alzkb",
+      "name": "Alzheimer's Knowledge Base",
+      "domains": [
+        "neuroscience",
+        "biomedical",
+        "health",
+        "drug discovery",
+        "genomics"
+      ],
+      "homepage_url": "https://alzkb.ai/Home"
+    },
+    {
+      "id": "biomarker",
+      "name": "BiomarkerKB",
+      "domains": [
+        "health",
+        "biological systems",
+        "biomedical"
+      ],
+      "homepage_url": "https://glygen.ccrc.uga.edu/frontend/home/"
+    },
+    {
+      "id": "biomarkerkg",
+      "name": "Biomarker Knowledge Graph",
+      "domains": [
+        "health",
+        "biological systems"
+      ],
+      "homepage_url": "https://bkg.dev.maayanlab.cloud/"
+    },
+    {
+      "id": "bioteque",
+      "name": "Bioteque",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": "https://bioteque.irbbarcelona.org/"
+    },
+    {
+      "id": "cam-kp",
+      "name": "Exposures KP (cam kp)",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": "https://github.com/ExposuresProvider/cam-kp-api"
+    },
+    {
+      "id": "cfde-ddkg",
+      "name": "Data Distillery Knowledge Graph (DDKG)",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": "https://dd-kg-ui.cfde.cloud/about"
+    },
+    {
+      "id": "cl-kg",
+      "name": "Cell Ontology Knowledge Graph (CL-KG)",
+      "domains": [
+        "biological systems"
+      ],
+      "homepage_url": "https://cellular-semantics.github.io/CL_KG/"
+    },
+    {
+      "id": "clinical-data-kp",
+      "name": "Clinical Data KP",
+      "domains": [
+        "health",
+        "clinical",
+        "digital health",
+        "medical imaging"
+      ],
+      "homepage_url": "https://ncats.nih.gov/research/research-activities/translator/projects"
+    },
+    {
+      "id": "connections-hypothesis-kp",
+      "name": "Connections Hypothesis KP",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": "https://github.com/di2ag/chp_api"
+    },
+    {
+      "id": "cpathkg",
+      "name": "C-Path Knowledge Graph",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": null
+    },
+    {
+      "id": "drkg",
+      "name": "Drug Repurposing Knowledge Graph",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": "https://github.com/gnn4dr/DRKG"
+    },
+    {
+      "id": "drug-approvals-kp",
+      "name": "Drug Approvals KP",
+      "domains": [
+        "health",
+        "pharmacology",
+        "drug discovery",
+        "biomedical"
+      ],
+      "homepage_url": null
+    },
+    {
+      "id": "ebrains",
+      "name": "EBRAINS Knowledge Graph",
+      "domains": [
+        "health",
+        "neuroscience",
+        "biomedical"
+      ],
+      "homepage_url": "https://docs.kg.ebrains.eu/"
+    },
+    {
+      "id": "eco-kg",
+      "name": "eco-KG",
+      "domains": [
+        "organisms",
+        "environment",
+        "biological systems"
+      ],
+      "homepage_url": "https://kghub.org/eco-kg/index.html"
+    },
+    {
+      "id": "emikg",
+      "name": "EMI KG",
+      "domains": [
+        "biological systems",
+        "chemistry and biochemistry"
+      ],
+      "homepage_url": "https://github.com/digital-botanical-gardens-initiative/earth_metabolome_ontology"
+    },
+    {
+      "id": "genetics-kp",
+      "name": "Genetics KP",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": null
+    },
+    {
+      "id": "genomickb",
+      "name": "GenomicKB",
+      "domains": [
+        "biological systems",
+        "genomics",
+        "biomedical"
+      ],
+      "homepage_url": "https://gkb.dcmb.med.umich.edu/"
+    },
+    {
+      "id": "gp-kg",
+      "name": "GP-KG",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": "http://nlp.case.edu/public/data/GPKG-Predict/"
+    },
+    {
+      "id": "hetionet",
+      "name": "Hetionet",
+      "domains": [
+        "biomedical",
+        "drug discovery",
+        "genomics",
+        "health",
+        "biological systems"
+      ],
+      "homepage_url": "https://het.io/"
+    },
+    {
+      "id": "hra-kg",
+      "name": "Human Reference Atlas Knowledge Graph (HRA KG)",
+      "domains": [
+        "health",
+        "anatomy and development",
+        "biological systems",
+        "biomedical"
+      ],
+      "homepage_url": "https://apps.humanatlas.io/dashboard/data"
+    },
+    {
+      "id": "icees-kg",
+      "name": "Exposures KP (icees-kg)",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": ""
+    },
+    {
+      "id": "ikraph",
+      "name": "iKraph",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": "https://biokde.insilicom.com/"
+    },
+    {
+      "id": "kg-alzheimers",
+      "name": "KG-Alzheimers",
+      "domains": [
+        "health",
+        "neuroscience",
+        "biomedical"
+      ],
+      "homepage_url": "https://kghub.org/kg-alzheimers/index.html"
+    },
+    {
+      "id": "kg-covid-19",
+      "name": "KG-COVID-19",
+      "domains": [
+        "organisms",
+        "health",
+        "microbiology",
+        "public health"
+      ],
+      "homepage_url": "https://github.com/Knowledge-Graph-Hub/kg-covid-19/wiki"
+    },
+    {
+      "id": "kg-ebi-gene2pheno",
+      "name": "EBI Gene2Phenotype KG",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": null
+    },
+    {
+      "id": "kg-enp",
+      "name": "kg-enp",
+      "domains": [
+        "organisms"
+      ],
+      "homepage_url": "https://enpkg.commons-lab.org/"
+    },
+    {
+      "id": "kg-idg",
+      "name": "KG-IDG",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": "https://kghub.org/kg-idg/index.html"
+    },
+    {
+      "id": "kg-jensenlab-diseases",
+      "name": "JensenLab DISEASES KG",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": null
+    },
+    {
+      "id": "kg-microbe",
+      "name": "KG Microbe",
+      "domains": [
+        "microbiology",
+        "organisms",
+        "phenotype",
+        "microbiome",
+        "biological systems"
+      ],
+      "homepage_url": "https://kghub.org/kg-microbe/index.html"
+    },
+    {
+      "id": "kg-monarch",
+      "name": "KG Monarch",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": "https://kghub.org/kg-monarch/index.html"
+    },
+    {
+      "id": "medkg",
+      "name": "MedKG",
+      "domains": [
+        "biological systems"
+      ],
+      "homepage_url": "http://pitools.niper.ac.in/medkg/"
+    },
+    {
+      "id": "mgmlink",
+      "name": "MGMLink",
+      "domains": [
+        "biological systems",
+        "microbiology"
+      ],
+      "homepage_url": null
+    },
+    {
+      "id": "molecular-data-kp",
+      "name": "MolePro",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": "https://github.com/broadinstitute/molecular-data-provider/"
+    },
+    {
+      "id": "multiomics-kp",
+      "name": "Multiomics KP",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": null
+    },
+    {
+      "id": "nlm-ckn",
+      "name": "NLM-CKN",
+      "domains": [
+        "biological systems",
+        "health",
+        "phenotype"
+      ],
+      "homepage_url": null
+    },
+    {
+      "id": "np-kg",
+      "name": "NP-KG",
+      "domains": [
+        "health",
+        "pharmacology",
+        "drug discovery",
+        "biomedical"
+      ],
+      "homepage_url": "https://doi.org/10.5281/zenodo.6814507"
+    },
+    {
+      "id": "ontology-kp",
+      "name": "Ontology KP",
+      "domains": [
+        "other"
+      ],
+      "homepage_url": null
+    },
+    {
+      "id": "opentargets",
+      "name": "Open Targets",
+      "domains": [
+        "health",
+        "biomedical"
+      ],
+      "homepage_url": "https://www.opentargets.org/"
+    },
+    {
+      "id": "petagraph",
+      "name": "Petagraph",
+      "domains": [
+        "health",
+        "biomedical",
+        "genomics"
+      ],
+      "homepage_url": "https://github.com/TaylorResearchLab/Petagraph"
+    },
+    {
+      "id": "pheknowlator",
+      "name": "PheKnowLator",
+      "domains": [
+        "organisms"
+      ],
+      "homepage_url": "https://github.com/callahantiff/PheKnowLator"
+    },
+    {
+      "id": "primekg",
+      "name": "PrimeKG",
+      "domains": [
+        "health",
+        "precision medicine",
+        "biomedical",
+        "pathways",
+        "systems biology"
+      ],
+      "homepage_url": "https://zitniklab.hms.harvard.edu/projects/PrimeKG"
+    },
+    {
+      "id": "rna-kg",
+      "name": "RNA-KG",
+      "domains": [
+        "organisms"
+      ],
+      "homepage_url": "RNA-KG.anacleto.di.unimi.it/"
+    },
+    {
+      "id": "robokop",
+      "name": "ROBOKOP",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": "http://robokop.renci.org"
+    },
+    {
+      "id": "rtx-kg2",
+      "name": "RTX-KG2",
+      "domains": [
+        "health",
+        "biomedical",
+        "biological systems",
+        "genomics",
+        "pharmacology"
+      ],
+      "homepage_url": "https://github.com/RTXteam/RTX-KG2"
+    },
+    {
+      "id": "service-kp",
+      "name": "Service KP",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": null
+    },
+    {
+      "id": "skm",
+      "name": "Stress Knowledge Map",
+      "domains": [
+        "plant science",
+        "organisms",
+        "systems biology",
+        "pathways"
+      ],
+      "homepage_url": "https://skm.nib.si/"
+    },
+    {
+      "id": "sldb",
+      "name": "sldb",
+      "domains": [
+        "organisms"
+      ],
+      "homepage_url": "https://kghub.io/sldb/"
+    },
+    {
+      "id": "spoke",
+      "name": "SPOKE",
+      "domains": [
+        "biomedical",
+        "health",
+        "genomics",
+        "clinical",
+        "drug discovery",
+        "precision medicine",
+        "pharmacology"
+      ],
+      "homepage_url": "https://spoke.ucsf.edu/"
+    },
+    {
+      "id": "sri-reference-kg",
+      "name": "SRI-Reference KG",
+      "domains": [
+        "health"
+      ],
+      "homepage_url": ""
+    },
+    {
+      "id": "text-mining-kp",
+      "name": "Text Mining KP",
+      "domains": [
+        "other"
+      ],
+      "homepage_url": ""
+    },
+    {
+      "id": "ubergraph",
+      "name": "Ubergraph",
+      "domains": [
+        "other"
+      ],
+      "homepage_url": "https://ubergraph.apps.renci.org/sparql"
+    },
+    {
+      "id": "ubkg",
+      "name": "Unified Biomedical Knowledge Graph",
+      "domains": [
+        "biomedical",
+        "health",
+        "genomics"
+      ],
+      "homepage_url": "https://ubkg.docs.xconsortia.org/"
+    }
+  ]
+}
