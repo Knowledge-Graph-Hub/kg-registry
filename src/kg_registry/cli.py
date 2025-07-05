@@ -18,7 +18,8 @@ def main():
 
 @main.group()
 def duckdb():
-    """DuckDB backend commands."""
+    """Commands for the DuckDB backend."""
+    pass
 
 
 @duckdb.command()
