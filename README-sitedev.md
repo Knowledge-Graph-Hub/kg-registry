@@ -109,7 +109,37 @@ The navigation bar / menu on the top of the page is controlled by
 [_includes/navbar.html](_includes/navbar.html). It should be easy for
 site admins to add new items, rearrange etc as they see fit
 
-### Code quality
+## Advanced Search Feature
+
+The site now includes an advanced search feature that allows users to run SQL queries directly against the KG Registry database using DuckDB-WASM (WebAssembly version of DuckDB that runs in the browser). This feature is available at `/kg-registry/advanced-search.html`.
+
+### DuckDB Database
+
+The KG Registry data is compiled into a DuckDB database file located at `/registry/kg_registry.duckdb`. This file is generated from the registry data and contains tables for resources, products, domains, contacts, and other metadata.
+
+### Updating the DuckDB Database
+
+If you make changes to the registry data and need to regenerate the DuckDB file, you can use the following command (requires DuckDB CLI to be installed):
+
+```shell
+# Export registry data to DuckDB
+python3 src/kg_registry/export_to_duckdb.py registry/kgs.yml registry/kg_registry.duckdb
+```
+
+If the `export_to_duckdb.py` script doesn't exist, you can create it with appropriate code to convert the YAML data to SQL tables in DuckDB.
+
+### Advanced Search Page
+
+The advanced search page (`advanced-search.html`) uses DuckDB-WASM to load and query the database file directly in the browser. This allows users to run complex SQL queries without any server-side processing.
+
+The page includes:
+- A SQL query editor
+- Example queries to help users get started
+- Results display in a table format
+- CSV export functionality for query results
+- Database schema information
+
+## Code quality
 
 1. Install the Node Package Manager (NPM) following [these instructions](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 2. Install the [node package exector (`npx`)](https://www.npmjs.com/package/npx) with NPM using `npm install npx`
