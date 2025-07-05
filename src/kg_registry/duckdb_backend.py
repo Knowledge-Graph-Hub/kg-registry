@@ -1,15 +1,11 @@
 """DuckDB backend for enhanced querying of KG-Registry data."""
 
 import json
-import pathlib
-import tempfile
 from datetime import datetime
-from typing import Any, Dict, List, Optional, Union
+from typing import Any, Dict, List, Optional
 
 import duckdb
 import yaml
-
-from kg_registry.constants import RESOURCE_DIRECTORY, ROOT
 
 __all__ = [
     "DuckDBBackend",
@@ -23,7 +19,7 @@ class DuckDBBackend:
 
     def __init__(self, db_path: Optional[str] = None):
         """Initialize DuckDB backend.
-        
+
         Args:
             db_path: Path to DuckDB database file. If None, uses in-memory database.
         """
@@ -82,48 +78,48 @@ class DuckDBBackend:
 
     def sync_from_yaml(self, yaml_file: str) -> int:
         """Sync data from YAML file to DuckDB.
-        
+
         Args:
             yaml_file: Path to YAML file containing resources data
-            
+
         Returns:
             Number of resources synced
         """
         with open(yaml_file, 'r') as f:
             data = yaml.safe_load(f)
-            
+
         if not data or 'resources' not in data:
             return 0
-            
+
         resources = data['resources']
         synced_count = 0
-        
+
         # Clear existing data
         self.conn.execute("DELETE FROM resources")
         self.conn.execute("DELETE FROM resource_domains")
         self.conn.execute("DELETE FROM resource_products")
-        
+
         for resource in resources:
             if not resource.get('id'):
                 continue
-                
+
             # Insert into resources table
             self._insert_resource(resource)
-            
+
             # Insert domains
             self._insert_domains(resource)
-            
+
             # Insert products
             self._insert_products(resource)
-            
+
             synced_count += 1
-            
+
         return synced_count
 
     def _insert_resource(self, resource: Dict[str, Any]):
         """Insert a resource into the resources table."""
         license_data = resource.get('license', {})
-        
+
         self.conn.execute("""
             INSERT OR REPLACE INTO resources (
                 id, name, description, category, activity_status, homepage_url, repository,
@@ -154,7 +150,7 @@ class DuckDBBackend:
         """Insert resource domains into the resource_domains table."""
         resource_id = resource.get('id')
         domains = resource.get('domains', [])
-        
+
         for domain in domains:
             self.conn.execute("""
                 INSERT OR IGNORE INTO resource_domains (resource_id, domain)
@@ -165,11 +161,11 @@ class DuckDBBackend:
         """Insert resource products into the resource_products table."""
         resource_id = resource.get('id')
         products = resource.get('products', [])
-        
+
         for product in products:
             if not product.get('id'):
                 continue
-                
+
             self.conn.execute("""
                 INSERT OR REPLACE INTO resource_products (
                     resource_id, product_id, product_name, product_category,
@@ -196,43 +192,43 @@ class DuckDBBackend:
 
     def query_resources(self, **filters) -> List[Dict[str, Any]]:
         """Query resources with optional filters.
-        
+
         Args:
             **filters: Keyword arguments for filtering resources
-            
+
         Returns:
             List of resources matching the filters
         """
         query = "SELECT * FROM resources WHERE 1=1"
         params = []
-        
+
         if filters.get('category'):
             query += " AND category = ?"
             params.append(filters['category'])
-            
+
         if filters.get('activity_status'):
             query += " AND activity_status = ?"
             params.append(filters['activity_status'])
-            
+
         if filters.get('domain'):
             query += " AND id IN (SELECT resource_id FROM resource_domains WHERE domain = ?)"
             params.append(filters['domain'])
-            
+
         if filters.get('name_contains'):
             query += " AND name ILIKE ?"
             params.append(f"%{filters['name_contains']}%")
-            
+
         result = self.conn.execute(query, params).fetchall()
         columns = [desc[0] for desc in self.conn.description]
-        
+
         return [dict(zip(columns, row)) for row in result]
 
     def query_by_domain(self, domain: str) -> List[Dict[str, Any]]:
         """Query resources by domain.
-        
+
         Args:
             domain: Domain to filter by
-            
+
         Returns:
             List of resources in the specified domain
         """
@@ -240,7 +236,7 @@ class DuckDBBackend:
 
     def query_active_resources(self) -> List[Dict[str, Any]]:
         """Query all active resources.
-        
+
         Returns:
             List of active resources
         """
@@ -248,10 +244,10 @@ class DuckDBBackend:
 
     def search_resources(self, search_term: str) -> List[Dict[str, Any]]:
         """Search resources by name or description.
-        
+
         Args:
             search_term: Term to search for
-            
+
         Returns:
             List of resources matching the search term
         """
@@ -261,30 +257,30 @@ class DuckDBBackend:
             ORDER BY name
         """
         params = [f"%{search_term}%", f"%{search_term}%"]
-        
+
         result = self.conn.execute(query, params).fetchall()
         columns = [desc[0] for desc in self.conn.description]
-        
+
         return [dict(zip(columns, row)) for row in result]
 
     def get_resource_stats(self) -> Dict[str, Any]:
         """Get statistics about resources in the database.
-        
+
         Returns:
             Dictionary with resource statistics
         """
         stats = {}
-        
+
         # Total resources
         stats['total_resources'] = self.conn.execute(
             "SELECT COUNT(*) FROM resources"
         ).fetchone()[0]
-        
+
         # Active resources
         stats['active_resources'] = self.conn.execute(
             "SELECT COUNT(*) FROM resources WHERE activity_status = 'active'"
         ).fetchone()[0]
-        
+
         # Resources by category
         category_counts = self.conn.execute("""
             SELECT category, COUNT(*) as count 
@@ -294,7 +290,7 @@ class DuckDBBackend:
             ORDER BY count DESC
         """).fetchall()
         stats['by_category'] = {cat: count for cat, count in category_counts}
-        
+
         # Resources by domain
         domain_counts = self.conn.execute("""
             SELECT domain, COUNT(*) as count 
@@ -303,7 +299,7 @@ class DuckDBBackend:
             ORDER BY count DESC
         """).fetchall()
         stats['by_domain'] = {domain: count for domain, count in domain_counts}
-        
+
         return stats
 
     def close(self):
@@ -322,11 +318,11 @@ class DuckDBBackend:
 
 def sync_yaml_to_duckdb(yaml_file: str, db_path: str = None) -> int:
     """Sync YAML data to DuckDB database.
-    
+
     Args:
         yaml_file: Path to YAML file
         db_path: Path to DuckDB database (optional)
-        
+
     Returns:
         Number of resources synced
     """
@@ -336,10 +332,10 @@ def sync_yaml_to_duckdb(yaml_file: str, db_path: str = None) -> int:
 
 def create_database(db_path: str = None) -> DuckDBBackend:
     """Create and initialize a DuckDB database.
-    
+
     Args:
         db_path: Path to DuckDB database file
-        
+
     Returns:
         DuckDBBackend instance
     """
