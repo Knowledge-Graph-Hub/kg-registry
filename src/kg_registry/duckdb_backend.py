@@ -30,7 +30,8 @@ class DuckDBBackend:
     def _init_tables(self):
         """Initialize DuckDB tables for KG-Registry data."""
         # Create resources table
-        self.conn.execute("""
+        self.conn.execute(
+            """
             CREATE TABLE IF NOT EXISTS resources (
                 id VARCHAR PRIMARY KEY,
                 name VARCHAR,
@@ -51,19 +52,23 @@ class DuckDBBackend:
                 raw_data JSON,
                 sync_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
-        """)
+        """
+        )
 
         # Create domains table for better querying
-        self.conn.execute("""
+        self.conn.execute(
+            """
             CREATE TABLE IF NOT EXISTS resource_domains (
                 resource_id VARCHAR,
                 domain VARCHAR,
                 PRIMARY KEY (resource_id, domain)
             )
-        """)
+        """
+        )
 
         # Create products table for better querying
-        self.conn.execute("""
+        self.conn.execute(
+            """
             CREATE TABLE IF NOT EXISTS resource_products (
                 resource_id VARCHAR,
                 product_id VARCHAR,
@@ -74,7 +79,8 @@ class DuckDBBackend:
                 product_url VARCHAR,
                 PRIMARY KEY (resource_id, product_id)
             )
-        """)
+        """
+        )
 
     def sync_from_yaml(self, yaml_file: str) -> int:
         """Sync data from YAML file to DuckDB.
@@ -85,13 +91,13 @@ class DuckDBBackend:
         Returns:
             Number of resources synced
         """
-        with open(yaml_file, 'r') as f:
+        with open(yaml_file, "r") as f:
             data = yaml.safe_load(f)
 
-        if not data or 'resources' not in data:
+        if not data or "resources" not in data:
             return 0
 
-        resources = data['resources']
+        resources = data["resources"]
         synced_count = 0
 
         # Clear existing data
@@ -100,7 +106,7 @@ class DuckDBBackend:
         self.conn.execute("DELETE FROM resource_products")
 
         for resource in resources:
-            if not resource.get('id'):
+            if not resource.get("id"):
                 continue
 
             # Insert into resources table
@@ -118,75 +124,84 @@ class DuckDBBackend:
 
     def _insert_resource(self, resource: Dict[str, Any]):
         """Insert a resource into the resources table."""
-        license_data = resource.get('license', {})
+        license_data = resource.get("license", {})
 
-        self.conn.execute("""
+        self.conn.execute(
+            """
             INSERT OR REPLACE INTO resources (
                 id, name, description, category, activity_status, homepage_url, repository,
                 creation_date, last_modified_date, license_id, license_label, domains,
                 contacts, curators, products, layout, raw_data
             ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """, [
-            resource.get('id'),
-            resource.get('name'),
-            resource.get('description'),
-            resource.get('category'),
-            resource.get('activity_status'),
-            resource.get('homepage_url'),
-            resource.get('repository'),
-            self._parse_date(resource.get('creation_date')),
-            self._parse_date(resource.get('last_modified_date')),
-            license_data.get('id') if isinstance(license_data, dict) else None,
-            license_data.get('label') if isinstance(license_data, dict) else license_data,
-            resource.get('domains', []),
-            json.dumps(resource.get('contacts', [])),
-            json.dumps(resource.get('curators', [])),
-            json.dumps(resource.get('products', [])),
-            resource.get('layout'),
-            json.dumps(resource)
-        ])
+        """,
+            [
+                resource.get("id"),
+                resource.get("name"),
+                resource.get("description"),
+                resource.get("category"),
+                resource.get("activity_status"),
+                resource.get("homepage_url"),
+                resource.get("repository"),
+                self._parse_date(resource.get("creation_date")),
+                self._parse_date(resource.get("last_modified_date")),
+                license_data.get("id") if isinstance(license_data, dict) else None,
+                license_data.get("label") if isinstance(license_data, dict) else license_data,
+                resource.get("domains", []),
+                json.dumps(resource.get("contacts", [])),
+                json.dumps(resource.get("curators", [])),
+                json.dumps(resource.get("products", [])),
+                resource.get("layout"),
+                json.dumps(resource),
+            ],
+        )
 
     def _insert_domains(self, resource: Dict[str, Any]):
         """Insert resource domains into the resource_domains table."""
-        resource_id = resource.get('id')
-        domains = resource.get('domains', [])
+        resource_id = resource.get("id")
+        domains = resource.get("domains", [])
 
         for domain in domains:
-            self.conn.execute("""
+            self.conn.execute(
+                """
                 INSERT OR IGNORE INTO resource_domains (resource_id, domain)
                 VALUES (?, ?)
-            """, [resource_id, domain])
+            """,
+                [resource_id, domain],
+            )
 
     def _insert_products(self, resource: Dict[str, Any]):
         """Insert resource products into the resource_products table."""
-        resource_id = resource.get('id')
-        products = resource.get('products', [])
+        resource_id = resource.get("id")
+        products = resource.get("products", [])
 
         for product in products:
-            if not product.get('id'):
+            if not product.get("id"):
                 continue
 
-            self.conn.execute("""
+            self.conn.execute(
+                """
                 INSERT OR REPLACE INTO resource_products (
                     resource_id, product_id, product_name, product_category,
                     product_description, product_format, product_url
                 ) VALUES (?, ?, ?, ?, ?, ?, ?)
-            """, [
-                resource_id,
-                product.get('id'),
-                product.get('name'),
-                product.get('category'),
-                product.get('description'),
-                product.get('format'),
-                product.get('product_url')
-            ])
+            """,
+                [
+                    resource_id,
+                    product.get("id"),
+                    product.get("name"),
+                    product.get("category"),
+                    product.get("description"),
+                    product.get("format"),
+                    product.get("product_url"),
+                ],
+            )
 
     def _parse_date(self, date_str: Optional[str]) -> Optional[datetime]:
         """Parse date string to datetime object."""
         if not date_str:
             return None
         try:
-            return datetime.fromisoformat(date_str.replace('Z', '+00:00'))
+            return datetime.fromisoformat(date_str.replace("Z", "+00:00"))
         except (ValueError, AttributeError):
             return None
 
@@ -202,19 +217,19 @@ class DuckDBBackend:
         query = "SELECT * FROM resources WHERE 1=1"
         params = []
 
-        if filters.get('category'):
+        if filters.get("category"):
             query += " AND category = ?"
-            params.append(filters['category'])
+            params.append(filters["category"])
 
-        if filters.get('activity_status'):
+        if filters.get("activity_status"):
             query += " AND activity_status = ?"
-            params.append(filters['activity_status'])
+            params.append(filters["activity_status"])
 
-        if filters.get('domain'):
+        if filters.get("domain"):
             query += " AND id IN (SELECT resource_id FROM resource_domains WHERE domain = ?)"
-            params.append(filters['domain'])
+            params.append(filters["domain"])
 
-        if filters.get('name_contains'):
+        if filters.get("name_contains"):
             query += " AND name ILIKE ?"
             params.append(f"%{filters['name_contains']}%")
 
@@ -240,7 +255,7 @@ class DuckDBBackend:
         Returns:
             List of active resources
         """
-        return self.query_resources(activity_status='active')
+        return self.query_resources(activity_status="active")
 
     def search_resources(self, search_term: str) -> List[Dict[str, Any]]:
         """Search resources by name or description.
@@ -272,33 +287,35 @@ class DuckDBBackend:
         stats = {}
 
         # Total resources
-        stats['total_resources'] = self.conn.execute(
-            "SELECT COUNT(*) FROM resources"
-        ).fetchone()[0]
+        stats["total_resources"] = self.conn.execute("SELECT COUNT(*) FROM resources").fetchone()[0]
 
         # Active resources
-        stats['active_resources'] = self.conn.execute(
+        stats["active_resources"] = self.conn.execute(
             "SELECT COUNT(*) FROM resources WHERE activity_status = 'active'"
         ).fetchone()[0]
 
         # Resources by category
-        category_counts = self.conn.execute("""
+        category_counts = self.conn.execute(
+            """
             SELECT category, COUNT(*) as count 
             FROM resources 
             WHERE category IS NOT NULL 
             GROUP BY category 
             ORDER BY count DESC
-        """).fetchall()
-        stats['by_category'] = {cat: count for cat, count in category_counts}
+        """
+        ).fetchall()
+        stats["by_category"] = {cat: count for cat, count in category_counts}
 
         # Resources by domain
-        domain_counts = self.conn.execute("""
+        domain_counts = self.conn.execute(
+            """
             SELECT domain, COUNT(*) as count 
             FROM resource_domains 
             GROUP BY domain 
             ORDER BY count DESC
-        """).fetchall()
-        stats['by_domain'] = {domain: count for domain, count in domain_counts}
+        """
+        ).fetchall()
+        stats["by_domain"] = {domain: count for domain, count in domain_counts}
 
         return stats
 
