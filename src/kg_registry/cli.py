@@ -89,12 +89,12 @@ def query(db_path: str, category: str, domain: str, status: str, search: str):
                 filters['activity_status'] = status
             if search:
                 filters['name_contains'] = search
-                
+
             if search:
                 resources = backend.search_resources(search)
             else:
                 resources = backend.query_resources(**filters)
-                
+
             click.echo(f"Found {len(resources)} resources:")
             for resource in resources:
                 click.echo(f"  {resource['id']}: {resource['name']} ({resource['category']})")
