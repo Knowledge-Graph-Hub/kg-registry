@@ -48,7 +48,7 @@ SCHEMA_DIR = src/kg_registry/kg_registry_schema
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
 
-all: _config.yml registry/kgs.ttl refresh-schema
+all: _config.yml registry/kgs.jsonld registry/kg_registry.duckdb refresh-schema
 
 # This is minimal for now, but
 # will be expanded to include other docs
@@ -66,8 +66,8 @@ integration-test: test valid-purl-report.txt
 
 # Remove and/or revert all targets to their repository versions
 clean:
-	rm -Rf registry/kgs.nt registry/kgs.ttl registry/kgs.yml sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
-	git checkout _config.yml registry/kgs.jsonld registry/kgs.ttl registry/kgs.yml
+	rm -Rf registry/kgs.nt registry/kgs.ttl registry/kgs.yml registry/kg_registry.duckdb sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
+	git checkout _config.yml registry/kgs.jsonld registry/kgs.yml registry/kg_registry.duckdb
 
 clean-schema:
 	rm -Rf src/kg_registry/kg_registry_schema/datamodel/*.py src/kg_registry/kg_registry_schema/*.json
@@ -99,6 +99,10 @@ _config.yml: _config_header.yml registry/kgs.yml
 registry/kgs.yml: reports/metadata-grid.csv
 	./util/sort-resources.py tmp/unsorted-resources.yml $< $@ && rm -rf tmp
 
+# Sync to duckdb database
+registry/kg_registry.duckdb: registry/kgs.yml
+	$(RUN) python -m kg_registry.cli duckdb sync
+
 # Use a generic yaml->json conversion, but adding a @content
 registry/kgs.jsonld: registry/kgs.yml
 	./util/yaml2json.py $< > $@.tmp && mv $@.tmp $@
@@ -107,11 +111,11 @@ registry/kgs.jsonld: registry/kgs.yml
 # NOTE: UGLY HACK. If there is a problem then Jena will write WARN message (to stdout!!!), there appears to
 #  be no way to get it to flag this even with strict and check options, so we do a check with grep, ugh.
 # see: http://stackoverflow.com/questions/20860222/why-do-i-have-these-warnings-with-jena-2-11-0
-registry/kgs.nt: registry/kgs.jsonld
-	riot --base=http://purl.obolibrary.org/obo/ --strict --check -q registry/context.jsonld $< > $@.tmp && mv $@.tmp $@ && egrep '(WARN|ERROR)' $@ && exit 1 || echo ok
+#registry/kgs.nt: registry/kgs.jsonld
+#	riot --base=http://purl.obolibrary.org/obo/ --strict --check -q registry/context.jsonld $< > $@.tmp && mv $@.tmp $@ && egrep '(WARN|ERROR)' $@ && exit 1 || echo ok
 
-registry/kgs.ttl: registry/kgs.nt
-	riot --base=http://purl.obolibrary.org/obo/ --out=ttl $< > $@.tmp && mv $@.tmp $@
+#registry/kgs.ttl: registry/kgs.nt
+#	riot --base=http://purl.obolibrary.org/obo/ --out=ttl $< > $@.tmp && mv $@.tmp $@
 
 ### Validate Configuration Files
 
