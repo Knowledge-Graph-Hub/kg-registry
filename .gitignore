@@ -133,5 +133,4 @@ dmypy.json
 .idea/
 
 # DuckDB database files
-*.duckdb
 *.duckdb.wal
