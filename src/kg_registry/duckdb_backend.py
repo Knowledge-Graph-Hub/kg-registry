@@ -267,7 +267,7 @@ class DuckDBBackend:
             List of resources matching the search term
         """
         query = """
-            SELECT * FROM resources 
+            SELECT * FROM resources
             WHERE name ILIKE ? OR description ILIKE ?
             ORDER BY name
         """
@@ -297,10 +297,10 @@ class DuckDBBackend:
         # Resources by category
         category_counts = self.conn.execute(
             """
-            SELECT category, COUNT(*) as count 
-            FROM resources 
-            WHERE category IS NOT NULL 
-            GROUP BY category 
+            SELECT category, COUNT(*) as count
+            FROM resources
+            WHERE category IS NOT NULL
+            GROUP BY category
             ORDER BY count DESC
         """
         ).fetchall()
@@ -309,9 +309,9 @@ class DuckDBBackend:
         # Resources by domain
         domain_counts = self.conn.execute(
             """
-            SELECT domain, COUNT(*) as count 
-            FROM resource_domains 
-            GROUP BY domain 
+            SELECT domain, COUNT(*) as count
+            FROM resource_domains
+            GROUP BY domain
             ORDER BY count DESC
         """
         ).fetchall()
