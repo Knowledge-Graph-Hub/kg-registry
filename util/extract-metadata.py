@@ -238,25 +238,49 @@ def concat_resource_yaml(args):
                         # Write the product to its own page
                         with open(fn, "w") as f:
                             f.write("---\n" + yaml.dump(product) + layout_string + "\n---\n")
-                            
+
     def create_stub_resource_pages(objs):
         """
         Create stub Resource pages for sources mentioned in products but don't have a page yet.
         For example, if a product references 'disgenet' as an original_source but there's no
         resource/disgenet/disgenet.md file, create one with minimal information.
+
+        A product could also reference another product, in which case we also create a stub page
+        for that product if it doesn't exist. References can be in the format:
+        - 'resource_id' for a simple resource reference
+        - 'resource_id.product_id' for a specific product reference
         """
-        # First collect all resource IDs mentioned in products
+        # First collect all resource IDs mentioned in products and their related product IDs
         referenced_resources = set()
+        resource_product_map = {}  # Maps resource_id to set of product_ids that should be added
+
         for obj in objs:
             if "products" in obj:
                 for product in obj["products"]:
                     # Check original_source and secondary_source fields
                     for field_name in ["original_source", "secondary_source"]:
                         if field_name in product and isinstance(product[field_name], list):
-                            for resource_id in product[field_name]:
-                                if resource_id and isinstance(resource_id, str):
+                            for resource_ref in product[field_name]:
+                                if not resource_ref or not isinstance(resource_ref, str):
+                                    continue
+
+                                # Handle resource.product format
+                                if '.' in resource_ref:
+                                    parts = resource_ref.split('.', 1)
+                                    resource_id = parts[0]
+                                    product_id = parts[1]
+
+                                    # Add resource to referenced_resources
                                     referenced_resources.add(resource_id)
-        
+
+                                    # Add product to resource_product_map
+                                    if resource_id not in resource_product_map:
+                                        resource_product_map[resource_id] = set()
+                                    resource_product_map[resource_id].add(product_id)
+                                else:
+                                    # Simple resource reference
+                                    referenced_resources.add(resource_ref)
+
         # Get the list of existing resource directories
         existing_resources = set()
         resource_dir = pathlib.Path(ROOT / "resource")
@@ -264,36 +288,83 @@ def concat_resource_yaml(args):
             for path in resource_dir.iterdir():
                 if path.is_dir():
                     existing_resources.add(path.name)
-        
+
         # Find resources mentioned but don't have a directory
         missing_resources = referenced_resources - existing_resources
         if missing_resources:
-            print(f"Found {len(missing_resources)} resources mentioned but missing pages: {', '.join(missing_resources)}")
+            print(
+                f"Found {len(missing_resources)} resources mentioned but missing pages: {', '.join(missing_resources)}")
         else:
             print("No missing resource pages detected.")
             return
-        
+
         # Create stub pages for missing resources
         stubs_created = 0
         for resource_id in missing_resources:
             # Skip resources with invalid characters (only allow alphanumeric, hyphen, and underscore)
-            # Specifically check for dots to handle cases like "pharmgkb.drugs"
-            if '.' in resource_id or not all(c.isalnum() or c in '-_' for c in resource_id):
-                print(f"Skipping creation of stub for resource '{resource_id}' due to invalid characters")
+            # Note: We now handle dots separately to support resource.product format
+            if not all(c.isalnum() or c in '-_' for c in resource_id):
+                print(
+                    f"Skipping creation of stub for resource '{resource_id}' due to invalid characters")
                 continue
-                
+
             # Create the directory if it doesn't exist
             resource_dir = ROOT / "resource" / resource_id
             resource_dir.mkdir(parents=True, exist_ok=True)
-            
+
             # Check if the main resource file already exists
             resource_file = resource_dir / f"{resource_id}.md"
             if resource_file.exists():
-                print(f"Resource file {resource_file} already exists, skipping")
+                print(
+                    f"Resource file {resource_file} already exists, checking for missing products")
+
+                # If this resource has associated products, make sure they exist
+                if resource_id in resource_product_map:
+                    try:
+                        # Load existing resource metadata
+                        (metadata, md) = load_md(resource_file)
+                        if "products" not in metadata:
+                            metadata["products"] = []
+                        elif not isinstance(metadata["products"], list):
+                            # Convert to list if it's not already
+                            metadata["products"] = [metadata["products"]
+                                                    ] if metadata["products"] else []
+
+                        # Get existing product IDs
+                        existing_product_ids = set()
+                        for prod in metadata["products"]:
+                            if isinstance(prod, dict) and "id" in prod:
+                                existing_product_ids.add(prod["id"])
+
+                        # Add missing stub products
+                        added_products = 0
+                        for product_id in resource_product_map[resource_id]:
+                            if product_id not in existing_product_ids:
+                                # Create a stub product
+                                stub_product = {
+                                    "id": product_id,
+                                    "name": f"{product_id.capitalize()} (Stub)",
+                                    "description": f"Automatically generated stub product. Please update with accurate information.",
+                                    "category": "DataModelProduct"  # Default category, can be updated later
+                                }
+                                metadata["products"].append(stub_product)
+                                added_products += 1
+
+                        if added_products > 0:
+                            print(f"Added {added_products} stub products to {resource_id}")
+                            # Write updated metadata back to file
+                            with open(resource_file, "w") as f:
+                                f.write("---\n")
+                                yaml.dump(metadata, f)
+                                f.write("---\n")
+                                f.write(md)
+                    except Exception as e:
+                        print(f"Error updating products for {resource_id}: {str(e)}")
+
                 continue
-                
+
             print(f"Creating stub Resource page for {resource_id}")
-            
+
             # Create a minimal resource stub
             stub_content = {
                 "layout": "resource_detail",
@@ -307,18 +378,33 @@ def concat_resource_yaml(args):
                     "This is an automatically generated stub page. Please replace with accurate information about this resource."
                 ]
             }
-            
+
+            # Add any referenced products as stubs
+            if resource_id in resource_product_map:
+                stub_content["products"] = []
+                for product_id in resource_product_map[resource_id]:
+                    stub_product = {
+                        "id": product_id,
+                        "name": f"{product_id.capitalize()} (Stub)",
+                        "description": f"Automatically generated stub product. Please update with accurate information.",
+                        "category": "DataModelProduct"  # Default category, can be updated later
+                    }
+                    stub_content["products"].append(stub_product)
+                print(
+                    f"Added {len(resource_product_map[resource_id])} stub products to new resource {resource_id}")
+
             # Write the stub page using the same YAML handler for consistency
             try:
                 with open(resource_file, "w") as f:
                     f.write("---\n")
                     yaml.dump(stub_content, f)
                     f.write("---\n")
-                    f.write(f"\n# {resource_id.capitalize()}\n\nThis is an automatically generated stub page for {resource_id}. Please update with proper information.\n")
+                    f.write(
+                        f"\n# {resource_id.capitalize()}\n\nThis is an automatically generated stub page for {resource_id}. Please update with proper information.\n")
                 stubs_created += 1
             except Exception as e:
                 print(f"Error creating stub page for {resource_id}: {str(e)}")
-        
+
         print(f"Created {stubs_created} stub resource pages")
 
     def update_stub_domains(objs):
@@ -336,12 +422,12 @@ def concat_resource_yaml(args):
                     if "automatically generated stub page" in warning:
                         is_stub = True
                         break
-                
+
                 # If it's a stub and using 'other' domain, update it to 'stub'
                 if is_stub and "domains" in obj and obj["domains"] == ["other"]:
                     # Update the domain in the in-memory object
                     obj["domains"] = ["stub"]
-                    
+
                     # Update the resource page file
                     fn = f"resource/{obj['id']}/{obj['id']}.md"
                     try:
@@ -351,10 +437,11 @@ def concat_resource_yaml(args):
                             with open(fn, "w") as f:
                                 f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
                             updated_count += 1
-                            print(f"Updated domain for stub resource {obj['id']} from 'other' to 'stub'")
+                            print(
+                                f"Updated domain for stub resource {obj['id']} from 'other' to 'stub'")
                     except Exception as e:
                         print(f"Error updating domain for resource {obj['id']}: {str(e)}")
-        
+
         if updated_count > 0:
             print(f"Updated domains for {updated_count} stub resources from 'other' to 'stub'")
         else:
@@ -407,17 +494,22 @@ def concat_resource_yaml(args):
                         f"Removed {len(obj['products']) - len(unique_products)} duplicate products from {obj['id']}")
                     obj["products"] = unique_products
 
-                    # Also update the resource page file
+                    # Update the resource page file
                     fn = f"resource/{obj['id']}/{obj['id']}.md"
                     try:
                         (metadata, md) = load_md(fn)
                         if "products" in metadata:
+                            # Ensure products is a list
+                            if not isinstance(metadata["products"], list):
+                                metadata["products"] = [metadata["products"]
+                                                        ] if metadata["products"] else []
+
                             # Deduplicate the products in the metadata
                             unique_metadata_products = []
                             metadata_product_ids = set()
 
                             for product in metadata["products"]:
-                                if "id" in product:
+                                if isinstance(product, dict) and "id" in product:
                                     product_id = product["id"]
                                     if product_id not in metadata_product_ids:
                                         metadata_product_ids.add(product_id)
@@ -472,13 +564,16 @@ def concat_resource_yaml(args):
                     (metadata, md) = load_md(fn)
                     if "products" not in metadata:
                         metadata["products"] = []
+                    elif not isinstance(metadata["products"], list):
+                        metadata["products"] = [metadata["products"]
+                                                ] if metadata["products"] else []
 
                     # Check if a product with the same ID already exists in the Resource page
                     metadata_product_exists = False
                     if "id" in product:
                         product_id = product["id"]
                         for existing_product in metadata["products"]:
-                            if "id" in existing_product and existing_product["id"] == product_id:
+                            if isinstance(existing_product, dict) and "id" in existing_product and existing_product["id"] == product_id:
                                 metadata_product_exists = True
                                 break
 
