@@ -20264,7 +20264,7 @@ resources:
       label: CC-BY-SA-4.0
     name: pharmgkb.drug OBO
     original_source:
-    - pharmgkb.drugs
+    - pharmgkb
     product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.obo
     secondary_source:
     - obo-db-ingest
@@ -20277,7 +20277,7 @@ resources:
       label: CC-BY-SA-4.0
     name: pharmgkb.drug OWL
     original_source:
-    - pharmgkb.drugs
+    - pharmgkb
     product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.owl
     secondary_source:
     - obo-db-ingest
@@ -20290,7 +20290,7 @@ resources:
       label: CC-BY-SA-4.0
     name: pharmgkb.drug OBO Graph JSON
     original_source:
-    - pharmgkb.drugs
+    - pharmgkb
     product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.json
     secondary_source:
     - obo-db-ingest
@@ -20303,7 +20303,7 @@ resources:
       label: CC-BY-SA-4.0
     name: pharmgkb.drug SSSOM
     original_source:
-    - pharmgkb.drugs
+    - pharmgkb
     product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.sssom.tsv
     secondary_source:
     - obo-db-ingest
@@ -20316,7 +20316,7 @@ resources:
       label: CC-BY-SA-4.0
     name: pharmgkb.gene OBO
     original_source:
-    - pharmgkb.genes
+    - pharmgkb
     product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.obo
     secondary_source:
     - obo-db-ingest
@@ -20329,7 +20329,7 @@ resources:
       label: CC-BY-SA-4.0
     name: pharmgkb.gene OWL
     original_source:
-    - pharmgkb.genes
+    - pharmgkb
     product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.owl
     secondary_source:
     - obo-db-ingest
@@ -20342,7 +20342,7 @@ resources:
       label: CC-BY-SA-4.0
     name: pharmgkb.gene OBO Graph JSON
     original_source:
-    - pharmgkb.genes
+    - pharmgkb
     product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.json
     secondary_source:
     - obo-db-ingest
@@ -20355,7 +20355,7 @@ resources:
       label: CC-BY-SA-4.0
     name: pharmgkb.gene SSSOM
     original_source:
-    - pharmgkb.genes
+    - pharmgkb
     product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.sssom.tsv
     secondary_source:
     - obo-db-ingest
@@ -20407,7 +20407,7 @@ resources:
       label: CC-BY-SA-4.0
     name: pharmgkb.variant OBO
     original_source:
-    - pharmgkb.variants
+    - pharmgkb
     product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.obo
     secondary_source:
     - obo-db-ingest
@@ -20420,7 +20420,7 @@ resources:
       label: CC-BY-SA-4.0
     name: pharmgkb.variant OWL
     original_source:
-    - pharmgkb.variants
+    - pharmgkb
     product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.owl
     secondary_source:
     - obo-db-ingest
@@ -20433,7 +20433,7 @@ resources:
       label: CC-BY-SA-4.0
     name: pharmgkb.variant OBO Graph JSON
     original_source:
-    - pharmgkb.variants
+    - pharmgkb
     product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.json
     secondary_source:
     - obo-db-ingest
@@ -20446,7 +20446,7 @@ resources:
       label: CC-BY-SA-4.0
     name: pharmgkb.variant SSSOM
     original_source:
-    - pharmgkb.variants
+    - pharmgkb
     product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.sssom.tsv
     secondary_source:
     - obo-db-ingest
@@ -23460,6 +23460,162 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.json
     secondary_source:
     - obo-db-ingest
+  - category: Product
+    description: pharmgkb.drug OBO
+    format: obo
+    id: obo-db-ingest.pharmgkb.drug.obo
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC-BY-SA-4.0
+    name: pharmgkb.drug OBO
+    original_source:
+    - pharmgkb
+    product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.obo
+    secondary_source:
+    - obo-db-ingest
+  - category: Product
+    description: pharmgkb.drug OWL
+    format: owl
+    id: obo-db-ingest.pharmgkb.drug.owl
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC-BY-SA-4.0
+    name: pharmgkb.drug OWL
+    original_source:
+    - pharmgkb
+    product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.owl
+    secondary_source:
+    - obo-db-ingest
+  - category: Product
+    description: pharmgkb.drug OBO Graph JSON
+    format: json
+    id: obo-db-ingest.pharmgkb.drug.json
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC-BY-SA-4.0
+    name: pharmgkb.drug OBO Graph JSON
+    original_source:
+    - pharmgkb
+    product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.json
+    secondary_source:
+    - obo-db-ingest
+  - category: MappingProduct
+    description: pharmgkb.drug SSSOM
+    format: sssom
+    id: obo-db-ingest.pharmgkb.drug.sssom.tsv
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC-BY-SA-4.0
+    name: pharmgkb.drug SSSOM
+    original_source:
+    - pharmgkb
+    product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.sssom.tsv
+    secondary_source:
+    - obo-db-ingest
+  - category: Product
+    description: pharmgkb.gene OBO
+    format: obo
+    id: obo-db-ingest.pharmgkb.gene.obo
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC-BY-SA-4.0
+    name: pharmgkb.gene OBO
+    original_source:
+    - pharmgkb
+    product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.obo
+    secondary_source:
+    - obo-db-ingest
+  - category: Product
+    description: pharmgkb.gene OWL
+    format: owl
+    id: obo-db-ingest.pharmgkb.gene.owl
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC-BY-SA-4.0
+    name: pharmgkb.gene OWL
+    original_source:
+    - pharmgkb
+    product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.owl
+    secondary_source:
+    - obo-db-ingest
+  - category: Product
+    description: pharmgkb.gene OBO Graph JSON
+    format: json
+    id: obo-db-ingest.pharmgkb.gene.json
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC-BY-SA-4.0
+    name: pharmgkb.gene OBO Graph JSON
+    original_source:
+    - pharmgkb
+    product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.json
+    secondary_source:
+    - obo-db-ingest
+  - category: MappingProduct
+    description: pharmgkb.gene SSSOM
+    format: sssom
+    id: obo-db-ingest.pharmgkb.gene.sssom.tsv
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC-BY-SA-4.0
+    name: pharmgkb.gene SSSOM
+    original_source:
+    - pharmgkb
+    product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.sssom.tsv
+    secondary_source:
+    - obo-db-ingest
+  - category: Product
+    description: pharmgkb.variant OBO
+    format: obo
+    id: obo-db-ingest.pharmgkb.variant.obo
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC-BY-SA-4.0
+    name: pharmgkb.variant OBO
+    original_source:
+    - pharmgkb
+    product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.obo
+    secondary_source:
+    - obo-db-ingest
+  - category: Product
+    description: pharmgkb.variant OWL
+    format: owl
+    id: obo-db-ingest.pharmgkb.variant.owl
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC-BY-SA-4.0
+    name: pharmgkb.variant OWL
+    original_source:
+    - pharmgkb
+    product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.owl
+    secondary_source:
+    - obo-db-ingest
+  - category: Product
+    description: pharmgkb.variant OBO Graph JSON
+    format: json
+    id: obo-db-ingest.pharmgkb.variant.json
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC-BY-SA-4.0
+    name: pharmgkb.variant OBO Graph JSON
+    original_source:
+    - pharmgkb
+    product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.json
+    secondary_source:
+    - obo-db-ingest
+  - category: MappingProduct
+    description: pharmgkb.variant SSSOM
+    format: sssom
+    id: obo-db-ingest.pharmgkb.variant.sssom.tsv
+    license:
+      id: https://creativecommons.org/licenses/by-sa/4.0/
+      label: CC-BY-SA-4.0
+    name: pharmgkb.variant SSSOM
+    original_source:
+    - pharmgkb
+    product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.sssom.tsv
+    secondary_source:
+    - obo-db-ingest
   repository: https://www.pharmgkb.org/downloads
 - activity_status: active
   category: KnowledgeGraph
@@ -26087,15 +26243,36 @@ resources:
   repository: https://github.com/NIB-SI/skm-tools
   version: '1.0'
 - activity_status: active
-  category: DataSource
-  description: Stub Resource page for skos. This page was automatically generated
-    because it was referenced by other resources.
+  category: DataModel
+  description: SKOS (Simple Knowledge Organization System) is a W3C recommendation
+    designed for representation of thesauri, classification schemes, taxonomies, subject-heading
+    systems, or any other type of structured controlled vocabulary.
   domains:
-  - stub
+  - upper
+  homepage_url: https://www.w3.org/2004/02/skos/
   id: skos
   layout: resource_detail
-  name: Skos
+  license:
+    id: https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document
+    label: W3C Software and Document License
+  name: SKOS
   products:
+  - category: DataModelProduct
+    description: SKOS Namespace Document - RDF/XML Variant
+    format: rdfxml
+    id: skos.rdf
+    name: SKOS RDF/XML
+    product_url: https://www.w3.org/2009/08/skos-reference/skos.rdf
+  - category: DataModelProduct
+    description: SKOS Core Vocabulary Specification
+    id: skos.core
+    name: SKOS Core
+    product_url: https://www.w3.org/TR/swbp-skos-core-spec/
+  - category: DocumentationProduct
+    description: SKOS Simple Knowledge Organization System Reference
+    id: skos.reference
+    name: SKOS Reference
+    product_url: https://www.w3.org/TR/skos-reference/
   - category: DataModelProduct
     description: The latest release of EFO in OWL format
     format: owl
@@ -26200,9 +26377,17 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  publications:
+  - authors:
+    - Alistair Miles
+    - Sean Bechhofer
+    doi: 10.1016/j.websem.2009.06.001
+    id: doi:10.1016/j.websem.2009.06.001
+    journal: 'Web Semantics: Science, Services and Agents on the World Wide Web'
+    title: SKOS Simple Knowledge Organization System Reference
+    year: '2009'
+  repository: https://github.com/w3c/skos
+  version: SKOS Reference (August 18, 2009)
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -28158,14 +28343,32 @@ resources:
     url: https://doi.org/10.1038/s41597-024-04070-w
 - activity_status: active
   category: DataSource
-  description: Stub Resource page for ukbiobank. This page was automatically generated
-    because it was referenced by other resources.
+  description: UK Biobank is a large-scale biomedical database and research resource
+    containing genetic, lifestyle and health information from half a million UK participants,
+    designed to improve the prevention, diagnosis and treatment of a wide range of
+    serious and life-threatening illnesses.
   domains:
-  - stub
+  - biomedical
+  - genomics
+  - health
+  - clinical
+  - phenotype
+  homepage_url: https://www.ukbiobank.ac.uk/
   id: ukbiobank
   layout: resource_detail
-  name: Ukbiobank
+  license:
+    id: https://www.ukbiobank.ac.uk/terms-and-conditions/
+    label: UK Biobank Data Access Agreement
+  name: UK Biobank
   products:
+  - category: GraphicalInterface
+    description: The UK Biobank Data Showcase provides summary statistics of all UK
+      Biobank data and allows researchers to identify variables for inclusion in research
+      applications.
+    format: http
+    id: ukbiobank.showcase
+    name: UK Biobank Data Showcase
+    product_url: https://biobank.ndph.ox.ac.uk/showcase/
   - category: GraphProduct
     description: DisGeNET data, including gene to disease associations and variant
       to disease associations (requires registration and subscription).
@@ -28189,9 +28392,58 @@ resources:
     product_url: https://www.disgenet.com/
     secondary_source:
     - disgenet
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  publications:
+  - authors:
+    - Clare Bycroft
+    - Colin Freeman
+    - Desislava Petkova
+    - Gavin Band
+    - Lloyd T. Elliott
+    - Kevin Sharp
+    - Allan Motyer
+    - Damjan Vukcevic
+    - Olivier Delaneau
+    - Jared O'Connell
+    - Adrian Cortes
+    - Samantha Welsh
+    - Alan Young
+    - Mark Effingham
+    - Gil McVean
+    - Stephen Leslie
+    - Naomi Allen
+    - Peter Donnelly
+    - Jonathan Marchini
+    doi: 10.1038/s41586-018-0579-z
+    id: doi:10.1038/s41586-018-0579-z
+    journal: Nature
+    title: The UK Biobank resource with deep phenotyping and genomic data
+    year: '2018'
+  - authors:
+    - Cathie Sudlow
+    - John Gallacher
+    - Naomi Allen
+    - Valerie Beral
+    - Paul Burton
+    - John Danesh
+    - Paul Downey
+    - Paul Elliott
+    - Jane Green
+    - Martin Landray
+    - Bette Liu
+    - Paul Matthews
+    - Giok Ong
+    - Jill Pell
+    - Alan Silman
+    - Alan Young
+    - Tim Sprosen
+    - Tim Peakman
+    - Rory Collins
+    doi: 10.1371/journal.pmed.1001779
+    id: doi:10.1371/journal.pmed.1001779
+    journal: PLOS Medicine
+    title: 'UK Biobank: An Open Access Resource for Identifying the Causes of a Wide
+      Range of Complex Diseases of Middle and Old Age'
+    year: '2015'
 - activity_status: active
   category: DataSource
   contacts:
