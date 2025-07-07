@@ -256,6 +256,162 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.json
   secondary_source:
   - obo-db-ingest
+- category: Product
+  description: pharmgkb.drug OBO
+  format: obo
+  id: obo-db-ingest.pharmgkb.drug.obo
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: pharmgkb.drug OBO
+  original_source:
+  - pharmgkb
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.obo
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: pharmgkb.drug OWL
+  format: owl
+  id: obo-db-ingest.pharmgkb.drug.owl
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: pharmgkb.drug OWL
+  original_source:
+  - pharmgkb
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.owl
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: pharmgkb.drug OBO Graph JSON
+  format: json
+  id: obo-db-ingest.pharmgkb.drug.json
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: pharmgkb.drug OBO Graph JSON
+  original_source:
+  - pharmgkb
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.json
+  secondary_source:
+  - obo-db-ingest
+- category: MappingProduct
+  description: pharmgkb.drug SSSOM
+  format: sssom
+  id: obo-db-ingest.pharmgkb.drug.sssom.tsv
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: pharmgkb.drug SSSOM
+  original_source:
+  - pharmgkb
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: pharmgkb.gene OBO
+  format: obo
+  id: obo-db-ingest.pharmgkb.gene.obo
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: pharmgkb.gene OBO
+  original_source:
+  - pharmgkb
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.obo
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: pharmgkb.gene OWL
+  format: owl
+  id: obo-db-ingest.pharmgkb.gene.owl
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: pharmgkb.gene OWL
+  original_source:
+  - pharmgkb
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.owl
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: pharmgkb.gene OBO Graph JSON
+  format: json
+  id: obo-db-ingest.pharmgkb.gene.json
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: pharmgkb.gene OBO Graph JSON
+  original_source:
+  - pharmgkb
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.json
+  secondary_source:
+  - obo-db-ingest
+- category: MappingProduct
+  description: pharmgkb.gene SSSOM
+  format: sssom
+  id: obo-db-ingest.pharmgkb.gene.sssom.tsv
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: pharmgkb.gene SSSOM
+  original_source:
+  - pharmgkb
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: pharmgkb.variant OBO
+  format: obo
+  id: obo-db-ingest.pharmgkb.variant.obo
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: pharmgkb.variant OBO
+  original_source:
+  - pharmgkb
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.obo
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: pharmgkb.variant OWL
+  format: owl
+  id: obo-db-ingest.pharmgkb.variant.owl
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: pharmgkb.variant OWL
+  original_source:
+  - pharmgkb
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.owl
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: pharmgkb.variant OBO Graph JSON
+  format: json
+  id: obo-db-ingest.pharmgkb.variant.json
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: pharmgkb.variant OBO Graph JSON
+  original_source:
+  - pharmgkb
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.json
+  secondary_source:
+  - obo-db-ingest
+- category: MappingProduct
+  description: pharmgkb.variant SSSOM
+  format: sssom
+  id: obo-db-ingest.pharmgkb.variant.sssom.tsv
+  license:
+    id: https://creativecommons.org/licenses/by-sa/4.0/
+    label: CC-BY-SA-4.0
+  name: pharmgkb.variant SSSOM
+  original_source:
+  - pharmgkb
+  product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
 repository: https://www.pharmgkb.org/downloads
 ---
 PharmGKB

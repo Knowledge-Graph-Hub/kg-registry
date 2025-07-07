@@ -8,7 +8,7 @@ license:
   label: CC-BY-SA-4.0
 name: pharmgkb.variant OWL
 original_source:
-- pharmgkb.variants
+- pharmgkb
 product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.owl
 secondary_source:
 - obo-db-ingest
