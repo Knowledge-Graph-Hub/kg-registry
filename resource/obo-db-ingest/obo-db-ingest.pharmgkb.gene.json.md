@@ -8,7 +8,7 @@ license:
   label: CC-BY-SA-4.0
 name: pharmgkb.gene OBO Graph JSON
 original_source:
-- pharmgkb.genes
+- pharmgkb
 product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.json
 secondary_source:
 - obo-db-ingest
