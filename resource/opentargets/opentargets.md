@@ -1,10 +1,6 @@
 ---
 activity_status: active
 category: KnowledgeGraph
-description: >-
-  Open Targets is a collaborative effort to systematically identify
-  and prioritise the best targets to safely and effectively treat rare
-  and common diseases.
 contacts:
 - category: Organization
   contact_details:
@@ -15,6 +11,8 @@ contacts:
   - contact_type: url
     value: https://www.opentargets.org/contact
   label: Open Targets
+description: Open Targets is a collaborative effort to systematically identify and
+  prioritise the best targets to safely and effectively treat rare and common diseases.
 domains:
 - health
 - biomedical
@@ -173,6 +171,52 @@ products:
   product_url: https://ubkg-downloads.xconsortia.org/
   secondary_source:
   - ubkg
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
+  name: Bioteque Embeddings
+  original_source:
+  - chebi
+  - cosmic
+  - achilles
+  - depmap
+  - ccle
+  - gdsc
+  - cellosaurus
+  - clue
+  - ctd
+  - pharmdb
+  - prism
+  - drugbank
+  - lincs
+  - compartments
+  - offsides
+  - sider
+  - drugcentral
+  - repohub
+  - chemicalchecker
+  - repodb
+  - disgenet
+  - opentargets
+  - creeds
+  - interpro
+  - reactome
+  - tissues
+  - dorothea
+  - progeny
+  - gtex
+  - hpa
+  - go
+  - corum
+  - huri
+  - intact
+  - omnipath
+  - string
+  - bto
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+  secondary_source:
+  - bioteque
 publications:
 - authors:
   - Diederik S. Laman Trip
