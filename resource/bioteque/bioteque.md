@@ -6,8 +6,6 @@ name: Bioteque
 description: A knowledge graph of biological entities and their associations that integrates and formats biomedical data as pre-calculated knowledge graph embeddings
 domains:
 - health
-- biomedical
-- molecular biology
 contacts:
 - category: Individual
   label: Patrick Aloy
