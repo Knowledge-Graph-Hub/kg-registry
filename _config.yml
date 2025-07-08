@@ -251,6 +251,65 @@ resources:
       curated nucleomics data
     year: '2022'
 - activity_status: active
+  category: DataSource
+  description: Stub Resource page for achilles. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: achilles
+  layout: resource_detail
+  name: Achilles
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -1794,7 +1853,14 @@ resources:
       value: patrick.aloy@irbbarcelona.org
     label: Patrick Aloy
     orcid: 0000-0002-3557-0236
-  description: A knowledge graph of biological entities and their associations
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: http://sbnb.irbbarcelona.org/
+    label: Structural Bioinformatics and Network Biology Group, Institute for Research
+      in Biomedicine (IRB Barcelona)
+  description: A knowledge graph of biological entities and their associations that
+    integrates and formats biomedical data as pre-calculated knowledge graph embeddings
   domains:
   - health
   homepage_url: https://bioteque.irbbarcelona.org/
@@ -1803,17 +1869,54 @@ resources:
   name: Bioteque
   products:
   - category: Product
-    description: Network embeddings of the Bioteque graph
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
     id: bioteque.embeddings
     name: Bioteque Embeddings
     original_source:
-    - bioteque
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
     secondary_source:
     - bioteque
   - category: ProcessProduct
     description: Scripts used to preprocess and accommodate biomedical datasets into
-      the knowledge database behind the Bioteque repository.
+      the knowledge database behind the Bioteque repository
     id: bioteque.code
     license:
       id: https://opensource.org/licenses/MIT
@@ -1822,6 +1925,16 @@ resources:
     original_source:
     - bioteque
     product_url: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
+    secondary_source:
+    - bioteque
+  - category: ProcessProduct
+    description: BQsupports is a tool to uncover biomedical evidence behind experimental
+      paired data.
+    id: bioteque.bqsupports
+    name: BQsupports
+    original_source:
+    - bioteque
+    product_url: https://bioteque.irbbarcelona.org/bqsupports
     secondary_source:
     - bioteque
   publications:
@@ -1951,6 +2064,52 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -2190,6 +2349,52 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.sssom.tsv
     secondary_source:
     - obo-db-ingest
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
 - activity_status: active
   category: DataSource
   contacts:
@@ -2301,6 +2506,52 @@ resources:
     product_url: https://www.cellosaurus.org/str-search/
     secondary_source:
     - cellosaurus
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   publications:
   - authors:
     - Bairoch A
@@ -2833,6 +3084,52 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   repository: https://github.com/ebi-chebi/ChEBI
 - activity_status: active
   category: DataSource
@@ -3104,6 +3401,65 @@ resources:
       bioactivity data types and time periods'
     year: '2023'
   repository: https://github.com/chembl
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for chemicalchecker. This page was automatically
+    generated because it was referenced by other resources.
+  domains:
+  - stub
+  id: chemicalchecker
+  layout: resource_detail
+  name: Chemicalchecker
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataModel
   contacts:
@@ -4503,6 +4859,65 @@ resources:
     about this resource.
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for clue. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: clue
+  layout: resource_detail
+  name: Clue
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   description: Stub Resource page for cmap. This page was automatically generated
     because it was referenced by other resources.
   domains:
@@ -4789,6 +5204,65 @@ resources:
     - efo
   repository: https://github.com/OBOFoundry/COB
 - activity_status: active
+  category: DataSource
+  description: Stub Resource page for compartments. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: compartments
+  layout: resource_detail
+  name: Compartments
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: KnowledgeGraph
   collection:
   - translator
@@ -4802,6 +5276,124 @@ resources:
   id: connections-hypothesis-kp
   layout: resource_detail
   name: Connections Hypothesis KP
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for corum. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: corum
+  layout: resource_detail
+  name: Corum
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for cosmic. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: cosmic
+  layout: resource_detail
+  name: Cosmic
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -4854,6 +5446,65 @@ resources:
     year: '2025'
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for creeds. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: creeds
+  layout: resource_detail
+  name: Creeds
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   contacts:
   - category: Organization
     label: Comparative Toxicogenomics Database
@@ -4880,6 +5531,52 @@ resources:
     product_url: https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files
     secondary_source:
     - automat
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
 - activity_status: active
   category: DataSource
   contacts:
@@ -5237,6 +5934,65 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for depmap. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: depmap
+  layout: resource_detail
+  name: Depmap
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -5800,6 +6556,52 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   publications:
   - authors:
     - Janet Piñero
@@ -6236,6 +7038,65 @@ resources:
     - efo
   repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 - activity_status: active
+  category: DataSource
+  description: Stub Resource page for dorothea. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: dorothea
+  layout: resource_detail
+  name: Dorothea
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: KnowledgeGraph
   contacts:
   - category: Individual
@@ -6547,6 +7408,52 @@ resources:
     secondary_source:
     - alzkb
     - hetionet
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   publications:
   - id: https://doi.org/10.1093/nar/gkad976
     journal: Nucleic Acids Research
@@ -6706,6 +7613,52 @@ resources:
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2.code
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   publications:
   - authors:
     - Ursu O
@@ -9127,6 +10080,52 @@ resources:
     - protcid
     secondary_source:
     - spoke
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   publications:
   - authors:
     - Yang W
@@ -10311,6 +11310,52 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   publications:
   - authors:
     - Ashburner M
@@ -10840,6 +11885,52 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -12275,6 +13366,52 @@ resources:
     - protcid
     secondary_source:
     - spoke
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -12853,6 +13990,65 @@ resources:
     about this resource.
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for huri. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: huri
+  layout: resource_detail
+  name: Huri
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   description: Stub Resource page for iao. This page was automatically generated because
     it was referenced by other resources.
   domains:
@@ -13351,6 +14547,65 @@ resources:
   repository: https://github.com/myinsilicom/iKraph
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for intact. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: intact
+  layout: resource_detail
+  name: Intact
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   contacts:
   - category: Organization
     contact_details:
@@ -13510,6 +14765,52 @@ resources:
     - protcid
     secondary_source:
     - spoke
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   publications:
   - authors:
     - Blum M
@@ -14690,6 +15991,52 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   publications:
   - authors:
     - Keenan AB
@@ -20912,6 +22259,65 @@ resources:
   repository: https://github.com/biopragmatics/obo-db-ingest
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for offsides. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: offsides
+  layout: resource_detail
+  name: Offsides
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   description: Stub Resource page for ogms. This page was automatically generated
     because it was referenced by other resources.
   domains:
@@ -21486,6 +22892,65 @@ resources:
     about this resource.
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for omnipath. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: omnipath
+  layout: resource_detail
+  name: Omnipath
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   description: Stub Resource page for omo. This page was automatically generated because
     it was referenced by other resources.
   domains:
@@ -21786,6 +23251,52 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   publications:
   - authors:
     - Diederik S. Laman Trip
@@ -23201,6 +24712,65 @@ resources:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
 - activity_status: active
+  category: DataSource
+  description: Stub Resource page for pharmdb. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: pharmdb
+  layout: resource_detail
+  name: Pharmdb
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: Resource
   contacts:
   - category: Organization
@@ -24221,6 +25791,124 @@ resources:
   repository: https://github.com/mims-harvard/PrimeKG
 - activity_status: active
   category: DataSource
+  description: Stub Resource page for prism. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: prism
+  layout: resource_detail
+  name: Prism
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for progeny. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: progeny
+  layout: resource_detail
+  name: Progeny
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   contacts:
   - category: Individual
     contact_details:
@@ -25023,7 +26711,171 @@ resources:
     secondary_source:
     - alzkb
     - hetionet
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   repository: ''
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for repodb. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: repodb
+  layout: resource_detail
+  name: Repodb
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  description: Stub Resource page for repohub. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: repohub
+  layout: resource_detail
+  name: Repohub
+  products:
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   description: Stub Resource page for rgd. This page was automatically generated because
@@ -27359,6 +29211,52 @@ resources:
     - protcid
     secondary_source:
     - spoke
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   publications:
   - authors:
     - Szklarczyk D
@@ -27511,6 +29409,52 @@ resources:
     secondary_source:
     - alzkb
     - hetionet
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -30269,6 +32213,52 @@ resources:
     secondary_source:
     - alzkb
     - hetionet
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmdb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   publications:
   - authors:
     - Kuhn M

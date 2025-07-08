@@ -15,7 +15,10 @@ contacts:
   - contact_type: email
     value: cellosaurus@sib.swiss
   label: CALIPHO Group - SIB Swiss Institute of Bioinformatics
-description: Cellosaurus is a knowledge resource on cell lines providing information on cell lines from vertebrates, invertebrates, and plants, including standardized nomenclature, cross-references to other databases, and information on problematic cell lines.
+description: Cellosaurus is a knowledge resource on cell lines providing information
+  on cell lines from vertebrates, invertebrates, and plants, including standardized
+  nomenclature, cross-references to other databases, and information on problematic
+  cell lines.
 domains:
 - biological systems
 - health
@@ -30,13 +33,13 @@ products:
 - category: GraphicalInterface
   description: Web interface for searching and exploring Cellosaurus data
   id: cellosaurus.site
+  is_public: true
   name: Cellosaurus Web Interface
   original_source:
   - cellosaurus
   product_url: https://www.cellosaurus.org/
   secondary_source:
   - cellosaurus
-  is_public: true
 - category: Product
   description: Complete Cellosaurus data in flat text format
   format: tsv
@@ -80,23 +83,23 @@ products:
 - category: ProgrammingInterface
   description: RESTful API for programmatic access to Cellosaurus data
   id: cellosaurus.api.rest
+  is_public: true
   name: Cellosaurus API
   original_source:
   - cellosaurus
   product_url: https://api.cellosaurus.org/
   secondary_source:
   - cellosaurus
-  is_public: true
 - category: ProgrammingInterface
   description: SPARQL endpoint for querying Cellosaurus RDF data
   id: cellosaurus.api.sparql
+  is_public: true
   name: Cellosaurus SPARQL Endpoint
   original_source:
   - cellosaurus
   product_url: https://api.cellosaurus.org/sparql-editor
   secondary_source:
   - cellosaurus
-  is_public: true
 - category: ProcessProduct
   description: CLASTR tool for STR similarity search across cell lines
   id: cellosaurus.clastr
@@ -106,7 +109,52 @@ products:
   product_url: https://www.cellosaurus.org/str-search/
   secondary_source:
   - cellosaurus
-repository: https://github.com/calipho-sib/cellosaurus
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
+  name: Bioteque Embeddings
+  original_source:
+  - chebi
+  - cosmic
+  - achilles
+  - depmap
+  - ccle
+  - gdsc
+  - cellosaurus
+  - clue
+  - ctd
+  - pharmdb
+  - prism
+  - drugbank
+  - lincs
+  - compartments
+  - offsides
+  - sider
+  - drugcentral
+  - repohub
+  - chemicalchecker
+  - repodb
+  - disgenet
+  - opentargets
+  - creeds
+  - interpro
+  - reactome
+  - tissues
+  - dorothea
+  - progeny
+  - gtex
+  - hpa
+  - go
+  - corum
+  - huri
+  - intact
+  - omnipath
+  - string
+  - bto
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+  secondary_source:
+  - bioteque
 publications:
 - authors:
   - Bairoch A
@@ -115,6 +163,7 @@ publications:
   preferred: true
   title: The Cellosaurus, a cell-line knowledge resource
   year: '2018'
+repository: https://github.com/calipho-sib/cellosaurus
 ---
 Cellosaurus is a comprehensive knowledge resource on cell lines from vertebrates, invertebrates, and plants. It serves as a reference for cell line information, providing researchers with standardized nomenclature, cross-references to other relevant databases, and detailed information about cell line characteristics, authentication, and potential problems.
 

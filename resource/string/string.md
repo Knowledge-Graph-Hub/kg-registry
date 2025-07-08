@@ -1,10 +1,16 @@
 ---
 activity_status: active
 category: DataSource
-description: STRING is a database of known and predicted protein-protein interactions. The
-  interactions include direct (physical) and indirect (functional) associations derived from
-  computational prediction, knowledge transfer between organisms, and interactions aggregated
-  from other primary databases.
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://string-db.org/
+  label: STRING Consortium
+description: STRING is a database of known and predicted protein-protein interactions.
+  The interactions include direct (physical) and indirect (functional) associations
+  derived from computational prediction, knowledge transfer between organisms, and
+  interactions aggregated from other primary databases.
 domains:
 - genomics
 - biomedical
@@ -17,52 +23,24 @@ license:
   label: Creative Commons Attribution 4.0 International (CC BY 4.0)
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: STRING
-version: "12.0"
-contacts:
-- category: Organization
-  contact_details:
-  - contact_type: url
-    value: https://string-db.org/
-  label: STRING Consortium
-publications:
-- authors:
-  - Szklarczyk D
-  - Kirsch R
-  - Koutrouli M
-  - Nastou K
-  - Mehryary F
-  - Hachilif R
-  - Annika GL
-  - Fang T
-  - Doncheva NT
-  - Pyysalo S
-  - Bork P
-  - Jensen LJ
-  - von Mering C
-  doi: doi:10.1093/nar/gkac1000
-  id: https://doi.org/10.1093/nar/gkac1000
-  journal: Nucleic Acids Research
-  preferred: true
-  title: The STRING database in 2023 - protein-protein association networks and functional enrichment analyses for any sequenced genome of interest
-  year: "2023"
 products:
 - category: GraphProduct
+  compression: gzip
   description: Complete protein-protein interaction network data with confidence scores
   format: tsv
-  compression: gzip
   id: string.protein.links
   name: STRING Protein Links
   product_url: https://stringdb-downloads.org/download/protein.links.v12.0.txt.gz
 - category: GraphProduct
+  compression: gzip
   description: Detailed protein network data including subscores per evidence channel
   format: tsv
-  compression: gzip
   id: string.protein.links.detailed
   name: STRING Protein Links Detailed
   product_url: https://stringdb-downloads.org/download/protein.links.detailed.v12.0.txt.gz
 - category: GraphProduct
-  description: Complete database dump containing all network nodes, edges, and scores
   compression: gzip
+  description: Complete database dump containing all network nodes, edges, and scores
   id: string.database
   name: STRING Database Dump
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
@@ -72,7 +50,8 @@ products:
   name: STRING REST API
   product_url: https://string-db.org/cgi/help?subpage=api
 - category: GraphicalInterface
-  description: Web interface for searching, visualizing, and analyzing protein-protein interaction networks
+  description: Web interface for searching, visualizing, and analyzing protein-protein
+    interaction networks
   id: string.web
   name: STRING Web Interface
   product_url: https://string-db.org/
@@ -245,8 +224,76 @@ products:
   - protcid
   secondary_source:
   - spoke
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
+  name: Bioteque Embeddings
+  original_source:
+  - chebi
+  - cosmic
+  - achilles
+  - depmap
+  - ccle
+  - gdsc
+  - cellosaurus
+  - clue
+  - ctd
+  - pharmdb
+  - prism
+  - drugbank
+  - lincs
+  - compartments
+  - offsides
+  - sider
+  - drugcentral
+  - repohub
+  - chemicalchecker
+  - repodb
+  - disgenet
+  - opentargets
+  - creeds
+  - interpro
+  - reactome
+  - tissues
+  - dorothea
+  - progeny
+  - gtex
+  - hpa
+  - go
+  - corum
+  - huri
+  - intact
+  - omnipath
+  - string
+  - bto
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+  secondary_source:
+  - bioteque
+publications:
+- authors:
+  - Szklarczyk D
+  - Kirsch R
+  - Koutrouli M
+  - Nastou K
+  - Mehryary F
+  - Hachilif R
+  - Annika GL
+  - Fang T
+  - Doncheva NT
+  - Pyysalo S
+  - Bork P
+  - Jensen LJ
+  - von Mering C
+  doi: doi:10.1093/nar/gkac1000
+  id: https://doi.org/10.1093/nar/gkac1000
+  journal: Nucleic Acids Research
+  preferred: true
+  title: The STRING database in 2023 - protein-protein association networks and functional
+    enrichment analyses for any sequenced genome of interest
+  year: '2023'
+version: '12.0'
 ---
-
 # STRING - Protein-Protein Interaction Networks
 
 STRING (Search Tool for the Retrieval of Interacting Genes/Proteins) is a database of known and predicted protein-protein interactions. The database contains information from numerous sources, including experimental repositories, computational prediction methods, and public text collections.
