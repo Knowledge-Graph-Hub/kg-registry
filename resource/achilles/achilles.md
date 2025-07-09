@@ -15,16 +15,14 @@ curators:
   - contact_type: url
     value: https://depmap.org/
   label: DepMap
-description: Project Achilles is a systematic effort aimed at identifying and cataloging gene essentiality across hundreds of genomically characterized cancer cell lines. Achilles uses genome-scale RNAi and CRISPR-Cas9 genetic perturbation reagents to silence or knockout individual genes and identify those genes that affect cell survival.
+description: Project Achilles is a systematic effort aimed at identifying and cataloging
+  gene essentiality across hundreds of genomically characterized cancer cell lines.
+  Achilles uses genome-scale RNAi and CRISPR-Cas9 genetic perturbation reagents to
+  silence or knockout individual genes and identify those genes that affect cell survival.
 domains:
 - biomedical
 - genomics
-- drug discovery
 - health
-- cancer
-funding:
-- category: Organization
-  label: Broad Institute
 homepage_url: https://depmap.org/portal/achilles/
 id: achilles
 layout: resource_detail
@@ -32,9 +30,55 @@ license:
   id: https://depmap.org/portal/terms/
   label: DepMap Terms of Use
 name: Project Achilles
+products:
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
+  name: Bioteque Embeddings
+  original_source:
+  - chebi
+  - cosmic
+  - achilles
+  - depmap
+  - ccle
+  - gdsc
+  - cellosaurus
+  - clue
+  - ctd
+  - pharmdb
+  - prism
+  - drugbank
+  - lincs
+  - compartments
+  - offsides
+  - sider
+  - drugcentral
+  - repohub
+  - chemicalchecker
+  - repodb
+  - disgenet
+  - opentargets
+  - creeds
+  - interpro
+  - reactome
+  - tissues
+  - dorothea
+  - progeny
+  - gtex
+  - hpa
+  - go
+  - corum
+  - huri
+  - intact
+  - omnipath
+  - string
+  - bto
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+  secondary_source:
+  - bioteque
 publications:
-- doi: doi:10.1016/j.cell.2017.06.010
-  label: "Defining a Cancer Dependency Map"
+- id: doi:10.1016/j.cell.2017.06.010
   authors:
   - Tsherniak A
   - Vazquez F
@@ -42,8 +86,10 @@ publications:
   - Weir BA
   - Kryukov G
   - Cowley GS
+  doi: 10.1016/j.cell.2017.06.010
   journal: Cell
-  year: "2017"
+  title: Defining a Cancer Dependency Map
+  year: '2017'
 ---
 # Project Achilles
 
