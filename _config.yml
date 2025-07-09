@@ -15687,14 +15687,52 @@ resources:
   version: 0.7.0
 - activity_status: active
   category: DataSource
-  description: Stub Resource page for kidsfirst. This page was automatically generated
-    because it was referenced by other resources.
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: support@kidsfirstdrc.org
+    - contact_type: url
+      value: https://kidsfirstdrc.org/
+    label: Kids First Data Resource Center
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://d3b.center/
+    label: Children's Hospital of Philadelphia
+  description: The Gabriella Miller Kids First Pediatric Research Program Data Resource
+    Center (Kids First DRC) provides researchers access to genomic and clinical data
+    from pediatric cancer and structural birth defect cohorts to accelerate discovery
+    and development of more effective treatments.
   domains:
-  - stub
+  - health
+  - biomedical
+  - genomics
+  - clinical
+  homepage_url: https://kidsfirstdrc.org/
   id: kidsfirst
   layout: resource_detail
-  name: Kidsfirst
+  name: Kids First Data Resource Center
   products:
+  - category: GraphicalInterface
+    description: Centralized platform providing access to harmonized clinical and
+      genomic data from childhood cancer and congenital disorder cohorts, supporting
+      cohort discovery and analysis.
+    id: kidsfirst.portal
+    name: Kids First Data Resource Portal
+    product_url: https://portal.kidsfirstdrc.org/
+  - category: GraphicalInterface
+    description: Cloud-based analysis platform for Kids First data, allowing researchers
+      to analyze and integrate genomic and clinical data in a secure environment.
+    id: kidsfirst.cavatica
+    name: CAVATICA Platform
+    product_url: https://cavatica.sbgenomics.com/
+  - category: GraphicalInterface
+    description: Web-based tool for exploring and visualizing pediatric cancer genomic
+      datasets, integrated with clinical data.
+    id: kidsfirst.pedcbioportal
+    name: PedcBioPortal
+    product_url: https://pedcbioportal.kidsfirstdrc.org/
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
       UBKG instances as neo4j graph databases, running in a Docker container. Requires
@@ -15822,9 +15860,7 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  repository: https://github.com/kids-first/
 - activity_status: active
   category: DataSource
   contacts:
@@ -23363,14 +23399,166 @@ resources:
   repository: https://github.com/ORCID
 - activity_status: active
   category: DataSource
-  description: Stub Resource page for ordo. This page was automatically generated
-    because it was referenced by other resources.
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: contact.orphanet@inserm.fr
+    - contact_type: url
+      value: https://www.orpha.net/
+    label: Orphanet
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.inserm.fr/
+    label: INSERM
+  description: The Orphanet Rare Disease Ontology (ORDO) is an open-access ontology
+    developed from the Orphanet information system, enabling complex queries of rare
+    diseases and their epidemiological data (age of onset, prevalence, mode of inheritance)
+    and gene-disorder functional relationships.
   domains:
-  - stub
+  - biomedical
+  - health
+  - clinical
+  - genomics
+  - phenotype
+  homepage_url: https://www.orphadata.com/ordo/
   id: ordo
   layout: resource_detail
-  name: Ordo
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0 (Creative Commons Attribution 4.0 International)
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: Orphanet Rare Disease Ontology (ORDO)
   products:
+  - category: DataModelProduct
+    description: ORDO in OWL format in English (v4.7)
+    format: owl
+    id: ordo.owl
+    name: ORDO OWL
+    product_url: https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.7.owl
+  - category: ProgrammingInterface
+    description: SPARQL endpoint for querying the ORDO ontology
+    id: ordo.sparql
+    name: ORDO SPARQL Endpoint
+    product_url: https://www.orphadata.com/ordo-sparql-endpoint/
+  - category: DataModelProduct
+    description: The Orphanet nomenclature pack provides ORPHAcodes (unique identifiers)
+      for rare diseases, along with mappings to other terminologies, and is released
+      annually in July.
+    id: orphacode.nomenclature
+    name: Orphanet Nomenclature Pack
+    product_url: https://www.orphacode.org/pack-nomenclature/
+  - category: ProgrammingInterface
+    description: API for accessing the Orphanet nomenclature pack data, allowing flexible
+      implementation into various healthcare information systems.
+    id: orphacode.api
+    name: ORPHAcodes API
+    product_url: https://api.orphacode.org/
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
       UBKG instances as neo4j graph databases, running in a Docker container. Requires
@@ -23498,113 +23686,6 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
-  - category: DataModelProduct
-    description: The latest release of EFO in OWL format
-    format: owl
-    id: efo.owl
-    name: EFO OWL
-    original_source:
-    - bfo
-    - bto
-    - chebi
-    - cl
-    - clo
-    - cob
-    - dc
-    - do
-    - ecto
-    - efo
-    - fbbt
-    - fbdv
-    - fma
-    - go
-    - hancestro
-    - hp
-    - iao
-    - ido
-    - ma
-    - mondo
-    - mp
-    - mpath
-    - ncbitaxon
-    - ncit
-    - oba
-    - obi
-    - ogms
-    - oio
-    - omit
-    - omo
-    - ordo
-    - pato
-    - po
-    - pr
-    - ro
-    - semapv
-    - skos
-    - so
-    - to
-    - uberon
-    - uo
-    - wbls
-    - zfa
-    product_url: https://www.ebi.ac.uk/efo/efo.owl
-    secondary_source:
-    - efo
-  - category: DataModelProduct
-    description: The latest release of EFO in OBO format
-    format: obo
-    id: efo.obo
-    name: EFO OBO
-    original_source:
-    - bfo
-    - bto
-    - chebi
-    - cl
-    - clo
-    - cob
-    - dc
-    - do
-    - ecto
-    - efo
-    - fbbt
-    - fbdv
-    - fma
-    - go
-    - hancestro
-    - hp
-    - iao
-    - ido
-    - ma
-    - mondo
-    - mp
-    - mpath
-    - ncbitaxon
-    - ncit
-    - oba
-    - obi
-    - ogms
-    - oio
-    - omit
-    - omo
-    - ordo
-    - pato
-    - po
-    - pr
-    - ro
-    - semapv
-    - skos
-    - so
-    - to
-    - uberon
-    - uo
-    - wbls
-    - zfa
-    product_url: https://www.ebi.ac.uk/efo/efo.obo
-    secondary_source:
-    - efo
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
 - activity_status: active
   category: DataSource
   description: Stub Resource page for orphanet. This page was automatically generated
