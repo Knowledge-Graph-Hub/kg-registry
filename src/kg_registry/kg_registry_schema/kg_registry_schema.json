@@ -1277,7 +1277,11 @@
                 "dot",
                 "boolnet",
                 "doc",
-                "docx"
+                "docx",
+                "python",
+                "java",
+                "javascript",
+                "mixed"
             ],
             "title": "FormatEnum",
             "type": "string"

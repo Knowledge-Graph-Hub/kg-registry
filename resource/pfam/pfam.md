@@ -28,6 +28,7 @@ products:
   id: pfam.site
   name: Interface for the Pfam Database
   product_url: https://www.ebi.ac.uk/interpro/entry/pfam/#table
+  format: http
 - category: Product
   description: The Pfam HMM library for Pfam-A families, used for searching protein
     sequences against Pfam.

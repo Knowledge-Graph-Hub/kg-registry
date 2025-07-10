@@ -35,6 +35,7 @@ products:
   product_url: https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-integration
   secondary_source:
   - cpathkg
+  format: python
 publications:
 - authors:
   - Braun I

@@ -51,6 +51,7 @@ products:
   original_source:
   - interpro
   product_url: http://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.74-105.0/interproscan-5.74-105.0-64-bit.tar.gz
+  format: java
 - category: DataModelProduct
   description: Complete list of InterPro entries with their types and short names
   format: tsv
