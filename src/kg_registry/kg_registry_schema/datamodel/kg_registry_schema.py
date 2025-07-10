@@ -501,6 +501,14 @@ class FormatEnum(str, Enum):
     """
     The Microsoft Word Open XML Document (DOCX) format, a modern file format for Microsoft Word documents. It is a zipped, XML-based file format that allows for more efficient storage and better compatibility with other software, as compared to the older DOC format.
     """
+    python = "python"
+    """
+    The Python script format, which is a text file containing Python code. It is used for writing scripts and programs in the Python language.
+    """
+    mixed = "mixed"
+    """
+    A product that contains multiple formats or serializations. This is used when a product is not easily categorized into a single format, such as a codebase that includes multiple file types (e.g., Python scripts, JSON files, etc.).
+    """
 
 
 class StandardEnum(str, Enum):
