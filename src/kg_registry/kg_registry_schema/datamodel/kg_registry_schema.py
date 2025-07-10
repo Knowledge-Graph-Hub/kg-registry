@@ -505,6 +505,10 @@ class FormatEnum(str, Enum):
     """
     The Python script format, which is a text file containing Python code. It is used for writing scripts and programs in the Python language.
     """
+    javascript = "javascript"
+    """
+    The JavaScript file format, which is a text file containing JavaScript code. It is used for writing scripts and programs in the JavaScript language.
+    """
     mixed = "mixed"
     """
     A product that contains multiple formats or serializations. This is used when a product is not easily categorized into a single format, such as a codebase that includes multiple file types (e.g., Python scripts, JSON files, etc.).
