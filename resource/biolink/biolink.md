@@ -44,7 +44,7 @@ products:
 - category: DataModelProduct
   compatibility:
   - standard: biolink
-    version: 4.2.5
+    version: v4.2.5
   description: OWL release of Biolink Model
   format: owl
   id: biolink.model.owl
@@ -54,10 +54,42 @@ products:
   product_url: https://w3id.org/biolink/biolink-model.owl.ttl
   secondary_source:
   - biolink
+  latest_version: v4.2.6-rc5
+  versions:
+    - v4.2.6-rc5
+    - v4.2.6-rc4
+    - v4.2.6-rc3
+    - v4.2.6-rc2
+    - v4.2.6-rc1
+    - v4.2.5
+    - v4.2.5-rc2
+    - v4.2.5-rc1
+    - v4.2.4
+    - v4.2.3
+    - v4.2.2
+    - v4.2.1
+    - v4.2.0
+    - v4.2.0-rc.2
+    - v4.2.0-rc.1
+    - v4.1.6
+    - v4.1.5
+    - v4.1.4
+    - v4.1.3
+    - v4.1.2
+    - v4.1.1
+    - v4.1.0
+    - v4.0.0
+    - v3.6.0
+    - v3.5.4
+    - v3.5.3
+    - v3.5.2
+    - v3.5.1
+    - v3.5.0
+    - v3.4.3
 - category: DataModelProduct
   compatibility:
   - standard: biolink
-    version: 4.2.5
+    version: v4.2.5
   description: JSON schema release of Biolink Model
   format: json
   id: biolink.model.json
@@ -67,10 +99,42 @@ products:
   product_url: https://w3id.org/biolink/biolink-model.json
   secondary_source:
   - biolink
+  latest_version: v4.2.6-rc5
+  versions:
+    - v4.2.6-rc5
+    - v4.2.6-rc4
+    - v4.2.6-rc3
+    - v4.2.6-rc2
+    - v4.2.6-rc1
+    - v4.2.5
+    - v4.2.5-rc2
+    - v4.2.5-rc1
+    - v4.2.4
+    - v4.2.3
+    - v4.2.2
+    - v4.2.1
+    - v4.2.0
+    - v4.2.0-rc.2
+    - v4.2.0-rc.1
+    - v4.1.6
+    - v4.1.5
+    - v4.1.4
+    - v4.1.3
+    - v4.1.2
+    - v4.1.1
+    - v4.1.0
+    - v4.0.0
+    - v3.6.0
+    - v3.5.4
+    - v3.5.3
+    - v3.5.2
+    - v3.5.1
+    - v3.5.0
+    - v3.4.3
 - category: DataModelProduct
   compatibility:
   - standard: biolink
-    version: 4.2.5
+    version: v4.2.5
   description: GraphQL release of Biolink Model
   format: graphql
   id: biolink.model.graphql
@@ -80,10 +144,42 @@ products:
   product_url: https://w3id.org/biolink/biolink-model.graphql
   secondary_source:
   - biolink
+  latest_version: v4.2.6-rc5
+  versions:
+    - v4.2.6-rc5
+    - v4.2.6-rc4
+    - v4.2.6-rc3
+    - v4.2.6-rc2
+    - v4.2.6-rc1
+    - v4.2.5
+    - v4.2.5-rc2
+    - v4.2.5-rc1
+    - v4.2.4
+    - v4.2.3
+    - v4.2.2
+    - v4.2.1
+    - v4.2.0
+    - v4.2.0-rc.2
+    - v4.2.0-rc.1
+    - v4.1.6
+    - v4.1.5
+    - v4.1.4
+    - v4.1.3
+    - v4.1.2
+    - v4.1.1
+    - v4.1.0
+    - v4.0.0
+    - v3.6.0
+    - v3.5.4
+    - v3.5.3
+    - v3.5.2
+    - v3.5.1
+    - v3.5.0
+    - v3.4.3
 - category: DataModelProduct
   compatibility:
   - standard: biolink
-    version: 4.2.5
+    version: v4.2.5
   description: Protobuf release of Biolink Model
   format: protobuf
   id: biolink.model.proto
@@ -93,10 +189,42 @@ products:
   product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/protobuf/biolink_model.proto
   secondary_source:
   - biolink
+  latest_version: v4.2.6-rc5
+  versions:
+    - v4.2.6-rc5
+    - v4.2.6-rc4
+    - v4.2.6-rc3
+    - v4.2.6-rc2
+    - v4.2.6-rc1
+    - v4.2.5
+    - v4.2.5-rc2
+    - v4.2.5-rc1
+    - v4.2.4
+    - v4.2.3
+    - v4.2.2
+    - v4.2.1
+    - v4.2.0
+    - v4.2.0-rc.2
+    - v4.2.0-rc.1
+    - v4.1.6
+    - v4.1.5
+    - v4.1.4
+    - v4.1.3
+    - v4.1.2
+    - v4.1.1
+    - v4.1.0
+    - v4.0.0
+    - v3.6.0
+    - v3.5.4
+    - v3.5.3
+    - v3.5.2
+    - v3.5.1
+    - v3.5.0
+    - v3.4.3
 - category: DataModelProduct
   compatibility:
   - standard: biolink
-    version: 4.2.5
+    version: v4.2.5
   description: SHACL release of Biolink Model
   format: shacl
   id: biolink.model.shacl
@@ -106,10 +234,42 @@ products:
   product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shacl/biolink_model.shacl.ttl
   secondary_source:
   - biolink
+  latest_version: v4.2.6-rc5
+  versions:
+    - v4.2.6-rc5
+    - v4.2.6-rc4
+    - v4.2.6-rc3
+    - v4.2.6-rc2
+    - v4.2.6-rc1
+    - v4.2.5
+    - v4.2.5-rc2
+    - v4.2.5-rc1
+    - v4.2.4
+    - v4.2.3
+    - v4.2.2
+    - v4.2.1
+    - v4.2.0
+    - v4.2.0-rc.2
+    - v4.2.0-rc.1
+    - v4.1.6
+    - v4.1.5
+    - v4.1.4
+    - v4.1.3
+    - v4.1.2
+    - v4.1.1
+    - v4.1.0
+    - v4.0.0
+    - v3.6.0
+    - v3.5.4
+    - v3.5.3
+    - v3.5.2
+    - v3.5.1
+    - v3.5.0
+    - v3.4.3
 - category: DataModelProduct
   compatibility:
   - standard: biolink
-    version: 4.2.5
+    version: v4.2.5
   description: ShEx release of Biolink Model
   format: shex
   id: biolink.model.shex
@@ -119,6 +279,38 @@ products:
   product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
   secondary_source:
   - biolink
+  latest_version: v4.2.6-rc5
+  versions:
+    - v4.2.6-rc5
+    - v4.2.6-rc4
+    - v4.2.6-rc3
+    - v4.2.6-rc2
+    - v4.2.6-rc1
+    - v4.2.5
+    - v4.2.5-rc2
+    - v4.2.5-rc1
+    - v4.2.4
+    - v4.2.3
+    - v4.2.2
+    - v4.2.1
+    - v4.2.0
+    - v4.2.0-rc.2
+    - v4.2.0-rc.1
+    - v4.1.6
+    - v4.1.5
+    - v4.1.4
+    - v4.1.3
+    - v4.1.2
+    - v4.1.1
+    - v4.1.0
+    - v4.0.0
+    - v3.6.0
+    - v3.5.4
+    - v3.5.3
+    - v3.5.2
+    - v3.5.1
+    - v3.5.0
+    - v3.4.3
 - category: GraphProduct
   description: Biolink Automat
   format: kgx-jsonl
