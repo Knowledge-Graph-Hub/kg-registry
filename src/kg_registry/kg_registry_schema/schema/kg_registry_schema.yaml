@@ -328,6 +328,20 @@ classes:
           The format of a dump of the product as a file.
           Note the product may also be compressed.
         range: DumpFormatEnum
+      versions:
+        description: A list of names of versions of the product.
+        range: string
+        multivalued: true
+        exact_mappings:
+          - schema:version
+          - dcterms:hasVersion
+      latest_version:
+        description: >-
+          The latest version of the product, or the most recent
+          version curated in the registry.
+          If the product is available at a permanent link,
+          this may be something like "latest".
+        range: string
 
   GraphProduct:
     description: >-
