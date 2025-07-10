@@ -86,12 +86,28 @@ layout: default
               <button class="btn btn-sm dropdown-toggle" type="button" id="versionDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-clock-history"></i>
               </button>
-              <ul class="dropdown-menu" aria-labelledby="versionDropdown">
+              <ul class="dropdown-menu version-dropdown" aria-labelledby="versionDropdown" style="max-height: 300px; overflow-y: auto;">
                 <li><span class="dropdown-item-text fw-bold">Previous versions</span></li>
                 <li><hr class="dropdown-divider"></li>
-                {% for version in page.versions %}
+                {% assign version_count = page.versions | size %}
+                {% assign initial_display = 10 %}
+                {% for version in page.versions limit: initial_display %}
                 <li><span class="dropdown-item">{{ version }}</span></li>
                 {% endfor %}
+                
+                {% if version_count > initial_display %}
+                <li><hr class="dropdown-divider"></li>
+                <li>
+                  <button class="dropdown-item text-primary" id="loadMoreVersions">
+                    More... ({{ version_count | minus: initial_display }} more)
+                  </button>
+                </li>
+                <div class="d-none" id="additionalVersionsContainer">
+                  {% for version in page.versions offset: initial_display %}
+                  <li><span class="dropdown-item">{{ version }}</span></li>
+                  {% endfor %}
+                </div>
+                {% endif %}
               </ul>
             </div>
             {% endif %}
@@ -330,4 +346,32 @@ layout: default
   </div>
   {% endif %}
 
-</div>
+</div>  <!-- Script for "More..." button in version dropdown -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const loadMoreBtn = document.getElementById('loadMoreVersions');
+      const additionalVersionsContainer = document.getElementById('additionalVersionsContainer');
+      
+      if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function(e) {
+          e.stopPropagation(); // Prevent dropdown from closing
+          
+          // Get all additional version items
+          const additionalVersionItems = additionalVersionsContainer.querySelectorAll('li');
+          
+          // Create list items for each additional version and insert them before the "More..." button
+          const moreButtonItem = loadMoreBtn.parentNode;
+          const dividerItem = moreButtonItem.previousElementSibling;
+          
+          additionalVersionItems.forEach(function(item) {
+            dividerItem.parentNode.insertBefore(item, dividerItem);
+          });
+          
+          // Remove the "More..." button and divider
+          moreButtonItem.remove();
+          dividerItem.remove();
+          additionalVersionsContainer.remove();
+        });
+      }
+    });
+  </script>
