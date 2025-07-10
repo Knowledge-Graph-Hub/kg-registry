@@ -82,6 +82,7 @@ products:
   id: spoke.neighborhood_explorer
   name: SPOKE Neighborhood Explorer
   product_url: https://spoke.rbvi.ucsf.edu/neighborhood.html
+  format: http
 publications:
 - authors:
   - John H Morris
