@@ -73,6 +73,34 @@ layout: default
           {% endif %}
         </div>
       </div>
+      
+      <!-- Version information card -->
+      <div class="card bg-light mb-3" style="max-width: 12rem;">
+        <div class="card-body">
+          <h5 class="card-title">Latest Version</h5>
+          {% if page.latest_version %}
+          <div class="d-flex align-items-center">
+            <p class="card-text mb-0">{{ page.latest_version }}</p>
+            {% if page.versions %}
+            <div class="dropdown ms-2">
+              <button class="btn btn-sm dropdown-toggle" type="button" id="versionDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-clock-history"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="versionDropdown">
+                <li><span class="dropdown-item-text fw-bold">Previous versions</span></li>
+                <li><hr class="dropdown-divider"></li>
+                {% for version in page.versions %}
+                <li><span class="dropdown-item">{{ version }}</span></li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+          </div>
+          {% else %}
+          <p class="card-text" style="font-weight: bold;">Unknown</p>
+          {% endif %}
+        </div>
+      </div>
     </div>
 
     {% if page.warnings %}
