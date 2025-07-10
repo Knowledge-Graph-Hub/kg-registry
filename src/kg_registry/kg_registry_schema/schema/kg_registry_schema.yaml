@@ -1138,6 +1138,10 @@ enums:
         description: >-
           The Python script format, which is a text file containing
           Python code. It is used for writing scripts and programs in the Python language.
+      javascript:
+        description: >-
+          The JavaScript file format, which is a text file containing
+          JavaScript code. It is used for writing scripts and programs in the JavaScript language.
       mixed:
         description: >-
           A product that contains multiple formats or serializations.

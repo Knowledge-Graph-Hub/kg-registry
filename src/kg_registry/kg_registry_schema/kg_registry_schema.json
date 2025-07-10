@@ -1279,6 +1279,7 @@
                 "doc",
                 "docx",
                 "python",
+                "javascript",
                 "mixed"
             ],
             "title": "FormatEnum",
