@@ -3,6 +3,7 @@
 import argparse
 import sys
 import pathlib
+import datetime
 
 import frontmatter
 import yaml
@@ -107,6 +108,9 @@ def validate_markdown(args):
         # parts of the schema
         (obj, md) = load_md(fn)
 
+        # Normalize date fields to ISO 8601 format before validation
+        obj = normalize_date_fields(obj)
+
         # If this is the root of the resource, validate against the Resource class
         # These pages will already contain child classes, so other
         # pages don't need their own validation (it would be redundant)
@@ -114,7 +118,7 @@ def validate_markdown(args):
             target_class = "Resource"
         else:
             continue
-        report = validate(instance=obj, schema=SOURCE_SCHEMA_PATH, target_class=target_class)
+        report = validate(instance=obj, schema=str(SOURCE_SCHEMA_PATH), target_class=target_class)
         if report.results:
             for result in report.results:
                 if result.severity == "ERROR":
@@ -330,6 +334,15 @@ def concat_resource_yaml(args):
                             metadata["products"] = [metadata["products"]
                                                     ] if metadata["products"] else []
 
+                        # Make sure dates are in the correct format
+                        if "creation_date" not in metadata:
+                            metadata["creation_date"] = datetime.datetime.now().strftime("%Y-%m-%dT00:00:00Z")
+                        if "last_modified_date" not in metadata:
+                            metadata["last_modified_date"] = datetime.datetime.now().strftime("%Y-%m-%dT00:00:00Z")
+                        
+                        # Normalize dates
+                        metadata = normalize_date_fields(metadata)
+
                         # Get existing product IDs
                         existing_product_ids = set()
                         for prod in metadata["products"]:
@@ -376,7 +389,9 @@ def concat_resource_yaml(args):
                 "category": "DataSource",  # Default category
                 "warnings": [
                     "This is an automatically generated stub page. Please replace with accurate information about this resource."
-                ]
+                ],
+                "creation_date": datetime.datetime.now().strftime("%Y-%m-%dT00:00:00Z"),
+                "last_modified_date": datetime.datetime.now().strftime("%Y-%m-%dT00:00:00Z")
             }
 
             # Add any referenced products as stubs
@@ -601,6 +616,8 @@ def concat_resource_yaml(args):
             cfg = yaml.load(f.read(), Loader=yaml.SafeLoader)
     for fn in args.files:
         (obj, md) = load_md(fn)
+        # Normalize date fields to ISO 8601 format
+        obj = normalize_date_fields(obj)
         # Check if the object is actually a product
         if obj.get("id") == pathlib.Path(fn).parent.name:
             library.append(obj)
@@ -634,6 +651,8 @@ def load_md(fn):
     Returns a tuple (yaml_obj, markdown_text)
     """
     onto_stuff = frontmatter.load(fn)
+    # Normalize date fields to ensure they are in ISO 8601 format
+    normalize_date_fields(onto_stuff.metadata)
     return (onto_stuff.metadata, onto_stuff.content)
 
 
@@ -643,6 +662,43 @@ def get_YAML_text(fn):
         chunks = text.split("---")
         yamltext = chunks[1].strip()
         return yamltext
+
+
+def normalize_date_fields(obj):
+    """
+    Normalize date fields to ISO 8601 format with time and timezone.
+
+    This function ensures that date fields like creation_date and last_modified_date
+    are in the format expected by the schema (e.g., '2024-02-12T00:00:00Z').
+    If a date is just a date string (e.g., '2024-02-12'), it adds time and timezone.
+    """
+    date_fields = ['creation_date', 'last_modified_date']
+
+    for field in date_fields:
+        if field in obj and obj[field]:
+            date_value = obj[field]
+            # If it's already in the correct format (contains T and Z), leave it as is
+            if isinstance(date_value, str) and 'T' in date_value and date_value.endswith('Z'):
+                continue
+
+            # If it's a date string without time, add time and timezone
+            if isinstance(date_value, str) and len(date_value) >= 10:
+                # Extract just the date part in case there are quotes or other characters
+                date_part = date_value.strip('"\'')
+                if len(date_part) >= 10:  # At least YYYY-MM-DD
+                    date_part = date_part[:10]  # Just take YYYY-MM-DD part
+                    obj[field] = f"{date_part}T00:00:00Z"
+
+    # Recursively process nested objects
+    for key, value in obj.items():
+        if isinstance(value, dict):
+            normalize_date_fields(value)
+        elif isinstance(value, list):
+            for item in value:
+                if isinstance(item, dict):
+                    normalize_date_fields(item)
+
+    return obj
 
 
 if __name__ == "__main__":
