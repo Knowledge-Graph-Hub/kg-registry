@@ -73,6 +73,29 @@ products:
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
+  original_source:
+  - to
+  - chebi
+  - ro
+  - ncbitaxon
+  - go
+  - omo
+  - ecto
+  - ido
+  - oio
+  - pato
+  - envo
+  - ohmi
+  - iao
+  - omrse
+  - obi
+  - peco
+  - po
+  - uberon
+  - ogms
+  - bfo
+  secondary_source:
+  - to
 - category: DataModelProduct
   description: The latest release of Plant Trait Ontology in OBO format
   format: obo
@@ -89,6 +112,29 @@ products:
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
+  original_source:
+  - to
+  - chebi
+  - ro
+  - ncbitaxon
+  - go
+  - omo
+  - ecto
+  - ido
+  - oio
+  - pato
+  - envo
+  - ohmi
+  - iao
+  - omrse
+  - obi
+  - peco
+  - po
+  - uberon
+  - ogms
+  - bfo
+  secondary_source:
+  - to
 - category: DataModelProduct
   description: The Basic subset of the Plant Trait Ontology in OBO format
   format: obo
@@ -105,6 +151,29 @@ products:
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
+  original_source:
+  - to
+  - chebi
+  - ro
+  - ncbitaxon
+  - go
+  - omo
+  - ecto
+  - ido
+  - oio
+  - pato
+  - envo
+  - ohmi
+  - iao
+  - omrse
+  - obi
+  - peco
+  - po
+  - uberon
+  - ogms
+  - bfo
+  secondary_source:
+  - to
 creation_date: 2025-07-10
 last_modified_date: 2025-07-10
 ---
