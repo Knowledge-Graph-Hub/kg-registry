@@ -505,6 +505,10 @@ class FormatEnum(str, Enum):
     """
     The Python script format, which is a text file containing Python code. It is used for writing scripts and programs in the Python language.
     """
+    java = "java"
+    """
+    The Java source code format, which is a text file containing Java code. It is used for writing scripts and programs in the Java language.
+    """
     javascript = "javascript"
     """
     The JavaScript file format, which is a text file containing JavaScript code. It is used for writing scripts and programs in the JavaScript language.
