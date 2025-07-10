@@ -622,6 +622,13 @@
                         "null"
                     ]
                 },
+                "latest_version": {
+                    "description": "The latest version of the product, or the most recent version curated in the registry. If the product is available at a permanent link, this may be something like \"latest\".",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "layout": {
                     "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.",
                     "type": [
@@ -708,6 +715,16 @@
                     "description": "Tags associated with the product.",
                     "items": {
                         "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "versions": {
+                    "description": "A list of names of versions of the product.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -1039,6 +1056,13 @@
                         "null"
                     ]
                 },
+                "latest_version": {
+                    "description": "The latest version of the product, or the most recent version curated in the registry. If the product is available at a permanent link, this may be something like \"latest\".",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "layout": {
                     "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.",
                     "type": [
@@ -1125,6 +1149,16 @@
                     "description": "Tags associated with the product.",
                     "items": {
                         "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "versions": {
+                    "description": "A list of names of versions of the product.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -1428,6 +1462,13 @@
                         "null"
                     ]
                 },
+                "latest_version": {
+                    "description": "The latest version of the product, or the most recent version curated in the registry. If the product is available at a permanent link, this may be something like \"latest\".",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "layout": {
                     "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.",
                     "type": [
@@ -1541,6 +1582,16 @@
                     "description": "Tags associated with the product.",
                     "items": {
                         "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "versions": {
+                    "description": "A list of names of versions of the product.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -1662,6 +1713,13 @@
                         "null"
                     ]
                 },
+                "latest_version": {
+                    "description": "The latest version of the product, or the most recent version curated in the registry. If the product is available at a permanent link, this may be something like \"latest\".",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "layout": {
                     "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.",
                     "type": [
@@ -1748,6 +1806,16 @@
                     "description": "Tags associated with the product.",
                     "items": {
                         "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "versions": {
+                    "description": "A list of names of versions of the product.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -2236,6 +2304,13 @@
                         "null"
                     ]
                 },
+                "latest_version": {
+                    "description": "The latest version of the product, or the most recent version curated in the registry. If the product is available at a permanent link, this may be something like \"latest\".",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "layout": {
                     "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.",
                     "type": [
@@ -2322,6 +2397,16 @@
                     "description": "Tags associated with the product.",
                     "items": {
                         "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "versions": {
+                    "description": "A list of names of versions of the product.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -2540,6 +2625,13 @@
                         "null"
                     ]
                 },
+                "latest_version": {
+                    "description": "The latest version of the product, or the most recent version curated in the registry. If the product is available at a permanent link, this may be something like \"latest\".",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "layout": {
                     "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.",
                     "type": [
@@ -2626,6 +2718,16 @@
                     "description": "Tags associated with the product.",
                     "items": {
                         "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "versions": {
+                    "description": "A list of names of versions of the product.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -2747,6 +2849,13 @@
                         "null"
                     ]
                 },
+                "latest_version": {
+                    "description": "The latest version of the product, or the most recent version curated in the registry. If the product is available at a permanent link, this may be something like \"latest\".",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "layout": {
                     "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.",
                     "type": [
@@ -2833,6 +2942,16 @@
                     "description": "Tags associated with the product.",
                     "items": {
                         "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "versions": {
+                    "description": "A list of names of versions of the product.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -2975,6 +3094,13 @@
                         "null"
                     ]
                 },
+                "latest_version": {
+                    "description": "The latest version of the product, or the most recent version curated in the registry. If the product is available at a permanent link, this may be something like \"latest\".",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "layout": {
                     "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.",
                     "type": [
@@ -3061,6 +3187,16 @@
                     "description": "Tags associated with the product.",
                     "items": {
                         "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "versions": {
+                    "description": "A list of names of versions of the product.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",
