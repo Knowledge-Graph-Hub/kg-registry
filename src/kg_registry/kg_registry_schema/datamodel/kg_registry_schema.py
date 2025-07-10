@@ -833,6 +833,10 @@ class Product(NamedThing):
     compatibility: Optional[list[StandardCompatibility]] = Field(default=None, description="""A list of standards that the product conforms to. This is not the same as its serialization/format.""", json_schema_extra = { "linkml_meta": {'alias': 'compatibility', 'domain_of': ['Product']} })
     format: Optional[FormatEnum] = Field(default=None, description="""The format or serialization of the product. Generally corresponds to the file extension.""", json_schema_extra = { "linkml_meta": {'alias': 'format', 'domain_of': ['Product']} })
     dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'alias': 'dump_format', 'domain_of': ['Product']} })
+    versions: Optional[list[str]] = Field(default=None, description="""A list of names of versions of the product.""", json_schema_extra = { "linkml_meta": {'alias': 'versions',
+         'domain_of': ['Product'],
+         'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
+    latest_version: Optional[str] = Field(default=None, description="""The latest version of the product, or the most recent version curated in the registry. If the product is available at a permanent link, this may be something like \"latest\".""", json_schema_extra = { "linkml_meta": {'alias': 'latest_version', 'domain_of': ['Product']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the entity. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -875,6 +879,10 @@ class GraphProduct(Product):
     compatibility: Optional[list[StandardCompatibility]] = Field(default=None, description="""A list of standards that the product conforms to. This is not the same as its serialization/format.""", json_schema_extra = { "linkml_meta": {'alias': 'compatibility', 'domain_of': ['Product']} })
     format: Optional[FormatEnum] = Field(default=None, description="""The format or serialization of the product. Generally corresponds to the file extension.""", json_schema_extra = { "linkml_meta": {'alias': 'format', 'domain_of': ['Product']} })
     dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'alias': 'dump_format', 'domain_of': ['Product']} })
+    versions: Optional[list[str]] = Field(default=None, description="""A list of names of versions of the product.""", json_schema_extra = { "linkml_meta": {'alias': 'versions',
+         'domain_of': ['Product'],
+         'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
+    latest_version: Optional[str] = Field(default=None, description="""The latest version of the product, or the most recent version curated in the registry. If the product is available at a permanent link, this may be something like \"latest\".""", json_schema_extra = { "linkml_meta": {'alias': 'latest_version', 'domain_of': ['Product']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the entity. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -913,6 +921,10 @@ class DataModelProduct(Product):
     compatibility: Optional[list[StandardCompatibility]] = Field(default=None, description="""A list of standards that the product conforms to. This is not the same as its serialization/format.""", json_schema_extra = { "linkml_meta": {'alias': 'compatibility', 'domain_of': ['Product']} })
     format: Optional[FormatEnum] = Field(default=None, description="""The format or serialization of the product. Generally corresponds to the file extension.""", json_schema_extra = { "linkml_meta": {'alias': 'format', 'domain_of': ['Product']} })
     dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'alias': 'dump_format', 'domain_of': ['Product']} })
+    versions: Optional[list[str]] = Field(default=None, description="""A list of names of versions of the product.""", json_schema_extra = { "linkml_meta": {'alias': 'versions',
+         'domain_of': ['Product'],
+         'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
+    latest_version: Optional[str] = Field(default=None, description="""The latest version of the product, or the most recent version curated in the registry. If the product is available at a permanent link, this may be something like \"latest\".""", json_schema_extra = { "linkml_meta": {'alias': 'latest_version', 'domain_of': ['Product']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the entity. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -951,6 +963,10 @@ class MappingProduct(Product):
     compatibility: Optional[list[StandardCompatibility]] = Field(default=None, description="""A list of standards that the product conforms to. This is not the same as its serialization/format.""", json_schema_extra = { "linkml_meta": {'alias': 'compatibility', 'domain_of': ['Product']} })
     format: Optional[FormatEnum] = Field(default=None, description="""The format or serialization of the product. Generally corresponds to the file extension.""", json_schema_extra = { "linkml_meta": {'alias': 'format', 'domain_of': ['Product']} })
     dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'alias': 'dump_format', 'domain_of': ['Product']} })
+    versions: Optional[list[str]] = Field(default=None, description="""A list of names of versions of the product.""", json_schema_extra = { "linkml_meta": {'alias': 'versions',
+         'domain_of': ['Product'],
+         'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
+    latest_version: Optional[str] = Field(default=None, description="""The latest version of the product, or the most recent version curated in the registry. If the product is available at a permanent link, this may be something like \"latest\".""", json_schema_extra = { "linkml_meta": {'alias': 'latest_version', 'domain_of': ['Product']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the entity. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -989,6 +1005,10 @@ class ProcessProduct(Product):
     compatibility: Optional[list[StandardCompatibility]] = Field(default=None, description="""A list of standards that the product conforms to. This is not the same as its serialization/format.""", json_schema_extra = { "linkml_meta": {'alias': 'compatibility', 'domain_of': ['Product']} })
     format: Optional[FormatEnum] = Field(default=None, description="""The format or serialization of the product. Generally corresponds to the file extension.""", json_schema_extra = { "linkml_meta": {'alias': 'format', 'domain_of': ['Product']} })
     dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'alias': 'dump_format', 'domain_of': ['Product']} })
+    versions: Optional[list[str]] = Field(default=None, description="""A list of names of versions of the product.""", json_schema_extra = { "linkml_meta": {'alias': 'versions',
+         'domain_of': ['Product'],
+         'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
+    latest_version: Optional[str] = Field(default=None, description="""The latest version of the product, or the most recent version curated in the registry. If the product is available at a permanent link, this may be something like \"latest\".""", json_schema_extra = { "linkml_meta": {'alias': 'latest_version', 'domain_of': ['Product']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the entity. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -1027,6 +1047,10 @@ class GraphicalInterface(Product):
     compatibility: Optional[list[StandardCompatibility]] = Field(default=None, description="""A list of standards that the product conforms to. This is not the same as its serialization/format.""", json_schema_extra = { "linkml_meta": {'alias': 'compatibility', 'domain_of': ['Product']} })
     format: Optional[FormatEnum] = Field(default=None, description="""The format or serialization of the product. Generally corresponds to the file extension.""", json_schema_extra = { "linkml_meta": {'alias': 'format', 'domain_of': ['Product']} })
     dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'alias': 'dump_format', 'domain_of': ['Product']} })
+    versions: Optional[list[str]] = Field(default=None, description="""A list of names of versions of the product.""", json_schema_extra = { "linkml_meta": {'alias': 'versions',
+         'domain_of': ['Product'],
+         'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
+    latest_version: Optional[str] = Field(default=None, description="""The latest version of the product, or the most recent version curated in the registry. If the product is available at a permanent link, this may be something like \"latest\".""", json_schema_extra = { "linkml_meta": {'alias': 'latest_version', 'domain_of': ['Product']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the entity. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -1068,6 +1092,10 @@ class ProgrammingInterface(Product):
     compatibility: Optional[list[StandardCompatibility]] = Field(default=None, description="""A list of standards that the product conforms to. This is not the same as its serialization/format.""", json_schema_extra = { "linkml_meta": {'alias': 'compatibility', 'domain_of': ['Product']} })
     format: Optional[FormatEnum] = Field(default=None, description="""The format or serialization of the product. Generally corresponds to the file extension.""", json_schema_extra = { "linkml_meta": {'alias': 'format', 'domain_of': ['Product']} })
     dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'alias': 'dump_format', 'domain_of': ['Product']} })
+    versions: Optional[list[str]] = Field(default=None, description="""A list of names of versions of the product.""", json_schema_extra = { "linkml_meta": {'alias': 'versions',
+         'domain_of': ['Product'],
+         'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
+    latest_version: Optional[str] = Field(default=None, description="""The latest version of the product, or the most recent version curated in the registry. If the product is available at a permanent link, this may be something like \"latest\".""", json_schema_extra = { "linkml_meta": {'alias': 'latest_version', 'domain_of': ['Product']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the entity. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -1106,6 +1134,10 @@ class DocumentationProduct(Product):
     compatibility: Optional[list[StandardCompatibility]] = Field(default=None, description="""A list of standards that the product conforms to. This is not the same as its serialization/format.""", json_schema_extra = { "linkml_meta": {'alias': 'compatibility', 'domain_of': ['Product']} })
     format: Optional[FormatEnum] = Field(default=None, description="""The format or serialization of the product. Generally corresponds to the file extension.""", json_schema_extra = { "linkml_meta": {'alias': 'format', 'domain_of': ['Product']} })
     dump_format: Optional[DumpFormatEnum] = Field(default=None, description="""The format of a dump of the product as a file. Note the product may also be compressed.""", json_schema_extra = { "linkml_meta": {'alias': 'dump_format', 'domain_of': ['Product']} })
+    versions: Optional[list[str]] = Field(default=None, description="""A list of names of versions of the product.""", json_schema_extra = { "linkml_meta": {'alias': 'versions',
+         'domain_of': ['Product'],
+         'exact_mappings': ['schema:version', 'dcterms:hasVersion']} })
+    latest_version: Optional[str] = Field(default=None, description="""The latest version of the product, or the most recent version curated in the registry. If the product is available at a permanent link, this may be something like \"latest\".""", json_schema_extra = { "linkml_meta": {'alias': 'latest_version', 'domain_of': ['Product']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the entity. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
