@@ -1,73 +1,86 @@
 ---
 activity_status: active
 category: DataSource
-description: Orphanet is a unique resource for information and data on rare diseases and orphan drugs, aimed at improving diagnosis, care, and treatment of patients with rare diseases. It maintains the Orphanet rare disease nomenclature (ORPHAcodes), which is essential for improving the visibility of rare diseases in health and research information systems.
-domains:
-- biomedical
-- clinical
-id: orphanet
-layout: resource_detail
-name: Orphanet
-homepage_url: https://www.orpha.net/
-repository: https://github.com/Orphanet
-version: July 2025
 contacts:
 - category: Organization
   contact_details:
   - contact_type: url
     value: https://www.orpha.net/en/institutions/get-in-touch/
   label: Orphanet
+creation_date: "2025-07-10"
+description: Orphanet is a unique resource for information and data on rare diseases
+  and orphan drugs, aimed at improving diagnosis, care, and treatment of patients
+  with rare diseases. It maintains the Orphanet rare disease nomenclature (ORPHAcodes),
+  which is essential for improving the visibility of rare diseases in health and research
+  information systems.
+domains:
+- biomedical
+- clinical
+homepage_url: https://www.orpha.net/
+id: orphanet
+last_modified_date: "2025-07-10"
+layout: resource_detail
+name: Orphanet
 products:
 - category: Product
-  description: XML dataset containing information on expert centers dedicated to the medical management and/or genetic counselling for rare diseases.
+  description: XML dataset containing information on expert centers dedicated to the
+    medical management and/or genetic counselling for rare diseases.
   format: xml
   id: orphanet.expertcenters
   name: Expert Centers Dataset
   product_url: https://www.orphadata.com/expert-resources/
 - category: Product
-  description: XML dataset containing information on expert center networks for rare diseases.
+  description: XML dataset containing information on expert center networks for rare
+    diseases.
   format: xml
   id: orphanet.expertcentersnetworks
   name: Expert Centers Networks Dataset
   product_url: https://www.orphadata.com/expert-resources/
 - category: Product
-  description: XML dataset containing information on diagnostic tests and clinical laboratories for rare diseases.
+  description: XML dataset containing information on diagnostic tests and clinical
+    laboratories for rare diseases.
   format: xml
   id: orphanet.diagnostictests
   name: Diagnostic Tests and Laboratories Dataset
   product_url: https://www.orphadata.com/expert-resources/
 - category: Product
-  description: XML dataset containing information on patient organizations dedicated to rare diseases.
+  description: XML dataset containing information on patient organizations dedicated
+    to rare diseases.
   format: xml
   id: orphanet.patientorganizations
   name: Patient Organizations Dataset
   product_url: https://www.orphadata.com/expert-resources/
 - category: Product
-  description: XML dataset containing information on patient organization networks for rare diseases.
+  description: XML dataset containing information on patient organization networks
+    for rare diseases.
   format: xml
   id: orphanet.patientorganizationsnetworks
   name: Patient Organizations Networks Dataset
   product_url: https://www.orphadata.com/expert-resources/
 - category: Product
-  description: XML dataset containing information on national research projects focused on rare diseases.
+  description: XML dataset containing information on national research projects focused
+    on rare diseases.
   format: xml
   id: orphanet.researchprojects
   name: National Research Projects Dataset
   product_url: https://www.orphadata.com/expert-resources/
 - category: Product
-  description: XML dataset containing information on multinational research project networks for rare diseases.
+  description: XML dataset containing information on multinational research project
+    networks for rare diseases.
   format: xml
   id: orphanet.researchprojectsnetworks
   name: Multinational Research Projects Networks Dataset
   product_url: https://www.orphadata.com/expert-resources/
 - category: Product
-  description: XML dataset containing information on national clinical trials for rare diseases.
+  description: XML dataset containing information on national clinical trials for
+    rare diseases.
   format: xml
   id: orphanet.clinicaltrials
   name: National Clinical Trials Dataset
   product_url: https://www.orphadata.com/expert-resources/
 - category: Product
-  description: XML dataset containing information on multinational clinical trial networks for rare diseases.
+  description: XML dataset containing information on multinational clinical trial
+    networks for rare diseases.
   format: xml
   id: orphanet.clinicaltrialsnetworks
   name: Multinational Clinical Trials Networks Dataset
@@ -79,7 +92,8 @@ products:
   name: Patient Registries Dataset
   product_url: https://www.orphadata.com/expert-resources/
 - category: Product
-  description: XML dataset containing information on patient registry networks for rare diseases.
+  description: XML dataset containing information on patient registry networks for
+    rare diseases.
   format: xml
   id: orphanet.patientregistriesnetworks
   name: Patient Registries Networks Dataset
@@ -97,19 +111,44 @@ products:
   name: Biobanks Networks Dataset
   product_url: https://www.orphadata.com/expert-resources/
 - category: Product
-  description: XML dataset containing information on orphan drugs for rare diseases, including substances with orphan designation and/or marketing authorization.
+  description: XML dataset containing information on orphan drugs for rare diseases,
+    including substances with orphan designation and/or marketing authorization.
   format: xml
   id: orphanet.orphandrugs
   name: Orphan Drugs Dataset
   product_url: https://www.orphadata.com/expert-resources/
 - category: ProgrammingInterface
-  description: APIs providing access to Orphanet scientific knowledge, ORPHAcodes, and expert resources data.
+  description: APIs providing access to Orphanet scientific knowledge, ORPHAcodes,
+    and expert resources data.
   id: orphanet.orphadataapi
+  is_public: true
   name: Orphadata API
   product_url: https://www.orphadata.com/contact/
-  is_public: true
-creation_date: 2025-07-10
-last_modified_date: 2025-07-10
+- category: GraphProduct
+  description: DisGeNET data, including gene to disease associations and variant to
+    disease associations (requires registration and subscription).
+  id: disgenet.data
+  name: DisGeNET Data
+  original_source:
+  - clingen
+  - clinvar
+  - mgd
+  - rgd
+  - orphanet
+  - psygenet
+  - uniprot
+  - disgenet
+  - hp
+  - gwascat
+  - phewascat
+  - ukbiobank
+  - finngen
+  - clinicaltrialsgov
+  product_url: https://www.disgenet.com/
+  secondary_source:
+  - disgenet
+repository: https://github.com/Orphanet
+version: July 2025
 ---
 # Orphanet
 

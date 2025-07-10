@@ -66,6 +66,7 @@ edam,active,PASS
 efo,active,PASS
 emikg,active,PASS
 ensembl,active,PASS
+envo,active,PASS
 erccrbp,active,PASS
 erccreg,active,PASS
 faldo,active,PASS
@@ -157,12 +158,14 @@ obib,active,PASS
 obo-db-ingest,active,PASS
 offsides,active,PASS
 ogms,active,PASS
+ohmi,active,PASS
 oio,active,PASS
 oma,active,PASS
 omim,active,PASS
 omit,active,PASS
 omnipath,active,PASS
 omo,active,PASS
+omrse,active,PASS
 ontology-kp,active,PASS
 opentargets,active,PASS
 orcid,active,PASS
@@ -173,6 +176,7 @@ pankbase,active,PASS
 panther,active,PASS
 pathophenodb,active,PASS
 pato,active,PASS
+peco,active,PASS
 petagraph,active,PASS
 pfam,active,PASS
 pgo,active,PASS
