@@ -25,11 +25,13 @@ products:
   id: skos.core
   name: SKOS Core
   product_url: https://www.w3.org/TR/swbp-skos-core-spec/
+  format: http
 - category: DocumentationProduct
   description: SKOS Simple Knowledge Organization System Reference
   id: skos.reference
   name: SKOS Reference
   product_url: https://www.w3.org/TR/skos-reference/
+  format: http
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
   format: owl

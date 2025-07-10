@@ -3512,6 +3512,7 @@
                 {
                     "category": "GraphicalInterface",
                     "description": "Web interface for searching and exploring Cellosaurus data",
+                    "format": "http",
                     "id": "cellosaurus.site",
                     "is_public": true,
                     "name": "Cellosaurus Web Interface",
@@ -3610,6 +3611,7 @@
                 {
                     "category": "ProcessProduct",
                     "description": "CLASTR tool for STR similarity search across cell lines",
+                    "format": "javascript",
                     "id": "cellosaurus.clastr",
                     "name": "CLASTR STR Similarity Search",
                     "original_source": [
@@ -6964,6 +6966,7 @@
                 {
                     "category": "ProcessProduct",
                     "description": "This repository is a code reference for the C-Path Knowledge Graph project, to increase discoverability of rare disease datasets through integration with the Monarch Knowlege Graph. Note that this is only a reference to scripts and queries associated with this project and is not provided as a runnable project because these workflows depend on an internal data catalog.",
+                    "format": "python",
                     "id": "cpathkg.code",
                     "name": "C-Path Knowledge Graph Integration",
                     "original_source": [
@@ -17685,6 +17688,7 @@
                     "category": "ProcessProduct",
                     "compression": "targz",
                     "description": "Software package for scanning protein sequences against InterPro's signatures",
+                    "format": "java",
                     "id": "interpro.interproscan",
                     "name": "InterProScan",
                     "original_source": [
@@ -29510,6 +29514,7 @@
                 {
                     "category": "GraphicalInterface",
                     "description": "The core Pfam database containing protein families, multiple sequence alignments, and hidden Markov models.",
+                    "format": "http",
                     "id": "pfam.site",
                     "name": "Interface for the Pfam Database",
                     "product_url": "https://www.ebi.ac.uk/interpro/entry/pfam/#table"
@@ -34039,6 +34044,7 @@
                 {
                     "category": "DataModelProduct",
                     "description": "SKOS Core Vocabulary Specification",
+                    "format": "http",
                     "id": "skos.core",
                     "name": "SKOS Core",
                     "product_url": "https://www.w3.org/TR/swbp-skos-core-spec/"
@@ -34046,6 +34052,7 @@
                 {
                     "category": "DocumentationProduct",
                     "description": "SKOS Simple Knowledge Organization System Reference",
+                    "format": "http",
                     "id": "skos.reference",
                     "name": "SKOS Reference",
                     "product_url": "https://www.w3.org/TR/skos-reference/"
@@ -34750,6 +34757,7 @@
                 {
                     "category": "GraphicalInterface",
                     "description": "Web interface that allows searching SPOKE for a node of interest and viewing its immediate connectivity neighborhood.",
+                    "format": "http",
                     "id": "spoke.neighborhood_explorer",
                     "name": "SPOKE Neighborhood Explorer",
                     "product_url": "https://spoke.rbvi.ucsf.edu/neighborhood.html"

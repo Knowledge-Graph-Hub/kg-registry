@@ -2,6 +2,7 @@
 category: ProcessProduct
 compression: targz
 description: Software package for scanning protein sequences against InterPro's signatures
+format: java
 id: interpro.interproscan
 name: InterProScan
 original_source:
