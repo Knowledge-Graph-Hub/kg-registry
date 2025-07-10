@@ -5,6 +5,7 @@ description: This repository is a code reference for the C-Path Knowledge Graph 
   Monarch Knowlege Graph. Note that this is only a reference to scripts and queries
   associated with this project and is not provided as a runnable project because these
   workflows depend on an internal data catalog.
+format: python
 id: cpathkg.code
 name: C-Path Knowledge Graph Integration
 original_source:

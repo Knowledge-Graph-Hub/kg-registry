@@ -40,6 +40,7 @@ products:
   product_url: https://www.cellosaurus.org/
   secondary_source:
   - cellosaurus
+  format: http
 - category: Product
   description: Complete Cellosaurus data in flat text format
   format: tsv
@@ -109,6 +110,7 @@ products:
   product_url: https://www.cellosaurus.org/str-search/
   secondary_source:
   - cellosaurus
+  format: javascript
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations

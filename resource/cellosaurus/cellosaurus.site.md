@@ -1,6 +1,7 @@
 ---
 category: GraphicalInterface
 description: Web interface for searching and exploring Cellosaurus data
+format: http
 id: cellosaurus.site
 is_public: true
 name: Cellosaurus Web Interface
