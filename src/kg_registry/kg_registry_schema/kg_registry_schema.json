@@ -1279,6 +1279,7 @@
                 "doc",
                 "docx",
                 "python",
+                "java",
                 "javascript",
                 "mixed"
             ],
