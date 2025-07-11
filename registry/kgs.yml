@@ -19808,6 +19808,37 @@ resources:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
 - activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: jsanjak@gmail.com
+    label: Jaleal Sanjak
+  description: The NCATS GARD Knowledge Graph integrates data about rare diseases,
+    creating a comprehensive resource for rare disease research and drug discovery.
+    It leverages clustering and machine learning approaches to identify relationships
+    between rare diseases and potential therapeutic targets.
+  domains:
+  - health
+  - biomedical
+  - clinical
+  - genomics
+  homepage_url: https://github.com/ncats/RD-Clust
+  id: ncatsgardkg
+  layout: resource_detail
+  name: NCATS GARD KG
+  publications:
+  - doi: 10.1093/jamia/ocad186
+    id: https://doi.org/10.1093/jamia/ocad186
+    title: A knowledge graph approach to rare disease research and drug discovery
+    year: '2023'
+  - doi: 10.1101/2023.02.15.528673
+    id: https://doi.org/10.1101/2023.02.15.528673
+    title: 'RD-Clust: A tool for rare disease clustering and drug discovery'
+    year: '2023'
+  repository: https://github.com/ncats/RD-Clust
+- activity_status: active
   category: DataSource
   description: Stub Resource page for ncbigene. This page was automatically generated
     because it was referenced by other resources.
@@ -25802,7 +25833,7 @@ resources:
     - contact_type: url
       value: https://www.orpha.net/en/institutions/get-in-touch/
     label: Orphanet
-  creation_date: '2025-07-10'
+  creation_date: '2025-07-10T00:00:00Z'
   description: Orphanet is a unique resource for information and data on rare diseases
     and orphan drugs, aimed at improving diagnosis, care, and treatment of patients
     with rare diseases. It maintains the Orphanet rare disease nomenclature (ORPHAcodes),
@@ -25813,7 +25844,7 @@ resources:
   - clinical
   homepage_url: https://www.orpha.net/
   id: orphanet
-  last_modified_date: '2025-07-10'
+  last_modified_date: '2025-07-10T00:00:00Z'
   layout: resource_detail
   name: Orphanet
   products:
@@ -32259,7 +32290,7 @@ resources:
       value: jaiswalp
     label: Pankaj Jaiswal
     orcid: 0000-0002-1005-8383
-  creation_date: '2025-07-10'
+  creation_date: '2025-07-10T00:00:00Z'
   description: A controlled vocabulary to describe phenotypic traits in plants. Each
     trait is a distinguishable feature, characteristic, quality or phenotypic feature
     of a developing or mature plant.
@@ -32268,7 +32299,7 @@ resources:
   - biomedical
   homepage_url: http://browser.planteome.org/amigo/term/TO:0000387
   id: to
-  last_modified_date: '2025-07-10'
+  last_modified_date: '2025-07-10T00:00:00Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/licenses/by/4.0/
