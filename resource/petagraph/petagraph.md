@@ -43,10 +43,10 @@ products:
   name: Petagraph Knowledge Graph (Neo4J)
   node_count: 32000000
   original_source:
-  - petagraph
+  - ubkg
   product_url: https://ubkg-downloads.xconsortia.org/
   secondary_source:
-  - ubkg
+  - petagraph
 publications:
 - authors:
   - Benjamin J. Stear
