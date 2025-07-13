@@ -195,7 +195,6 @@ primekg,active,PASS
 prism,active,PASS
 progeny,active,PASS
 protcid,active,PASS
-psygenet,active,PASS
 pubchem,active,PASS
 pubtator,active,PASS
 reacto,active,PASS
@@ -238,6 +237,7 @@ wbls,active,PASS
 wikipathways,active,PASS
 zfa,active,PASS
 zfin,active,PASS
+psygenet,inactive,PASS
 rdbridge,unresponsive,PASS
 semmeddb,inactive,PASS
 sider,inactive,PASS

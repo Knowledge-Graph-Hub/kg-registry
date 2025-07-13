@@ -26354,15 +26354,175 @@ resources:
     year: '2019'
   repository: https://github.com/bio-ontology-research-group/pathophenodb
 - activity_status: active
-  category: DataSource
-  description: Stub Resource page for pato. This page was automatically generated
-    because it was referenced by other resources.
+  category: DataModel
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: g.gkoutos@gmail.com
+    - contact_type: url
+      value: https://orcid.org/0000-0002-2061-091X
+    - contact_type: github
+      value: gkoutos
+    label: George Gkoutos
+  creation_date: '2025-07-12T00:00:00Z'
+  description: Phenotype And Trait Ontology (PATO) is an ontology of phenotypic qualities
+    (properties, attributes or characteristics). It is used in conjunction with other
+    ontologies to refer to phenotypes, and is widely used for logical definitions
+    of phenotypes in cross-species integration.
   domains:
-  - stub
+  - phenotype
+  homepage_url: https://github.com/pato-ontology/pato/
   id: pato
+  last_modified_date: '2025-07-12T00:00:00Z'
   layout: resource_detail
-  name: Pato
+  license:
+    id: http://creativecommons.org/licenses/by/3.0/
+    label: CC BY 3.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: Phenotype And Trait Ontology
   products:
+  - category: DataModelProduct
+    description: The main OWL release of the Phenotype And Trait Ontology.
+    format: owl
+    id: pato.owl
+    license:
+      id: http://creativecommons.org/licenses/by/3.0/
+      label: CC BY 3.0
+    name: PATO OWL
+    product_url: http://purl.obolibrary.org/obo/pato.owl
+  - category: DataModelProduct
+    description: The OBO format release of the Phenotype And Trait Ontology.
+    format: obo
+    id: pato.obo
+    license:
+      id: http://creativecommons.org/licenses/by/3.0/
+      label: CC BY 3.0
+    name: PATO OBO
+    product_url: http://purl.obolibrary.org/obo/pato.obo
+  - category: DataModelProduct
+    description: The JSON format release of the Phenotype And Trait Ontology.
+    format: json
+    id: pato.json
+    license:
+      id: http://creativecommons.org/licenses/by/3.0/
+      label: CC BY 3.0
+    name: PATO JSON
+    product_url: http://purl.obolibrary.org/obo/pato.json
+  - category: DataModelProduct
+    description: The base OWL file for PATO, includes axioms linking to other ontologies
+      but no imports.
+    format: owl
+    id: pato-base.owl
+    license:
+      id: http://creativecommons.org/licenses/by/3.0/
+      label: CC BY 3.0
+    name: PATO Base OWL
+    product_url: http://purl.obolibrary.org/obo/pato/pato-base.owl
+  - category: DataModelProduct
+    description: The latest release of EFO in OWL format
+    format: owl
+    id: efo.owl
+    name: EFO OWL
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.owl
+    secondary_source:
+    - efo
+  - category: DataModelProduct
+    description: The latest release of EFO in OBO format
+    format: obo
+    id: efo.obo
+    name: EFO OBO
+    original_source:
+    - bfo
+    - bto
+    - chebi
+    - cl
+    - clo
+    - cob
+    - dc
+    - do
+    - ecto
+    - efo
+    - fbbt
+    - fbdv
+    - fma
+    - go
+    - hancestro
+    - hp
+    - iao
+    - ido
+    - ma
+    - mondo
+    - mp
+    - mpath
+    - ncbitaxon
+    - ncit
+    - oba
+    - obi
+    - ogms
+    - oio
+    - omit
+    - omo
+    - ordo
+    - pato
+    - po
+    - pr
+    - ro
+    - semapv
+    - skos
+    - so
+    - to
+    - uberon
+    - uo
+    - wbls
+    - zfa
+    product_url: https://www.ebi.ac.uk/efo/efo.obo
+    secondary_source:
+    - efo
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
       UBKG instances as neo4j graph databases, running in a Docker container. Requires
@@ -26491,110 +26651,6 @@ resources:
     secondary_source:
     - ubkg
   - category: DataModelProduct
-    description: The latest release of EFO in OWL format
-    format: owl
-    id: efo.owl
-    name: EFO OWL
-    original_source:
-    - bfo
-    - bto
-    - chebi
-    - cl
-    - clo
-    - cob
-    - dc
-    - do
-    - ecto
-    - efo
-    - fbbt
-    - fbdv
-    - fma
-    - go
-    - hancestro
-    - hp
-    - iao
-    - ido
-    - ma
-    - mondo
-    - mp
-    - mpath
-    - ncbitaxon
-    - ncit
-    - oba
-    - obi
-    - ogms
-    - oio
-    - omit
-    - omo
-    - ordo
-    - pato
-    - po
-    - pr
-    - ro
-    - semapv
-    - skos
-    - so
-    - to
-    - uberon
-    - uo
-    - wbls
-    - zfa
-    product_url: https://www.ebi.ac.uk/efo/efo.owl
-    secondary_source:
-    - efo
-  - category: DataModelProduct
-    description: The latest release of EFO in OBO format
-    format: obo
-    id: efo.obo
-    name: EFO OBO
-    original_source:
-    - bfo
-    - bto
-    - chebi
-    - cl
-    - clo
-    - cob
-    - dc
-    - do
-    - ecto
-    - efo
-    - fbbt
-    - fbdv
-    - fma
-    - go
-    - hancestro
-    - hp
-    - iao
-    - ido
-    - ma
-    - mondo
-    - mp
-    - mpath
-    - ncbitaxon
-    - ncit
-    - oba
-    - obi
-    - ogms
-    - oio
-    - omit
-    - omo
-    - ordo
-    - pato
-    - po
-    - pr
-    - ro
-    - semapv
-    - skos
-    - so
-    - to
-    - uberon
-    - uo
-    - wbls
-    - zfa
-    product_url: https://www.ebi.ac.uk/efo/efo.obo
-    secondary_source:
-    - efo
-  - category: DataModelProduct
     description: The latest release of Plant Trait Ontology in OWL format
     format: owl
     id: to.owl
@@ -26711,20 +26767,54 @@ resources:
     - v2022-04-13
     - v2022-03-09
     - v2021-04-06
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  repository: https://github.com/pato-ontology/pato
 - activity_status: active
-  category: DataSource
-  description: Stub Resource page for peco. This page was automatically generated
-    because it was referenced by other resources.
+  category: DataModel
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: jaiswalp@science.oregonstate.edu
+    - contact_type: url
+      value: https://orcid.org/0000-0002-1005-8383
+    - contact_type: github
+      value: jaiswalp
+    label: Pankaj Jaiswal
+  creation_date: '2025-07-12T00:00:00Z'
+  description: Plant Experimental Conditions Ontology (PECO) is a structured, controlled
+    vocabulary which describes the treatments, growing conditions, and/or study types
+    used in plant biology experiments.
   domains:
-  - stub
+  - agriculture
+  homepage_url: http://planteome.org/
   id: peco
+  last_modified_date: '2025-07-12T00:00:00Z'
   layout: resource_detail
-  name: Peco
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: Plant Experimental Conditions Ontology
   products:
   - category: DataModelProduct
+    description: The main OWL release of the Plant Experimental Conditions Ontology.
+    format: owl
+    id: peco.owl
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC BY 4.0
+    name: PECO OWL
+    product_url: http://purl.obolibrary.org/obo/peco.owl
+  - category: DataModelProduct
+    description: The OBO format release of the Plant Experimental Conditions Ontology.
+    format: obo
+    id: peco.obo
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC BY 4.0
+    name: PECO OBO
+    product_url: http://purl.obolibrary.org/obo/peco.obo
+  - category: DataModelProduct
     description: The latest release of Plant Trait Ontology in OWL format
     format: owl
     id: to.owl
@@ -26841,9 +26931,7 @@ resources:
     - v2022-04-13
     - v2022-03-09
     - v2021-04-06
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  repository: https://github.com/Planteome/plant-experimental-conditions-ontology
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -26888,10 +26976,10 @@ resources:
     name: Petagraph Knowledge Graph (Neo4J)
     node_count: 32000000
     original_source:
-    - petagraph
+    - ubkg
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
-    - ubkg
+    - petagraph
   publications:
   - authors:
     - Benjamin J. Stear
@@ -28723,42 +28811,6 @@ resources:
   tags:
   - core
   version: '3.0'
-- activity_status: active
-  category: DataSource
-  description: Stub Resource page for psygenet. This page was automatically generated
-    because it was referenced by other resources.
-  domains:
-  - stub
-  id: psygenet
-  layout: resource_detail
-  name: Psygenet
-  products:
-  - category: GraphProduct
-    description: DisGeNET data, including gene to disease associations and variant
-      to disease associations (requires registration and subscription).
-    id: disgenet.data
-    name: DisGeNET Data
-    original_source:
-    - clingen
-    - clinvar
-    - mgd
-    - rgd
-    - orphanet
-    - psygenet
-    - uniprot
-    - disgenet
-    - hp
-    - gwascat
-    - phewascat
-    - ukbiobank
-    - finngen
-    - clinicaltrialsgov
-    product_url: https://www.disgenet.com/
-    secondary_source:
-    - disgenet
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -34859,6 +34911,68 @@ resources:
     secondary_source:
     - zfin
   repository: https://github.com/ZFIN/
+- activity_status: inactive
+  category: DataSource
+  creation_date: '2025-07-12T00:00:00Z'
+  description: PsyGeNET is a knowledge resource on psychiatric disorders and their
+    associated genes, integrating expert-curated and text-mined data from the literature.
+    It provides gene-disease associations for psychiatric disorders, supporting research
+    in psychiatric genetics and genomics.
+  domains:
+  - biomedical
+  - genomics
+  homepage_url: http://www.psygenet.org/
+  id: psygenet
+  last_modified_date: '2025-07-12T00:00:00Z'
+  layout: resource_detail
+  name: PsyGeNET
+  products:
+  - category: Product
+    description: 'Gene-disease associations for psychiatric disorders, as described
+      in "PsyGeNET: a knowledge platform on psychiatric disorders and their genes"
+      (PMCID: PMC4565028). '
+    format: tsv
+    id: psygenet.genedisease
+    name: PsyGeNET Gene-Disease Associations
+    product_url: http://www.psygenet.org/
+  - category: GraphProduct
+    description: DisGeNET data, including gene to disease associations and variant
+      to disease associations (requires registration and subscription).
+    id: disgenet.data
+    name: DisGeNET Data
+    original_source:
+    - clingen
+    - clinvar
+    - mgd
+    - rgd
+    - orphanet
+    - psygenet
+    - uniprot
+    - disgenet
+    - hp
+    - gwascat
+    - phewascat
+    - ukbiobank
+    - finngen
+    - clinicaltrialsgov
+    product_url: https://www.disgenet.com/
+    secondary_source:
+    - disgenet
+  publications:
+  - authors:
+    - Bravo À
+    - Pinero J
+    - Queralt-Rosinach N
+    - Rautschka M
+    - Furlong LI
+    id: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4565028/
+    journal: Database (Oxford)
+    preferred: true
+    title: 'PsyGeNET: a knowledge platform on psychiatric disorders and their genes'
+    year: '2015'
+  warnings:
+  - The official PsyGeNET website (http://www.psygenet.org/) is currently inaccessible.
+    Data may be unavailable or out of date.
 - activity_status: unresponsive
   category: KnowledgeGraph
   contacts:
