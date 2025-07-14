@@ -1,14 +1,28 @@
 ---
-activity_status: active
+activity_status: inactive
 category: DataSource
-description: Stub Resource page for psygenet. This page was automatically generated
-  because it was referenced by other resources.
+creation_date: "2025-07-12T00:00:00Z"
+description: PsyGeNET is a knowledge resource on psychiatric disorders and their associated
+  genes, integrating expert-curated and text-mined data from the literature. It provides
+  gene-disease associations for psychiatric disorders, supporting research in psychiatric
+  genetics and genomics.
 domains:
-- stub
+- biomedical
+- genomics
+homepage_url: http://www.psygenet.org/
 id: psygenet
+last_modified_date: "2025-07-12T00:00:00Z"
 layout: resource_detail
-name: Psygenet
+name: PsyGeNET
 products:
+- category: Product
+  description: 'Gene-disease associations for psychiatric disorders, as described
+    in "PsyGeNET: a knowledge platform on psychiatric disorders and their genes" (PMCID:
+    PMC4565028). '
+  format: tsv
+  id: psygenet.genedisease
+  name: PsyGeNET Gene-Disease Associations
+  product_url: http://www.psygenet.org/
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
@@ -32,10 +46,20 @@ products:
   product_url: https://www.disgenet.com/
   secondary_source:
   - disgenet
+publications:
+- authors:
+  - "Bravo \xC0"
+  - Pinero J
+  - Queralt-Rosinach N
+  - Rautschka M
+  - Furlong LI
+  id: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4565028/
+  journal: Database (Oxford)
+  preferred: true
+  title: 'PsyGeNET: a knowledge platform on psychiatric disorders and their genes'
+  year: "2015"
 warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+- The official PsyGeNET website (http://www.psygenet.org/) is currently inaccessible.
+  Data may be unavailable or out of date.
 ---
-# Psygenet
-
-This is an automatically generated stub page for psygenet. Please update with proper information.
+# PsyGeNET

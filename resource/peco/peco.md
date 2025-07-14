@@ -1,14 +1,49 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for peco. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: jaiswalp@science.oregonstate.edu
+  - contact_type: url
+    value: https://orcid.org/0000-0002-1005-8383
+  - contact_type: github
+    value: jaiswalp
+  label: Pankaj Jaiswal
+creation_date: "2025-07-12T00:00:00Z"
+description: Plant Experimental Conditions Ontology (PECO) is a structured, controlled
+  vocabulary which describes the treatments, growing conditions, and/or study types
+  used in plant biology experiments.
 domains:
-- stub
+- agriculture
+homepage_url: http://planteome.org/
 id: peco
+last_modified_date: "2025-07-12T00:00:00Z"
 layout: resource_detail
-name: Peco
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+name: Plant Experimental Conditions Ontology
 products:
+- category: DataModelProduct
+  description: The main OWL release of the Plant Experimental Conditions Ontology.
+  format: owl
+  id: peco.owl
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+  name: PECO OWL
+  product_url: http://purl.obolibrary.org/obo/peco.owl
+- category: DataModelProduct
+  description: The OBO format release of the Plant Experimental Conditions Ontology.
+  format: obo
+  id: peco.obo
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+  name: PECO OBO
+  product_url: http://purl.obolibrary.org/obo/peco.obo
 - category: DataModelProduct
   description: The latest release of Plant Trait Ontology in OWL format
   format: owl
@@ -126,10 +161,6 @@ products:
   - v2022-04-13
   - v2022-03-09
   - v2021-04-06
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+repository: https://github.com/Planteome/plant-experimental-conditions-ontology
 ---
-# Peco
-
-This is an automatically generated stub page for peco. Please update with proper information.
+# PECO
