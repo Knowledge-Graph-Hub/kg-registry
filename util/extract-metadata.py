@@ -651,8 +651,6 @@ def load_md(fn):
     Returns a tuple (yaml_obj, markdown_text)
     """
     onto_stuff = frontmatter.load(fn)
-    # Normalize date fields to ensure they are in ISO 8601 format
-    normalize_date_fields(onto_stuff.metadata)
     return (onto_stuff.metadata, onto_stuff.content)
 
 

@@ -1,14 +1,173 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for pato. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: g.gkoutos@gmail.com
+  - contact_type: url
+    value: https://orcid.org/0000-0002-2061-091X
+  - contact_type: github
+    value: gkoutos
+  label: George Gkoutos
+creation_date: "2025-07-12T00:00:00Z"
+description: Phenotype And Trait Ontology (PATO) is an ontology of phenotypic qualities
+  (properties, attributes or characteristics). It is used in conjunction with other
+  ontologies to refer to phenotypes, and is widely used for logical definitions of
+  phenotypes in cross-species integration.
 domains:
-- stub
+- phenotype
+homepage_url: https://github.com/pato-ontology/pato/
 id: pato
+last_modified_date: "2025-07-12T00:00:00Z"
 layout: resource_detail
-name: Pato
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+name: Phenotype And Trait Ontology
 products:
+- category: DataModelProduct
+  description: The main OWL release of the Phenotype And Trait Ontology.
+  format: owl
+  id: pato.owl
+  license:
+    id: http://creativecommons.org/licenses/by/3.0/
+    label: CC BY 3.0
+  name: PATO OWL
+  product_url: http://purl.obolibrary.org/obo/pato.owl
+- category: DataModelProduct
+  description: The OBO format release of the Phenotype And Trait Ontology.
+  format: obo
+  id: pato.obo
+  license:
+    id: http://creativecommons.org/licenses/by/3.0/
+    label: CC BY 3.0
+  name: PATO OBO
+  product_url: http://purl.obolibrary.org/obo/pato.obo
+- category: DataModelProduct
+  description: The JSON format release of the Phenotype And Trait Ontology.
+  format: json
+  id: pato.json
+  license:
+    id: http://creativecommons.org/licenses/by/3.0/
+    label: CC BY 3.0
+  name: PATO JSON
+  product_url: http://purl.obolibrary.org/obo/pato.json
+- category: DataModelProduct
+  description: The base OWL file for PATO, includes axioms linking to other ontologies
+    but no imports.
+  format: owl
+  id: pato-base.owl
+  license:
+    id: http://creativecommons.org/licenses/by/3.0/
+    label: CC BY 3.0
+  name: PATO Base OWL
+  product_url: http://purl.obolibrary.org/obo/pato/pato-base.owl
+- category: DataModelProduct
+  description: The latest release of EFO in OWL format
+  format: owl
+  id: efo.owl
+  name: EFO OWL
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - do
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_url: https://www.ebi.ac.uk/efo/efo.owl
+  secondary_source:
+  - efo
+- category: DataModelProduct
+  description: The latest release of EFO in OBO format
+  format: obo
+  id: efo.obo
+  name: EFO OBO
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - do
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_url: https://www.ebi.ac.uk/efo/efo.obo
+  secondary_source:
+  - efo
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -137,110 +296,6 @@ products:
   secondary_source:
   - ubkg
 - category: DataModelProduct
-  description: The latest release of EFO in OWL format
-  format: owl
-  id: efo.owl
-  name: EFO OWL
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - do
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_url: https://www.ebi.ac.uk/efo/efo.owl
-  secondary_source:
-  - efo
-- category: DataModelProduct
-  description: The latest release of EFO in OBO format
-  format: obo
-  id: efo.obo
-  name: EFO OBO
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - do
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_url: https://www.ebi.ac.uk/efo/efo.obo
-  secondary_source:
-  - efo
-- category: DataModelProduct
   description: The latest release of Plant Trait Ontology in OWL format
   format: owl
   id: to.owl
@@ -357,10 +412,6 @@ products:
   - v2022-04-13
   - v2022-03-09
   - v2021-04-06
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+repository: https://github.com/pato-ontology/pato
 ---
 # Pato
-
-This is an automatically generated stub page for pato. Please update with proper information.
