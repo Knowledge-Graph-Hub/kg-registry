@@ -1,0 +1,1 @@
+Couldn't find the requested file /dist/duckdb-browser-mvp.pthread.worker.js in @duckdb/duckdb-wasm.
