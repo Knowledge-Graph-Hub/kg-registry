@@ -675,15 +675,40 @@ resources:
     product_url: https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files
   repository: https://github.com/RobokopU24/
 - activity_status: active
-  category: DataSource
-  description: Stub Resource page for bfo. This page was automatically generated because
-    it was referenced by other resources.
+  category: DataModel
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: phismith@buffalo.edu
+    - contact_type: github
+      value: phismith
+    label: Barry Smith
+    orcid: 0000-0003-1384-116X
+  description: The Basic Formal Ontology (BFO) is the upper-level ontology upon which
+    OBO Foundry ontologies are built. It provides a genuine upper ontology to support
+    domain ontologies developed for scientific research, particularly in biomedicine.
   domains:
-  - stub
+  - upper
+  homepage_url: http://ifomis.org/bfo/
   id: bfo
   layout: resource_detail
-  name: Bfo
+  license:
+    id: http://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: Basic Formal Ontology (BFO)
   products:
+  - description: The latest release of BFO in OWL format.
+    format: owl
+    id: bfo.owl
+    name: BFO OWL
+    product_url: http://purl.obolibrary.org/obo/bfo.owl
+  - description: The latest release of BFO in OBO format.
+    format: obo
+    id: bfo.obo
+    name: BFO OBO
+    product_url: http://purl.obolibrary.org/obo/bfo.obo
   - category: DataModelProduct
     description: The latest release of EFO in OWL format
     format: owl
@@ -905,9 +930,7 @@ resources:
     - v2022-04-13
     - v2022-03-09
     - v2021-04-06
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  repository: https://github.com/BFO-ontology/BFO
 - activity_status: active
   category: DataSource
   contacts:
@@ -2495,15 +2518,45 @@ resources:
     year: '2022'
   repository: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
 - activity_status: active
-  category: DataSource
-  description: Stub Resource page for bto. This page was automatically generated because
-    it was referenced by other resources.
+  category: DataModel
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: c.dudek@tu-braunschweig.de
+    - contact_type: github
+      value: chdudek
+    label: Christian-Alexander Dudek
+    orcid: 0000-0001-9117-7909
+  description: The BRENDA Tissue Ontology (BTO) is a structured controlled vocabulary
+    for the source of an enzyme, comprising tissues, cell lines, cell types, and cell
+    cultures from uni- and multicellular organisms.
   domains:
-  - stub
+  - anatomy and development
+  homepage_url: http://www.brenda-enzymes.org
   id: bto
   layout: resource_detail
-  name: Bto
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: BRENDA Tissue Ontology (BTO)
   products:
+  - description: The latest release of BTO in OWL format.
+    format: owl
+    id: bto.owl
+    name: BTO OWL
+    product_url: http://purl.obolibrary.org/obo/bto.owl
+  - description: The latest release of BTO in OBO format.
+    format: obo
+    id: bto.obo
+    name: BTO OBO
+    product_url: http://purl.obolibrary.org/obo/bto.obo
+  - description: The latest release of BTO in JSON format.
+    format: json
+    id: bto.json
+    name: BTO JSON
+    product_url: http://purl.obolibrary.org/obo/bto.json
   - category: DataModelProduct
     description: The latest release of EFO in OWL format
     format: owl
@@ -2654,9 +2707,7 @@ resources:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
     secondary_source:
     - bioteque
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  repository: https://github.com/BRENDA-Enzymes/BTO
 - activity_status: active
   category: DataSource
   contacts:
@@ -4066,14 +4117,46 @@ resources:
   repository: https://github.com/chembl
 - activity_status: active
   category: DataSource
-  description: Stub Resource page for chemicalchecker. This page was automatically
-    generated because it was referenced by other resources.
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: miquel.duran@irbbarcelona.org
+    label: Miquel Duran
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: patrick.aloy@irbbarcelona.org
+    label: Patrick Aloy
+  description: The Chemical Checker (CC) is a data-driven resource of small molecule
+    bioactivity data, organized into five levels of increasing complexity, ranging
+    from chemical properties to clinical outcomes. It is designed to support computational
+    drug discovery tasks.
   domains:
-  - stub
+  - drug discovery
+  homepage_url: http://packages.sbnb-pages.irbbarcelona.org/chemical_checker/
   id: chemicalchecker
   layout: resource_detail
-  name: Chemicalchecker
+  name: Chemical Checker
   products:
+  - category: Product
+    description: Precomputed signatures for small molecules, suitable for machine
+      learning.
+    format: hdf5
+    id: chemicalchecker.signatures
+    name: Chemical Checker Signatures
+    product_url: http://packages.sbnb-pages.irbbarcelona.org/chemical_checker/signaturization.html
+  - category: ProcessProduct
+    description: Software tool for producing bioactivity signature vectors.
+    format: python
+    id: chemicalchecker.signaturizer
+    name: Signaturizer
+    product_url: https://github.com/sbnb-irb/signaturizer
+  - category: ProgrammingInterface
+    description: Programmatic interface for Chemical Checker data.
+    id: chemicalchecker.api
+    name: Chemical Checker RESTful API
+    product_url: https://chemicalchecker.com/api/db/getSignature/
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
       entities and their associations
@@ -4120,9 +4203,7 @@ resources:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
     secondary_source:
     - bioteque
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  repository: https://github.com/sbnb-irb/chemical-checker
 - activity_status: active
   category: DataModel
   contacts:
