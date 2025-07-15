@@ -2,15 +2,24 @@
 
 This documentation is for developers of the KG-Registry site.
 
-This ### Running with Docker to Avoid CORS Issues
+This version of the site is based on the OBO Foundry site (<https://obofoundry.org/>).
 
-The Advanced Search feature uses WebAssembly and Web Workers, which may encounter CORS (Cross-Origin Resource Sharing) issues when running locally. To avoid these issues, use the Docker command with the host parameter:
+## Getting Started
+
+Because Jekyll can be difficult to install, Docker provides an
+alternative for running the `serve` command, then open http://localhost:4000:
+
+```shell
+docker run --rm --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:4.2.0 jekyll serve
+```
+
+For features that use WebAssembly and Web Workers (like the Advanced Search), use the `--host` parameter to avoid CORS issues:
 
 ```shell
 docker run --rm --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:4.2.0 jekyll serve --host=0.0.0.0
 ```
 
-Then access the site using your machine's IP address rather than localhost, e.g., http://192.168.1.100:4000/kg-registry/
+Then access the site using your machine's IP address instead of localhost.
 
 ### Troubleshooting Module Resolution Issues
 
@@ -20,28 +29,28 @@ If you encounter module resolution errors like:
 Failed to resolve module specifier "apache-arrow". Relative references must start with either "/", "./", or "../".
 ```
 
-Make sure the following files exist:
-- `assets/js/apache-arrow/Arrow.mjs` - Apache Arrow module
-- `assets/js/duckdb/duckdb-browser.mjs` - DuckDB browser module
-- `assets/js/duckdb/duckdb-browser-mvp.worker.js` - DuckDB worker script
-- `assets/js/duckdb/duckdb-mvp.wasm` - DuckDB WebAssembly binary
+Or errors like:
 
-If these files are missing, you can download them from their respective CDNs:
+```
+Uncaught ReferenceError: exports is not defined
+```
+
+The advanced-search.html file is now configured to load Apache Arrow as a global UMD module and DuckDB from a CDN with fallback mechanisms. This approach avoids module resolution issues and compatibility problems with Node.js specific code in browser environments.
+
+The site is configured to load these dependencies from CDNs:
+- Apache Arrow is loaded from: `https://cdn.jsdelivr.net/npm/apache-arrow@17.0.0/Arrow.js`
+- DuckDB modules are loaded from: `https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/`
+
+Local copies of DuckDB worker scripts and WASM files are still important to avoid CORS issues:
 
 ```shell
 # Create directories
-mkdir -p assets/js/duckdb assets/js/apache-arrow
+mkdir -p assets/js/duckdb
 
 # Download DuckDB files
-curl -s https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-browser.mjs -o assets/js/duckdb/duckdb-browser.mjs
 curl -s https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-browser-mvp.worker.js -o assets/js/duckdb/duckdb-browser-mvp.worker.js
 curl -s https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-mvp.wasm -o assets/js/duckdb/duckdb-mvp.wasm
-
-# Download Apache Arrow module
-curl -s https://cdn.jsdelivr.net/npm/apache-arrow@17.0.0/Arrow.mjs -o assets/js/apache-arrow/Arrow.mjs
-```
-
-The `importmap` in `advanced-search.html` should correctly map the bare import to the local file path.f the site is based on the OBO Foundry site (<https://obofoundry.org/>).
+```f the site is based on the OBO Foundry site (<https://obofoundry.org/>).
 
 ## Getting Started
 

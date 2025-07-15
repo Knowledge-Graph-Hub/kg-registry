@@ -105,17 +105,14 @@ title: Advanced Search - KG Registry
     <p><strong>Loading DuckDB...</strong> Please wait while the database engine is being initialized.</p>
 </div>
 
-<!-- Import map to resolve module paths -->
-<script type="importmap">
-{
-  "imports": {
-    "apache-arrow": "/kg-registry/assets/js/apache-arrow/Arrow.mjs"
-  }
-}
-</script>
+<!-- Load Apache Arrow globally as a UMD module -->
+<script src="https://cdn.jsdelivr.net/npm/apache-arrow@17.0.0/Arrow.js"></script>
 
 <!-- Main script with ES modules -->
 <script type="module">
+    // Make Arrow available to DuckDB
+    window.Arrow = window.Arrow || {};
+
     // Try to import DuckDB from local file, fall back to CDN if needed
     let duckdbModule;
     try {
