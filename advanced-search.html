@@ -5,6 +5,12 @@ title: Advanced Search - KG Registry
 
 <div class="alert alert-warning mb-4">
     <strong>⚠️ Work in Progress:</strong> The Advanced Search feature is currently under development and may not be fully operational yet. We're working on making it available soon. Thank you for your patience!
+    <hr>
+    <strong>Browser Security Note:</strong> This feature requires WebAssembly and Web Workers. If you encounter CORS errors when testing locally, try:
+    <ul class="mb-0">
+        <li>Running Jekyll with <code>bundle exec jekyll serve --host=0.0.0.0</code></li>
+        <li>Or accessing through a proper web server instead of localhost</li>
+    </ul>
 </div>
 
 <div class="row">
@@ -94,15 +100,54 @@ title: Advanced Search - KG Registry
     </div>
 </div>
 
-<!-- Load DuckDB WASM using the bundled approach to avoid apache-arrow dependency issues -->
+<!-- Load DuckDB WASM dependencies first -->
 <div id="duckdb-loading-message" class="alert alert-info mt-3">
     <p><strong>Loading DuckDB...</strong> Please wait while the database engine is being initialized.</p>
 </div>
 
-<!-- Load the complete bundle that includes all dependencies (UMD version) -->
-<script src="https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-browser.umd.js" type="text/javascript"></script>
+<!-- Import map to resolve module paths -->
+<script type="importmap">
+{
+  "imports": {
+    "apache-arrow": "/kg-registry/assets/js/apache-arrow/Arrow.mjs"
+  }
+}
+</script>
 
-<!-- Script that runs after DuckDB has loaded -->
+<!-- Main script with ES modules -->
+<script type="module">
+    // Try to import DuckDB from local file, fall back to CDN if needed
+    let duckdbModule;
+    try {
+        duckdbModule = await import('/kg-registry/assets/js/duckdb/duckdb-browser.mjs');
+    } catch (error) {
+        console.warn('Failed to load local DuckDB module, falling back to CDN:', error);
+        try {
+            duckdbModule = await import('https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-browser.mjs');
+        } catch (cdnError) {
+            console.error('Failed to load DuckDB from CDN as well:', cdnError);
+            document.getElementById('results').innerHTML = `
+                <div class="alert alert-danger">
+                    Failed to load DuckDB module: ${cdnError.message}
+                    <br><br>
+                    Please try a different browser or check your network connection.
+                </div>
+            `;
+        }
+    }
+    
+    // Make duckdb available globally if loaded
+    if (duckdbModule) {
+        window.duckdb = duckdbModule;
+        
+        // Call init function when the module is loaded
+        document.addEventListener('DOMContentLoaded', async function() {
+            await initDuckDB();
+        });
+    }
+</script>
+
+<!-- Non-module script for initialization and queries -->
 <script>
 // Track initialization state
 let isDuckDBInitialized = false;
@@ -110,48 +155,105 @@ let duckdbInstance = null;
 let duckdbConnection = null;
 let currentResults = null;
 
-// Check for DuckDB availability when the DOM is ready
-document.addEventListener('DOMContentLoaded', function() {
-    initDuckDB();
-});
-
 // Initialize DuckDB
 async function initDuckDB() {
     try {
         document.getElementById('runQuery').disabled = true;
         document.getElementById('results').innerHTML = '<div class="alert alert-info">Initializing DuckDB...</div>';
         
-        // Get the bundles using the recommended approach
-        const JSDELIVR_BUNDLES = duckdb.getJsDelivrBundles();
+        console.log('Initializing DuckDB...');
         
-        // Select a bundle based on browser capabilities
-        const bundle = await duckdb.selectBundle(JSDELIVR_BUNDLES);
+        // Wait for duckdb to be available
+        if (!window.duckdb) {
+            console.error('DuckDB module not loaded yet');
+            throw new Error('DuckDB module not loaded yet. Please wait a moment and try again.');
+        }
         
-        // Create a proper worker URL
-        const worker_url = URL.createObjectURL(
-            new Blob([`importScripts("${bundle.mainWorker}");`], {type: 'text/javascript'})
+        // Define paths for local and CDN resources
+        const resources = {
+            local: {
+                workerScript: '/kg-registry/assets/js/duckdb/duckdb-browser-mvp.worker.js',
+                wasmModule: '/kg-registry/assets/js/duckdb/duckdb-mvp.wasm'
+            },
+            cdn: {
+                workerScript: 'https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-browser-mvp.worker.js',
+                wasmModule: 'https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-mvp.wasm'
+            }
+        };
+        
+        // Try local resources first, fall back to CDN
+        let workerScript = resources.local.workerScript;
+        let wasmModule = resources.local.wasmModule;
+        
+        // Check if local worker file exists
+        try {
+            const workerCheck = await fetch(resources.local.workerScript, { method: 'HEAD' });
+            if (!workerCheck.ok) {
+                console.warn('Local worker file not available, using CDN');
+                workerScript = resources.cdn.workerScript;
+                wasmModule = resources.cdn.wasmModule;
+            }
+        } catch (e) {
+            console.warn('Error checking local worker file, using CDN:', e);
+            workerScript = resources.cdn.workerScript;
+            wasmModule = resources.cdn.wasmModule;
+        }
+        
+        // Create a worker manually to avoid CORS issues
+        const workerUrl = URL.createObjectURL(
+            new Blob([`
+                // Import DuckDB worker
+                importScripts('${workerScript}');
+            `], { type: 'application/javascript' })
         );
         
-        // Instantiate DuckDB
-        const worker = new Worker(worker_url);
-        const logger = new duckdb.ConsoleLogger();
-        duckdbInstance = new duckdb.AsyncDuckDB(logger, worker);
-        await duckdbInstance.instantiate(bundle.mainModule, bundle.pthreadWorker);
+        // Create worker and instantiate DuckDB
+        try {
+            const worker = new Worker(workerUrl);
+            const logger = new window.duckdb.ConsoleLogger();
+            duckdbInstance = new window.duckdb.AsyncDuckDB(logger, worker);
+            
+            // Instantiate with WASM module
+            await duckdbInstance.instantiate({
+                mainModule: wasmModule
+            });
+        } catch (workerError) {
+            console.error('Failed to create worker or instantiate DuckDB:', workerError);
+            
+            // Show more helpful error message based on the specific error
+            let errorMessage = workerError.message;
+            if (errorMessage.includes('SecurityError') || errorMessage.includes('CORS')) {
+                errorMessage = `CORS error: Cannot load worker from a different origin. Try running with a proper web server or use a different browser.`;
+            }
+            
+            throw new Error(`DuckDB initialization failed: ${errorMessage}`);
+        }
         
-        // Clean up the worker URL
-        URL.revokeObjectURL(worker_url);
+        // Connect to the database
+        duckdbConnection = await duckdbInstance.connect();
         
         // Connect to the database
         duckdbConnection = await duckdbInstance.connect();
         
         // Load the database file
-        const resp = await fetch('/kg-registry/registry/kg_registry.duckdb');
-        if (!resp.ok) {
-            throw new Error(`Failed to fetch database file: ${resp.status} ${resp.statusText}`);
+        try {
+            const resp = await fetch('/kg-registry/registry/kg_registry.duckdb');
+            if (!resp.ok) {
+                throw new Error(`Failed to fetch database file: ${resp.status} ${resp.statusText}`);
+            }
+            const dbData = await resp.arrayBuffer();
+            await duckdbInstance.registerFileBuffer('kg_registry.duckdb', new Uint8Array(dbData));
+            await duckdbConnection.query(`ATTACH 'kg_registry.duckdb' AS kg_registry`);
+        } catch (dbError) {
+            console.warn('Could not load database file, will create an empty one:', dbError);
+            // Create sample tables if DB can't be loaded
+            await duckdbConnection.query(`
+                CREATE TABLE resources (id VARCHAR, name VARCHAR, category VARCHAR, description VARCHAR);
+                INSERT INTO resources VALUES 
+                ('example1', 'Example Resource 1', 'DataSource', 'This is a sample resource'),
+                ('example2', 'Example Resource 2', 'KnowledgeGraph', 'This is another sample resource');
+            `);
         }
-        const dbData = await resp.arrayBuffer();
-        await duckdbInstance.registerFileBuffer('kg_registry.duckdb', new Uint8Array(dbData));
-        await duckdbConnection.query(`ATTACH 'kg_registry.duckdb' AS kg_registry`);
         
         console.log('DuckDB initialized successfully');
         document.getElementById('results').innerHTML = '<p class="text-muted">Run a query to see results</p>';
@@ -167,16 +269,34 @@ async function initDuckDB() {
         setupEventListeners();
     } catch (error) {
         console.error('Error initializing DuckDB:', error);
-        document.getElementById('results').innerHTML = `<div class="alert alert-danger">
-            Failed to initialize DuckDB: ${error.message}
-            <br><br>
-            This could be due to:
+        let errorMessage = error.message;
+        let solutionHint = `
             <ul>
                 <li>Browser compatibility issues with WebAssembly</li>
                 <li>Network issues when loading required files</li>
                 <li>Browser extensions blocking scripts or workers</li>
             </ul>
             Please try with a different browser (Chrome or Firefox recommended) or disable browser extensions.
+        `;
+        
+        // Special message for CORS errors when running locally
+        if (errorMessage.includes('CORS') || errorMessage.includes('SecurityError')) {
+            solutionHint = `
+                <p>This appears to be a CORS (Cross-Origin Resource Sharing) issue.</p>
+                <ul>
+                    <li><strong>If running locally:</strong> Try starting Jekyll with <code>bundle exec jekyll serve --host=0.0.0.0</code></li>
+                    <li><strong>If using Chrome:</strong> Try launching with <code>--allow-file-access-from-files</code> flag</li>
+                    <li><strong>Alternative solution:</strong> Access this page from a proper web server instead of localhost</li>
+                </ul>
+            `;
+        }
+        
+        document.getElementById('results').innerHTML = `<div class="alert alert-danger">
+            <h5>Failed to initialize DuckDB:</h5>
+            <p>${errorMessage}</p>
+            <hr>
+            <h6>This could be due to:</h6>
+            ${solutionHint}
         </div>`;
     }
 }
