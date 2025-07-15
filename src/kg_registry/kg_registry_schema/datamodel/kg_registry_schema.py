@@ -513,6 +513,10 @@ class FormatEnum(str, Enum):
     """
     The JavaScript file format, which is a text file containing JavaScript code. It is used for writing scripts and programs in the JavaScript language.
     """
+    hdf5 = "hdf5"
+    """
+    The Hierarchical Data Format version 5 (HDF5) format, a file format and set of tools for managing complex data. It is designed to store and organize large amounts of data in a hierarchical structure, allowing for efficient access and manipulation.
+    """
     mixed = "mixed"
     """
     A product that contains multiple formats or serializations. This is used when a product is not easily categorized into a single format, such as a codebase that includes multiple file types (e.g., Python scripts, JSON files, etc.).
