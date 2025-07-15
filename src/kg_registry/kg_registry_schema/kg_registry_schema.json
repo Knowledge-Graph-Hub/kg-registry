@@ -1281,6 +1281,7 @@
                 "python",
                 "java",
                 "javascript",
+                "hdf5",
                 "mixed"
             ],
             "title": "FormatEnum",
