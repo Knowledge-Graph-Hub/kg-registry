@@ -1146,6 +1146,12 @@ enums:
         description: >-
           The JavaScript file format, which is a text file containing
           JavaScript code. It is used for writing scripts and programs in the JavaScript language.
+      hdf5:
+        description: >-
+          The Hierarchical Data Format version 5 (HDF5) format,
+          a file format and set of tools for managing complex data.
+          It is designed to store and organize large amounts of data
+          in a hierarchical structure, allowing for efficient access and manipulation.
       mixed:
         description: >-
           A product that contains multiple formats or serializations.
