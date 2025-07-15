@@ -1,14 +1,38 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for bfo. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+contacts:
+- category: Individual
+  label: Barry Smith
+  orcid: 0000-0003-1384-116X
+  contact_details:
+  - contact_type: email
+    value: phismith@buffalo.edu
+  - contact_type: github
+    value: phismith
+description: The Basic Formal Ontology (BFO) is the upper-level ontology upon which
+  OBO Foundry ontologies are built. It provides a genuine upper ontology to support
+  domain ontologies developed for scientific research, particularly in biomedicine.
 domains:
-- stub
+- upper
+homepage_url: http://ifomis.org/bfo/
 id: bfo
 layout: resource_detail
-name: Bfo
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+name: Basic Formal Ontology (BFO)
 products:
+- description: The latest release of BFO in OWL format.
+  format: owl
+  id: bfo.owl
+  name: BFO OWL
+  product_url: http://purl.obolibrary.org/obo/bfo.owl
+- description: The latest release of BFO in OBO format.
+  format: obo
+  id: bfo.obo
+  name: BFO OBO
+  product_url: http://purl.obolibrary.org/obo/bfo.obo
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -230,10 +254,8 @@ products:
   - v2022-04-13
   - v2022-03-09
   - v2021-04-06
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+repository: https://github.com/BFO-ontology/BFO
 ---
-# Bfo
+# Basic Formal Ontology (BFO)
 
-This is an automatically generated stub page for bfo. Please update with proper information.
+The Basic Formal Ontology (BFO) is the upper-level ontology upon which OBO Foundry ontologies are built. It provides a genuine upper ontology to support domain ontologies developed for scientific research, particularly in biomedicine.

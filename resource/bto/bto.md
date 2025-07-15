@@ -1,14 +1,43 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for bto. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+contacts:
+- category: Individual
+  label: Christian-Alexander Dudek
+  orcid: 0000-0001-9117-7909
+  contact_details:
+  - contact_type: email
+    value: c.dudek@tu-braunschweig.de
+  - contact_type: github
+    value: chdudek
+description: The BRENDA Tissue Ontology (BTO) is a structured controlled vocabulary
+  for the source of an enzyme, comprising tissues, cell lines, cell types, and cell
+  cultures from uni- and multicellular organisms.
 domains:
-- stub
+- anatomy and development
+homepage_url: http://www.brenda-enzymes.org
 id: bto
 layout: resource_detail
-name: Bto
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+name: BRENDA Tissue Ontology (BTO)
 products:
+- description: The latest release of BTO in OWL format.
+  format: owl
+  id: bto.owl
+  name: BTO OWL
+  product_url: http://purl.obolibrary.org/obo/bto.owl
+- description: The latest release of BTO in OBO format.
+  format: obo
+  id: bto.obo
+  name: BTO OBO
+  product_url: http://purl.obolibrary.org/obo/bto.obo
+- description: The latest release of BTO in JSON format.
+  format: json
+  id: bto.json
+  name: BTO JSON
+  product_url: http://purl.obolibrary.org/obo/bto.json
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -159,10 +188,8 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   secondary_source:
   - bioteque
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+repository: https://github.com/BRENDA-Enzymes/BTO
 ---
-# Bto
+# BRENDA Tissue Ontology (BTO)
 
-This is an automatically generated stub page for bto. Please update with proper information.
+The BRENDA Tissue Ontology (BTO) is a structured controlled vocabulary for the source of an enzyme, comprising tissues, cell lines, cell types, and cell cultures from uni- and multicellular organisms.
