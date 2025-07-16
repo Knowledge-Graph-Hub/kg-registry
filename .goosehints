@@ -1,0 +1,9 @@
+This repository contains the source code for the Knowledge Graph Registry, which is a collection of resources and tools for managing and sharing metadata about knowledge graphs and their relationships.
+
+When adding new resources, always follow the schema in `src/kg_registry/kg_registry_schema/schema/kg_registry_schema.yaml`.
+
+Do not create new categories. Use the classes defined in the schema.
+
+Do not change any contents of the `registry` directory, as these are automatically generated from Makefile targets.
+
+Do not create new files for Product entries, as these are automatically generated based on their corresponding Resource entries.
