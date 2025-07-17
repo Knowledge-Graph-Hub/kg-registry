@@ -12,7 +12,8 @@ contacts:
   - contact_type: email
     value: info@ncbi.nlm.nih.gov
   label: NCBI Help Desk
-description: Gene integrates information from a wide range of species. A record may
+description: >-
+  NCBI Gene integrates information from a wide range of species. A record may
   include nomenclature, Reference Sequences (RefSeqs), maps, pathways, variations,
   phenotypes, and links to genome-, phenotype-, and locus-specific resources worldwide.
 domains:
@@ -26,7 +27,7 @@ license:
   label: CC0 1.0
 name: NCBI Gene
 products:
-- category: Product
+- category: MappingProduct
   compression: gzip
   description: Gene to accession mapping data providing links between gene records
     and nucleotide/protein sequence accessions
@@ -36,7 +37,7 @@ products:
   original_source:
   - ncbigene
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2accession.gz
-- category: Product
+- category: MappingProduct
   compression: gzip
   description: Gene to Ensembl mapping data providing cross-references between NCBI
     Gene and Ensembl gene identifiers
@@ -44,9 +45,10 @@ products:
   id: ncbigene.gene2ensembl
   name: Gene to Ensembl Mapping
   original_source:
+  - ensembl
   - ncbigene
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2ensembl.gz
-- category: Product
+- category: MappingProduct
   compression: gzip
   description: Gene to Gene Ontology mapping data providing functional annotations
     for genes
@@ -54,9 +56,10 @@ products:
   id: ncbigene.gene2go
   name: Gene to GO Mapping
   original_source:
+  - go
   - ncbigene
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2go.gz
-- category: Product
+- category: MappingProduct
   compression: gzip
   description: Gene to PubMed mapping data providing literature references associated
     with genes
@@ -64,9 +67,10 @@ products:
   id: ncbigene.gene2pubmed
   name: Gene to PubMed Mapping
   original_source:
+  - pubmed
   - ncbigene
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2pubmed.gz
-- category: Product
+- category: MappingProduct
   compression: gzip
   description: Gene to RefSeq mapping data providing links between gene records and
     RefSeq sequence identifiers
@@ -74,6 +78,7 @@ products:
   id: ncbigene.gene2refseq
   name: Gene to RefSeq Mapping
   original_source:
+  - refseq
   - ncbigene
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2refseq.gz
 - category: Product
@@ -124,7 +129,7 @@ products:
   original_source:
   - ncbigene
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_orthologs.gz
-- category: Product
+- category: MappingProduct
   compression: gzip
   description: Gene to RefSeq/UniProtKB collaboration data providing cross-references
     between gene records and protein databases
@@ -132,7 +137,9 @@ products:
   id: ncbigene.gene_refseq_uniprotkb_collab
   name: Gene RefSeq UniProtKB Collaboration Data
   original_source:
+  - refseq
   - ncbigene
+  - uniprot
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_refseq_uniprotkb_collab.gz
 - category: Product
   compression: gzip
@@ -143,7 +150,7 @@ products:
   original_source:
   - ncbigene
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_summary.gz
-- category: Product
+- category: MappingProduct
   description: MIM to Gene and MedGen mapping data connecting genetic disorders to
     genes
   format: tsv
@@ -151,6 +158,8 @@ products:
   name: MIM to Gene MedGen Mapping
   original_source:
   - ncbigene
+  - medgen
+  - omim
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/mim2gene_medgen
 - category: GraphicalInterface
   description: Web-based search and browsing interface for the NCBI Gene database
@@ -257,5 +266,4 @@ publications:
   preferred: true
   title: 'Entrez Gene: gene-centered information at NCBI'
   year: '2011'
-repository: https://github.com/ncbi/gene
 ---
