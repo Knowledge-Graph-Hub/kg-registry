@@ -2073,6 +2073,30 @@ resources:
     product_url: https://gitlab.c-path.org/c-pathontology/c-path-knowledge-graph-integration
     secondary_source:
     - cpathkg
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+    - ctd
+    - do
+    - go
+    - chebi
+    - reactome
+    - interpro
+    - hp
+    - cl
+    - pr
+    - uberon
+    - ncbitaxon
+    - hetionet
+    - complexportal
+    - rnacentral
+    - mirtarbase
+    - unii
+    - biolink
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+    - mechreponet
   publications:
   - authors:
     - Unni DR
@@ -3844,6 +3868,30 @@ resources:
     - v2022-04-13
     - v2022-03-09
     - v2021-04-06
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+    - ctd
+    - do
+    - go
+    - chebi
+    - reactome
+    - interpro
+    - hp
+    - cl
+    - pr
+    - uberon
+    - ncbitaxon
+    - hetionet
+    - complexportal
+    - rnacentral
+    - mirtarbase
+    - unii
+    - biolink
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+    - mechreponet
   repository: https://github.com/ebi-chebi/ChEBI
 - activity_status: active
   category: DataSource
@@ -4741,6 +4789,30 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+    - ctd
+    - do
+    - go
+    - chebi
+    - reactome
+    - interpro
+    - hp
+    - cl
+    - pr
+    - uberon
+    - ncbitaxon
+    - hetionet
+    - complexportal
+    - rnacentral
+    - mirtarbase
+    - unii
+    - biolink
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+    - mechreponet
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -6349,6 +6421,30 @@ resources:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
     secondary_source:
     - bioteque
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+    - ctd
+    - do
+    - go
+    - chebi
+    - reactome
+    - interpro
+    - hp
+    - cl
+    - pr
+    - uberon
+    - ncbitaxon
+    - hetionet
+    - complexportal
+    - rnacentral
+    - mirtarbase
+    - unii
+    - biolink
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+    - mechreponet
 - activity_status: active
   category: DataSource
   contacts:
@@ -7808,6 +7904,30 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+    - ctd
+    - do
+    - go
+    - chebi
+    - reactome
+    - interpro
+    - hp
+    - cl
+    - pr
+    - uberon
+    - ncbitaxon
+    - hetionet
+    - complexportal
+    - rnacentral
+    - mirtarbase
+    - unii
+    - biolink
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+    - mechreponet
   repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 - activity_status: active
   category: DataSource
@@ -8431,6 +8551,77 @@ resources:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
     secondary_source:
     - bioteque
+  - category: GraphProduct
+    description: Training data for the MIND knowledge graph containing 9,651,040 edges
+    format: tsv
+    id: mind.train
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Training Data
+    original_source:
+    - drugcentral
+    - mechreponet
+    product_url: https://zenodo.org/records/8117748/files/train.txt
+    secondary_source:
+    - mind
+  - category: GraphProduct
+    description: Test data for the MIND knowledge graph containing DrugCentral indications
+    format: tsv
+    id: mind.test
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Test Data
+    original_source:
+    - drugcentral
+    - mechreponet
+    product_url: https://zenodo.org/records/8117748/files/test.txt
+    secondary_source:
+    - mind
+  - category: GraphProduct
+    description: Validation data for the MIND knowledge graph containing DrugCentral
+      indications
+    format: tsv
+    id: mind.valid
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Validation Data
+    original_source:
+    - drugcentral
+    - mechreponet
+    product_url: https://zenodo.org/records/8117748/files/valid.txt
+    secondary_source:
+    - mind
+  - category: Product
+    description: Dictionary of entities in the MIND knowledge graph
+    format: tsv
+    id: mind.entities
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Entities Dictionary
+    original_source:
+    - drugcentral
+    - mechreponet
+    product_url: https://zenodo.org/records/8117748/files/entities.dict
+    secondary_source:
+    - mind
+  - category: Product
+    description: Dictionary of relations in the MIND knowledge graph
+    format: tsv
+    id: mind.relations
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Relations Dictionary
+    original_source:
+    - drugcentral
+    - mechreponet
+    product_url: https://zenodo.org/records/8117748/files/relations.dict
+    secondary_source:
+    - mind
   publications:
   - authors:
     - Ursu O
@@ -12514,6 +12705,30 @@ resources:
     - go
     - ncbigene
     product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2go.gz
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+    - ctd
+    - do
+    - go
+    - chebi
+    - reactome
+    - interpro
+    - hp
+    - cl
+    - pr
+    - uberon
+    - ncbitaxon
+    - hetionet
+    - complexportal
+    - rnacentral
+    - mirtarbase
+    - unii
+    - biolink
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+    - mechreponet
   publications:
   - authors:
     - Ashburner M
@@ -13749,6 +13964,30 @@ resources:
     secondary_source:
     - alzkb
     - hetionet
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+    - ctd
+    - do
+    - go
+    - chebi
+    - reactome
+    - interpro
+    - hp
+    - cl
+    - pr
+    - uberon
+    - ncbitaxon
+    - hetionet
+    - complexportal
+    - rnacentral
+    - mirtarbase
+    - unii
+    - biolink
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+    - mechreponet
   publications:
   - authors:
     - Daniel S Himmelstein
@@ -14470,6 +14709,30 @@ resources:
     product_url: https://www.disgenet.com/
     secondary_source:
     - disgenet
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+    - ctd
+    - do
+    - go
+    - chebi
+    - reactome
+    - interpro
+    - hp
+    - cl
+    - pr
+    - uberon
+    - ncbitaxon
+    - hetionet
+    - complexportal
+    - rnacentral
+    - mirtarbase
+    - unii
+    - biolink
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+    - mechreponet
   repository: https://github.com/obophenotype/human-phenotype-ontology
 - activity_status: active
   category: DataSource
@@ -16204,6 +16467,30 @@ resources:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
     secondary_source:
     - bioteque
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+    - ctd
+    - do
+    - go
+    - chebi
+    - reactome
+    - interpro
+    - hp
+    - cl
+    - pr
+    - uberon
+    - ncbitaxon
+    - hetionet
+    - complexportal
+    - rnacentral
+    - mirtarbase
+    - unii
+    - biolink
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+    - mechreponet
   publications:
   - authors:
     - Blum M
@@ -18037,6 +18324,155 @@ resources:
     about this resource.
 - activity_status: active
   category: KnowledgeGraph
+  creation_date: '2022-04-12T00:00:00Z'
+  description: MechRepoNet (Mechanistic Repositioning Network) is a knowledge graph
+    that integrates multiple biomedical data sources to support drug repositioning
+    via mechanistic inference.
+  domains:
+  - biomedical
+  - drug discovery
+  - pharmacology
+  - translational
+  homepage_url: https://github.com/SuLab/MechRepoNet
+  id: mechreponet
+  last_modified_date: '2025-07-17T00:00:00Z'
+  layout: resource_detail
+  name: MechRepoNet
+  products:
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+    - ctd
+    - do
+    - go
+    - chebi
+    - reactome
+    - interpro
+    - hp
+    - cl
+    - pr
+    - uberon
+    - ncbitaxon
+    - hetionet
+    - complexportal
+    - rnacentral
+    - mirtarbase
+    - unii
+    - biolink
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+    - mechreponet
+  - description: Python code for building and analyzing the MechRepoNet knowledge
+      graph
+    id: mechreponet.code
+    name: MechRepoNet Code
+    product_url: https://github.com/SuLab/MechRepoNet
+  - category: GraphProduct
+    description: Training data for the MIND knowledge graph containing 9,651,040 edges
+    format: tsv
+    id: mind.train
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Training Data
+    original_source:
+    - drugcentral
+    - mechreponet
+    product_url: https://zenodo.org/records/8117748/files/train.txt
+    secondary_source:
+    - mind
+  - category: GraphProduct
+    description: Test data for the MIND knowledge graph containing DrugCentral indications
+    format: tsv
+    id: mind.test
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Test Data
+    original_source:
+    - drugcentral
+    - mechreponet
+    product_url: https://zenodo.org/records/8117748/files/test.txt
+    secondary_source:
+    - mind
+  - category: GraphProduct
+    description: Validation data for the MIND knowledge graph containing DrugCentral
+      indications
+    format: tsv
+    id: mind.valid
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Validation Data
+    original_source:
+    - drugcentral
+    - mechreponet
+    product_url: https://zenodo.org/records/8117748/files/valid.txt
+    secondary_source:
+    - mind
+  - category: Product
+    description: Dictionary of entities in the MIND knowledge graph
+    format: tsv
+    id: mind.entities
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Entities Dictionary
+    original_source:
+    - drugcentral
+    - mechreponet
+    product_url: https://zenodo.org/records/8117748/files/entities.dict
+    secondary_source:
+    - mind
+  - category: Product
+    description: Dictionary of relations in the MIND knowledge graph
+    format: tsv
+    id: mind.relations
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Relations Dictionary
+    original_source:
+    - drugcentral
+    - mechreponet
+    product_url: https://zenodo.org/records/8117748/files/relations.dict
+    secondary_source:
+    - mind
+  publications:
+  - doi: 10.1093/bioinformatics/btac205
+    id: doi:10.1093/bioinformatics/btac205
+    title: Design and application of a knowledge network for automatic prioritization
+      of drug mechanisms
+  repository: https://github.com/SuLab/MechRepoNet
+- activity_status: active
+  category: DataSource
+  creation_date: '2025-07-17T00:00:00Z'
+  description: Stub Resource page for medgen. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: medgen
+  last_modified_date: '2025-07-17T00:00:00Z'
+  layout: resource_detail
+  name: Medgen
+  products:
+  - category: MappingProduct
+    description: MIM to Gene and MedGen mapping data connecting genetic disorders
+      to genes
+    format: tsv
+    id: ncbigene.mim2gene_medgen
+    name: MIM to Gene MedGen Mapping
+    original_source:
+    - ncbigene
+    - medgen
+    - omim
+    product_url: https://ftp.ncbi.nih.gov/gene/DATA/mim2gene_medgen
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: KnowledgeGraph
   contacts:
   - category: Individual
     contact_details:
@@ -18634,6 +19070,122 @@ resources:
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
+- activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Individual
+    label: Roger Tu
+    orcid: 0000-0002-7899-1604
+  - category: Individual
+    label: Meghamala Sinha
+    orcid: 0000-0002-6422-3313
+  - category: Individual
+    label: Andrew I. Su
+    orcid: 0000-0002-9859-4104
+  description: 'Mechanistic Repositioning Network with Indications (MIND) is a knowledge
+    graph incorporating two biomedical resources: MechRepoNet and DrugCentral. MechRepoNet
+    is a knowledge graph comprising of 18 biomedical resources that reflects and expands
+    on important drug mechanism relationships identified from a curated biomedical
+    drug mechanism dataset. MIND was created by mapping DrugCentral edges to existing
+    MechRepoNet nodes through the Unified Medical Language System (UMLS) and Medical
+    Subject Headings (MeSH). The MIND training set has a total of 9,651,040 edges.'
+  domains:
+  - drug discovery
+  - biomedical
+  homepage_url: https://zenodo.org/records/8117748
+  id: mind
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: MIND
+  products:
+  - category: GraphProduct
+    description: Training data for the MIND knowledge graph containing 9,651,040 edges
+    format: tsv
+    id: mind.train
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Training Data
+    original_source:
+    - drugcentral
+    - mechreponet
+    product_url: https://zenodo.org/records/8117748/files/train.txt
+    secondary_source:
+    - mind
+  - category: GraphProduct
+    description: Test data for the MIND knowledge graph containing DrugCentral indications
+    format: tsv
+    id: mind.test
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Test Data
+    original_source:
+    - drugcentral
+    - mechreponet
+    product_url: https://zenodo.org/records/8117748/files/test.txt
+    secondary_source:
+    - mind
+  - category: GraphProduct
+    description: Validation data for the MIND knowledge graph containing DrugCentral
+      indications
+    format: tsv
+    id: mind.valid
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Validation Data
+    original_source:
+    - drugcentral
+    - mechreponet
+    product_url: https://zenodo.org/records/8117748/files/valid.txt
+    secondary_source:
+    - mind
+  - category: Product
+    description: Dictionary of entities in the MIND knowledge graph
+    format: tsv
+    id: mind.entities
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Entities Dictionary
+    original_source:
+    - drugcentral
+    - mechreponet
+    product_url: https://zenodo.org/records/8117748/files/entities.dict
+    secondary_source:
+    - mind
+  - category: Product
+    description: Dictionary of relations in the MIND knowledge graph
+    format: tsv
+    id: mind.relations
+    license:
+      id: https://creativecommons.org/licenses/by/4.0/
+      label: CC-BY-4.0
+    name: MIND Relations Dictionary
+    original_source:
+    - drugcentral
+    - mechreponet
+    product_url: https://zenodo.org/records/8117748/files/relations.dict
+    secondary_source:
+    - mind
+  publications:
+  - authors:
+    - Roger Tu
+    - Meghamala Sinha
+    - Carolina González
+    - Eric Hu
+    - Shehzaad Dhuliawala
+    - Andrew McCallum
+    - Andrew I. Su
+    id: https://doi.org/10.1101/2023.05.12.540594
+    journal: bioRxiv
+    title: Drug Repurposing using consilience of Knowledge Graph Completion methods
+    year: '2023'
+  repository: https://github.com/SuLab/KnowledgeGraphEmbedding
 - activity_status: active
   category: DataModel
   contacts:
@@ -20675,6 +21227,30 @@ resources:
     - v2022-04-13
     - v2022-03-09
     - v2021-04-06
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+    - ctd
+    - do
+    - go
+    - chebi
+    - reactome
+    - interpro
+    - hp
+    - cl
+    - pr
+    - uberon
+    - ncbitaxon
+    - hetionet
+    - complexportal
+    - rnacentral
+    - mirtarbase
+    - unii
+    - biolink
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+    - mechreponet
   publications:
   - authors:
     - Scott Federhen
@@ -28847,6 +29423,30 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+    - ctd
+    - do
+    - go
+    - chebi
+    - reactome
+    - interpro
+    - hp
+    - cl
+    - pr
+    - uberon
+    - ncbitaxon
+    - hetionet
+    - complexportal
+    - rnacentral
+    - mirtarbase
+    - unii
+    - biolink
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+    - mechreponet
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -29313,6 +29913,32 @@ resources:
     title: PubChem 2019 update - improved access to chemical data
     year: '2019'
   repository: https://github.com/ncbi/NCBI-Datasets
+- activity_status: active
+  category: DataSource
+  creation_date: '2025-07-17T00:00:00Z'
+  description: Stub Resource page for pubmed. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: pubmed
+  last_modified_date: '2025-07-17T00:00:00Z'
+  layout: resource_detail
+  name: Pubmed
+  products:
+  - category: MappingProduct
+    compression: gzip
+    description: Gene to PubMed mapping data providing literature references associated
+      with genes
+    format: tsv
+    id: ncbigene.gene2pubmed
+    name: Gene to PubMed Mapping
+    original_source:
+    - pubmed
+    - ncbigene
+    product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2pubmed.gz
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -29819,7 +30445,69 @@ resources:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
     secondary_source:
     - bioteque
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+    - ctd
+    - do
+    - go
+    - chebi
+    - reactome
+    - interpro
+    - hp
+    - cl
+    - pr
+    - uberon
+    - ncbitaxon
+    - hetionet
+    - complexportal
+    - rnacentral
+    - mirtarbase
+    - unii
+    - biolink
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+    - mechreponet
   repository: ''
+- activity_status: active
+  category: DataSource
+  creation_date: '2025-07-17T00:00:00Z'
+  description: Stub Resource page for refseq. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: refseq
+  last_modified_date: '2025-07-17T00:00:00Z'
+  layout: resource_detail
+  name: Refseq
+  products:
+  - category: MappingProduct
+    compression: gzip
+    description: Gene to RefSeq/UniProtKB collaboration data providing cross-references
+      between gene records and protein databases
+    format: tsv
+    id: ncbigene.gene_refseq_uniprotkb_collab
+    name: Gene RefSeq UniProtKB Collaboration Data
+    original_source:
+    - refseq
+    - ncbigene
+    - uniprot
+    product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_refseq_uniprotkb_collab.gz
+  - category: MappingProduct
+    compression: gzip
+    description: Gene to RefSeq mapping data providing links between gene records
+      and RefSeq sequence identifiers
+    format: tsv
+    id: ncbigene.gene2refseq
+    name: Gene to RefSeq Mapping
+    original_source:
+    - refseq
+    - ncbigene
+    product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2refseq.gz
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   description: Stub Resource page for repodb. This page was automatically generated
@@ -33559,6 +34247,30 @@ resources:
     - v2022-04-13
     - v2022-03-09
     - v2021-04-06
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+    - ctd
+    - do
+    - go
+    - chebi
+    - reactome
+    - interpro
+    - hp
+    - cl
+    - pr
+    - uberon
+    - ncbitaxon
+    - hetionet
+    - complexportal
+    - rnacentral
+    - mirtarbase
+    - unii
+    - biolink
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+    - mechreponet
   repository: https://github.com/obophenotype/uberon
 - activity_status: active
   category: KnowledgeGraph

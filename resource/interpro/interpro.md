@@ -46,12 +46,12 @@ products:
   compression: targz
   description: Software package for scanning protein sequences against InterPro's
     signatures
+  format: java
   id: interpro.interproscan
   name: InterProScan
   original_source:
   - interpro
   product_url: http://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.74-105.0/interproscan-5.74-105.0-64-bit.tar.gz
-  format: java
 - category: DataModelProduct
   description: Complete list of InterPro entries with their types and short names
   format: tsv
@@ -206,6 +206,30 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   secondary_source:
   - bioteque
+- description: The MechRepoNet knowledge graph in its original format
+  id: mechreponet.kg
+  name: MechRepoNet Knowledge Graph
+  original_source:
+  - ctd
+  - do
+  - go
+  - chebi
+  - reactome
+  - interpro
+  - hp
+  - cl
+  - pr
+  - uberon
+  - ncbitaxon
+  - hetionet
+  - complexportal
+  - rnacentral
+  - mirtarbase
+  - unii
+  - biolink
+  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+  secondary_source:
+  - mechreponet
 publications:
 - authors:
   - Blum M
