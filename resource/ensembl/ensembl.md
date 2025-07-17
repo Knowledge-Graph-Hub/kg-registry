@@ -135,6 +135,17 @@ products:
   product_url: https://arax.ncats.io/
   secondary_source:
   - rtx-kg2.code
+- category: MappingProduct
+  compression: gzip
+  description: Gene to Ensembl mapping data providing cross-references between NCBI
+    Gene and Ensembl gene identifiers
+  format: tsv
+  id: ncbigene.gene2ensembl
+  name: Gene to Ensembl Mapping
+  original_source:
+  - ensembl
+  - ncbigene
+  product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2ensembl.gz
 publications:
 - authors:
   - Dyer SC
