@@ -2,7 +2,9 @@
 activity_status: active
 category: KnowledgeGraph
 creation_date: '2022-04-12T00:00:00Z'
-description: MechRepoNet (Mechanistic Repositioning Network) is a knowledge graph that integrates multiple biomedical data sources to support drug repositioning via mechanistic inference.
+description: MechRepoNet (Mechanistic Repositioning Network) is a knowledge graph
+  that integrates multiple biomedical data sources to support drug repositioning via
+  mechanistic inference.
 domains:
 - biomedical
 - drug discovery
@@ -13,16 +15,10 @@ id: mechreponet
 last_modified_date: '2025-07-17T00:00:00Z'
 layout: resource_detail
 name: MechRepoNet
-repository: https://github.com/SuLab/MechRepoNet
-publications:
-- id: doi:10.1093/bioinformatics/btac205
-  doi: 10.1093/bioinformatics/btac205
-  title: Design and application of a knowledge network for automatic prioritization of drug mechanisms
 products:
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
   name: MechRepoNet Knowledge Graph
-  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
   original_source:
   - ctd
   - do
@@ -41,14 +37,91 @@ products:
   - mirtarbase
   - unii
   - biolink
+  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
   secondary_source:
   - mechreponet
 - description: Python code for building and analyzing the MechRepoNet knowledge graph
   id: mechreponet.code
   name: MechRepoNet Code
   product_url: https://github.com/SuLab/MechRepoNet
+- category: GraphProduct
+  description: Training data for the MIND knowledge graph containing 9,651,040 edges
+  format: tsv
+  id: mind.train
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: MIND Training Data
+  original_source:
+  - drugcentral
+  - mechreponet
+  product_url: https://zenodo.org/records/8117748/files/train.txt
+  secondary_source:
+  - mind
+- category: GraphProduct
+  description: Test data for the MIND knowledge graph containing DrugCentral indications
+  format: tsv
+  id: mind.test
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: MIND Test Data
+  original_source:
+  - drugcentral
+  - mechreponet
+  product_url: https://zenodo.org/records/8117748/files/test.txt
+  secondary_source:
+  - mind
+- category: GraphProduct
+  description: Validation data for the MIND knowledge graph containing DrugCentral
+    indications
+  format: tsv
+  id: mind.valid
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: MIND Validation Data
+  original_source:
+  - drugcentral
+  - mechreponet
+  product_url: https://zenodo.org/records/8117748/files/valid.txt
+  secondary_source:
+  - mind
+- category: Product
+  description: Dictionary of entities in the MIND knowledge graph
+  format: tsv
+  id: mind.entities
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: MIND Entities Dictionary
+  original_source:
+  - drugcentral
+  - mechreponet
+  product_url: https://zenodo.org/records/8117748/files/entities.dict
+  secondary_source:
+  - mind
+- category: Product
+  description: Dictionary of relations in the MIND knowledge graph
+  format: tsv
+  id: mind.relations
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: MIND Relations Dictionary
+  original_source:
+  - drugcentral
+  - mechreponet
+  product_url: https://zenodo.org/records/8117748/files/relations.dict
+  secondary_source:
+  - mind
+publications:
+- doi: 10.1093/bioinformatics/btac205
+  id: doi:10.1093/bioinformatics/btac205
+  title: Design and application of a knowledge network for automatic prioritization
+    of drug mechanisms
+repository: https://github.com/SuLab/MechRepoNet
 ---
-
 # MechRepoNet
 
 MechRepoNet (Mechanistic Repositioning Network) is a knowledge graph created for the purpose of drug repositioning via mechanistic inference. It integrates multiple biomedical data sources to provide a comprehensive network of compounds, diseases, genes, pathways, and other biological entities.

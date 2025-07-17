@@ -129,6 +129,30 @@ products:
   secondary_source:
   - alzkb
   - hetionet
+- description: The MechRepoNet knowledge graph in its original format
+  id: mechreponet.kg
+  name: MechRepoNet Knowledge Graph
+  original_source:
+  - ctd
+  - do
+  - go
+  - chebi
+  - reactome
+  - interpro
+  - hp
+  - cl
+  - pr
+  - uberon
+  - ncbitaxon
+  - hetionet
+  - complexportal
+  - rnacentral
+  - mirtarbase
+  - unii
+  - biolink
+  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+  secondary_source:
+  - mechreponet
 publications:
 - authors:
   - Daniel S Himmelstein

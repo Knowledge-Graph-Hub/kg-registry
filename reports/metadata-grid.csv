@@ -128,6 +128,8 @@ lincs-l1000,active,PASS
 loinc,active,PASS
 m-csa,active,PASS
 ma,active,PASS
+mechreponet,active,PASS
+medgen,active,PASS
 medkg,active,PASS
 medline,active,PASS
 mesh,active,PASS
@@ -136,6 +138,7 @@ metanetx,active,PASS
 mgd,active,PASS
 mgmlink,active,PASS
 mi,active,PASS
+mind,active,PASS
 mixs,active,PASS
 molecular-data-kp,active,PASS
 mondo,active,PASS
@@ -197,9 +200,11 @@ prism,active,PASS
 progeny,active,PASS
 protcid,active,PASS
 pubchem,active,PASS
+pubmed,active,PASS
 pubtator,active,PASS
 reacto,active,PASS
 reactome,active,PASS
+refseq,active,PASS
 repodb,active,PASS
 repohub,active,PASS
 rgd,active,PASS
