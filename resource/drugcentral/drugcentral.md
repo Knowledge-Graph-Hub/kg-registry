@@ -189,6 +189,77 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   secondary_source:
   - bioteque
+- category: GraphProduct
+  description: Training data for the MIND knowledge graph containing 9,651,040 edges
+  format: tsv
+  id: mind.train
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: MIND Training Data
+  original_source:
+  - drugcentral
+  - mechreponet
+  product_url: https://zenodo.org/records/8117748/files/train.txt
+  secondary_source:
+  - mind
+- category: GraphProduct
+  description: Test data for the MIND knowledge graph containing DrugCentral indications
+  format: tsv
+  id: mind.test
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: MIND Test Data
+  original_source:
+  - drugcentral
+  - mechreponet
+  product_url: https://zenodo.org/records/8117748/files/test.txt
+  secondary_source:
+  - mind
+- category: GraphProduct
+  description: Validation data for the MIND knowledge graph containing DrugCentral
+    indications
+  format: tsv
+  id: mind.valid
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: MIND Validation Data
+  original_source:
+  - drugcentral
+  - mechreponet
+  product_url: https://zenodo.org/records/8117748/files/valid.txt
+  secondary_source:
+  - mind
+- category: Product
+  description: Dictionary of entities in the MIND knowledge graph
+  format: tsv
+  id: mind.entities
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: MIND Entities Dictionary
+  original_source:
+  - drugcentral
+  - mechreponet
+  product_url: https://zenodo.org/records/8117748/files/entities.dict
+  secondary_source:
+  - mind
+- category: Product
+  description: Dictionary of relations in the MIND knowledge graph
+  format: tsv
+  id: mind.relations
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+  name: MIND Relations Dictionary
+  original_source:
+  - drugcentral
+  - mechreponet
+  product_url: https://zenodo.org/records/8117748/files/relations.dict
+  secondary_source:
+  - mind
 publications:
 - authors:
   - Ursu O
