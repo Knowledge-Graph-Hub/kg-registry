@@ -479,6 +479,17 @@ products:
   - v2022-04-13
   - v2022-03-09
   - v2021-04-06
+- category: MappingProduct
+  compression: gzip
+  description: Gene to Gene Ontology mapping data providing functional annotations
+    for genes
+  format: tsv
+  id: ncbigene.gene2go
+  name: Gene to GO Mapping
+  original_source:
+  - go
+  - ncbigene
+  product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2go.gz
 publications:
 - authors:
   - Ashburner M
