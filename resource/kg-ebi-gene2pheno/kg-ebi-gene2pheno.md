@@ -13,7 +13,7 @@ contacts:
   label: "Colleen Xu"
 description: >-
   An ingest of EMBL-EBI's Gene2Phenotype resource, for Translator use
-  (NodeNormed, output in Translator standards)
+  (output in Translator standards and NodeNormed, using own custom pipeline)
 domains:
 - health
 id: kg-ebi-gene2pheno
