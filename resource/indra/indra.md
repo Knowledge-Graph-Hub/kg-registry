@@ -9,6 +9,11 @@ contacts:
   - contact_type: github
     value: sorgerlab
   label: Sorger Lab, Harvard Medical School
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://gyorilab.github.io/
+  label: Gyori Lab, Northeastern University
 description: >-
   INDRA (Integrated Network and Dynamical Reasoning Assembler) is an automated 
   model assembly system interfacing with NLP systems and databases to collect 
@@ -34,6 +39,14 @@ products:
   original_source:
   - indra
   product_url: https://discovery.indra.bio/
+- category: ProgrammingInterface
+  description: REST API for INDRA CoGEx queries 
+  format: http
+  id: indra.api.cogex
+  name: INDRA CoGEx Query API
+  original_source:
+  - indra
+  product_url: https://discovery.indra.bio/apidocs
 - category: ProcessProduct
   description: Python library for automated model assembly from mechanistic knowledge
   format: python
@@ -43,36 +56,29 @@ products:
   - indra
   product_url: https://github.com/sorgerlab/indra
   repository: https://github.com/sorgerlab/indra
-- category: GraphProduct
-  description: INDRA Network Search KG for pathway-level biomedical discovery
-  format: kgx
-  id: indra.network_search
-  name: INDRA Network Search KG
+- category: ProcessProduct
+  description: INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.
+  id: indra.cogex.code
+  name: INDRA CoGEx Build Code
   original_source:
-  - ctd
-  - drugbank
   - chembl
-  - biogrid
-  - hprd
-  - signor
-  - omnipath
-  - biopax
-  - phosphoelm
+  - sider
+  - reactome
+  - wikipathways
+  - hp
+  - nihreporter
+  - disgenet
+  - pubmed
+  - gwascatalog
+  - cellmarker
+  - go
+  - bgee
+  - ccle
+  - clinicaltrialsgov
   - indra
-  product_url: https://discovery.indra.bio/
+  product_url: https://github.com/gyorilab/indra_cogex
   secondary_source:
   - indra
-publications:
-- id: https://doi.org/10.1038/s41587-019-0364-4
-  journal: Nature Biotechnology
-  preferred: true
-  title: >-
-    INDRA: a crowd-sourced machine reading platform for mechanistic reasoning in 
-    biomedical text
-  year: '2020'
-tags:
-- biopragmatics
-- translator
 ---
 
 INDRA (Integrated Network and Dynamical Reasoning Assembler) is an automated 
