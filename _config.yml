@@ -6550,13 +6550,28 @@ resources:
     year: '2025'
 - activity_status: active
   category: DataSource
-  description: Stub Resource page for creeds. This page was automatically generated
-    because it was referenced by other resources.
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: avi.maayan@mssm.edu
+    - contact_type: github
+      value: MaayanLab
+    label: Avi Ma'ayan
+    orcid: 0000-0002-6628-6249
+  description: CREEDS (CRowd Extracted Expression of Differential Signatures) is a
+    database of crowdsourced gene expression signatures for drug, genetic, and disease
+    perturbations.
   domains:
-  - stub
+  - pharmacology
+  - genomics
   id: creeds
   layout: resource_detail
-  name: Creeds
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: CREEDS
   products:
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
@@ -6604,9 +6619,59 @@ resources:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
     secondary_source:
     - bioteque
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  - category: Product
+    description: Manual gene expression signatures derived from single gene perturbations
+    format: json
+    id: creeds.manual_single_gene
+    name: CREEDS Manual Single Gene Perturbations
+    product_url: https://maayanlab.cloud/CREEDS/download/single_gene_perturbations-v1.0.json
+  - category: Product
+    description: Manual gene expression signatures derived from disease signatures
+    format: json
+    id: creeds.manual_disease_signatures
+    name: CREEDS Manual Disease Signatures
+    product_url: https://maayanlab.cloud/CREEDS/download/disease_signatures-v1.0.json
+  - category: Product
+    description: Manual gene expression signatures derived single drug perturbations
+    format: json
+    id: creeds.manual_single_drug
+    name: CREEDS Manual Single Drug Perturbations
+    product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-v1.0.json
+  - category: Product
+    description: DrugMatrix single drug perturbations
+    format: json
+    id: creeds.drugmatrix
+    name: CREEDS DrugMatrix single drug perturbations
+    product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-DM.json
+  - category: Product
+    description: Automatic gene expression signatures derived from single gene perturbations
+    format: json
+    id: creeds.automatic_single_gene
+    name: CREEDS Automatic Single Gene Perturbations
+    product_url: https://maayanlab.cloud/CREEDS/download/single_gene_perturbations-p1.0.json
+  - category: Product
+    description: Automatic gene expression signatures derived from disease signatures
+    format: json
+    id: creeds.automatic_disease_signatures
+    name: CREEDS Automatic Disease Signatures
+    product_url: https://maayanlab.cloud/CREEDS/download/disease_signatures-p1.0.json
+  - category: Product
+    description: Automatic gene expression signatures derived from single drug perturbations
+    format: json
+    id: creeds.automatic_single_drug
+    name: CREEDS Automatic Single Drug Perturbations
+    product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-p1.0.json
+  - category: GraphicalInterface
+    description: Web interface for exploring CREEDS gene expression signatures
+    id: creeds.web_interface
+    name: CREEDS Web Interface
+    product_url: https://maayanlab.cloud/CREEDS/
+  publications:
+  - doi: 10.1038/ncomms12846
+    id: doi:10.1038/ncomms12846
+    title: Extraction and analysis of signatures from the Gene Expression Omnibus
+      by the crowd
+    year: '2016'
 - activity_status: active
   category: DataSource
   contacts:
@@ -11087,14 +11152,50 @@ resources:
     about this resource.
 - activity_status: active
   category: DataSource
-  description: Stub Resource page for finngen. This page was automatically generated
-    because it was referenced by other resources.
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: finngen-info@helsinki.fi
+    label: FinnGen
+  description: FinnGen is a large-scale genomics research project aimed at improving
+    human health through genetic insights from the genetically unique Finnish population,
+    combining genome information with digital health record data from 500,000 Finnish
+    biobank participants.
   domains:
-  - stub
+  - genomics
+  - biomedical
+  - health
+  - precision medicine
+  - clinical
+  homepage_url: https://www.finngen.fi/en
   id: finngen
   layout: resource_detail
-  name: Finngen
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: FinnGen
   products:
+  - category: Product
+    description: Summary statistics from genome-wide association studies of various
+      disease phenotypes conducted on Finnish population data, with the most recent
+      release being Data Freeze 13.
+    id: finngen.summary_stats
+    name: FinnGen GWAS Summary Statistics
+    product_url: https://www.finngen.fi/en/access_results
+  - category: GraphicalInterface
+    description: A web service for browsing disease endpoints in FinnGen, including
+      statistics, definitions, and relationships between diseases.
+    id: finngen.risteys
+    name: Risteys
+    product_url: https://risteys.finngen.fi/
+  - category: Product
+    description: Results from meta-analysis of FinnGen data with other major biobanks,
+      allowing for more powerful detection of genetic associations.
+    id: finngen.meta_analysis
+    name: FinnGen Meta-Analysis Results
+    product_url: https://www.finngen.fi/en/access_results
   - category: GraphProduct
     description: DisGeNET data, including gene to disease associations and variant
       to disease associations (requires registration and subscription).
@@ -11118,19 +11219,56 @@ resources:
     product_url: https://www.disgenet.com/
     secondary_source:
     - disgenet
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  - category: Product
+    description: Clinical endpoint definitions and control groups for FinnGen data
+      releases, including detailed documentation for each data freeze.
+    id: finngen.endpoints
+    name: FinnGen Clinical Endpoints
+    product_url: https://www.finngen.fi/en/researchers/clinical-endpoints
+  publications:
+  - doi: 10.1038/s41588-024-01975-5
+    id: doi:10.1038/s41588-024-01975-5
+    title: Genome-wide association study reveals mechanisms underlying dilated cardiomyopathy
+      and myocardial resilience
+    year: '2024'
+  - doi: 10.1038/s41588-025-02100-w
+    id: doi:10.1038/s41588-025-02100-w
+    title: Genome-wide association study of long COVID
+    year: '2025'
 - activity_status: active
   category: DataSource
-  description: Stub Resource page for fma. This page was automatically generated because
-    it was referenced by other resources.
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: mejino@u.washington.edu
+    label: Onard Mejino
+  description: The Foundational Model of Anatomy (FMA) is a reference ontology for
+    the domain of human anatomy. It is a symbolic representation of the canonical,
+    phenotypic structure of an organism; a spatial-structural ontology of anatomical
+    entities and relations which form the physical organization of an organism at
+    all salient levels of granularity. The FMA contains approximately 75,000 classes
+    and over 120,000 terms, with over 2.1 million relationship instances from over
+    168 relationship types.
   domains:
-  - stub
+  - anatomy and development
+  homepage_url: http://sig.biostr.washington.edu/projects/fm/
   id: fma
   layout: resource_detail
-  name: Fma
+  license:
+    id: https://creativecommons.org/licenses/by/3.0/
+    label: CC-BY-3.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: Foundational Model of Anatomy
   products:
+  - category: DataModelProduct
+    description: The Foundational Model of Anatomy in OWL format
+    format: owl
+    id: fma.owl
+    name: FMA OWL
+    original_source:
+    - fma
+    product_url: http://purl.obolibrary.org/obo/fma.owl
   - category: DataModelProduct
     description: The latest release of EFO in OWL format
     format: owl
@@ -11235,9 +11373,18 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  publications:
+  - doi: 10.1016/j.jbi.2003.11.007
+    id: doi:10.1016/j.jbi.2003.11.007
+    title: A reference ontology for biomedical informatics - the Foundational Model
+      of Anatomy
+  - doi: 10.1016/j.datak.2003.06.002
+    id: doi:10.1016/j.datak.2003.06.002
+    title: Pushing the envelope - challenges in a frame-based representation of human
+      anatomy
+  - doi: 10.1016/j.websem.2007.12.001
+    id: doi:10.1016/j.websem.2007.12.001
+    title: Translating the foundational model of anatomy into OWL
 - activity_status: active
   category: DataSource
   contacts:
