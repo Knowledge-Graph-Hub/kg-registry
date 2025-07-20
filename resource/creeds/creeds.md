@@ -2,9 +2,13 @@
 activity_status: active
 category: DataSource
 contacts:
-- email: avi.maayan@mssm.edu
-  github: MaayanLab
-  name: Avi Ma'ayan
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: avi.maayan@mssm.edu
+  - contact_type: github
+    value: MaayanLab
+  label: Avi Ma'ayan
   orcid: 0000-0002-6628-6249
 description: CREEDS (CRowd Extracted Expression of Differential Signatures) is a database of crowdsourced gene expression signatures for drug, genetic, and disease perturbations.
 domains:
@@ -20,7 +24,7 @@ publications:
 - doi: 10.1038/ncomms12846
   id: doi:10.1038/ncomms12846
   title: Extraction and analysis of signatures from the Gene Expression Omnibus by the crowd
-  year: 2016
+  year: "2016"
 products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
@@ -115,7 +119,6 @@ products:
   id: creeds.web_interface
   name: CREEDS Web Interface
   product_url: https://maayanlab.cloud/CREEDS/
-resource_url: https://maayanlab.cloud/CREEDS/
 ---
 # CREEDS: Crowd Extracted Expression of Differential Signatures
 
