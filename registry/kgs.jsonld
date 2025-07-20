@@ -1404,6 +1404,33 @@
                         "alzkb",
                         "hetionet"
                     ]
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.",
+                    "id": "indra.cogex.code",
+                    "name": "INDRA CoGEx Build Code",
+                    "original_source": [
+                        "chembl",
+                        "sider",
+                        "reactome",
+                        "wikipathways",
+                        "hp",
+                        "nihreporter",
+                        "disgenet",
+                        "pubmed",
+                        "gwascatalog",
+                        "cellmarker",
+                        "go",
+                        "bgee",
+                        "ccle",
+                        "clinicaltrialsgov",
+                        "indra"
+                    ],
+                    "product_url": "https://github.com/gyorilab/indra_cogex",
+                    "secondary_source": [
+                        "indra"
+                    ]
                 }
             ],
             "publications": [
@@ -3701,6 +3728,155 @@
                     "secondary_source": [
                         "bioteque"
                     ]
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.",
+                    "id": "indra.cogex.code",
+                    "name": "INDRA CoGEx Build Code",
+                    "original_source": [
+                        "chembl",
+                        "sider",
+                        "reactome",
+                        "wikipathways",
+                        "hp",
+                        "nihreporter",
+                        "disgenet",
+                        "pubmed",
+                        "gwascatalog",
+                        "cellmarker",
+                        "go",
+                        "bgee",
+                        "ccle",
+                        "clinicaltrialsgov",
+                        "indra"
+                    ],
+                    "product_url": "https://github.com/gyorilab/indra_cogex",
+                    "secondary_source": [
+                        "indra"
+                    ]
+                }
+            ]
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
+            "contacts": [
+                {
+                    "category": "Individual",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "xiaoyun@ems.hrbmu.edu.cn"
+                        }
+                    ],
+                    "label": "Yun Xiao"
+                }
+            ],
+            "creation_date": "2025-07-20T00:00:00Z",
+            "description": "CellMarker is a comprehensive and accurate resource of cell markers for various cell types in tissues of human and mouse. By manually curating over 100,000 published papers, the database contains 13,605 cell markers of 467 cell types in 158 human tissues/sub-tissues and 9,148 cell makers of 389 cell types in 81 mouse tissues/sub-tissues.",
+            "domains": [
+                "biomedical",
+                "genomics",
+                "biological systems",
+                "organisms"
+            ],
+            "homepage_url": "http://xteam.xbio.top/",
+            "id": "cellmarker",
+            "last_modified_date": "2025-07-20T00:00:00Z",
+            "layout": "resource_detail",
+            "name": "CellMarker",
+            "products": [
+                {
+                    "category": "Product",
+                    "description": "Cell markers of different cell types from different tissues in human",
+                    "id": "cellmarker.human",
+                    "name": "Human Cell Markers",
+                    "product_url": "http://xteam.xbio.top/download/Human_cell_markers.txt"
+                },
+                {
+                    "category": "Product",
+                    "description": "Cell markers of different cell types from different tissues in mouse",
+                    "id": "cellmarker.mouse",
+                    "name": "Mouse Cell Markers",
+                    "product_url": "http://xteam.xbio.top/download/Mouse_cell_markers.txt"
+                },
+                {
+                    "category": "Product",
+                    "description": "Cell markers derived from single-cell sequencing researches in human and mouse",
+                    "id": "cellmarker.singlecell",
+                    "name": "Single Cell Markers",
+                    "product_url": "http://xteam.xbio.top/download/Single_cell_markers.txt"
+                },
+                {
+                    "category": "Product",
+                    "description": "All cell markers of different cell types from different tissues in human and mouse",
+                    "id": "cellmarker.all",
+                    "name": "All Cell Markers",
+                    "product_url": "http://xteam.xbio.top/download/all_cell_markers.txt"
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "ACT is a tool that makes cell type annotation easier by integrating the CellMarker resource.",
+                    "id": "cellmarker.act",
+                    "name": "ACT (Annotation of Cell Types)",
+                    "product_url": "http://xteam.xbio.top/ACT/"
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.",
+                    "id": "indra.cogex.code",
+                    "name": "INDRA CoGEx Build Code",
+                    "original_source": [
+                        "chembl",
+                        "sider",
+                        "reactome",
+                        "wikipathways",
+                        "hp",
+                        "nihreporter",
+                        "disgenet",
+                        "pubmed",
+                        "gwascatalog",
+                        "cellmarker",
+                        "go",
+                        "bgee",
+                        "ccle",
+                        "clinicaltrialsgov",
+                        "indra"
+                    ],
+                    "product_url": "https://github.com/gyorilab/indra_cogex",
+                    "secondary_source": [
+                        "indra"
+                    ]
+                }
+            ],
+            "publications": [
+                {
+                    "authors": [
+                        "Zhang X",
+                        "Lan Y",
+                        "Xu J",
+                        "Quan F",
+                        "Zhao E",
+                        "Deng C",
+                        "Luo T",
+                        "Xu L",
+                        "Liao G",
+                        "Yan M",
+                        "Ping Y",
+                        "Li F",
+                        "Shi A",
+                        "Bai J",
+                        "Zhao T",
+                        "Li X",
+                        "Xiao Y"
+                    ],
+                    "doi": "10.1093/nar/gky900",
+                    "id": "doi:10.1093/nar/gky900",
+                    "journal": "Nucleic Acids Research",
+                    "preferred": true,
+                    "title": "CellMarker - a manually curated resource of cell markers in human and mouse",
+                    "year": "2018"
                 }
             ]
         },
@@ -5049,6 +5225,33 @@
                     "secondary_source": [
                         "rtx-kg2.code"
                     ]
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.",
+                    "id": "indra.cogex.code",
+                    "name": "INDRA CoGEx Build Code",
+                    "original_source": [
+                        "chembl",
+                        "sider",
+                        "reactome",
+                        "wikipathways",
+                        "hp",
+                        "nihreporter",
+                        "disgenet",
+                        "pubmed",
+                        "gwascatalog",
+                        "cellmarker",
+                        "go",
+                        "bgee",
+                        "ccle",
+                        "clinicaltrialsgov",
+                        "indra"
+                    ],
+                    "product_url": "https://github.com/gyorilab/indra_cogex",
+                    "secondary_source": [
+                        "indra"
+                    ]
                 }
             ],
             "publications": [
@@ -6354,6 +6557,33 @@
                     "secondary_source": [
                         "disgenet"
                     ]
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.",
+                    "id": "indra.cogex.code",
+                    "name": "INDRA CoGEx Build Code",
+                    "original_source": [
+                        "chembl",
+                        "sider",
+                        "reactome",
+                        "wikipathways",
+                        "hp",
+                        "nihreporter",
+                        "disgenet",
+                        "pubmed",
+                        "gwascatalog",
+                        "cellmarker",
+                        "go",
+                        "bgee",
+                        "ccle",
+                        "clinicaltrialsgov",
+                        "indra"
+                    ],
+                    "product_url": "https://github.com/gyorilab/indra_cogex",
+                    "secondary_source": [
+                        "indra"
+                    ]
                 }
             ],
             "publications": [
@@ -7284,6 +7514,52 @@
                     "product_url": "https://bioteque.irbbarcelona.org/downloads/embeddings",
                     "secondary_source": [
                         "bioteque"
+                    ]
+                }
+            ],
+            "warnings": [
+                "This is an automatically generated stub page. Please replace with accurate information about this resource."
+            ]
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
+            "creation_date": "2025-07-17T00:00:00Z",
+            "description": "Stub Resource page for complexportal. This page was automatically generated because it was referenced by other resources.",
+            "domains": [
+                "stub"
+            ],
+            "id": "complexportal",
+            "last_modified_date": "2025-07-17T00:00:00Z",
+            "layout": "resource_detail",
+            "name": "Complexportal",
+            "products": [
+                {
+                    "description": "The MechRepoNet knowledge graph in its original format",
+                    "id": "mechreponet.kg",
+                    "name": "MechRepoNet Knowledge Graph",
+                    "original_source": [
+                        "ctd",
+                        "do",
+                        "go",
+                        "chebi",
+                        "reactome",
+                        "interpro",
+                        "hp",
+                        "cl",
+                        "pr",
+                        "uberon",
+                        "ncbitaxon",
+                        "hetionet",
+                        "complexportal",
+                        "rnacentral",
+                        "mirtarbase",
+                        "unii",
+                        "biolink"
+                    ],
+                    "product_url": "https://github.com/SuLab/MechRepoNet/releases/tag/publication",
+                    "secondary_source": [
+                        "mechreponet"
                     ]
                 }
             ],
@@ -8857,6 +9133,33 @@
                     "product_url": "https://bioteque.irbbarcelona.org/downloads/embeddings",
                     "secondary_source": [
                         "bioteque"
+                    ]
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.",
+                    "id": "indra.cogex.code",
+                    "name": "INDRA CoGEx Build Code",
+                    "original_source": [
+                        "chembl",
+                        "sider",
+                        "reactome",
+                        "wikipathways",
+                        "hp",
+                        "nihreporter",
+                        "disgenet",
+                        "pubmed",
+                        "gwascatalog",
+                        "cellmarker",
+                        "go",
+                        "bgee",
+                        "ccle",
+                        "clinicaltrialsgov",
+                        "indra"
+                    ],
+                    "product_url": "https://github.com/gyorilab/indra_cogex",
+                    "secondary_source": [
+                        "indra"
                     ]
                 }
             ],
@@ -15014,6 +15317,33 @@
                     "secondary_source": [
                         "mechreponet"
                     ]
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.",
+                    "id": "indra.cogex.code",
+                    "name": "INDRA CoGEx Build Code",
+                    "original_source": [
+                        "chembl",
+                        "sider",
+                        "reactome",
+                        "wikipathways",
+                        "hp",
+                        "nihreporter",
+                        "disgenet",
+                        "pubmed",
+                        "gwascatalog",
+                        "cellmarker",
+                        "go",
+                        "bgee",
+                        "ccle",
+                        "clinicaltrialsgov",
+                        "indra"
+                    ],
+                    "product_url": "https://github.com/gyorilab/indra_cogex",
+                    "secondary_source": [
+                        "indra"
+                    ]
                 }
             ],
             "publications": [
@@ -16198,6 +16528,51 @@
         {
             "activity_status": "active",
             "category": "DataSource",
+            "creation_date": "2025-07-20T00:00:00Z",
+            "description": "Stub Resource page for gwascatalog. This page was automatically generated because it was referenced by other resources.",
+            "domains": [
+                "stub"
+            ],
+            "id": "gwascatalog",
+            "last_modified_date": "2025-07-20T00:00:00Z",
+            "layout": "resource_detail",
+            "name": "Gwascatalog",
+            "products": [
+                {
+                    "category": "ProcessProduct",
+                    "description": "INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.",
+                    "id": "indra.cogex.code",
+                    "name": "INDRA CoGEx Build Code",
+                    "original_source": [
+                        "chembl",
+                        "sider",
+                        "reactome",
+                        "wikipathways",
+                        "hp",
+                        "nihreporter",
+                        "disgenet",
+                        "pubmed",
+                        "gwascatalog",
+                        "cellmarker",
+                        "go",
+                        "bgee",
+                        "ccle",
+                        "clinicaltrialsgov",
+                        "indra"
+                    ],
+                    "product_url": "https://github.com/gyorilab/indra_cogex",
+                    "secondary_source": [
+                        "indra"
+                    ]
+                }
+            ],
+            "warnings": [
+                "This is an automatically generated stub page. Please replace with accurate information about this resource."
+            ]
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
             "description": "Stub Resource page for hancestro. This page was automatically generated because it was referenced by other resources.",
             "domains": [
                 "stub"
@@ -17371,6 +17746,33 @@
                     "product_url": "https://github.com/SuLab/MechRepoNet/releases/tag/publication",
                     "secondary_source": [
                         "mechreponet"
+                    ]
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.",
+                    "id": "indra.cogex.code",
+                    "name": "INDRA CoGEx Build Code",
+                    "original_source": [
+                        "chembl",
+                        "sider",
+                        "reactome",
+                        "wikipathways",
+                        "hp",
+                        "nihreporter",
+                        "disgenet",
+                        "pubmed",
+                        "gwascatalog",
+                        "cellmarker",
+                        "go",
+                        "bgee",
+                        "ccle",
+                        "clinicaltrialsgov",
+                        "indra"
+                    ],
+                    "product_url": "https://github.com/gyorilab/indra_cogex",
+                    "secondary_source": [
+                        "indra"
                     ]
                 }
             ],
@@ -19026,6 +19428,113 @@
         },
         {
             "activity_status": "active",
+            "category": "Aggregator",
+            "contacts": [
+                {
+                    "category": "Organization",
+                    "contact_details": [
+                        {
+                            "contact_type": "url",
+                            "value": "https://indra.readthedocs.io/en/latest/"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "sorgerlab"
+                        }
+                    ],
+                    "label": "Sorger Lab, Harvard Medical School"
+                },
+                {
+                    "category": "Organization",
+                    "contact_details": [
+                        {
+                            "contact_type": "url",
+                            "value": "https://gyorilab.github.io/"
+                        }
+                    ],
+                    "label": "Gyori Lab, Northeastern University"
+                }
+            ],
+            "description": "INDRA (Integrated Network and Dynamical Reasoning Assembler) is an automated model assembly system interfacing with NLP systems and databases to collect knowledge, and through a process of assembly, produce causal graphs and dynamical models.",
+            "domains": [
+                "biomedical",
+                "systems biology"
+            ],
+            "homepage_url": "https://www.indra.bio/",
+            "id": "indra",
+            "layout": "resource_detail",
+            "license": {
+                "id": "https://opensource.org/licenses/BSD-2-Clause",
+                "label": "BSD 2-Clause License"
+            },
+            "name": "INDRA",
+            "products": [
+                {
+                    "category": "GraphicalInterface",
+                    "description": "Web interface for the INDRA Biomedical Discovery Engine",
+                    "format": "http",
+                    "id": "indra.discovery",
+                    "name": "INDRA Biomedical Discovery Engine",
+                    "original_source": [
+                        "indra"
+                    ],
+                    "product_url": "https://discovery.indra.bio/"
+                },
+                {
+                    "category": "ProgrammingInterface",
+                    "description": "REST API for INDRA CoGEx queries",
+                    "format": "http",
+                    "id": "indra.api.cogex",
+                    "name": "INDRA CoGEx Query API",
+                    "original_source": [
+                        "indra"
+                    ],
+                    "product_url": "https://discovery.indra.bio/apidocs"
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "Python library for automated model assembly from mechanistic knowledge",
+                    "format": "python",
+                    "id": "indra.python",
+                    "name": "INDRA Python Library",
+                    "original_source": [
+                        "indra"
+                    ],
+                    "product_url": "https://github.com/sorgerlab/indra",
+                    "repository": "https://github.com/sorgerlab/indra"
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.",
+                    "id": "indra.cogex.code",
+                    "name": "INDRA CoGEx Build Code",
+                    "original_source": [
+                        "chembl",
+                        "sider",
+                        "reactome",
+                        "wikipathways",
+                        "hp",
+                        "nihreporter",
+                        "disgenet",
+                        "pubmed",
+                        "gwascatalog",
+                        "cellmarker",
+                        "go",
+                        "bgee",
+                        "ccle",
+                        "clinicaltrialsgov",
+                        "indra"
+                    ],
+                    "product_url": "https://github.com/gyorilab/indra_cogex",
+                    "secondary_source": [
+                        "indra"
+                    ]
+                }
+            ],
+            "repository": "https://github.com/sorgerlab/indra"
+        },
+        {
+            "activity_status": "active",
             "category": "DataSource",
             "description": "Stub Resource page for intact. This page was automatically generated because it was referenced by other resources.",
             "domains": [
@@ -20031,7 +20540,7 @@
                     "label": "Colleen Xu"
                 }
             ],
-            "description": "An ingest of EMBL-EBI's Gene2Phenotype resource, for Translator use (NodeNormed, output in Translator standards)",
+            "description": "An ingest of EMBL-EBI's Gene2Phenotype resource, for Translator use (output in Translator standards and NodeNormed, using own custom pipeline)",
             "domains": [
                 "health"
             ],
@@ -20163,7 +20672,7 @@
                     "label": "Colleen Xu"
                 }
             ],
-            "description": "An ingest of Jensen Lab's DISEASES resource, for Translator use (NodeNormed, output in Translator standards)",
+            "description": "An ingest of Jensen Lab's DISEASES resource, for Translator use (output in Translator standards and NodeNormed, using own custom pipeline)",
             "domains": [
                 "health"
             ],
@@ -22622,6 +23131,52 @@
                 }
             ],
             "repository": "https://github.com/SuLab/KnowledgeGraphEmbedding"
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
+            "creation_date": "2025-07-17T00:00:00Z",
+            "description": "Stub Resource page for mirtarbase. This page was automatically generated because it was referenced by other resources.",
+            "domains": [
+                "stub"
+            ],
+            "id": "mirtarbase",
+            "last_modified_date": "2025-07-17T00:00:00Z",
+            "layout": "resource_detail",
+            "name": "Mirtarbase",
+            "products": [
+                {
+                    "description": "The MechRepoNet knowledge graph in its original format",
+                    "id": "mechreponet.kg",
+                    "name": "MechRepoNet Knowledge Graph",
+                    "original_source": [
+                        "ctd",
+                        "do",
+                        "go",
+                        "chebi",
+                        "reactome",
+                        "interpro",
+                        "hp",
+                        "cl",
+                        "pr",
+                        "uberon",
+                        "ncbitaxon",
+                        "hetionet",
+                        "complexportal",
+                        "rnacentral",
+                        "mirtarbase",
+                        "unii",
+                        "biolink"
+                    ],
+                    "product_url": "https://github.com/SuLab/MechRepoNet/releases/tag/publication",
+                    "secondary_source": [
+                        "mechreponet"
+                    ]
+                }
+            ],
+            "warnings": [
+                "This is an automatically generated stub page. Please replace with accurate information about this resource."
+            ]
         },
         {
             "activity_status": "active",
@@ -25181,6 +25736,51 @@
                 }
             ],
             "repository": "https://github.com/geneontology/neo/"
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
+            "creation_date": "2025-07-20T00:00:00Z",
+            "description": "Stub Resource page for nihreporter. This page was automatically generated because it was referenced by other resources.",
+            "domains": [
+                "stub"
+            ],
+            "id": "nihreporter",
+            "last_modified_date": "2025-07-20T00:00:00Z",
+            "layout": "resource_detail",
+            "name": "Nihreporter",
+            "products": [
+                {
+                    "category": "ProcessProduct",
+                    "description": "INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.",
+                    "id": "indra.cogex.code",
+                    "name": "INDRA CoGEx Build Code",
+                    "original_source": [
+                        "chembl",
+                        "sider",
+                        "reactome",
+                        "wikipathways",
+                        "hp",
+                        "nihreporter",
+                        "disgenet",
+                        "pubmed",
+                        "gwascatalog",
+                        "cellmarker",
+                        "go",
+                        "bgee",
+                        "ccle",
+                        "clinicaltrialsgov",
+                        "indra"
+                    ],
+                    "product_url": "https://github.com/gyorilab/indra_cogex",
+                    "secondary_source": [
+                        "indra"
+                    ]
+                }
+            ],
+            "warnings": [
+                "This is an automatically generated stub page. Please replace with accurate information about this resource."
+            ]
         },
         {
             "activity_status": "active",
@@ -35620,6 +36220,33 @@
                         "ncbigene"
                     ],
                     "product_url": "https://ftp.ncbi.nih.gov/gene/DATA/gene2pubmed.gz"
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.",
+                    "id": "indra.cogex.code",
+                    "name": "INDRA CoGEx Build Code",
+                    "original_source": [
+                        "chembl",
+                        "sider",
+                        "reactome",
+                        "wikipathways",
+                        "hp",
+                        "nihreporter",
+                        "disgenet",
+                        "pubmed",
+                        "gwascatalog",
+                        "cellmarker",
+                        "go",
+                        "bgee",
+                        "ccle",
+                        "clinicaltrialsgov",
+                        "indra"
+                    ],
+                    "product_url": "https://github.com/gyorilab/indra_cogex",
+                    "secondary_source": [
+                        "indra"
+                    ]
                 }
             ],
             "warnings": [
@@ -36245,6 +36872,33 @@
                     "secondary_source": [
                         "mechreponet"
                     ]
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.",
+                    "id": "indra.cogex.code",
+                    "name": "INDRA CoGEx Build Code",
+                    "original_source": [
+                        "chembl",
+                        "sider",
+                        "reactome",
+                        "wikipathways",
+                        "hp",
+                        "nihreporter",
+                        "disgenet",
+                        "pubmed",
+                        "gwascatalog",
+                        "cellmarker",
+                        "go",
+                        "bgee",
+                        "ccle",
+                        "clinicaltrialsgov",
+                        "indra"
+                    ],
+                    "product_url": "https://github.com/gyorilab/indra_cogex",
+                    "secondary_source": [
+                        "indra"
+                    ]
                 }
             ],
             "repository": ""
@@ -36618,6 +37272,52 @@
             "layout": "resource_detail",
             "name": "RNA-KG",
             "repository": "https://github.com/AnacletoLAB/RNA-KG"
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
+            "creation_date": "2025-07-17T00:00:00Z",
+            "description": "Stub Resource page for rnacentral. This page was automatically generated because it was referenced by other resources.",
+            "domains": [
+                "stub"
+            ],
+            "id": "rnacentral",
+            "last_modified_date": "2025-07-17T00:00:00Z",
+            "layout": "resource_detail",
+            "name": "Rnacentral",
+            "products": [
+                {
+                    "description": "The MechRepoNet knowledge graph in its original format",
+                    "id": "mechreponet.kg",
+                    "name": "MechRepoNet Knowledge Graph",
+                    "original_source": [
+                        "ctd",
+                        "do",
+                        "go",
+                        "chebi",
+                        "reactome",
+                        "interpro",
+                        "hp",
+                        "cl",
+                        "pr",
+                        "uberon",
+                        "ncbitaxon",
+                        "hetionet",
+                        "complexportal",
+                        "rnacentral",
+                        "mirtarbase",
+                        "unii",
+                        "biolink"
+                    ],
+                    "product_url": "https://github.com/SuLab/MechRepoNet/releases/tag/publication",
+                    "secondary_source": [
+                        "mechreponet"
+                    ]
+                }
+            ],
+            "warnings": [
+                "This is an automatically generated stub page. Please replace with accurate information about this resource."
+            ]
         },
         {
             "activity_status": "active",
@@ -41046,6 +41746,52 @@
         {
             "activity_status": "active",
             "category": "DataSource",
+            "creation_date": "2025-07-17T00:00:00Z",
+            "description": "Stub Resource page for unii. This page was automatically generated because it was referenced by other resources.",
+            "domains": [
+                "stub"
+            ],
+            "id": "unii",
+            "last_modified_date": "2025-07-17T00:00:00Z",
+            "layout": "resource_detail",
+            "name": "Unii",
+            "products": [
+                {
+                    "description": "The MechRepoNet knowledge graph in its original format",
+                    "id": "mechreponet.kg",
+                    "name": "MechRepoNet Knowledge Graph",
+                    "original_source": [
+                        "ctd",
+                        "do",
+                        "go",
+                        "chebi",
+                        "reactome",
+                        "interpro",
+                        "hp",
+                        "cl",
+                        "pr",
+                        "uberon",
+                        "ncbitaxon",
+                        "hetionet",
+                        "complexportal",
+                        "rnacentral",
+                        "mirtarbase",
+                        "unii",
+                        "biolink"
+                    ],
+                    "product_url": "https://github.com/SuLab/MechRepoNet/releases/tag/publication",
+                    "secondary_source": [
+                        "mechreponet"
+                    ]
+                }
+            ],
+            "warnings": [
+                "This is an automatically generated stub page. Please replace with accurate information about this resource."
+            ]
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
             "contacts": [
                 {
                     "category": "Organization",
@@ -42349,6 +43095,33 @@
                         "alzkb",
                         "hetionet"
                     ]
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.",
+                    "id": "indra.cogex.code",
+                    "name": "INDRA CoGEx Build Code",
+                    "original_source": [
+                        "chembl",
+                        "sider",
+                        "reactome",
+                        "wikipathways",
+                        "hp",
+                        "nihreporter",
+                        "disgenet",
+                        "pubmed",
+                        "gwascatalog",
+                        "cellmarker",
+                        "go",
+                        "bgee",
+                        "ccle",
+                        "clinicaltrialsgov",
+                        "indra"
+                    ],
+                    "product_url": "https://github.com/gyorilab/indra_cogex",
+                    "secondary_source": [
+                        "indra"
+                    ]
                 }
             ],
             "publications": [
@@ -43323,6 +44096,33 @@
                     "product_url": "https://bioteque.irbbarcelona.org/downloads/embeddings",
                     "secondary_source": [
                         "bioteque"
+                    ]
+                },
+                {
+                    "category": "ProcessProduct",
+                    "description": "INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.",
+                    "id": "indra.cogex.code",
+                    "name": "INDRA CoGEx Build Code",
+                    "original_source": [
+                        "chembl",
+                        "sider",
+                        "reactome",
+                        "wikipathways",
+                        "hp",
+                        "nihreporter",
+                        "disgenet",
+                        "pubmed",
+                        "gwascatalog",
+                        "cellmarker",
+                        "go",
+                        "bgee",
+                        "ccle",
+                        "clinicaltrialsgov",
+                        "indra"
+                    ],
+                    "product_url": "https://github.com/gyorilab/indra_cogex",
+                    "secondary_source": [
+                        "indra"
                     ]
                 }
             ],
