@@ -15,9 +15,9 @@ contacts:
     value: https://gyorilab.github.io/
   label: Gyori Lab, Northeastern University
 description: >-
-  INDRA (Integrated Network and Dynamical Reasoning Assembler) is an automated 
-  model assembly system interfacing with NLP systems and databases to collect 
-  knowledge, and through a process of assembly, produce causal graphs and 
+  INDRA (Integrated Network and Dynamical Reasoning Assembler) is an automated
+  model assembly system interfacing with NLP systems and databases to collect
+  knowledge, and through a process of assembly, produce causal graphs and
   dynamical models.
 domains:
 - biomedical
@@ -40,7 +40,7 @@ products:
   - indra
   product_url: https://discovery.indra.bio/
 - category: ProgrammingInterface
-  description: REST API for INDRA CoGEx queries 
+  description: REST API for INDRA CoGEx queries
   format: http
   id: indra.api.cogex
   name: INDRA CoGEx Query API
