@@ -48,7 +48,7 @@ SCHEMA_DIR = src/kg_registry/kg_registry_schema
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
 
-all: _config.yml registry/kgs.jsonld registry/kg_registry.duckdb refresh-schema
+all: _config.yml registry/kgs.jsonld registry/kg_registry.duckdb registry/parquet registry/parquet-downloads.html assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js refresh-schema
 
 # This is minimal for now, but
 # will be expanded to include other docs
@@ -66,7 +66,7 @@ integration-test: test valid-purl-report.txt
 
 # Remove and/or revert all targets to their repository versions
 clean:
-	rm -Rf registry/kgs.nt registry/kgs.ttl registry/kgs.yml registry/kg_registry.duckdb sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
+	rm -Rf registry/kgs.nt registry/kgs.ttl registry/kgs.yml registry/kg_registry.duckdb registry/parquet sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
 	git checkout _config.yml registry/kgs.jsonld registry/kgs.yml registry/kg_registry.duckdb
 
 clean-schema:
@@ -102,6 +102,24 @@ registry/kgs.yml: reports/metadata-grid.csv
 # Sync to duckdb database
 registry/kg_registry.duckdb: registry/kgs.yml
 	$(RUN) python -m kg_registry.cli duckdb sync
+
+# Generate Parquet files
+registry/parquet: registry/kgs.yml
+	mkdir -p registry/parquet
+	$(RUN) python -m kg_registry.cli parquet sync
+	@echo "✅ Parquet files generated in registry/parquet/"
+
+registry/parquet-downloads.html: registry/parquet
+	@echo "✅ Parquet downloads page is ready"
+
+# Download DuckDB WASM files for browser
+assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js:
+	@echo "Downloading DuckDB WASM files..."
+	mkdir -p assets/js/duckdb
+	curl -s -L -o assets/js/duckdb/duckdb-browser.mjs https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-browser.mjs
+	curl -s -L -o assets/js/duckdb/duckdb-browser-mvp.worker.js https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-browser-mvp.worker.js
+	curl -s -L -o assets/js/duckdb/duckdb-mvp.wasm https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-mvp.wasm
+	@echo "✅ DuckDB WASM files downloaded"
 
 # Use a generic yaml->json conversion, but adding a @content
 registry/kgs.jsonld: registry/kgs.yml
