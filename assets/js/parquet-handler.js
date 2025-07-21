@@ -26,9 +26,9 @@ async function initDuckDB(parquetDir = '/kg-registry/registry/parquet') {
         throw new Error('Apache Arrow not loaded. Make sure to include the Arrow scripts before initializing.');
     }
     
-    // Using local resources for WASM files
-    const wasmModule = "/kg-registry/assets/js/duckdb/duckdb-mvp.wasm";
-    const workerScript = "/kg-registry/assets/js/duckdb/duckdb-browser-mvp.worker.js";
+    // Use CDN resources for WASM files
+    const wasmModule = "https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-mvp.wasm";
+    const workerScript = "https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-browser-mvp.worker.js";
     
     // Create a Web Worker with the DuckDB worker script
     const workerUrl = URL.createObjectURL(
