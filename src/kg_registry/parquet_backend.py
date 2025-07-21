@@ -355,7 +355,7 @@ class ParquetBackend:
                 "total_resources": 0,
                 "active_resources": 0,
                 "by_category": {},
-                "by_domain": {}
+                "by_domain": {},
             }
 
         return stats
@@ -380,7 +380,7 @@ class ParquetBackend:
                 print(f"Warning: Invalid table name: {table}")
                 success = False
                 continue
-                
+
             parquet_path = os.path.join(directory, f"{table}.parquet")
             if not os.path.exists(parquet_path):
                 print(f"Warning: {parquet_path} does not exist")
@@ -459,7 +459,7 @@ class DuckDBParquetQuerier:
             if table not in valid_tables:
                 print(f"Warning: Invalid table name: {table}")
                 continue
-                
+
             parquet_path = os.path.join(self.parquet_dir, f"{table}.parquet")
             if os.path.exists(parquet_path):
                 # For table identifiers, we can't use parameterized queries
