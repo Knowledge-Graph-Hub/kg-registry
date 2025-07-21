@@ -98,22 +98,31 @@ you know what you're doing.
 
 ## Advanced Search Feature
 
-The site now includes an advanced search feature that allows users to run SQL queries directly against the KG Registry database using DuckDB-WASM (WebAssembly version of DuckDB that runs in the browser). This feature is available at `/kg-registry/advanced-search.html`.
+The site includes an advanced search feature that allows users to run SQL queries directly against the KG Registry data using DuckDB-WASM (WebAssembly version of DuckDB that runs in the browser). This feature is available at `/kg-registry/advanced-search.html`.
 
-### DuckDB Database
+### Parquet Files (Recommended)
 
-The KG Registry data is compiled into a DuckDB database file located at `/registry/kg_registry.duckdb`. This file is generated from the registry data and contains tables for resources, products, domains, contacts, and other metadata.
+The KG Registry data is now compiled into Parquet files located in the `/registry/parquet/` directory. These files are generated from the registry data and contain tables for resources, products, domains, and other metadata. Parquet is a columnar storage format that provides better compression and query performance than a full database file, while being more Git-friendly.
 
-### Updating the DuckDB Database
+### Updating the Parquet Files
 
-If you make changes to the registry data and need to regenerate the DuckDB file, you can use the following command (requires DuckDB CLI to be installed):
+If you make changes to the registry data and need to regenerate the Parquet files, use the following command:
+
+```shell
+# Export registry data to Parquet files
+python -m kg_registry.cli parquet sync --yaml-file registry/kgs.yml --output-dir registry/parquet
+```
+
+### Legacy DuckDB Database (Deprecated)
+
+The previous approach used a full DuckDB database file located at `/registry/kg_registry.duckdb`. This approach is being phased out in favor of Parquet files, but is still supported for backward compatibility.
+
+To update the legacy DuckDB database:
 
 ```shell
 # Export registry data to DuckDB
-python3 src/kg_registry/export_to_duckdb.py registry/kgs.yml registry/kg_registry.duckdb
+python -m kg_registry.cli duckdb sync --yaml-file registry/kgs.yml --db-path registry/kg_registry.duckdb
 ```
-
-If the `export_to_duckdb.py` script doesn't exist, you can create it with appropriate code to convert the YAML data to SQL tables in DuckDB.
 
 ### Advanced Search Page
 

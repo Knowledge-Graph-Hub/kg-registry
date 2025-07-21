@@ -113,6 +113,16 @@ title: Advanced Search - KG Registry
     // Make Arrow available to DuckDB
     window.Arrow = window.Arrow || {};
 
+    // Import our Parquet handler
+    import { initDuckDB, executeQuery, searchResources, queryResources, getResourceStats } from '/kg-registry/assets/js/parquet-handler.js';
+    
+    // Make these functions available globally
+    window.initParquetDuckDB = initDuckDB;
+    window.executeParquetQuery = executeQuery;
+    window.searchParquetResources = searchResources;
+    window.queryParquetResources = queryResources;
+    window.getParquetResourceStats = getResourceStats;
+
     // Try to import DuckDB from local file, fall back to CDN if needed
     let duckdbModule;
     try {
@@ -158,7 +168,7 @@ async function initDuckDB() {
         document.getElementById('runQuery').disabled = true;
         document.getElementById('results').innerHTML = '<div class="alert alert-info">Initializing DuckDB...</div>';
         
-        console.log('Initializing DuckDB...');
+        console.log('Initializing DuckDB with Parquet files...');
         
         // Wait for duckdb to be available
         if (!window.duckdb) {
@@ -166,17 +176,23 @@ async function initDuckDB() {
             throw new Error('DuckDB module not loaded yet. Please wait a moment and try again.');
         }
         
-        // Define paths for local and CDN resources
-        const resources = {
-            local: {
-                workerScript: '/kg-registry/assets/js/duckdb/duckdb-browser-mvp.worker.js',
-                wasmModule: '/kg-registry/assets/js/duckdb/duckdb-mvp.wasm'
-            },
-            cdn: {
-                workerScript: 'https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-browser-mvp.worker.js',
-                wasmModule: 'https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-mvp.wasm'
-            }
-        };
+        // Use Parquet files through our handler
+        try {
+            await window.initParquetDuckDB('/kg-registry/registry/parquet');
+            isDuckDBInitialized = true;
+            document.getElementById('runQuery').disabled = false;
+            document.getElementById('duckdb-loading-message').style.display = 'none';
+            document.getElementById('results').innerHTML = '<div class="alert alert-success">DuckDB initialized. Ready to run queries.</div>';
+        } catch (parquetError) {
+            console.error('Error initializing Parquet files:', parquetError);
+            document.getElementById('results').innerHTML = `
+                <div class="alert alert-danger">
+                    <h4>Error initializing DuckDB with Parquet files</h4>
+                    <p>${parquetError.message}</p>
+                    <p>Please check that the Parquet files exist in the registry/parquet directory.</p>
+                </div>
+            `;
+        }
         
         // Try local resources first, fall back to CDN
         let workerScript = resources.local.workerScript;
@@ -234,20 +250,12 @@ async function initDuckDB() {
         
         // Load the database file
         try {
-            const resp = await fetch('/kg-registry/registry/kg_registry.duckdb');
-            if (!resp.ok) {
-                throw new Error(`Failed to fetch database file: ${resp.status} ${resp.statusText}`);
-            }
-            const dbData = await resp.arrayBuffer();
-            await duckdbInstance.registerFileBuffer('kg_registry.duckdb', new Uint8Array(dbData));
-            await duckdbConnection.query(`ATTACH 'kg_registry.duckdb' AS kg_registry`);
+            // Use Parquet files instead of DuckDB database
+            await initDuckDB('/kg-registry/registry/parquet');
         } catch (dbError) {
-            console.warn('Could not load database file, will create an empty one:', dbError);
-            // Create sample tables if DB can't be loaded
-            await duckdbConnection.query(`
-                CREATE TABLE resources (id VARCHAR, name VARCHAR, category VARCHAR, description VARCHAR);
-                INSERT INTO resources VALUES 
-                ('example1', 'Example Resource 1', 'DataSource', 'This is a sample resource'),
+            console.warn('Could not load Parquet files, will create an empty database:', dbError);
+            // Create sample tables if DB can't be loaded - already handled in initDuckDB
+        }
                 ('example2', 'Example Resource 2', 'KnowledgeGraph', 'This is another sample resource');
             `);
         }
@@ -301,7 +309,7 @@ async function initDuckDB() {
 // Execute SQL query
 async function runQuery(sql) {
     try {
-        if (!isDuckDBInitialized || !duckdbConnection) {
+        if (!isDuckDBInitialized) {
             throw new Error('Database connection not established');
         }
         
@@ -309,8 +317,8 @@ async function runQuery(sql) {
         document.getElementById('results').innerHTML = '';
         document.getElementById('downloadResults').disabled = true;
 
-        // Execute the query with the async API
-        const result = await duckdbConnection.query(sql);
+        // Execute the query with the Parquet handler
+        const result = await window.executeParquetQuery(sql);
         
         // Store the results for potential download
         currentResults = result;
@@ -318,26 +326,27 @@ async function runQuery(sql) {
         // Display the results
         let table = '<table class="table table-striped table-hover">';
         
-        // Add headers
-        table += '<thead><tr>';
-        for (const colName of result.schema.fields) {
-            table += `<th>${colName}</th>`;
+        // Add headers (if there are results)
+        if (result.length > 0) {
+            table += '<thead><tr>';
+            for (const colName of Object.keys(result[0])) {
+                table += `<th>${colName}</th>`;
+            }
+            table += '</tr></thead>';
         }
-        table += '</tr></thead>';
         
         // Add rows
         table += '<tbody>';
-        const rows = result.toArray();
-        for (const row of rows) {
+        for (const row of result) {
             table += '<tr>';
-            for (const value of row) {
+            for (const [key, value] of Object.entries(row)) {
                 table += `<td>${value !== null ? value : '<em>null</em>'}</td>`;
             }
             table += '</tr>';
         }
         table += '</tbody></table>';
         
-        if (rows.length === 0) {
+        if (result.length === 0) {
             document.getElementById('results').innerHTML = '<div class="alert alert-info">Query executed successfully, but no results were returned.</div>';
         } else {
             document.getElementById('results').innerHTML = table;
