@@ -1,3 +1,8 @@
+---
+layout: intro_doc
+title: Parquet Backend for KG-Registry
+---
+
 # Parquet Backend for KG-Registry
 
 The KG-Registry now includes a Parquet backend that provides enhanced querying capabilities while keeping data size manageable and maintaining the human-readable YAML files in the `registry` directory.
