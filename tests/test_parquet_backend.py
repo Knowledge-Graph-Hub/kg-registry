@@ -1,4 +1,4 @@
-"""Test DuckDB backend functionality."""
+"""Test Parquet backend functionality."""
 
 import json
 import os
@@ -8,11 +8,11 @@ from pathlib import Path
 
 import yaml
 
-from kg_registry.duckdb_backend import DuckDBBackend, sync_yaml_to_duckdb
+from kg_registry.parquet_backend import DuckDBParquetQuerier, ParquetBackend, sync_yaml_to_parquet
 
 
-class TestDuckDBBackend(unittest.TestCase):
-    """Test DuckDB backend functionality."""
+class TestParquetBackend(unittest.TestCase):
+    """Test Parquet backend functionality."""
 
     def setUp(self):
         """Set up test data."""
@@ -21,7 +21,7 @@ class TestDuckDBBackend(unittest.TestCase):
                 {
                     "id": "test-resource-1",
                     "name": "Test Resource 1",
-                    "description": "A test resource for DuckDB testing",
+                    "description": "A test resource for Parquet testing",
                     "category": "TestCategory",
                     "activity_status": "active",
                     "homepage_url": "https://example.com/test1",
@@ -64,13 +64,23 @@ class TestDuckDBBackend(unittest.TestCase):
                 },
             ]
         }
+        # Create a temporary directory for Parquet files
+        self.temp_dir = tempfile.mkdtemp()
+
+    def tearDown(self):
+        """Clean up after tests."""
+        # Remove temporary directory and files
+        import shutil
+
+        shutil.rmtree(self.temp_dir)
 
     def test_in_memory_backend(self):
-        """Test in-memory DuckDB backend."""
-        backend = DuckDBBackend()
+        """Test in-memory Parquet backend."""
+        backend = ParquetBackend()
 
         # Test that tables are created
-        tables = backend.conn.execute("SHOW TABLES").fetchall()
+        tables_query = backend.conn.execute("SHOW TABLES")
+        tables = tables_query.fetchall()
         table_names = [table[0] for table in tables]
 
         self.assertIn("resources", table_names)
@@ -80,27 +90,34 @@ class TestDuckDBBackend(unittest.TestCase):
         backend.close()
 
     def test_yaml_sync(self):
-        """Test syncing YAML data to DuckDB."""
+        """Test syncing YAML data to Parquet."""
         with tempfile.NamedTemporaryFile(mode="w", suffix=".yml", delete=False) as f:
             yaml.dump(self.test_data, f)
             yaml_file = f.name
 
         try:
-            backend = DuckDBBackend()
+            backend = ParquetBackend(self.temp_dir)
             count = backend.sync_from_yaml(yaml_file)
 
             self.assertEqual(count, 2)
 
+            # Check Parquet files were created
+            parquet_files = [f for f in os.listdir(self.temp_dir) if f.endswith(".parquet")]
+            self.assertEqual(len(parquet_files), 3)  # resources, domains, products
+
             # Check resources were inserted
-            resources = backend.conn.execute("SELECT * FROM resources").fetchall()
+            resources_query = backend.conn.execute("SELECT * FROM resources")
+            resources = resources_query.fetchall()
             self.assertEqual(len(resources), 2)
 
             # Check domains were inserted
-            domains = backend.conn.execute("SELECT * FROM resource_domains").fetchall()
+            domains_query = backend.conn.execute("SELECT * FROM resource_domains")
+            domains = domains_query.fetchall()
             self.assertEqual(len(domains), 3)  # 2 domains for resource1, 1 for resource2
 
             # Check products were inserted
-            products = backend.conn.execute("SELECT * FROM resource_products").fetchall()
+            products_query = backend.conn.execute("SELECT * FROM resource_products")
+            products = products_query.fetchall()
             self.assertEqual(len(products), 1)  # Only resource1 has products
 
             backend.close()
@@ -115,25 +132,21 @@ class TestDuckDBBackend(unittest.TestCase):
             yaml_file = f.name
 
         try:
-            backend = DuckDBBackend()
+            backend = ParquetBackend()
             backend.sync_from_yaml(yaml_file)
 
-            # Test query by category
+            # Test filter by category
             results = backend.query_resources(category="TestCategory")
             self.assertEqual(len(results), 1)
             self.assertEqual(results[0]["id"], "test-resource-1")
 
-            # Test query by activity status
+            # Test filter by activity_status
             results = backend.query_resources(activity_status="active")
             self.assertEqual(len(results), 1)
             self.assertEqual(results[0]["id"], "test-resource-1")
 
-            # Test query by domain
-            results = backend.query_resources(domain="test")
-            self.assertEqual(len(results), 2)
-
-            # Test query by name contains
-            results = backend.query_resources(name_contains="Resource 1")
+            # Test filter by domain
+            results = backend.query_resources(domain="example")
             self.assertEqual(len(results), 1)
             self.assertEqual(results[0]["id"], "test-resource-1")
 
@@ -149,7 +162,7 @@ class TestDuckDBBackend(unittest.TestCase):
             yaml_file = f.name
 
         try:
-            backend = DuckDBBackend()
+            backend = ParquetBackend()
             backend.sync_from_yaml(yaml_file)
 
             # Test search by name
@@ -158,7 +171,7 @@ class TestDuckDBBackend(unittest.TestCase):
             self.assertEqual(results[0]["id"], "test-resource-1")
 
             # Test search by description
-            results = backend.search_resources("DuckDB testing")
+            results = backend.search_resources("Parquet testing")
             self.assertEqual(len(results), 1)
             self.assertEqual(results[0]["id"], "test-resource-1")
 
@@ -178,7 +191,7 @@ class TestDuckDBBackend(unittest.TestCase):
             yaml_file = f.name
 
         try:
-            backend = DuckDBBackend()
+            backend = ParquetBackend()
             backend.sync_from_yaml(yaml_file)
 
             stats = backend.get_resource_stats()
@@ -201,32 +214,73 @@ class TestDuckDBBackend(unittest.TestCase):
             yaml.dump(self.test_data, f)
             yaml_file = f.name
 
-        # Create a temporary database path without creating the file
-        db_path = tempfile.mktemp(suffix=".duckdb")
-
         try:
-            count = sync_yaml_to_duckdb(yaml_file, db_path)
+            count = sync_yaml_to_parquet(yaml_file, self.temp_dir)
             self.assertEqual(count, 2)
 
-            # Verify data was synced
-            backend = DuckDBBackend(db_path)
-            resources = backend.conn.execute("SELECT COUNT(*) FROM resources").fetchone()[0]
-            self.assertEqual(resources, 2)
+            # Verify Parquet files were created
+            parquet_files = [f for f in os.listdir(self.temp_dir) if f.endswith(".parquet")]
+            self.assertEqual(len(parquet_files), 3)  # resources, domains, products
+
+            # Verify data was synced by loading and querying
+            backend = ParquetBackend()
+            backend.load_from_parquet(self.temp_dir)
+            resources_query = backend.conn.execute("SELECT COUNT(*) FROM resources")
+            resources_count_row = resources_query.fetchone()
+            resources_count = resources_count_row[0] if resources_count_row else 0
+            self.assertEqual(resources_count, 2)
             backend.close()
 
         finally:
             os.unlink(yaml_file)
-            if os.path.exists(db_path):
-                os.unlink(db_path)
 
-    def test_context_manager(self):
-        """Test DuckDB backend as context manager."""
+    def test_duckdb_parquet_querier(self):
+        """Test DuckDBParquetQuerier."""
         with tempfile.NamedTemporaryFile(mode="w", suffix=".yml", delete=False) as f:
             yaml.dump(self.test_data, f)
             yaml_file = f.name
 
         try:
-            with DuckDBBackend() as backend:
+            # First sync data to Parquet
+            sync_yaml_to_parquet(yaml_file, self.temp_dir)
+
+            # Then test querying directly from Parquet
+            with DuckDBParquetQuerier(self.temp_dir) as querier:
+                # Basic query
+                results = querier.execute_query("SELECT * FROM resources")
+                self.assertEqual(len(results), 2)
+
+                # Filter query
+                results = querier.execute_query(
+                    "SELECT * FROM resources WHERE category = ?", ["TestCategory"]
+                )
+                self.assertEqual(len(results), 1)
+                self.assertEqual(results[0]["id"], "test-resource-1")
+
+                # Join query
+                results = querier.execute_query(
+                    """
+                    SELECT r.id, r.name, d.domain
+                    FROM resources r
+                    JOIN resource_domains d ON r.id = d.resource_id
+                    WHERE d.domain = 'example'
+                """
+                )
+                self.assertEqual(len(results), 1)
+                self.assertEqual(results[0]["id"], "test-resource-1")
+                self.assertEqual(results[0]["domain"], "example")
+
+        finally:
+            os.unlink(yaml_file)
+
+    def test_context_manager(self):
+        """Test Parquet backend as context manager."""
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".yml", delete=False) as f:
+            yaml.dump(self.test_data, f)
+            yaml_file = f.name
+
+        try:
+            with ParquetBackend() as backend:
                 count = backend.sync_from_yaml(yaml_file)
                 self.assertEqual(count, 2)
 

@@ -96,7 +96,7 @@ def update_markdown(path: pathlib.Path) -> None:
         print("---", file=file)
         print(dumped, file=file)
         print("---", file=file)
-        for line in lines[idx + 1:]:
+        for line in lines[idx + 1 :]:
             print(line, file=file)
 
 
@@ -105,6 +105,7 @@ def main():
     """Standardize metadata."""
     for path in RESOURCE_DIRECTORY.glob("*.md"):
         update_markdown(path)
+
 
 if __name__ == "__main__":
     main()

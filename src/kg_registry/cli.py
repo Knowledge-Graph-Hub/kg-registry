@@ -3,8 +3,9 @@
 import click
 
 from kg_registry import standardize_metadata
-from kg_registry.duckdb_backend import DuckDBBackend, sync_yaml_to_duckdb
 from kg_registry.constants import ROOT
+from kg_registry.duckdb_backend import DuckDBBackend, sync_yaml_to_duckdb
+from kg_registry.parquet_backend import DuckDBParquetQuerier, ParquetBackend, sync_yaml_to_parquet
 
 __all__ = [
     "main",
@@ -22,7 +23,7 @@ def duckdb():
     pass
 
 
-@duckdb.command()
+@duckdb.command(name="sync")
 @click.option(
     "--yaml-file",
     default=str(ROOT / "registry" / "kgs.yml"),
@@ -33,7 +34,7 @@ def duckdb():
     default=str(ROOT / "registry" / "kg_registry.duckdb"),
     help="Path to DuckDB database file",
 )
-def sync(yaml_file: str, db_path: str):
+def duckdb_sync(yaml_file: str, db_path: str):
     """Sync YAML data to DuckDB database."""
     try:
         count = sync_yaml_to_duckdb(yaml_file, db_path)
@@ -43,13 +44,13 @@ def sync(yaml_file: str, db_path: str):
         raise click.Abort()
 
 
-@duckdb.command()
+@duckdb.command(name="stats")
 @click.option(
     "--db-path",
     default=str(ROOT / "registry" / "kg_registry.duckdb"),
     help="Path to DuckDB database file",
 )
-def stats(db_path: str):
+def duckdb_stats(db_path: str):
     """Show statistics about the DuckDB database."""
     try:
         with DuckDBBackend(db_path) as backend:
@@ -57,17 +58,17 @@ def stats(db_path: str):
             click.echo(f"Total resources: {stats['total_resources']}")
             click.echo(f"Active resources: {stats['active_resources']}")
             click.echo("\nBy category:")
-            for category, count in stats['by_category'].items():
+            for category, count in stats["by_category"].items():
                 click.echo(f"  {category}: {count}")
             click.echo("\nBy domain:")
-            for domain, count in stats['by_domain'].items():
+            for domain, count in stats["by_domain"].items():
                 click.echo(f"  {domain}: {count}")
     except Exception as e:
         click.echo(f"Error getting stats: {e}", err=True)
         raise click.Abort()
 
 
-@duckdb.command()
+@duckdb.command(name="query")
 @click.option(
     "--db-path",
     default=str(ROOT / "registry" / "kg_registry.duckdb"),
@@ -77,19 +78,19 @@ def stats(db_path: str):
 @click.option("--domain", help="Filter by domain")
 @click.option("--status", help="Filter by activity status")
 @click.option("--search", help="Search in name or description")
-def query(db_path: str, category: str, domain: str, status: str, search: str):
+def duckdb_query(db_path: str, category: str, domain: str, status: str, search: str):
     """Query resources from DuckDB database."""
     try:
         with DuckDBBackend(db_path) as backend:
             filters = {}
             if category:
-                filters['category'] = category
+                filters["category"] = category
             if domain:
-                filters['domain'] = domain
+                filters["domain"] = domain
             if status:
-                filters['activity_status'] = status
+                filters["activity_status"] = status
             if search:
-                filters['name_contains'] = search
+                filters["name_contains"] = search
 
             if search:
                 resources = backend.search_resources(search)
@@ -101,6 +102,111 @@ def query(db_path: str, category: str, domain: str, status: str, search: str):
                 click.echo(f"  {resource['id']}: {resource['name']} ({resource['category']})")
     except Exception as e:
         click.echo(f"Error querying data: {e}", err=True)
+        raise click.Abort()
+
+
+@main.group()
+def parquet():
+    """Commands for the Parquet backend."""
+    pass
+
+
+@parquet.command(name="sync")
+@click.option(
+    "--yaml-file",
+    default=str(ROOT / "registry" / "kgs.yml"),
+    help="Path to YAML file to sync",
+)
+@click.option(
+    "--output-dir",
+    default=str(ROOT / "registry" / "parquet"),
+    help="Directory to store Parquet files",
+)
+def parquet_sync(yaml_file: str, output_dir: str):
+    """Sync YAML data to Parquet files."""
+    try:
+        count = sync_yaml_to_parquet(yaml_file, output_dir)
+        click.echo(f"Successfully synced {count} resources to Parquet files in {output_dir}")
+    except Exception as e:
+        click.echo(f"Error syncing data: {e}", err=True)
+        raise click.Abort()
+
+
+@parquet.command(name="stats")
+@click.option(
+    "--parquet-dir",
+    default=str(ROOT / "registry" / "parquet"),
+    help="Directory containing Parquet files",
+)
+def parquet_stats(parquet_dir: str):
+    """Show statistics about the resources in Parquet files."""
+    try:
+        with ParquetBackend() as backend:
+            backend.load_from_parquet(parquet_dir)
+            stats = backend.get_resource_stats()
+            click.echo(f"Total resources: {stats['total_resources']}")
+            click.echo(f"Active resources: {stats['active_resources']}")
+            click.echo("\nBy category:")
+            for category, count in stats["by_category"].items():
+                click.echo(f"  {category}: {count}")
+            click.echo("\nBy domain:")
+            for domain, count in stats["by_domain"].items():
+                click.echo(f"  {domain}: {count}")
+    except Exception as e:
+        click.echo(f"Error getting stats: {e}", err=True)
+        raise click.Abort()
+
+
+@parquet.command(name="query")
+@click.option(
+    "--parquet-dir",
+    default=str(ROOT / "registry" / "parquet"),
+    help="Directory containing Parquet files",
+)
+@click.option("--category", help="Filter by category")
+@click.option("--domain", help="Filter by domain")
+@click.option("--status", help="Filter by activity status")
+@click.option("--search", help="Search in name or description")
+def parquet_query(parquet_dir: str, category: str, domain: str, status: str, search: str):
+    """Query resources from Parquet files."""
+    try:
+        # Use DuckDBParquetQuerier for direct querying without loading into memory
+        with DuckDBParquetQuerier(parquet_dir) as querier:
+            if search:
+                # Build search query
+                search_query = """
+                    SELECT * FROM resources
+                    WHERE name ILIKE ? OR description ILIKE ?
+                    ORDER BY name
+                """
+                search_params = [f"%{search}%", f"%{search}%"]
+                resources = querier.execute_query(search_query, search_params)
+            else:
+                # Build filtered query
+                query = "SELECT * FROM resources WHERE 1=1"
+                params = []
+
+                if category:
+                    query += " AND category = ?"
+                    params.append(category)
+
+                if status:
+                    query += " AND activity_status = ?"
+                    params.append(status)
+
+                if domain:
+                    query += (
+                        " AND id IN (SELECT resource_id FROM resource_domains WHERE domain = ?)"
+                    )
+                    params.append(domain)
+
+                resources = querier.execute_query(query, params)
+
+            click.echo(f"Found {len(resources)} resources:")
+            for resource in resources:
+                click.echo(f"  {resource['id']}: {resource['name']} ({resource['category']})")
+    except Exception as e:
+        click.echo(f"Error querying resources: {e}", err=True)
         raise click.Abort()
 
 
