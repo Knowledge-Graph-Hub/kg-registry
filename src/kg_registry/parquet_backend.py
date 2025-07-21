@@ -369,19 +369,29 @@ class ParquetBackend:
         Returns:
             True if data was loaded successfully, False otherwise
         """
+        # Whitelist of valid table names
+        valid_tables = {"resources", "resource_domains", "resource_products"}
         tables = ["resources", "resource_domains", "resource_products"]
         success = True
 
         for table in tables:
+            # Validate table name against whitelist to prevent SQL injection
+            if table not in valid_tables:
+                print(f"Warning: Invalid table name: {table}")
+                success = False
+                continue
+                
             parquet_path = os.path.join(directory, f"{table}.parquet")
             if not os.path.exists(parquet_path):
                 print(f"Warning: {parquet_path} does not exist")
                 success = False
                 continue
 
+            # Since table names are validated against a whitelist, it's safe to use them in SQL
             self.conn.execute(f"DROP TABLE IF EXISTS {table}")
+            # Use parameter for the file path which is user input
             self.conn.execute(
-                f"CREATE TABLE {table} AS SELECT * FROM read_parquet('{parquet_path}')")
+                f"CREATE TABLE {table} AS SELECT * FROM read_parquet(?)", [parquet_path])
 
         return success
 
@@ -440,13 +450,22 @@ class DuckDBParquetQuerier:
 
     def _register_tables(self):
         """Register Parquet files as virtual tables in DuckDB."""
+        # Whitelist of valid table names
+        valid_tables = {"resources", "resource_domains", "resource_products"}
         tables = ["resources", "resource_domains", "resource_products"]
 
         for table in tables:
+            # Validate table name against whitelist to prevent SQL injection
+            if table not in valid_tables:
+                print(f"Warning: Invalid table name: {table}")
+                continue
+                
             parquet_path = os.path.join(self.parquet_dir, f"{table}.parquet")
             if os.path.exists(parquet_path):
+                # Since table names are validated against a whitelist, it's safe to use them in SQL
+                # Use parameter for the file path which is user input
                 self.conn.execute(
-                    f"CREATE VIEW {table} AS SELECT * FROM read_parquet('{parquet_path}')")
+                    f"CREATE VIEW {table} AS SELECT * FROM read_parquet(?)", [parquet_path])
             else:
                 print(f"Warning: {parquet_path} does not exist")
 
