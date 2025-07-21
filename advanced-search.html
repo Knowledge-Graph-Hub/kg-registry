@@ -104,17 +104,14 @@ title: Advanced Search - KG Registry
 </div>
 
 <!-- Load required dependencies -->
-<script src="https://cdn.jsdelivr.net/npm/apache-arrow@10.0.1/Arrow.es5.min.js"></script>
-
 <script type="module">
-    // Import DuckDB and initialize it
+    // Import Apache Arrow and DuckDB
+    import * as arrow from 'https://cdn.jsdelivr.net/npm/apache-arrow@21.0.0/Arrow.mjs';
     import * as duckdb from 'https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-browser.mjs';
     
-    // Make duckdb available globally
+    // Make both available globally
+    window.Arrow = arrow;
     window.duckdb = duckdb;
-    
-    // Make Arrow available to DuckDB
-    window.Arrow = window.Arrow || {};
     
     // Initialize everything once the document is loaded
     document.addEventListener('DOMContentLoaded', function() {
