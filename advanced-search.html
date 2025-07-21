@@ -105,13 +105,11 @@ title: Advanced Search - KG Registry
 
 <!-- Load required dependencies -->
 <script type="module">
-    // Import Apache Arrow and DuckDB
-    import * as arrow from 'https://cdn.jsdelivr.net/npm/apache-arrow@21.0.0/Arrow.mjs';
-    import * as duckdb from 'https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-browser.mjs';
+    // Import DuckDB from CDN as an ES module
+    import * as duckdbWasm from 'https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/+esm';
     
-    // Make both available globally
-    window.Arrow = arrow;
-    window.duckdb = duckdb;
+    // Make it available globally
+    window.duckdbWasm = duckdbWasm;
     
     // Initialize everything once the document is loaded
     document.addEventListener('DOMContentLoaded', function() {
@@ -125,19 +123,25 @@ title: Advanced Search - KG Registry
             document.getElementById('runQuery').disabled = true;
             document.getElementById('results').innerHTML = '<div class="alert alert-info">Initializing DuckDB...</div>';
             
-            // Initialize DuckDB with MVPs build (the smallest one)
-            const bundle = await duckdb.selectBundle({
-                mvp: {
-                    mainModule: "https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-mvp.wasm",
-                    mainWorker: "https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-browser-mvp.worker.js"
-                },
-            });
+            // Get the available bundles from JSDelivr
+            const JSDELIVR_BUNDLES = window.duckdbWasm.getJsDelivrBundles();
+            
+            // Select a bundle based on browser capabilities
+            const bundle = await window.duckdbWasm.selectBundle(JSDELIVR_BUNDLES);
+            
+            // Create a URL for the worker
+            const workerUrl = URL.createObjectURL(
+                new Blob([`importScripts("${bundle.mainWorker}");`], {
+                    type: "text/javascript",
+                })
+            );
             
             // Instantiate the database
-            const logger = new duckdb.ConsoleLogger();
-            const worker = new Worker(bundle.mainWorker);
-            const db = new duckdb.AsyncDuckDB(logger, worker);
-            await db.instantiate(bundle.mainModule);
+            const logger = new window.duckdbWasm.ConsoleLogger();
+            const worker = new Worker(workerUrl);
+            const db = new window.duckdbWasm.AsyncDuckDB(logger, worker);
+            await db.instantiate(bundle.mainModule, bundle.pthreadWorker);
+            URL.revokeObjectURL(workerUrl);
             
             // Create a connection to the database
             const conn = await db.connect();
