@@ -255,17 +255,47 @@ title: Advanced Search - KG Registry
             // Execute the query
             const result = await window.duckdb_conn.query(sql);
             
+            // Debug information
+            console.log('Query result:', result);
+            console.log('Schema:', result.schema);
+            console.log('Fields:', result.schema.fields);
+            if (result.toArray().length > 0) {
+                console.log('Sample row:', result.toArray()[0]);
+                console.log('Arrow vector type:', typeof result.getChildAt(0));
+                console.log('Arrow column value type:', typeof result.getChildAt(0).get(0));
+            }
+            
             // Store the results for potential download
             window.currentResults = result;
             
             // Display the results
-            const resultArray = result.toArray().map(row => {
+            const resultArray = [];
+            
+            // Arrow format returns a Table object with schema and batches
+            // Extract field names from schema
+            const fields = result.schema.fields.map(f => f.name);
+            console.log('Field names:', fields);
+            
+            // Get the data in Arrow format
+            const rowCount = result.numRows;
+            console.log('Row count:', rowCount);
+            
+            // Process each row
+            for (let rowIndex = 0; rowIndex < rowCount; rowIndex++) {
                 const obj = {};
-                for (let i = 0; i < result.schema.fields.length; i++) {
-                    obj[result.schema.fields[i]] = row[i];
+                // Process each column in the row
+                for (let colIndex = 0; colIndex < fields.length; colIndex++) {
+                    // Get column vector
+                    const vector = result.getChildAt(colIndex);
+                    // Get value at row index
+                    const value = vector.get(rowIndex);
+                    // Store value with field name
+                    obj[fields[colIndex]] = value;
                 }
-                return obj;
-            });
+                resultArray.push(obj);
+            }
+            
+            console.log('Processed rows:', resultArray);
             
             // Create table HTML
             let table = '<table class="table table-striped table-hover">';
@@ -273,7 +303,7 @@ title: Advanced Search - KG Registry
             // Add headers (if there are results)
             if (resultArray.length > 0) {
                 table += '<thead><tr>';
-                for (const field of result.schema.fields) {
+                for (const field of fields) {
                     table += '<th>' + field + '</th>';
                 }
                 table += '</tr></thead>';
@@ -283,9 +313,9 @@ title: Advanced Search - KG Registry
             table += '<tbody>';
             for (const row of resultArray) {
                 table += '<tr>';
-                for (const field of result.schema.fields) {
+                for (const field of fields) {
                     const value = row[field];
-                    table += '<td>' + (value !== null ? value : '<em>null</em>') + '</td>';
+                    table += '<td>' + (value !== null && value !== undefined ? value : '<em>null</em>') + '</td>';
                 }
                 table += '</tr>';
             }
@@ -314,15 +344,28 @@ title: Advanced Search - KG Registry
         // Create CSV content
         let csv = [];
         
-        // Add headers
-        csv.push(result.schema.fields.join(','));
+        // Get field names from schema
+        const fields = result.schema.fields.map(f => f.name);
         
-        // Add rows
-        for (const row of result.toArray()) {
-            const csvRow = row.map(value => 
-                value !== null ? '"' + String(value).replace(/"/g, '""') + '"' : '""'
-            );
-            csv.push(csvRow.join(','));
+        // Add headers
+        csv.push(fields.join(','));
+        
+        // Add rows - get values directly from Arrow format
+        const rowCount = result.numRows;
+        for (let rowIndex = 0; rowIndex < rowCount; rowIndex++) {
+            const rowValues = [];
+            // Process each column
+            for (let colIndex = 0; colIndex < fields.length; colIndex++) {
+                // Get column vector
+                const vector = result.getChildAt(colIndex);
+                // Get value at row index
+                const value = vector.get(rowIndex);
+                // Format for CSV
+                rowValues.push(value !== null && value !== undefined 
+                    ? '"' + String(value).replace(/"/g, '""') + '"' 
+                    : '""');
+            }
+            csv.push(rowValues.join(','));
         }
         
         // Create and download the file
