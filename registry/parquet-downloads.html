@@ -1,0 +1,145 @@
+---
+layout: default
+title: Parquet Downloads - KG Registry
+---
+
+<div class="row">
+    <h1 class="display-6">
+        Parquet Downloads
+        <br/>
+        <small class="text-muted">
+            KG Registry data in efficient columnar format
+        </small>
+    </h1>
+</div>
+
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5>Download KG Registry Data as Parquet Files</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Parquet is a columnar storage file format designed for efficiency with big data processing frameworks. 
+                    These files can be directly queried using tools like DuckDB, Apache Spark, or Pandas without loading the entire dataset into memory.
+                </p>
+                
+                <h5 class="mt-4">Available Files</h5>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>File</th>
+                                <th>Description</th>
+                                <th>Download</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>resources.parquet</code></td>
+                                <td>Main resources table containing all knowledge graph registry entries</td>
+                                <td><a href="/kg-registry/registry/parquet/resources.parquet" class="btn btn-sm btn-primary">Download</a></td>
+                            </tr>
+                            <tr>
+                                <td><code>resource_domains.parquet</code></td>
+                                <td>Resource-domain relationships for better querying by domain</td>
+                                <td><a href="/kg-registry/registry/parquet/resource_domains.parquet" class="btn btn-sm btn-primary">Download</a></td>
+                            </tr>
+                            <tr>
+                                <td><code>resource_products.parquet</code></td>
+                                <td>Products associated with each resource</td>
+                                <td><a href="/kg-registry/registry/parquet/resource_products.parquet" class="btn btn-sm btn-primary">Download</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h5 class="mt-4">Using Parquet Files</h5>
+                <p>
+                    These Parquet files can be queried using various tools:
+                </p>
+                <div class="accordion" id="parquetUsageAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingPython">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePython" aria-expanded="false" aria-controls="collapsePython">
+                                Python (with PyArrow or Pandas)
+                            </button>
+                        </h2>
+                        <div id="collapsePython" class="accordion-collapse collapse" aria-labelledby="headingPython" data-bs-parent="#parquetUsageAccordion">
+                            <div class="accordion-body">
+                                <pre class="bg-light p-3"><code>import pandas as pd
+
+# Read Parquet file into DataFrame
+resources_df = pd.read_parquet('resources.parquet')
+
+# Query data
+active_resources = resources_df[resources_df['activity_status'] == 'active']
+print(f"Total active resources: {len(active_resources)}")</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingDuckDB">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDuckDB" aria-expanded="false" aria-controls="collapseDuckDB">
+                                DuckDB
+                            </button>
+                        </h2>
+                        <div id="collapseDuckDB" class="accordion-collapse collapse" aria-labelledby="headingDuckDB" data-bs-parent="#parquetUsageAccordion">
+                            <div class="accordion-body">
+                                <pre class="bg-light p-3"><code>import duckdb
+
+# Connect to in-memory database
+conn = duckdb.connect(':memory:')
+
+# Query directly from Parquet files
+result = conn.execute("""
+SELECT category, COUNT(*) as count
+FROM 'resources.parquet'
+GROUP BY category
+ORDER BY count DESC
+""").fetchall()
+
+for category, count in result:
+    print(f"{category}: {count} resources")</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingR">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseR" aria-expanded="false" aria-controls="collapseR">
+                                R (with arrow package)
+                            </button>
+                        </h2>
+                        <div id="collapseR" class="accordion-collapse collapse" aria-labelledby="headingR" data-bs-parent="#parquetUsageAccordion">
+                            <div class="accordion-body">
+                                <pre class="bg-light p-3"><code>library(arrow)
+
+# Read Parquet file
+resources <- read_parquet("resources.parquet")
+
+# Explore data
+summary(resources)
+
+# Filter active resources
+active <- resources[resources$activity_status == "active", ]
+print(paste("Total active resources:", nrow(active)))</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <p>
+                        For more information about using these Parquet files with the KG Registry, see our 
+                        <a href="/kg-registry/docs/parquet_backend">Parquet backend documentation</a>.
+                    </p>
+                    <p>
+                        <a href="/kg-registry/advanced-search.html" class="btn btn-info">Try the Advanced Search</a>
+                        to query these files directly in your browser using SQL.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

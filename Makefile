@@ -48,7 +48,7 @@ SCHEMA_DIR = src/kg_registry/kg_registry_schema
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
 
-all: _config.yml registry/kgs.jsonld registry/kg_registry.duckdb registry/parquet refresh-schema
+all: _config.yml registry/kgs.jsonld registry/kg_registry.duckdb registry/parquet registry/parquet-downloads.html refresh-schema
 
 # This is minimal for now, but
 # will be expanded to include other docs
@@ -107,6 +107,10 @@ registry/kg_registry.duckdb: registry/kgs.yml
 registry/parquet: registry/kgs.yml
 	mkdir -p registry/parquet
 	$(RUN) python -m kg_registry.cli parquet sync
+	@echo "✅ Parquet files generated in registry/parquet/"
+
+registry/parquet-downloads.html: registry/parquet
+	@echo "✅ Parquet downloads page is ready"
 
 # Use a generic yaml->json conversion, but adding a @content
 registry/kgs.jsonld: registry/kgs.yml
