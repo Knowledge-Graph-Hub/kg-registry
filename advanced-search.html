@@ -98,282 +98,273 @@ title: Advanced Search - KG Registry
     </div>
 </div>
 
-<!-- Load DuckDB WASM dependencies first -->
+<!-- Loading message -->
 <div id="duckdb-loading-message" class="alert alert-info mt-3">
     <p><strong>Loading DuckDB...</strong> Please wait while the database engine is being initialized.</p>
 </div>
 
-<!-- Load Apache Arrow and DuckDB dependencies -->
-<script src="https://cdn.jsdelivr.net/npm/apache-arrow@17.0.0/Arrow.js"></script>
-<script type="module" src="/kg-registry/assets/js/duckdb/duckdb-browser.mjs"></script>
+<!-- Load required dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/apache-arrow@10.0.1/Arrow.es5.min.js"></script>
 
-<!-- Main script with ES modules -->
 <script type="module">
+    // Import DuckDB and initialize it
+    import * as duckdb from 'https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-browser.mjs';
+    
+    // Make duckdb available globally
+    window.duckdb = duckdb;
+    
     // Make Arrow available to DuckDB
-    window.Arrow = globalThis.Arrow;
+    window.Arrow = window.Arrow || {};
     
-    // Import our Parquet handler
-    import { initDuckDB, executeQuery, searchResources, queryResources, getResourceStats } from '/kg-registry/assets/js/parquet-handler.js';
-    
-    // Make these functions available globally
-    window.initParquetDuckDB = initDuckDB;
-    window.executeParquetQuery = executeQuery;
-    window.searchParquetResources = searchResources;
-    window.queryParquetResources = queryResources;
-    window.getParquetResourceStats = getResourceStats;
-
-    // Initialize when DOM is loaded
-    document.addEventListener('DOMContentLoaded', async function() {
-        await initDuckDB();
+    // Initialize everything once the document is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        initDuckDBAndSetup();
     });
-</script>
-
-<!-- Non-module script for initialization and queries -->
-<script>
-// Track initialization state
-let isDuckDBInitialized = false;
-let duckdbInstance = null;
-let duckdbConnection = null;
-let currentResults = null;
-
-// Initialize DuckDB
-async function initDuckDB() {
-    try {
-        document.getElementById('runQuery').disabled = true;
-        document.getElementById('results').innerHTML = '<div class="alert alert-info">Initializing DuckDB...</div>';
-        
-        console.log('Initializing DuckDB with Parquet files...');
-        
-        // Check if DuckDB is available
-        if (!window.duckdb) {
-            console.error('DuckDB module not loaded yet');
-            throw new Error('DuckDB module not loaded yet. Please wait a moment and try again.');
-        }
-        
-        // Use Parquet files through our handler
+    
+    // Function to initialize DuckDB and set up event listeners
+    async function initDuckDBAndSetup() {
         try {
-            await window.initParquetDuckDB('/kg-registry/registry/parquet');
-            isDuckDBInitialized = true;
-            document.getElementById('runQuery').disabled = false;
-            document.getElementById('duckdb-loading-message').style.display = 'none';
-            document.getElementById('results').innerHTML = '<div class="alert alert-success">DuckDB initialized. Ready to run queries.</div>';
+            // Disable the query button during initialization
+            document.getElementById('runQuery').disabled = true;
+            document.getElementById('results').innerHTML = '<div class="alert alert-info">Initializing DuckDB...</div>';
             
-            // Set up event listeners after successful initialization
-            setupEventListeners();
-        } catch (parquetError) {
-            console.error('Error initializing Parquet files:', parquetError);
-            document.getElementById('results').innerHTML = `
-                <div class="alert alert-danger">
-                    <h4>Error initializing DuckDB with Parquet files</h4>
-                    <p>${parquetError.message}</p>
-                    <p>Please check that the Parquet files exist in the registry/parquet directory.</p>
-                </div>
-            `;
-            throw parquetError;
-        }
-        
-        // Create a worker manually to avoid CORS issues
-        const workerUrl = URL.createObjectURL(
-            new Blob([`
-                // Import DuckDB worker
-                importScripts('${workerScript}');
-            `], { type: 'application/javascript' })
-        );
-        
-        // Create worker and instantiate DuckDB
-        try {
-            const worker = new Worker(workerUrl);
-            const logger = new window.duckdb.ConsoleLogger();
-            duckdbInstance = new window.duckdb.AsyncDuckDB(logger, worker);
-            
-            // Instantiate with WASM module
-            await duckdbInstance.instantiate({
-                mainModule: wasmModule
+            // Initialize DuckDB with MVPs build (the smallest one)
+            const bundle = await duckdb.selectBundle({
+                mvp: {
+                    mainModule: "https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-mvp.wasm",
+                    mainWorker: "https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-browser-mvp.worker.js"
+                },
             });
-        } catch (workerError) {
-            console.error('Failed to create worker or instantiate DuckDB:', workerError);
             
-            // Show more helpful error message based on the specific error
-            let errorMessage = workerError.message;
-            if (errorMessage.includes('SecurityError') || errorMessage.includes('CORS')) {
-                errorMessage = `CORS error: Cannot load worker from a different origin. Try running with a proper web server or use a different browser.`;
+            // Instantiate the database
+            const logger = new duckdb.ConsoleLogger();
+            const worker = new Worker(bundle.mainWorker);
+            const db = new duckdb.AsyncDuckDB(logger, worker);
+            await db.instantiate(bundle.mainModule);
+            
+            // Create a connection to the database
+            const conn = await db.connect();
+            
+            // Load Parquet files
+            const tables = ['resources', 'resource_domains', 'resource_products'];
+            const parquetDir = '/kg-registry/registry/parquet';
+            
+            for (const table of tables) {
+                const parquetFile = `${parquetDir}/${table}.parquet`;
+                
+                try {
+                    const resp = await fetch(parquetFile);
+                    if (!resp.ok) {
+                        throw new Error(`Failed to fetch Parquet file: ${resp.status} ${resp.statusText}`);
+                    }
+                    
+                    const parquetData = await resp.arrayBuffer();
+                    const parquetFileName = `${table}.parquet`;
+                    
+                    await db.registerFileBuffer(parquetFileName, new Uint8Array(parquetData));
+                    await conn.query(`CREATE VIEW ${table} AS SELECT * FROM read_parquet('${parquetFileName}')`);
+                    console.log(`Loaded ${table} Parquet file`);
+                    
+                } catch (error) {
+                    console.warn(`Error loading ${table} Parquet file:`, error);
+                    // Create a fallback empty table if Parquet file couldn't be loaded
+                    if (table === 'resources') {
+                        await conn.query(`
+                            CREATE TABLE resources (id VARCHAR, name VARCHAR, category VARCHAR, description VARCHAR);
+                            INSERT INTO resources VALUES 
+                            ('example1', 'Example Resource 1', 'DataSource', 'This is a sample resource');
+                        `);
+                    } else if (table === 'resource_domains') {
+                        await conn.query(`
+                            CREATE TABLE resource_domains (resource_id VARCHAR, domain VARCHAR);
+                            INSERT INTO resource_domains VALUES ('example1', 'sample');
+                        `);
+                    } else if (table === 'resource_products') {
+                        await conn.query(`
+                            CREATE TABLE resource_products (
+                                resource_id VARCHAR, product_id VARCHAR, product_name VARCHAR,
+                                product_category VARCHAR, product_description VARCHAR, 
+                                product_format VARCHAR, product_url VARCHAR
+                            );
+                        `);
+                    }
+                }
             }
             
-            throw new Error(`DuckDB initialization failed: ${errorMessage}`);
+            // Make database available globally
+            window.duckdb_db = db;
+            window.duckdb_conn = conn;
+            
+            // Mark as initialized
+            window.duckdbInitialized = true;
+            
+            // Hide loading message and enable query button
+            document.getElementById('duckdb-loading-message').style.display = 'none';
+            document.getElementById('results').innerHTML = '<div class="alert alert-success">DuckDB initialized successfully. Ready to run queries.</div>';
+            document.getElementById('runQuery').disabled = false;
+            
+            // Set up event listeners
+            setupEventListeners();
+        } catch (error) {
+            console.error('Error initializing DuckDB:', error);
+            
+            // Prepare error message
+            let errorMessage = error.message || 'Unknown error';
+            let solutionHint = '<p>This could be due to:</p>' +
+                '<ul>' +
+                    '<li>Browser compatibility issues with WebAssembly</li>' +
+                    '<li>Network issues when loading required files</li>' +
+                    '<li>Browser extensions blocking scripts or workers</li>' +
+                '</ul>' +
+                '<p>Please try with a different browser (Chrome or Firefox recommended) or disable browser extensions.</p>';
+            
+            // Special message for CORS errors
+            if (errorMessage.includes('CORS') || errorMessage.includes('SecurityError')) {
+                solutionHint = '<p>This appears to be a CORS (Cross-Origin Resource Sharing) issue.</p>' +
+                    '<ul>' +
+                        '<li><strong>If running locally:</strong> Try starting Jekyll with <code>bundle exec jekyll serve --host=0.0.0.0</code></li>' +
+                        '<li><strong>If using Chrome:</strong> Try launching with <code>--allow-file-access-from-files</code> flag</li>' +
+                        '<li><strong>Alternative solution:</strong> Access this page from a proper web server instead of localhost</li>' +
+                    '</ul>';
+            }
+            
+            // Display error to user
+            document.getElementById('duckdb-loading-message').style.display = 'none';
+            document.getElementById('results').innerHTML = 
+                '<div class="alert alert-danger">' +
+                    '<h5>Failed to initialize DuckDB:</h5>' +
+                    '<p>' + errorMessage + '</p>' +
+                    '<hr>' +
+                    solutionHint +
+                '</div>';
         }
-        
-        // Connect to the database
-        duckdbConnection = await duckdbInstance.connect();
-        
-        // Connect to the database
-        duckdbConnection = await duckdbInstance.connect();
-        
-        // Load the database file
-        try {
-            // Use Parquet files instead of DuckDB database
-            await initDuckDB('/kg-registry/registry/parquet');
-        } catch (dbError) {
-            console.warn('Could not load Parquet files, will create an empty database:', dbError);
-            // Create sample tables if DB can't be loaded - already handled in initDuckDB
-        }
-                ('example2', 'Example Resource 2', 'KnowledgeGraph', 'This is another sample resource');
-            `);
-        }
-        
-        console.log('DuckDB initialized successfully');
-        document.getElementById('results').innerHTML = '<p class="text-muted">Run a query to see results</p>';
-        document.getElementById('runQuery').disabled = false;
-        
-        // Hide loading message
-        document.getElementById('duckdb-loading-message').style.display = 'none';
-        
-        // Mark as initialized
-        isDuckDBInitialized = true;
-        
-        // Set up event listeners
-        setupEventListeners();
-    } catch (error) {
-        console.error('Error initializing DuckDB:', error);
-        let errorMessage = error.message;
-        let solutionHint = `
-            <ul>
-                <li>Browser compatibility issues with WebAssembly</li>
-                <li>Network issues when loading required files</li>
-                <li>Browser extensions blocking scripts or workers</li>
-            </ul>
-            Please try with a different browser (Chrome or Firefox recommended) or disable browser extensions.
-        `;
-        
-        // Special message for CORS errors when running locally
-        if (errorMessage.includes('CORS') || errorMessage.includes('SecurityError')) {
-            solutionHint = `
-                <p>This appears to be a CORS (Cross-Origin Resource Sharing) issue.</p>
-                <ul>
-                    <li><strong>If running locally:</strong> Try starting Jekyll with <code>bundle exec jekyll serve --host=0.0.0.0</code></li>
-                    <li><strong>If using Chrome:</strong> Try launching with <code>--allow-file-access-from-files</code> flag</li>
-                    <li><strong>Alternative solution:</strong> Access this page from a proper web server instead of localhost</li>
-                </ul>
-            `;
-        }
-        
-        document.getElementById('results').innerHTML = `<div class="alert alert-danger">
-            <h5>Failed to initialize DuckDB:</h5>
-            <p>${errorMessage}</p>
-            <hr>
-            <h6>This could be due to:</h6>
-            ${solutionHint}
-        </div>`;
     }
-}
-
-// Execute SQL query
-async function runQuery(sql) {
-    try {
-        if (!isDuckDBInitialized) {
-            throw new Error('Database connection not established');
-        }
-        
-        document.getElementById('loading').classList.remove('d-none');
-        document.getElementById('results').innerHTML = '';
-        document.getElementById('downloadResults').disabled = true;
-
-        // Execute the query with the Parquet handler
-        const result = await window.executeParquetQuery(sql);
-        
-        // Store the results for potential download
-        currentResults = result;
-        
-        // Display the results
-        let table = '<table class="table table-striped table-hover">';
-        
-        // Add headers (if there are results)
-        if (result.length > 0) {
-            table += '<thead><tr>';
-            for (const colName of Object.keys(result[0])) {
-                table += `<th>${colName}</th>`;
+    
+    // Function to execute SQL query
+    async function runQuery(sql) {
+        try {
+            if (!window.duckdbInitialized || !window.duckdb_conn) {
+                throw new Error('Database connection not established');
             }
-            table += '</tr></thead>';
+            
+            document.getElementById('loading').classList.remove('d-none');
+            document.getElementById('results').innerHTML = '';
+            document.getElementById('downloadResults').disabled = true;
+    
+            // Execute the query
+            const result = await window.duckdb_conn.query(sql);
+            
+            // Store the results for potential download
+            window.currentResults = result;
+            
+            // Display the results
+            const resultArray = result.toArray().map(row => {
+                const obj = {};
+                for (let i = 0; i < result.schema.fields.length; i++) {
+                    obj[result.schema.fields[i]] = row[i];
+                }
+                return obj;
+            });
+            
+            // Create table HTML
+            let table = '<table class="table table-striped table-hover">';
+            
+            // Add headers (if there are results)
+            if (resultArray.length > 0) {
+                table += '<thead><tr>';
+                for (const field of result.schema.fields) {
+                    table += '<th>' + field + '</th>';
+                }
+                table += '</tr></thead>';
+            }
+            
+            // Add rows
+            table += '<tbody>';
+            for (const row of resultArray) {
+                table += '<tr>';
+                for (const field of result.schema.fields) {
+                    const value = row[field];
+                    table += '<td>' + (value !== null ? value : '<em>null</em>') + '</td>';
+                }
+                table += '</tr>';
+            }
+            table += '</tbody></table>';
+            
+            if (resultArray.length === 0) {
+                document.getElementById('results').innerHTML = '<div class="alert alert-info">Query executed successfully, but no results were returned.</div>';
+            } else {
+                document.getElementById('results').innerHTML = table;
+                document.getElementById('downloadResults').disabled = false;
+            }
+        } catch (e) {
+            console.error('Error running query:', e);
+            document.getElementById('results').innerHTML = '<div class="alert alert-danger">Error running query: ' + e.message + '</div>';
+        } finally {
+            document.getElementById('loading').classList.add('d-none');
         }
+    }
+    
+    // Function to download results as CSV
+    function downloadCSV() {
+        if (!window.currentResults) return;
+        
+        const result = window.currentResults;
+        
+        // Create CSV content
+        let csv = [];
+        
+        // Add headers
+        csv.push(result.schema.fields.join(','));
         
         // Add rows
-        table += '<tbody>';
-        for (const row of result) {
-            table += '<tr>';
-            for (const [key, value] of Object.entries(row)) {
-                table += `<td>${value !== null ? value : '<em>null</em>'}</td>`;
-            }
-            table += '</tr>';
+        for (const row of result.toArray()) {
+            const csvRow = row.map(value => 
+                value !== null ? '"' + String(value).replace(/"/g, '""') + '"' : '""'
+            );
+            csv.push(csvRow.join(','));
         }
-        table += '</tbody></table>';
         
-        if (result.length === 0) {
-            document.getElementById('results').innerHTML = '<div class="alert alert-info">Query executed successfully, but no results were returned.</div>';
-        } else {
-            document.getElementById('results').innerHTML = table;
-            document.getElementById('downloadResults').disabled = false;
-        }
-    } catch (e) {
-        console.error('Error running query:', e);
-        document.getElementById('results').innerHTML = `<div class="alert alert-danger">Error running query: ${e.message}</div>`;
-    } finally {
-        document.getElementById('loading').classList.add('d-none');
-    }
-}
-
-// Download results as CSV
-function downloadCSV() {
-    if (!currentResults) return;
-    
-    // Create CSV content
-    let csv = [];
-    
-    // Add headers
-    csv.push(currentResults.schema.fields.join(','));
-    
-    // Add rows
-    for (const row of currentResults.toArray()) {
-        const csvRow = row.map(value => 
-            value !== null ? `"${String(value).replace(/"/g, '""')}"` : '""'
-        );
-        csv.push(csvRow.join(','));
+        // Create and download the file
+        const csvContent = csv.join('\n');
+        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.setAttribute('href', url);
+        link.setAttribute('download', 'kg_registry_results.csv');
+        link.style.visibility = 'hidden';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     }
     
-    // Create and download the file
-    const csvContent = csv.join('\n');
-    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.setAttribute('href', url);
-    link.setAttribute('download', 'kg_registry_results.csv');
-    link.style.visibility = 'hidden';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
-
-// Set up event listeners once DuckDB is initialized
-function setupEventListeners() {
-    document.getElementById('runQuery').addEventListener('click', async function() {
-        const sql = document.getElementById('sqlQuery').value;
-        await runQuery(sql);
-    });
-
-    document.getElementById('resetQuery').addEventListener('click', function() {
-        document.getElementById('sqlQuery').value = 'SELECT * FROM resources LIMIT 10;';
-        document.getElementById('results').innerHTML = '<p class="text-muted">Run a query to see results</p>';
-        document.getElementById('downloadResults').disabled = true;
-        currentResults = null;
-    });
-
-    document.getElementById('downloadResults').addEventListener('click', downloadCSV);
-
-    // Example query buttons
-    document.querySelectorAll('.example-query').forEach(button => {
-        button.addEventListener('click', async function() {
-            const query = this.getAttribute('data-query');
-            document.getElementById('sqlQuery').value = query;
-            await runQuery(query);
+    // Function to set up event listeners
+    function setupEventListeners() {
+        document.getElementById('runQuery').addEventListener('click', function() {
+            const sql = document.getElementById('sqlQuery').value;
+            runQuery(sql);
         });
-    });
-}
+    
+        document.getElementById('resetQuery').addEventListener('click', function() {
+            document.getElementById('sqlQuery').value = 'SELECT * FROM resources LIMIT 10;';
+            document.getElementById('results').innerHTML = '<p class="text-muted">Run a query to see results</p>';
+            document.getElementById('downloadResults').disabled = true;
+            window.currentResults = null;
+        });
+    
+        document.getElementById('downloadResults').addEventListener('click', downloadCSV);
+    
+        // Example query buttons
+        document.querySelectorAll('.example-query').forEach(button => {
+            button.addEventListener('click', function() {
+                const query = this.getAttribute('data-query');
+                document.getElementById('sqlQuery').value = query;
+                runQuery(query);
+            });
+        });
+    }
+    
+    // Export functions to global scope
+    window.runQuery = runQuery;
+    window.downloadCSV = downloadCSV;
+    window.setupEventListeners = setupEventListeners;
 </script>
