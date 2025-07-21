@@ -390,7 +390,8 @@ class ParquetBackend:
             # Since table names are validated against a whitelist, it's safe to use them in SQL
             self.conn.execute(f"DROP TABLE IF EXISTS {table}")
             # Properly escape the file path by doubling single quotes
-            query = f"CREATE TABLE {table} AS SELECT * FROM read_parquet('{parquet_path.replace('\'', '\'\'')}')"
+            safe_path = parquet_path.replace("'", "''")
+            query = f"CREATE TABLE {table} AS SELECT * FROM read_parquet('{safe_path}')"
             self.conn.execute(query)
 
         return success
