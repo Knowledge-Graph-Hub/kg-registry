@@ -466,7 +466,8 @@ class DuckDBParquetQuerier:
                 # For table identifiers, we can't use parameterized queries
                 # Since we've validated the table name against a whitelist, it's safe to use in SQL
                 # But we can escape the path properly by using the DuckDB SQL syntax for strings
-                query = f"CREATE VIEW {table} AS SELECT * FROM read_parquet('{parquet_path.replace('\'', '\'\'')}')"
+                safe_path = parquet_path.replace("'", "''")
+                query = f"CREATE VIEW {table} AS SELECT * FROM read_parquet('{safe_path}')"
                 self.conn.execute(query)
             else:
                 print(f"Warning: {parquet_path} does not exist")
