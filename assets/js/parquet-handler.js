@@ -16,9 +16,19 @@ let duckdbConnection = null;
  * @returns {Promise<void>}
  */
 async function initDuckDB(parquetDir = '/kg-registry/registry/parquet') {
-    // Load DuckDB scripts
-    const wasmModule = "/kg-registry/assets/js/duckdb/duckdb.wasm";
-    const workerScript = "/kg-registry/assets/js/duckdb/duckdb-browser.worker.js";
+    // Check if DuckDB is available globally
+    if (!window.duckdb) {
+        throw new Error('DuckDB not loaded. Make sure to include the DuckDB scripts before initializing.');
+    }
+    
+    // Check if Arrow is available
+    if (!window.Arrow) {
+        throw new Error('Apache Arrow not loaded. Make sure to include the Arrow scripts before initializing.');
+    }
+    
+    // Using local resources for WASM files
+    const wasmModule = "/kg-registry/assets/js/duckdb/duckdb-mvp.wasm";
+    const workerScript = "/kg-registry/assets/js/duckdb/duckdb-browser-mvp.worker.js";
     
     // Create a Web Worker with the DuckDB worker script
     const workerUrl = URL.createObjectURL(
