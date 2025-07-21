@@ -45,9 +45,9 @@ title: Advanced Search - KG Registry
                     <h6>Example Queries:</h6>
                     <div class="d-flex flex-wrap">
                         <button class="btn btn-sm btn-outline-secondary m-1 example-query" data-query="SELECT id, name, category FROM resources ORDER BY name LIMIT 20;">Basic Resource Info</button>
-                        <button class="btn btn-sm btn-outline-secondary m-1 example-query" data-query="SELECT id, name, count(domains) as domain_count FROM resources GROUP BY id, name ORDER BY domain_count DESC LIMIT 10;">Resources by Domain Count</button>
-                        <button class="btn btn-sm btn-outline-secondary m-1 example-query" data-query="SELECT r.id, r.name, p.id as product_id, p.name as product_name FROM resources r JOIN products p ON r.id = p.resource_id LIMIT 20;">Resources with Products</button>
-                        <button class="btn btn-sm btn-outline-secondary m-1 example-query" data-query="SELECT d.value as domain, COUNT(*) as count FROM resources r JOIN domains d ON r.id = d.resource_id GROUP BY d.value ORDER BY count DESC;">Most Common Domains</button>
+                        <button class="btn btn-sm btn-outline-secondary m-1 example-query" data-query="SELECT r.id, r.name, COUNT(d.domain) as domain_count FROM resources r JOIN resource_domains d ON r.id = d.resource_id GROUP BY r.id, r.name ORDER BY domain_count DESC LIMIT 10;">Resources by Domain Count</button>
+                        <button class="btn btn-sm btn-outline-secondary m-1 example-query" data-query="SELECT r.id, r.name, p.product_id, p.product_name FROM resources r JOIN resource_products p ON r.id = p.resource_id LIMIT 20;">Resources with Products</button>
+                        <button class="btn btn-sm btn-outline-secondary m-1 example-query" data-query="SELECT domain, COUNT(*) as count FROM resource_domains GROUP BY domain ORDER BY count DESC;">Most Common Domains</button>
                     </div>
                 </div>
             </div>
@@ -89,12 +89,10 @@ title: Advanced Search - KG Registry
                 <p>The KG Registry database contains the following main tables:</p>
                 <ul>
                     <li><strong>resources</strong> - Basic information about each knowledge graph resource (id, name, description, etc.)</li>
-                    <li><strong>products</strong> - Products associated with each resource</li>
-                    <li><strong>domains</strong> - Domain classifications for resources</li>
-                    <li><strong>contacts</strong> - Contact information for resources</li>
-                    <li><strong>publications</strong> - Publications related to resources</li>
+                    <li><strong>resource_domains</strong> - Domain classifications for resources</li>
+                    <li><strong>resource_products</strong> - Products associated with each resource</li>
                 </ul>
-                <p>For a complete schema reference, you can run: <code>SELECT * FROM information_schema.tables</code></p>
+                <p>For more information about the data schema, visit the <a href="/kg-registry/docs/parquet_backend">Parquet backend documentation</a>.</p>
             </div>
         </div>
     </div>
@@ -105,14 +103,15 @@ title: Advanced Search - KG Registry
     <p><strong>Loading DuckDB...</strong> Please wait while the database engine is being initialized.</p>
 </div>
 
-<!-- Load Apache Arrow globally as a UMD module -->
+<!-- Load Apache Arrow and DuckDB dependencies -->
 <script src="https://cdn.jsdelivr.net/npm/apache-arrow@17.0.0/Arrow.js"></script>
+<script type="module" src="/kg-registry/assets/js/duckdb/duckdb-browser.mjs"></script>
 
 <!-- Main script with ES modules -->
 <script type="module">
     // Make Arrow available to DuckDB
-    window.Arrow = window.Arrow || {};
-
+    window.Arrow = globalThis.Arrow;
+    
     // Import our Parquet handler
     import { initDuckDB, executeQuery, searchResources, queryResources, getResourceStats } from '/kg-registry/assets/js/parquet-handler.js';
     
@@ -123,35 +122,10 @@ title: Advanced Search - KG Registry
     window.queryParquetResources = queryResources;
     window.getParquetResourceStats = getResourceStats;
 
-    // Try to import DuckDB from local file, fall back to CDN if needed
-    let duckdbModule;
-    try {
-        duckdbModule = await import('/kg-registry/assets/js/duckdb/duckdb-browser.mjs');
-    } catch (error) {
-        console.warn('Failed to load local DuckDB module, falling back to CDN:', error);
-        try {
-            duckdbModule = await import('https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/dist/duckdb-browser.mjs');
-        } catch (cdnError) {
-            console.error('Failed to load DuckDB from CDN as well:', cdnError);
-            document.getElementById('results').innerHTML = `
-                <div class="alert alert-danger">
-                    Failed to load DuckDB module: ${cdnError.message}
-                    <br><br>
-                    Please try a different browser or check your network connection.
-                </div>
-            `;
-        }
-    }
-    
-    // Make duckdb available globally if loaded
-    if (duckdbModule) {
-        window.duckdb = duckdbModule;
-        
-        // Call init function when the module is loaded
-        document.addEventListener('DOMContentLoaded', async function() {
-            await initDuckDB();
-        });
-    }
+    // Initialize when DOM is loaded
+    document.addEventListener('DOMContentLoaded', async function() {
+        await initDuckDB();
+    });
 </script>
 
 <!-- Non-module script for initialization and queries -->
@@ -170,7 +144,7 @@ async function initDuckDB() {
         
         console.log('Initializing DuckDB with Parquet files...');
         
-        // Wait for duckdb to be available
+        // Check if DuckDB is available
         if (!window.duckdb) {
             console.error('DuckDB module not loaded yet');
             throw new Error('DuckDB module not loaded yet. Please wait a moment and try again.');
@@ -183,6 +157,9 @@ async function initDuckDB() {
             document.getElementById('runQuery').disabled = false;
             document.getElementById('duckdb-loading-message').style.display = 'none';
             document.getElementById('results').innerHTML = '<div class="alert alert-success">DuckDB initialized. Ready to run queries.</div>';
+            
+            // Set up event listeners after successful initialization
+            setupEventListeners();
         } catch (parquetError) {
             console.error('Error initializing Parquet files:', parquetError);
             document.getElementById('results').innerHTML = `
@@ -192,24 +169,7 @@ async function initDuckDB() {
                     <p>Please check that the Parquet files exist in the registry/parquet directory.</p>
                 </div>
             `;
-        }
-        
-        // Try local resources first, fall back to CDN
-        let workerScript = resources.local.workerScript;
-        let wasmModule = resources.local.wasmModule;
-        
-        // Check if local worker file exists
-        try {
-            const workerCheck = await fetch(resources.local.workerScript, { method: 'HEAD' });
-            if (!workerCheck.ok) {
-                console.warn('Local worker file not available, using CDN');
-                workerScript = resources.cdn.workerScript;
-                wasmModule = resources.cdn.wasmModule;
-            }
-        } catch (e) {
-            console.warn('Error checking local worker file, using CDN:', e);
-            workerScript = resources.cdn.workerScript;
-            wasmModule = resources.cdn.wasmModule;
+            throw parquetError;
         }
         
         // Create a worker manually to avoid CORS issues
