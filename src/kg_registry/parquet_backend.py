@@ -3,7 +3,6 @@
 import json
 import os
 from datetime import datetime
-from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 import duckdb
@@ -18,7 +17,7 @@ __all__ = [
 
 class ParquetBackend:
     """Parquet backend for querying KG-Registry data.
-    
+
     This backend uses DuckDB to process the data and exports it as Parquet files,
     which can be efficiently queried by DuckDB without loading the entire database.
     """
@@ -220,10 +219,10 @@ class ParquetBackend:
         """Export all tables to Parquet files."""
         if not self.output_dir:
             raise ValueError("Output directory must be specified to export Parquet files")
-        
+
         # Create output directory if it doesn't exist
         os.makedirs(self.output_dir, exist_ok=True)
-        
+
         # Export each table to a Parquet file
         tables = ["resources", "resource_domains", "resource_products"]
         for table in tables:
@@ -360,29 +359,30 @@ class ParquetBackend:
             }
 
         return stats
-    
+
     def load_from_parquet(self, directory: str) -> bool:
         """Load data from Parquet files into in-memory DuckDB database.
-        
+
         Args:
             directory: Directory containing Parquet files
-            
+
         Returns:
             True if data was loaded successfully, False otherwise
         """
         tables = ["resources", "resource_domains", "resource_products"]
         success = True
-        
+
         for table in tables:
             parquet_path = os.path.join(directory, f"{table}.parquet")
             if not os.path.exists(parquet_path):
                 print(f"Warning: {parquet_path} does not exist")
                 success = False
                 continue
-                
+
             self.conn.execute(f"DROP TABLE IF EXISTS {table}")
-            self.conn.execute(f"CREATE TABLE {table} AS SELECT * FROM read_parquet('{parquet_path}')")
-            
+            self.conn.execute(
+                f"CREATE TABLE {table} AS SELECT * FROM read_parquet('{parquet_path}')")
+
         return success
 
     def close(self):
@@ -430,32 +430,33 @@ class DuckDBParquetQuerier:
 
     def __init__(self, parquet_dir: str):
         """Initialize DuckDB Parquet querier.
-        
+
         Args:
             parquet_dir: Directory containing Parquet files
         """
         self.parquet_dir = parquet_dir
         self.conn = duckdb.connect(":memory:")
         self._register_tables()
-    
+
     def _register_tables(self):
         """Register Parquet files as virtual tables in DuckDB."""
         tables = ["resources", "resource_domains", "resource_products"]
-        
+
         for table in tables:
             parquet_path = os.path.join(self.parquet_dir, f"{table}.parquet")
             if os.path.exists(parquet_path):
-                self.conn.execute(f"CREATE VIEW {table} AS SELECT * FROM read_parquet('{parquet_path}')")
+                self.conn.execute(
+                    f"CREATE VIEW {table} AS SELECT * FROM read_parquet('{parquet_path}')")
             else:
                 print(f"Warning: {parquet_path} does not exist")
-    
+
     def execute_query(self, query: str, params: Optional[List[Any]] = None) -> List[Dict[str, Any]]:
         """Execute a SQL query directly on Parquet files.
-        
+
         Args:
             query: SQL query to execute
             params: Query parameters
-            
+
         Returns:
             List of results as dictionaries
         """
@@ -469,16 +470,16 @@ class DuckDBParquetQuerier:
         except Exception as e:
             print(f"Error executing query: {e}")
             return []
-    
+
     def close(self):
         """Close the DuckDB connection."""
         if self.conn:
             self.conn.close()
-    
+
     def __enter__(self):
         """Context manager entry."""
         return self
-    
+
     def __exit__(self, exc_type, exc_val, exc_tb):
         """Context manager exit."""
         self.close()
