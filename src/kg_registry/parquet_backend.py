@@ -389,9 +389,9 @@ class ParquetBackend:
 
             # Since table names are validated against a whitelist, it's safe to use them in SQL
             self.conn.execute(f"DROP TABLE IF EXISTS {table}")
-            # Use parameter for the file path which is user input
-            self.conn.execute(
-                f"CREATE TABLE {table} AS SELECT * FROM read_parquet(?)", [parquet_path])
+            # Properly escape the file path by doubling single quotes
+            query = f"CREATE TABLE {table} AS SELECT * FROM read_parquet('{parquet_path.replace('\'', '\'\'')}')"
+            self.conn.execute(query)
 
         return success
 
@@ -462,10 +462,11 @@ class DuckDBParquetQuerier:
                 
             parquet_path = os.path.join(self.parquet_dir, f"{table}.parquet")
             if os.path.exists(parquet_path):
-                # Since table names are validated against a whitelist, it's safe to use them in SQL
-                # Use parameter for the file path which is user input
-                self.conn.execute(
-                    f"CREATE VIEW {table} AS SELECT * FROM read_parquet(?)", [parquet_path])
+                # For table identifiers, we can't use parameterized queries
+                # Since we've validated the table name against a whitelist, it's safe to use in SQL
+                # But we can escape the path properly by using the DuckDB SQL syntax for strings
+                query = f"CREATE VIEW {table} AS SELECT * FROM read_parquet('{parquet_path.replace('\'', '\'\'')}')"
+                self.conn.execute(query)
             else:
                 print(f"Warning: {parquet_path} does not exist")
 
