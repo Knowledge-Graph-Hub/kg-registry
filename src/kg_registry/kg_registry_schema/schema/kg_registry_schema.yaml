@@ -1152,6 +1152,18 @@ enums:
           a file format and set of tools for managing complex data.
           It is designed to store and organize large amounts of data
           in a hierarchical structure, allowing for efficient access and manipulation.
+      psi_mi_xml:
+        description: >-
+          The PSI-MI XML format, which is a standard for representing
+          molecular interaction data in XML. It is used to exchange
+          information about molecular interactions between different databases.
+        meaning: https://www.psidev.info/psi-mi-xml-specification
+      psi_mi_mitab:
+        description: >-
+          The PSI-MI MITAB format, which is a tab-delimited format
+          for representing molecular interaction data. It is used to
+          exchange information about molecular interactions between different databases.
+        meaning: https://psicquic.github.io/MITAB28Format.html
       mixed:
         description: >-
           A product that contains multiple formats or serializations.
