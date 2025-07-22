@@ -546,7 +546,7 @@ def concat_resource_yaml(args):
         print("Resource Name\tCount of products referencing")
         for obj in objs:
             if obj["id"] in to_be_propagated:
-                print(f"{obj['id']}\t{len(to_be_propagated[obj["id"]])}")
+                print(f"{obj['id']}\t{len(to_be_propagated[obj['id']])}")
 
                 total_written = 0
 
