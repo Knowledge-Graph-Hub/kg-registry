@@ -1282,6 +1282,8 @@
                 "java",
                 "javascript",
                 "hdf5",
+                "psi_mi_xml",
+                "psi_mi_mitab",
                 "mixed"
             ],
             "title": "FormatEnum",
