@@ -26,7 +26,7 @@ contacts:
 - category: Individual
   label: Marc Vidal
   orcid: 0000-0002-9500-6065
-- category: Individual  
+- category: Individual
   label: Frederick P. Roth
 publications:
 - id: doi:10.1038/s41586-020-2188-x
