@@ -5,7 +5,6 @@ description: CORUM (Comprehensive Resource of Mammalian Protein Complexes) is a 
 domains:
 - proteomics
 - biomedical
-- cellular biology
 - chemistry and biochemistry
 homepage_url: https://mips.helmholtz-muenchen.de/corum/
 repository: https://mips.helmholtz-muenchen.de/corum/download

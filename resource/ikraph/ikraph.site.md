@@ -1,6 +1,8 @@
 ---
 category: GraphicalInterface
-description: Biomedical Knowledge Discovery Engine. Interface for iKraph
+description: Biomedical Knowledge Discovery Engine. Interface for iKraph with search,
+  visualization, and exploration capabilities.
+format: http
 id: ikraph.site
 name: BioKDE
 original_source:
