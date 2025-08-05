@@ -15,7 +15,7 @@ repository: https://github.com/hubmapconsortium
 id: hubmap
 layout: resource_detail
 name: HuBMAP
-creation_date: '2018-09-01T00:00:00Z'
+creation_date: '2025-08-05T00:00:00Z'
 last_modified_date: '2025-08-05T00:00:00Z'
 license:
   id: https://creativecommons.org/licenses/by/4.0/
