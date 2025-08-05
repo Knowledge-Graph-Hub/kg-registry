@@ -5,8 +5,6 @@ description: The Cell Ontology (CL) is a structured controlled vocabulary for ce
 domains:
 - anatomy and development
 - biomedical
-- cellular biology
-- bioinformatics
 homepage_url: https://cell-ontology.github.io/
 repository: https://github.com/obophenotype/cell-ontology
 id: cl
@@ -397,7 +395,7 @@ publications:
   - Christopher J Mungall
   doi: 10.1186/s13326-016-0088-7
   journal: Journal of Biomedical Semantics
-  year: 2016
+  year: "2016"
   preferred: true
 - id: doi:10.1186/1471-2105-12-6
   title: Logical development of the cell ontology
@@ -411,7 +409,7 @@ publications:
   - Alexander D Diehl
   doi: 10.1186/1471-2105-12-6
   journal: BMC Bioinformatics
-  year: 2011
+  year: "2011"
 - id: doi:10.1186/gb-2005-6-2-r21
   title: An ontology for cell types
   authors:
@@ -420,7 +418,7 @@ publications:
   - Michael Ashburner
   doi: 10.1186/gb-2005-6-2-r21
   journal: Genome Biology
-  year: 2005
+  year: "2005"
 ---
 
 # Cell Ontology (CL)
