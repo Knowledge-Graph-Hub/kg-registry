@@ -5,7 +5,8 @@ import sys
 import pathlib
 import requests
 import yaml
-from typing import Dict, Any, Optional, List
+import frontmatter
+from typing import Dict, Any, Optional, List, Tuple
 
 # Configuration
 REQUEST_TIMEOUT = 10  # seconds
@@ -95,7 +96,68 @@ def should_skip_product(product: Dict[str, Any]) -> bool:
         
     return False
 
-def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None) -> Dict[str, Any]:
+def write_file_sizes_to_resource_files(updated_products: Dict[str, List[Dict[str, Any]]]) -> None:
+    """
+    Write updated file sizes back to the original resource files.
+    
+    Args:
+        updated_products: Dictionary mapping resource_id to list of updated products
+    """
+    if not updated_products:
+        print("No file sizes to write back to resource files")
+        return
+        
+    print(f"\n💾 Writing file sizes back to {len(updated_products)} resource files...")
+    
+    for resource_id, products in updated_products.items():
+        resource_file = f"resource/{resource_id}/{resource_id}.md"
+        
+        try:
+            # Check if the resource file exists
+            if not pathlib.Path(resource_file).exists():
+                print(f"  ⚠️  Resource file not found: {resource_file}")
+                continue
+                
+            # Load the resource file
+            with open(resource_file, 'r', encoding='utf-8') as f:
+                post = frontmatter.load(f)
+                
+            metadata = post.metadata
+            content = post.content
+            
+            # Update products with file sizes
+            if 'products' not in metadata:
+                continue
+                
+            updated_count = 0
+            products_list = metadata.get('products')
+            if isinstance(products_list, list):
+                for product in products_list:
+                    if isinstance(product, dict) and 'id' in product:
+                        # Find matching updated product
+                        for updated_product in products:
+                            if updated_product.get('id') == product['id'] and 'product_file_size' in updated_product:
+                                # Only update if we don't already have a file size
+                                if 'product_file_size' not in product:
+                                    product['product_file_size'] = updated_product['product_file_size']
+                                    updated_count += 1
+                                
+            if updated_count > 0:
+                # Write back to file
+                with open(resource_file, 'w', encoding='utf-8') as f:
+                    f.write("---\n")
+                    yaml.dump(metadata, f, default_flow_style=False, allow_unicode=True)
+                    f.write("---\n")
+                    f.write(content)
+                    
+                print(f"  ✅ Updated {updated_count} products in {resource_file}")
+            else:
+                print(f"  ℹ️  No updates needed for {resource_file}")
+                
+        except Exception as e:
+            print(f"  ❌ Error updating {resource_file}: {str(e)}")
+
+def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None) -> Tuple[Dict[str, Any], Dict[str, List[Dict[str, Any]]]]:
     """
     Update product_file_size for all products in the registry data.
     
@@ -104,11 +166,11 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None)
         limit: Optional limit on number of products to process (for testing)
         
     Returns:
-        Updated registry data
+        Tuple of (updated registry data, dictionary of updated products by resource_id)
     """
     if 'resources' not in data:
         print("No resources found in data")
-        return data
+        return data, {}
         
     total_products = 0
     updated_products = 0
@@ -116,8 +178,15 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None)
     failed_products = 0
     processed_products = 0
     
+    # Track updated products by resource ID for writing back to files
+    updated_products_by_resource: Dict[str, List[Dict[str, Any]]] = {}
+    
     for resource in data['resources']:
         if 'products' not in resource:
+            continue
+            
+        resource_id = resource.get('id')
+        if not resource_id:
             continue
             
         for product in resource['products']:
@@ -146,6 +215,11 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None)
                     
                 product['product_file_size'] = file_size
                 updated_products += 1
+                
+                # Track this update for writing back to resource files
+                if resource_id not in updated_products_by_resource:
+                    updated_products_by_resource[resource_id] = []
+                updated_products_by_resource[resource_id].append(product.copy())
             else:
                 failed_products += 1
                 
@@ -160,7 +234,7 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None)
     print(f"   Skipped: {skipped_products}")
     print(f"   Failed: {failed_products}")
     
-    return data
+    return data, updated_products_by_resource
 
 def main():
     parser = argparse.ArgumentParser(
@@ -174,6 +248,10 @@ def main():
                        help="Show what would be updated without making changes")
     parser.add_argument("--limit", type=int, default=None,
                        help="Limit processing to first N products (for testing)")
+    parser.add_argument("--write-back", action="store_true", default=True,
+                       help="Write file sizes back to original resource files (default: True)")
+    parser.add_argument("--no-write-back", dest="write_back", action="store_false",
+                       help="Don't write file sizes back to original resource files")
     
     args = parser.parse_args()
     
@@ -192,7 +270,13 @@ def main():
         print(f"🔬 LIMIT MODE - Processing only first {args.limit} products")
         
     # Update file sizes
-    updated_data = update_product_file_sizes(data, limit=args.limit)
+    updated_data, updated_products_by_resource = update_product_file_sizes(data, limit=args.limit)
+    
+    # Write file sizes back to resource files (unless disabled or in dry-run mode)
+    if args.write_back and not args.dry_run and updated_products_by_resource:
+        write_file_sizes_to_resource_files(updated_products_by_resource)
+    elif args.dry_run and updated_products_by_resource:
+        print(f"\n🔍 DRY RUN: Would write file sizes back to {len(updated_products_by_resource)} resource files")
     
     if not args.dry_run:
         # Save updated data

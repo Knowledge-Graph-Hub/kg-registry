@@ -1,4 +1,26 @@
-# File Size Retrieval Implementation for KG-Registry
+# File Size Retrieval Implementation for KG-Regi### 4. File Size Per### 5. Layout Updates
+
+#### Product Detail Page (`_layouts/product_detail.html`)tence
+
+**New Feature**: The script now writes file sizes back to the original resource files in the `resource/` directory.
+
+**How it works**:
+1. After retrieving file sizes, the script updates the corresponding products in their resource files
+2. Only adds `product_file_size` field if it doesn't already exist (preserves manual edits)
+3. Uses the frontmatter library to properly parse and update YAML metadata
+4. Maintains file formatting and preserves content
+
+**Benefits**:
+- **Performance**: Subsequent builds skip products that already have file sizes
+- **Persistence**: File sizes are preserved across builds and git commits
+- **Transparency**: File sizes are visible in the source files for manual review
+- **Efficiency**: Dramatically reduces build time after initial run
+
+**Write-back behavior**:
+- Enabled by default (`--write-back`)
+- Can be disabled with `--no-write-back` flag
+- Skipped in dry-run mode
+- Only updates products that don't already have file sizestry
 
 ## Overview
 
@@ -17,17 +39,22 @@ This implementation adds automatic file size retrieval to the KG-Registry build 
 - Includes safety checks for file size limits (1GB max)
 - Supports dry-run mode and processing limits for testing
 - Provides detailed progress reporting
+- **Writes file sizes back to original resource files** to avoid re-fetching on subsequent builds
+- Skips products that already have file sizes populated
 
 **Usage**:
 ```bash
-# Process all products
+# Process all products and write back to resource files
 python util/retrieve-file-sizes.py input.yml output.yml
 
-# Dry run mode
+# Dry run mode (no changes written)
 python util/retrieve-file-sizes.py input.yml output.yml --dry-run
 
 # Limit processing for testing
 python util/retrieve-file-sizes.py input.yml output.yml --limit 50
+
+# Don't write back to resource files (temporary YAML only)
+python util/retrieve-file-sizes.py input.yml output.yml --no-write-back
 ```
 
 ### 2. Makefile Integration
@@ -101,7 +128,9 @@ The script handles various error conditions gracefully:
 - Implements connection timeouts to prevent hanging
 - Processes products sequentially to avoid overwhelming servers
 - Provides limit option for testing with subsets of data
-- Skips products that already have file sizes populated
+- **Skips products that already have file sizes populated** to avoid redundant network requests
+- **Writes file sizes back to original resource files** for persistence across builds
+- Intelligent caching: Once a file size is retrieved and written back, it won't be fetched again unless manually removed
 
 ## Testing
 
@@ -113,14 +142,27 @@ The implementation has been tested with:
 
 ## Build Process Integration
 
+The file size retrieval is now **persistent and efficient**:
+
+1. **First Run**: File sizes are retrieved from URLs and written to both:
+   - The temporary YAML files used in the build process
+   - The original resource `.md` files in the `resource/` directory
+
+2. **Subsequent Runs**: Products that already have `product_file_size` values are automatically skipped, making the build process much faster
+
 To build with file sizes:
 ```bash
 # Full build process (includes file size retrieval)
 make all
 
-# Just retrieve file sizes
+# Just retrieve file sizes (writes back to resource files)
 make tmp/unsorted-resources-with-sizes.yml
+
+# Force re-retrieval (remove existing file sizes first)
+# This would require manual editing or a separate cleanup script
 ```
+
+The build process now only fetches file sizes for **new products** or products that don't yet have file sizes, dramatically improving build performance after the initial run.
 
 ## Excluded Product Types
 

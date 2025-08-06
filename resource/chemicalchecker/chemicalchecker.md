@@ -3,15 +3,15 @@ activity_status: active
 category: DataSource
 contacts:
 - category: Individual
-  label: Miquel Duran
   contact_details:
   - contact_type: email
     value: miquel.duran@irbbarcelona.org
+  label: Miquel Duran
 - category: Individual
-  label: Patrick Aloy
   contact_details:
   - contact_type: email
     value: patrick.aloy@irbbarcelona.org
+  label: Patrick Aloy
 description: The Chemical Checker (CC) is a data-driven resource of small molecule
   bioactivity data, organized into five levels of increasing complexity, ranging from
   chemical properties to clinical outcomes. It is designed to support computational
@@ -83,6 +83,7 @@ products:
   - omnipath
   - string
   - bto
+  product_file_size: 5826
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   secondary_source:
   - bioteque

@@ -35,6 +35,7 @@ products:
   name: BKG Anatomy Nodes
   original_source:
   - uberon
+  product_file_size: 332
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.nodes.zip
   secondary_source:
   - biomarkerkg
@@ -46,6 +47,7 @@ products:
   name: BKG Biomarker Nodes
   original_source:
   - glygen
+  product_file_size: 1252064
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Biomarker.nodes.zip
   secondary_source:
   - biomarkerkg
