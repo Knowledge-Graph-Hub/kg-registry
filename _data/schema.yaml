@@ -269,6 +269,13 @@ classes:
           to download a specific file, a base URL to an API,
           or a link to a graphical interface.
         range: uriorcurie
+      product_file_size:
+        description: >-
+          The size of the product file, in bytes.
+          The build process will attempt to determine this
+          based on the file header and populate the metadata
+          where possible.
+        range: integer
       produced_by:
         description: >-
           The process(es) that produced the product,
