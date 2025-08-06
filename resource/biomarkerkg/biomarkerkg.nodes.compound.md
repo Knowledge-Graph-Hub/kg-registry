@@ -7,6 +7,7 @@ id: biomarkerkg.nodes.compound
 name: BKG Compound Nodes
 original_source:
 - pubchem
+product_file_size: 871
 product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Compound.nodes.zip
 secondary_source:
 - biomarkerkg

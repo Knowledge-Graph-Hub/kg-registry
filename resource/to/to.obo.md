@@ -29,6 +29,7 @@ original_source:
 - uberon
 - ogms
 - bfo
+product_file_size: 158383
 product_url: http://purl.obolibrary.org/obo/to.obo
 secondary_source:
 - to

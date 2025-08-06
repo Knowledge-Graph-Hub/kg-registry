@@ -8,6 +8,7 @@ id: ncbigene.gene_orthologs
 name: Gene Orthologs Data
 original_source:
 - ncbigene
+product_file_size: 108555140
 product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_orthologs.gz
 layout: product_detail
 ---

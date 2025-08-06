@@ -6,6 +6,7 @@ id: cellosaurus.txt
 name: Cellosaurus Text
 original_source:
 - cellosaurus
+product_file_size: 117036445
 product_url: https://ftp.expasy.org/databases/cellosaurus/cellosaurus.txt
 secondary_source:
 - cellosaurus

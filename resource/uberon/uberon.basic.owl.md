@@ -6,6 +6,7 @@ id: uberon.basic.owl
 name: UBERON Basic OWL release
 original_source:
 - uberon
+product_file_size: 50607670
 product_url: http://purl.obolibrary.org/obo/uberon/basic.owl
 secondary_source:
 - uberon

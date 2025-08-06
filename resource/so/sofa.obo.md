@@ -6,6 +6,7 @@ description: Sequence Ontology Feature Annotation (SOFA) subset in OBO format. T
 format: obo
 id: sofa.obo
 name: SOFA OBO
+product_file_size: 28214
 product_url: http://purl.obolibrary.org/obo/so/subsets/SOFA.obo
 layout: product_detail
 ---

@@ -8,6 +8,7 @@ license:
   id: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
 name: PATO Base OWL
+product_file_size: 180954
 product_url: http://purl.obolibrary.org/obo/pato/pato-base.owl
 layout: product_detail
 ---

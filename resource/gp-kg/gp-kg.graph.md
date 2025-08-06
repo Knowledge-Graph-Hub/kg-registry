@@ -7,6 +7,7 @@ name: GP-KG
 node_count: 61146
 original_source:
 - gp-kg
+product_file_size: 48397035
 product_url: http://nlp.case.edu/public/data/GPKG-Predict/data/GP_KG.txt
 secondary_source:
 - gp-kg

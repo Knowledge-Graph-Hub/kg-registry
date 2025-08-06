@@ -9,6 +9,7 @@ license:
 name: cgnc OBO Graph JSON
 original_source:
 - cgnc
+product_file_size: 861880
 product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.json
 secondary_source:
 - obo-db-ingest

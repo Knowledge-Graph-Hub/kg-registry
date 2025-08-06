@@ -7,6 +7,7 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: eccode SSSOM
+product_file_size: 8840
 product_url: https://w3id.org/biopragmatics/resources/eccode/eccode.sssom.tsv
 layout: product_detail
 ---

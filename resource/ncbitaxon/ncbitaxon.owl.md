@@ -7,6 +7,7 @@ id: ncbitaxon.owl
 name: NCBI Taxonomy OWL
 original_source:
 - ncbitaxon
+product_file_size: 1646833334
 product_url: http://purl.obolibrary.org/obo/ncbitaxon.owl
 layout: product_detail
 ---

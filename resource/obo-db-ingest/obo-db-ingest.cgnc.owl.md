@@ -9,6 +9,7 @@ license:
 name: cgnc OWL
 original_source:
 - cgnc
+product_file_size: 911421
 product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.owl
 secondary_source:
 - obo-db-ingest

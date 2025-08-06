@@ -23,6 +23,7 @@ original_source:
 - gtopdb
 - rtx-kg2
 - semmeddb
+product_file_size: 376501785
 product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
 secondary_source:
 - rtx-kg2

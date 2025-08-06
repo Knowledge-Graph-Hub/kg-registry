@@ -6,6 +6,7 @@ description: Sequence Ontology Feature Annotation (SOFA) subset in OWL format. T
 format: owl
 id: sofa.owl
 name: SOFA OWL
+product_file_size: 43355
 product_url: http://purl.obolibrary.org/obo/so/subsets/SOFA.owl
 layout: product_detail
 ---

@@ -5,6 +5,7 @@ id: mixs.model
 name: MIxS OWL release
 original_source:
 - mixs
+product_file_size: 154279
 product_url: https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/refs/heads/main/project/owl/mixs.owl.ttl
 secondary_source:
 - mixs

@@ -7,6 +7,7 @@ id: orthodb.cds_fasta
 name: OrthoDB CDS Sequences
 original_source:
 - orthodb
+product_file_size: 57560209301
 product_url: https://data.orthodb.org/current/download/odb12v1_cds_fasta.gz
 secondary_source:
 - orthodb

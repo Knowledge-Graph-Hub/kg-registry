@@ -5,5 +5,8 @@ description: All cell markers of different cell types from different tissues in 
 id: cellmarker.all
 name: All Cell Markers
 product_url: http://xteam.xbio.top/download/all_cell_markers.txt
+warnings:
+- 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
+  to URL'
 layout: product_detail
 ---

@@ -9,6 +9,7 @@ license:
 name: rhea OBO
 original_source:
 - rhea
+product_file_size: 4826502
 product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.obo
 secondary_source:
 - obo-db-ingest

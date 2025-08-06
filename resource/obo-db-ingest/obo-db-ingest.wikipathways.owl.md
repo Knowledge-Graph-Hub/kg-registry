@@ -7,6 +7,7 @@ license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0-1.0
 name: wikipathways OWL
+product_file_size: 495634
 product_url: https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.owl
 layout: product_detail
 ---

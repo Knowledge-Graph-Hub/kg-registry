@@ -6,6 +6,7 @@ description: Tab-separated file containing all side effects extracted from drug 
 format: tsv
 id: sider.meddra_all_se
 name: SIDER MedDRA All Side Effects
+product_file_size: 2381171
 product_url: http://sideeffects.embl.de/media/download/meddra_all_se.tsv.gz
 layout: product_detail
 ---

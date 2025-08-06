@@ -9,6 +9,7 @@ license:
 name: pharmgkb.pathways OBO Graph JSON
 original_source:
 - pharmgkb
+product_file_size: 2947
 product_url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.json
 secondary_source:
 - obo-db-ingest

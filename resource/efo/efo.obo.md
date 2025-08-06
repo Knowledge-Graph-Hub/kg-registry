@@ -48,6 +48,7 @@ original_source:
 - uo
 - wbls
 - zfa
+product_file_size: 64058275
 product_url: https://www.ebi.ac.uk/efo/efo.obo
 secondary_source:
 - efo

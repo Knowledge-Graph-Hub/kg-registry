@@ -9,6 +9,7 @@ license:
 name: ZFIN gene to publication
 original_source:
 - zfin
+product_file_size: 39531152
 product_url: https://zfin.org/downloads/gene_publication.txt
 secondary_source:
 - zfin

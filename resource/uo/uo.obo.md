@@ -6,6 +6,7 @@ id: uo.obo
 name: UO OBO
 original_source:
 - uo
+product_file_size: 19376
 product_url: http://purl.obolibrary.org/obo/uo.obo
 layout: product_detail
 ---

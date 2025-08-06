@@ -9,6 +9,7 @@ license:
 name: bigg.reaction OBO
 original_source:
 - bigg
+product_file_size: 1195491
 product_url: https://w3id.org/biopragmatics/resources/bigg.reaction/bigg.reaction.obo
 secondary_source:
 - obo-db-ingest

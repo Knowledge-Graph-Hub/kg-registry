@@ -9,5 +9,8 @@ original_source:
 product_url: http://purl.obolibrary.org/obo/chr.owl
 secondary_source:
 - chr
+warnings:
+- 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error when
+  accessing file'
 layout: product_detail
 ---

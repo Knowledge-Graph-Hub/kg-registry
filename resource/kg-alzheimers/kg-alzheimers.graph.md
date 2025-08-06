@@ -7,6 +7,7 @@ id: kg-alzheimers.graph
 name: KGX Distribution of KG-Alzheimers
 original_source:
 - kg-alzheimers
+product_file_size: 210868256
 product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
 secondary_source:
 - kg-alzheimers

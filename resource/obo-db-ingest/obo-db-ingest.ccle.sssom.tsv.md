@@ -9,6 +9,7 @@ license:
 name: ccle SSSOM
 original_source:
 - ccle
+product_file_size: 14414
 product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.sssom.tsv
 secondary_source:
 - obo-db-ingest

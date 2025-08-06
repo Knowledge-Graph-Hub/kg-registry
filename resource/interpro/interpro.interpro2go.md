@@ -7,6 +7,7 @@ name: InterPro to GO Mappings
 original_source:
 - go
 - interpro
+product_file_size: 3088718
 product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go
 secondary_source:
 - interpro

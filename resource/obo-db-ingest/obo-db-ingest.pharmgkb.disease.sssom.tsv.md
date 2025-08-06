@@ -9,6 +9,7 @@ license:
 name: pharmgkb.disease SSSOM
 original_source:
 - pharmgkb
+product_file_size: 62271
 product_url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.sssom.tsv
 secondary_source:
 - obo-db-ingest

@@ -11,6 +11,7 @@ name: PomBase to UniProt map
 original_source:
 - uniprot
 - pombase
+product_file_size: 27617
 product_url: https://www.pombase.org/data/names_and_identifiers/PomBase2UniProt.tsv
 secondary_source:
 - pombase

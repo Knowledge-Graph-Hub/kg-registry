@@ -6,6 +6,7 @@ id: skm.pss.live.sbgn
 name: PSS Live Download (SBGN-ML)
 original_source:
 - skm
+product_file_size: 3204548
 product_url: https://skm.nib.si/downloads/pss/public/sbgn
 layout: product_detail
 ---

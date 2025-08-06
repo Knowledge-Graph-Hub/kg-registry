@@ -7,6 +7,7 @@ license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0-1.0
 name: pfam OBO Graph JSON
+product_file_size: 595575
 product_url: https://w3id.org/biopragmatics/resources/pfam/pfam.json
 layout: product_detail
 ---

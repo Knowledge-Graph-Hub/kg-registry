@@ -7,6 +7,7 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: geonames.feature OBO
+product_file_size: 22380
 product_url: https://w3id.org/biopragmatics/resources/geonames.feature/geonames.feature.obo
 layout: product_detail
 ---

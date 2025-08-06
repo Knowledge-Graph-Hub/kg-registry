@@ -7,6 +7,7 @@ id: orthodb.ogs
 name: OrthoDB Orthologous Groups
 original_source:
 - orthodb
+product_file_size: 145213387
 product_url: https://data.orthodb.org/current/download/odb12v1_OGs.tab.gz
 secondary_source:
 - orthodb

@@ -7,6 +7,7 @@ id: kgcl.model.owl
 name: Knowledge Graph Change Language OWL release
 original_source:
 - kgcl
+product_file_size: 11700
 product_url: https://w3id.org/kgcl/kgcl.owl.ttl
 secondary_source:
 - kgcl

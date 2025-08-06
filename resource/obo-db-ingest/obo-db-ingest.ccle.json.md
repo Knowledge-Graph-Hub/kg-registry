@@ -9,6 +9,7 @@ license:
 name: ccle OBO Graph JSON
 original_source:
 - ccle
+product_file_size: 23282
 product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.json
 secondary_source:
 - obo-db-ingest

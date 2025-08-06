@@ -8,5 +8,8 @@ license:
   label: Custom
 name: clinicaltrials OBO
 product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo
+warnings:
+- 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error when
+  accessing file'
 layout: product_detail
 ---

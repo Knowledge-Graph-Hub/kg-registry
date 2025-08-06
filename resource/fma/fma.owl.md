@@ -6,6 +6,7 @@ id: fma.owl
 name: FMA OWL
 original_source:
 - fma
+product_file_size: 66368046
 product_url: http://purl.obolibrary.org/obo/fma.owl
 layout: product_detail
 ---

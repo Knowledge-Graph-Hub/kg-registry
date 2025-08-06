@@ -8,6 +8,7 @@ original_source:
 - ncbigene
 - medgen
 - omim
+product_file_size: 954971
 product_url: https://ftp.ncbi.nih.gov/gene/DATA/mim2gene_medgen
 layout: product_detail
 ---

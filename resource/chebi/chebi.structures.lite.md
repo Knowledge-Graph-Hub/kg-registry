@@ -11,6 +11,7 @@ license:
 name: ChEBI structures (lite)
 original_source:
 - chebi
+product_file_size: 17128008
 product_url: https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/ChEBI_lite_3star.sdf.gz
 secondary_source:
 - chebi

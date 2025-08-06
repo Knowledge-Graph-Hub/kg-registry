@@ -10,6 +10,7 @@ name: MIND Relations Dictionary
 original_source:
 - drugcentral
 - mechreponet
+product_file_size: 1648
 product_url: https://zenodo.org/records/8117748/files/relations.dict
 secondary_source:
 - mind

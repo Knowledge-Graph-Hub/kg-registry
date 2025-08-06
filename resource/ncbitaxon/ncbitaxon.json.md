@@ -6,6 +6,7 @@ id: ncbitaxon.json
 name: NCBI Taxonomy JSON
 original_source:
 - ncbitaxon
+product_file_size: 1948965918
 product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
 layout: product_detail
 ---

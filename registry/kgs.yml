@@ -3227,6 +3227,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+      header found'
   - category: Product
     description: Cell markers of different cell types from different tissues in mouse
     id: cellmarker.mouse
@@ -3235,6 +3237,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+      header found'
   - category: Product
     description: Cell markers derived from single-cell sequencing researches in human
       and mouse
@@ -3244,6 +3248,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+      header found'
   - category: Product
     description: All cell markers of different cell types from different tissues in
       human and mouse
@@ -3253,6 +3259,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+      header found'
   - category: GraphicalInterface
     description: ACT is a tool that makes cell type annotation easier by integrating
       the CellMarker resource.
@@ -6718,6 +6726,11 @@ resources:
       Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
+    - 'File was not able to be retrieved when checked on 2025-08-06: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused
+      by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
+      verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
   - category: Product
     description: Core dataset of manually curated, non-redundant protein complexes
       in CORUM in tab-delimited format
@@ -6734,6 +6747,11 @@ resources:
       Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
+    - 'File was not able to be retrieved when checked on 2025-08-06: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
+      by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
+      verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
   - category: Product
     description: Dataset of all CORUM protein complexes in PSI-MI XML format (Proteomics
       Standards Initiative)
@@ -6750,6 +6768,11 @@ resources:
       Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1000)'')))'
+    - 'File was not able to be retrieved when checked on 2025-08-06: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
+      ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
+      local issuer certificate (_ssl.c:1017)'')))'
   - category: Product
     description: Dataset of all CORUM protein complexes in PSI-MI MITAB 2.5 format
     format: psi_mi_mitab
@@ -6765,6 +6788,11 @@ resources:
       Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1000)'')))'
+    - 'File was not able to be retrieved when checked on 2025-08-06: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
+      ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
+      local issuer certificate (_ssl.c:1017)'')))'
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
       entities and their associations
@@ -11918,6 +11946,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+      header found'
   - category: Product
     compression: targz
     description: Complete FooDB database in XML format
@@ -11928,6 +11958,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Complete FooDB database in JSON format
@@ -11938,6 +11970,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+      header found'
   - category: Product
     compression: targz
     description: Complete FooDB database as MySQL dump
@@ -11947,6 +11981,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Experimental C-MS Spectra data from FooDB
@@ -11956,6 +11992,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Predicted C-MS Spectra data from FooDB
@@ -11965,6 +12003,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Experimental MS-MS Spectra data from FooDB
@@ -27349,6 +27389,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+      when accessing file'
   - category: Product
     description: OMA orthology groups in OrthoXML format
     format: xml
@@ -27417,6 +27459,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: cDNA sequences for Prokaryotic genomes in FASTA format
@@ -27431,6 +27475,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error
+      when accessing file'
   - category: Product
     description: OMA Browser database in HDF5 format
     id: oma.hdf5
@@ -27442,6 +27488,8 @@ resources:
     - oma
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -27457,6 +27505,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error
+      when accessing file'
   - category: MappingProduct
     compression: gzip
     description: Mapping of OMA identifiers to UniProt accession numbers
@@ -27471,6 +27521,8 @@ resources:
     - oma
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error
       when accessing file'
 - activity_status: active
   category: DataSource
@@ -30443,6 +30495,7 @@ resources:
     format: tsv
     id: pharmgkb.automatedannotations
     name: PharmKB Automated Annotations
+    product_file_size: 1881822
     product_url: https://api.pharmgkb.org/v1/download/file/data/automated_annotations.zip
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
@@ -30453,6 +30506,7 @@ resources:
     format: tsv
     id: pharmgkb.genes
     name: PharmKB Genes
+    product_file_size: 2901222
     product_url: https://api.pharmgkb.org/v1/download/file/data/genes.zip
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
@@ -30472,6 +30526,7 @@ resources:
     format: tsv
     id: pharmgkb.drugs
     name: PharmKB Drugs
+    product_file_size: 717666
     product_url: https://api.pharmgkb.org/v1/download/file/data/drugs.zip
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
@@ -30482,6 +30537,7 @@ resources:
     format: tsv
     id: pharmgkb.chemicals
     name: PharmKB Chemicals
+    product_file_size: 836804
     product_url: https://api.pharmgkb.org/v1/download/file/data/chemicals.zip
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
@@ -30499,6 +30555,7 @@ resources:
     format: csv
     id: pharmgkb.papers
     name: PharmKB Papers of Interest Archive
+    product_file_size: 126005
     product_url: https://api.pharmgkb.org/v1/download/file/attachment/PapersOfInterestArchive.csv
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
@@ -30509,6 +30566,7 @@ resources:
     format: tsv
     id: pharmgkb.haplotypefrequencies.ukbb
     name: PharmKB UK Biobank Frequencies
+    product_file_size: 30925
     product_url: https://api.pharmgkb.org/v1/download/file/data/pharmgkb_haplotype_frequencies_UKBB.zip
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
@@ -36990,6 +37048,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.

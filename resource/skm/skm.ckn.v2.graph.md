@@ -9,6 +9,7 @@ name: CKN v2 (June 2023)
 node_count: 26234
 original_source:
 - skm
+product_file_size: 2732107
 product_url: https://skm.nib.si/downloads/ckn/v2-2023.06
 layout: product_detail
 ---

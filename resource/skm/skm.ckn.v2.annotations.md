@@ -7,6 +7,7 @@ id: skm.ckn.v2.annotations
 name: CKN v2 (June 2023), node annotations
 original_source:
 - skm
+product_file_size: 885747
 product_url: https://skm.nib.si/downloads/ckn-annot/v2-2023.06
 layout: product_detail
 ---

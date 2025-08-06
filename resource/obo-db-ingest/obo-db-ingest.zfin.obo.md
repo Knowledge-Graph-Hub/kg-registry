@@ -9,6 +9,7 @@ license:
 name: zfin OBO
 original_source:
 - zfin
+product_file_size: 2643947
 product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
 secondary_source:
 - obo-db-ingest

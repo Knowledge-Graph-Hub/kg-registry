@@ -8,6 +8,7 @@ id: interpro.xml
 name: InterPro XML
 original_source:
 - interpro
+product_file_size: 40445027
 product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro.xml.gz
 layout: product_detail
 ---

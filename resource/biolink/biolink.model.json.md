@@ -10,6 +10,7 @@ latest_version: v4.2.6-rc5
 name: Biolink Model JSON release
 original_source:
 - biolink
+product_file_size: 138288
 product_url: https://w3id.org/biolink/biolink-model.json
 secondary_source:
 - biolink

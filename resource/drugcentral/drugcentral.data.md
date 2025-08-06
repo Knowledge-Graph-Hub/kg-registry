@@ -7,6 +7,7 @@ id: drugcentral.data
 name: DrugCentral Database dump
 original_source:
 - drugcentral
+product_file_size: 1400714190
 product_url: https://unmtid-dbs.net/download/drugcentral.dump.11012023.sql.gz
 secondary_source:
 - drugcentral

@@ -7,6 +7,7 @@ id: hra-kg.graph.nt
 name: HRA KG graph data, v2.2, N-Triples format
 original_source:
 - hra-kg
+product_file_size: 291382102
 product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.nt
 secondary_source:
 - hra-kg

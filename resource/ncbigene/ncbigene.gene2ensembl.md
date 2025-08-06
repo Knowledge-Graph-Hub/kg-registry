@@ -9,6 +9,7 @@ name: Gene to Ensembl Mapping
 original_source:
 - ensembl
 - ncbigene
+product_file_size: 282824267
 product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2ensembl.gz
 layout: product_detail
 ---
