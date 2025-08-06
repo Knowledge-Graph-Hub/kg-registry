@@ -97,7 +97,7 @@ _config.yml: _config_header.yml registry/kgs.yml
 
 # Sort resources based on the validation (metadata-grid)
 registry/kgs.yml: reports/metadata-grid.csv
-	./util/sort-resources.py tmp/unsorted-resources.yml $< $@ && rm -rf tmp
+	./util/sort-resources.py tmp/unsorted-resources-with-sizes.yml $< $@ && rm -rf tmp
 
 # Sync to duckdb database
 registry/kg_registry.duckdb: registry/kgs.yml
@@ -130,7 +130,7 @@ registry/kgs.jsonld: registry/kgs.yml
 # generate both a report of the violations and a grid of all results
 # the grid is later used to sort the resources on the home page
 RESULTS = reports/metadata-violations.tsv reports/metadata-grid.csv
-reports/metadata-grid.csv: tmp/unsorted-resources.yml | extract-metadata reports
+reports/metadata-grid.csv: tmp/unsorted-resources-with-sizes.yml | extract-metadata reports
 	./util/validate-metadata.py $< $(RESULTS)
 
 # generate an HTML output of the metadata grid
@@ -144,6 +144,10 @@ reports/metadata-grid.html: reports/metadata-grid.csv
 # But don't show the whole command because it is very long
 tmp/unsorted-resources.yml: $(RESOURCES) | tmp
 	@./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
+
+# Retrieve file sizes for products with URLs and update product_file_size field
+tmp/unsorted-resources-with-sizes.yml: tmp/unsorted-resources.yml
+	$(RUN) python util/retrieve-file-sizes.py $< $@.tmp && mv $@.tmp $@
 
 # Run validation, including with LinkML validator
 # But don't show the whole command because it is very long
