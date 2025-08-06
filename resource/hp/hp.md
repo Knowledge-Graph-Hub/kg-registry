@@ -33,6 +33,7 @@ products:
   name: Human Phenotype Ontology OWL release
   original_source:
   - hp
+  product_file_size: 75240038
   product_url: http://purl.obolibrary.org/obo/hp.owl
   secondary_source:
   - hp
@@ -43,6 +44,7 @@ products:
   name: Human Phenotype Ontology OBO release
   original_source:
   - hp
+  product_file_size: 10151040
   product_url: http://purl.obolibrary.org/obo/hp.obo
   secondary_source:
   - hp
@@ -65,6 +67,7 @@ products:
   - do
   - hp
   - mondo
+  product_file_size: 363367
   product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
   secondary_source:
   - drug-approvals-kp
@@ -78,6 +81,7 @@ products:
   - do
   - hp
   - mondo
+  product_file_size: 363367
   product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
   secondary_source:
   - drug-approvals-kp
@@ -90,6 +94,7 @@ products:
   - do
   - hp
   - hgnc
+  product_file_size: 1437457
   product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
   secondary_source:
   - mondo
@@ -243,6 +248,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -269,6 +275,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -349,6 +356,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -401,6 +409,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo

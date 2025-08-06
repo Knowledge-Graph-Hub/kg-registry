@@ -31,6 +31,7 @@ products:
   name: hgnc OBO
   original_source:
   - hgnc
+  product_file_size: 4253807
   product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo
   secondary_source:
   - obo-db-ingest
@@ -47,6 +48,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl
   secondary_source:
   - obo-db-ingest
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: Product
   description: hgnc OBO Graph JSON
   format: json
@@ -60,6 +64,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.json
   secondary_source:
   - obo-db-ingest
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: MappingProduct
   description: hgnc SSSOM
   id: obo-db-ingest.hgnc.sssom.tsv
@@ -69,6 +76,7 @@ products:
   name: hgnc SSSOM
   original_source:
   - hgnc
+  product_file_size: 1816550
   product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
   secondary_source:
   - obo-db-ingest
@@ -82,6 +90,7 @@ products:
   name: hgnc.genegroup OBO
   original_source:
   - hgnc
+  product_file_size: 185057
   product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.obo
   secondary_source:
   - obo-db-ingest
@@ -95,6 +104,7 @@ products:
   name: hgnc.genegroup OWL
   original_source:
   - hgnc
+  product_file_size: 231939
   product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.owl
   secondary_source:
   - obo-db-ingest
@@ -108,6 +118,7 @@ products:
   name: hgnc.genegroup OBO Graph JSON
   original_source:
   - hgnc
+  product_file_size: 207059
   product_url: https://w3id.org/biopragmatics/resources/hgnc.genegroup/hgnc.genegroup.json
   secondary_source:
   - obo-db-ingest
@@ -130,6 +141,9 @@ products:
   repository: https://github.com/elsevier-health/scibite-ontology
   secondary_source:
   - scibite
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
   format: sssom
@@ -139,6 +153,7 @@ products:
   - do
   - hp
   - hgnc
+  product_file_size: 1437457
   product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
   secondary_source:
   - mondo

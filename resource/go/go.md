@@ -7,10 +7,10 @@ contacts:
   - contact_type: email
     value: help@geneontology.org
   label: Gene Ontology Helpdesk
-description: "The Gene Ontology resource, the world\u2019s largest source of information\
-  \ on the functions of genes. This knowledge is both human-readable and machine-readable,\
-  \ and is a foundation for computational analysis of large-scale molecular biology\
-  \ and genetics experiments in biomedical research."
+description: The Gene Ontology resource, the world’s largest source of information
+  on the functions of genes. This knowledge is both human-readable and machine-readable,
+  and is a foundation for computational analysis of large-scale molecular biology
+  and genetics experiments in biomedical research.
 domains:
 - biological systems
 homepage_url: https://geneontology.org/
@@ -32,6 +32,7 @@ products:
   original_source:
   - bigg
   - go
+  product_file_size: 242
   product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
   secondary_source:
   - obo-db-ingest
@@ -43,6 +44,7 @@ products:
   original_source:
   - go
   - interpro
+  product_file_size: 3088718
   product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go
   secondary_source:
   - interpro
@@ -94,6 +96,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -120,6 +123,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -261,6 +265,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -313,6 +318,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
@@ -392,6 +398,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 212124
   product_url: http://purl.obolibrary.org/obo/to.owl
   secondary_source:
   - to
@@ -431,6 +438,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 158383
   product_url: http://purl.obolibrary.org/obo/to.obo
   secondary_source:
   - to
@@ -470,6 +478,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 111996
   product_url: http://purl.obolibrary.org/obo/to/subsets/to-basic.obo
   secondary_source:
   - to
@@ -489,6 +498,7 @@ products:
   original_source:
   - go
   - ncbigene
+  product_file_size: 1223833668
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2go.gz
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
@@ -650,7 +660,7 @@ publications:
   - Tutaj MA
   - Vedi M
   - Wang S-J
-  - "D\u2019Eustachio PD"
+  - D’Eustachio PD
   - Aimo L
   - Axelsen K
   - Bridge A

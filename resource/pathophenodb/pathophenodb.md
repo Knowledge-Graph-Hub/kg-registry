@@ -36,6 +36,7 @@ products:
   name: PathoPhenoDB RDF data, version 3
   original_source:
   - pathophenodb
+  product_file_size: 203836895
   product_url: http://patho.phenomebrowser.net/media/downloads/patho_pheno_withsymbols.nt
 - category: GraphicalInterface
   description: Web interface for querying and browsing PathoPhenoDB data
@@ -89,7 +90,7 @@ products:
   - spoke
 publications:
 - authors:
-  - "\u015Eenay Kafkas"
+  - Şenay Kafkas
   - Marwa Abdelhakim
   - Yasmeen Hashish
   - Maxat Kulmanov

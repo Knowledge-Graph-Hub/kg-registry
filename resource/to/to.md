@@ -10,7 +10,7 @@ contacts:
     value: jaiswalp
   label: Pankaj Jaiswal
   orcid: 0000-0002-1005-8383
-creation_date: "2025-07-10"
+creation_date: '2025-07-10'
 description: A controlled vocabulary to describe phenotypic traits in plants. Each
   trait is a distinguishable feature, characteristic, quality or phenotypic feature
   of a developing or mature plant.
@@ -19,7 +19,7 @@ domains:
 - biomedical
 homepage_url: http://browser.planteome.org/amigo/term/TO:0000387
 id: to
-last_modified_date: "2025-07-10"
+last_modified_date: '2025-07-10'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -56,6 +56,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 212124
   product_url: http://purl.obolibrary.org/obo/to.owl
   secondary_source:
   - to
@@ -95,6 +96,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 158383
   product_url: http://purl.obolibrary.org/obo/to.obo
   secondary_source:
   - to
@@ -134,6 +136,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 111996
   product_url: http://purl.obolibrary.org/obo/to/subsets/to-basic.obo
   secondary_source:
   - to
@@ -192,6 +195,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -244,6 +248,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
@@ -251,7 +256,7 @@ publications:
 - authors:
   - Laurel Cooper
   - Austin Meier
-  - "Marie-Ang\xE9lique Laporte"
+  - Marie-Angélique Laporte
   - Justin L. Elser
   - Chris Mungall
   - Brandon T. Sinn
@@ -274,7 +279,7 @@ publications:
   preferred: true
   title: The Planteome database - an integrated resource for reference ontologies,
     plant genomics and phenomics
-  year: "2018"
+  year: '2018'
 repository: https://github.com/Planteome/plant-trait-ontology
 usages:
 - description: Planteome uses TO to describe traits for genes and germplasm

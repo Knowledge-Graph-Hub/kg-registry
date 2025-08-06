@@ -28,6 +28,7 @@ products:
   name: KG-Microbe UniProt microbe transform
   original_source:
   - uniprot
+  product_file_size: 4796343398
   product_url: https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
   secondary_source:
   - kg-microbe
@@ -39,6 +40,7 @@ products:
   name: Reviewed (Swiss-Prot) XML
   original_source:
   - uniprot
+  product_file_size: 925893980
   product_url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.xml.gz
   secondary_source:
   - uniprot
@@ -50,6 +52,7 @@ products:
   name: Reviewed (Swiss-Prot) FASTA
   original_source:
   - uniprot
+  product_file_size: 93100075
   product_url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
   secondary_source:
   - uniprot
@@ -61,6 +64,7 @@ products:
   name: Unreviewed (TrEMBL) XML
   original_source:
   - uniprot
+  product_file_size: 243378751330
   product_url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.xml.gz
   secondary_source:
   - uniprot
@@ -72,6 +76,7 @@ products:
   name: Unreviewed (TrEMBL) FASTA
   original_source:
   - uniprot
+  product_file_size: 63579343267
   product_url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.fasta.gz
   secondary_source:
   - uniprot
@@ -91,6 +96,9 @@ products:
   product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
   secondary_source:
   - pombase
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+    header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
     protein-coding gene mapped to the corresponding UniProt accession number
@@ -103,6 +111,7 @@ products:
   original_source:
   - uniprot
   - pombase
+  product_file_size: 27617
   product_url: https://www.pombase.org/data/names_and_identifiers/PomBase2UniProt.tsv
   secondary_source:
   - pombase
@@ -114,6 +123,7 @@ products:
   original_source:
   - chembl
   - uniprot
+  product_file_size: 1012901
   product_url: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_uniprot_mapping.txt
   secondary_source:
   - chembl
@@ -129,6 +139,9 @@ products:
   product_url: https://omabrowser.org/oma/current/oma-uniprot.txt.gz
   secondary_source:
   - oma
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
+    to URL'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -322,6 +335,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -348,6 +362,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -413,6 +428,7 @@ products:
   - refseq
   - ncbigene
   - uniprot
+  product_file_size: 1182285769
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_refseq_uniprotkb_collab.gz
 repository: https://www.uniprot.org/help/downloads
 ---

@@ -1,7 +1,19 @@
 ---
 activity_status: active
 category: Aggregator
-description: The Human BioMolecular Atlas Program (HuBMAP) is a transformative NIH Common Fund initiative dedicated to creating an open, global atlas of the human body at the cellular level. HuBMAP develops the tools, technology, and infrastructure needed to map healthy human tissues in unprecedented molecular detail.
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://hubmapconsortium.org/
+  - contact_type: email
+    value: help@hubmapconsortium.org
+  label: HuBMAP Consortium
+creation_date: '2025-08-05T00:00:00Z'
+description: The Human BioMolecular Atlas Program (HuBMAP) is a transformative NIH
+  Common Fund initiative dedicated to creating an open, global atlas of the human
+  body at the cellular level. HuBMAP develops the tools, technology, and infrastructure
+  needed to map healthy human tissues in unprecedented molecular detail.
 domains:
 - biomedical
 - anatomy and development
@@ -11,62 +23,36 @@ domains:
 - genomics
 - systems biology
 homepage_url: https://hubmapconsortium.org/
-repository: https://github.com/hubmapconsortium
 id: hubmap
-layout: resource_detail
-name: HuBMAP
-creation_date: '2025-08-05T00:00:00Z'
 last_modified_date: '2025-08-05T00:00:00Z'
+layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
-contacts:
-- category: Organization
-  label: HuBMAP Consortium
-  contact_details:
-  - contact_type: url
-    value: https://hubmapconsortium.org/
-  - contact_type: email
-    value: help@hubmapconsortium.org
-publications:
-- id: doi:10.1038/s41592-025-02120-1
-  title: "Human BioMolecular Atlas Program (HuBMAP): 3D Human Reference Atlas Construction and Usage"
-  authors:
-  - Katy Börner
-  - et al.
-  doi: 10.1038/s41592-025-02120-1
-  journal: Nature Methods
-  year: "2025"
-  preferred: true
-- id: doi:10.1038/s41592-024-02497-x
-  title: "Vitessce: integrative visualization of multimodal and spatially-resolved single-cell data"
-  authors:
-  - Mark S Keller
-  - et al.
-  doi: 10.1038/s41592-024-02497-x
-  journal: Nature Methods
-  year: "2024"
+name: HuBMAP
 products:
 - category: Product
-  description: HuBMAP Data Portal providing access to standardized single-cell and spatial tissue data from human donors
-  id: hubmap.data_portal
-  name: HuBMAP Data Portal
+  description: HuBMAP Data Portal providing access to standardized single-cell and
+    spatial tissue data from human donors
   format: mixed
-  product_url: https://portal.hubmapconsortium.org/
+  id: hubmap.data_portal
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
+  name: HuBMAP Data Portal
+  product_url: https://portal.hubmapconsortium.org/
 - category: Product
   description: Human Reference Atlas providing atlas data and reference functionality
-  id: hubmap.human_reference_atlas
-  name: Human Reference Atlas
   format: mixed
-  product_url: https://humanatlas.io/
+  id: hubmap.human_reference_atlas
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
+  name: Human Reference Atlas
+  product_url: https://humanatlas.io/
 - category: GraphicalInterface
-  description: Interactive data visualization tool for spatial and single-cell multimodal datasets
+  description: Interactive data visualization tool for spatial and single-cell multimodal
+    datasets
   id: hubmap.vitessce
   name: Vitessce
   product_url: https://vitessce.io/
@@ -81,7 +67,8 @@ products:
   name: Azimuth
   product_url: https://azimuth.hubmapconsortium.org/
 - category: GraphicalInterface
-  description: Functional Unit State Identification and Navigation with Whole Slide Imaging
+  description: Functional Unit State Identification and Navigation with Whole Slide
+    Imaging
   id: hubmap.fusion
   name: FUSION
   product_url: http://fusion.hubmapconsortium.org/
@@ -90,6 +77,9 @@ products:
   id: hubmap.antibody_validation_reports
   name: Antibody Validation Reports
   product_url: https://avr.hubmapconsortium.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 401 error
+    when accessing file'
 - category: Product
   description: Data submission portal for registering and ingesting consortium data
   id: hubmap.data_ingest_portal
@@ -220,6 +210,27 @@ products:
   - biomarker
   - opentargets
   product_url: https://ubkg-downloads.xconsortia.org/
+publications:
+- authors:
+  - Katy Börner
+  - et al.
+  doi: 10.1038/s41592-025-02120-1
+  id: doi:10.1038/s41592-025-02120-1
+  journal: Nature Methods
+  preferred: true
+  title: 'Human BioMolecular Atlas Program (HuBMAP): 3D Human Reference Atlas Construction
+    and Usage'
+  year: '2025'
+- authors:
+  - Mark S Keller
+  - et al.
+  doi: 10.1038/s41592-024-02497-x
+  id: doi:10.1038/s41592-024-02497-x
+  journal: Nature Methods
+  title: 'Vitessce: integrative visualization of multimodal and spatially-resolved
+    single-cell data'
+  year: '2024'
+repository: https://github.com/hubmapconsortium
 ---
 # HuBMAP - Human BioMolecular Atlas Program
 

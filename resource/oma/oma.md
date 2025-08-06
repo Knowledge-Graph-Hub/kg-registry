@@ -69,6 +69,9 @@ products:
   product_url: https://omabrowser.org/oma/current/OmaGroups.txt.gz
   secondary_source:
   - oma
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
+    to URL'
 - category: Product
   description: OMA orthology groups in OrthoXML format
   format: xml
@@ -79,6 +82,9 @@ products:
   product_url: https://omabrowser.org/oma/current/OmaGroups.orthoxml
   secondary_source:
   - oma
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Hierarchical Orthologous Groups (HOGs) in OrthoXML format
   format: xml
@@ -89,6 +95,9 @@ products:
   product_url: https://omabrowser.org/oma/current/OmaHOGs.orthoxml
   secondary_source:
   - oma
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
+    to URL'
 - category: Product
   compression: gzip
   description: Pairwise orthologs in tab-separated text format
@@ -100,6 +109,9 @@ products:
   product_url: https://omabrowser.org/oma/current/OrthologousPairs.txt.gz
   secondary_source:
   - oma
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
+    to URL'
 - category: Product
   compression: gzip
   description: Protein sequences from all genomes in FASTA format
@@ -111,6 +123,9 @@ products:
   product_url: https://omabrowser.org/oma/current/oma-proteins.fa.gz
   secondary_source:
   - oma
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
+    to URL'
 - category: Product
   compression: gzip
   description: cDNA sequences for Eukaryotic genomes in FASTA format
@@ -122,6 +137,9 @@ products:
   product_url: https://omabrowser.org/oma/current/oma-eukaryotes.cdna.fa.gz
   secondary_source:
   - oma
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: cDNA sequences for Prokaryotic genomes in FASTA format
@@ -133,6 +151,9 @@ products:
   product_url: https://omabrowser.org/oma/current/oma-prokaryotes.cdna.fa.gz
   secondary_source:
   - oma
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
+    to URL'
 - category: Product
   description: OMA Browser database in HDF5 format
   id: oma.hdf5
@@ -142,6 +163,9 @@ products:
   product_url: https://omabrowser.org/oma/current/OmaServer.h5
   secondary_source:
   - oma
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: OMA data in RDF format (Turtle syntax)
@@ -153,6 +177,9 @@ products:
   product_url: https://omabrowser.org/oma/current/OMA.ttl.gz
   secondary_source:
   - oma
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: MappingProduct
   compression: gzip
   description: Mapping of OMA identifiers to UniProt accession numbers
@@ -165,6 +192,9 @@ products:
   product_url: https://omabrowser.org/oma/current/oma-uniprot.txt.gz
   secondary_source:
   - oma
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 ---
 OMA (Orthologous MAtrix) is a comprehensive database of orthologous gene relationships across multiple species. It provides a systematic and efficient approach to identifying orthologs among complete genomes, which are genes in different species that evolved from a common ancestor through speciation.
 

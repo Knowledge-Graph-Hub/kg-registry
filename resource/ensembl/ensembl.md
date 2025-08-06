@@ -78,6 +78,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -104,6 +105,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -145,6 +147,7 @@ products:
   original_source:
   - ensembl
   - ncbigene
+  product_file_size: 282824267
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2ensembl.gz
 publications:
 - authors:

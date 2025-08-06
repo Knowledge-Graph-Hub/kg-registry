@@ -11,7 +11,7 @@ contacts:
   - contact_type: github
     value: gkoutos
   label: George Gkoutos
-creation_date: "2025-07-12T00:00:00Z"
+creation_date: '2025-07-12T00:00:00Z'
 description: Phenotype And Trait Ontology (PATO) is an ontology of phenotypic qualities
   (properties, attributes or characteristics). It is used in conjunction with other
   ontologies to refer to phenotypes, and is widely used for logical definitions of
@@ -20,7 +20,7 @@ domains:
 - phenotype
 homepage_url: https://github.com/pato-ontology/pato/
 id: pato
-last_modified_date: "2025-07-12T00:00:00Z"
+last_modified_date: '2025-07-12T00:00:00Z'
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/
@@ -35,6 +35,7 @@ products:
     id: http://creativecommons.org/licenses/by/3.0/
     label: CC BY 3.0
   name: PATO OWL
+  product_file_size: 1205348
   product_url: http://purl.obolibrary.org/obo/pato.owl
 - category: DataModelProduct
   description: The OBO format release of the Phenotype And Trait Ontology.
@@ -44,6 +45,7 @@ products:
     id: http://creativecommons.org/licenses/by/3.0/
     label: CC BY 3.0
   name: PATO OBO
+  product_file_size: 110437
   product_url: http://purl.obolibrary.org/obo/pato.obo
 - category: DataModelProduct
   description: The JSON format release of the Phenotype And Trait Ontology.
@@ -53,6 +55,7 @@ products:
     id: http://creativecommons.org/licenses/by/3.0/
     label: CC BY 3.0
   name: PATO JSON
+  product_file_size: 883967
   product_url: http://purl.obolibrary.org/obo/pato.json
 - category: DataModelProduct
   description: The base OWL file for PATO, includes axioms linking to other ontologies
@@ -63,6 +66,7 @@ products:
     id: http://creativecommons.org/licenses/by/3.0/
     label: CC BY 3.0
   name: PATO Base OWL
+  product_file_size: 180954
   product_url: http://purl.obolibrary.org/obo/pato/pato-base.owl
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
@@ -113,6 +117,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -165,6 +170,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
@@ -325,6 +331,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 212124
   product_url: http://purl.obolibrary.org/obo/to.owl
   secondary_source:
   - to
@@ -364,6 +371,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 158383
   product_url: http://purl.obolibrary.org/obo/to.obo
   secondary_source:
   - to
@@ -403,6 +411,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 111996
   product_url: http://purl.obolibrary.org/obo/to/subsets/to-basic.obo
   secondary_source:
   - to

@@ -3,13 +3,13 @@ activity_status: active
 category: DataModel
 contacts:
 - category: Individual
-  label: Christian-Alexander Dudek
-  orcid: 0000-0001-9117-7909
   contact_details:
   - contact_type: email
     value: c.dudek@tu-braunschweig.de
   - contact_type: github
     value: chdudek
+  label: Christian-Alexander Dudek
+  orcid: 0000-0001-9117-7909
 description: The BRENDA Tissue Ontology (BTO) is a structured controlled vocabulary
   for the source of an enzyme, comprising tissues, cell lines, cell types, and cell
   cultures from uni- and multicellular organisms.
@@ -27,16 +27,19 @@ products:
   format: owl
   id: bto.owl
   name: BTO OWL
+  product_file_size: 722362
   product_url: http://purl.obolibrary.org/obo/bto.owl
 - description: The latest release of BTO in OBO format.
   format: obo
   id: bto.obo
   name: BTO OBO
+  product_file_size: 479657
   product_url: http://purl.obolibrary.org/obo/bto.obo
 - description: The latest release of BTO in JSON format.
   format: json
   id: bto.json
   name: BTO JSON
+  product_file_size: 595708
   product_url: http://purl.obolibrary.org/obo/bto.json
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
@@ -87,6 +90,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -139,6 +143,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo

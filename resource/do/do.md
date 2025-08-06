@@ -29,6 +29,7 @@ products:
   name: Human Disease Ontology OWL release
   original_source:
   - do
+  product_file_size: 2079362
   product_url: https://purl.obolibrary.org/obo/doid.owl
   secondary_source:
   - do
@@ -39,6 +40,7 @@ products:
   name: Human Disease Ontology OBO release
   original_source:
   - do
+  product_file_size: 1353649
   product_url: https://purl.obolibrary.org/obo/doid.obo
   secondary_source:
   - do
@@ -61,6 +63,7 @@ products:
   - do
   - hp
   - mondo
+  product_file_size: 363367
   product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
   secondary_source:
   - drug-approvals-kp
@@ -74,6 +77,7 @@ products:
   - do
   - hp
   - mondo
+  product_file_size: 363367
   product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
   secondary_source:
   - drug-approvals-kp
@@ -86,6 +90,7 @@ products:
   - do
   - hp
   - hgnc
+  product_file_size: 1437457
   product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
   secondary_source:
   - mondo
@@ -97,6 +102,7 @@ products:
   name: BKG Condition Nodes
   original_source:
   - do
+  product_file_size: 5501
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.nodes.zip
   secondary_source:
   - biomarkerkg
@@ -362,6 +368,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -414,6 +421,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
