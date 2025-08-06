@@ -7,6 +7,7 @@ id: uniprot.trembl.xml
 name: Unreviewed (TrEMBL) XML
 original_source:
 - uniprot
+product_file_size: 243378751330
 product_url: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.xml.gz
 secondary_source:
 - uniprot

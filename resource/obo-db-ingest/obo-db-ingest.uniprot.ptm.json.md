@@ -7,6 +7,7 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
 name: uniprot.ptm OBO Graph JSON
+product_file_size: 17583
 product_url: https://w3id.org/biopragmatics/resources/uniprot.ptm/uniprot.ptm.json
 layout: product_detail
 ---

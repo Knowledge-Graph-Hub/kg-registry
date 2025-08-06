@@ -7,6 +7,7 @@ id: kgcl.model.jsonld
 name: Knowledge Graph Change Language JSON-LD Context
 original_source:
 - kgcl
+product_file_size: 2161
 product_url: https://w3id.org/kgcl/kgcl.context.jsonld
 secondary_source:
 - kgcl

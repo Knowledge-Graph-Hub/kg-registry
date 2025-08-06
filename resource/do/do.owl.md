@@ -7,6 +7,7 @@ id: do.owl
 name: Human Disease Ontology OWL release
 original_source:
 - do
+product_file_size: 2079362
 product_url: https://purl.obolibrary.org/obo/doid.owl
 secondary_source:
 - do

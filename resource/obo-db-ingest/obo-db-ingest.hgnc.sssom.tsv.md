@@ -8,6 +8,7 @@ license:
 name: hgnc SSSOM
 original_source:
 - hgnc
+product_file_size: 1816550
 product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.sssom.tsv
 secondary_source:
 - obo-db-ingest

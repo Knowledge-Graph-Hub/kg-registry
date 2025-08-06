@@ -7,6 +7,7 @@ license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0-1.0
 name: civic.gid SSSOM
+product_file_size: 3977
 product_url: https://w3id.org/biopragmatics/resources/civic.gid/civic.gid.sssom.tsv
 layout: product_detail
 ---

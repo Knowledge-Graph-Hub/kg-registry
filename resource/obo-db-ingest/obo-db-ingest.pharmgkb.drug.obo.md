@@ -9,6 +9,7 @@ license:
 name: pharmgkb.drug OBO
 original_source:
 - pharmgkb
+product_file_size: 465956
 product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.obo
 secondary_source:
 - obo-db-ingest

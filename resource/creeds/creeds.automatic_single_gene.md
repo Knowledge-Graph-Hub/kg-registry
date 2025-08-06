@@ -4,6 +4,7 @@ description: Automatic gene expression signatures derived from single gene pertu
 format: json
 id: creeds.automatic_single_gene
 name: CREEDS Automatic Single Gene Perturbations
+product_file_size: 175552254
 product_url: https://maayanlab.cloud/CREEDS/download/single_gene_perturbations-p1.0.json
 layout: product_detail
 ---

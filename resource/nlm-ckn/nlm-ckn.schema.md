@@ -5,6 +5,7 @@ id: nlm-ckn.schema
 name: nlm-ckn-schema
 original_source:
 - nlm-ckn
+product_file_size: 4262
 product_url: https://github.com/NIH-NLM/cell-kn-schema/blob/main/ckn-schema.yaml
 secondary_source:
 - nlm-ckn

@@ -9,6 +9,7 @@ license:
 name: bigg.compartment OWL
 original_source:
 - bigg
+product_file_size: 1477
 product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.owl
 secondary_source:
 - obo-db-ingest

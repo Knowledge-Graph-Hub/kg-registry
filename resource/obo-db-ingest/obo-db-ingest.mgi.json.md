@@ -8,5 +8,8 @@ license:
   label: CC-BY-4.0
 name: mgi OBO Graph JSON
 product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.json
+warnings:
+- 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error when
+  accessing file'
 layout: product_detail
 ---

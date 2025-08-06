@@ -7,6 +7,7 @@ id: hra-kg.graph.xml
 name: HRA KG graph data, v2.2, RDF/XML format
 original_source:
 - hra-kg
+product_file_size: 185060502
 product_url: https://cdn.humanatlas.io/digital-objects/collection/hra/v2.2/graph.xml
 secondary_source:
 - hra-kg

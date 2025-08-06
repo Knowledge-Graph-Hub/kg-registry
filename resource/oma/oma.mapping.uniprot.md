@@ -11,5 +11,8 @@ original_source:
 product_url: https://omabrowser.org/oma/current/oma-uniprot.txt.gz
 secondary_source:
 - oma
+warnings:
+- 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error when
+  accessing file'
 layout: product_detail
 ---

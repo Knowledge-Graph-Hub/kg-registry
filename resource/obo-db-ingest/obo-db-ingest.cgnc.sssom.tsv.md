@@ -9,6 +9,7 @@ license:
 name: cgnc SSSOM
 original_source:
 - cgnc
+product_file_size: 258292
 product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.sssom.tsv
 secondary_source:
 - obo-db-ingest

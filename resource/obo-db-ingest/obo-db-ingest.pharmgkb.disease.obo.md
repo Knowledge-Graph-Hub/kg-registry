@@ -9,6 +9,7 @@ license:
 name: pharmgkb.disease OBO
 original_source:
 - pharmgkb
+product_file_size: 148487
 product_url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.obo
 secondary_source:
 - obo-db-ingest

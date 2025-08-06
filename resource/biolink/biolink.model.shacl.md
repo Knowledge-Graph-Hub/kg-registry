@@ -10,6 +10,7 @@ latest_version: v4.2.6-rc5
 name: Biolink Model SHACL release
 original_source:
 - biolink
+product_file_size: 161190
 product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shacl/biolink_model.shacl.ttl
 secondary_source:
 - biolink

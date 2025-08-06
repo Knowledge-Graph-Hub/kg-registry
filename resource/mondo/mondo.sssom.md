@@ -8,6 +8,7 @@ original_source:
 - do
 - hp
 - hgnc
+product_file_size: 1437457
 product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
 secondary_source:
 - mondo

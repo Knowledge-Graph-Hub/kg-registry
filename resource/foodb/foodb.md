@@ -42,6 +42,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+    header found'
 - category: Product
   compression: targz
   description: Complete FooDB database in XML format
@@ -52,6 +54,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Complete FooDB database in JSON format
@@ -62,6 +66,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+    header found'
 - category: Product
   compression: targz
   description: Complete FooDB database as MySQL dump
@@ -71,6 +77,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Experimental C-MS Spectra data from FooDB
@@ -80,6 +88,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Predicted C-MS Spectra data from FooDB
@@ -89,6 +99,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Experimental MS-MS Spectra data from FooDB

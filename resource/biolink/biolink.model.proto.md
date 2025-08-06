@@ -10,6 +10,7 @@ latest_version: v4.2.6-rc5
 name: Biolink Model Protobuf release
 original_source:
 - biolink
+product_file_size: 18600
 product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/protobuf/biolink_model.proto
 secondary_source:
 - biolink

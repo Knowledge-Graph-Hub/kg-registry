@@ -7,6 +7,7 @@ license:
   id: https://creativecommons.org/public-domain/pdm/
   label: public domain
 name: mirbase.mature OBO Graph JSON
+product_file_size: 373573
 product_url: https://w3id.org/biopragmatics/resources/mirbase.mature/mirbase.mature.json
 layout: product_detail
 ---

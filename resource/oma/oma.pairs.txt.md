@@ -10,5 +10,8 @@ original_source:
 product_url: https://omabrowser.org/oma/current/OrthologousPairs.txt.gz
 secondary_source:
 - oma
+warnings:
+- 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
+  to URL'
 layout: product_detail
 ---

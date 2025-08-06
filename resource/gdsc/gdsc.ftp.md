@@ -7,5 +7,8 @@ name: GDSC FTP Data Repository
 original_source:
 - gdsc
 product_url: https://ftp.sanger.ac.uk/project/cancerrxgene/releases/
+warnings:
+- 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error when
+  accessing file'
 layout: product_detail
 ---

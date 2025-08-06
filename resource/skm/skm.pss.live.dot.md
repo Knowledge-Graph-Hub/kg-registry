@@ -6,6 +6,7 @@ id: skm.pss.live.dot
 name: PSS Live Download (DOT)
 original_source:
 - skm
+product_file_size: 595369
 product_url: https://skm.nib.si/downloads/pss/public/graphviz
 layout: product_detail
 ---

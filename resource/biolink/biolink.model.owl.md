@@ -10,6 +10,7 @@ latest_version: v4.2.6-rc5
 name: Biolink Model OWL release
 original_source:
 - biolink
+product_file_size: 717005
 product_url: https://w3id.org/biolink/biolink-model.owl.ttl
 secondary_source:
 - biolink

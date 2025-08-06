@@ -9,6 +9,7 @@ license:
 name: ZFIN clean gene to phenotype
 original_source:
 - zfin
+product_file_size: 42545110
 product_url: https://zfin.org/downloads/phenoGeneCleanData_fish.txt
 secondary_source:
 - zfin

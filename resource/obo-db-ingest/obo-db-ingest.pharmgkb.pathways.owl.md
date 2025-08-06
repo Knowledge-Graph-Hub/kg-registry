@@ -9,6 +9,7 @@ license:
 name: pharmgkb.pathways OWL
 original_source:
 - pharmgkb
+product_file_size: 3784
 product_url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.owl
 secondary_source:
 - obo-db-ingest

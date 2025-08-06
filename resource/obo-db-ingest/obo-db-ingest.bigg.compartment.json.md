@@ -9,6 +9,7 @@ license:
 name: bigg.compartment OBO Graph JSON
 original_source:
 - bigg
+product_file_size: 1114
 product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.json
 secondary_source:
 - obo-db-ingest

@@ -9,6 +9,7 @@ license:
 name: pharmgkb.gene OBO Graph JSON
 original_source:
 - pharmgkb
+product_file_size: 2668332
 product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.json
 secondary_source:
 - obo-db-ingest

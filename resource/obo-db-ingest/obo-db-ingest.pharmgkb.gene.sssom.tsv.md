@@ -9,6 +9,7 @@ license:
 name: pharmgkb.gene SSSOM
 original_source:
 - pharmgkb
+product_file_size: 1621905
 product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.sssom.tsv
 secondary_source:
 - obo-db-ingest

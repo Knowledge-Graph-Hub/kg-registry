@@ -5,5 +5,8 @@ description: Free Induction Decay (FID) files from FooDB
 id: foodb.data.fid
 name: FooDB FID Files
 product_url: https://foodb.ca/public/system/downloads/foodb_fid_files.zip
+warnings:
+- 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error when
+  accessing file'
 layout: product_detail
 ---

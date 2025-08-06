@@ -7,6 +7,7 @@ id: skm.pss.live.sif.projection.annotations
 name: PSS Live Download, projection (SIF/LGL), node annotations
 original_source:
 - skm
+product_file_size: 163587
 product_url: https://skm.nib.si/downloads/pss/public/rxn-nodes
 layout: product_detail
 ---

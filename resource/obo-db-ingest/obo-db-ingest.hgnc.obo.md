@@ -9,6 +9,7 @@ license:
 name: hgnc OBO
 original_source:
 - hgnc
+product_file_size: 4253807
 product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.obo
 secondary_source:
 - obo-db-ingest

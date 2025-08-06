@@ -9,6 +9,7 @@ license:
 name: ccle OBO
 original_source:
 - ccle
+product_file_size: 19324
 product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.obo
 secondary_source:
 - obo-db-ingest

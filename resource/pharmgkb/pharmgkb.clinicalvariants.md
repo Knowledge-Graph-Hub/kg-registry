@@ -5,6 +5,7 @@ description: List of variant-drug pairs and level of evidence for all clinical a
 format: tsv
 id: pharmgkb.clinicalvariants
 name: PharmKB Clinical Variants
+product_file_size: 74321
 product_url: https://api.pharmgkb.org/v1/download/file/data/clinicalVariants.zip
 layout: product_detail
 ---

@@ -10,6 +10,7 @@ name: MIND Entities Dictionary
 original_source:
 - drugcentral
 - mechreponet
+product_file_size: 5629618
 product_url: https://zenodo.org/records/8117748/files/entities.dict
 secondary_source:
 - mind

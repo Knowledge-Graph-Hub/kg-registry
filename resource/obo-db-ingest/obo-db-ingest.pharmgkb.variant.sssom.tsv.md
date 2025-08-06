@@ -9,6 +9,7 @@ license:
 name: pharmgkb.variant SSSOM
 original_source:
 - pharmgkb
+product_file_size: 56599
 product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.sssom.tsv
 secondary_source:
 - obo-db-ingest

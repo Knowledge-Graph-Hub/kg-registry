@@ -6,6 +6,7 @@ id: hp.obo
 name: Human Phenotype Ontology OBO release
 original_source:
 - hp
+product_file_size: 10151040
 product_url: http://purl.obolibrary.org/obo/hp.obo
 secondary_source:
 - hp

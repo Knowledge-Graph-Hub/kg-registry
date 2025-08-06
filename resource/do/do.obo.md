@@ -6,6 +6,7 @@ id: do.obo
 name: Human Disease Ontology OBO release
 original_source:
 - do
+product_file_size: 1353649
 product_url: https://purl.obolibrary.org/obo/doid.obo
 secondary_source:
 - do

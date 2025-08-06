@@ -7,6 +7,7 @@ id: orthodb.gene_xrefs
 name: OrthoDB Gene Cross-references
 original_source:
 - orthodb
+product_file_size: 4692134033
 product_url: https://data.orthodb.org/current/download/odb12v1_gene_xrefs.tab.gz
 secondary_source:
 - orthodb

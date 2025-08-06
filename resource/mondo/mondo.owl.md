@@ -6,6 +6,7 @@ id: mondo.owl
 name: Mondo Disease Ontology OWL release
 original_source:
 - mondo
+product_file_size: 238595949
 product_url: https://purl.obolibrary.org/obo/mondo.owl
 secondary_source:
 - mondo

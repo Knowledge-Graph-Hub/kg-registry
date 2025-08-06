@@ -7,6 +7,7 @@ license:
   id: https://creativecommons.org/public-domain/pdm/
   label: public domain
 name: ncbi.gc SSSOM
+product_file_size: 191
 product_url: https://w3id.org/biopragmatics/resources/ncbi.gc/ncbi.gc.sssom.tsv
 layout: product_detail
 ---

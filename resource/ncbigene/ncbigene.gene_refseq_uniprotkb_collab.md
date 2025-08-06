@@ -10,6 +10,7 @@ original_source:
 - refseq
 - ncbigene
 - uniprot
+product_file_size: 1182285769
 product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_refseq_uniprotkb_collab.gz
 layout: product_detail
 ---

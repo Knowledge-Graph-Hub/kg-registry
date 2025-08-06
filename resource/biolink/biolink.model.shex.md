@@ -10,6 +10,7 @@ latest_version: v4.2.6-rc5
 name: Biolink Model ShEx release
 original_source:
 - biolink
+product_file_size: 17816
 product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
 secondary_source:
 - biolink

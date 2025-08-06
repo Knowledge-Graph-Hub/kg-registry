@@ -7,6 +7,7 @@ id: ncbitaxon.taxslim
 name: NCBI Taxonomy Slim
 original_source:
 - ncbitaxon
+product_file_size: 36684306
 product_url: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
 layout: product_detail
 ---

@@ -4,6 +4,7 @@ description: KGX distribution of the SRI-Reference KG
 format: kgx
 id: sri-reference-kg.graph
 name: SRI-Reference KG (KGX distribution)
+product_file_size: 230046094
 product_url: https://data.monarchinitiative.org/monarch-kg-dev/latest/monarch-kg.tar.gz
 layout: product_detail
 ---
