@@ -850,6 +850,7 @@ class Product(NamedThing):
          'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
          'domain_of': ['Product']} })
     product_url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'alias': 'product_url', 'domain_of': ['Product']} })
+    product_file_size: Optional[int] = Field(default=None, description="""The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.""", json_schema_extra = { "linkml_meta": {'alias': 'product_file_size', 'domain_of': ['Product']} })
     produced_by: Optional[list[str]] = Field(default=None, description="""The process(es) that produced the product, referred to by the identifier of each process.""", json_schema_extra = { "linkml_meta": {'alias': 'produced_by', 'domain_of': ['Product']} })
     repository: Optional[str] = Field(default=None, description="""A main version control repository for the product.""", json_schema_extra = { "linkml_meta": {'alias': 'repository', 'domain_of': ['Resource', 'Product']} })
     license: Optional[License] = Field(default=None, description="""The license of the product. This may differ from that of the parent resource.""", json_schema_extra = { "linkml_meta": {'alias': 'license', 'domain_of': ['Resource', 'Product']} })
@@ -896,6 +897,7 @@ class GraphProduct(Product):
          'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
          'domain_of': ['Product']} })
     product_url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'alias': 'product_url', 'domain_of': ['Product']} })
+    product_file_size: Optional[int] = Field(default=None, description="""The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.""", json_schema_extra = { "linkml_meta": {'alias': 'product_file_size', 'domain_of': ['Product']} })
     produced_by: Optional[list[str]] = Field(default=None, description="""The process(es) that produced the product, referred to by the identifier of each process.""", json_schema_extra = { "linkml_meta": {'alias': 'produced_by', 'domain_of': ['Product']} })
     repository: Optional[str] = Field(default=None, description="""A main version control repository for the product.""", json_schema_extra = { "linkml_meta": {'alias': 'repository', 'domain_of': ['Resource', 'Product']} })
     license: Optional[License] = Field(default=None, description="""The license of the product. This may differ from that of the parent resource.""", json_schema_extra = { "linkml_meta": {'alias': 'license', 'domain_of': ['Resource', 'Product']} })
@@ -938,6 +940,7 @@ class DataModelProduct(Product):
          'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
          'domain_of': ['Product']} })
     product_url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'alias': 'product_url', 'domain_of': ['Product']} })
+    product_file_size: Optional[int] = Field(default=None, description="""The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.""", json_schema_extra = { "linkml_meta": {'alias': 'product_file_size', 'domain_of': ['Product']} })
     produced_by: Optional[list[str]] = Field(default=None, description="""The process(es) that produced the product, referred to by the identifier of each process.""", json_schema_extra = { "linkml_meta": {'alias': 'produced_by', 'domain_of': ['Product']} })
     repository: Optional[str] = Field(default=None, description="""A main version control repository for the product.""", json_schema_extra = { "linkml_meta": {'alias': 'repository', 'domain_of': ['Resource', 'Product']} })
     license: Optional[License] = Field(default=None, description="""The license of the product. This may differ from that of the parent resource.""", json_schema_extra = { "linkml_meta": {'alias': 'license', 'domain_of': ['Resource', 'Product']} })
@@ -980,6 +983,7 @@ class MappingProduct(Product):
          'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
          'domain_of': ['Product']} })
     product_url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'alias': 'product_url', 'domain_of': ['Product']} })
+    product_file_size: Optional[int] = Field(default=None, description="""The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.""", json_schema_extra = { "linkml_meta": {'alias': 'product_file_size', 'domain_of': ['Product']} })
     produced_by: Optional[list[str]] = Field(default=None, description="""The process(es) that produced the product, referred to by the identifier of each process.""", json_schema_extra = { "linkml_meta": {'alias': 'produced_by', 'domain_of': ['Product']} })
     repository: Optional[str] = Field(default=None, description="""A main version control repository for the product.""", json_schema_extra = { "linkml_meta": {'alias': 'repository', 'domain_of': ['Resource', 'Product']} })
     license: Optional[License] = Field(default=None, description="""The license of the product. This may differ from that of the parent resource.""", json_schema_extra = { "linkml_meta": {'alias': 'license', 'domain_of': ['Resource', 'Product']} })
@@ -1022,6 +1026,7 @@ class ProcessProduct(Product):
          'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
          'domain_of': ['Product']} })
     product_url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'alias': 'product_url', 'domain_of': ['Product']} })
+    product_file_size: Optional[int] = Field(default=None, description="""The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.""", json_schema_extra = { "linkml_meta": {'alias': 'product_file_size', 'domain_of': ['Product']} })
     produced_by: Optional[list[str]] = Field(default=None, description="""The process(es) that produced the product, referred to by the identifier of each process.""", json_schema_extra = { "linkml_meta": {'alias': 'produced_by', 'domain_of': ['Product']} })
     repository: Optional[str] = Field(default=None, description="""A main version control repository for the product.""", json_schema_extra = { "linkml_meta": {'alias': 'repository', 'domain_of': ['Resource', 'Product']} })
     license: Optional[License] = Field(default=None, description="""The license of the product. This may differ from that of the parent resource.""", json_schema_extra = { "linkml_meta": {'alias': 'license', 'domain_of': ['Resource', 'Product']} })
@@ -1064,6 +1069,7 @@ class GraphicalInterface(Product):
          'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
          'domain_of': ['Product']} })
     product_url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'alias': 'product_url', 'domain_of': ['Product']} })
+    product_file_size: Optional[int] = Field(default=None, description="""The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.""", json_schema_extra = { "linkml_meta": {'alias': 'product_file_size', 'domain_of': ['Product']} })
     produced_by: Optional[list[str]] = Field(default=None, description="""The process(es) that produced the product, referred to by the identifier of each process.""", json_schema_extra = { "linkml_meta": {'alias': 'produced_by', 'domain_of': ['Product']} })
     repository: Optional[str] = Field(default=None, description="""A main version control repository for the product.""", json_schema_extra = { "linkml_meta": {'alias': 'repository', 'domain_of': ['Resource', 'Product']} })
     license: Optional[License] = Field(default=None, description="""The license of the product. This may differ from that of the parent resource.""", json_schema_extra = { "linkml_meta": {'alias': 'license', 'domain_of': ['Resource', 'Product']} })
@@ -1109,6 +1115,7 @@ class ProgrammingInterface(Product):
          'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
          'domain_of': ['Product']} })
     product_url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'alias': 'product_url', 'domain_of': ['Product']} })
+    product_file_size: Optional[int] = Field(default=None, description="""The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.""", json_schema_extra = { "linkml_meta": {'alias': 'product_file_size', 'domain_of': ['Product']} })
     produced_by: Optional[list[str]] = Field(default=None, description="""The process(es) that produced the product, referred to by the identifier of each process.""", json_schema_extra = { "linkml_meta": {'alias': 'produced_by', 'domain_of': ['Product']} })
     repository: Optional[str] = Field(default=None, description="""A main version control repository for the product.""", json_schema_extra = { "linkml_meta": {'alias': 'repository', 'domain_of': ['Resource', 'Product']} })
     license: Optional[License] = Field(default=None, description="""The license of the product. This may differ from that of the parent resource.""", json_schema_extra = { "linkml_meta": {'alias': 'license', 'domain_of': ['Resource', 'Product']} })
@@ -1151,6 +1158,7 @@ class DocumentationProduct(Product):
          'any_of': [{'range': 'Resource'}, {'range': 'Product'}],
          'domain_of': ['Product']} })
     product_url: Optional[str] = Field(default=None, description="""The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.""", json_schema_extra = { "linkml_meta": {'alias': 'product_url', 'domain_of': ['Product']} })
+    product_file_size: Optional[int] = Field(default=None, description="""The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.""", json_schema_extra = { "linkml_meta": {'alias': 'product_file_size', 'domain_of': ['Product']} })
     produced_by: Optional[list[str]] = Field(default=None, description="""The process(es) that produced the product, referred to by the identifier of each process.""", json_schema_extra = { "linkml_meta": {'alias': 'produced_by', 'domain_of': ['Product']} })
     repository: Optional[str] = Field(default=None, description="""A main version control repository for the product.""", json_schema_extra = { "linkml_meta": {'alias': 'repository', 'domain_of': ['Resource', 'Product']} })
     license: Optional[License] = Field(default=None, description="""The license of the product. This may differ from that of the parent resource.""", json_schema_extra = { "linkml_meta": {'alias': 'license', 'domain_of': ['Resource', 'Product']} })

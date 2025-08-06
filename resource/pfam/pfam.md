@@ -25,31 +25,35 @@ products:
 - category: GraphicalInterface
   description: The core Pfam database containing protein families, multiple sequence
     alignments, and hidden Markov models.
+  format: http
   id: pfam.site
   name: Interface for the Pfam Database
   product_url: https://www.ebi.ac.uk/interpro/entry/pfam/#table
-  format: http
 - category: Product
   description: The Pfam HMM library for Pfam-A families, used for searching protein
     sequences against Pfam.
   id: pfam.a.models
   name: Pfam-A HMM Library
+  product_file_size: 347150343
   product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
 - category: Product
   description: The Pfam HMM data for Pfam-A families, used for searching protein sequences
     against Pfam.
   id: pfam.a.data
   name: Pfam-A HMM data
+  product_file_size: 652678
   product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.dat.gz
 - category: Product
   description: Pfam-A Seed alignment.
   id: pfam.a.seedalignment
   name: Pfam-A Seed alignment
+  product_file_size: 172548313
   product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.seed.gz
 - category: Product
   description: Pfam-A Full alignment.
   id: pfam.a.fullalignment
   name: Pfam-A Full alignment
+  product_file_size: 21077145205
   product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.full.gz
 - category: ProgrammingInterface
   description: REST API for programmatic access to Pfam data via the InterPro database.
@@ -110,7 +114,7 @@ publications:
   - B. Lazaro Pinto
   - G.A. Salazar
   - M.L. Bileschi
-  - "F. Llinares-L\xF3pez"
+  - F. Llinares-López
   - L. Meng-Papaxanthos
   - L.J. Colwell
   - NV. Grishin

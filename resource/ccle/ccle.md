@@ -23,6 +23,7 @@ products:
   name: ccle OBO
   original_source:
   - ccle
+  product_file_size: 19324
   product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.obo
   secondary_source:
   - obo-db-ingest
@@ -36,6 +37,7 @@ products:
   name: ccle OWL
   original_source:
   - ccle
+  product_file_size: 29770
   product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.owl
   secondary_source:
   - obo-db-ingest
@@ -49,6 +51,7 @@ products:
   name: ccle OBO Graph JSON
   original_source:
   - ccle
+  product_file_size: 23282
   product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.json
   secondary_source:
   - obo-db-ingest
@@ -62,6 +65,7 @@ products:
   name: ccle SSSOM
   original_source:
   - ccle
+  product_file_size: 14414
   product_url: https://w3id.org/biopragmatics/resources/ccle/ccle.sssom.tsv
   secondary_source:
   - obo-db-ingest

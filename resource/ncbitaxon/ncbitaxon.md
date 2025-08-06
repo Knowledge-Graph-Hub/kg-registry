@@ -42,6 +42,7 @@ products:
   name: NCBI Taxonomy Dump Files
   original_source:
   - ncbitaxon
+  product_file_size: 70371611
   product_url: https://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz
 - category: Product
   description: NCBI Taxonomy containing the new-style taxonomy dump files with extended
@@ -50,6 +51,7 @@ products:
   name: NCBI Taxonomy New-Style Dump Files
   original_source:
   - ncbitaxon
+  product_file_size: 143910339
   product_url: https://ftp.ncbi.nih.gov/pub/taxonomy/new_taxdump/new_taxdump.tar.gz
 - category: GraphicalInterface
   description: Web interface for browsing and searching the NCBI Taxonomy database
@@ -66,6 +68,7 @@ products:
   name: NCBI Taxonomy OWL
   original_source:
   - ncbitaxon
+  product_file_size: 1646833334
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.owl
 - category: DataModelProduct
   description: OBO format version of the NCBI Taxonomy, providing a standardized representation
@@ -75,6 +78,7 @@ products:
   name: NCBI Taxonomy OBO
   original_source:
   - ncbitaxon
+  product_file_size: 524761049
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.obo
 - category: DataModelProduct
   description: OBOGraphs JSON version of the NCBI Taxonomy
@@ -83,6 +87,7 @@ products:
   name: NCBI Taxonomy JSON
   original_source:
   - ncbitaxon
+  product_file_size: 1948965918
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
 - category: DataModelProduct
   description: Slimmed-down version of the NCBI Taxonomy ontology containing commonly
@@ -92,6 +97,7 @@ products:
   name: NCBI Taxonomy Slim
   original_source:
   - ncbitaxon
+  product_file_size: 36684306
   product_url: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -159,6 +165,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -185,6 +192,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -265,6 +273,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -317,6 +326,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
@@ -350,6 +360,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 212124
   product_url: http://purl.obolibrary.org/obo/to.owl
   secondary_source:
   - to
@@ -389,6 +400,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 158383
   product_url: http://purl.obolibrary.org/obo/to.obo
   secondary_source:
   - to
@@ -428,6 +440,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 111996
   product_url: http://purl.obolibrary.org/obo/to/subsets/to-basic.obo
   secondary_source:
   - to

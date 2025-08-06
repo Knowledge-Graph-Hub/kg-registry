@@ -3,13 +3,13 @@ activity_status: active
 category: DataModel
 contacts:
 - category: Individual
-  orcid: 0000-0002-0831-6427
   contact_details:
   - contact_type: email
     value: keilbeck@genetics.utah.edu
   - contact_type: github
     value: keilbeck
   label: Karen Eilbeck
+  orcid: 0000-0002-0831-6427
 description: The Sequence Ontology (SO) is a structured controlled vocabulary for
   the features and attributes of biological sequences. SO provides a common set of
   terms and definitions that facilitate the exchange, analysis, and management of
@@ -31,12 +31,14 @@ products:
   format: owl
   id: so.owl
   name: SO OWL
+  product_file_size: 290294
   product_url: http://purl.obolibrary.org/obo/so.owl
 - category: DataModelProduct
   description: Main SO release in OBO Format
   format: obo
   id: so.obo
   name: SO OBO
+  product_file_size: 192457
   product_url: http://purl.obolibrary.org/obo/so.obo
 - category: DataModelProduct
   description: Sequence Ontology Feature Annotation (SOFA) subset in OWL format. This
@@ -45,6 +47,7 @@ products:
   format: owl
   id: sofa.owl
   name: SOFA OWL
+  product_file_size: 43355
   product_url: http://purl.obolibrary.org/obo/so/subsets/SOFA.owl
 - category: DataModelProduct
   description: Sequence Ontology Feature Annotation (SOFA) subset in OBO format. This
@@ -53,6 +56,7 @@ products:
   format: obo
   id: sofa.obo
   name: SOFA OBO
+  product_file_size: 28214
   product_url: http://purl.obolibrary.org/obo/so/subsets/SOFA.obo
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
@@ -103,6 +107,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -155,6 +160,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo

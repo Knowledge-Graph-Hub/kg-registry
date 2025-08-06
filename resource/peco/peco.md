@@ -11,7 +11,7 @@ contacts:
   - contact_type: github
     value: jaiswalp
   label: Pankaj Jaiswal
-creation_date: "2025-07-12T00:00:00Z"
+creation_date: '2025-07-12T00:00:00Z'
 description: Plant Experimental Conditions Ontology (PECO) is a structured, controlled
   vocabulary which describes the treatments, growing conditions, and/or study types
   used in plant biology experiments.
@@ -19,7 +19,7 @@ domains:
 - agriculture
 homepage_url: http://planteome.org/
 id: peco
-last_modified_date: "2025-07-12T00:00:00Z"
+last_modified_date: '2025-07-12T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -34,6 +34,7 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
   name: PECO OWL
+  product_file_size: 83671
   product_url: http://purl.obolibrary.org/obo/peco.owl
 - category: DataModelProduct
   description: The OBO format release of the Plant Experimental Conditions Ontology.
@@ -43,6 +44,7 @@ products:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
   name: PECO OBO
+  product_file_size: 65892
   product_url: http://purl.obolibrary.org/obo/peco.obo
 - category: DataModelProduct
   description: The latest release of Plant Trait Ontology in OWL format
@@ -74,6 +76,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 212124
   product_url: http://purl.obolibrary.org/obo/to.owl
   secondary_source:
   - to
@@ -113,6 +116,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 158383
   product_url: http://purl.obolibrary.org/obo/to.obo
   secondary_source:
   - to
@@ -152,6 +156,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 111996
   product_url: http://purl.obolibrary.org/obo/to/subsets/to-basic.obo
   secondary_source:
   - to

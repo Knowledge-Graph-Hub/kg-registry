@@ -3,13 +3,13 @@ activity_status: active
 category: DataModel
 contacts:
 - category: Individual
-  label: Barry Smith
-  orcid: 0000-0003-1384-116X
   contact_details:
   - contact_type: email
     value: phismith@buffalo.edu
   - contact_type: github
     value: phismith
+  label: Barry Smith
+  orcid: 0000-0003-1384-116X
 description: The Basic Formal Ontology (BFO) is the upper-level ontology upon which
   OBO Foundry ontologies are built. It provides a genuine upper ontology to support
   domain ontologies developed for scientific research, particularly in biomedicine.
@@ -27,11 +27,13 @@ products:
   format: owl
   id: bfo.owl
   name: BFO OWL
+  product_file_size: 20902
   product_url: http://purl.obolibrary.org/obo/bfo.owl
 - description: The latest release of BFO in OBO format.
   format: obo
   id: bfo.obo
   name: BFO OBO
+  product_file_size: 17898
   product_url: http://purl.obolibrary.org/obo/bfo.obo
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
@@ -82,6 +84,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -134,6 +137,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
@@ -167,6 +171,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 212124
   product_url: http://purl.obolibrary.org/obo/to.owl
   secondary_source:
   - to
@@ -206,6 +211,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 158383
   product_url: http://purl.obolibrary.org/obo/to.obo
   secondary_source:
   - to
@@ -245,6 +251,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 111996
   product_url: http://purl.obolibrary.org/obo/to/subsets/to-basic.obo
   secondary_source:
   - to

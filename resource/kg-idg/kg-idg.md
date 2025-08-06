@@ -1,37 +1,39 @@
 ---
-layout: resource_detail
 activity_status: active
-id: kg-idg
-name: KG-IDG
-description: a Knowledge Graph for Illuminating the Druggable Genome
-domains:
-- health
+category: KnowledgeGraph
 contacts:
 - category: Individual
-  label: J. Harry Caufield
-  orcid: 0000-0001-5705-7831
   contact_details:
   - contact_type: email
     value: jhc@lbl.gov
   - contact_type: github
     value: caufieldjh
+  label: J. Harry Caufield
+  orcid: 0000-0001-5705-7831
+description: a Knowledge Graph for Illuminating the Druggable Genome
+domains:
+- health
 homepage_url: https://kghub.org/kg-idg/index.html
-repository: https://github.com/Knowledge-Graph-Hub/kg-idg
+id: kg-idg
+layout: resource_detail
 license:
-  label: BSD3
   id: https://opensource.org/license/bsd-3-clause
+  label: BSD3
+name: KG-IDG
 products:
-- id: kg-idg.graph
-  name: KGX Distribution of KG-IDG
+- category: GraphProduct
   description: KGX Distribution of KG-IDG
-  product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
-  category: GraphProduct
   format: kgx
-  secondary_source:
-  - kg-idg
+  id: kg-idg.graph
+  name: KGX Distribution of KG-IDG
   original_source:
   - kg-idg
-category: KnowledgeGraph
+  product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
+  secondary_source:
+  - kg-idg
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
+repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 ---
-
 KG-IDG: a Knowledge Graph for Illuminating the Druggable Genome.

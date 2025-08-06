@@ -1,42 +1,198 @@
 ---
-layout: resource_detail
 activity_status: active
-id: skm
-name: Stress Knowledge Map
-description: A comprehensive knowledge graph resource for systems biology analysis of plant stress responses, containing mechanistic models and knowledge networks for plant stress signaling. It includes two knowledge graphs, the mechanistic Plant Stress Signalling model (PSS) and the Comprehensive Knowledge Network (CKN).
+category: KnowledgeGraph
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: kristina.gruden@nib.si
+  label: Kristina Gruden
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: carissa.bleker@nib.si
+  label: Carissa Bleker
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.nib.si/
+  label: National Institute of Biology Slovenia
+description: A comprehensive knowledge graph resource for systems biology analysis
+  of plant stress responses, containing mechanistic models and knowledge networks
+  for plant stress signaling. It includes two knowledge graphs, the mechanistic Plant
+  Stress Signalling model (PSS) and the Comprehensive Knowledge Network (CKN).
 domains:
 - plant science
 - organisms
 - systems biology
 - pathways
-contacts:
-- category: Individual
-  label: Kristina Gruden
-  contact_details:
-  - contact_type: email
-    value: kristina.gruden@nib.si
-- category: Individual
-  label: Carissa Bleker
-  contact_details:
-  - contact_type: email
-    value: carissa.bleker@nib.si
-- category: Organization
-  label: National Institute of Biology Slovenia
-  contact_details:
-  - contact_type: url
-    value: https://www.nib.si/
 homepage_url: https://skm.nib.si/
-repository: https://github.com/NIB-SI/skm-tools
-category: KnowledgeGraph
-license:
-  label: CC-BY-NC-SA-3.0
-  id: http://creativecommons.org/licenses/by-nc-sa/3.0/
-version: "1.0"
+id: skm
 language: en
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by-nc-sa/3.0/
+  label: CC-BY-NC-SA-3.0
+name: Stress Knowledge Map
+products:
+- category: GraphicalInterface
+  description: Interactive search and visualization tool for the mechanistic Plant
+    Stress Signalling model
+  id: skm.pss.explorer
+  name: PSS Explorer
+  original_source:
+  - skm
+  product_url: https://skm.nib.si/pss
+- category: GraphicalInterface
+  description: Interactive search and visualization tool for the Comprehensive Knowledge
+    Network
+  id: skm.ckn.explorer
+  name: CKN Explorer
+  original_source:
+  - skm
+  product_url: https://skm.nib.si/ckn
+- category: GraphProduct
+  description: Current PSS model in Systems Biology Graphical Notation XML format
+  format: sbgnml
+  id: skm.pss.live.sbgn
+  name: PSS Live Download (SBGN-ML)
+  original_source:
+  - skm
+  product_file_size: 3204548
+  product_url: https://skm.nib.si/downloads/pss/public/sbgn
+- category: GraphProduct
+  description: Current PSS model in Systems Biology Markup Language XML format
+  format: sbml
+  id: skm.pss.live.sbml
+  name: PSS Live Download (SBML)
+  original_source:
+  - skm
+  product_file_size: 548527
+  product_url: https://skm.nib.si/downloads/pss/public/sbml
+- category: GraphProduct
+  description: Current PSS model in DOT Language format compatible with Graphviz
+  format: dot
+  id: skm.pss.live.dot
+  name: PSS Live Download (DOT)
+  original_source:
+  - skm
+  product_file_size: 595369
+  product_url: https://skm.nib.si/downloads/pss/public/graphviz
+- category: GraphProduct
+  description: Current PSS model in Simple Interaction Format compatible with Cytoscape.
+    Reactions are represented as nodes (as in PSS Explorer and database schema).
+  format: sif
+  id: skm.pss.live.sif.original.graph
+  name: PSS Live Download, original (SIF/LGL)
+  original_source:
+  - skm
+  product_file_size: 161651
+  product_url: https://skm.nib.si/downloads/pss/public/sif-edges
+- category: GraphProduct
+  description: Current PSS model in Simple Interaction Format compatible with Cytoscape.
+    Reactions are represented as nodes (as in PSS Explorer and database schema). This
+    file contains the node annotations.
+  format: sif
+  id: skm.pss.live.sif.original.annotations
+  name: PSS Live Download, original (SIF/LGL), node annotations
+  original_source:
+  - skm
+  product_file_size: 401897
+  product_url: https://skm.nib.si/downloads/pss/public/sif-nodes
+- category: GraphProduct
+  description: Current PSS model in Simple Interaction Format compatible with Cytoscape.
+    Reactions are collapsed to edges.
+  format: sif
+  id: skm.pss.live.sif.projection.graph
+  name: PSS Live Download, projection (SIF/LGL)
+  original_source:
+  - skm
+  product_file_size: 253631
+  product_url: https://skm.nib.si/downloads/pss/public/rxn-edges
+- category: GraphProduct
+  description: Current PSS model in Simple Interaction Format compatible with Cytoscape.
+    Reactions are collapsed to edges. This file contains the node annotations.
+  format: sif
+  id: skm.pss.live.sif.projection.annotations
+  name: PSS Live Download, projection (SIF/LGL), node annotations
+  original_source:
+  - skm
+  product_file_size: 163587
+  product_url: https://skm.nib.si/downloads/pss/public/rxn-nodes
+- category: GraphProduct
+  description: Current PSS model in Simple Interaction Format compatible with Cytoscape.
+    Reactions are collapsed to edges, FunctionalClusters are expanded to arabidopsis
+    identifiers.
+  format: sif
+  id: skm.pss.live.sif.dinar.graph
+  name: PSS Live Download, DiNAR (SIF/LGL)
+  original_source:
+  - skm
+  product_file_size: 361747
+  product_url: https://skm.nib.si/downloads/pss/public/dinar-edges
+- category: GraphProduct
+  description: Current PSS model in Boolean network format compatible with BoolDog
+    and BoolNet
+  format: boolnet
+  id: skm.pss.live.boolnet.graph
+  name: PSS Live Downloads (BoolNet)
+  original_source:
+  - skm
+  product_file_size: 53198
+  product_url: https://skm.nib.si/downloads/pss/public/boolnet
+- category: GraphProduct
+  description: Current PSS model in Boolean network format compatible with BoolDog
+    and BoolNet. This file contains the node annotations.
+  format: boolnet
+  id: skm.pss.live.boolnet.annotations
+  name: PSS Live Downloads (BoolNet), node annotations
+  original_source:
+  - skm
+  product_file_size: 70946
+  product_url: https://skm.nib.si/downloads/pss/public/boolnet-annot
+- category: GraphProduct
+  description: Comprehensive Knowledge Network v2 in SIF/LGL format with 26,234 entities
+    and ~500,000 interactions
+  edge_count: 500000
+  format: sif
+  id: skm.ckn.v2.graph
+  name: CKN v2 (June 2023)
+  node_count: 26234
+  original_source:
+  - skm
+  product_file_size: 2732107
+  product_url: https://skm.nib.si/downloads/ckn/v2-2023.06
+- category: GraphProduct
+  description: Comprehensive Knowledge Network v2 in SIF/LGL format with 26,234 entities
+    and ~500,000 interactions. This file contains the node annotations.
+  format: sif
+  id: skm.ckn.v2.annotations
+  name: CKN v2 (June 2023), node annotations
+  original_source:
+  - skm
+  product_file_size: 885747
+  product_url: https://skm.nib.si/downloads/ckn-annot/v2-2023.06
+- category: GraphProduct
+  description: Comprehensive Knowledge Network v1 in SIF/LGL format
+  format: sif
+  id: skm.ckn.v1.graph
+  name: CKN v1 (June 2018)
+  original_source:
+  - skm
+  product_file_size: 318666
+  product_url: https://skm.nib.si/downloads/ckn/v1-2018.06
+- category: GraphProduct
+  description: Comprehensive Knowledge Network v1 in SIF/LGL format. This file contains
+    the node annotations.
+  format: sif
+  id: skm.ckn.v1.annotations
+  name: CKN v1 (June 2018), node annotations
+  original_source:
+  - skm
+  product_file_size: 702407
+  product_url: https://skm.nib.si/downloads/ckn-annot/v1-2018.06
 publications:
-- id: https://doi.org/10.1016/j.xplc.2024.100920
-  title: "Stress Knowledge Map: A knowledge graph resource for systems biology analysis of plant stress responses"
-  authors:
+- authors:
   - Carissa Bleker
   - Živa Ramšak
   - Andras Bittner
@@ -54,140 +210,15 @@ publications:
   - Markus Teige
   - Ute C. Vothknecht
   - Kristina Gruden
-  journal: Plant Communications
-  year: "2024"
   doi: doi:10.1016/j.xplc.2024.100920
-products:
-- id: skm.pss.explorer
-  name: PSS Explorer
-  description: Interactive search and visualization tool for the mechanistic Plant Stress Signalling model
-  product_url: https://skm.nib.si/pss
-  category: GraphicalInterface
-  original_source:
-  - skm
-- id: skm.ckn.explorer
-  name: CKN Explorer
-  description: Interactive search and visualization tool for the Comprehensive Knowledge Network
-  product_url: https://skm.nib.si/ckn
-  category: GraphicalInterface
-  original_source:
-  - skm
-- id: skm.pss.live.sbgn
-  name: PSS Live Download (SBGN-ML)
-  description: Current PSS model in Systems Biology Graphical Notation XML format
-  product_url: https://skm.nib.si/downloads/pss/public/sbgn
-  category: GraphProduct
-  original_source:
-  - skm
-  format: sbgnml
-- id: skm.pss.live.sbml
-  name: PSS Live Download (SBML)
-  description: Current PSS model in Systems Biology Markup Language XML format
-  product_url: https://skm.nib.si/downloads/pss/public/sbml
-  category: GraphProduct
-  original_source:
-  - skm
-  format: sbml
-- id: skm.pss.live.dot
-  name: PSS Live Download (DOT)
-  description: Current PSS model in DOT Language format compatible with Graphviz
-  product_url: https://skm.nib.si/downloads/pss/public/graphviz
-  category: GraphProduct
-  original_source:
-  - skm
-  format: dot
-- id: skm.pss.live.sif.original.graph
-  name: PSS Live Download, original (SIF/LGL)
-  description: Current PSS model in Simple Interaction Format compatible with Cytoscape. Reactions are represented as nodes (as in PSS Explorer and database schema).
-  product_url: https://skm.nib.si/downloads/pss/public/sif-edges
-  category: GraphProduct
-  original_source:
-  - skm
-  format: sif
-- id: skm.pss.live.sif.original.annotations
-  name: PSS Live Download, original (SIF/LGL), node annotations
-  description: Current PSS model in Simple Interaction Format compatible with Cytoscape. Reactions are represented as nodes (as in PSS Explorer and database schema). This file contains the node annotations.
-  product_url: https://skm.nib.si/downloads/pss/public/sif-nodes
-  category: GraphProduct
-  original_source:
-  - skm
-  format: sif
-- id: skm.pss.live.sif.projection.graph
-  name: PSS Live Download, projection (SIF/LGL)
-  description: Current PSS model in Simple Interaction Format compatible with Cytoscape. Reactions are collapsed to edges.
-  product_url: https://skm.nib.si/downloads/pss/public/rxn-edges
-  category: GraphProduct
-  original_source:
-  - skm
-  format: sif
-- id: skm.pss.live.sif.projection.annotations
-  name: PSS Live Download, projection (SIF/LGL), node annotations
-  description: Current PSS model in Simple Interaction Format compatible with Cytoscape. Reactions are collapsed to edges. This file contains the node annotations.
-  product_url: https://skm.nib.si/downloads/pss/public/rxn-nodes
-  category: GraphProduct
-  original_source:
-  - skm
-  format: sif
-- id: skm.pss.live.sif.dinar.graph
-  name: PSS Live Download, DiNAR (SIF/LGL)
-  description: Current PSS model in Simple Interaction Format compatible with Cytoscape. Reactions are collapsed to edges, FunctionalClusters are expanded to arabidopsis identifiers.
-  product_url: https://skm.nib.si/downloads/pss/public/dinar-edges
-  category: GraphProduct
-  original_source:
-  - skm
-  format: sif
-- id: skm.pss.live.boolnet.graph
-  name: PSS Live Downloads (BoolNet)
-  description: Current PSS model in Boolean network format compatible with BoolDog and BoolNet
-  product_url: https://skm.nib.si/downloads/pss/public/boolnet
-  category: GraphProduct
-  original_source:
-  - skm
-  format: boolnet
-- id: skm.pss.live.boolnet.annotations
-  name: PSS Live Downloads (BoolNet), node annotations
-  description: Current PSS model in Boolean network format compatible with BoolDog and BoolNet. This file contains the node annotations.
-  product_url: https://skm.nib.si/downloads/pss/public/boolnet-annot
-  category: GraphProduct
-  original_source:
-  - skm
-  format: boolnet
-- id: skm.ckn.v2.graph
-  name: CKN v2 (June 2023)
-  description: Comprehensive Knowledge Network v2 in SIF/LGL format with 26,234 entities and ~500,000 interactions
-  product_url: https://skm.nib.si/downloads/ckn/v2-2023.06
-  category: GraphProduct
-  original_source:
-  - skm
-  format: sif
-  edge_count: 500000
-  node_count: 26234
-- id: skm.ckn.v2.annotations
-  name: CKN v2 (June 2023), node annotations
-  description: Comprehensive Knowledge Network v2 in SIF/LGL format with 26,234 entities and ~500,000 interactions. This file contains the node annotations.
-  product_url: https://skm.nib.si/downloads/ckn-annot/v2-2023.06
-  category: GraphProduct
-  original_source:
-  - skm
-  format: sif
-- id: skm.ckn.v1.graph
-  name: CKN v1 (June 2018)
-  description: Comprehensive Knowledge Network v1 in SIF/LGL format
-  product_url: https://skm.nib.si/downloads/ckn/v1-2018.06
-  category: GraphProduct
-  original_source:
-  - skm
-  format: sif
-- id: skm.ckn.v1.annotations
-  name: CKN v1 (June 2018), node annotations
-  description: Comprehensive Knowledge Network v1 in SIF/LGL format. This file contains the node annotations.
-  product_url: https://skm.nib.si/downloads/ckn-annot/v1-2018.06
-  category: GraphProduct
-  original_source:
-  - skm
-  format: sif
+  id: https://doi.org/10.1016/j.xplc.2024.100920
+  journal: Plant Communications
+  title: 'Stress Knowledge Map: A knowledge graph resource for systems biology analysis
+    of plant stress responses'
+  year: '2024'
+repository: https://github.com/NIB-SI/skm-tools
+version: '1.0'
 ---
-
 # Stress Knowledge Map
 
 The Stress Knowledge Map (SKM) is a comprehensive knowledge graph resource for systems biology analysis of plant stress responses. It provides two complementary knowledge graphs:

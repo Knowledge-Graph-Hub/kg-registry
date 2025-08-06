@@ -10,21 +10,17 @@ contacts:
     value: MaayanLab
   label: Avi Ma'ayan
   orcid: 0000-0002-6628-6249
-description: CREEDS (CRowd Extracted Expression of Differential Signatures) is a database of crowdsourced gene expression signatures for drug, genetic, and disease perturbations.
+description: CREEDS (CRowd Extracted Expression of Differential Signatures) is a database
+  of crowdsourced gene expression signatures for drug, genetic, and disease perturbations.
 domains:
 - pharmacology
 - genomics
 id: creeds
+layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY-4.0
-layout: resource_detail
 name: CREEDS
-publications:
-- doi: 10.1038/ncomms12846
-  id: doi:10.1038/ncomms12846
-  title: Extraction and analysis of signatures from the Gene Expression Omnibus by the crowd
-  year: "2016"
 products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
@@ -77,48 +73,61 @@ products:
   format: json
   id: creeds.manual_single_gene
   name: CREEDS Manual Single Gene Perturbations
+  product_file_size: 58276121
   product_url: https://maayanlab.cloud/CREEDS/download/single_gene_perturbations-v1.0.json
 - category: Product
   description: Manual gene expression signatures derived from disease signatures
   format: json
   id: creeds.manual_disease_signatures
   name: CREEDS Manual Disease Signatures
+  product_file_size: 16865407
   product_url: https://maayanlab.cloud/CREEDS/download/disease_signatures-v1.0.json
 - category: Product
   description: Manual gene expression signatures derived single drug perturbations
   format: json
   id: creeds.manual_single_drug
   name: CREEDS Manual Single Drug Perturbations
+  product_file_size: 17836091
   product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-v1.0.json
 - category: Product
   description: DrugMatrix single drug perturbations
   format: json
   id: creeds.drugmatrix
   name: CREEDS DrugMatrix single drug perturbations
+  product_file_size: 86943390
   product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-DM.json
 - category: Product
   description: Automatic gene expression signatures derived from single gene perturbations
   format: json
   id: creeds.automatic_single_gene
   name: CREEDS Automatic Single Gene Perturbations
+  product_file_size: 175552254
   product_url: https://maayanlab.cloud/CREEDS/download/single_gene_perturbations-p1.0.json
 - category: Product
   description: Automatic gene expression signatures derived from disease signatures
   format: json
   id: creeds.automatic_disease_signatures
   name: CREEDS Automatic Disease Signatures
+  product_file_size: 29173111
   product_url: https://maayanlab.cloud/CREEDS/download/disease_signatures-p1.0.json
 - category: Product
   description: Automatic gene expression signatures derived from single drug perturbations
   format: json
   id: creeds.automatic_single_drug
   name: CREEDS Automatic Single Drug Perturbations
+  product_file_size: 87060413
   product_url: https://maayanlab.cloud/CREEDS/download/single_drug_perturbations-p1.0.json
 - category: GraphicalInterface
   description: Web interface for exploring CREEDS gene expression signatures
   id: creeds.web_interface
   name: CREEDS Web Interface
   product_url: https://maayanlab.cloud/CREEDS/
+publications:
+- doi: 10.1038/ncomms12846
+  id: doi:10.1038/ncomms12846
+  title: Extraction and analysis of signatures from the Gene Expression Omnibus by
+    the crowd
+  year: '2016'
 ---
 # CREEDS: Crowd Extracted Expression of Differential Signatures
 

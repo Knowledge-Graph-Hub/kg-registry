@@ -12,15 +12,14 @@ contacts:
   - contact_type: email
     value: info@ncbi.nlm.nih.gov
   label: NCBI Help Desk
-description: >-
-  NCBI Gene integrates information from a wide range of species. A record may
-  include nomenclature, Reference Sequences (RefSeqs), maps, pathways, variations,
+description: NCBI Gene integrates information from a wide range of species. A record
+  may include nomenclature, Reference Sequences (RefSeqs), maps, pathways, variations,
   phenotypes, and links to genome-, phenotype-, and locus-specific resources worldwide.
 domains:
 - biological systems
 homepage_url: https://www.ncbi.nlm.nih.gov/gene/
 id: ncbigene
-infores_id: "ncbigene"
+infores_id: ncbigene
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -36,6 +35,7 @@ products:
   name: Gene to Accession Mapping
   original_source:
   - ncbigene
+  product_file_size: 3953177919
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2accession.gz
 - category: MappingProduct
   compression: gzip
@@ -47,6 +47,7 @@ products:
   original_source:
   - ensembl
   - ncbigene
+  product_file_size: 282824267
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2ensembl.gz
 - category: MappingProduct
   compression: gzip
@@ -58,6 +59,7 @@ products:
   original_source:
   - go
   - ncbigene
+  product_file_size: 1223833668
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2go.gz
 - category: MappingProduct
   compression: gzip
@@ -69,6 +71,7 @@ products:
   original_source:
   - pubmed
   - ncbigene
+  product_file_size: 230242176
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2pubmed.gz
 - category: MappingProduct
   compression: gzip
@@ -80,6 +83,7 @@ products:
   original_source:
   - refseq
   - ncbigene
+  product_file_size: 2027684801
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2refseq.gz
 - category: Product
   compression: gzip
@@ -89,6 +93,7 @@ products:
   name: Gene Group Data
   original_source:
   - ncbigene
+  product_file_size: 295428
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_group.gz
 - category: Product
   compression: gzip
@@ -99,6 +104,7 @@ products:
   name: Gene History Data
   original_source:
   - ncbigene
+  product_file_size: 153023757
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_history.gz
 - category: Product
   compression: gzip
@@ -109,6 +115,7 @@ products:
   name: Gene Information
   original_source:
   - ncbigene
+  product_file_size: 1354219182
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_info.gz
 - category: Product
   compression: gzip
@@ -118,6 +125,7 @@ products:
   name: Gene Neighbors Data
   original_source:
   - ncbigene
+  product_file_size: 1764403523
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_neighbors.gz
 - category: Product
   compression: gzip
@@ -128,6 +136,7 @@ products:
   name: Gene Orthologs Data
   original_source:
   - ncbigene
+  product_file_size: 108555140
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_orthologs.gz
 - category: MappingProduct
   compression: gzip
@@ -140,6 +149,7 @@ products:
   - refseq
   - ncbigene
   - uniprot
+  product_file_size: 1182285769
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_refseq_uniprotkb_collab.gz
 - category: Product
   compression: gzip
@@ -149,6 +159,7 @@ products:
   name: Gene Summary Data
   original_source:
   - ncbigene
+  product_file_size: 20880547
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_summary.gz
 - category: MappingProduct
   description: MIM to Gene and MedGen mapping data connecting genetic disorders to
@@ -160,6 +171,7 @@ products:
   - ncbigene
   - medgen
   - omim
+  product_file_size: 954971
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/mim2gene_medgen
 - category: GraphicalInterface
   description: Web-based search and browsing interface for the NCBI Gene database

@@ -4,8 +4,8 @@ category: DataSource
 contacts:
 - category: Organization
   label: ChEBI
-description: "Chemical Entities of Biological Interest (ChEBI) is a freely available\
-  \ dictionary of molecular entities focused on \u2018small\u2019 chemical compounds."
+description: Chemical Entities of Biological Interest (ChEBI) is a freely available
+  dictionary of molecular entities focused on ‘small’ chemical compounds.
 domains:
 - chemistry and biochemistry
 homepage_url: https://www.ebi.ac.uk/chebi/
@@ -30,6 +30,7 @@ products:
   - biocyc
   - kegg
   - reactome
+  product_file_size: 400516
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
   secondary_source:
   - obo-db-ingest
@@ -45,6 +46,7 @@ products:
   name: ChEBI structures (lite)
   original_source:
   - chebi
+  product_file_size: 17128008
   product_url: https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/ChEBI_lite_3star.sdf.gz
   secondary_source:
   - chebi
@@ -62,6 +64,7 @@ products:
   name: ChEBI structures (complete)
   original_source:
   - chebi
+  product_file_size: 59170179
   product_url: https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/ChEBI_complete_3star.sdf.gz
   secondary_source:
   - chebi
@@ -75,6 +78,7 @@ products:
   - do
   - hp
   - mondo
+  product_file_size: 363367
   product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
   secondary_source:
   - drug-approvals-kp
@@ -88,6 +92,7 @@ products:
   - do
   - hp
   - mondo
+  product_file_size: 363367
   product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
   secondary_source:
   - drug-approvals-kp
@@ -241,6 +246,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -267,6 +273,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -347,6 +354,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -399,6 +407,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
@@ -478,6 +487,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 212124
   product_url: http://purl.obolibrary.org/obo/to.owl
   secondary_source:
   - to
@@ -517,6 +527,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 158383
   product_url: http://purl.obolibrary.org/obo/to.obo
   secondary_source:
   - to
@@ -556,6 +567,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 111996
   product_url: http://purl.obolibrary.org/obo/to/subsets/to-basic.obo
   secondary_source:
   - to

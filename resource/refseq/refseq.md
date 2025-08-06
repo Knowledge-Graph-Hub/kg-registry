@@ -22,6 +22,7 @@ products:
   - refseq
   - ncbigene
   - uniprot
+  product_file_size: 1182285769
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_refseq_uniprotkb_collab.gz
 - category: MappingProduct
   compression: gzip
@@ -33,6 +34,7 @@ products:
   original_source:
   - refseq
   - ncbigene
+  product_file_size: 2027684801
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2refseq.gz
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information

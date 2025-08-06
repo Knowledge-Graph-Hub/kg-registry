@@ -7,6 +7,7 @@ id: biomarkerkg.nodes.biomarker
 name: BKG Biomarker Nodes
 original_source:
 - glygen
+product_file_size: 1252064
 product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Biomarker.nodes.zip
 secondary_source:
 - biomarkerkg
