@@ -13,18 +13,54 @@ REQUEST_TIMEOUT = 10  # seconds
 MAX_FILE_SIZE = 1024 * 1024 * 1024  # 1GB - don't download files larger than this
 EXCLUDED_CATEGORIES = ['GraphicalInterface', 'ProgrammingInterface']
 
+def convert_github_url_to_raw(url: str) -> str:
+    """
+    Convert GitHub blob URLs to raw URLs for direct file access.
+    
+    Examples:
+    - https://github.com/user/repo/blob/main/file.txt -> https://raw.githubusercontent.com/user/repo/main/file.txt
+    - https://github.com/user/repo/blob/master/dir/file.json -> https://raw.githubusercontent.com/user/repo/master/dir/file.json
+    
+    Args:
+        url: The original URL
+        
+    Returns:
+        Raw URL if it's a GitHub blob URL, otherwise the original URL
+    """
+    import re
+    
+    # Pattern to match GitHub blob URLs
+    github_blob_pattern = r'https://github\.com/([^/]+)/([^/]+)/blob/([^/]+)/(.+)'
+    match = re.match(github_blob_pattern, url)
+    
+    if match:
+        user, repo, branch, file_path = match.groups()
+        raw_url = f"https://raw.githubusercontent.com/{user}/{repo}/{branch}/{file_path}"
+        return raw_url
+    
+    return url
+
 def get_file_size_from_header(url: str) -> Optional[int]:
     """
     Retrieve file size from HTTP Content-Length header without downloading the file.
+    Skips HTML pages as these are not downloadable files, but converts GitHub blob URLs to raw URLs first.
     
     Args:
         url: The URL to check
         
     Returns:
-        File size in bytes, or None if unable to determine
+        File size in bytes, or None if unable to determine or if URL points to HTML
     """
     try:
-        print(f"Checking file size for: {url}")
+        # Convert GitHub blob URLs to raw URLs for direct file access
+        original_url = url
+        url = convert_github_url_to_raw(url)
+        
+        if url != original_url:
+            print(f"Checking file size for: {original_url}")
+            print(f"  🔄 Converted to raw URL: {url}")
+        else:
+            print(f"Checking file size for: {url}")
         
         # Use HEAD request to get headers without downloading content
         response = requests.head(url, timeout=REQUEST_TIMEOUT, allow_redirects=True)
@@ -32,6 +68,12 @@ def get_file_size_from_header(url: str) -> Optional[int]:
         # Check if request was successful
         if response.status_code != 200:
             print(f"  ⚠️  HTTP {response.status_code} for {url}")
+            return None
+            
+        # Check Content-Type to skip HTML pages (after URL conversion)
+        content_type = response.headers.get('Content-Type', '').lower()
+        if 'text/html' in content_type:
+            print(f"  ⏭️  Skipping HTML page (Content-Type: {content_type})")
             return None
             
         # Get Content-Length header
