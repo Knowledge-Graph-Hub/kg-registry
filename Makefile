@@ -125,16 +125,6 @@ assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js:
 registry/kgs.jsonld: registry/kgs.yml
 	./util/yaml2json.py $< > $@.tmp && mv $@.tmp $@
 
-# Use Apache-Jena RIOT to convert jsonld to n-triples
-# NOTE: UGLY HACK. If there is a problem then Jena will write WARN message (to stdout!!!), there appears to
-#  be no way to get it to flag this even with strict and check options, so we do a check with grep, ugh.
-# see: http://stackoverflow.com/questions/20860222/why-do-i-have-these-warnings-with-jena-2-11-0
-#registry/kgs.nt: registry/kgs.jsonld
-#	riot --base=http://purl.obolibrary.org/obo/ --strict --check -q registry/context.jsonld $< > $@.tmp && mv $@.tmp $@ && egrep '(WARN|ERROR)' $@ && exit 1 || echo ok
-
-#registry/kgs.ttl: registry/kgs.nt
-#	riot --base=http://purl.obolibrary.org/obo/ --out=ttl $< > $@.tmp && mv $@.tmp $@
-
 ### Validate Configuration Files
 
 # generate both a report of the violations and a grid of all results
