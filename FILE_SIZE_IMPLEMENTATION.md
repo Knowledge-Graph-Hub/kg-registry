@@ -1,23 +1,18 @@
-# File Size Retrieval Implementation for KG-Regi### 4. File Size Per### 5. Layout Updates
+# File Size Retrieval Implementation for KG-Registry
 
-#### Product Detail Page (`_layouts/product_detail.html`)tence
+## Overview
 
-**New Feature**: The script now writes file sizes back to the original resource files in the `resource/` directory.
+This implementation adds automated file size retrieval for product URLs in the KG-Registry build process. The system retrieves file sizes from HTTP headers and displays them alongside download links.
 
-**How it works**:
-1. After retrieving file sizes, the script updates the corresponding products in their resource files
-2. Only adds `product_file_size` field if it doesn't already exist (preserves manual edits)
-3. Uses the frontmatter library to properly parse and update YAML metadata
-4. Maintains file formatting and preserves content
+## Key Features
 
-**Benefits**:
-- **Performance**: Subsequent builds skip products that already have file sizes
-- **Persistence**: File sizes are preserved across builds and git commits
-- **Transparency**: File sizes are visible in the source files for manual review
-- **Efficiency**: Dramatically reduces build time after initial run
+### 1. Smart Filtering
+- **HTML Page Detection**: Automatically skips URLs pointing to HTML pages (Content-Type: text/html)
+- **Category Exclusion**: Skips GraphicalInterface and ProgrammingInterface products
+- **Existing File Size Preservation**: Skips products that already have file sizes
+- **Size Limits**: Skips files larger than 1GB
 
-**Write-back behavior**:
-- Enabled by default (`--write-back`)
+### 2. HTTP Header-Based Retrieval
 - Can be disabled with `--no-write-back` flag
 - Skipped in dry-run mode
 - Only updates products that don't already have file sizestry
@@ -116,11 +111,29 @@ product_file_size:
 ## Error Handling
 
 The script handles various error conditions gracefully:
+- **HTML pages**: Skips URLs pointing to HTML content (Content-Type: text/html) as these are not downloadable files
 - **No Content-Length header**: Skips the product, logs warning
 - **HTTP errors**: Skips the product, logs HTTP status code
 - **Network timeouts**: 10-second timeout, skips on timeout
 - **Large files**: Skips files larger than 1GB to prevent issues
 - **Invalid Content-Length**: Skips if header value is not a valid integer
+
+## Content Type Filtering
+
+The script automatically filters out non-downloadable content:
+
+**Skipped Content Types**:
+- `text/html` - HTML pages, including GitHub file browser pages
+- `text/html; charset=utf-8` - HTML pages with charset specification
+
+**Processed Content Types**:
+- `application/zip` - ZIP archives
+- `application/gzip` - Gzipped files  
+- `application/octet-stream` - Binary files
+- `text/plain` - Text files
+- And other non-HTML content types
+
+This ensures that file size information is only collected for actual downloadable files, not web pages or documentation links.
 
 ## Performance Considerations
 
