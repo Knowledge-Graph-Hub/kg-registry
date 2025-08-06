@@ -10,7 +10,7 @@ contacts:
     value: gglusman@isbscience.org
   - contact_type: github
     value: gglusman
-  label: "Gw\xEAnlyn Glusman"
+  label: Gwênlyn Glusman
 description: A Translator knowledge provider focused on drug approval status and other
   drug-related metadata.
 domains:
@@ -32,6 +32,7 @@ products:
   - do
   - hp
   - mondo
+  product_file_size: 701451
   product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
   secondary_source:
   - drug-approvals-kp
@@ -45,6 +46,7 @@ products:
   - do
   - hp
   - mondo
+  product_file_size: 31052966
   product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
   secondary_source:
   - drug-approvals-kp

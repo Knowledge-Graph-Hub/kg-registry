@@ -27,6 +27,7 @@ products:
   name: ZFA
   original_source:
   - zfin
+  product_file_size: 401588
   product_url: http://purl.obolibrary.org/obo/zfa.owl
   secondary_source:
   - zfin
@@ -39,6 +40,7 @@ products:
   name: zfin OBO
   original_source:
   - zfin
+  product_file_size: 2643947
   product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.obo
   secondary_source:
   - obo-db-ingest
@@ -54,6 +56,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
   secondary_source:
   - obo-db-ingest
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: Product
   description: zfin OBO Graph JSON
   id: obo-db-ingest.zfin.json
@@ -66,6 +71,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.json
   secondary_source:
   - obo-db-ingest
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: MappingProduct
   description: zfin SSSOM
   id: obo-db-ingest.zfin.sssom.tsv
@@ -75,6 +83,7 @@ products:
   name: zfin SSSOM
   original_source:
   - zfin
+  product_file_size: 374627
   product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.sssom.tsv
   secondary_source:
   - obo-db-ingest
@@ -88,6 +97,7 @@ products:
   name: ZFIN clean gene to phenotype
   original_source:
   - zfin
+  product_file_size: 42545110
   product_url: https://zfin.org/downloads/phenoGeneCleanData_fish.txt
   secondary_source:
   - zfin
@@ -101,6 +111,7 @@ products:
   name: ZFIN gene to publication
   original_source:
   - zfin
+  product_file_size: 39531152
   product_url: https://zfin.org/downloads/gene_publication.txt
   secondary_source:
   - zfin

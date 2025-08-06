@@ -26,6 +26,7 @@ products:
   name: rhea OBO
   original_source:
   - rhea
+  product_file_size: 4826502
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.obo
   secondary_source:
   - obo-db-ingest
@@ -42,6 +43,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.owl
   secondary_source:
   - obo-db-ingest
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: Product
   description: rhea OBO Graph JSON
   format: json
@@ -55,6 +59,9 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.json
   secondary_source:
   - obo-db-ingest
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: MappingProduct
   description: Rhea SSSOM
   format: sssom
@@ -70,6 +77,7 @@ products:
   - metacyc
   - m-csa
   - ecocyc
+  product_file_size: 154171
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv
   secondary_source:
   - obo-db-ingest

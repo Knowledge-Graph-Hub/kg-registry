@@ -35,6 +35,7 @@ products:
   name: BKG Anatomy Nodes
   original_source:
   - uberon
+  product_file_size: 332
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.nodes.zip
   secondary_source:
   - biomarkerkg
@@ -46,6 +47,7 @@ products:
   name: BKG Biomarker Nodes
   original_source:
   - glygen
+  product_file_size: 1252064
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Biomarker.nodes.zip
   secondary_source:
   - biomarkerkg
@@ -57,6 +59,7 @@ products:
   name: BKG Compound Nodes
   original_source:
   - pubchem
+  product_file_size: 871
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Compound.nodes.zip
   secondary_source:
   - biomarkerkg
@@ -68,6 +71,7 @@ products:
   name: BKG Condition Nodes
   original_source:
   - do
+  product_file_size: 5501
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.nodes.zip
   secondary_source:
   - biomarkerkg
@@ -79,6 +83,7 @@ products:
   name: BKG Role Nodes
   original_source:
   - biomarkerkg
+  product_file_size: 276
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Role.nodes.zip
   secondary_source:
   - biomarkerkg
@@ -90,6 +95,7 @@ products:
   name: BKG Variant Nodes
   original_source:
   - dbsnp
+  product_file_size: 782975
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Variant.nodes.zip
   secondary_source:
   - biomarkerkg
@@ -101,6 +107,7 @@ products:
   name: BKG Anatomy Edges
   original_source:
   - biomarkerkg
+  product_file_size: 1229
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.edges.zip
   secondary_source:
   - biomarkerkg
@@ -113,6 +120,7 @@ products:
   name: BKG Compound Edges
   original_source:
   - biomarkerkg
+  product_file_size: 1333
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Compound.edges.zip
   secondary_source:
   - biomarkerkg
@@ -125,6 +133,7 @@ products:
   name: BKG Condition Edges
   original_source:
   - biomarkerkg
+  product_file_size: 1204603
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.edges.zip
   secondary_source:
   - biomarkerkg
@@ -136,6 +145,7 @@ products:
   name: BKG Role Edges
   original_source:
   - biomarkerkg
+  product_file_size: 355306
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Role.edges.zip
   secondary_source:
   - biomarkerkg
@@ -147,6 +157,7 @@ products:
   name: BKG Variant Edges
   original_source:
   - biomarkerkg
+  product_file_size: 1067491
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Variant.edges.zip
   secondary_source:
   - biomarkerkg

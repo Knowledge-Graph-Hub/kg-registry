@@ -289,7 +289,8 @@ layout: default
         <h4><i class="bi bi-box-seam-fill"></i> Products</h4>
       </div>
       {% if has_internal_products %}
-      <h5 style="margin-left: 0.5em; margin-top: 0.5em">From this Resource</h5>
+      <h5 style="margin-left: 0.5em; margin-top: 0.5em; text-decoration: underline dotted; cursor: help;"
+        title="The {{page.id}} resource is the primary source for these products.">From this Resource</h5>
       <div class="table-responsive">
         <table class="table table-striped mb-0">
           <thead>
@@ -323,6 +324,18 @@ layout: default
             <td>
               {% if p.product_url %}
               <a href="{{p.product_url}}">{{p.product_url | split: '/' | last}}</a>
+              {% if p.product_file_size %}
+                {% assign size = p.product_file_size %}
+                {% if size < 1024 %}
+                  ({{ size }} B)
+                {% elsif size < 1048576 %}
+                  ({{ size | divided_by: 1024.0 | round: 1 }} KB)
+                {% elsif size < 1073741824 %}
+                  ({{ size | divided_by: 1048576.0 | round: 1 }} MB)
+                {% else %}
+                  ({{ size | divided_by: 1073741824.0 | round: 1 }} GB)
+                {% endif %}
+              {% endif %}
               {% else %}
               ❔
               {% endif %}
@@ -346,7 +359,8 @@ layout: default
       </div>
       {% endif %}
       {% if has_external_products %}
-      <h5 style="margin-left: 0.5em; margin-top: 0.5em">From other Resources</h5>
+      <h5 style="margin-left: 0.5em; margin-top: 0.5em; text-decoration: underline dotted; cursor: help;"
+        title="These products process or incorporate products from the {{page.id}} resource.">From other Resources</h5>
       <div class="table-responsive">
         <table class="table table-striped mb-0">
           <thead>
@@ -379,6 +393,18 @@ layout: default
             <td>
               {% if p.product_url %}
               <a href="{{p.product_url}}">{{p.product_url | split: '/' | last}}</a>
+              {% if p.product_file_size %}
+                {% assign size = p.product_file_size %}
+                {% if size < 1024 %}
+                  ({{ size }} B)
+                {% elsif size < 1048576 %}
+                  ({{ size | divided_by: 1024.0 | round: 1 }} KB)
+                {% elsif size < 1073741824 %}
+                  ({{ size | divided_by: 1048576.0 | round: 1 }} MB)
+                {% else %}
+                  ({{ size | divided_by: 1073741824.0 | round: 1 }} GB)
+                {% endif %}
+              {% endif %}
               {% else %}
               ❔
               {% endif %}
@@ -506,7 +532,8 @@ layout: default
           {% for detail in c.contact_details %}
           {% if detail.contact_type != 'email' and detail.contact_type != 'github' and detail.contact_type != 'url' %}
           {% if detail.contact_type_url %}
-          <p><strong>{{ detail.contact_type_name }}: </strong>{{ detail.value }} (<a href="{{ detail.contact_type_url }}">site</a>)</p>
+          <p><strong>{{ detail.contact_type_name }}: </strong>{{ detail.value }} (<a
+              href="{{ detail.contact_type_url }}">site</a>)</p>
           {% else %}
           <p><strong>{{ detail.contact_type_name }}: </strong>{{ detail.value }}</p>
           {% endif %}
@@ -536,7 +563,8 @@ layout: default
       {% endif %}
       {% if page.creation_date and page.last_modified_date %} | {% endif %}
       {% if page.last_modified_date %}
-      <span title="Date this entry was last updated">Last modified: {{ page.last_modified_date | date: "%B %d, %Y" }}</span>
+      <span title="Date this entry was last updated">Last modified: {{ page.last_modified_date | date: "%B %d, %Y"
+        }}</span>
       {% endif %}
     </p>
   </div>

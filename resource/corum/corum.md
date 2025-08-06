@@ -1,113 +1,98 @@
 ---
 activity_status: active
 category: DataSource
-description: CORUM (Comprehensive Resource of Mammalian Protein Complexes) is a curated database of experimentally characterized protein complexes from mammalian organisms, particularly human, mouse, and rat, with a focus on manually annotated information from scientific literature.
-domains:
-- proteomics
-- biomedical
-- chemistry and biochemistry
-homepage_url: https://mips.helmholtz-muenchen.de/corum/
-repository: https://mips.helmholtz-muenchen.de/corum/download
-id: corum
-layout: resource_detail
-name: CORUM
-creation_date: '2025-07-22T00:00:00Z'
-last_modified_date: '2025-07-22T00:00:00Z'
-license:
-  id: https://creativecommons.org/licenses/by-nc/4.0/
-  label: CC BY-NC 4.0
 contacts:
 - category: Organization
-  label: Helmholtz Zentrum München
   contact_details:
   - contact_type: url
     value: https://www.helmholtz-munich.de/
   - contact_type: email
     value: corum@helmholtz-muenchen.de
-publications:
-- id: doi:10.1093/nar/gkac1015
-  title: "CORUM: the comprehensive resource of mammalian protein complexes—2023"
-  authors:
-  - Stefanie Gößler
-  - Gisela Fobo
-  - Barbara Wankerl
-  - Christopher J. Mann
-  - Hans-Werner Mewes
-  - Andreas Ruepp
-  doi: 10.1093/nar/gkac1015
-  journal: Nucleic Acids Research
-  year: "2023"
-  preferred: true
-- id: doi:10.1093/nar/gky973
-  title: "CORUM: the comprehensive resource of mammalian protein complexes—2019"
-  authors:
-  - Andreas Giurgiu
-  - Julian Reinhard
-  - Barbara Brauner
-  - Irmtraud Dunger-Kaltenbach
-  - Gisela Fobo
-  - Goar Frishman
-  - Corinna Montrone
-  - Andreas Ruepp
-  doi: 10.1093/nar/gky973
-  journal: Nucleic Acids Research
-  year: "2019"
-- id: doi:10.1093/nar/gkp914
-  title: "CORUM: the comprehensive resource of mammalian protein complexes—2009"
-  authors:
-  - Andreas Ruepp
-  - Barbara Brauner
-  - Irmtraud Dunger-Kaltenbach
-  - Goar Frishman
-  - Corinna Montrone
-  - Michael Stransky
-  - Brigitte Waegele
-  - Thorsten Schmidt
-  - Octave Noubibou Doudieu
-  - Volker Stümpflen
-  - Hans-Werner Mewes
-  doi: 10.1093/nar/gkp914
-  journal: Nucleic Acids Research
-  year: "2010"
+  label: Helmholtz Zentrum München
+creation_date: '2025-07-22T00:00:00Z'
+description: CORUM (Comprehensive Resource of Mammalian Protein Complexes) is a curated
+  database of experimentally characterized protein complexes from mammalian organisms,
+  particularly human, mouse, and rat, with a focus on manually annotated information
+  from scientific literature.
+domains:
+- proteomics
+- biomedical
+- chemistry and biochemistry
+homepage_url: https://mips.helmholtz-muenchen.de/corum/
+id: corum
+last_modified_date: '2025-07-22T00:00:00Z'
+layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by-nc/4.0/
+  label: CC BY-NC 4.0
+name: CORUM
 products:
 - category: Product
-  description: Complete dataset of all curated protein complexes in CORUM in tab-delimited format
+  description: Complete dataset of all curated protein complexes in CORUM in tab-delimited
+    format
+  format: tsv
   id: corum.all_complexes
+  license:
+    id: https://creativecommons.org/licenses/by-nc/4.0/
+    label: CC BY-NC 4.0
   name: CORUM All Complexes
-  format: tsv
   product_url: https://mips.helmholtz-muenchen.de/corum/download/allComplexes.txt.zip
-  license:
-    id: https://creativecommons.org/licenses/by-nc/4.0/
-    label: CC BY-NC 4.0
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: Error connecting
+    to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
+    retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
-  description: Core dataset of manually curated, non-redundant protein complexes in CORUM in tab-delimited format
-  id: corum.core_complexes
-  name: CORUM Core Complexes
+  description: Core dataset of manually curated, non-redundant protein complexes in
+    CORUM in tab-delimited format
   format: tsv
+  id: corum.core_complexes
+  license:
+    id: https://creativecommons.org/licenses/by-nc/4.0/
+    label: CC BY-NC 4.0
+  name: CORUM Core Complexes
   product_url: https://mips.helmholtz-muenchen.de/corum/download/coreComplexes.txt.zip
-  license:
-    id: https://creativecommons.org/licenses/by-nc/4.0/
-    label: CC BY-NC 4.0
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: Error connecting
+    to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
+    retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
-  description: Dataset of all CORUM protein complexes in PSI-MI XML format (Proteomics Standards Initiative)
-  id: corum.psi_mi
-  name: CORUM PSI-MI
+  description: Dataset of all CORUM protein complexes in PSI-MI XML format (Proteomics
+    Standards Initiative)
   format: psi_mi_xml
-  product_url: https://mips.helmholtz-muenchen.de/corum/download/psi.zip
+  id: corum.psi_mi
   license:
     id: https://creativecommons.org/licenses/by-nc/4.0/
     label: CC BY-NC 4.0
+  name: CORUM PSI-MI
+  product_url: https://mips.helmholtz-muenchen.de/corum/download/psi.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: Error connecting
+    to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
+    retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: Dataset of all CORUM protein complexes in PSI-MI MITAB 2.5 format
-  id: corum.mitab
-  name: CORUM MITAB
   format: psi_mi_mitab
-  product_url: https://mips.helmholtz-muenchen.de/corum/download/mitab.zip
+  id: corum.mitab
   license:
     id: https://creativecommons.org/licenses/by-nc/4.0/
     label: CC BY-NC 4.0
+  name: CORUM MITAB
+  product_url: https://mips.helmholtz-muenchen.de/corum/download/mitab.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: Error connecting
+    to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
+    retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
-  description: Network embeddings of the Bioteque graph that represent biological entities and their associations
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
   id: bioteque.embeddings
   name: Bioteque Embeddings
   original_source:
@@ -151,6 +136,52 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   secondary_source:
   - bioteque
+publications:
+- authors:
+  - Stefanie Gößler
+  - Gisela Fobo
+  - Barbara Wankerl
+  - Christopher J. Mann
+  - Hans-Werner Mewes
+  - Andreas Ruepp
+  doi: 10.1093/nar/gkac1015
+  id: doi:10.1093/nar/gkac1015
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'CORUM: the comprehensive resource of mammalian protein complexes—2023'
+  year: '2023'
+- authors:
+  - Andreas Giurgiu
+  - Julian Reinhard
+  - Barbara Brauner
+  - Irmtraud Dunger-Kaltenbach
+  - Gisela Fobo
+  - Goar Frishman
+  - Corinna Montrone
+  - Andreas Ruepp
+  doi: 10.1093/nar/gky973
+  id: doi:10.1093/nar/gky973
+  journal: Nucleic Acids Research
+  title: 'CORUM: the comprehensive resource of mammalian protein complexes—2019'
+  year: '2019'
+- authors:
+  - Andreas Ruepp
+  - Barbara Brauner
+  - Irmtraud Dunger-Kaltenbach
+  - Goar Frishman
+  - Corinna Montrone
+  - Michael Stransky
+  - Brigitte Waegele
+  - Thorsten Schmidt
+  - Octave Noubibou Doudieu
+  - Volker Stümpflen
+  - Hans-Werner Mewes
+  doi: 10.1093/nar/gkp914
+  id: doi:10.1093/nar/gkp914
+  journal: Nucleic Acids Research
+  title: 'CORUM: the comprehensive resource of mammalian protein complexes—2009'
+  year: '2010'
+repository: https://mips.helmholtz-muenchen.de/corum/download
 ---
 # CORUM - Comprehensive Resource of Mammalian Protein Complexes
 

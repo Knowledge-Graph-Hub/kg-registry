@@ -45,7 +45,21 @@ layout: default
         <div class="card-body">
           <h5 class="card-title">URL</h5>
           {% if page.product_url %}
-          <p class="card-text"><a href="{{page.product_url}}">{{page.product_url | split: '/' | last}}</a></p>
+          <p class="card-text">
+            <a href="{{page.product_url}}">{{page.product_url | split: '/' | last}}</a>
+            {% if page.product_file_size %}
+              {% assign size = page.product_file_size %}
+              {% if size < 1024 %}
+                ({{ size }} B)
+              {% elsif size < 1048576 %}
+                ({{ size | divided_by: 1024.0 | round: 1 }} KB)
+              {% elsif size < 1073741824 %}
+                ({{ size | divided_by: 1048576.0 | round: 1 }} MB)
+              {% else %}
+                ({{ size | divided_by: 1073741824.0 | round: 1 }} GB)
+              {% endif %}
+            {% endif %}
+          </p>
           {% else %}
           <p class="card-text" style="font-weight: bold;">Unknown</p>
           {% endif %}

@@ -1,8 +1,15 @@
 ---
-layout: resource_detail
 activity_status: active
-id: neo
-name: Noctua Entity Ontology
+category: Resource
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: cjmungall@lbl.gov
+  - contact_type: github
+    value: cmungall
+  label: Christopher J. Mungall
+  orcid: 0000-0002-6601-2165
 description: 'This repository contains classes required by Noctua/Minerva for representing
   entities that are object of ''enabled by'' relations, and similar molecular relationships.
   This includes: genes, protein (gene-level generic proteins and isoforms), functional
@@ -11,29 +18,22 @@ description: 'This repository contains classes required by Noctua/Minerva for re
   as a largely flat list.'
 domains:
 - biological systems
-contacts:
-- category: Individual
-  label: Christopher J. Mungall
-  orcid: 0000-0002-6601-2165
-  contact_details:
-  - contact_type: email
-    value: cjmungall@lbl.gov
-  - contact_type: github
-    value: cmungall
 homepage_url: https://github.com/geneontology/neo/
-repository: https://github.com/geneontology/neo/
+id: neo
+layout: resource_detail
+name: Noctua Entity Ontology
 products:
-- id: neo.model
-  name: neo OWL release
+- category: Product
   description: OWL release of neo
-  category: Product
-  product_url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
   format: owl
-  secondary_source:
-  - neo
+  id: neo.model
+  name: neo OWL release
   original_source:
   - neo
-category: Resource
+  product_file_size: 2278767531
+  product_url: http://purl.obolibrary.org/obo/go/noctua/neo.owl
+  secondary_source:
+  - neo
+repository: https://github.com/geneontology/neo/
 ---
-
 Noctua Entity Ontology. Conversion of gene and gene-centric entity IDs from uniprot and MODs.

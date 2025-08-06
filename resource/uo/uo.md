@@ -31,6 +31,7 @@ products:
   name: UO OWL
   original_source:
   - uo
+  product_file_size: 32548
   product_url: http://purl.obolibrary.org/obo/uo.owl
 - category: DataModelProduct
   description: The latest release of UO in OBO format
@@ -39,6 +40,7 @@ products:
   name: UO OBO
   original_source:
   - uo
+  product_file_size: 19376
   product_url: http://purl.obolibrary.org/obo/uo.obo
 - category: DataModelProduct
   description: The latest release of UO in JSON format
@@ -48,6 +50,9 @@ products:
   original_source:
   - uo
   product_url: http://purl.obolibrary.org/obo/uo.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: GraphicalInterface
   description: Browse UO with Ontology Lookup Service (OLS)
   format: http
@@ -248,6 +253,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -300,6 +306,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo

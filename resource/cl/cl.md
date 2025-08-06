@@ -1,82 +1,90 @@
 ---
 activity_status: active
 category: DataModel
-description: The Cell Ontology (CL) is a structured controlled vocabulary for cell types in animals. It serves as a comprehensive resource for model organism and bioinformatics databases, with over 2,700 cell type classes and rich integration with other biomedical ontologies.
-domains:
-- anatomy and development
-- biomedical
-homepage_url: https://cell-ontology.github.io/
-repository: https://github.com/obophenotype/cell-ontology
-id: cl
-layout: resource_detail
-name: Cell Ontology
-creation_date: '2025-07-22T00:00:00Z'
-last_modified_date: '2025-07-22T00:00:00Z'
-license:
-  id: http://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
 contacts:
 - category: Individual
-  label: Alexander D. Diehl
-  orcid: 0000-0001-9990-8331
   contact_details:
   - contact_type: email
     value: addiehl@buffalo.edu
   - contact_type: github
     value: addiehl
+  label: Alexander D. Diehl
+  orcid: 0000-0001-9990-8331
 - category: Organization
-  label: OBO Foundry
   contact_details:
   - contact_type: url
     value: https://obofoundry.org/
   - contact_type: github
     value: obophenotype
+  label: OBO Foundry
+creation_date: '2025-07-22T00:00:00Z'
+description: The Cell Ontology (CL) is a structured controlled vocabulary for cell
+  types in animals. It serves as a comprehensive resource for model organism and bioinformatics
+  databases, with over 2,700 cell type classes and rich integration with other biomedical
+  ontologies.
+domains:
+- anatomy and development
+- biomedical
+homepage_url: https://cell-ontology.github.io/
+id: cl
+last_modified_date: '2025-07-22T00:00:00Z'
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+name: Cell Ontology
 products:
 - category: DataModelProduct
   description: The latest release of CL in OWL format with full imports and reasoning
   format: owl
   id: cl.owl
-  name: CL OWL
-  product_url: http://purl.obolibrary.org/obo/cl.owl
   license:
     id: http://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
+  name: CL OWL
+  product_file_size: 62825843
+  product_url: http://purl.obolibrary.org/obo/cl.owl
 - category: DataModelProduct
   description: The latest release of CL in OBO format with imports merged in
   format: obo
   id: cl.obo
-  name: CL OBO
-  product_url: http://purl.obolibrary.org/obo/cl.obo
   license:
     id: http://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
+  name: CL OBO
+  product_file_size: 15978994
+  product_url: http://purl.obolibrary.org/obo/cl.obo
 - category: DataModelProduct
-  description: The latest release of CL in OBOGraph-JSON format with imports merged in
+  description: The latest release of CL in OBOGraph-JSON format with imports merged
+    in
   format: json
   id: cl.json
-  name: CL JSON
-  product_url: http://purl.obolibrary.org/obo/cl.json
   license:
     id: http://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
+  name: CL JSON
+  product_file_size: 36966292
+  product_url: http://purl.obolibrary.org/obo/cl.json
 - category: DataModelProduct
   description: Basic version of CL with no inter-ontology axioms (OWL format)
   format: owl
   id: cl.basic.owl
-  name: CL Basic OWL
-  product_url: http://purl.obolibrary.org/obo/cl/cl-basic.owl
   license:
     id: http://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
+  name: CL Basic OWL
+  product_file_size: 7368897
+  product_url: http://purl.obolibrary.org/obo/cl/cl-basic.owl
 - category: DataModelProduct
   description: Basic version of CL with no inter-ontology axioms (OBO format)
   format: obo
   id: cl.basic.obo
-  name: CL Basic OBO
-  product_url: http://purl.obolibrary.org/obo/cl/cl-basic.obo
   license:
     id: http://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
+  name: CL Basic OBO
+  product_file_size: 2413965
+  product_url: http://purl.obolibrary.org/obo/cl/cl-basic.obo
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -296,6 +304,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -348,6 +357,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
@@ -376,9 +386,7 @@ products:
   secondary_source:
   - mechreponet
 publications:
-- id: doi:10.1186/s13326-016-0088-7
-  title: The Cell Ontology 2016 - enhanced content, modularization, and ontology interoperability
-  authors:
+- authors:
   - Alexander D Diehl
   - Terrence F Meehan
   - Yvonne M Bradford
@@ -394,12 +402,12 @@ publications:
   - Melissa A Haendel
   - Christopher J Mungall
   doi: 10.1186/s13326-016-0088-7
+  id: doi:10.1186/s13326-016-0088-7
   journal: Journal of Biomedical Semantics
-  year: "2016"
   preferred: true
-- id: doi:10.1186/1471-2105-12-6
-  title: Logical development of the cell ontology
-  authors:
+  title: The Cell Ontology 2016 - enhanced content, modularization, and ontology interoperability
+  year: '2016'
+- authors:
   - Terrence F Meehan
   - Anna Maria Masci
   - Amina Abdulla
@@ -408,19 +416,21 @@ publications:
   - Christopher J Mungall
   - Alexander D Diehl
   doi: 10.1186/1471-2105-12-6
+  id: doi:10.1186/1471-2105-12-6
   journal: BMC Bioinformatics
-  year: "2011"
-- id: doi:10.1186/gb-2005-6-2-r21
-  title: An ontology for cell types
-  authors:
+  title: Logical development of the cell ontology
+  year: '2011'
+- authors:
   - Jonathan Bard
   - Seung Y Rhee
   - Michael Ashburner
   doi: 10.1186/gb-2005-6-2-r21
+  id: doi:10.1186/gb-2005-6-2-r21
   journal: Genome Biology
-  year: "2005"
+  title: An ontology for cell types
+  year: '2005'
+repository: https://github.com/obophenotype/cell-ontology
 ---
-
 # Cell Ontology (CL)
 
 The Cell Ontology (CL) is a structured controlled vocabulary for cell types in animals. Created in 2004 and maintained as a core OBO Foundry ontology, it serves as a comprehensive resource for model organism and bioinformatics databases, with over 2,700 cell type classes and rich integration with other biomedical ontologies.

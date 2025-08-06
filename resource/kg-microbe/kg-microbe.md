@@ -39,6 +39,9 @@ products:
   product_url: https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz
   secondary_source:
   - kg-microbe
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 403 error
+    when accessing file'
 - category: GraphProduct
   compression: targz
   description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
@@ -70,6 +73,7 @@ products:
   name: KG-Microbe KGX Graph - Function
   original_source:
   - kg-microbe
+  product_file_size: 4623010863
   product_url: https://kghub.io/kg-microbe/KGMicrobe-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
@@ -81,6 +85,7 @@ products:
   name: KG-Microbe KGX Graph - Biomedical-Function
   original_source:
   - kg-microbe
+  product_file_size: 4640682152
   product_url: https://kghub.io/kg-microbe/KGMicrobe-biomedical-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
@@ -92,6 +97,7 @@ products:
   name: KG-Microbe UniProt microbe transform
   original_source:
   - uniprot
+  product_file_size: 4796343398
   product_url: https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
   secondary_source:
   - kg-microbe

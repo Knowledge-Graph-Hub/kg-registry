@@ -27,6 +27,7 @@ products:
   name: ROBOKOP Knowledge Graph (KG)
   original_source:
   - robokop
+  product_file_size: 280
   product_url: http://robokopkg.renci.org
   secondary_source:
   - robokop
@@ -40,6 +41,9 @@ products:
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files
   secondary_source:
   - automat
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: Robokop Plus
   format: kgx-jsonl
@@ -50,6 +54,9 @@ products:
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files
   secondary_source:
   - automat
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 repository: https://github.com/NCATS-Gamma/robokop
 ---
 ### ROBOKOP: A Knowledge Graph System for Biomedical Question Answering

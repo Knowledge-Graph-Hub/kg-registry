@@ -27,6 +27,7 @@ products:
   name: Reactome Human from BioPAX, sqlite
   original_source:
   - reactome
+  product_file_size: 178009249
   product_url: https://s3.amazonaws.com/bbop-sqlite/reactome-hs.db.gz
   secondary_source:
   - reactome
@@ -45,6 +46,7 @@ products:
   - metacyc
   - m-csa
   - ecocyc
+  product_file_size: 154171
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv
   secondary_source:
   - obo-db-ingest
@@ -62,6 +64,7 @@ products:
   - biocyc
   - kegg
   - reactome
+  product_file_size: 400516
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
   secondary_source:
   - obo-db-ingest
@@ -240,6 +243,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -266,6 +270,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
   - rtx-kg2.code

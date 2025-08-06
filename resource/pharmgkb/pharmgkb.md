@@ -29,6 +29,7 @@ products:
   format: tsv
   id: pharmgkb.clinicalannotations
   name: PharmKB Clinical Annotations
+  product_file_size: 1231768
   product_url: https://api.pharmgkb.org/v1/download/file/data/clinicalAnnotations.zip
 - category: Product
   compression: zip
@@ -36,6 +37,7 @@ products:
   format: tsv
   id: pharmgkb.clinicalannotations.loe
   name: PharmKB Clinical Annotations (LOE 1-2)
+  product_file_size: 271314
   product_url: https://api.pharmgkb.org/v1/download/file/data/clinicalAnnotations_LOE1-2.zip
 - category: Product
   compression: zip
@@ -43,6 +45,7 @@ products:
   format: tsv
   id: pharmgkb.variantannotations
   name: PharmKB Variant Annotations
+  product_file_size: 4071535
   product_url: https://api.pharmgkb.org/v1/download/file/data/variantAnnotations.zip
 - category: Product
   compression: zip
@@ -50,6 +53,7 @@ products:
   format: tsv
   id: pharmgkb.relationships
   name: PharmKB Relationships
+  product_file_size: 1261136
   product_url: https://api.pharmgkb.org/v1/download/file/data/relationships.zip
 - category: Product
   compression: zip
@@ -57,6 +61,7 @@ products:
   format: json
   id: pharmgkb.guidelineannotations
   name: PharmKB Clinical Guideline Annotations
+  product_file_size: 811786
   product_url: https://api.pharmgkb.org/v1/download/file/data/guidelineAnnotations.json.zip
 - category: Product
   compression: zip
@@ -64,6 +69,7 @@ products:
   format: tsv
   id: pharmgkb.druglabels
   name: PharmKB Drug Label Annotations
+  product_file_size: 55911
   product_url: https://api.pharmgkb.org/v1/download/file/data/drugLabels.zip
 - category: Product
   compression: zip
@@ -71,6 +77,7 @@ products:
   format: xml
   id: pharmgkb.pathways.biopax
   name: PharmKB Pathways (BioPax)
+  product_file_size: 645142
   product_url: https://api.pharmgkb.org/v1/download/file/data/pathways-biopax.zip
 - category: Product
   compression: zip
@@ -78,6 +85,7 @@ products:
   format: tsv
   id: pharmgkb.pathways.tsv
   name: PharmKB Pathways (TSV)
+  product_file_size: 195089
   product_url: https://api.pharmgkb.org/v1/download/file/data/pathways-tsv.zip
 - category: Product
   compression: zip
@@ -85,6 +93,7 @@ products:
   format: json
   id: pharmgkb.pathways.json
   name: PharmKB Pathways (JSON)
+  product_file_size: 1873189
   product_url: https://api.pharmgkb.org/v1/download/file/data/pathways.json.zip
 - category: Product
   compression: zip
@@ -92,6 +101,7 @@ products:
   format: tsv
   id: pharmgkb.clinicalvariants
   name: PharmKB Clinical Variants
+  product_file_size: 74321
   product_url: https://api.pharmgkb.org/v1/download/file/data/clinicalVariants.zip
 - category: Product
   compression: zip
@@ -99,6 +109,7 @@ products:
   format: tsv
   id: pharmgkb.literatureoccurrences
   name: PharmKB Literature Occurrences
+  product_file_size: 1918901
   product_url: https://api.pharmgkb.org/v1/download/file/data/occurrences.zip
 - category: Product
   compression: zip
@@ -108,6 +119,9 @@ products:
   id: pharmgkb.automatedannotations
   name: PharmKB Automated Annotations
   product_url: https://api.pharmgkb.org/v1/download/file/data/automated_annotations.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Summary of gene information used by PharmGKB and annotations
@@ -115,6 +129,9 @@ products:
   id: pharmgkb.genes
   name: PharmKB Genes
   product_url: https://api.pharmgkb.org/v1/download/file/data/genes.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Summary of variants annotated by PharmGKB that have been tracked in
@@ -122,6 +139,7 @@ products:
   format: tsv
   id: pharmgkb.variants
   name: PharmKB Variants
+  product_file_size: 850310
   product_url: https://api.pharmgkb.org/v1/download/file/data/variants.zip
 - category: Product
   compression: zip
@@ -130,6 +148,9 @@ products:
   id: pharmgkb.drugs
   name: PharmKB Drugs
   product_url: https://api.pharmgkb.org/v1/download/file/data/drugs.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Summaries of chemical information annotated by PharmGKB
@@ -137,12 +158,16 @@ products:
   id: pharmgkb.chemicals
   name: PharmKB Chemicals
   product_url: https://api.pharmgkb.org/v1/download/file/data/chemicals.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Summary of disease and other phenotypes annotated by PharmGKB
   format: tsv
   id: pharmgkb.phenotypes
   name: PharmKB Phenotypes
+  product_file_size: 186836
   product_url: https://api.pharmgkb.org/v1/download/file/data/phenotypes.zip
 - category: Product
   description: Archive of papers of interest from May 2006 to April 2017
@@ -150,6 +175,9 @@ products:
   id: pharmgkb.papers
   name: PharmKB Papers of Interest Archive
   product_url: https://api.pharmgkb.org/v1/download/file/attachment/PapersOfInterestArchive.csv
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Haplotype frequencies from UK Biobank dataset using PharmCAT
@@ -157,6 +185,9 @@ products:
   id: pharmgkb.haplotypefrequencies.ukbb
   name: PharmKB UK Biobank Frequencies
   product_url: https://api.pharmgkb.org/v1/download/file/data/pharmgkb_haplotype_frequencies_UKBB.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Haplotype, phenotype, and activity score frequencies from AllOfUs dataset
@@ -164,6 +195,7 @@ products:
   format: tsv
   id: pharmgkb.haplotypefrequencies.allofus
   name: PharmKB AllOfUs Biobank Frequencies
+  product_file_size: 58421
   product_url: https://api.pharmgkb.org/v1/download/file/data/pharmgkb_haplotype_frequencies_AllOfUs.zip
 - category: Product
   description: pharmgkb.disease OBO
@@ -175,6 +207,7 @@ products:
   name: pharmgkb.disease OBO
   original_source:
   - pharmgkb
+  product_file_size: 148487
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.obo
   secondary_source:
   - obo-db-ingest
@@ -188,6 +221,7 @@ products:
   name: pharmgkb.disease OWL
   original_source:
   - pharmgkb
+  product_file_size: 178658
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.owl
   secondary_source:
   - obo-db-ingest
@@ -201,6 +235,7 @@ products:
   name: pharmgkb.disease OBO Graph JSON
   original_source:
   - pharmgkb
+  product_file_size: 180080
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.json
   secondary_source:
   - obo-db-ingest
@@ -214,6 +249,7 @@ products:
   name: pharmgkb.disease SSSOM
   original_source:
   - pharmgkb
+  product_file_size: 62271
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.disease/pharmgkb.disease.sssom.tsv
   secondary_source:
   - obo-db-ingest
@@ -227,6 +263,7 @@ products:
   name: pharmgkb.pathways OBO
   original_source:
   - pharmgkb
+  product_file_size: 2776
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.obo
   secondary_source:
   - obo-db-ingest
@@ -240,6 +277,7 @@ products:
   name: pharmgkb.pathways OWL
   original_source:
   - pharmgkb
+  product_file_size: 3784
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.owl
   secondary_source:
   - obo-db-ingest
@@ -253,6 +291,7 @@ products:
   name: pharmgkb.pathways OBO Graph JSON
   original_source:
   - pharmgkb
+  product_file_size: 2947
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.pathways/pharmgkb.pathways.json
   secondary_source:
   - obo-db-ingest
@@ -266,6 +305,7 @@ products:
   name: pharmgkb.drug OBO
   original_source:
   - pharmgkb
+  product_file_size: 465956
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.obo
   secondary_source:
   - obo-db-ingest
@@ -279,6 +319,7 @@ products:
   name: pharmgkb.drug OWL
   original_source:
   - pharmgkb
+  product_file_size: 531402
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.owl
   secondary_source:
   - obo-db-ingest
@@ -292,6 +333,7 @@ products:
   name: pharmgkb.drug OBO Graph JSON
   original_source:
   - pharmgkb
+  product_file_size: 552557
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.json
   secondary_source:
   - obo-db-ingest
@@ -305,6 +347,7 @@ products:
   name: pharmgkb.drug SSSOM
   original_source:
   - pharmgkb
+  product_file_size: 202221
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.drug/pharmgkb.drug.sssom.tsv
   secondary_source:
   - obo-db-ingest
@@ -318,6 +361,7 @@ products:
   name: pharmgkb.gene OBO
   original_source:
   - pharmgkb
+  product_file_size: 2137084
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.obo
   secondary_source:
   - obo-db-ingest
@@ -331,6 +375,7 @@ products:
   name: pharmgkb.gene OWL
   original_source:
   - pharmgkb
+  product_file_size: 2542592
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.owl
   secondary_source:
   - obo-db-ingest
@@ -344,6 +389,7 @@ products:
   name: pharmgkb.gene OBO Graph JSON
   original_source:
   - pharmgkb
+  product_file_size: 2668332
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.json
   secondary_source:
   - obo-db-ingest
@@ -357,6 +403,7 @@ products:
   name: pharmgkb.gene SSSOM
   original_source:
   - pharmgkb
+  product_file_size: 1621905
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.gene/pharmgkb.gene.sssom.tsv
   secondary_source:
   - obo-db-ingest
@@ -370,6 +417,7 @@ products:
   name: pharmgkb.variant OBO
   original_source:
   - pharmgkb
+  product_file_size: 102072
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.obo
   secondary_source:
   - obo-db-ingest
@@ -383,6 +431,7 @@ products:
   name: pharmgkb.variant OWL
   original_source:
   - pharmgkb
+  product_file_size: 107225
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.owl
   secondary_source:
   - obo-db-ingest
@@ -396,6 +445,7 @@ products:
   name: pharmgkb.variant OBO Graph JSON
   original_source:
   - pharmgkb
+  product_file_size: 92435
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.json
   secondary_source:
   - obo-db-ingest
@@ -409,6 +459,7 @@ products:
   name: pharmgkb.variant SSSOM
   original_source:
   - pharmgkb
+  product_file_size: 56599
   product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.sssom.tsv
   secondary_source:
   - obo-db-ingest

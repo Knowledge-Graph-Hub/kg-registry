@@ -37,6 +37,7 @@ products:
   - metacyc
   - m-csa
   - ecocyc
+  product_file_size: 154171
   product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv
   secondary_source:
   - obo-db-ingest

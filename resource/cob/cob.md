@@ -27,18 +27,21 @@ products:
   format: owl
   id: cob.owl
   name: COB OWL
+  product_file_size: 7391
   product_url: http://purl.obolibrary.org/obo/cob.owl
 - category: DataModelProduct
   description: Base module for COB
   format: owl
   id: cob.base
   name: COB Base Module
+  product_file_size: 2798
   product_url: http://purl.obolibrary.org/obo/cob/cob-base.owl
 - category: DataModelProduct
   description: COB with native IDs preserved rather than rewired to OBO IDs
   format: owl
   id: cob.native
   name: COB Native Module
+  product_file_size: 6472
   product_url: http://purl.obolibrary.org/obo/cob/cob-native.owl
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
@@ -89,6 +92,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -141,6 +145,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo

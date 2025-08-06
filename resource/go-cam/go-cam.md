@@ -1,8 +1,22 @@
 ---
-layout: resource_detail
 activity_status: active
-id: go-cam
-name: Gene Ontology Causal Activity Modeling (GO-CAM)
+category: DataModel
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: cjmungall@lbl.gov
+  - contact_type: github
+    value: cmungall
+  label: Christopher J. Mungall
+  orcid: 0000-0002-6601-2165
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: http://geneontology.org/
+  - contact_type: email
+    value: go-helpdesk@geneontology.org
+  label: Gene Ontology Consortium
 description: A structured framework for integrating Gene Ontology annotations into
   computable models of biological functions.
 domains:
@@ -10,31 +24,61 @@ domains:
 - genomics
 - pathways
 - proteomics
-category: DataModel
-contacts:
-- category: Individual
-  label: Christopher J. Mungall
-  orcid: 0000-0002-6601-2165
-  contact_details:
-  - contact_type: email
-    value: cjmungall@lbl.gov
-  - contact_type: github
-    value: cmungall
-- category: Organization
-  label: Gene Ontology Consortium
-  contact_details:
-  - contact_type: url
-    value: http://geneontology.org/
-  - contact_type: email
-    value: go-helpdesk@geneontology.org
 homepage_url: http://geneontology.org/go-cam/docs
-repository: https://github.com/geneontology/noctua
+id: go-cam
+layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+name: Gene Ontology Causal Activity Modeling (GO-CAM)
+products:
+- category: GraphicalInterface
+  description: Web-based tool for collaborative editing of Gene Ontology Causal Activity
+    Models (GO-CAMs)
+  format: http
+  id: go-cam.noctua
+  name: Noctua
+  original_source:
+  - go-cam
+  product_url: https://noctua.geneontology.org/
+- category: GraphicalInterface
+  description: Web interface for browsing, searching, and exploring GO-CAM models
+  format: http
+  id: go-cam.browser
+  name: GO-CAM Browser
+  original_source:
+  - go-cam
+  product_url: http://geneontology.org/go-cam
+- category: DataModelProduct
+  description: RDF-based format for representing causal activity models in Gene Ontology
+  format: rdfxml
+  id: go-cam.model
+  name: GO-CAM Model Format
+  original_source:
+  - go-cam
+  product_url: https://github.com/geneontology/go-cam
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
+- category: ProgrammingInterface
+  connection_url: http://api.geneontology.org/api/
+  description: Programmatic access to GO-CAM models through the Gene Ontology API
+  id: go-cam.api
+  is_public: true
+  name: GO-CAM API
+  original_source:
+  - go-cam
+  product_url: http://api.geneontology.org/api/
+- category: ProcessProduct
+  description: Server-side component for storing, validating, and reasoning over GO-CAM
+    models
+  id: go-cam.minerva
+  name: Minerva
+  original_source:
+  - go-cam
+  product_url: https://github.com/geneontology/minerva
 publications:
-- doi: 10.1038/s41588-019-0500-1
-  id: doi:10.1038/s41588-019-0500-1
-  preferred: true
-  year: '2019'
-  authors:
+- authors:
   - Paul D Thomas
   - David P Hill
   - Huaiyu Mi
@@ -47,54 +91,14 @@ publications:
   - Pascale Gaudet
   - Suzanna E Lewis
   - Christopher J Mungall
+  doi: 10.1038/s41588-019-0500-1
+  id: doi:10.1038/s41588-019-0500-1
+  preferred: true
   title: Gene Ontology Causal Activity Modeling (GO-CAM) moves beyond GO annotations
     to structured descriptions of biological functions and systems
-license:
-  label: CC0 1.0
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-products:
-- category: GraphicalInterface
-  id: go-cam.noctua
-  name: Noctua
-  description: Web-based tool for collaborative editing of Gene Ontology Causal Activity Models (GO-CAMs)
-  product_url: https://noctua.geneontology.org/
-  original_source:
-  - go-cam
-  format: http
-- category: GraphicalInterface
-  id: go-cam.browser
-  name: GO-CAM Browser
-  description: Web interface for browsing, searching, and exploring GO-CAM models
-  product_url: http://geneontology.org/go-cam
-  original_source:
-  - go-cam
-  format: http
-- category: DataModelProduct
-  id: go-cam.model
-  name: GO-CAM Model Format
-  description: RDF-based format for representing causal activity models in Gene Ontology
-  product_url: https://github.com/geneontology/go-cam
-  original_source:
-  - go-cam
-  format: rdfxml
-- category: ProgrammingInterface
-  id: go-cam.api
-  name: GO-CAM API
-  description: Programmatic access to GO-CAM models through the Gene Ontology API
-  product_url: http://api.geneontology.org/api/
-  is_public: true
-  connection_url: http://api.geneontology.org/api/
-  original_source:
-  - go-cam
-- category: ProcessProduct
-  id: go-cam.minerva
-  name: Minerva
-  description: Server-side component for storing, validating, and reasoning over GO-CAM models
-  product_url: https://github.com/geneontology/minerva
-  original_source:
-  - go-cam
+  year: '2019'
+repository: https://github.com/geneontology/noctua
 ---
-
 GO-CAM provides a structured framework for integrating Gene Ontology annotations into 
 computable models of biological functions. Unlike standard GO annotations, which link 
 individual gene products to GO terms, GO-CAM models connect multiple annotations to 

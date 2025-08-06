@@ -1,23 +1,86 @@
 ---
-layout: resource_detail
 activity_status: active
-id: ikraph
-name: iKraph
-description: A large-scale biomedical knowledge graph assembled from PubMed abstracts, containing over 22 million entities and 120 million relations.
 category: KnowledgeGraph
-homepage_url: https://biokde.insilicom.com/
-repository: https://github.com/myinsilicom/iKraph
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: jinfeng@insilicom.com
+  label: Jinfeng Zhang
 creation_date: '2025-07-22T00:00:00Z'
-last_modified_date: '2025-07-22T00:00:00Z'
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY-4.0
+curators:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://insilicom.com/
+  label: Insilicom
+description: A large-scale biomedical knowledge graph assembled from PubMed abstracts,
+  containing over 22 million entities and 120 million relations.
 domains:
 - health
 - biomedical
 - drug discovery
 - translational
 - genomics
+homepage_url: https://biokde.insilicom.com/
+id: ikraph
+last_modified_date: '2025-07-22T00:00:00Z'
+layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY-4.0
+name: iKraph
+products:
+- category: GraphicalInterface
+  description: Biomedical Knowledge Discovery Engine. Interface for iKraph with search,
+    visualization, and exploration capabilities.
+  format: http
+  id: ikraph.site
+  name: BioKDE
+  original_source:
+  - ikraph
+  product_url: https://biokde.insilicom.com/
+  secondary_source:
+  - ikraph
+- category: ProcessProduct
+  description: Code for named entity recognition, relation extraction, and drug repurposing
+    in assembly and analysis of iKraph
+  id: ikraph.code
+  license:
+    id: https://www.gnu.org/licenses/gpl-3.0.en.html
+    label: GPL-3
+  name: iKraph Code
+  original_source:
+  - ikraph
+  product_url: https://github.com/myinsilicom/iKraph
+  repository: https://github.com/myinsilicom/iKraph
+  secondary_source:
+  - ikraph
+- category: GraphProduct
+  compression: targz
+  description: Graph metadata for iKraph, including a list of relations, entity type-specific
+    metadata, data sources, and drug repurposing predictions.
+  format: json
+  id: ikraph.graph
+  name: iKraph graph metadata
+  original_source:
+  - ikraph
+  product_file_size: 61183533
+  product_url: https://zenodo.org/records/14851275/files/data.tar.gz?download=1
+  secondary_source:
+  - ikraph
+- category: GraphProduct
+  compression: targz
+  description: Complete graph data for iKraph with all entities and relations extracted
+    from PubMed abstracts
+  id: ikraph.graphdata
+  name: iKraph graph data
+  original_source:
+  - ikraph
+  product_file_size: 1440676039
+  product_url: https://zenodo.org/records/14851275/files/iKraph_full.tar.gz?download=1
+  secondary_source:
+  - ikraph
 publications:
 - authors:
   - Zhang Y
@@ -40,73 +103,15 @@ publications:
   - Qiu X
   - Zhao T
   - Zhang J
-  title: A comprehensive large-scale biomedical knowledge graph for AI-powered data-driven biomedical research
   doi: 10.1038/s42256-025-01014-w
-  preferred: true
   id: doi:10.1038/s42256-025-01014-w
   journal: Nature Machine Intelligence
-  year: "2025"
-contacts:
-- category: Individual
-  label: Jinfeng Zhang
-  contact_details:
-  - contact_type: email
-    value: jinfeng@insilicom.com
-curators:
-- category: Organization
-  label: Insilicom
-  contact_details:
-  - contact_type: url
-    value: https://insilicom.com/
-products:
-- category: GraphicalInterface
-  description: Biomedical Knowledge Discovery Engine. Interface for iKraph with search, visualization, and exploration capabilities.
-  id: ikraph.site
-  name: BioKDE
-  original_source:
-  - ikraph
-  product_url: https://biokde.insilicom.com/
-  secondary_source:
-  - ikraph
-  format: http
-- id: ikraph.code
-  name: iKraph Code
-  description: Code for named entity recognition, relation extraction, and drug repurposing
-    in assembly and analysis of iKraph
-  product_url: https://github.com/myinsilicom/iKraph
-  category: ProcessProduct
-  secondary_source:
-  - ikraph
-  original_source:
-  - ikraph
-  repository: https://github.com/myinsilicom/iKraph
-  license:
-    id: https://www.gnu.org/licenses/gpl-3.0.en.html
-    label: GPL-3
-- id: ikraph.graph
-  name: iKraph graph metadata
-  description: Graph metadata for iKraph, including a list of relations, entity type-specific
-    metadata, data sources, and drug repurposing predictions.
-  product_url: https://zenodo.org/records/14851275/files/data.tar.gz?download=1
-  category: GraphProduct
-  secondary_source:
-  - ikraph
-  original_source:
-  - ikraph
-  compression: targz
-  format: json
-- id: ikraph.graphdata
-  name: iKraph graph data
-  description: Complete graph data for iKraph with all entities and relations extracted from PubMed abstracts
-  product_url: https://zenodo.org/records/14851275/files/iKraph_full.tar.gz?download=1
-  category: GraphProduct
-  secondary_source:
-  - ikraph
-  original_source:
-  - ikraph
-  compression: targz
+  preferred: true
+  title: A comprehensive large-scale biomedical knowledge graph for AI-powered data-driven
+    biomedical research
+  year: '2025'
+repository: https://github.com/myinsilicom/iKraph
 ---
-
 # iKraph Knowledge Graph
 
 iKraph is a comprehensive large-scale biomedical knowledge graph developed by Insilicom for AI-powered data-driven biomedical research. It represents one of the largest structured biomedical knowledge resources assembled from literature mining.

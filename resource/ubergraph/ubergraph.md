@@ -1,58 +1,60 @@
 ---
-layout: resource_detail
 activity_status: active
-id: ubergraph
-name: Ubergraph
-description: Ubergraph is an RDF triplestore integrating OBO ontologies into a unified
-  semantic graph
-domains:
-- other
 category: KnowledgeGraph
 contacts:
 - category: Individual
-  label: James P. Balhoff
-  orcid: 0000-0002-8688-6599
   contact_details:
   - contact_type: email
     value: balhoff@renci.org
   - contact_type: github
     value: balhoff
+  label: James P. Balhoff
+  orcid: 0000-0002-8688-6599
+description: Ubergraph is an RDF triplestore integrating OBO ontologies into a unified
+  semantic graph
+domains:
+- other
 homepage_url: https://ubergraph.apps.renci.org/sparql
-repository: https://github.com/INCATools/ubergraph
-products:
-- id: ubergraph.rdf
-  name: Ubergraph RDF
-  description: RDF of Ubergraph
-  product_url: https://ubergraph.apps.renci.org/sparql
-  category: Product
-  original_source:
-  - ubergraph
-  secondary_source:
-  - ubergraph
-- id: ubergraph.blazegraph.jnl
-  name: Ubergraph blazegraph journal
-  description: Blazegraph journal of Ubergraph
-  product_url: https://ubergraph.apps.renci.org/downloads/current/ubergraph.jnl.gz
-  category: Product
-  original_source:
-  - ubergraph
-  secondary_source:
-  - ubergraph
-- id: ubergraph.nquads
-  name: Ubergraph n-quads
-  description: Ubergraph n-quads
-  product_url: https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz
-  category: Product
-  original_source:
-  - ubergraph
-  secondary_source:
-  - ubergraph
-  format: nquads
+id: ubergraph
+layout: resource_detail
 license:
-  label: CC BY 4.0
   id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+name: Ubergraph
+products:
+- category: Product
+  description: RDF of Ubergraph
+  id: ubergraph.rdf
+  name: Ubergraph RDF
+  original_source:
+  - ubergraph
+  product_file_size: 6866918
+  product_url: https://ubergraph.apps.renci.org/sparql
+  secondary_source:
+  - ubergraph
+- category: Product
+  description: Blazegraph journal of Ubergraph
+  id: ubergraph.blazegraph.jnl
+  name: Ubergraph blazegraph journal
+  original_source:
+  - ubergraph
+  product_file_size: 9157530809
+  product_url: https://ubergraph.apps.renci.org/downloads/current/ubergraph.jnl.gz
+  secondary_source:
+  - ubergraph
+- category: Product
+  description: Ubergraph n-quads
+  format: nquads
+  id: ubergraph.nquads
+  name: Ubergraph n-quads
+  original_source:
+  - ubergraph
+  product_file_size: 3718641146
+  product_url: https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz
+  secondary_source:
+  - ubergraph
+repository: https://github.com/INCATools/ubergraph
 ---
-
 ### Ubergraph: A Unified Semantic Knowledge Graph for OBO Ontologies
 
 Ubergraph is an RDF triplestore and public SPARQL query endpoint that integrates a suite of **39 OBO ontologies**, precomputing OWL inferences into a traversable **knowledge graph**. This enables efficient semantic reasoning over multiple ontologies, without requiring extensive local computation.

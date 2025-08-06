@@ -37,23 +37,27 @@ products:
   format: json
   id: hetionet.data.json
   name: Hetionet v1.0 JSON
+  product_file_size: 131
   product_url: https://github.com/hetio/hetionet/blob/master/hetnet/json/hetionet-v1.0.json.bz2
 - category: GraphProduct
   description: Hetionet v1.0 as a Neo4j database
   id: hetionet.data.neo4j
   name: Hetionet v1.0 Neo4j
+  product_file_size: 132
   product_url: https://github.com/hetio/hetionet/blob/master/hetnet/neo4j/hetionet-v1.0.db.tar.bz2
 - category: GraphProduct
   description: Hetionet v1.0 as SIF edges
   format: sif
   id: hetionet.data.edges
   name: Hetionet v1.0 edges (SIF)
+  product_file_size: 131
   product_url: https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-edges.sif.gz
 - category: GraphProduct
   description: Hetionet v1.0 as TSV nodes
   format: tsv
   id: hetionet.data.nodes
   name: Hetionet v1.0 nodes (TSV)
+  product_file_size: 427128
   product_url: https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-nodes.tsv
 - category: ProcessProduct
   description: Python package for creating, querying, and operating on hetnets (heterogeneous

@@ -34,6 +34,9 @@ products:
   product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names.tsv
   secondary_source:
   - pombase
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+    header found'
 - category: Product
   description: Tab-delimited file of systematic ID, primary gene name (where assigned),
     chromosome, product description, UniProtKB accession, all synonyms, and product
@@ -50,6 +53,9 @@ products:
   product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv
   secondary_source:
   - pombase
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+    header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
     protein-coding gene mapped to the corresponding UniProt accession number
@@ -62,6 +68,7 @@ products:
   original_source:
   - uniprot
   - pombase
+  product_file_size: 27617
   product_url: https://www.pombase.org/data/names_and_identifiers/PomBase2UniProt.tsv
   secondary_source:
   - pombase

@@ -19,19 +19,20 @@ products:
   format: rdfxml
   id: skos.rdf
   name: SKOS RDF/XML
+  product_file_size: 28966
   product_url: https://www.w3.org/2009/08/skos-reference/skos.rdf
 - category: DataModelProduct
   description: SKOS Core Vocabulary Specification
+  format: http
   id: skos.core
   name: SKOS Core
   product_url: https://www.w3.org/TR/swbp-skos-core-spec/
-  format: http
 - category: DocumentationProduct
   description: SKOS Simple Knowledge Organization System Reference
+  format: http
   id: skos.reference
   name: SKOS Reference
   product_url: https://www.w3.org/TR/skos-reference/
-  format: http
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -81,6 +82,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -133,6 +135,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
