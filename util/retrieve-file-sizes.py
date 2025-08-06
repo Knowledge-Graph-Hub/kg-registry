@@ -6,11 +6,11 @@ import pathlib
 import requests
 import yaml
 import frontmatter
+from datetime import datetime
 from typing import Dict, Any, Optional, List, Tuple
 
 # Configuration
 REQUEST_TIMEOUT = 10  # seconds
-MAX_FILE_SIZE = 1024 * 1024 * 1024  # 1GB - don't download files larger than this
 EXCLUDED_CATEGORIES = ['GraphicalInterface', 'ProgrammingInterface']
 
 def convert_github_url_to_raw(url: str) -> str:
@@ -40,7 +40,7 @@ def convert_github_url_to_raw(url: str) -> str:
     
     return url
 
-def get_file_size_from_header(url: str) -> Optional[int]:
+def get_file_size_from_header(url: str) -> Tuple[Optional[int], Optional[str]]:
     """
     Retrieve file size from HTTP Content-Length header without downloading the file.
     Skips HTML pages as these are not downloadable files, but converts GitHub blob URLs to raw URLs first.
@@ -49,7 +49,7 @@ def get_file_size_from_header(url: str) -> Optional[int]:
         url: The URL to check
         
     Returns:
-        File size in bytes, or None if unable to determine or if URL points to HTML
+        Tuple of (file_size in bytes or None, error_message or None)
     """
     try:
         # Convert GitHub blob URLs to raw URLs for direct file access
@@ -67,39 +67,45 @@ def get_file_size_from_header(url: str) -> Optional[int]:
         
         # Check if request was successful
         if response.status_code != 200:
-            print(f"  ⚠️  HTTP {response.status_code} for {url}")
-            return None
+            error_msg = f"HTTP {response.status_code} error when accessing file"
+            print(f"  ⚠️  {error_msg}")
+            return None, error_msg
             
         # Check Content-Type to skip HTML pages (after URL conversion)
         content_type = response.headers.get('Content-Type', '').lower()
         if 'text/html' in content_type:
             print(f"  ⏭️  Skipping HTML page (Content-Type: {content_type})")
-            return None
+            return None, None  # Not an error, just not a downloadable file
             
         # Get Content-Length header
         content_length = response.headers.get('Content-Length')
         
         if content_length is None:
-            print(f"  ⚠️  No Content-Length header found for {url}")
-            return None
+            error_msg = "No Content-Length header found"
+            print(f"  ⚠️  {error_msg}")
+            return None, error_msg
             
         try:
             file_size = int(content_length)
             print(f"  ✅ File size: {format_file_size(file_size)}")
-            return file_size
+            return file_size, None
         except ValueError:
-            print(f"  ⚠️  Invalid Content-Length value: {content_length}")
-            return None
+            error_msg = f"Invalid Content-Length value: {content_length}"
+            print(f"  ⚠️  {error_msg}")
+            return None, error_msg
             
     except requests.exceptions.Timeout:
-        print(f"  ⚠️  Timeout connecting to {url}")
-        return None
+        error_msg = "Timeout connecting to URL"
+        print(f"  ⚠️  {error_msg}")
+        return None, error_msg
     except requests.exceptions.RequestException as e:
-        print(f"  ⚠️  Error connecting to {url}: {str(e)}")
-        return None
+        error_msg = f"Error connecting to URL: {str(e)}"
+        print(f"  ⚠️  {error_msg}")
+        return None, error_msg
     except Exception as e:
-        print(f"  ⚠️  Unexpected error for {url}: {str(e)}")
-        return None
+        error_msg = f"Unexpected error: {str(e)}"
+        print(f"  ⚠️  {error_msg}")
+        return None, error_msg
 
 def format_file_size(size_bytes: int) -> str:
     """Format file size in human-readable format."""
@@ -178,10 +184,28 @@ def write_file_sizes_to_resource_files(updated_products: Dict[str, List[Dict[str
                     if isinstance(product, dict) and 'id' in product:
                         # Find matching updated product
                         for updated_product in products:
-                            if updated_product.get('id') == product['id'] and 'product_file_size' in updated_product:
-                                # Only update if we don't already have a file size
-                                if 'product_file_size' not in product:
+                            if updated_product.get('id') == product['id']:
+                                updated_this_product = False
+                                
+                                # Update file size if we don't already have one
+                                if 'product_file_size' in updated_product and 'product_file_size' not in product:
                                     product['product_file_size'] = updated_product['product_file_size']
+                                    updated_this_product = True
+                                
+                                # Update warnings if there are new ones
+                                if 'warnings' in updated_product:
+                                    if 'warnings' not in product:
+                                        product['warnings'] = []
+                                    elif not isinstance(product['warnings'], list):
+                                        product['warnings'] = []
+                                    
+                                    # Add new warnings that aren't already present
+                                    for warning in updated_product['warnings']:
+                                        if warning not in product['warnings']:
+                                            product['warnings'].append(warning)
+                                            updated_this_product = True
+                                
+                                if updated_this_product:
                                     updated_count += 1
                                 
             if updated_count > 0:
@@ -245,16 +269,10 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None)
                 
             processed_products += 1
             
-            # Try to get file size
-            file_size = get_file_size_from_header(product['product_url'])
+            # Try to get file size and any error information
+            file_size, error_message = get_file_size_from_header(product['product_url'])
             
             if file_size is not None:
-                # Check if file size is reasonable (not too large)
-                if file_size > MAX_FILE_SIZE:
-                    print(f"  ⚠️  File too large ({format_file_size(file_size)}), skipping")
-                    failed_products += 1
-                    continue
-                    
                 product['product_file_size'] = file_size
                 updated_products += 1
                 
@@ -262,7 +280,29 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None)
                 if resource_id not in updated_products_by_resource:
                     updated_products_by_resource[resource_id] = []
                 updated_products_by_resource[resource_id].append(product.copy())
+            elif error_message is not None:
+                # Add warning with current date
+                current_date = datetime.now().strftime("%Y-%m-%d")
+                warning_message = f"File was not able to be retrieved when checked on {current_date}: {error_message}"
+                
+                # Ensure warnings list exists
+                if 'warnings' not in product:
+                    product['warnings'] = []
+                elif not isinstance(product['warnings'], list):
+                    product['warnings'] = []
+                
+                # Add the warning if it's not already there
+                if warning_message not in product['warnings']:
+                    product['warnings'].append(warning_message)
+                    
+                    # Track this update for writing back to resource files
+                    if resource_id not in updated_products_by_resource:
+                        updated_products_by_resource[resource_id] = []
+                    updated_products_by_resource[resource_id].append(product.copy())
+                
+                failed_products += 1
             else:
+                # This case is for HTML pages that we intentionally skip (no error)
                 failed_products += 1
                 
         # Break out of resource loop if we hit the limit
