@@ -58,6 +58,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -110,6 +111,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
@@ -143,6 +145,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 212124
   product_url: http://purl.obolibrary.org/obo/to.owl
   secondary_source:
   - to
@@ -182,6 +185,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 158383
   product_url: http://purl.obolibrary.org/obo/to.obo
   secondary_source:
   - to
@@ -221,6 +225,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 111996
   product_url: http://purl.obolibrary.org/obo/to/subsets/to-basic.obo
   secondary_source:
   - to

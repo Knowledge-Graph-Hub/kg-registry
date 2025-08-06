@@ -9,7 +9,8 @@ contacts:
   - contact_type: url
     value: https://glyconnect.expasy.org/
   label: GlyConnect Team - SIB Swiss Institute of Bioinformatics
-description: GlyConnect is a knowledgebase of glycoproteins spanning protein, glycosite and glycan information, with data on various species, tissues, and disease associations.
+description: GlyConnect is a knowledgebase of glycoproteins spanning protein, glycosite
+  and glycan information, with data on various species, tissues, and disease associations.
 domains:
 - biological systems
 - chemistry and biochemistry
@@ -24,33 +25,33 @@ products:
 - category: GraphicalInterface
   description: Web interface for exploring GlyConnect data
   id: glyconnect.site
+  is_public: true
   name: GlyConnect Web Interface
   original_source:
   - glyconnect
   product_url: https://glyconnect.expasy.org/
   secondary_source:
   - glyconnect
-  is_public: true
 - category: ProgrammingInterface
   description: RESTful API for accessing GlyConnect data
   id: glyconnect.api.rest
+  is_public: true
   name: GlyConnect RESTful API
   original_source:
   - glyconnect
   product_url: https://glyconnect.expasy.org/api
   secondary_source:
   - glyconnect
-  is_public: true
 - category: ProgrammingInterface
   description: SPARQL endpoint for querying GlyConnect RDF data
   id: glyconnect.api.sparql
+  is_public: true
   name: GlyConnect SPARQL Endpoint
   original_source:
   - glyconnect
   product_url: https://glyconnect.expasy.org/rdf
   secondary_source:
   - glyconnect
-  is_public: true
 - category: Product
   description: Compositions dataset containing glycan compositions
   format: csv
@@ -81,6 +82,9 @@ products:
   product_url: https://glyconnect.expasy.org/downloads/rdf/
   secondary_source:
   - glyconnect
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 publications:
 - authors:
   - Alocci D
@@ -93,8 +97,8 @@ publications:
   - Lisacek F
   doi: doi:10.1021/acs.jproteome.8b00766
   id: doi:10.1021/acs.jproteome.8b00766
-  title: "GlyConnect: Glycoproteomics Goes Visual, Interactive, and Analytical"
-  year: "2019"
+  title: 'GlyConnect: Glycoproteomics Goes Visual, Interactive, and Analytical'
+  year: '2019'
 ---
 GlyConnect is a comprehensive knowledgebase of glycoproteomics data maintained by the SIB Swiss Institute of Bioinformatics. It integrates information spanning three key levels of glycobiology: proteins, glycosites (the specific locations where glycans attach to proteins), and glycan structures.
 

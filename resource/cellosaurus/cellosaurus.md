@@ -32,6 +32,7 @@ name: Cellosaurus
 products:
 - category: GraphicalInterface
   description: Web interface for searching and exploring Cellosaurus data
+  format: http
   id: cellosaurus.site
   is_public: true
   name: Cellosaurus Web Interface
@@ -40,7 +41,6 @@ products:
   product_url: https://www.cellosaurus.org/
   secondary_source:
   - cellosaurus
-  format: http
 - category: Product
   description: Complete Cellosaurus data in flat text format
   format: tsv
@@ -48,6 +48,7 @@ products:
   name: Cellosaurus Text
   original_source:
   - cellosaurus
+  product_file_size: 117036445
   product_url: https://ftp.expasy.org/databases/cellosaurus/cellosaurus.txt
   secondary_source:
   - cellosaurus
@@ -58,6 +59,7 @@ products:
   name: Cellosaurus XML
   original_source:
   - cellosaurus
+  product_file_size: 634465764
   product_url: https://ftp.expasy.org/databases/cellosaurus/cellosaurus.xml
   secondary_source:
   - cellosaurus
@@ -71,6 +73,9 @@ products:
   product_url: https://ftp.expasy.org/databases/cellosaurus/cellosaurus_xrefs.tsv
   secondary_source:
   - cellosaurus
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Complete Cellosaurus data in RDF format using the Turtle syntax
   format: ttl
@@ -81,6 +86,9 @@ products:
   product_url: https://ftp.expasy.org/databases/cellosaurus/cellosaurus.ttl
   secondary_source:
   - cellosaurus
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: ProgrammingInterface
   description: RESTful API for programmatic access to Cellosaurus data
   id: cellosaurus.api.rest
@@ -103,6 +111,7 @@ products:
   - cellosaurus
 - category: ProcessProduct
   description: CLASTR tool for STR similarity search across cell lines
+  format: javascript
   id: cellosaurus.clastr
   name: CLASTR STR Similarity Search
   original_source:
@@ -110,7 +119,6 @@ products:
   product_url: https://www.cellosaurus.org/str-search/
   secondary_source:
   - cellosaurus
-  format: javascript
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations

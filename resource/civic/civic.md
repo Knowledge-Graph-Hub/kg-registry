@@ -51,48 +51,56 @@ products:
   format: tsv
   id: civic.data.features
   name: CIViC Features (Nightly)
+  product_file_size: 171302
   product_url: https://civicdb.org/downloads/nightly/nightly-FeatureSummaries.tsv
 - category: Product
   description: CIViC Variant summaries, nightly version
   format: tsv
   id: civic.data.variants
   name: CIViC Variants (Nightly)
+  product_file_size: 533165
   product_url: https://civicdb.org/downloads/nightly/nightly-VariantSummaries.tsv
 - category: Product
   description: CIViC Molecular Profile summaries, nightly version
   format: tsv
   id: civic.data.molecularprofile
   name: CIViC Molecular Profiles (Nightly)
+  product_file_size: 621001
   product_url: https://civicdb.org/downloads/nightly/nightly-MolecularProfileSummaries.tsv
 - category: Product
   description: CIViC Clinical Evidence summaries, nightly version
   format: tsv
   id: civic.data.evidence
   name: CIViC Clinical Evidence (Nightly)
+  product_file_size: 3711846
   product_url: https://civicdb.org/downloads/nightly/nightly-ClinicalEvidenceSummaries.tsv
 - category: Product
   description: CIViC Variant Group summaries, nightly version
   format: tsv
   id: civic.data.variantgroups
   name: CIViC Variant Groups (Nightly)
+  product_file_size: 10453
   product_url: https://civicdb.org/downloads/nightly/nightly-VariantGroupSummaries.tsv
 - category: Product
   description: CIViC Assertion summaries, nightly version
   format: tsv
   id: civic.data.assertions
   name: CIViC Assertions (Nightly)
+  product_file_size: 114011
   product_url: https://civicdb.org/downloads/nightly/nightly-AssertionSummaries.tsv
 - category: Product
   description: CIViC Accepted Variants, nightly version
   format: vcf
   id: civic.data.acceptedvariants
   name: CIViC Accepted Variants (Nightly)
+  product_file_size: 1229101
   product_url: https://civicdb.org/downloads/nightly/nightly-civic_accepted.vcf
 - category: Product
   description: CIViC Accepted and Submitted Variants, nightly version
   format: vcf
   id: civic.data.acceptedsubmittedvariants
   name: CIViC Accepted and Submitted Variants (Nightly)
+  product_file_size: 3014555
   product_url: https://civicdb.org/downloads/nightly/nightly-civic_accepted_and_submitted.vcf
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple

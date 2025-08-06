@@ -30,6 +30,7 @@ products:
   name: FMA OWL
   original_source:
   - fma
+  product_file_size: 66368046
   product_url: http://purl.obolibrary.org/obo/fma.owl
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
@@ -80,6 +81,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -132,6 +134,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo

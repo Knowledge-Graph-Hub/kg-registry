@@ -37,12 +37,14 @@ products:
   format: tsv
   id: sider.drug_names
   name: SIDER Drug Names
+  product_file_size: 34759
   product_url: http://sideeffects.embl.de/media/download/drug_names.tsv
 - category: MappingProduct
   description: Tab-separated file mapping drugs to their ATC codes.
   format: tsv
   id: sider.drug_atc
   name: SIDER Drug ATC Codes
+  product_file_size: 32760
   product_url: http://sideeffects.embl.de/media/download/drug_atc.tsv
 - category: Product
   compression: gzip
@@ -51,6 +53,7 @@ products:
   format: tsv
   id: sider.meddra_all_indications
   name: SIDER MedDRA All Indications
+  product_file_size: 344689
   product_url: http://sideeffects.embl.de/media/download/meddra_all_indications.tsv.gz
 - category: Product
   compression: gzip
@@ -59,6 +62,7 @@ products:
   format: tsv
   id: sider.meddra_all_se
   name: SIDER MedDRA All Side Effects
+  product_file_size: 2381171
   product_url: http://sideeffects.embl.de/media/download/meddra_all_se.tsv.gz
 - category: Product
   compression: gzip
@@ -67,6 +71,7 @@ products:
   format: tsv
   id: sider.meddra_freq
   name: SIDER MedDRA Frequency
+  product_file_size: 2058445
   product_url: http://sideeffects.embl.de/media/download/meddra_freq.tsv.gz
 - category: Product
   compression: gzip
@@ -75,6 +80,7 @@ products:
   format: tsv
   id: sider.meddra_all_label_indications
   name: SIDER MedDRA All Label Indications
+  product_file_size: 5916355
   product_url: http://sideeffects.embl.de/media/download/meddra_all_label_indications.tsv.gz
 - category: Product
   compression: gzip
@@ -83,6 +89,7 @@ products:
   format: tsv
   id: sider.meddra_all_label_se
   name: SIDER MedDRA All Label Side Effects
+  product_file_size: 42534383
   product_url: http://sideeffects.embl.de/media/download/meddra_all_label_se.tsv.gz
 - category: Product
   compression: gzip
@@ -90,6 +97,7 @@ products:
   format: tsv
   id: sider.meddra
   name: SIDER MedDRA Dictionary
+  product_file_size: 1084933
   product_url: http://sideeffects.embl.de/media/download/meddra.tsv.gz
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple

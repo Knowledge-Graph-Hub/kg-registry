@@ -9,7 +9,9 @@ contacts:
   - contact_type: url
     value: https://www.metanetx.org/
   label: MetaNetX Team - SIB Swiss Institute of Bioinformatics
-description: MetaNetX is an online platform for accessing, analyzing, and manipulating genome-scale metabolic networks (GSM) and biochemical pathways, integrating data from multiple sources with a unified namespace for metabolites and biochemical reactions.
+description: MetaNetX is an online platform for accessing, analyzing, and manipulating
+  genome-scale metabolic networks (GSM) and biochemical pathways, integrating data
+  from multiple sources with a unified namespace for metabolites and biochemical reactions.
 domains:
 - biological systems
 - chemistry and biochemistry
@@ -24,23 +26,23 @@ products:
 - category: GraphicalInterface
   description: Web interface for exploring and analyzing metabolic networks
   id: metanetx.site
+  is_public: true
   name: MetaNetX Web Interface
   original_source:
   - metanetx
   product_url: https://www.metanetx.org/
   secondary_source:
   - metanetx
-  is_public: true
 - category: ProgrammingInterface
   description: SPARQL endpoint for querying MetaNetX RDF data
   id: metanetx.sparql
+  is_public: true
   name: MetaNetX SPARQL Endpoint
   original_source:
   - metanetx
   product_url: https://rdf.metanetx.org/
   secondary_source:
   - metanetx
-  is_public: true
 - category: Product
   description: MNXref unified namespace for metabolites across databases
   format: tsv
@@ -51,6 +53,9 @@ products:
   product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/chem_xref.tsv
   secondary_source:
   - metanetx
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+    header found'
 - category: Product
   description: MNXref unified namespace for reactions across databases
   format: tsv
@@ -61,17 +66,21 @@ products:
   product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/reac_xref.tsv
   secondary_source:
   - metanetx
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+    header found'
 - category: Product
+  compression: gzip
   description: RDF version of the MetaNetX data for semantic web applications
   format: ttl
   id: metanetx.rdf
   name: MetaNetX RDF Data
   original_source:
   - metanetx
+  product_file_size: 237044998
   product_url: https://www.metanetx.org/ftp/latest/metanetx.ttl.gz
   secondary_source:
   - metanetx
-  compression: gzip
 publications:
 - authors:
   - Moretti S
@@ -82,7 +91,8 @@ publications:
   doi: doi:10.1093/nar/gkaa992
   id: doi:10.1093/nar/gkaa992
   preferred: true
-  title: MetaNetX/MNXref - unified namespace for metabolites and biochemical reactions in the context of metabolic models
+  title: MetaNetX/MNXref - unified namespace for metabolites and biochemical reactions
+    in the context of metabolic models
   year: '2021'
 - authors:
   - Moretti S
@@ -93,7 +103,8 @@ publications:
   - Pagni M
   doi: doi:10.1093/nar/gkv1117
   id: doi:10.1093/nar/gkv1117
-  title: MetaNetX/MNXref - reconciliation of metabolites and biochemical reactions to bring together genome-scale metabolic networks
+  title: MetaNetX/MNXref - reconciliation of metabolites and biochemical reactions
+    to bring together genome-scale metabolic networks
   year: '2016'
 - authors:
   - Ganter M
@@ -103,7 +114,8 @@ publications:
   - Pagni M
   doi: doi:10.1093/bioinformatics/btt036
   id: doi:10.1093/bioinformatics/btt036
-  title: MetaNetX.org - a website and repository for accessing, analysing and manipulating metabolic networks
+  title: MetaNetX.org - a website and repository for accessing, analysing and manipulating
+    metabolic networks
   year: '2013'
 - authors:
   - Bernard T

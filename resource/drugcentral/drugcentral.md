@@ -27,6 +27,9 @@ products:
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
   secondary_source:
   - automat
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: PostgreSQL (v14.5) database dump of all information in DrugCentral.
@@ -35,6 +38,7 @@ products:
   name: DrugCentral Database dump
   original_source:
   - drugcentral
+  product_file_size: 1400714190
   product_url: https://unmtid-dbs.net/download/drugcentral.dump.11012023.sql.gz
   secondary_source:
   - drugcentral
@@ -86,6 +90,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -112,6 +117,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -203,6 +209,9 @@ products:
   product_url: https://zenodo.org/records/8117748/files/train.txt
   secondary_source:
   - mind
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+    header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
   format: tsv
@@ -217,6 +226,9 @@ products:
   product_url: https://zenodo.org/records/8117748/files/test.txt
   secondary_source:
   - mind
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+    header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
     indications
@@ -232,6 +244,9 @@ products:
   product_url: https://zenodo.org/records/8117748/files/valid.txt
   secondary_source:
   - mind
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+    header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
   format: tsv
@@ -243,6 +258,7 @@ products:
   original_source:
   - drugcentral
   - mechreponet
+  product_file_size: 5629618
   product_url: https://zenodo.org/records/8117748/files/entities.dict
   secondary_source:
   - mind
@@ -257,6 +273,7 @@ products:
   original_source:
   - drugcentral
   - mechreponet
+  product_file_size: 1648
   product_url: https://zenodo.org/records/8117748/files/relations.dict
   secondary_source:
   - mind

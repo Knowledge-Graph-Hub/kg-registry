@@ -51,6 +51,7 @@ products:
   name: InterProScan
   original_source:
   - interpro
+  product_file_size: 7153864107
   product_url: http://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.74-105.0/interproscan-5.74-105.0-64-bit.tar.gz
 - category: DataModelProduct
   description: Complete list of InterPro entries with their types and short names
@@ -59,6 +60,7 @@ products:
   name: InterPro Entry List
   original_source:
   - interpro
+  product_file_size: 2670480
   product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/entry.list
 - category: DataModelProduct
   compression: gzip
@@ -69,6 +71,7 @@ products:
   name: InterPro XML
   original_source:
   - interpro
+  product_file_size: 40445027
   product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro.xml.gz
 - category: MappingProduct
   compression: gzip
@@ -78,6 +81,7 @@ products:
   name: InterPro Match Complete
   original_source:
   - interpro
+  product_file_size: 89253159090
   product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/match_complete.xml.gz
 - category: MappingProduct
   compression: targz
@@ -87,6 +91,7 @@ products:
   name: UniParc Match
   original_source:
   - interpro
+  product_file_size: 331243597405
   product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/uniparc_match.tar.gz
 - category: MappingProduct
   compression: gzip
@@ -97,6 +102,7 @@ products:
   name: Protein to InterPro Mappings
   original_source:
   - interpro
+  product_file_size: 20975973462
   product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/protein2ipr.dat.gz
 - category: DataModelProduct
   description: Hierarchical relationships between InterPro entries
@@ -105,6 +111,7 @@ products:
   name: Parent-Child Tree
   original_source:
   - interpro
+  product_file_size: 627613
   product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/ParentChildTreeFile.txt
 - category: MappingProduct
   description: Mappings between InterPro entries and Gene Ontology (GO) terms
@@ -114,6 +121,7 @@ products:
   original_source:
   - go
   - interpro
+  product_file_size: 3088718
   product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go
   secondary_source:
   - interpro
@@ -250,7 +258,7 @@ publications:
   - Gough J
   - Haft DH
   - Letunic I
-  - "Llinares-L\xF3pez F"
+  - Llinares-López F
   - Marchler-Bauer A
   - Meng-Papaxanthos L
   - Mi H

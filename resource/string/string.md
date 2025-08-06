@@ -30,6 +30,7 @@ products:
   format: tsv
   id: string.protein.links
   name: STRING Protein Links
+  product_file_size: 138154280240
   product_url: https://stringdb-downloads.org/download/protein.links.v12.0.txt.gz
 - category: GraphProduct
   compression: gzip
@@ -37,12 +38,14 @@ products:
   format: tsv
   id: string.protein.links.detailed
   name: STRING Protein Links Detailed
+  product_file_size: 203534412387
   product_url: https://stringdb-downloads.org/download/protein.links.detailed.v12.0.txt.gz
 - category: GraphProduct
   compression: gzip
   description: Complete database dump containing all network nodes, edges, and scores
   id: string.database
   name: STRING Database Dump
+  product_file_size: 281505096430
   product_url: https://stringdb-downloads.org/download/network_schema.v12.0.sql.gz
 - category: ProgrammingInterface
   description: RESTful API for programmatic access to STRING data

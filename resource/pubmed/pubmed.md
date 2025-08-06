@@ -21,6 +21,7 @@ products:
   original_source:
   - pubmed
   - ncbigene
+  product_file_size: 230242176
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2pubmed.gz
 - category: ProcessProduct
   description: INDRA CoGEx is a graph database integrating causal relations, ontological

@@ -53,6 +53,7 @@ products:
   name: Biolink Model OWL release
   original_source:
   - biolink
+  product_file_size: 717005
   product_url: https://w3id.org/biolink/biolink-model.owl.ttl
   secondary_source:
   - biolink
@@ -98,6 +99,7 @@ products:
   name: Biolink Model JSON release
   original_source:
   - biolink
+  product_file_size: 138288
   product_url: https://w3id.org/biolink/biolink-model.json
   secondary_source:
   - biolink
@@ -143,6 +145,7 @@ products:
   name: Biolink Model GraphQL release
   original_source:
   - biolink
+  product_file_size: 9599
   product_url: https://w3id.org/biolink/biolink-model.graphql
   secondary_source:
   - biolink
@@ -188,6 +191,7 @@ products:
   name: Biolink Model Protobuf release
   original_source:
   - biolink
+  product_file_size: 18600
   product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/protobuf/biolink_model.proto
   secondary_source:
   - biolink
@@ -233,6 +237,7 @@ products:
   name: Biolink Model SHACL release
   original_source:
   - biolink
+  product_file_size: 161190
   product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shacl/biolink_model.shacl.ttl
   secondary_source:
   - biolink
@@ -278,6 +283,7 @@ products:
   name: Biolink Model ShEx release
   original_source:
   - biolink
+  product_file_size: 17816
   product_url: https://raw.githubusercontent.com/biolink/biolink-model/refs/heads/master/project/shex/biolink_model.shex
   secondary_source:
   - biolink
@@ -322,6 +328,9 @@ products:
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
   secondary_source:
   - automat
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: ProcessProduct
   description: This repository is a code reference for the C-Path Knowledge Graph
     project, to increase discoverability of rare disease datasets through integration

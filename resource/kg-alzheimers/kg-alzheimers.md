@@ -1,8 +1,15 @@
 ---
-layout: resource_detail
 activity_status: active
-id: kg-alzheimers
-name: KG-Alzheimers
+category: KnowledgeGraph
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: jhc@lbl.gov
+  - contact_type: github
+    value: caufieldjh
+  label: J. Harry Caufield
+  orcid: 0000-0001-5705-7831
 description: A Knowledge Graph for integrating data related to Alzheimer's disease,
   supporting Retrieval-Augmented Generation (RAG) and AI assistant development for
   Alzheimer's disease research.
@@ -10,35 +17,28 @@ domains:
 - health
 - neuroscience
 - biomedical
-contacts:
-- category: Individual
-  label: J. Harry Caufield
-  orcid: 0000-0001-5705-7831
-  contact_details:
-  - contact_type: email
-    value: jhc@lbl.gov
-  - contact_type: github
-    value: caufieldjh
 homepage_url: https://kghub.org/kg-alzheimers/index.html
-repository: https://github.com/Knowledge-Graph-Hub/kg-alzheimers
+id: kg-alzheimers
+layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+name: KG-Alzheimers
 products:
-- id: kg-alzheimers.graph
-  name: KGX Distribution of KG-Alzheimers
+- category: GraphProduct
+  compression: targz
   description: KGX Distribution of KG-Alzheimers
-  product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
-  category: GraphProduct
+  format: kgx
+  id: kg-alzheimers.graph
+  name: KGX Distribution of KG-Alzheimers
   original_source:
   - kg-alzheimers
+  product_file_size: 210868256
+  product_url: https://kg-hub.berkeleybop.io/kg-alzheimers/current/kg-alzheimers.tar.gz
   secondary_source:
   - kg-alzheimers
-  format: kgx
-  compression: targz
-license:
-  label: CC0 1.0
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-category: KnowledgeGraph
+repository: https://github.com/Knowledge-Graph-Hub/kg-alzheimers
 ---
-
 KG-Alzheimers is a knowledge graph created in collaboration between Lawrence Berkeley National
 Lab and Washington University, designed to integrate data related to Alzheimer's 
 disease. The purpose is to support use cases including retrieval augmented generation (RAG)

@@ -31,6 +31,7 @@ products:
   name: UBERON OWL release
   original_source:
   - uberon
+  product_file_size: 97164714
   product_url: http://purl.obolibrary.org/obo/uberon.owl
   secondary_source:
   - uberon
@@ -41,6 +42,7 @@ products:
   name: UBERON OBO release
   original_source:
   - uberon
+  product_file_size: 22742453
   product_url: http://purl.obolibrary.org/obo/uberon.obo
   secondary_source:
   - uberon
@@ -51,6 +53,7 @@ products:
   name: UBERON Basic OWL release
   original_source:
   - uberon
+  product_file_size: 50607670
   product_url: http://purl.obolibrary.org/obo/uberon/basic.owl
   secondary_source:
   - uberon
@@ -62,6 +65,7 @@ products:
   name: BKG Anatomy Nodes
   original_source:
   - uberon
+  product_file_size: 332
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.nodes.zip
   secondary_source:
   - biomarkerkg
@@ -240,6 +244,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -266,6 +271,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -407,6 +413,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -459,6 +466,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
@@ -492,6 +500,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 212124
   product_url: http://purl.obolibrary.org/obo/to.owl
   secondary_source:
   - to
@@ -531,6 +540,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 158383
   product_url: http://purl.obolibrary.org/obo/to.obo
   secondary_source:
   - to
@@ -570,6 +580,7 @@ products:
   - uberon
   - ogms
   - bfo
+  product_file_size: 111996
   product_url: http://purl.obolibrary.org/obo/to/subsets/to-basic.obo
   secondary_source:
   - to

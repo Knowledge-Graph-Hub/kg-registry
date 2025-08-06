@@ -21,6 +21,7 @@ products:
   - ncbigene
   - medgen
   - omim
+  product_file_size: 954971
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/mim2gene_medgen
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information

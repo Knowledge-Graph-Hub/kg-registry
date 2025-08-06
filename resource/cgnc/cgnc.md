@@ -28,6 +28,9 @@ products:
   product_url: http://birdgenenames.org/cgnc/downloads.jsp?file=standard
   secondary_source:
   - cgnc
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
 - category: Product
   description: cgnc OBO
   format: obo
@@ -38,6 +41,7 @@ products:
   name: cgnc OBO
   original_source:
   - cgnc
+  product_file_size: 683991
   product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.obo
   secondary_source:
   - obo-db-ingest
@@ -51,6 +55,7 @@ products:
   name: cgnc OWL
   original_source:
   - cgnc
+  product_file_size: 911421
   product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.owl
   secondary_source:
   - obo-db-ingest
@@ -64,6 +69,7 @@ products:
   name: cgnc OBO Graph JSON
   original_source:
   - cgnc
+  product_file_size: 861880
   product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.json
   secondary_source:
   - obo-db-ingest
@@ -77,13 +83,14 @@ products:
   name: cgnc SSSOM
   original_source:
   - cgnc
+  product_file_size: 258292
   product_url: https://w3id.org/biopragmatics/resources/cgnc/cgnc.sssom.tsv
   secondary_source:
   - obo-db-ingest
 publications:
 - authors:
   - Burt DW
-  - "Carr\xCE W"
+  - CarrÎ W
   - Fell M
   - Law AS
   - Antin PB

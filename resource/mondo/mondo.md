@@ -14,9 +14,9 @@ contacts:
     value: sabrinatoro
   label: Sabrina Toro
   orcid: 0000-0002-4142-7153
-description: "The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions\
-  \ across the world. The name Mondo comes from the Latin word \u2018mundus\u2019\
-  \ and means \u2018for the world.\u2019"
+description: The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions
+  across the world. The name Mondo comes from the Latin word ‘mundus’ and means ‘for
+  the world.’
 domains:
 - health
 homepage_url: https://mondo.monarchinitiative.org/
@@ -34,6 +34,7 @@ products:
   name: Mondo Disease Ontology OWL release
   original_source:
   - mondo
+  product_file_size: 238595949
   product_url: https://purl.obolibrary.org/obo/mondo.owl
   secondary_source:
   - mondo
@@ -44,6 +45,7 @@ products:
   name: Mondo Disease Ontology OBO release
   original_source:
   - mondo
+  product_file_size: 52503800
   product_url: https://purl.obolibrary.org/obo/mondo.obo
   secondary_source:
   - mondo
@@ -54,6 +56,7 @@ products:
   name: Mondo Disease Ontology JSON release
   original_source:
   - mondo
+  product_file_size: 102814241
   product_url: https://purl.obolibrary.org/obo/mondo.json
   secondary_source:
   - mondo
@@ -75,6 +78,7 @@ products:
   - do
   - hp
   - hgnc
+  product_file_size: 1437457
   product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
   secondary_source:
   - mondo
@@ -88,6 +92,7 @@ products:
   - do
   - hp
   - mondo
+  product_file_size: 363367
   product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
   secondary_source:
   - drug-approvals-kp
@@ -101,6 +106,7 @@ products:
   - do
   - hp
   - mondo
+  product_file_size: 363367
   product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
   secondary_source:
   - drug-approvals-kp
@@ -254,6 +260,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -280,6 +287,7 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
   - rtx-kg2.code
@@ -360,6 +368,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -412,6 +421,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo

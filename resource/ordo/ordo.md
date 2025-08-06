@@ -37,6 +37,7 @@ products:
   format: owl
   id: ordo.owl
   name: ORDO OWL
+  product_file_size: 49203440
   product_url: https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.7.owl
 - category: ProgrammingInterface
   description: SPARQL endpoint for querying the ORDO ontology
@@ -105,6 +106,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 240665663
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
@@ -157,6 +159,7 @@ products:
   - uo
   - wbls
   - zfa
+  product_file_size: 64058275
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo

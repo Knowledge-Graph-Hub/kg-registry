@@ -58,6 +58,9 @@ products:
   product_url: https://zenodo.org/records/8117748/files/train.txt
   secondary_source:
   - mind
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+    header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
   format: tsv
@@ -72,6 +75,9 @@ products:
   product_url: https://zenodo.org/records/8117748/files/test.txt
   secondary_source:
   - mind
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+    header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
     indications
@@ -87,6 +93,9 @@ products:
   product_url: https://zenodo.org/records/8117748/files/valid.txt
   secondary_source:
   - mind
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+    header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
   format: tsv
@@ -98,6 +107,7 @@ products:
   original_source:
   - drugcentral
   - mechreponet
+  product_file_size: 5629618
   product_url: https://zenodo.org/records/8117748/files/entities.dict
   secondary_source:
   - mind
@@ -112,6 +122,7 @@ products:
   original_source:
   - drugcentral
   - mechreponet
+  product_file_size: 1648
   product_url: https://zenodo.org/records/8117748/files/relations.dict
   secondary_source:
   - mind
