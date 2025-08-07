@@ -10892,6 +10892,9 @@ resources:
     id: ensembl.vep
     name: Variant Effect Predictor (VEP)
     product_url: https://www.ensembl.org/info/docs/tools/vep/
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-07: Timeout connecting
+      to URL'
   - category: ProcessProduct
     description: Tool to search Ensembl genomes for DNA or protein sequences.
     id: ensembl.blast
@@ -39051,7 +39054,7 @@ resources:
   - category: ProcessProduct
     description: The SemRep natural language processing system that extracts semantic
       predications from biomedical literature to create SemMedDB
-    id: semrep.tool
+    id: semmeddb.semrep.tool
     name: SemRep NLP System
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemRep_download.html
   - category: GraphProduct
