@@ -9,5 +9,9 @@ product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz
 warnings:
 - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
   to URL'
+- 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
+  header found'
+- 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when
+  accessing file'
 layout: product_detail
 ---

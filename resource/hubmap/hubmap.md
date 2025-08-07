@@ -80,6 +80,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 401 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 401 error
+    when accessing file'
 - category: Product
   description: Data submission portal for registering and ingesting consortium data
   id: hubmap.data_ingest_portal
