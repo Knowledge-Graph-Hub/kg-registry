@@ -3,9 +3,9 @@ activity_status: active
 category: DataSource
 creation_date: '2025-07-17T00:00:00Z'
 description: >-
-  The NCBI Reference Sequence Database (RefSeq) provides a comprehensive, 
-  integrated, non-redundant, well-annotated set of reference sequences 
-  including genomic, transcript, and protein sequences for naturally 
+  The NCBI Reference Sequence Database (RefSeq) provides a comprehensive,
+  integrated, non-redundant, well-annotated set of reference sequences
+  including genomic, transcript, and protein sequences for naturally
   occurring molecules of the central dogma.
 domains:
 - genomics
@@ -43,7 +43,6 @@ products:
   product_url: https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2refseq.gz
 homepage_url: https://www.ncbi.nlm.nih.gov/refseq/
 repository: https://ftp.ncbi.nlm.nih.gov/refseq/
-documentation: https://ftp.ncbi.nlm.nih.gov/refseq/README
 publications:
 - id: doi:10.1093/nar/gkv1189
   doi: 10.1093/nar/gkv1189
