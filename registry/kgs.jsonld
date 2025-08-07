@@ -3953,7 +3953,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-06: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
                     ]
                 },
                 {
@@ -3965,7 +3966,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-06: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
                     ]
                 },
                 {
@@ -3977,7 +3979,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-06: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
                     ]
                 },
                 {
@@ -3989,7 +3992,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-06: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
                     ]
                 },
                 {
@@ -8042,7 +8046,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
                         "File was not able to be retrieved when checked on 2025-08-06: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
-                        "File was not able to be retrieved when checked on 2025-08-07: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+                        "File was not able to be retrieved when checked on 2025-08-07: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
+                        "File was not able to be retrieved when checked on 2025-08-07: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
                 {
@@ -8059,7 +8064,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
                         "File was not able to be retrieved when checked on 2025-08-06: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
-                        "File was not able to be retrieved when checked on 2025-08-07: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+                        "File was not able to be retrieved when checked on 2025-08-07: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
+                        "File was not able to be retrieved when checked on 2025-08-07: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
                 {
@@ -8076,7 +8082,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
                         "File was not able to be retrieved when checked on 2025-08-06: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
-                        "File was not able to be retrieved when checked on 2025-08-07: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+                        "File was not able to be retrieved when checked on 2025-08-07: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
+                        "File was not able to be retrieved when checked on 2025-08-07: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
                 {
@@ -8093,7 +8100,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
                         "File was not able to be retrieved when checked on 2025-08-06: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
-                        "File was not able to be retrieved when checked on 2025-08-07: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+                        "File was not able to be retrieved when checked on 2025-08-07: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
+                        "File was not able to be retrieved when checked on 2025-08-07: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
                 {
@@ -14139,7 +14147,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-06: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
                     ]
                 },
                 {
@@ -14153,7 +14162,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-06: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
                     ]
                 },
                 {
@@ -14167,7 +14177,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-06: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
                     ]
                 },
                 {
@@ -14180,7 +14191,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-06: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
                     ]
                 },
                 {
@@ -14193,7 +14205,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-06: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
                     ]
                 },
                 {
@@ -14206,7 +14219,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-06: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
                     ]
                 },
                 {
@@ -14218,7 +14232,8 @@
                     "product_url": "https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
                     ]
                 },
                 {
@@ -14230,7 +14245,8 @@
                     "product_url": "https://foodb.ca/public/system/downloads/foodb_predicted_msms_spectra.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
                     ]
                 },
                 {
@@ -14242,7 +14258,8 @@
                     "product_url": "https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
                     ]
                 },
                 {
@@ -14254,7 +14271,8 @@
                     "product_url": "https://foodb.ca/public/system/downloads/foodb_fid_files.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -14266,7 +14284,8 @@
                     "product_url": "https://foodb.ca/public/system/downloads/foodb_image_files.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
                     ]
                 },
                 {
@@ -32540,7 +32559,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -32558,7 +32578,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -32576,7 +32597,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -32595,7 +32617,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -32614,7 +32637,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -32634,7 +32658,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -32654,7 +32679,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error when accessing file"
                     ]
                 },
                 {
@@ -32672,7 +32698,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error when accessing file"
                     ]
                 },
                 {
@@ -32692,7 +32719,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error when accessing file"
                     ]
                 },
                 {
@@ -32713,7 +32741,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error when accessing file"
                     ]
                 }
             ]
@@ -44049,7 +44078,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error when accessing file"
                     ]
                 },
                 {
