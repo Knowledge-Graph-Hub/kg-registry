@@ -9,6 +9,9 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
+        // Create rotating network logo
+        createNetworkLogo();
+        
         // Call the async function without waiting for it
         renderProvenanceDiagrams().catch(console.error);
 
@@ -166,6 +169,193 @@
             });
         }
     });
+
+    // Jokes for the network logo nodes - add your custom jokes here!
+    const networkJokes = [
+        "Why do KGs not make good comedians? Their humor is too edgy.",
+        "What is every KG's favorite TV game show? Deal or Node Eel.",
+        "Did you know the K in KG stands for Kangaroo? That's why folks talk about multi-hop pathways.",
+        "Why are KGs so good at baseball? They're just full of triples.",
+        "Where do KGs go to see seaside cliffs and lush green countryside? IRIreland.",
+        "What is a KG's favorite beverage? SPARQLing water.",
+        "Warning: KGs may stain your clothes, at least if they're a Dye-graph.",
+        "Shopping for a new bike? KGs are a great place to find cycles."
+    ];
+
+    // Function to create rotating network logo
+    function createNetworkLogo() {
+        const container = document.getElementById('network-logo');
+        if (!container) return;
+
+        // Get dimensions from container (cached for performance)
+        const containerStyle = window.getComputedStyle(container);
+        const width = parseInt(containerStyle.width);
+        const height = parseInt(containerStyle.height);
+        const radius = Math.min(width, height) * 0.45;
+
+        // Pre-calculate all positioning values
+        const centerX = width / 2;
+        const centerY = height / 2;
+        const strokeWidth = Math.max(2, width / 20);
+        const nodeRadius = Math.max(4, width / 10);
+
+        // Create SVG with optimized settings
+        const svg = d3.select(container)
+            .append('svg')
+            .attr('width', width)
+            .attr('height', height)
+            .style('overflow', 'visible'); // Prevent clipping calculations
+
+        // Create main group for centering
+        const mainGroup = svg.append('g')
+            .attr('transform', `translate(${centerX}, ${centerY})`);
+
+        // Create rotating group
+        const rotatingGroup = mainGroup.append('g');
+
+        // Define static network data - pre-calculated positions
+        const nodePositions = [
+            { x: 0, y: -radius * 0.8 },
+            { x: -radius * 0.7, y: radius * 0.5 },
+            { x: radius * 0.7, y: radius * 0.5 }
+        ];
+
+        // Draw edges with static attributes (no dynamic updates)
+        rotatingGroup.selectAll('.edge')
+            .data([
+                { x1: nodePositions[0].x, y1: nodePositions[0].y, x2: nodePositions[1].x, y2: nodePositions[1].y },
+                { x1: nodePositions[1].x, y1: nodePositions[1].y, x2: nodePositions[2].x, y2: nodePositions[2].y },
+                { x1: nodePositions[2].x, y1: nodePositions[2].y, x2: nodePositions[0].x, y2: nodePositions[0].y }
+            ])
+            .enter()
+            .append('line')
+            .attr('class', 'edge')
+            .attr('x1', d => d.x1)
+            .attr('y1', d => d.y1)
+            .attr('x2', d => d.x2)
+            .attr('y2', d => d.y2)
+            .attr('stroke', '#6699cc')
+            .attr('stroke-width', strokeWidth);
+
+        // Draw nodes with static attributes and click handlers
+        const nodeElements = rotatingGroup.selectAll('.node')
+            .data(nodePositions)
+            .enter()
+            .append('circle')
+            .attr('class', 'node')
+            .attr('cx', d => d.x)
+            .attr('cy', d => d.y)
+            .attr('r', nodeRadius)
+            .attr('fill', '#4d7aa7')
+            .attr('stroke', '#ffffff')
+            .attr('stroke-width', Math.max(1, strokeWidth / 2))
+            .style('cursor', 'pointer')
+            .on('click', function(event, d) {
+                // Get a random joke
+                const randomJoke = networkJokes[Math.floor(Math.random() * networkJokes.length)];
+                
+                // Show tooltip with joke
+                showJokeTooltip(event, randomJoke);
+                
+                // Prevent event bubbling
+                event.stopPropagation();
+            });
+
+        // Function to show joke tooltip
+        function showJokeTooltip(event, joke) {
+            // Remove any existing tooltips
+            d3.selectAll('.joke-tooltip').remove();
+            
+            // Create tooltip
+            const tooltip = d3.select('body')
+                .append('div')
+                .attr('class', 'joke-tooltip')
+                .style('position', 'absolute')
+                .style('background', 'rgba(0, 0, 0, 0.9)')
+                .style('color', 'white')
+                .style('padding', '12px 16px')
+                .style('border-radius', '8px')
+                .style('font-size', '14px')
+                .style('font-family', 'Arial, sans-serif')
+                .style('max-width', '300px')
+                .style('line-height', '1.4')
+                .style('box-shadow', '0 4px 12px rgba(0, 0, 0, 0.3)')
+                .style('z-index', '10000')
+                .style('pointer-events', 'none')
+                .style('opacity', 0)
+                .text(joke);
+            
+            // Position tooltip near the click point
+            const tooltipNode = tooltip.node();
+            const rect = tooltipNode.getBoundingClientRect();
+            
+            let left = event.pageX + 10;
+            let top = event.pageY - rect.height - 10;
+            
+            // Adjust position if tooltip would go off screen
+            if (left + rect.width > window.innerWidth) {
+                left = event.pageX - rect.width - 10;
+            }
+            if (top < 0) {
+                top = event.pageY + 10;
+            }
+            
+            tooltip
+                .style('left', left + 'px')
+                .style('top', top + 'px')
+                .transition()
+                .duration(200)
+                .style('opacity', 1);
+            
+            // Auto-hide tooltip after 4 seconds
+            setTimeout(() => {
+                tooltip.transition()
+                    .duration(300)
+                    .style('opacity', 0)
+                    .on('end', function() {
+                        tooltip.remove();
+                    });
+            }, 4000);
+        }
+
+        // Hide tooltip when clicking elsewhere
+        d3.select('body').on('click.joke-tooltip', function() {
+            d3.selectAll('.joke-tooltip')
+                .transition()
+                .duration(200)
+                .style('opacity', 0)
+                .on('end', function() {
+                    d3.select(this).remove();
+                });
+        });
+
+        // Ultra-lightweight rotation using CSS transform (much faster than D3 transitions)
+        const rotatingElement = rotatingGroup.node();
+        let rotation = 0;
+        
+        function animate() {
+            rotation += 0.5; // Degrees per frame (adjust for speed)
+            if (rotation >= 360) rotation = 0;
+            
+            // Use direct CSS transform for maximum performance
+            rotatingElement.style.transform = `rotate(${rotation}deg)`;
+            
+            // Use requestAnimationFrame for smooth 60fps animation
+            requestAnimationFrame(animate);
+        }
+
+        // Cleanup function for when the component is removed
+        window.networkLogoCleanup = function() {
+            // Cancel any running animations
+            if (window.networkLogoAnimationId) {
+                cancelAnimationFrame(window.networkLogoAnimationId);
+                window.networkLogoAnimationId = null;
+            }
+        };
+
+        // Start the lightweight animation
+        window.networkLogoAnimationId = requestAnimationFrame(animate);
+    }
 
     // Function to fetch resource category and icon
     async function fetchCategoryIcon(resourceId) {
