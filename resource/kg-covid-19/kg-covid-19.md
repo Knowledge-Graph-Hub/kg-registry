@@ -34,6 +34,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 403 error
+    when accessing file'
 repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 ---
 KG-COVID-19: a knowledge graph for COVID-19 and SARS-COV-2.

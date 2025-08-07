@@ -149,6 +149,19 @@ products:
   product_url: https://github.com/gyorilab/indra_cogex
   secondary_source:
   - indra
+- category: Product
+  description: Complete RepoDB dataset containing drug repositioning successes and
+    failures, with approved drugs, indications, and clinical trial outcomes
+  format: csv
+  id: repodb.full_dataset
+  name: RepoDB Full Dataset
+  original_source:
+  - drugcentral
+  - clinicaltrialsgov
+  product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
+    header found'
 publications:
 - authors:
   - Zarin DA

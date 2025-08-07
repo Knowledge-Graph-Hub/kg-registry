@@ -1,26 +1,38 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://datascience.unm.edu/
+  label: University of New Mexico Translational Informatics Division
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: http://www.chiragjpgroup.org/
+  label: Harvard School of Medicine Patel Group
 creation_date: '2025-07-17T00:00:00Z'
-description: >-
-  RepoDB is a standard dataset of drug repositioning successes and failures 
-  that can be used to fairly and reproducibly benchmark computational 
-  repositioning methods. The database contains approved drugs, their 
-  indications, and clinical trial outcomes.
+description: RepoDB is a standard dataset of drug repositioning successes and failures  that
+  can be used to fairly and reproducibly benchmark computational  repositioning methods.
+  The database contains approved drugs, their  indications, and clinical trial outcomes.
 domains:
 - drug discovery
 - pharmacology
 - clinical
 - biomedical
+homepage_url: https://unmtid-shinyapps.net/shiny/repodb/
 id: repodb
 last_modified_date: '2025-08-07T00:00:00Z'
 layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY-4.0
 name: RepoDB
 products:
 - category: Product
-  description: >-
-    Complete RepoDB dataset containing drug repositioning successes and failures,
-    with approved drugs, indications, and clinical trial outcomes
+  description: Complete RepoDB dataset containing drug repositioning successes and
+    failures, with approved drugs, indications, and clinical trial outcomes
   format: csv
   id: repodb.full_dataset
   name: RepoDB Full Dataset
@@ -28,37 +40,70 @@ products:
   - drugcentral
   - clinicaltrialsgov
   product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
+    header found'
 - category: GraphicalInterface
-  description: >-
-    Interactive web interface for exploring RepoDB data with drug-centric 
-    and disease-centric search capabilities
+  description: Interactive web interface for exploring RepoDB data with drug-centric  and
+    disease-centric search capabilities
   id: repodb.web_interface
   name: RepoDB Web Interface
   product_url: https://unmtid-shinyapps.net/shiny/repodb/
-homepage_url: https://unmtid-shinyapps.net/shiny/repodb/
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
+  name: Bioteque Embeddings
+  original_source:
+  - chebi
+  - cosmic
+  - achilles
+  - depmap
+  - ccle
+  - gdsc
+  - cellosaurus
+  - clue
+  - ctd
+  - pharmdb
+  - prism
+  - drugbank
+  - lincs
+  - compartments
+  - offsides
+  - sider
+  - drugcentral
+  - repohub
+  - chemicalchecker
+  - repodb
+  - disgenet
+  - opentargets
+  - creeds
+  - interpro
+  - reactome
+  - tissues
+  - dorothea
+  - progeny
+  - gtex
+  - hpa
+  - go
+  - corum
+  - huri
+  - intact
+  - omnipath
+  - string
+  - bto
+  product_file_size: 5826
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+  secondary_source:
+  - bioteque
 publications:
-- id: doi:10.1038/sdata.2017.29
-  doi: 10.1038/sdata.2017.29
-  title: 'A standard database for drug repositioning'
+- doi: 10.1038/sdata.2017.29
+  id: doi:10.1038/sdata.2017.29
   preferred: true
+  title: A standard database for drug repositioning
 - id: pmid:28291243
-  title: 'A standard database for drug repositioning'
-contacts:
-- category: Organization
-  label: University of New Mexico Translational Informatics Division
-  contact_details:
-  - contact_type: url
-    value: https://datascience.unm.edu/
-- category: Organization
-  label: Harvard School of Medicine Patel Group
-  contact_details:
-  - contact_type: url
-    value: http://www.chiragjpgroup.org/
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY-4.0
+  title: A standard database for drug repositioning
 ---
-
 # RepoDB: A Standard Database for Drug Repositioning
 
 RepoDB is a comprehensive database designed to support drug repositioning research by providing a standard set of drug repositioning successes and failures. This resource enables fair and reproducible benchmarking of computational repositioning methods by offering curated data on approved drugs, their therapeutic indications, and clinical trial outcomes.
