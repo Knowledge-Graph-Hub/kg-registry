@@ -99,6 +99,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
+    header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
     protein-coding gene mapped to the corresponding UniProt accession number
@@ -143,6 +145,8 @@ products:
   - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
