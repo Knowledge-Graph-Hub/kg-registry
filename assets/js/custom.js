@@ -135,7 +135,8 @@ jQuery(document).ready(function () {
 
     // Surround data table rows generated in renderTable function with table head
     function tableHtml(content, domain = false, tableDomains) {
-        return `<div class="p-1 bg-light"><strong>${domain ? capitalize(tableDomains) : ""}</strong></div>
+        const header = domain ? `<div class="p-1 bg-light"><strong>${capitalize(tableDomains)}</strong></div>` : '';
+        return `${header}
                 <table id="ont_table" class="table table-hover sortable">
                     <thead>
                         <tr>
@@ -281,7 +282,7 @@ jQuery(document).ready(function () {
      * 2. Using document fragments for DOM operations
      * 3. Loading dashboard data asynchronously in parallel
      */
-    function renderTable(data, domain = false) {
+    function renderTable(data) {
         // Show loading indicator right away
         $tableDiv.html('<div class="loading-indicator">Loading resources...</div>');
 
@@ -330,7 +331,7 @@ jQuery(document).ready(function () {
 
         // Separate dashboard data fetch from the rendering
         setTimeout(() => {
-            renderBasicTable(processedData, domain);
+            renderBasicTable(processedData);
         }, 0);
 
         // If dashboard data should be loaded, do it asynchronously
@@ -342,7 +343,7 @@ jQuery(document).ready(function () {
     }
 
     // Render the basic table structure without waiting for dashboard data
-    function renderBasicTable(processedData, domain) {
+    function renderBasicTable(processedData) {
         // Check data again before processing
         if (!processedData || !Array.isArray(processedData) || processedData.length === 0) {
             $tableDiv.html('<div class="alert alert-info">No resources found matching your criteria.</div>');
@@ -354,32 +355,7 @@ jQuery(document).ready(function () {
         // Update the count with filtered data length
         updateResourceCount(processedData.length, window.totalResourceCount || processedData.length);
 
-        let table = '';
-        let domainTables = '';
-
-        // Safely get unique domains
-        let tableDomains = [];
-        let tableDomainhtml = {};
-
-        if (domain) {
-            // Get unique domains safely
-            const domainSet = new Set();
-            processedData.forEach(item => {
-                if (item && item.domainValues && Array.isArray(item.domainValues)) {
-                    // Add each domain from the array to the set
-                    item.domainValues.forEach(d => domainSet.add(d));
-                } else if (item && item.domainValue) {
-                    // For backward compatibility
-                    domainSet.add(item.domainValue);
-                }
-            });
-            tableDomains = Array.from(domainSet);
-
-            // Prepare domain buckets
-            tableDomains.forEach(domainName => {
-                tableDomainhtml[domainName] = '';
-            });
-        }
+    let table = '';
 
         // Process in chunks for large datasets (improves responsiveness)
         const CHUNK_SIZE = 50;
@@ -394,17 +370,8 @@ jQuery(document).ready(function () {
                 const { item: originalItem, id, is_inactive, is_obsolete, domainValues } = item;
                 const template = createTableRow(originalItem, id, is_inactive, is_obsolete);
 
-                if (domain && domainValues && Array.isArray(domainValues)) {
-                    // Add the row to each of its domains
-                    domainValues.forEach(domainValue => {
-                        if (!tableDomainhtml[domainValue]) {
-                            tableDomainhtml[domainValue] = '';
-                        }
-                        tableDomainhtml[domainValue] += template;
-                    });
-                } else {
-                    table += template;
-                }
+                // Always render as a flat list (no grouping)
+                table += template;
             }
 
             // If more chunks to process, schedule next chunk
@@ -417,35 +384,10 @@ jQuery(document).ready(function () {
 
         // Handle completion of all chunks
         const finishRendering = () => {
-            if (domain && tableDomains.length > 0) {
-                // Sort domains
-                tableDomains.sort();
-
-                // Special case for "Upper" domain
-                const upperIndex = tableDomains.findIndex(d => d && d.toLowerCase() === "upper");
-                if (upperIndex > -1) {
-                    const upperDomain = tableDomains.splice(upperIndex, 1)[0];
-                    tableDomains.unshift(upperDomain);
-                }
-
-                // Build all tables at once
-                tableDomains.forEach(domainName => {
-                    if (domainName && tableDomainhtml[domainName]) {
-                        domainTables += tableHtml(tableDomainhtml[domainName], true, domainName);
-                    }
-                });
-
-                if (domainTables.length === 0) {
-                    $tableDiv.html('<div class="alert alert-info">No resources found with the selected domain.</div>');
-                } else {
-                    $tableDiv.html(domainTables);
-                }
+            if (table.length === 0) {
+                $tableDiv.html('<div class="alert alert-info">No resources found matching your criteria.</div>');
             } else {
-                if (table.length === 0) {
-                    $tableDiv.html('<div class="alert alert-info">No resources found matching your criteria.</div>');
-                } else {
-                    $tableDiv.html(tableHtml(table, false, ""));
-                }
+                $tableDiv.html(tableHtml(table, false, ""));
             }
 
             // Initialize sortable tables after content is added
@@ -547,26 +489,38 @@ jQuery(document).ready(function () {
         // Check for empty data to avoid errors
         if (!data || !data.resources) return;
 
-        // Store total count for reference in updating resource count
-        window.totalResourceCount = data.resources.length;
+    // Store total count for reference in updating resource count
+    window.totalResourceCount = data.resources.length;
 
         // Filter in steps for better performance
         let filteredData = data.resources.filter(x => x.category !== undefined);
+
+        // Exclude entries with domain 'stub' from the main page listing at all times
+        filteredData = filteredData.filter(x => {
+            // Handle multi-valued domains and legacy field
+            const domains = Array.isArray(x.domains) ? x.domains : (Array.isArray(x.domain) ? x.domain : (x.domains || x.domain ? [x.domains || x.domain] : []));
+            return !domains.some(d => (d || '').toLowerCase() === 'stub');
+        });
 
         // Only apply filters if values are selected
         if (selectedResourceType) {
             filteredData = filteredData.filter(x => x.category && x.category.includes(selectedResourceType));
         }
 
-        if (selectedDomain) {
+    if (selectedDomain) {
             filteredData = filteredData.filter(x => {
-                if (Array.isArray(x.domains)) {
-                    return x.domains.some(d => d.includes(selectedDomain));
-                } else if (Array.isArray(x.domain)) { // Backward compatibility
-                    return x.domain.some(d => d.includes(selectedDomain));
-                }
-                return (x.domains && x.domains.includes(selectedDomain)) ||
-                    (x.domain && x.domain.includes(selectedDomain)); // Backward compatibility
+        const domains = Array.isArray(x.domains) ? x.domains : (Array.isArray(x.domain) ? x.domain : (x.domains || x.domain ? [x.domains || x.domain] : []));
+        const sel = selectedDomain.toLowerCase();
+        return domains.some(d => (d || '').toLowerCase() === sel);
+            });
+
+            // Ensure uniqueness when domain filter is active (avoid duplicates across multiple domains)
+            const seen = new Set();
+            filteredData = filteredData.filter(x => {
+                const key = x.id || x.name || JSON.stringify(x);
+                if (seen.has(key)) return false;
+                seen.add(key);
+                return true;
             });
         }
 
@@ -582,28 +536,15 @@ jQuery(document).ready(function () {
         // Apply search filter
         filteredData = Search($searchVal, filteredData);
 
-        // Apply checkbox filters
-        applyFilters(filteredData);
+    // Always render a flat list (no group-by)
+    renderTable(filteredData);
     }
 
     /**
      * Apply selected checkbox filter to data passed in
      * @param {object} data
      */
-    function applyFilters(data) {
-        const selector = $("[data-filter]");
-        const domain = selector[0] && selector[0].checked;
-
-        let filteredData = data;
-
-        // Sort if domain grouping is requested
-        if (domain) {
-            filteredData = sortByField(filteredData, "domain");
-            renderTable(filteredData, true);
-        } else {
-            renderTable(filteredData);
-        }
-    }
+    // applyFilters is no longer needed since we always render a flat list
 
     /**
      * Sort json resource data by the given sort field
@@ -685,8 +626,8 @@ jQuery(document).ready(function () {
             window.totalResourceCount = data.resources.length;
             updateResourceCount(data.resources.length, data.resources.length);
 
-            // Extract domains (handling multi-valued domains)
-            const domains = [...new Set(
+            // Extract domains (handling multi-valued domains) and remove 'stub'
+            let domains = [...new Set(
                 data.resources
                     .filter(r => r.domains !== undefined || r.domain !== undefined)
                     .flatMap(r => {
@@ -702,7 +643,9 @@ jQuery(document).ready(function () {
                         }
                         return ["Unknown"];
                     })
-            )];
+            )]
+            // Remove 'stub' (case-insensitive)
+            .filter(d => (d || '').toLowerCase() !== 'stub');
             domains.sort();
 
             // Extract resource types (fix for duplication issue)
@@ -728,20 +671,21 @@ jQuery(document).ready(function () {
 
             // Populate dropdowns (avoids duplication)
             populateDropdown("#dd-domains", domains);
+            $("#dd-domains option[value='']").text('All Domains');
 
             // Use the formatResourceType function for resource types dropdown
             populateDropdown("#dd-resourcetypes", resourceTypes, true, formatResourceType);
+            $("#dd-resourcetypes option[value='']").text('All Resource Types');
 
             // Populate collections dropdown with capitalized entries
             populateDropdown("#dd-collections", collections, true, capitalize);
+            $("#dd-collections option[value='']").text('All Collections');
 
-            // Render initial table
-            renderTable(data.resources);
+            // Defer initial render to the first filter cycle to apply default rules (flat list, no 'stub')
 
             // Set up event handlers with debounce
             const filterHandler = debounce(() => apply_all_filters(data), 100);
 
-            $("[data-filter]").on("change", filterHandler);
             $ddDomains.on("change", filterHandler);
             $ddResourceTypes.on("change", filterHandler);
             $ddCollections.on("change", filterHandler);
@@ -757,8 +701,8 @@ jQuery(document).ready(function () {
                 subtree: true
             });
 
-            // Trigger initial filter
-            $("[data-filter]").first().trigger('change');
+            // Trigger initial filter to apply default exclusions
+            filterHandler();
         })
         .catch(error => {
             console.error('Error loading data:', error);
