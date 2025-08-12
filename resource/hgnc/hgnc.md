@@ -53,6 +53,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+    when accessing file'
 - category: Product
   description: hgnc OBO Graph JSON
   format: json
@@ -70,6 +72,8 @@ products:
   - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: hgnc SSSOM
@@ -149,6 +153,8 @@ products:
   - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -290,6 +296,51 @@ products:
   product_url: https://ubkg-downloads.xconsortia.org/
   secondary_source:
   - ubkg
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - do
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
 repository: https://github.com/HGNC
 ---
 HUGO Gene Nomenclature Committee

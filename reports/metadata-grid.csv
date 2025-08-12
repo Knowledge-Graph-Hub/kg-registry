@@ -9,6 +9,7 @@ bgee,active,PASS
 bigg,active,PASS
 bindingdb,active,PASS
 biocyc,active,PASS
+biogps,active,PASS
 biolink,active,PASS
 biomarker,active,PASS
 biomarkerkg,active,PASS
@@ -16,6 +17,7 @@ bioteque,active,PASS
 bto,active,PASS
 bv-brc,active,PASS
 cam-kp,active,PASS
+cancer-genome-interpreter,active,PASS
 ccle,active,PASS
 cellmarker,active,PASS
 cellosaurus,active,PASS
@@ -30,6 +32,7 @@ cl,active,PASS
 cl-kg,active,PASS
 clingen,active,PASS
 clinical-data-kp,active,PASS
+clinicalkg,active,PASS
 clinicaltrialsgov,active,PASS
 clinvar,active,PASS
 clo,active,PASS
@@ -40,6 +43,7 @@ cob,active,PASS
 compartments,active,PASS
 complexportal,active,PASS
 connections-hypothesis-kp,active,PASS
+connectivitymap,active,PASS
 corum,active,PASS
 cosmic,active,PASS
 cpathkg,active,PASS
@@ -58,6 +62,7 @@ drkg,active,PASS
 drug-approvals-kp,active,PASS
 drugbank,active,PASS
 drugcentral,active,PASS
+drugmechdb,active,PASS
 dsstox,active,PASS
 ebrains,active,PASS
 ecid,active,PASS
@@ -67,6 +72,7 @@ ecosim,active,PASS
 ecto,active,PASS
 edam,active,PASS
 efo,active,PASS
+embiology,active,PASS
 emikg,active,PASS
 ensembl,active,PASS
 envo,active,PASS
@@ -87,6 +93,7 @@ glycocoo,active,PASS
 glyconnect,active,PASS
 glycordf,active,PASS
 glygen,active,PASS
+gnbr,active,PASS
 go,active,PASS
 go-cam,active,PASS
 goldterms,active,PASS
@@ -100,6 +107,7 @@ gwascatalog,active,PASS
 hancestro,active,PASS
 hetionet,active,PASS
 hgnc,active,PASS
+hmdb,active,PASS
 hp,active,PASS
 hpa,active,PASS
 hra,active,PASS
@@ -107,6 +115,7 @@ hra-kg,active,PASS
 hrpimp,active,PASS
 hsapdv,active,PASS
 hubmap,active,PASS
+humannet,active,PASS
 huri,active,PASS
 iao,active,PASS
 icd10,active,PASS
@@ -145,13 +154,16 @@ mi,active,PASS
 mind,active,PASS
 mirtarbase,active,PASS
 mixs,active,PASS
+mod,active,PASS
 molecular-data-kp,active,PASS
 mondo,active,PASS
 motrpac,active,PASS
 mp,active,PASS
 mpath,active,PASS
+ms,active,PASS
 msigdb,active,PASS
 multiomics-kp,active,PASS
+mutationds,active,PASS
 mw,active,PASS
 ncatsgardkg,active,PASS
 ncbigene,active,PASS
@@ -177,6 +189,7 @@ omit,active,PASS
 omnipath,active,PASS
 omo,active,PASS
 omrse,active,PASS
+oncokb,active,PASS
 ontology-kp,active,PASS
 opentargets,active,PASS
 orcid,active,PASS
@@ -194,9 +207,11 @@ pgo,active,PASS
 pharmacotherapydb,active,PASS
 pharmdb,active,PASS
 pharmgkb,active,PASS
+pharmkg,active,PASS
 pheknowlator,active,PASS
 phenio,active,PASS
 phewascat,active,PASS
+phosphositeplus,active,PASS
 pid,active,PASS
 po,active,PASS
 pombase,active,PASS
@@ -227,22 +242,27 @@ sennet,active,PASS
 service-kp,active,PASS
 sgd,active,PASS
 sibils,active,PASS
+signor,active,PASS
 skm,active,PASS
 skos,active,PASS
 sldb,active,PASS
+smpdb,active,PASS
 snomedct,active,PASS
 so,active,PASS
 spoke,active,PASS
 sri-reference-kg,active,PASS
 stellar,active,PASS
+stitch,active,PASS
 string,active,PASS
 swisslipid,active,PASS
 text-mining-kp,active,PASS
 tissues,active,PASS
 to,active,PASS
+ttd,active,PASS
 ubergraph,active,PASS
 uberon,active,PASS
 ubkg,active,PASS
+uf-okn,active,PASS
 ukbiobank,active,PASS
 unii,active,PASS
 uniprot,active,PASS

@@ -40,6 +40,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 403 error
+    when accessing file'
 repository: https://github.com/mims-harvard/PrimeKG
 ---
 ### PrimeKG: A Knowledge Graph for Precision Medicine

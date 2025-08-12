@@ -52,11 +52,11 @@ products:
   product_url: https://doi.org/10.5281/zenodo.8139357
   repository: https://github.com/SuLab/DrugMechDB
   versions:
-    - 2.0.1
-    - 2.0.0
-    - 1.0.2
-    - 1.0
-  latest_version: 2.0.1
+    - '2.0.1'
+    - '2.0.0'
+    - '1.0.2'
+    - '1.0'
+  latest_version: '2.0.1'
 - category: GraphicalInterface
   description: Web interface for exploring curated DrugMechDB paths by drug and disease.
   format: http

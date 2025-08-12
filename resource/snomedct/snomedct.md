@@ -16,7 +16,12 @@ contacts:
   - contact_type: url
     value: https://www.nlm.nih.gov/healthit/snomedct/index.html
   label: National Library of Medicine (NLM)
-description: SNOMED CT (Systematized Nomenclature of Medicine Clinical Terms) is the most comprehensive, multilingual clinical healthcare terminology in the world. It provides a standardized way to represent clinical phrases captured by clinicians and enables automatic interpretation of these terms. SNOMED CT includes more than 360,000 active concepts with unique meanings and formal logic-based definitions organized into hierarchies.
+description: SNOMED CT (Systematized Nomenclature of Medicine Clinical Terms) is the
+  most comprehensive, multilingual clinical healthcare terminology in the world. It
+  provides a standardized way to represent clinical phrases captured by clinicians
+  and enables automatic interpretation of these terms. SNOMED CT includes more than
+  360,000 active concepts with unique meanings and formal logic-based definitions
+  organized into hierarchies.
 domains:
 - biomedical
 - clinical
@@ -28,24 +33,26 @@ license:
   id: https://www.snomed.org/snomed-ct/get-snomed
   label: SNOMED CT Affiliate License
 name: SNOMED CT
-repository: https://browser.ihtsdotools.org/
 products:
 - category: DataModelProduct
-  description: The biannual release of the US Edition of SNOMED CT, combining content from both the US Extension and International releases.
+  description: The biannual release of the US Edition of SNOMED CT, combining content
+    from both the US Extension and International releases.
   id: snomedct.us.content
   name: SNOMED CT US Edition
   original_source:
   - snomedct
   product_url: https://download.nlm.nih.gov/mlb/utsauth/USExt/doc_SnomedCT-USEdition-ReleaseNotes_Current_en-US_US1000124_20250301.pdf
 - category: DataModelProduct
-  description: The monthly release of the International Edition of SNOMED CT, the core release from SNOMED International, as RF2 files.
+  description: The monthly release of the International Edition of SNOMED CT, the
+    core release from SNOMED International, as RF2 files.
   id: snomedct.international.content
   name: SNOMED CT International Edition
   original_source:
   - snomedct
   product_url: https://download.nlm.nih.gov/umls/kss/IHTSDO2025/IHTSDO20250601/SnomedCT_InternationalRF2_PRODUCTION_20250601T120000Z.zip
 - category: MappingProduct
-  description: The biannual release of the SNOMED CT to ICD-10-CM Map, which maps SNOMED CT concepts to ICD-10-CM codes.
+  description: The biannual release of the SNOMED CT to ICD-10-CM Map, which maps
+    SNOMED CT concepts to ICD-10-CM codes.
   id: snomedct.icd10cm.map
   name: SNOMED CT to ICD-10-CM Map
   original_source:
@@ -61,7 +68,8 @@ products:
   - snomedct
   product_url: https://browser.ihtsdotools.org/
 - category: DataModelProduct
-  description: A frequently used subset of SNOMED CT concepts for nursing documentation in electronic health records. August 2017 release.
+  description: A frequently used subset of SNOMED CT concepts for nursing documentation
+    in electronic health records. August 2017 release.
   id: snomedct.nursing
   name: SNOMED CT Nursing Problem List Subset
   original_source:
@@ -194,8 +202,53 @@ products:
   product_url: https://ubkg-downloads.xconsortia.org/
   secondary_source:
   - ubkg
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - do
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+repository: https://browser.ihtsdotools.org/
 ---
-
 # SNOMED CT
 
 SNOMED CT (Systematized Nomenclature of Medicine Clinical Terms) is the most comprehensive, multilingual clinical healthcare terminology in the world. It serves as a standardized vocabulary for clinical documentation and enables consistent representation of clinical content in electronic health records.
