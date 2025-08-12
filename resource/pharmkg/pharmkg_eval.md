@@ -70,6 +70,6 @@ layout: eval_detail
 <div class="table-responsive">
 <table class="table table-striped">
 <thead><tr><th>Question</th><th>Answer</th><th>Comment</th></tr></thead><tbody>
-<tr><td>License</td><td></td><td>explicit license (restricted use). The paper notes: “© The Author(s) 2020. Published by Oxford University Press. All rights reserved.” But does not reveal license information (nor does the GitHub repo)</td></tr>
+<tr><td>License</td><td></td><td>Explicit license (restricted use). The paper notes: “© The Author(s) 2020. Published by Oxford University Press. All rights reserved.” But does not reveal license information (nor does the GitHub repo)</td></tr>
 </tbody></table></div>
 

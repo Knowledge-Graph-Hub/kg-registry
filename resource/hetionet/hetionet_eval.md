@@ -9,9 +9,9 @@ layout: eval_detail
 <table class="table table-striped">
 <thead><tr><th>Question</th><th>Answer</th><th>Comment</th></tr></thead><tbody>
 <tr><td>Access to data outside of the knowledge graph</td><td style="background-color:#d4edda;">Y</td><td>Can access paths, DWPCs, prediction probabilities, network support breakdowns for compound–disease pairs (via Neo4j Browser &amp; guides)</td></tr>
-<tr><td>API or online access to the knowledge graph</td><td style="background-color:#d4edda;">Y</td><td>fully hosted on a public Neo4j instance with Cypher queries, guides, tutorials <a href="https://neo4j.het.io/browser/">https://neo4j.het.io/browser/</a></td></tr>
+<tr><td>API or online access to the knowledge graph</td><td style="background-color:#d4edda;">Y</td><td>Fully hosted on a public Neo4j instance with Cypher queries, guides, tutorials <a href="https://neo4j.het.io/browser/">https://neo4j.het.io/browser/</a></td></tr>
 <tr><td>Multiple access options available</td><td style="background-color:#d4edda;">Y</td><td>Downloadable as JSON, Neo4j DB, TSV; also query online in Neo4j Browser; source code &amp; intermediate datasets on GitHub, Zenodo, Figshare</td></tr>
-<tr><td>Source code availability</td><td style="background-color:#d4edda;">Y</td><td>, the source code and scripts are public on hetio and GitHub linked in the paper <a href="https://github.com/elifesciences-publications/hetionet">https://github.com/elifesciences-publications/hetionet</a></td></tr>
+<tr><td>Source code availability</td><td style="background-color:#d4edda;">Y</td><td>The source code and scripts are public on hetio and GitHub linked in the paper <a href="https://github.com/elifesciences-publications/hetionet">https://github.com/elifesciences-publications/hetionet</a></td></tr>
 <tr><td>Downloadable knowledge graph</td><td style="background-color:#d4edda;">Y</td><td>Multiple export formats (JSON, Neo4j dump, TSV)</td></tr>
 </tbody></table></div>
 <p><strong>Section Score:</strong> 5/5</p>
