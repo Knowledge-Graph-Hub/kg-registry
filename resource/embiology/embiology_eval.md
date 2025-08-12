@@ -26,7 +26,7 @@ layout: eval_detail
 <tr><td>Node and edge sources</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
 <tr><td>Edges deduplication</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
 <tr><td>Triples source details</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
-<tr><td>Edge type schema</td><td style="background-color:#d4edda;">Y</td><td>, changed yearly in their baseline updated but cannot see what schema is without paid account</td></tr>
+<tr><td>Edge type schema</td><td style="background-color:#d4edda;">Y</td><td>Changed yearly in their baseline updated but cannot see what schema is without paid account</td></tr>
 </tbody></table></div>
 <p><strong>Section Score:</strong> 1/7</p>
 
@@ -37,7 +37,7 @@ layout: eval_detail
 <tr><td>Biological usable data</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
 <tr><td>Resolvable IDs</td><td style="background-color:#f8d7da;">N</td><td>Not explicitly stated but they use ML for entity recognition  so probably</td></tr>
 <tr><td>Construction documentation</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
-<tr><td>Transformation documentation</td><td style="background-color:#f8d7da;">N</td><td>, lots of this is based on NLP/text mining approaches but preprocessing of sources is not documented</td></tr>
+<tr><td>Transformation documentation</td><td style="background-color:#f8d7da;">N</td><td>Lots of this is based on NLP/text mining approaches but preprocessing of sources is not documented</td></tr>
 <tr><td>Schema used</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
 </tbody></table></div>
 <p><strong>Section Score:</strong> 0/5</p>
@@ -49,7 +49,7 @@ layout: eval_detail
 <tr><td>Stable versions</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
 <tr><td>Public tracker information</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
 <tr><td>Knowledge graph contact information</td><td style="background-color:#d4edda;">Y</td><td>Contact form (for sales team)</td></tr>
-<tr><td>Updated annually</td><td style="background-color:#d4edda;">Y</td><td>, cannot confirm but website states yearly update of terminology/rules, quarterly update of clinical trial data, weekly update of relationships extracted from publications</td></tr>
+<tr><td>Updated annually</td><td style="background-color:#d4edda;">Y</td><td>Cannot confirm but website states yearly update of terminology/rules, quarterly update of clinical trial data, weekly update of relationships extracted from publications</td></tr>
 <tr><td>Prior versions access</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
 </tbody></table></div>
 <p><strong>Section Score:</strong> 2/5</p>

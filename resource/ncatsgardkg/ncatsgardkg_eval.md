@@ -12,7 +12,7 @@ layout: eval_detail
 <tr><td>API or online access to the knowledge graph</td><td style="background-color:#d4edda;">Y</td><td>Public Neo4j instance available: <a href="https://disease.ncats.io">https://disease.ncats.io</a></td></tr>
 <tr><td>Multiple access options available</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
 <tr><td>Source code availability</td><td style="background-color:#d4edda;">Y</td><td>Partially – The in-house framework stitcher is mentioned and linked (<a href="https://github.com/ncats/stitcher),">https://github.com/ncats/stitcher),</a> but full KG generation scripts for GARD KG are not public</td></tr>
-<tr><td>Downloadable knowledge graph</td><td style="background-color:#d4edda;">Y</td><td>networkx pickle</td></tr>
+<tr><td>Downloadable knowledge graph</td><td style="background-color:#d4edda;">Y</td><td>Networkx pickle</td></tr>
 </tbody></table></div>
 <p><strong>Section Score:</strong> 4/5</p>
 
@@ -20,10 +20,10 @@ layout: eval_detail
 <div class="table-responsive">
 <table class="table table-striped">
 <thead><tr><th>Question</th><th>Answer</th><th>Comment</th></tr></thead><tbody>
-<tr><td>Source list provided</td><td style="background-color:#d4edda;">Y</td><td>, integrates 34 distinct biomedical resources</td></tr>
+<tr><td>Source list provided</td><td style="background-color:#d4edda;">Y</td><td>Integrates 34 distinct biomedical resources</td></tr>
 <tr><td>Source versions information</td><td style="background-color:#d4edda;">Y</td><td>ORPHADATA v4.0  Gene Ontology  Human Phenotype Ontology  GO annotations Pathway Commons (PTC) Pharos v3.8.0</td></tr>
 <tr><td>Import dependencies</td><td style="background-color:#d4edda;">Y</td><td>Partially – Tools like stitcher and OWL file parsing are mentioned, but not declared formally like a software repo would</td></tr>
-<tr><td>Node and edge sources</td><td style="background-color:#d4edda;">Y</td><td>each node/edge carries provenance via stitch keys (e.g., N_Name, I_CODE)</td></tr>
+<tr><td>Node and edge sources</td><td style="background-color:#d4edda;">Y</td><td>Each node/edge carries provenance via stitch keys (e.g., N_Name, I_CODE)</td></tr>
 <tr><td>Edges deduplication</td><td style="background-color:#d4edda;">Y</td><td>Partially – Mappings and harmonization discussed, but no explicit deduplication process for edges described</td></tr>
 <tr><td>Triples source details</td><td style="background-color:#d4edda;">Y</td><td>Object properties defined per source and integration method (e.g., has_phenotype, I_CODE, N_Name)</td></tr>
 <tr><td>Edge type schema</td><td style="background-color:#d4edda;">Y</td><td>Meta-ontology schema is described with object properties and their meanings (Table 3)</td></tr>
