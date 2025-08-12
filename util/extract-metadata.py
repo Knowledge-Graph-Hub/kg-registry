@@ -645,6 +645,42 @@ def concat_resource_yaml(args):
             group_headers = rows[0]
             question_headers = rows[1]
 
+            # Load human-readable question titles mapping from eval_descriptions.tsv (if present)
+            descriptions = {}
+            desc_path = ROOT / 'evals' / 'eval_descriptions.tsv'
+            if desc_path.exists():
+                try:
+                    with open(desc_path, 'r', newline='', encoding='utf-8') as df:
+                        d_reader = csv.reader(df, delimiter='\t')
+                        for d_row in d_reader:
+                            if not d_row or len(d_row) < 2:
+                                continue
+                            k = (d_row[0] or '').strip()
+                            v = (d_row[1] or '').strip()
+                            if not k or not v:
+                                continue
+                            # Skip header-like rows
+                            kl = k.lower()
+                            vl = v.lower()
+                            if kl in ('id', 'key', 'question', 'field') and vl in ('description', 'label', 'title'):
+                                continue
+                            descriptions[k] = v
+                except Exception as e:
+                    print(f"WARN: could not read eval_descriptions.tsv: {e}")
+
+            def humanize_identifier(s: str) -> str:
+                t = (s or '').strip()
+                if not t:
+                    return ''
+                t = t.replace('_', ' ')
+                t = t.title()
+                # Fix common acronyms
+                t = t.replace('Kg', 'KG').replace('Api', 'API').replace('Id', 'ID').replace('Ids', 'IDs')
+                return t
+
+            def display_title(key: str) -> str:
+                return descriptions.get(key, humanize_identifier(key))
+
             # Forward-fill empty group headers so blanks inherit the previous non-empty category
             filled_group_headers = list(group_headers)
             last = ''
@@ -682,6 +718,20 @@ def concat_resource_yaml(args):
                 parts.append(html.escape(s[last:]))
                 return ''.join(parts)
 
+            # Clean comment: drop leading boolean marker and surrounding parentheses
+            def clean_comment(c: str) -> str:
+                import re
+                if not c:
+                    return ''
+                txt = c.strip()
+                # Remove leading boolean answer tokens (Y/N/Yes/No) with optional punctuation and spaces
+                txt = re.sub(r'^\s*(yes|y|no|n)\b[\s:;\-–—]*', '', txt, flags=re.IGNORECASE)
+                txt = txt.strip()
+                # If wrapped in a single pair of parentheses, remove them
+                if len(txt) >= 2 and txt[0] == '(' and txt[-1] == ')':
+                    txt = txt[1:-1].strip()
+                return txt
+
             # Ensure first column is ID; iterate over data rows
             for row in rows[2:]:
                 if not row or len(row) == 0:
@@ -696,9 +746,9 @@ def concat_resource_yaml(args):
                     print(f"WARN: evaluation provided for '{rid}' but no resource page found; skipping")
                     continue
 
-                # Group questions and answers by category, preserving column order
+                # Group questions by category, collapsing paired *_text comment columns with their boolean
                 from collections import OrderedDict
-                grouped: OrderedDict[str, list[tuple[str, str]]] = OrderedDict()
+                grouped = OrderedDict()  # cat -> OrderedDict[base_question] -> {question, answer, comment}
                 col_limit = min(len(filled_group_headers), len(question_headers), len(row))
                 # Optional per-row metadata
                 evaluator_val = ''
@@ -717,9 +767,25 @@ def concat_resource_yaml(args):
                     if q_norm in ('evaluation_date', 'evaluation date', 'date'):
                         evaluation_date_val = v
                         continue
+                    # Determine base question id and if this is a comment column
+                    is_comment = False
+                    base_q = q
+                    if q.endswith('_text'):
+                        is_comment = True
+                        base_q = q[:-5]
+
                     if cat not in grouped:
-                        grouped[cat] = []
-                    grouped[cat].append((q, v))
+                        grouped[cat] = OrderedDict()
+                    if base_q not in grouped[cat]:
+                        grouped[cat][base_q] = {
+                            'question': base_q,
+                            'answer': '',
+                            'comment': ''
+                        }
+                    if is_comment:
+                        grouped[cat][base_q]['comment'] = v
+                    else:
+                        grouped[cat][base_q]['answer'] = v
 
                 # Default evaluation date to today if not supplied
                 if not evaluation_date_val:
@@ -729,26 +795,30 @@ def concat_resource_yaml(args):
 
                 # Build HTML content (layout will render title and metadata)
                 html_lines = []
-                for cat, qas in grouped.items():
+                for cat, qmap in grouped.items():
                     if cat:
                         html_lines.append(f"## {cat}")
                     html_lines.append("<div class=\"table-responsive\">")
                     html_lines.append("<table class=\"table table-striped\">")
-                    html_lines.append("<thead><tr><th>Question</th><th>Answer</th></tr></thead><tbody>")
+                    html_lines.append("<thead><tr><th>Question</th><th>Answer</th><th>Comment</th></tr></thead><tbody>")
                     yes_count = 0
                     answered_count = 0
-                    for (q, v) in qas:
+                    for base_q, entry in qmap.items():
+                        q_val = display_title(entry.get('question', ''))
+                        a_val = entry.get('answer', '')
+                        c_val = clean_comment(entry.get('comment', ''))
                         # Escape and linkify
-                        q_esc = linkify_and_escape(q or '')
-                        v_esc = linkify_and_escape(v or '')
-                        style = style_for_value(v)
+                        q_esc = linkify_and_escape(q_val or '')
+                        a_esc = linkify_and_escape(a_val or '')
+                        c_esc = linkify_and_escape(c_val or '')
+                        style = style_for_value(a_val)
                         style_attr = f" style=\"{style}\"" if style else ""
-                        v_norm = (v or '').strip().lower()
+                        v_norm = (a_val or '').strip().lower()
                         if v_norm:
                             answered_count += 1
                             if v_norm.startswith('y') or v_norm.startswith('yes'):
                                 yes_count += 1
-                        html_lines.append(f"<tr><td>{q_esc}</td><td{style_attr}>{v_esc}</td></tr>")
+                        html_lines.append(f"<tr><td>{q_esc}</td><td{style_attr}>{a_esc}</td><td>{c_esc}</td></tr>")
                     html_lines.append("</tbody></table></div>")
                     # Section score (skip for License Information)
                     if (cat or '').strip().lower() != 'license information':
