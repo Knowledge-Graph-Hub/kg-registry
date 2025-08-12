@@ -1,8 +1,8 @@
 ---
+evaluation_date: '2025-08-12'
+evaluator: Not specified
 layout: eval_detail
 ---
-
-# Evaluation for hetionet
 
 ## Access Level and Types
 <div class="table-responsive">
@@ -10,21 +10,22 @@ layout: eval_detail
 <thead><tr><th>Question</th><th>Answer</th></tr></thead><tbody>
 <tr><td>access_otherthanKG_text</td><td style="background-color:#d4edda;">Yes - Can access paths, DWPCs, prediction probabilities, network support breakdowns for compound–disease pairs (via Neo4j Browser &amp; guides)</td></tr>
 <tr><td>access_otherthanKG</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>api_or_online_access_text</td><td style="background-color:#d4edda;">Yes - fully hosted on a public Neo4j instance with Cypher queries, guides, tutorials https://neo4j.het.io/browser/</td></tr>
+<tr><td>api_or_online_access_text</td><td style="background-color:#d4edda;">Yes - fully hosted on a public Neo4j instance with Cypher queries, guides, tutorials <a href="https://neo4j.het.io/browser/">https://neo4j.het.io/browser/</a></td></tr>
 <tr><td>api_or_online_access</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>multi_access_options_text</td><td style="background-color:#d4edda;">Yes - Downloadable as JSON, Neo4j DB, TSV; also query online in Neo4j Browser; source code &amp; intermediate datasets on GitHub, Zenodo, Figshare</td></tr>
 <tr><td>multi_access_options</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>sourcecode_available_text</td><td style="background-color:#d4edda;">Yes, the source code and scripts are public on hetio and GitHub linked in the paper https://github.com/elifesciences-publications/hetionet</td></tr>
+<tr><td>sourcecode_available_text</td><td style="background-color:#d4edda;">Yes, the source code and scripts are public on hetio and GitHub linked in the paper <a href="https://github.com/elifesciences-publications/hetionet">https://github.com/elifesciences-publications/hetionet</a></td></tr>
 <tr><td>sourcecode_available</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>downloadable_KG_text</td><td style="background-color:#d4edda;">Yes - Multiple export formats (JSON, Neo4j dump, TSV)</td></tr>
 <tr><td>downloadable_KG</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 10/10</p>
 
 ## Provenance of Nodes and Edges
 <div class="table-responsive">
 <table class="table table-striped">
 <thead><tr><th>Question</th><th>Answer</th></tr></thead><tbody>
-<tr><td>source_list_provided_text</td><td style="background-color:#d4edda;">Yes - 29 sources documented; each node/edge carries source information in properties; full list with versions in paper https://elifesciences.org/articles/26726</td></tr>
+<tr><td>source_list_provided_text</td><td style="background-color:#d4edda;">Yes - 29 sources documented; each node/edge carries source information in properties; full list with versions in paper <a href="https://elifesciences.org/articles/26726">https://elifesciences.org/articles/26726</a></td></tr>
 <tr><td>source_list_provided</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>source_versions_info_text</td><td style="background-color:#d4edda;">Yes - Versions noted: e.g., DrugBank v4.2, SIDER v4.1, LINCS L1000 (Oct 2015), Pathway Commons (with date)</td></tr>
 <tr><td>source_versions_info</td><td style="background-color:#d4edda;">Y</td></tr>
@@ -39,6 +40,7 @@ layout: eval_detail
 <tr><td>edge_type_schema_text</td><td style="background-color:#d4edda;">Yes - Clear metagraph with 11 node types &amp; 24 metaedges; each with documented origin &amp; justification</td></tr>
 <tr><td>edge_type_schema</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 14/14</p>
 
 ## Documented standards, schema, construction
 <div class="table-responsive">
@@ -55,6 +57,7 @@ layout: eval_detail
 <tr><td>schema_used_text</td><td style="background-color:#d4edda;">Yes - Metagraph is the explicit schema; node and edge types clearly defined</td></tr>
 <tr><td>schema_used</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 10/10</p>
 
 ## Update frequency and versioning
 <div class="table-responsive">
@@ -71,6 +74,7 @@ layout: eval_detail
 <tr><td>prior_versions_access_text</td><td style="background-color:#f8d7da;">No - Early versions mentioned but no archived download versions listed</td></tr>
 <tr><td>prior_versions_access</td><td style="background-color:#f8d7da;">N</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 4/10</p>
 
 ## Evaluation - Metrics and Fitness for Purpose
 <div class="table-responsive">
@@ -87,6 +91,7 @@ layout: eval_detail
 <tr><td>accuracy_metrics_text</td><td style="background-color:#d4edda;">Yes - Probability scores, cross-validated elastic net, path-level contribution breakdowns, AUROC</td></tr>
 <tr><td>accuracy_metrics</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 10/10</p>
 
 ## License Information
 <div class="table-responsive">

@@ -1,24 +1,25 @@
 ---
+evaluation_date: '2025-08-12'
+evaluator: Not specified
 layout: eval_detail
 ---
-
-# Evaluation for hra-kg
 
 ## Access Level and Types
 <div class="table-responsive">
 <table class="table table-striped">
 <thead><tr><th>Question</th><th>Answer</th></tr></thead><tbody>
-<tr><td>access_otherthanKG_text</td><td style="background-color:#d4edda;">Yes, users can ask biological questions via queries (Basic Usage: https://cns-iu.github.io/hra-kg-supporting-information/#basic-usage, Advanced Usage: https://github.com/cns-iu/hra-kg-supporting-information/blob/main/README.md)</td></tr>
+<tr><td>access_otherthanKG_text</td><td style="background-color:#d4edda;">Yes, users can ask biological questions via queries (Basic Usage: <a href="https://cns-iu.github.io/hra-kg-supporting-information/#basic-usage,">https://cns-iu.github.io/hra-kg-supporting-information/#basic-usage,</a> Advanced Usage: <a href="https://github.com/cns-iu/hra-kg-supporting-information/blob/main/README.md)">https://github.com/cns-iu/hra-kg-supporting-information/blob/main/README.md)</a></td></tr>
 <tr><td>access_otherthanKG</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>api_or_online_access_text</td><td style="background-color:#d4edda;">Yes, can access by SPARQL endpoint, HRA API, and RESTful-API.</td></tr>
 <tr><td>api_or_online_access</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>multi_access_options_text</td><td style="background-color:#d4edda;">Yes, dynamic queries through its SPARQL, RESTful-API, and UIs.</td></tr>
 <tr><td>multi_access_options</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>sourcecode_available_text</td><td style="background-color:#d4edda;">Yes, Github (https://github.com/hubmapconsortium/hra-kg)</td></tr>
+<tr><td>sourcecode_available_text</td><td style="background-color:#d4edda;">Yes, Github (<a href="https://github.com/hubmapconsortium/hra-kg)">https://github.com/hubmapconsortium/hra-kg)</a></td></tr>
 <tr><td>sourcecode_available</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>downloadable_KG_text</td><td style="background-color:#d4edda;">Yes, available on Zenodo and HRA CDN</td></tr>
 <tr><td>downloadable_KG</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 10/10</p>
 
 ## Provenance of Nodes and Edges
 <div class="table-responsive">
@@ -26,7 +27,7 @@ layout: eval_detail
 <thead><tr><th>Question</th><th>Answer</th></tr></thead><tbody>
 <tr><td>source_list_provided_text</td><td style="background-color:#d4edda;">Yes, Table 2</td></tr>
 <tr><td>source_list_provided</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>source_versions_info_text</td><td style="background-color:#d4edda;">Yes, the type, name, and version of each DO is documented (https://lod.humanatlas.io/asct-b/).</td></tr>
+<tr><td>source_versions_info_text</td><td style="background-color:#d4edda;">Yes, the type, name, and version of each DO is documented (<a href="https://lod.humanatlas.io/asct-b/).">https://lod.humanatlas.io/asct-b/).</a></td></tr>
 <tr><td>source_versions_info</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>import_dependancies_text</td><td style="background-color:#d4edda;">Yes, in the hra-do-processor.</td></tr>
 <tr><td>import_dependancies</td><td style="background-color:#d4edda;">Y</td></tr>
@@ -39,6 +40,7 @@ layout: eval_detail
 <tr><td>edge_type_schema_text</td><td style="background-color:#d4edda;">Yes, the KG is built based on RDF graph (CCF ontology) and standard ontologies to define relationship types between the entities.</td></tr>
 <tr><td>edge_type_schema</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 12/14</p>
 
 ## Documented standards, schema, construction
 <div class="table-responsive">
@@ -55,6 +57,7 @@ layout: eval_detail
 <tr><td>schema_used_text</td><td style="background-color:#d4edda;">Yes, ASCT+B tables and Common Coordinate Framework (CCF) Ontology.</td></tr>
 <tr><td>schema_used</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 10/10</p>
 
 ## Update frequency and versioning
 <div class="table-responsive">
@@ -64,13 +67,14 @@ layout: eval_detail
 <tr><td>stable_versions</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>public_tracker_text</td><td style="background-color:#f8d7da;">Not explicitly mentioned, but there are multiple Github Issues portals for users to post requests, reports bugs, and discussions.</td></tr>
 <tr><td>public_tracker</td><td style="background-color:#f8d7da;">N</td></tr>
-<tr><td>kg_contact_info_text</td><td style="background-color:#d4edda;">Yes, contact information is available to reach out to the team (https://humanatlas.io/about#editorial-board)</td></tr>
+<tr><td>kg_contact_info_text</td><td style="background-color:#d4edda;">Yes, contact information is available to reach out to the team (<a href="https://humanatlas.io/about#editorial-board)">https://humanatlas.io/about#editorial-board)</a></td></tr>
 <tr><td>kg_contact_info</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>updated_annually_text</td><td style="background-color:#d4edda;">Yes, about 2 time a year (https://github.com/hubmapconsortium/hra-kg/releases).</td></tr>
+<tr><td>updated_annually_text</td><td style="background-color:#d4edda;">Yes, about 2 time a year (<a href="https://github.com/hubmapconsortium/hra-kg/releases).">https://github.com/hubmapconsortium/hra-kg/releases).</a></td></tr>
 <tr><td>updated_annually</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>prior_versions_access_text</td><td style="background-color:#d4edda;">Yes, prior versions are accessible on Github (https://github.com/hubmapconsortium/hra-kg/releases). Changed are documented (https://humanatlas.io/release-notes/v2.3).</td></tr>
+<tr><td>prior_versions_access_text</td><td style="background-color:#d4edda;">Yes, prior versions are accessible on Github (<a href="https://github.com/hubmapconsortium/hra-kg/releases).">https://github.com/hubmapconsortium/hra-kg/releases).</a> Changed are documented (<a href="https://humanatlas.io/release-notes/v2.3).">https://humanatlas.io/release-notes/v2.3).</a></td></tr>
 <tr><td>prior_versions_access</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 8/10</p>
 
 ## Evaluation - Metrics and Fitness for Purpose
 <div class="table-responsive">
@@ -82,11 +86,12 @@ layout: eval_detail
 <tr><td>eval_against_others</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>defined_scope_text</td><td style="background-color:#d4edda;">Yes, HRA-KG is focused on representing the healthy human body in semantics terms including anatomical structures, cell types, and biomarker and spatial terms such as 3D reference organs.</td></tr>
 <tr><td>defined_scope</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>multi_eval_methods_text</td><td style="background-color:#d4edda;">Yes, it has hra-ols used by OLS for validation (https://lod.humanatlas.io/collection/hra-ols/latest/) and has Validation report (https://github.com/hubmapconsortium/3d-hra-ref-object-validation) (Supplementary).</td></tr>
+<tr><td>multi_eval_methods_text</td><td style="background-color:#d4edda;">Yes, it has hra-ols used by OLS for validation (<a href="https://lod.humanatlas.io/collection/hra-ols/latest/)">https://lod.humanatlas.io/collection/hra-ols/latest/)</a> and has Validation report (<a href="https://github.com/hubmapconsortium/3d-hra-ref-object-validation)">https://github.com/hubmapconsortium/3d-hra-ref-object-validation)</a> (Supplementary).</td></tr>
 <tr><td>multi_eval_methods</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>accuracy_metrics_text</td><td style="background-color:#f8d7da;">Not explicit, but it has HRAlit which links the HRA DOs to publications, experts, experimental datasets (Supplementary).</td></tr>
 <tr><td>accuracy_metrics</td><td style="background-color:#f8d7da;">N</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 7/10</p>
 
 ## License Information
 <div class="table-responsive">

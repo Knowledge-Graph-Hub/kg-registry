@@ -1,32 +1,33 @@
 ---
+evaluation_date: '2025-08-12'
+evaluator: Not specified
 layout: eval_detail
 ---
-
-# Evaluation for petagraph
 
 ## Access Level and Types
 <div class="table-responsive">
 <table class="table table-striped">
 <thead><tr><th>Question</th><th>Answer</th></tr></thead><tbody>
-<tr><td>access_otherthanKG_text</td><td style="background-color:#d4edda;">yes, portions of the graph that are open licensed are available from https://osf.io/6jtc9/files/osfstorage</td></tr>
+<tr><td>access_otherthanKG_text</td><td style="background-color:#d4edda;">yes, portions of the graph that are open licensed are available from <a href="https://osf.io/6jtc9/files/osfstorage">https://osf.io/6jtc9/files/osfstorage</a></td></tr>
 <tr><td>access_otherthanKG</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>api_or_online_access_text</td><td style="background-color:#d4edda;">yes, (ish), neo4j dump can be downloaded if you have a UMLS license key, and there are instructions to build a neo4j from sources in the github repository. Ish, because it's not specifically hosted, you need to host it yourself.</td></tr>
+<tr><td>api_or_online_access_text</td><td style="background-color:#d4edda;">yes, (ish), neo4j dump can be downloaded if you have a UMLS license key, and there are instructions to build a neo4j from sources in the github repository. Ish, because it&#x27;s not specifically hosted, you need to host it yourself.</td></tr>
 <tr><td>api_or_online_access</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>multi_access_options_text</td><td style="background-color:#f8d7da;">no, (ish) completed graph can only be downloaded as neo4j, components to build the graph can also be downloaded, but that doesn't quite feel like it makes a yes</td></tr>
+<tr><td>multi_access_options_text</td><td style="background-color:#f8d7da;">no, (ish) completed graph can only be downloaded as neo4j, components to build the graph can also be downloaded, but that doesn&#x27;t quite feel like it makes a yes</td></tr>
 <tr><td>multi_access_options</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>sourcecode_available_text</td><td style="background-color:#d4edda;">yes, ETL of upstream sources lives in https://github.com/x-atlas-consortia/ubkg-etl/</td></tr>
+<tr><td>sourcecode_available_text</td><td style="background-color:#d4edda;">yes, ETL of upstream sources lives in <a href="https://github.com/x-atlas-consortia/ubkg-etl/">https://github.com/x-atlas-consortia/ubkg-etl/</a></td></tr>
 <tr><td>sourcecode_available</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>downloadable_KG_text</td><td style="background-color:#d4edda;">yes (with UMLS api key)</td></tr>
 <tr><td>downloadable_KG</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 9/10</p>
 
 ## Provenance of Nodes and Edges
 <div class="table-responsive">
 <table class="table table-striped">
 <thead><tr><th>Question</th><th>Answer</th></tr></thead><tbody>
-<tr><td>source_list_provided_text</td><td style="background-color:#d4edda;">yes, methods section of paper https://www.nature.com/articles/s41597-024-04070-w#Sec2</td></tr>
+<tr><td>source_list_provided_text</td><td style="background-color:#d4edda;">yes, methods section of paper <a href="https://www.nature.com/articles/s41597-024-04070-w#Sec2">https://www.nature.com/articles/s41597-024-04070-w#Sec2</a></td></tr>
 <tr><td>source_list_provided</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>source_versions_info_text</td><td style="background-color:#d4edda;">yes, ish, some source versions listed in https://github.com/TaylorResearchLab/Petagraph/tree/main/Scientific_Data_2024</td></tr>
+<tr><td>source_versions_info_text</td><td style="background-color:#d4edda;">yes, ish, some source versions listed in <a href="https://github.com/TaylorResearchLab/Petagraph/tree/main/Scientific_Data_2024">https://github.com/TaylorResearchLab/Petagraph/tree/main/Scientific_Data_2024</a></td></tr>
 <tr><td>source_versions_info</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>import_dependancies_text</td><td style="background-color:#d4edda;">yes, ubkg etl has requirements.txt, petagraph has requirements-test.txt</td></tr>
 <tr><td>import_dependancies</td><td style="background-color:#d4edda;">Y</td></tr>
@@ -39,6 +40,7 @@ layout: eval_detail
 <tr><td>edge_type_schema_text</td><td style="background-color:#d4edda;">yes custom schema defined in paper</td></tr>
 <tr><td>edge_type_schema</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 14/14</p>
 
 ## Documented standards, schema, construction
 <div class="table-responsive">
@@ -55,6 +57,7 @@ layout: eval_detail
 <tr><td>schema_used_text</td><td>Start with ontologies and standards in the UBKG and add in omics data based on their paper defined in the schema</td></tr>
 <tr><td>schema_used</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 8/10</p>
 
 ## Update frequency and versioning
 <div class="table-responsive">
@@ -64,13 +67,14 @@ layout: eval_detail
 <tr><td>stable_versions</td><td style="background-color:#f8d7da;">N</td></tr>
 <tr><td>public_tracker_text</td><td style="background-color:#f8d7da;">No</td></tr>
 <tr><td>public_tracker</td><td style="background-color:#f8d7da;">N</td></tr>
-<tr><td>kg_contact_info_text</td><td style="background-color:#d4edda;">Yes, contributors listed https://osf.io/6jtc9/</td></tr>
+<tr><td>kg_contact_info_text</td><td style="background-color:#d4edda;">Yes, contributors listed <a href="https://osf.io/6jtc9/">https://osf.io/6jtc9/</a></td></tr>
 <tr><td>kg_contact_info</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>updated_annually_text</td><td style="background-color:#d4edda;">Yes, frequent small updates</td></tr>
 <tr><td>updated_annually</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>prior_versions_access_text</td><td>recent acitivty documents date of all changes and person who made them but prior versions not accessible https://osf.io/6jtc9/</td></tr>
+<tr><td>prior_versions_access_text</td><td>recent acitivty documents date of all changes and person who made them but prior versions not accessible <a href="https://osf.io/6jtc9/">https://osf.io/6jtc9/</a></td></tr>
 <tr><td>prior_versions_access</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 5/10</p>
 
 ## Evaluation - Metrics and Fitness for Purpose
 <div class="table-responsive">
@@ -87,6 +91,7 @@ layout: eval_detail
 <tr><td>accuracy_metrics_text</td><td style="background-color:#d4edda;">Yes. AUC-ROC, Precision-Recall curves, common neighbors vs random, structural metrics compared to randomized graphs</td></tr>
 <tr><td>accuracy_metrics</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 7/10</p>
 
 ## License Information
 <div class="table-responsive">

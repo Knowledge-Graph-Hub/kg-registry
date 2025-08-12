@@ -1,8 +1,8 @@
 ---
+evaluation_date: '2025-08-12'
+evaluator: Not specified
 layout: eval_detail
 ---
-
-# Evaluation for primekg
 
 ## Access Level and Types
 <div class="table-responsive">
@@ -12,19 +12,20 @@ layout: eval_detail
 <tr><td>access_otherthanKG</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>api_or_online_access_text</td><td style="background-color:#f8d7da;">N</td></tr>
 <tr><td>api_or_online_access</td><td style="background-color:#f8d7da;">N</td></tr>
-<tr><td>multi_access_options_text</td><td style="background-color:#d4edda;">Yes - Available via Harvard Dataverse with raw KG (kg raw.csv) and largest connected component (kg giant.csv) https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IXA7BM</td></tr>
+<tr><td>multi_access_options_text</td><td style="background-color:#d4edda;">Yes - Available via Harvard Dataverse with raw KG (kg raw.csv) and largest connected component (kg giant.csv) <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IXA7BM">https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IXA7BM</a></td></tr>
 <tr><td>multi_access_options</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>sourcecode_available_text</td><td style="background-color:#d4edda;">Yes - Full source code is available on GitHub https://github.com/mims-harvard/PrimeKG</td></tr>
+<tr><td>sourcecode_available_text</td><td style="background-color:#d4edda;">Yes - Full source code is available on GitHub <a href="https://github.com/mims-harvard/PrimeKG">https://github.com/mims-harvard/PrimeKG</a></td></tr>
 <tr><td>sourcecode_available</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>downloadable_KG_text</td><td style="background-color:#d4edda;">Yes - Harvard Dataverse Repo hosts the downloadable KG and intermediate files https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IXA7BM</td></tr>
+<tr><td>downloadable_KG_text</td><td style="background-color:#d4edda;">Yes - Harvard Dataverse Repo hosts the downloadable KG and intermediate files <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IXA7BM">https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IXA7BM</a></td></tr>
 <tr><td>downloadable_KG</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 8/10</p>
 
 ## Provenance of Nodes and Edges
 <div class="table-responsive">
 <table class="table table-striped">
 <thead><tr><th>Question</th><th>Answer</th></tr></thead><tbody>
-<tr><td>source_list_provided_text</td><td style="background-color:#d4edda;">Yes - 20 primary data sources listed, including DisGeNET, DrugBank, UMLS, Orphanet, etc. in the paper https://www.nature.com/articles/s41597-023-01960-3</td></tr>
+<tr><td>source_list_provided_text</td><td style="background-color:#d4edda;">Yes - 20 primary data sources listed, including DisGeNET, DrugBank, UMLS, Orphanet, etc. in the paper <a href="https://www.nature.com/articles/s41597-023-01960-3">https://www.nature.com/articles/s41597-023-01960-3</a></td></tr>
 <tr><td>source_list_provided</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>source_versions_info_text</td><td style="background-color:#d4edda;">Yes - Explicit versions and download dates provided for each dataset in the Methods/Data Records section</td></tr>
 <tr><td>source_versions_info</td><td style="background-color:#d4edda;">Y</td></tr>
@@ -39,6 +40,7 @@ layout: eval_detail
 <tr><td>edge_type_schema_text</td><td style="background-color:#d4edda;">Yes - The paper documented schema of 30 edge types and their origin ontologies</td></tr>
 <tr><td>edge_type_schema</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 13/14</p>
 
 ## Documented standards, schema, construction
 <div class="table-responsive">
@@ -55,6 +57,7 @@ layout: eval_detail
 <tr><td>schema_used_text</td><td style="background-color:#d4edda;">Yes - Node and edge formats, and their standardized schema, are explained in the methodology and data files</td></tr>
 <tr><td>schema_used</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 10/10</p>
 
 ## Update frequency and versioning
 <div class="table-responsive">
@@ -71,6 +74,7 @@ layout: eval_detail
 <tr><td>prior_versions_access_text</td><td style="background-color:#f8d7da;">No - No archived prior versions or changelog indicating updates</td></tr>
 <tr><td>prior_versions_access</td><td style="background-color:#f8d7da;">N</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 2/9</p>
 
 ## Evaluation - Metrics and Fitness for Purpose
 <div class="table-responsive">
@@ -87,6 +91,7 @@ layout: eval_detail
 <tr><td>accuracy_metrics_text</td><td>Partially - Uses similarity thresholds (e.g., cosine ≥ 0.98 for disease grouping); no formal metrics like precision/recall provided</td></tr>
 <tr><td>accuracy_metrics</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 9/10</p>
 
 ## License Information
 <div class="table-responsive">

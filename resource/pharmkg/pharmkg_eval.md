@@ -1,8 +1,8 @@
 ---
+evaluation_date: '2025-08-12'
+evaluator: Not specified
 layout: eval_detail
 ---
-
-# Evaluation for pharmkg
 
 ## Access Level and Types
 <div class="table-responsive">
@@ -14,11 +14,12 @@ layout: eval_detail
 <tr><td>api_or_online_access</td><td style="background-color:#f8d7da;">N</td></tr>
 <tr><td>multi_access_options_text</td><td style="background-color:#f8d7da;">N</td></tr>
 <tr><td>multi_access_options</td><td style="background-color:#f8d7da;">N</td></tr>
-<tr><td>sourcecode_available_text</td><td style="background-color:#d4edda;">Yes - The full source code for KG construction, processing, and the Heterogeneous Graph Attention Network (HRGAT) embedding model is provided on the GitHub repository https://github.com/MindRank-Biotech/PharmKG/tree/master</td></tr>
+<tr><td>sourcecode_available_text</td><td style="background-color:#d4edda;">Yes - The full source code for KG construction, processing, and the Heterogeneous Graph Attention Network (HRGAT) embedding model is provided on the GitHub repository <a href="https://github.com/MindRank-Biotech/PharmKG/tree/master">https://github.com/MindRank-Biotech/PharmKG/tree/master</a></td></tr>
 <tr><td>sourcecode_available</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>downloadable_KG_text</td><td style="background-color:#d4edda;">Yes - The benchmark KG is downloadable. They also provide both the clean version (final benchmark) and the raw version (with more entities and relations); the KG dataset is guarded by Google Drive permissions to access it</td></tr>
 <tr><td>downloadable_KG</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 6/10</p>
 
 ## Provenance of Nodes and Edges
 <div class="table-responsive">
@@ -39,6 +40,7 @@ layout: eval_detail
 <tr><td>edge_type_schema_text</td><td style="background-color:#d4edda;">Yes - Documents edge semantics: “interaction,” “disease-gene,” “chemical-gene,” “disease-chemical,” and subtypes — all mapped from Global Network of Biomedical Relationships (GNBR) semantic themes and curated bases</td></tr>
 <tr><td>edge_type_schema</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 11/14</p>
 
 ## Documented standards, schema, construction
 <div class="table-responsive">
@@ -55,6 +57,7 @@ layout: eval_detail
 <tr><td>schema_used_text</td><td style="background-color:#d4edda;">Yes - 29 defined relation types with source mapping and entity categories; and semantics from Global Network of Biomedical Relationships (GNBR) themes and curated bases</td></tr>
 <tr><td>schema_used</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 10/10</p>
 
 ## Update frequency and versioning
 <div class="table-responsive">
@@ -64,13 +67,14 @@ layout: eval_detail
 <tr><td>stable_versions</td><td style="background-color:#f8d7da;">N</td></tr>
 <tr><td>public_tracker_text</td><td style="background-color:#f8d7da;">No - There is no mention of a public tracker for feature requests or issues</td></tr>
 <tr><td>public_tracker</td><td style="background-color:#f8d7da;">N</td></tr>
-<tr><td>kg_contact_info_text</td><td style="background-color:#d4edda;">Yes - Two corresponding authors are provided with full institutional contacts (Prof. Yuedong Yang and Dr. Zhangming Niu) in the published paper (https://academic.oup.com/bib/article/22/4/bbaa344/6042240)</td></tr>
+<tr><td>kg_contact_info_text</td><td style="background-color:#d4edda;">Yes - Two corresponding authors are provided with full institutional contacts (Prof. Yuedong Yang and Dr. Zhangming Niu) in the published paper (<a href="https://academic.oup.com/bib/article/22/4/bbaa344/6042240)">https://academic.oup.com/bib/article/22/4/bbaa344/6042240)</a></td></tr>
 <tr><td>kg_contact_info</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>updated_annually_text</td><td style="background-color:#f8d7da;">No - No evidence yet. They state they plan future expansions (e.g., transcriptomics, clinical data, auto-extraction) but no recurring updates are published so far</td></tr>
 <tr><td>updated_annually</td><td style="background-color:#f8d7da;">N</td></tr>
 <tr><td>prior_versions_access_text</td><td>Partially - They do provide the raw version alongside the final benchmark on GitHub but do not maintain a changelog across multiple yearly versions</td></tr>
 <tr><td>prior_versions_access</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 3/10</p>
 
 ## Evaluation - Metrics and Fitness for Purpose
 <div class="table-responsive">
@@ -87,6 +91,7 @@ layout: eval_detail
 <tr><td>accuracy_metrics_text</td><td style="background-color:#d4edda;">Yes - Multiple: MRR, Hits@1/3/10/100, AUROC, AUPRC, p-values for statistical tests, plus visualization and interpretability checks with t-SNE plots and path analyses</td></tr>
 <tr><td>accuracy_metrics</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 10/10</p>
 
 ## License Information
 <div class="table-responsive">
