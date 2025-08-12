@@ -610,11 +610,17 @@ def concat_resource_yaml(args):
     def create_evaluation_pages(objs):
         """
         Read evals/evals.tsv and, for each resource ID in the first column, create an
-        evaluation markdown page at resource/<id>/<id>_eval.md with layout eval_detail.
-        Also annotate the in-memory resource object with an 'evaluation_page' field
-        used by the UI to render an Evaluation column icon.
-        Additionally, insert a small markdown link to the evaluation page into the
-        resource page content if not already present (without touching frontmatter).
+                evaluation markdown page at resource/<id>/<id>_eval.md with layout eval_detail.
+                Expected format:
+                    - Row 1: grouping categories for questions (columns 2..N)
+                    - Row 2: individual question headers (columns 2..N)
+                    - Rows 3..: data rows where column 1 is the resource ID and columns 2..N are answers
+
+                Behavior:
+                    - Group questions by their category and render a separate table per category
+                    - Color cells with answers that begin with 'Y'/'Yes' green and 'N'/'No' red
+                    - Annotate the in-memory resource object with an 'evaluation_page' field
+                    - Insert a small markdown link to the evaluation page into the resource markdown if missing
         """
         evals_path = ROOT / 'evals' / 'evals.tsv'
         if not evals_path.exists():
@@ -632,9 +638,34 @@ def concat_resource_yaml(args):
             if not rows:
                 print("evals.tsv is empty; nothing to do")
                 return
-            headers = rows[0]
-            # Ensure first column is ID
-            for row in rows[1:]:
+            if len(rows) == 1:
+                print("evals.tsv has only one row; need at least two header rows and one data row")
+                return
+
+            group_headers = rows[0]
+            question_headers = rows[1]
+
+            # Forward-fill empty group headers so blanks inherit the previous non-empty category
+            filled_group_headers = list(group_headers)
+            last = ''
+            for i in range(len(filled_group_headers)):
+                current = (filled_group_headers[i] or '').strip()
+                if current:
+                    last = current
+                else:
+                    filled_group_headers[i] = last
+
+            # Helper to compute style for a given answer value
+            def style_for_value(val: str) -> str:
+                v = (val or '').strip().lower()
+                if v.startswith('y') or v.startswith('yes'):
+                    return 'background-color:#d4edda;'
+                if v.startswith('n') or v.startswith('no'):
+                    return 'background-color:#f8d7da;'
+                return ''
+
+            # Ensure first column is ID; iterate over data rows
+            for row in rows[2:]:
                 if not row or len(row) == 0:
                     continue
                 rid = (row[0] or '').strip()
@@ -647,18 +678,38 @@ def concat_resource_yaml(args):
                     print(f"WARN: evaluation provided for '{rid}' but no resource page found; skipping")
                     continue
 
-                # Create content from remaining columns (skip empty values)
-                # Build a simple Markdown table: Field | Value
-                content_lines = [f"# Evaluation for {rid}", "", "| Field | Value |", "|---|---|"]
-                for i in range(1, min(len(row), len(headers))):
-                    key = (headers[i] or '').strip()
-                    val = (row[i] or '').strip()
-                    if not key or not val:
+                # Group questions and answers by category, preserving column order
+                from collections import OrderedDict
+                grouped: OrderedDict[str, list[tuple[str, str]]] = OrderedDict()
+                col_limit = min(len(filled_group_headers), len(question_headers), len(row))
+                for i in range(1, col_limit):  # skip ID column
+                    cat = (filled_group_headers[i] or '').strip()
+                    q = (question_headers[i] or '').strip()
+                    v = (row[i] or '').strip()
+                    if not q and not v:
                         continue
-                    # Escape pipe in values
-                    val = val.replace('|', '\\|')
-                    content_lines.append(f"| {key} | {val} |")
-                content = "\n".join(content_lines) + "\n"
+                    if cat not in grouped:
+                        grouped[cat] = []
+                    grouped[cat].append((q, v))
+
+                # Build HTML content with colored cells
+                html_lines = [f"# Evaluation for {rid}", ""]
+                for cat, qas in grouped.items():
+                    if cat:
+                        html_lines.append(f"## {cat}")
+                    html_lines.append("<div class=\"table-responsive\">")
+                    html_lines.append("<table class=\"table table-striped\">")
+                    html_lines.append("<thead><tr><th>Question</th><th>Answer</th></tr></thead><tbody>")
+                    for (q, v) in qas:
+                        # Escape HTML special chars minimally
+                        q_esc = (q or '').replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+                        v_esc = (v or '').replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+                        style = style_for_value(v)
+                        style_attr = f" style=\"{style}\"" if style else ""
+                        html_lines.append(f"<tr><td>{q_esc}</td><td{style_attr}>{v_esc}</td></tr>")
+                    html_lines.append("</tbody></table></div>")
+                    html_lines.append("")
+                content = "\n".join(html_lines) + "\n"
 
                 # Write the evaluation page
                 eval_md_path = res_dir / f"{rid}_eval.md"
