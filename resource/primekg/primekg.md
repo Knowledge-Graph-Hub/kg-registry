@@ -47,3 +47,7 @@ repository: https://github.com/mims-harvard/PrimeKG
 ### PrimeKG: A Knowledge Graph for Precision Medicine
 
 PrimeKG is a large-scale Precision Medicine Knowledge Graph that provides a holistic view of diseases by integrating 20 high-quality biomedical resources. It describes 17,080 diseases with over 4 million relationships, enabling advanced network medicine and machine learning applications.
+
+## Evaluation
+
+- View the evaluation: [primekg evaluation](primekg_eval.html)

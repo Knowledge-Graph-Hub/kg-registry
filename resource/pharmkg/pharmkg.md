@@ -9,15 +9,14 @@ contacts:
   - contact_type: url
     value: https://github.com/MindRank-Biotech/PharmKG
   label: MindRank Biotech
-description: >-
-  PharmKG is a multi-relational, attributed biomedical knowledge graph benchmark
-  that integrates curated databases and literature-derived relationships to link
-  genes, drugs (chemicals), and diseases. It contains ~500,000 typed relations
-  across ~7,600–8,000 disambiguated entities (29 relation types), with
-  domain-specific features for entities from multi-omics sources (e.g., gene
-  expression, chemical structure, disease embeddings). It provides baselines for
-  knowledge graph embedding and a neural network-based method, and supports
-  downstream tasks such as drug repurposing and target identification.
+description: "PharmKG is a multi-relational, attributed biomedical knowledge graph\
+  \ benchmark that integrates curated databases and literature-derived relationships\
+  \ to link genes, drugs (chemicals), and diseases. It contains ~500,000 typed relations\
+  \ across ~7,600\u20138,000 disambiguated entities (29 relation types), with domain-specific\
+  \ features for entities from multi-omics sources (e.g., gene expression, chemical\
+  \ structure, disease embeddings). It provides baselines for knowledge graph embedding\
+  \ and a neural network-based method, and supports downstream tasks such as drug\
+  \ repurposing and target identification."
 domains:
 - biomedical
 - drug discovery
@@ -29,7 +28,8 @@ layout: resource_detail
 name: PharmKG
 products:
 - category: GraphProduct
-  description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes, chemicals, and diseases
+  description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
+    chemicals, and diseases
   edge_count: 500958
   id: pharmkg.graph
   name: PharmKG graph
@@ -47,9 +47,9 @@ products:
   - gnbr
   - biogps
   - connectivitymap
+  product_url: https://zenodo.org/record/4077338
   secondary_source:
   - pharmkg
-  product_url: https://zenodo.org/record/4077338
 publications:
 - authors:
   - Shuangjia Zheng
@@ -63,8 +63,12 @@ publications:
   doi: 10.1093/bib/bbaa344
   id: doi:10.1093/bib/bbaa344
   journal: Briefings in Bioinformatics
-  title: "PharmKG: a dedicated knowledge graph benchmark for biomedical data mining"
+  title: 'PharmKG: a dedicated knowledge graph benchmark for biomedical data mining'
   year: '2021'
 repository: https://github.com/MindRank-Biotech/PharmKG
 ---
 PharmKG
+
+## Evaluation
+
+- View the evaluation: [pharmkg evaluation](pharmkg_eval.html)

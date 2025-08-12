@@ -183,3 +183,7 @@ RTX-KG2 integrates data from numerous biomedical knowledge sources, including bu
 ### Applications
 
 RTX-KG2 serves as the foundation for biomedical reasoning systems, drug repurposing research, and knowledge discovery in the NCATS Biomedical Data Translator project. The knowledge graph enables complex question answering about drugs, diseases, genes, and their relationships.
+
+## Evaluation
+
+- View the evaluation: [rtx-kg2 evaluation](rtx-kg2_eval.html)

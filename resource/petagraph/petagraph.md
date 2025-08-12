@@ -156,3 +156,7 @@ Ongoing work focuses on:
 - Developing standardized benchmarks for knowledge graph comparisons
 - Integration with Large Language Models
 - Supporting the NIH Common Fund Data Ecosystem Data Distillery Project
+
+## Evaluation
+
+- View the evaluation: [petagraph evaluation](petagraph_eval.html)
