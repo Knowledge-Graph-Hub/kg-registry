@@ -4,7 +4,7 @@ layout: default
 
 <div class="content">
 
-  <div class="col-md-12">
+  <div id="eval-page-content" class="col-md-12">
   {%- assign parts = page.path | split: '/' -%}
   {%- assign rid = parts[1] -%}
   <h1>Evaluation for <a href="{{ rid }}.html">{{ rid }}</a></h1>
@@ -13,7 +13,58 @@ layout: default
   <p class="text-muted">This is a manual evaluation intended to identify potential barriers to reuse.</p>
   <br />
 
-  {{ content }}
+    {{ content }}
     <br />
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Load question descriptions TSV and attach tooltips to question cells
+    const baseUrl = '{{ site.baseurl }}';
+    const tsvUrl = (baseUrl ? baseUrl : '') + '/evals/eval_descriptions.tsv';
+
+    fetch(tsvUrl)
+      .then(resp => resp.ok ? resp.text() : Promise.reject('Failed to load eval_descriptions.tsv'))
+      .then(text => {
+        const lines = text.split(/\r?\n/).filter(l => l.trim().length > 0);
+        if (lines.length < 2) return;
+        // Expect header: question\tplain_text\tdescription
+        const mapTitleToDesc = new Map();
+        for (let i = 1; i < lines.length; i++) {
+          const cols = lines[i].split('\t');
+          if (cols.length < 3) continue;
+          const key = cols[0].trim();
+          const title = cols[1].trim();
+          const desc = cols[2].trim();
+          if (title) mapTitleToDesc.set(title, desc);
+        }
+
+        const container = document.getElementById('eval-page-content');
+        if (!container) return;
+        // For each question cell (first td in each row), add tooltip
+        container.querySelectorAll('table.table tbody tr').forEach(tr => {
+          const tds = tr.querySelectorAll('td');
+          if (!tds || tds.length === 0) return;
+          const qCell = tds[0];
+          const qText = (qCell.textContent || '').trim();
+          if (!qText) return;
+          const desc = mapTitleToDesc.get(qText);
+          if (desc) {
+            qCell.setAttribute('data-bs-toggle', 'tooltip');
+            qCell.setAttribute('data-bs-placement', 'top');
+            qCell.setAttribute('title', desc);
+          }
+        });
+
+        // Initialize Bootstrap tooltips
+        if (window.bootstrap && bootstrap.Tooltip) {
+          const tooltipTriggerList = [].slice.call(container.querySelectorAll('[data-bs-toggle="tooltip"]'));
+          tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+            new bootstrap.Tooltip(tooltipTriggerEl);
+          });
+        }
+      })
+      .catch(() => { /* ignore missing mapping */ });
+  });
+</script>
