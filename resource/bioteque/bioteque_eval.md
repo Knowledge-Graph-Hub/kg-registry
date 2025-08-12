@@ -1,6 +1,6 @@
 ---
 evaluation_date: '2025-08-12'
-evaluator: "Harry Caufield"
+evaluator: Not specified
 layout: eval_detail
 ---
 
