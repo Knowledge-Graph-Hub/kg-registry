@@ -69,3 +69,7 @@ publications:
 repository: https://github.com/jakelever/GNBR
 ---
 GNBR
+
+## Evaluation
+
+- View the evaluation: [gnbr evaluation](gnbr_eval.html)

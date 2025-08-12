@@ -79,10 +79,10 @@ products:
 - category: GraphicalInterface
   description: Web interface that allows searching SPOKE for a node of interest and
     viewing its immediate connectivity neighborhood.
+  format: http
   id: spoke.neighborhood_explorer
   name: SPOKE Neighborhood Explorer
   product_url: https://spoke.rbvi.ucsf.edu/neighborhood.html
-  format: http
 publications:
 - authors:
   - John H Morris
@@ -133,3 +133,7 @@ SPOKE (Scalable Precision Medicine Open Knowledge Engine) is a comprehensive bio
 SPOKE is a heterogeneous network, containing different types of nodes (e.g., genes, diseases, drugs, pathways) and the edges between them represent known connections. The knowledge graph pulls data out of silos, connecting diverse information from molecular research, clinical insights, and environmental data.
 
 SPOKE enables a wide variety of applications including suggesting testable hypotheses for researchers, implicating mechanisms of disease, and enabling more precise diagnoses and treatments for individual patients. It has been used in studies for drug repurposing, disease prediction, and integrating electronic health records with biomedical knowledge.
+
+## Evaluation
+
+- View the evaluation: [spoke evaluation](spoke_eval.html)

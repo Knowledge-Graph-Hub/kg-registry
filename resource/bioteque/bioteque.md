@@ -1,33 +1,33 @@
 ---
-layout: resource_detail
 activity_status: active
-id: bioteque
-name: Bioteque
-description: A knowledge graph of biological entities and their associations that integrates and formats biomedical data as pre-calculated knowledge graph embeddings
-domains:
-- health
+category: KnowledgeGraph
 contacts:
 - category: Individual
-  label: Patrick Aloy
-  orcid: 0000-0002-3557-0236
   contact_details:
   - contact_type: email
     value: patrick.aloy@irbbarcelona.org
+  label: Patrick Aloy
+  orcid: 0000-0002-3557-0236
 - category: Organization
-  label: Structural Bioinformatics and Network Biology Group, Institute for Research in Biomedicine (IRB Barcelona)
   contact_details:
   - contact_type: url
     value: http://sbnb.irbbarcelona.org/
+  label: Structural Bioinformatics and Network Biology Group, Institute for Research
+    in Biomedicine (IRB Barcelona)
+description: A knowledge graph of biological entities and their associations that
+  integrates and formats biomedical data as pre-calculated knowledge graph embeddings
+domains:
+- health
 homepage_url: https://bioteque.irbbarcelona.org/
-repository: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
+id: bioteque
+layout: resource_detail
+name: Bioteque
 products:
-- id: bioteque.embeddings
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
   name: Bioteque Embeddings
-  description: Network embeddings of the Bioteque graph that represent biological entities and their associations
-  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
-  category: Product
-  secondary_source:
-  - bioteque
   original_source:
   - chebi
   - cosmic
@@ -66,26 +66,31 @@ products:
   - omnipath
   - string
   - bto
-- id: bioteque.code
-  name: Bioteque code
-  description: Scripts used to preprocess and accommodate biomedical datasets into the knowledge database behind the Bioteque repository
-  product_url: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
-  category: ProcessProduct
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+  secondary_source:
+  - bioteque
+- category: ProcessProduct
+  description: Scripts used to preprocess and accommodate biomedical datasets into
+    the knowledge database behind the Bioteque repository
+  id: bioteque.code
   license:
-    label: MIT License
     id: https://opensource.org/licenses/MIT
-  secondary_source:
-  - bioteque
+    label: MIT License
+  name: Bioteque code
   original_source:
   - bioteque
-- id: bioteque.bqsupports
+  product_url: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
+  secondary_source:
+  - bioteque
+- category: ProcessProduct
+  description: BQsupports is a tool to uncover biomedical evidence behind experimental
+    paired data.
+  id: bioteque.bqsupports
   name: BQsupports
-  description: BQsupports is a tool to uncover biomedical evidence behind experimental paired data.
-  product_url: https://bioteque.irbbarcelona.org/bqsupports
-  category: ProcessProduct
-  secondary_source:
-  - bioteque
   original_source:
+  - bioteque
+  product_url: https://bioteque.irbbarcelona.org/bqsupports
+  secondary_source:
   - bioteque
 publications:
 - authors:
@@ -96,11 +101,11 @@ publications:
   - Aloy P
   doi: doi:10.1038/s41467-022-33026-0
   id: doi:10.1038/s41467-022-33026-0
-  title: Integrating and formatting biomedical data as pre-calculated knowledge graph embeddings in the Bioteque
+  title: Integrating and formatting biomedical data as pre-calculated knowledge graph
+    embeddings in the Bioteque
   year: '2022'
-category: KnowledgeGraph
+repository: https://gitlabsbnb.irbbarcelona.org/bioteque/bioteque
 ---
-
 ## Bioteque Knowledge Graph
 
 Bioteque is a knowledge graph that integrates multiple biomedical data sources into a comprehensive resource for biomedical research. It combines various types of biomedical data, including:
@@ -139,3 +144,7 @@ Bioteque integrates data from over 35 different biomedical resources, including:
 - Tissue-specific data (GTEx, Human Protein Atlas)
 
 This integration provides a unified view of biomedical knowledge that can be accessed through the Bioteque portal or used programmatically through the available embeddings.
+
+## Evaluation
+
+- View the evaluation: [bioteque evaluation](bioteque_eval.html)

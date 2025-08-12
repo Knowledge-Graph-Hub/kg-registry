@@ -73,3 +73,7 @@ ROBOKOP (Reasoning Over Biomedical Objects linked in Knowledge Oriented Pathways
 - The **ROBOKOP Knowledge Graph (KG)**
 - A **user interface** for building and exploring queries
 - Supporting tools and APIs for programmatic access
+
+## Evaluation
+
+- View the evaluation: [robokop evaluation](robokop_eval.html)

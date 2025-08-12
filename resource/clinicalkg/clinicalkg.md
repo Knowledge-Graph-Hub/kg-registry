@@ -7,12 +7,11 @@ contacts:
   - contact_type: url
     value: https://github.com/MannLabs
   label: Mann Labs
-description: >-
-  The Clinical Knowledge Graph (CKG) is an open-source platform that integrates
-  proteomics and clinical data with knowledge from diverse biomedical databases
-  and literature to support precision medicine. The CKG has reported scale of
-  ~16 million nodes and ~220 million relationships and provides tooling for
-  analysis, reporting, and knowledge discovery.
+description: The Clinical Knowledge Graph (CKG) is an open-source platform that integrates
+  proteomics and clinical data with knowledge from diverse biomedical databases and
+  literature to support precision medicine. The CKG has reported scale of ~16 million
+  nodes and ~220 million relationships and provides tooling for analysis, reporting,
+  and knowledge discovery.
 domains:
 - clinical
 - proteomics
@@ -27,7 +26,8 @@ license:
 name: Clinical Knowledge Graph (CKG)
 products:
 - category: GraphProduct
-  description: Neo4j database dump of the Clinical Knowledge Graph and additional relationships
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
   dump_format: neo4j
   edge_count: 220000000
   format: mixed
@@ -35,46 +35,46 @@ products:
   name: CKG Graph Dump
   node_count: 16000000
   original_source:
-    - uniprot
-    - tissues
-    - string
-    - stitch
-    - smpdb
-    - signor
-    - sider
-    - refseq
-    - reactome
-    - phosphositeplus
-    - pfam
-    - oncokb
-    - mutationds
-    - intact
-    - hpa
-    - hmdb
-    - hgnc
-    - gwascatalog
-    - foodb
-    - drugbank
-    - disgenet
-    - diseases
-    - dgidb
-    - corum
-    - cancer-genome-interpreter
-    - do
-    - bto
-    - efo
-    - go
-    - hp
-    - snomedct
-    - mod
-    - mi
-    - ms
-    - uo
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - do
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 publications:
 - authors:
   - Alberto Santos
-  - Ana R. Colaço
+  - "Ana R. Cola\xE7o"
   - Annelaura B. Nielsen
   - Matthias Mann
   doi: 10.1101/2020.05.09.084897
@@ -85,3 +85,7 @@ publications:
 repository: https://github.com/MannLabs/CKG
 ---
 Clinical Knowledge Graph
+
+## Evaluation
+
+- View the evaluation: [clinicalkg evaluation](clinicalkg_eval.html)

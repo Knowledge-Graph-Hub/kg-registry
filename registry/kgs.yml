@@ -2797,6 +2797,7 @@ resources:
     integrates and formats biomedical data as pre-calculated knowledge graph embeddings
   domains:
   - health
+  evaluation_page: resource/bioteque/bioteque_eval.html
   homepage_url: https://bioteque.irbbarcelona.org/
   id: bioteque
   layout: resource_detail
@@ -6053,6 +6054,7 @@ resources:
   - proteomics
   - biomedical
   - health
+  evaluation_page: resource/clinicalkg/clinicalkg_eval.html
   homepage_url: https://ckg.readthedocs.io/
   id: clinicalkg
   layout: resource_detail
@@ -10458,6 +10460,7 @@ resources:
   - pharmacology
   - drug discovery
   - literature
+  evaluation_page: resource/drugmechdb/drugmechdb_eval.html
   homepage_url: https://sulab.github.io/DrugMechDB/
   id: drugmechdb
   layout: resource_detail
@@ -11734,6 +11737,7 @@ resources:
   - drug discovery
   - literature
   - health
+  evaluation_page: resource/embiology/embiology_eval.html
   homepage_url: https://www.embiology.com/
   id: embiology
   layout: resource_detail
@@ -13909,6 +13913,7 @@ resources:
   - biological systems
   - genomics
   - biomedical
+  evaluation_page: resource/genomickb/genomickb_eval.html
   homepage_url: https://gkb.dcmb.med.umich.edu/
   id: genomickb
   layout: resource_detail
@@ -14498,6 +14503,7 @@ resources:
   - biomedical
   - literature
   - health
+  evaluation_page: resource/gnbr/gnbr_eval.html
   homepage_url: https://github.com/jakelever/GNBR
   id: gnbr
   layout: resource_detail
@@ -16450,6 +16456,7 @@ resources:
   - genomics
   - health
   - biological systems
+  evaluation_page: resource/hetionet/hetionet_eval.html
   homepage_url: https://het.io/
   id: hetionet
   layout: resource_detail
@@ -17879,6 +17886,7 @@ resources:
   - anatomy and development
   - biological systems
   - biomedical
+  evaluation_page: resource/hra-kg/hra-kg_eval.html
   homepage_url: https://apps.humanatlas.io/dashboard/data
   id: hra-kg
   layout: resource_detail
@@ -20559,6 +20567,7 @@ resources:
   description: Monarch Initiative Knowledge Graph
   domains:
   - health
+  evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://kghub.org/kg-monarch/index.html
   id: kg-monarch
   layout: resource_detail
@@ -24247,6 +24256,7 @@ resources:
   - biomedical
   - clinical
   - genomics
+  evaluation_page: resource/ncatsgardkg/ncatsgardkg_eval.html
   homepage_url: https://github.com/ncats/RD-Clust
   id: ncatsgardkg
   layout: resource_detail
@@ -29766,6 +29776,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     description: OMA orthology groups in OrthoXML format
     format: xml
@@ -29785,6 +29797,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     description: Hierarchical Orthologous Groups (HOGs) in OrthoXML format
     format: xml
@@ -29804,6 +29818,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: gzip
     description: Pairwise orthologs in tab-separated text format
@@ -29824,6 +29840,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: gzip
     description: Protein sequences from all genomes in FASTA format
@@ -29844,6 +29862,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: gzip
     description: cDNA sequences for Eukaryotic genomes in FASTA format
@@ -29866,6 +29886,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: gzip
     description: cDNA sequences for Prokaryotic genomes in FASTA format
@@ -29888,6 +29910,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     description: OMA Browser database in HDF5 format
     id: oma.hdf5
@@ -29907,6 +29931,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -29930,6 +29956,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error
+      when accessing file'
   - category: MappingProduct
     compression: gzip
     description: Mapping of OMA identifiers to UniProt accession numbers
@@ -29952,6 +29980,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error
       when accessing file'
 - activity_status: active
   category: DataSource
@@ -32397,6 +32427,7 @@ resources:
   - health
   - biomedical
   - genomics
+  evaluation_page: resource/petagraph/petagraph_eval.html
   homepage_url: https://github.com/TaylorResearchLab/Petagraph
   id: petagraph
   layout: resource_detail
@@ -33450,6 +33481,7 @@ resources:
   - drug discovery
   - pharmacology
   - health
+  evaluation_page: resource/pharmkg/pharmkg_eval.html
   homepage_url: https://github.com/MindRank-Biotech/PharmKG
   id: pharmkg
   layout: resource_detail
@@ -34340,6 +34372,7 @@ resources:
   - biomedical
   - pathways
   - systems biology
+  evaluation_page: resource/primekg/primekg_eval.html
   homepage_url: https://zitniklab.hms.harvard.edu/projects/PrimeKG
   id: primekg
   layout: resource_detail
@@ -36242,6 +36275,7 @@ resources:
     queries over a large-scale integrated knowledge graph.
   domains:
   - health
+  evaluation_page: resource/robokop/robokop_eval.html
   homepage_url: http://robokop.renci.org
   id: robokop
   layout: resource_detail
@@ -36319,6 +36353,7 @@ resources:
   - biological systems
   - genomics
   - pharmacology
+  evaluation_page: resource/rtx-kg2/rtx-kg2_eval.html
   homepage_url: https://github.com/RTXteam/RTX-KG2
   id: rtx-kg2
   layout: resource_detail
@@ -37974,6 +38009,7 @@ resources:
   - drug discovery
   - precision medicine
   - pharmacology
+  evaluation_page: resource/spoke/spoke_eval.html
   homepage_url: https://spoke.ucsf.edu/
   id: spoke
   layout: resource_detail

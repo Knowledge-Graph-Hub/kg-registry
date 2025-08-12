@@ -3335,6 +3335,7 @@
             "domains": [
                 "health"
             ],
+            "evaluation_page": "resource/bioteque/bioteque_eval.html",
             "homepage_url": "https://bioteque.irbbarcelona.org/",
             "id": "bioteque",
             "layout": "resource_detail",
@@ -7133,6 +7134,7 @@
                 "biomedical",
                 "health"
             ],
+            "evaluation_page": "resource/clinicalkg/clinicalkg_eval.html",
             "homepage_url": "https://ckg.readthedocs.io/",
             "id": "clinicalkg",
             "layout": "resource_detail",
@@ -12106,6 +12108,7 @@
                 "drug discovery",
                 "literature"
             ],
+            "evaluation_page": "resource/drugmechdb/drugmechdb_eval.html",
             "homepage_url": "https://sulab.github.io/DrugMechDB/",
             "id": "drugmechdb",
             "layout": "resource_detail",
@@ -13624,6 +13627,7 @@
                 "literature",
                 "health"
             ],
+            "evaluation_page": "resource/embiology/embiology_eval.html",
             "homepage_url": "https://www.embiology.com/",
             "id": "embiology",
             "layout": "resource_detail",
@@ -16036,6 +16040,7 @@
                 "genomics",
                 "biomedical"
             ],
+            "evaluation_page": "resource/genomickb/genomickb_eval.html",
             "homepage_url": "https://gkb.dcmb.med.umich.edu/",
             "id": "genomickb",
             "layout": "resource_detail",
@@ -16738,6 +16743,7 @@
                 "literature",
                 "health"
             ],
+            "evaluation_page": "resource/gnbr/gnbr_eval.html",
             "homepage_url": "https://github.com/jakelever/GNBR",
             "id": "gnbr",
             "layout": "resource_detail",
@@ -18986,6 +18992,7 @@
                 "health",
                 "biological systems"
             ],
+            "evaluation_page": "resource/hetionet/hetionet_eval.html",
             "homepage_url": "https://het.io/",
             "id": "hetionet",
             "layout": "resource_detail",
@@ -20592,6 +20599,7 @@
                 "biological systems",
                 "biomedical"
             ],
+            "evaluation_page": "resource/hra-kg/hra-kg_eval.html",
             "homepage_url": "https://apps.humanatlas.io/dashboard/data",
             "id": "hra-kg",
             "layout": "resource_detail",
@@ -23817,6 +23825,7 @@
             "domains": [
                 "health"
             ],
+            "evaluation_page": "resource/kg-monarch/kg-monarch_eval.html",
             "homepage_url": "https://kghub.org/kg-monarch/index.html",
             "id": "kg-monarch",
             "layout": "resource_detail",
@@ -27997,6 +28006,7 @@
                 "clinical",
                 "genomics"
             ],
+            "evaluation_page": "resource/ncatsgardkg/ncatsgardkg_eval.html",
             "homepage_url": "https://github.com/ncats/RD-Clust",
             "id": "ncatsgardkg",
             "layout": "resource_detail",
@@ -34646,7 +34656,8 @@
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -34666,7 +34677,8 @@
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -34686,7 +34698,8 @@
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -34707,7 +34720,8 @@
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -34728,7 +34742,8 @@
                         "File was not able to be retrieved when checked on 2025-08-06: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -34750,7 +34765,8 @@
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -34772,7 +34788,8 @@
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -34792,7 +34809,8 @@
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error when accessing file"
                     ]
                 },
                 {
@@ -34814,7 +34832,8 @@
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error when accessing file"
                     ]
                 },
                 {
@@ -34837,7 +34856,8 @@
                         "File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error when accessing file"
                     ]
                 }
             ]
@@ -37691,6 +37711,7 @@
                 "biomedical",
                 "genomics"
             ],
+            "evaluation_page": "resource/petagraph/petagraph_eval.html",
             "homepage_url": "https://github.com/TaylorResearchLab/Petagraph",
             "id": "petagraph",
             "layout": "resource_detail",
@@ -38958,6 +38979,7 @@
                 "pharmacology",
                 "health"
             ],
+            "evaluation_page": "resource/pharmkg/pharmkg_eval.html",
             "homepage_url": "https://github.com/MindRank-Biotech/PharmKG",
             "id": "pharmkg",
             "layout": "resource_detail",
@@ -40006,6 +40028,7 @@
                 "pathways",
                 "systems biology"
             ],
+            "evaluation_page": "resource/primekg/primekg_eval.html",
             "homepage_url": "https://zitniklab.hms.harvard.edu/projects/PrimeKG",
             "id": "primekg",
             "layout": "resource_detail",
@@ -42252,6 +42275,7 @@
             "domains": [
                 "health"
             ],
+            "evaluation_page": "resource/robokop/robokop_eval.html",
             "homepage_url": "http://robokop.renci.org",
             "id": "robokop",
             "layout": "resource_detail",
@@ -42347,6 +42371,7 @@
                 "genomics",
                 "pharmacology"
             ],
+            "evaluation_page": "resource/rtx-kg2/rtx-kg2_eval.html",
             "homepage_url": "https://github.com/RTXteam/RTX-KG2",
             "id": "rtx-kg2",
             "layout": "resource_detail",
@@ -44279,6 +44304,7 @@
                 "precision medicine",
                 "pharmacology"
             ],
+            "evaluation_page": "resource/spoke/spoke_eval.html",
             "homepage_url": "https://spoke.ucsf.edu/",
             "id": "spoke",
             "layout": "resource_detail",

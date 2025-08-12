@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import csv
 import sys
 import pathlib
 import datetime
@@ -606,6 +607,87 @@ def concat_resource_yaml(args):
                 if total_written > 0:
                     print(f" Wrote {str(total_written)} product(s) to {obj['id']} entry")
 
+    def create_evaluation_pages(objs):
+        """
+        Read evals/evals.tsv and, for each resource ID in the first column, create an
+        evaluation markdown page at resource/<id>/<id>_eval.md with layout eval_detail.
+        Also annotate the in-memory resource object with an 'evaluation_page' field
+        used by the UI to render an Evaluation column icon.
+        Additionally, insert a small markdown link to the evaluation page into the
+        resource page content if not already present (without touching frontmatter).
+        """
+        evals_path = ROOT / 'evals' / 'evals.tsv'
+        if not evals_path.exists():
+            print("No evals/evals.tsv found; skipping evaluation page generation")
+            return
+
+        # Build a quick index of resources by id
+        resources_by_id = {obj.get('id'): obj for obj in objs if obj.get('id')}
+
+        created = 0
+        updated_links = 0
+        with open(evals_path, 'r', newline='', encoding='utf-8') as f:
+            reader = csv.reader(f, delimiter='\t')
+            rows = list(reader)
+            if not rows:
+                print("evals.tsv is empty; nothing to do")
+                return
+            headers = rows[0]
+            # Ensure first column is ID
+            for row in rows[1:]:
+                if not row or len(row) == 0:
+                    continue
+                rid = (row[0] or '').strip()
+                if not rid:
+                    continue
+                # Only proceed if this resource exists
+                res_dir = ROOT / 'resource' / rid
+                res_file = res_dir / f"{rid}.md"
+                if not res_file.exists():
+                    print(f"WARN: evaluation provided for '{rid}' but no resource page found; skipping")
+                    continue
+
+                # Create content from remaining columns (skip empty values)
+                # Build a simple Markdown table: Field | Value
+                content_lines = [f"# Evaluation for {rid}", "", "| Field | Value |", "|---|---|"]
+                for i in range(1, min(len(row), len(headers))):
+                    key = (headers[i] or '').strip()
+                    val = (row[i] or '').strip()
+                    if not key or not val:
+                        continue
+                    # Escape pipe in values
+                    val = val.replace('|', '\\|')
+                    content_lines.append(f"| {key} | {val} |")
+                content = "\n".join(content_lines) + "\n"
+
+                # Write the evaluation page
+                eval_md_path = res_dir / f"{rid}_eval.md"
+                with open(eval_md_path, 'w', encoding='utf-8') as ef:
+                    ef.write("---\nlayout: eval_detail\n---\n\n")
+                    ef.write(content)
+                created += 1
+
+                # Annotate the in-memory object so the table can render an icon/link
+                if rid in resources_by_id:
+                    resources_by_id[rid]['evaluation_page'] = f"resource/{rid}/{rid}_eval.html"
+
+                # Insert a link into the resource markdown content if missing
+                try:
+                    (metadata, md) = load_md(res_file)
+                    link_snippet = f"[{rid} evaluation]({rid}_eval.html)"
+                    if link_snippet not in md:
+                        md_update = md.rstrip() + "\n\n## Evaluation\n\n- View the evaluation: " + link_snippet + "\n"
+                        with open(res_file, 'w', encoding='utf-8') as rf:
+                            rf.write("---\n")
+                            yaml.dump(metadata, rf)
+                            rf.write("---\n")
+                            rf.write(md_update)
+                        updated_links += 1
+                except Exception as e:
+                    print(f"WARN: could not update resource page for {rid} with evaluation link: {e}")
+
+        print(f"Created {created} evaluation page(s); updated {updated_links} resource page link(s)")
+
     objs = []
     foundry = []
     library = []
@@ -638,6 +720,9 @@ def concat_resource_yaml(args):
 
     # Update domains of existing stub resources
     update_stub_domains(objs)
+
+    # Generate evaluation pages from evals/evals.tsv and annotate resources
+    create_evaluation_pages(objs)
 
     with open(args.output, "w") as f:
         f.write(yaml.dump(cfg))
