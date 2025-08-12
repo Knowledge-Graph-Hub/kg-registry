@@ -1,0 +1,29 @@
+question	plain_text	description
+access_otherthanKG	Access to data outside of the knowledge graph	Can users access something beyond the original KG (e.g., embeddings or paths)?
+api_or_online_access	API or online access to the knowledge graph	Can users access the KG through an API or a hosted graph database (e.g., Neo4j)?
+multi_access_options	Multiple access options available	Are there multiple ways to access the KG contents, such as downloadable files in different formats?
+sourcecode_available	Source code availability	Can users access the source code for the KG or its components?
+downloadable_KG	Downloadable knowledge graph	Is the KG available for public download in a defined format?
+source_list_provided	Source list provided	Does the KG provide a list of sources used to create it?
+source_versions_info	Source versions information	Does the KG include information about the versions, dates, and filenames of its sources?
+import_dependancies	Import dependencies	Does the KG list the dependencies necessary for its assembly?
+node_edge_sources	Node and edge sources	Does the KG provide information about the sources of its specific nodes and edges?
+edges_deduplication	Edges deduplication	Does the KG include mechanisms for deduplicating edges?
+triples_source_details	Triples source details	Does the KG provide details about the sources of its triples or edges?
+edge_type_schema	Edge type schema	Does the KG include a schema for its edge types and describe which type is derived from each source?
+bio_usable_data	Biological usable data	Does the KG include human-readable data that is usable for biological research beyond the KG's initial applications?
+resolvable_ids	Resolvable IDs	Does the KG use resolvable identifiers for its entities (e.g., Ensembl identifiers)?
+construction_docs	Construction documentation	Does the KG include documentation about its construction process?
+transform_docs	Transformation documentation	Does the KG include documentation about the transformations applied to its data?
+schema_used	Schema used	Does the KG specify the schema it uses?
+stable_versions	Stable versions	Does the KG provide information about its stable versions?
+public_tracker	Public tracker information	Does the KG have a public tracker for issues, bugs, or feature requests?
+kg_contact_info	Knowledge graph contact information	Does the KG provide contact information for users to reach out for support or inquiries?
+updated_annually	Updated annually	Does the KG undergo annual or more frequent updates to its content and structure?
+prior_versions_access	Prior versions access	Does the KG provide access to its previous versions?
+use_case_provided	Use case provided	Does the KG include specific use cases or examples of how it can be used?
+eval_against_others	Evaluation against other models	Does the KG include evaluations or comparisons against other knowledge graphs?
+defined_scope	Defined scope	Does the KG have a clearly defined scope for its content and purpose?
+multi_eval_methods	Multiple evaluation methods	Does the KG employ multiple methods for evaluating its content and performance?
+accuracy_metrics	Accuracy metrics	Does the KG include metrics for assessing its accuracy and performance?
+License_text	License information	Does the KG provide information about its licensing terms and conditions?
