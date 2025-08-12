@@ -726,10 +726,17 @@ def concat_resource_yaml(args):
                 txt = c.strip()
                 # Remove leading boolean answer tokens (Y/N/Yes/No) with optional punctuation and spaces
                 txt = re.sub(r'^\s*(yes|y|no|n)\b[\s:;\-–—]*', '', txt, flags=re.IGNORECASE)
+                # Remove leading single letter (Y/N), comma, and space (e.g., "Y, foo")
+                txt = re.sub(r'^[YyNn],\s+', '', txt)
+                # Remove any leading commas and spaces (e.g., ", foo" or ",,  foo")
+                txt = re.sub(r'^[,\s]+', '', txt)
                 txt = txt.strip()
                 # If wrapped in a single pair of parentheses, remove them
                 if len(txt) >= 2 and txt[0] == '(' and txt[-1] == ')':
                     txt = txt[1:-1].strip()
+                # Capitalize first letter if not empty
+                if txt:
+                    txt = txt[0].upper() + txt[1:]
                 return txt
 
             # Ensure first column is ID; iterate over data rows

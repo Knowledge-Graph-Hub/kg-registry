@@ -20,7 +20,7 @@ layout: eval_detail
 <div class="table-responsive">
 <table class="table table-striped">
 <thead><tr><th>Question</th><th>Answer</th><th>Comment</th></tr></thead><tbody>
-<tr><td>Source list provided</td><td style="background-color:#d4edda;">Y</td><td>see <a href="https://bioteque.irbbarcelona.org/sources">https://bioteque.irbbarcelona.org/sources</a></td></tr>
+<tr><td>Source list provided</td><td style="background-color:#d4edda;">Y</td><td>See <a href="https://bioteque.irbbarcelona.org/sources">https://bioteque.irbbarcelona.org/sources</a></td></tr>
 <tr><td>Source versions information</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
 <tr><td>Import dependencies</td><td style="background-color:#d4edda;">Y</td><td>The list of data sources is documented and includes specific mentions of source files in its data retrieval scripts, e.g., the source for COSMIC is defined here: <a href="https://github.com/sbnb-irb/bioteque/blob/master/datasets/cosmic_mutsig/get_data.sh">https://github.com/sbnb-irb/bioteque/blob/master/datasets/cosmic_mutsig/get_data.sh</a></td></tr>
 <tr><td>Node and edge sources</td><td style="background-color:#d4edda;">Y</td><td>The sources of nodes and edges are provided in the documentation and the node files.</td></tr>
@@ -34,10 +34,10 @@ layout: eval_detail
 <div class="table-responsive">
 <table class="table table-striped">
 <thead><tr><th>Question</th><th>Answer</th><th>Comment</th></tr></thead><tbody>
-<tr><td>Biological usable data</td><td style="background-color:#d4edda;">Y</td><td>the provided node files are provided as TSVs, though assembly of a full KG would require running the graph assembly code. It appears that the assembly code also produces nodes and edges in a TSV format.</td></tr>
-<tr><td>Resolvable IDs</td><td style="background-color:#d4edda;">Y</td><td>node identifiers are from clearly defined sources and expressed as CURIEs</td></tr>
+<tr><td>Biological usable data</td><td style="background-color:#d4edda;">Y</td><td>The provided node files are provided as TSVs, though assembly of a full KG would require running the graph assembly code. It appears that the assembly code also produces nodes and edges in a TSV format.</td></tr>
+<tr><td>Resolvable IDs</td><td style="background-color:#d4edda;">Y</td><td>Node identifiers are from clearly defined sources and expressed as CURIEs</td></tr>
 <tr><td>Construction documentation</td><td style="background-color:#d4edda;">Y</td><td>Documentation regarding the assembly code is provided; see <a href="https://github.com/sbnb-irb/bioteque">https://github.com/sbnb-irb/bioteque</a></td></tr>
-<tr><td>Transformation documentation</td><td style="background-color:#d4edda;">Y</td><td>each source has its own transform code and documentation, provided on the GitHub repo, <a href="https://github.com/sbnb-irb/bioteque">https://github.com/sbnb-irb/bioteque</a></td></tr>
+<tr><td>Transformation documentation</td><td style="background-color:#d4edda;">Y</td><td>Each source has its own transform code and documentation, provided on the GitHub repo, <a href="https://github.com/sbnb-irb/bioteque">https://github.com/sbnb-irb/bioteque</a></td></tr>
 <tr><td>Schema used</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
 </tbody></table></div>
 <p><strong>Section Score:</strong> 4/5</p>
@@ -48,7 +48,7 @@ layout: eval_detail
 <thead><tr><th>Question</th><th>Answer</th><th>Comment</th></tr></thead><tbody>
 <tr><td>Stable versions</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
 <tr><td>Public tracker information</td><td style="background-color:#d4edda;">Y</td><td>(the GitHub repository at <a href="https://github.com/sbnb-irb/bioteque">https://github.com/sbnb-irb/bioteque</a> is public and permits issue creation).</td></tr>
-<tr><td>Knowledge graph contact information</td><td style="background-color:#d4edda;">Y</td><td>it&#x27;s never explicitly stated as a contact, but the responsible organization, the Structural Bioinformatics and Network Biology Group at the Institute for Research in Biomedicine Barcelona, is identified along with a link to their home page</td></tr>
+<tr><td>Knowledge graph contact information</td><td style="background-color:#d4edda;">Y</td><td>It&#x27;s never explicitly stated as a contact, but the responsible organization, the Structural Bioinformatics and Network Biology Group at the Institute for Research in Biomedicine Barcelona, is identified along with a link to their home page</td></tr>
 <tr><td>Updated annually</td><td></td><td></td></tr>
 <tr><td>Prior versions access</td><td style="background-color:#f8d7da;">N</td><td></td></tr>
 </tbody></table></div>
