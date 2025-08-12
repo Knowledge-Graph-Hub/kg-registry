@@ -50,6 +50,9 @@ products:
   id: bindingdb.all_3d
   name: BindingDB All Data (3D structures)
   product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_All_3D_202507_sdf.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: Product
   compression: zip
   description: Full dataset containing all binding measurements in BindingDB in tab-separated
@@ -86,6 +89,9 @@ products:
   id: bindingdb.chembl_2d
   name: BindingDB ChEMBL Data (2D structures)
   product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_ChEMBL_2D_202507_sdf.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: Product
   compression: zip
   description: Data in BindingDB drawn from ChEMBL with 3D compound structures
@@ -93,6 +99,9 @@ products:
   id: bindingdb.chembl_3d
   name: BindingDB ChEMBL Data (3D structures)
   product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_ChEMBL_3D_202507_sdf.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: Product
   compression: zip
   description: Data in BindingDB drawn from ChEMBL in tab-separated values format
@@ -114,6 +123,9 @@ products:
   id: bindingdb.patents_3d
   name: BindingDB Patents Data (3D structures)
   product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Patents_3D_202507_sdf.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: Product
   compression: zip
   description: Data in BindingDB drawn from Patents in tab-separated values format
@@ -121,6 +133,9 @@ products:
   id: bindingdb.patents_tsv
   name: BindingDB Patents Data (TSV)
   product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Patents_202507_tsv.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: Product
   compression: zip
   description: Data in BindingDB drawn from PubChem with 2D compound structures
@@ -128,6 +143,9 @@ products:
   id: bindingdb.pubchem_2d
   name: BindingDB PubChem Data (2D structures)
   product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_PubChem_2D_202507_sdf.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: Product
   compression: zip
   description: Data in BindingDB drawn from PubChem with 3D compound structures
@@ -135,6 +153,9 @@ products:
   id: bindingdb.pubchem_3d
   name: BindingDB PubChem Data (3D structures)
   product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_PubChem_3D_202507_sdf.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: Product
   compression: zip
   description: Data in BindingDB drawn from PubChem in tab-separated values format
@@ -142,6 +163,9 @@ products:
   id: bindingdb.pubchem_tsv
   name: BindingDB PubChem Data (TSV)
   product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_PubChem_202507_tsv.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: Product
   compression: zip
   description: COVID-19 related binding data with 2D compound structures
@@ -149,6 +173,9 @@ products:
   id: bindingdb.covid19_2d
   name: BindingDB COVID-19 Data (2D structures)
   product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Covid-19_2D_202507_sdf.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: Product
   compression: zip
   description: COVID-19 related binding data with 3D compound structures
@@ -156,6 +183,9 @@ products:
   id: bindingdb.covid19_3d
   name: BindingDB COVID-19 Data (3D structures)
   product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Covid-19_3D_202507_sdf.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: Product
   compression: zip
   description: COVID-19 related binding data in tab-separated values format
@@ -163,37 +193,58 @@ products:
   id: bindingdb.covid19_tsv
   name: BindingDB COVID-19 Data (TSV)
   product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Covid-19_202507_tsv.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: Product
   description: FASTA format protein sequences of all protein targets in BindingDB
   format: fasta
   id: bindingdb.target_sequences
   name: BindingDB Target Sequences
   product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDBTargetSequences.fasta
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: MappingProduct
   description: Mapping of BindingDB monomer (compound) IDs to PubChem CIDs
   id: bindingdb.cid_mapping
   name: BindingDB-PubChem CID Mapping
   product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_CID.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: MappingProduct
   description: Mapping of BindingDB monomer (compound) IDs to PubChem SIDs
   id: bindingdb.sid_mapping
   name: BindingDB-PubChem SID Mapping
   product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_SID.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: MappingProduct
   description: Mapping of BindingDB monomer (compound) IDs to ChEBI IDs
   id: bindingdb.chebi_mapping
   name: BindingDB-ChEBI Mapping
   product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_CHEBI_ID.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: MappingProduct
   description: Mapping of BindingDB monomer (compound) IDs to DrugBank IDs
   id: bindingdb.drugbank_mapping
   name: BindingDB-DrugBank Mapping
   product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_DrugBankID.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: MappingProduct
   description: Mapping of BindingDB polymer (single protein) IDs to UniProt IDs
   id: bindingdb.uniprot_mapping
   name: BindingDB-UniProt Mapping
   product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_UniProt.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: RESTful web services for programmatic access to BindingDB data
   id: bindingdb.api

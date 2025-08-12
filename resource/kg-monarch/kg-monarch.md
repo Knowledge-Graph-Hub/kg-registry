@@ -36,6 +36,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+    when accessing file'
 - category: ProcessProduct
   description: This repository is a code reference for the C-Path Knowledge Graph
     project, to increase discoverability of rare disease datasets through integration
@@ -53,3 +55,7 @@ products:
 repository: https://github.com/monarch-initiative/monarch-ingest
 ---
 The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. Monarch resources and integrated data are also foundational to many downstream applications and contexts; we work closely with a variety of stakeholders and resource-development communities to capture feedback and make improvements. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components. We promote provenance and transparency, enhanced use of standards and new technologies and improved data accessibility, end-user utility, and data submission. Learn more about the complete suite of Monarch resources on our organization's [documentation pages](https://monarch-initiative.github.io/monarch-documentation/).
+
+## Evaluation
+
+- View the evaluation: [kg-monarch evaluation](kg-monarch_eval.html)

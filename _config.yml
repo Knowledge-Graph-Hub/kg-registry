@@ -567,6 +567,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Robokop Plus
     format: kgx-jsonl
@@ -582,6 +584,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Biolink Automat
     format: kgx-jsonl
@@ -596,6 +600,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: CTD Automat
@@ -613,6 +619,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DrugCentral Automat
     format: kgx-jsonl
@@ -629,6 +637,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: GTEx Automat
     format: kgx-jsonl
@@ -640,6 +650,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: GtoPdb Automat
@@ -653,6 +665,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: GWASCatalog Automat
     format: kgx-jsonl
@@ -665,6 +679,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Hetio Automat
     format: kgx-jsonl
@@ -675,6 +691,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: HGNC Automat
@@ -688,6 +706,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: HMDB Automat
     format: kgx-jsonl
@@ -699,6 +719,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: HumanGOA Automat
@@ -712,6 +734,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: IntAct Automat
     format: kgx-jsonl
@@ -724,6 +748,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: OntologicalHierarchy Automat
     format: kgx-jsonl
@@ -734,6 +760,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: PANTHER Automat
@@ -747,6 +775,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: PHAROS Automat
     format: kgx-jsonl
@@ -759,6 +789,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: STRING-DB Automat
     format: kgx-jsonl
@@ -770,6 +802,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: UberGraph Automat
     format: kgx-jsonl
@@ -780,6 +814,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   repository: https://github.com/RobokopU24/
 - activity_status: active
@@ -1107,6 +1143,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: RNA-Seq data processed and formatted for the Bgee database
@@ -1122,6 +1160,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -1139,6 +1179,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: In Situ Hybridization data in the Bgee database
@@ -1154,6 +1196,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -1171,6 +1215,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: Single-cell RNA-Seq processed data in the Bgee database
@@ -1186,6 +1232,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -1203,6 +1251,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: RDF version of the Bgee data for semantic web applications
@@ -1218,6 +1268,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -1684,6 +1736,9 @@ resources:
     id: bindingdb.all_3d
     name: BindingDB All Data (3D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_All_3D_202507_sdf.zip
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Full dataset containing all binding measurements in BindingDB in
@@ -1720,6 +1775,9 @@ resources:
     id: bindingdb.chembl_2d
     name: BindingDB ChEMBL Data (2D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_ChEMBL_2D_202507_sdf.zip
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Data in BindingDB drawn from ChEMBL with 3D compound structures
@@ -1727,6 +1785,9 @@ resources:
     id: bindingdb.chembl_3d
     name: BindingDB ChEMBL Data (3D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_ChEMBL_3D_202507_sdf.zip
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Data in BindingDB drawn from ChEMBL in tab-separated values format
@@ -1748,6 +1809,9 @@ resources:
     id: bindingdb.patents_3d
     name: BindingDB Patents Data (3D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Patents_3D_202507_sdf.zip
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Data in BindingDB drawn from Patents in tab-separated values format
@@ -1755,6 +1819,9 @@ resources:
     id: bindingdb.patents_tsv
     name: BindingDB Patents Data (TSV)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Patents_202507_tsv.zip
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Data in BindingDB drawn from PubChem with 2D compound structures
@@ -1762,6 +1829,9 @@ resources:
     id: bindingdb.pubchem_2d
     name: BindingDB PubChem Data (2D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_PubChem_2D_202507_sdf.zip
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Data in BindingDB drawn from PubChem with 3D compound structures
@@ -1769,6 +1839,9 @@ resources:
     id: bindingdb.pubchem_3d
     name: BindingDB PubChem Data (3D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_PubChem_3D_202507_sdf.zip
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Data in BindingDB drawn from PubChem in tab-separated values format
@@ -1776,6 +1849,9 @@ resources:
     id: bindingdb.pubchem_tsv
     name: BindingDB PubChem Data (TSV)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_PubChem_202507_tsv.zip
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: COVID-19 related binding data with 2D compound structures
@@ -1783,6 +1859,9 @@ resources:
     id: bindingdb.covid19_2d
     name: BindingDB COVID-19 Data (2D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Covid-19_2D_202507_sdf.zip
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: COVID-19 related binding data with 3D compound structures
@@ -1790,6 +1869,9 @@ resources:
     id: bindingdb.covid19_3d
     name: BindingDB COVID-19 Data (3D structures)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Covid-19_3D_202507_sdf.zip
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: COVID-19 related binding data in tab-separated values format
@@ -1797,37 +1879,58 @@ resources:
     id: bindingdb.covid19_tsv
     name: BindingDB COVID-19 Data (TSV)
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Covid-19_202507_tsv.zip
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     description: FASTA format protein sequences of all protein targets in BindingDB
     format: fasta
     id: bindingdb.target_sequences
     name: BindingDB Target Sequences
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDBTargetSequences.fasta
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: MappingProduct
     description: Mapping of BindingDB monomer (compound) IDs to PubChem CIDs
     id: bindingdb.cid_mapping
     name: BindingDB-PubChem CID Mapping
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_CID.txt
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: MappingProduct
     description: Mapping of BindingDB monomer (compound) IDs to PubChem SIDs
     id: bindingdb.sid_mapping
     name: BindingDB-PubChem SID Mapping
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_SID.txt
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: MappingProduct
     description: Mapping of BindingDB monomer (compound) IDs to ChEBI IDs
     id: bindingdb.chebi_mapping
     name: BindingDB-ChEBI Mapping
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_CHEBI_ID.txt
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: MappingProduct
     description: Mapping of BindingDB monomer (compound) IDs to DrugBank IDs
     id: bindingdb.drugbank_mapping
     name: BindingDB-DrugBank Mapping
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_DrugBankID.txt
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: MappingProduct
     description: Mapping of BindingDB polymer (single protein) IDs to UniProt IDs
     id: bindingdb.uniprot_mapping
     name: BindingDB-UniProt Mapping
     product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_UniProt.txt
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: ProgrammingInterface
     description: RESTful web services for programmatic access to BindingDB data
     id: bindingdb.api
@@ -1931,6 +2034,44 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
     secondary_source:
     - obo-db-ingest
+- activity_status: active
+  category: DataSource
+  creation_date: '2025-08-12T00:00:00Z'
+  description: Stub Resource page for biogps. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: biogps
+  last_modified_date: '2025-08-12T00:00:00Z'
+  layout: resource_detail
+  name: Biogps
+  products:
+  - category: GraphProduct
+    description: Cleaned benchmark graph (PharmKG-8k) with typed relations between
+      genes, chemicals, and diseases
+    edge_count: 500958
+    id: pharmkg.graph
+    name: PharmKG graph
+    node_count: 7603
+    original_source:
+    - omim
+    - drugbank
+    - pharmgkb
+    - ttd
+    - sider
+    - humannet
+    - ncbigene
+    - mesh
+    - pubchem
+    - gnbr
+    - biogps
+    - connectivitymap
+    product_url: https://zenodo.org/record/4077338
+    secondary_source:
+    - pharmkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataModel
   contacts:
@@ -2265,6 +2406,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: ProcessProduct
     description: This repository is a code reference for the C-Path Knowledge Graph
@@ -2672,6 +2815,7 @@ resources:
     integrates and formats biomedical data as pre-calculated knowledge graph embeddings
   domains:
   - health
+  evaluation_page: resource/bioteque/bioteque_eval.html
   homepage_url: https://bioteque.irbbarcelona.org/
   id: bioteque
   layout: resource_detail
@@ -2954,6 +3098,51 @@ resources:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
     secondary_source:
     - bioteque
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   repository: https://github.com/BRENDA-Enzymes/BTO
 - activity_status: active
   category: DataSource
@@ -3125,6 +3314,66 @@ resources:
     label: MIT License
   name: Exposures KP (cam kp)
   repository: https://github.com/ExposuresProvider/cam-kp-api
+- activity_status: active
+  category: DataSource
+  creation_date: '2025-08-12T00:00:00Z'
+  description: Stub Resource page for cancer-genome-interpreter. This page was automatically
+    generated because it was referenced by other resources.
+  domains:
+  - stub
+  id: cancer-genome-interpreter
+  last_modified_date: '2025-08-12T00:00:00Z'
+  layout: resource_detail
+  name: Cancer-genome-interpreter
+  products:
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -3305,6 +3554,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     description: Cell markers of different cell types from different tissues in mouse
     id: cellmarker.mouse
@@ -3319,6 +3570,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     description: Cell markers derived from single-cell sequencing researches in human
       and mouse
@@ -3334,6 +3587,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     description: All cell markers of different cell types from different tissues in
       human and mouse
@@ -3349,6 +3604,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: GraphicalInterface
     description: ACT is a tool that makes cell type annotation easier by integrating
       the CellMarker resource.
@@ -3485,6 +3742,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Complete Cellosaurus data in RDF format using the Turtle syntax
     format: ttl
@@ -3499,6 +3758,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
     description: RESTful API for programmatic access to Cellosaurus data
@@ -3640,6 +3901,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: Product
     description: cgnc OBO
@@ -4316,6 +4579,37 @@ resources:
     product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
     secondary_source:
     - mechreponet
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+    compression: zip
+    description: Curated mechanistic drug–disease paths comprising the DrugMechDB
+      dataset packaged as a downloadable archive.
+    dump_format: other
+    format: mixed
+    id: drugmechdb.graph
+    latest_version: 2.0.1
+    name: DrugMechDB Graph Dataset
+    original_source:
+    - go
+    - cl
+    - mesh
+    - chebi
+    - drugbank
+    - interpro
+    - uberon
+    - pr
+    - ncbitaxon
+    - reactome
+    - hp
+    - uniprot
+    product_url: https://doi.org/10.5281/zenodo.8139357
+    repository: https://github.com/SuLab/DrugMechDB
+    versions:
+    - 2.0.1
+    - 2.0.0
+    - 1.0.2
+    - '1.0'
   repository: https://github.com/ebi-chebi/ChEBI
 - activity_status: active
   category: DataSource
@@ -4742,6 +5036,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   repository: https://github.com/monarch-initiative/monochrom/
 - activity_status: active
@@ -5358,6 +5654,37 @@ resources:
     product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
     secondary_source:
     - mechreponet
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+    compression: zip
+    description: Curated mechanistic drug–disease paths comprising the DrugMechDB
+      dataset packaged as a downloadable archive.
+    dump_format: other
+    format: mixed
+    id: drugmechdb.graph
+    latest_version: 2.0.1
+    name: DrugMechDB Graph Dataset
+    original_source:
+    - go
+    - cl
+    - mesh
+    - chebi
+    - drugbank
+    - interpro
+    - uberon
+    - pr
+    - ncbitaxon
+    - reactome
+    - hp
+    - uniprot
+    product_url: https://doi.org/10.5281/zenodo.8139357
+    repository: https://github.com/SuLab/DrugMechDB
+    versions:
+    - 2.0.1
+    - 2.0.0
+    - 1.0.2
+    - '1.0'
   publications:
   - authors:
     - Alexander D Diehl
@@ -5728,6 +6055,91 @@ resources:
   layout: resource_detail
   name: Clinical Data KP
 - activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://github.com/MannLabs
+    label: Mann Labs
+  description: The Clinical Knowledge Graph (CKG) is an open-source platform that
+    integrates proteomics and clinical data with knowledge from diverse biomedical
+    databases and literature to support precision medicine. The CKG has reported scale
+    of ~16 million nodes and ~220 million relationships and provides tooling for analysis,
+    reporting, and knowledge discovery.
+  domains:
+  - clinical
+  - proteomics
+  - biomedical
+  - health
+  evaluation_page: resource/clinicalkg/clinicalkg_eval.html
+  homepage_url: https://ckg.readthedocs.io/
+  id: clinicalkg
+  layout: resource_detail
+  license:
+    id: https://opensource.org/licenses/MIT
+    label: MIT License
+  name: Clinical Knowledge Graph (CKG)
+  products:
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  publications:
+  - authors:
+    - Alberto Santos
+    - Ana R. Colaço
+    - Annelaura B. Nielsen
+    - Matthias Mann
+    doi: 10.1101/2020.05.09.084897
+    id: doi:10.1101/2020.05.09.084897
+    journal: bioRxiv
+    title: Clinical Knowledge Graph Integrates Proteomics Data into Clinical Decision-Making
+    year: '2020'
+  repository: https://github.com/MannLabs/CKG
+- activity_status: active
   category: DataSource
   contacts:
   - category: Organization
@@ -5890,6 +6302,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Zarin DA
@@ -6793,6 +7207,44 @@ resources:
   name: Connections Hypothesis KP
 - activity_status: active
   category: DataSource
+  creation_date: '2025-08-12T00:00:00Z'
+  description: Stub Resource page for connectivitymap. This page was automatically
+    generated because it was referenced by other resources.
+  domains:
+  - stub
+  id: connectivitymap
+  last_modified_date: '2025-08-12T00:00:00Z'
+  layout: resource_detail
+  name: Connectivitymap
+  products:
+  - category: GraphProduct
+    description: Cleaned benchmark graph (PharmKG-8k) with typed relations between
+      genes, chemicals, and diseases
+    edge_count: 500958
+    id: pharmkg.graph
+    name: PharmKG graph
+    node_count: 7603
+    original_source:
+    - omim
+    - drugbank
+    - pharmgkb
+    - ttd
+    - sider
+    - humannet
+    - ncbigene
+    - mesh
+    - pubchem
+    - gnbr
+    - biogps
+    - connectivitymap
+    product_url: https://zenodo.org/record/4077338
+    secondary_source:
+    - pharmkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   contacts:
   - category: Organization
     contact_details:
@@ -6850,6 +7302,11 @@ resources:
       Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused
+      by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
+      verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Core dataset of manually curated, non-redundant protein complexes
       in CORUM in tab-delimited format
@@ -6881,6 +7338,11 @@ resources:
       Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
+      by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
+      verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Dataset of all CORUM protein complexes in PSI-MI XML format (Proteomics
       Standards Initiative)
@@ -6912,6 +7374,11 @@ resources:
       Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1017)'')))'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
+      ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Dataset of all CORUM protein complexes in PSI-MI MITAB 2.5 format
     format: psi_mi_mitab
@@ -6942,6 +7409,11 @@ resources:
       Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1017)'')))'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
+      ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
       entities and their associations
@@ -6988,6 +7460,51 @@ resources:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
     secondary_source:
     - bioteque
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   publications:
   - authors:
     - Stefanie Gößler
@@ -7307,6 +7824,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
@@ -7916,6 +8435,51 @@ resources:
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2.code
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   publications:
   - authors:
     - Cotto KC
@@ -8020,6 +8584,51 @@ resources:
     - bgee
     secondary_source:
     - spoke
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -8435,6 +9044,51 @@ resources:
     product_url: https://github.com/gyorilab/indra_cogex
     secondary_source:
     - indra
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   publications:
   - authors:
     - Janet Piñero
@@ -8901,6 +9555,51 @@ resources:
     product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
     secondary_source:
     - mechreponet
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 - activity_status: active
   category: DataSource
@@ -9324,6 +10023,105 @@ resources:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
     secondary_source:
     - bioteque
+  - category: GraphProduct
+    description: Cleaned benchmark graph (PharmKG-8k) with typed relations between
+      genes, chemicals, and diseases
+    edge_count: 500958
+    id: pharmkg.graph
+    name: PharmKG graph
+    node_count: 7603
+    original_source:
+    - omim
+    - drugbank
+    - pharmgkb
+    - ttd
+    - sider
+    - humannet
+    - ncbigene
+    - mesh
+    - pubchem
+    - gnbr
+    - biogps
+    - connectivitymap
+    product_url: https://zenodo.org/record/4077338
+    secondary_source:
+    - pharmkg
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+    compression: zip
+    description: Curated mechanistic drug–disease paths comprising the DrugMechDB
+      dataset packaged as a downloadable archive.
+    dump_format: other
+    format: mixed
+    id: drugmechdb.graph
+    latest_version: 2.0.1
+    name: DrugMechDB Graph Dataset
+    original_source:
+    - go
+    - cl
+    - mesh
+    - chebi
+    - drugbank
+    - interpro
+    - uberon
+    - pr
+    - ncbitaxon
+    - reactome
+    - hp
+    - uniprot
+    product_url: https://doi.org/10.5281/zenodo.8139357
+    repository: https://github.com/SuLab/DrugMechDB
+    versions:
+    - 2.0.1
+    - 2.0.0
+    - 1.0.2
+    - '1.0'
   publications:
   - id: https://doi.org/10.1093/nar/gkad976
     journal: Nucleic Acids Research
@@ -9371,6 +10169,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -9556,6 +10356,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -9574,6 +10376,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -9594,6 +10398,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -9638,6 +10444,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Ursu O
@@ -9652,6 +10460,79 @@ resources:
     id: doi:10.1093/nar/gkw993
     title: 'DrugCentral: online drug compendium'
     year: '2017'
+- activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://sulab.org/
+    label: Su Lab
+  description: DrugMechDB is a curated database that captures mechanistic paths from
+    a drug to a disease within a given indication. Expert curators normalize concepts
+    and relationships to standard biomedical identifiers and represent each indication
+    as a directed path through a biological knowledge graph, suitable for computational
+    analysis and benchmarking.
+  domains:
+  - biomedical
+  - pharmacology
+  - drug discovery
+  - literature
+  evaluation_page: resource/drugmechdb/drugmechdb_eval.html
+  homepage_url: https://sulab.github.io/DrugMechDB/
+  id: drugmechdb
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0 Universal
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+  name: DrugMechDB
+  products:
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+    compression: zip
+    description: Curated mechanistic drug–disease paths comprising the DrugMechDB
+      dataset packaged as a downloadable archive.
+    dump_format: other
+    format: mixed
+    id: drugmechdb.graph
+    latest_version: 2.0.1
+    name: DrugMechDB Graph Dataset
+    original_source:
+    - go
+    - cl
+    - mesh
+    - chebi
+    - drugbank
+    - interpro
+    - uberon
+    - pr
+    - ncbitaxon
+    - reactome
+    - hp
+    - uniprot
+    product_url: https://doi.org/10.5281/zenodo.8139357
+    repository: https://github.com/SuLab/DrugMechDB
+    versions:
+    - 2.0.1
+    - 2.0.0
+    - 1.0.2
+    - '1.0'
+  - category: GraphicalInterface
+    description: Web interface for exploring curated DrugMechDB paths by drug and
+      disease.
+    format: http
+    id: drugmechdb.web
+    name: DrugMechDB Website
+    product_url: https://sulab.github.io/DrugMechDB/
+  publications:
+  - doi: 10.1038/s41597-023-02534-z
+    id: doi:10.1038/s41597-023-02534-z
+    journal: Scientific Data
+    title: DrugMechDB — a curated database of drug mechanisms
+    year: '2023'
+  repository: https://github.com/SuLab/DrugMechDB
 - activity_status: active
   category: DataSource
   contacts:
@@ -9708,6 +10589,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
@@ -10785,6 +11668,51 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   publications:
   - authors:
     - James Malone
@@ -10803,6 +11731,45 @@ resources:
     title: Modeling Sample Variables with an Experimental Factor Ontology
     year: '2010'
   repository: https://github.com/EBISPOT/efo
+- activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.elsevier.com/products/embiology
+    - contact_type: url
+      value: https://service.elsevier.com/app/home/supporthub/embiology/
+    label: Elsevier
+  description: EmBiology is a commercial, web-based knowledge graph platform from
+    Elsevier that surfaces biological relationships across entities such as genes,
+    proteins, diseases, cells, and more. EmBiology connects 1.4 million entities via
+    15.7 million relationships and provides 87.2 million referenced facts (figures
+    reported by Elsevier), with weekly updates and annual rescans of the corpus. It
+    uses NLP (including the TERMite engine) and expert curation to extract and quality-control
+    relationships from full-text scientific literature and other sources, and offers
+    interactive visualization (e.g., Sankey diagrams) and filtering to support discovery
+    and decision-making in drug research and biology.
+  domains:
+  - biomedical
+  - drug discovery
+  - literature
+  - health
+  evaluation_page: resource/embiology/embiology_eval.html
+  homepage_url: https://www.embiology.com/
+  id: embiology
+  layout: resource_detail
+  license:
+    id: https://www.elsevier.com/legal/elsevier-website-terms-and-conditions
+    label: Elsevier Website Terms and Conditions
+  name: EmBiology
+  products:
+  - category: GraphicalInterface
+    description: Web interface for exploring biological relationships in EmBiology
+    format: http
+    id: embiology.web
+    name: EmBiology Web Interface
+    product_url: https://www.embiology.com/
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -12129,6 +13096,10 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: targz
     description: Complete FooDB database in XML format
@@ -12145,6 +13116,10 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Complete FooDB database in JSON format
@@ -12161,6 +13136,10 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: targz
     description: Complete FooDB database as MySQL dump
@@ -12176,6 +13155,10 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Experimental C-MS Spectra data from FooDB
@@ -12191,6 +13174,10 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Predicted C-MS Spectra data from FooDB
@@ -12206,6 +13193,10 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Experimental MS-MS Spectra data from FooDB
@@ -12219,6 +13210,10 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Predicted MS-MS Spectra data from FooDB
@@ -12232,6 +13227,10 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: NMR Spectra data from FooDB
@@ -12245,6 +13244,10 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Free Induction Decay (FID) files from FooDB
@@ -12258,6 +13261,10 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Image files of compounds, foods, and chemical structures
@@ -12271,6 +13278,10 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.
@@ -12314,6 +13325,51 @@ resources:
     - protcid
     secondary_source:
     - spoke
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   publications:
   - authors:
     - Wishart DS
@@ -12478,6 +13534,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -12873,6 +13931,7 @@ resources:
   - biological systems
   - genomics
   - biomedical
+  evaluation_page: resource/genomickb/genomickb_eval.html
   homepage_url: https://gkb.dcmb.med.umich.edu/
   id: genomickb
   layout: resource_detail
@@ -13191,6 +14250,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Alocci D
@@ -13440,6 +14501,75 @@ resources:
     title: GlyGen - Computational and informatics resources for glycoscience
     year: '2020'
   repository: https://github.com/glygener/glygen-backend-api
+- activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: github
+      value: jakelever
+    - contact_type: url
+      value: https://github.com/jakelever/GNBR
+    label: GNBR
+  description: The Global Network of Biomedical Relationships (GNBR) is a large-scale
+    biomedical knowledge graph derived from literature. GNBR uses text mining of PubMed
+    abstracts to extract typed relationships between genes, diseases and drugs/chemicals,
+    organizing them into semantic themes suitable for link prediction and downstream
+    applications such as drug repurposing. GNBR has been widely used as a text-derived
+    KG resource and is available via GitHub and Zenodo.
+  domains:
+  - biomedical
+  - literature
+  - health
+  evaluation_page: resource/gnbr/gnbr_eval.html
+  homepage_url: https://github.com/jakelever/GNBR
+  id: gnbr
+  layout: resource_detail
+  name: GNBR
+  products:
+  - category: GraphProduct
+    description: Text-mined biomedical knowledge graph of gene–disease–drug relationships
+      (semantic themes)
+    id: gnbr.graph
+    name: GNBR graph
+    original_source:
+    - pubtator
+    product_url: https://zenodo.org/records/3459420
+    secondary_source:
+    - gnbr
+  - category: GraphProduct
+    description: Cleaned benchmark graph (PharmKG-8k) with typed relations between
+      genes, chemicals, and diseases
+    edge_count: 500958
+    id: pharmkg.graph
+    name: PharmKG graph
+    node_count: 7603
+    original_source:
+    - omim
+    - drugbank
+    - pharmgkb
+    - ttd
+    - sider
+    - humannet
+    - ncbigene
+    - mesh
+    - pubchem
+    - gnbr
+    - biogps
+    - connectivitymap
+    product_url: https://zenodo.org/record/4077338
+    secondary_source:
+    - pharmkg
+  publications:
+  - authors:
+    - Percha B
+    - Altman RB
+    doi: 10.1093/bioinformatics/bty114
+    id: doi:10.1093/bioinformatics/bty114
+    journal: Bioinformatics
+    title: A global network of biomedical relationships derived from text
+    year: '2018'
+  repository: https://github.com/jakelever/GNBR
 - activity_status: active
   category: Resource
   contacts:
@@ -13991,6 +15121,82 @@ resources:
     product_url: https://github.com/gyorilab/indra_cogex
     secondary_source:
     - indra
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+    compression: zip
+    description: Curated mechanistic drug–disease paths comprising the DrugMechDB
+      dataset packaged as a downloadable archive.
+    dump_format: other
+    format: mixed
+    id: drugmechdb.graph
+    latest_version: 2.0.1
+    name: DrugMechDB Graph Dataset
+    original_source:
+    - go
+    - cl
+    - mesh
+    - chebi
+    - drugbank
+    - interpro
+    - uberon
+    - pr
+    - ncbitaxon
+    - reactome
+    - hp
+    - uniprot
+    product_url: https://doi.org/10.5281/zenodo.8139357
+    repository: https://github.com/SuLab/DrugMechDB
+    versions:
+    - 2.0.1
+    - 2.0.0
+    - 1.0.2
+    - '1.0'
   publications:
   - authors:
     - Ashburner M
@@ -14245,6 +15451,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: ProgrammingInterface
     connection_url: http://api.geneontology.org/api/
     description: Programmatic access to GO-CAM models through the Gene Ontology API
@@ -14324,6 +15532,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     format: owl
@@ -14636,6 +15846,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
   - category: Product
     description: Complete list of ligands including drugs, small molecules, and other
       bioactive compounds
@@ -14648,6 +15860,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
   - category: Product
     description: Comprehensive dataset of all interactions between ligands and targets
     format: csv
@@ -14659,6 +15873,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
   - category: Product
     description: Detailed interactions list for approved drugs and their targets
     format: csv
@@ -14669,6 +15885,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
       header found'
   - category: Product
     description: SDF file containing chemical structures with SMILES for all ligands
@@ -14682,6 +15900,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
   - category: Product
     description: RDF/linked data format of the GtoPdb data (target-ligand interactions
       with supporting information)
@@ -14694,6 +15914,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
   - category: Product
     description: Complete PostgreSQL database dump of the current Guide to Pharmacology
       database
@@ -14704,6 +15926,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
       header found'
   - category: GraphicalInterface
     description: An extension of the Guide to PHARMACOLOGY database providing immunological
@@ -15064,6 +16288,51 @@ resources:
     product_url: https://github.com/gyorilab/indra_cogex
     secondary_source:
     - indra
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -15205,6 +16474,7 @@ resources:
   - genomics
   - health
   - biological systems
+  evaluation_page: resource/hetionet/hetionet_eval.html
   homepage_url: https://het.io/
   id: hetionet
   layout: resource_detail
@@ -15421,6 +16691,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: hgnc OBO Graph JSON
     format: json
@@ -15438,6 +16710,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: hgnc SSSOM
@@ -15517,6 +16791,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -15658,7 +16934,112 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   repository: https://github.com/HGNC
+- activity_status: active
+  category: DataSource
+  creation_date: '2025-08-12T00:00:00Z'
+  description: Stub Resource page for hmdb. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: hmdb
+  last_modified_date: '2025-08-12T00:00:00Z'
+  layout: resource_detail
+  name: Hmdb
+  products:
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataModel
   contacts:
@@ -16145,6 +17526,82 @@ resources:
     product_url: https://github.com/gyorilab/indra_cogex
     secondary_source:
     - indra
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+    compression: zip
+    description: Curated mechanistic drug–disease paths comprising the DrugMechDB
+      dataset packaged as a downloadable archive.
+    dump_format: other
+    format: mixed
+    id: drugmechdb.graph
+    latest_version: 2.0.1
+    name: DrugMechDB Graph Dataset
+    original_source:
+    - go
+    - cl
+    - mesh
+    - chebi
+    - drugbank
+    - interpro
+    - uberon
+    - pr
+    - ncbitaxon
+    - reactome
+    - hp
+    - uniprot
+    product_url: https://doi.org/10.5281/zenodo.8139357
+    repository: https://github.com/SuLab/DrugMechDB
+    versions:
+    - 2.0.1
+    - 2.0.0
+    - 1.0.2
+    - '1.0'
   repository: https://github.com/obophenotype/human-phenotype-ontology
 - activity_status: active
   category: DataSource
@@ -16245,6 +17702,51 @@ resources:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
     secondary_source:
     - bioteque
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -16402,6 +17904,7 @@ resources:
   - anatomy and development
   - biological systems
   - biomedical
+  evaluation_page: resource/hra-kg/hra-kg_eval.html
   homepage_url: https://apps.humanatlas.io/dashboard/data
   id: hra-kg
   layout: resource_detail
@@ -16770,6 +18273,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 401 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 401 error
+      when accessing file'
   - category: Product
     description: Data submission portal for registering and ingesting consortium data
     id: hubmap.data_ingest_portal
@@ -16921,6 +18426,44 @@ resources:
       single-cell data'
     year: '2024'
   repository: https://github.com/hubmapconsortium
+- activity_status: active
+  category: DataSource
+  creation_date: '2025-08-12T00:00:00Z'
+  description: Stub Resource page for humannet. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: humannet
+  last_modified_date: '2025-08-12T00:00:00Z'
+  layout: resource_detail
+  name: Humannet
+  products:
+  - category: GraphProduct
+    description: Cleaned benchmark graph (PharmKG-8k) with typed relations between
+      genes, chemicals, and diseases
+    edge_count: 500958
+    id: pharmkg.graph
+    name: PharmKG graph
+    node_count: 7603
+    original_source:
+    - omim
+    - drugbank
+    - pharmgkb
+    - ttd
+    - sider
+    - humannet
+    - ncbigene
+    - mesh
+    - pubchem
+    - gnbr
+    - biogps
+    - connectivitymap
+    product_url: https://zenodo.org/record/4077338
+    secondary_source:
+    - pharmkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -17946,6 +19489,51 @@ resources:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
     secondary_source:
     - bioteque
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -18189,6 +19777,37 @@ resources:
     product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
     secondary_source:
     - mechreponet
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+    compression: zip
+    description: Curated mechanistic drug–disease paths comprising the DrugMechDB
+      dataset packaged as a downloadable archive.
+    dump_format: other
+    format: mixed
+    id: drugmechdb.graph
+    latest_version: 2.0.1
+    name: DrugMechDB Graph Dataset
+    original_source:
+    - go
+    - cl
+    - mesh
+    - chebi
+    - drugbank
+    - interpro
+    - uberon
+    - pr
+    - ncbitaxon
+    - reactome
+    - hp
+    - uniprot
+    product_url: https://doi.org/10.5281/zenodo.8139357
+    repository: https://github.com/SuLab/DrugMechDB
+    versions:
+    - 2.0.1
+    - 2.0.0
+    - 1.0.2
+    - '1.0'
   publications:
   - authors:
     - Blum M
@@ -18702,6 +20321,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 403 error
+      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 - activity_status: active
   category: KnowledgeGraph
@@ -18798,6 +20419,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
   category: KnowledgeGraph
@@ -18886,6 +20509,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 403 error
+      when accessing file'
   - category: GraphProduct
     compression: targz
     description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
@@ -18960,6 +20585,7 @@ resources:
   description: Monarch Initiative Knowledge Graph
   domains:
   - health
+  evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://kghub.org/kg-monarch/index.html
   id: kg-monarch
   layout: resource_detail
@@ -18983,6 +20609,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: ProcessProduct
     description: This repository is a code reference for the C-Path Knowledge Graph
@@ -20129,6 +21757,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -20147,6 +21777,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -20167,6 +21799,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -20406,6 +22040,60 @@ resources:
     secondary_source:
     - alzkb
     - hetionet
+  - category: GraphProduct
+    description: Cleaned benchmark graph (PharmKG-8k) with typed relations between
+      genes, chemicals, and diseases
+    edge_count: 500958
+    id: pharmkg.graph
+    name: PharmKG graph
+    node_count: 7603
+    original_source:
+    - omim
+    - drugbank
+    - pharmgkb
+    - ttd
+    - sider
+    - humannet
+    - ncbigene
+    - mesh
+    - pubchem
+    - gnbr
+    - biogps
+    - connectivitymap
+    product_url: https://zenodo.org/record/4077338
+    secondary_source:
+    - pharmkg
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+    compression: zip
+    description: Curated mechanistic drug–disease paths comprising the DrugMechDB
+      dataset packaged as a downloadable archive.
+    dump_format: other
+    format: mixed
+    id: drugmechdb.graph
+    latest_version: 2.0.1
+    name: DrugMechDB Graph Dataset
+    original_source:
+    - go
+    - cl
+    - mesh
+    - chebi
+    - drugbank
+    - interpro
+    - uberon
+    - pr
+    - ncbitaxon
+    - reactome
+    - hp
+    - uniprot
+    product_url: https://doi.org/10.5281/zenodo.8139357
+    repository: https://github.com/SuLab/DrugMechDB
+    versions:
+    - 2.0.1
+    - 2.0.0
+    - 1.0.2
+    - '1.0'
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -20555,6 +22243,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
   - category: Product
     description: MNXref unified namespace for reactions across databases
     format: tsv
@@ -20569,6 +22259,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -20839,6 +22531,51 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -20892,6 +22629,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -20910,6 +22649,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -20930,6 +22671,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -21052,6 +22795,66 @@ resources:
     secondary_source:
     - mixs
   repository: https://github.com/GenomicsStandardsConsortium/mixs
+- activity_status: active
+  category: DataSource
+  creation_date: '2025-08-12T00:00:00Z'
+  description: Stub Resource page for mod. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: mod
+  last_modified_date: '2025-08-12T00:00:00Z'
+  layout: resource_detail
+  name: Mod
+  products:
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -22041,6 +23844,66 @@ resources:
     about this resource.
 - activity_status: active
   category: DataSource
+  creation_date: '2025-08-12T00:00:00Z'
+  description: Stub Resource page for ms. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: ms
+  last_modified_date: '2025-08-12T00:00:00Z'
+  layout: resource_detail
+  name: Ms
+  products:
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
   description: Stub Resource page for msigdb. This page was automatically generated
     because it was referenced by other resources.
   domains:
@@ -22194,6 +24057,66 @@ resources:
   id: multiomics-kp
   layout: resource_detail
   name: Multiomics KP
+- activity_status: active
+  category: DataSource
+  creation_date: '2025-08-12T00:00:00Z'
+  description: Stub Resource page for mutationds. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: mutationds
+  last_modified_date: '2025-08-12T00:00:00Z'
+  layout: resource_detail
+  name: Mutationds
+  products:
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   description: Stub Resource page for mw. This page was automatically generated because
@@ -22351,6 +24274,7 @@ resources:
   - biomedical
   - clinical
   - genomics
+  evaluation_page: resource/ncatsgardkg/ncatsgardkg_eval.html
   homepage_url: https://github.com/ncats/RD-Clust
   id: ncatsgardkg
   layout: resource_detail
@@ -22634,6 +24558,29 @@ resources:
     secondary_source:
     - alzkb
     - hetionet
+  - category: GraphProduct
+    description: Cleaned benchmark graph (PharmKG-8k) with typed relations between
+      genes, chemicals, and diseases
+    edge_count: 500958
+    id: pharmkg.graph
+    name: PharmKG graph
+    node_count: 7603
+    original_source:
+    - omim
+    - drugbank
+    - pharmgkb
+    - ttd
+    - sider
+    - humannet
+    - ncbigene
+    - mesh
+    - pubchem
+    - gnbr
+    - biogps
+    - connectivitymap
+    product_url: https://zenodo.org/record/4077338
+    secondary_source:
+    - pharmkg
   publications:
   - authors:
     - Donna Maglott
@@ -23122,6 +25069,37 @@ resources:
     product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
     secondary_source:
     - mechreponet
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+    compression: zip
+    description: Curated mechanistic drug–disease paths comprising the DrugMechDB
+      dataset packaged as a downloadable archive.
+    dump_format: other
+    format: mixed
+    id: drugmechdb.graph
+    latest_version: 2.0.1
+    name: DrugMechDB Graph Dataset
+    original_source:
+    - go
+    - cl
+    - mesh
+    - chebi
+    - drugbank
+    - interpro
+    - uberon
+    - pr
+    - ncbitaxon
+    - reactome
+    - hp
+    - uniprot
+    product_url: https://doi.org/10.5281/zenodo.8139357
+    repository: https://github.com/SuLab/DrugMechDB
+    versions:
+    - 2.0.1
+    - 2.0.0
+    - 1.0.2
+    - '1.0'
   publications:
   - authors:
     - Scott Federhen
@@ -24842,6 +26820,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: clinicaltrials OWL
     format: owl
@@ -24856,6 +26836,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: clinicaltrials OBO Graph JSON
     format: json
@@ -24869,6 +26851,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: clinicaltrials SSSOM
@@ -25281,6 +27265,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: gtdb OWL
     format: owl
@@ -25343,6 +27329,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: hgnc OBO Graph JSON
     format: json
@@ -25360,6 +27348,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: hgnc SSSOM
@@ -25540,6 +27530,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: itis OBO Graph JSON
     format: json
@@ -25553,6 +27545,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: Product
     description: kegg.genome OBO
@@ -25608,6 +27602,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: mesh OBO Graph JSON
     format: json
@@ -25621,6 +27617,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: Product
     description: mgi OBO
@@ -25636,6 +27634,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: mgi OWL
     format: owl
@@ -25650,6 +27650,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: mgi OBO Graph JSON
     format: json
@@ -25663,6 +27665,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: mgi SSSOM
@@ -25798,6 +27802,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: msigdb OWL
     format: owl
@@ -25812,6 +27818,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: msigdb OBO Graph JSON
     format: json
@@ -25825,6 +27833,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: msigdb SSSOM
@@ -25887,6 +27897,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: nihreporter.project OWL
     format: owl
@@ -25898,6 +27910,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: nihreporter.project OBO Graph JSON
     format: json
@@ -25908,6 +27922,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: Product
     description: nlm OBO
@@ -26063,6 +28079,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: pathbank OWL
     format: owl
@@ -26077,6 +28095,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: pathbank OBO Graph JSON
     format: json
@@ -26090,6 +28110,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: pathbank SSSOM
@@ -26502,6 +28524,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: reactome OBO Graph JSON
     format: json
@@ -26515,6 +28539,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: Product
     description: rgd OBO
@@ -26588,6 +28614,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: rhea OBO Graph JSON
     format: json
@@ -26605,6 +28633,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: Rhea SSSOM
@@ -26649,6 +28679,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: ror OBO Graph JSON
     format: json
@@ -26662,6 +28694,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: ror SSSOM
@@ -26747,6 +28781,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: slm OWL
     format: owl
@@ -26761,6 +28797,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: slm OBO Graph JSON
     format: json
@@ -26774,6 +28812,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: slm SSSOM
@@ -26820,6 +28860,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: uniprot OWL
     format: owl
@@ -26834,6 +28876,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: uniprot OBO Graph JSON
     format: json
@@ -26847,6 +28891,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: uniprot SSSOM
@@ -26960,6 +29006,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: zfin OBO Graph JSON
     format: json
@@ -26977,6 +29025,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: zfin SSSOM
@@ -27742,6 +29792,10 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     description: OMA orthology groups in OrthoXML format
     format: xml
@@ -27759,6 +29813,10 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     description: Hierarchical Orthologous Groups (HOGs) in OrthoXML format
     format: xml
@@ -27775,6 +29833,10 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
   - category: Product
     compression: gzip
@@ -27794,6 +29856,10 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: gzip
     description: Protein sequences from all genomes in FASTA format
@@ -27811,6 +29877,10 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
   - category: Product
     compression: gzip
@@ -27832,6 +29902,10 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     compression: gzip
     description: cDNA sequences for Prokaryotic genomes in FASTA format
@@ -27852,6 +29926,10 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: Product
     description: OMA Browser database in HDF5 format
     id: oma.hdf5
@@ -27869,6 +29947,10 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -27890,6 +29972,10 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error
+      when accessing file'
   - category: MappingProduct
     compression: gzip
     description: Mapping of OMA identifiers to UniProt accession numbers
@@ -27910,6 +29996,10 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error
       when accessing file'
 - activity_status: active
   category: DataSource
@@ -27976,6 +30066,29 @@ resources:
     - omim
     product_file_size: 954971
     product_url: https://ftp.ncbi.nih.gov/gene/DATA/mim2gene_medgen
+  - category: GraphProduct
+    description: Cleaned benchmark graph (PharmKG-8k) with typed relations between
+      genes, chemicals, and diseases
+    edge_count: 500958
+    id: pharmkg.graph
+    name: PharmKG graph
+    node_count: 7603
+    original_source:
+    - omim
+    - drugbank
+    - pharmgkb
+    - ttd
+    - sider
+    - humannet
+    - ncbigene
+    - mesh
+    - pubchem
+    - gnbr
+    - biogps
+    - connectivitymap
+    product_url: https://zenodo.org/record/4077338
+    secondary_source:
+    - pharmkg
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -28526,6 +30639,66 @@ resources:
     - v2022-04-13
     - v2022-03-09
     - v2021-04-06
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  creation_date: '2025-08-12T00:00:00Z'
+  description: Stub Resource page for oncokb. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: oncokb
+  last_modified_date: '2025-08-12T00:00:00Z'
+  layout: resource_detail
+  name: Oncokb
+  products:
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -30272,6 +32445,7 @@ resources:
   - health
   - biomedical
   - genomics
+  evaluation_page: resource/petagraph/petagraph_eval.html
   homepage_url: https://github.com/TaylorResearchLab/Petagraph
   id: petagraph
   layout: resource_detail
@@ -30422,6 +32596,51 @@ resources:
     - protcid
     secondary_source:
     - spoke
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   publications:
   - authors:
     - T. Paysan-Lafosse
@@ -31233,7 +33452,98 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/pharmgkb.variant/pharmgkb.variant.sssom.tsv
     secondary_source:
     - obo-db-ingest
+  - category: GraphProduct
+    description: Cleaned benchmark graph (PharmKG-8k) with typed relations between
+      genes, chemicals, and diseases
+    edge_count: 500958
+    id: pharmkg.graph
+    name: PharmKG graph
+    node_count: 7603
+    original_source:
+    - omim
+    - drugbank
+    - pharmgkb
+    - ttd
+    - sider
+    - humannet
+    - ncbigene
+    - mesh
+    - pubchem
+    - gnbr
+    - biogps
+    - connectivitymap
+    product_url: https://zenodo.org/record/4077338
+    secondary_source:
+    - pharmkg
   repository: https://www.pharmgkb.org/downloads
+- activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: github
+      value: MindRank-Biotech
+    - contact_type: url
+      value: https://github.com/MindRank-Biotech/PharmKG
+    label: MindRank Biotech
+  description: PharmKG is a multi-relational, attributed biomedical knowledge graph
+    benchmark that integrates curated databases and literature-derived relationships
+    to link genes, drugs (chemicals), and diseases. It contains ~500,000 typed relations
+    across ~7,600–8,000 disambiguated entities (29 relation types), with domain-specific
+    features for entities from multi-omics sources (e.g., gene expression, chemical
+    structure, disease embeddings). It provides baselines for knowledge graph embedding
+    and a neural network-based method, and supports downstream tasks such as drug
+    repurposing and target identification.
+  domains:
+  - biomedical
+  - drug discovery
+  - pharmacology
+  - health
+  evaluation_page: resource/pharmkg/pharmkg_eval.html
+  homepage_url: https://github.com/MindRank-Biotech/PharmKG
+  id: pharmkg
+  layout: resource_detail
+  name: PharmKG
+  products:
+  - category: GraphProduct
+    description: Cleaned benchmark graph (PharmKG-8k) with typed relations between
+      genes, chemicals, and diseases
+    edge_count: 500958
+    id: pharmkg.graph
+    name: PharmKG graph
+    node_count: 7603
+    original_source:
+    - omim
+    - drugbank
+    - pharmgkb
+    - ttd
+    - sider
+    - humannet
+    - ncbigene
+    - mesh
+    - pubchem
+    - gnbr
+    - biogps
+    - connectivitymap
+    product_url: https://zenodo.org/record/4077338
+    secondary_source:
+    - pharmkg
+  publications:
+  - authors:
+    - Shuangjia Zheng
+    - Jiahua Rao
+    - Ying Song
+    - Jixian Zhang
+    - Xianglu Xiao
+    - Evandro Fei Fang
+    - Yuedong Yang
+    - Zhangming Niu
+    doi: 10.1093/bib/bbaa344
+    id: doi:10.1093/bib/bbaa344
+    journal: Briefings in Bioinformatics
+    title: 'PharmKG: a dedicated knowledge graph benchmark for biomedical data mining'
+    year: '2021'
+  repository: https://github.com/MindRank-Biotech/PharmKG
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -31329,6 +33639,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compatibility:
     - standard: biolink
@@ -31401,6 +33713,66 @@ resources:
     product_url: https://www.disgenet.com/
     secondary_source:
     - disgenet
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
+  category: DataSource
+  creation_date: '2025-08-12T00:00:00Z'
+  description: Stub Resource page for phosphositeplus. This page was automatically
+    generated because it was referenced by other resources.
+  domains:
+  - stub
+  id: phosphositeplus
+  last_modified_date: '2025-08-12T00:00:00Z'
+  layout: resource_detail
+  name: Phosphositeplus
+  products:
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -31783,6 +34155,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
   - category: Product
     description: Tab-delimited file of systematic ID, primary gene name (where assigned),
       chromosome, product description, UniProtKB accession, all synonyms, and product
@@ -31803,6 +34177,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
       header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
@@ -31961,6 +34337,37 @@ resources:
     product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
     secondary_source:
     - mechreponet
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+    compression: zip
+    description: Curated mechanistic drug–disease paths comprising the DrugMechDB
+      dataset packaged as a downloadable archive.
+    dump_format: other
+    format: mixed
+    id: drugmechdb.graph
+    latest_version: 2.0.1
+    name: DrugMechDB Graph Dataset
+    original_source:
+    - go
+    - cl
+    - mesh
+    - chebi
+    - drugbank
+    - interpro
+    - uberon
+    - pr
+    - ncbitaxon
+    - reactome
+    - hp
+    - uniprot
+    product_url: https://doi.org/10.5281/zenodo.8139357
+    repository: https://github.com/SuLab/DrugMechDB
+    versions:
+    - 2.0.1
+    - 2.0.0
+    - 1.0.2
+    - '1.0'
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -31983,6 +34390,7 @@ resources:
   - biomedical
   - pathways
   - systems biology
+  evaluation_page: resource/primekg/primekg_eval.html
   homepage_url: https://zitniklab.hms.harvard.edu/projects/PrimeKG
   id: primekg
   layout: resource_detail
@@ -32004,6 +34412,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 403 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 403 error
       when accessing file'
   repository: https://github.com/mims-harvard/PrimeKG
 - activity_status: active
@@ -32412,6 +34822,29 @@ resources:
     secondary_source:
     - alzkb
     - hetionet
+  - category: GraphProduct
+    description: Cleaned benchmark graph (PharmKG-8k) with typed relations between
+      genes, chemicals, and diseases
+    edge_count: 500958
+    id: pharmkg.graph
+    name: PharmKG graph
+    node_count: 7603
+    original_source:
+    - omim
+    - drugbank
+    - pharmgkb
+    - ttd
+    - sider
+    - humannet
+    - ncbigene
+    - mesh
+    - pubchem
+    - gnbr
+    - biogps
+    - connectivitymap
+    product_url: https://zenodo.org/record/4077338
+    secondary_source:
+    - pharmkg
   publications:
   - authors:
     - Kim S
@@ -32547,6 +34980,16 @@ resources:
     product_url: https://www.ncbi.nlm.nih.gov/research/pubtator3/
     secondary_source:
     - pubtator
+  - category: GraphProduct
+    description: Text-mined biomedical knowledge graph of gene–disease–drug relationships
+      (semantic themes)
+    id: gnbr.graph
+    name: GNBR graph
+    original_source:
+    - pubtator
+    product_url: https://zenodo.org/records/3459420
+    secondary_source:
+    - gnbr
   publications:
   - authors:
     - Wei CH
@@ -33045,6 +35488,82 @@ resources:
     product_url: https://github.com/gyorilab/indra_cogex
     secondary_source:
     - indra
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+    compression: zip
+    description: Curated mechanistic drug–disease paths comprising the DrugMechDB
+      dataset packaged as a downloadable archive.
+    dump_format: other
+    format: mixed
+    id: drugmechdb.graph
+    latest_version: 2.0.1
+    name: DrugMechDB Graph Dataset
+    original_source:
+    - go
+    - cl
+    - mesh
+    - chebi
+    - drugbank
+    - interpro
+    - uberon
+    - pr
+    - ncbitaxon
+    - reactome
+    - hp
+    - uniprot
+    product_url: https://doi.org/10.5281/zenodo.8139357
+    repository: https://github.com/SuLab/DrugMechDB
+    versions:
+    - 2.0.1
+    - 2.0.0
+    - 1.0.2
+    - '1.0'
   repository: ''
 - activity_status: active
   category: DataSource
@@ -33096,6 +35615,51 @@ resources:
     - ncbigene
     product_file_size: 2027684801
     product_url: https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2refseq.gz
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   publications:
   - doi: 10.1093/nar/gkv1189
     id: doi:10.1093/nar/gkv1189
@@ -33152,6 +35716,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: GraphicalInterface
     description: Interactive web interface for exploring RepoDB data with drug-centric  and
       disease-centric search capabilities
@@ -33357,6 +35923,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: rhea OBO Graph JSON
     format: json
@@ -33374,6 +35942,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: Rhea SSSOM
@@ -33723,6 +36293,7 @@ resources:
     queries over a large-scale integrated knowledge graph.
   domains:
   - health
+  evaluation_page: resource/robokop/robokop_eval.html
   homepage_url: http://robokop.renci.org
   id: robokop
   layout: resource_detail
@@ -33757,6 +36328,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Robokop Plus
     format: kgx-jsonl
@@ -33771,6 +36344,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   repository: https://github.com/NCATS-Gamma/robokop
 - activity_status: active
@@ -33796,6 +36371,7 @@ resources:
   - biological systems
   - genomics
   - pharmacology
+  evaluation_page: resource/rtx-kg2/rtx-kg2_eval.html
   homepage_url: https://github.com/RTXteam/RTX-KG2
   id: rtx-kg2
   layout: resource_detail
@@ -34094,6 +36670,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
 - activity_status: active
   category: DataSource
@@ -34477,6 +37055,66 @@ resources:
     title: 'SIB Literature Services: RESTful customizable search engines in biomedical
       literature, enriched with automatically mapped biomedical concepts'
     year: '2020'
+- activity_status: active
+  category: DataSource
+  creation_date: '2025-08-12T00:00:00Z'
+  description: Stub Resource page for signor. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: signor
+  last_modified_date: '2025-08-12T00:00:00Z'
+  layout: resource_detail
+  name: Signor
+  products:
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -34864,6 +37502,66 @@ resources:
   name: sldb
   repository: https://github.com/monarch-initiative/SLDBGen
 - activity_status: active
+  category: DataSource
+  creation_date: '2025-08-12T00:00:00Z'
+  description: Stub Resource page for smpdb. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: smpdb
+  last_modified_date: '2025-08-12T00:00:00Z'
+  layout: resource_detail
+  name: Smpdb
+  products:
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
+- activity_status: active
   category: DataModel
   contacts:
   - category: Organization
@@ -35066,6 +37764,51 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   repository: https://browser.ihtsdotools.org/
 - activity_status: active
   category: DataModel
@@ -35284,6 +38027,7 @@ resources:
   - drug discovery
   - precision medicine
   - pharmacology
+  evaluation_page: resource/spoke/spoke_eval.html
   homepage_url: https://spoke.ucsf.edu/
   id: spoke
   layout: resource_detail
@@ -35458,6 +38202,9 @@ resources:
     id: stellar.datasets
     name: STELLAR Datasets
     product_url: https://datadryad.org/stash/share/1OQtxew0Unh3iAdP-ELew-ctwuPTBz6Oy8uuyxqliZk
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+      to URL'
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
       UBKG instances as neo4j graph databases, running in a Docker container. Requires
@@ -35600,6 +38347,66 @@ resources:
     title: Annotation of spatially resolved single-cell data with STELLAR
     year: '2022'
   repository: https://github.com/snap-stanford/stellar
+- activity_status: active
+  category: DataSource
+  creation_date: '2025-08-12T00:00:00Z'
+  description: Stub Resource page for stitch. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: stitch
+  last_modified_date: '2025-08-12T00:00:00Z'
+  layout: resource_detail
+  name: Stitch
+  products:
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -35875,6 +38682,51 @@ resources:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
     secondary_source:
     - bioteque
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   publications:
   - authors:
     - Szklarczyk D
@@ -35959,6 +38811,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   repository: ''
 - activity_status: active
@@ -36078,6 +38932,51 @@ resources:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
     secondary_source:
     - bioteque
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -36371,6 +39270,44 @@ resources:
     type: actual
     url: http://planteome.org/
   version: v2023-07-17
+- activity_status: active
+  category: DataSource
+  creation_date: '2025-08-12T00:00:00Z'
+  description: Stub Resource page for ttd. This page was automatically generated because
+    it was referenced by other resources.
+  domains:
+  - stub
+  id: ttd
+  last_modified_date: '2025-08-12T00:00:00Z'
+  layout: resource_detail
+  name: Ttd
+  products:
+  - category: GraphProduct
+    description: Cleaned benchmark graph (PharmKG-8k) with typed relations between
+      genes, chemicals, and diseases
+    edge_count: 500958
+    id: pharmkg.graph
+    name: PharmKG graph
+    node_count: 7603
+    original_source:
+    - omim
+    - drugbank
+    - pharmgkb
+    - ttd
+    - sider
+    - humannet
+    - ncbigene
+    - mesh
+    - pubchem
+    - gnbr
+    - biogps
+    - connectivitymap
+    product_url: https://zenodo.org/record/4077338
+    secondary_source:
+    - pharmkg
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -37043,6 +39980,37 @@ resources:
     product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
     secondary_source:
     - mechreponet
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+    compression: zip
+    description: Curated mechanistic drug–disease paths comprising the DrugMechDB
+      dataset packaged as a downloadable archive.
+    dump_format: other
+    format: mixed
+    id: drugmechdb.graph
+    latest_version: 2.0.1
+    name: DrugMechDB Graph Dataset
+    original_source:
+    - go
+    - cl
+    - mesh
+    - chebi
+    - drugbank
+    - interpro
+    - uberon
+    - pr
+    - ncbitaxon
+    - reactome
+    - hp
+    - uniprot
+    product_url: https://doi.org/10.5281/zenodo.8139357
+    repository: https://github.com/SuLab/DrugMechDB
+    versions:
+    - 2.0.1
+    - 2.0.0
+    - 1.0.2
+    - '1.0'
   repository: https://github.com/obophenotype/uberon
 - activity_status: active
   category: KnowledgeGraph
@@ -37236,6 +40204,27 @@ resources:
     label: UBKG is part of Petagraph
     type: actual
     url: https://doi.org/10.1038/s41597-024-04070-w
+- activity_status: active
+  category: KnowledgeGraph
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://ufokn.com/
+    - contact_type: github
+      value: UFOKN
+    label: UF Open Knowledge Network (UF-OKN)
+  description: The Urban Flooding Open Knowledge Network (UF-OKN) is an informational
+    infrastructure built with knowledge graphs to connect urban infrastructure with
+    hydrologic forecasts, delivering actionable, real-time and historical flood-risk
+    information as Linked Data for exploration and app development.
+  domains:
+  - environment
+  homepage_url: https://ufokn.com/
+  id: uf-okn
+  layout: resource_detail
+  name: UF-OKN
+  repository: https://github.com/UFOKN/Knowledge-Graph
 - activity_status: active
   category: DataSource
   description: UK Biobank is a large-scale biomedical database and research resource
@@ -37481,6 +40470,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+      header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
       protein-coding gene mapped to the corresponding UniProt accession number
@@ -37529,6 +40520,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -37818,6 +40811,82 @@ resources:
     - uniprot
     product_file_size: 1182285769
     product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_refseq_uniprotkb_collab.gz
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+  - category: GraphProduct
+    compatibility:
+    - standard: biolink
+    compression: zip
+    description: Curated mechanistic drug–disease paths comprising the DrugMechDB
+      dataset packaged as a downloadable archive.
+    dump_format: other
+    format: mixed
+    id: drugmechdb.graph
+    latest_version: 2.0.1
+    name: DrugMechDB Graph Dataset
+    original_source:
+    - go
+    - cl
+    - mesh
+    - chebi
+    - drugbank
+    - interpro
+    - uberon
+    - pr
+    - ncbitaxon
+    - reactome
+    - hp
+    - uniprot
+    product_url: https://doi.org/10.5281/zenodo.8139357
+    repository: https://github.com/SuLab/DrugMechDB
+    versions:
+    - 2.0.1
+    - 2.0.0
+    - 1.0.2
+    - '1.0'
   repository: https://www.uniprot.org/help/downloads
 - activity_status: active
   category: DataModel
@@ -37875,6 +40944,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: Browse UO with Ontology Lookup Service (OLS)
@@ -38133,6 +41204,51 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   publications:
   - authors:
     - Georgios V Gkoutos
@@ -38773,6 +41889,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+      when accessing file'
   - category: Product
     description: zfin OBO Graph JSON
     id: obo-db-ingest.zfin.json
@@ -38789,6 +41907,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: zfin SSSOM
@@ -39004,6 +42124,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 403 error
+      when accessing file'
   - category: Product
     description: CSV file containing citation information for all PubMed articles
       in SemMedDB
@@ -39015,6 +42137,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 403 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing entity information with UMLS concept identifiers,
@@ -39028,6 +42152,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 403 error
+      when accessing file'
   - category: Product
     description: CSV file containing semantic predications with subject-predicate-object
       triples and associated metadata
@@ -39040,6 +42166,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 403 error
+      when accessing file'
   - category: Product
     description: CSV file containing sentence information from PubMed citations
     format: csv
@@ -39050,6 +42178,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 403 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 403 error
       when accessing file'
   - category: ProcessProduct
     description: The SemRep natural language processing system that extracts semantic
@@ -39460,6 +42590,74 @@ resources:
     product_url: https://github.com/gyorilab/indra_cogex
     secondary_source:
     - indra
+  - category: GraphProduct
+    description: Cleaned benchmark graph (PharmKG-8k) with typed relations between
+      genes, chemicals, and diseases
+    edge_count: 500958
+    id: pharmkg.graph
+    name: PharmKG graph
+    node_count: 7603
+    original_source:
+    - omim
+    - drugbank
+    - pharmgkb
+    - ttd
+    - sider
+    - humannet
+    - ncbigene
+    - mesh
+    - pubchem
+    - gnbr
+    - biogps
+    - connectivitymap
+    product_url: https://zenodo.org/record/4077338
+    secondary_source:
+    - pharmkg
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   publications:
   - authors:
     - Kuhn M

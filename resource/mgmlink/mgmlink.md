@@ -33,8 +33,7 @@ publications:
   - Lozupone C
   doi: 10.1038/s41598-025-91230-6
   id: doi:10.1038/s41598-025-91230-6
-  title: '''Hypothesizing mechanistic links between microbes and disease using knowledge
-    graphs'''
+  title: '''Hypothesizing mechanistic links between microbes and disease using knowledge graphs'''
   year: '2025'
 ---
 MGMLink

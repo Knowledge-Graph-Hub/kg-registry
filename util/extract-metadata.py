@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import csv
 import sys
 import pathlib
 import datetime
@@ -606,6 +607,263 @@ def concat_resource_yaml(args):
                 if total_written > 0:
                     print(f" Wrote {str(total_written)} product(s) to {obj['id']} entry")
 
+    def create_evaluation_pages(objs):
+        """
+        Read evals/evals.tsv and, for each resource ID in the first column, create an
+                evaluation markdown page at resource/<id>/<id>_eval.md with layout eval_detail.
+                Expected format:
+                    - Row 1: grouping categories for questions (columns 2..N)
+                    - Row 2: individual question headers (columns 2..N)
+                    - Rows 3..: data rows where column 1 is the resource ID and columns 2..N are answers
+
+                Behavior:
+                    - Group questions by their category and render a separate table per category
+                    - Color cells with answers that begin with 'Y'/'Yes' green and 'N'/'No' red
+                    - Annotate the in-memory resource object with an 'evaluation_page' field
+                    - Insert a small markdown link to the evaluation page into the resource markdown if missing
+        """
+        evals_path = ROOT / 'evals' / 'evals.tsv'
+        if not evals_path.exists():
+            print("No evals/evals.tsv found; skipping evaluation page generation")
+            return
+
+        # Build a quick index of resources by id
+        resources_by_id = {obj.get('id'): obj for obj in objs if obj.get('id')}
+
+        created = 0
+        updated_links = 0
+        with open(evals_path, 'r', newline='', encoding='utf-8') as f:
+            reader = csv.reader(f, delimiter='\t')
+            rows = list(reader)
+            if not rows:
+                print("evals.tsv is empty; nothing to do")
+                return
+            if len(rows) == 1:
+                print("evals.tsv has only one row; need at least two header rows and one data row")
+                return
+
+            group_headers = rows[0]
+            question_headers = rows[1]
+
+            # Load human-readable question titles mapping from eval_descriptions.tsv (if present)
+            descriptions = {}
+            desc_path = ROOT / 'evals' / 'eval_descriptions.tsv'
+            if desc_path.exists():
+                try:
+                    with open(desc_path, 'r', newline='', encoding='utf-8') as df:
+                        d_reader = csv.reader(df, delimiter='\t')
+                        for d_row in d_reader:
+                            if not d_row or len(d_row) < 2:
+                                continue
+                            k = (d_row[0] or '').strip()
+                            v = (d_row[1] or '').strip()
+                            if not k or not v:
+                                continue
+                            # Skip header-like rows
+                            kl = k.lower()
+                            vl = v.lower()
+                            if kl in ('id', 'key', 'question', 'field') and vl in ('description', 'label', 'title'):
+                                continue
+                            descriptions[k] = v
+                except Exception as e:
+                    print(f"WARN: could not read eval_descriptions.tsv: {e}")
+
+            def humanize_identifier(s: str) -> str:
+                t = (s or '').strip()
+                if not t:
+                    return ''
+                t = t.replace('_', ' ')
+                t = t.title()
+                # Fix common acronyms
+                t = t.replace('Kg', 'KG').replace('Api', 'API').replace('Id', 'ID').replace('Ids', 'IDs')
+                return t
+
+            def display_title(key: str) -> str:
+                return descriptions.get(key, humanize_identifier(key))
+
+            # Forward-fill empty group headers so blanks inherit the previous non-empty category
+            filled_group_headers = list(group_headers)
+            last = ''
+            for i in range(len(filled_group_headers)):
+                current = (filled_group_headers[i] or '').strip()
+                if current:
+                    last = current
+                else:
+                    filled_group_headers[i] = last
+
+            # Helper to compute style for a given answer value
+            def style_for_value(val: str) -> str:
+                v = (val or '').strip().lower()
+                if v.startswith('y') or v.startswith('yes'):
+                    return 'background-color:#d4edda;'
+                if v.startswith('n') or v.startswith('no'):
+                    return 'background-color:#f8d7da;'
+                return ''
+
+            # Helper to escape HTML and linkify URLs
+            def linkify_and_escape(s: str) -> str:
+                import re
+                import html
+                if not s:
+                    return ''
+                pattern = re.compile(r'(https?://[^\s<>\"]+)')
+                parts = []
+                last = 0
+                for m in pattern.finditer(s):
+                    parts.append(html.escape(s[last:m.start()]))
+                    url = m.group(1)
+                    url_esc = html.escape(url)
+                    parts.append(f'<a href="{url_esc}">{url_esc}</a>')
+                    last = m.end()
+                parts.append(html.escape(s[last:]))
+                return ''.join(parts)
+
+            # Clean comment: drop leading boolean marker and surrounding parentheses
+            def clean_comment(c: str) -> str:
+                import re
+                if not c:
+                    return ''
+                txt = c.strip()
+                # Remove leading boolean answer tokens (Y/N/Yes/No) with optional punctuation and spaces
+                txt = re.sub(r'^\s*(yes|y|no|n)\b[\s:;\-–—]*', '', txt, flags=re.IGNORECASE)
+                txt = txt.strip()
+                # If wrapped in a single pair of parentheses, remove them
+                if len(txt) >= 2 and txt[0] == '(' and txt[-1] == ')':
+                    txt = txt[1:-1].strip()
+                return txt
+
+            # Ensure first column is ID; iterate over data rows
+            for row in rows[2:]:
+                if not row or len(row) == 0:
+                    continue
+                rid = (row[0] or '').strip()
+                if not rid:
+                    continue
+                # Only proceed if this resource exists
+                res_dir = ROOT / 'resource' / rid
+                res_file = res_dir / f"{rid}.md"
+                if not res_file.exists():
+                    print(f"WARN: evaluation provided for '{rid}' but no resource page found; skipping")
+                    continue
+
+                # Group questions by category, collapsing paired *_text comment columns with their boolean
+                from collections import OrderedDict
+                grouped = OrderedDict()  # cat -> OrderedDict[base_question] -> {question, answer, comment}
+                col_limit = min(len(filled_group_headers), len(question_headers), len(row))
+                # Optional per-row metadata
+                evaluator_val = ''
+                evaluation_date_val = ''
+                for i in range(1, col_limit):  # skip ID column
+                    cat = (filled_group_headers[i] or '').strip()
+                    q = (question_headers[i] or '').strip()
+                    v = (row[i] or '').strip()
+                    if not q and not v:
+                        continue
+                    # Special-case metadata fields that should not appear in grouped tables
+                    q_norm = (q or '').strip().lower()
+                    if q_norm == 'evaluator':
+                        evaluator_val = v
+                        continue
+                    if q_norm in ('evaluation_date', 'evaluation date', 'date'):
+                        evaluation_date_val = v
+                        continue
+                    # Determine base question id and if this is a comment column
+                    is_comment = False
+                    base_q = q
+                    if q.endswith('_text'):
+                        is_comment = True
+                        base_q = q[:-5]
+
+                    if cat not in grouped:
+                        grouped[cat] = OrderedDict()
+                    if base_q not in grouped[cat]:
+                        grouped[cat][base_q] = {
+                            'question': base_q,
+                            'answer': '',
+                            'comment': ''
+                        }
+                    if is_comment:
+                        grouped[cat][base_q]['comment'] = v
+                    else:
+                        grouped[cat][base_q]['answer'] = v
+
+                # Default evaluation date to today if not supplied
+                if not evaluation_date_val:
+                    evaluation_date_val = datetime.date.today().isoformat()
+                if not evaluator_val:
+                    evaluator_val = 'Not specified'
+
+                # Build HTML content (layout will render title and metadata)
+                html_lines = []
+                for cat, qmap in grouped.items():
+                    if cat:
+                        html_lines.append(f"## {cat}")
+                    html_lines.append("<div class=\"table-responsive\">")
+                    html_lines.append("<table class=\"table table-striped\">")
+                    html_lines.append("<thead><tr><th>Question</th><th>Answer</th><th>Comment</th></tr></thead><tbody>")
+                    yes_count = 0
+                    answered_count = 0
+                    for base_q, entry in qmap.items():
+                        q_val = display_title(entry.get('question', ''))
+                        a_val = entry.get('answer', '')
+                        c_val = clean_comment(entry.get('comment', ''))
+                        # Escape and linkify
+                        q_esc = linkify_and_escape(q_val or '')
+                        a_esc = linkify_and_escape(a_val or '')
+                        c_esc = linkify_and_escape(c_val or '')
+                        style = style_for_value(a_val)
+                        style_attr = f" style=\"{style}\"" if style else ""
+                        v_norm = (a_val or '').strip().lower()
+                        if v_norm:
+                            answered_count += 1
+                            if v_norm.startswith('y') or v_norm.startswith('yes'):
+                                yes_count += 1
+                        html_lines.append(f"<tr><td>{q_esc}</td><td{style_attr}>{a_esc}</td><td>{c_esc}</td></tr>")
+                    html_lines.append("</tbody></table></div>")
+                    # Section score (skip for License Information)
+                    if (cat or '').strip().lower() != 'license information':
+                        html_lines.append(f"<p><strong>Section Score:</strong> {yes_count}/{answered_count}</p>")
+                    html_lines.append("")
+                content = "\n".join(html_lines) + "\n"
+
+                # Write the evaluation page
+                eval_md_path = res_dir / f"{rid}_eval.md"
+                with open(eval_md_path, 'w', encoding='utf-8') as ef:
+                    # Include evaluator and evaluation_date in front matter for downstream use
+                    fm = {
+                        'layout': 'eval_detail',
+                        'evaluator': evaluator_val or None,
+                        'evaluation_date': evaluation_date_val,
+                    }
+                    # Remove None fields to keep front matter clean
+                    fm = {k: v for k, v in fm.items() if v is not None}
+                    ef.write("---\n")
+                    yaml.dump(fm, ef)
+                    ef.write("---\n\n")
+                    ef.write(content)
+                created += 1
+
+                # Annotate the in-memory object so the table can render an icon/link
+                if rid in resources_by_id:
+                    resources_by_id[rid]['evaluation_page'] = f"resource/{rid}/{rid}_eval.html"
+
+                # Insert a link into the resource markdown content if missing
+                try:
+                    (metadata, md) = load_md(res_file)
+                    link_snippet = f"[{rid} evaluation]({rid}_eval.html)"
+                    if link_snippet not in md:
+                        md_update = md.rstrip() + "\n\n## Evaluation\n\n- View the evaluation: " + link_snippet + "\n"
+                        with open(res_file, 'w', encoding='utf-8') as rf:
+                            rf.write("---\n")
+                            yaml.dump(metadata, rf)
+                            rf.write("---\n")
+                            rf.write(md_update)
+                        updated_links += 1
+                except Exception as e:
+                    print(f"WARN: could not update resource page for {rid} with evaluation link: {e}")
+
+        print(f"Created {created} evaluation page(s); updated {updated_links} resource page link(s)")
+
     objs = []
     foundry = []
     library = []
@@ -638,6 +896,9 @@ def concat_resource_yaml(args):
 
     # Update domains of existing stub resources
     update_stub_domains(objs)
+
+    # Generate evaluation pages from evals/evals.tsv and annotate resources
+    create_evaluation_pages(objs)
 
     with open(args.output, "w") as f:
         f.write(yaml.dump(cfg))

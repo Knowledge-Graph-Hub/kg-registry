@@ -40,6 +40,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 403 error
+    when accessing file'
 - category: Product
   description: CSV file containing citation information for all PubMed articles in
     SemMedDB
@@ -51,6 +53,8 @@ products:
   - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 403 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 403 error
     when accessing file'
 - category: Product
   description: CSV file containing entity information with UMLS concept identifiers,
@@ -64,6 +68,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 403 error
+    when accessing file'
 - category: Product
   description: CSV file containing semantic predications with subject-predicate-object
     triples and associated metadata
@@ -76,6 +82,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 403 error
+    when accessing file'
 - category: Product
   description: CSV file containing sentence information from PubMed citations
   format: csv
@@ -86,6 +94,8 @@ products:
   - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 403 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 403 error
     when accessing file'
 - category: ProcessProduct
   description: The SemRep natural language processing system that extracts semantic

@@ -30,5 +30,10 @@ warnings:
   retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
   ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
   issuer certificate (_ssl.c:1017)'')))'
+- 'File was not able to be retrieved when checked on 2025-08-12: Error connecting
+  to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
+  retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
+  ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+  issuer certificate (_ssl.c:1000)'')))'
 layout: product_detail
 ---
