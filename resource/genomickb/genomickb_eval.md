@@ -1,8 +1,8 @@
 ---
+evaluation_date: '2025-08-12'
+evaluator: Not specified
 layout: eval_detail
 ---
-
-# Evaluation for genomickb
 
 ## Access Level and Types
 <div class="table-responsive">
@@ -14,11 +14,12 @@ layout: eval_detail
 <tr><td>api_or_online_access</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>multi_access_options_text</td><td style="background-color:#d4edda;">Y, can use online query tool or download Neo4j dump</td></tr>
 <tr><td>multi_access_options</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>sourcecode_available_text</td><td style="background-color:#d4edda;">Y, https://github.com/tinalee-tech/KG-dataloader</td></tr>
+<tr><td>sourcecode_available_text</td><td style="background-color:#d4edda;">Y, <a href="https://github.com/tinalee-tech/KG-dataloader">https://github.com/tinalee-tech/KG-dataloader</a></td></tr>
 <tr><td>sourcecode_available</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>downloadable_KG_text</td><td style="background-color:#d4edda;">Y, Neo4j dump</td></tr>
 <tr><td>downloadable_KG</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 9/10</p>
 
 ## Provenance of Nodes and Edges
 <div class="table-responsive">
@@ -39,12 +40,13 @@ layout: eval_detail
 <tr><td>edge_type_schema_text</td><td style="background-color:#d4edda;">Y, table 2</td></tr>
 <tr><td>edge_type_schema</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 9/14</p>
 
 ## Documented standards, schema, construction
 <div class="table-responsive">
 <table class="table table-striped">
 <thead><tr><th>Question</th><th>Answer</th></tr></thead><tbody>
-<tr><td>bio_usable_data_text</td><td style="background-color:#d4edda;">Y, they have a web interface (https://gkb.dcmb.med.umich.edu/) presenting the entities and edges in a human-readable format. It can be used to answer genomics-related questions and conduct biological analysis</td></tr>
+<tr><td>bio_usable_data_text</td><td style="background-color:#d4edda;">Y, they have a web interface (<a href="https://gkb.dcmb.med.umich.edu/)">https://gkb.dcmb.med.umich.edu/)</a> presenting the entities and edges in a human-readable format. It can be used to answer genomics-related questions and conduct biological analysis</td></tr>
 <tr><td>bio_usable_data</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>resolvable_ids_text</td><td style="background-color:#d4edda;">Y, uses one external ID when possible and defines globaly unique IDs for entities without such as ChIP-seq peaks</td></tr>
 <tr><td>resolvable_ids</td><td style="background-color:#d4edda;">Y</td></tr>
@@ -55,6 +57,7 @@ layout: eval_detail
 <tr><td>schema_used_text</td><td>Uses custom schema not an existing one but does provide documentation</td></tr>
 <tr><td>schema_used</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 9/10</p>
 
 ## Update frequency and versioning
 <div class="table-responsive">
@@ -71,6 +74,7 @@ layout: eval_detail
 <tr><td>prior_versions_access_text</td><td>Clearly documented chages with dates but prior versions not available. *Paper states that they store all versions internally and can revert if unexpected changes are ever made to their graph but these are not accessible publicaly</td></tr>
 <tr><td>prior_versions_access</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 6/10</p>
 
 ## Evaluation - Metrics and Fitness for Purpose
 <div class="table-responsive">
@@ -84,9 +88,10 @@ layout: eval_detail
 <tr><td>defined_scope</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>multi_eval_methods_text</td><td style="background-color:#f8d7da;">N</td></tr>
 <tr><td>multi_eval_methods</td><td style="background-color:#f8d7da;">N</td></tr>
-<tr><td>accuracy_metrics_text</td><td>Kind of but not explicitly. Since this tool is all about data querying, confidence could be assesed by creating multiple queries like the example of using eQTLs to "validate" EnhancerAtlas relationships</td></tr>
+<tr><td>accuracy_metrics_text</td><td>Kind of but not explicitly. Since this tool is all about data querying, confidence could be assesed by creating multiple queries like the example of using eQTLs to &quot;validate&quot; EnhancerAtlas relationships</td></tr>
 <tr><td>accuracy_metrics</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 3/10</p>
 
 ## License Information
 <div class="table-responsive">

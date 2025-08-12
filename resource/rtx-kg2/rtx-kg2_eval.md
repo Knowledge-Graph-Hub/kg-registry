@@ -1,24 +1,25 @@
 ---
+evaluation_date: '2025-08-12'
+evaluator: Not specified
 layout: eval_detail
 ---
-
-# Evaluation for rtx-kg2
 
 ## Access Level and Types
 <div class="table-responsive">
 <table class="table table-striped">
 <thead><tr><th>Question</th><th>Answer</th></tr></thead><tbody>
-<tr><td>access_otherthanKG_text</td><td style="background-color:#d4edda;">Yes, RTX-KG2 is able to provide various biomedical information through queries. It is also used as backend to support ARAX's path reasoning and path ranking (https://github.com/RTXteam/RTX) .</td></tr>
+<tr><td>access_otherthanKG_text</td><td style="background-color:#d4edda;">Yes, RTX-KG2 is able to provide various biomedical information through queries. It is also used as backend to support ARAX&#x27;s path reasoning and path ranking (<a href="https://github.com/RTXteam/RTX)">https://github.com/RTXteam/RTX)</a> .</td></tr>
 <tr><td>access_otherthanKG</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>api_or_online_access_text</td><td style="background-color:#d4edda;">Yes, can access by API query, and Neo4j.</td></tr>
 <tr><td>api_or_online_access</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>multi_access_options_text</td><td style="background-color:#d4edda;">Yes, multiple ways to access including downloadable versions, API (SmartAPI), web browser user interface (seems not currently working).</td></tr>
 <tr><td>multi_access_options</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>sourcecode_available_text</td><td style="background-color:#d4edda;">Yes, Github (https://github.com/RTXteam/RTX-KG2)</td></tr>
+<tr><td>sourcecode_available_text</td><td style="background-color:#d4edda;">Yes, Github (<a href="https://github.com/RTXteam/RTX-KG2)">https://github.com/RTXteam/RTX-KG2)</a></td></tr>
 <tr><td>sourcecode_available</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>downloadable_KG_text</td><td style="background-color:#d4edda;">Yes, downloadable versions are available on Github</td></tr>
 <tr><td>downloadable_KG</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 10/10</p>
 
 ## Provenance of Nodes and Edges
 <div class="table-responsive">
@@ -26,11 +27,11 @@ layout: eval_detail
 <thead><tr><th>Question</th><th>Answer</th></tr></thead><tbody>
 <tr><td>source_list_provided_text</td><td style="background-color:#d4edda;">Yes, 70 sources Table 1 (UMLS, SemMedDB, ChEMBL, DrugBank, Reactome, SMPDB, and 64 additional knowledge sources).</td></tr>
 <tr><td>source_list_provided</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>source_versions_info_text</td><td style="background-color:#d4edda;">Yes, it documents the versions of the upstream sources used (https://github.com/RTXteam/RTX-KG2/blob/master/docs/kg2-versions.md).</td></tr>
+<tr><td>source_versions_info_text</td><td style="background-color:#d4edda;">Yes, it documents the versions of the upstream sources used (<a href="https://github.com/RTXteam/RTX-KG2/blob/master/docs/kg2-versions.md).">https://github.com/RTXteam/RTX-KG2/blob/master/docs/kg2-versions.md).</a></td></tr>
 <tr><td>source_versions_info</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>import_dependancies_text</td><td style="background-color:#d4edda;">Yes, in the requirements file.</td></tr>
 <tr><td>import_dependancies</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>node_edge_sources_text</td><td style="background-color:#d4edda;">Yes, node's ID contains source information and edge contains primary knowledge source.</td></tr>
+<tr><td>node_edge_sources_text</td><td style="background-color:#d4edda;">Yes, node&#x27;s ID contains source information and edge contains primary knowledge source.</td></tr>
 <tr><td>node_edge_sources</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>edges_deduplication_text</td><td style="background-color:#d4edda;">Yes, it provides a pre-canonicalized graph version (RTX-KG2pre, with semantically duplicated concepts) and a canonicalized version (RTX-KG2c, withthout semantically duplicated concepts)</td></tr>
 <tr><td>edges_deduplication</td><td style="background-color:#d4edda;">Y</td></tr>
@@ -39,6 +40,7 @@ layout: eval_detail
 <tr><td>edge_type_schema_text</td><td style="background-color:#d4edda;">Yes, it uses Biolink Model for as the schema standard for both nodes and edges.</td></tr>
 <tr><td>edge_type_schema</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 14/14</p>
 
 ## Documented standards, schema, construction
 <div class="table-responsive">
@@ -55,6 +57,7 @@ layout: eval_detail
 <tr><td>schema_used_text</td><td style="background-color:#d4edda;">Yes, Biolink model and extract-transform-load (ETL) approach for construction.</td></tr>
 <tr><td>schema_used</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 10/10</p>
 
 ## Update frequency and versioning
 <div class="table-responsive">
@@ -68,9 +71,10 @@ layout: eval_detail
 <tr><td>kg_contact_info</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>updated_annually_text</td><td style="background-color:#d4edda;">Yes, once per month (mentioned in Discussion).</td></tr>
 <tr><td>updated_annually</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>prior_versions_access_text</td><td style="background-color:#d4edda;">Yes, the prior versions are accessible (https://github.com/ncats/translator-lfs-artifacts/blob/main/README.md) with documented changes (https://github.com/RTXteam/RTX-KG2/blob/master/docs/kg2-versions.md).</td></tr>
+<tr><td>prior_versions_access_text</td><td style="background-color:#d4edda;">Yes, the prior versions are accessible (<a href="https://github.com/ncats/translator-lfs-artifacts/blob/main/README.md)">https://github.com/ncats/translator-lfs-artifacts/blob/main/README.md)</a> with documented changes (<a href="https://github.com/RTXteam/RTX-KG2/blob/master/docs/kg2-versions.md).">https://github.com/RTXteam/RTX-KG2/blob/master/docs/kg2-versions.md).</a></td></tr>
 <tr><td>prior_versions_access</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 10/10</p>
 
 ## Evaluation - Metrics and Fitness for Purpose
 <div class="table-responsive">
@@ -87,6 +91,7 @@ layout: eval_detail
 <tr><td>accuracy_metrics_text</td><td style="background-color:#d4edda;">Yes, the nodes and edges contain evidence, provenance, and other information for measuring accuracy and confidence.</td></tr>
 <tr><td>accuracy_metrics</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 10/10</p>
 
 ## License Information
 <div class="table-responsive">

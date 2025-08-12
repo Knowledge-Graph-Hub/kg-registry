@@ -5,7 +5,15 @@ layout: default
 <div class="content">
 
   <div class="col-md-12">
-    {{ content }}
+  {%- assign parts = page.path | split: '/' -%}
+  {%- assign rid = parts[1] -%}
+  <h1>Evaluation for <a href="{{ rid }}.html">{{ rid }}</a></h1>
+  <p class="text-muted"><strong>Evaluator:</strong> {{ page.evaluator | default: 'Not specified' }}</p>
+  <p class="text-muted"><strong>Evaluated on:</strong> {{ page.evaluation_date | default: site.time | date: '%Y-%m-%d' }}</p>
+  <p class="text-muted">This is a manual evaluation intended to identify potential barriers to reuse.</p>
+  <br />
+
+  {{ content }}
     <br />
   </div>
 </div>

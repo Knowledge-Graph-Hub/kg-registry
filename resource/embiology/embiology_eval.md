@@ -1,8 +1,8 @@
 ---
+evaluation_date: '2025-08-12'
+evaluator: Not specified
 layout: eval_detail
 ---
-
-# Evaluation for embiology
 
 ## Access Level and Types
 <div class="table-responsive">
@@ -19,6 +19,7 @@ layout: eval_detail
 <tr><td>downloadable_KG_text</td><td style="background-color:#f8d7da;">N</td></tr>
 <tr><td>downloadable_KG</td><td style="background-color:#f8d7da;">N</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 0/10</p>
 
 ## Provenance of Nodes and Edges
 <div class="table-responsive">
@@ -39,6 +40,7 @@ layout: eval_detail
 <tr><td>edge_type_schema_text</td><td style="background-color:#d4edda;">Y, changed yearly in their baseline updated but cannot see what schema is without paid account</td></tr>
 <tr><td>edge_type_schema</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 2/14</p>
 
 ## Documented standards, schema, construction
 <div class="table-responsive">
@@ -55,6 +57,7 @@ layout: eval_detail
 <tr><td>schema_used_text</td><td style="background-color:#f8d7da;">N</td></tr>
 <tr><td>schema_used</td><td style="background-color:#f8d7da;">N</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 0/10</p>
 
 ## Update frequency and versioning
 <div class="table-responsive">
@@ -71,6 +74,7 @@ layout: eval_detail
 <tr><td>prior_versions_access_text</td><td style="background-color:#f8d7da;">N</td></tr>
 <tr><td>prior_versions_access</td><td style="background-color:#f8d7da;">N</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 3/10</p>
 
 ## Evaluation - Metrics and Fitness for Purpose
 <div class="table-responsive">
@@ -87,6 +91,7 @@ layout: eval_detail
 <tr><td>accuracy_metrics_text</td><td>Confidence thresholds for relationships determined by number of supporting publications</td></tr>
 <tr><td>accuracy_metrics</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 1/10</p>
 
 ## License Information
 <div class="table-responsive">

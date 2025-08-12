@@ -664,6 +664,24 @@ def concat_resource_yaml(args):
                     return 'background-color:#f8d7da;'
                 return ''
 
+            # Helper to escape HTML and linkify URLs
+            def linkify_and_escape(s: str) -> str:
+                import re
+                import html
+                if not s:
+                    return ''
+                pattern = re.compile(r'(https?://[^\s<>\"]+)')
+                parts = []
+                last = 0
+                for m in pattern.finditer(s):
+                    parts.append(html.escape(s[last:m.start()]))
+                    url = m.group(1)
+                    url_esc = html.escape(url)
+                    parts.append(f'<a href="{url_esc}">{url_esc}</a>')
+                    last = m.end()
+                parts.append(html.escape(s[last:]))
+                return ''.join(parts)
+
             # Ensure first column is ID; iterate over data rows
             for row in rows[2:]:
                 if not row or len(row) == 0:
@@ -682,39 +700,76 @@ def concat_resource_yaml(args):
                 from collections import OrderedDict
                 grouped: OrderedDict[str, list[tuple[str, str]]] = OrderedDict()
                 col_limit = min(len(filled_group_headers), len(question_headers), len(row))
+                # Optional per-row metadata
+                evaluator_val = ''
+                evaluation_date_val = ''
                 for i in range(1, col_limit):  # skip ID column
                     cat = (filled_group_headers[i] or '').strip()
                     q = (question_headers[i] or '').strip()
                     v = (row[i] or '').strip()
                     if not q and not v:
                         continue
+                    # Special-case metadata fields that should not appear in grouped tables
+                    q_norm = (q or '').strip().lower()
+                    if q_norm == 'evaluator':
+                        evaluator_val = v
+                        continue
+                    if q_norm in ('evaluation_date', 'evaluation date', 'date'):
+                        evaluation_date_val = v
+                        continue
                     if cat not in grouped:
                         grouped[cat] = []
                     grouped[cat].append((q, v))
 
-                # Build HTML content with colored cells
-                html_lines = [f"# Evaluation for {rid}", ""]
+                # Default evaluation date to today if not supplied
+                if not evaluation_date_val:
+                    evaluation_date_val = datetime.date.today().isoformat()
+                if not evaluator_val:
+                    evaluator_val = 'Not specified'
+
+                # Build HTML content (layout will render title and metadata)
+                html_lines = []
                 for cat, qas in grouped.items():
                     if cat:
                         html_lines.append(f"## {cat}")
                     html_lines.append("<div class=\"table-responsive\">")
                     html_lines.append("<table class=\"table table-striped\">")
                     html_lines.append("<thead><tr><th>Question</th><th>Answer</th></tr></thead><tbody>")
+                    yes_count = 0
+                    answered_count = 0
                     for (q, v) in qas:
-                        # Escape HTML special chars minimally
-                        q_esc = (q or '').replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-                        v_esc = (v or '').replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+                        # Escape and linkify
+                        q_esc = linkify_and_escape(q or '')
+                        v_esc = linkify_and_escape(v or '')
                         style = style_for_value(v)
                         style_attr = f" style=\"{style}\"" if style else ""
+                        v_norm = (v or '').strip().lower()
+                        if v_norm:
+                            answered_count += 1
+                            if v_norm.startswith('y') or v_norm.startswith('yes'):
+                                yes_count += 1
                         html_lines.append(f"<tr><td>{q_esc}</td><td{style_attr}>{v_esc}</td></tr>")
                     html_lines.append("</tbody></table></div>")
+                    # Section score (skip for License Information)
+                    if (cat or '').strip().lower() != 'license information':
+                        html_lines.append(f"<p><strong>Section Score:</strong> {yes_count}/{answered_count}</p>")
                     html_lines.append("")
                 content = "\n".join(html_lines) + "\n"
 
                 # Write the evaluation page
                 eval_md_path = res_dir / f"{rid}_eval.md"
                 with open(eval_md_path, 'w', encoding='utf-8') as ef:
-                    ef.write("---\nlayout: eval_detail\n---\n\n")
+                    # Include evaluator and evaluation_date in front matter for downstream use
+                    fm = {
+                        'layout': 'eval_detail',
+                        'evaluator': evaluator_val or None,
+                        'evaluation_date': evaluation_date_val,
+                    }
+                    # Remove None fields to keep front matter clean
+                    fm = {k: v for k, v in fm.items() if v is not None}
+                    ef.write("---\n")
+                    yaml.dump(fm, ef)
+                    ef.write("---\n\n")
                     ef.write(content)
                 created += 1
 

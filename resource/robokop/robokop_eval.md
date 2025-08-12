@@ -1,8 +1,8 @@
 ---
+evaluation_date: '2025-08-12'
+evaluator: Not specified
 layout: eval_detail
 ---
-
-# Evaluation for robokop
 
 ## Access Level and Types
 <div class="table-responsive">
@@ -10,15 +10,16 @@ layout: eval_detail
 <thead><tr><th>Question</th><th>Answer</th></tr></thead><tbody>
 <tr><td>access_otherthanKG_text</td><td style="background-color:#d4edda;">Y, can access subgraphs through query searches</td></tr>
 <tr><td>access_otherthanKG</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>api_or_online_access_text</td><td style="background-color:#d4edda;">Y: neo4j, ExEmPLAR (experimental tool for queries of Neo4j graphs), website with "question builder" feature, automat queries (cypher and TRAPI)</td></tr>
+<tr><td>api_or_online_access_text</td><td style="background-color:#d4edda;">Y: neo4j, ExEmPLAR (experimental tool for queries of Neo4j graphs), website with &quot;question builder&quot; feature, automat queries (cypher and TRAPI)</td></tr>
 <tr><td>api_or_online_access</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>multi_access_options_text</td><td style="background-color:#d4edda;">Y, can download or query searches in multiple ways</td></tr>
 <tr><td>multi_access_options</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>sourcecode_available_text</td><td style="background-color:#d4edda;">Y, https://github.com/RobokopU24/ORION (this is not the original GH from the paper but is now the one they are using)</td></tr>
+<tr><td>sourcecode_available_text</td><td style="background-color:#d4edda;">Y, <a href="https://github.com/RobokopU24/ORION">https://github.com/RobokopU24/ORION</a> (this is not the original GH from the paper but is now the one they are using)</td></tr>
 <tr><td>sourcecode_available</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>downloadable_KG_text</td><td style="background-color:#d4edda;">Y, https://stars.renci.org/var/plater/graphs/RobokopKG/6fe13d850fdbf89c/</td></tr>
+<tr><td>downloadable_KG_text</td><td style="background-color:#d4edda;">Y, <a href="https://stars.renci.org/var/plater/graphs/RobokopKG/6fe13d850fdbf89c/">https://stars.renci.org/var/plater/graphs/RobokopKG/6fe13d850fdbf89c/</a></td></tr>
 <tr><td>downloadable_KG</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 10/10</p>
 
 ## Provenance of Nodes and Edges
 <div class="table-responsive">
@@ -32,13 +33,14 @@ layout: eval_detail
 <tr><td>import_dependancies</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>node_edge_sources_text</td><td style="background-color:#d4edda;">Y, node and edges contain primary knowledge source attribute and, if relationship is inferred, any algorithms/methods used</td></tr>
 <tr><td>node_edge_sources</td><td style="background-color:#d4edda;">Y</td></tr>
-<tr><td>edges_deduplication_text</td><td style="background-color:#f8d7da;">not explicitly mentioned in paper or docs, but github for creating KG/metadata records have an "edge_normalization_version" so it appears they do</td></tr>
+<tr><td>edges_deduplication_text</td><td style="background-color:#f8d7da;">not explicitly mentioned in paper or docs, but github for creating KG/metadata records have an &quot;edge_normalization_version&quot; so it appears they do</td></tr>
 <tr><td>edges_deduplication</td><td style="background-color:#d4edda;">Y</td></tr>
 <tr><td>triples_source_details_text</td><td>one-hop connection schema has summary of all edge types (node 1 type, node 2 type, relationship), and individual edges include the original data source, but sources per triple type were not explicitly stated/summarized</td></tr>
 <tr><td>triples_source_details</td><td style="background-color:#f8d7da;">N</td></tr>
 <tr><td>edge_type_schema_text</td><td>one-hop connection schema has summary of all edge types, and individual edges include the original data source, but sources per edge type were not explicitly stated</td></tr>
 <tr><td>edge_type_schema</td><td style="background-color:#f8d7da;">N</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 9/14</p>
 
 ## Documented standards, schema, construction
 <div class="table-responsive">
@@ -55,6 +57,7 @@ layout: eval_detail
 <tr><td>schema_used_text</td><td>BioLink</td></tr>
 <tr><td>schema_used</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 8/10</p>
 
 ## Update frequency and versioning
 <div class="table-responsive">
@@ -71,6 +74,7 @@ layout: eval_detail
 <tr><td>prior_versions_access_text</td><td>accessible for bulk download. No chnage log, but each comes with metadata that documents all source ingests (including versions) and preprocessing steps used for each source</td></tr>
 <tr><td>prior_versions_access</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 4/10</p>
 
 ## Evaluation - Metrics and Fitness for Purpose
 <div class="table-responsive">
@@ -87,6 +91,7 @@ layout: eval_detail
 <tr><td>accuracy_metrics_text</td><td style="background-color:#d4edda;">Y, informative subgrahs are ranked according to number of supporting publications and literarure co-occurence of entity pairs</td></tr>
 <tr><td>accuracy_metrics</td><td style="background-color:#d4edda;">Y</td></tr>
 </tbody></table></div>
+<p><strong>Section Score:</strong> 4/10</p>
 
 ## License Information
 <div class="table-responsive">
