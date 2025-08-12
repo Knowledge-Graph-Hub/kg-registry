@@ -59,6 +59,27 @@ layout: default
   {% endif %}
 
   <p style="max-width: 72rem">{{page.description}}</p>
+
+  {%- comment -%}
+  Evaluation link icon (clipboard-check), shown after description when an eval page exists
+  {%- endcomment -%}
+  {%- assign eval_file = page.id | append: '_eval.html' -%}
+  {%- assign eval_url = '/resource/' | append: page.id | append: '/' | append: eval_file -%}
+  {%- assign has_eval = false -%}
+  {%- for p in site.pages -%}
+    {%- if p.url == eval_url -%}
+      {%- assign has_eval = true -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if has_eval -%}
+  <div class="mb-3">
+    <a class="btn btn-outline-primary btn-sm" href="{{ eval_file }}" aria-label="View evaluation for {{ page.id }}" title="Evaluation">
+      <i class="bi bi-clipboard-check" aria-hidden="true"></i>
+      <span class="ms-1">Evaluation</span>
+    </a>
+  </div>
+  {%- endif -%}
 </div>
 
 {% if page.activity_status == "inactive" %}

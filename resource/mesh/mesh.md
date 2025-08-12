@@ -95,6 +95,60 @@ products:
   secondary_source:
   - alzkb
   - hetionet
+- category: GraphProduct
+  description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
+    chemicals, and diseases
+  edge_count: 500958
+  id: pharmkg.graph
+  name: PharmKG graph
+  node_count: 7603
+  original_source:
+  - omim
+  - drugbank
+  - pharmgkb
+  - ttd
+  - sider
+  - humannet
+  - ncbigene
+  - mesh
+  - pubchem
+  - gnbr
+  - biogps
+  - connectivitymap
+  product_url: https://zenodo.org/record/4077338
+  secondary_source:
+  - pharmkg
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+  compression: zip
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
+  dump_format: other
+  format: mixed
+  id: drugmechdb.graph
+  latest_version: '2.0.1'
+  name: DrugMechDB Graph Dataset
+  original_source:
+  - go
+  - cl
+  - mesh
+  - chebi
+  - drugbank
+  - interpro
+  - uberon
+  - pr
+  - ncbitaxon
+  - reactome
+  - hp
+  - uniprot
+  product_url: https://doi.org/10.5281/zenodo.8139357
+  repository: https://github.com/SuLab/DrugMechDB
+  versions:
+  - '2.0.1'
+  - '2.0.0'
+  - '1.0.2'
+  - '1.0'
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information
   about this resource.

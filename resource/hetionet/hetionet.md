@@ -186,3 +186,7 @@ Hetionet is a heterogeneous information network (hetnet) of biomedical knowledge
 Hetionet was originally developed as part of Project Rephetio, a study that utilized hetnets to predict new uses for existing drugs. The network has since been used for a variety of biomedical research purposes, including prioritizing disease-associated genes and providing insights into biological relationships.
 
 The network is maintained by Daniel Himmelstein and collaborators in the Greene Lab at the University of Pennsylvania and the Baranzini Lab at the University of California, San Francisco. All data and software associated with Hetionet are open-source and freely available.
+
+## Evaluation
+
+- View the evaluation: [hetionet evaluation](hetionet_eval.html)

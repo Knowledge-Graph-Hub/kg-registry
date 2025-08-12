@@ -3,7 +3,7 @@ activity_status: active
 category: KnowledgeGraph
 contacts:
 - category: Individual
-  label: Katy Börner
+  label: "Katy B\xF6rner"
   orcid: 0000-0002-3321-6137
 description: The HRA Knowledge Graph (HRA KG) is a linked open data resource that
   integrates anatomical structures, cell types, and biomarkers to support cross-scale
@@ -86,3 +86,7 @@ repository: https://github.com/hubmapconsortium/hra-kg
 ### Human Reference Atlas Knowledge Graph (HRA KG)
 
 The **Human Reference Atlas Knowledge Graph (HRA KG)** is a **linked open data (LOD) resource** that provides a structured and queryable framework for integrating anatomical structures, cell types, and biomarkers across different biological scales.
+
+## Evaluation
+
+- View the evaluation: [hra-kg evaluation](hra-kg_eval.html)

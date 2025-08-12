@@ -12,5 +12,7 @@ product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c4
 warnings:
 - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
   header found'
+- 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when
+  accessing file'
 layout: product_detail
 ---

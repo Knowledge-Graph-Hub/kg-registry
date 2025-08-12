@@ -167,6 +167,9 @@ jQuery(document).ready(function () {
                                     License <i class="bi-chevron-up" aria-hidden="true"></i>
                                 </span>
                             </th>
+                            <th scope="col" style="width: 5%; vertical-align: middle;" class="text-center">
+                                <span>Evaluation</span>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -226,6 +229,9 @@ jQuery(document).ready(function () {
                 <td style="vertical-align: middle;">
                     ${license_box}
                 </td>
+                <td class="text-center" style="vertical-align: middle;">
+                    ${createEvaluationButton(item, id)}
+                </td>
             </tr>
         `;
     }
@@ -256,6 +262,14 @@ jQuery(document).ready(function () {
             `<a role="button" class="btn btn-outline-primary disabled">
                 <i class="bi-book" aria-hidden="true"></i>
             </a>`;
+    }
+
+    function createEvaluationButton(item, id) {
+        const evalUrl = item.evaluation_page || '';
+        return evalUrl ?
+            `<a role="button" class="btn btn-outline-primary" href="${evalUrl}" aria-label="View evaluation for ${id}" title="Evaluation">
+                <i class="bi-clipboard-check" aria-hidden="true"></i>
+            </a>` : '';
     }
 
     // Lazily initialize sortable tables

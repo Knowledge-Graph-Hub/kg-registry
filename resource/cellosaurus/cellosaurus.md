@@ -78,6 +78,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Complete Cellosaurus data in RDF format using the Turtle syntax
   format: ttl
@@ -92,6 +94,8 @@ products:
   - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: ProgrammingInterface
   description: RESTful API for programmatic access to Cellosaurus data

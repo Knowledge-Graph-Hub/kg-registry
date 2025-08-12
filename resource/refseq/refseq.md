@@ -1,16 +1,24 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: info@ncbi.nlm.nih.gov
+  - contact_type: github
+    value: ncbi
+  label: NCBI Help Desk
 creation_date: '2025-07-17T00:00:00Z'
-description: >-
-  The NCBI Reference Sequence Database (RefSeq) provides a comprehensive,
-  integrated, non-redundant, well-annotated set of reference sequences
-  including genomic, transcript, and protein sequences for naturally
-  occurring molecules of the central dogma.
+description: The NCBI Reference Sequence Database (RefSeq) provides a comprehensive,
+  integrated, non-redundant, well-annotated set of reference sequences including genomic,
+  transcript, and protein sequences for naturally occurring molecules of the central
+  dogma.
 domains:
 - genomics
 - biomedical
 - biological systems
+homepage_url: https://www.ncbi.nlm.nih.gov/refseq/
 id: refseq
 last_modified_date: '2025-08-07T00:00:00Z'
 layout: resource_detail
@@ -41,25 +49,62 @@ products:
   - ncbigene
   product_file_size: 2027684801
   product_url: https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2refseq.gz
-homepage_url: https://www.ncbi.nlm.nih.gov/refseq/
-repository: https://ftp.ncbi.nlm.nih.gov/refseq/
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - do
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
 publications:
-- id: doi:10.1093/nar/gkv1189
-  doi: 10.1093/nar/gkv1189
-  title: 'Reference sequence (RefSeq) database at NCBI: current status, taxonomic expansion, and functional annotation'
-- id: doi:10.1093/nar/gkl842
-  doi: 10.1093/nar/gkl842
-  title: 'NCBI reference sequences (RefSeq): a curated non-redundant sequence database of genomes, transcripts and proteins'
-contacts:
-- category: Organization
-  label: NCBI Help Desk
-  contact_details:
-  - contact_type: email
-    value: info@ncbi.nlm.nih.gov
-  - contact_type: github
-    value: ncbi
+- doi: 10.1093/nar/gkv1189
+  id: doi:10.1093/nar/gkv1189
+  title: 'Reference sequence (RefSeq) database at NCBI: current status, taxonomic
+    expansion, and functional annotation'
+- doi: 10.1093/nar/gkl842
+  id: doi:10.1093/nar/gkl842
+  title: 'NCBI reference sequences (RefSeq): a curated non-redundant sequence database
+    of genomes, transcripts and proteins'
+repository: https://ftp.ncbi.nlm.nih.gov/refseq/
 ---
-
 # RefSeq: NCBI Reference Sequence Database
 
 The NCBI Reference Sequence Database (RefSeq) provides a comprehensive, integrated, non-redundant, well-annotated set of reference sequences including genomic, transcript, and protein sequences. RefSeq standards serve as a foundation for functional annotation of genomes and provide stable reference points for mutation analysis, gene expression studies, and polymorphism discovery.

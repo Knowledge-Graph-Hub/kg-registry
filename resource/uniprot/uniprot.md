@@ -101,6 +101,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+    header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
     protein-coding gene mapped to the corresponding UniProt accession number
@@ -149,6 +151,8 @@ products:
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -438,6 +442,82 @@ products:
   - uniprot
   product_file_size: 1182285769
   product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene_refseq_uniprotkb_collab.gz
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - do
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+  compression: zip
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
+  dump_format: other
+  format: mixed
+  id: drugmechdb.graph
+  latest_version: '2.0.1'
+  name: DrugMechDB Graph Dataset
+  original_source:
+  - go
+  - cl
+  - mesh
+  - chebi
+  - drugbank
+  - interpro
+  - uberon
+  - pr
+  - ncbitaxon
+  - reactome
+  - hp
+  - uniprot
+  product_url: https://doi.org/10.5281/zenodo.8139357
+  repository: https://github.com/SuLab/DrugMechDB
+  versions:
+  - '2.0.1'
+  - '2.0.0'
+  - '1.0.2'
+  - '1.0'
 repository: https://www.uniprot.org/help/downloads
 ---
 UniProt Protein Knowledge Base
