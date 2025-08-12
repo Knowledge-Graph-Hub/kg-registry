@@ -46,6 +46,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: Robokop Plus
   format: kgx-jsonl
@@ -60,6 +62,8 @@ products:
   - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 repository: https://github.com/NCATS-Gamma/robokop
 ---

@@ -274,6 +274,74 @@ products:
   product_url: https://github.com/gyorilab/indra_cogex
   secondary_source:
   - indra
+- category: GraphProduct
+  description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
+    chemicals, and diseases
+  edge_count: 500958
+  id: pharmkg.graph
+  name: PharmKG graph
+  node_count: 7603
+  original_source:
+  - omim
+  - drugbank
+  - pharmgkb
+  - ttd
+  - sider
+  - humannet
+  - ncbigene
+  - mesh
+  - pubchem
+  - gnbr
+  - biogps
+  - connectivitymap
+  product_url: https://zenodo.org/record/4077338
+  secondary_source:
+  - pharmkg
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - do
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
 publications:
 - authors:
   - Kuhn M

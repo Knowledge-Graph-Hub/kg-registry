@@ -11,7 +11,7 @@ contacts:
   contact_details:
   - contact_type: url
     value: https://cs.stanford.edu/~mbrbic/
-  label: "Maria Brbi\u0107"
+  label: Maria Brbić
 description: STELLAR is a geometric deep learning method for cell type discovery and
   identification in spatially resolved single-cell datasets. It automatically assigns
   cells to known cell types and discovers novel cell types by transferring annotations
@@ -44,6 +44,9 @@ products:
   id: stellar.datasets
   name: STELLAR Datasets
   product_url: https://datadryad.org/stash/share/1OQtxew0Unh3iAdP-ELew-ctwuPTBz6Oy8uuyxqliZk
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+    to URL'
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -172,7 +175,7 @@ products:
   - ubkg
 publications:
 - authors:
-  - "Brbi\u0107 M"
+  - Brbić M
   - Cao K
   - Hickey JW
   - Tan Y

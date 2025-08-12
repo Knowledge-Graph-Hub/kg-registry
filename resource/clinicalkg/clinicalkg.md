@@ -8,11 +8,11 @@ contacts:
     value: https://github.com/MannLabs
   label: Mann Labs
 description: >-
-	The Clinical Knowledge Graph (CKG) is an open-source platform that integrates
-	proteomics and clinical data with knowledge from diverse biomedical databases
-	and literature to support precision medicine. The CKG has reported scale of
-	~16 million nodes and ~220 million relationships and provides tooling for
-	analysis, reporting, and knowledge discovery.
+  The Clinical Knowledge Graph (CKG) is an open-source platform that integrates
+  proteomics and clinical data with knowledge from diverse biomedical databases
+  and literature to support precision medicine. The CKG has reported scale of
+  ~16 million nodes and ~220 million relationships and provides tooling for
+  analysis, reporting, and knowledge discovery.
 domains:
 - clinical
 - proteomics
@@ -22,8 +22,8 @@ homepage_url: https://ckg.readthedocs.io/
 id: clinicalkg
 layout: resource_detail
 license:
-	id: https://opensource.org/licenses/MIT
-	label: MIT License
+  id: https://opensource.org/licenses/MIT
+  label: MIT License
 name: Clinical Knowledge Graph (CKG)
 products:
 - category: GraphProduct
@@ -70,7 +70,7 @@ products:
     - mi
     - ms
     - uo
-product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 publications:
 - authors:
   - Alberto Santos

@@ -21,6 +21,5 @@ id: uf-okn
 layout: resource_detail
 name: UF-OKN
 repository: https://github.com/UFOKN/Knowledge-Graph
-creator: UF-OKN Team
 ---
 UF-OKN

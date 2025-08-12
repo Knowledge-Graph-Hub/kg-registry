@@ -269,6 +269,105 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   secondary_source:
   - bioteque
+- category: GraphProduct
+  description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
+    chemicals, and diseases
+  edge_count: 500958
+  id: pharmkg.graph
+  name: PharmKG graph
+  node_count: 7603
+  original_source:
+  - omim
+  - drugbank
+  - pharmgkb
+  - ttd
+  - sider
+  - humannet
+  - ncbigene
+  - mesh
+  - pubchem
+  - gnbr
+  - biogps
+  - connectivitymap
+  product_url: https://zenodo.org/record/4077338
+  secondary_source:
+  - pharmkg
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - do
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+  compression: zip
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
+  dump_format: other
+  format: mixed
+  id: drugmechdb.graph
+  latest_version: '2.0.1'
+  name: DrugMechDB Graph Dataset
+  original_source:
+  - go
+  - cl
+  - mesh
+  - chebi
+  - drugbank
+  - interpro
+  - uberon
+  - pr
+  - ncbitaxon
+  - reactome
+  - hp
+  - uniprot
+  product_url: https://doi.org/10.5281/zenodo.8139357
+  repository: https://github.com/SuLab/DrugMechDB
+  versions:
+  - '2.0.1'
+  - '2.0.0'
+  - '1.0.2'
+  - '1.0'
 publications:
 - id: https://doi.org/10.1093/nar/gkad976
   journal: Nucleic Acids Research

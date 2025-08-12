@@ -7,10 +7,10 @@ contacts:
   - contact_type: email
     value: help@geneontology.org
   label: Gene Ontology Helpdesk
-description: The Gene Ontology resource, the world’s largest source of information
-  on the functions of genes. This knowledge is both human-readable and machine-readable,
-  and is a foundation for computational analysis of large-scale molecular biology
-  and genetics experiments in biomedical research.
+description: "The Gene Ontology resource, the world\u2019s largest source of information\
+  \ on the functions of genes. This knowledge is both human-readable and machine-readable,\
+  \ and is a foundation for computational analysis of large-scale molecular biology\
+  \ and genetics experiments in biomedical research."
 domains:
 - biological systems
 homepage_url: https://geneontology.org/
@@ -549,6 +549,82 @@ products:
   product_url: https://github.com/gyorilab/indra_cogex
   secondary_source:
   - indra
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - do
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+  compression: zip
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
+  dump_format: other
+  format: mixed
+  id: drugmechdb.graph
+  latest_version: '2.0.1'
+  name: DrugMechDB Graph Dataset
+  original_source:
+  - go
+  - cl
+  - mesh
+  - chebi
+  - drugbank
+  - interpro
+  - uberon
+  - pr
+  - ncbitaxon
+  - reactome
+  - hp
+  - uniprot
+  product_url: https://doi.org/10.5281/zenodo.8139357
+  repository: https://github.com/SuLab/DrugMechDB
+  versions:
+  - '2.0.1'
+  - '2.0.0'
+  - '1.0.2'
+  - '1.0'
 publications:
 - authors:
   - Ashburner M
@@ -660,7 +736,7 @@ publications:
   - Tutaj MA
   - Vedi M
   - Wang S-J
-  - D’Eustachio PD
+  - "D\u2019Eustachio PD"
   - Aimo L
   - Axelsen K
   - Bridge A
