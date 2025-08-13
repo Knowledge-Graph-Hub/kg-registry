@@ -14,10 +14,6 @@ product_url: https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz
 secondary_source:
 - kg-microbe
 warnings:
-- 'File was not able to be retrieved when checked on 2025-08-06: HTTP 403 error when
-  accessing file'
-- 'File was not able to be retrieved when checked on 2025-08-07: HTTP 403 error when
-  accessing file'
 - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 403 error when
   accessing file'
 layout: product_detail

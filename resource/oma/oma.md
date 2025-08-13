@@ -70,18 +70,10 @@ products:
   secondary_source:
   - oma
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
-    to URL'
 - category: Product
   description: OMA orthology groups in OrthoXML format
   format: xml
@@ -93,12 +85,6 @@ products:
   secondary_source:
   - oma
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
@@ -114,16 +100,10 @@ products:
   secondary_source:
   - oma
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
-    to URL'
 - category: Product
   compression: gzip
   description: Pairwise orthologs in tab-separated text format
@@ -136,16 +116,10 @@ products:
   secondary_source:
   - oma
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
-    to URL'
 - category: Product
   compression: gzip
   description: Protein sequences from all genomes in FASTA format
@@ -158,16 +132,10 @@ products:
   secondary_source:
   - oma
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
-    to URL'
 - category: Product
   compression: gzip
   description: cDNA sequences for Eukaryotic genomes in FASTA format
@@ -180,18 +148,12 @@ products:
   secondary_source:
   - oma
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: cDNA sequences for Prokaryotic genomes in FASTA format
@@ -204,18 +166,12 @@ products:
   secondary_source:
   - oma
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
-    to URL'
 - category: Product
   description: OMA Browser database in HDF5 format
   id: oma.hdf5
@@ -226,14 +182,6 @@ products:
   secondary_source:
   - oma
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error
@@ -250,14 +198,6 @@ products:
   secondary_source:
   - oma
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error
@@ -275,14 +215,6 @@ products:
   secondary_source:
   - oma
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 502 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error
