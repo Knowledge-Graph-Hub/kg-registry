@@ -5,9 +5,10 @@ format: kgx-jsonl
 id: automat.gwascatalog
 infores_id: automat-gwas-catalog
 name: gwascatalog_automat
-product_url: https://stars.renci.org/var/plater/bl-3.1.2/GWASCatalog_Automat/latest/kgx_files
-warnings:
-- 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when
-  accessing file'
+original_source:
+- gwascatalog
+product_url: https://stars.renci.org/var/plater/bl-4.2.1/GWASCatalog_Automat/e30aceb322a33462/
+secondary_source:
+- automat
 layout: product_detail
 ---

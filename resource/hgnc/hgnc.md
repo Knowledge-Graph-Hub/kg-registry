@@ -51,6 +51,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
 - category: Product
   description: hgnc OBO Graph JSON
   format: json
@@ -66,6 +68,8 @@ products:
   - obo-db-ingest
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: hgnc SSSOM
@@ -143,6 +147,8 @@ products:
   - scibite
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -329,6 +335,17 @@ products:
   - mi
   - ms
   - uo
+- category: GraphProduct
+  description: HGNC Automat
+  format: kgx-jsonl
+  id: automat.hgnc
+  infores_id: automat-hgnc
+  name: hgnc_automat
+  original_source:
+  - hgnc
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/HGNC_Automat/dee31cfce74e5944/
+  secondary_source:
+  - automat
 repository: https://github.com/HGNC
 ---
 HUGO Gene Nomenclature Committee

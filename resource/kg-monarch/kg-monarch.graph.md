@@ -1,16 +1,29 @@
 ---
 category: GraphProduct
-description: KGX Distribution of KGM
+description: KGX Distribution of KG-Monarch
 format: kgx
 id: kg-monarch.graph
-name: KGX Distribution of KGM
+name: KGX Distribution of KG-Monarch
 original_source:
-- kg-monarch
-product_url: https://kg-hub.berkeleybop.io/kg-monarch/current/kg-monarch.tar.gz
+- phenio
+- alliance
+- bgee
+- biogrid
+- clingen
+- clinvar
+- ctd
+- dictybase
+- go
+- hp
+- maxo
+- panther
+- pombase
+- reactome
+- string
+- xenbase
+- zfin
+product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
 secondary_source:
 - kg-monarch
-warnings:
-- 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when
-  accessing file'
 layout: product_detail
 ---

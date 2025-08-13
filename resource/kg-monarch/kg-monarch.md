@@ -15,9 +15,12 @@ contacts:
   - contact_type: other
     contact_type_name: Monarch Initiative Community
     contact_type_url: https://groups.google.com/g/monarch-friends/
+    value: monarch-friends
   label: Monarch Initiative
-description: >-
- The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components.
+description: The Monarch Initiative is an international consortium that leads key
+  global standards and semantic data integration technologies. To maximize utility
+  and impact, the Monarch platform is composed of multiple open-source, open-access
+  components.
 domains:
 - health
 homepage_url: https://kghub.org/kg-monarch/index.html
@@ -51,6 +54,7 @@ products:
   - string
   - xenbase
   - zfin
+  product_file_size: 230877741
   product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   secondary_source:
   - kg-monarch
@@ -80,6 +84,9 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   secondary_source:
   - kg-monarch
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
   format: rdfxml
@@ -103,6 +110,7 @@ products:
   - string
   - xenbase
   - zfin
+  product_file_size: 879238775
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.nt.gz
   secondary_source:
   - kg-monarch
@@ -132,6 +140,9 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
   secondary_source:
   - kg-monarch
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
   id: kg-monarch.graph.duckdb
@@ -157,6 +168,9 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
   secondary_source:
   - kg-monarch
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
 - category: ProcessProduct
   description: This repository is a code reference for the C-Path Knowledge Graph
     project, to increase discoverability of rare disease datasets through integration

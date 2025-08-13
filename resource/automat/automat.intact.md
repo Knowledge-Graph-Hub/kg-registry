@@ -5,9 +5,10 @@ format: kgx-jsonl
 id: automat.intact
 infores_id: automat-intact
 name: intact_automat
-product_url: https://stars.renci.org/var/plater/bl-3.1.2/IntAct_Automat/latest/kgx_files
-warnings:
-- 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when
-  accessing file'
+original_source:
+- intact
+product_url: https://stars.renci.org/var/plater/bl-4.2.1/IntAct_Automat/e5b936f966a02c2c/
+secondary_source:
+- automat
 layout: product_detail
 ---
