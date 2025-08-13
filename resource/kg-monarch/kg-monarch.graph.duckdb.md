@@ -24,5 +24,8 @@ original_source:
 product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
 secondary_source:
 - kg-monarch
+warnings:
+- 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error when
+  accessing file'
 layout: product_detail
 ---

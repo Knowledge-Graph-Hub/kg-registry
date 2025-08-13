@@ -9,7 +9,7 @@ license:
 name: slm OBO
 product_url: https://w3id.org/biopragmatics/resources/slm/slm.obo
 warnings:
-- 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when
+- 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error when
   accessing file'
 layout: product_detail
 ---

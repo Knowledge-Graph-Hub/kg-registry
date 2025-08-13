@@ -111,6 +111,9 @@ products:
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/IntAct_Automat/e5b936f966a02c2c/
   secondary_source:
   - automat
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
+    to URL'
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information
   about this resource.

@@ -63,6 +63,9 @@ products:
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/UbergraphRedundant_Automat/e6b3204fd3a04413/
   secondary_source:
   - automat
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
+    to URL'
 repository: https://github.com/INCATools/ubergraph
 ---
 ### Ubergraph: A Unified Semantic Knowledge Graph for OBO Ontologies
