@@ -11,7 +11,6 @@
 # Software requirements:
 #
 # - [GNU Make](http://www.gnu.org/software/make/)
-# - [Apache Jena](https://jena.apache.org/download/)
 # - [Python 3](https://www.python.org/downloads/)
 # - [PyYAML](http://pyyaml.org/wiki/PyYAML)
 # - [SPARQLWrapper](https://pypi.python.org/pypi/SPARQLWrapper)
