@@ -196,20 +196,62 @@ jQuery(document).ready(function () {
         const license_box = createLicenseBox(item);
 
         // Get the icon for the category
-        const iconName = categoryIcons[category] || 'box';
+    const iconName = categoryIcons[category] || 'box';
+
+        // Build warnings badge if present (resource-level or any product-level)
+        let warningBadge = '';
+        let allWarnings = [];
+        if (Array.isArray(item.warnings)) {
+            allWarnings = allWarnings.concat(item.warnings);
+        }
+        if (Array.isArray(item.products)) {
+            item.products.forEach(p => {
+                if (p && Array.isArray(p.warnings) && p.warnings.length > 0) {
+                    allWarnings = allWarnings.concat(p.warnings);
+                }
+            });
+        }
+        if (allWarnings.length > 0) {
+            // pick the latest warning by embedded date when available, otherwise last
+            const parseDate = (msg) => {
+                const m = (msg || '').match(/(\d{4}-\d{2}-\d{2})(?:T\d{2}:\d{2}:\d{2}Z)?/);
+                if (!m) return null;
+                const d = new Date(m[1] + 'T00:00:00Z');
+                return isNaN(d.getTime()) ? null : d;
+            };
+            let latestMsg = allWarnings[allWarnings.length - 1] || '';
+            let latestDate = parseDate(latestMsg);
+            for (let i = 0; i < allWarnings.length; i++) {
+                const d = parseDate(allWarnings[i]);
+                if (d && (!latestDate || d > latestDate)) {
+                    latestDate = d;
+                    latestMsg = allWarnings[i];
+                }
+            }
+            const more = allWarnings.length > 1 ? ' (more on product page)' : '';
+            const tooltip = (latestMsg || '').replace(/"/g, '&quot;');
+            warningBadge = ` <span title="${tooltip}${more}" style="cursor: help; text-decoration: underline dotted;">⚠</span>`;
+        }
+
+        // Build status badge for non-active resources
+        let statusBadge = '';
+        const status = (item.activity_status || '').toLowerCase();
+        if (status && status !== 'active') {
+            const tooltip = `Status: ${status}`.replace(/"/g, '&quot;');
+            statusBadge = ` <span title="${tooltip}" style="cursor: help; text-decoration: underline dotted;">⏸</span>`;
+        }
 
         return `
             <tr class="${is_inactive}">
                 <th scope="row" style="vertical-align: middle;">
                     <a href="resource/${id}/${id}.html">
-                        ${id}
+                        ${id}${warningBadge}${statusBadge}
                     </a>
                 </th>
                 <td style="vertical-align: middle;">
                     ${title}
                 </td>
                 <td style="vertical-align: middle;">
-                    <span style="background-color: #ff8d82">${is_obsolete}</span>
                     ${description}
                 </td>
                 <td class="text-center" style="vertical-align: middle;">

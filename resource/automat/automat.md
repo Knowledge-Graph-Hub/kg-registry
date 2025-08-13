@@ -34,10 +34,6 @@ products:
   secondary_source:
   - automat
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -51,10 +47,6 @@ products:
   secondary_source:
   - automat
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -68,10 +60,6 @@ products:
   secondary_source:
   - automat
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -86,10 +74,6 @@ products:
   secondary_source:
   - automat
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -104,10 +88,6 @@ products:
   secondary_source:
   - automat
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -118,10 +98,6 @@ products:
   name: gtex_automat
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/GTEx_Automat/latest/kgx_files
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -132,10 +108,6 @@ products:
   name: gtopdb_automat
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/GtoPdb_Automat/latest/kgx_files
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -146,10 +118,6 @@ products:
   name: gwascatalog_automat
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/GWASCatalog_Automat/latest/kgx_files
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -159,10 +127,6 @@ products:
   name: hetio_automat
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/Hetio_Automat/latest/kgx_files
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -173,10 +137,6 @@ products:
   name: hgnc_automat
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/HGNC_Automat/latest/kgx_files
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -187,10 +147,6 @@ products:
   name: hmdb_automat
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/HMDB_Automat/latest/kgx_files
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -201,10 +157,6 @@ products:
   name: humangoa_automat
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/HumanGOA_Automat/latest/kgx_files
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -215,10 +167,6 @@ products:
   name: intact_automat
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/IntAct_Automat/latest/kgx_files
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -228,10 +176,6 @@ products:
   name: ontologicalhierarchy_automat
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/OntologicalHierarchy_Automat/latest/kgx_files
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -242,10 +186,6 @@ products:
   name: panther_automat
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/PANTHER_Automat/latest/kgx_files
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -256,10 +196,6 @@ products:
   name: pharos_automat
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/PHAROS_Automat/latest/kgx_files
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -269,10 +205,6 @@ products:
   name: stringdb_automat
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/STRING-DB_Automat/latest/kgx_files
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -282,10 +214,6 @@ products:
   name: ubergraph_automat
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
 repository: https://github.com/RobokopU24/
