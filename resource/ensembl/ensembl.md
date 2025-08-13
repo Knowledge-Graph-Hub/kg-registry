@@ -41,6 +41,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-07: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
+    to URL'
 - category: ProcessProduct
   description: Tool to search Ensembl genomes for DNA or protein sequences.
   id: ensembl.blast

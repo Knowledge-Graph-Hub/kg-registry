@@ -1,9 +1,9 @@
 ---
 category: GraphProduct
-description: KGX Distribution of KG-Monarch
-format: kgx
-id: kg-monarch.graph
-name: KGX Distribution of KG-Monarch
+description: RDF Distribution of KG-Monarch
+format: rdfxml
+id: kg-monarch.graph.rdf
+name: RDF Distribution of KG-Monarch
 original_source:
 - phenio
 - alliance
@@ -22,7 +22,7 @@ original_source:
 - string
 - xenbase
 - zfin
-product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
+product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.nt.gz
 secondary_source:
 - kg-monarch
 layout: product_detail

@@ -1,9 +1,9 @@
 ---
 category: GraphProduct
-description: KGX Distribution of KG-Monarch
-format: kgx
-id: kg-monarch.graph
-name: KGX Distribution of KG-Monarch
+description: Neo4j Dump of KG-Monarch
+dump_format: neo4j
+id: kg-monarch.graph.neo4j
+name: Neo4j Dump of KG-Monarch
 original_source:
 - phenio
 - alliance
@@ -22,7 +22,7 @@ original_source:
 - string
 - xenbase
 - zfin
-product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
+product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
 secondary_source:
 - kg-monarch
 layout: product_detail

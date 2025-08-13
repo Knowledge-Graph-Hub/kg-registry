@@ -11,7 +11,6 @@
 # Software requirements:
 #
 # - [GNU Make](http://www.gnu.org/software/make/)
-# - [Apache Jena](https://jena.apache.org/download/)
 # - [Python 3](https://www.python.org/downloads/)
 # - [PyYAML](http://pyyaml.org/wiki/PyYAML)
 # - [SPARQLWrapper](https://pypi.python.org/pypi/SPARQLWrapper)
@@ -160,6 +159,38 @@ prettify: $(RESOURCES)
 # Run tox tests (requires `pip install tox`)
 tox:
 	tox -e py
+
+#############################
+## Single-file Convenience ##
+#############################
+
+.PHONY: validate-file prettify-file
+
+# Validate a single resource markdown file
+# Usage: make validate-file FILE=resource/<path>/<name>.md
+validate-file:
+	@if [ -z "$(FILE)" ]; then \
+	  echo "Usage: make validate-file FILE=resource/<path>/<name>.md"; \
+	  exit 1; \
+	fi
+	@if [ ! -f "$(FILE)" ]; then \
+	  echo "File not found: $(FILE)"; \
+	  exit 1; \
+	fi
+	@./util/extract-metadata.py validate "$(FILE)"
+
+# Prettify a single resource markdown file
+# Usage: make prettify-file FILE=resource/<path>/<name>.md
+prettify-file:
+	@if [ -z "$(FILE)" ]; then \
+	  echo "Usage: make prettify-file FILE=resource/<path>/<name>.md"; \
+	  exit 1; \
+	fi
+	@if [ ! -f "$(FILE)" ]; then \
+	  echo "File not found: $(FILE)"; \
+	  exit 1; \
+	fi
+	@./util/extract-metadata.py prettify "$(FILE)"
 
 ##########################
 ## Metadata Maintenance ##

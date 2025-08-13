@@ -10,7 +10,17 @@ contacts:
     value: cmungall
   label: Christopher J. Mungall
   orcid: 0000-0002-6601-2165
-description: Monarch Initiative Knowledge Graph
+- category: Organization
+  contact_details:
+  - contact_type: other
+    contact_type_name: Monarch Initiative Community
+    contact_type_url: https://groups.google.com/g/monarch-friends/
+    value: monarch-friends
+  label: Monarch Initiative
+description: The Monarch Initiative is an international consortium that leads key
+  global standards and semantic data integration technologies. To maximize utility
+  and impact, the Monarch platform is composed of multiple open-source, open-access
+  components.
 domains:
 - health
 homepage_url: https://kghub.org/kg-monarch/index.html
@@ -22,17 +32,144 @@ license:
 name: KG Monarch
 products:
 - category: GraphProduct
-  description: KGX Distribution of KGM
+  description: KGX Distribution of KG-Monarch
   format: kgx
   id: kg-monarch.graph
-  name: KGX Distribution of KGM
+  name: KGX Distribution of KG-Monarch
   original_source:
+  - phenio
+  - alliance
+  - bgee
+  - biogrid
+  - clingen
+  - clinvar
+  - ctd
+  - dictybase
+  - go
+  - hp
+  - maxo
+  - panther
+  - pombase
+  - reactome
+  - string
+  - xenbase
+  - zfin
+  product_file_size: 230877741
+  product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
+  secondary_source:
   - kg-monarch
-  product_url: https://kg-hub.berkeleybop.io/kg-monarch/current/kg-monarch.tar.gz
+- category: GraphProduct
+  description: KGX JSON-Lines Distribution of KG-Monarch
+  format: kgx-jsonl
+  id: kg-monarch.graph.jsonl
+  name: KGX JSON-L Distribution of KG-Monarch
+  original_source:
+  - phenio
+  - alliance
+  - bgee
+  - biogrid
+  - clingen
+  - clinvar
+  - ctd
+  - dictybase
+  - go
+  - hp
+  - maxo
+  - panther
+  - pombase
+  - reactome
+  - string
+  - xenbase
+  - zfin
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
+- category: GraphProduct
+  description: RDF Distribution of KG-Monarch
+  format: rdfxml
+  id: kg-monarch.graph.rdf
+  name: RDF Distribution of KG-Monarch
+  original_source:
+  - phenio
+  - alliance
+  - bgee
+  - biogrid
+  - clingen
+  - clinvar
+  - ctd
+  - dictybase
+  - go
+  - hp
+  - maxo
+  - panther
+  - pombase
+  - reactome
+  - string
+  - xenbase
+  - zfin
+  product_file_size: 879238775
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.nt.gz
+  secondary_source:
+  - kg-monarch
+- category: GraphProduct
+  description: Neo4j Dump of KG-Monarch
+  dump_format: neo4j
+  id: kg-monarch.graph.neo4j
+  name: Neo4j Dump of KG-Monarch
+  original_source:
+  - phenio
+  - alliance
+  - bgee
+  - biogrid
+  - clingen
+  - clinvar
+  - ctd
+  - dictybase
+  - go
+  - hp
+  - maxo
+  - panther
+  - pombase
+  - reactome
+  - string
+  - xenbase
+  - zfin
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
+  secondary_source:
+  - kg-monarch
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
+- category: GraphProduct
+  description: DuckDB database of KG-Monarch
+  id: kg-monarch.graph.duckdb
+  name: DuckDB database of KG-Monarch
+  original_source:
+  - phenio
+  - alliance
+  - bgee
+  - biogrid
+  - clingen
+  - clinvar
+  - ctd
+  - dictybase
+  - go
+  - hp
+  - maxo
+  - panther
+  - pombase
+  - reactome
+  - string
+  - xenbase
+  - zfin
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
+  secondary_source:
+  - kg-monarch
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
     when accessing file'
