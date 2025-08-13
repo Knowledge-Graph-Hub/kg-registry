@@ -30,12 +30,9 @@ products:
   name: robokopkg
   original_source:
   - robokop
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/RobokopKG/4901b2bc764444ea/
   secondary_source:
   - automat
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: Robokop Plus
   format: kgx-jsonl
@@ -43,12 +40,9 @@ products:
   name: robokopplus
   original_source:
   - robokop
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files
+  product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/ad8cb4d0a7ccc923/kgx_files/
   secondary_source:
   - automat
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: Biolink Automat
   format: kgx-jsonl
@@ -56,12 +50,9 @@ products:
   name: biolink_automat
   original_source:
   - biolink
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files
+  product_url: https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/329f8c92051c18d4/
   secondary_source:
   - automat
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: CTD Automat
   format: kgx-jsonl
@@ -70,12 +61,9 @@ products:
   name: ctd_automat
   original_source:
   - ctd
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/CTD_Automat/f92c663160ec5e36/
   secondary_source:
   - automat
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: DrugCentral Automat
   format: kgx-jsonl
@@ -84,138 +72,138 @@ products:
   name: drugcentral_automat
   original_source:
   - drugcentral
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/DrugCentral_Automat/dec0617490b49c7a/
   secondary_source:
   - automat
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   description: GTEx Automat
   format: kgx-jsonl
   id: automat.gtex
   infores_id: automat-gtex
   name: gtex_automat
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/GTEx_Automat/latest/kgx_files
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/GTEx_Automat/a6448b9092bb81a1/
+  secondary_source:
+  - automat
+  original_source:
+  - gtex
 - category: GraphProduct
   description: GtoPdb Automat
   format: kgx-jsonl
   id: automat.gtopdb
   infores_id: automat-gtopdb
   name: gtopdb_automat
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/GtoPdb_Automat/latest/kgx_files
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/GtoPdb_Automat/0ea6074c824c2236/
+  secondary_source:
+  - automat
+  original_source:
+  - gtopdb
 - category: GraphProduct
   description: GWASCatalog Automat
   format: kgx-jsonl
   id: automat.gwascatalog
   infores_id: automat-gwas-catalog
   name: gwascatalog_automat
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/GWASCatalog_Automat/latest/kgx_files
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/GWASCatalog_Automat/e30aceb322a33462/
+  secondary_source:
+  - automat
+  original_source:
+  - gwascatalog
 - category: GraphProduct
   description: Hetio Automat
   format: kgx-jsonl
   id: automat.hetio
   name: hetio_automat
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/Hetio_Automat/latest/kgx_files
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/Hetio_Automat/85a5f53e63150e1e/
+  secondary_source:
+  - automat
+  original_source:
+  - hetionet
 - category: GraphProduct
   description: HGNC Automat
   format: kgx-jsonl
   id: automat.hgnc
   infores_id: automat-hgnc
   name: hgnc_automat
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/HGNC_Automat/latest/kgx_files
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/HGNC_Automat/dee31cfce74e5944/
+  secondary_source:
+  - automat
+  original_source:
+  - hgnc
 - category: GraphProduct
   description: HMDB Automat
   format: kgx-jsonl
   id: automat.hmdb
   infores_id: automat-hmdb
   name: hmdb_automat
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/HMDB_Automat/latest/kgx_files
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/HMDB_Automat/6715124699b6dbf0/
+  secondary_source:
+  - automat
+  original_source:
+  - hmdb
 - category: GraphProduct
   description: HumanGOA Automat
   format: kgx-jsonl
   id: automat.humangoa
   infores_id: automat-human-goa
   name: humangoa_automat
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/HumanGOA_Automat/latest/kgx_files
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/HumanGOA_Automat/06f107a4e9e8e547/
+  secondary_source:
+  - automat
+  original_source:
+  - humangoa
 - category: GraphProduct
   description: IntAct Automat
   format: kgx-jsonl
   id: automat.intact
   infores_id: automat-intact
   name: intact_automat
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/IntAct_Automat/latest/kgx_files
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
-- category: GraphProduct
-  description: OntologicalHierarchy Automat
-  format: kgx-jsonl
-  id: automat.ontologicalhierarchy
-  name: ontologicalhierarchy_automat
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/OntologicalHierarchy_Automat/latest/kgx_files
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/IntAct_Automat/e5b936f966a02c2c/
+  secondary_source:
+  - automat
+  original_source:
+  - intact
 - category: GraphProduct
   description: PANTHER Automat
   format: kgx-jsonl
   id: automat.panther
   infores_id: automat-panther
   name: panther_automat
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/PANTHER_Automat/latest/kgx_files
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/PANTHER_Automat/c0189f14ba41da6c/
+  secondary_source:
+  - automat
+  original_source:
+  - panther
 - category: GraphProduct
   description: PHAROS Automat
   format: kgx-jsonl
   id: automat.pharos
   infores_id: automat-pharos
   name: pharos_automat
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/PHAROS_Automat/latest/kgx_files
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/PHAROS_Automat/d3068b509bf17ff3/
+  secondary_source:
+  - automat
+  original_source:
+  - pharos
 - category: GraphProduct
   description: STRING-DB Automat
   format: kgx-jsonl
   id: automat.stringdb
   name: stringdb_automat
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/STRING-DB_Automat/latest/kgx_files
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/STRING-DB_Automat/4ca5a0ce557e2c18/
+  secondary_source:
+  - automat
+  original_source:
+  - string
 - category: GraphProduct
   description: UberGraph Automat
   format: kgx-jsonl
   id: automat.ubergraph
   name: ubergraph_automat
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/UbergraphRedundant_Automat/e6b3204fd3a04413/
+  secondary_source:
+  - automat
+  original_source:
+  - ubergraph
 repository: https://github.com/RobokopU24/
 ---
 A Translator Knowledge Provider offering multiple sub-graphs in KGX format.
