@@ -97,10 +97,6 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
     header found'
 - category: MappingProduct
@@ -144,16 +140,12 @@ products:
   secondary_source:
   - oma
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
-    to URL'
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 502 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
+    to URL'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -491,12 +483,12 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
-  latest_version: '2.0.1'
+  latest_version: 2.0.1
   name: DrugMechDB Graph Dataset
   original_source:
   - go
@@ -514,9 +506,9 @@ products:
   product_url: https://doi.org/10.5281/zenodo.8139357
   repository: https://github.com/SuLab/DrugMechDB
   versions:
-  - '2.0.1'
-  - '2.0.0'
-  - '1.0.2'
+  - 2.0.1
+  - 2.0.0
+  - 1.0.2
   - '1.0'
 repository: https://www.uniprot.org/help/downloads
 ---
