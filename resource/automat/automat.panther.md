@@ -5,9 +5,10 @@ format: kgx-jsonl
 id: automat.panther
 infores_id: automat-panther
 name: panther_automat
-product_url: https://stars.renci.org/var/plater/bl-3.1.2/PANTHER_Automat/latest/kgx_files
-warnings:
-- 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when
-  accessing file'
+original_source:
+- panther
+product_url: https://stars.renci.org/var/plater/bl-4.2.1/PANTHER_Automat/c0189f14ba41da6c/
+secondary_source:
+- automat
 layout: product_detail
 ---

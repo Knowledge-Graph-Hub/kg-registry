@@ -5,9 +5,10 @@ format: kgx-jsonl
 id: automat.humangoa
 infores_id: automat-human-goa
 name: humangoa_automat
-product_url: https://stars.renci.org/var/plater/bl-3.1.2/HumanGOA_Automat/latest/kgx_files
-warnings:
-- 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when
-  accessing file'
+original_source:
+- humangoa
+product_url: https://stars.renci.org/var/plater/bl-4.2.1/HumanGOA_Automat/06f107a4e9e8e547/
+secondary_source:
+- automat
 layout: product_detail
 ---

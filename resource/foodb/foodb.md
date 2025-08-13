@@ -46,6 +46,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+    header found'
 - category: Product
   compression: targz
   description: Complete FooDB database in XML format
@@ -60,6 +62,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Complete FooDB database in JSON format
@@ -74,6 +78,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+    header found'
 - category: Product
   compression: targz
   description: Complete FooDB database as MySQL dump
@@ -87,6 +93,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Experimental C-MS Spectra data from FooDB
@@ -100,6 +108,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Predicted C-MS Spectra data from FooDB
@@ -113,6 +123,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Experimental MS-MS Spectra data from FooDB
@@ -126,6 +138,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Predicted MS-MS Spectra data from FooDB
@@ -139,6 +153,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: NMR Spectra data from FooDB
@@ -152,6 +168,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Free Induction Decay (FID) files from FooDB
@@ -164,6 +182,8 @@ products:
   - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -178,6 +198,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+    header found'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -318,7 +340,7 @@ publications:
   - Marcu A
   - Guo AC
   - Liang K
-  - "V\xE1zquez-Fresno R"
+  - Vázquez-Fresno R
   - Sajed T
   - Johnson D
   - Li C

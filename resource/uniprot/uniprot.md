@@ -99,6 +99,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+    header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
     protein-coding gene mapped to the corresponding UniProt accession number
@@ -146,6 +148,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-06: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
+    when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -483,8 +487,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
