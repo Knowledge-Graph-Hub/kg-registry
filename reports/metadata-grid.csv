@@ -1,6 +1,7 @@
 Resource,Activity Status,Validation Status
 4dn,active,PASS
 achilles,active,PASS
+alliance,active,PASS
 alzkb,active,PASS
 aop-db,active,PASS
 automat,active,PASS
@@ -10,6 +11,7 @@ bigg,active,PASS
 bindingdb,active,PASS
 biocyc,active,PASS
 biogps,active,PASS
+biogrid,active,PASS
 biolink,active,PASS
 biomarker,active,PASS
 biomarkerkg,active,PASS
@@ -54,6 +56,7 @@ dc,active,PASS
 dct,active,PASS
 depmap,active,PASS
 dgidb,active,PASS
+dictybase,active,PASS
 diseases,active,PASS
 disgenet,active,PASS
 do,active,PASS
@@ -115,6 +118,7 @@ hra-kg,active,PASS
 hrpimp,active,PASS
 hsapdv,active,PASS
 hubmap,active,PASS
+humangoa,active,PASS
 humannet,active,PASS
 huri,active,PASS
 iao,active,PASS
@@ -141,6 +145,7 @@ lincs-l1000,active,PASS
 loinc,active,PASS
 m-csa,active,PASS
 ma,active,PASS
+maxo,active,PASS
 mechreponet,active,PASS
 medgen,active,PASS
 medkg,active,PASS
@@ -208,6 +213,7 @@ pharmacotherapydb,active,PASS
 pharmdb,active,PASS
 pharmgkb,active,PASS
 pharmkg,active,PASS
+pharos,active,PASS
 pheknowlator,active,PASS
 phenio,active,PASS
 phewascat,active,PASS
@@ -269,6 +275,7 @@ uniprot,active,PASS
 uo,active,PASS
 wbls,active,PASS
 wikipathways,active,PASS
+xenbase,active,PASS
 zfa,active,PASS
 zfin,active,PASS
 psygenet,inactive,PASS

@@ -54,8 +54,6 @@ products:
   secondary_source:
   - metanetx
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
     header found'
 - category: Product
@@ -69,8 +67,6 @@ products:
   secondary_source:
   - metanetx
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
     header found'
 - category: Product

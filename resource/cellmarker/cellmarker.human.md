@@ -5,9 +5,9 @@ id: cellmarker.human
 name: Human Cell Markers
 product_url: http://xteam.xbio.top/download/Human_cell_markers.txt
 warnings:
-- 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
+- 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
   to URL'
-- 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+- 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
   header found'
 layout: product_detail
 ---

@@ -39,8 +39,6 @@ products:
   name: Variant Effect Predictor (VEP)
   product_url: https://www.ensembl.org/info/docs/tools/vep/
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-07: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
     to URL'
 - category: ProcessProduct

@@ -22,6 +22,7 @@ original_source:
 - string
 - xenbase
 - zfin
+product_file_size: 230877741
 product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
 secondary_source:
 - kg-monarch

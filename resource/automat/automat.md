@@ -43,6 +43,9 @@ products:
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/ad8cb4d0a7ccc923/kgx_files/
   secondary_source:
   - automat
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
+    to URL'
 - category: GraphProduct
   description: Biolink Automat
   format: kgx-jsonl
@@ -81,129 +84,129 @@ products:
   id: automat.gtex
   infores_id: automat-gtex
   name: gtex_automat
+  original_source:
+  - gtex
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/GTEx_Automat/a6448b9092bb81a1/
   secondary_source:
   - automat
-  original_source:
-  - gtex
 - category: GraphProduct
   description: GtoPdb Automat
   format: kgx-jsonl
   id: automat.gtopdb
   infores_id: automat-gtopdb
   name: gtopdb_automat
+  original_source:
+  - gtopdb
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/GtoPdb_Automat/0ea6074c824c2236/
   secondary_source:
   - automat
-  original_source:
-  - gtopdb
 - category: GraphProduct
   description: GWASCatalog Automat
   format: kgx-jsonl
   id: automat.gwascatalog
   infores_id: automat-gwas-catalog
   name: gwascatalog_automat
+  original_source:
+  - gwascatalog
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/GWASCatalog_Automat/e30aceb322a33462/
   secondary_source:
   - automat
-  original_source:
-  - gwascatalog
 - category: GraphProduct
   description: Hetio Automat
   format: kgx-jsonl
   id: automat.hetio
   name: hetio_automat
+  original_source:
+  - hetionet
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/Hetio_Automat/85a5f53e63150e1e/
   secondary_source:
   - automat
-  original_source:
-  - hetionet
 - category: GraphProduct
   description: HGNC Automat
   format: kgx-jsonl
   id: automat.hgnc
   infores_id: automat-hgnc
   name: hgnc_automat
+  original_source:
+  - hgnc
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/HGNC_Automat/dee31cfce74e5944/
   secondary_source:
   - automat
-  original_source:
-  - hgnc
 - category: GraphProduct
   description: HMDB Automat
   format: kgx-jsonl
   id: automat.hmdb
   infores_id: automat-hmdb
   name: hmdb_automat
+  original_source:
+  - hmdb
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/HMDB_Automat/6715124699b6dbf0/
   secondary_source:
   - automat
-  original_source:
-  - hmdb
 - category: GraphProduct
   description: HumanGOA Automat
   format: kgx-jsonl
   id: automat.humangoa
   infores_id: automat-human-goa
   name: humangoa_automat
+  original_source:
+  - humangoa
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/HumanGOA_Automat/06f107a4e9e8e547/
   secondary_source:
   - automat
-  original_source:
-  - humangoa
 - category: GraphProduct
   description: IntAct Automat
   format: kgx-jsonl
   id: automat.intact
   infores_id: automat-intact
   name: intact_automat
+  original_source:
+  - intact
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/IntAct_Automat/e5b936f966a02c2c/
   secondary_source:
   - automat
-  original_source:
-  - intact
 - category: GraphProduct
   description: PANTHER Automat
   format: kgx-jsonl
   id: automat.panther
   infores_id: automat-panther
   name: panther_automat
+  original_source:
+  - panther
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/PANTHER_Automat/c0189f14ba41da6c/
   secondary_source:
   - automat
-  original_source:
-  - panther
 - category: GraphProduct
   description: PHAROS Automat
   format: kgx-jsonl
   id: automat.pharos
   infores_id: automat-pharos
   name: pharos_automat
+  original_source:
+  - pharos
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/PHAROS_Automat/d3068b509bf17ff3/
   secondary_source:
   - automat
-  original_source:
-  - pharos
 - category: GraphProduct
   description: STRING-DB Automat
   format: kgx-jsonl
   id: automat.stringdb
   name: stringdb_automat
+  original_source:
+  - string
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/STRING-DB_Automat/4ca5a0ce557e2c18/
   secondary_source:
   - automat
-  original_source:
-  - string
 - category: GraphProduct
   description: UberGraph Automat
   format: kgx-jsonl
   id: automat.ubergraph
   name: ubergraph_automat
+  original_source:
+  - ubergraph
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/UbergraphRedundant_Automat/e6b3204fd3a04413/
   secondary_source:
   - automat
-  original_source:
-  - ubergraph
 repository: https://github.com/RobokopU24/
 ---
 A Translator Knowledge Provider offering multiple sub-graphs in KGX format.
