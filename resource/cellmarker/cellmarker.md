@@ -34,6 +34,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+    header found'
 - category: Product
   description: Cell markers of different cell types from different tissues in mouse
   id: cellmarker.mouse
@@ -43,6 +45,8 @@ products:
   - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
     header found'
 - category: Product
   description: Cell markers derived from single-cell sequencing researches in human
@@ -55,6 +59,8 @@ products:
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+    header found'
 - category: Product
   description: All cell markers of different cell types from different tissues in
     human and mouse
@@ -65,6 +71,8 @@ products:
   - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-12: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
     header found'
 - category: GraphicalInterface
   description: ACT is a tool that makes cell type annotation easier by integrating
