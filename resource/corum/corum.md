@@ -9,6 +9,7 @@ contacts:
   - contact_type: email
     value: corum@helmholtz-muenchen.de
   label: Helmholtz Zentrum München
+  label: Helmholtz Zentrum München
 creation_date: '2025-07-22T00:00:00Z'
 description: CORUM (Comprehensive Resource of Mammalian Protein Complexes) is a curated
   database of experimentally characterized protein complexes from mammalian organisms,
