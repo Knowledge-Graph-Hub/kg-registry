@@ -161,6 +161,38 @@ prettify: $(RESOURCES)
 tox:
 	tox -e py
 
+#############################
+## Single-file Convenience ##
+#############################
+
+.PHONY: validate-file prettify-file
+
+# Validate a single resource markdown file
+# Usage: make validate-file FILE=resource/<path>/<name>.md
+validate-file:
+	@if [ -z "$(FILE)" ]; then \
+	  echo "Usage: make validate-file FILE=resource/<path>/<name>.md"; \
+	  exit 1; \
+	fi
+	@if [ ! -f "$(FILE)" ]; then \
+	  echo "File not found: $(FILE)"; \
+	  exit 1; \
+	fi
+	@./util/extract-metadata.py validate "$(FILE)"
+
+# Prettify a single resource markdown file
+# Usage: make prettify-file FILE=resource/<path>/<name>.md
+prettify-file:
+	@if [ -z "$(FILE)" ]; then \
+	  echo "Usage: make prettify-file FILE=resource/<path>/<name>.md"; \
+	  exit 1; \
+	fi
+	@if [ ! -f "$(FILE)" ]; then \
+	  echo "File not found: $(FILE)"; \
+	  exit 1; \
+	fi
+	@./util/extract-metadata.py prettify "$(FILE)"
+
 ##########################
 ## Metadata Maintenance ##
 ##########################
