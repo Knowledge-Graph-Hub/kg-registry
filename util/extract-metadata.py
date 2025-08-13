@@ -244,6 +244,85 @@ def concat_resource_yaml(args):
                         with open(fn, "w") as f:
                             f.write("---\n" + yaml.dump(product) + layout_string + "\n---\n")
 
+    def _normalize_warning_msg(msg: str) -> str:
+        """Return a normalized warning string with dates and extra whitespace removed for similarity grouping."""
+        import re
+        if not isinstance(msg, str):
+            return ''
+        s = msg
+        # Remove ISO and YYYY-MM-DD date patterns and nearby prepositions
+        s = re.sub(r"\b(on|as of|checked on|at)\s+\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}Z)?", "", s, flags=re.IGNORECASE)
+        s = re.sub(r"\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}Z)?", "", s)
+        # Collapse whitespace and punctuation spaces
+        s = re.sub(r"\s+", " ", s).strip().lower()
+        return s
+
+    def _date_from_warning(msg: str):
+        """Extract a date object from a warning message if present (YYYY-MM-DD or ISO with Z)."""
+        import re, datetime as _dt
+        if not isinstance(msg, str):
+            return None
+        m = re.search(r"(\d{4}-\d{2}-\d{2})(?:T\d{2}:\d{2}:\d{2}Z)?", msg)
+        if not m:
+            return None
+        try:
+            return _dt.datetime.strptime(m.group(1), "%Y-%m-%d").date()
+        except Exception:
+            return None
+
+    def dedupe_product_warnings(objs):
+        """Deduplicate very similar warnings per product, keeping the most recent dated entry.
+        Updates both in-memory objects and resource markdown files when changes occur."""
+        updated_resources = 0
+        for obj in objs:
+            if "id" not in obj:
+                continue
+            changed = False
+            if "products" in obj and isinstance(obj["products"], list):
+                for p in obj["products"]:
+                    warns = p.get("warnings")
+                    if not warns or not isinstance(warns, list):
+                        continue
+                    groups = {}
+                    for w in warns:
+                        key = _normalize_warning_msg(w)
+                        d = _date_from_warning(w)
+                        if key not in groups:
+                            groups[key] = (w, d)
+                        else:
+                            # Keep the one with the latest date (or keep existing if no date comparison possible)
+                            _, existing_date = groups[key]
+                            if d and ((existing_date is None) or (d > existing_date)):
+                                groups[key] = (w, d)
+                    # Rebuild list: choose the kept warning per group; stable order by descending date then text
+                    new_warns = [wd[0] for wd in sorted(groups.values(), key=lambda wd: (wd[1] is not None, wd[1]), reverse=True)]
+                    if new_warns != warns:
+                        p["warnings"] = new_warns
+                        changed = True
+            if changed:
+                # Persist back to the resource markdown file
+                fn = f"resource/{obj['id']}/{obj['id']}.md"
+                try:
+                    (metadata, md) = load_md(fn)
+                    if "products" in metadata and isinstance(metadata["products"], list):
+                        # Align warnings from in-memory obj to file metadata
+                        # Build a map from product id to warnings
+                        id_to_warns = {}
+                        for p in obj["products"]:
+                            if isinstance(p, dict) and "id" in p and "warnings" in p:
+                                id_to_warns[p["id"]] = p["warnings"]
+                        for idx, prod in enumerate(metadata["products"]):
+                            if isinstance(prod, dict) and "id" in prod and prod["id"] in id_to_warns:
+                                if id_to_warns[prod["id"]] != prod.get("warnings"):
+                                    metadata["products"][idx]["warnings"] = id_to_warns[prod["id"]]
+                                    updated_resources += 1
+                    with open(fn, "w") as f:
+                        f.write("---\n" + yaml.dump(metadata) + "---\n" + md)
+                except Exception as e:
+                    print(f"Error updating warnings for resource {obj['id']}: {str(e)}")
+        if updated_resources:
+            print(f"Deduplicated warnings for {updated_resources} product entries across resources")
+
     def create_stub_resource_pages(objs):
         """
         Create stub Resource pages for sources mentioned in products but don't have a page yet.
@@ -888,6 +967,9 @@ def concat_resource_yaml(args):
             library.append(obj)
     objs = foundry + library + obsolete
     cfg["resources"] = objs
+
+    # Deduplicate similar product warnings (keep most recent)
+    dedupe_product_warnings(objs)
 
     # Generate product pages
     generate_product_pages(objs)
