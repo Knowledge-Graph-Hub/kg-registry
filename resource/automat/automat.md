@@ -36,6 +36,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: Robokop Plus
   format: kgx-jsonl
@@ -49,6 +51,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: Biolink Automat
   format: kgx-jsonl
@@ -61,6 +65,8 @@ products:
   - automat
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: CTD Automat
@@ -76,6 +82,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: DrugCentral Automat
   format: kgx-jsonl
@@ -90,6 +98,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: GTEx Automat
   format: kgx-jsonl
@@ -99,6 +109,8 @@ products:
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/GTEx_Automat/latest/kgx_files
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: GtoPdb Automat
@@ -110,6 +122,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: GWASCatalog Automat
   format: kgx-jsonl
@@ -120,6 +134,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: Hetio Automat
   format: kgx-jsonl
@@ -128,6 +144,8 @@ products:
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/Hetio_Automat/latest/kgx_files
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: HGNC Automat
@@ -139,6 +157,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: HMDB Automat
   format: kgx-jsonl
@@ -148,6 +168,8 @@ products:
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/HMDB_Automat/latest/kgx_files
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: HumanGOA Automat
@@ -159,6 +181,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: IntAct Automat
   format: kgx-jsonl
@@ -169,6 +193,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: OntologicalHierarchy Automat
   format: kgx-jsonl
@@ -177,6 +203,8 @@ products:
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/OntologicalHierarchy_Automat/latest/kgx_files
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: PANTHER Automat
@@ -188,6 +216,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: PHAROS Automat
   format: kgx-jsonl
@@ -198,6 +228,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: STRING-DB Automat
   format: kgx-jsonl
@@ -207,6 +239,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: UberGraph Automat
   format: kgx-jsonl
@@ -215,6 +249,8 @@ products:
   product_url: https://stars.renci.org/var/plater/bl-3.1.2/UberGraph_Automat/latest/kgx_files
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
     when accessing file'
 repository: https://github.com/RobokopU24/
 ---
