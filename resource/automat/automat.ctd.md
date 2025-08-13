@@ -7,11 +7,8 @@ infores_id: automat-ctd
 name: ctd_automat
 original_source:
 - ctd
-product_url: https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files
+product_url: https://stars.renci.org/var/plater/bl-4.2.1/CTD_Automat/f92c663160ec5e36/
 secondary_source:
 - automat
-warnings:
-- 'File was not able to be retrieved when checked on 2025-08-12: HTTP 404 error when
-  accessing file'
 layout: product_detail
 ---

@@ -53,6 +53,16 @@ products:
   product_url: https://ubergraph.apps.renci.org/downloads/current/ubergraph.nq.gz
   secondary_source:
   - ubergraph
+- category: GraphProduct
+  description: UberGraph Automat
+  format: kgx-jsonl
+  id: automat.ubergraph
+  name: ubergraph_automat
+  original_source:
+  - ubergraph
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/UbergraphRedundant_Automat/e6b3204fd3a04413/
+  secondary_source:
+  - automat
 repository: https://github.com/INCATools/ubergraph
 ---
 ### Ubergraph: A Unified Semantic Knowledge Graph for OBO Ontologies

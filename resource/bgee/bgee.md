@@ -282,6 +282,146 @@ products:
   product_url: https://github.com/gyorilab/indra_cogex
   secondary_source:
   - indra
+- category: GraphProduct
+  description: KGX Distribution of KG-Monarch
+  format: kgx
+  id: kg-monarch.graph
+  name: KGX Distribution of KG-Monarch
+  original_source:
+  - phenio
+  - alliance
+  - bgee
+  - biogrid
+  - clingen
+  - clinvar
+  - ctd
+  - dictybase
+  - go
+  - hp
+  - maxo
+  - panther
+  - pombase
+  - reactome
+  - string
+  - xenbase
+  - zfin
+  product_file_size: 230877741
+  product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
+  secondary_source:
+  - kg-monarch
+- category: GraphProduct
+  description: KGX JSON-Lines Distribution of KG-Monarch
+  format: kgx-jsonl
+  id: kg-monarch.graph.jsonl
+  name: KGX JSON-L Distribution of KG-Monarch
+  original_source:
+  - phenio
+  - alliance
+  - bgee
+  - biogrid
+  - clingen
+  - clinvar
+  - ctd
+  - dictybase
+  - go
+  - hp
+  - maxo
+  - panther
+  - pombase
+  - reactome
+  - string
+  - xenbase
+  - zfin
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
+  secondary_source:
+  - kg-monarch
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
+- category: GraphProduct
+  description: RDF Distribution of KG-Monarch
+  format: rdfxml
+  id: kg-monarch.graph.rdf
+  name: RDF Distribution of KG-Monarch
+  original_source:
+  - phenio
+  - alliance
+  - bgee
+  - biogrid
+  - clingen
+  - clinvar
+  - ctd
+  - dictybase
+  - go
+  - hp
+  - maxo
+  - panther
+  - pombase
+  - reactome
+  - string
+  - xenbase
+  - zfin
+  product_file_size: 879238775
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.nt.gz
+  secondary_source:
+  - kg-monarch
+- category: GraphProduct
+  description: Neo4j Dump of KG-Monarch
+  dump_format: neo4j
+  id: kg-monarch.graph.neo4j
+  name: Neo4j Dump of KG-Monarch
+  original_source:
+  - phenio
+  - alliance
+  - bgee
+  - biogrid
+  - clingen
+  - clinvar
+  - ctd
+  - dictybase
+  - go
+  - hp
+  - maxo
+  - panther
+  - pombase
+  - reactome
+  - string
+  - xenbase
+  - zfin
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
+  secondary_source:
+  - kg-monarch
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
+- category: GraphProduct
+  description: DuckDB database of KG-Monarch
+  id: kg-monarch.graph.duckdb
+  name: DuckDB database of KG-Monarch
+  original_source:
+  - phenio
+  - alliance
+  - bgee
+  - biogrid
+  - clingen
+  - clinvar
+  - ctd
+  - dictybase
+  - go
+  - hp
+  - maxo
+  - panther
+  - pombase
+  - reactome
+  - string
+  - xenbase
+  - zfin
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
+  secondary_source:
+  - kg-monarch
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error
+    when accessing file'
 publications:
 - authors:
   - Bastian FB
