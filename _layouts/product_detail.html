@@ -134,7 +134,8 @@ layout: default
     </div>
 
     {% if page.warnings %}
-    {% for warning in page.warnings %}
+    {% assign uniq_warnings = page.warnings | uniq %}
+    {% for warning in uniq_warnings %}
     <div class="alert alert-warning" role="alert">
       ⚠ {{warning}}
     </div>
