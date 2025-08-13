@@ -10,6 +10,12 @@ contacts:
     value: cmungall
   label: Christopher J. Mungall
   orcid: 0000-0002-6601-2165
+- category: Organization
+  contact_details:
+  - contact_type: other
+    contact_type_name: Monarch Initiative Community
+    contact_type_url: https://groups.google.com/g/monarch-friends/
+  label: Monarch Initiative
 description: >-
  The Monarch Initiative is an international consortium that leads key global standards and semantic data integration technologies. To maximize utility and impact, the Monarch platform is composed of multiple open-source, open-access components.
 domains:
@@ -28,7 +34,23 @@ products:
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
   original_source:
-  - kg-monarch
+  - phenio
+  - alliance
+  - bgee
+  - biogrid
+  - clingen
+  - clinvar
+  - ctd
+  - dictybase
+  - go
+  - hp
+  - maxo
+  - panther
+  - pombase
+  - reactome
+  - string
+  - xenbase
+  - zfin
   product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
   secondary_source:
   - kg-monarch
@@ -38,7 +60,23 @@ products:
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
   original_source:
-  - kg-monarch
+  - phenio
+  - alliance
+  - bgee
+  - biogrid
+  - clingen
+  - clinvar
+  - ctd
+  - dictybase
+  - go
+  - hp
+  - maxo
+  - panther
+  - pombase
+  - reactome
+  - string
+  - xenbase
+  - zfin
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   secondary_source:
   - kg-monarch
@@ -48,7 +86,23 @@ products:
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
   original_source:
-  - kg-monarch
+  - phenio
+  - alliance
+  - bgee
+  - biogrid
+  - clingen
+  - clinvar
+  - ctd
+  - dictybase
+  - go
+  - hp
+  - maxo
+  - panther
+  - pombase
+  - reactome
+  - string
+  - xenbase
+  - zfin
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.nt.gz
   secondary_source:
   - kg-monarch
@@ -58,7 +112,23 @@ products:
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   original_source:
-  - kg-monarch
+  - phenio
+  - alliance
+  - bgee
+  - biogrid
+  - clingen
+  - clinvar
+  - ctd
+  - dictybase
+  - go
+  - hp
+  - maxo
+  - panther
+  - pombase
+  - reactome
+  - string
+  - xenbase
+  - zfin
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
   secondary_source:
   - kg-monarch
@@ -67,7 +137,23 @@ products:
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
   original_source:
-  - kg-monarch
+  - phenio
+  - alliance
+  - bgee
+  - biogrid
+  - clingen
+  - clinvar
+  - ctd
+  - dictybase
+  - go
+  - hp
+  - maxo
+  - panther
+  - pombase
+  - reactome
+  - string
+  - xenbase
+  - zfin
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
   secondary_source:
   - kg-monarch
