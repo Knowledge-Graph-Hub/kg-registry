@@ -27,7 +27,7 @@ from pydantic import (
 
 
 metamodel_version = "None"
-version = "0.0.3"
+version = "0.0.4"
 
 
 class ConfiguredBaseModel(BaseModel):
@@ -64,9 +64,9 @@ class LinkMLMeta(RootModel):
 linkml_meta = LinkMLMeta({'default_prefix': 'kgr',
      'default_range': 'string',
      'description': 'A schema for representing metadata about\n'
-                    'knowlege graphs, their sources, and their contents.',
+                    'knowledge graphs, their sources, and their contents.',
      'id': 'https://w3id.org/knowledge-graph-hub/kg_registry_schema',
-     'imports': ['linkml:types'],
+     'imports': ['linkml:types', 'kg_registry_schema_formats'],
      'license': 'GPL-3.0',
      'name': 'kg_registry_schema',
      'prefixes': {'dcterms': {'prefix_prefix': 'dcterms',
@@ -86,6 +86,210 @@ linkml_meta = LinkMLMeta({'default_prefix': 'kgr',
                                  'from_schema': 'https://w3id.org/knowledge-graph-hub/kg_registry_schema',
                                  'name': 'category_type',
                                  'typeof': 'string'}}} )
+
+class DumpFormatEnum(str, Enum):
+    """
+    The format of a dump of a product, generally a graph, as a file. Note the product may also be compressed.
+    """
+    gpickle = "gpickle"
+    """
+    The gpickle format, or the output of pickling a NetworkX graph object. This file ends in .gpickle.
+    """
+    pickle = "pickle"
+    """
+    The pickle format, or the output of pickling a Python object. This file ends in .pkl or .pickle.
+    """
+    neo4j = "neo4j"
+    """
+    The Neo4j dump format, or the output of a Neo4j database dump. The file usually ends in .db, .dump, or .db.dump.
+    """
+    other = "other"
+    """
+    Another format not defined here.
+    """
+
+
+class FormatEnum(str, Enum):
+    """
+    The serialization/format of a product.
+    """
+    boolnet = "boolnet"
+    """
+    The Boolean Network (BoolNet) format, which is a format for representing Boolean networks. Used with the BoolNet package in R for modeling and analyzing biological networks.
+    """
+    chebi_sdf = "chebi_sdf"
+    """
+    A ChEBI-specific SDF format. Unlike the general SDF format, Each data item may be longer than 80 characters and has no maximum limit. Each line after the Data Header is a separate data item. For example, each new line in the synonyms is a separate synonym.
+    """
+    csv = "csv"
+    """
+    The Comma-Separated Values (CSV) format. It has rows of data separated by newlines, and columns separated by commas.
+    """
+    doc = "doc"
+    """
+    The Microsoft Word Document (DOC) format, a binary file format used by Microsoft Word. It is commonly used for word processing documents.
+    """
+    docx = "docx"
+    """
+    The Microsoft Word Open XML Document (DOCX) format, a modern file format for Microsoft Word documents. It is a zipped, XML-based file format that allows for more efficient storage and better compatibility with other software, as compared to the older DOC format.
+    """
+    dot = "dot"
+    """
+    The DOT format, a plain text graph description language used to define the structure of graphs. It is often used with Graphviz to visualize graphs.
+    """
+    fasta = "fasta"
+    """
+    The FASTA format, a text-based format for representing nucleotide or peptide sequences. It consists of a single header line followed by one or more lines of sequence data.
+    """
+    graphql = "graphql"
+    """
+    The GraphQL format, a query language for APIs and a runtime for executing those queries against your data. It allows clients to request exactly what they need and makes it easier to evolve APIs over time.
+    """
+    hdf5 = "hdf5"
+    """
+    The Hierarchical Data Format version 5 (HDF5) format, a file format and set of tools for managing complex data. It is designed to store and organize large amounts of data in a hierarchical structure, allowing for efficient access and manipulation.
+    """
+    http = "http"
+    """
+    The Hypertext Transfer Protocol (HTTP) format. This is a protocol for transferring data over the web. If a product is in this format, it is likely an web site or API.
+    """
+    java = "java"
+    """
+    The Java source code format, which is a text file containing Java code. It is used for writing scripts and programs in the Java language.
+    """
+    javascript = "javascript"
+    """
+    The JavaScript file format, which is a text file containing JavaScript code. It is used for writing scripts and programs in the JavaScript language.
+    """
+    json = "json"
+    """
+    The JavaScript Object Notation (JSON) format, a lightweight data-interchange format that's easy for humans to read and write and easy for machines to parse and generate.
+    """
+    jsonld = "jsonld"
+    """
+    The JSON for Linked Data (JSON-LD) format, which extends JSON with semantics for linked data by providing a method of encoding linked data using JSON. It enables data in JSON to be interpreted as RDF and allows JSON data to be interoperable at Web-scale.
+    """
+    kgx = "kgx"
+    """
+    The KGX standard, which is a graph exchange format for knowledge graphs. By default, this assumes KGX as TSV with separate node and edge files, usually named nodes.tsv and edges.tsv.
+    """
+    kgx_json = "kgx-json"
+    """
+    The KGX standard, which is a graph exchange format for knowledge graphs. This is the JSON format, with nodes and edges in a single file.
+    """
+    kgx_jsonl = "kgx-jsonl"
+    """
+    The KGX standard, which is a graph exchange format for knowledge graphs. This is the JSON Lines format, with separate node and edge files, usually named nodes.jsonl and edges.jsonl.
+    """
+    kgx_rdf = "kgx-rdf"
+    """
+    The KGX standard, which is a graph exchange format for knowledge graphs. This is the RDF Turtle (TTL) format, with nodes and edges in a single file.
+    """
+    mixed = "mixed"
+    """
+    A product that contains multiple formats or serializations. This is used when a product is not easily categorized into a single format, such as a codebase that includes multiple file types (e.g., Python scripts, JSON files, etc.).
+    """
+    mysql = "mysql"
+    """
+    The MySQL relational database management system. If a product is in this format, it is likely a MySQL database dump.
+    """
+    nquads = "nquads"
+    """
+    The N-Quads format, an extension of the N-Triples format that adds an optional fourth element to represent the graph name or context. This allows for representing multiple RDF graphs in a single document while maintaining their separation.
+    """
+    ntriples = "ntriples"
+    """
+    The N-Triples format, a line-based, plain text serialization format for RDF graphs. Each line contains a single RDF triple consisting of subject, predicate, and object, separated by whitespace and terminated by a period.
+    """
+    obo = "obo"
+    """
+    The Open Biomedical Ontologies (OBO) format, a file format for representing ontologies in the biomedical domain. It's designed to be simple and human-readable while supporting the necessary expressivity for representing biological concepts.
+    """
+    owl = "owl"
+    """
+    The Web Ontology Language (OWL) format, a semantic web language designed to represent rich and complex knowledge about things and their relationships. OWL builds on RDF and adds more vocabulary for describing properties and classes.
+    """
+    postgres = "postgres"
+    """
+    The PostgreSQL relational database management system. If a product is in this format, it is likely a PostgreSQL database dump.
+    """
+    protobuf = "protobuf"
+    """
+    The Protocol Buffers (Protobuf) format, a language-neutral, platform-neutral, extensible mechanism for serializing structured data. It's smaller, faster, and simpler than XML, designed for high-performance data interchange.
+    """
+    psi_mi_mitab = "psi_mi_mitab"
+    """
+    The PSI-MI MITAB format, which is a tab-delimited format for representing molecular interaction data. It is used to exchange information about molecular interactions between different databases.
+    """
+    psi_mi_xml = "psi_mi_xml"
+    """
+    The PSI-MI XML format, which is a standard for representing molecular interaction data in XML. It is used to exchange information about molecular interactions between different databases.
+    """
+    python = "python"
+    """
+    The Python script format, which is a text file containing Python code. It is used for writing scripts and programs in the Python language.
+    """
+    rdfxml = "rdfxml"
+    """
+    The RDF/XML format, an XML syntax for expressing RDF graphs as an XML document. It was the first standardized syntax for RDF and is widely used for interchange and archiving.
+    """
+    sbgnml = "sbgnml"
+    """
+    The Systems Biology Graphical Notation (SBGN) XML format, which is a standard for representing biological pathways and processes in a graphical form.
+    """
+    sbml = "sbml"
+    """
+    The Systems Biology Markup Language (SBML) XML format, which is a computer-readable format for representing models of biological processes.
+    """
+    sdf = "sdf"
+    """
+    The Structure Data File (SDF) format.
+    """
+    shacl = "shacl"
+    """
+    The Shapes Constraint Language (SHACL) format, a language for validating RDF graphs against a set of conditions. SHACL allows for defining constraints on RDF graphs, including the structure, values, and other features of data.
+    """
+    shex = "shex"
+    """
+    The Shape Expressions (ShEx) format, a language for validating and describing RDF data. ShEx provides a concise, human-readable syntax for expressing constraints on RDF graphs, including cardinality constraints and datatype restrictions.
+    """
+    sif = "sif"
+    """
+    The Simple Interaction Format (SIF), a simple text format for representing interactions between biological entities. It is often used to represent networks of interactions.
+    """
+    sqlite = "sqlite"
+    """
+    The SQLite relational database management system. If a product is in this format, it is likely a SQLite database dump.
+    """
+    sssom = "sssom"
+    """
+    The Simple Standard for Sharing Ontological Mappings (SSSOM) format, which a format for mapping between different ontologies and other identifier systems.
+    """
+    trapi_jsonl = "trapi-jsonl"
+    """
+    The Translator Reasoner API (TRAPI) format, which is a JSON Lines format for TRAPI responses.
+    """
+    tsv = "tsv"
+    """
+    The Tab-Separated Values (TSV) format. It has rows of data separated by newlines, and columns separated by tabs.
+    """
+    ttl = "ttl"
+    """
+    The Turtle (TTL) format, a textual syntax for RDF that allows RDF graphs to be written in a compact and natural text form. Turtle provides prefixes and keywords that make RDF data more readable compared to XML or N-Triples formats.
+    """
+    vcf = "vcf"
+    """
+    The Variant Call Format (VCF), a text file format for storing gene sequence variations. It is commonly used in bioinformatics to store gene sequence variations, such as single nucleotide polymorphisms (SNPs).
+    """
+    xml = "xml"
+    """
+    The Extensible Markup Language (XML) format. It is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.
+    """
+    yaml = "yaml"
+    """
+    The YAML Ain't Markup Language (YAML) format, a human-readable data serialization format. It is often used for configuration files and data exchange between languages with different data structures.
+    """
+
 
 class ActivityStatusEnum(str, Enum):
     """
@@ -324,210 +528,6 @@ class DomainEnum(str, Enum):
     stub = "stub"
     """
     This is not a domain, but rather a category for resources that are not yet categorized and exist only as a placeholder.
-    """
-
-
-class DumpFormatEnum(str, Enum):
-    """
-    The format of a dump of a product, generally a graph, as a file. Note the product may also be compressed.
-    """
-    gpickle = "gpickle"
-    """
-    The gpickle format, or the output of pickling a NetworkX graph object. This file ends in .gpickle.
-    """
-    pickle = "pickle"
-    """
-    The pickle format, or the output of pickling a Python object. This file ends in .pkl or .pickle.
-    """
-    neo4j = "neo4j"
-    """
-    The Neo4j dump format, or the output of a Neo4j database dump. The file usually ends in .db, .dump, or .db.dump.
-    """
-    other = "other"
-    """
-    Another format not defined here.
-    """
-
-
-class FormatEnum(str, Enum):
-    """
-    The serialization/format of a product.
-    """
-    json = "json"
-    """
-    The JavaScript Object Notation (JSON) format, a lightweight data-interchange format that's easy for humans to read and write and easy for machines to parse and generate.
-    """
-    jsonld = "jsonld"
-    """
-    The JSON for Linked Data (JSON-LD) format, which extends JSON with semantics for linked data by providing a method of encoding linked data using JSON. It enables data in JSON to be interpreted as RDF and allows JSON data to be interoperable at Web-scale.
-    """
-    rdfxml = "rdfxml"
-    """
-    The RDF/XML format, an XML syntax for expressing RDF graphs as an XML document. It was the first standardized syntax for RDF and is widely used for interchange and archiving.
-    """
-    ttl = "ttl"
-    """
-    The Turtle (TTL) format, a textual syntax for RDF that allows RDF graphs to be written in a compact and natural text form. Turtle provides prefixes and keywords that make RDF data more readable compared to XML or N-Triples formats.
-    """
-    ntriples = "ntriples"
-    """
-    The N-Triples format, a line-based, plain text serialization format for RDF graphs. Each line contains a single RDF triple consisting of subject, predicate, and object, separated by whitespace and terminated by a period.
-    """
-    nquads = "nquads"
-    """
-    The N-Quads format, an extension of the N-Triples format that adds an optional fourth element to represent the graph name or context. This allows for representing multiple RDF graphs in a single document while maintaining their separation.
-    """
-    owl = "owl"
-    """
-    The Web Ontology Language (OWL) format, a semantic web language designed to represent rich and complex knowledge about things and their relationships. OWL builds on RDF and adds more vocabulary for describing properties and classes.
-    """
-    obo = "obo"
-    """
-    The Open Biomedical Ontologies (OBO) format, a file format for representing ontologies in the biomedical domain. It's designed to be simple and human-readable while supporting the necessary expressivity for representing biological concepts.
-    """
-    graphql = "graphql"
-    """
-    The GraphQL format, a query language for APIs and a runtime for executing those queries against your data. It allows clients to request exactly what they need and makes it easier to evolve APIs over time.
-    """
-    protobuf = "protobuf"
-    """
-    The Protocol Buffers (Protobuf) format, a language-neutral, platform-neutral, extensible mechanism for serializing structured data. It's smaller, faster, and simpler than XML, designed for high-performance data interchange.
-    """
-    shacl = "shacl"
-    """
-    The Shapes Constraint Language (SHACL) format, a language for validating RDF graphs against a set of conditions. SHACL allows for defining constraints on RDF graphs, including the structure, values, and other features of data.
-    """
-    shex = "shex"
-    """
-    The Shape Expressions (ShEx) format, a language for validating and describing RDF data. ShEx provides a concise, human-readable syntax for expressing constraints on RDF graphs, including cardinality constraints and datatype restrictions.
-    """
-    kgx = "kgx"
-    """
-    The KGX standard, which is a graph exchange format for knowledge graphs. By default, this assumes KGX as TSV with separate node and edge files, usually named nodes.tsv and edges.tsv.
-    """
-    kgx_json = "kgx-json"
-    """
-    The KGX standard, which is a graph exchange format for knowledge graphs. This is the JSON format, with nodes and edges in a single file.
-    """
-    kgx_jsonl = "kgx-jsonl"
-    """
-    The KGX standard, which is a graph exchange format for knowledge graphs. This is the JSON Lines format, with separate node and edge files, usually named nodes.jsonl and edges.jsonl.
-    """
-    kgx_rdf = "kgx-rdf"
-    """
-    The KGX standard, which is a graph exchange format for knowledge graphs. This is the RDF Turtle (TTL) format, with nodes and edges in a single file.
-    """
-    sssom = "sssom"
-    """
-    The Simple Standard for Sharing Ontological Mappings (SSSOM) format, which a format for mapping between different ontologies and other identifier systems.
-    """
-    sdf = "sdf"
-    """
-    The Structure Data File (SDF) format.
-    """
-    chebi_sdf = "chebi_sdf"
-    """
-    A ChEBI-specific SDF format. Unlike the general SDF format, Each data item may be longer than 80 characters and has no maximum limit. Each line after the Data Header is a separate data item. For example, each new line in the synonyms is a separate synonym.
-    """
-    tsv = "tsv"
-    """
-    The Tab-Separated Values (TSV) format. It has rows of data separated by newlines, and columns separated by tabs.
-    """
-    csv = "csv"
-    """
-    The Comma-Separated Values (CSV) format. It has rows of data separated by newlines, and columns separated by commas.
-    """
-    xml = "xml"
-    """
-    The Extensible Markup Language (XML) format. It is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.
-    """
-    fasta = "fasta"
-    """
-    The FASTA format, a text-based format for representing nucleotide or peptide sequences. It consists of a single header line followed by one or more lines of sequence data.
-    """
-    http = "http"
-    """
-    The Hypertext Transfer Protocol (HTTP) format. This is a protocol for transferring data over the web. If a product is in this format, it is likely an web site or API.
-    """
-    postgres = "postgres"
-    """
-    The PostgreSQL relational database management system. If a product is in this format, it is likely a PostgreSQL database dump.
-    """
-    mysql = "mysql"
-    """
-    The MySQL relational database management system. If a product is in this format, it is likely a MySQL database dump.
-    """
-    sqlite = "sqlite"
-    """
-    The SQLite relational database management system. If a product is in this format, it is likely a SQLite database dump.
-    """
-    trapi_jsonl = "trapi-jsonl"
-    """
-    The Translator Reasoner API (TRAPI) format, which is a JSON Lines format for TRAPI responses.
-    """
-    yaml = "yaml"
-    """
-    The YAML Ain't Markup Language (YAML) format, a human-readable data serialization format. It is often used for configuration files and data exchange between languages with different data structures.
-    """
-    vcf = "vcf"
-    """
-    The Variant Call Format (VCF), a text file format for storing gene sequence variations. It is commonly used in bioinformatics to store gene sequence variations, such as single nucleotide polymorphisms (SNPs).
-    """
-    sbgnml = "sbgnml"
-    """
-    The Systems Biology Graphical Notation (SBGN) XML format, which is a standard for representing biological pathways and processes in a graphical form.
-    """
-    sbml = "sbml"
-    """
-    The Systems Biology Markup Language (SBML) XML format, which is a computer-readable format for representing models of biological processes.
-    """
-    sif = "sif"
-    """
-    The Simple Interaction Format (SIF), a simple text format for representing interactions between biological entities. It is often used to represent networks of interactions.
-    """
-    dot = "dot"
-    """
-    The DOT format, a plain text graph description language used to define the structure of graphs. It is often used with Graphviz to visualize graphs.
-    """
-    boolnet = "boolnet"
-    """
-    The Boolean Network (BoolNet) format, which is a format for representing Boolean networks. Used with the BoolNet package in R for modeling and analyzing biological networks.
-    """
-    doc = "doc"
-    """
-    The Microsoft Word Document (DOC) format, a binary file format used by Microsoft Word. It is commonly used for word processing documents.
-    """
-    docx = "docx"
-    """
-    The Microsoft Word Open XML Document (DOCX) format, a modern file format for Microsoft Word documents. It is a zipped, XML-based file format that allows for more efficient storage and better compatibility with other software, as compared to the older DOC format.
-    """
-    python = "python"
-    """
-    The Python script format, which is a text file containing Python code. It is used for writing scripts and programs in the Python language.
-    """
-    java = "java"
-    """
-    The Java source code format, which is a text file containing Java code. It is used for writing scripts and programs in the Java language.
-    """
-    javascript = "javascript"
-    """
-    The JavaScript file format, which is a text file containing JavaScript code. It is used for writing scripts and programs in the JavaScript language.
-    """
-    hdf5 = "hdf5"
-    """
-    The Hierarchical Data Format version 5 (HDF5) format, a file format and set of tools for managing complex data. It is designed to store and organize large amounts of data in a hierarchical structure, allowing for efficient access and manipulation.
-    """
-    psi_mi_xml = "psi_mi_xml"
-    """
-    The PSI-MI XML format, which is a standard for representing molecular interaction data in XML. It is used to exchange information about molecular interactions between different databases.
-    """
-    psi_mi_mitab = "psi_mi_mitab"
-    """
-    The PSI-MI MITAB format, which is a tab-delimited format for representing molecular interaction data. It is used to exchange information about molecular interactions between different databases.
-    """
-    mixed = "mixed"
-    """
-    A product that contains multiple formats or serializations. This is used when a product is not easily categorized into a single format, such as a codebase that includes multiple file types (e.g., Python scripts, JSON files, etc.).
     """
 
 
