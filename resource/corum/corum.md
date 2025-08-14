@@ -8,7 +8,7 @@ contacts:
     value: https://www.helmholtz-munich.de/
   - contact_type: email
     value: corum@helmholtz-muenchen.de
-  label: Helmholtz Zentrum München
+  label: "Helmholtz Zentrum M\xFCnchen"
 creation_date: '2025-07-22T00:00:00Z'
 description: CORUM (Comprehensive Resource of Mammalian Protein Complexes) is a curated
   database of experimentally characterized protein complexes from mammalian organisms,
@@ -38,16 +38,11 @@ products:
   name: CORUM All Complexes
   product_url: https://mips.helmholtz-muenchen.de/corum/download/allComplexes.txt.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-13: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-08-14: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
-  - 'File was not able to be retrieved when checked on 2025-08-12: Error connecting
-    to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
-    retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1017)'')))'
   - 'File was not able to be retrieved when checked on 2025-08-13: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
@@ -64,16 +59,11 @@ products:
   name: CORUM Core Complexes
   product_url: https://mips.helmholtz-muenchen.de/corum/download/coreComplexes.txt.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-13: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-08-14: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
-  - 'File was not able to be retrieved when checked on 2025-08-12: Error connecting
-    to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
-    retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1017)'')))'
   - 'File was not able to be retrieved when checked on 2025-08-13: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
@@ -90,16 +80,11 @@ products:
   name: CORUM PSI-MI
   product_url: https://mips.helmholtz-muenchen.de/corum/download/psi.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-13: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-08-14: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
-  - 'File was not able to be retrieved when checked on 2025-08-12: Error connecting
-    to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
-    retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1017)'')))'
   - 'File was not able to be retrieved when checked on 2025-08-13: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
@@ -115,16 +100,11 @@ products:
   name: CORUM MITAB
   product_url: https://mips.helmholtz-muenchen.de/corum/download/mitab.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-13: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-08-14: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
-  - 'File was not able to be retrieved when checked on 2025-08-12: Error connecting
-    to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
-    retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1017)'')))'
   - 'File was not able to be retrieved when checked on 2025-08-13: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
@@ -223,7 +203,7 @@ products:
   - uo
 publications:
 - authors:
-  - Stefanie Gößler
+  - "Stefanie G\xF6\xDFler"
   - Gisela Fobo
   - Barbara Wankerl
   - Christopher J. Mann
@@ -233,7 +213,7 @@ publications:
   id: doi:10.1093/nar/gkac1015
   journal: Nucleic Acids Research
   preferred: true
-  title: 'CORUM: the comprehensive resource of mammalian protein complexes—2023'
+  title: "CORUM: the comprehensive resource of mammalian protein complexes\u20142023"
   year: '2023'
 - authors:
   - Andreas Giurgiu
@@ -247,7 +227,7 @@ publications:
   doi: 10.1093/nar/gky973
   id: doi:10.1093/nar/gky973
   journal: Nucleic Acids Research
-  title: 'CORUM: the comprehensive resource of mammalian protein complexes—2019'
+  title: "CORUM: the comprehensive resource of mammalian protein complexes\u20142019"
   year: '2019'
 - authors:
   - Andreas Ruepp
@@ -259,12 +239,12 @@ publications:
   - Brigitte Waegele
   - Thorsten Schmidt
   - Octave Noubibou Doudieu
-  - Volker Stümpflen
+  - "Volker St\xFCmpflen"
   - Hans-Werner Mewes
   doi: 10.1093/nar/gkp914
   id: doi:10.1093/nar/gkp914
   journal: Nucleic Acids Research
-  title: 'CORUM: the comprehensive resource of mammalian protein complexes—2009'
+  title: "CORUM: the comprehensive resource of mammalian protein complexes\u20142009"
   year: '2010'
 repository: https://mips.helmholtz-muenchen.de/corum/download
 ---

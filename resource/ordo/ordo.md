@@ -51,6 +51,9 @@ products:
   id: orphacode.nomenclature
   name: Orphanet Nomenclature Pack
   product_url: https://www.orphacode.org/pack-nomenclature/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: API for accessing the Orphanet nomenclature pack data, allowing flexible
     implementation into various healthcare information systems.
