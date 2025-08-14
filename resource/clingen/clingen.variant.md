@@ -7,5 +7,8 @@ format: csv
 id: clingen.variant
 name: Variant Pathogenicity Curations
 product_url: https://search.clinicalgenome.org/kb/variant-pathogenicity/all
+warnings:
+- 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
+  to URL'
 layout: product_detail
 ---
