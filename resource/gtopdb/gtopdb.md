@@ -49,7 +49,7 @@ products:
   name: GtoPdb Targets and Families
   product_url: https://www.guidetopharmacology.org/DATA/targets_and_families.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
     header found'
 - category: Product
   description: Complete list of ligands including drugs, small molecules, and other
@@ -59,7 +59,7 @@ products:
   name: GtoPdb Ligands Dataset
   product_url: https://www.guidetopharmacology.org/DATA/ligands.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
     header found'
 - category: Product
   description: Comprehensive dataset of all interactions between ligands and targets
@@ -68,7 +68,7 @@ products:
   name: GtoPdb Interactions Dataset
   product_url: https://www.guidetopharmacology.org/DATA/interactions.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
     header found'
 - category: Product
   description: Detailed interactions list for approved drugs and their targets
@@ -77,7 +77,7 @@ products:
   name: GtoPdb Approved Drugs Dataset
   product_url: https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
     header found'
 - category: Product
   description: SDF file containing chemical structures with SMILES for all ligands
@@ -87,7 +87,7 @@ products:
   name: GtoPdb Ligand SDF File
   product_url: https://www.guidetopharmacology.org/DATA/all_ligands.sdf
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
     header found'
 - category: Product
   description: RDF/linked data format of the GtoPdb data (target-ligand interactions
@@ -97,7 +97,7 @@ products:
   name: GtoPdb RDF Dataset
   product_url: https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
     header found'
 - category: Product
   description: Complete PostgreSQL database dump of the current Guide to Pharmacology
@@ -106,7 +106,7 @@ products:
   name: GtoPdb Full Database
   product_url: https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-13: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
     header found'
 - category: GraphicalInterface
   description: An extension of the Guide to PHARMACOLOGY database providing immunological

@@ -9,7 +9,7 @@ license:
 name: pathbank OBO Graph JSON
 product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.json
 warnings:
-- 'File was not able to be retrieved when checked on 2025-08-13: HTTP 404 error when
+- 'File was not able to be retrieved when checked on 2025-08-14: HTTP 404 error when
   accessing file'
 layout: product_detail
 ---

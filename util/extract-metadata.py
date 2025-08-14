@@ -19,7 +19,7 @@ __author__ = "cjm"
 HERE = pathlib.Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
 SOURCE_SCHEMA_PATH = ROOT.joinpath(
-    "src", "kg_registry", "kg_registry_schema", "schema", "kg_registry_schema.yaml")
+    "src", "kg_registry", "kg_registry_schema", "schema", "kg_registry_schema_all.yaml")
 SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "kg_registry_schema.json")
 
 
@@ -251,7 +251,8 @@ def concat_resource_yaml(args):
             return ''
         s = msg
         # Remove ISO and YYYY-MM-DD date patterns and nearby prepositions
-        s = re.sub(r"\b(on|as of|checked on|at)\s+\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}Z)?", "", s, flags=re.IGNORECASE)
+        s = re.sub(
+            r"\b(on|as of|checked on|at)\s+\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}Z)?", "", s, flags=re.IGNORECASE)
         s = re.sub(r"\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}Z)?", "", s)
         # Collapse whitespace and punctuation spaces
         s = re.sub(r"\s+", " ", s).strip().lower()
@@ -259,7 +260,8 @@ def concat_resource_yaml(args):
 
     def _date_from_warning(msg: str):
         """Extract a date object from a warning message if present (YYYY-MM-DD or ISO with Z)."""
-        import re, datetime as _dt
+        import re
+        import datetime as _dt
         if not isinstance(msg, str):
             return None
         m = re.search(r"(\d{4}-\d{2}-\d{2})(?:T\d{2}:\d{2}:\d{2}Z)?", msg)
@@ -295,7 +297,8 @@ def concat_resource_yaml(args):
                             if d and ((existing_date is None) or (d > existing_date)):
                                 groups[key] = (w, d)
                     # Rebuild list: choose the kept warning per group; stable order by descending date then text
-                    new_warns = [wd[0] for wd in sorted(groups.values(), key=lambda wd: (wd[1] is not None, wd[1]), reverse=True)]
+                    new_warns = [wd[0] for wd in sorted(
+                        groups.values(), key=lambda wd: (wd[1] is not None, wd[1]), reverse=True)]
                     if new_warns != warns:
                         p["warnings"] = new_warns
                         changed = True
@@ -416,10 +419,12 @@ def concat_resource_yaml(args):
 
                         # Make sure dates are in the correct format
                         if "creation_date" not in metadata:
-                            metadata["creation_date"] = datetime.datetime.now().strftime("%Y-%m-%dT00:00:00Z")
+                            metadata["creation_date"] = datetime.datetime.now().strftime(
+                                "%Y-%m-%dT00:00:00Z")
                         if "last_modified_date" not in metadata:
-                            metadata["last_modified_date"] = datetime.datetime.now().strftime("%Y-%m-%dT00:00:00Z")
-                        
+                            metadata["last_modified_date"] = datetime.datetime.now().strftime(
+                                "%Y-%m-%dT00:00:00Z")
+
                         # Normalize dates
                         metadata = normalize_date_fields(metadata)
 
@@ -754,7 +759,8 @@ def concat_resource_yaml(args):
                 t = t.replace('_', ' ')
                 t = t.title()
                 # Fix common acronyms
-                t = t.replace('Kg', 'KG').replace('Api', 'API').replace('Id', 'ID').replace('Ids', 'IDs')
+                t = t.replace('Kg', 'KG').replace('Api', 'API').replace(
+                    'Id', 'ID').replace('Ids', 'IDs')
                 return t
 
             def display_title(key: str) -> str:
@@ -829,12 +835,14 @@ def concat_resource_yaml(args):
                 res_dir = ROOT / 'resource' / rid
                 res_file = res_dir / f"{rid}.md"
                 if not res_file.exists():
-                    print(f"WARN: evaluation provided for '{rid}' but no resource page found; skipping")
+                    print(
+                        f"WARN: evaluation provided for '{rid}' but no resource page found; skipping")
                     continue
 
                 # Group questions by category, collapsing paired *_text comment columns with their boolean
                 from collections import OrderedDict
-                grouped = OrderedDict()  # cat -> OrderedDict[base_question] -> {question, answer, comment}
+                # cat -> OrderedDict[base_question] -> {question, answer, comment}
+                grouped = OrderedDict()
                 col_limit = min(len(filled_group_headers), len(question_headers), len(row))
                 # Optional per-row metadata
                 evaluator_val = ''
@@ -886,7 +894,8 @@ def concat_resource_yaml(args):
                         html_lines.append(f"## {cat}")
                     html_lines.append("<div class=\"table-responsive\">")
                     html_lines.append("<table class=\"table table-striped\">")
-                    html_lines.append("<thead><tr><th>Question</th><th>Answer</th><th>Comment</th></tr></thead><tbody>")
+                    html_lines.append(
+                        "<thead><tr><th>Question</th><th>Answer</th><th>Comment</th></tr></thead><tbody>")
                     yes_count = 0
                     answered_count = 0
                     for base_q, entry in qmap.items():
@@ -904,11 +913,13 @@ def concat_resource_yaml(args):
                             answered_count += 1
                             if v_norm.startswith('y') or v_norm.startswith('yes'):
                                 yes_count += 1
-                        html_lines.append(f"<tr><td>{q_esc}</td><td{style_attr}>{a_esc}</td><td>{c_esc}</td></tr>")
+                        html_lines.append(
+                            f"<tr><td>{q_esc}</td><td{style_attr}>{a_esc}</td><td>{c_esc}</td></tr>")
                     html_lines.append("</tbody></table></div>")
                     # Section score (skip for License Information)
                     if (cat or '').strip().lower() != 'license information':
-                        html_lines.append(f"<p><strong>Section Score:</strong> {yes_count}/{answered_count}</p>")
+                        html_lines.append(
+                            f"<p><strong>Section Score:</strong> {yes_count}/{answered_count}</p>")
                     html_lines.append("")
                 content = "\n".join(html_lines) + "\n"
 
@@ -946,7 +957,8 @@ def concat_resource_yaml(args):
                             rf.write(md_update)
                         updated_links += 1
                 except Exception as e:
-                    print(f"WARN: could not update resource page for {rid} with evaluation link: {e}")
+                    print(
+                        f"WARN: could not update resource page for {rid} with evaluation link: {e}")
 
         print(f"Created {created} evaluation page(s); updated {updated_links} resource page link(s)")
 
