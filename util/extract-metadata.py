@@ -19,7 +19,7 @@ __author__ = "cjm"
 HERE = pathlib.Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
 SOURCE_SCHEMA_PATH = ROOT.joinpath(
-    "src", "kg_registry", "kg_registry_schema", "schema", "kg_registry_schema.yaml")
+    "src", "kg_registry", "kg_registry_schema", "schema", "kg_registry_schema_all.yaml")
 SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "kg_registry_schema.json")
 
 

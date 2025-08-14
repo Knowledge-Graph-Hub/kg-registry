@@ -38,6 +38,10 @@ RESOURCES := $(shell find resource -type f -name '*.md')
 # Path to the source KG-Registry schema
 SOURCE_SCHEMA = src/kg_registry/kg_registry_schema/schema/kg_registry_schema.yaml
 
+# Path to the combined KG-Registry schema, with all modules
+# This needs to be built before doing metadata extraction
+SOURCE_SCHEMA_ALL = src/kg_registry/kg_registry_schema/schema/kg_registry_schema_all.yaml
+
 # Path to the generated KG-Registry schema docs
 SCHEMA_DOC_DIR = docs/schema
 
@@ -62,6 +66,9 @@ pull_and_build: pull all
 test: reports/metadata-grid.html _config.yml tox
 
 integration-test: test valid-purl-report.txt
+
+$(SOURCE_SCHEMA_ALL):
+	$(RUN) gen-linkml -o $(SOURCE_SCHEMA_ALL) -f 'yaml' $(SOURCE_SCHEMA)
 
 # Remove and/or revert all targets to their repository versions
 clean:
@@ -150,11 +157,12 @@ tmp/unsorted-resources-with-sizes.yml: tmp/unsorted-resources.yml
 
 # Run validation, including with LinkML validator
 # But don't show the whole command because it is very long
-extract-metadata: $(RESOURCES)
-	@./util/extract-metadata.py validate $^
+# These commands need the combined schema to be built first
+extract-metadata: $(RESOURCES) $(SOURCE_SCHEMA_ALL)
+	$(RUN) ./util/extract-metadata.py validate $^
 
-prettify: $(RESOURCES)
-	./util/extract-metadata.py prettify $^
+prettify: $(RESOURCES) $(SOURCE_SCHEMA_ALL)
+	$(RUN) ./util/extract-metadata.py prettify $^
 
 # Run tox tests (requires `pip install tox`)
 tox:
