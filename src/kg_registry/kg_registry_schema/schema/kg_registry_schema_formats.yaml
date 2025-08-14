@@ -1,0 +1,300 @@
+---
+id: https://w3id.org/knowledge-graph-hub/kg_registry_schema_formats
+name: kg_registry_schema_formats
+title: kg_registry_schema_formats
+description: |-
+  A module for the KG-Registry schema that defines formats and
+  representations for knowledge graphs and their components.
+license: GPL-3.0
+see_also:
+  - https://kghub.org/kg-registry/
+version: 0.0.4
+
+prefixes:
+  kgr: https://w3id.org/bridge2ai/data-sheets-schema/
+  skos: http://www.w3.org/2004/02/skos/core#
+  linkml: https://w3id.org/linkml/
+  dcterms: http://purl.org/dc/terms/
+
+default_range: string
+
+# Enums
+enums:
+  
+  DumpFormatEnum:
+    description: >-
+      The format of a dump of a product,
+      generally a graph, as a file.
+      Note the product may also be compressed.
+    permissible_values:
+      gpickle:
+        description: >-
+          The gpickle format, or the output of
+          pickling a NetworkX graph object.
+          This file ends in .gpickle.
+      pickle:
+        description: >-
+          The pickle format, or the output of
+          pickling a Python object.
+          This file ends in .pkl or .pickle.
+      neo4j:
+        description: >-
+          The Neo4j dump format, or the output of
+          a Neo4j database dump. The file usually
+          ends in .db, .dump, or .db.dump.
+      other:
+        description: Another format not defined here.
+
+  FormatEnum:
+    description: >-
+      The serialization/format of a product.
+    permissible_values:
+      json:
+        description: >-
+          The JavaScript Object Notation (JSON) format,
+          a lightweight data-interchange format that's
+          easy for humans to read and write and easy
+          for machines to parse and generate.
+      jsonld:
+        description: >-
+          The JSON for Linked Data (JSON-LD) format,
+          which extends JSON with semantics for linked data
+          by providing a method of encoding linked data using
+          JSON. It enables data in JSON to be interpreted as RDF
+          and allows JSON data to be interoperable at Web-scale.
+      rdfxml:
+        description: >-
+          The RDF/XML format, an XML syntax for expressing RDF
+          graphs as an XML document. It was the first standardized
+          syntax for RDF and is widely used for interchange and archiving.
+      ttl:
+        description: >-
+          The Turtle (TTL) format, a textual syntax for RDF that
+          allows RDF graphs to be written in a compact and natural
+          text form. Turtle provides prefixes and keywords that make
+          RDF data more readable compared to XML or N-Triples formats.
+      ntriples:
+        description: >-
+          The N-Triples format, a line-based, plain text serialization
+          format for RDF graphs. Each line contains a single RDF triple
+          consisting of subject, predicate, and object, separated by
+          whitespace and terminated by a period.
+      nquads:
+        description: >-
+          The N-Quads format, an extension of the N-Triples format
+          that adds an optional fourth element to represent the graph
+          name or context. This allows for representing multiple RDF
+          graphs in a single document while maintaining their separation.
+      owl:
+        description: >-
+          The Web Ontology Language (OWL) format, a semantic web language
+          designed to represent rich and complex knowledge about things
+          and their relationships. OWL builds on RDF and adds more
+          vocabulary for describing properties and classes.
+      obo:
+        description: >-
+          The Open Biomedical Ontologies (OBO) format, a file format for
+          representing ontologies in the biomedical domain. It's designed
+          to be simple and human-readable while supporting the necessary
+          expressivity for representing biological concepts.
+      graphql:
+        description: >-
+          The GraphQL format, a query language for APIs and a runtime for
+          executing those queries against your data. It allows clients to
+          request exactly what they need and makes it easier to evolve APIs over time.
+      protobuf:
+        description: >-
+          The Protocol Buffers (Protobuf) format, a language-neutral,
+          platform-neutral, extensible mechanism for serializing structured
+          data. It's smaller, faster, and simpler than XML, designed for
+          high-performance data interchange.
+      shacl:
+        description: >-
+          The Shapes Constraint Language (SHACL) format, a language for
+          validating RDF graphs against a set of conditions. SHACL allows
+          for defining constraints on RDF graphs, including the structure,
+          values, and other features of data.
+      shex:
+        description: >-
+          The Shape Expressions (ShEx) format, a language for validating
+          and describing RDF data. ShEx provides a concise, human-readable
+          syntax for expressing constraints on RDF graphs, including cardinality
+          constraints and datatype restrictions.
+      kgx:  
+        description: >-
+          The KGX standard, which is a graph exchange format
+          for knowledge graphs. By default, this assumes
+          KGX as TSV with separate node and edge files,
+          usually named nodes.tsv and edges.tsv.
+        meaning: https://github.com/biolink/kgx/blob/master/specification/kgx-format.md
+      kgx-json:
+        description: >-
+          The KGX standard, which is a graph exchange format
+          for knowledge graphs. This is the JSON format,
+          with nodes and edges in a single file.
+        meaning: https://github.com/biolink/kgx/blob/master/specification/kgx-format.md
+      kgx-jsonl:
+        description: >-
+          The KGX standard, which is a graph exchange format
+          for knowledge graphs. This is the JSON Lines format,
+          with separate node and edge files, usually named
+          nodes.jsonl and edges.jsonl.
+        meaning: https://github.com/biolink/kgx/blob/master/specification/kgx-format.md
+      kgx-rdf:
+        description: >-
+          The KGX standard, which is a graph exchange format
+          for knowledge graphs. This is the RDF Turtle (TTL) format,
+          with nodes and edges in a single file.
+        meaning: https://github.com/biolink/kgx/blob/master/specification/kgx-format.md
+      sssom:
+        description: >-
+          The Simple Standard for Sharing Ontological Mappings (SSSOM) format,
+          which a format for mapping between different ontologies and
+          other identifier systems.
+        meaning: https://mapping-commons.github.io/sssom/
+      sdf:
+        description: The Structure Data File (SDF) format.
+        meaning: https://www.fda.gov/media/151718/download
+      chebi_sdf:
+        description: >-
+          A ChEBI-specific SDF format. Unlike the general SDF format,
+          Each data item may be longer than 80 characters and has no maximum limit.
+          Each line after the Data Header is a separate data item.
+          For example, each new line in the synonyms is a separate synonym.
+        meaning: https://docs.google.com/document/d/11G6SmTtQRQYFT7l9h5K0faUHiAaekcLeOweMOOTIpME/edit?pli=1&tab=t.0#heading=h.7ocxce8u265h
+      tsv:
+        description: >-
+          The Tab-Separated Values (TSV) format. It has
+          rows of data separated by newlines, and columns
+          separated by tabs.
+      csv:
+        description: >-
+          The Comma-Separated Values (CSV) format. It has
+          rows of data separated by newlines, and columns
+          separated by commas.
+      xml:
+        description: >-
+          The Extensible Markup Language (XML) format.
+          It is a markup language that defines a set of rules
+          for encoding documents in a format that is both human-readable
+          and machine-readable.
+      fasta:
+        description: >-
+          The FASTA format, a text-based format for representing
+          nucleotide or peptide sequences. It consists of a single
+          header line followed by one or more lines of sequence data.
+      http:
+        description: >-
+          The Hypertext Transfer Protocol (HTTP) format.
+          This is a protocol for transferring data over the web.
+          If a product is in this format, it is likely an web site
+          or API.
+      postgres:
+        description: >-
+          The PostgreSQL relational database management system.
+          If a product is in this format, it is likely a PostgreSQL database dump.
+      mysql:
+        description: >-
+          The MySQL relational database management system.
+          If a product is in this format, it is likely a MySQL database dump.
+      sqlite:
+        description: >-
+          The SQLite relational database management system.
+          If a product is in this format, it is likely a SQLite database dump.
+      trapi-jsonl:
+        description: >-
+          The Translator Reasoner API (TRAPI) format, which is a JSON Lines format
+          for TRAPI responses.
+        meaning: https://raw.githubusercontent.com/NCATSTranslator/ReasonerAPI/refs/heads/master/TranslatorReasonerAPI.yaml
+      yaml:
+        description: >-
+          The YAML Ain't Markup Language (YAML) format,
+          a human-readable data serialization format.
+          It is often used for configuration files and
+          data exchange between languages with different
+          data structures.
+        meaning: https://yaml.org/
+      vcf:
+        description: >-
+          The Variant Call Format (VCF), a text file format
+          for storing gene sequence variations.
+          It is commonly used in bioinformatics to store
+          gene sequence variations, such as single nucleotide polymorphisms (SNPs).
+        meaning: https://samtools.github.io/hts-specs/VCFv4.5.pdf
+      sbgnml:
+        description: >-
+          The Systems Biology Graphical Notation (SBGN) XML format,
+          which is a standard for representing biological pathways
+          and processes in a graphical form.
+        meaning: https://sbgn.github.io/sbgn/
+      sbml:
+        description: >-
+          The Systems Biology Markup Language (SBML) XML format,
+          which is a computer-readable format for representing
+          models of biological processes.
+        meaning: https://sbml.org/
+      sif:
+        description: >-
+          The Simple Interaction Format (SIF), a simple text format
+          for representing interactions between biological entities.
+          It is often used to represent networks of interactions.
+        meaning: https://www.cytoscape.org/sif.html
+      dot:
+        description: >-
+          The DOT format, a plain text graph description language
+          used to define the structure of graphs. It is often used
+          with Graphviz to visualize graphs.
+        meaning: https://graphviz.org/doc/info/lang.html
+      boolnet:
+        description: >-
+          The Boolean Network (BoolNet) format, which is a format
+          for representing Boolean networks. Used with the BoolNet package
+          in R for modeling and analyzing biological networks.
+        meaning: https://cran.r-project.org/package=BoolNet
+      doc:
+        description: >-
+          The Microsoft Word Document (DOC) format, a binary file format
+          used by Microsoft Word. It is commonly used for word processing documents.
+      docx:
+        description: >-
+          The Microsoft Word Open XML Document (DOCX) format,
+          a modern file format for Microsoft Word documents.
+          It is a zipped, XML-based file format that allows for
+          more efficient storage and better compatibility with other software,
+          as compared to the older DOC format.
+      python:
+        description: >-
+          The Python script format, which is a text file containing
+          Python code. It is used for writing scripts and programs in the Python language.
+      java:
+        description: >-
+          The Java source code format, which is a text file containing
+          Java code. It is used for writing scripts and programs in the Java language.
+      javascript:
+        description: >-
+          The JavaScript file format, which is a text file containing
+          JavaScript code. It is used for writing scripts and programs in the JavaScript language.
+      hdf5:
+        description: >-
+          The Hierarchical Data Format version 5 (HDF5) format,
+          a file format and set of tools for managing complex data.
+          It is designed to store and organize large amounts of data
+          in a hierarchical structure, allowing for efficient access and manipulation.
+      psi_mi_xml:
+        description: >-
+          The PSI-MI XML format, which is a standard for representing
+          molecular interaction data in XML. It is used to exchange
+          information about molecular interactions between different databases.
+        meaning: https://www.psidev.info/psi-mi-xml-specification
+      psi_mi_mitab:
+        description: >-
+          The PSI-MI MITAB format, which is a tab-delimited format
+          for representing molecular interaction data. It is used to
+          exchange information about molecular interactions between different databases.
+        meaning: https://psicquic.github.io/MITAB28Format.html
+      mixed:
+        description: >-
+          A product that contains multiple formats or serializations.
+          This is used when a product is not easily categorized into
+          a single format, such as a codebase that includes
+          multiple file types (e.g., Python scripts, JSON files, etc.).
