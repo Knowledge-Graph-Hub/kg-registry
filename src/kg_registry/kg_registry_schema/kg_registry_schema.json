@@ -1297,6 +1297,7 @@
                 "tsv",
                 "ttl",
                 "vcf",
+                "xgmml",
                 "xml",
                 "yaml"
             ],

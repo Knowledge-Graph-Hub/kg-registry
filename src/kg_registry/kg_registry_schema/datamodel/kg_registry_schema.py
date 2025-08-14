@@ -281,6 +281,10 @@ class FormatEnum(str, Enum):
     """
     The Variant Call Format (VCF), a text file format for storing gene sequence variations. It is commonly used in bioinformatics to store gene sequence variations, such as single nucleotide polymorphisms (SNPs).
     """
+    xgmml = "xgmml"
+    """
+    The eXtensible Graph Markup Language (XGMML) format, an XML-based format for representing graphs and networks.
+    """
     xml = "xml"
     """
     The Extensible Markup Language (XML) format. It is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.
