@@ -4670,7 +4670,8 @@
                     "product_url": "http://xteam.xbio.top/download/Human_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-14: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-13: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-13: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found"
                     ]
                 },
                 {
@@ -4681,7 +4682,8 @@
                     "product_url": "http://xteam.xbio.top/download/Mouse_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-14: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-13: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-13: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found"
                     ]
                 },
                 {
@@ -4692,7 +4694,8 @@
                     "product_url": "http://xteam.xbio.top/download/Single_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-14: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-13: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-13: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found"
                     ]
                 },
                 {
@@ -4703,7 +4706,8 @@
                     "product_url": "http://xteam.xbio.top/download/all_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-14: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-13: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-13: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found"
                     ]
                 },
                 {
@@ -9292,7 +9296,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/allComplexes.txt.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-14: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
-                        "File was not able to be retrieved when checked on 2025-08-13: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-08-13: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
+                        "File was not able to be retrieved when checked on 2025-08-14: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
                 {
@@ -9308,7 +9313,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/coreComplexes.txt.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-14: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
-                        "File was not able to be retrieved when checked on 2025-08-13: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-08-13: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
+                        "File was not able to be retrieved when checked on 2025-08-14: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
                 {
@@ -9324,7 +9330,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/psi.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-14: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
-                        "File was not able to be retrieved when checked on 2025-08-13: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-08-13: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
+                        "File was not able to be retrieved when checked on 2025-08-14: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
                 {
@@ -9340,7 +9347,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/mitab.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-14: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
-                        "File was not able to be retrieved when checked on 2025-08-13: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-08-13: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
+                        "File was not able to be retrieved when checked on 2025-08-14: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
                 {
@@ -19516,7 +19524,8 @@
                     "name": "GtoPdb Targets and Families",
                     "product_url": "https://www.guidetopharmacology.org/DATA/targets_and_families.csv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
                     ]
                 },
                 {
@@ -19527,7 +19536,8 @@
                     "name": "GtoPdb Ligands Dataset",
                     "product_url": "https://www.guidetopharmacology.org/DATA/ligands.csv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
                     ]
                 },
                 {
@@ -19538,7 +19548,8 @@
                     "name": "GtoPdb Interactions Dataset",
                     "product_url": "https://www.guidetopharmacology.org/DATA/interactions.csv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
                     ]
                 },
                 {
@@ -19549,7 +19560,8 @@
                     "name": "GtoPdb Approved Drugs Dataset",
                     "product_url": "https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
                     ]
                 },
                 {
@@ -19560,7 +19572,8 @@
                     "name": "GtoPdb Ligand SDF File",
                     "product_url": "https://www.guidetopharmacology.org/DATA/all_ligands.sdf",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
                     ]
                 },
                 {
@@ -19571,7 +19584,8 @@
                     "name": "GtoPdb RDF Dataset",
                     "product_url": "https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
                     ]
                 },
                 {
@@ -19581,7 +19595,8 @@
                     "name": "GtoPdb Full Database",
                     "product_url": "https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-14: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
                     ]
                 },
                 {

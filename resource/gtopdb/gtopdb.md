@@ -51,6 +51,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
+    when accessing file'
 - category: Product
   description: Complete list of ligands including drugs, small molecules, and other
     bioactive compounds
@@ -61,6 +63,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
+    when accessing file'
 - category: Product
   description: Comprehensive dataset of all interactions between ligands and targets
   format: csv
@@ -70,6 +74,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
+    when accessing file'
 - category: Product
   description: Detailed interactions list for approved drugs and their targets
   format: csv
@@ -79,6 +85,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
+    when accessing file'
 - category: Product
   description: SDF file containing chemical structures with SMILES for all ligands
     in the database
@@ -89,6 +97,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
+    when accessing file'
 - category: Product
   description: RDF/linked data format of the GtoPdb data (target-ligand interactions
     with supporting information)
@@ -99,6 +109,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
+    when accessing file'
 - category: Product
   description: Complete PostgreSQL database dump of the current Guide to Pharmacology
     database
@@ -108,6 +120,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
+    when accessing file'
 - category: GraphicalInterface
   description: An extension of the Guide to PHARMACOLOGY database providing immunological
     access-point to GtoPdb data
