@@ -67,8 +67,11 @@ test: reports/metadata-grid.html _config.yml tox
 
 integration-test: test valid-purl-report.txt
 
+# Build the combined schema
+# Also write proper yaml header to it
 $(SOURCE_SCHEMA_ALL):
-	$(RUN) gen-linkml -o $(SOURCE_SCHEMA_ALL) -f 'yaml' $(SOURCE_SCHEMA)
+	$(RUN) gen-linkml -o $@ -f 'yaml' $(SOURCE_SCHEMA)
+	@echo '---' | cat - $@ > $@.tmp && mv $@.tmp $@
 
 # Remove and/or revert all targets to their repository versions
 clean:
@@ -159,10 +162,10 @@ tmp/unsorted-resources-with-sizes.yml: tmp/unsorted-resources.yml
 # But don't show the whole command because it is very long
 # These commands need the combined schema to be built first
 extract-metadata: $(RESOURCES) $(SOURCE_SCHEMA_ALL)
-	$(RUN) ./util/extract-metadata.py validate $^
+	@$(RUN) ./util/extract-metadata.py validate $^
 
 prettify: $(RESOURCES) $(SOURCE_SCHEMA_ALL)
-	$(RUN) ./util/extract-metadata.py prettify $^
+	@$(RUN) ./util/extract-metadata.py prettify $^
 
 # Run tox tests (requires `pip install tox`)
 tox:
