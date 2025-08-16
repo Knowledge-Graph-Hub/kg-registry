@@ -13,6 +13,7 @@ from frontmatter.util import u
 from linkml.validator import validate
 from ruamel.yaml import YAML
 from ruamel.yaml.compat import StringIO
+from ruamel.yaml.scalarstring import DoubleQuotedScalarString as DQ
 from yamllint import config, linter
 
 __author__ = "cjm"
@@ -104,13 +105,25 @@ def validate_markdown(args):
         if not frontmatter.check(fn):
             errs.append("%s does not contain frontmatter" % (fn))
 
-        # Run LinkML validator
-        # Different objects need to be validated against different
-        # parts of the schema
-        (obj, md) = load_md(fn)
+        # Load with ruamel handler so we can preserve/emit quotes
+        handler = CustomRuamelYAMLHandler()
+        post = frontmatter.load(fn, handler=handler)
+        obj = deepcopy(post.metadata)
+        md_content = post.content
 
-        # Normalize date fields to ISO 8601 format before validation
+        # Coerce certain scalar fields to quoted strings and normalize dates
+        original_obj = deepcopy(obj)
+        obj = coerce_string_like_fields(obj)
         obj = normalize_date_fields(obj)
+
+        # If modified, write back in-place using ruamel to preserve formatting and quotes
+        if obj != original_obj:
+            post.metadata = obj
+            with open(fn, "wb") as fwb:
+                frontmatter.dump(post, fd=fwb, handler=handler)
+            # Ensure trailing newline after frontmatter/content
+            with open(fn, "a") as fa:
+                fa.write("\n")
 
         # If this is the root of the resource, validate against the Resource class
         # These pages will already contain child classes, so other
@@ -119,6 +132,7 @@ def validate_markdown(args):
             target_class = "Resource"
         else:
             continue
+
         report = validate(instance=obj, schema=str(SOURCE_SCHEMA_PATH), target_class=target_class)
         if report.results:
             for result in report.results:
@@ -1058,6 +1072,69 @@ def normalize_date_fields(obj):
                 if isinstance(item, dict):
                     normalize_date_fields(item)
 
+    return obj
+
+
+def coerce_string_like_fields(obj):
+    """
+    Coerce certain scalar fields to be serialized as double-quoted strings.
+
+    This is primarily to ensure YAML numeric-looking values (e.g., 1990) intended
+    to be strings are quoted (e.g., "1990") so they validate correctly and remain
+    strings on subsequent parses.
+
+    Fields coerced (by key name, anywhere in the object):
+      - year
+      - version
+      - latest_version
+      - versions (list: each item coerced)
+    """
+    # Keys that should always be treated as strings (force quoted)
+    scalar_keys_force_quote = {
+        "year",
+        "version",
+        "latest_version",
+        "id",
+        "fairsharing_id",
+        "infores_id",
+        "doi",
+        "value",
+    }
+    list_keys_force_quote = {"versions"}
+
+    def _coerce_in_place(d):
+        if isinstance(d, dict):
+            for k, v in list(d.items()):
+                # Recurse first into nested structures
+                if isinstance(v, dict):
+                    _coerce_in_place(v)
+                elif isinstance(v, list):
+                    if k in list_keys_force_quote:
+                        new_list = []
+                        for item in v:
+                            if isinstance(item, (int, float)):
+                                new_list.append(DQ(str(item)))
+                            elif isinstance(item, str):
+                                # Force quotes even if already string
+                                new_list.append(DQ(item))
+                            else:
+                                new_list.append(item)
+                        d[k] = new_list
+                    else:
+                        for item in v:
+                            _coerce_in_place(item)
+                else:
+                    if k in scalar_keys_force_quote and v is not None:
+                        if isinstance(v, (int, float)):
+                            d[k] = DQ(str(v))
+                        elif isinstance(v, str):
+                            # Force quotes even if already string
+                            d[k] = DQ(v)
+        elif isinstance(d, list):
+            for item in d:
+                _coerce_in_place(item)
+
+    _coerce_in_place(obj)
     return obj
 
 
