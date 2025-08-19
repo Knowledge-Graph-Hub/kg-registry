@@ -65,6 +65,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-19: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: REST API providing access to ClinGen's Evidence Repository for variant
     pathogenicity assessments. Allows programmatic retrieval of structured evidence
@@ -290,8 +292,6 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -348,8 +348,6 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -378,8 +376,6 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
     when accessing file'
 publications:
