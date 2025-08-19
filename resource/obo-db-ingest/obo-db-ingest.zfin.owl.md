@@ -13,7 +13,7 @@ product_url: https://w3id.org/biopragmatics/resources/zfin/zfin.owl
 secondary_source:
 - obo-db-ingest
 warnings:
-- 'File was not able to be retrieved when checked on 2025-08-14: HTTP 404 error when
+- 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when
   accessing file'
 layout: product_detail
 ---

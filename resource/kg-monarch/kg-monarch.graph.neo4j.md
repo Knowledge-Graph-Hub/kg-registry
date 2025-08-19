@@ -82,7 +82,7 @@ product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo
 secondary_source:
 - kg-monarch
 warnings:
-- 'File was not able to be retrieved when checked on 2025-08-14: HTTP 404 error when
+- 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when
   accessing file'
 layout: product_detail
 ---
