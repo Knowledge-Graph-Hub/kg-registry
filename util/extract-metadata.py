@@ -5,6 +5,7 @@ import csv
 import sys
 import pathlib
 import datetime
+import json
 
 import frontmatter
 import yaml
@@ -22,6 +23,10 @@ ROOT = HERE.parent.resolve()
 SOURCE_SCHEMA_PATH = ROOT.joinpath(
     "src", "kg_registry", "kg_registry_schema", "schema", "kg_registry_schema_all.yaml")
 SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "kg_registry_schema.json")
+
+# Ensure local src is importable for generated datamodel imports
+if str(ROOT / "src") not in sys.path:
+    sys.path.insert(0, str(ROOT / "src"))
 
 
 def main():
@@ -111,10 +116,11 @@ def validate_markdown(args):
         obj = deepcopy(post.metadata)
         md_content = post.content
 
-        # Coerce certain scalar fields to quoted strings and normalize dates
+        # Coerce certain scalar fields to quoted strings, normalize dates, and sanitize domains
         original_obj = deepcopy(obj)
         obj = coerce_string_like_fields(obj)
         obj = normalize_date_fields(obj)
+        obj = sanitize_domains(obj)
 
         # If modified, write back in-place using ruamel to preserve formatting and quotes
         if obj != original_obj:
@@ -1072,6 +1078,58 @@ def normalize_date_fields(obj):
                 if isinstance(item, dict):
                     normalize_date_fields(item)
 
+    return obj
+
+
+def _load_allowed_domains_from_schema() -> set[str]:
+    """Load DomainEnum permissible values from the generated JSON schema.
+
+    Falls back to empty set if the schema file is missing or malformed.
+    """
+    try:
+        with open(SCHEMA_PATH, "r") as f:
+            schema = json.load(f)
+        defs = schema.get("$defs") or schema.get("definitions") or {}
+        domain_def = defs.get("DomainEnum", {})
+        # LinkML JSON Schema encodes enums as oneOf with const per value
+        allowed = set()
+        if "enum" in domain_def:
+            allowed = set(domain_def["enum"])  # rare, but support if present
+        else:
+            for item in domain_def.get("oneOf", []):
+                const = item.get("const")
+                if isinstance(const, str):
+                    allowed.add(const)
+        return allowed
+    except Exception:
+        return set()
+
+
+def sanitize_domains(obj):
+    """Remove any domain entries not present in DomainEnum.
+
+    - Expects obj to be a dict with optional 'domains': list[str]
+    - Returns the same dict instance after in-place filtering.
+    """
+    allowed = _load_allowed_domains_from_schema()
+    if not allowed:
+        return obj
+
+    def _filter_in_place(d):
+        if isinstance(d, dict):
+            # Only filter top-level 'domains' on Resource objects; avoid altering nested keys with same name
+            if d is obj and isinstance(d.get("domains"), list):
+                d["domains"] = [x for x in d["domains"] if isinstance(x, str) and x in allowed]
+            # Recurse to children but do not filter nested 'domains' occurrences to keep scope tight
+            for v in d.values():
+                if isinstance(v, dict):
+                    _filter_in_place(v)
+                elif isinstance(v, list):
+                    for it in v:
+                        if isinstance(it, dict):
+                            _filter_in_place(it)
+
+    _filter_in_place(obj)
     return obj
 
 
