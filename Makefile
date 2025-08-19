@@ -51,7 +51,7 @@ SCHEMA_DIR = src/kg_registry/kg_registry_schema
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
 
-all: _config.yml registry/kgs.jsonld registry/kg_registry.duckdb registry/parquet registry/parquet-downloads.html assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js refresh-schema
+all: ingest-kg-monarch _config.yml registry/kgs.jsonld registry/kg_registry.duckdb registry/parquet registry/parquet-downloads.html assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js refresh-schema
 
 # This is minimal for now, but
 # will be expanded to include other docs
@@ -66,6 +66,13 @@ pull_and_build: pull all
 test: reports/metadata-grid.html _config.yml tox
 
 integration-test: test valid-purl-report.txt
+
+### Source-specific ingests
+
+# Pull KG-Monarch QC counts and update resource metadata
+.PHONY: ingest-kg-monarch
+ingest-kg-monarch:
+	$(RUN) python src/kg_registry/ingests/kg-monarch/kg-monarch.py
 
 # Build the combined schema
 # Also write proper yaml header to it
