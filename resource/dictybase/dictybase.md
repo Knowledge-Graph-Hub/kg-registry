@@ -67,6 +67,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
   format: rdfxml
@@ -123,6 +125,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
   id: kg-monarch.graph.duckdb
@@ -150,6 +154,8 @@ products:
   - kg-monarch
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
     when accessing file'
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information
