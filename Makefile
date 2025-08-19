@@ -258,8 +258,8 @@ schema-docs:
 	done
 
 # Generate the schema files
-refresh-schema: clean-schema $(SCHEMA_DIR)/datamodel/kg_registry_schema.py $(SCHEMA_DIR)/kg_registry_schema.json
-	cp $(SCHEMA_DIR)/schema/kg_registry_schema.yaml _data/schema.yaml
+refresh-schema: clean-schema $(SCHEMA_DIR)/datamodel/kg_registry_schema.py $(SCHEMA_DIR)/datamodel/kg_registry_schema_all.py $(SCHEMA_DIR)/kg_registry_schema.json
+	cp $(SCHEMA_DIR)/schema/kg_registry_schema_all.yaml _data/schema.yaml
 
 $(SCHEMA_DIR)/datamodel/%.py: $(SCHEMA_DIR)/schema/%.yaml
 	$(RUN) gen-pydantic $< > $@

@@ -16,9 +16,17 @@ function generateRegistryLink(node) {
   
   // Check if this is a resource or a product
   if (node.parentId) {
-    // This is a product
-    const resourceId = node.parentId;
+    // This is a product. Derive resource folder from product ID prefix when possible.
     const productId = node.id;
+    let resourceId = null;
+    if (typeof productId === 'string' && productId.includes('.')) {
+      resourceId = productId.split('.')[0];
+    } else if (typeof productId === 'string' && productId.includes('/')) {
+      // Fallback: handle potential slash-delimited IDs
+      resourceId = productId.split('/')[0];
+    }
+    // Final fallback to parentId if parsing didn't yield a resource
+    resourceId = resourceId || node.parentId;
     return `<a href="/kg-registry/resource/${resourceId}/${productId}.html">${id}</a>`;
   } else {
     // This is a resource
