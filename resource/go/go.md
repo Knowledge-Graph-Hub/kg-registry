@@ -7,10 +7,10 @@ contacts:
   - contact_type: email
     value: help@geneontology.org
   label: Gene Ontology Helpdesk
-description: "The Gene Ontology resource, the world\u2019s largest source of information\
-  \ on the functions of genes. This knowledge is both human-readable and machine-readable,\
-  \ and is a foundation for computational analysis of large-scale molecular biology\
-  \ and genetics experiments in biomedical research."
+description: The Gene Ontology resource, the world’s largest source of information
+  on the functions of genes. This knowledge is both human-readable and machine-readable,
+  and is a foundation for computational analysis of large-scale molecular biology
+  and genetics experiments in biomedical research.
 domains:
 - biological systems
 homepage_url: https://geneontology.org/
@@ -598,8 +598,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -681,6 +681,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
   format: rdfxml
@@ -737,6 +739,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
   id: kg-monarch.graph.duckdb
@@ -764,6 +768,8 @@ products:
   - kg-monarch
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
     when accessing file'
 publications:
 - authors:
@@ -876,7 +882,7 @@ publications:
   - Tutaj MA
   - Vedi M
   - Wang S-J
-  - "D\u2019Eustachio PD"
+  - D’Eustachio PD
   - Aimo L
   - Axelsen K
   - Bridge A
