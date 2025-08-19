@@ -17,13 +17,12 @@ Behavior:
 from __future__ import annotations
 
 import json
-import os
-import sys
 from datetime import datetime, timezone
+import logging
+import argparse
 from pathlib import Path
 from typing import Optional, Tuple, List
 from urllib.request import Request, urlopen
-from urllib.error import URLError, HTTPError
 
 import duckdb
 import frontmatter  # type: ignore
@@ -41,6 +40,9 @@ NODE_URL = "https://data.monarchinitiative.org/monarch-kg/latest/qc/node_report.
 STATE_DIR = ROOT / "build" / "ingests" / "kg-monarch"
 STATE_FILE = STATE_DIR / "state.json"
 RESOURCE_FILE = ROOT / "resource" / "kg-monarch" / "kg-monarch.md"
+
+
+logger = logging.getLogger("kg_registry.ingests.kg_monarch")
 
 
 def http_last_modified(url: str) -> Optional[str]:
@@ -74,16 +76,69 @@ def save_state(state: dict) -> None:
 
 
 def counts_from_parquet(edge_url: str, node_url: str) -> Tuple[int, int]:
-    """Return total edge and node counts from the remote Parquet reports."""
+    """Return total edge and node counts from the remote Parquet reports.
+    QC reports are aggregated; sum the appropriate numeric count columns instead of counting rows.
+    """
     conn = duckdb.connect(database=':memory:')
     try:
-        edge_count = conn.execute(
-            f"SELECT COUNT(*) FROM read_parquet('{edge_url}')"
-        ).fetchone()[0]
-        node_count = conn.execute(
-            f"SELECT COUNT(*) FROM read_parquet('{node_url}')"
-        ).fetchone()[0]
-        return int(edge_count), int(node_count)
+        def sum_first_available(url: str, candidates: list[str]) -> Optional[int]:
+            for c in candidates:
+                if _col_exists(conn, url, c):
+                    try:
+                        val = conn.execute(
+                            f"SELECT SUM(CAST({c} AS BIGINT)) FROM read_parquet('{url}')"
+                        ).fetchone()[0]
+                        if val is None:
+                            continue
+                        return int(val)
+                    except Exception:
+                        continue
+            return None
+
+        # Edges: prefer summing a count column; fall back to row count
+        edge_sum = sum_first_available(edge_url, ["edge_count", "count", "n", "num", "edges"])
+        if edge_sum is None:
+            logger.warning("Falling back to COUNT(*) for edges; expected count column not found.")
+            edge_sum = conn.execute(
+                f"SELECT COUNT(*) FROM read_parquet('{edge_url}')"
+            ).fetchone()[0]
+
+        # Nodes: prefer counting distinct endpoints from the edge report to avoid double-counting across categories
+        node_sum: Optional[int] = None
+        subj_obj_pairs = [
+            ("subject", "object"),
+            ("subject_id", "object_id"),
+            ("source_id", "target_id"),
+            ("s", "o"),
+            ("node1", "node2"),
+        ]
+        for s_col, o_col in subj_obj_pairs:
+            if _col_exists(conn, edge_url, s_col) and _col_exists(conn, edge_url, o_col):
+                try:
+                    node_sum = conn.execute(
+                        f"""
+                        SELECT COUNT(*) FROM (
+                          SELECT DISTINCT {s_col} AS id FROM read_parquet('{edge_url}') WHERE {s_col} IS NOT NULL
+                          UNION
+                          SELECT DISTINCT {o_col} AS id FROM read_parquet('{edge_url}') WHERE {o_col} IS NOT NULL
+                        )
+                        """
+                    ).fetchone()[0]
+                    break
+                except Exception:
+                    node_sum = None
+
+        # If that failed, try summing a count column from the node report as a fallback
+        if node_sum is None:
+            node_sum = sum_first_available(
+                node_url, ["node_count", "unique_nodes", "distinct_nodes", "count", "n", "num", "nodes"])
+            if node_sum is None:
+                logger.warning("Falling back to COUNT(*) for nodes; expected columns not found.")
+                node_sum = conn.execute(
+                    f"SELECT COUNT(*) FROM read_parquet('{node_url}')"
+                ).fetchone()[0]
+
+        return int(edge_sum), int(node_sum)
     finally:
         conn.close()
 
@@ -176,12 +231,12 @@ class _RuamelFrontmatterHandler(frontmatter.YAMLHandler):
         return u(metadata)
 
 
-def update_resource(edge_count: int, node_count: int, predicates: List[str], node_categories: List[str]) -> bool:
+def update_resource(edge_count: int, node_count: Optional[int], predicates: List[str], node_categories: List[str]) -> bool:
     """Update kg-monarch.md frontmatter with counts and last_modified_date.
     Returns True if file was modified.
     """
     if not RESOURCE_FILE.exists():
-        print(f"Resource file not found: {RESOURCE_FILE}")
+        logger.error(f"Resource file not found: {RESOURCE_FILE}")
         return False
 
     handler = _RuamelFrontmatterHandler()
@@ -202,15 +257,24 @@ def update_resource(edge_count: int, node_count: int, predicates: List[str], nod
         for p in products:
             if isinstance(p, dict) and p.get('category') == 'GraphProduct':
                 # Compute whether any updates are needed
-                need_counts = (p.get('edge_count') !=
-                               edge_count or p.get('node_count') != node_count)
+                need_edge = p.get('edge_count') != edge_count
+                need_node = (node_count is not None) and (p.get('node_count') != node_count)
                 # Only update predicates/node_categories if we were able to fetch them
                 need_preds = bool(predicates) and p.get('predicates') != predicates
                 need_cats = bool(node_categories) and p.get('node_categories') != node_categories
-                if need_counts or need_preds or need_cats:
+                existing_nc = p.get('node_count')
+                low_stale_node = node_count is None and isinstance(
+                    existing_nc, int) and (existing_nc < 100000)
+                if need_edge or need_node or need_preds or need_cats or low_stale_node:
                     q = p.copy()
                     q['edge_count'] = int(edge_count)
-                    q['node_count'] = int(node_count)
+                    if node_count is not None:
+                        q['node_count'] = int(node_count)
+                    else:
+                        # Remove stale low node_count values if we decided to skip updating nodes
+                        existing_q_nc = q.get('node_count')
+                        if isinstance(existing_q_nc, int) and (existing_q_nc < 100000):
+                            q.pop('node_count', None)
                     if predicates:
                         q['predicates'] = list(predicates)
                     if node_categories:
@@ -235,6 +299,15 @@ def update_resource(edge_count: int, node_count: int, predicates: List[str], nod
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="Update KG Monarch metadata from QC Parquet reports")
+    parser.add_argument("--force", action="store_true", help="Ignore Last-Modified and recompute")
+    args = parser.parse_args()
+
+    # Configure logging if the root logger has no handlers
+    if not logging.getLogger().handlers:
+        logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+
     state = load_state()
     prev_edge_mod = state.get('edge_last_modified')
     prev_node_mod = state.get('node_last_modified')
@@ -242,21 +315,30 @@ def main() -> None:
     edge_mod = http_last_modified(EDGE_URL)
     node_mod = http_last_modified(NODE_URL)
 
-    should_update = (not prev_edge_mod or not prev_node_mod) or (
+    should_update = args.force or (not prev_edge_mod or not prev_node_mod) or (
         edge_mod != prev_edge_mod or node_mod != prev_node_mod)
 
     if not should_update:
-        print("Monarch QC reports unchanged since last check; skipping update.")
+        logger.info("Monarch QC reports unchanged since last check; skipping update.")
         return
 
     # Compute counts and types
     edge_count, node_count = counts_from_parquet(EDGE_URL, NODE_URL)
     predicates, node_categories = types_from_parquet(EDGE_URL, NODE_URL)
-    print(f"Monarch counts: edges={edge_count}, nodes={node_count}")
+    # Heuristic: node_report lacks node identifiers; if node_count seems implausibly low, skip updating it
+    if node_count is not None and node_count < 100000:
+        logger.warning(
+            "Computed node_count=%s looks too low; node IDs not present in QC Parquet. Skipping node_count update.",
+            f"{node_count:,}"
+        )
+        node_count = None
+    logger.info("Monarch counts: edges=%s%s",
+                f"{edge_count:,}",
+                f", nodes={node_count:,}" if node_count is not None else ", nodes=(skipped)")
     if predicates:
-        print(f"Distinct predicates: {len(predicates)}")
+        logger.info(f"Distinct predicates: {len(predicates)}")
     if node_categories:
-        print(f"Distinct node categories: {len(node_categories)}")
+        logger.info(f"Distinct node categories: {len(node_categories)}")
 
     # Update resource file
     changed = update_resource(edge_count=edge_count, node_count=node_count,
@@ -268,7 +350,7 @@ def main() -> None:
         'node_last_modified': node_mod,
         'last_run': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
         'edge_count': edge_count,
-        'node_count': node_count,
+        'node_count': (int(node_count) if node_count is not None else None),
         'resource_updated': changed,
         'predicate_count': len(predicates),
         'node_category_count': len(node_categories),
