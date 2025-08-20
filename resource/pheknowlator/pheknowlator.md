@@ -61,7 +61,7 @@ products:
   latest_version: current_build
   versions:
   - v1.0.0
-  - v2.0.0 
+  - v2.0.0
   - v2.1.0
   - v3.0.2
   - v4.0.0
@@ -110,7 +110,8 @@ publications:
   year: '2020'
 repository: https://github.com/callahantiff/PheKnowLator
 usages:
-- label: PheKnowLator build framework
+- id: phenoknowlator-build-framework
+  label: PheKnowLator build framework
   description: PheKnowLator is used to build heterogeneous biomedical knowledge graphs with OWL semantics and property graph exports using configurable pipelines.
   url: https://github.com/callahantiff/PheKnowLator/wiki
   type: actual
