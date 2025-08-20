@@ -63,8 +63,6 @@ products:
   name: Variant Pathogenicity Curations
   product_url: https://search.clinicalgenome.org/kb/variant-pathogenicity/all
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-19: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
     to URL'
 - category: ProgrammingInterface
@@ -392,7 +390,7 @@ publications:
   id: https://doi.org/10.1056/NEJMsr1406261
   journal: New England Journal of Medicine
   preferred: true
-  title: ClinGen — The Clinical Genome Resource
+  title: "ClinGen \u2014 The Clinical Genome Resource"
   year: '2015'
 - authors:
   - ClinGen Consortium

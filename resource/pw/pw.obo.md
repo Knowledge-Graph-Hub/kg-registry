@@ -8,6 +8,7 @@ original_source:
 - pw
 - iao
 - go
+product_file_size: 1347302
 product_url: http://purl.obolibrary.org/obo/pw.obo
 secondary_source:
 - pw
