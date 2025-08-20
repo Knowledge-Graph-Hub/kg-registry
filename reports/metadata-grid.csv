@@ -15,6 +15,7 @@ biogrid,active,PASS
 biolink,active,PASS
 biomarker,active,PASS
 biomarkerkg,active,PASS
+bioportal,active,PASS
 bioteque,active,PASS
 bto,active,PASS
 bv-brc,active,PASS
@@ -89,6 +90,7 @@ fma,active,PASS
 foodb,active,PASS
 gdsc,active,PASS
 gencode,active,PASS
+genemania,active,PASS
 genetics-kp,active,PASS
 genomickb,active,PASS
 glkb,active,PASS
@@ -229,6 +231,7 @@ protcid,active,PASS
 pubchem,active,PASS
 pubmed,active,PASS
 pubtator,active,PASS
+pw,active,PASS
 reacto,active,PASS
 reactome,active,PASS
 refseq,active,PASS
@@ -273,6 +276,7 @@ ukbiobank,active,PASS
 unii,active,PASS
 uniprot,active,PASS
 uo,active,PASS
+vo,active,PASS
 wbls,active,PASS
 wikipathways,active,PASS
 xenbase,active,PASS
