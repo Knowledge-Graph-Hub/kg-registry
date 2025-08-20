@@ -8,7 +8,7 @@ original_source:
 - gdsc
 product_url: https://ftp.sanger.ac.uk/project/cancerrxgene/releases/
 warnings:
-- 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when
+- 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when
   accessing file'
 layout: product_detail
 ---

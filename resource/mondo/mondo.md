@@ -14,9 +14,9 @@ contacts:
     value: sabrinatoro
   label: Sabrina Toro
   orcid: 0000-0002-4142-7153
-description: The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions
-  across the world. The name Mondo comes from the Latin word ‘mundus’ and means ‘for
-  the world.’
+description: "The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions\
+  \ across the world. The name Mondo comes from the Latin word \u2018mundus\u2019\
+  \ and means \u2018for the world.\u2019"
 domains:
 - health
 homepage_url: https://mondo.monarchinitiative.org/
@@ -425,6 +425,49 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
+- category: GraphProduct
+  description: PheKnowLator graph files, including subsets with and without inverse
+    relations.
+  format: owl
+  id: pheknowlator.graph
+  latest_version: current_build
+  name: PheKnowLator graph
+  original_source:
+  - cl
+  - clo
+  - chebi
+  - go
+  - hp
+  - mondo
+  - pw
+  - pr
+  - ro
+  - so
+  - uberon
+  - vo
+  - bioportal
+  - clinvar
+  - ctd
+  - disgenet
+  - ensembl
+  - genemania
+  - hgnc
+  - hpa
+  - ncbigene
+  - medgen
+  - reactome
+  - string
+  - uniprot
+  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+  secondary_source:
+  - pheknowlator
+  versions:
+  - v1.0.0
+  - v2.0.0
+  - v2.1.0
+  - v3.0.2
+  - v4.0.0
+  - current_build
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 ---
 MONDO Disease Ontology

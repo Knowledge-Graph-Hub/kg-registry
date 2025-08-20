@@ -63,9 +63,9 @@ products:
   name: Variant Pathogenicity Curations
   product_url: https://search.clinicalgenome.org/kb/variant-pathogenicity/all
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2025-08-19: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
     to URL'
 - category: ProgrammingInterface
   description: REST API providing access to ClinGen's Evidence Repository for variant
@@ -292,7 +292,7 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
@@ -348,7 +348,7 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
@@ -376,7 +376,7 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
     when accessing file'
 publications:
 - authors:

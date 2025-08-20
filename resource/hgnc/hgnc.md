@@ -49,7 +49,7 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
     when accessing file'
 - category: Product
   description: hgnc OBO Graph JSON
@@ -65,7 +65,7 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: hgnc SSSOM
@@ -142,7 +142,7 @@ products:
   secondary_source:
   - scibite
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -340,6 +340,49 @@ products:
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/HGNC_Automat/dee31cfce74e5944/
   secondary_source:
   - automat
+- category: GraphProduct
+  description: PheKnowLator graph files, including subsets with and without inverse
+    relations.
+  format: owl
+  id: pheknowlator.graph
+  latest_version: current_build
+  name: PheKnowLator graph
+  original_source:
+  - cl
+  - clo
+  - chebi
+  - go
+  - hp
+  - mondo
+  - pw
+  - pr
+  - ro
+  - so
+  - uberon
+  - vo
+  - bioportal
+  - clinvar
+  - ctd
+  - disgenet
+  - ensembl
+  - genemania
+  - hgnc
+  - hpa
+  - ncbigene
+  - medgen
+  - reactome
+  - string
+  - uniprot
+  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+  secondary_source:
+  - pheknowlator
+  versions:
+  - v1.0.0
+  - v2.0.0
+  - v2.1.0
+  - v3.0.2
+  - v4.0.0
+  - current_build
 repository: https://github.com/HGNC
 ---
 HUGO Gene Nomenclature Committee
