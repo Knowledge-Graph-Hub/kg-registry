@@ -235,6 +235,64 @@ products:
   - v2022-04-13
   - v2022-03-09
   - v2021-04-06
+- category: DataModelProduct
+  description: OWL release of VO
+  format: owl
+  id: vo.owl
+  name: Vaccine Ontology OWL release
+  original_source:
+  - bfo
+  - iao
+  - chebi
+  - ncbitaxon
+  - vo
+  product_file_size: 1466262
+  product_url: http://purl.obolibrary.org/obo/vo.owl
+  secondary_source:
+  - vo
+- category: DataModelProduct
+  description: OBO release of VO
+  format: obo
+  id: vo.obo
+  name: Vaccine Ontology OBO release
+  original_source:
+  - bfo
+  - iao
+  - chebi
+  - ncbitaxon
+  - vo
+  product_url: http://purl.obolibrary.org/obo/vo.obo
+  secondary_source:
+  - vo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
+    when accessing file'
+- category: DataModelProduct
+  description: PW OWL release
+  format: owl
+  id: pw.owl
+  name: PW OWL
+  original_source:
+  - pw
+  - iao
+  - go
+  product_file_size: 5403526
+  product_url: http://purl.obolibrary.org/obo/pw.owl
+  secondary_source:
+  - pw
+- category: DataModelProduct
+  description: PW OBO release
+  format: obo
+  id: pw.obo
+  name: PW OBO
+  original_source:
+  - pw
+  - iao
+  - go
+  product_file_size: 1347302
+  product_url: http://purl.obolibrary.org/obo/pw.obo
+  secondary_source:
+  - pw
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information
   about this resource.

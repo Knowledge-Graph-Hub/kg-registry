@@ -7,10 +7,10 @@ contacts:
   - contact_type: email
     value: help@geneontology.org
   label: Gene Ontology Helpdesk
-description: "The Gene Ontology resource, the world\u2019s largest source of information\
-  \ on the functions of genes. This knowledge is both human-readable and machine-readable,\
-  \ and is a foundation for computational analysis of large-scale molecular biology\
-  \ and genetics experiments in biomedical research."
+description: The Gene Ontology resource, the world’s largest source of information
+  on the functions of genes. This knowledge is both human-readable and machine-readable,
+  and is a foundation for computational analysis of large-scale molecular biology
+  and genetics experiments in biomedical research.
 domains:
 - biological systems
 homepage_url: https://geneontology.org/
@@ -598,8 +598,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -679,7 +679,7 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
@@ -735,7 +735,7 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
@@ -763,8 +763,77 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
     when accessing file'
+- category: GraphProduct
+  description: PheKnowLator graph files, including subsets with and without inverse
+    relations.
+  format: owl
+  id: pheknowlator.graph
+  latest_version: current_build
+  name: PheKnowLator graph
+  original_source:
+  - cl
+  - clo
+  - chebi
+  - go
+  - hp
+  - mondo
+  - pw
+  - pr
+  - ro
+  - so
+  - uberon
+  - vo
+  - bioportal
+  - clinvar
+  - ctd
+  - disgenet
+  - ensembl
+  - genemania
+  - hgnc
+  - hpa
+  - ncbigene
+  - medgen
+  - reactome
+  - string
+  - uniprot
+  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+  secondary_source:
+  - pheknowlator
+  versions:
+  - v1.0.0
+  - v2.0.0
+  - v2.1.0
+  - v3.0.2
+  - v4.0.0
+  - current_build
+- category: DataModelProduct
+  description: PW OWL release
+  format: owl
+  id: pw.owl
+  name: PW OWL
+  original_source:
+  - pw
+  - iao
+  - go
+  product_file_size: 5403526
+  product_url: http://purl.obolibrary.org/obo/pw.owl
+  secondary_source:
+  - pw
+- category: DataModelProduct
+  description: PW OBO release
+  format: obo
+  id: pw.obo
+  name: PW OBO
+  original_source:
+  - pw
+  - iao
+  - go
+  product_file_size: 1347302
+  product_url: http://purl.obolibrary.org/obo/pw.obo
+  secondary_source:
+  - pw
 publications:
 - authors:
   - Ashburner M
@@ -876,7 +945,7 @@ publications:
   - Tutaj MA
   - Vedi M
   - Wang S-J
-  - "D\u2019Eustachio PD"
+  - D’Eustachio PD
   - Aimo L
   - Axelsen K
   - Bridge A
