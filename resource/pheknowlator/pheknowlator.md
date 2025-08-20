@@ -5,7 +5,7 @@ contacts:
 - category: Individual
   contact_details:
   - contact_type: github
-    value: https://github.com/callahantiff/
+    value: callahantiff
   label: Tiffany Callahan
 description: "PheKnowLator (Phenotype Knowledge Translator) or pkt_kg is the first\
   \ fully customizable knowledge graph (KG) construction framework enabling users\
