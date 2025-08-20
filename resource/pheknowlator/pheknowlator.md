@@ -7,13 +7,16 @@ contacts:
   - contact_type: github
     value: callahantiff
   label: Tiffany Callahan
-description: "PheKnowLator (Phenotype Knowledge Translator) or pkt_kg is the first\
-  \ fully customizable knowledge graph (KG) construction framework enabling users\
-  \ to build complex KGs that are Semantic Web compliant and amenable to automatic\
-  \ Web Ontology Language (OWL) reasoning, generate contemporary property graphs,\
-  \ and are importable by today\u2019s popular graph toolkits."
+description: "PheKnowLator (Phenotype Knowledge Translator; pkt_kg) is a customizable\
+  \ knowledge graph (KG) construction framework enabling users to build large, heterogeneous\
+  \ KGs that are Semantic Web compliant and amenable to OWL reasoning, generate property\
+  \ graphs, and export to formats compatible with popular graph toolkits. The project\
+  \ provides configurable build recipes (e.g., OWL, property graph), reproducible pipelines,\
+  \ and documentation for deployment and usage in the GitHub Wiki."
 domains:
 - organisms
+- biomedical
+- genomics
 homepage_url: https://github.com/callahantiff/PheKnowLator
 id: pheknowlator
 layout: resource_detail
@@ -41,6 +44,15 @@ products:
   product_url: https://github.com/bsantan/MGMLink
   secondary_source:
   - mgmlink
+- category: DocumentationProduct
+  description: User and developer documentation for PheKnowLator, including build recipes and usage guides
+  id: pheknowlator.doc
+  name: PheKnowLator Wiki
+  original_source:
+  - pheknowlator
+  product_url: https://github.com/callahantiff/PheKnowLator/wiki
+  secondary_source:
+  - pheknowlator
 publications:
 - authors:
   - Callahan TJ
@@ -49,10 +61,17 @@ publications:
   - Baumgartner WA Jr
   doi: 10.1101/2020.04.30.071407
   id: doi:10.1101/2020.04.30.071407
+  journal: bioRxiv
+  preferred: true
   title: '''A Framework for Automated Construction of Heterogeneous Large-Scale Biomedical
     Knowledge Graphs'''
   year: '2020'
 repository: https://github.com/callahantiff/PheKnowLator
+usages:
+- label: PheKnowLator build framework
+  description: PheKnowLator is used to build heterogeneous biomedical knowledge graphs with OWL semantics and property graph exports using configurable pipelines.
+  url: https://github.com/callahantiff/PheKnowLator/wiki
+  type: actual
 ---
 PheKnowLator (Phenotype Knowledge Translator) or pkt_kg is the first fully customizable 
 knowledge graph (KG) construction framework enabling users to build complex KGs that 
