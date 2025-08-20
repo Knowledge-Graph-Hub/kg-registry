@@ -4,8 +4,8 @@ category: DataSource
 contacts:
 - category: Organization
   label: ChEBI
-description: "Chemical Entities of Biological Interest (ChEBI) is a freely available\
-  \ dictionary of molecular entities focused on \u2018small\u2019 chemical compounds."
+description: Chemical Entities of Biological Interest (ChEBI) is a freely available
+  dictionary of molecular entities focused on ‘small’ chemical compounds.
 domains:
 - chemistry and biochemistry
 homepage_url: https://www.ebi.ac.uk/chebi/
@@ -605,12 +605,12 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
-  latest_version: '2.0.1'
+  latest_version: 2.0.1
   name: DrugMechDB Graph Dataset
   original_source:
   - go
@@ -628,10 +628,85 @@ products:
   product_url: https://doi.org/10.5281/zenodo.8139357
   repository: https://github.com/SuLab/DrugMechDB
   versions:
-  - '2.0.1'
-  - '2.0.0'
-  - '1.0.2'
+  - 2.0.1
+  - 2.0.0
+  - 1.0.2
   - '1.0'
+- category: GraphProduct
+  description: PheKnowLator graph files, including subsets with and without inverse
+    relations.
+  format: owl
+  id: pheknowlator.graph
+  latest_version: current_build
+  name: PheKnowLator graph
+  original_source:
+  - cl
+  - clo
+  - chebi
+  - go
+  - hp
+  - mondo
+  - pw
+  - pr
+  - ro
+  - so
+  - uberon
+  - vo
+  - bioportal
+  - clinvar
+  - ctd
+  - disgenet
+  - ensembl
+  - genemania
+  - hgnc
+  - hpa
+  - ncbigene
+  - medgen
+  - reactome
+  - string
+  - uniprot
+  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+  secondary_source:
+  - pheknowlator
+  versions:
+  - v1.0.0
+  - v2.0.0
+  - v2.1.0
+  - v3.0.2
+  - v4.0.0
+  - current_build
+- category: DataModelProduct
+  description: OWL release of VO
+  format: owl
+  id: vo.owl
+  name: Vaccine Ontology OWL release
+  original_source:
+  - bfo
+  - iao
+  - chebi
+  - ncbitaxon
+  - vo
+  product_file_size: 1466262
+  product_url: http://purl.obolibrary.org/obo/vo.owl
+  secondary_source:
+  - vo
+- category: DataModelProduct
+  description: OBO release of VO
+  format: obo
+  id: vo.obo
+  name: Vaccine Ontology OBO release
+  original_source:
+  - bfo
+  - iao
+  - chebi
+  - ncbitaxon
+  - vo
+  product_url: http://purl.obolibrary.org/obo/vo.obo
+  secondary_source:
+  - vo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
+    when accessing file'
 repository: https://github.com/ebi-chebi/ChEBI
 ---
 ChEBI

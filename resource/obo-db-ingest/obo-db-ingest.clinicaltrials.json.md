@@ -9,7 +9,7 @@ license:
 name: clinicaltrials OBO Graph JSON
 product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json
 warnings:
-- 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when
+- 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when
   accessing file'
 layout: product_detail
 ---

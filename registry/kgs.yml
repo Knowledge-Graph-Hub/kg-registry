@@ -390,7 +390,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -446,7 +446,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -474,7 +474,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
@@ -1137,6 +1137,38 @@ resources:
     - v2022-04-13
     - v2022-03-09
     - v2021-04-06
+  - category: DataModelProduct
+    description: OWL release of VO
+    format: owl
+    id: vo.owl
+    name: Vaccine Ontology OWL release
+    original_source:
+    - bfo
+    - iao
+    - chebi
+    - ncbitaxon
+    - vo
+    product_file_size: 1466262
+    product_url: http://purl.obolibrary.org/obo/vo.owl
+    secondary_source:
+    - vo
+  - category: DataModelProduct
+    description: OBO release of VO
+    format: obo
+    id: vo.obo
+    name: Vaccine Ontology OBO release
+    original_source:
+    - bfo
+    - iao
+    - chebi
+    - ncbitaxon
+    - vo
+    product_url: http://purl.obolibrary.org/obo/vo.obo
+    secondary_source:
+    - vo
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 502 error
+      when accessing file'
   repository: https://github.com/BFO-ontology/BFO
 - activity_status: active
   category: DataSource
@@ -1195,10 +1227,10 @@ resources:
     secondary_source:
     - bgee
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
-      to URL'
   - category: Product
     compression: zip
     description: RNA-Seq data processed and formatted for the Bgee database
@@ -1211,10 +1243,10 @@ resources:
     secondary_source:
     - bgee
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
-      to URL'
   - category: Product
     compression: zip
     description: Processed Affymetrix microarray data for the Bgee database
@@ -1227,10 +1259,10 @@ resources:
     secondary_source:
     - bgee
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
-      to URL'
   - category: Product
     compression: zip
     description: In Situ Hybridization data in the Bgee database
@@ -1243,10 +1275,10 @@ resources:
     secondary_source:
     - bgee
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
-      to URL'
   - category: Product
     compression: zip
     description: EST (Expressed Sequence Tag) expression data in the Bgee database
@@ -1259,10 +1291,10 @@ resources:
     secondary_source:
     - bgee
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
-      to URL'
   - category: Product
     compression: zip
     description: Single-cell RNA-Seq processed data in the Bgee database
@@ -1275,10 +1307,10 @@ resources:
     secondary_source:
     - bgee
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
-      to URL'
   - category: Product
     compression: zip
     description: Anatomical homology information used in Bgee
@@ -1291,10 +1323,10 @@ resources:
     secondary_source:
     - bgee
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
-      to URL'
   - category: Product
     compression: zip
     description: RDF version of the Bgee data for semantic web applications
@@ -1307,10 +1339,10 @@ resources:
     secondary_source:
     - bgee
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
-      to URL'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.
@@ -1476,7 +1508,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -1532,7 +1564,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -1560,7 +1592,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -2318,7 +2350,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -2374,7 +2406,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -2402,7 +2434,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
@@ -2738,7 +2770,7 @@ resources:
     secondary_source:
     - automat
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: ProcessProduct
     description: This repository is a code reference for the C-Path Knowledge Graph
@@ -3127,6 +3159,64 @@ resources:
     secondary_source:
     - biomarkerkg
   repository: https://github.com/MaayanLab/BiomarkerKG
+- activity_status: active
+  category: DataSource
+  creation_date: '2025-08-20T00:00:00Z'
+  description: Stub Resource page for bioportal. This page was automatically generated
+    because it was referenced by other resources.
+  domains:
+  - stub
+  id: bioportal
+  last_modified_date: '2025-08-20T00:00:00Z'
+  layout: resource_detail
+  name: Bioportal
+  products:
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
+  warnings:
+  - This is an automatically generated stub page. Please replace with accurate information
+    about this resource.
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -3877,10 +3967,8 @@ resources:
     name: Human Cell Markers
     product_url: http://xteam.xbio.top/download/Human_cell_markers.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
       header found'
   - category: Product
@@ -3889,10 +3977,8 @@ resources:
     name: Mouse Cell Markers
     product_url: http://xteam.xbio.top/download/Mouse_cell_markers.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
       header found'
   - category: Product
@@ -3902,10 +3988,8 @@ resources:
     name: Single Cell Markers
     product_url: http://xteam.xbio.top/download/Single_cell_markers.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
       header found'
   - category: Product
@@ -3915,10 +3999,8 @@ resources:
     name: All Cell Markers
     product_url: http://xteam.xbio.top/download/all_cell_markers.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
       header found'
   - category: GraphicalInterface
@@ -4053,7 +4135,7 @@ resources:
     secondary_source:
     - cellosaurus
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: Complete Cellosaurus data in RDF format using the Turtle syntax
@@ -4066,7 +4148,7 @@ resources:
     secondary_source:
     - cellosaurus
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
     description: RESTful API for programmatic access to Cellosaurus data
@@ -4205,7 +4287,7 @@ resources:
     secondary_source:
     - cgnc
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: cgnc OBO
@@ -4913,6 +4995,81 @@ resources:
     - 2.0.0
     - 1.0.2
     - '1.0'
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
+  - category: DataModelProduct
+    description: OWL release of VO
+    format: owl
+    id: vo.owl
+    name: Vaccine Ontology OWL release
+    original_source:
+    - bfo
+    - iao
+    - chebi
+    - ncbitaxon
+    - vo
+    product_file_size: 1466262
+    product_url: http://purl.obolibrary.org/obo/vo.owl
+    secondary_source:
+    - vo
+  - category: DataModelProduct
+    description: OBO release of VO
+    format: obo
+    id: vo.obo
+    name: Vaccine Ontology OBO release
+    original_source:
+    - bfo
+    - iao
+    - chebi
+    - ncbitaxon
+    - vo
+    product_url: http://purl.obolibrary.org/obo/vo.obo
+    secondary_source:
+    - vo
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
+      when accessing file'
   repository: https://github.com/ebi-chebi/ChEBI
 - activity_status: active
   category: DataSource
@@ -5336,7 +5493,7 @@ resources:
     secondary_source:
     - chr
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 502 error
       when accessing file'
@@ -5986,6 +6143,49 @@ resources:
     - 2.0.0
     - 1.0.2
     - '1.0'
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   publications:
   - authors:
     - Alexander D Diehl
@@ -6134,9 +6334,9 @@ resources:
     name: Variant Pathogenicity Curations
     product_url: https://search.clinicalgenome.org/kb/variant-pathogenicity/all
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-19: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
       to URL'
   - category: ProgrammingInterface
     description: REST API providing access to ClinGen's Evidence Repository for variant
@@ -6363,7 +6563,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -6419,7 +6619,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -6447,7 +6647,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -6746,7 +6946,7 @@ resources:
     - clinicaltrialsgov
     product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
@@ -7040,7 +7240,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -7096,7 +7296,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -7124,8 +7324,51 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   publications:
   - authors:
     - Landrum MJ
@@ -7298,6 +7541,49 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -7868,16 +8154,11 @@ resources:
     name: CORUM All Complexes
     product_url: https://mips.helmholtz-muenchen.de/corum/download/allComplexes.txt.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-08-20: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
-    - 'File was not able to be retrieved when checked on 2025-08-14: Error connecting
-      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
-      Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused
-      by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
-      verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
     - 'File was not able to be retrieved when checked on 2025-08-19: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused
@@ -7894,16 +8175,11 @@ resources:
     name: CORUM Core Complexes
     product_url: https://mips.helmholtz-muenchen.de/corum/download/coreComplexes.txt.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-08-20: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
-    - 'File was not able to be retrieved when checked on 2025-08-14: Error connecting
-      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
-      Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
-      by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
-      verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
     - 'File was not able to be retrieved when checked on 2025-08-19: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
@@ -7920,16 +8196,11 @@ resources:
     name: CORUM PSI-MI
     product_url: https://mips.helmholtz-muenchen.de/corum/download/psi.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-08-20: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1000)'')))'
-    - 'File was not able to be retrieved when checked on 2025-08-14: Error connecting
-      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
-      Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
-      ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
     - 'File was not able to be retrieved when checked on 2025-08-19: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
@@ -7945,16 +8216,11 @@ resources:
     name: CORUM MITAB
     product_url: https://mips.helmholtz-muenchen.de/corum/download/mitab.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-08-20: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1000)'')))'
-    - 'File was not able to be retrieved when checked on 2025-08-14: Error connecting
-      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
-      Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
-      ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
     - 'File was not able to be retrieved when checked on 2025-08-19: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
@@ -8367,7 +8633,7 @@ resources:
     secondary_source:
     - automat
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
@@ -8495,7 +8761,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -8551,7 +8817,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -8579,8 +8845,51 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
 - activity_status: active
   category: DataSource
   contacts:
@@ -9299,7 +9608,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -9355,7 +9664,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -9383,7 +9692,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
@@ -9928,6 +10237,49 @@ resources:
     - mi
     - ms
     - uo
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   publications:
   - authors:
     - Janet Piñero
@@ -11005,7 +11357,7 @@ resources:
     secondary_source:
     - automat
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -11187,7 +11539,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -11204,7 +11556,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -11222,7 +11574,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -11265,7 +11617,7 @@ resources:
     - clinicaltrialsgov
     product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
@@ -11409,7 +11761,7 @@ resources:
     name: DSSToxDB Description
     product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
@@ -12795,6 +13147,49 @@ resources:
     - ncbigene
     product_file_size: 282824267
     product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2ensembl.gz
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   publications:
   - authors:
     - Dyer SC
@@ -13910,14 +14305,12 @@ resources:
     name: FooDB CSV Data
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
-      header found'
   - category: Product
     compression: targz
     description: Complete FooDB database in XML format
@@ -13926,16 +14319,14 @@ resources:
     name: FooDB XML Data
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
-      header found'
   - category: Product
     compression: zip
     description: Complete FooDB database in JSON format
@@ -13944,16 +14335,14 @@ resources:
     name: FooDB JSON Data
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
-      header found'
   - category: Product
     compression: targz
     description: Complete FooDB database as MySQL dump
@@ -13961,16 +14350,14 @@ resources:
     name: FooDB MySQL Dump
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
-      header found'
   - category: Product
     compression: zip
     description: Experimental C-MS Spectra data from FooDB
@@ -13978,16 +14365,14 @@ resources:
     name: FooDB Experimental C-MS Spectra
     product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
-      header found'
   - category: Product
     compression: zip
     description: Predicted C-MS Spectra data from FooDB
@@ -13995,16 +14380,14 @@ resources:
     name: FooDB Predicted C-MS Spectra
     product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
-      header found'
   - category: Product
     compression: zip
     description: Experimental MS-MS Spectra data from FooDB
@@ -14012,16 +14395,14 @@ resources:
     name: FooDB Experimental MS-MS Spectra
     product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
-      header found'
   - category: Product
     compression: zip
     description: Predicted MS-MS Spectra data from FooDB
@@ -14029,16 +14410,14 @@ resources:
     name: FooDB Predicted MS-MS Spectra
     product_url: https://foodb.ca/public/system/downloads/foodb_predicted_msms_spectra.zip
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
-      header found'
   - category: Product
     compression: zip
     description: NMR Spectra data from FooDB
@@ -14046,16 +14425,14 @@ resources:
     name: FooDB NMR Spectra
     product_url: https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
-      header found'
   - category: Product
     compression: zip
     description: Free Induction Decay (FID) files from FooDB
@@ -14063,15 +14440,13 @@ resources:
     name: FooDB FID Files
     product_url: https://foodb.ca/public/system/downloads/foodb_fid_files.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
-      when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -14080,16 +14455,14 @@ resources:
     name: FooDB Image Files
     product_url: https://foodb.ca/public/system/downloads/foodb_image_files.zip
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
+      header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
-      header found'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.
@@ -14339,7 +14712,7 @@ resources:
     - gdsc
     product_url: https://ftp.sanger.ac.uk/project/cancerrxgene/releases/
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -14702,6 +15075,95 @@ resources:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
 - activity_status: active
+  category: DataSource
+  creation_date: '2025-08-20T00:00:00Z'
+  description: GeneMANIA is a gene function prediction resource that integrates many
+    types of functional association networks (co-expression, protein and genetic interactions,
+    pathways, co-localization, and shared protein domains) and uses adaptive network
+    weighting with label propagation to prioritize related genes and expand gene lists.
+  domains:
+  - genomics
+  - biomedical
+  - proteomics
+  homepage_url: https://genemania.org/
+  id: genemania
+  last_modified_date: '2025-08-20T00:00:00Z'
+  layout: resource_detail
+  name: GeneMANIA
+  products:
+  - category: GraphicalInterface
+    description: Web interface for searching, visualizing, and analyzing functional
+      association networks
+    id: genemania.web
+    name: GeneMANIA Web Interface
+    product_url: https://genemania.org/
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
+  publications:
+  - authors:
+    - Warde-Farley D
+    - Donaldson SL
+    - Comes O
+    - Zuberi K
+    - Badrawi R
+    - et al.
+    doi: 10.1093/nar/gkq537
+    id: doi:10.1093/nar/gkq537
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'The GeneMANIA prediction server: biological network integration for gene
+      prioritization and predicting gene function'
+    year: '2010'
+  usages:
+  - description: The PheKnowLator knowledge graph ingests GeneMANIA functional association
+      networks to construct gene-to-gene associations (e.g., co-expression and interaction
+      edges) during its build.
+    id: pheknowlator-gene-gene-edges
+    label: PheKnowLator gene–gene edges
+    type: actual
+    url: https://github.com/callahantiff/PheKnowLator/wiki
+- activity_status: active
   category: KnowledgeGraph
   collection:
   - translator
@@ -15050,7 +15512,7 @@ resources:
     secondary_source:
     - glyconnect
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -16051,7 +16513,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -16107,7 +16569,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -16135,8 +16597,77 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
+  - category: DataModelProduct
+    description: PW OWL release
+    format: owl
+    id: pw.owl
+    name: PW OWL
+    original_source:
+    - pw
+    - iao
+    - go
+    product_file_size: 5403526
+    product_url: http://purl.obolibrary.org/obo/pw.owl
+    secondary_source:
+    - pw
+  - category: DataModelProduct
+    description: PW OBO release
+    format: obo
+    id: pw.obo
+    name: PW OBO
+    original_source:
+    - pw
+    - iao
+    - go
+    product_file_size: 1347302
+    product_url: http://purl.obolibrary.org/obo/pw.obo
+    secondary_source:
+    - pw
   publications:
   - authors:
     - Ashburner M
@@ -16387,7 +16918,7 @@ resources:
     - go-cam
     product_url: https://github.com/geneontology/go-cam
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
     connection_url: http://api.geneontology.org/api/
@@ -16465,7 +16996,7 @@ resources:
     secondary_source:
     - goldterms
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     format: owl
@@ -16785,7 +17316,7 @@ resources:
     name: GtoPdb Targets and Families
     product_url: https://www.guidetopharmacology.org/DATA/targets_and_families.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
@@ -16797,7 +17328,7 @@ resources:
     name: GtoPdb Ligands Dataset
     product_url: https://www.guidetopharmacology.org/DATA/ligands.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
@@ -16808,7 +17339,7 @@ resources:
     name: GtoPdb Interactions Dataset
     product_url: https://www.guidetopharmacology.org/DATA/interactions.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
@@ -16819,7 +17350,7 @@ resources:
     name: GtoPdb Approved Drugs Dataset
     product_url: https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
@@ -16831,7 +17362,7 @@ resources:
     name: GtoPdb Ligand SDF File
     product_url: https://www.guidetopharmacology.org/DATA/all_ligands.sdf
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
@@ -16843,7 +17374,7 @@ resources:
     name: GtoPdb RDF Dataset
     product_url: https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
@@ -16854,7 +17385,7 @@ resources:
     name: GtoPdb Full Database
     product_url: https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
@@ -17648,7 +18179,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: hgnc OBO Graph JSON
@@ -17664,7 +18195,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: hgnc SSSOM
@@ -17741,7 +18272,7 @@ resources:
     secondary_source:
     - scibite
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -17939,6 +18470,49 @@ resources:
     product_url: https://stars.renci.org/var/plater/bl-4.2.1/HGNC_Automat/dee31cfce74e5944/
     secondary_source:
     - automat
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   repository: https://github.com/HGNC
 - activity_status: active
   category: DataSource
@@ -18627,7 +19201,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -18683,7 +19257,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -18711,8 +19285,51 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   repository: https://github.com/obophenotype/human-phenotype-ontology
 - activity_status: active
   category: DataSource
@@ -18858,6 +19475,49 @@ resources:
     - mi
     - ms
     - uo
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -19380,7 +20040,7 @@ resources:
     name: Antibody Validation Reports
     product_url: https://avr.hubmapconsortium.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 401 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 401 error
       when accessing file'
   - category: Product
     description: Data submission portal for registering and ingesting consortium data
@@ -19954,6 +20614,64 @@ resources:
     - v2022-04-13
     - v2022-03-09
     - v2021-04-06
+  - category: DataModelProduct
+    description: OWL release of VO
+    format: owl
+    id: vo.owl
+    name: Vaccine Ontology OWL release
+    original_source:
+    - bfo
+    - iao
+    - chebi
+    - ncbitaxon
+    - vo
+    product_file_size: 1466262
+    product_url: http://purl.obolibrary.org/obo/vo.owl
+    secondary_source:
+    - vo
+  - category: DataModelProduct
+    description: OBO release of VO
+    format: obo
+    id: vo.obo
+    name: Vaccine Ontology OBO release
+    original_source:
+    - bfo
+    - iao
+    - chebi
+    - ncbitaxon
+    - vo
+    product_url: http://purl.obolibrary.org/obo/vo.obo
+    secondary_source:
+    - vo
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
+      when accessing file'
+  - category: DataModelProduct
+    description: PW OWL release
+    format: owl
+    id: pw.owl
+    name: PW OWL
+    original_source:
+    - pw
+    - iao
+    - go
+    product_file_size: 5403526
+    product_url: http://purl.obolibrary.org/obo/pw.owl
+    secondary_source:
+    - pw
+  - category: DataModelProduct
+    description: PW OBO release
+    format: obo
+    id: pw.obo
+    name: PW OBO
+    original_source:
+    - pw
+    - iao
+    - go
+    product_file_size: 1347302
+    product_url: http://purl.obolibrary.org/obo/pw.obo
+    secondary_source:
+    - pw
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -21467,7 +22185,7 @@ resources:
     secondary_source:
     - kg-covid-19
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
       when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 - activity_status: active
@@ -21561,7 +22279,7 @@ resources:
     secondary_source:
     - kg-idg
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
@@ -21647,7 +22365,7 @@ resources:
     secondary_source:
     - kg-microbe
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -21910,7 +22628,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -22078,7 +22796,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -22162,7 +22880,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: ProcessProduct
     description: This repository is a code reference for the C-Path Knowledge Graph
@@ -23310,7 +24028,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -23366,7 +24084,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -23394,7 +24112,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
@@ -23460,7 +24178,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -23477,7 +24195,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -23495,7 +24213,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -23557,6 +24275,49 @@ resources:
     - omim
     product_file_size: 954971
     product_url: https://ftp.ncbi.nih.gov/gene/DATA/mim2gene_medgen
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -23934,7 +24695,7 @@ resources:
     secondary_source:
     - metanetx
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
   - category: Product
     description: MNXref unified namespace for reactions across databases
@@ -23947,7 +24708,7 @@ resources:
     secondary_source:
     - metanetx
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -24312,7 +25073,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -24329,7 +25090,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -24347,7 +25108,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -25011,6 +25772,49 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 - activity_status: active
   category: DataSource
@@ -26256,6 +27060,49 @@ resources:
     product_url: https://zenodo.org/record/4077338
     secondary_source:
     - pharmkg
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   publications:
   - authors:
     - Donna Maglott
@@ -26775,6 +27622,38 @@ resources:
     - 2.0.0
     - 1.0.2
     - '1.0'
+  - category: DataModelProduct
+    description: OWL release of VO
+    format: owl
+    id: vo.owl
+    name: Vaccine Ontology OWL release
+    original_source:
+    - bfo
+    - iao
+    - chebi
+    - ncbitaxon
+    - vo
+    product_file_size: 1466262
+    product_url: http://purl.obolibrary.org/obo/vo.owl
+    secondary_source:
+    - vo
+  - category: DataModelProduct
+    description: OBO release of VO
+    format: obo
+    id: vo.obo
+    name: Vaccine Ontology OBO release
+    original_source:
+    - bfo
+    - iao
+    - chebi
+    - ncbitaxon
+    - vo
+    product_url: http://purl.obolibrary.org/obo/vo.obo
+    secondary_source:
+    - vo
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Scott Federhen
@@ -28491,7 +29370,7 @@ resources:
     name: clinicaltrials OBO
     product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: clinicaltrials OWL
@@ -28503,7 +29382,7 @@ resources:
     name: clinicaltrials OWL
     product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: clinicaltrials OBO Graph JSON
@@ -28515,7 +29394,7 @@ resources:
     name: clinicaltrials OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: clinicaltrials SSSOM
@@ -28924,7 +29803,7 @@ resources:
     name: gtdb OBO
     product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: gtdb OWL
@@ -28984,7 +29863,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: hgnc OBO Graph JSON
@@ -29000,7 +29879,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: hgnc SSSOM
@@ -29177,7 +30056,7 @@ resources:
     name: itis OWL
     product_url: https://w3id.org/biopragmatics/resources/itis/itis.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: itis OBO Graph JSON
@@ -29189,7 +30068,7 @@ resources:
     name: itis OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/itis/itis.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: kegg.genome OBO
@@ -29241,7 +30120,7 @@ resources:
     name: mesh OWL
     product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: mesh OBO Graph JSON
@@ -29253,7 +30132,7 @@ resources:
     name: mesh OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: mgi OBO
@@ -29265,7 +30144,7 @@ resources:
     name: mgi OBO
     product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: mgi OWL
@@ -29277,7 +30156,7 @@ resources:
     name: mgi OWL
     product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: mgi OBO Graph JSON
@@ -29289,7 +30168,7 @@ resources:
     name: mgi OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: mgi SSSOM
@@ -29421,7 +30300,7 @@ resources:
     name: msigdb OBO
     product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: msigdb OWL
@@ -29433,7 +30312,7 @@ resources:
     name: msigdb OWL
     product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: msigdb OBO Graph JSON
@@ -29445,7 +30324,7 @@ resources:
     name: msigdb OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: msigdb SSSOM
@@ -29504,7 +30383,7 @@ resources:
     name: nihreporter.project OBO
     product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: nihreporter.project OWL
@@ -29513,7 +30392,7 @@ resources:
     name: nihreporter.project OWL
     product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: nihreporter.project OBO Graph JSON
@@ -29522,7 +30401,7 @@ resources:
     name: nihreporter.project OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: nlm OBO
@@ -29674,7 +30553,7 @@ resources:
     name: pathbank OBO
     product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: pathbank OWL
@@ -29686,7 +30565,7 @@ resources:
     name: pathbank OWL
     product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: pathbank OBO Graph JSON
@@ -29698,7 +30577,7 @@ resources:
     name: pathbank OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: pathbank SSSOM
@@ -30107,7 +30986,7 @@ resources:
     name: reactome OWL
     product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: reactome OBO Graph JSON
@@ -30119,7 +30998,7 @@ resources:
     name: reactome OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: rgd OBO
@@ -30189,7 +31068,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: rhea OBO Graph JSON
@@ -30205,7 +31084,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: Rhea SSSOM
@@ -30246,7 +31125,7 @@ resources:
     name: ror OWL
     product_url: https://w3id.org/biopragmatics/resources/ror/ror.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: ror OBO Graph JSON
@@ -30258,7 +31137,7 @@ resources:
     name: ror OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/ror/ror.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: ror SSSOM
@@ -30340,7 +31219,7 @@ resources:
     name: slm OBO
     product_url: https://w3id.org/biopragmatics/resources/slm/slm.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: slm OWL
@@ -30352,7 +31231,7 @@ resources:
     name: slm OWL
     product_url: https://w3id.org/biopragmatics/resources/slm/slm.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: slm OBO Graph JSON
@@ -30364,7 +31243,7 @@ resources:
     name: slm OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/slm/slm.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: slm SSSOM
@@ -30407,7 +31286,7 @@ resources:
     name: uniprot OBO
     product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: uniprot OWL
@@ -30419,7 +31298,7 @@ resources:
     name: uniprot OWL
     product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: uniprot OBO Graph JSON
@@ -30431,7 +31310,7 @@ resources:
     name: uniprot OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: uniprot SSSOM
@@ -30541,7 +31420,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: zfin OBO Graph JSON
@@ -30557,7 +31436,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: zfin SSSOM
@@ -31315,7 +32194,7 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
@@ -31332,7 +32211,7 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
@@ -31349,7 +32228,7 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
       when accessing file'
@@ -31367,7 +32246,7 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
       when accessing file'
@@ -31385,7 +32264,7 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
       when accessing file'
@@ -31403,7 +32282,7 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
       when accessing file'
@@ -31421,7 +32300,7 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
       when accessing file'
@@ -31437,7 +32316,7 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
       when accessing file'
@@ -31453,7 +32332,7 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
@@ -31472,7 +32351,7 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
       when accessing file'
@@ -33255,7 +34134,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -33311,7 +34190,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -33339,7 +34218,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: PANTHER Automat
@@ -35208,15 +36087,18 @@ resources:
   - category: Individual
     contact_details:
     - contact_type: github
-      value: https://github.com/callahantiff/
+      value: callahantiff
     label: Tiffany Callahan
-  description: PheKnowLator (Phenotype Knowledge Translator) or pkt_kg is the first
-    fully customizable knowledge graph (KG) construction framework enabling users
-    to build complex KGs that are Semantic Web compliant and amenable to automatic
-    Web Ontology Language (OWL) reasoning, generate contemporary property graphs,
-    and are importable by today’s popular graph toolkits.
+  description: PheKnowLator (Phenotype Knowledge Translator; pkt_kg) is a customizable
+    knowledge graph (KG) construction framework enabling users to build large, heterogeneous
+    KGs that are Semantic Web compliant and amenable to OWL reasoning, generate property
+    graphs, and export to formats compatible with popular graph toolkits. The project
+    provides configurable build recipes (e.g., OWL, property graph), reproducible
+    pipelines, and documentation for deployment and usage in the GitHub Wiki.
   domains:
   - organisms
+  - biomedical
+  - genomics
   homepage_url: https://github.com/callahantiff/PheKnowLator
   id: pheknowlator
   layout: resource_detail
@@ -35225,6 +36107,49 @@ resources:
     label: Apache License 2.0
   name: PheKnowLator
   products:
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   - category: ProcessProduct
     description: Code for generating PheKnowLator
     id: pheknowlator.code
@@ -35244,6 +36169,16 @@ resources:
     product_url: https://github.com/bsantan/MGMLink
     secondary_source:
     - mgmlink
+  - category: DocumentationProduct
+    description: User and developer documentation for PheKnowLator, including build
+      recipes and usage guides
+    id: pheknowlator.doc
+    name: PheKnowLator Wiki
+    original_source:
+    - pheknowlator
+    product_url: https://github.com/callahantiff/PheKnowLator/wiki
+    secondary_source:
+    - pheknowlator
   publications:
   - authors:
     - Callahan TJ
@@ -35252,10 +36187,19 @@ resources:
     - Baumgartner WA Jr
     doi: 10.1101/2020.04.30.071407
     id: doi:10.1101/2020.04.30.071407
+    journal: bioRxiv
+    preferred: true
     title: '''A Framework for Automated Construction of Heterogeneous Large-Scale
       Biomedical Knowledge Graphs'''
     year: '2020'
   repository: https://github.com/callahantiff/PheKnowLator
+  usages:
+  - description: PheKnowLator is used to build heterogeneous biomedical knowledge
+      graphs with OWL semantics and property graph exports using configurable pipelines.
+    id: phenoknowlator-build-framework
+    label: PheKnowLator build framework
+    type: actual
+    url: https://github.com/callahantiff/PheKnowLator/wiki
 - activity_status: active
   category: Resource
   contacts:
@@ -35293,7 +36237,7 @@ resources:
     secondary_source:
     - phenio
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compatibility:
@@ -35367,7 +36311,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -35423,7 +36367,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -35451,7 +36395,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   repository: https://github.com/monarch-initiative/phenio
   usages:
@@ -35945,7 +36889,7 @@ resources:
     secondary_source:
     - pombase
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
   - category: Product
     description: Tab-delimited file of systematic ID, primary gene name (where assigned),
@@ -35964,7 +36908,7 @@ resources:
     secondary_source:
     - pombase
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
@@ -36036,7 +36980,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -36092,7 +37036,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -36120,7 +37064,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   repository: https://www.pombase.org/datasets
 - activity_status: active
@@ -36294,6 +37238,49 @@ resources:
     - 2.0.0
     - 1.0.2
     - '1.0'
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -36335,7 +37322,7 @@ resources:
     secondary_source:
     - primekg
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
       when accessing file'
   repository: https://github.com/mims-harvard/PrimeKG
 - activity_status: active
@@ -36932,6 +37919,120 @@ resources:
       knowledge'
     year: '2024'
   repository: https://github.com/ncbi/AIONER
+- activity_status: active
+  category: DataModel
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: gthayman@mcw.edu
+    - contact_type: github
+      value: gthayman
+    label: G. Thomas Hayman
+    orcid: 0000-0002-9553-7227
+  creation_date: '2025-08-20T00:00:00Z'
+  description: The Pathway Ontology (PW) is a controlled vocabulary for biological
+    pathways, including canonical, altered, and disease pathways. Developed at the
+    Rat Genome Database, it supports standardized annotation of rat, human, and mouse
+    genes and enables navigation across pathway suites and interactive pathway diagrams.
+  domains:
+  - biological systems
+  homepage_url: https://rgd.mcw.edu/rgdweb/ontology/search.html
+  id: pw
+  last_modified_date: '2025-08-20T00:00:00Z'
+  layout: resource_detail
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC-BY-4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: Pathway Ontology
+  products:
+  - category: DataModelProduct
+    description: PW OWL release
+    format: owl
+    id: pw.owl
+    name: PW OWL
+    original_source:
+    - pw
+    - iao
+    - go
+    product_file_size: 5403526
+    product_url: http://purl.obolibrary.org/obo/pw.owl
+    secondary_source:
+    - pw
+  - category: DataModelProduct
+    description: PW OBO release
+    format: obo
+    id: pw.obo
+    name: PW OBO
+    original_source:
+    - pw
+    - iao
+    - go
+    product_file_size: 1347302
+    product_url: http://purl.obolibrary.org/obo/pw.obo
+    secondary_source:
+    - pw
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
+  publications:
+  - authors:
+    - Petri V
+    - Jayaraman P
+    - Tutaj M
+    - Hayman GT
+    - Smith JR
+    - De Pons J
+    - Laulederkind SJF
+    - et al.
+    doi: 10.1186/2041-1480-5-7
+    id: doi:10.1186/2041-1480-5-7
+    journal: Journal of Biomedical Semantics
+    preferred: true
+    title: The pathway ontology - updates and applications
+    year: '2014'
+  repository: https://github.com/rat-genome-database/PW-Pathway-Ontology
 - activity_status: active
   category: Resource
   contacts:
@@ -37540,7 +38641,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -37596,7 +38697,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -37624,8 +38725,51 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   repository: ''
 - activity_status: active
   category: DataSource
@@ -37776,7 +38920,7 @@ resources:
     - clinicaltrialsgov
     product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
@@ -37981,7 +39125,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: rhea OBO Graph JSON
@@ -37997,7 +39141,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: Rhea SSSOM
@@ -38331,6 +39475,49 @@ resources:
     - v2022-04-13
     - v2022-03-09
     - v2021-04-06
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -38378,7 +39565,7 @@ resources:
     secondary_source:
     - automat
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: Robokop Plus
@@ -38391,7 +39578,7 @@ resources:
     secondary_source:
     - automat
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
@@ -38715,7 +39902,7 @@ resources:
     secondary_source:
     - scibite
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
 - activity_status: active
   category: DataSource
@@ -40020,6 +41207,49 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   publications:
   - authors:
     - Eilbeck K
@@ -40825,7 +42055,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -40881,7 +42111,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -40909,7 +42139,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: STRING-DB Automat
@@ -40921,6 +42151,49 @@ resources:
     product_url: https://stars.renci.org/var/plater/bl-4.2.1/STRING-DB_Automat/4ca5a0ce557e2c18/
     secondary_source:
     - automat
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   publications:
   - authors:
     - Szklarczyk D
@@ -41002,7 +42275,7 @@ resources:
     name: Text Mining KP KGX
     product_url: https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   repository: ''
 - activity_status: active
@@ -42214,6 +43487,49 @@ resources:
     - 2.0.0
     - 1.0.2
     - '1.0'
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   repository: https://github.com/obophenotype/uberon
 - activity_status: active
   category: KnowledgeGraph
@@ -42669,7 +43985,7 @@ resources:
     secondary_source:
     - pombase
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
       header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
@@ -42712,7 +44028,7 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
       to URL'
@@ -43082,6 +44398,49 @@ resources:
     - 2.0.0
     - 1.0.2
     - '1.0'
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
   repository: https://www.uniprot.org/help/downloads
 - activity_status: active
   category: DataModel
@@ -43136,7 +44495,7 @@ resources:
     - uo
     product_url: http://purl.obolibrary.org/obo/uo.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: Browse UO with Ontology Lookup Service (OLS)
@@ -43452,6 +44811,98 @@ resources:
     title: The Units Ontology - a tool for integrating units of measurement in science
     year: '2012'
   repository: https://github.com/bio-ontology-research-group/unit-ontology
+- activity_status: active
+  category: DataModel
+  creation_date: '2025-08-20T00:00:00Z'
+  description: The Vaccine Ontology (VO) is a community ontology that represents vaccines,
+    vaccine components, vaccine administration, host responses, pathogens, and related
+    concepts. VO supports standardized representation, data integration, and analysis
+    of vaccine-related knowledge across resources.
+  domains:
+  - immunology
+  - health
+  - organisms
+  homepage_url: https://obofoundry.org/ontology/vo.html
+  id: vo
+  last_modified_date: '2025-08-20T00:00:00Z'
+  layout: resource_detail
+  name: Vaccine Ontology
+  products:
+  - category: DataModelProduct
+    description: OWL release of VO
+    format: owl
+    id: vo.owl
+    name: Vaccine Ontology OWL release
+    original_source:
+    - bfo
+    - iao
+    - chebi
+    - ncbitaxon
+    - vo
+    product_file_size: 1466262
+    product_url: http://purl.obolibrary.org/obo/vo.owl
+    secondary_source:
+    - vo
+  - category: DataModelProduct
+    description: OBO release of VO
+    format: obo
+    id: vo.obo
+    name: Vaccine Ontology OBO release
+    original_source:
+    - bfo
+    - iao
+    - chebi
+    - ncbitaxon
+    - vo
+    product_url: http://purl.obolibrary.org/obo/vo.obo
+    secondary_source:
+    - vo
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
+      when accessing file'
+  - category: GraphProduct
+    description: PheKnowLator graph files, including subsets with and without inverse
+      relations.
+    format: owl
+    id: pheknowlator.graph
+    latest_version: current_build
+    name: PheKnowLator graph
+    original_source:
+    - cl
+    - clo
+    - chebi
+    - go
+    - hp
+    - mondo
+    - pw
+    - pr
+    - ro
+    - so
+    - uberon
+    - vo
+    - bioportal
+    - clinvar
+    - ctd
+    - disgenet
+    - ensembl
+    - genemania
+    - hgnc
+    - hpa
+    - ncbigene
+    - medgen
+    - reactome
+    - string
+    - uniprot
+    product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+    secondary_source:
+    - pheknowlator
+    versions:
+    - v1.0.0
+    - v2.0.0
+    - v2.1.0
+    - v3.0.2
+    - v4.0.0
+    - current_build
 - activity_status: active
   category: DataSource
   description: Stub Resource page for wbls. This page was automatically generated
@@ -43964,7 +45415,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -44020,7 +45471,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -44048,7 +45499,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
@@ -44231,7 +45682,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: Product
     description: zfin OBO Graph JSON
@@ -44246,7 +45697,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: zfin SSSOM
@@ -44343,7 +45794,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
@@ -44399,7 +45850,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
@@ -44427,7 +45878,7 @@ resources:
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
       when accessing file'
   repository: https://github.com/ZFIN/
 - activity_status: inactive
@@ -44598,7 +46049,7 @@ resources:
     name: SemMedDB MySQL Database
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_MySQL_database.html
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing citation information for all PubMed articles
@@ -44608,7 +46059,7 @@ resources:
     name: SemMedDB Citations CSV
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing entity information with UMLS concept identifiers,
@@ -44618,7 +46069,7 @@ resources:
     name: SemMedDB Entity CSV
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/ENTITY.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing semantic predications with subject-predicate-object
@@ -44628,7 +46079,7 @@ resources:
     name: SemMedDB Predication CSV
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/PREDICATION.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing sentence information from PubMed citations
@@ -44637,7 +46088,7 @@ resources:
     name: SemMedDB Sentence CSV
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
       when accessing file'
   - category: ProcessProduct
     description: The SemRep natural language processing system that extracts semantic

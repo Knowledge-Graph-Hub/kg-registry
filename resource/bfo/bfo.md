@@ -261,6 +261,38 @@ products:
   - v2022-04-13
   - v2022-03-09
   - v2021-04-06
+- category: DataModelProduct
+  description: OWL release of VO
+  format: owl
+  id: vo.owl
+  name: Vaccine Ontology OWL release
+  original_source:
+  - bfo
+  - iao
+  - chebi
+  - ncbitaxon
+  - vo
+  product_file_size: 1466262
+  product_url: http://purl.obolibrary.org/obo/vo.owl
+  secondary_source:
+  - vo
+- category: DataModelProduct
+  description: OBO release of VO
+  format: obo
+  id: vo.obo
+  name: Vaccine Ontology OBO release
+  original_source:
+  - bfo
+  - iao
+  - chebi
+  - ncbitaxon
+  - vo
+  product_url: http://purl.obolibrary.org/obo/vo.obo
+  secondary_source:
+  - vo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 502 error
+    when accessing file'
 repository: https://github.com/BFO-ontology/BFO
 ---
 # Basic Formal Ontology (BFO)

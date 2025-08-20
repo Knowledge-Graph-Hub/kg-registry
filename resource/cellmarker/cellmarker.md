@@ -30,10 +30,8 @@ products:
   name: Human Cell Markers
   product_url: http://xteam.xbio.top/download/Human_cell_markers.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-19: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
     header found'
 - category: Product
@@ -42,10 +40,8 @@ products:
   name: Mouse Cell Markers
   product_url: http://xteam.xbio.top/download/Mouse_cell_markers.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-19: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
     header found'
 - category: Product
@@ -55,10 +51,8 @@ products:
   name: Single Cell Markers
   product_url: http://xteam.xbio.top/download/Single_cell_markers.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-19: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
     header found'
 - category: Product
@@ -68,10 +62,8 @@ products:
   name: All Cell Markers
   product_url: http://xteam.xbio.top/download/all_cell_markers.txt
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-19: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2025-08-14: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-19: No Content-Length
     header found'
 - category: GraphicalInterface
