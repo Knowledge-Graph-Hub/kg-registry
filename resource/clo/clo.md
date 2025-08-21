@@ -29,6 +29,16 @@ products:
   name: CLO OWL
   original_source:
   - clo
+  - chebi
+  - uberon
+  - ncbitaxon
+  - do
+  - bfo
+  - iao
+  - dc
+  - skos
+  - efo
+  - ro
   product_url: http://purl.obolibrary.org/obo/clo.owl
   secondary_source:
   - clo
