@@ -51,6 +51,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
+    when accessing file'
 - category: Product
   description: hgnc OBO Graph JSON
   format: json
@@ -66,6 +68,8 @@ products:
   - obo-db-ingest
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: hgnc SSSOM
@@ -143,6 +147,8 @@ products:
   - scibite
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -383,6 +389,19 @@ products:
   - v3.0.2
   - v4.0.0
   - current_build
+- category: MappingProduct
+  description: Public mapping of MIM numbers to NCBI Gene IDs, Ensembl Gene IDs, and
+    HGNC symbols
+  format: tsv
+  id: omim.mim2gene
+  name: OMIM mim2gene.txt
+  original_source:
+  - omim
+  - ncbigene
+  - ensembl
+  - hgnc
+  product_file_size: 974440
+  product_url: https://www.omim.org/static/omim/data/mim2gene.txt
 repository: https://github.com/HGNC
 ---
 HUGO Gene Nomenclature Committee
