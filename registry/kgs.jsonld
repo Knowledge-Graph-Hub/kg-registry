@@ -454,7 +454,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -518,7 +519,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -550,7 +552,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -1413,7 +1416,33 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "CLO merged OWL release",
+                    "format": "owl",
+                    "id": "clo.owl",
+                    "name": "CLO OWL",
+                    "original_source": [
+                        "clo",
+                        "chebi",
+                        "uberon",
+                        "ncbitaxon",
+                        "do",
+                        "bfo",
+                        "iao",
+                        "dc",
+                        "skos",
+                        "efo",
+                        "ro"
+                    ],
+                    "product_file_size": 2121232,
+                    "product_url": "http://purl.obolibrary.org/obo/clo.owl",
+                    "secondary_source": [
+                        "clo"
                     ]
                 }
             ],
@@ -1497,7 +1526,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -1516,7 +1546,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -1535,7 +1566,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -1554,7 +1586,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -1573,7 +1606,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -1592,7 +1626,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -1611,7 +1646,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -1630,7 +1666,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-19: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -1818,7 +1855,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -1882,7 +1920,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -1914,7 +1953,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -2859,7 +2899,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -2923,7 +2964,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -2955,7 +2997,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -3363,7 +3406,8 @@
                         "automat"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -4776,8 +4820,8 @@
                     "product_url": "http://xteam.xbio.top/download/Human_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-19: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -4788,8 +4832,8 @@
                     "product_url": "http://xteam.xbio.top/download/Mouse_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-19: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -4800,8 +4844,8 @@
                     "product_url": "http://xteam.xbio.top/download/Single_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-19: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -4812,8 +4856,8 @@
                     "product_url": "http://xteam.xbio.top/download/all_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-19: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -4985,7 +5029,8 @@
                         "cellosaurus"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -5002,7 +5047,8 @@
                         "cellosaurus"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -5174,7 +5220,8 @@
                         "cgnc"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -6073,7 +6120,33 @@
                         "vo"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "CLO merged OWL release",
+                    "format": "owl",
+                    "id": "clo.owl",
+                    "name": "CLO OWL",
+                    "original_source": [
+                        "clo",
+                        "chebi",
+                        "uberon",
+                        "ncbitaxon",
+                        "do",
+                        "bfo",
+                        "iao",
+                        "dc",
+                        "skos",
+                        "efo",
+                        "ro"
+                    ],
+                    "product_file_size": 2121232,
+                    "product_url": "http://purl.obolibrary.org/obo/clo.owl",
+                    "secondary_source": [
+                        "clo"
                     ]
                 }
             ],
@@ -6601,7 +6674,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -7808,7 +7882,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -7872,7 +7947,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -7904,7 +7980,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -8270,7 +8347,8 @@
                     "product_url": "https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -8593,7 +8671,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -8657,7 +8736,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -8689,7 +8769,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -8805,15 +8886,63 @@
         },
         {
             "activity_status": "active",
-            "category": "DataSource",
-            "description": "Stub Resource page for clo. This page was automatically generated because it was referenced by other resources.",
-            "domains": [
-                "stub"
+            "category": "DataModel",
+            "contacts": [
+                {
+                    "category": "Individual",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "zhengj2007@gmail.com"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "zhengj2007"
+                        }
+                    ],
+                    "label": "Jie Zheng",
+                    "orcid": "0000-0002-2999-0103"
+                }
             ],
+            "description": "The Cell Line Ontology (CLO) is a community-driven ontology to standardize and integrate cell line information and support computer-assisted reasoning.",
+            "domains": [
+                "anatomy and development"
+            ],
+            "homepage_url": "https://github.com/CLO-Ontology/CLO",
             "id": "clo",
             "layout": "resource_detail",
-            "name": "Clo",
+            "license": {
+                "id": "https://creativecommons.org/licenses/by/3.0/",
+                "label": "CC-BY-3.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+            },
+            "name": "Cell Line Ontology",
             "products": [
+                {
+                    "category": "DataModelProduct",
+                    "description": "CLO merged OWL release",
+                    "format": "owl",
+                    "id": "clo.owl",
+                    "name": "CLO OWL",
+                    "original_source": [
+                        "clo",
+                        "chebi",
+                        "uberon",
+                        "ncbitaxon",
+                        "do",
+                        "bfo",
+                        "iao",
+                        "dc",
+                        "skos",
+                        "efo",
+                        "ro"
+                    ],
+                    "product_file_size": 2121232,
+                    "product_url": "http://purl.obolibrary.org/obo/clo.owl",
+                    "secondary_source": [
+                        "clo"
+                    ]
+                },
                 {
                     "category": "DataModelProduct",
                     "description": "The latest release of EFO in OWL format",
@@ -8976,9 +9105,27 @@
                     ]
                 }
             ],
-            "warnings": [
-                "This is an automatically generated stub page. Please replace with accurate information about this resource."
-            ]
+            "publications": [
+                {
+                    "authors": [
+                        "Sarntivijai S",
+                        "Lin Y",
+                        "Xiang Z",
+                        "Meehan TF",
+                        "Diehl AD",
+                        "Vempati UD",
+                        "Schürer TC",
+                        "et al."
+                    ],
+                    "doi": "10.1186/2041-1480-5-37",
+                    "id": "doi:10.1186/2041-1480-5-37",
+                    "journal": "Journal of Biomedical Semantics",
+                    "preferred": true,
+                    "title": "CLO: The Cell Line Ontology",
+                    "year": "2014"
+                }
+            ],
+            "repository": "https://github.com/CLO-ontology/CLO"
         },
         {
             "activity_status": "active",
@@ -9630,8 +9777,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/allComplexes.txt.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
-                        "File was not able to be retrieved when checked on 2025-08-19: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
-                        "File was not able to be retrieved when checked on 2025-08-20: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-08-20: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
+                        "File was not able to be retrieved when checked on 2025-08-21: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
                     ]
                 },
                 {
@@ -9647,8 +9794,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/coreComplexes.txt.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
-                        "File was not able to be retrieved when checked on 2025-08-19: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
-                        "File was not able to be retrieved when checked on 2025-08-20: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-08-20: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
+                        "File was not able to be retrieved when checked on 2025-08-21: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
                     ]
                 },
                 {
@@ -9664,8 +9811,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/psi.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
-                        "File was not able to be retrieved when checked on 2025-08-19: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
-                        "File was not able to be retrieved when checked on 2025-08-20: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-08-20: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
+                        "File was not able to be retrieved when checked on 2025-08-21: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
                     ]
                 },
                 {
@@ -9681,8 +9828,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/mitab.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
-                        "File was not able to be retrieved when checked on 2025-08-19: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
-                        "File was not able to be retrieved when checked on 2025-08-20: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-08-20: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
+                        "File was not able to be retrieved when checked on 2025-08-21: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
                     ]
                 },
                 {
@@ -10172,7 +10319,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -10313,7 +10461,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -10377,7 +10526,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -10409,7 +10559,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -10723,6 +10874,82 @@
                     "product_url": "https://www.ebi.ac.uk/efo/efo.obo",
                     "secondary_source": [
                         "efo"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "CLO merged OWL release",
+                    "format": "owl",
+                    "id": "clo.owl",
+                    "name": "CLO OWL",
+                    "original_source": [
+                        "clo",
+                        "chebi",
+                        "uberon",
+                        "ncbitaxon",
+                        "do",
+                        "bfo",
+                        "iao",
+                        "dc",
+                        "skos",
+                        "efo",
+                        "ro"
+                    ],
+                    "product_file_size": 2121232,
+                    "product_url": "http://purl.obolibrary.org/obo/clo.owl",
+                    "secondary_source": [
+                        "clo"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "EDAM OWL release",
+                    "format": "owl",
+                    "id": "edam.owl",
+                    "name": "EDAM OWL",
+                    "original_source": [
+                        "edam",
+                        "dc",
+                        "skos"
+                    ],
+                    "product_file_size": 3373041,
+                    "product_url": "http://edamontology.org/EDAM.owl",
+                    "secondary_source": [
+                        "edam"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "EDAM TSV export",
+                    "format": "tsv",
+                    "id": "edam.tsv",
+                    "name": "EDAM TSV",
+                    "original_source": [
+                        "edam",
+                        "dc",
+                        "skos"
+                    ],
+                    "product_file_size": 1977072,
+                    "product_url": "https://edamontology.org/EDAM.tsv",
+                    "secondary_source": [
+                        "edam"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "EDAM CSV export",
+                    "format": "csv",
+                    "id": "edam.csv",
+                    "name": "EDAM CSV",
+                    "original_source": [
+                        "edam",
+                        "dc",
+                        "skos"
+                    ],
+                    "product_file_size": 1977072,
+                    "product_url": "https://edamontology.org/EDAM.csv",
+                    "secondary_source": [
+                        "edam"
                     ]
                 }
             ],
@@ -11283,7 +11510,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -11347,7 +11575,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -11379,7 +11608,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -12613,6 +12843,31 @@
                         "ms",
                         "uo"
                     ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "CLO merged OWL release",
+                    "format": "owl",
+                    "id": "clo.owl",
+                    "name": "CLO OWL",
+                    "original_source": [
+                        "clo",
+                        "chebi",
+                        "uberon",
+                        "ncbitaxon",
+                        "do",
+                        "bfo",
+                        "iao",
+                        "dc",
+                        "skos",
+                        "efo",
+                        "ro"
+                    ],
+                    "product_file_size": 2121232,
+                    "product_url": "http://purl.obolibrary.org/obo/clo.owl",
+                    "secondary_source": [
+                        "clo"
+                    ]
                 }
             ],
             "repository": "https://github.com/DiseaseOntology/HumanDiseaseOntology"
@@ -13294,7 +13549,8 @@
                         "automat"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -13503,7 +13759,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -13525,7 +13782,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -13547,7 +13805,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -13603,7 +13862,8 @@
                     "product_url": "https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -13780,7 +14040,8 @@
                     "name": "DSSToxDB Description",
                     "product_url": "https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -14627,15 +14888,105 @@
         },
         {
             "activity_status": "active",
-            "category": "DataSource",
-            "description": "Stub Resource page for edam. This page was automatically generated because it was referenced by other resources.",
-            "domains": [
-                "stub"
+            "category": "DataModel",
+            "contacts": [
+                {
+                    "category": "Individual",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "joncison"
+                        }
+                    ],
+                    "label": "Jon Ison"
+                },
+                {
+                    "category": "Individual",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "matuskalas"
+                        }
+                    ],
+                    "label": "Matúš Kalaš"
+                },
+                {
+                    "category": "Individual",
+                    "contact_details": [
+                        {
+                            "contact_type": "github",
+                            "value": "hmenager"
+                        }
+                    ],
+                    "label": "Hervé Ménager"
+                }
             ],
+            "description": "EDAM is an ontology of bioscientific data analysis and data management, covering topics, operations, data, identifiers, and formats. It supports semantic annotation of tools, workflows, training, and provenance metadata across life sciences.",
+            "domains": [
+                "information technology",
+                "biological systems"
+            ],
+            "homepage_url": "https://edamontology.org/",
             "id": "edam",
             "layout": "resource_detail",
-            "name": "Edam",
+            "license": {
+                "id": "https://creativecommons.org/licenses/by-sa/4.0/",
+                "label": "CC-BY-SA-4.0",
+                "logo": "https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png"
+            },
+            "name": "EDAM Ontology",
             "products": [
+                {
+                    "category": "DataModelProduct",
+                    "description": "EDAM OWL release",
+                    "format": "owl",
+                    "id": "edam.owl",
+                    "name": "EDAM OWL",
+                    "original_source": [
+                        "edam",
+                        "dc",
+                        "skos"
+                    ],
+                    "product_file_size": 3373041,
+                    "product_url": "http://edamontology.org/EDAM.owl",
+                    "secondary_source": [
+                        "edam"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "EDAM TSV export",
+                    "format": "tsv",
+                    "id": "edam.tsv",
+                    "name": "EDAM TSV",
+                    "original_source": [
+                        "edam",
+                        "dc",
+                        "skos"
+                    ],
+                    "product_file_size": 1977072,
+                    "product_url": "https://edamontology.org/EDAM.tsv",
+                    "secondary_source": [
+                        "edam"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "EDAM CSV export",
+                    "format": "csv",
+                    "id": "edam.csv",
+                    "name": "EDAM CSV",
+                    "original_source": [
+                        "edam",
+                        "dc",
+                        "skos"
+                    ],
+                    "product_file_size": 1977072,
+                    "product_url": "https://edamontology.org/EDAM.csv",
+                    "secondary_source": [
+                        "edam"
+                    ]
+                },
                 {
                     "category": "GraphProduct",
                     "description": "Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.",
@@ -14769,9 +15120,25 @@
                     ]
                 }
             ],
-            "warnings": [
-                "This is an automatically generated stub page. Please replace with accurate information about this resource."
-            ]
+            "publications": [
+                {
+                    "authors": [
+                        "Ison J",
+                        "Kalaš M",
+                        "Jonassen I",
+                        "Bolser D",
+                        "Uludag M",
+                        "et al."
+                    ],
+                    "doi": "10.1093/bioinformatics/btt113",
+                    "id": "doi:10.1093/bioinformatics/btt113",
+                    "journal": "Bioinformatics",
+                    "preferred": true,
+                    "title": "EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats",
+                    "year": "2013"
+                }
+            ],
+            "repository": "https://github.com/edamontology/edamontology"
         },
         {
             "activity_status": "active",
@@ -15113,6 +15480,31 @@
                         "mi",
                         "ms",
                         "uo"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "CLO merged OWL release",
+                    "format": "owl",
+                    "id": "clo.owl",
+                    "name": "CLO OWL",
+                    "original_source": [
+                        "clo",
+                        "chebi",
+                        "uberon",
+                        "ncbitaxon",
+                        "do",
+                        "bfo",
+                        "iao",
+                        "dc",
+                        "skos",
+                        "efo",
+                        "ro"
+                    ],
+                    "product_file_size": 2121232,
+                    "product_url": "http://purl.obolibrary.org/obo/clo.owl",
+                    "secondary_source": [
+                        "clo"
                     ]
                 }
             ],
@@ -15488,6 +15880,21 @@
                         "v4.0.0",
                         "current_build"
                     ]
+                },
+                {
+                    "category": "MappingProduct",
+                    "description": "Public mapping of MIM numbers to NCBI Gene IDs, Ensembl Gene IDs, and HGNC symbols",
+                    "format": "tsv",
+                    "id": "omim.mim2gene",
+                    "name": "OMIM mim2gene.txt",
+                    "original_source": [
+                        "omim",
+                        "ncbigene",
+                        "ensembl",
+                        "hgnc"
+                    ],
+                    "product_file_size": 974440,
+                    "product_url": "https://www.omim.org/static/omim/data/mim2gene.txt"
                 }
             ],
             "publications": [
@@ -16737,7 +17144,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-19: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -16752,7 +17160,8 @@
                         "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -16767,7 +17176,8 @@
                         "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -16781,7 +17191,8 @@
                         "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -16795,7 +17206,8 @@
                         "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -16809,7 +17221,8 @@
                         "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -16823,7 +17236,8 @@
                         "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -16837,7 +17251,8 @@
                         "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -16851,7 +17266,8 @@
                         "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -16865,7 +17281,8 @@
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -16879,7 +17296,8 @@
                         "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -17170,7 +17588,8 @@
                     ],
                     "product_url": "https://ftp.sanger.ac.uk/project/cancerrxgene/releases/",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -18088,7 +18507,8 @@
                         "glyconnect"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -19240,7 +19660,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -19304,7 +19725,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -19336,7 +19758,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -19702,7 +20125,8 @@
                     ],
                     "product_url": "https://github.com/geneontology/go-cam",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -19805,7 +20229,8 @@
                         "goldterms"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -20190,7 +20615,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/targets_and_families.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -20202,7 +20628,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/ligands.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -20214,7 +20641,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/interactions.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -20226,7 +20654,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -20238,7 +20667,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/all_ligands.sdf",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -20250,7 +20680,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -20261,7 +20692,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -21206,7 +21638,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -21227,7 +21660,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -21325,7 +21759,8 @@
                         "scibite"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -21585,6 +22020,21 @@
                         "v4.0.0",
                         "current_build"
                     ]
+                },
+                {
+                    "category": "MappingProduct",
+                    "description": "Public mapping of MIM numbers to NCBI Gene IDs, Ensembl Gene IDs, and HGNC symbols",
+                    "format": "tsv",
+                    "id": "omim.mim2gene",
+                    "name": "OMIM mim2gene.txt",
+                    "original_source": [
+                        "omim",
+                        "ncbigene",
+                        "ensembl",
+                        "hgnc"
+                    ],
+                    "product_file_size": 974440,
+                    "product_url": "https://www.omim.org/static/omim/data/mim2gene.txt"
                 }
             ],
             "repository": "https://github.com/HGNC"
@@ -22359,7 +22809,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -22423,7 +22874,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -22455,7 +22907,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -23300,7 +23753,8 @@
                     "name": "Antibody Validation Reports",
                     "product_url": "https://avr.hubmapconsortium.org/",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 401 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 401 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 401 error when accessing file"
                     ]
                 },
                 {
@@ -23990,7 +24444,8 @@
                         "vo"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -24025,6 +24480,31 @@
                     "product_url": "http://purl.obolibrary.org/obo/pw.obo",
                     "secondary_source": [
                         "pw"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "CLO merged OWL release",
+                    "format": "owl",
+                    "id": "clo.owl",
+                    "name": "CLO OWL",
+                    "original_source": [
+                        "clo",
+                        "chebi",
+                        "uberon",
+                        "ncbitaxon",
+                        "do",
+                        "bfo",
+                        "iao",
+                        "dc",
+                        "skos",
+                        "efo",
+                        "ro"
+                    ],
+                    "product_file_size": 2121232,
+                    "product_url": "http://purl.obolibrary.org/obo/clo.owl",
+                    "secondary_source": [
+                        "clo"
                     ]
                 }
             ],
@@ -25857,7 +26337,8 @@
                         "kg-covid-19"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error when accessing file"
                     ]
                 }
             ],
@@ -25995,7 +26476,8 @@
                         "kg-idg"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -26116,7 +26598,8 @@
                         "kg-microbe"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error when accessing file"
                     ]
                 },
                 {
@@ -26425,7 +26908,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -26605,7 +27089,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -26695,7 +27180,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -27970,7 +28456,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -28034,7 +28521,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -28066,7 +28554,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -28144,7 +28633,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -28166,7 +28656,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -28188,7 +28679,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -28768,7 +29260,8 @@
                         "metanetx"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -28785,7 +29278,8 @@
                         "metanetx"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -29208,7 +29702,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -29230,7 +29725,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -29252,7 +29748,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -31522,6 +32019,21 @@
                         "v4.0.0",
                         "current_build"
                     ]
+                },
+                {
+                    "category": "MappingProduct",
+                    "description": "Public mapping of MIM numbers to NCBI Gene IDs, Ensembl Gene IDs, and HGNC symbols",
+                    "format": "tsv",
+                    "id": "omim.mim2gene",
+                    "name": "OMIM mim2gene.txt",
+                    "original_source": [
+                        "omim",
+                        "ncbigene",
+                        "ensembl",
+                        "hgnc"
+                    ],
+                    "product_file_size": 974440,
+                    "product_url": "https://www.omim.org/static/omim/data/mim2gene.txt"
                 }
             ],
             "publications": [
@@ -32164,7 +32676,33 @@
                         "vo"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "CLO merged OWL release",
+                    "format": "owl",
+                    "id": "clo.owl",
+                    "name": "CLO OWL",
+                    "original_source": [
+                        "clo",
+                        "chebi",
+                        "uberon",
+                        "ncbitaxon",
+                        "do",
+                        "bfo",
+                        "iao",
+                        "dc",
+                        "skos",
+                        "efo",
+                        "ro"
+                    ],
+                    "product_file_size": 2121232,
+                    "product_url": "http://purl.obolibrary.org/obo/clo.owl",
+                    "secondary_source": [
+                        "clo"
                     ]
                 }
             ],
@@ -34195,7 +34733,8 @@
                     "name": "clinicaltrials OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -34210,7 +34749,8 @@
                     "name": "clinicaltrials OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -34225,7 +34765,8 @@
                     "name": "clinicaltrials OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -34755,7 +35296,8 @@
                     "name": "gtdb OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -34834,7 +35376,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -34855,7 +35398,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -35088,7 +35632,8 @@
                     "name": "itis OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/itis/itis.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -35103,7 +35648,8 @@
                     "name": "itis OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/itis/itis.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -35170,7 +35716,8 @@
                     "name": "mesh OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/mesh/mesh.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -35185,7 +35732,8 @@
                     "name": "mesh OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/mesh/mesh.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -35200,7 +35748,8 @@
                     "name": "mgi OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/mgi/mgi.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -35215,7 +35764,8 @@
                     "name": "mgi OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/mgi/mgi.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -35230,7 +35780,8 @@
                     "name": "mgi OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/mgi/mgi.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -35401,7 +35952,8 @@
                     "name": "msigdb OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -35416,7 +35968,8 @@
                     "name": "msigdb OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -35431,7 +35984,8 @@
                     "name": "msigdb OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/msigdb/msigdb.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -35507,7 +36061,8 @@
                     "name": "nihreporter.project OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -35518,7 +36073,8 @@
                     "name": "nihreporter.project OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -35529,7 +36085,8 @@
                     "name": "nihreporter.project OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -35726,7 +36283,8 @@
                     "name": "pathbank OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -35741,7 +36299,8 @@
                     "name": "pathbank OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -35756,7 +36315,8 @@
                     "name": "pathbank OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/pathbank/pathbank.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -36302,7 +36862,8 @@
                     "name": "reactome OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/reactome/reactome.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -36317,7 +36878,8 @@
                     "name": "reactome OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/reactome/reactome.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -36409,7 +36971,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -36430,7 +36993,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -36482,7 +37046,8 @@
                     "name": "ror OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/ror/ror.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -36497,7 +37062,8 @@
                     "name": "ror OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/ror/ror.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -36603,7 +37169,8 @@
                     "name": "slm OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/slm/slm.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -36618,7 +37185,8 @@
                     "name": "slm OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/slm/slm.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -36633,7 +37201,8 @@
                     "name": "slm OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/slm/slm.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -36688,7 +37257,8 @@
                     "name": "uniprot OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -36703,7 +37273,8 @@
                     "name": "uniprot OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -36718,7 +37289,8 @@
                     "name": "uniprot OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/uniprot/uniprot.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -36862,7 +37434,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -36883,7 +37456,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -37768,7 +38342,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -37787,7 +38362,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -37806,7 +38382,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -37826,7 +38403,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -37846,7 +38424,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -37866,7 +38445,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -37886,7 +38466,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -37903,7 +38484,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -37923,7 +38505,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -37944,7 +38527,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ]
@@ -37952,14 +38536,71 @@
         {
             "activity_status": "active",
             "category": "DataSource",
-            "description": "Stub Resource page for omim. This page was automatically generated because it was referenced by other resources.",
-            "domains": [
-                "stub"
+            "contacts": [
+                {
+                    "category": "Organization",
+                    "contact_details": [
+                        {
+                            "contact_type": "url",
+                            "value": "https://www.omim.org/contact"
+                        }
+                    ],
+                    "label": "OMIM (Johns Hopkins University)"
+                }
             ],
+            "description": "OMIM (Online Mendelian Inheritance in Man) is a continuously updated, expert-curated catalog of human genes and genetic disorders, focusing on genotype–phenotype relationships and the molecular basis of disease.",
+            "domains": [
+                "biomedical",
+                "clinical",
+                "genomics"
+            ],
+            "homepage_url": "https://www.omim.org/",
             "id": "omim",
             "layout": "resource_detail",
-            "name": "Omim",
+            "license": {
+                "id": "https://www.omim.org/help/agreement",
+                "label": "OMIM Use Agreement (research/educational use; license required for commercial/redistribution)"
+            },
+            "name": "OMIM",
             "products": [
+                {
+                    "category": "GraphicalInterface",
+                    "description": "Web interface for browsing and searching OMIM entries",
+                    "format": "http",
+                    "id": "omim.web",
+                    "name": "OMIM Website",
+                    "original_source": [
+                        "omim"
+                    ],
+                    "product_url": "https://www.omim.org/"
+                },
+                {
+                    "category": "ProgrammingInterface",
+                    "description": "REST-based API for programmatic access to OMIM data (registration and API key required)",
+                    "format": "http",
+                    "id": "omim.api",
+                    "is_public": false,
+                    "name": "OMIM API",
+                    "original_source": [
+                        "omim"
+                    ],
+                    "product_url": "https://www.omim.org/api"
+                },
+                {
+                    "category": "MappingProduct",
+                    "description": "Public mapping of MIM numbers to NCBI Gene IDs, Ensembl Gene IDs, and HGNC symbols",
+                    "format": "tsv",
+                    "id": "omim.mim2gene",
+                    "name": "OMIM mim2gene.txt",
+                    "original_source": [
+                        "omim",
+                        "ncbigene",
+                        "ensembl",
+                        "hgnc"
+                    ],
+                    "product_file_size": 974440,
+                    "product_url": "https://www.omim.org/static/omim/data/mim2gene.txt"
+                },
                 {
                     "category": "GraphProduct",
                     "description": "The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.",
@@ -38047,8 +38688,23 @@
                     ]
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1093/nar/gky1151",
+                    "journal": "Nucleic Acids Research",
+                    "preferred": true,
+                    "title": "OMIM.org—leveraging knowledge across phenotype–gene relationships",
+                    "year": "2019"
+                },
+                {
+                    "id": "https://doi.org/10.1093/nar/gku1205",
+                    "journal": "Nucleic Acids Research",
+                    "title": "OMIM.org—an online catalog of human genes and genetic disorders",
+                    "year": "2015"
+                }
+            ],
             "warnings": [
-                "This is an automatically generated stub page. Please replace with accurate information about this resource."
+                "OMIM data are for research and educational use. Redistribution and commercial use require a license from Johns Hopkins University; API access requires registration and an API key."
             ]
         },
         {
@@ -40012,7 +40668,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -40076,7 +40733,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -40108,7 +40766,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -42529,7 +43188,8 @@
                         "phenio"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -42619,7 +43279,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -42683,7 +43344,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -42715,7 +43377,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -43285,7 +43948,8 @@
                         "pombase"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -43307,7 +43971,8 @@
                         "pombase"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -43391,7 +44056,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -43455,7 +44121,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -43487,7 +44154,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -43785,7 +44453,8 @@
                         "primekg"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error when accessing file"
                     ]
                 }
             ],
@@ -45346,7 +46015,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45410,7 +46080,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45442,7 +46113,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45675,7 +46347,8 @@
                     "product_url": "https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45916,7 +46589,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45937,7 +46611,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -46372,6 +47047,31 @@
                         "v4.0.0",
                         "current_build"
                     ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "CLO merged OWL release",
+                    "format": "owl",
+                    "id": "clo.owl",
+                    "name": "CLO OWL",
+                    "original_source": [
+                        "clo",
+                        "chebi",
+                        "uberon",
+                        "ncbitaxon",
+                        "do",
+                        "bfo",
+                        "iao",
+                        "dc",
+                        "skos",
+                        "efo",
+                        "ro"
+                    ],
+                    "product_file_size": 2121232,
+                    "product_url": "http://purl.obolibrary.org/obo/clo.owl",
+                    "secondary_source": [
+                        "clo"
+                    ]
                 }
             ],
             "warnings": [
@@ -46435,7 +47135,8 @@
                         "automat"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -46453,7 +47154,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -46823,7 +47525,8 @@
                         "scibite"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ]
@@ -47771,6 +48474,82 @@
                     "product_url": "https://www.ebi.ac.uk/efo/efo.obo",
                     "secondary_source": [
                         "efo"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "CLO merged OWL release",
+                    "format": "owl",
+                    "id": "clo.owl",
+                    "name": "CLO OWL",
+                    "original_source": [
+                        "clo",
+                        "chebi",
+                        "uberon",
+                        "ncbitaxon",
+                        "do",
+                        "bfo",
+                        "iao",
+                        "dc",
+                        "skos",
+                        "efo",
+                        "ro"
+                    ],
+                    "product_file_size": 2121232,
+                    "product_url": "http://purl.obolibrary.org/obo/clo.owl",
+                    "secondary_source": [
+                        "clo"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "EDAM OWL release",
+                    "format": "owl",
+                    "id": "edam.owl",
+                    "name": "EDAM OWL",
+                    "original_source": [
+                        "edam",
+                        "dc",
+                        "skos"
+                    ],
+                    "product_file_size": 3373041,
+                    "product_url": "http://edamontology.org/EDAM.owl",
+                    "secondary_source": [
+                        "edam"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "EDAM TSV export",
+                    "format": "tsv",
+                    "id": "edam.tsv",
+                    "name": "EDAM TSV",
+                    "original_source": [
+                        "edam",
+                        "dc",
+                        "skos"
+                    ],
+                    "product_file_size": 1977072,
+                    "product_url": "https://edamontology.org/EDAM.tsv",
+                    "secondary_source": [
+                        "edam"
+                    ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "EDAM CSV export",
+                    "format": "csv",
+                    "id": "edam.csv",
+                    "name": "EDAM CSV",
+                    "original_source": [
+                        "edam",
+                        "dc",
+                        "skos"
+                    ],
+                    "product_file_size": 1977072,
+                    "product_url": "https://edamontology.org/EDAM.csv",
+                    "secondary_source": [
+                        "edam"
                     ]
                 }
             ],
@@ -49316,7 +50095,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -49380,7 +50160,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -49412,7 +50193,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -49582,7 +50364,8 @@
                     "name": "Text Mining KP KGX",
                     "product_url": "https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -51025,6 +51808,31 @@
                         "v4.0.0",
                         "current_build"
                     ]
+                },
+                {
+                    "category": "DataModelProduct",
+                    "description": "CLO merged OWL release",
+                    "format": "owl",
+                    "id": "clo.owl",
+                    "name": "CLO OWL",
+                    "original_source": [
+                        "clo",
+                        "chebi",
+                        "uberon",
+                        "ncbitaxon",
+                        "do",
+                        "bfo",
+                        "iao",
+                        "dc",
+                        "skos",
+                        "efo",
+                        "ro"
+                    ],
+                    "product_file_size": 2121232,
+                    "product_url": "http://purl.obolibrary.org/obo/clo.owl",
+                    "secondary_source": [
+                        "clo"
+                    ]
                 }
             ],
             "repository": "https://github.com/obophenotype/uberon"
@@ -51563,7 +52371,8 @@
                         "pombase"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-20: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-21: No Content-Length header found"
                     ]
                 },
                 {
@@ -51620,7 +52429,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-14: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -52140,7 +52950,8 @@
                     "product_url": "http://purl.obolibrary.org/obo/uo.json",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -52540,7 +53351,8 @@
                         "vo"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -53180,7 +53992,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -53244,7 +54057,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -53276,7 +54090,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -53496,7 +54311,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -53516,7 +54332,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -53636,7 +54453,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -53700,7 +54518,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -53732,7 +54551,8 @@
                         "kg-monarch"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -53937,7 +54757,8 @@
                     "name": "SemMedDB MySQL Database",
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_MySQL_database.html",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error when accessing file"
                     ]
                 },
                 {
@@ -53948,7 +54769,8 @@
                     "name": "SemMedDB Citations CSV",
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error when accessing file"
                     ]
                 },
                 {
@@ -53959,7 +54781,8 @@
                     "name": "SemMedDB Entity CSV",
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/ENTITY.csv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error when accessing file"
                     ]
                 },
                 {
@@ -53970,7 +54793,8 @@
                     "name": "SemMedDB Predication CSV",
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/PREDICATION.csv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error when accessing file"
                     ]
                 },
                 {
@@ -53981,7 +54805,8 @@
                     "name": "SemMedDB Sentence CSV",
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error when accessing file"
                     ]
                 },
                 {

@@ -507,8 +507,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -590,6 +590,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
   format: rdfxml
@@ -646,6 +648,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
   id: kg-monarch.graph.duckdb
@@ -673,6 +677,8 @@ products:
   - kg-monarch
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: PheKnowLator graph files, including subsets with and without inverse

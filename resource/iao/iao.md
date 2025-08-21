@@ -267,6 +267,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
+    when accessing file'
 - category: DataModelProduct
   description: PW OWL release
   format: owl
@@ -293,6 +295,27 @@ products:
   product_url: http://purl.obolibrary.org/obo/pw.obo
   secondary_source:
   - pw
+- category: DataModelProduct
+  description: CLO merged OWL release
+  format: owl
+  id: clo.owl
+  name: CLO OWL
+  original_source:
+  - clo
+  - chebi
+  - uberon
+  - ncbitaxon
+  - do
+  - bfo
+  - iao
+  - dc
+  - skos
+  - efo
+  - ro
+  product_file_size: 2121232
+  product_url: http://purl.obolibrary.org/obo/clo.owl
+  secondary_source:
+  - clo
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information
   about this resource.
