@@ -36,8 +36,6 @@ products:
   name: SemMedDB MySQL Database
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_MySQL_database.html
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error
     when accessing file'
 - category: Product
@@ -48,8 +46,6 @@ products:
   name: SemMedDB Citations CSV
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error
     when accessing file'
 - category: Product
@@ -60,8 +56,6 @@ products:
   name: SemMedDB Entity CSV
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/ENTITY.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error
     when accessing file'
 - category: Product
@@ -72,8 +66,6 @@ products:
   name: SemMedDB Predication CSV
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/PREDICATION.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error
     when accessing file'
 - category: Product
@@ -83,8 +75,6 @@ products:
   name: SemMedDB Sentence CSV
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error
     when accessing file'
 - category: ProcessProduct
