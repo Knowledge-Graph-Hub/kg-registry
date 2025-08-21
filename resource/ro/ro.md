@@ -278,6 +278,27 @@ products:
   - v3.0.2
   - v4.0.0
   - current_build
+- category: DataModelProduct
+  description: CLO merged OWL release
+  format: owl
+  id: clo.owl
+  name: CLO OWL
+  original_source:
+  - clo
+  - chebi
+  - uberon
+  - ncbitaxon
+  - do
+  - bfo
+  - iao
+  - dc
+  - skos
+  - efo
+  - ro
+  product_file_size: 2121232
+  product_url: http://purl.obolibrary.org/obo/clo.owl
+  secondary_source:
+  - clo
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information
   about this resource.

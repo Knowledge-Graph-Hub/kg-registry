@@ -115,6 +115,66 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
+- category: DataModelProduct
+  description: CLO merged OWL release
+  format: owl
+  id: clo.owl
+  name: CLO OWL
+  original_source:
+  - clo
+  - chebi
+  - uberon
+  - ncbitaxon
+  - do
+  - bfo
+  - iao
+  - dc
+  - skos
+  - efo
+  - ro
+  product_file_size: 2121232
+  product_url: http://purl.obolibrary.org/obo/clo.owl
+  secondary_source:
+  - clo
+- category: DataModelProduct
+  description: EDAM OWL release
+  format: owl
+  id: edam.owl
+  name: EDAM OWL
+  original_source:
+  - edam
+  - dc
+  - skos
+  product_file_size: 3373041
+  product_url: http://edamontology.org/EDAM.owl
+  secondary_source:
+  - edam
+- category: DataModelProduct
+  description: EDAM TSV export
+  format: tsv
+  id: edam.tsv
+  name: EDAM TSV
+  original_source:
+  - edam
+  - dc
+  - skos
+  product_file_size: 1977072
+  product_url: https://edamontology.org/EDAM.tsv
+  secondary_source:
+  - edam
+- category: DataModelProduct
+  description: EDAM CSV export
+  format: csv
+  id: edam.csv
+  name: EDAM CSV
+  original_source:
+  - edam
+  - dc
+  - skos
+  product_file_size: 1977072
+  product_url: https://edamontology.org/EDAM.csv
+  secondary_source:
+  - edam
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information
   about this resource.

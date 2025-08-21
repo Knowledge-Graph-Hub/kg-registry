@@ -31,7 +31,8 @@ products:
   - omim
   product_url: https://www.omim.org/
 - category: ProgrammingInterface
-  description: REST-based API for programmatic access to OMIM data (registration and API key required)
+  description: REST-based API for programmatic access to OMIM data (registration and
+    API key required)
   format: http
   id: omim.api
   is_public: false
@@ -40,7 +41,8 @@ products:
   - omim
   product_url: https://www.omim.org/api
 - category: MappingProduct
-  description: Public mapping of MIM numbers to NCBI Gene IDs, Ensembl Gene IDs, and HGNC symbols
+  description: Public mapping of MIM numbers to NCBI Gene IDs, Ensembl Gene IDs, and
+    HGNC symbols
   format: tsv
   id: omim.mim2gene
   name: OMIM mim2gene.txt
@@ -49,6 +51,7 @@ products:
   - ncbigene
   - ensembl
   - hgnc
+  product_file_size: 974440
   product_url: https://www.omim.org/static/omim/data/mim2gene.txt
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -139,8 +142,9 @@ publications:
   title: OMIM.org—an online catalog of human genes and genetic disorders
   year: '2015'
 warnings:
-- OMIM data are for research and educational use. Redistribution and commercial
-  use require a license from Johns Hopkins University; API access requires registration and an API key.
+- OMIM data are for research and educational use. Redistribution and commercial use
+  require a license from Johns Hopkins University; API access requires registration
+  and an API key.
 ---
 # OMIM
 
