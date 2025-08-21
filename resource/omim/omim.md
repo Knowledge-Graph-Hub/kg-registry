@@ -1,14 +1,55 @@
 ---
 activity_status: active
 category: DataSource
-description: Stub Resource page for omim. This page was automatically generated because
-  it was referenced by other resources.
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.omim.org/contact
+  label: OMIM (Johns Hopkins University)
+description: OMIM (Online Mendelian Inheritance in Man) is a continuously updated,
+  expert-curated catalog of human genes and genetic disorders, focusing on genotype–phenotype
+  relationships and the molecular basis of disease.
 domains:
-- stub
+- biomedical
+- clinical
+- genomics
+homepage_url: https://www.omim.org/
 id: omim
 layout: resource_detail
-name: Omim
+license:
+  id: https://www.omim.org/help/agreement
+  label: OMIM Use Agreement (research/educational use; license required for commercial/redistribution)
+name: OMIM
 products:
+- category: GraphicalInterface
+  description: Web interface for browsing and searching OMIM entries
+  format: http
+  id: omim.web
+  name: OMIM Website
+  original_source:
+  - omim
+  product_url: https://www.omim.org/
+- category: ProgrammingInterface
+  description: REST-based API for programmatic access to OMIM data (registration and API key required)
+  format: http
+  id: omim.api
+  is_public: false
+  name: OMIM API
+  original_source:
+  - omim
+  product_url: https://www.omim.org/api
+- category: MappingProduct
+  description: Public mapping of MIM numbers to NCBI Gene IDs, Ensembl Gene IDs, and HGNC symbols
+  format: tsv
+  id: omim.mim2gene
+  name: OMIM mim2gene.txt
+  original_source:
+  - omim
+  - ncbigene
+  - ensembl
+  - hgnc
+  product_url: https://www.omim.org/static/omim/data/mim2gene.txt
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -87,10 +128,20 @@ products:
   product_url: https://zenodo.org/record/4077338
   secondary_source:
   - pharmkg
+publications:
+- id: https://doi.org/10.1093/nar/gky1151
+  journal: Nucleic Acids Research
+  preferred: true
+  title: OMIM.org—leveraging knowledge across phenotype–gene relationships
+  year: '2019'
+- id: https://doi.org/10.1093/nar/gku1205
+  journal: Nucleic Acids Research
+  title: OMIM.org—an online catalog of human genes and genetic disorders
+  year: '2015'
 warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+- OMIM data are for research and educational use. Redistribution and commercial
+  use require a license from Johns Hopkins University; API access requires registration and an API key.
 ---
-# Omim
+# OMIM
 
-This is an automatically generated stub page for omim. Please update with proper information.
+OMIM (Online Mendelian Inheritance in Man) is a comprehensive, expert-curated knowledgebase of human genes and genetic phenotypes with a focus on genotype–phenotype relationships. Access is provided via the public website and a REST API (registration required). Most bulk download files require registration; the mim2gene.txt mapping is publicly available. Please cite OMIM and relevant literature when using the resource.
