@@ -36,8 +36,6 @@ products:
   secondary_source:
   - primekg
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error
     when accessing file'
 repository: https://github.com/mims-harvard/PrimeKG

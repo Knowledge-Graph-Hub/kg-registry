@@ -32,8 +32,6 @@ products:
   secondary_source:
   - kg-idg
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
 repository: https://github.com/Knowledge-Graph-Hub/kg-idg

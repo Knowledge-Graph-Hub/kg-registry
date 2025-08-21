@@ -25,7 +25,7 @@ domains:
 - health
 homepage_url: https://kghub.org/kg-monarch/index.html
 id: kg-monarch
-last_modified_date: '2025-08-20T17:20:07Z'
+last_modified_date: '2025-08-21T18:08:57Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -198,8 +198,6 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -368,8 +366,6 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -454,8 +450,6 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
 - category: ProcessProduct

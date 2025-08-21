@@ -40,8 +40,6 @@ products:
   secondary_source:
   - kg-microbe
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error
     when accessing file'
 - category: GraphProduct
