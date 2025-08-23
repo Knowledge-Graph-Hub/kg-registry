@@ -618,8 +618,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -688,6 +688,27 @@ products:
   - v3.0.2
   - v4.0.0
   - current_build
+- category: DataModelProduct
+  description: CLO merged OWL release
+  format: owl
+  id: clo.owl
+  name: CLO OWL
+  original_source:
+  - clo
+  - chebi
+  - uberon
+  - ncbitaxon
+  - do
+  - bfo
+  - iao
+  - dc
+  - skos
+  - efo
+  - ro
+  product_file_size: 2121232
+  product_url: http://purl.obolibrary.org/obo/clo.owl
+  secondary_source:
+  - clo
 repository: https://github.com/obophenotype/uberon
 ---
 The Uber-Anatomy Ontology (UBERON) is a comprehensive cross-species anatomy ontology representing anatomical structures, cells, and tissues across metazoans. It serves as an integrative resource that connects various species-specific anatomy ontologies and provides a unified framework for comparative analysis.

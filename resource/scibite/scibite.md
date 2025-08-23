@@ -35,7 +35,7 @@ products:
   secondary_source:
   - scibite
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
 ---
 SciBite

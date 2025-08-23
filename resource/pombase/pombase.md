@@ -35,7 +35,7 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-08-21: No Content-Length
     header found'
 - category: Product
   description: Tab-delimited file of systematic ID, primary gene name (where assigned),
@@ -54,7 +54,7 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-08-21: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -126,7 +126,7 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
@@ -182,7 +182,7 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
@@ -210,7 +210,7 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
 repository: https://www.pombase.org/datasets
 ---
