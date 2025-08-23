@@ -1,14 +1,75 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for edam. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: github
+    value: joncison
+  label: Jon Ison
+- category: Individual
+  contact_details:
+  - contact_type: github
+    value: matuskalas
+  label: Matúš Kalaš
+- category: Individual
+  contact_details:
+  - contact_type: github
+    value: hmenager
+  label: Hervé Ménager
+description: EDAM is an ontology of bioscientific data analysis and data management,
+  covering topics, operations, data, identifiers, and formats. It supports semantic
+  annotation of tools, workflows, training, and provenance metadata across life sciences.
 domains:
-- stub
+- information technology
+- biological systems
+homepage_url: https://edamontology.org/
 id: edam
 layout: resource_detail
-name: Edam
+license:
+  id: https://creativecommons.org/licenses/by-sa/4.0/
+  label: CC-BY-SA-4.0
+name: EDAM Ontology
 products:
+- category: DataModelProduct
+  description: EDAM OWL release
+  format: owl
+  id: edam.owl
+  name: EDAM OWL
+  original_source:
+  - edam
+  - dc
+  - skos
+  product_file_size: 3373041
+  product_url: http://edamontology.org/EDAM.owl
+  secondary_source:
+  - edam
+- category: DataModelProduct
+  description: EDAM TSV export
+  format: tsv
+  id: edam.tsv
+  name: EDAM TSV
+  original_source:
+  - edam
+  - dc
+  - skos
+  product_file_size: 1977072
+  product_url: https://edamontology.org/EDAM.tsv
+  secondary_source:
+  - edam
+- category: DataModelProduct
+  description: EDAM CSV export
+  format: csv
+  id: edam.csv
+  name: EDAM CSV
+  original_source:
+  - edam
+  - dc
+  - skos
+  product_file_size: 1977072
+  product_url: https://edamontology.org/EDAM.csv
+  secondary_source:
+  - edam
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -136,10 +197,23 @@ products:
   product_url: https://ubkg-downloads.xconsortia.org/
   secondary_source:
   - ubkg
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+publications:
+- authors:
+  - Ison J
+  - Kalaš M
+  - Jonassen I
+  - Bolser D
+  - Uludag M
+  - et al.
+  doi: 10.1093/bioinformatics/btt113
+  id: doi:10.1093/bioinformatics/btt113
+  journal: Bioinformatics
+  preferred: true
+  title: 'EDAM: an ontology of bioinformatics operations, types of data and identifiers,
+    topics and formats'
+  year: '2013'
+repository: https://github.com/edamontology/edamontology
 ---
-# Edam
-
-This is an automatically generated stub page for edam. Please update with proper information.
+EDAM provides a simple, four-branch structure (Topic, Operation, Data, Format) to organise
+concepts prevalent in computational biology and bioinformatics, enabling consistent
+annotation and discovery of resources.

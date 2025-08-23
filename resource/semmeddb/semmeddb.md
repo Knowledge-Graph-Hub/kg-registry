@@ -36,7 +36,7 @@ products:
   name: SemMedDB MySQL Database
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_MySQL_database.html
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error
     when accessing file'
 - category: Product
   description: CSV file containing citation information for all PubMed articles in
@@ -46,7 +46,7 @@ products:
   name: SemMedDB Citations CSV
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error
     when accessing file'
 - category: Product
   description: CSV file containing entity information with UMLS concept identifiers,
@@ -56,7 +56,7 @@ products:
   name: SemMedDB Entity CSV
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/ENTITY.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error
     when accessing file'
 - category: Product
   description: CSV file containing semantic predications with subject-predicate-object
@@ -66,7 +66,7 @@ products:
   name: SemMedDB Predication CSV
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/PREDICATION.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error
     when accessing file'
 - category: Product
   description: CSV file containing sentence information from PubMed citations
@@ -75,7 +75,7 @@ products:
   name: SemMedDB Sentence CSV
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 403 error
     when accessing file'
 - category: ProcessProduct
   description: The SemRep natural language processing system that extracts semantic
