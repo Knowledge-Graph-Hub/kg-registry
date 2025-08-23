@@ -292,6 +292,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
   format: rdfxml
@@ -348,6 +350,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
   id: kg-monarch.graph.duckdb
@@ -376,6 +380,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+    when accessing file'
 publications:
 - authors:
   - Rehm HL
@@ -390,7 +396,7 @@ publications:
   id: https://doi.org/10.1056/NEJMsr1406261
   journal: New England Journal of Medicine
   preferred: true
-  title: "ClinGen \u2014 The Clinical Genome Resource"
+  title: ClinGen — The Clinical Genome Resource
   year: '2015'
 - authors:
   - ClinGen Consortium

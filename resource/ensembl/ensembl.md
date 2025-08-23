@@ -49,6 +49,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-23: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: Programmatic access to all Ensembl data using Perl scripts.
   id: ensembl.api.perl

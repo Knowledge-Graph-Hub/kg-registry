@@ -31,6 +31,9 @@ products:
   id: dsstox.complete
   name: DSSTox Complete Database
   product_url: https://doi.org/10.23645/epacomptox.5588566
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 403 error
+    when accessing file'
 - category: GraphicalInterface
   description: The CompTox Chemicals Dashboard provides access to the DSSTox database
     through a web interface
@@ -52,6 +55,8 @@ products:
   product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   description: A browser interface for a knowledge graph for Alzheimer's Disease.
