@@ -25,7 +25,7 @@ domains:
 - health
 homepage_url: https://kghub.org/kg-monarch/index.html
 id: kg-monarch
-last_modified_date: '2025-08-21T18:08:57Z'
+last_modified_date: '2025-08-23T15:41:23Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -200,6 +200,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
   edge_count: 14634548
@@ -368,6 +370,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
   edge_count: 14634548
@@ -451,6 +455,8 @@ products:
   - kg-monarch
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
     when accessing file'
 - category: ProcessProduct
   description: This repository is a code reference for the C-Path Knowledge Graph

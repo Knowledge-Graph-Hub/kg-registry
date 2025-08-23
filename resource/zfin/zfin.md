@@ -59,6 +59,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+    when accessing file'
 - category: Product
   description: zfin OBO Graph JSON
   id: obo-db-ingest.zfin.json
@@ -73,6 +75,8 @@ products:
   - obo-db-ingest
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: zfin SSSOM
@@ -171,6 +175,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
   format: rdfxml
@@ -227,6 +233,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
   id: kg-monarch.graph.duckdb
@@ -254,6 +262,8 @@ products:
   - kg-monarch
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
     when accessing file'
 repository: https://github.com/ZFIN/
 ---

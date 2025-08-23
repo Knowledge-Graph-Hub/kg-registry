@@ -4,8 +4,8 @@ category: DataSource
 contacts:
 - category: Organization
   label: ChEBI
-description: "Chemical Entities of Biological Interest (ChEBI) is a freely available\
-  \ dictionary of molecular entities focused on \u2018small\u2019 chemical compounds."
+description: Chemical Entities of Biological Interest (ChEBI) is a freely available
+  dictionary of molecular entities focused on ‘small’ chemical compounds.
 domains:
 - chemistry and biochemistry
 homepage_url: https://www.ebi.ac.uk/chebi/
@@ -605,8 +605,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -706,6 +706,8 @@ products:
   - vo
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
     when accessing file'
 - category: DataModelProduct
   description: CLO merged OWL release
