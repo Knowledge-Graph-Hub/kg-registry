@@ -169,6 +169,11 @@ enums:
         description: >-
           The MySQL relational database management system.
           If a product is in this format, it is likely a MySQL database dump.
+      neo4j:
+        description: >-
+          The Neo4j graph database management system.
+          If a product is in this format, it is likely a Neo4j database dump.
+          The file usually ends in .db, .dump, or .db.dump.
       nquads:
         description: >-
           The N-Quads format, an extension of the N-Triples format
