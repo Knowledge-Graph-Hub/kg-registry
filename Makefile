@@ -86,7 +86,7 @@ clean:
 	git checkout _config.yml registry/kgs.jsonld registry/kgs.yml registry/kg_registry.duckdb
 
 clean-schema:
-	rm -Rf src/kg_registry/kg_registry_schema/datamodel/*.py src/kg_registry/kg_registry_schema/*.json
+	rm -Rf src/kg_registry/kg_registry_schema/datamodel/*.py src/kg_registry/kg_registry_schema/*.json src/kg_registry/kg_registry_schema/schema/kg_registry_schema_all.yaml
 
 ### Directories:
 
