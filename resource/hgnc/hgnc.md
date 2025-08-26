@@ -49,9 +49,7 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
     when accessing file'
 - category: Product
   description: hgnc OBO Graph JSON
@@ -67,9 +65,7 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: hgnc SSSOM
@@ -146,9 +142,7 @@ products:
   secondary_source:
   - scibite
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.

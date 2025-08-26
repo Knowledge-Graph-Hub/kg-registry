@@ -29,9 +29,7 @@ products:
   secondary_source:
   - cgnc
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
     when accessing file'
 - category: Product
   description: cgnc OBO
@@ -92,7 +90,7 @@ products:
 publications:
 - authors:
   - Burt DW
-  - CarrÎ W
+  - "Carr\xCE W"
   - Fell M
   - Law AS
   - Antin PB

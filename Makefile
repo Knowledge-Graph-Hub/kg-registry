@@ -86,7 +86,7 @@ clean:
 	git checkout _config.yml registry/kgs.jsonld registry/kgs.yml registry/kg_registry.duckdb
 
 clean-schema:
-	rm -Rf src/kg_registry/kg_registry_schema/datamodel/*.py src/kg_registry/kg_registry_schema/*.json
+	rm -Rf src/kg_registry/kg_registry_schema/datamodel/*.py src/kg_registry/kg_registry_schema/*.json src/kg_registry/kg_registry_schema/schema/kg_registry_schema_all.yaml
 
 ### Directories:
 
@@ -265,7 +265,7 @@ schema-docs:
 	done
 
 # Generate the schema files
-refresh-schema: clean-schema $(SCHEMA_DIR)/datamodel/kg_registry_schema.py $(SCHEMA_DIR)/datamodel/kg_registry_schema_all.py $(SCHEMA_DIR)/kg_registry_schema.json
+refresh-schema: clean-schema $(SCHEMA_DIR)/datamodel/kg_registry_schema.py $(SOURCE_SCHEMA_ALL) $(SCHEMA_DIR)/kg_registry_schema.json
 	cp $(SCHEMA_DIR)/schema/kg_registry_schema_all.yaml _data/schema.yaml
 
 $(SCHEMA_DIR)/datamodel/%.py: $(SCHEMA_DIR)/schema/%.yaml

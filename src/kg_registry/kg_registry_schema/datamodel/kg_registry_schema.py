@@ -193,6 +193,10 @@ class FormatEnum(str, Enum):
     """
     The MySQL relational database management system. If a product is in this format, it is likely a MySQL database dump.
     """
+    neo4j = "neo4j"
+    """
+    The Neo4j graph database management system. If a product is in this format, it is likely a Neo4j database dump. The file usually ends in .db, .dump, or .db.dump.
+    """
     nquads = "nquads"
     """
     The N-Quads format, an extension of the N-Triples format that adds an optional fourth element to represent the graph name or context. This allows for representing multiple RDF graphs in a single document while maintaining their separation.

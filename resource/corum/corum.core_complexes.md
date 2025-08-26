@@ -10,12 +10,12 @@ license:
 name: CORUM Core Complexes
 product_url: https://mips.helmholtz-muenchen.de/corum/download/coreComplexes.txt.zip
 warnings:
-- 'File was not able to be retrieved when checked on 2025-08-21: Error connecting
+- 'File was not able to be retrieved when checked on 2025-08-25: Error connecting
   to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
   retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
   ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
   issuer certificate (_ssl.c:1000)'')))'
-- 'File was not able to be retrieved when checked on 2025-08-21: Error connecting
+- 'File was not able to be retrieved when checked on 2025-08-23: Error connecting
   to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
   retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
   ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local

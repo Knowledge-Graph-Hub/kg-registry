@@ -57,9 +57,7 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
     when accessing file'
 - category: Product
   description: zfin OBO Graph JSON
@@ -74,9 +72,7 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: zfin SSSOM
@@ -173,9 +169,7 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
@@ -231,9 +225,7 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
@@ -261,9 +253,7 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
     when accessing file'
 repository: https://github.com/ZFIN/
 ---
