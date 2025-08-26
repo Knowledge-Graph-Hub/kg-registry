@@ -44,8 +44,6 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-25: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
     header found'
 - category: GraphProduct
@@ -63,8 +61,6 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-25: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
     header found'
 - category: GraphProduct
@@ -83,8 +79,6 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-25: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
     header found'
 - category: Product
@@ -121,7 +115,7 @@ publications:
 - authors:
   - Roger Tu
   - Meghamala Sinha
-  - Carolina González
+  - "Carolina Gonz\xE1lez"
   - Eric Hu
   - Shehzaad Dhuliawala
   - Andrew McCallum
