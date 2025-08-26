@@ -269,8 +269,10 @@ schema-docs:
 .PHONY: refresh-schema $(SOURCE_SCHEMA_ALL)
 
 refresh-schema: clean-schema $(SCHEMA_DIR)/datamodel/kg_registry_schema.py $(SOURCE_SCHEMA_ALL) $(SCHEMA_DIR)/kg_registry_schema.json
+	$(RUN) gen-linkml -o $(SOURCE_SCHEMA_ALL) -f 'yaml' $(SOURCE_SCHEMA)
+	@echo '---' | cat - $(SOURCE_SCHEMA_ALL) > $(SOURCE_SCHEMA_ALL).tmp && mv $(SOURCE_SCHEMA_ALL).tmp $(SOURCE_SCHEMA_ALL)
 	mkdir -p _data
-	cp $(SCHEMA_DIR)/schema/kg_registry_schema_all.yaml _data/schema.yaml
+	cp $(SOURCE_SCHEMA_ALL) _data/schema.yaml
 
 $(SCHEMA_DIR)/datamodel/%.py: $(SCHEMA_DIR)/schema/%.yaml
 	$(RUN) gen-pydantic $< > $@
