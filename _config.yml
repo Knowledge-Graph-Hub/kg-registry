@@ -4093,6 +4093,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-23: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     description: Cell markers of different cell types from different tissues in mouse
     id: cellmarker.mouse
@@ -4102,6 +4104,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-26: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-23: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
   - category: Product
     description: Cell markers derived from single-cell sequencing researches in human
@@ -4114,6 +4118,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-23: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     description: All cell markers of different cell types from different tissues in
       human and mouse
@@ -4124,6 +4130,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-26: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-23: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
   - category: GraphicalInterface
     description: ACT is a tool that makes cell type annotation easier by integrating
@@ -8608,6 +8616,11 @@ resources:
       Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
+    - 'File was not able to be retrieved when checked on 2025-08-26: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused
+      by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
+      verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
   - category: Product
     description: Core dataset of manually curated, non-redundant protein complexes
       in CORUM in tab-delimited format
@@ -8625,6 +8638,11 @@ resources:
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
     - 'File was not able to be retrieved when checked on 2025-08-23: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
+      by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
+      verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
+    - 'File was not able to be retrieved when checked on 2025-08-26: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
@@ -8650,6 +8668,11 @@ resources:
       Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1017)'')))'
+    - 'File was not able to be retrieved when checked on 2025-08-26: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
+      ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
+      local issuer certificate (_ssl.c:1017)'')))'
   - category: Product
     description: Dataset of all CORUM protein complexes in PSI-MI MITAB 2.5 format
     format: psi_mi_mitab
@@ -8666,6 +8689,11 @@ resources:
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1000)'')))'
     - 'File was not able to be retrieved when checked on 2025-08-23: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
+      ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
+      local issuer certificate (_ssl.c:1017)'')))'
+    - 'File was not able to be retrieved when checked on 2025-08-26: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -23523,7 +23551,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://kghub.org/kg-monarch/index.html
   id: kg-monarch
-  last_modified_date: '2025-08-23T15:41:23Z'
+  last_modified_date: '2025-08-26T19:30:07Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -33576,6 +33604,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: Pairwise orthologs in tab-separated text format
@@ -33661,6 +33691,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -46564,10 +46596,10 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
+      to URL'
   - category: GraphicalInterface
     description: Browse UO with Ontology Lookup Service (OLS)
     format: http
