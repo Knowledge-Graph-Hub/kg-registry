@@ -136,6 +136,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
   format: rdfxml
@@ -192,6 +194,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
   id: kg-monarch.graph.duckdb
@@ -220,12 +224,14 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    when accessing file'
 publications:
 - id: https://doi.org/10.1002/pro.3978
   journal: Protein Science
   preferred: true
-  title: "The BioGRID database \u2013 a comprehensive biomedical resource of curated\
-    \ protein, genetic, and chemical interactions"
+  title: The BioGRID database – a comprehensive biomedical resource of curated protein,
+    genetic, and chemical interactions
   year: '2020'
 - id: https://doi.org/10.1093/nar/gky1079
   journal: Nucleic Acids Research
