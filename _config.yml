@@ -4093,6 +4093,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-23: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     description: Cell markers of different cell types from different tissues in mouse
     id: cellmarker.mouse
@@ -4102,6 +4104,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-26: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-23: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
   - category: Product
     description: Cell markers derived from single-cell sequencing researches in human
@@ -4114,6 +4118,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-23: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     description: All cell markers of different cell types from different tissues in
       human and mouse
@@ -4124,6 +4130,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-26: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-23: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
   - category: GraphicalInterface
     description: ACT is a tool that makes cell type annotation easier by integrating
@@ -23523,7 +23531,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://kghub.org/kg-monarch/index.html
   id: kg-monarch
-  last_modified_date: '2025-08-23T15:41:23Z'
+  last_modified_date: '2025-08-26T19:31:12Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -46564,10 +46572,10 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
+      to URL'
   - category: GraphicalInterface
     description: Browse UO with Ontology Lookup Service (OLS)
     format: http

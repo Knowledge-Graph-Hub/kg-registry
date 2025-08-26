@@ -4905,7 +4905,8 @@
                     "product_url": "http://xteam.xbio.top/download/Human_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-26: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-23: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-23: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-26: No Content-Length header found"
                     ]
                 },
                 {
@@ -4916,7 +4917,8 @@
                     "product_url": "http://xteam.xbio.top/download/Mouse_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-26: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-23: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-23: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-26: No Content-Length header found"
                     ]
                 },
                 {
@@ -4927,7 +4929,8 @@
                     "product_url": "http://xteam.xbio.top/download/Single_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-26: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-23: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-23: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-26: No Content-Length header found"
                     ]
                 },
                 {
@@ -4938,7 +4941,8 @@
                     "product_url": "http://xteam.xbio.top/download/all_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-26: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-23: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-23: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-08-26: No Content-Length header found"
                     ]
                 },
                 {
@@ -27489,7 +27493,7 @@
             "evaluation_page": "resource/kg-monarch/kg-monarch_eval.html",
             "homepage_url": "https://kghub.org/kg-monarch/index.html",
             "id": "kg-monarch",
-            "last_modified_date": "2025-08-23T15:41:23Z",
+            "last_modified_date": "2025-08-26T19:31:12Z",
             "layout": "resource_detail",
             "license": {
                 "id": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -54575,8 +54579,8 @@
                     "product_url": "http://purl.obolibrary.org/obo/uo.json",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL"
                     ]
                 },
                 {
