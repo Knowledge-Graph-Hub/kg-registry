@@ -46,9 +46,7 @@ products:
   secondary_source:
   - vo
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: PheKnowLator graph files, including subsets with and without inverse
@@ -93,6 +91,85 @@ products:
   - v3.0.2
   - v4.0.0
   - current_build
+- description: RNA-KG as a Neo4j Dump
+  dump_format: neo4j
+  format: neo4j
+  id: rna-kg.kg.neo4j
+  name: RNA-KG Neo4j Dump
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 3976840239
+  product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
+  secondary_source:
+  - rna-kg
+- description: RNA-KG Nodes in CSV format
+  format: csv
+  id: rna-kg.kg.nodes
+  name: RNA-KG Nodes
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 4424633304
+  product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
+  secondary_source:
+  - rna-kg
+- description: RNA-KG Edges in CSV format
+  format: csv
+  id: rna-kg.kg.edges
+  name: RNA-KG Edges
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 18370248815
+  product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
+  secondary_source:
+  - rna-kg
 ---
 VO provides a standardized vocabulary for vaccines and related entities, facilitating interoperability
 among vaccine data resources and supporting computational analysis.

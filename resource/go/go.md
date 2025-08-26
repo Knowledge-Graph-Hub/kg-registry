@@ -7,10 +7,10 @@ contacts:
   - contact_type: email
     value: help@geneontology.org
   label: Gene Ontology Helpdesk
-description: The Gene Ontology resource, the world’s largest source of information
-  on the functions of genes. This knowledge is both human-readable and machine-readable,
-  and is a foundation for computational analysis of large-scale molecular biology
-  and genetics experiments in biomedical research.
+description: "The Gene Ontology resource, the world\u2019s largest source of information\
+  \ on the functions of genes. This knowledge is both human-readable and machine-readable,\
+  \ and is a foundation for computational analysis of large-scale molecular biology\
+  \ and genetics experiments in biomedical research."
 domains:
 - biological systems
 homepage_url: https://geneontology.org/
@@ -598,8 +598,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -679,9 +679,7 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
@@ -737,9 +735,7 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
@@ -767,9 +763,7 @@ products:
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: PheKnowLator graph files, including subsets with and without inverse
@@ -840,6 +834,85 @@ products:
   product_url: http://purl.obolibrary.org/obo/pw.obo
   secondary_source:
   - pw
+- description: RNA-KG as a Neo4j Dump
+  dump_format: neo4j
+  format: neo4j
+  id: rna-kg.kg.neo4j
+  name: RNA-KG Neo4j Dump
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 3976840239
+  product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
+  secondary_source:
+  - rna-kg
+- description: RNA-KG Nodes in CSV format
+  format: csv
+  id: rna-kg.kg.nodes
+  name: RNA-KG Nodes
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 4424633304
+  product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
+  secondary_source:
+  - rna-kg
+- description: RNA-KG Edges in CSV format
+  format: csv
+  id: rna-kg.kg.edges
+  name: RNA-KG Edges
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 18370248815
+  product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
+  secondary_source:
+  - rna-kg
 publications:
 - authors:
   - Ashburner M
@@ -951,7 +1024,7 @@ publications:
   - Tutaj MA
   - Vedi M
   - Wang S-J
-  - D’Eustachio PD
+  - "D\u2019Eustachio PD"
   - Aimo L
   - Axelsen K
   - Bridge A
