@@ -413,7 +413,7 @@ classes:
           For example, a URL to a specific Neo4j database.
           Do not include a prefix.
         range: uriorcurie
-  
+
   DocumentationProduct:
     description: >-
       A product that is documentation for a resource.

@@ -7,5 +7,8 @@ name: LOINC Release Archive
 original_source:
 - loinc
 product_url: https://loinc.org/downloads/archive/
+warnings:
+- 'File was not able to be retrieved when checked on 2025-08-25: HTTP 503 error when
+  accessing file'
 layout: product_detail
 ---

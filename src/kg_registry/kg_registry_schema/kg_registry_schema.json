@@ -1275,6 +1275,7 @@
                 "kgx-rdf",
                 "mixed",
                 "mysql",
+                "neo4j",
                 "nquads",
                 "ntriples",
                 "obo",
