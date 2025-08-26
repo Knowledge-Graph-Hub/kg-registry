@@ -329,9 +329,7 @@ products:
   secondary_source:
   - automat
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-21: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
     when accessing file'
 - category: ProcessProduct
   description: This repository is a code reference for the C-Path Knowledge Graph
