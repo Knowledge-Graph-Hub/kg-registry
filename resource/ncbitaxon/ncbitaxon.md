@@ -478,8 +478,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -536,6 +536,8 @@ products:
   - vo
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
     when accessing file'
 - category: DataModelProduct
   description: CLO merged OWL release

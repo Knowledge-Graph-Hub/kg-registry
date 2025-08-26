@@ -943,22 +943,26 @@ def concat_resource_yaml(args):
                     html_lines.append("")
                 content = "\n".join(html_lines) + "\n"
 
-                # Write the evaluation page
+                # Write the evaluation page (only if it does not already exist)
                 eval_md_path = res_dir / f"{rid}_eval.md"
-                with open(eval_md_path, 'w', encoding='utf-8') as ef:
-                    # Include evaluator and evaluation_date in front matter for downstream use
-                    fm = {
-                        'layout': 'eval_detail',
-                        'evaluator': evaluator_val or None,
-                        'evaluation_date': evaluation_date_val,
-                    }
-                    # Remove None fields to keep front matter clean
-                    fm = {k: v for k, v in fm.items() if v is not None}
-                    ef.write("---\n")
-                    yaml.dump(fm, ef)
-                    ef.write("---\n\n")
-                    ef.write(content)
-                created += 1
+                if eval_md_path.exists():
+                    # Preserve any existing manual metadata / edits
+                    print(f"Existing evaluation page for {rid}; skipping regeneration")
+                else:
+                    with open(eval_md_path, 'w', encoding='utf-8') as ef:
+                        # Include evaluator and evaluation_date in front matter for downstream use
+                        fm = {
+                            'layout': 'eval_detail',
+                            'evaluator': evaluator_val or None,
+                            'evaluation_date': evaluation_date_val,
+                        }
+                        # Remove None fields to keep front matter clean
+                        fm = {k: v for k, v in fm.items() if v is not None}
+                        ef.write("---\n")
+                        yaml.dump(fm, ef)
+                        ef.write("---\n\n")
+                        ef.write(content)
+                    created += 1
 
                 # Annotate the in-memory object so the table can render an icon/link
                 if rid in resources_by_id:
