@@ -392,6 +392,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     format: rdfxml
@@ -448,6 +450,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     id: kg-monarch.graph.duckdb
@@ -475,6 +479,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
@@ -1171,6 +1177,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-20: HTTP 502 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: DataModelProduct
     description: CLO merged OWL release
     format: owl
@@ -1254,6 +1262,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: RNA-Seq data processed and formatted for the Bgee database
@@ -1270,6 +1280,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: Processed Affymetrix microarray data for the Bgee database
@@ -1286,6 +1298,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: In Situ Hybridization data in the Bgee database
@@ -1302,6 +1316,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: EST (Expressed Sequence Tag) expression data in the Bgee database
@@ -1318,6 +1334,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: Single-cell RNA-Seq processed data in the Bgee database
@@ -1334,6 +1352,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: Anatomical homology information used in Bgee
@@ -1350,6 +1370,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: RDF version of the Bgee data for semantic web applications
@@ -1366,6 +1388,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.
@@ -1533,6 +1557,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     format: rdfxml
@@ -1589,6 +1615,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     id: kg-monarch.graph.duckdb
@@ -1616,6 +1644,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -2444,6 +2474,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     format: rdfxml
@@ -2500,6 +2532,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     id: kg-monarch.graph.duckdb
@@ -2527,6 +2561,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   publications:
   - id: https://doi.org/10.1002/pro.3978
@@ -2875,6 +2911,8 @@ resources:
     - automat
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: ProcessProduct
     description: This repository is a code reference for the C-Path Knowledge Graph
@@ -4075,6 +4113,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-23: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: Timeout connecting
+      to URL'
   - category: Product
     description: Cell markers of different cell types from different tissues in mouse
     id: cellmarker.mouse
@@ -4085,6 +4125,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-23: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: Timeout connecting
+      to URL'
   - category: Product
     description: Cell markers derived from single-cell sequencing researches in human
       and mouse
@@ -4096,6 +4138,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-23: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: Timeout connecting
+      to URL'
   - category: Product
     description: All cell markers of different cell types from different tissues in
       human and mouse
@@ -4107,6 +4151,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-23: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: Timeout connecting
+      to URL'
   - category: GraphicalInterface
     description: ACT is a tool that makes cell type annotation easier by integrating
       the CellMarker resource.
@@ -4241,6 +4287,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Complete Cellosaurus data in RDF format using the Turtle syntax
     format: ttl
@@ -4253,6 +4301,8 @@ resources:
     - cellosaurus
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
     description: RESTful API for programmatic access to Cellosaurus data
@@ -4392,6 +4442,8 @@ resources:
     - cgnc
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: Product
     description: cgnc OBO
@@ -5174,6 +5226,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: DataModelProduct
     description: CLO merged OWL release
     format: owl
@@ -5700,6 +5754,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 502 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   repository: https://github.com/monarch-initiative/monochrom/
 - activity_status: active
@@ -6940,6 +6996,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     format: rdfxml
@@ -6996,6 +7054,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     id: kg-monarch.graph.duckdb
@@ -7023,6 +7083,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -7325,6 +7387,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Zarin DA
@@ -7617,6 +7681,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     format: rdfxml
@@ -7673,6 +7739,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     id: kg-monarch.graph.duckdb
@@ -7700,6 +7768,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: PheKnowLator graph files, including subsets with and without inverse
@@ -8588,6 +8658,8 @@ resources:
       Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
+    - 'File was not able to be retrieved when checked on 2025-08-26: Timeout connecting
+      to URL'
   - category: Product
     description: Core dataset of manually curated, non-redundant protein complexes
       in CORUM in tab-delimited format
@@ -8609,6 +8681,11 @@ resources:
       Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
+    - 'File was not able to be retrieved when checked on 2025-08-26: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
+      by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
+      verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Dataset of all CORUM protein complexes in PSI-MI XML format (Proteomics
       Standards Initiative)
@@ -8630,6 +8707,11 @@ resources:
       Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1017)'')))'
+    - 'File was not able to be retrieved when checked on 2025-08-26: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
+      ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Dataset of all CORUM protein complexes in PSI-MI MITAB 2.5 format
     format: psi_mi_mitab
@@ -8650,6 +8732,11 @@ resources:
       Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1017)'')))'
+    - 'File was not able to be retrieved when checked on 2025-08-26: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
+      ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
       entities and their associations
@@ -9140,6 +9227,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
       entities and their associations
@@ -9266,6 +9355,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     format: rdfxml
@@ -9322,6 +9413,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     id: kg-monarch.graph.duckdb
@@ -9349,6 +9442,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: PheKnowLator graph files, including subsets with and without inverse
@@ -10252,6 +10347,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     format: rdfxml
@@ -10308,6 +10405,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     id: kg-monarch.graph.duckdb
@@ -10335,6 +10434,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
@@ -12022,6 +12123,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: PostgreSQL (v14.5) database dump of all information in DrugCentral.
@@ -12204,6 +12307,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -12220,6 +12325,8 @@ resources:
     - mind
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -12238,6 +12345,8 @@ resources:
     - mind
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -12284,6 +12393,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Ursu O
@@ -12428,6 +12539,8 @@ resources:
     product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
@@ -15166,6 +15279,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     compression: targz
     description: Complete FooDB database in XML format
@@ -15182,6 +15297,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Complete FooDB database in JSON format
@@ -15198,6 +15315,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     compression: targz
     description: Complete FooDB database as MySQL dump
@@ -15213,6 +15332,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Experimental C-MS Spectra data from FooDB
@@ -15228,6 +15349,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Predicted C-MS Spectra data from FooDB
@@ -15243,6 +15366,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Experimental MS-MS Spectra data from FooDB
@@ -15258,6 +15383,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Predicted MS-MS Spectra data from FooDB
@@ -15273,6 +15400,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: NMR Spectra data from FooDB
@@ -15288,6 +15417,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Free Induction Decay (FID) files from FooDB
@@ -15302,6 +15433,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -15318,6 +15451,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.
@@ -15568,6 +15703,8 @@ resources:
     product_url: https://ftp.sanger.ac.uk/project/cancerrxgene/releases/
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -16368,6 +16505,8 @@ resources:
     - glyconnect
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -17370,6 +17509,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     format: rdfxml
@@ -17426,6 +17567,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     id: kg-monarch.graph.duckdb
@@ -17453,6 +17596,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: PheKnowLator graph files, including subsets with and without inverse
@@ -17854,6 +17999,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: ProgrammingInterface
     connection_url: http://api.geneontology.org/api/
     description: Programmatic access to GO-CAM models through the Gene Ontology API
@@ -17931,6 +18078,8 @@ resources:
     - goldterms
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     format: owl
@@ -18254,6 +18403,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     description: Complete list of ligands including drugs, small molecules, and other
       bioactive compounds
@@ -18266,6 +18417,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     description: Comprehensive dataset of all interactions between ligands and targets
     format: csv
@@ -18277,6 +18430,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     description: Detailed interactions list for approved drugs and their targets
     format: csv
@@ -18288,6 +18443,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     description: SDF file containing chemical structures with SMILES for all ligands
       in the database
@@ -18300,6 +18457,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     description: RDF/linked data format of the GtoPdb data (target-ligand interactions
       with supporting information)
@@ -18312,6 +18471,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     description: Complete PostgreSQL database dump of the current Guide to Pharmacology
       database
@@ -18323,6 +18484,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: GraphicalInterface
     description: An extension of the Guide to PHARMACOLOGY database providing immunological
       access-point to GtoPdb data
@@ -19115,6 +19278,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: hgnc OBO Graph JSON
     format: json
@@ -19130,6 +19295,8 @@ resources:
     - obo-db-ingest
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: hgnc SSSOM
@@ -19207,6 +19374,8 @@ resources:
     - scibite
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -20150,6 +20319,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     format: rdfxml
@@ -20206,6 +20377,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     id: kg-monarch.graph.duckdb
@@ -20233,6 +20406,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: PheKnowLator graph files, including subsets with and without inverse
@@ -21068,6 +21243,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 401 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 401 error
+      when accessing file'
   - category: Product
     description: Data submission portal for registering and ingesting consortium data
     id: hubmap.data_ingest_portal
@@ -21671,6 +21848,8 @@ resources:
     - vo
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: DataModelProduct
     description: PW OWL release
@@ -23234,6 +23413,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 403 error
+      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 - activity_status: active
   category: KnowledgeGraph
@@ -23328,6 +23509,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
   category: KnowledgeGraph
@@ -23413,6 +23596,8 @@ resources:
     - kg-microbe
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 403 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -23677,6 +23862,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     edge_count: 14634548
@@ -23845,6 +24032,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     edge_count: 14634548
@@ -23928,6 +24117,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: ProcessProduct
     description: This repository is a code reference for the C-Path Knowledge Graph
@@ -24763,6 +24954,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 503 error
+      when accessing file'
   - category: DataModelProduct
     description: Archive of past LOINC releases for version-specific implementations
     format: mixed
@@ -24774,6 +24967,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 503 error
+      when accessing file'
   - category: DocumentationProduct
     description: LOINC Mission, Vision, and Guiding Principles for open terminology
       development (CC-BY 4.0 licensed document)
@@ -24784,6 +24979,8 @@ resources:
     product_url: https://loinc.org/principles/
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 503 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 503 error
       when accessing file'
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
@@ -25158,6 +25355,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     format: rdfxml
@@ -25214,6 +25413,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     id: kg-monarch.graph.duckdb
@@ -25241,6 +25442,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
@@ -25308,6 +25511,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -25324,6 +25529,8 @@ resources:
     - mind
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -25342,6 +25549,8 @@ resources:
     - mind
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -25825,6 +26034,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     description: MNXref unified namespace for reactions across databases
     format: tsv
@@ -25837,6 +26048,8 @@ resources:
     - metanetx
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -26203,6 +26416,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -26219,6 +26434,8 @@ resources:
     - mind
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -26237,6 +26454,8 @@ resources:
     - mind
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -28953,6 +29172,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: DataModelProduct
     description: CLO merged OWL release
     format: owl
@@ -30692,6 +30913,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: clinicaltrials OWL
     format: owl
@@ -30704,6 +30927,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: clinicaltrials OBO Graph JSON
     format: json
@@ -30715,6 +30940,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: clinicaltrials SSSOM
@@ -31125,6 +31352,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: gtdb OWL
     format: owl
@@ -31185,6 +31414,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: hgnc OBO Graph JSON
     format: json
@@ -31200,6 +31431,8 @@ resources:
     - obo-db-ingest
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: hgnc SSSOM
@@ -31378,6 +31611,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: itis OBO Graph JSON
     format: json
@@ -31389,6 +31624,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/itis/itis.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: Product
     description: kegg.genome OBO
@@ -31442,6 +31679,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: mesh OBO Graph JSON
     format: json
@@ -31453,6 +31692,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: Product
     description: mgi OBO
@@ -31466,6 +31707,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: mgi OWL
     format: owl
@@ -31478,6 +31721,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: mgi OBO Graph JSON
     format: json
@@ -31489,6 +31734,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: mgi SSSOM
@@ -31622,6 +31869,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: msigdb OWL
     format: owl
@@ -31634,6 +31883,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: msigdb OBO Graph JSON
     format: json
@@ -31645,6 +31896,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: msigdb SSSOM
@@ -31705,6 +31958,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: nihreporter.project OWL
     format: owl
@@ -31714,6 +31969,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: nihreporter.project OBO Graph JSON
     format: json
@@ -31722,6 +31979,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: Product
     description: nlm OBO
@@ -31875,6 +32134,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: pathbank OWL
     format: owl
@@ -31887,6 +32148,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: pathbank OBO Graph JSON
     format: json
@@ -31898,6 +32161,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: pathbank SSSOM
@@ -32308,6 +32573,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: reactome OBO Graph JSON
     format: json
@@ -32319,6 +32586,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: Product
     description: rgd OBO
@@ -32390,6 +32659,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: rhea OBO Graph JSON
     format: json
@@ -32405,6 +32676,8 @@ resources:
     - obo-db-ingest
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: Rhea SSSOM
@@ -32447,6 +32720,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: ror OBO Graph JSON
     format: json
@@ -32458,6 +32733,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/ror/ror.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: ror SSSOM
@@ -32541,6 +32818,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: slm OWL
     format: owl
@@ -32553,6 +32832,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: slm OBO Graph JSON
     format: json
@@ -32564,6 +32845,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/slm/slm.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: slm SSSOM
@@ -32608,6 +32891,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: uniprot OWL
     format: owl
@@ -32620,6 +32905,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: uniprot OBO Graph JSON
     format: json
@@ -32631,6 +32918,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: uniprot SSSOM
@@ -32742,6 +33031,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: zfin OBO Graph JSON
     format: json
@@ -32757,6 +33048,8 @@ resources:
     - obo-db-ingest
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: zfin SSSOM
@@ -33516,11 +33809,11 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 502 error
+      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
-      when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 502 error
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: Product
     description: OMA orthology groups in OrthoXML format
@@ -33539,6 +33832,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Hierarchical Orthologous Groups (HOGs) in OrthoXML format
     format: xml
@@ -33556,6 +33851,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: Pairwise orthologs in tab-separated text format
@@ -33574,6 +33871,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: Protein sequences from all genomes in FASTA format
@@ -33592,6 +33891,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: cDNA sequences for Eukaryotic genomes in FASTA format
@@ -33610,6 +33911,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: cDNA sequences for Prokaryotic genomes in FASTA format
@@ -33628,6 +33931,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: OMA Browser database in HDF5 format
     id: oma.hdf5
@@ -33641,6 +33946,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -33659,6 +33966,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     compression: gzip
@@ -33679,6 +33988,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
 - activity_status: active
   category: DataSource
   contacts:
@@ -35513,6 +35824,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     format: rdfxml
@@ -35569,6 +35882,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     id: kg-monarch.graph.duckdb
@@ -35596,6 +35911,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: PANTHER Automat
@@ -37476,6 +37793,7 @@ resources:
   - organisms
   - biomedical
   - genomics
+  evaluation_page: resource/pheknowlator/pheknowlator_eval.html
   homepage_url: https://github.com/callahantiff/PheKnowLator
   id: pheknowlator
   layout: resource_detail
@@ -37616,6 +37934,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compatibility:
     - standard: biolink
@@ -37690,6 +38010,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     format: rdfxml
@@ -37746,6 +38068,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     id: kg-monarch.graph.duckdb
@@ -37773,6 +38097,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   repository: https://github.com/monarch-initiative/phenio
   usages:
@@ -38268,6 +38594,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: Product
     description: Tab-delimited file of systematic ID, primary gene name (where assigned),
       chromosome, product description, UniProtKB accession, all synonyms, and product
@@ -38286,6 +38614,8 @@ resources:
     - pombase
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
@@ -38359,6 +38689,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     format: rdfxml
@@ -38415,6 +38747,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     id: kg-monarch.graph.duckdb
@@ -38442,6 +38776,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   repository: https://www.pombase.org/datasets
 - activity_status: active
@@ -38779,6 +39115,8 @@ resources:
     - primekg
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 403 error
       when accessing file'
   repository: https://github.com/mims-harvard/PrimeKG
 - activity_status: active
@@ -40178,6 +40516,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     format: rdfxml
@@ -40234,6 +40574,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     id: kg-monarch.graph.duckdb
@@ -40261,6 +40603,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: PheKnowLator graph files, including subsets with and without inverse
@@ -40538,6 +40882,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphicalInterface
     description: Interactive web interface for exploring RepoDB data with drug-centric  and
       disease-centric search capabilities
@@ -40741,6 +41087,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: rhea OBO Graph JSON
     format: json
@@ -40756,6 +41104,8 @@ resources:
     - obo-db-ingest
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: Rhea SSSOM
@@ -41383,6 +41733,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: Robokop Plus
     format: kgx-jsonl
@@ -41398,6 +41750,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   repository: https://github.com/NCATS-Gamma/robokop
 - activity_status: active
   category: KnowledgeGraph
@@ -41719,6 +42073,8 @@ resources:
     - scibite
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
 - activity_status: active
   category: DataSource
@@ -44003,6 +44359,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     format: rdfxml
@@ -44059,6 +44417,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     id: kg-monarch.graph.duckdb
@@ -44086,6 +44446,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: STRING-DB Automat
@@ -44222,6 +44584,8 @@ resources:
     product_url: https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   repository: ''
 - activity_status: active
@@ -46033,6 +46397,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
       protein-coding gene mapped to the corresponding UniProt accession number
@@ -46079,6 +46445,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -46545,6 +46913,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphicalInterface
     description: Browse UO with Ontology Lookup Service (OLS)
     format: http
@@ -46907,6 +47277,8 @@ resources:
     - vo
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: PheKnowLator graph files, including subsets with and without inverse
@@ -47623,6 +47995,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     format: rdfxml
@@ -47679,6 +48053,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     id: kg-monarch.graph.duckdb
@@ -47706,6 +48082,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
@@ -47890,6 +48268,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: Product
     description: zfin OBO Graph JSON
     id: obo-db-ingest.zfin.json
@@ -47904,6 +48284,8 @@ resources:
     - obo-db-ingest
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: zfin SSSOM
@@ -48002,6 +48384,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
     format: rdfxml
@@ -48058,6 +48442,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
     id: kg-monarch.graph.duckdb
@@ -48085,6 +48471,8 @@ resources:
     - kg-monarch
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
   repository: https://github.com/ZFIN/
 - activity_status: inactive
@@ -48257,6 +48645,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 403 error
+      when accessing file'
   - category: Product
     description: CSV file containing citation information for all PubMed articles
       in SemMedDB
@@ -48266,6 +48656,8 @@ resources:
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing entity information with UMLS concept identifiers,
@@ -48277,6 +48669,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 403 error
+      when accessing file'
   - category: Product
     description: CSV file containing semantic predications with subject-predicate-object
       triples and associated metadata
@@ -48287,6 +48681,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 403 error
+      when accessing file'
   - category: Product
     description: CSV file containing sentence information from PubMed citations
     format: csv
@@ -48295,6 +48691,8 @@ resources:
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv
     warnings:
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 403 error
       when accessing file'
   - category: ProcessProduct
     description: The SemRep natural language processing system that extracts semantic
