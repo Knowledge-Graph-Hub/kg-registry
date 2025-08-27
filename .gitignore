@@ -134,3 +134,4 @@ dmypy.json
 
 # DuckDB database files
 *.duckdb.wal
+registry/kg_registry.duckdb

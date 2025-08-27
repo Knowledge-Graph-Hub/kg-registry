@@ -1,9 +1,8 @@
-import sys
 import importlib.util
+import sys
 from pathlib import Path
 
 import duckdb  # type: ignore
-
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent

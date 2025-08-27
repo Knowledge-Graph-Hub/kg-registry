@@ -8,7 +8,7 @@ layout: intro_doc
 
 A knowledge graph, or KG, is a collection of data elements (also called _entities_ or _nodes_) and their relationships (also called _edges_). KGs are often heterogenous, containing multiple types of data from many sources. Definitions vary regarding what makes a graph a KG, but all KGs involve some measure of data integration and modeling the connections among data.
 
-For more on this, see [Ehrlinger and Wöß 2016.](https://ceur-ws.org/Vol-1695/paper4.pdf>)
+For more on this, see [Ehrlinger and Wöß 2016.](https://ceur-ws.org/Vol-1695/paper4.pdf)
 
 ## What is the KG-Registry?
 
