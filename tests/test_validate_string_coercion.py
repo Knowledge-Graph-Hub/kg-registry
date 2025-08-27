@@ -1,7 +1,8 @@
+import importlib.util
 import tempfile
 from pathlib import Path
-import importlib.util
 from types import SimpleNamespace
+
 import yaml
 
 
