@@ -1,9 +1,9 @@
 ---
 category: GraphProduct
-description: DuckDB database of KG-Monarch
-edge_count: 14634548
-id: kg-monarch.graph.duckdb
-name: DuckDB database of KG-Monarch
+description: Neo4j Dump of KG-Monarch Nodes
+format: neo4j
+id: kg-monarch.graph.neo4j.nodes
+name: Neo4j Dump of KG-Monarch Nodes
 node_categories:
 - biolink:AnatomicalEntity
 - biolink:BiologicalProcess
@@ -77,7 +77,7 @@ predicates:
 - biolink:related_to
 - biolink:subclass_of
 - biolink:treats_or_applied_or_studied_to_treat
-product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb
+product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
 secondary_source:
 - kg-monarch
 layout: product_detail

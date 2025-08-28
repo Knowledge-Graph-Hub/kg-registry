@@ -1,9 +1,10 @@
 ---
 category: GraphProduct
-description: DuckDB database of KG-Monarch
+description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
 edge_count: 14634548
-id: kg-monarch.graph.duckdb
-name: DuckDB database of KG-Monarch
+format: kgx-jsonl
+id: kg-monarch.graph.jsonl.edges
+name: KGX JSON-L Distribution of KG-Monarch Edges
 node_categories:
 - biolink:AnatomicalEntity
 - biolink:BiologicalProcess
@@ -77,7 +78,7 @@ predicates:
 - biolink:related_to
 - biolink:subclass_of
 - biolink:treats_or_applied_or_studied_to_treat
-product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb
+product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
 secondary_source:
 - kg-monarch
 layout: product_detail
