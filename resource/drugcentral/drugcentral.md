@@ -30,6 +30,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: gzip
   description: PostgreSQL (v14.5) database dump of all information in DrugCentral.
@@ -212,6 +214,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+    header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
   format: tsv
@@ -228,6 +232,8 @@ products:
   - mind
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -246,6 +252,8 @@ products:
   - mind
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -292,6 +300,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    when accessing file'
 publications:
 - authors:
   - Ursu O

@@ -77,11 +77,8 @@ predicates:
 - biolink:related_to
 - biolink:subclass_of
 - biolink:treats_or_applied_or_studied_to_treat
-product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
+product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb
 secondary_source:
 - kg-monarch
-warnings:
-- 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error when
-  accessing file'
 layout: product_detail
 ---

@@ -521,23 +521,6 @@ products:
   secondary_source:
   - vo
 - category: DataModelProduct
-  description: OBO release of VO
-  format: obo
-  id: vo.obo
-  name: Vaccine Ontology OBO release
-  original_source:
-  - bfo
-  - iao
-  - chebi
-  - ncbitaxon
-  - vo
-  product_url: http://purl.obolibrary.org/obo/vo.obo
-  secondary_source:
-  - vo
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
-- category: DataModelProduct
   description: CLO merged OWL release
   format: owl
   id: clo.owl
