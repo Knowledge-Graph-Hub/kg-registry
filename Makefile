@@ -51,7 +51,7 @@ SCHEMA_DIR = src/kg_registry/kg_registry_schema
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
 
-all: ingest-kg-monarch _config.yml registry/kgs.jsonld registry/kg_registry.duckdb registry/parquet registry/parquet-downloads.html assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js $(SOURCE_SCHEMA_ALL) refresh-schema
+all: ingest-kg-monarch _config.yml registry/kgs.jsonld registry/parquet registry/parquet-downloads.html assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js $(SOURCE_SCHEMA_ALL) refresh-schema
 
 # This is minimal for now, but
 # will be expanded to include other docs
@@ -82,8 +82,8 @@ $(SOURCE_SCHEMA_ALL):
 
 # Remove and/or revert all targets to their repository versions
 clean:
-	rm -Rf registry/kgs.nt registry/kgs.ttl registry/kgs.yml registry/kg_registry.duckdb registry/parquet sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
-	git checkout _config.yml registry/kgs.jsonld registry/kgs.yml registry/kg_registry.duckdb
+	rm -Rf registry/kgs.nt registry/kgs.ttl registry/kgs.yml registry/parquet sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
+	git checkout _config.yml registry/kgs.jsonld registry/kgs.yml
 
 clean-schema:
 	rm -Rf src/kg_registry/kg_registry_schema/datamodel/*.py src/kg_registry/kg_registry_schema/*.json src/kg_registry/kg_registry_schema/schema/kg_registry_schema_all.yaml
@@ -114,10 +114,6 @@ _config.yml: _config_header.yml registry/kgs.yml
 # Sort resources based on the validation (metadata-grid)
 registry/kgs.yml: reports/metadata-grid.csv
 	./util/sort-resources.py tmp/unsorted-resources-with-sizes.yml $< $@ && rm -rf tmp
-
-# Sync to duckdb database
-registry/kg_registry.duckdb: registry/kgs.yml
-	$(RUN) python -m kg_registry.cli duckdb sync
 
 # Generate Parquet files
 registry/parquet: registry/kgs.yml

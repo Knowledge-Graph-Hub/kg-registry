@@ -4,7 +4,6 @@ import click
 
 from kg_registry import standardize_metadata
 from kg_registry.constants import ROOT
-from kg_registry.duckdb_backend import DuckDBBackend, sync_yaml_to_duckdb
 from kg_registry.parquet_backend import DuckDBParquetQuerier, ParquetBackend, sync_yaml_to_parquet
 
 __all__ = [
@@ -21,88 +20,6 @@ def main():
 def duckdb():
     """Commands for the DuckDB backend."""
     pass
-
-
-@duckdb.command(name="sync")
-@click.option(
-    "--yaml-file",
-    default=str(ROOT / "registry" / "kgs.yml"),
-    help="Path to YAML file to sync",
-)
-@click.option(
-    "--db-path",
-    default=str(ROOT / "registry" / "kg_registry.duckdb"),
-    help="Path to DuckDB database file",
-)
-def duckdb_sync(yaml_file: str, db_path: str):
-    """Sync YAML data to DuckDB database."""
-    try:
-        count = sync_yaml_to_duckdb(yaml_file, db_path)
-        click.echo(f"Successfully synced {count} resources to DuckDB database at {db_path}")
-    except Exception as e:
-        click.echo(f"Error syncing data: {e}", err=True)
-        raise click.Abort()
-
-
-@duckdb.command(name="stats")
-@click.option(
-    "--db-path",
-    default=str(ROOT / "registry" / "kg_registry.duckdb"),
-    help="Path to DuckDB database file",
-)
-def duckdb_stats(db_path: str):
-    """Show statistics about the DuckDB database."""
-    try:
-        with DuckDBBackend(db_path) as backend:
-            stats = backend.get_resource_stats()
-            click.echo(f"Total resources: {stats['total_resources']}")
-            click.echo(f"Active resources: {stats['active_resources']}")
-            click.echo("\nBy category:")
-            for category, count in stats["by_category"].items():
-                click.echo(f"  {category}: {count}")
-            click.echo("\nBy domain:")
-            for domain, count in stats["by_domain"].items():
-                click.echo(f"  {domain}: {count}")
-    except Exception as e:
-        click.echo(f"Error getting stats: {e}", err=True)
-        raise click.Abort()
-
-
-@duckdb.command(name="query")
-@click.option(
-    "--db-path",
-    default=str(ROOT / "registry" / "kg_registry.duckdb"),
-    help="Path to DuckDB database file",
-)
-@click.option("--category", help="Filter by category")
-@click.option("--domain", help="Filter by domain")
-@click.option("--status", help="Filter by activity status")
-@click.option("--search", help="Search in name or description")
-def duckdb_query(db_path: str, category: str, domain: str, status: str, search: str):
-    """Query resources from DuckDB database."""
-    try:
-        with DuckDBBackend(db_path) as backend:
-            filters = {}
-            if category:
-                filters["category"] = category
-            if domain:
-                filters["domain"] = domain
-            if status:
-                filters["activity_status"] = status
-            if search:
-                filters["name_contains"] = search
-
-            if search:
-                resources = backend.search_resources(search)
-            else:
-                resources = backend.query_resources(**filters)
-
-            click.echo(f"Found {len(resources)} resources:")
-            for resource in resources:
-                click.echo(f"  {resource['id']}: {resource['name']} ({resource['category']})")
-    except Exception as e:
-        click.echo(f"Error querying data: {e}", err=True)
-        raise click.Abort()
 
 
 @main.group()
