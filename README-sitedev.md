@@ -113,17 +113,6 @@ If you make changes to the registry data and need to regenerate the Parquet file
 python -m kg_registry.cli parquet sync --yaml-file registry/kgs.yml --output-dir registry/parquet
 ```
 
-### Legacy DuckDB Database (Deprecated)
-
-The previous approach used a full DuckDB database file located at `/registry/kg_registry.duckdb`. This approach is being phased out in favor of Parquet files, but is still supported for backward compatibility.
-
-To update the legacy DuckDB database:
-
-```shell
-# Export registry data to DuckDB
-python -m kg_registry.cli duckdb sync --yaml-file registry/kgs.yml --db-path registry/kg_registry.duckdb
-```
-
 ### Advanced Search Page
 
 The advanced search page (`advanced-search.html`) uses DuckDB-WASM to load and query the database file directly in the browser. This allows users to run complex SQL queries without any server-side processing.
