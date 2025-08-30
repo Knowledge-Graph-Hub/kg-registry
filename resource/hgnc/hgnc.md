@@ -49,9 +49,9 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
     when accessing file'
 - category: Product
   description: hgnc OBO Graph JSON
@@ -67,9 +67,9 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: hgnc SSSOM
@@ -146,9 +146,9 @@ products:
   secondary_source:
   - scibite
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -402,6 +402,33 @@ products:
   - hgnc
   product_file_size: 974440
   product_url: https://www.omim.org/static/omim/data/mim2gene.txt
+- category: ProgrammingInterface
+  description: TRAPI web API for querying MicrobiomeKG
+  format: http
+  id: microbiomekg.api
+  name: MicrobiomeKG Plover API
+  original_source:
+  - biolink
+  - chebi
+  - ncbitaxon
+  - ncbigene
+  - mesh
+  - pubchem
+  - go
+  - mondo
+  - ncit
+  - efo
+  - uniprot
+  - rhea
+  - pr
+  - uberon
+  - panther
+  - hgnc
+  - drugbank
+  - eupathdb
+  product_url: https://multiomics.transltr.io/mbkp
+  secondary_source:
+  - microbiomekg
 repository: https://github.com/HGNC
 ---
 HUGO Gene Nomenclature Committee

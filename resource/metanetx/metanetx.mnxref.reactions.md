@@ -10,7 +10,7 @@ product_url: https://www.metanetx.org/cgi-bin/mnxget/mnxref/reac_xref.tsv
 secondary_source:
 - metanetx
 warnings:
-- 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+- 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
   header found'
 layout: product_detail
 ---

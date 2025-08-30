@@ -28,11 +28,11 @@ products:
   secondary_source:
   - automat
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
     when accessing file'
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
@@ -154,12 +154,11 @@ products:
   - string
   - xenbase
   - zfin
+  product_file_size: 315667976
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -212,12 +211,11 @@ products:
   - string
   - xenbase
   - zfin
+  product_file_size: 1438250397
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -242,12 +240,11 @@ products:
   - string
   - xenbase
   - zfin
+  product_file_size: 2179400472
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
     when accessing file'
 - category: GraphProduct

@@ -35,9 +35,9 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
     header found'
 - category: Product
   description: Tab-delimited file of systematic ID, primary gene name (where assigned),
@@ -56,9 +56,9 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -126,12 +126,11 @@ products:
   - string
   - xenbase
   - zfin
+  product_file_size: 315667976
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -184,12 +183,11 @@ products:
   - string
   - xenbase
   - zfin
+  product_file_size: 1438250397
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -214,12 +212,11 @@ products:
   - string
   - xenbase
   - zfin
+  product_file_size: 2179400472
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
     when accessing file'
 - category: GraphProduct

@@ -28,9 +28,9 @@ products:
   secondary_source:
   - automat
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
     when accessing file'
 - category: Product
   compression: gzip
@@ -212,9 +212,9 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -231,9 +231,9 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -251,9 +251,9 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -296,11 +296,11 @@ products:
   - clinicaltrialsgov
   product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
     header found'
-  - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
     when accessing file'
 publications:
 - authors:

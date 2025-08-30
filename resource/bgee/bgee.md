@@ -55,12 +55,12 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: zip
   description: RNA-Seq data processed and formatted for the Bgee database
@@ -73,12 +73,12 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Processed Affymetrix microarray data for the Bgee database
@@ -91,12 +91,12 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: zip
   description: In Situ Hybridization data in the Bgee database
@@ -109,12 +109,12 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: zip
   description: EST (Expressed Sequence Tag) expression data in the Bgee database
@@ -127,12 +127,12 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Single-cell RNA-Seq processed data in the Bgee database
@@ -145,12 +145,12 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Anatomical homology information used in Bgee
@@ -163,12 +163,12 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: zip
   description: RDF version of the Bgee data for semantic web applications
@@ -181,12 +181,12 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-    to URL'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -348,12 +348,11 @@ products:
   - string
   - xenbase
   - zfin
+  product_file_size: 315667976
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -406,12 +405,11 @@ products:
   - string
   - xenbase
   - zfin
+  product_file_size: 1438250397
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -436,12 +434,11 @@ products:
   - string
   - xenbase
   - zfin
+  product_file_size: 2179400472
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
   secondary_source:
   - kg-monarch
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
     when accessing file'
 - category: GraphProduct

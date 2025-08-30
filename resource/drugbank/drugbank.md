@@ -346,7 +346,7 @@ products:
   dump_format: other
   format: mixed
   id: drugmechdb.graph
-  latest_version: '2.0.1'
+  latest_version: 2.0.1
   name: DrugMechDB Graph Dataset
   original_source:
   - go
@@ -364,10 +364,37 @@ products:
   product_url: https://doi.org/10.5281/zenodo.8139357
   repository: https://github.com/SuLab/DrugMechDB
   versions:
-  - '2.0.1'
-  - '2.0.0'
-  - '1.0.2'
+  - 2.0.1
+  - 2.0.0
+  - 1.0.2
   - '1.0'
+- category: ProgrammingInterface
+  description: TRAPI web API for querying MicrobiomeKG
+  format: http
+  id: microbiomekg.api
+  name: MicrobiomeKG Plover API
+  original_source:
+  - biolink
+  - chebi
+  - ncbitaxon
+  - ncbigene
+  - mesh
+  - pubchem
+  - go
+  - mondo
+  - ncit
+  - efo
+  - uniprot
+  - rhea
+  - pr
+  - uberon
+  - panther
+  - hgnc
+  - drugbank
+  - eupathdb
+  product_url: https://multiomics.transltr.io/mbkp
+  secondary_source:
+  - microbiomekg
 publications:
 - id: https://doi.org/10.1093/nar/gkad976
   journal: Nucleic Acids Research

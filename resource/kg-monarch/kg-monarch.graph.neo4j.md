@@ -1,10 +1,10 @@
 ---
 category: GraphProduct
-description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
+description: Neo4j Dump of KG-Monarch
+dump_format: neo4j
 edge_count: 14486132
-format: kgx-jsonl
-id: kg-monarch.graph.jsonl.nodes
-name: KGX JSON-L Distribution of KG-Monarch Nodes
+id: kg-monarch.graph.neo4j
+name: Neo4j Dump of KG-Monarch
 node_categories:
 - biolink:AnatomicalEntity
 - biolink:BiologicalProcess
@@ -79,9 +79,11 @@ predicates:
 - biolink:related_to
 - biolink:subclass_of
 - biolink:treats_or_applied_or_studied_to_treat
-product_file_size: 1149505896
-product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
+product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
 secondary_source:
 - kg-monarch
+warnings:
+- 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error when
+  accessing file'
 layout: product_detail
 ---

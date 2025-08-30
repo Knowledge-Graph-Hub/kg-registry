@@ -32,11 +32,11 @@ products:
   secondary_source:
   - chr
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
     when accessing file'
 repository: https://github.com/monarch-initiative/monochrom/
 ---

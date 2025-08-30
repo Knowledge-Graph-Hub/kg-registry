@@ -97,9 +97,9 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -142,13 +142,13 @@ products:
   secondary_source:
   - oma
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -557,6 +557,33 @@ products:
   - v3.0.2
   - v4.0.0
   - current_build
+- category: ProgrammingInterface
+  description: TRAPI web API for querying MicrobiomeKG
+  format: http
+  id: microbiomekg.api
+  name: MicrobiomeKG Plover API
+  original_source:
+  - biolink
+  - chebi
+  - ncbitaxon
+  - ncbigene
+  - mesh
+  - pubchem
+  - go
+  - mondo
+  - ncit
+  - efo
+  - uniprot
+  - rhea
+  - pr
+  - uberon
+  - panther
+  - hgnc
+  - drugbank
+  - eupathdb
+  product_url: https://multiomics.transltr.io/mbkp
+  secondary_source:
+  - microbiomekg
 repository: https://www.uniprot.org/help/downloads
 ---
 UniProt Protein Knowledge Base

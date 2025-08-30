@@ -404,12 +404,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -462,12 +461,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -492,12 +490,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 2179400472
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -1585,12 +1582,12 @@ resources:
     secondary_source:
     - bgee
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: RNA-Seq data processed and formatted for the Bgee database
@@ -1603,12 +1600,12 @@ resources:
     secondary_source:
     - bgee
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: Processed Affymetrix microarray data for the Bgee database
@@ -1621,12 +1618,12 @@ resources:
     secondary_source:
     - bgee
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: In Situ Hybridization data in the Bgee database
@@ -1639,12 +1636,12 @@ resources:
     secondary_source:
     - bgee
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: EST (Expressed Sequence Tag) expression data in the Bgee database
@@ -1657,12 +1654,12 @@ resources:
     secondary_source:
     - bgee
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: Single-cell RNA-Seq processed data in the Bgee database
@@ -1675,12 +1672,12 @@ resources:
     secondary_source:
     - bgee
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: Anatomical homology information used in Bgee
@@ -1693,12 +1690,12 @@ resources:
     secondary_source:
     - bgee
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: RDF version of the Bgee data for semantic web applications
@@ -1711,12 +1708,12 @@ resources:
     secondary_source:
     - bgee
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.
@@ -1878,12 +1875,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -1936,12 +1932,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -1966,12 +1961,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 2179400472
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -3125,12 +3119,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -3183,12 +3176,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -3213,12 +3205,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 2179400472
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -3897,9 +3888,9 @@ resources:
     secondary_source:
     - automat
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: ProcessProduct
     description: This repository is a code reference for the C-Path Knowledge Graph
@@ -3939,6 +3930,33 @@ resources:
     product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
     secondary_source:
     - mechreponet
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
   publications:
   - authors:
     - Unni DR
@@ -5096,24 +5114,24 @@ resources:
     name: Human Cell Markers
     product_url: http://xteam.xbio.top/download/Human_cell_markers.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+      header found'
   - category: Product
     description: Cell markers of different cell types from different tissues in mouse
     id: cellmarker.mouse
     name: Mouse Cell Markers
     product_url: http://xteam.xbio.top/download/Mouse_cell_markers.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+      header found'
   - category: Product
     description: Cell markers derived from single-cell sequencing researches in human
       and mouse
@@ -5121,12 +5139,12 @@ resources:
     name: Single Cell Markers
     product_url: http://xteam.xbio.top/download/Single_cell_markers.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+      header found'
   - category: Product
     description: All cell markers of different cell types from different tissues in
       human and mouse
@@ -5134,12 +5152,12 @@ resources:
     name: All Cell Markers
     product_url: http://xteam.xbio.top/download/all_cell_markers.txt
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: Timeout connecting
+    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+      header found'
   - category: GraphicalInterface
     description: ACT is a tool that makes cell type annotation easier by integrating
       the CellMarker resource.
@@ -5272,9 +5290,9 @@ resources:
     secondary_source:
     - cellosaurus
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: Complete Cellosaurus data in RDF format using the Turtle syntax
@@ -5287,9 +5305,9 @@ resources:
     secondary_source:
     - cellosaurus
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
     description: RESTful API for programmatic access to Cellosaurus data
@@ -5428,9 +5446,9 @@ resources:
     secondary_source:
     - cgnc
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: cgnc OBO
@@ -6296,6 +6314,33 @@ resources:
     product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
     secondary_source:
     - rna-kg
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
   repository: https://github.com/ebi-chebi/ChEBI
 - activity_status: active
   category: DataSource
@@ -6719,11 +6764,11 @@ resources:
     secondary_source:
     - chr
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   repository: https://github.com/monarch-initiative/monochrom/
 - activity_status: active
@@ -7958,12 +8003,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -8016,12 +8060,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -8046,12 +8089,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 2179400472
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -8681,11 +8723,11 @@ resources:
     - clinicaltrialsgov
     product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -8973,12 +9015,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -9031,12 +9072,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -9061,12 +9101,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 2179400472
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -10276,23 +10315,23 @@ resources:
     name: CORUM All Complexes
     product_url: https://mips.helmholtz-muenchen.de/corum/download/allComplexes.txt.zip
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-28: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused
+      by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
+      verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
     - 'File was not able to be retrieved when checked on 2025-08-26: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-26: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
-      verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
-    - 'File was not able to be retrieved when checked on 2025-08-26: Error connecting
+      verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
+    - 'File was not able to be retrieved when checked on 2025-08-30: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Error connecting
-      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
-      Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused
-      by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
-      verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Core dataset of manually curated, non-redundant protein complexes
       in CORUM in tab-delimited format
@@ -10304,7 +10343,7 @@ resources:
     name: CORUM Core Complexes
     product_url: https://mips.helmholtz-muenchen.de/corum/download/coreComplexes.txt.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-08-28: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
@@ -10314,11 +10353,11 @@ resources:
       Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-08-30: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
-      verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
+      verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
   - category: Product
     description: Dataset of all CORUM protein complexes in PSI-MI XML format (Proteomics
       Standards Initiative)
@@ -10330,7 +10369,7 @@ resources:
     name: CORUM PSI-MI
     product_url: https://mips.helmholtz-muenchen.de/corum/download/psi.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-08-28: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -10340,11 +10379,11 @@ resources:
       Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1017)'')))'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-08-30: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1000)'')))'
+      local issuer certificate (_ssl.c:1017)'')))'
   - category: Product
     description: Dataset of all CORUM protein complexes in PSI-MI MITAB 2.5 format
     format: psi_mi_mitab
@@ -10355,7 +10394,7 @@ resources:
     name: CORUM MITAB
     product_url: https://mips.helmholtz-muenchen.de/corum/download/mitab.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-08-28: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -10365,11 +10404,11 @@ resources:
       Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1017)'')))'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-08-30: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1000)'')))'
+      local issuer certificate (_ssl.c:1017)'')))'
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
       entities and their associations
@@ -10856,11 +10895,11 @@ resources:
     secondary_source:
     - automat
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
@@ -10982,12 +11021,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -11040,12 +11078,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -11070,12 +11107,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 2179400472
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -12304,12 +12340,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -12362,12 +12397,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -12392,12 +12426,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 2179400472
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -14370,6 +14403,33 @@ resources:
     - 2.0.0
     - 1.0.2
     - '1.0'
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
   publications:
   - id: https://doi.org/10.1093/nar/gkad976
     journal: Nucleic Acids Research
@@ -14414,9 +14474,9 @@ resources:
     secondary_source:
     - automat
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -14598,9 +14658,9 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -14617,9 +14677,9 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -14637,9 +14697,9 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -14682,11 +14742,11 @@ resources:
     - clinicaltrialsgov
     product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -14831,9 +14891,9 @@ resources:
     name: DSSToxDB Description
     product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
@@ -16053,6 +16113,33 @@ resources:
     product_url: http://purl.obolibrary.org/obo/clo.owl
     secondary_source:
     - clo
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
   publications:
   - authors:
     - James Malone
@@ -17566,14 +17653,14 @@ resources:
     name: FooDB CSV Data
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-      header found'
-    - 'File was not able to be retrieved when checked on 2025-08-19: Timeout connecting
-      to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+      header found'
   - category: Product
     compression: targz
     description: Complete FooDB database in XML format
@@ -17582,16 +17669,16 @@ resources:
     name: FooDB XML Data
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Complete FooDB database in JSON format
@@ -17600,16 +17687,16 @@ resources:
     name: FooDB JSON Data
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+      header found'
   - category: Product
     compression: targz
     description: Complete FooDB database as MySQL dump
@@ -17617,16 +17704,16 @@ resources:
     name: FooDB MySQL Dump
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Experimental C-MS Spectra data from FooDB
@@ -17634,16 +17721,16 @@ resources:
     name: FooDB Experimental C-MS Spectra
     product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Predicted C-MS Spectra data from FooDB
@@ -17651,16 +17738,16 @@ resources:
     name: FooDB Predicted C-MS Spectra
     product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Experimental MS-MS Spectra data from FooDB
@@ -17668,16 +17755,16 @@ resources:
     name: FooDB Experimental MS-MS Spectra
     product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Predicted MS-MS Spectra data from FooDB
@@ -17685,16 +17772,16 @@ resources:
     name: FooDB Predicted MS-MS Spectra
     product_url: https://foodb.ca/public/system/downloads/foodb_predicted_msms_spectra.zip
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: NMR Spectra data from FooDB
@@ -17702,16 +17789,16 @@ resources:
     name: FooDB NMR Spectra
     product_url: https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Free Induction Decay (FID) files from FooDB
@@ -17719,16 +17806,16 @@ resources:
     name: FooDB FID Files
     product_url: https://foodb.ca/public/system/downloads/foodb_fid_files.zip
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: Image files of compounds, foods, and chemical structures
@@ -17736,16 +17823,16 @@ resources:
     name: FooDB Image Files
     product_url: https://foodb.ca/public/system/downloads/foodb_image_files.zip
     warnings:
+    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
+      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
-      to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+      header found'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.
@@ -17995,9 +18082,9 @@ resources:
     - gdsc
     product_url: https://ftp.sanger.ac.uk/project/cancerrxgene/releases/
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -18797,9 +18884,9 @@ resources:
     secondary_source:
     - glyconnect
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -19796,12 +19883,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -19854,12 +19940,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -19884,12 +19969,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 2179400472
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -20370,6 +20454,33 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
     secondary_source:
     - kg-monarch
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
   publications:
   - authors:
     - Ashburner M
@@ -20620,9 +20731,9 @@ resources:
     - go-cam
     product_url: https://github.com/geneontology/go-cam
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
     connection_url: http://api.geneontology.org/api/
@@ -20700,9 +20811,9 @@ resources:
     secondary_source:
     - goldterms
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     format: owl
@@ -21022,11 +21133,11 @@ resources:
     name: GtoPdb Targets and Families
     product_url: https://www.guidetopharmacology.org/DATA/targets_and_families.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: Product
     description: Complete list of ligands including drugs, small molecules, and other
@@ -21036,11 +21147,11 @@ resources:
     name: GtoPdb Ligands Dataset
     product_url: https://www.guidetopharmacology.org/DATA/ligands.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: Product
     description: Comprehensive dataset of all interactions between ligands and targets
@@ -21049,11 +21160,11 @@ resources:
     name: GtoPdb Interactions Dataset
     product_url: https://www.guidetopharmacology.org/DATA/interactions.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: Product
     description: Detailed interactions list for approved drugs and their targets
@@ -21062,11 +21173,11 @@ resources:
     name: GtoPdb Approved Drugs Dataset
     product_url: https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: Product
     description: SDF file containing chemical structures with SMILES for all ligands
@@ -21076,11 +21187,11 @@ resources:
     name: GtoPdb Ligand SDF File
     product_url: https://www.guidetopharmacology.org/DATA/all_ligands.sdf
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: Product
     description: RDF/linked data format of the GtoPdb data (target-ligand interactions
@@ -21090,11 +21201,11 @@ resources:
     name: GtoPdb RDF Dataset
     product_url: https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: Product
     description: Complete PostgreSQL database dump of the current Guide to Pharmacology
@@ -21103,11 +21214,11 @@ resources:
     name: GtoPdb Full Database
     product_url: https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: GraphicalInterface
     description: An extension of the Guide to PHARMACOLOGY database providing immunological
@@ -21899,9 +22010,9 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: hgnc OBO Graph JSON
@@ -21917,9 +22028,9 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: hgnc SSSOM
@@ -21996,9 +22107,9 @@ resources:
     secondary_source:
     - scibite
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -22252,6 +22363,33 @@ resources:
     - hgnc
     product_file_size: 974440
     product_url: https://www.omim.org/static/omim/data/mim2gene.txt
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
   repository: https://github.com/HGNC
 - activity_status: active
   category: DataSource
@@ -22936,12 +23074,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -22994,12 +23131,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -23024,12 +23160,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 2179400472
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -24194,9 +24329,9 @@ resources:
     name: Antibody Validation Reports
     product_url: https://avr.hubmapconsortium.org/
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 401 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 401 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 401 error
       when accessing file'
   - category: Product
     description: Data submission portal for registering and ingesting consortium data
@@ -26345,9 +26480,9 @@ resources:
     secondary_source:
     - kg-covid-19
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 403 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 403 error
       when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 - activity_status: active
@@ -26441,9 +26576,9 @@ resources:
     secondary_source:
     - kg-idg
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
@@ -26529,9 +26664,9 @@ resources:
     secondary_source:
     - kg-microbe
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 403 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 403 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -26620,7 +26755,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://kghub.org/kg-monarch/index.html
   id: kg-monarch
-  last_modified_date: '2025-08-26T19:30:07Z'
+  last_modified_date: '2025-08-30T17:04:47Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -26630,7 +26765,7 @@ resources:
   products:
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
-    edge_count: 14634548
+    edge_count: 14486132
     format: kgx
     id: kg-monarch.graph
     name: KGX Distribution of KG-Monarch
@@ -26652,6 +26787,7 @@ resources:
     - biolink:PhenotypicFeature
     - biolink:Protein
     - biolink:SequenceVariant
+    node_count: 1344798
     original_source:
     - phenio
     - alliance
@@ -26713,7 +26849,7 @@ resources:
     - kg-monarch
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-    edge_count: 14634548
+    edge_count: 14486132
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.edges
     name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -26735,6 +26871,7 @@ resources:
     - biolink:PhenotypicFeature
     - biolink:Protein
     - biolink:SequenceVariant
+    node_count: 1344798
     original_source:
     - phenio
     - alliance
@@ -26796,6 +26933,7 @@ resources:
     - kg-monarch
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
+    edge_count: 14486132
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl.nodes
     name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -26817,6 +26955,7 @@ resources:
     - biolink:PhenotypicFeature
     - biolink:Protein
     - biolink:SequenceVariant
+    node_count: 1344798
     original_source:
     - phenio
     - alliance
@@ -26878,7 +27017,7 @@ resources:
     - kg-monarch
   - category: GraphProduct
     description: RDF Distribution of KG-Monarch
-    edge_count: 14634548
+    edge_count: 14486132
     format: rdfxml
     id: kg-monarch.graph.rdf
     name: RDF Distribution of KG-Monarch
@@ -26900,6 +27039,7 @@ resources:
     - biolink:PhenotypicFeature
     - biolink:Protein
     - biolink:SequenceVariant
+    node_count: 1344798
     original_source:
     - phenio
     - alliance
@@ -26961,7 +27101,7 @@ resources:
     - kg-monarch
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Edges
-    edge_count: 14634548
+    edge_count: 14486132
     format: neo4j
     id: kg-monarch.graph.neo4j.edges
     name: Neo4j Dump of KG-Monarch Edges
@@ -26983,6 +27123,7 @@ resources:
     - biolink:PhenotypicFeature
     - biolink:Protein
     - biolink:SequenceVariant
+    node_count: 1344798
     original_source:
     - phenio
     - alliance
@@ -27044,6 +27185,7 @@ resources:
     - kg-monarch
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch Nodes
+    edge_count: 14486132
     format: neo4j
     id: kg-monarch.graph.neo4j.nodes
     name: Neo4j Dump of KG-Monarch Nodes
@@ -27065,6 +27207,7 @@ resources:
     - biolink:PhenotypicFeature
     - biolink:Protein
     - biolink:SequenceVariant
+    node_count: 1344798
     original_source:
     - phenio
     - alliance
@@ -27126,7 +27269,7 @@ resources:
     - kg-monarch
   - category: GraphProduct
     description: DuckDB database of KG-Monarch
-    edge_count: 14634548
+    edge_count: 14486132
     id: kg-monarch.graph.duckdb
     name: DuckDB database of KG-Monarch
     node_categories:
@@ -27147,6 +27290,7 @@ resources:
     - biolink:PhenotypicFeature
     - biolink:Protein
     - biolink:SequenceVariant
+    node_count: 1344798
     original_source:
     - phenio
     - alliance
@@ -27222,9 +27366,29 @@ resources:
     - cpathkg
   - category: GraphProduct
     description: KGX JSON-Lines Distribution of KG-Monarch
+    edge_count: 14486132
     format: kgx-jsonl
     id: kg-monarch.graph.jsonl
     name: KGX JSON-L Distribution of KG-Monarch
+    node_categories:
+    - biolink:AnatomicalEntity
+    - biolink:BiologicalProcess
+    - biolink:Cell
+    - biolink:CellularComponent
+    - biolink:ChemicalEntity
+    - biolink:Disease
+    - biolink:Gene
+    - biolink:Genotype
+    - biolink:LifeStage
+    - biolink:MolecularActivity
+    - biolink:MolecularEntity
+    - biolink:NamedThing
+    - biolink:OrganismTaxon
+    - biolink:Pathway
+    - biolink:PhenotypicFeature
+    - biolink:Protein
+    - biolink:SequenceVariant
+    node_count: 1344798
     original_source:
     - phenio
     - alliance
@@ -27243,19 +27407,75 @@ resources:
     - string
     - xenbase
     - zfin
+    predicates:
+    - biolink:actively_involved_in
+    - biolink:acts_upstream_of
+    - biolink:acts_upstream_of_negative_effect
+    - biolink:acts_upstream_of_or_within
+    - biolink:acts_upstream_of_or_within_negative_effect
+    - biolink:acts_upstream_of_or_within_positive_effect
+    - biolink:acts_upstream_of_positive_effect
+    - biolink:ameliorates_condition
+    - biolink:associated_with_increased_likelihood_of
+    - biolink:caused_by
+    - biolink:causes
+    - biolink:colocalizes_with
+    - biolink:contraindicated_in
+    - biolink:contributes_to
+    - biolink:disease_has_location
+    - biolink:disrupts
+    - biolink:enables
+    - biolink:expressed_in
+    - biolink:gene_associated_with_condition
+    - biolink:genetically_associated_with
+    - biolink:has_mode_of_inheritance
+    - biolink:has_participant
+    - biolink:has_phenotype
+    - biolink:has_sequence_variant
+    - biolink:interacts_with
+    - biolink:is_active_in
+    - biolink:is_sequence_variant_of
+    - biolink:located_in
+    - biolink:model_of
+    - biolink:orthologous_to
+    - biolink:part_of
+    - biolink:participates_in
+    - biolink:preventative_for_condition
+    - biolink:related_to
+    - biolink:subclass_of
+    - biolink:treats_or_applied_or_studied_to_treat
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: Neo4j Dump of KG-Monarch
     dump_format: neo4j
+    edge_count: 14486132
     id: kg-monarch.graph.neo4j
     name: Neo4j Dump of KG-Monarch
+    node_categories:
+    - biolink:AnatomicalEntity
+    - biolink:BiologicalProcess
+    - biolink:Cell
+    - biolink:CellularComponent
+    - biolink:ChemicalEntity
+    - biolink:Disease
+    - biolink:Gene
+    - biolink:Genotype
+    - biolink:LifeStage
+    - biolink:MolecularActivity
+    - biolink:MolecularEntity
+    - biolink:NamedThing
+    - biolink:OrganismTaxon
+    - biolink:Pathway
+    - biolink:PhenotypicFeature
+    - biolink:Protein
+    - biolink:SequenceVariant
+    node_count: 1344798
     original_source:
     - phenio
     - alliance
@@ -27274,12 +27494,48 @@ resources:
     - string
     - xenbase
     - zfin
+    predicates:
+    - biolink:actively_involved_in
+    - biolink:acts_upstream_of
+    - biolink:acts_upstream_of_negative_effect
+    - biolink:acts_upstream_of_or_within
+    - biolink:acts_upstream_of_or_within_negative_effect
+    - biolink:acts_upstream_of_or_within_positive_effect
+    - biolink:acts_upstream_of_positive_effect
+    - biolink:ameliorates_condition
+    - biolink:associated_with_increased_likelihood_of
+    - biolink:caused_by
+    - biolink:causes
+    - biolink:colocalizes_with
+    - biolink:contraindicated_in
+    - biolink:contributes_to
+    - biolink:disease_has_location
+    - biolink:disrupts
+    - biolink:enables
+    - biolink:expressed_in
+    - biolink:gene_associated_with_condition
+    - biolink:genetically_associated_with
+    - biolink:has_mode_of_inheritance
+    - biolink:has_participant
+    - biolink:has_phenotype
+    - biolink:has_sequence_variant
+    - biolink:interacts_with
+    - biolink:is_active_in
+    - biolink:is_sequence_variant_of
+    - biolink:located_in
+    - biolink:model_of
+    - biolink:orthologous_to
+    - biolink:part_of
+    - biolink:participates_in
+    - biolink:preventative_for_condition
+    - biolink:related_to
+    - biolink:subclass_of
+    - biolink:treats_or_applied_or_studied_to_treat
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   repository: https://github.com/monarch-initiative/monarch-ingest
@@ -28100,9 +28356,9 @@ resources:
     - loinc
     product_url: https://loinc.org/download/loinc-complete/
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 503 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 503 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 503 error
       when accessing file'
   - category: DataModelProduct
     description: Archive of past LOINC releases for version-specific implementations
@@ -28113,9 +28369,9 @@ resources:
     - loinc
     product_url: https://loinc.org/downloads/archive/
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 503 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 503 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 503 error
       when accessing file'
   - category: DocumentationProduct
     description: LOINC Mission, Vision, and Guiding Principles for open terminology
@@ -28126,9 +28382,9 @@ resources:
     - loinc
     product_url: https://loinc.org/principles/
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 503 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 503 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 503 error
       when accessing file'
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
@@ -28497,12 +28753,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -28555,12 +28810,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -28585,12 +28839,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 2179400472
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -28987,9 +29240,9 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -29006,9 +29259,9 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -29026,9 +29279,9 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -29365,6 +29618,33 @@ resources:
     - 2.0.0
     - 1.0.2
     - '1.0'
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -29510,9 +29790,9 @@ resources:
     secondary_source:
     - metanetx
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: Product
     description: MNXref unified namespace for reactions across databases
@@ -29525,9 +29805,9 @@ resources:
     secondary_source:
     - metanetx
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -29848,6 +30128,66 @@ resources:
     about this resource.
 - activity_status: active
   category: KnowledgeGraph
+  collection:
+  - translator
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: gglusman@isbscience.org
+    - contact_type: github
+      value: gglusman
+    label: Gwênlyn Glusman
+  creation_date: '2025-08-30T00:00:00Z'
+  description: MicrobiomeKG is an integrative knowledge graph resource for multi-omics
+    microbiome data linking microbial taxa, genes, metabolites, host phenotypes, pathways,
+    and clinical variables to support systems biology analyses and translational research.
+  domains:
+  - biomedical
+  - systems biology
+  - microbiome
+  homepage_url: https://multiomics.transltr.io/mbkp
+  id: microbiomekg
+  last_modified_date: '2025-08-30T00:00:00Z'
+  layout: resource_detail
+  name: MicrobiomeKG
+  products:
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
+  publications:
+  - doi: 10.3389/fsysb.2025.1544432
+    id: doi:10.3389/fsysb.2025.1544432
+    journal: Frontiers in Systems Biology
+    title: 'MicrobiomeKG: an integrative knowledge graph for multi-omics microbiome
+      translational research'
+    year: '2025'
+- activity_status: active
+  category: KnowledgeGraph
   contacts:
   - category: Individual
     label: Roger Tu
@@ -29892,9 +30232,9 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -29911,9 +30251,9 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -29931,9 +30271,9 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -30719,6 +31059,33 @@ resources:
     product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
     secondary_source:
     - rna-kg
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
   repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 - activity_status: active
   category: DataSource
@@ -32099,6 +32466,33 @@ resources:
     product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
     secondary_source:
     - rna-kg
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
   publications:
   - authors:
     - Donna Maglott
@@ -32654,6 +33048,33 @@ resources:
     product_url: http://purl.obolibrary.org/obo/clo.owl
     secondary_source:
     - clo
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
   publications:
   - authors:
     - Scott Federhen
@@ -32779,6 +33200,33 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -34370,9 +34818,9 @@ resources:
     name: clinicaltrials OBO
     product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: clinicaltrials OWL
@@ -34384,9 +34832,9 @@ resources:
     name: clinicaltrials OWL
     product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: clinicaltrials OBO Graph JSON
@@ -34398,9 +34846,9 @@ resources:
     name: clinicaltrials OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: clinicaltrials SSSOM
@@ -34809,9 +35257,9 @@ resources:
     name: gtdb OBO
     product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: gtdb OWL
@@ -34871,9 +35319,9 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: hgnc OBO Graph JSON
@@ -34889,9 +35337,9 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: hgnc SSSOM
@@ -35068,9 +35516,9 @@ resources:
     name: itis OWL
     product_url: https://w3id.org/biopragmatics/resources/itis/itis.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: itis OBO Graph JSON
@@ -35082,9 +35530,9 @@ resources:
     name: itis OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/itis/itis.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: kegg.genome OBO
@@ -35136,9 +35584,9 @@ resources:
     name: mesh OWL
     product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: mesh OBO Graph JSON
@@ -35150,9 +35598,9 @@ resources:
     name: mesh OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: mgi OBO
@@ -35164,9 +35612,9 @@ resources:
     name: mgi OBO
     product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: mgi OWL
@@ -35178,9 +35626,9 @@ resources:
     name: mgi OWL
     product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: mgi OBO Graph JSON
@@ -35192,9 +35640,9 @@ resources:
     name: mgi OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: mgi SSSOM
@@ -35326,9 +35774,9 @@ resources:
     name: msigdb OBO
     product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: msigdb OWL
@@ -35340,9 +35788,9 @@ resources:
     name: msigdb OWL
     product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: msigdb OBO Graph JSON
@@ -35354,9 +35802,9 @@ resources:
     name: msigdb OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: msigdb SSSOM
@@ -35415,9 +35863,9 @@ resources:
     name: nihreporter.project OBO
     product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: nihreporter.project OWL
@@ -35426,9 +35874,9 @@ resources:
     name: nihreporter.project OWL
     product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: nihreporter.project OBO Graph JSON
@@ -35437,9 +35885,9 @@ resources:
     name: nihreporter.project OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: nlm OBO
@@ -35591,9 +36039,9 @@ resources:
     name: pathbank OBO
     product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: pathbank OWL
@@ -35605,9 +36053,9 @@ resources:
     name: pathbank OWL
     product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: pathbank OBO Graph JSON
@@ -35619,9 +36067,9 @@ resources:
     name: pathbank OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: pathbank SSSOM
@@ -36030,9 +36478,9 @@ resources:
     name: reactome OWL
     product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: reactome OBO Graph JSON
@@ -36044,9 +36492,9 @@ resources:
     name: reactome OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: rgd OBO
@@ -36116,9 +36564,9 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: rhea OBO Graph JSON
@@ -36134,9 +36582,9 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: Rhea SSSOM
@@ -36177,9 +36625,9 @@ resources:
     name: ror OWL
     product_url: https://w3id.org/biopragmatics/resources/ror/ror.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: ror OBO Graph JSON
@@ -36191,9 +36639,9 @@ resources:
     name: ror OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/ror/ror.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: ror SSSOM
@@ -36275,9 +36723,9 @@ resources:
     name: slm OBO
     product_url: https://w3id.org/biopragmatics/resources/slm/slm.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: slm OWL
@@ -36289,9 +36737,9 @@ resources:
     name: slm OWL
     product_url: https://w3id.org/biopragmatics/resources/slm/slm.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: slm OBO Graph JSON
@@ -36303,9 +36751,9 @@ resources:
     name: slm OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/slm/slm.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: slm SSSOM
@@ -36348,9 +36796,9 @@ resources:
     name: uniprot OBO
     product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: uniprot OWL
@@ -36362,9 +36810,9 @@ resources:
     name: uniprot OWL
     product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: uniprot OBO Graph JSON
@@ -36376,9 +36824,9 @@ resources:
     name: uniprot OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: uniprot SSSOM
@@ -36488,9 +36936,9 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: zfin OBO Graph JSON
@@ -36506,9 +36954,9 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: zfin SSSOM
@@ -37266,13 +37714,13 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-25: HTTP 502 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: OMA orthology groups in OrthoXML format
@@ -37285,13 +37733,13 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: Hierarchical Orthologous Groups (HOGs) in OrthoXML format
@@ -37304,13 +37752,13 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -37324,13 +37772,13 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -37344,13 +37792,13 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -37364,13 +37812,13 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -37384,13 +37832,13 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: OMA Browser database in HDF5 format
@@ -37402,11 +37850,11 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -37420,13 +37868,13 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     compression: gzip
@@ -37441,13 +37889,13 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
 - activity_status: active
   category: DataSource
@@ -39277,12 +39725,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -39335,12 +39782,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -39365,12 +39811,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 2179400472
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -39714,6 +40159,33 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
     secondary_source:
     - kg-monarch
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
   repository: https://data.pantherdb.org/ftp/
 - activity_status: active
   category: DataSource
@@ -41721,9 +42193,9 @@ resources:
     secondary_source:
     - phenio
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compatibility:
@@ -41793,12 +42265,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -41851,12 +42322,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -41881,12 +42351,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 2179400472
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -42711,9 +43180,9 @@ resources:
     secondary_source:
     - pombase
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: Product
     description: Tab-delimited file of systematic ID, primary gene name (where assigned),
@@ -42732,9 +43201,9 @@ resources:
     secondary_source:
     - pombase
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
@@ -42802,12 +43271,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -42860,12 +43328,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -42890,12 +43357,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 2179400472
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -43522,6 +43988,33 @@ resources:
     product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
     secondary_source:
     - rna-kg
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -43563,9 +44056,9 @@ resources:
     secondary_source:
     - primekg
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 403 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 403 error
       when accessing file'
   repository: https://github.com/mims-harvard/PrimeKG
 - activity_status: active
@@ -43997,6 +44490,33 @@ resources:
     product_url: https://zenodo.org/record/4077338
     secondary_source:
     - pharmkg
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
   publications:
   - authors:
     - Kim S
@@ -44959,12 +45479,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -45017,12 +45536,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -45047,12 +45565,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 2179400472
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -45657,11 +46174,11 @@ resources:
     - clinicaltrialsgov
     product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: Interactive web interface for exploring RepoDB data with drug-centric  and
@@ -45864,9 +46381,9 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: rhea OBO Graph JSON
@@ -45882,9 +46399,9 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: Rhea SSSOM
@@ -45905,6 +46422,33 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/rhea/rhea.sssom.tsv
     secondary_source:
     - obo-db-ingest
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
   publications:
   - authors:
     - Bansal P
@@ -46510,9 +47054,9 @@ resources:
     secondary_source:
     - automat
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: Robokop Plus
@@ -46525,11 +47069,11 @@ resources:
     secondary_source:
     - automat
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   repository: https://github.com/NCATS-Gamma/robokop
 - activity_status: active
@@ -46851,9 +47395,9 @@ resources:
     secondary_source:
     - scibite
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
 - activity_status: active
   category: DataSource
@@ -49132,12 +49676,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -49190,12 +49733,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -49220,12 +49762,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 2179400472
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -49692,9 +50233,9 @@ resources:
     name: Text Mining KP KGX
     product_url: https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   repository: ''
 - activity_status: active
@@ -51049,6 +51590,33 @@ resources:
     product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
     secondary_source:
     - rna-kg
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
   repository: https://github.com/obophenotype/uberon
 - activity_status: active
   category: KnowledgeGraph
@@ -51504,9 +52072,9 @@ resources:
     secondary_source:
     - pombase
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
       header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
@@ -51549,13 +52117,13 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
       when accessing file'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -51964,6 +52532,33 @@ resources:
     - v3.0.2
     - v4.0.0
     - current_build
+  - category: ProgrammingInterface
+    description: TRAPI web API for querying MicrobiomeKG
+    format: http
+    id: microbiomekg.api
+    name: MicrobiomeKG Plover API
+    original_source:
+    - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
+    product_url: https://multiomics.transltr.io/mbkp
+    secondary_source:
+    - microbiomekg
   repository: https://www.uniprot.org/help/downloads
 - activity_status: active
   category: DataModel
@@ -52018,13 +52613,13 @@ resources:
     - uo
     product_url: http://purl.obolibrary.org/obo/uo.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: Browse UO with Ontology Lookup Service (OLS)
@@ -53081,12 +53676,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -53139,12 +53733,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -53169,12 +53762,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 2179400472
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -53688,9 +54280,9 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: Product
     description: zfin OBO Graph JSON
@@ -53705,9 +54297,9 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: zfin SSSOM
@@ -53800,12 +54392,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 315667976
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -53858,12 +54449,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 1438250397
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -53888,12 +54478,11 @@ resources:
     - string
     - xenbase
     - zfin
+    product_file_size: 2179400472
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb.gz
     secondary_source:
     - kg-monarch
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 404 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
       when accessing file'
   - category: GraphProduct
@@ -54395,9 +54984,9 @@ resources:
     name: SemMedDB MySQL Database
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_MySQL_database.html
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 403 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing citation information for all PubMed articles
@@ -54407,9 +54996,9 @@ resources:
     name: SemMedDB Citations CSV
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 403 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing entity information with UMLS concept identifiers,
@@ -54419,9 +55008,9 @@ resources:
     name: SemMedDB Entity CSV
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/ENTITY.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 403 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing semantic predications with subject-predicate-object
@@ -54431,9 +55020,9 @@ resources:
     name: SemMedDB Predication CSV
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/PREDICATION.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 403 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing sentence information from PubMed citations
@@ -54442,9 +55031,9 @@ resources:
     name: SemMedDB Sentence CSV
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 403 error
-      when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 403 error
       when accessing file'
   - category: ProcessProduct
     description: The SemRep natural language processing system that extracts semantic

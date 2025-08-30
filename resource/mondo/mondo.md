@@ -14,9 +14,9 @@ contacts:
     value: sabrinatoro
   label: Sabrina Toro
   orcid: 0000-0002-4142-7153
-description: The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions
-  across the world. The name Mondo comes from the Latin word ‘mundus’ and means ‘for
-  the world.’
+description: "The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions\
+  \ across the world. The name Mondo comes from the Latin word \u2018mundus\u2019\
+  \ and means \u2018for the world.\u2019"
 domains:
 - health
 homepage_url: https://mondo.monarchinitiative.org/
@@ -547,6 +547,33 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
   secondary_source:
   - rna-kg
+- category: ProgrammingInterface
+  description: TRAPI web API for querying MicrobiomeKG
+  format: http
+  id: microbiomekg.api
+  name: MicrobiomeKG Plover API
+  original_source:
+  - biolink
+  - chebi
+  - ncbitaxon
+  - ncbigene
+  - mesh
+  - pubchem
+  - go
+  - mondo
+  - ncit
+  - efo
+  - uniprot
+  - rhea
+  - pr
+  - uberon
+  - panther
+  - hgnc
+  - drugbank
+  - eupathdb
+  product_url: https://multiomics.transltr.io/mbkp
+  secondary_source:
+  - microbiomekg
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 ---
 MONDO Disease Ontology

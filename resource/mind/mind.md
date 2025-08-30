@@ -44,9 +44,9 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -63,9 +63,9 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -83,9 +83,9 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-26: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
