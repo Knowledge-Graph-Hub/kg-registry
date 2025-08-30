@@ -539,6 +539,11 @@ enums:
     description: Specific collections for grouping KG-Registry entries.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     permissible_values:
+      aop:
+        text: aop
+        description: This entity incorporates the Adverse Outcome Pathways (AOP) framework
+          in some manner.
+        meaning: https://aopwiki.org/
       translator:
         text: translator
         description: This entity is part of those developed and used by the NCATS

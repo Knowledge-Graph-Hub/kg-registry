@@ -958,6 +958,11 @@ enums:
     description: >-
       Specific collections for grouping KG-Registry entries.
     permissible_values:
+      aop:
+        description: >-
+          This entity incorporates the Adverse Outcome Pathways (AOP)
+          framework in some manner.
+        meaning: https://aopwiki.org/
       translator:
         description: >-
           This entity is part of those developed and used

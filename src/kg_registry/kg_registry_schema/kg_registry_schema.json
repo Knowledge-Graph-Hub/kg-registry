@@ -224,6 +224,7 @@
         "CollectionEnum": {
             "description": "Specific collections for grouping KG-Registry entries.",
             "enum": [
+                "aop",
                 "translator"
             ],
             "title": "CollectionEnum",

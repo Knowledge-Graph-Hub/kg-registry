@@ -601,6 +601,10 @@ class CollectionEnum(str, Enum):
     """
     Specific collections for grouping KG-Registry entries.
     """
+    aop = "aop"
+    """
+    This entity incorporates the Adverse Outcome Pathways (AOP) framework in some manner.
+    """
     translator = "translator"
     """
     This entity is part of those developed and used by the NCATS Biomedical Translator program.
