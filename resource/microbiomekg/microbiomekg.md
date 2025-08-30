@@ -29,6 +29,23 @@ products:
     product_url: https://multiomics.transltr.io/mbkp
     original_source:
     - biolink
+    - chebi
+    - ncbitaxon
+    - ncbigene
+    - mesh
+    - pubchem
+    - go
+    - mondo
+    - ncit
+    - efo
+    - uniprot
+    - rhea
+    - pr
+    - uberon
+    - panther
+    - hgnc
+    - drugbank
+    - eupathdb
     secondary_source:
       - microbiomekg
 contacts:
