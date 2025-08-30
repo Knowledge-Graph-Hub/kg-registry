@@ -224,6 +224,7 @@
         "CollectionEnum": {
             "description": "Specific collections for grouping KG-Registry entries.",
             "enum": [
+                "aop",
                 "translator"
             ],
             "title": "CollectionEnum",
@@ -1232,6 +1233,7 @@
                 "social determinants",
                 "systems biology",
                 "synthetic biology",
+                "toxicology",
                 "translational",
                 "upper",
                 "food science",

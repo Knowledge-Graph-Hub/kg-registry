@@ -879,6 +879,9 @@ enums:
         description: >-
           The design and construction of new biological parts, devices, and systems,
           or the redesign of existing natural biological systems.
+      toxicology:
+        description: >-
+          The study of the adverse effects of chemicals on living organisms.
       translational:
         description: >-
           The translational sciences, including the translation
@@ -955,6 +958,11 @@ enums:
     description: >-
       Specific collections for grouping KG-Registry entries.
     permissible_values:
+      aop:
+        description: >-
+          This entity incorporates the Adverse Outcome Pathways (AOP)
+          framework in some manner.
+        meaning: https://aopwiki.org/
       translator:
         description: >-
           This entity is part of those developed and used
