@@ -517,6 +517,10 @@ class DomainEnum(str, Enum):
     """
     The design and construction of new biological parts, devices, and systems, or the redesign of existing natural biological systems.
     """
+    toxicology = "toxicology"
+    """
+    The study of the adverse effects of chemicals on living organisms.
+    """
     translational = "translational"
     """
     The translational sciences, including the translation of research into practice.
