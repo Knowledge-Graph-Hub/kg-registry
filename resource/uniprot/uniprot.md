@@ -97,8 +97,6 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
     header found'
 - category: MappingProduct
@@ -142,13 +140,13 @@ products:
   secondary_source:
   - oma
   warnings:
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
     to URL'
-  - 'File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple

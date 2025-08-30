@@ -83,6 +83,7 @@ ensembl,active,PASS
 envo,active,PASS
 erccrbp,active,PASS
 erccreg,active,PASS
+eupathdb,active,PASS
 faldo,active,PASS
 fbbt,active,PASS
 fbdv,active,PASS
@@ -130,6 +131,7 @@ icees-kg,active,PASS
 ido,active,PASS
 ikraph,active,PASS
 indra,active,PASS
+insight,active,PASS
 intact,active,PASS
 interpro,active,PASS
 kegg,active,PASS

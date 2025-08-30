@@ -8,7 +8,7 @@ original_source:
 - loinc
 product_url: https://loinc.org/downloads/archive/
 warnings:
-- 'File was not able to be retrieved when checked on 2025-08-28: HTTP 503 error when
+- 'File was not able to be retrieved when checked on 2025-08-30: HTTP 503 error when
   accessing file'
 layout: product_detail
 ---

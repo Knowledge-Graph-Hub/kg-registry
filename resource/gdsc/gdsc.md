@@ -81,8 +81,6 @@ products:
   - gdsc
   product_url: https://ftp.sanger.ac.uk/project/cancerrxgene/releases/
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error
-    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -208,7 +206,7 @@ publications:
   - Menden MP
   - Schubert M
   - Aben N
-  - Gonçalves E
+  - "Gon\xE7alves E"
   - Barthorpe S
   - Lightfoot H
   - Cokelaer T

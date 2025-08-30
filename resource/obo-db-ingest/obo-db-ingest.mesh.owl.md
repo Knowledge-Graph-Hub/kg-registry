@@ -9,7 +9,7 @@ license:
 name: mesh OWL
 product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.owl
 warnings:
-- 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error when
+- 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error when
   accessing file'
 layout: product_detail
 ---

@@ -35,8 +35,6 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
     header found'
 - category: Product
@@ -56,8 +54,6 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-28: No Content-Length
-    header found'
   - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
     header found'
 - category: MappingProduct

@@ -79,6 +79,7 @@ predicates:
 - biolink:related_to
 - biolink:subclass_of
 - biolink:treats_or_applied_or_studied_to_treat
+product_file_size: 1438250397
 product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
 secondary_source:
 - kg-monarch
