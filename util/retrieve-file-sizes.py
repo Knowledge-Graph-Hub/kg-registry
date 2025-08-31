@@ -360,6 +360,19 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
 
             if file_size is not None:
                 product['product_file_size'] = file_size
+
+                # Remove stale retrieval warnings if the URL now succeeds
+                if 'warnings' in product and isinstance(product['warnings'], list):
+                    import re
+                    before_cnt = len(product['warnings'])
+                    product['warnings'] = [
+                        w for w in product['warnings']
+                        if not re.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(w))
+                    ]
+                    after_cnt = len(product['warnings'])
+                    if after_cnt < before_cnt:
+                        print(f"  🔄 Cleared {before_cnt - after_cnt} stale retrieval warning(s) for product {product.get('id')}")
+
                 updated_products += 1
 
                 # Track this update for writing back to resource files
