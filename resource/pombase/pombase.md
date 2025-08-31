@@ -37,6 +37,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-31: No Content-Length
+    header found'
 - category: Product
   description: Tab-delimited file of systematic ID, primary gene name (where assigned),
     chromosome, product description, UniProtKB accession, all synonyms, and product
@@ -55,6 +57,8 @@ products:
   - pombase
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+    header found'
+  - 'File was not able to be retrieved when checked on 2025-08-31: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each

@@ -60,6 +60,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
+    when accessing file'
 - category: ProgrammingInterface
   connection_url: http://api.geneontology.org/api/
   description: Programmatic access to GO-CAM models through the Gene Ontology API

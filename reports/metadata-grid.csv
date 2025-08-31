@@ -271,6 +271,7 @@ swisslipid,active,PASS
 text-mining-kp,active,PASS
 tissues,active,PASS
 to,active,PASS
+toxin,active,PASS
 ttd,active,PASS
 ubergraph,active,PASS
 uberon,active,PASS
