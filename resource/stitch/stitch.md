@@ -56,6 +56,7 @@ products:
   - mi
   - ms
   - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information
   about this resource.

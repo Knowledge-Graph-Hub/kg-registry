@@ -78,6 +78,24 @@ products:
   - drugbank
   - sider
   - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
   secondary_source:
   - spoke
 - category: GraphProduct
@@ -103,10 +121,11 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: GraphProduct
   description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
@@ -130,10 +149,11 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
@@ -159,9 +179,10 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_url: https://arax.ncats.io/
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: GraphicalInterface
   description: A browser interface for a knowledge graph for Alzheimer's Disease.
   format: http
@@ -183,7 +204,6 @@ products:
   - pharmacotherapydb
   - pid
   - pubchem
-  - reactome
   - reactome
   - sider
   - tissues
@@ -337,6 +357,7 @@ products:
   - mi
   - ms
   - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 - category: GraphProduct
   compatibility:
   - standard: biolink

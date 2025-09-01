@@ -1,5 +1,5 @@
 http://birdgenenames.org/cgnc/downloads.jsp?file=standard:
-  checked_at: '2025-08-28T18:21:17Z'
+  checked_at: '2025-09-01T15:39:16Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://data.wikipathways.org/current/rdf/:
@@ -18,11 +18,11 @@ http://packages.sbnb-pages.irbbarcelona.org/chemical_checker/signaturization.htm
   skip_reason: html_page
   status_code: 200
 http://purl.obolibrary.org/obo/chr.owl:
-  checked_at: '2025-08-28T18:21:16Z'
+  checked_at: '2025-09-01T15:39:15Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/uo.json:
-  checked_at: '2025-08-28T18:21:23Z'
+  checked_at: '2025-09-01T15:39:18Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 http://purl.obolibrary.org/obo/vo.obo:
@@ -45,16 +45,16 @@ http://www.psygenet.org/:
   skip_reason: html_page
   status_code: 200
 http://xteam.xbio.top/download/Human_cell_markers.txt:
-  checked_at: '2025-08-28T18:25:08Z'
+  checked_at: '2025-09-01T15:40:36Z'
   error: Timeout connecting to URL
 http://xteam.xbio.top/download/Mouse_cell_markers.txt:
-  checked_at: '2025-08-28T18:25:18Z'
+  checked_at: '2025-09-01T15:40:47Z'
   error: Timeout connecting to URL
 http://xteam.xbio.top/download/Single_cell_markers.txt:
-  checked_at: '2025-08-28T18:25:27Z'
+  checked_at: '2025-09-01T15:40:56Z'
   error: Timeout connecting to URL
 http://xteam.xbio.top/download/all_cell_markers.txt:
-  checked_at: '2025-08-28T18:25:38Z'
+  checked_at: '2025-09-01T15:41:07Z'
   error: Timeout connecting to URL
 https://aact.ctti-clinicaltrials.org/:
   checked_at: '2025-08-26T18:13:39Z'
@@ -67,7 +67,7 @@ https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the
   skip_reason: html_page
   status_code: 200
 https://avr.hubmapconsortium.org/:
-  checked_at: '2025-08-28T18:21:16Z'
+  checked_at: '2025-09-01T15:39:15Z'
   error: HTTP 401 error when accessing file
   status_code: 401
 https://biolink.github.io/biolink-model/:
@@ -91,7 +91,7 @@ https://bioteque.irbbarcelona.org/downloads/embeddings:
   skip_reason: html_page
   status_code: 200
 ? https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
-: checked_at: '2025-08-28T18:23:07Z'
+: checked_at: '2025-09-01T15:40:18Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 ? https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
@@ -182,16 +182,16 @@ https://data.wikipathways.org/current/gpml/:
   skip_reason: html_page
   status_code: 200
 https://datadryad.org/stash/share/1OQtxew0Unh3iAdP-ELew-ctwuPTBz6Oy8uuyxqliZk:
-  checked_at: '2025-08-26T18:15:20Z'
+  checked_at: '2025-08-31T19:57:43Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
 https://dataverse.harvard.edu/api/access/datafile/6180620:
-  checked_at: '2025-08-28T18:21:28Z'
+  checked_at: '2025-09-01T15:39:19Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://doi.org/10.23645/epacomptox.5588566:
-  checked_at: '2025-08-26T18:16:26Z'
+  checked_at: '2025-08-31T19:58:53Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
@@ -236,58 +236,58 @@ https://downloads.thebiogrid.org/BioGRID/Latest-Release/BIOGRID-PTMS-LATEST.ptm.
   skip_reason: html_page
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip:
-  checked_at: '2025-08-28T18:26:07Z'
+  checked_at: '2025-09-01T15:41:07Z'
   content_type: application/zip
-  error: Timeout connecting to URL
+  error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz:
-  checked_at: '2025-08-28T18:25:48Z'
+  checked_at: '2025-09-01T15:41:07Z'
   content_type: application/octet-stream
-  error: Timeout connecting to URL
+  error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz:
-  checked_at: '2025-08-28T18:26:17Z'
+  checked_at: '2025-09-01T15:41:07Z'
   content_type: application/octet-stream
-  error: Timeout connecting to URL
+  error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz:
-  checked_at: '2025-08-28T18:25:57Z'
+  checked_at: '2025-09-01T15:41:07Z'
   content_type: application/octet-stream
-  error: Timeout connecting to URL
+  error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip:
-  checked_at: '2025-08-28T18:26:26Z'
+  checked_at: '2025-09-01T15:41:08Z'
   content_type: application/zip
-  error: Timeout connecting to URL
+  error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip:
-  checked_at: '2025-08-28T18:26:47Z'
+  checked_at: '2025-09-01T15:41:08Z'
   content_type: application/zip
-  error: Timeout connecting to URL
+  error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_fid_files.zip:
-  checked_at: '2025-08-28T18:27:16Z'
-  error: Timeout connecting to URL
+  checked_at: '2025-09-01T15:41:08Z'
+  error: HTTP 404 error when accessing file
   status_code: 404
 https://foodb.ca/public/system/downloads/foodb_image_files.zip:
-  checked_at: '2025-08-28T18:27:25Z'
+  checked_at: '2025-09-01T15:41:08Z'
   content_type: application/zip
-  error: Timeout connecting to URL
+  error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip:
-  checked_at: '2025-08-28T18:27:06Z'
+  checked_at: '2025-09-01T15:41:08Z'
   content_type: application/zip
-  error: Timeout connecting to URL
+  error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip:
-  checked_at: '2025-08-28T18:26:36Z'
+  checked_at: '2025-09-01T15:41:08Z'
   content_type: application/zip
-  error: Timeout connecting to URL
+  error: No Content-Length header found
   status_code: 200
 https://foodb.ca/public/system/downloads/foodb_predicted_msms_spectra.zip:
-  checked_at: '2025-08-28T18:26:55Z'
+  checked_at: '2025-09-01T15:41:08Z'
   content_type: application/zip
-  error: Timeout connecting to URL
+  error: No Content-Length header found
   status_code: 200
 https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/latest/:
   checked_at: '2025-08-26T18:14:29Z'
@@ -300,11 +300,11 @@ https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/:
   skip_reason: html_page
   status_code: 200
 https://ftp.expasy.org/databases/cellosaurus/cellosaurus.ttl:
-  checked_at: '2025-08-28T18:21:44Z'
+  checked_at: '2025-09-01T15:39:26Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.expasy.org/databases/cellosaurus/cellosaurus_xrefs.tsv:
-  checked_at: '2025-08-28T18:21:43Z'
+  checked_at: '2025-09-01T15:39:26Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ftp.ncbi.nih.gov/snp/latest_release/JSON/:
@@ -368,7 +368,7 @@ https://ftp.ncbi.nlm.nih.gov/pubchem/Substance/CURRENT-Full/SDF/:
   skip_reason: html_page
   status_code: 200
 https://ftp.sanger.ac.uk/project/cancerrxgene/releases/:
-  checked_at: '2025-08-28T18:27:27Z'
+  checked_at: '2025-09-01T15:41:10Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://github.com/DiseaseOntology/DO.utils:
@@ -427,11 +427,11 @@ https://github.com/digital-botanical-gardens-initiative/earth_metabolome_ontolog
   skip_reason: html_page
   status_code: 200
 https://github.com/elsevier-health/scibite-ontology/blob/main/hgnc_2025_02_04.owl.zip:
-  checked_at: '2025-08-28T18:21:33Z'
+  checked_at: '2025-09-01T15:39:23Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://github.com/geneontology/go-cam:
-  checked_at: '2025-08-28T18:22:07Z'
+  checked_at: '2025-09-01T15:39:45Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://github.com/geneontology/minerva:
@@ -450,7 +450,7 @@ https://github.com/hetio/hetnetpy:
   skip_reason: html_page
   status_code: 200
 https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl:
-  checked_at: '2025-08-28T18:24:56Z'
+  checked_at: '2025-09-01T15:40:26Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://github.com/multiomicsKP/drug_approvals_kp:
@@ -504,7 +504,7 @@ https://glyconnect.expasy.org/downloads/compositions/:
   skip_reason: html_page
   status_code: 200
 https://glyconnect.expasy.org/downloads/rdf/:
-  checked_at: '2025-08-28T18:21:18Z'
+  checked_at: '2025-09-01T15:39:15Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://go.drugbank.com/releases/latest:
@@ -528,35 +528,35 @@ https://kg-hub.berkeleybop.io/eco-kg/:
   skip_reason: html_page
   status_code: 200
 https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz:
-  checked_at: '2025-08-28T18:22:06Z'
+  checked_at: '2025-09-01T15:39:45Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://kghub.io/kg-covid-19/:
-  checked_at: '2025-08-28T18:22:00Z'
+  checked_at: '2025-09-01T15:39:42Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz:
-  checked_at: '2025-08-28T18:24:56Z'
+  checked_at: '2025-09-01T15:40:26Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_MySQL_database.html:
-  checked_at: '2025-08-28T18:21:56Z'
+  checked_at: '2025-09-01T15:39:32Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv:
-  checked_at: '2025-08-28T18:21:57Z'
+  checked_at: '2025-09-01T15:39:34Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/ENTITY.csv:
-  checked_at: '2025-08-28T18:21:58Z'
+  checked_at: '2025-09-01T15:39:35Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/PREDICATION.csv:
-  checked_at: '2025-08-28T18:21:58Z'
+  checked_at: '2025-09-01T15:39:38Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv:
-  checked_at: '2025-08-28T18:21:59Z'
+  checked_at: '2025-09-01T15:39:42Z'
   error: HTTP 403 error when accessing file
   status_code: 403
 https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemRep_download.html:
@@ -565,79 +565,79 @@ https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemRep_download.html:
   skip_reason: html_page
   status_code: 200
 https://loinc.org/download/loinc-complete/:
-  checked_at: '2025-08-28T18:24:55Z'
+  checked_at: '2025-09-01T15:40:25Z'
   error: HTTP 503 error when accessing file
   status_code: 503
 https://loinc.org/downloads/archive/:
-  checked_at: '2025-08-28T18:24:55Z'
+  checked_at: '2025-09-01T15:40:25Z'
   error: HTTP 503 error when accessing file
   status_code: 503
 https://loinc.org/principles/:
-  checked_at: '2025-08-28T18:24:56Z'
+  checked_at: '2025-09-01T15:40:25Z'
   error: HTTP 503 error when accessing file
   status_code: 503
 https://mips.helmholtz-muenchen.de/corum/download/allComplexes.txt.zip:
-  checked_at: '2025-08-28T18:23:07Z'
+  checked_at: '2025-09-01T15:40:19Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'',
     port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip
     (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
     certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
 https://mips.helmholtz-muenchen.de/corum/download/coreComplexes.txt.zip:
-  checked_at: '2025-08-28T18:23:08Z'
+  checked_at: '2025-09-01T15:40:18Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'',
     port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip
     (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
     certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
 https://mips.helmholtz-muenchen.de/corum/download/mitab.zip:
-  checked_at: '2025-08-28T18:23:09Z'
+  checked_at: '2025-09-01T15:40:19Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'',
     port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by
     SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
     verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
 https://mips.helmholtz-muenchen.de/corum/download/psi.zip:
-  checked_at: '2025-08-28T18:23:08Z'
+  checked_at: '2025-09-01T15:40:19Z'
   error: 'Error connecting to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'',
     port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1000)'')))'
 https://omabrowser.org/oma/current/OMA.ttl.gz:
-  checked_at: '2025-08-28T18:23:00Z'
+  checked_at: '2025-09-01T15:40:17Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/OmaGroups.orthoxml:
-  checked_at: '2025-08-28T18:22:23Z'
+  checked_at: '2025-09-01T15:39:59Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/OmaGroups.txt.gz:
-  checked_at: '2025-08-28T18:22:18Z'
+  checked_at: '2025-09-01T15:39:53Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/OmaHOGs.orthoxml:
-  checked_at: '2025-08-28T18:22:30Z'
+  checked_at: '2025-09-01T15:40:00Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/OmaServer.h5:
-  checked_at: '2025-08-28T18:22:53Z'
+  checked_at: '2025-09-01T15:40:12Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/OrthologousPairs.txt.gz:
-  checked_at: '2025-08-28T18:22:34Z'
+  checked_at: '2025-09-01T15:40:02Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/oma-eukaryotes.cdna.fa.gz:
-  checked_at: '2025-08-28T18:22:44Z'
+  checked_at: '2025-09-01T15:40:07Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/oma-prokaryotes.cdna.fa.gz:
-  checked_at: '2025-08-28T18:22:49Z'
+  checked_at: '2025-09-01T15:40:09Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/oma-proteins.fa.gz:
-  checked_at: '2025-08-28T18:22:39Z'
+  checked_at: '2025-09-01T15:40:03Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://omabrowser.org/oma/current/oma-uniprot.txt.gz:
-  checked_at: '2025-08-28T18:23:05Z'
+  checked_at: '2025-09-01T15:40:18Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://portal.hubmapconsortium.org/:
@@ -661,7 +661,7 @@ https://search.clinicalgenome.org/kb/gene-validity:
   skip_reason: html_page
   status_code: 200
 https://search.clinicalgenome.org/kb/variant-pathogenicity/all:
-  checked_at: '2025-08-26T18:14:10Z'
+  checked_at: '2025-08-31T19:57:25Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
@@ -681,28 +681,28 @@ https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/329f8c92051c18d4/:
   skip_reason: html_page
   status_code: 200
 https://stars.renci.org/var/plater/bl-3.1.2/Biolink_Automat/latest/kgx_files:
-  checked_at: '2025-08-28T18:21:36Z'
+  checked_at: '2025-09-01T14:50:36Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://stars.renci.org/var/plater/bl-3.1.2/CTD_Automat/latest/kgx_files:
-  checked_at: '2025-08-28T18:21:42Z'
+  checked_at: '2025-09-01T14:50:40Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files:
-  checked_at: '2025-08-28T18:21:29Z'
+  checked_at: '2025-09-01T14:50:33Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://stars.renci.org/var/plater/bl-3.1.2/RobokopKG/latest/kgx_files:
-  checked_at: '2025-08-28T18:22:03Z'
+  checked_at: '2025-09-01T14:51:03Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/ad8cb4d0a7ccc923/kgx_files/:
-  checked_at: '2025-08-26T18:16:26Z'
+  checked_at: '2025-08-31T19:48:23Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
 https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/latest/kgx_files:
-  checked_at: '2025-08-28T18:22:04Z'
+  checked_at: '2025-09-01T14:51:04Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://stars.renci.org/var/plater/bl-4.2.1/CTD_Automat/f92c663160ec5e36/:
@@ -746,12 +746,12 @@ https://stars.renci.org/var/plater/bl-4.2.1/Hetio_Automat/85a5f53e63150e1e/:
   skip_reason: html_page
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/HumanGOA_Automat/06f107a4e9e8e547/:
-  checked_at: '2025-08-26T18:16:26Z'
+  checked_at: '2025-08-31T19:58:59Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/IntAct_Automat/e5b936f966a02c2c/:
-  checked_at: '2025-08-26T18:14:04Z'
+  checked_at: '2025-08-31T19:57:20Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
@@ -776,12 +776,12 @@ https://stars.renci.org/var/plater/bl-4.2.1/STRING-DB_Automat/4ca5a0ce557e2c18/:
   skip_reason: html_page
   status_code: 200
 https://stars.renci.org/var/plater/bl-4.2.1/UbergraphRedundant_Automat/e6b3204fd3a04413/:
-  checked_at: '2025-08-26T18:14:31Z'
+  checked_at: '2025-08-31T19:57:35Z'
   content_type: text/html
   skip_reason: html_page
   status_code: 200
 https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz:
-  checked_at: '2025-08-28T18:22:05Z'
+  checked_at: '2025-09-01T15:39:45Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://ubkg-downloads.xconsortia.org/:
@@ -790,216 +790,216 @@ https://ubkg-downloads.xconsortia.org/:
   skip_reason: html_page
   status_code: 200
 https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=:
-  checked_at: '2025-08-28T18:21:42Z'
+  checked_at: '2025-09-01T15:39:26Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json:
-  checked_at: '2025-08-28T18:20:59Z'
+  checked_at: '2025-09-01T15:39:00Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo:
-  checked_at: '2025-08-28T18:20:58Z'
+  checked_at: '2025-09-01T15:38:59Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl:
-  checked_at: '2025-08-28T18:20:58Z'
+  checked_at: '2025-09-01T15:39:00Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo:
-  checked_at: '2025-08-28T18:20:59Z'
+  checked_at: '2025-09-01T15:39:01Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/hgnc/hgnc.json:
-  checked_at: '2025-08-28T18:21:26Z'
+  checked_at: '2025-09-01T15:39:19Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl:
-  checked_at: '2025-08-28T18:21:26Z'
+  checked_at: '2025-09-01T15:39:18Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/itis/itis.json:
-  checked_at: '2025-08-28T18:21:01Z'
+  checked_at: '2025-09-01T15:39:02Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/itis/itis.owl:
-  checked_at: '2025-08-28T18:21:01Z'
+  checked_at: '2025-09-01T15:39:02Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/mesh/mesh.json:
-  checked_at: '2025-08-28T18:21:03Z'
+  checked_at: '2025-09-01T15:39:03Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/mesh/mesh.owl:
-  checked_at: '2025-08-28T18:21:02Z'
+  checked_at: '2025-09-01T15:39:03Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/mgi/mgi.json:
-  checked_at: '2025-08-28T18:21:05Z'
+  checked_at: '2025-09-01T15:39:04Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/mgi/mgi.obo:
-  checked_at: '2025-08-28T18:21:04Z'
+  checked_at: '2025-09-01T15:39:03Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/mgi/mgi.owl:
-  checked_at: '2025-08-28T18:21:05Z'
+  checked_at: '2025-09-01T15:39:03Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/msigdb/msigdb.json:
-  checked_at: '2025-08-28T18:21:06Z'
+  checked_at: '2025-09-01T15:39:05Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo:
-  checked_at: '2025-08-28T18:21:05Z'
+  checked_at: '2025-09-01T15:39:04Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl:
-  checked_at: '2025-08-28T18:21:06Z'
+  checked_at: '2025-09-01T15:39:04Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json:
-  checked_at: '2025-08-28T18:21:07Z'
+  checked_at: '2025-09-01T15:39:06Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo:
-  checked_at: '2025-08-28T18:21:06Z'
+  checked_at: '2025-09-01T15:39:05Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl:
-  checked_at: '2025-08-28T18:21:07Z'
+  checked_at: '2025-09-01T15:39:05Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/pathbank/pathbank.json:
-  checked_at: '2025-08-28T18:21:08Z'
+  checked_at: '2025-09-01T15:39:07Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo:
-  checked_at: '2025-08-28T18:21:07Z'
+  checked_at: '2025-09-01T15:39:06Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl:
-  checked_at: '2025-08-28T18:21:08Z'
+  checked_at: '2025-09-01T15:39:06Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/reactome/reactome.json:
-  checked_at: '2025-08-28T18:21:09Z'
+  checked_at: '2025-09-01T15:39:07Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/reactome/reactome.owl:
-  checked_at: '2025-08-28T18:21:09Z'
+  checked_at: '2025-09-01T15:39:07Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/rhea/rhea.json:
-  checked_at: '2025-08-28T18:21:29Z'
+  checked_at: '2025-09-01T15:39:20Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/rhea/rhea.owl:
-  checked_at: '2025-08-28T18:21:29Z'
+  checked_at: '2025-09-01T15:39:19Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/ror/ror.json:
-  checked_at: '2025-08-28T18:21:11Z'
+  checked_at: '2025-09-01T15:39:09Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/ror/ror.owl:
-  checked_at: '2025-08-28T18:21:10Z'
+  checked_at: '2025-09-01T15:39:08Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/slm/slm.json:
-  checked_at: '2025-08-28T18:21:12Z'
+  checked_at: '2025-09-01T15:39:10Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/slm/slm.obo:
-  checked_at: '2025-08-28T18:21:11Z'
+  checked_at: '2025-09-01T15:39:09Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/slm/slm.owl:
-  checked_at: '2025-08-28T18:21:11Z'
+  checked_at: '2025-09-01T15:39:09Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/uniprot/uniprot.json:
-  checked_at: '2025-08-28T18:21:13Z'
+  checked_at: '2025-09-01T15:39:11Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo:
-  checked_at: '2025-08-28T18:21:12Z'
+  checked_at: '2025-09-01T15:39:10Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl:
-  checked_at: '2025-08-28T18:21:13Z'
+  checked_at: '2025-09-01T15:39:10Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/zfin/zfin.json:
-  checked_at: '2025-08-28T18:24:54Z'
+  checked_at: '2025-09-01T15:40:24Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/biopragmatics/resources/zfin/zfin.owl:
-  checked_at: '2025-08-28T18:24:53Z'
+  checked_at: '2025-09-01T15:40:24Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://w3id.org/goldterms/goldterms.owl:
-  checked_at: '2025-08-28T18:24:56Z'
+  checked_at: '2025-09-01T15:40:25Z'
   error: HTTP 404 error when accessing file
   status_code: 404
 https://www.bgee.org/download/data-dumps/current/affymetrix/:
-  checked_at: '2025-08-28T18:23:48Z'
-  error: Timeout connecting to URL
+  checked_at: '2025-09-01T15:40:22Z'
+  error: HTTP 404 error when accessing file
   status_code: 404
 https://www.bgee.org/download/data-dumps/current/est/:
-  checked_at: '2025-08-28T18:24:17Z'
-  error: Timeout connecting to URL
+  checked_at: '2025-09-01T15:40:23Z'
+  error: HTTP 404 error when accessing file
   status_code: 404
 https://www.bgee.org/download/data-dumps/current/expr_calls/:
-  checked_at: '2025-08-28T18:23:19Z'
-  error: Timeout connecting to URL
+  checked_at: '2025-09-01T15:40:21Z'
+  error: HTTP 404 error when accessing file
   status_code: 404
 https://www.bgee.org/download/data-dumps/current/homology/:
-  checked_at: '2025-08-28T18:24:43Z'
-  error: Timeout connecting to URL
+  checked_at: '2025-09-01T15:40:23Z'
+  error: HTTP 404 error when accessing file
   status_code: 404
 https://www.bgee.org/download/data-dumps/current/in_situ/:
-  checked_at: '2025-08-28T18:23:59Z'
-  error: Timeout connecting to URL
+  checked_at: '2025-09-01T15:40:22Z'
+  error: HTTP 404 error when accessing file
   status_code: 404
 https://www.bgee.org/download/data-dumps/current/rdf/:
-  checked_at: '2025-08-28T18:24:52Z'
-  error: Timeout connecting to URL
+  checked_at: '2025-09-01T15:40:24Z'
+  error: HTTP 404 error when accessing file
   status_code: 404
 https://www.bgee.org/download/data-dumps/current/rna_seq/:
-  checked_at: '2025-08-28T18:23:36Z'
-  error: Timeout connecting to URL
+  checked_at: '2025-09-01T15:40:21Z'
+  error: HTTP 404 error when accessing file
   status_code: 404
 https://www.bgee.org/download/data-dumps/current/sc_rnaseq/:
-  checked_at: '2025-08-28T18:24:26Z'
-  error: Timeout connecting to URL
+  checked_at: '2025-09-01T15:40:23Z'
+  error: HTTP 404 error when accessing file
   status_code: 404
 ? https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDBTargetSequences.fasta
-: checked_at: '2025-08-26T18:14:24Z'
+: checked_at: '2025-08-31T19:57:34Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_CHEBI_ID.txt:
-  checked_at: '2025-08-26T18:14:25Z'
+  checked_at: '2025-08-31T19:57:35Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_CID.txt:
-  checked_at: '2025-08-26T18:14:24Z'
+  checked_at: '2025-08-31T19:57:34Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_DrugBankID.txt:
-  checked_at: '2025-08-26T18:14:25Z'
+  checked_at: '2025-08-31T19:57:35Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_SID.txt:
-  checked_at: '2025-08-26T18:14:24Z'
+  checked_at: '2025-08-31T19:57:35Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_UniProt.txt:
-  checked_at: '2025-08-26T18:14:25Z'
+  checked_at: '2025-08-31T19:57:35Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
@@ -1014,8 +1014,9 @@ https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_fi
   skip_reason: html_page
   status_code: 200
 ? https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_All_3D_202507_sdf.zip
-: checked_at: '2025-08-26T18:14:18Z'
+: checked_at: '2025-08-31T19:57:31Z'
   content_type: text/html;charset=UTF-8
+  error: Timeout connecting to URL
   skip_reason: html_page
   status_code: 200
 ? https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_BindingDB_Articles_202507_tsv.zip
@@ -1039,32 +1040,34 @@ https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_fi
   skip_reason: html_page
   status_code: 200
 ? https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_ChEMBL_2D_202507_sdf.zip
-: checked_at: '2025-08-26T18:14:20Z'
+: checked_at: '2025-08-31T19:57:31Z'
   content_type: text/html;charset=UTF-8
+  error: Timeout connecting to URL
   skip_reason: html_page
   status_code: 200
 ? https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_ChEMBL_3D_202507_sdf.zip
-: checked_at: '2025-08-26T18:14:20Z'
+: checked_at: '2025-08-31T19:57:32Z'
   content_type: text/html;charset=UTF-8
+  error: Timeout connecting to URL
   skip_reason: html_page
   status_code: 200
 ? https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Covid-19_202507_tsv.zip
-: checked_at: '2025-08-26T18:14:23Z'
+: checked_at: '2025-08-31T19:57:34Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 ? https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Covid-19_2D_202507_sdf.zip
-: checked_at: '2025-08-26T18:14:22Z'
+: checked_at: '2025-08-31T19:57:33Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 ? https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Covid-19_3D_202507_sdf.zip
-: checked_at: '2025-08-26T18:14:23Z'
+: checked_at: '2025-08-31T19:57:33Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 ? https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Patents_202507_tsv.zip
-: checked_at: '2025-08-26T18:14:22Z'
+: checked_at: '2025-08-31T19:57:32Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
@@ -1074,22 +1077,22 @@ https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_fi
   skip_reason: html_page
   status_code: 200
 ? https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_Patents_3D_202507_sdf.zip
-: checked_at: '2025-08-26T18:14:22Z'
+: checked_at: '2025-08-31T19:57:32Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 ? https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_PubChem_202507_tsv.zip
-: checked_at: '2025-08-26T18:14:22Z'
+: checked_at: '2025-08-31T19:57:33Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 ? https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_PubChem_2D_202507_sdf.zip
-: checked_at: '2025-08-26T18:14:23Z'
+: checked_at: '2025-08-31T19:57:32Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
 ? https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/downloads/BindingDB_PubChem_3D_202507_sdf.zip
-: checked_at: '2025-08-26T18:14:23Z'
+: checked_at: '2025-08-31T19:57:33Z'
   content_type: text/html;charset=UTF-8
   skip_reason: html_page
   status_code: 200
@@ -1134,12 +1137,12 @@ https://www.disgenet.com/:
   skip_reason: html_page
   status_code: 200
 https://www.ensembl.org/Multi/Tools/Blast:
-  checked_at: '2025-08-26T18:17:27Z'
+  checked_at: '2025-08-31T19:59:45Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
 https://www.ensembl.org/info/docs/tools/vep/:
-  checked_at: '2025-08-26T18:17:27Z'
+  checked_at: '2025-08-31T19:59:44Z'
   content_type: text/html; charset=utf-8
   skip_reason: html_page
   status_code: 200
@@ -1159,37 +1162,37 @@ https://www.genome.jp/kegg/xml/:
   skip_reason: html_page
   status_code: 200
 https://www.guidetopharmacology.org/DATA/all_ligands.sdf:
-  checked_at: '2025-08-28T18:22:10Z'
+  checked_at: '2025-09-01T15:39:47Z'
   content_type: application/vnd.Kinar
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv:
-  checked_at: '2025-08-28T18:22:09Z'
+  checked_at: '2025-09-01T15:39:47Z'
   content_type: text/csv
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/interactions.csv:
-  checked_at: '2025-08-28T18:22:09Z'
+  checked_at: '2025-09-01T15:39:47Z'
   content_type: text/csv
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/ligands.csv:
-  checked_at: '2025-08-28T18:22:08Z'
+  checked_at: '2025-09-01T15:39:46Z'
   content_type: text/csv
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip:
-  checked_at: '2025-08-28T18:22:11Z'
+  checked_at: '2025-09-01T15:39:48Z'
   content_type: application/zip
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3:
-  checked_at: '2025-08-28T18:22:10Z'
+  checked_at: '2025-09-01T15:39:47Z'
   content_type: text/n3
   error: No Content-Length header found
   status_code: 200
 https://www.guidetopharmacology.org/DATA/targets_and_families.csv:
-  checked_at: '2025-08-28T18:22:08Z'
+  checked_at: '2025-09-01T15:39:46Z'
   content_type: text/csv
   error: No Content-Length header found
   status_code: 200
@@ -1269,17 +1272,17 @@ https://www.kegg.jp/kegg/syntax/:
   skip_reason: html_page
   status_code: 200
 https://www.metanetx.org/cgi-bin/mnxget/mnxref/chem_xref.tsv:
-  checked_at: '2025-08-28T18:21:38Z'
+  checked_at: '2025-09-01T15:39:24Z'
   content_type: application/octet-stream
   error: No Content-Length header found
   status_code: 200
 https://www.metanetx.org/cgi-bin/mnxget/mnxref/reac_xref.tsv:
-  checked_at: '2025-08-28T18:21:40Z'
+  checked_at: '2025-09-01T15:39:25Z'
   content_type: application/octet-stream
   error: No Content-Length header found
   status_code: 200
 https://www.orphacode.org/pack-nomenclature/:
-  checked_at: '2025-08-26T18:14:13Z'
+  checked_at: '2025-08-31T19:57:28Z'
   content_type: text/html; charset=UTF-8
   skip_reason: html_page
   status_code: 200
@@ -1289,12 +1292,12 @@ https://www.orphadata.com/expert-resources/:
   skip_reason: html_page
   status_code: 200
 https://www.pombase.org/data/names_and_identifiers/gene_IDs_names.tsv:
-  checked_at: '2025-08-28T18:22:01Z'
+  checked_at: '2025-09-01T15:39:43Z'
   content_type: text/tab-separated-values
   error: No Content-Length header found
   status_code: 200
 https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_products.tsv:
-  checked_at: '2025-08-28T18:22:02Z'
+  checked_at: '2025-09-01T15:39:43Z'
   content_type: text/tab-separated-values
   error: No Content-Length header found
   status_code: 200
@@ -1354,17 +1357,17 @@ https://zenodo.org/records/3459420:
   skip_reason: html_page
   status_code: 200
 https://zenodo.org/records/8117748/files/test.txt:
-  checked_at: '2025-08-28T18:23:09Z'
+  checked_at: '2025-09-01T15:40:20Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
 https://zenodo.org/records/8117748/files/train.txt:
-  checked_at: '2025-08-28T18:23:09Z'
+  checked_at: '2025-09-01T15:40:20Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200
 https://zenodo.org/records/8117748/files/valid.txt:
-  checked_at: '2025-08-28T18:23:10Z'
+  checked_at: '2025-09-01T15:40:21Z'
   content_type: text/plain; charset=utf-8
   error: No Content-Length header found
   status_code: 200

@@ -238,6 +238,7 @@ products:
   - mi
   - ms
   - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 repository: https://github.com/BRENDA-Enzymes/BTO
 ---
 # BRENDA Tissue Ontology (BTO)

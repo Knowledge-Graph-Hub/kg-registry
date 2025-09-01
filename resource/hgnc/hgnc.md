@@ -49,7 +49,7 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
@@ -67,7 +67,7 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
@@ -75,7 +75,7 @@ products:
   description: hgnc SSSOM
   id: obo-db-ingest.hgnc.sssom.tsv
   license:
-    id: https://creativecommons.org/publicdomain/zero/1.0/
+    id: https://creativecommons.org.publicdomain/zero/1.0/
     label: CC0-1.0
   name: hgnc SSSOM
   original_source:
@@ -146,7 +146,7 @@ products:
   secondary_source:
   - scibite
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
@@ -335,6 +335,7 @@ products:
   - mi
   - ms
   - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 - category: GraphProduct
   description: HGNC Automat
   format: kgx-jsonl

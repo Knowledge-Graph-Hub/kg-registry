@@ -38,17 +38,13 @@ products:
   id: ensembl.vep
   name: Variant Effect Predictor (VEP)
   product_url: https://www.ensembl.org/info/docs/tools/vep/
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
-    to URL'
+  warnings: []
 - category: ProcessProduct
   description: Tool to search Ensembl genomes for DNA or protein sequences.
   id: ensembl.blast
   name: BLAST/BLAT
   product_url: https://www.ensembl.org/Multi/Tools/Blast
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-23: Timeout connecting
-    to URL'
+  warnings: []
 - category: ProgrammingInterface
   description: Programmatic access to all Ensembl data using Perl scripts.
   id: ensembl.api.perl
@@ -84,10 +80,11 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: GraphProduct
   description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
@@ -111,10 +108,11 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
@@ -140,9 +138,10 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_url: https://arax.ncats.io/
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: MappingProduct
   compression: gzip
   description: Gene to Ensembl mapping data providing cross-references between NCBI
@@ -211,8 +210,8 @@ products:
   - hgnc
   product_file_size: 974440
   product_url: https://www.omim.org/static/omim/data/mim2gene.txt
-- description: RNA-KG as a Neo4j Dump
-  dump_format: neo4j
+- category: GraphProduct
+  description: RNA-KG as a Neo4j Dump
   format: neo4j
   id: rna-kg.kg.neo4j
   name: RNA-KG Neo4j Dump
@@ -238,7 +237,8 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
   secondary_source:
   - rna-kg
-- description: RNA-KG Nodes in CSV format
+- category: GraphProduct
+  description: RNA-KG Nodes in CSV format
   format: csv
   id: rna-kg.kg.nodes
   name: RNA-KG Nodes
@@ -264,7 +264,8 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
   secondary_source:
   - rna-kg
-- description: RNA-KG Edges in CSV format
+- category: GraphProduct
+  description: RNA-KG Edges in CSV format
   format: csv
   id: rna-kg.kg.edges
   name: RNA-KG Edges

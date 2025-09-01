@@ -142,11 +142,11 @@ products:
   secondary_source:
   - oma
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
+  - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-14: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
@@ -343,10 +343,11 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: GraphProduct
   description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
@@ -370,10 +371,11 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
@@ -399,9 +401,10 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_url: https://arax.ncats.io/
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: GraphProduct
   description: DisGeNET data, including gene to disease associations and variant to
     disease associations (requires registration and subscription).
@@ -483,12 +486,13 @@ products:
   - mi
   - ms
   - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 - category: GraphProduct
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph

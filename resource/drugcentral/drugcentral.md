@@ -24,14 +24,9 @@ products:
   name: drugcentral_automat
   original_source:
   - drugcentral
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/DrugCentral_Automat/latest/kgx_files
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/DrugCentral_Automat/dec0617490b49c7a/
   secondary_source:
   - automat
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   compression: gzip
   description: PostgreSQL (v14.5) database dump of all information in DrugCentral.
@@ -67,6 +62,24 @@ products:
   - drugbank
   - sider
   - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
   secondary_source:
   - spoke
 - category: GraphProduct
@@ -92,10 +105,11 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: GraphProduct
   description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
@@ -119,10 +133,11 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
@@ -148,9 +163,10 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_url: https://arax.ncats.io/
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
@@ -212,9 +228,7 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2025-08-31: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -231,9 +245,7 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2025-08-31: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -251,9 +263,7 @@ products:
   secondary_source:
   - mind
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2025-08-31: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -296,7 +306,7 @@ products:
   - clinicaltrialsgov
   product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
     header found'

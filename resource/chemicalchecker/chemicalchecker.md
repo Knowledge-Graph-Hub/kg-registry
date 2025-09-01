@@ -83,7 +83,6 @@ products:
   - omnipath
   - string
   - bto
-  product_file_size: 5826
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   secondary_source:
   - bioteque

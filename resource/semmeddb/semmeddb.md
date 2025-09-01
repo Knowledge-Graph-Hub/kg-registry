@@ -36,7 +36,7 @@ products:
   name: SemMedDB MySQL Database
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_MySQL_database.html
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 403 error
     when accessing file'
@@ -48,7 +48,7 @@ products:
   name: SemMedDB Citations CSV
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 403 error
     when accessing file'
@@ -60,7 +60,7 @@ products:
   name: SemMedDB Entity CSV
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/ENTITY.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 403 error
     when accessing file'
@@ -72,7 +72,7 @@ products:
   name: SemMedDB Predication CSV
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/PREDICATION.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 403 error
     when accessing file'
@@ -83,7 +83,7 @@ products:
   name: SemMedDB Sentence CSV
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 403 error
     when accessing file'
@@ -120,7 +120,7 @@ products:
   product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: GraphProduct
   description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
@@ -148,7 +148,7 @@ products:
   product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
@@ -177,7 +177,7 @@ products:
   - semmeddb
   product_url: https://arax.ncats.io/
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 publications:
 - authors:
   - Kilicoglu H

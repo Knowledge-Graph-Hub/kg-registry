@@ -49,7 +49,7 @@ products:
   name: GtoPdb Targets and Families
   product_url: https://www.guidetopharmacology.org/DATA/targets_and_families.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
     when accessing file'
@@ -63,7 +63,7 @@ products:
   name: GtoPdb Ligands Dataset
   product_url: https://www.guidetopharmacology.org/DATA/ligands.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
     when accessing file'
@@ -76,7 +76,7 @@ products:
   name: GtoPdb Interactions Dataset
   product_url: https://www.guidetopharmacology.org/DATA/interactions.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
     when accessing file'
@@ -89,7 +89,7 @@ products:
   name: GtoPdb Approved Drugs Dataset
   product_url: https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
     when accessing file'
@@ -103,7 +103,7 @@ products:
   name: GtoPdb Ligand SDF File
   product_url: https://www.guidetopharmacology.org/DATA/all_ligands.sdf
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
     when accessing file'
@@ -117,7 +117,7 @@ products:
   name: GtoPdb RDF Dataset
   product_url: https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
     when accessing file'
@@ -130,7 +130,7 @@ products:
   name: GtoPdb Full Database
   product_url: https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
     when accessing file'
@@ -171,10 +171,11 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: GraphProduct
   description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
@@ -198,10 +199,11 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
@@ -227,9 +229,10 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_url: https://arax.ncats.io/
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: GraphProduct
   description: GtoPdb Automat
   format: kgx-jsonl

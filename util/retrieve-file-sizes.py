@@ -3,10 +3,13 @@
 import argparse
 import pathlib
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional, Tuple
 
-import frontmatter
+try:
+    import frontmatter  # type: ignore
+except ImportError:  # pragma: no cover
+    frontmatter = None
 import requests
 import yaml
 
@@ -116,7 +119,7 @@ def get_file_size_from_header(url: str) -> Tuple[Optional[int], Optional[str], D
         # Check if request was successful
         info: Dict[str, Any] = {
             'status_code': response.status_code,
-            'checked_at': datetime.utcnow().isoformat(timespec='seconds') + 'Z'
+            'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')
         }
 
         if response.status_code != 200:
@@ -162,15 +165,15 @@ def get_file_size_from_header(url: str) -> Tuple[Optional[int], Optional[str], D
     except requests.exceptions.Timeout:
         error_msg = "Timeout connecting to URL"
         print(f"  ⚠️  {error_msg}")
-        return None, error_msg, {'error': error_msg, 'skip_reason': None, 'checked_at': datetime.utcnow().isoformat(timespec='seconds') + 'Z'}
+        return None, error_msg, {'error': error_msg, 'skip_reason': None, 'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')}
     except requests.exceptions.RequestException as e:
         error_msg = f"Error connecting to URL: {str(e)}"
         print(f"  ⚠️  {error_msg}")
-        return None, error_msg, {'error': error_msg, 'skip_reason': None, 'checked_at': datetime.utcnow().isoformat(timespec='seconds') + 'Z'}
+        return None, error_msg, {'error': error_msg, 'skip_reason': None, 'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')}
     except Exception as e:
         error_msg = f"Unexpected error: {str(e)}"
         print(f"  ⚠️  {error_msg}")
-        return None, error_msg, {'error': error_msg, 'skip_reason': None, 'checked_at': datetime.utcnow().isoformat(timespec='seconds') + 'Z'}
+        return None, error_msg, {'error': error_msg, 'skip_reason': None, 'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')}
 
 
 def format_file_size(size_bytes: int) -> str:
@@ -212,6 +215,25 @@ def should_skip_product(product: Dict[str, Any]) -> bool:
     return False
 
 
+def _clean_stale_retrieval_warnings(product: Dict[str, Any]) -> int:
+    """Remove stale retrieval warnings (those that match the retrieval failure pattern).
+
+    Returns number of warnings removed. Adds _replace_warnings flag if any removed.
+    """
+    if 'warnings' not in product or not isinstance(product['warnings'], list):
+        return 0
+    import re
+    before = len(product['warnings'])
+    product['warnings'] = [
+        w for w in product['warnings']
+        if not re.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(w))
+    ]
+    removed = before - len(product['warnings'])
+    if removed:
+        product['_replace_warnings'] = True
+    return removed
+
+
 def write_file_sizes_to_resource_files(updated_products: Dict[str, List[Dict[str, Any]]]) -> None:
     """
     Write updated file sizes back to the original resource files.
@@ -225,8 +247,23 @@ def write_file_sizes_to_resource_files(updated_products: Dict[str, List[Dict[str
 
     print(f"\n💾 Writing file sizes back to {len(updated_products)} resource files...")
 
+    # Extract globally cleaned product IDs if present (attribute hack)
+    cleaned_ids = []
+    try:  # attribute on dict from update step
+        # type: ignore[attr-defined]
+        cleaned_ids = getattr(updated_products, '_cleaned_product_ids')
+    except Exception:
+        cleaned_ids = []
+
     for resource_id, products in updated_products.items():
+        # Skip pseudo attribute iteration if any (shouldn't appear now)
+        if not isinstance(products, list):
+            continue
         resource_file = f"resource/{resource_id}/{resource_id}.md"
+
+        if frontmatter is None:
+            print("  ⚠️  frontmatter package not installed; cannot modify resource files. Run 'pip install python-frontmatter'.")
+            continue
 
         try:
             # Check if the resource file exists
@@ -260,21 +297,53 @@ def write_file_sizes_to_resource_files(updated_products: Dict[str, List[Dict[str
                                     product['product_file_size'] = updated_product['product_file_size']
                                     updated_this_product = True
 
-                                # Update warnings if there are new ones
-                                if 'warnings' in updated_product:
-                                    if 'warnings' not in product:
-                                        product['warnings'] = []
-                                    elif not isinstance(product['warnings'], list):
-                                        product['warnings'] = []
-
-                                    # Add new warnings that aren't already present
-                                    for warning in updated_product['warnings']:
-                                        if warning not in product['warnings']:
-                                            product['warnings'].append(warning)
-                                            updated_this_product = True
+                                # Replace warnings entirely if flag present
+                                if updated_product.get('_replace_warnings') is True:
+                                    new_warnings = updated_product.get('warnings', [])
+                                    # Only act if different
+                                    existing_list = product.get('warnings', []) if isinstance(
+                                        product.get('warnings'), list) else []
+                                    if existing_list != new_warnings:
+                                        if new_warnings:
+                                            product['warnings'] = list(new_warnings)
+                                        elif 'warnings' in product:
+                                            # Remove key by setting to empty list (schema expects list) or popping
+                                            product['warnings'] = []
+                                        updated_this_product = True
+                                else:
+                                    # Merge warnings (additive) if no replace flag
+                                    if 'warnings' in updated_product:
+                                        if 'warnings' not in product:
+                                            product['warnings'] = []
+                                        elif not isinstance(product['warnings'], list):
+                                            product['warnings'] = []
+                                        # Before merging, drop stale retrieval warnings still lingering
+                                        import re as _re2
+                                        product['warnings'] = [
+                                            w for w in product['warnings']
+                                            if not _re2.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(w))
+                                        ]
+                                        for warning in updated_product['warnings']:
+                                            if warning not in product['warnings']:
+                                                product['warnings'].append(warning)
+                                                updated_this_product = True
 
                                 if updated_this_product:
                                     updated_count += 1
+
+                        # Global propagation: if this product id in cleaned_ids, ensure stale retrieval warnings are removed
+                        if product.get('id') in cleaned_ids:
+                            import re as _re_glob
+                            if isinstance(product.get('warnings'), list):
+                                before_g = len(product['warnings'])
+                                product['warnings'] = [
+                                    w for w in product['warnings']
+                                    if not _re_glob.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(w))
+                                ]
+                                after_g = len(product['warnings'])
+                                if after_g < before_g:
+                                    updated_count += 1
+                                    product['_replace_warnings'] = True
 
             if updated_count > 0:
                 # Write back to file
@@ -292,7 +361,7 @@ def write_file_sizes_to_resource_files(updated_products: Dict[str, List[Dict[str
             print(f"  ❌ Error updating {resource_file}: {str(e)}")
 
 
-def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None, *, cache: Dict[str, Any], ignore_cache: bool = False) -> Tuple[Dict[str, Any], Dict[str, List[Dict[str, Any]]]]:
+def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None, *, cache: Dict[str, Any], ignore_cache: bool = False, clean_warnings_only: bool = False) -> Tuple[Dict[str, Any], Dict[str, List[Dict[str, Any]]]]:
     """
     Update product_file_size for all products in the registry data.
 
@@ -314,8 +383,35 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
     cache_skipped = 0
     processed_products = 0
 
+    # Pre-scan to determine products that already have at least one clean occurrence (no retrieval warning)
+    product_warning_presence: Dict[str, Dict[str, bool]] = {}
+    for resource in data.get('resources', []):
+        for product in resource.get('products', []) if isinstance(resource.get('products'), list) else []:
+            pid = product.get('id')
+            if not pid:
+                continue
+            if pid not in product_warning_presence:
+                product_warning_presence[pid] = {'has_warning': False, 'has_clean': False}
+            # Detect retrieval warning pattern
+            has_retrieval = False
+            if isinstance(product.get('warnings'), list):
+                import re as _re_scan
+                for _w in product['warnings']:
+                    if _re_scan.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(_w)):
+                        has_retrieval = True
+                        break
+            if has_retrieval:
+                product_warning_presence[pid]['has_warning'] = True
+            else:
+                product_warning_presence[pid]['has_clean'] = True
+
+    # Any product with at least one clean occurrence is slated for global cleanup
+    globally_clean_products = {pid for pid, flags in product_warning_presence.items(
+    ) if flags['has_clean'] and flags['has_warning']}
+
     # Track updated products by resource ID for writing back to files
     updated_products_by_resource: Dict[str, List[Dict[str, Any]]] = {}
+    cleaned_product_ids: set[str] = set()
 
     for resource in data['resources']:
         if 'products' not in resource:
@@ -334,6 +430,14 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
                 break
 
             if should_skip_product(product):
+                # Even if we skip (e.g., already has size), we still want to clear stale retrieval warnings.
+                removed = _clean_stale_retrieval_warnings(product)
+                if removed:
+                    print(
+                        f"🧹 Cleared {removed} stale retrieval warning(s) for product {product.get('id')} (pre-existing size)")
+                    if resource_id not in updated_products_by_resource:
+                        updated_products_by_resource[resource_id] = []
+                    updated_products_by_resource[resource_id].append(product.copy())
                 skipped_products += 1
                 continue
 
@@ -342,12 +446,34 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
             url = product['product_url']
             should_skip_cache, cache_entry = cache_should_skip(
                 url, cache, ignore_cache=ignore_cache)
-            if should_skip_cache:
-                cache_skipped += 1
-                reason = cache_entry.get('skip_reason') if isinstance(
-                    cache_entry, dict) else 'cached'
-                print(f"⏭️  Skipping (cache): {url} (reason: {reason})")
+            if clean_warnings_only:
+                # In this mode we don't perform network calls; just clear stale warnings
+                removed = _clean_stale_retrieval_warnings(product)
+                if removed:
+                    print(
+                        f"🧹 Cleared {removed} stale retrieval warning(s) for product {product.get('id')} (clean-warnings-only mode)")
+                    if resource_id not in updated_products_by_resource:
+                        updated_products_by_resource[resource_id] = []
+                    updated_products_by_resource[resource_id].append(product.copy())
                 continue
+
+            if should_skip_cache:
+                # Determine if there is a stale retrieval warning that merits a re-check
+                has_retrieval_warning = False
+                if 'warnings' in product and isinstance(product['warnings'], list):
+                    import re as _re
+                    for _w in product['warnings']:
+                        if _re.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(_w)):
+                            has_retrieval_warning = True
+                            break
+                if has_retrieval_warning:
+                    print(f"🔁 Re-checking cached URL to clear potential stale warning: {url}")
+                else:
+                    cache_skipped += 1
+                    reason = cache_entry.get('skip_reason') if isinstance(
+                        cache_entry, dict) else 'cached'
+                    print(f"⏭️  Skipping (cache): {url} (reason: {reason})")
+                    continue
 
             # Try to get file size and any error information
             file_size, error_message, info = get_file_size_from_header(url)
@@ -360,15 +486,28 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
 
             if file_size is not None:
                 product['product_file_size'] = file_size
-                updated_products += 1
+                # Remove stale retrieval warnings if the URL now succeeds
+                if 'warnings' in product and isinstance(product['warnings'], list):
+                    import re
+                    before_cnt = len(product['warnings'])
+                    product['warnings'] = [
+                        w for w in product['warnings']
+                        if not re.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(w))
+                    ]
+                    after_cnt = len(product['warnings'])
+                    if after_cnt < before_cnt:
+                        print(
+                            f"  🔄 Cleared {before_cnt - after_cnt} stale retrieval warning(s) for product {product.get('id')}")
+                        product['_replace_warnings'] = True
+                        cleaned_product_ids.add(product.get('id'))
 
-                # Track this update for writing back to resource files
+                updated_products += 1
                 if resource_id not in updated_products_by_resource:
                     updated_products_by_resource[resource_id] = []
                 updated_products_by_resource[resource_id].append(product.copy())
             elif error_message is not None:
                 # Add warning with current date
-                current_date = datetime.now().strftime("%Y-%m-%d")
+                current_date = datetime.now(timezone.utc).date().isoformat()
                 warning_message = f"File was not able to be retrieved when checked on {current_date}: {error_message}"
 
                 # Ensure warnings list exists
@@ -388,8 +527,24 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
 
                 failed_products += 1
             else:
-                # This case is for HTML pages that we intentionally skip (no error)
-                failed_products += 1
+                # Accessible (HTTP 200) but no size (likely HTML/no content-length). Treat as success for warning clearing.
+                if 'warnings' in product and isinstance(product['warnings'], list):
+                    import re
+                    before_cnt = len(product['warnings'])
+                    product['warnings'] = [
+                        w for w in product['warnings']
+                        if not re.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(w))
+                    ]
+                    after_cnt = len(product['warnings'])
+                    if after_cnt < before_cnt:
+                        print(
+                            f"  🔄 Cleared {before_cnt - after_cnt} stale retrieval warning(s) for product {product.get('id')} (HTML/no-size)")
+                        product['_replace_warnings'] = True
+                        cleaned_product_ids.add(product.get('id'))
+                        if resource_id not in updated_products_by_resource:
+                            updated_products_by_resource[resource_id] = []
+                        updated_products_by_resource[resource_id].append(product.copy())
+                # Do not increment failed_products in this branch
 
         # Break out of resource loop if we hit the limit
         if limit is not None and processed_products >= limit:
@@ -403,6 +558,17 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
     print(f"   Skipped via cache: {cache_skipped}")
     print(f"   Failed: {failed_products}")
 
+    # Add globally clean products to cleaned_product_ids
+    cleaned_product_ids.update(globally_clean_products)
+
+    # Return tuple plus attach cleaned ids via custom attribute for later propagation
+    updated_products_by_resource_clean_ids = list(cleaned_product_ids)
+    # Attach as attribute (harmless if unused)
+    try:  # pragma: no cover
+        setattr(updated_products_by_resource, '_cleaned_product_ids',
+                updated_products_by_resource_clean_ids)  # type: ignore
+    except Exception:
+        pass
     return data, updated_products_by_resource
 
 
@@ -426,6 +592,8 @@ def main():
                         help="Path to URL status cache YAML (default: cache/url_status_cache.yml)")
     parser.add_argument("--ignore-cache", action="store_true",
                         help="Ignore existing cache when deciding to skip URLs")
+    parser.add_argument("--clean-warnings-only", action="store_true",
+                        help="Only clear stale retrieval warnings without making network requests")
 
     args = parser.parse_args()
 
@@ -453,7 +621,7 @@ def main():
 
     # Update file sizes
     updated_data, updated_products_by_resource = update_product_file_sizes(
-        data, limit=args.limit, cache=cache, ignore_cache=args.ignore_cache)
+        data, limit=args.limit, cache=cache, ignore_cache=args.ignore_cache, clean_warnings_only=args.clean_warnings_only)
 
     # Write file sizes back to resource files (unless disabled or in dry-run mode)
     if args.write_back and not args.dry_run and updated_products_by_resource:
