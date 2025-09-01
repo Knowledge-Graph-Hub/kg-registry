@@ -215,6 +215,25 @@ def should_skip_product(product: Dict[str, Any]) -> bool:
     return False
 
 
+def _clean_stale_retrieval_warnings(product: Dict[str, Any]) -> int:
+    """Remove stale retrieval warnings (those that match the retrieval failure pattern).
+
+    Returns number of warnings removed. Adds _replace_warnings flag if any removed.
+    """
+    if 'warnings' not in product or not isinstance(product['warnings'], list):
+        return 0
+    import re
+    before = len(product['warnings'])
+    product['warnings'] = [
+        w for w in product['warnings']
+        if not re.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(w))
+    ]
+    removed = before - len(product['warnings'])
+    if removed:
+        product['_replace_warnings'] = True
+    return removed
+
+
 def write_file_sizes_to_resource_files(updated_products: Dict[str, List[Dict[str, Any]]]) -> None:
     """
     Write updated file sizes back to the original resource files.
@@ -287,6 +306,12 @@ def write_file_sizes_to_resource_files(updated_products: Dict[str, List[Dict[str
                                             product['warnings'] = []
                                         elif not isinstance(product['warnings'], list):
                                             product['warnings'] = []
+                                        # Before merging, drop stale retrieval warnings still lingering
+                                        import re as _re2
+                                        product['warnings'] = [
+                                            w for w in product['warnings']
+                                            if not _re2.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(w))
+                                        ]
                                         for warning in updated_product['warnings']:
                                             if warning not in product['warnings']:
                                                 product['warnings'].append(warning)
@@ -311,7 +336,7 @@ def write_file_sizes_to_resource_files(updated_products: Dict[str, List[Dict[str
             print(f"  ❌ Error updating {resource_file}: {str(e)}")
 
 
-def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None, *, cache: Dict[str, Any], ignore_cache: bool = False) -> Tuple[Dict[str, Any], Dict[str, List[Dict[str, Any]]]]:
+def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None, *, cache: Dict[str, Any], ignore_cache: bool = False, clean_warnings_only: bool = False) -> Tuple[Dict[str, Any], Dict[str, List[Dict[str, Any]]]]:
     """
     Update product_file_size for all products in the registry data.
 
@@ -353,6 +378,13 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
                 break
 
             if should_skip_product(product):
+                # Even if we skip (e.g., already has size), we still want to clear stale retrieval warnings.
+                removed = _clean_stale_retrieval_warnings(product)
+                if removed:
+                    print(f"🧹 Cleared {removed} stale retrieval warning(s) for product {product.get('id')} (pre-existing size)")
+                    if resource_id not in updated_products_by_resource:
+                        updated_products_by_resource[resource_id] = []
+                    updated_products_by_resource[resource_id].append(product.copy())
                 skipped_products += 1
                 continue
 
@@ -361,6 +393,16 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
             url = product['product_url']
             should_skip_cache, cache_entry = cache_should_skip(
                 url, cache, ignore_cache=ignore_cache)
+            if clean_warnings_only:
+                # In this mode we don't perform network calls; just clear stale warnings
+                removed = _clean_stale_retrieval_warnings(product)
+                if removed:
+                    print(f"🧹 Cleared {removed} stale retrieval warning(s) for product {product.get('id')} (clean-warnings-only mode)")
+                    if resource_id not in updated_products_by_resource:
+                        updated_products_by_resource[resource_id] = []
+                    updated_products_by_resource[resource_id].append(product.copy())
+                continue
+
             if should_skip_cache:
                 # Determine if there is a stale retrieval warning that merits a re-check
                 has_retrieval_warning = False
@@ -487,6 +529,8 @@ def main():
                         help="Path to URL status cache YAML (default: cache/url_status_cache.yml)")
     parser.add_argument("--ignore-cache", action="store_true",
                         help="Ignore existing cache when deciding to skip URLs")
+    parser.add_argument("--clean-warnings-only", action="store_true",
+                        help="Only clear stale retrieval warnings without making network requests")
 
     args = parser.parse_args()
 
@@ -514,7 +558,7 @@ def main():
 
     # Update file sizes
     updated_data, updated_products_by_resource = update_product_file_sizes(
-        data, limit=args.limit, cache=cache, ignore_cache=args.ignore_cache)
+        data, limit=args.limit, cache=cache, ignore_cache=args.ignore_cache, clean_warnings_only=args.clean_warnings_only)
 
     # Write file sizes back to resource files (unless disabled or in dry-run mode)
     if args.write_back and not args.dry_run and updated_products_by_resource:
