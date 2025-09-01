@@ -247,7 +247,18 @@ def write_file_sizes_to_resource_files(updated_products: Dict[str, List[Dict[str
 
     print(f"\n💾 Writing file sizes back to {len(updated_products)} resource files...")
 
+    # Extract globally cleaned product IDs if present (attribute hack)
+    cleaned_ids = []
+    try:  # attribute on dict from update step
+        # type: ignore[attr-defined]
+        cleaned_ids = getattr(updated_products, '_cleaned_product_ids')
+    except Exception:
+        cleaned_ids = []
+
     for resource_id, products in updated_products.items():
+        # Skip pseudo attribute iteration if any (shouldn't appear now)
+        if not isinstance(products, list):
+            continue
         resource_file = f"resource/{resource_id}/{resource_id}.md"
 
         if frontmatter is None:
@@ -320,6 +331,20 @@ def write_file_sizes_to_resource_files(updated_products: Dict[str, List[Dict[str
                                 if updated_this_product:
                                     updated_count += 1
 
+                        # Global propagation: if this product id in cleaned_ids, ensure stale retrieval warnings are removed
+                        if product.get('id') in cleaned_ids:
+                            import re as _re_glob
+                            if isinstance(product.get('warnings'), list):
+                                before_g = len(product['warnings'])
+                                product['warnings'] = [
+                                    w for w in product['warnings']
+                                    if not _re_glob.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(w))
+                                ]
+                                after_g = len(product['warnings'])
+                                if after_g < before_g:
+                                    updated_count += 1
+                                    product['_replace_warnings'] = True
+
             if updated_count > 0:
                 # Write back to file
                 with open(resource_file, 'w', encoding='utf-8') as f:
@@ -358,8 +383,35 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
     cache_skipped = 0
     processed_products = 0
 
+    # Pre-scan to determine products that already have at least one clean occurrence (no retrieval warning)
+    product_warning_presence: Dict[str, Dict[str, bool]] = {}
+    for resource in data.get('resources', []):
+        for product in resource.get('products', []) if isinstance(resource.get('products'), list) else []:
+            pid = product.get('id')
+            if not pid:
+                continue
+            if pid not in product_warning_presence:
+                product_warning_presence[pid] = {'has_warning': False, 'has_clean': False}
+            # Detect retrieval warning pattern
+            has_retrieval = False
+            if isinstance(product.get('warnings'), list):
+                import re as _re_scan
+                for _w in product['warnings']:
+                    if _re_scan.match(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:', str(_w)):
+                        has_retrieval = True
+                        break
+            if has_retrieval:
+                product_warning_presence[pid]['has_warning'] = True
+            else:
+                product_warning_presence[pid]['has_clean'] = True
+
+    # Any product with at least one clean occurrence is slated for global cleanup
+    globally_clean_products = {pid for pid, flags in product_warning_presence.items(
+    ) if flags['has_clean'] and flags['has_warning']}
+
     # Track updated products by resource ID for writing back to files
     updated_products_by_resource: Dict[str, List[Dict[str, Any]]] = {}
+    cleaned_product_ids: set[str] = set()
 
     for resource in data['resources']:
         if 'products' not in resource:
@@ -381,7 +433,8 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
                 # Even if we skip (e.g., already has size), we still want to clear stale retrieval warnings.
                 removed = _clean_stale_retrieval_warnings(product)
                 if removed:
-                    print(f"🧹 Cleared {removed} stale retrieval warning(s) for product {product.get('id')} (pre-existing size)")
+                    print(
+                        f"🧹 Cleared {removed} stale retrieval warning(s) for product {product.get('id')} (pre-existing size)")
                     if resource_id not in updated_products_by_resource:
                         updated_products_by_resource[resource_id] = []
                     updated_products_by_resource[resource_id].append(product.copy())
@@ -397,7 +450,8 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
                 # In this mode we don't perform network calls; just clear stale warnings
                 removed = _clean_stale_retrieval_warnings(product)
                 if removed:
-                    print(f"🧹 Cleared {removed} stale retrieval warning(s) for product {product.get('id')} (clean-warnings-only mode)")
+                    print(
+                        f"🧹 Cleared {removed} stale retrieval warning(s) for product {product.get('id')} (clean-warnings-only mode)")
                     if resource_id not in updated_products_by_resource:
                         updated_products_by_resource[resource_id] = []
                     updated_products_by_resource[resource_id].append(product.copy())
@@ -445,9 +499,9 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
                         print(
                             f"  🔄 Cleared {before_cnt - after_cnt} stale retrieval warning(s) for product {product.get('id')}")
                         product['_replace_warnings'] = True
+                        cleaned_product_ids.add(product.get('id'))
 
                 updated_products += 1
-                # Track this update for writing back to resource files
                 if resource_id not in updated_products_by_resource:
                     updated_products_by_resource[resource_id] = []
                 updated_products_by_resource[resource_id].append(product.copy())
@@ -474,7 +528,6 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
                 failed_products += 1
             else:
                 # Accessible (HTTP 200) but no size (likely HTML/no content-length). Treat as success for warning clearing.
-                updated_this_product = False
                 if 'warnings' in product and isinstance(product['warnings'], list):
                     import re
                     before_cnt = len(product['warnings'])
@@ -486,12 +539,11 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
                     if after_cnt < before_cnt:
                         print(
                             f"  🔄 Cleared {before_cnt - after_cnt} stale retrieval warning(s) for product {product.get('id')} (HTML/no-size)")
-                        updated_this_product = True
                         product['_replace_warnings'] = True
-                if updated_this_product:
-                    if resource_id not in updated_products_by_resource:
-                        updated_products_by_resource[resource_id] = []
-                    updated_products_by_resource[resource_id].append(product.copy())
+                        cleaned_product_ids.add(product.get('id'))
+                        if resource_id not in updated_products_by_resource:
+                            updated_products_by_resource[resource_id] = []
+                        updated_products_by_resource[resource_id].append(product.copy())
                 # Do not increment failed_products in this branch
 
         # Break out of resource loop if we hit the limit
@@ -506,6 +558,17 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
     print(f"   Skipped via cache: {cache_skipped}")
     print(f"   Failed: {failed_products}")
 
+    # Add globally clean products to cleaned_product_ids
+    cleaned_product_ids.update(globally_clean_products)
+
+    # Return tuple plus attach cleaned ids via custom attribute for later propagation
+    updated_products_by_resource_clean_ids = list(cleaned_product_ids)
+    # Attach as attribute (harmless if unused)
+    try:  # pragma: no cover
+        setattr(updated_products_by_resource, '_cleaned_product_ids',
+                updated_products_by_resource_clean_ids)  # type: ignore
+    except Exception:
+        pass
     return data, updated_products_by_resource
 
 
