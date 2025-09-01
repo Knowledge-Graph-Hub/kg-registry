@@ -54,8 +54,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: GraphicalInterface
   description: A browser interface for a knowledge graph for Alzheimer's Disease.
   format: http

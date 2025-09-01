@@ -38,8 +38,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 403 error
-    when accessing file'
 - category: Product
   description: CSV file containing citation information for all PubMed articles in
     SemMedDB
@@ -49,8 +47,6 @@ products:
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 403 error
     when accessing file'
 - category: Product
   description: CSV file containing entity information with UMLS concept identifiers,
@@ -62,8 +58,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 403 error
-    when accessing file'
 - category: Product
   description: CSV file containing semantic predications with subject-predicate-object
     triples and associated metadata
@@ -74,8 +68,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 403 error
-    when accessing file'
 - category: Product
   description: CSV file containing sentence information from PubMed citations
   format: csv
@@ -84,8 +76,6 @@ products:
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 403 error
     when accessing file'
 - category: ProcessProduct
   description: The SemRep natural language processing system that extracts semantic

@@ -10,8 +10,6 @@ warnings:
   accessing file'
 - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when
   accessing file'
-- 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when
-  accessing file'
 - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
   to URL'
 - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when

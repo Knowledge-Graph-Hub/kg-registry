@@ -56,8 +56,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
     header found'
-  - 'File was not able to be retrieved when checked on 2025-08-31: No Content-Length
-    header found'
 - category: Product
   description: MNXref unified namespace for reactions across databases
   format: tsv
@@ -70,8 +68,6 @@ products:
   - metanetx
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2025-08-31: No Content-Length
     header found'
 - category: Product
   compression: gzip

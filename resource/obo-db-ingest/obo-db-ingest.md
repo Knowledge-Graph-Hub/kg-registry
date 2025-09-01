@@ -481,8 +481,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: clinicaltrials OWL
   format: owl
@@ -495,8 +493,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: clinicaltrials OBO Graph JSON
   format: json
@@ -508,8 +504,6 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: clinicaltrials SSSOM
@@ -920,8 +914,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: gtdb OWL
   format: owl
@@ -982,8 +974,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: hgnc OBO Graph JSON
   format: json
@@ -999,8 +989,6 @@ products:
   - obo-db-ingest
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: hgnc SSSOM
@@ -1179,8 +1167,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: itis OBO Graph JSON
   format: json
@@ -1192,8 +1178,6 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/itis/itis.json
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
 - category: Product
   description: kegg.genome OBO
@@ -1247,8 +1231,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: mesh OBO Graph JSON
   format: json
@@ -1260,8 +1242,6 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.json
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
 - category: Product
   description: mgi OBO
@@ -1275,8 +1255,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: mgi OWL
   format: owl
@@ -1289,8 +1267,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: mgi OBO Graph JSON
   format: json
@@ -1302,8 +1278,6 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.json
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: mgi SSSOM
@@ -1437,8 +1411,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: msigdb OWL
   format: owl
@@ -1451,8 +1423,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: msigdb OBO Graph JSON
   format: json
@@ -1464,8 +1434,6 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.json
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: msigdb SSSOM
@@ -1526,8 +1494,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: nihreporter.project OWL
   format: owl
@@ -1537,8 +1503,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: nihreporter.project OBO Graph JSON
   format: json
@@ -1547,8 +1511,6 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
 - category: Product
   description: nlm OBO
@@ -1702,8 +1664,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: pathbank OWL
   format: owl
@@ -1716,8 +1676,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: pathbank OBO Graph JSON
   format: json
@@ -1729,8 +1687,6 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.json
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: pathbank SSSOM
@@ -2141,8 +2097,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: reactome OBO Graph JSON
   format: json
@@ -2154,8 +2108,6 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.json
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
 - category: Product
   description: rgd OBO
@@ -2227,8 +2179,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: rhea OBO Graph JSON
   format: json
@@ -2244,8 +2194,6 @@ products:
   - obo-db-ingest
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: Rhea SSSOM
@@ -2288,8 +2236,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: ror OBO Graph JSON
   format: json
@@ -2301,8 +2247,6 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/ror/ror.json
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: ror SSSOM
@@ -2386,8 +2330,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: slm OWL
   format: owl
@@ -2400,8 +2342,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: slm OBO Graph JSON
   format: json
@@ -2413,8 +2353,6 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/slm/slm.json
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: slm SSSOM
@@ -2459,8 +2397,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: uniprot OWL
   format: owl
@@ -2473,8 +2409,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: uniprot OBO Graph JSON
   format: json
@@ -2486,8 +2420,6 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.json
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: uniprot SSSOM
@@ -2599,8 +2531,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
-    when accessing file'
 - category: Product
   description: zfin OBO Graph JSON
   format: json
@@ -2616,8 +2546,6 @@ products:
   - obo-db-ingest
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-08-31: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: zfin SSSOM

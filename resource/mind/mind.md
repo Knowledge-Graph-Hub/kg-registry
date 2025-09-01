@@ -46,8 +46,6 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
     header found'
-  - 'File was not able to be retrieved when checked on 2025-08-31: No Content-Length
-    header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
   format: tsv
@@ -64,8 +62,6 @@ products:
   - mind
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2025-08-31: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -84,8 +80,6 @@ products:
   - mind
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
-    header found'
-  - 'File was not able to be retrieved when checked on 2025-08-31: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -121,7 +115,7 @@ publications:
 - authors:
   - Roger Tu
   - Meghamala Sinha
-  - Carolina González
+  - "Carolina Gonz\xE1lez"
   - Eric Hu
   - Shehzaad Dhuliawala
   - Andrew McCallum
