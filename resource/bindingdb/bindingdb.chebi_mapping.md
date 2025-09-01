@@ -4,8 +4,6 @@ description: Mapping of BindingDB monomer (compound) IDs to ChEBI IDs
 id: bindingdb.chebi_mapping
 name: BindingDB-ChEBI Mapping
 product_url: https://www.bindingdb.org/rwd/bind/chemsearch/marvin/SDFdownload.jsp?download_file=/rwd/bind/BindingDB_CHEBI_ID.txt
-warnings:
-- 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
-  to URL'
+warnings: []
 layout: product_detail
 ---

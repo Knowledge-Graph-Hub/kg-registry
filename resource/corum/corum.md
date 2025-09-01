@@ -38,16 +38,16 @@ products:
   name: CORUM All Complexes
   product_url: https://mips.helmholtz-muenchen.de/corum/download/allComplexes.txt.zip
   warnings:
+  - 'File was not able to be retrieved when checked on 2025-09-01: Error connecting
+    to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
+    retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
   - 'File was not able to be retrieved when checked on 2025-08-30: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1017)'')))'
-  - 'File was not able to be retrieved when checked on 2025-08-28: Error connecting
-    to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
-    retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
   - 'File was not able to be retrieved when checked on 2025-08-26: Timeout connecting
     to URL'
 - category: Product
@@ -61,16 +61,16 @@ products:
   name: CORUM Core Complexes
   product_url: https://mips.helmholtz-muenchen.de/corum/download/coreComplexes.txt.zip
   warnings:
+  - 'File was not able to be retrieved when checked on 2025-09-01: Error connecting
+    to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
+    retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
   - 'File was not able to be retrieved when checked on 2025-08-30: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1017)'')))'
-  - 'File was not able to be retrieved when checked on 2025-08-28: Error connecting
-    to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
-    retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: Dataset of all CORUM protein complexes in PSI-MI XML format (Proteomics
     Standards Initiative)
@@ -82,16 +82,16 @@ products:
   name: CORUM PSI-MI
   product_url: https://mips.helmholtz-muenchen.de/corum/download/psi.zip
   warnings:
+  - 'File was not able to be retrieved when checked on 2025-09-01: Error connecting
+    to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
+    retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
   - 'File was not able to be retrieved when checked on 2025-08-30: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1017)'')))'
-  - 'File was not able to be retrieved when checked on 2025-08-28: Error connecting
-    to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
-    retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: Dataset of all CORUM protein complexes in PSI-MI MITAB 2.5 format
   format: psi_mi_mitab
@@ -102,16 +102,16 @@ products:
   name: CORUM MITAB
   product_url: https://mips.helmholtz-muenchen.de/corum/download/mitab.zip
   warnings:
+  - 'File was not able to be retrieved when checked on 2025-09-01: Error connecting
+    to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
+    retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
   - 'File was not able to be retrieved when checked on 2025-08-30: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1017)'')))'
-  - 'File was not able to be retrieved when checked on 2025-08-28: Error connecting
-    to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
-    retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
-    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
@@ -203,6 +203,7 @@ products:
   - mi
   - ms
   - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 publications:
 - authors:
   - "Stefanie G\xF6\xDFler"

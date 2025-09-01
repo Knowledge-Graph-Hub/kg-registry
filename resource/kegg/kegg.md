@@ -68,7 +68,7 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
   secondary_source:
   - obo-db-ingest
-- category: DataModelProduct
+- category: Product
   description: kegg.genome OBO
   format: obo
   id: obo-db-ingest.kegg.genome.obo
@@ -76,13 +76,9 @@ products:
     id: https://www.kegg.jp/kegg/legal.html
     label: Custom
   name: kegg.genome OBO
-  original_source:
-  - kegg
   product_file_size: 198714
   product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.obo
-  secondary_source:
-  - obo-db-ingest
-- category: DataModelProduct
+- category: Product
   description: kegg.genome OWL
   format: owl
   id: obo-db-ingest.kegg.genome.owl
@@ -90,13 +86,9 @@ products:
     id: https://www.kegg.jp/kegg/legal.html
     label: Custom
   name: kegg.genome OWL
-  original_source:
-  - kegg
   product_file_size: 192384
   product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.owl
-  secondary_source:
-  - obo-db-ingest
-- category: DataModelProduct
+- category: Product
   description: kegg.genome OBO Graph JSON
   format: json
   id: obo-db-ingest.kegg.genome.json
@@ -104,12 +96,8 @@ products:
     id: https://www.kegg.jp/kegg/legal.html
     label: Custom
   name: kegg.genome OBO Graph JSON
-  original_source:
-  - kegg
   product_file_size: 20525
   product_url: https://w3id.org/biopragmatics/resources/kegg.genome/kegg.genome.json
-  secondary_source:
-  - obo-db-ingest
 - category: GraphicalInterface
   description: Web interface for browsing and searching the KEGG database, including
     pathway maps, BRITE hierarchies, and other KEGG content
@@ -328,10 +316,11 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: GraphProduct
   description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
@@ -355,10 +344,11 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
@@ -384,9 +374,10 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_url: https://arax.ncats.io/
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 publications:
 - id: doi:10.1093/nar/gkae909
   preferred: true

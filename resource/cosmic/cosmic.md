@@ -55,8 +55,8 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   secondary_source:
   - bioteque
-- description: RNA-KG as a Neo4j Dump
-  dump_format: neo4j
+- category: GraphProduct
+  description: RNA-KG as a Neo4j Dump
   format: neo4j
   id: rna-kg.kg.neo4j
   name: RNA-KG Neo4j Dump
@@ -82,7 +82,8 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
   secondary_source:
   - rna-kg
-- description: RNA-KG Nodes in CSV format
+- category: GraphProduct
+  description: RNA-KG Nodes in CSV format
   format: csv
   id: rna-kg.kg.nodes
   name: RNA-KG Nodes
@@ -108,7 +109,8 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
   secondary_source:
   - rna-kg
-- description: RNA-KG Edges in CSV format
+- category: GraphProduct
+  description: RNA-KG Edges in CSV format
   format: csv
   id: rna-kg.kg.edges
   name: RNA-KG Edges

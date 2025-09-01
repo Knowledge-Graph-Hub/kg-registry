@@ -83,7 +83,7 @@ products:
   secondary_source:
   - mondo
 - category: GraphProduct
-  description: Nodes for the Drug Approvals KP, v0.3.7
+  description: Nodes for the Drug Approvals KP, v0.3.9
   format: kgx
   id: drug-approvals-kp.graph.nodes
   name: Drug Approvals KP Graph Nodes
@@ -92,22 +92,22 @@ products:
   - do
   - hp
   - mondo
-  product_file_size: 363367
-  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
+  product_file_size: 701451
+  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
   secondary_source:
   - drug-approvals-kp
 - category: GraphProduct
-  description: Nodes for the Drug Approvals KP, v0.3.7
+  description: Edges for the Drug Approvals KP, v0.3.9
   format: kgx
   id: drug-approvals-kp.graph.edges
-  name: Drug Approvals KP Graph Nodes
+  name: Drug Approvals KP Graph Edges
   original_source:
   - chebi
   - do
   - hp
   - mondo
-  product_file_size: 363367
-  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
+  product_file_size: 31052966
+  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
   secondary_source:
   - drug-approvals-kp
 - category: GraphProduct
@@ -260,10 +260,11 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_file_size: 376501785
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: GraphProduct
   description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
@@ -287,10 +288,11 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_file_size: 1807360397
   product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: ProgrammingInterface
   description: Neo4j distribution of the RTX-KG2 as a graph database
   dump_format: neo4j
@@ -316,9 +318,10 @@ products:
   - ensembl
   - gtopdb
   - rtx-kg2
+  - semmeddb
   product_url: https://arax.ncats.io/
   secondary_source:
-  - rtx-kg2.code
+  - rtx-kg2
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -468,8 +471,8 @@ products:
   - v3.0.2
   - v4.0.0
   - current_build
-- description: RNA-KG as a Neo4j Dump
-  dump_format: neo4j
+- category: GraphProduct
+  description: RNA-KG as a Neo4j Dump
   format: neo4j
   id: rna-kg.kg.neo4j
   name: RNA-KG Neo4j Dump
@@ -495,7 +498,8 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
   secondary_source:
   - rna-kg
-- description: RNA-KG Nodes in CSV format
+- category: GraphProduct
+  description: RNA-KG Nodes in CSV format
   format: csv
   id: rna-kg.kg.nodes
   name: RNA-KG Nodes
@@ -521,7 +525,8 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
   secondary_source:
   - rna-kg
-- description: RNA-KG Edges in CSV format
+- category: GraphProduct
+  description: RNA-KG Edges in CSV format
   format: csv
   id: rna-kg.kg.edges
   name: RNA-KG Edges

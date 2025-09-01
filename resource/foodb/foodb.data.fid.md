@@ -6,12 +6,12 @@ id: foodb.data.fid
 name: FooDB FID Files
 product_url: https://foodb.ca/public/system/downloads/foodb_fid_files.zip
 warnings:
-- 'File was not able to be retrieved when checked on 2025-08-30: HTTP 404 error when
+- 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when
+  accessing file'
+- 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when
   accessing file'
 - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
   to URL'
-- 'File was not able to be retrieved when checked on 2025-08-19: HTTP 502 error when
-  accessing file'
 - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when
   accessing file'
 layout: product_detail

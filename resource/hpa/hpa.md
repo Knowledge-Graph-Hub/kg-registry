@@ -143,6 +143,7 @@ products:
   - mi
   - ms
   - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 - category: GraphProduct
   description: PheKnowLator graph files, including subsets with and without inverse
     relations.

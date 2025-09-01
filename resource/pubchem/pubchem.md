@@ -133,7 +133,6 @@ products:
   - pid
   - pubchem
   - reactome
-  - reactome
   - sider
   - tissues
   - uberon

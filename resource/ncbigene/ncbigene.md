@@ -204,6 +204,24 @@ products:
   - drugbank
   - sider
   - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
   secondary_source:
   - spoke
 - category: GraphicalInterface
@@ -227,7 +245,6 @@ products:
   - pharmacotherapydb
   - pid
   - pubchem
-  - reactome
   - reactome
   - sider
   - tissues
@@ -346,8 +363,8 @@ products:
   - hgnc
   product_file_size: 974440
   product_url: https://www.omim.org/static/omim/data/mim2gene.txt
-- description: RNA-KG as a Neo4j Dump
-  dump_format: neo4j
+- category: GraphProduct
+  description: RNA-KG as a Neo4j Dump
   format: neo4j
   id: rna-kg.kg.neo4j
   name: RNA-KG Neo4j Dump
@@ -373,7 +390,8 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
   secondary_source:
   - rna-kg
-- description: RNA-KG Nodes in CSV format
+- category: GraphProduct
+  description: RNA-KG Nodes in CSV format
   format: csv
   id: rna-kg.kg.nodes
   name: RNA-KG Nodes
@@ -399,7 +417,8 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
   secondary_source:
   - rna-kg
-- description: RNA-KG Edges in CSV format
+- category: GraphProduct
+  description: RNA-KG Edges in CSV format
   format: csv
   id: rna-kg.kg.edges
   name: RNA-KG Edges

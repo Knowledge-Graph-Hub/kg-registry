@@ -120,9 +120,7 @@ products:
   name: PharmKB Automated Annotations
   product_file_size: 1881822
   product_url: https://api.pharmgkb.org/v1/download/file/data/automated_annotations.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
-    when accessing file'
+  warnings: []
 - category: Product
   compression: zip
   description: Summary of gene information used by PharmGKB and annotations
@@ -131,9 +129,7 @@ products:
   name: PharmKB Genes
   product_file_size: 2901222
   product_url: https://api.pharmgkb.org/v1/download/file/data/genes.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
-    when accessing file'
+  warnings: []
 - category: Product
   compression: zip
   description: Summary of variants annotated by PharmGKB that have been tracked in
@@ -151,9 +147,7 @@ products:
   name: PharmKB Drugs
   product_file_size: 717666
   product_url: https://api.pharmgkb.org/v1/download/file/data/drugs.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
-    when accessing file'
+  warnings: []
 - category: Product
   compression: zip
   description: Summaries of chemical information annotated by PharmGKB
@@ -162,9 +156,7 @@ products:
   name: PharmKB Chemicals
   product_file_size: 836804
   product_url: https://api.pharmgkb.org/v1/download/file/data/chemicals.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
-    when accessing file'
+  warnings: []
 - category: Product
   compression: zip
   description: Summary of disease and other phenotypes annotated by PharmGKB
@@ -180,9 +172,7 @@ products:
   name: PharmKB Papers of Interest Archive
   product_file_size: 126005
   product_url: https://api.pharmgkb.org/v1/download/file/attachment/PapersOfInterestArchive.csv
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
-    when accessing file'
+  warnings: []
 - category: Product
   compression: zip
   description: Haplotype frequencies from UK Biobank dataset using PharmCAT
@@ -191,9 +181,7 @@ products:
   name: PharmKB UK Biobank Frequencies
   product_file_size: 30925
   product_url: https://api.pharmgkb.org/v1/download/file/data/pharmgkb_haplotype_frequencies_UKBB.zip
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-06: HTTP 429 error
-    when accessing file'
+  warnings: []
 - category: Product
   compression: zip
   description: Haplotype, phenotype, and activity score frequencies from AllOfUs dataset

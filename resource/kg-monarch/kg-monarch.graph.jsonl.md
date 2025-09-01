@@ -83,8 +83,5 @@ product_file_size: 315667976
 product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
 secondary_source:
 - kg-monarch
-warnings:
-- 'File was not able to be retrieved when checked on 2025-08-28: HTTP 404 error when
-  accessing file'
 layout: product_detail
 ---

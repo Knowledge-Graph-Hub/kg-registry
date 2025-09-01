@@ -389,8 +389,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -459,8 +459,8 @@ products:
   - v3.0.2
   - v4.0.0
   - current_build
-- description: RNA-KG as a Neo4j Dump
-  dump_format: neo4j
+- category: GraphProduct
+  description: RNA-KG as a Neo4j Dump
   format: neo4j
   id: rna-kg.kg.neo4j
   name: RNA-KG Neo4j Dump
@@ -486,7 +486,8 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
   secondary_source:
   - rna-kg
-- description: RNA-KG Nodes in CSV format
+- category: GraphProduct
+  description: RNA-KG Nodes in CSV format
   format: csv
   id: rna-kg.kg.nodes
   name: RNA-KG Nodes
@@ -512,7 +513,8 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
   secondary_source:
   - rna-kg
-- description: RNA-KG Edges in CSV format
+- category: GraphProduct
+  description: RNA-KG Edges in CSV format
   format: csv
   id: rna-kg.kg.edges
   name: RNA-KG Edges

@@ -78,7 +78,7 @@ products:
   name: Antibody Validation Reports
   product_url: https://avr.hubmapconsortium.org/
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 401 error
+  - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 401 error
     when accessing file'
 - category: Product
   description: Data submission portal for registering and ingesting consortium data
@@ -210,6 +210,8 @@ products:
   - biomarker
   - opentargets
   product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
 publications:
 - authors:
   - "Katy B\xF6rner"

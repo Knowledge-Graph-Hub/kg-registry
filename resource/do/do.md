@@ -54,7 +54,7 @@ products:
   secondary_source:
   - do
 - category: GraphProduct
-  description: Nodes for the Drug Approvals KP, v0.3.7
+  description: Nodes for the Drug Approvals KP, v0.3.9
   format: kgx
   id: drug-approvals-kp.graph.nodes
   name: Drug Approvals KP Graph Nodes
@@ -63,22 +63,22 @@ products:
   - do
   - hp
   - mondo
-  product_file_size: 363367
-  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
+  product_file_size: 701451
+  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
   secondary_source:
   - drug-approvals-kp
 - category: GraphProduct
-  description: Nodes for the Drug Approvals KP, v0.3.7
+  description: Edges for the Drug Approvals KP, v0.3.9
   format: kgx
   id: drug-approvals-kp.graph.edges
-  name: Drug Approvals KP Graph Nodes
+  name: Drug Approvals KP Graph Edges
   original_source:
   - chebi
   - do
   - hp
   - mondo
-  product_file_size: 363367
-  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.7.tsv
+  product_file_size: 31052966
+  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
   secondary_source:
   - drug-approvals-kp
 - category: MappingProduct
@@ -129,6 +129,24 @@ products:
   - drugbank
   - sider
   - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
   secondary_source:
   - spoke
 - category: GraphProduct
@@ -279,7 +297,6 @@ products:
   - pharmacotherapydb
   - pid
   - pubchem
-  - reactome
   - reactome
   - sider
   - tissues
@@ -494,6 +511,7 @@ products:
   - mi
   - ms
   - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 - category: DataModelProduct
   description: CLO merged OWL release
   format: owl

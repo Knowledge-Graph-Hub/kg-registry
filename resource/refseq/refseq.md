@@ -48,7 +48,7 @@ products:
   - refseq
   - ncbigene
   product_file_size: 2027684801
-  product_url: https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2refseq.gz
+  product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2refseq.gz
 - category: GraphProduct
   description: Neo4j database dump of the Clinical Knowledge Graph and additional
     relationships
@@ -94,6 +94,7 @@ products:
   - mi
   - ms
   - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 publications:
 - doi: 10.1093/nar/gkv1189
   id: doi:10.1093/nar/gkv1189

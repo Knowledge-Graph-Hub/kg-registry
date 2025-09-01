@@ -180,10 +180,10 @@ products:
   name: Petagraph Knowledge Graph (Neo4J)
   node_count: 32000000
   original_source:
-  - petagraph
+  - ubkg
   product_url: https://ubkg-downloads.xconsortia.org/
   secondary_source:
-  - ubkg
+  - petagraph
 repository: https://github.com/x-atlas-consortia
 usages:
 - description: The Petagraph Knowledge Graph is built using UBKG as a scaffold.
