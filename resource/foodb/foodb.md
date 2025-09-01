@@ -44,6 +44,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
@@ -58,6 +60,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
@@ -76,6 +80,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
@@ -89,6 +95,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
@@ -106,6 +114,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
@@ -119,6 +129,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
@@ -136,6 +148,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
@@ -151,6 +165,8 @@ products:
     header found'
   - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
   - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
@@ -164,6 +180,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
@@ -194,6 +212,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
+    when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
