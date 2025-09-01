@@ -711,6 +711,87 @@ def concat_resource_yaml(args):
                 if total_written > 0:
                     print(f" Wrote {str(total_written)} product(s) to {obj['id']} entry")
 
+    def sync_product_references(objs):
+        """Ensure that any product referenced on non-owning resource pages is kept byte-for-byte
+        identical to the canonical definition on its owning resource page.
+
+        Ownership rule: a product whose ID begins with '<resource_id>.' is owned by resource_id.
+        Steps:
+          1. Build a canonical map product_id -> product_dict (first from owning resource).
+          2. For every other resource that lists the product, replace its dict if different.
+          3. Persist changes back to resource markdown files.
+        """
+        canonical: dict[str, dict] = {}
+        # 1. Collect canonical definitions
+        for res in objs:
+            rid = res.get('id')
+            prods = res.get('products') if isinstance(res.get('products'), list) else []
+            for p in prods:
+                if not isinstance(p, dict):
+                    continue
+                pid = p.get('id')
+                if not pid or '.' not in pid:
+                    continue  # skip non-namespaced products
+                owner = pid.split('.', 1)[0]
+                if owner == rid:
+                    # First seen owner definition wins; later ones can override if different? we keep first.
+                    if pid not in canonical:
+                        canonical[pid] = deepcopy(p)
+                    else:
+                        # Optionally, if later differs, we could log
+                        if canonical[pid] != p:
+                            print(f"NOTE: Multiple owner definitions found for {pid}; keeping first from {owner}")
+        if not canonical:
+            print("No canonical products discovered for synchronization")
+            return
+        print(f"Synchronizing {len(canonical)} canonical product definitions across resources")
+
+        # 2. Apply to referencing resources
+        updated_files = 0
+        for res in objs:
+            rid = res.get('id')
+            changed = False
+            prods = res.get('products') if isinstance(res.get('products'), list) else []
+            for idx, p in enumerate(prods):
+                if not isinstance(p, dict) or 'id' not in p:
+                    continue
+                pid = p['id']
+                if pid in canonical:
+                    owner = pid.split('.', 1)[0]
+                    if owner != rid:
+                        # Compare ignoring order: YAML dump simple method
+                        if canonical[pid] != p:
+                            prods[idx] = deepcopy(canonical[pid])
+                            changed = True
+            if changed:
+                # Persist resource file
+                fn = f"resource/{rid}/{rid}.md"
+                try:
+                    (metadata, md) = load_md(fn)
+                    if 'products' in metadata and isinstance(metadata['products'], list):
+                        # Rebuild with synchronized versions
+                        new_products = []
+                        for p in metadata['products']:
+                            if isinstance(p, dict):
+                                pid_val = p.get('id')
+                                if isinstance(pid_val, str) and pid_val in canonical and pid_val.split('.',1)[0] != rid:
+                                    new_products.append(deepcopy(canonical[pid_val]))
+                                    continue
+                            new_products.append(p)
+                        metadata['products'] = new_products
+                        with open(fn, 'w') as f:
+                            f.write('---\n')
+                            yaml.dump(metadata, f)
+                            f.write('---\n')
+                            f.write(md)
+                        updated_files += 1
+                except Exception as e:
+                    print(f"WARN: could not synchronize products for {rid}: {e}")
+        if updated_files:
+            print(f"Synchronized product references in {updated_files} resource file(s)")
+        else:
+            print("No resource files needed product reference synchronization")
+
     def create_evaluation_pages(objs):
         """
         Read evals/evals.tsv and, for each resource ID in the first column, create an
@@ -1015,6 +1096,9 @@ def concat_resource_yaml(args):
 
     # Propagate derived products to the source Resource pages
     propagate_products(objs)
+
+    # Synchronize cross-resource product references so they match their canonical definitions
+    sync_product_references(objs)
 
     # Add logos to licenses
     decorate_metadata(objs)
