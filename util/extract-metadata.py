@@ -792,6 +792,60 @@ def concat_resource_yaml(args):
         else:
             print("No resource files needed product reference synchronization")
 
+    def cleanup_resource_level_retrieval_warnings(objs):
+        """Remove stale retrieval warnings from resource-level 'warnings' lists when all product-level
+        retrieval warnings have been cleared. A retrieval warning matches the pattern
+        'File was not able to be retrieved when checked on YYYY-MM-DD:'.
+        We keep any other warning types untouched.
+        """
+        import re
+        pattern = re.compile(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:')
+        updated = 0
+        for res in objs:
+            rid = res.get('id')
+            if not rid:
+                continue
+            res_warnings = res.get('warnings') if isinstance(res.get('warnings'), list) else []
+            if not res_warnings:
+                continue
+            # Determine if any product still has retrieval warnings
+            products = res.get('products') if isinstance(res.get('products'), list) else []
+            product_has_retrieval = False
+            for p in products:
+                if not isinstance(p, dict):
+                    continue
+                pw = p.get('warnings')
+                pwarns = pw if isinstance(pw, list) else []
+                if pwarns and any(pattern.match(str(w)) for w in pwarns):
+                    product_has_retrieval = True
+                    break
+            if product_has_retrieval:
+                continue  # keep resource-level warnings until products are clean
+            # Filter out retrieval warnings at resource level
+            new_res_warnings = [w for w in res_warnings if not pattern.match(str(w))]
+            if new_res_warnings != res_warnings:
+                res['warnings'] = new_res_warnings
+                # Persist change to file
+                fn = f"resource/{rid}/{rid}.md"
+                try:
+                    (metadata, md) = load_md(fn)
+                    if isinstance(metadata.get('warnings'), list):
+                        mw = [w for w in metadata['warnings'] if not pattern.match(str(w))]
+                        if mw != metadata['warnings']:
+                            metadata['warnings'] = mw
+                            with open(fn, 'w') as f:
+                                f.write('---\n')
+                                yaml.dump(metadata, f)
+                                f.write('---\n')
+                                f.write(md)
+                            updated += 1
+                except Exception as e:
+                    print(f"WARN: could not clean resource-level warnings for {rid}: {e}")
+        if updated:
+            print(f"Cleaned stale resource-level retrieval warnings in {updated} resource file(s)")
+        else:
+            print("No resource-level retrieval warnings needed cleanup")
+
     def create_evaluation_pages(objs):
         """
         Read evals/evals.tsv and, for each resource ID in the first column, create an
@@ -1099,6 +1153,9 @@ def concat_resource_yaml(args):
 
     # Synchronize cross-resource product references so they match their canonical definitions
     sync_product_references(objs)
+
+    # Clean up resource-level stale retrieval warnings once products are synchronized
+    cleanup_resource_level_retrieval_warnings(objs)
 
     # Add logos to licenses
     decorate_metadata(objs)
