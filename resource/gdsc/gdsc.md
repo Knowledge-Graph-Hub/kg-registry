@@ -83,6 +83,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -97,7 +99,7 @@ products:
   - diseases
   - drugcentral
   - go
-  - gwas-catalog
+  - gwascatalog
   - reactome
   - lincs-l1000
   - uberon
@@ -206,7 +208,7 @@ publications:
   - Menden MP
   - Schubert M
   - Aben N
-  - "Gon\xE7alves E"
+  - Gonçalves E
   - Barthorpe S
   - Lightfoot H
   - Cokelaer T

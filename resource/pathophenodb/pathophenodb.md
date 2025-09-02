@@ -59,7 +59,7 @@ products:
   - diseases
   - drugcentral
   - go
-  - gwas-catalog
+  - gwascatalog
   - reactome
   - lincs-l1000
   - uberon
@@ -90,7 +90,7 @@ products:
   - spoke
 publications:
 - authors:
-  - Şenay Kafkas
+  - "\u015Eenay Kafkas"
   - Marwa Abdelhakim
   - Yasmeen Hashish
   - Maxat Kulmanov

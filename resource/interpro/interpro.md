@@ -139,7 +139,7 @@ products:
   - diseases
   - drugcentral
   - go
-  - gwas-catalog
+  - gwascatalog
   - reactome
   - lincs-l1000
   - uberon
@@ -247,7 +247,7 @@ products:
   dump_format: other
   format: mixed
   id: drugmechdb.graph
-  latest_version: '2.0.1'
+  latest_version: 2.0.1
   name: DrugMechDB Graph Dataset
   original_source:
   - go
@@ -265,9 +265,9 @@ products:
   product_url: https://doi.org/10.5281/zenodo.8139357
   repository: https://github.com/SuLab/DrugMechDB
   versions:
-  - '2.0.1'
-  - '2.0.0'
-  - '1.0.2'
+  - 2.0.1
+  - 2.0.0
+  - 1.0.2
   - '1.0'
 publications:
 - authors:

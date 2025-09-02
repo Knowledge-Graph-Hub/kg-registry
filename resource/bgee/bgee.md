@@ -59,6 +59,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
+    to URL'
 - category: Product
   compression: zip
   description: RNA-Seq data processed and formatted for the Bgee database
@@ -74,6 +76,8 @@ products:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
     to URL'
 - category: Product
   compression: zip
@@ -91,6 +95,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
+    to URL'
 - category: Product
   compression: zip
   description: In Situ Hybridization data in the Bgee database
@@ -106,6 +112,8 @@ products:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
     to URL'
 - category: Product
   compression: zip
@@ -123,6 +131,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
+    to URL'
 - category: Product
   compression: zip
   description: Single-cell RNA-Seq processed data in the Bgee database
@@ -138,6 +148,8 @@ products:
   - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
+    to URL'
+  - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
     to URL'
 - category: Product
   compression: zip
@@ -155,6 +167,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
+    to URL'
 - category: Product
   compression: zip
   description: RDF version of the Bgee data for semantic web applications
@@ -171,6 +185,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
     to URL'
+  - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
+    to URL'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -185,7 +201,7 @@ products:
   - diseases
   - drugcentral
   - go
-  - gwas-catalog
+  - gwascatalog
   - reactome
   - lincs-l1000
   - uberon
@@ -227,7 +243,7 @@ products:
   - drugbank
   - dsstox
   - go
-  - gwas-catalog
+  - gwascatalog
   - hrpimp
   - lincs-l1000
   - mesh
@@ -256,7 +272,7 @@ products:
   - drugbank
   - dsstox
   - go
-  - gwas-catalog
+  - gwascatalog
   - hrpimp
   - lincs-l1000
   - mesh

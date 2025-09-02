@@ -1266,7 +1266,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -1299,7 +1299,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -1372,7 +1372,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -1405,7 +1405,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -2146,7 +2146,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -2165,7 +2166,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -2184,7 +2186,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -2203,7 +2206,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -2222,7 +2226,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -2241,7 +2246,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -2260,7 +2266,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -2279,7 +2286,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -2296,7 +2304,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -2342,7 +2350,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -2375,7 +2383,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -3918,7 +3926,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -6452,7 +6460,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -6843,8 +6851,8 @@
                     "product_url": "http://xteam.xbio.top/download/Human_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-30: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -6855,8 +6863,8 @@
                     "product_url": "http://xteam.xbio.top/download/Mouse_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-30: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -6867,8 +6875,8 @@
                     "product_url": "http://xteam.xbio.top/download/Single_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-30: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -6879,8 +6887,8 @@
                     "product_url": "http://xteam.xbio.top/download/all_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-30: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -7052,7 +7060,8 @@
                         "cellosaurus"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -7069,7 +7078,8 @@
                         "cellosaurus"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -7241,7 +7251,8 @@
                         "cgnc"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -8453,7 +8464,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -8801,7 +8812,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -9064,7 +9076,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -9445,7 +9457,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -10138,7 +10150,7 @@
                         "uniprot",
                         "disgenet",
                         "hp",
-                        "gwascat",
+                        "gwascatalog",
                         "phewascat",
                         "ukbiobank",
                         "finngen",
@@ -11224,7 +11236,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -11271,7 +11283,7 @@
                         "uniprot",
                         "disgenet",
                         "hp",
-                        "gwascat",
+                        "gwascatalog",
                         "phewascat",
                         "ukbiobank",
                         "finngen",
@@ -11322,7 +11334,8 @@
                     "product_url": "https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -11573,7 +11586,7 @@
                         "uniprot",
                         "disgenet",
                         "hp",
-                        "gwascat",
+                        "gwascatalog",
                         "phewascat",
                         "ukbiobank",
                         "finngen",
@@ -13398,9 +13411,9 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/allComplexes.txt.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
-                        "File was not able to be retrieved when checked on 2025-08-30: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
+                        "File was not able to be retrieved when checked on 2025-09-01: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
                         "File was not able to be retrieved when checked on 2025-08-26: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-09-01: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
                     ]
                 },
                 {
@@ -13416,8 +13429,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/coreComplexes.txt.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
-                        "File was not able to be retrieved when checked on 2025-08-30: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
-                        "File was not able to be retrieved when checked on 2025-09-01: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-09-01: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
+                        "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
                     ]
                 },
                 {
@@ -13433,8 +13446,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/psi.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
-                        "File was not able to be retrieved when checked on 2025-08-30: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
-                        "File was not able to be retrieved when checked on 2025-09-01: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-09-01: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
+                        "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
                     ]
                 },
                 {
@@ -13450,8 +13463,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/mitab.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
-                        "File was not able to be retrieved when checked on 2025-08-30: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
-                        "File was not able to be retrieved when checked on 2025-09-01: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-09-01: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
+                        "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
                     ]
                 },
                 {
@@ -16744,7 +16757,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -16877,7 +16890,7 @@
                         "uniprot",
                         "disgenet",
                         "hp",
-                        "gwascat",
+                        "gwascatalog",
                         "phewascat",
                         "ukbiobank",
                         "finngen",
@@ -17093,7 +17106,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -17126,7 +17139,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -17564,7 +17577,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -17742,7 +17755,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -17775,7 +17788,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -18295,7 +18308,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -18438,7 +18451,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -18471,7 +18484,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -18773,7 +18786,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -18970,7 +18983,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -18992,7 +19006,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -19014,7 +19029,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -19070,7 +19086,8 @@
                     "product_url": "https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -19248,7 +19265,8 @@
                     "name": "DSSToxDB Description",
                     "product_url": "https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -19265,7 +19283,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -19298,7 +19316,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -22262,7 +22280,7 @@
                         "uniprot",
                         "disgenet",
                         "hp",
-                        "gwascat",
+                        "gwascatalog",
                         "phewascat",
                         "ukbiobank",
                         "finngen",
@@ -22524,7 +22542,8 @@
                         "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -22539,7 +22558,8 @@
                         "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -22554,7 +22574,8 @@
                         "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -22568,7 +22589,8 @@
                         "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -22582,7 +22604,8 @@
                         "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -22596,7 +22619,8 @@
                         "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -22610,7 +22634,8 @@
                         "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -22624,7 +22649,8 @@
                         "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -22638,7 +22664,8 @@
                         "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -22652,7 +22679,8 @@
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -22666,7 +22694,8 @@
                         "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -22683,7 +22712,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -22958,7 +22987,8 @@
                     ],
                     "product_url": "https://ftp.sanger.ac.uk/project/cancerrxgene/releases/",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -22975,7 +23005,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -23876,7 +23906,8 @@
                         "glyconnect"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -24336,7 +24367,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -24479,7 +24510,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -24512,7 +24543,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -26285,7 +26316,8 @@
                     ],
                     "product_url": "https://github.com/geneontology/go-cam",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -26388,7 +26420,8 @@
                         "goldterms"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -26773,7 +26806,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/targets_and_families.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -26785,7 +26819,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/ligands.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -26797,7 +26832,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/interactions.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -26809,7 +26845,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -26821,7 +26858,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/all_ligands.sdf",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -26833,7 +26871,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -26844,7 +26883,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -27102,213 +27142,196 @@
         {
             "activity_status": "active",
             "category": "DataSource",
-            "description": "Stub Resource page for gwas-catalog. This page was automatically generated because it was referenced by other resources.",
-            "domains": [
-                "stub"
-            ],
-            "id": "gwas-catalog",
-            "layout": "resource_detail",
-            "name": "Gwas-catalog",
-            "products": [
+            "contacts": [
                 {
-                    "category": "GraphProduct",
-                    "description": "The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.",
-                    "id": "spoke.graph",
-                    "name": "SPOKE Graph",
-                    "original_source": [
-                        "ncbigene",
-                        "medline",
-                        "mesh",
-                        "pid",
-                        "do",
-                        "diseases",
-                        "drugcentral",
-                        "go",
-                        "gwas-catalog",
-                        "reactome",
-                        "lincs-l1000",
-                        "uberon",
-                        "wikipathways",
-                        "bindingdb",
-                        "drugbank",
-                        "sider",
-                        "bgee",
-                        "uniprot",
-                        "string",
-                        "omim",
-                        "chembl",
-                        "foodb",
-                        "civic",
-                        "gdsc",
-                        "clinicaltrialsgov",
-                        "hpa",
-                        "cl",
-                        "kegg",
-                        "metacyc",
-                        "bv-brc",
-                        "ncbitaxon",
-                        "pathophenodb",
-                        "pfam",
-                        "interpro",
-                        "protcid"
+                    "category": "Organization",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "gwas-info@ebi.ac.uk"
+                        },
+                        {
+                            "contact_type": "url",
+                            "value": "https://www.ebi.ac.uk/gwas/"
+                        }
                     ],
-                    "secondary_source": [
-                        "spoke"
-                    ]
-                },
+                    "label": "NHGRI-EBI GWAS Catalog Team"
+                }
+            ],
+            "creation_date": "2025-07-20T00:00:00Z",
+            "description": "The NHGRI-EBI GWAS Catalog is a curated, searchable, and freely available database of SNP-trait associations from published and submitted genome-wide association studies. Expert curators extract reported traits, significant variant-trait associations, and study metadata, providing an integrated resource updated on a weekly cycle and accessible via web interfaces, bulk downloads, summary statistics, and a REST API.",
+            "domains": [
+                "genomics",
+                "health",
+                "biomedical",
+                "investigations"
+            ],
+            "homepage_url": "https://www.ebi.ac.uk/gwas/",
+            "id": "gwascatalog",
+            "last_modified_date": "2025-09-02T00:00:00Z",
+            "layout": "resource_detail",
+            "license": {
+                "id": "https://www.ebi.ac.uk/about/terms-of-use",
+                "label": "EMBL-EBI Terms of Use (summary statistics CC0 unless otherwise stated)"
+            },
+            "name": "GWAS Catalog",
+            "products": [
                 {
                     "category": "GraphicalInterface",
-                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "description": "Web interface for searching, browsing, and visualizing curated GWAS variant-trait associations and study metadata",
                     "format": "http",
-                    "id": "alzkb.browser",
-                    "name": "AlzKB Graph Database Browser",
+                    "id": "gwascatalog.web",
+                    "name": "GWAS Catalog Web Portal",
                     "original_source": [
-                        "aop-db",
-                        "bgee",
-                        "disgenet",
-                        "do",
-                        "drugbank",
-                        "dsstox",
-                        "go",
-                        "gwas-catalog",
-                        "hrpimp",
-                        "lincs-l1000",
-                        "mesh",
-                        "ncbigene",
-                        "pharmacotherapydb",
-                        "pid",
-                        "pubchem",
-                        "reactome",
-                        "sider",
-                        "tissues",
-                        "uberon",
-                        "wikipathways"
+                        "gwascatalog"
                     ],
-                    "product_url": "https://alzkb.ai:7473/login",
-                    "secondary_source": [
-                        "alzkb",
-                        "hetionet"
+                    "product_url": "https://www.ebi.ac.uk/gwas/"
+                },
+                {
+                    "category": "ProgrammingInterface",
+                    "description": "REST API providing programmatic access to GWAS Catalog studies, associations, variants, traits, and summary statistics metadata",
+                    "id": "gwascatalog.api",
+                    "is_public": true,
+                    "name": "GWAS Catalog REST API v2",
+                    "original_source": [
+                        "gwascatalog"
+                    ],
+                    "product_url": "https://www.ebi.ac.uk/gwas/docs/api"
+                },
+                {
+                    "category": "Product",
+                    "description": "Full data dump of GWAS Catalog associations in tab-delimited format (SNP-trait association data)",
+                    "format": "tsv",
+                    "id": "gwascatalog.associations.tsv",
+                    "name": "GWAS Catalog Associations TSV",
+                    "original_source": [
+                        "gwascatalog"
+                    ],
+                    "product_file_size": 482336061,
+                    "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.tsv"
+                },
+                {
+                    "category": "Product",
+                    "description": "Full data dump of GWAS Catalog associations in JSON format",
+                    "format": "json",
+                    "id": "gwascatalog.associations.json",
+                    "name": "GWAS Catalog Associations JSON",
+                    "original_source": [
+                        "gwascatalog"
+                    ],
+                    "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.json",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                    ]
+                },
+                {
+                    "category": "Product",
+                    "description": "Study metadata file containing per-study information for GWAS Catalog entries",
+                    "format": "tsv",
+                    "id": "gwascatalog.studies.tsv",
+                    "name": "GWAS Catalog Studies TSV",
+                    "original_source": [
+                        "gwascatalog"
+                    ],
+                    "product_file_size": 48604130,
+                    "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-studies.tsv"
+                },
+                {
+                    "category": "Product",
+                    "description": "Variant metadata file containing per-variant information (e.g., rsIDs) present in the GWAS Catalog",
+                    "format": "tsv",
+                    "id": "gwascatalog.variants.tsv",
+                    "name": "GWAS Catalog Variants TSV",
+                    "original_source": [
+                        "gwascatalog"
+                    ],
+                    "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-variants.tsv",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                    ]
+                },
+                {
+                    "category": "Product",
+                    "description": "EFO trait mapping file linking GWAS Catalog reported traits to Experimental Factor Ontology terms",
+                    "format": "tsv",
+                    "id": "gwascatalog.traits_efo.tsv",
+                    "name": "GWAS Catalog Trait EFO Mappings TSV",
+                    "original_source": [
+                        "gwascatalog"
+                    ],
+                    "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                    ]
+                },
+                {
+                    "category": "Product",
+                    "description": "RDF/OWL representation of GWAS Catalog associations enabling semantic integration",
+                    "format": "owl",
+                    "id": "gwascatalog.associations.owl",
+                    "name": "GWAS Catalog Associations OWL",
+                    "original_source": [
+                        "gwascatalog"
+                    ],
+                    "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.owl.gz",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                    ]
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "Compressed GWAS Catalog diagram (karyotype visualization) in SVG format (current release)",
+                    "format": "svg",
+                    "id": "gwascatalog.diagram.current",
+                    "name": "GWAS Catalog Diagram (Current SVG)",
+                    "original_source": [
+                        "gwascatalog"
+                    ],
+                    "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram.svg",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                    ]
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "Archive of previous GWAS Catalog diagram versions (SVG format)",
+                    "format": "svg",
+                    "id": "gwascatalog.diagram.archive",
+                    "name": "GWAS Catalog Diagram Archive",
+                    "original_source": [
+                        "gwascatalog"
+                    ],
+                    "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram-archive.zip",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                    ]
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "Harmonised summary statistics landing page (FTP directory containing per-study summary statistics under CC0 where available)",
+                    "id": "gwascatalog.summary_statistics.ftp",
+                    "name": "GWAS Catalog Summary Statistics FTP",
+                    "original_source": [
+                        "gwascatalog"
+                    ],
+                    "product_url": "ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: No connection adapters were found for 'ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'"
                     ]
                 },
                 {
                     "category": "GraphProduct",
-                    "description": "Memgraph data release for AlzKB.",
-                    "id": "alzkb.data",
-                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "description": "GWASCatalog Automat",
+                    "format": "kgx-jsonl",
+                    "id": "automat.gwascatalog",
+                    "infores_id": "automat-gwas-catalog",
+                    "name": "gwascatalog_automat",
                     "original_source": [
-                        "aop-db",
-                        "bgee",
-                        "disgenet",
-                        "do",
-                        "drugbank",
-                        "dsstox",
-                        "go",
-                        "gwas-catalog",
-                        "hrpimp",
-                        "lincs-l1000",
-                        "mesh",
-                        "ncbigene",
-                        "pharmacotherapydb",
-                        "pid",
-                        "pubchem",
-                        "reactome",
-                        "reactome",
-                        "sider",
-                        "tissues",
-                        "uberon",
-                        "wikipathways"
+                        "gwascatalog"
                     ],
-                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "product_url": "https://stars.renci.org/var/plater/bl-4.2.1/GWASCatalog_Automat/e30aceb322a33462/",
                     "secondary_source": [
-                        "alzkb",
-                        "hetionet"
-                    ]
-                }
-            ],
-            "warnings": [
-                "This is an automatically generated stub page. Please replace with accurate information about this resource."
-            ]
-        },
-        {
-            "activity_status": "active",
-            "category": "DataSource",
-            "description": "Stub Resource page for gwascat. This page was automatically generated because it was referenced by other resources.",
-            "domains": [
-                "stub"
-            ],
-            "id": "gwascat",
-            "layout": "resource_detail",
-            "name": "Gwascat",
-            "products": [
-                {
-                    "category": "GraphProduct",
-                    "description": "DisGeNET data, including gene to disease associations and variant to disease associations (requires registration and subscription).",
-                    "id": "disgenet.data",
-                    "name": "DisGeNET Data",
-                    "original_source": [
-                        "clingen",
-                        "clinvar",
-                        "mgd",
-                        "rgd",
-                        "orphanet",
-                        "psygenet",
-                        "uniprot",
-                        "disgenet",
-                        "hp",
-                        "gwascat",
-                        "phewascat",
-                        "ukbiobank",
-                        "finngen",
-                        "clinicaltrialsgov"
-                    ],
-                    "product_url": "https://www.disgenet.com/",
-                    "secondary_source": [
-                        "disgenet"
-                    ]
-                }
-            ],
-            "warnings": [
-                "This is an automatically generated stub page. Please replace with accurate information about this resource."
-            ]
-        },
-        {
-            "activity_status": "active",
-            "category": "DataSource",
-            "creation_date": "2025-07-20T00:00:00Z",
-            "description": "Stub Resource page for gwascatalog. This page was automatically generated because it was referenced by other resources.",
-            "domains": [
-                "stub"
-            ],
-            "id": "gwascatalog",
-            "last_modified_date": "2025-07-20T00:00:00Z",
-            "layout": "resource_detail",
-            "name": "Gwascatalog",
-            "products": [
-                {
-                    "category": "ProcessProduct",
-                    "description": "INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.",
-                    "id": "indra.cogex.code",
-                    "name": "INDRA CoGEx Build Code",
-                    "original_source": [
-                        "chembl",
-                        "sider",
-                        "reactome",
-                        "wikipathways",
-                        "hp",
-                        "nihreporter",
-                        "disgenet",
-                        "pubmed",
-                        "gwascatalog",
-                        "cellmarker",
-                        "go",
-                        "bgee",
-                        "ccle",
-                        "clinicaltrialsgov",
-                        "indra"
-                    ],
-                    "product_url": "https://github.com/gyorilab/indra_cogex",
-                    "secondary_source": [
-                        "indra"
+                        "automat"
                     ]
                 },
                 {
@@ -27360,23 +27383,172 @@
                     "product_url": "https://data.mendeley.com/datasets/mrcf7f4tc2/1"
                 },
                 {
-                    "category": "GraphProduct",
-                    "description": "GWASCatalog Automat",
-                    "format": "kgx-jsonl",
-                    "id": "automat.gwascatalog",
-                    "infores_id": "automat-gwas-catalog",
-                    "name": "gwascatalog_automat",
+                    "category": "ProcessProduct",
+                    "description": "INDRA CoGEx is a graph database integrating causal relations, ontological relations, properties, and data, assembled at scale automatically from the scientific literature and structured sources. This is the code to build the graph.",
+                    "id": "indra.cogex.code",
+                    "name": "INDRA CoGEx Build Code",
                     "original_source": [
-                        "gwascatalog"
+                        "chembl",
+                        "sider",
+                        "reactome",
+                        "wikipathways",
+                        "hp",
+                        "nihreporter",
+                        "disgenet",
+                        "pubmed",
+                        "gwascatalog",
+                        "cellmarker",
+                        "go",
+                        "bgee",
+                        "ccle",
+                        "clinicaltrialsgov",
+                        "indra"
                     ],
-                    "product_url": "https://stars.renci.org/var/plater/bl-4.2.1/GWASCatalog_Automat/e30aceb322a33462/",
+                    "product_url": "https://github.com/gyorilab/indra_cogex",
                     "secondary_source": [
-                        "automat"
+                        "indra"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.",
+                    "id": "spoke.graph",
+                    "name": "SPOKE Graph",
+                    "original_source": [
+                        "ncbigene",
+                        "medline",
+                        "mesh",
+                        "pid",
+                        "do",
+                        "diseases",
+                        "drugcentral",
+                        "go",
+                        "gwascatalog",
+                        "reactome",
+                        "lincs-l1000",
+                        "uberon",
+                        "wikipathways",
+                        "bindingdb",
+                        "drugbank",
+                        "sider",
+                        "bgee",
+                        "uniprot",
+                        "string",
+                        "omim",
+                        "chembl",
+                        "foodb",
+                        "civic",
+                        "gdsc",
+                        "clinicaltrialsgov",
+                        "hpa",
+                        "cl",
+                        "kegg",
+                        "metacyc",
+                        "bv-brc",
+                        "ncbitaxon",
+                        "pathophenodb",
+                        "pfam",
+                        "interpro",
+                        "protcid"
+                    ],
+                    "secondary_source": [
+                        "spoke"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "DisGeNET data, including gene to disease associations and variant to disease associations (requires registration and subscription).",
+                    "id": "disgenet.data",
+                    "name": "DisGeNET Data",
+                    "original_source": [
+                        "clingen",
+                        "clinvar",
+                        "mgd",
+                        "rgd",
+                        "orphanet",
+                        "psygenet",
+                        "uniprot",
+                        "disgenet",
+                        "hp",
+                        "gwascatalog",
+                        "phewascat",
+                        "ukbiobank",
+                        "finngen",
+                        "clinicaltrialsgov"
+                    ],
+                    "product_url": "https://www.disgenet.com/",
+                    "secondary_source": [
+                        "disgenet"
+                    ]
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
+                    "format": "http",
+                    "id": "alzkb.browser",
+                    "name": "AlzKB Graph Database Browser",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwascatalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://alzkb.ai:7473/login",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Memgraph data release for AlzKB.",
+                    "id": "alzkb.data",
+                    "name": "AlzKB Data Release (Version 2.0.0)",
+                    "original_source": [
+                        "aop-db",
+                        "bgee",
+                        "disgenet",
+                        "do",
+                        "drugbank",
+                        "dsstox",
+                        "go",
+                        "gwascatalog",
+                        "hrpimp",
+                        "lincs-l1000",
+                        "mesh",
+                        "ncbigene",
+                        "pharmacotherapydb",
+                        "pid",
+                        "pubchem",
+                        "reactome",
+                        "reactome",
+                        "sider",
+                        "tissues",
+                        "uberon",
+                        "wikipathways"
+                    ],
+                    "product_url": "https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0",
+                    "secondary_source": [
+                        "alzkb",
+                        "hetionet"
                     ]
                 }
-            ],
-            "warnings": [
-                "This is an automatically generated stub page. Please replace with accurate information about this resource."
             ]
         },
         {
@@ -27619,7 +27791,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -27652,7 +27824,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -27809,7 +27981,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -27830,7 +28003,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -27928,7 +28102,8 @@
                         "scibite"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -28802,7 +28977,7 @@
                         "uniprot",
                         "disgenet",
                         "hp",
-                        "gwascat",
+                        "gwascatalog",
                         "phewascat",
                         "ukbiobank",
                         "finngen",
@@ -29931,7 +30106,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -30391,7 +30566,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -30424,7 +30599,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -30698,7 +30873,8 @@
                     "name": "Antibody Validation Reports",
                     "product_url": "https://avr.hubmapconsortium.org/",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 401 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 401 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 401 error when accessing file"
                     ]
                 },
                 {
@@ -32507,7 +32683,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -33046,7 +33222,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -33284,7 +33460,8 @@
                         "kg-covid-19"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file"
                     ]
                 }
             ],
@@ -33422,7 +33599,8 @@
                         "kg-idg"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -33543,7 +33721,8 @@
                         "kg-microbe"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file"
                     ]
                 },
                 {
@@ -35263,7 +35442,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -35309,7 +35488,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -35342,7 +35521,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -35435,7 +35614,8 @@
                     ],
                     "product_url": "https://loinc.org/download/loinc-complete/",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 503 error when accessing file"
                     ]
                 },
                 {
@@ -35449,7 +35629,8 @@
                     ],
                     "product_url": "https://loinc.org/downloads/archive/",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 503 error when accessing file"
                     ]
                 },
                 {
@@ -35462,7 +35643,8 @@
                     ],
                     "product_url": "https://loinc.org/principles/",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 503 error when accessing file"
                     ]
                 },
                 {
@@ -36700,7 +36882,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -36722,7 +36905,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -36744,7 +36928,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -36953,7 +37138,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -37015,7 +37200,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -37061,7 +37246,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -37094,7 +37279,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -37280,7 +37465,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -37390,7 +37575,8 @@
                         "metanetx"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -37407,7 +37593,8 @@
                         "metanetx"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -37511,7 +37698,7 @@
                         "uniprot",
                         "disgenet",
                         "hp",
-                        "gwascat",
+                        "gwascatalog",
                         "phewascat",
                         "ukbiobank",
                         "finngen",
@@ -37908,7 +38095,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -37930,7 +38118,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -37952,7 +38141,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -40197,7 +40387,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -40243,7 +40433,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -40276,7 +40466,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -40670,7 +40860,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -43250,7 +43440,8 @@
                     "name": "clinicaltrials OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -43265,7 +43456,8 @@
                     "name": "clinicaltrials OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -43280,7 +43472,8 @@
                     "name": "clinicaltrials OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -43810,7 +44003,8 @@
                     "name": "gtdb OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -43889,7 +44083,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -43910,7 +44105,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44143,7 +44339,8 @@
                     "name": "itis OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/itis/itis.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44158,7 +44355,8 @@
                     "name": "itis OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/itis/itis.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44225,7 +44423,8 @@
                     "name": "mesh OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/mesh/mesh.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44240,7 +44439,8 @@
                     "name": "mesh OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/mesh/mesh.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44255,7 +44455,8 @@
                     "name": "mgi OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/mgi/mgi.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44270,7 +44471,8 @@
                     "name": "mgi OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/mgi/mgi.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44285,7 +44487,8 @@
                     "name": "mgi OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/mgi/mgi.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44456,7 +44659,8 @@
                     "name": "msigdb OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44471,7 +44675,8 @@
                     "name": "msigdb OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44486,7 +44691,8 @@
                     "name": "msigdb OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/msigdb/msigdb.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44562,7 +44768,8 @@
                     "name": "nihreporter.project OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44573,7 +44780,8 @@
                     "name": "nihreporter.project OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44584,7 +44792,8 @@
                     "name": "nihreporter.project OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44781,7 +44990,8 @@
                     "name": "pathbank OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44796,7 +45006,8 @@
                     "name": "pathbank OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44811,7 +45022,8 @@
                     "name": "pathbank OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/pathbank/pathbank.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45357,7 +45569,8 @@
                     "name": "reactome OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/reactome/reactome.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45372,7 +45585,8 @@
                     "name": "reactome OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/reactome/reactome.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45464,7 +45678,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45485,7 +45700,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45537,7 +45753,8 @@
                     "name": "ror OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/ror/ror.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45552,7 +45769,8 @@
                     "name": "ror OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/ror/ror.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45658,7 +45876,8 @@
                     "name": "slm OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/slm/slm.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45673,7 +45892,8 @@
                     "name": "slm OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/slm/slm.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45688,7 +45908,8 @@
                     "name": "slm OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/slm/slm.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45743,7 +45964,8 @@
                     "name": "uniprot OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45758,7 +45980,8 @@
                     "name": "uniprot OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45773,7 +45996,8 @@
                     "name": "uniprot OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/uniprot/uniprot.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45917,7 +46141,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45938,7 +46163,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -46823,7 +47049,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -46842,7 +47069,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -46861,7 +47089,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -46881,7 +47110,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-31: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -46901,7 +47131,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -46921,7 +47152,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-31: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -46941,7 +47173,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -46958,7 +47191,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -46978,7 +47212,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -46999,7 +47234,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 }
             ]
@@ -47086,7 +47322,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -48689,7 +48925,7 @@
                         "uniprot",
                         "disgenet",
                         "hp",
-                        "gwascat",
+                        "gwascatalog",
                         "phewascat",
                         "ukbiobank",
                         "finngen",
@@ -50009,7 +50245,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -50933,7 +51169,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -51263,7 +51499,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -51296,7 +51532,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -52325,7 +52561,8 @@
                         "phenio"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -53222,7 +53459,7 @@
                         "uniprot",
                         "disgenet",
                         "hp",
-                        "gwascat",
+                        "gwascatalog",
                         "phewascat",
                         "ukbiobank",
                         "finngen",
@@ -53329,7 +53566,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -53375,7 +53612,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -53408,7 +53645,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -53749,7 +53986,8 @@
                         "pombase"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -53771,7 +54009,8 @@
                         "pombase"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -55023,7 +55262,8 @@
                         "primekg"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file"
                     ]
                 }
             ],
@@ -55224,7 +55464,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -55467,7 +55707,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -55500,7 +55740,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -56149,7 +56389,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -56424,7 +56664,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -56457,7 +56697,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -57801,7 +58041,8 @@
                     "product_url": "https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -57965,7 +58206,7 @@
                         "uniprot",
                         "disgenet",
                         "hp",
-                        "gwascat",
+                        "gwascatalog",
                         "phewascat",
                         "ukbiobank",
                         "finngen",
@@ -58041,7 +58282,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -58062,7 +58304,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -59214,7 +59457,8 @@
                         "scibite"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 }
             ]
@@ -61046,7 +61290,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -61682,7 +61926,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -62788,7 +63032,8 @@
                     "name": "Text Mining KP KGX",
                     "product_url": "https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -62819,7 +63064,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -62852,7 +63097,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -63609,7 +63854,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -63884,7 +64129,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -63917,7 +64162,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -64741,7 +64986,7 @@
                         "uniprot",
                         "disgenet",
                         "hp",
-                        "gwascat",
+                        "gwascatalog",
                         "phewascat",
                         "ukbiobank",
                         "finngen",
@@ -64988,7 +65233,8 @@
                         "pombase"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
                     ]
                 },
                 {
@@ -65045,7 +65291,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -65062,7 +65309,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -65338,7 +65585,7 @@
                         "uniprot",
                         "disgenet",
                         "hp",
-                        "gwascat",
+                        "gwascatalog",
                         "phewascat",
                         "ukbiobank",
                         "finngen",
@@ -65601,7 +65848,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 502 error when accessing file"
                     ]
                 },
                 {
@@ -66325,7 +66573,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -66548,7 +66796,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -66581,7 +66829,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -67792,7 +68040,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -67813,7 +68062,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -68723,7 +68973,7 @@
                         "uniprot",
                         "disgenet",
                         "hp",
-                        "gwascat",
+                        "gwascatalog",
                         "phewascat",
                         "ukbiobank",
                         "finngen",
@@ -68884,7 +69134,8 @@
                     "name": "SemMedDB MySQL Database",
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_MySQL_database.html",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file"
                     ]
                 },
                 {
@@ -68895,7 +69146,8 @@
                     "name": "SemMedDB Citations CSV",
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file"
                     ]
                 },
                 {
@@ -68906,7 +69158,8 @@
                     "name": "SemMedDB Entity CSV",
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/ENTITY.csv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file"
                     ]
                 },
                 {
@@ -68917,7 +69170,8 @@
                     "name": "SemMedDB Predication CSV",
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/PREDICATION.csv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file"
                     ]
                 },
                 {
@@ -68928,7 +69182,8 @@
                     "name": "SemMedDB Sentence CSV",
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file"
                     ]
                 },
                 {
@@ -69226,7 +69481,7 @@
                         "diseases",
                         "drugcentral",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "reactome",
                         "lincs-l1000",
                         "uberon",
@@ -69272,7 +69527,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",
@@ -69305,7 +69560,7 @@
                         "drugbank",
                         "dsstox",
                         "go",
-                        "gwas-catalog",
+                        "gwascatalog",
                         "hrpimp",
                         "lincs-l1000",
                         "mesh",

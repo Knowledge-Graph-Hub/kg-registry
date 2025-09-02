@@ -212,7 +212,7 @@ products:
   - uniprot
   - disgenet
   - hp
-  - gwascat
+  - gwascatalog
   - phewascat
   - ukbiobank
   - finngen
