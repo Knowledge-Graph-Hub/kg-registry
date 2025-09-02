@@ -793,6 +793,11 @@ enums:
           format, which a format for mapping between different ontologies and other
           identifier systems.
         meaning: https://mapping-commons.github.io/sssom/
+      svg:
+        text: svg
+        description: The Scalable Vector Graphics (SVG) format, an XML-based format
+          for describing two-dimensional vector graphics.
+        meaning: edam:3604
       trapi-jsonl:
         text: trapi-jsonl
         description: The Translator Reasoner API (TRAPI) format, which is a JSON Lines
