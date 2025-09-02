@@ -1137,7 +1137,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -1166,7 +1166,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -1229,7 +1229,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -1258,7 +1258,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -1847,6 +1847,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: RNA-Seq data processed and formatted for the Bgee database
@@ -1862,6 +1864,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
       to URL'
   - category: Product
     compression: zip
@@ -1879,6 +1883,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: In Situ Hybridization data in the Bgee database
@@ -1894,6 +1900,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
       to URL'
   - category: Product
     compression: zip
@@ -1911,6 +1919,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: Single-cell RNA-Seq processed data in the Bgee database
@@ -1926,6 +1936,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
+      to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
       to URL'
   - category: Product
     compression: zip
@@ -1943,6 +1955,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
+      to URL'
   - category: Product
     compression: zip
     description: RDF version of the Bgee data for semantic web applications
@@ -1959,6 +1973,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
+      to URL'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.
@@ -1973,7 +1989,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -2015,7 +2031,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -2044,7 +2060,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -3377,7 +3393,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -5575,7 +5591,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -5908,10 +5924,10 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
+      to URL'
   - category: Product
     description: Cell markers of different cell types from different tissues in mouse
     id: cellmarker.mouse
@@ -5920,10 +5936,10 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
+      to URL'
   - category: Product
     description: Cell markers derived from single-cell sequencing researches in human
       and mouse
@@ -5933,10 +5949,10 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
+      to URL'
   - category: Product
     description: All cell markers of different cell types from different tissues in
       human and mouse
@@ -5946,10 +5962,10 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-08-30: No Content-Length
-      header found'
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: Timeout connecting
+      to URL'
   - category: GraphicalInterface
     description: ACT is a tool that makes cell type annotation easier by integrating
       the CellMarker resource.
@@ -6084,6 +6100,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Complete Cellosaurus data in RDF format using the Turtle syntax
     format: ttl
@@ -6096,6 +6114,8 @@ resources:
     - cellosaurus
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
     description: RESTful API for programmatic access to Cellosaurus data
@@ -6235,6 +6255,8 @@ resources:
     - cgnc
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: Product
     description: cgnc OBO
@@ -7266,7 +7288,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -7561,6 +7583,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   repository: https://github.com/monarch-initiative/monochrom/
 - activity_status: active
   category: DataSource
@@ -7776,7 +7800,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -8113,7 +8137,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -8738,7 +8762,7 @@ resources:
     - uniprot
     - disgenet
     - hp
-    - gwascat
+    - gwascatalog
     - phewascat
     - ukbiobank
     - finngen
@@ -9711,7 +9735,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -9755,7 +9779,7 @@ resources:
     - uniprot
     - disgenet
     - hp
-    - gwascat
+    - gwascatalog
     - phewascat
     - ukbiobank
     - finngen
@@ -9803,6 +9827,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Zarin DA
@@ -10031,7 +10057,7 @@ resources:
     - uniprot
     - disgenet
     - hp
-    - gwascat
+    - gwascatalog
     - phewascat
     - ukbiobank
     - finngen
@@ -11677,18 +11703,18 @@ resources:
       Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
-    - 'File was not able to be retrieved when checked on 2025-08-30: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-01: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
     - 'File was not able to be retrieved when checked on 2025-08-26: Timeout connecting
       to URL'
-    - 'File was not able to be retrieved when checked on 2025-09-01: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-02: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
-      verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
+      verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Core dataset of manually curated, non-redundant protein complexes
       in CORUM in tab-delimited format
@@ -11705,16 +11731,16 @@ resources:
       Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
-    - 'File was not able to be retrieved when checked on 2025-08-30: Error connecting
-      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
-      Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
-      by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
-      verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
     - 'File was not able to be retrieved when checked on 2025-09-01: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
       verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
+    - 'File was not able to be retrieved when checked on 2025-09-02: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused
+      by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
+      verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Dataset of all CORUM protein complexes in PSI-MI XML format (Proteomics
       Standards Initiative)
@@ -11731,16 +11757,16 @@ resources:
       Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1000)'')))'
-    - 'File was not able to be retrieved when checked on 2025-08-30: Error connecting
-      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
-      Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
-      ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
     - 'File was not able to be retrieved when checked on 2025-09-01: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1017)'')))'
+    - 'File was not able to be retrieved when checked on 2025-09-02: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1,
+      ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Dataset of all CORUM protein complexes in PSI-MI MITAB 2.5 format
     format: psi_mi_mitab
@@ -11756,16 +11782,16 @@ resources:
       Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1000)'')))'
-    - 'File was not able to be retrieved when checked on 2025-08-30: Error connecting
-      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
-      Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
-      ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
     - 'File was not able to be retrieved when checked on 2025-09-01: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
       local issuer certificate (_ssl.c:1017)'')))'
+    - 'File was not able to be retrieved when checked on 2025-09-02: Error connecting
+      to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
+      Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1,
+      ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
       entities and their associations
@@ -14715,7 +14741,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -14836,7 +14862,7 @@ resources:
     - uniprot
     - disgenet
     - hp
-    - gwascat
+    - gwascatalog
     - phewascat
     - ukbiobank
     - finngen
@@ -15025,7 +15051,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -15054,7 +15080,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -15433,7 +15459,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -15602,7 +15628,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -15631,7 +15657,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -16069,7 +16095,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -16196,7 +16222,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -16225,7 +16251,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -16485,7 +16511,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -16662,6 +16688,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -16678,6 +16706,8 @@ resources:
     - mind
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -16696,6 +16726,8 @@ resources:
     - mind
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -16742,6 +16774,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Ursu O
@@ -16885,6 +16919,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
     format: http
@@ -16898,7 +16934,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -16927,7 +16963,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -19468,7 +19504,7 @@ resources:
     - uniprot
     - disgenet
     - hp
-    - gwascat
+    - gwascatalog
     - phewascat
     - ukbiobank
     - finngen
@@ -19694,6 +19730,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: Product
     compression: targz
     description: Complete FooDB database in XML format
@@ -19710,6 +19748,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Complete FooDB database in JSON format
@@ -19726,6 +19766,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: Product
     compression: targz
     description: Complete FooDB database as MySQL dump
@@ -19741,6 +19783,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Experimental C-MS Spectra data from FooDB
@@ -19756,6 +19800,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Predicted C-MS Spectra data from FooDB
@@ -19771,6 +19817,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Experimental MS-MS Spectra data from FooDB
@@ -19786,6 +19834,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Predicted MS-MS Spectra data from FooDB
@@ -19801,6 +19851,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: NMR Spectra data from FooDB
@@ -19816,6 +19868,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Free Induction Decay (FID) files from FooDB
@@ -19830,6 +19884,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-28: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -19846,6 +19902,8 @@ resources:
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.
@@ -19860,7 +19918,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -20098,6 +20156,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.
@@ -20112,7 +20172,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -20898,6 +20958,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   publications:
   - authors:
     - Alocci D
@@ -21280,7 +21342,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -21407,7 +21469,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -21436,7 +21498,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -23049,6 +23111,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: ProgrammingInterface
     connection_url: http://api.geneontology.org/api/
     description: Programmatic access to GO-CAM models through the Gene Ontology API
@@ -23126,6 +23190,8 @@ resources:
     - goldterms
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     format: owl
@@ -23449,6 +23515,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: Product
     description: Complete list of ligands including drugs, small molecules, and other
       bioactive compounds
@@ -23461,6 +23529,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: Product
     description: Comprehensive dataset of all interactions between ligands and targets
     format: csv
@@ -23472,6 +23542,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: Product
     description: Detailed interactions list for approved drugs and their targets
     format: csv
@@ -23483,6 +23555,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: Product
     description: SDF file containing chemical structures with SMILES for all ligands
       in the database
@@ -23495,6 +23569,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: Product
     description: RDF/linked data format of the GtoPdb data (target-ligand interactions
       with supporting information)
@@ -23507,6 +23583,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: Product
     description: Complete PostgreSQL database dump of the current Guide to Pharmacology
       database
@@ -23518,6 +23596,8 @@ resources:
       header found'
     - 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: GraphicalInterface
     description: An extension of the Guide to PHARMACOLOGY database providing immunological
       access-point to GtoPdb data
@@ -23721,193 +23801,165 @@ resources:
     year: '2025'
 - activity_status: active
   category: DataSource
-  description: Stub Resource page for gwas-catalog. This page was automatically generated
-    because it was referenced by other resources.
-  domains:
-  - stub
-  id: gwas-catalog
-  layout: resource_detail
-  name: Gwas-catalog
-  products:
-  - category: GraphProduct
-    description: The SPOKE knowledge graph containing nodes and edges from multiple
-      biomedical data sources.
-    id: spoke.graph
-    name: SPOKE Graph
-    original_source:
-    - ncbigene
-    - medline
-    - mesh
-    - pid
-    - do
-    - diseases
-    - drugcentral
-    - go
-    - gwas-catalog
-    - reactome
-    - lincs-l1000
-    - uberon
-    - wikipathways
-    - bindingdb
-    - drugbank
-    - sider
-    - bgee
-    - uniprot
-    - string
-    - omim
-    - chembl
-    - foodb
-    - civic
-    - gdsc
-    - clinicaltrialsgov
-    - hpa
-    - cl
-    - kegg
-    - metacyc
-    - bv-brc
-    - ncbitaxon
-    - pathophenodb
-    - pfam
-    - interpro
-    - protcid
-    secondary_source:
-    - spoke
-  - category: GraphicalInterface
-    description: A browser interface for a knowledge graph for Alzheimer's Disease.
-    format: http
-    id: alzkb.browser
-    name: AlzKB Graph Database Browser
-    original_source:
-    - aop-db
-    - bgee
-    - disgenet
-    - do
-    - drugbank
-    - dsstox
-    - go
-    - gwas-catalog
-    - hrpimp
-    - lincs-l1000
-    - mesh
-    - ncbigene
-    - pharmacotherapydb
-    - pid
-    - pubchem
-    - reactome
-    - sider
-    - tissues
-    - uberon
-    - wikipathways
-    product_url: https://alzkb.ai:7473/login
-    secondary_source:
-    - alzkb
-    - hetionet
-  - category: GraphProduct
-    description: Memgraph data release for AlzKB.
-    id: alzkb.data
-    name: AlzKB Data Release (Version 2.0.0)
-    original_source:
-    - aop-db
-    - bgee
-    - disgenet
-    - do
-    - drugbank
-    - dsstox
-    - go
-    - gwas-catalog
-    - hrpimp
-    - lincs-l1000
-    - mesh
-    - ncbigene
-    - pharmacotherapydb
-    - pid
-    - pubchem
-    - reactome
-    - reactome
-    - sider
-    - tissues
-    - uberon
-    - wikipathways
-    product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
-    secondary_source:
-    - alzkb
-    - hetionet
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
-- activity_status: active
-  category: DataSource
-  description: Stub Resource page for gwascat. This page was automatically generated
-    because it was referenced by other resources.
-  domains:
-  - stub
-  id: gwascat
-  layout: resource_detail
-  name: Gwascat
-  products:
-  - category: GraphProduct
-    description: DisGeNET data, including gene to disease associations and variant
-      to disease associations (requires registration and subscription).
-    id: disgenet.data
-    name: DisGeNET Data
-    original_source:
-    - clingen
-    - clinvar
-    - mgd
-    - rgd
-    - orphanet
-    - psygenet
-    - uniprot
-    - disgenet
-    - hp
-    - gwascat
-    - phewascat
-    - ukbiobank
-    - finngen
-    - clinicaltrialsgov
-    product_url: https://www.disgenet.com/
-    secondary_source:
-    - disgenet
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
-- activity_status: active
-  category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: gwas-info@ebi.ac.uk
+    - contact_type: url
+      value: https://www.ebi.ac.uk/gwas/
+    label: NHGRI-EBI GWAS Catalog Team
   creation_date: '2025-07-20T00:00:00Z'
-  description: Stub Resource page for gwascatalog. This page was automatically generated
-    because it was referenced by other resources.
+  description: The NHGRI-EBI GWAS Catalog is a curated, searchable, and freely available
+    database of SNP-trait associations from published and submitted genome-wide association
+    studies. Expert curators extract reported traits, significant variant-trait associations,
+    and study metadata, providing an integrated resource updated on a weekly cycle
+    and accessible via web interfaces, bulk downloads, summary statistics, and a REST
+    API.
   domains:
-  - stub
+  - genomics
+  - health
+  - biomedical
+  - investigations
+  homepage_url: https://www.ebi.ac.uk/gwas/
   id: gwascatalog
-  last_modified_date: '2025-07-20T00:00:00Z'
+  last_modified_date: '2025-09-02T00:00:00Z'
   layout: resource_detail
-  name: Gwascatalog
+  license:
+    id: https://www.ebi.ac.uk/about/terms-of-use
+    label: EMBL-EBI Terms of Use (summary statistics CC0 unless otherwise stated)
+  name: GWAS Catalog
   products:
-  - category: ProcessProduct
-    description: INDRA CoGEx is a graph database integrating causal relations, ontological
-      relations, properties, and data, assembled at scale automatically from the scientific
-      literature and structured sources. This is the code to build the graph.
-    id: indra.cogex.code
-    name: INDRA CoGEx Build Code
+  - category: GraphicalInterface
+    description: Web interface for searching, browsing, and visualizing curated GWAS
+      variant-trait associations and study metadata
+    format: http
+    id: gwascatalog.web
+    name: GWAS Catalog Web Portal
     original_source:
-    - chembl
-    - sider
-    - reactome
-    - wikipathways
-    - hp
-    - nihreporter
-    - disgenet
-    - pubmed
     - gwascatalog
-    - cellmarker
-    - go
-    - bgee
-    - ccle
-    - clinicaltrialsgov
-    - indra
-    product_url: https://github.com/gyorilab/indra_cogex
+    product_url: https://www.ebi.ac.uk/gwas/
+  - category: ProgrammingInterface
+    description: REST API providing programmatic access to GWAS Catalog studies, associations,
+      variants, traits, and summary statistics metadata
+    id: gwascatalog.api
+    is_public: true
+    name: GWAS Catalog REST API v2
+    original_source:
+    - gwascatalog
+    product_url: https://www.ebi.ac.uk/gwas/docs/api
+  - category: Product
+    description: Full data dump of GWAS Catalog associations in tab-delimited format
+      (SNP-trait association data)
+    format: tsv
+    id: gwascatalog.associations.tsv
+    name: GWAS Catalog Associations TSV
+    original_source:
+    - gwascatalog
+    product_file_size: 482336061
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.tsv
+  - category: Product
+    description: Full data dump of GWAS Catalog associations in JSON format
+    format: json
+    id: gwascatalog.associations.json
+    name: GWAS Catalog Associations JSON
+    original_source:
+    - gwascatalog
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.json
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
+  - category: Product
+    description: Study metadata file containing per-study information for GWAS Catalog
+      entries
+    format: tsv
+    id: gwascatalog.studies.tsv
+    name: GWAS Catalog Studies TSV
+    original_source:
+    - gwascatalog
+    product_file_size: 48604130
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-studies.tsv
+  - category: Product
+    description: Variant metadata file containing per-variant information (e.g., rsIDs)
+      present in the GWAS Catalog
+    format: tsv
+    id: gwascatalog.variants.tsv
+    name: GWAS Catalog Variants TSV
+    original_source:
+    - gwascatalog
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-variants.tsv
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
+  - category: Product
+    description: EFO trait mapping file linking GWAS Catalog reported traits to Experimental
+      Factor Ontology terms
+    format: tsv
+    id: gwascatalog.traits_efo.tsv
+    name: GWAS Catalog Trait EFO Mappings TSV
+    original_source:
+    - gwascatalog
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
+  - category: Product
+    description: RDF/OWL representation of GWAS Catalog associations enabling semantic
+      integration
+    format: owl
+    id: gwascatalog.associations.owl
+    name: GWAS Catalog Associations OWL
+    original_source:
+    - gwascatalog
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.owl.gz
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
+  - category: DocumentationProduct
+    description: Compressed GWAS Catalog diagram (karyotype visualization) in SVG
+      format (current release)
+    format: svg
+    id: gwascatalog.diagram.current
+    name: GWAS Catalog Diagram (Current SVG)
+    original_source:
+    - gwascatalog
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram.svg
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
+  - category: DocumentationProduct
+    description: Archive of previous GWAS Catalog diagram versions (SVG format)
+    format: svg
+    id: gwascatalog.diagram.archive
+    name: GWAS Catalog Diagram Archive
+    original_source:
+    - gwascatalog
+    product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram-archive.zip
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
+  - category: DocumentationProduct
+    description: Harmonised summary statistics landing page (FTP directory containing
+      per-study summary statistics under CC0 where available)
+    id: gwascatalog.summary_statistics.ftp
+    name: GWAS Catalog Summary Statistics FTP
+    original_source:
+    - gwascatalog
+    product_url: ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-09-02: Error connecting
+      to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'''
+  - category: GraphProduct
+    description: GWASCatalog Automat
+    format: kgx-jsonl
+    id: automat.gwascatalog
+    infores_id: automat-gwas-catalog
+    name: gwascatalog_automat
+    original_source:
+    - gwascatalog
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/GWASCatalog_Automat/e30aceb322a33462/
     secondary_source:
-    - indra
+    - automat
   - category: GraphProduct
     description: Neo4j database dump of the Clinical Knowledge Graph and additional
       relationships
@@ -23954,20 +24006,157 @@ resources:
     - ms
     - uo
     product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-  - category: GraphProduct
-    description: GWASCatalog Automat
-    format: kgx-jsonl
-    id: automat.gwascatalog
-    infores_id: automat-gwas-catalog
-    name: gwascatalog_automat
+  - category: ProcessProduct
+    description: INDRA CoGEx is a graph database integrating causal relations, ontological
+      relations, properties, and data, assembled at scale automatically from the scientific
+      literature and structured sources. This is the code to build the graph.
+    id: indra.cogex.code
+    name: INDRA CoGEx Build Code
     original_source:
+    - chembl
+    - sider
+    - reactome
+    - wikipathways
+    - hp
+    - nihreporter
+    - disgenet
+    - pubmed
     - gwascatalog
-    product_url: https://stars.renci.org/var/plater/bl-4.2.1/GWASCatalog_Automat/e30aceb322a33462/
+    - cellmarker
+    - go
+    - bgee
+    - ccle
+    - clinicaltrialsgov
+    - indra
+    product_url: https://github.com/gyorilab/indra_cogex
     secondary_source:
-    - automat
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+    - indra
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - do
+    - diseases
+    - drugcentral
+    - go
+    - gwascatalog
+    - reactome
+    - lincs-l1000
+    - uberon
+    - wikipathways
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
+    secondary_source:
+    - spoke
+  - category: GraphProduct
+    description: DisGeNET data, including gene to disease associations and variant
+      to disease associations (requires registration and subscription).
+    id: disgenet.data
+    name: DisGeNET Data
+    original_source:
+    - clingen
+    - clinvar
+    - mgd
+    - rgd
+    - orphanet
+    - psygenet
+    - uniprot
+    - disgenet
+    - hp
+    - gwascatalog
+    - phewascat
+    - ukbiobank
+    - finngen
+    - clinicaltrialsgov
+    product_url: https://www.disgenet.com/
+    secondary_source:
+    - disgenet
+  - category: GraphicalInterface
+    description: A browser interface for a knowledge graph for Alzheimer's Disease.
+    format: http
+    id: alzkb.browser
+    name: AlzKB Graph Database Browser
+    original_source:
+    - aop-db
+    - bgee
+    - disgenet
+    - do
+    - drugbank
+    - dsstox
+    - go
+    - gwascatalog
+    - hrpimp
+    - lincs-l1000
+    - mesh
+    - ncbigene
+    - pharmacotherapydb
+    - pid
+    - pubchem
+    - reactome
+    - sider
+    - tissues
+    - uberon
+    - wikipathways
+    product_url: https://alzkb.ai:7473/login
+    secondary_source:
+    - alzkb
+    - hetionet
+  - category: GraphProduct
+    description: Memgraph data release for AlzKB.
+    id: alzkb.data
+    name: AlzKB Data Release (Version 2.0.0)
+    original_source:
+    - aop-db
+    - bgee
+    - disgenet
+    - do
+    - drugbank
+    - dsstox
+    - go
+    - gwascatalog
+    - hrpimp
+    - lincs-l1000
+    - mesh
+    - ncbigene
+    - pharmacotherapydb
+    - pid
+    - pubchem
+    - reactome
+    - reactome
+    - sider
+    - tissues
+    - uberon
+    - wikipathways
+    product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
+    secondary_source:
+    - alzkb
+    - hetionet
 - activity_status: active
   category: DataSource
   description: Stub Resource page for hancestro. This page was automatically generated
@@ -24175,7 +24364,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -24204,7 +24393,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -24330,6 +24519,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: hgnc OBO Graph JSON
     format: json
@@ -24345,6 +24536,8 @@ resources:
     - obo-db-ingest
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: hgnc SSSOM
@@ -24422,6 +24615,8 @@ resources:
     - scibite
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -25208,7 +25403,7 @@ resources:
     - uniprot
     - disgenet
     - hp
-    - gwascat
+    - gwascatalog
     - phewascat
     - ukbiobank
     - finngen
@@ -26247,7 +26442,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -26662,7 +26857,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -26691,7 +26886,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -26933,6 +27128,8 @@ resources:
     product_url: https://avr.hubmapconsortium.org/
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 401 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 401 error
       when accessing file'
   - category: Product
     description: Data submission portal for registering and ingesting consortium data
@@ -28473,7 +28670,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -28912,7 +29109,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -29105,6 +29302,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error
+      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 - activity_status: active
   category: KnowledgeGraph
@@ -29199,6 +29398,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
   category: KnowledgeGraph
@@ -29284,6 +29485,8 @@ resources:
     - kg-microbe
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -30838,7 +31041,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -30880,7 +31083,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -30909,7 +31112,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -30988,6 +31191,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 503 error
+      when accessing file'
   - category: DataModelProduct
     description: Archive of past LOINC releases for version-specific implementations
     format: mixed
@@ -30999,6 +31204,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 503 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 503 error
+      when accessing file'
   - category: DocumentationProduct
     description: LOINC Mission, Vision, and Guiding Principles for open terminology
       development (CC-BY 4.0 licensed document)
@@ -31009,6 +31216,8 @@ resources:
     product_url: https://loinc.org/principles/
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 503 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 503 error
       when accessing file'
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
@@ -32149,6 +32358,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -32165,6 +32376,8 @@ resources:
     - mind
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -32183,6 +32396,8 @@ resources:
     - mind
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -32355,7 +32570,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -32411,7 +32626,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -32453,7 +32668,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -32482,7 +32697,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -32640,7 +32855,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -32728,6 +32943,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: Product
     description: MNXref unified namespace for reactions across databases
     format: tsv
@@ -32740,6 +32957,8 @@ resources:
     - metanetx
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -32825,7 +33044,7 @@ resources:
     - uniprot
     - disgenet
     - hp
-    - gwascat
+    - gwascatalog
     - phewascat
     - ukbiobank
     - finngen
@@ -33167,6 +33386,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
     format: tsv
@@ -33183,6 +33404,8 @@ resources:
     - mind
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -33201,6 +33424,8 @@ resources:
     - mind
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -35171,7 +35396,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -35213,7 +35438,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -35242,7 +35467,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -35574,7 +35799,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -37777,6 +38002,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: clinicaltrials OWL
     format: owl
@@ -37789,6 +38016,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: clinicaltrials OBO Graph JSON
     format: json
@@ -37800,6 +38029,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: clinicaltrials SSSOM
@@ -38210,6 +38441,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: gtdb OWL
     format: owl
@@ -38270,6 +38503,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: hgnc OBO Graph JSON
     format: json
@@ -38285,6 +38520,8 @@ resources:
     - obo-db-ingest
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: hgnc SSSOM
@@ -38463,6 +38700,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: itis OBO Graph JSON
     format: json
@@ -38474,6 +38713,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/itis/itis.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: Product
     description: kegg.genome OBO
@@ -38527,6 +38768,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: mesh OBO Graph JSON
     format: json
@@ -38538,6 +38781,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: Product
     description: mgi OBO
@@ -38551,6 +38796,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: mgi OWL
     format: owl
@@ -38563,6 +38810,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: mgi OBO Graph JSON
     format: json
@@ -38574,6 +38823,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: mgi SSSOM
@@ -38707,6 +38958,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: msigdb OWL
     format: owl
@@ -38719,6 +38972,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: msigdb OBO Graph JSON
     format: json
@@ -38730,6 +38985,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: msigdb SSSOM
@@ -38790,6 +39047,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: nihreporter.project OWL
     format: owl
@@ -38799,6 +39058,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: nihreporter.project OBO Graph JSON
     format: json
@@ -38807,6 +39068,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: Product
     description: nlm OBO
@@ -38960,6 +39223,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: pathbank OWL
     format: owl
@@ -38972,6 +39237,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: pathbank OBO Graph JSON
     format: json
@@ -38983,6 +39250,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: pathbank SSSOM
@@ -39393,6 +39662,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: reactome OBO Graph JSON
     format: json
@@ -39404,6 +39675,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: Product
     description: rgd OBO
@@ -39475,6 +39748,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: rhea OBO Graph JSON
     format: json
@@ -39490,6 +39765,8 @@ resources:
     - obo-db-ingest
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: Rhea SSSOM
@@ -39532,6 +39809,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: ror OBO Graph JSON
     format: json
@@ -39543,6 +39822,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/ror/ror.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: ror SSSOM
@@ -39626,6 +39907,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: slm OWL
     format: owl
@@ -39638,6 +39921,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: slm OBO Graph JSON
     format: json
@@ -39649,6 +39934,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/slm/slm.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: slm SSSOM
@@ -39693,6 +39980,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: uniprot OWL
     format: owl
@@ -39705,6 +39994,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: uniprot OBO Graph JSON
     format: json
@@ -39716,6 +40007,8 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.json
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: uniprot SSSOM
@@ -39827,6 +40120,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: zfin OBO Graph JSON
     format: json
@@ -39842,6 +40137,8 @@ resources:
     - obo-db-ingest
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: zfin SSSOM
@@ -40605,6 +40902,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: OMA orthology groups in OrthoXML format
     format: xml
@@ -40622,6 +40921,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: Hierarchical Orthologous Groups (HOGs) in OrthoXML format
     format: xml
@@ -40639,6 +40940,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: Pairwise orthologs in tab-separated text format
@@ -40657,6 +40960,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: Protein sequences from all genomes in FASTA format
@@ -40675,6 +40980,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: cDNA sequences for Eukaryotic genomes in FASTA format
@@ -40693,6 +41000,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-12: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: gzip
     description: cDNA sequences for Prokaryotic genomes in FASTA format
@@ -40711,6 +41020,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: OMA Browser database in HDF5 format
     id: oma.hdf5
@@ -40724,6 +41035,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -40742,6 +41055,8 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
     - 'File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     compression: gzip
@@ -40762,6 +41077,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
 - activity_status: active
   category: DataSource
   contacts:
@@ -40830,7 +41147,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -42249,7 +42566,7 @@ resources:
     - uniprot
     - disgenet
     - hp
-    - gwascat
+    - gwascatalog
     - phewascat
     - ukbiobank
     - finngen
@@ -43394,7 +43711,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -44180,7 +44497,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -44483,7 +44800,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -44512,7 +44829,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -45329,6 +45646,8 @@ resources:
     - phenio
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compatibility:
@@ -46150,7 +46469,7 @@ resources:
     - uniprot
     - disgenet
     - hp
-    - gwascat
+    - gwascatalog
     - phewascat
     - ukbiobank
     - finngen
@@ -46246,7 +46565,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -46288,7 +46607,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -46317,7 +46636,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -46616,6 +46935,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: Product
     description: Tab-delimited file of systematic ID, primary gene name (where assigned),
       chromosome, product description, UniProtKB accession, all synonyms, and product
@@ -46634,6 +46955,8 @@ resources:
     - pombase
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
+      header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
       header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
@@ -47773,6 +48096,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error
+      when accessing file'
   repository: https://github.com/mims-harvard/PrimeKG
 - activity_status: active
   category: DataSource
@@ -47945,7 +48270,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -48132,7 +48457,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -48161,7 +48486,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -48691,7 +49016,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -48945,7 +49270,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -48974,7 +49299,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -50199,6 +50524,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: GraphicalInterface
     description: Interactive web interface for exploring RepoDB data with drug-centric  and
       disease-centric search capabilities
@@ -50342,7 +50669,7 @@ resources:
     - uniprot
     - disgenet
     - hp
-    - gwascat
+    - gwascatalog
     - phewascat
     - ukbiobank
     - finngen
@@ -50401,6 +50728,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: rhea OBO Graph JSON
     format: json
@@ -50416,6 +50745,8 @@ resources:
     - obo-db-ingest
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: Rhea SSSOM
@@ -51400,6 +51731,8 @@ resources:
     - scibite
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
 - activity_status: active
   category: DataSource
@@ -52954,7 +53287,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -53512,7 +53845,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -54525,6 +54858,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   repository: ''
 - activity_status: active
   category: DataSource
@@ -54549,7 +54884,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -54578,7 +54913,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -55211,7 +55546,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -55465,7 +55800,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -55494,7 +55829,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -56222,7 +56557,7 @@ resources:
     - uniprot
     - disgenet
     - hp
-    - gwascat
+    - gwascatalog
     - phewascat
     - ukbiobank
     - finngen
@@ -56422,6 +56757,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: No Content-Length
       header found'
+    - 'File was not able to be retrieved when checked on 2025-09-02: No Content-Length
+      header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
       protein-coding gene mapped to the corresponding UniProt accession number
@@ -56469,6 +56806,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-13: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.
@@ -56483,7 +56822,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -56739,7 +57078,7 @@ resources:
     - uniprot
     - disgenet
     - hp
-    - gwascat
+    - gwascatalog
     - phewascat
     - ukbiobank
     - finngen
@@ -56967,6 +57306,8 @@ resources:
       when accessing file'
     - 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
       to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 502 error
+      when accessing file'
   - category: GraphicalInterface
     description: Browse UO with Ontology Lookup Service (OLS)
     format: http
@@ -57606,7 +57947,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -57810,7 +58151,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -57839,7 +58180,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -58935,6 +59276,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
+      when accessing file'
   - category: Product
     description: zfin OBO Graph JSON
     format: json
@@ -58950,6 +59293,8 @@ resources:
     - obo-db-ingest
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: zfin SSSOM
@@ -59788,7 +60133,7 @@ resources:
     - uniprot
     - disgenet
     - hp
-    - gwascat
+    - gwascatalog
     - phewascat
     - ukbiobank
     - finngen
@@ -59919,6 +60264,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error
+      when accessing file'
   - category: Product
     description: CSV file containing citation information for all PubMed articles
       in SemMedDB
@@ -59928,6 +60275,8 @@ resources:
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing entity information with UMLS concept identifiers,
@@ -59939,6 +60288,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error
+      when accessing file'
   - category: Product
     description: CSV file containing semantic predications with subject-predicate-object
       triples and associated metadata
@@ -59949,6 +60300,8 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
       when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error
+      when accessing file'
   - category: Product
     description: CSV file containing sentence information from PubMed citations
     format: csv
@@ -59957,6 +60310,8 @@ resources:
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv
     warnings:
     - 'File was not able to be retrieved when checked on 2025-09-01: HTTP 403 error
+      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error
       when accessing file'
   - category: ProcessProduct
     description: The SemRep natural language processing system that extracts semantic
@@ -60206,7 +60561,7 @@ resources:
     - diseases
     - drugcentral
     - go
-    - gwas-catalog
+    - gwascatalog
     - reactome
     - lincs-l1000
     - uberon
@@ -60248,7 +60603,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh
@@ -60277,7 +60632,7 @@ resources:
     - drugbank
     - dsstox
     - go
-    - gwas-catalog
+    - gwascatalog
     - hrpimp
     - lincs-l1000
     - mesh

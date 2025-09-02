@@ -14,7 +14,7 @@ original_source:
 - uniprot
 - disgenet
 - hp
-- gwascat
+- gwascatalog
 - phewascat
 - ukbiobank
 - finngen

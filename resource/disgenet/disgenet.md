@@ -42,7 +42,7 @@ products:
   - uniprot
   - disgenet
   - hp
-  - gwascat
+  - gwascatalog
   - phewascat
   - ukbiobank
   - finngen
@@ -231,7 +231,7 @@ products:
   - drugbank
   - dsstox
   - go
-  - gwas-catalog
+  - gwascatalog
   - hrpimp
   - lincs-l1000
   - mesh
@@ -260,7 +260,7 @@ products:
   - drugbank
   - dsstox
   - go
-  - gwas-catalog
+  - gwascatalog
   - hrpimp
   - lincs-l1000
   - mesh

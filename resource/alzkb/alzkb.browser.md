@@ -12,7 +12,7 @@ original_source:
 - drugbank
 - dsstox
 - go
-- gwas-catalog
+- gwascatalog
 - hrpimp
 - lincs-l1000
 - mesh

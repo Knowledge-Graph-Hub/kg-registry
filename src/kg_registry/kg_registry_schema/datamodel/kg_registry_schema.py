@@ -269,6 +269,10 @@ class FormatEnum(str, Enum):
     """
     The Simple Standard for Sharing Ontological Mappings (SSSOM) format, which a format for mapping between different ontologies and other identifier systems.
     """
+    svg = "svg"
+    """
+    The Scalable Vector Graphics (SVG) format, an XML-based format for describing two-dimensional vector graphics.
+    """
     trapi_jsonl = "trapi-jsonl"
     """
     The Translator Reasoner API (TRAPI) format, which is a JSON Lines format for TRAPI responses.

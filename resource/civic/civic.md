@@ -116,7 +116,7 @@ products:
   - diseases
   - drugcentral
   - go
-  - gwas-catalog
+  - gwascatalog
   - reactome
   - lincs-l1000
   - uberon
