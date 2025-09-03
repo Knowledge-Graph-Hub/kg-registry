@@ -1121,6 +1121,10 @@ products:
   name: interpro OBO
   product_file_size: 1166198
   product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.obo
+  original_source:
+  - interpro
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: interpro OWL
   format: owl
@@ -1131,6 +1135,10 @@ products:
   name: interpro OWL
   product_file_size: 1347709
   product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.owl
+  original_source:
+  - interpro
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: interpro OBO Graph JSON
   format: json
@@ -1141,6 +1149,10 @@ products:
   name: interpro OBO Graph JSON
   product_file_size: 1116474
   product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.json
+  original_source:
+  - interpro
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: itis OBO
   format: obo
@@ -1151,6 +1163,10 @@ products:
   name: itis OBO
   product_file_size: 10936424
   product_url: https://w3id.org/biopragmatics/resources/itis/itis.obo
+  original_source:
+  - itis
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: ITIS OWL
   format: owl
@@ -1161,6 +1177,10 @@ products:
     label: CC0-1.0
   name: ITIS OWL
   product_url: https://w3id.org/biopragmatics/resources/itis/itis.owl.gz
+  original_source:
+  - itis
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: ITIS OBO Graph JSON
   format: json
@@ -1171,6 +1191,10 @@ products:
     label: CC0-1.0
   name: ITIS OBO Graph JSON
   product_url: https://w3id.org/biopragmatics/resources/itis/itis.json.gz
+  original_source:
+  - itis
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: kegg.genome OBO
   format: obo
