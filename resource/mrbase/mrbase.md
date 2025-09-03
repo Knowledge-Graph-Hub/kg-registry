@@ -8,7 +8,10 @@ contacts:
     value: https://www.mrbase.org/
   label: MR-Base Team (MRC Integrative Epidemiology Unit, University of Bristol)
 creation_date: '2025-09-03T00:00:00Z'
-description: MR-Base is a platform that integrates a large database of harmonized GWAS summary association datasets with analytical tools (web apps and R packages) to support systematic two-sample Mendelian randomization (2SMR) and phenome-wide causal inference across the human phenome.
+description: MR-Base is a platform that integrates a large database of harmonized
+  GWAS summary association datasets with analytical tools (web apps and R packages)
+  to support systematic two-sample Mendelian randomization (2SMR) and phenome-wide
+  causal inference across the human phenome.
 domains:
 - health
 - biomedical
@@ -21,7 +24,8 @@ layout: resource_detail
 name: MR-Base
 products:
 - category: GraphicalInterface
-  description: Web home and informational landing page for MR-Base platform components and publications
+  description: Web home and informational landing page for MR-Base platform components
+    and publications
   format: http
   id: mrbase.home
   name: MR-Base Website
@@ -29,7 +33,8 @@ products:
   - mrbase
   product_url: https://www.mrbase.org/
 - category: GraphicalInterface
-  description: Interactive Shiny-based web application for performing two-sample Mendelian randomization analyses using curated GWAS summary datasets
+  description: Interactive Shiny-based web application for performing two-sample Mendelian
+    randomization analyses using curated GWAS summary datasets
   format: http
   id: mrbase.webapp
   is_public: true
@@ -38,7 +43,8 @@ products:
   - mrbase
   product_url: http://app.mrbase.org/
 - category: GraphicalInterface
-  description: Phenome-wide association study (PheWAS) web interface enabling exploration of SNP-trait associations and hypothesis-free MR scans
+  description: Phenome-wide association study (PheWAS) web interface enabling exploration
+    of SNP-trait associations and hypothesis-free MR scans
   format: http
   id: mrbase.phewas
   is_public: true
@@ -47,7 +53,8 @@ products:
   - mrbase
   product_url: https://gwas.mrcieu.ac.uk/phewas/
 - category: ProgrammingInterface
-  description: RESTful API providing programmatic access to harmonized GWAS summary statistics, LD proxy lookup, instruments, and MR result generation
+  description: RESTful API providing programmatic access to harmonized GWAS summary
+    statistics, LD proxy lookup, instruments, and MR result generation
   id: mrbase.api
   is_public: true
   name: MR-Base REST API
@@ -55,7 +62,8 @@ products:
   - mrbase
   product_url: http://api.mrbase.org/
 - category: ProgrammingInterface
-  description: TwoSampleMR R package supporting data extraction, harmonization, instrument selection, MR analysis methods, diagnostics, and reproducible code generation
+  description: TwoSampleMR R package supporting data extraction, harmonization, instrument
+    selection, MR analysis methods, diagnostics, and reproducible code generation
   id: mrbase.twosamplemr
   is_public: true
   name: TwoSampleMR R Package
@@ -65,7 +73,8 @@ products:
   secondary_source:
   - mrbase
 - category: ProgrammingInterface
-  description: MRInstruments R package containing curated instruments (top hits) across multiple GWAS and QTL sources for instrument selection
+  description: MRInstruments R package containing curated instruments (top hits) across
+    multiple GWAS and QTL sources for instrument selection
   id: mrbase.mrinstruments
   is_public: true
   name: MRInstruments R Package
@@ -73,7 +82,8 @@ products:
   - mrbase
   product_url: https://github.com/MRCIEU/MRInstruments
 - category: DocumentationProduct
-  description: TwoSampleMR package documentation with function reference, usage guides, and methodological notes
+  description: TwoSampleMR package documentation with function reference, usage guides,
+    and methodological notes
   format: http
   id: mrbase.twosamplemr.docs
   name: TwoSampleMR Documentation
@@ -81,14 +91,42 @@ products:
   - mrbase
   product_url: https://mrcieu.github.io/TwoSampleMR/
 - category: DocumentationProduct
-  description: Methods paper analysis reproduction code repository for MR-Base platform publication
+  description: Methods paper analysis reproduction code repository for MR-Base platform
+    publication
   id: mrbase.paper.reproducibility
   name: MR-Base Methods Paper Reproducibility Code
   original_source:
   - mrbase
   product_url: https://github.com/explodecomputer/mr-base-methods-paper
+- category: GraphProduct
+  description: Integrated graph knowledge base combining Mendelian randomization causal
+    estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships
+    (Neo4j backend)
+  format: neo4j
+  id: epigraphdb.graph
+  name: EpiGraphDB Graph Database
+  original_source:
+  - epigraphdb
+  - kg-monarch
+  - vectology
+  - ukbiobank
+  - prsatlas
+  - eqtlgen
+  - mondo
+  - gtex
+  - ensembl
+  - cpic
+  - opentargets
+  - efo
+  - semmeddb
+  - intact
+  - string
+  - reactome
+  - mrbase
+  product_url: https://docs.epigraphdb.org/graph-database/
+  secondary_source:
+  - epigraphdb
 ---
-
 ## Overview
 
 MR-Base integrates thousands of harmonized genome-wide association study (GWAS) summary datasets with analytical tooling for systematic two-sample Mendelian randomization (2SMR). The platform supports reproducible causal inference by coupling data extraction, instrument selection, harmonization, statistical analysis, sensitivity diagnostics, and reporting across a large and evolving catalog of phenotypes.

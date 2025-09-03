@@ -34,6 +34,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error
+    when accessing file'
 repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 ---
 KG-IDG: a Knowledge Graph for Illuminating the Druggable Genome.

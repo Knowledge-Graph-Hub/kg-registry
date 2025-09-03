@@ -2146,8 +2146,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -2166,8 +2166,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -2186,8 +2186,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -2206,8 +2206,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -2226,8 +2226,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -2246,8 +2246,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -2266,8 +2266,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -2286,8 +2286,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -6851,8 +6851,8 @@
                     "product_url": "http://xteam.xbio.top/download/Human_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -6863,8 +6863,8 @@
                     "product_url": "http://xteam.xbio.top/download/Mouse_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -6875,8 +6875,8 @@
                     "product_url": "http://xteam.xbio.top/download/Single_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -6887,8 +6887,8 @@
                     "product_url": "http://xteam.xbio.top/download/all_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-09-01: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -7060,7 +7060,8 @@
                         "cellosaurus"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -7077,7 +7078,8 @@
                         "cellosaurus"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -7249,7 +7251,8 @@
                         "cgnc"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -8809,7 +8812,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -11330,7 +11334,8 @@
                     "product_url": "https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -13406,9 +13411,9 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/allComplexes.txt.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
-                        "File was not able to be retrieved when checked on 2025-09-01: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
+                        "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
                         "File was not able to be retrieved when checked on 2025-08-26: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-09-03: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
                     ]
                 },
                 {
@@ -13424,8 +13429,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/coreComplexes.txt.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
-                        "File was not able to be retrieved when checked on 2025-09-01: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
-                        "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
+                        "File was not able to be retrieved when checked on 2025-09-03: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
                     ]
                 },
                 {
@@ -13441,8 +13446,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/psi.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
-                        "File was not able to be retrieved when checked on 2025-09-01: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
-                        "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
+                        "File was not able to be retrieved when checked on 2025-09-03: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
                     ]
                 },
                 {
@@ -13458,8 +13463,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/mitab.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
-                        "File was not able to be retrieved when checked on 2025-09-01: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
-                        "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
+                        "File was not able to be retrieved when checked on 2025-09-03: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
                     ]
                 },
                 {
@@ -13839,6 +13844,186 @@
                     "id": "doi:10.1093/jamiaopen/ooaf001",
                     "title": "Increased discoverability of rare disease datasets through knowledge graph integration",
                     "year": "2025"
+                }
+            ]
+        },
+        {
+            "activity_status": "active",
+            "category": "Resource",
+            "contacts": [
+                {
+                    "category": "Organization",
+                    "contact_details": [
+                        {
+                            "contact_type": "url",
+                            "value": "https://cpicpgx.org/contact/"
+                        },
+                        {
+                            "contact_type": "email",
+                            "value": "contact@cpicpgx.org"
+                        }
+                    ],
+                    "label": "Clinical Pharmacogenetics Implementation Consortium (CPIC)"
+                }
+            ],
+            "creation_date": "2025-09-03T00:00:00Z",
+            "description": "The Clinical Pharmacogenetics Implementation Consortium (CPIC) creates, curates, and disseminates freely available, peer-reviewed, evidence-based, and updatable clinical practice guidelines that translate patient pharmacogenetic test results into actionable prescribing decisions. CPIC also publishes structured gene–drug annotations, allele function data, standardized terminology resources, and implementation tools (database, API, SOPs, educational materials) to accelerate pharmacogenomics in clinical care.",
+            "domains": [
+                "biomedical",
+                "health",
+                "clinical",
+                "drug discovery"
+            ],
+            "homepage_url": "https://cpicpgx.org/",
+            "id": "cpic",
+            "last_modified_date": "2025-09-03T00:00:00Z",
+            "layout": "resource_detail",
+            "license": {
+                "id": "https://creativecommons.org/publicdomain/zero/1.0/",
+                "label": "CC0 1.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
+            },
+            "name": "CPIC",
+            "products": [
+                {
+                    "category": "GraphicalInterface",
+                    "description": "Main CPIC website portal providing access to guidelines, genes-drugs tables, alleles, publications, resources, and implementation information",
+                    "format": "http",
+                    "id": "cpic.portal",
+                    "name": "CPIC Website Portal",
+                    "original_source": [
+                        "cpic"
+                    ],
+                    "product_url": "https://cpicpgx.org/"
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "Peer-reviewed, evidence-based, updatable pharmacogenetic clinical practice guidelines translating genotype into prescribing recommendations",
+                    "id": "cpic.guidelines",
+                    "is_public": true,
+                    "name": "CPIC Clinical Practice Guidelines",
+                    "original_source": [
+                        "cpic"
+                    ],
+                    "product_url": "https://cpicpgx.org/guidelines/"
+                },
+                {
+                    "category": "DataProduct",
+                    "description": "Curated gene–drug pair tables linking pharmacogenes with affected medications and guideline recommendations",
+                    "id": "cpic.genes_drugs",
+                    "is_public": true,
+                    "name": "CPIC Genes-Drugs Tables",
+                    "original_source": [
+                        "cpic"
+                    ],
+                    "product_url": "https://cpicpgx.org/genes-drugs/"
+                },
+                {
+                    "category": "DataProduct",
+                    "description": "Allele function and diplotype-to-phenotype tables standardized for clinical pharmacogenetic test result interpretation",
+                    "id": "cpic.alleles",
+                    "is_public": true,
+                    "name": "CPIC Allele & Diplotype Function Tables",
+                    "original_source": [
+                        "cpic"
+                    ],
+                    "product_url": "https://cpicpgx.org/alleles/"
+                },
+                {
+                    "category": "ProgrammingInterface",
+                    "description": "Structured data (database and API) for CPIC guideline-derived gene–drug relationships, allele function, and standardized terms",
+                    "id": "cpic.api",
+                    "is_public": true,
+                    "name": "CPIC Database & API",
+                    "original_source": [
+                        "cpic"
+                    ],
+                    "product_url": "https://github.com/cpicpgx/cpic-data/wiki"
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "Standard operating procedure PDF for assigning allele function and translating diplotypes to phenotypes",
+                    "format": "pdf",
+                    "id": "cpic.sop",
+                    "name": "CPIC Pharmacogene Curation SOP",
+                    "original_source": [
+                        "cpic"
+                    ],
+                    "product_file_size": 812796,
+                    "product_url": "https://github.com/cpicpgx/cpic-sop/raw/main/CPIC%20Pharmacogene%20Curation%20SOP.pdf"
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "Overview slide deck describing CPIC assumptions, development process, and implementation guidance (PowerPoint)",
+                    "id": "cpic.overview.slides",
+                    "name": "CPIC Overview Presentation Slides",
+                    "original_source": [
+                        "cpic"
+                    ],
+                    "product_file_size": 8552272,
+                    "product_url": "https://files.cpicpgx.org/resources/CPIC-overview-updates-02.2025.pptx"
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "One-page summary document providing concise overview of CPIC mission and guideline process (DOCX)",
+                    "format": "docx",
+                    "id": "cpic.onepager",
+                    "name": "CPIC One-Page Summary",
+                    "original_source": [
+                        "cpic"
+                    ],
+                    "product_file_size": 160131,
+                    "product_url": "https://cpicpgx.org/wp-content/uploads/2025/07/CPIC-One-Page-CLEAN.docx"
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "Term standardization project resources for clinical pharmacogenetic test result terminology",
+                    "id": "cpic.term_standardization",
+                    "name": "CPIC Term Standardization Project",
+                    "original_source": [
+                        "cpic"
+                    ],
+                    "product_url": "https://cpicpgx.org/resources/term-standardization"
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "CYP2D6 genotype to phenotype translation project resources",
+                    "id": "cpic.cyp2d6_translation",
+                    "name": "CPIC CYP2D6 Genotype to Phenotype Project",
+                    "original_source": [
+                        "cpic"
+                    ],
+                    "product_url": "https://cpicpgx.org/resources/cyp2d6-genotype-to-phenotype-standardization-project/"
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)",
+                    "format": "neo4j",
+                    "id": "epigraphdb.graph",
+                    "name": "EpiGraphDB Graph Database",
+                    "original_source": [
+                        "epigraphdb",
+                        "kg-monarch",
+                        "vectology",
+                        "ukbiobank",
+                        "prsatlas",
+                        "eqtlgen",
+                        "mondo",
+                        "gtex",
+                        "ensembl",
+                        "cpic",
+                        "opentargets",
+                        "efo",
+                        "semmeddb",
+                        "intact",
+                        "string",
+                        "reactome",
+                        "mrbase"
+                    ],
+                    "product_url": "https://docs.epigraphdb.org/graph-database/",
+                    "secondary_source": [
+                        "epigraphdb"
+                    ]
                 }
             ]
         },
@@ -18978,7 +19163,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -19000,7 +19186,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -19022,7 +19209,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -19078,7 +19266,8 @@
                     "product_url": "https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -19256,7 +19445,8 @@
                     "name": "DSSToxDB Description",
                     "product_url": "https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -20752,6 +20942,36 @@
                     "secondary_source": [
                         "microbiomekg"
                     ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)",
+                    "format": "neo4j",
+                    "id": "epigraphdb.graph",
+                    "name": "EpiGraphDB Graph Database",
+                    "original_source": [
+                        "epigraphdb",
+                        "kg-monarch",
+                        "vectology",
+                        "ukbiobank",
+                        "prsatlas",
+                        "eqtlgen",
+                        "mondo",
+                        "gtex",
+                        "ensembl",
+                        "cpic",
+                        "opentargets",
+                        "efo",
+                        "semmeddb",
+                        "intact",
+                        "string",
+                        "reactome",
+                        "mrbase"
+                    ],
+                    "product_url": "https://docs.epigraphdb.org/graph-database/",
+                    "secondary_source": [
+                        "epigraphdb"
+                    ]
                 }
             ],
             "publications": [
@@ -21233,6 +21453,36 @@
                     "secondary_source": [
                         "rna-kg"
                     ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)",
+                    "format": "neo4j",
+                    "id": "epigraphdb.graph",
+                    "name": "EpiGraphDB Graph Database",
+                    "original_source": [
+                        "epigraphdb",
+                        "kg-monarch",
+                        "vectology",
+                        "ukbiobank",
+                        "prsatlas",
+                        "eqtlgen",
+                        "mondo",
+                        "gtex",
+                        "ensembl",
+                        "cpic",
+                        "opentargets",
+                        "efo",
+                        "semmeddb",
+                        "intact",
+                        "string",
+                        "reactome",
+                        "mrbase"
+                    ],
+                    "product_url": "https://docs.epigraphdb.org/graph-database/",
+                    "secondary_source": [
+                        "epigraphdb"
+                    ]
                 }
             ],
             "publications": [
@@ -21412,6 +21662,136 @@
             ],
             "warnings": [
                 "This is an automatically generated stub page. Please replace with accurate information about this resource."
+            ]
+        },
+        {
+            "activity_status": "active",
+            "category": "KnowledgeGraph",
+            "contacts": [
+                {
+                    "category": "Organization",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "feedback@epigraphdb.org"
+                        },
+                        {
+                            "contact_type": "url",
+                            "value": "https://docs.epigraphdb.org/"
+                        },
+                        {
+                            "contact_type": "github",
+                            "value": "https://github.com/MRCIEU/epigraphdb"
+                        }
+                    ],
+                    "label": "EpiGraphDB Team (MRC Integrative Epidemiology Unit, University of Bristol)"
+                }
+            ],
+            "creation_date": "2025-09-03T00:00:00Z",
+            "description": "EpiGraphDB is an analytical platform and graph database for health data science that integrates Mendelian randomization causal estimates across a wide range of phenotypes with diverse bioinformatic and epidemiological resources. It supports systematic causal inference, data mining, and exploration through a web application, API, R package, and curated graph knowledge base.",
+            "domains": [
+                "health",
+                "biomedical",
+                "genomics",
+                "investigations"
+            ],
+            "homepage_url": "https://epigraphdb.org/",
+            "id": "epigraphdb",
+            "last_modified_date": "2025-09-03T00:00:00Z",
+            "layout": "resource_detail",
+            "license": {
+                "id": "https://github.com/MRCIEU/epigraphdb",
+                "label": "Mixed"
+            },
+            "name": "EpiGraphDB",
+            "products": [
+                {
+                    "category": "GraphicalInterface",
+                    "description": "Web application for interactive exploration of EpiGraphDB including search, causal estimates, pathways, literature evidence, ontology, and visualization gallery",
+                    "format": "http",
+                    "id": "epigraphdb.web",
+                    "name": "EpiGraphDB Web UI",
+                    "original_source": [
+                        "epigraphdb"
+                    ],
+                    "product_url": "https://epigraphdb.org/"
+                },
+                {
+                    "category": "ProgrammingInterface",
+                    "description": "Public REST API for programmatic access to EpiGraphDB graph entities, relationships, causal estimates, and metadata",
+                    "id": "epigraphdb.api",
+                    "is_public": true,
+                    "name": "EpiGraphDB REST API",
+                    "original_source": [
+                        "epigraphdb"
+                    ],
+                    "product_url": "https://api.epigraphdb.org/"
+                },
+                {
+                    "category": "ProgrammingInterface",
+                    "description": "R client package providing higher-level access to EpiGraphDB API endpoints and analysis workflows",
+                    "id": "epigraphdb.rpackage",
+                    "is_public": true,
+                    "name": "epigraphdb R Package",
+                    "original_source": [
+                        "epigraphdb"
+                    ],
+                    "product_url": "https://mrcieu.github.io/epigraphdb-r/",
+                    "secondary_source": [
+                        "epigraphdb"
+                    ]
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "Example notebooks demonstrating EpiGraphDB use cases, including causal inference, pleiotropy assessment, drug target identification, literature triangulation, and metadata queries",
+                    "id": "epigraphdb.examples",
+                    "name": "EpiGraphDB Example Notebooks",
+                    "original_source": [
+                        "epigraphdb"
+                    ],
+                    "product_url": "https://github.com/MRCIEU/epigraphdb/tree/master/paper-case-studies"
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)",
+                    "format": "neo4j",
+                    "id": "epigraphdb.graph",
+                    "name": "EpiGraphDB Graph Database",
+                    "original_source": [
+                        "epigraphdb",
+                        "kg-monarch",
+                        "vectology",
+                        "ukbiobank",
+                        "prsatlas",
+                        "eqtlgen",
+                        "mondo",
+                        "gtex",
+                        "ensembl",
+                        "cpic",
+                        "opentargets",
+                        "efo",
+                        "semmeddb",
+                        "intact",
+                        "string",
+                        "reactome",
+                        "mrbase"
+                    ],
+                    "product_url": "https://docs.epigraphdb.org/graph-database/",
+                    "secondary_source": [
+                        "epigraphdb"
+                    ]
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "Documentation hub containing conceptual overviews, API endpoint references, data integration details, metrics, and research study links",
+                    "format": "http",
+                    "id": "epigraphdb.docs",
+                    "name": "EpiGraphDB Documentation",
+                    "original_source": [
+                        "epigraphdb"
+                    ],
+                    "product_url": "https://docs.epigraphdb.org/"
+                }
             ]
         },
         {
@@ -22532,7 +22912,8 @@
                         "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -22547,7 +22928,8 @@
                         "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -22562,7 +22944,8 @@
                         "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -22576,7 +22959,8 @@
                         "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -22590,7 +22974,8 @@
                         "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -22604,7 +22989,8 @@
                         "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -22618,7 +23004,8 @@
                         "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -22632,7 +23019,8 @@
                         "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -22646,7 +23034,8 @@
                         "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -22660,7 +23049,8 @@
                         "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -22674,7 +23064,8 @@
                         "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-30: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-07: HTTP 500 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -22966,7 +23357,8 @@
                     ],
                     "product_url": "https://ftp.sanger.ac.uk/project/cancerrxgene/releases/",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -23884,7 +24276,8 @@
                         "glyconnect"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -26293,7 +26686,8 @@
                     ],
                     "product_url": "https://github.com/geneontology/go-cam",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -26396,7 +26790,8 @@
                         "goldterms"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -26708,6 +27103,36 @@
                     "secondary_source": [
                         "automat"
                     ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)",
+                    "format": "neo4j",
+                    "id": "epigraphdb.graph",
+                    "name": "EpiGraphDB Graph Database",
+                    "original_source": [
+                        "epigraphdb",
+                        "kg-monarch",
+                        "vectology",
+                        "ukbiobank",
+                        "prsatlas",
+                        "eqtlgen",
+                        "mondo",
+                        "gtex",
+                        "ensembl",
+                        "cpic",
+                        "opentargets",
+                        "efo",
+                        "semmeddb",
+                        "intact",
+                        "string",
+                        "reactome",
+                        "mrbase"
+                    ],
+                    "product_url": "https://docs.epigraphdb.org/graph-database/",
+                    "secondary_source": [
+                        "epigraphdb"
+                    ]
                 }
             ],
             "warnings": [
@@ -26781,7 +27206,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/targets_and_families.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -26793,7 +27219,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/ligands.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -26805,7 +27232,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/interactions.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -26817,7 +27245,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -26829,7 +27258,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/all_ligands.sdf",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -26841,7 +27271,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -26852,7 +27283,8 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -27189,7 +27621,8 @@
                     ],
                     "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -27215,7 +27648,8 @@
                     ],
                     "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-variants.tsv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -27229,7 +27663,8 @@
                     ],
                     "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -27243,7 +27678,8 @@
                     ],
                     "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.owl.gz",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -27257,7 +27693,8 @@
                     ],
                     "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram.svg",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -27271,7 +27708,8 @@
                     ],
                     "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram-archive.zip",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -27284,7 +27722,8 @@
                     ],
                     "product_url": "ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: No connection adapters were found for 'ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'"
+                        "File was not able to be retrieved when checked on 2025-09-02: Error connecting to URL: No connection adapters were found for 'ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'",
+                        "File was not able to be retrieved when checked on 2025-09-03: Error connecting to URL: No connection adapters were found for 'ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'"
                     ]
                 },
                 {
@@ -27949,7 +28388,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -27970,7 +28410,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -28068,7 +28509,8 @@
                         "scibite"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -30838,7 +31280,8 @@
                     "name": "Antibody Validation Reports",
                     "product_url": "https://avr.hubmapconsortium.org/",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 401 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 401 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 401 error when accessing file"
                     ]
                 },
                 {
@@ -32463,6 +32906,36 @@
                     "secondary_source": [
                         "automat"
                     ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)",
+                    "format": "neo4j",
+                    "id": "epigraphdb.graph",
+                    "name": "EpiGraphDB Graph Database",
+                    "original_source": [
+                        "epigraphdb",
+                        "kg-monarch",
+                        "vectology",
+                        "ukbiobank",
+                        "prsatlas",
+                        "eqtlgen",
+                        "mondo",
+                        "gtex",
+                        "ensembl",
+                        "cpic",
+                        "opentargets",
+                        "efo",
+                        "semmeddb",
+                        "intact",
+                        "string",
+                        "reactome",
+                        "mrbase"
+                    ],
+                    "product_url": "https://docs.epigraphdb.org/graph-database/",
+                    "secondary_source": [
+                        "epigraphdb"
+                    ]
                 }
             ],
             "warnings": [
@@ -33424,7 +33897,8 @@
                         "kg-covid-19"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 403 error when accessing file"
                     ]
                 }
             ],
@@ -33562,7 +34036,8 @@
                         "kg-idg"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -33683,7 +34158,8 @@
                         "kg-microbe"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 403 error when accessing file"
                     ]
                 },
                 {
@@ -34639,6 +35115,36 @@
                         "kg-monarch"
                     ],
                     "warnings": []
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)",
+                    "format": "neo4j",
+                    "id": "epigraphdb.graph",
+                    "name": "EpiGraphDB Graph Database",
+                    "original_source": [
+                        "epigraphdb",
+                        "kg-monarch",
+                        "vectology",
+                        "ukbiobank",
+                        "prsatlas",
+                        "eqtlgen",
+                        "mondo",
+                        "gtex",
+                        "ensembl",
+                        "cpic",
+                        "opentargets",
+                        "efo",
+                        "semmeddb",
+                        "intact",
+                        "string",
+                        "reactome",
+                        "mrbase"
+                    ],
+                    "product_url": "https://docs.epigraphdb.org/graph-database/",
+                    "secondary_source": [
+                        "epigraphdb"
+                    ]
                 }
             ],
             "repository": "https://github.com/monarch-initiative/monarch-ingest"
@@ -35575,7 +36081,8 @@
                     ],
                     "product_url": "https://loinc.org/download/loinc-complete/",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 503 error when accessing file"
                     ]
                 },
                 {
@@ -35589,7 +36096,8 @@
                     ],
                     "product_url": "https://loinc.org/downloads/archive/",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 503 error when accessing file"
                     ]
                 },
                 {
@@ -35602,7 +36110,8 @@
                     ],
                     "product_url": "https://loinc.org/principles/",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 503 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 503 error when accessing file"
                     ]
                 },
                 {
@@ -36840,7 +37349,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -36862,7 +37372,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -36884,7 +37395,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -37530,7 +38042,8 @@
                         "metanetx"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -37547,7 +38060,8 @@
                         "metanetx"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -38048,7 +38562,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -38070,7 +38585,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -38092,7 +38608,8 @@
                         "mind"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -39057,6 +39574,36 @@
                     "secondary_source": [
                         "microbiomekg"
                     ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)",
+                    "format": "neo4j",
+                    "id": "epigraphdb.graph",
+                    "name": "EpiGraphDB Graph Database",
+                    "original_source": [
+                        "epigraphdb",
+                        "kg-monarch",
+                        "vectology",
+                        "ukbiobank",
+                        "prsatlas",
+                        "eqtlgen",
+                        "mondo",
+                        "gtex",
+                        "ensembl",
+                        "cpic",
+                        "opentargets",
+                        "efo",
+                        "semmeddb",
+                        "intact",
+                        "string",
+                        "reactome",
+                        "mrbase"
+                    ],
+                    "product_url": "https://docs.epigraphdb.org/graph-database/",
+                    "secondary_source": [
+                        "epigraphdb"
+                    ]
                 }
             ],
             "repository": "https://github.com/DiseaseOntology/HumanDiseaseOntology"
@@ -39599,6 +40146,159 @@
             ],
             "warnings": [
                 "This is an automatically generated stub page. Please replace with accurate information about this resource."
+            ]
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
+            "contacts": [
+                {
+                    "category": "Organization",
+                    "contact_details": [
+                        {
+                            "contact_type": "url",
+                            "value": "https://www.mrbase.org/"
+                        }
+                    ],
+                    "label": "MR-Base Team (MRC Integrative Epidemiology Unit, University of Bristol)"
+                }
+            ],
+            "creation_date": "2025-09-03T00:00:00Z",
+            "description": "MR-Base is a platform that integrates a large database of harmonized GWAS summary association datasets with analytical tools (web apps and R packages) to support systematic two-sample Mendelian randomization (2SMR) and phenome-wide causal inference across the human phenome.",
+            "domains": [
+                "health",
+                "biomedical",
+                "genomics",
+                "investigations"
+            ],
+            "homepage_url": "https://www.mrbase.org/",
+            "id": "mrbase",
+            "last_modified_date": "2025-09-03T00:00:00Z",
+            "layout": "resource_detail",
+            "name": "MR-Base",
+            "products": [
+                {
+                    "category": "GraphicalInterface",
+                    "description": "Web home and informational landing page for MR-Base platform components and publications",
+                    "format": "http",
+                    "id": "mrbase.home",
+                    "name": "MR-Base Website",
+                    "original_source": [
+                        "mrbase"
+                    ],
+                    "product_url": "https://www.mrbase.org/"
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "Interactive Shiny-based web application for performing two-sample Mendelian randomization analyses using curated GWAS summary datasets",
+                    "format": "http",
+                    "id": "mrbase.webapp",
+                    "is_public": true,
+                    "name": "MR-Base Web Application",
+                    "original_source": [
+                        "mrbase"
+                    ],
+                    "product_url": "http://app.mrbase.org/"
+                },
+                {
+                    "category": "GraphicalInterface",
+                    "description": "Phenome-wide association study (PheWAS) web interface enabling exploration of SNP-trait associations and hypothesis-free MR scans",
+                    "format": "http",
+                    "id": "mrbase.phewas",
+                    "is_public": true,
+                    "name": "MR-Base PheWAS Application",
+                    "original_source": [
+                        "mrbase"
+                    ],
+                    "product_url": "https://gwas.mrcieu.ac.uk/phewas/"
+                },
+                {
+                    "category": "ProgrammingInterface",
+                    "description": "RESTful API providing programmatic access to harmonized GWAS summary statistics, LD proxy lookup, instruments, and MR result generation",
+                    "id": "mrbase.api",
+                    "is_public": true,
+                    "name": "MR-Base REST API",
+                    "original_source": [
+                        "mrbase"
+                    ],
+                    "product_url": "http://api.mrbase.org/"
+                },
+                {
+                    "category": "ProgrammingInterface",
+                    "description": "TwoSampleMR R package supporting data extraction, harmonization, instrument selection, MR analysis methods, diagnostics, and reproducible code generation",
+                    "id": "mrbase.twosamplemr",
+                    "is_public": true,
+                    "name": "TwoSampleMR R Package",
+                    "original_source": [
+                        "mrbase"
+                    ],
+                    "product_url": "https://github.com/MRCIEU/TwoSampleMR",
+                    "secondary_source": [
+                        "mrbase"
+                    ]
+                },
+                {
+                    "category": "ProgrammingInterface",
+                    "description": "MRInstruments R package containing curated instruments (top hits) across multiple GWAS and QTL sources for instrument selection",
+                    "id": "mrbase.mrinstruments",
+                    "is_public": true,
+                    "name": "MRInstruments R Package",
+                    "original_source": [
+                        "mrbase"
+                    ],
+                    "product_url": "https://github.com/MRCIEU/MRInstruments"
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "TwoSampleMR package documentation with function reference, usage guides, and methodological notes",
+                    "format": "http",
+                    "id": "mrbase.twosamplemr.docs",
+                    "name": "TwoSampleMR Documentation",
+                    "original_source": [
+                        "mrbase"
+                    ],
+                    "product_url": "https://mrcieu.github.io/TwoSampleMR/"
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "Methods paper analysis reproduction code repository for MR-Base platform publication",
+                    "id": "mrbase.paper.reproducibility",
+                    "name": "MR-Base Methods Paper Reproducibility Code",
+                    "original_source": [
+                        "mrbase"
+                    ],
+                    "product_url": "https://github.com/explodecomputer/mr-base-methods-paper"
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)",
+                    "format": "neo4j",
+                    "id": "epigraphdb.graph",
+                    "name": "EpiGraphDB Graph Database",
+                    "original_source": [
+                        "epigraphdb",
+                        "kg-monarch",
+                        "vectology",
+                        "ukbiobank",
+                        "prsatlas",
+                        "eqtlgen",
+                        "mondo",
+                        "gtex",
+                        "ensembl",
+                        "cpic",
+                        "opentargets",
+                        "efo",
+                        "semmeddb",
+                        "intact",
+                        "string",
+                        "reactome",
+                        "mrbase"
+                    ],
+                    "product_url": "https://docs.epigraphdb.org/graph-database/",
+                    "secondary_source": [
+                        "epigraphdb"
+                    ]
+                }
             ]
         },
         {
@@ -43390,7 +44090,8 @@
                     "name": "clinicaltrials OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -43405,7 +44106,8 @@
                     "name": "clinicaltrials OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -43420,7 +44122,8 @@
                     "name": "clinicaltrials OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -43950,7 +44653,8 @@
                     "name": "gtdb OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44029,7 +44733,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44050,7 +44755,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44283,7 +44989,8 @@
                     "name": "itis OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/itis/itis.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44298,7 +45005,8 @@
                     "name": "itis OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/itis/itis.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44365,7 +45073,8 @@
                     "name": "mesh OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/mesh/mesh.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44380,7 +45089,8 @@
                     "name": "mesh OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/mesh/mesh.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44395,7 +45105,8 @@
                     "name": "mgi OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/mgi/mgi.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44410,7 +45121,8 @@
                     "name": "mgi OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/mgi/mgi.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44425,7 +45137,8 @@
                     "name": "mgi OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/mgi/mgi.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44596,7 +45309,8 @@
                     "name": "msigdb OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44611,7 +45325,8 @@
                     "name": "msigdb OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44626,7 +45341,8 @@
                     "name": "msigdb OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/msigdb/msigdb.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44702,7 +45418,8 @@
                     "name": "nihreporter.project OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44713,7 +45430,8 @@
                     "name": "nihreporter.project OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44724,7 +45442,8 @@
                     "name": "nihreporter.project OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44921,7 +45640,8 @@
                     "name": "pathbank OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44936,7 +45656,8 @@
                     "name": "pathbank OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -44951,7 +45672,8 @@
                     "name": "pathbank OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/pathbank/pathbank.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45497,7 +46219,8 @@
                     "name": "reactome OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/reactome/reactome.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45512,7 +46235,8 @@
                     "name": "reactome OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/reactome/reactome.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45604,7 +46328,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45625,7 +46350,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45677,7 +46403,8 @@
                     "name": "ror OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/ror/ror.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45692,7 +46419,8 @@
                     "name": "ror OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/ror/ror.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45798,7 +46526,8 @@
                     "name": "slm OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/slm/slm.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45813,7 +46542,8 @@
                     "name": "slm OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/slm/slm.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45828,7 +46558,8 @@
                     "name": "slm OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/slm/slm.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45883,7 +46614,8 @@
                     "name": "uniprot OBO",
                     "product_url": "https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45898,7 +46630,8 @@
                     "name": "uniprot OWL",
                     "product_url": "https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -45913,7 +46646,8 @@
                     "name": "uniprot OBO Graph JSON",
                     "product_url": "https://w3id.org/biopragmatics/resources/uniprot/uniprot.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -46057,7 +46791,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -46078,7 +46813,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -46963,7 +47699,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -46982,7 +47719,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -47000,9 +47738,9 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -47022,7 +47760,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-31: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 502 error when accessing file"
                     ]
                 },
                 {
@@ -47042,7 +47781,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-01: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -47062,7 +47802,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-31: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-12: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -47082,7 +47823,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -47099,7 +47841,8 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-26: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -47119,7 +47862,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-08-12: HTTP 502 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -47140,7 +47884,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 }
             ]
@@ -48263,6 +49008,36 @@
                     "product_url": "https://bioteque.irbbarcelona.org/downloads/embeddings",
                     "secondary_source": [
                         "bioteque"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)",
+                    "format": "neo4j",
+                    "id": "epigraphdb.graph",
+                    "name": "EpiGraphDB Graph Database",
+                    "original_source": [
+                        "epigraphdb",
+                        "kg-monarch",
+                        "vectology",
+                        "ukbiobank",
+                        "prsatlas",
+                        "eqtlgen",
+                        "mondo",
+                        "gtex",
+                        "ensembl",
+                        "cpic",
+                        "opentargets",
+                        "efo",
+                        "semmeddb",
+                        "intact",
+                        "string",
+                        "reactome",
+                        "mrbase"
+                    ],
+                    "product_url": "https://docs.epigraphdb.org/graph-database/",
+                    "secondary_source": [
+                        "epigraphdb"
                     ]
                 }
             ],
@@ -52466,7 +53241,8 @@
                         "phenio"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -53890,7 +54666,8 @@
                         "pombase"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -53912,7 +54689,8 @@
                         "pombase"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -55164,7 +55942,8 @@
                         "primekg"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 403 error when accessing file"
                     ]
                 }
             ],
@@ -57757,6 +58536,36 @@
                     "secondary_source": [
                         "kg-monarch"
                     ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)",
+                    "format": "neo4j",
+                    "id": "epigraphdb.graph",
+                    "name": "EpiGraphDB Graph Database",
+                    "original_source": [
+                        "epigraphdb",
+                        "kg-monarch",
+                        "vectology",
+                        "ukbiobank",
+                        "prsatlas",
+                        "eqtlgen",
+                        "mondo",
+                        "gtex",
+                        "ensembl",
+                        "cpic",
+                        "opentargets",
+                        "efo",
+                        "semmeddb",
+                        "intact",
+                        "string",
+                        "reactome",
+                        "mrbase"
+                    ],
+                    "product_url": "https://docs.epigraphdb.org/graph-database/",
+                    "secondary_source": [
+                        "epigraphdb"
+                    ]
                 }
             ],
             "repository": ""
@@ -57942,7 +58751,8 @@
                     "product_url": "https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-08-07: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -58182,7 +58992,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -58203,7 +59014,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -59355,7 +60167,8 @@
                         "scibite"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 }
             ]
@@ -62822,6 +63635,36 @@
                     "secondary_source": [
                         "kg-monarch"
                     ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)",
+                    "format": "neo4j",
+                    "id": "epigraphdb.graph",
+                    "name": "EpiGraphDB Graph Database",
+                    "original_source": [
+                        "epigraphdb",
+                        "kg-monarch",
+                        "vectology",
+                        "ukbiobank",
+                        "prsatlas",
+                        "eqtlgen",
+                        "mondo",
+                        "gtex",
+                        "ensembl",
+                        "cpic",
+                        "opentargets",
+                        "efo",
+                        "semmeddb",
+                        "intact",
+                        "string",
+                        "reactome",
+                        "mrbase"
+                    ],
+                    "product_url": "https://docs.epigraphdb.org/graph-database/",
+                    "secondary_source": [
+                        "epigraphdb"
+                    ]
                 }
             ],
             "publications": [
@@ -62929,7 +63772,8 @@
                     "name": "Text Mining KP KGX",
                     "product_url": "https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 }
             ],
@@ -64892,6 +65736,36 @@
                     "secondary_source": [
                         "disgenet"
                     ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)",
+                    "format": "neo4j",
+                    "id": "epigraphdb.graph",
+                    "name": "EpiGraphDB Graph Database",
+                    "original_source": [
+                        "epigraphdb",
+                        "kg-monarch",
+                        "vectology",
+                        "ukbiobank",
+                        "prsatlas",
+                        "eqtlgen",
+                        "mondo",
+                        "gtex",
+                        "ensembl",
+                        "cpic",
+                        "opentargets",
+                        "efo",
+                        "semmeddb",
+                        "intact",
+                        "string",
+                        "reactome",
+                        "mrbase"
+                    ],
+                    "product_url": "https://docs.epigraphdb.org/graph-database/",
+                    "secondary_source": [
+                        "epigraphdb"
+                    ]
                 }
             ],
             "publications": [
@@ -65129,7 +66003,8 @@
                         "pombase"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-02: No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found"
                     ]
                 },
                 {
@@ -65186,7 +66061,8 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL"
+                        "File was not able to be retrieved when checked on 2025-08-13: Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 502 error when accessing file"
                     ]
                 },
                 {
@@ -65741,9 +66617,9 @@
                     "product_url": "http://purl.obolibrary.org/obo/uo.json",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-02: HTTP 502 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-09-01: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-20: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -67934,7 +68810,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -67955,7 +68832,8 @@
                         "obo-db-ingest"
                     ],
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when accessing file"
                     ]
                 },
                 {
@@ -69026,7 +69904,8 @@
                     "name": "SemMedDB MySQL Database",
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_MySQL_database.html",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 403 error when accessing file"
                     ]
                 },
                 {
@@ -69037,7 +69916,8 @@
                     "name": "SemMedDB Citations CSV",
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 403 error when accessing file"
                     ]
                 },
                 {
@@ -69048,7 +69928,8 @@
                     "name": "SemMedDB Entity CSV",
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/ENTITY.csv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 403 error when accessing file"
                     ]
                 },
                 {
@@ -69059,7 +69940,8 @@
                     "name": "SemMedDB Predication CSV",
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/PREDICATION.csv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 403 error when accessing file"
                     ]
                 },
                 {
@@ -69070,7 +69952,8 @@
                     "name": "SemMedDB Sentence CSV",
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-09-03: HTTP 403 error when accessing file"
                     ]
                 },
                 {
@@ -69175,6 +70058,36 @@
                     "product_url": "https://arax.ncats.io/",
                     "secondary_source": [
                         "rtx-kg2"
+                    ]
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)",
+                    "format": "neo4j",
+                    "id": "epigraphdb.graph",
+                    "name": "EpiGraphDB Graph Database",
+                    "original_source": [
+                        "epigraphdb",
+                        "kg-monarch",
+                        "vectology",
+                        "ukbiobank",
+                        "prsatlas",
+                        "eqtlgen",
+                        "mondo",
+                        "gtex",
+                        "ensembl",
+                        "cpic",
+                        "opentargets",
+                        "efo",
+                        "semmeddb",
+                        "intact",
+                        "string",
+                        "reactome",
+                        "mrbase"
+                    ],
+                    "product_url": "https://docs.epigraphdb.org/graph-database/",
+                    "secondary_source": [
+                        "epigraphdb"
                     ]
                 }
             ],
@@ -69651,6 +70564,89 @@
             ],
             "warnings": [
                 "The last release for this resource was on October 21, 2015."
+            ]
+        },
+        {
+            "activity_status": "inactive",
+            "category": "Resource",
+            "contacts": [
+                {
+                    "category": "Individual",
+                    "contact_details": [
+                        {
+                            "contact_type": "email",
+                            "value": "ben.elsworth@bristol.ac.uk"
+                        }
+                    ],
+                    "label": "Ben Elsworth"
+                }
+            ],
+            "creation_date": "2025-09-03T00:00:00Z",
+            "description": "Vectology is a software platform and API for exploring relationships among biomedical variables using sentence embedding models derived from biomedical literature. It converts brief variable descriptions into vector representations enabling similarity search, recommendation, and relational insight without manual ontology annotation.",
+            "domains": [
+                "biomedical",
+                "genomics",
+                "health",
+                "investigations"
+            ],
+            "homepage_url": "http://vectology.mrcieu.ac.uk/",
+            "id": "vectology",
+            "last_modified_date": "2025-09-03T00:00:00Z",
+            "layout": "resource_detail",
+            "name": "Vectology",
+            "products": [
+                {
+                    "category": "ProgrammingInterface",
+                    "description": "Public API providing access to sentence embedding-based similarity endpoints and variable vector queries",
+                    "id": "vectology.api",
+                    "is_public": true,
+                    "name": "Vectology API",
+                    "original_source": [
+                        "vectology"
+                    ],
+                    "product_url": "http://vectology-api.mrcieu.ac.uk/"
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "Project information page including description, maintenance status, contacts, and publication reference",
+                    "format": "http",
+                    "id": "vectology.docs",
+                    "name": "Vectology Project Page",
+                    "original_source": [
+                        "vectology"
+                    ],
+                    "product_url": "https://mrcieu.github.io/software/vectology/"
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)",
+                    "format": "neo4j",
+                    "id": "epigraphdb.graph",
+                    "name": "EpiGraphDB Graph Database",
+                    "original_source": [
+                        "epigraphdb",
+                        "kg-monarch",
+                        "vectology",
+                        "ukbiobank",
+                        "prsatlas",
+                        "eqtlgen",
+                        "mondo",
+                        "gtex",
+                        "ensembl",
+                        "cpic",
+                        "opentargets",
+                        "efo",
+                        "semmeddb",
+                        "intact",
+                        "string",
+                        "reactome",
+                        "mrbase"
+                    ],
+                    "product_url": "https://docs.epigraphdb.org/graph-database/",
+                    "secondary_source": [
+                        "epigraphdb"
+                    ]
+                }
             ]
         }
     ]

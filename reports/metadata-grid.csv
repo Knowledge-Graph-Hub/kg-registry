@@ -51,6 +51,7 @@ connectivitymap,active,PASS
 corum,active,PASS
 cosmic,active,PASS
 cpathkg,active,PASS
+cpic,active,PASS
 creeds,active,PASS
 ctd,active,PASS
 dbsnp,active,PASS
@@ -81,6 +82,7 @@ embiology,active,PASS
 emikg,active,PASS
 ensembl,active,PASS
 envo,active,PASS
+epigraphdb,active,PASS
 erccrbp,active,PASS
 erccreg,active,PASS
 eupathdb,active,PASS
@@ -169,6 +171,7 @@ mondo,active,PASS
 motrpac,active,PASS
 mp,active,PASS
 mpath,active,PASS
+mrbase,active,PASS
 ms,active,PASS
 msigdb,active,PASS
 multiomics-kp,active,PASS
@@ -289,3 +292,4 @@ psygenet,inactive,PASS
 rdbridge,unresponsive,PASS
 semmeddb,inactive,PASS
 sider,inactive,PASS
+vectology,inactive,PASS
