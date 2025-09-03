@@ -164,6 +164,8 @@ products:
     when accessing file'
   - 'File was not able to be retrieved when checked on 2025-08-07: No Content-Length
     header found'
+  - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error
+    when accessing file'
 publications:
 - authors:
   - Zarin DA

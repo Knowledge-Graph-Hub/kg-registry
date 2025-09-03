@@ -213,6 +213,10 @@ class FormatEnum(str, Enum):
     """
     The Web Ontology Language (OWL) format, a semantic web language designed to represent rich and complex knowledge about things and their relationships. OWL builds on RDF and adds more vocabulary for describing properties and classes.
     """
+    pdf = "pdf"
+    """
+    The Portable Document Format (PDF), a file format developed by Adobe for presenting documents in a manner independent of application software, hardware, and operating systems. PDF files can contain text, images, and vector graphics.
+    """
     postgres = "postgres"
     """
     The PostgreSQL relational database management system. If a product is in this format, it is likely a PostgreSQL database dump.

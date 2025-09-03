@@ -38,6 +38,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 403 error
+    when accessing file'
 - category: Product
   description: CSV file containing citation information for all PubMed articles in
     SemMedDB
@@ -47,6 +49,8 @@ products:
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 403 error
     when accessing file'
 - category: Product
   description: CSV file containing entity information with UMLS concept identifiers,
@@ -58,6 +62,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 403 error
+    when accessing file'
 - category: Product
   description: CSV file containing semantic predications with subject-predicate-object
     triples and associated metadata
@@ -68,6 +74,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 403 error
+    when accessing file'
 - category: Product
   description: CSV file containing sentence information from PubMed citations
   format: csv
@@ -76,6 +84,8 @@ products:
   product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-02: HTTP 403 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 403 error
     when accessing file'
 - category: ProcessProduct
   description: The SemRep natural language processing system that extracts semantic
@@ -168,6 +178,34 @@ products:
   product_url: https://arax.ncats.io/
   secondary_source:
   - rtx-kg2
+- category: GraphProduct
+  description: Integrated graph knowledge base combining Mendelian randomization causal
+    estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships
+    (Neo4j backend)
+  format: neo4j
+  id: epigraphdb.graph
+  name: EpiGraphDB Graph Database
+  original_source:
+  - epigraphdb
+  - kg-monarch
+  - vectology
+  - ukbiobank
+  - prsatlas
+  - eqtlgen
+  - mondo
+  - gtex
+  - ensembl
+  - cpic
+  - opentargets
+  - efo
+  - semmeddb
+  - intact
+  - string
+  - reactome
+  - mrbase
+  product_url: https://docs.epigraphdb.org/graph-database/
+  secondary_source:
+  - epigraphdb
 publications:
 - authors:
   - Kilicoglu H

@@ -202,6 +202,12 @@ enums:
           and their relationships. OWL builds on RDF and adds more
           vocabulary for describing properties and classes.
         meaning: edam:2197
+      pdf:
+        description: >-
+          The Portable Document Format (PDF), a file format developed by Adobe
+          for presenting documents in a manner independent of application software,
+          hardware, and operating systems. PDF files can contain text, images,
+          and vector graphics.
       postgres:
         description: >-
           The PostgreSQL relational database management system.

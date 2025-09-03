@@ -112,6 +112,34 @@ products:
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/IntAct_Automat/e5b936f966a02c2c/
   secondary_source:
   - automat
+- category: GraphProduct
+  description: Integrated graph knowledge base combining Mendelian randomization causal
+    estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships
+    (Neo4j backend)
+  format: neo4j
+  id: epigraphdb.graph
+  name: EpiGraphDB Graph Database
+  original_source:
+  - epigraphdb
+  - kg-monarch
+  - vectology
+  - ukbiobank
+  - prsatlas
+  - eqtlgen
+  - mondo
+  - gtex
+  - ensembl
+  - cpic
+  - opentargets
+  - efo
+  - semmeddb
+  - intact
+  - string
+  - reactome
+  - mrbase
+  product_url: https://docs.epigraphdb.org/graph-database/
+  secondary_source:
+  - epigraphdb
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information
   about this resource.
