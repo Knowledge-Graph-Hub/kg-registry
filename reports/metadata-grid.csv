@@ -83,6 +83,7 @@ emikg,active,PASS
 ensembl,active,PASS
 envo,active,PASS
 epigraphdb,active,PASS
+eqtlgen,active,PASS
 erccrbp,active,PASS
 erccreg,active,PASS
 eupathdb,active,PASS
@@ -233,6 +234,7 @@ primekg,active,PASS
 prism,active,PASS
 progeny,active,PASS
 protcid,active,PASS
+prsatlas,active,PASS
 pubchem,active,PASS
 pubmed,active,PASS
 pubtator,active,PASS

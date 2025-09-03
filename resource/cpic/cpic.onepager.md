@@ -7,6 +7,7 @@ id: cpic.onepager
 name: CPIC One-Page Summary
 original_source:
 - cpic
+product_file_size: 160131
 product_url: https://cpicpgx.org/wp-content/uploads/2025/07/CPIC-One-Page-CLEAN.docx
 layout: product_detail
 ---
