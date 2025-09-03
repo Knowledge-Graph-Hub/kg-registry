@@ -821,6 +821,10 @@ enums:
           prefixes and keywords that make RDF data more readable compared to XML or
           N-Triples formats.
         meaning: edam:3255
+      txt:
+        text: txt
+        description: The Plain Text (TXT) format, a simple text format for representing
+          unformatted text data.
       vcf:
         text: vcf
         description: The Variant Call Format (VCF), a text file format for storing
