@@ -62,7 +62,7 @@ products:
   product_url: https://github.com/MRCIEU/epigraphdb/tree/master/paper-case-studies
 - category: GraphProduct
   description: Integrated graph knowledge base combining Mendelian randomization causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships (Neo4j backend)
-  format: graph
+  format: neo4j
   id: epigraphdb.graph
   name: EpiGraphDB Graph Database
   original_source:
@@ -88,7 +88,7 @@ products:
   product_url: https://docs.epigraphdb.org/graph-database/
 - category: DocumentationProduct
   description: Documentation hub containing conceptual overviews, API endpoint references, data integration details, metrics, and research study links
-  format: documentation
+  format: http
   id: epigraphdb.docs
   name: EpiGraphDB Documentation
   original_source:
