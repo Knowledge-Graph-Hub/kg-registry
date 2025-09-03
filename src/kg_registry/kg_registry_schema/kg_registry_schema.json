@@ -1282,6 +1282,7 @@
                 "ntriples",
                 "obo",
                 "owl",
+                "pdf",
                 "postgres",
                 "protobuf",
                 "psi_mi_mitab",
