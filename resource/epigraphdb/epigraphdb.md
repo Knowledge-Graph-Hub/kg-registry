@@ -67,6 +67,24 @@ products:
   name: EpiGraphDB Graph Database
   original_source:
   - epigraphdb
+  - kg-monarch
+  - vectology
+  - ukbiobank
+  - prsatlas
+  - eqtlgen
+  - mondo
+  - gtex
+  - ensembl
+  - cpic
+  - opentargets
+  - efo
+  - semmeddb
+  - intact
+  - string
+  - reactome
+  - mrbase
+  secondary_source:
+  - epigraphdb
   product_url: https://docs.epigraphdb.org/graph-database/
 - category: DocumentationProduct
   description: Documentation hub containing conceptual overviews, API endpoint references, data integration details, metrics, and research study links
