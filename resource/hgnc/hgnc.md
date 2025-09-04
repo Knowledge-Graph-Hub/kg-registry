@@ -22,13 +22,13 @@ license:
 name: HGNC
 products:
 - category: Product
-  description: hgnc OBO
+  description: HGNC OBO
   format: obo
   id: obo-db-ingest.hgnc.obo
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: hgnc OBO
+  name: HGNC OBO
   original_source:
   - hgnc
   product_file_size: 4253807
@@ -36,37 +36,35 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  description: hgnc OWL
+  compression: gzip
+  description: HGNC OWL
   format: owl
   id: obo-db-ingest.hgnc.owl
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: hgnc OWL
+  name: HGNC OWL
   original_source:
   - hgnc
-  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl
+  product_file_size: 6489789
+  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl.gz
   secondary_source:
   - obo-db-ingest
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error
-    when accessing file'
 - category: Product
-  description: hgnc OBO Graph JSON
+  compression: gzip
+  description: HGNC OBO Graph JSON
   format: json
   id: obo-db-ingest.hgnc.json
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: hgnc OBO Graph JSON
+  name: HGNC OBO Graph JSON
   original_source:
   - hgnc
-  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.json
+  product_file_size: 4855839
+  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.json.gz
   secondary_source:
   - obo-db-ingest
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error
-    when accessing file'
 - category: MappingProduct
   description: hgnc SSSOM
   id: obo-db-ingest.hgnc.sssom.tsv
@@ -143,6 +141,8 @@ products:
   - scibite
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-04: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.

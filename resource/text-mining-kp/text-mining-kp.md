@@ -23,6 +23,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-04: HTTP 404 error
+    when accessing file'
 repository: ''
 ---
 A Translator Knowledge Provider applying text-mined assertions.
