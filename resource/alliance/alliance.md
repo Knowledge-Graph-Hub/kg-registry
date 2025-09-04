@@ -1,16 +1,79 @@
 ---
 activity_status: active
-category: DataSource
+category: Aggregator
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.alliancegenome.org/contact-us
+  label: Alliance of Genome Resources
 creation_date: '2025-08-13T00:00:00Z'
-description: Stub Resource page for alliance. This page was automatically generated
-  because it was referenced by other resources.
+description: The Alliance of Genome Resources (Alliance) is a collaborative platform integrating model organism knowledge (FlyBase, MGD, RGD, SGD, WormBase, Xenbase, ZFIN) and Gene Ontology Consortium annotations to provide harmonized comparative genomics, gene function, phenotype, disease association, expression, orthology, and variant data for cross-species research and translation.
 domains:
-- stub
+- genomics
+- phenotypes
+- disease
+homepage_url: https://www.alliancegenome.org/
 id: alliance
-last_modified_date: '2025-08-13T00:00:00Z'
+last_modified_date: '2025-09-03T00:00:00Z'
 layout: resource_detail
-name: Alliance
+license:
+  id: https://www.alliancegenome.org/privacy-warranty-licensing
+  label: Alliance Data Licensing & Privacy
+name: Alliance of Genome Resources
 products:
+- category: GraphicalInterface
+  description: Primary web portal for integrated cross-species search and exploration of genes, phenotypes, disease models, expression, variants, and orthology summaries
+  format: http
+  id: alliance.portal
+  name: Alliance Web Portal
+  original_source:
+  - alliance
+  product_url: https://www.alliancegenome.org/
+- category: ProgrammingInterface
+  description: REST/JSON API providing programmatic access to integrated gene, orthology, phenotype, disease, expression, and variant endpoints
+  id: alliance.api
+  is_public: true
+  name: Alliance API
+  original_source:
+  - alliance
+  product_url: https://www.alliancegenome.org/swagger-ui
+- category: ProgrammingInterface
+  description: OpenAPI specification (machine-readable) for the Alliance REST API
+  format: json
+  id: alliance.openapi
+  name: Alliance OpenAPI Spec
+  original_source:
+  - alliance
+  product_url: https://www.alliancegenome.org/openapi
+- category: GraphicalInterface
+  description: AllianceMine instance (InterMine-based) enabling advanced query building over integrated genomic data
+  id: alliance.mine
+  name: AllianceMine
+  original_source:
+  - alliance
+  product_url: https://www.alliancegenome.org/bluegenes/alliancemine
+- category: GraphicalInterface
+  description: JBrowse 2 genome browser instance for interactive visualization of genomes, annotations, and variants across species
+  id: alliance.jbrowse2
+  name: Alliance JBrowse 2
+  original_source:
+  - alliance
+  product_url: https://www.alliancegenome.org/jbrowse2/
+- category: GraphicalInterface
+  description: Textpresso literature mining interface for full-text and ontology term powered searches across curated publications
+  id: alliance.textpresso
+  name: Alliance Textpresso
+  original_source:
+  - alliance
+  product_url: https://www.alliancegenome.org/textpresso
+- category: Product
+  description: Root directory for release-specific bulk data dumps (JSON, TSV, GAF, and other formats) for genes, orthology, phenotypes, disease associations, alleles, and related integrated datasets; individual per-file products can be programmatically enumerated in future updates
+  id: alliance.downloads
+  name: Alliance Data Downloads (Root)
+  original_source:
+  - alliance
+  product_url: https://download.alliancegenome.org/
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
   edge_count: 14486132
@@ -767,10 +830,28 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
   secondary_source:
   - kg-monarch
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
 ---
-# Alliance
+## Overview
 
-This is an automatically generated stub page for alliance. Please update with proper information.
+The Alliance of Genome Resources unifies knowledge from multiple model organism databases (MODs) and the Gene Ontology Consortium, harmonizing identifiers, nomenclature, and biological annotations to enable robust comparative genomics and translational research. Core data domains include gene function (GO), phenotypes, disease associations, alleles/variants, gene expression, orthology, and curated literature links. Cross-species integration supports inference of human disease mechanisms via model organism evidence.
+
+## Access & Tools
+
+- Web Portal provides integrated search and entity-centric pages.
+- REST API offers structured JSON endpoints with an OpenAPI specification for discoverability.
+- AllianceMine supplies customizable queries and result export.
+- JBrowse 2 enables genome-level visualization.
+- Textpresso facilitates literature text mining.
+- Bulk Data Downloads furnish release-versioned snapshots for large-scale analysis.
+
+## Data Integration
+
+Data are sourced and synchronized from member MODs (FlyBase, MGD, RGD, SGD, WormBase, Xenbase, ZFIN) and the Gene Ontology Consortium, with standardized ontologies and identifier cross-references to ensure interoperability.
+
+## Licensing & Citation
+
+See the licensing and privacy page for data reuse terms. Please cite the Alliance and relevant member database publications when using integrated data. A formal citation suggestion is available on the "Cite Us" page.
+
+## Contact
+
+For support, feedback, or data submission inquiries use the contact form on the site.

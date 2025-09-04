@@ -945,13 +945,13 @@ products:
   product_file_size: 1667414
   product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.sssom.tsv
 - category: Product
-  description: hgnc OBO
+  description: HGNC OBO
   format: obo
   id: obo-db-ingest.hgnc.obo
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: hgnc OBO
+  name: HGNC OBO
   original_source:
   - hgnc
   product_file_size: 4253807
@@ -959,37 +959,33 @@ products:
   secondary_source:
   - obo-db-ingest
 - category: Product
-  description: hgnc OWL
+  description: HGNC OWL
   format: owl
+  compression: gzip
   id: obo-db-ingest.hgnc.owl
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: hgnc OWL
+  name: HGNC OWL
   original_source:
   - hgnc
-  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl
+  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl.gz
   secondary_source:
   - obo-db-ingest
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error
-    when accessing file'
 - category: Product
-  description: hgnc OBO Graph JSON
+  description: HGNC OBO Graph JSON
   format: json
+  compression: gzip
   id: obo-db-ingest.hgnc.json
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: hgnc OBO Graph JSON
+  name: HGNC OBO Graph JSON
   original_source:
   - hgnc
-  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.json
+  product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.json.gz
   secondary_source:
   - obo-db-ingest
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error
-    when accessing file'
 - category: MappingProduct
   description: hgnc SSSOM
   id: obo-db-ingest.hgnc.sssom.tsv
@@ -1125,6 +1121,10 @@ products:
   name: interpro OBO
   product_file_size: 1166198
   product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.obo
+  original_source:
+  - interpro
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: interpro OWL
   format: owl
@@ -1135,6 +1135,10 @@ products:
   name: interpro OWL
   product_file_size: 1347709
   product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.owl
+  original_source:
+  - interpro
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: interpro OBO Graph JSON
   format: json
@@ -1145,6 +1149,10 @@ products:
   name: interpro OBO Graph JSON
   product_file_size: 1116474
   product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.json
+  original_source:
+  - interpro
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: itis OBO
   format: obo
@@ -1155,30 +1163,38 @@ products:
   name: itis OBO
   product_file_size: 10936424
   product_url: https://w3id.org/biopragmatics/resources/itis/itis.obo
+  original_source:
+  - itis
+  secondary_source:
+  - obo-db-ingest
 - category: Product
-  description: itis OWL
+  description: ITIS OWL
   format: owl
+  compression: gzip
   id: obo-db-ingest.itis.owl
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: itis OWL
-  product_url: https://w3id.org/biopragmatics/resources/itis/itis.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error
-    when accessing file'
+  name: ITIS OWL
+  product_url: https://w3id.org/biopragmatics/resources/itis/itis.owl.gz
+  original_source:
+  - itis
+  secondary_source:
+  - obo-db-ingest
 - category: Product
-  description: itis OBO Graph JSON
+  description: ITIS OBO Graph JSON
   format: json
+  compression: gzip
   id: obo-db-ingest.itis.json
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
     label: CC0-1.0
-  name: itis OBO Graph JSON
-  product_url: https://w3id.org/biopragmatics/resources/itis/itis.json
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error
-    when accessing file'
+  name: ITIS OBO Graph JSON
+  product_url: https://w3id.org/biopragmatics/resources/itis/itis.json.gz
+  original_source:
+  - itis
+  secondary_source:
+  - obo-db-ingest
 - category: Product
   description: kegg.genome OBO
   format: obo

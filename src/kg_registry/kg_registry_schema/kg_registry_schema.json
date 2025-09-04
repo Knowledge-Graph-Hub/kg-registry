@@ -1301,6 +1301,7 @@
                 "trapi-jsonl",
                 "tsv",
                 "ttl",
+                "txt",
                 "vcf",
                 "xgmml",
                 "xml",
