@@ -68,6 +68,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-04: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Study metadata file containing per-study information for GWAS Catalog
     entries
@@ -90,6 +92,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-04: HTTP 404 error
+    when accessing file'
 - category: Product
   description: EFO trait mapping file linking GWAS Catalog reported traits to Experimental
     Factor Ontology terms
@@ -101,6 +105,8 @@ products:
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error
+    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-04: HTTP 404 error
     when accessing file'
 - category: Product
   description: RDF/OWL representation of GWAS Catalog associations enabling semantic
@@ -114,6 +120,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-04: HTTP 404 error
+    when accessing file'
 - category: DocumentationProduct
   description: Compressed GWAS Catalog diagram (karyotype visualization) in SVG format
     (current release)
@@ -126,6 +134,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-04: HTTP 404 error
+    when accessing file'
 - category: DocumentationProduct
   description: Archive of previous GWAS Catalog diagram versions (SVG format)
   format: svg
@@ -137,6 +147,8 @@ products:
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error
     when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-04: HTTP 404 error
+    when accessing file'
 - category: DocumentationProduct
   description: Harmonised summary statistics landing page (FTP directory containing
     per-study summary statistics under CC0 where available)
@@ -147,6 +159,8 @@ products:
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/
   warnings:
   - 'File was not able to be retrieved when checked on 2025-09-03: Error connecting
+    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'''
+  - 'File was not able to be retrieved when checked on 2025-09-04: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'''
 - category: GraphProduct
   description: GWASCatalog Automat
@@ -356,6 +370,27 @@ products:
   secondary_source:
   - alzkb
   - hetionet
+- category: Product
+  description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)
+    to better characterize adverse outcomes of toxicological interest that are relevant
+    to human health and the environment. Since its inception, the AOP-DB has been
+    developed with the aim of integrating AOP molecular target information with other
+    publicly available datasets to facilitate computational analyses of AOP information.
+  id: aop-db.data
+  name: AOP-DB Data
+  original_source:
+  - aop-wiki
+  - ctd
+  - toxcast
+  - disgenet
+  - ncbigene
+  - string
+  - 1000genomes
+  - ensembl
+  - gwascatalog
+  product_url: https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2
+  secondary_source:
+  - aop-db
 ---
 ## Overview
 

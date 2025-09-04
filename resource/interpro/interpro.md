@@ -269,6 +269,48 @@ products:
   - 2.0.0
   - 1.0.2
   - '1.0'
+- category: Product
+  description: interpro OBO
+  format: obo
+  id: obo-db-ingest.interpro.obo
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: interpro OBO
+  original_source:
+  - interpro
+  product_file_size: 1166198
+  product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.obo
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: interpro OWL
+  format: owl
+  id: obo-db-ingest.interpro.owl
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: interpro OWL
+  original_source:
+  - interpro
+  product_file_size: 1347709
+  product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.owl
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: interpro OBO Graph JSON
+  format: json
+  id: obo-db-ingest.interpro.json
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0-1.0
+  name: interpro OBO Graph JSON
+  original_source:
+  - interpro
+  product_file_size: 1116474
+  product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.json
+  secondary_source:
+  - obo-db-ingest
 publications:
 - authors:
   - Blum M

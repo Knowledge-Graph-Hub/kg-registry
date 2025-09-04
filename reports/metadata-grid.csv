@@ -4,6 +4,7 @@ achilles,active,PASS
 alliance,active,PASS
 alzkb,active,PASS
 aop-db,active,PASS
+aop-wiki,active,PASS
 automat,active,PASS
 bfo,active,PASS
 bgee,active,PASS
@@ -135,6 +136,7 @@ indra,active,PASS
 insight,active,PASS
 intact,active,PASS
 interpro,active,PASS
+itis,active,PASS
 kegg,active,PASS
 kg-alzheimers,active,PASS
 kg-covid-19,active,PASS

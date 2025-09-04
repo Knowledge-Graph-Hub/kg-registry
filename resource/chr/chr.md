@@ -10,7 +10,9 @@ contacts:
     value: cmungall
   label: Christopher J. Mungall
   orcid: 0000-0002-6601-2165
-description: Monochrom, also known as Chromo or CHR, is an automatic translation of UCSC chromosome bands to OWL classes. Each chromosome and chromosomal region is represented as an OWL class.
+description: Monochrom, also known as Chromo or CHR, is an automatic translation of
+  UCSC chromosome bands to OWL classes. Each chromosome and chromosomal region is
+  represented as an OWL class.
 domains:
 - chemistry and biochemistry
 homepage_url: https://monarch-initiative.github.io/monochrom/
@@ -34,6 +36,7 @@ products:
   - geno
   - skos
   - gff
+  product_file_size: 102365
   product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
   secondary_source:
   - chr

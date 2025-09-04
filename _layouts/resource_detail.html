@@ -176,7 +176,13 @@ layout: default
       </div>
     </div>
 
-  {# per-warning alerts removed #}
+    {% if page.warnings %}
+    {% for warning in page.warnings %}
+    <div class="alert alert-warning" style="max-width: 72rem" role="alert">
+      ⚠ {{warning}}
+    </div>
+    {% endfor %}
+    {% endif %}
 
     {% if page.contacts %}
     <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem" id="contacts">
