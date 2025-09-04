@@ -289,6 +289,10 @@ class FormatEnum(str, Enum):
     """
     The Turtle (TTL) format, a textual syntax for RDF that allows RDF graphs to be written in a compact and natural text form. Turtle provides prefixes and keywords that make RDF data more readable compared to XML or N-Triples formats.
     """
+    txt = "txt"
+    """
+    The Plain Text (TXT) format, a simple text format for representing unformatted text data.
+    """
     vcf = "vcf"
     """
     The Variant Call Format (VCF), a text file format for storing gene sequence variations. It is commonly used in bioinformatics to store gene sequence variations, such as single nucleotide polymorphisms (SNPs).
