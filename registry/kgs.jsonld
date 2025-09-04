@@ -1441,15 +1441,83 @@
         },
         {
             "activity_status": "active",
-            "category": "DataSource",
-            "description": "Stub Resource page for aop-db. This page was automatically generated because it was referenced by other resources.",
-            "domains": [
-                "stub"
+            "category": "Aggregator",
+            "collection": [
+                "aop"
             ],
+            "contacts": [
+                {
+                    "category": "Organization",
+                    "contact_details": [
+                        {
+                            "contact_type": "url",
+                            "value": "https://www.epa.gov/"
+                        }
+                    ],
+                    "label": "U.S. Environmental Protection Agency (EPA)"
+                }
+            ],
+            "description": "The Adverse Outcome Pathway Database (AOP-DB) is an EPA-developed integrative knowledgebase that connects chemicals and stressors to molecular initiating events, key events across biological organization levels, and adverse outcomes relevant to human health and ecological risk assessment. It harmonizes data from toxicology, high‑throughput screening, pathway, gene/protein, and phenotype resources to enable computational toxicology, mode-of-action analysis, and predictive risk prioritization.",
+            "domains": [
+                "chemistry",
+                "disease"
+            ],
+            "homepage_url": "https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db",
             "id": "aop-db",
+            "last_modified_date": "2025-09-04T00:00:00Z",
             "layout": "resource_detail",
-            "name": "Aop-db",
+            "license": {
+                "id": "https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db",
+                "label": "EPA AOP-DB Use & Access"
+            },
+            "name": "AOP-DB",
             "products": [
+                {
+                    "category": "GraphicalInterface",
+                    "description": "Public information portal describing the AOP-DB scope, data integration approach, and access points",
+                    "format": "http",
+                    "id": "aop-db.portal",
+                    "name": "AOP-DB Information Portal",
+                    "original_source": [
+                        "aop-db"
+                    ],
+                    "product_url": "https://www.epa.gov/healthresearch/adverse-outcome-pathway-database-aop-db"
+                },
+                {
+                    "category": "Product",
+                    "description": "The EPA has developed the Adverse Outcome Pathway Database (AOP-DB) to better characterize adverse outcomes of toxicological interest that are relevant to human health and the environment. Since its inception, the AOP-DB has been developed with the aim of integrating AOP molecular target information with other publicly available datasets to facilitate computational analyses of AOP information.",
+                    "id": "aop-db.data",
+                    "name": "AOP-DB Data",
+                    "original_source": [
+                        "aop-wiki",
+                        "ctd",
+                        "toxcast",
+                        "disgenet",
+                        "ncbigene",
+                        "string",
+                        "1000genomes",
+                        "ensembl",
+                        "gwascatalog"
+                    ],
+                    "product_url": "https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2",
+                    "secondary_source": [
+                        "aop-db"
+                    ]
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "The EPA Adverse Outcome Pathway Database (Aop-DB) Application User Manual",
+                    "format": "pdf",
+                    "id": "aop-db.manual",
+                    "name": "Manual",
+                    "original_source": [
+                        "aop-db"
+                    ],
+                    "product_url": "https://ordspub.epa.gov/ords/eims/eimscomm.getfile?p_download_id=543383",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2025-09-04: No Content-Length header found"
+                    ]
+                },
                 {
                     "category": "GraphicalInterface",
                     "description": "A browser interface for a knowledge graph for Alzheimer's Disease.",
@@ -1518,9 +1586,165 @@
                         "hetionet"
                     ]
                 }
+            ]
+        },
+        {
+            "activity_status": "active",
+            "category": "DataSource",
+            "collection": [
+                "aop"
             ],
-            "warnings": [
-                "This is an automatically generated stub page. Please replace with accurate information about this resource."
+            "contacts": [
+                {
+                    "category": "Organization",
+                    "contact_details": [
+                        {
+                            "contact_type": "url",
+                            "value": "https://aopwiki.org/info_pages/10"
+                        }
+                    ],
+                    "label": "AOP-Wiki Coordination Group"
+                }
+            ],
+            "description": "The AOP-Wiki is the primary collaborative authoring and curation interface for the Adverse Outcome Pathway Knowledge Base (AOP-KB). It enables the community to develop, review, browse, and export Adverse Outcome Pathways (AOPs) linking molecular initiating events through key events to adverse outcomes relevant to human and ecological risk assessment. Structured exports (XML and tabular subsets) support computational toxicology, ontology mapping, and integration into predictive assessment workflows.",
+            "domains": [],
+            "homepage_url": "https://aopwiki.org/",
+            "id": "aop-wiki",
+            "last_modified_date": "2025-09-04T00:00:00Z",
+            "layout": "resource_detail",
+            "license": {
+                "id": "https://aopwiki.org/",
+                "label": "Varies"
+            },
+            "name": "AOP-Wiki",
+            "products": [
+                {
+                    "category": "GraphicalInterface",
+                    "description": "Web portal for browsing, authoring, and reviewing AOPs, key events (KEs), key event relationships (KERs), stressors, and supporting documentation",
+                    "format": "http",
+                    "id": "aop-wiki.portal",
+                    "name": "AOP-Wiki Portal",
+                    "original_source": [
+                        "aop-wiki"
+                    ],
+                    "product_url": "https://aopwiki.org/"
+                },
+                {
+                    "category": "Product",
+                    "description": "Quarterly permanent XML snapshot (versioned) of AOP-Wiki content suitable for citation and archival use",
+                    "format": "xml",
+                    "id": "aop-wiki.quarterly-xml",
+                    "name": "AOP-Wiki Quarterly XML Snapshot",
+                    "original_source": [
+                        "aop-wiki"
+                    ],
+                    "product_url": "https://aopwiki.org/downloads",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2025-09-04: Error connecting to URL: HTTPSConnectionPool(host='aopwiki.org', port=443): Max retries exceeded with url: /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+                    ]
+                },
+                {
+                    "category": "Product",
+                    "description": "Nightly XML export (rolling) containing latest AOP-Wiki content (overwritten daily)",
+                    "format": "xml",
+                    "id": "aop-wiki.nightly-xml",
+                    "name": "AOP-Wiki Nightly XML Export",
+                    "original_source": [
+                        "aop-wiki"
+                    ],
+                    "product_url": "https://aopwiki.org/downloads/aop-wiki-xml.gz",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2025-09-04: Error connecting to URL: HTTPSConnectionPool(host='aopwiki.org', port=443): Max retries exceeded with url: /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+                    ]
+                },
+                {
+                    "category": "Product",
+                    "description": "Tab-delimited subset listing AOP to Key Event (including MIE, intermediate KE, and Adverse Outcome) associations",
+                    "format": "tsv",
+                    "id": "aop-wiki.ke-overview",
+                    "name": "AOP-Wiki Key Events TSV",
+                    "original_source": [
+                        "aop-wiki"
+                    ],
+                    "product_url": "https://aopwiki.org/downloads/aop_ke_mie_ao.tsv",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2025-09-04: Error connecting to URL: HTTPSConnectionPool(host='aopwiki.org', port=443): Max retries exceeded with url: /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+                    ]
+                },
+                {
+                    "category": "Product",
+                    "description": "Tab-delimited subset listing Key Event Relationships (KERs) with evidence and quantitative understanding indicators",
+                    "format": "tsv",
+                    "id": "aop-wiki.ker",
+                    "name": "AOP-Wiki Key Event Relationships TSV",
+                    "original_source": [
+                        "aop-wiki"
+                    ],
+                    "product_url": "https://aopwiki.org/downloads/aop_ke_ker.tsv",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2025-09-04: Error connecting to URL: HTTPSConnectionPool(host='aopwiki.org', port=443): Max retries exceeded with url: /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+                    ]
+                },
+                {
+                    "category": "Product",
+                    "description": "Tab-delimited subset of Key Event Components (actions, biological objects/processes with ontology references)",
+                    "format": "tsv",
+                    "id": "aop-wiki.ke-components",
+                    "name": "AOP-Wiki Key Event Components TSV",
+                    "original_source": [
+                        "aop-wiki"
+                    ],
+                    "product_url": "https://aopwiki.org/downloads/aop_ke_ec.tsv",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2025-09-04: Error connecting to URL: HTTPSConnectionPool(host='aopwiki.org', port=443): Max retries exceeded with url: /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+                    ]
+                },
+                {
+                    "category": "Product",
+                    "description": "Per-AOP dynamic XML feed accessible via each AOP page (XML button) for up-to-minute content retrieval",
+                    "format": "xml",
+                    "id": "aop-wiki.dynamic-aop-xml",
+                    "name": "AOP-Wiki Dynamic AOP XML Feed",
+                    "original_source": [
+                        "aop-wiki"
+                    ],
+                    "product_url": "https://aopwiki.org/aops",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2025-09-04: Error connecting to URL: HTTPSConnectionPool(host='aopwiki.org', port=443): Max retries exceeded with url: /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+                    ]
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "This document is the AOP Developers' Handbook supplement to the Guidance Document for developing and assessing Adverse Outcome Pathways (AOPs). The Guidance Document provides a historical background for the AOP development programme, and outlines the elements required to construct an AOP as well as the principles of the AOP framework.",
+                    "format": "http",
+                    "id": "aop-wiki.devhandbook",
+                    "name": "AOP Developers' Handbook",
+                    "product_url": "https://aopwiki.org/handbooks/4",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2025-09-04: Error connecting to URL: HTTPSConnectionPool(host='aopwiki.org', port=443): Max retries exceeded with url: /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+                    ]
+                },
+                {
+                    "category": "Product",
+                    "description": "The EPA has developed the Adverse Outcome Pathway Database (AOP-DB) to better characterize adverse outcomes of toxicological interest that are relevant to human health and the environment. Since its inception, the AOP-DB has been developed with the aim of integrating AOP molecular target information with other publicly available datasets to facilitate computational analyses of AOP information.",
+                    "id": "aop-db.data",
+                    "name": "AOP-DB Data",
+                    "original_source": [
+                        "aop-wiki",
+                        "ctd",
+                        "toxcast",
+                        "disgenet",
+                        "ncbigene",
+                        "string",
+                        "1000genomes",
+                        "ensembl",
+                        "gwascatalog"
+                    ],
+                    "product_url": "https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2",
+                    "secondary_source": [
+                        "aop-db"
+                    ]
+                }
             ]
         },
         {
@@ -6944,7 +7168,7 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-03: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-09-04: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-04: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -6956,7 +7180,7 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-03: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-09-04: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-04: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -6968,7 +7192,7 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-03: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-09-04: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-04: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -6980,7 +7204,7 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-03: Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-03: No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-09-04: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-09-04: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -13507,7 +13731,7 @@
                         "File was not able to be retrieved when checked on 2025-09-03: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
                         "File was not able to be retrieved when checked on 2025-09-03: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
                         "File was not able to be retrieved when checked on 2025-08-26: Timeout connecting to URL",
-                        "File was not able to be retrieved when checked on 2025-09-04: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-09-04: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/allComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
                     ]
                 },
                 {
@@ -13524,7 +13748,7 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-03: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
                         "File was not able to be retrieved when checked on 2025-09-03: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
-                        "File was not able to be retrieved when checked on 2025-09-04: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-09-04: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/coreComplexes.txt.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
                     ]
                 },
                 {
@@ -13541,7 +13765,7 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-03: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
                         "File was not able to be retrieved when checked on 2025-09-03: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
-                        "File was not able to be retrieved when checked on 2025-09-04: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-09-04: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/psi.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
                     ]
                 },
                 {
@@ -13558,7 +13782,7 @@
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-09-03: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))",
                         "File was not able to be retrieved when checked on 2025-09-03: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))",
-                        "File was not able to be retrieved when checked on 2025-09-04: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
+                        "File was not able to be retrieved when checked on 2025-09-04: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/mitab.zip (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
                     ]
                 },
                 {
@@ -15253,6 +15477,27 @@
                     "product_url": "https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv",
                     "secondary_source": [
                         "kg-monarch"
+                    ]
+                },
+                {
+                    "category": "Product",
+                    "description": "The EPA has developed the Adverse Outcome Pathway Database (AOP-DB) to better characterize adverse outcomes of toxicological interest that are relevant to human health and the environment. Since its inception, the AOP-DB has been developed with the aim of integrating AOP molecular target information with other publicly available datasets to facilitate computational analyses of AOP information.",
+                    "id": "aop-db.data",
+                    "name": "AOP-DB Data",
+                    "original_source": [
+                        "aop-wiki",
+                        "ctd",
+                        "toxcast",
+                        "disgenet",
+                        "ncbigene",
+                        "string",
+                        "1000genomes",
+                        "ensembl",
+                        "gwascatalog"
+                    ],
+                    "product_url": "https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2",
+                    "secondary_source": [
+                        "aop-db"
                     ]
                 }
             ]
@@ -17669,6 +17914,27 @@
                         "v3.0.2",
                         "v4.0.0",
                         "current_build"
+                    ]
+                },
+                {
+                    "category": "Product",
+                    "description": "The EPA has developed the Adverse Outcome Pathway Database (AOP-DB) to better characterize adverse outcomes of toxicological interest that are relevant to human health and the environment. Since its inception, the AOP-DB has been developed with the aim of integrating AOP molecular target information with other publicly available datasets to facilitate computational analyses of AOP information.",
+                    "id": "aop-db.data",
+                    "name": "AOP-DB Data",
+                    "original_source": [
+                        "aop-wiki",
+                        "ctd",
+                        "toxcast",
+                        "disgenet",
+                        "ncbigene",
+                        "string",
+                        "1000genomes",
+                        "ensembl",
+                        "gwascatalog"
+                    ],
+                    "product_url": "https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2",
+                    "secondary_source": [
+                        "aop-db"
                     ]
                 }
             ],
@@ -21576,6 +21842,27 @@
                     "product_url": "https://docs.epigraphdb.org/graph-database/",
                     "secondary_source": [
                         "epigraphdb"
+                    ]
+                },
+                {
+                    "category": "Product",
+                    "description": "The EPA has developed the Adverse Outcome Pathway Database (AOP-DB) to better characterize adverse outcomes of toxicological interest that are relevant to human health and the environment. Since its inception, the AOP-DB has been developed with the aim of integrating AOP molecular target information with other publicly available datasets to facilitate computational analyses of AOP information.",
+                    "id": "aop-db.data",
+                    "name": "AOP-DB Data",
+                    "original_source": [
+                        "aop-wiki",
+                        "ctd",
+                        "toxcast",
+                        "disgenet",
+                        "ncbigene",
+                        "string",
+                        "1000genomes",
+                        "ensembl",
+                        "gwascatalog"
+                    ],
+                    "product_url": "https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2",
+                    "secondary_source": [
+                        "aop-db"
                     ]
                 }
             ],
@@ -28100,6 +28387,27 @@
                         "alzkb",
                         "hetionet"
                     ]
+                },
+                {
+                    "category": "Product",
+                    "description": "The EPA has developed the Adverse Outcome Pathway Database (AOP-DB) to better characterize adverse outcomes of toxicological interest that are relevant to human health and the environment. Since its inception, the AOP-DB has been developed with the aim of integrating AOP molecular target information with other publicly available datasets to facilitate computational analyses of AOP information.",
+                    "id": "aop-db.data",
+                    "name": "AOP-DB Data",
+                    "original_source": [
+                        "aop-wiki",
+                        "ctd",
+                        "toxcast",
+                        "disgenet",
+                        "ncbigene",
+                        "string",
+                        "1000genomes",
+                        "ensembl",
+                        "gwascatalog"
+                    ],
+                    "product_url": "https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2",
+                    "secondary_source": [
+                        "aop-db"
+                    ]
                 }
             ]
         },
@@ -29010,7 +29318,10 @@
                     "original_source": [
                         "hmdb"
                     ],
-                    "product_url": "https://www.hmdb.ca/downloads#protein-gene-sequences"
+                    "product_url": "https://www.hmdb.ca/downloads#protein-gene-sequences",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2025-09-04: Timeout connecting to URL"
+                    ]
                 },
                 {
                     "category": "Product",
@@ -29032,7 +29343,10 @@
                     "original_source": [
                         "hmdb"
                     ],
-                    "product_url": "https://www.hmdb.ca/downloads#structures"
+                    "product_url": "https://www.hmdb.ca/downloads#structures",
+                    "warnings": [
+                        "File was not able to be retrieved when checked on 2025-09-04: Timeout connecting to URL"
+                    ]
                 },
                 {
                     "category": "Product",
@@ -34916,7 +35230,7 @@
             "evaluation_page": "resource/kg-monarch/kg-monarch_eval.html",
             "homepage_url": "https://kghub.org/kg-monarch/index.html",
             "id": "kg-monarch",
-            "last_modified_date": "2025-09-04T16:32:12Z",
+            "last_modified_date": "2025-09-03T18:33:50Z",
             "layout": "resource_detail",
             "license": {
                 "id": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -41981,6 +42295,27 @@
                     "product_url": "https://multiomics.transltr.io/mbkp",
                     "secondary_source": [
                         "microbiomekg"
+                    ]
+                },
+                {
+                    "category": "Product",
+                    "description": "The EPA has developed the Adverse Outcome Pathway Database (AOP-DB) to better characterize adverse outcomes of toxicological interest that are relevant to human health and the environment. Since its inception, the AOP-DB has been developed with the aim of integrating AOP molecular target information with other publicly available datasets to facilitate computational analyses of AOP information.",
+                    "id": "aop-db.data",
+                    "name": "AOP-DB Data",
+                    "original_source": [
+                        "aop-wiki",
+                        "ctd",
+                        "toxcast",
+                        "disgenet",
+                        "ncbigene",
+                        "string",
+                        "1000genomes",
+                        "ensembl",
+                        "gwascatalog"
+                    ],
+                    "product_url": "https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2",
+                    "secondary_source": [
+                        "aop-db"
                     ]
                 }
             ],
@@ -64437,6 +64772,27 @@
                     "product_url": "https://docs.epigraphdb.org/graph-database/",
                     "secondary_source": [
                         "epigraphdb"
+                    ]
+                },
+                {
+                    "category": "Product",
+                    "description": "The EPA has developed the Adverse Outcome Pathway Database (AOP-DB) to better characterize adverse outcomes of toxicological interest that are relevant to human health and the environment. Since its inception, the AOP-DB has been developed with the aim of integrating AOP molecular target information with other publicly available datasets to facilitate computational analyses of AOP information.",
+                    "id": "aop-db.data",
+                    "name": "AOP-DB Data",
+                    "original_source": [
+                        "aop-wiki",
+                        "ctd",
+                        "toxcast",
+                        "disgenet",
+                        "ncbigene",
+                        "string",
+                        "1000genomes",
+                        "ensembl",
+                        "gwascatalog"
+                    ],
+                    "product_url": "https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2",
+                    "secondary_source": [
+                        "aop-db"
                     ]
                 }
             ],

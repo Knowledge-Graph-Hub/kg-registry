@@ -33,10 +33,7 @@ layout: default
     <img alt="logo" src="{{page.depicted_by}}" style="max-height: 1em;" />
     {% endif %}
     <i class="bi bi-{{icon_name}}"></i> {{ page.id }}
-    {% if page.warnings and page.warnings.size > 0 %}
-      {% assign latest_warning = page.warnings | last %}
-      <span class="ms-1" title="{{ latest_warning | escape }}{% if page.warnings.size > 1 %} (more on this page below){% endif %}" style="cursor: help; text-decoration: underline dotted;">⚠</span>
-    {% endif %}
+  {# warnings icon removed from title #}
   </h1>
 
   <p>is{% if category_name == "Aggregator" %} an{% else %} a{% endif %} <strong><em>{{category_name}}.</em></strong></p>
@@ -86,20 +83,7 @@ layout: default
   {%- endif -%}
 </div>
 
-{% comment %} Compact warnings summary with icon at top {% endcomment %}
-{% if page.warnings and page.warnings.size > 0 %}
-<div class="row">
-  {% assign uniq_warnings = page.warnings | uniq %}
-  {% assign count_warnings = uniq_warnings | size %}
-  {% assign latest_warning = page.warnings | last %}
-  <div class="alert alert-warning" style="max-width: 72rem" role="alert">
-    <span title="{{ latest_warning | escape }}" style="text-decoration: underline dotted; cursor: help;">
-      ⚠ {{ count_warnings }} warning{% if count_warnings != 1 %}s{% endif %}
-    </span>
-  </div>
-  
-</div>
-{% endif %}
+{# compact warnings summary removed #}
 
 {% if page.activity_status == "inactive" %}
 <div class="row">
