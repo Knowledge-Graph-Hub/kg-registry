@@ -10,6 +10,7 @@ license:
 name: ITIS OWL
 original_source:
 - itis
+product_file_size: 14607611
 product_url: https://w3id.org/biopragmatics/resources/itis/itis.owl.gz
 secondary_source:
 - obo-db-ingest

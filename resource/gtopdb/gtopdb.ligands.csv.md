@@ -7,9 +7,11 @@ id: gtopdb.ligands.csv
 name: GtoPdb Ligands Dataset
 product_url: https://www.guidetopharmacology.org/DATA/ligands.csv
 warnings:
-- 'File was not able to be retrieved when checked on 2025-09-03: No Content-Length
-  header found'
-- 'File was not able to be retrieved when checked on 2025-08-14: HTTP 503 error when
-  accessing file'
+- File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
+  header found
+- File was not able to be retrieved when checked on 2025-09-04_ No Content-Length
+  header found
+- File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
+  accessing file
 layout: product_detail
 ---

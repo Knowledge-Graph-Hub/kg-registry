@@ -8,11 +8,13 @@ original_source:
 - uo
 product_url: http://purl.obolibrary.org/obo/uo.json
 warnings:
-- 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error when
-  accessing file'
-- 'File was not able to be retrieved when checked on 2025-09-02: HTTP 502 error when
-  accessing file'
-- 'File was not able to be retrieved when checked on 2025-08-20: Timeout connecting
-  to URL'
+- File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+  accessing file
+- File was not able to be retrieved when checked on 2025-09-04_ HTTP 404 error when
+  accessing file
+- File was not able to be retrieved when checked on 2025-09-02_ HTTP 502 error when
+  accessing file
+- File was not able to be retrieved when checked on 2025-08-20_ Timeout connecting
+  to URL
 layout: product_detail
 ---

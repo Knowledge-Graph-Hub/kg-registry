@@ -12,6 +12,7 @@ original_source:
 - geno
 - skos
 - gff
+product_file_size: 102365
 product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
 secondary_source:
 - chr
