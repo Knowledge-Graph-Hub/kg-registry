@@ -2,6 +2,7 @@
 
 import argparse
 import csv
+from html import parser
 import sys
 import pathlib
 import datetime
@@ -9,12 +10,15 @@ import json
 
 import frontmatter
 import yaml
+
 from copy import deepcopy
 from frontmatter.util import u
 from linkml.validator import validate
+from yaml.parser import ParserError
 from ruamel.yaml import YAML
 from ruamel.yaml.compat import StringIO
 from ruamel.yaml.scalarstring import DoubleQuotedScalarString as DQ
+from ruamel.yaml.scanner import ScannerError
 from yamllint import config, linter
 
 __author__ = "cjm"
@@ -112,7 +116,11 @@ def validate_markdown(args):
 
         # Load with ruamel handler so we can preserve/emit quotes
         handler = CustomRuamelYAMLHandler()
-        post = frontmatter.load(fn, handler=handler)
+        try:
+            post = frontmatter.load(fn, handler=handler)
+        except (ScannerError, ParserError) as e:
+            print(f"ERROR: Failed to parse YAML in {fn}: {e}")
+            continue
         obj = deepcopy(post.metadata)
         md_content = post.content
 
@@ -1142,7 +1150,11 @@ def concat_resource_yaml(args):
         with open(args.include, "r") as f:
             cfg = yaml.load(f.read(), Loader=yaml.SafeLoader)
     for fn in args.files:
-        (obj, md) = load_md(fn)
+        try:
+            (obj, md) = load_md(fn)
+        except (ScannerError, ParserError) as e:
+            print(f"ERROR: Failed to parse YAML in {fn}: {e}")
+            continue
         # Normalize date fields to ISO 8601 format
         obj = normalize_date_fields(obj)
         # Check if the object is actually a product
@@ -1189,8 +1201,8 @@ def load_md(fn):
 
     Returns a tuple (yaml_obj, markdown_text)
     """
-    print(fn)
     onto_stuff = frontmatter.load(fn)
+
     return (onto_stuff.metadata, onto_stuff.content)
 
 
