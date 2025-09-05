@@ -14,7 +14,9 @@ product_url: https://zenodo.org/records/8117748/files/test.txt
 secondary_source:
 - mind
 warnings:
-- 'File was not able to be retrieved when checked on 2025-09-03: No Content-Length
-  header found'
+- File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
+  header found
+- File was not able to be retrieved when checked on 2025-09-04_ No Content-Length
+  header found
 layout: product_detail
 ---

@@ -10,7 +10,9 @@ product_url: https://kghub.io/kg-covid-19/
 secondary_source:
 - kg-covid-19
 warnings:
-- 'File was not able to be retrieved when checked on 2025-09-03: HTTP 403 error when
-  accessing file'
+- File was not able to be retrieved when checked on 2025-09-05_ HTTP 403 error when
+  accessing file
+- File was not able to be retrieved when checked on 2025-09-04_ HTTP 403 error when
+  accessing file
 layout: product_detail
 ---

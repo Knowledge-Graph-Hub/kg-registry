@@ -1,4 +1,5 @@
 Resource,Activity Status,Validation Status
+1000genomes,active,PASS
 4dn,active,PASS
 achilles,active,PASS
 alliance,active,PASS
@@ -98,7 +99,9 @@ gdsc,active,PASS
 gencode,active,PASS
 genemania,active,PASS
 genetics-kp,active,PASS
+geno,active,PASS
 genomickb,active,PASS
+gff,active,PASS
 glkb,active,PASS
 glycocoo,active,PASS
 glyconnect,active,PASS
@@ -276,6 +279,7 @@ swisslipid,active,PASS
 text-mining-kp,active,PASS
 tissues,active,PASS
 to,active,PASS
+toxcast,active,PASS
 toxin,active,PASS
 ttd,active,PASS
 ubergraph,active,PASS

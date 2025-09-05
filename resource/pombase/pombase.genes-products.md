@@ -16,7 +16,9 @@ product_url: https://www.pombase.org/data/names_and_identifiers/gene_IDs_names_p
 secondary_source:
 - pombase
 warnings:
-- 'File was not able to be retrieved when checked on 2025-09-03: No Content-Length
-  header found'
+- File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
+  header found
+- File was not able to be retrieved when checked on 2025-09-04_ No Content-Length
+  header found
 layout: product_detail
 ---

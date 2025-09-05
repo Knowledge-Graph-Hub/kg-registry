@@ -140,9 +140,11 @@ products:
   secondary_source:
   - scibite
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-03: HTTP 404 error
-    when accessing file'
-  - 'File was not able to be retrieved when checked on 2025-09-04: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-04_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.

@@ -10,6 +10,7 @@ license:
 name: HGNC OWL
 original_source:
 - hgnc
+product_file_size: 6489789
 product_url: https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl.gz
 secondary_source:
 - obo-db-ingest
