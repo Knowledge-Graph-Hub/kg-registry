@@ -261,6 +261,16 @@ def concat_resource_yaml(args):
                             print(f"Creating new page for product {product['id']}")
 
                         # Write the product to its own page
+                        # Sanitize any warning strings to avoid raw colons that could confuse downstream YAML parsing
+                        if isinstance(product, dict) and product.get("warnings"):
+                            sanitized = []
+                            for w in product["warnings"]:
+                                if isinstance(w, str):
+                                    # Replace colon characters with underscores for safety
+                                    sanitized.append(w.replace(":", "_"))
+                                else:
+                                    sanitized.append(w)
+                            product["warnings"] = sanitized
                         with open(fn, "w") as f:
                             f.write("---\n" + yaml.dump(product) + layout_string + "\n---\n")
 
@@ -740,7 +750,8 @@ def concat_resource_yaml(args):
                     else:
                         # Optionally, if later differs, we could log
                         if canonical[pid] != p:
-                            print(f"NOTE: Multiple owner definitions found for {pid}; keeping first from {owner}")
+                            print(
+                                f"NOTE: Multiple owner definitions found for {pid}; keeping first from {owner}")
         if not canonical:
             print("No canonical products discovered for synchronization")
             return
@@ -774,7 +785,7 @@ def concat_resource_yaml(args):
                         for p in metadata['products']:
                             if isinstance(p, dict):
                                 pid_val = p.get('id')
-                                if isinstance(pid_val, str) and pid_val in canonical and pid_val.split('.',1)[0] != rid:
+                                if isinstance(pid_val, str) and pid_val in canonical and pid_val.split('.', 1)[0] != rid:
                                     new_products.append(deepcopy(canonical[pid_val]))
                                     continue
                             new_products.append(p)
@@ -799,7 +810,8 @@ def concat_resource_yaml(args):
         We keep any other warning types untouched.
         """
         import re
-        pattern = re.compile(r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:')
+        pattern = re.compile(
+            r'^File was not able to be retrieved when checked on \d{4}-\d{2}-\d{2}:')
         updated = 0
         for res in objs:
             rid = res.get('id')
@@ -1177,6 +1189,7 @@ def load_md(fn):
 
     Returns a tuple (yaml_obj, markdown_text)
     """
+    print(fn)
     onto_stuff = frontmatter.load(fn)
     return (onto_stuff.metadata, onto_stuff.content)
 
