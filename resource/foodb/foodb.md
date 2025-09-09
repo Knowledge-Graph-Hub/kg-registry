@@ -48,6 +48,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-09_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
     header found'
 - category: Product
@@ -66,6 +68,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-09_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
     header found'
 - category: Product
@@ -84,6 +88,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-09_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
     header found'
 - category: Product
@@ -101,6 +107,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-09_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
     header found'
 - category: Product
@@ -118,6 +126,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-09_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
     header found'
 - category: Product
@@ -135,6 +145,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-09_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
     header found'
 - category: Product
@@ -152,6 +164,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-09_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
     header found'
 - category: Product
@@ -169,6 +183,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-09_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
     header found'
 - category: Product
@@ -186,6 +202,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-09_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
     header found'
 - category: Product
@@ -202,6 +220,8 @@ products:
   - File was not able to be retrieved when checked on 2025-08-28_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
     when accessing file'
@@ -220,6 +240,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-09_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
     header found'
 - category: GraphProduct

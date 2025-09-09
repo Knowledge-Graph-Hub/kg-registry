@@ -56,6 +56,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2025-09-09_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
     header found'
 - category: Product
@@ -70,6 +72,8 @@ products:
   - metanetx
   warnings:
   - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-09-09_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
     header found'
