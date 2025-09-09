@@ -7,9 +7,10 @@ contacts:
   - contact_type: url
     value: https://cancer.sanger.ac.uk/cosmic/about
   label: COSMIC Team (Wellcome Sanger Institute)
-description: COSMIC (Catalogue Of Somatic Mutations In Cancer) is a comprehensive resource for somatic mutations in human cancer. It curates, standardizes, and integrates mutation data across genes, cancer types, and samples, and provides access via a web portal and licensed downloads.
-warnings:
-- COSMIC data downloads for commercial users are provided by Qiagen.
+description: COSMIC (Catalogue Of Somatic Mutations In Cancer) is a comprehensive
+  resource for somatic mutations in human cancer. It curates, standardizes, and integrates
+  mutation data across genes, cancer types, and samples, and provides access via a
+  web portal and licensed downloads.
 domains:
 - genomics
 - biomedical
@@ -23,7 +24,8 @@ license:
 name: COSMIC
 products:
 - category: GraphicalInterface
-  description: Web portal for exploring somatic mutations, gene pages, cancer types, and curated annotations
+  description: Web portal for exploring somatic mutations, gene pages, cancer types,
+    and curated annotations
   format: http
   id: cosmic.portal
   name: COSMIC Portal
@@ -31,7 +33,8 @@ products:
   - cosmic
   product_url: https://cancer.sanger.ac.uk/cosmic
 - category: Product
-  description: Top-level downloads page with links to COSMIC release files (registration/license required)
+  description: Top-level downloads page with links to COSMIC release files (registration/license
+    required)
   format: http
   id: cosmic.downloads
   name: COSMIC Downloads
@@ -46,6 +49,135 @@ products:
   original_source:
   - cosmic
   product_url: https://www.cosmickb.org/about/
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
+  name: Bioteque Embeddings
+  original_source:
+  - chebi
+  - cosmic
+  - achilles
+  - depmap
+  - ccle
+  - gdsc
+  - cellosaurus
+  - clue
+  - ctd
+  - pharmdb
+  - prism
+  - drugbank
+  - lincs
+  - compartments
+  - offsides
+  - sider
+  - drugcentral
+  - repohub
+  - chemicalchecker
+  - repodb
+  - disgenet
+  - opentargets
+  - creeds
+  - interpro
+  - reactome
+  - tissues
+  - dorothea
+  - progeny
+  - gtex
+  - hpa
+  - go
+  - corum
+  - huri
+  - intact
+  - omnipath
+  - string
+  - bto
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+  secondary_source:
+  - bioteque
+- category: GraphProduct
+  description: RNA-KG as a Neo4j Dump
+  format: neo4j
+  id: rna-kg.kg.neo4j
+  name: RNA-KG Neo4j Dump
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 3976840239
+  product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
+  secondary_source:
+  - rna-kg
+- category: GraphProduct
+  description: RNA-KG Nodes in CSV format
+  format: csv
+  id: rna-kg.kg.nodes
+  name: RNA-KG Nodes
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 4424633304
+  product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
+  secondary_source:
+  - rna-kg
+- category: GraphProduct
+  description: RNA-KG Edges in CSV format
+  format: csv
+  id: rna-kg.kg.edges
+  name: RNA-KG Edges
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 18370248815
+  product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
+  secondary_source:
+  - rna-kg
+warnings:
+- COSMIC data downloads for commercial users are provided by Qiagen.
 ---
 # COSMIC
 

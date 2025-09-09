@@ -48,8 +48,11 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
+    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
+    with url: /biopragmatics/resources/rhea/rhea.owl (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
+    object at 0x7f4fb79e8200>: Failed to establish a new connection: [Errno 101] Network
+    is unreachable''))'
 - category: Product
   description: rhea OBO Graph JSON
   format: json
@@ -68,8 +71,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+    to URL'
 - category: MappingProduct
   description: Rhea SSSOM
   format: sssom

@@ -7,7 +7,10 @@ contacts:
   - contact_type: url
     value: https://www.ebi.ac.uk/support/intact
   label: IntAct Team (EMBL-EBI)
-description: IntAct is an open, curated molecular interaction database maintained at EMBL‑EBI. It aggregates experimentally-derived interaction evidence from literature curation and direct submissions, and distributes data in PSI‑MI XML and MITAB formats along with curated datasets and documentation.
+description: IntAct is an open, curated molecular interaction database maintained
+  at EMBL‑EBI. It aggregates experimentally-derived interaction evidence from literature
+  curation and direct submissions, and distributes data in PSI‑MI XML and MITAB formats
+  along with curated datasets and documentation.
 domains:
 - proteomics
 - systems biology
@@ -21,7 +24,8 @@ license:
 name: IntAct
 products:
 - category: GraphicalInterface
-  description: Web portal for browsing, searching, and accessing IntAct molecular interaction data
+  description: Web portal for browsing, searching, and accessing IntAct molecular
+    interaction data
   format: http
   id: intact.portal
   name: IntAct Portal
@@ -59,9 +63,11 @@ products:
   name: IntAct MITAB Archive
   original_source:
   - intact
+  product_file_size: 846305671
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact.zip
 - category: Product
-  description: Curated and computational datasets (disease-, method-, and species-specific) with per-dataset downloads
+  description: Curated and computational datasets (disease-, method-, and species-specific)
+    with per-dataset downloads
   format: http
   id: intact.datasets
   name: IntAct Datasets
@@ -69,13 +75,355 @@ products:
   - intact
   product_url: https://www.ebi.ac.uk/intact/download/datasets
 - category: DocumentationProduct
-  description: User guide and documentation for search, exports, data sources, and submission
+  description: User guide and documentation for search, exports, data sources, and
+    submission
   format: http
   id: intact.docs.user-guide
   name: IntAct User Guide
   original_source:
   - intact
   product_url: https://www.ebi.ac.uk/intact/documentation/user-guide
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
+  name: Bioteque Embeddings
+  original_source:
+  - chebi
+  - cosmic
+  - achilles
+  - depmap
+  - ccle
+  - gdsc
+  - cellosaurus
+  - clue
+  - ctd
+  - pharmdb
+  - prism
+  - drugbank
+  - lincs
+  - compartments
+  - offsides
+  - sider
+  - drugcentral
+  - repohub
+  - chemicalchecker
+  - repodb
+  - disgenet
+  - opentargets
+  - creeds
+  - interpro
+  - reactome
+  - tissues
+  - dorothea
+  - progeny
+  - gtex
+  - hpa
+  - go
+  - corum
+  - huri
+  - intact
+  - omnipath
+  - string
+  - bto
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+  secondary_source:
+  - bioteque
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - do
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: Integrated graph knowledge base combining Mendelian randomization causal
+    estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships
+    (Neo4j backend)
+  format: neo4j
+  id: epigraphdb.graph
+  name: EpiGraphDB Graph Database
+  original_source:
+  - epigraphdb
+  - kg-monarch
+  - vectology
+  - ukbiobank
+  - prsatlas
+  - eqtlgen
+  - mondo
+  - gtex
+  - ensembl
+  - cpic
+  - opentargets
+  - efo
+  - semmeddb
+  - intact
+  - string
+  - reactome
+  - mrbase
+  product_url: https://docs.epigraphdb.org/graph-database/
+  secondary_source:
+  - epigraphdb
+- category: GraphicalInterface
+  description: Web portal for searching and browsing ncRNA sequences, structures,
+    and annotations
+  format: http
+  id: rnacentral.portal
+  name: RNAcentral Portal
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to RNAcentral data
+  format: http
+  id: rnacentral.api
+  name: RNAcentral REST API
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/api
+- category: Product
+  description: FTP archive with current and archived release files (sequences and
+    annotations)
+  format: http
+  id: rnacentral.ftp
+  name: RNAcentral FTP Archive
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+- category: DataModelProduct
+  description: Public PostgreSQL database for direct SQL access to RNAcentral data
+  format: postgres
+  id: rnacentral.public-db
+  name: RNAcentral Public Postgres Database
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/help/public-database
+- category: GraphProduct
+  description: IntAct Automat
+  format: kgx-jsonl
+  id: automat.intact
+  infores_id: automat-intact
+  name: intact_automat
+  original_source:
+  - intact
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/IntAct_Automat/e5b936f966a02c2c/
+  secondary_source:
+  - automat
 ---
 # IntAct
 

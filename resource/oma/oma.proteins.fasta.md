@@ -15,7 +15,7 @@ warnings:
   accessing file
 - File was not able to be retrieved when checked on 2025-09-05_ HTTP 502 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-09-01_ HTTP 502 error when
+- File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
   to URL
