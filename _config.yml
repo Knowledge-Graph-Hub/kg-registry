@@ -19,16 +19,91 @@ feed:
 resources:
 - activity_status: active
   category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.internationalgenome.org/
+    - contact_type: email
+      value: info@1000genomes.org
+    label: International Genome Sample Resource (EMBL-EBI)
   creation_date: '2025-09-04T00:00:00Z'
-  description: Stub Resource page for 1000genomes. This page was automatically generated
-    because it was referenced by other resources.
+  description: The International Genome Sample Resource (IGSR) maintains and shares
+    the open human genetic variation resources built by the 1000 Genomes Project,
+    updates them to current reference assemblies (e.g., GRCh38), and incorporates
+    new data sets and populations. IGSR provides a searchable data portal, bulk download
+    methods, and guidance for proper reuse and citation.
   domains:
-  - stub
+  - genomics
+  homepage_url: https://www.internationalgenome.org/
   id: 1000genomes
-  last_modified_date: '2025-09-04T00:00:00Z'
+  last_modified_date: '2025-09-09T00:00:00Z'
   layout: resource_detail
-  name: 1000genomes
+  license:
+    id: https://www.internationalgenome.org/IGSR_disclaimer
+    label: IGSR Data Disclaimer / Terms of Use
+  name: 1000 Genomes Project (IGSR)
   products:
+  - category: GraphicalInterface
+    description: Main IGSR website with links to data portal, help, and announcements
+    format: http
+    id: 1000genomes.portal
+    name: IGSR Portal
+    product_url: https://www.internationalgenome.org/
+  - category: GraphicalInterface
+    description: Interactive data portal to browse IGSR/1000 Genomes data by sample,
+      population, technology, data type, and collection
+    format: http
+    id: 1000genomes.data-portal
+    name: IGSR Data Portal
+    product_url: https://www.internationalgenome.org/data-portal
+  - category: Product
+    description: Primary FTP site hosting IGSR and 1000 Genomes Project data collections
+      and releases
+    format: http
+    id: 1000genomes.ftp
+    name: IGSR FTP Site
+    product_url: http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/
+  - category: DocumentationProduct
+    description: Instructions for accessing IGSR data via Globus (recommended for
+      bulk transfers)
+    format: http
+    id: 1000genomes.globus-docs
+    name: Globus Access Instructions
+    product_url: https://www.internationalgenome.org/faq/can-i-access-1000-genomes-data-globus-online
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
+      to URL: HTTPSConnectionPool(host=''www.internationalgenome.org'', port=443):
+      Max retries exceeded with url: /faq/can-i-access-1000-genomes-data-globus-online
+      (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
+      certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
+  - category: DocumentationProduct
+    description: Instructions for downloading files using Aspera
+    format: http
+    id: 1000genomes.aspera-docs
+    name: Aspera Download Instructions
+    product_url: https://www.internationalgenome.org/faq/how-download-files-using-aspera
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
+      to URL: HTTPSConnectionPool(host=''www.internationalgenome.org'', port=443):
+      Max retries exceeded with url: /faq/how-download-files-using-aspera (Caused
+      by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
+      verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
+  - category: Product
+    description: Mirror of original 1000 Genomes Project data at NCBI
+    format: http
+    id: 1000genomes.ncbi-mirror
+    name: NCBI Mirror
+    product_url: https://ftp-trace.ncbi.nih.gov/1000genomes/ftp/
+  - category: Product
+    description: Mirror of original 1000 Genomes Project data at DDBJ
+    format: http
+    id: 1000genomes.ddbj-mirror
+    name: DDBJ Mirror
+    product_url: https://ddbj.nig.ac.jp/public/mirror_database/1000genomes/
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 403 error
+      when accessing file'
   - category: Product
     description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)
       to better characterize adverse outcomes of toxicological interest that are relevant
@@ -51,9 +126,6 @@ resources:
     product_url: https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2
     secondary_source:
     - aop-db
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -469,7 +541,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
@@ -1409,7 +1481,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
@@ -1526,12 +1598,12 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
-      certificate (_ssl.c_1000)')))
-    - 'File was not able to be retrieved when checked on 2025-09-05: Error connecting
+      certificate (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads (Caused by SSLError(SSLCertVerificationError(1, ''[SSL:
       CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer
-      certificate (_ssl.c:1017)'')))'
+      certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Nightly XML export (rolling) containing latest AOP-Wiki content (overwritten
       daily)
@@ -1551,12 +1623,12 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
-    - 'File was not able to be retrieved when checked on 2025-09-05: Error connecting
+      issuer certificate (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Tab-delimited subset listing AOP to Key Event (including MIE, intermediate
       KE, and Adverse Outcome) associations
@@ -1576,12 +1648,12 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
-    - 'File was not able to be retrieved when checked on 2025-09-05: Error connecting
+      issuer certificate (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Tab-delimited subset listing Key Event Relationships (KERs) with
       evidence and quantitative understanding indicators
@@ -1601,12 +1673,12 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
-    - 'File was not able to be retrieved when checked on 2025-09-05: Error connecting
+      issuer certificate (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Tab-delimited subset of Key Event Components (actions, biological
       objects/processes with ontology references)
@@ -1626,12 +1698,12 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
-    - 'File was not able to be retrieved when checked on 2025-09-05: Error connecting
+      issuer certificate (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Per-AOP dynamic XML feed accessible via each AOP page (XML button)
       for up-to-minute content retrieval
@@ -1649,11 +1721,11 @@ resources:
     - File was not able to be retrieved when checked on 2025-09-05_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-      certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-    - 'File was not able to be retrieved when checked on 2025-09-05: Error connecting
+      certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /aops (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
-      certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
+      certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
   - category: DocumentationProduct
     description: This document is the AOP Developers' Handbook supplement to the Guidance
       Document for developing and assessing Adverse Outcome Pathways (AOPs). The Guidance
@@ -1674,12 +1746,12 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
-      certificate (_ssl.c_1000)')))
-    - 'File was not able to be retrieved when checked on 2025-09-05: Error connecting
+      certificate (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, ''[SSL:
       CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer
-      certificate (_ssl.c:1017)'')))'
+      certificate (_ssl.c:1000)'')))'
   - category: Product
     description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)
       to better characterize adverse outcomes of toxicological interest that are relevant
@@ -2272,7 +2344,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-02_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -2292,7 +2364,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-02_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -2312,7 +2384,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-02_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -2332,7 +2404,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-02_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -2352,7 +2424,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-02_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -2372,7 +2444,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-02_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -2392,7 +2464,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-02_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -2412,7 +2484,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-02_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -6363,12 +6435,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-05_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-05_ Timeout connecting
-      to URL
+    - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
+      header found
     - File was not able to be retrieved when checked on 2025-09-03_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
-      header found'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: Cell markers of different cell types from different tissues in mouse
     id: cellmarker.mouse
@@ -6377,12 +6449,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-05_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-05_ Timeout connecting
-      to URL
+    - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
+      header found
     - File was not able to be retrieved when checked on 2025-09-03_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
-      header found'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: Cell markers derived from single-cell sequencing researches in human
       and mouse
@@ -6392,12 +6464,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-05_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-05_ Timeout connecting
-      to URL
+    - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
+      header found
     - File was not able to be retrieved when checked on 2025-09-03_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
-      header found'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: All cell markers of different cell types from different tissues in
       human and mouse
@@ -6407,12 +6479,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-05_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-05_ Timeout connecting
-      to URL
+    - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
+      header found
     - File was not able to be retrieved when checked on 2025-09-03_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
-      header found'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: GraphicalInterface
     description: ACT is a tool that makes cell type annotation easier by integrating
       the CellMarker resource.
@@ -6549,7 +6621,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     description: Complete Cellosaurus data in RDF format using the Turtle syntax
@@ -6566,7 +6638,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
     description: RESTful API for programmatic access to Cellosaurus data
@@ -6709,7 +6781,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     description: cgnc OBO
@@ -10284,7 +10356,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -12160,11 +12232,16 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
-    - 'File was not able to be retrieved when checked on 2025-09-05: Error connecting
+    - File was not able to be retrieved when checked on 2025-09-05_ Error connecting
+      to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
+      retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
+      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+      issuer certificate (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Core dataset of manually curated, non-redundant protein complexes
       in CORUM in tab-delimited format
@@ -12181,11 +12258,16 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
-    - 'File was not able to be retrieved when checked on 2025-09-05: Error connecting
+    - File was not able to be retrieved when checked on 2025-09-05_ Error connecting
+      to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
+      retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
+      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+      issuer certificate (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Dataset of all CORUM protein complexes in PSI-MI XML format (Proteomics
       Standards Initiative)
@@ -12202,11 +12284,16 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
-    - 'File was not able to be retrieved when checked on 2025-09-05: Error connecting
+    - File was not able to be retrieved when checked on 2025-09-05_ Error connecting
+      to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
+      retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
+      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+      issuer certificate (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Dataset of all CORUM protein complexes in PSI-MI MITAB 2.5 format
     format: psi_mi_mitab
@@ -12222,11 +12309,16 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
-    - 'File was not able to be retrieved when checked on 2025-09-05: Error connecting
+    - File was not able to be retrieved when checked on 2025-09-05_ Error connecting
+      to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
+      retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
+      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+      issuer certificate (_ssl.c_1017)')))
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
       entities and their associations
@@ -12367,14 +12459,54 @@ resources:
   repository: https://mips.helmholtz-muenchen.de/corum/download
 - activity_status: active
   category: DataSource
-  description: Stub Resource page for cosmic. This page was automatically generated
-    because it was referenced by other resources.
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://cancer.sanger.ac.uk/cosmic/about
+    label: COSMIC Team (Wellcome Sanger Institute)
+  description: COSMIC (Catalogue Of Somatic Mutations In Cancer) is a comprehensive
+    resource for somatic mutations in human cancer. It curates, standardizes, and
+    integrates mutation data across genes, cancer types, and samples, and provides
+    access via a web portal and licensed downloads.
   domains:
-  - stub
+  - genomics
+  - biomedical
+  homepage_url: https://cancer.sanger.ac.uk/cosmic
   id: cosmic
+  last_modified_date: '2025-09-09T00:00:00Z'
   layout: resource_detail
-  name: Cosmic
+  license:
+    id: https://cancer.sanger.ac.uk/cosmic/license
+    label: COSMIC License
+  name: COSMIC
   products:
+  - category: GraphicalInterface
+    description: Web portal for exploring somatic mutations, gene pages, cancer types,
+      and curated annotations
+    format: http
+    id: cosmic.portal
+    name: COSMIC Portal
+    original_source:
+    - cosmic
+    product_url: https://cancer.sanger.ac.uk/cosmic
+  - category: Product
+    description: Top-level downloads page with links to COSMIC release files (registration/license
+      required)
+    format: http
+    id: cosmic.downloads
+    name: COSMIC Downloads
+    original_source:
+    - cosmic
+    product_url: https://cancer.sanger.ac.uk/cosmic/download/cosmic
+  - category: DocumentationProduct
+    description: COSMIC Knowledgebase overview and documentation pages
+    format: http
+    id: cosmic.kb.overview
+    name: COSMIC-KB Portal overview
+    original_source:
+    - cosmic
+    product_url: https://www.cosmickb.org/about/
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
       entities and their associations
@@ -12503,8 +12635,7 @@ resources:
     secondary_source:
     - rna-kg
   warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  - COSMIC data downloads for commercial users are provided by Qiagen.
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -15321,6 +15452,216 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
     secondary_source:
     - kg-monarch
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing ncRNA sequences, structures,
+      and annotations
+    format: http
+    id: rnacentral.portal
+    name: RNAcentral Portal
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/
+  - category: ProgrammingInterface
+    description: REST API for programmatic access to RNAcentral data
+    format: http
+    id: rnacentral.api
+    name: RNAcentral REST API
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/api
+  - category: Product
+    description: FTP archive with current and archived release files (sequences and
+      annotations)
+    format: http
+    id: rnacentral.ftp
+    name: RNAcentral FTP Archive
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+  - category: DataModelProduct
+    description: Public PostgreSQL database for direct SQL access to RNAcentral data
+    format: postgres
+    id: rnacentral.public-db
+    name: RNAcentral Public Postgres Database
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/help/public-database
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -17319,7 +17660,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -17340,7 +17681,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -17362,7 +17703,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -17411,7 +17752,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -17558,7 +17899,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
@@ -19282,6 +19623,216 @@ resources:
     product_url: https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2
     secondary_source:
     - aop-db
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing ncRNA sequences, structures,
+      and annotations
+    format: http
+    id: rnacentral.portal
+    name: RNAcentral Portal
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/
+  - category: ProgrammingInterface
+    description: REST API for programmatic access to RNAcentral data
+    format: http
+    id: rnacentral.api
+    name: RNAcentral REST API
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/api
+  - category: Product
+    description: FTP archive with current and archived release files (sequences and
+      annotations)
+    format: http
+    id: rnacentral.ftp
+    name: RNAcentral FTP Archive
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+  - category: DataModelProduct
+    description: Public PostgreSQL database for direct SQL access to RNAcentral data
+    format: postgres
+    id: rnacentral.public-db
+    name: RNAcentral Public Postgres Database
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/help/public-database
   publications:
   - authors:
     - Dyer SC
@@ -20600,7 +21151,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     compression: targz
@@ -20620,7 +21171,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -20640,7 +21191,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     compression: targz
@@ -20659,7 +21210,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -20678,7 +21229,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -20697,7 +21248,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -20716,7 +21267,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -20735,7 +21286,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -20754,7 +21305,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -20773,7 +21324,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -20792,7 +21343,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -21048,7 +21599,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -24071,7 +24622,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
     connection_url: http://api.geneontology.org/api/
@@ -24153,7 +24704,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     format: owl
@@ -24507,7 +25058,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     description: Complete list of ligands including drugs, small molecules, and other
@@ -24523,7 +25074,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     description: Comprehensive dataset of all interactions between ligands and targets
@@ -24538,7 +25089,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     description: Detailed interactions list for approved drugs and their targets
@@ -24553,7 +25104,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     description: SDF file containing chemical structures with SMILES for all ligands
@@ -24569,7 +25120,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     description: RDF/linked data format of the GtoPdb data (target-ligand interactions
@@ -24585,7 +25136,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     description: Complete PostgreSQL database dump of the current Guide to Pharmacology
@@ -24600,7 +25151,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: GraphicalInterface
     description: An extension of the Guide to PHARMACOLOGY database providing immunological
@@ -24875,7 +25426,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     description: Study metadata file containing per-study information for GWAS Catalog
@@ -24901,7 +25452,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     description: EFO trait mapping file linking GWAS Catalog reported traits to Experimental
@@ -24917,7 +25468,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     description: RDF/OWL representation of GWAS Catalog associations enabling semantic
@@ -24933,7 +25484,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: DocumentationProduct
     description: Compressed GWAS Catalog diagram (karyotype visualization) in SVG
@@ -24949,7 +25500,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: DocumentationProduct
     description: Archive of previous GWAS Catalog diagram versions (SVG format)
@@ -24964,7 +25515,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: DocumentationProduct
     description: Harmonised summary statistics landing page (FTP directory containing
@@ -24979,7 +25530,7 @@ resources:
       to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
     - File was not able to be retrieved when checked on 2025-09-05_ Error connecting
       to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
-    - 'File was not able to be retrieved when checked on 2025-09-05: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
       to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'''
   - category: GraphProduct
     description: GWASCatalog Automat
@@ -25666,7 +26217,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -25948,6 +26499,216 @@ resources:
     product_url: https://multiomics.transltr.io/mbkp
     secondary_source:
     - microbiomekg
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing ncRNA sequences, structures,
+      and annotations
+    format: http
+    id: rnacentral.portal
+    name: RNAcentral Portal
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/
+  - category: ProgrammingInterface
+    description: REST API for programmatic access to RNAcentral data
+    format: http
+    id: rnacentral.api
+    name: RNAcentral REST API
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/api
+  - category: Product
+    description: FTP archive with current and archived release files (sequences and
+      annotations)
+    format: http
+    id: rnacentral.ftp
+    name: RNAcentral FTP Archive
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+  - category: DataModelProduct
+    description: Public PostgreSQL database for direct SQL access to RNAcentral data
+    format: postgres
+    id: rnacentral.public-db
+    name: RNAcentral Public Postgres Database
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/help/public-database
   repository: https://github.com/HGNC
 - activity_status: active
   category: Aggregator
@@ -28397,7 +29158,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 401 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 401 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 401 error
       when accessing file'
   - category: Product
     description: Data submission portal for registering and ingesting consortium data
@@ -29699,15 +30460,89 @@ resources:
       graph for multi-scale analytics'
     year: '2025'
 - activity_status: active
-  category: DataSource
-  description: Stub Resource page for intact. This page was automatically generated
-    because it was referenced by other resources.
+  category: Aggregator
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://www.ebi.ac.uk/support/intact
+    label: IntAct Team (EMBL-EBI)
+  description: IntAct is an open, curated molecular interaction database maintained
+    at EMBL‑EBI. It aggregates experimentally-derived interaction evidence from literature
+    curation and direct submissions, and distributes data in PSI‑MI XML and MITAB
+    formats along with curated datasets and documentation.
   domains:
-  - stub
+  - proteomics
+  - systems biology
+  homepage_url: https://www.ebi.ac.uk/intact/home
   id: intact
+  last_modified_date: '2025-09-09T00:00:00Z'
   layout: resource_detail
-  name: Intact
+  license:
+    id: https://www.apache.org/licenses/LICENSE-2.0
+    label: Apache License 2.0
+  name: IntAct
   products:
+  - category: GraphicalInterface
+    description: Web portal for browsing, searching, and accessing IntAct molecular
+      interaction data
+    format: http
+    id: intact.portal
+    name: IntAct Portal
+    original_source:
+    - intact
+    product_url: https://www.ebi.ac.uk/intact/home
+  - category: Product
+    description: IntAct data in PSI-MI XML 2.5 format (directory)
+    format: psi_mi_xml
+    id: intact.ftp.psi25
+    name: IntAct PSI-MI XML 2.5
+    original_source:
+    - intact
+    product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psi25/
+  - category: Product
+    description: IntAct data in PSI-MI XML 3.0 format (directory)
+    format: psi_mi_xml
+    id: intact.ftp.psi30
+    name: IntAct PSI-MI XML 3.0
+    original_source:
+    - intact
+    product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psi30/
+  - category: Product
+    description: IntAct data in PSI-MI MITAB format (directory)
+    format: psi_mi_mitab
+    id: intact.ftp.psimitab
+    name: IntAct PSI-MI MITAB 2.7
+    original_source:
+    - intact
+    product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/
+  - category: Product
+    description: Entire MITAB export of the database as a single archive (intact.zip)
+    format: psi_mi_mitab
+    id: intact.ftp.psimitab.all
+    name: IntAct MITAB Archive
+    original_source:
+    - intact
+    product_file_size: 846305671
+    product_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact.zip
+  - category: Product
+    description: Curated and computational datasets (disease-, method-, and species-specific)
+      with per-dataset downloads
+    format: http
+    id: intact.datasets
+    name: IntAct Datasets
+    original_source:
+    - intact
+    product_url: https://www.ebi.ac.uk/intact/download/datasets
+  - category: DocumentationProduct
+    description: User guide and documentation for search, exports, data sources, and
+      submission
+    format: http
+    id: intact.docs.user-guide
+    name: IntAct User Guide
+    original_source:
+    - intact
+    product_url: https://www.ebi.ac.uk/intact/documentation/user-guide
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
       entities and their associations
@@ -29801,17 +30636,6 @@ resources:
     - uo
     product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   - category: GraphProduct
-    description: IntAct Automat
-    format: kgx-jsonl
-    id: automat.intact
-    infores_id: automat-intact
-    name: intact_automat
-    original_source:
-    - intact
-    product_url: https://stars.renci.org/var/plater/bl-4.2.1/IntAct_Automat/e5b936f966a02c2c/
-    secondary_source:
-    - automat
-  - category: GraphProduct
     description: Integrated graph knowledge base combining Mendelian randomization
       causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed
       relationships (Neo4j backend)
@@ -29839,9 +30663,227 @@ resources:
     product_url: https://docs.epigraphdb.org/graph-database/
     secondary_source:
     - epigraphdb
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing ncRNA sequences, structures,
+      and annotations
+    format: http
+    id: rnacentral.portal
+    name: RNAcentral Portal
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/
+  - category: ProgrammingInterface
+    description: REST API for programmatic access to RNAcentral data
+    format: http
+    id: rnacentral.api
+    name: RNAcentral REST API
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/api
+  - category: Product
+    description: FTP archive with current and archived release files (sequences and
+      annotations)
+    format: http
+    id: rnacentral.ftp
+    name: RNAcentral FTP Archive
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+  - category: DataModelProduct
+    description: Public PostgreSQL database for direct SQL access to RNAcentral data
+    format: postgres
+    id: rnacentral.public-db
+    name: RNAcentral Public Postgres Database
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/help/public-database
+  - category: GraphProduct
+    description: IntAct Automat
+    format: kgx-jsonl
+    id: automat.intact
+    infores_id: automat-intact
+    name: intact_automat
+    original_source:
+    - intact
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/IntAct_Automat/e5b936f966a02c2c/
+    secondary_source:
+    - automat
 - activity_status: active
   category: DataSource
   contacts:
@@ -30759,7 +31801,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 403 error
       when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 - activity_status: active
@@ -30857,7 +31899,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
@@ -30947,7 +31989,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 403 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -32682,7 +33724,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 503 error
       when accessing file'
   - category: DataModelProduct
     description: Archive of past LOINC releases for version-specific implementations
@@ -32697,7 +33739,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 503 error
       when accessing file'
   - category: DocumentationProduct
     description: LOINC Mission, Vision, and Guiding Principles for open terminology
@@ -32712,7 +33754,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 503 error
       when accessing file'
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
@@ -33855,7 +34897,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -33876,7 +34918,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -33898,7 +34940,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -34446,7 +35488,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     description: MNXref unified namespace for reactions across databases
@@ -34463,7 +35505,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -34893,7 +35935,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -34914,7 +35956,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -34936,7 +35978,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -39710,8 +40752,11 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
+      to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
+      with url: /biopragmatics/resources/clinicaltrials/clinicaltrials.obo (Caused
+      by NewConnectionError(''<urllib3.connection.HTTPSConnection object at 0x7f4fb79b61b0>:
+      Failed to establish a new connection: [Errno 101] Network is unreachable''))'
   - category: Product
     description: clinicaltrials OWL
     format: owl
@@ -39726,8 +40771,11 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
+      to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
+      with url: /biopragmatics/resources/clinicaltrials/clinicaltrials.owl (Caused
+      by NewConnectionError(''<urllib3.connection.HTTPSConnection object at 0x7f4fb79b6ba0>:
+      Failed to establish a new connection: [Errno 101] Network is unreachable''))'
   - category: Product
     description: clinicaltrials OBO Graph JSON
     format: json
@@ -39742,8 +40790,11 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
+      to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
+      with url: /biopragmatics/resources/clinicaltrials/clinicaltrials.json (Caused
+      by NewConnectionError(''<urllib3.connection.HTTPSConnection object at 0x7f4fb79b72f0>:
+      Failed to establish a new connection: [Errno 101] Network is unreachable''))'
   - category: MappingProduct
     description: clinicaltrials SSSOM
     format: sssom
@@ -40155,8 +41206,11 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
+      to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
+      with url: /biopragmatics/resources/gtdb/gtdb.obo (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
+      object at 0x7f4fb79b7a40>: Failed to establish a new connection: [Errno 101]
+      Network is unreachable''))'
   - category: Product
     description: gtdb OWL
     format: owl
@@ -40496,8 +41550,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: mesh OBO Graph JSON
     format: json
@@ -40512,8 +41566,11 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
+      to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
+      with url: /biopragmatics/resources/mesh/mesh.json (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
+      object at 0x7f4fb79e8fb0>: Failed to establish a new connection: [Errno 101]
+      Network is unreachable''))'
   - category: Product
     description: mgi OBO
     format: obo
@@ -40528,8 +41585,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: mgi OWL
     format: owl
@@ -40544,8 +41601,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: mgi OBO Graph JSON
     format: json
@@ -40560,8 +41617,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: MappingProduct
     description: mgi SSSOM
     format: sssom
@@ -40696,8 +41753,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: msigdb OWL
     format: owl
@@ -40712,8 +41769,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: msigdb OBO Graph JSON
     format: json
@@ -40728,7 +41785,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: msigdb SSSOM
@@ -40791,8 +41848,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: nihreporter.project OWL
     format: owl
@@ -40804,8 +41861,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: nihreporter.project OBO Graph JSON
     format: json
@@ -40817,8 +41874,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: nlm OBO
     format: obo
@@ -40973,8 +42030,11 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
+      to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
+      with url: /biopragmatics/resources/pathbank/pathbank.obo (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
+      object at 0x7f4fb79e8440>: Failed to establish a new connection: [Errno 101]
+      Network is unreachable''))'
   - category: Product
     description: pathbank OWL
     format: owl
@@ -40989,8 +42049,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: pathbank OBO Graph JSON
     format: json
@@ -41005,8 +42065,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: MappingProduct
     description: pathbank SSSOM
     format: sssom
@@ -41418,8 +42478,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: reactome OBO Graph JSON
     format: json
@@ -41434,8 +42494,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: rgd OBO
     format: obo
@@ -41508,8 +42568,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: rhea OBO Graph JSON
     format: json
@@ -41528,8 +42588,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: MappingProduct
     description: Rhea SSSOM
     format: sssom
@@ -41573,8 +42633,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: ror OBO Graph JSON
     format: json
@@ -41589,8 +42649,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: MappingProduct
     description: ror SSSOM
     format: sssom
@@ -41675,8 +42735,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: slm OWL
     format: owl
@@ -41691,8 +42751,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: slm OBO Graph JSON
     format: json
@@ -41707,8 +42767,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: MappingProduct
     description: slm SSSOM
     format: sssom
@@ -41754,8 +42814,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: Product
     description: uniprot OWL
     format: owl
@@ -41770,8 +42830,11 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
+      to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
+      with url: /biopragmatics/resources/uniprot/uniprot.owl (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
+      object at 0x7f4fb79b59a0>: Failed to establish a new connection: [Errno 101]
+      Network is unreachable''))'
   - category: Product
     description: uniprot OBO Graph JSON
     format: json
@@ -41786,8 +42849,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: MappingProduct
     description: uniprot SSSOM
     format: sssom
@@ -41900,8 +42963,11 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
+      to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
+      with url: /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
+      object at 0x7f4fb79e83b0>: Failed to establish a new connection: [Errno 101]
+      Network is unreachable''))'
   - category: Product
     description: zfin OBO Graph JSON
     format: json
@@ -41920,8 +42986,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: MappingProduct
     description: zfin SSSOM
     id: obo-db-ingest.zfin.sssom.tsv
@@ -42686,7 +43752,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     description: OMA orthology groups in OrthoXML format
@@ -42707,7 +43773,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     description: Hierarchical Orthologous Groups (HOGs) in OrthoXML format
@@ -42728,7 +43794,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -42750,7 +43816,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -42768,11 +43834,11 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 502 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-01_ HTTP 502 error
+    - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -42790,11 +43856,11 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 502 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-08-31_ HTTP 502 error
+    - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -42816,7 +43882,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     description: OMA Browser database in HDF5 format
@@ -42834,7 +43900,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-26_ HTTP 502 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -42856,7 +43922,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-12_ HTTP 502 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     compression: gzip
@@ -42875,11 +43941,11 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 502 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-08-13_ HTTP 502 error
+    - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
 - activity_status: active
   category: DataSource
@@ -47479,7 +48545,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compatibility:
@@ -48769,7 +49835,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: Product
     description: Tab-delimited file of systematic ID, primary gene name (where assigned),
@@ -48792,7 +49858,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
@@ -49566,6 +50632,216 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
     secondary_source:
     - kg-monarch
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing ncRNA sequences, structures,
+      and annotations
+    format: http
+    id: rnacentral.portal
+    name: RNAcentral Portal
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/
+  - category: ProgrammingInterface
+    description: REST API for programmatic access to RNAcentral data
+    format: http
+    id: rnacentral.api
+    name: RNAcentral REST API
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/api
+  - category: Product
+    description: FTP archive with current and archived release files (sequences and
+      annotations)
+    format: http
+    id: rnacentral.ftp
+    name: RNAcentral FTP Archive
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+  - category: DataModelProduct
+    description: Public PostgreSQL database for direct SQL access to RNAcentral data
+    format: postgres
+    id: rnacentral.public-db
+    name: RNAcentral Public Postgres Database
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/help/public-database
   repository: https://www.pombase.org/datasets
 - activity_status: active
   category: DataSource
@@ -49934,7 +51210,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 403 error
       when accessing file'
   repository: https://github.com/mims-harvard/PrimeKG
 - activity_status: active
@@ -52435,7 +53711,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 500 error
       when accessing file'
   - category: GraphicalInterface
     description: Interactive web interface for exploring RepoDB data with drug-centric  and
@@ -52588,6 +53864,216 @@ resources:
     product_url: https://www.disgenet.com/
     secondary_source:
     - disgenet
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing ncRNA sequences, structures,
+      and annotations
+    format: http
+    id: rnacentral.portal
+    name: RNAcentral Portal
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/
+  - category: ProgrammingInterface
+    description: REST API for programmatic access to RNAcentral data
+    format: http
+    id: rnacentral.api
+    name: RNAcentral REST API
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/api
+  - category: Product
+    description: FTP archive with current and archived release files (sequences and
+      annotations)
+    format: http
+    id: rnacentral.ftp
+    name: RNAcentral FTP Archive
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+  - category: DataModelProduct
+    description: Public PostgreSQL database for direct SQL access to RNAcentral data
+    format: postgres
+    id: rnacentral.public-db
+    name: RNAcentral Public Postgres Database
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/help/public-database
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -52641,8 +54127,11 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
+      to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
+      with url: /biopragmatics/resources/rhea/rhea.owl (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
+      object at 0x7f4fb79e8200>: Failed to establish a new connection: [Errno 101]
+      Network is unreachable''))'
   - category: Product
     description: rhea OBO Graph JSON
     format: json
@@ -52661,8 +54150,8 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
+      to URL'
   - category: MappingProduct
     description: Rhea SSSOM
     format: sssom
@@ -52850,17 +54339,240 @@ resources:
     title: RNA knowledge-graph analysis through homogeneous embedding methods
   repository: https://github.com/AnacletoLAB/RNA-KG
 - activity_status: active
-  category: DataSource
+  category: Aggregator
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://rnacentral.org/contact
+    label: RNAcentral Consortium (EMBL-EBI)
   creation_date: '2025-07-17T00:00:00Z'
-  description: Stub Resource page for rnacentral. This page was automatically generated
-    because it was referenced by other resources.
+  description: RNAcentral is the international non-coding RNA (ncRNA) sequence database
+    that aggregates and harmonizes ncRNA sequences and annotations from expert databases
+    across all domains of life. It provides comprehensive search, browse, programmatic
+    access, and bulk downloads for sequences, secondary structures, and cross-references.
   domains:
-  - stub
+  - genomics
+  homepage_url: https://rnacentral.org/
   id: rnacentral
-  last_modified_date: '2025-07-17T00:00:00Z'
+  last_modified_date: '2025-09-09T00:00:00Z'
   layout: resource_detail
-  name: Rnacentral
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+  name: RNAcentral
   products:
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing ncRNA sequences, structures,
+      and annotations
+    format: http
+    id: rnacentral.portal
+    name: RNAcentral Portal
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/
+  - category: ProgrammingInterface
+    description: REST API for programmatic access to RNAcentral data
+    format: http
+    id: rnacentral.api
+    name: RNAcentral REST API
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/api
+  - category: Product
+    description: FTP archive with current and archived release files (sequences and
+      annotations)
+    format: http
+    id: rnacentral.ftp
+    name: RNAcentral FTP Archive
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+  - category: DataModelProduct
+    description: Public PostgreSQL database for direct SQL access to RNAcentral data
+    format: postgres
+    id: rnacentral.public-db
+    name: RNAcentral Public Postgres Database
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/help/public-database
   - description: The MechRepoNet knowledge graph in its original format
     id: mechreponet.kg
     name: MechRepoNet Knowledge Graph
@@ -52966,9 +54678,6 @@ resources:
     product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
     secondary_source:
     - rna-kg
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
 - activity_status: active
   category: DataSource
   description: Stub Resource page for ro. This page was automatically generated because
@@ -53666,7 +55375,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
 - activity_status: active
   category: DataSource
@@ -53956,6 +55665,217 @@ resources:
   id: sgd
   layout: resource_detail
   name: Saccharomyces Genome Database
+  products:
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing ncRNA sequences, structures,
+      and annotations
+    format: http
+    id: rnacentral.portal
+    name: RNAcentral Portal
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/
+  - category: ProgrammingInterface
+    description: REST API for programmatic access to RNAcentral data
+    format: http
+    id: rnacentral.api
+    name: RNAcentral REST API
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/api
+  - category: Product
+    description: FTP archive with current and archived release files (sequences and
+      annotations)
+    format: http
+    id: rnacentral.ftp
+    name: RNAcentral FTP Archive
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+  - category: DataModelProduct
+    description: Public PostgreSQL database for direct SQL access to RNAcentral data
+    format: postgres
+    id: rnacentral.public-db
+    name: RNAcentral Public Postgres Database
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/help/public-database
 - activity_status: active
   category: DataSource
   contacts:
@@ -56861,7 +58781,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   repository: ''
 - activity_status: active
@@ -58827,7 +60747,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-05: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-09: No Content-Length
       header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
@@ -58874,11 +60794,11 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 502 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-08-13_ HTTP 502 error
+    - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -59380,7 +61300,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-20_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: Browse UO with Ontology Lookup Service (OLS)
@@ -61352,8 +63272,11 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
+      to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
+      with url: /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
+      object at 0x7f4fb79b7980>: Failed to establish a new connection: [Errno 101]
+      Network is unreachable''))'
   - category: Product
     description: zfin OBO Graph JSON
     format: json
@@ -61372,7 +63295,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: zfin SSSOM
@@ -62171,6 +64094,216 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
     secondary_source:
     - kg-monarch
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing ncRNA sequences, structures,
+      and annotations
+    format: http
+    id: rnacentral.portal
+    name: RNAcentral Portal
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/
+  - category: ProgrammingInterface
+    description: REST API for programmatic access to RNAcentral data
+    format: http
+    id: rnacentral.api
+    name: RNAcentral REST API
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/api
+  - category: Product
+    description: FTP archive with current and archived release files (sequences and
+      annotations)
+    format: http
+    id: rnacentral.ftp
+    name: RNAcentral FTP Archive
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+  - category: DataModelProduct
+    description: Public PostgreSQL database for direct SQL access to RNAcentral data
+    format: postgres
+    id: rnacentral.public-db
+    name: RNAcentral Public Postgres Database
+    original_source:
+    - 5srrnadb
+    - crd
+    - dictybase
+    - ena
+    - ensembl
+    - evlncrnas
+    - expressionatlas
+    - flybase
+    - genecards
+    - greengenes
+    - gtrnadb
+    - hgnc
+    - intact
+    - lncbase
+    - lncbook
+    - lncipedia
+    - lncrnadb
+    - malacards
+    - mgnify
+    - mirbase
+    - mirgenedb
+    - modomics
+    - noncode
+    - pdbe
+    - pirbase
+    - plncdb
+    - pombase
+    - rdp
+    - rediportal
+    - rfam
+    - rgd
+    - ribocentre
+    - ribovision
+    - sgd
+    - silva
+    - snodb
+    - snopy
+    - snornadatabase
+    - srpdb
+    - tair
+    - tarbase
+    - tmrnawebsite
+    - zfin
+    - zwd
+    - rnacentral
+    product_url: https://rnacentral.org/help/public-database
   repository: https://github.com/ZFIN/
 - activity_status: inactive
   category: DataSource
@@ -62344,7 +64477,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing citation information for all PubMed articles
@@ -62358,7 +64491,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing entity information with UMLS concept identifiers,
@@ -62372,7 +64505,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing semantic predications with subject-predicate-object
@@ -62386,7 +64519,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing sentence information from PubMed citations
@@ -62399,7 +64532,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-05: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-09: HTTP 403 error
       when accessing file'
   - category: ProcessProduct
     description: The SemRep natural language processing system that extracts semantic
