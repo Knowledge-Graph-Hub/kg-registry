@@ -33,7 +33,6 @@ layout: default
     <img alt="logo" src="{{page.depicted_by}}" style="max-height: 1em;" />
     {% endif %}
     <i class="bi bi-{{icon_name}}"></i> {{ page.id }}
-  {# warnings icon removed from title #}
   </h1>
 
   <p>is{% if category_name == "Aggregator" %} an{% else %} a{% endif %} <strong><em>{{category_name}}.</em></strong></p>
@@ -82,8 +81,6 @@ layout: default
   </div>
   {%- endif -%}
 </div>
-
-{# compact warnings summary removed #}
 
 {% if page.activity_status == "inactive" %}
 <div class="row">
