@@ -9,8 +9,8 @@ license:
 name: uniprot OBO
 product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo
 warnings:
-- File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
-  to URL
+- File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+  accessing file
 - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when

@@ -7,8 +7,8 @@ id: foodb.data.xml
 name: FooDB XML Data
 product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz
 warnings:
-- File was not able to be retrieved when checked on 2025-09-09_ No Content-Length
-  header found
+- File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error when
+  accessing file
 - File was not able to be retrieved when checked on 2025-09-09_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2025-08-30_ HTTP 502 error when

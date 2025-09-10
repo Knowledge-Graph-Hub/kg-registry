@@ -242,6 +242,7 @@ peco,active,PASS
 petagraph,active,PASS
 pfam,active,PASS
 pgo,active,PASS
+pharmacodb,active,PASS
 pharmacotherapydb,active,PASS
 pharmgkb,active,PASS
 pharmkg,active,PASS

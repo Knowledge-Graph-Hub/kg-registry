@@ -484,10 +484,12 @@ products:
     url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79b61b0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: Product
@@ -505,9 +507,9 @@ products:
     url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79b6ba0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
@@ -526,10 +528,12 @@ products:
     url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79b72f0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: MappingProduct
@@ -944,10 +948,12 @@ products:
     url_ /biopragmatics/resources/gtdb/gtdb.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79b7a40>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: Product
@@ -1287,9 +1293,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
@@ -1308,9 +1314,9 @@ products:
     url_ /biopragmatics/resources/mesh/mesh.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79e8fb0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
@@ -1326,9 +1332,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
@@ -1344,9 +1350,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
@@ -1362,9 +1368,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
@@ -1502,6 +1508,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: Product
@@ -1517,6 +1525,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
@@ -1537,6 +1547,8 @@ products:
     url_ /biopragmatics/resources/msigdb/msigdb.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff2449ab670>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: MappingProduct
@@ -1600,6 +1612,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: Product
@@ -1613,6 +1627,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: Product
@@ -1625,6 +1641,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
@@ -1783,10 +1801,12 @@ products:
     url_ /biopragmatics/resources/pathbank/pathbank.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79e8440>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: Product
@@ -1801,9 +1821,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
@@ -1820,6 +1840,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
@@ -2232,13 +2254,15 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
     url_ /biopragmatics/resources/reactome/reactome.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff2449aaf50>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: Product
@@ -2254,6 +2278,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
@@ -2329,6 +2355,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: Product
@@ -2348,6 +2376,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
@@ -2394,6 +2424,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: Product
@@ -2409,6 +2441,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
@@ -2496,6 +2530,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: Product
@@ -2512,6 +2548,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: Product
@@ -2527,6 +2565,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
@@ -2575,6 +2615,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: Product
@@ -2592,10 +2634,12 @@ products:
     url_ /biopragmatics/resources/uniprot/uniprot.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79b59a0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: Product
@@ -2610,13 +2654,15 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
     url_ /biopragmatics/resources/uniprot/uniprot.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff2449aa560>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: MappingProduct
@@ -2732,13 +2778,15 @@ products:
     url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79e83b0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
     url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff244989120>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: Product
@@ -2758,6 +2806,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'

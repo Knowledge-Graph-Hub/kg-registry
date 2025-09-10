@@ -43,13 +43,13 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-09_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   description: Interactive web interface for exploring RepoDB data with drug-centric  and
