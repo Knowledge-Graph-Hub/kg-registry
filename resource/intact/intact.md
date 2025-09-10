@@ -7,10 +7,10 @@ contacts:
   - contact_type: url
     value: https://www.ebi.ac.uk/support/intact
   label: IntAct Team (EMBL-EBI)
-description: IntAct is an open, curated molecular interaction database maintained
-  at EMBL‑EBI. It aggregates experimentally-derived interaction evidence from literature
-  curation and direct submissions, and distributes data in PSI‑MI XML and MITAB formats
-  along with curated datasets and documentation.
+description: "IntAct is an open, curated molecular interaction database maintained\
+  \ at EMBL\u2011EBI. It aggregates experimentally-derived interaction evidence from\
+  \ literature curation and direct submissions, and distributes data in PSI\u2011\
+  MI XML and MITAB formats along with curated datasets and documentation."
 domains:
 - proteomics
 - systems biology
@@ -98,7 +98,7 @@ products:
   - cellosaurus
   - clue
   - ctd
-  - pharmdb
+  - pharmacodb
   - prism
   - drugbank
   - lincs

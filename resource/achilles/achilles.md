@@ -46,7 +46,7 @@ products:
   - cellosaurus
   - clue
   - ctd
-  - pharmdb
+  - pharmacodb
   - prism
   - drugbank
   - lincs
@@ -78,8 +78,7 @@ products:
   secondary_source:
   - bioteque
 publications:
-- id: doi:10.1016/j.cell.2017.06.010
-  authors:
+- authors:
   - Tsherniak A
   - Vazquez F
   - Montgomery PG
@@ -87,6 +86,7 @@ publications:
   - Kryukov G
   - Cowley GS
   doi: 10.1016/j.cell.2017.06.010
+  id: doi:10.1016/j.cell.2017.06.010
   journal: Cell
   title: Defining a Cancer Dependency Map
   year: '2017'

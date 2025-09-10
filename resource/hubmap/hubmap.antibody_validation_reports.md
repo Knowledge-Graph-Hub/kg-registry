@@ -7,7 +7,7 @@ product_url: https://avr.hubmapconsortium.org/
 warnings:
 - File was not able to be retrieved when checked on 2025-09-09_ HTTP 401 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-09-05_ HTTP 401 error when
+- File was not able to be retrieved when checked on 2025-09-09_ HTTP 401 error when
   accessing file
 layout: product_detail
 ---

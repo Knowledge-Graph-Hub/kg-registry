@@ -1,65 +1,56 @@
 ---
 activity_status: active
 category: DataSource
-description: The Human Reference Interactome (HuRI) is a comprehensive map of binary protein-protein interactions in human cells, generated through systematic high-throughput yeast two-hybrid screening. HuRI provides the largest experimentally verified collection of human protein interactions and serves as a foundational resource for understanding cellular networks and disease mechanisms.
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://ccsb.dana-farber.org/
+  label: Center for Cancer Systems Biology
+- category: Individual
+  label: Marc Vidal
+  orcid: 0000-0002-9500-6065
+- category: Individual
+  label: Frederick P. Roth
+creation_date: '2025-08-05T00:00:00Z'
+description: The Human Reference Interactome (HuRI) is a comprehensive map of binary
+  protein-protein interactions in human cells, generated through systematic high-throughput
+  yeast two-hybrid screening. HuRI provides the largest experimentally verified collection
+  of human protein interactions and serves as a foundational resource for understanding
+  cellular networks and disease mechanisms.
 domains:
 - biomedical
 - biological systems
 - proteomics
 - systems biology
 homepage_url: http://www.interactome-atlas.org/
-repository: https://github.com/VIDallab/huri
 id: huri
-layout: resource_detail
-name: HuRI
-creation_date: '2025-08-05T00:00:00Z'
 last_modified_date: '2025-08-05T00:00:00Z'
+layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
-contacts:
-- category: Organization
-  label: Center for Cancer Systems Biology
-  contact_details:
-  - contact_type: url
-    value: https://ccsb.dana-farber.org/
-- category: Individual
-  label: Marc Vidal
-  orcid: 0000-0002-9500-6065
-- category: Individual
-  label: Frederick P. Roth
-publications:
-- id: doi:10.1038/s41586-020-2188-x
-  title: "A reference map of the human binary protein interactome"
-  authors:
-  - Katja Luck
-  - Dae-Kyum Kim
-  - Luke Lambourne
-  - Kerstin Spirohn
-  - et al.
-  doi: 10.1038/s41586-020-2188-x
-  journal: Nature
-  year: "2020"
-  preferred: true
+name: HuRI
 products:
 - category: Product
   description: Human Reference Interactome (HuRI) protein-protein interaction data
+  format: tsv
   id: huri.interactions
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
   name: HuRI Protein-Protein Interactions
-  format: tsv
   product_url: http://www.interactome-atlas.org/download
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
 - category: Product
-  description: Literature-curated high-quality protein-protein interactions from comparable experimental approaches
-  id: huri.literature_benchmark
-  name: HuRI Literature Benchmark
+  description: Literature-curated high-quality protein-protein interactions from comparable
+    experimental approaches
   format: tsv
-  product_url: http://www.interactome-atlas.org/download
+  id: huri.literature_benchmark
   license:
     id: https://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
+  name: HuRI Literature Benchmark
+  product_url: http://www.interactome-atlas.org/download
 - category: GraphicalInterface
   description: Web portal for searching and browsing human protein interactions
   id: huri.portal
@@ -80,7 +71,7 @@ products:
   - cellosaurus
   - clue
   - ctd
-  - pharmdb
+  - pharmacodb
   - prism
   - drugbank
   - lincs
@@ -111,6 +102,20 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   secondary_source:
   - bioteque
+publications:
+- authors:
+  - Katja Luck
+  - Dae-Kyum Kim
+  - Luke Lambourne
+  - Kerstin Spirohn
+  - et al.
+  doi: 10.1038/s41586-020-2188-x
+  id: doi:10.1038/s41586-020-2188-x
+  journal: Nature
+  preferred: true
+  title: A reference map of the human binary protein interactome
+  year: '2020'
+repository: https://github.com/VIDallab/huri
 ---
 # HuRI - Human Reference Interactome
 

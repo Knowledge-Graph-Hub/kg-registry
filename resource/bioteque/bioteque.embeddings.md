@@ -14,7 +14,7 @@ original_source:
 - cellosaurus
 - clue
 - ctd
-- pharmdb
+- pharmacodb
 - prism
 - drugbank
 - lincs
