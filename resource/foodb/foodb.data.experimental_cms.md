@@ -8,7 +8,7 @@ product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_spe
 warnings:
 - File was not able to be retrieved when checked on 2025-09-09_ No Content-Length
   header found
-- File was not able to be retrieved when checked on 2025-09-05_ No Content-Length
+- File was not able to be retrieved when checked on 2025-09-09_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2025-08-30_ HTTP 502 error when
   accessing file

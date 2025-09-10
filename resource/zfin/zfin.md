@@ -64,10 +64,15 @@ products:
     url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79e83b0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
+    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
+    url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+    object at 0x7ff244989120>_ Failed to establish a new connection_ [Errno 101] Network
+    is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-09: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
+    when accessing file'
 - category: Product
   description: zfin OBO Graph JSON
   format: json
@@ -84,13 +89,12 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
+    to URL
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-09: Error connecting
-    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
-    with url: /biopragmatics/resources/zfin/zfin.json (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7ff244988160>: Failed to establish a new connection: [Errno 101] Network
-    is unreachable''))'
+  - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 404 error
+    when accessing file'
 - category: MappingProduct
   description: zfin SSSOM
   id: obo-db-ingest.zfin.sssom.tsv

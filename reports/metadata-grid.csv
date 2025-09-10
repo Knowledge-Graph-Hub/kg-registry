@@ -243,7 +243,6 @@ petagraph,active,PASS
 pfam,active,PASS
 pgo,active,PASS
 pharmacotherapydb,active,PASS
-pharmdb,active,PASS
 pharmgkb,active,PASS
 pharmkg,active,PASS
 pharos,active,PASS
@@ -332,6 +331,7 @@ xenbase,active,PASS
 zfa,active,PASS
 zfin,active,PASS
 zwd,active,PASS
+pharmdb,orphaned,PASS
 psygenet,inactive,PASS
 rdbridge,unresponsive,PASS
 semmeddb,inactive,PASS

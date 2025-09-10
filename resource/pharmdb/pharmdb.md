@@ -1,14 +1,31 @@
 ---
-activity_status: active
-category: DataSource
-description: Stub Resource page for pharmdb. This page was automatically generated
-  because it was referenced by other resources.
+activity_status: orphaned
+category: KnowledgeGraph
+creation_date: '2025-09-10T00:00:00Z'
+description: PharmDB (PharmDB-K) is a pharmacological knowledge graph integrating
+  drugs, targets, diseases, indications, and related biomedical entities to facilitate
+  computational repositioning and network pharmacology analyses.
 domains:
-- stub
+- drug discovery
+- biomedical
+homepage_url: http://www.pharmdb-k.org/
 id: pharmdb
+last_modified_date: '2025-09-10T00:00:00Z'
 layout: resource_detail
-name: Pharmdb
+name: PharmDB
 products:
+- category: GraphicalInterface
+  description: Legacy web portal for browsing PharmDB-K integrated pharmacological
+    relationships
+  format: http
+  id: pharmdb.portal
+  name: PharmDB Portal
+  product_url: http://www.pharmdb-k.org/
+- category: GraphProduct
+  description: Integrated pharmacological knowledge graph (PharmDB-K) of drugs, targets,
+    diseases, and associations
+  id: pharmdb.graph
+  name: PharmDB-K Graph
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
@@ -24,7 +41,7 @@ products:
   - cellosaurus
   - clue
   - ctd
-  - pharmdb
+  - pharmacodb
   - prism
   - drugbank
   - lincs
@@ -55,10 +72,18 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   secondary_source:
   - bioteque
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
 ---
-# Pharmdb
+# PharmDB
 
-This is an automatically generated stub page for pharmdb. Please update with proper information.
+## Overview
+
+PharmDB (PharmDB-K) is an integrated pharmacological knowledge graph unifying drugs, targets, diseases, and related biomedical associations to support network pharmacology and drug repurposing analyses. While historically useful, the project has not shown recent update activity, so content should be treated as archival.
+
+## Access
+
+- Portal (legacy): browse integrated relationships and entity-centric views
+- Graph: represented internally as PharmDB-K; no current standalone bulk export identified
+
+## Status
+
+The resource appears inactive. Links may function, but data curation and releases have likely ceased. Use with caution and verify critical relationships against more current sources.

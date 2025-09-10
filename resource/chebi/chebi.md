@@ -429,7 +429,7 @@ products:
   - cellosaurus
   - clue
   - ctd
-  - pharmdb
+  - pharmacodb
   - prism
   - drugbank
   - lincs
