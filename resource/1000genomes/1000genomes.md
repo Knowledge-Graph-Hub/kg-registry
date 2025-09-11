@@ -59,21 +59,21 @@ products:
     retries exceeded with url_ /faq/can-i-access-1000-genomes-data-globus-online (Caused
     by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
     verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
-    to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
-    retries exceeded with url_ /faq/can-i-access-1000-genomes-data-globus-online (Caused
-    by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
   - File was not able to be retrieved when checked on 2025-09-10_ Error connecting
     to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
     retries exceeded with url_ /faq/can-i-access-1000-genomes-data-globus-online (Caused
     by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
     verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
+  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
+    retries exceeded with url_ /faq/can-i-access-1000-genomes-data-globus-online (Caused
+    by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
+    verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
   - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
     to URL: HTTPSConnectionPool(host=''www.internationalgenome.org'', port=443): Max
     retries exceeded with url: /faq/can-i-access-1000-genomes-data-globus-online (Caused
     by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
+    verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
 - category: DocumentationProduct
   description: Instructions for downloading files using Aspera
   format: http
@@ -86,21 +86,21 @@ products:
     retries exceeded with url_ /faq/how-download-files-using-aspera (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
-    to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
-    retries exceeded with url_ /faq/how-download-files-using-aspera (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
   - File was not able to be retrieved when checked on 2025-09-10_ Error connecting
     to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
     retries exceeded with url_ /faq/how-download-files-using-aspera (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1017)')))
+  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
+    retries exceeded with url_ /faq/how-download-files-using-aspera (Caused by SSLError(SSLCertVerificationError(1,
+    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+    issuer certificate (_ssl.c_1000)')))
   - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
     to URL: HTTPSConnectionPool(host=''www.internationalgenome.org'', port=443): Max
     retries exceeded with url: /faq/how-download-files-using-aspera (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+    issuer certificate (_ssl.c:1017)'')))'
 - category: Product
   description: Mirror of original 1000 Genomes Project data at NCBI
   format: http
@@ -115,6 +115,8 @@ products:
   product_url: https://ddbj.nig.ac.jp/public/mirror_database/1000genomes/
   warnings:
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-11_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-11: HTTP 403 error
     when accessing file'

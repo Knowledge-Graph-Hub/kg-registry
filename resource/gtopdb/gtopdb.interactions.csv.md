@@ -6,7 +6,7 @@ id: gtopdb.interactions.csv
 name: GtoPdb Interactions Dataset
 product_url: https://www.guidetopharmacology.org/DATA/interactions.csv
 warnings:
-- File was not able to be retrieved when checked on 2025-09-10_ No Content-Length
+- File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2025-09-10_ No Content-Length
   header found

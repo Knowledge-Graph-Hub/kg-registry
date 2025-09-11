@@ -488,6 +488,8 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
     to URL'
 - category: Product
@@ -507,8 +509,10 @@ products:
     url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79b6ba0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - 'File was not able to be retrieved when checked on 2025-09-11: HTTP 404 error
-    when accessing file'
+  - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
+    to URL'
 - category: Product
   description: clinicaltrials OBO Graph JSON
   format: json
@@ -527,6 +531,8 @@ products:
     object at 0x7f4fb79b72f0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
   - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
     to URL'
@@ -946,6 +952,8 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
     to URL'
 - category: Product
@@ -1287,6 +1295,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
     to URL'
 - category: Product
@@ -1306,11 +1316,13 @@ products:
     url_ /biopragmatics/resources/mesh/mesh.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79e8fb0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
-    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
-    with url: /biopragmatics/resources/mesh/mesh.json (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c763470>: Failed to establish a new connection: [Errno 101] Network
-    is unreachable''))'
+  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
+    url_ /biopragmatics/resources/mesh/mesh.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+    object at 0x7fa35c763470>_ Failed to establish a new connection_ [Errno 101] Network
+    is unreachable'))
+  - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
+    to URL'
 - category: Product
   description: mgi OBO
   format: obo
@@ -1325,8 +1337,13 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
+    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
+    with url: /biopragmatics/resources/mgi/mgi.obo (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
+    object at 0x7f28e3289a20>: Failed to establish a new connection: [Errno 101] Network
+    is unreachable''))'
 - category: Product
   description: mgi OWL
   format: owl
@@ -1340,6 +1357,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
   - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
     to URL'
@@ -1357,10 +1376,15 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
+    url_ /biopragmatics/resources/mgi/mgi.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+    object at 0x7fa35c761850>_ Failed to establish a new connection_ [Errno 101] Network
+    is unreachable'))
   - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
     to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
     with url: /biopragmatics/resources/mgi/mgi.json (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c761850>: Failed to establish a new connection: [Errno 101] Network
+    object at 0x7f28e32a8190>: Failed to establish a new connection: [Errno 101] Network
     is unreachable''))'
 - category: MappingProduct
   description: mgi SSSOM
@@ -1496,11 +1520,13 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
-    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
-    with url: /biopragmatics/resources/msigdb/msigdb.obo (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c761820>: Failed to establish a new connection: [Errno 101] Network
-    is unreachable''))'
+  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
+    url_ /biopragmatics/resources/msigdb/msigdb.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+    object at 0x7fa35c761820>_ Failed to establish a new connection_ [Errno 101] Network
+    is unreachable'))
+  - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
+    to URL'
 - category: Product
   description: msigdb OWL
   format: owl
@@ -1514,6 +1540,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
   - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
     to URL'
@@ -1534,6 +1562,8 @@ products:
     url_ /biopragmatics/resources/msigdb/msigdb.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff2449ab670>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
     to URL'
 - category: MappingProduct
@@ -1597,8 +1627,14 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
+    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
+    with url: /biopragmatics/resources/nihreporter.project/nihreporter.project.obo
+    (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection object at
+    0x7f28e32a9990>: Failed to establish a new connection: [Errno 101] Network is
+    unreachable''))'
 - category: Product
   description: nihreporter.project OWL
   format: owl
@@ -1609,6 +1645,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
   - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
     to URL'
@@ -1623,12 +1661,13 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
-    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
-    with url: /biopragmatics/resources/nihreporter.project/nihreporter.project.json
-    (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection object at
-    0x7fa35c762b10>: Failed to establish a new connection: [Errno 101] Network is
-    unreachable''))'
+  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
+    url_ /biopragmatics/resources/nihreporter.project/nihreporter.project.json (Caused
+    by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c762b10>_
+    Failed to establish a new connection_ [Errno 101] Network is unreachable'))
+  - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
+    to URL'
 - category: Product
   description: nlm OBO
   format: obo
@@ -1788,8 +1827,13 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
+    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
+    with url: /biopragmatics/resources/pathbank/pathbank.obo (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
+    object at 0x7f28e3289ba0>: Failed to establish a new connection: [Errno 101] Network
+    is unreachable''))'
 - category: Product
   description: pathbank OWL
   format: owl
@@ -1803,6 +1847,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
   - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
     to URL'
@@ -1819,6 +1865,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
   - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
     to URL'
@@ -2238,11 +2286,13 @@ products:
     url_ /biopragmatics/resources/reactome/reactome.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff2449aaf50>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
-    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
-    with url: /biopragmatics/resources/reactome/reactome.owl (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c7633b0>: Failed to establish a new connection: [Errno 101] Network
-    is unreachable''))'
+  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
+    url_ /biopragmatics/resources/reactome/reactome.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+    object at 0x7fa35c7633b0>_ Failed to establish a new connection_ [Errno 101] Network
+    is unreachable'))
+  - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
+    to URL'
 - category: Product
   description: reactome OBO Graph JSON
   format: json
@@ -2257,10 +2307,15 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
+    url_ /biopragmatics/resources/reactome/reactome.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+    object at 0x7fa35c762270>_ Failed to establish a new connection_ [Errno 101] Network
+    is unreachable'))
   - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
     to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
     with url: /biopragmatics/resources/reactome/reactome.json (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c762270>: Failed to establish a new connection: [Errno 101] Network
+    object at 0x7f28e32a9570>: Failed to establish a new connection: [Errno 101] Network
     is unreachable''))'
 - category: Product
   description: rgd OBO
@@ -2334,11 +2389,13 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
-    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
-    with url: /biopragmatics/resources/rhea/rhea.owl (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c761be0>: Failed to establish a new connection: [Errno 101] Network
-    is unreachable''))'
+  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
+    url_ /biopragmatics/resources/rhea/rhea.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+    object at 0x7fa35c761be0>_ Failed to establish a new connection_ [Errno 101] Network
+    is unreachable'))
+  - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
+    to URL'
 - category: Product
   description: rhea OBO Graph JSON
   format: json
@@ -2357,11 +2414,13 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
-    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
-    with url: /biopragmatics/resources/rhea/rhea.json (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c7716d0>: Failed to establish a new connection: [Errno 101] Network
-    is unreachable''))'
+  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
+    url_ /biopragmatics/resources/rhea/rhea.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+    object at 0x7fa35c7716d0>_ Failed to establish a new connection_ [Errno 101] Network
+    is unreachable'))
+  - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
+    to URL'
 - category: MappingProduct
   description: Rhea SSSOM
   format: sssom
@@ -2405,6 +2464,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
     to URL'
 - category: Product
@@ -2421,11 +2482,13 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
-    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
-    with url: /biopragmatics/resources/ror/ror.json (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c771610>: Failed to establish a new connection: [Errno 101] Network
-    is unreachable''))'
+  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
+    url_ /biopragmatics/resources/ror/ror.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+    object at 0x7fa35c771610>_ Failed to establish a new connection_ [Errno 101] Network
+    is unreachable'))
+  - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
+    to URL'
 - category: MappingProduct
   description: ror SSSOM
   format: sssom
@@ -2510,11 +2573,13 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
-    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
-    with url: /biopragmatics/resources/slm/slm.obo (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c760410>: Failed to establish a new connection: [Errno 101] Network
-    is unreachable''))'
+  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
+    url_ /biopragmatics/resources/slm/slm.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+    object at 0x7fa35c760410>_ Failed to establish a new connection_ [Errno 101] Network
+    is unreachable'))
+  - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
+    to URL'
 - category: Product
   description: slm OWL
   format: owl
@@ -2529,11 +2594,13 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
-    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
-    with url: /biopragmatics/resources/slm/slm.owl (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c762780>: Failed to establish a new connection: [Errno 101] Network
-    is unreachable''))'
+  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
+    url_ /biopragmatics/resources/slm/slm.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+    object at 0x7fa35c762780>_ Failed to establish a new connection_ [Errno 101] Network
+    is unreachable'))
+  - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
+    to URL'
 - category: Product
   description: slm OBO Graph JSON
   format: json
@@ -2548,10 +2615,15 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
+    url_ /biopragmatics/resources/slm/slm.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+    object at 0x7fa35c7633b0>_ Failed to establish a new connection_ [Errno 101] Network
+    is unreachable'))
   - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
     to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
     with url: /biopragmatics/resources/slm/slm.json (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c7633b0>: Failed to establish a new connection: [Errno 101] Network
+    object at 0x7f28e32ab970>: Failed to establish a new connection: [Errno 101] Network
     is unreachable''))'
 - category: MappingProduct
   description: slm SSSOM
@@ -2598,8 +2670,13 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
+    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
+    with url: /biopragmatics/resources/uniprot/uniprot.obo (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
+    object at 0x7f28e328a800>: Failed to establish a new connection: [Errno 101] Network
+    is unreachable''))'
 - category: Product
   description: uniprot OWL
   format: owl
@@ -2618,6 +2695,8 @@ products:
     object at 0x7f4fb79b59a0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
   - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
     to URL'
@@ -2640,8 +2719,13 @@ products:
     url_ /biopragmatics/resources/uniprot/uniprot.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff2449aa560>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
+    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
+    with url: /biopragmatics/resources/uniprot/uniprot.json (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
+    object at 0x7f28e32a8940>: Failed to establish a new connection: [Errno 101] Network
+    is unreachable''))'
 - category: MappingProduct
   description: uniprot SSSOM
   format: sssom
@@ -2762,6 +2846,8 @@ products:
     url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff244989120>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
     to URL'
 - category: Product
@@ -2782,11 +2868,13 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
-    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
-    with url: /biopragmatics/resources/zfin/zfin.json (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7fa35c761070>: Failed to establish a new connection: [Errno 101] Network
-    is unreachable''))'
+  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
+    url_ /biopragmatics/resources/zfin/zfin.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+    object at 0x7fa35c761070>_ Failed to establish a new connection_ [Errno 101] Network
+    is unreachable'))
+  - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
+    to URL'
 - category: MappingProduct
   description: zfin SSSOM
   id: obo-db-ingest.zfin.sssom.tsv
