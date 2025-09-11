@@ -40,11 +40,9 @@ products:
   secondary_source:
   - kg-microbe
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-09_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-10: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-09-11: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   compression: targz
