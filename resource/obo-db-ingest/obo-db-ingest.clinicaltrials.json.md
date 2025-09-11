@@ -11,6 +11,8 @@ product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltri
 warnings:
 - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
   accessing file
+- File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+  accessing file
 - File was not able to be retrieved when checked on 2025-09-09_ Error connecting to
   URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_
   /biopragmatics/resources/clinicaltrials/clinicaltrials.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -18,7 +20,5 @@ warnings:
   is unreachable'))
 - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2025-09-05_ HTTP 404 error when
-  accessing file
 layout: product_detail
 ---

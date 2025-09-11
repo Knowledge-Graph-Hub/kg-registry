@@ -55,14 +55,14 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-02_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-10: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-09-11: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: zip
   description: RNA-Seq data processed and formatted for the Bgee database
@@ -75,14 +75,14 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-02_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-10: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-09-11: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Processed Affymetrix microarray data for the Bgee database
@@ -95,14 +95,14 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-02_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-10: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-09-11: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: zip
   description: In Situ Hybridization data in the Bgee database
@@ -115,14 +115,14 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-02_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-10: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-09-11: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: zip
   description: EST (Expressed Sequence Tag) expression data in the Bgee database
@@ -135,14 +135,14 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-02_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-10: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-09-11: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Single-cell RNA-Seq processed data in the Bgee database
@@ -155,14 +155,14 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-02_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-10: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-09-11: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Anatomical homology information used in Bgee
@@ -175,14 +175,14 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-02_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-10: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-09-11: HTTP 404 error
+    when accessing file'
 - category: Product
   compression: zip
   description: RDF version of the Bgee data for semantic web applications
@@ -195,14 +195,14 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-02_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-10: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-09-11: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
