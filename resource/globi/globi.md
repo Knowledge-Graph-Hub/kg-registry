@@ -40,6 +40,130 @@ products:
     id: globi.datasets
     name: GloBI Datasets
     product_url: https://www.globalbioticinteractions.org/datasets
+  - category: Product
+    description: Tab-separated integrated species interaction pairs (interpreted names)
+    format: tsv
+    compression: gzip
+    id: globi.interactions.tsv
+    name: GloBI interpreted interactions (TSV)
+    product_url: https://zenodo.org/record/14640564/files/interactions.tsv.gz
+  - category: Product
+    description: Comma-separated integrated species interaction pairs (interpreted names)
+    format: csv
+    compression: gzip
+    id: globi.interactions.csv
+    name: GloBI interpreted interactions (CSV)
+    product_url: https://zenodo.org/record/14640564/files/interactions.csv.gz
+  - category: Product
+    description: Tab-separated verbatim species interaction pairs (original unresolved names)
+    format: tsv
+    compression: gzip
+    id: globi.verbatim_interactions.tsv
+    name: GloBI verbatim interactions (TSV)
+    product_url: https://zenodo.org/record/14640564/files/verbatim-interactions.tsv.gz
+  - category: Product
+    description: Comma-separated verbatim species interaction pairs (original unresolved names)
+    format: csv
+    compression: gzip
+    id: globi.verbatim_interactions.csv
+    name: GloBI verbatim interactions (CSV)
+    product_url: https://zenodo.org/record/14640564/files/verbatim-interactions.csv.gz
+  - category: Product
+    description: Tab-separated refuted species interaction pairs (interpreted names)
+    format: tsv
+    compression: gzip
+    id: globi.refuted_interactions.tsv
+    name: GloBI refuted interactions (TSV)
+    product_url: https://zenodo.org/record/14640564/files/refuted-interactions.tsv.gz
+  - category: Product
+    description: Comma-separated refuted species interaction pairs (interpreted names)
+    format: csv
+    compression: gzip
+    id: globi.refuted_interactions.csv
+    name: GloBI refuted interactions (CSV)
+    product_url: https://zenodo.org/record/14640564/files/refuted-interactions.csv.gz
+  - category: Product
+    description: Comma-separated refuted verbatim species interaction pairs (original names)
+    format: csv
+    compression: gzip
+    id: globi.refuted_verbatim_interactions.csv
+    name: GloBI refuted verbatim interactions (CSV)
+    product_url: https://zenodo.org/record/14640564/files/refuted-verbatim-interactions.csv.gz
+  - category: Product
+    description: RDF N-Quads representation of interaction data
+    format: nquads
+    compression: gzip
+    id: globi.interactions.nq
+    name: GloBI interactions RDF (N-Quads)
+    product_url: https://zenodo.org/record/14640564/files/interactions.nq.gz
+  - category: Product
+    description: Neo4j graph database backup (v3.5.x) of interaction graph
+    format: neo4j
+    compression: zip
+    id: globi.neo4j.graphdb
+    name: GloBI Neo4j graph database snapshot
+    product_url: https://zenodo.org/record/14640564/files/neo4j-graphdb.zip
+  - category: Product
+    description: Tab-separated dataset namespace index
+    format: tsv
+    compression: gzip
+    id: globi.datasets.tsv
+    name: GloBI datasets index (TSV)
+    product_url: https://zenodo.org/record/14640564/files/datasets.tsv.gz
+  - category: Product
+    description: Comma-separated dataset namespace index
+    format: csv
+    compression: gzip
+    id: globi.datasets.csv
+    name: GloBI datasets index (CSV)
+    product_url: https://zenodo.org/record/14640564/files/datasets.csv.gz
+  - category: Product
+    description: Tab-separated taxonomic name mapping file
+    format: tsv
+    compression: gzip
+    id: globi.taxon_map.tsv
+    name: GloBI taxonomic name map
+    product_url: https://zenodo.org/record/14640564/files/taxonMap.tsv.gz
+  - category: Product
+    description: Tab-separated taxonomic hierarchy and identifier cache
+    format: tsv
+    compression: gzip
+    id: globi.taxon_cache.tsv
+    name: GloBI taxonomic hierarchy cache
+    product_url: https://zenodo.org/record/14640564/files/taxonCache.tsv.gz
+  - category: Product
+    description: Tab-separated data citations
+    format: tsv
+    compression: gzip
+    id: globi.citations.tsv
+    name: GloBI data citations (TSV)
+    product_url: https://zenodo.org/record/14640564/files/citations.tsv.gz
+  - category: Product
+    description: Comma-separated data citations
+    format: csv
+    compression: gzip
+    id: globi.citations.csv
+    name: GloBI data citations (CSV)
+    product_url: https://zenodo.org/record/14640564/files/citations.csv.gz
+  - category: Product
+    description: Tab-separated refuted species interactions (original unresolved names)
+    format: tsv
+    compression: gzip
+    id: globi.refuted_verbatim_interactions.tsv
+    name: GloBI refuted verbatim interactions (TSV)
+    product_url: https://zenodo.org/record/14640564/files/refuted-verbatim-interactions.tsv.gz
+  - category: Product
+    description: Field (column) definitions JSON endpoint
+    format: json
+    id: globi.fields.json
+    name: interactionFields.json
+    product_url: https://api.globalbioticinteractions.org/interactionFields?type=json
+  - category: Product
+    description: Field (column) definitions CSV endpoint
+    format: csv
+    id: globi.fields.csv
+    name: interactionFields.csv
+    product_url: https://api.globalbioticinteractions.org/interactionFields?type=csv
   - category: DocumentationProduct
     description: About and methodological documentation, contribution guidelines, and references
     format: http
