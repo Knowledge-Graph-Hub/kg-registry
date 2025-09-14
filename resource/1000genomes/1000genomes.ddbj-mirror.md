@@ -8,7 +8,7 @@ product_url: https://ddbj.nig.ac.jp/public/mirror_database/1000genomes/
 warnings:
 - File was not able to be retrieved when checked on 2025-09-11_ HTTP 403 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-09-10_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2025-09-11_ HTTP 403 error when
   accessing file
 layout: product_detail
 ---

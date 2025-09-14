@@ -11,7 +11,7 @@ product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catal
 warnings:
 - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

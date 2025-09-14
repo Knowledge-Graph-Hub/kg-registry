@@ -85,11 +85,9 @@ products:
   - alliance
   product_url: https://download.alliancegenome.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-10_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-09-11: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
     header found'
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
