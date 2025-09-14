@@ -11,6 +11,8 @@ product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltri
 warnings:
 - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
   to URL
+- File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
+  to URL
 - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-09-09_ Error connecting to
@@ -18,7 +20,5 @@ warnings:
   /biopragmatics/resources/clinicaltrials/clinicaltrials.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
   object at 0x7f4fb79b61b0>_ Failed to establish a new connection_ [Errno 101] Network
   is unreachable'))
-- File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
-  to URL
 layout: product_detail
 ---

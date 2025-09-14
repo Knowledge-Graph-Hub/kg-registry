@@ -49,15 +49,14 @@ products:
     url_ /biopragmatics/resources/rhea/rhea.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fa35c761be0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
+    to URL
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-11: Error connecting
-    to URL: HTTPSConnectionPool(host=''w3id.org'', port=443): Max retries exceeded
-    with url: /biopragmatics/resources/rhea/rhea.owl (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7f28e32a97e0>: Failed to establish a new connection: [Errno 101] Network
-    is unreachable''))'
+  - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    when accessing file'
 - category: Product
   description: rhea OBO Graph JSON
   format: json
@@ -77,12 +76,14 @@ products:
     url_ /biopragmatics/resources/rhea/rhea.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fa35c7716d0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
+    to URL
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-11: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    when accessing file'
 - category: MappingProduct
   description: Rhea SSSOM
   format: sssom

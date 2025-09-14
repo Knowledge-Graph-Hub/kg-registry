@@ -14,6 +14,11 @@ warnings:
   /biopragmatics/resources/slm/slm.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
   object at 0x7fa35c7633b0>_ Failed to establish a new connection_ [Errno 101] Network
   is unreachable'))
+- File was not able to be retrieved when checked on 2025-09-11_ Error connecting to
+  URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_
+  /biopragmatics/resources/slm/slm.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+  object at 0x7f28e32ab970>_ Failed to establish a new connection_ [Errno 101] Network
+  is unreachable'))
 - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
