@@ -76,6 +76,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -95,6 +97,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -114,6 +118,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -134,6 +140,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -154,6 +162,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -174,6 +184,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -194,6 +206,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -209,6 +223,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ HTTP 502 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
@@ -229,6 +245,8 @@ products:
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-08-12_ HTTP 502 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
@@ -251,6 +269,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 ---

@@ -488,6 +488,8 @@ products:
     url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79b61b0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -502,13 +504,15 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
+    to URL
   - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
     url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79b6ba0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -530,6 +534,8 @@ products:
     url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79b72f0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: MappingProduct
@@ -948,6 +954,8 @@ products:
     url_ /biopragmatics/resources/gtdb/gtdb.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79b7a40>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -1289,6 +1297,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -1306,6 +1316,8 @@ products:
     url_ /biopragmatics/resources/mesh/mesh.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fa35c763470>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
+    to URL
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
@@ -1313,8 +1325,8 @@ products:
     url_ /biopragmatics/resources/mesh/mesh.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79e8fb0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -1329,13 +1341,15 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
     url_ /biopragmatics/resources/mgi/mgi.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f28e3289a20>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -1351,6 +1365,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
@@ -1369,15 +1385,17 @@ products:
     url_ /biopragmatics/resources/mgi/mgi.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fa35c761850>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
     url_ /biopragmatics/resources/mgi/mgi.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f28e32a8190>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: MappingProduct
@@ -1515,12 +1533,12 @@ products:
     url_ /biopragmatics/resources/msigdb/msigdb.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fa35c761820>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -1536,6 +1554,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
@@ -1558,6 +1578,8 @@ products:
     url_ /biopragmatics/resources/msigdb/msigdb.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff2449ab670>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: MappingProduct
@@ -1619,13 +1641,15 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
     url_ /biopragmatics/resources/nihreporter.project/nihreporter.project.obo (Caused
     by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f28e32a9990>_
     Failed to establish a new connection_ [Errno 101] Network is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -1638,6 +1662,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
@@ -1653,12 +1679,12 @@ products:
     url_ /biopragmatics/resources/nihreporter.project/nihreporter.project.json (Caused
     by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c762b10>_
     Failed to establish a new connection_ [Errno 101] Network is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -1813,6 +1839,11 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
+    url_ /biopragmatics/resources/pathbank/pathbank.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+    object at 0x7f28e3289ba0>_ Failed to establish a new connection_ [Errno 101] Network
+    is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
@@ -1820,11 +1851,8 @@ products:
     url_ /biopragmatics/resources/pathbank/pathbank.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79e8440>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/pathbank/pathbank.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f28e3289ba0>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -1841,6 +1869,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -1856,6 +1886,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
@@ -2271,17 +2303,17 @@ products:
     url_ /biopragmatics/resources/reactome/reactome.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fa35c7633b0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
+    to URL
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
     url_ /biopragmatics/resources/reactome/reactome.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff2449aaf50>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-    to URL
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -2299,15 +2331,17 @@ products:
     url_ /biopragmatics/resources/reactome/reactome.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fa35c762270>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
     url_ /biopragmatics/resources/reactome/reactome.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f28e32a9570>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -2383,12 +2417,12 @@ products:
     url_ /biopragmatics/resources/rhea/rhea.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fa35c761be0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -2410,12 +2444,12 @@ products:
     url_ /biopragmatics/resources/rhea/rhea.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fa35c7716d0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: MappingProduct
@@ -2461,6 +2495,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -2478,12 +2514,12 @@ products:
     url_ /biopragmatics/resources/ror/ror.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fa35c771610>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: MappingProduct
@@ -2571,12 +2607,12 @@ products:
     url_ /biopragmatics/resources/slm/slm.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fa35c760410>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -2594,12 +2630,12 @@ products:
     url_ /biopragmatics/resources/slm/slm.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fa35c762780>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -2617,15 +2653,17 @@ products:
     url_ /biopragmatics/resources/slm/slm.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fa35c7633b0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
     url_ /biopragmatics/resources/slm/slm.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f28e32ab970>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: MappingProduct
@@ -2671,13 +2709,15 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
     url_ /biopragmatics/resources/uniprot/uniprot.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f28e328a800>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -2699,6 +2739,8 @@ products:
     url_ /biopragmatics/resources/uniprot/uniprot.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f4fb79b59a0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -2713,6 +2755,11 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
+    url_ /biopragmatics/resources/uniprot/uniprot.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+    object at 0x7f28e32a8940>_ Failed to establish a new connection_ [Errno 101] Network
+    is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
@@ -2720,11 +2767,8 @@ products:
     url_ /biopragmatics/resources/uniprot/uniprot.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff2449aa560>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
-    to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
-    url_ /biopragmatics/resources/uniprot/uniprot.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
-    object at 0x7f28e32a8940>_ Failed to establish a new connection_ [Errno 101] Network
-    is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: MappingProduct
@@ -2849,6 +2893,8 @@ products:
     url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff244989120>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: Product
@@ -2870,12 +2916,12 @@ products:
     url_ /biopragmatics/resources/zfin/zfin.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fa35c761070>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
     when accessing file'
 - category: MappingProduct
