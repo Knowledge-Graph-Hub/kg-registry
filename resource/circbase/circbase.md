@@ -48,6 +48,21 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
   secondary_source:
   - rna-kg
+- id: circbase.portal
+  name: circBase Portal
+  description: Web interface for searching and browsing circular RNA annotations across species.
+  category: GraphicalInterface
+  product_url: https://www.circbase.org/
+- id: circbase.downloads
+  name: circBase Bulk Downloads
+  description: Bulk data downloads (BED/GFF and sequence files) for circular RNAs provided via the downloads CGI page.
+  category: Product
+  product_url: https://www.circbase.org/cgi-bin/downloads.cgi
+- id: circbase.docs
+  name: circBase Documentation
+  description: Help and documentation describing circBase data sources, identifiers, and usage notes.
+  category: DocumentationProduct
+  product_url: https://www.circbase.org/doc/help_mod.html
 - category: GraphProduct
   description: RNA-KG Nodes in CSV format
   format: csv
@@ -105,5 +120,3 @@ products:
 
 ---
 # circBase
-
-This is an automatically generated stub page for circbase. Please update with proper information.
