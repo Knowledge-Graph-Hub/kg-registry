@@ -61,10 +61,10 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
     url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -75,7 +75,7 @@ products:
     url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff244989120>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
     when accessing file'
 - category: Product
   description: zfin OBO Graph JSON
@@ -93,6 +93,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
     url_ /biopragmatics/resources/zfin/zfin.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -100,9 +102,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: zfin SSSOM

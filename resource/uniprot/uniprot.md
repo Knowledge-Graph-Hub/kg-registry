@@ -99,9 +99,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -146,13 +146,13 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 502 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -592,6 +592,52 @@ products:
   product_url: https://multiomics.transltr.io/mbkp
   secondary_source:
   - microbiomekg
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: cancer-genome-interpreter.clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - do
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 repository: https://www.uniprot.org/help/downloads
 ---
 UniProt Protein Knowledge Base

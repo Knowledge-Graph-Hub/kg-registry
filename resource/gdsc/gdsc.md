@@ -81,11 +81,9 @@ products:
   - gdsc
   product_url: https://ftp.sanger.ac.uk/project/cancerrxgene/releases/
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple

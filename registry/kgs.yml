@@ -59,17 +59,17 @@ resources:
       retries exceeded with url_ /faq/can-i-access-1000-genomes-data-globus-online
       (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
       certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-    - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
       to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
       retries exceeded with url_ /faq/can-i-access-1000-genomes-data-globus-online
       (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-      certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+      certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
       retries exceeded with url_ /faq/can-i-access-1000-genomes-data-globus-online
       (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
       certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
       to URL: HTTPSConnectionPool(host=''www.internationalgenome.org'', port=443):
       Max retries exceeded with url: /faq/can-i-access-1000-genomes-data-globus-online
       (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
@@ -86,17 +86,17 @@ resources:
       retries exceeded with url_ /faq/how-download-files-using-aspera (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
-    - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
       to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
       retries exceeded with url_ /faq/how-download-files-using-aspera (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
       retries exceeded with url_ /faq/how-download-files-using-aspera (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
       to URL: HTTPSConnectionPool(host=''www.internationalgenome.org'', port=443):
       Max retries exceeded with url: /faq/how-download-files-using-aspera (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
@@ -116,9 +116,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 403 error
       when accessing file'
   - category: Product
     description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)
@@ -872,9 +872,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
@@ -1812,9 +1812,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
@@ -1927,17 +1927,17 @@ resources:
       with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
       certificate (_ssl.c_1000)')))
-    - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
-      certificate (_ssl.c_1000)')))
+      certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
       certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads (Caused by SSLError(SSLCertVerificationError(1, ''[SSL:
       CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer
@@ -1957,17 +1957,17 @@ resources:
       with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
-    - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -1987,17 +1987,17 @@ resources:
       with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
-    - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -2017,17 +2017,17 @@ resources:
       with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
-    - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -2047,17 +2047,17 @@ resources:
       with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
-    - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -2076,15 +2076,15 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
       certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-    - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-      certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+      certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
       certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /aops (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
       certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
@@ -2104,17 +2104,17 @@ resources:
       with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
       certificate (_ssl.c_1000)')))
-    - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
-      certificate (_ssl.c_1000)')))
+      certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
       certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, ''[SSL:
       CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer
@@ -2707,12 +2707,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
+    - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
+      to URL
     - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting
-      to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: RNA-Seq data processed and formatted for the Bgee database
@@ -2727,12 +2727,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
+    - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
+      to URL
     - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting
-      to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: Processed Affymetrix microarray data for the Bgee database
@@ -2747,12 +2747,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
+    - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
+      to URL
     - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting
-      to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: In Situ Hybridization data in the Bgee database
@@ -2767,12 +2767,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
+    - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
+      to URL
     - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting
-      to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: EST (Expressed Sequence Tag) expression data in the Bgee database
@@ -2787,12 +2787,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
+    - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
+      to URL
     - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting
-      to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: Single-cell RNA-Seq processed data in the Bgee database
@@ -2807,12 +2807,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
+    - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
+      to URL
     - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting
-      to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: Anatomical homology information used in Bgee
@@ -2827,12 +2827,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
+    - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
+      to URL
     - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting
-      to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
+      when accessing file'
   - category: Product
     compression: zip
     description: RDF version of the Bgee data for semantic web applications
@@ -2847,12 +2847,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
+    - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
+      to URL
     - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting
-      to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
       biomedical data sources.
@@ -6047,17 +6047,38 @@ resources:
     - biomarkerkg
   repository: https://github.com/MaayanLab/BiomarkerKG
 - activity_status: active
-  category: DataSource
+  category: Aggregator
   creation_date: '2025-08-20T00:00:00Z'
-  description: Stub Resource page for bioportal. This page was automatically generated
-    because it was referenced by other resources.
+  description: BioPortal is a comprehensive open repository and portal for biomedical
+    ontologies and terminologies, providing search, browsing, mappings, versioned
+    downloads, REST APIs, widgets, and analytics to support data integration, annotation,
+    and semantic interoperability in the life and health sciences.
   domains:
-  - stub
+  - biomedical
+  - clinical
+  - information technology
+  - upper
   id: bioportal
-  last_modified_date: '2025-08-20T00:00:00Z'
+  last_modified_date: '2025-09-16T00:00:00Z'
   layout: resource_detail
-  name: Bioportal
+  license:
+    id: https://www.bioontology.org/terms/
+    label: BioPortal Terms of Use (includes attribution & reuse conditions)
+  name: BioPortal
   products:
+  - category: GraphicalInterface
+    description: Web portal for searching, browsing, and visualizing biomedical ontologies
+      and mappings
+    format: http
+    id: bioportal.portal
+    name: BioPortal Portal
+    product_url: https://bioportal.bioontology.org/
+  - category: ProgrammingInterface
+    description: REST API for ontology concepts, search, mappings, metrics, and downloads
+    format: http
+    id: bioportal.api
+    name: BioPortal REST API
+    product_url: http://data.bioontology.org/
   - category: GraphProduct
     description: PheKnowLator graph files, including subsets with and without inverse
       relations.
@@ -6101,9 +6122,16 @@ resources:
     - v3.0.2
     - v4.0.0
     - current_build
+  publications:
+  - doi: 10.1093/nar/gkaf402
+    id: doi:10.1093/nar/gkaf402
+    journal: Nucleic Acids Research
+    title: 'BioPortal: an open community resource for sharing, searching, and utilizing
+      biomedical ontologies'
+    year: '2025'
   warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  - Some ontologies have distinct licenses; review individual ontology license metadata
+    before reuse.
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -6452,6 +6480,52 @@ resources:
     - ms
     - uo
     product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   repository: https://github.com/BRENDA-Enzymes/BTO
 - activity_status: active
   category: DataSource
@@ -6626,15 +6700,83 @@ resources:
 - activity_status: active
   category: DataSource
   creation_date: '2025-08-12T00:00:00Z'
-  description: Stub Resource page for cancer-genome-interpreter. This page was automatically
-    generated because it was referenced by other resources.
+  description: Cancer Genome Interpreter (CGI) is a resource that annotates tumor
+    genomic alterations to identify likely oncogenic events and interpret their potential
+    therapeutic, prognostic, and diagnostic relevance using curated knowledge bases,
+    machine learning (BoostDM, OncodriveMUT), and clinical evidence levels.
   domains:
-  - stub
+  - biomedical
+  - clinical
+  - precision medicine
+  - drug discovery
   id: cancer-genome-interpreter
-  last_modified_date: '2025-08-12T00:00:00Z'
+  last_modified_date: '2025-09-16T00:00:00Z'
   layout: resource_detail
-  name: Cancer-genome-interpreter
+  license:
+    id: https://www.cancergenomeinterpreter.org/conditions#license
+    label: Cancer Genome Interpreter License and Terms
+  name: Cancer Genome Interpreter
   products:
+  - category: GraphicalInterface
+    description: Web portal for submitting variant lists, interpreting oncogenicity,
+      and exploring biomarkers
+    format: http
+    id: cancer-genome-interpreter.portal
+    name: Cancer Genome Interpreter Portal
+    product_url: https://www.cancergenomeinterpreter.org/
+  - category: ProgrammingInterface
+    description: REST API for programmatic access to annotation and interpretation
+      endpoints
+    format: http
+    id: cancer-genome-interpreter.api
+    name: Cancer Genome Interpreter REST API
+    product_url: https://www.cancergenomeinterpreter.org/rest_api
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   - category: GraphProduct
     description: Neo4j database dump of the Clinical Knowledge Graph and additional
       relationships
@@ -6681,9 +6823,6 @@ resources:
     - ms
     - uo
     product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
 - activity_status: active
   category: DataSource
   contacts:
@@ -6858,11 +6997,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-      to URL
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
+      header found
     - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     description: Cell markers of different cell types from different tissues in mouse
@@ -6872,11 +7011,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-      to URL
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
+      header found
     - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     description: Cell markers derived from single-cell sequencing researches in human
@@ -6887,11 +7026,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-      to URL
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
+      header found
     - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     description: All cell markers of different cell types from different tissues in
@@ -6902,11 +7041,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
-      to URL
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
+      header found
     - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: GraphicalInterface
     description: ACT is a tool that makes cell type annotation easier by integrating
@@ -7042,9 +7181,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: Complete Cellosaurus data in RDF format using the Turtle syntax
@@ -7059,9 +7198,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
     description: RESTful API for programmatic access to Cellosaurus data
@@ -7202,9 +7341,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: cgnc OBO
@@ -8537,16 +8676,23 @@ resources:
     - chr
   repository: https://github.com/monarch-initiative/monochrom/
 - activity_status: active
-  category: DataSource
+  category: Aggregator
   creation_date: '2025-08-25T00:00:00Z'
-  description: Stub Resource page for circbase. This page was automatically generated
-    because it was referenced by other resources.
+  description: circBase is a database and exploration portal for circular RNAs (circRNAs),
+    aggregating published circRNA detection datasets across multiple species, tissues,
+    and experimental conditions, and providing search, genomic context, expression
+    summaries, and downloadable data plus scripts for circRNA discovery.
   domains:
-  - stub
+  - genomics
+  - biological systems
+  - organisms
   id: circbase
-  last_modified_date: '2025-08-25T00:00:00Z'
+  last_modified_date: '2025-09-16T00:00:00Z'
   layout: resource_detail
-  name: Circbase
+  license:
+    id: http://www.circbase.org/
+    label: circBase site terms (dataset-specific; cite original studies)
+  name: circBase
   products:
   - category: GraphProduct
     description: RNA-KG as a Neo4j Dump
@@ -8575,6 +8721,24 @@ resources:
     product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
     secondary_source:
     - rna-kg
+  - category: GraphicalInterface
+    description: Web interface for searching and browsing circular RNA annotations
+      across species.
+    id: circbase.portal
+    name: circBase Portal
+    product_url: https://www.circbase.org/
+  - category: Product
+    description: Bulk data downloads (BED/GFF and sequence files) for circular RNAs
+      provided via the downloads CGI page.
+    id: circbase.downloads
+    name: circBase Bulk Downloads
+    product_url: https://www.circbase.org/cgi-bin/downloads.cgi
+  - category: DocumentationProduct
+    description: Help and documentation describing circBase data sources, identifiers,
+      and usage notes.
+    id: circbase.docs
+    name: circBase Documentation
+    product_url: https://www.circbase.org/doc/help_mod.html
   - category: GraphProduct
     description: RNA-KG Nodes in CSV format
     format: csv
@@ -8629,9 +8793,12 @@ resources:
     product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
     secondary_source:
     - rna-kg
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  publications:
+  - id: doi:10.1261/rna.043687.113
+    journal: RNA
+    preferred: true
+    title: 'circBase: a database for circular RNAs'
+    year: '2014'
 - activity_status: active
   category: DataSource
   contacts:
@@ -10775,13 +10942,13 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 500 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 500 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -12465,13 +12632,21 @@ resources:
   repository: https://github.com/OBOFoundry/COB
 - activity_status: active
   category: DataSource
-  description: Stub Resource page for compartments. This page was automatically generated
-    because it was referenced by other resources.
+  description: COMPARTMENTS is an evidence-weighted subcellular localization knowledge
+    resource that integrates experimental data, manual curation, high-throughput localization
+    screens, automatic text mining, and sequence-based predictions to assign proteins
+    to cellular compartments with confidence scores.
   domains:
-  - stub
+  - proteomics
+  - systems biology
+  - biological systems
   id: compartments
   layout: resource_detail
-  name: Compartments
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: COMPARTMENTS
   products:
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
@@ -12519,9 +12694,20 @@ resources:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
     secondary_source:
     - bioteque
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  - category: GraphicalInterface
+    description: Web interface for exploring protein subcellular localization evidence
+      across integrated sources.
+    id: compartments.portal
+    name: COMPARTMENTS Portal
+    product_url: https://compartments.jensenlab.org/
+  - category: Product
+    description: Bulk data downloads of localization scores and evidence files.
+    id: compartments.downloads
+    name: COMPARTMENTS Bulk Downloads
+    product_url: https://compartments.jensenlab.org/Downloads
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
+      header found'
 - activity_status: active
   category: DataSource
   creation_date: '2025-07-17T00:00:00Z'
@@ -12657,17 +12843,17 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
-    - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -12688,17 +12874,17 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
-    - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -12719,17 +12905,17 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
-    - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -12749,17 +12935,17 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
-    - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
@@ -12817,6 +13003,52 @@ resources:
     edge_count: 220000000
     format: mixed
     id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
     name: CKG Graph Dump
     node_count: 16000000
     original_source:
@@ -15285,6 +15517,52 @@ resources:
     - ms
     - uo
     product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   publications:
   - authors:
     - Cotto KC
@@ -16434,6 +16712,52 @@ resources:
     - ms
     - uo
     product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -16962,6 +17286,52 @@ resources:
     product_url: https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2
     secondary_source:
     - aop-db
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   publications:
   - authors:
     - Janet Piñero
@@ -17512,6 +17882,52 @@ resources:
     product_url: http://purl.obolibrary.org/obo/clo.owl
     secondary_source:
     - clo
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 - activity_status: active
   category: KnowledgeGraph
@@ -18120,6 +18536,52 @@ resources:
     product_url: https://multiomics.transltr.io/mbkp
     secondary_source:
     - microbiomekg
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   publications:
   - id: https://doi.org/10.1093/nar/gkad976
     journal: Nucleic Acids Research
@@ -18366,9 +18828,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -18387,9 +18849,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -18409,9 +18871,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -18456,13 +18918,13 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 500 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 500 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -18607,9 +19069,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
@@ -19884,6 +20346,52 @@ resources:
     product_url: https://docs.epigraphdb.org/graph-database/
     secondary_source:
     - epigraphdb
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   publications:
   - authors:
     - James Malone
@@ -22753,7 +23261,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -22761,7 +23269,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     compression: targz
@@ -22773,7 +23281,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -22781,7 +23289,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -22793,7 +23301,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -22801,7 +23309,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     compression: targz
@@ -22812,7 +23320,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -22820,7 +23328,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -22831,7 +23339,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -22839,7 +23347,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -22850,7 +23358,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -22858,7 +23366,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -22869,7 +23377,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -22877,7 +23385,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -22888,7 +23396,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -22896,7 +23404,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -22907,7 +23415,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -22915,7 +23423,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -22926,7 +23434,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -22934,7 +23442,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -22945,7 +23453,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -22953,7 +23461,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -23005,6 +23513,52 @@ resources:
     edge_count: 220000000
     format: mixed
     id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
     name: CKG Graph Dump
     node_count: 16000000
     original_source:
@@ -23207,9 +23761,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -24133,7 +24687,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
+      header found
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -24155,7 +24711,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
+      header found
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -24175,7 +24733,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
+      header found
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -24188,7 +24748,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
+      header found
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -24224,7 +24786,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
+      header found
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -24260,7 +24824,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
+      header found
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -24279,7 +24845,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
+      header found
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     description: Field (column) definitions CSV endpoint
@@ -26439,6 +27007,52 @@ resources:
     product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
     secondary_source:
     - chr
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   publications:
   - authors:
     - Ashburner M
@@ -26691,9 +27305,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
     connection_url: http://api.geneontology.org/api/
@@ -26773,11 +27387,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     format: owl
@@ -27352,11 +27966,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     description: Complete list of ligands including drugs, small molecules, and other
@@ -27368,11 +27982,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     description: Comprehensive dataset of all interactions between ligands and targets
@@ -27383,11 +27997,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     description: Detailed interactions list for approved drugs and their targets
@@ -27398,11 +28012,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     description: SDF file containing chemical structures with SMILES for all ligands
@@ -27414,11 +28028,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     description: RDF/linked data format of the GtoPdb data (target-ligand interactions
@@ -27430,11 +28044,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     description: Complete PostgreSQL database dump of the current Guide to Pharmacology
@@ -27445,11 +28059,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: GraphicalInterface
     description: An extension of the Guide to PHARMACOLOGY database providing immunological
@@ -27947,9 +28561,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: Study metadata file containing per-study information for GWAS Catalog
@@ -27973,9 +28587,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: EFO trait mapping file linking GWAS Catalog reported traits to Experimental
@@ -27989,9 +28603,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: RDF/OWL representation of GWAS Catalog associations enabling semantic
@@ -28005,9 +28619,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: DocumentationProduct
     description: Compressed GWAS Catalog diagram (karyotype visualization) in SVG
@@ -28021,9 +28635,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: DocumentationProduct
     description: Archive of previous GWAS Catalog diagram versions (SVG format)
@@ -28036,9 +28650,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: DocumentationProduct
     description: Harmonised summary statistics landing page (FTP directory containing
@@ -28051,9 +28665,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
       to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
-    - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+    - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
       to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
-    - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
       to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'''
   - category: GraphProduct
     description: GWASCatalog Automat
@@ -28285,6 +28899,52 @@ resources:
     product_url: https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2
     secondary_source:
     - aop-db
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 - activity_status: active
   category: DataSource
   description: Stub Resource page for hancestro. This page was automatically generated
@@ -28738,9 +29398,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -29232,6 +29892,52 @@ resources:
     - zwd
     - rnacentral
     product_url: https://rnacentral.org/help/public-database
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   repository: https://github.com/HGNC
 - activity_status: active
   category: Aggregator
@@ -29521,6 +30227,52 @@ resources:
     product_url: https://stars.renci.org/var/plater/bl-4.2.1/HMDB_Automat/6715124699b6dbf0/
     secondary_source:
     - automat
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 - activity_status: active
   category: DataModel
   contacts:
@@ -30967,6 +31719,52 @@ resources:
     product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
     secondary_source:
     - kg-monarch
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   repository: https://github.com/obophenotype/human-phenotype-ontology
 - activity_status: active
   category: DataSource
@@ -31156,6 +31954,52 @@ resources:
     - v3.0.2
     - v4.0.0
     - current_build
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -31679,9 +32523,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 401 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 401 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 401 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 401 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 401 error
       when accessing file'
   - category: Product
     description: Data submission portal for registering and ingesting consortium data
@@ -33407,6 +34251,52 @@ resources:
     product_url: https://stars.renci.org/var/plater/bl-4.2.1/IntAct_Automat/e5b936f966a02c2c/
     secondary_source:
     - automat
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 - activity_status: active
   category: DataSource
   contacts:
@@ -34322,9 +35212,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 403 error
       when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 - activity_status: active
@@ -34420,9 +35310,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
@@ -34510,9 +35400,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 403 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -34601,7 +35491,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://kghub.org/kg-monarch/index.html
   id: kg-monarch
-  last_modified_date: '2025-09-14T22:02:37Z'
+  last_modified_date: '2025-09-16T20:23:37Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -37145,9 +38035,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 503 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 503 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 503 error
       when accessing file'
   - category: DataModelProduct
     description: Archive of past LOINC releases for version-specific implementations
@@ -37160,9 +38050,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 503 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 503 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 503 error
       when accessing file'
   - category: DocumentationProduct
     description: LOINC Mission, Vision, and Guiding Principles for open terminology
@@ -37175,9 +38065,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 503 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 503 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 503 error
       when accessing file'
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
@@ -38543,9 +39433,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -38564,9 +39454,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -38586,9 +39476,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -39134,9 +40024,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     description: MNXref unified namespace for reactions across databases
@@ -39151,9 +40041,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -39695,6 +40585,52 @@ resources:
     - ms
     - uo
     product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -39806,9 +40742,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -39827,9 +40763,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -39849,9 +40785,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -40443,6 +41379,52 @@ resources:
     edge_count: 220000000
     format: mixed
     id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
     name: CKG Graph Dump
     node_count: 16000000
     original_source:
@@ -42065,6 +43047,52 @@ resources:
     - ms
     - uo
     product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -42242,6 +43270,52 @@ resources:
     edge_count: 220000000
     format: mixed
     id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
     name: CKG Graph Dump
     node_count: 16000000
     original_source:
@@ -45523,16 +46597,16 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
     - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.obo (Caused
       by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4fb79b61b0>_
       Failed to establish a new connection_ [Errno 101] Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: clinicaltrials OWL
@@ -45546,7 +46620,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -45555,7 +46629,7 @@ resources:
       with url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.owl (Caused
       by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4fb79b6ba0>_
       Failed to establish a new connection_ [Errno 101] Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: clinicaltrials OBO Graph JSON
@@ -45569,16 +46643,16 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
     - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.json (Caused
       by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4fb79b72f0>_
       Failed to establish a new connection_ [Errno 101] Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: clinicaltrials SSSOM
@@ -45989,16 +47063,16 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
     - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/gtdb/gtdb.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7f4fb79b7a40>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: gtdb OWL
@@ -46337,11 +47411,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: mesh OBO Graph JSON
@@ -46355,6 +47429,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/mesh/mesh.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -46362,14 +47438,12 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
     - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/mesh/mesh.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7f4fb79e8fb0>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: mgi OBO
@@ -46383,6 +47457,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
@@ -46390,9 +47466,7 @@ resources:
       with url_ /biopragmatics/resources/mgi/mgi.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7f28e3289a20>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: mgi OWL
@@ -46406,11 +47480,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: mgi OBO Graph JSON
@@ -46424,6 +47498,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/mgi/mgi.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -46434,11 +47510,9 @@ resources:
       with url_ /biopragmatics/resources/mgi/mgi.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7f28e32a8190>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
     - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: mgi SSSOM
@@ -46572,6 +47646,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/msigdb/msigdb.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -46579,9 +47655,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: msigdb OWL
@@ -46595,11 +47669,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: msigdb OBO Graph JSON
@@ -46613,16 +47687,16 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
     - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/msigdb/msigdb.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7ff2449ab670>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: msigdb SSSOM
@@ -46683,6 +47757,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
@@ -46691,9 +47767,7 @@ resources:
       (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at
       0x7f28e32a9990>_ Failed to establish a new connection_ [Errno 101] Network is
       unreachable'))
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: nihreporter.project OWL
@@ -46704,11 +47778,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: nihreporter.project OBO Graph JSON
@@ -46719,6 +47793,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/nihreporter.project/nihreporter.project.json
@@ -46727,9 +47803,7 @@ resources:
       unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: nlm OBO
@@ -46883,6 +47957,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
@@ -46890,14 +47966,12 @@ resources:
       with url_ /biopragmatics/resources/pathbank/pathbank.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7f28e3289ba0>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
     - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/pathbank/pathbank.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7f4fb79e8440>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: pathbank OWL
@@ -46911,11 +47985,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: pathbank OBO Graph JSON
@@ -46929,11 +48003,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: pathbank SSSOM
@@ -47344,6 +48418,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/reactome/reactome.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -47351,14 +48427,12 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
     - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/reactome/reactome.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7ff2449aaf50>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: reactome OBO Graph JSON
@@ -47372,6 +48446,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/reactome/reactome.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -47382,11 +48458,9 @@ resources:
       with url_ /biopragmatics/resources/reactome/reactome.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7f28e32a9570>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
     - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: rgd OBO
@@ -47458,6 +48532,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/rhea/rhea.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -47465,9 +48541,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: rhea OBO Graph JSON
@@ -47485,6 +48559,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/rhea/rhea.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -47492,9 +48568,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: Rhea SSSOM
@@ -47537,11 +48611,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: ror OBO Graph JSON
@@ -47555,6 +48629,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/ror/ror.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -47562,9 +48638,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: ror SSSOM
@@ -47648,6 +48722,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/slm/slm.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -47655,9 +48731,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: slm OWL
@@ -47671,6 +48745,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/slm/slm.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -47678,9 +48754,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: slm OBO Graph JSON
@@ -47694,6 +48768,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/slm/slm.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -47704,11 +48780,9 @@ resources:
       with url_ /biopragmatics/resources/slm/slm.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7f28e32ab970>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
     - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: slm SSSOM
@@ -47753,6 +48827,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
@@ -47760,9 +48836,7 @@ resources:
       with url_ /biopragmatics/resources/uniprot/uniprot.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7f28e328a800>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: uniprot OWL
@@ -47776,16 +48850,16 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
     - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/uniprot/uniprot.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7f4fb79b59a0>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: uniprot OBO Graph JSON
@@ -47799,6 +48873,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
@@ -47806,14 +48882,12 @@ resources:
       with url_ /biopragmatics/resources/uniprot/uniprot.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7f28e32a8940>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
     - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/uniprot/uniprot.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7ff2449aa560>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: uniprot SSSOM
@@ -47925,10 +48999,10 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
     - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -47939,7 +49013,7 @@ resources:
       with url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7ff244989120>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: zfin OBO Graph JSON
@@ -47957,6 +49031,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/zfin/zfin.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -47964,9 +49040,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: zfin SSSOM
@@ -48726,13 +49800,13 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-01_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: OMA orthology groups in OrthoXML format
@@ -48747,13 +49821,13 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-01_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: Hierarchical Orthologous Groups (HOGs) in OrthoXML format
@@ -48768,13 +49842,13 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-02_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -48790,13 +49864,13 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-03_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -48812,13 +49886,13 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -48834,13 +49908,13 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -48856,13 +49930,13 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-13_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: OMA Browser database in HDF5 format
@@ -48876,11 +49950,11 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-09_ HTTP 502 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -48896,13 +49970,13 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2025-08-12_ HTTP 502 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     compression: gzip
@@ -48919,13 +49993,13 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
 - activity_status: active
   category: DataSource
@@ -49642,6 +50716,52 @@ resources:
     edge_count: 220000000
     format: mixed
     id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
     name: CKG Graph Dump
     node_count: 16000000
     original_source:
@@ -52673,6 +53793,52 @@ resources:
     - ms
     - uo
     product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   publications:
   - authors:
     - T. Paysan-Lafosse
@@ -53750,10 +54916,10 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: Timeout connecting
-      to URL'
+    - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
+      to URL
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
+      when accessing file'
   - category: GraphProduct
     compatibility:
     - standard: biolink
@@ -54671,6 +55837,52 @@ resources:
     - ms
     - uo
     product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   publications:
   - doi: 10.1093/nar/gku1267
     id: doi:10.1093/nar/gku1267
@@ -55521,9 +56733,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: Product
     description: Tab-delimited file of systematic ID, primary gene name (where assigned),
@@ -55544,9 +56756,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
@@ -56896,9 +58108,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 403 error
       when accessing file'
   repository: https://github.com/mims-harvard/PrimeKG
 - activity_status: active
@@ -59467,6 +60679,52 @@ resources:
     product_url: https://docs.epigraphdb.org/graph-database/
     secondary_source:
     - epigraphdb
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   repository: ''
 - activity_status: active
   category: DataSource
@@ -59789,6 +61047,52 @@ resources:
     - ms
     - uo
     product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   publications:
   - doi: 10.1093/nar/gkv1189
     id: doi:10.1093/nar/gkv1189
@@ -59845,13 +61149,13 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 500 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 500 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: Interactive web interface for exploring RepoDB data with drug-centric  and
@@ -60490,6 +61794,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/rhea/rhea.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -60497,9 +61803,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: rhea OBO Graph JSON
@@ -60517,6 +61821,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/rhea/rhea.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -60524,9 +61830,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: Rhea SSSOM
@@ -62199,9 +63503,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
 - activity_status: active
   category: DataSource
@@ -62882,6 +64186,52 @@ resources:
     edge_count: 220000000
     format: mixed
     id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
     name: CKG Graph Dump
     node_count: 16000000
     original_source:
@@ -63673,6 +65023,52 @@ resources:
     - ms
     - uo
     product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -64111,6 +65507,52 @@ resources:
     edge_count: 220000000
     format: mixed
     id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
     name: CKG Graph Dump
     node_count: 16000000
     original_source:
@@ -65463,6 +66905,52 @@ resources:
     - ms
     - uo
     product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   warnings:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
@@ -66647,6 +68135,52 @@ resources:
     product_url: https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2
     secondary_source:
     - aop-db
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   publications:
   - authors:
     - Szklarczyk D
@@ -67180,9 +68714,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   repository: ''
 - activity_status: active
@@ -67308,6 +68842,52 @@ resources:
     edge_count: 220000000
     format: mixed
     id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
     name: CKG Graph Dump
     node_count: 16000000
     original_source:
@@ -67868,14 +69448,22 @@ resources:
 - activity_status: active
   category: DataSource
   creation_date: '2025-09-04T00:00:00Z'
-  description: Stub Resource page for toxcast. This page was automatically generated
-    because it was referenced by other resources.
+  description: ToxCast (US EPA Toxicity Forecaster) is a high-throughput screening
+    program generating bioactivity profiles for thousands of environmental chemicals
+    across diverse in vitro assays to prioritize substances for hazard characterization,
+    integrate exposure and pathway information, and support predictive toxicology.
   domains:
-  - stub
+  - toxicology
+  - environment
+  - public health
+  - biomedical
   id: toxcast
-  last_modified_date: '2025-09-04T00:00:00Z'
+  last_modified_date: '2025-09-16T00:00:00Z'
   layout: resource_detail
-  name: Toxcast
+  license:
+    id: https://www.epa.gov/privacy/privacy-and-security-notice
+    label: EPA Data Usage & Privacy Notice (public domain / open government data)
+  name: ToxCast
   products:
   - category: Product
     description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)
@@ -67899,9 +69487,24 @@ resources:
     product_url: https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2
     secondary_source:
     - aop-db
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  - category: GraphicalInterface
+    description: Landing page describing the ToxCast high-throughput screening program
+      and providing links to data and documentation.
+    id: toxcast.portal
+    name: EPA ToxCast Portal
+    product_url: https://www.epa.gov/chemical-research/toxicity-forecasting
+  - category: ProgrammingInterface
+    description: REST API providing programmatic access to ToxCast-related assay,
+      chemical, and bioactivity data via the CompTox Chemicals Dashboard.
+    id: toxcast.api
+    name: CompTox Chemicals Dashboard API (ToxCast)
+    product_url: https://api-ccte.epa.gov/dashboard/
+  - category: Product
+    description: Bulk release archives (assay annotations, hit-call data, summary
+      tables) for ToxCast phases.
+    id: toxcast.downloads
+    name: ToxCast Bulk Data Downloads
+    product_url: https://www.epa.gov/chemical-research/toxicity-forecasting#data
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -69371,9 +70974,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-14: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
       header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
@@ -69418,13 +71021,13 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-05_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -69864,6 +71467,52 @@ resources:
     product_url: https://multiomics.transltr.io/mbkp
     secondary_source:
     - microbiomekg
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
   repository: https://www.uniprot.org/help/downloads
 - activity_status: active
   category: DataModel
@@ -69920,13 +71569,13 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-20_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: Browse UO with Ontology Lookup Service (OLS)
@@ -70192,6 +71841,52 @@ resources:
     edge_count: 220000000
     format: mixed
     id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
     name: CKG Graph Dump
     node_count: 16000000
     original_source:
@@ -71896,10 +73591,10 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
     - File was not able to be retrieved when checked on 2025-09-09_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -71910,7 +73605,7 @@ resources:
       with url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7ff244989120>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: Product
     description: zfin OBO Graph JSON
@@ -71928,6 +73623,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
       with url_ /biopragmatics/resources/zfin/zfin.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -71935,9 +73632,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-10_ HTTP 404 error
-      when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: zfin SSSOM
@@ -73415,9 +75110,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing citation information for all PubMed articles
@@ -73429,9 +75124,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing entity information with UMLS concept identifiers,
@@ -73443,9 +75138,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing semantic predications with subject-predicate-object
@@ -73457,9 +75152,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing sentence information from PubMed citations
@@ -73470,9 +75165,9 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-11_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 403 error
       when accessing file'
   - category: ProcessProduct
     description: The SemRep natural language processing system that extracts semantic
@@ -73940,6 +75635,52 @@ resources:
     edge_count: 220000000
     format: mixed
     id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
     name: CKG Graph Dump
     node_count: 16000000
     original_source:

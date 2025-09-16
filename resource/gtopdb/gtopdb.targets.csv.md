@@ -8,7 +8,7 @@ product_url: https://www.guidetopharmacology.org/DATA/targets_and_families.csv
 warnings:
 - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
   header found
-- File was not able to be retrieved when checked on 2025-09-11_ No Content-Length
+- File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when
   accessing file

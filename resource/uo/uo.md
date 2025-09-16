@@ -51,15 +51,13 @@ products:
   - uo
   product_url: http://purl.obolibrary.org/obo/uo.json
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-11_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ HTTP 502 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-20_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-14: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-09-16: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   description: Browse UO with Ontology Lookup Service (OLS)
@@ -325,6 +323,52 @@ products:
   edge_count: 220000000
   format: mixed
   id: clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - do
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: cancer-genome-interpreter.clinicalkg.graph
   name: CKG Graph Dump
   node_count: 16000000
   original_source:

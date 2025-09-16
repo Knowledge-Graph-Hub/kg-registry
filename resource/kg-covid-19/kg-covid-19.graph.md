@@ -12,7 +12,7 @@ secondary_source:
 warnings:
 - File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-09-11_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2025-09-14_ HTTP 403 error when
   accessing file
 layout: product_detail
 ---

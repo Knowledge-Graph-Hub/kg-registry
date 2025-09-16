@@ -1,17 +1,20 @@
 ---
 activity_status: active
 category: DataSource
-description: COMPARTMENTS is an evidence-weighted subcellular localization knowledge resource that integrates experimental data, manual curation, high-throughput localization screens, automatic text mining, and sequence-based predictions to assign proteins to cellular compartments with confidence scores.
+description: COMPARTMENTS is an evidence-weighted subcellular localization knowledge
+  resource that integrates experimental data, manual curation, high-throughput localization
+  screens, automatic text mining, and sequence-based predictions to assign proteins
+  to cellular compartments with confidence scores.
 domains:
-  - proteomics
-  - systems biology
-  - biological systems
+- proteomics
+- systems biology
+- biological systems
 id: compartments
 layout: resource_detail
-name: COMPARTMENTS
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
+name: COMPARTMENTS
 products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
@@ -59,15 +62,19 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   secondary_source:
   - bioteque
-- id: compartments.portal
+- category: GraphicalInterface
+  description: Web interface for exploring protein subcellular localization evidence
+    across integrated sources.
+  id: compartments.portal
   name: COMPARTMENTS Portal
-  description: Web interface for exploring protein subcellular localization evidence across integrated sources.
-  category: GraphicalInterface
   product_url: https://compartments.jensenlab.org/
-- id: compartments.downloads
-  name: COMPARTMENTS Bulk Downloads
+- category: Product
   description: Bulk data downloads of localization scores and evidence files.
-  category: Product
+  id: compartments.downloads
+  name: COMPARTMENTS Bulk Downloads
   product_url: https://compartments.jensenlab.org/Downloads
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
+    header found'
 ---
 # COMPARTMENTS

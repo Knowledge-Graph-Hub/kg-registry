@@ -38,7 +38,7 @@ products:
   name: CORUM All Complexes
   product_url: https://mips.helmholtz-muenchen.de/corum/download/
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+  - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -52,8 +52,8 @@ products:
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    issuer certificate (_ssl.c_1017)')))
+  - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -69,7 +69,7 @@ products:
   name: CORUM Core Complexes
   product_url: https://mips.helmholtz-muenchen.de/corum/download/
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+  - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -83,8 +83,8 @@ products:
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    issuer certificate (_ssl.c_1017)')))
+  - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -100,7 +100,7 @@ products:
   name: CORUM PSI-MI
   product_url: https://mips.helmholtz-muenchen.de/corum/download/
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+  - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -114,8 +114,8 @@ products:
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    issuer certificate (_ssl.c_1017)')))
+  - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -130,7 +130,7 @@ products:
   name: CORUM MITAB
   product_url: https://mips.helmholtz-muenchen.de/corum/download/
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
+  - File was not able to be retrieved when checked on 2025-09-14_ Error connecting
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -144,8 +144,8 @@ products:
     to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
     retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1000)')))
-  - 'File was not able to be retrieved when checked on 2025-09-14: Error connecting
+    issuer certificate (_ssl.c_1017)')))
+  - 'File was not able to be retrieved when checked on 2025-09-16: Error connecting
     to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443): Max
     retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -203,6 +203,52 @@ products:
   edge_count: 220000000
   format: mixed
   id: clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - do
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: cancer-genome-interpreter.clinicalkg.graph
   name: CKG Graph Dump
   node_count: 16000000
   original_source:
