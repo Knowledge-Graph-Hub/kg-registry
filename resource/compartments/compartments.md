@@ -59,7 +59,15 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   secondary_source:
   - bioteque
+- id: compartments.portal
+  name: COMPARTMENTS Portal
+  description: Web interface for exploring protein subcellular localization evidence across integrated sources.
+  category: GraphicalInterface
+  product_url: https://compartments.jensenlab.org/
+- id: compartments.downloads
+  name: COMPARTMENTS Bulk Downloads
+  description: Bulk data downloads of localization scores and evidence files.
+  category: Product
+  product_url: https://compartments.jensenlab.org/Downloads
 ---
 # COMPARTMENTS
-
-This is an automatically generated stub page for compartments. Please update with proper information.
