@@ -1,15 +1,25 @@
 ---
 activity_status: active
-category: DataSource
+category: Aggregator
 creation_date: '2025-08-25T00:00:00Z'
-description: Stub Resource page for circbase. This page was automatically generated
-  because it was referenced by other resources.
+description: circBase is a database and exploration portal for circular RNAs (circRNAs), aggregating published circRNA detection datasets across multiple species, tissues, and experimental conditions, and providing search, genomic context, expression summaries, and downloadable data plus scripts for circRNA discovery.
 domains:
-- stub
+  - genomics
+  - biological systems
+  - organisms
 id: circbase
-last_modified_date: '2025-08-25T00:00:00Z'
+last_modified_date: '2025-09-16T00:00:00Z'
 layout: resource_detail
-name: Circbase
+name: circBase
+license:
+  id: http://www.circbase.org/
+  label: circBase site terms (dataset-specific; cite original studies)
+publications:
+  - id: doi:10.1261/rna.043687.113
+    title: "circBase: a database for circular RNAs"
+    year: '2014'
+    journal: RNA
+    preferred: true
 products:
 - category: GraphProduct
   description: RNA-KG as a Neo4j Dump
@@ -38,6 +48,21 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
   secondary_source:
   - rna-kg
+- id: circbase.portal
+  name: circBase Portal
+  description: Web interface for searching and browsing circular RNA annotations across species.
+  category: GraphicalInterface
+  product_url: https://www.circbase.org/
+- id: circbase.downloads
+  name: circBase Bulk Downloads
+  description: Bulk data downloads (BED/GFF and sequence files) for circular RNAs provided via the downloads CGI page.
+  category: Product
+  product_url: https://www.circbase.org/cgi-bin/downloads.cgi
+- id: circbase.docs
+  name: circBase Documentation
+  description: Help and documentation describing circBase data sources, identifiers, and usage notes.
+  category: DocumentationProduct
+  product_url: https://www.circbase.org/doc/help_mod.html
 - category: GraphProduct
   description: RNA-KG Nodes in CSV format
   format: csv
@@ -92,10 +117,6 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
   secondary_source:
   - rna-kg
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
----
-# Circbase
 
-This is an automatically generated stub page for circbase. Please update with proper information.
+---
+# circBase

@@ -2,14 +2,19 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-09-04T00:00:00Z'
-description: Stub Resource page for toxcast. This page was automatically generated
-  because it was referenced by other resources.
+description: ToxCast (US EPA Toxicity Forecaster) is a high-throughput screening program generating bioactivity profiles for thousands of environmental chemicals across diverse in vitro assays to prioritize substances for hazard characterization, integrate exposure and pathway information, and support predictive toxicology.
 domains:
-- stub
+  - toxicology
+  - environment
+  - public health
+  - biomedical
 id: toxcast
-last_modified_date: '2025-09-04T00:00:00Z'
+last_modified_date: '2025-09-16T00:00:00Z'
 layout: resource_detail
-name: Toxcast
+name: ToxCast
+license:
+  id: https://www.epa.gov/privacy/privacy-and-security-notice
+  label: EPA Data Usage & Privacy Notice (public domain / open government data)
 products:
 - category: Product
   description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)
@@ -32,10 +37,20 @@ products:
   product_url: https://catalog.data.gov/dataset/adverse-outcome-pathway-database-aop-db-version-2
   secondary_source:
   - aop-db
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+- id: toxcast.portal
+  name: EPA ToxCast Portal
+  description: Landing page describing the ToxCast high-throughput screening program and providing links to data and documentation.
+  category: GraphicalInterface
+  product_url: https://www.epa.gov/chemical-research/toxicity-forecasting
+- id: toxcast.api
+  name: CompTox Chemicals Dashboard API (ToxCast)
+  description: REST API providing programmatic access to ToxCast-related assay, chemical, and bioactivity data via the CompTox Chemicals Dashboard.
+  category: ProgrammingInterface
+  product_url: https://api-ccte.epa.gov/dashboard/
+- id: toxcast.downloads
+  name: ToxCast Bulk Data Downloads
+  description: Bulk release archives (assay annotations, hit-call data, summary tables) for ToxCast phases.
+  category: Product
+  product_url: https://www.epa.gov/chemical-research/toxicity-forecasting#data
 ---
-# Toxcast
-
-This is an automatically generated stub page for toxcast. Please update with proper information.
+# ToxCast

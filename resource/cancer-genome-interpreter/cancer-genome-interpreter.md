@@ -2,65 +2,78 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-08-12T00:00:00Z'
-description: Stub Resource page for cancer-genome-interpreter. This page was automatically
-  generated because it was referenced by other resources.
+description: Cancer Genome Interpreter (CGI) is a resource that annotates tumor genomic alterations to identify likely oncogenic events and interpret their potential therapeutic, prognostic, and diagnostic relevance using curated knowledge bases, machine learning (BoostDM, OncodriveMUT), and clinical evidence levels.
 domains:
-- stub
+  - biomedical
+  - clinical
+  - precision medicine
+  - drug discovery
 id: cancer-genome-interpreter
-last_modified_date: '2025-08-12T00:00:00Z'
+last_modified_date: '2025-09-16T00:00:00Z'
 layout: resource_detail
-name: Cancer-genome-interpreter
+name: Cancer Genome Interpreter
+license:
+  id: https://www.cancergenomeinterpreter.org/conditions#license
+  label: Cancer Genome Interpreter License and Terms
 products:
+- category: GraphicalInterface
+  description: Web portal for submitting variant lists, interpreting oncogenicity, and exploring biomarkers
+  format: http
+  id: cancer-genome-interpreter.portal
+  name: Cancer Genome Interpreter Portal
+  product_url: https://www.cancergenomeinterpreter.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to annotation and interpretation endpoints
+  format: http
+  id: cancer-genome-interpreter.api
+  name: Cancer Genome Interpreter REST API
+  product_url: https://www.cancergenomeinterpreter.org/rest_api
 - category: GraphProduct
-  description: Neo4j database dump of the Clinical Knowledge Graph and additional
-    relationships
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional relationships
   dump_format: neo4j
   edge_count: 220000000
   format: mixed
-  id: clinicalkg.graph
+  id: cancer-genome-interpreter.clinicalkg.graph
   name: CKG Graph Dump
   node_count: 16000000
   original_source:
-  - uniprot
-  - tissues
-  - string
-  - stitch
-  - smpdb
-  - signor
-  - sider
-  - refseq
-  - reactome
-  - phosphositeplus
-  - pfam
-  - oncokb
-  - mutationds
-  - intact
-  - hpa
-  - hmdb
-  - hgnc
-  - gwascatalog
-  - foodb
-  - drugbank
-  - disgenet
-  - diseases
-  - dgidb
-  - corum
-  - cancer-genome-interpreter
-  - do
-  - bto
-  - efo
-  - go
-  - hp
-  - snomedct
-  - mod
-  - mi
-  - ms
-  - uo
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
 ---
-# Cancer-genome-interpreter
+# Cancer Genome Interpreter
 
-This is an automatically generated stub page for cancer-genome-interpreter. Please update with proper information.
+Cancer Genome Interpreter provides annotation and interpretation of somatic tumor alterations, integrating oncogenicity prediction and clinical actionability evidence.

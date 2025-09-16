@@ -1,13 +1,17 @@
 ---
 activity_status: active
 category: DataSource
-description: Stub Resource page for compartments. This page was automatically generated
-  because it was referenced by other resources.
+description: COMPARTMENTS is an evidence-weighted subcellular localization knowledge resource that integrates experimental data, manual curation, high-throughput localization screens, automatic text mining, and sequence-based predictions to assign proteins to cellular compartments with confidence scores.
 domains:
-- stub
+  - proteomics
+  - systems biology
+  - biological systems
 id: compartments
 layout: resource_detail
-name: Compartments
+name: COMPARTMENTS
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 products:
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
@@ -55,10 +59,15 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   secondary_source:
   - bioteque
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+- id: compartments.portal
+  name: COMPARTMENTS Portal
+  description: Web interface for exploring protein subcellular localization evidence across integrated sources.
+  category: GraphicalInterface
+  product_url: https://compartments.jensenlab.org/
+- id: compartments.downloads
+  name: COMPARTMENTS Bulk Downloads
+  description: Bulk data downloads of localization scores and evidence files.
+  category: Product
+  product_url: https://compartments.jensenlab.org/Downloads
 ---
-# Compartments
-
-This is an automatically generated stub page for compartments. Please update with proper information.
+# COMPARTMENTS
