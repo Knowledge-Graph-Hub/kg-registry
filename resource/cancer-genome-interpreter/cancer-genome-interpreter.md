@@ -16,55 +16,64 @@ license:
   id: https://www.cancergenomeinterpreter.org/conditions#license
   label: Cancer Genome Interpreter License and Terms
 products:
+- category: GraphicalInterface
+  description: Web portal for submitting variant lists, interpreting oncogenicity, and exploring biomarkers
+  format: http
+  id: cancer-genome-interpreter.portal
+  name: Cancer Genome Interpreter Portal
+  product_url: https://www.cancergenomeinterpreter.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to annotation and interpretation endpoints
+  format: http
+  id: cancer-genome-interpreter.api
+  name: Cancer Genome Interpreter REST API
+  product_url: https://www.cancergenomeinterpreter.org/rest_api
 - category: GraphProduct
-  description: Neo4j database dump of the Clinical Knowledge Graph and additional
-    relationships
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional relationships
   dump_format: neo4j
   edge_count: 220000000
   format: mixed
-  id: clinicalkg.graph
+  id: cancer-genome-interpreter.clinicalkg.graph
   name: CKG Graph Dump
   node_count: 16000000
   original_source:
-  - uniprot
-  - tissues
-  - string
-  - stitch
-  - smpdb
-  - signor
-  - sider
-  - refseq
-  - reactome
-  - phosphositeplus
-  - pfam
-  - oncokb
-  - mutationds
-  - intact
-  - hpa
-  - hmdb
-  - hgnc
-  - gwascatalog
-  - foodb
-  - drugbank
-  - disgenet
-  - diseases
-  - dgidb
-  - corum
-  - cancer-genome-interpreter
-  - do
-  - bto
-  - efo
-  - go
-  - hp
-  - snomedct
-  - mod
-  - mi
-  - ms
-  - uo
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - do
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-warnings:
-  - Not for clinical decision making; research use only. Licensing terms limit use for diagnostic purposes.
 ---
 # Cancer Genome Interpreter
 
-This is an automatically generated stub page for cancer-genome-interpreter. Please update with proper information.
+Cancer Genome Interpreter provides annotation and interpretation of somatic tumor alterations, integrating oncogenicity prediction and clinical actionability evidence.
