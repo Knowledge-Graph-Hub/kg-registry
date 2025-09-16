@@ -1,15 +1,26 @@
 ---
 activity_status: active
-category: DataSource
+category: Aggregator
 creation_date: '2025-08-20T00:00:00Z'
-description: Stub Resource page for bioportal. This page was automatically generated
-  because it was referenced by other resources.
+description: BioPortal is a comprehensive open repository and portal for biomedical ontologies and terminologies, providing search, browsing, mappings, versioned downloads, REST APIs, widgets, and analytics to support data integration, annotation, and semantic interoperability in the life and health sciences.
 domains:
-- stub
+  - biomedical
+  - clinical
+  - information technology
+  - upper
 id: bioportal
-last_modified_date: '2025-08-20T00:00:00Z'
+last_modified_date: '2025-09-16T00:00:00Z'
 layout: resource_detail
-name: Bioportal
+name: BioPortal
+license:
+  id: https://www.bioontology.org/terms/
+  label: BioPortal Terms of Use (includes attribution & reuse conditions)
+publications:
+  - id: doi:10.1093/nar/gkaf402
+    title: "BioPortal: an open community resource for sharing, searching, and utilizing biomedical ontologies"
+    year: '2025'
+    journal: Nucleic Acids Research
+    doi: 10.1093/nar/gkaf402
 products:
 - category: GraphProduct
   description: PheKnowLator graph files, including subsets with and without inverse
@@ -55,9 +66,8 @@ products:
   - v4.0.0
   - current_build
 warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+  - Some ontologies have distinct licenses; review individual ontology license metadata before reuse.
 ---
-# Bioportal
+# BioPortal
 
 This is an automatically generated stub page for bioportal. Please update with proper information.
