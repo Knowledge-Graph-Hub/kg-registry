@@ -12,5 +12,10 @@ warnings:
   with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
   object at 0x7fcd1fc6dd30>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
   or service not known)"))
+- File was not able to be retrieved when checked on 2025-09-23_ Error connecting to
+  URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
+  with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
+  object at 0x7f852bc83ce0>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
+  or service not known)"))
 layout: product_detail
 ---

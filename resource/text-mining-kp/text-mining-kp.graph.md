@@ -8,7 +8,7 @@ product_url: https://storage.googleapis.com/translator-text-workflow-dev-public/
 warnings:
 - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-09-16_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---
