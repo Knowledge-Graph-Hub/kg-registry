@@ -54,9 +54,11 @@ products:
   secondary_source:
   - metanetx
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-16_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-23_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
     header found'
 - category: Product
   description: MNXref unified namespace for reactions across databases
@@ -69,10 +71,10 @@ products:
   secondary_source:
   - metanetx
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
-    header found
   - 'File was not able to be retrieved when checked on 2025-09-16: No Content-Length
     header found'
+  - File was not able to be retrieved when checked on 2025-09-14_ No Content-Length
+    header found
 - category: Product
   compression: gzip
   description: RDF version of the MetaNetX data for semantic web applications

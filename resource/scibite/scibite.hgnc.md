@@ -19,9 +19,9 @@ repository: https://github.com/elsevier-health/scibite-ontology
 secondary_source:
 - scibite
 warnings:
-- File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-09-14_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-09-16_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

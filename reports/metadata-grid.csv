@@ -28,7 +28,9 @@ ccle,active,PASS
 cellmarker,active,PASS
 cellosaurus,active,PASS
 cfde-ddkg,active,PASS
+cfde-gse,active,PASS
 cgnc,active,PASS
+chea-kg,active,PASS
 chebi,active,PASS
 chembl,active,PASS
 chemicalchecker,active,PASS
@@ -85,6 +87,7 @@ efo,active,PASS
 embiology,active,PASS
 emikg,active,PASS
 ena,active,PASS
+enrichr-kg,active,PASS
 ensembl,active,PASS
 envo,active,PASS
 epigraphdb,active,PASS
@@ -127,6 +130,7 @@ gtrnadb,active,PASS
 gutmgene,active,PASS
 gwascatalog,active,PASS
 hancestro,active,PASS
+harmonizome-kg,active,PASS
 hetionet,active,PASS
 hgnc,active,PASS
 hmdb,active,PASS
@@ -167,6 +171,7 @@ lncbase,active,PASS
 lncbook,active,PASS
 lncipedia,active,PASS
 lncrnadb,active,PASS
+lncrnalyzr,active,PASS
 loinc,active,PASS
 m-csa,active,PASS
 ma,active,PASS
@@ -274,6 +279,7 @@ rediportal,active,PASS
 refseq,active,PASS
 repodb,active,PASS
 repohub,active,PASS
+reprotox-kg,active,PASS
 rfam,active,PASS
 rgd,active,PASS
 rhea,active,PASS

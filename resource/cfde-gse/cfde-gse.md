@@ -1,23 +1,6 @@
 ---
 activity_status: active
 category: KnowledgeGraph
-creation_date: '2025-09-23T00:00:00Z'
-description: Common Fund Data Ecosystem Gene Set Enrichment (CFDE-GSE) is a knowledge graph that integrates gene set collections from multiple Common Fund programs to enable cross-program gene set enrichment analysis, functional annotation, and systems-level understanding of biological processes across diverse biomedical research domains.
-domains:
-- biomedical
-- genomics
-- systems biology
-- functional genomics
-- biological systems
-- data integration
-homepage_url: https://cfde.cloud/gse/
-id: cfde-gse
-last_modified_date: '2025-09-23T00:00:00Z'
-layout: resource_detail
-name: Common Fund Data Ecosystem Gene Set Enrichment (CFDE-GSE)
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
 contacts:
 - category: Organization
   contact_details:
@@ -33,36 +16,59 @@ contacts:
   - contact_type: url
     value: https://labs.icahn.mssm.edu/maayanlab/
   label: Ma'ayan Laboratory
+creation_date: '2025-09-23T00:00:00Z'
+description: Common Fund Data Ecosystem Gene Set Enrichment (CFDE-GSE) is a knowledge
+  graph that integrates gene set collections from multiple Common Fund programs to
+  enable cross-program gene set enrichment analysis, functional annotation, and systems-level
+  understanding of biological processes across diverse biomedical research domains.
+domains:
+- biomedical
+- genomics
+- systems biology
+- biological systems
+homepage_url: https://cfde.cloud/gse/
+id: cfde-gse
+last_modified_date: '2025-09-23T00:00:00Z'
+layout: resource_detail
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+name: Common Fund Data Ecosystem Gene Set Enrichment (CFDE-GSE)
 products:
 - category: GraphicalInterface
-  description: Interactive web interface for cross-program gene set enrichment analysis across Common Fund datasets
+  description: Interactive web interface for cross-program gene set enrichment analysis
+    across Common Fund datasets
   format: http
   id: cfde-gse.portal
   name: CFDE Gene Set Enrichment Portal
   product_url: https://cfde.cloud/gse/
 - category: ProgrammingInterface
-  description: RESTful API for programmatic access to Common Fund gene set collections and enrichment analysis
+  description: RESTful API for programmatic access to Common Fund gene set collections
+    and enrichment analysis
   format: http
   id: cfde-gse.api
   name: CFDE-GSE API
   product_url: https://cfde.cloud/gse/api/
 - category: GraphProduct
-  description: Neo4j knowledge graph containing integrated gene sets from multiple Common Fund programs with cross-references
+  description: Neo4j knowledge graph containing integrated gene sets from multiple
+    Common Fund programs with cross-references
+  dump_format: neo4j
   format: neo4j
   id: cfde-gse.graph
   name: CFDE-GSE Knowledge Graph
-  dump_format: neo4j
 - category: Product
-  description: Standardized gene set collections from Common Fund programs in GMT format
+  description: Standardized gene set collections from Common Fund programs in GMT
+    format
   id: cfde-gse.genesets
   name: CFDE Gene Set Collections
   product_url: https://cfde.cloud/gse/downloads/
+  warnings:
+  - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    when accessing file'
 publications:
-- id: doi:10.1038/s41467-2022-28631-3
-  title: "Cross-program analysis of the CFDE gene sets reveals common biological themes"
-  year: '2022'
-  journal: Nature Communications
-  authors:
+- authors:
   - Clarke DJB
   - Jeon M
   - Stein DJ
@@ -71,10 +77,13 @@ publications:
   - Ben-Moshe NB
   - Barupal DK
   - Ma'ayan A
+  id: doi:10.1038/s41467-2022-28631-3
+  journal: Nature Communications
   preferred: true
+  title: Cross-program analysis of the CFDE gene sets reveals common biological themes
+  year: '2022'
 repository: https://github.com/nih-cfde/cfde-gse
 ---
-
 # Common Fund Data Ecosystem Gene Set Enrichment (CFDE-GSE)
 
 CFDE-GSE is a comprehensive knowledge graph and analysis platform that integrates gene set collections from multiple NIH Common Fund programs, enabling researchers to perform cross-program enrichment analysis and discover biological connections across diverse research domains and datasets.

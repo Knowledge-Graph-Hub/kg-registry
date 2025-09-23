@@ -2,69 +2,83 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: "contact@reprotox-kg.net"
-      - contact_type: url
-        value: "https://reprotox-kg.net/about"
-    label: ReproTox-KG Consortium
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: contact@reprotox-kg.net
+  - contact_type: url
+    value: https://reprotox-kg.net/about
+  label: ReproTox-KG Consortium
 creation_date: '2025-09-23T00:00:00Z'
-description: ReproTox-KG is a specialized knowledge graph focused on reproductive toxicology, integrating chemical exposure data with reproductive health outcomes, developmental toxicity information, and mechanistic pathways to support risk assessment and regulatory decision-making for reproductive and developmental health.
+description: ReproTox-KG is a specialized knowledge graph focused on reproductive
+  toxicology, integrating chemical exposure data with reproductive health outcomes,
+  developmental toxicity information, and mechanistic pathways to support risk assessment
+  and regulatory decision-making for reproductive and developmental health.
 domains:
-  - biomedical
-  - toxicology
-  - drug discovery
+- biomedical
+- toxicology
+- drug discovery
 homepage_url: https://reprotox-kg.net/
-id: "reprotox-kg"
+id: reprotox-kg
 last_modified_date: '2025-09-23T00:00:00Z'
 layout: resource_detail
 license:
-  id: "https://creativecommons.org/licenses/by-nc/4.0/"
+  id: https://creativecommons.org/licenses/by-nc/4.0/
   label: CC BY-NC 4.0
 name: ReproTox-KG
 products:
-  - category: GraphicalInterface
-    description: Web portal for exploring reproductive toxicology knowledge with chemical-outcome relationship visualization
-    format: http
-    id: "reprotox-kg.portal"
-    name: ReproTox-KG Explorer
-    product_url: https://reprotox-kg.net/
-  - category: ProgrammingInterface
-    description: API for programmatic access to reproductive toxicology data and relationships
-    format: http
-    id: "reprotox-kg.api"
-    name: ReproTox-KG API
-    product_url: https://reprotox-kg.net/api/
-  - category: GraphProduct
-    description: Neo4j database containing integrated reproductive toxicology data with chemicals, endpoints, and mechanistic pathways
-    dump_format: neo4j
-    format: neo4j
-    id: "reprotox-kg.graph"
-    name: ReproTox-KG Database
-  - category: Product
-    description: Curated dataset of reproductive toxicity studies with standardized endpoints and exposure conditions
-    format: json
-    id: "reprotox-kg.dataset"
-    name: ReproTox Dataset
-    product_url: https://reprotox-kg.net/downloads/
-    warnings:
-      - 'File was not able to be retrieved when checked on 2025-09-23: Error connecting to URL: HTTPSConnectionPool(host=''reprotox-kg.net'', port=443): Max retries exceeded with url: /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fcd1fc6dd30>: Failed to resolve ''reprotox-kg.net'' ([Errno -2] Name or service not known)"))'
+- category: GraphicalInterface
+  description: Web portal for exploring reproductive toxicology knowledge with chemical-outcome
+    relationship visualization
+  format: http
+  id: reprotox-kg.portal
+  name: ReproTox-KG Explorer
+  product_url: https://reprotox-kg.net/
+- category: ProgrammingInterface
+  description: API for programmatic access to reproductive toxicology data and relationships
+  format: http
+  id: reprotox-kg.api
+  name: ReproTox-KG API
+  product_url: https://reprotox-kg.net/api/
+- category: GraphProduct
+  description: Neo4j database containing integrated reproductive toxicology data with
+    chemicals, endpoints, and mechanistic pathways
+  dump_format: neo4j
+  format: neo4j
+  id: reprotox-kg.graph
+  name: ReproTox-KG Database
+- category: Product
+  description: Curated dataset of reproductive toxicity studies with standardized
+    endpoints and exposure conditions
+  format: json
+  id: reprotox-kg.dataset
+  name: ReproTox Dataset
+  product_url: https://reprotox-kg.net/downloads/
+  warnings:
+  - File was not able to be retrieved when checked on 2025-09-23_ Error connecting
+    to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
+    with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
+    object at 0x7fcd1fc6dd30>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
+    or service not known)"))
+  - 'File was not able to be retrieved when checked on 2025-09-23: Error connecting
+    to URL: HTTPSConnectionPool(host=''reprotox-kg.net'', port=443): Max retries exceeded
+    with url: /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
+    object at 0x7f852bc83ce0>: Failed to resolve ''reprotox-kg.net'' ([Errno -2] Name
+    or service not known)"))'
 publications:
-  - authors:
-      - Smith AB
-      - Johnson CD
-      - Williams EF
-      - Brown GH
-      - Davis IJ
-    id: "doi:10.1016/j.reprotox.2023.108380"
-    journal: Reproductive Toxicology
-    preferred: true
-    title: 'ReproTox-KG: A knowledge graph for reproductive and developmental toxicology'
-    year: "2023"
+- authors:
+  - Smith AB
+  - Johnson CD
+  - Williams EF
+  - Brown GH
+  - Davis IJ
+  id: doi:10.1016/j.reprotox.2023.108380
+  journal: Reproductive Toxicology
+  preferred: true
+  title: 'ReproTox-KG: A knowledge graph for reproductive and developmental toxicology'
+  year: '2023'
 repository: https://github.com/reprotox-kg/reprotox-kg
 ---
-
 # ReproTox-KG
 
 ReproTox-KG is a comprehensive knowledge graph specifically designed for reproductive and developmental toxicology research and risk assessment. It integrates diverse data sources including chemical properties, toxicity studies, mechanistic information, and regulatory assessments to provide a unified resource for understanding reproductive health risks.
