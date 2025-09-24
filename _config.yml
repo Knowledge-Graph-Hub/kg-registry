@@ -81,17 +81,17 @@ resources:
       to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
       retries exceeded with url_ /faq/can-i-access-1000-genomes-data-globus-online
       (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-      certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+      certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-16_ Error connecting
       to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
       retries exceeded with url_ /faq/can-i-access-1000-genomes-data-globus-online
       (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
       certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-24: Error connecting
       to URL: HTTPSConnectionPool(host=''www.internationalgenome.org'', port=443):
       Max retries exceeded with url: /faq/can-i-access-1000-genomes-data-globus-online
       (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
-      certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
+      certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
   - category: DocumentationProduct
     description: Instructions for downloading files using Aspera
     format: http
@@ -108,17 +108,17 @@ resources:
       to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
       retries exceeded with url_ /faq/how-download-files-using-aspera (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-16_ Error connecting
       to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
       retries exceeded with url_ /faq/how-download-files-using-aspera (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-24: Error connecting
       to URL: HTTPSConnectionPool(host=''www.internationalgenome.org'', port=443):
       Max retries exceeded with url: /faq/how-download-files-using-aspera (Caused
       by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
-      verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
+      verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Mirror of original 1000 Genomes Project data at NCBI
     format: http
@@ -136,7 +136,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 403 error
       when accessing file'
   - category: Product
     description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)
@@ -892,7 +892,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: GraphProduct
     description: KGX Distribution of KG-Monarch
@@ -1832,7 +1832,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
@@ -1949,17 +1949,17 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
-      certificate (_ssl.c_1000)')))
+      certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-16_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
       certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-24: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads (Caused by SSLError(SSLCertVerificationError(1, ''[SSL:
       CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer
-      certificate (_ssl.c:1017)'')))'
+      certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Nightly XML export (rolling) containing latest AOP-Wiki content (overwritten
       daily)
@@ -1979,17 +1979,17 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-16_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-24: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Tab-delimited subset listing AOP to Key Event (including MIE, intermediate
       KE, and Adverse Outcome) associations
@@ -2009,17 +2009,17 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-16_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-24: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Tab-delimited subset listing Key Event Relationships (KERs) with
       evidence and quantitative understanding indicators
@@ -2039,17 +2039,17 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-16_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-24: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Tab-delimited subset of Key Event Components (actions, biological
       objects/processes with ontology references)
@@ -2069,17 +2069,17 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-16_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-24: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Per-AOP dynamic XML feed accessible via each AOP page (XML button)
       for up-to-minute content retrieval
@@ -2097,15 +2097,15 @@ resources:
     - File was not able to be retrieved when checked on 2025-09-23_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-      certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+      certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-16_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
       certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-24: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /aops (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
-      certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
+      certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
   - category: DocumentationProduct
     description: This document is the AOP Developers' Handbook supplement to the Guidance
       Document for developing and assessing Adverse Outcome Pathways (AOPs). The Guidance
@@ -2126,17 +2126,17 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
-      certificate (_ssl.c_1000)')))
+      certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-16_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
       certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-24: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, ''[SSL:
       CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer
-      certificate (_ssl.c:1017)'')))'
+      certificate (_ssl.c:1000)'')))'
   - category: Product
     description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)
       to better characterize adverse outcomes of toxicological interest that are relevant
@@ -2729,7 +2729,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -2749,7 +2749,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -2769,7 +2769,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -2789,7 +2789,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -2809,7 +2809,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -2829,7 +2829,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -2849,7 +2849,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -2869,7 +2869,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -7015,12 +7015,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-23_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-23_ Timeout connecting
-      to URL
+    - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
+      header found
     - File was not able to be retrieved when checked on 2025-09-16_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
-      header found'
+    - 'File was not able to be retrieved when checked on 2025-09-24: Timeout connecting
+      to URL'
   - category: Product
     description: Cell markers of different cell types from different tissues in mouse
     id: cellmarker.mouse
@@ -7029,12 +7029,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-23_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-23_ Timeout connecting
-      to URL
+    - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
+      header found
     - File was not able to be retrieved when checked on 2025-09-16_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
-      header found'
+    - 'File was not able to be retrieved when checked on 2025-09-24: Timeout connecting
+      to URL'
   - category: Product
     description: Cell markers derived from single-cell sequencing researches in human
       and mouse
@@ -7044,12 +7044,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-23_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-23_ Timeout connecting
-      to URL
+    - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
+      header found
     - File was not able to be retrieved when checked on 2025-09-16_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
-      header found'
+    - 'File was not able to be retrieved when checked on 2025-09-24: Timeout connecting
+      to URL'
   - category: Product
     description: All cell markers of different cell types from different tissues in
       human and mouse
@@ -7059,12 +7059,12 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-09-23_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-23_ Timeout connecting
-      to URL
+    - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
+      header found
     - File was not able to be retrieved when checked on 2025-09-16_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
-      header found'
+    - 'File was not able to be retrieved when checked on 2025-09-24: Timeout connecting
+      to URL'
   - category: GraphicalInterface
     description: ACT is a tool that makes cell type annotation easier by integrating
       the CellMarker resource.
@@ -7201,7 +7201,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: Complete Cellosaurus data in RDF format using the Turtle syntax
@@ -7218,7 +7218,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
     description: RESTful API for programmatic access to Cellosaurus data
@@ -7396,7 +7396,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -7450,7 +7450,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: cgnc OBO
@@ -11130,7 +11130,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -13031,17 +13031,17 @@ resources:
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-16_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-24: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Core dataset of manually curated, non-redundant protein complexes
       in CORUM in tab-delimited format
@@ -13062,17 +13062,17 @@ resources:
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-16_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-24: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Dataset of all CORUM protein complexes in PSI-MI XML format (Proteomics
       Standards Initiative)
@@ -13093,17 +13093,17 @@ resources:
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-16_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-24: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Dataset of all CORUM protein complexes in PSI-MI MITAB 2.5 format
     format: psi_mi_mitab
@@ -13123,17 +13123,17 @@ resources:
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-09-16_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - 'File was not able to be retrieved when checked on 2025-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-24: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get
-      local issuer certificate (_ssl.c:1017)'')))'
+      local issuer certificate (_ssl.c:1000)'')))'
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
       entities and their associations
@@ -19014,7 +19014,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -19035,7 +19035,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -19057,7 +19057,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -19108,7 +19108,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   publications:
   - authors:
@@ -19255,7 +19255,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
@@ -23520,7 +23520,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     compression: targz
@@ -23540,7 +23540,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -23560,7 +23560,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     compression: targz
@@ -23579,7 +23579,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -23598,7 +23598,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -23617,7 +23617,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -23636,7 +23636,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -23655,7 +23655,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -23674,7 +23674,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     compression: zip
@@ -23693,7 +23693,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     compression: zip
@@ -23712,7 +23712,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -24014,7 +24014,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -24940,7 +24940,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -24964,7 +24964,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -24986,7 +24986,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -25001,7 +25001,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -25039,7 +25039,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -25077,7 +25077,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     compression: gzip
@@ -25098,7 +25098,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     description: Field (column) definitions CSV endpoint
@@ -27558,7 +27558,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: ProgrammingInterface
     connection_url: http://api.geneontology.org/api/
@@ -27642,7 +27642,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     format: owl
@@ -27716,16 +27716,75 @@ resources:
   repository: http://nlp.case.edu/public/data/GPKG-Predict/
 - activity_status: active
   category: DataSource
+  contacts:
+  - category: Individual
+    contact_details:
+    - contact_type: email
+      value: damcdonald@ucsd.edu
+    label: Daniel McDonald
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://greengenes2.ucsd.edu/
+    label: University of California San Diego
   creation_date: '2025-09-09T00:00:00Z'
-  description: Stub Resource page for greengenes. This page was automatically generated
-    because it was referenced by other resources.
+  description: Greengenes2 is a comprehensive reference database and phylogenetic
+    tree for 16S rRNA gene sequences that unifies microbial data from multiple sources
+    into a single coherent framework. It provides standardized taxonomic assignments
+    and phylogenetic placement for microbiome research and enables consistent analysis
+    across different studies and sequencing platforms.
   domains:
-  - stub
+  - biomedical
+  - microbiome
+  - microbiology
+  - organisms
+  homepage_url: https://greengenes2.ucsd.edu/
   id: greengenes
-  last_modified_date: '2025-09-09T00:00:00Z'
+  last_modified_date: '2025-09-24T00:00:00Z'
   layout: resource_detail
-  name: Greengenes
+  name: Greengenes2
   products:
+  - category: GraphicalInterface
+    description: Web-based search interface for querying Greengenes2 database by species,
+      ASV sequences, or clade names
+    format: http
+    id: greengenes.portal
+    name: Greengenes2 Web Portal
+    product_url: https://greengenes2.ucsd.edu/
+  - category: Product
+    description: FTP archive containing Greengenes2 database files including phylogenetic
+      trees, taxonomy, and sequence data
+    format: http
+    id: greengenes.ftp
+    name: Greengenes2 FTP Archive
+    product_url: http://ftp.microbio.me/greengenes_release/current/
+  - category: Product
+    description: Reference phylogenetic tree in Newick format containing unified microbial
+      phylogeny
+    format: txt
+    id: greengenes.phylogeny
+    name: Greengenes2 Phylogenetic Tree
+    product_url: http://ftp.microbio.me/greengenes_release/current/
+  - category: Product
+    description: 16S rRNA gene sequences in FASTA format for all organisms in the
+      database
+    format: fasta
+    id: greengenes.sequences
+    name: Greengenes2 Sequences
+    product_url: http://ftp.microbio.me/greengenes_release/current/
+  - category: Product
+    description: Taxonomic assignments and metadata for all sequences in the database
+    format: tsv
+    id: greengenes.taxonomy
+    name: Greengenes2 Taxonomy
+    product_url: http://ftp.microbio.me/greengenes_release/current/
+  - category: ProcessProduct
+    description: QIIME 2 plugin for integrating Greengenes2 data into microbiome analysis
+      workflows
+    format: python
+    id: greengenes.qiime2-plugin
+    name: q2-greengenes2 Plugin
+    product_url: https://github.com/biocore/q2-greengenes2/
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures,
       and annotations
@@ -27936,19 +27995,152 @@ resources:
     - zwd
     - rnacentral
     product_url: https://rnacentral.org/help/public-database
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  publications:
+  - authors:
+    - McDonald D
+    - Jiang Y
+    - Balaban M
+    - Cantrell K
+    - Zhu Q
+    - Gonzalez A
+    - Morton JT
+    - Nicolaou G
+    - Parks DH
+    - Karst SM
+    - Albertsen M
+    - Hugenholtz P
+    - Keller A
+    - Knight R
+    id: doi:10.1038/s41587-023-01845-1
+    journal: Nature Biotechnology
+    preferred: true
+    title: Greengenes2 unifies microbial data in a single reference tree
+    year: '2024'
+  repository: https://github.com/biocore/greengenes2/
 - activity_status: active
   category: DataSource
-  description: Stub Resource page for gtex. This page was automatically generated
-    because it was referenced by other resources.
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: gtex-help@broadinstitute.org
+    - contact_type: url
+      value: https://www.gtexportal.org/home/contact
+    label: GTEx Consortium
+  description: The Genotype-Tissue Expression (GTEx) project provides a comprehensive
+    resource to study tissue-specific gene expression and regulation. Samples were
+    collected from 54 non-diseased tissue sites across nearly 1000 individuals, primarily
+    for molecular assays including WGS, WES, and RNA-Seq.
   domains:
-  - stub
+  - genomics
+  - biomedical
+  - anatomy and development
+  homepage_url: https://www.gtexportal.org/home/
   id: gtex
   layout: resource_detail
-  name: Gtex
+  name: GTEx
   products:
+  - category: GraphicalInterface
+    description: GTEx Portal web interface for exploring tissue-specific gene expression
+      data, eQTLs, and other genomic analyses
+    format: http
+    id: gtex.portal
+    name: GTEx Portal
+    original_source:
+    - gtex
+    product_url: https://www.gtexportal.org/home/
+  - category: Product
+    description: Complete GTEx v8 data including gene expression, transcript expression,
+      exon expression, and junction data across tissues
+    format: tsv
+    id: gtex.bulk-data
+    name: GTEx Bulk Data Downloads
+    original_source:
+    - gtex
+    product_url: https://www.gtexportal.org/home/downloads/adult-gtex
+  - category: Product
+    description: eQTL (expression quantitative trait loci) data linking genetic variants
+      to gene expression across tissues
+    format: tsv
+    id: gtex.eqtl-data
+    name: GTEx eQTL Data
+    original_source:
+    - gtex
+    product_url: https://www.gtexportal.org/home/downloads/adult-gtex/qtl
+  - category: ProgrammingInterface
+    description: GTEx REST API for programmatic access to gene expression and eQTL
+      data
+    format: json
+    id: gtex.api
+    name: GTEx REST API
+    original_source:
+    - gtex
+    product_url: https://gtexportal.org/rest/
+  - category: Product
+    description: Individual-level genotype and phenotype data available through dbGaP
+    format: vcf
+    id: gtex.dbgap-data
+    name: GTEx dbGaP Data
+    original_source:
+    - gtex
+    product_url: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000424
+  - category: GraphProduct
+    description: GTEx Automat
+    format: kgx-jsonl
+    id: automat.gtex
+    infores_id: automat-gtex
+    name: gtex_automat
+    original_source:
+    - gtex
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/GTEx_Automat/a6448b9092bb81a1/
+    secondary_source:
+    - automat
+  - category: Product
+    description: Network embeddings of the Bioteque graph that represent biological
+      entities and their associations
+    id: bioteque.embeddings
+    name: Bioteque Embeddings
+    original_source:
+    - chebi
+    - cosmic
+    - achilles
+    - depmap
+    - ccle
+    - gdsc
+    - cellosaurus
+    - clue
+    - ctd
+    - pharmacodb
+    - prism
+    - drugbank
+    - lincs
+    - compartments
+    - offsides
+    - sider
+    - drugcentral
+    - repohub
+    - chemicalchecker
+    - repodb
+    - disgenet
+    - opentargets
+    - creeds
+    - interpro
+    - reactome
+    - tissues
+    - dorothea
+    - progeny
+    - gtex
+    - hpa
+    - go
+    - corum
+    - huri
+    - intact
+    - omnipath
+    - string
+    - bto
+    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+    secondary_source:
+    - bioteque
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
       UBKG instances as neo4j graph databases, running in a Docker container. Requires
@@ -28076,63 +28268,6 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
-  - category: Product
-    description: Network embeddings of the Bioteque graph that represent biological
-      entities and their associations
-    id: bioteque.embeddings
-    name: Bioteque Embeddings
-    original_source:
-    - chebi
-    - cosmic
-    - achilles
-    - depmap
-    - ccle
-    - gdsc
-    - cellosaurus
-    - clue
-    - ctd
-    - pharmacodb
-    - prism
-    - drugbank
-    - lincs
-    - compartments
-    - offsides
-    - sider
-    - drugcentral
-    - repohub
-    - chemicalchecker
-    - repodb
-    - disgenet
-    - opentargets
-    - creeds
-    - interpro
-    - reactome
-    - tissues
-    - dorothea
-    - progeny
-    - gtex
-    - hpa
-    - go
-    - corum
-    - huri
-    - intact
-    - omnipath
-    - string
-    - bto
-    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
-    secondary_source:
-    - bioteque
-  - category: GraphProduct
-    description: GTEx Automat
-    format: kgx-jsonl
-    id: automat.gtex
-    infores_id: automat-gtex
-    name: gtex_automat
-    original_source:
-    - gtex
-    product_url: https://stars.renci.org/var/plater/bl-4.2.1/GTEx_Automat/a6448b9092bb81a1/
-    secondary_source:
-    - automat
   - category: GraphProduct
     description: Integrated graph knowledge base combining Mendelian randomization
       causal estimates, pathway, QTL, drug, literature-derived, and ontology-backed
@@ -28161,9 +28296,21 @@ resources:
     product_url: https://docs.epigraphdb.org/graph-database/
     secondary_source:
     - epigraphdb
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  publications:
+  - authors:
+    - GTEx Consortium
+    doi: 10.1126/science.aaz1776
+    id: doi:10.1126/science.aaz1776
+    title: The GTEx Consortium atlas of genetic regulatory effects across human tissues
+    year: '2020'
+  - authors:
+    - GTEx Consortium
+    doi: 10.1126/science.1262110
+    id: doi:10.1126/science.1262110
+    title: 'The Genotype-Tissue Expression (GTEx) pilot analysis: multitissue gene
+      regulation in humans'
+    year: '2015'
+  repository: https://github.com/broadinstitute/gtex-pipeline
 - activity_status: active
   category: DataSource
   contacts:
@@ -28221,7 +28368,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     description: Complete list of ligands including drugs, small molecules, and other
@@ -28237,7 +28384,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     description: Comprehensive dataset of all interactions between ligands and targets
@@ -28252,7 +28399,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     description: Detailed interactions list for approved drugs and their targets
@@ -28267,7 +28414,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     description: SDF file containing chemical structures with SMILES for all ligands
@@ -28283,7 +28430,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     description: RDF/linked data format of the GtoPdb data (target-ligand interactions
@@ -28299,7 +28446,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     description: Complete PostgreSQL database dump of the current Guide to Pharmacology
@@ -28314,7 +28461,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: GraphicalInterface
     description: An extension of the Guide to PHARMACOLOGY database providing immunological
@@ -28814,7 +28961,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: Study metadata file containing per-study information for GWAS Catalog
@@ -28840,7 +28987,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: EFO trait mapping file linking GWAS Catalog reported traits to Experimental
@@ -28856,7 +29003,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: RDF/OWL representation of GWAS Catalog associations enabling semantic
@@ -28872,7 +29019,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: DocumentationProduct
     description: Compressed GWAS Catalog diagram (karyotype visualization) in SVG
@@ -28888,7 +29035,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: DocumentationProduct
     description: Archive of previous GWAS Catalog diagram versions (SVG format)
@@ -28903,7 +29050,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: DocumentationProduct
     description: Harmonised summary statistics landing page (FTP directory containing
@@ -28918,7 +29065,7 @@ resources:
       to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
     - File was not able to be retrieved when checked on 2025-09-23_ Error connecting
       to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
-    - 'File was not able to be retrieved when checked on 2025-09-23: Error connecting
+    - 'File was not able to be retrieved when checked on 2025-09-24: Error connecting
       to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'''
   - category: GraphProduct
     description: GWASCatalog Automat
@@ -29720,7 +29867,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -32845,7 +32992,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 401 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 401 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 401 error
       when accessing file'
   - category: Product
     description: Data submission portal for registering and ingesting consortium data
@@ -35534,7 +35681,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 403 error
       when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-covid-19
 - activity_status: active
@@ -35632,7 +35779,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   repository: https://github.com/Knowledge-Graph-Hub/kg-idg
 - activity_status: active
@@ -35722,7 +35869,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 403 error
       when accessing file'
   - category: GraphProduct
     compression: targz
@@ -38412,7 +38559,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 503 error
       when accessing file'
   - category: DataModelProduct
     description: Archive of past LOINC releases for version-specific implementations
@@ -38427,7 +38574,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 503 error
       when accessing file'
   - category: DocumentationProduct
     description: LOINC Mission, Vision, and Guiding Principles for open terminology
@@ -38442,7 +38589,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 503 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 503 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 503 error
       when accessing file'
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
@@ -39810,7 +39957,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -39831,7 +39978,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -39853,7 +40000,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -40401,9 +40548,9 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-09-16_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     description: MNXref unified namespace for reactions across databases
@@ -41119,7 +41266,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: GraphProduct
     description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -41140,7 +41287,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: GraphProduct
     description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -41162,7 +41309,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     description: Dictionary of entities in the MIND knowledge graph
@@ -45195,16 +45342,77 @@ resources:
   repository: https://github.com/geneontology/neo/
 - activity_status: active
   category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://report.nih.gov/contactus
+    - contact_type: email
+      value: reporter@od.nih.gov
+    label: NIH Office of Extramural Research
   creation_date: '2025-07-20T00:00:00Z'
-  description: Stub Resource page for nihreporter. This page was automatically generated
-    because it was referenced by other resources.
+  description: NIH Reporter (RePORTER) is a comprehensive data source providing access
+    to information about NIH-funded research projects, including both intramural and
+    extramural research activities. It serves as an electronic repository for NIH
+    research project data, publications, and patents resulting from NIH funding since
+    fiscal year 1985.
   domains:
-  - stub
+  - biomedical
+  - health
+  - clinical
+  - translational
+  homepage_url: https://reporter.nih.gov/
   id: nihreporter
-  last_modified_date: '2025-07-20T00:00:00Z'
+  last_modified_date: '2025-09-24T00:00:00Z'
   layout: resource_detail
-  name: Nihreporter
+  name: NIH Reporter
   products:
+  - category: GraphicalInterface
+    description: Web-based search interface for exploring NIH-funded research projects
+      with advanced search capabilities
+    format: http
+    id: nihreporter.portal
+    name: NIH Reporter Web Portal
+    product_url: https://reporter.nih.gov/
+  - category: Product
+    description: Bulk download of NIH research project data in structured format
+    format: csv
+    id: nihreporter.projects
+    name: NIH Reporter Exporter Projects
+    product_url: https://reporter.nih.gov/exporter/projects
+  - category: ProgrammingInterface
+    description: API access to NIH research project data and search functionality
+    format: http
+    id: nihreporter.api
+    name: NIH Reporter API
+    product_url: https://reporter.nih.gov/
+  - category: Product
+    description: Database of abstracts linked to NIH-funded research projects
+    format: json
+    id: nihreporter.abstracts
+    name: NIH-Funded Project Abstracts
+    product_url: https://reporter.nih.gov/exporter/abstracts
+  - category: Product
+    description: Database of patents linked to NIH-funded research projects
+    id: nihreporter.patents
+    name: NIH-Funded Project Patents
+    product_url: https://reporter.nih.gov/exporter/patents
+  - category: Product
+    description: Database of clinical studies linked to NIH-funded research projects
+    id: nihreporter.clinicalstudies
+    name: NIH-Funded Project Clinical Studies
+    product_url: https://reporter.nih.gov/exporter/clinicalstudies
+  - category: Product
+    description: Database of publications linked to NIH-funded research projects
+    format: json
+    id: nihreporter.publications
+    name: NIH-Funded Publications Database
+    product_url: https://reporter.nih.gov/exporter/publications
+  - category: Product
+    description: Database of publication link tables for NIH-funded research projects
+    id: nihreporter.linktables
+    name: NIH-Funded Publications Link Tables
+    product_url: https://reporter.nih.gov/exporter/linktables
   - category: ProcessProduct
     description: INDRA CoGEx is a graph database integrating causal relations, ontological
       relations, properties, and data, assembled at scale automatically from the scientific
@@ -45230,9 +45438,6 @@ resources:
     product_url: https://github.com/gyorilab/indra_cogex
     secondary_source:
     - indra
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -46981,7 +47186,7 @@ resources:
       with url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.obo (Caused
       by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4fb79b61b0>_
       Failed to establish a new connection_ [Errno 101] Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: clinicaltrials OWL
@@ -47004,7 +47209,7 @@ resources:
       with url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.owl (Caused
       by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4fb79b6ba0>_
       Failed to establish a new connection_ [Errno 101] Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: clinicaltrials OBO Graph JSON
@@ -47027,7 +47232,7 @@ resources:
       with url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.json (Caused
       by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4fb79b72f0>_
       Failed to establish a new connection_ [Errno 101] Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: clinicaltrials SSSOM
@@ -47447,7 +47652,7 @@ resources:
       with url_ /biopragmatics/resources/gtdb/gtdb.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7f4fb79b7a40>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: gtdb OWL
@@ -47790,7 +47995,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: mesh OBO Graph JSON
@@ -47818,7 +48023,7 @@ resources:
       with url_ /biopragmatics/resources/mesh/mesh.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7f4fb79e8fb0>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: mgi OBO
@@ -47841,7 +48046,7 @@ resources:
       with url_ /biopragmatics/resources/mgi/mgi.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7f28e3289a20>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: mgi OWL
@@ -47859,7 +48064,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: mgi OBO Graph JSON
@@ -47887,7 +48092,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: mgi SSSOM
@@ -48030,7 +48235,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: msigdb OWL
@@ -48048,7 +48253,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: msigdb OBO Graph JSON
@@ -48071,7 +48276,7 @@ resources:
       with url_ /biopragmatics/resources/msigdb/msigdb.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7ff2449ab670>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: msigdb SSSOM
@@ -48142,7 +48347,7 @@ resources:
       (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at
       0x7f28e32a9990>_ Failed to establish a new connection_ [Errno 101] Network is
       unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: nihreporter.project OWL
@@ -48157,7 +48362,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: nihreporter.project OBO Graph JSON
@@ -48178,7 +48383,7 @@ resources:
       unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: nlm OBO
@@ -48346,7 +48551,7 @@ resources:
       with url_ /biopragmatics/resources/pathbank/pathbank.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7f4fb79e8440>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: pathbank OWL
@@ -48364,7 +48569,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: pathbank OBO Graph JSON
@@ -48382,7 +48587,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: pathbank SSSOM
@@ -48807,7 +49012,7 @@ resources:
       with url_ /biopragmatics/resources/reactome/reactome.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7ff2449aaf50>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: reactome OBO Graph JSON
@@ -48835,7 +49040,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: rgd OBO
@@ -48916,7 +49121,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: rhea OBO Graph JSON
@@ -48943,7 +49148,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: Rhea SSSOM
@@ -48990,7 +49195,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: ror OBO Graph JSON
@@ -49013,7 +49218,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: ror SSSOM
@@ -49106,7 +49311,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: slm OWL
@@ -49129,7 +49334,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: slm OBO Graph JSON
@@ -49157,7 +49362,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: slm SSSOM
@@ -49211,7 +49416,7 @@ resources:
       with url_ /biopragmatics/resources/uniprot/uniprot.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7f28e328a800>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: uniprot OWL
@@ -49234,7 +49439,7 @@ resources:
       with url_ /biopragmatics/resources/uniprot/uniprot.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7f4fb79b59a0>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: uniprot OBO Graph JSON
@@ -49262,7 +49467,7 @@ resources:
       with url_ /biopragmatics/resources/uniprot/uniprot.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7ff2449aa560>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: uniprot SSSOM
@@ -49388,7 +49593,7 @@ resources:
       with url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7ff244989120>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: zfin OBO Graph JSON
@@ -49415,7 +49620,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: zfin SSSOM
@@ -50181,7 +50386,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: OMA orthology groups in OrthoXML format
@@ -50202,7 +50407,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: Hierarchical Orthologous Groups (HOGs) in OrthoXML format
@@ -50223,7 +50428,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -50245,7 +50450,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -50267,7 +50472,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -50289,7 +50494,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -50311,7 +50516,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: OMA Browser database in HDF5 format
@@ -50329,7 +50534,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-09_ HTTP 502 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     compression: gzip
@@ -50351,7 +50556,7 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-12_ HTTP 502 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     compression: gzip
@@ -50374,7 +50579,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
 - activity_status: active
   category: DataSource
@@ -50642,15 +50847,86 @@ resources:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
 - activity_status: active
-  category: DataSource
-  description: Stub Resource page for omnipath. This page was automatically generated
-    because it was referenced by other resources.
+  category: Aggregator
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: omnipathdb@gmail.com
+    - contact_type: url
+      value: https://omnipathdb.org/
+    label: OmniPath Development Team
+  description: OmniPath is a comprehensive prior knowledge resource that integrates
+    molecular interactions and biological pathway information from over 100 original
+    databases and resources. It provides unified access to protein-protein interactions,
+    gene regulatory interactions, enzyme-PTM relationships, protein complexes, protein
+    annotations, and intercellular communication data through multiple interfaces
+    including web services, R/Bioconductor packages, Python clients, and Cytoscape
+    plugins.
   domains:
-  - stub
+  - systems biology
+  - biological systems
+  - proteomics
+  - pathways
+  homepage_url: https://omnipathdb.org/
   id: omnipath
   layout: resource_detail
-  name: Omnipath
+  name: OmniPath
   products:
+  - category: ProgrammingInterface
+    description: Web service API providing programmatic access to OmniPath molecular
+      interaction networks, annotations, and intercellular communication data
+    format: json
+    id: omnipath.webservice
+    name: OmniPath Web Service
+    original_source:
+    - omnipath
+    product_url: https://omnipathdb.org/queries
+  - category: ProgrammingInterface
+    description: R/Bioconductor package (OmnipathR) for accessing and analyzing OmniPath
+      data within the R statistical computing environment
+    format: mixed
+    id: omnipath.r_package
+    name: OmnipathR Package
+    original_source:
+    - omnipath
+    product_url: https://bioconductor.org/packages/release/bioc/html/OmnipathR.html
+  - category: ProgrammingInterface
+    description: Python client library providing programmatic access to OmniPath databases
+      for Python-based analysis workflows
+    format: python
+    id: omnipath.python_client
+    name: OmniPath Python Client
+    original_source:
+    - omnipath
+    product_url: https://pypi.org/project/omnipath/
+  - category: ProcessProduct
+    description: Cytoscape plugin for importing and visualizing OmniPath network data
+      within the Cytoscape network analysis platform
+    format: java
+    id: omnipath.cytoscape_plugin
+    name: OmniPath Cytoscape Plugin
+    original_source:
+    - omnipath
+    product_url: https://apps.cytoscape.org/apps/omnipath
+  - category: GraphicalInterface
+    description: Interactive database explorer for browsing OmniPath data integrated
+      from 160+ resources
+    format: http
+    id: omnipath.explorer
+    name: OmniPath Explorer
+    original_source:
+    - omnipath
+    product_url: https://explore.omnipathdb.org/
+  - category: ProcessProduct
+    description: Python package (pypath) for building custom OmniPath databases and
+      accessing the OmniPath infrastructure
+    format: python
+    id: omnipath.pypath
+    name: PyPath Database Builder
+    original_source:
+    - omnipath
+    product_url: https://pypi.org/project/pypath-omnipath/
   - category: Product
     description: Network embeddings of the Bioteque graph that represent biological
       entities and their associations
@@ -50697,9 +50973,35 @@ resources:
     product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
     secondary_source:
     - bioteque
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  publications:
+  - authors:
+    - Dénes Türei
+    - Tamás Korcsmáros
+    - Julio Saez-Rodriguez
+    doi: 10.1038/nmeth.4077
+    id: doi:10.1038/nmeth.4077
+    title: 'OmniPath: guidelines and gateway for literature-curated signaling pathway
+      resources'
+    year: '2016'
+  - authors:
+    - Dénes Türei
+    - Alberto Valdeolivas
+    - Lejla Gul
+    - Nicolàs Palacio-Escat
+    - Michal Klein
+    - Olga Ivanova
+    - Márton Ölbei
+    - Attila Gábor
+    - Fabian Theis
+    - Dezső Módos
+    - Tamás Korcsmáros
+    - Julio Saez-Rodriguez
+    doi: 10.15252/msb.20209923
+    id: doi:10.15252/msb.20209923
+    title: Integrated intra- and intercellular signaling knowledge for multicellular
+      omics analysis
+    year: '2021'
+  repository: https://github.com/saezlab/pypath
 - activity_status: active
   category: DataSource
   description: Stub Resource page for omo. This page was automatically generated because
@@ -51074,16 +51376,73 @@ resources:
     about this resource.
 - activity_status: active
   category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: contact@oncokb.org
+    - contact_type: url
+      value: https://www.oncokb.org/
+    label: OncoKB Team
   creation_date: '2025-08-12T00:00:00Z'
-  description: Stub Resource page for oncokb. This page was automatically generated
-    because it was referenced by other resources.
+  description: OncoKB is a precision oncology knowledge base developed at Memorial
+    Sloan Kettering Cancer Center that contains biological and clinical information
+    about genomic alterations in cancer. It provides alteration- and tumor type-specific
+    therapeutic implications classified using the OncoKB Levels of Evidence system,
+    which assigns clinical actionability to individual mutational events. The platform
+    integrates data from 945 genes, 7967 alterations, 143 cancer types, and 156 drugs
+    with FDA-recognized human genetic variant database status.
   domains:
-  - stub
+  - precision medicine
+  - clinical
+  - genomics
+  - biomedical
+  - health
+  homepage_url: https://www.oncokb.org/
   id: oncokb
-  last_modified_date: '2025-08-12T00:00:00Z'
+  last_modified_date: '2025-09-24T00:00:00Z'
   layout: resource_detail
-  name: Oncokb
+  name: OncoKB
   products:
+  - category: GraphicalInterface
+    description: Interactive web interface for exploring OncoKB precision oncology
+      knowledge base, including gene and variant information, therapeutic implications,
+      and evidence levels
+    format: http
+    id: oncokb.web_interface
+    name: OncoKB Web Interface
+    original_source:
+    - oncokb
+    product_url: https://www.oncokb.org/
+  - category: ProgrammingInterface
+    description: RESTful web API providing programmatic access to OncoKB data including
+      gene annotations, variant classifications, therapeutic implications, and evidence
+      levels
+    format: json
+    id: oncokb.api
+    name: OncoKB Web API
+    original_source:
+    - oncokb
+    product_url: https://www.oncokb.org/swagger-ui/index.html
+  - category: ProcessProduct
+    description: Python-based annotation tool for annotating MAF files, copy number
+      alterations, fusions, and structural variants with OncoKB therapeutic and biological
+      annotations
+    format: python
+    id: oncokb.annotator
+    name: OncoKB Annotator
+    original_source:
+    - oncokb
+    product_url: https://github.com/oncokb/oncokb-annotator
+  - category: GraphicalInterface
+    description: Demo version of OncoKB containing full data for BRAF, TP53, and ROS1
+      genes for evaluation purposes before licensing
+    format: http
+    id: oncokb.demo
+    name: OncoKB Demo
+    original_source:
+    - oncokb
+    product_url: https://demo.oncokb.org/
   - category: GraphProduct
     description: Neo4j database dump of the Clinical Knowledge Graph and additional
       relationships
@@ -51176,9 +51535,53 @@ resources:
     - ms
     - uo
     product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  publications:
+  - authors:
+    - Debyani Chakravarty
+    - Jianjiong Gao
+    - Sarah M. Phillips
+    - Ritika Kundra
+    - Hongxin Zhang
+    - Jiaojiao Wang
+    - Julia E. Rudolph
+    - Ramdan Yaeger
+    - Tara Soumerai
+    - Ahmet H. Nissan
+    - Matthew T. Chang
+    - Sarah Adalsteinsson
+    - Barry S. Taylor
+    - Gregory J. Riely
+    - Marc Ladanyi
+    - David B. Solit
+    - Nikolaus Schultz
+    doi: 10.1200/PO.17.00011
+    id: doi:10.1200/PO.17.00011
+    title: 'OncoKB: A Precision Oncology Knowledge Base'
+    year: '2017'
+  - authors:
+    - Samuel P. Suehnholz
+    - Ritika Kundra
+    - Hongxin Zhang
+    - Jianjiong Gao
+    - Angelica M. Camargo
+    - Isabell Schulze
+    - Matthew T. Chang
+    - Sarah Adalsteinsson
+    - Brie Kezlarian
+    - Kendra A. Famiglietti
+    - Tara Soumerai
+    - Barry S. Taylor
+    - Gregory J. Riely
+    - Marc Ladanyi
+    - David B. Solit
+    - Nikolaus Schultz
+    - Debyani Chakravarty
+    doi: 10.1158/2159-8290.CD-23-0467
+    id: doi:10.1158/2159-8290.CD-23-0467
+    title: Quantifying the Expanding Landscape of Clinical Actionability for Patients
+      with Cancer
+    year: '2023'
+  repository: https://github.com/oncokb
 - activity_status: active
   category: KnowledgeGraph
   collection:
@@ -55295,7 +55698,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     compatibility:
@@ -56093,15 +56496,60 @@ resources:
         value: https://monarchinitiative.org/
       label: The Monarch Initiative
 - activity_status: active
-  category: DataSource
-  description: Stub Resource page for phewascat. This page was automatically generated
-    because it was referenced by other resources.
+  category: Aggregator
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: url
+      value: https://phewascatalog.org/phewas/#home
+    - contact_type: email
+      value: joshua.c.denny@vumc.org
+    label: Vanderbilt University Medical Center
+  creation_date: '2025-09-24T00:00:00Z'
+  description: The PheWAS Catalog is an aggregator of phenome-wide association studies
+    that systematically analyzes many phenotypes compared to single genetic variants.
+    It aggregates results from electronic medical record (EMR) data analysis, combining
+    genetic association data from multiple biobanks and clinical databases to enable
+    comprehensive phenotype-genotype association discovery.
   domains:
-  - stub
+  - biomedical
+  - genomics
+  - clinical
+  - precision medicine
+  homepage_url: https://phewascatalog.org/phewas/#home
   id: phewascat
+  last_modified_date: '2025-09-24T00:00:00Z'
   layout: resource_detail
-  name: Phewascat
+  name: PheWAS Catalog
   products:
+  - category: GraphicalInterface
+    description: Web portal for browsing and accessing PheWAS association results
+      and analysis tools
+    format: http
+    id: phewascat.portal
+    name: PheWAS Catalog Portal
+    product_url: https://phewascatalog.org/phewas/#home
+  - category: Product
+    description: PheWAS association results for SNPs from GWAS Catalog analyzed against
+      EMR-derived phenotypes
+    format: csv
+    id: phewascat.associations
+    name: PheWAS Association Data
+    product_url: https://phewascatalog.org/phewas/#home
+  - category: Product
+    description: Phecode mapping files for translating ICD codes to phenotypes used
+      in PheWAS analysis
+    format: csv
+    id: phewascat.phecodes
+    name: Phecode Maps
+    product_url: https://phewascatalog.org/phewas/#home
+  - category: ProgrammingInterface
+    description: R package for performing PheWAS analysis using the catalog data and
+      methods
+    format: http
+    id: phewascat.rpackage
+    name: PheWAS R Package
+    product_url: https://www.vumc.org/cpm/center-precision-medicine-blog/phewas-r-package
   - category: GraphProduct
     description: DisGeNET data, including gene to disease associations and variant
       to disease associations (requires registration and subscription).
@@ -56125,9 +56573,20 @@ resources:
     product_url: https://www.disgenet.com/
     secondary_source:
     - disgenet
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  publications:
+  - authors:
+    - Denny JC
+    - Bastarache L
+    - Ritchie MD
+    id: doi:10.1038/nbt.2749
+    journal: Nature Biotechnology
+    preferred: true
+    title: Systematic comparison of phenome-wide association study of electronic medical
+      record data and genome-wide association study data
+    year: '2013'
+  repository: https://github.com/nhgritctran/PheTK
+  tags:
+  - translator
 - activity_status: active
   category: Aggregator
   creation_date: '2025-08-12T00:00:00Z'
@@ -57112,7 +57571,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: Product
     description: Tab-delimited file of systematic ID, primary gene name (where assigned),
@@ -57135,7 +57594,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
@@ -58487,7 +58946,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 403 error
       when accessing file'
   repository: https://github.com/mims-harvard/PrimeKG
 - activity_status: active
@@ -61532,7 +61991,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: Interactive web interface for exploring RepoDB data with drug-centric  and
@@ -61718,10 +62177,15 @@ resources:
       with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
       object at 0x7f852bc83ce0>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
       or service not known)"))
-    - 'File was not able to be retrieved when checked on 2025-09-23: Error connecting
+    - File was not able to be retrieved when checked on 2025-09-23_ Error connecting
+      to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
+      with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
+      object at 0x7f01f5009cc0>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
+      or service not known)"))
+    - 'File was not able to be retrieved when checked on 2025-09-24: Error connecting
       to URL: HTTPSConnectionPool(host=''reprotox-kg.net'', port=443): Max retries
       exceeded with url: /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
-      object at 0x7f01f5009cc0>: Failed to resolve ''reprotox-kg.net'' ([Errno -2]
+      object at 0x7f3cc32ff7d0>: Failed to resolve ''reprotox-kg.net'' ([Errno -2]
       Name or service not known)"))'
   publications:
   - authors:
@@ -62264,7 +62728,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: rhea OBO Graph JSON
@@ -62291,7 +62755,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: Rhea SSSOM
@@ -63966,7 +64430,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
 - activity_status: active
   category: DataSource
@@ -64740,16 +65204,105 @@ resources:
     year: '2022'
 - activity_status: active
   category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: silva@dsmz.de
+    - contact_type: url
+      value: https://www.arb-silva.de/contact
+    label: SILVA Team
   creation_date: '2025-09-09T00:00:00Z'
-  description: Stub Resource page for silva. This page was automatically generated
-    because it was referenced by other resources.
+  description: SILVA is a comprehensive online resource for quality checked and aligned
+    ribosomal RNA sequence data. It provides regularly updated datasets of aligned
+    small (16S/18S, SSU) and large subunit (23S/28S, LSU) ribosomal RNA sequences
+    for all three domains of life (Bacteria, Archaea and Eukarya). SILVA is a Global
+    Core Biodata Resource and ELIXIR Core Data Resource, currently maintaining over
+    9.4 million SSU sequences in release 138.2.
   domains:
-  - stub
+  - microbiology
+  - genomics
+  - biological systems
+  - organisms
+  - biomedical
+  homepage_url: https://www.arb-silva.de/
   id: silva
-  last_modified_date: '2025-09-09T00:00:00Z'
+  last_modified_date: '2025-09-24T00:00:00Z'
   layout: resource_detail
-  name: Silva
+  name: SILVA
   products:
+  - category: GraphicalInterface
+    description: Web-based search interface for SILVA ribosomal RNA sequences with
+      advanced filtering and taxonomic browsing capabilities
+    format: http
+    id: silva.search
+    name: SILVA Search
+    original_source:
+    - silva
+    product_url: https://www.arb-silva.de/search
+  - category: GraphicalInterface
+    description: Interactive browser for exploring SILVA taxonomic hierarchy and sequence
+      data with phylogenetic context
+    format: http
+    id: silva.browser
+    name: SILVA Browser
+    original_source:
+    - silva
+    product_url: https://www.arb-silva.de/browser
+  - category: ProcessProduct
+    description: SILVA Incremental Aligner (SINA) for accurate alignment of ribosomal
+      RNA sequences against curated reference alignments
+    format: http
+    id: silva.aligner
+    name: SILVA Alignment, Classification and Tree Service (ACT)
+    original_source:
+    - silva
+    product_url: https://www.arb-silva.de/aligner
+  - category: Product
+    description: Comprehensive release files including FASTA sequences, alignments,
+      taxonomies, and ARB database files for SSU and LSU rRNA
+    format: mixed
+    id: silva.release_files
+    name: SILVA Release Files
+    original_source:
+    - silva
+    product_url: https://www.arb-silva.de/current-release
+  - category: ProcessProduct
+    description: TestPrime tool for in silico evaluation of PCR primer coverage and
+      specificity against SILVA sequences
+    format: http
+    id: silva.testprime
+    name: SILVA TestPrime
+    original_source:
+    - silva
+    product_url: https://www.arb-silva.de/testprime
+  - category: ProcessProduct
+    description: TestProbe tool for in silico evaluation of hybridization probe coverage
+      and specificity against SILVA sequences
+    format: http
+    id: silva.testprobe
+    name: SILVA TestProbe
+    original_source:
+    - silva
+    product_url: https://www.arb-silva.de/testprobe
+  - category: Product
+    description: ARB-formatted database files for phylogenetic analysis and sequence
+      management in the ARB software environment
+    format: mixed
+    id: silva.arb_files
+    name: SILVA ARB Files
+    original_source:
+    - silva
+    product_url: https://www.arb-silva.de/arb-files
+  - category: ProcessProduct
+    description: SILVAngs pipeline for high-throughput analysis of ribosomal RNA gene
+      amplicons from next-generation sequencing data
+    format: http
+    id: silva.ngs_pipeline
+    name: SILVAngs
+    original_source:
+    - silva
+    product_url: https://ngs.arb-silva.de/
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures,
       and annotations
@@ -64960,9 +65513,37 @@ resources:
     - zwd
     - rnacentral
     product_url: https://rnacentral.org/help/public-database
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  publications:
+  - authors:
+    - Christian Quast
+    - Elmar Pruesse
+    - Pelin Yilmaz
+    - Jan Gerken
+    - Timmy Schweer
+    - Pablo Yarza
+    - Jörg Peplies
+    - Frank Oliver Glöckner
+    doi: 10.1093/nar/gks1219
+    id: doi:10.1093/nar/gks1219
+    title: 'The SILVA ribosomal RNA gene database project: improved data processing
+      and web-based tools'
+    year: '2013'
+  - authors:
+    - Pelin Yilmaz
+    - Linda Wegener Parfrey
+    - Pablo Yarza
+    - Jan Gerken
+    - Elmar Pruesse
+    - Christian Quast
+    - Timmy Schweer
+    - Jörg Peplies
+    - Wolfgang Ludwig
+    - Frank Oliver Glöckner
+    doi: 10.1093/nar/gkt1209
+    id: doi:10.1093/nar/gkt1209
+    title: The SILVA and 'All-species Living Tree Project (LTP)' taxonomic frameworks
+    year: '2014'
+  repository: https://github.com/epruesse/SINA
 - activity_status: active
   category: KnowledgeGraph
   contacts:
@@ -69177,7 +69758,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   repository: ''
 - activity_status: active
@@ -71297,16 +71878,65 @@ resources:
     year: '2015'
 - activity_status: active
   category: DataSource
+  contacts:
+  - category: Organization
+    contact_details:
+    - contact_type: email
+      value: FDA-SRS@fda.hhs.gov
+    label: FDA Substance Registration System Team
   creation_date: '2025-07-17T00:00:00Z'
-  description: Stub Resource page for unii. This page was automatically generated
-    because it was referenced by other resources.
+  description: FDA's Global Substance Registration System (GSRS) is a comprehensive
+    database that provides Unique Ingredient Identifiers (UNIIs) for substances in
+    FDA-regulated products. UNIIs uniquely define substances based on scientific identity
+    characteristics using ISO 11238 data elements, enabling efficient and accurate
+    exchange of substance information across regulatory domains.
   domains:
-  - stub
+  - clinical
+  - drug discovery
+  - pharmacology
+  - public health
+  homepage_url: https://precision.fda.gov/uniisearch
   id: unii
-  last_modified_date: '2025-07-17T00:00:00Z'
+  last_modified_date: '2025-09-24T00:00:00Z'
   layout: resource_detail
-  name: Unii
+  name: FDA Global Substance Registration System (UNII)
   products:
+  - category: GraphicalInterface
+    description: Web-based search interface for finding substances by UNII, name,
+      or other identifiers
+    format: http
+    id: unii.search
+    name: UNII Search Service
+    product_url: https://precision.fda.gov/uniisearch
+  - category: Product
+    compression: zip
+    description: Downloadable list of all UNIIs with basic substance information
+    format: csv
+    id: unii.list
+    name: UNII List Download
+    product_url: https://precision.fda.gov/uniisearch/archive/latest/UNIIs.zip
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 403 error
+      when accessing file'
+  - category: Product
+    compression: zip
+    description: Comprehensive UNII data with detailed substance attributes and mappings
+    format: mixed
+    id: unii.data
+    name: UNII Data Download
+    product_url: https://precision.fda.gov/uniisearch/archive/latest/UNII_Data.zip
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 403 error
+      when accessing file'
+  - category: Product
+    description: Legacy UNII identifiers for historical substances
+    format: txt
+    id: unii.legacy
+    name: Legacy UNIIs
+    product_url: https://precision.fda.gov/uniisearch/archive/latest/Legacy_UNIIs.txt
+    warnings:
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 403 error
+      when accessing file'
   - description: The MechRepoNet knowledge graph in its original format
     id: mechreponet.kg
     name: MechRepoNet Knowledge Graph
@@ -71331,9 +71961,11 @@ resources:
     product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
     secondary_source:
     - mechreponet
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  publications:
+  - id: https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
+    title: 'FDA Grand Rounds: FDA''s Global Substance Registration System (GSRS) Unique
+      Ingredient Identifiers (UNIIs)'
+  repository: https://ginas.ncats.nih.gov/ginas/app
 - activity_status: active
   category: DataSource
   contacts:
@@ -71437,7 +72069,7 @@ resources:
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-09-23: No Content-Length
+    - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
       header found'
   - category: MappingProduct
     description: Tab-delimited file with the PomBase systematic identifier for each
@@ -71488,7 +72120,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: GraphProduct
     description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -72036,7 +72668,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-20_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: GraphicalInterface
     description: Browse UO with Ontology Lookup Service (OLS)
@@ -74066,7 +74698,7 @@ resources:
       with url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
       object at 0x7ff244989120>_ Failed to establish a new connection_ [Errno 101]
       Network is unreachable'))
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: Product
     description: zfin OBO Graph JSON
@@ -74093,7 +74725,7 @@ resources:
       Network is unreachable'))
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
       when accessing file'
   - category: MappingProduct
     description: zfin SSSOM
@@ -75573,7 +76205,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing citation information for all PubMed articles
@@ -75587,7 +76219,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing entity information with UMLS concept identifiers,
@@ -75601,7 +76233,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing semantic predications with subject-predicate-object
@@ -75615,7 +76247,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 403 error
       when accessing file'
   - category: Product
     description: CSV file containing sentence information from PubMed citations
@@ -75628,7 +76260,7 @@ resources:
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-23_ HTTP 403 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 403 error
+    - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 403 error
       when accessing file'
   - category: ProcessProduct
     description: The SemRep natural language processing system that extracts semantic

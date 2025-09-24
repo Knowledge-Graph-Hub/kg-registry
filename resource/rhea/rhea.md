@@ -55,7 +55,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
     when accessing file'
 - category: Product
   description: rhea OBO Graph JSON
@@ -82,7 +82,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-23: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: Rhea SSSOM
