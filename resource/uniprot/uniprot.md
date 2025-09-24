@@ -97,7 +97,7 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-24_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
     header found
@@ -144,7 +144,7 @@ products:
   secondary_source:
   - oma
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-24_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error when
     accessing file

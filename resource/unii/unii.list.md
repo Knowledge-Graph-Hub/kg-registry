@@ -6,5 +6,8 @@ format: csv
 id: unii.list
 name: UNII List Download
 product_url: https://precision.fda.gov/uniisearch/archive/latest/UNIIs.zip
+warnings:
+- File was not able to be retrieved when checked on 2025-09-24_ HTTP 403 error when
+  accessing file
 layout: product_detail
 ---

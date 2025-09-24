@@ -8,7 +8,7 @@ original_source:
 - uo
 product_url: http://purl.obolibrary.org/obo/uo.json
 warnings:
-- File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-09-24_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error when
   accessing file
