@@ -2,90 +2,297 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: "gtex-help@broadinstitute.org"
-      - contact_type: url
-        value: "https://www.gtexportal.org/home/contact"
-    label: GTEx Consortium
-description: The Genotype-Tissue Expression (GTEx) project provides a comprehensive resource to study tissue-specific gene expression and regulation. Samples were collected from 54 non-diseased tissue sites across nearly 1000 individuals, primarily for molecular assays including WGS, WES, and RNA-Seq.
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: gtex-help@broadinstitute.org
+  - contact_type: url
+    value: https://www.gtexportal.org/home/contact
+  label: GTEx Consortium
+description: The Genotype-Tissue Expression (GTEx) project provides a comprehensive
+  resource to study tissue-specific gene expression and regulation. Samples were collected
+  from 54 non-diseased tissue sites across nearly 1000 individuals, primarily for
+  molecular assays including WGS, WES, and RNA-Seq.
 domains:
-  - genomics
-  - biomedical
-  - anatomy and development
+- genomics
+- biomedical
+- anatomy and development
 homepage_url: https://www.gtexportal.org/home/
-id: "gtex"
+id: gtex
 layout: resource_detail
 name: GTEx
 products:
-  - category: GraphicalInterface
-    description: GTEx Portal web interface for exploring tissue-specific gene expression data, eQTLs, and other genomic analyses
-    format: http
-    id: "gtex.portal"
-    name: GTEx Portal
-    original_source:
-      - gtex
-    product_url: https://www.gtexportal.org/home/
-  - category: Product
-    description: Complete GTEx v8 data including gene expression, transcript expression, exon expression, and junction data across tissues
-    format: tsv
-    id: "gtex.bulk-data"
-    name: GTEx Bulk Data Downloads
-    original_source:
-      - gtex
-    product_url: https://www.gtexportal.org/home/downloads/adult-gtex
-  - category: Product
-    description: eQTL (expression quantitative trait loci) data linking genetic variants to gene expression across tissues
-    format: tsv
-    id: "gtex.eqtl-data"
-    name: GTEx eQTL Data
-    original_source:
-      - gtex
-    product_url: https://www.gtexportal.org/home/downloads/adult-gtex/qtl
-  - category: ProgrammingInterface
-    description: GTEx REST API for programmatic access to gene expression and eQTL data
-    format: json
-    id: "gtex.api"
-    name: GTEx REST API
-    original_source:
-      - gtex
-    product_url: https://gtexportal.org/rest/
-  - category: Product
-    description: Individual-level genotype and phenotype data available through dbGaP
-    format: vcf
-    id: "gtex.dbgap-data"
-    name: GTEx dbGaP Data
-    original_source:
-      - gtex
-    product_url: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000424
-  - category: GraphProduct
-    description: GTEx Automat
-    format: kgx-jsonl
-    id: "automat.gtex"
-    infores_id: "automat-gtex"
-    name: gtex_automat
-    original_source:
-      - gtex
-    product_url: https://stars.renci.org/var/plater/bl-4.2.1/GTEx_Automat/a6448b9092bb81a1/
-    secondary_source:
-      - automat
+- category: GraphicalInterface
+  description: GTEx Portal web interface for exploring tissue-specific gene expression
+    data, eQTLs, and other genomic analyses
+  format: http
+  id: gtex.portal
+  name: GTEx Portal
+  original_source:
+  - gtex
+  product_url: https://www.gtexportal.org/home/
+- category: Product
+  description: Complete GTEx v8 data including gene expression, transcript expression,
+    exon expression, and junction data across tissues
+  format: tsv
+  id: gtex.bulk-data
+  name: GTEx Bulk Data Downloads
+  original_source:
+  - gtex
+  product_url: https://www.gtexportal.org/home/downloads/adult-gtex
+- category: Product
+  description: eQTL (expression quantitative trait loci) data linking genetic variants
+    to gene expression across tissues
+  format: tsv
+  id: gtex.eqtl-data
+  name: GTEx eQTL Data
+  original_source:
+  - gtex
+  product_url: https://www.gtexportal.org/home/downloads/adult-gtex/qtl
+- category: ProgrammingInterface
+  description: GTEx REST API for programmatic access to gene expression and eQTL data
+  format: json
+  id: gtex.api
+  name: GTEx REST API
+  original_source:
+  - gtex
+  product_url: https://gtexportal.org/rest/
+- category: Product
+  description: Individual-level genotype and phenotype data available through dbGaP
+  format: vcf
+  id: gtex.dbgap-data
+  name: GTEx dbGaP Data
+  original_source:
+  - gtex
+  product_url: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000424
+- category: GraphProduct
+  description: GTEx Automat
+  format: kgx-jsonl
+  id: automat.gtex
+  infores_id: automat-gtex
+  name: gtex_automat
+  original_source:
+  - gtex
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/GTEx_Automat/a6448b9092bb81a1/
+  secondary_source:
+  - automat
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
+  name: Bioteque Embeddings
+  original_source:
+  - chebi
+  - cosmic
+  - achilles
+  - depmap
+  - ccle
+  - gdsc
+  - cellosaurus
+  - clue
+  - ctd
+  - pharmacodb
+  - prism
+  - drugbank
+  - lincs
+  - compartments
+  - offsides
+  - sider
+  - drugcentral
+  - repohub
+  - chemicalchecker
+  - repodb
+  - disgenet
+  - opentargets
+  - creeds
+  - interpro
+  - reactome
+  - tissues
+  - dorothea
+  - progeny
+  - gtex
+  - hpa
+  - go
+  - corum
+  - huri
+  - intact
+  - omnipath
+  - string
+  - bto
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+  secondary_source:
+  - bioteque
+- category: GraphProduct
+  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
+    instances as neo4j graph databases, running in a Docker container. Requires UMLS
+    API key to access.
+  dump_format: neo4j
+  id: ubkg.neo4j
+  name: UBKG Neo4j Docker Distribution
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - do
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - cmap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - nposckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+- category: GraphProduct
+  description: Ontology CSV files that can be imported into a neo4j instance to create
+    a UBKG database. Requires UMLS API key to access.
+  format: csv
+  id: ubkg.csv
+  name: UBKG Ontology CSV Files
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - do
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - cmap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - nposckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+- category: GraphProduct
+  description: Integrated graph knowledge base combining Mendelian randomization causal
+    estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships
+    (Neo4j backend)
+  format: neo4j
+  id: epigraphdb.graph
+  name: EpiGraphDB Graph Database
+  original_source:
+  - epigraphdb
+  - kg-monarch
+  - vectology
+  - ukbiobank
+  - prsatlas
+  - eqtlgen
+  - mondo
+  - gtex
+  - ensembl
+  - cpic
+  - opentargets
+  - efo
+  - semmeddb
+  - intact
+  - string
+  - reactome
+  - mrbase
+  product_url: https://docs.epigraphdb.org/graph-database/
+  secondary_source:
+  - epigraphdb
 publications:
-  - authors:
-      - GTEx Consortium
-    doi: "10.1126/science.aaz1776"
-    id: "doi:10.1126/science.aaz1776"
-    title: 'The GTEx Consortium atlas of genetic regulatory effects across human tissues'
-    year: "2020"
-  - authors:
-      - GTEx Consortium
-    doi: "10.1126/science.1262110"
-    id: "doi:10.1126/science.1262110"
-    title: 'The Genotype-Tissue Expression (GTEx) pilot analysis: multitissue gene regulation in humans'
-    year: "2015"
+- authors:
+  - GTEx Consortium
+  doi: 10.1126/science.aaz1776
+  id: doi:10.1126/science.aaz1776
+  title: The GTEx Consortium atlas of genetic regulatory effects across human tissues
+  year: '2020'
+- authors:
+  - GTEx Consortium
+  doi: 10.1126/science.1262110
+  id: doi:10.1126/science.1262110
+  title: 'The Genotype-Tissue Expression (GTEx) pilot analysis: multitissue gene regulation
+    in humans'
+  year: '2015'
 repository: https://github.com/broadinstitute/gtex-pipeline
 ---
-
 # GTEx (Genotype-Tissue Expression)
 
 ## Overview

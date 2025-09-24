@@ -1,7 +1,6 @@
 ---
 activity_status: active
 category: Aggregator
-creation_date: '2025-09-24T00:00:00Z'
 contacts:
 - category: Organization
   contact_details:
@@ -10,7 +9,12 @@ contacts:
   - contact_type: email
     value: joshua.c.denny@vumc.org
   label: Vanderbilt University Medical Center
-description: The PheWAS Catalog is an aggregator of phenome-wide association studies that systematically analyzes many phenotypes compared to single genetic variants. It aggregates results from electronic medical record (EMR) data analysis, combining genetic association data from multiple biobanks and clinical databases to enable comprehensive phenotype-genotype association discovery.
+creation_date: '2025-09-24T00:00:00Z'
+description: The PheWAS Catalog is an aggregator of phenome-wide association studies
+  that systematically analyzes many phenotypes compared to single genetic variants.
+  It aggregates results from electronic medical record (EMR) data analysis, combining
+  genetic association data from multiple biobanks and clinical databases to enable
+  comprehensive phenotype-genotype association discovery.
 domains:
 - biomedical
 - genomics
@@ -23,39 +27,67 @@ layout: resource_detail
 name: PheWAS Catalog
 products:
 - category: GraphicalInterface
-  description: Web portal for browsing and accessing PheWAS association results and analysis tools
+  description: Web portal for browsing and accessing PheWAS association results and
+    analysis tools
   format: http
   id: phewascat.portal
   name: PheWAS Catalog Portal
   product_url: https://phewascatalog.org/phewas/#home
 - category: Product
-  description: PheWAS association results for SNPs from GWAS Catalog analyzed against EMR-derived phenotypes
+  description: PheWAS association results for SNPs from GWAS Catalog analyzed against
+    EMR-derived phenotypes
   format: csv
   id: phewascat.associations
   name: PheWAS Association Data
   product_url: https://phewascatalog.org/phewas/#home
 - category: Product
-  description: Phecode mapping files for translating ICD codes to phenotypes used in PheWAS analysis
+  description: Phecode mapping files for translating ICD codes to phenotypes used
+    in PheWAS analysis
   format: csv
   id: phewascat.phecodes
   name: Phecode Maps
   product_url: https://phewascatalog.org/phewas/#home
 - category: ProgrammingInterface
-  description: R package for performing PheWAS analysis using the catalog data and methods
+  description: R package for performing PheWAS analysis using the catalog data and
+    methods
   format: http
   id: phewascat.rpackage
   name: PheWAS R Package
   product_url: https://www.vumc.org/cpm/center-precision-medicine-blog/phewas-r-package
+- category: GraphProduct
+  description: DisGeNET data, including gene to disease associations and variant to
+    disease associations (requires registration and subscription).
+  id: disgenet.data
+  name: DisGeNET Data
+  original_source:
+  - clingen
+  - clinvar
+  - mgd
+  - rgd
+  - orphanet
+  - psygenet
+  - uniprot
+  - disgenet
+  - hp
+  - gwascatalog
+  - phewascat
+  - ukbiobank
+  - finngen
+  - clinicaltrialsgov
+  product_url: https://www.disgenet.com/
+  secondary_source:
+  - disgenet
 publications:
-- id: doi:10.1038/nbt.2749
-  title: "Systematic comparison of phenome-wide association study of electronic medical record data and genome-wide association study data"
-  year: '2013'
-  journal: Nature Biotechnology
-  authors:
+- authors:
   - Denny JC
   - Bastarache L
   - Ritchie MD
+  id: doi:10.1038/nbt.2749
+  journal: Nature Biotechnology
   preferred: true
+  title: Systematic comparison of phenome-wide association study of electronic medical
+    record data and genome-wide association study data
+  year: '2013'
 repository: https://github.com/nhgritctran/PheTK
 tags:
 - translator

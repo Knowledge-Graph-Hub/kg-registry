@@ -9,10 +9,10 @@ contacts:
   label: FDA Substance Registration System Team
 creation_date: '2025-07-17T00:00:00Z'
 description: FDA's Global Substance Registration System (GSRS) is a comprehensive
-  database that provides Unique Ingredient Identifiers (UNIIs) for substances in
-  FDA-regulated products. UNIIs uniquely define substances based on scientific identity
-  characteristics using ISO 11238 data elements, enabling efficient and accurate
-  exchange of substance information across regulatory domains.
+  database that provides Unique Ingredient Identifiers (UNIIs) for substances in FDA-regulated
+  products. UNIIs uniquely define substances based on scientific identity characteristics
+  using ISO 11238 data elements, enabling efficient and accurate exchange of substance
+  information across regulatory domains.
 domains:
 - clinical
 - drug discovery
@@ -38,6 +38,9 @@ products:
   id: unii.list
   name: UNII List Download
   product_url: https://precision.fda.gov/uniisearch/archive/latest/UNIIs.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 403 error
+    when accessing file'
 - category: Product
   compression: zip
   description: Comprehensive UNII data with detailed substance attributes and mappings
@@ -45,12 +48,42 @@ products:
   id: unii.data
   name: UNII Data Download
   product_url: https://precision.fda.gov/uniisearch/archive/latest/UNII_Data.zip
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 403 error
+    when accessing file'
 - category: Product
   description: Legacy UNII identifiers for historical substances
   format: txt
   id: unii.legacy
   name: Legacy UNIIs
   product_url: https://precision.fda.gov/uniisearch/archive/latest/Legacy_UNIIs.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 403 error
+    when accessing file'
+- description: The MechRepoNet knowledge graph in its original format
+  id: mechreponet.kg
+  name: MechRepoNet Knowledge Graph
+  original_source:
+  - ctd
+  - do
+  - go
+  - chebi
+  - reactome
+  - interpro
+  - hp
+  - cl
+  - pr
+  - uberon
+  - ncbitaxon
+  - hetionet
+  - complexportal
+  - rnacentral
+  - mirtarbase
+  - unii
+  - biolink
+  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+  secondary_source:
+  - mechreponet
 publications:
 - id: https://www.fda.gov/science-research/fda-grand-rounds/fdas-global-substance-registration-system-gsrs-unique-ingredient-identifiers-uniis-uniquely-define
   title: 'FDA Grand Rounds: FDA''s Global Substance Registration System (GSRS) Unique

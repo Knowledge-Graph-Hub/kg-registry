@@ -10,7 +10,11 @@ contacts:
     value: reporter@od.nih.gov
   label: NIH Office of Extramural Research
 creation_date: '2025-07-20T00:00:00Z'
-description: NIH Reporter (RePORTER) is a comprehensive data source providing access to information about NIH-funded research projects, including both intramural and extramural research activities. It serves as an electronic repository for NIH research project data, publications, and patents resulting from NIH funding since fiscal year 1985.
+description: NIH Reporter (RePORTER) is a comprehensive data source providing access
+  to information about NIH-funded research projects, including both intramural and
+  extramural research activities. It serves as an electronic repository for NIH research
+  project data, publications, and patents resulting from NIH funding since fiscal
+  year 1985.
 domains:
 - biomedical
 - health
@@ -23,7 +27,8 @@ layout: resource_detail
 name: NIH Reporter
 products:
 - category: GraphicalInterface
-  description: Web-based search interface for exploring NIH-funded research projects with advanced search capabilities
+  description: Web-based search interface for exploring NIH-funded research projects
+    with advanced search capabilities
   format: http
   id: nihreporter.portal
   name: NIH Reporter Web Portal
@@ -67,6 +72,31 @@ products:
   id: nihreporter.linktables
   name: NIH-Funded Publications Link Tables
   product_url: https://reporter.nih.gov/exporter/linktables
+- category: ProcessProduct
+  description: INDRA CoGEx is a graph database integrating causal relations, ontological
+    relations, properties, and data, assembled at scale automatically from the scientific
+    literature and structured sources. This is the code to build the graph.
+  id: indra.cogex.code
+  name: INDRA CoGEx Build Code
+  original_source:
+  - chembl
+  - sider
+  - reactome
+  - wikipathways
+  - hp
+  - nihreporter
+  - disgenet
+  - pubmed
+  - gwascatalog
+  - cellmarker
+  - go
+  - bgee
+  - ccle
+  - clinicaltrialsgov
+  - indra
+  product_url: https://github.com/gyorilab/indra_cogex
+  secondary_source:
+  - indra
 ---
 # NIH Reporter
 

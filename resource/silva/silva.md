@@ -2,15 +2,20 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: "silva@dsmz.de"
-      - contact_type: url
-        value: "https://www.arb-silva.de/contact"
-    label: SILVA Team
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: silva@dsmz.de
+  - contact_type: url
+    value: https://www.arb-silva.de/contact
+  label: SILVA Team
 creation_date: '2025-09-09T00:00:00Z'
-description: SILVA is a comprehensive online resource for quality checked and aligned ribosomal RNA sequence data. It provides regularly updated datasets of aligned small (16S/18S, SSU) and large subunit (23S/28S, LSU) ribosomal RNA sequences for all three domains of life (Bacteria, Archaea and Eukarya). SILVA is a Global Core Biodata Resource and ELIXIR Core Data Resource, currently maintaining over 9.4 million SSU sequences in release 138.2.
+description: SILVA is a comprehensive online resource for quality checked and aligned
+  ribosomal RNA sequence data. It provides regularly updated datasets of aligned small
+  (16S/18S, SSU) and large subunit (23S/28S, LSU) ribosomal RNA sequences for all
+  three domains of life (Bacteria, Archaea and Eukarya). SILVA is a Global Core Biodata
+  Resource and ELIXIR Core Data Resource, currently maintaining over 9.4 million SSU
+  sequences in release 138.2.
 domains:
 - microbiology
 - genomics
@@ -23,99 +28,318 @@ last_modified_date: '2025-09-24T00:00:00Z'
 layout: resource_detail
 name: SILVA
 products:
-  - category: GraphicalInterface
-    description: Web-based search interface for SILVA ribosomal RNA sequences with advanced filtering and taxonomic browsing capabilities
-    format: http
-    id: silva.search
-    name: SILVA Search
-    original_source:
-      - silva
-    product_url: https://www.arb-silva.de/search
-  - category: GraphicalInterface
-    description: Interactive browser for exploring SILVA taxonomic hierarchy and sequence data with phylogenetic context
-    format: http
-    id: silva.browser
-    name: SILVA Browser
-    original_source:
-      - silva
-    product_url: https://www.arb-silva.de/browser
-  - category: ProcessProduct
-    description: SILVA Incremental Aligner (SINA) for accurate alignment of ribosomal RNA sequences against curated reference alignments
-    format: http
-    id: silva.aligner
-    name: SILVA Alignment, Classification and Tree Service (ACT)
-    original_source:
-      - silva
-    product_url: https://www.arb-silva.de/aligner
-  - category: Product
-    description: Comprehensive release files including FASTA sequences, alignments, taxonomies, and ARB database files for SSU and LSU rRNA
-    format: mixed
-    id: silva.release_files
-    name: SILVA Release Files
-    original_source:
-      - silva
-    product_url: https://www.arb-silva.de/current-release
-  - category: ProcessProduct
-    description: TestPrime tool for in silico evaluation of PCR primer coverage and specificity against SILVA sequences
-    format: http
-    id: silva.testprime
-    name: SILVA TestPrime
-    original_source:
-      - silva
-    product_url: https://www.arb-silva.de/testprime
-  - category: ProcessProduct
-    description: TestProbe tool for in silico evaluation of hybridization probe coverage and specificity against SILVA sequences
-    format: http
-    id: silva.testprobe
-    name: SILVA TestProbe
-    original_source:
-      - silva
-    product_url: https://www.arb-silva.de/testprobe
-  - category: Product
-    description: ARB-formatted database files for phylogenetic analysis and sequence management in the ARB software environment
-    format: mixed
-    id: silva.arb_files
-    name: SILVA ARB Files
-    original_source:
-      - silva
-    product_url: https://www.arb-silva.de/arb-files
-  - category: ProcessProduct
-    description: SILVAngs pipeline for high-throughput analysis of ribosomal RNA gene amplicons from next-generation sequencing data
-    format: http
-    id: silva.ngs_pipeline
-    name: SILVAngs
-    original_source:
-      - silva
-    product_url: https://ngs.arb-silva.de/
+- category: GraphicalInterface
+  description: Web-based search interface for SILVA ribosomal RNA sequences with advanced
+    filtering and taxonomic browsing capabilities
+  format: http
+  id: silva.search
+  name: SILVA Search
+  original_source:
+  - silva
+  product_url: https://www.arb-silva.de/search
+- category: GraphicalInterface
+  description: Interactive browser for exploring SILVA taxonomic hierarchy and sequence
+    data with phylogenetic context
+  format: http
+  id: silva.browser
+  name: SILVA Browser
+  original_source:
+  - silva
+  product_url: https://www.arb-silva.de/browser
+- category: ProcessProduct
+  description: SILVA Incremental Aligner (SINA) for accurate alignment of ribosomal
+    RNA sequences against curated reference alignments
+  format: http
+  id: silva.aligner
+  name: SILVA Alignment, Classification and Tree Service (ACT)
+  original_source:
+  - silva
+  product_url: https://www.arb-silva.de/aligner
+- category: Product
+  description: Comprehensive release files including FASTA sequences, alignments,
+    taxonomies, and ARB database files for SSU and LSU rRNA
+  format: mixed
+  id: silva.release_files
+  name: SILVA Release Files
+  original_source:
+  - silva
+  product_url: https://www.arb-silva.de/current-release
+- category: ProcessProduct
+  description: TestPrime tool for in silico evaluation of PCR primer coverage and
+    specificity against SILVA sequences
+  format: http
+  id: silva.testprime
+  name: SILVA TestPrime
+  original_source:
+  - silva
+  product_url: https://www.arb-silva.de/testprime
+- category: ProcessProduct
+  description: TestProbe tool for in silico evaluation of hybridization probe coverage
+    and specificity against SILVA sequences
+  format: http
+  id: silva.testprobe
+  name: SILVA TestProbe
+  original_source:
+  - silva
+  product_url: https://www.arb-silva.de/testprobe
+- category: Product
+  description: ARB-formatted database files for phylogenetic analysis and sequence
+    management in the ARB software environment
+  format: mixed
+  id: silva.arb_files
+  name: SILVA ARB Files
+  original_source:
+  - silva
+  product_url: https://www.arb-silva.de/arb-files
+- category: ProcessProduct
+  description: SILVAngs pipeline for high-throughput analysis of ribosomal RNA gene
+    amplicons from next-generation sequencing data
+  format: http
+  id: silva.ngs_pipeline
+  name: SILVAngs
+  original_source:
+  - silva
+  product_url: https://ngs.arb-silva.de/
+- category: GraphicalInterface
+  description: Web portal for searching and browsing ncRNA sequences, structures,
+    and annotations
+  format: http
+  id: rnacentral.portal
+  name: RNAcentral Portal
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to RNAcentral data
+  format: http
+  id: rnacentral.api
+  name: RNAcentral REST API
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/api
+- category: Product
+  description: FTP archive with current and archived release files (sequences and
+    annotations)
+  format: http
+  id: rnacentral.ftp
+  name: RNAcentral FTP Archive
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+- category: DataModelProduct
+  description: Public PostgreSQL database for direct SQL access to RNAcentral data
+  format: postgres
+  id: rnacentral.public-db
+  name: RNAcentral Public Postgres Database
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/help/public-database
 publications:
-  - authors:
-      - Christian Quast
-      - Elmar Pruesse
-      - Pelin Yilmaz
-      - Jan Gerken
-      - Timmy Schweer
-      - Pablo Yarza
-      - Jörg Peplies
-      - Frank Oliver Glöckner
-    doi: "10.1093/nar/gks1219"
-    id: "doi:10.1093/nar/gks1219"
-    title: "The SILVA ribosomal RNA gene database project: improved data processing and web-based tools"
-    year: "2013"
-  - authors:
-      - Pelin Yilmaz
-      - Linda Wegener Parfrey
-      - Pablo Yarza
-      - Jan Gerken
-      - Elmar Pruesse
-      - Christian Quast
-      - Timmy Schweer
-      - Jörg Peplies
-      - Wolfgang Ludwig
-      - Frank Oliver Glöckner
-    doi: "10.1093/nar/gkt1209"
-    id: "doi:10.1093/nar/gkt1209"
-    title: "The SILVA and 'All-species Living Tree Project (LTP)' taxonomic frameworks"
-    year: "2014"
+- authors:
+  - Christian Quast
+  - Elmar Pruesse
+  - Pelin Yilmaz
+  - Jan Gerken
+  - Timmy Schweer
+  - Pablo Yarza
+  - "J\xF6rg Peplies"
+  - "Frank Oliver Gl\xF6ckner"
+  doi: 10.1093/nar/gks1219
+  id: doi:10.1093/nar/gks1219
+  title: 'The SILVA ribosomal RNA gene database project: improved data processing
+    and web-based tools'
+  year: '2013'
+- authors:
+  - Pelin Yilmaz
+  - Linda Wegener Parfrey
+  - Pablo Yarza
+  - Jan Gerken
+  - Elmar Pruesse
+  - Christian Quast
+  - Timmy Schweer
+  - "J\xF6rg Peplies"
+  - Wolfgang Ludwig
+  - "Frank Oliver Gl\xF6ckner"
+  doi: 10.1093/nar/gkt1209
+  id: doi:10.1093/nar/gkt1209
+  title: The SILVA and 'All-species Living Tree Project (LTP)' taxonomic frameworks
+  year: '2014'
 repository: https://github.com/epruesse/SINA
 ---
 # SILVA
