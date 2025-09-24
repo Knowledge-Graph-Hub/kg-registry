@@ -28,27 +28,27 @@ products:
   description: Web-based search interface for finding substances by UNII, name, or
     other identifiers
   format: http
-  id: unii_search
+  id: unii.search
   name: UNII Search Service
   product_url: https://precision.fda.gov/uniisearch
 - category: Product
   compression: zip
   description: Downloadable list of all UNIIs with basic substance information
   format: csv
-  id: unii_list
+  id: unii.list
   name: UNII List Download
   product_url: https://precision.fda.gov/uniisearch/archive/latest/UNIIs.zip
 - category: Product
   compression: zip
   description: Comprehensive UNII data with detailed substance attributes and mappings
   format: mixed
-  id: unii_data
+  id: unii.data
   name: UNII Data Download
   product_url: https://precision.fda.gov/uniisearch/archive/latest/UNII_Data.zip
 - category: Product
   description: Legacy UNII identifiers for historical substances
   format: txt
-  id: legacy_uniis
+  id: unii.legacy
   name: Legacy UNIIs
   product_url: https://precision.fda.gov/uniisearch/archive/latest/Legacy_UNIIs.txt
 publications:
