@@ -291,14 +291,12 @@ layout: default
     {% assign has_no_products = false %}
     {% if page.products %}
     {% for p in page.products %}
-    {% assign product_prefix = page.id | append: '.' %}
-    {% assign product_prefix_size = product_prefix | size %}
-    {% assign p_prefix = p.id | slice: 0, product_prefix_size %}
+    {% assign first_segment = p.id | split: '.' | first %}
     {% if p.secondary_source and p.secondary_source contains page.id %}
       {% assign has_internal_products = true %}
     {% elsif p.secondary_source %}
       {% assign has_external_products = true %}
-    {% elsif p.id == page.id or p_prefix == product_prefix %}
+    {% elsif p.id == page.id or first_segment == page.id %}
       {% assign has_internal_products = true %}
     {% else %}
       {% assign has_external_products = true %}
@@ -330,9 +328,7 @@ layout: default
           <tbody>
             {% for p in page.products %}
             <tr>
-              {% assign product_prefix = page.id | append: '.' %}
-              {% assign product_prefix_size = product_prefix | size %}
-              {% assign p_prefix = p.id | slice: 0, product_prefix_size %}
+              {% assign first_segment = p.id | split: '.' | first %}
               {% if p.secondary_source and p.secondary_source contains page.id %}
                 <td>
                   <a href="{{p.id}}.html">{{p.id}}</a>
@@ -344,7 +340,7 @@ layout: default
               {% elsif p.secondary_source %}
               </tr>
               {% continue %}
-              {% elsif p.id == page.id or p_prefix == product_prefix %}
+              {% elsif p.id == page.id or first_segment == page.id %}
                 <td>
                   <a href="{{p.id}}.html">{{p.id}}</a>
                   {% if p.warnings and p.warnings.size > 0 %}
@@ -414,9 +410,7 @@ layout: default
           <tbody>
             {% for p in page.products %}
             <tr>
-              {% assign product_prefix = page.id | append: '.' %}
-              {% assign product_prefix_size = product_prefix | size %}
-              {% assign p_prefix = p.id | slice: 0, product_prefix_size %}
+              {% assign first_segment = p.id | split: '.' | first %}
               {% if p.secondary_source and p.secondary_source contains page.id %}
               </tr>
               {% continue %}
@@ -428,12 +422,12 @@ layout: default
                   <span class="ms-1" title="{{ latest | escape }}{% if p.warnings.size > 1 %} (more on product page){% endif %}" style="cursor: help; text-decoration: underline dotted;">⚠</span>
                 {% endif %}
               </td>
-              {% elsif p.id == page.id or p_prefix == product_prefix %}
+              {% elsif p.id == page.id or first_segment == page.id %}
               </tr>
               {% continue %}
               {% else %}
               <td>
-                <a href="{{p.id}}.html">{{p.id}}</a>
+                <a href="/kg-registry/resource/{{first_segment}}/{{p.id}}.html">{{p.id}}</a>
                 {% if p.warnings and p.warnings.size > 0 %}
                   {% assign latest = p.warnings | last %}
                   <span class="ms-1" title="{{ latest | escape }}{% if p.warnings.size > 1 %} (more on product page){% endif %}" style="cursor: help; text-decoration: underline dotted;">⚠</span>
