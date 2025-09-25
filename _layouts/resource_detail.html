@@ -291,14 +291,17 @@ layout: default
     {% assign has_no_products = false %}
     {% if page.products %}
     {% for p in page.products %}
+    {% assign product_prefix = page.id | append: '.' %}
+    {% assign product_prefix_size = product_prefix | size %}
+    {% assign p_prefix = p.id | slice: 0, product_prefix_size %}
     {% if p.secondary_source and p.secondary_source contains page.id %}
-    {% assign has_internal_products = true %}
-    {% continue %}
+      {% assign has_internal_products = true %}
     {% elsif p.secondary_source %}
-    {% assign has_external_products = true %}
-    {% continue %}
+      {% assign has_external_products = true %}
+    {% elsif p.id == page.id or p_prefix == product_prefix %}
+      {% assign has_internal_products = true %}
     {% else %}
-    {% assign has_internal_products = true %}
+      {% assign has_external_products = true %}
     {% endif %}
     {% endfor %}
     {% else %}
@@ -327,22 +330,32 @@ layout: default
           <tbody>
             {% for p in page.products %}
             <tr>
+              {% assign product_prefix = page.id | append: '.' %}
+              {% assign product_prefix_size = product_prefix | size %}
+              {% assign p_prefix = p.id | slice: 0, product_prefix_size %}
               {% if p.secondary_source and p.secondary_source contains page.id %}
-              <td>
-                <a href="{{p.id}}.html">{{p.id}}</a>
-                {% if p.warnings and p.warnings.size > 0 %}
-                  {% assign latest = p.warnings | last %}
-                  <span class="ms-1" title="{{ latest | escape }}{% if p.warnings.size > 1 %} (more on product page){% endif %}" style="cursor: help; text-decoration: underline dotted;">⚠</span>
-                {% endif %}
-              </td>
+                <td>
+                  <a href="{{p.id}}.html">{{p.id}}</a>
+                  {% if p.warnings and p.warnings.size > 0 %}
+                    {% assign latest = p.warnings | last %}
+                    <span class="ms-1" title="{{ latest | escape }}{% if p.warnings.size > 1 %} (more on product page){% endif %}" style="cursor: help; text-decoration: underline dotted;">⚠</span>
+                  {% endif %}
+                </td>
               {% elsif p.secondary_source %}
-            </tr>
-            {% continue %}
-            {% else %}
-            <td>
-              <a href="{{p.id}}.html">{{p.id}}</a>
-            </td>
-            {% endif %}
+              </tr>
+              {% continue %}
+              {% elsif p.id == page.id or p_prefix == product_prefix %}
+                <td>
+                  <a href="{{p.id}}.html">{{p.id}}</a>
+                  {% if p.warnings and p.warnings.size > 0 %}
+                    {% assign latest = p.warnings | last %}
+                    <span class="ms-1" title="{{ latest | escape }}{% if p.warnings.size > 1 %} (more on product page){% endif %}" style="cursor: help; text-decoration: underline dotted;">⚠</span>
+                  {% endif %}
+                </td>
+              {% else %}
+              </tr>
+              {% continue %}
+              {% endif %}
             <td>
               {{p.name}}
             </td>
@@ -401,21 +414,32 @@ layout: default
           <tbody>
             {% for p in page.products %}
             <tr>
+              {% assign product_prefix = page.id | append: '.' %}
+              {% assign product_prefix_size = product_prefix | size %}
+              {% assign p_prefix = p.id | slice: 0, product_prefix_size %}
               {% if p.secondary_source and p.secondary_source contains page.id %}
-            </tr>
-            {% continue %}
-            {% elsif p.secondary_source %}
-            <td>
-              <a href="/kg-registry/resource/{{p.secondary_source | first}}/{{p.id}}.html">{{p.id}}</a>
-              {% if p.warnings and p.warnings.size > 0 %}
-                {% assign latest = p.warnings | last %}
-                <span class="ms-1" title="{{ latest | escape }}{% if p.warnings.size > 1 %} (more on product page){% endif %}" style="cursor: help; text-decoration: underline dotted;">⚠</span>
+              </tr>
+              {% continue %}
+              {% elsif p.secondary_source %}
+              <td>
+                <a href="/kg-registry/resource/{{p.secondary_source | first}}/{{p.id}}.html">{{p.id}}</a>
+                {% if p.warnings and p.warnings.size > 0 %}
+                  {% assign latest = p.warnings | last %}
+                  <span class="ms-1" title="{{ latest | escape }}{% if p.warnings.size > 1 %} (more on product page){% endif %}" style="cursor: help; text-decoration: underline dotted;">⚠</span>
+                {% endif %}
+              </td>
+              {% elsif p.id == page.id or p_prefix == product_prefix %}
+              </tr>
+              {% continue %}
+              {% else %}
+              <td>
+                <a href="{{p.id}}.html">{{p.id}}</a>
+                {% if p.warnings and p.warnings.size > 0 %}
+                  {% assign latest = p.warnings | last %}
+                  <span class="ms-1" title="{{ latest | escape }}{% if p.warnings.size > 1 %} (more on product page){% endif %}" style="cursor: help; text-decoration: underline dotted;">⚠</span>
+                {% endif %}
+              </td>
               {% endif %}
-            </td>
-            {% else %}
-            </tr>
-            {% continue %}
-            {% endif %}
             <td>
               {{p.name}}
             </td>
