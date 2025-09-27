@@ -7,7 +7,7 @@ product_url: http://xteam.xbio.top/download/Human_cell_markers.txt
 warnings:
 - File was not able to be retrieved when checked on 2025-09-27_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2025-09-25_ Timeout connecting
+- File was not able to be retrieved when checked on 2025-09-27_ Timeout connecting
   to URL
 - File was not able to be retrieved when checked on 2025-09-24_ No Content-Length
   header found

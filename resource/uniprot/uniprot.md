@@ -99,7 +99,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-09-25_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-09-27: No Content-Length
     header found'
@@ -146,7 +146,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-27_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-09-25_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-27_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 502 error when
     accessing file
