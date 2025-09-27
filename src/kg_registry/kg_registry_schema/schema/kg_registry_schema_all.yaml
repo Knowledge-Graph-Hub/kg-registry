@@ -508,10 +508,6 @@ enums:
     description: General-purpose tags that can be associated with resources.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     permissible_values:
-      ber:
-        text: ber
-        description: A resource or product relevant to the US Department of Energy
-          Biological and Environmental Research (BER) program.
       biopragmatics:
         text: biopragmatics
         description: A resource or product aggregated by the BioPragmatics project.
@@ -548,6 +544,11 @@ enums:
         description: This entity incorporates the Adverse Outcome Pathways (AOP) framework
           in some manner.
         meaning: https://aopwiki.org/
+      ber:
+        text: ber
+        description: A resource or product relevant to the US Department of Energy
+          Biological and Environmental Research (BER) program.
+        meaning: https://www.energy.gov/science/ber/biological-and-environmental-research
       translator:
         text: translator
         description: This entity is part of those developed and used by the NCATS

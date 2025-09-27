@@ -225,6 +225,7 @@
             "description": "Specific collections for grouping KG-Registry entries.",
             "enum": [
                 "aop",
+                "ber",
                 "translator"
             ],
             "title": "CollectionEnum",
@@ -3660,7 +3661,6 @@
         "TagEnum": {
             "description": "General-purpose tags that can be associated with resources.",
             "enum": [
-                "ber",
                 "biopragmatics",
                 "core",
                 "translator"
