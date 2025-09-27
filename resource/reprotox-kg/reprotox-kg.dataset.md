@@ -7,10 +7,25 @@ id: reprotox-kg.dataset
 name: ReproTox Dataset
 product_url: https://reprotox-kg.net/downloads/
 warnings:
+- File was not able to be retrieved when checked on 2025-09-27_ Error connecting to
+  URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
+  with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
+  object at 0x7fd098164590>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
+  or service not known)"))
+- File was not able to be retrieved when checked on 2025-09-25_ Error connecting to
+  URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
+  with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
+  object at 0x7f1ecab83470>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
+  or service not known)"))
 - File was not able to be retrieved when checked on 2025-09-24_ Error connecting to
   URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
   with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
   object at 0x7f3cc32ff7d0>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
+  or service not known)"))
+- File was not able to be retrieved when checked on 2025-09-24_ Error connecting to
+  URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
+  with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
+  object at 0x7f14ff3fb940>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
   or service not known)"))
 - File was not able to be retrieved when checked on 2025-09-23_ Error connecting to
   URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded

@@ -9,6 +9,8 @@ contacts:
   - contact_type: url
     value: https://thebiogrid.org/
   label: BioGRID
+collection:
+- ber
 creation_date: '2025-08-13T00:00:00Z'
 description: The Biological General Repository for Interaction Datasets (BioGRID)
   is an open, curated database of genetic, protein, and chemical interaction data,

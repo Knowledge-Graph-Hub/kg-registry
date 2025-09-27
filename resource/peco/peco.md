@@ -11,6 +11,8 @@ contacts:
   - contact_type: github
     value: jaiswalp
   label: Pankaj Jaiswal
+collection:
+- ber
 creation_date: '2025-07-12T00:00:00Z'
 description: Plant Experimental Conditions Ontology (PECO) is a structured, controlled
   vocabulary which describes the treatments, growing conditions, and/or study types

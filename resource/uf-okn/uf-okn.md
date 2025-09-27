@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: KnowledgeGraph
+collection:
+- ber
 contacts:
 - category: Organization
   label: UF Open Knowledge Network (UF-OKN)

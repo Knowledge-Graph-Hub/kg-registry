@@ -1,6 +1,8 @@
 ---
 layout: resource_detail
 activity_status: active
+collection:
+- ber
 id: ecosim
 name: ecosim
 description: Ontology rendering of the EcoSIM Land System Model

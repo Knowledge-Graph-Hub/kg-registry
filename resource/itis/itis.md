@@ -9,6 +9,8 @@ contacts:
   - contact_type: email
     value: itiswebmaster@itis.gov
   label: Integrated Taxonomic Information System (ITIS)
+collection:
+- ber
 creation_date: '2025-09-03T00:00:00Z'
 description: The Integrated Taxonomic Information System (ITIS) provides authoritative
   taxonomic information on plants, animals, fungi, and microbes of North America and

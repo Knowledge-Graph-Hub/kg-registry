@@ -617,6 +617,10 @@ class CollectionEnum(str, Enum):
     """
     This entity incorporates the Adverse Outcome Pathways (AOP) framework in some manner.
     """
+    ber = "ber"
+    """
+    A resource or product relevant to the US Department of Energy Biological and Environmental Research (BER) program.
+    """
     translator = "translator"
     """
     This entity is part of those developed and used by the NCATS Biomedical Translator program.

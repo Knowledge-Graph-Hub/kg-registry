@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: KnowledgeGraph
+collection:
+- ber
 contacts:
 - category: Individual
   contact_details:

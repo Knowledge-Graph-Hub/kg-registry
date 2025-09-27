@@ -225,6 +225,7 @@
             "description": "Specific collections for grouping KG-Registry entries.",
             "enum": [
                 "aop",
+                "ber",
                 "translator"
             ],
             "title": "CollectionEnum",
