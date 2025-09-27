@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataModel
+collection:
+- ber
 contacts:
 - category: Individual
   contact_details:

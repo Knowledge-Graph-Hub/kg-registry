@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataSource
+collection:
+- ber
 creation_date: '2025-09-04T00:00:00Z'
 description: ToxCast (US EPA Toxicity Forecaster) is a high-throughput screening program generating bioactivity profiles for thousands of environmental chemicals across diverse in vitro assays to prioritize substances for hazard characterization, integrate exposure and pathway information, and support predictive toxicology.
 domains:

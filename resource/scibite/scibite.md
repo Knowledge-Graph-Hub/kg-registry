@@ -35,11 +35,11 @@ products:
   secondary_source:
   - scibite
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-25_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-09-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-27_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-09-27: HTTP 404 error
     when accessing file'
 ---
 SciBite

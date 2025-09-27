@@ -10,6 +10,8 @@ contacts:
         value: "jaiswalp"
     label: Pankaj Jaiswal
     orcid: 0000-0002-1005-8383
+collection:
+- ber
 creation_date: '2025-07-10T00:00:00Z'
 description: A controlled vocabulary to describe phenotypic traits in plants. Each trait is a distinguishable feature, characteristic, quality or phenotypic feature of a developing or mature plant.
 domains:

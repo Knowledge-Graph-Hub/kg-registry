@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataSource
+collection:
+- ber
 contacts:
 - category: Organization
   label: Systems Biology Research Group at the University of California, San Diego

@@ -1,6 +1,9 @@
 ---
 layout: resource_detail
 activity_status: active
+collection:
+- ber
+- translator
 id: eco-kg
 name: eco-KG
 description: A knowledge graph of plant traits starting with Planteome and EOL TraitBank.
@@ -50,8 +53,6 @@ products:
   connection_url: https://kghub.org/eco-kg/api
   original_source:
   - eco-kg
-collection:
-- translator
 ---
 
 eco-KG: a knowledge graph of plant traits starting with Planteome and EOL TraitBank. The graph integrates data from various sources related to plant phenotypes, traits, and ecological relationships.

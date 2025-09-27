@@ -97,11 +97,11 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-24_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-25_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-09-24: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-09-27: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -144,15 +144,15 @@ products:
   secondary_source:
   - oma
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-24_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-27_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-09-23_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-25_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-05_ HTTP 502 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-09-24: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-09-27: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple

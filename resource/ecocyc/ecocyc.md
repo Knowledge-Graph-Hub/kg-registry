@@ -3,6 +3,7 @@ activity_status: active
 category: DataSource
 collection:
 - translator
+- ber
 contacts:
 - category: Organization
   contact_details:

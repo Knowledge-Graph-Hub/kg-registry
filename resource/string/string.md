@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataSource
+collection:
+- ber
 contacts:
 - category: Organization
   contact_details:

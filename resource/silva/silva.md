@@ -9,6 +9,8 @@ contacts:
   - contact_type: url
     value: https://www.arb-silva.de/contact
   label: SILVA Team
+collection:
+- ber
 creation_date: '2025-09-09T00:00:00Z'
 description: SILVA is a comprehensive online resource for quality checked and aligned
   ribosomal RNA sequence data. It provides regularly updated datasets of aligned small

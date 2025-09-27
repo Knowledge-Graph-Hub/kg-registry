@@ -6,9 +6,9 @@ id: globi.fields.json
 name: interactionFields.json
 product_url: https://api.globalbioticinteractions.org/interactionFields?type=json
 warnings:
-- File was not able to be retrieved when checked on 2025-09-24_ No Content-Length
+- File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
   header found
-- File was not able to be retrieved when checked on 2025-09-23_ No Content-Length
+- File was not able to be retrieved when checked on 2025-09-25_ No Content-Length
   header found
 layout: product_detail
 ---

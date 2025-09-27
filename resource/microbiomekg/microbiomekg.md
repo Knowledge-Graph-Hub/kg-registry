@@ -6,6 +6,7 @@ layout: resource_detail
 activity_status: active
 collection:
 - translator
+- ber
 domains:
   - biomedical
   - systems biology

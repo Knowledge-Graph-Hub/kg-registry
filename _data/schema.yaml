@@ -544,6 +544,11 @@ enums:
         description: This entity incorporates the Adverse Outcome Pathways (AOP) framework
           in some manner.
         meaning: https://aopwiki.org/
+      ber:
+        text: ber
+        description: A resource or product relevant to the US Department of Energy
+          Biological and Environmental Research (BER) program.
+        meaning: https://www.energy.gov/science/ber/biological-and-environmental-research
       translator:
         text: translator
         description: This entity is part of those developed and used by the NCATS

@@ -7,6 +7,8 @@ contacts:
   - contact_type: url
     value: https://signor.uniroma2.it/contact.php
   label: SIGNOR Team (University of Rome Tor Vergata & Sapienza University of Rome)
+collection:
+- ber
 creation_date: '2025-08-12T00:00:00Z'
 description: "SIGNOR (SIGnaling Network Open Resource) is a manually curated repository\
   \ of experimentally supported, causal relationships between human proteins and other\
