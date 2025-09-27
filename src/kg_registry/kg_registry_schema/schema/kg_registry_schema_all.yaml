@@ -508,6 +508,10 @@ enums:
     description: General-purpose tags that can be associated with resources.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     permissible_values:
+      ber:
+        text: ber
+        description: A resource or product relevant to the US Department of Energy
+          Biological and Environmental Research (BER) program.
       biopragmatics:
         text: biopragmatics
         description: A resource or product aggregated by the BioPragmatics project.

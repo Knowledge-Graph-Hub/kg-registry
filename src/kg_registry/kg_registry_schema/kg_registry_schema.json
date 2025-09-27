@@ -3660,6 +3660,7 @@
         "TagEnum": {
             "description": "General-purpose tags that can be associated with resources.",
             "enum": [
+                "ber",
                 "biopragmatics",
                 "core",
                 "translator"

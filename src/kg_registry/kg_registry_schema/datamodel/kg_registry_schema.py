@@ -573,6 +573,10 @@ class TagEnum(str, Enum):
     """
     General-purpose tags that can be associated with resources.
     """
+    ber = "ber"
+    """
+    A resource or product relevant to the US Department of Energy Biological and Environmental Research (BER) program.
+    """
     biopragmatics = "biopragmatics"
     """
     A resource or product aggregated by the BioPragmatics project.
