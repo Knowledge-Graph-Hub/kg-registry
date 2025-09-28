@@ -171,50 +171,70 @@ class OBOFoundrySync:
                 'label': str(license_info) if license_info else 'Not specified'
             }
         
-        # Extract contact information
+        # Enhancement 1: Transform contact information to Contact class objects
         contacts = []
         contact_info = obo_ontology.get('contact')
         if contact_info:
             if isinstance(contact_info, dict):
-                contact_details = []
-                if contact_info.get('email'):
-                    contact_details.append(f"Email: {contact_info['email']}")
-                if contact_info.get('github'):
-                    contact_details.append(f"GitHub: {contact_info['github']}")
-                if contact_info.get('orcid'):
-                    contact_details.append(f"ORCID: {contact_info['orcid']}")
+                contact_obj = {
+                    'category': 'Individual'  # Use Individual as default Contact category
+                }
                 
-                contacts.append({
-                    'category': 'contact',
-                    'contact_details': '; '.join(contact_details)
-                })
+                # Add label if available
+                if contact_info.get('label'):
+                    contact_obj['label'] = contact_info['label']
+                
+                # Add contact details (email as primary contact method)
+                if contact_info.get('email'):
+                    contact_obj['contact_details'] = contact_info['email']
+                
+                # Add ORCID if available  
+                if contact_info.get('orcid'):
+                    contact_obj['orcid'] = contact_info['orcid']
+                
+                # Add GitHub as additional info in contact_details if no email
+                if not contact_info.get('email') and contact_info.get('github'):
+                    contact_obj['contact_details'] = f"GitHub: {contact_info['github']}"
+                
+                contacts.append(contact_obj)
+            elif isinstance(contact_info, str):
+                # Handle simple string contact
+                contact_obj = {
+                    'category': 'Individual'
+                }
+                if '@' in contact_info:
+                    contact_obj['contact_details'] = contact_info
+                else:
+                    contact_obj['label'] = contact_info
+                contacts.append(contact_obj)
         
-        # Extract products/releases
+        # Enhancement 2: Include products as Product objects (per schema)
         products = []
         obo_products = obo_ontology.get('products', [])
         
-        for product in obo_products:
+        for i, product in enumerate(obo_products):
             if isinstance(product, dict):
-                product_name = product.get('id', product.get('title', 'Unknown'))
-                product_url = product.get('ontology_purl')
-                product_description = product.get('description', product.get('title', ''))
-                product_format = product.get('format', 'owl')
+                product_obj = {
+                    'name': product.get('id', product.get('title', f"{ontology_id}-product-{i+1}")),
+                    'description': product.get('description', product.get('title', f"Product for {title}"))
+                }
                 
-                if product_url:
-                    products.append({
-                        'name': product_name,
-                        'description': product_description,
-                        'url': product_url,
-                        'format': product_format
-                    })
+                # Add product URL if available
+                if product.get('ontology_purl'):
+                    product_obj['product_url'] = product['ontology_purl']
+                
+                # Add format information if available
+                if product.get('format'):
+                    product_obj['format'] = product['format']
+                
+                products.append(product_obj)
         
         # If no products found but ontology_purl exists, create a default product
         if not products and obo_ontology.get('ontology_purl'):
             products.append({
                 'name': f"{ontology_id}.owl",
                 'description': f"Primary OWL file for {title}",
-                'url': obo_ontology['ontology_purl'],
-                'format': 'owl'
+                'product_url': obo_ontology['ontology_purl']
             })
         
         # Get domain/categories and map to valid DomainEnum values
@@ -252,7 +272,7 @@ class OBOFoundrySync:
             'publications': publications,
             'collection': ['obo-foundry'],  # Add to OBO Foundry collection
             'layout': 'resource_detail',
-            'category': 'Resource'
+            'category': 'DataModel'  # Enhancement 3: Set category to DataModel for ontologies
         }
         
         # Add tags if available
@@ -289,8 +309,8 @@ class OBOFoundrySync:
             'category': resource_data['category']
         }
         
-        # Add optional fields
-        for field in ['domains', 'tags', 'taxon']:
+        # Add optional fields including enhanced Contact and Product objects
+        for field in ['domains', 'tags', 'taxon', 'contacts', 'products']:
             if field in resource_data:
                 frontmatter[field] = resource_data[field]
         
@@ -310,22 +330,33 @@ class OBOFoundrySync:
 
 """
         
-        # Add contacts section
+        # Add contacts section (enhanced Contact objects)
         if resource_data.get('contacts'):
             markdown_content += "## Contacts\n\n"
             for contact in resource_data['contacts']:
-                markdown_content += f"- {contact['contact_details']}\n"
+                contact_line = []
+                if contact.get('label'):
+                    contact_line.append(contact['label'])
+                if contact.get('contact_details'):
+                    contact_line.append(f"({contact['contact_details']})")
+                if contact.get('orcid'):
+                    contact_line.append(f"[ORCID: {contact['orcid']}](https://orcid.org/{contact['orcid']})")
+                
+                if contact_line:
+                    markdown_content += f"- {' '.join(contact_line)}\n"
+                else:
+                    markdown_content += f"- Contact (category: {contact.get('category', 'Unknown')})\n"
             markdown_content += "\n"
         
-        # Add products section
+        # Add products section (enhanced Product objects)
         if resource_data.get('products'):
             markdown_content += "## Products\n\n"
             for product in resource_data['products']:
                 markdown_content += f"### {product['name']}\n\n"
                 if product.get('description'):
                     markdown_content += f"{product['description']}\n\n"
-                if product.get('url'):
-                    markdown_content += f"**URL**: [{product['url']}]({product['url']})\n\n"
+                if product.get('product_url'):
+                    markdown_content += f"**URL**: [{product['product_url']}]({product['product_url']})\n\n"
                 if product.get('format'):
                     markdown_content += f"**Format**: {product['format']}\n\n"
         
@@ -422,14 +453,15 @@ class OBOFoundrySync:
             for ontology in ontologies:
                 ontology_id = ontology.get('id', '').lower()
                 
-                # Skip inactive or obsolete ontologies
+                # Enhancement 4: Include inactive/obsolete ontologies (don't skip them)
                 activity_status = ontology.get('activity_status', 'active')
                 is_obsolete = ontology.get('is_obsolete', False)
                 
-                if activity_status in ['inactive', 'orphaned'] or is_obsolete:
-                    logger.info(f"Skipping {ontology_id}: status={activity_status}, obsolete={is_obsolete}")
-                    stats['skipped'] += 1
-                    continue
+                # Log status but continue processing all ontologies
+                if activity_status in ['inactive', 'obsolete', 'orphaned'] or is_obsolete:
+                    logger.info(f"Processing {ontology_id} with status={activity_status}, obsolete={is_obsolete}")
+                else:
+                    logger.info(f"Processing active ontology: {ontology_id}")
                 
                 stats['processed'] += 1
                 
