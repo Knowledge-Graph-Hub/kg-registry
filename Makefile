@@ -76,19 +76,14 @@ ingest-kg-monarch:
 
 # Sync OBO Foundry ontologies to KG-Registry
 .PHONY: sync-obo-foundry sync-obo-foundry-dry-run sync-obo-foundry-test
-sync-obo-test: ## Test sync with OBO Foundry (limited to 5 ontologies)
-	poetry run python util/sync_obo_foundry.py --limit 5 --verbose
-
-sync-obo-dry-run: ## Dry run sync with OBO Foundry (shows what would be done)
-	poetry run python util/sync_obo_foundry.py --dry-run --verbose
 
 # Dry run to see what would be synced
 sync-obo-foundry-dry-run:
-	$(RUN) python util/sync_obo_foundry.py --dry-run
+	$(RUN) python util/sync_obo_foundry.py --dry-run --verbose
 
 # Test sync with limited number of ontologies
 sync-obo-foundry-test:
-	$(RUN) python util/sync_obo_foundry.py --limit 5
+	$(RUN) python util/sync_obo_foundry.py --limit 5 --verbose
 
 # Build the combined schema
 # Also write proper yaml header to it
