@@ -172,6 +172,13 @@ classes:
           The Infores ID of the resource.
           Do not include the 'infores' prefix.
         range: string
+      taxon:
+        description: >-
+          The taxon or taxa that the resource is relevant to.
+          This is preferably an NCBI Taxonomy identifier,
+          in CURIE format.
+        range: uriorcurie
+        multivalued: true
 
   KnowledgeGraph:
     description: >-

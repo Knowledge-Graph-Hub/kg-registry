@@ -184,6 +184,16 @@
                         "null"
                     ]
                 },
+                "taxon": {
+                    "description": "The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "usages": {
                     "description": "The usage(s) of the resource.",
                     "items": {
@@ -485,6 +495,16 @@
                     "description": "Tags associated with the resource.",
                     "items": {
                         "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "taxon": {
+                    "description": "The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -926,6 +946,16 @@
                     "description": "Tags associated with the resource.",
                     "items": {
                         "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "taxon": {
+                    "description": "The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -2129,6 +2159,16 @@
                     "description": "Tags associated with the resource.",
                     "items": {
                         "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "taxon": {
+                    "description": "The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -3588,6 +3628,16 @@
                     "description": "Tags associated with the resource.",
                     "items": {
                         "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "taxon": {
+                    "description": "The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",
