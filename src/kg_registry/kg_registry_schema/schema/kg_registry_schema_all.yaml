@@ -554,6 +554,11 @@ enums:
         description: This entity is part of those developed and used by the NCATS
           Biomedical Translator program.
         meaning: https://ncats.nih.gov/research/research-activities/translator
+      obo-foundry:
+        text: obo-foundry
+        description: This entity is an ontology from the OBO Foundry, a collaborative
+          effort to create reference ontologies in the biomedical domain.
+        meaning: https://obofoundry.org/
   DumpFormatEnum:
     name: DumpFormatEnum
     description: The format of a dump of a product, generally a graph, as a file.

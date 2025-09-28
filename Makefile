@@ -49,9 +49,9 @@ SCHEMA_DOC_DIR = docs/schema
 SCHEMA_DIR = src/kg_registry/kg_registry_schema
 
 ### Main Tasks
-.PHONY: all pull_and_build test pull clean
+.PHONY: all pull_and_build test pull clean sync-obo-foundry
 
-all: ingest-kg-monarch _config.yml registry/kgs.jsonld registry/parquet registry/parquet-downloads.html assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js $(SOURCE_SCHEMA_ALL) refresh-schema
+all: ingest-kg-monarch sync-obo-foundry _config.yml registry/kgs.jsonld registry/parquet registry/parquet-downloads.html assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js $(SOURCE_SCHEMA_ALL) refresh-schema
 
 # This is minimal for now, but
 # will be expanded to include other docs
@@ -73,6 +73,22 @@ integration-test: test valid-purl-report.txt
 .PHONY: ingest-kg-monarch
 ingest-kg-monarch:
 	$(RUN) python src/kg_registry/ingests/kg-monarch/kg-monarch.py
+
+# Sync OBO Foundry ontologies to KG-Registry
+.PHONY: sync-obo-foundry sync-obo-foundry-dry-run sync-obo-foundry-test
+sync-obo-test: ## Test sync with OBO Foundry (limited to 5 ontologies)
+	poetry run python util/sync_obo_foundry.py --limit 5 --verbose
+
+sync-obo-dry-run: ## Dry run sync with OBO Foundry (shows what would be done)
+	poetry run python util/sync_obo_foundry.py --dry-run --verbose
+
+# Dry run to see what would be synced
+sync-obo-foundry-dry-run:
+	$(RUN) python util/sync_obo_foundry.py --dry-run
+
+# Test sync with limited number of ontologies
+sync-obo-foundry-test:
+	$(RUN) python util/sync_obo_foundry.py --limit 5
 
 # Build the combined schema
 # Also write proper yaml header to it

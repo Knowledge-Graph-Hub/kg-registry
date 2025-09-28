@@ -625,6 +625,10 @@ class CollectionEnum(str, Enum):
     """
     This entity is part of those developed and used by the NCATS Biomedical Translator program.
     """
+    obo_foundry = "obo-foundry"
+    """
+    This entity is an ontology from the OBO Foundry, a collaborative effort to create reference ontologies in the biomedical domain.
+    """
 
 
 

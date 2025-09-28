@@ -226,7 +226,8 @@
             "enum": [
                 "aop",
                 "ber",
-                "translator"
+                "translator",
+                "obo-foundry"
             ],
             "title": "CollectionEnum",
             "type": "string"

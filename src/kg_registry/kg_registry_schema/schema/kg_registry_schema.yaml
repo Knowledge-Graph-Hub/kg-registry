@@ -972,4 +972,10 @@ enums:
         description: >-
           This entity is part of those developed and used
           by the NCATS Biomedical Translator program.
-        meaning: https://ncats.nih.gov/research/research-activities/translator 
+        meaning: https://ncats.nih.gov/research/research-activities/translator
+      obo-foundry:
+        description: >-
+          This entity is an ontology from the OBO Foundry,
+          a collaborative effort to create reference ontologies
+          in the biomedical domain.
+        meaning: https://obofoundry.org/ 
