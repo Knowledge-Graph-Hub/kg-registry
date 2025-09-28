@@ -184,17 +184,26 @@ class OBOFoundrySync:
                 if contact_info.get('label'):
                     contact_obj['label'] = contact_info['label']
                 
-                # Add contact details (email as primary contact method)
-                if contact_info.get('email'):
-                    contact_obj['contact_details'] = contact_info['email']
-                
                 # Add ORCID if available  
                 if contact_info.get('orcid'):
                     contact_obj['orcid'] = contact_info['orcid']
                 
-                # Add GitHub as additional info in contact_details if no email
-                if not contact_info.get('email') and contact_info.get('github'):
-                    contact_obj['contact_details'] = f"GitHub: {contact_info['github']}"
+                # Build contact_details list with proper structure
+                contact_details = []
+                if contact_info.get('email'):
+                    contact_details.append({
+                        'contact_type': 'email',
+                        'value': contact_info['email']
+                    })
+                
+                if contact_info.get('github'):
+                    contact_details.append({
+                        'contact_type': 'github', 
+                        'value': contact_info['github']
+                    })
+                
+                if contact_details:
+                    contact_obj['contact_details'] = contact_details
                 
                 contacts.append(contact_obj)
             elif isinstance(contact_info, str):
@@ -203,7 +212,10 @@ class OBOFoundrySync:
                     'category': 'Individual'
                 }
                 if '@' in contact_info:
-                    contact_obj['contact_details'] = contact_info
+                    contact_obj['contact_details'] = [{
+                        'contact_type': 'email',
+                        'value': contact_info
+                    }]
                 else:
                     contact_obj['label'] = contact_info
                 contacts.append(contact_obj)
@@ -214,27 +226,77 @@ class OBOFoundrySync:
         
         for i, product in enumerate(obo_products):
             if isinstance(product, dict):
+                # Generate unique Product ID: [Resource ID].[Product ID suffix]
+                product_id_raw = product.get('id', f"product-{i+1}")
+                
+                # If product ID doesn't start with resource ID, prefix it
+                if not product_id_raw.startswith(ontology_id):
+                    product_id = f"{ontology_id}.{product_id_raw}"
+                else:
+                    product_id = product_id_raw
+                
+                # Detect format from product ID, URL, or explicit format field
+                product_format = product.get('format', '')
+                if not product_format:
+                    # Try to detect from product ID or URL
+                    product_url = product.get('ontology_purl', '')
+                    if product_id.endswith('.owl'):
+                        product_format = 'owl'
+                    elif product_id.endswith('.obo'):
+                        product_format = 'obo'
+                    elif product_id.endswith('.json'):
+                        product_format = 'json'
+                    elif 'owl' in product_url.lower():
+                        product_format = 'owl'
+                    elif 'obo' in product_url.lower():
+                        product_format = 'obo'
+                    elif 'json' in product_url.lower():
+                        product_format = 'json'
+                    else:
+                        product_format = 'owl'  # Default to OWL
+                
+                # Use OBO Foundry description if available, otherwise create format-based description
+                obo_description = product.get('description') or product.get('title')
+                if obo_description:
+                    product_description = obo_description
+                else:
+                    # Create format-based description
+                    format_name = product_format.upper()
+                    product_description = f"{title} in {format_name} format"
+                
                 product_obj = {
-                    'name': product.get('id', product.get('title', f"{ontology_id}-product-{i+1}")),
-                    'description': product.get('description', product.get('title', f"Product for {title}"))
+                    'id': product_id,
+                    'name': product.get('title', product_id),
+                    'description': product_description,
+                    'format': product_format
                 }
                 
                 # Add product URL if available
                 if product.get('ontology_purl'):
                     product_obj['product_url'] = product['ontology_purl']
                 
-                # Add format information if available
-                if product.get('format'):
-                    product_obj['format'] = product['format']
-                
                 products.append(product_obj)
         
         # If no products found but ontology_purl exists, create a default product
         if not products and obo_ontology.get('ontology_purl'):
+            # Detect format from URL
+            ontology_url = obo_ontology['ontology_purl']
+            if 'obo' in ontology_url.lower():
+                default_format = 'obo'
+                default_id = f"{ontology_id}.obo"
+            elif 'json' in ontology_url.lower():
+                default_format = 'json'
+                default_id = f"{ontology_id}.json"
+            else:
+                default_format = 'owl'
+                default_id = f"{ontology_id}.owl"
+            
             products.append({
-                'name': f"{ontology_id}.owl",
-                'description': f"Primary OWL file for {title}",
-                'product_url': obo_ontology['ontology_purl']
+                'id': default_id,
+                'name': f"{title} ({default_format.upper()})",
+                'description': f"{title} in {default_format.upper()} format",
+                'product_url': obo_ontology['ontology_purl'],
+                'format': default_format
             })
         
         # Get domain/categories and map to valid DomainEnum values
@@ -337,8 +399,19 @@ class OBOFoundrySync:
                 contact_line = []
                 if contact.get('label'):
                     contact_line.append(contact['label'])
+                
+                # Handle contact_details list structure
                 if contact.get('contact_details'):
-                    contact_line.append(f"({contact['contact_details']})")
+                    contact_details = contact['contact_details']
+                    if isinstance(contact_details, list):
+                        # Find email for primary contact info
+                        email_detail = next((cd for cd in contact_details if cd.get('contact_type') == 'email'), None)
+                        if email_detail:
+                            contact_line.append(f"({email_detail['value']})")
+                    else:
+                        # Fallback for simple string contact_details
+                        contact_line.append(f"({contact_details})")
+                
                 if contact.get('orcid'):
                     contact_line.append(f"[ORCID: {contact['orcid']}](https://orcid.org/{contact['orcid']})")
                 
