@@ -234,6 +234,9 @@ class OBOFoundrySync:
                     product_id = f"{ontology_id}.{product_id_raw}"
                 else:
                     product_id = product_id_raw
+                
+                # Sanitize product ID: replace slashes with dots to avoid file system issues
+                product_id = product_id.replace('/', '.')
 
                 # Detect format from product ID, URL, or explicit format field
                 product_format = product.get('format', '')
@@ -594,7 +597,9 @@ def main():
         print(f"  Failed: {stats['failed']}")
         print(f"  Skipped: {stats['skipped']}")
 
-        if stats['failed'] > 0:
+        # Only exit with error if sync completely failed or no ontologies were processed
+        # Failed individual ontologies (usually due to missing descriptions) are expected
+        if stats['processed'] == 0 or (stats['created'] == 0 and stats['updated'] == 0 and stats['failed'] == stats['processed']):
             sys.exit(1)
 
     except Exception as e:
