@@ -85,6 +85,10 @@ sync-obo-foundry-dry-run:
 sync-obo-foundry-test:
 	$(RUN) python util/sync_obo_foundry.py --limit 5 --verbose
 
+# Full sync of OBO Foundry ontologies
+sync-obo-foundry:
+	$(RUN) python util/sync_obo_foundry.py --verbose
+
 # Build the combined schema
 # Also write proper yaml header to it
 $(SOURCE_SCHEMA_ALL):
@@ -153,7 +157,7 @@ registry/kgs.jsonld: registry/kgs.yml
 # generate both a report of the violations and a grid of all results
 # the grid is later used to sort the resources on the home page
 RESULTS = reports/metadata-violations.tsv reports/metadata-grid.csv
-reports/metadata-grid.csv: tmp/unsorted-resources-with-sizes.yml | extract-metadata reports
+reports/metadata-grid.csv: tmp/unsorted-resources-with-sizes.yml sync-obo-foundry | extract-metadata reports
 	./util/validate-metadata.py $< $(RESULTS)
 
 # generate an HTML output of the metadata grid
