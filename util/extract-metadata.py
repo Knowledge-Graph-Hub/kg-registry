@@ -279,6 +279,10 @@ def concat_resource_yaml(args):
                                 else:
                                     sanitized.append(w)
                             product["warnings"] = sanitized
+                        
+                        # Ensure directory exists before writing file
+                        file_path.parent.mkdir(parents=True, exist_ok=True)
+                        
                         with open(fn, "w") as f:
                             f.write("---\n" + yaml.dump(product) + layout_string + "\n---\n")
 
