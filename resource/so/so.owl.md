@@ -1,10 +1,8 @@
 ---
-category: DataModelProduct
-description: Main SO release in OWL Format
+description: Main SO OWL release
 format: owl
 id: so.owl
-name: SO OWL
-product_file_size: 290294
+name: Main SO OWL release
 product_url: http://purl.obolibrary.org/obo/so.owl
 layout: product_detail
 ---

@@ -1,101 +1,126 @@
 ---
 activity_status: active
-category: DataSource
+category: DataModel
+collection:
+- obo-foundry
 contacts:
-- category: Organization
-  label: ChEBI
-description: "Chemical Entities of Biological Interest (ChEBI) is a freely available\
-  \ dictionary of molecular entities focused on \u2018small\u2019 chemical compounds."
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: amalik@ebi.ac.uk
+  - contact_type: github
+    value: amalik01
+  label: Adnan Malik
+  orcid: 0000-0001-8123-5351
+description: A structured classification of molecular entities of biological interest
+  focusing on 'small' chemical compounds.
 domains:
 - chemistry and biochemistry
-homepage_url: https://www.ebi.ac.uk/chebi/
+homepage_url: http://www.ebi.ac.uk/chebi
 id: chebi
 layout: resource_detail
 license:
-  id: https://creativecommons.org/licenses/by-sa/4.0/
-  label: CC-BY-SA-4.0
-name: ChEBI
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Chemical Entities of Biological Interest
 products:
-- category: MappingProduct
-  description: bigg.metabolite SSSOM
-  format: sssom
-  id: obo-db-ingest.bigg.metabolite.sssom.tsv
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.metabolite SSSOM
+- description: Chemical Entities of Biological Interest in OWL format
+  format: owl
+  id: chebi.owl
+  name: chebi.owl
+  product_url: http://purl.obolibrary.org/obo/chebi.owl
+- description: Chemical Entities of Biological Interest in OBO format
+  format: obo
+  id: chebi.obo
+  name: chebi.obo
+  product_url: http://purl.obolibrary.org/obo/chebi.obo
+- description: chebi, compressed owl
+  format: owl
+  id: chebi.owl.gz
+  name: chebi, compressed owl
+  product_file_size: 59478339
+  product_url: http://purl.obolibrary.org/obo/chebi.owl.gz
+- description: chebi_lite, no syns or xrefs
+  format: obo
+  id: chebi.chebi_lite.obo
+  name: chebi_lite, no syns or xrefs
+  product_url: http://purl.obolibrary.org/obo/chebi/chebi_lite.obo
+- description: chebi_core, no xrefs
+  format: obo
+  id: chebi.chebi_core.obo
+  name: chebi_core, no xrefs
+  product_url: http://purl.obolibrary.org/obo/chebi/chebi_core.obo
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
+  name: Bioteque Embeddings
   original_source:
   - chebi
-  - bigg
-  - biocyc
-  - kegg
+  - cosmic
+  - achilles
+  - depmap
+  - ccle
+  - gdsc
+  - cellosaurus
+  - clue
+  - ctd
+  - pharmacodb
+  - prism
+  - drugbank
+  - lincs
+  - compartments
+  - offsides
+  - sider
+  - drugcentral
+  - repohub
+  - chemicalchecker
+  - repodb
+  - disgenet
+  - opentargets
+  - creeds
+  - interpro
   - reactome
-  product_file_size: 400516
-  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
+  - tissues
+  - dorothea
+  - progeny
+  - gtex
+  - hpa
+  - go
+  - corum
+  - huri
+  - intact
+  - omnipath
+  - string
+  - bto
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   secondary_source:
-  - obo-db-ingest
-- category: Product
-  compression: gzip
-  description: ChEBI chemical structures and additional data in SDF format. This file
-    contains only the chemical structure, ChEBI identifier and ChEBI Name.
-  format: chebi_sdf
-  id: chebi.structures.lite
-  license:
-    id: https://creativecommons.org/licenses/by-sa/4.0/
-    label: CC-BY-SA-4.0
-  name: ChEBI structures (lite)
+  - bioteque
+- description: The MechRepoNet knowledge graph in its original format
+  id: mechreponet.kg
+  name: MechRepoNet Knowledge Graph
   original_source:
-  - chebi
-  product_file_size: 17128008
-  product_url: https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/ChEBI_lite_3star.sdf.gz
-  secondary_source:
-  - chebi
-- category: Product
-  compression: gzip
-  description: ChEBI chemical structures and additional data in SDF format. This file
-    contains all the chemical structures and associated information. Note that it
-    excludes any ontological information as ontological classes are not able to be
-    represented as they do not contain a structure.
-  format: chebi_sdf
-  id: chebi.structures.complete
-  license:
-    id: https://creativecommons.org/licenses/by-sa/4.0/
-    label: CC-BY-SA-4.0
-  name: ChEBI structures (complete)
-  original_source:
-  - chebi
-  product_file_size: 59170179
-  product_url: https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/ChEBI_complete_3star.sdf.gz
-  secondary_source:
-  - chebi
-- category: GraphProduct
-  description: Nodes for the Drug Approvals KP, v0.3.9
-  format: kgx
-  id: drug-approvals-kp.graph.nodes
-  name: Drug Approvals KP Graph Nodes
-  original_source:
-  - chebi
+  - ctd
   - do
-  - hp
-  - mondo
-  product_file_size: 701451
-  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
-  secondary_source:
-  - drug-approvals-kp
-- category: GraphProduct
-  description: Edges for the Drug Approvals KP, v0.3.9
-  format: kgx
-  id: drug-approvals-kp.graph.edges
-  name: Drug Approvals KP Graph Edges
-  original_source:
+  - go
   - chebi
-  - do
+  - reactome
+  - interpro
   - hp
-  - mondo
-  product_file_size: 31052966
-  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
+  - cl
+  - pr
+  - uberon
+  - ncbitaxon
+  - hetionet
+  - complexportal
+  - rnacentral
+  - mirtarbase
+  - unii
+  - biolink
+  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
   secondary_source:
-  - drug-approvals-kp
+  - mechreponet
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -414,227 +439,24 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-- category: Product
-  description: Network embeddings of the Bioteque graph that represent biological
-    entities and their associations
-  id: bioteque.embeddings
-  name: Bioteque Embeddings
-  original_source:
-  - chebi
-  - cosmic
-  - achilles
-  - depmap
-  - ccle
-  - gdsc
-  - cellosaurus
-  - clue
-  - ctd
-  - pharmacodb
-  - prism
-  - drugbank
-  - lincs
-  - compartments
-  - offsides
-  - sider
-  - drugcentral
-  - repohub
-  - chemicalchecker
-  - repodb
-  - disgenet
-  - opentargets
-  - creeds
-  - interpro
-  - reactome
-  - tissues
-  - dorothea
-  - progeny
-  - gtex
-  - hpa
-  - go
-  - corum
-  - huri
-  - intact
-  - omnipath
-  - string
-  - bto
-  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
-  secondary_source:
-  - bioteque
-- category: DataModelProduct
-  description: The latest release of Plant Trait Ontology in OWL format
-  format: owl
-  id: to.owl
-  latest_version: v2025-05-20
+- category: MappingProduct
+  description: bigg.metabolite SSSOM
+  format: sssom
+  id: obo-db-ingest.bigg.metabolite.sssom.tsv
   license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology OWL
+    id: http://bigg.ucsd.edu/license#license
+    label: Custom
+  name: bigg.metabolite SSSOM
   original_source:
-  - to
   - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 212124
-  product_url: http://purl.obolibrary.org/obo/to.owl
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
-- category: DataModelProduct
-  description: The latest release of Plant Trait Ontology in OBO format
-  format: obo
-  id: to.obo
-  latest_version: v2025-05-20
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology OBO
-  original_source:
-  - to
-  - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 158383
-  product_url: http://purl.obolibrary.org/obo/to.obo
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
-- category: DataModelProduct
-  description: The Basic subset of the Plant Trait Ontology in OBO format
-  format: obo
-  id: to-basic.obo
-  latest_version: v2025-05-20
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology Basic OBO
-  original_source:
-  - to
-  - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 111996
-  product_url: http://purl.obolibrary.org/obo/to/subsets/to-basic.obo
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
-- description: The MechRepoNet knowledge graph in its original format
-  id: mechreponet.kg
-  name: MechRepoNet Knowledge Graph
-  original_source:
-  - ctd
-  - do
-  - go
-  - chebi
+  - bigg
+  - biocyc
+  - kegg
   - reactome
-  - interpro
-  - hp
-  - cl
-  - pr
-  - uberon
-  - ncbitaxon
-  - hetionet
-  - complexportal
-  - rnacentral
-  - mirtarbase
-  - unii
-  - biolink
-  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+  product_file_size: 400516
+  product_url: https://w3id.org/biopragmatics/resources/bigg.metabolite/bigg.metabolite.sssom.tsv
   secondary_source:
-  - mechreponet
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-  compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
-  dump_format: other
-  format: mixed
-  id: drugmechdb.graph
-  latest_version: 2.0.1
-  name: DrugMechDB Graph Dataset
-  original_source:
-  - go
-  - cl
-  - mesh
-  - chebi
-  - drugbank
-  - interpro
-  - uberon
-  - pr
-  - ncbitaxon
-  - reactome
-  - hp
-  - uniprot
-  product_url: https://doi.org/10.5281/zenodo.8139357
-  repository: https://github.com/SuLab/DrugMechDB
-  versions:
-  - 2.0.1
-  - 2.0.0
-  - 1.0.2
-  - '1.0'
+  - obo-db-ingest
 - category: GraphProduct
   description: PheKnowLator graph files, including subsets with and without inverse
     relations.
@@ -678,42 +500,92 @@ products:
   - v3.0.2
   - v4.0.0
   - current_build
-- category: DataModelProduct
-  description: OWL release of VO
-  format: owl
-  id: vo.owl
-  name: Vaccine Ontology OWL release
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+  compression: zip
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
+  dump_format: other
+  format: mixed
+  id: drugmechdb.graph
+  latest_version: 2.0.1
+  name: DrugMechDB Graph Dataset
   original_source:
-  - bfo
-  - iao
+  - go
+  - cl
+  - mesh
   - chebi
-  - ncbitaxon
-  - vo
-  product_file_size: 1466262
-  product_url: http://purl.obolibrary.org/obo/vo.owl
-  secondary_source:
-  - vo
-- category: DataModelProduct
-  description: CLO merged OWL release
-  format: owl
-  id: clo.owl
-  name: CLO OWL
-  original_source:
-  - clo
-  - chebi
+  - drugbank
+  - interpro
   - uberon
+  - pr
   - ncbitaxon
-  - do
-  - bfo
-  - iao
-  - dc
-  - skos
+  - reactome
+  - hp
+  - uniprot
+  product_url: https://doi.org/10.5281/zenodo.8139357
+  repository: https://github.com/SuLab/DrugMechDB
+  versions:
+  - 2.0.1
+  - 2.0.0
+  - 1.0.2
+  - '1.0'
+- category: ProgrammingInterface
+  description: TRAPI web API for querying MicrobiomeKG
+  format: http
+  id: microbiomekg.api
+  name: MicrobiomeKG Plover API
+  original_source:
+  - biolink
+  - chebi
+  - ncbitaxon
+  - ncbigene
+  - mesh
+  - pubchem
+  - go
+  - mondo
+  - ncit
   - efo
-  - ro
-  product_file_size: 2121232
-  product_url: http://purl.obolibrary.org/obo/clo.owl
+  - uniprot
+  - rhea
+  - pr
+  - uberon
+  - panther
+  - hgnc
+  - drugbank
+  - eupathdb
+  product_url: https://multiomics.transltr.io/mbkp
   secondary_source:
-  - clo
+  - microbiomekg
+- category: GraphProduct
+  description: Nodes for the Drug Approvals KP, v0.3.9
+  format: kgx
+  id: drug-approvals-kp.graph.nodes
+  name: Drug Approvals KP Graph Nodes
+  original_source:
+  - chebi
+  - do
+  - hp
+  - mondo
+  product_file_size: 701451
+  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
+  secondary_source:
+  - drug-approvals-kp
+- category: GraphProduct
+  description: Edges for the Drug Approvals KP, v0.3.9
+  format: kgx
+  id: drug-approvals-kp.graph.edges
+  name: Drug Approvals KP Graph Edges
+  original_source:
+  - chebi
+  - do
+  - hp
+  - mondo
+  product_file_size: 31052966
+  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
+  secondary_source:
+  - drug-approvals-kp
 - category: GraphProduct
   description: RNA-KG as a Neo4j Dump
   format: neo4j
@@ -795,33 +667,104 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
   secondary_source:
   - rna-kg
-- category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
-  format: http
-  id: microbiomekg.api
-  name: MicrobiomeKG Plover API
+- category: DataModelProduct
+  description: The Basic subset of the Plant Trait Ontology in OBO format
+  format: obo
+  id: to-basic.obo
+  latest_version: v2025-05-20
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+  name: Plant Trait Ontology Basic OBO
   original_source:
-  - biolink
+  - to
   - chebi
+  - ro
   - ncbitaxon
-  - ncbigene
-  - mesh
-  - pubchem
   - go
-  - mondo
-  - ncit
-  - efo
-  - uniprot
-  - rhea
-  - pr
+  - omo
+  - ecto
+  - ido
+  - oio
+  - pato
+  - envo
+  - ohmi
+  - iao
+  - omrse
+  - obi
+  - peco
+  - po
   - uberon
-  - panther
-  - hgnc
-  - drugbank
-  - eupathdb
-  product_url: https://multiomics.transltr.io/mbkp
+  - ogms
+  - bfo
+  product_file_size: 111996
+  product_url: http://purl.obolibrary.org/obo/to/subsets/to-basic.obo
   secondary_source:
-  - microbiomekg
+  - to
+  versions:
+  - v2025-05-20
+  - v2023-07-17
+  - v2022-04-13
+  - v2022-03-09
+  - v2021-04-06
 repository: https://github.com/ebi-chebi/ChEBI
 ---
-ChEBI
+## Description
+
+A structured classification of molecular entities of biological interest focusing on 'small' chemical compounds.
+
+## Contacts
+
+- Adnan Malik (amalik@ebi.ac.uk) [ORCID: 0000-0001-8123-5351](https://orcid.org/0000-0001-8123-5351)
+
+## Products
+
+### chebi.owl
+
+Chemical Entities of Biological Interest in OWL format
+
+**URL**: [http://purl.obolibrary.org/obo/chebi.owl](http://purl.obolibrary.org/obo/chebi.owl)
+
+**Format**: owl
+
+### chebi.obo
+
+Chemical Entities of Biological Interest in OBO format
+
+**URL**: [http://purl.obolibrary.org/obo/chebi.obo](http://purl.obolibrary.org/obo/chebi.obo)
+
+**Format**: obo
+
+### chebi, compressed owl
+
+chebi, compressed owl
+
+**URL**: [http://purl.obolibrary.org/obo/chebi.owl.gz](http://purl.obolibrary.org/obo/chebi.owl.gz)
+
+**Format**: owl
+
+### chebi_lite, no syns or xrefs
+
+chebi_lite, no syns or xrefs
+
+**URL**: [http://purl.obolibrary.org/obo/chebi/chebi_lite.obo](http://purl.obolibrary.org/obo/chebi/chebi_lite.obo)
+
+**Format**: obo
+
+### chebi_core, no xrefs
+
+chebi_core, no xrefs
+
+**URL**: [http://purl.obolibrary.org/obo/chebi/chebi_core.obo](http://purl.obolibrary.org/obo/chebi/chebi_core.obo)
+
+**Format**: obo
+
+## Publications
+
+- [ChEBI in 2016: Improved services and an expanding collection of metabolites.](https://www.ncbi.nlm.nih.gov/pubmed/26467479)
+
+**Domains**: chemistry and biochemistry
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

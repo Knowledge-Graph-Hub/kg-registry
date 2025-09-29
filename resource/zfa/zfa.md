@@ -1,14 +1,42 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for zfa. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+collection:
+- obo-foundry
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: van_slyke@zfin.org
+  - contact_type: github
+    value: cerivs
+  label: Ceri Van Slyke
+  orcid: 0000-0002-2244-7917
+description: A structured controlled vocabulary of the anatomy and development of
+  the Zebrafish
 domains:
-- stub
+- anatomy and development
+homepage_url: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
 id: zfa
 layout: resource_detail
-name: Zfa
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Zebrafish anatomy and development ontology
 products:
+- description: Zebrafish anatomy and development ontology in OWL format
+  format: owl
+  id: zfa.owl
+  name: zfa.owl
+  product_file_size: 401719
+  product_url: http://purl.obolibrary.org/obo/zfa.owl
+- description: Zebrafish anatomy and development ontology in OBO format
+  format: obo
+  id: zfa.obo
+  name: zfa.obo
+  product_file_size: 254974
+  product_url: http://purl.obolibrary.org/obo/zfa.obo
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -115,10 +143,44 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+repository: https://github.com/cerivs/zebrafish-anatomical-ontology
+taxon:
+- NCBITaxon:7954
 ---
-# Zfa
+## Description
 
-This is an automatically generated stub page for zfa. Please update with proper information.
+A structured controlled vocabulary of the anatomy and development of the Zebrafish
+
+## Contacts
+
+- Ceri Van Slyke (van_slyke@zfin.org) [ORCID: 0000-0002-2244-7917](https://orcid.org/0000-0002-2244-7917)
+
+## Products
+
+### zfa.owl
+
+Zebrafish anatomy and development ontology in OWL format
+
+**URL**: [http://purl.obolibrary.org/obo/zfa.owl](http://purl.obolibrary.org/obo/zfa.owl)
+
+**Format**: owl
+
+### zfa.obo
+
+Zebrafish anatomy and development ontology in OBO format
+
+**URL**: [http://purl.obolibrary.org/obo/zfa.obo](http://purl.obolibrary.org/obo/zfa.obo)
+
+**Format**: obo
+
+## Publications
+
+- [The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio.](https://www.ncbi.nlm.nih.gov/pubmed/24568621)
+
+**Domains**: anatomy and development
+
+**Taxon**: NCBITaxon:7954
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

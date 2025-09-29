@@ -1,12 +1,8 @@
 ---
-category: DataModelProduct
-description: The latest release of UO in OBO format
+description: Units of measurement ontology in OBO format
 format: obo
 id: uo.obo
-name: UO OBO
-original_source:
-- uo
-product_file_size: 19376
+name: uo.obo
 product_url: http://purl.obolibrary.org/obo/uo.obo
 layout: product_detail
 ---

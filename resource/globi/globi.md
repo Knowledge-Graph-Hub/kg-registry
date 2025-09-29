@@ -57,9 +57,11 @@ products:
   name: GloBI interpreted interactions (CSV)
   product_url: https://zenodo.org/record/14640564/files/interactions.csv.gz
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-28_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-09-27: No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-09-29: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -79,9 +81,11 @@ products:
   name: GloBI verbatim interactions (CSV)
   product_url: https://zenodo.org/record/14640564/files/verbatim-interactions.csv.gz
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-28_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-09-27: No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-09-29: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -99,9 +103,11 @@ products:
   name: GloBI refuted interactions (CSV)
   product_url: https://zenodo.org/record/14640564/files/refuted-interactions.csv.gz
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-28_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-09-27: No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-09-29: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -112,9 +118,11 @@ products:
   name: GloBI refuted verbatim interactions (CSV)
   product_url: https://zenodo.org/record/14640564/files/refuted-verbatim-interactions.csv.gz
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-28_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-09-27: No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-09-29: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -148,9 +156,11 @@ products:
   name: GloBI datasets index (CSV)
   product_url: https://zenodo.org/record/14640564/files/datasets.csv.gz
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-28_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-09-27: No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-09-29: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -184,9 +194,11 @@ products:
   name: GloBI data citations (CSV)
   product_url: https://zenodo.org/record/14640564/files/citations.csv.gz
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-28_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-09-27: No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-09-29: No Content-Length
     header found'
 - category: Product
   compression: gzip
@@ -203,9 +215,11 @@ products:
   name: interactionFields.json
   product_url: https://api.globalbioticinteractions.org/interactionFields?type=json
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-28_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-09-27: No Content-Length
+  - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-09-29: No Content-Length
     header found'
 - category: Product
   description: Field (column) definitions CSV endpoint

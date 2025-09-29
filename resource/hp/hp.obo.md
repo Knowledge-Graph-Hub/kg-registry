@@ -1,14 +1,9 @@
 ---
-category: DataModelProduct
-description: OBO release of HP
+description: Simple, manually curated version of the ontology without the use of a
+  reasoner, and without any imported terms, in OBO file format.
 format: obo
 id: hp.obo
-name: Human Phenotype Ontology OBO release
-original_source:
-- hp
-product_file_size: 10151040
+name: Official HPO release in OBO format
 product_url: http://purl.obolibrary.org/obo/hp.obo
-secondary_source:
-- hp
 layout: product_detail
 ---

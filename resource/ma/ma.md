@@ -1,14 +1,42 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for ma. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+collection:
+- obo-foundry
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: Terry.Hayamizu@jax.org
+  - contact_type: github
+    value: tfhayamizu
+  label: Terry Hayamizu
+  orcid: 0000-0002-0956-8634
+description: A structured controlled vocabulary of the adult anatomy of the mouse
+  (Mus).
 domains:
-- stub
+- anatomy and development
+homepage_url: https://github.com/obophenotype/mouse-anatomy-ontology
 id: ma
 layout: resource_detail
-name: Ma
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Mouse adult gross anatomy
 products:
+- description: Mouse adult gross anatomy in OWL format
+  format: owl
+  id: ma.owl
+  name: ma.owl
+  product_file_size: 2699120
+  product_url: http://purl.obolibrary.org/obo/ma.owl
+- description: Mouse adult gross anatomy in OBO format
+  format: obo
+  id: ma.obo
+  name: ma.obo
+  product_file_size: 391635
+  product_url: http://purl.obolibrary.org/obo/ma.obo
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -115,10 +143,40 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+repository: https://github.com/obophenotype/mouse-anatomy-ontology
+taxon:
+- NCBITaxon:10088
 ---
-# Ma
+## Description
 
-This is an automatically generated stub page for ma. Please update with proper information.
+A structured controlled vocabulary of the adult anatomy of the mouse (Mus).
+
+## Contacts
+
+- Terry Hayamizu (Terry.Hayamizu@jax.org) [ORCID: 0000-0002-0956-8634](https://orcid.org/0000-0002-0956-8634)
+
+## Products
+
+### ma.owl
+
+Mouse adult gross anatomy in OWL format
+
+**URL**: [http://purl.obolibrary.org/obo/ma.owl](http://purl.obolibrary.org/obo/ma.owl)
+
+**Format**: owl
+
+### ma.obo
+
+Mouse adult gross anatomy in OBO format
+
+**URL**: [http://purl.obolibrary.org/obo/ma.obo](http://purl.obolibrary.org/obo/ma.obo)
+
+**Format**: obo
+
+**Domains**: anatomy and development
+
+**Taxon**: NCBITaxon:10088
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataModel
+collection:
+- obo-foundry
 contacts:
 - category: Individual
   contact_details:
@@ -10,29 +12,28 @@ contacts:
     value: phismith
   label: Barry Smith
   orcid: 0000-0003-1384-116X
-description: The Basic Formal Ontology (BFO) is the upper-level ontology upon which
-  OBO Foundry ontologies are built. It provides a genuine upper ontology to support
-  domain ontologies developed for scientific research, particularly in biomedicine.
+description: The upper level ontology upon which OBO Foundry ontologies are built.
 domains:
-- upper
+- biological systems
 homepage_url: http://ifomis.org/bfo/
 id: bfo
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
-name: Basic Formal Ontology (BFO)
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Basic Formal Ontology
 products:
-- description: The latest release of BFO in OWL format.
+- description: Basic Formal Ontology in OWL format
   format: owl
   id: bfo.owl
-  name: BFO OWL
+  name: bfo.owl
   product_file_size: 20902
   product_url: http://purl.obolibrary.org/obo/bfo.owl
-- description: The latest release of BFO in OBO format.
+- description: Basic Formal Ontology in OBO format
   format: obo
   id: bfo.obo
-  name: BFO OBO
+  name: bfo.obo
   product_file_size: 17898
   product_url: http://purl.obolibrary.org/obo/bfo.obo
 - category: DataModelProduct
@@ -142,86 +143,6 @@ products:
   secondary_source:
   - efo
 - category: DataModelProduct
-  description: The latest release of Plant Trait Ontology in OWL format
-  format: owl
-  id: to.owl
-  latest_version: v2025-05-20
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology OWL
-  original_source:
-  - to
-  - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 212124
-  product_url: http://purl.obolibrary.org/obo/to.owl
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
-- category: DataModelProduct
-  description: The latest release of Plant Trait Ontology in OBO format
-  format: obo
-  id: to.obo
-  latest_version: v2025-05-20
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology OBO
-  original_source:
-  - to
-  - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 158383
-  product_url: http://purl.obolibrary.org/obo/to.obo
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
-- category: DataModelProduct
   description: The Basic subset of the Plant Trait Ontology in OBO format
   format: obo
   id: to-basic.obo
@@ -261,44 +182,36 @@ products:
   - v2022-04-13
   - v2022-03-09
   - v2021-04-06
-- category: DataModelProduct
-  description: OWL release of VO
-  format: owl
-  id: vo.owl
-  name: Vaccine Ontology OWL release
-  original_source:
-  - bfo
-  - iao
-  - chebi
-  - ncbitaxon
-  - vo
-  product_file_size: 1466262
-  product_url: http://purl.obolibrary.org/obo/vo.owl
-  secondary_source:
-  - vo
-- category: DataModelProduct
-  description: CLO merged OWL release
-  format: owl
-  id: clo.owl
-  name: CLO OWL
-  original_source:
-  - clo
-  - chebi
-  - uberon
-  - ncbitaxon
-  - do
-  - bfo
-  - iao
-  - dc
-  - skos
-  - efo
-  - ro
-  product_file_size: 2121232
-  product_url: http://purl.obolibrary.org/obo/clo.owl
-  secondary_source:
-  - clo
 repository: https://github.com/BFO-ontology/BFO
 ---
-# Basic Formal Ontology (BFO)
+## Description
 
-The Basic Formal Ontology (BFO) is the upper-level ontology upon which OBO Foundry ontologies are built. It provides a genuine upper ontology to support domain ontologies developed for scientific research, particularly in biomedicine.
+The upper level ontology upon which OBO Foundry ontologies are built.
+
+## Contacts
+
+- Barry Smith (phismith@buffalo.edu) [ORCID: 0000-0003-1384-116X](https://orcid.org/0000-0003-1384-116X)
+
+## Products
+
+### bfo.owl
+
+Basic Formal Ontology in OWL format
+
+**URL**: [http://purl.obolibrary.org/obo/bfo.owl](http://purl.obolibrary.org/obo/bfo.owl)
+
+**Format**: owl
+
+### bfo.obo
+
+Basic Formal Ontology in OBO format
+
+**URL**: [http://purl.obolibrary.org/obo/bfo.obo](http://purl.obolibrary.org/obo/bfo.obo)
+
+**Format**: obo
+
+**Domains**: biological systems
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

@@ -1,14 +1,55 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for obi. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+collection:
+- obo-foundry
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: bpeters@lji.org
+  - contact_type: github
+    value: bpeters42
+  label: Bjoern Peters
+  orcid: 0000-0002-8457-6693
+description: An integrated ontology for the description of life-science and clinical
+  investigations
 domains:
-- stub
+- biomedical
+homepage_url: http://obi-ontology.org
 id: obi
 layout: resource_detail
-name: Obi
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Ontology for Biomedical Investigations
 products:
+- description: The full version of OBI in OWL format
+  format: owl
+  id: obi.owl
+  name: OBI
+  product_file_size: 724538
+  product_url: http://purl.obolibrary.org/obo/obi.owl
+- description: The OBO-format version of OBI
+  format: obo
+  id: obi.obo
+  name: OBI in OBO
+  product_file_size: 299710
+  product_url: http://purl.obolibrary.org/obo/obi.obo
+- description: A collection of important high-level terms and their relations from
+    OBI and other ontologies
+  format: owl
+  id: obi.obi_core.owl
+  name: OBI Core
+  product_file_size: 47011
+  product_url: http://purl.obolibrary.org/obo/obi/obi_core.owl
+- description: Base module for OBI
+  format: owl
+  id: obi.obi-base.owl
+  name: OBI Base module
+  product_file_size: 604323
+  product_url: http://purl.obolibrary.org/obo/obi/obi-base.owl
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -243,86 +284,6 @@ products:
   secondary_source:
   - efo
 - category: DataModelProduct
-  description: The latest release of Plant Trait Ontology in OWL format
-  format: owl
-  id: to.owl
-  latest_version: v2025-05-20
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology OWL
-  original_source:
-  - to
-  - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 212124
-  product_url: http://purl.obolibrary.org/obo/to.owl
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
-- category: DataModelProduct
-  description: The latest release of Plant Trait Ontology in OBO format
-  format: obo
-  id: to.obo
-  latest_version: v2025-05-20
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology OBO
-  original_source:
-  - to
-  - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 158383
-  product_url: http://purl.obolibrary.org/obo/to.obo
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
-- category: DataModelProduct
   description: The Basic subset of the Plant Trait Ontology in OBO format
   format: obo
   id: to-basic.obo
@@ -362,10 +323,56 @@ products:
   - v2022-04-13
   - v2022-03-09
   - v2021-04-06
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+repository: https://github.com/obi-ontology/obi
 ---
-# Obi
+## Description
 
-This is an automatically generated stub page for obi. Please update with proper information.
+An integrated ontology for the description of life-science and clinical investigations
+
+## Contacts
+
+- Bjoern Peters (bpeters@lji.org) [ORCID: 0000-0002-8457-6693](https://orcid.org/0000-0002-8457-6693)
+
+## Products
+
+### OBI
+
+The full version of OBI in OWL format
+
+**URL**: [http://purl.obolibrary.org/obo/obi.owl](http://purl.obolibrary.org/obo/obi.owl)
+
+**Format**: owl
+
+### OBI in OBO
+
+The OBO-format version of OBI
+
+**URL**: [http://purl.obolibrary.org/obo/obi.obo](http://purl.obolibrary.org/obo/obi.obo)
+
+**Format**: obo
+
+### OBI Core
+
+A collection of important high-level terms and their relations from OBI and other ontologies
+
+**URL**: [http://purl.obolibrary.org/obo/obi/obi_core.owl](http://purl.obolibrary.org/obo/obi/obi_core.owl)
+
+**Format**: owl
+
+### OBI Base module
+
+Base module for OBI
+
+**URL**: [http://purl.obolibrary.org/obo/obi/obi-base.owl](http://purl.obolibrary.org/obo/obi/obi-base.owl)
+
+**Format**: owl
+
+## Publications
+
+- [The Ontology for Biomedical Investigations](https://www.ncbi.nlm.nih.gov/pubmed/27128319)
+
+**Domains**: biomedical
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

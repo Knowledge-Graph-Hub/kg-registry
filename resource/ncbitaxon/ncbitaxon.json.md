@@ -1,12 +1,8 @@
 ---
-category: DataModelProduct
-description: OBOGraphs JSON version of the NCBI Taxonomy
+description: OBOGraphs JSON version of Main release
 format: json
 id: ncbitaxon.json
-name: NCBI Taxonomy JSON
-original_source:
-- ncbitaxon
-product_file_size: 1948965918
+name: OBOGraphs JSON version of Main release
 product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
 layout: product_detail
 ---

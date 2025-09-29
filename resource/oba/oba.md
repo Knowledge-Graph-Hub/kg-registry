@@ -1,14 +1,48 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for oba. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+collection:
+- obo-foundry
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: cjmungall@lbl.gov
+  - contact_type: github
+    value: cmungall
+  label: Chris Mungall
+  orcid: 0000-0002-6601-2165
+description: A collection of biological attributes (traits) covering all kingdoms
+  of life.
 domains:
-- stub
+- biological systems
+homepage_url: https://github.com/obophenotype/bio-attribute-ontology
 id: oba
 layout: resource_detail
-name: Oba
+license:
+  id: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+name: Ontology of Biological Attributes
 products:
+- description: Ontology of Biological Attributes in OWL format
+  format: owl
+  id: oba.owl
+  name: oba.owl
+  product_file_size: 166309624
+  product_url: http://purl.obolibrary.org/obo/oba.owl
+- description: Ontology of Biological Attributes in OBO format
+  format: obo
+  id: oba.obo
+  name: oba.obo
+  product_file_size: 33465347
+  product_url: http://purl.obolibrary.org/obo/oba.obo
+- description: Ontology of Biological Attributes in OBO format
+  format: obo
+  id: oba.subsets.oba-basic.obo
+  name: oba.subsets.oba-basic.obo
+  product_file_size: 11852238
+  product_url: http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -115,10 +149,48 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+repository: https://github.com/obophenotype/bio-attribute-ontology
 ---
-# Oba
+## Description
 
-This is an automatically generated stub page for oba. Please update with proper information.
+A collection of biological attributes (traits) covering all kingdoms of life.
+
+## Contacts
+
+- Chris Mungall (cjmungall@lbl.gov) [ORCID: 0000-0002-6601-2165](https://orcid.org/0000-0002-6601-2165)
+
+## Products
+
+### oba.owl
+
+Ontology of Biological Attributes in OWL format
+
+**URL**: [http://purl.obolibrary.org/obo/oba.owl](http://purl.obolibrary.org/obo/oba.owl)
+
+**Format**: owl
+
+### oba.obo
+
+Ontology of Biological Attributes in OBO format
+
+**URL**: [http://purl.obolibrary.org/obo/oba.obo](http://purl.obolibrary.org/obo/oba.obo)
+
+**Format**: obo
+
+### oba.subsets.oba-basic.obo
+
+Ontology of Biological Attributes in OBO format
+
+**URL**: [http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo](http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo)
+
+**Format**: obo
+
+## Publications
+
+- [The Ontology of Biological Attributes (OBA) - computational traits for the life sciences](https://doi.org/10.1007/s00335-023-09992-1)
+
+**Domains**: biological systems
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

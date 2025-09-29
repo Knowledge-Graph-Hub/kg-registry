@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataModel
+collection:
+- obo-foundry
 contacts:
 - category: Individual
   contact_details:
@@ -10,9 +12,8 @@ contacts:
     value: chdudek
   label: Christian-Alexander Dudek
   orcid: 0000-0001-9117-7909
-description: The BRENDA Tissue Ontology (BTO) is a structured controlled vocabulary
-  for the source of an enzyme, comprising tissues, cell lines, cell types, and cell
-  cultures from uni- and multicellular organisms.
+description: A structured controlled vocabulary for the source of an enzyme comprising
+  tissues, cell lines, cell types and cell cultures.
 domains:
 - anatomy and development
 homepage_url: http://www.brenda-enzymes.org
@@ -21,132 +22,27 @@ layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
-name: BRENDA Tissue Ontology (BTO)
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: BRENDA tissue / enzyme source
 products:
-- description: The latest release of BTO in OWL format.
+- description: BRENDA tissue / enzyme source in OWL format
   format: owl
   id: bto.owl
-  name: BTO OWL
+  name: bto.owl
   product_file_size: 722362
   product_url: http://purl.obolibrary.org/obo/bto.owl
-- description: The latest release of BTO in OBO format.
+- description: BRENDA tissue / enzyme source in OBO format
   format: obo
   id: bto.obo
-  name: BTO OBO
+  name: bto.obo
   product_file_size: 479657
   product_url: http://purl.obolibrary.org/obo/bto.obo
-- description: The latest release of BTO in JSON format.
+- description: BRENDA tissue / enzyme source in JSON format
   format: json
   id: bto.json
-  name: BTO JSON
+  name: bto.json
   product_file_size: 595708
   product_url: http://purl.obolibrary.org/obo/bto.json
-- category: DataModelProduct
-  description: The latest release of EFO in OWL format
-  format: owl
-  id: efo.owl
-  name: EFO OWL
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - do
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 240665663
-  product_url: https://www.ebi.ac.uk/efo/efo.owl
-  secondary_source:
-  - efo
-- category: DataModelProduct
-  description: The latest release of EFO in OBO format
-  format: obo
-  id: efo.obo
-  name: EFO OBO
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - do
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 64058275
-  product_url: https://www.ebi.ac.uk/efo/efo.obo
-  secondary_source:
-  - efo
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
@@ -285,8 +181,154 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: DataModelProduct
+  description: The latest release of EFO in OWL format
+  format: owl
+  id: efo.owl
+  name: EFO OWL
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - do
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 240665663
+  product_url: https://www.ebi.ac.uk/efo/efo.owl
+  secondary_source:
+  - efo
+- category: DataModelProduct
+  description: The latest release of EFO in OBO format
+  format: obo
+  id: efo.obo
+  name: EFO OBO
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - do
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 64058275
+  product_url: https://www.ebi.ac.uk/efo/efo.obo
+  secondary_source:
+  - efo
 repository: https://github.com/BRENDA-Enzymes/BTO
 ---
-# BRENDA Tissue Ontology (BTO)
+## Description
 
-The BRENDA Tissue Ontology (BTO) is a structured controlled vocabulary for the source of an enzyme, comprising tissues, cell lines, cell types, and cell cultures from uni- and multicellular organisms.
+A structured controlled vocabulary for the source of an enzyme comprising tissues, cell lines, cell types and cell cultures.
+
+## Contacts
+
+- Christian-Alexander Dudek (c.dudek@tu-braunschweig.de) [ORCID: 0000-0001-9117-7909](https://orcid.org/0000-0001-9117-7909)
+
+## Products
+
+### bto.owl
+
+BRENDA tissue / enzyme source in OWL format
+
+**URL**: [http://purl.obolibrary.org/obo/bto.owl](http://purl.obolibrary.org/obo/bto.owl)
+
+**Format**: owl
+
+### bto.obo
+
+BRENDA tissue / enzyme source in OBO format
+
+**URL**: [http://purl.obolibrary.org/obo/bto.obo](http://purl.obolibrary.org/obo/bto.obo)
+
+**Format**: obo
+
+### bto.json
+
+BRENDA tissue / enzyme source in JSON format
+
+**URL**: [http://purl.obolibrary.org/obo/bto.json](http://purl.obolibrary.org/obo/bto.json)
+
+**Format**: json
+
+## Publications
+
+- [The BRENDA Tissue Ontology (BTO): the first all-integrating ontology of all organisms for enzyme sources](https://www.ncbi.nlm.nih.gov/pubmed/21030441)
+
+**Domains**: anatomy and development
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

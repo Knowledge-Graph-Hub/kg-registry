@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataModel
+collection:
+- obo-foundry
 contacts:
 - category: Individual
   contact_details:
@@ -8,55 +10,58 @@ contacts:
     value: cjmungall@lbl.gov
   - contact_type: github
     value: cmungall
-  label: Christopher J. Mungall
+  label: Chris Mungall
   orcid: 0000-0002-6601-2165
-description: An integrated cross-species anatomy ontology representing a variety of
-  anatomical structures across taxonomic groups, with a focus on vertebrates and model
-  organisms.
+description: An integrated cross-species anatomy ontology covering animals and bridging
+  multiple species-specific ontologies
 domains:
 - anatomy and development
-- organisms
-homepage_url: https://obophenotype.github.io/uberon/
+homepage_url: http://uberon.org
 id: uberon
 layout: resource_detail
 license:
-  id: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY-3.0
-name: Uber-Anatomy Ontology
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Uberon multi-species anatomy ontology
 products:
-- category: DataModelProduct
-  description: OWL release of UBERON. The Complete ontology with merged imports.
+- description: core ontology
   format: owl
   id: uberon.owl
-  name: UBERON OWL release
-  original_source:
-  - uberon
-  product_file_size: 97164714
+  name: Uberon
+  product_file_size: 97224372
   product_url: http://purl.obolibrary.org/obo/uberon.owl
-  secondary_source:
-  - uberon
-- category: DataModelProduct
-  description: OBO release of UBERON
-  format: obo
-  id: uberon.obo
-  name: UBERON OBO release
-  original_source:
-  - uberon
-  product_file_size: 22742453
-  product_url: http://purl.obolibrary.org/obo/uberon.obo
-  secondary_source:
-  - uberon
-- category: DataModelProduct
-  description: Basic edition of UBERON in OWL format, with minimal imports
+- description: Axioms defined within Uberon and to be used in imports for other ontologies
   format: owl
-  id: uberon.basic.owl
-  name: UBERON Basic OWL release
-  original_source:
-  - uberon
-  product_file_size: 50607670
-  product_url: http://purl.obolibrary.org/obo/uberon/basic.owl
-  secondary_source:
-  - uberon
+  id: uberon.uberon-base.owl
+  name: Uberon base ontology
+  product_file_size: 56706620
+  product_url: http://purl.obolibrary.org/obo/uberon/uberon-base.owl
+- description: Uberon edition that excludes external ontologies and most relations
+  format: obo
+  id: uberon.uberon-basic.obo
+  name: Uberon basic
+  product_file_size: 11940815
+  product_url: http://purl.obolibrary.org/obo/uberon/uberon-basic.obo
+- description: Uberon plus all metazoan ontologies
+  format: owl
+  id: uberon.collected-metazoan.owl
+  name: Uberon collected metazoan ontology
+  product_file_size: 283580590
+  product_url: http://purl.obolibrary.org/obo/uberon/collected-metazoan.owl
+- description: Uberon and all metazoan ontologies with redundant species-specific
+    terms removed
+  format: owl
+  id: uberon.composite-metazoan.owl
+  name: Uberon composite metazoan ontology
+  product_file_size: 258429505
+  product_url: http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl
+- description: Uberon composite vertebrate ontology
+  format: owl
+  id: uberon.composite-vertebrate.owl
+  name: Uberon composite vertebrate ontology
+  product_file_size: 125490960
+  product_url: http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl
 - category: GraphProduct
   compression: zip
   description: Nodes from Uber-Anatomy Ontology
@@ -69,49 +74,90 @@ products:
   product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Anatomy.nodes.zip
   secondary_source:
   - biomarkerkg
-- category: GraphProduct
-  description: The SPOKE knowledge graph containing nodes and edges from multiple
-    biomedical data sources.
-  id: spoke.graph
-  name: SPOKE Graph
+- category: GraphicalInterface
+  description: A browser interface for a knowledge graph for Alzheimer's Disease.
+  format: http
+  id: alzkb.browser
+  name: AlzKB Graph Database Browser
   original_source:
-  - ncbigene
-  - medline
-  - mesh
-  - pid
+  - aop-db
+  - bgee
+  - disgenet
   - do
-  - diseases
-  - drugcentral
+  - drugbank
+  - dsstox
   - go
   - gwascatalog
-  - reactome
+  - hrpimp
   - lincs-l1000
+  - mesh
+  - ncbigene
+  - pharmacotherapydb
+  - pid
+  - pubchem
+  - reactome
+  - sider
+  - tissues
   - uberon
   - wikipathways
-  - bindingdb
-  - drugbank
-  - sider
-  - bgee
-  - uniprot
-  - string
-  - omim
-  - chembl
-  - foodb
-  - civic
-  - gdsc
-  - clinicaltrialsgov
-  - hpa
-  - cl
-  - kegg
-  - metacyc
-  - bv-brc
-  - ncbitaxon
-  - pathophenodb
-  - pfam
-  - interpro
-  - protcid
+  product_url: https://alzkb.ai:7473/login
   secondary_source:
-  - spoke
+  - alzkb
+  - hetionet
+- category: GraphProduct
+  description: Memgraph data release for AlzKB.
+  id: alzkb.data
+  name: AlzKB Data Release (Version 2.0.0)
+  original_source:
+  - aop-db
+  - bgee
+  - disgenet
+  - do
+  - drugbank
+  - dsstox
+  - go
+  - gwascatalog
+  - hrpimp
+  - lincs-l1000
+  - mesh
+  - ncbigene
+  - pharmacotherapydb
+  - pid
+  - pubchem
+  - reactome
+  - reactome
+  - sider
+  - tissues
+  - uberon
+  - wikipathways
+  product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
+  secondary_source:
+  - alzkb
+  - hetionet
+- description: The MechRepoNet knowledge graph in its original format
+  id: mechreponet.kg
+  name: MechRepoNet Knowledge Graph
+  original_source:
+  - ctd
+  - do
+  - go
+  - chebi
+  - reactome
+  - interpro
+  - hp
+  - cl
+  - pr
+  - uberon
+  - ncbitaxon
+  - hetionet
+  - complexportal
+  - rnacentral
+  - mirtarbase
+  - unii
+  - biolink
+  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+  secondary_source:
+  - mechreponet
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -324,66 +370,49 @@ products:
   product_url: https://arax.ncats.io/
   secondary_source:
   - rtx-kg2
-- category: GraphicalInterface
-  description: A browser interface for a knowledge graph for Alzheimer's Disease.
-  format: http
-  id: alzkb.browser
-  name: AlzKB Graph Database Browser
-  original_source:
-  - aop-db
-  - bgee
-  - disgenet
-  - do
-  - drugbank
-  - dsstox
-  - go
-  - gwascatalog
-  - hrpimp
-  - lincs-l1000
-  - mesh
-  - ncbigene
-  - pharmacotherapydb
-  - pid
-  - pubchem
-  - reactome
-  - sider
-  - tissues
-  - uberon
-  - wikipathways
-  product_url: https://alzkb.ai:7473/login
-  secondary_source:
-  - alzkb
-  - hetionet
 - category: GraphProduct
-  description: Memgraph data release for AlzKB.
-  id: alzkb.data
-  name: AlzKB Data Release (Version 2.0.0)
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
   original_source:
-  - aop-db
-  - bgee
-  - disgenet
+  - ncbigene
+  - medline
+  - mesh
+  - pid
   - do
-  - drugbank
-  - dsstox
+  - diseases
+  - drugcentral
   - go
   - gwascatalog
-  - hrpimp
+  - reactome
   - lincs-l1000
-  - mesh
-  - ncbigene
-  - pharmacotherapydb
-  - pid
-  - pubchem
-  - reactome
-  - reactome
-  - sider
-  - tissues
   - uberon
   - wikipathways
-  product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
   secondary_source:
-  - alzkb
-  - hetionet
+  - spoke
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -490,181 +519,6 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-- category: DataModelProduct
-  description: The latest release of Plant Trait Ontology in OWL format
-  format: owl
-  id: to.owl
-  latest_version: v2025-05-20
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology OWL
-  original_source:
-  - to
-  - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 212124
-  product_url: http://purl.obolibrary.org/obo/to.owl
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
-- category: DataModelProduct
-  description: The latest release of Plant Trait Ontology in OBO format
-  format: obo
-  id: to.obo
-  latest_version: v2025-05-20
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology OBO
-  original_source:
-  - to
-  - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 158383
-  product_url: http://purl.obolibrary.org/obo/to.obo
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
-- category: DataModelProduct
-  description: The Basic subset of the Plant Trait Ontology in OBO format
-  format: obo
-  id: to-basic.obo
-  latest_version: v2025-05-20
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology Basic OBO
-  original_source:
-  - to
-  - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 111996
-  product_url: http://purl.obolibrary.org/obo/to/subsets/to-basic.obo
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
-- description: The MechRepoNet knowledge graph in its original format
-  id: mechreponet.kg
-  name: MechRepoNet Knowledge Graph
-  original_source:
-  - ctd
-  - do
-  - go
-  - chebi
-  - reactome
-  - interpro
-  - hp
-  - cl
-  - pr
-  - uberon
-  - ncbitaxon
-  - hetionet
-  - complexportal
-  - rnacentral
-  - mirtarbase
-  - unii
-  - biolink
-  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
-  secondary_source:
-  - mechreponet
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-  compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
-  dump_format: other
-  format: mixed
-  id: drugmechdb.graph
-  latest_version: 2.0.1
-  name: DrugMechDB Graph Dataset
-  original_source:
-  - go
-  - cl
-  - mesh
-  - chebi
-  - drugbank
-  - interpro
-  - uberon
-  - pr
-  - ncbitaxon
-  - reactome
-  - hp
-  - uniprot
-  product_url: https://doi.org/10.5281/zenodo.8139357
-  repository: https://github.com/SuLab/DrugMechDB
-  versions:
-  - 2.0.1
-  - 2.0.0
-  - 1.0.2
-  - '1.0'
 - category: GraphProduct
   description: PheKnowLator graph files, including subsets with and without inverse
     relations.
@@ -708,27 +562,64 @@ products:
   - v3.0.2
   - v4.0.0
   - current_build
-- category: DataModelProduct
-  description: CLO merged OWL release
-  format: owl
-  id: clo.owl
-  name: CLO OWL
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+  compression: zip
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
+  dump_format: other
+  format: mixed
+  id: drugmechdb.graph
+  latest_version: 2.0.1
+  name: DrugMechDB Graph Dataset
   original_source:
-  - clo
+  - go
+  - cl
+  - mesh
   - chebi
+  - drugbank
+  - interpro
   - uberon
+  - pr
   - ncbitaxon
-  - do
-  - bfo
-  - iao
-  - dc
-  - skos
+  - reactome
+  - hp
+  - uniprot
+  product_url: https://doi.org/10.5281/zenodo.8139357
+  repository: https://github.com/SuLab/DrugMechDB
+  versions:
+  - 2.0.1
+  - 2.0.0
+  - 1.0.2
+  - '1.0'
+- category: ProgrammingInterface
+  description: TRAPI web API for querying MicrobiomeKG
+  format: http
+  id: microbiomekg.api
+  name: MicrobiomeKG Plover API
+  original_source:
+  - biolink
+  - chebi
+  - ncbitaxon
+  - ncbigene
+  - mesh
+  - pubchem
+  - go
+  - mondo
+  - ncit
   - efo
-  - ro
-  product_file_size: 2121232
-  product_url: http://purl.obolibrary.org/obo/clo.owl
+  - uniprot
+  - rhea
+  - pr
+  - uberon
+  - panther
+  - hgnc
+  - drugbank
+  - eupathdb
+  product_url: https://multiomics.transltr.io/mbkp
   secondary_source:
-  - clo
+  - microbiomekg
 - category: GraphProduct
   description: RNA-KG as a Neo4j Dump
   format: neo4j
@@ -810,37 +701,117 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
   secondary_source:
   - rna-kg
-- category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
-  format: http
-  id: microbiomekg.api
-  name: MicrobiomeKG Plover API
+- category: DataModelProduct
+  description: The Basic subset of the Plant Trait Ontology in OBO format
+  format: obo
+  id: to-basic.obo
+  latest_version: v2025-05-20
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+  name: Plant Trait Ontology Basic OBO
   original_source:
-  - biolink
+  - to
   - chebi
+  - ro
   - ncbitaxon
-  - ncbigene
-  - mesh
-  - pubchem
   - go
-  - mondo
-  - ncit
-  - efo
-  - uniprot
-  - rhea
-  - pr
+  - omo
+  - ecto
+  - ido
+  - oio
+  - pato
+  - envo
+  - ohmi
+  - iao
+  - omrse
+  - obi
+  - peco
+  - po
   - uberon
-  - panther
-  - hgnc
-  - drugbank
-  - eupathdb
-  product_url: https://multiomics.transltr.io/mbkp
+  - ogms
+  - bfo
+  product_file_size: 111996
+  product_url: http://purl.obolibrary.org/obo/to/subsets/to-basic.obo
   secondary_source:
-  - microbiomekg
+  - to
+  versions:
+  - v2025-05-20
+  - v2023-07-17
+  - v2022-04-13
+  - v2022-03-09
+  - v2021-04-06
 repository: https://github.com/obophenotype/uberon
+taxon:
+- NCBITaxon:33208
 ---
-The Uber-Anatomy Ontology (UBERON) is a comprehensive cross-species anatomy ontology representing anatomical structures, cells, and tissues across metazoans. It serves as an integrative resource that connects various species-specific anatomy ontologies and provides a unified framework for comparative analysis.
+## Description
 
-UBERON covers anatomical structures from high-level anatomical systems down to specific cell types and tissues, with rich relationships between structures including developmental, functional, and topological connections. The ontology is designed to facilitate cross-species queries and comparisons, enabling researchers to identify homologous structures across diverse taxonomic groups.
+An integrated cross-species anatomy ontology covering animals and bridging multiple species-specific ontologies
 
-As a key resource in the biomedical ontology ecosystem, UBERON is widely used in data integration projects, cross-species phenotype analysis, gene expression studies, and as a fundamental component of various knowledge graphs that require anatomical knowledge representation.
+## Contacts
+
+- Chris Mungall (cjmungall@lbl.gov) [ORCID: 0000-0002-6601-2165](https://orcid.org/0000-0002-6601-2165)
+
+## Products
+
+### Uberon
+
+core ontology
+
+**URL**: [http://purl.obolibrary.org/obo/uberon.owl](http://purl.obolibrary.org/obo/uberon.owl)
+
+**Format**: owl
+
+### Uberon base ontology
+
+Axioms defined within Uberon and to be used in imports for other ontologies
+
+**URL**: [http://purl.obolibrary.org/obo/uberon/uberon-base.owl](http://purl.obolibrary.org/obo/uberon/uberon-base.owl)
+
+**Format**: owl
+
+### Uberon basic
+
+Uberon edition that excludes external ontologies and most relations
+
+**URL**: [http://purl.obolibrary.org/obo/uberon/uberon-basic.obo](http://purl.obolibrary.org/obo/uberon/uberon-basic.obo)
+
+**Format**: obo
+
+### Uberon collected metazoan ontology
+
+Uberon plus all metazoan ontologies
+
+**URL**: [http://purl.obolibrary.org/obo/uberon/collected-metazoan.owl](http://purl.obolibrary.org/obo/uberon/collected-metazoan.owl)
+
+**Format**: owl
+
+### Uberon composite metazoan ontology
+
+Uberon and all metazoan ontologies with redundant species-specific terms removed
+
+**URL**: [http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl](http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl)
+
+**Format**: owl
+
+### Uberon composite vertebrate ontology
+
+Uberon composite vertebrate ontology
+
+**URL**: [http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl](http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl)
+
+**Format**: owl
+
+## Publications
+
+- [Uberon, an integrative multi-species anatomy ontology](https://www.ncbi.nlm.nih.gov/pubmed/22293552)
+- [Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon](https://www.ncbi.nlm.nih.gov/pubmed/25009735)
+
+**Domains**: anatomy and development
+
+**Taxon**: NCBITaxon:33208
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

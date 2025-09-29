@@ -49,9 +49,9 @@ SCHEMA_DOC_DIR = docs/schema
 SCHEMA_DIR = src/kg_registry/kg_registry_schema
 
 ### Main Tasks
-.PHONY: all pull_and_build test pull clean
+.PHONY: all pull_and_build test pull clean sync-obo-foundry
 
-all: ingest-kg-monarch _config.yml registry/kgs.jsonld registry/parquet registry/parquet-downloads.html assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js $(SOURCE_SCHEMA_ALL) refresh-schema
+all: ingest-kg-monarch sync-obo-foundry _config.yml registry/kgs.jsonld registry/parquet registry/parquet-downloads.html assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js $(SOURCE_SCHEMA_ALL) refresh-schema
 
 # This is minimal for now, but
 # will be expanded to include other docs
@@ -73,6 +73,21 @@ integration-test: test valid-purl-report.txt
 .PHONY: ingest-kg-monarch
 ingest-kg-monarch:
 	$(RUN) python src/kg_registry/ingests/kg-monarch/kg-monarch.py
+
+# Sync OBO Foundry ontologies to KG-Registry
+.PHONY: sync-obo-foundry sync-obo-foundry-dry-run sync-obo-foundry-test
+
+# Dry run to see what would be synced
+sync-obo-foundry-dry-run:
+	$(RUN) python util/sync_obo_foundry.py --dry-run --verbose
+
+# Test sync with limited number of ontologies
+sync-obo-foundry-test:
+	$(RUN) python util/sync_obo_foundry.py --limit 5 --verbose
+
+# Full sync of OBO Foundry ontologies
+sync-obo-foundry:
+	$(RUN) python util/sync_obo_foundry.py --verbose
 
 # Build the combined schema
 # Also write proper yaml header to it
@@ -142,7 +157,7 @@ registry/kgs.jsonld: registry/kgs.yml
 # generate both a report of the violations and a grid of all results
 # the grid is later used to sort the resources on the home page
 RESULTS = reports/metadata-violations.tsv reports/metadata-grid.csv
-reports/metadata-grid.csv: tmp/unsorted-resources-with-sizes.yml | extract-metadata reports
+reports/metadata-grid.csv: tmp/unsorted-resources-with-sizes.yml sync-obo-foundry | extract-metadata reports
 	./util/validate-metadata.py $< $(RESULTS)
 
 # generate an HTML output of the metadata grid

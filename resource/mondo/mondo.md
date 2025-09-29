@@ -1,115 +1,62 @@
 ---
 activity_status: active
 category: DataModel
+collection:
+- obo-foundry
 contacts:
 - category: Individual
   contact_details:
+  - contact_type: email
+    value: nicole@tislab.org
   - contact_type: github
     value: nicolevasilevsky
   label: Nicole Vasilevsky
   orcid: 0000-0001-5208-3432
-- category: Individual
-  contact_details:
-  - contact_type: github
-    value: sabrinatoro
-  label: Sabrina Toro
-  orcid: 0000-0002-4142-7153
-description: "The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions\
-  \ across the world. The name Mondo comes from the Latin word \u2018mundus\u2019\
-  \ and means \u2018for the world.\u2019"
+description: A global community effort to harmonize multiple disease resources to
+  yield a coherent merged ontology.
 domains:
-- health
-homepage_url: https://mondo.monarchinitiative.org/
+- biomedical
+homepage_url: https://monarch-initiative.github.io/mondo
 id: mondo
 layout: resource_detail
 license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY-4.0
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Mondo Disease Ontology
 products:
-- category: DataModelProduct
-  description: OWL release of MONDO. The Complete ontology with merged imports.
+- description: Complete ontology with merged imports.
   format: owl
   id: mondo.owl
-  name: Mondo Disease Ontology OWL release
-  original_source:
-  - mondo
-  product_file_size: 238595949
-  product_url: https://purl.obolibrary.org/obo/mondo.owl
-  secondary_source:
-  - mondo
-- category: DataModelProduct
-  description: OBO release of MONDO.
+  name: Mondo OWL edition
+  product_file_size: 238800180
+  product_url: http://purl.obolibrary.org/obo/mondo.owl
+- description: OBO serialization of mondo.owl.
   format: obo
   id: mondo.obo
-  name: Mondo Disease Ontology OBO release
-  original_source:
-  - mondo
-  product_file_size: 52503800
-  product_url: https://purl.obolibrary.org/obo/mondo.obo
-  secondary_source:
-  - mondo
-- category: DataModelProduct
-  description: JSON release of MONDO (obograph json).
-  format: json
+  name: Mondo OBO Format edition
+  product_file_size: 52649281
+  product_url: http://purl.obolibrary.org/obo/mondo.obo
+- description: Obographs serialization of mondo.owl.
+  format: obo
   id: mondo.json
-  name: Mondo Disease Ontology JSON release
-  original_source:
-  - mondo
-  product_file_size: 102814241
-  product_url: https://purl.obolibrary.org/obo/mondo.json
-  secondary_source:
-  - mondo
-- category: ProcessProduct
-  description: Utility code for supporting the operations of the Human Disease Ontology
-  id: do.code.utils
-  name: DO.utils
-  original_source:
-  - do
-  product_url: https://github.com/DiseaseOntology/DO.utils
-  secondary_source:
-  - do
-- category: MappingProduct
-  description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
-  format: sssom
-  id: mondo.sssom
-  name: MONDO SSSOM
-  original_source:
-  - do
-  - hp
-  - hgnc
-  product_file_size: 1437457
-  product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
-  secondary_source:
-  - mondo
-- category: GraphProduct
-  description: Nodes for the Drug Approvals KP, v0.3.9
-  format: kgx
-  id: drug-approvals-kp.graph.nodes
-  name: Drug Approvals KP Graph Nodes
-  original_source:
-  - chebi
-  - do
-  - hp
-  - mondo
-  product_file_size: 701451
-  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
-  secondary_source:
-  - drug-approvals-kp
-- category: GraphProduct
-  description: Edges for the Drug Approvals KP, v0.3.9
-  format: kgx
-  id: drug-approvals-kp.graph.edges
-  name: Drug Approvals KP Graph Edges
-  original_source:
-  - chebi
-  - do
-  - hp
-  - mondo
-  product_file_size: 31052966
-  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
-  secondary_source:
-  - drug-approvals-kp
+  name: Mondo JSON edition
+  product_file_size: 102755690
+  product_url: http://purl.obolibrary.org/obo/mondo.json
+- description: The main ontology plus axioms connecting to select external ontologies,
+    excluding the external ontologies themselves
+  format: owl
+  id: mondo.mondo-base.owl
+  name: Mondo Base Release
+  product_file_size: 224015136
+  product_url: http://purl.obolibrary.org/obo/mondo/mondo-base.owl
+- description: The main ontology classes and their hierarchies, without references
+    to external terms.
+  format: owl
+  id: mondo.mondo-simple.owl
+  name: Mondo Simple Release
+  product_file_size: 212153164
+  product_url: http://purl.obolibrary.org/obo/mondo/mondo-simple.owl
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -237,6 +184,34 @@ products:
   product_url: https://ubkg-downloads.xconsortia.org/
   secondary_source:
   - ubkg
+- category: GraphProduct
+  description: Integrated graph knowledge base combining Mendelian randomization causal
+    estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships
+    (Neo4j backend)
+  format: neo4j
+  id: epigraphdb.graph
+  name: EpiGraphDB Graph Database
+  original_source:
+  - epigraphdb
+  - kg-monarch
+  - vectology
+  - ukbiobank
+  - prsatlas
+  - eqtlgen
+  - mondo
+  - gtex
+  - ensembl
+  - cpic
+  - opentargets
+  - efo
+  - semmeddb
+  - intact
+  - string
+  - reactome
+  - mrbase
+  product_url: https://docs.epigraphdb.org/graph-database/
+  secondary_source:
+  - epigraphdb
 - category: GraphProduct
   description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
@@ -471,6 +446,74 @@ products:
   - v3.0.2
   - v4.0.0
   - current_build
+- category: ProgrammingInterface
+  description: TRAPI web API for querying MicrobiomeKG
+  format: http
+  id: microbiomekg.api
+  name: MicrobiomeKG Plover API
+  original_source:
+  - biolink
+  - chebi
+  - ncbitaxon
+  - ncbigene
+  - mesh
+  - pubchem
+  - go
+  - mondo
+  - ncit
+  - efo
+  - uniprot
+  - rhea
+  - pr
+  - uberon
+  - panther
+  - hgnc
+  - drugbank
+  - eupathdb
+  product_url: https://multiomics.transltr.io/mbkp
+  secondary_source:
+  - microbiomekg
+- category: GraphProduct
+  description: Nodes for the Drug Approvals KP, v0.3.9
+  format: kgx
+  id: drug-approvals-kp.graph.nodes
+  name: Drug Approvals KP Graph Nodes
+  original_source:
+  - chebi
+  - do
+  - hp
+  - mondo
+  product_file_size: 701451
+  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
+  secondary_source:
+  - drug-approvals-kp
+- category: GraphProduct
+  description: Edges for the Drug Approvals KP, v0.3.9
+  format: kgx
+  id: drug-approvals-kp.graph.edges
+  name: Drug Approvals KP Graph Edges
+  original_source:
+  - chebi
+  - do
+  - hp
+  - mondo
+  product_file_size: 31052966
+  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
+  secondary_source:
+  - drug-approvals-kp
+- category: MappingProduct
+  description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
+  format: sssom
+  id: mondo.sssom
+  name: MONDO SSSOM
+  original_source:
+  - do
+  - hp
+  - hgnc
+  product_file_size: 1437457
+  product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
+  secondary_source:
+  - mondo
 - category: GraphProduct
   description: RNA-KG as a Neo4j Dump
   format: neo4j
@@ -552,61 +595,68 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
   secondary_source:
   - rna-kg
-- category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
-  format: http
-  id: microbiomekg.api
-  name: MicrobiomeKG Plover API
-  original_source:
-  - biolink
-  - chebi
-  - ncbitaxon
-  - ncbigene
-  - mesh
-  - pubchem
-  - go
-  - mondo
-  - ncit
-  - efo
-  - uniprot
-  - rhea
-  - pr
-  - uberon
-  - panther
-  - hgnc
-  - drugbank
-  - eupathdb
-  product_url: https://multiomics.transltr.io/mbkp
-  secondary_source:
-  - microbiomekg
-- category: GraphProduct
-  description: Integrated graph knowledge base combining Mendelian randomization causal
-    estimates, pathway, QTL, drug, literature-derived, and ontology-backed relationships
-    (Neo4j backend)
-  format: neo4j
-  id: epigraphdb.graph
-  name: EpiGraphDB Graph Database
-  original_source:
-  - epigraphdb
-  - kg-monarch
-  - vectology
-  - ukbiobank
-  - prsatlas
-  - eqtlgen
-  - mondo
-  - gtex
-  - ensembl
-  - cpic
-  - opentargets
-  - efo
-  - semmeddb
-  - intact
-  - string
-  - reactome
-  - mrbase
-  product_url: https://docs.epigraphdb.org/graph-database/
-  secondary_source:
-  - epigraphdb
-repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
+repository: https://github.com/monarch-initiative/mondo
+taxon:
+- NCBITaxon:33208
 ---
-MONDO Disease Ontology
+## Description
+
+A global community effort to harmonize multiple disease resources to yield a coherent merged ontology.
+
+## Contacts
+
+- Nicole Vasilevsky (nicole@tislab.org) [ORCID: 0000-0001-5208-3432](https://orcid.org/0000-0001-5208-3432)
+
+## Products
+
+### Mondo OWL edition
+
+Complete ontology with merged imports.
+
+**URL**: [http://purl.obolibrary.org/obo/mondo.owl](http://purl.obolibrary.org/obo/mondo.owl)
+
+**Format**: owl
+
+### Mondo OBO Format edition
+
+OBO serialization of mondo.owl.
+
+**URL**: [http://purl.obolibrary.org/obo/mondo.obo](http://purl.obolibrary.org/obo/mondo.obo)
+
+**Format**: obo
+
+### Mondo JSON edition
+
+Obographs serialization of mondo.owl.
+
+**URL**: [http://purl.obolibrary.org/obo/mondo.json](http://purl.obolibrary.org/obo/mondo.json)
+
+**Format**: obo
+
+### Mondo Base Release
+
+The main ontology plus axioms connecting to select external ontologies, excluding the external ontologies themselves
+
+**URL**: [http://purl.obolibrary.org/obo/mondo/mondo-base.owl](http://purl.obolibrary.org/obo/mondo/mondo-base.owl)
+
+**Format**: owl
+
+### Mondo Simple Release
+
+The main ontology classes and their hierarchies, without references to external terms.
+
+**URL**: [http://purl.obolibrary.org/obo/mondo/mondo-simple.owl](http://purl.obolibrary.org/obo/mondo/mondo-simple.owl)
+
+**Format**: owl
+
+## Publications
+
+- [Mondo: Unifying diseases for the world, by the world](https://www.medrxiv.org/content/10.1101/2022.04.13.22273750)
+
+**Domains**: biomedical
+
+**Taxon**: NCBITaxon:33208
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

@@ -1,16 +1,8 @@
 ---
-category: DataModelProduct
-description: PW OWL release
+description: Pathway ontology in OWL format
 format: owl
 id: pw.owl
-name: PW OWL
-original_source:
-- pw
-- iao
-- go
-product_file_size: 5403526
+name: pw.owl
 product_url: http://purl.obolibrary.org/obo/pw.owl
-secondary_source:
-- pw
 layout: product_detail
 ---

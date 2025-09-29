@@ -1,14 +1,59 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for fbdv. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+collection:
+- obo-foundry
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: cp390@cam.ac.uk
+  - contact_type: github
+    value: Clare72
+  label: Clare Pilgrim
+  orcid: 0000-0002-1373-1705
+description: A structured controlled vocabulary of the development of Drosophila melanogaster.
 domains:
-- stub
+- anatomy and development
+homepage_url: http://purl.obolibrary.org/obo/fbdv
 id: fbdv
 layout: resource_detail
-name: Fbdv
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Drosophila development
 products:
+- description: Drosophila development in OWL format
+  format: owl
+  id: fbdv.owl
+  name: fbdv.owl
+  product_file_size: 523131
+  product_url: http://purl.obolibrary.org/obo/fbdv.owl
+- description: Drosophila development in OBO format
+  format: obo
+  id: fbdv.obo
+  name: fbdv.obo
+  product_file_size: 118696
+  product_url: http://purl.obolibrary.org/obo/fbdv.obo
+- description: Drosophila development in JSON format
+  format: json
+  id: fbdv.json
+  name: fbdv.json
+  product_file_size: 358287
+  product_url: http://purl.obolibrary.org/obo/fbdv.json
+- description: Drosophila development in OWL format
+  format: owl
+  id: fbdv.fbdv-simple.owl
+  name: fbdv.fbdv-simple.owl
+  product_file_size: 442797
+  product_url: http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl
+- description: Drosophila development in OBO format
+  format: obo
+  id: fbdv.fbdv-simple.obo
+  name: fbdv.fbdv-simple.obo
+  product_file_size: 118720
+  product_url: http://purl.obolibrary.org/obo/fbdv/fbdv-simple.obo
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -115,10 +160,64 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+repository: https://github.com/FlyBase/drosophila-developmental-ontology
+taxon:
+- NCBITaxon:7227
 ---
-# Fbdv
+## Description
 
-This is an automatically generated stub page for fbdv. Please update with proper information.
+A structured controlled vocabulary of the development of Drosophila melanogaster.
+
+## Contacts
+
+- Clare Pilgrim (cp390@cam.ac.uk) [ORCID: 0000-0002-1373-1705](https://orcid.org/0000-0002-1373-1705)
+
+## Products
+
+### fbdv.owl
+
+Drosophila development in OWL format
+
+**URL**: [http://purl.obolibrary.org/obo/fbdv.owl](http://purl.obolibrary.org/obo/fbdv.owl)
+
+**Format**: owl
+
+### fbdv.obo
+
+Drosophila development in OBO format
+
+**URL**: [http://purl.obolibrary.org/obo/fbdv.obo](http://purl.obolibrary.org/obo/fbdv.obo)
+
+**Format**: obo
+
+### fbdv.json
+
+Drosophila development in JSON format
+
+**URL**: [http://purl.obolibrary.org/obo/fbdv.json](http://purl.obolibrary.org/obo/fbdv.json)
+
+**Format**: json
+
+### fbdv.fbdv-simple.owl
+
+Drosophila development in OWL format
+
+**URL**: [http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl](http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl)
+
+**Format**: owl
+
+### fbdv.fbdv-simple.obo
+
+Drosophila development in OBO format
+
+**URL**: [http://purl.obolibrary.org/obo/fbdv/fbdv-simple.obo](http://purl.obolibrary.org/obo/fbdv/fbdv-simple.obo)
+
+**Format**: obo
+
+**Domains**: anatomy and development
+
+**Taxon**: NCBITaxon:7227
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

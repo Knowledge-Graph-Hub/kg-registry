@@ -1,103 +1,199 @@
 ---
 activity_status: active
 category: DataModel
+collection:
+- obo-foundry
 contacts:
 - category: Individual
   contact_details:
+  - contact_type: email
+    value: dr.sebastian.koehler@gmail.com
   - contact_type: github
-    value: pnrobinson
-  label: Peter Robinson
-description: An ontology developed by the Monarch Initiative used to describe human
-  phenotypic abnormalities seen in genetic disorders and clinical research. It provides
-  a structured representation of abnormal characteristics associated with diseases.
-  HPO helps researchers and clinicians share and integrate phenotypic data, making
-  understanding and diagnosing genetic disorders easier. It uses a hierarchical organization
-  and semantic relationships between terms and allows for annotation of genes and
-  diseases. HPO is used in multiple diagnosis and variant prioritization tools, aiding
-  healthcare professionals and researchers in identifying and classifying genetic
-  conditions.
+    value: drseb
+  label: Sebastian Koehler
+  orcid: 0000-0002-5316-1399
+description: The Human Phenotype Ontology (HPO) is a structured and controlled vocabulary
+  for the phenotypic features encountered in human hereditary and other disease.
 domains:
-- phenotype
-homepage_url: https://hpo.jax.org/
+- biological systems
+homepage_url: http://www.human-phenotype-ontology.org/
 id: hp
 layout: resource_detail
 license:
-  id: https://hpo.jax.org/license
-  label: Custom
-name: Human Phenotype Ontology
+  id: https://hpo.jax.org/app/license
+  label: hpo
+name: Human Phenotype Ontology (HPO)
 products:
-- category: DataModelProduct
-  description: OWL release of HP
-  format: owl
-  id: hp.owl
-  name: Human Phenotype Ontology OWL release
-  original_source:
-  - hp
-  product_file_size: 75240038
-  product_url: http://purl.obolibrary.org/obo/hp.owl
-  secondary_source:
-  - hp
-- category: DataModelProduct
-  description: OBO release of HP
+- description: Simple, manually curated version of the ontology without the use of
+    a reasoner, and without any imported terms, in obographs JSON format.
+  format: json
+  id: hp.json
+  name: Official HPO release in obographs JSON format
+  product_file_size: 21624327
+  product_url: http://purl.obolibrary.org/obo/hp.json
+- description: Simple, manually curated version of the ontology without the use of
+    a reasoner, and without any imported terms, in OBO file format.
   format: obo
   id: hp.obo
-  name: Human Phenotype Ontology OBO release
-  original_source:
-  - hp
-  product_file_size: 10151040
+  name: Official HPO release in OBO format
+  product_file_size: 10198869
   product_url: http://purl.obolibrary.org/obo/hp.obo
-  secondary_source:
-  - hp
-- category: ProcessProduct
-  description: Code for Human Phenotype Ontology
-  id: hp.code
-  name: HP Code
+- description: Manually classified version of the ontology without the use of a reasoner,
+    with imported terms, in OWL format (RDF/XML).
+  format: owl
+  id: hp.owl
+  name: Official HPO release in OWL
+  product_file_size: 75332384
+  product_url: http://purl.obolibrary.org/obo/hp.owl
+- description: Manually curated version of the ontology without the use of a reasoner,
+    with references to imported terms, in obographs JSON file format.
+  format: obo
+  id: hp.hp-base.json
+  name: HPO base release in obographs JSON format
+  product_file_size: 21825920
+  product_url: http://purl.obolibrary.org/obo/hp/hp-base.json
+- description: Manually curated version of the ontology without the use of a reasoner,
+    with references to imported terms, in OBO file format.
+  format: obo
+  id: hp.hp-base.obo
+  name: HPO base release in OBO format
+  product_file_size: 10731300
+  product_url: http://purl.obolibrary.org/obo/hp/hp-base.obo
+- description: Manually curated version of the ontology without the use of a reasoner,
+    with references to imported terms, in OWL (RDF/XML) file format.
+  format: owl
+  id: hp.hp-base.owl
+  name: HPO base release in OWL format
+  product_file_size: 47548810
+  product_url: http://purl.obolibrary.org/obo/hp/hp-base.owl
+- description: Version of the ontology automatically classified with the use of a
+    reasoner, including all imported terms, in obographs JSON file format.
+  format: json
+  id: hp.hp-full.json
+  name: HPO full release in obographs JSON format
+  product_file_size: 42522598
+  product_url: http://purl.obolibrary.org/obo/hp/hp-full.json
+- description: Version of the ontology automatically classified with the use of a
+    reasoner, including all imported terms, in OBO file format.
+  format: obo
+  id: hp.hp-full.obo
+  name: HPO full release in OBO format
+  product_file_size: 18661731
+  product_url: http://purl.obolibrary.org/obo/hp/hp-full.obo
+- description: Version of the ontology automatically classified with the use of a
+    reasoner, including all imported terms, in OWL (RDF/XML) file format.
+  format: owl
+  id: hp.hp-full.owl
+  name: HPO full release in OWL format
+  product_file_size: 84407896
+  product_url: http://purl.obolibrary.org/obo/hp/hp-full.owl
+- description: Version of the ontology corresponding to the primary release (hp.owl),
+    with translated labels, synonyms, and definitions, in obographs JSON file format.
+  format: json
+  id: hp.hp-international.json
+  name: HPO International Edition in obographs JSON format
+  product_file_size: 48802674
+  product_url: http://purl.obolibrary.org/obo/hp/hp-international.json
+- description: Version of the ontology corresponding to the primary release (hp.owl),
+    with translated labels, synonyms, and definitions, in OBO file format.
+  format: obo
+  id: hp.hp-international.obo
+  name: HPO International Edition in OBO format
+  product_file_size: 21608422
+  product_url: http://purl.obolibrary.org/obo/hp/hp-international.obo
+- description: Version of the ontology corresponding to the primary release (hp.owl),
+    with translated labels, synonyms, and definitions, in OWL (RDF/XML) file format.
+  format: owl
+  id: hp.hp-international.owl
+  name: HPO International Edition in OWL format
+  product_file_size: 206829122
+  product_url: http://purl.obolibrary.org/obo/hp/hp-international.owl
+- description: Simple, manually curated version of the ontology without the use of
+    a reasoner, and without any imported terms, in obographs JSON file format.
+  format: json
+  id: hp.hp-simple-non-classified.json
+  name: HPO simple, manually classified, without imports in obographs JSON format
+  product_file_size: 21624374
+  product_url: http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.json
+- description: Simple, manually curated version of the ontology without the use of
+    a reasoner, and without any imported terms, in OBO file format.
+  format: obo
+  id: hp.hp-simple-non-classified.obo
+  name: HPO simple, manually classified, without imports in OBO format
+  product_file_size: 10198919
+  product_url: http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.obo
+- description: Simple, manually curated version of the ontology without the use of
+    a reasoner, and without any imported terms, in OWL (RDF/XML) file format.
+  format: owl
+  id: hp.hp-simple-non-classified.owl
+  name: HPO simple, manually classified, without imports in OWL format
+  product_file_size: 29050946
+  product_url: http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.owl
+- description: https://hpo.jax.org/app/data/annotations
+  format: tsv
+  id: hp.phenotype.hpoa
+  name: HPO Annotations (Phenotype to Disease)
+  product_file_size: 33785197
+  product_url: http://purl.obolibrary.org/obo/hp/phenotype.hpoa
+- description: https://hpo.jax.org/app/data/annotations
+  format: tsv
+  id: hp.phenotype_to_genes.txt
+  name: HPO phenotype to gene annotations
+  product_file_size: 74776342
+  product_url: http://purl.obolibrary.org/obo/hp/phenotype_to_genes.txt
+- description: https://hpo.jax.org/app/data/annotations
+  format: tsv
+  id: hp.genes_to_phenotype.txt
+  name: HPO gene to phenotype annotations
+  product_file_size: 24100644
+  product_url: http://purl.obolibrary.org/obo/hp/genes_to_phenotype.txt
+- description: The MechRepoNet knowledge graph in its original format
+  id: mechreponet.kg
+  name: MechRepoNet Knowledge Graph
   original_source:
-  - hp
-  product_url: https://github.com/obophenotype/human-phenotype-ontology
-  secondary_source:
-  - hp
-- category: GraphProduct
-  description: Nodes for the Drug Approvals KP, v0.3.9
-  format: kgx
-  id: drug-approvals-kp.graph.nodes
-  name: Drug Approvals KP Graph Nodes
-  original_source:
+  - ctd
+  - do
+  - go
   - chebi
-  - do
+  - reactome
+  - interpro
   - hp
-  - mondo
-  product_file_size: 701451
-  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
+  - cl
+  - pr
+  - uberon
+  - ncbitaxon
+  - hetionet
+  - complexportal
+  - rnacentral
+  - mirtarbase
+  - unii
+  - biolink
+  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
   secondary_source:
-  - drug-approvals-kp
+  - mechreponet
 - category: GraphProduct
-  description: Edges for the Drug Approvals KP, v0.3.9
-  format: kgx
-  id: drug-approvals-kp.graph.edges
-  name: Drug Approvals KP Graph Edges
+  description: DisGeNET data, including gene to disease associations and variant to
+    disease associations (requires registration and subscription).
+  id: disgenet.data
+  name: DisGeNET Data
   original_source:
-  - chebi
-  - do
+  - clingen
+  - clinvar
+  - mgd
+  - rgd
+  - orphanet
+  - psygenet
+  - uniprot
+  - disgenet
   - hp
-  - mondo
-  product_file_size: 31052966
-  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
+  - gwascatalog
+  - phewascat
+  - ukbiobank
+  - finngen
+  - clinicaltrialsgov
+  product_url: https://www.disgenet.com/
   secondary_source:
-  - drug-approvals-kp
-- category: MappingProduct
-  description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
-  format: sssom
-  id: mondo.sssom
-  name: MONDO SSSOM
-  original_source:
-  - do
-  - hp
-  - hgnc
-  product_file_size: 1437457
-  product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
-  secondary_source:
-  - mondo
+  - disgenet
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -310,6 +406,123 @@ products:
   product_url: https://arax.ncats.io/
   secondary_source:
   - rtx-kg2
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - do
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: cancer-genome-interpreter.clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - do
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: ProcessProduct
+  description: INDRA CoGEx is a graph database integrating causal relations, ontological
+    relations, properties, and data, assembled at scale automatically from the scientific
+    literature and structured sources. This is the code to build the graph.
+  id: indra.cogex.code
+  name: INDRA CoGEx Build Code
+  original_source:
+  - chembl
+  - sider
+  - reactome
+  - wikipathways
+  - hp
+  - nihreporter
+  - disgenet
+  - pubmed
+  - gwascatalog
+  - cellmarker
+  - go
+  - bgee
+  - ccle
+  - clinicaltrialsgov
+  - indra
+  product_url: https://github.com/gyorilab/indra_cogex
+  secondary_source:
+  - indra
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -416,155 +629,6 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-- category: GraphProduct
-  description: DisGeNET data, including gene to disease associations and variant to
-    disease associations (requires registration and subscription).
-  id: disgenet.data
-  name: DisGeNET Data
-  original_source:
-  - clingen
-  - clinvar
-  - mgd
-  - rgd
-  - orphanet
-  - psygenet
-  - uniprot
-  - disgenet
-  - hp
-  - gwascatalog
-  - phewascat
-  - ukbiobank
-  - finngen
-  - clinicaltrialsgov
-  product_url: https://www.disgenet.com/
-  secondary_source:
-  - disgenet
-- description: The MechRepoNet knowledge graph in its original format
-  id: mechreponet.kg
-  name: MechRepoNet Knowledge Graph
-  original_source:
-  - ctd
-  - do
-  - go
-  - chebi
-  - reactome
-  - interpro
-  - hp
-  - cl
-  - pr
-  - uberon
-  - ncbitaxon
-  - hetionet
-  - complexportal
-  - rnacentral
-  - mirtarbase
-  - unii
-  - biolink
-  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
-  secondary_source:
-  - mechreponet
-- category: ProcessProduct
-  description: INDRA CoGEx is a graph database integrating causal relations, ontological
-    relations, properties, and data, assembled at scale automatically from the scientific
-    literature and structured sources. This is the code to build the graph.
-  id: indra.cogex.code
-  name: INDRA CoGEx Build Code
-  original_source:
-  - chembl
-  - sider
-  - reactome
-  - wikipathways
-  - hp
-  - nihreporter
-  - disgenet
-  - pubmed
-  - gwascatalog
-  - cellmarker
-  - go
-  - bgee
-  - ccle
-  - clinicaltrialsgov
-  - indra
-  product_url: https://github.com/gyorilab/indra_cogex
-  secondary_source:
-  - indra
-- category: GraphProduct
-  description: Neo4j database dump of the Clinical Knowledge Graph and additional
-    relationships
-  dump_format: neo4j
-  edge_count: 220000000
-  format: mixed
-  id: clinicalkg.graph
-  name: CKG Graph Dump
-  node_count: 16000000
-  original_source:
-  - uniprot
-  - tissues
-  - string
-  - stitch
-  - smpdb
-  - signor
-  - sider
-  - refseq
-  - reactome
-  - phosphositeplus
-  - pfam
-  - oncokb
-  - mutationds
-  - intact
-  - hpa
-  - hmdb
-  - hgnc
-  - gwascatalog
-  - foodb
-  - drugbank
-  - disgenet
-  - diseases
-  - dgidb
-  - corum
-  - cancer-genome-interpreter
-  - do
-  - bto
-  - efo
-  - go
-  - hp
-  - snomedct
-  - mod
-  - mi
-  - ms
-  - uo
-  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-  compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
-  dump_format: other
-  format: mixed
-  id: drugmechdb.graph
-  latest_version: 2.0.1
-  name: DrugMechDB Graph Dataset
-  original_source:
-  - go
-  - cl
-  - mesh
-  - chebi
-  - drugbank
-  - interpro
-  - uberon
-  - pr
-  - ncbitaxon
-  - reactome
-  - hp
-  - uniprot
-  product_url: https://doi.org/10.5281/zenodo.8139357
-  repository: https://github.com/SuLab/DrugMechDB
-  versions:
-  - 2.0.1
-  - 2.0.0
-  - 1.0.2
-  - '1.0'
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
   edge_count: 14486132
@@ -986,130 +1050,6 @@ products:
   secondary_source:
   - kg-monarch
 - category: GraphProduct
-  description: PheKnowLator graph files, including subsets with and without inverse
-    relations.
-  format: owl
-  id: pheknowlator.graph
-  latest_version: current_build
-  name: PheKnowLator graph
-  original_source:
-  - cl
-  - clo
-  - chebi
-  - go
-  - hp
-  - mondo
-  - pw
-  - pr
-  - ro
-  - so
-  - uberon
-  - vo
-  - bioportal
-  - clinvar
-  - ctd
-  - disgenet
-  - ensembl
-  - genemania
-  - hgnc
-  - hpa
-  - ncbigene
-  - medgen
-  - reactome
-  - string
-  - uniprot
-  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
-  secondary_source:
-  - pheknowlator
-  versions:
-  - v1.0.0
-  - v2.0.0
-  - v2.1.0
-  - v3.0.2
-  - v4.0.0
-  - current_build
-- category: GraphProduct
-  description: RNA-KG as a Neo4j Dump
-  format: neo4j
-  id: rna-kg.kg.neo4j
-  name: RNA-KG Neo4j Dump
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 3976840239
-  product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
-  secondary_source:
-  - rna-kg
-- category: GraphProduct
-  description: RNA-KG Nodes in CSV format
-  format: csv
-  id: rna-kg.kg.nodes
-  name: RNA-KG Nodes
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 4424633304
-  product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
-  secondary_source:
-  - rna-kg
-- category: GraphProduct
-  description: RNA-KG Edges in CSV format
-  format: csv
-  id: rna-kg.kg.edges
-  name: RNA-KG Edges
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 18370248815
-  product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
-  secondary_source:
-  - rna-kg
-- category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
   edge_count: 14486132
   format: kgx-jsonl
@@ -1446,51 +1386,370 @@ products:
   secondary_source:
   - kg-monarch
 - category: GraphProduct
-  description: Neo4j database dump of the Clinical Knowledge Graph and additional
-    relationships
-  dump_format: neo4j
-  edge_count: 220000000
-  format: mixed
-  id: cancer-genome-interpreter.clinicalkg.graph
-  name: CKG Graph Dump
-  node_count: 16000000
+  description: PheKnowLator graph files, including subsets with and without inverse
+    relations.
+  format: owl
+  id: pheknowlator.graph
+  latest_version: current_build
+  name: PheKnowLator graph
   original_source:
-  - uniprot
-  - tissues
-  - string
-  - stitch
-  - smpdb
-  - signor
-  - sider
-  - refseq
-  - reactome
-  - phosphositeplus
-  - pfam
-  - oncokb
-  - mutationds
-  - intact
-  - hpa
-  - hmdb
-  - hgnc
-  - gwascatalog
-  - foodb
-  - drugbank
-  - disgenet
-  - diseases
-  - dgidb
-  - corum
-  - cancer-genome-interpreter
-  - do
-  - bto
-  - efo
+  - cl
+  - clo
+  - chebi
   - go
   - hp
-  - snomedct
-  - mod
-  - mi
-  - ms
-  - uo
-  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - mondo
+  - pw
+  - pr
+  - ro
+  - so
+  - uberon
+  - vo
+  - bioportal
+  - clinvar
+  - ctd
+  - disgenet
+  - ensembl
+  - genemania
+  - hgnc
+  - hpa
+  - ncbigene
+  - medgen
+  - reactome
+  - string
+  - uniprot
+  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+  secondary_source:
+  - pheknowlator
+  versions:
+  - v1.0.0
+  - v2.0.0
+  - v2.1.0
+  - v3.0.2
+  - v4.0.0
+  - current_build
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+  compression: zip
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
+  dump_format: other
+  format: mixed
+  id: drugmechdb.graph
+  latest_version: 2.0.1
+  name: DrugMechDB Graph Dataset
+  original_source:
+  - go
+  - cl
+  - mesh
+  - chebi
+  - drugbank
+  - interpro
+  - uberon
+  - pr
+  - ncbitaxon
+  - reactome
+  - hp
+  - uniprot
+  product_url: https://doi.org/10.5281/zenodo.8139357
+  repository: https://github.com/SuLab/DrugMechDB
+  versions:
+  - 2.0.1
+  - 2.0.0
+  - 1.0.2
+  - '1.0'
+- category: GraphProduct
+  description: Nodes for the Drug Approvals KP, v0.3.9
+  format: kgx
+  id: drug-approvals-kp.graph.nodes
+  name: Drug Approvals KP Graph Nodes
+  original_source:
+  - chebi
+  - do
+  - hp
+  - mondo
+  product_file_size: 701451
+  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
+  secondary_source:
+  - drug-approvals-kp
+- category: GraphProduct
+  description: Edges for the Drug Approvals KP, v0.3.9
+  format: kgx
+  id: drug-approvals-kp.graph.edges
+  name: Drug Approvals KP Graph Edges
+  original_source:
+  - chebi
+  - do
+  - hp
+  - mondo
+  product_file_size: 31052966
+  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
+  secondary_source:
+  - drug-approvals-kp
+- category: MappingProduct
+  description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
+  format: sssom
+  id: mondo.sssom
+  name: MONDO SSSOM
+  original_source:
+  - do
+  - hp
+  - hgnc
+  product_file_size: 1437457
+  product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
+  secondary_source:
+  - mondo
+- category: GraphProduct
+  description: RNA-KG as a Neo4j Dump
+  format: neo4j
+  id: rna-kg.kg.neo4j
+  name: RNA-KG Neo4j Dump
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 3976840239
+  product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
+  secondary_source:
+  - rna-kg
+- category: GraphProduct
+  description: RNA-KG Nodes in CSV format
+  format: csv
+  id: rna-kg.kg.nodes
+  name: RNA-KG Nodes
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 4424633304
+  product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
+  secondary_source:
+  - rna-kg
+- category: GraphProduct
+  description: RNA-KG Edges in CSV format
+  format: csv
+  id: rna-kg.kg.edges
+  name: RNA-KG Edges
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 18370248815
+  product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
+  secondary_source:
+  - rna-kg
 repository: https://github.com/obophenotype/human-phenotype-ontology
+taxon:
+- NCBITaxon:9606
 ---
-Human Phenotype Ontology
+## Description
+
+The Human Phenotype Ontology (HPO) is a structured and controlled vocabulary for the phenotypic features encountered in human hereditary and other disease.
+
+## Contacts
+
+- Sebastian Koehler (dr.sebastian.koehler@gmail.com) [ORCID: 0000-0002-5316-1399](https://orcid.org/0000-0002-5316-1399)
+
+## Products
+
+### Official HPO release in obographs JSON format
+
+Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in obographs JSON format.
+
+**URL**: [http://purl.obolibrary.org/obo/hp.json](http://purl.obolibrary.org/obo/hp.json)
+
+**Format**: json
+
+### Official HPO release in OBO format
+
+Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in OBO file format.
+
+**URL**: [http://purl.obolibrary.org/obo/hp.obo](http://purl.obolibrary.org/obo/hp.obo)
+
+**Format**: obo
+
+### Official HPO release in OWL
+
+Manually classified version of the ontology without the use of a reasoner, with imported terms, in OWL format (RDF/XML).
+
+**URL**: [http://purl.obolibrary.org/obo/hp.owl](http://purl.obolibrary.org/obo/hp.owl)
+
+**Format**: owl
+
+### HPO base release in obographs JSON format
+
+Manually curated version of the ontology without the use of a reasoner, with references to imported terms, in obographs JSON file format.
+
+**URL**: [http://purl.obolibrary.org/obo/hp/hp-base.json](http://purl.obolibrary.org/obo/hp/hp-base.json)
+
+**Format**: obo
+
+### HPO base release in OBO format
+
+Manually curated version of the ontology without the use of a reasoner, with references to imported terms, in OBO file format.
+
+**URL**: [http://purl.obolibrary.org/obo/hp/hp-base.obo](http://purl.obolibrary.org/obo/hp/hp-base.obo)
+
+**Format**: obo
+
+### HPO base release in OWL format
+
+Manually curated version of the ontology without the use of a reasoner, with references to imported terms, in OWL (RDF/XML) file format.
+
+**URL**: [http://purl.obolibrary.org/obo/hp/hp-base.owl](http://purl.obolibrary.org/obo/hp/hp-base.owl)
+
+**Format**: owl
+
+### HPO full release in obographs JSON format
+
+Version of the ontology automatically classified with the use of a reasoner, including all imported terms, in obographs JSON file format.
+
+**URL**: [http://purl.obolibrary.org/obo/hp/hp-full.json](http://purl.obolibrary.org/obo/hp/hp-full.json)
+
+**Format**: json
+
+### HPO full release in OBO format
+
+Version of the ontology automatically classified with the use of a reasoner, including all imported terms, in OBO file format.
+
+**URL**: [http://purl.obolibrary.org/obo/hp/hp-full.obo](http://purl.obolibrary.org/obo/hp/hp-full.obo)
+
+**Format**: obo
+
+### HPO full release in OWL format
+
+Version of the ontology automatically classified with the use of a reasoner, including all imported terms, in OWL (RDF/XML) file format.
+
+**URL**: [http://purl.obolibrary.org/obo/hp/hp-full.owl](http://purl.obolibrary.org/obo/hp/hp-full.owl)
+
+**Format**: owl
+
+### HPO International Edition in obographs JSON format
+
+Version of the ontology corresponding to the primary release (hp.owl), with translated labels, synonyms, and definitions, in obographs JSON file format.
+
+**URL**: [http://purl.obolibrary.org/obo/hp/hp-international.json](http://purl.obolibrary.org/obo/hp/hp-international.json)
+
+**Format**: json
+
+### HPO International Edition in OBO format
+
+Version of the ontology corresponding to the primary release (hp.owl), with translated labels, synonyms, and definitions, in OBO file format.
+
+**URL**: [http://purl.obolibrary.org/obo/hp/hp-international.obo](http://purl.obolibrary.org/obo/hp/hp-international.obo)
+
+**Format**: obo
+
+### HPO International Edition in OWL format
+
+Version of the ontology corresponding to the primary release (hp.owl), with translated labels, synonyms, and definitions, in OWL (RDF/XML) file format.
+
+**URL**: [http://purl.obolibrary.org/obo/hp/hp-international.owl](http://purl.obolibrary.org/obo/hp/hp-international.owl)
+
+**Format**: owl
+
+### HPO simple, manually classified, without imports in obographs JSON format
+
+Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in obographs JSON file format.
+
+**URL**: [http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.json](http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.json)
+
+**Format**: json
+
+### HPO simple, manually classified, without imports in OBO format
+
+Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in OBO file format.
+
+**URL**: [http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.obo](http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.obo)
+
+**Format**: obo
+
+### HPO simple, manually classified, without imports in OWL format
+
+Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in OWL (RDF/XML) file format.
+
+**URL**: [http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.owl](http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.owl)
+
+**Format**: owl
+
+### HPO Annotations (Phenotype to Disease)
+
+https://hpo.jax.org/app/data/annotations
+
+**URL**: [http://purl.obolibrary.org/obo/hp/phenotype.hpoa](http://purl.obolibrary.org/obo/hp/phenotype.hpoa)
+
+**Format**: tsv
+
+### HPO phenotype to gene annotations
+
+https://hpo.jax.org/app/data/annotations
+
+**URL**: [http://purl.obolibrary.org/obo/hp/phenotype_to_genes.txt](http://purl.obolibrary.org/obo/hp/phenotype_to_genes.txt)
+
+**Format**: tsv
+
+### HPO gene to phenotype annotations
+
+https://hpo.jax.org/app/data/annotations
+
+**URL**: [http://purl.obolibrary.org/obo/hp/genes_to_phenotype.txt](http://purl.obolibrary.org/obo/hp/genes_to_phenotype.txt)
+
+**Format**: tsv
+
+## Publications
+
+- [The Human Phenotype Ontology: a tool for annotating and analyzing human hereditary disease.](https://www.ncbi.nlm.nih.gov/pubmed/18950739)
+- [The Human Phenotype Ontology: Semantic Unification of Common and Rare Disease.](https://www.ncbi.nlm.nih.gov/pubmed/26119816)
+- [The Human Phenotype Ontology project: linking molecular biology and disease through phenotype data.](https://www.ncbi.nlm.nih.gov/pubmed/24217912)
+- [Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources.](https://www.ncbi.nlm.nih.gov/pubmed/30476213)
+
+**Domains**: biological systems
+
+**Taxon**: NCBITaxon:9606
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

@@ -1,14 +1,8 @@
 ---
-category: DataModelProduct
-description: OWL release of MONDO. The Complete ontology with merged imports.
+description: Complete ontology with merged imports.
 format: owl
 id: mondo.owl
-name: Mondo Disease Ontology OWL release
-original_source:
-- mondo
-product_file_size: 238595949
-product_url: https://purl.obolibrary.org/obo/mondo.owl
-secondary_source:
-- mondo
+name: Mondo OWL edition
+product_url: http://purl.obolibrary.org/obo/mondo.owl
 layout: product_detail
 ---

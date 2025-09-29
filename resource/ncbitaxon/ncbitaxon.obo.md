@@ -1,13 +1,8 @@
 ---
-category: DataModelProduct
-description: OBO format version of the NCBI Taxonomy, providing a standardized representation
-  for use with other OBO ontologies
+description: OBO Format version of Main release
 format: obo
 id: ncbitaxon.obo
-name: NCBI Taxonomy OBO
-original_source:
-- ncbitaxon
-product_file_size: 524761049
+name: OBO Format version of Main release
 product_url: http://purl.obolibrary.org/obo/ncbitaxon.obo
 layout: product_detail
 ---

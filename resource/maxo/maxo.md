@@ -1,16 +1,67 @@
 ---
 activity_status: active
-category: DataSource
-creation_date: '2025-08-13T00:00:00Z'
-description: Stub Resource page for maxo. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+collection:
+- obo-foundry
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: Leigh.Carmody@jax.org
+  - contact_type: github
+    value: LCCarmody
+  label: Leigh Carmody
+  orcid: 0000-0001-7941-2961
+description: The Medical Action Ontology (MAxO) provides a broad view of medical actions
+  and includes terms for medical procedures, interventions, therapies, treatments,
+  and recommendations.
 domains:
-- stub
+- biomedical
+homepage_url: https://github.com/monarch-initiative/MAxO
 id: maxo
-last_modified_date: '2025-08-13T00:00:00Z'
 layout: resource_detail
-name: Maxo
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Medical Action Ontology
 products:
+- description: Medical Action Ontology in OWL format
+  format: owl
+  id: maxo.owl
+  name: maxo.owl
+  product_file_size: 16025464
+  product_url: http://purl.obolibrary.org/obo/maxo.owl
+- description: Medical Action Ontology in OBO format
+  format: obo
+  id: maxo.obo
+  name: maxo.obo
+  product_file_size: 4091313
+  product_url: http://purl.obolibrary.org/obo/maxo.obo
+- description: Medical Action Ontology in JSON format
+  format: json
+  id: maxo.json
+  name: maxo.json
+  product_file_size: 9544243
+  product_url: http://purl.obolibrary.org/obo/maxo.json
+- description: Medical Action Ontology in OWL format
+  format: owl
+  id: maxo.maxo-base.owl
+  name: maxo.maxo-base.owl
+  product_file_size: 3500154
+  product_url: http://purl.obolibrary.org/obo/maxo/maxo-base.owl
+- description: Medical Action Ontology in OBO format
+  format: obo
+  id: maxo.maxo-base.obo
+  name: maxo.maxo-base.obo
+  product_file_size: 1074502
+  product_url: http://purl.obolibrary.org/obo/maxo/maxo-base.obo
+- description: Medical Action Ontology in JSON format
+  format: json
+  id: maxo.maxo-base.json
+  name: maxo.maxo-base.json
+  product_file_size: 2497251
+  product_url: http://purl.obolibrary.org/obo/maxo/maxo-base.json
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
   edge_count: 14486132
@@ -767,10 +818,68 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
   secondary_source:
   - kg-monarch
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+repository: https://github.com/monarch-initiative/MAxO
 ---
-# Maxo
+## Description
 
-This is an automatically generated stub page for maxo. Please update with proper information.
+The Medical Action Ontology (MAxO) provides a broad view of medical actions and includes terms for medical procedures, interventions, therapies, treatments, and recommendations.
+
+## Contacts
+
+- Leigh Carmody (Leigh.Carmody@jax.org) [ORCID: 0000-0001-7941-2961](https://orcid.org/0000-0001-7941-2961)
+
+## Products
+
+### maxo.owl
+
+Medical Action Ontology in OWL format
+
+**URL**: [http://purl.obolibrary.org/obo/maxo.owl](http://purl.obolibrary.org/obo/maxo.owl)
+
+**Format**: owl
+
+### maxo.obo
+
+Medical Action Ontology in OBO format
+
+**URL**: [http://purl.obolibrary.org/obo/maxo.obo](http://purl.obolibrary.org/obo/maxo.obo)
+
+**Format**: obo
+
+### maxo.json
+
+Medical Action Ontology in JSON format
+
+**URL**: [http://purl.obolibrary.org/obo/maxo.json](http://purl.obolibrary.org/obo/maxo.json)
+
+**Format**: json
+
+### maxo.maxo-base.owl
+
+Medical Action Ontology in OWL format
+
+**URL**: [http://purl.obolibrary.org/obo/maxo/maxo-base.owl](http://purl.obolibrary.org/obo/maxo/maxo-base.owl)
+
+**Format**: owl
+
+### maxo.maxo-base.obo
+
+Medical Action Ontology in OBO format
+
+**URL**: [http://purl.obolibrary.org/obo/maxo/maxo-base.obo](http://purl.obolibrary.org/obo/maxo/maxo-base.obo)
+
+**Format**: obo
+
+### maxo.maxo-base.json
+
+Medical Action Ontology in JSON format
+
+**URL**: [http://purl.obolibrary.org/obo/maxo/maxo-base.json](http://purl.obolibrary.org/obo/maxo/maxo-base.json)
+
+**Format**: json
+
+**Domains**: biomedical
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

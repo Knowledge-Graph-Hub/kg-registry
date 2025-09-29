@@ -39,9 +39,11 @@ products:
   name: UNII List Download
   product_url: https://precision.fda.gov/uniisearch/archive/latest/UNIIs.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-27_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-09-28_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-27: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 403 error
     when accessing file'
 - category: Product
   compression: zip
@@ -51,9 +53,11 @@ products:
   name: UNII Data Download
   product_url: https://precision.fda.gov/uniisearch/archive/latest/UNII_Data.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-27_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-09-28_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-27: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 403 error
     when accessing file'
 - category: Product
   description: Legacy UNII identifiers for historical substances
@@ -62,9 +66,11 @@ products:
   name: Legacy UNIIs
   product_url: https://precision.fda.gov/uniisearch/archive/latest/Legacy_UNIIs.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-27_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-09-28_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-27: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 403 error
     when accessing file'
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg

@@ -1,14 +1,9 @@
 ---
-category: DataModelProduct
-description: The latest release of CL in OBOGraph-JSON format with imports merged
+description: Complete ontology, plus inter-ontology axioms, and imports modules merged
   in
 format: json
 id: cl.json
-license:
-  id: http://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-name: CL JSON
-product_file_size: 36966292
+name: CL OBOGraph-JSON format edition
 product_url: http://purl.obolibrary.org/obo/cl.json
 layout: product_detail
 ---

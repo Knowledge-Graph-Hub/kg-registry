@@ -1,13 +1,8 @@
 ---
-category: DataModelProduct
-description: The OBO format release of the Phenotype And Trait Ontology.
+description: Phenotype And Trait Ontology in OBO format
 format: obo
 id: pato.obo
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-name: PATO OBO
-product_file_size: 110437
+name: pato.obo
 product_url: http://purl.obolibrary.org/obo/pato.obo
 layout: product_detail
 ---

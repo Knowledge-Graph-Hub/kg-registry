@@ -1,14 +1,36 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for obib. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+collection:
+- obo-foundry
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: jmwhorton@uams.edu
+  - contact_type: github
+    value: jmwhorton
+  label: Justin Whorton
+  orcid: 0009-0003-4268-6207
+description: An ontology built for annotation and modeling of biobank repository and
+  biobanking administration
 domains:
-- stub
+- biomedical
+homepage_url: https://github.com/biobanking/biobanking
 id: obib
 layout: resource_detail
-name: Obib
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Ontology for Biobanking
 products:
+- description: Ontology for Biobanking in OWL format
+  format: owl
+  id: obib.owl
+  name: obib.owl
+  product_file_size: 230390
+  product_url: http://purl.obolibrary.org/obo/obib.owl
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -136,10 +158,28 @@ products:
   product_url: https://ubkg-downloads.xconsortia.org/
   secondary_source:
   - ubkg
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+repository: https://github.com/biobanking/biobanking
 ---
-# Obib
+## Description
 
-This is an automatically generated stub page for obib. Please update with proper information.
+An ontology built for annotation and modeling of biobank repository and biobanking administration
+
+## Contacts
+
+- Justin Whorton (jmwhorton@uams.edu) [ORCID: 0009-0003-4268-6207](https://orcid.org/0009-0003-4268-6207)
+
+## Products
+
+### obib.owl
+
+Ontology for Biobanking in OWL format
+
+**URL**: [http://purl.obolibrary.org/obo/obib.owl](http://purl.obolibrary.org/obo/obib.owl)
+
+**Format**: owl
+
+**Domains**: biomedical
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

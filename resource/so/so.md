@@ -1,6 +1,8 @@
 ---
 activity_status: active
 category: DataModel
+collection:
+- obo-foundry
 contacts:
 - category: Individual
   contact_details:
@@ -10,53 +12,44 @@ contacts:
     value: keilbeck
   label: Karen Eilbeck
   orcid: 0000-0002-0831-6427
-description: The Sequence Ontology (SO) is a structured controlled vocabulary for
-  the features and attributes of biological sequences. SO provides a common set of
-  terms and definitions that facilitate the exchange, analysis, and management of
-  genomic data.
+description: A structured controlled vocabulary for sequence annotation, for the exchange
+  of annotation data and for the description of sequence objects in databases.
 domains:
-- biomedical
 - chemistry and biochemistry
-- genomics
 homepage_url: http://www.sequenceontology.org/
 id: so
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
-name: Sequence Ontology
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Sequence types and features ontology
 products:
-- category: DataModelProduct
-  description: Main SO release in OWL Format
+- description: Main SO OWL release
   format: owl
   id: so.owl
-  name: SO OWL
-  product_file_size: 290294
+  name: Main SO OWL release
+  product_file_size: 291621
   product_url: http://purl.obolibrary.org/obo/so.owl
-- category: DataModelProduct
-  description: Main SO release in OBO Format
+- description: Main SO release in OBO Format
   format: obo
   id: so.obo
-  name: SO OBO
-  product_file_size: 192457
+  name: Main SO release in OBO Format
+  product_file_size: 193405
   product_url: http://purl.obolibrary.org/obo/so.obo
-- category: DataModelProduct
-  description: Sequence Ontology Feature Annotation (SOFA) subset in OWL format. This
-    subset includes only locatable sequence features and is designed for use in such
-    outputs as GFF3.
+- description: This subset includes only locatable sequence features and is designed
+    for use in such outputs as GFF3
   format: owl
-  id: sofa.owl
-  name: SOFA OWL
-  product_file_size: 43355
+  id: so.subsets.SOFA.owl
+  name: Sequence Ontology Feature Annotation (SOFA) subset (OWL)
+  product_file_size: 43606
   product_url: http://purl.obolibrary.org/obo/so/subsets/SOFA.owl
-- category: DataModelProduct
-  description: Sequence Ontology Feature Annotation (SOFA) subset in OBO format. This
-    subset includes only locatable sequence features and is designed for use in such
-    outputs as GFF3.
+- description: This subset includes only locatable sequence features and is designed
+    for use in such outputs as GFF3
   format: obo
-  id: sofa.obo
-  name: SOFA OBO
-  product_file_size: 28214
+  id: so.subsets.SOFA.obo
+  name: Sequence Ontology Feature Annotation (SOFA) subset (OBO Format)
+  product_file_size: 28447
   product_url: http://purl.obolibrary.org/obo/so/subsets/SOFA.obo
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
@@ -207,62 +200,57 @@ products:
   - v3.0.2
   - v4.0.0
   - current_build
-publications:
-- authors:
-  - Eilbeck K
-  - Lewis SE
-  - Mungall CJ
-  - Yandell M
-  - Stein L
-  - Durbin R
-  - Ashburner M
-  doi: 10.1186/gb-2005-6-5-r44
-  id: doi:10.1186/gb-2005-6-5-r44
-  journal: Genome Biology
-  preferred: true
-  title: 'The Sequence Ontology: a tool for the unification of genome annotations'
-  year: '2005'
-- authors:
-  - Mungall CJ
-  - Batchelor C
-  - Eilbeck K
-  doi: 10.1016/j.jbi.2010.03.002
-  id: doi:10.1016/j.jbi.2010.03.002
-  journal: Journal of Biomedical Informatics
-  title: Evolution of the Sequence Ontology terms and relationships
-  year: '2010'
 repository: https://github.com/The-Sequence-Ontology/SO-Ontologies
 ---
-# Sequence Ontology
+## Description
 
-The Sequence Ontology (SO) is a structured controlled vocabulary for the features and attributes of biological sequences. It was initially developed by the [Gene Ontology Consortium](http://www.geneontology.org/) and has since evolved with contributions from the [GMOD](http://www.gmod.org/) community, model organism database groups, and research institutes.
+A structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases.
 
-## Overview
+## Contacts
 
-SO provides a common set of terms and definitions that facilitate the exchange, analysis, and management of genomic data. It includes different kinds of features which can be located on biological sequences:
+- Karen Eilbeck (keilbeck@genetics.utah.edu) [ORCID: 0000-0002-0831-6427](https://orcid.org/0000-0002-0831-6427)
 
-- **Biological features**: Defined by their disposition to be involved in a biological process (e.g., binding_site, exon)
-- **Biomaterial features**: Intended for use in experiments (e.g., aptamer, PCR_product)
-- **Experimental features**: Results of experiments
+## Products
 
-The ontology also provides a rich set of attributes to describe these features, such as "polycistronic" and "maternally imprinted."
+### Main SO OWL release
 
-## Applications
+Main SO OWL release
 
-The Sequence Ontology serves several key purposes:
+**URL**: [http://purl.obolibrary.org/obo/so.owl](http://purl.obolibrary.org/obo/so.owl)
 
-1. **Structured controlled vocabulary** for describing primary annotations of nucleic acid sequences, including annotations shared by DAS servers or encoded by GFF3
-2. **Structured representation of annotations within databases**, enabling cross-database queries for specific genomic features
-3. **Standardized description of mutations** at both sequence and more general levels in genomic databases
+**Format**: owl
 
-## Integration with Other Resources
+### Main SO release in OBO Format
 
-The Sequence Ontology is part of the [OBO Foundry](http://www.obofoundry.org/) and has close links to other ontology projects such as:
-- The RNA Ontology Consortium ([RNAO](http://roc.bgsu.edu/))
-- Biosapiens polypeptide features
+Main SO release in OBO Format
 
-## Access and Development
+**URL**: [http://purl.obolibrary.org/obo/so.obo](http://purl.obolibrary.org/obo/so.obo)
 
-SO is available in both OWL and OBO formats, with the main ontology and the Sequence Ontology Feature Annotation (SOFA) subset which includes only locatable sequence features designed for use in outputs like GFF3.
+**Format**: obo
 
-For new term suggestions, users can submit requests through the [Term Tracker](https://github.com/The-Sequence-Ontology/SO-Ontologies/issues) on GitHub.
+### Sequence Ontology Feature Annotation (SOFA) subset (OWL)
+
+This subset includes only locatable sequence features and is designed for use in such outputs as GFF3
+
+**URL**: [http://purl.obolibrary.org/obo/so/subsets/SOFA.owl](http://purl.obolibrary.org/obo/so/subsets/SOFA.owl)
+
+**Format**: owl
+
+### Sequence Ontology Feature Annotation (SOFA) subset (OBO Format)
+
+This subset includes only locatable sequence features and is designed for use in such outputs as GFF3
+
+**URL**: [http://purl.obolibrary.org/obo/so/subsets/SOFA.obo](http://purl.obolibrary.org/obo/so/subsets/SOFA.obo)
+
+**Format**: obo
+
+## Publications
+
+- [The Sequence Ontology: a tool for the unification of genome annotations.](https://www.ncbi.nlm.nih.gov/pubmed/15892872)
+- [Evolution of the Sequence Ontology terms and relationships.](https://www.ncbi.nlm.nih.gov/pubmed/20226267)
+
+**Domains**: chemistry and biochemistry
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*
