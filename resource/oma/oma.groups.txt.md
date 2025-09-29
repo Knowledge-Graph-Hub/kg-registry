@@ -10,9 +10,9 @@ product_url: https://omabrowser.org/oma/current/OmaGroups.txt.gz
 secondary_source:
 - oma
 warnings:
-- File was not able to be retrieved when checked on 2025-09-27_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-09-27_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-09-28_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-09-01_ HTTP 502 error when
   accessing file

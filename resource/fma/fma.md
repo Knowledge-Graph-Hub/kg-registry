@@ -1,35 +1,30 @@
 ---
-activity_status: active
-category: DataSource
+activity_status: inactive
+category: DataModel
+collection:
+- obo-foundry
 contacts:
 - category: Individual
   contact_details:
   - contact_type: email
     value: mejino@u.washington.edu
   label: Onard Mejino
-description: The Foundational Model of Anatomy (FMA) is a reference ontology for the
-  domain of human anatomy. It is a symbolic representation of the canonical, phenotypic
-  structure of an organism; a spatial-structural ontology of anatomical entities and
-  relations which form the physical organization of an organism at all salient levels
-  of granularity. The FMA contains approximately 75,000 classes and over 120,000 terms,
-  with over 2.1 million relationship instances from over 168 relationship types.
+description: This is currently a slimmed down version of FMA
 domains:
 - anatomy and development
-homepage_url: http://sig.biostr.washington.edu/projects/fm/
+homepage_url: http://si.washington.edu/projects/fma
 id: fma
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY-3.0
-name: Foundational Model of Anatomy
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Foundational Model of Anatomy Ontology (subset)
 products:
-- category: DataModelProduct
-  description: The Foundational Model of Anatomy in OWL format
+- description: Foundational Model of Anatomy Ontology (subset) in OWL format
   format: owl
   id: fma.owl
-  name: FMA OWL
-  original_source:
-  - fma
+  name: fma.owl
   product_file_size: 66368046
   product_url: http://purl.obolibrary.org/obo/fma.owl
 - category: DataModelProduct
@@ -138,35 +133,38 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-publications:
-- doi: 10.1016/j.jbi.2003.11.007
-  id: doi:10.1016/j.jbi.2003.11.007
-  title: A reference ontology for biomedical informatics - the Foundational Model
-    of Anatomy
-- doi: 10.1016/j.datak.2003.06.002
-  id: doi:10.1016/j.datak.2003.06.002
-  title: Pushing the envelope - challenges in a frame-based representation of human
-    anatomy
-- doi: 10.1016/j.websem.2007.12.001
-  id: doi:10.1016/j.websem.2007.12.001
-  title: Translating the foundational model of anatomy into OWL
+repository: https://bitbucket.org/uwsig/fma
+taxon:
+- NCBITaxon:9606
 ---
-# Foundational Model of Anatomy
+## Description
 
-The Foundational Model of Anatomy (FMA) is a reference ontology for the domain of human anatomy, developed and maintained by the Structural Informatics Group at the University of Washington. It provides a comprehensive and coherent symbolic representation of the structural organization of the human body from the macroscopic to the molecular level.
+This is currently a slimmed down version of FMA
 
-## Overview
+## Contacts
 
-The FMA serves as a reference ontology in biomedical informatics for correlating different views of anatomy, aligning existing and emerging ontologies in bioinformatics, and providing a structure-based template for representing biological functions. It contains approximately 75,000 distinct anatomical concepts represented by specific terms and over 120,000 terms altogether. The FMA also includes more than 2.1 million relationship instances from over 168 relationship types.
+- Onard Mejino (mejino@u.washington.edu)
 
-## Features
+## Products
 
-- Comprehensive coverage of macroscopic and microscopic human anatomy
-- Explicit representation of anatomical entities and relationships
-- Spatial-structural ontology with multiple levels of granularity
-- Formal definitions for anatomical structures
-- Available in OWL and OBO formats for computational applications
+### fma.owl
 
-## Resources
+Foundational Model of Anatomy Ontology (subset) in OWL format
 
-The FMA is available through BioPortal and the OBO Foundry. It is part of the Unified Medical Language System (UMLS) and serves as a foundation for many other biomedical ontologies and applications.
+**URL**: [http://purl.obolibrary.org/obo/fma.owl](http://purl.obolibrary.org/obo/fma.owl)
+
+**Format**: owl
+
+## Publications
+
+- [Translating the Foundational Model of Anatomy into OWL](https://www.ncbi.nlm.nih.gov/pubmed/18688289)
+- [The foundational model of anatomy in OWL: Experience and perspectives](https://www.ncbi.nlm.nih.gov/pubmed/18360535)
+- [Challenges in converting frame-based ontology into OWL: the Foundational Model of Anatomy case-study](https://www.ncbi.nlm.nih.gov/pubmed/16779026)
+
+**Domains**: anatomy and development
+
+**Taxon**: NCBITaxon:9606
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

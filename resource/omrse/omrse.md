@@ -1,94 +1,39 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for omrse. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+collection:
+- obo-foundry
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: hoganwr@gmail.com
+  - contact_type: github
+    value: hoganwr
+  label: Bill Hogan
+  orcid: 0000-0002-9881-1017
+description: The Ontology for Modeling and Representation of Social Entities (OMRSE)
+  is an OBO Foundry ontology that represents the various entities that arise from
+  human social interactions, such as social acts, social roles, social groups, and
+  organizations.
 domains:
-- stub
+- biomedical
+homepage_url: https://github.com/mcwdsi/OMRSE/wiki/OMRSE-Overview
 id: omrse
 layout: resource_detail
-name: Omrse
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Ontology for Modeling and Representation of Social Entities
 products:
-- category: DataModelProduct
-  description: The latest release of Plant Trait Ontology in OWL format
+- description: Ontology for Modeling and Representation of Social Entities in OWL
+    format
   format: owl
-  id: to.owl
-  latest_version: v2025-05-20
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology OWL
-  original_source:
-  - to
-  - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 212124
-  product_url: http://purl.obolibrary.org/obo/to.owl
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
-- category: DataModelProduct
-  description: The latest release of Plant Trait Ontology in OBO format
-  format: obo
-  id: to.obo
-  latest_version: v2025-05-20
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology OBO
-  original_source:
-  - to
-  - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 158383
-  product_url: http://purl.obolibrary.org/obo/to.obo
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
+  id: omrse.owl
+  name: omrse.owl
+  product_file_size: 169148
+  product_url: http://purl.obolibrary.org/obo/omrse.owl
 - category: DataModelProduct
   description: The Basic subset of the Plant Trait Ontology in OBO format
   format: obo
@@ -129,10 +74,36 @@ products:
   - v2022-04-13
   - v2022-03-09
   - v2021-04-06
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+repository: https://github.com/mcwdsi/OMRSE
+taxon:
+- NCBITaxon:9606
 ---
-# Omrse
+## Description
 
-This is an automatically generated stub page for omrse. Please update with proper information.
+The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations.
+
+## Contacts
+
+- Bill Hogan (hoganwr@gmail.com) [ORCID: 0000-0002-9881-1017](https://orcid.org/0000-0002-9881-1017)
+
+## Products
+
+### omrse.owl
+
+Ontology for Modeling and Representation of Social Entities in OWL format
+
+**URL**: [http://purl.obolibrary.org/obo/omrse.owl](http://purl.obolibrary.org/obo/omrse.owl)
+
+**Format**: owl
+
+## Publications
+
+- [The ontology of medically related social entities: recent developments](https://www.ncbi.nlm.nih.gov/pubmed/27406187)
+
+**Domains**: biomedical
+
+**Taxon**: NCBITaxon:9606
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

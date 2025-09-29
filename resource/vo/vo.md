@@ -1,36 +1,35 @@
 ---
 activity_status: active
 category: DataModel
-creation_date: '2025-08-20T00:00:00Z'
-description: The Vaccine Ontology (VO) is a community ontology that represents vaccines,
-  vaccine components, vaccine administration, host responses, pathogens, and related
-  concepts. VO supports standardized representation, data integration, and analysis
-  of vaccine-related knowledge across resources.
+collection:
+- obo-foundry
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: yongqunh@med.umich.edu
+  - contact_type: github
+    value: yongqunh
+  label: Yongqunh He
+  orcid: 0000-0001-9189-9661
+description: VO is a biomedical ontology in the domain of vaccine and vaccination.
 domains:
-- immunology
-- health
-- organisms
-homepage_url: https://obofoundry.org/ontology/vo.html
+- biomedical
+homepage_url: https://violinet.org/vaccineontology
 id: vo
-last_modified_date: '2025-08-20T00:00:00Z'
 layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Vaccine Ontology
 products:
-- category: DataModelProduct
-  description: OWL release of VO
+- description: Vaccine Ontology in OWL format
   format: owl
   id: vo.owl
-  name: Vaccine Ontology OWL release
-  original_source:
-  - bfo
-  - iao
-  - chebi
-  - ncbitaxon
-  - vo
+  name: vo.owl
   product_file_size: 1466262
   product_url: http://purl.obolibrary.org/obo/vo.owl
-  secondary_source:
-  - vo
 - category: GraphProduct
   description: PheKnowLator graph files, including subsets with and without inverse
     relations.
@@ -155,6 +154,33 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
   secondary_source:
   - rna-kg
+repository: https://github.com/vaccineontology/VO
 ---
-VO provides a standardized vocabulary for vaccines and related entities, facilitating interoperability
-among vaccine data resources and supporting computational analysis.
+## Description
+
+VO is a biomedical ontology in the domain of vaccine and vaccination.
+
+## Contacts
+
+- Yongqunh He (yongqunh@med.umich.edu) [ORCID: 0000-0001-9189-9661](https://orcid.org/0000-0001-9189-9661)
+
+## Products
+
+### vo.owl
+
+Vaccine Ontology in OWL format
+
+**URL**: [http://purl.obolibrary.org/obo/vo.owl](http://purl.obolibrary.org/obo/vo.owl)
+
+**Format**: owl
+
+## Publications
+
+- [Ontology representation and analysis of vaccine formulation and administration and their effects on vaccine immune responses](https://www.ncbi.nlm.nih.gov/pubmed/23256535)
+- [Mining of vaccine-associated IFN-  gene interaction networks using the Vaccine Ontology](https://www.ncbi.nlm.nih.gov/pubmed/21624163)
+
+**Domains**: biomedical
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

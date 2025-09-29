@@ -1,14 +1,42 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for mi. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+collection:
+- obo-foundry
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: luana.licata@gmail.com
+  - contact_type: github
+    value: luanalicata
+  label: Luana Licata
+  orcid: 0000-0001-5084-9000
+description: A structured controlled vocabulary for the annotation of experiments
+  concerned with protein-protein interactions.
 domains:
-- stub
+- biomedical
+homepage_url: https://github.com/HUPO-PSI/psi-mi-CV
 id: mi
 layout: resource_detail
-name: Mi
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Molecular Interactions Controlled Vocabulary
 products:
+- description: Molecular Interactions Controlled Vocabulary in OWL format
+  format: owl
+  id: mi.owl
+  name: mi.owl
+  product_file_size: 247560
+  product_url: http://purl.obolibrary.org/obo/mi.owl
+- description: Molecular Interactions Controlled Vocabulary in OBO format
+  format: obo
+  id: mi.obo
+  name: mi.obo
+  product_file_size: 168748
+  product_url: http://purl.obolibrary.org/obo/mi.obo
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -228,10 +256,36 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+repository: https://github.com/HUPO-PSI/psi-mi-CV
 ---
-# Mi
+## Description
 
-This is an automatically generated stub page for mi. Please update with proper information.
+A structured controlled vocabulary for the annotation of experiments concerned with protein-protein interactions.
+
+## Contacts
+
+- Luana Licata (luana.licata@gmail.com) [ORCID: 0000-0001-5084-9000](https://orcid.org/0000-0001-5084-9000)
+
+## Products
+
+### mi.owl
+
+Molecular Interactions Controlled Vocabulary in OWL format
+
+**URL**: [http://purl.obolibrary.org/obo/mi.owl](http://purl.obolibrary.org/obo/mi.owl)
+
+**Format**: owl
+
+### mi.obo
+
+Molecular Interactions Controlled Vocabulary in OBO format
+
+**URL**: [http://purl.obolibrary.org/obo/mi.obo](http://purl.obolibrary.org/obo/mi.obo)
+
+**Format**: obo
+
+**Domains**: biomedical
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

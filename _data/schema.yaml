@@ -1620,6 +1620,20 @@ classes:
         - DataSource
         - DataModel
         range: string
+      taxon:
+        name: taxon
+        description: The taxon or taxa that the resource is relevant to. This is preferably
+          an NCBI Taxonomy identifier, in CURIE format.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: taxon
+        owner: Resource
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        range: uriorcurie
+        multivalued: true
       id:
         name: id
         description: The identifier of an entity. This is used to identify it within
@@ -2135,6 +2149,20 @@ classes:
         - DataSource
         - DataModel
         range: string
+      taxon:
+        name: taxon
+        description: The taxon or taxa that the resource is relevant to. This is preferably
+          an NCBI Taxonomy identifier, in CURIE format.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: taxon
+        owner: KnowledgeGraph
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        range: uriorcurie
+        multivalued: true
       id:
         name: id
         description: The identifier of an entity. This is used to identify it within
@@ -2596,6 +2624,20 @@ classes:
         - DataSource
         - DataModel
         range: string
+      taxon:
+        name: taxon
+        description: The taxon or taxa that the resource is relevant to. This is preferably
+          an NCBI Taxonomy identifier, in CURIE format.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: taxon
+        owner: DataSource
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        range: uriorcurie
+        multivalued: true
       id:
         name: id
         description: The identifier of an entity. This is used to identify it within
@@ -3058,6 +3100,20 @@ classes:
         - DataSource
         - DataModel
         range: string
+      taxon:
+        name: taxon
+        description: The taxon or taxa that the resource is relevant to. This is preferably
+          an NCBI Taxonomy identifier, in CURIE format.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: taxon
+        owner: DataModel
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        range: uriorcurie
+        multivalued: true
       id:
         name: id
         description: The identifier of an entity. This is used to identify it within
@@ -3521,6 +3577,20 @@ classes:
         - DataSource
         - DataModel
         range: string
+      taxon:
+        name: taxon
+        description: The taxon or taxa that the resource is relevant to. This is preferably
+          an NCBI Taxonomy identifier, in CURIE format.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: taxon
+        owner: Aggregator
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        range: uriorcurie
+        multivalued: true
       id:
         name: id
         description: The identifier of an entity. This is used to identify it within

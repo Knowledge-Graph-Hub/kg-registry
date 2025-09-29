@@ -1,14 +1,36 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for ogms. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+collection:
+- obo-foundry
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: baeverma@jcvi.org
+  - contact_type: github
+    value: BAevermann
+  label: Brian Aevermann
+  orcid: 0000-0003-1346-1327
+description: An ontology for representing treatment of disease and diagnosis and on
+  carcinomas and other pathological entities
 domains:
-- stub
+- biomedical
+homepage_url: https://github.com/OGMS/ogms
 id: ogms
 layout: resource_detail
-name: Ogms
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Ontology for General Medical Science
 products:
+- description: Ontology for General Medical Science in OWL format
+  format: owl
+  id: ogms.owl
+  name: ogms.owl
+  product_file_size: 39126
+  product_url: http://purl.obolibrary.org/obo/ogms.owl
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -116,86 +138,6 @@ products:
   secondary_source:
   - efo
 - category: DataModelProduct
-  description: The latest release of Plant Trait Ontology in OWL format
-  format: owl
-  id: to.owl
-  latest_version: v2025-05-20
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology OWL
-  original_source:
-  - to
-  - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 212124
-  product_url: http://purl.obolibrary.org/obo/to.owl
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
-- category: DataModelProduct
-  description: The latest release of Plant Trait Ontology in OBO format
-  format: obo
-  id: to.obo
-  latest_version: v2025-05-20
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology OBO
-  original_source:
-  - to
-  - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 158383
-  product_url: http://purl.obolibrary.org/obo/to.obo
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
-- category: DataModelProduct
   description: The Basic subset of the Plant Trait Ontology in OBO format
   format: obo
   id: to-basic.obo
@@ -235,10 +177,37 @@ products:
   - v2022-04-13
   - v2022-03-09
   - v2021-04-06
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+repository: https://github.com/OGMS/ogms
+taxon:
+- NCBITaxon:9606
 ---
-# Ogms
+## Description
 
-This is an automatically generated stub page for ogms. Please update with proper information.
+An ontology for representing treatment of disease and diagnosis and on carcinomas and other pathological entities
+
+## Contacts
+
+- Brian Aevermann (baeverma@jcvi.org) [ORCID: 0000-0003-1346-1327](https://orcid.org/0000-0003-1346-1327)
+
+## Products
+
+### ogms.owl
+
+Ontology for General Medical Science in OWL format
+
+**URL**: [http://purl.obolibrary.org/obo/ogms.owl](http://purl.obolibrary.org/obo/ogms.owl)
+
+**Format**: owl
+
+## Publications
+
+- [Toward an ontological treatment of disease and diagnosis](https://www.ncbi.nlm.nih.gov/pubmed/21347182)
+- [Biomarkers in the Ontology for General Medical Science](https://www.ncbi.nlm.nih.gov/pubmed/25991121)
+
+**Domains**: biomedical
+
+**Taxon**: NCBITaxon:9606
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

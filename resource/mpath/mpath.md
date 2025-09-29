@@ -1,14 +1,36 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for mpath. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+collection:
+- obo-foundry
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: pns12@hermes.cam.ac.uk
+  - contact_type: github
+    value: PaulNSchofield
+  label: Paul Schofield
+  orcid: 0000-0002-5111-7263
+description: A structured controlled vocabulary of mutant and transgenic mouse pathology
+  phenotypes
 domains:
-- stub
+- biomedical
+homepage_url: http://www.pathbase.net
 id: mpath
 layout: resource_detail
-name: Mpath
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Mouse pathology ontology
 products:
+- description: Mouse pathology ontology in OWL format
+  format: owl
+  id: mpath.owl
+  name: mpath.owl
+  product_file_size: 88952
+  product_url: http://purl.obolibrary.org/obo/mpath.owl
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -115,10 +137,32 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+repository: https://github.com/PaulNSchofield/mpath
+taxon:
+- NCBITaxon:10088
 ---
-# Mpath
+## Description
 
-This is an automatically generated stub page for mpath. Please update with proper information.
+A structured controlled vocabulary of mutant and transgenic mouse pathology phenotypes
+
+## Contacts
+
+- Paul Schofield (pns12@hermes.cam.ac.uk) [ORCID: 0000-0002-5111-7263](https://orcid.org/0000-0002-5111-7263)
+
+## Products
+
+### mpath.owl
+
+Mouse pathology ontology in OWL format
+
+**URL**: [http://purl.obolibrary.org/obo/mpath.owl](http://purl.obolibrary.org/obo/mpath.owl)
+
+**Format**: owl
+
+**Domains**: biomedical
+
+**Taxon**: NCBITaxon:10088
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

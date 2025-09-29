@@ -1,14 +1,9 @@
 ---
-category: DataModelProduct
-description: OWL release of HP
+description: Manually classified version of the ontology without the use of a reasoner,
+  with imported terms, in OWL format (RDF/XML).
 format: owl
 id: hp.owl
-name: Human Phenotype Ontology OWL release
-original_source:
-- hp
-product_file_size: 75240038
+name: Official HPO release in OWL
 product_url: http://purl.obolibrary.org/obo/hp.owl
-secondary_source:
-- hp
 layout: product_detail
 ---

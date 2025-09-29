@@ -1,96 +1,235 @@
 ---
 activity_status: active
-category: Resource
+category: DataModel
+collection:
+- obo-foundry
 contacts:
-- category: Organization
+- category: Individual
   contact_details:
   - contact_type: email
-    value: help@geneontology.org
-  label: Gene Ontology Helpdesk
-description: "The Gene Ontology resource, the world\u2019s largest source of information\
-  \ on the functions of genes. This knowledge is both human-readable and machine-readable,\
-  \ and is a foundation for computational analysis of large-scale molecular biology\
-  \ and genetics experiments in biomedical research."
+    value: suzia@stanford.edu
+  - contact_type: github
+    value: suzialeksander
+  label: Suzi Aleksander
+  orcid: 0000-0001-6787-2901
+description: An ontology for describing the function of genes and gene products
 domains:
 - biological systems
-homepage_url: https://geneontology.org/
+homepage_url: http://geneontology.org/
 id: go
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY-4.0
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Gene Ontology
 products:
-- category: MappingProduct
-  description: bigg.compartment SSSOM
-  format: sssom
-  id: obo-db-ingest.bigg.compartment.sssom.tsv
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.compartment SSSOM
+- description: The main ontology in OWL. This is self contained and does not have
+    connections to other OBO ontologies
+  format: owl
+  id: go.owl
+  name: GO (OWL edition)
+  product_file_size: 127571069
+  product_url: http://purl.obolibrary.org/obo/go.owl
+- description: Equivalent to go.owl, in obo format
+  format: obo
+  id: go.obo
+  name: GO (OBO Format edition)
+  product_file_size: 35231218
+  product_url: http://purl.obolibrary.org/obo/go.obo
+- description: Equivalent to go.owl, in obograph json format
+  format: json
+  id: go.json
+  name: GO (JSON edition)
+  product_file_size: 77684224
+  product_url: http://purl.obolibrary.org/obo/go.json
+- description: The main ontology plus axioms connecting to select external ontologies,
+    with subsets of those ontologies
+  format: owl
+  id: go.extensions.go-plus.owl
+  name: GO-Plus
+  product_file_size: 235674958
+  product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.owl
+- description: The main ontology plus axioms connecting to select external ontologies,
+    excluding the external ontologies themselves
+  format: owl
+  id: go.go-base.owl
+  name: GO Base Module
+  product_file_size: 160959040
+  product_url: http://purl.obolibrary.org/obo/go/go-base.owl
+- description: As go-plus.owl, in obographs json format
+  format: json
+  id: go.extensions.go-plus.json
+  name: GO-Plus
+  product_file_size: 131628513
+  product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
+- description: Basic version of the GO, filtered such that the graph is guaranteed
+    to be acyclic and annotations can be propagated up the graph. The relations included
+    are is a, part of, regulates, negatively regulates and positively regulates. This
+    version excludes relationships that cross the 3 GO hierarchies.
+  format: obo
+  id: go.go-basic.obo
+  name: GO-Basic, Filtered, for use with legacy tools
+  product_file_size: 31428837
+  product_url: http://purl.obolibrary.org/obo/go/go-basic.obo
+- description: As go-basic.obo, in json format
+  format: json
+  id: go.go-basic.json
+  name: GO-Basic, Filtered, for use with legacy tools (JSON)
+  product_file_size: 67268361
+  product_url: http://purl.obolibrary.org/obo/go/go-basic.json
+- description: Classes added to ncbitaxon for groupings such as prokaryotes
+  format: owl
+  id: go.extensions.go-taxon-groupings.owl
+  name: GO Taxon Groupings
+  product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+    when accessing file'
+- description: Equivalent to go.owl, but released daily. Note the snapshot release
+    is not archived.
+  format: owl
+  id: go.snapshot.go.owl
+  name: GO (OWL edition), daily snapshot release
+  product_file_size: 127450469
+  product_url: http://purl.obolibrary.org/obo/go/snapshot/go.owl
+- description: Equivalent to go.owl, but released daily. Note the snapshot release
+    is not archived.
+  format: obo
+  id: go.snapshot.go.obo
+  name: GO (OBO Format edition), daily snapshot release
+  product_file_size: 35236112
+  product_url: http://purl.obolibrary.org/obo/go/snapshot/go.obo
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
+  name: Bioteque Embeddings
   original_source:
-  - bigg
-  - go
-  product_file_size: 242
-  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
-  secondary_source:
-  - obo-db-ingest
-- category: MappingProduct
-  description: Mappings between InterPro entries and Gene Ontology (GO) terms
-  format: tsv
-  id: interpro.interpro2go
-  name: InterPro to GO Mappings
-  original_source:
-  - go
-  - interpro
-  product_file_size: 3088718
-  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go
-  secondary_source:
-  - interpro
-- category: GraphProduct
-  description: The SPOKE knowledge graph containing nodes and edges from multiple
-    biomedical data sources.
-  id: spoke.graph
-  name: SPOKE Graph
-  original_source:
-  - ncbigene
-  - medline
-  - mesh
-  - pid
-  - do
-  - diseases
+  - chebi
+  - cosmic
+  - achilles
+  - depmap
+  - ccle
+  - gdsc
+  - cellosaurus
+  - clue
+  - ctd
+  - pharmacodb
+  - prism
+  - drugbank
+  - lincs
+  - compartments
+  - offsides
+  - sider
   - drugcentral
+  - repohub
+  - chemicalchecker
+  - repodb
+  - disgenet
+  - opentargets
+  - creeds
+  - interpro
+  - reactome
+  - tissues
+  - dorothea
+  - progeny
+  - gtex
+  - hpa
+  - go
+  - corum
+  - huri
+  - intact
+  - omnipath
+  - string
+  - bto
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+  secondary_source:
+  - bioteque
+- category: GraphicalInterface
+  description: A browser interface for a knowledge graph for Alzheimer's Disease.
+  format: http
+  id: alzkb.browser
+  name: AlzKB Graph Database Browser
+  original_source:
+  - aop-db
+  - bgee
+  - disgenet
+  - do
+  - drugbank
+  - dsstox
   - go
   - gwascatalog
-  - reactome
+  - hrpimp
   - lincs-l1000
+  - mesh
+  - ncbigene
+  - pharmacotherapydb
+  - pid
+  - pubchem
+  - reactome
+  - sider
+  - tissues
   - uberon
   - wikipathways
-  - bindingdb
-  - drugbank
-  - sider
-  - bgee
-  - uniprot
-  - string
-  - omim
-  - chembl
-  - foodb
-  - civic
-  - gdsc
-  - clinicaltrialsgov
-  - hpa
-  - cl
-  - kegg
-  - metacyc
-  - bv-brc
-  - ncbitaxon
-  - pathophenodb
-  - pfam
-  - interpro
-  - protcid
+  product_url: https://alzkb.ai:7473/login
   secondary_source:
-  - spoke
+  - alzkb
+  - hetionet
+- category: GraphProduct
+  description: Memgraph data release for AlzKB.
+  id: alzkb.data
+  name: AlzKB Data Release (Version 2.0.0)
+  original_source:
+  - aop-db
+  - bgee
+  - disgenet
+  - do
+  - drugbank
+  - dsstox
+  - go
+  - gwascatalog
+  - hrpimp
+  - lincs-l1000
+  - mesh
+  - ncbigene
+  - pharmacotherapydb
+  - pid
+  - pubchem
+  - reactome
+  - reactome
+  - sider
+  - tissues
+  - uberon
+  - wikipathways
+  product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
+  secondary_source:
+  - alzkb
+  - hetionet
+- description: The MechRepoNet knowledge graph in its original format
+  id: mechreponet.kg
+  name: MechRepoNet Knowledge Graph
+  original_source:
+  - ctd
+  - do
+  - go
+  - chebi
+  - reactome
+  - interpro
+  - hp
+  - cl
+  - pr
+  - uberon
+  - ncbitaxon
+  - hetionet
+  - complexportal
+  - rnacentral
+  - mirtarbase
+  - unii
+  - biolink
+  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+  secondary_source:
+  - mechreponet
 - category: GraphProduct
   description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
@@ -176,66 +315,166 @@ products:
   product_url: https://arax.ncats.io/
   secondary_source:
   - rtx-kg2
-- category: GraphicalInterface
-  description: A browser interface for a knowledge graph for Alzheimer's Disease.
-  format: http
-  id: alzkb.browser
-  name: AlzKB Graph Database Browser
-  original_source:
-  - aop-db
-  - bgee
-  - disgenet
-  - do
-  - drugbank
-  - dsstox
-  - go
-  - gwascatalog
-  - hrpimp
-  - lincs-l1000
-  - mesh
-  - ncbigene
-  - pharmacotherapydb
-  - pid
-  - pubchem
-  - reactome
-  - sider
-  - tissues
-  - uberon
-  - wikipathways
-  product_url: https://alzkb.ai:7473/login
-  secondary_source:
-  - alzkb
-  - hetionet
 - category: GraphProduct
-  description: Memgraph data release for AlzKB.
-  id: alzkb.data
-  name: AlzKB Data Release (Version 2.0.0)
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
   original_source:
-  - aop-db
-  - bgee
-  - disgenet
-  - do
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
   - drugbank
-  - dsstox
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - do
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: cancer-genome-interpreter.clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - do
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - ncbigene
+  - medline
+  - mesh
+  - pid
+  - do
+  - diseases
+  - drugcentral
   - go
   - gwascatalog
-  - hrpimp
+  - reactome
   - lincs-l1000
-  - mesh
-  - ncbigene
-  - pharmacotherapydb
-  - pid
-  - pubchem
-  - reactome
-  - reactome
-  - sider
-  - tissues
   - uberon
   - wikipathways
-  product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
   secondary_source:
-  - alzkb
-  - hetionet
+  - spoke
+- category: ProcessProduct
+  description: INDRA CoGEx is a graph database integrating causal relations, ontological
+    relations, properties, and data, assembled at scale automatically from the scientific
+    literature and structured sources. This is the code to build the graph.
+  id: indra.cogex.code
+  name: INDRA CoGEx Build Code
+  original_source:
+  - chembl
+  - sider
+  - reactome
+  - wikipathways
+  - hp
+  - nihreporter
+  - disgenet
+  - pubmed
+  - gwascatalog
+  - cellmarker
+  - go
+  - bgee
+  - ccle
+  - clinicaltrialsgov
+  - indra
+  product_url: https://github.com/gyorilab/indra_cogex
+  secondary_source:
+  - indra
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -342,310 +581,6 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-- category: Product
-  description: Network embeddings of the Bioteque graph that represent biological
-    entities and their associations
-  id: bioteque.embeddings
-  name: Bioteque Embeddings
-  original_source:
-  - chebi
-  - cosmic
-  - achilles
-  - depmap
-  - ccle
-  - gdsc
-  - cellosaurus
-  - clue
-  - ctd
-  - pharmacodb
-  - prism
-  - drugbank
-  - lincs
-  - compartments
-  - offsides
-  - sider
-  - drugcentral
-  - repohub
-  - chemicalchecker
-  - repodb
-  - disgenet
-  - opentargets
-  - creeds
-  - interpro
-  - reactome
-  - tissues
-  - dorothea
-  - progeny
-  - gtex
-  - hpa
-  - go
-  - corum
-  - huri
-  - intact
-  - omnipath
-  - string
-  - bto
-  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
-  secondary_source:
-  - bioteque
-- category: DataModelProduct
-  description: The latest release of Plant Trait Ontology in OWL format
-  format: owl
-  id: to.owl
-  latest_version: v2025-05-20
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology OWL
-  original_source:
-  - to
-  - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 212124
-  product_url: http://purl.obolibrary.org/obo/to.owl
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
-- category: DataModelProduct
-  description: The latest release of Plant Trait Ontology in OBO format
-  format: obo
-  id: to.obo
-  latest_version: v2025-05-20
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology OBO
-  original_source:
-  - to
-  - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 158383
-  product_url: http://purl.obolibrary.org/obo/to.obo
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
-- category: DataModelProduct
-  description: The Basic subset of the Plant Trait Ontology in OBO format
-  format: obo
-  id: to-basic.obo
-  latest_version: v2025-05-20
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology Basic OBO
-  original_source:
-  - to
-  - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 111996
-  product_url: http://purl.obolibrary.org/obo/to/subsets/to-basic.obo
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
-- category: MappingProduct
-  compression: gzip
-  description: Gene to Gene Ontology mapping data providing functional annotations
-    for genes
-  format: tsv
-  id: ncbigene.gene2go
-  name: Gene to GO Mapping
-  original_source:
-  - go
-  - ncbigene
-  product_file_size: 1223833668
-  product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2go.gz
-- description: The MechRepoNet knowledge graph in its original format
-  id: mechreponet.kg
-  name: MechRepoNet Knowledge Graph
-  original_source:
-  - ctd
-  - do
-  - go
-  - chebi
-  - reactome
-  - interpro
-  - hp
-  - cl
-  - pr
-  - uberon
-  - ncbitaxon
-  - hetionet
-  - complexportal
-  - rnacentral
-  - mirtarbase
-  - unii
-  - biolink
-  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
-  secondary_source:
-  - mechreponet
-- category: ProcessProduct
-  description: INDRA CoGEx is a graph database integrating causal relations, ontological
-    relations, properties, and data, assembled at scale automatically from the scientific
-    literature and structured sources. This is the code to build the graph.
-  id: indra.cogex.code
-  name: INDRA CoGEx Build Code
-  original_source:
-  - chembl
-  - sider
-  - reactome
-  - wikipathways
-  - hp
-  - nihreporter
-  - disgenet
-  - pubmed
-  - gwascatalog
-  - cellmarker
-  - go
-  - bgee
-  - ccle
-  - clinicaltrialsgov
-  - indra
-  product_url: https://github.com/gyorilab/indra_cogex
-  secondary_source:
-  - indra
-- category: GraphProduct
-  description: Neo4j database dump of the Clinical Knowledge Graph and additional
-    relationships
-  dump_format: neo4j
-  edge_count: 220000000
-  format: mixed
-  id: clinicalkg.graph
-  name: CKG Graph Dump
-  node_count: 16000000
-  original_source:
-  - uniprot
-  - tissues
-  - string
-  - stitch
-  - smpdb
-  - signor
-  - sider
-  - refseq
-  - reactome
-  - phosphositeplus
-  - pfam
-  - oncokb
-  - mutationds
-  - intact
-  - hpa
-  - hmdb
-  - hgnc
-  - gwascatalog
-  - foodb
-  - drugbank
-  - disgenet
-  - diseases
-  - dgidb
-  - corum
-  - cancer-genome-interpreter
-  - do
-  - bto
-  - efo
-  - go
-  - hp
-  - snomedct
-  - mod
-  - mi
-  - ms
-  - uo
-  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-  compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
-  dump_format: other
-  format: mixed
-  id: drugmechdb.graph
-  latest_version: 2.0.1
-  name: DrugMechDB Graph Dataset
-  original_source:
-  - go
-  - cl
-  - mesh
-  - chebi
-  - drugbank
-  - interpro
-  - uberon
-  - pr
-  - ncbitaxon
-  - reactome
-  - hp
-  - uniprot
-  product_url: https://doi.org/10.5281/zenodo.8139357
-  repository: https://github.com/SuLab/DrugMechDB
-  versions:
-  - 2.0.1
-  - 2.0.0
-  - 1.0.2
-  - '1.0'
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
   edge_count: 14486132
@@ -1067,156 +1002,6 @@ products:
   secondary_source:
   - kg-monarch
 - category: GraphProduct
-  description: PheKnowLator graph files, including subsets with and without inverse
-    relations.
-  format: owl
-  id: pheknowlator.graph
-  latest_version: current_build
-  name: PheKnowLator graph
-  original_source:
-  - cl
-  - clo
-  - chebi
-  - go
-  - hp
-  - mondo
-  - pw
-  - pr
-  - ro
-  - so
-  - uberon
-  - vo
-  - bioportal
-  - clinvar
-  - ctd
-  - disgenet
-  - ensembl
-  - genemania
-  - hgnc
-  - hpa
-  - ncbigene
-  - medgen
-  - reactome
-  - string
-  - uniprot
-  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
-  secondary_source:
-  - pheknowlator
-  versions:
-  - v1.0.0
-  - v2.0.0
-  - v2.1.0
-  - v3.0.2
-  - v4.0.0
-  - current_build
-- category: DataModelProduct
-  description: PW OWL release
-  format: owl
-  id: pw.owl
-  name: PW OWL
-  original_source:
-  - pw
-  - iao
-  - go
-  product_file_size: 5403526
-  product_url: http://purl.obolibrary.org/obo/pw.owl
-  secondary_source:
-  - pw
-- category: DataModelProduct
-  description: PW OBO release
-  format: obo
-  id: pw.obo
-  name: PW OBO
-  original_source:
-  - pw
-  - iao
-  - go
-  product_file_size: 1347302
-  product_url: http://purl.obolibrary.org/obo/pw.obo
-  secondary_source:
-  - pw
-- category: GraphProduct
-  description: RNA-KG as a Neo4j Dump
-  format: neo4j
-  id: rna-kg.kg.neo4j
-  name: RNA-KG Neo4j Dump
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 3976840239
-  product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
-  secondary_source:
-  - rna-kg
-- category: GraphProduct
-  description: RNA-KG Nodes in CSV format
-  format: csv
-  id: rna-kg.kg.nodes
-  name: RNA-KG Nodes
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 4424633304
-  product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
-  secondary_source:
-  - rna-kg
-- category: GraphProduct
-  description: RNA-KG Edges in CSV format
-  format: csv
-  id: rna-kg.kg.edges
-  name: RNA-KG Edges
-  original_source:
-  - dbsnp
-  - cosmic
-  - rnacentral
-  - ensembl
-  - circbase
-  - chebi
-  - pr
-  - ncbigene
-  - cl
-  - go
-  - mondo
-  - hp
-  - uberon
-  - vo
-  - pw
-  - reactome
-  - wikipathways
-  product_file_size: 18370248815
-  product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
-  secondary_source:
-  - rna-kg
-- category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
   edge_count: 14486132
   format: kgx-jsonl
@@ -1552,6 +1337,112 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
   secondary_source:
   - kg-monarch
+- category: MappingProduct
+  description: bigg.compartment SSSOM
+  format: sssom
+  id: obo-db-ingest.bigg.compartment.sssom.tsv
+  license:
+    id: http://bigg.ucsd.edu/license#license
+    label: Custom
+  name: bigg.compartment SSSOM
+  original_source:
+  - bigg
+  - go
+  product_file_size: 242
+  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: DataModelProduct
+  description: OWL release of Monochrom Ontology
+  format: owl
+  id: chr.model.owl
+  name: Monochrom Ontology OWL release
+  original_source:
+  - ro
+  - go
+  - ncbitaxon
+  - iao
+  - geno
+  - skos
+  - gff
+  product_file_size: 102365
+  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
+  secondary_source:
+  - chr
+- category: GraphProduct
+  description: PheKnowLator graph files, including subsets with and without inverse
+    relations.
+  format: owl
+  id: pheknowlator.graph
+  latest_version: current_build
+  name: PheKnowLator graph
+  original_source:
+  - cl
+  - clo
+  - chebi
+  - go
+  - hp
+  - mondo
+  - pw
+  - pr
+  - ro
+  - so
+  - uberon
+  - vo
+  - bioportal
+  - clinvar
+  - ctd
+  - disgenet
+  - ensembl
+  - genemania
+  - hgnc
+  - hpa
+  - ncbigene
+  - medgen
+  - reactome
+  - string
+  - uniprot
+  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+  secondary_source:
+  - pheknowlator
+  versions:
+  - v1.0.0
+  - v2.0.0
+  - v2.1.0
+  - v3.0.2
+  - v4.0.0
+  - current_build
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+  compression: zip
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
+  dump_format: other
+  format: mixed
+  id: drugmechdb.graph
+  latest_version: 2.0.1
+  name: DrugMechDB Graph Dataset
+  original_source:
+  - go
+  - cl
+  - mesh
+  - chebi
+  - drugbank
+  - interpro
+  - uberon
+  - pr
+  - ncbitaxon
+  - reactome
+  - hp
+  - uniprot
+  product_url: https://doi.org/10.5281/zenodo.8139357
+  repository: https://github.com/SuLab/DrugMechDB
+  versions:
+  - 2.0.1
+  - 2.0.0
+  - 1.0.2
+  - '1.0'
 - category: ProgrammingInterface
   description: TRAPI web API for querying MicrobiomeKG
   format: http
@@ -1579,257 +1470,262 @@ products:
   product_url: https://multiomics.transltr.io/mbkp
   secondary_source:
   - microbiomekg
-- category: DataModelProduct
-  description: OWL release of Monochrom Ontology
-  format: owl
-  id: chr.model.owl
-  name: Monochrom Ontology OWL release
-  original_source:
-  - ro
-  - go
-  - ncbitaxon
-  - iao
-  - geno
-  - skos
-  - gff
-  product_file_size: 102365
-  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
-  secondary_source:
-  - chr
 - category: GraphProduct
-  description: Neo4j database dump of the Clinical Knowledge Graph and additional
-    relationships
-  dump_format: neo4j
-  edge_count: 220000000
-  format: mixed
-  id: cancer-genome-interpreter.clinicalkg.graph
-  name: CKG Graph Dump
-  node_count: 16000000
+  description: RNA-KG as a Neo4j Dump
+  format: neo4j
+  id: rna-kg.kg.neo4j
+  name: RNA-KG Neo4j Dump
   original_source:
-  - uniprot
-  - tissues
-  - string
-  - stitch
-  - smpdb
-  - signor
-  - sider
-  - refseq
-  - reactome
-  - phosphositeplus
-  - pfam
-  - oncokb
-  - mutationds
-  - intact
-  - hpa
-  - hmdb
-  - hgnc
-  - gwascatalog
-  - foodb
-  - drugbank
-  - disgenet
-  - diseases
-  - dgidb
-  - corum
-  - cancer-genome-interpreter
-  - do
-  - bto
-  - efo
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
   - go
+  - mondo
   - hp
-  - snomedct
-  - mod
-  - mi
-  - ms
-  - uo
-  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-publications:
-- authors:
-  - Ashburner M
-  - Ball CA
-  - Blake JA
-  - Botstein D
-  - Butler H
-  - Cherry JM
-  - Davis AP
-  - Dolinski K
-  - Dwight SS
-  - Eppig JT
-  - Harris MA
-  - Hill DP
-  - Issel-Tarver L
-  - Kasarskis A
-  - Lewis S
-  - Matese JC
-  - Richardson JE
-  - Ringwald M
-  - Rubin GM
-  - Sherlock G
-  doi: 10.1038/75556
-  id: doi:10.1038/75556
-  title: 'Gene ontology: tool for the unification of biology'
-  year: '2000'
-- authors:
-  - The Gene Ontology Consortium
-  - Aleksander SA
-  - Balhoff J
-  - Carbon S
-  - Cherry JM
-  - Drabkin HJ
-  - Ebert D
-  - Feuermann M
-  - Gaudet P
-  - Harris NL
-  - Hill DP
-  - Lee R
-  - Mi H
-  - Moxon S
-  - Mungall CJ
-  - Muruganugan A
-  - Mushayahama T
-  - Sternberg PW
-  - Thomas PD
-  - Van Auken K
-  - Ramsey J
-  - Siegele DA
-  - Chisholm RL
-  - Fey P
-  - Aspromonte MC
-  - Nugnes MV
-  - Quaglia F
-  - Tosatto S
-  - Giglio M
-  - Nadendla S
-  - Antonazzo G
-  - Attrill H
-  - dos Santos G
-  - Marygold SJ
-  - Strelets V
-  - Tabone CJ
-  - Thurmond J
-  - Zhou P
-  - Ahmed SH
-  - Asanitthong P
-  - Buitrago DL
-  - Erdol MN
-  - Gage MC
-  - Kadhum MA
-  - Li KYC
-  - Long M
-  - Michalak A
-  - Pesala A
-  - Pritazahra A
-  - Saverimuttu SCC
-  - Su R
-  - Thurlow KE
-  - Lovering RC
-  - Logie C
-  - Oliferenko S
-  - Blake J
-  - Christie K
-  - Corbani L
-  - Dolan ME
-  - Drabkin HJ
-  - Hill DP
-  - Ni L
-  - Sitnikov D
-  - Smith C
-  - Cuzick A
-  - Seager J
-  - Cooper L
-  - Elser J
-  - Jaiswal P
-  - Gupta P
-  - Jaiswal P
-  - Naithani S
-  - Lera-Ramirez M
-  - Rutherford K
-  - Wood V
-  - De Pons JL
-  - Dwinell MR
-  - Hayman GT
-  - Kaldunski ML
-  - Kwitek AE
-  - Laulederkind SJF
-  - Tutaj MA
-  - Vedi M
-  - Wang S-J
-  - "D\u2019Eustachio PD"
-  - Aimo L
-  - Axelsen K
-  - Bridge A
-  - Hyka-Nouspikel N
-  - Morgat A
-  - Aleksander SA
-  - Cherry JM
-  - Engel SR
-  - Karra K
-  - Miyasato SR
-  - Nash RS
-  - Skrzypek MS
-  - Weng S
-  - Wong ED
-  - Bakker E
-  - Berardini TZ
-  - Reiser L
-  - Auchincloss A
-  - Axelsen K
-  - Argoud-Puy G
-  - Blatter M-C
-  - Boutet E
-  - Breuza L
-  - Bridge A
-  - Casals-Casas C
-  - Coudert E
-  - Estreicher A
-  - Famiglietti ML
-  - Feuermann M
-  - Gos A
-  - Gruaz-Gumowski N
-  - Hulo C
-  - Hyka-Nouspikel N
-  - Jungo F
-  - Le Mercier P
-  - Lieberherr D
-  - Masson P
-  - Morgat A
-  - Pedruzzi I
-  - Pourcel L
-  - Poux S
-  - Rivoire C
-  - Sundaram S
-  - Bateman A
-  - Bowler-Barnett E
-  - Bye-A-Jee H
-  - Denny P
-  - Ignatchenko A
-  - Ishtiaq R
-  - Lock A
-  - Lussi Y
-  - Magrane M
-  - Martin MJ
-  - Orchard S
-  - Raposo P
-  - Speretta E
-  - Tyagi N
-  - Warner K
-  - Zaru R
-  - Diehl AD
-  - Lee R
-  - Chan J
-  - Diamantakis S
-  - Raciti D
-  - Zarowiecki M
-  - Fisher M
-  - James-Zorn C
-  - Ponferrada V
-  - Zorn A
-  - Ramachandran S
-  - Ruzicka L
-  - Westerfield M
-  doi: 10.1093/genetics/iyad031
-  id: doi:10.1093/genetics/iyad031
-  title: The Gene Ontology knowledgebase in 2023
-  year: '2023'
-repository: https://github.com/geneontology
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 3976840239
+  product_url: https://rna-kg.biodata.di.unimi.it/rnakgv20.dump
+  secondary_source:
+  - rna-kg
+- category: GraphProduct
+  description: RNA-KG Nodes in CSV format
+  format: csv
+  id: rna-kg.kg.nodes
+  name: RNA-KG Nodes
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 4424633304
+  product_url: https://rna-kg.biodata.di.unimi.it/nodes.csv
+  secondary_source:
+  - rna-kg
+- category: GraphProduct
+  description: RNA-KG Edges in CSV format
+  format: csv
+  id: rna-kg.kg.edges
+  name: RNA-KG Edges
+  original_source:
+  - dbsnp
+  - cosmic
+  - rnacentral
+  - ensembl
+  - circbase
+  - chebi
+  - pr
+  - ncbigene
+  - cl
+  - go
+  - mondo
+  - hp
+  - uberon
+  - vo
+  - pw
+  - reactome
+  - wikipathways
+  product_file_size: 18370248815
+  product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
+  secondary_source:
+  - rna-kg
+- category: MappingProduct
+  description: Mappings between InterPro entries and Gene Ontology (GO) terms
+  format: tsv
+  id: interpro.interpro2go
+  name: InterPro to GO Mappings
+  original_source:
+  - go
+  - interpro
+  product_file_size: 3088718
+  product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go
+  secondary_source:
+  - interpro
+- category: MappingProduct
+  compression: gzip
+  description: Gene to Gene Ontology mapping data providing functional annotations
+    for genes
+  format: tsv
+  id: ncbigene.gene2go
+  name: Gene to GO Mapping
+  original_source:
+  - go
+  - ncbigene
+  product_file_size: 1223833668
+  product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2go.gz
+- category: DataModelProduct
+  description: The Basic subset of the Plant Trait Ontology in OBO format
+  format: obo
+  id: to-basic.obo
+  latest_version: v2025-05-20
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+  name: Plant Trait Ontology Basic OBO
+  original_source:
+  - to
+  - chebi
+  - ro
+  - ncbitaxon
+  - go
+  - omo
+  - ecto
+  - ido
+  - oio
+  - pato
+  - envo
+  - ohmi
+  - iao
+  - omrse
+  - obi
+  - peco
+  - po
+  - uberon
+  - ogms
+  - bfo
+  product_file_size: 111996
+  product_url: http://purl.obolibrary.org/obo/to/subsets/to-basic.obo
+  secondary_source:
+  - to
+  versions:
+  - v2025-05-20
+  - v2023-07-17
+  - v2022-04-13
+  - v2022-03-09
+  - v2021-04-06
+repository: https://github.com/geneontology/go-ontology
+taxon:
+- NCBITaxon:1
 ---
-Gene Ontology
+## Description
+
+An ontology for describing the function of genes and gene products
+
+## Contacts
+
+- Suzi Aleksander (suzia@stanford.edu) [ORCID: 0000-0001-6787-2901](https://orcid.org/0000-0001-6787-2901)
+
+## Products
+
+### GO (OWL edition)
+
+The main ontology in OWL. This is self contained and does not have connections to other OBO ontologies
+
+**URL**: [http://purl.obolibrary.org/obo/go.owl](http://purl.obolibrary.org/obo/go.owl)
+
+**Format**: owl
+
+### GO (OBO Format edition)
+
+Equivalent to go.owl, in obo format
+
+**URL**: [http://purl.obolibrary.org/obo/go.obo](http://purl.obolibrary.org/obo/go.obo)
+
+**Format**: obo
+
+### GO (JSON edition)
+
+Equivalent to go.owl, in obograph json format
+
+**URL**: [http://purl.obolibrary.org/obo/go.json](http://purl.obolibrary.org/obo/go.json)
+
+**Format**: json
+
+### GO-Plus
+
+The main ontology plus axioms connecting to select external ontologies, with subsets of those ontologies
+
+**URL**: [http://purl.obolibrary.org/obo/go/extensions/go-plus.owl](http://purl.obolibrary.org/obo/go/extensions/go-plus.owl)
+
+**Format**: owl
+
+### GO Base Module
+
+The main ontology plus axioms connecting to select external ontologies, excluding the external ontologies themselves
+
+**URL**: [http://purl.obolibrary.org/obo/go/go-base.owl](http://purl.obolibrary.org/obo/go/go-base.owl)
+
+**Format**: owl
+
+### GO-Plus
+
+As go-plus.owl, in obographs json format
+
+**URL**: [http://purl.obolibrary.org/obo/go/extensions/go-plus.json](http://purl.obolibrary.org/obo/go/extensions/go-plus.json)
+
+**Format**: json
+
+### GO-Basic, Filtered, for use with legacy tools
+
+Basic version of the GO, filtered such that the graph is guaranteed to be acyclic and annotations can be propagated up the graph. The relations included are is a, part of, regulates, negatively regulates and positively regulates. This version excludes relationships that cross the 3 GO hierarchies.
+
+**URL**: [http://purl.obolibrary.org/obo/go/go-basic.obo](http://purl.obolibrary.org/obo/go/go-basic.obo)
+
+**Format**: obo
+
+### GO-Basic, Filtered, for use with legacy tools (JSON)
+
+As go-basic.obo, in json format
+
+**URL**: [http://purl.obolibrary.org/obo/go/go-basic.json](http://purl.obolibrary.org/obo/go/go-basic.json)
+
+**Format**: json
+
+### GO Taxon Groupings
+
+Classes added to ncbitaxon for groupings such as prokaryotes
+
+**URL**: [http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl](http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl)
+
+**Format**: owl
+
+### GO (OWL edition), daily snapshot release
+
+Equivalent to go.owl, but released daily. Note the snapshot release is not archived.
+
+**URL**: [http://purl.obolibrary.org/obo/go/snapshot/go.owl](http://purl.obolibrary.org/obo/go/snapshot/go.owl)
+
+**Format**: owl
+
+### GO (OBO Format edition), daily snapshot release
+
+Equivalent to go.owl, but released daily. Note the snapshot release is not archived.
+
+**URL**: [http://purl.obolibrary.org/obo/go/snapshot/go.obo](http://purl.obolibrary.org/obo/go/snapshot/go.obo)
+
+**Format**: obo
+
+## Publications
+
+- [Gene ontology: tool for the unification of biology. The Gene Ontology Consortium](https://www.ncbi.nlm.nih.gov/pubmed/10802651)
+- [The Gene Ontology resource: enriching a GOld mine](https://www.ncbi.nlm.nih.gov/pubmed/33290552)
+
+**Domains**: biological systems
+
+**Taxon**: NCBITaxon:1
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

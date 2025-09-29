@@ -1,14 +1,8 @@
 ---
-category: DataModelProduct
-description: OWL release of UBERON. The Complete ontology with merged imports.
+description: core ontology
 format: owl
 id: uberon.owl
-name: UBERON OWL release
-original_source:
-- uberon
-product_file_size: 97164714
+name: Uberon
 product_url: http://purl.obolibrary.org/obo/uberon.owl
-secondary_source:
-- uberon
 layout: product_detail
 ---

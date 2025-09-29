@@ -1,14 +1,57 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for mp. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+collection:
+- obo-foundry
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: pheno@jax.org
+  - contact_type: github
+    value: sbello
+  label: Sue Bello
+  orcid: 0000-0003-4606-0597
+description: Standard terms for annotating mammalian phenotypic data.
 domains:
-- stub
+- biological systems
+homepage_url: https://www.informatics.jax.org/vocab/mp_ontology/
 id: mp
 layout: resource_detail
-name: Mp
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Mammalian Phenotype Ontology
 products:
+- description: The main ontology in OWL. Contains all MP terms and links to other
+    OBO ontologies.
+  format: owl
+  id: mp.owl
+  name: MP (OWL edition)
+  product_file_size: 113840871
+  product_url: http://purl.obolibrary.org/obo/mp.owl
+- description: A direct translation of the MP (OWL edition) into OBO format.
+  format: obo
+  id: mp.obo
+  name: MP (OBO edition)
+  product_url: http://purl.obolibrary.org/obo/mp.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-09-29: No Content-Length
+    header found'
+- description: For a description of the format see https://github.com/geneontology/obographs.
+  format: json
+  id: mp.json
+  name: MP (obographs JSON edition)
+  product_file_size: 59710082
+  product_url: http://purl.obolibrary.org/obo/mp.json
+- description: The main ontology plus axioms connecting to select external ontologies,
+    excluding axioms from the the external ontologies themselves.
+  format: owl
+  id: mp.mp-base.owl
+  name: MP Base Module
+  product_file_size: 49867619
+  product_url: http://purl.obolibrary.org/obo/mp/mp-base.owl
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -242,10 +285,60 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+repository: https://github.com/mgijax/mammalian-phenotype-ontology
+taxon:
+- NCBITaxon:40674
 ---
-# Mp
+## Description
 
-This is an automatically generated stub page for mp. Please update with proper information.
+Standard terms for annotating mammalian phenotypic data.
+
+## Contacts
+
+- Sue Bello (pheno@jax.org) [ORCID: 0000-0003-4606-0597](https://orcid.org/0000-0003-4606-0597)
+
+## Products
+
+### MP (OWL edition)
+
+The main ontology in OWL. Contains all MP terms and links to other OBO ontologies.
+
+**URL**: [http://purl.obolibrary.org/obo/mp.owl](http://purl.obolibrary.org/obo/mp.owl)
+
+**Format**: owl
+
+### MP (OBO edition)
+
+A direct translation of the MP (OWL edition) into OBO format.
+
+**URL**: [http://purl.obolibrary.org/obo/mp.obo](http://purl.obolibrary.org/obo/mp.obo)
+
+**Format**: obo
+
+### MP (obographs JSON edition)
+
+For a description of the format see https://github.com/geneontology/obographs.
+
+**URL**: [http://purl.obolibrary.org/obo/mp.json](http://purl.obolibrary.org/obo/mp.json)
+
+**Format**: json
+
+### MP Base Module
+
+The main ontology plus axioms connecting to select external ontologies, excluding axioms from the the external ontologies themselves.
+
+**URL**: [http://purl.obolibrary.org/obo/mp/mp-base.owl](http://purl.obolibrary.org/obo/mp/mp-base.owl)
+
+**Format**: owl
+
+## Publications
+
+- [The Mammalian Phenotype Ontology as a unifying standard for experimental and high-throughput phenotyping data](https://www.ncbi.nlm.nih.gov/pubmed/22961259)
+
+**Domains**: biological systems
+
+**Taxon**: NCBITaxon:40674
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*

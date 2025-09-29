@@ -1,48 +1,63 @@
 ---
 activity_status: active
 category: DataModel
+collection:
+- obo-foundry
 contacts:
 - category: Individual
   contact_details:
   - contact_type: email
     value: bpeters@lji.org
+  - contact_type: github
+    value: bpeters42
   label: Bjoern Peters
-description: The Core Ontology for Biology and Biomedicine (COB) brings together key
-  terms from a wide range of OBO Foundry projects into a single, small ontology to
-  improve interoperability and term reuse across the OBO community.
+  orcid: 0000-0002-8457-6693
+description: COB brings together key terms from a wide range of OBO projects to improve
+  interoperability.
 domains:
-- upper
-- biomedical
 - biological systems
 homepage_url: https://obofoundry.org/COB/
 id: cob
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0-1.0
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Core Ontology for Biology and Biomedicine
 products:
-- category: DataModelProduct
-  description: Core Ontology for Biology and Biomedicine, main ontology
+- description: Core Ontology for Biology and Biomedicine, main ontology
   format: owl
   id: cob.owl
-  name: COB OWL
+  name: COB
   product_file_size: 7391
   product_url: http://purl.obolibrary.org/obo/cob.owl
-- category: DataModelProduct
-  description: Base module for COB
+- description: base module for COB
   format: owl
-  id: cob.base
-  name: COB Base Module
+  id: cob.cob-base.owl
+  name: COB base module
   product_file_size: 2798
   product_url: http://purl.obolibrary.org/obo/cob/cob-base.owl
-- category: DataModelProduct
-  description: COB with native IDs preserved rather than rewired to OBO IDs
+- description: COB with native IDs preserved rather than rewired to OBO IDs
   format: owl
-  id: cob.native
-  name: COB Native Module
+  id: cob.cob-native.owl
+  name: COB native module
   product_file_size: 6472
   product_url: http://purl.obolibrary.org/obo/cob/cob-native.owl
+- description: COB to external
+  format: owl
+  id: cob.cob-to-external.owl
+  name: COB to external
+  product_url: http://purl.obolibrary.org/obo/cob/cob-to-external.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+    when accessing file'
+- description: demo of COB including subsets of other ontologies (Experimental, for
+    demo purposes only)
+  format: owl
+  id: cob.products.demo-cob.owl
+  name: COB demo ontology (experimental)
+  product_file_size: 447985
+  product_url: http://purl.obolibrary.org/obo/cob/products/demo-cob.owl
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -151,30 +166,58 @@ products:
   - efo
 repository: https://github.com/OBOFoundry/COB
 ---
-# Core Ontology for Biology and Biomedicine (COB)
+## Description
 
-The Core Ontology for Biology and Biomedicine (COB) is a small, focused ontology that brings together essential terms from multiple Open Biological and Biomedical Ontology (OBO) Foundry projects. Its primary goal is to improve interoperability and facilitate term reuse across the biomedical ontology community.
+COB brings together key terms from a wide range of OBO projects to improve interoperability.
 
-## Overview
+## Contacts
 
-COB addresses a critical challenge in biomedical ontologies: the scattered placement of fundamental terms across various domain-specific ontologies. Rather than creating new terms, COB primarily imports and organizes existing high-quality terms from established OBO ontologies, making them more findable and usable.
+- Bjoern Peters (bpeters@lji.org) [ORCID: 0000-0002-8457-6693](https://orcid.org/0000-0002-8457-6693)
 
-COB anchors these terms in the Basic Formal Ontology (BFO) while simplifying some of the more complex aspects that have proven challenging for users in the biomedical domain. This approach ensures compatibility with BFO while improving usability.
+## Products
 
-## Key Features
+### COB
 
-- Provides a small, concise ontology focused on fundamental biomedical concepts
-- Collects widely-used terms previously scattered across various OBO ontologies
-- Simplifies import dependencies for domain ontologies
-- Ensures each OBO Foundry ontology can use one or more COB terms as a root
-- Maintains compatibility with BFO while reducing complexity
+Core Ontology for Biology and Biomedicine, main ontology
 
-## Purpose and Use Cases
+**URL**: [http://purl.obolibrary.org/obo/cob.owl](http://purl.obolibrary.org/obo/cob.owl)
 
-COB is designed to serve as a top-level ontology for biology and biomedicine, creating a framework where different domain ontologies can interoperate effectively. It is particularly useful for:
+**Format**: owl
 
-- Ontology developers who need fundamental terms for their domain ontologies
-- Researchers integrating data across multiple biomedical domains
-- Anyone using OBO Foundry ontologies who needs access to general biomedical concepts
+### COB base module
 
-By providing a single location for commonly used terms, COB simplifies ontology development and use while promoting standardization across the biomedical domain.
+base module for COB
+
+**URL**: [http://purl.obolibrary.org/obo/cob/cob-base.owl](http://purl.obolibrary.org/obo/cob/cob-base.owl)
+
+**Format**: owl
+
+### COB native module
+
+COB with native IDs preserved rather than rewired to OBO IDs
+
+**URL**: [http://purl.obolibrary.org/obo/cob/cob-native.owl](http://purl.obolibrary.org/obo/cob/cob-native.owl)
+
+**Format**: owl
+
+### COB to external
+
+COB to external
+
+**URL**: [http://purl.obolibrary.org/obo/cob/cob-to-external.owl](http://purl.obolibrary.org/obo/cob/cob-to-external.owl)
+
+**Format**: owl
+
+### COB demo ontology (experimental)
+
+demo of COB including subsets of other ontologies (Experimental, for demo purposes only)
+
+**URL**: [http://purl.obolibrary.org/obo/cob/products/demo-cob.owl](http://purl.obolibrary.org/obo/cob/products/demo-cob.owl)
+
+**Format**: owl
+
+**Domains**: biological systems
+
+---
+
+*This resource was automatically synchronized from the OBO Foundry registry.*
