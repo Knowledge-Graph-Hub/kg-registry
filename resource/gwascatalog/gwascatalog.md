@@ -66,8 +66,6 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.json
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-28_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
@@ -92,8 +90,6 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-variants.tsv
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-28_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
@@ -108,8 +104,6 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-28_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
@@ -124,8 +118,6 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.owl.gz
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-28_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
@@ -140,8 +132,6 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram.svg
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-28_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
@@ -155,8 +145,6 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram-archive.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-28_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
@@ -170,8 +158,6 @@ products:
   - gwascatalog
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-28_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
   - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
   - 'File was not able to be retrieved when checked on 2025-09-29: Error connecting

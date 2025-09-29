@@ -44,7 +44,7 @@ products:
   name: pcl.json
   product_url: http://purl.obolibrary.org/obo/pcl.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 502 error
+  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
     when accessing file'
 - description: Provisional Cell Ontology in OWL format
   format: owl
