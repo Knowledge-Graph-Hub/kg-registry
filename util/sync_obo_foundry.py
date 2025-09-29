@@ -145,8 +145,10 @@ class OBOFoundrySync:
         if activity_status not in ['active', 'inactive', 'orphaned']:
             activity_status = 'active'
 
-        # Get description
-        description = obo_ontology.get('description', '')
+        # Get description - use placeholder if missing
+        description = obo_ontology.get('description', '').strip()
+        if not description:
+            description = "Description unavailable."
 
         # Get homepage - try multiple fields
         homepage_url = (obo_ontology.get('homepage') or
@@ -257,6 +259,10 @@ class OBOFoundrySync:
                         product_format = 'json'
                     else:
                         product_format = 'owl'  # Default to OWL
+
+                # Normalize format for KG-Registry consistency
+                if product_format == 'owl-rdf/xml':
+                    product_format = 'owl'
 
                 # Use OBO Foundry description if available, otherwise create format-based description
                 obo_description = product.get('description') or product.get('title')
