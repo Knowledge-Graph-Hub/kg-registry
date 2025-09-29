@@ -352,11 +352,28 @@ class OBOFoundrySync:
 
         # Add taxon information if available
         taxon = obo_ontology.get('taxon')
-        if taxon and isinstance(taxon, dict):
-            kg_resource['taxon'] = {
-                'id': taxon.get('id', ''),
-                'label': taxon.get('label', '')
-            }
+        if taxon:
+            if isinstance(taxon, dict):
+                # Single taxon as dict - extract the ID and convert to list
+                taxon_id = taxon.get('id', '')
+                if taxon_id:
+                    kg_resource['taxon'] = [taxon_id]
+            elif isinstance(taxon, list):
+                # Multiple taxa as list - extract IDs
+                taxon_ids = []
+                for t in taxon:
+                    if isinstance(t, dict):
+                        taxon_id = t.get('id', '')
+                        if taxon_id:
+                            taxon_ids.append(taxon_id)
+                    elif isinstance(t, str):
+                        # Already a CURIE ID
+                        taxon_ids.append(t)
+                if taxon_ids:
+                    kg_resource['taxon'] = taxon_ids
+            elif isinstance(taxon, str):
+                # Single taxon as string (CURIE ID)
+                kg_resource['taxon'] = [taxon]
 
         # Clean up None values
         kg_resource = {k: v for k, v in kg_resource.items() if v is not None and v != ''}
@@ -467,7 +484,12 @@ class OBOFoundrySync:
 
         if resource_data.get('taxon'):
             taxon = resource_data['taxon']
-            markdown_content += f"**Taxon**: {taxon.get('label', '')} ({taxon.get('id', '')})\n\n"
+            if isinstance(taxon, list):
+                taxon_str = ', '.join(taxon)
+                markdown_content += f"**Taxon**: {taxon_str}\n\n"
+            elif isinstance(taxon, dict):
+                # Legacy format - convert for display
+                markdown_content += f"**Taxon**: {taxon.get('label', '')} ({taxon.get('id', '')})\n\n"
 
         markdown_content += "---\n\n*This resource was automatically synchronized from the OBO Foundry registry.*\n"
 
