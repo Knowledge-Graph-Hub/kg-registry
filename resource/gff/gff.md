@@ -11,7 +11,7 @@ last_modified_date: '2025-09-04T00:00:00Z'
 layout: resource_detail
 name: Gff
 products:
-- category: DataModelProduct
+- category: OntologyProduct
   description: OWL release of Monochrom Ontology
   format: owl
   id: chr.model.owl

@@ -32,10 +32,10 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-29_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-06: Timeout connecting
     to URL'
 - category: Product
@@ -46,10 +46,10 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-29_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-06: Timeout connecting
     to URL'
 - category: Product
@@ -61,10 +61,10 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-29_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-06: Timeout connecting
     to URL'
 - category: Product
@@ -76,10 +76,10 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-29_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-06: Timeout connecting
     to URL'
 - category: GraphicalInterface

@@ -7,7 +7,7 @@ original_source:
 - aop-db
 - bgee
 - disgenet
-- do
+- doid
 - drugbank
 - dsstox
 - go

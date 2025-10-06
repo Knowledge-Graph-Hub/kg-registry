@@ -1,5 +1,5 @@
 ---
-category: DataModelProduct
+category: OntologyProduct
 description: The monthly release of the International Edition of SNOMED CT, the core
   release from SNOMED International, as RF2 files.
 id: snomedct.international.content

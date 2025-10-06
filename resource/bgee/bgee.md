@@ -59,6 +59,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 - category: Product
@@ -77,6 +79,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 - category: Product
@@ -95,6 +99,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 - category: Product
@@ -113,6 +119,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 - category: Product
@@ -131,6 +139,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 - category: Product
@@ -149,6 +159,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 - category: Product
@@ -167,6 +179,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 - category: Product
@@ -185,6 +199,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 - category: GraphProduct
@@ -197,7 +213,7 @@ products:
   - medline
   - mesh
   - pid
-  - do
+  - doid
   - diseases
   - drugcentral
   - go
@@ -239,7 +255,7 @@ products:
   - aop-db
   - bgee
   - disgenet
-  - do
+  - doid
   - drugbank
   - dsstox
   - go
@@ -268,7 +284,7 @@ products:
   - aop-db
   - bgee
   - disgenet
-  - do
+  - doid
   - drugbank
   - dsstox
   - go

@@ -97,7 +97,7 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
     header found
@@ -144,9 +144,9 @@ products:
   secondary_source:
   - oma
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error when
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error when
     accessing file
@@ -164,7 +164,7 @@ products:
   - medline
   - mesh
   - pid
-  - do
+  - doid
   - diseases
   - drugcentral
   - go
@@ -212,7 +212,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -275,7 +275,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -480,7 +480,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go
@@ -627,7 +627,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go

@@ -44,6 +44,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 403 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 403 error
     when accessing file'
 - category: GraphProduct

@@ -170,7 +170,7 @@ products:
   name: MechRepoNet Knowledge Graph
   original_source:
   - ctd
-  - do
+  - doid
   - go
   - chebi
   - reactome
@@ -227,7 +227,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -290,7 +290,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -459,7 +459,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go
@@ -505,7 +505,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go
@@ -541,7 +541,7 @@ products:
   product_url: https://github.com/gyorilab/indra_cogex
   secondary_source:
   - indra
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
   id: efo.owl
@@ -554,7 +554,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -594,7 +594,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OBO format
   format: obo
   id: efo.obo
@@ -607,7 +607,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -1484,7 +1484,7 @@ products:
   name: Drug Approvals KP Graph Nodes
   original_source:
   - chebi
-  - do
+  - doid
   - hp
   - mondo
   product_file_size: 701451
@@ -1498,7 +1498,7 @@ products:
   name: Drug Approvals KP Graph Edges
   original_source:
   - chebi
-  - do
+  - doid
   - hp
   - mondo
   product_file_size: 31052966
@@ -1511,7 +1511,7 @@ products:
   id: mondo.sssom
   name: MONDO SSSOM
   original_source:
-  - do
+  - doid
   - hp
   - hgnc
   product_file_size: 1437457

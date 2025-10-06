@@ -107,7 +107,7 @@ products:
   name: MechRepoNet Knowledge Graph
   original_source:
   - ctd
-  - do
+  - doid
   - go
   - chebi
   - reactome
@@ -141,7 +141,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -204,7 +204,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -338,7 +338,7 @@ products:
   product_url: https://arax.ncats.io/
   secondary_source:
   - rtx-kg2
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
   id: efo.owl
@@ -351,7 +351,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -391,7 +391,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OBO format
   format: obo
   id: efo.obo
@@ -404,7 +404,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -570,7 +570,7 @@ products:
   name: Drug Approvals KP Graph Nodes
   original_source:
   - chebi
-  - do
+  - doid
   - hp
   - mondo
   product_file_size: 701451
@@ -584,7 +584,7 @@ products:
   name: Drug Approvals KP Graph Edges
   original_source:
   - chebi
-  - do
+  - doid
   - hp
   - mondo
   product_file_size: 31052966

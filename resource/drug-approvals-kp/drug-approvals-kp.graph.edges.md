@@ -6,7 +6,7 @@ id: drug-approvals-kp.graph.edges
 name: Drug Approvals KP Graph Edges
 original_source:
 - chebi
-- do
+- doid
 - hp
 - mondo
 product_file_size: 31052966

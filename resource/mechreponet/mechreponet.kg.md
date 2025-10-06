@@ -4,7 +4,7 @@ id: mechreponet.kg
 name: MechRepoNet Knowledge Graph
 original_source:
 - ctd
-- do
+- doid
 - go
 - chebi
 - reactome

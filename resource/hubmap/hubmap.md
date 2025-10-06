@@ -80,6 +80,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 401 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 401 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 401 error
     when accessing file'
 - category: Product
@@ -102,7 +104,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -165,7 +167,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam

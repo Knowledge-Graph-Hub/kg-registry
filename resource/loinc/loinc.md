@@ -57,6 +57,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 503 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 503 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 503 error
     when accessing file'
 - category: DataModelProduct
@@ -70,6 +72,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 503 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 503 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 503 error
     when accessing file'
 - category: DocumentationProduct
@@ -82,6 +86,8 @@ products:
   product_url: https://loinc.org/principles/
   warnings:
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 503 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 503 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 503 error
     when accessing file'
@@ -100,7 +106,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -163,7 +169,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam

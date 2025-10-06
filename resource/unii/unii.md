@@ -41,6 +41,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 403 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 403 error
     when accessing file'
 - category: Product
@@ -53,6 +55,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 403 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 403 error
     when accessing file'
 - category: Product
@@ -64,6 +68,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 403 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 403 error
     when accessing file'
 - description: The MechRepoNet knowledge graph in its original format
@@ -71,7 +77,7 @@ products:
   name: MechRepoNet Knowledge Graph
   original_source:
   - ctd
-  - do
+  - doid
   - go
   - chebi
   - reactome

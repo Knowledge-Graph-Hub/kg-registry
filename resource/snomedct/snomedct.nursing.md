@@ -1,5 +1,5 @@
 ---
-category: DataModelProduct
+category: OntologyProduct
 description: A frequently used subset of SNOMED CT concepts for nursing documentation
   in electronic health records. August 2017 release.
 id: snomedct.nursing

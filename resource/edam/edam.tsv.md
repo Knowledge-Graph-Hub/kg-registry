@@ -1,5 +1,5 @@
 ---
-category: DataModelProduct
+category: OntologyProduct
 description: EDAM TSV export
 format: tsv
 id: edam.tsv

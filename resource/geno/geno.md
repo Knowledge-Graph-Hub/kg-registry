@@ -32,7 +32,7 @@ products:
   name: GENO
   product_file_size: 172319
   product_url: http://purl.obolibrary.org/obo/geno.owl
-- category: DataModelProduct
+- category: OntologyProduct
   description: OWL release of Monochrom Ontology
   format: owl
   id: chr.model.owl

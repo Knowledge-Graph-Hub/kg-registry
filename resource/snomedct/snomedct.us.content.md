@@ -1,5 +1,5 @@
 ---
-category: DataModelProduct
+category: OntologyProduct
 description: The biannual release of the US Edition of SNOMED CT, combining content
   from both the US Extension and International releases.
 id: snomedct.us.content

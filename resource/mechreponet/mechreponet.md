@@ -21,7 +21,7 @@ products:
   name: MechRepoNet Knowledge Graph
   original_source:
   - ctd
-  - do
+  - doid
   - go
   - chebi
   - reactome
@@ -59,7 +59,7 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
     header found
@@ -80,7 +80,7 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
     header found
@@ -102,7 +102,7 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
     header found

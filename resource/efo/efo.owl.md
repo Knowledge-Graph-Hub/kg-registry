@@ -1,5 +1,5 @@
 ---
-category: DataModelProduct
+category: OntologyProduct
 description: The latest release of EFO in OWL format
 format: owl
 id: efo.owl
@@ -12,7 +12,7 @@ original_source:
 - clo
 - cob
 - dc
-- do
+- doid
 - ecto
 - efo
 - fbbt

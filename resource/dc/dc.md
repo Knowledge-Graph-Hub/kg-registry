@@ -9,7 +9,7 @@ id: dc
 layout: resource_detail
 name: Dc
 products:
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
   id: efo.owl
@@ -22,7 +22,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -62,7 +62,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OBO format
   format: obo
   id: efo.obo
@@ -75,7 +75,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -122,7 +122,7 @@ products:
   name: clo.owl
   product_file_size: 2121232
   product_url: http://purl.obolibrary.org/obo/clo.owl
-- category: DataModelProduct
+- category: OntologyProduct
   description: EDAM OWL release
   format: owl
   id: edam.owl
@@ -135,7 +135,7 @@ products:
   product_url: http://edamontology.org/EDAM.owl
   secondary_source:
   - edam
-- category: DataModelProduct
+- category: OntologyProduct
   description: EDAM TSV export
   format: tsv
   id: edam.tsv
@@ -148,7 +148,7 @@ products:
   product_url: https://edamontology.org/EDAM.tsv
   secondary_source:
   - edam
-- category: DataModelProduct
+- category: OntologyProduct
   description: EDAM CSV export
   format: csv
   id: edam.csv

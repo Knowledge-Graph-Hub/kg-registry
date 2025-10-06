@@ -56,6 +56,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
@@ -67,7 +69,7 @@ products:
   - aop-db
   - bgee
   - disgenet
-  - do
+  - doid
   - drugbank
   - dsstox
   - go
@@ -96,7 +98,7 @@ products:
   - aop-db
   - bgee
   - disgenet
-  - do
+  - doid
   - drugbank
   - dsstox
   - go

@@ -48,6 +48,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-10-06: No Content-Length
     header found'
 - category: Product
@@ -66,6 +68,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-10-06: No Content-Length
     header found'
 - category: Product
@@ -84,6 +88,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-10-06: No Content-Length
     header found'
 - category: Product
@@ -101,8 +107,10 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-06: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-10-06: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Experimental C-MS Spectra data from FooDB
@@ -118,8 +126,10 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-06: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-10-06: No Content-Length
+    header found'
 - category: Product
   compression: zip
   description: Predicted C-MS Spectra data from FooDB
@@ -135,6 +145,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-10-06: No Content-Length
     header found'
 - category: Product
@@ -152,6 +164,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-10-06: No Content-Length
     header found'
 - category: Product
@@ -169,6 +183,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-10-06: No Content-Length
     header found'
 - category: Product
@@ -186,6 +202,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-10-06: No Content-Length
     header found'
 - category: Product
@@ -202,6 +220,8 @@ products:
   - File was not able to be retrieved when checked on 2025-08-28_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
@@ -220,6 +240,8 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-10-06: No Content-Length
     header found'
 - category: GraphProduct
@@ -232,7 +254,7 @@ products:
   - medline
   - mesh
   - pid
-  - do
+  - doid
   - diseases
   - drugcentral
   - go
@@ -300,7 +322,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go
@@ -346,7 +368,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go

@@ -104,7 +104,7 @@ resources:
     name: DDBJ Mirror
     product_url: https://ddbj.nig.ac.jp/public/mirror_database/1000genomes/
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 403 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
       when accessing file
@@ -222,7 +222,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -285,7 +285,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -1042,7 +1042,7 @@ resources:
     - alliance
     product_url: https://download.alliancegenome.org/
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -1842,7 +1842,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -1871,7 +1871,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -2023,7 +2023,7 @@ resources:
     - aop-db
     product_url: https://ordspub.epa.gov/ords/eims/eimscomm.getfile?p_download_id=543383
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -2038,7 +2038,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -2067,7 +2067,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -2135,7 +2135,7 @@ resources:
     - aop-wiki
     product_url: https://aopwiki.org/downloads
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
+    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
@@ -2144,8 +2144,8 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
-      certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-09-27_ Error connecting
+      certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
@@ -2165,7 +2165,7 @@ resources:
     - aop-wiki
     product_url: https://aopwiki.org/downloads/aop-wiki-xml.gz
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
+    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -2174,8 +2174,8 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-09-27_ Error connecting
+      issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -2195,7 +2195,7 @@ resources:
     - aop-wiki
     product_url: https://aopwiki.org/downloads/aop_ke_mie_ao.tsv
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
+    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -2204,8 +2204,8 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-09-27_ Error connecting
+      issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -2225,7 +2225,7 @@ resources:
     - aop-wiki
     product_url: https://aopwiki.org/downloads/aop_ke_ker.tsv
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
+    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -2234,8 +2234,8 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-09-27_ Error connecting
+      issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -2255,7 +2255,7 @@ resources:
     - aop-wiki
     product_url: https://aopwiki.org/downloads/aop_ke_ec.tsv
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
+    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -2264,8 +2264,8 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-09-27_ Error connecting
+      issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -2285,15 +2285,15 @@ resources:
     - aop-wiki
     product_url: https://aopwiki.org/aops
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
+    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
       certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
     - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-      certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-09-27_ Error connecting
+      certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
       certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
@@ -2312,7 +2312,7 @@ resources:
     name: AOP Developers' Handbook
     product_url: https://aopwiki.org/handbooks/4
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
+    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
@@ -2321,8 +2321,8 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
-      certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-09-27_ Error connecting
+      certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
@@ -2745,7 +2745,7 @@ resources:
     name: bfo.obo
     product_file_size: 17898
     product_url: http://purl.obolibrary.org/obo/bfo.obo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -2758,7 +2758,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -2798,7 +2798,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -2811,7 +2811,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -2949,7 +2949,7 @@ resources:
     secondary_source:
     - bgee
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -2969,7 +2969,7 @@ resources:
     secondary_source:
     - bgee
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -2989,7 +2989,7 @@ resources:
     secondary_source:
     - bgee
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -3009,7 +3009,7 @@ resources:
     secondary_source:
     - bgee
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -3029,7 +3029,7 @@ resources:
     secondary_source:
     - bgee
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -3049,7 +3049,7 @@ resources:
     secondary_source:
     - bgee
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -3069,7 +3069,7 @@ resources:
     secondary_source:
     - bgee
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -3089,7 +3089,7 @@ resources:
     secondary_source:
     - bgee
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -3107,7 +3107,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -3149,7 +3149,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -3178,7 +3178,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -4513,7 +4513,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -5901,7 +5901,7 @@ resources:
     name: MechRepoNet Knowledge Graph
     original_source:
     - ctd
-    - do
+    - doid
     - go
     - chebi
     - reactome
@@ -6021,7 +6021,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -6084,7 +6084,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -6204,7 +6204,7 @@ resources:
     id: biomarkerkg.nodes.condition
     name: BKG Condition Nodes
     original_source:
-    - do
+    - doid
     product_file_size: 5501
     product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.nodes.zip
     secondary_source:
@@ -6693,7 +6693,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -6739,7 +6739,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -6750,7 +6750,7 @@ resources:
     - ms
     - uo
     product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -6763,7 +6763,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -6803,7 +6803,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -6816,7 +6816,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -6925,7 +6925,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -7096,7 +7096,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -7142,7 +7142,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -7400,11 +7400,11 @@ resources:
     name: Human Cell Markers
     product_url: http://xteam.xbio.top/download/Human_cell_markers.txt
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
+      to URL
     - File was not able to be retrieved when checked on 2025-09-29_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
-      header found
-    - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-06: Timeout connecting
       to URL'
@@ -7414,11 +7414,11 @@ resources:
     name: Mouse Cell Markers
     product_url: http://xteam.xbio.top/download/Mouse_cell_markers.txt
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
+      to URL
     - File was not able to be retrieved when checked on 2025-09-29_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
-      header found
-    - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-06: Timeout connecting
       to URL'
@@ -7429,11 +7429,11 @@ resources:
     name: Single Cell Markers
     product_url: http://xteam.xbio.top/download/Single_cell_markers.txt
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
+      to URL
     - File was not able to be retrieved when checked on 2025-09-29_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
-      header found
-    - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-06: Timeout connecting
       to URL'
@@ -7444,11 +7444,11 @@ resources:
     name: All Cell Markers
     product_url: http://xteam.xbio.top/download/all_cell_markers.txt
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
+      to URL
     - File was not able to be retrieved when checked on 2025-09-29_ Timeout connecting
       to URL
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
-      header found
-    - File was not able to be retrieved when checked on 2025-09-27_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-06: Timeout connecting
       to URL'
@@ -7584,7 +7584,7 @@ resources:
     secondary_source:
     - cellosaurus
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -7601,7 +7601,7 @@ resources:
     secondary_source:
     - cellosaurus
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -7779,7 +7779,7 @@ resources:
     name: CFDE Gene Set Collections
     product_url: https://cfde.cloud/gse/downloads/
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -7833,7 +7833,7 @@ resources:
     secondary_source:
     - cgnc
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -8094,7 +8094,7 @@ resources:
     name: MechRepoNet Knowledge Graph
     original_source:
     - ctd
-    - do
+    - doid
     - go
     - chebi
     - reactome
@@ -8128,7 +8128,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -8191,7 +8191,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -8325,7 +8325,7 @@ resources:
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -8338,7 +8338,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -8378,7 +8378,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -8391,7 +8391,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -8557,7 +8557,7 @@ resources:
     name: Drug Approvals KP Graph Nodes
     original_source:
     - chebi
-    - do
+    - doid
     - hp
     - mondo
     product_file_size: 701451
@@ -8571,7 +8571,7 @@ resources:
     name: Drug Approvals KP Graph Edges
     original_source:
     - chebi
-    - do
+    - doid
     - hp
     - mondo
     product_file_size: 31052966
@@ -8829,7 +8829,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -9203,7 +9203,7 @@ resources:
     product_url: http://purl.obolibrary.org/obo/chmo.owl
   repository: https://github.com/rsc-ontologies/rsc-cmo
 - activity_status: active
-  category: DataModel
+  category: Ontology
   contacts:
   - category: Individual
     contact_details:
@@ -9227,7 +9227,7 @@ resources:
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
   name: Monochrom Ontology
   products:
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: OWL release of Monochrom Ontology
     format: owl
     id: chr.model.owl
@@ -9559,7 +9559,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -9768,7 +9768,7 @@ resources:
     name: MechRepoNet Knowledge Graph
     original_source:
     - ctd
-    - do
+    - doid
     - go
     - chebi
     - reactome
@@ -9802,7 +9802,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -9865,7 +9865,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -9924,7 +9924,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -9957,7 +9957,7 @@ resources:
     - protcid
     secondary_source:
     - spoke
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -9970,7 +9970,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -10010,7 +10010,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -10023,7 +10023,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -10400,7 +10400,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -10463,7 +10463,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -11404,7 +11404,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -11496,7 +11496,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -11588,7 +11588,7 @@ resources:
     - clinicaltrialsgov
     product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -11699,7 +11699,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -11762,7 +11762,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -12722,7 +12722,7 @@ resources:
     name: clo.owl
     product_file_size: 2121232
     product_url: http://purl.obolibrary.org/obo/clo.owl
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -12735,7 +12735,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -12775,7 +12775,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -12788,7 +12788,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -13024,7 +13024,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -13087,7 +13087,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -13244,7 +13244,7 @@ resources:
     name: COB demo ontology (experimental)
     product_file_size: 447985
     product_url: http://purl.obolibrary.org/obo/cob/products/demo-cob.owl
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -13257,7 +13257,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -13297,7 +13297,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -13310,7 +13310,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -13491,7 +13491,7 @@ resources:
     name: MechRepoNet Knowledge Graph
     original_source:
     - ctd
-    - do
+    - doid
     - go
     - chebi
     - reactome
@@ -13604,7 +13604,7 @@ resources:
     name: CORUM All Complexes
     product_url: https://mips.helmholtz-muenchen.de/corum/download/
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
+    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -13613,8 +13613,8 @@ resources:
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-09-27_ Error connecting
+      issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -13635,7 +13635,7 @@ resources:
     name: CORUM Core Complexes
     product_url: https://mips.helmholtz-muenchen.de/corum/download/
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
+    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -13644,8 +13644,8 @@ resources:
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-09-27_ Error connecting
+      issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -13666,7 +13666,7 @@ resources:
     name: CORUM PSI-MI
     product_url: https://mips.helmholtz-muenchen.de/corum/download/
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
+    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -13675,8 +13675,8 @@ resources:
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-09-27_ Error connecting
+      issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -13696,7 +13696,7 @@ resources:
     name: CORUM MITAB
     product_url: https://mips.helmholtz-muenchen.de/corum/download/
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
+    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -13705,8 +13705,8 @@ resources:
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-09-27_ Error connecting
+      issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -13797,7 +13797,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -13843,7 +13843,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -14751,7 +14751,7 @@ resources:
     name: MechRepoNet Knowledge Graph
     original_source:
     - ctd
-    - do
+    - doid
     - go
     - chebi
     - reactome
@@ -15891,7 +15891,7 @@ resources:
   layout: resource_detail
   name: Dc
   products:
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -15904,7 +15904,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -15944,7 +15944,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -15957,7 +15957,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -16004,7 +16004,7 @@ resources:
     name: clo.owl
     product_file_size: 2121232
     product_url: http://purl.obolibrary.org/obo/clo.owl
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: EDAM OWL release
     format: owl
     id: edam.owl
@@ -16017,7 +16017,7 @@ resources:
     product_url: http://edamontology.org/EDAM.owl
     secondary_source:
     - edam
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: EDAM TSV export
     format: tsv
     id: edam.tsv
@@ -16030,7 +16030,7 @@ resources:
     product_url: https://edamontology.org/EDAM.tsv
     secondary_source:
     - edam
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: EDAM CSV export
     format: csv
     id: edam.csv
@@ -16071,7 +16071,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -16134,7 +16134,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -16485,7 +16485,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -16531,7 +16531,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -17684,7 +17684,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -17752,7 +17752,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -17798,7 +17798,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -17897,7 +17897,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -18040,7 +18040,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -18069,7 +18069,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -18106,7 +18106,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -18261,7 +18261,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -18372,7 +18372,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -18399,21 +18399,24 @@ resources:
     title: The DisGeNET knowledge platform for disease genomics - 2019 update
     year: '2020'
 - activity_status: active
-  category: DataModel
+  category: Ontology
+  collection:
+  - obo-foundry
   contacts:
   - category: Individual
     contact_details:
     - contact_type: email
-      value: lschriml@som.umaryland.edu
+      value: lynn.schriml@gmail.com
     - contact_type: github
       value: lschriml
     label: Lynn Schriml
-  description: A community-driven, community-accepted ontology of diseases for clinical
-    research and medicine inclusive of genetic, environmental and infectious diseases.
+    orcid: 0000-0001-8910-9851
+  description: An ontology for describing the classification of human diseases organized
+    by etiology.
   domains:
-  - health
-  homepage_url: https://disease-ontology.org/
-  id: do
+  - biomedical
+  homepage_url: http://www.disease-ontology.org
+  id: doid
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -18421,79 +18424,22 @@ resources:
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
   name: Human Disease Ontology
   products:
-  - category: DataModelProduct
-    description: OWL release of DO (doid.owl). This file contains DO's is_a asserted
+  - category: OntologyProduct
+    description: Disease Ontology, OWL format. This file contains DO's is_a asserted
       hierarchy plus equivalent axioms to other OBO Foundry ontologies.
     format: owl
-    id: do.owl
-    name: Human Disease Ontology OWL release
-    original_source:
-    - do
-    product_file_size: 2079362
-    product_url: https://purl.obolibrary.org/obo/doid.owl
-    secondary_source:
-    - do
-  - category: DataModelProduct
-    description: OBO release of DO (doid.obo). This file omits the equivalent axioms.
+    id: doid.owl
+    name: Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy
+      plus equivalent axioms to other OBO Foundry ontologies.
+    product_file_size: 2088706
+    product_url: http://purl.obolibrary.org/obo/doid.owl
+  - category: OntologyProduct
+    description: Disease Ontology, OBO format. This file omits the equivalent axioms.
     format: obo
-    id: do.obo
-    name: Human Disease Ontology OBO release
-    original_source:
-    - do
-    product_file_size: 1353649
-    product_url: https://purl.obolibrary.org/obo/doid.obo
-    secondary_source:
-    - do
-  - category: ProcessProduct
-    description: Utility code for supporting the operations of the Human Disease Ontology
-    id: do.code.utils
-    name: DO.utils
-    original_source:
-    - do
-    product_url: https://github.com/DiseaseOntology/DO.utils
-    secondary_source:
-    - do
-  - category: GraphProduct
-    description: Nodes for the Drug Approvals KP, v0.3.9
-    format: kgx
-    id: drug-approvals-kp.graph.nodes
-    name: Drug Approvals KP Graph Nodes
-    original_source:
-    - chebi
-    - do
-    - hp
-    - mondo
-    product_file_size: 701451
-    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
-    secondary_source:
-    - drug-approvals-kp
-  - category: GraphProduct
-    description: Edges for the Drug Approvals KP, v0.3.9
-    format: kgx
-    id: drug-approvals-kp.graph.edges
-    name: Drug Approvals KP Graph Edges
-    original_source:
-    - chebi
-    - do
-    - hp
-    - mondo
-    product_file_size: 31052966
-    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
-    secondary_source:
-    - drug-approvals-kp
-  - category: MappingProduct
-    description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
-    format: sssom
-    id: mondo.sssom
-    name: MONDO SSSOM
-    original_source:
-    - do
-    - hp
-    - hgnc
-    product_file_size: 1437457
-    product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
-    secondary_source:
-    - mondo
+    id: doid.obo
+    name: Disease Ontology, OBO format. This file omits the equivalent axioms.
+    product_file_size: 1359793
+    product_url: http://purl.obolibrary.org/obo/doid.obo
   - category: GraphProduct
     compression: zip
     description: Nodes from Human Disease Ontology
@@ -18501,54 +18447,95 @@ resources:
     id: biomarkerkg.nodes.condition
     name: BKG Condition Nodes
     original_source:
-    - do
+    - doid
     product_file_size: 5501
     product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.nodes.zip
     secondary_source:
     - biomarkerkg
-  - category: GraphProduct
-    description: The SPOKE knowledge graph containing nodes and edges from multiple
-      biomedical data sources.
-    id: spoke.graph
-    name: SPOKE Graph
+  - category: GraphicalInterface
+    description: A browser interface for a knowledge graph for Alzheimer's Disease.
+    format: http
+    id: alzkb.browser
+    name: AlzKB Graph Database Browser
     original_source:
-    - ncbigene
-    - medline
-    - mesh
-    - pid
-    - do
-    - diseases
-    - drugcentral
+    - aop-db
+    - bgee
+    - disgenet
+    - doid
+    - drugbank
+    - dsstox
     - go
     - gwascatalog
-    - reactome
+    - hrpimp
     - lincs-l1000
+    - mesh
+    - ncbigene
+    - pharmacotherapydb
+    - pid
+    - pubchem
+    - reactome
+    - sider
+    - tissues
     - uberon
     - wikipathways
-    - bindingdb
-    - drugbank
-    - sider
-    - bgee
-    - uniprot
-    - string
-    - omim
-    - chembl
-    - foodb
-    - civic
-    - gdsc
-    - clinicaltrialsgov
-    - hpa
-    - cl
-    - kegg
-    - metacyc
-    - bv-brc
-    - ncbitaxon
-    - pathophenodb
-    - pfam
-    - interpro
-    - protcid
+    product_url: https://alzkb.ai:7473/login
     secondary_source:
-    - spoke
+    - alzkb
+    - hetionet
+  - category: GraphProduct
+    description: Memgraph data release for AlzKB.
+    id: alzkb.data
+    name: AlzKB Data Release (Version 2.0.0)
+    original_source:
+    - aop-db
+    - bgee
+    - disgenet
+    - doid
+    - drugbank
+    - dsstox
+    - go
+    - gwascatalog
+    - hrpimp
+    - lincs-l1000
+    - mesh
+    - ncbigene
+    - pharmacotherapydb
+    - pid
+    - pubchem
+    - reactome
+    - reactome
+    - sider
+    - tissues
+    - uberon
+    - wikipathways
+    product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
+    secondary_source:
+    - alzkb
+    - hetionet
+  - description: The MechRepoNet knowledge graph in its original format
+    id: mechreponet.kg
+    name: MechRepoNet Knowledge Graph
+    original_source:
+    - ctd
+    - doid
+    - go
+    - chebi
+    - reactome
+    - interpro
+    - hp
+    - cl
+    - pr
+    - uberon
+    - ncbitaxon
+    - hetionet
+    - complexportal
+    - rnacentral
+    - mirtarbase
+    - unii
+    - biolink
+    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    secondary_source:
+    - mechreponet
   - category: GraphProduct
     description: Turnkey neo4j distributions that deploy fully-indexed, standalone
       UBKG instances as neo4j graph databases, running in a Docker container. Requires
@@ -18564,7 +18551,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -18627,7 +18614,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -18676,67 +18663,142 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
-  - category: GraphicalInterface
-    description: A browser interface for a knowledge graph for Alzheimer's Disease.
-    format: http
-    id: alzkb.browser
-    name: AlzKB Graph Database Browser
-    original_source:
-    - aop-db
-    - bgee
-    - disgenet
-    - do
-    - drugbank
-    - dsstox
-    - go
-    - gwascatalog
-    - hrpimp
-    - lincs-l1000
-    - mesh
-    - ncbigene
-    - pharmacotherapydb
-    - pid
-    - pubchem
-    - reactome
-    - sider
-    - tissues
-    - uberon
-    - wikipathways
-    product_url: https://alzkb.ai:7473/login
-    secondary_source:
-    - alzkb
-    - hetionet
   - category: GraphProduct
-    description: Memgraph data release for AlzKB.
-    id: alzkb.data
-    name: AlzKB Data Release (Version 2.0.0)
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
     original_source:
-    - aop-db
-    - bgee
-    - disgenet
-    - do
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
     - drugbank
-    - dsstox
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - doid
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: Neo4j database dump of the Clinical Knowledge Graph and additional
+      relationships
+    dump_format: neo4j
+    edge_count: 220000000
+    format: mixed
+    id: cancer-genome-interpreter.clinicalkg.graph
+    name: CKG Graph Dump
+    node_count: 16000000
+    original_source:
+    - uniprot
+    - tissues
+    - string
+    - stitch
+    - smpdb
+    - signor
+    - sider
+    - refseq
+    - reactome
+    - phosphositeplus
+    - pfam
+    - oncokb
+    - mutationds
+    - intact
+    - hpa
+    - hmdb
+    - hgnc
+    - gwascatalog
+    - foodb
+    - drugbank
+    - disgenet
+    - diseases
+    - dgidb
+    - corum
+    - cancer-genome-interpreter
+    - doid
+    - bto
+    - efo
+    - go
+    - hp
+    - snomedct
+    - mod
+    - mi
+    - ms
+    - uo
+    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+  - category: GraphProduct
+    description: The SPOKE knowledge graph containing nodes and edges from multiple
+      biomedical data sources.
+    id: spoke.graph
+    name: SPOKE Graph
+    original_source:
+    - ncbigene
+    - medline
+    - mesh
+    - pid
+    - doid
+    - diseases
+    - drugcentral
     - go
     - gwascatalog
-    - hrpimp
+    - reactome
     - lincs-l1000
-    - mesh
-    - ncbigene
-    - pharmacotherapydb
-    - pid
-    - pubchem
-    - reactome
-    - reactome
-    - sider
-    - tissues
     - uberon
     - wikipathways
-    product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
+    - bindingdb
+    - drugbank
+    - sider
+    - bgee
+    - uniprot
+    - string
+    - omim
+    - chembl
+    - foodb
+    - civic
+    - gdsc
+    - clinicaltrialsgov
+    - hpa
+    - cl
+    - kegg
+    - metacyc
+    - bv-brc
+    - ncbitaxon
+    - pathophenodb
+    - pfam
+    - interpro
+    - protcid
     secondary_source:
-    - alzkb
-    - hetionet
-  - category: DataModelProduct
+    - spoke
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -18749,7 +18811,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -18789,7 +18851,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -18802,7 +18864,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -18842,172 +18904,47 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
-  - description: The MechRepoNet knowledge graph in its original format
-    id: mechreponet.kg
-    name: MechRepoNet Knowledge Graph
+  - category: GraphProduct
+    description: Nodes for the Drug Approvals KP, v0.3.9
+    format: kgx
+    id: drug-approvals-kp.graph.nodes
+    name: Drug Approvals KP Graph Nodes
     original_source:
-    - ctd
-    - do
-    - go
     - chebi
-    - reactome
-    - interpro
+    - doid
     - hp
-    - cl
-    - pr
-    - uberon
-    - ncbitaxon
-    - hetionet
-    - complexportal
-    - rnacentral
-    - mirtarbase
-    - unii
-    - biolink
-    product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+    - mondo
+    product_file_size: 701451
+    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
     secondary_source:
-    - mechreponet
+    - drug-approvals-kp
   - category: GraphProduct
-    description: Neo4j database dump of the Clinical Knowledge Graph and additional
-      relationships
-    dump_format: neo4j
-    edge_count: 220000000
-    format: mixed
-    id: clinicalkg.graph
-    name: CKG Graph Dump
-    node_count: 16000000
+    description: Edges for the Drug Approvals KP, v0.3.9
+    format: kgx
+    id: drug-approvals-kp.graph.edges
+    name: Drug Approvals KP Graph Edges
     original_source:
-    - uniprot
-    - tissues
-    - string
-    - stitch
-    - smpdb
-    - signor
-    - sider
-    - refseq
-    - reactome
-    - phosphositeplus
-    - pfam
-    - oncokb
-    - mutationds
-    - intact
-    - hpa
-    - hmdb
-    - hgnc
-    - gwascatalog
-    - foodb
-    - drugbank
-    - disgenet
-    - diseases
-    - dgidb
-    - corum
-    - cancer-genome-interpreter
-    - do
-    - bto
-    - efo
-    - go
+    - chebi
+    - doid
     - hp
-    - snomedct
-    - mod
-    - mi
-    - ms
-    - uo
-    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-  - category: OntologyProduct
-    description: Cell Line Ontology in OWL format
-    format: owl
-    id: clo.owl
-    name: clo.owl
-    product_file_size: 2121232
-    product_url: http://purl.obolibrary.org/obo/clo.owl
-  - category: GraphProduct
-    description: Neo4j database dump of the Clinical Knowledge Graph and additional
-      relationships
-    dump_format: neo4j
-    edge_count: 220000000
-    format: mixed
-    id: cancer-genome-interpreter.clinicalkg.graph
-    name: CKG Graph Dump
-    node_count: 16000000
+    - mondo
+    product_file_size: 31052966
+    product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
+    secondary_source:
+    - drug-approvals-kp
+  - category: MappingProduct
+    description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
+    format: sssom
+    id: mondo.sssom
+    name: MONDO SSSOM
     original_source:
-    - uniprot
-    - tissues
-    - string
-    - stitch
-    - smpdb
-    - signor
-    - sider
-    - refseq
-    - reactome
-    - phosphositeplus
-    - pfam
-    - oncokb
-    - mutationds
-    - intact
-    - hpa
-    - hmdb
-    - hgnc
-    - gwascatalog
-    - foodb
-    - drugbank
-    - disgenet
-    - diseases
-    - dgidb
-    - corum
-    - cancer-genome-interpreter
-    - do
-    - bto
-    - efo
-    - go
+    - doid
     - hp
-    - snomedct
-    - mod
-    - mi
-    - ms
-    - uo
-    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-  repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
-- activity_status: active
-  category: Ontology
-  collection:
-  - obo-foundry
-  contacts:
-  - category: Individual
-    contact_details:
-    - contact_type: email
-      value: lynn.schriml@gmail.com
-    - contact_type: github
-      value: lschriml
-    label: Lynn Schriml
-    orcid: 0000-0001-8910-9851
-  description: An ontology for describing the classification of human diseases organized
-    by etiology.
-  domains:
-  - biomedical
-  homepage_url: http://www.disease-ontology.org
-  id: doid
-  layout: resource_detail
-  license:
-    id: https://creativecommons.org/publicdomain/zero/1.0/
-    label: CC0 1.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-  name: Human Disease Ontology
-  products:
-  - category: OntologyProduct
-    description: Disease Ontology, OWL format. This file contains DO's is_a asserted
-      hierarchy plus equivalent axioms to other OBO Foundry ontologies.
-    format: owl
-    id: doid.owl
-    name: Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy
-      plus equivalent axioms to other OBO Foundry ontologies.
-    product_file_size: 2088706
-    product_url: http://purl.obolibrary.org/obo/doid.owl
-  - category: OntologyProduct
-    description: Disease Ontology, OBO format. This file omits the equivalent axioms.
-    format: obo
-    id: doid.obo
-    name: Disease Ontology, OBO format. This file omits the equivalent axioms.
-    product_file_size: 1359793
-    product_url: http://purl.obolibrary.org/obo/doid.obo
+    - hgnc
+    product_file_size: 1437457
+    product_url: https://raw.githubusercontent.com/monarch-initiative/mondo/refs/heads/master/src/ontology/mappings/mondo.sssom.tsv
+    secondary_source:
+    - mondo
   repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
   taxon:
   - NCBITaxon:9606
@@ -19253,7 +19190,7 @@ resources:
     name: Drug Approvals KP Graph Nodes
     original_source:
     - chebi
-    - do
+    - doid
     - hp
     - mondo
     product_file_size: 701451
@@ -19267,7 +19204,7 @@ resources:
     name: Drug Approvals KP Graph Edges
     original_source:
     - chebi
-    - do
+    - doid
     - hp
     - mondo
     product_file_size: 31052966
@@ -19350,7 +19287,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -19477,7 +19414,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -19506,7 +19443,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -19632,7 +19569,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -19736,7 +19673,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -19812,7 +19749,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -19991,7 +19928,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -20012,7 +19949,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -20034,7 +19971,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -20081,7 +20018,7 @@ resources:
     - clinicaltrialsgov
     product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -20234,7 +20171,7 @@ resources:
     name: DSSToxDB Description
     product_url: https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -20249,7 +20186,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -20278,7 +20215,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -20908,7 +20845,7 @@ resources:
     name: ecto.ecto-base.json
     product_file_size: 86977
     product_url: http://purl.obolibrary.org/obo/ecto/ecto-base.json
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -20921,7 +20858,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -20961,7 +20898,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -20974,7 +20911,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -21056,7 +20993,7 @@ resources:
     - v2021-04-06
   repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
 - activity_status: active
-  category: DataModel
+  category: Ontology
   contacts:
   - category: Individual
     contact_details:
@@ -21089,7 +21026,7 @@ resources:
     logo: https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png
   name: EDAM Ontology
   products:
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: EDAM OWL release
     format: owl
     id: edam.owl
@@ -21102,7 +21039,7 @@ resources:
     product_url: http://edamontology.org/EDAM.owl
     secondary_source:
     - edam
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: EDAM TSV export
     format: tsv
     id: edam.tsv
@@ -21115,7 +21052,7 @@ resources:
     product_url: https://edamontology.org/EDAM.tsv
     secondary_source:
     - edam
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: EDAM CSV export
     format: csv
     id: edam.csv
@@ -21143,7 +21080,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -21206,7 +21143,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -21272,7 +21209,7 @@ resources:
     year: '2013'
   repository: https://github.com/edamontology/edamontology
 - activity_status: active
-  category: DataModel
+  category: Ontology
   contacts:
   - category: Organization
     contact_details:
@@ -21298,7 +21235,7 @@ resources:
     label: Apache 2.0
   name: Experimental Factor Ontology
   products:
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -21311,7 +21248,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -21351,7 +21288,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -21364,7 +21301,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -21429,7 +21366,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -21492,7 +21429,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -21576,7 +21513,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -21684,7 +21621,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -23052,7 +22989,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -23115,7 +23052,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -23204,7 +23141,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -23267,7 +23204,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -23908,7 +23845,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -23971,7 +23908,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -24125,7 +24062,7 @@ resources:
     name: fbbt.fbbt-simple.obo
     product_file_size: 38384573
     product_url: http://purl.obolibrary.org/obo/fbbt/fbbt-simple.obo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -24138,7 +24075,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -24178,7 +24115,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -24191,7 +24128,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -24343,7 +24280,7 @@ resources:
     name: fbdv.fbdv-simple.obo
     product_file_size: 118720
     product_url: http://purl.obolibrary.org/obo/fbdv/fbdv-simple.obo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -24356,7 +24293,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -24396,7 +24333,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -24409,7 +24346,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -24909,7 +24846,7 @@ resources:
     name: FooDB CSV Data
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -24929,7 +24866,7 @@ resources:
     name: FooDB XML Data
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -24949,7 +24886,7 @@ resources:
     name: FooDB JSON Data
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -24968,8 +24905,8 @@ resources:
     name: FooDB MySQL Dump
     product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
-      header found
+    - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
+      to URL
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
@@ -24978,8 +24915,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-10-06: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-10-06: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Experimental C-MS Spectra data from FooDB
@@ -24987,8 +24924,8 @@ resources:
     name: FooDB Experimental C-MS Spectra
     product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
-      header found
+    - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
+      to URL
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
@@ -24997,8 +24934,8 @@ resources:
       to URL
     - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error
       when accessing file
-    - 'File was not able to be retrieved when checked on 2025-10-06: Timeout connecting
-      to URL'
+    - 'File was not able to be retrieved when checked on 2025-10-06: No Content-Length
+      header found'
   - category: Product
     compression: zip
     description: Predicted C-MS Spectra data from FooDB
@@ -25006,7 +24943,7 @@ resources:
     name: FooDB Predicted C-MS Spectra
     product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -25025,7 +24962,7 @@ resources:
     name: FooDB Experimental MS-MS Spectra
     product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -25044,7 +24981,7 @@ resources:
     name: FooDB Predicted MS-MS Spectra
     product_url: https://foodb.ca/public/system/downloads/foodb_predicted_msms_spectra.zip
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -25063,7 +25000,7 @@ resources:
     name: FooDB NMR Spectra
     product_url: https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -25082,7 +25019,7 @@ resources:
     name: FooDB FID Files
     product_url: https://foodb.ca/public/system/downloads/foodb_fid_files.zip
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -25101,7 +25038,7 @@ resources:
     name: FooDB Image Files
     product_url: https://foodb.ca/public/system/downloads/foodb_image_files.zip
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -25123,7 +25060,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -25191,7 +25128,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -25237,7 +25174,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -25612,7 +25549,7 @@ resources:
     - gdsc
     product_url: https://ftp.sanger.ac.uk/project/cancerrxgene/releases/
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -25628,7 +25565,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -25896,7 +25833,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -25959,7 +25896,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -26405,7 +26342,7 @@ resources:
     name: GENO
     product_file_size: 172319
     product_url: http://purl.obolibrary.org/obo/geno.owl
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: OWL release of Monochrom Ontology
     format: owl
     id: chr.model.owl
@@ -26517,7 +26454,7 @@ resources:
   layout: resource_detail
   name: Gff
   products:
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: OWL release of Monochrom Ontology
     format: owl
     id: chr.model.owl
@@ -26659,7 +26596,7 @@ resources:
     name: GloBI interpreted interactions (CSV)
     product_url: https://zenodo.org/record/14640564/files/interactions.csv.gz
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -26683,7 +26620,7 @@ resources:
     name: GloBI verbatim interactions (CSV)
     product_url: https://zenodo.org/record/14640564/files/verbatim-interactions.csv.gz
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -26705,7 +26642,7 @@ resources:
     name: GloBI refuted interactions (CSV)
     product_url: https://zenodo.org/record/14640564/files/refuted-interactions.csv.gz
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -26720,7 +26657,7 @@ resources:
     name: GloBI refuted verbatim interactions (CSV)
     product_url: https://zenodo.org/record/14640564/files/refuted-verbatim-interactions.csv.gz
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -26758,7 +26695,7 @@ resources:
     name: GloBI datasets index (CSV)
     product_url: https://zenodo.org/record/14640564/files/datasets.csv.gz
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -26796,7 +26733,7 @@ resources:
     name: GloBI data citations (CSV)
     product_url: https://zenodo.org/record/14640564/files/citations.csv.gz
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -26817,7 +26754,7 @@ resources:
     name: interactionFields.json
     product_url: https://api.globalbioticinteractions.org/interactionFields?type=json
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -26876,7 +26813,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -26939,7 +26876,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -27104,7 +27041,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -27167,7 +27104,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -27603,7 +27540,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -27632,7 +27569,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -27659,7 +27596,7 @@ resources:
     name: MechRepoNet Knowledge Graph
     original_source:
     - ctd
-    - do
+    - doid
     - go
     - chebi
     - reactome
@@ -27798,7 +27735,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -27844,7 +27781,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -27865,7 +27802,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -27923,7 +27860,7 @@ resources:
     product_url: https://github.com/gyorilab/indra_cogex
     secondary_source:
     - indra
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -27936,7 +27873,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -27976,7 +27913,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -27989,7 +27926,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -28800,7 +28737,7 @@ resources:
     product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
     secondary_source:
     - obo-db-ingest
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: OWL release of Monochrom Ontology
     format: owl
     id: chr.model.owl
@@ -29127,7 +29064,7 @@ resources:
     - go-cam
     product_url: https://github.com/geneontology/go-cam
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -29210,7 +29147,7 @@ resources:
     secondary_source:
     - goldterms
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -29780,7 +29717,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -29843,7 +29780,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -29986,7 +29923,7 @@ resources:
     name: GtoPdb Targets and Families
     product_url: https://www.guidetopharmacology.org/DATA/targets_and_families.csv
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -30002,7 +29939,7 @@ resources:
     name: GtoPdb Ligands Dataset
     product_url: https://www.guidetopharmacology.org/DATA/ligands.csv
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -30017,7 +29954,7 @@ resources:
     name: GtoPdb Interactions Dataset
     product_url: https://www.guidetopharmacology.org/DATA/interactions.csv
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -30032,7 +29969,7 @@ resources:
     name: GtoPdb Approved Drugs Dataset
     product_url: https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -30048,7 +29985,7 @@ resources:
     name: GtoPdb Ligand SDF File
     product_url: https://www.guidetopharmacology.org/DATA/all_ligands.sdf
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -30064,7 +30001,7 @@ resources:
     name: GtoPdb RDF Dataset
     product_url: https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -30079,7 +30016,7 @@ resources:
     name: GtoPdb Full Database
     product_url: https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -30581,7 +30518,7 @@ resources:
     - gwascatalog
     product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.json
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -30607,7 +30544,7 @@ resources:
     - gwascatalog
     product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-variants.tsv
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -30623,7 +30560,7 @@ resources:
     - gwascatalog
     product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -30639,7 +30576,7 @@ resources:
     - gwascatalog
     product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.owl.gz
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -30655,7 +30592,7 @@ resources:
     - gwascatalog
     product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram.svg
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -30670,7 +30607,7 @@ resources:
     - gwascatalog
     product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram-archive.zip
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -30685,7 +30622,7 @@ resources:
     - gwascatalog
     product_url: ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
+    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
       to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
     - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
       to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
@@ -30737,7 +30674,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -30783,7 +30720,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -30848,7 +30785,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -30877,7 +30814,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -30956,7 +30893,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -31011,7 +30948,7 @@ resources:
     warnings:
     - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
       when accessing file'
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -31024,7 +30961,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -31064,7 +31001,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -31077,7 +31014,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -31321,7 +31258,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -31350,7 +31287,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -31377,7 +31314,7 @@ resources:
     name: MechRepoNet Knowledge Graph
     original_source:
     - ctd
-    - do
+    - doid
     - go
     - chebi
     - reactome
@@ -31569,7 +31506,7 @@ resources:
     secondary_source:
     - scibite
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -31581,7 +31518,7 @@ resources:
     id: mondo.sssom
     name: MONDO SSSOM
     original_source:
-    - do
+    - doid
     - hp
     - hgnc
     product_file_size: 1437457
@@ -31603,7 +31540,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -31666,7 +31603,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -31750,7 +31687,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -32100,7 +32037,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -32378,7 +32315,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -32435,7 +32372,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -32651,7 +32588,7 @@ resources:
     name: MechRepoNet Knowledge Graph
     original_source:
     - ctd
-    - do
+    - doid
     - go
     - chebi
     - reactome
@@ -32708,7 +32645,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -32771,7 +32708,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -32940,7 +32877,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -32986,7 +32923,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -33022,7 +32959,7 @@ resources:
     product_url: https://github.com/gyorilab/indra_cogex
     secondary_source:
     - indra
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -33035,7 +32972,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -33075,7 +33012,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -33088,7 +33025,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -33965,7 +33902,7 @@ resources:
     name: Drug Approvals KP Graph Nodes
     original_source:
     - chebi
-    - do
+    - doid
     - hp
     - mondo
     product_file_size: 701451
@@ -33979,7 +33916,7 @@ resources:
     name: Drug Approvals KP Graph Edges
     original_source:
     - chebi
-    - do
+    - doid
     - hp
     - mondo
     product_file_size: 31052966
@@ -33992,7 +33929,7 @@ resources:
     id: mondo.sssom
     name: MONDO SSSOM
     original_source:
-    - do
+    - doid
     - hp
     - hgnc
     product_file_size: 1437457
@@ -34103,7 +34040,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -34217,7 +34154,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -34306,7 +34243,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -34345,7 +34282,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -34408,7 +34345,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -34564,7 +34501,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -34593,7 +34530,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -34672,7 +34609,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -34735,7 +34672,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -34935,7 +34872,7 @@ resources:
     name: Antibody Validation Reports
     product_url: https://avr.hubmapconsortium.org/
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 401 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 401 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 401 error
       when accessing file
@@ -34961,7 +34898,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -35024,7 +34961,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -35332,7 +35269,7 @@ resources:
     name: ontology of document acts
     product_file_size: 10158
     product_url: http://purl.obolibrary.org/obo/iao/d-acts.owl
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -35345,7 +35282,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -35385,7 +35322,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -35398,7 +35335,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -35438,7 +35375,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: OWL release of Monochrom Ontology
     format: owl
     id: chr.model.owl
@@ -35521,7 +35458,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -35584,7 +35521,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -35777,7 +35714,7 @@ resources:
     name: ido.owl
     product_file_size: 69658
     product_url: http://purl.obolibrary.org/obo/ido.owl
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -35790,7 +35727,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -35830,7 +35767,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -35843,7 +35780,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -36354,7 +36291,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -36649,7 +36586,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -36797,7 +36734,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -36881,7 +36818,7 @@ resources:
     name: MechRepoNet Knowledge Graph
     original_source:
     - ctd
-    - do
+    - doid
     - go
     - chebi
     - reactome
@@ -37382,7 +37319,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -37577,7 +37514,7 @@ resources:
     secondary_source:
     - kg-covid-19
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 403 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
       when accessing file
@@ -37675,7 +37612,7 @@ resources:
     secondary_source:
     - kg-idg
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -37767,7 +37704,7 @@ resources:
     secondary_source:
     - kg-microbe
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 403 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
       when accessing file
@@ -38836,7 +38773,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -38899,7 +38836,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -39115,7 +39052,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -39178,7 +39115,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -39462,7 +39399,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -39504,7 +39441,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -39533,7 +39470,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -40569,7 +40506,7 @@ resources:
     - loinc
     product_url: https://loinc.org/download/loinc-complete/
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 503 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 503 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 503 error
       when accessing file
@@ -40584,7 +40521,7 @@ resources:
     - loinc
     product_url: https://loinc.org/downloads/archive/
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 503 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 503 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 503 error
       when accessing file
@@ -40599,7 +40536,7 @@ resources:
     - loinc
     product_url: https://loinc.org/principles/
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 503 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 503 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 503 error
       when accessing file
@@ -40620,7 +40557,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -40683,7 +40620,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -40831,7 +40768,7 @@ resources:
     name: ma.obo
     product_file_size: 391635
     product_url: http://purl.obolibrary.org/obo/ma.obo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -40844,7 +40781,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -40884,7 +40821,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -40897,7 +40834,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -42088,7 +42025,7 @@ resources:
     name: MechRepoNet Knowledge Graph
     original_source:
     - ctd
-    - do
+    - doid
     - go
     - chebi
     - reactome
@@ -42127,7 +42064,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -42148,7 +42085,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -42170,7 +42107,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -42343,7 +42280,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -42399,7 +42336,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -42441,7 +42378,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -42470,7 +42407,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -42630,7 +42567,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -42720,7 +42657,7 @@ resources:
     secondary_source:
     - metanetx
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -43257,7 +43194,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -43320,7 +43257,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -43404,7 +43341,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -43450,7 +43387,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -43602,7 +43539,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -43623,7 +43560,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -43645,7 +43582,7 @@ resources:
     secondary_source:
     - mind
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -44162,7 +44099,7 @@ resources:
     name: MechRepoNet Knowledge Graph
     original_source:
     - ctd
-    - do
+    - doid
     - go
     - chebi
     - reactome
@@ -44380,7 +44317,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -44426,7 +44363,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -44795,7 +44732,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -44858,7 +44795,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -45020,7 +44957,7 @@ resources:
     product_url: https://arax.ncats.io/
     secondary_source:
     - rtx-kg2
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -45033,7 +44970,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -45073,7 +45010,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -45086,7 +45023,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -45203,7 +45140,7 @@ resources:
     name: Drug Approvals KP Graph Nodes
     original_source:
     - chebi
-    - do
+    - doid
     - hp
     - mondo
     product_file_size: 701451
@@ -45217,7 +45154,7 @@ resources:
     name: Drug Approvals KP Graph Edges
     original_source:
     - chebi
-    - do
+    - doid
     - hp
     - mondo
     product_file_size: 31052966
@@ -45230,7 +45167,7 @@ resources:
     id: mondo.sssom
     name: MONDO SSSOM
     original_source:
-    - do
+    - doid
     - hp
     - hgnc
     product_file_size: 1437457
@@ -45379,7 +45316,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -45442,7 +45379,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -45566,7 +45503,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -45629,7 +45566,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -45678,7 +45615,7 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -45691,7 +45628,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -45731,7 +45668,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -45744,7 +45681,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -45820,7 +45757,7 @@ resources:
     name: mpath.owl
     product_file_size: 88952
     product_url: http://purl.obolibrary.org/obo/mpath.owl
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -45833,7 +45770,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -45873,7 +45810,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -45886,7 +45823,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -46200,7 +46137,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -46246,7 +46183,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -46283,7 +46220,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -46346,7 +46283,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -46460,7 +46397,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -46506,7 +46443,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -46545,7 +46482,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -46608,7 +46545,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -46918,7 +46855,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -46960,7 +46897,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -46989,7 +46926,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -47296,7 +47233,7 @@ resources:
     name: MechRepoNet Knowledge Graph
     original_source:
     - ctd
-    - do
+    - doid
     - go
     - chebi
     - reactome
@@ -47410,7 +47347,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -47443,7 +47380,7 @@ resources:
     - protcid
     secondary_source:
     - spoke
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -47456,7 +47393,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -47496,7 +47433,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -47509,7 +47446,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -47549,7 +47486,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: OWL release of Monochrom Ontology
     format: owl
     id: chr.model.owl
@@ -47708,7 +47645,7 @@ resources:
     name: NCIt OBO Edition OBO format
     product_file_size: 238812762
     product_url: http://purl.obolibrary.org/obo/ncit.obo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -47721,7 +47658,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -47761,7 +47698,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -47774,7 +47711,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -48457,7 +48394,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -48520,7 +48457,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -48597,7 +48534,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -48660,7 +48597,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -48825,7 +48762,7 @@ resources:
     name: oba.subsets.oba-basic.obo
     product_file_size: 11852238
     product_url: http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -48838,7 +48775,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -48878,7 +48815,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -48891,7 +48828,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -49035,7 +48972,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -49098,7 +49035,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -49147,7 +49084,7 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -49160,7 +49097,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -49200,7 +49137,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -49213,7 +49150,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -49342,7 +49279,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -49405,7 +49342,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -49935,7 +49872,7 @@ resources:
     name: clinicaltrials OBO
     product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -49958,7 +49895,7 @@ resources:
     name: clinicaltrials OWL
     product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -49981,7 +49918,7 @@ resources:
     name: clinicaltrials OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -50401,7 +50338,7 @@ resources:
     name: gtdb OBO
     product_url: https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -50749,7 +50686,7 @@ resources:
     name: mesh OWL
     product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.owl
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -50767,7 +50704,7 @@ resources:
     name: mesh OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/mesh/mesh.json
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -50795,7 +50732,7 @@ resources:
     name: mgi OBO
     product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.obo
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -50818,7 +50755,7 @@ resources:
     name: mgi OWL
     product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.owl
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -50836,7 +50773,7 @@ resources:
     name: mgi OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.json
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -50984,7 +50921,7 @@ resources:
     name: msigdb OBO
     product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -51007,7 +50944,7 @@ resources:
     name: msigdb OWL
     product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -51025,7 +50962,7 @@ resources:
     name: msigdb OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.json
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -51095,7 +51032,7 @@ resources:
     name: nihreporter.project OBO
     product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -51116,7 +51053,7 @@ resources:
     name: nihreporter.project OWL
     product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -51131,7 +51068,7 @@ resources:
     name: nihreporter.project OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -51295,7 +51232,7 @@ resources:
     name: pathbank OBO
     product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -51323,7 +51260,7 @@ resources:
     name: pathbank OWL
     product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -51341,7 +51278,7 @@ resources:
     name: pathbank OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/pathbank/pathbank.json
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -51756,7 +51693,7 @@ resources:
     name: reactome OWL
     product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.owl
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -51784,7 +51721,7 @@ resources:
     name: reactome OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/reactome/reactome.json
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -51870,7 +51807,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -51897,7 +51834,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -51949,7 +51886,7 @@ resources:
     name: ror OWL
     product_url: https://w3id.org/biopragmatics/resources/ror/ror.owl
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -51967,7 +51904,7 @@ resources:
     name: ror OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/ror/ror.json
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -52060,7 +51997,7 @@ resources:
     name: slm OBO
     product_url: https://w3id.org/biopragmatics/resources/slm/slm.obo
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -52083,7 +52020,7 @@ resources:
     name: slm OWL
     product_url: https://w3id.org/biopragmatics/resources/slm/slm.owl
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -52106,7 +52043,7 @@ resources:
     name: slm OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/slm/slm.json
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -52165,7 +52102,7 @@ resources:
     name: uniprot OBO
     product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -52188,7 +52125,7 @@ resources:
     name: uniprot OWL
     product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -52211,7 +52148,7 @@ resources:
     name: uniprot OBO Graph JSON
     product_url: https://w3id.org/biopragmatics/resources/uniprot/uniprot.json
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -52337,7 +52274,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -52369,7 +52306,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -52559,7 +52496,7 @@ resources:
     name: ogms.owl
     product_file_size: 39126
     product_url: http://purl.obolibrary.org/obo/ogms.owl
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -52572,7 +52509,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -52612,7 +52549,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -52625,7 +52562,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -52873,7 +52810,7 @@ resources:
   layout: resource_detail
   name: Oio
   products:
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -52886,7 +52823,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -52926,7 +52863,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -52939,7 +52876,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -53108,9 +53045,9 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -53129,9 +53066,9 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -53150,9 +53087,9 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -53172,9 +53109,9 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -53194,9 +53131,9 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -53216,9 +53153,9 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -53238,9 +53175,9 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -53258,9 +53195,9 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -53278,10 +53215,10 @@ resources:
     secondary_source:
     - oma
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ Timeout connecting
       to URL
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
-      when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-08-12_ HTTP 502 error
@@ -53301,9 +53238,9 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -53375,7 +53312,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -53490,7 +53427,7 @@ resources:
     name: omit.owl
     product_file_size: 2146508
     product_url: http://purl.obolibrary.org/obo/omit.owl
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -53503,7 +53440,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -53543,7 +53480,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -53556,7 +53493,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -53789,7 +53726,7 @@ resources:
     name: omo.owl
     product_file_size: 14891
     product_url: http://purl.obolibrary.org/obo/omo.owl
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -53802,7 +53739,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -53842,7 +53779,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -53855,7 +53792,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -54159,7 +54096,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -54205,7 +54142,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -54517,7 +54454,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -54580,7 +54517,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -54895,7 +54832,7 @@ resources:
     id: orphacode.api
     name: ORPHAcodes API
     product_url: https://api.orphacode.org/
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -54908,7 +54845,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -54948,7 +54885,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -54961,7 +54898,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -55016,7 +54953,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -55079,7 +55016,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -56478,7 +56415,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -56596,7 +56533,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -56659,7 +56596,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -56708,7 +56645,7 @@ resources:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
     - ubkg
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -56721,7 +56658,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -56761,7 +56698,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -56774,7 +56711,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -57504,7 +57441,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -57572,7 +57509,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -57618,7 +57555,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -57719,7 +57656,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -57782,7 +57719,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -57914,7 +57851,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -57943,7 +57880,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -58704,7 +58641,7 @@ resources:
     secondary_source:
     - phenio
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -59715,7 +59652,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -59761,7 +59698,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -59798,7 +59735,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -59840,7 +59777,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -59869,7 +59806,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -60467,7 +60404,7 @@ resources:
     name: po.obo
     product_file_size: 222430
     product_url: http://purl.obolibrary.org/obo/po.obo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -60480,7 +60417,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -60520,7 +60457,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -60533,7 +60470,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -60653,7 +60590,7 @@ resources:
     secondary_source:
     - pombase
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -60676,7 +60613,7 @@ resources:
     secondary_source:
     - pombase
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -61803,7 +61740,7 @@ resources:
     name: MechRepoNet Knowledge Graph
     original_source:
     - ctd
-    - do
+    - doid
     - go
     - chebi
     - reactome
@@ -61822,7 +61759,7 @@ resources:
     product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
     secondary_source:
     - mechreponet
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -61835,7 +61772,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -61875,7 +61812,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -61888,7 +61825,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -62151,7 +62088,7 @@ resources:
     secondary_source:
     - primekg
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 403 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
       when accessing file
@@ -62359,7 +62296,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -62663,7 +62600,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -62692,7 +62629,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -63489,7 +63426,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -63537,7 +63474,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -63600,7 +63537,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -63743,7 +63680,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -63772,7 +63709,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -63845,7 +63782,7 @@ resources:
     name: MechRepoNet Knowledge Graph
     original_source:
     - ctd
-    - do
+    - doid
     - go
     - chebi
     - reactome
@@ -63924,7 +63861,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -64909,7 +64846,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -65231,7 +65168,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -65277,7 +65214,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -65342,7 +65279,7 @@ resources:
     - clinicaltrialsgov
     product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -65526,6 +65463,11 @@ resources:
     name: ReproTox Dataset
     product_url: https://reprotox-kg.net/downloads/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
+      to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
+      with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
+      object at 0x7f7314e5a000>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
+      or service not known)"))
     - File was not able to be retrieved when checked on 2025-09-29_ Error connecting
       to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
       with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
@@ -65609,7 +65551,7 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-10-06: Error connecting
       to URL: HTTPSConnectionPool(host=''reprotox-kg.net'', port=443): Max retries
       exceeded with url: /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
-      object at 0x7f7314e5a000>: Failed to resolve ''reprotox-kg.net'' ([Errno -2]
+      object at 0x7f8990304e00>: Failed to resolve ''reprotox-kg.net'' ([Errno -2]
       Name or service not known)"))'
   publications:
   - authors:
@@ -66141,7 +66083,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -66168,7 +66110,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -67057,7 +66999,7 @@ resources:
     name: MechRepoNet Knowledge Graph
     original_source:
     - ctd
-    - do
+    - doid
     - go
     - chebi
     - reactome
@@ -67241,7 +67183,7 @@ resources:
     name: Neuroscience subset
     product_file_size: 5164
     product_url: http://purl.obolibrary.org/obo/ro/subsets/ro-neuro.owl
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -67254,7 +67196,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -67294,7 +67236,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -67307,7 +67249,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -67347,7 +67289,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.obo
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: OWL release of Monochrom Ontology
     format: owl
     id: chr.model.owl
@@ -67767,7 +67709,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -67830,7 +67772,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -67956,7 +67898,7 @@ resources:
     secondary_source:
     - scibite
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -67972,7 +67914,7 @@ resources:
   layout: resource_detail
   name: Semapv
   products:
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -67985,7 +67927,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -68025,7 +67967,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -68038,7 +67980,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -68106,7 +68048,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -68169,7 +68111,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -68705,7 +68647,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -68751,7 +68693,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -69367,7 +69309,7 @@ resources:
     id: skos.reference
     name: SKOS Reference
     product_url: https://www.w3.org/TR/skos-reference/
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -69380,7 +69322,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -69420,7 +69362,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -69433,7 +69375,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -69480,7 +69422,7 @@ resources:
     name: clo.owl
     product_file_size: 2121232
     product_url: http://purl.obolibrary.org/obo/clo.owl
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: EDAM OWL release
     format: owl
     id: edam.owl
@@ -69493,7 +69435,7 @@ resources:
     product_url: http://edamontology.org/EDAM.owl
     secondary_source:
     - edam
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: EDAM TSV export
     format: tsv
     id: edam.tsv
@@ -69506,7 +69448,7 @@ resources:
     product_url: https://edamontology.org/EDAM.tsv
     secondary_source:
     - edam
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: EDAM CSV export
     format: csv
     id: edam.csv
@@ -69519,7 +69461,7 @@ resources:
     product_url: https://edamontology.org/EDAM.csv
     secondary_source:
     - edam
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: OWL release of Monochrom Ontology
     format: owl
     id: chr.model.owl
@@ -69671,7 +69613,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -69717,7 +69659,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -69957,7 +69899,7 @@ resources:
   - This is an automatically generated stub page. Please replace with accurate information
     about this resource.
 - activity_status: active
-  category: DataModel
+  category: Ontology
   contacts:
   - category: Organization
     contact_details:
@@ -69991,7 +69933,7 @@ resources:
     label: SNOMED CT Affiliate License
   name: SNOMED CT
   products:
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The biannual release of the US Edition of SNOMED CT, combining content
       from both the US Extension and International releases.
     id: snomedct.us.content
@@ -69999,7 +69941,7 @@ resources:
     original_source:
     - snomedct
     product_url: https://download.nlm.nih.gov/mlb/utsauth/USExt/doc_SnomedCT-USEdition-ReleaseNotes_Current_en-US_US1000124_20250301.pdf
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The monthly release of the International Edition of SNOMED CT, the
       core release from SNOMED International, as RF2 files.
     id: snomedct.international.content
@@ -70024,7 +69966,7 @@ resources:
     original_source:
     - snomedct
     product_url: https://browser.ihtsdotools.org/
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: A frequently used subset of SNOMED CT concepts for nursing documentation
       in electronic health records. August 2017 release.
     id: snomedct.nursing
@@ -70047,7 +69989,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -70110,7 +70052,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -70194,7 +70136,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -70240,7 +70182,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -70758,7 +70700,7 @@ resources:
     name: Sequence Ontology Feature Annotation (SOFA) subset (OBO Format)
     product_file_size: 28447
     product_url: http://purl.obolibrary.org/obo/so/subsets/SOFA.obo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -70771,7 +70713,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -70811,7 +70753,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -70824,7 +70766,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -70990,7 +70932,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -71426,7 +71368,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -71489,7 +71431,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -71601,7 +71543,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -71647,7 +71589,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -71738,7 +71680,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -71801,7 +71743,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -71860,7 +71802,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -71974,7 +71916,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -72879,7 +72821,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -73635,7 +73577,7 @@ resources:
     name: Text Mining KP KGX
     product_url: https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -73661,7 +73603,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -73690,7 +73632,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -73793,7 +73735,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -73839,7 +73781,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -74117,7 +74059,7 @@ resources:
     name: to.obo
     product_file_size: 158383
     product_url: http://purl.obolibrary.org/obo/to.obo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -74130,7 +74072,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -74170,7 +74112,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -74183,7 +74125,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -74683,7 +74625,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -74712,7 +74654,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -74739,7 +74681,7 @@ resources:
     name: MechRepoNet Knowledge Graph
     original_source:
     - ctd
-    - do
+    - doid
     - go
     - chebi
     - reactome
@@ -74773,7 +74715,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -74836,7 +74778,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -74980,7 +74922,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -75013,7 +74955,7 @@ resources:
     - protcid
     secondary_source:
     - spoke
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -75026,7 +74968,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -75066,7 +75008,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -75079,7 +75021,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -75390,7 +75332,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -75453,7 +75395,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -75730,7 +75672,7 @@ resources:
     name: UNII List Download
     product_url: https://precision.fda.gov/uniisearch/archive/latest/UNIIs.zip
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 403 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
       when accessing file
@@ -75744,7 +75686,7 @@ resources:
     name: UNII Data Download
     product_url: https://precision.fda.gov/uniisearch/archive/latest/UNII_Data.zip
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 403 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
       when accessing file
@@ -75757,7 +75699,7 @@ resources:
     name: Legacy UNIIs
     product_url: https://precision.fda.gov/uniisearch/archive/latest/Legacy_UNIIs.txt
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 403 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
       when accessing file
@@ -75768,7 +75710,7 @@ resources:
     name: MechRepoNet Knowledge Graph
     original_source:
     - ctd
-    - do
+    - doid
     - go
     - chebi
     - reactome
@@ -75891,7 +75833,7 @@ resources:
     secondary_source:
     - pombase
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
       header found
@@ -75938,9 +75880,9 @@ resources:
     secondary_source:
     - oma
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -75958,7 +75900,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -76006,7 +75948,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -76069,7 +76011,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -76274,7 +76216,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -76421,7 +76363,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -76487,7 +76429,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -76550,7 +76492,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -76634,7 +76576,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -76680,7 +76622,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -76691,7 +76633,7 @@ resources:
     - ms
     - uo
     product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -76704,7 +76646,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -76744,7 +76686,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -76757,7 +76699,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -77232,7 +77174,7 @@ resources:
     name: wbls.obo
     product_file_size: 30116
     product_url: http://purl.obolibrary.org/obo/wbls.obo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -77245,7 +77187,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -77285,7 +77227,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -77298,7 +77240,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -77438,7 +77380,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -77521,7 +77463,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -77584,7 +77526,7 @@ resources:
     - uberon
     - pato
     - cl
-    - do
+    - doid
     - obi
     - obib
     - edam
@@ -77642,7 +77584,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -77671,7 +77613,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -78849,7 +78791,7 @@ resources:
     name: zfa.obo
     product_file_size: 254974
     product_url: http://purl.obolibrary.org/obo/zfa.obo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -78862,7 +78804,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -78902,7 +78844,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -78915,7 +78857,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -79019,7 +78961,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -79051,7 +78993,7 @@ resources:
     secondary_source:
     - obo-db-ingest
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error
       when accessing file
@@ -81188,7 +81130,7 @@ resources:
     name: fma.owl
     product_file_size: 66368046
     product_url: http://purl.obolibrary.org/obo/fma.owl
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OWL format
     format: owl
     id: efo.owl
@@ -81201,7 +81143,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -81241,7 +81183,7 @@ resources:
     product_url: https://www.ebi.ac.uk/efo/efo.owl
     secondary_source:
     - efo
-  - category: DataModelProduct
+  - category: OntologyProduct
     description: The latest release of EFO in OBO format
     format: obo
     id: efo.obo
@@ -81254,7 +81196,7 @@ resources:
     - clo
     - cob
     - dc
-    - do
+    - doid
     - ecto
     - efo
     - fbbt
@@ -82565,7 +82507,7 @@ resources:
     name: SemMedDB MySQL Database
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_MySQL_database.html
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 403 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
       when accessing file
@@ -82579,7 +82521,7 @@ resources:
     name: SemMedDB Citations CSV
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 403 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
       when accessing file
@@ -82593,7 +82535,7 @@ resources:
     name: SemMedDB Entity CSV
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/ENTITY.csv
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 403 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
       when accessing file
@@ -82607,7 +82549,7 @@ resources:
     name: SemMedDB Predication CSV
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/PREDICATION.csv
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 403 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
       when accessing file
@@ -82620,7 +82562,7 @@ resources:
     name: SemMedDB Sentence CSV
     product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv
     warnings:
-    - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-06_ HTTP 403 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error
       when accessing file
@@ -82967,7 +82909,7 @@ resources:
     - medline
     - mesh
     - pid
-    - do
+    - doid
     - diseases
     - drugcentral
     - go
@@ -83009,7 +82951,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -83038,7 +82980,7 @@ resources:
     - aop-db
     - bgee
     - disgenet
-    - do
+    - doid
     - drugbank
     - dsstox
     - go
@@ -83189,7 +83131,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
@@ -83235,7 +83177,7 @@ resources:
     - dgidb
     - corum
     - cancer-genome-interpreter
-    - do
+    - doid
     - bto
     - efo
     - go
