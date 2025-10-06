@@ -277,7 +277,8 @@ class OBOFoundrySync:
                     'id': product_id,
                     'name': product.get('title', product_id),
                     'description': product_description,
-                    'format': product_format
+                    'format': product_format,
+                    'category': 'OntologyProduct'  # Set category to OntologyProduct for ontology products
                 }
 
                 # Add product URL if available
@@ -305,7 +306,8 @@ class OBOFoundrySync:
                 'name': f"{title} ({default_format.upper()})",
                 'description': f"{title} in {default_format.upper()} format",
                 'product_url': obo_ontology['ontology_purl'],
-                'format': default_format
+                'format': default_format,
+                'category': 'OntologyProduct'  # Set category to OntologyProduct for ontology products
             })
 
         # Get domain/categories and map to valid DomainEnum values
@@ -343,7 +345,7 @@ class OBOFoundrySync:
             'publications': publications,
             'collection': ['obo-foundry'],  # Add to OBO Foundry collection
             'layout': 'resource_detail',
-            'category': 'DataModel'  # Enhancement 3: Set category to DataModel for ontologies
+            'category': 'Ontology'  # Set category to Ontology for OBO Foundry ontologies
         }
 
         # Add tags if available
