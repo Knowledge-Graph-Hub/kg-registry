@@ -391,7 +391,13 @@ classes:
 
   DataModelProduct:
     description: >-
-      A product that is a data model, such as an ontology or schema.
+      A product that provides the rules of a data model.
+    is_a: Product
+
+  OntologyProduct:
+    description: >-
+      A product that is an ontology, a formal representation of
+      a set of concepts within a domain and the relationships between those concepts.
     is_a: Product
 
   MappingProduct:
