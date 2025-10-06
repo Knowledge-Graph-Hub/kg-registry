@@ -12,31 +12,30 @@
         <span class="ms-0" style="text-decoration: underline dotted; cursor: help;" title="Resource activity status is not 'active' (e.g., inactive/orphaned/unresponsive)">⏸ status</span>
     </span>
 </div>
-<div class="d-flex flex-row mt-2">
-    <div class="pe-1 pb-1 filter-column">
+<div class="mt-2">
+    <!-- Filter dropdowns positioned above the table -->
+    <div class="d-flex flex-row gap-3 mb-3">
         <div>
-            <div>
-                <label for="dd-domains" style="font-size:x-small">Knowledge Graph Domains</label>
-                <select id="dd-domains" class="w-100 form-select-sm">
-                    <option selected value="">All Domains</option>
-                </select>
-            </div>
-            <div>
-                <label for="dd-resourcetypes" style="font-size:x-small">Resource Types</label>
-                <select id="dd-resourcetypes" class="w-100 form-select-sm">
-                    <option selected value="">All Resource Types</option>
-                </select>
-            </div>
-            <div>
-                <label for="dd-collections" style="font-size:x-small">Collections</label>
-                <select id="dd-collections" class="w-100 form-select-sm">
-                    <option selected value="">All Collections</option>
-                </select>
-            </div>
+            <label for="dd-domains" style="font-size:x-small">Knowledge Graph Domains</label>
+            <select id="dd-domains" class="form-select form-select-sm">
+                <option selected value="">All Domains</option>
+            </select>
         </div>
-        <!-- Removed Group By Domain option for a simplified, flat list view -->
+        <div>
+            <label for="dd-resourcetypes" style="font-size:x-small">Resource Types</label>
+            <select id="dd-resourcetypes" class="form-select form-select-sm">
+                <option selected value="">All Resource Types</option>
+            </select>
+        </div>
+        <div>
+            <label for="dd-collections" style="font-size:x-small">Collections</label>
+            <select id="dd-collections" class="form-select form-select-sm">
+                <option selected value="">All Collections</option>
+            </select>
+        </div>
     </div>
-    <div class="search-result-wrapper ms-3 mt-2">
+    <!-- Search and table -->
+    <div class="search-result-wrapper">
         <input
                 type="text"
                 class="form-control"
