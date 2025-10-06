@@ -218,8 +218,19 @@ classes:
 
   DataModel:
     description: >-
-      A data model, such as an ontology or schema.
+      A data model is a formal representation of
+      concepts and relationships within a specific domain.
+      It defines the structure and organization of data,
+      including entities, attributes, and relationships.
       May be used in construction of a knowledge graph.
+    is_a: Resource
+
+  Ontology:
+    description: >-
+      An ontology is a formal representation of a set of concepts
+      within a domain and the relationships between those concepts.
+      It is used to reason about the properties of that domain
+      and may be used in construction of a knowledge graph.
     is_a: Resource
 
   Aggregator:
