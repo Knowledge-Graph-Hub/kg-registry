@@ -37,6 +37,8 @@ jQuery(document).ready(function () {
     const $ddDomains = $("#dd-domains");
     const $ddResourceTypes = $("#dd-resourcetypes");
     const $ddCollections = $("#dd-collections");
+    const $ddActivity = $("#dd-activity");
+    const $ddEvaluation = $("#dd-evaluation");
     const $resourceCount = $("#resource-count");
 
     // Update resource count display
@@ -196,10 +198,10 @@ jQuery(document).ready(function () {
         const license_box = createLicenseBox(item);
 
         // Get the icon for the category
-    const iconName = categoryIcons[category] || 'box';
+        const iconName = categoryIcons[category] || 'box';
 
-    // Warning badges suppressed on main listing (warnings still appear on detail pages)
-    const warningBadge = '';
+        // Warning badges suppressed on main listing (warnings still appear on detail pages)
+        const warningBadge = '';
 
         // Build status badge for non-active resources
         let statusBadge = '';
@@ -379,7 +381,7 @@ jQuery(document).ready(function () {
         // Update the count with filtered data length
         updateResourceCount(processedData.length, window.totalResourceCount || processedData.length);
 
-    let table = '';
+        let table = '';
 
         // Process in chunks for large datasets (improves responsiveness)
         const CHUNK_SIZE = 50;
@@ -509,12 +511,14 @@ jQuery(document).ready(function () {
         const selectedDomain = $ddDomains.children("option:selected").val();
         const selectedResourceType = $ddResourceTypes.children("option:selected").val();
         const selectedCollection = $ddCollections.children("option:selected").val();
+        const selectedActivity = $ddActivity.children("option:selected").val();
+        const selectedEvaluation = $ddEvaluation.children("option:selected").val();
 
         // Check for empty data to avoid errors
         if (!data || !data.resources) return;
 
-    // Store total count for reference in updating resource count
-    window.totalResourceCount = data.resources.length;
+        // Store total count for reference in updating resource count
+        window.totalResourceCount = data.resources.length;
 
         // Filter in steps for better performance
         let filteredData = data.resources.filter(x => x.category !== undefined);
@@ -531,11 +535,11 @@ jQuery(document).ready(function () {
             filteredData = filteredData.filter(x => x.category && x.category.includes(selectedResourceType));
         }
 
-    if (selectedDomain) {
+        if (selectedDomain) {
             filteredData = filteredData.filter(x => {
-        const domains = Array.isArray(x.domains) ? x.domains : (Array.isArray(x.domain) ? x.domain : (x.domains || x.domain ? [x.domains || x.domain] : []));
-        const sel = selectedDomain.toLowerCase();
-        return domains.some(d => (d || '').toLowerCase() === sel);
+                const domains = Array.isArray(x.domains) ? x.domains : (Array.isArray(x.domain) ? x.domain : (x.domains || x.domain ? [x.domains || x.domain] : []));
+                const sel = selectedDomain.toLowerCase();
+                return domains.some(d => (d || '').toLowerCase() === sel);
             });
 
             // Ensure uniqueness when domain filter is active (avoid duplicates across multiple domains)
@@ -557,11 +561,32 @@ jQuery(document).ready(function () {
             });
         }
 
+        // Apply activity status filter
+        if (selectedActivity) {
+            filteredData = filteredData.filter(x => {
+                const activityStatus = (x.activity_status || 'active').toLowerCase();
+                return activityStatus === selectedActivity.toLowerCase();
+            });
+        }
+
+        // Apply evaluation filter
+        if (selectedEvaluation) {
+            filteredData = filteredData.filter(x => {
+                const hasEvaluation = x.evaluation_page !== undefined && x.evaluation_page !== null;
+                if (selectedEvaluation === 'yes') {
+                    return hasEvaluation;
+                } else if (selectedEvaluation === 'no') {
+                    return !hasEvaluation;
+                }
+                return true;
+            });
+        }
+
         // Apply search filter
         filteredData = Search($searchVal, filteredData);
 
-    // Always render a flat list (no group-by)
-    renderTable(filteredData);
+        // Always render a flat list (no group-by)
+        renderTable(filteredData);
     }
 
     /**
@@ -645,7 +670,7 @@ jQuery(document).ready(function () {
         .then((data) => {
             // Show table container immediately
             $tableMain.css('display', 'block');
-            
+
             // Store total count and update display
             window.totalResourceCount = data.resources.length;
             updateResourceCount(data.resources.length, data.resources.length);
@@ -668,8 +693,8 @@ jQuery(document).ready(function () {
                         return ["Unknown"];
                     })
             )]
-            // Remove 'stub' (case-insensitive)
-            .filter(d => (d || '').toLowerCase() !== 'stub');
+                // Remove 'stub' (case-insensitive)
+                .filter(d => (d || '').toLowerCase() !== 'stub');
             domains.sort();
 
             // Extract resource types (fix for duplication issue)
@@ -713,6 +738,8 @@ jQuery(document).ready(function () {
             $ddDomains.on("change", filterHandler);
             $ddResourceTypes.on("change", filterHandler);
             $ddCollections.on("change", filterHandler);
+            $ddActivity.on("change", filterHandler);
+            $ddEvaluation.on("change", filterHandler);
             $searchVal.on("keyup", filterHandler);
 
             // Create observer for table sorting
