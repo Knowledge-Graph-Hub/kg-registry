@@ -877,6 +877,7 @@ slots:
     - Product
     - GraphProduct
     - DataModelProduct
+    - OntologyProduct
     - MappingProduct
     - ProcessProduct
     - GraphicalInterface
@@ -906,6 +907,7 @@ slots:
     - Product
     - GraphProduct
     - DataModelProduct
+    - OntologyProduct
     - MappingProduct
     - ProcessProduct
     - GraphicalInterface
@@ -956,6 +958,7 @@ slots:
     - Product
     - GraphProduct
     - DataModelProduct
+    - OntologyProduct
     - MappingProduct
     - ProcessProduct
     - GraphicalInterface
@@ -986,6 +989,7 @@ slots:
     - Product
     - GraphProduct
     - DataModelProduct
+    - OntologyProduct
     - MappingProduct
     - ProcessProduct
     - GraphicalInterface
@@ -1011,6 +1015,7 @@ slots:
     - Product
     - GraphProduct
     - DataModelProduct
+    - OntologyProduct
     - MappingProduct
     - ProcessProduct
     - GraphicalInterface
@@ -1037,6 +1042,7 @@ slots:
     - Product
     - GraphProduct
     - DataModelProduct
+    - OntologyProduct
     - MappingProduct
     - ProcessProduct
     - GraphicalInterface
@@ -1062,6 +1068,7 @@ slots:
     - Product
     - GraphProduct
     - DataModelProduct
+    - OntologyProduct
     - MappingProduct
     - ProcessProduct
     - GraphicalInterface
@@ -1105,6 +1112,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -1136,6 +1144,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -1166,6 +1175,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -1196,6 +1206,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -1226,6 +1237,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -1253,6 +1265,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -1280,6 +1293,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -1339,6 +1353,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -1688,6 +1703,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -1719,6 +1735,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -1749,6 +1766,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -1779,6 +1797,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -1809,6 +1828,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -1837,6 +1857,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -1864,6 +1885,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -2243,6 +2265,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -2274,6 +2297,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -2304,6 +2328,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -2334,6 +2359,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -2364,6 +2390,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -2392,6 +2419,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -2419,6 +2447,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -2744,6 +2773,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -2775,6 +2805,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -2805,6 +2836,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -2835,6 +2867,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -2865,6 +2898,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -2893,6 +2927,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -2920,6 +2955,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -3248,6 +3284,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -3279,6 +3316,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -3309,6 +3347,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -3339,6 +3378,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -3369,6 +3409,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -3397,6 +3438,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -3424,6 +3466,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -3752,6 +3795,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -3783,6 +3827,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -3813,6 +3858,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -3843,6 +3889,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -3873,6 +3920,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -3901,6 +3949,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -3928,6 +3977,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4255,6 +4305,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4286,6 +4337,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4316,6 +4368,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4346,6 +4399,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4376,6 +4430,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4404,6 +4459,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4431,6 +4487,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4464,6 +4521,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4487,6 +4545,7 @@ classes:
         - Usage
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4504,6 +4563,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4525,6 +4585,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4545,6 +4606,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4562,6 +4624,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4578,6 +4641,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4600,6 +4664,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4622,6 +4687,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4639,6 +4705,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4660,6 +4727,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4682,6 +4750,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4704,6 +4773,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4726,6 +4796,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4742,6 +4813,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4760,6 +4832,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4776,6 +4849,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4794,6 +4868,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4812,6 +4887,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4837,6 +4913,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4868,6 +4945,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4898,6 +4976,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4928,6 +5007,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4958,6 +5038,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -4985,6 +5066,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5012,6 +5094,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5081,6 +5164,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5104,6 +5188,7 @@ classes:
         - Usage
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5121,6 +5206,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5142,6 +5228,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5162,6 +5249,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5179,6 +5267,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5195,6 +5284,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5217,6 +5307,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5239,6 +5330,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5256,6 +5348,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5277,6 +5370,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5299,6 +5393,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5321,6 +5416,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5343,6 +5439,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5359,6 +5456,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5377,6 +5475,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5393,6 +5492,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5411,6 +5511,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5429,6 +5530,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5454,6 +5556,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5485,6 +5588,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5515,6 +5619,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5545,6 +5650,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5575,6 +5681,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5602,6 +5709,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5629,6 +5737,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5640,7 +5749,7 @@ classes:
         range: datetime
   DataModelProduct:
     name: DataModelProduct
-    description: A product that is a data model, such as an ontology or schema.
+    description: A product that provides the rules of a data model.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     is_a: Product
     attributes:
@@ -5660,6 +5769,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5683,6 +5793,7 @@ classes:
         - Usage
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5700,6 +5811,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5721,6 +5833,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5741,6 +5854,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5758,6 +5872,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5774,6 +5889,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5796,6 +5912,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5818,6 +5935,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5835,6 +5953,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5856,6 +5975,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5878,6 +5998,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5900,6 +6021,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5922,6 +6044,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5938,6 +6061,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5956,6 +6080,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5972,6 +6097,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -5990,6 +6116,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6008,6 +6135,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6033,6 +6161,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6064,6 +6193,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6094,6 +6224,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6124,6 +6255,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6154,6 +6286,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6181,6 +6314,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6208,6 +6342,613 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        - DocumentationProduct
+        - FundingSource
+        - License
+        - Publication
+        range: datetime
+  OntologyProduct:
+    name: OntologyProduct
+    description: A product that is an ontology, a formal representation of a set of
+      concepts within a domain and the relationships between those concepts.
+    from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+    is_a: Product
+    attributes:
+      name:
+        name: name
+        description: The human-readable name of the product.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: name
+        owner: OntologyProduct
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: string
+        required: true
+      description:
+        name: description
+        description: A description of the product.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: description
+        owner: OntologyProduct
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - Usage
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: string
+      original_source:
+        name: original_source
+        description: The original source(s) of the product, referred to  by the identifier
+          of each resource. This may be the parent resource or another resource. This
+          may also be a specific product.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: original_source
+        owner: OntologyProduct
+        domain_of:
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: NamedThing
+        multivalued: true
+        any_of:
+        - range: Resource
+        - range: Product
+      secondary_source:
+        name: secondary_source
+        description: The source(s) of the product, other than its original source,
+          referred to by the identifier of each resource. This may be an Aggregator
+          or another resource. This may also be a specific product.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: secondary_source
+        owner: OntologyProduct
+        domain_of:
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: NamedThing
+        multivalued: true
+        any_of:
+        - range: Resource
+        - range: Product
+      product_url:
+        name: product_url
+        description: The URL of the product. This may be a link to download a specific
+          file, a base URL to an API, or a link to a graphical interface.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: product_url
+        owner: OntologyProduct
+        domain_of:
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: uriorcurie
+      product_file_size:
+        name: product_file_size
+        description: The size of the product file, in bytes. The build process will
+          attempt to determine this based on the file header and populate the metadata
+          where possible.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: product_file_size
+        owner: OntologyProduct
+        domain_of:
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: integer
+      produced_by:
+        name: produced_by
+        description: The process(es) that produced the product, referred to by the
+          identifier of each process.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: produced_by
+        owner: OntologyProduct
+        domain_of:
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: ProcessProduct
+        multivalued: true
+      repository:
+        name: repository
+        description: A main version control repository for the product.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: repository
+        owner: OntologyProduct
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: uriorcurie
+      license:
+        name: license
+        description: The license of the product. This may differ from that of the
+          parent resource.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: license
+        owner: OntologyProduct
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: License
+        inlined: true
+      compression:
+        name: compression
+        description: The type of compression used with the product. If this is not
+          specified, it is assumed to be uncompressed.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: compression
+        owner: OntologyProduct
+        domain_of:
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: CompressionEnum
+      contacts:
+        name: contacts
+        description: The contact points for the product. May be an individual or organization.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: contacts
+        owner: OntologyProduct
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: Contact
+        multivalued: true
+      curators:
+        name: curators
+        description: The curator(s) of the product. May be an individual or organization.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: curators
+        owner: OntologyProduct
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: Contact
+        multivalued: true
+      tags:
+        name: tags
+        description: Tags associated with the product.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: tags
+        owner: OntologyProduct
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: TagEnum
+        multivalued: true
+      infores_id:
+        name: infores_id
+        description: The Infores ID of the product. Do not include the 'infores' prefix.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: infores_id
+        owner: OntologyProduct
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: string
+      compatibility:
+        name: compatibility
+        description: A list of standards that the product conforms to. This is not
+          the same as its serialization/format.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: compatibility
+        owner: OntologyProduct
+        domain_of:
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: StandardCompatibility
+        multivalued: true
+        inlined: true
+      format:
+        name: format
+        description: The format or serialization of the product. Generally corresponds
+          to the file extension.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: format
+        owner: OntologyProduct
+        domain_of:
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: FormatEnum
+      dump_format:
+        name: dump_format
+        description: The format of a dump of the product as a file. Note the product
+          may also be compressed.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: dump_format
+        owner: OntologyProduct
+        domain_of:
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: DumpFormatEnum
+      versions:
+        name: versions
+        description: A list of names of versions of the product.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        exact_mappings:
+        - schema:version
+        - dcterms:hasVersion
+        alias: versions
+        owner: OntologyProduct
+        domain_of:
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: string
+        multivalued: true
+      latest_version:
+        name: latest_version
+        description: The latest version of the product, or the most recent version
+          curated in the registry. If the product is available at a permanent link,
+          this may be something like "latest".
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: latest_version
+        owner: OntologyProduct
+        domain_of:
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        range: string
+      id:
+        name: id
+        description: The identifier of an entity. This is used to identify it within
+          the registry.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        slot_uri: dcterms:identifier
+        identifier: true
+        alias: id
+        owner: OntologyProduct
+        domain_of:
+        - NamedThing
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        - DocumentationProduct
+        - FundingSource
+        - License
+        - Publication
+        range: string
+        required: true
+      category:
+        name: category
+        description: The category of the entity. This should be identical to its class
+          name.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        is_a: type
+        domain: NamedThing
+        alias: category
+        owner: OntologyProduct
+        domain_of:
+        - NamedThing
+        - Contact
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        - DocumentationProduct
+        - Individual
+        - Organization
+        - FundingSource
+        - License
+        - Publication
+        range: category_type
+      warnings:
+        name: warnings
+        description: A list of warnings about an item to be displayed in the interface.
+          These should primarily warn users about unavailable resources, broken links,
+          and other obstacles to using a resource.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: warnings
+        owner: OntologyProduct
+        domain_of:
+        - NamedThing
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        - DocumentationProduct
+        - FundingSource
+        - License
+        - Publication
+        range: string
+        multivalued: true
+        inlined: true
+        inlined_as_list: true
+      collection:
+        name: collection
+        description: A collection of entries in the registry. This is used to group
+          related entries together. This is multivalued to allow for multiple collections.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: collection
+        owner: OntologyProduct
+        domain_of:
+        - NamedThing
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        - DocumentationProduct
+        - FundingSource
+        - License
+        - Publication
+        range: CollectionEnum
+        multivalued: true
+      layout:
+        name: layout
+        description: The layout of the entity. This is used to determine how to display
+          the entity in the web interface. For resources, this is generally 'resource_detail'.
+          For products, this is generally 'product_detail'. If a value for this slot
+          is not specified, pages won't contain anything from their header metadata.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: layout
+        owner: OntologyProduct
+        domain_of:
+        - NamedThing
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        - DocumentationProduct
+        - FundingSource
+        - License
+        - Publication
+        range: string
+      creation_date:
+        name: creation_date
+        description: The date the entry was created. This is used to determine the
+          age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: creation_date
+        owner: OntologyProduct
+        domain_of:
+        - NamedThing
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        - DocumentationProduct
+        - FundingSource
+        - License
+        - Publication
+        range: datetime
+      last_modified_date:
+        name: last_modified_date
+        description: The date the entry was last modified. It should be in ISO 8601
+          format, e.g., 2024-02-12T00:00:00Z.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: last_modified_date
+        owner: OntologyProduct
+        domain_of:
+        - NamedThing
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6240,6 +6981,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6263,6 +7005,7 @@ classes:
         - Usage
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6280,6 +7023,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6301,6 +7045,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6321,6 +7066,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6338,6 +7084,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6354,6 +7101,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6376,6 +7124,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6398,6 +7147,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6415,6 +7165,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6436,6 +7187,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6458,6 +7210,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6480,6 +7233,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6502,6 +7256,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6518,6 +7273,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6536,6 +7292,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6552,6 +7309,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6570,6 +7328,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6588,6 +7347,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6613,6 +7373,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6644,6 +7405,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6674,6 +7436,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6704,6 +7467,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6734,6 +7498,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6761,6 +7526,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6788,6 +7554,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6819,6 +7586,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6842,6 +7610,7 @@ classes:
         - Usage
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6859,6 +7628,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6880,6 +7650,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6900,6 +7671,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6917,6 +7689,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6933,6 +7706,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6955,6 +7729,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6977,6 +7752,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -6994,6 +7770,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7015,6 +7792,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7037,6 +7815,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7059,6 +7838,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7081,6 +7861,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7097,6 +7878,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7115,6 +7897,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7131,6 +7914,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7149,6 +7933,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7167,6 +7952,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7192,6 +7978,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7223,6 +8010,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7253,6 +8041,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7283,6 +8072,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7313,6 +8103,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7340,6 +8131,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7367,6 +8159,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7399,6 +8192,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7422,6 +8216,7 @@ classes:
         - Usage
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7439,6 +8234,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7460,6 +8256,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7480,6 +8277,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7497,6 +8295,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7513,6 +8312,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7535,6 +8335,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7557,6 +8358,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7574,6 +8376,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7595,6 +8398,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7617,6 +8421,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7639,6 +8444,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7661,6 +8467,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7677,6 +8484,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7695,6 +8503,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7711,6 +8520,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7729,6 +8539,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7747,6 +8558,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7772,6 +8584,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7803,6 +8616,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7833,6 +8647,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7863,6 +8678,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7893,6 +8709,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7920,6 +8737,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -7947,6 +8765,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8007,6 +8826,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8030,6 +8850,7 @@ classes:
         - Usage
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8047,6 +8868,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8068,6 +8890,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8088,6 +8911,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8105,6 +8929,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8121,6 +8946,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8143,6 +8969,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8165,6 +8992,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8182,6 +9010,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8203,6 +9032,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8225,6 +9055,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8247,6 +9078,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8269,6 +9101,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8285,6 +9118,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8303,6 +9137,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8319,6 +9154,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8337,6 +9173,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8355,6 +9192,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8380,6 +9218,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8411,6 +9250,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8441,6 +9281,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8471,6 +9312,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8501,6 +9343,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8528,6 +9371,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8555,6 +9399,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8587,6 +9432,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8610,6 +9456,7 @@ classes:
         - Usage
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8627,6 +9474,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8648,6 +9496,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8668,6 +9517,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8685,6 +9535,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8701,6 +9552,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8723,6 +9575,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8745,6 +9598,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8762,6 +9616,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8783,6 +9638,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8805,6 +9661,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8827,6 +9684,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8849,6 +9707,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8865,6 +9724,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8883,6 +9743,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8899,6 +9760,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8917,6 +9779,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8935,6 +9798,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8960,6 +9824,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -8991,6 +9856,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9021,6 +9887,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9051,6 +9918,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9081,6 +9949,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9108,6 +9977,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9135,6 +10005,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9243,6 +10114,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9308,6 +10180,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9372,6 +10245,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9403,6 +10277,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9433,6 +10308,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9463,6 +10339,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9493,6 +10370,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9520,6 +10398,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9547,6 +10426,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9606,6 +10486,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9637,6 +10518,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9667,6 +10549,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9697,6 +10580,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9727,6 +10611,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9754,6 +10639,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9781,6 +10667,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9873,6 +10760,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9904,6 +10792,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9934,6 +10823,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9964,6 +10854,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -9994,6 +10885,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -10021,6 +10913,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -10048,6 +10941,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -10092,6 +10986,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -10167,6 +11062,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -10198,6 +11094,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -10228,6 +11125,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -10258,6 +11156,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -10288,6 +11187,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -10315,6 +11215,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface
@@ -10342,6 +11243,7 @@ classes:
         - Product
         - GraphProduct
         - DataModelProduct
+        - OntologyProduct
         - MappingProduct
         - ProcessProduct
         - GraphicalInterface

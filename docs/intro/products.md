@@ -24,7 +24,11 @@ Each Product may have a more specific type.
 
 ### DataModelProduct
 
-These Products are conceptual models, often defining hierarchical relationships. This includes ontologies.
+These Products are conceptual data models or schemas, often defining hierarchical relationships and data structures.
+
+### OntologyProduct
+
+These Products are formal ontologies - structured representations of concepts within a domain and the relationships between those concepts. Ontologies are used for reasoning about the properties of a domain and may be used in the construction of knowledge graphs.
 
 ### GraphicalInterface
 

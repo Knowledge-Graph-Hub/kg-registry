@@ -27,6 +27,7 @@ jQuery(document).ready(function () {
         "MappingProduct": "map",
         "ProcessProduct": "gear",
         "DataModelProduct": "diagram-3",
+        "OntologyProduct": "diagram-2",
         "GraphicalInterface": "window",
         "ProgrammingInterface": "code-square"
     };

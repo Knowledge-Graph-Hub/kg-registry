@@ -50,6 +50,7 @@ const config = {
     Product: "#8c564b",
     GraphProduct: "#e377c2",
     DataModelProduct: "#7f7f7f",
+    OntologyProduct: "#ce93d8",
     MappingProduct: "#bcbd22",
     ProcessProduct: "#17becf",
     GraphicalInterface: "#aec7e8",
