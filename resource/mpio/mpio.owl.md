@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Minimum PDDI Information Ontology in OWL format
 format: owl
 id: mpio.owl

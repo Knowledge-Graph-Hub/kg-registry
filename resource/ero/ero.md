@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -22,17 +22,18 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: eagle-i resource ontology
 products:
-- description: eagle-i resource ontology in OWL format
+- category: OntologyProduct
+  description: eagle-i resource ontology in OWL format
   format: owl
   id: ero.owl
   name: ero.owl
   product_url: http://purl.obolibrary.org/obo/ero.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-10-06: Error connecting
     to URL: HTTPSConnectionPool(host=''www.eagle-i.net'', port=443): Max retries exceeded
     with url: /ero/latest/ero.owl (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
-    expired (_ssl.c:1017)'')))'
+    expired (_ssl.c:1000)'')))'
 ---
 ## Description
 

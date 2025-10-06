@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Gender, Sex, and Sexual Orientation (GSSO) ontology in OWL format
 format: owl
 id: gsso.owl

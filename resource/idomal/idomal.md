@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -22,13 +22,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Malaria Ontology
 products:
-- description: Malaria Ontology in OWL format
+- category: OntologyProduct
+  description: Malaria Ontology in OWL format
   format: owl
   id: idomal.owl
   name: idomal.owl
   product_file_size: 309674
   product_url: http://purl.obolibrary.org/obo/idomal.owl
-- description: Malaria Ontology in OBO format
+- category: OntologyProduct
+  description: Malaria Ontology in OBO format
   format: obo
   id: idomal.obo
   name: idomal.obo

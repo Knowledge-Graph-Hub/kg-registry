@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Homology Ontology in OWL format
 format: owl
 id: hom.owl

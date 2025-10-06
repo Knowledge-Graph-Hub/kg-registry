@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: ENVO in OBO Format. May be lossy
 format: obo
 id: envo.obo

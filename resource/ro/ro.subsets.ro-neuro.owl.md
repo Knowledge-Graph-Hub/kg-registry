@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: For use in neuroscience
 format: owl
 id: ro.subsets.ro-neuro.owl

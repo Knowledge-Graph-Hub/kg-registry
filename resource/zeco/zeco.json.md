@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Zebrafish Experimental Conditions Ontology in JSON format
 format: json
 id: zeco.json

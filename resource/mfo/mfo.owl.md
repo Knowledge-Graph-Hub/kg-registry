@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Medaka fish anatomy and development in OWL format
 format: owl
 id: mfo.owl

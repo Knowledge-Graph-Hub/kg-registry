@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -27,12 +27,13 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology for Modeling and Representation of Social Entities
 products:
-- description: Ontology for Modeling and Representation of Social Entities in OWL
+- category: OntologyProduct
+  description: Ontology for Modeling and Representation of Social Entities in OWL
     format
   format: owl
   id: omrse.owl
   name: omrse.owl
-  product_file_size: 169148
+  product_file_size: 169863
   product_url: http://purl.obolibrary.org/obo/omrse.owl
 - category: DataModelProduct
   description: The Basic subset of the Plant Trait Ontology in OBO format

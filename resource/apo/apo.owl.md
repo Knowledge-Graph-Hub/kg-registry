@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ascomycete phenotype ontology in OWL format
 format: owl
 id: apo.owl

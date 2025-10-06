@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Contains all AgrO terms and links to other relevant ontologies.
 format: owl
 id: agro.owl

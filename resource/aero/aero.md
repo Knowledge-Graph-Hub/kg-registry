@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,7 +24,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Adverse Event Reporting Ontology
 products:
-- description: Adverse Event Reporting Ontology in OWL format
+- category: OntologyProduct
+  description: Adverse Event Reporting Ontology in OWL format
   format: owl
   id: aero.owl
   name: aero.owl

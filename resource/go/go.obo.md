@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Equivalent to go.owl, in obo format
 format: obo
 id: go.obo

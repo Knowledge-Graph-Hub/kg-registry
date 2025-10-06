@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Rat Strain Ontology in OBO format
 format: obo
 id: rs.obo

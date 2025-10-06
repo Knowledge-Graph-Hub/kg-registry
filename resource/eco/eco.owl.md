@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Evidence and Conclusion Ontology in OWL format
 format: owl
 id: eco.owl

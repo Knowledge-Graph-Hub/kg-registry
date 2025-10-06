@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Cephalopod Ontology
 products:
-- description: main version
+- category: OntologyProduct
+  description: main version
   format: owl
   id: ceph.owl
   name: main version
   product_file_size: 48794
   product_url: http://purl.obolibrary.org/obo/ceph.owl
-- description: oboformat edition
+- category: OntologyProduct
+  description: oboformat edition
   format: obo
   id: ceph.obo
   name: oboformat edition

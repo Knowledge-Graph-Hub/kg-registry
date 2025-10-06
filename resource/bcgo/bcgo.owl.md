@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Beta Cell Genomics Ontology in OWL format
 format: owl
 id: bcgo.owl

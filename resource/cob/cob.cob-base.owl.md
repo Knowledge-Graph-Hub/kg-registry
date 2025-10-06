@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: base module for COB
 format: owl
 id: cob.cob-base.owl

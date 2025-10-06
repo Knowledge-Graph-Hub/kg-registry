@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: BRENDA tissue / enzyme source in OBO format
 format: obo
 id: bto.obo

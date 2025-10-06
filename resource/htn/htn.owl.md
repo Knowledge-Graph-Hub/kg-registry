@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: HTN
 format: owl
 id: htn.owl

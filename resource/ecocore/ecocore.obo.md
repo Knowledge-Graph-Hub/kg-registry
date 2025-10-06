@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: An ontology of core ecological entities in OBO format
 format: obo
 id: ecocore.obo

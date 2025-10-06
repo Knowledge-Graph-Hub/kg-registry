@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Health Surveillance Ontology in OWL format
 format: owl
 id: hso.owl

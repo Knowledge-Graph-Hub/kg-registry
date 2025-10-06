@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Tick Anatomy Ontology in OBO format
 format: obo
 id: tads.obo

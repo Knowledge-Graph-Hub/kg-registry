@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Spider Ontology in OWL format
 format: owl
 id: spd.owl

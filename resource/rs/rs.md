@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Rat Strain Ontology
 products:
-- description: Rat Strain Ontology in OWL format
+- category: OntologyProduct
+  description: Rat Strain Ontology in OWL format
   format: owl
   id: rs.owl
   name: rs.owl
   product_file_size: 5488034
   product_url: http://purl.obolibrary.org/obo/rs.owl
-- description: Rat Strain Ontology in OBO format
+- category: OntologyProduct
+  description: Rat Strain Ontology in OBO format
   format: obo
   id: rs.obo
   name: rs.obo

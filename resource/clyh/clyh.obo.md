@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Clytia hemisphaerica Development and Anatomy Ontology in OBO format
 format: obo
 id: clyh.obo

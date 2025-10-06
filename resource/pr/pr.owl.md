@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: PRO after reasoning has been applied, OWL format. Add '.gz' for compressed.
 format: owl
 id: pr.owl

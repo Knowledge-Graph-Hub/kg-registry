@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Performance Summary Display Ontology in OWL format
 format: owl
 id: psdo.owl

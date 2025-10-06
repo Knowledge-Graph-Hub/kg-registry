@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Dictyostelium discoideum phenotype ontology
 products:
-- description: Dictyostelium discoideum phenotype ontology in OWL format
+- category: OntologyProduct
+  description: Dictyostelium discoideum phenotype ontology in OWL format
   format: owl
   id: ddpheno.owl
   name: ddpheno.owl
   product_file_size: 72832
   product_url: http://purl.obolibrary.org/obo/ddpheno.owl
-- description: Dictyostelium discoideum phenotype ontology in OBO format
+- category: OntologyProduct
+  description: Dictyostelium discoideum phenotype ontology in OBO format
   format: obo
   id: ddpheno.obo
   name: ddpheno.obo

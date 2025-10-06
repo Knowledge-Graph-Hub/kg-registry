@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: OBOGraphs JSON version of Main release
 format: json
 id: ncbitaxon.json

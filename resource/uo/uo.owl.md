@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Units of measurement ontology in OWL format
 format: owl
 id: uo.owl

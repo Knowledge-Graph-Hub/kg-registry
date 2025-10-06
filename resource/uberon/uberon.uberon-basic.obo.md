@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Uberon edition that excludes external ontologies and most relations
 format: obo
 id: uberon.uberon-basic.obo

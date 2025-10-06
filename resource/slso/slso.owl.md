@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Space Life Sciences Ontology in OWL format
 format: owl
 id: slso.owl

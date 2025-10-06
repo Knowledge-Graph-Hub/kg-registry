@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Plant Environment Ontology in OBO format
 format: obo
 id: eo.obo

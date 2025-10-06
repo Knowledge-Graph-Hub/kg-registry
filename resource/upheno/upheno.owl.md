@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: uPheno 1 is no longer actively maintained, please start using uPheno
   2 (see below).
 format: owl

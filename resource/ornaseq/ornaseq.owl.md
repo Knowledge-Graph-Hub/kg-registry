@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontology of RNA Sequencing in OWL format
 format: owl
 id: ornaseq.owl

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -29,28 +29,31 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: African Population Ontology
 products:
-- description: The main ontology in OWL. Contains all MP terms and links to other
+- category: OntologyProduct
+  description: The main ontology in OWL. Contains all MP terms and links to other
     OBO ontologies
   format: owl
   id: afpo.owl
   name: AfPO (OWL edition)
   product_file_size: 96804
   product_url: http://purl.obolibrary.org/obo/afpo.owl
-- description: A direct translation of the AfPO (OWL edition) into OBO format
+- category: OntologyProduct
+  description: A direct translation of the AfPO (OWL edition) into OBO format
   format: obo
   id: afpo.obo
   name: AfPO (OBO edition)
   product_url: http://purl.obolibrary.org/obo/afpo.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
-- description: A direct translation of the AfPO (OWL edition) into OBOGraph JSON format
+- category: OntologyProduct
+  description: A direct translation of the AfPO (OWL edition) into OBOGraph JSON format
   format: json
   id: afpo.json
   name: AfPO (obographs JSON edition)
   product_url: http://purl.obolibrary.org/obo/afpo.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 repository: https://github.com/h3abionet/afpo
 ---

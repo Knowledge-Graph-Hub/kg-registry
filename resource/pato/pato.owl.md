@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Phenotype And Trait Ontology in OWL format
 format: owl
 id: pato.owl

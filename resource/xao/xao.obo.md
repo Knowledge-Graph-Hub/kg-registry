@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Xenopus Anatomy Ontology in OBO format
 format: obo
 id: xao.obo

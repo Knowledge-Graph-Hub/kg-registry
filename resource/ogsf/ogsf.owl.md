@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontology of Genetic Susceptibility Factor in OWL format
 format: owl
 id: ogsf.owl

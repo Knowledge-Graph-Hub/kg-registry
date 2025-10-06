@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Lepidoptera Anatomy Ontology in OWL format
 format: owl
 id: lepao.owl

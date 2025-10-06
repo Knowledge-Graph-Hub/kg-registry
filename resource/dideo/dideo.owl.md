@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Drug-drug Interaction and Drug-drug Interaction Evidence Ontology in
   OWL format
 format: owl

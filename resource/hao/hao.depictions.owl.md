@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Hymenoptera Anatomy Ontology in OWL format
 format: owl
 id: hao.depictions.owl

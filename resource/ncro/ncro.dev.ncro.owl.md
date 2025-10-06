@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: NCRO development version
 format: owl
 id: ncro.dev.ncro.owl

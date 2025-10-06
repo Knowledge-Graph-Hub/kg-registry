@@ -144,7 +144,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.

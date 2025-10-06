@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Coleoptera Anatomy Ontology (COLAO) in OBO format
 format: obo
 id: colao.obo

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,7 +25,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: NOMEN - A nomenclatural ontology for biological names
 products:
-- description: core ontology
+- category: OntologyProduct
+  description: core ontology
   format: owl
   id: nomen.owl
   name: NOMEN

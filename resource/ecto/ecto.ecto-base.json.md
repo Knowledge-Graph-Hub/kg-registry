@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Environmental conditions, treatments and exposures ontology in JSON format
 format: json
 id: ecto.ecto-base.json

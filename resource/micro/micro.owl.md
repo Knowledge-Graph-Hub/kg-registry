@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontology of Prokaryotic Phenotypic and Metabolic Characters in OWL format
 format: owl
 id: micro.owl

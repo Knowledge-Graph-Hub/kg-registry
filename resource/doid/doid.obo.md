@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Disease Ontology, OBO format. This file omits the equivalent axioms.
 format: obo
 id: doid.obo

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: FuTRES Ontology of Vertebrate Traits in OWL format
 format: owl
 id: fovt.fovt-base.owl

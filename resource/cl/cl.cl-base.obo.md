@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: complete CL but with no imports or external axioms
 format: obo
 id: cl.cl-base.obo

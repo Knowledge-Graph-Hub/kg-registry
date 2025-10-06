@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Vertebrate Taxonomy Ontology
 products:
-- description: Vertebrate Taxonomy Ontology in OWL format
+- category: OntologyProduct
+  description: Vertebrate Taxonomy Ontology in OWL format
   format: owl
   id: vto.owl
   name: vto.owl
   product_file_size: 152582746
   product_url: http://purl.obolibrary.org/obo/vto.owl
-- description: Vertebrate Taxonomy Ontology in OBO format
+- category: OntologyProduct
+  description: Vertebrate Taxonomy Ontology in OBO format
   format: obo
   id: vto.obo
   name: vto.obo

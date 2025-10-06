@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Molecular Process Ontology
 format: owl
 id: mop.owl

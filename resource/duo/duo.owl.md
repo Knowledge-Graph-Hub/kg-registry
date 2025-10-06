@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Data Use Ontology in OWL format
 format: owl
 id: duo.owl

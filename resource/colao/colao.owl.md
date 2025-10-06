@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Coleoptera Anatomy Ontology (COLAO) in OWL format
 format: owl
 id: colao.owl

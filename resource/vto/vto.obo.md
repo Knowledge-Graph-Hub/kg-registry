@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Vertebrate Taxonomy Ontology in OBO format
 format: obo
 id: vto.obo

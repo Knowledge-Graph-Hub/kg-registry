@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -26,7 +26,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Disease Drivers Ontology
 products:
-- description: Disease Drivers Ontology in OWL format
+- category: OntologyProduct
+  description: Disease Drivers Ontology in OWL format
   format: owl
   id: disdriv.owl
   name: disdriv.owl

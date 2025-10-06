@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: planaria-ontology in OBO format
 format: obo
 id: plana.obo

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Drosophila development in JSON format
 format: json
 id: fbdv.json

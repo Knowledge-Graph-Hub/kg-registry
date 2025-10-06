@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: terms4FAIRskills in OWL format
 format: owl
 id: t4fs.owl

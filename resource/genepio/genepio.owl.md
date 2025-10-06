@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Genomic Epidemiology Ontology in OWL format
 format: owl
 id: genepio.owl

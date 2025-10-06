@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: GENO
 format: owl
 id: geno.owl

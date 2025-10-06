@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -21,7 +21,8 @@ license:
   label: Not specified
 name: Vertebrate Skeletal Anatomy Ontology-
 products:
-- description: Vertebrate Skeletal Anatomy Ontology- in OWL format
+- category: OntologyProduct
+  description: Vertebrate Skeletal Anatomy Ontology- in OWL format
   format: owl
   id: vsao.owl
   name: vsao.owl

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy
   plus equivalent axioms to other OBO Foundry ontologies.
 format: owl

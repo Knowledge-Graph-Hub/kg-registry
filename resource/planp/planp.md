@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Planarian Phenotype Ontology
 products:
-- description: Planarian Phenotype Ontology in OWL format
+- category: OntologyProduct
+  description: Planarian Phenotype Ontology in OWL format
   format: owl
   id: planp.owl
   name: planp.owl
   product_file_size: 535526
   product_url: http://purl.obolibrary.org/obo/planp.owl
-- description: Planarian Phenotype Ontology in OBO format
+- category: OntologyProduct
+  description: Planarian Phenotype Ontology in OBO format
   format: obo
   id: planp.obo
   name: planp.obo

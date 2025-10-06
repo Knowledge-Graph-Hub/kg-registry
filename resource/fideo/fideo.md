@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,14 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Food Interactions with Drugs Evidence Ontology
 products:
-- description: Food Interactions with Drugs Evidence Ontology in OWL format
+- category: OntologyProduct
+  description: Food Interactions with Drugs Evidence Ontology in OWL format
   format: owl
   id: fideo.owl
   name: fideo.owl
   product_url: http://purl.obolibrary.org/obo/fideo.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-10-06: No Content-Length
     header found'
 repository: https://gitub.u-bordeaux.fr/erias/fideo
 ---

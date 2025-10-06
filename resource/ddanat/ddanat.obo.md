@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Dictyostelium discoideum anatomy in OBO format
 format: obo
 id: ddanat.obo

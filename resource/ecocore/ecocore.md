@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: An ontology of core ecological entities
 products:
-- description: An ontology of core ecological entities in OWL format
+- category: OntologyProduct
+  description: An ontology of core ecological entities in OWL format
   format: owl
   id: ecocore.owl
   name: ecocore.owl
   product_file_size: 1287569
   product_url: http://purl.obolibrary.org/obo/ecocore.owl
-- description: An ontology of core ecological entities in OBO format
+- category: OntologyProduct
+  description: An ontology of core ecological entities in OBO format
   format: obo
   id: ecocore.obo
   name: ecocore.obo

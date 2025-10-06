@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,7 +25,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Mental Functioning Ontology
 products:
-- description: Mental Functioning Ontology in OWL format
+- category: OntologyProduct
+  description: Mental Functioning Ontology in OWL format
   format: owl
   id: mf.owl
   name: mf.owl

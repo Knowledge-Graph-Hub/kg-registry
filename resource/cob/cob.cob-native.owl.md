@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: COB with native IDs preserved rather than rewired to OBO IDs
 format: owl
 id: cob.cob-native.owl

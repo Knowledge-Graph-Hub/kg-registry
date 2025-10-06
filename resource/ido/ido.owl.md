@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Infectious Disease Ontology in OWL format
 format: owl
 id: ido.owl

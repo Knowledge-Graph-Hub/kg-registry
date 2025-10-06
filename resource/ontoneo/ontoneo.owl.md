@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Obstetric and Neonatal Ontology in OWL format
 format: owl
 id: ontoneo.owl

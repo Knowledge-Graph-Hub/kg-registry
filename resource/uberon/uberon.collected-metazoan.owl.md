@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Uberon plus all metazoan ontologies
 format: owl
 id: uberon.collected-metazoan.owl

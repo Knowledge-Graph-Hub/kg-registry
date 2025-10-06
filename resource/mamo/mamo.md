@@ -1,6 +1,6 @@
 ---
 activity_status: orphaned
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts: []
@@ -17,7 +17,8 @@ license:
   label: Artistic License 2.0
 name: Mathematical modeling ontology
 products:
-- description: Mathematical modeling ontology in OWL format
+- category: OntologyProduct
+  description: Mathematical modeling ontology in OWL format
   format: owl
   id: mamo.owl
   name: mamo.owl

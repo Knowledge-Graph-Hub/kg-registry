@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Bilateria anatomy in OWL format
 format: owl
 id: bila.owl

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Basic Formal Ontology
 products:
-- description: Basic Formal Ontology in OWL format
+- category: OntologyProduct
+  description: Basic Formal Ontology in OWL format
   format: owl
   id: bfo.owl
   name: bfo.owl
   product_file_size: 20902
   product_url: http://purl.obolibrary.org/obo/bfo.owl
-- description: Basic Formal Ontology in OBO format
+- category: OntologyProduct
+  description: Basic Formal Ontology in OBO format
   format: obo
   id: bfo.obo
   name: bfo.obo

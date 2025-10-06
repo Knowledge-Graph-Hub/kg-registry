@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,33 +24,37 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Mammalian Phenotype Ontology
 products:
-- description: The main ontology in OWL. Contains all MP terms and links to other
+- category: OntologyProduct
+  description: The main ontology in OWL. Contains all MP terms and links to other
     OBO ontologies.
   format: owl
   id: mp.owl
   name: MP (OWL edition)
-  product_file_size: 113840871
+  product_file_size: 113847606
   product_url: http://purl.obolibrary.org/obo/mp.owl
-- description: A direct translation of the MP (OWL edition) into OBO format.
+- category: OntologyProduct
+  description: A direct translation of the MP (OWL edition) into OBO format.
   format: obo
   id: mp.obo
   name: MP (OBO edition)
   product_url: http://purl.obolibrary.org/obo/mp.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-10-06: No Content-Length
     header found'
-- description: For a description of the format see https://github.com/geneontology/obographs.
+- category: OntologyProduct
+  description: For a description of the format see https://github.com/geneontology/obographs.
   format: json
   id: mp.json
   name: MP (obographs JSON edition)
-  product_file_size: 59710082
+  product_file_size: 59720210
   product_url: http://purl.obolibrary.org/obo/mp.json
-- description: The main ontology plus axioms connecting to select external ontologies,
+- category: OntologyProduct
+  description: The main ontology plus axioms connecting to select external ontologies,
     excluding axioms from the the external ontologies themselves.
   format: owl
   id: mp.mp-base.owl
   name: MP Base Module
-  product_file_size: 49867619
+  product_file_size: 49905597
   product_url: http://purl.obolibrary.org/obo/mp/mp-base.owl
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

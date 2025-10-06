@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Tick Anatomy Ontology in OWL format
 format: owl
 id: tads.owl

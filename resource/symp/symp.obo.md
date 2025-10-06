@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Symptom Ontology in OBO format
 format: obo
 id: symp.obo

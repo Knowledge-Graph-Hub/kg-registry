@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Mouse adult gross anatomy
 products:
-- description: Mouse adult gross anatomy in OWL format
+- category: OntologyProduct
+  description: Mouse adult gross anatomy in OWL format
   format: owl
   id: ma.owl
   name: ma.owl
   product_file_size: 2699120
   product_url: http://purl.obolibrary.org/obo/ma.owl
-- description: Mouse adult gross anatomy in OBO format
+- category: OntologyProduct
+  description: Mouse adult gross anatomy in OBO format
   format: obo
   id: ma.obo
   name: ma.obo

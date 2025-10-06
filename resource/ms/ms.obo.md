@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Mass spectrometry ontology in OBO format
 format: obo
 id: ms.obo

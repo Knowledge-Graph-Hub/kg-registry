@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -27,25 +27,29 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: FuTRES Ontology of Vertebrate Traits
 products:
-- description: FuTRES Ontology of Vertebrate Traits in OWL format
+- category: OntologyProduct
+  description: FuTRES Ontology of Vertebrate Traits in OWL format
   format: owl
   id: fovt.owl
   name: fovt.owl
   product_file_size: 2417022
   product_url: http://purl.obolibrary.org/obo/fovt.owl
-- description: FuTRES Ontology of Vertebrate Traits in OBO format
+- category: OntologyProduct
+  description: FuTRES Ontology of Vertebrate Traits in OBO format
   format: obo
   id: fovt.obo
   name: fovt.obo
   product_file_size: 1539512
   product_url: http://purl.obolibrary.org/obo/fovt.obo
-- description: FuTRES Ontology of Vertebrate Traits in OWL format
+- category: OntologyProduct
+  description: FuTRES Ontology of Vertebrate Traits in OWL format
   format: owl
   id: fovt.fovt-base.owl
   name: fovt.fovt-base.owl
   product_file_size: 76581
   product_url: http://purl.obolibrary.org/obo/fovt/fovt-base.owl
-- description: FuTRES Ontology of Vertebrate Traits in OBO format
+- category: OntologyProduct
+  description: FuTRES Ontology of Vertebrate Traits in OBO format
   format: obo
   id: fovt.fovt-base.obo
   name: fovt.fovt-base.obo

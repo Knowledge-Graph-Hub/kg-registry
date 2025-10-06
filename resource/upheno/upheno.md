@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,20 +25,23 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Unified Phenotype Ontology (uPheno)
 products:
-- description: uPheno 1 is no longer actively maintained, please start using uPheno
+- category: OntologyProduct
+  description: uPheno 1 is no longer actively maintained, please start using uPheno
     2 (see below).
   format: owl
   id: upheno.owl
   name: uPheno 1 (inactive)
   product_file_size: 304559701
   product_url: http://purl.obolibrary.org/obo/upheno.owl
-- description: No longer actively maintained.
+- category: OntologyProduct
+  description: No longer actively maintained.
   format: owl
   id: upheno.mp-hp-view.owl
   name: uPheno MP-HP equivalence axioms
   product_file_size: 51640383
   product_url: http://purl.obolibrary.org/obo/upheno/mp-hp-view.owl
-- description: The new version of uPheno, along with species independent phenotypes
+- category: OntologyProduct
+  description: The new version of uPheno, along with species independent phenotypes
     and additional phenotype relations. The ontology is still in Beta status, but
     we recommend users to migrate their infrastructures to uPheno 2 as uPheno 1 is
     no longer actively maintained.

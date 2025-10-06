@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Fly taxonomy in OWL format
 format: owl
 id: fbsp.owl

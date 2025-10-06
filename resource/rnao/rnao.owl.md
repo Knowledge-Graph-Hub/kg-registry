@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: RNA ontology in OWL format
 format: owl
 id: rnao.owl

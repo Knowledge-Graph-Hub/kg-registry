@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: oboformat edition
 format: obo
 id: ceph.obo

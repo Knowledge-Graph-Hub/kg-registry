@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Zebrafish Phenotype Ontology in OWL format
 format: owl
 id: zp.owl

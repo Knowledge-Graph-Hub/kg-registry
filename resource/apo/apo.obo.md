@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ascomycete phenotype ontology in OBO format
 format: obo
 id: apo.obo

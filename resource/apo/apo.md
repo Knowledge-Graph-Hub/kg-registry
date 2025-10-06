@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ascomycete phenotype ontology
 products:
-- description: Ascomycete phenotype ontology in OWL format
+- category: OntologyProduct
+  description: Ascomycete phenotype ontology in OWL format
   format: owl
   id: apo.owl
   name: apo.owl
   product_file_size: 32488
   product_url: http://purl.obolibrary.org/obo/apo.owl
-- description: Ascomycete phenotype ontology in OBO format
+- category: OntologyProduct
+  description: Ascomycete phenotype ontology in OBO format
   format: obo
   id: apo.obo
   name: apo.obo

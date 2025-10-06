@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,7 +25,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Common Anatomy Reference Ontology
 products:
-- description: Common Anatomy Reference Ontology in OWL format
+- category: OntologyProduct
+  description: Common Anatomy Reference Ontology in OWL format
   format: owl
   id: caro.owl
   name: caro.owl

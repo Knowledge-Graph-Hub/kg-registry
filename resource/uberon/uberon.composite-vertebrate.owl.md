@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Uberon composite vertebrate ontology
 format: owl
 id: uberon.composite-vertebrate.owl

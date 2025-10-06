@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: 'CTO: Core Ontology of Clinical Trials in OWL format'
 format: owl
 id: cto.owl

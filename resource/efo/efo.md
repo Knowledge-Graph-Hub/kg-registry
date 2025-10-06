@@ -315,7 +315,8 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-- description: Cell Line Ontology in OWL format
+- category: OntologyProduct
+  description: Cell Line Ontology in OWL format
   format: owl
   id: clo.owl
   name: clo.owl

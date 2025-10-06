@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -26,21 +26,24 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
 products:
-- description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
+- category: OntologyProduct
+  description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
     in OWL format
   format: owl
   id: aism.owl
   name: aism.owl
   product_file_size: 1892677
   product_url: http://purl.obolibrary.org/obo/aism.owl
-- description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
+- category: OntologyProduct
+  description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
     in OBO format
   format: obo
   id: aism.obo
   name: aism.obo
   product_file_size: 1205046
   product_url: http://purl.obolibrary.org/obo/aism.obo
-- description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
+- category: OntologyProduct
+  description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
     in JSON format
   format: json
   id: aism.json

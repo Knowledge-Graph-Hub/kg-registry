@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,117 +24,65 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Relation Ontology
 products:
-- description: Canonical edition
+- category: OntologyProduct
+  description: Canonical edition
   format: owl
   id: ro.owl
   name: Relation Ontology
   product_file_size: 131164
   product_url: http://purl.obolibrary.org/obo/ro.owl
-- description: The obo edition is less expressive than the OWL, and has imports merged
+- category: OntologyProduct
+  description: The obo edition is less expressive than the OWL, and has imports merged
     in
   format: obo
   id: ro.obo
   name: Relation Ontology in obo format
   product_file_size: 83438
   product_url: http://purl.obolibrary.org/obo/ro.obo
-- description: Relation Ontology in obojson format
+- category: OntologyProduct
+  description: Relation Ontology in obojson format
   format: json
   id: ro.json
   name: Relation Ontology in obojson format
   product_file_size: 113698
   product_url: http://purl.obolibrary.org/obo/ro.json
-- description: Minimal subset intended to work with BFO-classes
+- category: OntologyProduct
+  description: Minimal subset intended to work with BFO-classes
   format: owl
   id: ro.core.owl
   name: RO Core relations
   product_file_size: 7819
   product_url: http://purl.obolibrary.org/obo/ro/core.owl
-- description: Axioms defined within RO and to be used in imports for other ontologies
+- category: OntologyProduct
+  description: Axioms defined within RO and to be used in imports for other ontologies
   format: owl
   id: ro.ro-base.owl
   name: RO base ontology
   product_file_size: 94729
   product_url: http://purl.obolibrary.org/obo/ro/ro-base.owl
-- description: For use in ecology and environmental science
+- category: OntologyProduct
+  description: For use in ecology and environmental science
   format: owl
   id: ro.subsets.ro-interaction.owl
   name: Interaction relations
   product_file_size: 62037
   product_url: http://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl
-- description: Ecology subset
+- category: OntologyProduct
+  description: Ecology subset
   format: owl
   id: ro.subsets.ro-eco.owl
   name: Ecology subset
   product_url: http://purl.obolibrary.org/obo/ro/subsets/ro-eco.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
-- description: For use in neuroscience
+- category: OntologyProduct
+  description: For use in neuroscience
   format: owl
   id: ro.subsets.ro-neuro.owl
   name: Neuroscience subset
   product_file_size: 5164
   product_url: http://purl.obolibrary.org/obo/ro/subsets/ro-neuro.owl
-- category: GraphProduct
-  description: PheKnowLator graph files, including subsets with and without inverse
-    relations.
-  format: owl
-  id: pheknowlator.graph
-  latest_version: current_build
-  name: PheKnowLator graph
-  original_source:
-  - cl
-  - clo
-  - chebi
-  - go
-  - hp
-  - mondo
-  - pw
-  - pr
-  - ro
-  - so
-  - uberon
-  - vo
-  - bioportal
-  - clinvar
-  - ctd
-  - disgenet
-  - ensembl
-  - genemania
-  - hgnc
-  - hpa
-  - ncbigene
-  - medgen
-  - reactome
-  - string
-  - uniprot
-  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
-  secondary_source:
-  - pheknowlator
-  versions:
-  - v1.0.0
-  - v2.0.0
-  - v2.1.0
-  - v3.0.2
-  - v4.0.0
-  - current_build
-- category: DataModelProduct
-  description: OWL release of Monochrom Ontology
-  format: owl
-  id: chr.model.owl
-  name: Monochrom Ontology OWL release
-  original_source:
-  - ro
-  - go
-  - ncbitaxon
-  - iao
-  - geno
-  - skos
-  - gff
-  product_file_size: 102365
-  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
-  secondary_source:
-  - chr
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -241,6 +189,66 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
+- category: DataModelProduct
+  description: OWL release of Monochrom Ontology
+  format: owl
+  id: chr.model.owl
+  name: Monochrom Ontology OWL release
+  original_source:
+  - ro
+  - go
+  - ncbitaxon
+  - iao
+  - geno
+  - skos
+  - gff
+  product_file_size: 102365
+  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
+  secondary_source:
+  - chr
+- category: GraphProduct
+  description: PheKnowLator graph files, including subsets with and without inverse
+    relations.
+  format: owl
+  id: pheknowlator.graph
+  latest_version: current_build
+  name: PheKnowLator graph
+  original_source:
+  - cl
+  - clo
+  - chebi
+  - go
+  - hp
+  - mondo
+  - pw
+  - pr
+  - ro
+  - so
+  - uberon
+  - vo
+  - bioportal
+  - clinvar
+  - ctd
+  - disgenet
+  - ensembl
+  - genemania
+  - hgnc
+  - hpa
+  - ncbigene
+  - medgen
+  - reactome
+  - string
+  - uniprot
+  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+  secondary_source:
+  - pheknowlator
+  versions:
+  - v1.0.0
+  - v2.0.0
+  - v2.1.0
+  - v3.0.2
+  - v4.0.0
+  - current_build
 - category: DataModelProduct
   description: The Basic subset of the Plant Trait Ontology in OBO format
   format: obo

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: The Statistical Methods Ontology in OWL format
 format: owl
 id: stato.owl

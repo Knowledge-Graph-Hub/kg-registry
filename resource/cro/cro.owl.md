@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: CRO
 format: owl
 id: cro.owl

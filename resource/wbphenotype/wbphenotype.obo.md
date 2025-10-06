@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: C. elegans phenotype in OBO format
 format: obo
 id: wbphenotype.obo

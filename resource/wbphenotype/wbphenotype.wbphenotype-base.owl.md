@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: C. elegans phenotype in OWL format
 format: owl
 id: wbphenotype.wbphenotype-base.owl

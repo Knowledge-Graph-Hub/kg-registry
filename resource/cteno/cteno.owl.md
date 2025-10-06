@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ctenophore Ontology in OWL format
 format: owl
 id: cteno.owl

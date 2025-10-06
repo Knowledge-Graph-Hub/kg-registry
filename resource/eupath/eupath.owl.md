@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: VEuPathDB ontology in OWL format
 format: owl
 id: eupath.owl

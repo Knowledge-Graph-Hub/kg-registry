@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -26,7 +26,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Obstetric and Neonatal Ontology
 products:
-- description: Obstetric and Neonatal Ontology in OWL format
+- category: OntologyProduct
+  description: Obstetric and Neonatal Ontology in OWL format
   format: owl
   id: ontoneo.owl
   name: ontoneo.owl

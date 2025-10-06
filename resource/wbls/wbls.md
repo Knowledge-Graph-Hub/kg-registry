@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: C. elegans development ontology
 products:
-- description: C. elegans development ontology in OWL format
+- category: OntologyProduct
+  description: C. elegans development ontology in OWL format
   format: owl
   id: wbls.owl
   name: wbls.owl
   product_file_size: 76039
   product_url: http://purl.obolibrary.org/obo/wbls.owl
-- description: C. elegans development ontology in OBO format
+- category: OntologyProduct
+  description: C. elegans development ontology in OBO format
   format: obo
   id: wbls.obo
   name: wbls.obo

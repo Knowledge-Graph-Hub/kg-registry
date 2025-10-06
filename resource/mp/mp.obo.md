@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: A direct translation of the MP (OWL edition) into OBO format.
 format: obo
 id: mp.obo

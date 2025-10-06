@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Microbial Conditions Ontology in OWL format
 format: owl
 id: mco.owl

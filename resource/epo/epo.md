@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts: []
@@ -16,13 +16,14 @@ license:
   label: Not specified
 name: Epidemiology Ontology
 products:
-- description: Epidemiology Ontology in OWL format
+- category: OntologyProduct
+  description: Epidemiology Ontology in OWL format
   format: owl
   id: epo.owl
   name: epo.owl
   product_url: http://purl.obolibrary.org/obo/epo.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 ---
 ## Description

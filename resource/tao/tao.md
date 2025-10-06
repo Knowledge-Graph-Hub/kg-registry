@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -23,7 +23,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Teleost Anatomy Ontology
 products:
-- description: Teleost Anatomy Ontology in OWL format
+- category: OntologyProduct
+  description: Teleost Anatomy Ontology in OWL format
   format: owl
   id: tao.owl
   name: tao.owl

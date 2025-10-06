@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: The main ontology in OWL. Contains all MP terms and links to other OBO
   ontologies.
 format: owl

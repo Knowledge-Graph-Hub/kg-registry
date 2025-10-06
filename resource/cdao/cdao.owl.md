@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Comparative Data Analysis Ontology in OWL format
 format: owl
 id: cdao.owl

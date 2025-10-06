@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontology for Biobanking in OWL format
 format: owl
 id: obib.owl

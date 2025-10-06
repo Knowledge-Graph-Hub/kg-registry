@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: core ontology
 format: owl
 id: nomen.owl

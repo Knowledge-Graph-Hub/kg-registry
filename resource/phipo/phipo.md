@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Pathogen Host Interaction Phenotype Ontology
 products:
-- description: Pathogen Host Interaction Phenotype Ontology in OWL format
+- category: OntologyProduct
+  description: Pathogen Host Interaction Phenotype Ontology in OWL format
   format: owl
   id: phipo.owl
   name: phipo.owl
   product_file_size: 760235
   product_url: http://purl.obolibrary.org/obo/phipo.owl
-- description: Pathogen Host Interaction Phenotype Ontology in OBO format
+- category: OntologyProduct
+  description: Pathogen Host Interaction Phenotype Ontology in OBO format
   format: obo
   id: phipo.obo
   name: phipo.obo

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Core Ontology for Biology and Biomedicine, main ontology
 format: owl
 id: cob.owl

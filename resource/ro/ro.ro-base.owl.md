@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Axioms defined within RO and to be used in imports for other ontologies
 format: owl
 id: ro.ro-base.owl

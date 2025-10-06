@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Phenotype And Trait Ontology in JSON format
 format: json
 id: pato.json

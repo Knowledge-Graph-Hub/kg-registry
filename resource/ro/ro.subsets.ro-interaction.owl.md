@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: For use in ecology and environmental science
 format: owl
 id: ro.subsets.ro-interaction.owl

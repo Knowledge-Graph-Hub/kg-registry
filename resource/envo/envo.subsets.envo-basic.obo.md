@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: OBO-Basic edition of ENVO
 format: obo
 id: envo.subsets.envo-basic.obo

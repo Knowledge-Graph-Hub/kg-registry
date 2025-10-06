@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontology of Vaccine Adverse Events in OWL format
 format: owl
 id: ovae.owl

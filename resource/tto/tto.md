@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Teleost taxonomy ontology
 products:
-- description: Teleost taxonomy ontology in OBO format
+- category: OntologyProduct
+  description: Teleost taxonomy ontology in OBO format
   format: obo
   id: tto.obo
   name: tto.obo
   product_file_size: 2260220
   product_url: http://purl.obolibrary.org/obo/tto.obo
-- description: Teleost taxonomy ontology in OWL format
+- category: OntologyProduct
+  description: Teleost taxonomy ontology in OWL format
   format: owl
   id: tto.owl
   name: tto.owl

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: The Drug Ontology in OWL format
 format: owl
 id: dron.owl

@@ -99,7 +99,7 @@ products:
   - mechreponet
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
-  edge_count: 14486132
+  edge_count: 14783802
   format: kgx
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
@@ -121,7 +121,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance
@@ -183,7 +183,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 14486132
+  edge_count: 14783802
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
@@ -205,7 +205,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance
@@ -267,7 +267,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
-  edge_count: 14486132
+  edge_count: 14783802
   format: rdfxml
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
@@ -289,7 +289,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance
@@ -352,7 +352,7 @@ products:
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
-  edge_count: 14486132
+  edge_count: 14783802
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -373,7 +373,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance
@@ -436,7 +436,7 @@ products:
   warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
-  edge_count: 14486132
+  edge_count: 14783802
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
   node_categories:
@@ -457,7 +457,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance
@@ -562,7 +562,7 @@ products:
   - current_build
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 14486132
+  edge_count: 14783802
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
   name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -584,7 +584,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance
@@ -646,7 +646,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 14486132
+  edge_count: 14783802
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
   name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -668,7 +668,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance
@@ -730,7 +730,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 14486132
+  edge_count: 14783802
   format: neo4j
   id: kg-monarch.graph.neo4j.edges
   name: Neo4j Dump of KG-Monarch Edges
@@ -752,7 +752,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance
@@ -814,7 +814,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 14486132
+  edge_count: 14783802
   format: neo4j
   id: kg-monarch.graph.neo4j.nodes
   name: Neo4j Dump of KG-Monarch Nodes
@@ -836,7 +836,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance

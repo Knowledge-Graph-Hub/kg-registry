@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -23,7 +23,8 @@ license:
   label: Not specified
 name: Bilateria anatomy
 products:
-- description: Bilateria anatomy in OWL format
+- category: OntologyProduct
+  description: Bilateria anatomy in OWL format
   format: owl
   id: bila.owl
   name: bila.owl

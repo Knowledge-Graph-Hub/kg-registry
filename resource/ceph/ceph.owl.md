@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: main version
 format: owl
 id: ceph.owl

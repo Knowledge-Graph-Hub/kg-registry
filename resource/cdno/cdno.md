@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Compositional Dietary Nutrition Ontology
 products:
-- description: Compositional Dietary Nutrition Ontology in OWL format
+- category: OntologyProduct
+  description: Compositional Dietary Nutrition Ontology in OWL format
   format: owl
   id: cdno.owl
   name: cdno.owl
   product_file_size: 547230
   product_url: http://purl.obolibrary.org/obo/cdno.owl
-- description: Compositional Dietary Nutrition Ontology in OBO format
+- category: OntologyProduct
+  description: Compositional Dietary Nutrition Ontology in OBO format
   format: obo
   id: cdno.obo
   name: cdno.obo

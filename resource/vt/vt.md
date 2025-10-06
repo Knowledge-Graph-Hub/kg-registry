@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,7 +24,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Vertebrate trait ontology
 products:
-- description: Vertebrate trait ontology in OWL format
+- category: OntologyProduct
+  description: Vertebrate trait ontology in OWL format
   format: owl
   id: vt.owl
   name: vt.owl

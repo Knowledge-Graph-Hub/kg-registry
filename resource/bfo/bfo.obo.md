@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Basic Formal Ontology in OBO format
 format: obo
 id: bfo.obo

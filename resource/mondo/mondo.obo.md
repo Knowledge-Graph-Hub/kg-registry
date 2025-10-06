@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: OBO serialization of mondo.owl.
 format: obo
 id: mondo.obo

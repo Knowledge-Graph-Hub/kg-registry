@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Confidence Information Ontology in OBO format
 format: obo
 id: cio.obo

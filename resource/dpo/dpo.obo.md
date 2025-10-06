@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Drosophila Phenotype Ontology in OBO format
 format: obo
 id: dpo.obo

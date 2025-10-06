@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Complete ontology, plus inter-ontology axioms, and imports modules
 format: owl
 id: cl.owl

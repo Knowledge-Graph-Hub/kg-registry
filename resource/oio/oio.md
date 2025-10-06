@@ -115,13 +115,15 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-- description: Plant Trait Ontology in OWL format
+- category: OntologyProduct
+  description: Plant Trait Ontology in OWL format
   format: owl
   id: to.owl
   name: to.owl
   product_file_size: 212124
   product_url: http://purl.obolibrary.org/obo/to.owl
-- description: Plant Trait Ontology in OBO format
+- category: OntologyProduct
+  description: Plant Trait Ontology in OBO format
   format: obo
   id: to.obo
   name: to.obo

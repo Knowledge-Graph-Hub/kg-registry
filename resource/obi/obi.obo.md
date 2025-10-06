@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: The OBO-format version of OBI
 format: obo
 id: obi.obo

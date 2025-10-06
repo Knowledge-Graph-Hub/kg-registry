@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: FlyBase Controlled Vocabulary in JSON format
 format: json
 id: fbcv.json

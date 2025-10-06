@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: A country specific subset of the GAZ.
 format: owl
 id: gaz.gaz-countries.owl

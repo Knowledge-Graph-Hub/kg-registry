@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: C. elegans development ontology in OBO format
 format: obo
 id: wbls.obo

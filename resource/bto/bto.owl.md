@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: BRENDA tissue / enzyme source in OWL format
 format: owl
 id: bto.owl

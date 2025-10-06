@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,19 +25,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Hymenoptera Anatomy Ontology
 products:
-- description: Hymenoptera Anatomy Ontology in OWL format
+- category: OntologyProduct
+  description: Hymenoptera Anatomy Ontology in OWL format
   format: owl
   id: hao.owl
   name: hao.owl
   product_file_size: 287954
   product_url: http://purl.obolibrary.org/obo/hao.owl
-- description: Hymenoptera Anatomy Ontology in OBO format
+- category: OntologyProduct
+  description: Hymenoptera Anatomy Ontology in OBO format
   format: obo
   id: hao.obo
   name: hao.obo
   product_file_size: 129805
   product_url: http://purl.obolibrary.org/obo/hao.obo
-- description: Hymenoptera Anatomy Ontology in OWL format
+- category: OntologyProduct
+  description: Hymenoptera Anatomy Ontology in OWL format
   format: owl
   id: hao.depictions.owl
   name: hao.depictions.owl

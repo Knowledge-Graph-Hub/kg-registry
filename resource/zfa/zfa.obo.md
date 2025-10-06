@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Zebrafish anatomy and development ontology in OBO format
 format: obo
 id: zfa.obo

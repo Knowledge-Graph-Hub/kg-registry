@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: FlyBase Controlled Vocabulary in OWL format
 format: owl
 id: fbcv.owl

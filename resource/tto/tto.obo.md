@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Teleost taxonomy ontology in OBO format
 format: obo
 id: tto.obo

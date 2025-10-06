@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,7 +25,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Mouse pathology ontology
 products:
-- description: Mouse pathology ontology in OWL format
+- category: OntologyProduct
+  description: Mouse pathology ontology in OWL format
   format: owl
   id: mpath.owl
   name: mpath.owl

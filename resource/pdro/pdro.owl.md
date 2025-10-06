@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: The Prescription of Drugs Ontology in OWL format
 format: owl
 id: pdro.owl

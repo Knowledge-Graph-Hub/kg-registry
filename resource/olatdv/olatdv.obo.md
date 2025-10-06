@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Medaka Developmental Stages in OBO format
 format: obo
 id: olatdv.obo

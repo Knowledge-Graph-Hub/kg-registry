@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -27,7 +27,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Infectious Disease Ontology
 products:
-- description: Infectious Disease Ontology in OWL format
+- category: OntologyProduct
+  description: Infectious Disease Ontology in OWL format
   format: owl
   id: ido.owl
   name: ido.owl

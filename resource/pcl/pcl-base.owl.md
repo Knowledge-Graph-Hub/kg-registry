@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Provisional Cell Ontology in OWL format
 format: owl
 id: pcl-base.owl

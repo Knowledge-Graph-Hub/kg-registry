@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -22,13 +22,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Human developmental anatomy, abstract
 products:
-- description: Human developmental anatomy, abstract in OWL format
+- category: OntologyProduct
+  description: Human developmental anatomy, abstract in OWL format
   format: owl
   id: ehdaa2.owl
   name: ehdaa2.owl
   product_file_size: 5015770
   product_url: http://purl.obolibrary.org/obo/ehdaa2.owl
-- description: Human developmental anatomy, abstract in OBO format
+- category: OntologyProduct
+  description: Human developmental anatomy, abstract in OBO format
   format: obo
   id: ehdaa2.obo
   name: ehdaa2.obo

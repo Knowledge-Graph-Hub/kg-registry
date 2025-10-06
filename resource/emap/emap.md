@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,7 +24,8 @@ license:
   label: Not specified
 name: Mouse gross anatomy and development, timed
 products:
-- description: Mouse gross anatomy and development, timed in OWL format
+- category: OntologyProduct
+  description: Mouse gross anatomy and development, timed in OWL format
   format: owl
   id: emap.owl
   name: emap.owl

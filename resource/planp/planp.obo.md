@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Planarian Phenotype Ontology in OBO format
 format: obo
 id: planp.obo

@@ -10,7 +10,7 @@ license:
 collection:
 - obo-foundry
 layout: resource_detail
-category: DataModel
+category: Ontology
 domains:
 - anatomy and development
 taxon:
@@ -29,6 +29,7 @@ products:
   name: mfo.owl
   description: Medaka fish anatomy and development in OWL format
   format: owl
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/mfo.owl
 ---
 

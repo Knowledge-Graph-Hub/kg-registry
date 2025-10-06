@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Canonical edition
 format: owl
 id: ro.owl

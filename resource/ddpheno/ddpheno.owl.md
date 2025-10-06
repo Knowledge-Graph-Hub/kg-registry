@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Dictyostelium discoideum phenotype ontology in OWL format
 format: owl
 id: ddpheno.owl

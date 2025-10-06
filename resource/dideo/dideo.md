@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,7 +25,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Drug-drug Interaction and Drug-drug Interaction Evidence Ontology
 products:
-- description: Drug-drug Interaction and Drug-drug Interaction Evidence Ontology in
+- category: OntologyProduct
+  description: Drug-drug Interaction and Drug-drug Interaction Evidence Ontology in
     OWL format
   format: owl
   id: dideo.owl

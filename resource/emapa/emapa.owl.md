@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Mouse Developmental Anatomy Ontology in OWL format
 format: owl
 id: emapa.owl

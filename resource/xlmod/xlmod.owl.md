@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
   in OWL format
 format: owl

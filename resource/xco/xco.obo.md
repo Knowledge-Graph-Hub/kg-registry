@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Experimental condition ontology in OBO format
 format: obo
 id: xco.obo

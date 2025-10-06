@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,14 +25,16 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
 products:
-- description: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
+- category: OntologyProduct
+  description: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
     in OBO format
   format: obo
   id: xlmod.obo
   name: xlmod.obo
   product_file_size: 55423
   product_url: http://purl.obolibrary.org/obo/xlmod.obo
-- description: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
+- category: OntologyProduct
+  description: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
     in OWL format
   format: owl
   id: xlmod.owl

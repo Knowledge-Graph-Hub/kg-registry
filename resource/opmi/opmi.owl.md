@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontology of Precision Medicine and Investigation in OWL format
 format: owl
 id: opmi.owl

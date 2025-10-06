@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,19 +25,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Gazetteer
 products:
-- description: Gazetteer in OWL format
+- category: OntologyProduct
+  description: Gazetteer in OWL format
   format: owl
   id: gaz.owl
   name: gaz.owl
   product_file_size: 619537995
   product_url: http://purl.obolibrary.org/obo/gaz.owl
-- description: Gazetteer in OBO format
+- category: OntologyProduct
+  description: Gazetteer in OBO format
   format: obo
   id: gaz.obo
   name: gaz.obo
   product_file_size: 188517055
   product_url: http://purl.obolibrary.org/obo/gaz.obo
-- description: A country specific subset of the GAZ.
+- category: OntologyProduct
+  description: A country specific subset of the GAZ.
   format: owl
   id: gaz.gaz-countries.owl
   name: GAZ countries

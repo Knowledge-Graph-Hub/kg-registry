@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Evidence and Conclusion Ontology in OBO format
 format: obo
 id: eco.obo

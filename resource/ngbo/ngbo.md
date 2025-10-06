@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -28,7 +28,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Next Generation Biobanking Ontology
 products:
-- description: Next Generation Biobanking Ontology in OWL format
+- category: OntologyProduct
+  description: Next Generation Biobanking Ontology in OWL format
   format: owl
   id: ngbo.owl
   name: ngbo.owl

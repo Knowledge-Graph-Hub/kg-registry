@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Units of measurement ontology
 products:
-- description: Units of measurement ontology in OWL format
+- category: OntologyProduct
+  description: Units of measurement ontology in OWL format
   format: owl
   id: uo.owl
   name: uo.owl
   product_file_size: 32548
   product_url: http://purl.obolibrary.org/obo/uo.owl
-- description: Units of measurement ontology in OBO format
+- category: OntologyProduct
+  description: Units of measurement ontology in OBO format
   format: obo
   id: uo.obo
   name: uo.obo

@@ -59,16 +59,16 @@ products:
     retries exceeded with url_ /faq/can-i-access-1000-genomes-data-globus-online (Caused
     by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
     verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2025-09-27_ Error connecting
-    to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
-    retries exceeded with url_ /faq/can-i-access-1000-genomes-data-globus-online (Caused
-    by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
   - 'File was not able to be retrieved when checked on 2025-09-29: Error connecting
     to URL: HTTPSConnectionPool(host=''www.internationalgenome.org'', port=443): Max
     retries exceeded with url: /faq/can-i-access-1000-genomes-data-globus-online (Caused
     by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
     verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
+  - File was not able to be retrieved when checked on 2025-09-27_ Error connecting
+    to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
+    retries exceeded with url_ /faq/can-i-access-1000-genomes-data-globus-online (Caused
+    by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
+    verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
 - category: DocumentationProduct
   description: Instructions for downloading files using Aspera
   format: http
@@ -81,16 +81,16 @@ products:
     retries exceeded with url_ /faq/how-download-files-using-aspera (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2025-09-27_ Error connecting
-    to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
-    retries exceeded with url_ /faq/how-download-files-using-aspera (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
   - 'File was not able to be retrieved when checked on 2025-09-29: Error connecting
     to URL: HTTPSConnectionPool(host=''www.internationalgenome.org'', port=443): Max
     retries exceeded with url: /faq/how-download-files-using-aspera (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
     issuer certificate (_ssl.c:1017)'')))'
+  - File was not able to be retrieved when checked on 2025-09-27_ Error connecting
+    to URL_ HTTPSConnectionPool(host='www.internationalgenome.org', port=443)_ Max
+    retries exceeded with url_ /faq/how-download-files-using-aspera (Caused by SSLError(SSLCertVerificationError(1,
+    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+    issuer certificate (_ssl.c_1017)')))
 - category: Product
   description: Mirror of original 1000 Genomes Project data at NCBI
   format: http
@@ -106,7 +106,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-29_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 403 error
     when accessing file'
 - category: Product
   description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)

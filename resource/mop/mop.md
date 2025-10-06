@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,7 +24,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Molecular Process Ontology
 products:
-- description: Molecular Process Ontology
+- category: OntologyProduct
+  description: Molecular Process Ontology
   format: owl
   id: mop.owl
   name: Molecular Process Ontology

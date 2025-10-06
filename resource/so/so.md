@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,75 +25,36 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Sequence types and features ontology
 products:
-- description: Main SO OWL release
+- category: OntologyProduct
+  description: Main SO OWL release
   format: owl
   id: so.owl
   name: Main SO OWL release
   product_file_size: 291621
   product_url: http://purl.obolibrary.org/obo/so.owl
-- description: Main SO release in OBO Format
+- category: OntologyProduct
+  description: Main SO release in OBO Format
   format: obo
   id: so.obo
   name: Main SO release in OBO Format
   product_file_size: 193405
   product_url: http://purl.obolibrary.org/obo/so.obo
-- description: This subset includes only locatable sequence features and is designed
+- category: OntologyProduct
+  description: This subset includes only locatable sequence features and is designed
     for use in such outputs as GFF3
   format: owl
   id: so.subsets.SOFA.owl
   name: Sequence Ontology Feature Annotation (SOFA) subset (OWL)
   product_file_size: 43606
   product_url: http://purl.obolibrary.org/obo/so/subsets/SOFA.owl
-- description: This subset includes only locatable sequence features and is designed
+- category: OntologyProduct
+  description: This subset includes only locatable sequence features and is designed
     for use in such outputs as GFF3
   format: obo
   id: so.subsets.SOFA.obo
   name: Sequence Ontology Feature Annotation (SOFA) subset (OBO Format)
   product_file_size: 28447
   product_url: http://purl.obolibrary.org/obo/so/subsets/SOFA.obo
-- category: GraphProduct
-  description: PheKnowLator graph files, including subsets with and without inverse
-    relations.
-  format: owl
-  id: pheknowlator.graph
-  latest_version: current_build
-  name: PheKnowLator graph
-  original_source:
-  - cl
-  - clo
-  - chebi
-  - go
-  - hp
-  - mondo
-  - pw
-  - pr
-  - ro
-  - so
-  - uberon
-  - vo
-  - bioportal
-  - clinvar
-  - ctd
-  - disgenet
-  - ensembl
-  - genemania
-  - hgnc
-  - hpa
-  - ncbigene
-  - medgen
-  - reactome
-  - string
-  - uniprot
-  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
-  secondary_source:
-  - pheknowlator
-  versions:
-  - v1.0.0
-  - v2.0.0
-  - v2.1.0
-  - v3.0.2
-  - v4.0.0
-  - current_build
 - category: DataModelProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -200,6 +161,49 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
+- category: GraphProduct
+  description: PheKnowLator graph files, including subsets with and without inverse
+    relations.
+  format: owl
+  id: pheknowlator.graph
+  latest_version: current_build
+  name: PheKnowLator graph
+  original_source:
+  - cl
+  - clo
+  - chebi
+  - go
+  - hp
+  - mondo
+  - pw
+  - pr
+  - ro
+  - so
+  - uberon
+  - vo
+  - bioportal
+  - clinvar
+  - ctd
+  - disgenet
+  - ensembl
+  - genemania
+  - hgnc
+  - hpa
+  - ncbigene
+  - medgen
+  - reactome
+  - string
+  - uniprot
+  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+  secondary_source:
+  - pheknowlator
+  versions:
+  - v1.0.0
+  - v2.0.0
+  - v2.1.0
+  - v3.0.2
+  - v4.0.0
+  - current_build
 repository: https://github.com/The-Sequence-Ontology/SO-Ontologies
 ---
 ## Description

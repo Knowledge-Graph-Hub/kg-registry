@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Mouse adult gross anatomy in OBO format
 format: obo
 id: ma.obo

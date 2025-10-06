@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: NMR-instrument specific component of metabolomics investigations in OWL
   format
 format: owl

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: The Ontology of Genes and Genomes in OWL format
 format: owl
 id: ogg.owl

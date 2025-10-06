@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Plant Trait Ontology
 products:
-- description: Plant Trait Ontology in OWL format
+- category: OntologyProduct
+  description: Plant Trait Ontology in OWL format
   format: owl
   id: to.owl
   name: to.owl
   product_file_size: 212124
   product_url: http://purl.obolibrary.org/obo/to.owl
-- description: Plant Trait Ontology in OBO format
+- category: OntologyProduct
+  description: Plant Trait Ontology in OBO format
   format: obo
   id: to.obo
   name: to.obo

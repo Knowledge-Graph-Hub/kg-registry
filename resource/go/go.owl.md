@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: The main ontology in OWL. This is self contained and does not have connections
   to other OBO ontologies
 format: owl

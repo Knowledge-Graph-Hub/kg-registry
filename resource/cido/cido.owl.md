@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Coronavirus Infectious Disease Ontology in OWL format
 format: owl
 id: cido.owl

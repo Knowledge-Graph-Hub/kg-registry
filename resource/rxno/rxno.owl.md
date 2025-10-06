@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Name Reaction Ontology
 format: owl
 id: rxno.owl

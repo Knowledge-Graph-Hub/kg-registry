@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontologized MIABIS in OWL format
 format: owl
 id: omiabis.owl

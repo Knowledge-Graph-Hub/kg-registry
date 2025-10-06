@@ -1,7 +1,7 @@
 ---
 category: GraphProduct
 description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-edge_count: 14486132
+edge_count: 14783802
 format: kgx-jsonl
 id: kg-monarch.graph.jsonl.edges
 name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -23,7 +23,7 @@ node_categories:
 - biolink:PhenotypicFeature
 - biolink:Protein
 - biolink:SequenceVariant
-node_count: 1344798
+node_count: 1366818
 original_source:
 - phenio
 - alliance

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,39 +25,45 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Radiation Biology Ontology
 products:
-- description: Radiation Biology Ontology in OWL format
+- category: OntologyProduct
+  description: Radiation Biology Ontology in OWL format
   format: owl
   id: rbo.owl
   name: rbo.owl
   product_file_size: 1896384
   product_url: http://purl.obolibrary.org/obo/rbo.owl
-- description: Radiation Biology Ontology in OBO format
+- category: OntologyProduct
+  description: Radiation Biology Ontology in OBO format
   format: obo
   id: rbo.obo
   name: rbo.obo
   product_file_size: 486142
   product_url: http://purl.obolibrary.org/obo/rbo.obo
-- description: Radiation Biology Ontology in JSON format
+- category: OntologyProduct
+  description: Radiation Biology Ontology in JSON format
   format: json
   id: rbo.json
   name: rbo.json
   product_url: http://purl.obolibrary.org/obo/rbo.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
-- description: Radiation Biology Ontology in OWL format
+- category: OntologyProduct
+  description: Radiation Biology Ontology in OWL format
   format: owl
   id: rbo.rbo-base.owl
   name: rbo.rbo-base.owl
   product_file_size: 45134
   product_url: http://purl.obolibrary.org/obo/rbo/rbo-base.owl
-- description: Radiation Biology Ontology in OBO format
+- category: OntologyProduct
+  description: Radiation Biology Ontology in OBO format
   format: obo
   id: rbo.rbo-base.obo
   name: rbo.rbo-base.obo
   product_file_size: 10927
   product_url: http://purl.obolibrary.org/obo/rbo/rbo-base.obo
-- description: Radiation Biology Ontology in JSON format
+- category: OntologyProduct
+  description: Radiation Biology Ontology in JSON format
   format: json
   id: rbo.rbo-base.json
   name: rbo.rbo-base.json

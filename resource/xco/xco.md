@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,17 +25,19 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Experimental condition ontology
 products:
-- description: Experimental condition ontology in OWL format
+- category: OntologyProduct
+  description: Experimental condition ontology in OWL format
   format: owl
   id: xco.owl
   name: xco.owl
-  product_file_size: 4031521
+  product_file_size: 4041705
   product_url: http://purl.obolibrary.org/obo/xco.owl
-- description: Experimental condition ontology in OBO format
+- category: OntologyProduct
+  description: Experimental condition ontology in OBO format
   format: obo
   id: xco.obo
   name: xco.obo
-  product_file_size: 1007947
+  product_file_size: 1011093
   product_url: http://purl.obolibrary.org/obo/xco.obo
 repository: https://github.com/rat-genome-database/XCO-experimental-condition-ontology
 ---

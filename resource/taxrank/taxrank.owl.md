@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Taxonomic rank vocabulary in OWL format
 format: owl
 id: taxrank.owl

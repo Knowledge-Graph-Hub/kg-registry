@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: FlyBase Controlled Vocabulary in OBO format
 format: obo
 id: fbcv.obo

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Base module for OBI
 format: owl
 id: obi.obi-base.owl

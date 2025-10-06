@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Xenopus Phenotype Ontology
 products:
-- description: Xenopus Phenotype Ontology in OWL format
+- category: OntologyProduct
+  description: Xenopus Phenotype Ontology in OWL format
   format: owl
   id: xpo.owl
   name: xpo.owl
   product_file_size: 97539811
   product_url: http://purl.obolibrary.org/obo/xpo.owl
-- description: Xenopus Phenotype Ontology in OBO format
+- category: OntologyProduct
+  description: Xenopus Phenotype Ontology in OBO format
   format: obo
   id: xpo.obo
   name: xpo.obo

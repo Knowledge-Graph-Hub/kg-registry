@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Pathway ontology
 products:
-- description: Pathway ontology in OWL format
+- category: OntologyProduct
+  description: Pathway ontology in OWL format
   format: owl
   id: pw.owl
   name: pw.owl
   product_file_size: 5403526
   product_url: http://purl.obolibrary.org/obo/pw.owl
-- description: Pathway ontology in OBO format
+- category: OntologyProduct
+  description: Pathway ontology in OBO format
   format: obo
   id: pw.obo
   name: pw.obo

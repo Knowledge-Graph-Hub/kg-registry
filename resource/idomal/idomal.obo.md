@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Malaria Ontology in OBO format
 format: obo
 id: idomal.obo

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Collembola Anatomy Ontology in OWL format
 format: owl
 id: clao.owl

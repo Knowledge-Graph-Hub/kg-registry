@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Hymenoptera Anatomy Ontology in OBO format
 format: obo
 id: hao.obo

@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -21,7 +21,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Foundational Model of Anatomy Ontology (subset)
 products:
-- description: Foundational Model of Anatomy Ontology (subset) in OWL format
+- category: OntologyProduct
+  description: Foundational Model of Anatomy Ontology (subset) in OWL format
   format: owl
   id: fma.owl
   name: fma.owl

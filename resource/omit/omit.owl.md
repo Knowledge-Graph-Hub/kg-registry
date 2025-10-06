@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontology for MIRNA Target in OWL format
 format: owl
 id: omit.owl

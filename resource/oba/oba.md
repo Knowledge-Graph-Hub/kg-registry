@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,19 +25,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Ontology of Biological Attributes
 products:
-- description: Ontology of Biological Attributes in OWL format
+- category: OntologyProduct
+  description: Ontology of Biological Attributes in OWL format
   format: owl
   id: oba.owl
   name: oba.owl
   product_file_size: 166309624
   product_url: http://purl.obolibrary.org/obo/oba.owl
-- description: Ontology of Biological Attributes in OBO format
+- category: OntologyProduct
+  description: Ontology of Biological Attributes in OBO format
   format: obo
   id: oba.obo
   name: oba.obo
   product_file_size: 33465347
   product_url: http://purl.obolibrary.org/obo/oba.obo
-- description: Ontology of Biological Attributes in OBO format
+- category: OntologyProduct
+  description: Ontology of Biological Attributes in OBO format
   format: obo
   id: oba.subsets.oba-basic.obo
   name: oba.subsets.oba-basic.obo

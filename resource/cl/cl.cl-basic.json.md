@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Basic version, no inter-ontology axioms
 format: json
 id: cl.cl-basic.json

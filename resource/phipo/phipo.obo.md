@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Pathogen Host Interaction Phenotype Ontology in OBO format
 format: obo
 id: phipo.obo

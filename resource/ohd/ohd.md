@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,19 +25,21 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Oral Health and Disease Ontology
 products:
-- description: Oral Health and Disease Ontology in OWL format
+- category: OntologyProduct
+  description: Oral Health and Disease Ontology in OWL format
   format: owl
   id: ohd.owl
   name: ohd.owl
   product_file_size: 326300
   product_url: http://purl.obolibrary.org/obo/ohd.owl
-- description: OHD dev
+- category: OntologyProduct
+  description: OHD dev
   format: owl
   id: ohd.dev.ohd.owl
   name: OHD dev
   product_url: http://purl.obolibrary.org/obo/ohd/dev/ohd.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 repository: https://github.com/oral-health-and-disease-ontologies/ohd-ontology
 ---

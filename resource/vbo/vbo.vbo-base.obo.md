@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Vertebrate Breed Ontology in OBO format
 format: obo
 id: vbo.vbo-base.obo

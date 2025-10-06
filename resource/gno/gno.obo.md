@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Glycan Naming and Subsumption Ontology, OBO format (automated conversion
   from OWL)
 format: obo

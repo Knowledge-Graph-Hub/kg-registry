@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontology of Biological and Clinical Statistics in OWL format
 format: owl
 id: obcs.owl

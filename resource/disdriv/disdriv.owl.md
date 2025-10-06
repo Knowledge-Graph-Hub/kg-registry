@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Disease Drivers Ontology in OWL format
 format: owl
 id: disdriv.owl

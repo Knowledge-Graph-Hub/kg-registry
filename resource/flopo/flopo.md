@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,7 +24,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Flora Phenotype Ontology
 products:
-- description: Flora Phenotype Ontology in OWL format
+- category: OntologyProduct
+  description: Flora Phenotype Ontology in OWL format
   format: owl
   id: flopo.owl
   name: flopo.owl

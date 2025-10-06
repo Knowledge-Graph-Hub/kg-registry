@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Plant Experimental Conditions Ontology in OWL format
 format: owl
 id: peco.owl

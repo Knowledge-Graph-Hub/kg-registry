@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Taxonomic rank vocabulary in OBO format
 format: obo
 id: taxrank.obo

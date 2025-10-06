@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,19 +25,21 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Human Disease Ontology
 products:
-- description: Disease Ontology, OWL format. This file contains DO's is_a asserted
+- category: OntologyProduct
+  description: Disease Ontology, OWL format. This file contains DO's is_a asserted
     hierarchy plus equivalent axioms to other OBO Foundry ontologies.
   format: owl
   id: doid.owl
   name: Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy
     plus equivalent axioms to other OBO Foundry ontologies.
-  product_file_size: 2085897
+  product_file_size: 2088706
   product_url: http://purl.obolibrary.org/obo/doid.owl
-- description: Disease Ontology, OBO format. This file omits the equivalent axioms.
+- category: OntologyProduct
+  description: Disease Ontology, OBO format. This file omits the equivalent axioms.
   format: obo
   id: doid.obo
   name: Disease Ontology, OBO format. This file omits the equivalent axioms.
-  product_file_size: 1357792
+  product_file_size: 1359793
   product_url: http://purl.obolibrary.org/obo/doid.obo
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 taxon:

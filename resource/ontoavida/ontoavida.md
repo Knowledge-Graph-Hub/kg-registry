@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -27,13 +27,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: 'OntoAvida: ontology for Avida digital evolution platform'
 products:
-- description: The main ontology in OWL
+- category: OntologyProduct
+  description: The main ontology in OWL
   format: owl
   id: ontoavida.owl
   name: OWL
   product_file_size: 472853
   product_url: http://purl.obolibrary.org/obo/ontoavida.owl
-- description: Equivalent to ontoavida.owl, in obo format
+- category: OntologyProduct
+  description: Equivalent to ontoavida.owl, in obo format
   format: obo
   id: ontoavida.obo
   name: OBO

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,19 +25,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: BRENDA tissue / enzyme source
 products:
-- description: BRENDA tissue / enzyme source in OWL format
+- category: OntologyProduct
+  description: BRENDA tissue / enzyme source in OWL format
   format: owl
   id: bto.owl
   name: bto.owl
   product_file_size: 722362
   product_url: http://purl.obolibrary.org/obo/bto.owl
-- description: BRENDA tissue / enzyme source in OBO format
+- category: OntologyProduct
+  description: BRENDA tissue / enzyme source in OBO format
   format: obo
   id: bto.obo
   name: bto.obo
   product_file_size: 479657
   product_url: http://purl.obolibrary.org/obo/bto.obo
-- description: BRENDA tissue / enzyme source in JSON format
+- category: OntologyProduct
+  description: BRENDA tissue / enzyme source in JSON format
   format: json
   id: bto.json
   name: bto.json

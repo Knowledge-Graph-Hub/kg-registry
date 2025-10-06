@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Basic version, no inter-ontology axioms
 format: obo
 id: cl.cl-basic.obo

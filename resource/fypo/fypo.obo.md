@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Fission Yeast Phenotype Ontology in OBO format
 format: obo
 id: fypo.obo

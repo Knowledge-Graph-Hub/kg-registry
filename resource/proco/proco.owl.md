@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Process Chemistry Ontology in OWL format
 format: owl
 id: proco.owl

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Zebrafish developmental stages ontology in OBO format
 format: obo
 id: zfs.obo

@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Medaka Developmental Stages
 products:
-- description: Medaka Developmental Stages in OBO format
+- category: OntologyProduct
+  description: Medaka Developmental Stages in OBO format
   format: obo
   id: olatdv.obo
   name: olatdv.obo
   product_file_size: 9412
   product_url: http://purl.obolibrary.org/obo/olatdv.obo
-- description: Medaka Developmental Stages in OWL format
+- category: OntologyProduct
+  description: Medaka Developmental Stages in OWL format
   format: owl
   id: olatdv.owl
   name: olatdv.owl

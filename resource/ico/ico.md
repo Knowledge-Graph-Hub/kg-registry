@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,7 +24,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Informed Consent Ontology
 products:
-- description: Informed Consent Ontology in OWL format
+- category: OntologyProduct
+  description: Informed Consent Ontology in OWL format
   format: owl
   id: ico.owl
   name: ico.owl

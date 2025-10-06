@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: MIAPA Ontology in OWL format
 format: owl
 id: miapa.owl

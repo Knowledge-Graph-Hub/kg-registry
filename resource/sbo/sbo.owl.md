@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Systems Biology Ontology in OWL format
 format: owl
 id: sbo.owl

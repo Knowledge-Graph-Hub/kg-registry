@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Emotion Ontology in OWL format
 format: owl
 id: mfoem.owl

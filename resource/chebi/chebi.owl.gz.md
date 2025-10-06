@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: chebi, compressed owl
 format: owl
 id: chebi.owl.gz

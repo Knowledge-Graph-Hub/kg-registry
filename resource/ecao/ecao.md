@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: The Echinoderm Anatomy and Development Ontology
 products:
-- description: The Echinoderm Anatomy and Development Ontology in OWL format
+- category: OntologyProduct
+  description: The Echinoderm Anatomy and Development Ontology in OWL format
   format: owl
   id: ecao.owl
   name: ecao.owl
   product_file_size: 1546949
   product_url: http://purl.obolibrary.org/obo/ecao.owl
-- description: The Echinoderm Anatomy and Development Ontology in OBO format
+- category: OntologyProduct
+  description: The Echinoderm Anatomy and Development Ontology in OBO format
   format: obo
   id: ecao.obo
   name: ecao.obo

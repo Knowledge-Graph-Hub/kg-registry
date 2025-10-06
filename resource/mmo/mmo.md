@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Measurement method ontology
 products:
-- description: Measurement method ontology in OWL format
+- category: OntologyProduct
+  description: Measurement method ontology in OWL format
   format: owl
   id: mmo.owl
   name: mmo.owl
   product_file_size: 1915558
   product_url: http://purl.obolibrary.org/obo/mmo.owl
-- description: Measurement method ontology in OBO format
+- category: OntologyProduct
+  description: Measurement method ontology in OBO format
   format: obo
   id: mmo.obo
   name: mmo.obo

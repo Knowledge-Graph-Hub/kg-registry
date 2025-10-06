@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Space Life Sciences Ontology in JSON format
 format: json
 id: slso.json

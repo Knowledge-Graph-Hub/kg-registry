@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Confidence Information Ontology in OWL format
 format: owl
 id: cio.owl

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontology of Arthropod Circulatory Systems in OWL format
 format: owl
 id: oarcs.owl

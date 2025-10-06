@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Pathway ontology in OBO format
 format: obo
 id: pw.obo

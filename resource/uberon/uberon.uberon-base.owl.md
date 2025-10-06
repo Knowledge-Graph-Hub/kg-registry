@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Axioms defined within Uberon and to be used in imports for other ontologies
 format: owl
 id: uberon.uberon-base.owl

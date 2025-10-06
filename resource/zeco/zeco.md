@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,19 +25,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Zebrafish Experimental Conditions Ontology
 products:
-- description: Zebrafish Experimental Conditions Ontology in OBO format
+- category: OntologyProduct
+  description: Zebrafish Experimental Conditions Ontology in OBO format
   format: obo
   id: zeco.obo
   name: zeco.obo
   product_file_size: 6814
   product_url: http://purl.obolibrary.org/obo/zeco.obo
-- description: Zebrafish Experimental Conditions Ontology in OWL format
+- category: OntologyProduct
+  description: Zebrafish Experimental Conditions Ontology in OWL format
   format: owl
   id: zeco.owl
   name: zeco.owl
   product_file_size: 9311
   product_url: http://purl.obolibrary.org/obo/zeco.owl
-- description: Zebrafish Experimental Conditions Ontology in JSON format
+- category: OntologyProduct
+  description: Zebrafish Experimental Conditions Ontology in JSON format
   format: json
   id: zeco.json
   name: zeco.json

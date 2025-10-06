@@ -139,7 +139,8 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-- description: Cell Line Ontology in OWL format
+- category: OntologyProduct
+  description: Cell Line Ontology in OWL format
   format: owl
   id: clo.owl
   name: clo.owl

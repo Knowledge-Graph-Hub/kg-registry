@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Geographical Entity Ontology in OWL format
 format: owl
 id: geo.owl

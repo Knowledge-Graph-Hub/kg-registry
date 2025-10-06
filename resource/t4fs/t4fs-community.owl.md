@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: This community view of T4FS makes the ontology available in OWL without
   upper-level ontology (ULO) terms to give the user community a simpler view of the
   term hierarchy.

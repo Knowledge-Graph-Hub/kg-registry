@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontology of Adverse Events in OWL format
 format: owl
 id: oae.owl

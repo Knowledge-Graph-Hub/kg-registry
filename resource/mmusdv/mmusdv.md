@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Mouse Developmental Stages
 products:
-- description: Mouse Developmental Stages in OWL format
+- category: OntologyProduct
+  description: Mouse Developmental Stages in OWL format
   format: owl
   id: mmusdv.owl
   name: mmusdv.owl
   product_file_size: 367557
   product_url: http://purl.obolibrary.org/obo/mmusdv.owl
-- description: Mouse Developmental Stages in OBO format
+- category: OntologyProduct
+  description: Mouse Developmental Stages in OBO format
   format: obo
   id: mmusdv.obo
   name: mmusdv.obo

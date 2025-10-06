@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontology of Host-Microbiome Interactions in OWL format
 format: owl
 id: ohmi.owl

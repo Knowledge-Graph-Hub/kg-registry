@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Foundational Model of Anatomy Ontology (subset) in OWL format
 format: owl
 id: fma.owl

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Radiation Biology Ontology in OWL format
 format: owl
 id: rbo.rbo-base.owl

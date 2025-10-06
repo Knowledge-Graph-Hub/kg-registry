@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: IAO dev
 format: owl
 id: iao.dev.iao.owl

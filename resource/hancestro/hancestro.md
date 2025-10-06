@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -26,20 +26,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Human Ancestry Ontology
 products:
-- description: The full version of HANCESTRO in OWL format, with BFO upper hierarchy
+- category: OntologyProduct
+  description: The full version of HANCESTRO in OWL format, with BFO upper hierarchy
     for easier integration with other ontologies
   format: owl
   id: hancestro.owl
   name: HANCESTRO
   product_file_size: 144006
   product_url: http://purl.obolibrary.org/obo/hancestro.owl
-- description: Base version of HANCESTRO
+- category: OntologyProduct
+  description: Base version of HANCESTRO
   format: owl
   id: hancestro-base.owl
   name: HANCESTRO Base
   product_url: http://purl.obolibrary.org/obo/hancestro-base.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 - category: DataModelProduct
   description: The latest release of EFO in OWL format

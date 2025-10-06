@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Genomics Cohorts Knowledge Ontology in OWL format
 format: owl
 id: gecko.owl

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: GSC Lite subset of ENVO
 format: obo
 id: envo.subsets.EnvO-Lite-GSC.obo

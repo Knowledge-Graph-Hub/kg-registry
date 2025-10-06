@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: chebi_lite, no syns or xrefs
 format: obo
 id: chebi.chebi_lite.obo

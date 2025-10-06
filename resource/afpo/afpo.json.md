@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: A direct translation of the AfPO (OWL edition) into OBOGraph JSON format
 format: json
 id: afpo.json

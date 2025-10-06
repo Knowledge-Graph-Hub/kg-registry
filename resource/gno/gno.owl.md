@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Glycan Naming and Subsumption Ontology, OWL format (primary)
 format: owl
 id: gno.owl

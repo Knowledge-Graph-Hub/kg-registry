@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,37 +25,43 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Vertebrate Breed Ontology
 products:
-- description: Vertebrate Breed Ontology in OWL format
+- category: OntologyProduct
+  description: Vertebrate Breed Ontology in OWL format
   format: owl
   id: vbo.owl
   name: vbo.owl
   product_file_size: 1966384
   product_url: http://purl.obolibrary.org/obo/vbo.owl
-- description: Vertebrate Breed Ontology in OBO format
+- category: OntologyProduct
+  description: Vertebrate Breed Ontology in OBO format
   format: obo
   id: vbo.obo
   name: vbo.obo
   product_file_size: 908449
   product_url: http://purl.obolibrary.org/obo/vbo.obo
-- description: Vertebrate Breed Ontology in JSON format
+- category: OntologyProduct
+  description: Vertebrate Breed Ontology in JSON format
   format: json
   id: vbo.json
   name: vbo.json
   product_file_size: 1082463
   product_url: http://purl.obolibrary.org/obo/vbo.json
-- description: Vertebrate Breed Ontology in OWL format
+- category: OntologyProduct
+  description: Vertebrate Breed Ontology in OWL format
   format: owl
   id: vbo.vbo-base.owl
   name: vbo.vbo-base.owl
   product_file_size: 1906676
   product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.owl
-- description: Vertebrate Breed Ontology in OBO format
+- category: OntologyProduct
+  description: Vertebrate Breed Ontology in OBO format
   format: obo
   id: vbo.vbo-base.obo
   name: vbo.vbo-base.obo
   product_file_size: 876337
   product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.obo
-- description: Vertebrate Breed Ontology in JSON format
+- category: OntologyProduct
+  description: Vertebrate Breed Ontology in JSON format
   format: json
   id: vbo.vbo-base.json
   name: vbo.vbo-base.json

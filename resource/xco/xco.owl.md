@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Experimental condition ontology in OWL format
 format: owl
 id: xco.owl

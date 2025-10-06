@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,7 +24,8 @@ license:
   label: Artistic License 2.0
 name: Systems Biology Ontology
 products:
-- description: Systems Biology Ontology in OWL format
+- category: OntologyProduct
+  description: Systems Biology Ontology in OWL format
   format: owl
   id: sbo.owl
   name: sbo.owl

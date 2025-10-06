@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Dictyostelium discoideum anatomy in OWL format
 format: owl
 id: ddanat.owl

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Gazetteer in OWL format
 format: owl
 id: gaz.owl

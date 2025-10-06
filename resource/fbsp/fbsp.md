@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,7 +24,8 @@ license:
   label: Not specified
 name: Fly taxonomy
 products:
-- description: Fly taxonomy in OWL format
+- category: OntologyProduct
+  description: Fly taxonomy in OWL format
   format: owl
   id: fbsp.owl
   name: fbsp.owl

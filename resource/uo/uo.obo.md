@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Units of measurement ontology in OBO format
 format: obo
 id: uo.obo

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontology of Biological Attributes in OWL format
 format: owl
 id: oba.owl

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Chemical Entities of Biological Interest in OWL format
 format: owl
 id: chebi.owl

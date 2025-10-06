@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -21,13 +21,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Mosquito gross anatomy ontology
 products:
-- description: Mosquito gross anatomy ontology in OWL format
+- category: OntologyProduct
+  description: Mosquito gross anatomy ontology in OWL format
   format: owl
   id: tgma.owl
   name: tgma.owl
   product_file_size: 298621
   product_url: http://purl.obolibrary.org/obo/tgma.owl
-- description: Mosquito gross anatomy ontology in OBO format
+- category: OntologyProduct
+  description: Mosquito gross anatomy ontology in OBO format
   format: obo
   id: tgma.obo
   name: tgma.obo

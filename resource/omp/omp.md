@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology of Microbial Phenotypes
 products:
-- description: Ontology of Microbial Phenotypes in OWL format
+- category: OntologyProduct
+  description: Ontology of Microbial Phenotypes in OWL format
   format: owl
   id: omp.owl
   name: omp.owl
   product_file_size: 222487
   product_url: http://purl.obolibrary.org/obo/omp.owl
-- description: Ontology of Microbial Phenotypes in OBO format
+- category: OntologyProduct
+  description: Ontology of Microbial Phenotypes in OBO format
   format: obo
   id: omp.obo
   name: omp.obo

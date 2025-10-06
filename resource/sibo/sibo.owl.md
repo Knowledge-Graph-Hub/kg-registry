@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Social Insect Behavior Ontology in OWL format
 format: owl
 id: sibo.owl

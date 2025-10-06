@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: The Echinoderm Anatomy and Development Ontology in OBO format
 format: obo
 id: ecao.obo

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Collembola Anatomy Ontology in OBO format
 format: obo
 id: clao.obo

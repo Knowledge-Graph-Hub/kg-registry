@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Lepidoptera Anatomy Ontology in OBO format
 format: obo
 id: lepao.obo

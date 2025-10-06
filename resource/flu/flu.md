@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -20,7 +20,8 @@ license:
   label: Not specified
 name: Influenza Ontology
 products:
-- description: Influenza Ontology in OWL format
+- category: OntologyProduct
+  description: Influenza Ontology in OWL format
   format: owl
   id: flu.owl
   name: flu.owl

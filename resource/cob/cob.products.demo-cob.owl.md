@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: demo of COB including subsets of other ontologies (Experimental, for
   demo purposes only)
 format: owl

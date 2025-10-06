@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Microbial Conditions Ontology in OBO format
 format: obo
 id: mco.obo

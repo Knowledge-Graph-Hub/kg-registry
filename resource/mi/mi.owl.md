@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Molecular Interactions Controlled Vocabulary in OWL format
 format: owl
 id: mi.owl

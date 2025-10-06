@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -26,13 +26,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Symptom Ontology
 products:
-- description: Symptom Ontology in OWL format
+- category: OntologyProduct
+  description: Symptom Ontology in OWL format
   format: owl
   id: symp.owl
   name: symp.owl
   product_file_size: 73868
   product_url: http://purl.obolibrary.org/obo/symp.owl
-- description: Symptom Ontology in OBO format
+- category: OntologyProduct
+  description: Symptom Ontology in OBO format
   format: obo
   id: symp.obo
   name: symp.obo

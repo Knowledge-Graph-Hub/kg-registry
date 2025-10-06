@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontology of Organizational Structures of Trauma centers and Trauma systems
   in OWL format
 format: owl

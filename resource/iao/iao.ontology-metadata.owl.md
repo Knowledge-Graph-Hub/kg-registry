@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: IAO ontology metadata
 format: owl
 id: iao.ontology-metadata.owl

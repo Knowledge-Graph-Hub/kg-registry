@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Chemical Methods Ontology in OWL format
 format: owl
 id: chmo.owl

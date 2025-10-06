@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -27,14 +27,16 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: NCI Thesaurus OBO Edition
 products:
-- description: A direct transformation of the standard NCIt content using OBO-style
+- category: OntologyProduct
+  description: A direct transformation of the standard NCIt content using OBO-style
     term and ontology IRIs and annotation properties.
   format: owl
   id: ncit.owl
   name: NCIt OBO Edition OWL format
   product_file_size: 782238438
   product_url: http://purl.obolibrary.org/obo/ncit.owl
-- description: NCIt OBO Edition OBO format
+- category: OntologyProduct
+  description: NCIt OBO Edition OBO format
   format: obo
   id: ncit.obo
   name: NCIt OBO Edition OBO format

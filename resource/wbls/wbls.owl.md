@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: C. elegans development ontology in OWL format
 format: owl
 id: wbls.owl

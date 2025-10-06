@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,7 +25,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Biomarker Ontology
 products:
-- description: Includes axioms linking to other ontologies, but no imports of those
+- category: OntologyProduct
+  description: Includes axioms linking to other ontologies, but no imports of those
     ontologies
   format: owl
   id: bmont.BMONT.owl

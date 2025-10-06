@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Evidence and Conclusion Ontology
 products:
-- description: Evidence and Conclusion Ontology in OWL format
+- category: OntologyProduct
+  description: Evidence and Conclusion Ontology in OWL format
   format: owl
   id: eco.owl
   name: eco.owl
   product_file_size: 355446
   product_url: http://purl.obolibrary.org/obo/eco.owl
-- description: Evidence and Conclusion Ontology in OBO format
+- category: OntologyProduct
+  description: Evidence and Conclusion Ontology in OBO format
   format: obo
   id: eco.obo
   name: eco.obo

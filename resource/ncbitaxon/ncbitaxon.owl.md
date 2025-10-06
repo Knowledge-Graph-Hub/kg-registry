@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Main release
 format: owl
 id: ncbitaxon.owl

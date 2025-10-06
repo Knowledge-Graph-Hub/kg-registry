@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Basic version of the GO, filtered such that the graph is guaranteed to
   be acyclic and annotations can be propagated up the graph. The relations included
   are is a, part of, regulates, negatively regulates and positively regulates. This

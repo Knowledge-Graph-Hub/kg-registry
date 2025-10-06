@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Main SO release in OBO Format
 format: obo
 id: so.obo

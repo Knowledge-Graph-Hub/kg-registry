@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Basic version, no inter-ontology axioms
 format: owl
 id: cl.cl-basic.owl

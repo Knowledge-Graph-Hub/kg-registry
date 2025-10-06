@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Protein modification
 products:
-- description: PSI-MOD Ontology, OWL format
+- category: OntologyProduct
+  description: PSI-MOD Ontology, OWL format
   format: owl
   id: mod.owl
   name: PSI-MOD.owl
   product_file_size: 431477
   product_url: http://purl.obolibrary.org/obo/mod.owl
-- description: PSI-MOD Ontology, OBO format
+- category: OntologyProduct
+  description: PSI-MOD Ontology, OBO format
   format: obo
   id: mod.obo
   name: PSI-MOD.obo

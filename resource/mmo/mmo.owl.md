@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Measurement method ontology in OWL format
 format: owl
 id: mmo.owl

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,7 +24,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Non-Coding RNA Ontology
 products:
-- description: NCRO development version
+- category: OntologyProduct
+  description: NCRO development version
   format: owl
   id: ncro.dev.ncro.owl
   name: NCRO development version

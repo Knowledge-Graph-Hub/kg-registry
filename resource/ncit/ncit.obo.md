@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: NCIt OBO Edition OBO format
 format: obo
 id: ncit.obo

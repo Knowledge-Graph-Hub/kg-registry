@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Antibiotic Resistance Ontology in OWL format
 format: owl
 id: aro.owl

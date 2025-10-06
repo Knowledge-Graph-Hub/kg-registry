@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -31,42 +31,48 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Environmental conditions, treatments and exposures ontology
 products:
-- description: Environmental conditions, treatments and exposures ontology in OWL
+- category: OntologyProduct
+  description: Environmental conditions, treatments and exposures ontology in OWL
     format
   format: owl
   id: ecto.owl
   name: ecto.owl
   product_file_size: 2307757
   product_url: http://purl.obolibrary.org/obo/ecto.owl
-- description: Environmental conditions, treatments and exposures ontology in OBO
+- category: OntologyProduct
+  description: Environmental conditions, treatments and exposures ontology in OBO
     format
   format: obo
   id: ecto.obo
   name: ecto.obo
   product_file_size: 1512450
   product_url: http://purl.obolibrary.org/obo/ecto.obo
-- description: Environmental conditions, treatments and exposures ontology in JSON
+- category: OntologyProduct
+  description: Environmental conditions, treatments and exposures ontology in JSON
     format
   format: json
   id: ecto.json
   name: ecto.json
   product_file_size: 1642823
   product_url: http://purl.obolibrary.org/obo/ecto.json
-- description: Environmental conditions, treatments and exposures ontology in OWL
+- category: OntologyProduct
+  description: Environmental conditions, treatments and exposures ontology in OWL
     format
   format: owl
   id: ecto.ecto-base.owl
   name: ecto.ecto-base.owl
   product_file_size: 130323
   product_url: http://purl.obolibrary.org/obo/ecto/ecto-base.owl
-- description: Environmental conditions, treatments and exposures ontology in OBO
+- category: OntologyProduct
+  description: Environmental conditions, treatments and exposures ontology in OBO
     format
   format: obo
   id: ecto.ecto-base.obo
   name: ecto.ecto-base.obo
   product_file_size: 71596
   product_url: http://purl.obolibrary.org/obo/ecto/ecto-base.obo
-- description: Environmental conditions, treatments and exposures ontology in JSON
+- category: OntologyProduct
+  description: Environmental conditions, treatments and exposures ontology in JSON
     format
   format: json
   id: ecto.ecto-base.json

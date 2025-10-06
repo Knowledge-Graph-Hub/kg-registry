@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Pathogen Transmission Ontology in OBO format
 format: obo
 id: trans.obo
