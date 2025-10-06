@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 contacts:
 - category: Individual
   contact_details:
@@ -23,7 +23,7 @@ license:
   label: CC0 1.0
 name: Monochrom Ontology
 products:
-- category: DataModelProduct
+- category: OntologyProduct
   description: OWL release of Monochrom Ontology
   format: owl
   id: chr.model.owl
