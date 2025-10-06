@@ -36,7 +36,11 @@ This Resource provides data. The data may or may not be in a graph structure.
 
 ### DataModel
 
-This Resource defines a data structure or ontology.
+This Resource defines a data structure, i.e., a way to describe how data is organized and how its components relate to one another.
+
+### Ontology
+
+This Resource defines an ontology, or a formal representation of a set of concepts within a domain and the relationships between those concepts.
 
 ### Aggregator
 
