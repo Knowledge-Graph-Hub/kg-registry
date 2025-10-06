@@ -1,48 +1,61 @@
 <div>
-  Download Table [
-  <a href="/kg-registry/registry/kgs.yml">YAML</a> |
-  <a href="/kg-registry/registry/kgs.jsonld">JSON-LD</a> |
-  <a href="/kg-registry/registry/parquet-downloads.html">Parquet</a>
-  ]
+    Download Table [
+    <a href="/kg-registry/registry/kgs.yml">YAML</a> |
+    <a href="/kg-registry/registry/kgs.jsonld">JSON-LD</a> |
+    <a href="/kg-registry/registry/parquet-downloads.html">Parquet</a>
+    ]
 </div>
 <div class="mb-2">
     <span id="resource-count" class="badge bg-primary" style="font-size: 1rem;">0 resources</span>
+    <span id="kg-count" class="badge bg-success ms-2" style="font-size: 1rem;">0 KGs</span>
     <span class="ms-2 text-muted" style="font-size: 0.9rem;">
         Legend:
-        <span class="ms-0" style="text-decoration: underline dotted; cursor: help;" title="Resource activity status is not 'active' (e.g., inactive/orphaned/unresponsive)">⏸ status</span>
+        <span class="ms-0" style="text-decoration: underline dotted; cursor: help;"
+            title="Resource activity status is not 'active' (e.g., inactive/orphaned/unresponsive)">⏸ status</span>
     </span>
 </div>
-<div class="d-flex flex-row mt-2">
-    <div class="pe-1 pb-1 filter-column">
+<div class="mt-2">
+    <!-- Filter dropdowns positioned above the table -->
+    <div class="d-flex flex-row gap-3 mb-3">
         <div>
-            <div>
-                <label for="dd-domains" style="font-size:x-small">Knowledge Graph Domains</label>
-                <select id="dd-domains" class="w-100 form-select-sm">
-                    <option selected value="">All Domains</option>
-                </select>
-            </div>
-            <div>
-                <label for="dd-resourcetypes" style="font-size:x-small">Resource Types</label>
-                <select id="dd-resourcetypes" class="w-100 form-select-sm">
-                    <option selected value="">All Resource Types</option>
-                </select>
-            </div>
-            <div>
-                <label for="dd-collections" style="font-size:x-small">Collections</label>
-                <select id="dd-collections" class="w-100 form-select-sm">
-                    <option selected value="">All Collections</option>
-                </select>
-            </div>
+            <label for="dd-domains" style="font-size:x-small">Knowledge Graph Domains</label>
+            <select id="dd-domains" class="form-select form-select-sm">
+                <option selected value="">All Domains</option>
+            </select>
         </div>
-        <!-- Removed Group By Domain option for a simplified, flat list view -->
+        <div>
+            <label for="dd-resourcetypes" style="font-size:x-small">Resource Types</label>
+            <select id="dd-resourcetypes" class="form-select form-select-sm">
+                <option selected value="">All Resource Types</option>
+            </select>
+        </div>
+        <div>
+            <label for="dd-collections" style="font-size:x-small">Collections</label>
+            <select id="dd-collections" class="form-select form-select-sm">
+                <option selected value="">All Collections</option>
+            </select>
+        </div>
+        <div>
+            <label for="dd-activity" style="font-size:x-small">Activity Status</label>
+            <select id="dd-activity" class="form-select form-select-sm">
+                <option selected value="">All Statuses</option>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+                <option value="orphaned">Orphaned</option>
+            </select>
+        </div>
+        <div>
+            <label for="dd-evaluation" style="font-size:x-small">Has Evaluation</label>
+            <select id="dd-evaluation" class="form-select form-select-sm">
+                <option selected value="">All Resources</option>
+                <option value="yes">With Evaluation</option>
+                <option value="no">Without Evaluation</option>
+            </select>
+        </div>
     </div>
-    <div class="search-result-wrapper ms-3 mt-2">
-        <input
-                type="text"
-                class="form-control"
-                id="searchVal"
-                placeholder="Search table ..."
-        />
+    <!-- Search and table -->
+    <div class="search-result-wrapper">
+        <input type="text" class="form-control" id="searchVal" placeholder="Search table ..." />
         <div id="tableDiv" class="mt-3"></div>
     </div>
 </div>
