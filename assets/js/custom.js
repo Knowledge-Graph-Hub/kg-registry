@@ -40,15 +40,26 @@ jQuery(document).ready(function () {
     const $ddActivity = $("#dd-activity");
     const $ddEvaluation = $("#dd-evaluation");
     const $resourceCount = $("#resource-count");
+    const $kgCount = $("#kg-count");
 
     // Update resource count display
-    function updateResourceCount(count, totalCount) {
+    function updateResourceCount(count, totalCount, kgCount, totalKgCount) {
         if (count === totalCount) {
             $resourceCount.text(count + " resources");
         } else {
             $resourceCount.text(count + " of " + totalCount + " resources");
         }
+
+        // Update KG count
+        if (kgCount !== undefined) {
+            if (kgCount === totalKgCount) {
+                $kgCount.text(kgCount + " KGs");
+            } else {
+                $kgCount.text(kgCount + " of " + totalKgCount + " KGs");
+            }
+        }
     }
+
 
     function search() {
         // Cache selectors inside search for efficiency
@@ -314,20 +325,22 @@ jQuery(document).ready(function () {
 
         // Initialize total resource count
         let totalCount = 0;
+        let totalKgCount = 0;
         if (data && Array.isArray(data)) {
             totalCount = data.length;
+            totalKgCount = data.filter(x => x.category && x.category.toLowerCase() === 'knowledgegraph').length;
         }
 
         // Check if data is valid before processing
         if (!data || !Array.isArray(data) || data.length === 0) {
             $tableDiv.html('<div class="alert alert-info">No resources found - please try another search.</div>');
             $tableMain.css('display', 'block');
-            updateResourceCount(0, totalCount);
+            updateResourceCount(0, totalCount, 0, totalKgCount);
             return;
         }
 
         // Update resource count immediately
-        updateResourceCount(totalCount, totalCount);
+        updateResourceCount(totalCount, totalCount, totalKgCount, totalKgCount);
 
         // Preprocess data before manipulation
         const processedData = data.map(item => {
@@ -374,12 +387,15 @@ jQuery(document).ready(function () {
         if (!processedData || !Array.isArray(processedData) || processedData.length === 0) {
             $tableDiv.html('<div class="alert alert-info">No resources found matching your criteria.</div>');
             $tableMain.css('display', 'block');
-            updateResourceCount(0, window.totalResourceCount || 0);
+            updateResourceCount(0, window.totalResourceCount || 0, 0, window.totalKgCount || 0);
             return;
         }
 
+        // Count Knowledge Graphs in filtered data
+        const kgCount = processedData.filter(x => x.item && x.item.category && x.item.category.toLowerCase() === 'knowledgegraph').length;
+
         // Update the count with filtered data length
-        updateResourceCount(processedData.length, window.totalResourceCount || processedData.length);
+        updateResourceCount(processedData.length, window.totalResourceCount || processedData.length, kgCount, window.totalKgCount || kgCount);
 
         let table = '';
 
@@ -517,9 +533,6 @@ jQuery(document).ready(function () {
         // Check for empty data to avoid errors
         if (!data || !data.resources) return;
 
-        // Store total count for reference in updating resource count
-        window.totalResourceCount = data.resources.length;
-
         // Filter in steps for better performance
         let filteredData = data.resources.filter(x => x.category !== undefined);
 
@@ -529,6 +542,12 @@ jQuery(document).ready(function () {
             const domains = Array.isArray(x.domains) ? x.domains : (Array.isArray(x.domain) ? x.domain : (x.domains || x.domain ? [x.domains || x.domain] : []));
             return !domains.some(d => (d || '').toLowerCase() === 'stub');
         });
+
+        // Store total count for reference in updating resource count (after excluding stub pages)
+        window.totalResourceCount = filteredData.length;
+
+        // Store total KG count
+        window.totalKgCount = filteredData.filter(x => x.category && x.category.toLowerCase() === 'knowledgegraph').length;
 
         // Only apply filters if values are selected
         if (selectedResourceType) {
@@ -671,9 +690,19 @@ jQuery(document).ready(function () {
             // Show table container immediately
             $tableMain.css('display', 'block');
 
+            // Calculate total count excluding stub pages
+            const nonStubResources = data.resources.filter(r => {
+                const domains = Array.isArray(r.domains) ? r.domains : (Array.isArray(r.domain) ? r.domain : (r.domains || r.domain ? [r.domains || r.domain] : []));
+                return !domains.some(d => (d || '').toLowerCase() === 'stub');
+            });
+
             // Store total count and update display
-            window.totalResourceCount = data.resources.length;
-            updateResourceCount(data.resources.length, data.resources.length);
+            window.totalResourceCount = nonStubResources.length;
+
+            // Store total KG count
+            window.totalKgCount = nonStubResources.filter(r => r.category && r.category.toLowerCase() === 'knowledgegraph').length;
+
+            updateResourceCount(nonStubResources.length, nonStubResources.length, window.totalKgCount, window.totalKgCount);
 
             // Extract domains (handling multi-valued domains) and remove 'stub'
             let domains = [...new Set(
@@ -758,6 +787,6 @@ jQuery(document).ready(function () {
         .catch(error => {
             console.error('Error loading data:', error);
             $tableDiv.html('<div class="alert alert-danger">Failed to load data. Please try refreshing the page.</div>');
-            updateResourceCount(0, 0);
+            updateResourceCount(0, 0, 0, 0);
         });
 });
