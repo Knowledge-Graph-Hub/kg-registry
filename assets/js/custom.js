@@ -21,6 +21,7 @@ jQuery(document).ready(function () {
         "KnowledgeGraph": "globe",
         "DataSource": "shop",
         "DataModel": "diagram-3",
+        "Ontology": "diagram-2",
         "GraphProduct": "globe",
         "Product": "box",
         "MappingProduct": "map",

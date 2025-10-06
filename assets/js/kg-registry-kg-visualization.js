@@ -44,6 +44,7 @@ const config = {
     KnowledgeGraph: "#ff7f0e",
     DataSource: "#1f77b4",
     DataModel: "#2ca02c",
+    Ontology: "#9c27b0",
     Aggregator: "#d62728",
     Resource: "#9467bd",
     Product: "#8c564b",
