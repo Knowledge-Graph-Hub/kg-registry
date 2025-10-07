@@ -141,6 +141,10 @@ class FormatEnum(str, Enum):
     """
     The FASTA format, a text-based format for representing nucleotide or peptide sequences. It consists of a single header line followed by one or more lines of sequence data.
     """
+    gff = "gff"
+    """
+    The General Feature Format (GFF), a standard file format for describing genes and other features of DNA, RNA, and protein sequences. It is commonly used in bioinformatics for storing and sharing genomic annotations.
+    """
     graphql = "graphql"
     """
     The GraphQL format, a query language for APIs and a runtime for executing those queries against your data. It allows clients to request exactly what they need and makes it easier to evolve APIs over time.

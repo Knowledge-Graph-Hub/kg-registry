@@ -1296,6 +1296,7 @@
                 "docx",
                 "dot",
                 "fasta",
+                "gff",
                 "graphql",
                 "hdf5",
                 "http",
