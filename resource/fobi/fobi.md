@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,7 +25,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Food-Biomarker Ontology
 products:
-- description: FOBI is an ontology to represent food intake data and associate it
+- category: OntologyProduct
+  description: FOBI is an ontology to represent food intake data and associate it
     with metabolomic data
   format: owl
   id: fobi.owl

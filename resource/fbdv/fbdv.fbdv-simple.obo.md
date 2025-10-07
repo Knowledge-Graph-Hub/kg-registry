@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Drosophila development in OBO format
 format: obo
 id: fbdv.fbdv-simple.obo

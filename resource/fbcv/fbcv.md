@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,19 +25,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: FlyBase Controlled Vocabulary
 products:
-- description: FlyBase Controlled Vocabulary in OWL format
+- category: OntologyProduct
+  description: FlyBase Controlled Vocabulary in OWL format
   format: owl
   id: fbcv.owl
   name: fbcv.owl
   product_file_size: 4275897
   product_url: http://purl.obolibrary.org/obo/fbcv.owl
-- description: FlyBase Controlled Vocabulary in OBO format
+- category: OntologyProduct
+  description: FlyBase Controlled Vocabulary in OBO format
   format: obo
   id: fbcv.obo
   name: fbcv.obo
   product_file_size: 568316
   product_url: http://purl.obolibrary.org/obo/fbcv.obo
-- description: FlyBase Controlled Vocabulary in JSON format
+- category: OntologyProduct
+  description: FlyBase Controlled Vocabulary in JSON format
   format: json
   id: fbcv.json
   name: fbcv.json

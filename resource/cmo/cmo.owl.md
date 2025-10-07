@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Clinical measurement ontology in OWL format
 format: owl
 id: cmo.owl

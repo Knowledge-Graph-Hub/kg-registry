@@ -84,7 +84,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -227,7 +227,7 @@ products:
   - aop-db
   - bgee
   - disgenet
-  - do
+  - doid
   - drugbank
   - dsstox
   - go
@@ -256,7 +256,7 @@ products:
   - aop-db
   - bgee
   - disgenet
-  - do
+  - doid
   - drugbank
   - dsstox
   - go
@@ -293,7 +293,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -448,7 +448,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go
@@ -558,7 +558,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go

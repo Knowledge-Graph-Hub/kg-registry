@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -26,13 +26,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Lepidoptera Anatomy Ontology
 products:
-- description: Lepidoptera Anatomy Ontology in OWL format
+- category: OntologyProduct
+  description: Lepidoptera Anatomy Ontology in OWL format
   format: owl
   id: lepao.owl
   name: lepao.owl
   product_file_size: 141799
   product_url: http://purl.obolibrary.org/obo/lepao.owl
-- description: Lepidoptera Anatomy Ontology in OBO format
+- category: OntologyProduct
+  description: Lepidoptera Anatomy Ontology in OBO format
   format: obo
   id: lepao.obo
   name: lepao.obo

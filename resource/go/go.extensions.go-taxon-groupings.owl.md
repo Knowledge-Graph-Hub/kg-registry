@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Classes added to ncbitaxon for groupings such as prokaryotes
 format: owl
 id: go.extensions.go-taxon-groupings.owl

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Plant Stress Ontology in OWL format
 format: owl
 id: pso.owl

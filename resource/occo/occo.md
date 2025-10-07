@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -29,11 +29,12 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Occupation Ontology
 products:
-- description: Occupation Ontology in OWL format
+- category: OntologyProduct
+  description: Occupation Ontology in OWL format
   format: owl
   id: occo.owl
   name: occo.owl
-  product_file_size: 278669
+  product_file_size: 280761
   product_url: http://purl.obolibrary.org/obo/occo.owl
 repository: https://github.com/Occupation-Ontology/OccO
 ---

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,62 +25,95 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Cell Ontology
 products:
-- description: Complete ontology, plus inter-ontology axioms, and imports modules
+- category: OntologyProduct
+  description: Complete ontology, plus inter-ontology axioms, and imports modules
   format: owl
   id: cl.owl
   name: Main CL OWL edition
   product_file_size: 62825843
   product_url: http://purl.obolibrary.org/obo/cl.owl
-- description: Complete ontology, plus inter-ontology axioms, and imports modules
+- category: OntologyProduct
+  description: Complete ontology, plus inter-ontology axioms, and imports modules
     merged in
   format: obo
   id: cl.obo
   name: CL obo format edition
   product_file_size: 15978994
   product_url: http://purl.obolibrary.org/obo/cl.obo
-- description: Complete ontology, plus inter-ontology axioms, and imports modules
+- category: OntologyProduct
+  description: Complete ontology, plus inter-ontology axioms, and imports modules
     merged in
   format: json
   id: cl.json
   name: CL OBOGraph-JSON format edition
   product_file_size: 36966292
   product_url: http://purl.obolibrary.org/obo/cl.json
-- description: Basic version, no inter-ontology axioms
+- category: OntologyProduct
+  description: Basic version, no inter-ontology axioms
   format: owl
   id: cl.cl-basic.owl
   name: Basic CL
   product_file_size: 7368897
   product_url: http://purl.obolibrary.org/obo/cl/cl-basic.owl
-- description: Basic version, no inter-ontology axioms
+- category: OntologyProduct
+  description: Basic version, no inter-ontology axioms
   format: obo
   id: cl.cl-basic.obo
   name: Basic CL (OBO version)
   product_file_size: 2413965
   product_url: http://purl.obolibrary.org/obo/cl/cl-basic.obo
-- description: Basic version, no inter-ontology axioms
+- category: OntologyProduct
+  description: Basic version, no inter-ontology axioms
   format: json
   id: cl.cl-basic.json
   name: Basic CL (OBOGraph-JSON version)
   product_file_size: 4438425
   product_url: http://purl.obolibrary.org/obo/cl/cl-basic.json
-- description: complete CL but with no imports or external axioms
+- category: OntologyProduct
+  description: complete CL but with no imports or external axioms
   format: owl
   id: cl.cl-base.owl
   name: CL base module
   product_file_size: 10287397
   product_url: http://purl.obolibrary.org/obo/cl/cl-base.owl
-- description: complete CL but with no imports or external axioms
+- category: OntologyProduct
+  description: complete CL but with no imports or external axioms
   format: obo
   id: cl.cl-base.obo
   name: CL base module (OBO version)
   product_file_size: 2807437
   product_url: http://purl.obolibrary.org/obo/cl/cl-base.obo
-- description: complete CL but with no imports or external axioms
+- category: OntologyProduct
+  description: complete CL but with no imports or external axioms
   format: json
   id: cl.cl-base.json
   name: CL base module (OBOGraph-JSON version)
   product_file_size: 6051707
   product_url: http://purl.obolibrary.org/obo/cl/cl-base.json
+- description: The MechRepoNet knowledge graph in its original format
+  id: mechreponet.kg
+  name: MechRepoNet Knowledge Graph
+  original_source:
+  - ctd
+  - doid
+  - go
+  - chebi
+  - reactome
+  - interpro
+  - hp
+  - cl
+  - pr
+  - uberon
+  - ncbitaxon
+  - hetionet
+  - complexportal
+  - rnacentral
+  - mirtarbase
+  - unii
+  - biolink
+  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+  secondary_source:
+  - mechreponet
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -96,7 +129,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -159,7 +192,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -218,7 +251,7 @@ products:
   - medline
   - mesh
   - pid
-  - do
+  - doid
   - diseases
   - drugcentral
   - go
@@ -251,6 +284,112 @@ products:
   - protcid
   secondary_source:
   - spoke
+- category: OntologyProduct
+  description: The latest release of EFO in OWL format
+  format: owl
+  id: efo.owl
+  name: EFO OWL
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 240665663
+  product_url: https://www.ebi.ac.uk/efo/efo.owl
+  secondary_source:
+  - efo
+- category: OntologyProduct
+  description: The latest release of EFO in OBO format
+  format: obo
+  id: efo.obo
+  name: EFO OBO
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 64058275
+  product_url: https://www.ebi.ac.uk/efo/efo.obo
+  secondary_source:
+  - efo
 - category: GraphProduct
   description: PheKnowLator graph files, including subsets with and without inverse
     relations.
@@ -294,30 +433,37 @@ products:
   - v3.0.2
   - v4.0.0
   - current_build
-- description: The MechRepoNet knowledge graph in its original format
-  id: mechreponet.kg
-  name: MechRepoNet Knowledge Graph
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+  compression: zip
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
+  dump_format: other
+  format: mixed
+  id: drugmechdb.graph
+  latest_version: 2.0.1
+  name: DrugMechDB Graph Dataset
   original_source:
-  - ctd
-  - do
   - go
-  - chebi
-  - reactome
-  - interpro
-  - hp
   - cl
-  - pr
+  - mesh
+  - chebi
+  - drugbank
+  - interpro
   - uberon
+  - pr
   - ncbitaxon
-  - hetionet
-  - complexportal
-  - rnacentral
-  - mirtarbase
-  - unii
-  - biolink
-  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
-  secondary_source:
-  - mechreponet
+  - reactome
+  - hp
+  - uniprot
+  product_url: https://doi.org/10.5281/zenodo.8139357
+  repository: https://github.com/SuLab/DrugMechDB
+  versions:
+  - 2.0.1
+  - 2.0.0
+  - 1.0.2
+  - '1.0'
 - category: GraphProduct
   description: RNA-KG as a Neo4j Dump
   format: neo4j
@@ -399,143 +545,6 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
   secondary_source:
   - rna-kg
-- category: DataModelProduct
-  description: The latest release of EFO in OWL format
-  format: owl
-  id: efo.owl
-  name: EFO OWL
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - do
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 240665663
-  product_url: https://www.ebi.ac.uk/efo/efo.owl
-  secondary_source:
-  - efo
-- category: DataModelProduct
-  description: The latest release of EFO in OBO format
-  format: obo
-  id: efo.obo
-  name: EFO OBO
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - do
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 64058275
-  product_url: https://www.ebi.ac.uk/efo/efo.obo
-  secondary_source:
-  - efo
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-  compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
-  dump_format: other
-  format: mixed
-  id: drugmechdb.graph
-  latest_version: 2.0.1
-  name: DrugMechDB Graph Dataset
-  original_source:
-  - go
-  - cl
-  - mesh
-  - chebi
-  - drugbank
-  - interpro
-  - uberon
-  - pr
-  - ncbitaxon
-  - reactome
-  - hp
-  - uniprot
-  product_url: https://doi.org/10.5281/zenodo.8139357
-  repository: https://github.com/SuLab/DrugMechDB
-  versions:
-  - 2.0.1
-  - 2.0.0
-  - 1.0.2
-  - '1.0'
 repository: https://github.com/obophenotype/cell-ontology
 taxon:
 - NCBITaxon:33208

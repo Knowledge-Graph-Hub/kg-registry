@@ -12,7 +12,7 @@ license:
 collection:
 - obo-foundry
 layout: resource_detail
-category: DataModel
+category: Ontology
 domains:
 - biomedical
 contacts:
@@ -26,6 +26,7 @@ products:
   name: dinto.owl
   description: The Drug-Drug Interactions Ontology in OWL format
   format: owl
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/dinto.owl
 ---
 

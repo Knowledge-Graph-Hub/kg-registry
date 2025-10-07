@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: The full version of OBI in OWL format
 format: owl
 id: obi.owl

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Mosquito insecticide resistance in OWL format
 format: owl
 id: miro.owl

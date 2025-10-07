@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Adverse Event Reporting Ontology in OWL format
 format: owl
 id: aero.owl

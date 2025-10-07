@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -27,20 +27,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: NCI Thesaurus OBO Edition
 products:
-- description: A direct transformation of the standard NCIt content using OBO-style
+- category: OntologyProduct
+  description: A direct transformation of the standard NCIt content using OBO-style
     term and ontology IRIs and annotation properties.
   format: owl
   id: ncit.owl
   name: NCIt OBO Edition OWL format
   product_file_size: 782238438
   product_url: http://purl.obolibrary.org/obo/ncit.owl
-- description: NCIt OBO Edition OBO format
+- category: OntologyProduct
+  description: NCIt OBO Edition OBO format
   format: obo
   id: ncit.obo
   name: NCIt OBO Edition OBO format
   product_file_size: 238812762
   product_url: http://purl.obolibrary.org/obo/ncit.obo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
   id: efo.owl
@@ -53,7 +55,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -93,7 +95,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OBO format
   format: obo
   id: efo.obo
@@ -106,7 +108,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt

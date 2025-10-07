@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontology for General Medical Science in OWL format
 format: owl
 id: ogms.owl

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Zebrafish developmental stages ontology in OWL format
 format: owl
 id: zfs.owl

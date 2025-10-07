@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Mouse Developmental Stages in OBO format
 format: obo
 id: mmusdv.obo

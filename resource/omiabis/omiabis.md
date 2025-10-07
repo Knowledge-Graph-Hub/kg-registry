@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -23,7 +23,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontologized MIABIS
 products:
-- description: Ontologized MIABIS in OWL format
+- category: OntologyProduct
+  description: Ontologized MIABIS in OWL format
   format: owl
   id: omiabis.owl
   name: omiabis.owl

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -26,7 +26,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Model Card Report Ontology
 products:
-- description: Model Card Report Ontology in OWL format
+- category: OntologyProduct
+  description: Model Card Report Ontology in OWL format
   format: owl
   id: mcro.owl
   name: mcro.owl

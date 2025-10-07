@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Unipathway in OBO format
 format: obo
 id: upa.obo

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Planarian Phenotype Ontology in OWL format
 format: owl
 id: planp.owl

@@ -330,7 +330,7 @@
         },
         "DataModel": {
             "additionalProperties": false,
-            "description": "A data model, such as an ontology or schema. May be used in construction of a knowledge graph.",
+            "description": "A data model is a formal representation of concepts and relationships within a specific domain. It defines the structure and organization of data, including entities, attributes, and relationships. May be used in construction of a knowledge graph.",
             "properties": {
                 "activity_status": {
                     "$ref": "#/$defs/ActivityStatusEnum",
@@ -550,7 +550,7 @@
         },
         "DataModelProduct": {
             "additionalProperties": false,
-            "description": "A product that is a data model, such as an ontology or schema.",
+            "description": "A product that provides the rules of a data model.",
             "properties": {
                 "category": {
                     "description": "The category of the entity. This should be identical to its class name.",
@@ -2585,6 +2585,457 @@
                 "id"
             ],
             "title": "NamedThing",
+            "type": "object"
+        },
+        "Ontology": {
+            "additionalProperties": false,
+            "description": "An ontology is a formal representation of a set of concepts within a domain and the relationships between those concepts. It is used to reason about the properties of that domain and may be used in construction of a knowledge graph.",
+            "properties": {
+                "activity_status": {
+                    "$ref": "#/$defs/ActivityStatusEnum",
+                    "description": "The status of the resource."
+                },
+                "category": {
+                    "description": "The category of the entity. This should be identical to its class name.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "contacts": {
+                    "description": "The contact point(s) for the resource. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "curators": {
+                    "description": "The curator(s) of the resource. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "A description of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "domains": {
+                    "description": "The domain(s) that the resource is relevant to.",
+                    "items": {
+                        "$ref": "#/$defs/DomainEnum"
+                    },
+                    "type": "array"
+                },
+                "fairsharing_id": {
+                    "description": "The FAIRsharing ID of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "funding": {
+                    "description": "The funding source(s) for the resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "homepage_url": {
+                    "description": "The primary URL of the resource. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface, but it should preferentially be the main page documenting the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
+                    "type": "string"
+                },
+                "infores_id": {
+                    "description": "The Infores ID of the resource. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "language": {
+                    "description": "The human language of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.",
+                    "type": "string"
+                },
+                "license": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/License"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The license of the resource. Individual products may have their own licenses."
+                },
+                "name": {
+                    "description": "The human-readable name of the resource.",
+                    "type": "string"
+                },
+                "products": {
+                    "description": "The products or representations of the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Product"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "publications": {
+                    "description": "Publications associated with the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Publication"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "repository": {
+                    "description": "A main version control repository for the resource. Specific products may have their own repositories.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "tags": {
+                    "description": "Tags associated with the resource.",
+                    "items": {
+                        "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "taxon": {
+                    "description": "The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "usages": {
+                    "description": "The usage(s) of the resource.",
+                    "items": {
+                        "$ref": "#/$defs/Usage"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "version": {
+                    "description": "The version of the resource.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "name",
+                "domains",
+                "id",
+                "layout"
+            ],
+            "title": "Ontology",
+            "type": "object"
+        },
+        "OntologyProduct": {
+            "additionalProperties": false,
+            "description": "A product that is an ontology, a formal representation of a set of concepts within a domain and the relationships between those concepts.",
+            "properties": {
+                "category": {
+                    "description": "The category of the entity. This should be identical to its class name.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "collection": {
+                    "description": "A collection of entries in the registry. This is used to group related entries together. This is multivalued to allow for multiple collections.",
+                    "items": {
+                        "$ref": "#/$defs/CollectionEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "compatibility": {
+                    "description": "A list of standards that the product conforms to. This is not the same as its serialization/format.",
+                    "items": {
+                        "$ref": "#/$defs/StandardCompatibility"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "compression": {
+                    "$ref": "#/$defs/CompressionEnum",
+                    "description": "The type of compression used with the product. If this is not specified, it is assumed to be uncompressed."
+                },
+                "contacts": {
+                    "description": "The contact points for the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "curators": {
+                    "description": "The curator(s) of the product. May be an individual or organization.",
+                    "items": {
+                        "$ref": "#/$defs/Contact"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "A description of the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "dump_format": {
+                    "$ref": "#/$defs/DumpFormatEnum",
+                    "description": "The format of a dump of the product as a file. Note the product may also be compressed."
+                },
+                "format": {
+                    "$ref": "#/$defs/FormatEnum",
+                    "description": "The format or serialization of the product. Generally corresponds to the file extension."
+                },
+                "id": {
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
+                    "type": "string"
+                },
+                "infores_id": {
+                    "description": "The Infores ID of the product. Do not include the 'infores' prefix.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "latest_version": {
+                    "description": "The latest version of the product, or the most recent version curated in the registry. If the product is available at a permanent link, this may be something like \"latest\".",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "license": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/License"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "The license of the product. This may differ from that of the parent resource."
+                },
+                "name": {
+                    "description": "The human-readable name of the product.",
+                    "type": "string"
+                },
+                "original_source": {
+                    "description": "The original source(s) of the product, referred to  by the identifier of each resource. This may be the parent resource or another resource. This may also be a specific product.",
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "produced_by": {
+                    "description": "The process(es) that produced the product, referred to by the identifier of each process.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "product_file_size": {
+                    "description": "The size of the product file, in bytes. The build process will attempt to determine this based on the file header and populate the metadata where possible.",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "product_url": {
+                    "description": "The URL of the product. This may be a link to download a specific file, a base URL to an API, or a link to a graphical interface.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "repository": {
+                    "description": "A main version control repository for the product.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "secondary_source": {
+                    "description": "The source(s) of the product, other than its original source, referred to by the identifier of each resource. This may be an Aggregator or another resource. This may also be a specific product.",
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "tags": {
+                    "description": "Tags associated with the product.",
+                    "items": {
+                        "$ref": "#/$defs/TagEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "versions": {
+                    "description": "A list of names of versions of the product.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "warnings": {
+                    "description": "A list of warnings about an item to be displayed in the interface. These should primarily warn users about unavailable resources, broken links, and other obstacles to using a resource.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "name",
+                "id"
+            ],
+            "title": "OntologyProduct",
             "type": "object"
         },
         "Organization": {

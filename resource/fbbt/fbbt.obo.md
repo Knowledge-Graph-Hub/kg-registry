@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Drosophila gross anatomy in OBO format
 format: obo
 id: fbbt.obo

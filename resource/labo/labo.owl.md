@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: clinical LABoratory Ontology in OWL format
 format: owl
 id: labo.owl

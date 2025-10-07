@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Vertebrate Breed Ontology in OWL format
 format: owl
 id: vbo.owl

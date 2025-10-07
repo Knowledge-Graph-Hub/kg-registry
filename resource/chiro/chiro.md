@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -29,13 +29,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: CHEBI Integrated Role Ontology
 products:
-- description: CHEBI Integrated Role Ontology in OWL format
+- category: OntologyProduct
+  description: CHEBI Integrated Role Ontology in OWL format
   format: owl
   id: chiro.owl
   name: chiro.owl
   product_file_size: 7043
   product_url: http://purl.obolibrary.org/obo/chiro.owl
-- description: CHEBI Integrated Role Ontology in OBO format
+- category: OntologyProduct
+  description: CHEBI Integrated Role Ontology in OBO format
   format: obo
   id: chiro.obo
   name: chiro.obo

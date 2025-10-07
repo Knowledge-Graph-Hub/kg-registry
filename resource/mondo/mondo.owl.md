@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Complete ontology with merged imports.
 format: owl
 id: mondo.owl

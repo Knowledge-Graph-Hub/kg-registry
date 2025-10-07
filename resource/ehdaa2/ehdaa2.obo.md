@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Human developmental anatomy, abstract in OBO format
 format: obo
 id: ehdaa2.obo

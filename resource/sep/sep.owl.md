@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Sample processing and separation techniques in OWL format
 format: owl
 id: sep.owl

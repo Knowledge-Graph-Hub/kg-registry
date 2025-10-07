@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: eagle-i resource ontology in OWL format
 format: owl
 id: ero.owl

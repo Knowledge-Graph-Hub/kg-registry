@@ -58,7 +58,7 @@ products:
   - aop-db
   - bgee
   - disgenet
-  - do
+  - doid
   - drugbank
   - dsstox
   - go
@@ -87,7 +87,7 @@ products:
   - aop-db
   - bgee
   - disgenet
-  - do
+  - doid
   - drugbank
   - dsstox
   - go

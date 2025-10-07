@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: planaria-ontology
 products:
-- description: planaria-ontology in OWL format
+- category: OntologyProduct
+  description: planaria-ontology in OWL format
   format: owl
   id: plana.owl
   name: plana.owl
   product_file_size: 178099
   product_url: http://purl.obolibrary.org/obo/plana.owl
-- description: planaria-ontology in OBO format
+- category: OntologyProduct
+  description: planaria-ontology in OBO format
   format: obo
   id: plana.obo
   name: plana.obo

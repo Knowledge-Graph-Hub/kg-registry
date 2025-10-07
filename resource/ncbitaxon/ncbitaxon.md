@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,85 +24,47 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: NCBI organismal classification
 products:
-- description: Main release
+- category: OntologyProduct
+  description: Main release
   format: owl
   id: ncbitaxon.owl
   name: Main release
   product_file_size: 1677601760
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.owl
-- description: OBO Format version of Main release
+- category: OntologyProduct
+  description: OBO Format version of Main release
   format: obo
   id: ncbitaxon.obo
   name: OBO Format version of Main release
   product_file_size: 533396581
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.obo
-- description: OBOGraphs JSON version of Main release
+- category: OntologyProduct
+  description: OBOGraphs JSON version of Main release
   format: json
   id: ncbitaxon.json
   name: OBOGraphs JSON version of Main release
   product_file_size: 1981974965
   product_url: http://purl.obolibrary.org/obo/ncbitaxon.json
-- description: taxslim
+- category: OntologyProduct
+  description: taxslim
   format: owl
   id: ncbitaxon.subsets.taxslim.owl
   name: taxslim
   product_file_size: 37153972
   product_url: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
-- description: taxslim disjointness axioms
+- category: OntologyProduct
+  description: taxslim disjointness axioms
   format: owl
   id: ncbitaxon.subsets.taxslim-disjoint-over-in-taxon.owl
   name: taxslim disjointness axioms
   product_file_size: 75476239
   product_url: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl
-- category: GraphProduct
-  description: The SPOKE knowledge graph containing nodes and edges from multiple
-    biomedical data sources.
-  id: spoke.graph
-  name: SPOKE Graph
-  original_source:
-  - ncbigene
-  - medline
-  - mesh
-  - pid
-  - do
-  - diseases
-  - drugcentral
-  - go
-  - gwascatalog
-  - reactome
-  - lincs-l1000
-  - uberon
-  - wikipathways
-  - bindingdb
-  - drugbank
-  - sider
-  - bgee
-  - uniprot
-  - string
-  - omim
-  - chembl
-  - foodb
-  - civic
-  - gdsc
-  - clinicaltrialsgov
-  - hpa
-  - cl
-  - kegg
-  - metacyc
-  - bv-brc
-  - ncbitaxon
-  - pathophenodb
-  - pfam
-  - interpro
-  - protcid
-  secondary_source:
-  - spoke
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
   name: MechRepoNet Knowledge Graph
   original_source:
   - ctd
-  - do
+  - doid
   - go
   - chebi
   - reactome
@@ -206,24 +168,50 @@ products:
   product_url: https://arax.ncats.io/
   secondary_source:
   - rtx-kg2
-- category: DataModelProduct
-  description: OWL release of Monochrom Ontology
-  format: owl
-  id: chr.model.owl
-  name: Monochrom Ontology OWL release
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
   original_source:
-  - ro
+  - ncbigene
+  - medline
+  - mesh
+  - pid
+  - doid
+  - diseases
+  - drugcentral
   - go
+  - gwascatalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
   - ncbitaxon
-  - iao
-  - geno
-  - skos
-  - gff
-  product_file_size: 102365
-  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
   secondary_source:
-  - chr
-- category: DataModelProduct
+  - spoke
+- category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
   id: efo.owl
@@ -236,7 +224,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -276,7 +264,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OBO format
   format: obo
   id: efo.obo
@@ -289,7 +277,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -329,33 +317,23 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-- category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
-  format: http
-  id: microbiomekg.api
-  name: MicrobiomeKG Plover API
+- category: OntologyProduct
+  description: OWL release of Monochrom Ontology
+  format: owl
+  id: chr.model.owl
+  name: Monochrom Ontology OWL release
   original_source:
-  - biolink
-  - chebi
-  - ncbitaxon
-  - ncbigene
-  - mesh
-  - pubchem
+  - ro
   - go
-  - mondo
-  - ncit
-  - efo
-  - uniprot
-  - rhea
-  - pr
-  - uberon
-  - panther
-  - hgnc
-  - drugbank
-  - eupathdb
-  product_url: https://multiomics.transltr.io/mbkp
+  - ncbitaxon
+  - iao
+  - geno
+  - skos
+  - gff
+  product_file_size: 102365
+  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
   secondary_source:
-  - microbiomekg
+  - chr
 - category: GraphProduct
   compatibility:
   - standard: biolink
@@ -387,6 +365,33 @@ products:
   - 2.0.0
   - 1.0.2
   - '1.0'
+- category: ProgrammingInterface
+  description: TRAPI web API for querying MicrobiomeKG
+  format: http
+  id: microbiomekg.api
+  name: MicrobiomeKG Plover API
+  original_source:
+  - biolink
+  - chebi
+  - ncbitaxon
+  - ncbigene
+  - mesh
+  - pubchem
+  - go
+  - mondo
+  - ncit
+  - efo
+  - uniprot
+  - rhea
+  - pr
+  - uberon
+  - panther
+  - hgnc
+  - drugbank
+  - eupathdb
+  product_url: https://multiomics.transltr.io/mbkp
+  secondary_source:
+  - microbiomekg
 - category: DataModelProduct
   description: The Basic subset of the Plant Trait Ontology in OBO format
   format: obo

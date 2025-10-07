@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -21,13 +21,15 @@ license:
   label: Not specified
 name: Mosquito insecticide resistance
 products:
-- description: Mosquito insecticide resistance in OWL format
+- category: OntologyProduct
+  description: Mosquito insecticide resistance in OWL format
   format: owl
   id: miro.owl
   name: miro.owl
   product_file_size: 212397
   product_url: http://purl.obolibrary.org/obo/miro.owl
-- description: Mosquito insecticide resistance in OBO format
+- category: OntologyProduct
+  description: Mosquito insecticide resistance in OBO format
   format: obo
   id: miro.obo
   name: miro.obo

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Human Developmental Stages
 products:
-- description: Human Developmental Stages in OWL format
+- category: OntologyProduct
+  description: Human Developmental Stages in OWL format
   format: owl
   id: hsapdv.owl
   name: hsapdv.owl
   product_file_size: 528600
   product_url: http://purl.obolibrary.org/obo/hsapdv.owl
-- description: Human Developmental Stages in OBO format
+- category: OntologyProduct
+  description: Human Developmental Stages in OBO format
   format: obo
   id: hsapdv.obo
   name: hsapdv.obo
@@ -51,7 +53,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -114,7 +116,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam

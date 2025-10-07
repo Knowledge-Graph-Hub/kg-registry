@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: C. elegans Gross Anatomy Ontology
 products:
-- description: C. elegans Gross Anatomy Ontology in OWL format
+- category: OntologyProduct
+  description: C. elegans Gross Anatomy Ontology in OWL format
   format: owl
   id: wbbt.owl
   name: wbbt.owl
   product_file_size: 325464
   product_url: http://purl.obolibrary.org/obo/wbbt.owl
-- description: C. elegans Gross Anatomy Ontology in OBO format
+- category: OntologyProduct
+  description: C. elegans Gross Anatomy Ontology in OBO format
   format: obo
   id: wbbt.obo
   name: wbbt.obo

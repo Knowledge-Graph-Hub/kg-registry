@@ -6,7 +6,7 @@ id: drug-approvals-kp.graph.nodes
 name: Drug Approvals KP Graph Nodes
 original_source:
 - chebi
-- do
+- doid
 - hp
 - mondo
 product_file_size: 701451

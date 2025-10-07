@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Epilepsy Ontology in OWL format
 format: owl
 id: epio.EPIO_merged.owl

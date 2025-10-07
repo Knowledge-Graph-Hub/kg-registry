@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: microRNA Ontology in OWL format
 format: owl
 id: mirnao.owl

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: CHEBI Integrated Role Ontology in OBO format
 format: obo
 id: chiro.obo

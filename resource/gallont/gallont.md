@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -29,21 +29,24 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Plant Gall Ontology
 products:
-- description: Plant Gall Ontology in OWL format
+- category: OntologyProduct
+  description: Plant Gall Ontology in OWL format
   format: owl
   id: gallont.owl
   name: gallont.owl
   product_file_size: 91521
   product_url: http://purl.obolibrary.org/obo/gallont.owl
-- description: Plant Gall Ontology in JSON format
+- category: OntologyProduct
+  description: Plant Gall Ontology in JSON format
   format: json
   id: gallont.json
   name: gallont.json
   product_url: http://purl.obolibrary.org/obo/gallont.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
-- description: Plant Gall Ontology in OBO format
+- category: OntologyProduct
+  description: Plant Gall Ontology in OBO format
   format: obo
   id: gallont.obo
   name: gallont.obo

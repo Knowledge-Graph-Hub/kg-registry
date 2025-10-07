@@ -67,7 +67,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-09-29: No Content-Length
+  - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-10-06: No Content-Length
     header found'
 - category: GraphicalInterface
   description: A browser interface for a knowledge graph for Alzheimer's Disease.
@@ -78,7 +80,7 @@ products:
   - aop-db
   - bgee
   - disgenet
-  - do
+  - doid
   - drugbank
   - dsstox
   - go
@@ -107,7 +109,7 @@ products:
   - aop-db
   - bgee
   - disgenet
-  - do
+  - doid
   - drugbank
   - dsstox
   - go

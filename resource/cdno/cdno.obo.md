@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Compositional Dietary Nutrition Ontology in OBO format
 format: obo
 id: cdno.obo

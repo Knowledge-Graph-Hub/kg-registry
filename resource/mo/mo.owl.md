@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Microarray experimental conditions in OWL format
 format: owl
 id: mo.owl

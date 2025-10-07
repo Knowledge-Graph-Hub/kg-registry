@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: The obo edition is less expressive than the OWL, and has imports merged
   in
 format: obo

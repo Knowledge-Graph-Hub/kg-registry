@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Mammalian Feeding Muscle Ontology in OWL format
 format: owl
 id: mfmo.owl

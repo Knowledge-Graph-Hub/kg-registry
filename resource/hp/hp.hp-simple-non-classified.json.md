@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Simple, manually curated version of the ontology without the use of a
   reasoner, and without any imported terms, in obographs JSON file format.
 format: json

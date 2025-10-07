@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -27,7 +27,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology of Host-Microbiome Interactions
 products:
-- description: Ontology of Host-Microbiome Interactions in OWL format
+- category: OntologyProduct
+  description: Ontology of Host-Microbiome Interactions in OWL format
   format: owl
   id: ohmi.owl
   name: ohmi.owl

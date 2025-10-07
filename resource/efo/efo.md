@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 contacts:
 - category: Organization
   contact_details:
@@ -26,7 +26,7 @@ license:
   label: Apache 2.0
 name: Experimental Factor Ontology
 products:
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
   id: efo.owl
@@ -39,7 +39,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -79,7 +79,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OBO format
   format: obo
   id: efo.obo
@@ -92,7 +92,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -157,7 +157,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -220,7 +220,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -304,7 +304,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go
@@ -315,7 +315,8 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-- description: Cell Line Ontology in OWL format
+- category: OntologyProduct
+  description: Cell Line Ontology in OWL format
   format: owl
   id: clo.owl
   name: clo.owl
@@ -411,7 +412,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go

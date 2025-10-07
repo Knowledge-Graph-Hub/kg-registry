@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Plant Ontology in OBO format
 format: obo
 id: po.obo

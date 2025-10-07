@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: VariO main release in OWL
 format: owl
 id: vario.owl

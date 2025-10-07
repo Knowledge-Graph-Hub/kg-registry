@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: The main ontology in OWL
 format: owl
 id: ontoavida.owl

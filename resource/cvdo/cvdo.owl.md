@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Cardiovascular Disease Ontology in OWL format
 format: owl
 id: cvdo.owl

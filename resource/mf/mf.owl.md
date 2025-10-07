@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Mental Functioning Ontology in OWL format
 format: owl
 id: mf.owl

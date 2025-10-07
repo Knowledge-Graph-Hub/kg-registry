@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,14 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology for General Medical Science
 products:
-- description: Ontology for General Medical Science in OWL format
+- category: OntologyProduct
+  description: Ontology for General Medical Science in OWL format
   format: owl
   id: ogms.owl
   name: ogms.owl
   product_file_size: 39126
   product_url: http://purl.obolibrary.org/obo/ogms.owl
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
   id: efo.owl
@@ -44,7 +45,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -84,7 +85,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OBO format
   format: obo
   id: efo.obo
@@ -97,7 +98,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt

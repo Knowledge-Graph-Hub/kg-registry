@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Plant Trait Ontology in OWL format
 format: owl
 id: to.owl

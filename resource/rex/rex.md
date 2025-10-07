@@ -1,6 +1,6 @@
 ---
 activity_status: orphaned
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts: []
@@ -16,7 +16,8 @@ license:
   label: Not specified
 name: Physico-chemical process
 products:
-- description: Physico-chemical process in OWL format
+- category: OntologyProduct
+  description: Physico-chemical process in OWL format
   format: owl
   id: rex.owl
   name: rex.owl

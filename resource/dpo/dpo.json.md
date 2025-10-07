@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Drosophila Phenotype Ontology in JSON format
 format: json
 id: dpo.json

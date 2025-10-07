@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Minimal subset intended to work with BFO-classes
 format: owl
 id: ro.core.owl

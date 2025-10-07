@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Fission Yeast Phenotype Ontology in OWL format
 format: owl
 id: fypo.owl

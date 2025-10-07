@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Radiation Biology Ontology in OBO format
 format: obo
 id: rbo.rbo-base.obo

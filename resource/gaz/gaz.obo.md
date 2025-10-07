@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Gazetteer in OBO format
 format: obo
 id: gaz.obo

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Biological Imaging Methods Ontology in OWL format
 format: owl
 id: fbbi.owl

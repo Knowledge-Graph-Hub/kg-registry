@@ -13,7 +13,7 @@ original_source:
 - uberon
 - pato
 - cl
-- do
+- doid
 - obi
 - obib
 - edam

@@ -1,6 +1,6 @@
 ---
 activity_status: orphaned
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -22,13 +22,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Social Insect Behavior Ontology
 products:
-- description: Social Insect Behavior Ontology in OWL format
+- category: OntologyProduct
+  description: Social Insect Behavior Ontology in OWL format
   format: owl
   id: sibo.owl
   name: sibo.owl
   product_file_size: 26920
   product_url: http://purl.obolibrary.org/obo/sibo.owl
-- description: Social Insect Behavior Ontology in OBO format
+- category: OntologyProduct
+  description: Social Insect Behavior Ontology in OBO format
   format: obo
   id: sibo.obo
   name: sibo.obo

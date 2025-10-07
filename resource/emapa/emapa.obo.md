@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Mouse Developmental Anatomy Ontology in OBO format
 format: obo
 id: emapa.obo

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Medaka Developmental Stages in OWL format
 format: owl
 id: olatdv.owl

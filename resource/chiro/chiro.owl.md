@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: CHEBI Integrated Role Ontology in OWL format
 format: owl
 id: chiro.owl

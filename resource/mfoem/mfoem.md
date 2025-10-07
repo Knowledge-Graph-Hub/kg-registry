@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,7 +25,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Emotion Ontology
 products:
-- description: Emotion Ontology in OWL format
+- category: OntologyProduct
+  description: Emotion Ontology in OWL format
   format: owl
   id: mfoem.owl
   name: mfoem.owl

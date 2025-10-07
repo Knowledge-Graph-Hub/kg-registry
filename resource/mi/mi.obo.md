@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Molecular Interactions Controlled Vocabulary in OBO format
 format: obo
 id: mi.obo

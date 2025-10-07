@@ -33,7 +33,7 @@ original_source:
 - dgidb
 - corum
 - cancer-genome-interpreter
-- do
+- doid
 - bto
 - efo
 - go

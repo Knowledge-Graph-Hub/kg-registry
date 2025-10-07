@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontology for genetic interval in OWL format
 format: owl
 id: ogi.owl

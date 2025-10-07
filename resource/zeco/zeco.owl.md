@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Zebrafish Experimental Conditions Ontology in OWL format
 format: owl
 id: zeco.owl

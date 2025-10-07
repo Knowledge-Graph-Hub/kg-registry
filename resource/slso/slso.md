@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -26,34 +26,38 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Space Life Sciences Ontology
 products:
-- description: Space Life Sciences Ontology in OWL format
+- category: OntologyProduct
+  description: Space Life Sciences Ontology in OWL format
   format: owl
   id: slso.owl
   name: slso.owl
   product_file_size: 535899
   product_url: http://purl.obolibrary.org/obo/slso.owl
-- description: Space Life Sciences Ontology in OBO format
+- category: OntologyProduct
+  description: Space Life Sciences Ontology in OBO format
   format: obo
   id: slso.obo
   name: slso.obo
   product_file_size: 380643
   product_url: http://purl.obolibrary.org/obo/slso.obo
-- description: Space Life Sciences Ontology in JSON format
+- category: OntologyProduct
+  description: Space Life Sciences Ontology in JSON format
   format: json
   id: slso.json
   name: slso.json
   product_url: http://purl.obolibrary.org/obo/slso.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
-- description: Includes axioms linking to other ontologies, but no imports of those
+- category: OntologyProduct
+  description: Includes axioms linking to other ontologies, but no imports of those
     ontologies
   format: owl
   id: slso-base.owl
   name: slso-base.owl
   product_url: http://purl.obolibrary.org/obo/slso-base.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 repository: https://github.com/nasa/LSDAO
 ---

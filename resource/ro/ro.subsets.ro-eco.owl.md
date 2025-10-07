@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ecology subset
 format: owl
 id: ro.subsets.ro-eco.owl

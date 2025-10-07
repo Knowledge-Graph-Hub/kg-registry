@@ -1,5 +1,5 @@
 ---
-category: DataModelProduct
+category: OntologyProduct
 description: The latest release of EFO in OBO format
 format: obo
 id: efo.obo
@@ -12,7 +12,7 @@ original_source:
 - clo
 - cob
 - dc
-- do
+- doid
 - ecto
 - efo
 - fbbt

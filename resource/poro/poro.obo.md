@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Porifera Ontology in OBO format
 format: obo
 id: poro.obo

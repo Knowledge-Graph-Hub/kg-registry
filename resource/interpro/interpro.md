@@ -135,7 +135,7 @@ products:
   - medline
   - mesh
   - pid
-  - do
+  - doid
   - diseases
   - drugcentral
   - go
@@ -219,7 +219,7 @@ products:
   name: MechRepoNet Knowledge Graph
   original_source:
   - ctd
-  - do
+  - doid
   - go
   - chebi
   - reactome

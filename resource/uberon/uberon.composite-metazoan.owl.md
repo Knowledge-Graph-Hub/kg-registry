@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Uberon and all metazoan ontologies with redundant species-specific terms
   removed
 format: owl

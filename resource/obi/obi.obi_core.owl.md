@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: A collection of important high-level terms and their relations from OBI
   and other ontologies
 format: owl

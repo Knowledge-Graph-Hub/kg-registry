@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 contacts:
 - category: Organization
   contact_details:
@@ -34,7 +34,7 @@ license:
   label: SNOMED CT Affiliate License
 name: SNOMED CT
 products:
-- category: DataModelProduct
+- category: OntologyProduct
   description: The biannual release of the US Edition of SNOMED CT, combining content
     from both the US Extension and International releases.
   id: snomedct.us.content
@@ -42,7 +42,7 @@ products:
   original_source:
   - snomedct
   product_url: https://download.nlm.nih.gov/mlb/utsauth/USExt/doc_SnomedCT-USEdition-ReleaseNotes_Current_en-US_US1000124_20250301.pdf
-- category: DataModelProduct
+- category: OntologyProduct
   description: The monthly release of the International Edition of SNOMED CT, the
     core release from SNOMED International, as RF2 files.
   id: snomedct.international.content
@@ -67,7 +67,7 @@ products:
   original_source:
   - snomedct
   product_url: https://browser.ihtsdotools.org/
-- category: DataModelProduct
+- category: OntologyProduct
   description: A frequently used subset of SNOMED CT concepts for nursing documentation
     in electronic health records. August 2017 release.
   id: snomedct.nursing
@@ -90,7 +90,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -153,7 +153,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -237,7 +237,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go
@@ -283,7 +283,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go

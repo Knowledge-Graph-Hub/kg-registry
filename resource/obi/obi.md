@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,26 +25,30 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology for Biomedical Investigations
 products:
-- description: The full version of OBI in OWL format
+- category: OntologyProduct
+  description: The full version of OBI in OWL format
   format: owl
   id: obi.owl
   name: OBI
   product_file_size: 724538
   product_url: http://purl.obolibrary.org/obo/obi.owl
-- description: The OBO-format version of OBI
+- category: OntologyProduct
+  description: The OBO-format version of OBI
   format: obo
   id: obi.obo
   name: OBI in OBO
   product_file_size: 299710
   product_url: http://purl.obolibrary.org/obo/obi.obo
-- description: A collection of important high-level terms and their relations from
+- category: OntologyProduct
+  description: A collection of important high-level terms and their relations from
     OBI and other ontologies
   format: owl
   id: obi.obi_core.owl
   name: OBI Core
   product_file_size: 47011
   product_url: http://purl.obolibrary.org/obo/obi/obi_core.owl
-- description: Base module for OBI
+- category: OntologyProduct
+  description: Base module for OBI
   format: owl
   id: obi.obi-base.owl
   name: OBI Base module
@@ -65,7 +69,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -128,7 +132,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -177,7 +181,7 @@ products:
   product_url: https://ubkg-downloads.xconsortia.org/
   secondary_source:
   - ubkg
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
   id: efo.owl
@@ -190,7 +194,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -230,7 +234,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OBO format
   format: obo
   id: efo.obo
@@ -243,7 +247,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt

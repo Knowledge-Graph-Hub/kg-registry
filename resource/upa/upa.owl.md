@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Unipathway in OWL format
 format: owl
 id: upa.owl

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Physico-chemical process in OWL format
 format: owl
 id: rex.owl

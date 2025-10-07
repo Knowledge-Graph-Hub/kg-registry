@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Medical Action Ontology in OBO format
 format: obo
 id: maxo.maxo-base.obo

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,19 +24,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: C. elegans phenotype
 products:
-- description: C. elegans phenotype in OWL format
+- category: OntologyProduct
+  description: C. elegans phenotype in OWL format
   format: owl
   id: wbphenotype.owl
   name: wbphenotype.owl
   product_file_size: 1042232
   product_url: http://purl.obolibrary.org/obo/wbphenotype.owl
-- description: C. elegans phenotype in OBO format
+- category: OntologyProduct
+  description: C. elegans phenotype in OBO format
   format: obo
   id: wbphenotype.obo
   name: wbphenotype.obo
   product_file_size: 180404
   product_url: http://purl.obolibrary.org/obo/wbphenotype.obo
-- description: C. elegans phenotype in OWL format
+- category: OntologyProduct
+  description: C. elegans phenotype in OWL format
   format: owl
   id: wbphenotype.wbphenotype-base.owl
   name: wbphenotype.wbphenotype-base.owl

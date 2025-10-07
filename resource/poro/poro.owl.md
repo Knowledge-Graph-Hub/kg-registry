@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Porifera Ontology in OWL format
 format: owl
 id: poro.owl

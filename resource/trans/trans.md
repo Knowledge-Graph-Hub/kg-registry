@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -26,13 +26,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Pathogen Transmission Ontology
 products:
-- description: Pathogen Transmission Ontology in OWL format
+- category: OntologyProduct
+  description: Pathogen Transmission Ontology in OWL format
   format: owl
   id: trans.owl
   name: trans.owl
   product_file_size: 4176
   product_url: http://purl.obolibrary.org/obo/trans.owl
-- description: Pathogen Transmission Ontology in OBO format
+- category: OntologyProduct
+  description: Pathogen Transmission Ontology in OBO format
   format: obo
   id: trans.obo
   name: trans.obo

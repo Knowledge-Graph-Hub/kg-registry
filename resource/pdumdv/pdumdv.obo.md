@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Platynereis Developmental Stages in OBO format
 format: obo
 id: pdumdv.obo

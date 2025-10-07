@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Plant Gall Ontology in OBO format
 format: obo
 id: gallont.obo

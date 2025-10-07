@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Informed Consent Ontology in OWL format
 format: owl
 id: ico.owl

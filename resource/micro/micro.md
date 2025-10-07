@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,7 +24,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology of Prokaryotic Phenotypic and Metabolic Characters
 products:
-- description: Ontology of Prokaryotic Phenotypic and Metabolic Characters in OWL
+- category: OntologyProduct
+  description: Ontology of Prokaryotic Phenotypic and Metabolic Characters in OWL
     format
   format: owl
   id: micro.owl

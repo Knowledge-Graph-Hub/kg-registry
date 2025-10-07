@@ -2,7 +2,7 @@
 category: GraphProduct
 description: Neo4j Dump of KG-Monarch
 dump_format: neo4j
-edge_count: 14486132
+edge_count: 14783802
 id: kg-monarch.graph.neo4j
 name: Neo4j Dump of KG-Monarch
 node_categories:
@@ -23,7 +23,7 @@ node_categories:
 - biolink:PhenotypicFeature
 - biolink:Protein
 - biolink:SequenceVariant
-node_count: 1344798
+node_count: 1366818
 original_source:
 - phenio
 - alliance

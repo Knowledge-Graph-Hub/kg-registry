@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -21,13 +21,14 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: microRNA Ontology
 products:
-- description: microRNA Ontology in OWL format
+- category: OntologyProduct
+  description: microRNA Ontology in OWL format
   format: owl
   id: mirnao.owl
   name: mirnao.owl
   product_url: http://purl.obolibrary.org/obo/mirnao.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 ---
 ## Description

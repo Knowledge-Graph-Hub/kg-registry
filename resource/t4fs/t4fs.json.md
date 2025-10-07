@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: terms4FAIRskills in JSON format
 format: json
 id: t4fs.json

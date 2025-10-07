@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: OBO Format version of Main release
 format: obo
 id: ncbitaxon.obo

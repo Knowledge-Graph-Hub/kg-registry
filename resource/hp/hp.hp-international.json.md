@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Version of the ontology corresponding to the primary release (hp.owl),
   with translated labels, synonyms, and definitions, in obographs JSON file format.
 format: json

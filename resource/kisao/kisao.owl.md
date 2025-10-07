@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Kinetic Simulation Algorithm Ontology in OWL format
 format: owl
 id: kisao.owl

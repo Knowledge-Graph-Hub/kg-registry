@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Zebrafish Phenotype Ontology in OBO format
 format: obo
 id: zp.obo

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,40 +25,45 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Core Ontology for Biology and Biomedicine
 products:
-- description: Core Ontology for Biology and Biomedicine, main ontology
+- category: OntologyProduct
+  description: Core Ontology for Biology and Biomedicine, main ontology
   format: owl
   id: cob.owl
   name: COB
   product_file_size: 7391
   product_url: http://purl.obolibrary.org/obo/cob.owl
-- description: base module for COB
+- category: OntologyProduct
+  description: base module for COB
   format: owl
   id: cob.cob-base.owl
   name: COB base module
   product_file_size: 2798
   product_url: http://purl.obolibrary.org/obo/cob/cob-base.owl
-- description: COB with native IDs preserved rather than rewired to OBO IDs
+- category: OntologyProduct
+  description: COB with native IDs preserved rather than rewired to OBO IDs
   format: owl
   id: cob.cob-native.owl
   name: COB native module
   product_file_size: 6472
   product_url: http://purl.obolibrary.org/obo/cob/cob-native.owl
-- description: COB to external
+- category: OntologyProduct
+  description: COB to external
   format: owl
   id: cob.cob-to-external.owl
   name: COB to external
   product_url: http://purl.obolibrary.org/obo/cob/cob-to-external.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
-- description: demo of COB including subsets of other ontologies (Experimental, for
+- category: OntologyProduct
+  description: demo of COB including subsets of other ontologies (Experimental, for
     demo purposes only)
   format: owl
   id: cob.products.demo-cob.owl
   name: COB demo ontology (experimental)
   product_file_size: 447985
   product_url: http://purl.obolibrary.org/obo/cob/products/demo-cob.owl
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
   id: efo.owl
@@ -71,7 +76,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -111,7 +116,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OBO format
   format: obo
   id: efo.obo
@@ -124,7 +129,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt

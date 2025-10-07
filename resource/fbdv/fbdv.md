@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,37 +24,42 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Drosophila development
 products:
-- description: Drosophila development in OWL format
+- category: OntologyProduct
+  description: Drosophila development in OWL format
   format: owl
   id: fbdv.owl
   name: fbdv.owl
   product_file_size: 523131
   product_url: http://purl.obolibrary.org/obo/fbdv.owl
-- description: Drosophila development in OBO format
+- category: OntologyProduct
+  description: Drosophila development in OBO format
   format: obo
   id: fbdv.obo
   name: fbdv.obo
   product_file_size: 118696
   product_url: http://purl.obolibrary.org/obo/fbdv.obo
-- description: Drosophila development in JSON format
+- category: OntologyProduct
+  description: Drosophila development in JSON format
   format: json
   id: fbdv.json
   name: fbdv.json
   product_file_size: 358287
   product_url: http://purl.obolibrary.org/obo/fbdv.json
-- description: Drosophila development in OWL format
+- category: OntologyProduct
+  description: Drosophila development in OWL format
   format: owl
   id: fbdv.fbdv-simple.owl
   name: fbdv.fbdv-simple.owl
   product_file_size: 442797
   product_url: http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl
-- description: Drosophila development in OBO format
+- category: OntologyProduct
+  description: Drosophila development in OBO format
   format: obo
   id: fbdv.fbdv-simple.obo
   name: fbdv.fbdv-simple.obo
   product_file_size: 118720
   product_url: http://purl.obolibrary.org/obo/fbdv/fbdv-simple.obo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
   id: efo.owl
@@ -67,7 +72,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -107,7 +112,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OBO format
   format: obo
   id: efo.obo
@@ -120,7 +125,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt

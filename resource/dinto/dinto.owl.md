@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: The Drug-Drug Interactions Ontology in OWL format
 format: owl
 id: dinto.owl

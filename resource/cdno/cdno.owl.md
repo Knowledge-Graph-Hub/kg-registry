@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Compositional Dietary Nutrition Ontology in OWL format
 format: owl
 id: cdno.owl

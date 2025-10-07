@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Apollo Structured Vocabulary in OWL format
 format: owl
 id: apollo_sv.owl

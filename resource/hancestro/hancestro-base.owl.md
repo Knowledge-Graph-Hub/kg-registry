@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Base version of HANCESTRO
 format: owl
 id: hancestro-base.owl

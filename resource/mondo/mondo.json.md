@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Obographs serialization of mondo.owl.
 format: obo
 id: mondo.json

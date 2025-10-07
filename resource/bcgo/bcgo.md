@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,7 +24,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Beta Cell Genomics Ontology
 products:
-- description: Beta Cell Genomics Ontology in OWL format
+- category: OntologyProduct
+  description: Beta Cell Genomics Ontology in OWL format
   format: owl
   id: bcgo.owl
   name: bcgo.owl

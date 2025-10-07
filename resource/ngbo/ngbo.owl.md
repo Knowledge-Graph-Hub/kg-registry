@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Next Generation Biobanking Ontology in OWL format
 format: owl
 id: ngbo.owl

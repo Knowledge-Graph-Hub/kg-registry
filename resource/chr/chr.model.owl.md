@@ -1,5 +1,5 @@
 ---
-category: DataModelProduct
+category: OntologyProduct
 description: OWL release of Monochrom Ontology
 format: owl
 id: chr.model.owl

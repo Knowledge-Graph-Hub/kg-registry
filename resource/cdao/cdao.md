@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,7 +25,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Comparative Data Analysis Ontology
 products:
-- description: Comparative Data Analysis Ontology in OWL format
+- category: OntologyProduct
+  description: Comparative Data Analysis Ontology in OWL format
   format: owl
   id: cdao.owl
   name: cdao.owl

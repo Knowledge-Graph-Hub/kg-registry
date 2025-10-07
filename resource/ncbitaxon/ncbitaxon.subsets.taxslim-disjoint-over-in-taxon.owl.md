@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: taxslim disjointness axioms
 format: owl
 id: ncbitaxon.subsets.taxslim-disjoint-over-in-taxon.owl

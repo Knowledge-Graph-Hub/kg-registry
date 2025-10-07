@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: MHC Restriction Ontology in OWL format
 format: owl
 id: mro.owl

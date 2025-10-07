@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,37 +24,43 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Environment Ontology
 products:
-- description: main ENVO OWL release
+- category: OntologyProduct
+  description: main ENVO OWL release
   format: owl
   id: envo.owl
   name: main ENVO OWL release
   product_file_size: 828147
   product_url: http://purl.obolibrary.org/obo/envo.owl
-- description: ENVO in obographs JSON format
+- category: OntologyProduct
+  description: ENVO in obographs JSON format
   format: json
   id: envo.json
   name: ENVO in obographs JSON format
   product_file_size: 658775
   product_url: http://purl.obolibrary.org/obo/envo.json
-- description: ENVO in OBO Format. May be lossy
+- category: OntologyProduct
+  description: ENVO in OBO Format. May be lossy
   format: obo
   id: envo.obo
   name: ENVO in OBO Format. May be lossy
   product_file_size: 603686
   product_url: http://purl.obolibrary.org/obo/envo.obo
-- description: OBO-Basic edition of ENVO
+- category: OntologyProduct
+  description: OBO-Basic edition of ENVO
   format: obo
   id: envo.subsets.envo-basic.obo
   name: OBO-Basic edition of ENVO
   product_file_size: 422424
   product_url: http://purl.obolibrary.org/obo/envo/subsets/envo-basic.obo
-- description: Earth Microbiome Project subset
+- category: OntologyProduct
+  description: Earth Microbiome Project subset
   format: owl
   id: envo.subsets.envoEmpo.owl
   name: Earth Microbiome Project subset
   product_file_size: 19004
   product_url: http://purl.obolibrary.org/obo/envo/subsets/envoEmpo.owl
-- description: GSC Lite subset of ENVO
+- category: OntologyProduct
+  description: GSC Lite subset of ENVO
   format: obo
   id: envo.subsets.EnvO-Lite-GSC.obo
   name: GSC Lite subset of ENVO

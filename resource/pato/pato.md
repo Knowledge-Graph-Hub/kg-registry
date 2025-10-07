@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,25 +24,29 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Phenotype And Trait Ontology
 products:
-- description: Phenotype And Trait Ontology in OWL format
+- category: OntologyProduct
+  description: Phenotype And Trait Ontology in OWL format
   format: owl
   id: pato.owl
   name: pato.owl
   product_file_size: 1205348
   product_url: http://purl.obolibrary.org/obo/pato.owl
-- description: Phenotype And Trait Ontology in OBO format
+- category: OntologyProduct
+  description: Phenotype And Trait Ontology in OBO format
   format: obo
   id: pato.obo
   name: pato.obo
   product_file_size: 110437
   product_url: http://purl.obolibrary.org/obo/pato.obo
-- description: Phenotype And Trait Ontology in JSON format
+- category: OntologyProduct
+  description: Phenotype And Trait Ontology in JSON format
   format: json
   id: pato.json
   name: pato.json
   product_file_size: 883967
   product_url: http://purl.obolibrary.org/obo/pato.json
-- description: Includes axioms linking to other ontologies, but no imports of those
+- category: OntologyProduct
+  description: Includes axioms linking to other ontologies, but no imports of those
     ontologies
   format: owl
   id: pato.pato-base.owl
@@ -64,7 +68,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -127,7 +131,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -176,7 +180,7 @@ products:
   product_url: https://ubkg-downloads.xconsortia.org/
   secondary_source:
   - ubkg
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
   id: efo.owl
@@ -189,7 +193,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -229,7 +233,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OBO format
   format: obo
   id: efo.obo
@@ -242,7 +246,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt

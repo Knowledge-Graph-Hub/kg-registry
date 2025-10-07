@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,19 +24,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Drosophila Phenotype Ontology
 products:
-- description: Drosophila Phenotype Ontology in OWL format
+- category: OntologyProduct
+  description: Drosophila Phenotype Ontology in OWL format
   format: owl
   id: dpo.owl
   name: dpo.owl
   product_file_size: 3635872
   product_url: http://purl.obolibrary.org/obo/dpo.owl
-- description: Drosophila Phenotype Ontology in OBO format
+- category: OntologyProduct
+  description: Drosophila Phenotype Ontology in OBO format
   format: obo
   id: dpo.obo
   name: dpo.obo
   product_file_size: 133576
   product_url: http://purl.obolibrary.org/obo/dpo.obo
-- description: Drosophila Phenotype Ontology in JSON format
+- category: OntologyProduct
+  description: Drosophila Phenotype Ontology in JSON format
   format: json
   id: dpo.json
   name: dpo.json

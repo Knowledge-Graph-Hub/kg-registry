@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Measurement method ontology in OBO format
 format: obo
 id: mmo.obo

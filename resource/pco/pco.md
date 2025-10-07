@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,7 +25,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Population and Community Ontology
 products:
-- description: Population and Community Ontology in OWL format
+- category: OntologyProduct
+  description: Population and Community Ontology in OWL format
   format: owl
   id: pco.owl
   name: pco.owl

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Flora Phenotype Ontology in OWL format
 format: owl
 id: flopo.owl

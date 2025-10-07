@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Interaction Network Ontology in OWL format
 format: owl
 id: ino.owl

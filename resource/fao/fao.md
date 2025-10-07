@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Fungal gross anatomy
 products:
-- description: Fungal gross anatomy in OWL format
+- category: OntologyProduct
+  description: Fungal gross anatomy in OWL format
   format: owl
   id: fao.owl
   name: fao.owl
   product_file_size: 14367
   product_url: http://purl.obolibrary.org/obo/fao.owl
-- description: Fungal gross anatomy in OBO format
+- category: OntologyProduct
+  description: Fungal gross anatomy in OBO format
   format: obo
   id: fao.obo
   name: fao.obo

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,7 +24,8 @@ license:
   label: Artistic License 2.0
 name: Kinetic Simulation Algorithm Ontology
 products:
-- description: Kinetic Simulation Algorithm Ontology in OWL format
+- category: OntologyProduct
+  description: Kinetic Simulation Algorithm Ontology in OWL format
   format: owl
   id: kisao.owl
   name: kisao.owl

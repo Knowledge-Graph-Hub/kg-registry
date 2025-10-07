@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Plant Phenology Ontology in OWL format
 format: owl
 id: ppo.owl

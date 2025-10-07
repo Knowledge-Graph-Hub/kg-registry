@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Medical Action Ontology in JSON format
 format: json
 id: maxo.maxo-base.json

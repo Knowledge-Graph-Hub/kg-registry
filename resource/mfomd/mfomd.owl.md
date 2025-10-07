@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Mental Disease Ontology in OWL format
 format: owl
 id: mfomd.owl

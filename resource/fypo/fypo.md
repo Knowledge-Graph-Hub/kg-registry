@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Fission Yeast Phenotype Ontology
 products:
-- description: Fission Yeast Phenotype Ontology in OWL format
+- category: OntologyProduct
+  description: Fission Yeast Phenotype Ontology in OWL format
   format: owl
   id: fypo.owl
   name: fypo.owl
   product_file_size: 45049724
   product_url: http://purl.obolibrary.org/obo/fypo.owl
-- description: Fission Yeast Phenotype Ontology in OBO format
+- category: OntologyProduct
+  description: Fission Yeast Phenotype Ontology in OBO format
   format: obo
   id: fypo.obo
   name: fypo.obo

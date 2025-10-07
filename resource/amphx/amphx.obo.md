@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: The Amphioxus Development and Anatomy Ontology in OBO format
 format: obo
 id: amphx.obo

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Mouse adult gross anatomy in OWL format
 format: owl
 id: ma.owl

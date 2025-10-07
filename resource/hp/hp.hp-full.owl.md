@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Version of the ontology automatically classified with the use of a reasoner,
   including all imported terms, in OWL (RDF/XML) file format.
 format: owl

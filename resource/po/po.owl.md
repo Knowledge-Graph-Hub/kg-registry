@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Plant Ontology in OWL format
 format: owl
 id: po.owl

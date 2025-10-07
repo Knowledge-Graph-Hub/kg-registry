@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: ENVO in obographs JSON format
 format: json
 id: envo.json

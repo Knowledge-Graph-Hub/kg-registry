@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Pathogen Host Interaction Phenotype Ontology in OWL format
 format: owl
 id: phipo.owl

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Clinical measurement ontology
 products:
-- description: Clinical measurement ontology in OWL format
+- category: OntologyProduct
+  description: Clinical measurement ontology in OWL format
   format: owl
   id: cmo.owl
   name: cmo.owl
   product_file_size: 9156894
   product_url: http://purl.obolibrary.org/obo/cmo.owl
-- description: Clinical measurement ontology in OBO format
+- category: OntologyProduct
+  description: Clinical measurement ontology in OBO format
   format: obo
   id: cmo.obo
   name: cmo.obo

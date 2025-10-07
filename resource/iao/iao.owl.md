@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Information Artifact Ontology in OWL format
 format: owl
 id: iao.owl

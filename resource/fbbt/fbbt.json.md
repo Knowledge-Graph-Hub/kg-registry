@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Drosophila gross anatomy in JSON format
 format: json
 id: fbbt.json

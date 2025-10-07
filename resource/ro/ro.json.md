@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Relation Ontology in obojson format
 format: json
 id: ro.json

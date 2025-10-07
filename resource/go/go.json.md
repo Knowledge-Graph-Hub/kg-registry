@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Equivalent to go.owl, in obograph json format
 format: json
 id: go.json

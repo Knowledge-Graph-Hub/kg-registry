@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -23,13 +23,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: RNA ontology
 products:
-- description: RNA ontology in OWL format
+- category: OntologyProduct
+  description: RNA ontology in OWL format
   format: owl
   id: rnao.owl
   name: rnao.owl
   product_file_size: 30137
   product_url: http://purl.obolibrary.org/obo/rnao.owl
-- description: RNA ontology in OBO format
+- category: OntologyProduct
+  description: RNA ontology in OBO format
   format: obo
   id: rnao.obo
   name: rnao.obo

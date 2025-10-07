@@ -9,7 +9,7 @@ license:
 collection:
 - obo-foundry
 layout: resource_detail
-category: DataModel
+category: Ontology
 domains:
 - biomedical
 taxon:

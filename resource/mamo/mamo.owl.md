@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Mathematical modeling ontology in OWL format
 format: owl
 id: mamo.owl

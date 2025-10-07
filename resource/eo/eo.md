@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,21 +25,23 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Plant Environment Ontology
 products:
-- description: Plant Environment Ontology in OWL format
+- category: OntologyProduct
+  description: Plant Environment Ontology in OWL format
   format: owl
   id: eo.owl
   name: eo.owl
   product_url: http://purl.obolibrary.org/obo/eo.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
-- description: Plant Environment Ontology in OBO format
+- category: OntologyProduct
+  description: Plant Environment Ontology in OBO format
   format: obo
   id: eo.obo
   name: eo.obo
   product_url: http://purl.obolibrary.org/obo/eo.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 repository: https://github.com/Planteome/plant-environment-ontology
 ---

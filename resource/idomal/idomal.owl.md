@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Malaria Ontology in OWL format
 format: owl
 id: idomal.owl

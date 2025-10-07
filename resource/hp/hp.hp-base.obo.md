@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Manually curated version of the ontology without the use of a reasoner,
   with references to imported terms, in OBO file format.
 format: obo

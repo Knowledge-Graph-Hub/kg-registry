@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Biological Spatial Ontology in OWL format
 format: owl
 id: bspo.owl

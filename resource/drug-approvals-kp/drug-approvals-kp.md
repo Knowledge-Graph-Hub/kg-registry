@@ -29,7 +29,7 @@ products:
   name: Drug Approvals KP Graph Nodes
   original_source:
   - chebi
-  - do
+  - doid
   - hp
   - mondo
   product_file_size: 701451
@@ -43,7 +43,7 @@ products:
   name: Drug Approvals KP Graph Edges
   original_source:
   - chebi
-  - do
+  - doid
   - hp
   - mondo
   product_file_size: 31052966

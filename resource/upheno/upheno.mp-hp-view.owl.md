@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: No longer actively maintained.
 format: owl
 id: upheno.mp-hp-view.owl

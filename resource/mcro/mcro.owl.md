@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Model Card Report Ontology in OWL format
 format: owl
 id: mcro.owl

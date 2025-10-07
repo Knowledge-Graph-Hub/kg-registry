@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: As go-basic.obo, in json format
 format: json
 id: go.go-basic.json

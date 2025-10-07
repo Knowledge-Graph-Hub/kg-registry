@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Mouse gross anatomy and development, timed in OWL format
 format: owl
 id: emap.owl

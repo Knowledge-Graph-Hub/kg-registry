@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Physico-chemical methods and properties in OBO format
 format: obo
 id: fix.obo

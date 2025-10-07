@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Software ontology in OWL format
 format: owl
 id: swo.owl

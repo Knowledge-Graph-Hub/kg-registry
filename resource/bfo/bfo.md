@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,19 +24,21 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Basic Formal Ontology
 products:
-- description: Basic Formal Ontology in OWL format
+- category: OntologyProduct
+  description: Basic Formal Ontology in OWL format
   format: owl
   id: bfo.owl
   name: bfo.owl
   product_file_size: 20902
   product_url: http://purl.obolibrary.org/obo/bfo.owl
-- description: Basic Formal Ontology in OBO format
+- category: OntologyProduct
+  description: Basic Formal Ontology in OBO format
   format: obo
   id: bfo.obo
   name: bfo.obo
   product_file_size: 17898
   product_url: http://purl.obolibrary.org/obo/bfo.obo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
   id: efo.owl
@@ -49,7 +51,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -89,7 +91,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OBO format
   format: obo
   id: efo.obo
@@ -102,7 +104,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt

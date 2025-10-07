@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Common Anatomy Reference Ontology in OWL format
 format: owl
 id: caro.owl

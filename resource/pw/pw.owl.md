@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Pathway ontology in OWL format
 format: owl
 id: pw.owl

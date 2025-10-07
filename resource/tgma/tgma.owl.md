@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Mosquito gross anatomy ontology in OWL format
 format: owl
 id: tgma.owl

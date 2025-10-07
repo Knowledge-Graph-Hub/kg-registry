@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Clytia hemisphaerica Development and Anatomy Ontology in OWL format
 format: owl
 id: clyh.owl

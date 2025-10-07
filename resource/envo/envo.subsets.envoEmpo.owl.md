@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Earth Microbiome Project subset
 format: owl
 id: envo.subsets.envoEmpo.owl

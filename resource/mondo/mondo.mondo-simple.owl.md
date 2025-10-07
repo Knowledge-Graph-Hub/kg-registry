@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: The main ontology classes and their hierarchies, without references to
   external terms.
 format: owl

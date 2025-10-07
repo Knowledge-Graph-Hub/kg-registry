@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Exposure ontology in OWL format
 format: owl
 id: exo.owl

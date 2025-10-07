@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: taxslim
 format: owl
 id: ncbitaxon.subsets.taxslim.owl

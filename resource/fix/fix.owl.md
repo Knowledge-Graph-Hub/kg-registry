@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Physico-chemical methods and properties in OWL format
 format: owl
 id: fix.owl

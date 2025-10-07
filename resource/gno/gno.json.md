@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Glycan Naming and Subsumption Ontology, JSON format (automated conversion
   from OWL)
 format: json

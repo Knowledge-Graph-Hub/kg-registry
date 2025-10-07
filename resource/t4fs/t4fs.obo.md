@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: terms4FAIRskills in OBO format
 format: obo
 id: t4fs.obo

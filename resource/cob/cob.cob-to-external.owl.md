@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: COB to external
 format: owl
 id: cob.cob-to-external.owl

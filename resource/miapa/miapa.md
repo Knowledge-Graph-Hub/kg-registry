@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,7 +24,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: MIAPA Ontology
 products:
-- description: MIAPA Ontology in OWL format
+- category: OntologyProduct
+  description: MIAPA Ontology in OWL format
   format: owl
   id: miapa.owl
   name: miapa.owl

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,51 +24,38 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Information Artifact Ontology
 products:
-- description: Information Artifact Ontology in OWL format
+- category: OntologyProduct
+  description: Information Artifact Ontology in OWL format
   format: owl
   id: iao.owl
   name: iao.owl
   product_file_size: 78925
   product_url: http://purl.obolibrary.org/obo/iao.owl
-- description: IAO ontology metadata
+- category: OntologyProduct
+  description: IAO ontology metadata
   format: owl
   id: iao.ontology-metadata.owl
   name: IAO ontology metadata
   product_file_size: 11084
   product_url: http://purl.obolibrary.org/obo/iao/ontology-metadata.owl
-- description: IAO dev
+- category: OntologyProduct
+  description: IAO dev
   format: owl
   id: iao.dev.iao.owl
   name: IAO dev
   product_url: http://purl.obolibrary.org/obo/iao/dev/iao.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
-- description: An ontology based on a theory of document acts describing what people
+- category: OntologyProduct
+  description: An ontology based on a theory of document acts describing what people
     can do with documents
   format: owl
   id: iao.d-acts.owl
   name: ontology of document acts
   product_file_size: 10158
   product_url: http://purl.obolibrary.org/obo/iao/d-acts.owl
-- category: DataModelProduct
-  description: OWL release of Monochrom Ontology
-  format: owl
-  id: chr.model.owl
-  name: Monochrom Ontology OWL release
-  original_source:
-  - ro
-  - go
-  - ncbitaxon
-  - iao
-  - geno
-  - skos
-  - gff
-  product_file_size: 102365
-  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
-  secondary_source:
-  - chr
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
   id: efo.owl
@@ -81,7 +68,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -121,7 +108,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OBO format
   format: obo
   id: efo.obo
@@ -134,7 +121,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -174,6 +161,23 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
+- category: OntologyProduct
+  description: OWL release of Monochrom Ontology
+  format: owl
+  id: chr.model.owl
+  name: Monochrom Ontology OWL release
+  original_source:
+  - ro
+  - go
+  - ncbitaxon
+  - iao
+  - geno
+  - skos
+  - gff
+  product_file_size: 102365
+  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
+  secondary_source:
+  - chr
 - category: DataModelProduct
   description: The Basic subset of the Plant Trait Ontology in OBO format
   format: obo

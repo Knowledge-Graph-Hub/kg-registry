@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Xenopus Anatomy Ontology
 products:
-- description: Xenopus Anatomy Ontology in OWL format
+- category: OntologyProduct
+  description: Xenopus Anatomy Ontology in OWL format
   format: owl
   id: xao.owl
   name: xao.owl
   product_file_size: 226615
   product_url: http://purl.obolibrary.org/obo/xao.owl
-- description: Xenopus Anatomy Ontology in OBO format
+- category: OntologyProduct
+  description: Xenopus Anatomy Ontology in OBO format
   format: obo
   id: xao.obo
   name: xao.obo

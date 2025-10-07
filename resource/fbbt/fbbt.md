@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,37 +24,42 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Drosophila gross anatomy
 products:
-- description: Drosophila gross anatomy in OWL format
+- category: OntologyProduct
+  description: Drosophila gross anatomy in OWL format
   format: owl
   id: fbbt.owl
   name: fbbt.owl
   product_file_size: 119097238
   product_url: http://purl.obolibrary.org/obo/fbbt.owl
-- description: Drosophila gross anatomy in OBO format
+- category: OntologyProduct
+  description: Drosophila gross anatomy in OBO format
   format: obo
   id: fbbt.obo
   name: fbbt.obo
   product_file_size: 38384549
   product_url: http://purl.obolibrary.org/obo/fbbt.obo
-- description: Drosophila gross anatomy in JSON format
+- category: OntologyProduct
+  description: Drosophila gross anatomy in JSON format
   format: json
   id: fbbt.json
   name: fbbt.json
   product_file_size: 77595983
   product_url: http://purl.obolibrary.org/obo/fbbt.json
-- description: Drosophila gross anatomy in OWL format
+- category: OntologyProduct
+  description: Drosophila gross anatomy in OWL format
   format: owl
   id: fbbt.fbbt-simple.owl
   name: fbbt.fbbt-simple.owl
   product_file_size: 110984569
   product_url: http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl
-- description: Drosophila gross anatomy in OBO format
+- category: OntologyProduct
+  description: Drosophila gross anatomy in OBO format
   format: obo
   id: fbbt.fbbt-simple.obo
   name: fbbt.fbbt-simple.obo
   product_file_size: 38384573
   product_url: http://purl.obolibrary.org/obo/fbbt/fbbt-simple.obo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
   id: efo.owl
@@ -67,7 +72,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -107,7 +112,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OBO format
   format: obo
   id: efo.obo
@@ -120,7 +125,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt

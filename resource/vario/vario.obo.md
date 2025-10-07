@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: VariO in OBO format
 format: obo
 id: vario.obo

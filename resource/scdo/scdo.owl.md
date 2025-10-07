@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Sickle Cell Disease Ontology in OWL format
 format: owl
 id: scdo.owl

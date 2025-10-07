@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Influenza Ontology in OWL format
 format: owl
 id: flu.owl

@@ -14,7 +14,7 @@ license:
 collection:
 - obo-foundry
 layout: resource_detail
-category: DataModel
+category: Ontology
 domains:
 - biomedical
 contacts:
@@ -31,6 +31,7 @@ products:
   name: exmo.owl
   description: Exercise Medicine Ontology in OWL format
   format: owl
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/exmo.owl
 ---
 

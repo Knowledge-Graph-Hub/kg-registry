@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,7 +24,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Neuro Behavior Ontology
 products:
-- description: Neuro Behavior Ontology in OWL format
+- category: OntologyProduct
+  description: Neuro Behavior Ontology in OWL format
   format: owl
   id: nbo.owl
   name: nbo.owl

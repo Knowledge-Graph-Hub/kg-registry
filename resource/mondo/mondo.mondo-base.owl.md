@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: The main ontology plus axioms connecting to select external ontologies,
   excluding the external ontologies themselves
 format: owl

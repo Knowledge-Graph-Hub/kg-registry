@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Integrative and Conjugative Element Ontology in OWL format
 format: owl
 id: iceo.owl

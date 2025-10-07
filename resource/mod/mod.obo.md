@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: PSI-MOD Ontology, OBO format
 format: obo
 id: mod.obo

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Simple, manually curated version of the ontology without the use of a
   reasoner, and without any imported terms, in OWL (RDF/XML) file format.
 format: owl

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Exercise Medicine Ontology in OWL format
 format: owl
 id: exmo.owl

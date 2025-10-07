@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Oral Health and Disease Ontology in OWL format
 format: owl
 id: ohd.owl

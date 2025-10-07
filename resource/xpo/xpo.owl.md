@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Xenopus Phenotype Ontology in OWL format
 format: owl
 id: xpo.owl

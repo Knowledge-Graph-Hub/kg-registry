@@ -1,6 +1,6 @@
 ---
 activity_status: orphaned
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,21 +25,23 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Variation Ontology
 products:
-- description: VariO main release in OWL
+- category: OntologyProduct
+  description: VariO main release in OWL
   format: owl
   id: vario.owl
   name: VariO main release in OWL
   product_url: http://purl.obolibrary.org/obo/vario.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2025-10-06: Timeout connecting
     to URL'
-- description: VariO in OBO format
+- category: OntologyProduct
+  description: VariO in OBO format
   format: obo
   id: vario.obo
   name: VariO in OBO format
   product_url: http://purl.obolibrary.org/obo/vario.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2025-10-06: Timeout connecting
     to URL'
 ---
 ## Description

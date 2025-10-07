@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Vaccine Ontology in OWL format
 format: owl
 id: vo.owl

@@ -7,7 +7,7 @@ id: foodb.data.json
 name: FooDB JSON Data
 product_url: https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip
 warnings:
-- File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
+- File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2025-09-29_ No Content-Length
   header found

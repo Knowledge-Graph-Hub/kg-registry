@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Gender, Sex, and Sexual Orientation (GSSO) ontology in JSON format
 format: json
 id: gsso.json

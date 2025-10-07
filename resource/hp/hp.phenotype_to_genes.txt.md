@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: https://hpo.jax.org/app/data/annotations
 format: tsv
 id: hp.phenotype_to_genes.txt

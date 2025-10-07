@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Rat Strain Ontology in OWL format
 format: owl
 id: rs.owl

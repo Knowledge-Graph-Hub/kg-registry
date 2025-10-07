@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,17 +25,19 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Mass spectrometry ontology
 products:
-- description: Mass spectrometry ontology in OBO format
+- category: OntologyProduct
+  description: Mass spectrometry ontology in OBO format
   format: obo
   id: ms.obo
   name: ms.obo
-  product_file_size: 1053496
+  product_file_size: 1053531
   product_url: http://purl.obolibrary.org/obo/ms.obo
-- description: Mass spectrometry ontology in OWL format
+- category: OntologyProduct
+  description: Mass spectrometry ontology in OWL format
   format: owl
   id: ms.owl
   name: ms.owl
-  product_file_size: 4501375
+  product_file_size: 4612217
   product_url: http://purl.obolibrary.org/obo/ms.owl
 - category: GraphProduct
   description: Neo4j database dump of the Clinical Knowledge Graph and additional
@@ -72,7 +74,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go
@@ -118,7 +120,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go

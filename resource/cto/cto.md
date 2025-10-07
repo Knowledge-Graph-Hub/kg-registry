@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -28,7 +28,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: 'CTO: Core Ontology of Clinical Trials'
 products:
-- description: 'CTO: Core Ontology of Clinical Trials in OWL format'
+- category: OntologyProduct
+  description: 'CTO: Core Ontology of Clinical Trials in OWL format'
   format: owl
   id: cto.owl
   name: cto.owl

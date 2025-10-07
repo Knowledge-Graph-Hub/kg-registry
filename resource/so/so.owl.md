@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Main SO OWL release
 format: owl
 id: so.owl

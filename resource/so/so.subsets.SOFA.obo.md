@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: This subset includes only locatable sequence features and is designed
   for use in such outputs as GFF3
 format: obo

@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Platynereis Developmental Stages
 products:
-- description: Platynereis Developmental Stages in OWL format
+- category: OntologyProduct
+  description: Platynereis Developmental Stages in OWL format
   format: owl
   id: pdumdv.owl
   name: pdumdv.owl
   product_file_size: 6379
   product_url: http://purl.obolibrary.org/obo/pdumdv.owl
-- description: Platynereis Developmental Stages in OBO format
+- category: OntologyProduct
+  description: Platynereis Developmental Stages in OBO format
   format: obo
   id: pdumdv.obo
   name: pdumdv.obo

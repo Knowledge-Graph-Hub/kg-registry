@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontology of Microbial Phenotypes in OWL format
 format: owl
 id: omp.owl

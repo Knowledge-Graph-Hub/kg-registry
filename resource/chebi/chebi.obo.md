@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Chemical Entities of Biological Interest in OBO format
 format: obo
 id: chebi.obo

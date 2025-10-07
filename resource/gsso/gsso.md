@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,19 +25,22 @@ license:
   label: Apache 2.0 License
 name: Gender, Sex, and Sexual Orientation (GSSO) ontology
 products:
-- description: Gender, Sex, and Sexual Orientation (GSSO) ontology in OWL format
+- category: OntologyProduct
+  description: Gender, Sex, and Sexual Orientation (GSSO) ontology in OWL format
   format: owl
   id: gsso.owl
   name: gsso.owl
   product_file_size: 2201424
   product_url: http://purl.obolibrary.org/obo/gsso.owl
-- description: Gender, Sex, and Sexual Orientation (GSSO) ontology in OBO format
+- category: OntologyProduct
+  description: Gender, Sex, and Sexual Orientation (GSSO) ontology in OBO format
   format: obo
   id: gsso.obo
   name: gsso.obo
   product_file_size: 969731
   product_url: http://purl.obolibrary.org/obo/gsso.obo
-- description: Gender, Sex, and Sexual Orientation (GSSO) ontology in JSON format
+- category: OntologyProduct
+  description: Gender, Sex, and Sexual Orientation (GSSO) ontology in JSON format
   format: json
   id: gsso.json
   name: gsso.json

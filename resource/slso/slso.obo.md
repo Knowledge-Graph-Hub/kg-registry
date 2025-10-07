@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Space Life Sciences Ontology in OBO format
 format: obo
 id: slso.obo

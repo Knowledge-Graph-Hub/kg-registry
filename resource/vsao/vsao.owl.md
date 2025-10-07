@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Vertebrate Skeletal Anatomy Ontology- in OWL format
 format: owl
 id: vsao.owl

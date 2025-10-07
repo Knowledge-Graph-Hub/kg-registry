@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Toxic Process Ontology in OWL format
 format: owl
 id: txpo.owl

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Plant Stress Ontology
 products:
-- description: Plant Stress Ontology in OWL format
+- category: OntologyProduct
+  description: Plant Stress Ontology in OWL format
   format: owl
   id: pso.owl
   name: pso.owl
   product_file_size: 277286
   product_url: http://purl.obolibrary.org/obo/pso.owl
-- description: Plant Stress Ontology in OBO format
+- category: OntologyProduct
+  description: Plant Stress Ontology in OBO format
   format: obo
   id: pso.obo
   name: pso.obo

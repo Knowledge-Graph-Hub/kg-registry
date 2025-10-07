@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,7 +25,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology of Genetic Susceptibility Factor
 products:
-- description: Ontology of Genetic Susceptibility Factor in OWL format
+- category: OntologyProduct
+  description: Ontology of Genetic Susceptibility Factor in OWL format
   format: owl
   id: ogsf.owl
   name: ogsf.owl

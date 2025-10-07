@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Basic Formal Ontology in OWL format
 format: owl
 id: bfo.owl

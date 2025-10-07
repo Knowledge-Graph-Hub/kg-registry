@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Vertebrate Taxonomy Ontology in OWL format
 format: owl
 id: vto.owl

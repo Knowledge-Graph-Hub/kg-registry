@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Occupation Ontology in OWL format
 format: owl
 id: occo.owl

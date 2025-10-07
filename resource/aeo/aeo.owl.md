@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Anatomical Entity Ontology in OWL format
 format: owl
 id: aeo.owl

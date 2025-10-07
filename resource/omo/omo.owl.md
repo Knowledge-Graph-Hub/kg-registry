@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: OBO Metadata Ontology in OWL format
 format: owl
 id: omo.owl

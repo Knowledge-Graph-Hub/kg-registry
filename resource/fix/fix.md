@@ -1,6 +1,6 @@
 ---
 activity_status: orphaned
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -17,19 +17,21 @@ license:
   label: Not specified
 name: Physico-chemical methods and properties
 products:
-- description: Physico-chemical methods and properties in OWL format
+- category: OntologyProduct
+  description: Physico-chemical methods and properties in OWL format
   format: owl
   id: fix.owl
   name: fix.owl
   product_file_size: 880338
   product_url: http://purl.obolibrary.org/obo/fix.owl
-- description: Physico-chemical methods and properties in OBO format
+- category: OntologyProduct
+  description: Physico-chemical methods and properties in OBO format
   format: obo
   id: fix.obo
   name: fix.obo
   product_url: http://purl.obolibrary.org/obo/fix.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-10-06: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
 ---
 ## Description

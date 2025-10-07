@@ -9,7 +9,7 @@ original_source:
 - medline
 - mesh
 - pid
-- do
+- doid
 - diseases
 - drugcentral
 - go

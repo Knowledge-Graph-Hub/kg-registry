@@ -1,5 +1,5 @@
 ---
-category: DataModelProduct
+category: OntologyProduct
 description: EDAM OWL release
 format: owl
 id: edam.owl

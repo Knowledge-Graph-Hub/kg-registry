@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,25 +25,29 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: terms4FAIRskills
 products:
-- description: terms4FAIRskills in OWL format
+- category: OntologyProduct
+  description: terms4FAIRskills in OWL format
   format: owl
   id: t4fs.owl
   name: t4fs.owl
   product_file_size: 91877
   product_url: http://purl.obolibrary.org/obo/t4fs.owl
-- description: terms4FAIRskills in OBO format
+- category: OntologyProduct
+  description: terms4FAIRskills in OBO format
   format: obo
   id: t4fs.obo
   name: t4fs.obo
   product_file_size: 67799
   product_url: http://purl.obolibrary.org/obo/t4fs.obo
-- description: terms4FAIRskills in JSON format
+- category: OntologyProduct
+  description: terms4FAIRskills in JSON format
   format: json
   id: t4fs.json
   name: t4fs.json
   product_file_size: 74586
   product_url: http://purl.obolibrary.org/obo/t4fs.json
-- description: This community view of T4FS makes the ontology available in OWL without
+- category: OntologyProduct
+  description: This community view of T4FS makes the ontology available in OWL without
     upper-level ontology (ULO) terms to give the user community a simpler view of
     the term hierarchy.
   format: owl
@@ -52,9 +56,10 @@ products:
     ontology (ULO) terms to give the user community a simpler view of the term hierarchy.
   product_url: http://purl.obolibrary.org/obo/t4fs-community.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
-- description: This community view of T4FS makes the ontology available in OBO format
+- category: OntologyProduct
+  description: This community view of T4FS makes the ontology available in OBO format
     without upper-level ontology (ULO) terms to give the user community a simpler
     view of the term hierarchy.
   format: obo
@@ -64,9 +69,10 @@ products:
     the term hierarchy.
   product_url: http://purl.obolibrary.org/obo/t4fs-community.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
-- description: This community view of T4FS makes the ontology available in JSON format
+- category: OntologyProduct
+  description: This community view of T4FS makes the ontology available in JSON format
     without upper-level ontology (ULO) terms to give the user community a simpler
     view of the term hierarchy.
   format: json
@@ -76,7 +82,7 @@ products:
     the term hierarchy.
   product_url: http://purl.obolibrary.org/obo/t4fs-community.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-09-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
     when accessing file'
 repository: https://github.com/terms4fairskills/FAIRterminology
 ---

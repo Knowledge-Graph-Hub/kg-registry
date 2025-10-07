@@ -5,7 +5,7 @@ format: sssom
 id: mondo.sssom
 name: MONDO SSSOM
 original_source:
-- do
+- doid
 - hp
 - hgnc
 product_file_size: 1437457

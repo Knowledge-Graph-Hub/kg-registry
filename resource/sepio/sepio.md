@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,7 +25,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Scientific Evidence and Provenance Information Ontology
 products:
-- description: SEPIO
+- category: OntologyProduct
+  description: SEPIO
   format: owl
   id: sepio.owl
   name: SEPIO

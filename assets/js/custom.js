@@ -21,11 +21,13 @@ jQuery(document).ready(function () {
         "KnowledgeGraph": "globe",
         "DataSource": "shop",
         "DataModel": "diagram-3",
+        "Ontology": "diagram-2",
         "GraphProduct": "globe",
         "Product": "box",
         "MappingProduct": "map",
         "ProcessProduct": "gear",
         "DataModelProduct": "diagram-3",
+        "OntologyProduct": "diagram-2",
         "GraphicalInterface": "window",
         "ProgrammingInterface": "code-square"
     };

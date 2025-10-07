@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Drosophila Phenotype Ontology in OWL format
 format: owl
 id: dpo.owl

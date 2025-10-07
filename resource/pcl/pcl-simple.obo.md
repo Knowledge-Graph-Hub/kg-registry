@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Provisional Cell Ontology in OBO format
 format: obo
 id: pcl-simple.obo

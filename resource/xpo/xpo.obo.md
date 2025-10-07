@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Xenopus Phenotype Ontology in OBO format
 format: obo
 id: xpo.obo

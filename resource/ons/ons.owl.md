@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: ONS latest release
 format: owl
 id: ons.owl

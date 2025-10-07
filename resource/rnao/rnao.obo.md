@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: RNA ontology in OBO format
 format: obo
 id: rnao.obo

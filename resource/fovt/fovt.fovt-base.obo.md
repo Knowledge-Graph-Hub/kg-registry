@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: FuTRES Ontology of Vertebrate Traits in OBO format
 format: obo
 id: fovt.fovt-base.obo

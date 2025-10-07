@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: planaria-ontology in OWL format
 format: owl
 id: plana.owl

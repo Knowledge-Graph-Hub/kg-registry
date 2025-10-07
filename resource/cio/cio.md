@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Confidence Information Ontology
 products:
-- description: Confidence Information Ontology in OWL format
+- category: OntologyProduct
+  description: Confidence Information Ontology in OWL format
   format: owl
   id: cio.owl
   name: cio.owl
   product_file_size: 6187
   product_url: http://purl.obolibrary.org/obo/cio.owl
-- description: Confidence Information Ontology in OBO format
+- category: OntologyProduct
+  description: Confidence Information Ontology in OBO format
   format: obo
   id: cio.obo
   name: cio.obo

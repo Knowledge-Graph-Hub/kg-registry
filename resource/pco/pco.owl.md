@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Population and Community Ontology in OWL format
 format: owl
 id: pco.owl

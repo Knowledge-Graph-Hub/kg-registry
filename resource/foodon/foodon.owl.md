@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: FoodOn ontology with import file references and over 9,000 food products
 format: owl
 id: foodon.owl

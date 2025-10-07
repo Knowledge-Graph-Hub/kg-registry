@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Mosquito insecticide resistance in OBO format
 format: obo
 id: miro.obo

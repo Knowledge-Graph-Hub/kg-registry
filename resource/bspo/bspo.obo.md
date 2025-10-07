@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Biological Spatial Ontology in OBO format
 format: obo
 id: bspo.obo

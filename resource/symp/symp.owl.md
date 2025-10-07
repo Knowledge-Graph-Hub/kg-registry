@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Symptom Ontology in OWL format
 format: owl
 id: symp.owl

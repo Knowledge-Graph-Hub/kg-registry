@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Provisional Cell Ontology in JSON format
 format: json
 id: pcl.json

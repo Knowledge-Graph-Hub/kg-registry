@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,14 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Genotype Ontology
 products:
-- description: GENO
+- category: OntologyProduct
+  description: GENO
   format: owl
   id: geno.owl
   name: GENO
   product_file_size: 172319
   product_url: http://purl.obolibrary.org/obo/geno.owl
-- category: DataModelProduct
+- category: OntologyProduct
   description: OWL release of Monochrom Ontology
   format: owl
   id: chr.model.owl

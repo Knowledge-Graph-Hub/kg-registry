@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Epidemiology Ontology in OWL format
 format: owl
 id: epo.owl

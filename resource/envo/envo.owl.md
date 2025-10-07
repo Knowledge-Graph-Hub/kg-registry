@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: main ENVO OWL release
 format: owl
 id: envo.owl

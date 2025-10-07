@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Plant Trait Ontology in OBO format
 format: obo
 id: to.obo

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Drosophila gross anatomy in OWL format
 format: owl
 id: fbbt.owl

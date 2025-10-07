@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Mosquito gross anatomy ontology in OBO format
 format: obo
 id: tgma.obo

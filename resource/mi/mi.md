@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Molecular Interactions Controlled Vocabulary
 products:
-- description: Molecular Interactions Controlled Vocabulary in OWL format
+- category: OntologyProduct
+  description: Molecular Interactions Controlled Vocabulary in OWL format
   format: owl
   id: mi.owl
   name: mi.owl
   product_file_size: 247560
   product_url: http://purl.obolibrary.org/obo/mi.owl
-- description: Molecular Interactions Controlled Vocabulary in OBO format
+- category: OntologyProduct
+  description: Molecular Interactions Controlled Vocabulary in OBO format
   format: obo
   id: mi.obo
   name: mi.obo
@@ -52,7 +54,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -115,7 +117,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -199,7 +201,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go
@@ -245,7 +247,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go

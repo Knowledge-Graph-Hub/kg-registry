@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: As go-plus.owl, in obographs json format
 format: json
 id: go.extensions.go-plus.json

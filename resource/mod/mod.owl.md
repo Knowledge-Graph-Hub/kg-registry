@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: PSI-MOD Ontology, OWL format
 format: owl
 id: mod.owl

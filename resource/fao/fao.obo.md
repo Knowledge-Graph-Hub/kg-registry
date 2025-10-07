@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Fungal gross anatomy in OBO format
 format: obo
 id: fao.obo

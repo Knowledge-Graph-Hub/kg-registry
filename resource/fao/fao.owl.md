@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Fungal gross anatomy in OWL format
 format: owl
 id: fao.owl

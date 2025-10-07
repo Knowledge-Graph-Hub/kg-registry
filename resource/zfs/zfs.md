@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Zebrafish developmental stages ontology
 products:
-- description: Zebrafish developmental stages ontology in OWL format
+- category: OntologyProduct
+  description: Zebrafish developmental stages ontology in OWL format
   format: owl
   id: zfs.owl
   name: zfs.owl
   product_file_size: 74652
   product_url: http://purl.obolibrary.org/obo/zfs.owl
-- description: Zebrafish developmental stages ontology in OBO format
+- category: OntologyProduct
+  description: Zebrafish developmental stages ontology in OBO format
   format: obo
   id: zfs.obo
   name: zfs.obo

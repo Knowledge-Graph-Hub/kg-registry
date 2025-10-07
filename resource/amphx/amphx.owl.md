@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: The Amphioxus Development and Anatomy Ontology in OWL format
 format: owl
 id: amphx.owl

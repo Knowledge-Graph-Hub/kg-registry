@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Plant Stress Ontology in OBO format
 format: obo
 id: pso.obo

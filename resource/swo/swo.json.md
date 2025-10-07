@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Software ontology in JSON format
 format: json
 id: swo.json

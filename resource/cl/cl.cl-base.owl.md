@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: complete CL but with no imports or external axioms
 format: owl
 id: cl.cl-base.owl

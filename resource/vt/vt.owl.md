@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Vertebrate trait ontology in OWL format
 format: owl
 id: vt.owl

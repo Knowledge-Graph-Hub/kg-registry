@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 contacts:
 - category: Individual
   contact_details:
@@ -31,7 +31,7 @@ license:
   label: CC-BY-SA-4.0
 name: EDAM Ontology
 products:
-- category: DataModelProduct
+- category: OntologyProduct
   description: EDAM OWL release
   format: owl
   id: edam.owl
@@ -44,7 +44,7 @@ products:
   product_url: http://edamontology.org/EDAM.owl
   secondary_source:
   - edam
-- category: DataModelProduct
+- category: OntologyProduct
   description: EDAM TSV export
   format: tsv
   id: edam.tsv
@@ -57,7 +57,7 @@ products:
   product_url: https://edamontology.org/EDAM.tsv
   secondary_source:
   - edam
-- category: DataModelProduct
+- category: OntologyProduct
   description: EDAM CSV export
   format: csv
   id: edam.csv
@@ -85,7 +85,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam
@@ -148,7 +148,7 @@ products:
   - uberon
   - pato
   - cl
-  - do
+  - doid
   - obi
   - obib
   - edam

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: For a description of the format see https://github.com/geneontology/obographs.
 format: json
 id: mp.json

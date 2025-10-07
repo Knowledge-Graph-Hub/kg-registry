@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Clytia hemisphaerica Development and Anatomy Ontology
 products:
-- description: Clytia hemisphaerica Development and Anatomy Ontology in OWL format
+- category: OntologyProduct
+  description: Clytia hemisphaerica Development and Anatomy Ontology in OWL format
   format: owl
   id: clyh.owl
   name: clyh.owl
   product_file_size: 13404
   product_url: http://purl.obolibrary.org/obo/clyh.owl
-- description: Clytia hemisphaerica Development and Anatomy Ontology in OBO format
+- category: OntologyProduct
+  description: Clytia hemisphaerica Development and Anatomy Ontology in OBO format
   format: obo
   id: clyh.obo
   name: clyh.obo

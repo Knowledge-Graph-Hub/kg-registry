@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: FoodOn core ontology (currently the same as foodon.owl)
 format: owl
 id: foodon_core.owl

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Mouse pathology ontology in OWL format
 format: owl
 id: mpath.owl

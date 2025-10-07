@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: PRO without reasoning applied, OBO format.
 format: obo
 id: pr-asserted.obo

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Biological Spatial Ontology
 products:
-- description: Biological Spatial Ontology in OWL format
+- category: OntologyProduct
+  description: Biological Spatial Ontology in OWL format
   format: owl
   id: bspo.owl
   name: bspo.owl
   product_file_size: 45961
   product_url: http://purl.obolibrary.org/obo/bspo.owl
-- description: Biological Spatial Ontology in OBO format
+- category: OntologyProduct
+  description: Biological Spatial Ontology in OBO format
   format: obo
   id: bspo.obo
   name: bspo.obo

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -26,37 +26,43 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Medical Action Ontology
 products:
-- description: Medical Action Ontology in OWL format
+- category: OntologyProduct
+  description: Medical Action Ontology in OWL format
   format: owl
   id: maxo.owl
   name: maxo.owl
   product_file_size: 16025464
   product_url: http://purl.obolibrary.org/obo/maxo.owl
-- description: Medical Action Ontology in OBO format
+- category: OntologyProduct
+  description: Medical Action Ontology in OBO format
   format: obo
   id: maxo.obo
   name: maxo.obo
   product_file_size: 4091313
   product_url: http://purl.obolibrary.org/obo/maxo.obo
-- description: Medical Action Ontology in JSON format
+- category: OntologyProduct
+  description: Medical Action Ontology in JSON format
   format: json
   id: maxo.json
   name: maxo.json
   product_file_size: 9544243
   product_url: http://purl.obolibrary.org/obo/maxo.json
-- description: Medical Action Ontology in OWL format
+- category: OntologyProduct
+  description: Medical Action Ontology in OWL format
   format: owl
   id: maxo.maxo-base.owl
   name: maxo.maxo-base.owl
   product_file_size: 3500154
   product_url: http://purl.obolibrary.org/obo/maxo/maxo-base.owl
-- description: Medical Action Ontology in OBO format
+- category: OntologyProduct
+  description: Medical Action Ontology in OBO format
   format: obo
   id: maxo.maxo-base.obo
   name: maxo.maxo-base.obo
   product_file_size: 1074502
   product_url: http://purl.obolibrary.org/obo/maxo/maxo-base.obo
-- description: Medical Action Ontology in JSON format
+- category: OntologyProduct
+  description: Medical Action Ontology in JSON format
   format: json
   id: maxo.maxo-base.json
   name: maxo.maxo-base.json
@@ -64,7 +70,7 @@ products:
   product_url: http://purl.obolibrary.org/obo/maxo/maxo-base.json
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
-  edge_count: 14486132
+  edge_count: 14783802
   format: kgx
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
@@ -86,7 +92,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance
@@ -148,7 +154,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 14486132
+  edge_count: 14783802
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
@@ -170,7 +176,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance
@@ -232,7 +238,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
-  edge_count: 14486132
+  edge_count: 14783802
   format: rdfxml
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
@@ -254,7 +260,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance
@@ -317,7 +323,7 @@ products:
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
-  edge_count: 14486132
+  edge_count: 14783802
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -338,7 +344,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance
@@ -401,7 +407,7 @@ products:
   warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
-  edge_count: 14486132
+  edge_count: 14783802
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
   node_categories:
@@ -422,7 +428,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance
@@ -484,7 +490,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 14486132
+  edge_count: 14783802
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
   name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -506,7 +512,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance
@@ -568,7 +574,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 14486132
+  edge_count: 14783802
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
   name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -590,7 +596,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance
@@ -652,7 +658,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 14486132
+  edge_count: 14783802
   format: neo4j
   id: kg-monarch.graph.neo4j.edges
   name: Neo4j Dump of KG-Monarch Edges
@@ -674,7 +680,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance
@@ -736,7 +742,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 14486132
+  edge_count: 14783802
   format: neo4j
   id: kg-monarch.graph.neo4j.nodes
   name: Neo4j Dump of KG-Monarch Nodes
@@ -758,7 +764,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1344798
+  node_count: 1366818
   original_source:
   - phenio
   - alliance

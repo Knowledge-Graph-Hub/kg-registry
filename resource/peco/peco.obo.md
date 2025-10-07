@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Plant Experimental Conditions Ontology in OBO format
 format: obo
 id: peco.obo

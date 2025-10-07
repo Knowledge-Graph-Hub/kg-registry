@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Dictyostelium discoideum phenotype ontology in OBO format
 format: obo
 id: ddpheno.obo

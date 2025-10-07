@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,7 +24,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Ontology of Vaccine Adverse Events
 products:
-- description: Ontology of Vaccine Adverse Events in OWL format
+- category: OntologyProduct
+  description: Ontology of Vaccine Adverse Events in OWL format
   format: owl
   id: ovae.owl
   name: ovae.owl

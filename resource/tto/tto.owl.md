@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Teleost taxonomy ontology in OWL format
 format: owl
 id: tto.owl

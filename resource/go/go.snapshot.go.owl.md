@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Equivalent to go.owl, but released daily. Note the snapshot release is
   not archived.
 format: owl

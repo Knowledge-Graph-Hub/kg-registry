@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
   in OBO format
 format: obo

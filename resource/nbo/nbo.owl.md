@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Neuro Behavior Ontology in OWL format
 format: owl
 id: nbo.owl

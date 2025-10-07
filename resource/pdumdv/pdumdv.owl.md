@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Platynereis Developmental Stages in OWL format
 format: owl
 id: pdumdv.owl

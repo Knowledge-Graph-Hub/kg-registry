@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: SEPIO
 format: owl
 id: sepio.owl

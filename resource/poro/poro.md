@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Porifera Ontology
 products:
-- description: Porifera Ontology in OWL format
+- category: OntologyProduct
+  description: Porifera Ontology in OWL format
   format: owl
   id: poro.owl
   name: poro.owl
   product_file_size: 62597
   product_url: http://purl.obolibrary.org/obo/poro.owl
-- description: Porifera Ontology in OBO format
+- category: OntologyProduct
+  description: Porifera Ontology in OBO format
   format: obo
   id: poro.obo
   name: poro.obo

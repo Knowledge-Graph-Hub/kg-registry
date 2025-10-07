@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,7 +25,8 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Biological Collections Ontology
 products:
-- description: Biological Collections Ontology in OWL format
+- category: OntologyProduct
+  description: Biological Collections Ontology in OWL format
   format: owl
   id: bco.owl
   name: bco.owl

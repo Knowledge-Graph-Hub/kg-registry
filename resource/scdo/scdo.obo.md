@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Sickle Cell Disease Ontology in OBO format
 format: obo
 id: scdo.obo

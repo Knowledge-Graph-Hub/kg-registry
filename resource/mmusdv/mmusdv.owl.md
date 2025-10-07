@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Mouse Developmental Stages in OWL format
 format: owl
 id: mmusdv.owl

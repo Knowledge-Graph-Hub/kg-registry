@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -27,13 +27,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Software ontology
 products:
-- description: Software ontology in OWL format
+- category: OntologyProduct
+  description: Software ontology in OWL format
   format: owl
   id: swo.owl
   name: swo.owl
   product_file_size: 236485
   product_url: http://purl.obolibrary.org/obo/swo.owl
-- description: Software ontology in JSON format
+- category: OntologyProduct
+  description: Software ontology in JSON format
   format: json
   id: swo.json
   name: swo.json

@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Medical Action Ontology in OWL format
 format: owl
 id: maxo.maxo-base.owl

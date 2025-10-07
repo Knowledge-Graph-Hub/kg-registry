@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,13 +25,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Collembola Anatomy Ontology
 products:
-- description: Collembola Anatomy Ontology in OWL format
+- category: OntologyProduct
+  description: Collembola Anatomy Ontology in OWL format
   format: owl
   id: clao.owl
   name: clao.owl
   product_file_size: 112550
   product_url: http://purl.obolibrary.org/obo/clao.owl
-- description: Collembola Anatomy Ontology in OBO format
+- category: OntologyProduct
+  description: Collembola Anatomy Ontology in OBO format
   format: obo
   id: clao.obo
   name: clao.obo

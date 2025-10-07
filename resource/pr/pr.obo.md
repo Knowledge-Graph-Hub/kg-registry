@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: PRO after reasoning has been applied, OBO format.
 format: obo
 id: pr.obo

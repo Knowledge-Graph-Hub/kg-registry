@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: A direct transformation of the standard NCIt content using OBO-style
   term and ontology IRIs and annotation properties.
 format: owl

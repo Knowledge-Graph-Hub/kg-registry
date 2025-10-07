@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,19 +25,21 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Zebrafish anatomy and development ontology
 products:
-- description: Zebrafish anatomy and development ontology in OWL format
+- category: OntologyProduct
+  description: Zebrafish anatomy and development ontology in OWL format
   format: owl
   id: zfa.owl
   name: zfa.owl
   product_file_size: 401719
   product_url: http://purl.obolibrary.org/obo/zfa.owl
-- description: Zebrafish anatomy and development ontology in OBO format
+- category: OntologyProduct
+  description: Zebrafish anatomy and development ontology in OBO format
   format: obo
   id: zfa.obo
   name: zfa.obo
   product_file_size: 254974
   product_url: http://purl.obolibrary.org/obo/zfa.obo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
   id: efo.owl
@@ -50,7 +52,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -90,7 +92,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OBO format
   format: obo
   id: efo.obo
@@ -103,7 +105,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt

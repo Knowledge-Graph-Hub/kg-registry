@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Teleost Anatomy Ontology in OWL format
 format: owl
 id: tao.owl

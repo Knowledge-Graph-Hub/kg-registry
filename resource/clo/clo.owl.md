@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Cell Line Ontology in OWL format
 format: owl
 id: clo.owl

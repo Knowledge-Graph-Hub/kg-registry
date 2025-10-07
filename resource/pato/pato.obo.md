@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Phenotype And Trait Ontology in OBO format
 format: obo
 id: pato.obo

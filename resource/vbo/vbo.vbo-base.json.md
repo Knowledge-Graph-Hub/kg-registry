@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Vertebrate Breed Ontology in JSON format
 format: json
 id: vbo.vbo-base.json

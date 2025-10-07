@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -24,13 +24,15 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 name: Taxonomic rank vocabulary
 products:
-- description: Taxonomic rank vocabulary in OWL format
+- category: OntologyProduct
+  description: Taxonomic rank vocabulary in OWL format
   format: owl
   id: taxrank.owl
   name: taxrank.owl
   product_file_size: 3843
   product_url: http://purl.obolibrary.org/obo/taxrank.owl
-- description: Taxonomic rank vocabulary in OBO format
+- category: OntologyProduct
+  description: Taxonomic rank vocabulary in OBO format
   format: obo
   id: taxrank.obo
   name: taxrank.obo

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -28,20 +28,23 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Glycan Naming and Subsumption Ontology (GNOme)
 products:
-- description: Glycan Naming and Subsumption Ontology, OWL format (primary)
+- category: OntologyProduct
+  description: Glycan Naming and Subsumption Ontology, OWL format (primary)
   format: owl
   id: gno.owl
   name: gno.owl
   product_file_size: 210874083
   product_url: http://purl.obolibrary.org/obo/gno.owl
-- description: Glycan Naming and Subsumption Ontology, OBO format (automated conversion
+- category: OntologyProduct
+  description: Glycan Naming and Subsumption Ontology, OBO format (automated conversion
     from OWL)
   format: obo
   id: gno.obo
   name: gno.obo
   product_file_size: 132948925
   product_url: http://purl.obolibrary.org/obo/gno.obo
-- description: Glycan Naming and Subsumption Ontology, JSON format (automated conversion
+- category: OntologyProduct
+  description: Glycan Naming and Subsumption Ontology, JSON format (automated conversion
     from OWL)
   format: json
   id: gno.json

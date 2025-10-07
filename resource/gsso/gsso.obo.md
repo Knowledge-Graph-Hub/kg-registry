@@ -1,4 +1,5 @@
 ---
+category: OntologyProduct
 description: Gender, Sex, and Sexual Orientation (GSSO) ontology in OBO format
 format: obo
 id: gsso.obo

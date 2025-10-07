@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: DataModel
+category: Ontology
 collection:
 - obo-foundry
 contacts:
@@ -25,19 +25,22 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: BRENDA tissue / enzyme source
 products:
-- description: BRENDA tissue / enzyme source in OWL format
+- category: OntologyProduct
+  description: BRENDA tissue / enzyme source in OWL format
   format: owl
   id: bto.owl
   name: bto.owl
   product_file_size: 722362
   product_url: http://purl.obolibrary.org/obo/bto.owl
-- description: BRENDA tissue / enzyme source in OBO format
+- category: OntologyProduct
+  description: BRENDA tissue / enzyme source in OBO format
   format: obo
   id: bto.obo
   name: bto.obo
   product_file_size: 479657
   product_url: http://purl.obolibrary.org/obo/bto.obo
-- description: BRENDA tissue / enzyme source in JSON format
+- category: OntologyProduct
+  description: BRENDA tissue / enzyme source in JSON format
   format: json
   id: bto.json
   name: bto.json
@@ -124,7 +127,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go
@@ -170,7 +173,7 @@ products:
   - dgidb
   - corum
   - cancer-genome-interpreter
-  - do
+  - doid
   - bto
   - efo
   - go
@@ -181,7 +184,7 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
   id: efo.owl
@@ -194,7 +197,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
@@ -234,7 +237,7 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.owl
   secondary_source:
   - efo
-- category: DataModelProduct
+- category: OntologyProduct
   description: The latest release of EFO in OBO format
   format: obo
   id: efo.obo
@@ -247,7 +250,7 @@ products:
   - clo
   - cob
   - dc
-  - do
+  - doid
   - ecto
   - efo
   - fbbt
