@@ -21,11 +21,9 @@ products:
   name: Text Mining KP KGX
   product_url: https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz
   warnings:
-  - File was not able to be retrieved when checked on 2025-09-29_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-07: HTTP 404 error
     when accessing file'
 repository: ''
 ---

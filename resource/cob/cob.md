@@ -53,7 +53,7 @@ products:
   name: COB to external
   product_url: http://purl.obolibrary.org/obo/cob/cob-to-external.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-06: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-07: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: demo of COB including subsets of other ontologies (Experimental, for
