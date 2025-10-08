@@ -103,7 +103,14 @@ clean:
 clean-schema:
 	rm -Rf src/kg_registry/kg_registry_schema/datamodel/*.py src/kg_registry/kg_registry_schema/*.json src/kg_registry/kg_registry_schema/schema/kg_registry_schema_all.yaml
 
+clean-cache:
+	rm -f cache/obo_foundry_cache.yml cache/url_status_cache.yml
+	@echo "✅ Cleared cache files"
+
 ### Directories:
+
+cache:
+	mkdir -p $@
 
 tmp:
 	mkdir -p $@
