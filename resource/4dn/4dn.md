@@ -1,8 +1,6 @@
 ---
 activity_status: active
 category: DataSource
-creation_date: "2025-06-10T00:00:00Z"
-last_modified_date: "2025-06-12T20:16:27Z"
 contacts:
 - category: Organization
   contact_details:
@@ -11,6 +9,7 @@ contacts:
   - contact_type: url
     value: https://data.4dnucleome.org/help/about/contact-us
   label: 4D Nucleome Network Data Coordination and Integration Center (DCIC)
+creation_date: '2025-06-10T00:00:00Z'
 curators:
 - category: Individual
   contact_details:
@@ -28,10 +27,11 @@ domains:
 - medical imaging
 homepage_url: https://data.4dnucleome.org/
 id: 4dn
+last_modified_date: '2025-06-12T20:16:27Z'
 layout: resource_detail
 license:
-  label: Varies
   id: https://data.4dnucleome.org/help/user-guide/faq#downloading-and-using-data-from-the-4dn-data-portal
+  label: Varies
 name: 4D Nucleome Data Portal
 products:
 - category: DataProduct
@@ -111,7 +111,7 @@ products:
   - stellar
   - dct
   - clinvar
-  - cmap
+  - connectivitymap
   - hp
   - mp
   - msigdb
@@ -174,7 +174,7 @@ products:
   - stellar
   - dct
   - clinvar
-  - cmap
+  - connectivitymap
   - hp
   - mp
   - msigdb

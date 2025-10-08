@@ -6,7 +6,7 @@ id: gtopdb.targets.csv
 name: GtoPdb Targets and Families
 product_url: https://www.guidetopharmacology.org/DATA/targets_and_families.csv
 warnings:
-- File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
+- File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
   header found

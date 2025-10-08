@@ -2,66 +2,302 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-09-09T00:00:00Z'
-description: FlyBase is a comprehensive database of genomic and genetic data for Drosophila melanogaster (fruit fly) and related species. It provides curated information on genes, genomes, phenotypes, genetic variants, stocks, and experimental tools for the Drosophila research community. The database integrates sequence data, genome annotations, functional characterizations, expression patterns, genetic interactions, disease models, and orthology relationships. FlyBase serves as the primary reference for Drosophila gene nomenclature and provides extensive tools for querying and analyzing genomic data across multiple Drosophila species.
+description: FlyBase is a comprehensive database of genomic and genetic data for Drosophila
+  melanogaster (fruit fly) and related species. It provides curated information on
+  genes, genomes, phenotypes, genetic variants, stocks, and experimental tools for
+  the Drosophila research community. The database integrates sequence data, genome
+  annotations, functional characterizations, expression patterns, genetic interactions,
+  disease models, and orthology relationships. FlyBase serves as the primary reference
+  for Drosophila gene nomenclature and provides extensive tools for querying and analyzing
+  genomic data across multiple Drosophila species.
 domains:
-  - genomics
-  - organisms
-  - biological systems
+- genomics
+- organisms
+- biological systems
 homepage_url: https://flybase.org/
 id: flybase
 last_modified_date: '2025-10-08T00:00:00Z'
 layout: resource_detail
 name: FlyBase
-repository: https://github.com/FlyBase
 products:
-  - category: Product
-    description: Genome annotation files for Drosophila melanogaster in GFF3 format, including gene models, transcripts, exons, and functional elements
-    format: gff
-    id: flybase.genome.annotations.gff
-    name: FlyBase Genome Annotations
-    original_source:
-      - flybase
-    product_url: https://wiki.flybase.org/wiki/FlyBase:Downloads_Overview
-  - category: Product
-    description: Complete genome sequences for Drosophila species in FASTA format, including chromosome assemblies and scaffolds
-    format: fasta
-    id: flybase.genome.sequences.fasta
-    name: FlyBase Genome Sequences
-    original_source:
-      - flybase
-    product_url: https://wiki.flybase.org/wiki/FlyBase:Downloads_Overview
-  - category: Product
-    description: Gene, transcript, and protein sequence data for Drosophila in FASTA format, including CDS, UTRs, and polypeptide sequences
-    format: fasta
-    id: flybase.gene.sequences.fasta
-    name: FlyBase Gene Sequences
-    original_source:
-      - flybase
-    product_url: https://wiki.flybase.org/wiki/FlyBase:Downloads_Overview
-  - category: Product
-    description: Bulk data files containing gene annotations, phenotypes, interactions, expression data, stocks, and orthology information in tab-separated format
-    format: tsv
-    id: flybase.bulk.data
-    name: FlyBase Bulk Data Files
-    original_source:
-      - flybase
-    product_url: https://wiki.flybase.org/wiki/FlyBase:Downloads_Overview
-  - category: GraphicalInterface
-    description: Interactive genome browser for visualizing Drosophila genomes, gene models, expression data, and genomic features using JBrowse technology
-    id: flybase.jbrowse
-    name: FlyBase JBrowse Genome Browser
-    original_source:
-      - flybase
-    product_url: https://flybase.org/
-  - category: GraphicalInterface
-    description: Web-based search and query interface for accessing FlyBase data, including gene information, phenotypes, stocks, and literature
-    id: flybase.web.interface
-    name: FlyBase Web Interface
-    original_source:
-      - flybase
-    product_url: https://flybase.org/
+- category: Product
+  description: Genome annotation files for Drosophila melanogaster in GFF3 format,
+    including gene models, transcripts, exons, and functional elements
+  format: gff
+  id: flybase.genome.annotations.gff
+  name: FlyBase Genome Annotations
+  original_source:
+  - flybase
+  product_url: https://wiki.flybase.org/wiki/FlyBase:Downloads_Overview
+- category: Product
+  description: Complete genome sequences for Drosophila species in FASTA format, including
+    chromosome assemblies and scaffolds
+  format: fasta
+  id: flybase.genome.sequences.fasta
+  name: FlyBase Genome Sequences
+  original_source:
+  - flybase
+  product_url: https://wiki.flybase.org/wiki/FlyBase:Downloads_Overview
+- category: Product
+  description: Gene, transcript, and protein sequence data for Drosophila in FASTA
+    format, including CDS, UTRs, and polypeptide sequences
+  format: fasta
+  id: flybase.gene.sequences.fasta
+  name: FlyBase Gene Sequences
+  original_source:
+  - flybase
+  product_url: https://wiki.flybase.org/wiki/FlyBase:Downloads_Overview
+- category: Product
+  description: Bulk data files containing gene annotations, phenotypes, interactions,
+    expression data, stocks, and orthology information in tab-separated format
+  format: tsv
+  id: flybase.bulk.data
+  name: FlyBase Bulk Data Files
+  original_source:
+  - flybase
+  product_url: https://wiki.flybase.org/wiki/FlyBase:Downloads_Overview
+- category: GraphicalInterface
+  description: Interactive genome browser for visualizing Drosophila genomes, gene
+    models, expression data, and genomic features using JBrowse technology
+  id: flybase.jbrowse
+  name: FlyBase JBrowse Genome Browser
+  original_source:
+  - flybase
+  product_url: https://flybase.org/
+- category: GraphicalInterface
+  description: Web-based search and query interface for accessing FlyBase data, including
+    gene information, phenotypes, stocks, and literature
+  id: flybase.web.interface
+  name: FlyBase Web Interface
+  original_source:
+  - flybase
+  product_url: https://flybase.org/
+- category: GraphicalInterface
+  description: Web portal for searching and browsing ncRNA sequences, structures,
+    and annotations
+  format: http
+  id: rnacentral.portal
+  name: RNAcentral Portal
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to RNAcentral data
+  format: http
+  id: rnacentral.api
+  name: RNAcentral REST API
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/api
+- category: Product
+  description: FTP archive with current and archived release files (sequences and
+    annotations)
+  format: http
+  id: rnacentral.ftp
+  name: RNAcentral FTP Archive
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+- category: DataModelProduct
+  description: Public PostgreSQL database for direct SQL access to RNAcentral data
+  format: postgres
+  id: rnacentral.public-db
+  name: RNAcentral Public Postgres Database
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/help/public-database
+- category: Product
+  description: Model organism data from FlyBase, SGD, ZFIN and other model organism
+    databases
+  format: http
+  id: genecards.model.organisms
+  name: GeneCards Model Organism Data
+  original_source:
+  - flybase
+  - sgd
+  - zfin
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
+repository: https://github.com/FlyBase
 ---
-
 # FlyBase
 
 ## Overview

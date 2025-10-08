@@ -97,11 +97,11 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-10-06_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-10-07: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -144,7 +144,7 @@ products:
   secondary_source:
   - oma
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
     accessing file
@@ -152,7 +152,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-07: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -235,7 +235,7 @@ products:
   - stellar
   - dct
   - clinvar
-  - cmap
+  - connectivitymap
   - hp
   - mp
   - msigdb
@@ -298,7 +298,7 @@ products:
   - stellar
   - dct
   - clinvar
-  - cmap
+  - connectivitymap
   - hp
   - mp
   - msigdb
@@ -638,6 +638,23 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: Product
+  description: Integrated gene annotation data aggregated from HGNC, OMIM, Ensembl,
+    NCBI Gene, UniProt and other genomic databases
+  format: http
+  id: genecards.gene.annotations
+  name: GeneCards Gene Annotations
+  original_source:
+  - hgnc
+  - omim
+  - ensembl
+  - ncbigene
+  - uniprot
+  - refseq
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
 repository: https://www.uniprot.org/help/downloads
 ---
 UniProt Protein Knowledge Base

@@ -2,145 +2,407 @@
 activity_status: active
 category: Aggregator
 creation_date: '2025-09-09T00:00:00Z'
-description: GeneCards is a comprehensive, integrative database that aggregates gene-centric information from over 200 web sources. It provides searchable access to genomic, transcriptomic, proteomic, genetic, clinical and functional information for all annotated and predicted human genes. GeneCards automatically integrates data on gene function, pathways, diseases, variants, expression patterns, protein interactions, and more. The database includes over 443,000 gene entries with rich annotations from sources including HGNC, OMIM, Ensembl, UniProt, NCBI Gene, GTEx, PubMed, and many other major biomedical databases. GeneCards serves as a central hub for human gene information, making it accessible to researchers worldwide.
+description: GeneCards is a comprehensive, integrative database that aggregates gene-centric
+  information from over 200 web sources. It provides searchable access to genomic,
+  transcriptomic, proteomic, genetic, clinical and functional information for all
+  annotated and predicted human genes. GeneCards automatically integrates data on
+  gene function, pathways, diseases, variants, expression patterns, protein interactions,
+  and more. The database includes over 443,000 gene entries with rich annotations
+  from sources including HGNC, OMIM, Ensembl, UniProt, NCBI Gene, GTEx, PubMed, and
+  many other major biomedical databases. GeneCards serves as a central hub for human
+  gene information, making it accessible to researchers worldwide.
 domains:
-  - genomics
-  - biomedical
-  - health
-  - clinical
-  - proteomics
-  - pathways
+- genomics
+- biomedical
+- health
+- clinical
+- proteomics
+- pathways
 homepage_url: https://www.genecards.org/
 id: genecards
 last_modified_date: '2025-10-08T00:00:00Z'
 layout: resource_detail
 name: GeneCards
-repository:
 products:
-  - category: GraphicalInterface
-    description: Web-based interface for searching and browsing comprehensive gene-centric information integrating data from over 200 sources
-    id: genecards.web.interface
-    name: GeneCards Web Interface
-    original_source:
-      - genecards
-    product_url: https://www.genecards.org/
-  - category: Product
-    description: Integrated gene annotation data aggregated from HGNC, OMIM, Ensembl, NCBI Gene, UniProt and other genomic databases
-    format: http
-    id: genecards.gene.annotations
-    name: GeneCards Gene Annotations
-    original_source:
-      - hgnc
-      - omim
-      - ensembl
-      - ncbigene
-      - uniprot
-      - refseq
-    product_url: https://www.genecards.org/
-  - category: Product
-    description: Disease association data integrated from OMIM, MalaCards, ClinVar, Orphanet, DisGeNET and other disease databases
-    format: http
-    id: genecards.disease.associations
-    name: GeneCards Disease Associations
-    original_source:
-      - omim
-      - malacards
-      - clinvar
-      - orphanet
-      - disgenet
-    product_url: https://www.genecards.org/
-  - category: Product
-    description: Gene expression data aggregated from GTEx, BioGPS, Bgee and other expression databases
-    format: http
-    id: genecards.expression.data
-    name: GeneCards Expression Data
-    original_source:
-      - gtex
-      - biogps
-      - bgee
-    product_url: https://www.genecards.org/
-  - category: Product
-    description: Pathway information integrated from Reactome, WikiPathways and other pathway databases
-    format: http
-    id: genecards.pathway.data
-    name: GeneCards Pathway Data
-    original_source:
-      - reactome
-      - wikipathways
-    product_url: https://www.genecards.org/
-  - category: Product
-    description: Protein interaction data aggregated from IntAct, STRING, BioGRID and other interaction databases
-    format: http
-    id: genecards.protein.interactions
-    name: GeneCards Protein Interactions
-    original_source:
-      - intact
-      - string
-      - biogrid
-    product_url: https://www.genecards.org/
-  - category: Product
-    description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant databases
-    format: http
-    id: genecards.variant.data
-    name: GeneCards Variant Data
-    original_source:
-      - clinvar
-      - dbsnp
-      - gwascatalog
-    product_url: https://www.genecards.org/
-  - category: Product
-    description: Literature references from PubMed automatically associated with genes
-    format: http
-    id: genecards.literature
-    name: GeneCards Literature References
-    original_source:
-      - pubmed
-    product_url: https://www.genecards.org/
-  - category: Product
-    description: Gene ontology annotations from the Gene Ontology Consortium
-    format: http
-    id: genecards.gene.ontology
-    name: GeneCards Gene Ontology Annotations
-    original_source:
-      - go
-    product_url: https://www.genecards.org/
-  - category: Product
-    description: Pharmacogenomics data from PharmGKB, DrugBank and other pharmacogenomics sources
-    format: http
-    id: genecards.pharmacogenomics
-    name: GeneCards Pharmacogenomics Data
-    original_source:
-      - pharmgkb
-      - drugbank
-    product_url: https://www.genecards.org/
-  - category: Product
-    description: Model organism data from FlyBase, SGD, ZFIN and other model organism databases
-    format: http
-    id: genecards.model.organisms
-    name: GeneCards Model Organism Data
-    original_source:
-      - flybase
-      - sgd
-      - zfin
-    product_url: https://www.genecards.org/
-  - category: Product
-    description: Protein structure data from PDB Europe and other structural databases
-    format: http
-    id: genecards.protein.structures
-    name: GeneCards Protein Structure Data
-    original_source:
-      - pdbe
-    product_url: https://www.genecards.org/
-  - category: Product
-    description: Clinical trial information from ClinicalTrials.gov
-    format: http
-    id: genecards.clinical.trials
-    name: GeneCards Clinical Trials
-    original_source:
-      - clinicaltrialsgov
-    product_url: https://www.genecards.org/
+- category: GraphicalInterface
+  description: Web-based interface for searching and browsing comprehensive gene-centric
+    information integrating data from over 200 sources
+  id: genecards.web.interface
+  name: GeneCards Web Interface
+  original_source:
+  - genecards
+  product_url: https://www.genecards.org/
+- category: Product
+  description: Integrated gene annotation data aggregated from HGNC, OMIM, Ensembl,
+    NCBI Gene, UniProt and other genomic databases
+  format: http
+  id: genecards.gene.annotations
+  name: GeneCards Gene Annotations
+  original_source:
+  - hgnc
+  - omim
+  - ensembl
+  - ncbigene
+  - uniprot
+  - refseq
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: Disease association data integrated from OMIM, MalaCards, ClinVar,
+    Orphanet, DisGeNET and other disease databases
+  format: http
+  id: genecards.disease.associations
+  name: GeneCards Disease Associations
+  original_source:
+  - omim
+  - malacards
+  - clinvar
+  - orphanet
+  - disgenet
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: Gene expression data aggregated from GTEx, BioGPS, Bgee and other expression
+    databases
+  format: http
+  id: genecards.expression.data
+  name: GeneCards Expression Data
+  original_source:
+  - gtex
+  - biogps
+  - bgee
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: Pathway information integrated from Reactome, WikiPathways and other
+    pathway databases
+  format: http
+  id: genecards.pathway.data
+  name: GeneCards Pathway Data
+  original_source:
+  - reactome
+  - wikipathways
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: Protein interaction data aggregated from IntAct, STRING, BioGRID and
+    other interaction databases
+  format: http
+  id: genecards.protein.interactions
+  name: GeneCards Protein Interactions
+  original_source:
+  - intact
+  - string
+  - biogrid
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant
+    databases
+  format: http
+  id: genecards.variant.data
+  name: GeneCards Variant Data
+  original_source:
+  - clinvar
+  - dbsnp
+  - gwascatalog
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: Literature references from PubMed automatically associated with genes
+  format: http
+  id: genecards.literature
+  name: GeneCards Literature References
+  original_source:
+  - pubmed
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: Gene ontology annotations from the Gene Ontology Consortium
+  format: http
+  id: genecards.gene.ontology
+  name: GeneCards Gene Ontology Annotations
+  original_source:
+  - go
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: Pharmacogenomics data from PharmGKB, DrugBank and other pharmacogenomics
+    sources
+  format: http
+  id: genecards.pharmacogenomics
+  name: GeneCards Pharmacogenomics Data
+  original_source:
+  - pharmgkb
+  - drugbank
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: Model organism data from FlyBase, SGD, ZFIN and other model organism
+    databases
+  format: http
+  id: genecards.model.organisms
+  name: GeneCards Model Organism Data
+  original_source:
+  - flybase
+  - sgd
+  - zfin
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: Protein structure data from PDB Europe and other structural databases
+  format: http
+  id: genecards.protein.structures
+  name: GeneCards Protein Structure Data
+  original_source:
+  - pdbe
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: Clinical trial information from ClinicalTrials.gov
+  format: http
+  id: genecards.clinical.trials
+  name: GeneCards Clinical Trials
+  original_source:
+  - clinicaltrialsgov
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
+- category: GraphicalInterface
+  description: Web portal for searching and browsing ncRNA sequences, structures,
+    and annotations
+  format: http
+  id: rnacentral.portal
+  name: RNAcentral Portal
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to RNAcentral data
+  format: http
+  id: rnacentral.api
+  name: RNAcentral REST API
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/api
+- category: Product
+  description: FTP archive with current and archived release files (sequences and
+    annotations)
+  format: http
+  id: rnacentral.ftp
+  name: RNAcentral FTP Archive
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+- category: DataModelProduct
+  description: Public PostgreSQL database for direct SQL access to RNAcentral data
+  format: postgres
+  id: rnacentral.public-db
+  name: RNAcentral Public Postgres Database
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/help/public-database
+repository: null
 ---
-
 # GeneCards
 
 ## Overview

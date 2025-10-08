@@ -10,7 +10,7 @@ product_url: https://ftp.expasy.org/databases/cellosaurus/cellosaurus_xrefs.tsv
 secondary_source:
 - cellosaurus
 warnings:
-- File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
   accessing file

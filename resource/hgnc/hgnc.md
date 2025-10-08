@@ -140,11 +140,11 @@ products:
   secondary_source:
   - scibite
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-07: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -197,7 +197,7 @@ products:
   - stellar
   - dct
   - clinvar
-  - cmap
+  - connectivitymap
   - hp
   - mp
   - msigdb
@@ -260,7 +260,7 @@ products:
   - stellar
   - dct
   - clinvar
-  - cmap
+  - connectivitymap
   - hp
   - mp
   - msigdb
@@ -682,6 +682,23 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: Product
+  description: Integrated gene annotation data aggregated from HGNC, OMIM, Ensembl,
+    NCBI Gene, UniProt and other genomic databases
+  format: http
+  id: genecards.gene.annotations
+  name: GeneCards Gene Annotations
+  original_source:
+  - hgnc
+  - omim
+  - ensembl
+  - ncbigene
+  - uniprot
+  - refseq
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
 repository: https://github.com/HGNC
 ---
 HUGO Gene Nomenclature Committee
