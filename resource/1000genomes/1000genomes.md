@@ -104,8 +104,6 @@ products:
   name: DDBJ Mirror
   product_url: https://ddbj.nig.ac.jp/public/mirror_database/1000genomes/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
