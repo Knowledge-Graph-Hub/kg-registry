@@ -7,6 +7,7 @@ import sys
 import pathlib
 import datetime
 import json
+import os
 
 import frontmatter
 import yaml
@@ -31,6 +32,10 @@ SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "kg_regi
 # Ensure local src is importable for generated datamodel imports
 if str(ROOT / "src") not in sys.path:
     sys.path.insert(0, str(ROOT / "src"))
+
+# Check if parallel loading is enabled (default: yes)
+PARALLEL_LOADING = os.environ.get("PARALLEL_LOADING", "yes").lower() in ("yes", "true", "1")
+PARALLEL_WORKERS = int(os.environ.get("PARALLEL_WORKERS", "10"))
 
 
 def main():
@@ -279,10 +284,10 @@ def concat_resource_yaml(args):
                                 else:
                                     sanitized.append(w)
                             product["warnings"] = sanitized
-                        
+
                         # Ensure directory exists before writing file
                         file_path.parent.mkdir(parents=True, exist_ok=True)
-                        
+
                         with open(fn, "w") as f:
                             f.write("---\n" + yaml.dump(product) + layout_string + "\n---\n")
 
@@ -1153,17 +1158,43 @@ def concat_resource_yaml(args):
     if args.include:
         with open(args.include, "r") as f:
             cfg = yaml.load(f.read(), Loader=yaml.SafeLoader)
-    for fn in args.files:
+
+    # Load files in parallel if enabled
+    use_parallel = PARALLEL_LOADING and len(args.files) > 50
+    if use_parallel:
+        print(f"🚀 Loading {len(args.files)} files in parallel with {PARALLEL_WORKERS} workers...")
         try:
-            (obj, md) = load_md(fn)
-        except (ScannerError, ParserError) as e:
-            print(f"ERROR: Failed to parse YAML in {fn}: {e}")
-            continue
-        # Normalize date fields to ISO 8601 format
-        obj = normalize_date_fields(obj)
-        # Check if the object is actually a product
-        if obj.get("id") == pathlib.Path(fn).parent.name:
-            library.append(obj)
+            from util.parallel_loader import load_md_parallel
+
+            results = load_md_parallel(args.files, max_workers=PARALLEL_WORKERS)
+            print(f"✅ Loaded {len(results)} files successfully")
+
+            for fn, obj, md in results:
+                # Normalize date fields to ISO 8601 format
+                obj = normalize_date_fields(obj)
+                # Check if the object is actually a product
+                if obj.get("id") == pathlib.Path(fn).parent.name:
+                    library.append(obj)
+        except ImportError:
+            print("⚠️  Parallel loader not available, falling back to sequential loading")
+            use_parallel = False
+
+    # Fall back to sequential loading if parallel is disabled or failed
+    if not use_parallel:
+        if len(args.files) > 50:
+            print(f"📚 Loading {len(args.files)} files sequentially...")
+        for fn in args.files:
+            try:
+                (obj, md) = load_md(fn)
+            except (ScannerError, ParserError) as e:
+                print(f"ERROR: Failed to parse YAML in {fn}: {e}")
+                continue
+            # Normalize date fields to ISO 8601 format
+            obj = normalize_date_fields(obj)
+            # Check if the object is actually a product
+            if obj.get("id") == pathlib.Path(fn).parent.name:
+                library.append(obj)
+
     objs = foundry + library + obsolete
     cfg["resources"] = objs
 
