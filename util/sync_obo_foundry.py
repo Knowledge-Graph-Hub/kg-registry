@@ -10,6 +10,8 @@ our schema structure.
 import sys
 import yaml
 import requests
+import os
+import time
 from pathlib import Path
 from typing import Dict, List, Any, Optional
 from datetime import datetime
@@ -23,8 +25,14 @@ logger = logging.getLogger(__name__)
 class OBOFoundrySync:
     """Synchronize OBO Foundry ontologies with KG-Registry"""
 
-    def __init__(self, registry_root: Optional[str] = None):
-        """Initialize the sync class"""
+    def __init__(self, registry_root: Optional[str] = None, cache_ttl_hours: int = 24):
+        """
+        Initialize the sync class
+
+        Args:
+            registry_root: Path to registry root directory
+            cache_ttl_hours: Cache time-to-live in hours (default: 24)
+        """
         if registry_root is None:
             # Default to the registry root directory relative to this script
             script_dir = Path(__file__).parent
@@ -34,6 +42,14 @@ class OBOFoundrySync:
 
         self.obo_foundry_url = "https://obofoundry.org/registry/ontologies.yml"
         self.existing_resources = self._load_existing_resources()
+
+        # Cache configuration
+        self.cache_ttl_hours = cache_ttl_hours
+        self.cache_dir = Path(__file__).parent.parent / 'cache'
+        self.cache_file = self.cache_dir / 'obo_foundry_cache.yml'
+
+        # Create cache directory if it doesn't exist
+        self.cache_dir.mkdir(parents=True, exist_ok=True)
 
     def _load_existing_resources(self) -> Dict[str, Path]:
         """Load existing resources to check for updates"""
@@ -88,9 +104,54 @@ class OBOFoundrySync:
 
         return filtered_tags
 
+    def _is_cache_valid(self) -> bool:
+        """Check if cache file exists and is within TTL"""
+        if not self.cache_file.exists():
+            return False
+
+        cache_age_hours = (time.time() - os.path.getmtime(self.cache_file)) / 3600
+        is_valid = cache_age_hours < self.cache_ttl_hours
+
+        if is_valid:
+            logger.info(
+                f"Cache is valid (age: {cache_age_hours:.1f} hours, TTL: {self.cache_ttl_hours} hours)")
+        else:
+            logger.info(
+                f"Cache expired (age: {cache_age_hours:.1f} hours, TTL: {self.cache_ttl_hours} hours)")
+
+        return is_valid
+
+    def _load_from_cache(self) -> Optional[List[Dict[str, Any]]]:
+        """Load OBO Foundry data from cache"""
+        try:
+            with open(self.cache_file, 'r') as f:
+                data = yaml.safe_load(f)
+                logger.info(f"Loaded {len(data)} ontologies from cache")
+                return data
+        except Exception as e:
+            logger.warning(f"Failed to load cache: {e}")
+            return None
+
+    def _save_to_cache(self, data: List[Dict[str, Any]]) -> None:
+        """Save OBO Foundry data to cache"""
+        try:
+            with open(self.cache_file, 'w') as f:
+                yaml.dump(data, f, default_flow_style=False, sort_keys=False)
+            logger.info(f"Cached {len(data)} ontologies to {self.cache_file}")
+        except Exception as e:
+            logger.warning(f"Failed to save cache: {e}")
+
     def fetch_obo_foundry_data(self) -> List[Dict[str, Any]]:
-        """Fetch the OBO Foundry ontologies data"""
-        logger.info(f"Fetching OBO Foundry data from {self.obo_foundry_url}")
+        """Fetch the OBO Foundry ontologies data (with caching)"""
+
+        # Check if we can use cached data
+        if self._is_cache_valid():
+            cached_data = self._load_from_cache()
+            if cached_data is not None:
+                return cached_data
+
+        # Cache miss or invalid - fetch fresh data
+        logger.info(f"Fetching fresh OBO Foundry data from {self.obo_foundry_url}")
 
         try:
             response = requests.get(self.obo_foundry_url, timeout=30)
@@ -127,10 +188,22 @@ class OBOFoundrySync:
                     raise ValueError(f"Expected a list of ontologies or dict, got {type(data)}")
 
             logger.info(f"Successfully fetched {len(data)} ontologies from OBO Foundry")
+
+            # Save to cache for next time
+            self._save_to_cache(data)
+
             return data
 
         except Exception as e:
             logger.error(f"Failed to fetch OBO Foundry data: {e}")
+
+            # Try to use expired cache as fallback
+            if self.cache_file.exists():
+                logger.warning("Attempting to use expired cache as fallback")
+                cached_data = self._load_from_cache()
+                if cached_data is not None:
+                    return cached_data
+
             raise
 
     def transform_obo_to_kg_registry(self, obo_ontology: Dict[str, Any]) -> Dict[str, Any]:
@@ -236,7 +309,7 @@ class OBOFoundrySync:
                     product_id = f"{ontology_id}.{product_id_raw}"
                 else:
                     product_id = product_id_raw
-                
+
                 # Sanitize product ID: replace slashes with dots to avoid file system issues
                 product_id = product_id.replace('/', '.')
 
@@ -610,6 +683,10 @@ def main():
                         help='Enable verbose logging')
     parser.add_argument('--limit', type=int,
                         help='Limit number of ontologies to process (for testing)')
+    parser.add_argument('--no-cache', action='store_true',
+                        help='Disable cache and fetch fresh data')
+    parser.add_argument('--cache-ttl', type=int, default=24,
+                        help='Cache time-to-live in hours (default: 24)')
 
     args = parser.parse_args()
 
@@ -617,7 +694,10 @@ def main():
         logging.getLogger().setLevel(logging.DEBUG)
 
     try:
-        syncer = OBOFoundrySync(registry_root=args.registry_root)
+        # Set cache TTL to 0 if --no-cache is specified (forces fresh fetch)
+        cache_ttl = 0 if args.no_cache else args.cache_ttl
+
+        syncer = OBOFoundrySync(registry_root=args.registry_root, cache_ttl_hours=cache_ttl)
         stats = syncer.sync_all(dry_run=args.dry_run, limit=args.limit)
 
         print(f"\nSync Summary:")

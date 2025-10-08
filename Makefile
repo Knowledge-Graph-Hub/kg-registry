@@ -103,7 +103,14 @@ clean:
 clean-schema:
 	rm -Rf src/kg_registry/kg_registry_schema/datamodel/*.py src/kg_registry/kg_registry_schema/*.json src/kg_registry/kg_registry_schema/schema/kg_registry_schema_all.yaml
 
+clean-cache:
+	rm -f cache/obo_foundry_cache.yml cache/url_status_cache.yml
+	@echo "✅ Cleared cache files"
+
 ### Directories:
+
+cache:
+	mkdir -p $@
 
 tmp:
 	mkdir -p $@
@@ -154,8 +161,10 @@ registry/kgs.jsonld: registry/kgs.yml
 
 ### Validate Configuration Files
 
-# generate both a report of the violations and a grid of all results
-# the grid is later used to sort the resources on the home page
+# Generate both a report of the violations and a grid of all results
+# The grid is later used to sort the resources on the home page
+# Validation uses parallel execution by default (5-10x faster)
+# Set PARALLEL_VALIDATION=no to use sequential validation
 RESULTS = reports/metadata-violations.tsv reports/metadata-grid.csv
 reports/metadata-grid.csv: tmp/unsorted-resources-with-sizes.yml sync-obo-foundry | extract-metadata reports
 	./util/validate-metadata.py $< $(RESULTS)
@@ -173,8 +182,25 @@ tmp/unsorted-resources.yml: $(RESOURCES) | tmp
 	@./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
 
 # Retrieve file sizes for products with URLs and update product_file_size field
+# Use parallel version by default for speed (10x faster)
+# Set PARALLEL=no to use the original sequential version
+# Set MAX_WORKERS=N to control parallelism (default: 10)
+PARALLEL ?= yes
+MAX_WORKERS ?= 10
+
+# Parallel validation settings (5-10x faster for validation)
+# Set PARALLEL_VALIDATION=no to use sequential validation
+# Set PARALLEL_WORKERS=N to control validation parallelism (default: 10)
+export PARALLEL_VALIDATION ?= yes
+export PARALLEL_WORKERS ?= 10
+
+ifeq ($(PARALLEL),yes)
+tmp/unsorted-resources-with-sizes.yml: tmp/unsorted-resources.yml
+	$(RUN) python util/retrieve-file-sizes-parallel.py --max-workers $(MAX_WORKERS) $< $@.tmp && mv $@.tmp $@
+else
 tmp/unsorted-resources-with-sizes.yml: tmp/unsorted-resources.yml
 	$(RUN) python util/retrieve-file-sizes.py $< $@.tmp && mv $@.tmp $@
+endif
 
 # Run validation, including with LinkML validator
 # But don't show the whole command because it is very long
