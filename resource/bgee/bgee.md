@@ -55,11 +55,11 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
     when accessing file'
@@ -75,11 +75,11 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
     when accessing file'
@@ -95,11 +95,11 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
     when accessing file'
@@ -115,11 +115,11 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
     when accessing file'
@@ -135,11 +135,11 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
     when accessing file'
@@ -155,11 +155,11 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
     when accessing file'
@@ -175,11 +175,11 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
     when accessing file'
@@ -195,11 +195,11 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
     when accessing file'
@@ -1099,6 +1099,8 @@ products:
   - bgee
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
     when accessing file'
 publications:
