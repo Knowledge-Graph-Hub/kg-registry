@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import json
+import os
 import re
 import sys
 import pathlib
@@ -8,6 +9,14 @@ from argparse import ArgumentParser
 
 import jsonschema
 import yaml
+
+# Import parallel validation utilities
+try:
+    from parallel_validator import validate_resources_parallel
+    PARALLEL_AVAILABLE = True
+except ImportError:
+    PARALLEL_AVAILABLE = False
+    print("Warning: parallel_validator not available, falling back to sequential validation")
 
 # Path to JSON schema file:
 HERE = pathlib.Path(__file__).parent.resolve()
@@ -53,10 +62,31 @@ def main():
 
     results = {"error": [], "warn": [], "info": []}
 
-    # Validate each object
-    for item in data["resources"]:
-        add = validate_metadata(item, schema)
-        results = update_results(results, add)
+    # Check if parallel validation is enabled
+    use_parallel = os.environ.get('PARALLEL_VALIDATION', 'yes').lower() == 'yes'
+    
+    if use_parallel and PARALLEL_AVAILABLE and len(data["resources"]) >= 50:
+        print(f"Using parallel validation for {len(data['resources'])} resources")
+        max_workers = int(os.environ.get('PARALLEL_WORKERS', '10'))
+        results = validate_resources_parallel(
+            data["resources"],
+            schema,
+            validate_metadata,
+            update_results,
+            max_workers=max_workers
+        )
+    else:
+        # Sequential validation
+        if not use_parallel:
+            print(f"Using sequential validation for {len(data['resources'])} resources (PARALLEL_VALIDATION=no)")
+        elif not PARALLEL_AVAILABLE:
+            print(f"Using sequential validation for {len(data['resources'])} resources (parallel module not available)")
+        else:
+            print(f"Using sequential validation for {len(data['resources'])} resources (< 50 resources)")
+        
+        for item in data["resources"]:
+            add = validate_metadata(item, schema)
+            results = update_results(results, add)
 
     # save the metadata-grid with ALL results
     headers = []

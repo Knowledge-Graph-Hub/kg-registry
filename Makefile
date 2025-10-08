@@ -154,8 +154,10 @@ registry/kgs.jsonld: registry/kgs.yml
 
 ### Validate Configuration Files
 
-# generate both a report of the violations and a grid of all results
-# the grid is later used to sort the resources on the home page
+# Generate both a report of the violations and a grid of all results
+# The grid is later used to sort the resources on the home page
+# Validation uses parallel execution by default (5-10x faster)
+# Set PARALLEL_VALIDATION=no to use sequential validation
 RESULTS = reports/metadata-violations.tsv reports/metadata-grid.csv
 reports/metadata-grid.csv: tmp/unsorted-resources-with-sizes.yml sync-obo-foundry | extract-metadata reports
 	./util/validate-metadata.py $< $(RESULTS)
@@ -178,6 +180,12 @@ tmp/unsorted-resources.yml: $(RESOURCES) | tmp
 # Set MAX_WORKERS=N to control parallelism (default: 10)
 PARALLEL ?= yes
 MAX_WORKERS ?= 10
+
+# Parallel validation settings (5-10x faster for validation)
+# Set PARALLEL_VALIDATION=no to use sequential validation
+# Set PARALLEL_WORKERS=N to control validation parallelism (default: 10)
+export PARALLEL_VALIDATION ?= yes
+export PARALLEL_WORKERS ?= 10
 
 ifeq ($(PARALLEL),yes)
 tmp/unsorted-resources-with-sizes.yml: tmp/unsorted-resources.yml
