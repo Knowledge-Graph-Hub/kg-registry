@@ -3,13 +3,13 @@
 Quick test to verify parallel validation works correctly.
 """
 
+from parallel_validator import validate_resources_parallel
 import sys
 import os
 
 # Add util directory to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'util'))
 
-from parallel_validator import validate_resources_parallel
 
 def mock_validate_metadata(item, schema):
     """Mock validation function for testing"""
@@ -19,19 +19,21 @@ def mock_validate_metadata(item, schema):
         "info": []
     }
 
+
 def mock_update_results(results, add):
     """Mock update function for testing"""
     for key in ['error', 'warn', 'info']:
         results[key].extend(add[key])
     return results
 
+
 # Test with small dataset (should use sequential)
 print("Test 1: Small dataset (< 50 resources)")
 resources = [{"id": f"test{i}"} for i in range(10)]
 schema = {}
 results = validate_resources_parallel(
-    resources, 
-    schema, 
+    resources,
+    schema,
     mock_validate_metadata,
     mock_update_results,
     max_workers=4
@@ -43,8 +45,8 @@ print(f"  Results: {results}")
 print("\nTest 2: Large dataset (>= 50 resources)")
 resources = [{"id": f"test{i}"} for i in range(100)]
 results = validate_resources_parallel(
-    resources, 
-    schema, 
+    resources,
+    schema,
     mock_validate_metadata,
     mock_update_results,
     max_workers=4
