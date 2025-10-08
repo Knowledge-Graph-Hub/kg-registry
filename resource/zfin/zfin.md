@@ -59,9 +59,9 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
@@ -91,9 +91,9 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-06_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -1123,6 +1123,8 @@ products:
   - zfin
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
     when accessing file'
 repository: https://github.com/ZFIN/

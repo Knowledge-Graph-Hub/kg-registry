@@ -55,6 +55,11 @@ products:
   name: ReproTox Dataset
   product_url: https://reprotox-kg.net/downloads/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-07_ Error connecting
+    to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
+    with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
+    object at 0x7f601743e620>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
+    or service not known)"))
   - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
     to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
     with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
@@ -145,15 +150,15 @@ products:
     with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
     object at 0x7f01f5009cc0>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
     or service not known)"))
-  - File was not able to be retrieved when checked on 2025-10-07_ Error connecting
+  - File was not able to be retrieved when checked on 2025-10-08_ Error connecting
     to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
     with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
-    object at 0x7f601743e620>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
+    object at 0x7f08401c3e30>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
     or service not known)"))
   - 'File was not able to be retrieved when checked on 2025-10-08: Error connecting
     to URL: HTTPSConnectionPool(host=''reprotox-kg.net'', port=443): Max retries exceeded
     with url: /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
-    object at 0x7f08401c3e30>: Failed to resolve ''reprotox-kg.net'' ([Errno -2] Name
+    object at 0x7f52197a2c80>: Failed to resolve ''reprotox-kg.net'' ([Errno -2] Name
     or service not known)"))'
 publications:
 - authors:
