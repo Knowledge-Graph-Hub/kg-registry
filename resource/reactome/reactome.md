@@ -151,7 +151,7 @@ products:
   - stellar
   - dct
   - clinvar
-  - cmap
+  - connectivitymap
   - hp
   - mp
   - msigdb
@@ -214,7 +214,7 @@ products:
   - stellar
   - dct
   - clinvar
-  - cmap
+  - connectivitymap
   - hp
   - mp
   - msigdb
@@ -530,8 +530,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -1511,6 +1511,19 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: Product
+  description: Pathway information integrated from Reactome, WikiPathways and other
+    pathway databases
+  format: http
+  id: genecards.pathway.data
+  name: GeneCards Pathway Data
+  original_source:
+  - reactome
+  - wikipathways
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
 repository: ''
 ---
 REACTOME is an open-source, open access, manually curated and peer-reviewed pathway database.

@@ -9,10 +9,10 @@ contacts:
   - contact_type: url
     value: https://www.ebi.ac.uk/support/intact
   label: IntAct Team (EMBL-EBI)
-description: "IntAct is an open, curated molecular interaction database maintained\
-  \ at EMBL\u2011EBI. It aggregates experimentally-derived interaction evidence from\
-  \ literature curation and direct submissions, and distributes data in PSI\u2011\
-  MI XML and MITAB formats along with curated datasets and documentation."
+description: IntAct is an open, curated molecular interaction database maintained
+  at EMBL‑EBI. It aggregates experimentally-derived interaction evidence from literature
+  curation and direct submissions, and distributes data in PSI‑MI XML and MITAB formats
+  along with curated datasets and documentation.
 domains:
 - proteomics
 - systems biology
@@ -472,6 +472,20 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: Product
+  description: Protein interaction data aggregated from IntAct, STRING, BioGRID and
+    other interaction databases
+  format: http
+  id: genecards.protein.interactions
+  name: GeneCards Protein Interactions
+  original_source:
+  - intact
+  - string
+  - biogrid
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
 ---
 # IntAct
 

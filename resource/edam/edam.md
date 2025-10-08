@@ -11,12 +11,12 @@ contacts:
   contact_details:
   - contact_type: github
     value: matuskalas
-  label: Matúš Kalaš
+  label: "Mat\xFA\u0161 Kala\u0161"
 - category: Individual
   contact_details:
   - contact_type: github
     value: hmenager
-  label: Hervé Ménager
+  label: "Herv\xE9 M\xE9nager"
 description: EDAM is an ontology of bioscientific data analysis and data management,
   covering topics, operations, data, identifiers, and formats. It supports semantic
   annotation of tools, workflows, training, and provenance metadata across life sciences.
@@ -108,7 +108,7 @@ products:
   - stellar
   - dct
   - clinvar
-  - cmap
+  - connectivitymap
   - hp
   - mp
   - msigdb
@@ -171,7 +171,7 @@ products:
   - stellar
   - dct
   - clinvar
-  - cmap
+  - connectivitymap
   - hp
   - mp
   - msigdb
@@ -200,7 +200,7 @@ products:
 publications:
 - authors:
   - Ison J
-  - Kalaš M
+  - "Kala\u0161 M"
   - Jonassen I
   - Bolser D
   - Uludag M

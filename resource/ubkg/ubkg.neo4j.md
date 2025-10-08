@@ -37,7 +37,7 @@ original_source:
 - stellar
 - dct
 - clinvar
-- cmap
+- connectivitymap
 - hp
 - mp
 - msigdb

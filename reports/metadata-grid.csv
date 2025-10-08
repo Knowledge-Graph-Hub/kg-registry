@@ -67,14 +67,12 @@ clo,active,PASS
 clue,active,PASS
 clyh,active,PASS
 cm4ai_talent_kg,active,PASS
-cmap,active,PASS
 cmo,active,PASS
 cob,active,PASS
 colao,active,PASS
 compartments,active,PASS
 complexportal,active,PASS
 connections-hypothesis-kp,active,PASS
-connectivitymap,active,PASS
 corum,active,PASS
 cosmic,active,PASS
 cpathkg,active,PASS
@@ -484,6 +482,7 @@ bootstrep,inactive,PASS
 caro,inactive,PASS
 ceph,inactive,PASS
 cmf,inactive,PASS
+connectivitymap,inactive,PASS
 dc_cl,inactive,PASS
 dinto,inactive,PASS
 ehda,inactive,PASS

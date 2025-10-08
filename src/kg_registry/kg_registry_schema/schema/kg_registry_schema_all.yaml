@@ -625,6 +625,11 @@ enums:
           or peptide sequences. It consists of a single header line followed by one
           or more lines of sequence data.
         meaning: edam:1929
+      gff:
+        text: gff
+        description: The General Feature Format (GFF), a standard file format for
+          describing genes and other features of DNA, RNA, and protein sequences.
+          It is commonly used in bioinformatics for storing and sharing genomic annotations.
       graphql:
         text: graphql
         description: The GraphQL format, a query language for APIs and a runtime for

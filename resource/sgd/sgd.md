@@ -226,5 +226,19 @@ products:
   - zwd
   - rnacentral
   product_url: https://rnacentral.org/help/public-database
+- category: Product
+  description: Model organism data from FlyBase, SGD, ZFIN and other model organism
+    databases
+  format: http
+  id: genecards.model.organisms
+  name: GeneCards Model Organism Data
+  original_source:
+  - flybase
+  - sgd
+  - zfin
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
 ---
 The Saccharomyces Genome Database (SGD) project collects information and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae.

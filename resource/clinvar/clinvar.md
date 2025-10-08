@@ -108,7 +108,7 @@ products:
   - stellar
   - dct
   - clinvar
-  - cmap
+  - connectivitymap
   - hp
   - mp
   - msigdb
@@ -171,7 +171,7 @@ products:
   - stellar
   - dct
   - clinvar
-  - cmap
+  - connectivitymap
   - hp
   - mp
   - msigdb
@@ -1019,6 +1019,36 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
   secondary_source:
   - kg-monarch
+- category: Product
+  description: Disease association data integrated from OMIM, MalaCards, ClinVar,
+    Orphanet, DisGeNET and other disease databases
+  format: http
+  id: genecards.disease.associations
+  name: GeneCards Disease Associations
+  original_source:
+  - omim
+  - malacards
+  - clinvar
+  - orphanet
+  - disgenet
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
+- category: Product
+  description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant
+    databases
+  format: http
+  id: genecards.variant.data
+  name: GeneCards Variant Data
+  original_source:
+  - clinvar
+  - dbsnp
+  - gwascatalog
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
 publications:
 - authors:
   - Landrum MJ

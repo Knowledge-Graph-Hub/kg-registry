@@ -141,6 +141,23 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: Product
+  description: Integrated gene annotation data aggregated from HGNC, OMIM, Ensembl,
+    NCBI Gene, UniProt and other genomic databases
+  format: http
+  id: genecards.gene.annotations
+  name: GeneCards Gene Annotations
+  original_source:
+  - hgnc
+  - omim
+  - ensembl
+  - ncbigene
+  - uniprot
+  - refseq
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
 publications:
 - doi: 10.1093/nar/gkv1189
   id: doi:10.1093/nar/gkv1189

@@ -221,6 +221,22 @@ products:
   - zwd
   - rnacentral
   product_url: https://rnacentral.org/help/public-database
+- category: Product
+  description: Disease association data integrated from OMIM, MalaCards, ClinVar,
+    Orphanet, DisGeNET and other disease databases
+  format: http
+  id: genecards.disease.associations
+  name: GeneCards Disease Associations
+  original_source:
+  - omim
+  - malacards
+  - clinvar
+  - orphanet
+  - disgenet
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information
   about this resource.

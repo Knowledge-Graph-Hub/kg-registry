@@ -48,6 +48,17 @@ products:
   product_url: https://github.com/gyorilab/indra_cogex
   secondary_source:
   - indra
+- category: Product
+  description: Literature references from PubMed automatically associated with genes
+  format: http
+  id: genecards.literature
+  name: GeneCards Literature References
+  original_source:
+  - pubmed
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information
   about this resource.

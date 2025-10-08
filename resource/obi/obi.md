@@ -92,7 +92,7 @@ products:
   - stellar
   - dct
   - clinvar
-  - cmap
+  - connectivitymap
   - hp
   - mp
   - msigdb
@@ -155,7 +155,7 @@ products:
   - stellar
   - dct
   - clinvar
-  - cmap
+  - connectivitymap
   - hp
   - mp
   - msigdb

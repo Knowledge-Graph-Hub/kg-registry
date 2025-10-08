@@ -152,7 +152,7 @@ products:
   - stellar
   - dct
   - clinvar
-  - cmap
+  - connectivitymap
   - hp
   - mp
   - msigdb
@@ -215,7 +215,7 @@ products:
   - stellar
   - dct
   - clinvar
-  - cmap
+  - connectivitymap
   - hp
   - mp
   - msigdb
@@ -407,6 +407,19 @@ products:
   product_url: https://rna-kg.biodata.di.unimi.it/edges.csv
   secondary_source:
   - rna-kg
+- category: Product
+  description: Pathway information integrated from Reactome, WikiPathways and other
+    pathway databases
+  format: http
+  id: genecards.pathway.data
+  name: GeneCards Pathway Data
+  original_source:
+  - reactome
+  - wikipathways
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
 publications:
 - authors:
   - Agrawal A

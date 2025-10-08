@@ -838,12 +838,26 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
   secondary_source:
   - kg-monarch
+- category: Product
+  description: Protein interaction data aggregated from IntAct, STRING, BioGRID and
+    other interaction databases
+  format: http
+  id: genecards.protein.interactions
+  name: GeneCards Protein Interactions
+  original_source:
+  - intact
+  - string
+  - biogrid
+  product_url: https://www.genecards.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
+    when accessing file'
 publications:
 - id: https://doi.org/10.1002/pro.3978
   journal: Protein Science
   preferred: true
-  title: "The BioGRID database \u2013 a comprehensive biomedical resource of curated\
-    \ protein, genetic, and chemical interactions"
+  title: The BioGRID database – a comprehensive biomedical resource of curated protein,
+    genetic, and chemical interactions
   year: '2020'
 - id: https://doi.org/10.1093/nar/gky1079
   journal: Nucleic Acids Research
