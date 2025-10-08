@@ -173,8 +173,19 @@ tmp/unsorted-resources.yml: $(RESOURCES) | tmp
 	@./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
 
 # Retrieve file sizes for products with URLs and update product_file_size field
+# Use parallel version by default for speed (10x faster)
+# Set PARALLEL=no to use the original sequential version
+# Set MAX_WORKERS=N to control parallelism (default: 10)
+PARALLEL ?= yes
+MAX_WORKERS ?= 10
+
+ifeq ($(PARALLEL),yes)
+tmp/unsorted-resources-with-sizes.yml: tmp/unsorted-resources.yml
+	$(RUN) python util/retrieve-file-sizes-parallel.py --max-workers $(MAX_WORKERS) $< $@.tmp && mv $@.tmp $@
+else
 tmp/unsorted-resources-with-sizes.yml: tmp/unsorted-resources.yml
 	$(RUN) python util/retrieve-file-sizes.py $< $@.tmp && mv $@.tmp $@
+endif
 
 # Run validation, including with LinkML validator
 # But don't show the whole command because it is very long
