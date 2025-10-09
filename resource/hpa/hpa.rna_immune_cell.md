@@ -5,5 +5,8 @@ format: tsv
 id: hpa.rna_immune_cell
 name: HPA Immune Cell RNA Data
 product_url: https://www.proteinatlas.org/download/rna_immune_cell.tsv.zip
+warnings:
+- File was not able to be retrieved when checked on 2025-10-09_ HTTP 403 error when
+  accessing file
 layout: product_detail
 ---

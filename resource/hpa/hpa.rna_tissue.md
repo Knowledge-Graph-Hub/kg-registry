@@ -5,5 +5,8 @@ format: tsv
 id: hpa.rna_tissue
 name: HPA RNA Tissue Expression Data
 product_url: https://www.proteinatlas.org/download/rna_tissue.tsv.zip
+warnings:
+- File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
+  accessing file
 layout: product_detail
 ---
