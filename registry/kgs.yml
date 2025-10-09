@@ -106,7 +106,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
@@ -1044,7 +1044,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -2025,10 +2025,13 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
-      header found'
+    - 'File was not able to be retrieved when checked on 2025-10-08: Error connecting
+      to URL: HTTPSConnectionPool(host=''ordspub.epa.gov'', port=443): Max retries
+      exceeded with url: /ords/eims/eimscomm.getfile?p_download_id=543383 (Caused
+      by NewConnectionError(''<urllib3.connection.HTTPSConnection object at 0x7fca293233d0>:
+      Failed to establish a new connection: [Errno 101] Network is unreachable''))'
   - category: GraphicalInterface
     description: A browser interface for a knowledge graph for Alzheimer's Disease.
     format: http
@@ -2140,16 +2143,16 @@ resources:
       with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
       certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-10-08_ Error connecting
+      to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
+      with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
+      CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
+      certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-10-07_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
       certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
-      to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-      with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
-      CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
-      certificate (_ssl.c_1000)')))
     - 'File was not able to be retrieved when checked on 2025-10-08: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads (Caused by SSLError(SSLCertVerificationError(1, ''[SSL:
@@ -2170,16 +2173,16 @@ resources:
       with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-10-08_ Error connecting
+      to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
+      with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
+      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-10-07_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
-      to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-      with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
-      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
     - 'File was not able to be retrieved when checked on 2025-10-08: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
@@ -2200,16 +2203,16 @@ resources:
       with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-10-08_ Error connecting
+      to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
+      with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
+      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-10-07_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
-      to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-      with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
-      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
     - 'File was not able to be retrieved when checked on 2025-10-08: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
@@ -2230,16 +2233,16 @@ resources:
       with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-10-08_ Error connecting
+      to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
+      with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
+      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-10-07_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
-      to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-      with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
-      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
     - 'File was not able to be retrieved when checked on 2025-10-08: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
@@ -2260,16 +2263,16 @@ resources:
       with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-10-08_ Error connecting
+      to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
+      with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
+      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-10-07_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
-      to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-      with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
-      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
     - 'File was not able to be retrieved when checked on 2025-10-08: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
@@ -2289,14 +2292,14 @@ resources:
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
       certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-10-08_ Error connecting
+      to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
+      with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
+      certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-10-07_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
       certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
-      to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-      with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-      certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
     - 'File was not able to be retrieved when checked on 2025-10-08: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /aops (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
@@ -2317,16 +2320,16 @@ resources:
       with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
       certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-10-08_ Error connecting
+      to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
+      with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
+      CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
+      certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-10-07_ Error connecting
       to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
       with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
       CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
       certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
-      to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-      with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
-      CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
-      certificate (_ssl.c_1000)')))
     - 'File was not able to be retrieved when checked on 2025-10-08: Error connecting
       to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
       with url: /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, ''[SSL:
@@ -2951,7 +2954,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
@@ -2971,7 +2974,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
@@ -2991,7 +2994,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
@@ -3011,7 +3014,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
@@ -3031,7 +3034,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
@@ -3051,7 +3054,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
@@ -3071,7 +3074,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
@@ -3091,7 +3094,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
@@ -3995,6 +3998,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   publications:
@@ -4706,6 +4711,8 @@ resources:
     - bgee
     product_url: https://www.genecards.org/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
@@ -5580,6 +5587,8 @@ resources:
     - biogrid
     product_url: https://www.genecards.org/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
@@ -7450,10 +7459,10 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ Timeout connecting
       to URL
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
+      header found
     - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
-      to URL
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
   - category: Product
@@ -7464,10 +7473,10 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ Timeout connecting
       to URL
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
+      header found
     - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
-      to URL
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
   - category: Product
@@ -7479,10 +7488,10 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ Timeout connecting
       to URL
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
+      header found
     - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
-      to URL
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
   - category: Product
@@ -7494,10 +7503,10 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ Timeout connecting
       to URL
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
+      header found
     - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
-      to URL
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
   - category: GraphicalInterface
@@ -7634,7 +7643,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
       when accessing file'
@@ -7651,7 +7660,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
       when accessing file'
@@ -7829,7 +7838,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
       when accessing file'
@@ -7883,7 +7892,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
       when accessing file'
@@ -11638,7 +11647,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ HTTP 500 error
       when accessing file
@@ -11655,6 +11664,8 @@ resources:
     - clinicaltrialsgov
     product_url: https://www.genecards.org/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
@@ -12710,6 +12721,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   - category: Product
@@ -12724,6 +12737,8 @@ resources:
     - gwascatalog
     product_url: https://www.genecards.org/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
@@ -13541,16 +13556,16 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-10-08_ Error connecting
+      to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
+      retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
+      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-10-07_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
-      to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
-      retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
-      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
     - 'File was not able to be retrieved when checked on 2025-10-08: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
@@ -13572,16 +13587,16 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-10-08_ Error connecting
+      to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
+      retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
+      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-10-07_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
-      to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
-      retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
-      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
     - 'File was not able to be retrieved when checked on 2025-10-08: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
@@ -13603,16 +13618,16 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-10-08_ Error connecting
+      to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
+      retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
+      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-10-07_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
-      to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
-      retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
-      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
     - 'File was not able to be retrieved when checked on 2025-10-08: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
@@ -13633,16 +13648,16 @@ resources:
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1000)')))
+    - File was not able to be retrieved when checked on 2025-10-08_ Error connecting
+      to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
+      retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
+      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
+      issuer certificate (_ssl.c_1017)')))
     - File was not able to be retrieved when checked on 2025-10-07_ Error connecting
       to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
       retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
       '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
       issuer certificate (_ssl.c_1017)')))
-    - File was not able to be retrieved when checked on 2025-10-06_ Error connecting
-      to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max
-      retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
-      '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-      issuer certificate (_ssl.c_1000)')))
     - 'File was not able to be retrieved when checked on 2025-10-08: Error connecting
       to URL: HTTPSConnectionPool(host=''mips.helmholtz-muenchen.de'', port=443):
       Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1,
@@ -15800,6 +15815,8 @@ resources:
     - gwascatalog
     product_url: https://www.genecards.org/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
@@ -18380,6 +18397,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   publications:
@@ -19696,6 +19715,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   publications:
@@ -19944,7 +19965,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -19965,7 +19986,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -19987,7 +20008,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -20034,7 +20055,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ HTTP 500 error
       when accessing file
@@ -20187,7 +20208,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
       when accessing file'
@@ -22657,6 +22678,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   publications:
@@ -24874,6 +24897,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   repository: https://github.com/FlyBase
@@ -24956,7 +24981,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -24976,7 +25001,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -24996,7 +25021,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -25015,7 +25040,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
       to URL
@@ -25034,7 +25059,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
       to URL
@@ -25053,7 +25078,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -25072,7 +25097,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -25091,7 +25116,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -25110,7 +25135,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -25129,7 +25154,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -25148,7 +25173,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error
       when accessing file
@@ -25659,7 +25684,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
       when accessing file'
@@ -26106,6 +26131,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   - category: Product
@@ -26124,6 +26151,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   - category: Product
@@ -26140,6 +26169,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   - category: Product
@@ -26153,6 +26184,8 @@ resources:
     - wikipathways
     product_url: https://www.genecards.org/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
@@ -26171,6 +26204,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   - category: Product
@@ -26187,6 +26222,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   - category: Product
@@ -26198,6 +26235,8 @@ resources:
     - pubmed
     product_url: https://www.genecards.org/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
@@ -26213,6 +26252,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   - category: Product
@@ -26226,6 +26267,8 @@ resources:
     - drugbank
     product_url: https://www.genecards.org/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
@@ -26244,6 +26287,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   - category: Product
@@ -26257,6 +26302,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   - category: Product
@@ -26268,6 +26315,8 @@ resources:
     - clinicaltrialsgov
     product_url: https://www.genecards.org/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
@@ -26908,7 +26957,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -26932,7 +26981,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -26954,7 +27003,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -26969,7 +27018,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -27007,7 +27056,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -27045,7 +27094,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -27066,7 +27115,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -29163,6 +29212,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   - category: OntologyProduct
@@ -29389,7 +29440,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
       when accessing file'
@@ -29472,7 +29523,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -30194,6 +30245,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   publications:
@@ -30264,7 +30317,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
@@ -30280,7 +30333,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
@@ -30295,7 +30348,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
@@ -30310,7 +30363,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
@@ -30326,7 +30379,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
@@ -30342,7 +30395,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
@@ -30357,7 +30410,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error
       when accessing file
@@ -30859,7 +30912,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
       when accessing file'
@@ -30885,7 +30938,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
       when accessing file'
@@ -30901,7 +30954,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
       when accessing file'
@@ -30917,7 +30970,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
       when accessing file'
@@ -30933,7 +30986,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
       when accessing file'
@@ -30948,7 +31001,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
       when accessing file'
@@ -30963,7 +31016,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ Error connecting
       to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
-    - File was not able to be retrieved when checked on 2025-10-07_ Error connecting
+    - File was not able to be retrieved when checked on 2025-10-08_ Error connecting
       to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
     - 'File was not able to be retrieved when checked on 2025-10-08: Error connecting
       to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'''
@@ -31255,6 +31308,8 @@ resources:
     - gwascatalog
     product_url: https://www.genecards.org/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
@@ -31863,7 +31918,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
       when accessing file'
@@ -32418,6 +32473,8 @@ resources:
     - refseq
     product_url: https://www.genecards.org/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
@@ -35248,7 +35305,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 401 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 401 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 401 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 401 error
       when accessing file'
@@ -36985,6 +37042,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
 - activity_status: active
@@ -37906,7 +37965,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
@@ -38004,7 +38063,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
       when accessing file'
@@ -38096,7 +38155,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
@@ -38187,7 +38246,7 @@ resources:
   evaluation_page: resource/kg-monarch/kg-monarch_eval.html
   homepage_url: https://kghub.org/kg-monarch/index.html
   id: kg-monarch
-  last_modified_date: '2025-10-08T15:00:56Z'
+  last_modified_date: '2025-10-08T20:16:47Z'
   layout: resource_detail
   license:
     id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -40898,7 +40957,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 503 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 503 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 503 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 503 error
       when accessing file'
@@ -40913,7 +40972,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 503 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 503 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 503 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 503 error
       when accessing file'
@@ -40928,7 +40987,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 503 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 503 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 503 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 503 error
       when accessing file'
@@ -41503,6 +41562,8 @@ resources:
     - disgenet
     product_url: https://www.genecards.org/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
@@ -42474,7 +42535,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -42495,7 +42556,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -42517,7 +42578,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -43067,7 +43128,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - File was not able to be retrieved when checked on 2025-09-23_ Timeout connecting
       to URL
@@ -43949,7 +44010,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -43970,7 +44031,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -43992,7 +44053,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -47582,6 +47643,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   publications:
@@ -50301,7 +50364,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -50324,7 +50387,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -50347,7 +50410,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -50767,7 +50830,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -51115,7 +51178,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -51133,7 +51196,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -51161,7 +51224,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -51184,7 +51247,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -51202,7 +51265,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -51350,7 +51413,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -51373,7 +51436,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -51391,7 +51454,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -51461,7 +51524,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -51482,7 +51545,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -51497,7 +51560,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -51661,7 +51724,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -51689,7 +51752,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -51707,7 +51770,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -52122,7 +52185,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -52150,7 +52213,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -52236,7 +52299,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -52263,7 +52326,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -52315,7 +52378,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -52333,7 +52396,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -52426,7 +52489,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -52449,7 +52512,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -52472,7 +52535,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -52531,7 +52594,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -52554,7 +52617,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -52577,7 +52640,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -52703,7 +52766,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -52735,7 +52798,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -53474,7 +53537,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
@@ -53495,7 +53558,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
@@ -53516,7 +53579,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
@@ -53538,7 +53601,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
@@ -53560,7 +53623,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
@@ -53582,7 +53645,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
@@ -53604,7 +53667,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
@@ -53624,7 +53687,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
@@ -53644,7 +53707,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ Timeout connecting
       to URL
@@ -53667,7 +53730,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
@@ -53824,6 +53887,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   - category: Product
@@ -53840,6 +53905,8 @@ resources:
     - disgenet
     product_url: https://www.genecards.org/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
@@ -55729,6 +55796,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   repository: https://github.com/Orphanet
@@ -57322,8 +57391,8 @@ resources:
     name: pcl.json
     product_url: http://purl.obolibrary.org/obo/pcl.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-10-08: Timeout connecting
+      to URL'
   - category: OntologyProduct
     description: Provisional Cell Ontology in OWL format
     format: owl
@@ -57340,8 +57409,8 @@ resources:
     name: pcl-base.obo
     product_url: http://purl.obolibrary.org/obo/pcl-base.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-10-08: Timeout connecting
+      to URL'
   - category: OntologyProduct
     description: Provisional Cell Ontology in JSON format
     format: json
@@ -57349,8 +57418,8 @@ resources:
     name: pcl-base.json
     product_url: http://purl.obolibrary.org/obo/pcl-base.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-10-08: Timeout connecting
+      to URL'
   - category: OntologyProduct
     description: Provisional Cell Ontology in OWL format
     format: owl
@@ -57394,8 +57463,8 @@ resources:
     name: pcl-simple.obo
     product_url: http://purl.obolibrary.org/obo/pcl-simple.obo
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-10-08: Timeout connecting
+      to URL'
   - category: OntologyProduct
     description: Provisional Cell Ontology in JSON format
     format: json
@@ -57403,8 +57472,8 @@ resources:
     name: pcl-simple.json
     product_url: http://purl.obolibrary.org/obo/pcl-simple.json
     warnings:
-    - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
-      when accessing file'
+    - 'File was not able to be retrieved when checked on 2025-10-08: Timeout connecting
+      to URL'
   repository: https://github.com/obophenotype/provisional_cell_ontology
 - activity_status: active
   category: Ontology
@@ -57441,17 +57510,93 @@ resources:
     product_url: http://purl.obolibrary.org/obo/pco.owl
   repository: https://github.com/PopulationAndCommunityOntology/pco
 - activity_status: active
-  category: DataSource
+  category: Aggregator
   creation_date: '2025-09-09T00:00:00Z'
-  description: Stub Resource page for pdbe. This page was automatically generated
-    because it was referenced by other resources.
+  description: PDBe-KB (Protein Data Bank in Europe - Knowledge Base) is an open,
+    collaborative consortium for integration and enrichment of 3D-structure data and
+    functional annotations to enable basic and translational research. It provides
+    comprehensive access to macromolecular structure data integrated with functional
+    annotations from multiple sources.
   domains:
-  - stub
+  - biomedical
+  - genomics
+  - proteomics
+  - anatomy and development
+  homepage_url: https://www.ebi.ac.uk/pdbe/pdbe-kb/
   id: pdbe
-  last_modified_date: '2025-09-09T00:00:00Z'
+  last_modified_date: '2025-10-08T00:00:00Z'
   layout: resource_detail
-  name: Pdbe
+  license:
+    id: https://creativecommons.org/licenses/by/4.0/
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+  name: PDBe Knowledge Base
   products:
+  - category: GraphicalInterface
+    description: PDBe-KB web portal providing access to enriched 3D structure data
+      with functional annotations, including protein structures, ligand superpositions,
+      and biological context
+    format: http
+    id: pdbe.kb-portal
+    name: PDBe-KB Web Portal
+    product_url: https://www.ebi.ac.uk/pdbe/pdbe-kb/
+  - category: GraphProduct
+    description: Neo4j graph database containing integrated PDBe-KB data with PDB
+      entries, chains, entities, residues, and functional annotations. This version
+      (graph.db.tgz) is for Neo4J 3.5.
+    format: neo4j
+    id: pdbe.kb-graph-database.neo4j3
+    name: PDBe-KB Graph Database for Neo4J 3.5
+    product_url: https://ftp.ebi.ac.uk/pub/databases/msd/graphdb/
+  - category: GraphProduct
+    description: Neo4j graph database containing integrated PDBe-KB data with PDB
+      entries, chains, entities, residues, and functional annotations. This version
+      (neo4j.dump) is for Neo4J 4 and above.
+    format: neo4j
+    id: pdbe.kb-graph-database.neo4j4
+    name: PDBe-KB Graph Database for Neo4J 4
+    product_url: https://ftp.ebi.ac.uk/pub/databases/msd/graphdb/
+  - category: ProgrammingInterface
+    description: RESTful API powered by the PDBe-KB graph database, providing programmatic
+      access to structural data and functional annotations
+    format: http
+    id: pdbe.kb-api
+    name: PDBe-KB Graph API
+    product_url: https://www.ebi.ac.uk/pdbe/graph-api/pdbe_doc/
+  - category: Product
+    description: FTP archive providing bulk download access to PDBe-KB data files
+      and annotations
+    format: http
+    id: pdbe.kb-ftp
+    name: PDBe-KB FTP Archive
+    product_url: http://ftp.ebi.ac.uk/pub/databases/pdbe-kb/
+  - category: Product
+    description: Downloadable coordinate files, experimental data files, validation
+      reports, FASTA sequences, and small molecule data for PDB entries
+    format: mixed
+    id: pdbe.download-service
+    name: PDBe Download Service
+    product_url: https://www.ebi.ac.uk/pdbe/download/docs
+  - category: Product
+    description: SIFTS (Structure Integration with Function, Taxonomy and Sequences)
+      provides residue-level mapping between UniProt and PDB entries
+    format: xml
+    id: pdbe.sifts
+    name: SIFTS Residue-level Mapping
+    product_url: https://www.ebi.ac.uk/pdbe/download/docs
+  - category: DocumentationProduct
+    description: User guides and documentation for PDBe-KB features and data access
+    format: http
+    id: pdbe.kb-manual
+    name: PDBe-KB User Manual
+    product_url: https://github.com/PDBe-KB/pdbe-kb-manual
+  - category: DocumentationProduct
+    description: Interactive schema explorer for the PDBe-KB Neo4j graph database,
+      showing nodes, relationships, and data structure
+    format: http
+    id: pdbe.kb-schema
+    name: PDBe Graph Database Schema Explorer
+    product_url: https://www.ebi.ac.uk/pdbe/pdbe-kb/schema
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures,
       and annotations
@@ -57673,11 +57818,16 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
-  warnings:
-  - This is an automatically generated stub page. Please replace with accurate information
-    about this resource.
+  publications:
+  - id: https://doi.org/10.1093/nar/gkab988
+    preferred: true
+    title: 'PDBe-KB: collaboratively defining the biological context of structural
+      data'
+  repository: https://github.com/PDBe-KB
 - activity_status: active
   category: Ontology
   collection:
@@ -58897,6 +59047,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   repository: https://www.pharmgkb.org/downloads
@@ -59153,7 +59305,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
       to URL
@@ -61102,7 +61254,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -61125,7 +61277,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -62600,7 +62752,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
@@ -63290,6 +63442,8 @@ resources:
     - pubmed
     product_url: https://www.genecards.org/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
@@ -65393,6 +65547,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   repository: ''
@@ -65780,6 +65936,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   publications:
@@ -65838,7 +65996,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ HTTP 500 error
       when accessing file
@@ -66025,6 +66183,11 @@ resources:
       with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
       object at 0x7f08401c3e30>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
       or service not known)"))
+    - File was not able to be retrieved when checked on 2025-10-08_ Error connecting
+      to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
+      with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
+      object at 0x7f52197a2c80>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
+      or service not known)"))
     - File was not able to be retrieved when checked on 2025-10-07_ Error connecting
       to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
       with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
@@ -66123,7 +66286,7 @@ resources:
     - 'File was not able to be retrieved when checked on 2025-10-08: Error connecting
       to URL: HTTPSConnectionPool(host=''reprotox-kg.net'', port=443): Max retries
       exceeded with url: /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
-      object at 0x7f52197a2c80>: Failed to resolve ''reprotox-kg.net'' ([Errno -2]
+      object at 0x7fca2e2161d0>: Failed to resolve ''reprotox-kg.net'' ([Errno -2]
       Name or service not known)"))'
   publications:
   - authors:
@@ -66657,7 +66820,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -66684,7 +66847,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -68472,7 +68635,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
       when accessing file'
@@ -69021,6 +69184,8 @@ resources:
     - zfin
     product_url: https://www.genecards.org/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
@@ -73434,6 +73599,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   publications:
@@ -74183,7 +74350,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
       when accessing file'
@@ -76278,7 +76445,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
@@ -76292,7 +76459,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
@@ -76305,7 +76472,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
@@ -76439,7 +76606,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
-    - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
+    - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
       header found
     - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
       header found'
@@ -76486,7 +76653,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error
       when accessing file
@@ -76993,6 +77160,8 @@ resources:
     - refseq
     product_url: https://www.genecards.org/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
@@ -78377,6 +78546,8 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
   publications:
@@ -79601,7 +79772,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
       to URL
@@ -79633,7 +79804,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error
       when accessing file
     - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
       to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded
@@ -80663,6 +80834,8 @@ resources:
     - zfin
     product_url: https://www.genecards.org/
     warnings:
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
+      when accessing file
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
@@ -83342,7 +83515,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
@@ -83356,7 +83529,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
@@ -83370,7 +83543,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
@@ -83384,7 +83557,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'
@@ -83397,7 +83570,7 @@ resources:
     warnings:
     - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
-    - File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error
+    - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error
       when accessing file
     - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error
       when accessing file'

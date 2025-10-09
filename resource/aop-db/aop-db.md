@@ -65,12 +65,13 @@ products:
   - aop-db
   product_url: https://ordspub.epa.gov/ords/eims/eimscomm.getfile?p_download_id=543383
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-07_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-10-08: No Content-Length
-    header found'
+  - 'File was not able to be retrieved when checked on 2025-10-08: Error connecting
+    to URL: HTTPSConnectionPool(host=''ordspub.epa.gov'', port=443): Max retries exceeded
+    with url: /ords/eims/eimscomm.getfile?p_download_id=543383 (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
+    object at 0x7fca293233d0>: Failed to establish a new connection: [Errno 101] Network
+    is unreachable''))'
 - category: GraphicalInterface
   description: A browser interface for a knowledge graph for Alzheimer's Disease.
   format: http

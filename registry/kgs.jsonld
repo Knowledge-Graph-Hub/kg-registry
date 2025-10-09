@@ -102,7 +102,7 @@
                     "product_url": "https://ddbj.nig.ac.jp/public/mirror_database/1000genomes/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -1193,7 +1193,7 @@
                     "product_url": "https://download.alliancegenome.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -2280,8 +2280,8 @@
                     "product_url": "https://ordspub.epa.gov/ords/eims/eimscomm.getfile?p_download_id=543383",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08: Error connecting to URL: HTTPSConnectionPool(host='ordspub.epa.gov', port=443): Max retries exceeded with url: /ords/eims/eimscomm.getfile?p_download_id=543383 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fca293233d0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"
                     ]
                 },
                 {
@@ -2407,8 +2407,8 @@
                     "product_url": "https://aopwiki.org/downloads",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
+                        "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
                         "File was not able to be retrieved when checked on 2025-10-07_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
-                        "File was not able to be retrieved when checked on 2025-10-06_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
                         "File was not able to be retrieved when checked on 2025-10-08: Error connecting to URL: HTTPSConnectionPool(host='aopwiki.org', port=443): Max retries exceeded with url: /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
@@ -2424,8 +2424,8 @@
                     "product_url": "https://aopwiki.org/downloads/aop-wiki-xml.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
+                        "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
                         "File was not able to be retrieved when checked on 2025-10-07_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
-                        "File was not able to be retrieved when checked on 2025-10-06_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
                         "File was not able to be retrieved when checked on 2025-10-08: Error connecting to URL: HTTPSConnectionPool(host='aopwiki.org', port=443): Max retries exceeded with url: /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
@@ -2441,8 +2441,8 @@
                     "product_url": "https://aopwiki.org/downloads/aop_ke_mie_ao.tsv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
+                        "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
                         "File was not able to be retrieved when checked on 2025-10-07_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
-                        "File was not able to be retrieved when checked on 2025-10-06_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
                         "File was not able to be retrieved when checked on 2025-10-08: Error connecting to URL: HTTPSConnectionPool(host='aopwiki.org', port=443): Max retries exceeded with url: /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
@@ -2458,8 +2458,8 @@
                     "product_url": "https://aopwiki.org/downloads/aop_ke_ker.tsv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
+                        "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
                         "File was not able to be retrieved when checked on 2025-10-07_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
-                        "File was not able to be retrieved when checked on 2025-10-06_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
                         "File was not able to be retrieved when checked on 2025-10-08: Error connecting to URL: HTTPSConnectionPool(host='aopwiki.org', port=443): Max retries exceeded with url: /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
@@ -2475,8 +2475,8 @@
                     "product_url": "https://aopwiki.org/downloads/aop_ke_ec.tsv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
+                        "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
                         "File was not able to be retrieved when checked on 2025-10-07_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
-                        "File was not able to be retrieved when checked on 2025-10-06_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
                         "File was not able to be retrieved when checked on 2025-10-08: Error connecting to URL: HTTPSConnectionPool(host='aopwiki.org', port=443): Max retries exceeded with url: /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
@@ -2492,8 +2492,8 @@
                     "product_url": "https://aopwiki.org/aops",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
+                        "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
                         "File was not able to be retrieved when checked on 2025-10-07_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
-                        "File was not able to be retrieved when checked on 2025-10-06_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
                         "File was not able to be retrieved when checked on 2025-10-08: Error connecting to URL: HTTPSConnectionPool(host='aopwiki.org', port=443): Max retries exceeded with url: /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
@@ -2506,8 +2506,8 @@
                     "product_url": "https://aopwiki.org/handbooks/4",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
+                        "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
                         "File was not able to be retrieved when checked on 2025-10-07_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
-                        "File was not able to be retrieved when checked on 2025-10-06_ Error connecting to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
                         "File was not able to be retrieved when checked on 2025-10-08: Error connecting to URL: HTTPSConnectionPool(host='aopwiki.org', port=443): Max retries exceeded with url: /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
@@ -3326,7 +3326,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -3347,7 +3347,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -3368,7 +3368,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -3389,7 +3389,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -3410,7 +3410,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -3431,7 +3431,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -3452,7 +3452,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -3473,7 +3473,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -4443,6 +4443,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 }
@@ -5341,6 +5342,7 @@
                     ],
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
@@ -6294,6 +6296,7 @@
                     ],
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
@@ -8533,8 +8536,8 @@
                     "product_url": "http://xteam.xbio.top/download/Human_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -8546,8 +8549,8 @@
                     "product_url": "http://xteam.xbio.top/download/Mouse_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -8559,8 +8562,8 @@
                     "product_url": "http://xteam.xbio.top/download/Single_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -8572,8 +8575,8 @@
                     "product_url": "http://xteam.xbio.top/download/all_cell_markers.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ Timeout connecting to URL",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -8747,7 +8750,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
                 },
@@ -8766,7 +8769,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
                 },
@@ -8985,7 +8988,7 @@
                     "product_url": "https://cfde.cloud/gse/downloads/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
                 }
@@ -9050,7 +9053,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
                 },
@@ -13411,7 +13414,7 @@
                     "product_url": "https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ HTTP 500 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -13428,6 +13431,7 @@
                     ],
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
@@ -14564,6 +14568,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -14580,6 +14585,7 @@
                     ],
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
@@ -15554,8 +15560,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
+                        "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
                         "File was not able to be retrieved when checked on 2025-10-07_ Error connecting to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
-                        "File was not able to be retrieved when checked on 2025-10-06_ Error connecting to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
                         "File was not able to be retrieved when checked on 2025-10-08: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
@@ -15572,8 +15578,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
+                        "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
                         "File was not able to be retrieved when checked on 2025-10-07_ Error connecting to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
-                        "File was not able to be retrieved when checked on 2025-10-06_ Error connecting to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
                         "File was not able to be retrieved when checked on 2025-10-08: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
@@ -15590,8 +15596,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
+                        "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
                         "File was not able to be retrieved when checked on 2025-10-07_ Error connecting to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
-                        "File was not able to be retrieved when checked on 2025-10-06_ Error connecting to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
                         "File was not able to be retrieved when checked on 2025-10-08: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
@@ -15608,8 +15614,8 @@
                     "product_url": "https://mips.helmholtz-muenchen.de/corum/download/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
+                        "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
                         "File was not able to be retrieved when checked on 2025-10-07_ Error connecting to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))",
-                        "File was not able to be retrieved when checked on 2025-10-06_ Error connecting to URL_ HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443)_ Max retries exceeded with url_ /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))",
                         "File was not able to be retrieved when checked on 2025-10-08: Error connecting to URL: HTTPSConnectionPool(host='mips.helmholtz-muenchen.de', port=443): Max retries exceeded with url: /corum/download/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))"
                     ]
                 },
@@ -18079,6 +18085,7 @@
                     ],
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
@@ -20946,6 +20953,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 }
@@ -22474,6 +22482,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 }
@@ -22765,7 +22774,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -22789,7 +22798,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -22813,7 +22822,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -22870,7 +22879,7 @@
                     "product_url": "https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ HTTP 500 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -23055,7 +23064,7 @@
                     "product_url": "https://clowder.edap-cluster.com/files/6616d945e4b063812d70fcb5?dataset=61147fefe4b0856fdc65639b&space=&folder=6616d85ce4b063812d70fc8f",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
                 },
@@ -25983,6 +25992,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 }
@@ -28551,6 +28561,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 }
@@ -28658,7 +28669,7 @@
                     "product_url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file",
@@ -28675,7 +28686,7 @@
                     "product_url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file",
@@ -28692,7 +28703,7 @@
                     "product_url": "https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file",
@@ -28708,7 +28719,7 @@
                     "product_url": "https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file",
@@ -28724,7 +28735,7 @@
                     "product_url": "https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file",
@@ -28740,7 +28751,7 @@
                     "product_url": "https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-10_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file",
@@ -28756,7 +28767,7 @@
                     "product_url": "https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file",
@@ -28772,7 +28783,7 @@
                     "product_url": "https://foodb.ca/public/system/downloads/foodb_predicted_msms_spectra.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file",
@@ -28788,7 +28799,7 @@
                     "product_url": "https://foodb.ca/public/system/downloads/foodb_nmr_spectra.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file",
@@ -28804,7 +28815,7 @@
                     "product_url": "https://foodb.ca/public/system/downloads/foodb_fid_files.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file",
@@ -28820,7 +28831,7 @@
                     "product_url": "https://foodb.ca/public/system/downloads/foodb_image_files.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-28_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when accessing file",
@@ -29431,7 +29442,7 @@
                     "product_url": "https://ftp.sanger.ac.uk/project/cancerrxgene/releases/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
                 },
@@ -29914,6 +29925,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -29933,6 +29945,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -29950,6 +29963,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -29965,6 +29979,7 @@
                     ],
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
@@ -29983,6 +29998,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -30000,6 +30016,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -30014,6 +30031,7 @@
                     ],
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
@@ -30030,6 +30048,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -30045,6 +30064,7 @@
                     ],
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
@@ -30063,6 +30083,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -30078,6 +30099,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -30092,6 +30114,7 @@
                     ],
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
@@ -30859,7 +30882,7 @@
                     "product_url": "https://zenodo.org/record/14640564/files/interactions.csv.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -30883,7 +30906,7 @@
                     "product_url": "https://zenodo.org/record/14640564/files/verbatim-interactions.csv.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -30907,7 +30930,7 @@
                     "product_url": "https://zenodo.org/record/14640564/files/refuted-interactions.csv.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -30921,7 +30944,7 @@
                     "product_url": "https://zenodo.org/record/14640564/files/refuted-verbatim-interactions.csv.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -30965,7 +30988,7 @@
                     "product_url": "https://zenodo.org/record/14640564/files/datasets.csv.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -31009,7 +31032,7 @@
                     "product_url": "https://zenodo.org/record/14640564/files/citations.csv.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -31032,7 +31055,7 @@
                     "product_url": "https://api.globalbioticinteractions.org/interactionFields?type=json",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -33403,6 +33426,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -33673,7 +33697,7 @@
                     "product_url": "https://github.com/geneontology/go-cam",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
                 },
@@ -33779,7 +33803,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -34616,6 +34640,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 }
@@ -34709,7 +34734,7 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/targets_and_families.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
@@ -34723,7 +34748,7 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/ligands.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
@@ -34737,7 +34762,7 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/interactions.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
@@ -34751,7 +34776,7 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/approved_drug_detailed_interactions.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
@@ -34765,7 +34790,7 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/all_ligands.sdf",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
@@ -34779,7 +34804,7 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/rdf/2025.1/gtp-rdf.n3",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
@@ -34792,7 +34817,7 @@
                     "product_url": "https://www.guidetopharmacology.org/DATA/public_iuphardb_v2025.1.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-08-14_ HTTP 503 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
@@ -35370,7 +35395,7 @@
                     "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.json",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
                 },
@@ -35398,7 +35423,7 @@
                     "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-variants.tsv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
                 },
@@ -35414,7 +35439,7 @@
                     "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
                 },
@@ -35430,7 +35455,7 @@
                     "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.owl.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
                 },
@@ -35446,7 +35471,7 @@
                     "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram.svg",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
                 },
@@ -35462,7 +35487,7 @@
                     "product_url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram-archive.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
                 },
@@ -35477,7 +35502,7 @@
                     "product_url": "ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'",
-                        "File was not able to be retrieved when checked on 2025-10-07_ Error connecting to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'",
+                        "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'",
                         "File was not able to be retrieved when checked on 2025-10-08: Error connecting to URL: No connection adapters were found for 'ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'"
                     ]
                 },
@@ -35793,6 +35818,7 @@
                     ],
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
@@ -36547,7 +36573,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
                 },
@@ -37140,6 +37166,7 @@
                     ],
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
@@ -40363,7 +40390,7 @@
                     "product_url": "https://avr.hubmapconsortium.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 401 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 401 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 401 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 401 error when accessing file"
                     ]
                 },
@@ -42406,6 +42433,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 }
@@ -43558,7 +43586,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 }
@@ -43698,7 +43726,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
                 }
@@ -43824,7 +43852,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -43948,7 +43976,7 @@
             "evaluation_page": "resource/kg-monarch/kg-monarch_eval.html",
             "homepage_url": "https://kghub.org/kg-monarch/index.html",
             "id": "kg-monarch",
-            "last_modified_date": "2025-10-08T15:00:56Z",
+            "last_modified_date": "2025-10-08T20:16:47Z",
             "layout": "resource_detail",
             "license": {
                 "id": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -46929,7 +46957,7 @@
                     "product_url": "https://loinc.org/download/loinc-complete/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 503 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 503 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 503 error when accessing file"
                     ]
                 },
@@ -46945,7 +46973,7 @@
                     "product_url": "https://loinc.org/downloads/archive/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 503 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 503 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 503 error when accessing file"
                     ]
                 },
@@ -46960,7 +46988,7 @@
                     "product_url": "https://loinc.org/principles/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 503 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 503 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 503 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 503 error when accessing file"
                     ]
                 },
@@ -47594,6 +47622,7 @@
                     ],
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
@@ -48685,7 +48714,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -48709,7 +48738,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -48733,7 +48762,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -49384,7 +49413,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-09-23_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
@@ -50431,7 +50460,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -50455,7 +50484,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -50479,7 +50508,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -54598,6 +54627,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 }
@@ -57872,7 +57902,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.obo",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-09_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4fb79b61b0>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -57891,7 +57921,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-09_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4fb79b6ba0>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -57910,7 +57940,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/clinicaltrials/clinicaltrials.json",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-09_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/clinicaltrials/clinicaltrials.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4fb79b72f0>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -58444,7 +58474,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/gtdb/gtdb.obo",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-09_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/gtdb/gtdb.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4fb79b7a40>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -58895,7 +58925,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/mesh/mesh.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -58913,7 +58943,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/mesh/mesh.json",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/mesh/mesh.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c763470>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-09_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/mesh/mesh.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4fb79e8fb0>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
@@ -58933,7 +58963,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/mgi/mgi.obo",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/mgi/mgi.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f28e3289a20>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -58952,7 +58982,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/mgi/mgi.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -58970,7 +59000,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/mgi/mgi.json",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/mgi/mgi.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c761850>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/mgi/mgi.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f28e32a8190>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting to URL",
@@ -59146,7 +59176,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/msigdb/msigdb.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c761820>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -59165,7 +59195,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/msigdb/msigdb.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -59183,7 +59213,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/msigdb/msigdb.json",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-09_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/msigdb/msigdb.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff2449ab670>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -59263,7 +59293,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.obo",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/nihreporter.project/nihreporter.project.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f28e32a9990>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -59278,7 +59308,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -59292,7 +59322,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/nihreporter.project/nihreporter.project.json",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/nihreporter.project/nihreporter.project.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c762b10>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -59493,7 +59523,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/pathbank/pathbank.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f28e3289ba0>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-09_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/pathbank/pathbank.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4fb79e8440>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
@@ -59513,7 +59543,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/pathbank/pathbank.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -59531,7 +59561,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/pathbank/pathbank.json",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -60080,7 +60110,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/reactome/reactome.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/reactome/reactome.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c7633b0>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-09_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/reactome/reactome.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff2449aaf50>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
@@ -60100,7 +60130,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/reactome/reactome.json",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/reactome/reactome.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c762270>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/reactome/reactome.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f28e32a9570>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting to URL",
@@ -60197,7 +60227,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/rhea/rhea.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c761be0>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -60222,7 +60252,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/rhea/rhea.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c7716d0>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -60278,7 +60308,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/ror/ror.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -60296,7 +60326,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/ror/ror.json",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/ror/ror.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c771610>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -60406,7 +60436,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/slm/slm.obo",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/slm/slm.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c760410>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -60425,7 +60455,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/slm/slm.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/slm/slm.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c762780>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -60444,7 +60474,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/slm/slm.json",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/slm/slm.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c7633b0>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/slm/slm.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f28e32ab970>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-09_ Timeout connecting to URL",
@@ -60504,7 +60534,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/uniprot/uniprot.obo",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/uniprot/uniprot.obo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f28e328a800>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -60523,7 +60553,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/uniprot/uniprot.owl",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-09_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/uniprot/uniprot.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4fb79b59a0>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -60542,7 +60572,7 @@
                     "product_url": "https://w3id.org/biopragmatics/resources/uniprot/uniprot.json",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/uniprot/uniprot.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f28e32a8940>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-09_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/uniprot/uniprot.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff2449aa560>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
@@ -60691,7 +60721,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-09_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4fb79e83b0>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-09_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff244989120>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
@@ -60717,7 +60747,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/zfin/zfin.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c761070>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -61622,7 +61652,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -61643,7 +61673,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -61664,7 +61694,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -61686,7 +61716,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -61708,7 +61738,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -61730,7 +61760,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -61752,7 +61782,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -61772,7 +61802,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -61793,7 +61823,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-29_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-08-12_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -61816,7 +61846,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -61995,6 +62025,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -62013,6 +62044,7 @@
                     ],
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
@@ -64265,6 +64297,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 }
@@ -66110,7 +66143,7 @@
                     "name": "pcl.json",
                     "product_url": "http://purl.obolibrary.org/obo/pcl.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-10-08: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -66132,7 +66165,7 @@
                     "name": "pcl-base.obo",
                     "product_url": "http://purl.obolibrary.org/obo/pcl-base.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-10-08: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -66143,7 +66176,7 @@
                     "name": "pcl-base.json",
                     "product_url": "http://purl.obolibrary.org/obo/pcl-base.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-10-08: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -66198,7 +66231,7 @@
                     "name": "pcl-simple.obo",
                     "product_url": "http://purl.obolibrary.org/obo/pcl-simple.obo",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-10-08: Timeout connecting to URL"
                     ]
                 },
                 {
@@ -66209,7 +66242,7 @@
                     "name": "pcl-simple.json",
                     "product_url": "http://purl.obolibrary.org/obo/pcl-simple.json",
                     "warnings": [
-                        "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
+                        "File was not able to be retrieved when checked on 2025-10-08: Timeout connecting to URL"
                     ]
                 }
             ],
@@ -66266,17 +66299,98 @@
         },
         {
             "activity_status": "active",
-            "category": "DataSource",
+            "category": "Aggregator",
             "creation_date": "2025-09-09T00:00:00Z",
-            "description": "Stub Resource page for pdbe. This page was automatically generated because it was referenced by other resources.",
+            "description": "PDBe-KB (Protein Data Bank in Europe - Knowledge Base) is an open, collaborative consortium for integration and enrichment of 3D-structure data and functional annotations to enable basic and translational research. It provides comprehensive access to macromolecular structure data integrated with functional annotations from multiple sources.",
             "domains": [
-                "stub"
+                "biomedical",
+                "genomics",
+                "proteomics",
+                "anatomy and development"
             ],
+            "homepage_url": "https://www.ebi.ac.uk/pdbe/pdbe-kb/",
             "id": "pdbe",
-            "last_modified_date": "2025-09-09T00:00:00Z",
+            "last_modified_date": "2025-10-08T00:00:00Z",
             "layout": "resource_detail",
-            "name": "Pdbe",
+            "license": {
+                "id": "https://creativecommons.org/licenses/by/4.0/",
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+            },
+            "name": "PDBe Knowledge Base",
             "products": [
+                {
+                    "category": "GraphicalInterface",
+                    "description": "PDBe-KB web portal providing access to enriched 3D structure data with functional annotations, including protein structures, ligand superpositions, and biological context",
+                    "format": "http",
+                    "id": "pdbe.kb-portal",
+                    "name": "PDBe-KB Web Portal",
+                    "product_url": "https://www.ebi.ac.uk/pdbe/pdbe-kb/"
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Neo4j graph database containing integrated PDBe-KB data with PDB entries, chains, entities, residues, and functional annotations. This version (graph.db.tgz) is for Neo4J 3.5.",
+                    "format": "neo4j",
+                    "id": "pdbe.kb-graph-database.neo4j3",
+                    "name": "PDBe-KB Graph Database for Neo4J 3.5",
+                    "product_url": "https://ftp.ebi.ac.uk/pub/databases/msd/graphdb/"
+                },
+                {
+                    "category": "GraphProduct",
+                    "description": "Neo4j graph database containing integrated PDBe-KB data with PDB entries, chains, entities, residues, and functional annotations. This version (neo4j.dump) is for Neo4J 4 and above.",
+                    "format": "neo4j",
+                    "id": "pdbe.kb-graph-database.neo4j4",
+                    "name": "PDBe-KB Graph Database for Neo4J 4",
+                    "product_url": "https://ftp.ebi.ac.uk/pub/databases/msd/graphdb/"
+                },
+                {
+                    "category": "ProgrammingInterface",
+                    "description": "RESTful API powered by the PDBe-KB graph database, providing programmatic access to structural data and functional annotations",
+                    "format": "http",
+                    "id": "pdbe.kb-api",
+                    "name": "PDBe-KB Graph API",
+                    "product_url": "https://www.ebi.ac.uk/pdbe/graph-api/pdbe_doc/"
+                },
+                {
+                    "category": "Product",
+                    "description": "FTP archive providing bulk download access to PDBe-KB data files and annotations",
+                    "format": "http",
+                    "id": "pdbe.kb-ftp",
+                    "name": "PDBe-KB FTP Archive",
+                    "product_url": "http://ftp.ebi.ac.uk/pub/databases/pdbe-kb/"
+                },
+                {
+                    "category": "Product",
+                    "description": "Downloadable coordinate files, experimental data files, validation reports, FASTA sequences, and small molecule data for PDB entries",
+                    "format": "mixed",
+                    "id": "pdbe.download-service",
+                    "name": "PDBe Download Service",
+                    "product_url": "https://www.ebi.ac.uk/pdbe/download/docs"
+                },
+                {
+                    "category": "Product",
+                    "description": "SIFTS (Structure Integration with Function, Taxonomy and Sequences) provides residue-level mapping between UniProt and PDB entries",
+                    "format": "xml",
+                    "id": "pdbe.sifts",
+                    "name": "SIFTS Residue-level Mapping",
+                    "product_url": "https://www.ebi.ac.uk/pdbe/download/docs"
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "User guides and documentation for PDBe-KB features and data access",
+                    "format": "http",
+                    "id": "pdbe.kb-manual",
+                    "name": "PDBe-KB User Manual",
+                    "product_url": "https://github.com/PDBe-KB/pdbe-kb-manual"
+                },
+                {
+                    "category": "DocumentationProduct",
+                    "description": "Interactive schema explorer for the PDBe-KB Neo4j graph database, showing nodes, relationships, and data structure",
+                    "format": "http",
+                    "id": "pdbe.kb-schema",
+                    "name": "PDBe Graph Database Schema Explorer",
+                    "product_url": "https://www.ebi.ac.uk/pdbe/pdbe-kb/schema"
+                },
                 {
                     "category": "GraphicalInterface",
                     "description": "Web portal for searching and browsing ncRNA sequences, structures, and annotations",
@@ -66509,13 +66623,19 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 }
             ],
-            "warnings": [
-                "This is an automatically generated stub page. Please replace with accurate information about this resource."
-            ]
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1093/nar/gkab988",
+                    "preferred": true,
+                    "title": "PDBe-KB: collaboratively defining the biological context of structural data"
+                }
+            ],
+            "repository": "https://github.com/PDBe-KB"
         },
         {
             "activity_status": "active",
@@ -67999,6 +68119,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 }
@@ -68316,7 +68437,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
@@ -70496,7 +70617,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -70520,7 +70641,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -72172,7 +72293,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 }
@@ -73024,6 +73145,7 @@
                     ],
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
@@ -75379,6 +75501,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 }
@@ -75797,6 +75920,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 }
@@ -75872,7 +75996,7 @@
                     "product_url": "https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ HTTP 500 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-07_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -76082,6 +76206,7 @@
                     "product_url": "https://reprotox-kg.net/downloads/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded with url_ /downloads/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f08401c3e30>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name or service not known)\"))",
+                        "File was not able to be retrieved when checked on 2025-10-08_ Error connecting to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded with url_ /downloads/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f52197a2c80>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name or service not known)\"))",
                         "File was not able to be retrieved when checked on 2025-10-07_ Error connecting to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded with url_ /downloads/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f601743e620>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name or service not known)\"))",
                         "File was not able to be retrieved when checked on 2025-10-06_ Error connecting to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded with url_ /downloads/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f7314e5a000>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name or service not known)\"))",
                         "File was not able to be retrieved when checked on 2025-10-06_ Error connecting to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded with url_ /downloads/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f8990304e00>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name or service not known)\"))",
@@ -76101,7 +76226,7 @@
                         "File was not able to be retrieved when checked on 2025-09-23_ Error connecting to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded with url_ /downloads/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7fcd1fc6dd30>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name or service not known)\"))",
                         "File was not able to be retrieved when checked on 2025-09-23_ Error connecting to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded with url_ /downloads/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f852bc83ce0>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name or service not known)\"))",
                         "File was not able to be retrieved when checked on 2025-09-23_ Error connecting to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded with url_ /downloads/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f01f5009cc0>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name or service not known)\"))",
-                        "File was not able to be retrieved when checked on 2025-10-08: Error connecting to URL: HTTPSConnectionPool(host='reprotox-kg.net', port=443): Max retries exceeded with url: /downloads/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f52197a2c80>: Failed to resolve 'reprotox-kg.net' ([Errno -2] Name or service not known)\"))"
+                        "File was not able to be retrieved when checked on 2025-10-08: Error connecting to URL: HTTPSConnectionPool(host='reprotox-kg.net', port=443): Max retries exceeded with url: /downloads/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7fca2e2161d0>: Failed to resolve 'reprotox-kg.net' ([Errno -2] Name or service not known)\"))"
                     ]
                 }
             ],
@@ -76684,7 +76809,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/rhea/rhea.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c761be0>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -76709,7 +76834,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/rhea/rhea.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c7716d0>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -78776,7 +78901,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
                 }
@@ -79386,6 +79511,7 @@
                     ],
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
@@ -84339,6 +84465,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 }
@@ -85202,7 +85329,7 @@
                     "product_url": "https://storage.googleapis.com/translator-text-workflow-dev-public/kgx/UniProt/targeted_assertions.tar.gz",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
                     ]
                 }
@@ -87613,7 +87740,7 @@
                     "product_url": "https://precision.fda.gov/uniisearch/archive/latest/UNIIs.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -87627,7 +87754,7 @@
                     "product_url": "https://precision.fda.gov/uniisearch/archive/latest/UNII_Data.zip",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -87640,7 +87767,7 @@
                     "product_url": "https://precision.fda.gov/uniisearch/archive/latest/Legacy_UNIIs.txt",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -87812,7 +87939,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
-                        "File was not able to be retrieved when checked on 2025-10-07_ No Content-Length header found",
+                        "File was not able to be retrieved when checked on 2025-10-08_ No Content-Length header found",
                         "File was not able to be retrieved when checked on 2025-10-08: No Content-Length header found"
                     ]
                 },
@@ -87869,7 +87996,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -88418,6 +88545,7 @@
                     ],
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
@@ -90070,6 +90198,7 @@
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 }
@@ -91497,7 +91626,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-09-09_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f4fb79e83b0>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-09_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff244989120>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
@@ -91523,7 +91652,7 @@
                     ],
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 404 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-09-11_ Error connecting to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_ /biopragmatics/resources/zfin/zfin.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa35c761070>_ Failed to establish a new connection_ [Errno 101] Network is unreachable'))",
                         "File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting to URL",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error when accessing file"
@@ -92628,6 +92757,7 @@
                     ],
                     "product_url": "https://www.genecards.org/",
                     "warnings": [
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
@@ -96247,7 +96377,7 @@
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_MySQL_database.html",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -96260,7 +96390,7 @@
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/CITATIONS.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -96273,7 +96403,7 @@
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/ENTITY.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -96286,7 +96416,7 @@
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/PREDICATION.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
@@ -96299,7 +96429,7 @@
                     "product_url": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/SENTENCE.csv",
                     "warnings": [
                         "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
-                        "File was not able to be retrieved when checked on 2025-10-07_ HTTP 403 error when accessing file",
+                        "File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when accessing file",
                         "File was not able to be retrieved when checked on 2025-10-08: HTTP 403 error when accessing file"
                     ]
                 },
