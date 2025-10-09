@@ -32,7 +32,7 @@ products:
   name: VariO main release in OWL
   product_url: http://purl.obolibrary.org/obo/vario.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-08: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2025-10-09: Timeout connecting
     to URL'
 - category: OntologyProduct
   description: VariO in OBO format
@@ -41,7 +41,7 @@ products:
   name: VariO in OBO format
   product_url: http://purl.obolibrary.org/obo/vario.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-08: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2025-10-09: Timeout connecting
     to URL'
 ---
 ## Description

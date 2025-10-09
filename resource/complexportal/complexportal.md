@@ -2,152 +2,204 @@
 activity_status: active
 category: Aggregator
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: "intact-help@ebi.ac.uk"
-      - contact_type: url
-        value: "https://www.ebi.ac.uk/support/complexportal"
-    label: EMBL-EBI
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: intact-help@ebi.ac.uk
+  - contact_type: url
+    value: https://www.ebi.ac.uk/support/complexportal
+  label: EMBL-EBI
 creation_date: '2025-07-17T00:00:00Z'
-description: The Complex Portal is an encyclopaedic resource of macromolecular complexes from model organisms, providing manually curated and high-confidence machine-learning predicted protein complexes with comprehensive structural and functional annotation.
+description: The Complex Portal is an encyclopaedic resource of macromolecular complexes
+  from model organisms, providing manually curated and high-confidence machine-learning
+  predicted protein complexes with comprehensive structural and functional annotation.
 domains:
-  - proteomics
-  - systems biology
+- proteomics
+- systems biology
 funding:
-  - EMBL-EBI
+- EMBL-EBI
 homepage_url: https://www.ebi.ac.uk/complexportal/home
 id: complexportal
 last_modified_date: '2025-10-09T00:00:00Z'
 layout: resource_detail
 license:
-  id: "https://creativecommons.org/licenses/by/4.0/"
+  id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 name: Complex Portal
 products:
-  - category: GraphicalInterface
-    description: Web portal for searching, browsing, and visualizing macromolecular complexes with detailed annotations and structural information
-    format: http
-    id: "complexportal.portal"
-    name: Complex Portal Web Interface
-    product_url: https://www.ebi.ac.uk/complexportal/home
-  - category: Product
-    description: Complete Complex Portal dataset in PSI-MI XML 2.5 format, organized by species
-    format: psi_mi_xml
-    id: "complexportal.psi25"
-    name: Complex Portal PSI-MI XML 2.5
-    product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/
-  - category: Product
-    description: Complete Complex Portal dataset in PSI-MI XML 3.0 format, organized by species
-    format: psi_mi_xml
-    id: "complexportal.psi30"
-    name: Complex Portal PSI-MI XML 3.0
-    product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi30/
-  - category: Product
-    description: Complex Portal data in ComplexTAB flat-file format for easy parsing and Excel compatibility, organized by species
-    format: tsv
-    id: "complexportal.complextab"
-    name: Complex Portal ComplexTAB
-    product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/
-  - category: Product
-    description: Human complexes dataset from Complex Portal in PSI-MI XML 2.5 format
-    format: psi_mi_xml
-    id: "complexportal.human.psi25"
-    name: Complex Portal Human PSI-MI XML 2.5
-    product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/homo_sapiens.xml
-  - category: Product
-    description: Human complexes dataset from Complex Portal in PSI-MI XML 3.0 format
-    format: psi_mi_xml
-    id: "complexportal.human.psi30"
-    name: Complex Portal Human PSI-MI XML 3.0
-    product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi30/homo_sapiens.xml
-  - category: Product
-    description: Human complexes dataset from Complex Portal in ComplexTAB format
-    format: tsv
-    id: "complexportal.human.complextab"
-    name: Complex Portal Human ComplexTAB
-    product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/homo_sapiens.tsv
-  - category: Product
-    description: Mouse complexes dataset from Complex Portal in PSI-MI XML 2.5 format
-    format: psi_mi_xml
-    id: "complexportal.mouse.psi25"
-    name: Complex Portal Mouse PSI-MI XML 2.5
-    product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/mus_musculus.xml
-  - category: Product
-    description: Mouse complexes dataset from Complex Portal in ComplexTAB format
-    format: tsv
-    id: "complexportal.mouse.complextab"
-    name: Complex Portal Mouse ComplexTAB
-    product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/mus_musculus.tsv
-  - category: Product
-    description: Yeast complexes dataset from Complex Portal in PSI-MI XML 2.5 format
-    format: psi_mi_xml
-    id: "complexportal.yeast.psi25"
-    name: Complex Portal Yeast PSI-MI XML 2.5
-    product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/saccharomyces_cerevisiae.xml
-  - category: Product
-    description: Yeast complexes dataset from Complex Portal in ComplexTAB format
-    format: tsv
-    id: "complexportal.yeast.complextab"
-    name: Complex Portal Yeast ComplexTAB
-    product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/saccharomyces_cerevisiae.tsv
-  - category: ProgrammingInterface
-    description: RESTful web service API for programmatic access to Complex Portal data
-    format: http
-    id: "complexportal.webservice"
-    name: Complex Portal Web Service
-    product_url: https://www.ebi.ac.uk/complexportal/webservice
-  - category: DocumentationProduct
-    description: Comprehensive documentation covering data formats, API usage, and complex annotation guidelines
-    format: http
-    id: "complexportal.documentation"
-    name: Complex Portal Documentation
-    product_url: https://www.ebi.ac.uk/complexportal/documentation
+- category: GraphicalInterface
+  description: Web portal for searching, browsing, and visualizing macromolecular
+    complexes with detailed annotations and structural information
+  format: http
+  id: complexportal.portal
+  name: Complex Portal Web Interface
+  product_url: https://www.ebi.ac.uk/complexportal/home
+- category: Product
+  description: Complete Complex Portal dataset in PSI-MI XML 2.5 format, organized
+    by species
+  format: psi_mi_xml
+  id: complexportal.psi25
+  name: Complex Portal PSI-MI XML 2.5
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/
+- category: Product
+  description: Complete Complex Portal dataset in PSI-MI XML 3.0 format, organized
+    by species
+  format: psi_mi_xml
+  id: complexportal.psi30
+  name: Complex Portal PSI-MI XML 3.0
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi30/
+- category: Product
+  description: Complex Portal data in ComplexTAB flat-file format for easy parsing
+    and Excel compatibility, organized by species
+  format: tsv
+  id: complexportal.complextab
+  name: Complex Portal ComplexTAB
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/
+- category: Product
+  description: Human complexes dataset from Complex Portal in PSI-MI XML 2.5 format
+  format: psi_mi_xml
+  id: complexportal.human.psi25
+  name: Complex Portal Human PSI-MI XML 2.5
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/homo_sapiens.xml
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+    when accessing file'
+- category: Product
+  description: Human complexes dataset from Complex Portal in PSI-MI XML 3.0 format
+  format: psi_mi_xml
+  id: complexportal.human.psi30
+  name: Complex Portal Human PSI-MI XML 3.0
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi30/homo_sapiens.xml
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+    when accessing file'
+- category: Product
+  description: Human complexes dataset from Complex Portal in ComplexTAB format
+  format: tsv
+  id: complexportal.human.complextab
+  name: Complex Portal Human ComplexTAB
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/homo_sapiens.tsv
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+    when accessing file'
+- category: Product
+  description: Mouse complexes dataset from Complex Portal in PSI-MI XML 2.5 format
+  format: psi_mi_xml
+  id: complexportal.mouse.psi25
+  name: Complex Portal Mouse PSI-MI XML 2.5
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/mus_musculus.xml
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+    when accessing file'
+- category: Product
+  description: Mouse complexes dataset from Complex Portal in ComplexTAB format
+  format: tsv
+  id: complexportal.mouse.complextab
+  name: Complex Portal Mouse ComplexTAB
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/mus_musculus.tsv
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+    when accessing file'
+- category: Product
+  description: Yeast complexes dataset from Complex Portal in PSI-MI XML 2.5 format
+  format: psi_mi_xml
+  id: complexportal.yeast.psi25
+  name: Complex Portal Yeast PSI-MI XML 2.5
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/saccharomyces_cerevisiae.xml
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+    when accessing file'
+- category: Product
+  description: Yeast complexes dataset from Complex Portal in ComplexTAB format
+  format: tsv
+  id: complexportal.yeast.complextab
+  name: Complex Portal Yeast ComplexTAB
+  product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/saccharomyces_cerevisiae.tsv
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+    when accessing file'
+- category: ProgrammingInterface
+  description: RESTful web service API for programmatic access to Complex Portal data
+  format: http
+  id: complexportal.webservice
+  name: Complex Portal Web Service
+  product_url: https://www.ebi.ac.uk/complexportal/webservice
+- category: DocumentationProduct
+  description: Comprehensive documentation covering data formats, API usage, and complex
+    annotation guidelines
+  format: http
+  id: complexportal.documentation
+  name: Complex Portal Documentation
+  product_url: https://www.ebi.ac.uk/complexportal/documentation
+- description: The MechRepoNet knowledge graph in its original format
+  id: mechreponet.kg
+  name: MechRepoNet Knowledge Graph
+  original_source:
+  - ctd
+  - doid
+  - go
+  - chebi
+  - reactome
+  - interpro
+  - hp
+  - cl
+  - pr
+  - uberon
+  - ncbitaxon
+  - hetionet
+  - complexportal
+  - rnacentral
+  - mirtarbase
+  - unii
+  - biolink
+  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+  secondary_source:
+  - mechreponet
 publications:
-  - authors:
-      - Birgit H M Meldal
-      - Hema Bye-A-Jee
-      - Lukáš Gajdoš
-      - Zuzana Hammerová
-      - Aneta Horáčková
-      - Filip Melicher
-      - Livia Perfetto
-      - Daniel Pokorný
-      - Milagros Rodriguez Lopez
-      - Alžběta Türková
-      - Edith D Wong
-      - Zengyan Xie
-      - Elisabeth Barrera Casanova
-      - Noemi del-Toro
-      - Maximilian Koch
-      - Pablo Porras
-      - Henning Hermjakob
-      - Sandra Orchard
-    doi: "10.1093/nar/gky1001"
-    id: "doi:10.1093/nar/gky1001"
-    journal: "Nucleic Acids Research"
-    preferred: true
-    title: "Complex Portal 2018: extended content and enhanced visualization tools for macromolecular complexes"
-    year: "2019"
-  - authors:
-      - Birgit H M Meldal
-      - Sandra Orchard
-    doi: "10.1093/nar/gku975"
-    id: "doi:10.1093/nar/gku975"
-    journal: "Nucleic Acids Research"
-    title: "The complex portal–an encyclopaedia of macromolecular complexes"
-    year: "2015"
+- authors:
+  - Birgit H M Meldal
+  - Hema Bye-A-Jee
+  - Lukáš Gajdoš
+  - Zuzana Hammerová
+  - Aneta Horáčková
+  - Filip Melicher
+  - Livia Perfetto
+  - Daniel Pokorný
+  - Milagros Rodriguez Lopez
+  - Alžběta Türková
+  - Edith D Wong
+  - Zengyan Xie
+  - Elisabeth Barrera Casanova
+  - Noemi del-Toro
+  - Maximilian Koch
+  - Pablo Porras
+  - Henning Hermjakob
+  - Sandra Orchard
+  doi: 10.1093/nar/gky1001
+  id: doi:10.1093/nar/gky1001
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'Complex Portal 2018: extended content and enhanced visualization tools for
+    macromolecular complexes'
+  year: '2019'
+- authors:
+  - Birgit H M Meldal
+  - Sandra Orchard
+  doi: 10.1093/nar/gku975
+  id: doi:10.1093/nar/gku975
+  journal: Nucleic Acids Research
+  title: The complex portal–an encyclopaedia of macromolecular complexes
+  year: '2015'
 repository: https://github.com/EBI-IntAct/intact-data-exchange
 taxon:
-  - NCBITaxon:9606
-  - NCBITaxon:10090
-  - NCBITaxon:4932
-  - NCBITaxon:7227
-  - NCBITaxon:6239
-  - NCBITaxon:83333
-  - NCBITaxon:559292
+- NCBITaxon:9606
+- NCBITaxon:10090
+- NCBITaxon:4932
+- NCBITaxon:7227
+- NCBITaxon:6239
+- NCBITaxon:83333
+- NCBITaxon:559292
 ---
-
 # Complex Portal
 
 ## Overview

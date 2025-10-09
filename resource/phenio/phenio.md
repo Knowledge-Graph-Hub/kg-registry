@@ -40,7 +40,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-08: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   compatibility:
