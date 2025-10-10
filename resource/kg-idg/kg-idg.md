@@ -32,8 +32,6 @@ products:
   secondary_source:
   - kg-idg
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error

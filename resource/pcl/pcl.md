@@ -47,8 +47,8 @@ products:
   name: pcl.json
   product_url: http://purl.obolibrary.org/obo/pcl.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-10: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
   format: owl
@@ -65,8 +65,8 @@ products:
   name: pcl-base.obo
   product_url: http://purl.obolibrary.org/obo/pcl-base.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-10: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
   format: json
@@ -92,8 +92,8 @@ products:
   name: pcl-full.obo
   product_url: http://purl.obolibrary.org/obo/pcl-full.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-10: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
   format: json
@@ -101,8 +101,8 @@ products:
   name: pcl-full.json
   product_url: http://purl.obolibrary.org/obo/pcl-full.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-10: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
+    when accessing file'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
   format: owl

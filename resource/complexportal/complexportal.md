@@ -62,8 +62,6 @@ products:
   name: Complex Portal Human PSI-MI XML 2.5
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/homo_sapiens.xml
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
@@ -75,8 +73,6 @@ products:
   name: Complex Portal Human PSI-MI XML 3.0
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi30/homo_sapiens.xml
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
@@ -88,8 +84,6 @@ products:
   name: Complex Portal Human ComplexTAB
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/homo_sapiens.tsv
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
@@ -101,8 +95,6 @@ products:
   name: Complex Portal Mouse PSI-MI XML 2.5
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/mus_musculus.xml
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
@@ -114,8 +106,6 @@ products:
   name: Complex Portal Mouse ComplexTAB
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/mus_musculus.tsv
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
@@ -127,8 +117,6 @@ products:
   name: Complex Portal Yeast PSI-MI XML 2.5
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/saccharomyces_cerevisiae.xml
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
@@ -140,8 +128,6 @@ products:
   name: Complex Portal Yeast ComplexTAB
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/saccharomyces_cerevisiae.tsv
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
