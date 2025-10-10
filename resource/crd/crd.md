@@ -1,8 +1,4 @@
 ---
-{}
----
-
----
 activity_status: unresponsive
 category: Aggregator
 creation_date: '2025-09-09T00:00:00Z'
@@ -28,7 +24,7 @@ publications:
     pages: "799-802"
 warnings:
   - This resource is unresponsive. The database is no longer available; only metadata and publication are retained.
-
+---
 # Comparative RNA Database (CRD)
 
 The Comparative RNA Database (CRD) was an aggregator of RNA sequence and structure data, including ribosomal and intron RNAs. The database is no longer available, but its metadata and publication are retained for reference. For more information, see the original publication:
