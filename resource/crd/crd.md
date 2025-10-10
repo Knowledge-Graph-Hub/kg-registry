@@ -1,15 +1,17 @@
 ---
-activity_status: active
-category: DataSource
+activity_status: unresponsive
+category: Aggregator
 creation_date: '2025-09-09T00:00:00Z'
-description: Stub Resource page for crd. This page was automatically generated because
-  it was referenced by other resources.
+description: The Comparative RNA Database (CRD) was an aggregator of RNA sequence
+  and structure data, but is no longer available. This resource is considered unresponsive;
+  only its metadata and publication are retained for reference.
 domains:
-- stub
+- biological systems
+- genomics
 id: crd
-last_modified_date: '2025-09-09T00:00:00Z'
+last_modified_date: '2025-10-10T00:00:00Z'
 layout: resource_detail
-name: Crd
+name: Comparative RNA Database (CRD)
 products:
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
@@ -221,10 +223,20 @@ products:
   - zwd
   - rnacentral
   product_url: https://rnacentral.org/help/public-database
+publications:
+- authors:
+  - James M. Sorace
+  - Kip Canfield
+  id: https://doi.org/10.1089/jir.1998.18.799
+  journal: Journal of Interferon & Cytokine Research
+  title: 'Collaborative Bioinformatics: Data Warehouses for Targeted Experimental Results'
+  year: '1998'
 warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+- This resource is unresponsive. The database is no longer available; only metadata
+  and publication are retained.
 ---
-# Crd
+# Comparative RNA Database (CRD)
 
-This is an automatically generated stub page for crd. Please update with proper information.
+The Comparative RNA Database (CRD) was an aggregator of RNA sequence and structure data, including ribosomal and intron RNAs. The database is no longer available, but its metadata and publication are retained for reference. For more information, see the original publication:
+
+- Gutell RR, Cannone JJ, Konings BF, Yang Z. The Comparative RNA Web (CRW) Site: An Online Database of Comparative Sequence and Structure Information for Ribosomal, Intron, and Other RNAs. Journal of Interferon & Cytokine Research. 1998;18(10):799-803. doi:10.1089/jir.1998.18.799

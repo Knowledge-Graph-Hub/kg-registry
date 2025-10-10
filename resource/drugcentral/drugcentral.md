@@ -228,11 +228,11 @@ products:
   secondary_source:
   - mind
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-10_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2025-10-09_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-10-09: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-10-10: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -249,11 +249,11 @@ products:
   secondary_source:
   - mind
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-10_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2025-10-09_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-10-09: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-10-10: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -271,11 +271,11 @@ products:
   secondary_source:
   - mind
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-10_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2025-10-09_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-10-09: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-10-10: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -318,15 +318,15 @@ products:
   - clinicaltrialsgov
   product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 publications:
 - authors:

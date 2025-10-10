@@ -56,7 +56,7 @@ products:
     ontology (ULO) terms to give the user community a simpler view of the term hierarchy.
   product_url: http://purl.obolibrary.org/obo/t4fs-community.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: This community view of T4FS makes the ontology available in OBO format
@@ -69,7 +69,7 @@ products:
     the term hierarchy.
   product_url: http://purl.obolibrary.org/obo/t4fs-community.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: This community view of T4FS makes the ontology available in JSON format
@@ -82,7 +82,7 @@ products:
     the term hierarchy.
   product_url: http://purl.obolibrary.org/obo/t4fs-community.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 repository: https://github.com/terms4fairskills/FAIRterminology
 ---

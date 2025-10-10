@@ -55,13 +55,13 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -75,13 +75,13 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -95,13 +95,13 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -115,13 +115,13 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -135,13 +135,13 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -155,13 +155,13 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -175,13 +175,13 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -195,13 +195,13 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -1099,11 +1099,11 @@ products:
   - bgee
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 403 error
     when accessing file'
 publications:
 - authors:

@@ -70,7 +70,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 - category: Product
   description: Pathology data including cancer tissue expression and patient survival
@@ -82,7 +84,11 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 403 error
     when accessing file'
 - category: Product
   description: Subcellular localization data based on immunofluorescent staining of
@@ -94,7 +100,11 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 403 error
     when accessing file'
 - category: Product
   description: RNA expression data in human tissues based on transcriptomic analysis
@@ -105,7 +115,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 - category: Product
   description: RNA expression data in human cell lines based on RNA-seq analysis
@@ -116,7 +128,11 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 403 error
     when accessing file'
 - category: Product
   description: Single cell expression data from human tissues based on scRNA-seq analysis
@@ -127,7 +143,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 - category: Product
   description: Brain-specific expression data including regional and cellular distribution
@@ -138,7 +156,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 - category: Product
   description: Blood protein expression data from healthy individuals and disease
@@ -150,7 +170,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 - category: Product
   description: Immune cell expression data from single cell transcriptomics studies
@@ -161,7 +183,11 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 403 error
     when accessing file'
 - category: ProgrammingInterface
   description: Programmatic access to individual protein entries in XML format via
