@@ -16,13 +16,6 @@ license:
   label: NLM Terms and Conditions for MeSH Data
 name: Medical Subject Headings (MeSH)
 repository: https://nlmpubs.nlm.nih.gov/projects/mesh/
-publications:
-  - authors:
-      - Henry J. Lowe
-    id: "https://doi.org/10.1001/jama.1994.03510380059038"
-    preferred: true
-    title: Understanding and Using the Medical Subject Headings (MeSH) Vocabulary to Perform Literature Searches
-    year: "1994"
 products:
   - category: GraphicalInterface
     description: The official MeSH Browser for searching and browsing the Medical Subject Headings vocabulary. Provides hierarchical navigation and term details.
