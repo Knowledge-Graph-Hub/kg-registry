@@ -97,11 +97,11 @@ products:
   secondary_source:
   - pombase
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-10_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2025-10-09_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-10-08_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-10-09: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-10-10: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -144,15 +144,15 @@ products:
   secondary_source:
   - oma
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-09-29_ HTTP 502 error when
+  - File was not able to be retrieved when checked on 2025-10-09_ HTTP 502 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -653,11 +653,11 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 403 error
     when accessing file'
 repository: https://www.uniprot.org/help/downloads
 ---

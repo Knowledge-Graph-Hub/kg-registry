@@ -77,7 +77,6 @@ corum,active,PASS
 cosmic,active,PASS
 cpathkg,active,PASS
 cpic,active,PASS
-crd,active,PASS
 creeds,active,PASS
 cro,active,PASS
 ctd,active,PASS
@@ -483,6 +482,7 @@ caro,inactive,PASS
 ceph,inactive,PASS
 cmf,inactive,PASS
 connectivitymap,inactive,PASS
+crd,unresponsive,PASS
 dc_cl,inactive,PASS
 dinto,inactive,PASS
 ehda,inactive,PASS

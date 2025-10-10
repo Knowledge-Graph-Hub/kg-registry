@@ -140,11 +140,11 @@ products:
   secondary_source:
   - scibite
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -697,11 +697,11 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-10_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-08_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-09: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 403 error
     when accessing file'
 repository: https://github.com/HGNC
 ---
