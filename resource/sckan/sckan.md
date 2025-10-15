@@ -1,13 +1,13 @@
 ---
 activity_status: active
 category: DataSource
-description: Stub Resource page for nposckan. This page was automatically generated
+description: Stub Resource page for sckan. This page was automatically generated
   because it was referenced by other resources.
 domains:
 - stub
-id: nposckan
+id: sckan
 layout: resource_detail
-name: Nposckan
+name: sckan
 products:
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
@@ -66,7 +66,7 @@ products:
   - motrpac
   - mw
   - npo
-  - nposckan
+  - sckan
   - disgenet
   - biomarker
   - opentargets
@@ -129,7 +129,7 @@ products:
   - motrpac
   - mw
   - npo
-  - nposckan
+  - sckan
   - disgenet
   - biomarker
   - opentargets
@@ -140,6 +140,6 @@ warnings:
 - This is an automatically generated stub page. Please replace with accurate information
   about this resource.
 ---
-# Nposckan
+# sckan
 
-This is an automatically generated stub page for nposckan. Please update with proper information.
+This is an automatically generated stub page for sckan. Please update with proper information.
