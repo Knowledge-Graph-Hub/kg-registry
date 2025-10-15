@@ -31,7 +31,7 @@ products:
   format: owl
   id: upheno.owl
   name: uPheno 1 (inactive)
-  product_file_size: 416268904
+  product_file_size: 416269865
   product_url: http://purl.obolibrary.org/obo/upheno.owl
 - category: OntologyProduct
   description: No longer actively maintained.
@@ -48,7 +48,7 @@ products:
   format: owl
   id: upheno.v2.upheno.owl
   name: uPheno 2
-  product_file_size: 416268904
+  product_file_size: 416269865
   product_url: http://purl.obolibrary.org/obo/upheno/v2/upheno.owl
 repository: https://github.com/obophenotype/upheno
 ---

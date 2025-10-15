@@ -292,7 +292,6 @@ nomen,active,PASS
 noncode,active,PASS
 np-kg,active,PASS
 npo,active,PASS
-nposckan,active,PASS
 oae,active,PASS
 oarcs,active,PASS
 oba,active,PASS
@@ -376,7 +375,6 @@ pubmed,active,PASS
 pubtator,active,PASS
 pw,active,PASS
 rbo,active,PASS
-rdp,active,PASS
 reacto,active,PASS
 reactome,active,PASS
 rediportal,active,PASS
@@ -399,6 +397,7 @@ rxno,active,PASS
 sbo,active,PASS
 scdo,active,PASS
 scibite,active,PASS
+sckan,active,PASS
 semapv,active,PASS
 sennet,active,PASS
 sepio,active,PASS
@@ -535,6 +534,7 @@ plo,inactive,PASS
 propreo,inactive,PASS
 psygenet,inactive,PASS
 rdbridge,unresponsive,PASS
+rdp,unresponsive,PASS
 resid,inactive,PASS
 rex,orphaned,PASS
 rnao,inactive,PASS

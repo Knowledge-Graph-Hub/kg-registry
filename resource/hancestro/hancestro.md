@@ -32,7 +32,7 @@ products:
   format: owl
   id: hancestro.owl
   name: HANCESTRO
-  product_file_size: 144006
+  product_file_size: 145675
   product_url: http://purl.obolibrary.org/obo/hancestro.owl
 - category: OntologyProduct
   description: Base version of HANCESTRO
@@ -41,7 +41,7 @@ products:
   name: HANCESTRO Base
   product_url: http://purl.obolibrary.org/obo/hancestro-base.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-10: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
