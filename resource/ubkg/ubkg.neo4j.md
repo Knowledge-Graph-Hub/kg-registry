@@ -56,7 +56,7 @@ original_source:
 - motrpac
 - mw
 - npo
-- nposckan
+- sckan
 - disgenet
 - biomarker
 - opentargets

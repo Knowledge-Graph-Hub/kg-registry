@@ -89,7 +89,7 @@ products:
   - motrpac
   - mw
   - npo
-  - nposckan
+  - sckan
   - disgenet
   - biomarker
   - opentargets
@@ -152,7 +152,7 @@ products:
   - motrpac
   - mw
   - npo
-  - nposckan
+  - sckan
   - disgenet
   - biomarker
   - opentargets

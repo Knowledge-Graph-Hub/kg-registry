@@ -39,7 +39,7 @@ products:
   name: MP (OBO edition)
   product_url: http://purl.obolibrary.org/obo/mp.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-10: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-10-15: No Content-Length
     header found'
 - category: OntologyProduct
   description: For a description of the format see https://github.com/geneontology/obographs.
@@ -113,7 +113,7 @@ products:
   - motrpac
   - mw
   - npo
-  - nposckan
+  - sckan
   - disgenet
   - biomarker
   - opentargets
@@ -176,7 +176,7 @@ products:
   - motrpac
   - mw
   - npo
-  - nposckan
+  - sckan
   - disgenet
   - biomarker
   - opentargets

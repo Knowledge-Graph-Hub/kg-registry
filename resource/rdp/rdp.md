@@ -1,16 +1,34 @@
 ---
-activity_status: active
+activity_status: unresponsive
 category: DataSource
 creation_date: '2025-09-09T00:00:00Z'
-description: Stub Resource page for rdp. This page was automatically generated because
-  it was referenced by other resources.
+description: The Ribosomal Database Project (RDP) provided ribosome-related data services,
+  including quality-controlled, aligned and annotated rRNA sequences, phylogenetic
+  trees, and analysis tools for Bacterial, Archaeal, and Fungal rRNA. The RDP website
+  is no longer available, but stand-alone tools and classifiers remain accessible
+  via Sourceforge and community tutorials.
 domains:
-- stub
+- biological systems
+- genomics
 id: rdp
-last_modified_date: '2025-09-09T00:00:00Z'
+last_modified_date: '2025-10-15T00:00:00Z'
 layout: resource_detail
-name: Rdp
+name: Ribosomal Database Project
 products:
+- category: ProcessProduct
+  description: Stand-alone version of the RDP Classifier for taxonomic assignment
+    of rRNA sequences. Available via Sourceforge.
+  format: http
+  id: rdp.classifier
+  name: RDP Classifier (stand-alone)
+  product_url: https://sourceforge.net/projects/rdp-classifier/
+- category: ProcessProduct
+  description: Command-line tools for rRNA sequence analysis, installation instructions
+    and Docker images available via community tutorials.
+  format: http
+  id: rdp.tools
+  name: RDP Tools (command-line)
+  product_url: https://jfq3.gitbook.io/rdptools-docker/
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations
@@ -222,9 +240,9 @@ products:
   - rnacentral
   product_url: https://rnacentral.org/help/public-database
 warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+- The RDP website is no longer available. Only stand-alone tools and classifiers remain
+  accessible.
 ---
-# Rdp
+# Ribosomal Database Project
 
-This is an automatically generated stub page for rdp. Please update with proper information.
+The Ribosomal Database Project (RDP) provided ribosome-related data services, including quality-controlled, aligned and annotated rRNA sequences, phylogenetic trees, and analysis tools. The website is no longer available, but stand-alone tools and classifiers remain accessible via Sourceforge and community tutorials.

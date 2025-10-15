@@ -29,14 +29,14 @@ products:
   format: owl
   id: pw.owl
   name: pw.owl
-  product_file_size: 5403526
+  product_file_size: 5404073
   product_url: http://purl.obolibrary.org/obo/pw.owl
 - category: OntologyProduct
   description: Pathway ontology in OBO format
   format: obo
   id: pw.obo
   name: pw.obo
-  product_file_size: 1347302
+  product_file_size: 1347390
   product_url: http://purl.obolibrary.org/obo/pw.obo
 - category: GraphProduct
   description: PheKnowLator graph files, including subsets with and without inverse

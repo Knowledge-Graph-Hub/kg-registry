@@ -33,7 +33,7 @@ products:
   format: owl
   id: gno.owl
   name: gno.owl
-  product_file_size: 210874083
+  product_file_size: 214324748
   product_url: http://purl.obolibrary.org/obo/gno.owl
 - category: OntologyProduct
   description: Glycan Naming and Subsumption Ontology, OBO format (automated conversion
@@ -41,7 +41,7 @@ products:
   format: obo
   id: gno.obo
   name: gno.obo
-  product_file_size: 132948925
+  product_file_size: 135112461
   product_url: http://purl.obolibrary.org/obo/gno.obo
 - category: OntologyProduct
   description: Glycan Naming and Subsumption Ontology, JSON format (automated conversion
@@ -49,7 +49,7 @@ products:
   format: json
   id: gno.json
   name: gno.json
-  product_file_size: 352243461
+  product_file_size: 358051529
   product_url: http://purl.obolibrary.org/obo/gno.json
 repository: https://github.com/glygen-glycan-data/GNOme
 ---

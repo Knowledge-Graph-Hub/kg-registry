@@ -17,7 +17,7 @@ description: An ontology of disease symptoms, with symptoms encompasing perceive
   a disease.
 domains:
 - biomedical
-homepage_url: http://symptomontologywiki.igs.umaryland.edu/mediawiki/index.php/Main_Page
+homepage_url: https://github.com/DiseaseOntology/SymptomOntology
 id: symp
 layout: resource_detail
 license:

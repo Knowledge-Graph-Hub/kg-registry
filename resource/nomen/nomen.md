@@ -30,7 +30,7 @@ products:
   format: owl
   id: nomen.owl
   name: NOMEN
-  product_file_size: 11302
+  product_file_size: 11371
   product_url: http://purl.obolibrary.org/obo/nomen.owl
 repository: https://github.com/SpeciesFileGroup/nomen
 ---

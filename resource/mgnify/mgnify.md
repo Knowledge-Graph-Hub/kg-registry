@@ -40,7 +40,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-10_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/metagenomics'
-  - 'File was not able to be retrieved when checked on 2025-10-10: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-10-15: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/metagenomics'''
 - category: Product
   description: Biome-specific microbial genome catalogues, including marine, human
