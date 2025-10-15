@@ -70,6 +70,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 404 error
     when accessing file'
 - category: Product
@@ -83,6 +85,8 @@ products:
   - File was not able to be retrieved when checked on 2025-10-10_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 403 error
     when accessing file'
@@ -98,6 +102,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 403 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 403 error
     when accessing file'
 - category: Product
@@ -108,6 +114,8 @@ products:
   product_url: https://www.proteinatlas.org/download/rna_tissue.tsv.zip
   warnings:
   - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 404 error
     when accessing file'
@@ -122,6 +130,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 403 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 403 error
     when accessing file'
 - category: Product
@@ -133,6 +143,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 404 error
     when accessing file'
 - category: Product
@@ -143,6 +155,8 @@ products:
   product_url: https://www.proteinatlas.org/download/brain_rna.tsv.zip
   warnings:
   - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 404 error
     when accessing file'
@@ -156,6 +170,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 404 error
     when accessing file'
 - category: Product
@@ -168,6 +184,8 @@ products:
   - File was not able to be retrieved when checked on 2025-10-10_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 403 error
     when accessing file'

@@ -7,7 +7,7 @@ id: globi.refuted_interactions.csv
 name: GloBI refuted interactions (CSV)
 product_url: https://zenodo.org/record/14640564/files/refuted-interactions.csv.gz
 warnings:
-- File was not able to be retrieved when checked on 2025-10-10_ No Content-Length
+- File was not able to be retrieved when checked on 2025-10-15_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2025-10-10_ No Content-Length
   header found

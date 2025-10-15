@@ -76,6 +76,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 502 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 502 error
     when accessing file'
 - category: Product
@@ -95,6 +97,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 502 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 502 error
     when accessing file'
 - category: Product
@@ -114,7 +118,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 502 error
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 502 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 404 error
     when accessing file'
 - category: Product
   compression: gzip
@@ -134,6 +140,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 502 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 502 error
     when accessing file'
 - category: Product
@@ -154,6 +162,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 502 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 502 error
     when accessing file'
 - category: Product
@@ -174,7 +184,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-12_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 502 error
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 502 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 404 error
     when accessing file'
 - category: Product
   compression: gzip
@@ -194,6 +206,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 502 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 502 error
     when accessing file'
 - category: Product
@@ -210,7 +224,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 502 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 502 error
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 502 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 404 error
     when accessing file'
 - category: Product
   compression: gzip
@@ -229,6 +245,8 @@ products:
   - File was not able to be retrieved when checked on 2025-09-29_ Timeout connecting
     to URL
   - File was not able to be retrieved when checked on 2025-08-12_ HTTP 502 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 502 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 502 error
     when accessing file'
@@ -251,7 +269,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 502 error
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 502 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 404 error
     when accessing file'
 ---
 OMA (Orthologous MAtrix) is a comprehensive database of orthologous gene relationships across multiple species. It provides a systematic and efficient approach to identifying orthologs among complete genomes, which are genes in different species that evolved from a common ancestor through speciation.

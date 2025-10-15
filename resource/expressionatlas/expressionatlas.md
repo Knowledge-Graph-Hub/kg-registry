@@ -61,6 +61,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 404 error
     when accessing file'
 - category: Product
@@ -79,6 +81,8 @@ products:
   product_url: https://www.ebi.ac.uk/gxa/help/r-data-objects.html
   warnings:
   - File was not able to be retrieved when checked on 2025-10-10_ HTTP 500 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 500 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-15: HTTP 500 error
     when accessing file'
