@@ -102,6 +102,8 @@ products:
   name: Downloads
   product_url: https://ngdc.cncb.ac.cn/lncbook/download
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-21: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface

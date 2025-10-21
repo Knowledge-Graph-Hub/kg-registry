@@ -7,7 +7,7 @@ id: hpa.subcellular_location
 name: HPA Subcellular Location Data
 product_url: https://www.proteinatlas.org/download/subcellular_location.tsv.zip
 warnings:
-- File was not able to be retrieved when checked on 2025-10-15_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-10-15_ HTTP 403 error when
   accessing file

@@ -10,7 +10,7 @@ product_url: https://kg-hub.berkeleybop.io/kg-idg/current/kg-microbe.tar.gz
 secondary_source:
 - kg-idg
 warnings:
-- File was not able to be retrieved when checked on 2025-10-15_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-10-15_ HTTP 404 error when
   accessing file

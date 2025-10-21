@@ -61,6 +61,8 @@ products:
   name: Human piRNA Sequences
   product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
     to URL'
 - category: Product
@@ -71,6 +73,8 @@ products:
   name: Mouse piRNA Sequences
   product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
     to URL'
 - category: Product
@@ -81,6 +85,8 @@ products:
   name: Rat piRNA Sequences
   product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
     to URL'
 - category: Product
@@ -92,6 +98,8 @@ products:
   name: Drosophila piRNA Sequences
   product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
     to URL'
 - category: Product
@@ -102,6 +110,8 @@ products:
   name: C. elegans piRNA Sequences
   product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
     to URL'
 - category: Product
@@ -112,6 +122,8 @@ products:
   name: Zebrafish piRNA Sequences
   product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
     to URL'
 - category: Product
@@ -122,6 +134,8 @@ products:
   name: Human Gold Standard piRNAs
   product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
     to URL'
 - category: Product
@@ -132,6 +146,8 @@ products:
   name: Mouse Gold Standard piRNAs
   product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
     to URL'
 - category: Product
@@ -142,6 +158,8 @@ products:
   name: Drosophila Gold Standard piRNAs
   product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
     to URL'
 - category: Product
@@ -152,6 +170,8 @@ products:
   name: Human piRNA Coordinates (hg19)
   product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
     to URL'
 - category: Product
@@ -162,6 +182,8 @@ products:
   name: Human piRNA Coordinates (GRCh38)
   product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
     to URL'
 - category: Product
@@ -172,6 +194,8 @@ products:
   name: Mouse piRNA Coordinates (GRCm38)
   product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
     to URL'
 - category: Product
@@ -182,6 +206,8 @@ products:
   name: Drosophila piRNA Coordinates (BDGP6)
   product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
     to URL'
 - category: DocumentationProduct
@@ -191,6 +217,8 @@ products:
   name: piRBase Tutorial
   product_url: http://bigdata.ibp.ac.cn/piRBase/about.php
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-21_ Timeout connecting
+    to URL
   - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
     to URL'
 - category: GraphicalInterface

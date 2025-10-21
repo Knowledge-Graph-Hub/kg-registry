@@ -37,6 +37,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-15_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-10-21: No Content-Length
     header found'
 - category: Product
@@ -57,6 +59,8 @@ products:
   - pombase
   warnings:
   - File was not able to be retrieved when checked on 2025-10-15_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-10-21: No Content-Length
     header found'

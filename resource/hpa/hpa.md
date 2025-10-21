@@ -70,6 +70,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-15_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-21: HTTP 404 error
     when accessing file'
 - category: Product
@@ -84,7 +86,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-21: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-21: HTTP 403 error
     when accessing file'
 - category: Product
   description: Subcellular localization data based on immunofluorescent staining of
@@ -98,7 +102,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-21: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-21: HTTP 403 error
     when accessing file'
 - category: Product
   description: RNA expression data in human tissues based on transcriptomic analysis
@@ -108,6 +114,8 @@ products:
   product_url: https://www.proteinatlas.org/download/rna_tissue.tsv.zip
   warnings:
   - File was not able to be retrieved when checked on 2025-10-15_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-21: HTTP 404 error
     when accessing file'
@@ -122,7 +130,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-21: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-21: HTTP 403 error
     when accessing file'
 - category: Product
   description: Single cell expression data from human tissues based on scRNA-seq analysis
@@ -132,6 +142,8 @@ products:
   product_url: https://www.proteinatlas.org/download/rna_single_cell.tsv.zip
   warnings:
   - File was not able to be retrieved when checked on 2025-10-15_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-21: HTTP 404 error
     when accessing file'
@@ -144,6 +156,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-15_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-21: HTTP 404 error
     when accessing file'
 - category: Product
@@ -155,6 +169,8 @@ products:
   product_url: https://www.proteinatlas.org/download/blood_protein.tsv.zip
   warnings:
   - File was not able to be retrieved when checked on 2025-10-15_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-21: HTTP 404 error
     when accessing file'
@@ -169,7 +185,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-09_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-21: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-21: HTTP 403 error
     when accessing file'
 - category: ProgrammingInterface
   description: Programmatic access to individual protein entries in XML format via

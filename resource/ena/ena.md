@@ -38,6 +38,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-15_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/ena'
+  - File was not able to be retrieved when checked on 2025-10-21_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/ena'
   - 'File was not able to be retrieved when checked on 2025-10-21: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/ena'''
 - category: GraphicalInterface

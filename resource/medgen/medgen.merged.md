@@ -5,6 +5,7 @@ description: Merged CUI mappings showing concept consolidations with gzip compre
 format: txt
 id: medgen.merged
 name: MERGED (Merged CUIs)
+product_file_size: 44086
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MERGED.RRF.gz
 layout: product_detail
 ---

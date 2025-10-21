@@ -5,6 +5,7 @@ description: Rich Rich Format file containing concept names for search with gzip
 format: txt
 id: medgen.names
 name: NAMES
+product_file_size: 3069349
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/NAMES.RRF.gz
 layout: product_detail
 ---

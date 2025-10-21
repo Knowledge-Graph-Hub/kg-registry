@@ -5,6 +5,7 @@ description: Links between MedGen concepts and PubMed articles with gzip compres
 format: txt
 id: medgen.pubmed-links
 name: MedGen PubMed Links
+product_file_size: 240401320
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/medgen_pubmed_lnk.txt.gz
 layout: product_detail
 ---

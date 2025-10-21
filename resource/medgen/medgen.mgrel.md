@@ -6,6 +6,7 @@ description: Rich Rich Format file containing relationships between concepts wit
 format: txt
 id: medgen.mgrel
 name: MGREL (Relationships)
+product_file_size: 15645774
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGREL.RRF.gz
 layout: product_detail
 ---

@@ -6,6 +6,7 @@ description: Rich Rich Format file containing semantic type assignments with gzi
 format: txt
 id: medgen.mgsty
 name: MGSTY (Semantic Types)
+product_file_size: 1626886
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MGSTY.RRF.gz
 layout: product_detail
 ---
