@@ -2,200 +2,457 @@
 activity_status: active
 category: Aggregator
 creation_date: '2014-01-01T00:00:00Z'
-description: piRBase is a manually curated database for PIWI-interacting RNAs (piRNAs), focused on piRNA functional analysis and annotation. It integrates high-throughput sequencing data from multiple organisms and provides comprehensive information about piRNA sequences, genomic locations, functional annotations, and epigenetic features.
+description: piRBase is a manually curated database for PIWI-interacting RNAs (piRNAs),
+  focused on piRNA functional analysis and annotation. It integrates high-throughput
+  sequencing data from multiple organisms and provides comprehensive information about
+  piRNA sequences, genomic locations, functional annotations, and epigenetic features.
 domains:
-  - genomics
-  - biological systems
+- genomics
+- biological systems
 homepage_url: http://bigdata.ibp.ac.cn/piRBase
-id: "pirbase"
+id: pirbase
 last_modified_date: '2025-10-21T00:00:00Z'
 layout: resource_detail
 name: piRBase
 products:
-  - category: GraphicalInterface
-    description: Web portal for searching and browsing piRNA sequences by identifier or keyword
-    format: http
-    id: "pirbase.portal"
-    name: piRBase Portal
-    product_url: http://bigdata.ibp.ac.cn/piRBase/
-  - category: GraphicalInterface
-    description: Browse interface for exploring piRNAs organized by species
-    format: http
-    id: "pirbase.browse"
-    name: piRBase Browse Interface
-    product_url: http://bigdata.ibp.ac.cn/piRBase/browse.php
-  - category: GraphicalInterface
-    description: Function annotation interface for piRNA functional analysis
-    format: http
-    id: "pirbase.function"
-    name: piRNA Function Interface
-    product_url: http://bigdata.ibp.ac.cn/piRBase/function.php
-  - category: GraphicalInterface
-    description: Genome browser interface for viewing piRNA genomic locations
-    format: http
-    id: "pirbase.genome"
-    name: Genome Browser Interface
-    product_url: http://bigdata.ibp.ac.cn/piRBase/genome.php
-  - category: GraphicalInterface
-    description: Epigenetics interface for exploring methylation and other epigenetic features
-    format: http
-    id: "pirbase.epigenetics"
-    name: Epigenetics Interface
-    product_url: http://bigdata.ibp.ac.cn/piRBase/methylation.php
-  - category: GraphicalInterface
-    description: Tools interface for piRNA analysis utilities
-    format: http
-    id: "pirbase.tools"
-    name: piRBase Tools
-    product_url: http://bigdata.ibp.ac.cn/piRBase/tools.php
-  - category: Product
-    compression: gzip
-    description: FASTA format sequences for human piRNAs (version 3.0)
-    format: fasta
-    id: "pirbase.hsa-sequences"
-    name: Human piRNA Sequences
-    product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
-  - category: Product
-    compression: gzip
-    description: FASTA format sequences for mouse piRNAs (version 3.0)
-    format: fasta
-    id: "pirbase.mmu-sequences"
-    name: Mouse piRNA Sequences
-    product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
-  - category: Product
-    compression: gzip
-    description: FASTA format sequences for rat piRNAs
-    format: fasta
-    id: "pirbase.rno-sequences"
-    name: Rat piRNA Sequences
-    product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
-  - category: Product
-    compression: gzip
-    description: FASTA format sequences for Drosophila melanogaster piRNAs (version 3.0)
-    format: fasta
-    id: "pirbase.dme-sequences"
-    name: Drosophila piRNA Sequences
-    product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
-  - category: Product
-    compression: gzip
-    description: FASTA format sequences for C. elegans piRNAs (version 3.0)
-    format: fasta
-    id: "pirbase.cel-sequences"
-    name: C. elegans piRNA Sequences
-    product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
-  - category: Product
-    compression: gzip
-    description: FASTA format sequences for zebrafish piRNAs
-    format: fasta
-    id: "pirbase.dre-sequences"
-    name: Zebrafish piRNA Sequences
-    product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
-  - category: Product
-    compression: gzip
-    description: Gold standard human piRNA sequences with high confidence annotations
-    format: fasta
-    id: "pirbase.hsa-gold"
-    name: Human Gold Standard piRNAs
-    product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
-  - category: Product
-    compression: gzip
-    description: Gold standard mouse piRNA sequences with high confidence annotations
-    format: fasta
-    id: "pirbase.mmu-gold"
-    name: Mouse Gold Standard piRNAs
-    product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
-  - category: Product
-    compression: gzip
-    description: Gold standard Drosophila piRNA sequences with high confidence annotations
-    format: fasta
-    id: "pirbase.dme-gold"
-    name: Drosophila Gold Standard piRNAs
-    product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
-  - category: Product
-    compression: gzip
-    description: Genome coordinates for human piRNAs on hg19 assembly in BED format
-    format: txt
-    id: "pirbase.hsa-bed"
-    name: Human piRNA Coordinates (hg19)
-    product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
-  - category: Product
-    compression: gzip
-    description: Genome coordinates for human piRNAs on GRCh38 assembly in BED format
-    format: txt
-    id: "pirbase.hsa-grch38-bed"
-    name: Human piRNA Coordinates (GRCh38)
-    product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
-  - category: Product
-    compression: gzip
-    description: Genome coordinates for mouse piRNAs on GRCm38 assembly in BED format
-    format: txt
-    id: "pirbase.mmu-bed"
-    name: Mouse piRNA Coordinates (GRCm38)
-    product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
-  - category: Product
-    compression: gzip
-    description: Genome coordinates for Drosophila piRNAs on BDGP6 assembly in BED format
-    format: txt
-    id: "pirbase.dme-bed"
-    name: Drosophila piRNA Coordinates (BDGP6)
-    product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
-  - category: DocumentationProduct
-    description: Tutorial and user manual for piRBase
-    format: http
-    id: "pirbase.tutorial"
-    name: piRBase Tutorial
-    product_url: http://bigdata.ibp.ac.cn/piRBase/about.php
+- category: GraphicalInterface
+  description: Web portal for searching and browsing piRNA sequences by identifier
+    or keyword
+  format: http
+  id: pirbase.portal
+  name: piRBase Portal
+  product_url: http://bigdata.ibp.ac.cn/piRBase/
+- category: GraphicalInterface
+  description: Browse interface for exploring piRNAs organized by species
+  format: http
+  id: pirbase.browse
+  name: piRBase Browse Interface
+  product_url: http://bigdata.ibp.ac.cn/piRBase/browse.php
+- category: GraphicalInterface
+  description: Function annotation interface for piRNA functional analysis
+  format: http
+  id: pirbase.function
+  name: piRNA Function Interface
+  product_url: http://bigdata.ibp.ac.cn/piRBase/function.php
+- category: GraphicalInterface
+  description: Genome browser interface for viewing piRNA genomic locations
+  format: http
+  id: pirbase.genome
+  name: Genome Browser Interface
+  product_url: http://bigdata.ibp.ac.cn/piRBase/genome.php
+- category: GraphicalInterface
+  description: Epigenetics interface for exploring methylation and other epigenetic
+    features
+  format: http
+  id: pirbase.epigenetics
+  name: Epigenetics Interface
+  product_url: http://bigdata.ibp.ac.cn/piRBase/methylation.php
+- category: GraphicalInterface
+  description: Tools interface for piRNA analysis utilities
+  format: http
+  id: pirbase.tools
+  name: piRBase Tools
+  product_url: http://bigdata.ibp.ac.cn/piRBase/tools.php
+- category: Product
+  compression: gzip
+  description: FASTA format sequences for human piRNAs (version 3.0)
+  format: fasta
+  id: pirbase.hsa-sequences
+  name: Human piRNA Sequences
+  product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
+    to URL'
+- category: Product
+  compression: gzip
+  description: FASTA format sequences for mouse piRNAs (version 3.0)
+  format: fasta
+  id: pirbase.mmu-sequences
+  name: Mouse piRNA Sequences
+  product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
+    to URL'
+- category: Product
+  compression: gzip
+  description: FASTA format sequences for rat piRNAs
+  format: fasta
+  id: pirbase.rno-sequences
+  name: Rat piRNA Sequences
+  product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
+    to URL'
+- category: Product
+  compression: gzip
+  description: FASTA format sequences for Drosophila melanogaster piRNAs (version
+    3.0)
+  format: fasta
+  id: pirbase.dme-sequences
+  name: Drosophila piRNA Sequences
+  product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
+    to URL'
+- category: Product
+  compression: gzip
+  description: FASTA format sequences for C. elegans piRNAs (version 3.0)
+  format: fasta
+  id: pirbase.cel-sequences
+  name: C. elegans piRNA Sequences
+  product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
+    to URL'
+- category: Product
+  compression: gzip
+  description: FASTA format sequences for zebrafish piRNAs
+  format: fasta
+  id: pirbase.dre-sequences
+  name: Zebrafish piRNA Sequences
+  product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
+    to URL'
+- category: Product
+  compression: gzip
+  description: Gold standard human piRNA sequences with high confidence annotations
+  format: fasta
+  id: pirbase.hsa-gold
+  name: Human Gold Standard piRNAs
+  product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
+    to URL'
+- category: Product
+  compression: gzip
+  description: Gold standard mouse piRNA sequences with high confidence annotations
+  format: fasta
+  id: pirbase.mmu-gold
+  name: Mouse Gold Standard piRNAs
+  product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
+    to URL'
+- category: Product
+  compression: gzip
+  description: Gold standard Drosophila piRNA sequences with high confidence annotations
+  format: fasta
+  id: pirbase.dme-gold
+  name: Drosophila Gold Standard piRNAs
+  product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
+    to URL'
+- category: Product
+  compression: gzip
+  description: Genome coordinates for human piRNAs on hg19 assembly in BED format
+  format: txt
+  id: pirbase.hsa-bed
+  name: Human piRNA Coordinates (hg19)
+  product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
+    to URL'
+- category: Product
+  compression: gzip
+  description: Genome coordinates for human piRNAs on GRCh38 assembly in BED format
+  format: txt
+  id: pirbase.hsa-grch38-bed
+  name: Human piRNA Coordinates (GRCh38)
+  product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
+    to URL'
+- category: Product
+  compression: gzip
+  description: Genome coordinates for mouse piRNAs on GRCm38 assembly in BED format
+  format: txt
+  id: pirbase.mmu-bed
+  name: Mouse piRNA Coordinates (GRCm38)
+  product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
+    to URL'
+- category: Product
+  compression: gzip
+  description: Genome coordinates for Drosophila piRNAs on BDGP6 assembly in BED format
+  format: txt
+  id: pirbase.dme-bed
+  name: Drosophila piRNA Coordinates (BDGP6)
+  product_url: http://bigdata.ibp.ac.cn/piRBase/download.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
+    to URL'
+- category: DocumentationProduct
+  description: Tutorial and user manual for piRBase
+  format: http
+  id: pirbase.tutorial
+  name: piRBase Tutorial
+  product_url: http://bigdata.ibp.ac.cn/piRBase/about.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-21: Timeout connecting
+    to URL'
+- category: GraphicalInterface
+  description: Web portal for searching and browsing ncRNA sequences, structures,
+    and annotations
+  format: http
+  id: rnacentral.portal
+  name: RNAcentral Portal
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to RNAcentral data
+  format: http
+  id: rnacentral.api
+  name: RNAcentral REST API
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/api
+- category: Product
+  description: FTP archive with current and archived release files (sequences and
+    annotations)
+  format: http
+  id: rnacentral.ftp
+  name: RNAcentral FTP Archive
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+- category: DataModelProduct
+  description: Public PostgreSQL database for direct SQL access to RNAcentral data
+  format: postgres
+  id: rnacentral.public-db
+  name: RNAcentral Public Postgres Database
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/help/public-database
 publications:
-  - authors:
-      - Wang
-      - Shi
-      - Zhou
-      - Zhang
-      - Song
-      - Ying
-      - Yu
-      - Li
-      - Zhao
-      - Zeng
-      - He
-      - Chen
-    id: "https://pubmed.ncbi.nlm.nih.gov/34871445/"
-    journal: Nucleic Acids Research
-    preferred: true
-    title: 'piRBase: integrating piRNA annotation in all aspects'
-    year: "2022"
-  - authors:
-      - Wang
-      - Zhang
-      - Lu
-      - Li
-      - Zheng
-      - Kan
-      - Chen
-      - He
-    id: "https://pubmed.ncbi.nlm.nih.gov/30371818/"
-    journal: Nucleic Acids Research
-    title: 'piRBase: a comprehensive database of piRNA sequences'
-    year: "2019"
-  - authors:
-      - Zhang
-      - Si
-      - Skogerbø
-      - Wang
-      - Cui
-      - Li
-      - Sun
-      - Liu
-      - Sun
-      - Chen
-      - He
-      - Huang
-    id: "https://pubmed.ncbi.nlm.nih.gov/25425034/"
-    journal: Database (Oxford)
-    title: 'piRBase: a web resource assisting piRNA functional study'
-    year: "2014"
+- authors:
+  - Wang
+  - Shi
+  - Zhou
+  - Zhang
+  - Song
+  - Ying
+  - Yu
+  - Li
+  - Zhao
+  - Zeng
+  - He
+  - Chen
+  id: https://pubmed.ncbi.nlm.nih.gov/34871445/
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'piRBase: integrating piRNA annotation in all aspects'
+  year: '2022'
+- authors:
+  - Wang
+  - Zhang
+  - Lu
+  - Li
+  - Zheng
+  - Kan
+  - Chen
+  - He
+  id: https://pubmed.ncbi.nlm.nih.gov/30371818/
+  journal: Nucleic Acids Research
+  title: 'piRBase: a comprehensive database of piRNA sequences'
+  year: '2019'
+- authors:
+  - Zhang
+  - Si
+  - Skogerbø
+  - Wang
+  - Cui
+  - Li
+  - Sun
+  - Liu
+  - Sun
+  - Chen
+  - He
+  - Huang
+  id: https://pubmed.ncbi.nlm.nih.gov/25425034/
+  journal: Database (Oxford)
+  title: 'piRBase: a web resource assisting piRNA functional study'
+  year: '2014'
 ---
-
 # piRBase
 
 piRBase is a manually curated database for PIWI-interacting RNAs (piRNAs), a type of small noncoding RNA with various regulatory functions. Since its initial launch in 2014, piRBase has become a comprehensive resource focused on assisting piRNA functional analysis and annotation.

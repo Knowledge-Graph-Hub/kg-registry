@@ -2,65 +2,282 @@
 activity_status: inactive
 category: DataSource
 creation_date: '2010-11-25T00:00:00Z'
-description: A reference database for long noncoding RNAs (lncRNAs) that have been shown to have, or be associated with, biological functions in eukaryotes. Contained over 150 lncRNAs from around 60 different species with comprehensive annotations including sequences, structural information, genomic context, expression, subcellular localization, conservation, and functional evidence.
+description: A reference database for long noncoding RNAs (lncRNAs) that have been
+  shown to have, or be associated with, biological functions in eukaryotes. Contained
+  over 150 lncRNAs from around 60 different species with comprehensive annotations
+  including sequences, structural information, genomic context, expression, subcellular
+  localization, conservation, and functional evidence.
 domains:
-  - genomics
-  - biological systems
+- genomics
+- biological systems
 homepage_url: http://www.lncrnadb.org/
 id: lncrnadb
 last_modified_date: '2025-10-21T00:00:00Z'
 layout: resource_detail
 name: lncRNAdb
 products:
-  - category: GraphicalInterface
-    description: Main web portal for searching and browsing long noncoding RNAs by name, sequence, species, or annotations
-    format: http
-    id: lncrnadb.portal
-    name: lncRNAdb Portal
-    product_url: http://www.lncrnadb.org/
-  - category: GraphicalInterface
-    description: Search interface supporting queries by lncRNA name or alias, nucleotide sequence string, species, annotation status, and full-text search
-    format: http
-    id: lncrnadb.search
-    name: Search Interface
-    product_url: http://www.lncrnadb.org/
-  - category: Product
-    description: Tab-delimited file download of search results
-    format: tsv
-    id: lncrnadb.export
-    name: Export Results
-    product_url: http://www.lncrnadb.org/
-  - category: GraphicalInterface
-    description: Integration with UCSC Genome Browser for genomic context visualization
-    format: http
-    id: lncrnadb.ucsc-integration
-    name: UCSC Genome Browser Integration
-  - category: GraphicalInterface
-    description: Integration with Noncoding RNA Expression Database (NRED) for expression information from various sources
-    format: http
-    id: lncrnadb.nred-integration
-    name: NRED Integration
-  - category: DocumentationProduct
-    description: User submission interface for adding new entries and updating existing data with published information
-    format: http
-    id: lncrnadb.submit
-    name: User Submission System
+- category: GraphicalInterface
+  description: Main web portal for searching and browsing long noncoding RNAs by name,
+    sequence, species, or annotations
+  format: http
+  id: lncrnadb.portal
+  name: lncRNAdb Portal
+  product_url: http://www.lncrnadb.org/
+- category: GraphicalInterface
+  description: Search interface supporting queries by lncRNA name or alias, nucleotide
+    sequence string, species, annotation status, and full-text search
+  format: http
+  id: lncrnadb.search
+  name: Search Interface
+  product_url: http://www.lncrnadb.org/
+- category: Product
+  description: Tab-delimited file download of search results
+  format: tsv
+  id: lncrnadb.export
+  name: Export Results
+  product_url: http://www.lncrnadb.org/
+- category: GraphicalInterface
+  description: Integration with UCSC Genome Browser for genomic context visualization
+  format: http
+  id: lncrnadb.ucsc-integration
+  name: UCSC Genome Browser Integration
+- category: GraphicalInterface
+  description: Integration with Noncoding RNA Expression Database (NRED) for expression
+    information from various sources
+  format: http
+  id: lncrnadb.nred-integration
+  name: NRED Integration
+- category: DocumentationProduct
+  description: User submission interface for adding new entries and updating existing
+    data with published information
+  format: http
+  id: lncrnadb.submit
+  name: User Submission System
+- category: GraphicalInterface
+  description: Web portal for searching and browsing ncRNA sequences, structures,
+    and annotations
+  format: http
+  id: rnacentral.portal
+  name: RNAcentral Portal
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to RNAcentral data
+  format: http
+  id: rnacentral.api
+  name: RNAcentral REST API
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/api
+- category: Product
+  description: FTP archive with current and archived release files (sequences and
+    annotations)
+  format: http
+  id: rnacentral.ftp
+  name: RNAcentral FTP Archive
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+- category: DataModelProduct
+  description: Public PostgreSQL database for direct SQL access to RNAcentral data
+  format: postgres
+  id: rnacentral.public-db
+  name: RNAcentral Public Postgres Database
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/help/public-database
 publications:
-  - id: https://doi.org/10.1093/nar/gkq1138
-    title: 'lncRNAdb: a reference database for long noncoding RNAs'
-    authors:
-      - Paulo P Amaral
-      - Michael B Clark
-      - Dennis K Gascoigne
-      - Marcel E Dinger
-      - John S Mattick
-    year: '2011'
-    journal: Nucleic Acids Research
-    preferred: true
+- authors:
+  - Paulo P Amaral
+  - Michael B Clark
+  - Dennis K Gascoigne
+  - Marcel E Dinger
+  - John S Mattick
+  id: https://doi.org/10.1093/nar/gkq1138
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'lncRNAdb: a reference database for long noncoding RNAs'
+  year: '2011'
 warnings:
-  - This database is no longer active and the website is no longer accessible.
+- This database is no longer active and the website is no longer accessible.
 ---
-
 # lncRNAdb
 
 lncRNAdb was a comprehensive reference database for long noncoding RNAs (lncRNAs) that have been shown to have, or be associated with, biological functions in eukaryotes. The database was developed to enable systematic compilation and updating of information about lncRNAs in response to the rapid increase in their identification and characterization across multiple species.

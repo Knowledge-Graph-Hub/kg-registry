@@ -29,7 +29,7 @@ products:
   format: owl
   id: chmo.owl
   name: chmo.owl
-  product_file_size: 456896
+  product_file_size: 460248
   product_url: http://purl.obolibrary.org/obo/chmo.owl
 repository: https://github.com/rsc-ontologies/rsc-cmo
 ---

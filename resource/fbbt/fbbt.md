@@ -29,35 +29,35 @@ products:
   format: owl
   id: fbbt.owl
   name: fbbt.owl
-  product_file_size: 119097238
+  product_file_size: 119285055
   product_url: http://purl.obolibrary.org/obo/fbbt.owl
 - category: OntologyProduct
   description: Drosophila gross anatomy in OBO format
   format: obo
   id: fbbt.obo
   name: fbbt.obo
-  product_file_size: 38384549
+  product_file_size: 38423905
   product_url: http://purl.obolibrary.org/obo/fbbt.obo
 - category: OntologyProduct
   description: Drosophila gross anatomy in JSON format
   format: json
   id: fbbt.json
   name: fbbt.json
-  product_file_size: 77595983
+  product_file_size: 77676937
   product_url: http://purl.obolibrary.org/obo/fbbt.json
 - category: OntologyProduct
   description: Drosophila gross anatomy in OWL format
   format: owl
   id: fbbt.fbbt-simple.owl
   name: fbbt.fbbt-simple.owl
-  product_file_size: 110984569
+  product_file_size: 111152500
   product_url: http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl
 - category: OntologyProduct
   description: Drosophila gross anatomy in OBO format
   format: obo
   id: fbbt.fbbt-simple.obo
   name: fbbt.fbbt-simple.obo
-  product_file_size: 38384573
+  product_file_size: 38423929
   product_url: http://purl.obolibrary.org/obo/fbbt/fbbt-simple.obo
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
