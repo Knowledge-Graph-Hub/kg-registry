@@ -194,8 +194,6 @@ publications:
     journal: Database (Oxford)
     title: 'piRBase: a web resource assisting piRNA functional study'
     year: "2014"
-warnings:
-  - The piRBase website may be intermittently available. If the site is inaccessible, please try again later.
 ---
 
 # piRBase
