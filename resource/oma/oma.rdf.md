@@ -13,11 +13,11 @@ secondary_source:
 warnings:
 - File was not able to be retrieved when checked on 2025-10-15_ HTTP 502 error when
   accessing file
+- File was not able to be retrieved when checked on 2025-10-15_ HTTP 502 error when
+  accessing file
 - File was not able to be retrieved when checked on 2025-10-10_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-09-29_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2025-08-12_ HTTP 502 error when
-  accessing file
 layout: product_detail
 ---

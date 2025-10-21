@@ -29,7 +29,7 @@ products:
   format: owl
   id: fbdv.owl
   name: fbdv.owl
-  product_file_size: 523131
+  product_file_size: 523797
   product_url: http://purl.obolibrary.org/obo/fbdv.owl
 - category: OntologyProduct
   description: Drosophila development in OBO format
@@ -43,7 +43,7 @@ products:
   format: json
   id: fbdv.json
   name: fbdv.json
-  product_file_size: 358287
+  product_file_size: 358729
   product_url: http://purl.obolibrary.org/obo/fbdv.json
 - category: OntologyProduct
   description: Drosophila development in OWL format

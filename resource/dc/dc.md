@@ -1,14 +1,76 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for dc. This page was automatically generated because
-  it was referenced by other resources.
+category: DataModel
+description: Dublin Core Metadata Initiative (DCMI) Metadata Terms is an authoritative
+  specification of metadata terms for resource description. It includes the fifteen
+  elements of the Dublin Core Metadata Element Set plus several dozen properties,
+  classes, datatypes, and vocabulary encoding schemes. The terms are intended for
+  use in combination with metadata terms from other vocabularies in application profiles.
+  DCMI metadata terms are expressed in RDF vocabularies for use in Linked Data and
+  are published as ISO standards (ISO 15836-1:2017 for the original 15 elements, ISO
+  15836-2:2019 for extended terms).
 domains:
-- stub
+- information technology
+- literature
+homepage_url: https://www.dublincore.org/
 id: dc
+last_modified_date: '2025-10-21T00:00:00Z'
 layout: resource_detail
-name: Dc
+name: Dublin Core Metadata Terms
 products:
+- category: DocumentationProduct
+  description: The DCMI Metadata Terms specification document, providing comprehensive
+    documentation of all properties in the /terms/ namespace including abstract, accessRights,
+    contributor, coverage, creator, date, description, format, identifier, language,
+    publisher, relation, rights, subject, title, type, and many others.
+  format: http
+  id: dc.terms_spec
+  name: DCMI Metadata Terms Specification
+  product_url: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
+- category: DocumentationProduct
+  description: Documentation for the fifteen core Dublin Core elements in the /elements/1.1/
+    namespace (contributor, coverage, creator, date, description, format, identifier,
+    language, publisher, relation, rights, source, subject, title, type).
+  format: http
+  id: dc.elements_spec
+  name: Dublin Core Elements 1.1 Specification
+  product_url: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-3
+- category: DataModelProduct
+  description: RDF schema for Dublin Core terms in the /terms/ namespace.
+  format: rdfxml
+  id: dc.terms_rdf
+  name: Dublin Core Terms RDF Schema
+  product_url: http://purl.org/dc/terms/
+- category: DataModelProduct
+  description: RDF schema for Dublin Core elements in the /elements/1.1/ namespace.
+  format: rdfxml
+  id: dc.elements_rdf
+  name: Dublin Core Elements RDF Schema
+  product_url: http://purl.org/dc/elements/1.1/
+- category: DataModelProduct
+  description: RDF schema for the DCMI Type Vocabulary, defining classes for basic
+    types (Collection, Dataset, Event, Image, InteractiveResource, MovingImage, PhysicalObject,
+    Service, Software, Sound, StillImage, Text).
+  format: rdfxml
+  id: dc.dcmitype_rdf
+  name: DCMI Type Vocabulary RDF Schema
+  product_url: http://purl.org/dc/dcmitype/
+- category: DocumentationProduct
+  description: Documentation for vocabulary encoding schemes (DCMIType, DDC, IMT,
+    LCC, LCSH, MESH, NLM, TGN, UDC) and syntax encoding schemes (Box, ISO3166, ISO639-2,
+    ISO639-3, Period, Point, RFC standards, URI, W3CDTF).
+  format: http
+  id: dc.encoding_schemes
+  name: Dublin Core Encoding Schemes
+  product_url: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-4
+- category: DocumentationProduct
+  description: Documentation for Dublin Core classes including Agent, BibliographicResource,
+    FileFormat, Frequency, Jurisdiction, LicenseDocument, LinguisticSystem, Location,
+    MediaType, and others.
+  format: http
+  id: dc.classes
+  name: Dublin Core Classes
+  product_url: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-6
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -116,13 +178,6 @@ products:
   secondary_source:
   - efo
 - category: OntologyProduct
-  description: Cell Line Ontology in OWL format
-  format: owl
-  id: clo.owl
-  name: clo.owl
-  product_file_size: 2121232
-  product_url: http://purl.obolibrary.org/obo/clo.owl
-- category: OntologyProduct
   description: EDAM OWL release
   format: owl
   id: edam.owl
@@ -161,10 +216,26 @@ products:
   product_url: https://edamontology.org/EDAM.csv
   secondary_source:
   - edam
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+publications:
+- id: https://www.iso.org/standard/71339.html
+  preferred: true
+  title: "ISO 15836-1:2017 Information and documentation \u2014 The Dublin Core metadata\
+    \ element set \u2014 Part 1: Core elements"
+  year: '2017'
+- id: https://www.iso.org/standard/71341.html
+  title: "ISO 15836-2:2019 Information and documentation \u2014 The Dublin Core metadata\
+    \ element set \u2014 Part 2: DCMI Properties and classes"
+  year: '2019'
+repository: https://github.com/dcmi/
 ---
-# Dc
+# Dublin Core Metadata Terms
 
-This is an automatically generated stub page for dc. Please update with proper information.
+Dublin Core Metadata Initiative (DCMI) Metadata Terms provides a standardized vocabulary for resource description. The specification includes the foundational fifteen-element Dublin Core Metadata Element Set, widely used for over two decades, plus an extensive collection of properties, classes, and encoding schemes maintained for RDF and Linked Data applications.
+
+The metadata terms are organized into four namespaces:
+- `/elements/1.1/` - The original 15 core elements (published as ISO 15836-1:2017)
+- `/terms/` - Extended properties and refined versions of core elements (ISO 15836-2:2019)
+- `/dcmitype/` - DCMI Type Vocabulary for categorizing resource types
+- `/dcam/` - Terms for vocabulary description
+
+Dublin Core terms are designed to be used in combination with other vocabularies in application profiles, supporting interoperability across diverse metadata communities.

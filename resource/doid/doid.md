@@ -16,7 +16,7 @@ description: An ontology for describing the classification of human diseases org
   by etiology.
 domains:
 - biomedical
-homepage_url: http://www.disease-ontology.org
+homepage_url: https://disease-ontology.org
 id: doid
 layout: resource_detail
 license:
@@ -41,6 +41,102 @@ products:
   name: Disease Ontology, OBO format. This file omits the equivalent axioms.
   product_file_size: 1359793
   product_url: http://purl.obolibrary.org/obo/doid.obo
+- category: GraphProduct
+  compression: zip
+  description: Nodes from Human Disease Ontology
+  format: csv
+  id: biomarkerkg.nodes.condition
+  name: BKG Condition Nodes
+  original_source:
+  - doid
+  product_file_size: 5501
+  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.nodes.zip
+  secondary_source:
+  - biomarkerkg
+- category: GraphicalInterface
+  description: A browser interface for a knowledge graph for Alzheimer's Disease.
+  format: http
+  id: alzkb.browser
+  name: AlzKB Graph Database Browser
+  original_source:
+  - aop-db
+  - bgee
+  - disgenet
+  - doid
+  - drugbank
+  - dsstox
+  - go
+  - gwascatalog
+  - hrpimp
+  - lincs-l1000
+  - mesh
+  - ncbigene
+  - pharmacotherapydb
+  - pid
+  - pubchem
+  - reactome
+  - sider
+  - tissues
+  - uberon
+  - wikipathways
+  product_url: https://alzkb.ai:7473/login
+  secondary_source:
+  - alzkb
+  - hetionet
+- category: GraphProduct
+  description: Memgraph data release for AlzKB.
+  id: alzkb.data
+  name: AlzKB Data Release (Version 2.0.0)
+  original_source:
+  - aop-db
+  - bgee
+  - disgenet
+  - doid
+  - drugbank
+  - dsstox
+  - go
+  - gwascatalog
+  - hrpimp
+  - lincs-l1000
+  - mesh
+  - ncbigene
+  - pharmacotherapydb
+  - pid
+  - pubchem
+  - reactome
+  - reactome
+  - sider
+  - tissues
+  - uberon
+  - wikipathways
+  product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
+  secondary_source:
+  - alzkb
+  - hetionet
+- description: The MechRepoNet knowledge graph in its original format
+  id: mechreponet.kg
+  name: MechRepoNet Knowledge Graph
+  original_source:
+  - ctd
+  - doid
+  - go
+  - chebi
+  - reactome
+  - interpro
+  - hp
+  - cl
+  - pr
+  - uberon
+  - ncbitaxon
+  - hetionet
+  - complexportal
+  - rnacentral
+  - mirtarbase
+  - unii
+  - biolink
+  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+  secondary_source:
+  - mechreponet
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
     instances as neo4j graph databases, running in a Docker container. Requires UMLS
@@ -169,49 +265,6 @@ products:
   secondary_source:
   - ubkg
 - category: GraphProduct
-  description: The SPOKE knowledge graph containing nodes and edges from multiple
-    biomedical data sources.
-  id: spoke.graph
-  name: SPOKE Graph
-  original_source:
-  - ncbigene
-  - medline
-  - mesh
-  - pid
-  - doid
-  - diseases
-  - drugcentral
-  - go
-  - gwascatalog
-  - reactome
-  - lincs-l1000
-  - uberon
-  - wikipathways
-  - bindingdb
-  - drugbank
-  - sider
-  - bgee
-  - uniprot
-  - string
-  - omim
-  - chembl
-  - foodb
-  - civic
-  - gdsc
-  - clinicaltrialsgov
-  - hpa
-  - cl
-  - kegg
-  - metacyc
-  - bv-brc
-  - ncbitaxon
-  - pathophenodb
-  - pfam
-  - interpro
-  - protcid
-  secondary_source:
-  - spoke
-- category: GraphProduct
   description: Neo4j database dump of the Clinical Knowledge Graph and additional
     relationships
   dump_format: neo4j
@@ -303,118 +356,49 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-- description: The MechRepoNet knowledge graph in its original format
-  id: mechreponet.kg
-  name: MechRepoNet Knowledge Graph
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
   original_source:
-  - ctd
+  - ncbigene
+  - medline
+  - mesh
+  - pid
   - doid
+  - diseases
+  - drugcentral
   - go
-  - chebi
+  - gwascatalog
   - reactome
-  - interpro
-  - hp
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
   - cl
-  - pr
-  - uberon
+  - kegg
+  - metacyc
+  - bv-brc
   - ncbitaxon
-  - hetionet
-  - complexportal
-  - rnacentral
-  - mirtarbase
-  - unii
-  - biolink
-  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
   secondary_source:
-  - mechreponet
-- category: GraphicalInterface
-  description: A browser interface for a knowledge graph for Alzheimer's Disease.
-  format: http
-  id: alzkb.browser
-  name: AlzKB Graph Database Browser
-  original_source:
-  - aop-db
-  - bgee
-  - disgenet
-  - doid
-  - drugbank
-  - dsstox
-  - go
-  - gwascatalog
-  - hrpimp
-  - lincs-l1000
-  - mesh
-  - ncbigene
-  - pharmacotherapydb
-  - pid
-  - pubchem
-  - reactome
-  - sider
-  - tissues
-  - uberon
-  - wikipathways
-  product_url: https://alzkb.ai:7473/login
-  secondary_source:
-  - alzkb
-  - hetionet
-- category: GraphProduct
-  description: Memgraph data release for AlzKB.
-  id: alzkb.data
-  name: AlzKB Data Release (Version 2.0.0)
-  original_source:
-  - aop-db
-  - bgee
-  - disgenet
-  - doid
-  - drugbank
-  - dsstox
-  - go
-  - gwascatalog
-  - hrpimp
-  - lincs-l1000
-  - mesh
-  - ncbigene
-  - pharmacotherapydb
-  - pid
-  - pubchem
-  - reactome
-  - reactome
-  - sider
-  - tissues
-  - uberon
-  - wikipathways
-  product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
-  secondary_source:
-  - alzkb
-  - hetionet
-- category: GraphProduct
-  description: Nodes for the Drug Approvals KP, v0.3.9
-  format: kgx
-  id: drug-approvals-kp.graph.nodes
-  name: Drug Approvals KP Graph Nodes
-  original_source:
-  - chebi
-  - doid
-  - hp
-  - mondo
-  product_file_size: 701451
-  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
-  secondary_source:
-  - drug-approvals-kp
-- category: GraphProduct
-  description: Edges for the Drug Approvals KP, v0.3.9
-  format: kgx
-  id: drug-approvals-kp.graph.edges
-  name: Drug Approvals KP Graph Edges
-  original_source:
-  - chebi
-  - doid
-  - hp
-  - mondo
-  product_file_size: 31052966
-  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
-  secondary_source:
-  - drug-approvals-kp
+  - spoke
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl
@@ -522,17 +506,33 @@ products:
   secondary_source:
   - efo
 - category: GraphProduct
-  compression: zip
-  description: Nodes from Human Disease Ontology
-  format: csv
-  id: biomarkerkg.nodes.condition
-  name: BKG Condition Nodes
+  description: Nodes for the Drug Approvals KP, v0.3.9
+  format: kgx
+  id: drug-approvals-kp.graph.nodes
+  name: Drug Approvals KP Graph Nodes
   original_source:
+  - chebi
   - doid
-  product_file_size: 5501
-  product_url: https://s3.amazonaws.com/maayan-kg/biomarker-kg/Condition.nodes.zip
+  - hp
+  - mondo
+  product_file_size: 701451
+  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_nodes_v0.3.9.tsv
   secondary_source:
-  - biomarkerkg
+  - drug-approvals-kp
+- category: GraphProduct
+  description: Edges for the Drug Approvals KP, v0.3.9
+  format: kgx
+  id: drug-approvals-kp.graph.edges
+  name: Drug Approvals KP Graph Edges
+  original_source:
+  - chebi
+  - doid
+  - hp
+  - mondo
+  product_file_size: 31052966
+  product_url: https://db.systemsbiology.net/gestalt/KG/drug_approvals_kg_edges_v0.3.9.tsv
+  secondary_source:
+  - drug-approvals-kp
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
   format: sssom

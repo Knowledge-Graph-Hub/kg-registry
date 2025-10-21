@@ -30,7 +30,7 @@ products:
   format: owl
   id: mfoem.owl
   name: mfoem.owl
-  product_file_size: 72356
+  product_file_size: 72354
   product_url: http://purl.obolibrary.org/obo/mfoem.owl
 repository: https://github.com/jannahastings/emotion-ontology
 ---

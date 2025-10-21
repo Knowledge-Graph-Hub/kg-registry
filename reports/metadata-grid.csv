@@ -230,7 +230,6 @@ lincs-l1000,active,PASS
 lncbase,active,PASS
 lncbook,active,PASS
 lncipedia,active,PASS
-lncrnadb,active,PASS
 lncrnalyzr,active,PASS
 loinc,active,PASS
 m-csa,active,PASS
@@ -506,6 +505,7 @@ iev,inactive,PASS
 imr,inactive,PASS
 ipr,inactive,PASS
 lipro,inactive,PASS
+lncrnadb,inactive,PASS
 loggerhead,inactive,PASS
 mamo,orphaned,PASS
 mao,inactive,PASS
