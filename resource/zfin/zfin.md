@@ -61,7 +61,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
@@ -75,7 +75,7 @@ products:
     url_ /biopragmatics/resources/zfin/zfin.owl (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7ff244989120>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - 'File was not able to be retrieved when checked on 2025-10-21: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
     when accessing file'
 - category: Product
   description: zfin OBO Graph JSON
@@ -93,7 +93,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -102,7 +102,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-21: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: zfin SSSOM
@@ -1125,9 +1125,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-21: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 403 error
     when accessing file'
 repository: https://github.com/ZFIN/
 ---

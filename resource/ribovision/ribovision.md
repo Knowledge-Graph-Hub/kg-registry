@@ -2,192 +2,413 @@
 activity_status: active
 category: Resource
 creation_date: '2025-10-27T00:00:00Z'
-description: RiboVision is a comprehensive webserver suite for visualization and analysis of ribosomal RNA structures, designed to integrate phylogenetic, structural, and evolutionary information about ribosomes in multiple dimensions. It provides interactive tools for exploring ribosomal RNA sequences, secondary structures, 3D structures, and associated data.
+description: RiboVision is a comprehensive webserver suite for visualization and analysis
+  of ribosomal RNA structures, designed to integrate phylogenetic, structural, and
+  evolutionary information about ribosomes in multiple dimensions. It provides interactive
+  tools for exploring ribosomal RNA sequences, secondary structures, 3D structures,
+  and associated data.
 domains:
-  - genomics
-  - biological systems
+- genomics
+- biological systems
 homepage_url: https://ribovision2.chemistry.gatech.edu/
-id: "ribovision"
+id: ribovision
 last_modified_date: '2025-10-27T00:00:00Z'
 layout: resource_detail
 name: RiboVision
 products:
-  - category: GraphicalInterface
-    description: Main web portal for RiboVision 2.0 with advanced visualization of RNA molecules
-    format: http
-    id: "ribovision.portal"
-    name: RiboVision 2.0 Portal
-    product_url: https://ribovision2.chemistry.gatech.edu/
-  - category: GraphicalInterface
-    description: Interactive phylogenetic browser for exploring ribosomal RNA sequences across 152 species
-    format: http
-    id: "ribovision.phylogeny-browser"
-    name: Phylogenetic Browser
-    product_url: https://ribovision2.chemistry.gatech.edu/
-  - category: GraphicalInterface
-    description: 2D RNA topology viewer for visualizing ribosomal RNA secondary structures
-    format: http
-    id: "ribovision.2d-viewer"
-    name: 2D RNA Topology Viewer
-    product_url: https://ribovision2.chemistry.gatech.edu/
-  - category: GraphicalInterface
-    description: MolStar-based 3D structure viewer for interactive exploration of ribosome structures
-    format: http
-    id: "ribovision.3d-viewer"
-    name: 3D Structure Viewer
-    product_url: https://ribovision2.chemistry.gatech.edu/
-  - category: GraphicalInterface
-    description: MSA viewer for exploring multiple sequence alignments of ribosomal RNA
-    format: http
-    id: "ribovision.msa-viewer"
-    name: Alignment Viewer
-    product_url: https://ribovision2.chemistry.gatech.edu/
-  - category: Product
-    description: Database of 152 ribosomal RNA sequences from the DESIRE dataset organized by phylogeny
-    format: http
-    id: "ribovision.sequences"
-    name: rRNA Sequence Database
-    product_url: https://ribovision2.chemistry.gatech.edu/
-  - category: Product
-    description: Multiple sequence alignments for ribosomal RNAs generated according to DESIRE methodology
-    format: http
-    id: "ribovision.alignments"
-    name: rRNA Alignments
-    product_url: https://ribovision2.chemistry.gatech.edu/
-  - category: Product
-    description: Pre-generated 2D layouts of ribosomal RNAs exported from PDBe API
-    format: http
-    id: "ribovision.2d-maps"
-    name: 2D Structure Maps
-    product_url: https://ribovision2.chemistry.gatech.edu/
-  - category: Product
-    description: 3D ribosome structures fetched from RCSB PDB with coordinate data
-    format: http
-    id: "ribovision.3d-structures"
-    name: 3D Structure Data
-    product_url: https://ribovision2.chemistry.gatech.edu/
-  - category: Product
-    description: RNA-protein contact data computed using BioPython NeighborSearch with 3.5Å cutoff
-    format: http
-    id: "ribovision.protein-contacts"
-    name: RNA-Protein Contacts
-    product_url: https://ribovision2.chemistry.gatech.edu/
-  - category: Product
-    description: Chemical modification data extracted from PDB CIF files
-    format: http
-    id: "ribovision.chemical-modifications"
-    name: Chemical Modifications
-    product_url: https://ribovision2.chemistry.gatech.edu/
-  - category: Product
-    description: Nucleotide frequency data from MSA columns with gap-adjusted probabilities
-    format: http
-    id: "ribovision.nucleotide-frequencies"
-    name: Nucleotide Frequencies
-    product_url: https://ribovision2.chemistry.gatech.edu/
-  - category: Product
-    description: Shannon entropy calculations for sequence conservation analysis
-    format: http
-    id: "ribovision.shannon-entropy"
-    name: Shannon Entropy Data
-    product_url: https://ribovision2.chemistry.gatech.edu/
-  - category: Product
-    description: TwinCons scores for two-group phylogenetic comparisons
-    format: http
-    id: "ribovision.twincons"
-    name: TwinCons Comparison Data
-    product_url: https://ribovision2.chemistry.gatech.edu/
-  - category: Product
-    description: Helix definitions and annotations for ribosomal RNA structures
-    format: http
-    id: "ribovision.helices"
-    name: Helix Annotations
-    product_url: https://ribovision2.chemistry.gatech.edu/
-  - category: Product
-    description: Expansion segment annotations from evolutionary accretion model
-    format: http
-    id: "ribovision.expansion-segments"
-    name: Expansion Segment Annotations
-    product_url: https://ribovision2.chemistry.gatech.edu/
-  - category: DocumentationProduct
-    description: About page with introduction to RiboVision 2 and contributors
-    format: http
-    id: "ribovision.about"
-    name: About RiboVision
-    product_url: https://apollo2.chemistry.gatech.edu/AboutRiboVision2/about/
-  - category: DocumentationProduct
-    description: Documentation for basic navigation and interface usage
-    format: http
-    id: "ribovision.basic-navigation"
-    name: Basic Navigation Guide
-    product_url: https://apollo2.chemistry.gatech.edu/AboutRiboVision2/basic_navigation/
-  - category: DocumentationProduct
-    description: Documentation for advanced features and analysis capabilities
-    format: http
-    id: "ribovision.advanced-features"
-    name: Advanced Features Guide
-    product_url: https://apollo2.chemistry.gatech.edu/AboutRiboVision2/Advanced_Features/
-  - category: DocumentationProduct
-    description: Detailed documentation about RiboVision data sources and computational methods
-    format: http
-    id: "ribovision.data-documentation"
-    name: Data Documentation
-    product_url: https://apollo2.chemistry.gatech.edu/AboutRiboVision2/ribovision_data/
-  - category: DocumentationProduct
-    description: User guide for upload mode with custom structures and alignments
-    format: http
-    id: "ribovision.user-upload-guide"
-    name: User Upload Mode Guide
-    product_url: https://apollo2.chemistry.gatech.edu/AboutRiboVision2/User_upload_Mode/
-  - category: DocumentationProduct
-    description: Gallery of examples demonstrating RiboVision capabilities
-    format: http
-    id: "ribovision.examples"
-    name: Examples Gallery
-    product_url: https://apollo2.chemistry.gatech.edu/AboutRiboVision2/examples/
+- category: GraphicalInterface
+  description: Main web portal for RiboVision 2.0 with advanced visualization of RNA
+    molecules
+  format: http
+  id: ribovision.portal
+  name: RiboVision 2.0 Portal
+  product_url: https://ribovision2.chemistry.gatech.edu/
+- category: GraphicalInterface
+  description: Interactive phylogenetic browser for exploring ribosomal RNA sequences
+    across 152 species
+  format: http
+  id: ribovision.phylogeny-browser
+  name: Phylogenetic Browser
+  product_url: https://ribovision2.chemistry.gatech.edu/
+- category: GraphicalInterface
+  description: 2D RNA topology viewer for visualizing ribosomal RNA secondary structures
+  format: http
+  id: ribovision.2d-viewer
+  name: 2D RNA Topology Viewer
+  product_url: https://ribovision2.chemistry.gatech.edu/
+- category: GraphicalInterface
+  description: MolStar-based 3D structure viewer for interactive exploration of ribosome
+    structures
+  format: http
+  id: ribovision.3d-viewer
+  name: 3D Structure Viewer
+  product_url: https://ribovision2.chemistry.gatech.edu/
+- category: GraphicalInterface
+  description: MSA viewer for exploring multiple sequence alignments of ribosomal
+    RNA
+  format: http
+  id: ribovision.msa-viewer
+  name: Alignment Viewer
+  product_url: https://ribovision2.chemistry.gatech.edu/
+- category: Product
+  description: Database of 152 ribosomal RNA sequences from the DESIRE dataset organized
+    by phylogeny
+  format: http
+  id: ribovision.sequences
+  name: rRNA Sequence Database
+  product_url: https://ribovision2.chemistry.gatech.edu/
+- category: Product
+  description: Multiple sequence alignments for ribosomal RNAs generated according
+    to DESIRE methodology
+  format: http
+  id: ribovision.alignments
+  name: rRNA Alignments
+  product_url: https://ribovision2.chemistry.gatech.edu/
+- category: Product
+  description: Pre-generated 2D layouts of ribosomal RNAs exported from PDBe API
+  format: http
+  id: ribovision.2d-maps
+  name: 2D Structure Maps
+  product_url: https://ribovision2.chemistry.gatech.edu/
+- category: Product
+  description: 3D ribosome structures fetched from RCSB PDB with coordinate data
+  format: http
+  id: ribovision.3d-structures
+  name: 3D Structure Data
+  product_url: https://ribovision2.chemistry.gatech.edu/
+- category: Product
+  description: "RNA-protein contact data computed using BioPython NeighborSearch with\
+    \ 3.5\xC5 cutoff"
+  format: http
+  id: ribovision.protein-contacts
+  name: RNA-Protein Contacts
+  product_url: https://ribovision2.chemistry.gatech.edu/
+- category: Product
+  description: Chemical modification data extracted from PDB CIF files
+  format: http
+  id: ribovision.chemical-modifications
+  name: Chemical Modifications
+  product_url: https://ribovision2.chemistry.gatech.edu/
+- category: Product
+  description: Nucleotide frequency data from MSA columns with gap-adjusted probabilities
+  format: http
+  id: ribovision.nucleotide-frequencies
+  name: Nucleotide Frequencies
+  product_url: https://ribovision2.chemistry.gatech.edu/
+- category: Product
+  description: Shannon entropy calculations for sequence conservation analysis
+  format: http
+  id: ribovision.shannon-entropy
+  name: Shannon Entropy Data
+  product_url: https://ribovision2.chemistry.gatech.edu/
+- category: Product
+  description: TwinCons scores for two-group phylogenetic comparisons
+  format: http
+  id: ribovision.twincons
+  name: TwinCons Comparison Data
+  product_url: https://ribovision2.chemistry.gatech.edu/
+- category: Product
+  description: Helix definitions and annotations for ribosomal RNA structures
+  format: http
+  id: ribovision.helices
+  name: Helix Annotations
+  product_url: https://ribovision2.chemistry.gatech.edu/
+- category: Product
+  description: Expansion segment annotations from evolutionary accretion model
+  format: http
+  id: ribovision.expansion-segments
+  name: Expansion Segment Annotations
+  product_url: https://ribovision2.chemistry.gatech.edu/
+- category: DocumentationProduct
+  description: About page with introduction to RiboVision 2 and contributors
+  format: http
+  id: ribovision.about
+  name: About RiboVision
+  product_url: https://apollo2.chemistry.gatech.edu/AboutRiboVision2/about/
+- category: DocumentationProduct
+  description: Documentation for basic navigation and interface usage
+  format: http
+  id: ribovision.basic-navigation
+  name: Basic Navigation Guide
+  product_url: https://apollo2.chemistry.gatech.edu/AboutRiboVision2/basic_navigation/
+- category: DocumentationProduct
+  description: Documentation for advanced features and analysis capabilities
+  format: http
+  id: ribovision.advanced-features
+  name: Advanced Features Guide
+  product_url: https://apollo2.chemistry.gatech.edu/AboutRiboVision2/Advanced_Features/
+- category: DocumentationProduct
+  description: Detailed documentation about RiboVision data sources and computational
+    methods
+  format: http
+  id: ribovision.data-documentation
+  name: Data Documentation
+  product_url: https://apollo2.chemistry.gatech.edu/AboutRiboVision2/ribovision_data/
+- category: DocumentationProduct
+  description: User guide for upload mode with custom structures and alignments
+  format: http
+  id: ribovision.user-upload-guide
+  name: User Upload Mode Guide
+  product_url: https://apollo2.chemistry.gatech.edu/AboutRiboVision2/User_upload_Mode/
+- category: DocumentationProduct
+  description: Gallery of examples demonstrating RiboVision capabilities
+  format: http
+  id: ribovision.examples
+  name: Examples Gallery
+  product_url: https://apollo2.chemistry.gatech.edu/AboutRiboVision2/examples/
+- category: GraphicalInterface
+  description: Web portal for searching and browsing ncRNA sequences, structures,
+    and annotations
+  format: http
+  id: rnacentral.portal
+  name: RNAcentral Portal
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to RNAcentral data
+  format: http
+  id: rnacentral.api
+  name: RNAcentral REST API
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/api
+- category: Product
+  description: FTP archive with current and archived release files (sequences and
+    annotations)
+  format: http
+  id: rnacentral.ftp
+  name: RNAcentral FTP Archive
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+- category: DataModelProduct
+  description: Public PostgreSQL database for direct SQL access to RNAcentral data
+  format: postgres
+  id: rnacentral.public-db
+  name: RNAcentral Public Postgres Database
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/help/public-database
 publications:
-  - authors:
-      - Bernier
-      - Petrov
-      - Waterbury
-      - Jett
-      - Li
-      - Freil
-      - Xiong
-      - Wang
-      - Migliozzi
-      - Hershkovits
-      - Xue
-      - Hsiao
-      - Bowman
-      - Harvey
-      - Grover
-      - Wartell
-      - Williams
-    id: "doi:10.1039/c3fd00126a"
-    journal: Faraday Discussions
-    preferred: true
-    title: RiboVision suite for visualization and analysis of ribosomes
-    year: "2014"
-    doi: 10.1039/c3fd00126a
-  - authors:
-      - Petrov
-      - Bernier
-      - Gulen
-      - Waterbury
-      - Hershkovits
-      - Hsiao
-      - Harvey
-      - Hud
-      - Fox
-      - Wartell
-      - Williams
-    id: "doi:10.1371/journal.pone.0088222"
-    journal: PLoS One
-    title: Secondary structures of rRNAs from all three domains of life
-    year: "2014"
-    doi: 10.1371/journal.pone.0088222
+- authors:
+  - Bernier
+  - Petrov
+  - Waterbury
+  - Jett
+  - Li
+  - Freil
+  - Xiong
+  - Wang
+  - Migliozzi
+  - Hershkovits
+  - Xue
+  - Hsiao
+  - Bowman
+  - Harvey
+  - Grover
+  - Wartell
+  - Williams
+  doi: 10.1039/c3fd00126a
+  id: doi:10.1039/c3fd00126a
+  journal: Faraday Discussions
+  preferred: true
+  title: RiboVision suite for visualization and analysis of ribosomes
+  year: '2014'
+- authors:
+  - Petrov
+  - Bernier
+  - Gulen
+  - Waterbury
+  - Hershkovits
+  - Hsiao
+  - Harvey
+  - Hud
+  - Fox
+  - Wartell
+  - Williams
+  doi: 10.1371/journal.pone.0088222
+  id: doi:10.1371/journal.pone.0088222
+  journal: PLoS One
+  title: Secondary structures of rRNAs from all three domains of life
+  year: '2014'
 ---
-
 # RiboVision
 
 RiboVision 2.0 is a comprehensive webserver suite designed for visualization and analysis of ribosomal RNA structures. Developed at the Center for the Origins of Life at Georgia Institute of Technology, RiboVision integrates phylogenetic, structural, and evolutionary information about ribosomes, enabling researchers to explore ribosomal RNA in multiple dimensions.

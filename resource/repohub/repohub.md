@@ -2,104 +2,217 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-09-09T00:00:00Z'
-description: The Drug Repurposing Hub is a curated and annotated collection of FDA-approved drugs, clinical trial drugs, and pre-clinical tool compounds from the Broad Institute. The collection contains over 7,500 unique compounds targeting over 2,400 protein targets, with annotations for 826 drug indications and extensive metadata including structures, mechanisms, and therapeutic areas.
+description: The Drug Repurposing Hub is a curated and annotated collection of FDA-approved
+  drugs, clinical trial drugs, and pre-clinical tool compounds from the Broad Institute.
+  The collection contains over 7,500 unique compounds targeting over 2,400 protein
+  targets, with annotations for 826 drug indications and extensive metadata including
+  structures, mechanisms, and therapeutic areas.
 domains:
-  - drug discovery
-  - pharmacology
-  - biomedical
+- drug discovery
+- pharmacology
+- biomedical
 homepage_url: https://repo-hub.broadinstitute.org/repurposing
-id: "repohub"
+id: repohub
 last_modified_date: '2025-10-27T00:00:00Z'
 layout: resource_detail
 name: Drug Repurposing Hub
 products:
-  - category: GraphicalInterface
-    description: Web portal for exploring the Drug Repurposing Hub compound collection and annotations
-    format: http
-    id: "repohub.portal"
-    name: Repurposing Hub Portal
-    product_url: https://repo-hub.broadinstitute.org/repurposing#home
-  - category: GraphicalInterface
-    description: Interactive data portal for searching and exploring compound annotations, targets, mechanisms, and indications
-    format: http
-    id: "repohub.data-portal"
-    name: Data Portal
-    product_url: https://repo-hub.broadinstitute.org/repurposing-app
-  - category: Product
-    description: Downloadable drug information file with compound metadata including names, structures, targets, mechanisms, and indications
-    format: http
-    id: "repohub.drug-info"
-    name: Drug Information Download
-    product_url: https://repo-hub.broadinstitute.org/repurposing#download
-  - category: Product
-    description: Downloadable sample information file with compound library details and annotations
-    format: http
-    id: "repohub.sample-info"
-    name: Sample Information Download
-    product_url: https://repo-hub.broadinstitute.org/repurposing#download
-  - category: Product
-    description: Physical screening library of 5,506 compounds (90% FDA-approved or in clinical trials) available as assay-ready plates
-    id: "repohub.screening-library"
-    name: Screening Library
-    product_url: https://repo-hub.broadinstitute.org/repurposing#about
-  - category: Product
-    description: REPO1 subset library available in 5-point, 10-fold dilution series as single-use assay-ready plates
-    id: "repohub.repo1-library"
-    name: REPO1 Dilution Series Library
-    product_url: https://repo-hub.broadinstitute.org/repurposing#about
-  - category: Product
-    description: Follow-up compound collection of approximately 2,400 compounds available for secondary studies
-    id: "repohub.followup-compounds"
-    name: Follow-up Compound Collection
-    product_url: https://repo-hub.broadinstitute.org/repurposing#about
-  - category: DocumentationProduct
-    description: About page with detailed information on the Drug Repurposing Hub history, team, and usage
-    format: http
-    id: "repohub.about"
-    name: About the Repurposing Hub
-    product_url: https://repo-hub.broadinstitute.org/repurposing#about
-  - category: DocumentationProduct
-    description: Case studies demonstrating applications of the Drug Repurposing Hub
-    format: http
-    id: "repohub.case-studies"
-    name: Case Studies
-    product_url: https://repo-hub.broadinstitute.org/repurposing#case-studies
-  - category: DocumentationProduct
-    description: Information about conducting screens with the Drug Repurposing Hub library
-    format: http
-    id: "repohub.screening-info"
-    name: Screening Information
-    product_url: https://repo-hub.broadinstitute.org/repurposing#screen
-  - category: DocumentationProduct
-    description: Policy document for compound intake and donation to the collection
-    format: pdf
-    id: "repohub.intake-policy"
-    name: Compound Intake Policy
-    product_url: https://repo-hub.broadinstitute.org/public/data/Compound_Intake_Policy.pdf
+- category: GraphicalInterface
+  description: Web portal for exploring the Drug Repurposing Hub compound collection
+    and annotations
+  format: http
+  id: repohub.portal
+  name: Repurposing Hub Portal
+  product_url: https://repo-hub.broadinstitute.org/repurposing#home
+- category: GraphicalInterface
+  description: Interactive data portal for searching and exploring compound annotations,
+    targets, mechanisms, and indications
+  format: http
+  id: repohub.data-portal
+  name: Data Portal
+  product_url: https://repo-hub.broadinstitute.org/repurposing-app
+- category: Product
+  description: Downloadable drug information file with compound metadata including
+    names, structures, targets, mechanisms, and indications
+  format: http
+  id: repohub.drug-info
+  name: Drug Information Download
+  product_url: https://repo-hub.broadinstitute.org/repurposing#download
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-27: Error connecting
+    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
+    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
+- category: Product
+  description: Downloadable sample information file with compound library details
+    and annotations
+  format: http
+  id: repohub.sample-info
+  name: Sample Information Download
+  product_url: https://repo-hub.broadinstitute.org/repurposing#download
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-27: Error connecting
+    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
+    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
+- category: Product
+  description: Physical screening library of 5,506 compounds (90% FDA-approved or
+    in clinical trials) available as assay-ready plates
+  id: repohub.screening-library
+  name: Screening Library
+  product_url: https://repo-hub.broadinstitute.org/repurposing#about
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-27: Error connecting
+    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
+    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
+- category: Product
+  description: REPO1 subset library available in 5-point, 10-fold dilution series
+    as single-use assay-ready plates
+  id: repohub.repo1-library
+  name: REPO1 Dilution Series Library
+  product_url: https://repo-hub.broadinstitute.org/repurposing#about
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-27: Error connecting
+    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
+    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
+- category: Product
+  description: Follow-up compound collection of approximately 2,400 compounds available
+    for secondary studies
+  id: repohub.followup-compounds
+  name: Follow-up Compound Collection
+  product_url: https://repo-hub.broadinstitute.org/repurposing#about
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-27: Error connecting
+    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
+    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
+- category: DocumentationProduct
+  description: About page with detailed information on the Drug Repurposing Hub history,
+    team, and usage
+  format: http
+  id: repohub.about
+  name: About the Repurposing Hub
+  product_url: https://repo-hub.broadinstitute.org/repurposing#about
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-27: Error connecting
+    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
+    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
+- category: DocumentationProduct
+  description: Case studies demonstrating applications of the Drug Repurposing Hub
+  format: http
+  id: repohub.case-studies
+  name: Case Studies
+  product_url: https://repo-hub.broadinstitute.org/repurposing#case-studies
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-27: Error connecting
+    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
+    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
+- category: DocumentationProduct
+  description: Information about conducting screens with the Drug Repurposing Hub
+    library
+  format: http
+  id: repohub.screening-info
+  name: Screening Information
+  product_url: https://repo-hub.broadinstitute.org/repurposing#screen
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-27: Error connecting
+    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
+    retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
+    issuer certificate (_ssl.c:1000)'')))'
+- category: DocumentationProduct
+  description: Policy document for compound intake and donation to the collection
+  format: pdf
+  id: repohub.intake-policy
+  name: Compound Intake Policy
+  product_url: https://repo-hub.broadinstitute.org/public/data/Compound_Intake_Policy.pdf
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-27: Error connecting
+    to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
+    retries exceeded with url: /public/data/Compound_Intake_Policy.pdf (Caused by
+    SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
+    verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
+  name: Bioteque Embeddings
+  original_source:
+  - chebi
+  - cosmic
+  - achilles
+  - depmap
+  - ccle
+  - gdsc
+  - cellosaurus
+  - clue
+  - ctd
+  - pharmacodb
+  - prism
+  - drugbank
+  - lincs
+  - compartments
+  - offsides
+  - sider
+  - drugcentral
+  - repohub
+  - chemicalchecker
+  - repodb
+  - disgenet
+  - opentargets
+  - creeds
+  - interpro
+  - reactome
+  - tissues
+  - dorothea
+  - progeny
+  - gtex
+  - hpa
+  - go
+  - corum
+  - huri
+  - intact
+  - omnipath
+  - string
+  - bto
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+  secondary_source:
+  - bioteque
 publications:
-  - authors:
-      - Corsello
-      - Bittker
-      - Liu
-      - Gould
-      - McCarren
-      - Hirschman
-      - Johnston
-      - Vrcic
-      - Wong
-      - Khan
-      - Asiedu
-      - Narayan
-      - Mader
-      - Subramanian
-      - Golub
-    id: "https://doi.org/10.1038/nm.4306"
-    journal: Nature Medicine
-    preferred: true
-    title: 'The Drug Repurposing Hub: a next-generation drug library and information resource'
-    year: "2017"
+- authors:
+  - Corsello
+  - Bittker
+  - Liu
+  - Gould
+  - McCarren
+  - Hirschman
+  - Johnston
+  - Vrcic
+  - Wong
+  - Khan
+  - Asiedu
+  - Narayan
+  - Mader
+  - Subramanian
+  - Golub
+  id: https://doi.org/10.1038/nm.4306
+  journal: Nature Medicine
+  preferred: true
+  title: 'The Drug Repurposing Hub: a next-generation drug library and information
+    resource'
+  year: '2017'
 ---
-
 # Drug Repurposing Hub
 
 The Drug Repurposing Hub is a curated and annotated collection of compounds developed and maintained by the Broad Institute's Center for the Development of Therapeutics (CDoT). The Hub represents a powerful resource for drug discovery, enabling researchers to explore known biological targets and pathways, discover new biological insights, and identify new therapeutic applications for existing drugs.

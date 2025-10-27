@@ -2,119 +2,336 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-09-09T00:00:00Z'
-description: snOPY (snoRNA Orthological Gene Database) provides comprehensive information about small nucleolar RNAs (snoRNAs), their gene loci, and target RNAs across multiple species. The database focuses on orthologous relationships between snoRNAs using target RNA conservation rather than snoRNA sequence similarity.
+description: snOPY (snoRNA Orthological Gene Database) provides comprehensive information
+  about small nucleolar RNAs (snoRNAs), their gene loci, and target RNAs across multiple
+  species. The database focuses on orthologous relationships between snoRNAs using
+  target RNA conservation rather than snoRNA sequence similarity.
 domains:
-  - genomics
-  - biological systems
+- genomics
+- biological systems
 homepage_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
-id: "snopy"
+id: snopy
 last_modified_date: '2025-10-27T00:00:00Z'
 layout: resource_detail
 name: snOPY
 products:
-  - category: GraphicalInterface
-    description: Web portal for browsing and searching snoRNA orthological gene information
-    format: http
-    id: "snopy.portal"
-    name: snOPY Portal
-    product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
-  - category: GraphicalInterface
-    description: Search interface for querying snoRNAs by species, box type, target RNA, organization, keywords, and curation status
-    format: http
-    id: "snopy.search"
-    name: Search Interface
-    product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
-  - category: GraphicalInterface
-    description: Ortholog browser for exploring snoRNA orthologous relationships across species
-    format: http
-    id: "snopy.orthologs"
-    name: Ortholog Browser
-    product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=orthologs
-  - category: GraphicalInterface
-    description: Target RNA viewer for exploring modification sites on rRNA and snRNA targets
-    format: http
-    id: "snopy.target-rna"
-    name: Target RNA Viewer
-    product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=target
-  - category: ProgrammingInterface
-    description: BLAST interface for sequence similarity searches against snoRNA sequences
-    format: http
-    id: "snopy.blast"
-    name: BLAST Interface
-    product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=blast
-  - category: Product
-    description: Curated snoRNA sequences for box C/D class guiding 2'-O-methylation
-    format: http
-    id: "snopy.box-cd-snornas"
-    name: Box C/D snoRNAs
-    product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
-  - category: Product
-    description: Curated snoRNA sequences for box H/ACA class guiding pseudouridylation
-    format: http
-    id: "snopy.box-haca-snornas"
-    name: Box H/ACA snoRNAs
-    product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
-  - category: Product
-    description: Information about intronic snoRNA gene loci within protein-coding host genes
-    format: http
-    id: "snopy.intronic-loci"
-    name: Intronic snoRNA Loci
-    product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
-  - category: Product
-    description: Information about polycistronic snoRNA gene clusters with multiple genes
-    format: http
-    id: "snopy.polycistronic-loci"
-    name: Polycistronic snoRNA Loci
-    product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
-  - category: Product
-    description: Information about monocistronic snoRNA gene loci with single genes
-    format: http
-    id: "snopy.monocistronic-loci"
-    name: Monocistronic snoRNA Loci
-    product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
-  - category: Product
-    description: Mapped modification sites on rRNA targets
-    format: http
-    id: "snopy.rrna-modifications"
-    name: rRNA Modification Sites
-    product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=target
-  - category: Product
-    description: Mapped modification sites on snRNA targets
-    format: http
-    id: "snopy.snrna-modifications"
-    name: snRNA Modification Sites
-    product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=target
-  - category: Product
-    description: Orthologous snoRNA relationships identified through target RNA conservation
-    format: http
-    id: "snopy.ortholog-data"
-    name: snoRNA Ortholog Data
-    product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=orthologs
-  - category: DocumentationProduct
-    description: About page with database description, methods, and citation information
-    format: http
-    id: "snopy.about"
-    name: About snOPY
-    product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=about
-  - category: DocumentationProduct
-    description: Database statistics showing organism coverage and entry counts
-    format: http
-    id: "snopy.statistics"
-    name: Statistics
-    product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=statistics
+- category: GraphicalInterface
+  description: Web portal for browsing and searching snoRNA orthological gene information
+  format: http
+  id: snopy.portal
+  name: snOPY Portal
+  product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
+- category: GraphicalInterface
+  description: Search interface for querying snoRNAs by species, box type, target
+    RNA, organization, keywords, and curation status
+  format: http
+  id: snopy.search
+  name: Search Interface
+  product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
+- category: GraphicalInterface
+  description: Ortholog browser for exploring snoRNA orthologous relationships across
+    species
+  format: http
+  id: snopy.orthologs
+  name: Ortholog Browser
+  product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=orthologs
+- category: GraphicalInterface
+  description: Target RNA viewer for exploring modification sites on rRNA and snRNA
+    targets
+  format: http
+  id: snopy.target-rna
+  name: Target RNA Viewer
+  product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=target
+- category: ProgrammingInterface
+  description: BLAST interface for sequence similarity searches against snoRNA sequences
+  format: http
+  id: snopy.blast
+  name: BLAST Interface
+  product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=blast
+- category: Product
+  description: Curated snoRNA sequences for box C/D class guiding 2'-O-methylation
+  format: http
+  id: snopy.box-cd-snornas
+  name: Box C/D snoRNAs
+  product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
+- category: Product
+  description: Curated snoRNA sequences for box H/ACA class guiding pseudouridylation
+  format: http
+  id: snopy.box-haca-snornas
+  name: Box H/ACA snoRNAs
+  product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
+- category: Product
+  description: Information about intronic snoRNA gene loci within protein-coding host
+    genes
+  format: http
+  id: snopy.intronic-loci
+  name: Intronic snoRNA Loci
+  product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
+- category: Product
+  description: Information about polycistronic snoRNA gene clusters with multiple
+    genes
+  format: http
+  id: snopy.polycistronic-loci
+  name: Polycistronic snoRNA Loci
+  product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
+- category: Product
+  description: Information about monocistronic snoRNA gene loci with single genes
+  format: http
+  id: snopy.monocistronic-loci
+  name: Monocistronic snoRNA Loci
+  product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi
+- category: Product
+  description: Mapped modification sites on rRNA targets
+  format: http
+  id: snopy.rrna-modifications
+  name: rRNA Modification Sites
+  product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=target
+- category: Product
+  description: Mapped modification sites on snRNA targets
+  format: http
+  id: snopy.snrna-modifications
+  name: snRNA Modification Sites
+  product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=target
+- category: Product
+  description: Orthologous snoRNA relationships identified through target RNA conservation
+  format: http
+  id: snopy.ortholog-data
+  name: snoRNA Ortholog Data
+  product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=orthologs
+- category: DocumentationProduct
+  description: About page with database description, methods, and citation information
+  format: http
+  id: snopy.about
+  name: About snOPY
+  product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=about
+- category: DocumentationProduct
+  description: Database statistics showing organism coverage and entry counts
+  format: http
+  id: snopy.statistics
+  name: Statistics
+  product_url: http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=statistics
+- category: GraphicalInterface
+  description: Web portal for searching and browsing ncRNA sequences, structures,
+    and annotations
+  format: http
+  id: rnacentral.portal
+  name: RNAcentral Portal
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to RNAcentral data
+  format: http
+  id: rnacentral.api
+  name: RNAcentral REST API
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/api
+- category: Product
+  description: FTP archive with current and archived release files (sequences and
+    annotations)
+  format: http
+  id: rnacentral.ftp
+  name: RNAcentral FTP Archive
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+- category: DataModelProduct
+  description: Public PostgreSQL database for direct SQL access to RNAcentral data
+  format: postgres
+  id: rnacentral.public-db
+  name: RNAcentral Public Postgres Database
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/help/public-database
 publications:
-  - authors:
-      - Yoshihama
-      - Nakao
-      - Kenmochi
-    id: "doi:10.1186/1756-0500-6-426"
-    doi: 10.1186/1756-0500-6-426
-    journal: BMC Research Notes
-    preferred: true
-    title: 'snOPY: a small nucleolar RNA orthological gene database'
-    year: "2013"
+- authors:
+  - Yoshihama
+  - Nakao
+  - Kenmochi
+  doi: 10.1186/1756-0500-6-426
+  id: doi:10.1186/1756-0500-6-426
+  journal: BMC Research Notes
+  preferred: true
+  title: 'snOPY: a small nucleolar RNA orthological gene database'
+  year: '2013'
 ---
-
 # snOPY
 
 snOPY (snoRNA Orthological Gene Database) is a specialized database dedicated to small nucleolar RNAs (snoRNAs) and their orthologous relationships across multiple species. Developed and maintained by the Kenmochi Laboratory at the University of Miyazaki, Japan, snOPY provides comprehensive information about snoRNA sequences, gene organization, and target modifications.

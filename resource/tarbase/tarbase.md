@@ -2,117 +2,350 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-09-09T00:00:00Z'
-description: TarBase v9.0 is a comprehensive database of experimentally supported miRNA targets on protein-coding transcripts. It contains interactions identified via high-throughput methods (HITS-CLIP, PAR-CLIP, CLASH) and low-throughput experimental validation, all uniformly analyzed and manually curated with rich metadata.
+description: TarBase v9.0 is a comprehensive database of experimentally supported
+  miRNA targets on protein-coding transcripts. It contains interactions identified
+  via high-throughput methods (HITS-CLIP, PAR-CLIP, CLASH) and low-throughput experimental
+  validation, all uniformly analyzed and manually curated with rich metadata.
 domains:
-  - genomics
-  - biological systems
+- genomics
+- biological systems
 homepage_url: https://dianalab.e-ce.uth.gr/tarbasev9
-id: "tarbase"
+id: tarbase
 last_modified_date: '2025-10-27T00:00:00Z'
 layout: resource_detail
 name: TarBase
 products:
-  - category: GraphicalInterface
-    description: Web portal for searching and browsing experimentally supported miRNA-gene interactions
-    format: http
-    id: "tarbase.portal"
-    name: TarBase Portal
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9
-  - category: GraphicalInterface
-    description: Interactive search interface for querying miRNA targets and gene miRNomes with advanced filtering options
-    format: http
-    id: "tarbase.interactions"
-    name: Interactions Search
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/interactions
-  - category: GraphicalInterface
-    description: Network visualization tool for assessing combinatorial effects of multiple miRNAs on common gene targets
-    format: http
-    id: "tarbase.visualizations"
-    name: Visualizations
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/visualizations
-  - category: GraphicalInterface
-    description: Statistics page showing database content and coverage metrics
-    format: http
-    id: "tarbase.statistics"
-    name: Statistics
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/statistics
-  - category: GraphicalInterface
-    description: Text-mining interface for literature-based interaction discovery
-    format: http
-    id: "tarbase.textmining"
-    name: Text-Mining Interface
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/textmining
-  - category: Product
-    compression: gzip
-    description: Experimentally validated miRNA-gene interactions for Homo sapiens in tab-delimited format
-    format: tsv
-    id: "tarbase.homo-sapiens"
-    name: Homo sapiens Interactions
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Homo_sapiens_TarBase-v9.tsv.gz
-  - category: Product
-    compression: gzip
-    description: Experimentally validated miRNA-gene interactions for Mus musculus in tab-delimited format
-    format: tsv
-    id: "tarbase.mus-musculus"
-    name: Mus musculus Interactions
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Mus_musculus_TarBase-v9.tsv.gz
-  - category: Product
-    compression: gzip
-    description: Experimentally validated viral miRNA-gene interactions in tab-delimited format
-    format: tsv
-    id: "tarbase.viral"
-    name: Viral Species Interactions
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Viral_species_TarBase-v9.tsv.gz
-  - category: Product
-    compression: gzip
-    description: Experimentally validated miRNA-gene interactions for other species in tab-delimited format
-    format: tsv
-    id: "tarbase.other-species"
-    name: Other Species Interactions
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Other_species_TarBase-v9.tsv.gz
-  - category: DocumentationProduct
-    description: Comprehensive help documentation with query examples and filtering options
-    format: http
-    id: "tarbase.help"
-    name: Help Documentation
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/help
-  - category: DocumentationProduct
-    description: Downloads page with file format specifications and field descriptions
-    format: http
-    id: "tarbase.downloads-doc"
-    name: Downloads Documentation
-    product_url: https://dianalab.e-ce.uth.gr/tarbasev9/downloads
+- category: GraphicalInterface
+  description: Web portal for searching and browsing experimentally supported miRNA-gene
+    interactions
+  format: http
+  id: tarbase.portal
+  name: TarBase Portal
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9
+- category: GraphicalInterface
+  description: Interactive search interface for querying miRNA targets and gene miRNomes
+    with advanced filtering options
+  format: http
+  id: tarbase.interactions
+  name: Interactions Search
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/interactions
+- category: GraphicalInterface
+  description: Network visualization tool for assessing combinatorial effects of multiple
+    miRNAs on common gene targets
+  format: http
+  id: tarbase.visualizations
+  name: Visualizations
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/visualizations
+- category: GraphicalInterface
+  description: Statistics page showing database content and coverage metrics
+  format: http
+  id: tarbase.statistics
+  name: Statistics
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/statistics
+- category: GraphicalInterface
+  description: Text-mining interface for literature-based interaction discovery
+  format: http
+  id: tarbase.textmining
+  name: Text-Mining Interface
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/textmining
+- category: Product
+  compression: gzip
+  description: Experimentally validated miRNA-gene interactions for Homo sapiens in
+    tab-delimited format
+  format: tsv
+  id: tarbase.homo-sapiens
+  name: Homo sapiens Interactions
+  product_file_size: 111135987
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Homo_sapiens_TarBase-v9.tsv.gz
+- category: Product
+  compression: gzip
+  description: Experimentally validated miRNA-gene interactions for Mus musculus in
+    tab-delimited format
+  format: tsv
+  id: tarbase.mus-musculus
+  name: Mus musculus Interactions
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Mus_musculus_TarBase-v9.tsv.gz
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-27: Timeout connecting
+    to URL'
+- category: Product
+  compression: gzip
+  description: Experimentally validated viral miRNA-gene interactions in tab-delimited
+    format
+  format: tsv
+  id: tarbase.viral
+  name: Viral Species Interactions
+  product_file_size: 884524
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Viral_species_TarBase-v9.tsv.gz
+- category: Product
+  compression: gzip
+  description: Experimentally validated miRNA-gene interactions for other species
+    in tab-delimited format
+  format: tsv
+  id: tarbase.other-species
+  name: Other Species Interactions
+  product_file_size: 164821
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Other_species_TarBase-v9.tsv.gz
+- category: DocumentationProduct
+  description: Comprehensive help documentation with query examples and filtering
+    options
+  format: http
+  id: tarbase.help
+  name: Help Documentation
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/help
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
+    when accessing file'
+- category: DocumentationProduct
+  description: Downloads page with file format specifications and field descriptions
+  format: http
+  id: tarbase.downloads-doc
+  name: Downloads Documentation
+  product_url: https://dianalab.e-ce.uth.gr/tarbasev9/downloads
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
+    when accessing file'
+- category: GraphicalInterface
+  description: Web portal for searching and browsing ncRNA sequences, structures,
+    and annotations
+  format: http
+  id: rnacentral.portal
+  name: RNAcentral Portal
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to RNAcentral data
+  format: http
+  id: rnacentral.api
+  name: RNAcentral REST API
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/api
+- category: Product
+  description: FTP archive with current and archived release files (sequences and
+    annotations)
+  format: http
+  id: rnacentral.ftp
+  name: RNAcentral FTP Archive
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+- category: DataModelProduct
+  description: Public PostgreSQL database for direct SQL access to RNAcentral data
+  format: postgres
+  id: rnacentral.public-db
+  name: RNAcentral Public Postgres Database
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/help/public-database
 publications:
-  - authors:
-      - Skoufos
-      - Kakoulidis
-      - Tastsoglou
-      - Zacharopoulou
-      - Kotsira
-      - Miliotis
-      - Mavromati
-      - Grigoriadis
-      - Zioga
-      - Velli
-      - Koutou
-      - Karagkouni
-      - Stavropoulos
-      - Kardaras
-      - Lifousi
-      - Vavalou
-      - Ovsepian
-      - Skoulakis
-      - Tasoulis
-      - Georgakopoulos
-      - Plagianakos
-      - Hatzigeorgiou
-    id: "https://doi.org/10.1093/nar/gkad1071"
-    journal: Nucleic Acids Research
-    preferred: true
-    title: TarBase-v9.0 extends experimentally supported miRNA–gene interactions to cell-types and virally encoded miRNAs
-    year: "2023"
+- authors:
+  - Skoufos
+  - Kakoulidis
+  - Tastsoglou
+  - Zacharopoulou
+  - Kotsira
+  - Miliotis
+  - Mavromati
+  - Grigoriadis
+  - Zioga
+  - Velli
+  - Koutou
+  - Karagkouni
+  - Stavropoulos
+  - Kardaras
+  - Lifousi
+  - Vavalou
+  - Ovsepian
+  - Skoulakis
+  - Tasoulis
+  - Georgakopoulos
+  - Plagianakos
+  - Hatzigeorgiou
+  id: https://doi.org/10.1093/nar/gkad1071
+  journal: Nucleic Acids Research
+  preferred: true
+  title: TarBase-v9.0 extends experimentally supported miRNA–gene interactions to
+    cell-types and virally encoded miRNAs
+  year: '2023'
 ---
-
 # TarBase
 
 TarBase v9.0 is the reference database of experimentally supported microRNA (miRNA) targets on protein-coding transcripts. Developed and maintained by the DIANA Lab at the University of Thessaly, TarBase provides researchers with a comprehensive, curated collection of validated miRNA-gene interactions.

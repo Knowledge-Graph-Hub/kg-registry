@@ -29,42 +29,42 @@ products:
   format: owl
   id: envo.owl
   name: main ENVO OWL release
-  product_file_size: 828147
+  product_file_size: 819909
   product_url: http://purl.obolibrary.org/obo/envo.owl
 - category: OntologyProduct
   description: ENVO in obographs JSON format
   format: json
   id: envo.json
   name: ENVO in obographs JSON format
-  product_file_size: 658775
+  product_file_size: 653600
   product_url: http://purl.obolibrary.org/obo/envo.json
 - category: OntologyProduct
   description: ENVO in OBO Format. May be lossy
   format: obo
   id: envo.obo
   name: ENVO in OBO Format. May be lossy
-  product_file_size: 603686
+  product_file_size: 595276
   product_url: http://purl.obolibrary.org/obo/envo.obo
 - category: OntologyProduct
   description: OBO-Basic edition of ENVO
   format: obo
   id: envo.subsets.envo-basic.obo
   name: OBO-Basic edition of ENVO
-  product_file_size: 422424
+  product_file_size: 422465
   product_url: http://purl.obolibrary.org/obo/envo/subsets/envo-basic.obo
 - category: OntologyProduct
   description: Earth Microbiome Project subset
   format: owl
   id: envo.subsets.envoEmpo.owl
   name: Earth Microbiome Project subset
-  product_file_size: 19004
+  product_file_size: 19016
   product_url: http://purl.obolibrary.org/obo/envo/subsets/envoEmpo.owl
 - category: OntologyProduct
   description: GSC Lite subset of ENVO
   format: obo
   id: envo.subsets.EnvO-Lite-GSC.obo
   name: GSC Lite subset of ENVO
-  product_file_size: 12904
+  product_file_size: 12912
   product_url: http://purl.obolibrary.org/obo/envo/subsets/EnvO-Lite-GSC.obo
 - category: DataModelProduct
   description: The Basic subset of the Plant Trait Ontology in OBO format
