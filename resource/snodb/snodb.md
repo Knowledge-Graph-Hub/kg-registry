@@ -1,7 +1,7 @@
 ---
 activity_status: active
 category: DataSource
-creation_date: '2023-01-01T00:00:00Z'
+creation_date: '2025-10-27T00:00:00Z'
 description: snoDB is a specialized database of human small nucleolar RNAs (snoRNAs), integrating data from established databases with manually curated literature. It provides comprehensive information on snoRNA genomic locations, sequences, conservation, host genes, snoRNA-RNA interactions, snoRNA-protein interactions, and abundance data across tissues and cancer cells.
 domains:
   - genomics
