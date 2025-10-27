@@ -6,6 +6,7 @@ description: Experimentally validated viral miRNA-gene interactions in tab-delim
 format: tsv
 id: tarbase.viral
 name: Viral Species Interactions
+product_file_size: 884524
 product_url: https://dianalab.e-ce.uth.gr/tarbasev9/data/Viral_species_TarBase-v9.tsv.gz
 layout: product_detail
 ---

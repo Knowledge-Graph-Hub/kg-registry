@@ -137,6 +137,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-10-27: No Content-Length
     header found'
 - category: Product
@@ -148,6 +150,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-10-27: No Content-Length
     header found'
 - category: Product
@@ -158,6 +162,8 @@ products:
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/ORDO_CUI_history.txt
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-10-27: No Content-Length
     header found'

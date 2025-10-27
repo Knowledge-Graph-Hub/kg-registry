@@ -11,7 +11,7 @@ product_url: https://omabrowser.org/oma/current/oma-prokaryotes.cdna.fa.gz
 secondary_source:
 - oma
 warnings:
-- File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
   accessing file

@@ -6,7 +6,7 @@ id: medgen.hpo-history
 name: HPO CUI History
 product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/HPO_CUI_history.txt
 warnings:
-- File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
+- File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
   header found

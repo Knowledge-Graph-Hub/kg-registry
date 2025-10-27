@@ -6,7 +6,7 @@ id: complexportal.yeast.psi25
 name: Complex Portal Yeast PSI-MI XML 2.5
 product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/saccharomyces_cerevisiae.xml
 warnings:
-- File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
   accessing file

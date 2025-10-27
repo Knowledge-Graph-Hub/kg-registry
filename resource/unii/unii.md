@@ -41,6 +41,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 403 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 403 error
     when accessing file'
 - category: Product
@@ -53,6 +55,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 403 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 403 error
     when accessing file'
 - category: Product
@@ -63,6 +67,8 @@ products:
   product_url: https://precision.fda.gov/uniisearch/archive/latest/Legacy_UNIIs.txt
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 403 error
     when accessing file'

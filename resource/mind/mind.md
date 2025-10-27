@@ -46,6 +46,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-10-27: No Content-Length
     header found'
 - category: GraphProduct
@@ -64,6 +66,8 @@ products:
   - mind
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-10-27: No Content-Length
     header found'
@@ -84,6 +88,8 @@ products:
   - mind
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-10-27: No Content-Length
     header found'

@@ -7,8 +7,8 @@ id: foodb.data.csv
 name: FooDB CSV Data
 product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz
 warnings:
-- File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
-  header found
+- File was not able to be retrieved when checked on 2025-10-27_ HTTP 502 error when
+  accessing file
 - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2025-09-10_ HTTP 502 error when

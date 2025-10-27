@@ -68,6 +68,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
     when accessing file'
 - category: Product
@@ -92,6 +94,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
     when accessing file'
 - category: Product
@@ -105,6 +109,8 @@ products:
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
     when accessing file'
@@ -120,6 +126,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
@@ -134,6 +142,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
@@ -147,6 +157,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
@@ -159,6 +171,8 @@ products:
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
+  - File was not able to be retrieved when checked on 2025-10-27_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
   - 'File was not able to be retrieved when checked on 2025-10-27: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'''
@@ -449,7 +463,7 @@ products:
   - gwascatalog
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 403 error when
     accessing file

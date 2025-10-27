@@ -59,6 +59,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-10-27: No Content-Length
     header found'
 - category: Product
@@ -81,6 +83,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-10-27: No Content-Length
     header found'
 - category: Product
@@ -101,6 +105,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-10-27: No Content-Length
     header found'
 - category: Product
@@ -113,6 +119,8 @@ products:
   product_url: https://zenodo.org/record/14640564/files/refuted-verbatim-interactions.csv.gz
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-10-27: No Content-Length
     header found'
@@ -150,6 +158,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-10-27: No Content-Length
     header found'
 - category: Product
@@ -186,6 +196,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
     header found
+  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
+    header found
   - 'File was not able to be retrieved when checked on 2025-10-27: No Content-Length
     header found'
 - category: Product
@@ -204,6 +216,8 @@ products:
   product_url: https://api.globalbioticinteractions.org/interactionFields?type=json
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-10-27: No Content-Length
     header found'

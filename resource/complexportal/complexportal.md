@@ -64,6 +64,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
     when accessing file'
 - category: Product
@@ -74,6 +76,8 @@ products:
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi30/homo_sapiens.xml
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
     when accessing file'
@@ -86,6 +90,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
     when accessing file'
 - category: Product
@@ -96,6 +102,8 @@ products:
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/mus_musculus.xml
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
     when accessing file'
@@ -108,6 +116,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
     when accessing file'
 - category: Product
@@ -119,6 +129,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
     when accessing file'
 - category: Product
@@ -129,6 +141,8 @@ products:
   product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/saccharomyces_cerevisiae.tsv
   warnings:
   - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
     when accessing file'
