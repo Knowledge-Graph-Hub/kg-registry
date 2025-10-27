@@ -30,14 +30,14 @@ products:
   format: owl
   id: obi.owl
   name: OBI
-  product_file_size: 724538
+  product_file_size: 724629
   product_url: http://purl.obolibrary.org/obo/obi.owl
 - category: OntologyProduct
   description: The OBO-format version of OBI
   format: obo
   id: obi.obo
   name: OBI in OBO
-  product_file_size: 299710
+  product_file_size: 299928
   product_url: http://purl.obolibrary.org/obo/obi.obo
 - category: OntologyProduct
   description: A collection of important high-level terms and their relations from
@@ -45,7 +45,7 @@ products:
   format: owl
   id: obi.obi_core.owl
   name: OBI Core
-  product_file_size: 47011
+  product_file_size: 46930
   product_url: http://purl.obolibrary.org/obo/obi/obi_core.owl
 - category: OntologyProduct
   description: Base module for OBI
