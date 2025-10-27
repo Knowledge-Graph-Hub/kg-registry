@@ -1,7 +1,7 @@
 ---
 activity_status: active
 category: Resource
-creation_date: '2014-01-01T00:00:00Z'
+creation_date: '2025-10-27T00:00:00Z'
 description: RiboVision is a comprehensive webserver suite for visualization and analysis of ribosomal RNA structures, designed to integrate phylogenetic, structural, and evolutionary information about ribosomes in multiple dimensions. It provides interactive tools for exploring ribosomal RNA sequences, secondary structures, 3D structures, and associated data.
 domains:
   - genomics
@@ -163,11 +163,12 @@ publications:
       - Grover
       - Wartell
       - Williams
-    id: "https://pubmed.ncbi.nlm.nih.gov/25340471/"
+    id: "doi:10.1039/c3fd00126a"
     journal: Faraday Discussions
     preferred: true
     title: RiboVision suite for visualization and analysis of ribosomes
     year: "2014"
+    doi: 10.1039/c3fd00126a
   - authors:
       - Petrov
       - Bernier
@@ -180,10 +181,11 @@ publications:
       - Fox
       - Wartell
       - Williams
-    id: "https://pubmed.ncbi.nlm.nih.gov/24505437/"
+    id: "doi:10.1371/journal.pone.0088222"
     journal: PLoS One
     title: Secondary structures of rRNAs from all three domains of life
     year: "2014"
+    doi: 10.1371/journal.pone.0088222
 ---
 
 # RiboVision
