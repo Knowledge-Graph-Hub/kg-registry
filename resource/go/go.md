@@ -93,7 +93,7 @@ products:
   name: GO Taxon Groupings
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-28: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -1479,9 +1479,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-28: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: The latest release of EFO in OWL format

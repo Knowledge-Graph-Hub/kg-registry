@@ -31,7 +31,7 @@ products:
   name: fix.obo
   product_url: http://purl.obolibrary.org/obo/fix.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-27: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-10-28: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
 ---
 ## Description

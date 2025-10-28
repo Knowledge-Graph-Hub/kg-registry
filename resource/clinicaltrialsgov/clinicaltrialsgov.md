@@ -162,13 +162,13 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-15_ HTTP 500 error when
+  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-28: HTTP 404 error
     when accessing file'
 - category: Product
   description: Clinical trial information from ClinicalTrials.gov
@@ -181,9 +181,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-27: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-28: HTTP 403 error
     when accessing file'
 publications:
 - authors:

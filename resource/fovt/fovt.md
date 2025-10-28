@@ -32,8 +32,10 @@ products:
   format: owl
   id: fovt.owl
   name: fovt.owl
-  product_file_size: 2417022
   product_url: http://purl.obolibrary.org/obo/fovt.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-28: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: FuTRES Ontology of Vertebrate Traits in OBO format
   format: obo

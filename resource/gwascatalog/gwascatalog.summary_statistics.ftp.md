@@ -10,7 +10,7 @@ product_url: ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/
 warnings:
 - File was not able to be retrieved when checked on 2025-10-27_ Error connecting to
   URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
-- File was not able to be retrieved when checked on 2025-10-21_ Error connecting to
+- File was not able to be retrieved when checked on 2025-10-27_ Error connecting to
   URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
 layout: product_detail
 ---
