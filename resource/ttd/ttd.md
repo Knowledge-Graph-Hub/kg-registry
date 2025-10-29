@@ -14,7 +14,7 @@ last_modified_date: '2025-10-29T00:00:00Z'
 layout: resource_detail
 name: Therapeutic Target Database
 homepage_url: https://idrblab.org/ttd/
-curators:
+contacts:
   - category: Individual
     label: Feng Zhu
     contact_details:
