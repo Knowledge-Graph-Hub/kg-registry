@@ -57,11 +57,11 @@ products:
   - pubmed
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-28: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 403 error
     when accessing file'
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information

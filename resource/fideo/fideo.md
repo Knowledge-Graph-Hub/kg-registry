@@ -31,7 +31,7 @@ products:
   name: fideo.owl
   product_url: http://purl.obolibrary.org/obo/fideo.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-28: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-10-29: No Content-Length
     header found'
 repository: https://gitub.u-bordeaux.fr/erias/fideo
 ---

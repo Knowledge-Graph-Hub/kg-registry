@@ -814,6 +814,12 @@ enums:
           format, which a format for mapping between different ontologies and other
           identifier systems.
         meaning: https://mapping-commons.github.io/sssom/
+      stockholm:
+        text: stockholm
+        description: The Stockholm format, a multiple sequence alignment format used
+          in bioinformatics. It is commonly used for representing alignments of protein
+          or nucleotide sequences.
+        meaning: edam:1961
       svg:
         text: svg
         description: The Scalable Vector Graphics (SVG) format, an XML-based format

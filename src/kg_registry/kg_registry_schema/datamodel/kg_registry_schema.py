@@ -277,6 +277,10 @@ class FormatEnum(str, Enum):
     """
     The Simple Standard for Sharing Ontological Mappings (SSSOM) format, which a format for mapping between different ontologies and other identifier systems.
     """
+    stockholm = "stockholm"
+    """
+    The Stockholm format, a multiple sequence alignment format used in bioinformatics. It is commonly used for representing alignments of protein or nucleotide sequences.
+    """
     svg = "svg"
     """
     The Scalable Vector Graphics (SVG) format, an XML-based format for describing two-dimensional vector graphics.

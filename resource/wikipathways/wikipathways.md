@@ -418,12 +418,22 @@ products:
   - wikipathways
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-28: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 403 error
     when accessing file'
+- category: Product
+  description: WikiPathways data for all targets
+  format: txt
+  id: ttd.wiki-pathways
+  name: Target WikiPathways
+  original_source:
+  - wikipathways
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-06-Target_wikipathway.txt
+  secondary_source:
+  - ttd
 publications:
 - authors:
   - Agrawal A

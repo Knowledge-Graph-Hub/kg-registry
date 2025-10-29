@@ -195,7 +195,6 @@ hsapdv,active,PASS
 hso,active,PASS
 htn,active,PASS
 hubmap,active,PASS
-humangoa,active,PASS
 humannet,active,PASS
 huri,active,PASS
 iao,active,PASS
@@ -499,6 +498,7 @@ fix,orphaned,PASS
 flu,inactive,PASS
 fma,inactive,PASS
 gaz,inactive,PASS
+goa,inactive,PASS
 gro,inactive,PASS
 habronattus,inactive,PASS
 idomal,inactive,PASS
