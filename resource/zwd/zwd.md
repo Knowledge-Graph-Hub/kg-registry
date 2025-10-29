@@ -16,25 +16,14 @@ homepage_url: https://bitbucket.org/zashaw/zashaweinbergdata/src/master/
 id: zwd
 last_modified_date: '2025-10-29T00:00:00Z'
 layout: resource_detail
-license:
-  id: https://bitbucket.org/zashaw/zashaweinbergdata/src/master/
-  label: See repository for license details
 name: Zasha Weinberg Data
 products:
-  - category: GraphicalInterface
-    description: Bitbucket repository hosting RNA data files and annotations
-    format: http
-    id: zwd.repository
-    name: Zasha Weinberg Data Repository
-    product_url: https://bitbucket.org/zashaw/zashaweinbergdata/src/master/
   - category: Product
-    description: Data contribution to RNAcentral, accessible through RNAcentral portal
+    description: Multiple sequence alignments for RNA and ssDNA sequences
     format: http
-    id: zwd.rnacentral-contribution
-    name: ZWD Data in RNAcentral
-    original_source:
-      - rnacentral
-    product_url: https://rnacentral.org/
+    id: zwd.alignments
+    name: Zasha Weinberg Data Repository Sequence Alignments
+    product_url: https://bitbucket.org/zashaw/zashaweinbergdata/src/master/
 ---
 
 # Zasha Weinberg Data
