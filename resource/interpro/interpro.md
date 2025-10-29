@@ -242,8 +242,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -311,6 +311,21 @@ products:
   product_url: https://w3id.org/biopragmatics/resources/interpro/interpro.json
   secondary_source:
   - obo-db-ingest
+- category: MappingProduct
+  description: Files containing transitive assignments of InterPro matches, UniProtKB
+    keywords, subcellular locations, EC numbers, or HAMAP matches to manually-selected
+    GO terms
+  format: txt
+  id: goa.mapping-files
+  name: GO Mapping Files
+  original_source:
+  - interpro
+  - uniprot
+  - go
+  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'''
 publications:
 - authors:
   - Blum M
@@ -331,7 +346,7 @@ publications:
   - Gough J
   - Haft DH
   - Letunic I
-  - "Llinares-L\xF3pez F"
+  - Llinares-López F
   - Marchler-Bauer A
   - Meng-Papaxanthos L
   - Mi H

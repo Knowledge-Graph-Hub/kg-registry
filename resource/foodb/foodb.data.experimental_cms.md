@@ -6,11 +6,11 @@ id: foodb.data.experimental_cms
 name: FooDB Experimental C-MS Spectra
 product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip
 warnings:
+- File was not able to be retrieved when checked on 2025-10-28_ Timeout connecting
+  to URL
 - File was not able to be retrieved when checked on 2025-10-27_ HTTP 502 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
-  header found
-- File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2025-10-06_ Timeout connecting
   to URL

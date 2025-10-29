@@ -1033,11 +1033,11 @@ products:
   - disgenet
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-28: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 403 error
     when accessing file'
 - category: Product
   description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant
@@ -1051,11 +1051,11 @@ products:
   - gwascatalog
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-28: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 403 error
     when accessing file'
 publications:
 - authors:

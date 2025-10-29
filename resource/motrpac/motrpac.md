@@ -1,111 +1,259 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://motrpac-data.org/contact
+  label: MoTrPAC BioInformatics Center
 creation_date: '2025-10-29T00:00:00Z'
 curators:
-  - category: Organization
-    label: MoTrPAC BioInformatics Center at Stanford University
-contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: "https://motrpac-data.org/contact"
-    label: MoTrPAC BioInformatics Center
-description: The Molecular Transducers of Physical Activity Consortium (MoTrPAC) Data Hub is a national research initiative that generates a comprehensive molecular map of the effects of exercise and physical activity training. The data repository provides multi-omics datasets documenting molecular changes from exercise across multiple tissues, including transcriptomics, proteomics, metabolomics, and epigenomics data. The complete young adult rat endurance training dataset is publicly available, featuring quantitative results and analyses from 20 tissues across 29 assays and 5 time points, studying male and female animals. The data hub provides both browsable study data and pre-bundled datasets organized by tissue type and omics platform, all released under CC BY 4.0 license. The resource includes phenotypic data, sample-level metadata, quality control metrics, and quantitative results to enable comprehensive analysis of the temporal dynamics of multi-omic responses to endurance exercise training.
+- category: Organization
+  label: MoTrPAC BioInformatics Center at Stanford University
+description: The Molecular Transducers of Physical Activity Consortium (MoTrPAC) Data
+  Hub is a national research initiative that generates a comprehensive molecular map
+  of the effects of exercise and physical activity training. The data repository provides
+  multi-omics datasets documenting molecular changes from exercise across multiple
+  tissues, including transcriptomics, proteomics, metabolomics, and epigenomics data.
+  The complete young adult rat endurance training dataset is publicly available, featuring
+  quantitative results and analyses from 20 tissues across 29 assays and 5 time points,
+  studying male and female animals. The data hub provides both browsable study data
+  and pre-bundled datasets organized by tissue type and omics platform, all released
+  under CC BY 4.0 license. The resource includes phenotypic data, sample-level metadata,
+  quality control metrics, and quantitative results to enable comprehensive analysis
+  of the temporal dynamics of multi-omic responses to endurance exercise training.
 domains:
-  - biological systems
-  - health
-  - proteomics
-  - genomics
-  - systems biology
+- biological systems
+- health
+- proteomics
+- genomics
+- systems biology
 homepage_url: https://motrpac-data.org/
 id: motrpac
 last_modified_date: '2025-10-29T00:00:00Z'
 layout: resource_detail
 license:
-  id: "https://creativecommons.org/licenses/by/4.0/"
+  id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 name: Molecular Transducers of Physical Activity Consortium (MoTrPAC) Data Hub
-publications:
-  - authors:
-      - MoTrPAC Study Group
-    category: Publication
-    id: "https://doi.org/10.1016/j.cell.2020.06.004"
-    journal: Cell
-    preferred: true
-    title: 'Molecular Transducers of Physical Activity Consortium (MoTrPAC): Mapping the Dynamic Responses to Exercise'
-    year: "2020"
-  - authors:
-      - MoTrPAC Study Group
-    category: Publication
-    id: "https://doi.org/10.1038/s41586-023-06877-w"
-    journal: Nature
-    preferred: false
-    title: Temporal dynamics of the multi-omic response to endurance exercise training
-    year: "2024"
 products:
-  - category: GraphicalInterface
-    description: Interactive data browser for exploring and downloading MoTrPAC multi-omics datasets by tissue, ome, or assay type
-    format: http
-    id: "motrpac.data-browser"
-    name: MoTrPAC Data Browser
-    product_url: https://motrpac-data.org/data-download
-  - category: Product
-    description: Phenotypic data from young adult rats (6-month old) that performed endurance exercise training
-    format: csv
-    id: "motrpac.phenotype"
-    name: Rat Young Adult Endurance Training - Phenotype Data
-    product_url: https://motrpac-data.org/data-download
-  - category: Product
-    description: Epigenomics data including ATAC-seq and RRBS analyses, sample-level metadata, QC, and quantitative results across tissues
-    format: csv
-    id: "motrpac.epigenomics"
-    name: Rat Young Adult Endurance Training - Epigenomics Data
-    product_url: https://motrpac-data.org/data-download
-  - category: Product
-    description: RNA-seq analyses, sample-level metadata, QC, and quantitative results across tissues
-    format: csv
-    id: "motrpac.transcriptomics"
-    name: Rat Young Adult Endurance Training - Transcriptomics Data
-    product_url: https://motrpac-data.org/data-download
-  - category: Product
-    description: Untargeted proteomics data including Acetyl Proteomics, Global Proteomics, Phosphoproteomics, and Protein Ubiquitination analyses across tissues
-    format: csv
-    id: "motrpac.proteomics-untargeted"
-    name: Rat Young Adult Endurance Training - Proteomics (Untargeted)
-    product_url: https://motrpac-data.org/data-download
-  - category: Product
-    description: Untargeted metabolomics analyses, sample-level metadata, QC, and quantitative results across tissues
-    format: csv
-    id: "motrpac.metabolomics-untargeted"
-    name: Rat Young Adult Endurance Training - Metabolomics (Untargeted)
-    product_url: https://motrpac-data.org/data-download
-  - category: Product
-    description: Targeted metabolomics analyses, sample-level metadata, QC, and quantitative results across tissues
-    format: csv
-    id: "motrpac.metabolomics-targeted"
-    name: Rat Young Adult Endurance Training - Metabolomics (Targeted)
-    product_url: https://motrpac-data.org/data-download
-  - category: Product
-    description: Targeted proteomics immunoassay data with analyses, sample-level metadata, QC, and quantitative results across tissues
-    format: csv
-    id: "motrpac.proteomics-targeted"
-    name: Rat Young Adult Endurance Training - Proteomics (Targeted/Immunoassay)
-    product_url: https://motrpac-data.org/data-download
-  - category: DocumentationProduct
-    description: Video tutorials demonstrating how to use the MoTrPAC Data Hub and access datasets
-    format: http
-    id: "motrpac.video-tutorials"
-    name: MoTrPAC Data Hub Video Tutorials
-    product_url: https://motrpac-data.org/
-  - category: GraphicalInterface
-    description: Main portal for the MoTrPAC Data Hub providing access to data downloads, documentation, and visualization tools
-    format: http
-    id: "motrpac.data-hub"
-    name: MoTrPAC Data Hub Portal
-    product_url: https://motrpac-data.org/
+- category: GraphicalInterface
+  description: Interactive data browser for exploring and downloading MoTrPAC multi-omics
+    datasets by tissue, ome, or assay type
+  format: http
+  id: motrpac.data-browser
+  name: MoTrPAC Data Browser
+  product_url: https://motrpac-data.org/data-download
+- category: Product
+  description: Phenotypic data from young adult rats (6-month old) that performed
+    endurance exercise training
+  format: csv
+  id: motrpac.phenotype
+  name: Rat Young Adult Endurance Training - Phenotype Data
+  product_url: https://motrpac-data.org/data-download
+- category: Product
+  description: Epigenomics data including ATAC-seq and RRBS analyses, sample-level
+    metadata, QC, and quantitative results across tissues
+  format: csv
+  id: motrpac.epigenomics
+  name: Rat Young Adult Endurance Training - Epigenomics Data
+  product_url: https://motrpac-data.org/data-download
+- category: Product
+  description: RNA-seq analyses, sample-level metadata, QC, and quantitative results
+    across tissues
+  format: csv
+  id: motrpac.transcriptomics
+  name: Rat Young Adult Endurance Training - Transcriptomics Data
+  product_url: https://motrpac-data.org/data-download
+- category: Product
+  description: Untargeted proteomics data including Acetyl Proteomics, Global Proteomics,
+    Phosphoproteomics, and Protein Ubiquitination analyses across tissues
+  format: csv
+  id: motrpac.proteomics-untargeted
+  name: Rat Young Adult Endurance Training - Proteomics (Untargeted)
+  product_url: https://motrpac-data.org/data-download
+- category: Product
+  description: Untargeted metabolomics analyses, sample-level metadata, QC, and quantitative
+    results across tissues
+  format: csv
+  id: motrpac.metabolomics-untargeted
+  name: Rat Young Adult Endurance Training - Metabolomics (Untargeted)
+  product_url: https://motrpac-data.org/data-download
+- category: Product
+  description: Targeted metabolomics analyses, sample-level metadata, QC, and quantitative
+    results across tissues
+  format: csv
+  id: motrpac.metabolomics-targeted
+  name: Rat Young Adult Endurance Training - Metabolomics (Targeted)
+  product_url: https://motrpac-data.org/data-download
+- category: Product
+  description: Targeted proteomics immunoassay data with analyses, sample-level metadata,
+    QC, and quantitative results across tissues
+  format: csv
+  id: motrpac.proteomics-targeted
+  name: Rat Young Adult Endurance Training - Proteomics (Targeted/Immunoassay)
+  product_url: https://motrpac-data.org/data-download
+- category: DocumentationProduct
+  description: Video tutorials demonstrating how to use the MoTrPAC Data Hub and access
+    datasets
+  format: http
+  id: motrpac.video-tutorials
+  name: MoTrPAC Data Hub Video Tutorials
+  product_url: https://motrpac-data.org/
+- category: GraphicalInterface
+  description: Main portal for the MoTrPAC Data Hub providing access to data downloads,
+    documentation, and visualization tools
+  format: http
+  id: motrpac.data-hub
+  name: MoTrPAC Data Hub Portal
+  product_url: https://motrpac-data.org/
+- category: GraphProduct
+  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
+    instances as neo4j graph databases, running in a Docker container. Requires UMLS
+    API key to access.
+  dump_format: neo4j
+  id: ubkg.neo4j
+  name: UBKG Neo4j Docker Distribution
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - doid
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - connectivitymap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - sckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+- category: GraphProduct
+  description: Ontology CSV files that can be imported into a neo4j instance to create
+    a UBKG database. Requires UMLS API key to access.
+  format: csv
+  id: ubkg.csv
+  name: UBKG Ontology CSV Files
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - doid
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - connectivitymap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - sckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+publications:
+- authors:
+  - MoTrPAC Study Group
+  category: Publication
+  id: https://doi.org/10.1016/j.cell.2020.06.004
+  journal: Cell
+  preferred: true
+  title: 'Molecular Transducers of Physical Activity Consortium (MoTrPAC): Mapping
+    the Dynamic Responses to Exercise'
+  year: '2020'
+- authors:
+  - MoTrPAC Study Group
+  category: Publication
+  id: https://doi.org/10.1038/s41586-023-06877-w
+  journal: Nature
+  preferred: false
+  title: Temporal dynamics of the multi-omic response to endurance exercise training
+  year: '2024'
 ---
-
 # Molecular Transducers of Physical Activity Consortium (MoTrPAC) Data Hub
 
 ## Overview

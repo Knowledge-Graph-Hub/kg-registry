@@ -1,199 +1,297 @@
 ---
 activity_status: active
 category: Aggregator
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: zhangyintao@zju.edu.cn
+  label: Feng Zhu
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://idrblab.org/ttd/
+  label: College of Pharmaceutical Sciences, Zhejiang University
+- category: Individual
+  contact_details:
+  - contact_type: url
+    value: https://bidd.group/index.html#people
+  label: Yuzong Chen
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://bidd.group/index.html#people
+  label: Department of Pharmacy, National University of Singapore
 creation_date: '2025-10-29T00:00:00Z'
-description: 'The Therapeutic Target Database (TTD) is a comprehensive aggregator providing information about known and explored therapeutic protein and nucleic acid targets, targeted diseases, pathway information, and corresponding drugs directed at these targets. TTD 2024 includes extensive druggability information across three perspectives: molecular interactions/regulations, human system profiles, and cell-based expression variations. The database encompasses 3,730 targets (including 532 successful, 1,442 clinical trial, 239 preclinical/patented, and 1,517 literature-reported targets) and 39,862 drugs, with druggability characteristics covering ligand-specific binding pockets, protein-protein interaction networks, microbiota-drug regulations, target similarity profiles, pathway involvements, tissue distributions, and cell-based expression variations across different diseases and perturbations.'
+description: 'The Therapeutic Target Database (TTD) is a comprehensive aggregator
+  providing information about known and explored therapeutic protein and nucleic acid
+  targets, targeted diseases, pathway information, and corresponding drugs directed
+  at these targets. TTD 2024 includes extensive druggability information across three
+  perspectives: molecular interactions/regulations, human system profiles, and cell-based
+  expression variations. The database encompasses 3,730 targets (including 532 successful,
+  1,442 clinical trial, 239 preclinical/patented, and 1,517 literature-reported targets)
+  and 39,862 drugs, with druggability characteristics covering ligand-specific binding
+  pockets, protein-protein interaction networks, microbiota-drug regulations, target
+  similarity profiles, pathway involvements, tissue distributions, and cell-based
+  expression variations across different diseases and perturbations.'
 domains:
-  - biomedical
-  - drug discovery
-  - genomics
-  - proteomics
-  - pharmacology
-id: "ttd"
+- biomedical
+- drug discovery
+- genomics
+- proteomics
+- pharmacology
+homepage_url: https://idrblab.org/ttd/
+id: ttd
 last_modified_date: '2025-10-29T00:00:00Z'
 layout: resource_detail
-name: Therapeutic Target Database
-homepage_url: https://idrblab.org/ttd/
-contacts:
-  - category: Individual
-    label: Feng Zhu
-    contact_details:
-      - contact_type: email
-        value: "zhangyintao@zju.edu.cn"
-  - category: Organization
-    label: College of Pharmaceutical Sciences, Zhejiang University
-    contact_details:
-      - contact_type: url
-        value: "https://idrblab.org/ttd/"
-  - category: Individual
-    label: Yuzong Chen
-    contact_details:
-      - contact_type: url
-        value: "https://bidd.group/index.html#people"
-  - category: Organization
-    label: Department of Pharmacy, National University of Singapore
-    contact_details:
-      - contact_type: url
-        value: "https://bidd.group/index.html#people"
 license:
-  id: "https://idrblab.org/ttd/"
+  id: https://idrblab.org/ttd/
   label: Freely accessible for research and educational purposes
-publications:
-  - category: Publication
-    id: "doi:10.1093/nar/gkad751"
-    preferred: true
-    title: 'TTD: Therapeutic Target Database describing target druggability information'
-    authors:
-      - Ying Zhou
-      - Yintao Zhang
-      - Donghai Zhao
-      - Xinyuan Yu
-      - Xinyi Shen
-      - Yuan Zhou
-      - Shanshan Wang
-      - Yunqing Qiu
-      - Yuzong Chen
-      - Feng Zhu
-    year: "2024"
-    journal: Nucleic Acids Research
-  - category: Publication
-    id: "doi:10.1093/nar/gkab953"
-    preferred: false
-    title: 'Therapeutic target database update 2022: facilitating drug discovery with enriched comparative data of targeted agents'
-    authors:
-      - Yuan Zhou
-      - Ying Zhang
-      - Xueya Lian
-      - Fengcheng Li
-      - Chaoxin Wang
-      - Feng Zhu
-      - Yunqing Qiu
-      - Yuzong Chen
-    year: "2022"
-    journal: Nucleic Acids Research
+name: Therapeutic Target Database
 products:
-  - category: GraphicalInterface
-    description: Main web portal for browsing and searching TTD targets, drugs, biomarkers, and pathways
-    id: "ttd.portal"
-    name: TTD Web Portal
-    product_url: https://idrblab.org/ttd/
-    format: http
-  - category: Product
-    description: Raw format target information including all TTD target data
-    id: "ttd.targets-raw"
-    name: TTD Targets Information
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-01-TTD_target_download.txt
-    format: txt
-  - category: Product
-    description: Raw format drug information including all TTD drug data
-    id: "ttd.drugs-raw"
-    name: TTD Drug Information
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-02-TTD_drug_download.txt
-    format: txt
-  - category: Product
-    description: Cross-matching identifiers between TTD drugs and public databases
-    id: "ttd.crossmatch"
-    name: Cross-matching Drug IDs
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-03-Drug_xrefs.txt
-    format: txt
-  - category: Product
-    description: Synonyms of drugs and small molecules in TTD
-    id: "ttd.synonyms"
-    name: Drug Synonyms
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-04-Drug_synonyms.txt
-    format: txt
-  - category: Product
-    description: Drug to disease mapping with ICD identifiers
-    id: "ttd.drug-disease"
-    name: Drug-Disease Mapping
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-05-Drug_disease.txt
-    format: txt
-  - category: Product
-    description: Target to disease mapping with ICD identifiers
-    id: "ttd.target-disease"
-    name: Target-Disease Mapping
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-06-Target_disease.txt
-    format: txt
-  - category: Product
-    description: Target to drug mapping with mode of action information
-    id: "ttd.target-drug"
-    name: Target-Drug Mapping
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-07-Drug-TargetMapping.xlsx
-    format: csv
-  - category: Product
-    description: Biomarker to disease mapping with ICD identifiers
-    id: "ttd.biomarker-disease"
-    name: Biomarker-Disease Mapping
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-08-Biomarker_disease.txt
-    format: txt
-  - category: Product
-    description: Target to compound mapping with experimental activity data
-    id: "ttd.target-compound"
-    name: Target-Compound Activity Data
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-09-Target_compound_activity.txt
-    format: txt
-  - category: Product
-    description: UniProt IDs for all targets in TTD
-    id: "ttd.uniprot-all"
-    name: All Target UniProt IDs
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P2-01-TTD_uniprot_all.txt
-    format: txt
-    original_source:
-    - uniprot
-    secondary_source:
-    - ttd
-  - category: Product
-    description: Sequence data for all targets in FASTA format
-    id: "ttd.sequences-all"
-    name: All Target Sequences
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P2-06-All_target_seq.txt
-    format: fasta
-  - category: Product
-    description: Structure data for all drugs in SDF format
-    id: "ttd.structures-all"
-    name: All Drug Structures
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P3-01-Drug_structure.sdf
-    format: sdf
-  - category: Product
-    description: SMILES and InChI representations for approved drugs
-    id: "ttd.smiles-inchi"
-    name: Drug SMILES and InChI
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P3-06-Drug_SMILE_InChI.txt
-    format: txt
-  - category: Product
-    description: KEGG pathway data for all targets
-    id: "ttd.kegg-pathways"
-    name: Target KEGG Pathways
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-01-Target_KEGG_pathway.txt
-    format: txt
-    original_source:
-    - kegg
-    secondary_source:
-    - ttd
-  - category: Product
-    description: WikiPathways data for all targets
-    id: "ttd.wiki-pathways"
-    name: Target WikiPathways
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-06-Target_wikipathway.txt
-    format: txt
-    original_source:
-    - wikipathways
-    secondary_source:
-    - ttd
-  - category: Product
-    description: Drug combination data including synergistic, additive, and antagonistic interactions
-    id: "ttd.drug-combinations"
-    name: Drug Combinations
-    product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P5-01-Drug_combination_synergism_anti-counteractive.txt
-    format: txt
-  - category: DocumentationProduct
-    description: Help documentation and user guide for TTD
-    id: "ttd.help"
-    name: TTD Help Documentation
-    product_url: https://idrblab.org/ttd/help
-    format: http
+- category: GraphicalInterface
+  description: Main web portal for browsing and searching TTD targets, drugs, biomarkers,
+    and pathways
+  format: http
+  id: ttd.portal
+  name: TTD Web Portal
+  product_url: https://idrblab.org/ttd/
+- category: Product
+  description: Raw format target information including all TTD target data
+  format: txt
+  id: ttd.targets-raw
+  name: TTD Targets Information
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-01-TTD_target_download.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
+    by peer''))'
+- category: Product
+  description: Raw format drug information including all TTD drug data
+  format: txt
+  id: ttd.drugs-raw
+  name: TTD Drug Information
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-02-TTD_drug_download.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
+    by peer''))'
+- category: Product
+  description: Cross-matching identifiers between TTD drugs and public databases
+  format: txt
+  id: ttd.crossmatch
+  name: Cross-matching Drug IDs
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-03-Drug_xrefs.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
+    by peer''))'
+- category: Product
+  description: Synonyms of drugs and small molecules in TTD
+  format: txt
+  id: ttd.synonyms
+  name: Drug Synonyms
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-04-Drug_synonyms.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
+    by peer''))'
+- category: Product
+  description: Drug to disease mapping with ICD identifiers
+  format: txt
+  id: ttd.drug-disease
+  name: Drug-Disease Mapping
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-05-Drug_disease.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
+    by peer''))'
+- category: Product
+  description: Target to disease mapping with ICD identifiers
+  format: txt
+  id: ttd.target-disease
+  name: Target-Disease Mapping
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-06-Target_disease.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
+    by peer''))'
+- category: Product
+  description: Target to drug mapping with mode of action information
+  format: csv
+  id: ttd.target-drug
+  name: Target-Drug Mapping
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-07-Drug-TargetMapping.xlsx
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
+    by peer''))'
+- category: Product
+  description: Biomarker to disease mapping with ICD identifiers
+  format: txt
+  id: ttd.biomarker-disease
+  name: Biomarker-Disease Mapping
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-08-Biomarker_disease.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
+    by peer''))'
+- category: Product
+  description: Target to compound mapping with experimental activity data
+  format: txt
+  id: ttd.target-compound
+  name: Target-Compound Activity Data
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-09-Target_compound_activity.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
+    by peer''))'
+- category: Product
+  description: UniProt IDs for all targets in TTD
+  format: txt
+  id: ttd.uniprot-all
+  name: All Target UniProt IDs
+  original_source:
+  - uniprot
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P2-01-TTD_uniprot_all.txt
+  secondary_source:
+  - ttd
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
+    by peer''))'
+- category: Product
+  description: Sequence data for all targets in FASTA format
+  format: fasta
+  id: ttd.sequences-all
+  name: All Target Sequences
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P2-06-All_target_seq.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
+    by peer''))'
+- category: Product
+  description: Structure data for all drugs in SDF format
+  format: sdf
+  id: ttd.structures-all
+  name: All Drug Structures
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P3-01-Drug_structure.sdf
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
+    by peer''))'
+- category: Product
+  description: SMILES and InChI representations for approved drugs
+  format: txt
+  id: ttd.smiles-inchi
+  name: Drug SMILES and InChI
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P3-06-Drug_SMILE_InChI.txt
+- category: Product
+  description: KEGG pathway data for all targets
+  format: txt
+  id: ttd.kegg-pathways
+  name: Target KEGG Pathways
+  original_source:
+  - kegg
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-01-Target_KEGG_pathway.txt
+  secondary_source:
+  - ttd
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
+    by peer''))'
+- category: Product
+  description: WikiPathways data for all targets
+  format: txt
+  id: ttd.wiki-pathways
+  name: Target WikiPathways
+  original_source:
+  - wikipathways
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-06-Target_wikipathway.txt
+  secondary_source:
+  - ttd
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
+    by peer''))'
+- category: Product
+  description: Drug combination data including synergistic, additive, and antagonistic
+    interactions
+  format: txt
+  id: ttd.drug-combinations
+  name: Drug Combinations
+  product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P5-01-Drug_combination_synergism_anti-counteractive.txt
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
+    by peer''))'
+- category: DocumentationProduct
+  description: Help documentation and user guide for TTD
+  format: http
+  id: ttd.help
+  name: TTD Help Documentation
+  product_url: https://idrblab.org/ttd/help
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 404 error
+    when accessing file'
+- category: GraphProduct
+  description: Cleaned benchmark graph (PharmKG-8k) with typed relations between genes,
+    chemicals, and diseases
+  edge_count: 500958
+  id: pharmkg.graph
+  name: PharmKG graph
+  node_count: 7603
+  original_source:
+  - omim
+  - drugbank
+  - pharmgkb
+  - ttd
+  - sider
+  - humannet
+  - ncbigene
+  - mesh
+  - pubchem
+  - gnbr
+  - biogps
+  - connectivitymap
+  product_url: https://zenodo.org/record/4077338
+  secondary_source:
+  - pharmkg
+publications:
+- authors:
+  - Ying Zhou
+  - Yintao Zhang
+  - Donghai Zhao
+  - Xinyuan Yu
+  - Xinyi Shen
+  - Yuan Zhou
+  - Shanshan Wang
+  - Yunqing Qiu
+  - Yuzong Chen
+  - Feng Zhu
+  category: Publication
+  id: doi:10.1093/nar/gkad751
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'TTD: Therapeutic Target Database describing target druggability information'
+  year: '2024'
+- authors:
+  - Yuan Zhou
+  - Ying Zhang
+  - Xueya Lian
+  - Fengcheng Li
+  - Chaoxin Wang
+  - Feng Zhu
+  - Yunqing Qiu
+  - Yuzong Chen
+  category: Publication
+  id: doi:10.1093/nar/gkab953
+  journal: Nucleic Acids Research
+  preferred: false
+  title: 'Therapeutic target database update 2022: facilitating drug discovery with
+    enriched comparative data of targeted agents'
+  year: '2022'
 ---
-
 # Therapeutic Target Database
 
 ## Overview

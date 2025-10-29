@@ -70,19 +70,22 @@ products:
     with url_ /ords/eims/eimscomm.getfile?p_download_id=543383 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7f1fbf9d1100>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-10-21_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-10-08_ Error connecting
     to URL_ HTTPSConnectionPool(host='ordspub.epa.gov', port=443)_ Max retries exceeded
     with url_ /ords/eims/eimscomm.getfile?p_download_id=543383 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
     object at 0x7fca293233d0>_ Failed to establish a new connection_ [Errno 101] Network
     is unreachable'))
-  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-10-28: Error connecting
+  - File was not able to be retrieved when checked on 2025-10-28_ Error connecting
+    to URL_ HTTPSConnectionPool(host='ordspub.epa.gov', port=443)_ Max retries exceeded
+    with url_ /ords/eims/eimscomm.getfile?p_download_id=543383 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+    object at 0x7f4dcd859420>_ Failed to establish a new connection_ [Errno 101] Network
+    is unreachable'))
+  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
     to URL: HTTPSConnectionPool(host=''ordspub.epa.gov'', port=443): Max retries exceeded
     with url: /ords/eims/eimscomm.getfile?p_download_id=543383 (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
-    object at 0x7f4dcd859420>: Failed to establish a new connection: [Errno 101] Network
+    object at 0x7fd84f0ad190>: Failed to establish a new connection: [Errno 101] Network
     is unreachable''))'
 - category: GraphicalInterface
   description: A browser interface for a knowledge graph for Alzheimer's Disease.

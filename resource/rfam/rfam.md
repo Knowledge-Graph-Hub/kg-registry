@@ -2,18 +2,24 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: rfam-help@ebi.ac.uk
-      - contact_type: url
-        value: https://docs.rfam.org/en/latest/contact-us.html
-    label: Rfam Team at EMBL-EBI
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: rfam-help@ebi.ac.uk
+  - contact_type: url
+    value: https://docs.rfam.org/en/latest/contact-us.html
+  label: Rfam Team at EMBL-EBI
 creation_date: '2025-10-29T00:00:00Z'
-description: Rfam is a comprehensive database of RNA families, each represented by multiple sequence alignments, consensus secondary structures and covariance models. The database provides curated information for over 4,000 non-coding RNA families and is widely used for RNA annotation, genome analysis, and as training data for machine learning models. Release 15.0 includes expanded coverage with 26,106 genomes, improved 3D structure integration, complete microRNA synchronization with miRBase, enhanced Gene Ontology annotations, and comprehensive viral RNA families.
+description: Rfam is a comprehensive database of RNA families, each represented by
+  multiple sequence alignments, consensus secondary structures and covariance models.
+  The database provides curated information for over 4,000 non-coding RNA families
+  and is widely used for RNA annotation, genome analysis, and as training data for
+  machine learning models. Release 15.0 includes expanded coverage with 26,106 genomes,
+  improved 3D structure integration, complete microRNA synchronization with miRBase,
+  enhanced Gene Ontology annotations, and comprehensive viral RNA families.
 domains:
-  - genomics
-  - biological systems
+- genomics
+- biological systems
 homepage_url: https://rfam.org/
 id: rfam
 last_modified_date: '2025-10-29T00:00:00Z'
@@ -23,108 +29,321 @@ license:
   label: CC0 1.0 (Creative Commons Zero)
 name: Rfam
 products:
-  - category: GraphicalInterface
-    description: Web portal for searching and browsing RNA families
-    format: http
-    id: rfam.portal
-    name: Rfam Web Portal
-    product_url: https://rfam.org/
-  - category: ProgrammingInterface
-    description: REST API for programmatic access to Rfam data
-    format: http
-    id: rfam.api
-    name: Rfam REST API
-    product_url: https://rfam.org/api
-  - category: Product
-    description: FTP archive with covariance models, sequence alignments, and database files
-    format: http
-    id: rfam.ftp
-    name: Rfam FTP Archive
-    product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT
-  - category: DataModelProduct
-    description: Public MySQL database for direct SQL access to Rfam data
-    format: mysql
-    id: rfam.public-db
-    name: Rfam Public MySQL Database
-    product_url: https://docs.rfam.org/en/latest/database.html
-  - category: Product
-    description: Covariance models for all RNA families in CM format
-    format: txt
-    id: rfam.cm-models
-    name: Rfam Covariance Models
-    product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/Rfam.cm.gz
-  - category: Product
-    description: SEED alignments for all RNA families in Stockholm format
-    format: stockholm
-    id: rfam.seed-alignments
-    name: Rfam SEED Alignments
-    product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/Rfam.seed.gz
-  - category: Product
-    description: FULL alignments for all RNA families
-    format: txt
-    id: rfam.full-alignments
-    name: Rfam FULL Alignments
-    product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/full_alignments/
-  - category: Product
-    description: FASTA format sequences for all RNA families
-    format: fasta
-    id: rfam.fasta
-    name: Rfam FASTA Sequences
-    product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/fasta_files/
-  - category: MappingProduct
-    description: PDB structure mappings showing RNA families with 3D structures
-    format: txt
-    id: rfam.pdb-mappings
-    name: Rfam PDB Mappings
-    product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/.preview/pdb_full_region.txt.gz
-  - category: DocumentationProduct
-    description: Comprehensive documentation for Rfam database and tools
-    format: http
-    id: rfam.docs
-    name: Rfam Documentation
-    product_url: https://docs.rfam.org/
+- category: GraphicalInterface
+  description: Web portal for searching and browsing RNA families
+  format: http
+  id: rfam.portal
+  name: Rfam Web Portal
+  product_url: https://rfam.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to Rfam data
+  format: http
+  id: rfam.api
+  name: Rfam REST API
+  product_url: https://rfam.org/api
+- category: Product
+  description: FTP archive with covariance models, sequence alignments, and database
+    files
+  format: http
+  id: rfam.ftp
+  name: Rfam FTP Archive
+  product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT
+- category: DataModelProduct
+  description: Public MySQL database for direct SQL access to Rfam data
+  format: mysql
+  id: rfam.public-db
+  name: Rfam Public MySQL Database
+  product_url: https://docs.rfam.org/en/latest/database.html
+- category: Product
+  description: Covariance models for all RNA families in CM format
+  format: txt
+  id: rfam.cm-models
+  name: Rfam Covariance Models
+  product_file_size: 45111170
+  product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/Rfam.cm.gz
+- category: Product
+  description: SEED alignments for all RNA families in Stockholm format
+  format: stockholm
+  id: rfam.seed-alignments
+  name: Rfam SEED Alignments
+  product_file_size: 5083331
+  product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/Rfam.seed.gz
+- category: Product
+  description: FULL alignments for all RNA families
+  format: txt
+  id: rfam.full-alignments
+  name: Rfam FULL Alignments
+  product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/full_alignments/
+- category: Product
+  description: FASTA format sequences for all RNA families
+  format: fasta
+  id: rfam.fasta
+  name: Rfam FASTA Sequences
+  product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/fasta_files/
+- category: MappingProduct
+  description: PDB structure mappings showing RNA families with 3D structures
+  format: txt
+  id: rfam.pdb-mappings
+  name: Rfam PDB Mappings
+  product_file_size: 179072
+  product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/.preview/pdb_full_region.txt.gz
+- category: DocumentationProduct
+  description: Comprehensive documentation for Rfam database and tools
+  format: http
+  id: rfam.docs
+  name: Rfam Documentation
+  product_url: https://docs.rfam.org/
+- category: GraphicalInterface
+  description: Web portal for searching and browsing ncRNA sequences, structures,
+    and annotations
+  format: http
+  id: rnacentral.portal
+  name: RNAcentral Portal
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to RNAcentral data
+  format: http
+  id: rnacentral.api
+  name: RNAcentral REST API
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/api
+- category: Product
+  description: FTP archive with current and archived release files (sequences and
+    annotations)
+  format: http
+  id: rnacentral.ftp
+  name: RNAcentral FTP Archive
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+- category: DataModelProduct
+  description: Public PostgreSQL database for direct SQL access to RNAcentral data
+  format: postgres
+  id: rnacentral.public-db
+  name: RNAcentral Public Postgres Database
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/help/public-database
 publications:
-  - authors:
-      - Ontiveros-Palacios N
-      - Cooke E
-      - Nawrocki EP
-      - Triebel S
-      - Marz M
-      - Rivas E
-      - Griffiths-Jones S
-      - Petrov AI
-      - Bateman A
-      - Sweeney B
-    category: Publication
-    id: https://doi.org/10.1093/nar/gkae1023
-    journal: Nucleic Acids Research
-    preferred: true
-    title: 'Rfam 15: RNA families database in 2025'
-    year: '2024'
-  - authors:
-      - Kalvari I
-      - Nawrocki EP
-      - Ontiveros-Palacios N
-      - Argasinska J
-      - Lamkiewicz K
-      - Marz M
-      - Griffiths-Jones S
-      - Toffano-Nioche C
-      - Gautheret D
-      - Weinberg Z
-      - Rivas E
-      - Eddy SR
-      - Finn RD
-      - Bateman A
-      - Petrov AI
-    category: Publication
-    id: https://doi.org/10.1093/nar/gkaa1047
-    journal: Nucleic Acids Research
-    preferred: false
-    title: 'Rfam 14: expanded coverage of metagenomic, viral and microRNA families'
-    year: '2021'
+- authors:
+  - Ontiveros-Palacios N
+  - Cooke E
+  - Nawrocki EP
+  - Triebel S
+  - Marz M
+  - Rivas E
+  - Griffiths-Jones S
+  - Petrov AI
+  - Bateman A
+  - Sweeney B
+  category: Publication
+  id: https://doi.org/10.1093/nar/gkae1023
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'Rfam 15: RNA families database in 2025'
+  year: '2024'
+- authors:
+  - Kalvari I
+  - Nawrocki EP
+  - Ontiveros-Palacios N
+  - Argasinska J
+  - Lamkiewicz K
+  - Marz M
+  - Griffiths-Jones S
+  - Toffano-Nioche C
+  - Gautheret D
+  - Weinberg Z
+  - Rivas E
+  - Eddy SR
+  - Finn RD
+  - Bateman A
+  - Petrov AI
+  category: Publication
+  id: https://doi.org/10.1093/nar/gkaa1047
+  journal: Nucleic Acids Research
+  preferred: false
+  title: 'Rfam 14: expanded coverage of metagenomic, viral and microRNA families'
+  year: '2021'
 ---
-
 # Rfam
 
 ## Overview

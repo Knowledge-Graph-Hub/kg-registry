@@ -32,10 +32,8 @@ products:
   format: owl
   id: aism.owl
   name: aism.owl
+  product_file_size: 1892677
   product_url: http://purl.obolibrary.org/obo/aism.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-28: Timeout connecting
-    to URL'
 - category: OntologyProduct
   description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
     in OBO format

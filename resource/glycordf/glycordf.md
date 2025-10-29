@@ -1,123 +1,261 @@
 ---
 activity_status: active
 category: Ontology
-id: "glycordf"
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: rene@ccrc.uga.edu
+  label: Rene Ranzinger
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: kkiyoko@soka.ac.jp
+  label: Kiyoko F. Aoki-Kinoshita
+creation_date: '2025-10-29T00:00:00Z'
+curators:
+- category: Individual
+  contact_details:
+  - contact_type: github
+    value: ReneRanzinger
+  label: Rene Ranzinger
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: kkiyoko@soka.ac.jp
+  label: Kiyoko F. Aoki-Kinoshita
+description: 'GlycoRDF is a standardized ontology for representing glycomics data
+  in Resource Description Framework (RDF) format. It provides a common machine-readable
+  interface for glycomics databases, enabling integration and cross-referencing of
+  glycan structures, biological source information, publications, and experimental
+  data. Developed by an international consortium of glycomics bioinformatics experts,
+  GlycoRDF defines classes and predicates for diverse glycomics data types including
+  glycan sequences, monosaccharide compositions, biological sources, literature references,
+  NMR data, mass spectrometry data, and liquid chromatography-mass spectrometry data.
+  The ontology reuses concepts from established ontologies including UniProt Core,
+  Bibliographic Ontology, Dublin Core Metadata Initiative, and HUPO-PSI Mass Spectrometry
+  Ontology. GlycoRDF has been adopted by major glycomics database providers including
+  CSDB, MonosaccharideDB, GlycomeDB, UniCarbKB, GlycoEpitope, GlycoNAVI, and GlycoProtDB,
+  facilitating semantic web applications and SPARQL queries across heterogeneous glycomics
+  data sources.
+
+  '
+domains:
+- chemistry and biochemistry
+- biological systems
+- biomedical
+homepage_url: http://www.glycoinfo.org/GlycoRDF/
+id: glycordf
+last_modified_date: '2025-10-29T00:00:00Z'
 layout: resource_detail
 name: 'GlycoRDF: An Ontology to Standardize Glycomics Data in RDF'
-description: >
-  GlycoRDF is a standardized ontology for representing glycomics data in Resource Description Framework (RDF) format.
-  It provides a common machine-readable interface for glycomics databases, enabling integration and cross-referencing
-  of glycan structures, biological source information, publications, and experimental data. Developed by an international
-  consortium of glycomics bioinformatics experts, GlycoRDF defines classes and predicates for diverse glycomics data
-  types including glycan sequences, monosaccharide compositions, biological sources, literature references, NMR data,
-  mass spectrometry data, and liquid chromatography-mass spectrometry data. The ontology reuses concepts from established
-  ontologies including UniProt Core, Bibliographic Ontology, Dublin Core Metadata Initiative, and HUPO-PSI Mass
-  Spectrometry Ontology. GlycoRDF has been adopted by major glycomics database providers including CSDB, MonosaccharideDB,
-  GlycomeDB, UniCarbKB, GlycoEpitope, GlycoNAVI, and GlycoProtDB, facilitating semantic web applications and SPARQL queries
-  across heterogeneous glycomics data sources.
-homepage_url: 'http://www.glycoinfo.org/GlycoRDF/'
-repository: 'https://github.com/glycoinfo/GlycoRDF'
-domains:
-  - chemistry and biochemistry
-  - biological systems
-  - biomedical
-tags:
-  - biopragmatics
-creation_date: '2025-10-29T00:00:00Z'
-last_modified_date: '2025-10-29T00:00:00Z'
-curators:
-  - category: 'Individual'
-    label: 'Rene Ranzinger'
-    contact_details:
-      - contact_type: 'github'
-        value: "ReneRanzinger"
-  - category: 'Individual'
-    label: 'Kiyoko F. Aoki-Kinoshita'
-    contact_details:
-      - contact_type: 'email'
-        value: "kkiyoko@soka.ac.jp"
-contacts:
-  - category: 'Individual'
-    label: 'Rene Ranzinger'
-    contact_details:
-      - contact_type: 'email'
-        value: "rene@ccrc.uga.edu"
-  - category: 'Individual'
-    label: 'Kiyoko F. Aoki-Kinoshita'
-    contact_details:
-      - contact_type: 'email'
-        value: "kkiyoko@soka.ac.jp"
-publications:
-  - id: "https://doi.org/10.1093/bioinformatics/btu732"
-    category: 'Publication'
-    preferred: true
-    title: 'GlycoRDF: an ontology to standardize glycomics data in RDF'
-    authors:
-      - 'Rene Ranzinger'
-      - 'Kiyoko F. Aoki-Kinoshita'
-      - 'Matthew P. Campbell'
-      - 'Shin Kawano'
-      - 'Thomas Lütteke'
-      - 'Shujiro Okuda'
-      - 'Daisuke Shinmachi'
-      - 'Toshihide Shikanai'
-      - 'Hiromichi Sawaki'
-      - 'Philip Toukach'
-    year: "2015"
-    journal: 'Bioinformatics'
-  - id: "https://doi.org/10.1186/2041-1480-4-39"
-    category: 'Publication'
-    preferred: false
-    title: 'Introducing glycomics data into the Semantic Web'
-    authors:
-      - 'Kiyoko F. Aoki-Kinoshita'
-    year: "2013"
-    journal: 'Journal of Biomedical Semantics'
 products:
-  - id: "glycordf.ontology"
-    category: 'OntologyProduct'
-    name: 'GlycoRDF Ontology (OWL)'
-    description: 'OWL ontology file defining the GlycoRDF standard for representing glycomics data in RDF format'
-    product_url: 'https://github.com/ReneRanzinger/GlycoRDF/blob/master/ontology/glycan.owl'
-    format: 'owl'
-  - id: "glycordf.bioportal"
-    category: 'GraphicalInterface'
-    name: 'GlycoRDF BioPortal Entry'
-    description: 'NCBO BioPortal entry for browsing and exploring the GlycoRDF ontology'
-    product_url: 'https://bioportal.bioontology.org/ontologies/GLYCORDF'
-    format: 'http'
-  - id: "glycordf.documentation"
-    category: 'DocumentationProduct'
-    name: 'GlycoRDF Documentation'
-    description: 'Comprehensive documentation of the GlycoRDF ontology classes, predicates, and usage examples'
-    product_url: 'https://github.com/ReneRanzinger/GlycoRDF/blob/master/ontology/documentation.docx'
-    format: 'doc'
-  - id: "glycordf.homepage"
-    category: 'GraphicalInterface'
-    name: 'GlycoRDF Project Homepage'
-    description: 'Official project homepage with overview, documentation, and links to database implementations'
-    product_url: 'http://www.glycoinfo.org/GlycoRDF/'
-    format: 'http'
-  - id: "glycordf.github"
-    category: 'GraphicalInterface'
-    name: 'GlycoRDF GitHub Repository'
-    description: 'GitHub repository containing ontology files, documentation, and source code for RDF generation'
-    product_url: 'https://github.com/glycoinfo/GlycoRDF'
-    format: 'http'
-  - id: "glycordf.wiki"
-    category: 'DocumentationProduct'
-    name: 'GlycoRDF Wiki'
-    description: 'Wiki with developer information, database provider documentation, and implementation guidelines'
-    product_url: 'https://github.com/ReneRanzinger/GlycoRDF/wiki'
-    format: 'http'
-  - id: "glycordf.java-source"
-    category: 'ProcessProduct'
-    name: 'GlycoRDF Java Source Code'
-    description: 'Java source code for generating GlycoRDF data from glycomics databases'
-    repository: 'https://github.com/glycoinfo/GlycoRDF'
-    format: 'java'
+- category: OntologyProduct
+  description: OWL ontology file defining the GlycoRDF standard for representing glycomics
+    data in RDF format
+  format: owl
+  id: glycordf.ontology
+  name: GlycoRDF Ontology (OWL)
+  product_file_size: 32914
+  product_url: https://github.com/ReneRanzinger/GlycoRDF/blob/master/ontology/glycan.owl
+- category: GraphicalInterface
+  description: NCBO BioPortal entry for browsing and exploring the GlycoRDF ontology
+  format: http
+  id: glycordf.bioportal
+  name: GlycoRDF BioPortal Entry
+  product_url: https://bioportal.bioontology.org/ontologies/GLYCORDF
+- category: DocumentationProduct
+  description: Comprehensive documentation of the GlycoRDF ontology classes, predicates,
+    and usage examples
+  format: doc
+  id: glycordf.documentation
+  name: GlycoRDF Documentation
+  product_file_size: 62492
+  product_url: https://github.com/ReneRanzinger/GlycoRDF/blob/master/ontology/documentation.docx
+- category: GraphicalInterface
+  description: Official project homepage with overview, documentation, and links to
+    database implementations
+  format: http
+  id: glycordf.homepage
+  name: GlycoRDF Project Homepage
+  product_url: http://www.glycoinfo.org/GlycoRDF/
+- category: GraphicalInterface
+  description: GitHub repository containing ontology files, documentation, and source
+    code for RDF generation
+  format: http
+  id: glycordf.github
+  name: GlycoRDF GitHub Repository
+  product_url: https://github.com/glycoinfo/GlycoRDF
+- category: DocumentationProduct
+  description: Wiki with developer information, database provider documentation, and
+    implementation guidelines
+  format: http
+  id: glycordf.wiki
+  name: GlycoRDF Wiki
+  product_url: https://github.com/ReneRanzinger/GlycoRDF/wiki
+- category: ProcessProduct
+  description: Java source code for generating GlycoRDF data from glycomics databases
+  format: java
+  id: glycordf.java-source
+  name: GlycoRDF Java Source Code
+  repository: https://github.com/glycoinfo/GlycoRDF
+- category: GraphProduct
+  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
+    instances as neo4j graph databases, running in a Docker container. Requires UMLS
+    API key to access.
+  dump_format: neo4j
+  id: ubkg.neo4j
+  name: UBKG Neo4j Docker Distribution
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - doid
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - connectivitymap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - sckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+- category: GraphProduct
+  description: Ontology CSV files that can be imported into a neo4j instance to create
+    a UBKG database. Requires UMLS API key to access.
+  format: csv
+  id: ubkg.csv
+  name: UBKG Ontology CSV Files
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - doid
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - connectivitymap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - sckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+publications:
+- authors:
+  - Rene Ranzinger
+  - Kiyoko F. Aoki-Kinoshita
+  - Matthew P. Campbell
+  - Shin Kawano
+  - Thomas Lütteke
+  - Shujiro Okuda
+  - Daisuke Shinmachi
+  - Toshihide Shikanai
+  - Hiromichi Sawaki
+  - Philip Toukach
+  category: Publication
+  id: https://doi.org/10.1093/bioinformatics/btu732
+  journal: Bioinformatics
+  preferred: true
+  title: 'GlycoRDF: an ontology to standardize glycomics data in RDF'
+  year: '2015'
+- authors:
+  - Kiyoko F. Aoki-Kinoshita
+  category: Publication
+  id: https://doi.org/10.1186/2041-1480-4-39
+  journal: Journal of Biomedical Semantics
+  preferred: false
+  title: Introducing glycomics data into the Semantic Web
+  year: '2013'
+repository: https://github.com/glycoinfo/GlycoRDF
+tags:
+- biopragmatics
 ---
-
 ## Overview
 
 GlycoRDF is a collaborative effort by the international glycomics community to create a standardized representation for glycomics data using Resource Description Framework (RDF) and Web Ontology Language (OWL). The ontology addresses the critical need for data integration across diverse glycomics databases, which historically have used incompatible formats and representations for glycan structures and associated metadata.

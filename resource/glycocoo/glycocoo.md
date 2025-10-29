@@ -1,80 +1,227 @@
 ---
 activity_status: active
 category: Ontology
-creation_date: '2025-10-29T00:00:00Z'
 contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: github
-        value: "yamadaissaku"
-      - contact_type: email
-        value: "issaku@noguchi.or.jp"
-    label: Issaku Yamada
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: "m.campbell@griffith.edu.au"
-    label: Matthew P Campbell
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: "kkiyoko@soka.ac.jp"
-    label: Kiyoko F Aoki-Kinoshita
-description: The Glycoconjugate Ontology (GlycoCoO) is a standard semantic framework for describing and representing glycoproteomics and glycolipidomics data in RDF format. It provides a formal representation of glycoconjugate structures (glycoproteins and glycolipids), their associated metadata including publication information, biological source data, experimental evidence, and abundance ratios. GlycoCoO extends GlycoRDF by creating subclasses of ReferencedCompound including ReferencedGlycoconjugate, ReferencedProtein, and ReferencedLipid, enabling comprehensive annotation of glycan structures attached to proteins and lipids with contextual information such as glycosylation sites, disease associations, tissue and cell line sources, and analytical methods. The ontology supports both complete structural information and compositional data, can represent single glycans or glycoform mixtures at specific sites, and accommodates partially missing site information when no mapping is performed. It has been adopted by major glycoproteomics databases including UniCarbKB, GlyConnect, and GlycoNAVI, enabling federated queries across resources to retrieve integrated information about glycoconjugates from multiple publications and experimental contexts.
+- category: Individual
+  contact_details:
+  - contact_type: github
+    value: yamadaissaku
+  - contact_type: email
+    value: issaku@noguchi.or.jp
+  label: Issaku Yamada
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: m.campbell@griffith.edu.au
+  label: Matthew P Campbell
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: kkiyoko@soka.ac.jp
+  label: Kiyoko F Aoki-Kinoshita
+creation_date: '2025-10-29T00:00:00Z'
+description: The Glycoconjugate Ontology (GlycoCoO) is a standard semantic framework
+  for describing and representing glycoproteomics and glycolipidomics data in RDF
+  format. It provides a formal representation of glycoconjugate structures (glycoproteins
+  and glycolipids), their associated metadata including publication information, biological
+  source data, experimental evidence, and abundance ratios. GlycoCoO extends GlycoRDF
+  by creating subclasses of ReferencedCompound including ReferencedGlycoconjugate,
+  ReferencedProtein, and ReferencedLipid, enabling comprehensive annotation of glycan
+  structures attached to proteins and lipids with contextual information such as glycosylation
+  sites, disease associations, tissue and cell line sources, and analytical methods.
+  The ontology supports both complete structural information and compositional data,
+  can represent single glycans or glycoform mixtures at specific sites, and accommodates
+  partially missing site information when no mapping is performed. It has been adopted
+  by major glycoproteomics databases including UniCarbKB, GlyConnect, and GlycoNAVI,
+  enabling federated queries across resources to retrieve integrated information about
+  glycoconjugates from multiple publications and experimental contexts.
 domains:
-  - chemistry and biochemistry
-  - biological systems
-  - biomedical
+- chemistry and biochemistry
+- biological systems
+- biomedical
 homepage_url: https://github.com/glycoinfo/GlycoCoO
-id: "glycocoo"
+id: glycocoo
 last_modified_date: '2025-10-29T00:00:00Z'
 layout: resource_detail
 name: GlycoConjugate Ontology (GlycoCoO)
-publications:
-  - authors:
-      - Issaku Yamada
-      - Matthew P Campbell
-      - Nathan Edwards
-      - Leyla Jael Castro
-      - Frederique Lisacek
-      - Julien Mariethoz
-      - Tamiko Ono
-      - Rene Ranzinger
-      - Daisuke Shinmachi
-      - Kiyoko F Aoki-Kinoshita
-    category: Publication
-    id: "https://doi.org/10.1093/glycob/cwab013"
-    journal: Glycobiology
-    preferred: true
-    title: 'The glycoconjugate ontology (GlycoCoO) for standardizing the annotation of glycoconjugate data and its application'
-    year: "2021"
 products:
-  - category: OntologyProduct
-    description: The GlycoCoO OWL ontology file defining classes and predicates for glycoconjugate structures and their metadata
-    format: owl
-    id: "glycocoo.ontology"
-    name: GlycoCoO OWL Ontology
-    product_url: https://github.com/glycoinfo/GlycoCoO/blob/master/ontology/glycocoo.owl
-  - category: DocumentationProduct
-    description: GitHub Wiki with developer information, database providers, and prefix documentation
-    format: http
-    id: "glycocoo.wiki"
-    name: GlycoCoO Wiki Documentation
-    product_url: https://github.com/glycoinfo/GlycoCoO/wiki
-  - category: Product
-    description: Sample RDF data files demonstrating GlycoCoO usage with examples from UniCarbKB, GlyConnect, and GlycoNAVI
-    format: http
-    id: "glycocoo.rdf-samples"
-    name: GlycoCoO RDF Sample Data
-    product_url: https://github.com/glycoinfo/GlycoCoO/tree/master/RDF_Sample
-  - category: Product
-    description: Example SPARQL queries for querying glycoconjugate data across federated endpoints
-    format: http
-    id: "glycocoo.sparql-examples"
-    name: GlycoCoO SPARQL Query Examples
-    product_url: https://github.com/glycoinfo/GlycoCoO/blob/master/SPARQL_Query.md
+- category: OntologyProduct
+  description: The GlycoCoO OWL ontology file defining classes and predicates for
+    glycoconjugate structures and their metadata
+  format: owl
+  id: glycocoo.ontology
+  name: GlycoCoO OWL Ontology
+  product_file_size: 5642
+  product_url: https://github.com/glycoinfo/GlycoCoO/blob/master/ontology/glycocoo.owl
+- category: DocumentationProduct
+  description: GitHub Wiki with developer information, database providers, and prefix
+    documentation
+  format: http
+  id: glycocoo.wiki
+  name: GlycoCoO Wiki Documentation
+  product_url: https://github.com/glycoinfo/GlycoCoO/wiki
+- category: Product
+  description: Sample RDF data files demonstrating GlycoCoO usage with examples from
+    UniCarbKB, GlyConnect, and GlycoNAVI
+  format: http
+  id: glycocoo.rdf-samples
+  name: GlycoCoO RDF Sample Data
+  product_url: https://github.com/glycoinfo/GlycoCoO/tree/master/RDF_Sample
+- category: Product
+  description: Example SPARQL queries for querying glycoconjugate data across federated
+    endpoints
+  format: http
+  id: glycocoo.sparql-examples
+  name: GlycoCoO SPARQL Query Examples
+  product_file_size: 2467
+  product_url: https://github.com/glycoinfo/GlycoCoO/blob/master/SPARQL_Query.md
+- category: GraphProduct
+  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
+    instances as neo4j graph databases, running in a Docker container. Requires UMLS
+    API key to access.
+  dump_format: neo4j
+  id: ubkg.neo4j
+  name: UBKG Neo4j Docker Distribution
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - doid
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - connectivitymap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - sckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+- category: GraphProduct
+  description: Ontology CSV files that can be imported into a neo4j instance to create
+    a UBKG database. Requires UMLS API key to access.
+  format: csv
+  id: ubkg.csv
+  name: UBKG Ontology CSV Files
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - doid
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - connectivitymap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - sckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+publications:
+- authors:
+  - Issaku Yamada
+  - Matthew P Campbell
+  - Nathan Edwards
+  - Leyla Jael Castro
+  - Frederique Lisacek
+  - Julien Mariethoz
+  - Tamiko Ono
+  - Rene Ranzinger
+  - Daisuke Shinmachi
+  - Kiyoko F Aoki-Kinoshita
+  category: Publication
+  id: https://doi.org/10.1093/glycob/cwab013
+  journal: Glycobiology
+  preferred: true
+  title: The glycoconjugate ontology (GlycoCoO) for standardizing the annotation of
+    glycoconjugate data and its application
+  year: '2021'
 ---
-
 # GlycoConjugate Ontology (GlycoCoO)
 
 ## Overview
