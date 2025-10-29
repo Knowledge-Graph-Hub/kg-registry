@@ -147,7 +147,7 @@ products:
   infores_id: automat-human-goa
   name: humangoa_automat
   original_source:
-  - humangoa
+  - goa
   product_url: https://stars.renci.org/var/plater/bl-4.2.1/HumanGOA_Automat/06f107a4e9e8e547/
   secondary_source:
   - automat
