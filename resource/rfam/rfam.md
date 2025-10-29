@@ -55,7 +55,7 @@ products:
     product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/Rfam.cm.gz
   - category: Product
     description: SEED alignments for all RNA families in Stockholm format
-    format: txt
+    format: stockholm
     id: rfam.seed-alignments
     name: Rfam SEED Alignments
     product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/Rfam.seed.gz
@@ -71,7 +71,7 @@ products:
     id: rfam.fasta
     name: Rfam FASTA Sequences
     product_url: https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/fasta_files/
-  - category: Product
+  - category: MappingProduct
     description: PDB structure mappings showing RNA families with 3D structures
     format: txt
     id: rfam.pdb-mappings
