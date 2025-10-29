@@ -138,6 +138,10 @@ products:
     name: All Target UniProt IDs
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P2-01-TTD_uniprot_all.txt
     format: txt
+    original_source:
+    - uniprot
+    secondary_source:
+    - ttd
   - category: Product
     description: Sequence data for all targets in FASTA format
     id: "ttd.sequences-all"
@@ -162,12 +166,20 @@ products:
     name: Target KEGG Pathways
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-01-Target_KEGG_pathway.txt
     format: txt
+    original_source:
+    - kegg
+    secondary_source:
+    - ttd
   - category: Product
     description: WikiPathways data for all targets
     id: "ttd.wiki-pathways"
     name: Target WikiPathways
     product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-06-Target_wikipathway.txt
     format: txt
+    original_source:
+    - wikipathways
+    secondary_source:
+    - ttd
   - category: Product
     description: Drug combination data including synergistic, additive, and antagonistic interactions
     id: "ttd.drug-combinations"
