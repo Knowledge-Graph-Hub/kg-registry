@@ -34,12 +34,16 @@ products:
     description: Browser for searching and viewing Gene Ontology terms and GOA annotations
     product_url: https://www.ebi.ac.uk/QuickGO/
     format: http
+    original_source:
+      - go
   - id: goa.ftp
     category: Product
     name: GOA FTP Site
     description: FTP site containing current and archived GOA annotation files for all species
     product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/
     format: http
+    original_source:
+      - go
   - id: goa.uniprot
     category: Product
     name: UniProt GOA Annotations
@@ -48,6 +52,7 @@ products:
     format: txt
     original_source:
       - uniprot
+      - go
   - id: goa.human
     category: Product
     name: Human GOA Annotations
@@ -56,6 +61,7 @@ products:
     format: txt
     original_source:
       - uniprot
+      - go
   - id: goa.mouse
     category: Product
     name: Mouse GOA Annotations
@@ -64,12 +70,17 @@ products:
     format: txt
     original_source:
       - uniprot
+      - go
   - id: goa.mapping-files
     category: MappingProduct
     name: GO Mapping Files
     description: Files containing transitive assignments of InterPro matches, UniProtKB keywords, subcellular locations, EC numbers, or HAMAP matches to manually-selected GO terms
     product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
     format: txt
+    original_source:
+      - interpro
+      - uniprot
+      - go
   - id: goa.pdb
     category: Product
     name: PDB GOA Annotations
@@ -77,13 +88,16 @@ products:
     product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
     format: txt
     original_source:
-      - pdb
+      - pdbe
+      - go
   - id: goa.proteomes
     category: Product
     name: Proteomes GOA Annotations
     description: GO annotations organized by proteomes
     product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/
     format: txt
+    original_source:
+      - go
   - id: goa.documentation
     category: DocumentationProduct
     name: GOA Documentation
