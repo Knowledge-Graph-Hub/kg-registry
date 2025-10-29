@@ -6,9 +6,9 @@ id: complexportal.human.psi25
 name: Complex Portal Human PSI-MI XML 2.5
 product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/homo_sapiens.xml
 warnings:
-- File was not able to be retrieved when checked on 2025-10-28_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-10-29_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-10-28_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

@@ -391,6 +391,9 @@ products:
   secondary_source:
   - ttd
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
   - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
     to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
     by peer''))'

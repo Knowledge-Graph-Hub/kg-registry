@@ -305,9 +305,9 @@ products:
   - pdbe
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-10-29_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 403 error
     when accessing file'
@@ -321,6 +321,8 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
   - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'''
 publications:

@@ -7,9 +7,9 @@ id: expressionatlas.ftp-single-cell
 name: Expression Atlas FTP (Single Cell Data)
 product_url: https://ftp.ebi.ac.uk/pub/databases/single-cell/
 warnings:
-- File was not able to be retrieved when checked on 2025-10-28_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-10-29_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-10-28_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

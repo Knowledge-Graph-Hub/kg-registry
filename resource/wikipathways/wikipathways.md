@@ -418,9 +418,9 @@ products:
   - wikipathways
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-10-29_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 403 error
     when accessing file'
@@ -434,6 +434,10 @@ products:
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P4-06-Target_wikipathway.txt
   secondary_source:
   - ttd
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
 publications:
 - authors:
   - Agrawal A

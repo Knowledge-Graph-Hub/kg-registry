@@ -59,9 +59,9 @@ products:
   name: Expression Atlas FTP (Single Cell Data)
   product_url: https://ftp.ebi.ac.uk/pub/databases/single-cell/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-28_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-29_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 404 error
     when accessing file'
@@ -80,9 +80,9 @@ products:
   name: Expression Atlas R Data Objects
   product_url: https://www.ebi.ac.uk/gxa/help/r-data-objects.html
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-28_ HTTP 500 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-29_ HTTP 500 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 500 error
     when accessing file'

@@ -5,6 +5,7 @@ description: OWL ontology file defining the GlycoRDF standard for representing g
 format: owl
 id: glycordf.ontology
 name: GlycoRDF Ontology (OWL)
+product_file_size: 32914
 product_url: https://github.com/ReneRanzinger/GlycoRDF/blob/master/ontology/glycan.owl
 layout: product_detail
 ---

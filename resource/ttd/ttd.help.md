@@ -5,5 +5,8 @@ format: http
 id: ttd.help
 name: TTD Help Documentation
 product_url: https://idrblab.org/ttd/help
+warnings:
+- File was not able to be retrieved when checked on 2025-10-29_ HTTP 404 error when
+  accessing file
 layout: product_detail
 ---

@@ -44,9 +44,9 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-10-28_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-10-29_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-10-29: No Content-Length
     header found'
@@ -65,9 +65,9 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-10-28_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-10-29_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-10-29: No Content-Length
     header found'
@@ -87,9 +87,9 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-27_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-10-28_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-10-29_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-10-29: No Content-Length
     header found'

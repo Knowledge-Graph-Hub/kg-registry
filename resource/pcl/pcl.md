@@ -128,8 +128,8 @@ products:
   name: pcl-simple.json
   product_url: http://purl.obolibrary.org/obo/pcl-simple.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-10-29: Timeout connecting
+    to URL'
 repository: https://github.com/obophenotype/provisional_cell_ontology
 ---
 ## Description
