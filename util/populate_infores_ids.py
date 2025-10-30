@@ -14,7 +14,7 @@ import csv
 import pathlib
 import sys
 import urllib.request
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 
 import frontmatter
 import yaml
@@ -252,6 +252,59 @@ def update_resource_infores(
     return modified, messages
 
 
+def generate_missing_infores_report(resource_files: List[pathlib.Path], output_path: Optional[pathlib.Path] = None):
+    """
+    Generate a report of resources without infores IDs.
+
+    Args:
+        resource_files: List of resource file paths to check
+        output_path: Path to write the report (default: reports/missing_infores_ids.tsv)
+    """
+    if output_path is None:
+        output_path = ROOT.joinpath("reports/missing_infores_ids.tsv")
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    missing_resources = []
+
+    for resource_path in sorted(resource_files):
+        post = frontmatter.load(resource_path)
+        metadata = post.metadata
+
+        resource_id = metadata.get('id')
+        if not resource_id:
+            continue
+
+        # Check if this is a resource page (not a product page)
+        if resource_id != resource_path.parent.name:
+            continue
+
+        # Check if infores_id is missing or empty
+        infores_id = metadata.get('infores_id')
+        if not infores_id:
+            resource_name = metadata.get('name', resource_id)
+            category = metadata.get('category', 'unknown')
+            homepage_url = metadata.get('homepage_url', '')
+
+            missing_resources.append({
+                'resource_id': resource_id,
+                'resource_name': resource_name,
+                'category': category,
+                'homepage_url': homepage_url,
+                'file_path': str(resource_path.relative_to(ROOT))
+            })
+
+    # Write report
+    with open(output_path, 'w', newline='') as f:
+        if missing_resources:
+            fieldnames = ['resource_id', 'resource_name', 'category', 'homepage_url', 'file_path']
+            writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter='\t')
+            writer.writeheader()
+            writer.writerows(missing_resources)
+
+    return len(missing_resources), output_path
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Populate infores identifiers in KG-Registry",
@@ -347,6 +400,13 @@ def main():
     else:
         print(f"\n  ✅ Changes written to disk")
     print(f"{'=' * 60}\n")
+
+    # Generate missing infores report
+    if not args.resource:  # Only generate report when processing all resources
+        missing_count, report_path = generate_missing_infores_report(resource_files)
+        print(f"📊 Missing infores IDs report:")
+        print(f"  Resources without infores_id: {missing_count}")
+        print(f"  Report saved to: {report_path.relative_to(ROOT)}\n")
 
     return 0
 
