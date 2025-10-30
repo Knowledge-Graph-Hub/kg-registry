@@ -262,6 +262,20 @@ populate-infores-dry-run:
 populate-infores-force:
 	$(RUN) python util/populate_infores_ids.py --force-download
 
+# Create stub Resource pages for infores entries not in KG-Registry
+# Usage: make create-infores-stubs [ARGS="--only-simple --limit 10"]
+.PHONY: create-infores-stubs create-infores-stubs-dry-run create-infores-stubs-simple
+create-infores-stubs:
+	$(RUN) python util/create_infores_stubs.py $(ARGS)
+
+# Preview stub creation without actually creating files
+create-infores-stubs-dry-run:
+	$(RUN) python util/create_infores_stubs.py --dry-run
+
+# Create stubs only for simple infores IDs (no hyphens)
+create-infores-stubs-simple:
+	$(RUN) python util/create_infores_stubs.py --only-simple
+
 ##########################
 ## Metadata Maintenance ##
 ##########################
