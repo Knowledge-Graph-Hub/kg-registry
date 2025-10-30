@@ -339,6 +339,10 @@ class ActivityStatusEnum(str, Enum):
     """
     The resource is no longer accessible. Only its metadata is available.
     """
+    unknown = "unknown"
+    """
+    The status of the resource is unknown.
+    """
 
 
 class CompressionEnum(str, Enum):
@@ -710,6 +714,7 @@ class Resource(NamedThing):
     fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'fairsharing_id', 'domain_of': ['Resource']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
     taxon: Optional[list[str]] = Field(default=None, description="""The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.""", json_schema_extra = { "linkml_meta": {'alias': 'taxon', 'domain_of': ['Resource']} })
+    synonyms: Optional[list[str]] = Field(default=None, description="""A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.""", json_schema_extra = { "linkml_meta": {'alias': 'synonyms', 'domain_of': ['Resource']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the entity. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -755,6 +760,7 @@ class KnowledgeGraph(Resource):
     fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'fairsharing_id', 'domain_of': ['Resource']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
     taxon: Optional[list[str]] = Field(default=None, description="""The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.""", json_schema_extra = { "linkml_meta": {'alias': 'taxon', 'domain_of': ['Resource']} })
+    synonyms: Optional[list[str]] = Field(default=None, description="""A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.""", json_schema_extra = { "linkml_meta": {'alias': 'synonyms', 'domain_of': ['Resource']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the entity. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -794,6 +800,7 @@ class DataSource(Resource):
     fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'fairsharing_id', 'domain_of': ['Resource']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
     taxon: Optional[list[str]] = Field(default=None, description="""The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.""", json_schema_extra = { "linkml_meta": {'alias': 'taxon', 'domain_of': ['Resource']} })
+    synonyms: Optional[list[str]] = Field(default=None, description="""A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.""", json_schema_extra = { "linkml_meta": {'alias': 'synonyms', 'domain_of': ['Resource']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the entity. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -833,6 +840,7 @@ class DataModel(Resource):
     fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'fairsharing_id', 'domain_of': ['Resource']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
     taxon: Optional[list[str]] = Field(default=None, description="""The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.""", json_schema_extra = { "linkml_meta": {'alias': 'taxon', 'domain_of': ['Resource']} })
+    synonyms: Optional[list[str]] = Field(default=None, description="""A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.""", json_schema_extra = { "linkml_meta": {'alias': 'synonyms', 'domain_of': ['Resource']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the entity. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -872,6 +880,7 @@ class Ontology(Resource):
     fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'fairsharing_id', 'domain_of': ['Resource']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
     taxon: Optional[list[str]] = Field(default=None, description="""The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.""", json_schema_extra = { "linkml_meta": {'alias': 'taxon', 'domain_of': ['Resource']} })
+    synonyms: Optional[list[str]] = Field(default=None, description="""A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.""", json_schema_extra = { "linkml_meta": {'alias': 'synonyms', 'domain_of': ['Resource']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the entity. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',
@@ -911,6 +920,7 @@ class Aggregator(Resource):
     fairsharing_id: Optional[str] = Field(default=None, description="""The FAIRsharing ID of the resource.""", json_schema_extra = { "linkml_meta": {'alias': 'fairsharing_id', 'domain_of': ['Resource']} })
     infores_id: Optional[str] = Field(default=None, description="""The Infores ID of the resource. Do not include the 'infores' prefix.""", json_schema_extra = { "linkml_meta": {'alias': 'infores_id', 'domain_of': ['Resource', 'Product']} })
     taxon: Optional[list[str]] = Field(default=None, description="""The taxon or taxa that the resource is relevant to. This is preferably an NCBI Taxonomy identifier, in CURIE format.""", json_schema_extra = { "linkml_meta": {'alias': 'taxon', 'domain_of': ['Resource']} })
+    synonyms: Optional[list[str]] = Field(default=None, description="""A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.""", json_schema_extra = { "linkml_meta": {'alias': 'synonyms', 'domain_of': ['Resource']} })
     id: str = Field(default=..., description="""The identifier of an entity. This is used to identify it within the registry.""", json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['NamedThing'], 'slot_uri': 'dcterms:identifier'} })
     category: Optional[str] = Field(default=None, description="""The category of the entity. This should be identical to its class name.""", json_schema_extra = { "linkml_meta": {'alias': 'category',
          'domain': 'NamedThing',

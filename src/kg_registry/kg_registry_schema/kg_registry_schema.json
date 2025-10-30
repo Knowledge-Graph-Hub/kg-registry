@@ -6,7 +6,8 @@
                 "active",
                 "inactive",
                 "orphaned",
-                "unresponsive"
+                "unresponsive",
+                "unknown"
             ],
             "title": "ActivityStatusEnum",
             "type": "string"
@@ -171,6 +172,16 @@
                     "description": "A main version control repository for the resource. Specific products may have their own repositories.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "synonyms": {
+                    "description": "A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -488,6 +499,16 @@
                     "description": "A main version control repository for the resource. Specific products may have their own repositories.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "synonyms": {
+                    "description": "A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -939,6 +960,16 @@
                     "description": "A main version control repository for the resource. Specific products may have their own repositories.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "synonyms": {
+                    "description": "A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -2157,6 +2188,16 @@
                         "null"
                     ]
                 },
+                "synonyms": {
+                    "description": "A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "tags": {
                     "description": "Tags associated with the resource.",
                     "items": {
@@ -2749,6 +2790,16 @@
                     "description": "A main version control repository for the resource. Specific products may have their own repositories.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "synonyms": {
+                    "description": "A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -4074,6 +4125,16 @@
                     "description": "A main version control repository for the resource. Specific products may have their own repositories.",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "synonyms": {
+                    "description": "A list of synonyms for the resource. These may include acronyms, abbreviations, or other alternate names for the resource. They are not necessarily unique across resources.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },

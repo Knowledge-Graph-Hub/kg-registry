@@ -179,6 +179,14 @@ classes:
           in CURIE format.
         range: uriorcurie
         multivalued: true
+      synonyms:
+        description: >-
+          A list of synonyms for the resource.
+          These may include acronyms, abbreviations, or
+          other alternate names for the resource.
+          They are not necessarily unique across resources.
+        range: string
+        multivalued: true
 
   KnowledgeGraph:
     description: >-
