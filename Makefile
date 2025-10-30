@@ -104,7 +104,7 @@ clean-schema:
 	rm -Rf src/kg_registry/kg_registry_schema/datamodel/*.py src/kg_registry/kg_registry_schema/*.json src/kg_registry/kg_registry_schema/schema/kg_registry_schema_all.yaml
 
 clean-cache:
-	rm -f cache/obo_foundry_cache.yml cache/url_status_cache.yml
+	rm -f cache/obo_foundry_cache.yml cache/url_status_cache.yml cache/kgregistry-infores.sssom.tsv cache/infores_catalog.yaml
 	@echo "✅ Cleared cache files"
 
 ### Directories:
@@ -181,6 +181,13 @@ reports/metadata-grid.html: reports/metadata-grid.csv
 tmp/unsorted-resources.yml: $(RESOURCES) | tmp
 	@./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
 
+# Populate infores identifiers for resources and products
+# This step updates the resource markdown files with infores_id fields
+# and adds original_source entries based on provenance relationships
+.PHONY: populate-infores-ids
+populate-infores-ids: tmp/unsorted-resources.yml
+	$(RUN) python util/populate_infores_ids.py
+
 # Retrieve file sizes for products with URLs and update product_file_size field
 # Use parallel version by default for speed (10x faster)
 # Set PARALLEL=no to use the original sequential version
@@ -195,10 +202,10 @@ export PARALLEL_VALIDATION ?= yes
 export PARALLEL_WORKERS ?= 10
 
 ifeq ($(PARALLEL),yes)
-tmp/unsorted-resources-with-sizes.yml: tmp/unsorted-resources.yml
+tmp/unsorted-resources-with-sizes.yml: tmp/unsorted-resources.yml populate-infores-ids
 	$(RUN) python util/retrieve-file-sizes-parallel.py --max-workers $(MAX_WORKERS) $< $@.tmp && mv $@.tmp $@
 else
-tmp/unsorted-resources-with-sizes.yml: tmp/unsorted-resources.yml
+tmp/unsorted-resources-with-sizes.yml: tmp/unsorted-resources.yml populate-infores-ids
 	$(RUN) python util/retrieve-file-sizes.py $< $@.tmp && mv $@.tmp $@
 endif
 
@@ -219,7 +226,7 @@ tox:
 ## Single-file Convenience ##
 #############################
 
-.PHONY: validate-file prettify-file
+.PHONY: validate-file prettify-file populate-infores-dry-run populate-infores-force
 
 # Validate a single resource markdown file
 # Usage: make validate-file FILE=resource/<path>/<name>.md
@@ -246,6 +253,14 @@ prettify-file:
 	  exit 1; \
 	fi
 	@./util/extract-metadata.py prettify "$(FILE)"
+
+# Preview what infores IDs would be populated (dry run)
+populate-infores-dry-run:
+	$(RUN) python util/populate_infores_ids.py --dry-run --verbose
+
+# Force re-download of infores mapping files and populate
+populate-infores-force:
+	$(RUN) python util/populate_infores_ids.py --force-download
 
 ##########################
 ## Metadata Maintenance ##
