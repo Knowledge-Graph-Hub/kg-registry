@@ -19,6 +19,7 @@ domains:
 - drug discovery
 homepage_url: https://www.ebi.ac.uk/interpro/
 id: interpro
+infores_id: interpro
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -324,9 +325,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'''
 publications:
 - authors:

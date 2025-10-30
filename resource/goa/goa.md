@@ -56,7 +56,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
+  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/'''
 - category: Product
   description: GO annotations for all UniProtKB entries
@@ -70,7 +72,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
+  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'''
 - category: Product
   description: GO annotations for human proteins
@@ -84,7 +88,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
+  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'''
 - category: Product
   description: GO annotations for mouse proteins
@@ -98,7 +104,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
+  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'''
 - category: MappingProduct
   description: Files containing transitive assignments of InterPro matches, UniProtKB
@@ -115,7 +123,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
+  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'''
 - category: Product
   description: GO annotations for PDB entries
@@ -129,7 +139,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
+  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'''
 - category: Product
   description: GO annotations organized by proteomes
@@ -142,7 +154,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
+  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'''
 - category: DocumentationProduct
   description: Documentation including FAQ, About pages, and contact information

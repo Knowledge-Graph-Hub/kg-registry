@@ -18,6 +18,7 @@ domains:
 - health
 homepage_url: https://www.ncbi.nlm.nih.gov/snp/
 id: dbsnp
+infores_id: dbsnp
 layout: resource_detail
 license:
   id: https://www.ncbi.nlm.nih.gov/home/about/policies/
@@ -171,11 +172,11 @@ products:
   - gwascatalog
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-10-29_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 403 error
     when accessing file'
 publications:
 - authors:

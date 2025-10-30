@@ -24,6 +24,7 @@ domains:
 - systems biology
 homepage_url: https://thebiogrid.org/
 id: biogrid
+infores_id: biogrid
 last_modified_date: '2025-08-23T00:00:00Z'
 layout: resource_detail
 license:
@@ -850,11 +851,11 @@ products:
   - biogrid
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-10-29_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 403 error
     when accessing file'
 publications:
 - id: https://doi.org/10.1002/pro.3978

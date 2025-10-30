@@ -18,6 +18,7 @@ domains:
 - anatomy and development
 homepage_url: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
 id: zfa
+infores_id: zfa
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

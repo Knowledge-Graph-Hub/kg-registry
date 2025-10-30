@@ -19,7 +19,7 @@ domains:
 - biological systems
 homepage_url: https://www.ncbi.nlm.nih.gov/gene/
 id: ncbigene
-infores_id: ncbigene
+infores_id: ncbi-gene
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
@@ -507,11 +507,11 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-10-29_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 403 error
     when accessing file'
 publications:
 - authors:

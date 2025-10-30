@@ -31,6 +31,7 @@ domains:
 - pharmacology
 homepage_url: https://www.cancerrxgene.org/
 id: gdsc
+infores_id: gdsc
 layout: resource_detail
 license:
   id: https://www.cancerrxgene.org/legal
@@ -81,11 +82,11 @@ products:
   - gdsc
   product_url: https://ftp.sanger.ac.uk/project/cancerrxgene/releases/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-29_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple

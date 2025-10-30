@@ -17,6 +17,7 @@ domains:
 - precision medicine
 homepage_url: https://www.pharmgkb.org/
 id: pharmgkb
+infores_id: pharmgkb
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by-sa/4.0/
@@ -491,11 +492,11 @@ products:
   - drugbank
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-10-29_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 403 error
     when accessing file'
 repository: https://www.pharmgkb.org/downloads
 ---

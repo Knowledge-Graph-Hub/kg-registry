@@ -7,6 +7,7 @@ description: Stub Resource page for pubmed. This page was automatically generate
 domains:
 - stub
 id: pubmed
+infores_id: pubmed
 last_modified_date: '2025-07-17T00:00:00Z'
 layout: resource_detail
 name: Pubmed
@@ -57,11 +58,11 @@ products:
   - pubmed
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-10-29_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 403 error
     when accessing file'
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information

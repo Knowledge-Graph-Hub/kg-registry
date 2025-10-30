@@ -2,408 +2,402 @@
 activity_status: active
 category: Aggregator
 creation_date: '2004-01-01T00:00:00Z'
-description: miRBase is the primary online repository for microRNA sequences and annotations,
-  serving as the central registry for microRNA nomenclature and providing a comprehensive
-  archive of published microRNA data including sequences, annotations, predicted targets,
-  and deep sequencing evidence.
+description: miRBase is the primary online repository for microRNA sequences and annotations, serving as the central registry for microRNA nomenclature and providing a comprehensive archive of published microRNA data including sequences, annotations, predicted targets, and deep sequencing evidence.
 domains:
-- genomics
-- biological systems
+  - genomics
+  - biological systems
 homepage_url: https://www.mirbase.org/
 id: mirbase
 last_modified_date: '2025-10-21T00:00:00Z'
 layout: resource_detail
 name: miRBase
 products:
-- category: GraphicalInterface
-  description: Web portal for searching and browsing microRNA sequences by identifier,
-    keyword, genomic location, tissue expression, or sequence
-  format: http
-  id: mirbase.portal
-  name: miRBase Portal
-  product_url: https://www.mirbase.org/
-- category: GraphicalInterface
-  description: Browse interface for exploring microRNA entries organized by species
-    and other criteria
-  format: http
-  id: mirbase.browse
-  name: miRBase Browse Interface
-  product_url: https://www.mirbase.org/
-- category: GraphicalInterface
-  description: Search interface for finding microRNAs by genomic location coordinates
-  format: http
-  id: mirbase.genomic-search
-  name: Genomic Location Search
-  product_url: https://www.mirbase.org/
-- category: GraphicalInterface
-  description: Search interface for finding microRNAs by tissue expression patterns
-  format: http
-  id: mirbase.tissue-search
-  name: Tissue Expression Search
-  product_url: https://www.mirbase.org/
-- category: Product
-  compression: gzip
-  description: All published microRNA data in EMBL format
-  format: txt
-  id: mirbase.mirna-dat
-  name: miRNA.dat
-  product_url: https://www.mirbase.org/download/CURRENT/
-- category: Product
-  compression: gzip
-  description: FASTA format sequences of all microRNA hairpin precursors
-  format: fasta
-  id: mirbase.hairpin-fa
-  name: hairpin.fa
-  product_url: https://www.mirbase.org/download/CURRENT/
-- category: Product
-  compression: gzip
-  description: FASTA format sequences of all mature microRNA sequences
-  format: fasta
-  id: mirbase.mature-fa
-  name: mature.fa
-  product_url: https://www.mirbase.org/download/CURRENT/
-- category: Product
-  compression: gzip
-  description: List of changes between the last release and current release
-  format: txt
-  id: mirbase.diff
-  name: miRNA.diff
-  product_url: https://www.mirbase.org/download/CURRENT/
-- category: Product
-  compression: gzip
-  description: List of entries that have been removed from the database
-  format: txt
-  id: mirbase.dead
-  name: miRNA.dead
-  product_url: https://www.mirbase.org/download/CURRENT/
-- category: Product
-  compression: gzip
-  description: Genome coordinates for human microRNAs in GFF3 format
-  format: gff
-  id: mirbase.hsa-gff3
-  name: Human (hsa) Genome Coordinates
-  product_url: https://www.mirbase.org/download/CURRENT/
-- category: Product
-  compression: gzip
-  description: Genome coordinates for mouse microRNAs in GFF3 format
-  format: gff
-  id: mirbase.mmu-gff3
-  name: Mouse (mmu) Genome Coordinates
-  product_url: https://www.mirbase.org/download/CURRENT/
-- category: Product
-  compression: gzip
-  description: Genome coordinates for rat microRNAs in GFF3 format
-  format: gff
-  id: mirbase.rno-gff3
-  name: Rat (rno) Genome Coordinates
-  product_url: https://www.mirbase.org/download/CURRENT/
-- category: Product
-  compression: gzip
-  description: Genome coordinates for Drosophila microRNAs in GFF3 format
-  format: gff
-  id: mirbase.dme-gff3
-  name: Drosophila (dme) Genome Coordinates
-  product_url: https://www.mirbase.org/download/CURRENT/
-- category: Product
-  compression: gzip
-  description: Genome coordinates for C. elegans microRNAs in GFF3 format
-  format: gff
-  id: mirbase.cel-gff3
-  name: C. elegans (cel) Genome Coordinates
-  product_url: https://www.mirbase.org/download/CURRENT/
-- category: Product
-  compression: gzip
-  description: Genome coordinates for zebrafish microRNAs in GFF3 format
-  format: gff
-  id: mirbase.dre-gff3
-  name: Zebrafish (dre) Genome Coordinates
-  product_url: https://www.mirbase.org/download/CURRENT/
-- category: Product
-  compression: gzip
-  description: Genome coordinates for Arabidopsis microRNAs in GFF3 format
-  format: gff
-  id: mirbase.ath-gff3
-  name: Arabidopsis (ath) Genome Coordinates
-  product_url: https://www.mirbase.org/download/CURRENT/
-- category: Product
-  description: FTP archive with current release data files and previous releases
-  format: http
-  id: mirbase.ftp
-  name: miRBase FTP Archive
-  product_url: https://www.mirbase.org/download/CURRENT/
-- category: DocumentationProduct
-  description: Release notes and documentation for data file formats
-  format: txt
-  id: mirbase.readme
-  name: README
-  product_url: https://www.mirbase.org/download/CURRENT/
-- category: DocumentationProduct
-  description: Comprehensive help documentation including submission guidelines, search
-    instructions, genome assemblies, and naming conventions
-  format: http
-  id: mirbase.help
-  name: miRBase Help Documentation
-  product_url: https://www.mirbase.org/help/
-- category: GraphicalInterface
-  description: Web portal for searching and browsing ncRNA sequences, structures,
-    and annotations
-  format: http
-  id: rnacentral.portal
-  name: RNAcentral Portal
-  original_source:
-  - 5srrnadb
-  - crd
-  - dictybase
-  - ena
-  - ensembl
-  - evlncrnas
-  - expressionatlas
-  - flybase
-  - genecards
-  - greengenes
-  - gtrnadb
-  - hgnc
-  - intact
-  - lncbase
-  - lncbook
-  - lncipedia
-  - lncrnadb
-  - malacards
-  - mgnify
-  - mirbase
-  - mirgenedb
-  - modomics
-  - noncode
-  - pdbe
-  - pirbase
-  - plncdb
-  - pombase
-  - rdp
-  - rediportal
-  - rfam
-  - rgd
-  - ribocentre
-  - ribovision
-  - sgd
-  - silva
-  - snodb
-  - snopy
-  - snornadatabase
-  - srpdb
-  - tair
-  - tarbase
-  - tmrnawebsite
-  - zfin
-  - zwd
-  - rnacentral
-  product_url: https://rnacentral.org/
-- category: ProgrammingInterface
-  description: REST API for programmatic access to RNAcentral data
-  format: http
-  id: rnacentral.api
-  name: RNAcentral REST API
-  original_source:
-  - 5srrnadb
-  - crd
-  - dictybase
-  - ena
-  - ensembl
-  - evlncrnas
-  - expressionatlas
-  - flybase
-  - genecards
-  - greengenes
-  - gtrnadb
-  - hgnc
-  - intact
-  - lncbase
-  - lncbook
-  - lncipedia
-  - lncrnadb
-  - malacards
-  - mgnify
-  - mirbase
-  - mirgenedb
-  - modomics
-  - noncode
-  - pdbe
-  - pirbase
-  - plncdb
-  - pombase
-  - rdp
-  - rediportal
-  - rfam
-  - rgd
-  - ribocentre
-  - ribovision
-  - sgd
-  - silva
-  - snodb
-  - snopy
-  - snornadatabase
-  - srpdb
-  - tair
-  - tarbase
-  - tmrnawebsite
-  - zfin
-  - zwd
-  - rnacentral
-  product_url: https://rnacentral.org/api
-- category: Product
-  description: FTP archive with current and archived release files (sequences and
-    annotations)
-  format: http
-  id: rnacentral.ftp
-  name: RNAcentral FTP Archive
-  original_source:
-  - 5srrnadb
-  - crd
-  - dictybase
-  - ena
-  - ensembl
-  - evlncrnas
-  - expressionatlas
-  - flybase
-  - genecards
-  - greengenes
-  - gtrnadb
-  - hgnc
-  - intact
-  - lncbase
-  - lncbook
-  - lncipedia
-  - lncrnadb
-  - malacards
-  - mgnify
-  - mirbase
-  - mirgenedb
-  - modomics
-  - noncode
-  - pdbe
-  - pirbase
-  - plncdb
-  - pombase
-  - rdp
-  - rediportal
-  - rfam
-  - rgd
-  - ribocentre
-  - ribovision
-  - sgd
-  - silva
-  - snodb
-  - snopy
-  - snornadatabase
-  - srpdb
-  - tair
-  - tarbase
-  - tmrnawebsite
-  - zfin
-  - zwd
-  - rnacentral
-  product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
-- category: DataModelProduct
-  description: Public PostgreSQL database for direct SQL access to RNAcentral data
-  format: postgres
-  id: rnacentral.public-db
-  name: RNAcentral Public Postgres Database
-  original_source:
-  - 5srrnadb
-  - crd
-  - dictybase
-  - ena
-  - ensembl
-  - evlncrnas
-  - expressionatlas
-  - flybase
-  - genecards
-  - greengenes
-  - gtrnadb
-  - hgnc
-  - intact
-  - lncbase
-  - lncbook
-  - lncipedia
-  - lncrnadb
-  - malacards
-  - mgnify
-  - mirbase
-  - mirgenedb
-  - modomics
-  - noncode
-  - pdbe
-  - pirbase
-  - plncdb
-  - pombase
-  - rdp
-  - rediportal
-  - rfam
-  - rgd
-  - ribocentre
-  - ribovision
-  - sgd
-  - silva
-  - snodb
-  - snopy
-  - snornadatabase
-  - srpdb
-  - tair
-  - tarbase
-  - tmrnawebsite
-  - zfin
-  - zwd
-  - rnacentral
-  product_url: https://rnacentral.org/help/public-database
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing microRNA sequences by identifier, keyword, genomic location, tissue expression, or sequence
+    format: http
+    id: mirbase.portal
+    name: miRBase Portal
+    product_url: https://www.mirbase.org/
+  - category: GraphicalInterface
+    description: Browse interface for exploring microRNA entries organized by species and other criteria
+    format: http
+    id: mirbase.browse
+    name: miRBase Browse Interface
+    product_url: https://www.mirbase.org/
+  - category: GraphicalInterface
+    description: Search interface for finding microRNAs by genomic location coordinates
+    format: http
+    id: mirbase.genomic-search
+    name: Genomic Location Search
+    product_url: https://www.mirbase.org/
+  - category: GraphicalInterface
+    description: Search interface for finding microRNAs by tissue expression patterns
+    format: http
+    id: mirbase.tissue-search
+    name: Tissue Expression Search
+    product_url: https://www.mirbase.org/
+  - category: Product
+    compression: gzip
+    description: All published microRNA data in EMBL format
+    format: txt
+    id: mirbase.mirna-dat
+    name: miRNA.dat
+    product_url: https://www.mirbase.org/download/CURRENT/
+  - category: Product
+    compression: gzip
+    description: FASTA format sequences of all microRNA hairpin precursors
+    format: fasta
+    id: mirbase.hairpin-fa
+    name: hairpin.fa
+    product_url: https://www.mirbase.org/download/CURRENT/
+  - category: Product
+    compression: gzip
+    description: FASTA format sequences of all mature microRNA sequences
+    format: fasta
+    id: mirbase.mature-fa
+    name: mature.fa
+    product_url: https://www.mirbase.org/download/CURRENT/
+  - category: Product
+    compression: gzip
+    description: List of changes between the last release and current release
+    format: txt
+    id: mirbase.diff
+    name: miRNA.diff
+    product_url: https://www.mirbase.org/download/CURRENT/
+  - category: Product
+    compression: gzip
+    description: List of entries that have been removed from the database
+    format: txt
+    id: mirbase.dead
+    name: miRNA.dead
+    product_url: https://www.mirbase.org/download/CURRENT/
+  - category: Product
+    compression: gzip
+    description: Genome coordinates for human microRNAs in GFF3 format
+    format: gff
+    id: mirbase.hsa-gff3
+    name: Human (hsa) Genome Coordinates
+    product_url: https://www.mirbase.org/download/CURRENT/
+  - category: Product
+    compression: gzip
+    description: Genome coordinates for mouse microRNAs in GFF3 format
+    format: gff
+    id: mirbase.mmu-gff3
+    name: Mouse (mmu) Genome Coordinates
+    product_url: https://www.mirbase.org/download/CURRENT/
+  - category: Product
+    compression: gzip
+    description: Genome coordinates for rat microRNAs in GFF3 format
+    format: gff
+    id: mirbase.rno-gff3
+    name: Rat (rno) Genome Coordinates
+    product_url: https://www.mirbase.org/download/CURRENT/
+  - category: Product
+    compression: gzip
+    description: Genome coordinates for Drosophila microRNAs in GFF3 format
+    format: gff
+    id: mirbase.dme-gff3
+    name: Drosophila (dme) Genome Coordinates
+    product_url: https://www.mirbase.org/download/CURRENT/
+  - category: Product
+    compression: gzip
+    description: Genome coordinates for C. elegans microRNAs in GFF3 format
+    format: gff
+    id: mirbase.cel-gff3
+    name: C. elegans (cel) Genome Coordinates
+    product_url: https://www.mirbase.org/download/CURRENT/
+  - category: Product
+    compression: gzip
+    description: Genome coordinates for zebrafish microRNAs in GFF3 format
+    format: gff
+    id: mirbase.dre-gff3
+    name: Zebrafish (dre) Genome Coordinates
+    product_url: https://www.mirbase.org/download/CURRENT/
+  - category: Product
+    compression: gzip
+    description: Genome coordinates for Arabidopsis microRNAs in GFF3 format
+    format: gff
+    id: mirbase.ath-gff3
+    name: Arabidopsis (ath) Genome Coordinates
+    product_url: https://www.mirbase.org/download/CURRENT/
+  - category: Product
+    description: FTP archive with current release data files and previous releases
+    format: http
+    id: mirbase.ftp
+    name: miRBase FTP Archive
+    product_url: https://www.mirbase.org/download/CURRENT/
+  - category: DocumentationProduct
+    description: Release notes and documentation for data file formats
+    format: txt
+    id: mirbase.readme
+    name: README
+    product_url: https://www.mirbase.org/download/CURRENT/
+  - category: DocumentationProduct
+    description: Comprehensive help documentation including submission guidelines, search instructions, genome assemblies, and naming conventions
+    format: http
+    id: mirbase.help
+    name: miRBase Help Documentation
+    product_url: https://www.mirbase.org/help/
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
+    format: http
+    id: rnacentral.portal
+    name: RNAcentral Portal
+    original_source:
+      - 5srrnadb
+      - crd
+      - dictybase
+      - ena
+      - ensembl
+      - evlncrnas
+      - expressionatlas
+      - flybase
+      - genecards
+      - greengenes
+      - gtrnadb
+      - hgnc
+      - intact
+      - lncbase
+      - lncbook
+      - lncipedia
+      - lncrnadb
+      - malacards
+      - mgnify
+      - mirbase
+      - mirgenedb
+      - modomics
+      - noncode
+      - pdbe
+      - pirbase
+      - plncdb
+      - pombase
+      - rdp
+      - rediportal
+      - rfam
+      - rgd
+      - ribocentre
+      - ribovision
+      - sgd
+      - silva
+      - snodb
+      - snopy
+      - snornadatabase
+      - srpdb
+      - tair
+      - tarbase
+      - tmrnawebsite
+      - zfin
+      - zwd
+      - rnacentral
+    product_url: https://rnacentral.org/
+  - category: ProgrammingInterface
+    description: REST API for programmatic access to RNAcentral data
+    format: http
+    id: rnacentral.api
+    name: RNAcentral REST API
+    original_source:
+      - 5srrnadb
+      - crd
+      - dictybase
+      - ena
+      - ensembl
+      - evlncrnas
+      - expressionatlas
+      - flybase
+      - genecards
+      - greengenes
+      - gtrnadb
+      - hgnc
+      - intact
+      - lncbase
+      - lncbook
+      - lncipedia
+      - lncrnadb
+      - malacards
+      - mgnify
+      - mirbase
+      - mirgenedb
+      - modomics
+      - noncode
+      - pdbe
+      - pirbase
+      - plncdb
+      - pombase
+      - rdp
+      - rediportal
+      - rfam
+      - rgd
+      - ribocentre
+      - ribovision
+      - sgd
+      - silva
+      - snodb
+      - snopy
+      - snornadatabase
+      - srpdb
+      - tair
+      - tarbase
+      - tmrnawebsite
+      - zfin
+      - zwd
+      - rnacentral
+    product_url: https://rnacentral.org/api
+  - category: Product
+    description: FTP archive with current and archived release files (sequences and annotations)
+    format: http
+    id: rnacentral.ftp
+    name: RNAcentral FTP Archive
+    original_source:
+      - 5srrnadb
+      - crd
+      - dictybase
+      - ena
+      - ensembl
+      - evlncrnas
+      - expressionatlas
+      - flybase
+      - genecards
+      - greengenes
+      - gtrnadb
+      - hgnc
+      - intact
+      - lncbase
+      - lncbook
+      - lncipedia
+      - lncrnadb
+      - malacards
+      - mgnify
+      - mirbase
+      - mirgenedb
+      - modomics
+      - noncode
+      - pdbe
+      - pirbase
+      - plncdb
+      - pombase
+      - rdp
+      - rediportal
+      - rfam
+      - rgd
+      - ribocentre
+      - ribovision
+      - sgd
+      - silva
+      - snodb
+      - snopy
+      - snornadatabase
+      - srpdb
+      - tair
+      - tarbase
+      - tmrnawebsite
+      - zfin
+      - zwd
+      - rnacentral
+    product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+  - category: DataModelProduct
+    description: Public PostgreSQL database for direct SQL access to RNAcentral data
+    format: postgres
+    id: rnacentral.public-db
+    name: RNAcentral Public Postgres Database
+    original_source:
+      - 5srrnadb
+      - crd
+      - dictybase
+      - ena
+      - ensembl
+      - evlncrnas
+      - expressionatlas
+      - flybase
+      - genecards
+      - greengenes
+      - gtrnadb
+      - hgnc
+      - intact
+      - lncbase
+      - lncbook
+      - lncipedia
+      - lncrnadb
+      - malacards
+      - mgnify
+      - mirbase
+      - mirgenedb
+      - modomics
+      - noncode
+      - pdbe
+      - pirbase
+      - plncdb
+      - pombase
+      - rdp
+      - rediportal
+      - rfam
+      - rgd
+      - ribocentre
+      - ribovision
+      - sgd
+      - silva
+      - snodb
+      - snopy
+      - snornadatabase
+      - srpdb
+      - tair
+      - tarbase
+      - tmrnawebsite
+      - zfin
+      - zwd
+      - rnacentral
+    product_url: https://rnacentral.org/help/public-database
 publications:
-- authors:
-  - Kozomara
-  - Birgaoanu
-  - Griffiths-Jones
-  id: https://pubmed.ncbi.nlm.nih.gov/30423142/
-  journal: Nucleic Acids Research
-  preferred: true
-  title: 'miRBase: from microRNA sequences to function'
-  year: '2019'
-- authors:
-  - Kozomara
-  - Griffiths-Jones
-  id: https://pubmed.ncbi.nlm.nih.gov/24275495/
-  journal: Nucleic Acids Research
-  title: 'miRBase: annotating high confidence microRNAs using deep sequencing data'
-  year: '2014'
-- authors:
-  - Kozomara
-  - Griffiths-Jones
-  id: https://pubmed.ncbi.nlm.nih.gov/21037258/
-  journal: Nucleic Acids Research
-  title: 'miRBase: integrating microRNA annotation and deep-sequencing data'
-  year: '2011'
-- authors:
-  - Griffiths-Jones
-  - Saini
-  - van Dongen
-  - Enright
-  id: https://pubmed.ncbi.nlm.nih.gov/17991681/
-  journal: Nucleic Acids Research
-  title: 'miRBase: tools for microRNA genomics'
-  year: '2008'
-- authors:
-  - Griffiths-Jones
-  - Grocock
-  - van Dongen
-  - Bateman
-  - Enright
-  id: https://pubmed.ncbi.nlm.nih.gov/16381832/
-  journal: Nucleic Acids Research
-  title: 'miRBase: microRNA sequences, targets and gene nomenclature'
-  year: '2006'
-- authors:
-  - Griffiths-Jones
-  id: https://pubmed.ncbi.nlm.nih.gov/14681370/
-  journal: Nucleic Acids Research
-  title: The microRNA Registry
-  year: '2004'
+  - authors:
+      - Kozomara
+      - Birgaoanu
+      - Griffiths-Jones
+    id: https://pubmed.ncbi.nlm.nih.gov/30423142/
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'miRBase: from microRNA sequences to function'
+    year: '2019'
+  - authors:
+      - Kozomara
+      - Griffiths-Jones
+    id: https://pubmed.ncbi.nlm.nih.gov/24275495/
+    journal: Nucleic Acids Research
+    title: 'miRBase: annotating high confidence microRNAs using deep sequencing data'
+    year: '2014'
+  - authors:
+      - Kozomara
+      - Griffiths-Jones
+    id: https://pubmed.ncbi.nlm.nih.gov/21037258/
+    journal: Nucleic Acids Research
+    title: 'miRBase: integrating microRNA annotation and deep-sequencing data'
+    year: '2011'
+  - authors:
+      - Griffiths-Jones
+      - Saini
+      - van Dongen
+      - Enright
+    id: https://pubmed.ncbi.nlm.nih.gov/17991681/
+    journal: Nucleic Acids Research
+    title: 'miRBase: tools for microRNA genomics'
+    year: '2008'
+  - authors:
+      - Griffiths-Jones
+      - Grocock
+      - van Dongen
+      - Bateman
+      - Enright
+    id: https://pubmed.ncbi.nlm.nih.gov/16381832/
+    journal: Nucleic Acids Research
+    title: 'miRBase: microRNA sequences, targets and gene nomenclature'
+    year: '2006'
+  - authors:
+      - Griffiths-Jones
+    id: https://pubmed.ncbi.nlm.nih.gov/14681370/
+    journal: Nucleic Acids Research
+    title: The microRNA Registry
+    year: '2004'
+infores_id: mirbase
 ---
+
 # miRBase
 
 miRBase is the primary online repository for microRNA sequences and annotations, serving as the central registry for microRNA nomenclature. Originally established in 2004 as the microRNA Registry, miRBase has evolved into a comprehensive archive of published microRNA data from a wide range of species.

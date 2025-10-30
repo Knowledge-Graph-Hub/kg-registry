@@ -17,6 +17,7 @@ domains:
 - biological systems
 homepage_url: https://www.informatics.jax.org/vocab/mp_ontology/
 id: mp
+infores_id: mp
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
@@ -39,7 +40,7 @@ products:
   name: MP (OBO edition)
   product_url: http://purl.obolibrary.org/obo/mp.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-29: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-10-30: No Content-Length
     header found'
 - category: OntologyProduct
   description: For a description of the format see https://github.com/geneontology/obographs.

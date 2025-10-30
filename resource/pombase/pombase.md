@@ -14,6 +14,7 @@ domains:
 - organisms
 homepage_url: https://www.pombase.org/
 id: pombase
+infores_id: pombase
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -35,11 +36,11 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-28_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-10-29_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-10-29: No Content-Length
+  - File was not able to be retrieved when checked on 2025-10-30_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-10-30: No Content-Length
     header found'
 - category: Product
   description: Tab-delimited file of systematic ID, primary gene name (where assigned),
@@ -58,11 +59,11 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-28_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-10-29_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-10-29: No Content-Length
+  - File was not able to be retrieved when checked on 2025-10-30_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-10-30: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each

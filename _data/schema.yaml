@@ -291,6 +291,9 @@ enums:
       unresponsive:
         text: unresponsive
         description: The resource is no longer accessible. Only its metadata is available.
+      unknown:
+        text: unknown
+        description: The status of the resource is unknown.
   CompressionEnum:
     name: CompressionEnum
     description: The type of compression used with a product.
@@ -1694,6 +1697,22 @@ classes:
         - Ontology
         range: uriorcurie
         multivalued: true
+      synonyms:
+        name: synonyms
+        description: A list of synonyms for the resource. These may include acronyms,
+          abbreviations, or other alternate names for the resource. They are not necessarily
+          unique across resources.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: synonyms
+        owner: Resource
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        range: string
+        multivalued: true
       id:
         name: id
         description: The identifier of an entity. This is used to identify it within
@@ -2256,6 +2275,22 @@ classes:
         - Ontology
         range: uriorcurie
         multivalued: true
+      synonyms:
+        name: synonyms
+        description: A list of synonyms for the resource. These may include acronyms,
+          abbreviations, or other alternate names for the resource. They are not necessarily
+          unique across resources.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: synonyms
+        owner: KnowledgeGraph
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        range: string
+        multivalued: true
       id:
         name: id
         description: The identifier of an entity. This is used to identify it within
@@ -2763,6 +2798,22 @@ classes:
         - DataModel
         - Ontology
         range: uriorcurie
+        multivalued: true
+      synonyms:
+        name: synonyms
+        description: A list of synonyms for the resource. These may include acronyms,
+          abbreviations, or other alternate names for the resource. They are not necessarily
+          unique across resources.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: synonyms
+        owner: DataSource
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        range: string
         multivalued: true
       id:
         name: id
@@ -3275,6 +3326,22 @@ classes:
         - Ontology
         range: uriorcurie
         multivalued: true
+      synonyms:
+        name: synonyms
+        description: A list of synonyms for the resource. These may include acronyms,
+          abbreviations, or other alternate names for the resource. They are not necessarily
+          unique across resources.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: synonyms
+        owner: DataModel
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        range: string
+        multivalued: true
       id:
         name: id
         description: The identifier of an entity. This is used to identify it within
@@ -3786,6 +3853,22 @@ classes:
         - Ontology
         range: uriorcurie
         multivalued: true
+      synonyms:
+        name: synonyms
+        description: A list of synonyms for the resource. These may include acronyms,
+          abbreviations, or other alternate names for the resource. They are not necessarily
+          unique across resources.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: synonyms
+        owner: Ontology
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        range: string
+        multivalued: true
       id:
         name: id
         description: The identifier of an entity. This is used to identify it within
@@ -4295,6 +4378,22 @@ classes:
         - DataModel
         - Ontology
         range: uriorcurie
+        multivalued: true
+      synonyms:
+        name: synonyms
+        description: A list of synonyms for the resource. These may include acronyms,
+          abbreviations, or other alternate names for the resource. They are not necessarily
+          unique across resources.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: synonyms
+        owner: Aggregator
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        range: string
         multivalued: true
       id:
         name: id

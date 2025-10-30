@@ -10,6 +10,7 @@ domains:
 - chemistry and biochemistry
 homepage_url: https://www.rhea-db.org/
 id: rhea
+infores_id: rhea
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -44,9 +45,9 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-29_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-29_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -55,7 +56,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
     when accessing file'
 - category: Product
   description: rhea OBO Graph JSON
@@ -71,9 +72,9 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-29_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-29_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -82,7 +83,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: Rhea SSSOM

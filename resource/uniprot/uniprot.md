@@ -14,6 +14,7 @@ domains:
 - biomedical
 homepage_url: https://www.uniprot.org/
 id: uniprot
+infores_id: uniprot
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -97,11 +98,11 @@ products:
   secondary_source:
   - pombase
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2025-10-29_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-10-28_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-10-29: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-10-30: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -144,16 +145,16 @@ products:
   secondary_source:
   - oma
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 404 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-10-29_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 502 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-10-21_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-29_ HTTP 502 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-29: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
+    when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
@@ -653,11 +654,11 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-10-29_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 403 error
     when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD
@@ -670,10 +671,13 @@ products:
   secondary_source:
   - ttd
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
     to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
     by peer''))'
 - category: Product
@@ -686,9 +690,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'''
 - category: Product
   description: GO annotations for human proteins
@@ -700,9 +706,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'''
 - category: Product
   description: GO annotations for mouse proteins
@@ -714,9 +722,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'''
 - category: MappingProduct
   description: Files containing transitive assignments of InterPro matches, UniProtKB
@@ -731,9 +741,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'''
 repository: https://www.uniprot.org/help/downloads
 ---

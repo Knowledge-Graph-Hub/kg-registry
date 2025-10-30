@@ -17,6 +17,7 @@ domains:
 - anatomy and development
 homepage_url: http://purl.obolibrary.org/obo/fbbt
 id: fbbt
+infores_id: fbbt
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

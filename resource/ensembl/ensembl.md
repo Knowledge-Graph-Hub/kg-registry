@@ -13,7 +13,7 @@ domains:
 - genomics
 homepage_url: https://www.ensembl.org
 id: ensembl
-infores_id: ensembl
+infores_id: ensembl-gene
 layout: resource_detail
 license:
   id: http://www.apache.org/licenses/LICENSE-2.0
@@ -565,11 +565,11 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-10-29_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 403 error
     when accessing file'
 publications:
 - authors:

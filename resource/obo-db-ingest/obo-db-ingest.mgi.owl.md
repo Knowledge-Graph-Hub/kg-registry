@@ -9,9 +9,9 @@ license:
 name: mgi OWL
 product_url: https://w3id.org/biopragmatics/resources/mgi/mgi.owl
 warnings:
-- File was not able to be retrieved when checked on 2025-10-29_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-10-30_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-10-28_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-10-29_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
   to URL

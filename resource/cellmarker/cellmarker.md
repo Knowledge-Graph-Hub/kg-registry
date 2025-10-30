@@ -20,6 +20,7 @@ domains:
 - organisms
 homepage_url: http://xteam.xbio.top/
 id: cellmarker
+infores_id: cellmarker
 last_modified_date: '2025-07-20T00:00:00Z'
 layout: resource_detail
 name: CellMarker
@@ -30,28 +31,28 @@ products:
   name: Human Cell Markers
   product_url: http://xteam.xbio.top/download/Human_cell_markers.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-28_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2025-10-27_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-10-29_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-29: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-10-29_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-10-30: Timeout connecting
+    to URL'
 - category: Product
   description: Cell markers of different cell types from different tissues in mouse
   id: cellmarker.mouse
   name: Mouse Cell Markers
   product_url: http://xteam.xbio.top/download/Mouse_cell_markers.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-28_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2025-10-27_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-10-29_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-29: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-10-29_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-10-30: Timeout connecting
+    to URL'
 - category: Product
   description: Cell markers derived from single-cell sequencing researches in human
     and mouse
@@ -59,14 +60,14 @@ products:
   name: Single Cell Markers
   product_url: http://xteam.xbio.top/download/Single_cell_markers.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-28_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2025-10-27_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-10-29_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-29: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-10-29_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-10-30: Timeout connecting
+    to URL'
 - category: Product
   description: All cell markers of different cell types from different tissues in
     human and mouse
@@ -74,14 +75,14 @@ products:
   name: All Cell Markers
   product_url: http://xteam.xbio.top/download/all_cell_markers.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-28_ No Content-Length
-    header found
-  - File was not able to be retrieved when checked on 2025-10-27_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-10-29_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-29: No Content-Length
-    header found'
+  - File was not able to be retrieved when checked on 2025-10-29_ No Content-Length
+    header found
+  - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-10-30: Timeout connecting
+    to URL'
 - category: GraphicalInterface
   description: ACT is a tool that makes cell type annotation easier by integrating
     the CellMarker resource.

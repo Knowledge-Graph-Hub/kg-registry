@@ -2,24 +2,19 @@
 activity_status: active
 category: DataSource
 contacts:
-- category: Organization
-  contact_details:
-  - contact_type: email
-    value: support@clinicalgenome.org
-  - contact_type: url
-    value: https://clinicalgenome.org/about/contact-clingen/
-  label: ClinGen
-description: The Clinical Genome Resource (ClinGen) is a National Institutes of Health
-  (NIH)-funded resource dedicated to building a central resource that defines the
-  clinical relevance of genes and variants for use in precision medicine and research.
-  ClinGen brings together clinical and research experts to develop standard approaches
-  for interpreting genomic variants, curate evidence for gene-disease relationships,
-  and share this knowledge through freely accessible databases.
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: support@clinicalgenome.org
+      - contact_type: url
+        value: https://clinicalgenome.org/about/contact-clingen/
+    label: ClinGen
+description: The Clinical Genome Resource (ClinGen) is a National Institutes of Health (NIH)-funded resource dedicated to building a central resource that defines the clinical relevance of genes and variants for use in precision medicine and research. ClinGen brings together clinical and research experts to develop standard approaches for interpreting genomic variants, curate evidence for gene-disease relationships, and share this knowledge through freely accessible databases.
 domains:
-- genomics
-- biomedical
-- clinical
-- health
+  - genomics
+  - biomedical
+  - clinical
+  - health
 homepage_url: https://clinicalgenome.org/
 id: clingen
 layout: resource_detail
@@ -28,993 +23,974 @@ license:
   label: CC0 1.0
 name: ClinGen
 products:
-- category: DataProduct
-  description: ClinGen Gene-Disease Validity curations assess the strength of evidence
-    supporting or refuting a gene's role in a given disease. These curations classify
-    evidence as Definitive, Strong, Moderate, Limited, No Reported Evidence, or Disputed.
-  format: csv
-  id: clingen.gene-disease
-  name: Gene-Disease Validity Curations
-  product_url: https://search.clinicalgenome.org/kb/gene-validity
-- category: DataProduct
-  description: ClinGen Dosage Sensitivity curations evaluate whether genes and genomic
-    regions are sensitive to copy number variation. These curations determine if haploinsufficiency
-    (loss of one copy) or triplosensitivity (gain of one copy) of a gene/region causes
-    disease.
-  format: tsv
-  id: clingen.dosage
-  name: Dosage Sensitivity Curations
-  product_url: https://search.clinicalgenome.org/kb/gene-dosage
-- category: DataProduct
-  description: ClinGen Clinical Actionability evaluations assess the clinical actions
-    available to manage risk for patients with specific genetic disorders. These curations
-    score the actionability of gene-disease pairs based on severity, likelihood of
-    disease, efficacy of interventions, and knowledge base.
-  format: tsv
-  id: clingen.actionability
-  name: Clinical Actionability Curations
-  product_url: https://search.clinicalgenome.org/kb/actionability
-- category: DataProduct
-  description: ClinGen Variant Pathogenicity curations assess the clinical significance
-    of genetic variants based on ACMG/AMP guidelines. Expert panels classify variants
-    as Pathogenic, Likely Pathogenic, Uncertain Significance, Likely Benign, or Benign.
-  format: csv
-  id: clingen.variant
-  name: Variant Pathogenicity Curations
-  product_url: https://search.clinicalgenome.org/kb/variant-pathogenicity/all
-  warnings: []
-- category: ProgrammingInterface
-  description: REST API providing access to ClinGen's Evidence Repository for variant
-    pathogenicity assessments. Allows programmatic retrieval of structured evidence
-    used to evaluate the clinical significance of genetic variants.
-  id: clingen.evrepo.api
-  name: ClinGen Evidence Repository API
-  product_url: https://erepo.clinicalgenome.org/evrepo/api/
-- category: GraphicalInterface
-  description: Web-based interface for accessing ClinGen's curated data. Allows users
-    to search and browse curated gene-disease pairs, variant interpretations, and
-    other ClinGen resources.
-  id: clingen.web.interface
-  name: ClinGen Search Interface
-  product_url: https://search.clinicalgenome.org/
-- category: ProcessProduct
-  description: Framework for standardized interpretation of genetic variants, including
-    disease-specific modifications to the ACMG/AMP guidelines. These frameworks guide
-    variant classification by expert panels and clinical laboratories.
-  id: clingen.variant.frameworks
-  name: Variant Interpretation Frameworks
-  product_url: https://www.clinicalgenome.org/working-groups/sequence-variant-interpretation/
-- category: GraphProduct
-  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
-    instances as neo4j graph databases, running in a Docker container. Requires UMLS
-    API key to access.
-  dump_format: neo4j
-  id: ubkg.neo4j
-  name: UBKG Neo4j Docker Distribution
-  original_source:
-  - hgnc
-  - loinc
-  - icd10
-  - snomedct
-  - uberon
-  - pato
-  - cl
-  - doid
-  - obi
-  - obib
-  - edam
-  - hsapdv
-  - sbo
-  - mi
-  - chebi
-  - mp
-  - ordo
-  - uniprot
-  - uo
-  - mondo
-  - efo
-  - pgo
-  - gencode
-  - reactome
-  - hra
-  - hubmap
-  - sennet
-  - stellar
-  - dct
-  - clinvar
-  - connectivitymap
-  - hp
-  - mp
-  - msigdb
-  - wikipathways
-  - clingen
-  - string
-  - 4dn
-  - erccrbp
-  - erccreg
-  - faldo
-  - glycordf
-  - glycocoo
-  - gtex
-  - kidsfirst
-  - lincs
-  - motrpac
-  - mw
-  - npo
-  - sckan
-  - disgenet
-  - biomarker
-  - opentargets
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - ubkg
-- category: GraphProduct
-  description: Ontology CSV files that can be imported into a neo4j instance to create
-    a UBKG database. Requires UMLS API key to access.
-  format: csv
-  id: ubkg.csv
-  name: UBKG Ontology CSV Files
-  original_source:
-  - hgnc
-  - loinc
-  - icd10
-  - snomedct
-  - uberon
-  - pato
-  - cl
-  - doid
-  - obi
-  - obib
-  - edam
-  - hsapdv
-  - sbo
-  - mi
-  - chebi
-  - mp
-  - ordo
-  - uniprot
-  - uo
-  - mondo
-  - efo
-  - pgo
-  - gencode
-  - reactome
-  - hra
-  - hubmap
-  - sennet
-  - stellar
-  - dct
-  - clinvar
-  - connectivitymap
-  - hp
-  - mp
-  - msigdb
-  - wikipathways
-  - clingen
-  - string
-  - 4dn
-  - erccrbp
-  - erccreg
-  - faldo
-  - glycordf
-  - glycocoo
-  - gtex
-  - kidsfirst
-  - lincs
-  - motrpac
-  - mw
-  - npo
-  - sckan
-  - disgenet
-  - biomarker
-  - opentargets
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - ubkg
-- category: GraphProduct
-  description: DisGeNET data, including gene to disease associations and variant to
-    disease associations (requires registration and subscription).
-  id: disgenet.data
-  name: DisGeNET Data
-  original_source:
-  - clingen
-  - clinvar
-  - mgd
-  - rgd
-  - orphanet
-  - psygenet
-  - uniprot
-  - disgenet
-  - hp
-  - gwascatalog
-  - phewascat
-  - ukbiobank
-  - finngen
-  - clinicaltrialsgov
-  product_url: https://www.disgenet.com/
-  secondary_source:
-  - disgenet
-- category: GraphProduct
-  description: KGX Distribution of KG-Monarch
-  edge_count: 14783802
-  format: kgx
-  id: kg-monarch.graph
-  name: KGX Distribution of KG-Monarch
-  node_categories:
-  - biolink:AnatomicalEntity
-  - biolink:BiologicalProcess
-  - biolink:Cell
-  - biolink:CellularComponent
-  - biolink:ChemicalEntity
-  - biolink:Disease
-  - biolink:Gene
-  - biolink:Genotype
-  - biolink:LifeStage
-  - biolink:MolecularActivity
-  - biolink:MolecularEntity
-  - biolink:NamedThing
-  - biolink:OrganismTaxon
-  - biolink:Pathway
-  - biolink:PhenotypicFeature
-  - biolink:Protein
-  - biolink:SequenceVariant
-  node_count: 1366818
-  original_source:
-  - phenio
-  - alliance
-  - bgee
-  - biogrid
-  - clingen
-  - clinvar
-  - ctd
-  - dictybase
-  - go
-  - hp
-  - maxo
-  - panther
-  - pombase
-  - reactome
-  - string
-  - xenbase
-  - zfin
-  predicates:
-  - biolink:actively_involved_in
-  - biolink:acts_upstream_of
-  - biolink:acts_upstream_of_negative_effect
-  - biolink:acts_upstream_of_or_within
-  - biolink:acts_upstream_of_or_within_negative_effect
-  - biolink:acts_upstream_of_or_within_positive_effect
-  - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
-  - biolink:associated_with_increased_likelihood_of
-  - biolink:caused_by
-  - biolink:causes
-  - biolink:colocalizes_with
-  - biolink:contraindicated_in
-  - biolink:contributes_to
-  - biolink:disease_has_location
-  - biolink:disrupts
-  - biolink:enables
-  - biolink:expressed_in
-  - biolink:gene_associated_with_condition
-  - biolink:genetically_associated_with
-  - biolink:has_mode_of_inheritance
-  - biolink:has_participant
-  - biolink:has_phenotype
-  - biolink:has_sequence_variant
-  - biolink:interacts_with
-  - biolink:is_active_in
-  - biolink:is_sequence_variant_of
-  - biolink:located_in
-  - biolink:model_of
-  - biolink:orthologous_to
-  - biolink:part_of
-  - biolink:participates_in
-  - biolink:preventative_for_condition
-  - biolink:related_to
-  - biolink:subclass_of
-  - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 230877741
-  product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
-  secondary_source:
-  - kg-monarch
-- category: GraphProduct
-  description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 14783802
-  format: kgx-jsonl
-  id: kg-monarch.graph.jsonl
-  name: KGX JSON-L Distribution of KG-Monarch
-  node_categories:
-  - biolink:AnatomicalEntity
-  - biolink:BiologicalProcess
-  - biolink:Cell
-  - biolink:CellularComponent
-  - biolink:ChemicalEntity
-  - biolink:Disease
-  - biolink:Gene
-  - biolink:Genotype
-  - biolink:LifeStage
-  - biolink:MolecularActivity
-  - biolink:MolecularEntity
-  - biolink:NamedThing
-  - biolink:OrganismTaxon
-  - biolink:Pathway
-  - biolink:PhenotypicFeature
-  - biolink:Protein
-  - biolink:SequenceVariant
-  node_count: 1366818
-  original_source:
-  - phenio
-  - alliance
-  - bgee
-  - biogrid
-  - clingen
-  - clinvar
-  - ctd
-  - dictybase
-  - go
-  - hp
-  - maxo
-  - panther
-  - pombase
-  - reactome
-  - string
-  - xenbase
-  - zfin
-  predicates:
-  - biolink:actively_involved_in
-  - biolink:acts_upstream_of
-  - biolink:acts_upstream_of_negative_effect
-  - biolink:acts_upstream_of_or_within
-  - biolink:acts_upstream_of_or_within_negative_effect
-  - biolink:acts_upstream_of_or_within_positive_effect
-  - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
-  - biolink:associated_with_increased_likelihood_of
-  - biolink:caused_by
-  - biolink:causes
-  - biolink:colocalizes_with
-  - biolink:contraindicated_in
-  - biolink:contributes_to
-  - biolink:disease_has_location
-  - biolink:disrupts
-  - biolink:enables
-  - biolink:expressed_in
-  - biolink:gene_associated_with_condition
-  - biolink:genetically_associated_with
-  - biolink:has_mode_of_inheritance
-  - biolink:has_participant
-  - biolink:has_phenotype
-  - biolink:has_sequence_variant
-  - biolink:interacts_with
-  - biolink:is_active_in
-  - biolink:is_sequence_variant_of
-  - biolink:located_in
-  - biolink:model_of
-  - biolink:orthologous_to
-  - biolink:part_of
-  - biolink:participates_in
-  - biolink:preventative_for_condition
-  - biolink:related_to
-  - biolink:subclass_of
-  - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 315667976
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
-  secondary_source:
-  - kg-monarch
-- category: GraphProduct
-  description: RDF Distribution of KG-Monarch
-  edge_count: 14783802
-  format: rdfxml
-  id: kg-monarch.graph.rdf
-  name: RDF Distribution of KG-Monarch
-  node_categories:
-  - biolink:AnatomicalEntity
-  - biolink:BiologicalProcess
-  - biolink:Cell
-  - biolink:CellularComponent
-  - biolink:ChemicalEntity
-  - biolink:Disease
-  - biolink:Gene
-  - biolink:Genotype
-  - biolink:LifeStage
-  - biolink:MolecularActivity
-  - biolink:MolecularEntity
-  - biolink:NamedThing
-  - biolink:OrganismTaxon
-  - biolink:Pathway
-  - biolink:PhenotypicFeature
-  - biolink:Protein
-  - biolink:SequenceVariant
-  node_count: 1366818
-  original_source:
-  - phenio
-  - alliance
-  - bgee
-  - biogrid
-  - clingen
-  - clinvar
-  - ctd
-  - dictybase
-  - go
-  - hp
-  - maxo
-  - panther
-  - pombase
-  - reactome
-  - string
-  - xenbase
-  - zfin
-  predicates:
-  - biolink:actively_involved_in
-  - biolink:acts_upstream_of
-  - biolink:acts_upstream_of_negative_effect
-  - biolink:acts_upstream_of_or_within
-  - biolink:acts_upstream_of_or_within_negative_effect
-  - biolink:acts_upstream_of_or_within_positive_effect
-  - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
-  - biolink:associated_with_increased_likelihood_of
-  - biolink:caused_by
-  - biolink:causes
-  - biolink:colocalizes_with
-  - biolink:contraindicated_in
-  - biolink:contributes_to
-  - biolink:disease_has_location
-  - biolink:disrupts
-  - biolink:enables
-  - biolink:expressed_in
-  - biolink:gene_associated_with_condition
-  - biolink:genetically_associated_with
-  - biolink:has_mode_of_inheritance
-  - biolink:has_participant
-  - biolink:has_phenotype
-  - biolink:has_sequence_variant
-  - biolink:interacts_with
-  - biolink:is_active_in
-  - biolink:is_sequence_variant_of
-  - biolink:located_in
-  - biolink:model_of
-  - biolink:orthologous_to
-  - biolink:part_of
-  - biolink:participates_in
-  - biolink:preventative_for_condition
-  - biolink:related_to
-  - biolink:subclass_of
-  - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 879238775
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.nt.gz
-  secondary_source:
-  - kg-monarch
-- category: GraphProduct
-  description: Neo4j Dump of KG-Monarch
-  dump_format: neo4j
-  edge_count: 14783802
-  id: kg-monarch.graph.neo4j
-  name: Neo4j Dump of KG-Monarch
-  node_categories:
-  - biolink:AnatomicalEntity
-  - biolink:BiologicalProcess
-  - biolink:Cell
-  - biolink:CellularComponent
-  - biolink:ChemicalEntity
-  - biolink:Disease
-  - biolink:Gene
-  - biolink:Genotype
-  - biolink:LifeStage
-  - biolink:MolecularActivity
-  - biolink:MolecularEntity
-  - biolink:NamedThing
-  - biolink:OrganismTaxon
-  - biolink:Pathway
-  - biolink:PhenotypicFeature
-  - biolink:Protein
-  - biolink:SequenceVariant
-  node_count: 1366818
-  original_source:
-  - phenio
-  - alliance
-  - bgee
-  - biogrid
-  - clingen
-  - clinvar
-  - ctd
-  - dictybase
-  - go
-  - hp
-  - maxo
-  - panther
-  - pombase
-  - reactome
-  - string
-  - xenbase
-  - zfin
-  predicates:
-  - biolink:actively_involved_in
-  - biolink:acts_upstream_of
-  - biolink:acts_upstream_of_negative_effect
-  - biolink:acts_upstream_of_or_within
-  - biolink:acts_upstream_of_or_within_negative_effect
-  - biolink:acts_upstream_of_or_within_positive_effect
-  - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
-  - biolink:associated_with_increased_likelihood_of
-  - biolink:caused_by
-  - biolink:causes
-  - biolink:colocalizes_with
-  - biolink:contraindicated_in
-  - biolink:contributes_to
-  - biolink:disease_has_location
-  - biolink:disrupts
-  - biolink:enables
-  - biolink:expressed_in
-  - biolink:gene_associated_with_condition
-  - biolink:genetically_associated_with
-  - biolink:has_mode_of_inheritance
-  - biolink:has_participant
-  - biolink:has_phenotype
-  - biolink:has_sequence_variant
-  - biolink:interacts_with
-  - biolink:is_active_in
-  - biolink:is_sequence_variant_of
-  - biolink:located_in
-  - biolink:model_of
-  - biolink:orthologous_to
-  - biolink:part_of
-  - biolink:participates_in
-  - biolink:preventative_for_condition
-  - biolink:related_to
-  - biolink:subclass_of
-  - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 1438250397
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
-  secondary_source:
-  - kg-monarch
-  warnings: []
-- category: GraphProduct
-  description: DuckDB database of KG-Monarch
-  edge_count: 14783802
-  id: kg-monarch.graph.duckdb
-  name: DuckDB database of KG-Monarch
-  node_categories:
-  - biolink:AnatomicalEntity
-  - biolink:BiologicalProcess
-  - biolink:Cell
-  - biolink:CellularComponent
-  - biolink:ChemicalEntity
-  - biolink:Disease
-  - biolink:Gene
-  - biolink:Genotype
-  - biolink:LifeStage
-  - biolink:MolecularActivity
-  - biolink:MolecularEntity
-  - biolink:NamedThing
-  - biolink:OrganismTaxon
-  - biolink:Pathway
-  - biolink:PhenotypicFeature
-  - biolink:Protein
-  - biolink:SequenceVariant
-  node_count: 1366818
-  original_source:
-  - phenio
-  - alliance
-  - bgee
-  - biogrid
-  - clingen
-  - clinvar
-  - ctd
-  - dictybase
-  - go
-  - hp
-  - maxo
-  - panther
-  - pombase
-  - reactome
-  - string
-  - xenbase
-  - zfin
-  predicates:
-  - biolink:actively_involved_in
-  - biolink:acts_upstream_of
-  - biolink:acts_upstream_of_negative_effect
-  - biolink:acts_upstream_of_or_within
-  - biolink:acts_upstream_of_or_within_negative_effect
-  - biolink:acts_upstream_of_or_within_positive_effect
-  - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
-  - biolink:associated_with_increased_likelihood_of
-  - biolink:caused_by
-  - biolink:causes
-  - biolink:colocalizes_with
-  - biolink:contraindicated_in
-  - biolink:contributes_to
-  - biolink:disease_has_location
-  - biolink:disrupts
-  - biolink:enables
-  - biolink:expressed_in
-  - biolink:gene_associated_with_condition
-  - biolink:genetically_associated_with
-  - biolink:has_mode_of_inheritance
-  - biolink:has_participant
-  - biolink:has_phenotype
-  - biolink:has_sequence_variant
-  - biolink:interacts_with
-  - biolink:is_active_in
-  - biolink:is_sequence_variant_of
-  - biolink:located_in
-  - biolink:model_of
-  - biolink:orthologous_to
-  - biolink:part_of
-  - biolink:participates_in
-  - biolink:preventative_for_condition
-  - biolink:related_to
-  - biolink:subclass_of
-  - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 6827814912
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb
-  secondary_source:
-  - kg-monarch
-- category: GraphProduct
-  description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 14783802
-  format: kgx-jsonl
-  id: kg-monarch.graph.jsonl.edges
-  name: KGX JSON-L Distribution of KG-Monarch Edges
-  node_categories:
-  - biolink:AnatomicalEntity
-  - biolink:BiologicalProcess
-  - biolink:Cell
-  - biolink:CellularComponent
-  - biolink:ChemicalEntity
-  - biolink:Disease
-  - biolink:Gene
-  - biolink:Genotype
-  - biolink:LifeStage
-  - biolink:MolecularActivity
-  - biolink:MolecularEntity
-  - biolink:NamedThing
-  - biolink:OrganismTaxon
-  - biolink:Pathway
-  - biolink:PhenotypicFeature
-  - biolink:Protein
-  - biolink:SequenceVariant
-  node_count: 1366818
-  original_source:
-  - phenio
-  - alliance
-  - bgee
-  - biogrid
-  - clingen
-  - clinvar
-  - ctd
-  - dictybase
-  - go
-  - hp
-  - maxo
-  - panther
-  - pombase
-  - reactome
-  - string
-  - xenbase
-  - zfin
-  predicates:
-  - biolink:actively_involved_in
-  - biolink:acts_upstream_of
-  - biolink:acts_upstream_of_negative_effect
-  - biolink:acts_upstream_of_or_within
-  - biolink:acts_upstream_of_or_within_negative_effect
-  - biolink:acts_upstream_of_or_within_positive_effect
-  - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
-  - biolink:associated_with_increased_likelihood_of
-  - biolink:caused_by
-  - biolink:causes
-  - biolink:colocalizes_with
-  - biolink:contraindicated_in
-  - biolink:contributes_to
-  - biolink:disease_has_location
-  - biolink:disrupts
-  - biolink:enables
-  - biolink:expressed_in
-  - biolink:gene_associated_with_condition
-  - biolink:genetically_associated_with
-  - biolink:has_mode_of_inheritance
-  - biolink:has_participant
-  - biolink:has_phenotype
-  - biolink:has_sequence_variant
-  - biolink:interacts_with
-  - biolink:is_active_in
-  - biolink:is_sequence_variant_of
-  - biolink:located_in
-  - biolink:model_of
-  - biolink:orthologous_to
-  - biolink:part_of
-  - biolink:participates_in
-  - biolink:preventative_for_condition
-  - biolink:related_to
-  - biolink:subclass_of
-  - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 15279494795
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
-  secondary_source:
-  - kg-monarch
-- category: GraphProduct
-  description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 14783802
-  format: kgx-jsonl
-  id: kg-monarch.graph.jsonl.nodes
-  name: KGX JSON-L Distribution of KG-Monarch Nodes
-  node_categories:
-  - biolink:AnatomicalEntity
-  - biolink:BiologicalProcess
-  - biolink:Cell
-  - biolink:CellularComponent
-  - biolink:ChemicalEntity
-  - biolink:Disease
-  - biolink:Gene
-  - biolink:Genotype
-  - biolink:LifeStage
-  - biolink:MolecularActivity
-  - biolink:MolecularEntity
-  - biolink:NamedThing
-  - biolink:OrganismTaxon
-  - biolink:Pathway
-  - biolink:PhenotypicFeature
-  - biolink:Protein
-  - biolink:SequenceVariant
-  node_count: 1366818
-  original_source:
-  - phenio
-  - alliance
-  - bgee
-  - biogrid
-  - clingen
-  - clinvar
-  - ctd
-  - dictybase
-  - go
-  - hp
-  - maxo
-  - panther
-  - pombase
-  - reactome
-  - string
-  - xenbase
-  - zfin
-  predicates:
-  - biolink:actively_involved_in
-  - biolink:acts_upstream_of
-  - biolink:acts_upstream_of_negative_effect
-  - biolink:acts_upstream_of_or_within
-  - biolink:acts_upstream_of_or_within_negative_effect
-  - biolink:acts_upstream_of_or_within_positive_effect
-  - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
-  - biolink:associated_with_increased_likelihood_of
-  - biolink:caused_by
-  - biolink:causes
-  - biolink:colocalizes_with
-  - biolink:contraindicated_in
-  - biolink:contributes_to
-  - biolink:disease_has_location
-  - biolink:disrupts
-  - biolink:enables
-  - biolink:expressed_in
-  - biolink:gene_associated_with_condition
-  - biolink:genetically_associated_with
-  - biolink:has_mode_of_inheritance
-  - biolink:has_participant
-  - biolink:has_phenotype
-  - biolink:has_sequence_variant
-  - biolink:interacts_with
-  - biolink:is_active_in
-  - biolink:is_sequence_variant_of
-  - biolink:located_in
-  - biolink:model_of
-  - biolink:orthologous_to
-  - biolink:part_of
-  - biolink:participates_in
-  - biolink:preventative_for_condition
-  - biolink:related_to
-  - biolink:subclass_of
-  - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 1149505896
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
-  secondary_source:
-  - kg-monarch
-- category: GraphProduct
-  description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 14783802
-  format: neo4j
-  id: kg-monarch.graph.neo4j.edges
-  name: Neo4j Dump of KG-Monarch Edges
-  node_categories:
-  - biolink:AnatomicalEntity
-  - biolink:BiologicalProcess
-  - biolink:Cell
-  - biolink:CellularComponent
-  - biolink:ChemicalEntity
-  - biolink:Disease
-  - biolink:Gene
-  - biolink:Genotype
-  - biolink:LifeStage
-  - biolink:MolecularActivity
-  - biolink:MolecularEntity
-  - biolink:NamedThing
-  - biolink:OrganismTaxon
-  - biolink:Pathway
-  - biolink:PhenotypicFeature
-  - biolink:Protein
-  - biolink:SequenceVariant
-  node_count: 1366818
-  original_source:
-  - phenio
-  - alliance
-  - bgee
-  - biogrid
-  - clingen
-  - clinvar
-  - ctd
-  - dictybase
-  - go
-  - hp
-  - maxo
-  - panther
-  - pombase
-  - reactome
-  - string
-  - xenbase
-  - zfin
-  predicates:
-  - biolink:actively_involved_in
-  - biolink:acts_upstream_of
-  - biolink:acts_upstream_of_negative_effect
-  - biolink:acts_upstream_of_or_within
-  - biolink:acts_upstream_of_or_within_negative_effect
-  - biolink:acts_upstream_of_or_within_positive_effect
-  - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
-  - biolink:associated_with_increased_likelihood_of
-  - biolink:caused_by
-  - biolink:causes
-  - biolink:colocalizes_with
-  - biolink:contraindicated_in
-  - biolink:contributes_to
-  - biolink:disease_has_location
-  - biolink:disrupts
-  - biolink:enables
-  - biolink:expressed_in
-  - biolink:gene_associated_with_condition
-  - biolink:genetically_associated_with
-  - biolink:has_mode_of_inheritance
-  - biolink:has_participant
-  - biolink:has_phenotype
-  - biolink:has_sequence_variant
-  - biolink:interacts_with
-  - biolink:is_active_in
-  - biolink:is_sequence_variant_of
-  - biolink:located_in
-  - biolink:model_of
-  - biolink:orthologous_to
-  - biolink:part_of
-  - biolink:participates_in
-  - biolink:preventative_for_condition
-  - biolink:related_to
-  - biolink:subclass_of
-  - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 4386388748
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
-  secondary_source:
-  - kg-monarch
-- category: GraphProduct
-  description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 14783802
-  format: neo4j
-  id: kg-monarch.graph.neo4j.nodes
-  name: Neo4j Dump of KG-Monarch Nodes
-  node_categories:
-  - biolink:AnatomicalEntity
-  - biolink:BiologicalProcess
-  - biolink:Cell
-  - biolink:CellularComponent
-  - biolink:ChemicalEntity
-  - biolink:Disease
-  - biolink:Gene
-  - biolink:Genotype
-  - biolink:LifeStage
-  - biolink:MolecularActivity
-  - biolink:MolecularEntity
-  - biolink:NamedThing
-  - biolink:OrganismTaxon
-  - biolink:Pathway
-  - biolink:PhenotypicFeature
-  - biolink:Protein
-  - biolink:SequenceVariant
-  node_count: 1366818
-  original_source:
-  - phenio
-  - alliance
-  - bgee
-  - biogrid
-  - clingen
-  - clinvar
-  - ctd
-  - dictybase
-  - go
-  - hp
-  - maxo
-  - panther
-  - pombase
-  - reactome
-  - string
-  - xenbase
-  - zfin
-  predicates:
-  - biolink:actively_involved_in
-  - biolink:acts_upstream_of
-  - biolink:acts_upstream_of_negative_effect
-  - biolink:acts_upstream_of_or_within
-  - biolink:acts_upstream_of_or_within_negative_effect
-  - biolink:acts_upstream_of_or_within_positive_effect
-  - biolink:acts_upstream_of_positive_effect
-  - biolink:ameliorates_condition
-  - biolink:associated_with_increased_likelihood_of
-  - biolink:caused_by
-  - biolink:causes
-  - biolink:colocalizes_with
-  - biolink:contraindicated_in
-  - biolink:contributes_to
-  - biolink:disease_has_location
-  - biolink:disrupts
-  - biolink:enables
-  - biolink:expressed_in
-  - biolink:gene_associated_with_condition
-  - biolink:genetically_associated_with
-  - biolink:has_mode_of_inheritance
-  - biolink:has_participant
-  - biolink:has_phenotype
-  - biolink:has_sequence_variant
-  - biolink:interacts_with
-  - biolink:is_active_in
-  - biolink:is_sequence_variant_of
-  - biolink:located_in
-  - biolink:model_of
-  - biolink:orthologous_to
-  - biolink:part_of
-  - biolink:participates_in
-  - biolink:preventative_for_condition
-  - biolink:related_to
-  - biolink:subclass_of
-  - biolink:treats_or_applied_or_studied_to_treat
-  product_file_size: 349573789
-  product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
-  secondary_source:
-  - kg-monarch
+  - category: DataProduct
+    description: ClinGen Gene-Disease Validity curations assess the strength of evidence supporting or refuting a gene's role in a given disease. These curations classify evidence as Definitive, Strong, Moderate, Limited, No Reported Evidence, or Disputed.
+    format: csv
+    id: clingen.gene-disease
+    name: Gene-Disease Validity Curations
+    product_url: https://search.clinicalgenome.org/kb/gene-validity
+  - category: DataProduct
+    description: ClinGen Dosage Sensitivity curations evaluate whether genes and genomic regions are sensitive to copy number variation. These curations determine if haploinsufficiency (loss of one copy) or triplosensitivity (gain of one copy) of a gene/region causes disease.
+    format: tsv
+    id: clingen.dosage
+    name: Dosage Sensitivity Curations
+    product_url: https://search.clinicalgenome.org/kb/gene-dosage
+  - category: DataProduct
+    description: ClinGen Clinical Actionability evaluations assess the clinical actions available to manage risk for patients with specific genetic disorders. These curations score the actionability of gene-disease pairs based on severity, likelihood of disease, efficacy of interventions, and knowledge base.
+    format: tsv
+    id: clingen.actionability
+    name: Clinical Actionability Curations
+    product_url: https://search.clinicalgenome.org/kb/actionability
+  - category: DataProduct
+    description: ClinGen Variant Pathogenicity curations assess the clinical significance of genetic variants based on ACMG/AMP guidelines. Expert panels classify variants as Pathogenic, Likely Pathogenic, Uncertain Significance, Likely Benign, or Benign.
+    format: csv
+    id: clingen.variant
+    name: Variant Pathogenicity Curations
+    product_url: https://search.clinicalgenome.org/kb/variant-pathogenicity/all
+    warnings: []
+  - category: ProgrammingInterface
+    description: REST API providing access to ClinGen's Evidence Repository for variant pathogenicity assessments. Allows programmatic retrieval of structured evidence used to evaluate the clinical significance of genetic variants.
+    id: clingen.evrepo.api
+    name: ClinGen Evidence Repository API
+    product_url: https://erepo.clinicalgenome.org/evrepo/api/
+  - category: GraphicalInterface
+    description: Web-based interface for accessing ClinGen's curated data. Allows users to search and browse curated gene-disease pairs, variant interpretations, and other ClinGen resources.
+    id: clingen.web.interface
+    name: ClinGen Search Interface
+    product_url: https://search.clinicalgenome.org/
+  - category: ProcessProduct
+    description: Framework for standardized interpretation of genetic variants, including disease-specific modifications to the ACMG/AMP guidelines. These frameworks guide variant classification by expert panels and clinical laboratories.
+    id: clingen.variant.frameworks
+    name: Variant Interpretation Frameworks
+    product_url: https://www.clinicalgenome.org/working-groups/sequence-variant-interpretation/
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
+    dump_format: neo4j
+    id: ubkg.neo4j
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+      - hgnc
+      - loinc
+      - icd10
+      - snomedct
+      - uberon
+      - pato
+      - cl
+      - doid
+      - obi
+      - obib
+      - edam
+      - hsapdv
+      - sbo
+      - mi
+      - chebi
+      - mp
+      - ordo
+      - uniprot
+      - uo
+      - mondo
+      - efo
+      - pgo
+      - gencode
+      - reactome
+      - hra
+      - hubmap
+      - sennet
+      - stellar
+      - dct
+      - clinvar
+      - connectivitymap
+      - hp
+      - mp
+      - msigdb
+      - wikipathways
+      - clingen
+      - string
+      - 4dn
+      - erccrbp
+      - erccreg
+      - faldo
+      - glycordf
+      - glycocoo
+      - gtex
+      - kidsfirst
+      - lincs
+      - motrpac
+      - mw
+      - npo
+      - sckan
+      - disgenet
+      - biomarker
+      - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+      - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: ubkg.csv
+    name: UBKG Ontology CSV Files
+    original_source:
+      - hgnc
+      - loinc
+      - icd10
+      - snomedct
+      - uberon
+      - pato
+      - cl
+      - doid
+      - obi
+      - obib
+      - edam
+      - hsapdv
+      - sbo
+      - mi
+      - chebi
+      - mp
+      - ordo
+      - uniprot
+      - uo
+      - mondo
+      - efo
+      - pgo
+      - gencode
+      - reactome
+      - hra
+      - hubmap
+      - sennet
+      - stellar
+      - dct
+      - clinvar
+      - connectivitymap
+      - hp
+      - mp
+      - msigdb
+      - wikipathways
+      - clingen
+      - string
+      - 4dn
+      - erccrbp
+      - erccreg
+      - faldo
+      - glycordf
+      - glycocoo
+      - gtex
+      - kidsfirst
+      - lincs
+      - motrpac
+      - mw
+      - npo
+      - sckan
+      - disgenet
+      - biomarker
+      - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+      - ubkg
+  - category: GraphProduct
+    description: DisGeNET data, including gene to disease associations and variant to disease associations (requires registration and subscription).
+    id: disgenet.data
+    name: DisGeNET Data
+    original_source:
+      - clingen
+      - clinvar
+      - mgd
+      - rgd
+      - orphanet
+      - psygenet
+      - uniprot
+      - disgenet
+      - hp
+      - gwascatalog
+      - phewascat
+      - ukbiobank
+      - finngen
+      - clinicaltrialsgov
+    product_url: https://www.disgenet.com/
+    secondary_source:
+      - disgenet
+  - category: GraphProduct
+    description: KGX Distribution of KG-Monarch
+    edge_count: 14783802
+    format: kgx
+    id: kg-monarch.graph
+    name: KGX Distribution of KG-Monarch
+    node_categories:
+      - biolink:AnatomicalEntity
+      - biolink:BiologicalProcess
+      - biolink:Cell
+      - biolink:CellularComponent
+      - biolink:ChemicalEntity
+      - biolink:Disease
+      - biolink:Gene
+      - biolink:Genotype
+      - biolink:LifeStage
+      - biolink:MolecularActivity
+      - biolink:MolecularEntity
+      - biolink:NamedThing
+      - biolink:OrganismTaxon
+      - biolink:Pathway
+      - biolink:PhenotypicFeature
+      - biolink:Protein
+      - biolink:SequenceVariant
+    node_count: 1366818
+    original_source:
+      - phenio
+      - alliance
+      - bgee
+      - biogrid
+      - clingen
+      - clinvar
+      - ctd
+      - dictybase
+      - go
+      - hp
+      - maxo
+      - panther
+      - pombase
+      - reactome
+      - string
+      - xenbase
+      - zfin
+    predicates:
+      - biolink:actively_involved_in
+      - biolink:acts_upstream_of
+      - biolink:acts_upstream_of_negative_effect
+      - biolink:acts_upstream_of_or_within
+      - biolink:acts_upstream_of_or_within_negative_effect
+      - biolink:acts_upstream_of_or_within_positive_effect
+      - biolink:acts_upstream_of_positive_effect
+      - biolink:ameliorates_condition
+      - biolink:associated_with_increased_likelihood_of
+      - biolink:caused_by
+      - biolink:causes
+      - biolink:colocalizes_with
+      - biolink:contraindicated_in
+      - biolink:contributes_to
+      - biolink:disease_has_location
+      - biolink:disrupts
+      - biolink:enables
+      - biolink:expressed_in
+      - biolink:gene_associated_with_condition
+      - biolink:genetically_associated_with
+      - biolink:has_mode_of_inheritance
+      - biolink:has_participant
+      - biolink:has_phenotype
+      - biolink:has_sequence_variant
+      - biolink:interacts_with
+      - biolink:is_active_in
+      - biolink:is_sequence_variant_of
+      - biolink:located_in
+      - biolink:model_of
+      - biolink:orthologous_to
+      - biolink:part_of
+      - biolink:participates_in
+      - biolink:preventative_for_condition
+      - biolink:related_to
+      - biolink:subclass_of
+      - biolink:treats_or_applied_or_studied_to_treat
+    product_file_size: 230877741
+    product_url: http://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.tar.gz
+    secondary_source:
+      - kg-monarch
+  - category: GraphProduct
+    description: KGX JSON-Lines Distribution of KG-Monarch
+    edge_count: 14783802
+    format: kgx-jsonl
+    id: kg-monarch.graph.jsonl
+    name: KGX JSON-L Distribution of KG-Monarch
+    node_categories:
+      - biolink:AnatomicalEntity
+      - biolink:BiologicalProcess
+      - biolink:Cell
+      - biolink:CellularComponent
+      - biolink:ChemicalEntity
+      - biolink:Disease
+      - biolink:Gene
+      - biolink:Genotype
+      - biolink:LifeStage
+      - biolink:MolecularActivity
+      - biolink:MolecularEntity
+      - biolink:NamedThing
+      - biolink:OrganismTaxon
+      - biolink:Pathway
+      - biolink:PhenotypicFeature
+      - biolink:Protein
+      - biolink:SequenceVariant
+    node_count: 1366818
+    original_source:
+      - phenio
+      - alliance
+      - bgee
+      - biogrid
+      - clingen
+      - clinvar
+      - ctd
+      - dictybase
+      - go
+      - hp
+      - maxo
+      - panther
+      - pombase
+      - reactome
+      - string
+      - xenbase
+      - zfin
+    predicates:
+      - biolink:actively_involved_in
+      - biolink:acts_upstream_of
+      - biolink:acts_upstream_of_negative_effect
+      - biolink:acts_upstream_of_or_within
+      - biolink:acts_upstream_of_or_within_negative_effect
+      - biolink:acts_upstream_of_or_within_positive_effect
+      - biolink:acts_upstream_of_positive_effect
+      - biolink:ameliorates_condition
+      - biolink:associated_with_increased_likelihood_of
+      - biolink:caused_by
+      - biolink:causes
+      - biolink:colocalizes_with
+      - biolink:contraindicated_in
+      - biolink:contributes_to
+      - biolink:disease_has_location
+      - biolink:disrupts
+      - biolink:enables
+      - biolink:expressed_in
+      - biolink:gene_associated_with_condition
+      - biolink:genetically_associated_with
+      - biolink:has_mode_of_inheritance
+      - biolink:has_participant
+      - biolink:has_phenotype
+      - biolink:has_sequence_variant
+      - biolink:interacts_with
+      - biolink:is_active_in
+      - biolink:is_sequence_variant_of
+      - biolink:located_in
+      - biolink:model_of
+      - biolink:orthologous_to
+      - biolink:part_of
+      - biolink:participates_in
+      - biolink:preventative_for_condition
+      - biolink:related_to
+      - biolink:subclass_of
+      - biolink:treats_or_applied_or_studied_to_treat
+    product_file_size: 315667976
+    product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.jsonl.tar.gz
+    secondary_source:
+      - kg-monarch
+  - category: GraphProduct
+    description: RDF Distribution of KG-Monarch
+    edge_count: 14783802
+    format: rdfxml
+    id: kg-monarch.graph.rdf
+    name: RDF Distribution of KG-Monarch
+    node_categories:
+      - biolink:AnatomicalEntity
+      - biolink:BiologicalProcess
+      - biolink:Cell
+      - biolink:CellularComponent
+      - biolink:ChemicalEntity
+      - biolink:Disease
+      - biolink:Gene
+      - biolink:Genotype
+      - biolink:LifeStage
+      - biolink:MolecularActivity
+      - biolink:MolecularEntity
+      - biolink:NamedThing
+      - biolink:OrganismTaxon
+      - biolink:Pathway
+      - biolink:PhenotypicFeature
+      - biolink:Protein
+      - biolink:SequenceVariant
+    node_count: 1366818
+    original_source:
+      - phenio
+      - alliance
+      - bgee
+      - biogrid
+      - clingen
+      - clinvar
+      - ctd
+      - dictybase
+      - go
+      - hp
+      - maxo
+      - panther
+      - pombase
+      - reactome
+      - string
+      - xenbase
+      - zfin
+    predicates:
+      - biolink:actively_involved_in
+      - biolink:acts_upstream_of
+      - biolink:acts_upstream_of_negative_effect
+      - biolink:acts_upstream_of_or_within
+      - biolink:acts_upstream_of_or_within_negative_effect
+      - biolink:acts_upstream_of_or_within_positive_effect
+      - biolink:acts_upstream_of_positive_effect
+      - biolink:ameliorates_condition
+      - biolink:associated_with_increased_likelihood_of
+      - biolink:caused_by
+      - biolink:causes
+      - biolink:colocalizes_with
+      - biolink:contraindicated_in
+      - biolink:contributes_to
+      - biolink:disease_has_location
+      - biolink:disrupts
+      - biolink:enables
+      - biolink:expressed_in
+      - biolink:gene_associated_with_condition
+      - biolink:genetically_associated_with
+      - biolink:has_mode_of_inheritance
+      - biolink:has_participant
+      - biolink:has_phenotype
+      - biolink:has_sequence_variant
+      - biolink:interacts_with
+      - biolink:is_active_in
+      - biolink:is_sequence_variant_of
+      - biolink:located_in
+      - biolink:model_of
+      - biolink:orthologous_to
+      - biolink:part_of
+      - biolink:participates_in
+      - biolink:preventative_for_condition
+      - biolink:related_to
+      - biolink:subclass_of
+      - biolink:treats_or_applied_or_studied_to_treat
+    product_file_size: 879238775
+    product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.nt.gz
+    secondary_source:
+      - kg-monarch
+  - category: GraphProduct
+    description: Neo4j Dump of KG-Monarch
+    dump_format: neo4j
+    edge_count: 14783802
+    id: kg-monarch.graph.neo4j
+    name: Neo4j Dump of KG-Monarch
+    node_categories:
+      - biolink:AnatomicalEntity
+      - biolink:BiologicalProcess
+      - biolink:Cell
+      - biolink:CellularComponent
+      - biolink:ChemicalEntity
+      - biolink:Disease
+      - biolink:Gene
+      - biolink:Genotype
+      - biolink:LifeStage
+      - biolink:MolecularActivity
+      - biolink:MolecularEntity
+      - biolink:NamedThing
+      - biolink:OrganismTaxon
+      - biolink:Pathway
+      - biolink:PhenotypicFeature
+      - biolink:Protein
+      - biolink:SequenceVariant
+    node_count: 1366818
+    original_source:
+      - phenio
+      - alliance
+      - bgee
+      - biogrid
+      - clingen
+      - clinvar
+      - ctd
+      - dictybase
+      - go
+      - hp
+      - maxo
+      - panther
+      - pombase
+      - reactome
+      - string
+      - xenbase
+      - zfin
+    predicates:
+      - biolink:actively_involved_in
+      - biolink:acts_upstream_of
+      - biolink:acts_upstream_of_negative_effect
+      - biolink:acts_upstream_of_or_within
+      - biolink:acts_upstream_of_or_within_negative_effect
+      - biolink:acts_upstream_of_or_within_positive_effect
+      - biolink:acts_upstream_of_positive_effect
+      - biolink:ameliorates_condition
+      - biolink:associated_with_increased_likelihood_of
+      - biolink:caused_by
+      - biolink:causes
+      - biolink:colocalizes_with
+      - biolink:contraindicated_in
+      - biolink:contributes_to
+      - biolink:disease_has_location
+      - biolink:disrupts
+      - biolink:enables
+      - biolink:expressed_in
+      - biolink:gene_associated_with_condition
+      - biolink:genetically_associated_with
+      - biolink:has_mode_of_inheritance
+      - biolink:has_participant
+      - biolink:has_phenotype
+      - biolink:has_sequence_variant
+      - biolink:interacts_with
+      - biolink:is_active_in
+      - biolink:is_sequence_variant_of
+      - biolink:located_in
+      - biolink:model_of
+      - biolink:orthologous_to
+      - biolink:part_of
+      - biolink:participates_in
+      - biolink:preventative_for_condition
+      - biolink:related_to
+      - biolink:subclass_of
+      - biolink:treats_or_applied_or_studied_to_treat
+    product_file_size: 1438250397
+    product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.neo4j.dump
+    secondary_source:
+      - kg-monarch
+    warnings: []
+  - category: GraphProduct
+    description: DuckDB database of KG-Monarch
+    edge_count: 14783802
+    id: kg-monarch.graph.duckdb
+    name: DuckDB database of KG-Monarch
+    node_categories:
+      - biolink:AnatomicalEntity
+      - biolink:BiologicalProcess
+      - biolink:Cell
+      - biolink:CellularComponent
+      - biolink:ChemicalEntity
+      - biolink:Disease
+      - biolink:Gene
+      - biolink:Genotype
+      - biolink:LifeStage
+      - biolink:MolecularActivity
+      - biolink:MolecularEntity
+      - biolink:NamedThing
+      - biolink:OrganismTaxon
+      - biolink:Pathway
+      - biolink:PhenotypicFeature
+      - biolink:Protein
+      - biolink:SequenceVariant
+    node_count: 1366818
+    original_source:
+      - phenio
+      - alliance
+      - bgee
+      - biogrid
+      - clingen
+      - clinvar
+      - ctd
+      - dictybase
+      - go
+      - hp
+      - maxo
+      - panther
+      - pombase
+      - reactome
+      - string
+      - xenbase
+      - zfin
+    predicates:
+      - biolink:actively_involved_in
+      - biolink:acts_upstream_of
+      - biolink:acts_upstream_of_negative_effect
+      - biolink:acts_upstream_of_or_within
+      - biolink:acts_upstream_of_or_within_negative_effect
+      - biolink:acts_upstream_of_or_within_positive_effect
+      - biolink:acts_upstream_of_positive_effect
+      - biolink:ameliorates_condition
+      - biolink:associated_with_increased_likelihood_of
+      - biolink:caused_by
+      - biolink:causes
+      - biolink:colocalizes_with
+      - biolink:contraindicated_in
+      - biolink:contributes_to
+      - biolink:disease_has_location
+      - biolink:disrupts
+      - biolink:enables
+      - biolink:expressed_in
+      - biolink:gene_associated_with_condition
+      - biolink:genetically_associated_with
+      - biolink:has_mode_of_inheritance
+      - biolink:has_participant
+      - biolink:has_phenotype
+      - biolink:has_sequence_variant
+      - biolink:interacts_with
+      - biolink:is_active_in
+      - biolink:is_sequence_variant_of
+      - biolink:located_in
+      - biolink:model_of
+      - biolink:orthologous_to
+      - biolink:part_of
+      - biolink:participates_in
+      - biolink:preventative_for_condition
+      - biolink:related_to
+      - biolink:subclass_of
+      - biolink:treats_or_applied_or_studied_to_treat
+    product_file_size: 6827814912
+    product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg.duckdb
+    secondary_source:
+      - kg-monarch
+  - category: GraphProduct
+    description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
+    edge_count: 14783802
+    format: kgx-jsonl
+    id: kg-monarch.graph.jsonl.edges
+    name: KGX JSON-L Distribution of KG-Monarch Edges
+    node_categories:
+      - biolink:AnatomicalEntity
+      - biolink:BiologicalProcess
+      - biolink:Cell
+      - biolink:CellularComponent
+      - biolink:ChemicalEntity
+      - biolink:Disease
+      - biolink:Gene
+      - biolink:Genotype
+      - biolink:LifeStage
+      - biolink:MolecularActivity
+      - biolink:MolecularEntity
+      - biolink:NamedThing
+      - biolink:OrganismTaxon
+      - biolink:Pathway
+      - biolink:PhenotypicFeature
+      - biolink:Protein
+      - biolink:SequenceVariant
+    node_count: 1366818
+    original_source:
+      - phenio
+      - alliance
+      - bgee
+      - biogrid
+      - clingen
+      - clinvar
+      - ctd
+      - dictybase
+      - go
+      - hp
+      - maxo
+      - panther
+      - pombase
+      - reactome
+      - string
+      - xenbase
+      - zfin
+    predicates:
+      - biolink:actively_involved_in
+      - biolink:acts_upstream_of
+      - biolink:acts_upstream_of_negative_effect
+      - biolink:acts_upstream_of_or_within
+      - biolink:acts_upstream_of_or_within_negative_effect
+      - biolink:acts_upstream_of_or_within_positive_effect
+      - biolink:acts_upstream_of_positive_effect
+      - biolink:ameliorates_condition
+      - biolink:associated_with_increased_likelihood_of
+      - biolink:caused_by
+      - biolink:causes
+      - biolink:colocalizes_with
+      - biolink:contraindicated_in
+      - biolink:contributes_to
+      - biolink:disease_has_location
+      - biolink:disrupts
+      - biolink:enables
+      - biolink:expressed_in
+      - biolink:gene_associated_with_condition
+      - biolink:genetically_associated_with
+      - biolink:has_mode_of_inheritance
+      - biolink:has_participant
+      - biolink:has_phenotype
+      - biolink:has_sequence_variant
+      - biolink:interacts_with
+      - biolink:is_active_in
+      - biolink:is_sequence_variant_of
+      - biolink:located_in
+      - biolink:model_of
+      - biolink:orthologous_to
+      - biolink:part_of
+      - biolink:participates_in
+      - biolink:preventative_for_condition
+      - biolink:related_to
+      - biolink:subclass_of
+      - biolink:treats_or_applied_or_studied_to_treat
+    product_file_size: 15279494795
+    product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.jsonl
+    secondary_source:
+      - kg-monarch
+  - category: GraphProduct
+    description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
+    edge_count: 14783802
+    format: kgx-jsonl
+    id: kg-monarch.graph.jsonl.nodes
+    name: KGX JSON-L Distribution of KG-Monarch Nodes
+    node_categories:
+      - biolink:AnatomicalEntity
+      - biolink:BiologicalProcess
+      - biolink:Cell
+      - biolink:CellularComponent
+      - biolink:ChemicalEntity
+      - biolink:Disease
+      - biolink:Gene
+      - biolink:Genotype
+      - biolink:LifeStage
+      - biolink:MolecularActivity
+      - biolink:MolecularEntity
+      - biolink:NamedThing
+      - biolink:OrganismTaxon
+      - biolink:Pathway
+      - biolink:PhenotypicFeature
+      - biolink:Protein
+      - biolink:SequenceVariant
+    node_count: 1366818
+    original_source:
+      - phenio
+      - alliance
+      - bgee
+      - biogrid
+      - clingen
+      - clinvar
+      - ctd
+      - dictybase
+      - go
+      - hp
+      - maxo
+      - panther
+      - pombase
+      - reactome
+      - string
+      - xenbase
+      - zfin
+    predicates:
+      - biolink:actively_involved_in
+      - biolink:acts_upstream_of
+      - biolink:acts_upstream_of_negative_effect
+      - biolink:acts_upstream_of_or_within
+      - biolink:acts_upstream_of_or_within_negative_effect
+      - biolink:acts_upstream_of_or_within_positive_effect
+      - biolink:acts_upstream_of_positive_effect
+      - biolink:ameliorates_condition
+      - biolink:associated_with_increased_likelihood_of
+      - biolink:caused_by
+      - biolink:causes
+      - biolink:colocalizes_with
+      - biolink:contraindicated_in
+      - biolink:contributes_to
+      - biolink:disease_has_location
+      - biolink:disrupts
+      - biolink:enables
+      - biolink:expressed_in
+      - biolink:gene_associated_with_condition
+      - biolink:genetically_associated_with
+      - biolink:has_mode_of_inheritance
+      - biolink:has_participant
+      - biolink:has_phenotype
+      - biolink:has_sequence_variant
+      - biolink:interacts_with
+      - biolink:is_active_in
+      - biolink:is_sequence_variant_of
+      - biolink:located_in
+      - biolink:model_of
+      - biolink:orthologous_to
+      - biolink:part_of
+      - biolink:participates_in
+      - biolink:preventative_for_condition
+      - biolink:related_to
+      - biolink:subclass_of
+      - biolink:treats_or_applied_or_studied_to_treat
+    product_file_size: 1149505896
+    product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.jsonl
+    secondary_source:
+      - kg-monarch
+  - category: GraphProduct
+    description: Neo4j Dump of KG-Monarch Edges
+    edge_count: 14783802
+    format: neo4j
+    id: kg-monarch.graph.neo4j.edges
+    name: Neo4j Dump of KG-Monarch Edges
+    node_categories:
+      - biolink:AnatomicalEntity
+      - biolink:BiologicalProcess
+      - biolink:Cell
+      - biolink:CellularComponent
+      - biolink:ChemicalEntity
+      - biolink:Disease
+      - biolink:Gene
+      - biolink:Genotype
+      - biolink:LifeStage
+      - biolink:MolecularActivity
+      - biolink:MolecularEntity
+      - biolink:NamedThing
+      - biolink:OrganismTaxon
+      - biolink:Pathway
+      - biolink:PhenotypicFeature
+      - biolink:Protein
+      - biolink:SequenceVariant
+    node_count: 1366818
+    original_source:
+      - phenio
+      - alliance
+      - bgee
+      - biogrid
+      - clingen
+      - clinvar
+      - ctd
+      - dictybase
+      - go
+      - hp
+      - maxo
+      - panther
+      - pombase
+      - reactome
+      - string
+      - xenbase
+      - zfin
+    predicates:
+      - biolink:actively_involved_in
+      - biolink:acts_upstream_of
+      - biolink:acts_upstream_of_negative_effect
+      - biolink:acts_upstream_of_or_within
+      - biolink:acts_upstream_of_or_within_negative_effect
+      - biolink:acts_upstream_of_or_within_positive_effect
+      - biolink:acts_upstream_of_positive_effect
+      - biolink:ameliorates_condition
+      - biolink:associated_with_increased_likelihood_of
+      - biolink:caused_by
+      - biolink:causes
+      - biolink:colocalizes_with
+      - biolink:contraindicated_in
+      - biolink:contributes_to
+      - biolink:disease_has_location
+      - biolink:disrupts
+      - biolink:enables
+      - biolink:expressed_in
+      - biolink:gene_associated_with_condition
+      - biolink:genetically_associated_with
+      - biolink:has_mode_of_inheritance
+      - biolink:has_participant
+      - biolink:has_phenotype
+      - biolink:has_sequence_variant
+      - biolink:interacts_with
+      - biolink:is_active_in
+      - biolink:is_sequence_variant_of
+      - biolink:located_in
+      - biolink:model_of
+      - biolink:orthologous_to
+      - biolink:part_of
+      - biolink:participates_in
+      - biolink:preventative_for_condition
+      - biolink:related_to
+      - biolink:subclass_of
+      - biolink:treats_or_applied_or_studied_to_treat
+    product_file_size: 4386388748
+    product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_edges.neo4j.csv
+    secondary_source:
+      - kg-monarch
+  - category: GraphProduct
+    description: Neo4j Dump of KG-Monarch Nodes
+    edge_count: 14783802
+    format: neo4j
+    id: kg-monarch.graph.neo4j.nodes
+    name: Neo4j Dump of KG-Monarch Nodes
+    node_categories:
+      - biolink:AnatomicalEntity
+      - biolink:BiologicalProcess
+      - biolink:Cell
+      - biolink:CellularComponent
+      - biolink:ChemicalEntity
+      - biolink:Disease
+      - biolink:Gene
+      - biolink:Genotype
+      - biolink:LifeStage
+      - biolink:MolecularActivity
+      - biolink:MolecularEntity
+      - biolink:NamedThing
+      - biolink:OrganismTaxon
+      - biolink:Pathway
+      - biolink:PhenotypicFeature
+      - biolink:Protein
+      - biolink:SequenceVariant
+    node_count: 1366818
+    original_source:
+      - phenio
+      - alliance
+      - bgee
+      - biogrid
+      - clingen
+      - clinvar
+      - ctd
+      - dictybase
+      - go
+      - hp
+      - maxo
+      - panther
+      - pombase
+      - reactome
+      - string
+      - xenbase
+      - zfin
+    predicates:
+      - biolink:actively_involved_in
+      - biolink:acts_upstream_of
+      - biolink:acts_upstream_of_negative_effect
+      - biolink:acts_upstream_of_or_within
+      - biolink:acts_upstream_of_or_within_negative_effect
+      - biolink:acts_upstream_of_or_within_positive_effect
+      - biolink:acts_upstream_of_positive_effect
+      - biolink:ameliorates_condition
+      - biolink:associated_with_increased_likelihood_of
+      - biolink:caused_by
+      - biolink:causes
+      - biolink:colocalizes_with
+      - biolink:contraindicated_in
+      - biolink:contributes_to
+      - biolink:disease_has_location
+      - biolink:disrupts
+      - biolink:enables
+      - biolink:expressed_in
+      - biolink:gene_associated_with_condition
+      - biolink:genetically_associated_with
+      - biolink:has_mode_of_inheritance
+      - biolink:has_participant
+      - biolink:has_phenotype
+      - biolink:has_sequence_variant
+      - biolink:interacts_with
+      - biolink:is_active_in
+      - biolink:is_sequence_variant_of
+      - biolink:located_in
+      - biolink:model_of
+      - biolink:orthologous_to
+      - biolink:part_of
+      - biolink:participates_in
+      - biolink:preventative_for_condition
+      - biolink:related_to
+      - biolink:subclass_of
+      - biolink:treats_or_applied_or_studied_to_treat
+    product_file_size: 349573789
+    product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
+    secondary_source:
+      - kg-monarch
 publications:
-- authors:
-  - Rehm HL
-  - Berg JS
-  - Brooks LD
-  - Bustamante CD
-  - Evans JP
-  - Landrum MJ
-  - Ledbetter DH
-  - et al.
-  doi: doi:10.1056/NEJMsr1406261
-  id: https://doi.org/10.1056/NEJMsr1406261
-  journal: New England Journal of Medicine
-  preferred: true
-  title: "ClinGen \u2014 The Clinical Genome Resource"
-  year: '2015'
-- authors:
-  - ClinGen Consortium
-  doi: doi:10.1016/j.gim.2024.101228
-  id: https://doi.org/10.1016/j.gim.2024.101228
-  journal: Genetics in Medicine
-  title: 'The Clinical Genome Resource (ClinGen): Advancing genomic knowledge through
-    global curation'
-  year: '2024'
+  - authors:
+      - Rehm HL
+      - Berg JS
+      - Brooks LD
+      - Bustamante CD
+      - Evans JP
+      - Landrum MJ
+      - Ledbetter DH
+      - et al.
+    doi: doi:10.1056/NEJMsr1406261
+    id: https://doi.org/10.1056/NEJMsr1406261
+    journal: New England Journal of Medicine
+    preferred: true
+    title: "ClinGen — The Clinical Genome Resource"
+    year: '2015'
+  - authors:
+      - ClinGen Consortium
+    doi: doi:10.1016/j.gim.2024.101228
+    id: https://doi.org/10.1016/j.gim.2024.101228
+    journal: Genetics in Medicine
+    title: 'The Clinical Genome Resource (ClinGen): Advancing genomic knowledge through global curation'
+    year: '2024'
+infores_id: clingen
 ---
+
 # ClinGen - Clinical Genome Resource
 
 ## Overview

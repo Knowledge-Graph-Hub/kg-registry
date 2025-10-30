@@ -24,6 +24,7 @@ domains:
 - environment
 homepage_url: https://github.com/EnvironmentOntology/environmental-exposure-ontology
 id: ecto
+infores_id: ecto
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/

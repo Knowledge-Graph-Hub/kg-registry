@@ -15,6 +15,7 @@ domains:
 - phenotype
 homepage_url: https://monarch-initiative.github.io/phenio/
 id: phenio
+infores_id: phenio
 layout: resource_detail
 license:
   id: https://opensource.org/license/bsd-3-clause
@@ -36,13 +37,13 @@ products:
   secondary_source:
   - phenio
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-29_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-29_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   compatibility:

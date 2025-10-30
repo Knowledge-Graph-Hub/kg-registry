@@ -18,6 +18,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/HUPO-PSI/psi-mi-CV
 id: mi
+infores_id: mi
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
