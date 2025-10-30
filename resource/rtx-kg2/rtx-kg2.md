@@ -2,25 +2,23 @@
 activity_status: active
 category: KnowledgeGraph
 collection:
-- translator
+  - translator
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: ramseyst@oregonstate.edu
-  - contact_type: github
-    value: saramsey
-  label: Stephen Ramsey
-  orcid: 0000-0002-2168-5403
-description: RTX-KG2 is a comprehensive biomedical knowledge graph that integrates
-  information from over 80 structured knowledge sources into a semantically standardized
-  model, supporting translational biomedicine and the ARAX biomedical reasoning system.
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: ramseyst@oregonstate.edu
+      - contact_type: github
+        value: saramsey
+    label: Stephen Ramsey
+    orcid: 0000-0002-2168-5403
+description: RTX-KG2 is a comprehensive biomedical knowledge graph that integrates information from over 80 structured knowledge sources into a semantically standardized model, supporting translational biomedicine and the ARAX biomedical reasoning system.
 domains:
-- health
-- biomedical
-- biological systems
-- genomics
-- pharmacology
+  - health
+  - biomedical
+  - biological systems
+  - genomics
+  - pharmacology
 homepage_url: https://github.com/RTXteam/RTX-KG2
 id: rtx-kg2
 layout: resource_detail
@@ -30,117 +28,118 @@ license:
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: RTX-KG2
 products:
-- category: GraphProduct
-  description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-  format: kgx-jsonl
-  id: rtx-kg2.graph.nodes
-  name: RTX-KG2.10.1c KGX JSONL Nodes
-  original_source:
-  - chembl
-  - drugbank
-  - kegg
-  - reactome
-  - go
-  - drugcentral
-  - uniprot
-  - mondo
-  - hp
-  - chebi
-  - uberon
-  - ncbitaxon
-  - dgidb
-  - disgenet
-  - ensembl
-  - gtopdb
-  - rtx-kg2
-  - semmeddb
-  product_file_size: 376501785
-  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-  secondary_source:
-  - rtx-kg2
-- category: GraphProduct
-  description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-  format: kgx-jsonl
-  id: rtx-kg2.graph.edges
-  name: RTX-KG2.10.1c KGX JSONL Edges
-  original_source:
-  - chembl
-  - drugbank
-  - kegg
-  - reactome
-  - go
-  - drugcentral
-  - uniprot
-  - mondo
-  - hp
-  - chebi
-  - uberon
-  - ncbitaxon
-  - dgidb
-  - disgenet
-  - ensembl
-  - gtopdb
-  - rtx-kg2
-  - semmeddb
-  product_file_size: 1807360397
-  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-  secondary_source:
-  - rtx-kg2
-- category: ProcessProduct
-  description: Code for building RTX-KG2, in Python
-  id: rtx-kg2.code
-  name: Code for building RTX-KG2
-  product_url: https://github.com/RTXteam/RTX-KG2
-  secondary_source:
-  - rtx-kg2
-- category: ProgrammingInterface
-  description: Neo4j distribution of the RTX-KG2 as a graph database
-  dump_format: neo4j
-  id: rtx-kg2.neo4j
-  is_neo4j: true
-  is_public: false
-  name: RTX-KG2 Neo4j
-  original_source:
-  - chembl
-  - drugbank
-  - kegg
-  - reactome
-  - go
-  - drugcentral
-  - uniprot
-  - mondo
-  - hp
-  - chebi
-  - uberon
-  - ncbitaxon
-  - dgidb
-  - disgenet
-  - ensembl
-  - gtopdb
-  - rtx-kg2
-  - semmeddb
-  product_url: https://arax.ncats.io/
-  secondary_source:
-  - rtx-kg2
+  - category: GraphProduct
+    description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.nodes
+    name: RTX-KG2.10.1c KGX JSONL Nodes
+    original_source:
+      - chembl
+      - drugbank
+      - kegg
+      - reactome
+      - go
+      - drugcentral
+      - uniprot
+      - mondo
+      - hp
+      - chebi
+      - uberon
+      - ncbitaxon
+      - dgidb
+      - disgenet
+      - ensembl
+      - gtopdb
+      - rtx-kg2
+      - semmeddb
+    product_file_size: 376501785
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+    secondary_source:
+      - rtx-kg2
+  - category: GraphProduct
+    description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+    format: kgx-jsonl
+    id: rtx-kg2.graph.edges
+    name: RTX-KG2.10.1c KGX JSONL Edges
+    original_source:
+      - chembl
+      - drugbank
+      - kegg
+      - reactome
+      - go
+      - drugcentral
+      - uniprot
+      - mondo
+      - hp
+      - chebi
+      - uberon
+      - ncbitaxon
+      - dgidb
+      - disgenet
+      - ensembl
+      - gtopdb
+      - rtx-kg2
+      - semmeddb
+    product_file_size: 1807360397
+    product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+    secondary_source:
+      - rtx-kg2
+  - category: ProcessProduct
+    description: Code for building RTX-KG2, in Python
+    id: rtx-kg2.code
+    name: Code for building RTX-KG2
+    product_url: https://github.com/RTXteam/RTX-KG2
+    secondary_source:
+      - rtx-kg2
+  - category: ProgrammingInterface
+    description: Neo4j distribution of the RTX-KG2 as a graph database
+    dump_format: neo4j
+    id: rtx-kg2.neo4j
+    is_neo4j: true
+    is_public: false
+    name: RTX-KG2 Neo4j
+    original_source:
+      - chembl
+      - drugbank
+      - kegg
+      - reactome
+      - go
+      - drugcentral
+      - uniprot
+      - mondo
+      - hp
+      - chebi
+      - uberon
+      - ncbitaxon
+      - dgidb
+      - disgenet
+      - ensembl
+      - gtopdb
+      - rtx-kg2
+      - semmeddb
+    product_url: https://arax.ncats.io/
+    secondary_source:
+      - rtx-kg2
 publications:
-- authors:
-  - Wood EC
-  - Glen AK
-  - Kvarfordt LG
-  - Colby LA
-  - Unni DR
-  - Himmelstein DS
-  - Lee AY
-  - Ramsey SA
-  doi: doi:10.1186/s12859-022-04932-3
-  id: https://doi.org/10.1186/s12859-022-04932-3
-  journal: BMC Bioinformatics
-  preferred: true
-  title: 'RTX-KG2: a system for building a semantically standardized knowledge graph
-    for translational biomedicine'
-  year: '2022'
+  - authors:
+      - Wood EC
+      - Glen AK
+      - Kvarfordt LG
+      - Colby LA
+      - Unni DR
+      - Himmelstein DS
+      - Lee AY
+      - Ramsey SA
+    doi: doi:10.1186/s12859-022-04932-3
+    id: https://doi.org/10.1186/s12859-022-04932-3
+    journal: BMC Bioinformatics
+    preferred: true
+    title: 'RTX-KG2: a system for building a semantically standardized knowledge graph for translational biomedicine'
+    year: '2022'
 repository: https://github.com/RTXteam/RTX-KG2
+infores_id: rtx-kg2
 ---
+
 ## RTX-KG2: A Semantically Standardized Knowledge Graph for Translational Biomedicine
 
 RTX-KG2 is the second-generation knowledge graph for the [ARAX](https://github.com/RTXteam/RTX) biomedical reasoning system, developed by the Reasoning Tool X (RTX) team. It integrates information from over 80 biomedical knowledge sources, including ontologies, drug databases, gene-disease associations, protein interactions, and more.

@@ -21,6 +21,7 @@ domains:
 - drug discovery
 homepage_url: https://www.disgenet.com/
 id: disgenet
+infores_id: disgenet
 layout: resource_detail
 license:
   id: https://www.disgenet.com/Legal
@@ -583,11 +584,11 @@ products:
   - disgenet
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-10-29_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 403 error
     when accessing file'
 publications:
 - authors:

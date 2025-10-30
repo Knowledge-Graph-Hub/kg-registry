@@ -19,6 +19,7 @@ domains:
 - biomedical
 homepage_url: https://github.com/monarch-initiative/MAxO
 id: maxo
+infores_id: maxo
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/

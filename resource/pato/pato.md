@@ -17,6 +17,7 @@ domains:
 - biological systems
 homepage_url: https://github.com/pato-ontology/pato/
 id: pato
+infores_id: pato
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

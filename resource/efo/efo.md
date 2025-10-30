@@ -20,6 +20,7 @@ domains:
 - phenotype
 homepage_url: https://www.ebi.ac.uk/efo/
 id: efo
+infores_id: efo
 layout: resource_detail
 license:
   id: https://www.apache.org/licenses/LICENSE-2.0

@@ -18,6 +18,7 @@ domains:
 - biomedical
 homepage_url: http://www.pathbase.net
 id: mpath
+infores_id: mpath
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/3.0/

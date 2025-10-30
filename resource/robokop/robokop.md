@@ -2,16 +2,14 @@
 activity_status: active
 category: KnowledgeGraph
 contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: kfecho@copperlineprofessionalsolutions.com
-  label: Karamarie Fecho
-description: ROBOKOP (Reasoning Over Biomedical Objects linked in Knowledge Oriented
-  Pathways) is an open-source biomedical knowledge graph system that enables complex
-  queries over a large-scale integrated knowledge graph.
+  - category: Individual
+    contact_details:
+      - contact_type: email
+        value: kfecho@copperlineprofessionalsolutions.com
+    label: Karamarie Fecho
+description: ROBOKOP (Reasoning Over Biomedical Objects linked in Knowledge Oriented Pathways) is an open-source biomedical knowledge graph system that enables complex queries over a large-scale integrated knowledge graph.
 domains:
-- health
+  - health
 homepage_url: http://robokop.renci.org
 id: robokop
 layout: resource_detail
@@ -20,39 +18,40 @@ license:
   label: MIT License
 name: ROBOKOP
 products:
-- category: Product
-  description: A biomedical knowledge graph containing ~10 million nodes and ~250
-    million edges from ~30 biological data sources and bio-ontologies.
-  id: robokop.graph
-  name: ROBOKOP Knowledge Graph (KG)
-  original_source:
-  - robokop
-  product_file_size: 280
-  product_url: http://robokopkg.renci.org
-  secondary_source:
-  - robokop
-- category: GraphProduct
-  description: Robokop KG (Automat)
-  format: kgx-jsonl
-  id: automat.robokopkg
-  name: robokopkg
-  original_source:
-  - robokop
-  product_url: https://stars.renci.org/var/plater/bl-4.2.1/RobokopKG/4901b2bc764444ea/
-  secondary_source:
-  - automat
-- category: GraphProduct
-  description: Robokop Plus
-  format: kgx-jsonl
-  id: automat.robokopplus
-  name: robokopplus
-  original_source:
-  - robokop
-  product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/ad8cb4d0a7ccc923/kgx_files/
-  secondary_source:
-  - automat
+  - category: Product
+    description: A biomedical knowledge graph containing ~10 million nodes and ~250 million edges from ~30 biological data sources and bio-ontologies.
+    id: robokop.graph
+    name: ROBOKOP Knowledge Graph (KG)
+    original_source:
+      - robokop
+    product_file_size: 280
+    product_url: http://robokopkg.renci.org
+    secondary_source:
+      - robokop
+  - category: GraphProduct
+    description: Robokop KG (Automat)
+    format: kgx-jsonl
+    id: automat.robokopkg
+    name: robokopkg
+    original_source:
+      - robokop
+    product_url: https://stars.renci.org/var/plater/bl-4.2.1/RobokopKG/4901b2bc764444ea/
+    secondary_source:
+      - automat
+  - category: GraphProduct
+    description: Robokop Plus
+    format: kgx-jsonl
+    id: automat.robokopplus
+    name: robokopplus
+    original_source:
+      - robokop
+    product_url: https://stars.renci.org/var/plater/bl-3.1.2/RobokopPlus/ad8cb4d0a7ccc923/kgx_files/
+    secondary_source:
+      - automat
 repository: https://github.com/NCATS-Gamma/robokop
+infores_id: robokop
 ---
+
 ### ROBOKOP: A Knowledge Graph System for Biomedical Question Answering
 
 ROBOKOP (Reasoning Over Biomedical Objects linked in Knowledge Oriented Pathways) is an **open-source**, modular **biomedical knowledge graph system** that includes:

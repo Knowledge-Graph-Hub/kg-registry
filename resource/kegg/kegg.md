@@ -27,6 +27,7 @@ domains:
 - health
 homepage_url: https://www.genome.jp/kegg/
 id: kegg
+infores_id: kegg
 layout: resource_detail
 license:
   id: https://www.kegg.jp/feedback/copyright.html
@@ -394,9 +395,9 @@ products:
   - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
-  - 'File was not able to be retrieved when checked on 2025-10-29: Error connecting
-    to URL: (''Connection aborted.'', ConnectionResetError(104, ''Connection reset
-    by peer''))'
+  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
+    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
+    peer'))
 publications:
 - id: doi:10.1093/nar/gkae909
   preferred: true

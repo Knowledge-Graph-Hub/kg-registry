@@ -1,0 +1,139 @@
+# curie_map:
+#   kgregistry: "https://kghub.org/kg-registry/"
+#   infores: "https://bioregistry.io/registry/infores/"
+#   skos: "http://www.w3.org/2004/02/skos/core#"
+#   semapv: "https://w3id.org/semapv/vocab/"
+# mapping_set_id: kgregistry-infores-mappings
+# mapping_set_version: 1.0.0
+# mapping_set_description: "Mappings between KG-Registry resources and Information Resource (infores) identifiers"
+# creator_id: claude-code
+# mapping_date: 2025-01-03
+# license: CC-BY-4.0
+subject_id	predicate_id	object_id	mapping_justification	confidence	comment
+kgregistry:bgee	skos:exactMatch	infores:bgee	semapv:LexicalMatching	0.95	Exact ID match - Bgee database
+kgregistry:bindingdb	skos:exactMatch	infores:bindingdb	semapv:LexicalMatching	0.95	Exact ID match - BindingDB
+kgregistry:biogrid	skos:exactMatch	infores:biogrid	semapv:LexicalMatching	0.95	Exact ID match - BioGRID
+kgregistry:chebi	skos:exactMatch	infores:chebi	semapv:LexicalMatching	0.95	Exact ID match - ChEBI
+kgregistry:chembl	skos:exactMatch	infores:chembl	semapv:LexicalMatching	0.95	Exact ID match - ChEMBL
+kgregistry:civic	skos:exactMatch	infores:civic	semapv:LexicalMatching	0.95	Exact ID match - CIViC
+kgregistry:cl	skos:exactMatch	infores:cl	semapv:LexicalMatching	0.95	Exact ID match - Cell Ontology
+kgregistry:clingen	skos:exactMatch	infores:clingen	semapv:LexicalMatching	0.95	Exact ID match - ClinGen
+kgregistry:clinvar	skos:exactMatch	infores:clinvar	semapv:LexicalMatching	0.95	Exact ID match - ClinVar
+kgregistry:cmap	skos:exactMatch	infores:cmap	semapv:LexicalMatching	0.95	Exact ID match - Connectivity Map
+kgregistry:cosmic	skos:exactMatch	infores:cosmic	semapv:LexicalMatching	0.95	Exact ID match - COSMIC
+kgregistry:ctd	skos:exactMatch	infores:ctd	semapv:LexicalMatching	0.95	Exact ID match - CTD
+kgregistry:dbsnp	skos:exactMatch	infores:dbsnp	semapv:LexicalMatching	0.95	Exact ID match - dbSNP
+kgregistry:depmap	skos:exactMatch	infores:depmap	semapv:LexicalMatching	0.95	Exact ID match - DepMap
+kgregistry:dgidb	skos:exactMatch	infores:dgidb	semapv:LexicalMatching	0.95	Exact ID match - DGIdb
+kgregistry:dictybase	skos:exactMatch	infores:dictybase	semapv:LexicalMatching	0.95	Exact ID match - dictyBase
+kgregistry:diseases	skos:exactMatch	infores:diseases	semapv:LexicalMatching	0.95	Exact ID match - DISEASES
+kgregistry:disgenet	skos:exactMatch	infores:disgenet	semapv:LexicalMatching	0.95	Exact ID match - DisGeNET
+kgregistry:do	skos:exactMatch	infores:disease-ontology	semapv:LexicalMatching	0.90	ID mapping - Disease Ontology
+kgregistry:drugbank	skos:exactMatch	infores:drugbank	semapv:LexicalMatching	0.95	Exact ID match - DrugBank
+kgregistry:drugcentral	skos:exactMatch	infores:drugcentral	semapv:LexicalMatching	0.95	Exact ID match - DrugCentral
+kgregistry:efo	skos:exactMatch	infores:efo	semapv:LexicalMatching	0.95	Exact ID match - EFO
+kgregistry:ensembl	skos:exactMatch	infores:ensembl-gene	semapv:LexicalMatching	0.90	ID mapping - Ensembl
+kgregistry:faers	skos:exactMatch	infores:faers	semapv:LexicalMatching	0.95	Exact ID match - FAERS
+kgregistry:flybase	skos:exactMatch	infores:flybase	semapv:LexicalMatching	0.95	Exact ID match - FlyBase
+kgregistry:foodb	skos:exactMatch	infores:foodb	semapv:LexicalMatching	0.95	Exact ID match - FooDB
+kgregistry:gdsc	skos:exactMatch	infores:gdsc	semapv:LexicalMatching	0.95	Exact ID match - GDSC
+kgregistry:go	skos:exactMatch	infores:go	semapv:LexicalMatching	0.95	Exact ID match - Gene Ontology
+kgregistry:gtex	skos:exactMatch	infores:gtex	semapv:LexicalMatching	0.95	Exact ID match - GTEx
+kgregistry:gtopdb	skos:exactMatch	infores:gtopdb	semapv:LexicalMatching	0.95	Exact ID match - GtoPdb
+kgregistry:gwas-catalog	skos:exactMatch	infores:gwas-catalog	semapv:LexicalMatching	0.95	Exact ID match - GWAS Catalog
+kgregistry:gwascatalog	skos:exactMatch	infores:gwas-catalog	semapv:LexicalMatching	0.90	Alternative name - GWAS Catalog
+kgregistry:gwascat	skos:exactMatch	infores:gwas-catalog	semapv:LexicalMatching	0.90	Alternative name - GWAS Catalog
+kgregistry:hetionet	skos:exactMatch	infores:hetionet	semapv:LexicalMatching	0.95	Exact ID match - Hetionet
+kgregistry:hgnc	skos:exactMatch	infores:hgnc	semapv:LexicalMatching	0.95	Exact ID match - HGNC
+kgregistry:hmdb	skos:exactMatch	infores:hmdb	semapv:LexicalMatching	0.95	Exact ID match - HMDB
+kgregistry:hp	skos:exactMatch	infores:hpo	semapv:LexicalMatching	0.90	ID mapping - Human Phenotype Ontology
+kgregistry:hpa	skos:exactMatch	infores:hpa	semapv:LexicalMatching	0.95	Exact ID match - Human Protein Atlas
+kgregistry:huri	skos:exactMatch	infores:huri	semapv:LexicalMatching	0.95	Exact ID match - HuRI
+kgregistry:idisk	skos:exactMatch	infores:idisk	semapv:LexicalMatching	0.95	Exact ID match - iDISK
+kgregistry:intact	skos:exactMatch	infores:intact	semapv:LexicalMatching	0.95	Exact ID match - IntAct
+kgregistry:iptmnet	skos:exactMatch	infores:iptmnet	semapv:LexicalMatching	0.95	Exact ID match - iPTMnet
+kgregistry:kegg	skos:exactMatch	infores:kegg	semapv:LexicalMatching	0.95	Exact ID match - KEGG
+kgregistry:lincs	skos:exactMatch	infores:lincs	semapv:LexicalMatching	0.95	Exact ID match - LINCS
+kgregistry:medgen	skos:exactMatch	infores:medgen	semapv:LexicalMatching	0.95	Exact ID match - MedGen
+kgregistry:mesh	skos:exactMatch	infores:mesh	semapv:LexicalMatching	0.95	Exact ID match - MeSH
+kgregistry:metacyc	skos:exactMatch	infores:metacyc	semapv:LexicalMatching	0.95	Exact ID match - MetaCyc
+kgregistry:mgd	skos:exactMatch	infores:mgi	semapv:LexicalMatching	0.90	ID mapping - Mouse Genome Database
+kgregistry:mirbase	skos:exactMatch	infores:mirbase	semapv:LexicalMatching	0.95	Exact ID match - miRBase
+kgregistry:mondo	skos:exactMatch	infores:mondo	semapv:LexicalMatching	0.95	Exact ID match - Mondo
+kgregistry:mp	skos:exactMatch	infores:mp	semapv:LexicalMatching	0.95	Exact ID match - Mammalian Phenotype Ontology
+kgregistry:ncbigene	skos:exactMatch	infores:ncbi-gene	semapv:LexicalMatching	0.90	ID mapping - NCBI Gene
+kgregistry:ncbitaxon	skos:exactMatch	infores:ncbi-taxon	semapv:LexicalMatching	0.90	ID mapping - NCBI Taxonomy
+kgregistry:ncit	skos:exactMatch	infores:ncit	semapv:LexicalMatching	0.95	Exact ID match - NCIt
+kgregistry:omim	skos:exactMatch	infores:omim	semapv:LexicalMatching	0.95	Exact ID match - OMIM
+kgregistry:orphanet	skos:exactMatch	infores:orphanet	semapv:LexicalMatching	0.95	Exact ID match - Orphanet
+kgregistry:ordo	skos:exactMatch	infores:ordo	semapv:LexicalMatching	0.95	Exact ID match - ORDO
+kgregistry:panther	skos:exactMatch	infores:panther	semapv:LexicalMatching	0.95	Exact ID match - PANTHER
+kgregistry:pato	skos:exactMatch	infores:pato	semapv:LexicalMatching	0.95	Exact ID match - PATO
+kgregistry:pharos	skos:exactMatch	infores:pharos	semapv:LexicalMatching	0.95	Exact ID match - Pharos
+kgregistry:pombase	skos:exactMatch	infores:pombase	semapv:LexicalMatching	0.95	Exact ID match - PomBase
+kgregistry:pr	skos:exactMatch	infores:pr	semapv:LexicalMatching	0.95	Exact ID match - Protein Ontology
+kgregistry:pubchem	skos:exactMatch	infores:pubchem	semapv:LexicalMatching	0.95	Exact ID match - PubChem
+kgregistry:pubmed	skos:exactMatch	infores:pubmed	semapv:LexicalMatching	0.95	Exact ID match - PubMed
+kgregistry:reactome	skos:exactMatch	infores:reactome	semapv:LexicalMatching	0.95	Exact ID match - Reactome
+kgregistry:repodb	skos:exactMatch	infores:repodb	semapv:LexicalMatching	0.95	Exact ID match - RepoDB
+kgregistry:rgd	skos:exactMatch	infores:rgd	semapv:LexicalMatching	0.95	Exact ID match - RGD
+kgregistry:rhea	skos:exactMatch	infores:rhea	semapv:LexicalMatching	0.95	Exact ID match - Rhea
+kgregistry:ro	skos:exactMatch	infores:ro	semapv:LexicalMatching	0.95	Exact ID match - Relations Ontology
+kgregistry:rxnorm	skos:exactMatch	infores:rxnorm	semapv:LexicalMatching	0.95	Exact ID match - RxNorm
+kgregistry:sgd	skos:exactMatch	infores:sgd	semapv:LexicalMatching	0.95	Exact ID match - SGD
+kgregistry:sider	skos:exactMatch	infores:sider	semapv:LexicalMatching	0.95	Exact ID match - SIDER
+kgregistry:signor	skos:exactMatch	infores:signor	semapv:LexicalMatching	0.95	Exact ID match - SIGNOR
+kgregistry:smpdb	skos:exactMatch	infores:smpdb	semapv:LexicalMatching	0.95	Exact ID match - SMPDB
+kgregistry:snomedct	skos:exactMatch	infores:snomedct	semapv:LexicalMatching	0.95	Exact ID match - SNOMED CT
+kgregistry:so	skos:exactMatch	infores:so	semapv:LexicalMatching	0.95	Exact ID match - Sequence Ontology
+kgregistry:spoke	skos:exactMatch	infores:spoke	semapv:LexicalMatching	0.95	Exact ID match - SPOKE
+kgregistry:stitch	skos:exactMatch	infores:stitch	semapv:LexicalMatching	0.95	Exact ID match - STITCH
+kgregistry:string	skos:exactMatch	infores:string	semapv:LexicalMatching	0.95	Exact ID match - STRING
+kgregistry:ttd	skos:exactMatch	infores:ttd	semapv:LexicalMatching	0.95	Exact ID match - TTD
+kgregistry:ubergraph	skos:exactMatch	infores:ubergraph	semapv:LexicalMatching	0.95	Exact ID match - Ubergraph
+kgregistry:uberon	skos:exactMatch	infores:uberon	semapv:LexicalMatching	0.95	Exact ID match - Uberon
+kgregistry:unii	skos:exactMatch	infores:unii	semapv:LexicalMatching	0.95	Exact ID match - UNII
+kgregistry:uniprot	skos:exactMatch	infores:uniprot	semapv:LexicalMatching	0.95	Exact ID match - UniProt
+kgregistry:wikipathways	skos:exactMatch	infores:wikipathways	semapv:LexicalMatching	0.95	Exact ID match - WikiPathways
+kgregistry:xenbase	skos:exactMatch	infores:xenbase	semapv:LexicalMatching	0.95	Exact ID match - Xenbase
+kgregistry:zfin	skos:exactMatch	infores:zfin	semapv:LexicalMatching	0.95	Exact ID match - ZFIN
+kgregistry:bfo	skos:exactMatch	infores:bfo	semapv:LexicalMatching	0.95	Exact ID match - Basic Formal Ontology
+kgregistry:bioportal	skos:exactMatch	infores:bioportal	semapv:LexicalMatching	0.95	Exact ID match - BioPortal
+kgregistry:cam-kp	skos:exactMatch	infores:cam-kp	semapv:LexicalMatching	0.95	Exact ID match - CAM-KP
+kgregistry:cellmarker	skos:exactMatch	infores:cellmarker	semapv:LexicalMatching	0.95	Exact ID match - CellMarker
+kgregistry:drugmechdb	skos:exactMatch	infores:drugmechdb	semapv:LexicalMatching	0.95	Exact ID match - DrugMechDB
+kgregistry:ecto	skos:exactMatch	infores:ecto	semapv:LexicalMatching	0.95	Exact ID match - ECTO
+kgregistry:fbbt	skos:exactMatch	infores:fbbt	semapv:LexicalMatching	0.95	Exact ID match - FBbt
+kgregistry:gnbr	skos:exactMatch	infores:gnbr	semapv:LexicalMatching	0.95	Exact ID match - GNBR
+kgregistry:go-cam	skos:exactMatch	infores:go-cam	semapv:LexicalMatching	0.95	Exact ID match - GO-CAM
+kgregistry:icees-kg	skos:exactMatch	infores:icees-kg	semapv:LexicalMatching	0.95	Exact ID match - ICEES-KG
+kgregistry:interpro	skos:exactMatch	infores:interpro	semapv:LexicalMatching	0.95	Exact ID match - InterPro
+kgregistry:loinc	skos:exactMatch	infores:loinc	semapv:LexicalMatching	0.95	Exact ID match - LOINC
+kgregistry:maxo	skos:exactMatch	infores:maxo	semapv:LexicalMatching	0.95	Exact ID match - MAXO
+kgregistry:mi	skos:exactMatch	infores:mi	semapv:LexicalMatching	0.95	Exact ID match - Molecular Interactions
+kgregistry:mpath	skos:exactMatch	infores:mpath	semapv:LexicalMatching	0.95	Exact ID match - MPATH
+kgregistry:msigdb	skos:exactMatch	infores:msigdb	semapv:LexicalMatching	0.95	Exact ID match - MSigDB
+kgregistry:pfam	skos:exactMatch	infores:pfam	semapv:LexicalMatching	0.95	Exact ID match - Pfam
+kgregistry:pharmacotherapydb	skos:exactMatch	infores:pharmacotherapydb	semapv:LexicalMatching	0.95	Exact ID match - PharmacotherapyDB
+kgregistry:pharmgkb	skos:exactMatch	infores:pharmgkb	semapv:LexicalMatching	0.95	Exact ID match - PharmGKB
+kgregistry:phenio	skos:exactMatch	infores:phenio	semapv:LexicalMatching	0.95	Exact ID match - PhenIO
+kgregistry:primekg	skos:exactMatch	infores:primekg	semapv:LexicalMatching	0.95	Exact ID match - PrimeKG
+kgregistry:rnacentral	skos:exactMatch	infores:rnacentral	semapv:LexicalMatching	0.95	Exact ID match - RNAcentral
+kgregistry:robokop	skos:exactMatch	infores:robokop	semapv:LexicalMatching	0.95	Exact ID match - ROBOKOP
+kgregistry:rtx-kg2	skos:exactMatch	infores:rtx-kg2	semapv:LexicalMatching	0.95	Exact ID match - RTX-KG2
+kgregistry:scibite	skos:exactMatch	infores:scibite	semapv:LexicalMatching	0.95	Exact ID match - SciBite
+kgregistry:semmeddb	skos:exactMatch	infores:semmeddb	semapv:LexicalMatching	0.95	Exact ID match - SemMedDB
+kgregistry:sri-reference-kg	skos:exactMatch	infores:sri-reference-kg	semapv:LexicalMatching	0.95	Exact ID match - SRI Reference KG
+kgregistry:tissues	skos:exactMatch	infores:tissues	semapv:LexicalMatching	0.95	Exact ID match - Tissues
+kgregistry:zfa	skos:exactMatch	infores:zfa	semapv:LexicalMatching	0.95	Exact ID match - ZFA
+kgregistry:automat.ctd	skos:exactMatch	infores:automat-ctd	semapv:LexicalMatching	0.95	Explicit infores_id mapping - Automat CTD
+kgregistry:automat.drugcentral	skos:exactMatch	infores:automat-drug-central	semapv:LexicalMatching	0.95	Explicit infores_id mapping - Automat DrugCentral
+kgregistry:automat.gtex	skos:exactMatch	infores:automat-gtex	semapv:LexicalMatching	0.95	Explicit infores_id mapping - Automat GTEx
+kgregistry:automat.gtopdb	skos:exactMatch	infores:automat-gtopdb	semapv:LexicalMatching	0.95	Explicit infores_id mapping - Automat GtoPdb
+kgregistry:automat.gwascatalog	skos:exactMatch	infores:automat-gwas-catalog	semapv:LexicalMatching	0.95	Explicit infores_id mapping - Automat GWAS Catalog
+kgregistry:automat.hgnc	skos:exactMatch	infores:automat-hgnc	semapv:LexicalMatching	0.95	Explicit infores_id mapping - Automat HGNC
+kgregistry:automat.hmdb	skos:exactMatch	infores:automat-hmdb	semapv:LexicalMatching	0.95	Explicit infores_id mapping - Automat HMDB
+kgregistry:automat.humangoa	skos:exactMatch	infores:automat-human-goa	semapv:LexicalMatching	0.95	Explicit infores_id mapping - Automat Human GOA
+kgregistry:automat.intact	skos:exactMatch	infores:automat-intact	semapv:LexicalMatching	0.95	Explicit infores_id mapping - Automat IntAct
+kgregistry:automat.panther	skos:exactMatch	infores:automat-panther	semapv:LexicalMatching	0.95	Explicit infores_id mapping - Automat PANTHER
+kgregistry:automat.pharos	skos:exactMatch	infores:automat-pharos	semapv:LexicalMatching	0.95	Explicit infores_id mapping - Automat Pharos

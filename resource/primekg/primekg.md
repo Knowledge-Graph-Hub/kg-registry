@@ -22,6 +22,7 @@ domains:
 - systems biology
 homepage_url: https://zitniklab.hms.harvard.edu/projects/PrimeKG
 id: primekg
+infores_id: primekg
 layout: resource_detail
 license:
   id: https://opensource.org/licenses/MIT
@@ -38,11 +39,11 @@ products:
   secondary_source:
   - primekg
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-29_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 403 error
     when accessing file'
 repository: https://github.com/mims-harvard/PrimeKG
 ---

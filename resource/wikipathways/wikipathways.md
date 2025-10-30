@@ -29,6 +29,7 @@ domains:
 - biomedical
 homepage_url: https://www.wikipathways.org/
 id: wikipathways
+infores_id: wikipathways
 layout: resource_detail
 license:
   id: https://creativecommons.org/share-your-work/public-domain/cc0/
@@ -418,11 +419,11 @@ products:
   - wikipathways
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-10-29_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-28_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-29: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 403 error
     when accessing file'
 - category: Product
   description: WikiPathways data for all targets

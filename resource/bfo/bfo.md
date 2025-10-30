@@ -17,6 +17,7 @@ domains:
 - biological systems
 homepage_url: http://ifomis.org/bfo/
 id: bfo
+infores_id: bfo
 layout: resource_detail
 license:
   id: http://creativecommons.org/licenses/by/4.0/
