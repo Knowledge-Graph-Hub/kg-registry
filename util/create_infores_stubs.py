@@ -241,19 +241,21 @@ def create_stub_resource(infores_id: str, infores_entry: Dict, dry_run: bool = F
     clean_infores_id = infores_id.replace('infores:', '')
 
     # Create metadata
-    today = date.today().isoformat()
+    # Format dates as ISO 8601 with time
+    today = date.today()
+    today_iso = f"{today.isoformat()}T00:00:00Z"
 
     metadata = {
         'activity_status': 'unknown',  # Needs curation
         'category': category,
-        'creation_date': today,
+        'creation_date': today_iso,
         'description': description,
+        'domains': ['stub'],  # Mark as stub using domains field
         'id': resource_id,
         'infores_id': clean_infores_id,
-        'last_modified_date': today,
+        'last_modified_date': today_iso,
         'layout': 'resource_detail',
         'name': name,
-        'stub': True,  # Mark as stub for easy identification
     }
 
     # Add optional fields if available
@@ -262,12 +264,6 @@ def create_stub_resource(infores_id: str, infores_entry: Dict, dry_run: bool = F
 
     if synonyms:
         metadata['synonyms'] = synonyms
-
-    # Add note about needing curation
-    metadata['curation_notes'] = (
-        'This is a stub entry created automatically from the Translator Information Resource Registry. '
-        'It requires manual curation to complete the metadata.'
-    )
 
     # Create markdown content
     content = f"""# {name}
@@ -407,6 +403,10 @@ def main():
         if args.status:
             if infores_entry.get('status') != args.status:
                 continue
+        else:
+            # By default, exclude deprecated entries
+            if infores_entry.get('status') == 'deprecated':
+                continue
 
         # Filter by complexity if requested
         if args.only_simple:
@@ -415,7 +415,12 @@ def main():
 
         missing_entries.append((infores_id, infores_entry))
 
-    print(f"Found {len(missing_entries)} infores entries not in KG-Registry\n")
+    # Report filtering results
+    if args.status:
+        print(
+            f"Found {len(missing_entries)} infores entries not in KG-Registry with status='{args.status}'\n")
+    else:
+        print(f"Found {len(missing_entries)} infores entries not in KG-Registry (excluding deprecated)\n")
 
     if not missing_entries:
         print("No stub pages needed!")
