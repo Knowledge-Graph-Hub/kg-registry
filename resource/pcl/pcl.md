@@ -47,8 +47,8 @@ products:
   name: pcl.json
   product_url: http://purl.obolibrary.org/obo/pcl.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-10-30: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
   format: owl
@@ -65,8 +65,10 @@ products:
   name: pcl-base.obo
   product_url: http://purl.obolibrary.org/obo/pcl-base.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
+    to URL: HTTPSConnectionPool(host=''purl.archive.org'', port=443): Max retries
+    exceeded with url: /obo/pcl-base.obo (Caused by SSLError(SSLEOFError(8, ''[SSL:
+    UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)'')))'
 - category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
   format: json
@@ -74,8 +76,10 @@ products:
   name: pcl-base.json
   product_url: http://purl.obolibrary.org/obo/pcl-base.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
+    to URL: HTTPSConnectionPool(host=''purl.archive.org'', port=443): Max retries
+    exceeded with url: /obo/pcl-base.json (Caused by SSLError(SSLEOFError(8, ''[SSL:
+    UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)'')))'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
   format: owl
@@ -83,8 +87,8 @@ products:
   name: pcl-full.owl
   product_url: http://purl.obolibrary.org/obo/pcl-full.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-10-30: Timeout connecting
+    to URL'
 - category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
   format: obo

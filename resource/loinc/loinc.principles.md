@@ -10,7 +10,7 @@ product_url: https://loinc.org/principles/
 warnings:
 - File was not able to be retrieved when checked on 2025-10-30_ HTTP 503 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-10-29_ HTTP 503 error when
+- File was not able to be retrieved when checked on 2025-10-30_ HTTP 503 error when
   accessing file
 layout: product_detail
 ---

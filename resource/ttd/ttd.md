@@ -103,9 +103,6 @@ products:
   name: Drug Synonyms
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-04-Drug_synonyms.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
-    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
-    peer'))
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
@@ -119,9 +116,6 @@ products:
   name: Drug-Disease Mapping
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-05-Drug_disease.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
-    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
-    peer'))
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
@@ -135,9 +129,6 @@ products:
   name: Target-Disease Mapping
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-06-Target_disease.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
-    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
-    peer'))
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
@@ -151,9 +142,6 @@ products:
   name: Target-Drug Mapping
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-07-Drug-TargetMapping.xlsx
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
-    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
-    peer'))
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
@@ -167,9 +155,6 @@ products:
   name: Biomarker-Disease Mapping
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-08-Biomarker_disease.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
-    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
-    peer'))
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
@@ -183,9 +168,6 @@ products:
   name: Target-Compound Activity Data
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P1-09-Target_compound_activity.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
-    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
-    peer'))
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
@@ -203,9 +185,6 @@ products:
   secondary_source:
   - ttd
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
-    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
-    peer'))
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
@@ -219,9 +198,6 @@ products:
   name: All Target Sequences
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P2-06-All_target_seq.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
-    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
-    peer'))
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
@@ -235,9 +211,6 @@ products:
   name: All Drug Structures
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P3-01-Drug_structure.sdf
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
-    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
-    peer'))
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
@@ -289,9 +262,6 @@ products:
   name: Drug Combinations
   product_url: https://idrblab.net/ttd/sites/default/files/ttd_download/P5-01-Drug_combination_synergism_anti-counteractive.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-29_ Error connecting
-    to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
-    peer'))
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
@@ -305,8 +275,6 @@ products:
   name: TTD Help Documentation
   product_url: https://idrblab.org/ttd/help
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-29_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error

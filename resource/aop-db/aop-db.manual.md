@@ -13,6 +13,11 @@ warnings:
   with url_ /ords/eims/eimscomm.getfile?p_download_id=543383 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
   object at 0x7f225f00d070>_ Failed to establish a new connection_ [Errno 101] Network
   is unreachable'))
+- File was not able to be retrieved when checked on 2025-10-30_ Error connecting to
+  URL_ HTTPSConnectionPool(host='ordspub.epa.gov', port=443)_ Max retries exceeded
+  with url_ /ords/eims/eimscomm.getfile?p_download_id=543383 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
+  object at 0x7f7e93b00320>_ Failed to establish a new connection_ [Errno 101] Network
+  is unreachable'))
 - File was not able to be retrieved when checked on 2025-10-29_ Error connecting to
   URL_ HTTPSConnectionPool(host='ordspub.epa.gov', port=443)_ Max retries exceeded
   with url_ /ords/eims/eimscomm.getfile?p_download_id=543383 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection

@@ -29,8 +29,6 @@ products:
   secondary_source:
   - cgnc
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-29_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
