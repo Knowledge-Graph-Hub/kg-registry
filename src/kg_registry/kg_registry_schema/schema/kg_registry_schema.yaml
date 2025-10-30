@@ -731,6 +731,9 @@ enums:
         description: >-
           The resource is no longer accessible.
           Only its metadata is available.
+      unknown:
+        description: >-
+          The status of the resource is unknown.
 
   CompressionEnum:
     description: >-
