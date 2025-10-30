@@ -49,15 +49,6 @@ products:
   original_source:
   - clinicaltrialsgov
   product_url: https://clinicaltrials.gov/data-api/
-- category: Product
-  description: Database for Aggregate Analysis of ClinicalTrials.gov (AACT) providing
-    normalized metadata across trials
-  format: postgres
-  id: clinicaltrialsgov.aact
-  name: AACT Database
-  original_source:
-  - clinicaltrialsgov
-  product_url: https://aact.ctti-clinicaltrials.org/
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
     biomedical data sources.
