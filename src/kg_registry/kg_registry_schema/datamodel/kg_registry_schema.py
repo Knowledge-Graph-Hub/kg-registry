@@ -449,6 +449,10 @@ class DomainEnum(str, Enum):
     """
     The environment and ecosystems.
     """
+    general = "general"
+    """
+    A general domain, not specific to any other category. It concerns resources that are broadly applicable across multiple domains.
+    """
     genomics = "genomics"
     """
     The study of genomes, including genome structure, evolution,  function, mapping, and editing.

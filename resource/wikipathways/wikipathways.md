@@ -44,7 +44,7 @@ products:
   name: SPOKE Graph
   original_source:
   - ncbigene
-  - medline
+  - pubmed
   - mesh
   - pid
   - doid
@@ -423,7 +423,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 403 error
     when accessing file'
 - category: Product
   description: WikiPathways data for all targets

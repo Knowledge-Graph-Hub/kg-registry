@@ -25,6 +25,7 @@ bcgo	Beta Cell Genomics Ontology	Ontology	https://github.com/obi-bcgo/bcgo	resou
 bco	Biological Collections Ontology	Ontology	https://github.com/BiodiversityOntologies/bco	resource/bco/bco.md
 bigg	BiGG Models	DataSource	http://bigg.ucsd.edu/	resource/bigg/bigg.md
 bila	Bilateria anatomy	Ontology	http://4dx.embl.de/4DXpress	resource/bila/bila.md
+bind	Bind	DataSource		resource/bind/bind.md
 biocyc	BioCyc	DataSource	https://biocyc.org/	resource/biocyc/biocyc.md
 biogps	BioGPS	Aggregator	http://biogps.org/	resource/biogps/biogps.md
 biolink	Biolink-Model	DataModel	https://biolink.github.io/biolink-model/	resource/biolink/biolink.md
@@ -88,6 +89,7 @@ ddanat	Dictyostelium discoideum anatomy	Ontology	http://dictybase.org/	resource/
 ddpheno	Dictyostelium discoideum phenotype ontology	Ontology	http://dictybase.org/	resource/ddpheno/ddpheno.md
 dideo	Drug-drug Interaction and Drug-drug Interaction Evidence Ontology	Ontology	https://github.com/DIDEO/DIDEO	resource/dideo/dideo.md
 dinto	The Drug-Drug Interactions Ontology	Ontology	http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto	resource/dinto/dinto.md
+dip	Dip	DataSource		resource/dip/dip.md
 disdriv	Disease Drivers Ontology	Ontology	https://disease-ontology.org/	resource/disdriv/disdriv.md
 doid	Human Disease Ontology	Ontology	https://disease-ontology.org	resource/doid/doid.md
 dorothea	DoRothEA	KnowledgeGraph	https://saezlab.github.io/dorothea/	resource/dorothea/dorothea.md
@@ -131,7 +133,7 @@ evlncrnas	EVLncRNAs	DataSource	https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/
 exmo	Exercise Medicine Ontology	Ontology	https://github.com/Exercise-Medicine-Ontology/EXMO	resource/exmo/exmo.md
 exo	Exposure ontology	Ontology	https://github.com/CTDbase/exposure-ontology	resource/exo/exo.md
 expressionatlas	Expression Atlas	Aggregator	https://www.ebi.ac.uk/gxa/home	resource/expressionatlas/expressionatlas.md
-faldo	Faldo	DataSource		resource/faldo/faldo.md
+faldo	FALDO	Ontology	http://biohackathon.org/resource/faldo	resource/faldo/faldo.md
 fao	Fungal gross anatomy	Ontology	https://github.com/obophenotype/fungal-anatomy-ontology/	resource/fao/fao.md
 fbbi	Biological Imaging Methods Ontology	Ontology	http://cellimagelibrary.org/	resource/fbbi/fbbi.md
 fbcv	FlyBase Controlled Vocabulary	Ontology	http://purl.obolibrary.org/obo/fbcv	resource/fbcv/fbcv.md
@@ -179,6 +181,7 @@ hancestro	Human Ancestry Ontology	Ontology	https://ebispot.github.io/hancestro/	
 hao	Hymenoptera Anatomy Ontology	Ontology	http://hymao.org	resource/hao/hao.md
 harmonizome-kg	Harmonizome-KG	KnowledgeGraph	https://maayanlab.cloud/harmonizome-kg/	resource/harmonizome-kg/harmonizome-kg.md
 hom	Homology Ontology	Ontology	https://github.com/BgeeDB/homology-ontology	resource/hom/hom.md
+hprd	HPRD	Aggregator	http://www.hprd.org/	resource/hprd/hprd.md
 hra	Hra	DataSource		resource/hra/hra.md
 hra-kg	Human Reference Atlas Knowledge Graph (HRA KG)	KnowledgeGraph	https://apps.humanatlas.io/dashboard/data	resource/hra-kg/hra-kg.md
 hrpimp	Hrpimp	DataSource		resource/hrpimp/hrpimp.md
@@ -218,7 +221,7 @@ lincs-l1000	Lincs-l1000	DataSource		resource/lincs-l1000/lincs-l1000.md
 lipro	Lipid Ontology	Ontology		resource/lipro/lipro.md
 lncbase	Lncbase	DataSource		resource/lncbase/lncbase.md
 lncbook	LncBook	DataSource	https://ngdc.cncb.ac.cn/lncbook/home	resource/lncbook/lncbook.md
-lncipedia	Lncipedia	DataSource		resource/lncipedia/lncipedia.md
+lncipedia	LncIPedia	DataSource	https://lncipedia.org/	resource/lncipedia/lncipedia.md
 lncrnadb	lncRNAdb	DataSource	http://www.lncrnadb.org/	resource/lncrnadb/lncrnadb.md
 lncrnalyzr	lncRNAlyzr	KnowledgeGraph	https://lncrnalyzr.maayanlab.cloud/	resource/lncrnalyzr/lncrnalyzr.md
 loggerhead	Loggerhead nesting	Ontology	http://www.mesquiteproject.org/ontology/Loggerhead/index.html	resource/loggerhead/loggerhead.md
@@ -232,7 +235,6 @@ mco	Microbial Conditions Ontology	Ontology	https://github.com/microbial-conditio
 mcro	Model Card Report Ontology	Ontology	https://github.com/UTHealth-Ontology/MCRO	resource/mcro/mcro.md
 mechreponet	MechRepoNet	KnowledgeGraph	https://github.com/SuLab/MechRepoNet	resource/mechreponet/mechreponet.md
 medkg	MedKG	KnowledgeGraph	http://pitools.niper.ac.in/medkg/	resource/medkg/medkg.md
-medline	Medline	DataSource		resource/medline/medline.md
 metanetx	MetaNetX	DataSource	https://www.metanetx.org/	resource/metanetx/metanetx.md
 mf	Mental Functioning Ontology	Ontology	https://github.com/jannahastings/mental-functioning-ontology	resource/mf/mf.md
 mfmo	Mammalian Feeding Muscle Ontology	Ontology	https://github.com/rdruzinsky/feedontology	resource/mfmo/mfmo.md
@@ -245,6 +247,7 @@ miapa	MIAPA Ontology	Ontology	http://www.evoio.org/wiki/MIAPA	resource/miapa/mia
 micro	Ontology of Prokaryotic Phenotypic and Metabolic Characters	Ontology	https://github.com/carrineblank/MicrO	resource/micro/micro.md
 microbiomekg	MicrobiomeKG	KnowledgeGraph	https://multiomics.transltr.io/mbkp	resource/microbiomekg/microbiomekg.md
 mind	MIND	KnowledgeGraph	https://zenodo.org/records/8117748	resource/mind/mind.md
+mint	Mint	Aggregator	https://mint.bio.uniroma2.it/	resource/mint/mint.md
 mirgenedb	MirGeneDB	DataSource		resource/mirgenedb/mirgenedb.md
 mirnao	microRNA Ontology	Ontology	http://code.google.com/p/mirna-ontology/	resource/mirnao/mirnao.md
 miro	Mosquito insecticide resistance	Ontology	http://purl.obolibrary.org/obo/miro.owl	resource/miro/miro.md
@@ -371,7 +374,7 @@ reprotox-kg	ReproTox-KG	KnowledgeGraph	https://reprotox-kg.net/	resource/reproto
 resid	Protein covalent bond	Ontology	http://www.ebi.ac.uk/RESID/	resource/resid/resid.md
 rex	Physico-chemical process	Ontology	http://purl.obolibrary.org/obo/rex.owl	resource/rex/rex.md
 rfam	Rfam	DataSource	https://rfam.org/	resource/rfam/rfam.md
-ribocentre	Ribocentre	DataSource		resource/ribocentre/ribocentre.md
+ribocentre	Ribocentre	DataSource	https://www.ribocentre.org/	resource/ribocentre/ribocentre.md
 ribovision	RiboVision	Resource	https://ribovision2.chemistry.gatech.edu/	resource/ribovision/ribovision.md
 rna-kg	RNA-KG	KnowledgeGraph	https://RNA-KG.biodata.di.unimi.it	resource/rna-kg/rna-kg.md
 rnao	RNA ontology	Ontology	https://github.com/bgsu-rna/rnao	resource/rnao/rnao.md

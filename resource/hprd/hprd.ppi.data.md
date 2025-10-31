@@ -1,0 +1,15 @@
+---
+category: Product
+description: HPRD protein-protein interaction data in PSI-MITAB format, now archived
+  and available through iRefIndex
+format: psi_mi_mitab
+id: hprd.ppi.data
+name: HPRD Protein-Protein Interactions
+original_source:
+- hprd
+product_url: http://www.hprd.org/
+warnings:
+- Original HPRD website is no longer accessible. Data has been archived in iRefIndex
+  and other interaction databases.
+layout: product_detail
+---

@@ -133,7 +133,7 @@ products:
   name: SPOKE Graph
   original_source:
   - ncbigene
-  - medline
+  - pubmed
   - mesh
   - pid
   - doid
@@ -329,7 +329,7 @@ products:
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-  - 'File was not able to be retrieved when checked on 2025-10-30: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-10-31: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'''
 publications:
 - authors:

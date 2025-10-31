@@ -1,46 +1,102 @@
 ---
-activity_status: unknown
+activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://lincs.hms.harvard.edu/
+  label: HMS LINCS Project
 creation_date: '2025-10-30T00:00:00Z'
-description: Information resource for KINOMEscan
+description: KINOMEscan is a biochemical kinase profiling assay that measures drug
+  binding using a panel of approximately 440 purified kinases. The HMS LINCS Project
+  provides a comprehensive table of all small molecules in the HMS LINCS collection
+  that have been profiled by KINOMEscan, with links to raw binding data.
 domains:
-  - stub
+- drug discovery
+- pharmacology
+- biomedical
+homepage_url: https://lincs.hms.harvard.edu/kinomescan/
 id: kinomescan
 infores_id: kinomescan
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2025-10-31T00:00:00Z'
 layout: resource_detail
 name: KINOMEscan
-homepage_url: https://lincs.hms.harvard.edu/kinomescan/
+products:
+- category: GraphicalInterface
+  description: Web interface providing searchable table of all small molecules profiled
+    by KINOMEscan
+  format: http
+  id: kinomescan.portal
+  name: KINOMEscan Data Portal
+  original_source:
+  - kinomescan
+  product_url: https://lincs.hms.harvard.edu/kinomescan/
+- category: DocumentationProduct
+  description: Excel spreadsheet containing HMS LINCS KINOMEscan datasets with compound
+    information and data links
+  id: kinomescan.spreadsheet
+  name: KINOMEscan Datasets Spreadsheet
+  original_source:
+  - kinomescan
+  product_file_size: 17872
+  product_url: http://lincs.hms.harvard.edu/wordpress/wp-content/uploads/2013/11/HMS-LINCS_KinomeScan_Datasets_2018-01-18.xlsx
+synonyms:
+- HMS LINCS KINOMEscan
 ---
-
 # KINOMEscan
 
 ## Overview
 
-Information resource for KINOMEscan
+KINOMEscan is a biochemical kinase profiling assay technology that measures drug binding using a panel of approximately 440 purified kinases. The data resource is maintained by the HMS LINCS (Harvard Medical School Library of Integrated Network-based Cellular Signatures) Project. The assay provides comprehensive profiling of small molecule compounds against a large kinase panel, enabling drug discovery and selectivity profiling studies.
 
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
+## Data Content
 
-## Information Resource ID
+The HMS LINCS KINOMEscan data collection includes:
 
-This resource has the Information Resource identifier: `infores:kinomescan`
+- **Compound Coverage**: Small molecules from the HMS LINCS collection that have been profiled by KINOMEscan
+- **Kinase Panel**: Approximately 440 purified kinases representing a broad coverage of the human kinome
+- **Binding Data**: Raw binding data for each compound-kinase interaction
+- **Compound Information**: HMSL identifiers, LSM numbers, common names, and synonyms for each profiled compound
 
-## Curation Status
+The data includes kinase inhibitors, multi-kinase inhibitors, and other bioactive small molecules commonly used in drug discovery and chemical biology research.
 
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
+## Key Features
 
-## What Needs to be Curated
+- **Comprehensive Kinase Coverage**: ~440 kinases representing diverse families
+- **Biochemical Assay**: Direct measurement of compound binding to purified kinases
+- **Searchable Data**: Web interface with compound names and identifiers
+- **Downloadable Datasets**: Excel spreadsheet format for offline analysis
+- **HMS LINCS Integration**: Part of the broader HMS LINCS data ecosystem
 
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
+## Access Methods
 
-## Additional Notes
+1. **Web Interface**: Browse and search KINOMEscan data through the HMS LINCS portal
+2. **Spreadsheet Download**: Excel file containing complete dataset information and links (last updated January 18, 2018)
+
+## Data Format
+
+- **Online**: HTML table with compound information and data links
+- **Downloadable**: Microsoft Excel (.xlsx) format
+
+## Use Cases
+
+- **Drug Discovery**: Kinase inhibitor profiling and selectivity assessment
+- **Target Validation**: Understanding kinase inhibitor specificity
+- **Polypharmacology Studies**: Identifying off-target kinase interactions
+- **Structure-Activity Relationships**: Correlating compound structure with kinase binding profiles
+- **Chemical Biology**: Tool compound characterization
+
+## Management
+
+The KINOMEscan data resource is managed and curated by the HMS LINCS Project at Harvard Medical School.
+
+## Related Resources
+
+- HMS LINCS Database: https://lincs.hms.harvard.edu/db/
+- HMS LINCS Data Exploration Tools: https://lincs.hms.harvard.edu/explore/
+- HMS LINCS Publications: https://lincs.hms.harvard.edu/about/publications/
+
+## Last Update
+
+The downloadable spreadsheet was last updated on January 18, 2018.

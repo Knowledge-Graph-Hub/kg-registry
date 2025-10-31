@@ -2,6 +2,7 @@ Resource,Activity Status,Validation Status
 1000genomes,active,PASS
 4dn,active,PASS
 5srrnadb,active,PASS
+aact,active,PASS
 achilles,active,PASS
 ado,active,PASS
 afpo,active,PASS
@@ -14,12 +15,14 @@ aop-db,active,PASS
 aop-wiki,active,PASS
 apo,active,PASS
 apollo_sv,active,PASS
+arax,active,PASS
 aro,active,PASS
 automat,active,PASS
 bco,active,PASS
 bfo,active,PASS
 bgee,active,PASS
 bigg,active,PASS
+bind,active,PASS
 bindingdb,active,PASS
 biocyc,active,PASS
 biogps,active,PASS
@@ -92,9 +95,11 @@ depmap,active,PASS
 dgidb,active,PASS
 dictybase,active,PASS
 dideo,active,PASS
+dip,active,PASS
 disdriv,active,PASS
 diseases,active,PASS
 disgenet,active,PASS
+disprot,active,PASS
 doid,active,PASS
 dorothea,active,PASS
 dpo,active,PASS
@@ -151,6 +156,7 @@ fypo,active,PASS
 gallont,active,PASS
 gdsc,active,PASS
 gecko,active,PASS
+genage,active,PASS
 gencode,active,PASS
 genecards,active,PASS
 genemania,active,PASS
@@ -221,6 +227,7 @@ kg-microbe,active,PASS
 kg-monarch,active,PASS
 kgcl,active,PASS
 kidsfirst,active,PASS
+kinomescan,active,PASS
 kisao,active,PASS
 labo,active,PASS
 lepao,active,PASS
@@ -239,8 +246,8 @@ mco,active,PASS
 mcro,active,PASS
 mechreponet,active,PASS
 medgen,active,PASS
+medi,active,PASS
 medkg,active,PASS
-medline,active,PASS
 mesh,active,PASS
 metacyc,active,PASS
 metanetx,active,PASS
@@ -254,6 +261,7 @@ mi,active,PASS
 miapa,active,PASS
 microbiomekg,active,PASS
 mind,active,PASS
+mint,active,PASS
 mirbase,active,PASS
 mirgenedb,active,PASS
 mirtarbase,active,PASS
@@ -266,6 +274,7 @@ molecular-data-kp,active,PASS
 mondo,active,PASS
 mop,active,PASS
 motrpac,active,PASS
+mousemine,active,PASS
 mp,active,PASS
 mpath,active,PASS
 mpio,active,PASS
@@ -290,6 +299,7 @@ nomen,active,PASS
 noncode,active,PASS
 np-kg,active,PASS
 npo,active,PASS
+nsides,active,PASS
 oae,active,PASS
 oarcs,active,PASS
 oba,active,PASS
@@ -305,6 +315,7 @@ ohd,active,PASS
 ohmi,active,PASS
 ohpi,active,PASS
 oio,active,PASS
+ols,active,PASS
 oma,active,PASS
 omim,active,PASS
 omit,active,PASS
@@ -331,6 +342,7 @@ ovae,active,PASS
 pankbase,active,PASS
 panther,active,PASS
 pathophenodb,active,PASS
+pathwhiz,active,PASS
 pato,active,PASS
 pcl,active,PASS
 pco,active,PASS
@@ -340,6 +352,7 @@ peco,active,PASS
 petagraph,active,PASS
 pfam,active,PASS
 pgo,active,PASS
+pgxmine,active,PASS
 pharmacodb,active,PASS
 pharmacotherapydb,active,PASS
 pharmgkb,active,PASS
@@ -413,6 +426,7 @@ snodb,active,PASS
 snomedct,active,PASS
 snopy,active,PASS
 snornadatabase,active,PASS
+snpeff,active,PASS
 so,active,PASS
 spd,active,PASS
 spoke,active,PASS
@@ -445,8 +459,10 @@ uberon,active,PASS
 ubkg,active,PASS
 uf-okn,active,PASS
 ukbiobank,active,PASS
+umls,active,PASS
 unii,active,PASS
 uniprot,active,PASS
+uniref,active,PASS
 uo,active,PASS
 upheno,active,PASS
 vbo,active,PASS
@@ -456,7 +472,9 @@ vto,active,PASS
 wbbt,active,PASS
 wbls,active,PASS
 wbphenotype,active,PASS
+wikidata,active,PASS
 wikipathways,active,PASS
+wormbase,active,PASS
 xao,active,PASS
 xco,active,PASS
 xenbase,active,PASS
@@ -483,6 +501,7 @@ connectivitymap,inactive,PASS
 crd,unresponsive,PASS
 dc_cl,inactive,PASS
 dinto,inactive,PASS
+docm,inactive,PASS
 ehda,inactive,PASS
 ehdaa,inactive,PASS
 ehdaa2,inactive,PASS
@@ -501,10 +520,12 @@ gaz,inactive,PASS
 goa,inactive,PASS
 gro,inactive,PASS
 habronattus,inactive,PASS
+hprd,inactive,PASS
 idomal,inactive,PASS
 iev,inactive,PASS
 imr,inactive,PASS
 ipr,inactive,PASS
+irefindex,inactive,PASS
 lipro,inactive,PASS
 lncrnadb,inactive,PASS
 loggerhead,inactive,PASS

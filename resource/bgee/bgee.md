@@ -60,7 +60,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -78,7 +78,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -96,7 +96,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -114,7 +114,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -132,7 +132,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -150,7 +150,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -168,7 +168,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -186,7 +186,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -195,7 +195,7 @@ products:
   name: SPOKE Graph
   original_source:
   - ncbigene
-  - medline
+  - pubmed
   - mesh
   - pid
   - doid
@@ -1088,7 +1088,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 403 error
     when accessing file'
 publications:
 - authors:
