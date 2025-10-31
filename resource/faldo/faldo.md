@@ -1,11 +1,20 @@
 ---
 activity_status: active
 category: Ontology
-description: FALDO (Feature Annotation Location Description Ontology) is an ontology for describing sequence feature locations using RDF/OWL. It provides a standardized way to represent genomic and protein sequence positions, regions, and strands in Semantic Web formats.
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://groups.google.com/forum/#!forum/faldo
+  label: FALDO Google Group
+description: FALDO (Feature Annotation Location Description Ontology) is an ontology
+  for describing sequence feature locations using RDF/OWL. It provides a standardized
+  way to represent genomic and protein sequence positions, regions, and strands in
+  Semantic Web formats.
 domains:
-  - genomics
-  - biological systems
-  - information technology
+- genomics
+- biological systems
+- information technology
 homepage_url: http://biohackathon.org/resource/faldo
 id: faldo
 layout: resource_detail
@@ -13,42 +22,165 @@ license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
 name: FALDO
-repository: https://github.com/OBioFoundry/FALDO
-contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://groups.google.com/forum/#!forum/faldo
-    label: FALDO Google Group
 products:
-  - category: OntologyProduct
-    description: FALDO ontology in Turtle/RDF format for describing feature locations on sequences
-    format: ttl
-    id: faldo.ttl
-    name: FALDO Ontology (Turtle)
-    original_source:
-      - faldo
-    product_url: http://biohackathon.org/resource/faldo.ttl
-  - category: OntologyProduct
-    description: FALDO ontology in RDF/XML format
-    format: rdfxml
-    id: faldo.rdf
-    name: FALDO Ontology (RDF/XML)
-    original_source:
-      - faldo
-    product_url: http://biohackathon.org/resource/faldo.rdf
-  - category: DocumentationProduct
-    description: Interactive ontology browser with class and property descriptions
-    format: http
-    id: faldo.browser
-    name: FALDO Ontology Browser
-    original_source:
-      - faldo
-    product_url: http://biohackathon.org/resource/faldo
+- category: OntologyProduct
+  description: FALDO ontology in Turtle/RDF format for describing feature locations
+    on sequences
+  format: ttl
+  id: faldo.ttl
+  name: FALDO Ontology (Turtle)
+  original_source:
+  - faldo
+  product_file_size: 13615
+  product_url: http://biohackathon.org/resource/faldo.ttl
+- category: OntologyProduct
+  description: FALDO ontology in RDF/XML format
+  format: rdfxml
+  id: faldo.rdf
+  name: FALDO Ontology (RDF/XML)
+  original_source:
+  - faldo
+  product_file_size: 25812
+  product_url: http://biohackathon.org/resource/faldo.rdf
+- category: DocumentationProduct
+  description: Interactive ontology browser with class and property descriptions
+  format: http
+  id: faldo.browser
+  name: FALDO Ontology Browser
+  original_source:
+  - faldo
+  product_url: http://biohackathon.org/resource/faldo
+- category: GraphProduct
+  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
+    instances as neo4j graph databases, running in a Docker container. Requires UMLS
+    API key to access.
+  dump_format: neo4j
+  id: ubkg.neo4j
+  name: UBKG Neo4j Docker Distribution
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - doid
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - connectivitymap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - sckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+- category: GraphProduct
+  description: Ontology CSV files that can be imported into a neo4j instance to create
+    a UBKG database. Requires UMLS API key to access.
+  format: csv
+  id: ubkg.csv
+  name: UBKG Ontology CSV Files
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - doid
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - connectivitymap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - sckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+repository: https://github.com/OBioFoundry/FALDO
 synonyms:
-  - Feature Annotation Location Description Ontology
+- Feature Annotation Location Description Ontology
 ---
-
 # FALDO
 
 ## Overview

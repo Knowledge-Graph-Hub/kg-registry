@@ -2,58 +2,65 @@
 activity_status: inactive
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: github
-        value: "griffithlab"
-    label: Griffith Lab
+- category: Organization
+  contact_details:
+  - contact_type: github
+    value: griffithlab
+  label: Griffith Lab
 creation_date: '2025-10-30T00:00:00Z'
-description: DoCM (Database of Curated Mutations) was a highly curated database of known, disease-causing mutations in cancer, specifically focused on mutations with clinical or functional evidence. The project has been retired and succeeded by the Clinical Interpretation of Variants in Cancer (CIViC) knowledgebase. All DoCM data remains available in archived form.
+description: DoCM (Database of Curated Mutations) was a highly curated database of
+  known, disease-causing mutations in cancer, specifically focused on mutations with
+  clinical or functional evidence. The project has been retired and succeeded by the
+  Clinical Interpretation of Variants in Cancer (CIViC) knowledgebase. All DoCM data
+  remains available in archived form.
 domains:
-  - precision medicine
-  - genomics
-  - health
+- precision medicine
+- genomics
+- health
 homepage_url: http://www.docm.info/
-id: "docm"
-infores_id: "docm"
+id: docm
+infores_id: docm
 last_modified_date: '2025-01-20T00:00:00Z'
 layout: resource_detail
 license:
-  id: "https://opensource.org/licenses/MIT"
+  id: https://opensource.org/licenses/MIT
   label: MIT
 name: Database of Curated Mutations
 products:
-  - category: Product
-    compression: gzip
-    description: Curated cancer mutations in tab-separated values format with gene, transcript, variant, and disease information
-    format: tsv
-    id: "docm.variants.tsv"
-    name: DoCM Variants TSV
-    original_source:
-      - docm
-    product_url: https://github.com/griffithlab/docm/raw/master/data/variants.tsv.gz
-  - category: Product
-    compression: gzip
-    description: Curated cancer mutations in Variant Call Format (VCF)
-    format: vcf
-    id: "docm.variants.vcf"
-    name: DoCM Variants VCF
-    original_source:
-      - docm
-    product_url: https://github.com/griffithlab/docm/raw/master/data/variants.vcf.gz
-  - category: ProcessProduct
-    compression: gzip
-    description: Complete DoCM database in SQL format for local installation
-    id: "docm.data.sql"
-    name: DoCM SQL Database
-    original_source:
-      - docm
-    product_url: https://github.com/griffithlab/docm/raw/master/data/data.sql.gz
+- category: Product
+  compression: gzip
+  description: Curated cancer mutations in tab-separated values format with gene,
+    transcript, variant, and disease information
+  format: tsv
+  id: docm.variants.tsv
+  name: DoCM Variants TSV
+  original_source:
+  - docm
+  product_file_size: 35859
+  product_url: https://github.com/griffithlab/docm/raw/master/data/variants.tsv.gz
+- category: Product
+  compression: gzip
+  description: Curated cancer mutations in Variant Call Format (VCF)
+  format: vcf
+  id: docm.variants.vcf
+  name: DoCM Variants VCF
+  original_source:
+  - docm
+  product_file_size: 43955
+  product_url: https://github.com/griffithlab/docm/raw/master/data/variants.vcf.gz
+- category: ProcessProduct
+  compression: gzip
+  description: Complete DoCM database in SQL format for local installation
+  id: docm.data.sql
+  name: DoCM SQL Database
+  original_source:
+  - docm
+  product_file_size: 1174722
+  product_url: https://github.com/griffithlab/docm/raw/master/data/data.sql.gz
 repository: https://github.com/griffithlab/docm
 synonyms:
-  - DoCM
+- DoCM
 ---
-
 # Database of Curated Mutations (DoCM)
 
 ## Project Retirement Notice

@@ -97,7 +97,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
   description: Downloads page with file format specifications and field descriptions
@@ -110,7 +110,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-29_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,

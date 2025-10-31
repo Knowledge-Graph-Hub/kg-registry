@@ -2,86 +2,102 @@
 activity_status: active
 category: Resource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: "expander.agent@gmail.com"
-    label: Expander Agent Team
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: "stephen.ramsey@oregonstate.edu"
-    label: Stephen Ramsey
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: "edeutsch@systemsbiology.org"
-    label: Eric Deutsch
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: "dmk333@psu.edu"
-    label: David Koslicki
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: expander.agent@gmail.com
+  label: Expander Agent Team
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: stephen.ramsey@oregonstate.edu
+  label: Stephen Ramsey
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: edeutsch@systemsbiology.org
+  label: Eric Deutsch
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: dmk333@psu.edu
+  label: David Koslicki
 creation_date: '2025-10-31T00:00:00Z'
-description: ARAX (Expander Agent) is a graph-based modular reasoning tool for translational biomedicine developed as part of the NCATS Biomedical Data Translator program. It provides a web browser user interface and TRAPI-compliant API for encoding translational biomedical questions and integrating knowledge across multiple sources. ARAX features ARAXi, an intuitive domain-specific language for specifying knowledge graph analysis workflows. The system accesses around 40 Knowledge Providers covering over 100 underlying knowledge sources and provides versatile methods for scoring and ranking result subgraphs. ARAX uses RTX-KG2 as its primary knowledge graph and supports query planning, knowledge gathering, overlay of contextual information, filtering, and result ranking through five core modules (Expander, Overlay, Filter, Resultify, and Ranker).
+description: ARAX (Expander Agent) is a graph-based modular reasoning tool for translational
+  biomedicine developed as part of the NCATS Biomedical Data Translator program. It
+  provides a web browser user interface and TRAPI-compliant API for encoding translational
+  biomedical questions and integrating knowledge across multiple sources. ARAX features
+  ARAXi, an intuitive domain-specific language for specifying knowledge graph analysis
+  workflows. The system accesses around 40 Knowledge Providers covering over 100 underlying
+  knowledge sources and provides versatile methods for scoring and ranking result
+  subgraphs. ARAX uses RTX-KG2 as its primary knowledge graph and supports query planning,
+  knowledge gathering, overlay of contextual information, filtering, and result ranking
+  through five core modules (Expander, Overlay, Filter, Resultify, and Ranker).
 domains:
-  - biomedical
-  - precision medicine
-  - health
+- biomedical
+- precision medicine
+- health
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Expander-Agent
-id: "arax"
-infores_id: "arax"
+id: arax
+infores_id: arax
 last_modified_date: '2025-10-31T00:00:00Z'
 layout: resource_detail
 name: ARAX Translator Reasoner
 products:
-  - category: ProgrammingInterface
-    description: TRAPI-compliant API endpoint for programmatic access to ARAX reasoning capabilities. Supports v1.3+ of the Translator Reasoner API standard. Provides /query, /asyncquery, and /entity endpoints.
-    id: "arax.api"
-    name: ARAX TRAPI API
-    original_source:
-      - arax
-    product_url: https://arax.ncats.io/api/arax/v1.4/ui/
-  - category: GraphicalInterface
-    description: Web browser interface for querying ARAX and exploring answers. Provides interactive visual query graph builder, TRAPI operations input, TRAPI JSON input, and ARAXi workflow language input methods.
-    format: http
-    id: "arax.ui"
-    name: ARAX Web UI
-    original_source:
-      - arax
-    product_url: https://arax.ncats.io/
-  - category: DocumentationProduct
-    description: ARAXi domain-specific language documentation for expressing knowledge graph analysis workflows.
-    id: "arax.araxi.docs"
-    name: ARAXi Documentation
-    original_source:
-      - arax
-    product_url: https://github.com/RTXteam/RTX/blob/master/code/ARAX/Documentation/DSL_Documentation.md
-  - category: ProgrammingInterface
-    description: Source code repository for ARAX and the RTX system including ARAX-specific modules and RTX-KG2 knowledge graph.
-    id: "arax.github"
-    name: RTX GitHub Repository
-    original_source:
-      - arax
-    product_url: https://github.com/RTXteam/RTX
-  - category: DocumentationProduct
-    description: Example queries and workflows demonstrating ARAX capabilities for various translational biomedicine use cases.
-    id: "arax.examples"
-    name: ARAX Examples
-    original_source:
-      - arax
-    product_url: https://github.com/RTXteam/RTX/tree/master/code/ARAX/Examples
+- category: ProgrammingInterface
+  description: TRAPI-compliant API endpoint for programmatic access to ARAX reasoning
+    capabilities. Supports v1.3+ of the Translator Reasoner API standard. Provides
+    /query, /asyncquery, and /entity endpoints.
+  id: arax.api
+  name: ARAX TRAPI API
+  original_source:
+  - arax
+  product_url: https://arax.ncats.io/api/arax/v1.4/ui/
+- category: GraphicalInterface
+  description: Web browser interface for querying ARAX and exploring answers. Provides
+    interactive visual query graph builder, TRAPI operations input, TRAPI JSON input,
+    and ARAXi workflow language input methods.
+  format: http
+  id: arax.ui
+  name: ARAX Web UI
+  original_source:
+  - arax
+  product_url: https://arax.ncats.io/
+- category: DocumentationProduct
+  description: ARAXi domain-specific language documentation for expressing knowledge
+    graph analysis workflows.
+  id: arax.araxi.docs
+  name: ARAXi Documentation
+  original_source:
+  - arax
+  product_file_size: 12191
+  product_url: https://github.com/RTXteam/RTX/blob/master/code/ARAX/Documentation/DSL_Documentation.md
+- category: ProgrammingInterface
+  description: Source code repository for ARAX and the RTX system including ARAX-specific
+    modules and RTX-KG2 knowledge graph.
+  id: arax.github
+  name: RTX GitHub Repository
+  original_source:
+  - arax
+  product_url: https://github.com/RTXteam/RTX
+- category: DocumentationProduct
+  description: Example queries and workflows demonstrating ARAX capabilities for various
+    translational biomedicine use cases.
+  id: arax.examples
+  name: ARAX Examples
+  original_source:
+  - arax
+  product_url: https://github.com/RTXteam/RTX/tree/master/code/ARAX/Examples
 publications:
-  - doi: "10.1093/bioinformatics/btad082"
-    id: "btad082"
-    journal: Bioinformatics
-    title: 'ARAX: a graph-based modular reasoning tool for translational biomedicine'
-    year: "2023"
+- doi: 10.1093/bioinformatics/btad082
+  id: btad082
+  journal: Bioinformatics
+  title: 'ARAX: a graph-based modular reasoning tool for translational biomedicine'
+  year: '2023'
 synonyms:
-  - ARAX
-  - Expander Agent
+- ARAX
+- Expander Agent
 ---
-
 ## Description
 
 ARAX is a computational reasoning tool for translational biomedicine that provides an intuitive system for querying and exploring biomedical knowledge and data. As one of six reasoning engines in the NCATS Biomedical Data Translator system, ARAX enables researchers to formulate complex biomedical questions and integrate knowledge across multiple sources to generate ranked answers.

@@ -3,20 +3,28 @@ activity_status: inactive
 category: Aggregator
 contacts:
 - category: Organization
-  label: Institute of Bioinformatics
   contact_details:
   - contact_type: url
     value: https://www.ibioinformatics.org/
+  label: Institute of Bioinformatics
 - category: Organization
-  label: Johns Hopkins University Pandey Lab
   contact_details:
   - contact_type: url
     value: https://www.hopkinsmedicine.org/profiles/details/akhilesh-pandey
+  label: Johns Hopkins University Pandey Lab
 - category: Individual
   label: Akhilesh Pandey
   orcid: 0000-0002-7944-3070
 creation_date: '2025-10-30T00:00:00Z'
-description: The Human Protein Reference Database (HPRD) was a comprehensive, manually curated collection of information on human proteins, including protein-protein interactions, post-translational modifications (PTMs), enzyme-substrate relationships, subcellular localization, tissue expression, and disease associations. Developed through collaboration between the Institute of Bioinformatics in Bangalore, India and Johns Hopkins University in Baltimore, USA, HPRD contained over 20,000 protein entries with more than 36,500 unique protein-protein interactions and 18,000 PTMs before being discontinued. The database served as a major resource for the human proteome from 2003 to approximately 2010.
+description: The Human Protein Reference Database (HPRD) was a comprehensive, manually
+  curated collection of information on human proteins, including protein-protein interactions,
+  post-translational modifications (PTMs), enzyme-substrate relationships, subcellular
+  localization, tissue expression, and disease associations. Developed through collaboration
+  between the Institute of Bioinformatics in Bangalore, India and Johns Hopkins University
+  in Baltimore, USA, HPRD contained over 20,000 protein entries with more than 36,500
+  unique protein-protein interactions and 18,000 PTMs before being discontinued. The
+  database served as a major resource for the human proteome from 2003 to approximately
+  2010.
 domains:
 - biomedical
 - proteomics
@@ -32,7 +40,8 @@ license:
 name: HPRD
 products:
 - category: Product
-  description: HPRD protein-protein interaction data in PSI-MITAB format, now archived and available through iRefIndex
+  description: HPRD protein-protein interaction data in PSI-MITAB format, now archived
+    and available through iRefIndex
   format: psi_mi_mitab
   id: hprd.ppi.data
   name: HPRD Protein-Protein Interactions
@@ -40,7 +49,10 @@ products:
   - hprd
   product_url: http://www.hprd.org/
   warnings:
-  - Original HPRD website is no longer accessible. Data has been archived in iRefIndex and other interaction databases.
+  - Original HPRD website is no longer accessible. Data has been archived in iRefIndex
+    and other interaction databases.
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 503 error
+    when accessing file'
 - category: DocumentationProduct
   description: HPRD data in XML format for programmatic access
   id: hprd.xml.download
@@ -49,7 +61,10 @@ products:
   - hprd
   product_url: http://www.hprd.org/
   warnings:
-  - Original HPRD website is no longer accessible. Data may be available through archive.org or integrated databases.
+  - Original HPRD website is no longer accessible. Data may be available through archive.org
+    or integrated databases.
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 503 error
+    when accessing file'
 - category: DocumentationProduct
   description: HPRD data in tab-delimited format for programmatic access
   id: hprd.tsv.download
@@ -58,9 +73,13 @@ products:
   - hprd
   product_url: http://www.hprd.org/
   warnings:
-  - Original HPRD website is no longer accessible. Data may be available through archive.org or integrated databases.
+  - Original HPRD website is no longer accessible. Data may be available through archive.org
+    or integrated databases.
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 503 error
+    when accessing file'
 - category: GraphicalInterface
-  description: PhosphoMotif Finder tool for identifying kinase/phosphatase substrate and binding motifs
+  description: PhosphoMotif Finder tool for identifying kinase/phosphatase substrate
+    and binding motifs
   format: http
   id: hprd.phosphomotif.finder
   name: HPRD PhosphoMotif Finder
@@ -70,7 +89,8 @@ products:
   warnings:
   - Original HPRD website is no longer accessible.
 - category: GraphicalInterface
-  description: GenProt Viewer for integrated genomic, transcriptomic and proteomic view of the human genome
+  description: GenProt Viewer for integrated genomic, transcriptomic and proteomic
+    view of the human genome
   format: http
   id: hprd.genprot.viewer
   name: GenProt Viewer
@@ -79,6 +99,20 @@ products:
   product_url: http://www.genprot.org/
   warnings:
   - GenProt website is no longer accessible.
+- category: Product
+  description: Historical consolidated protein interaction index in PSI-MITAB 2.5
+    format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI
+    and OPHID
+  format: psi_mi_mitab
+  id: irefindex.database
+  name: iRefIndex Database
+  original_source:
+  - bind
+  - biogrid
+  - dip
+  - hprd
+  - intact
+  - mint
 publications:
 - authors:
   - Peri S
@@ -96,7 +130,8 @@ publications:
   id: https://doi.org/10.1101/gr.1680803
   journal: Genome Research
   preferred: true
-  title: 'Development of human protein reference database as an initial platform for approaching systems biology in humans'
+  title: Development of human protein reference database as an initial platform for
+    approaching systems biology in humans
   year: '2003'
 - authors:
   - Mishra GR
@@ -144,7 +179,7 @@ publications:
   doi: 10.1093/nar/gkj141
   id: https://doi.org/10.1093/nar/gkj141
   journal: Nucleic Acids Research
-  title: 'Human protein reference database—2006 update'
+  title: Human protein reference database—2006 update
   year: '2006'
 - authors:
   - Peri S
@@ -183,7 +218,7 @@ publications:
   doi: 10.1093/nar/gkh070
   id: https://doi.org/10.1093/nar/gkh070
   journal: Nucleic Acids Research
-  title: 'Human protein reference database as a discovery resource for proteomics'
+  title: Human protein reference database as a discovery resource for proteomics
   year: '2004'
 - authors:
   - Gandhi TKB
@@ -210,12 +245,12 @@ publications:
   doi: 10.1038/ng1747
   id: https://doi.org/10.1038/ng1747
   journal: Nature Genetics
-  title: 'Analysis of the human protein interactome and comparison with yeast, worm and fly interaction datasets'
+  title: Analysis of the human protein interactome and comparison with yeast, worm
+    and fly interaction datasets
   year: '2006'
 taxon:
 - NCBITaxon:9606
 ---
-
 # HPRD - Human Protein Reference Database
 
 **Note: HPRD is no longer actively maintained. The website at www.hprd.org is currently inaccessible. HPRD data has been archived and incorporated into other protein interaction databases such as iRefIndex, IntAct, BioGRID, and STRING.**

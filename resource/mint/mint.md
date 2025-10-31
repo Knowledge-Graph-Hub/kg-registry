@@ -2,82 +2,118 @@
 activity_status: active
 category: Aggregator
 contacts:
-  - category: Organization
-    label: MINT Team - University of Rome Tor Vergata
+- category: Organization
+  label: MINT Team - University of Rome Tor Vergata
 creation_date: '2025-10-31T00:00:00Z'
-description: MINT (The Molecular INTeraction database) is a public and open source database focusing on experimentally verified protein-protein interactions mined from the scientific literature by expert curators. Molecular interactions are annotated according to international PSI-MI standards and follow the PSI-MI controlled vocabulary. MINT is a founder and main member of the IMEx consortium and provides data that is integrated into the IntAct database as part of a single non-redundant open access dataset. As an ELIXIR Core Data Resource and Global Core Biodata Resource, MINT contains over 139,000 interactions involving 27,800+ interactors from 676 organisms extracted from 6,500+ publications.
+description: MINT (The Molecular INTeraction database) is a public and open source
+  database focusing on experimentally verified protein-protein interactions mined
+  from the scientific literature by expert curators. Molecular interactions are annotated
+  according to international PSI-MI standards and follow the PSI-MI controlled vocabulary.
+  MINT is a founder and main member of the IMEx consortium and provides data that
+  is integrated into the IntAct database as part of a single non-redundant open access
+  dataset. As an ELIXIR Core Data Resource and Global Core Biodata Resource, MINT
+  contains over 139,000 interactions involving 27,800+ interactors from 676 organisms
+  extracted from 6,500+ publications.
 domains:
-  - proteomics
-  - biomedical
-  - systems biology
-  - biological systems
+- proteomics
+- biomedical
+- systems biology
+- biological systems
 homepage_url: https://mint.bio.uniroma2.it/
-id: "mint"
+id: mint
 last_modified_date: '2025-10-31T00:00:00Z'
 layout: resource_detail
 license:
-  id: "https://creativecommons.org/licenses/by/4.0/"
+  id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 name: Mint
 products:
-  - category: GraphicalInterface
-    description: Web interface for browsing, searching, and visualizing protein-protein interaction data from MINT with advanced search capabilities.
-    format: http
-    id: "mint.portal"
-    name: MINT Web Portal
-    original_source:
-      - mint
-    product_url: https://mint.bio.uniroma2.it/
-  - category: Product
-    description: Complete MINT dataset in PSI-MI MITAB 2.7 format accessible via PSICQUIC web service.
-    format: psi_mi_mitab
-    id: "mint.mitab.all"
-    name: MINT MITAB Full Dataset
-    product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/*
-  - category: Product
-    description: Human protein interactions from MINT in PSI-MI MITAB format for Homo sapiens (NCBITaxon 9606).
-    format: psi_mi_mitab
-    id: "mint.mitab.human"
-    name: MINT Human Interactions
-    product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:human
-  - category: Product
-    description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus musculus (NCBITaxon 10090).
-    format: psi_mi_mitab
-    id: "mint.mitab.mouse"
-    name: MINT Mouse Interactions
-    product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:mouse
-  - category: ProgrammingInterface
-    description: PSICQUIC SOAP and REST web services for programmatic access to MINT data using Molecular Interactions Query Language (MIQL).
-    id: "mint.psicquic"
-    name: MINT PSICQUIC Web Service
-    product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/
-  - category: GraphicalInterface
-    description: Advanced search interface for querying MINT data with field-specific searches and boolean operators.
-    format: http
-    id: "mint.advanced.search"
-    name: MINT Advanced Search
-    product_url: https://mint.bio.uniroma2.it/index.php/advanced-search/
+- category: GraphicalInterface
+  description: Web interface for browsing, searching, and visualizing protein-protein
+    interaction data from MINT with advanced search capabilities.
+  format: http
+  id: mint.portal
+  name: MINT Web Portal
+  original_source:
+  - mint
+  product_url: https://mint.bio.uniroma2.it/
+- category: Product
+  description: Complete MINT dataset in PSI-MI MITAB 2.7 format accessible via PSICQUIC
+    web service.
+  format: psi_mi_mitab
+  id: mint.mitab.all
+  name: MINT MITAB Full Dataset
+  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/*
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-31: No Content-Length
+    header found'
+- category: Product
+  description: Human protein interactions from MINT in PSI-MI MITAB format for Homo
+    sapiens (NCBITaxon 9606).
+  format: psi_mi_mitab
+  id: mint.mitab.human
+  name: MINT Human Interactions
+  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:human
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-31: No Content-Length
+    header found'
+- category: Product
+  description: Mouse protein interactions from MINT in PSI-MI MITAB format for Mus
+    musculus (NCBITaxon 10090).
+  format: psi_mi_mitab
+  id: mint.mitab.mouse
+  name: MINT Mouse Interactions
+  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:mouse
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-31: No Content-Length
+    header found'
+- category: ProgrammingInterface
+  description: PSICQUIC SOAP and REST web services for programmatic access to MINT
+    data using Molecular Interactions Query Language (MIQL).
+  id: mint.psicquic
+  name: MINT PSICQUIC Web Service
+  product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/
+- category: GraphicalInterface
+  description: Advanced search interface for querying MINT data with field-specific
+    searches and boolean operators.
+  format: http
+  id: mint.advanced.search
+  name: MINT Advanced Search
+  product_url: https://mint.bio.uniroma2.it/index.php/advanced-search/
+- category: Product
+  description: Historical consolidated protein interaction index in PSI-MITAB 2.5
+    format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI
+    and OPHID
+  format: psi_mi_mitab
+  id: irefindex.database
+  name: iRefIndex Database
+  original_source:
+  - bind
+  - biogrid
+  - dip
+  - hprd
+  - intact
+  - mint
 publications:
-  - doi: "10.1016/s0014-5793(01)03293-8"
-    id: "PMID:11911893"
-    journal: FEBS Lett
-    title: 'MINT: a Molecular INTeraction database'
-    year: "2002"
-  - doi: "10.1093/nar/gkl950"
-    id: "PMID:17135203"
-    journal: Nucleic Acids Res
-    title: 'MINT: the Molecular INTeraction database'
-    year: "2007"
-  - doi: "10.1093/nar/gkr930"
-    id: "PMID:22096227"
-    journal: Nucleic Acids Res
-    title: 'MINT, the molecular interaction database: 2012 update'
-    year: "2012"
+- doi: 10.1016/s0014-5793(01)03293-8
+  id: PMID:11911893
+  journal: FEBS Lett
+  title: 'MINT: a Molecular INTeraction database'
+  year: '2002'
+- doi: 10.1093/nar/gkl950
+  id: PMID:17135203
+  journal: Nucleic Acids Res
+  title: 'MINT: the Molecular INTeraction database'
+  year: '2007'
+- doi: 10.1093/nar/gkr930
+  id: PMID:22096227
+  journal: Nucleic Acids Res
+  title: 'MINT, the molecular interaction database: 2012 update'
+  year: '2012'
 synonyms:
-  - MINT
-  - Molecular INTeraction Database
+- MINT
+- Molecular INTeraction Database
 ---
-
 ## Description
 
 MINT (The Molecular INTeraction database) is a comprehensive public repository for experimentally verified protein-protein interactions curated from peer-reviewed scientific literature. Developed and maintained by the University of Rome Tor Vergata, MINT serves as a critical resource for researchers studying molecular interactions and protein networks.

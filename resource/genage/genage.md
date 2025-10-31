@@ -2,88 +2,95 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: "jp@senescence.info"
-    label: Genomics of Ageing and Rejuvenation Lab
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: jp@senescence.info
+  label: Genomics of Ageing and Rejuvenation Lab
 creation_date: '2025-10-30T00:00:00Z'
-description: GenAge is a curated database of genes related to ageing and longevity, part of the Human Ageing Genomic Resources (HAGR). It includes genes directly related to human ageing plus candidate genes from model organisms (yeast, worms, flies, mice), manually curated by experts to ensure high-quality content.
+description: GenAge is a curated database of genes related to ageing and longevity,
+  part of the Human Ageing Genomic Resources (HAGR). It includes genes directly related
+  to human ageing plus candidate genes from model organisms (yeast, worms, flies,
+  mice), manually curated by experts to ensure high-quality content.
 domains:
-  - genomics
-  - health
+- genomics
+- health
 homepage_url: http://genomics.senescence.info/genes/
-id: "genage"
-infores_id: "genage"
+id: genage
+infores_id: genage
 last_modified_date: '2025-10-31T00:00:00Z'
 layout: resource_detail
 name: GenAge Database of Ageing-Related Genes
 products:
-  - category: Product
-    compression: zip
-    description: Tab-delimited file containing all human ageing-related genes with extensive annotations
-    format: tsv
-    id: "genage.human"
-    name: GenAge Human Genes Dataset
-    original_source:
-      - genage
-    product_url: https://genomics.senescence.info/genes/human_genes.zip
-  - category: Product
-    compression: zip
-    description: Tab-delimited file containing genes associated with longevity and ageing in model organisms (yeast, worms, flies, mice)
-    format: tsv
-    id: "genage.models"
-    name: GenAge Model Organisms Dataset
-    original_source:
-      - genage
-    product_url: https://genomics.senescence.info/genes/models_genes.zip
-  - category: GraphicalInterface
-    description: Web interface for searching and browsing human ageing-related genes
-    format: http
-    id: "genage.human.search"
-    name: GenAge Human Genes Search
-    original_source:
-      - genage
-    product_url: https://genomics.senescence.info/genes/human.html
-  - category: GraphicalInterface
-    description: Web interface for searching and browsing model organism ageing genes
-    format: http
-    id: "genage.models.search"
-    name: GenAge Model Organisms Search
-    original_source:
-      - genage
-    product_url: https://genomics.senescence.info/genes/models.html
+- category: Product
+  compression: zip
+  description: Tab-delimited file containing all human ageing-related genes with extensive
+    annotations
+  format: tsv
+  id: genage.human
+  name: GenAge Human Genes Dataset
+  original_source:
+  - genage
+  product_file_size: 9465
+  product_url: https://genomics.senescence.info/genes/human_genes.zip
+- category: Product
+  compression: zip
+  description: Tab-delimited file containing genes associated with longevity and ageing
+    in model organisms (yeast, worms, flies, mice)
+  format: tsv
+  id: genage.models
+  name: GenAge Model Organisms Dataset
+  original_source:
+  - genage
+  product_file_size: 48796
+  product_url: https://genomics.senescence.info/genes/models_genes.zip
+- category: GraphicalInterface
+  description: Web interface for searching and browsing human ageing-related genes
+  format: http
+  id: genage.human.search
+  name: GenAge Human Genes Search
+  original_source:
+  - genage
+  product_url: https://genomics.senescence.info/genes/human.html
+- category: GraphicalInterface
+  description: Web interface for searching and browsing model organism ageing genes
+  format: http
+  id: genage.models.search
+  name: GenAge Model Organisms Search
+  original_source:
+  - genage
+  product_url: https://genomics.senescence.info/genes/models.html
 publications:
-  - authors:
-      - de Magalhaes JP
-      - et al
-    doi: "10.1093/nar/gkad927"
-    id: "doi:10.1093/nar/gkad927"
-    journal: Nucleic Acids Research
-    preferred: true
-    title: 'Human Ageing Genomic Resources: updates on key databases in ageing research'
-    year: "2024"
-  - authors:
-      - de Magalhaes JP
-      - Toussaint O
-    doi: "10.1016/j.febslet.2004.06.080"
-    id: "doi:10.1016/j.febslet.2004.06.080"
-    journal: FEBS Letters
-    title: 'GenAge: a genomic and proteomic network map of human ageing'
-    year: "2004"
-  - authors:
-      - Fernandes M
-      - et al
-    doi: "10.1093/hmg/ddw307"
-    id: "doi:10.1093/hmg/ddw307"
-    journal: Human Molecular Genetics
-    title: Systematic analysis of the gerontome reveals links between aging and age-related diseases
-    year: "2016"
+- authors:
+  - de Magalhaes JP
+  - et al
+  doi: 10.1093/nar/gkad927
+  id: doi:10.1093/nar/gkad927
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'Human Ageing Genomic Resources: updates on key databases in ageing research'
+  year: '2024'
+- authors:
+  - de Magalhaes JP
+  - Toussaint O
+  doi: 10.1016/j.febslet.2004.06.080
+  id: doi:10.1016/j.febslet.2004.06.080
+  journal: FEBS Letters
+  title: 'GenAge: a genomic and proteomic network map of human ageing'
+  year: '2004'
+- authors:
+  - Fernandes M
+  - et al
+  doi: 10.1093/hmg/ddw307
+  id: doi:10.1093/hmg/ddw307
+  journal: Human Molecular Genetics
+  title: Systematic analysis of the gerontome reveals links between aging and age-related
+    diseases
+  year: '2016'
 synonyms:
-  - GenAge
-  - The Aging Gene Database
+- GenAge
+- The Aging Gene Database
 ---
-
 # GenAge Database of Ageing-Related Genes
 
 ## Overview

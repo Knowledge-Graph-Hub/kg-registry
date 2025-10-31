@@ -1,12 +1,26 @@
 ---
 activity_status: active
 category: Aggregator
-description: DISEASES is a weekly updated database that integrates evidence on disease-gene associations from automatic text mining, manually curated literature, cancer mutation data, and genome-wide association studies. It provides confidence scores to facilitate comparison of different types and sources of evidence.
+contacts:
+- category: Individual
+  contact_details:
+  - contact_type: email
+    value: qingyao.huang@uzh.ch
+  label: Qingyao Huang
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://jensenlab.org/
+  label: JensenLab
+description: DISEASES is a weekly updated database that integrates evidence on disease-gene
+  associations from automatic text mining, manually curated literature, cancer mutation
+  data, and genome-wide association studies. It provides confidence scores to facilitate
+  comparison of different types and sources of evidence.
 domains:
-  - health
-  - genomics
-  - biomedical
-  - literature
+- health
+- genomics
+- biomedical
+- literature
 homepage_url: https://diseases.jensenlab.org/
 id: diseases
 infores_id: diseases
@@ -15,85 +29,224 @@ license:
   id: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 name: DISEASES
-contacts:
-  - category: Individual
-    contact_details:
-      - contact_type: email
-        value: qingyao.huang@uzh.ch
-    label: Qingyao Huang
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://jensenlab.org/
-    label: JensenLab
 products:
-  - category: GraphicalInterface
-    description: Web search interface for querying human genes and diseases to view integrated evidence from multiple channels
-    format: http
-    id: diseases.portal
-    name: DISEASES Web Search
-    original_source:
-      - diseases
-    product_url: https://diseases.jensenlab.org/
-  - category: Product
-    description: Disease-gene associations from text mining channel with z-scores and confidence scores (full dataset)
-    format: tsv
-    id: diseases.textmining-full
-    name: Text Mining Channel (Full)
-    product_url: https://download.jensenlab.org/human_disease_textmining_full.tsv
-  - category: Product
-    description: Disease-gene associations from text mining channel with z-scores and confidence scores (filtered non-redundant)
-    format: tsv
-    id: diseases.textmining-filtered
-    name: Text Mining Channel (Filtered)
-    product_url: https://download.jensenlab.org/human_disease_textmining_filtered.tsv
-  - category: Product
-    description: Disease-gene associations from manually curated knowledge channel with evidence types and confidence scores (full dataset)
-    format: tsv
-    id: diseases.knowledge-full
-    name: Knowledge Channel (Full)
-    product_url: https://download.jensenlab.org/human_disease_knowledge_full.tsv
-  - category: Product
-    description: Disease-gene associations from manually curated knowledge channel with evidence types and confidence scores (filtered non-redundant)
-    format: tsv
-    id: diseases.knowledge-filtered
-    name: Knowledge Channel (Filtered)
-    product_url: https://download.jensenlab.org/human_disease_knowledge_filtered.tsv
-  - category: Product
-    description: Disease-gene associations from experimental data channel including cancer mutations and GWAS with source scores and confidence scores (full dataset)
-    format: tsv
-    id: diseases.experiments-full
-    name: Experiments Channel (Full)
-    product_url: https://download.jensenlab.org/human_disease_experiments_full.tsv
-  - category: Product
-    description: Disease-gene associations from experimental data channel including cancer mutations and GWAS with source scores and confidence scores (filtered non-redundant)
-    format: tsv
-    id: diseases.experiments-filtered
-    name: Experiments Channel (Filtered)
-    product_url: https://download.jensenlab.org/human_disease_experiments_filtered.tsv
-  - category: Product
-    description: Experimental integrated channel combining evidence from all sources (full dataset)
-    format: tsv
-    id: diseases.integrated-full
-    name: Integrated Channel (Full)
-    product_url: https://download.jensenlab.org/human_disease_integrated_full.tsv
-  - category: Product
-    description: Dictionary of human gene and disease names for the DISEASES tagger
-    compression: targz
-    id: diseases.dictionary
-    name: DISEASES Dictionary
-    product_url: https://download.jensenlab.org/diseases_dictionary.tar.gz
+- category: GraphicalInterface
+  description: Web search interface for querying human genes and diseases to view
+    integrated evidence from multiple channels
+  format: http
+  id: diseases.portal
+  name: DISEASES Web Search
+  original_source:
+  - diseases
+  product_url: https://diseases.jensenlab.org/
+- category: Product
+  description: Disease-gene associations from text mining channel with z-scores and
+    confidence scores (full dataset)
+  format: tsv
+  id: diseases.textmining-full
+  name: Text Mining Channel (Full)
+  product_file_size: 1920661253
+  product_url: https://download.jensenlab.org/human_disease_textmining_full.tsv
+- category: Product
+  description: Disease-gene associations from text mining channel with z-scores and
+    confidence scores (filtered non-redundant)
+  format: tsv
+  id: diseases.textmining-filtered
+  name: Text Mining Channel (Filtered)
+  product_file_size: 48652618
+  product_url: https://download.jensenlab.org/human_disease_textmining_filtered.tsv
+- category: Product
+  description: Disease-gene associations from manually curated knowledge channel with
+    evidence types and confidence scores (full dataset)
+  format: tsv
+  id: diseases.knowledge-full
+  name: Knowledge Channel (Full)
+  product_file_size: 6883980
+  product_url: https://download.jensenlab.org/human_disease_knowledge_full.tsv
+- category: Product
+  description: Disease-gene associations from manually curated knowledge channel with
+    evidence types and confidence scores (filtered non-redundant)
+  format: tsv
+  id: diseases.knowledge-filtered
+  name: Knowledge Channel (Filtered)
+  product_file_size: 602129
+  product_url: https://download.jensenlab.org/human_disease_knowledge_filtered.tsv
+- category: Product
+  description: Disease-gene associations from experimental data channel including
+    cancer mutations and GWAS with source scores and confidence scores (full dataset)
+  format: tsv
+  id: diseases.experiments-full
+  name: Experiments Channel (Full)
+  product_file_size: 26901903
+  product_url: https://download.jensenlab.org/human_disease_experiments_full.tsv
+- category: Product
+  description: Disease-gene associations from experimental data channel including
+    cancer mutations and GWAS with source scores and confidence scores (filtered non-redundant)
+  format: tsv
+  id: diseases.experiments-filtered
+  name: Experiments Channel (Filtered)
+  product_file_size: 2567625
+  product_url: https://download.jensenlab.org/human_disease_experiments_filtered.tsv
+- category: Product
+  description: Experimental integrated channel combining evidence from all sources
+    (full dataset)
+  format: tsv
+  id: diseases.integrated-full
+  name: Integrated Channel (Full)
+  product_file_size: 648296693
+  product_url: https://download.jensenlab.org/human_disease_integrated_full.tsv
+- category: Product
+  compression: targz
+  description: Dictionary of human gene and disease names for the DISEASES tagger
+  id: diseases.dictionary
+  name: DISEASES Dictionary
+  product_file_size: 15984342
+  product_url: https://download.jensenlab.org/diseases_dictionary.tar.gz
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - doid
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: cancer-genome-interpreter.clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - doid
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - ncbigene
+  - pubmed
+  - mesh
+  - pid
+  - doid
+  - diseases
+  - drugcentral
+  - go
+  - gwascatalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
+  secondary_source:
+  - spoke
 publications:
-  - id: PMID:35348650
-    preferred: true
-  - id: PMID:25484339
+- id: PMID:35348650
+  preferred: true
+- id: PMID:25484339
 synonyms:
-  - DISEASES Database
-  - JensenLab DISEASES
+- DISEASES Database
+- JensenLab DISEASES
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
-
 # DISEASES
 
 ## Overview

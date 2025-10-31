@@ -1,72 +1,288 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://lncipedia.org/
+  label: LncIPedia Team
 creation_date: '2025-10-30T00:00:00Z'
-description: LncIPedia is a comprehensive public database for human long non-coding RNA (lncRNA) sequences and annotations, containing manually curated literature and detailed transcript information.
+description: LncIPedia is a comprehensive public database for human long non-coding
+  RNA (lncRNA) sequences and annotations, containing manually curated literature and
+  detailed transcript information.
 domains:
-  - genomics
-  - literature
+- genomics
+- literature
+homepage_url: https://lncipedia.org/
 id: lncipedia
 last_modified_date: '2025-10-30T00:00:00Z'
 layout: resource_detail
 name: LncIPedia
-homepage_url: https://lncipedia.org/
-taxon:
-  - NCBITaxon:9606
-contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: url
-        value: https://lncipedia.org/
-    label: LncIPedia Team
-publications:
-  - id: PMID:30371849
-    category: Publication
-    preferred: true
-  - id: PMID:25378313
-    category: Publication
-  - id: PMID:23042674
-    category: Publication
 products:
-  - category: GraphicalInterface
-    description: Web interface for searching and browsing human lncRNA sequences and annotations
-    format: http
-    id: lncipedia.search
-    name: LncIPedia Search
-    original_source:
-      - lncipedia
-    product_url: https://lncipedia.org/db/search
-  - category: Product
-    description: Downloadable database files in FASTA, GFF, and BED formats for both GRCh37/hg19 and GRCh38/hg38 genome assemblies
-    format: fasta
-    id: lncipedia.downloads
-    name: LncIPedia Downloads
-    product_url: https://lncipedia.org/download
-  - category: GraphicalInterface
-    description: UCSC Genome Browser trackhub for directly displaying LncIPedia annotations
-    id: lncipedia.trackhub
-    name: LncIPedia UCSC Trackhub
-    original_source:
-      - lncipedia
-    product_url: https://www.lncipedia.org/trackhub/hub.txt
-  - category: Product
-    description: Integration files for Integrative Genomics Viewer (IGV) to visualize lncRNA annotations
-    format: http
-    id: lncipedia.igv
-    name: LncIPedia IGV Integration
-    original_source:
-      - lncipedia
-    product_url: https://lncipedia.org/download#anchor-igv
-  - category: Product
-    description: Metadata files including locus conservation across species (chimpanzee, mouse, Drosophila, zebrafish) and conversion tables to Ensembl and RefSeq IDs
-    format: tsv
-    id: lncipedia.metadata
-    name: LncIPedia Metadata
-    product_url: https://lncipedia.org/download#anchor-metadata
+- category: GraphicalInterface
+  description: Web interface for searching and browsing human lncRNA sequences and
+    annotations
+  format: http
+  id: lncipedia.search
+  name: LncIPedia Search
+  original_source:
+  - lncipedia
+  product_url: https://lncipedia.org/db/search
+- category: Product
+  description: Downloadable database files in FASTA, GFF, and BED formats for both
+    GRCh37/hg19 and GRCh38/hg38 genome assemblies
+  format: fasta
+  id: lncipedia.downloads
+  name: LncIPedia Downloads
+  product_url: https://lncipedia.org/download
+- category: GraphicalInterface
+  description: UCSC Genome Browser trackhub for directly displaying LncIPedia annotations
+  id: lncipedia.trackhub
+  name: LncIPedia UCSC Trackhub
+  original_source:
+  - lncipedia
+  product_url: https://www.lncipedia.org/trackhub/hub.txt
+- category: Product
+  description: Integration files for Integrative Genomics Viewer (IGV) to visualize
+    lncRNA annotations
+  format: http
+  id: lncipedia.igv
+  name: LncIPedia IGV Integration
+  original_source:
+  - lncipedia
+  product_url: https://lncipedia.org/download#anchor-igv
+- category: Product
+  description: Metadata files including locus conservation across species (chimpanzee,
+    mouse, Drosophila, zebrafish) and conversion tables to Ensembl and RefSeq IDs
+  format: tsv
+  id: lncipedia.metadata
+  name: LncIPedia Metadata
+  product_url: https://lncipedia.org/download#anchor-metadata
+- category: GraphicalInterface
+  description: Web portal for searching and browsing ncRNA sequences, structures,
+    and annotations
+  format: http
+  id: rnacentral.portal
+  name: RNAcentral Portal
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to RNAcentral data
+  format: http
+  id: rnacentral.api
+  name: RNAcentral REST API
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/api
+- category: Product
+  description: FTP archive with current and archived release files (sequences and
+    annotations)
+  format: http
+  id: rnacentral.ftp
+  name: RNAcentral FTP Archive
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+- category: DataModelProduct
+  description: Public PostgreSQL database for direct SQL access to RNAcentral data
+  format: postgres
+  id: rnacentral.public-db
+  name: RNAcentral Public Postgres Database
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/help/public-database
+publications:
+- category: Publication
+  id: PMID:30371849
+  preferred: true
+- category: Publication
+  id: PMID:25378313
+- category: Publication
+  id: PMID:23042674
+taxon:
+- NCBITaxon:9606
 warnings:
-  - LncIPedia download files are for non-commercial use only. Any other use should be approved in writing from Ghent University.
+- LncIPedia download files are for non-commercial use only. Any other use should be
+  approved in writing from Ghent University.
 ---
-
 # LncIPedia
 
 ## Overview

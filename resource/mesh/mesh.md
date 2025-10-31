@@ -142,7 +142,7 @@ products:
     name: SPOKE Graph
     original_source:
       - ncbigene
-      - medline
+      - pubmed
       - mesh
       - pid
       - doid

@@ -489,8 +489,22 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 403 error
     when accessing file'
+- category: Product
+  description: Historical consolidated protein interaction index in PSI-MITAB 2.5
+    format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI
+    and OPHID
+  format: psi_mi_mitab
+  id: irefindex.database
+  name: iRefIndex Database
+  original_source:
+  - bind
+  - biogrid
+  - dip
+  - hprd
+  - intact
+  - mint
 ---
 # IntAct
 

@@ -30,14 +30,14 @@ products:
   format: owl
   id: peco.owl
   name: peco.owl
-  product_file_size: 83671
+  product_file_size: 82330
   product_url: http://purl.obolibrary.org/obo/peco.owl
 - category: OntologyProduct
   description: Plant Experimental Conditions Ontology in OBO format
   format: obo
   id: peco.obo
   name: peco.obo
-  product_file_size: 65892
+  product_file_size: 66866
   product_url: http://purl.obolibrary.org/obo/peco.obo
 - category: DataModelProduct
   description: The Basic subset of the Plant Trait Ontology in OBO format

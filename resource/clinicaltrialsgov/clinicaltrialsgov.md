@@ -56,7 +56,7 @@ products:
   name: SPOKE Graph
   original_source:
   - ncbigene
-  - medline
+  - pubmed
   - mesh
   - pid
   - doid
@@ -159,7 +159,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 404 error
     when accessing file'
 - category: Product
   description: Clinical trial information from ClinicalTrials.gov
@@ -174,8 +174,25 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-30: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 403 error
     when accessing file'
+- category: Product
+  description: Cloud-based PostgreSQL database with daily refreshed clinical trial
+    data, accessible via standard PostgreSQL clients
+  format: postgres
+  id: aact.database
+  name: AACT Cloud Database
+  original_source:
+  - clinicaltrialsgov
+  product_url: https://aact.ctti-clinicaltrials.org/connect
+- category: Product
+  description: Static downloadable copies of the complete AACT database
+  format: postgres
+  id: aact.downloads
+  name: AACT Database Downloads
+  original_source:
+  - clinicaltrialsgov
+  product_url: https://aact.ctti-clinicaltrials.org/downloads
 publications:
 - authors:
   - Zarin DA

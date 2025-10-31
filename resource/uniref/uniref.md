@@ -10,7 +10,12 @@ contacts:
     value: https://www.uniprot.org/contact
   label: UniProt Consortium
 creation_date: '2025-10-31T00:00:00Z'
-description: UniRef (Universal Protein Resource Reference Clusters) provides clustered sets of protein sequences from the UniProt Knowledgebase and selected UniParc records to obtain complete coverage. UniRef100 combines identical sequences and sub-fragments into a single UniRef entry, UniRef90 clusters sequences with 90% sequence identity, and UniRef50 clusters sequences with 50% sequence identity, providing speed and coverage tradeoffs for similarity searches.
+description: UniRef (Universal Protein Resource Reference Clusters) provides clustered
+  sets of protein sequences from the UniProt Knowledgebase and selected UniParc records
+  to obtain complete coverage. UniRef100 combines identical sequences and sub-fragments
+  into a single UniRef entry, UniRef90 clusters sequences with 90% sequence identity,
+  and UniRef50 clusters sequences with 50% sequence identity, providing speed and
+  coverage tradeoffs for similarity searches.
 domains:
 - proteomics
 - biomedical
@@ -27,54 +32,82 @@ name: UniRef
 products:
 - category: Product
   compression: gzip
-  description: UniRef100 database combining identical protein sequences and sub-fragments with 11-residue overlap into single representative entries, providing complete sequence coverage with 100% identity clustering
+  description: UniRef100 database combining identical protein sequences and sub-fragments
+    with 11-residue overlap into single representative entries, providing complete
+    sequence coverage with 100% identity clustering
   format: fasta
   id: uniref.uniref100.fasta
   name: UniRef100 FASTA
   product_url: https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref100/uniref100.fasta.gz
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-31: Timeout connecting
+    to URL'
 - category: Product
   compression: gzip
-  description: UniRef100 database in XML format with comprehensive metadata including cluster membership, representative sequences, taxonomy, and cross-references
+  description: UniRef100 database in XML format with comprehensive metadata including
+    cluster membership, representative sequences, taxonomy, and cross-references
   format: xml
   id: uniref.uniref100.xml
   name: UniRef100 XML
   product_url: https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref100/uniref100.xml.gz
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-31: Timeout connecting
+    to URL'
 - category: Product
   compression: gzip
-  description: UniRef90 database clustering sequences with at least 90% sequence identity and 80% overlap, balancing speed and sensitivity for sequence searches
+  description: UniRef90 database clustering sequences with at least 90% sequence identity
+    and 80% overlap, balancing speed and sensitivity for sequence searches
   format: fasta
   id: uniref.uniref90.fasta
   name: UniRef90 FASTA
   product_url: https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90/uniref90.fasta.gz
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-31: Timeout connecting
+    to URL'
 - category: Product
   compression: gzip
-  description: UniRef90 database in XML format with complete cluster information and annotations
+  description: UniRef90 database in XML format with complete cluster information and
+    annotations
   format: xml
   id: uniref.uniref90.xml
   name: UniRef90 XML
   product_url: https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90/uniref90.xml.gz
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-31: Timeout connecting
+    to URL'
 - category: Product
   compression: gzip
-  description: UniRef50 database clustering sequences with at least 50% sequence identity and 80% overlap, providing fast sequence searches with broad coverage of protein sequence space
+  description: UniRef50 database clustering sequences with at least 50% sequence identity
+    and 80% overlap, providing fast sequence searches with broad coverage of protein
+    sequence space
   format: fasta
   id: uniref.uniref50.fasta
   name: UniRef50 FASTA
   product_url: https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref50/uniref50.fasta.gz
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-31: Timeout connecting
+    to URL'
 - category: Product
   compression: gzip
-  description: UniRef50 database in XML format with detailed cluster annotations and relationships
+  description: UniRef50 database in XML format with detailed cluster annotations and
+    relationships
   format: xml
   id: uniref.uniref50.xml
   name: UniRef50 XML
   product_url: https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref50/uniref50.xml.gz
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-10-31: Timeout connecting
+    to URL'
 - category: GraphicalInterface
-  description: Web interface for searching, browsing, and analyzing UniRef cluster information with advanced search capabilities and visualization tools
+  description: Web interface for searching, browsing, and analyzing UniRef cluster
+    information with advanced search capabilities and visualization tools
   format: http
   id: uniref.portal
   name: UniRef Web Portal
   product_url: https://www.uniprot.org/uniref
 - category: ProgrammingInterface
-  description: RESTful API for programmatic access to UniRef cluster data supporting queries, downloads, and integration with bioinformatics workflows
+  description: RESTful API for programmatic access to UniRef cluster data supporting
+    queries, downloads, and integration with bioinformatics workflows
   format: http
   id: uniref.api
   name: UniRef REST API

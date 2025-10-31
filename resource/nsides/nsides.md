@@ -2,101 +2,113 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: "nick.tatonetti@gmail.com"
-      - contact_type: github
-        value: "tatonetti-lab"
-    label: Tatonetti Lab
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: nick.tatonetti@gmail.com
+  - contact_type: github
+    value: tatonetti-lab
+  label: Tatonetti Lab
 creation_date: '2025-10-30T00:00:00Z'
-description: nSIDES is a comprehensive collection of drug side effect and drug interaction resources developed by the Tatonetti Lab. It includes OnSIDES (adverse events from drug labels), KidSIDES (pediatric drug safety signals), AwareDX (sex-specific adverse drug effects), OffSIDES (off-label side effects), TwoSIDES (drug-drug interactions), and ManySIDES (combinations of 3+ drugs).
+description: nSIDES is a comprehensive collection of drug side effect and drug interaction
+  resources developed by the Tatonetti Lab. It includes OnSIDES (adverse events from
+  drug labels), KidSIDES (pediatric drug safety signals), AwareDX (sex-specific adverse
+  drug effects), OffSIDES (off-label side effects), TwoSIDES (drug-drug interactions),
+  and ManySIDES (combinations of 3+ drugs).
 domains:
-  - pharmacology
-  - drug discovery
-  - health
-  - precision medicine
+- pharmacology
+- drug discovery
+- health
+- precision medicine
 homepage_url: https://nsides.io/
-id: "nsides"
-infores_id: "nsides"
+id: nsides
+infores_id: nsides
 last_modified_date: '2025-10-31T00:00:00Z'
 layout: resource_detail
 name: nSIDES
 products:
-  - category: Product
-    description: Adverse drug events extracted from FDA drug labels using fine-tuned PubMedBERT, covering 3.6M+ drug-ADE pairs for 2,793 drug ingredients from 46,686 labels
-    format: csv
-    id: "nsides.onsides"
-    name: OnSIDES
-    product_url: https://github.com/tatonetti-lab/onsides/releases
-  - category: Product
-    description: Pediatric drug safety signals across developmental phases, covering adverse events specific to children
-    format: csv
-    id: "nsides.kidsides"
-    name: KidSIDES
-    original_source:
-      - nsides
-    product_url: https://tatonettilab-resources.s3.amazonaws.com/KidSIDES/ade_nichd.csv.gz
-  - category: GraphicalInterface
-    description: Interactive RShiny web portal for browsing pediatric drug safety signals
-    format: http
-    id: "nsides.pdsportal"
-    name: PDSPortal
-    original_source:
-      - nsides
-    product_url: https://pdsportal.shinyapps.io/pdsportal/
-  - category: Product
-    description: Drug safety signals with differential risk between men and women, covering 20,817 adverse drug effects with sex-specific risks
-    format: http
-    id: "nsides.awaredx"
-    name: AwareDX
-    original_source:
-      - nsides
-    product_url: http://tatonettilab-resources.s3-website-us-west-1.amazonaws.com/?p=nsides/
-  - category: ProcessProduct
-    description: Code repository for OnSIDES model training and data generation
-    id: "nsides.onsides.code"
-    name: OnSIDES Code
-    original_source:
-      - nsides
-    product_url: https://github.com/tatonetti-lab/onsides
-  - category: ProcessProduct
-    description: Code repository for KidSIDES pediatric adverse drug event database study
-    id: "nsides.kidsides.code"
-    name: KidSIDES Code
-    original_source:
-      - nsides
-    product_url: https://github.com/ngiangre/pediatric_ade_database_study
+- category: Product
+  description: Adverse drug events extracted from FDA drug labels using fine-tuned
+    PubMedBERT, covering 3.6M+ drug-ADE pairs for 2,793 drug ingredients from 46,686
+    labels
+  format: csv
+  id: nsides.onsides
+  name: OnSIDES
+  product_url: https://github.com/tatonetti-lab/onsides/releases
+- category: Product
+  description: Pediatric drug safety signals across developmental phases, covering
+    adverse events specific to children
+  format: csv
+  id: nsides.kidsides
+  name: KidSIDES
+  original_source:
+  - nsides
+  product_file_size: 107
+  product_url: https://tatonettilab-resources.s3.amazonaws.com/KidSIDES/ade_nichd.csv.gz
+- category: GraphicalInterface
+  description: Interactive RShiny web portal for browsing pediatric drug safety signals
+  format: http
+  id: nsides.pdsportal
+  name: PDSPortal
+  original_source:
+  - nsides
+  product_url: https://pdsportal.shinyapps.io/pdsportal/
+- category: Product
+  description: Drug safety signals with differential risk between men and women, covering
+    20,817 adverse drug effects with sex-specific risks
+  format: http
+  id: nsides.awaredx
+  name: AwareDX
+  original_source:
+  - nsides
+  product_url: http://tatonettilab-resources.s3-website-us-west-1.amazonaws.com/?p=nsides/
+- category: ProcessProduct
+  description: Code repository for OnSIDES model training and data generation
+  id: nsides.onsides.code
+  name: OnSIDES Code
+  original_source:
+  - nsides
+  product_url: https://github.com/tatonetti-lab/onsides
+- category: ProcessProduct
+  description: Code repository for KidSIDES pediatric adverse drug event database
+    study
+  id: nsides.kidsides.code
+  name: KidSIDES Code
+  original_source:
+  - nsides
+  product_url: https://github.com/ngiangre/pediatric_ade_database_study
 publications:
-  - authors:
-      - Chandak P
-      - Tatonetti NP
-    doi: "10.1016/j.patter.2020.100108"
-    id: "doi:10.1016/j.patter.2020.100108"
-    journal: Patterns (N Y)
-    title: Using Machine Learning to Identify Adverse Drug Effects Posing Increased Risk to Women
-    year: "2020"
-  - authors:
-      - Giangreco N
-      - Tatonetti NP
-    doi: "10.1016/j.medj.2022.08.001"
-    id: "doi:10.1016/j.medj.2022.08.001"
-    journal: Med
-    title: A database of pediatric drug effects to evaluate ontogenic mechanisms from child growth and development
-    year: "2022"
-  - authors:
-      - Giangreco N
-      - Tatonetti NP
-    doi: "10.1186/s13040-021-00264-9"
-    id: "doi:10.1186/s13040-021-00264-9"
-    journal: BioData Mining
-    title: Evaluating risk detection methods to uncover ontogenic-mediated adverse drug effect mechanisms in children
-    year: "2021"
+- authors:
+  - Chandak P
+  - Tatonetti NP
+  doi: 10.1016/j.patter.2020.100108
+  id: doi:10.1016/j.patter.2020.100108
+  journal: Patterns (N Y)
+  title: Using Machine Learning to Identify Adverse Drug Effects Posing Increased
+    Risk to Women
+  year: '2020'
+- authors:
+  - Giangreco N
+  - Tatonetti NP
+  doi: 10.1016/j.medj.2022.08.001
+  id: doi:10.1016/j.medj.2022.08.001
+  journal: Med
+  title: A database of pediatric drug effects to evaluate ontogenic mechanisms from
+    child growth and development
+  year: '2022'
+- authors:
+  - Giangreco N
+  - Tatonetti NP
+  doi: 10.1186/s13040-021-00264-9
+  id: doi:10.1186/s13040-021-00264-9
+  journal: BioData Mining
+  title: Evaluating risk detection methods to uncover ontogenic-mediated adverse drug
+    effect mechanisms in children
+  year: '2021'
 repository: https://github.com/tatonetti-lab
 synonyms:
-  - nSIDES
+- nSIDES
 ---
-
 # nSIDES
 
 ## Overview
