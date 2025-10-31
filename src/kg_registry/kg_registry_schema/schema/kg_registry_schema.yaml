@@ -832,6 +832,10 @@ enums:
       environment:
         description: >-
           The environment and ecosystems.
+      general:
+        description: >-
+          A general domain, not specific to any other category.
+          It concerns resources that are broadly applicable across multiple domains.
       genomics:
         description: >-
           The study of genomes, including genome structure, evolution, 
