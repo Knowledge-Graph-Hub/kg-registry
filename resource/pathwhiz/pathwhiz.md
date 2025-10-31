@@ -1,46 +1,61 @@
 ---
-activity_status: unknown
-category: DataSource
-creation_date: '2025-10-30T00:00:00Z'
-description: Information resource for PathWhiz
+activity_status: active
+category: Resource
+contacts:
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: "david.wishart@ualberta.ca"
+      - contact_type: url
+        value: "http://www.wishartlab.com/"
+    label: Wishart Lab
+creation_date: '2025-10-31T00:00:00Z'
+description: PathWhiz is a web-based pathway drawing and visualization tool designed for creating colorful, visually pleasing, and biologically accurate pathway diagrams that are machine-readable and interactive. PathWhiz supports a high level of biological detail including metabolites (with automated structure generation), protein complexes (with quaternary structures, covalent modifications, and cofactors), nucleic acids, membranes, subcellular structures, cells, tissues, and organs. PathWhiz has been used to generate over 700 pathway diagrams for popular databases including HMDB, DrugBank, and PathBank, and supports export to BioPAX, SBGN-ML, SBML, and PWML formats as well as high-resolution images.
 domains:
-  - stub
-id: pathwhiz
-infores_id: pathwhiz
-last_modified_date: '2025-10-30T00:00:00Z'
+  - pathways
+  - biological systems
+  - biomedical
+  - drug discovery
+homepage_url: https://smpdb.ca/pathwhiz
+id: "pathwhiz"
+infores_id: "pathwhiz"
+last_modified_date: '2025-10-31T00:00:00Z'
 layout: resource_detail
+license:
+  id: "https://creativecommons.org/licenses/by-sa/4.0/"
+  label: CC-BY-SA-4.0
 name: PathWhiz
-homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/PathWhiz
+products:
+  - category: GraphicalInterface
+    description: Web interface for creating, editing, and visualizing biological pathway diagrams with automated metabolite structure generation and interactive features
+    format: http
+    id: "pathwhiz.editor"
+    name: PathWhiz Pathway Editor
+    product_url: https://smpdb.ca/pathwhiz
+  - category: GraphicalInterface
+    description: Public library of pathway diagrams that can be browsed, viewed, and used as templates for creating new pathways
+    format: http
+    id: "pathwhiz.pathways"
+    name: PathWhiz Pathway Library
+    product_url: https://smpdb.ca/pathwhiz/pathways
+publications:
+  - authors:
+      - Pon A
+      - Jewison T
+      - Su Y
+      - Liang Y
+      - Knox C
+      - Maciejewski A
+      - Wilson M
+      - Wishart DS
+    doi: "10.1093/nar/gkv399"
+    id: "https://doi.org/10.1093/nar/gkv399"
+    journal: Nucleic Acids Research
+    preferred: true
+    title: 'Pathways with PathWhiz'
+    year: "2015"
+repository: https://github.com/WishartLab/PathWhiz
+synonyms:
+  - PathWhiz
+  - PathWhiz Pathway Editor
 ---
-
-# PathWhiz
-
-## Overview
-
-Information resource for PathWhiz
-
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
-
-## Information Resource ID
-
-This resource has the Information Resource identifier: `infores:pathwhiz`
-
-## Curation Status
-
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
-
-## What Needs to be Curated
-
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
-
-## Additional Notes
