@@ -98,7 +98,7 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-10-31_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-10-30_ No Content-Length
     header found
@@ -145,9 +145,9 @@ products:
   secondary_source:
   - oma
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
+  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
     accessing file
@@ -654,7 +654,7 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-10-31_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
     accessing file
@@ -671,7 +671,7 @@ products:
   secondary_source:
   - ttd
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ ('Connection aborted.', ConnectionResetError(104, 'Connection reset by
     peer'))
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
@@ -690,7 +690,7 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
@@ -706,7 +706,7 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
@@ -722,7 +722,7 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
@@ -741,7 +741,7 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'

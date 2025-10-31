@@ -6,5 +6,8 @@ format: psi_mi_mitab
 id: mint.mitab.human
 name: MINT Human Interactions
 product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:human
+warnings:
+- File was not able to be retrieved when checked on 2025-10-31_ No Content-Length
+  header found
 layout: product_detail
 ---

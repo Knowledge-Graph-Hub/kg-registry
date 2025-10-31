@@ -7,6 +7,7 @@ id: nsides.kidsides
 name: KidSIDES
 original_source:
 - nsides
+product_file_size: 107
 product_url: https://tatonettilab-resources.s3.amazonaws.com/KidSIDES/ade_nichd.csv.gz
 layout: product_detail
 ---

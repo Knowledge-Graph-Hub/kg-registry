@@ -112,6 +112,49 @@ products:
   name: GO (OBO Format edition), daily snapshot release
   product_file_size: 35266549
   product_url: http://purl.obolibrary.org/obo/go/snapshot/go.obo
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - ncbigene
+  - pubmed
+  - mesh
+  - pid
+  - doid
+  - diseases
+  - drugcentral
+  - go
+  - gwascatalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
+  secondary_source:
+  - spoke
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations
@@ -158,175 +201,6 @@ products:
   product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
   secondary_source:
   - bioteque
-- category: GraphicalInterface
-  description: A browser interface for a knowledge graph for Alzheimer's Disease.
-  format: http
-  id: alzkb.browser
-  name: AlzKB Graph Database Browser
-  original_source:
-  - aop-db
-  - bgee
-  - disgenet
-  - doid
-  - drugbank
-  - dsstox
-  - go
-  - gwascatalog
-  - hrpimp
-  - lincs-l1000
-  - mesh
-  - ncbigene
-  - pharmacotherapydb
-  - pid
-  - pubchem
-  - reactome
-  - sider
-  - tissues
-  - uberon
-  - wikipathways
-  product_url: https://alzkb.ai:7473/login
-  secondary_source:
-  - alzkb
-  - hetionet
-- category: GraphProduct
-  description: Memgraph data release for AlzKB.
-  id: alzkb.data
-  name: AlzKB Data Release (Version 2.0.0)
-  original_source:
-  - aop-db
-  - bgee
-  - disgenet
-  - doid
-  - drugbank
-  - dsstox
-  - go
-  - gwascatalog
-  - hrpimp
-  - lincs-l1000
-  - mesh
-  - ncbigene
-  - pharmacotherapydb
-  - pid
-  - pubchem
-  - reactome
-  - reactome
-  - sider
-  - tissues
-  - uberon
-  - wikipathways
-  product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
-  secondary_source:
-  - alzkb
-  - hetionet
-- description: The MechRepoNet knowledge graph in its original format
-  id: mechreponet.kg
-  name: MechRepoNet Knowledge Graph
-  original_source:
-  - ctd
-  - doid
-  - go
-  - chebi
-  - reactome
-  - interpro
-  - hp
-  - cl
-  - pr
-  - uberon
-  - ncbitaxon
-  - hetionet
-  - complexportal
-  - rnacentral
-  - mirtarbase
-  - unii
-  - biolink
-  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
-  secondary_source:
-  - mechreponet
-- category: GraphProduct
-  description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-  format: kgx-jsonl
-  id: rtx-kg2.graph.nodes
-  name: RTX-KG2.10.1c KGX JSONL Nodes
-  original_source:
-  - chembl
-  - drugbank
-  - kegg
-  - reactome
-  - go
-  - drugcentral
-  - uniprot
-  - mondo
-  - hp
-  - chebi
-  - uberon
-  - ncbitaxon
-  - dgidb
-  - disgenet
-  - ensembl
-  - gtopdb
-  - rtx-kg2
-  - semmeddb
-  product_file_size: 376501785
-  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
-  secondary_source:
-  - rtx-kg2
-- category: GraphProduct
-  description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
-  format: kgx-jsonl
-  id: rtx-kg2.graph.edges
-  name: RTX-KG2.10.1c KGX JSONL Edges
-  original_source:
-  - chembl
-  - drugbank
-  - kegg
-  - reactome
-  - go
-  - drugcentral
-  - uniprot
-  - mondo
-  - hp
-  - chebi
-  - uberon
-  - ncbitaxon
-  - dgidb
-  - disgenet
-  - ensembl
-  - gtopdb
-  - rtx-kg2
-  - semmeddb
-  product_file_size: 1807360397
-  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
-  secondary_source:
-  - rtx-kg2
-- category: ProgrammingInterface
-  description: Neo4j distribution of the RTX-KG2 as a graph database
-  dump_format: neo4j
-  id: rtx-kg2.neo4j
-  is_neo4j: true
-  is_public: false
-  name: RTX-KG2 Neo4j
-  original_source:
-  - chembl
-  - drugbank
-  - kegg
-  - reactome
-  - go
-  - drugcentral
-  - uniprot
-  - mondo
-  - hp
-  - chebi
-  - uberon
-  - ncbitaxon
-  - dgidb
-  - disgenet
-  - ensembl
-  - gtopdb
-  - rtx-kg2
-  - semmeddb
-  product_url: https://arax.ncats.io/
-  secondary_source:
-  - rtx-kg2
 - category: GraphProduct
   description: Neo4j database dump of the Clinical Knowledge Graph and additional
     relationships
@@ -373,226 +247,6 @@ products:
   - ms
   - uo
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-- category: GraphProduct
-  description: Neo4j database dump of the Clinical Knowledge Graph and additional
-    relationships
-  dump_format: neo4j
-  edge_count: 220000000
-  format: mixed
-  id: cancer-genome-interpreter.clinicalkg.graph
-  name: CKG Graph Dump
-  node_count: 16000000
-  original_source:
-  - uniprot
-  - tissues
-  - string
-  - stitch
-  - smpdb
-  - signor
-  - sider
-  - refseq
-  - reactome
-  - phosphositeplus
-  - pfam
-  - oncokb
-  - mutationds
-  - intact
-  - hpa
-  - hmdb
-  - hgnc
-  - gwascatalog
-  - foodb
-  - drugbank
-  - disgenet
-  - diseases
-  - dgidb
-  - corum
-  - cancer-genome-interpreter
-  - doid
-  - bto
-  - efo
-  - go
-  - hp
-  - snomedct
-  - mod
-  - mi
-  - ms
-  - uo
-  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-- category: GraphProduct
-  description: The SPOKE knowledge graph containing nodes and edges from multiple
-    biomedical data sources.
-  id: spoke.graph
-  name: SPOKE Graph
-  original_source:
-  - ncbigene
-  - pubmed
-  - mesh
-  - pid
-  - doid
-  - diseases
-  - drugcentral
-  - go
-  - gwascatalog
-  - reactome
-  - lincs-l1000
-  - uberon
-  - wikipathways
-  - bindingdb
-  - drugbank
-  - sider
-  - bgee
-  - uniprot
-  - string
-  - omim
-  - chembl
-  - foodb
-  - civic
-  - gdsc
-  - clinicaltrialsgov
-  - hpa
-  - cl
-  - kegg
-  - metacyc
-  - bv-brc
-  - ncbitaxon
-  - pathophenodb
-  - pfam
-  - interpro
-  - protcid
-  secondary_source:
-  - spoke
-- category: ProcessProduct
-  description: INDRA CoGEx is a graph database integrating causal relations, ontological
-    relations, properties, and data, assembled at scale automatically from the scientific
-    literature and structured sources. This is the code to build the graph.
-  id: indra.cogex.code
-  name: INDRA CoGEx Build Code
-  original_source:
-  - chembl
-  - sider
-  - reactome
-  - wikipathways
-  - hp
-  - nihreporter
-  - disgenet
-  - pubmed
-  - gwascatalog
-  - cellmarker
-  - go
-  - bgee
-  - ccle
-  - clinicaltrialsgov
-  - indra
-  product_url: https://github.com/gyorilab/indra_cogex
-  secondary_source:
-  - indra
-- category: OntologyProduct
-  description: The latest release of EFO in OWL format
-  format: owl
-  id: efo.owl
-  name: EFO OWL
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 240665663
-  product_url: https://www.ebi.ac.uk/efo/efo.owl
-  secondary_source:
-  - efo
-- category: OntologyProduct
-  description: The latest release of EFO in OBO format
-  format: obo
-  id: efo.obo
-  name: EFO OBO
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 64058275
-  product_url: https://www.ebi.ac.uk/efo/efo.obo
-  secondary_source:
-  - efo
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
   edge_count: 14783802
@@ -1014,6 +668,49 @@ products:
   secondary_source:
   - kg-monarch
 - category: GraphProduct
+  description: PheKnowLator graph files, including subsets with and without inverse
+    relations.
+  format: owl
+  id: pheknowlator.graph
+  latest_version: current_build
+  name: PheKnowLator graph
+  original_source:
+  - cl
+  - clo
+  - chebi
+  - go
+  - hp
+  - mondo
+  - pw
+  - pr
+  - ro
+  - so
+  - uberon
+  - vo
+  - bioportal
+  - clinvar
+  - ctd
+  - disgenet
+  - ensembl
+  - genemania
+  - hgnc
+  - hpa
+  - ncbigene
+  - medgen
+  - reactome
+  - string
+  - uniprot
+  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
+  secondary_source:
+  - pheknowlator
+  versions:
+  - v1.0.0
+  - v2.0.0
+  - v2.1.0
+  - v3.0.2
+  - v4.0.0
+  - current_build
+- category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
   edge_count: 14783802
   format: kgx-jsonl
@@ -1349,139 +1046,76 @@ products:
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
   secondary_source:
   - kg-monarch
-- category: MappingProduct
-  description: bigg.compartment SSSOM
-  format: sssom
-  id: obo-db-ingest.bigg.compartment.sssom.tsv
-  license:
-    id: http://bigg.ucsd.edu/license#license
-    label: Custom
-  name: bigg.compartment SSSOM
-  original_source:
-  - bigg
-  - go
-  product_file_size: 242
-  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
-  secondary_source:
-  - obo-db-ingest
-- category: OntologyProduct
-  description: OWL release of Monochrom Ontology
-  format: owl
-  id: chr.model.owl
-  name: Monochrom Ontology OWL release
-  original_source:
-  - ro
-  - go
-  - ncbitaxon
-  - iao
-  - geno
-  - skos
-  - gff
-  product_file_size: 102365
-  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
-  secondary_source:
-  - chr
 - category: GraphProduct
-  description: PheKnowLator graph files, including subsets with and without inverse
-    relations.
-  format: owl
-  id: pheknowlator.graph
-  latest_version: current_build
-  name: PheKnowLator graph
-  original_source:
-  - cl
-  - clo
-  - chebi
-  - go
-  - hp
-  - mondo
-  - pw
-  - pr
-  - ro
-  - so
-  - uberon
-  - vo
-  - bioportal
-  - clinvar
-  - ctd
-  - disgenet
-  - ensembl
-  - genemania
-  - hgnc
-  - hpa
-  - ncbigene
-  - medgen
-  - reactome
-  - string
-  - uniprot
-  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
-  secondary_source:
-  - pheknowlator
-  versions:
-  - v1.0.0
-  - v2.0.0
-  - v2.1.0
-  - v3.0.2
-  - v4.0.0
-  - current_build
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-  compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
-  dump_format: other
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
   format: mixed
-  id: drugmechdb.graph
-  latest_version: 2.0.1
-  name: DrugMechDB Graph Dataset
+  id: cancer-genome-interpreter.clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
   original_source:
-  - go
-  - cl
-  - mesh
-  - chebi
-  - drugbank
-  - interpro
-  - uberon
-  - pr
-  - ncbitaxon
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
   - reactome
-  - hp
-  - uniprot
-  product_url: https://doi.org/10.5281/zenodo.8139357
-  repository: https://github.com/SuLab/DrugMechDB
-  versions:
-  - 2.0.1
-  - 2.0.0
-  - 1.0.2
-  - '1.0'
-- category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
-  format: http
-  id: microbiomekg.api
-  name: MicrobiomeKG Plover API
-  original_source:
-  - biolink
-  - chebi
-  - ncbitaxon
-  - ncbigene
-  - mesh
-  - pubchem
-  - go
-  - mondo
-  - ncit
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - doid
+  - bto
   - efo
-  - uniprot
-  - rhea
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- description: The MechRepoNet knowledge graph in its original format
+  id: mechreponet.kg
+  name: MechRepoNet Knowledge Graph
+  original_source:
+  - ctd
+  - doid
+  - go
+  - chebi
+  - reactome
+  - interpro
+  - hp
+  - cl
   - pr
   - uberon
-  - panther
-  - hgnc
-  - drugbank
-  - eupathdb
-  product_url: https://multiomics.transltr.io/mbkp
+  - ncbitaxon
+  - hetionet
+  - complexportal
+  - rnacentral
+  - mirtarbase
+  - unii
+  - biolink
+  product_url: https://github.com/SuLab/MechRepoNet/releases/tag/publication
   secondary_source:
-  - microbiomekg
+  - mechreponet
 - category: GraphProduct
   description: RNA-KG as a Neo4j Dump
   format: neo4j
@@ -1564,29 +1198,262 @@ products:
   secondary_source:
   - rna-kg
 - category: GraphicalInterface
-  description: Browser for searching and viewing Gene Ontology terms and GOA annotations
+  description: A browser interface for a knowledge graph for Alzheimer's Disease.
   format: http
-  id: goa.quickgo
-  name: QuickGO Browser
+  id: alzkb.browser
+  name: AlzKB Graph Database Browser
+  original_source:
+  - aop-db
+  - bgee
+  - disgenet
+  - doid
+  - drugbank
+  - dsstox
+  - go
+  - gwascatalog
+  - hrpimp
+  - lincs-l1000
+  - mesh
+  - ncbigene
+  - pharmacotherapydb
+  - pid
+  - pubchem
+  - reactome
+  - sider
+  - tissues
+  - uberon
+  - wikipathways
+  product_url: https://alzkb.ai:7473/login
+  secondary_source:
+  - alzkb
+  - hetionet
+- category: GraphProduct
+  description: Memgraph data release for AlzKB.
+  id: alzkb.data
+  name: AlzKB Data Release (Version 2.0.0)
+  original_source:
+  - aop-db
+  - bgee
+  - disgenet
+  - doid
+  - drugbank
+  - dsstox
+  - go
+  - gwascatalog
+  - hrpimp
+  - lincs-l1000
+  - mesh
+  - ncbigene
+  - pharmacotherapydb
+  - pid
+  - pubchem
+  - reactome
+  - reactome
+  - sider
+  - tissues
+  - uberon
+  - wikipathways
+  product_url: https://github.com/EpistasisLab/AlzKB/releases/tag/v2.0.0
+  secondary_source:
+  - alzkb
+  - hetionet
+- category: GraphProduct
+  description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+  format: kgx-jsonl
+  id: rtx-kg2.graph.nodes
+  name: RTX-KG2.10.1c KGX JSONL Nodes
+  original_source:
+  - chembl
+  - drugbank
+  - kegg
+  - reactome
+  - go
+  - drugcentral
+  - uniprot
+  - mondo
+  - hp
+  - chebi
+  - uberon
+  - ncbitaxon
+  - dgidb
+  - disgenet
+  - ensembl
+  - gtopdb
+  - rtx-kg2
+  - semmeddb
+  product_file_size: 376501785
+  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-nodes.jsonl.gz
+  secondary_source:
+  - rtx-kg2
+- category: GraphProduct
+  description: Edges for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
+  format: kgx-jsonl
+  id: rtx-kg2.graph.edges
+  name: RTX-KG2.10.1c KGX JSONL Edges
+  original_source:
+  - chembl
+  - drugbank
+  - kegg
+  - reactome
+  - go
+  - drugcentral
+  - uniprot
+  - mondo
+  - hp
+  - chebi
+  - uberon
+  - ncbitaxon
+  - dgidb
+  - disgenet
+  - ensembl
+  - gtopdb
+  - rtx-kg2
+  - semmeddb
+  product_file_size: 1807360397
+  product_url: https://rtx-kg2-public.s3.us-west-2.amazonaws.com/kg2c-2.10.1-v1.0-edges.jsonl.gz
+  secondary_source:
+  - rtx-kg2
+- category: ProgrammingInterface
+  description: Neo4j distribution of the RTX-KG2 as a graph database
+  dump_format: neo4j
+  id: rtx-kg2.neo4j
+  is_neo4j: true
+  is_public: false
+  name: RTX-KG2 Neo4j
+  original_source:
+  - chembl
+  - drugbank
+  - kegg
+  - reactome
+  - go
+  - drugcentral
+  - uniprot
+  - mondo
+  - hp
+  - chebi
+  - uberon
+  - ncbitaxon
+  - dgidb
+  - disgenet
+  - ensembl
+  - gtopdb
+  - rtx-kg2
+  - semmeddb
+  product_url: https://arax.ncats.io/
+  secondary_source:
+  - rtx-kg2
+- category: OntologyProduct
+  description: OWL release of Monochrom Ontology
+  format: owl
+  id: chr.model.owl
+  name: Monochrom Ontology OWL release
+  original_source:
+  - ro
+  - go
+  - ncbitaxon
+  - iao
+  - geno
+  - skos
+  - gff
+  product_file_size: 102365
+  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
+  secondary_source:
+  - chr
+- category: ProcessProduct
+  description: INDRA CoGEx is a graph database integrating causal relations, ontological
+    relations, properties, and data, assembled at scale automatically from the scientific
+    literature and structured sources. This is the code to build the graph.
+  id: indra.cogex.code
+  name: INDRA CoGEx Build Code
+  original_source:
+  - chembl
+  - sider
+  - reactome
+  - wikipathways
+  - hp
+  - nihreporter
+  - disgenet
+  - pubmed
+  - gwascatalog
+  - cellmarker
+  - go
+  - bgee
+  - ccle
+  - clinicaltrialsgov
+  - indra
+  product_url: https://github.com/gyorilab/indra_cogex
+  secondary_source:
+  - indra
+- category: MappingProduct
+  compression: gzip
+  description: Gene to Gene Ontology mapping data providing functional annotations
+    for genes
+  format: tsv
+  id: ncbigene.gene2go
+  name: Gene to GO Mapping
   original_source:
   - go
-  product_url: https://www.ebi.ac.uk/QuickGO/
-- category: Product
-  description: FTP site containing current and archived GOA annotation files for all
-    species
+  - ncbigene
+  product_file_size: 1223833668
+  product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2go.gz
+- category: ProgrammingInterface
+  description: TRAPI web API for querying MicrobiomeKG
   format: http
-  id: goa.ftp
-  name: GOA FTP Site
+  id: microbiomekg.api
+  name: MicrobiomeKG Plover API
+  original_source:
+  - biolink
+  - chebi
+  - ncbitaxon
+  - ncbigene
+  - mesh
+  - pubchem
+  - go
+  - mondo
+  - ncit
+  - efo
+  - uniprot
+  - rhea
+  - pr
+  - uberon
+  - panther
+  - hgnc
+  - drugbank
+  - eupathdb
+  product_url: https://multiomics.transltr.io/mbkp
+  secondary_source:
+  - microbiomekg
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+  compression: zip
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
+  dump_format: other
+  format: mixed
+  id: drugmechdb.graph
+  latest_version: 2.0.1
+  name: DrugMechDB Graph Dataset
   original_source:
   - go
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
-  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
-  - 'File was not able to be retrieved when checked on 2025-10-31: Error connecting
-    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/'''
+  - cl
+  - mesh
+  - chebi
+  - drugbank
+  - interpro
+  - uberon
+  - pr
+  - ncbitaxon
+  - reactome
+  - hp
+  - uniprot
+  product_url: https://doi.org/10.5281/zenodo.8139357
+  repository: https://github.com/SuLab/DrugMechDB
+  versions:
+  - 2.0.1
+  - 2.0.0
+  - 1.0.2
+  - '1.0'
 - category: Product
   description: GO annotations for all UniProtKB entries
   format: txt
@@ -1597,7 +1464,7 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
@@ -1613,7 +1480,7 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
@@ -1629,7 +1496,7 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
@@ -1648,12 +1515,148 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
   - 'File was not able to be retrieved when checked on 2025-10-31: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'''
+- category: MappingProduct
+  description: bigg.compartment SSSOM
+  format: sssom
+  id: obo-db-ingest.bigg.compartment.sssom.tsv
+  license:
+    id: http://bigg.ucsd.edu/license#license
+    label: Custom
+  name: bigg.compartment SSSOM
+  original_source:
+  - bigg
+  - go
+  product_file_size: 242
+  product_url: https://w3id.org/biopragmatics/resources/bigg.compartment/bigg.compartment.sssom.tsv
+  secondary_source:
+  - obo-db-ingest
+- category: Product
+  description: Gene ontology annotations from the Gene Ontology Consortium
+  format: http
+  id: genecards.gene.ontology
+  name: GeneCards Gene Ontology Annotations
+  original_source:
+  - go
+  product_url: https://www.genecards.org/
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 403 error
+    when accessing file'
+- category: OntologyProduct
+  description: The latest release of EFO in OWL format
+  format: owl
+  id: efo.owl
+  name: EFO OWL
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 240665663
+  product_url: https://www.ebi.ac.uk/efo/efo.owl
+  secondary_source:
+  - efo
+- category: OntologyProduct
+  description: The latest release of EFO in OBO format
+  format: obo
+  id: efo.obo
+  name: EFO OBO
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 64058275
+  product_url: https://www.ebi.ac.uk/efo/efo.obo
+  secondary_source:
+  - efo
 - category: Product
   description: GO annotations for PDB entries
   format: txt
@@ -1664,27 +1667,12 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
   - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
   - 'File was not able to be retrieved when checked on 2025-10-31: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'''
-- category: Product
-  description: GO annotations organized by proteomes
-  format: txt
-  id: goa.proteomes
-  name: Proteomes GOA Annotations
-  original_source:
-  - go
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
-  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
-  - 'File was not able to be retrieved when checked on 2025-10-31: Error connecting
-    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'''
 - category: MappingProduct
   description: Mappings between InterPro entries and Gene Ontology (GO) terms
   format: tsv
@@ -1697,18 +1685,45 @@ products:
   product_url: https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go
   secondary_source:
   - interpro
-- category: MappingProduct
-  compression: gzip
-  description: Gene to Gene Ontology mapping data providing functional annotations
-    for genes
-  format: tsv
-  id: ncbigene.gene2go
-  name: Gene to GO Mapping
+- category: GraphicalInterface
+  description: Browser for searching and viewing Gene Ontology terms and GOA annotations
+  format: http
+  id: goa.quickgo
+  name: QuickGO Browser
   original_source:
   - go
-  - ncbigene
-  product_file_size: 1223833668
-  product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2go.gz
+  product_url: https://www.ebi.ac.uk/QuickGO/
+- category: Product
+  description: FTP site containing current and archived GOA annotation files for all
+    species
+  format: http
+  id: goa.ftp
+  name: GOA FTP Site
+  original_source:
+  - go
+  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
+  - 'File was not able to be retrieved when checked on 2025-10-31: Error connecting
+    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/'''
+- category: Product
+  description: GO annotations organized by proteomes
+  format: txt
+  id: goa.proteomes
+  name: Proteomes GOA Annotations
+  original_source:
+  - go
+  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/
+  warnings:
+  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
+  - File was not able to be retrieved when checked on 2025-10-30_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
+  - 'File was not able to be retrieved when checked on 2025-10-31: Error connecting
+    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'''
 - category: DataModelProduct
   description: The Basic subset of the Plant Trait Ontology in OBO format
   format: obo
@@ -1749,21 +1764,6 @@ products:
   - v2022-04-13
   - v2022-03-09
   - v2021-04-06
-- category: Product
-  description: Gene ontology annotations from the Gene Ontology Consortium
-  format: http
-  id: genecards.gene.ontology
-  name: GeneCards Gene Ontology Annotations
-  original_source:
-  - go
-  product_url: https://www.genecards.org/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 403 error
-    when accessing file'
 repository: https://github.com/geneontology/go-ontology
 taxon:
 - NCBITaxon:1

@@ -30,14 +30,14 @@ products:
   format: obo
   id: ms.obo
   name: ms.obo
-  product_file_size: 1065542
+  product_file_size: 1070715
   product_url: http://purl.obolibrary.org/obo/ms.obo
 - category: OntologyProduct
   description: Mass spectrometry ontology in OWL format
   format: owl
   id: ms.owl
   name: ms.owl
-  product_file_size: 4652351
+  product_file_size: 4656476
   product_url: http://purl.obolibrary.org/obo/ms.owl
 - category: GraphProduct
   description: Neo4j database dump of the Clinical Knowledge Graph and additional

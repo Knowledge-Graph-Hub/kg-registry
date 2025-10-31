@@ -80,6 +80,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 401 error when
     accessing file
+  - File was not able to be retrieved when checked on 2025-10-31_ HTTP 401 error when
+    accessing file
   - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 401 error
     when accessing file'
 - category: Product

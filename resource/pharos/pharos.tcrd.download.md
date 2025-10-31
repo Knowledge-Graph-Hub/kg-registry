@@ -6,5 +6,8 @@ description: Target Central Resource Database (TCRD) downloadable database files
 id: pharos.tcrd.download
 name: TCRD Database Downloads
 product_url: http://juniper.health.unm.edu/tcrd/download/
+warnings:
+- File was not able to be retrieved when checked on 2025-10-31_ Timeout connecting
+  to URL
 layout: product_detail
 ---

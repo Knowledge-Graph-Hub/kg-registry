@@ -8,6 +8,7 @@ id: genage.human
 name: GenAge Human Genes Dataset
 original_source:
 - genage
+product_file_size: 9465
 product_url: https://genomics.senescence.info/genes/human_genes.zip
 layout: product_detail
 ---

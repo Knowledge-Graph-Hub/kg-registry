@@ -8,5 +8,8 @@ format: fasta
 id: uniref.uniref100.fasta
 name: UniRef100 FASTA
 product_url: https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref100/uniref100.fasta.gz
+warnings:
+- File was not able to be retrieved when checked on 2025-10-31_ Timeout connecting
+  to URL
 layout: product_detail
 ---

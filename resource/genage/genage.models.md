@@ -8,6 +8,7 @@ id: genage.models
 name: GenAge Model Organisms Dataset
 original_source:
 - genage
+product_file_size: 48796
 product_url: https://genomics.senescence.info/genes/models_genes.zip
 layout: product_detail
 ---
