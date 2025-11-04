@@ -1,48 +1,176 @@
 ---
-activity_status: unknown
-category: OntologyResource
-creation_date: '2025-10-30T00:00:00Z'
-description: "The Columbia Open Health Data (COHD) API provides access to counts and frequencies (i.e., EHR prevalence) of conditions, procedures, drug exposures, and patient demographics, and the co-occurrence frequencies between them. Count and frequency data were derived from the [Columbia University Medical Center''s](http://www.cumc.columbia.edu/) [OHDSI](https://www.ohdsi.org/) database including inpatient and outpatient data. Counts are the number of patients associated with the concept, e.g., diagnosed with a condition, exposed to a drug, or who had a procedure. Frequencies are the number of unique patients associated with the concept divided by the total number of patients in the dataset, i.e., prevalence in the electronic health records. To protect patient privacy, all concepts and pairs of concepts where the count <= 10 were excluded, and counts were randomized by the Poisson distribution.           Four datasets are available:  1) 5-year non-hierarchical dataset: Includes clinical data from 2013-2017   2) lifetime non-hierarchical dataset: Includes clinical data from all dates   3) 5-year hierarchical dataset: Counts for each concept include patients from descendant concepts. Includes clinical data from 2013-2017. 4) BETA! Temporal co-occurrence data  In the 5-year hierarchical data set, the counts for each concept include the patients from all descendant concepts. For example, the count for ibuprofen (ID 1177480) includes patients with Ibuprofen 600 MG Oral Tablet
-  (ID 19019073 patients), Ibuprofen 400 MG Oral Tablet (ID 19019072), Ibuprofen 20 MG/ML Oral Suspension (ID 19019050), etc.   While the lifetime dataset captures a larger patient population and range of concepts, the 5-year dataset has better underlying data consistency.   Clinical concepts (e.g., conditions, procedures, drugs) are coded by their standard concept ID in the [OMOP Common Data Model](https://github.com/OHDSI/CommonDataModel/wiki). API methods are provided to map to/from other vocabularies supported in OMOP and other ontologies using the EMBL-EBI Ontology Xref Service (OxO).    The following resources are available through this API:    1. Metadata: Metadata on the COHD database, including dataset descriptions, number of concepts, etc.    2. OMOP: Access to the common vocabulary for name and concept identifier mapping   3. Clinical Frequencies: Access to the counts and frequencies of conditions, procedures, and drug exposures, and the associations between them. Frequency was determined as the number of patients with the code(s) / total number of patients.    4. Concept Associations: Inferred associations between concepts using chi-square analysis, ratio between observed to expected frequency, and relative frequency.    A [Python notebook](https://github.com/WengLab-InformaticsResearch/cohd_api/blob/master/notebooks/COHD_API_Example.ipynb) demonstrates simple examples of how to use the COHD API.   COHD was developed at the [Columbia University Department of Biomedical
-  Informatics](https://www.dbmi.columbia.edu/) as a collaboration between the [Weng Lab](http://people.dbmi.columbia.edu/~chw7007/), [Tatonetti Lab](http://tatonettilab.org/), and the [NCATS Biomedical Data Translator](https://ncats.nih.gov/translator) program (Red Team). This work was supported in part by grants: NCATS OT3TR002027, NLM R01LM009886-08A1, and NIGMS R01GM107145.  The following external resources may be useful:   [OHDSI](https://www.ohdsi.org/)   [OMOP Common Data Model](https://github.com/OHDSI/CommonDataModel/wiki)   [Athena](http://athena.ohdsi.org) (OMOP vocabularies, search, concept relationships, concept hierarchy)   [Atlas](http://www.ohdsi.org/web/atlas/) (OMOP vocabularies, search, concept relationships, concept hierarchy, concept sets)"
+activity_status: active
+category: DataSource
+creation_date: '2025-11-04T00:00:00Z'
+description: The Columbia Open Health Data (COHD) API provides access to observed clinical frequencies and co-occurrence frequencies from electronic health records at Columbia University Medical Center. The database contains counts and frequencies of conditions, procedures, drug exposures, and patient demographics from the OHDSI common data model, along with statistical associations between clinical concepts. To protect patient privacy, all concepts where count ≤10 were excluded and counts were randomized using Poisson distribution. COHD offers multiple datasets including 5-year (2013-2017) and lifetime data, both in hierarchical and non-hierarchical forms, plus beta temporal co-occurrence data.
 domains:
-  - stub
-id: cohd
-infores_id: cohd
-last_modified_date: '2025-10-30T00:00:00Z'
+  - clinical
+  - health
+  - public health
+  - precision medicine
+id: "cohd"
+infores_id: "cohd"
+last_modified_date: '2025-11-04T00:00:00Z'
 layout: resource_detail
 name: Columbia Open Health Data (COHD)
-homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/COHD-KP
+homepage_url: https://cohd.io/
+contacts:
+  - category: Organization
+    label: Columbia University Department of Biomedical Informatics - Weng Lab
+    contact_details:
+      - contact_type: url
+        value: "http://people.dbmi.columbia.edu/~chw7007/"
+repository: https://github.com/WengLab-InformaticsResearch/cohd_api
+products:
+  - id: "cohd.api"
+    category: ProgrammingInterface
+    name: COHD API
+    description: RESTful API providing programmatic access to clinical concept frequencies, co-occurrences, and associations with JSON output
+    product_url: https://cohd.io/api
+    format: http
+    original_source:
+      - cohd
+  - id: "cohd.portal"
+    category: GraphicalInterface
+    name: COHD Web Interface
+    description: Interactive web interface for exploring clinical concept frequencies and associations
+    product_url: https://cohd.io/
+    format: http
+    original_source:
+      - cohd
+  - id: "cohd.notebooks"
+    category: ProcessProduct
+    name: COHD API Examples
+    description: Python Jupyter notebooks demonstrating COHD API usage and analysis workflows
+    product_url: https://github.com/WengLab-InformaticsResearch/cohd_api/blob/master/notebooks/COHD_API_Example.ipynb
+    format: http
+    original_source:
+      - cohd
+  - id: "cohd.docs"
+    category: DocumentationProduct
+    name: COHD Documentation
+    description: API documentation covering endpoint descriptions, data structure, and usage examples
+    product_url: https://cohd.io/api
+    format: http
+    original_source:
+      - cohd
 ---
 
 # Columbia Open Health Data (COHD)
 
 ## Overview
 
-The Columbia Open Health Data (COHD) API provides access to counts and frequencies (i.e., EHR prevalence) of conditions, procedures, drug exposures, and patient demographics, and the co-occurrence frequencies between them. Count and frequency data were derived from the [Columbia University Medical Center''s](http://www.cumc.columbia.edu/) [OHDSI](https://www.ohdsi.org/) database including inpatient and outpatient data. Counts are the number of patients associated with the concept, e.g., diagnosed with a condition, exposed to a drug, or who had a procedure. Frequencies are the number of unique patients associated with the concept divided by the total number of patients in the dataset, i.e., prevalence in the electronic health records. To protect patient privacy, all concepts and pairs of concepts where the count <= 10 were excluded, and counts were randomized by the Poisson distribution.           Four datasets are available:  1) 5-year non-hierarchical dataset: Includes clinical data from 2013-2017   2) lifetime non-hierarchical dataset: Includes clinical data from all dates   3) 5-year hierarchical dataset: Counts for each concept include patients from descendant concepts. Includes clinical data from 2013-2017. 4) BETA! Temporal co-occurrence data  In the 5-year hierarchical data set, the counts for each concept include the patients from all descendant concepts. For example, the count for ibuprofen (ID 1177480) includes patients with Ibuprofen 600 MG Oral Tablet (ID 19019073 patients), Ibuprofen 400 MG Oral Tablet (ID 19019072), Ibuprofen 20 MG/ML Oral Suspension (ID 19019050), etc.   While the lifetime dataset captures a larger patient population and range of concepts, the 5-year dataset has better underlying data consistency.   Clinical concepts (e.g., conditions, procedures, drugs) are coded by their standard concept ID in the [OMOP Common Data Model](https://github.com/OHDSI/CommonDataModel/wiki). API methods are provided to map to/from other vocabularies supported in OMOP and other ontologies using the EMBL-EBI Ontology Xref Service (OxO).    The following resources are available through this API:    1. Metadata: Metadata on the COHD database, including dataset descriptions, number of concepts, etc.    2. OMOP: Access to the common vocabulary for name and concept identifier mapping   3. Clinical Frequencies: Access to the counts and frequencies of conditions, procedures, and drug exposures, and the associations between them. Frequency was determined as the number of patients with the code(s) / total number of patients.    4. Concept Associations: Inferred associations between concepts using chi-square analysis, ratio between observed to expected frequency, and relative frequency.    A [Python notebook](https://github.com/WengLab-InformaticsResearch/cohd_api/blob/master/notebooks/COHD_API_Example.ipynb) demonstrates simple examples of how to use the COHD API.   COHD was developed at the [Columbia University Department of Biomedical Informatics](https://www.dbmi.columbia.edu/) as a collaboration between the [Weng Lab](http://people.dbmi.columbia.edu/~chw7007/), [Tatonetti Lab](http://tatonettilab.org/), and the [NCATS Biomedical Data Translator](https://ncats.nih.gov/translator) program (Red Team). This work was supported in part by grants: NCATS OT3TR002027, NLM R01LM009886-08A1, and NIGMS R01GM107145.  The following external resources may be useful:   [OHDSI](https://www.ohdsi.org/)   [OMOP Common Data Model](https://github.com/OHDSI/CommonDataModel/wiki)   [Athena](http://athena.ohdsi.org) (OMOP vocabularies, search, concept relationships, concept hierarchy)   [Atlas](http://www.ohdsi.org/web/atlas/) (OMOP vocabularies, search, concept relationships, concept hierarchy, concept sets)
+The Columbia Open Health Data (COHD) project provides an API for accessing observed clinical frequencies and co-occurrence patterns from electronic health records at Columbia University Medical Center. The database is built on the OHDSI (Observational Health Data Sciences and Informatics) common data model and provides valuable real-world evidence about the prevalence of medical conditions, procedures, and drug exposures in clinical practice.
 
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
+## Data Content
+
+### Available Datasets
+
+**1. 5-Year Non-Hierarchical Dataset (2013-2017)**
+- Clinical data from a 5-year window
+- Counts at the specified concept level only
+- Better underlying data consistency
+
+**2. Lifetime Non-Hierarchical Dataset**
+- Clinical data from all available dates
+- Larger patient population
+- Broader concept coverage
+
+**3. 5-Year Hierarchical Dataset (2013-2017)**
+- Counts include patients from descendant concepts
+- Example: Ibuprofen includes all specific formulations (600mg tablets, 400mg tablets, oral suspensions, etc.)
+- Clinical data from 2013-2017
+
+**4. Temporal Co-occurrence Data (BETA)**
+- Time-aware co-occurrence patterns
+- Still under active development
+
+### Data Elements
+
+COHD provides access to:
+- **Concept Counts**: Number of patients associated with each clinical concept
+- **Concept Frequencies**: Prevalence (count / total patients) in EHR
+- **Co-occurrence Counts**: Number of patients with pairs of concepts
+- **Co-occurrence Frequencies**: Joint prevalence of concept pairs
+- **Statistical Associations**: Chi-square, relative frequency, and observed-to-expected ratios
+
+### Vocabulary Standards
+
+All clinical concepts are coded using standard concept IDs from the OMOP Common Data Model:
+- Conditions (e.g., SNOMED CT)
+- Procedures (e.g., CPT, HCPCS)
+- Drugs (e.g., RxNorm)
+- Demographics
+
+The API includes mapping functionality to translate between vocabularies and other ontologies using the EMBL-EBI Ontology Xref Service (OxO).
+
+## Privacy Protection
+
+To protect patient privacy:
+- All concepts and concept pairs with count ≤10 are excluded
+- Counts are randomized using Poisson distribution
+- No patient-level data is exposed
+- Aggregate statistics only
+
+## API Resources
+
+### 1. Metadata
+Dataset descriptions, concept counts, and database statistics
+
+### 2. OMOP Vocabulary
+Common vocabulary for name and concept identifier mapping between standard terminologies
+
+### 3. Clinical Frequencies
+Access to counts and frequencies of:
+- Conditions
+- Procedures  
+- Drug exposures
+- Patient demographics
+
+### 4. Concept Associations
+Inferred associations between concepts using:
+- **Chi-square analysis**: Statistical significance of association
+- **Relative frequency**: Ratio of observed to expected co-occurrence
+- **Observed-to-expected ratio**: Strength of association
+
+## Use Cases
+
+1. **Hypothesis Generation**: Discovering potential drug-disease associations
+2. **Comorbidity Analysis**: Understanding disease co-occurrence patterns
+3. **Drug Safety**: Identifying adverse event signals
+4. **Clinical Decision Support**: Providing EHR-based prevalence estimates
+5. **Phenotype Definition**: Understanding clinical manifestations
+6. **Drug Repurposing**: Finding new therapeutic applications
+7. **Resource Annotation**: Enriching knowledge graphs with EHR frequencies
+
+## Development Team
+
+COHD was developed at the Columbia University Department of Biomedical Informatics through collaboration between:
+- **Weng Lab**: Chunhua Weng, PhD
+- **Tatonetti Lab**: Nicholas Tatonetti, PhD  
+- **NCATS Biomedical Data Translator Program** (Red Team)
+
+## Funding Support
+
+- NCATS OT3TR002027
+- NLM R01LM009886-08A1
+- NIGMS R01GM107145
+
+## External Resources
+
+- [OHDSI](https://www.ohdsi.org/) - Observational Health Data Sciences and Informatics
+- [OMOP Common Data Model](https://github.com/OHDSI/CommonDataModel/wiki) - Standardized data model
+- [Athena](http://athena.ohdsi.org) - OMOP vocabulary browser
+- [Atlas](http://www.ohdsi.org/web/atlas/) - OMOP analysis tools
 
 ## Information Resource ID
 
 This resource has the Information Resource identifier: `infores:cohd`
 
-## Curation Status
+## Technical Details
 
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
-
-## What Needs to be Curated
-
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
-
-## Additional Notes
+- **Data Source**: Columbia University Medical Center EHR
+- **Data Model**: OHDSI OMOP CDM
+- **Update Frequency**: Static snapshots from specified time periods
+- **API Format**: REST with JSON responses
+- **Authentication**: No authentication required
