@@ -1,5 +1,6 @@
 This repository contains the source code for the Knowledge Graph Registry, which is a collection of resources and tools for managing and sharing metadata about knowledge graphs and their relationships.
 
+## General Guidelines for Adding Resources and Products
 When adding new resources, always follow the schema in `src/kg_registry/kg_registry_schema/schema/kg_registry_schema.yaml`.
 
 Follow the schema, including all enums (for fields using enums, do not create values not present in the acceptable values for the enum).
@@ -22,6 +23,24 @@ The `creation_date` field refers to the date our metadata page was created, not 
 
 The `last_modified_date` field refers to today's date, not any date corresponding to the described resource.
 
+New date fields should be set to today's date.
+
 Don't fill out the `curators` field as this is specific to the KG-Registry team.
 
 You can use the existing Poetry environment to validate Resource or Product pages (precede any `make` command with `poetry run`).
+
+Note that ToolResource is not a valid category.
+
+## How to Do a Quick Curation
+
+1. Find all stub Resource pages (they'll have `stub` in their `domains` list).
+
+2. Select one of these stub pages at random.
+
+3. Find information about the Resource. There may already be a `homepage_url`, which is a good place to start, but a literature search may also be helpful.
+
+4. Expand the Resource page. Consult the schema and other pages as examples. Remember to include products, but you don't need to create the individual Product pages - those get generated later. You don't need to remove Products already on the page, as they may be present if another Resource references this one.
+
+5. Validate the new page (with the makefile target `validate-file`). Correct any validity issues before continuing.
+
+6. Repeat (return to step 2) until you have curated at least 5 Resources.
