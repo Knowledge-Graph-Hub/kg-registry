@@ -1,48 +1,106 @@
 ---
-activity_status: unknown
-category: OntologyResource
-creation_date: '2025-10-30T00:00:00Z'
-description: Information resource for Ontology Xref Service
+activity_status: inactive
+category: Aggregator
+creation_date: '2025-11-04T00:00:00Z'
+description: OxO (Ontology Xref Service) is a cross-ontology mapping service developed by EMBL-EBI's Samples, Phenotypes and Ontologies Team (SPOT). The service provides mappings between terms from different ontologies, enabling users to search for equivalent or related terms across multiple ontological resources. OxO aggregates cross-references from ontologies loaded in the Ontology Lookup Service (OLS) and enriches these with manual mappings and inference-based relationships.
 domains:
-  - stub
-id: oxo
-infores_id: oxo
-last_modified_date: '2025-10-30T00:00:00Z'
+  - biomedical
+  - upper
+  - biological systems
+id: "oxo"
+infores_id: "oxo"
+last_modified_date: '2025-11-04T00:00:00Z'
 layout: resource_detail
 name: Ontology Xref Service
 homepage_url: https://www.ebi.ac.uk/spot/oxo/
+contacts:
+  - category: Organization
+    label: EMBL-EBI Samples, Phenotypes and Ontologies Team (SPOT)
+    contact_details:
+      - contact_type: email
+        value: "ols-support@ebi.ac.uk"
+      - contact_type: github
+        value: "EBISPOT"
 synonyms:
   - OxO
+repository: https://github.com/EBISPOT/OXO
+products:
+  - id: "oxo.api"
+    category: ProgrammingInterface
+    name: OxO REST API
+    description: RESTful API for programmatic access to cross-ontology mappings and term equivalence searches
+    product_url: https://www.ebi.ac.uk/spot/oxo/docs/api
+    format: http
+    original_source:
+      - oxo
+  - id: "oxo.portal"
+    category: GraphicalInterface
+    name: OxO Web Interface
+    description: Web-based interface for searching and browsing ontology cross-references and mappings
+    product_url: https://www.ebi.ac.uk/spot/oxo/
+    format: http
+    original_source:
+      - oxo
 ---
 
-# Ontology Xref Service
+# Ontology Xref Service (OxO)
 
 ## Overview
 
-Information resource for Ontology Xref Service
+OxO (Ontology Xref Service) is a service developed and maintained by EMBL-EBI's Samples, Phenotypes and Ontologies Team (SPOT) for cross-ontology term mapping. The service facilitates the discovery of mappings between terms from different ontological resources, enabling data integration and interoperability across biomedical databases and tools.
 
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
+## Current Status
+
+⚠️ **Service Alert**: As of November 2025, the OxO website is experiencing technical issues and returning HTTP 500 server errors. The service may be temporarily unavailable or under maintenance.
+
+## Purpose
+
+OxO serves to:
+- Provide mappings between equivalent or related terms across different ontologies
+- Facilitate data integration across heterogeneous biomedical resources
+- Enable cross-ontology searches and term translation
+- Support semantic interoperability in biomedical research
+
+## Data Sources
+
+OxO aggregates cross-reference data from:
+- **Ontology Lookup Service (OLS)**: Cross-references embedded in ontologies
+- **Manual Mappings**: Curated mappings contributed by domain experts
+- **Inference-Based Mappings**: Automatically generated mappings based on term relationships
+
+## Key Features
+
+### Cross-Ontology Mapping
+Search for equivalent or related terms across multiple ontologies, enabling translation between different vocabular systems.
+
+### Mapping Provenance
+Understand the source and reliability of mappings, with information about whether mappings are:
+- Direct cross-references from ontology files
+- Manually curated by experts
+- Inferred through reasoning
+
+### Programmatic Access
+REST API for integration into computational workflows and applications.
+
+## Related Services
+
+OxO is part of the SPOT suite of ontology services at EMBL-EBI:
+- **OLS (Ontology Lookup Service)**: Repository and browser for biomedical ontologies
+- **ZOOMA**: Service for mapping free-text annotations to ontology terms
 
 ## Information Resource ID
 
 This resource has the Information Resource identifier: `infores:oxo`
 
-## Curation Status
+## Contact and Support
 
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
+For questions or issues regarding OxO:
+- **Email**: ols-support@ebi.ac.uk
+- **Organization**: EMBL-EBI Samples, Phenotypes and Ontologies Team (SPOT)
 
-## What Needs to be Curated
+## Use Cases
 
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
-
-## Additional Notes
+1. **Data Integration**: Mapping identifiers when merging datasets using different ontologies
+2. **Ontology Alignment**: Finding equivalent terms for ontology harmonization projects
+3. **Cross-Database Queries**: Translating queries across databases using different terminologies
+4. **Semantic Interoperability**: Enabling communication between systems using different vocabularies
