@@ -59,11 +59,9 @@ products:
   name: Expression Atlas FTP (Single Cell Data)
   product_url: https://ftp.ebi.ac.uk/pub/databases/single-cell/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-11-04: HTTP 404 error
     when accessing file'
 - category: Product
   description: Individual experiment data downloads in TSV format containing expression
@@ -80,11 +78,9 @@ products:
   name: Expression Atlas R Data Objects
   product_url: https://www.ebi.ac.uk/gxa/help/r-data-objects.html
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 500 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-31_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 500 error
+  - 'File was not able to be retrieved when checked on 2025-11-04: HTTP 500 error
     when accessing file'
 - category: Product
   description: Baseline expression summary data across human tissues and cell types

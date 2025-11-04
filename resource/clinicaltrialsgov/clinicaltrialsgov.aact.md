@@ -1,7 +1,7 @@
 ---
 category: Product
-description: Database for Aggregate Analysis of ClinicalTrials.gov (AACT) providing
-  normalized metadata across trials
+description: Aggregate Analysis of ClinicalTrials.gov (AACT) - A relational PostgreSQL
+  database containing all clinical trial data, updated daily
 format: postgres
 id: clinicaltrialsgov.aact
 name: AACT Database

@@ -60,7 +60,6 @@ cl-kg	Cell Ontology Knowledge Graph (CL-KG)	KnowledgeGraph	https://cellular-sema
 clao	Collembola Anatomy Ontology	Ontology	https://github.com/luis-gonzalez-m/Collembola	resource/clao/clao.md
 clinical-data-kp	Clinical Data KP	KnowledgeGraph	https://ncats.nih.gov/research/research-activities/translator/projects	resource/clinical-data-kp/clinical-data-kp.md
 clinicalkg	Clinical Knowledge Graph (CKG)	KnowledgeGraph	https://ckg.readthedocs.io/	resource/clinicalkg/clinicalkg.md
-clinicaltrialsgov	ClinicalTrials.gov	DataSource	https://clinicaltrials.gov/	resource/clinicaltrialsgov/clinicaltrialsgov.md
 clo	Cell Line Ontology	Ontology	https://github.com/CLO-Ontology/CLO	resource/clo/clo.md
 clue	CLUE	DataSource	https://clue.io/	resource/clue/clue.md
 clyh	Clytia hemisphaerica Development and Anatomy Ontology	Ontology	https://github.com/EBISPOT/clyh_ontology	resource/clyh/clyh.md

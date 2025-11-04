@@ -1,61 +1,76 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: http://people.dbmi.columbia.edu/~chw7007/
+  label: Columbia University Department of Biomedical Informatics - Weng Lab
 creation_date: '2025-11-04T00:00:00Z'
-description: The Columbia Open Health Data (COHD) API provides access to observed clinical frequencies and co-occurrence frequencies from electronic health records at Columbia University Medical Center. The database contains counts and frequencies of conditions, procedures, drug exposures, and patient demographics from the OHDSI common data model, along with statistical associations between clinical concepts. To protect patient privacy, all concepts where count ≤10 were excluded and counts were randomized using Poisson distribution. COHD offers multiple datasets including 5-year (2013-2017) and lifetime data, both in hierarchical and non-hierarchical forms, plus beta temporal co-occurrence data.
+description: The Columbia Open Health Data (COHD) API provides access to observed
+  clinical frequencies and co-occurrence frequencies from electronic health records
+  at Columbia University Medical Center. The database contains counts and frequencies
+  of conditions, procedures, drug exposures, and patient demographics from the OHDSI
+  common data model, along with statistical associations between clinical concepts.
+  To protect patient privacy, all concepts where count ≤10 were excluded and counts
+  were randomized using Poisson distribution. COHD offers multiple datasets including
+  5-year (2013-2017) and lifetime data, both in hierarchical and non-hierarchical
+  forms, plus beta temporal co-occurrence data.
 domains:
-  - clinical
-  - health
-  - public health
-  - precision medicine
-id: "cohd"
-infores_id: "cohd"
+- clinical
+- health
+- public health
+- precision medicine
+homepage_url: https://cohd.io/
+id: cohd
+infores_id: cohd
 last_modified_date: '2025-11-04T00:00:00Z'
 layout: resource_detail
 name: Columbia Open Health Data (COHD)
-homepage_url: https://cohd.io/
-contacts:
-  - category: Organization
-    label: Columbia University Department of Biomedical Informatics - Weng Lab
-    contact_details:
-      - contact_type: url
-        value: "http://people.dbmi.columbia.edu/~chw7007/"
-repository: https://github.com/WengLab-InformaticsResearch/cohd_api
 products:
-  - id: "cohd.api"
-    category: ProgrammingInterface
-    name: COHD API
-    description: RESTful API providing programmatic access to clinical concept frequencies, co-occurrences, and associations with JSON output
-    product_url: https://cohd.io/api
-    format: http
-    original_source:
-      - cohd
-  - id: "cohd.portal"
-    category: GraphicalInterface
-    name: COHD Web Interface
-    description: Interactive web interface for exploring clinical concept frequencies and associations
-    product_url: https://cohd.io/
-    format: http
-    original_source:
-      - cohd
-  - id: "cohd.notebooks"
-    category: ProcessProduct
-    name: COHD API Examples
-    description: Python Jupyter notebooks demonstrating COHD API usage and analysis workflows
-    product_url: https://github.com/WengLab-InformaticsResearch/cohd_api/blob/master/notebooks/COHD_API_Example.ipynb
-    format: http
-    original_source:
-      - cohd
-  - id: "cohd.docs"
-    category: DocumentationProduct
-    name: COHD Documentation
-    description: API documentation covering endpoint descriptions, data structure, and usage examples
-    product_url: https://cohd.io/api
-    format: http
-    original_source:
-      - cohd
+- category: ProgrammingInterface
+  description: RESTful API providing programmatic access to clinical concept frequencies,
+    co-occurrences, and associations with JSON output
+  format: http
+  id: cohd.api
+  name: COHD API
+  original_source:
+  - cohd
+  product_url: https://cohd.io/api
+- category: GraphicalInterface
+  description: Interactive web interface for exploring clinical concept frequencies
+    and associations
+  format: http
+  id: cohd.portal
+  name: COHD Web Interface
+  original_source:
+  - cohd
+  product_url: https://cohd.io/
+- category: ProcessProduct
+  description: Python Jupyter notebooks demonstrating COHD API usage and analysis
+    workflows
+  format: http
+  id: cohd.notebooks
+  name: COHD API Examples
+  original_source:
+  - cohd
+  product_file_size: 2834847
+  product_url: https://github.com/WengLab-InformaticsResearch/cohd_api/blob/master/notebooks/COHD_API_Example.ipynb
+- category: DocumentationProduct
+  description: API documentation covering endpoint descriptions, data structure, and
+    usage examples
+  format: http
+  id: cohd.docs
+  name: COHD Documentation
+  original_source:
+  - cohd
+  product_url: https://cohd.io/api
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-04: HTTP 502 error
+    when accessing file'
+repository: https://github.com/WengLab-InformaticsResearch/cohd_api
 ---
-
 # Columbia Open Health Data (COHD)
 
 ## Overview

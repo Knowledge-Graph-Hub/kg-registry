@@ -28,7 +28,7 @@ products:
   name: sep.owl
   product_url: http://purl.obolibrary.org/obo/sep.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-11-04: HTTP 404 error
     when accessing file'
 ---
 ## Description

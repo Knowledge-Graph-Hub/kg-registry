@@ -72,6 +72,7 @@ clyh,active,PASS
 cm4ai_talent_kg,active,PASS
 cmo,active,PASS
 cob,active,PASS
+cohd,active,PASS
 colao,active,PASS
 compartments,active,PASS
 complexportal,active,PASS
@@ -139,6 +140,7 @@ evlncrnas,active,PASS
 exmo,active,PASS
 exo,active,PASS
 expressionatlas,active,PASS
+faers,active,PASS
 faldo,active,PASS
 fao,active,PASS
 fbbt,active,PASS
@@ -460,6 +462,7 @@ ubkg,active,PASS
 uf-okn,active,PASS
 ukbiobank,active,PASS
 umls,active,PASS
+unichem,active,PASS
 unii,active,PASS
 uniprot,active,PASS
 uniref,active,PASS
@@ -520,6 +523,7 @@ gaz,inactive,PASS
 goa,inactive,PASS
 gro,inactive,PASS
 habronattus,inactive,PASS
+homologene,inactive,PASS
 hprd,inactive,PASS
 idomal,inactive,PASS
 iev,inactive,PASS
@@ -547,6 +551,7 @@ ogi,inactive,PASS
 ogsf,inactive,PASS
 olatdv,inactive,PASS
 omiabis,inactive,PASS
+oxo,inactive,PASS
 pao,inactive,PASS
 pd_st,inactive,PASS
 pdumdv,inactive,PASS

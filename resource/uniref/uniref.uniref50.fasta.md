@@ -7,6 +7,7 @@ description: UniRef50 database clustering sequences with at least 50% sequence i
 format: fasta
 id: uniref.uniref50.fasta
 name: UniRef50 FASTA
+product_file_size: 12385282557
 product_url: https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref50/uniref50.fasta.gz
 warnings:
 - File was not able to be retrieved when checked on 2025-10-31_ Timeout connecting

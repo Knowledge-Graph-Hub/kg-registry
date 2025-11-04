@@ -54,14 +54,12 @@ products:
   secondary_source:
   - metanetx
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-10-31_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-09-23_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-10-31_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-10-31: No Content-Length
-    header found'
+  - 'File was not able to be retrieved when checked on 2025-11-04: HTTP 500 error
+    when accessing file'
 - category: Product
   description: MNXref unified namespace for reactions across databases
   format: tsv

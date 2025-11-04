@@ -74,11 +74,9 @@ products:
   secondary_source:
   - cellosaurus
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-11-04: HTTP 404 error
     when accessing file'
 - category: Product
   description: Complete Cellosaurus data in RDF format using the Turtle syntax
@@ -91,11 +89,9 @@ products:
   secondary_source:
   - cellosaurus
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-11-04: HTTP 404 error
     when accessing file'
 - category: ProgrammingInterface
   description: RESTful API for programmatic access to Cellosaurus data

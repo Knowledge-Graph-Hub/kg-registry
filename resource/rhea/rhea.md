@@ -47,7 +47,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -56,7 +56,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-11-04: HTTP 404 error
     when accessing file'
 - category: Product
   description: rhea OBO Graph JSON
@@ -74,7 +74,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-30_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -83,7 +83,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-10-31: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-11-04: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: Rhea SSSOM

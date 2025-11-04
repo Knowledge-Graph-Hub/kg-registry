@@ -6,6 +6,7 @@ description: UniRef90 database clustering sequences with at least 90% sequence i
 format: fasta
 id: uniref.uniref90.fasta
 name: UniRef90 FASTA
+product_file_size: 46103634991
 product_url: https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90/uniref90.fasta.gz
 warnings:
 - File was not able to be retrieved when checked on 2025-10-31_ Timeout connecting
