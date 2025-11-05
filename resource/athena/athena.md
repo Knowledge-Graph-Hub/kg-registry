@@ -48,7 +48,7 @@ products:
   - icd10cm
   - mesh
   - loinc
-  - cdisc
+  - cdiscvocab
   - ciel
   secondary_source:
   - athena
