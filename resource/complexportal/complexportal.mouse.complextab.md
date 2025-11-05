@@ -6,7 +6,7 @@ id: complexportal.mouse.complextab
 name: Complex Portal Mouse ComplexTAB
 product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/mus_musculus.tsv
 warnings:
-- File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-11-04_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
   accessing file

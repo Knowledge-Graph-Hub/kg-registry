@@ -8,13 +8,19 @@ contacts:
     value: https://sennetconsortium.org/
   label: SenNet Consortium
 creation_date: '2025-11-05T00:00:00Z'
-description: The Cellular Senescence Network (SenNet) is an NIH Common Fund program that aims to comprehensively identify and characterize senescent cells across the human lifespan and in various disease states. SenNet provides spatial molecular maps of senescent cells in tissues, developing and applying cutting-edge technologies for detecting cellular senescence. The consortium generates multi-omics data, imaging data, and develops computational tools to advance understanding of how senescent cells contribute to aging and age-related diseases.
+description: The Cellular Senescence Network (SenNet) is an NIH Common Fund program
+  that aims to comprehensively identify and characterize senescent cells across the
+  human lifespan and in various disease states. SenNet provides spatial molecular
+  maps of senescent cells in tissues, developing and applying cutting-edge technologies
+  for detecting cellular senescence. The consortium generates multi-omics data, imaging
+  data, and develops computational tools to advance understanding of how senescent
+  cells contribute to aging and age-related diseases.
 domains:
-  - health
-  - biomedical
-  - anatomy and development
-  - genomics
-  - precision medicine
+- health
+- biomedical
+- anatomy and development
+- genomics
+- precision medicine
 homepage_url: https://sennetconsortium.org/
 id: sennet
 last_modified_date: '2025-11-05T00:00:00Z'
@@ -45,13 +51,139 @@ products:
   original_source:
   - sennet
   product_url: https://sennetconsortium.org/
+- category: GraphProduct
+  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
+    instances as neo4j graph databases, running in a Docker container. Requires UMLS
+    API key to access.
+  dump_format: neo4j
+  id: ubkg.neo4j
+  name: UBKG Neo4j Docker Distribution
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - doid
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - connectivitymap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - sckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
+- category: GraphProduct
+  description: Ontology CSV files that can be imported into a neo4j instance to create
+    a UBKG database. Requires UMLS API key to access.
+  format: csv
+  id: ubkg.csv
+  name: UBKG Ontology CSV Files
+  original_source:
+  - hgnc
+  - loinc
+  - icd10
+  - snomedct
+  - uberon
+  - pato
+  - cl
+  - doid
+  - obi
+  - obib
+  - edam
+  - hsapdv
+  - sbo
+  - mi
+  - chebi
+  - mp
+  - ordo
+  - uniprot
+  - uo
+  - mondo
+  - efo
+  - pgo
+  - gencode
+  - reactome
+  - hra
+  - hubmap
+  - sennet
+  - stellar
+  - dct
+  - clinvar
+  - connectivitymap
+  - hp
+  - mp
+  - msigdb
+  - wikipathways
+  - clingen
+  - string
+  - 4dn
+  - erccrbp
+  - erccreg
+  - faldo
+  - glycordf
+  - glycocoo
+  - gtex
+  - kidsfirst
+  - lincs
+  - motrpac
+  - mw
+  - npo
+  - sckan
+  - disgenet
+  - biomarker
+  - opentargets
+  product_url: https://ubkg-downloads.xconsortia.org/
+  secondary_source:
+  - ubkg
 synonyms:
-  - SenNet
-  - Cellular Senescence Network
+- SenNet
+- Cellular Senescence Network
 taxon:
 - NCBITaxon:9606
 ---
-
 # SenNet - Cellular Senescence Network
 
 ## Overview

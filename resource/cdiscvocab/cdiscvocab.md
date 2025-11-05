@@ -13,7 +13,10 @@ contacts:
     value: https://evs.nci.nih.gov/
   label: NCI Enterprise Vocabulary Services (EVS)
 creation_date: '2025-11-05T00:00:00Z'
-description: CDISC Controlled Terminology provides standardized codelists and valid values for clinical research data collection, tabulation, analysis, and submission to regulatory agencies including FDA and PMDA. Maintained as part of NCI Thesaurus and distributed by NCI EVS in multiple formats.
+description: CDISC Controlled Terminology provides standardized codelists and valid
+  values for clinical research data collection, tabulation, analysis, and submission
+  to regulatory agencies including FDA and PMDA. Maintained as part of NCI Thesaurus
+  and distributed by NCI EVS in multiple formats.
 domains:
 - clinical
 - biomedical
@@ -73,8 +76,7 @@ products:
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/Define-XML/
 - category: Product
   description: Protocol Representation Model controlled terminology for commonly used
-    words and phrases in clinical research protocols, supporting PRM and CTR-XML
-    standards.
+    words and phrases in clinical research protocols, supporting PRM and CTR-XML standards.
   format: mixed
   id: cdiscvocab.protocol
   name: Protocol Controlled Terminology
@@ -126,13 +128,31 @@ products:
   original_source:
   - cdiscvocab
   product_url: https://evsexplore.semantics.cancer.gov/
+- category: MappingProduct
+  description: Concept mappings between different terminology systems
+  format: csv
+  id: athena.mappings
+  name: Athena Concept Mappings
+  original_source:
+  - snomedct
+  - icd10
+  - icd10cm
+  - mesh
+  - loinc
+  - cdiscvocab
+  - ciel
+  product_url: https://athena.ohdsi.org/search-terms/start
+  secondary_source:
+  - athena
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-05: Error connecting
+    to URL: Exceeded 30 redirects.'
 synonyms:
 - CDISC Controlled Terminology
 - CDISC CT
 taxon:
 - NCBITaxon:9606
 ---
-
 ## Overview
 
 CDISC Controlled Terminology is developed and maintained through a collaboration between the Clinical Data Interchange Standards Consortium (CDISC) and the National Cancer Institute's Enterprise Vocabulary Services (EVS). The terminology provides the standardized codelists and valid values required for CDISC-compliant datasets used in submissions to regulatory agencies such as the FDA and PMDA.

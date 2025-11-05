@@ -2,58 +2,110 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    label: DepMap Team, Broad Institute
-    contact_details:
-      - contact_type: email
-        value: depmap@broadinstitute.org
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: depmap@broadinstitute.org
+  label: DepMap Team, Broad Institute
 creation_date: '2025-11-05T00:00:00Z'
-description: PRISM (Profiling Relative Inhibition Simultaneously in Mixtures) is a high-throughput drug screening technology developed by the Broad Institute that measures the sensitivity of cancer cell lines to therapeutic compounds. PRISM uses DNA barcoding to pool hundreds of cell lines together, enabling massively parallel drug screening at unprecedented scale. The platform is integrated into the Cancer Dependency Map (DepMap) project and provides comprehensive dose-response data for drug-cancer cell line interactions.
+description: PRISM (Profiling Relative Inhibition Simultaneously in Mixtures) is a
+  high-throughput drug screening technology developed by the Broad Institute that
+  measures the sensitivity of cancer cell lines to therapeutic compounds. PRISM uses
+  DNA barcoding to pool hundreds of cell lines together, enabling massively parallel
+  drug screening at unprecedented scale. The platform is integrated into the Cancer
+  Dependency Map (DepMap) project and provides comprehensive dose-response data for
+  drug-cancer cell line interactions.
 domains:
-  - drug discovery
-  - pharmacology
-  - biomedical
-  - precision medicine
-  - health
+- drug discovery
+- pharmacology
+- biomedical
+- precision medicine
+- health
 homepage_url: https://depmap.org/portal/prism/
-id: "prism"
-infores_id: "prism"
+id: prism
+infores_id: prism
 last_modified_date: '2025-11-05T00:00:00Z'
 layout: resource_detail
 name: PRISM
 products:
-  - id: prism.portal
-    category: GraphicalInterface
-    name: PRISM Data Portal
-    description: Web interface for exploring PRISM drug screening data through DepMap
-    product_url: https://depmap.org/portal/prism/
-    format: http
-    original_source:
-      - prism
-  - id: prism.datasets
-    category: Product
-    name: PRISM Drug Sensitivity Datasets
-    description: Downloadable drug sensitivity screening data from PRISM assays
-    product_url: https://depmap.org/portal/data_page/
-    format: csv
-    original_source:
-      - prism
-  - id: prism.api
-    category: ProgrammingInterface
-    name: DepMap API (PRISM data)
-    description: API access to PRISM drug screening data
-    product_url: https://depmap.org/portal/api/
-    format: http
-    original_source:
-      - prism
+- category: GraphicalInterface
+  description: Web interface for exploring PRISM drug screening data through DepMap
+  format: http
+  id: prism.portal
+  name: PRISM Data Portal
+  original_source:
+  - prism
+  product_url: https://depmap.org/portal/prism/
+- category: Product
+  description: Downloadable drug sensitivity screening data from PRISM assays
+  format: csv
+  id: prism.datasets
+  name: PRISM Drug Sensitivity Datasets
+  original_source:
+  - prism
+  product_url: https://depmap.org/portal/data_page/
+- category: ProgrammingInterface
+  description: API access to PRISM drug screening data
+  format: http
+  id: prism.api
+  name: DepMap API (PRISM data)
+  original_source:
+  - prism
+  product_url: https://depmap.org/portal/api/
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
+  name: Bioteque Embeddings
+  original_source:
+  - chebi
+  - cosmic
+  - achilles
+  - depmap
+  - ccle
+  - gdsc
+  - cellosaurus
+  - clue
+  - ctd
+  - pharmacodb
+  - prism
+  - drugbank
+  - lincs
+  - compartments
+  - offsides
+  - sider
+  - drugcentral
+  - repohub
+  - chemicalchecker
+  - repodb
+  - disgenet
+  - opentargets
+  - creeds
+  - interpro
+  - reactome
+  - tissues
+  - dorothea
+  - progeny
+  - gtex
+  - hpa
+  - go
+  - corum
+  - huri
+  - intact
+  - omnipath
+  - string
+  - bto
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+  secondary_source:
+  - bioteque
 publications:
-  - id: "https://doi.org/10.1038/s43018-019-0018-6"
+- id: https://doi.org/10.1038/s43018-019-0018-6
 repository: https://github.com/broadinstitute/depmap_omics
 synonyms:
-  - PRISM
-  - Profiling Relative Inhibition Simultaneously in Mixtures
+- PRISM
+- Profiling Relative Inhibition Simultaneously in Mixtures
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
 # PRISM
 

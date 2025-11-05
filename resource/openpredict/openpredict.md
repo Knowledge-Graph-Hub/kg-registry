@@ -8,13 +8,19 @@ contacts:
     value: https://openpredict.semanticscience.org/
   label: Institute for Data Science at Maastricht University
 creation_date: '2025-11-05T00:00:00Z'
-description: OpenPredict is an NCATS Translator Knowledge Provider that provides machine learning-based predictions for drug-target interactions and drug-disease associations to support drug repurposing. OpenPredict integrates multiple biomedical knowledge graphs and applies various machine learning algorithms to predict potential therapeutic uses for existing drugs. The service offers predictions with confidence scores and provides evidence trails linking drugs to diseases through intermediate biological entities like targets and pathways.
+description: OpenPredict is an NCATS Translator Knowledge Provider that provides machine
+  learning-based predictions for drug-target interactions and drug-disease associations
+  to support drug repurposing. OpenPredict integrates multiple biomedical knowledge
+  graphs and applies various machine learning algorithms to predict potential therapeutic
+  uses for existing drugs. The service offers predictions with confidence scores and
+  provides evidence trails linking drugs to diseases through intermediate biological
+  entities like targets and pathways.
 domains:
-  - drug discovery
-  - pharmacology
-  - precision medicine
-  - translational
-  - biomedical
+- drug discovery
+- pharmacology
+- precision medicine
+- translational
+- biomedical
 homepage_url: https://openpredict.semanticscience.org/
 id: openpredict
 infores_id: openpredict
@@ -46,16 +52,18 @@ products:
   original_source:
   - openpredict
   product_url: https://openpredict.semanticscience.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-05: HTTP 405 error
+    when accessing file'
 publications:
 - id: https://doi.org/10.1093/bioinformatics/btab540
 repository: https://github.com/MaastrichtU-IDS/translator-openpredict
 synonyms:
-  - OpenPredict
-  - OpenPredict API
+- OpenPredict
+- OpenPredict API
 tags:
 - translator
 ---
-
 # OpenPredict
 
 ## Overview
@@ -117,4 +125,3 @@ Source code and documentation: https://github.com/MaastrichtU-IDS/translator-ope
 ## Tags
 
 - NCATS Translator
-

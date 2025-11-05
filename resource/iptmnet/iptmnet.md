@@ -2,17 +2,42 @@
 activity_status: unknown
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: iPTMnet is a bioinformatics resource for integrated understanding of protein post-translational modifications (PTMs) in systems biology context. It connects multiple disparate bioinformatics tools and systems text mining, data mining, analysis and visualization tools, and databases and ontologies into an integrated cross-cutting research resource to address the knowledge gaps in exploring and discovering PTM networks.
+description: iPTMnet is a bioinformatics resource for integrated understanding of
+  protein post-translational modifications (PTMs) in systems biology context. It connects
+  multiple disparate bioinformatics tools and systems text mining, data mining, analysis
+  and visualization tools, and databases and ontologies into an integrated cross-cutting
+  research resource to address the knowledge gaps in exploring and discovering PTM
+  networks.
 domains:
-  - stub
+- stub
+homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/iPTMnet
 id: iptmnet
 infores_id: iptmnet
 last_modified_date: '2025-10-30T00:00:00Z'
 layout: resource_detail
 name: iPTMnet
-homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/iPTMnet
+products:
+- category: GraphicalInterface
+  description: Interactive web interface for exploring and visualizing kinase-substrate
+    interactions
+  format: http
+  id: kinace.portal
+  name: KinAce Web Portal
+  original_source:
+  - phosphositeplus
+  - iptmnet
+  - uniprot
+  - epsd
+  - kinhub
+  - coralkinome
+  - darkkinasekb
+  - hgnc
+  - kegg
+  - interpro
+  product_url: https://kinace.kinametrix.com/
+  secondary_source:
+  - kinace
 ---
-
 # iPTMnet
 
 ## Overview

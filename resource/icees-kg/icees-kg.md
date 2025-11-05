@@ -85,7 +85,7 @@ products:
       - umls
       - hmdb
       - icees-kg
-infores_id: "infores:icees-kg"
+infores_id: icees-kg
 ---
 
 ## Overview

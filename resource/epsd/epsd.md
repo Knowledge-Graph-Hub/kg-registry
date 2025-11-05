@@ -4,17 +4,37 @@ category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
 description: Information resource for EPSD
 domains:
-  - stub
+- stub
+homepage_url: https://epsd.biocuckoo.cn
 id: epsd
 infores_id: epsd
 last_modified_date: '2025-10-30T00:00:00Z'
 layout: resource_detail
 name: EPSD
-homepage_url: https://epsd.biocuckoo.cn
+products:
+- category: GraphicalInterface
+  description: Interactive web interface for exploring and visualizing kinase-substrate
+    interactions
+  format: http
+  id: kinace.portal
+  name: KinAce Web Portal
+  original_source:
+  - phosphositeplus
+  - iptmnet
+  - uniprot
+  - epsd
+  - kinhub
+  - coralkinome
+  - darkkinasekb
+  - hgnc
+  - kegg
+  - interpro
+  product_url: https://kinace.kinametrix.com/
+  secondary_source:
+  - kinace
 synonyms:
-  - Eukaryotic phosporylation site database
+- Eukaryotic phosporylation site database
 ---
-
 # EPSD
 
 ## Overview

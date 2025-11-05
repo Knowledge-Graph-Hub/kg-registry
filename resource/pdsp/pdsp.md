@@ -8,12 +8,17 @@ contacts:
     value: https://pdsp.unc.edu/
   label: UNC Chapel Hill PDSP
 creation_date: '2025-11-05T00:00:00Z'
-description: The Psychoactive Drug Screening Program (PDSP) at UNC Chapel Hill provides screening of novel psychoactive compounds for pharmacological and functional activity at cloned human or rodent CNS receptors, channels, and transporters. The PDSP Ki Database contains binding affinities for thousands of drugs and drug candidates at neuroreceptors, providing critical pharmacological data for drug discovery and neuroscience research.
+description: The Psychoactive Drug Screening Program (PDSP) at UNC Chapel Hill provides
+  screening of novel psychoactive compounds for pharmacological and functional activity
+  at cloned human or rodent CNS receptors, channels, and transporters. The PDSP Ki
+  Database contains binding affinities for thousands of drugs and drug candidates
+  at neuroreceptors, providing critical pharmacological data for drug discovery and
+  neuroscience research.
 domains:
-  - pharmacology
-  - neuroscience
-  - drug discovery
-  - biomedical
+- pharmacology
+- neuroscience
+- drug discovery
+- biomedical
 homepage_url: https://pdsp.unc.edu/
 id: pdsp
 infores_id: pdsp
@@ -44,12 +49,12 @@ products:
   name: PDSP Assay Protocols
   original_source:
   - pdsp
+  product_file_size: 24885088
   product_url: https://pdsp.unc.edu/pdspweb/content/PDSP%20Protocols%20II%202013-03-28.pdf
 synonyms:
-  - PDSP
-  - NIMH PDSP
+- PDSP
+- NIMH PDSP
 ---
-
 # Psychoactive Drug Screening Program
 
 ## Overview
@@ -95,4 +100,3 @@ This resource has the Information Resource identifier: `infores:pdsp`
 - Neuroscience
 - Drug Discovery
 - Biomedical
-

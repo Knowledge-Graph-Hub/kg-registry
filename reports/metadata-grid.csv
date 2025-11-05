@@ -15,8 +15,10 @@ aop-db,active,PASS
 aop-wiki,active,PASS
 apo,active,PASS
 apollo_sv,active,PASS
+aragorn,active,PASS
 arax,active,PASS
 aro,active,PASS
+athena,active,PASS
 automat,active,PASS
 bco,active,PASS
 bfo,active,PASS
@@ -40,7 +42,9 @@ cam-kp,active,PASS
 cancer-genome-interpreter,active,PASS
 ccle,active,PASS
 cdao,active,PASS
+cdiscvocab,active,PASS
 cdno,active,PASS
+cebs,active,PASS
 cellmarker,active,PASS
 cellosaurus,active,PASS
 cfde-ddkg,active,PASS
@@ -55,6 +59,7 @@ chiro,active,PASS
 chmo,active,PASS
 chr,active,PASS
 cido,active,PASS
+ciel,active,PASS
 cio,active,PASS
 circbase,active,PASS
 civic,active,PASS
@@ -129,6 +134,7 @@ emikg,active,PASS
 ena,active,PASS
 enrichr-kg,active,PASS
 ensembl,active,PASS
+entrez,active,PASS
 envo,active,PASS
 epigraphdb,active,PASS
 epio,active,PASS
@@ -160,6 +166,7 @@ gdsc,active,PASS
 gecko,active,PASS
 genage,active,PASS
 gencode,active,PASS
+gendr,active,PASS
 genecards,active,PASS
 genemania,active,PASS
 genepio,active,PASS
@@ -185,6 +192,7 @@ gsso,active,PASS
 gtex,active,PASS
 gtopdb,active,PASS
 gtrnadb,active,PASS
+gtrx,active,PASS
 gutmgene,active,PASS
 gwascatalog,active,PASS
 hancestro,active,PASS
@@ -229,6 +237,7 @@ kg-microbe,active,PASS
 kg-monarch,active,PASS
 kgcl,active,PASS
 kidsfirst,active,PASS
+kinace,active,PASS
 kinomescan,active,PASS
 kisao,active,PASS
 labo,active,PASS
@@ -316,11 +325,11 @@ ogms,active,PASS
 ohd,active,PASS
 ohmi,active,PASS
 ohpi,active,PASS
-oio,active,PASS
 ols,active,PASS
 oma,active,PASS
 omim,active,PASS
 omit,active,PASS
+omnicorp,active,PASS
 omnipath,active,PASS
 omo,active,PASS
 omp,active,PASS
@@ -332,6 +341,7 @@ ontoavida,active,PASS
 ontology-kp,active,PASS
 ontoneo,active,PASS
 oostt,active,PASS
+openpredict,active,PASS
 opentargets,active,PASS
 opl,active,PASS
 opmi,active,PASS
@@ -350,9 +360,11 @@ pcl,active,PASS
 pco,active,PASS
 pdbe,active,PASS
 pdro,active,PASS
+pdsp,active,PASS
 peco,active,PASS
 petagraph,active,PASS
 pfam,active,PASS
+pfocr,active,PASS
 pgo,active,PASS
 pgxmine,active,PASS
 pharmacodb,active,PASS
@@ -496,6 +508,7 @@ aero,inactive,PASS
 ato,inactive,PASS
 bcgo,inactive,PASS
 bila,inactive,PASS
+bio2rdf,inactive,PASS
 bootstrep,inactive,PASS
 caro,inactive,PASS
 ceph,inactive,PASS
@@ -549,10 +562,12 @@ nmr,inactive,PASS
 obo_rel,inactive,PASS
 ogi,inactive,PASS
 ogsf,inactive,PASS
+oio,inactive,PASS
 olatdv,inactive,PASS
 omiabis,inactive,PASS
 oxo,inactive,PASS
 pao,inactive,PASS
+patric,inactive,PASS
 pd_st,inactive,PASS
 pdumdv,inactive,PASS
 pgdso,inactive,PASS

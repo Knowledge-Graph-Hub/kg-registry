@@ -13,12 +13,19 @@ contacts:
     value: https://www.dbmi.columbia.edu/
   label: Columbia University Department of Biomedical Informatics
 creation_date: '2025-11-05T00:00:00Z'
-description: The Columbia International eHealth Laboratory (CIEL) dictionary is a shared open concept dictionary that provides comprehensive terminology services to OpenMRS and other health information systems. Based at Columbia University's Department of Biomedical Informatics, CIEL contains over 55,000 medical concepts mapped to standardized code systems including ICD, SNOMED CT, LOINC, RxNorm, and many others. CIEL supports open source health initiatives globally and has been recognized as both a Digital Public Good by the Digital Public Goods Alliance and a Content Public Good by Digital Square.
+description: The Columbia International eHealth Laboratory (CIEL) dictionary is a
+  shared open concept dictionary that provides comprehensive terminology services
+  to OpenMRS and other health information systems. Based at Columbia University's
+  Department of Biomedical Informatics, CIEL contains over 55,000 medical concepts
+  mapped to standardized code systems including ICD, SNOMED CT, LOINC, RxNorm, and
+  many others. CIEL supports open source health initiatives globally and has been
+  recognized as both a Digital Public Good by the Digital Public Goods Alliance and
+  a Content Public Good by Digital Square.
 domains:
-  - clinical
-  - health
-  - biomedical
-  - information technology
+- clinical
+- health
+- biomedical
+- information technology
 homepage_url: https://openconceptlab.org/project/ciel/
 id: ciel
 last_modified_date: '2025-11-05T00:00:00Z'
@@ -29,7 +36,8 @@ license:
 name: CIEL
 products:
 - category: GraphicalInterface
-  description: Web interface for browsing CIEL concept dictionary via Open Concept Lab
+  description: Web interface for browsing CIEL concept dictionary via Open Concept
+    Lab
   format: http
   id: ciel.ocl
   name: CIEL on OCL Online
@@ -60,14 +68,32 @@ products:
   original_source:
   - ciel
   product_url: https://app.openconceptlab.org/#/orgs/CIEL/collections/MPX/
+- category: MappingProduct
+  description: Concept mappings between different terminology systems
+  format: csv
+  id: athena.mappings
+  name: Athena Concept Mappings
+  original_source:
+  - snomedct
+  - icd10
+  - icd10cm
+  - mesh
+  - loinc
+  - cdiscvocab
+  - ciel
+  product_url: https://athena.ohdsi.org/search-terms/start
+  secondary_source:
+  - athena
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-05: Error connecting
+    to URL: Exceeded 30 redirects.'
 synonyms:
-  - CIEL
-  - Columbia International eHealth Laboratory
-  - CIEL Concept Dictionary
+- CIEL
+- Columbia International eHealth Laboratory
+- CIEL Concept Dictionary
 taxon:
 - NCBITaxon:9606
 ---
-
 # CIEL - Columbia International eHealth Laboratory
 
 ## Overview

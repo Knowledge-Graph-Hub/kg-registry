@@ -8,12 +8,17 @@ contacts:
     value: https://www.ohdsi.org/
   label: OHDSI
 creation_date: '2025-11-05T00:00:00Z'
-description: Athena is the OHDSI (Observational Health Data Sciences and Informatics) standardized vocabulary repository that provides access to standardized terminologies and vocabularies for observational healthcare data. It includes SNOMED CT, RxNorm, LOINC, ICD codes, and many other standard vocabularies, along with mappings between them. Athena enables the transformation of healthcare data into the OMOP Common Data Model format for federated research across multiple healthcare systems.
+description: Athena is the OHDSI (Observational Health Data Sciences and Informatics)
+  standardized vocabulary repository that provides access to standardized terminologies
+  and vocabularies for observational healthcare data. It includes SNOMED CT, RxNorm,
+  LOINC, ICD codes, and many other standard vocabularies, along with mappings between
+  them. Athena enables the transformation of healthcare data into the OMOP Common
+  Data Model format for federated research across multiple healthcare systems.
 domains:
-  - clinical
-  - biomedical
-  - health
-  - information technology
+- clinical
+- biomedical
+- health
+- information technology
 homepage_url: https://athena.ohdsi.org/
 id: athena
 infores_id: athena
@@ -37,6 +42,9 @@ products:
   original_source:
   - athena
   product_url: https://athena.ohdsi.org/vocabulary/list
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-05: Error connecting
+    to URL: Exceeded 30 redirects.'
 - category: MappingProduct
   description: Concept mappings between different terminology systems
   format: csv
@@ -50,16 +58,18 @@ products:
   - loinc
   - cdiscvocab
   - ciel
+  product_url: https://athena.ohdsi.org/search-terms/start
   secondary_source:
   - athena
-  product_url: https://athena.ohdsi.org/search-terms/start
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-05: Error connecting
+    to URL: Exceeded 30 redirects.'
 synonyms:
-  - Athena
-  - OHDSI Athena
+- Athena
+- OHDSI Athena
 taxon:
 - NCBITaxon:9606
 ---
-
 # Athena
 
 ## Overview
@@ -112,4 +122,3 @@ This resource has the Information Resource identifier: `infores:athena`
 ## Taxon Coverage
 
 Human (NCBITaxon:9606)
-

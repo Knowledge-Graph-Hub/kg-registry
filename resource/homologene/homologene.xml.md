@@ -8,6 +8,7 @@ id: homologene.xml
 name: HomoloGene XML Data (Build 68 - Archive)
 original_source:
 - homologene
+product_file_size: 175849799
 product_url: https://ftp.ncbi.nih.gov/pub/HomoloGene/build68/homologene.xml.gz
 layout: product_detail
 ---

@@ -76,14 +76,71 @@ products:
   original_source:
   - umls
   product_url: https://lhncbc.nlm.nih.gov/LSG/index.html
+- category: GraphProduct
+  description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange
+    (KGX) format, containing integrated clinical and environmental exposures data
+    as a knowledge graph with 226 nodes and 14,342 edges
+  format: kgx-jsonl
+  id: icees-kg.graph
+  name: KGX distribution of the ICEES Exposures KP
+  original_source:
+  - mesh
+  - pubchem
+  - chembl
+  - mondo
+  - chebi
+  - hp
+  - umls
+  - hmdb
+  - icees-kg
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/
+  secondary_source:
+  - icees-kg
+- category: ProgrammingInterface
+  description: Translator Reasoner API (TRAPI) endpoint for querying ICEES KG using
+    standardized Translator protocols
+  format: http
+  id: icees-kg.trapi
+  name: ICEES KG TRAPI API
+  original_source:
+  - mesh
+  - pubchem
+  - chembl
+  - mondo
+  - chebi
+  - hp
+  - umls
+  - hmdb
+  - icees-kg
+  product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
+  secondary_source:
+  - icees-kg
+- category: Product
+  description: Meta knowledge graph and metadata describing the data sources, node
+    types, edge types, and predicates available in ICEES KG
+  format: json
+  id: icees-kg.metadata
+  name: ICEES KG Metadata
+  original_source:
+  - mesh
+  - pubchem
+  - chembl
+  - mondo
+  - chebi
+  - hp
+  - umls
+  - hmdb
+  - icees-kg
+  product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
+  secondary_source:
+  - icees-kg
 publications:
 - id: PMID:14681409
-  title: 'The Unified Medical Language System (UMLS): integrating biomedical terminology.'
   preferred: true
+  title: 'The Unified Medical Language System (UMLS): integrating biomedical terminology.'
 synonyms:
 - UMLS
 ---
-
 # Unified Medical Language System (UMLS)
 
 ## Overview

@@ -7,7 +7,7 @@ id: mint.mitab.mouse
 name: MINT Mouse Interactions
 product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/current/search/query/species:mouse
 warnings:
-- File was not able to be retrieved when checked on 2025-10-31_ No Content-Length
+- File was not able to be retrieved when checked on 2025-11-04_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2025-10-31_ No Content-Length
   header found

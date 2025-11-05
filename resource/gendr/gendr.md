@@ -8,12 +8,17 @@ contacts:
     value: http://genomics.senescence.info/help.html
   label: Human Ageing Genomic Resources
 creation_date: '2025-11-05T00:00:00Z'
-description: GenDR (Database of Dietary Restriction-Related Genes) is a curated database of genes associated with dietary restriction (DR) and its effects on longevity and aging. Part of the Human Ageing Genomic Resources (HAGR), GenDR compiles experimental data on genes whose expression or function is altered by dietary restriction regimens across multiple model organisms. The database includes information on gene function, expression changes, and links to aging-related phenotypes.
+description: GenDR (Database of Dietary Restriction-Related Genes) is a curated database
+  of genes associated with dietary restriction (DR) and its effects on longevity and
+  aging. Part of the Human Ageing Genomic Resources (HAGR), GenDR compiles experimental
+  data on genes whose expression or function is altered by dietary restriction regimens
+  across multiple model organisms. The database includes information on gene function,
+  expression changes, and links to aging-related phenotypes.
 domains:
-  - genomics
-  - health
-  - nutrition
-  - biological systems
+- genomics
+- health
+- nutrition
+- biological systems
 homepage_url: http://genomics.senescence.info/diet/
 id: gendr
 infores_id: gendr
@@ -36,6 +41,7 @@ products:
   name: GenDR Data Download
   original_source:
   - gendr
+  product_file_size: 8209
   product_url: http://genomics.senescence.info/diet/dataset.zip
 - category: ProgrammingInterface
   description: Programmatic access to GenDR data
@@ -48,12 +54,11 @@ products:
 publications:
 - id: https://doi.org/10.1093/nar/gkp1108
 synonyms:
-  - GenDR
-  - gendr
+- GenDR
+- gendr
 taxon:
 - NCBITaxon:2759
 ---
-
 # GenDR Database of Dietary Restriction-Related Genes
 
 ## Overview
@@ -106,4 +111,3 @@ This resource has the Information Resource identifier: `infores:gendr`
 ## Taxon Coverage
 
 Eukaryota (NCBITaxon:2759) - includes yeast, C. elegans, Drosophila, rodents, and other model organisms
-

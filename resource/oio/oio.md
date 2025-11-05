@@ -10,10 +10,15 @@ contacts:
     value: https://obofoundry.org/
   label: OBO Foundry
 creation_date: '2025-11-05T00:00:00Z'
-description: The OBO Interoperability Ontology (OIO) was a set of annotation properties and ontology metadata standards developed to promote interoperability between OBO Foundry ontologies. Its terms and properties have been superseded by OMO (Ontology Metadata Ontology) and are now considered deprecated. OIO provided foundational metadata terms that were widely used in early OBO ontologies for describing ontology versioning, imports, and other metadata.
+description: The OBO Interoperability Ontology (OIO) was a set of annotation properties
+  and ontology metadata standards developed to promote interoperability between OBO
+  Foundry ontologies. Its terms and properties have been superseded by OMO (Ontology
+  Metadata Ontology) and are now considered deprecated. OIO provided foundational
+  metadata terms that were widely used in early OBO ontologies for describing ontology
+  versioning, imports, and other metadata.
 domains:
-  - biological systems
-  - upper
+- biological systems
+- upper
 id: oio
 infores_id: oio
 last_modified_date: '2025-11-05T00:00:00Z'
@@ -37,13 +42,119 @@ products:
   name: OIO OBO
   original_source:
   - oio
-synonyms:
-  - OIO
+- category: OntologyProduct
+  description: The latest release of EFO in OWL format
+  format: owl
+  id: efo.owl
+  name: EFO OWL
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
   - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 240665663
+  product_url: https://www.ebi.ac.uk/efo/efo.owl
+  secondary_source:
+  - efo
+- category: OntologyProduct
+  description: The latest release of EFO in OBO format
+  format: obo
+  id: efo.obo
+  name: EFO OBO
+  original_source:
+  - bfo
+  - bto
+  - chebi
+  - cl
+  - clo
+  - cob
+  - dc
+  - doid
+  - ecto
+  - efo
+  - fbbt
+  - fbdv
+  - fma
+  - go
+  - hancestro
+  - hp
+  - iao
+  - ido
+  - ma
+  - mondo
+  - mp
+  - mpath
+  - ncbitaxon
+  - ncit
+  - oba
+  - obi
+  - ogms
+  - oio
+  - omit
+  - omo
+  - ordo
+  - pato
+  - po
+  - pr
+  - ro
+  - semapv
+  - skos
+  - so
+  - to
+  - uberon
+  - uo
+  - wbls
+  - zfa
+  product_file_size: 64058275
+  product_url: https://www.ebi.ac.uk/efo/efo.obo
+  secondary_source:
+  - efo
+synonyms:
+- OIO
+- oio
 warnings:
-- This ontology is deprecated. Its functionality has been superseded by OMO (Ontology Metadata Ontology).
+- This ontology is deprecated. Its functionality has been superseded by OMO (Ontology
+  Metadata Ontology).
 ---
-
 # OBO Interoperability Ontology
 
 ## Overview

@@ -379,6 +379,64 @@ products:
   secondary_source:
   - rna-kg
 - category: GraphProduct
+  description: KGX distribution of the ICEES Exposures KP in Knowledge Graph Exchange
+    (KGX) format, containing integrated clinical and environmental exposures data
+    as a knowledge graph with 226 nodes and 14,342 edges
+  format: kgx-jsonl
+  id: icees-kg.graph
+  name: KGX distribution of the ICEES Exposures KP
+  original_source:
+  - mesh
+  - pubchem
+  - chembl
+  - mondo
+  - chebi
+  - hp
+  - umls
+  - hmdb
+  - icees-kg
+  product_url: https://stars.renci.org/var/plater/bl-4.2.1/icees-kg/1.5.0/
+  secondary_source:
+  - icees-kg
+- category: ProgrammingInterface
+  description: Translator Reasoner API (TRAPI) endpoint for querying ICEES KG using
+    standardized Translator protocols
+  format: http
+  id: icees-kg.trapi
+  name: ICEES KG TRAPI API
+  original_source:
+  - mesh
+  - pubchem
+  - chembl
+  - mondo
+  - chebi
+  - hp
+  - umls
+  - hmdb
+  - icees-kg
+  product_url: https://robokop.renci.org/api-docs/docs/automat/icees-kg-trapi
+  secondary_source:
+  - icees-kg
+- category: Product
+  description: Meta knowledge graph and metadata describing the data sources, node
+    types, edge types, and predicates available in ICEES KG
+  format: json
+  id: icees-kg.metadata
+  name: ICEES KG Metadata
+  original_source:
+  - mesh
+  - pubchem
+  - chembl
+  - mondo
+  - chebi
+  - hp
+  - umls
+  - hmdb
+  - icees-kg
+  product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
+  secondary_source:
+  - icees-kg
+- category: GraphProduct
   description: Nodes for KGX distribution of the RTX-KG2 (RTX-KG2.10.1c)
   format: kgx-jsonl
   id: rtx-kg2.graph.nodes
@@ -673,46 +731,6 @@ products:
   product_url: https://www.ebi.ac.uk/efo/efo.obo
   secondary_source:
   - efo
-- category: DataModelProduct
-  description: The Basic subset of the Plant Trait Ontology in OBO format
-  format: obo
-  id: to-basic.obo
-  latest_version: v2025-05-20
-  license:
-    id: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
-  name: Plant Trait Ontology Basic OBO
-  original_source:
-  - to
-  - chebi
-  - ro
-  - ncbitaxon
-  - go
-  - omo
-  - ecto
-  - ido
-  - oio
-  - pato
-  - envo
-  - ohmi
-  - iao
-  - omrse
-  - obi
-  - peco
-  - po
-  - uberon
-  - ogms
-  - bfo
-  product_file_size: 111996
-  product_url: http://purl.obolibrary.org/obo/to/subsets/to-basic.obo
-  secondary_source:
-  - to
-  versions:
-  - v2025-05-20
-  - v2023-07-17
-  - v2022-04-13
-  - v2022-03-09
-  - v2021-04-06
 repository: https://github.com/ebi-chebi/ChEBI
 ---
 ## Description

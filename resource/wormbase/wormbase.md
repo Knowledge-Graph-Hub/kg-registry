@@ -79,7 +79,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.wormbase.org/pub/wormbase/'
-  - 'File was not able to be retrieved when checked on 2025-11-04: Error connecting
+  - File was not able to be retrieved when checked on 2025-11-04_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.wormbase.org/pub/wormbase/'
+  - 'File was not able to be retrieved when checked on 2025-11-05: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.wormbase.org/pub/wormbase/'''
 - category: GraphicalInterface
   description: Sub-portal hosting approximately 100 parasitic helminth genomes with
