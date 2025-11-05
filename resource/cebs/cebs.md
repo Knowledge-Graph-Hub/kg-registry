@@ -1,48 +1,99 @@
 ---
-activity_status: unknown
+activity_status: active
 category: DataSource
-creation_date: '2025-10-30T00:00:00Z'
-description: CEBS is a public, web-accessible, manually curated and accessioned repository of individual study data  and summarized study data from the National Toxicology Program (NTP) testing program and other toxicology  programs and research teams, including studies on carcinogenicity, short-term toxicity, and genetic toxicity.
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://manticore.niehs.nih.gov/cebssearch/
+  label: NIEHS
+creation_date: '2025-11-05T00:00:00Z'
+description: Chemical Effects in Biological Systems (CEBS) is a public, web-accessible, manually curated repository of toxicology study data from the National Toxicology Program (NTP) and other research programs. CEBS contains individual-level and summarized study data from carcinogenicity studies, short-term toxicity studies, genetic toxicity assays, and other toxicological investigations. The database integrates chemical structure information, study designs, experimental conditions, and biological effects to support toxicology research and risk assessment.
 domains:
-  - stub
+  - toxicology
+  - biomedical
+  - health
+  - public health
+homepage_url: https://manticore.niehs.nih.gov/cebssearch/
 id: cebs
 infores_id: cebs
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2025-11-05T00:00:00Z'
 layout: resource_detail
 name: CEBS
-homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/CEBS
+products:
+- category: GraphicalInterface
+  description: Web interface for searching and browsing CEBS toxicology data
+  format: http
+  id: cebs.web
+  name: CEBS Search Interface
+  original_source:
+  - cebs
+  product_url: https://manticore.niehs.nih.gov/cebssearch/
+- category: Product
+  description: Toxicology study data from NTP and other programs
+  format: mixed
+  id: cebs.data
+  name: CEBS Study Data
+  original_source:
+  - cebs
+  product_url: https://manticore.niehs.nih.gov/cebssearch/
+- category: ProgrammingInterface
+  description: API access to CEBS data
+  format: http
+  id: cebs.api
+  name: CEBS API
+  original_source:
+  - cebs
+  product_url: https://manticore.niehs.nih.gov/cebssearch/
 synonyms:
+  - CEBS
   - Chemical Effects in Biological Systems
 ---
 
-# CEBS
+# Chemical Effects in Biological Systems
 
 ## Overview
 
-CEBS is a public, web-accessible, manually curated and accessioned repository of individual study data  and summarized study data from the National Toxicology Program (NTP) testing program and other toxicology  programs and research teams, including studies on carcinogenicity, short-term toxicity, and genetic toxicity.
+Chemical Effects in Biological Systems (CEBS) is a public, web-accessible, manually curated repository of toxicology study data from the National Toxicology Program (NTP) and other research programs.
 
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
+CEBS contains comprehensive data from multiple study types including carcinogenicity studies, short-term toxicity studies, genetic toxicity assays, reproductive and developmental toxicity studies, and other toxicological investigations. The database provides detailed information at both individual animal and study summary levels.
+
+## Key Features
+
+- **Comprehensive Study Data**: Individual-level and summarized toxicology data
+- **Multiple Study Types**: Carcinogenicity, acute/chronic toxicity, genetic toxicity, reproductive/developmental toxicity
+- **Chemical Information**: Integrated with chemical structure and properties
+- **Study Metadata**: Detailed experimental designs, dosing regimens, and conditions
+- **Pathology Data**: Histopathological findings and lesion classifications
+- **Public Access**: Free access for research and regulatory purposes
+
+## Research Applications
+
+- Toxicology research and hypothesis generation
+- Risk assessment and safety evaluation
+- Computational toxicology modeling
+- Adverse outcome pathway (AOP) development
+- Cross-study comparisons and meta-analysis
+- Support for read-across and QSAR approaches
+
+## Products
+
+### CEBS Search Interface
+Web-based interface for querying and browsing NTP toxicology studies with advanced search capabilities.
+
+### CEBS Study Data
+Downloadable toxicology study data including individual animal data, pathology findings, and study summaries.
+
+### CEBS API
+Programmatic access to CEBS data for computational toxicology applications.
 
 ## Information Resource ID
 
 This resource has the Information Resource identifier: `infores:cebs`
 
-## Curation Status
+## Domains
 
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
-
-## What Needs to be Curated
-
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
-
-## Additional Notes
+- Toxicology
+- Biomedical
+- Health
+- Public Health
