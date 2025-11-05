@@ -12,12 +12,24 @@ contacts:
     value: suzialeksander
   label: Suzi Aleksander
   orcid: 0000-0001-6787-2901
-description: An ontology for describing the function of genes and gene products
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://help.geneontology.org/
+  label: Gene Ontology Consortium
+creation_date: '2025-11-05T00:00:00Z'
+description: The Gene Ontology (GO) is a comprehensive ontology for describing the functions of genes and gene products, developed and maintained by the Gene Ontology Consortium. GO provides structured, controlled vocabularies describing molecular functions, biological processes, and cellular components across all species. The consortium also produces GO annotations linking gene products to GO terms, and GO-CAM (Causal Activity Models) that represent complete biological systems.
 domains:
 - biological systems
+- genomics
+- biomedical
+- systems biology
+funding:
+- NHGRI HG012212
 homepage_url: http://geneontology.org/
 id: go
 infores_id: go
+last_modified_date: '2025-11-05T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -1764,17 +1776,111 @@ products:
   - v2022-04-13
   - v2022-03-09
   - v2021-04-06
+- category: Product
+  description: GO annotations - evidence-based statements linking specific gene products
+    to GO terms
+  format: mixed
+  id: go.annotations
+  name: GO Annotations
+  original_source:
+  - goa
+  product_url: https://geneontology.org/docs/download-go-annotations/
+- category: Product
+  description: GO-CAM (Causal Activity Models) - structured frameworks linking GO
+    annotations into complete biological system models
+  format: mixed
+  id: go.gocam
+  name: GO-CAM Models
+  product_url: https://geneontology.org/docs/download-go-cams/
+- category: GraphicalInterface
+  description: AmiGO - web interface to browse, search, and visualize GO data
+  format: http
+  id: go.amigo
+  name: AmiGO Browser
+  product_url: https://amigo.geneontology.org/amigo
+- category: ProgrammingInterface
+  description: APIs to access and integrate GO data programmatically
+  format: http
+  id: go.api
+  name: GO APIs
+  product_url: https://geneontology.org/docs/tools-guide/
+publications:
+- id: https://doi.org/10.1038/75556
+- id: https://doi.org/10.1093/genetics/iyad031
+- id: https://doi.org/10.1038/s41588-019-0500-1
 repository: https://github.com/geneontology/go-ontology
+synonyms:
+- GO
+- GOC
+- Gene Ontology Consortium
 taxon:
 - NCBITaxon:1
 ---
-## Description
+# Gene Ontology
 
-An ontology for describing the function of genes and gene products
+## Overview
+
+The Gene Ontology (GO) is a comprehensive ontology for describing the functions of genes and gene products across all species. Developed and maintained by the Gene Ontology Consortium, GO is the world's largest source of information on gene functions, providing both human-readable and machine-readable knowledge that serves as a foundation for computational analysis of large-scale molecular biology and genetics experiments.
+
+## Key Components
+
+### GO Ontology
+The GO provides a structured, controlled vocabulary describing:
+- **Molecular Function**: Activities at the molecular level (e.g., catalysis, binding)
+- **Biological Process**: Larger biological programs accomplished by multiple molecular activities
+- **Cellular Component**: Locations where gene products are active
+
+### GO Annotations
+Evidence-based statements linking specific gene products to GO terms, with:
+- Traceable scientific evidence from published research
+- Evidence codes indicating the type of evidence
+- Database cross-references to source publications
+- Coverage of thousands of species across the tree of life
+
+### GO-CAM (Causal Activity Models)
+Structured frameworks that link standard GO annotations into more complete models of biological systems, representing:
+- Causal relationships between molecular functions
+- Temporal sequences of events
+- Spatial contexts of activities
+
+## Scope and Coverage
+
+- **Current Release**: Regularly updated with new terms and annotations
+- **Species Coverage**: Annotations for organisms across the tree of life (all taxa)
+- **Gene Products**: Millions of annotations for proteins and RNAs
+- **Publications**: Hundreds of thousands of papers curated
+- **Terms**: Tens of thousands of GO terms
+
+## Use Cases
+
+- Functional annotation of newly sequenced genomes
+- GO enrichment analysis of gene expression experiments
+- Comparative genomics and evolution studies
+- Drug target identification and validation
+- Systems biology modeling
+- Integration with other biological databases
+
+## The Gene Ontology Consortium
+
+The GO Consortium is a collaborative international effort funded by the National Human Genome Research Institute (NHGRI grant HG012212). The consortium:
+- Develops and maintains the GO ontology
+- Produces GO annotations from experimental literature
+- Creates GO-CAM models of biological systems
+- Provides tools and resources (AmiGO, APIs, enrichment analysis)
+- Ensures data quality and interoperability
+
+## Information Resource ID
+
+This resource has the Information Resource identifier: `infores:go`
+
+## License and Reuse
+
+GO data is released under CC BY 4.0 license, allowing free use with proper attribution. Users should cite the GO release date and DOI when using the data.
 
 ## Contacts
 
 - Suzi Aleksander (suzia@stanford.edu) [ORCID: 0000-0001-6787-2901](https://orcid.org/0000-0001-6787-2901)
+- Gene Ontology Consortium Help: https://help.geneontology.org/
 
 ## Products
 
@@ -1866,12 +1972,46 @@ Equivalent to go.owl, but released daily. Note the snapshot release is not archi
 
 **Format**: obo
 
+### GO Annotations
+
+GO annotations - evidence-based statements linking specific gene products to GO terms
+
+**URL**: [https://geneontology.org/docs/download-go-annotations/](https://geneontology.org/docs/download-go-annotations/)
+
+**Format**: mixed
+
+### GO-CAM Models
+
+GO-CAM (Causal Activity Models) - structured frameworks linking GO annotations into complete biological system models
+
+**URL**: [https://geneontology.org/docs/download-go-cams/](https://geneontology.org/docs/download-go-cams/)
+
+**Format**: mixed
+
+### AmiGO Browser
+
+AmiGO - web interface to browse, search, and visualize GO data
+
+**URL**: [https://amigo.geneontology.org/amigo](https://amigo.geneontology.org/amigo)
+
+**Format**: http
+
+### GO APIs
+
+APIs to access and integrate GO data programmatically
+
+**URL**: [https://geneontology.org/docs/tools-guide/](https://geneontology.org/docs/tools-guide/)
+
+**Format**: http
+
 ## Publications
 
-- [Gene ontology: tool for the unification of biology. The Gene Ontology Consortium](https://www.ncbi.nlm.nih.gov/pubmed/10802651)
+- [Gene ontology: tool for the unification of biology. The Gene Ontology Consortium](https://doi.org/10.1038/75556)
 - [The Gene Ontology resource: enriching a GOld mine](https://www.ncbi.nlm.nih.gov/pubmed/33290552)
+- [The Gene Ontology knowledgebase in 2023](https://doi.org/10.1093/genetics/iyad031)
+- [Gene Ontology Causal Activity Modeling (GO-CAM) moves beyond GO annotations to structured descriptions of biological functions and systems](https://doi.org/10.1038/s41588-019-0500-1)
 
-**Domains**: biological systems
+**Domains**: biological systems, genomics, biomedical, systems biology
 
 **Taxon**: NCBITaxon:1
 
