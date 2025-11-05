@@ -1,48 +1,82 @@
 ---
-activity_status: unknown
+activity_status: active
 category: DataSource
-creation_date: '2025-10-30T00:00:00Z'
-description: Information resource for OmniCorp
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
+  label: NCATS Translator
+creation_date: '2025-11-05T00:00:00Z'
+description: OmniCorp provides co-occurrence data derived from PubMed abstracts, enabling researchers to identify and quantify relationships between biomedical concepts based on their frequency of co-mention in the literature. This resource is part of the NCATS Translator infrastructure and supports literature-based discovery and evidence aggregation for knowledge graph construction.
 domains:
-  - stub
+  - literature
+  - biomedical
+  - translational
 id: omnicorp
 infores_id: omnicorp
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2025-11-05T00:00:00Z'
 layout: resource_detail
 name: OmniCorp
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
+products:
+- category: Product
+  description: Co-occurrence data from PubMed abstracts
+  format: mixed
+  id: omnicorp.cooccurrence
+  name: OmniCorp Co-occurrence Data
+  original_source:
+  - pubmed
+  secondary_source:
+  - omnicorp
+  product_url: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
+- category: ProgrammingInterface
+  description: API access to OmniCorp co-occurrence data
+  format: http
+  id: omnicorp.api
+  name: OmniCorp API
+  original_source:
+  - pubmed
+  secondary_source:
+  - omnicorp
+  product_url: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
 synonyms:
   - OmniCorp
+tags:
+- translator
 ---
 
 # OmniCorp
 
 ## Overview
 
-Information resource for OmniCorp
+OmniCorp provides co-occurrence data derived from PubMed abstracts, enabling researchers to identify and quantify relationships between biomedical concepts based on their frequency of co-mention in the literature. 
 
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
+This resource is part of the NCATS Translator infrastructure and supports literature-based discovery and evidence aggregation for knowledge graph construction. By analyzing the co-occurrence of biomedical entities (genes, diseases, drugs, phenotypes, etc.) in PubMed literature, OmniCorp helps identify potential relationships and generate hypotheses for further investigation.
+
+## Key Features
+
+- **Literature-Based Discovery**: Identifies relationships between biomedical concepts based on co-occurrence in scientific literature
+- **PubMed Coverage**: Comprehensive analysis of PubMed abstracts
+- **Translator Integration**: Part of the NCATS Biomedical Data Translator ecosystem
+- **Quantitative Analysis**: Provides frequency counts and statistical measures of co-occurrence
+
+## Products
+
+### Co-occurrence Data
+OmniCorp provides downloadable co-occurrence data files and API access for programmatic retrieval of co-occurrence statistics between biomedical concepts.
 
 ## Information Resource ID
 
 This resource has the Information Resource identifier: `infores:omnicorp`
 
-## Curation Status
+## Domains
 
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
+- Literature
+- Biomedical
+- Translational
 
-## What Needs to be Curated
+## Tags
 
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
+- NCATS Translator
 
-## Additional Notes
