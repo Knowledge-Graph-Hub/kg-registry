@@ -200,6 +200,7 @@ ido	Infectious Disease Ontology	Ontology	http://www.bioontology.org/wiki/index.p
 idomal	Malaria Ontology	Ontology	https://www.vectorbase.org/ontology-browser	resource/idomal/idomal.md
 iev	Event (INOH pathway ontology)	Ontology	http://www.inoh.org	resource/iev/iev.md
 ikraph	iKraph	KnowledgeGraph	https://biokde.insilicom.com/	resource/ikraph/ikraph.md
+imodulondb	iModulonDB	DataSource	https://imodulondb.org/	resource/imodulondb/imodulondb.md
 imr	Molecule role (INOH Protein name/family name ontology)	Ontology	http://www.inoh.org	resource/imr/imr.md
 indra	INDRA	Aggregator	https://www.indra.bio/	resource/indra/indra.md
 ino	Interaction Network Ontology	Ontology	https://github.com/INO-ontology/ino	resource/ino/ino.md

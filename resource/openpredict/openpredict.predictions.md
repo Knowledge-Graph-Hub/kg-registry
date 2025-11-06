@@ -7,5 +7,8 @@ name: OpenPredict Prediction Data
 original_source:
 - openpredict
 product_url: https://openpredict.semanticscience.org/
+warnings:
+- File was not able to be retrieved when checked on 2025-11-05_ HTTP 405 error when
+  accessing file
 layout: product_detail
 ---

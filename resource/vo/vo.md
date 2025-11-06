@@ -29,8 +29,10 @@ products:
   format: owl
   id: vo.owl
   name: vo.owl
-  product_file_size: 1489134
   product_url: http://purl.obolibrary.org/obo/vo.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-06: Timeout connecting
+    to URL'
 - category: GraphProduct
   description: PheKnowLator graph files, including subsets with and without inverse
     relations.

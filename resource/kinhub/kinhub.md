@@ -10,11 +10,31 @@ id: kinhub
 last_modified_date: '2025-11-05T00:00:00Z'
 layout: resource_detail
 name: Kinhub
+products:
+- category: GraphicalInterface
+  description: Interactive web interface for exploring and visualizing kinase-substrate
+    interactions
+  format: http
+  id: kinace.portal
+  name: KinAce Web Portal
+  original_source:
+  - phosphositeplus
+  - iptmnet
+  - uniprot
+  - epsd
+  - kinhub
+  - coralkinome
+  - darkkinasekb
+  - hgnc
+  - kegg
+  - interpro
+  product_url: https://kinace.kinametrix.com/
+  secondary_source:
+  - kinace
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information
   about this resource.
 ---
-
 # Kinhub
 
 This is an automatically generated stub page for kinhub. Please update with proper information.

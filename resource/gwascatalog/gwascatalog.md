@@ -67,11 +67,11 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.json
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-11-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-06: HTTP 404 error
     when accessing file'
 - category: Product
   description: Study metadata file containing per-study information for GWAS Catalog
@@ -93,11 +93,11 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-variants.tsv
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-11-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-06: HTTP 404 error
     when accessing file'
 - category: Product
   description: EFO trait mapping file linking GWAS Catalog reported traits to Experimental
@@ -109,11 +109,11 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-11-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-06: HTTP 404 error
     when accessing file'
 - category: Product
   description: RDF/OWL representation of GWAS Catalog associations enabling semantic
@@ -125,11 +125,11 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations.owl.gz
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-11-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-06: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
   description: Compressed GWAS Catalog diagram (karyotype visualization) in SVG format
@@ -141,11 +141,11 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram.svg
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-11-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-06: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
   description: Archive of previous GWAS Catalog diagram versions (SVG format)
@@ -156,11 +156,11 @@ products:
   - gwascatalog
   product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-diagram-archive.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-11-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-06: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
   description: Harmonised summary statistics landing page (FTP directory containing
@@ -171,11 +171,11 @@ products:
   - gwascatalog
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/
   warnings:
-  - File was not able to be retrieved when checked on 2025-10-31_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
   - File was not able to be retrieved when checked on 2025-11-04_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
-  - 'File was not able to be retrieved when checked on 2025-11-05: Error connecting
+  - File was not able to be retrieved when checked on 2025-11-05_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'
+  - 'File was not able to be retrieved when checked on 2025-11-06: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/'''
 - category: GraphProduct
   description: GWASCatalog Automat
@@ -464,11 +464,11 @@ products:
   - gwascatalog
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-05_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-11-04_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-10-31_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-05: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-06: HTTP 403 error
     when accessing file'
 ---
 ## Overview

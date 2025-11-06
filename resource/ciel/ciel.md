@@ -85,7 +85,9 @@ products:
   secondary_source:
   - athena
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-05: Error connecting
+  - File was not able to be retrieved when checked on 2025-11-05_ Error connecting
+    to URL_ Exceeded 30 redirects.
+  - 'File was not able to be retrieved when checked on 2025-11-06: Error connecting
     to URL: Exceeded 30 redirects.'
 synonyms:
 - CIEL

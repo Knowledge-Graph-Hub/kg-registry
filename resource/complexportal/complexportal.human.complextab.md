@@ -6,9 +6,9 @@ id: complexportal.human.complextab
 name: Complex Portal Human ComplexTAB
 product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/homo_sapiens.tsv
 warnings:
-- File was not able to be retrieved when checked on 2025-11-04_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-11-05_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-11-04_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

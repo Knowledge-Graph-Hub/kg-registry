@@ -9,9 +9,9 @@ original_source:
 - gwascatalog
 product_url: https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-traits-efo.tsv
 warnings:
-- File was not able to be retrieved when checked on 2025-11-04_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-11-05_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-10-31_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-11-04_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---
