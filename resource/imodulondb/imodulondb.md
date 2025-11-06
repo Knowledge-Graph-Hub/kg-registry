@@ -64,8 +64,40 @@ products:
       - imodulondb
     product_url: https://imodulondb.org/
 publications:
-  - id: "https://doi.org/10.1093/nar/gkae1009"
-  - id: "https://doi.org/10.1093/nar/gkaa810"
+- authors:
+  - Catoiu EA
+  - Krishnan J
+  - Li G
+  - Lou XA
+  - Rychel K
+  - Yuan Y
+  - Bajpe H
+  - Patel A
+  - Choe D
+  - Shin J
+  - Decker KT
+  - Chauhan SM
+  - Phaneuf PV
+  - Palsson BO
+  doi: doi:10.1093/nar/gkae1009
+  id: https://doi.org/10.1093/nar/gkae1009
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'iModulonDB 2.0: dynamic tools to facilitate knowledge-mining and user-enabled analyses of curated transcriptomic datasets'
+  year: '2025'
+- authors:
+  - Rychel K
+  - Decker K
+  - Sastry AV
+  - Phaneuf PV
+  - Poudel S
+  - Palsson BO
+  doi: doi:10.1093/nar/gkaa810
+  id: https://doi.org/10.1093/nar/gkaa810
+  journal: Nucleic Acids Research
+  preferred: false
+  title: 'iModulonDB: a knowledgebase of microbial transcriptional regulation derived from machine learning'
+  year: '2021'
 repository: https://github.com/SBRG/iModulonMiner
 taxon:
   - NCBITaxon:2
