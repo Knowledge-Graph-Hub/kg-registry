@@ -31,7 +31,7 @@ products:
   format: owl
   id: mcro.owl
   name: mcro.owl
-  product_file_size: 7917
+  product_file_size: 7910
   product_url: http://purl.obolibrary.org/obo/mcro.owl
 repository: https://github.com/UTHealth-Ontology/MCRO
 ---

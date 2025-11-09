@@ -93,6 +93,7 @@ ctd,active,PASS
 cteno,active,PASS
 cto,active,PASS
 cvdo,active,PASS
+dailymed,active,PASS
 darkkinasekb,active,PASS
 dbsnp,active,PASS
 dc,active,PASS
@@ -167,6 +168,7 @@ gallont,active,PASS
 gdsc,active,PASS
 gecko,active,PASS
 genage,active,PASS
+gencc,active,PASS
 gencode,active,PASS
 gendr,active,PASS
 genecards,active,PASS
@@ -248,6 +250,7 @@ labo,active,PASS
 lepao,active,PASS
 lincs,active,PASS
 lincs-l1000,active,PASS
+litvar,active,PASS
 lncbase,active,PASS
 lncbook,active,PASS
 lncipedia,active,PASS
@@ -263,6 +266,7 @@ mechreponet,active,PASS
 medgen,active,PASS
 medi,active,PASS
 medkg,active,PASS
+medlineplus,active,PASS
 mesh,active,PASS
 metacyc,active,PASS
 metanetx,active,PASS
@@ -423,6 +427,7 @@ robokop,active,PASS
 rs,active,PASS
 rtx-kg2,active,PASS
 rxno,active,PASS
+rxnorm,active,PASS
 sbo,active,PASS
 scdo,active,PASS
 scibite,active,PASS
@@ -461,6 +466,7 @@ t4fs,active,PASS
 tair,active,PASS
 tarbase,active,PASS
 taxrank,active,PASS
+tcga,active,PASS
 tera,active,PASS
 text-mining-kp,active,PASS
 tissues,active,PASS

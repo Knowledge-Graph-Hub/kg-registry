@@ -44,11 +44,11 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-04_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-11-05_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-11-06: No Content-Length
+  - File was not able to be retrieved when checked on 2025-11-06_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-11-09: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -65,11 +65,11 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-04_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-11-05_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-11-06: No Content-Length
+  - File was not able to be retrieved when checked on 2025-11-06_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-11-09: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -87,13 +87,13 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-04_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-11-05_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-11-05_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-11-06_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-11-06: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-11-09: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph

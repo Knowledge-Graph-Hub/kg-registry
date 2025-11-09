@@ -30,42 +30,42 @@ products:
   format: owl
   id: vbo.owl
   name: vbo.owl
-  product_file_size: 1966384
+  product_file_size: 2077292
   product_url: http://purl.obolibrary.org/obo/vbo.owl
 - category: OntologyProduct
   description: Vertebrate Breed Ontology in OBO format
   format: obo
   id: vbo.obo
   name: vbo.obo
-  product_file_size: 908449
+  product_file_size: 990658
   product_url: http://purl.obolibrary.org/obo/vbo.obo
 - category: OntologyProduct
   description: Vertebrate Breed Ontology in JSON format
   format: json
   id: vbo.json
   name: vbo.json
-  product_file_size: 1082463
+  product_file_size: 1205306
   product_url: http://purl.obolibrary.org/obo/vbo.json
 - category: OntologyProduct
   description: Vertebrate Breed Ontology in OWL format
   format: owl
   id: vbo.vbo-base.owl
   name: vbo.vbo-base.owl
-  product_file_size: 1906676
+  product_file_size: 2016216
   product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.owl
 - category: OntologyProduct
   description: Vertebrate Breed Ontology in OBO format
   format: obo
   id: vbo.vbo-base.obo
   name: vbo.vbo-base.obo
-  product_file_size: 876337
+  product_file_size: 958659
   product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.obo
 - category: OntologyProduct
   description: Vertebrate Breed Ontology in JSON format
   format: json
   id: vbo.vbo-base.json
   name: vbo.vbo-base.json
-  product_file_size: 1032398
+  product_file_size: 1154978
   product_url: http://purl.obolibrary.org/obo/vbo/vbo-base.json
 repository: https://github.com/monarch-initiative/vertebrate-breed-ontology
 ---

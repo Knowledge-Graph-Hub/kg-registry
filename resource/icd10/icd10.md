@@ -162,9 +162,11 @@ products:
   secondary_source:
   - athena
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-06_ Error connecting
+    to URL_ Exceeded 30 redirects.
   - File was not able to be retrieved when checked on 2025-11-05_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - 'File was not able to be retrieved when checked on 2025-11-06: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-09: Error connecting
     to URL: Exceeded 30 redirects.'
 warnings:
 - This is an automatically generated stub page. Please replace with accurate information

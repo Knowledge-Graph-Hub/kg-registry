@@ -9,9 +9,9 @@ original_source:
 - go
 product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
 warnings:
-- File was not able to be retrieved when checked on 2025-11-05_ Error connecting to
+- File was not able to be retrieved when checked on 2025-11-06_ Error connecting to
   URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
-- File was not able to be retrieved when checked on 2025-11-04_ Error connecting to
+- File was not able to be retrieved when checked on 2025-11-05_ Error connecting to
   URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
 layout: product_detail
 ---

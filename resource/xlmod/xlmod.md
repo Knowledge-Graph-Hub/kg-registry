@@ -31,7 +31,7 @@ products:
   format: obo
   id: xlmod.obo
   name: xlmod.obo
-  product_file_size: 55423
+  product_file_size: 55708
   product_url: http://purl.obolibrary.org/obo/xlmod.obo
 - category: OntologyProduct
   description: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
@@ -39,7 +39,7 @@ products:
   format: owl
   id: xlmod.owl
   name: xlmod.owl
-  product_file_size: 95212
+  product_file_size: 95504
   product_url: http://purl.obolibrary.org/obo/xlmod.owl
 repository: https://github.com/HUPO-PSI/xlmod-CV
 ---

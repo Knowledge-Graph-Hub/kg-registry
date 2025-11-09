@@ -221,7 +221,7 @@ kinhub	Kinhub	DataSource		resource/kinhub/kinhub.md
 kisao	Kinetic Simulation Algorithm Ontology	Ontology	https://github.com/SED-ML/KiSAO	resource/kisao/kisao.md
 labo	clinical LABoratory Ontology	Ontology	https://github.com/OpenLHS/LABO	resource/labo/labo.md
 lepao	Lepidoptera Anatomy Ontology	Ontology	https://github.com/insect-morphology/lepao	resource/lepao/lepao.md
-lincs-l1000	Lincs-l1000	DataSource		resource/lincs-l1000/lincs-l1000.md
+lincs-l1000	LINCS L1000	DataSource	https://lincsproject.org/LINCS/	resource/lincs-l1000/lincs-l1000.md
 lipro	Lipid Ontology	Ontology		resource/lipro/lipro.md
 lncbase	Lncbase	DataSource		resource/lncbase/lncbase.md
 lncbook	LncBook	DataSource	https://ngdc.cncb.ac.cn/lncbook/home	resource/lncbook/lncbook.md

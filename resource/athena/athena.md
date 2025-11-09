@@ -45,7 +45,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-05_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - 'File was not able to be retrieved when checked on 2025-11-06: Error connecting
+  - File was not able to be retrieved when checked on 2025-11-06_ Error connecting
+    to URL_ Exceeded 30 redirects.
+  - 'File was not able to be retrieved when checked on 2025-11-09: Error connecting
     to URL: Exceeded 30 redirects.'
 - category: MappingProduct
   description: Concept mappings between different terminology systems
@@ -66,7 +68,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-05_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - 'File was not able to be retrieved when checked on 2025-11-06: Error connecting
+  - File was not able to be retrieved when checked on 2025-11-06_ Error connecting
+    to URL_ Exceeded 30 redirects.
+  - 'File was not able to be retrieved when checked on 2025-11-09: Error connecting
     to URL: Exceeded 30 redirects.'
 synonyms:
 - Athena
