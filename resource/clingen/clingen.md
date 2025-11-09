@@ -23,31 +23,30 @@ license:
   label: CC0 1.0
 name: ClinGen
 products:
-  - category: DataProduct
+  - category: Product
     description: ClinGen Gene-Disease Validity curations assess the strength of evidence supporting or refuting a gene's role in a given disease. These curations classify evidence as Definitive, Strong, Moderate, Limited, No Reported Evidence, or Disputed.
     format: csv
     id: clingen.gene-disease
     name: Gene-Disease Validity Curations
     product_url: https://search.clinicalgenome.org/kb/gene-validity
-  - category: DataProduct
+  - category: Product
     description: ClinGen Dosage Sensitivity curations evaluate whether genes and genomic regions are sensitive to copy number variation. These curations determine if haploinsufficiency (loss of one copy) or triplosensitivity (gain of one copy) of a gene/region causes disease.
     format: tsv
     id: clingen.dosage
     name: Dosage Sensitivity Curations
     product_url: https://search.clinicalgenome.org/kb/gene-dosage
-  - category: DataProduct
+  - category: Product
     description: ClinGen Clinical Actionability evaluations assess the clinical actions available to manage risk for patients with specific genetic disorders. These curations score the actionability of gene-disease pairs based on severity, likelihood of disease, efficacy of interventions, and knowledge base.
     format: tsv
     id: clingen.actionability
     name: Clinical Actionability Curations
     product_url: https://search.clinicalgenome.org/kb/actionability
-  - category: DataProduct
+  - category: Product
     description: ClinGen Variant Pathogenicity curations assess the clinical significance of genetic variants based on ACMG/AMP guidelines. Expert panels classify variants as Pathogenic, Likely Pathogenic, Uncertain Significance, Likely Benign, or Benign.
     format: csv
     id: clingen.variant
     name: Variant Pathogenicity Curations
     product_url: https://search.clinicalgenome.org/kb/variant-pathogenicity/all
-    warnings: []
   - category: ProgrammingInterface
     description: REST API providing access to ClinGen's Evidence Repository for variant pathogenicity assessments. Allows programmatic retrieval of structured evidence used to evaluate the clinical significance of genetic variants.
     id: clingen.evrepo.api
