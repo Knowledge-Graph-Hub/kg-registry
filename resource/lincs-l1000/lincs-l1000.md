@@ -29,7 +29,7 @@ products:
     id: "lincs-l1000.clue"
     name: CLUE Platform
     product_url: https://clue.io
-  - category: DataDeposit
+  - category: Product
     description: LINCS L1000 data deposited in the Gene Expression Omnibus, including raw and processed gene expression data at multiple levels of preprocessing for all 1.3+ million profiles.
     format: http
     id: "lincs-l1000.geo"
