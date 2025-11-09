@@ -13,7 +13,7 @@ domains:
   - drug discovery
 homepage_url: https://lincsproject.org/LINCS/
 id: "lincs-l1000"
-last_modified_date: '2025-01-08T00:00:00Z'
+last_modified_date: '2025-11-08T00:00:00Z'
 layout: resource_detail
 name: LINCS L1000
 products:
