@@ -31,14 +31,14 @@ products:
   format: owl
   id: mi.owl
   name: mi.owl
-  product_file_size: 247560
+  product_file_size: 248647
   product_url: http://purl.obolibrary.org/obo/mi.owl
 - category: OntologyProduct
   description: Molecular Interactions Controlled Vocabulary in OBO format
   format: obo
   id: mi.obo
   name: mi.obo
-  product_file_size: 168748
+  product_file_size: 169690
   product_url: http://purl.obolibrary.org/obo/mi.obo
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

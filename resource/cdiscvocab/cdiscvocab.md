@@ -41,7 +41,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-06_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-09: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-11-09_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-10: HTTP 403 error
     when accessing file'
 - category: Product
   description: Clinical Data Acquisition Standards Harmonization controlled terminology
@@ -55,7 +57,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-06_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-09: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-11-09_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-10: HTTP 403 error
     when accessing file'
 - category: Product
   description: Analysis Data Model controlled terminology for efficient generation,
@@ -69,7 +73,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-06_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-09: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-11-09_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-10: HTTP 403 error
     when accessing file'
 - category: Product
   description: Standard for Exchange of Nonclinical Data controlled terminology for
@@ -83,7 +89,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-06_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-09: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-11-09_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-10: HTTP 403 error
     when accessing file'
 - category: Product
   description: Define-XML controlled terminology providing enumeration values for
@@ -97,7 +105,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-06_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-09: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-11-09_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-10: HTTP 403 error
     when accessing file'
 - category: Product
   description: Protocol Representation Model controlled terminology for commonly used
@@ -111,7 +121,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-06_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-09: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-11-09_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-10: HTTP 403 error
     when accessing file'
 - category: Product
   description: CDISC Glossary controlled terminology harmonizing definitions, acronyms,
@@ -125,7 +137,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-06_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-09: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-11-09_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-10: HTTP 403 error
     when accessing file'
 - category: Product
   description: Digital Data Flow controlled terminology for study definition reference
@@ -139,7 +153,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-06_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-09: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-11-09_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-10: HTTP 403 error
     when accessing file'
 - category: Product
   description: Trial Master File controlled terminology for standardized structure,
@@ -153,7 +169,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-06_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-09: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-11-09_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-10: HTTP 403 error
     when accessing file'
 - category: Product
   description: MRCT Center Clinical Research Glossary controlled terminology with
@@ -167,7 +185,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-06_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-09: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-11-09_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-10: HTTP 403 error
     when accessing file'
 - category: GraphicalInterface
   description: NCI Enterprise Vocabulary Services browser for exploring and searching
@@ -195,11 +215,11 @@ products:
   secondary_source:
   - athena
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-09_ Error connecting
+    to URL_ Exceeded 30 redirects.
   - File was not able to be retrieved when checked on 2025-11-06_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - File was not able to be retrieved when checked on 2025-11-05_ Error connecting
-    to URL_ Exceeded 30 redirects.
-  - 'File was not able to be retrieved when checked on 2025-11-09: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-10: Error connecting
     to URL: Exceeded 30 redirects.'
 synonyms:
 - CDISC Controlled Terminology

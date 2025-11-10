@@ -348,6 +348,7 @@ phipo	Pathogen Host Interaction Phenotype Ontology	Ontology	https://github.com/P
 phosphositeplus	PhosphoSitePlus	Aggregator	https://www.phosphosite.org/	resource/phosphositeplus/phosphositeplus.md
 pid	Pid	DataSource		resource/pid/pid.md
 pirbase	piRBase	Aggregator	http://bigdata.ibp.ac.cn/piRBase	resource/pirbase/pirbase.md
+pistoia-pgo	Pistoia Alliance Pharma General Ontology	Ontology	https://pistoia-alliance-inc.github.io/Pistoia-Alliance-PGO/	resource/pistoia-pgo/pistoia-pgo.md
 plana	planaria-ontology	Ontology	https://github.com/obophenotype/planaria-ontology	resource/plana/plana.md
 planp	Planarian Phenotype Ontology	Ontology	https://github.com/obophenotype/planarian-phenotype-ontology	resource/planp/planp.md
 plncdb	Plncdb	DataSource		resource/plncdb/plncdb.md
