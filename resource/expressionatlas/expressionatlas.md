@@ -1,6 +1,19 @@
 ---
 activity_status: active
 category: Aggregator
+contacts:
+  - category: Organization
+    label: European Bioinformatics Institute (EMBL-EBI)
+    contact_details:
+      - contact_type: url
+        value: "https://www.ebi.ac.uk/about/contact"
+      - contact_type: email
+        value: "atlas-help@ebi.ac.uk"
+  - category: Individual
+    label: Irene Papatheodorou
+    contact_details:
+      - contact_type: other
+        value: "Lead, Gene Expression Team, EMBL-EBI"
 creation_date: '2025-09-09T00:00:00Z'
 description: Expression Atlas is EMBL-EBI's open science resource that provides information
   about gene and protein expression across species and biological conditions. It aggregates,
@@ -15,7 +28,7 @@ domains:
 - organisms
 homepage_url: https://www.ebi.ac.uk/gxa/home
 id: expressionatlas
-last_modified_date: '2025-10-09T00:00:00Z'
+last_modified_date: '2025-11-10T00:00:00Z'
 layout: resource_detail
 license:
   id: https://creativecommons.org/licenses/by/4.0/
@@ -52,20 +65,6 @@ products:
   name: Expression Atlas FTP (Bulk Data)
   product_url: https://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/experiments/
 - category: Product
-  description: FTP archive containing single-cell RNA-seq processed data, cell metadata,
-    and clustering results
-  format: http
-  id: expressionatlas.ftp-single-cell
-  name: Expression Atlas FTP (Single Cell Data)
-  product_url: https://ftp.ebi.ac.uk/pub/databases/single-cell/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-06_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-11-09_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-10: HTTP 404 error
-    when accessing file'
-- category: Product
   description: Individual experiment data downloads in TSV format containing expression
     matrices and statistical results
   format: tsv
@@ -79,13 +78,6 @@ products:
   id: expressionatlas.r-objects
   name: Expression Atlas R Data Objects
   product_url: https://www.ebi.ac.uk/gxa/help/r-data-objects.html
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-06_ HTTP 500 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-11-09_ HTTP 500 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-10: HTTP 500 error
-    when accessing file'
 - category: Product
   description: Baseline expression summary data across human tissues and cell types
     from GTEx, Human Protein Atlas and other major studies
