@@ -11,6 +11,54 @@
   top: 20px;
 }
 
+/* Resource selector */
+#resource-selector {
+  height: 200px;
+  font-size: 0.9rem;
+}
+
+#resource-selector option {
+  padding: 5px;
+}
+
+/* Active resources badges */
+#active-resources-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#active-resources-list .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 8px;
+  cursor: default;
+}
+
+#active-resources-list .badge .btn-close {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  width: 12px;
+  height: 12px;
+}
+
+/* Display options */
+.form-check {
+  cursor: pointer;
+}
+
+.form-check-input {
+  cursor: pointer;
+}
+
+.form-check-label {
+  cursor: pointer;
+}
+
 .node {
   cursor: pointer;
   stroke: #fff;

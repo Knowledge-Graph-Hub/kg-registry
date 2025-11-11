@@ -18,23 +18,31 @@ layout: default
   <div class="col-lg-3">
     <div class="card mb-4">
       <div class="card-header">
-        <h3>Controls</h3>
+        <h3>Resource Selection</h3>
       </div>
       <div class="card-body">
         <div class="mb-3">
-          <label for="node-type-filter" class="form-label">Filter by Node Type:</label>
-          <select id="node-type-filter" class="form-select">
-            <option value="all" selected>All Types</option>
+          <label for="resource-selector" class="form-label">Select Resource(s):</label>
+          <select id="resource-selector" class="form-select" size="8" multiple>
+            <option value="" disabled>Loading resources...</option>
           </select>
+          <small class="form-text text-muted">Hold Ctrl/Cmd to select multiple resources</small>
         </div>
         <div class="mb-3">
-          <label for="search-input" class="form-label">Search Nodes:</label>
-          <input type="text" id="search-input" class="form-control" placeholder="Enter node name or ID">
+          <label for="search-input" class="form-label">Search Resources:</label>
+          <input type="text" id="search-input" class="form-control" placeholder="Filter resources by name">
         </div>
         <div class="mb-3">
-          <div class="btn-group w-100" role="group">
-            <button id="reset-graph" class="btn btn-primary">Reset Graph</button>
-            <button id="kgs-only" class="btn btn-outline-primary">KGs Only</button>
+          <button id="add-resource" class="btn btn-primary w-100">Add Selected Resources</button>
+        </div>
+        <div class="mb-3">
+          <button id="clear-graph" class="btn btn-outline-secondary w-100">Clear Graph</button>
+        </div>
+        
+        <div class="mt-3">
+          <strong>Active Resources:</strong>
+          <div id="active-resources-list" class="mt-2">
+            <small class="text-muted">No resources selected. Choose resources above to visualize their connections.</small>
           </div>
         </div>
         
@@ -43,6 +51,32 @@ layout: default
             <span id="node-count">0</span> nodes / 
             <span id="edge-count">0</span> edges
           </small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3>Display Options</h3>
+      </div>
+      <div class="card-body">
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="show-products" checked>
+          <label class="form-check-label" for="show-products">
+            Show Products
+          </label>
+        </div>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="show-domain-connections">
+          <label class="form-check-label" for="show-domain-connections">
+            Show Domain Connections
+          </label>
+        </div>
+        <div class="mb-3">
+          <label for="node-type-filter" class="form-label">Filter Node Types:</label>
+          <select id="node-type-filter" class="form-select">
+            <option value="all" selected>All Types</option>
+          </select>
         </div>
       </div>
     </div>
