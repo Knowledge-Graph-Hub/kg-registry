@@ -210,12 +210,13 @@ function addResourcesToGraph(resourceIds) {
       type: resource.category || 'Resource',
       description: resource.description || '',
       url: resource.homepage_url || '',
-      domains: resource.domains || []
+      domains: resource.domains || [],
+      isUserSelected: true // Mark as user-selected for highlighting
     };
     
     displayedGraph.nodes.push(resourceNode);
     
-    // Add products if enabled
+    // Add products if enabled (but NOT their connected resources automatically)
     if (showProducts && resource.products && Array.isArray(resource.products)) {
       resource.products.forEach((product, index) => {
         if (!product.category) return;
@@ -232,7 +233,8 @@ function addResourcesToGraph(resourceIds) {
           name: product.description || productId,
           type: product.category,
           url: product.product_url || '',
-          parentId: resource.id
+          parentId: resource.id,
+          isUserSelected: false
         };
         
         displayedGraph.nodes.push(productNode);
@@ -244,16 +246,11 @@ function addResourcesToGraph(resourceIds) {
           type: 'has_product'
         });
         
-        // Add links to original sources
+        // CHANGED: Don't automatically add connected resources
+        // Instead, only add links to resources that are already in the graph
         if (product.original_source && Array.isArray(product.original_source)) {
           product.original_source.forEach(sourceId => {
-            if (!displayedGraph.nodes.find(n => n.id === sourceId)) {
-              // Add referenced resource if it exists
-              if (allResourceMap[sourceId]) {
-                addResourcesToGraph([sourceId]);
-              }
-            }
-            
+            // Only create link if the source resource is already in the graph
             if (displayedGraph.nodes.find(n => n.id === sourceId)) {
               displayedGraph.links.push({
                 source: productId,
@@ -266,15 +263,10 @@ function addResourcesToGraph(resourceIds) {
       });
     }
     
-    // Add component relationships
+    // Add component relationships (only if components are already in graph)
     if (resource.components && Array.isArray(resource.components)) {
       resource.components.forEach(componentId => {
-        if (!displayedGraph.nodes.find(n => n.id === componentId)) {
-          if (allResourceMap[componentId]) {
-            addResourcesToGraph([componentId]);
-          }
-        }
-        
+        // Only create link if the component is already in the graph
         if (displayedGraph.nodes.find(n => n.id === componentId)) {
           displayedGraph.links.push({
             source: resource.id,
@@ -417,6 +409,8 @@ function updateGraph() {
     .append('circle')
     .attr('r', config.nodeRadius.default)
     .attr('fill', d => config.colors[d.type] || config.colors.Resource)
+    .attr('stroke', d => d.isUserSelected ? '#000' : '#fff')
+    .attr('stroke-width', d => d.isUserSelected ? 3 : 1.5)
     .call(d3.drag()
       .on('start', dragStarted)
       .on('drag', dragged)
@@ -428,8 +422,11 @@ function updateGraph() {
   
   nodeElements = nodeEnter.merge(nodeElements);
   
-  // Update node colors (in case type changed)
-  nodeElements.attr('fill', d => config.colors[d.type] || config.colors.Resource);
+  // Update node colors and strokes (in case type or selection status changed)
+  nodeElements
+    .attr('fill', d => config.colors[d.type] || config.colors.Resource)
+    .attr('stroke', d => d.isUserSelected ? '#000' : '#fff')
+    .attr('stroke-width', d => d.isUserSelected ? 3 : 1.5);
   
   // Update labels
   textElements = g.selectAll('text')
@@ -660,6 +657,23 @@ function createLegend() {
   const legend = document.getElementById('graph-legend');
   legend.innerHTML = '';
   
+  // Add note about user-selected resources
+  const userSelectedNote = document.createElement('div');
+  userSelectedNote.className = 'legend-item mb-3';
+  userSelectedNote.innerHTML = `
+    <svg width="20" height="20" style="vertical-align: middle;">
+      <circle cx="10" cy="10" r="8" fill="#1f77b4" stroke="#000" stroke-width="3" />
+    </svg>
+    <span class="ms-2"><strong>Bold border = User-selected resource</strong></span>
+  `;
+  legend.appendChild(userSelectedNote);
+  
+  // Add horizontal rule
+  const hr = document.createElement('hr');
+  hr.className = 'my-2';
+  legend.appendChild(hr);
+  
+  // Add node type colors
   Object.entries(config.colors).forEach(([type, color]) => {
     const item = document.createElement('div');
     item.className = 'legend-item mb-2';
