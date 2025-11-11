@@ -496,11 +496,78 @@ function updateActiveResourcesList() {
 }
 
 /**
+ * Calculate the number of connected components in the graph
+ * Uses depth-first search to identify separate subgraphs
+ */
+function calculateConnectedComponents() {
+  if (displayedGraph.nodes.length === 0) {
+    return 0;
+  }
+  
+  const visited = new Set();
+  const adjacencyList = new Map();
+  
+  // Build adjacency list
+  displayedGraph.nodes.forEach(node => {
+    adjacencyList.set(node.id, []);
+  });
+  
+  displayedGraph.links.forEach(link => {
+    const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
+    const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+    
+    if (adjacencyList.has(sourceId)) {
+      adjacencyList.get(sourceId).push(targetId);
+    }
+    if (adjacencyList.has(targetId)) {
+      adjacencyList.get(targetId).push(sourceId);
+    }
+  });
+  
+  // Depth-first search to explore a component
+  function dfs(nodeId) {
+    visited.add(nodeId);
+    const neighbors = adjacencyList.get(nodeId) || [];
+    
+    neighbors.forEach(neighborId => {
+      if (!visited.has(neighborId)) {
+        dfs(neighborId);
+      }
+    });
+  }
+  
+  // Count components
+  let componentCount = 0;
+  
+  displayedGraph.nodes.forEach(node => {
+    if (!visited.has(node.id)) {
+      dfs(node.id);
+      componentCount++;
+    }
+  });
+  
+  return componentCount;
+}
+
+/**
  * Update node and edge counters
  */
 function updateCounters() {
   document.getElementById('node-count').textContent = displayedGraph.nodes.length;
   document.getElementById('edge-count').textContent = displayedGraph.links.length;
+  
+  const componentCount = calculateConnectedComponents();
+  const componentElement = document.getElementById('component-count');
+  const pluralElement = document.getElementById('component-plural');
+  
+  if (componentElement) {
+    componentElement.textContent = componentCount;
+  }
+  
+  // Update plural/singular form
+  if (pluralElement) {
+    pluralElement.textContent = componentCount === 1 ? '' : 's';
+  }
 }
 
 /**
