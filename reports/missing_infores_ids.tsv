@@ -92,7 +92,6 @@ ddanat	Dictyostelium discoideum anatomy	Ontology	http://dictybase.org/	resource/
 ddpheno	Dictyostelium discoideum phenotype ontology	Ontology	http://dictybase.org/	resource/ddpheno/ddpheno.md
 dideo	Drug-drug Interaction and Drug-drug Interaction Evidence Ontology	Ontology	https://github.com/DIDEO/DIDEO	resource/dideo/dideo.md
 dinto	The Drug-Drug Interactions Ontology	Ontology	http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto	resource/dinto/dinto.md
-dip	Dip	DataSource		resource/dip/dip.md
 disdriv	Disease Drivers Ontology	Ontology	https://disease-ontology.org/	resource/disdriv/disdriv.md
 doid	Human Disease Ontology	Ontology	https://disease-ontology.org	resource/doid/doid.md
 dorothea	DoRothEA	KnowledgeGraph	https://saezlab.github.io/dorothea/	resource/dorothea/dorothea.md
@@ -193,7 +192,6 @@ htn	Hypertension Ontology	Ontology	https://github.com/aellenhicks/htn_owl	resour
 hubmap	HuBMAP	Aggregator	https://hubmapconsortium.org/	resource/hubmap/hubmap.md
 humannet	HumanNet	DataSource	https://www.inetbio.org/humannet/	resource/humannet/humannet.md
 iao	Information Artifact Ontology	Ontology	https://github.com/information-artifact-ontology/IAO/	resource/iao/iao.md
-icd10	Icd10	DataSource		resource/icd10/icd10.md
 iceo	Integrative and Conjugative Element Ontology	Ontology	https://github.com/ontoice/ICEO	resource/iceo/iceo.md
 ico	Informed Consent Ontology	Ontology	https://github.com/ICO-ontology/ICO	resource/ico/ico.md
 ido	Infectious Disease Ontology	Ontology	http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology	resource/ido/ido.md
@@ -339,14 +337,14 @@ peco	Plant Experimental Conditions Ontology	Ontology	http://planteome.org/	resou
 petagraph	Petagraph	KnowledgeGraph	https://github.com/TaylorResearchLab/Petagraph	resource/petagraph/petagraph.md
 pgdso	Plant Growth and Development Stage	Ontology	http://www.plantontology.org	resource/pgdso/pgdso.md
 pgo	Pgo	DataSource		resource/pgo/pgo.md
-pharmacodb	Pharmacodb	DataSource		resource/pharmacodb/pharmacodb.md
+pharmacodb	PharmacoDB	DataSource	https://pharmacodb.ca/	resource/pharmacodb/pharmacodb.md
 pharmdb	PharmDB	KnowledgeGraph	http://www.pharmdb-k.org/	resource/pharmdb/pharmdb.md
 pharmkg	PharmKG	KnowledgeGraph	https://github.com/MindRank-Biotech/PharmKG	resource/pharmkg/pharmkg.md
 pheknowlator	PheKnowLator	KnowledgeGraph	https://github.com/callahantiff/PheKnowLator	resource/pheknowlator/pheknowlator.md
 phewascat	PheWAS Catalog	Aggregator	https://phewascatalog.org/phewas/#home	resource/phewascat/phewascat.md
 phipo	Pathogen Host Interaction Phenotype Ontology	Ontology	https://github.com/PHI-base/phipo	resource/phipo/phipo.md
 phosphositeplus	PhosphoSitePlus	Aggregator	https://www.phosphosite.org/	resource/phosphositeplus/phosphositeplus.md
-pid	Pid	DataSource		resource/pid/pid.md
+pid	Pathway Interaction Database	DataSource	http://pid.nci.nih.gov/	resource/pid/pid.md
 pirbase	piRBase	Aggregator	http://bigdata.ibp.ac.cn/piRBase	resource/pirbase/pirbase.md
 pistoia-pgo	Pistoia Alliance Pharma General Ontology	Ontology	https://pistoia-alliance-inc.github.io/Pistoia-Alliance-PGO/	resource/pistoia-pgo/pistoia-pgo.md
 plana	planaria-ontology	Ontology	https://github.com/obophenotype/planaria-ontology	resource/plana/plana.md

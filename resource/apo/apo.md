@@ -29,14 +29,14 @@ products:
   format: owl
   id: apo.owl
   name: apo.owl
-  product_file_size: 32488
+  product_file_size: 32489
   product_url: http://purl.obolibrary.org/obo/apo.owl
 - category: OntologyProduct
   description: Ascomycete phenotype ontology in OBO format
   format: obo
   id: apo.obo
   name: apo.obo
-  product_file_size: 16797
+  product_file_size: 16798
   product_url: http://purl.obolibrary.org/obo/apo.obo
 repository: https://github.com/obophenotype/ascomycete-phenotype-ontology
 taxon:

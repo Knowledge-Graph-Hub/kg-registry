@@ -2,18 +2,18 @@
 activity_status: active
 category: Aggregator
 contacts:
-  - category: Organization
-    label: European Bioinformatics Institute (EMBL-EBI)
-    contact_details:
-      - contact_type: url
-        value: "https://www.ebi.ac.uk/about/contact"
-      - contact_type: email
-        value: "atlas-help@ebi.ac.uk"
-  - category: Individual
-    label: Irene Papatheodorou
-    contact_details:
-      - contact_type: other
-        value: "Lead, Gene Expression Team, EMBL-EBI"
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.ebi.ac.uk/about/contact
+  - contact_type: email
+    value: atlas-help@ebi.ac.uk
+  label: European Bioinformatics Institute (EMBL-EBI)
+- category: Individual
+  contact_details:
+  - contact_type: other
+    value: Lead, Gene Expression Team, EMBL-EBI
+  label: Irene Papatheodorou
 creation_date: '2025-09-09T00:00:00Z'
 description: Expression Atlas is EMBL-EBI's open science resource that provides information
   about gene and protein expression across species and biological conditions. It aggregates,
@@ -78,6 +78,9 @@ products:
   id: expressionatlas.r-objects
   name: Expression Atlas R Data Objects
   product_url: https://www.ebi.ac.uk/gxa/help/r-data-objects.html
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-11: HTTP 500 error
+    when accessing file'
 - category: Product
   description: Baseline expression summary data across human tissues and cell types
     from GTEx, Human Protein Atlas and other major studies

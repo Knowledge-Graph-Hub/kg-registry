@@ -8,9 +8,9 @@ original_source:
 - athena
 product_url: https://athena.ohdsi.org/vocabulary/list
 warnings:
-- File was not able to be retrieved when checked on 2025-11-09_ Error connecting to
+- File was not able to be retrieved when checked on 2025-11-10_ Error connecting to
   URL_ Exceeded 30 redirects.
-- File was not able to be retrieved when checked on 2025-11-06_ Error connecting to
+- File was not able to be retrieved when checked on 2025-11-09_ Error connecting to
   URL_ Exceeded 30 redirects.
 layout: product_detail
 ---

@@ -75,6 +75,7 @@ clo,active,PASS
 clue,active,PASS
 clyh,active,PASS
 cm4ai_talent_kg,active,PASS
+cmap,active,PASS
 cmo,active,PASS
 cob,active,PASS
 cohd,active,PASS
@@ -92,6 +93,7 @@ cro,active,PASS
 ctd,active,PASS
 cteno,active,PASS
 cto,active,PASS
+ctrp,active,PASS
 cvdo,active,PASS
 dailymed,active,PASS
 darkkinasekb,active,PASS
@@ -373,7 +375,6 @@ peco,active,PASS
 petagraph,active,PASS
 pfam,active,PASS
 pfocr,active,PASS
-pgo,active,PASS
 pgxmine,active,PASS
 pharmacodb,active,PASS
 pharmacotherapydb,active,PASS
@@ -385,7 +386,6 @@ phenio,active,PASS
 phewascat,active,PASS
 phipo,active,PASS
 phosphositeplus,active,PASS
-pid,active,PASS
 pirbase,active,PASS
 pistoia-pgo,active,PASS
 plana,active,PASS
@@ -396,6 +396,7 @@ pombase,active,PASS
 poro,active,PASS
 ppo,active,PASS
 pr,active,PASS
+preppi,active,PASS
 primekg,active,PASS
 prism,active,PASS
 proco,active,PASS
@@ -468,6 +469,7 @@ tair,active,PASS
 tarbase,active,PASS
 taxrank,active,PASS
 tcga,active,PASS
+tcrd,active,PASS
 tera,active,PASS
 text-mining-kp,active,PASS
 tissues,active,PASS
@@ -583,6 +585,7 @@ pd_st,inactive,PASS
 pdumdv,inactive,PASS
 pgdso,inactive,PASS
 pharmdb,orphaned,PASS
+pid,inactive,PASS
 plo,inactive,PASS
 propreo,inactive,PASS
 psygenet,inactive,PASS
