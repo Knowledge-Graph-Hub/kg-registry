@@ -1,48 +1,49 @@
 ---
-activity_status: unknown
+activity_status: active
 category: DataSource
-creation_date: '2025-10-30T00:00:00Z'
-description: Information resource for PrePPI
+contacts:
+  - category: Organization
+    label: Honig Laboratory
+    contact_details:
+      - contact_type: url
+        value: "http://wiki.c2b2.columbia.edu/honiglab_public/index.php/Main_Page"
+  - category: Individual
+    label: Barry Honig
+    contact_details:
+      - contact_type: other
+        value: "Professor, Columbia University Department of Biochemistry and Molecular Biophysics"
+creation_date: '2025-11-10T00:00:00Z'
+description: >
+  PrePPI (Predicting Protein-Protein Interactions) is a computational structure-based database of predicted protein-protein interactions for the human proteome, developed by the Honig Laboratory at Columbia University. The database employs a Bayesian framework that integrates structural information with non-structural supporting evidence to predict protein-protein interactions. PrePPI uses structural modeling to generate putative protein interaction interfaces, scores these structural models, and combines the structural scores with functional clues and other evidence sources to produce confidence scores for predicted interactions. The database provides comprehensive coverage of the human interactome, going beyond experimentally determined interactions to include computationally predicted interactions with varying levels of confidence. PrePPI is particularly valuable for identifying novel protein interactions that may not yet have been experimentally validated but show promise based on structural compatibility and functional context. Users can query the database by entering UniProt accession numbers or common gene/protein names to retrieve interaction partners and supporting evidence. The resource includes a high-confidence interactome subset that can be downloaded, representing predictions with the strongest supporting evidence. PrePPI complements experimental protein interaction databases by providing structure-based predictions that can guide experimental validation efforts and
+  inform systems biology studies of protein interaction networks. The database is freely accessible through a web interface that allows interactive exploration of predicted interactions and their confidence scores.
 domains:
-  - stub
-id: preppi
-infores_id: preppi
-last_modified_date: '2025-10-30T00:00:00Z'
+- proteomics
+- chemistry and biochemistry
+id: "preppi"
+infores_id: "preppi"
+last_modified_date: '2025-11-10T00:00:00Z'
 layout: resource_detail
 name: PrePPI
 homepage_url: https://honiglab.c2b2.columbia.edu/PrePPI/
+products:
+  - category: GraphicalInterface
+    description: Web search interface for querying PrePPI predicted protein-protein interactions by UniProt accession or gene name
+    id: preppi.search
+    name: PrePPI Search Interface
+    product_url: https://honiglab.c2b2.columbia.edu/PrePPI/
+  - category: Product
+    description: High-confidence PrePPI interactome dataset for download
+    format: txt
+    id: preppi.download
+    name: PrePPI High-Confidence Interactome
+    original_source:
+      - preppi
+    product_url: https://honiglab.c2b2.columbia.edu/PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
+publications:
+  - id: "doi:10.1016/j.jmb.2023.168052"
+    doi: "10.1016/j.jmb.2023.168052"
+    title: "PrePPI: a structure-informed database of protein-protein interactions"
 synonyms:
   - PrePPI
+  - Predicting Protein-Protein Interactions
 ---
-
-# PrePPI
-
-## Overview
-
-Information resource for PrePPI
-
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
-
-## Information Resource ID
-
-This resource has the Information Resource identifier: `infores:preppi`
-
-## Curation Status
-
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
-
-## What Needs to be Curated
-
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
-
-## Additional Notes
