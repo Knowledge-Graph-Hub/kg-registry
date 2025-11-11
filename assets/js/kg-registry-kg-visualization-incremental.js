@@ -418,6 +418,11 @@ function updateGraph() {
     .on('click', (event, d) => {
       event.stopPropagation();
       selectNode(d);
+    })
+    .on('contextmenu', (event, d) => {
+      event.preventDefault();
+      event.stopPropagation();
+      showContextMenu(event, d);
     });
   
   nodeElements = nodeEnter.merge(nodeElements);
@@ -573,6 +578,111 @@ function setupControls() {
 }
 
 /**
+ * Show context menu for a node
+ */
+function showContextMenu(event, node) {
+  const menu = document.getElementById('context-menu');
+  
+  // Position the menu at the cursor
+  menu.style.left = `${event.pageX}px`;
+  menu.style.top = `${event.pageY}px`;
+  menu.style.display = 'block';
+  
+  // Set up expand action
+  const expandItem = document.getElementById('expand-node');
+  expandItem.onclick = () => {
+    expandNode(node);
+    menu.style.display = 'none';
+  };
+  
+  // Set up hide action
+  const hideItem = document.getElementById('hide-node');
+  hideItem.onclick = () => {
+    hideNode(node);
+    menu.style.display = 'none';
+  };
+}
+
+/**
+ * Expand a node by adding all its connected resources
+ */
+function expandNode(node) {
+  // If this is a product node, we can't expand it further (products don't have products)
+  if (node.parentId) {
+    console.log('Products cannot be expanded');
+    return;
+  }
+  
+  const resource = allResourceMap[node.id];
+  if (!resource) {
+    console.warn(`Resource ${node.id} not found for expansion`);
+    return;
+  }
+  
+  const resourcesToAdd = new Set();
+  
+  // Add resources referenced in products' original_source
+  if (showProducts && resource.products && Array.isArray(resource.products)) {
+    resource.products.forEach((product) => {
+      if (product.original_source && Array.isArray(product.original_source)) {
+        product.original_source.forEach(sourceId => {
+          if (allResourceMap[sourceId] && !displayedGraph.nodes.find(n => n.id === sourceId)) {
+            resourcesToAdd.add(sourceId);
+          }
+        });
+      }
+    });
+  }
+  
+  // Add component resources
+  if (resource.components && Array.isArray(resource.components)) {
+    resource.components.forEach(componentId => {
+      if (allResourceMap[componentId] && !displayedGraph.nodes.find(n => n.id === componentId)) {
+        resourcesToAdd.add(componentId);
+      }
+    });
+  }
+  
+  if (resourcesToAdd.size > 0) {
+    addResourcesToGraph(Array.from(resourcesToAdd));
+  } else {
+    console.log('No additional resources to expand for this node');
+  }
+}
+
+/**
+ * Hide a node and optionally its products
+ */
+function hideNode(node) {
+  const nodeId = node.id;
+  
+  // If it's a user-selected resource, remove it from activeResourceIds
+  if (node.isUserSelected && !node.parentId) {
+    removeResourceFromGraph(nodeId);
+  } else {
+    // Otherwise just remove this specific node
+    displayedGraph.nodes = displayedGraph.nodes.filter(n => {
+      // Remove the node itself
+      if (n.id === nodeId) return false;
+      // If this is a resource, also remove its products
+      if (!node.parentId && n.parentId === nodeId) return false;
+      return true;
+    });
+    
+    // Remove related links
+    const nodeIds = new Set(displayedGraph.nodes.map(n => n.id));
+    displayedGraph.links = displayedGraph.links.filter(link => {
+      const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
+      const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+      return nodeIds.has(sourceId) && nodeIds.has(targetId);
+    });
+    
+    updateGraph();
+    updateCounters();
+  }
+}
+
+/**
  * Select a node and show its details
  */
 function selectNode(node) {
@@ -705,7 +815,7 @@ function dragEnded(event, d) {
   d.fy = null;
 }
 
-// Click on background to deselect
+// Click on background to deselect and hide context menu
 document.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById('graph-container');
   if (container) {
@@ -713,6 +823,22 @@ document.addEventListener('DOMContentLoaded', () => {
       if (event.target === container || event.target.tagName === 'svg') {
         hideNodeDetails();
       }
+    });
+  }
+  
+  // Hide context menu when clicking anywhere
+  document.addEventListener('click', () => {
+    const menu = document.getElementById('context-menu');
+    if (menu) {
+      menu.style.display = 'none';
+    }
+  });
+  
+  // Prevent context menu from closing when clicking inside it
+  const contextMenu = document.getElementById('context-menu');
+  if (contextMenu) {
+    contextMenu.addEventListener('click', (event) => {
+      event.stopPropagation();
     });
   }
 });
