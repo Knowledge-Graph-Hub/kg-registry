@@ -9,6 +9,62 @@ layout: default
   </div>
 </div>
 
+<!-- Help Section -->
+<div class="row mb-4">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header d-flex justify-content-between align-items-center" style="cursor: pointer;" onclick="toggleHelp()">
+        <h4 class="mb-0"><i class="bi bi-info-circle"></i> How to use this visualization</h4>
+        <span id="help-toggle-icon">−</span>
+      </div>
+      <div class="card-body" id="help-content">
+        <p>This interactive graph shows the relationships between resources in the KG-Registry. Start by selecting one or more resources to visualize their connections.</p>
+        <hr>
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Getting Started</h5>
+            <ul>
+              <li><strong>Select resources</strong> from the dropdown list on the right (hold Ctrl/Cmd for multiple selections)</li>
+              <li><strong>Click "Add Selected Resources"</strong> to add them to the graph</li>
+              <li>Each resource will show <strong>only its direct products</strong> by default</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h5>Interacting with the Graph</h5>
+            <ul>
+              <li><strong>Right-click on a node</strong> to expand its connections or hide it</li>
+              <li><strong>Left-click on a node</strong> to see its details and highlight connections</li>
+              <li><strong>Drag nodes</strong> to reposition them for better visibility</li>
+              <li><strong>Zoom</strong> in and out using the mouse wheel or pinch gestures</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <h5>Customizing the View</h5>
+            <ul>
+              <li><strong>Show/hide products</strong> using the checkbox in Display Options</li>
+              <li><strong>Show domain connections</strong> to see resources that share domains</li>
+              <li><strong>Search</strong> for specific resources using the search box</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h5>Managing Resources</h5>
+            <ul>
+              <li><strong>Remove resources</strong> by clicking the × button next to their name</li>
+              <li><strong>Clear all</strong> resources with the "Clear Graph" button</li>
+              <li><strong>User-selected resources</strong> are highlighted with bold black borders</li>
+            </ul>
+          </div>
+        </div>
+        <div class="alert alert-info mt-3 mb-0">
+          <strong>💡 Tip:</strong> Start with 1-3 resources to keep the visualization manageable. Right-click nodes to expand their connections. Products only show connections to resources that are already in the graph.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="row mt-4">
   <div class="col-lg-9">
     <div id="graph-container" class="graph-visualization">
@@ -18,31 +74,70 @@ layout: default
   <div class="col-lg-3">
     <div class="card mb-4">
       <div class="card-header">
-        <h3>Controls</h3>
+        <h3>Resource Selection</h3>
       </div>
       <div class="card-body">
         <div class="mb-3">
-          <label for="node-type-filter" class="form-label">Filter by Node Type:</label>
-          <select id="node-type-filter" class="form-select">
-            <option value="all" selected>All Types</option>
+          <label for="resource-selector" class="form-label">Select Resource(s):</label>
+          <select id="resource-selector" class="form-select" size="8" multiple>
+            <option value="" disabled>Loading resources...</option>
           </select>
+          <small class="form-text text-muted">Hold Ctrl/Cmd to select multiple resources</small>
         </div>
         <div class="mb-3">
-          <label for="search-input" class="form-label">Search Nodes:</label>
-          <input type="text" id="search-input" class="form-control" placeholder="Enter node name or ID">
+          <label for="search-input" class="form-label">Search Resources:</label>
+          <input type="text" id="search-input" class="form-control" placeholder="Filter resources by name">
         </div>
         <div class="mb-3">
-          <div class="btn-group w-100" role="group">
-            <button id="reset-graph" class="btn btn-primary">Reset Graph</button>
-            <button id="kgs-only" class="btn btn-outline-primary">KGs Only</button>
+          <button id="add-resource" class="btn btn-primary w-100">Add Selected Resources</button>
+        </div>
+        <div class="mb-3">
+          <button id="clear-graph" class="btn btn-outline-secondary w-100">Clear Graph</button>
+        </div>
+        
+        <div class="mt-3">
+          <strong>Active Resources:</strong>
+          <div id="active-resources-list" class="mt-2">
+            <small class="text-muted">No resources selected. Choose resources above to visualize their connections.</small>
           </div>
         </div>
         
         <div class="mt-4 text-muted">
           <small>
             <span id="node-count">0</span> nodes / 
-            <span id="edge-count">0</span> edges
+            <span id="edge-count">0</span> edges / 
+            <span id="component-count">0</span> component<span id="component-plural">s</span>
           </small>
+          <br>
+          <small class="text-muted" style="font-size: 0.75rem;">
+            <em>Connected components: separate subgraphs with no links between them</em>
+          </small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3>Display Options</h3>
+      </div>
+      <div class="card-body">
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="show-products" checked>
+          <label class="form-check-label" for="show-products">
+            Show Products
+          </label>
+        </div>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="show-domain-connections">
+          <label class="form-check-label" for="show-domain-connections">
+            Show Domain Connections
+          </label>
+        </div>
+        <div class="mb-3">
+          <label for="node-type-filter" class="form-label">Filter Node Types:</label>
+          <select id="node-type-filter" class="form-select">
+            <option value="all" selected>All Types</option>
+          </select>
         </div>
       </div>
     </div>
@@ -59,3 +154,18 @@ layout: default
 </div>
 
 {{ content }}
+
+<script>
+  function toggleHelp() {
+    const content = document.getElementById('help-content');
+    const icon = document.getElementById('help-toggle-icon');
+    
+    if (content.style.display === 'none') {
+      content.style.display = 'block';
+      icon.textContent = '−';
+    } else {
+      content.style.display = 'none';
+      icon.textContent = '+';
+    }
+  }
+</script>
