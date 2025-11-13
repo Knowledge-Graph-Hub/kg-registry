@@ -2,15 +2,375 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-09-09T00:00:00Z'
-description: Stub Resource page for noncode. This page was automatically generated
-  because it was referenced by other resources.
+description: A comprehensive database dedicated to long non-coding RNA (lncRNA) annotation in animals and plants, providing systematic nomenclature, sequence information, genome location, expression profiles, functional predictions, and conservation analysis across 39 species (16 animals and 23 plants)
 domains:
-- stub
-id: noncode
-last_modified_date: '2025-09-09T00:00:00Z'
+  - genomics
+  - biological systems
+homepage_url: http://www.noncode.org/
+id: "noncode"
+last_modified_date: '2025-11-13T00:00:00Z'
 layout: resource_detail
-name: Noncode
+name: NONCODE
+synonyms:
+  - NONCODEV6
+  - NONCODE v6.0
+  - NONCODE 2021
 products:
+  - id: "noncode-portal"
+    name: NONCODE Web Portal
+    category: GraphicalInterface
+    format: http
+    product_url: http://www.noncode.org/
+    description: Main web interface for searching, browsing, and analyzing lncRNA annotations across 39 species
+  - id: "noncode-browse"
+    name: Browse NONCODE
+    category: GraphicalInterface
+    format: http
+    product_url: http://www.noncode.org/browse.php
+    description: Browse lncRNAs by species and RNA type
+  - id: "noncode-search"
+    name: Search Gene/Transcript
+    category: GraphicalInterface
+    format: http
+    product_url: http://www.noncode.org/search.php
+    description: Search for specific genes or transcripts by identifier or keywords
+  - id: "noncode-blast"
+    name: BLAST Similarity Search
+    category: GraphicalInterface
+    format: http
+    product_url: http://www.noncode.org/blast.php
+    description: Find similar sequences using BLAST alignment
+  - id: "noncode-disease"
+    name: Disease Information
+    category: GraphicalInterface
+    format: http
+    product_url: http://www.noncode.org/disease.php
+    description: Browse disease-related lncRNA information, especially cancer associations
+  - id: "noncode-genome-browser"
+    name: Genome Browser
+    category: GraphicalInterface
+    format: http
+    product_url: http://www.noncode.org/genome.php
+    description: View transcript locations in genomic context (human hg38)
+  - id: "noncode-download"
+    name: Download Data
+    category: Product
+    format: http
+    product_url: http://www.noncode.org/download.php
+    description: Download complete lncRNA annotations and sequences
+  - id: "noncode-function"
+    name: Function Prediction
+    category: GraphicalInterface
+    format: http
+    product_url: http://www.noncode.org/function.php
+    description: Predicted functions for plant lncRNAs based on co-expression analysis
+  - id: "noncode-conservation"
+    name: Conservation Analysis
+    category: GraphicalInterface
+    format: http
+    product_url: http://www.noncode.org/conservation.php
+    description: Cross-species conservation analysis for plant lncRNAs
+  - id: "noncode-id-conversion"
+    name: ID Conversion Tool
+    category: GraphicalInterface
+    format: http
+    product_url: http://www.noncode.org/id_conversion.php
+    description: Convert between NONCODE IDs and other database identifiers (Ensembl, RefSeq, etc.)
+  - category: GraphicalInterface
+    description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
+    format: http
+    id: "rnacentral.portal"
+    name: RNAcentral Portal
+    original_source:
+      - 5srrnadb
+      - crd
+      - dictybase
+      - ena
+      - ensembl
+      - evlncrnas
+      - expressionatlas
+      - flybase
+      - genecards
+      - greengenes
+      - gtrnadb
+      - hgnc
+      - intact
+      - lncbase
+      - lncbook
+      - lncipedia
+      - lncrnadb
+      - malacards
+      - mgnify
+      - mirbase
+      - mirgenedb
+      - modomics
+      - noncode
+      - pdbe
+      - pirbase
+      - plncdb
+      - pombase
+      - rdp
+      - rediportal
+      - rfam
+      - rgd
+      - ribocentre
+      - ribovision
+      - sgd
+      - silva
+      - snodb
+      - snopy
+      - snornadatabase
+      - srpdb
+      - tair
+      - tarbase
+      - tmrnawebsite
+      - zfin
+      - zwd
+      - rnacentral
+    product_url: https://rnacentral.org/
+  - category: ProgrammingInterface
+    description: REST API for programmatic access to RNAcentral data
+    format: http
+    id: "rnacentral.api"
+    name: RNAcentral REST API
+    original_source:
+      - 5srrnadb
+      - crd
+      - dictybase
+      - ena
+      - ensembl
+      - evlncrnas
+      - expressionatlas
+      - flybase
+      - genecards
+      - greengenes
+      - gtrnadb
+      - hgnc
+      - intact
+      - lncbase
+      - lncbook
+      - lncipedia
+      - lncrnadb
+      - malacards
+      - mgnify
+      - mirbase
+      - mirgenedb
+      - modomics
+      - noncode
+      - pdbe
+      - pirbase
+      - plncdb
+      - pombase
+      - rdp
+      - rediportal
+      - rfam
+      - rgd
+      - ribocentre
+      - ribovision
+      - sgd
+      - silva
+      - snodb
+      - snopy
+      - snornadatabase
+      - srpdb
+      - tair
+      - tarbase
+      - tmrnawebsite
+      - zfin
+      - zwd
+      - rnacentral
+    product_url: https://rnacentral.org/api
+  - category: Product
+    description: FTP archive with current and archived release files (sequences and annotations)
+    format: http
+    id: "rnacentral.ftp"
+    name: RNAcentral FTP Archive
+    original_source:
+      - 5srrnadb
+      - crd
+      - dictybase
+      - ena
+      - ensembl
+      - evlncrnas
+      - expressionatlas
+      - flybase
+      - genecards
+      - greengenes
+      - gtrnadb
+      - hgnc
+      - intact
+      - lncbase
+      - lncbook
+      - lncipedia
+      - lncrnadb
+      - malacards
+      - mgnify
+      - mirbase
+      - mirgenedb
+      - modomics
+      - noncode
+      - pdbe
+      - pirbase
+      - plncdb
+      - pombase
+      - rdp
+      - rediportal
+      - rfam
+      - rgd
+      - ribocentre
+      - ribovision
+      - sgd
+      - silva
+      - snodb
+      - snopy
+      - snornadatabase
+      - srpdb
+      - tair
+      - tarbase
+      - tmrnawebsite
+      - zfin
+      - zwd
+      - rnacentral
+    product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+  - category: DataModelProduct
+    description: Public PostgreSQL database for direct SQL access to RNAcentral data
+    format: postgres
+    id: "rnacentral.public-db"
+    name: RNAcentral Public Postgres Database
+    original_source:
+      - 5srrnadb
+      - crd
+      - dictybase
+      - ena
+      - ensembl
+      - evlncrnas
+      - expressionatlas
+      - flybase
+      - genecards
+      - greengenes
+      - gtrnadb
+      - hgnc
+      - intact
+      - lncbase
+      - lncbook
+      - lncipedia
+      - lncrnadb
+      - malacards
+      - mgnify
+      - mirbase
+      - mirgenedb
+      - modomics
+      - noncode
+      - pdbe
+      - pirbase
+      - plncdb
+      - pombase
+      - rdp
+      - rediportal
+      - rfam
+      - rgd
+      - ribocentre
+      - ribovision
+      - sgd
+      - silva
+      - snodb
+      - snopy
+      - snornadatabase
+      - srpdb
+      - tair
+      - tarbase
+      - tmrnawebsite
+      - zfin
+      - zwd
+      - rnacentral
+    product_url: https://rnacentral.org/help/public-database
+publications:
+  - id: "zhao2021noncode"
+    preferred: true
+    title: 'NONCODEV6: an updated database dedicated to long non-coding RNA annotation in both animals and plants'
+    doi: "10.1093/nar/gkaa1046"
+    year: "2021"
+---
+
+---
+
+## NONCODE
+
+NONCODE is a comprehensive database dedicated to the annotation of long non-coding RNAs (lncRNAs) in both animals and plants. NONCODE v6.0 contains 644,510 lncRNA transcripts from 39 species, including 16 animals and 23 plants.
+
+### Human and Mouse lncRNAs
+
+- **Human**: 173,112 lncRNA transcripts representing 96,411 genes
+- **Mouse**: 131,974 lncRNA transcripts representing 87,890 genes
+- Includes expression profiles and predicted functions
+- Features 13,749 records of lncRNA-cancer associations from experimentally supported data
+
+### Plant lncRNAs
+
+- **23 plant species** with 94,697 lncRNAs from 68,808 genes
+- Species include: *Arabidopsis thaliana*, *Cucumis sativus*, *Brassica napus*, *Brassica rapa*, *Chenopodium quinoa*, *Chlamydomonas reinhardtii*, *Glycine max*, *Gossypium raimondii*, *Malus domestica*, *Manihot esculenta*, *Medicago truncatula*, *Musa acuminata*, *Oryza rufipogon*, *Oryza sativa*, *Physcomitrella patens*, *Populus trichocarpa*, *Solanum lycopersicum*, *Solanum tuberosum*, *Triticum aestivum*, *Theobroma cacao*, *Trifolium pratense*, *Vitis vinifera*, *Zea mays*
+
+### Database Features
+
+#### Tissue Expression Profiles
+NONCODE provides tissue-specific expression data for five model plants:
+- *Arabidopsis thaliana* (10 tissues)
+- *Zea mays* (9 tissues)
+- *Solanum lycopersicum* (6 tissues)
+- *Cucumis sativus* (8 tissues)
+- *Oryza sativa* (11 tissues)
+
+Expression levels quantified as transcripts per kilobase million (TPM) using STAR alignment and StringTie quantification.
+
+#### Functional Annotation
+For five plant species, co-expression analysis with coding genes enables functional prediction:
+- Pearson correlation coefficients (Pcc) calculated using WGCNA
+- Gene pairs with P-value < 0.05 and Pcc > 0.999 or < -0.999 considered co-expressed
+- GO term annotation performed using PANTHER classification system
+
+#### Conservation Analysis
+- Transcript-level conservation assessment across 23 plant species
+- BLASTn-based pairwise comparisons with E-value threshold of 1e-10
+- 122 orthologous lncRNAs identified meeting ≥50% query coverage and E-value ≤1e-10
+- Notable conservation in closely related pairs: *Brassica napus*/*Brassica rapa*, *O. rufipogon*/*O. sativa*, *S. lycopersicum*/*S. tuberosum*
+
+#### Disease Associations
+- Focus on lncRNA-cancer relationships in human
+- Integration from six databases: LncSpA, LncTarD, Lnc2Cancer, LncRNADisease, LncRNAWiki, MNDR
+- Only experimentally supported relationships included (computational predictions excluded)
+- Top cancers by number of associated lncRNAs documented
+
+### Data Processing Pipeline
+
+1. **Format normalization**: All data converted to bed or gtf formats based on single assembly versions
+2. **Multi-source combination**: Normalized data combined using Cuffcompare from Cufflinks suite
+3. **Protein-coding filtration**: 
+   - Comparison with RefSeq and Ensembl coding RNAs
+   - CNIT (Coding-NonCoding Identifying Tool) validation with 99.3% accuracy on plant transcripts
+4. **General information**: Location, exons, length, assembly sequence, and source documented
+5. **Conservation analysis**: BLAST-based cross-species transcript comparisons
+6. **Web presentation**: Comprehensive web interface with visualization tools
+
+### Nomenclature System
+
+NONCODE follows a systematic naming convention:
+- **Transcripts**: NON + three species characters + T + six sequential numbers (e.g., NONATHT000001.1)
+- **Genes**: NON + three species characters + G + six sequential numbers
+
+### Data Sources
+
+Integration from multiple sources:
+- Previous NONCODE versions
+- Public literature (57,872 plant articles, 51,771 new human/mouse articles since 2017)
+- External lncRNA databases: Ensembl, RefSeq, lncRNAdb, LNCipedia, CANTATAdb, GREENC
+
+### Key Statistics
+
+- **Total transcripts**: 644,510 lncRNAs
+- **Species coverage**: 16 animals, 23 plants
+- **Plant lncRNAs**: Average length 462-1,033 bp; average 1.3-2.3 exons per lncRNA
+- **Database growth**: Increased from 548,640 lncRNAs (v5, 2017) to 644,510 lncRNAs (v6, 2021)
+---
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations
