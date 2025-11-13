@@ -2,78 +2,123 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-11-13T00:00:00Z'
-description: EPSD (Eukaryotic Phosphorylation Site Database) is a comprehensive database that curates and annotates experimentally identified protein phosphorylation sites across eukaryotic species. Version 2.0 contains 2,769,163 phosphorylation sites in 362,707 phosphoproteins from 223 eukaryotic species (95 animals, 20 protists, 61 plants, 48 fungi). The database integrates data from high-throughput phosphoproteomic studies and 10 public databases, providing detailed annotations including phosphopeptide sequences, localization probability scores, cell/tissue sources, and primary references. EPSD 2.0 features 88,074 functional annotations for 32,762 phosphorylation sites, covering 58 types of downstream effects on phosphoproteins and 107 regulatory impacts on biological processes. For eight model organisms (human, mouse, rat, Drosophila, C. elegans, Arabidopsis, S. pombe, S. cerevisiae), phosphoproteins are meticulously annotated with information from 100 external resources across 15 aspects including kinase/phosphatase regulators, 3D structures, physicochemical characteristics, genomic variations, functional descriptions, protein domains, molecular interactions, drug-target associations, disease data, orthologs, transcript expression, proteomics, subcellular localization, and regulatory pathways. EPSD 2.0 represents a 2.5-fold increase in data volume compared to version 1.0 and provides intrinsic disorder propensity and surface accessibility calculations for phosphorylation sites. The database supports advanced search options including substrate search, peptide search, batch search, BLAST search, and browse by species functionality.
+description: EPSD (Eukaryotic Phosphorylation Site Database) is a comprehensive database
+  that curates and annotates experimentally identified protein phosphorylation sites
+  across eukaryotic species. Version 2.0 contains 2,769,163 phosphorylation sites
+  in 362,707 phosphoproteins from 223 eukaryotic species (95 animals, 20 protists,
+  61 plants, 48 fungi). The database integrates data from high-throughput phosphoproteomic
+  studies and 10 public databases, providing detailed annotations including phosphopeptide
+  sequences, localization probability scores, cell/tissue sources, and primary references.
+  EPSD 2.0 features 88,074 functional annotations for 32,762 phosphorylation sites,
+  covering 58 types of downstream effects on phosphoproteins and 107 regulatory impacts
+  on biological processes. For eight model organisms (human, mouse, rat, Drosophila,
+  C. elegans, Arabidopsis, S. pombe, S. cerevisiae), phosphoproteins are meticulously
+  annotated with information from 100 external resources across 15 aspects including
+  kinase/phosphatase regulators, 3D structures, physicochemical characteristics, genomic
+  variations, functional descriptions, protein domains, molecular interactions, drug-target
+  associations, disease data, orthologs, transcript expression, proteomics, subcellular
+  localization, and regulatory pathways. EPSD 2.0 represents a 2.5-fold increase in
+  data volume compared to version 1.0 and provides intrinsic disorder propensity and
+  surface accessibility calculations for phosphorylation sites. The database supports
+  advanced search options including substrate search, peptide search, batch search,
+  BLAST search, and browse by species functionality.
 domains:
-  - genomics
-  - proteomics
+- genomics
+- proteomics
 homepage_url: https://epsd.biocuckoo.cn
-id: "epsd"
-infores_id: "epsd"
+id: epsd
+infores_id: epsd
 last_modified_date: '2025-11-13T00:00:00Z'
 layout: resource_detail
 name: Eukaryotic Phosphorylation Site Database 2.0
 products:
-  - category: Portal
-    description: Main web portal for EPSD 2.0 providing search, browse, and visualization of protein phosphorylation sites across 223 eukaryotic species with functional annotations
-    format: http
-    id: "epsd.portal"
-    name: EPSD 2.0 Portal
-    original_source:
-      - epsd
-    product_url: https://epsd.biocuckoo.cn
-  - category: Browser
-    description: Browse phosphorylation sites by species across 223 eukaryotes including 95 animals, 20 protists, 61 plants, and 48 fungi
-    format: http
-    id: "epsd.browse"
-    name: EPSD Browse by Species
-    original_source:
-      - epsd
-    product_url: https://epsd.biocuckoo.cn
-  - category: Search
-    description: Advanced search interface supporting substrate search, peptide search, batch search, BLAST search, and multi-condition queries
-    format: http
-    id: "epsd.search"
-    name: EPSD Advanced Search
-    original_source:
-      - epsd
-    product_url: https://epsd.biocuckoo.cn
-  - category: Download
-    description: Download page for complete phosphorylation site datasets and annotation data from EPSD 2.0
-    format: http
-    id: "epsd.download"
-    name: EPSD Data Download
-    original_source:
-      - epsd
-    product_url: https://epsd.biocuckoo.cn/Download.php
-    secondary_source: []
-  - category: GraphicalInterface
-    description: Interactive web interface for exploring and visualizing kinase-substrate interactions
-    format: http
-    id: "kinace.portal"
-    name: KinAce Web Portal
-    original_source:
-      - phosphositeplus
-      - iptmnet
-      - uniprot
-      - epsd
-      - kinhub
-      - coralkinome
-      - darkkinasekb
-      - hgnc
-      - kegg
-      - interpro
-    product_url: https://kinace.kinametrix.com/
-    secondary_source:
-      - kinace
+- category: Portal
+  description: Main web portal for EPSD 2.0 providing search, browse, and visualization
+    of protein phosphorylation sites across 223 eukaryotic species with functional
+    annotations
+  format: http
+  id: epsd.portal
+  name: EPSD 2.0 Portal
+  original_source:
+  - epsd
+  product_url: https://epsd.biocuckoo.cn
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-13: Error connecting
+    to URL: HTTPSConnectionPool(host=''epsd.biocuckoo.cn'', port=443): Max retries
+    exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
+    certificate verify failed: certificate has expired (_ssl.c:1017)'')))'
+- category: Browser
+  description: Browse phosphorylation sites by species across 223 eukaryotes including
+    95 animals, 20 protists, 61 plants, and 48 fungi
+  format: http
+  id: epsd.browse
+  name: EPSD Browse by Species
+  original_source:
+  - epsd
+  product_url: https://epsd.biocuckoo.cn
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-13: Error connecting
+    to URL: HTTPSConnectionPool(host=''epsd.biocuckoo.cn'', port=443): Max retries
+    exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
+    certificate verify failed: certificate has expired (_ssl.c:1017)'')))'
+- category: Search
+  description: Advanced search interface supporting substrate search, peptide search,
+    batch search, BLAST search, and multi-condition queries
+  format: http
+  id: epsd.search
+  name: EPSD Advanced Search
+  original_source:
+  - epsd
+  product_url: https://epsd.biocuckoo.cn
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-13: Error connecting
+    to URL: HTTPSConnectionPool(host=''epsd.biocuckoo.cn'', port=443): Max retries
+    exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
+    certificate verify failed: certificate has expired (_ssl.c:1017)'')))'
+- category: Download
+  description: Download page for complete phosphorylation site datasets and annotation
+    data from EPSD 2.0
+  format: http
+  id: epsd.download
+  name: EPSD Data Download
+  original_source:
+  - epsd
+  product_url: https://epsd.biocuckoo.cn/Download.php
+  secondary_source: []
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-13: Error connecting
+    to URL: HTTPSConnectionPool(host=''epsd.biocuckoo.cn'', port=443): Max retries
+    exceeded with url: /Download.php (Caused by SSLError(SSLCertVerificationError(1,
+    ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has
+    expired (_ssl.c:1017)'')))'
+- category: GraphicalInterface
+  description: Interactive web interface for exploring and visualizing kinase-substrate
+    interactions
+  format: http
+  id: kinace.portal
+  name: KinAce Web Portal
+  original_source:
+  - phosphositeplus
+  - iptmnet
+  - uniprot
+  - epsd
+  - kinhub
+  - coralkinome
+  - darkkinasekb
+  - hgnc
+  - kegg
+  - interpro
+  product_url: https://kinace.kinametrix.com/
+  secondary_source:
+  - kinace
 publications:
-  - id: "PMID:40581078"
-  - id: "PMID:32008039"
+- id: PMID:40581078
+- id: PMID:32008039
 synonyms:
-  - EPSD
-  - Eukaryotic phosphorylation site database
-  - EPSD 2.0
+- EPSD
+- Eukaryotic phosphorylation site database
+- EPSD 2.0
 ---
-
 # Eukaryotic Phosphorylation Site Database 2.0
 
 ## Overview

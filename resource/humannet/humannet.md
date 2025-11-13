@@ -43,6 +43,9 @@ products:
   original_source:
   - humannet
   product_url: https://www.inetbio.org/humannet/download.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-13: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: API for programmatic access to HumanNet data
   format: http

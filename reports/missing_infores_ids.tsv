@@ -84,7 +84,6 @@ cro	Contributor Role Ontology	Ontology	https://github.com/data2health/contributo
 cteno	Ctenophore Ontology	Ontology	https://github.com/obophenotype/ctenophore-ontology	resource/cteno/cteno.md
 cto	CTO: Core Ontology of Clinical Trials	Ontology	https://github.com/ClinicalTrialOntology/CTO/	resource/cto/cto.md
 cvdo	Cardiovascular Disease Ontology	Ontology	https://github.com/OpenLHS/CVDO	resource/cvdo/cvdo.md
-darkkinasekb	Darkkinasekb	DataSource		resource/darkkinasekb/darkkinasekb.md
 dc	Dublin Core Metadata Terms	DataModel	https://www.dublincore.org/	resource/dc/dc.md
 dc_cl	Dendritic cell	Ontology	http://www.dukeontologygroup.org/Projects.html	resource/dc_cl/dc_cl.md
 dct	Dct	DataSource		resource/dct/dct.md
@@ -215,13 +214,13 @@ kg-microbe	KG Microbe	KnowledgeGraph	https://kghub.org/kg-microbe/index.html	res
 kg-monarch	KG Monarch	KnowledgeGraph	https://kghub.org/kg-monarch/index.html	resource/kg-monarch/kg-monarch.md
 kgcl	Knowledge Graph Change Language	DataModel	https://incatools.github.io/kgcl/	resource/kgcl/kgcl.md
 kidsfirst	Kids First Data Resource Center	DataSource	https://kidsfirstdrc.org/	resource/kidsfirst/kidsfirst.md
-kinhub	Kinhub	DataSource		resource/kinhub/kinhub.md
+kinhub	KinHub	DataSource	http://www.kinhub.org/	resource/kinhub/kinhub.md
 kisao	Kinetic Simulation Algorithm Ontology	Ontology	https://github.com/SED-ML/KiSAO	resource/kisao/kisao.md
 labo	clinical LABoratory Ontology	Ontology	https://github.com/OpenLHS/LABO	resource/labo/labo.md
 lepao	Lepidoptera Anatomy Ontology	Ontology	https://github.com/insect-morphology/lepao	resource/lepao/lepao.md
 lincs-l1000	LINCS L1000	DataSource	https://lincsproject.org/LINCS/	resource/lincs-l1000/lincs-l1000.md
 lipro	Lipid Ontology	Ontology		resource/lipro/lipro.md
-lncbase	Lncbase	DataSource		resource/lncbase/lncbase.md
+lncbase	DIANA-LncBase	DataSource	http://www.microrna.gr/LncBase	resource/lncbase/lncbase.md
 lncbook	LncBook	DataSource	https://ngdc.cncb.ac.cn/lncbook/home	resource/lncbook/lncbook.md
 lncipedia	LncIPedia	DataSource	https://lncipedia.org/	resource/lncipedia/lncipedia.md
 lncrnadb	lncRNAdb	DataSource	http://www.lncrnadb.org/	resource/lncrnadb/lncrnadb.md
@@ -282,7 +281,7 @@ nihreporter	NIH Reporter	DataSource	https://reporter.nih.gov/	resource/nihreport
 nlm-ckn	NLM-CKN	KnowledgeGraph		resource/nlm-ckn/nlm-ckn.md
 nmr	NMR-instrument specific component of metabolomics investigations	Ontology	http://msi-ontology.sourceforge.net/	resource/nmr/nmr.md
 nomen	NOMEN - A nomenclatural ontology for biological names	Ontology	https://github.com/SpeciesFileGroup/nomen	resource/nomen/nomen.md
-noncode	Noncode	DataSource		resource/noncode/noncode.md
+noncode	NONCODE	DataSource	http://www.noncode.org/	resource/noncode/noncode.md
 np-kg	NP-KG	KnowledgeGraph	https://doi.org/10.5281/zenodo.6814507	resource/np-kg/np-kg.md
 npo	Npo	DataSource		resource/npo/npo.md
 oae	Ontology of Adverse Events	Ontology	https://github.com/OAE-ontology/OAE/	resource/oae/oae.md
@@ -349,7 +348,7 @@ pirbase	piRBase	Aggregator	http://bigdata.ibp.ac.cn/piRBase	resource/pirbase/pir
 pistoia-pgo	Pistoia Alliance Pharma General Ontology	Ontology	https://pistoia-alliance-inc.github.io/Pistoia-Alliance-PGO/	resource/pistoia-pgo/pistoia-pgo.md
 plana	planaria-ontology	Ontology	https://github.com/obophenotype/planaria-ontology	resource/plana/plana.md
 planp	Planarian Phenotype Ontology	Ontology	https://github.com/obophenotype/planarian-phenotype-ontology	resource/planp/planp.md
-plncdb	Plncdb	DataSource		resource/plncdb/plncdb.md
+plncdb	PLncDB	DataSource	http://plncdb.tobaccodb.org/	resource/plncdb/plncdb.md
 plo	Plasmodium life cycle	Ontology	http://www.sanger.ac.uk/Users/mb4/PLO/	resource/plo/plo.md
 po	Plant Ontology	Ontology	http://browser.planteome.org/amigo	resource/po/po.md
 poro	Porifera Ontology	Ontology	https://github.com/obophenotype/porifera-ontology	resource/poro/poro.md
@@ -399,7 +398,7 @@ sldb	sldb	KnowledgeGraph	https://kghub.io/sldb/	resource/sldb/sldb.md
 slso	Space Life Sciences Ontology	Ontology	https://github.com/nasa/LSDAO	resource/slso/slso.md
 snodb	snoDB	DataSource	https://bioinfo-scottgroup.med.usherbrooke.ca/snoDB/	resource/snodb/snodb.md
 snopy	snOPY	DataSource	http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi	resource/snopy/snopy.md
-snornadatabase	Snornadatabase	DataSource		resource/snornadatabase/snornadatabase.md
+snornadatabase	snoRNABase	DataSource	https://www-snorna.biotoul.fr/	resource/snornadatabase/snornadatabase.md
 sopharm	Suggested Ontology for Pharmacogenomics	Ontology	http://www.loria.fr/~coulet/sopharm2.0_description.php	resource/sopharm/sopharm.md
 spd	Spider Ontology	Ontology	http://research.amnh.org/atol/files/	resource/spd/spd.md
 srpdb	SRPDB	DataSource	https://rth.dk/resources/rnp/SRPDB/	resource/srpdb/srpdb.md
@@ -419,7 +418,7 @@ taxrank	Taxonomic rank vocabulary	Ontology	https://github.com/phenoscape/taxrank
 tera	TERA: Toxicological Effect and Risk Assessment Knowledge Graph	KnowledgeGraph	https://niva-knowledge-graph.github.io/TERA/	resource/tera/tera.md
 text-mining-kp	Text Mining KP	KnowledgeGraph		resource/text-mining-kp/text-mining-kp.md
 tgma	Mosquito gross anatomy ontology	Ontology	https://www.vectorbase.org/ontology-browser	resource/tgma/tgma.md
-tmrnawebsite	Tmrnawebsite	DataSource		resource/tmrnawebsite/tmrnawebsite.md
+tmrnawebsite	The tmRNA Website	DataSource	http://bioinformatics.sandia.gov/tmrna/	resource/tmrnawebsite/tmrnawebsite.md
 to	Plant Trait Ontology	Ontology	http://browser.planteome.org/amigo	resource/to/to.md
 toxcast	ToxCast	DataSource		resource/toxcast/toxcast.md
 toxin	TOXIN	KnowledgeGraph	https://toxin-search.netlify.app/	resource/toxin/toxin.md

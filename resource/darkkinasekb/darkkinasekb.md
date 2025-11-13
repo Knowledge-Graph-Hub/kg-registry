@@ -2,79 +2,111 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-11-13T00:00:00Z'
-description: The Dark Kinase Knowledgebase (DKK) is a comprehensive resource focused on providing data and reagents for 162 poorly studied or 'dark' kinases to the broader research community. Supported through NIH's Illuminating the Druggable Genome (IDG) Program, the DKK collects and disseminates experimental and computational data that provides functional context for understudied kinases, including parallel reaction monitoring peptides, protein interactions, NanoBRET reagents, kinase-specific compounds, tissue expression profiles, and functional relationships.
+description: The Dark Kinase Knowledgebase (DKK) is a comprehensive resource focused
+  on providing data and reagents for 162 poorly studied or 'dark' kinases to the broader
+  research community. Supported through NIH's Illuminating the Druggable Genome (IDG)
+  Program, the DKK collects and disseminates experimental and computational data that
+  provides functional context for understudied kinases, including parallel reaction
+  monitoring peptides, protein interactions, NanoBRET reagents, kinase-specific compounds,
+  tissue expression profiles, and functional relationships.
 domains:
-  - genomics
-  - proteomics
+- genomics
+- proteomics
 homepage_url: https://darkkinome.org
-id: "darkkinasekb"
-infores_id: "darkkinasekb"
+id: darkkinasekb
+infores_id: darkkinasekb
 last_modified_date: '2025-11-13T00:00:00Z'
 layout: resource_detail
 name: Dark Kinase Knowledgebase
 products:
-  - category: Portal
-    description: Main web portal for Dark Kinase Knowledgebase providing comprehensive data on 162 understudied kinases including tool compounds, PRM peptides, protein interactions, and expression profiles
-    format: http
-    id: "darkkinasekb.portal"
-    name: DKK Main Portal
-    original_source:
-      - darkkinasekb
-    product_url: https://darkkinome.org
-  - category: Browser
-    description: Interactive expression browser showing tissue-specific expression of dark kinases using GTEx RNA-seq and Human Proteome Map data with kinome-wide comparisons
-    format: http
-    id: "darkkinasekb.expression"
-    name: DKK Expression Browser
-    original_source:
-      - darkkinasekb
-    product_url: http://expression.darkkinome.org/
-  - category: Dataset
-    description: Parallel reaction monitoring (PRM) peptides for quantitative mass spectrometry of dark kinases with standard curves and detection limits
-    format: http
-    id: "darkkinasekb.prm"
-    name: DKK PRM Peptides
-    original_source:
-      - darkkinasekb
-    product_url: https://darkkinome.org/PRM_params
-  - category: Dataset
-    description: Tool compounds for dark kinases with kinome-wide selectivity profiles and NanoBRET validation
-    format: http
-    id: "darkkinasekb.compounds"
-    name: DKK Tool Compounds
-    original_source:
-      - darkkinasekb
-    product_url: https://darkkinome.org/compounds
-  - category: Dataset
-    description: Protein interaction networks for dark kinases from affinity purification mass spectrometry and proximity labeling experiments
-    format: http
-    id: "darkkinasekb.interactions"
-    name: DKK Protein Interactions
-    original_source:
-      - darkkinasekb
-    product_url: https://darkkinome.org
-  - category: Repository
-    description: GitHub repository containing source code for Dark Kinase Knowledgebase website
-    format: http
-    id: "darkkinasekb.github"
-    name: DKK GitHub Repository
-    original_source:
-      - darkkinasekb
-    product_url: https://github.com/IDG-Kinase/darkkinasekb
-  - category: Dataset
-    description: Bulk datasets and resources distributed through Synapse platform
-    format: http
-    id: "darkkinasekb.synapse"
-    name: DKK Synapse Data Repository
-    original_source:
-      - darkkinasekb
-    product_url: https://www.synapse.org/#!Synapse:syn18360482/files/
+- category: Portal
+  description: Main web portal for Dark Kinase Knowledgebase providing comprehensive
+    data on 162 understudied kinases including tool compounds, PRM peptides, protein
+    interactions, and expression profiles
+  format: http
+  id: darkkinasekb.portal
+  name: DKK Main Portal
+  original_source:
+  - darkkinasekb
+  product_url: https://darkkinome.org
+- category: Browser
+  description: Interactive expression browser showing tissue-specific expression of
+    dark kinases using GTEx RNA-seq and Human Proteome Map data with kinome-wide comparisons
+  format: http
+  id: darkkinasekb.expression
+  name: DKK Expression Browser
+  original_source:
+  - darkkinasekb
+  product_url: http://expression.darkkinome.org/
+- category: Dataset
+  description: Parallel reaction monitoring (PRM) peptides for quantitative mass spectrometry
+    of dark kinases with standard curves and detection limits
+  format: http
+  id: darkkinasekb.prm
+  name: DKK PRM Peptides
+  original_source:
+  - darkkinasekb
+  product_url: https://darkkinome.org/PRM_params
+- category: Dataset
+  description: Tool compounds for dark kinases with kinome-wide selectivity profiles
+    and NanoBRET validation
+  format: http
+  id: darkkinasekb.compounds
+  name: DKK Tool Compounds
+  original_source:
+  - darkkinasekb
+  product_url: https://darkkinome.org/compounds
+- category: Dataset
+  description: Protein interaction networks for dark kinases from affinity purification
+    mass spectrometry and proximity labeling experiments
+  format: http
+  id: darkkinasekb.interactions
+  name: DKK Protein Interactions
+  original_source:
+  - darkkinasekb
+  product_url: https://darkkinome.org
+- category: Repository
+  description: GitHub repository containing source code for Dark Kinase Knowledgebase
+    website
+  format: http
+  id: darkkinasekb.github
+  name: DKK GitHub Repository
+  original_source:
+  - darkkinasekb
+  product_url: https://github.com/IDG-Kinase/darkkinasekb
+- category: Dataset
+  description: Bulk datasets and resources distributed through Synapse platform
+  format: http
+  id: darkkinasekb.synapse
+  name: DKK Synapse Data Repository
+  original_source:
+  - darkkinasekb
+  product_url: https://www.synapse.org/#!Synapse:syn18360482/files/
+- category: GraphicalInterface
+  description: Interactive web interface for exploring and visualizing kinase-substrate
+    interactions
+  format: http
+  id: kinace.portal
+  name: KinAce Web Portal
+  original_source:
+  - phosphositeplus
+  - iptmnet
+  - uniprot
+  - epsd
+  - kinhub
+  - coralkinome
+  - darkkinasekb
+  - hgnc
+  - kegg
+  - interpro
+  product_url: https://kinace.kinametrix.com/
+  secondary_source:
+  - kinace
 publications:
-  - id: "PMID:33079988"
+- id: PMID:33079988
 synonyms:
-  - DKK
+- DKK
 ---
-
 # Dark Kinase Knowledgebase
 
 ## Description

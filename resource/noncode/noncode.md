@@ -2,296 +2,306 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-09-09T00:00:00Z'
-description: A comprehensive database dedicated to long non-coding RNA (lncRNA) annotation in animals and plants, providing systematic nomenclature, sequence information, genome location, expression profiles, functional predictions, and conservation analysis across 39 species (16 animals and 23 plants)
+description: A comprehensive database dedicated to long non-coding RNA (lncRNA) annotation
+  in animals and plants, providing systematic nomenclature, sequence information,
+  genome location, expression profiles, functional predictions, and conservation analysis
+  across 39 species (16 animals and 23 plants)
 domains:
-  - genomics
-  - biological systems
+- genomics
+- biological systems
 homepage_url: http://www.noncode.org/
-id: "noncode"
+id: noncode
 last_modified_date: '2025-11-13T00:00:00Z'
 layout: resource_detail
 name: NONCODE
-synonyms:
-  - NONCODEV6
-  - NONCODE v6.0
-  - NONCODE 2021
 products:
-  - id: "noncode.portal"
-    name: NONCODE Web Portal
-    category: GraphicalInterface
-    format: http
-    product_url: http://www.noncode.org/
-    description: Main web interface for searching, browsing, and analyzing lncRNA annotations across 39 species
-  - id: "noncode.browse"
-    name: Browse NONCODE
-    category: GraphicalInterface
-    format: http
-    product_url: http://www.noncode.org/browse.php
-    description: Browse lncRNAs by species and RNA type
-  - id: "noncode.search"
-    name: Search Gene/Transcript
-    category: GraphicalInterface
-    format: http
-    product_url: http://www.noncode.org/search.php
-    description: Search for specific genes or transcripts by identifier or keywords
-  - id: "noncode.blast"
-    name: BLAST Similarity Search
-    category: GraphicalInterface
-    format: http
-    product_url: http://www.noncode.org/blast.php
-    description: Find similar sequences using BLAST alignment
-  - id: "noncode.disease"
-    name: Disease Information
-    category: GraphicalInterface
-    format: http
-    product_url: http://www.noncode.org/disease.php
-    description: Browse disease-related lncRNA information, especially cancer associations
-  - id: "noncode.genome-browser"
-    name: Genome Browser
-    category: GraphicalInterface
-    format: http
-    product_url: http://www.noncode.org/genome.php
-    description: View transcript locations in genomic context (human hg38)
-  - id: "noncode.download"
-    name: Download Data
-    category: Product
-    format: http
-    product_url: http://www.noncode.org/download.php
-    description: Download complete lncRNA annotations and sequences
-  - id: "noncode.function"
-    name: Function Prediction
-    category: GraphicalInterface
-    format: http
-    product_url: http://www.noncode.org/function.php
-    description: Predicted functions for plant lncRNAs based on co-expression analysis
-  - id: "noncode.conservation"
-    name: Conservation Analysis
-    category: GraphicalInterface
-    format: http
-    product_url: http://www.noncode.org/conservation.php
-    description: Cross-species conservation analysis for plant lncRNAs
-  - id: "noncode.id-conversion"
-    name: ID Conversion Tool
-    category: GraphicalInterface
-    format: http
-    product_url: http://www.noncode.org/id_conversion.php
-    description: Convert between NONCODE IDs and other database identifiers (Ensembl, RefSeq, etc.)
-  - category: GraphicalInterface
-    description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
-    format: http
-    id: "rnacentral.portal"
-    name: RNAcentral Portal
-    original_source:
-      - 5srrnadb
-      - crd
-      - dictybase
-      - ena
-      - ensembl
-      - evlncrnas
-      - expressionatlas
-      - flybase
-      - genecards
-      - greengenes
-      - gtrnadb
-      - hgnc
-      - intact
-      - lncbase
-      - lncbook
-      - lncipedia
-      - lncrnadb
-      - malacards
-      - mgnify
-      - mirbase
-      - mirgenedb
-      - modomics
-      - noncode
-      - pdbe
-      - pirbase
-      - plncdb
-      - pombase
-      - rdp
-      - rediportal
-      - rfam
-      - rgd
-      - ribocentre
-      - ribovision
-      - sgd
-      - silva
-      - snodb
-      - snopy
-      - snornadatabase
-      - srpdb
-      - tair
-      - tarbase
-      - tmrnawebsite
-      - zfin
-      - zwd
-      - rnacentral
-    product_url: https://rnacentral.org/
-  - category: ProgrammingInterface
-    description: REST API for programmatic access to RNAcentral data
-    format: http
-    id: "rnacentral.api"
-    name: RNAcentral REST API
-    original_source:
-      - 5srrnadb
-      - crd
-      - dictybase
-      - ena
-      - ensembl
-      - evlncrnas
-      - expressionatlas
-      - flybase
-      - genecards
-      - greengenes
-      - gtrnadb
-      - hgnc
-      - intact
-      - lncbase
-      - lncbook
-      - lncipedia
-      - lncrnadb
-      - malacards
-      - mgnify
-      - mirbase
-      - mirgenedb
-      - modomics
-      - noncode
-      - pdbe
-      - pirbase
-      - plncdb
-      - pombase
-      - rdp
-      - rediportal
-      - rfam
-      - rgd
-      - ribocentre
-      - ribovision
-      - sgd
-      - silva
-      - snodb
-      - snopy
-      - snornadatabase
-      - srpdb
-      - tair
-      - tarbase
-      - tmrnawebsite
-      - zfin
-      - zwd
-      - rnacentral
-    product_url: https://rnacentral.org/api
-  - category: Product
-    description: FTP archive with current and archived release files (sequences and annotations)
-    format: http
-    id: "rnacentral.ftp"
-    name: RNAcentral FTP Archive
-    original_source:
-      - 5srrnadb
-      - crd
-      - dictybase
-      - ena
-      - ensembl
-      - evlncrnas
-      - expressionatlas
-      - flybase
-      - genecards
-      - greengenes
-      - gtrnadb
-      - hgnc
-      - intact
-      - lncbase
-      - lncbook
-      - lncipedia
-      - lncrnadb
-      - malacards
-      - mgnify
-      - mirbase
-      - mirgenedb
-      - modomics
-      - noncode
-      - pdbe
-      - pirbase
-      - plncdb
-      - pombase
-      - rdp
-      - rediportal
-      - rfam
-      - rgd
-      - ribocentre
-      - ribovision
-      - sgd
-      - silva
-      - snodb
-      - snopy
-      - snornadatabase
-      - srpdb
-      - tair
-      - tarbase
-      - tmrnawebsite
-      - zfin
-      - zwd
-      - rnacentral
-    product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
-  - category: DataModelProduct
-    description: Public PostgreSQL database for direct SQL access to RNAcentral data
-    format: postgres
-    id: "rnacentral.public-db"
-    name: RNAcentral Public Postgres Database
-    original_source:
-      - 5srrnadb
-      - crd
-      - dictybase
-      - ena
-      - ensembl
-      - evlncrnas
-      - expressionatlas
-      - flybase
-      - genecards
-      - greengenes
-      - gtrnadb
-      - hgnc
-      - intact
-      - lncbase
-      - lncbook
-      - lncipedia
-      - lncrnadb
-      - malacards
-      - mgnify
-      - mirbase
-      - mirgenedb
-      - modomics
-      - noncode
-      - pdbe
-      - pirbase
-      - plncdb
-      - pombase
-      - rdp
-      - rediportal
-      - rfam
-      - rgd
-      - ribocentre
-      - ribovision
-      - sgd
-      - silva
-      - snodb
-      - snopy
-      - snornadatabase
-      - srpdb
-      - tair
-      - tarbase
-      - tmrnawebsite
-      - zfin
-      - zwd
-      - rnacentral
-    product_url: https://rnacentral.org/help/public-database
+- category: GraphicalInterface
+  description: Main web interface for searching, browsing, and analyzing lncRNA annotations
+    across 39 species
+  format: http
+  id: noncode.portal
+  name: NONCODE Web Portal
+  product_url: http://www.noncode.org/
+- category: GraphicalInterface
+  description: Browse lncRNAs by species and RNA type
+  format: http
+  id: noncode.browse
+  name: Browse NONCODE
+  product_url: http://www.noncode.org/browse.php
+- category: GraphicalInterface
+  description: Search for specific genes or transcripts by identifier or keywords
+  format: http
+  id: noncode.search
+  name: Search Gene/Transcript
+  product_url: http://www.noncode.org/search.php
+- category: GraphicalInterface
+  description: Find similar sequences using BLAST alignment
+  format: http
+  id: noncode.blast
+  name: BLAST Similarity Search
+  product_url: http://www.noncode.org/blast.php
+- category: GraphicalInterface
+  description: Browse disease-related lncRNA information, especially cancer associations
+  format: http
+  id: noncode.disease
+  name: Disease Information
+  product_url: http://www.noncode.org/disease.php
+- category: GraphicalInterface
+  description: View transcript locations in genomic context (human hg38)
+  format: http
+  id: noncode.genome-browser
+  name: Genome Browser
+  product_url: http://www.noncode.org/genome.php
+- category: Product
+  description: Download complete lncRNA annotations and sequences
+  format: http
+  id: noncode.download
+  name: Download Data
+  product_url: http://www.noncode.org/download.php
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-13: HTTP 403 error
+    when accessing file'
+- category: GraphicalInterface
+  description: Predicted functions for plant lncRNAs based on co-expression analysis
+  format: http
+  id: noncode.function
+  name: Function Prediction
+  product_url: http://www.noncode.org/function.php
+- category: GraphicalInterface
+  description: Cross-species conservation analysis for plant lncRNAs
+  format: http
+  id: noncode.conservation
+  name: Conservation Analysis
+  product_url: http://www.noncode.org/conservation.php
+- category: GraphicalInterface
+  description: Convert between NONCODE IDs and other database identifiers (Ensembl,
+    RefSeq, etc.)
+  format: http
+  id: noncode.id-conversion
+  name: ID Conversion Tool
+  product_url: http://www.noncode.org/id_conversion.php
+- category: GraphicalInterface
+  description: Web portal for searching and browsing ncRNA sequences, structures,
+    and annotations
+  format: http
+  id: rnacentral.portal
+  name: RNAcentral Portal
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/
+- category: ProgrammingInterface
+  description: REST API for programmatic access to RNAcentral data
+  format: http
+  id: rnacentral.api
+  name: RNAcentral REST API
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/api
+- category: Product
+  description: FTP archive with current and archived release files (sequences and
+    annotations)
+  format: http
+  id: rnacentral.ftp
+  name: RNAcentral FTP Archive
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://ftp.ebi.ac.uk/pub/databases/RNAcentral
+- category: DataModelProduct
+  description: Public PostgreSQL database for direct SQL access to RNAcentral data
+  format: postgres
+  id: rnacentral.public-db
+  name: RNAcentral Public Postgres Database
+  original_source:
+  - 5srrnadb
+  - crd
+  - dictybase
+  - ena
+  - ensembl
+  - evlncrnas
+  - expressionatlas
+  - flybase
+  - genecards
+  - greengenes
+  - gtrnadb
+  - hgnc
+  - intact
+  - lncbase
+  - lncbook
+  - lncipedia
+  - lncrnadb
+  - malacards
+  - mgnify
+  - mirbase
+  - mirgenedb
+  - modomics
+  - noncode
+  - pdbe
+  - pirbase
+  - plncdb
+  - pombase
+  - rdp
+  - rediportal
+  - rfam
+  - rgd
+  - ribocentre
+  - ribovision
+  - sgd
+  - silva
+  - snodb
+  - snopy
+  - snornadatabase
+  - srpdb
+  - tair
+  - tarbase
+  - tmrnawebsite
+  - zfin
+  - zwd
+  - rnacentral
+  product_url: https://rnacentral.org/help/public-database
 publications:
-  - id: "zhao2021noncode"
-    preferred: true
-    title: 'NONCODEV6: an updated database dedicated to long non-coding RNA annotation in both animals and plants'
-    doi: "10.1093/nar/gkaa1046"
-    year: "2021"
+- doi: 10.1093/nar/gkaa1046
+  id: zhao2021noncode
+  preferred: true
+  title: 'NONCODEV6: an updated database dedicated to long non-coding RNA annotation
+    in both animals and plants'
+  year: '2021'
+synonyms:
+- NONCODEV6
+- NONCODE v6.0
+- NONCODE 2021
 ---
-
 ---
 
 ## NONCODE

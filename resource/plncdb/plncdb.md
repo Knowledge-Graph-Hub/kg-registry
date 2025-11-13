@@ -4,13 +4,13 @@ category: DataSource
 creation_date: '2025-09-09T00:00:00Z'
 description: PLncDB (Plant Long noncoding RNA Database) is a comprehensive encyclopedia
   of plant long noncoding RNAs containing 1,246,372 lncRNAs from 80 plant species,
-  ranging from chlorophytes to angiosperms. The database provides uniform lncRNA
-  annotations using a standard pipeline across 13,834 RNA-Seq datasets, integrating
-  expression patterns across tissues, developmental stages, and stress conditions.
-  It includes epigenetic modification data (DNA methylation, histone modifications),
-  predicted lncRNA targets (miRNA mimics and RNA-protein interactions), and tools
-  for visualization (JBrowse, eFP Browser, EPexplorer). PLncDB also incorporates
-  validated lncRNAs from EVLncRNAs and plant lncRNA candidates from RNAcentral.
+  ranging from chlorophytes to angiosperms. The database provides uniform lncRNA annotations
+  using a standard pipeline across 13,834 RNA-Seq datasets, integrating expression
+  patterns across tissues, developmental stages, and stress conditions. It includes
+  epigenetic modification data (DNA methylation, histone modifications), predicted
+  lncRNA targets (miRNA mimics and RNA-protein interactions), and tools for visualization
+  (JBrowse, eFP Browser, EPexplorer). PLncDB also incorporates validated lncRNAs from
+  EVLncRNAs and plant lncRNA candidates from RNAcentral.
 domains:
 - genomics
 - biological systems
@@ -21,8 +21,8 @@ layout: resource_detail
 name: PLncDB
 products:
 - category: GraphicalInterface
-  description: Web interface for browsing, searching, and accessing plant lncRNA
-    data with multiple search engines and visualization tools
+  description: Web interface for browsing, searching, and accessing plant lncRNA data
+    with multiple search engines and visualization tools
   format: http
   id: plncdb.portal
   name: PLncDB Web Portal
@@ -38,6 +38,9 @@ products:
   original_source:
   - plncdb
   product_url: http://plncdb.tobaccodb.org/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-13: HTTP 403 error
+    when accessing file'
 - category: GraphicalInterface
   description: JBrowse genome browser for visualizing lncRNA locations, expression
     patterns, and epigenetic modifications

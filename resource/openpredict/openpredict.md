@@ -53,11 +53,11 @@ products:
   - openpredict
   product_url: https://openpredict.semanticscience.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-09_ HTTP 405 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-10_ HTTP 405 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-11: HTTP 405 error
+  - File was not able to be retrieved when checked on 2025-11-11_ HTTP 405 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-13: HTTP 405 error
     when accessing file'
 publications:
 - id: https://doi.org/10.1093/bioinformatics/btab540

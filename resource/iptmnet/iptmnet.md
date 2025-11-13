@@ -2,21 +2,44 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-11-13T00:00:00Z'
-description: iPTMnet is an integrated resource for protein post-translational modification (PTM) network discovery that employs an integrative bioinformatics approach combining text mining, data mining, and ontological representation to capture rich PTM information, including PTM enzyme-substrate-site relationships, PTM-specific protein-protein interactions (PPIs), and PTM conservation across species.
+description: iPTMnet is an integrated resource for protein post-translational modification
+  (PTM) network discovery that employs an integrative bioinformatics approach combining
+  text mining, data mining, and ontological representation to capture rich PTM information,
+  including PTM enzyme-substrate-site relationships, PTM-specific protein-protein
+  interactions (PPIs), and PTM conservation across species.
 domains:
-  - proteomics
+- proteomics
 homepage_url: https://research.bioinformatics.udel.edu/iptmnet/
-id: "iptmnet"
-infores_id: "iptmnet"
+id: iptmnet
+infores_id: iptmnet
 last_modified_date: '2025-11-13T00:00:00Z'
 layout: resource_detail
 name: iPTMnet
-products: []
+products:
+- category: GraphicalInterface
+  description: Interactive web interface for exploring and visualizing kinase-substrate
+    interactions
+  format: http
+  id: kinace.portal
+  name: KinAce Web Portal
+  original_source:
+  - phosphositeplus
+  - iptmnet
+  - uniprot
+  - epsd
+  - kinhub
+  - coralkinome
+  - darkkinasekb
+  - hgnc
+  - kegg
+  - interpro
+  product_url: https://kinace.kinametrix.com/
+  secondary_source:
+  - kinace
 publications:
 - id: PMID:29145615
 synonyms: []
 ---
-
 # iPTMnet
 
 ## Description

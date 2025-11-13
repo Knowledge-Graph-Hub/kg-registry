@@ -186,11 +186,11 @@ products:
   - pubmed
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-11_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-09_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-11: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-13: HTTP 403 error
     when accessing file'
 - category: Product
   description: Co-occurrence data from PubMed abstracts

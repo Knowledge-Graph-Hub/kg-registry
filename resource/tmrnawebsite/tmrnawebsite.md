@@ -2,7 +2,11 @@
 activity_status: inactive
 category: DataSource
 creation_date: '2025-09-09T00:00:00Z'
-description: The tmRNA Website is a comprehensive database of transfer-messenger RNA (tmRNA) and SmpB protein sequences involved in bacterial trans-translation. Contains 1,716 unique tmRNA sequences from bacteria and organelles, 2,258 unique SmpB sequences, with 9,387 tmRNA instances across public databases. Provides sequence alignments, structural annotations, BLAST search tools, and Krona-based phylogenetic visualization.
+description: The tmRNA Website is a comprehensive database of transfer-messenger RNA
+  (tmRNA) and SmpB protein sequences involved in bacterial trans-translation. Contains
+  1,716 unique tmRNA sequences from bacteria and organelles, 2,258 unique SmpB sequences,
+  with 9,387 tmRNA instances across public databases. Provides sequence alignments,
+  structural annotations, BLAST search tools, and Krona-based phylogenetic visualization.
 domains:
 - genomics
 homepage_url: http://bioinformatics.sandia.gov/tmrna/
@@ -10,12 +14,10 @@ id: tmrnawebsite
 last_modified_date: '2025-11-13T00:00:00Z'
 layout: resource_detail
 name: The tmRNA Website
-synonyms:
-- tmRNA website
-- tmRNA-SmpB database
 products:
 - category: GraphicalInterface
-  description: Main web portal for searching and browsing tmRNA and SmpB sequences with phylogenetic navigation
+  description: Main web portal for searching and browsing tmRNA and SmpB sequences
+    with phylogenetic navigation
   format: http
   id: tmrnawebsite.portal
   name: tmRNA Website Portal
@@ -30,30 +32,45 @@ products:
   original_source:
   - tmrnawebsite
   product_url: http://bioinformatics.sandia.gov/tmrna/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-13: HTTP 404 error
+    when accessing file'
 - category: Product
-  description: Multiple sequence alignments for 632 tmRNA and 2,258 distinct SmpB sequences
+  description: Multiple sequence alignments for 632 tmRNA and 2,258 distinct SmpB
+    sequences
   format: http
   id: tmrnawebsite.alignments
   name: tmRNA and SmpB Alignments
   original_source:
   - tmrnawebsite
   product_url: http://bioinformatics.sandia.gov/tmrna/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-13: HTTP 404 error
+    when accessing file'
 - category: Product
-  description: Krona-based interactive phylogenetic visualization tool for 9,387 tmRNA instances
+  description: Krona-based interactive phylogenetic visualization tool for 9,387 tmRNA
+    instances
   format: http
   id: tmrnawebsite.krona-viewer
   name: tmRNA Krona Phylogenetic Viewer
   original_source:
   - tmrnawebsite
   product_url: http://bioinformatics.sandia.gov/tmrna/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-13: HTTP 404 error
+    when accessing file'
 - category: Product
-  description: Software tools (tFind.pl, rFind.pl) for identifying tmRNA genes in genomic sequences
+  description: Software tools (tFind.pl, rFind.pl) for identifying tmRNA genes in
+    genomic sequences
   format: http
   id: tmrnawebsite.software
   name: tmRNA Identification Software
   original_source:
   - tmrnawebsite
   product_url: http://bioinformatics.sandia.gov/tmrna/software.html
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-13: HTTP 404 error
+    when accessing file'
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
     and annotations
@@ -271,12 +288,15 @@ publications:
   id: https://doi.org/10.1093/nar/gku1109
   journal: Nucleic Acids Research
   preferred: true
-  title: 'The tmRNA website'
+  title: The tmRNA website
   year: '2015'
+synonyms:
+- tmRNA website
+- tmRNA-SmpB database
 warnings:
-- Website appears to be inactive (http://bioinformatics.sandia.gov/tmrna/ not accessible as of 2025-11-13). Data has been contributed to RNAcentral.
+- Website appears to be inactive (http://bioinformatics.sandia.gov/tmrna/ not accessible
+  as of 2025-11-13). Data has been contributed to RNAcentral.
 ---
-
 # The tmRNA Website
 
 ## Overview

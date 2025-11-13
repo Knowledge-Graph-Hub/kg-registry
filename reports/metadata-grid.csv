@@ -143,6 +143,7 @@ entrez,active,PASS
 envo,active,PASS
 epigraphdb,active,PASS
 epio,active,PASS
+epsd,active,PASS
 eqtlgen,active,PASS
 erccrbp,active,PASS
 erccreg,active,PASS
@@ -232,6 +233,7 @@ ino,active,PASS
 insight,active,PASS
 intact,active,PASS
 interpro,active,PASS
+iptmnet,active,PASS
 itis,active,PASS
 kegg,active,PASS
 kg-alzheimers,active,PASS
@@ -375,6 +377,7 @@ peco,active,PASS
 petagraph,active,PASS
 pfam,active,PASS
 pfocr,active,PASS
+pgo,active,PASS
 pgxmine,active,PASS
 pharmacodb,active,PASS
 pharmacotherapydb,active,PASS
@@ -473,7 +476,6 @@ tcrd,active,PASS
 tera,active,PASS
 text-mining-kp,active,PASS
 tissues,active,PASS
-tmrnawebsite,active,PASS
 to,active,PASS
 toxcast,active,PASS
 toxin,active,PASS
@@ -605,6 +607,7 @@ tahe,inactive,PASS
 tahh,inactive,PASS
 tao,inactive,PASS
 tgma,inactive,PASS
+tmrnawebsite,inactive,PASS
 upa,inactive,PASS
 vario,orphaned,PASS
 vectology,inactive,PASS
