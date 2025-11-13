@@ -15,19 +15,19 @@ synonyms:
   - Human Kinase Hub
   - Human Protein Kinases Hub
 products:
-  - id: "kinhub-portal"
+  - id: "kinhub.portal"
     name: KinHub Portal
     category: GraphicalInterface
     format: http
     product_url: http://www.kinhub.org/
     description: Main portal providing resources and tools for human protein kinases
-  - id: "kinhub-kinmap"
+  - id: "kinhub.kinmap"
     name: KinMap
     category: GraphicalInterface
     format: http
     product_url: http://www.kinhub.org/kinmap/index.html
     description: Interactive web-based tool for navigating and annotating the human kinome tree with biochemical, structural, and disease data
-  - id: "kinhub-kinases-list"
+  - id: "kinhub.kinases-list"
     name: Human Protein Kinases List
     category: Product
     format: http
