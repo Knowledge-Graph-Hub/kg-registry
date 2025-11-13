@@ -16,61 +16,61 @@ synonyms:
   - NONCODE v6.0
   - NONCODE 2021
 products:
-  - id: "noncode-portal"
+  - id: "noncode.portal"
     name: NONCODE Web Portal
     category: GraphicalInterface
     format: http
     product_url: http://www.noncode.org/
     description: Main web interface for searching, browsing, and analyzing lncRNA annotations across 39 species
-  - id: "noncode-browse"
+  - id: "noncode.browse"
     name: Browse NONCODE
     category: GraphicalInterface
     format: http
     product_url: http://www.noncode.org/browse.php
     description: Browse lncRNAs by species and RNA type
-  - id: "noncode-search"
+  - id: "noncode.search"
     name: Search Gene/Transcript
     category: GraphicalInterface
     format: http
     product_url: http://www.noncode.org/search.php
     description: Search for specific genes or transcripts by identifier or keywords
-  - id: "noncode-blast"
+  - id: "noncode.blast"
     name: BLAST Similarity Search
     category: GraphicalInterface
     format: http
     product_url: http://www.noncode.org/blast.php
     description: Find similar sequences using BLAST alignment
-  - id: "noncode-disease"
+  - id: "noncode.disease"
     name: Disease Information
     category: GraphicalInterface
     format: http
     product_url: http://www.noncode.org/disease.php
     description: Browse disease-related lncRNA information, especially cancer associations
-  - id: "noncode-genome-browser"
+  - id: "noncode.genome-browser"
     name: Genome Browser
     category: GraphicalInterface
     format: http
     product_url: http://www.noncode.org/genome.php
     description: View transcript locations in genomic context (human hg38)
-  - id: "noncode-download"
+  - id: "noncode.download"
     name: Download Data
     category: Product
     format: http
     product_url: http://www.noncode.org/download.php
     description: Download complete lncRNA annotations and sequences
-  - id: "noncode-function"
+  - id: "noncode.function"
     name: Function Prediction
     category: GraphicalInterface
     format: http
     product_url: http://www.noncode.org/function.php
     description: Predicted functions for plant lncRNAs based on co-expression analysis
-  - id: "noncode-conservation"
+  - id: "noncode.conservation"
     name: Conservation Analysis
     category: GraphicalInterface
     format: http
     product_url: http://www.noncode.org/conservation.php
     description: Cross-species conservation analysis for plant lncRNAs
-  - id: "noncode-id-conversion"
+  - id: "noncode.id-conversion"
     name: ID Conversion Tool
     category: GraphicalInterface
     format: http
