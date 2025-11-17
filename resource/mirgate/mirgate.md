@@ -1,46 +1,81 @@
 ---
-activity_status: unknown
+activity_status: unresponsive
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: Information resource for MiRGate
+description: miRGate is a curated database of computationally predicted and experimentally validated miRNA-mRNA target pairs for human, mouse, and rat. The database integrates multiple prediction algorithms and includes sequences for both miRNAs and mRNA 3'-UTRs, along with experimentally validated data from four well-known databases. miRGate provides computational predictions using well-established algorithms and offers both a web interface and a REST API for programmatic access.
 domains:
-  - stub
+  - genomics
+  - biomedical
 id: mirgate
 infores_id: mirgate
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2025-11-17T00:00:00Z'
 layout: resource_detail
-name: MiRGate
-homepage_url: https://pubmed.ncbi.nlm.nih.gov/25858286/
+name: miRGate
+homepage_url: http://mirgate.bioinfo.cnio.es
+products:
+  - category: Portal
+    description: Web portal for querying and browsing miRNA-mRNA target predictions for human, mouse, and rat
+    format: http
+    id: mirgate.portal
+    name: miRGate Web Portal
+    original_source:
+      - mirgate
+    product_url: http://mirgate.bioinfo.cnio.es
+  - category: ProgrammingInterface
+    description: REST API for programmatic access to miRNA-mRNA target prediction data
+    format: http
+    id: mirgate.api
+    name: miRGate API
+    original_source:
+      - mirgate
+    product_url: http://mirgate.bioinfo.cnio.es/API/
+publications:
+  - id: "PMID:25858286"
+synonyms:
+  - miRGate
+taxon:
+  - NCBITaxon:9606
+  - NCBITaxon:10090
+  - NCBITaxon:10116
+warnings:
+  - The miRGate website (http://mirgate.bioinfo.cnio.es) is no longer accessible as of November 2025.
 ---
 
-# MiRGate
+# miRGate
 
 ## Overview
 
-Information resource for MiRGate
+miRGate is a curated database containing computational predicted and experimentally validated miRNA-mRNA target pairs. The database focuses on three model organisms: human (including human viruses), mouse, and rat. It provides predictions calculated using well-established algorithms and integrates experimentally validated data from multiple sources.
 
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
+## Key Features
 
-## Information Resource ID
+- **Computational Predictions**: Novel miRNA-mRNA pairs predicted using well-established algorithms
+- **Experimental Validation**: Integrated experimentally validated data from four well-known databases
+- **Comprehensive Sequences**: Updated and complete dataset of sequences for both miRNAs and mRNA 3'-UTRs
+- **Multi-organism Support**: Coverage of human (including human viruses), mouse, and rat
+- **API Access**: REST web service for programmatic access to the database
 
-This resource has the Information Resource identifier: `infores:mirgate`
+## Methodology
 
-## Curation Status
+The underlying methodology of miRGate has been successfully applied to independent datasets, providing predictions that were validated by functional assays. The database addresses the challenge of limited overlapping results among different prediction methods by integrating multiple approaches based on sequence matching, thermodynamics, and conservation.
 
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
+## Data Content
 
-## What Needs to be Curated
+miRGate includes:
+- Predicted miRNA-mRNA target pairs from computational algorithms
+- Experimentally validated miRNA-mRNA interactions from curated databases
+- Complete miRNA sequences for human, mouse, and rat
+- mRNA 3'-Untranslated Region (3'-UTR) sequences
+- Human virus-associated miRNA data
 
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
+## Access
 
-## Additional Notes
+The database was accessible through:
+- **Web Interface**: http://mirgate.bioinfo.cnio.es
+- **API**: http://mirgate.bioinfo.cnio.es/API/
+
+**Note**: As of November 2025, the miRGate website is no longer accessible.
+
+## Publication
+
+Andrés-León E, González Peña D, Gómez-López G, Pisano DG. "miRGate: a curated database of human, mouse and rat miRNA-mRNA targets." *Database (Oxford)*. 2015 Apr 8;2015:bav035. PMID: 25858286
