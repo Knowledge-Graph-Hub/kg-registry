@@ -1,108 +1,61 @@
 ---
-activity_status: active
+activity_status: inactive
 category: DataSource
-creation_date: '2025-08-12T00:00:00Z'
-description: Stub Resource page for stitch. This page was automatically generated because it was referenced by other resources.
+creation_date: '2025-11-17T00:00:00Z'
+description: STITCH (Search Tool for Interactions of Chemicals) is a database of known and predicted interactions between chemicals and proteins across 2,031 organisms. The resource integrates chemical-protein interactions from five main sources - genomic context predictions, high-throughput experimental data, conserved co-expression patterns, automated text mining, and curated knowledge from databases. STITCH covers 9.6 million proteins and 500,000 chemicals with 1.6 billion interactions, combining direct physical and indirect functional associations. Version 5 was released in 2016 and is no longer actively maintained (marked as unsupported).
 domains:
-  - stub
-id: stitch
-last_modified_date: '2025-08-12T00:00:00Z'
+  - drug discovery
+  - systems biology
+homepage_url: http://stitch-db.org/
+id: "stitch"
+last_modified_date: '2025-11-17T00:00:00Z'
 layout: resource_detail
-name: Stitch
+license:
+  id: http://stitch-db.org/download/STITCHacademiclicense.pdf
+  label: STITCH Academic License (free for academic use; commercial licensing available)
+name: STITCH
+publications:
+  - authors:
+      - Damian Szklarczyk
+      - Alberto Santos
+      - Christian von Mering
+      - Lars Juhl Jensen
+      - Peer Bork
+      - Michael Kuhn
+    doi: "10.1093/nar/gkv1277"
+    id: "PMID:26590256"
+    journal: Nucleic Acids Res
+    title: 'STITCH 5: augmenting protein-chemical interaction networks with tissue and affinity data'
+    year: "2016"
+taxon:
+  - NCBITaxon:1
 products:
-  - category: GraphProduct
-    description: Neo4j database dump of the Clinical Knowledge Graph and additional relationships
-    dump_format: neo4j
-    edge_count: 220000000
-    format: mixed
-    id: clinicalkg.graph
-    name: CKG Graph Dump
-    node_count: 16000000
+  - category: Product
+    description: Web interface for searching and visualizing chemical-protein interactions across organisms
+    format: http
+    id: "stitch.portal"
+    name: STITCH Web Portal
     original_source:
-      - uniprot
-      - tissues
-      - string
       - stitch
-      - smpdb
-      - signor
-      - sider
-      - refseq
-      - reactome
-      - phosphositeplus
-      - pfam
-      - oncokb
-      - mutationds
-      - intact
-      - hpa
-      - hmdb
-      - hgnc
-      - gwascatalog
-      - foodb
-      - drugbank
-      - disgenet
-      - diseases
-      - dgidb
-      - corum
-      - cancer-genome-interpreter
-      - doid
-      - bto
-      - efo
-      - go
-      - hp
-      - snomedct
-      - mod
-      - mi
-      - ms
-      - uo
-    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-  - category: GraphProduct
-    description: Neo4j database dump of the Clinical Knowledge Graph and additional relationships
-    dump_format: neo4j
-    edge_count: 220000000
-    format: mixed
-    id: cancer-genome-interpreter.clinicalkg.graph
-    name: CKG Graph Dump
-    node_count: 16000000
+    product_url: http://stitch-db.org/
+  - category: Product
+    description: Downloadable data files containing chemical-protein interaction networks
+    format: tsv
+    id: "stitch.downloads"
+    name: STITCH Data Downloads
     original_source:
-      - uniprot
-      - tissues
-      - string
       - stitch
-      - smpdb
-      - signor
-      - sider
-      - refseq
-      - reactome
-      - phosphositeplus
-      - pfam
-      - oncokb
-      - mutationds
-      - intact
-      - hpa
-      - hmdb
-      - hgnc
-      - gwascatalog
-      - foodb
-      - drugbank
-      - disgenet
-      - diseases
-      - dgidb
-      - corum
-      - cancer-genome-interpreter
-      - doid
-      - bto
-      - efo
-      - go
-      - hp
-      - snomedct
-      - mod
-      - mi
-      - ms
-      - uo
-    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-warnings:
-  - This is an automatically generated stub page. Please replace with accurate information about this resource.
-infores_id: stitch
+    product_url: http://stitch-db.org/cgi/download.pl
+  - category: ProgrammingInterface
+    description: API for programmatic access to STITCH chemical-protein interaction data
+    format: http
+    id: "stitch.api"
+    name: STITCH API
+    original_source:
+      - stitch
+    product_url: http://stitch-db.org/cgi/access.pl?footer_active_subpage=apis
+warnings: []
+infores_id: "stitch"
 ---
 
 # Stitch
