@@ -1,0 +1,8 @@
+resource_id	reason	details	date_attempted
+coralkinome	insufficient_info	Referenced as "CORAL" in KinAce aggregator but no independent homepage or clear documentation found. May be a component or alternate name for another resource.	2025-11-17
+mutationds	no_homepage	Only referenced in Clinical Knowledge Graph (CKG) as a data source. No independent website or documentation accessible. Domain does not resolve.	2025-11-17
+prsatlas	no_homepage	Referenced in EpiGraphDB but no independent website found. Searched for PRS Atlas and PGS Catalog but found no matching independent resource. Domain does not resolve.	2025-11-17
+regl	insufficient_data	Richards Effector Gene List - GitHub wiki page exists but lacks sufficient detail about data products, publications behind paywall. Homepage points to lab website without specific REGL information.	2025-11-17
+cacao	page_unresolvable	Community Assessment of Community Annotation with Ontologies - Homepage URL (http://gowiki.tamu.edu/wiki/index.php/Category:CACAO) cannot be resolved or accessed.	2025-11-17
+pharmacotherapydb	no_homepage	Only referenced as a source in AlzKB knowledge graph. No independent website, documentation, or other references found. Domains do not resolve.	2025-11-17
+pgo	insufficient_info	Only referenced as a source in UBKG knowledge graph. No independent website or clear documentation found. Not in OBO Foundry. Possible ontology or database acronym but cannot be verified.	2025-11-17
