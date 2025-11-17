@@ -1,46 +1,108 @@
 ---
-activity_status: unknown
-category: DataSource
+activity_status: active
+category: Aggregator
+contacts:
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: translator@broadinstitute.org
+    label: Broad Institute Translator Team
 creation_date: '2025-10-30T00:00:00Z'
-description: Molecular Data Provider for NCATS Biomedical Translator Reasoners
+description: The Molecular Data Provider (MolePro) is part of the NCATS Biomedical Data Translator project, integrating diverse chemical biology data sources into a curated framework for chemical entities and their effects on biological targets. MolePro consolidates information from over two dozen public chemical biology datasets, portals, and tools, providing comprehensive insights into compounds, protein targets, and similarity-based connections through both a custom API and TRAPI interface.
 domains:
-  - stub
+  - drug discovery
+  - chemistry and biochemistry
+  - biomedical
+  - pharmacology
+  - translational
 id: molepro
 infores_id: molepro
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2025-11-17T00:00:00Z'
 layout: resource_detail
-name: Molecular Data Provider for NCATS Biomedical Translator Reasoners
+name: Molecular Data Provider
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Molecular-Data-Provider
+products:
+  - category: ProgrammingInterface
+    description: MolePro API providing access to the knowledge graph of chemical entities and biological targets
+    format: http
+    id: molepro.api
+    name: MolePro API
+    original_source:
+      - molepro
+    product_url: https://molepro.transltr.io/molecular_data_provider/api
+  - category: ProgrammingInterface
+    description: TRAPI-compliant interface for MolePro knowledge graph following the Translator Reasoner API standard
+    format: http
+    id: molepro.trapi
+    name: MolePro TRAPI Interface
+    original_source:
+      - molepro
+    product_url: https://molepro-trapi.transltr.io/molepro/trapi/v1.5/ui/
+  - category: Product
+    description: Catalog of MolePro knowledge sources in JSON format
+    format: json
+    id: molepro.catalog
+    name: MolePro Knowledge Sources Catalog
+    original_source:
+      - molepro
+    product_url: https://translator.broadinstitute.org/molecular_data_provider/transformers
+repository: https://github.com/broadinstitute/molecular-data-provider
+synonyms:
+  - MolePro
+  - Molecular Data Provider
+tags:
+  - translator
 ---
 
-# Molecular Data Provider for NCATS Biomedical Translator Reasoners
+# Molecular Data Provider
 
 ## Overview
 
-Molecular Data Provider for NCATS Biomedical Translator Reasoners
+The Molecular Data Provider (MolePro) is part of the NCATS Biomedical Data Translator project, serving as a Knowledge Provider that integrates diverse chemical biology data sources into a unified framework. MolePro enhances understanding of chemical entities and their effects on biological targets through comprehensive data integration and curation.
 
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
+## Key Features
 
-## Information Resource ID
+- **Data Integration**: Consolidates information from over two dozen public chemical biology datasets, portals, and tools
+- **Unbiased Approach**: Adheres to stringent policies to avoid expert bias, ensuring impartial data scouting and meticulous data provenance
+- **Unified Framework**: Provides a cohesive framework for compounds and targets, facilitating "guilt-by-association" inferences
+- **Chemical Biology Expertise**: Contributes expertise in drug discovery, probe development, toxicity flagging, and small-molecule mechanism of action elucidation
+- **Similarity-Based Connections**: Includes connections based on chemical and biological similarity
 
-This resource has the Information Resource identifier: `infores:molepro`
+## Interfaces
 
-## Curation Status
+MolePro provides the same molecular data knowledge through two APIs:
 
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
+### MolePro API
+- **NCATS Translator server**: https://molepro.transltr.io/molecular_data_provider/api
+- **Broad Institute server**: https://translator.broadinstitute.org/molecular_data_provider/api
 
-## What Needs to be Curated
+### Translator Reasoner API (TRAPI)
+MolePro implements the standardized Translator Reasoner API, integrating query graphs, knowledge graphs, and results into a single HTTP message:
+- **NCATS Translator server**: https://molepro-trapi.transltr.io/molepro/trapi/v1.5/ui/
+- **Broad Institute server**: https://translator.broadinstitute.org/molepro/trapi/v1.5/ui/
 
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
+## Knowledge Sources
 
-## Additional Notes
+MolePro's knowledge graph integrates information from over two dozen sources, including:
+
+- BiGG Models, BigGIM, BindingDB
+- ChEBI, ChemBank, ChEMBL, CMAP
+- CTD, CTRP, DepMap
+- DGIdb, DrugBank, DrugCentral, Drug Repurposing Hub
+- DSSTox, Gelinea, GtoPdb
+- HGNC, HMDB, Inxight:Drugs
+- Kinomescan, MSigDB, PharmGKB
+- Pharos, ProbeMiner, PubChem
+- Reactome, RxNorm, SIDER
+- STITCH, STRING
+
+For complete details, see the [Catalog of MolePro knowledge sources](https://translator.broadinstitute.org/molecular_data_provider/transformers).
+
+## Source Code
+
+MolePro is open source and available on GitHub: https://github.com/broadinstitute/molecular-data-provider
+
+## Team Contact
+
+- Email: translator@broadinstitute.org
+- Team Lead: Vlado Dancik (@vdancik)
