@@ -29,7 +29,7 @@ products:
   format: owl
   id: rs.owl
   name: rs.owl
-  product_file_size: 5491875
+  product_file_size: 5494741
   product_url: http://purl.obolibrary.org/obo/rs.owl
 - category: OntologyProduct
   description: Rat Strain Ontology in OBO format

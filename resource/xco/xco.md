@@ -30,14 +30,14 @@ products:
   format: owl
   id: xco.owl
   name: xco.owl
-  product_file_size: 4249984
+  product_file_size: 4252344
   product_url: http://purl.obolibrary.org/obo/xco.owl
 - category: OntologyProduct
   description: Experimental condition ontology in OBO format
   format: obo
   id: xco.obo
   name: xco.obo
-  product_file_size: 1076107
+  product_file_size: 1076507
   product_url: http://purl.obolibrary.org/obo/xco.obo
 repository: https://github.com/rat-genome-database/XCO-experimental-condition-ontology
 ---

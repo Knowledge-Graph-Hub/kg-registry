@@ -9,9 +9,9 @@ license:
 name: msigdb OBO
 product_url: https://w3id.org/biopragmatics/resources/msigdb/msigdb.obo
 warnings:
-- File was not able to be retrieved when checked on 2025-11-11_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-11-13_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-11-10_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-11-11_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-09-11_ Error connecting to
   URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with url_

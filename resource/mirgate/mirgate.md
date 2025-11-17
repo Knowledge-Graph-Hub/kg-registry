@@ -2,45 +2,57 @@
 activity_status: unresponsive
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: miRGate is a curated database of computationally predicted and experimentally validated miRNA-mRNA target pairs for human, mouse, and rat. The database integrates multiple prediction algorithms and includes sequences for both miRNAs and mRNA 3'-UTRs, along with experimentally validated data from four well-known databases. miRGate provides computational predictions using well-established algorithms and offers both a web interface and a REST API for programmatic access.
+description: miRGate is a curated database of computationally predicted and experimentally
+  validated miRNA-mRNA target pairs for human, mouse, and rat. The database integrates
+  multiple prediction algorithms and includes sequences for both miRNAs and mRNA 3'-UTRs,
+  along with experimentally validated data from four well-known databases. miRGate
+  provides computational predictions using well-established algorithms and offers
+  both a web interface and a REST API for programmatic access.
 domains:
-  - genomics
-  - biomedical
+- genomics
+- biomedical
+homepage_url: http://mirgate.bioinfo.cnio.es
 id: mirgate
 infores_id: mirgate
 last_modified_date: '2025-11-17T00:00:00Z'
 layout: resource_detail
 name: miRGate
-homepage_url: http://mirgate.bioinfo.cnio.es
 products:
-  - category: Portal
-    description: Web portal for querying and browsing miRNA-mRNA target predictions for human, mouse, and rat
-    format: http
-    id: mirgate.portal
-    name: miRGate Web Portal
-    original_source:
-      - mirgate
-    product_url: http://mirgate.bioinfo.cnio.es
-  - category: ProgrammingInterface
-    description: REST API for programmatic access to miRNA-mRNA target prediction data
-    format: http
-    id: mirgate.api
-    name: miRGate API
-    original_source:
-      - mirgate
-    product_url: http://mirgate.bioinfo.cnio.es/API/
+- category: Portal
+  description: Web portal for querying and browsing miRNA-mRNA target predictions
+    for human, mouse, and rat
+  format: http
+  id: mirgate.portal
+  name: miRGate Web Portal
+  original_source:
+  - mirgate
+  product_url: http://mirgate.bioinfo.cnio.es
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-17: Error connecting
+    to URL: HTTPConnectionPool(host=''mirgate.bioinfo.cnio.es'', port=80): Max retries
+    exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPConnection
+    object at 0x7fd68a510490>: Failed to resolve ''mirgate.bioinfo.cnio.es'' ([Errno
+    -2] Name or service not known)"))'
+- category: ProgrammingInterface
+  description: REST API for programmatic access to miRNA-mRNA target prediction data
+  format: http
+  id: mirgate.api
+  name: miRGate API
+  original_source:
+  - mirgate
+  product_url: http://mirgate.bioinfo.cnio.es/API/
 publications:
-  - id: "PMID:25858286"
+- id: PMID:25858286
 synonyms:
-  - miRGate
+- miRGate
 taxon:
-  - NCBITaxon:9606
-  - NCBITaxon:10090
-  - NCBITaxon:10116
+- NCBITaxon:9606
+- NCBITaxon:10090
+- NCBITaxon:10116
 warnings:
-  - The miRGate website (http://mirgate.bioinfo.cnio.es) is no longer accessible as of November 2025.
+- The miRGate website (http://mirgate.bioinfo.cnio.es) is no longer accessible as
+  of November 2025.
 ---
-
 # miRGate
 
 ## Overview

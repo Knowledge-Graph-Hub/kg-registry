@@ -170,6 +170,7 @@ fypo,active,PASS
 gallont,active,PASS
 gdsc,active,PASS
 gecko,active,PASS
+gelinea,active,PASS
 genage,active,PASS
 gencc,active,PASS
 gencode,active,PASS
@@ -294,6 +295,7 @@ mmusdv,active,PASS
 mod,active,PASS
 modomics,active,PASS
 molecular-data-kp,active,PASS
+molepro,active,PASS
 mondo,active,PASS
 mop,active,PASS
 motrpac,active,PASS
@@ -462,7 +464,6 @@ sri-reference-kg,active,PASS
 srpdb,active,PASS
 stato,active,PASS
 stellar,active,PASS
-stitch,active,PASS
 string,active,PASS
 swisslipid,active,PASS
 swo,active,PASS
@@ -567,6 +568,7 @@ mat,inactive,PASS
 mfmo,inactive,PASS
 mfo,inactive,PASS
 micro,inactive,PASS
+mirgate,unresponsive,PASS
 mirnao,inactive,PASS
 miro,inactive,PASS
 mo,inactive,PASS
@@ -602,6 +604,7 @@ sep,inactive,PASS
 sibo,orphaned,PASS
 sider,inactive,PASS
 sopharm,inactive,PASS
+stitch,inactive,PASS
 tads,inactive,PASS
 tahe,inactive,PASS
 tahh,inactive,PASS

@@ -7,9 +7,9 @@ id: globi.interactions.csv
 name: GloBI interpreted interactions (CSV)
 product_url: https://zenodo.org/record/14640564/files/interactions.csv.gz
 warnings:
-- File was not able to be retrieved when checked on 2025-11-11_ No Content-Length
+- File was not able to be retrieved when checked on 2025-11-13_ No Content-Length
   header found
-- File was not able to be retrieved when checked on 2025-11-10_ No Content-Length
+- File was not able to be retrieved when checked on 2025-11-11_ No Content-Length
   header found
 layout: product_detail
 ---

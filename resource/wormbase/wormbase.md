@@ -77,11 +77,11 @@ products:
   - wormbase
   product_url: ftp://ftp.wormbase.org/pub/wormbase/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-10_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.wormbase.org/pub/wormbase/'
   - File was not able to be retrieved when checked on 2025-11-11_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.wormbase.org/pub/wormbase/'
-  - 'File was not able to be retrieved when checked on 2025-11-13: Error connecting
+  - File was not able to be retrieved when checked on 2025-11-13_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.wormbase.org/pub/wormbase/'
+  - 'File was not able to be retrieved when checked on 2025-11-17: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.wormbase.org/pub/wormbase/'''
 - category: GraphicalInterface
   description: Sub-portal hosting approximately 100 parasitic helminth genomes with

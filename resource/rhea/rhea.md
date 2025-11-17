@@ -45,9 +45,9 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-11_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-10_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-11-11_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -56,7 +56,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-11-13: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-11-17: HTTP 404 error
     when accessing file'
 - category: Product
   description: rhea OBO Graph JSON
@@ -72,9 +72,9 @@ products:
   secondary_source:
   - obo-db-ingest
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-11_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-10_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-11-11_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-11_ Error connecting
     to URL_ HTTPSConnectionPool(host='w3id.org', port=443)_ Max retries exceeded with
@@ -83,7 +83,7 @@ products:
     is unreachable'))
   - File was not able to be retrieved when checked on 2025-09-11_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-11-13: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-11-17: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: Rhea SSSOM

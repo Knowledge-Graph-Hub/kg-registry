@@ -21,7 +21,7 @@ products:
   name: vhog.owl
   product_url: http://purl.obolibrary.org/obo/vhog.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-13: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-11-17: HTTP 404 error
     when accessing file'
 ---
 ## Description
