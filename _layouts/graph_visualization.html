@@ -65,6 +65,86 @@ layout: default
   </div>
 </div>
 
+<!-- Export Menu and Display Options -->
+<div class="row mt-3">
+  <div class="col-12">
+    <div class="d-flex gap-2 align-items-start">
+      <div class="dropdown">
+        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="exportDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-download"></i> Export Current View
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="exportDropdown">
+          <li><h6 class="dropdown-header">Export as Image</h6></li>
+          <li>
+            <a class="dropdown-item" href="#" id="export-svg">
+              <i class="bi bi-file-earmark-image"></i> SVG (Vector)
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" id="export-png">
+              <i class="bi bi-file-earmark-image-fill"></i> PNG (Raster)
+            </a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li><h6 class="dropdown-header">Export Data</h6></li>
+          <li>
+            <a class="dropdown-item" href="#" id="export-tsv">
+              <i class="bi bi-table"></i> Interactions (TSV)
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" id="export-yaml">
+              <i class="bi bi-filetype-yml"></i> Resources (YAML)
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" id="export-jsonld">
+              <i class="bi bi-filetype-json"></i> Resources (JSON-LD)
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="dropdown">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="displayOptionsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-sliders"></i> Display Options
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="displayOptionsDropdown">
+          <li>
+            <div class="dropdown-item-text">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="show-products" checked>
+                <label class="form-check-label" for="show-products">
+                  Show Products
+                </label>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown-item-text">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="show-domain-connections">
+                <label class="form-check-label" for="show-domain-connections">
+                  Show Domain Connections
+                </label>
+              </div>
+            </div>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li>
+            <div class="dropdown-item-text">
+              <label for="node-type-filter" class="form-label mb-1">Filter Node Types:</label>
+              <select id="node-type-filter" class="form-select form-select-sm">
+                <option value="all" selected>All Types</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="row mt-4">
   <div class="col-lg-9">
     <div id="graph-container" class="graph-visualization">
@@ -112,57 +192,6 @@ layout: default
           <small class="text-muted" style="font-size: 0.75rem;">
             <em>Connected components: separate subgraphs with no links between them</em>
           </small>
-        </div>
-      </div>
-    </div>
-    
-    <div class="card mb-4">
-      <div class="card-header">
-        <h3>Display Options</h3>
-      </div>
-      <div class="card-body">
-        <div class="form-check mb-2">
-          <input class="form-check-input" type="checkbox" id="show-products" checked>
-          <label class="form-check-label" for="show-products">
-            Show Products
-          </label>
-        </div>
-        <div class="form-check mb-2">
-          <input class="form-check-input" type="checkbox" id="show-domain-connections">
-          <label class="form-check-label" for="show-domain-connections">
-            Show Domain Connections
-          </label>
-        </div>
-        <div class="mb-3">
-          <label for="node-type-filter" class="form-label">Filter Node Types:</label>
-          <select id="node-type-filter" class="form-select">
-            <option value="all" selected>All Types</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    
-    <div class="card mb-4">
-      <div class="card-header">
-        <h3>Export</h3>
-      </div>
-      <div class="card-body">
-        <div class="d-grid gap-2">
-          <button id="export-svg" class="btn btn-outline-primary btn-sm">
-            <i class="bi bi-file-earmark-image"></i> Export as SVG
-          </button>
-          <button id="export-png" class="btn btn-outline-primary btn-sm">
-            <i class="bi bi-file-earmark-image-fill"></i> Export as PNG
-          </button>
-          <button id="export-tsv" class="btn btn-outline-success btn-sm">
-            <i class="bi bi-table"></i> Export Interactions (TSV)
-          </button>
-          <button id="export-yaml" class="btn btn-outline-info btn-sm">
-            <i class="bi bi-filetype-yml"></i> Export Data (YAML)
-          </button>
-          <button id="export-jsonld" class="btn btn-outline-warning btn-sm">
-            <i class="bi bi-filetype-json"></i> Export Data (JSON-LD)
-          </button>
         </div>
       </div>
     </div>

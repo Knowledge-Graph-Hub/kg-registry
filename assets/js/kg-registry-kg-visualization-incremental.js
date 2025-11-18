@@ -585,12 +585,27 @@ function setupControls() {
     }
   });
   
-  // Export buttons
-  document.getElementById('export-svg').addEventListener('click', exportAsSVG);
-  document.getElementById('export-png').addEventListener('click', exportAsPNG);
-  document.getElementById('export-tsv').addEventListener('click', exportAsTSV);
-  document.getElementById('export-yaml').addEventListener('click', exportAsYAML);
-  document.getElementById('export-jsonld').addEventListener('click', exportAsJSONLD);
+  // Export buttons (handle dropdown links with preventDefault)
+  document.getElementById('export-svg').addEventListener('click', (e) => {
+    e.preventDefault();
+    exportAsSVG();
+  });
+  document.getElementById('export-png').addEventListener('click', (e) => {
+    e.preventDefault();
+    exportAsPNG();
+  });
+  document.getElementById('export-tsv').addEventListener('click', (e) => {
+    e.preventDefault();
+    exportAsTSV();
+  });
+  document.getElementById('export-yaml').addEventListener('click', (e) => {
+    e.preventDefault();
+    exportAsYAML();
+  });
+  document.getElementById('export-jsonld').addEventListener('click', (e) => {
+    e.preventDefault();
+    exportAsJSONLD();
+  });
   
   // Clear graph button
   document.getElementById('clear-graph').addEventListener('click', clearGraph);
