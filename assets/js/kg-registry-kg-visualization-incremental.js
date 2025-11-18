@@ -585,6 +585,13 @@ function setupControls() {
     }
   });
   
+  // Export buttons
+  document.getElementById('export-svg').addEventListener('click', exportAsSVG);
+  document.getElementById('export-png').addEventListener('click', exportAsPNG);
+  document.getElementById('export-tsv').addEventListener('click', exportAsTSV);
+  document.getElementById('export-yaml').addEventListener('click', exportAsYAML);
+  document.getElementById('export-jsonld').addEventListener('click', exportAsJSONLD);
+  
   // Clear graph button
   document.getElementById('clear-graph').addEventListener('click', clearGraph);
   
@@ -880,6 +887,238 @@ function dragEnded(event, d) {
   if (!event.active) simulation.alphaTarget(0);
   d.fx = null;
   d.fy = null;
+}
+
+/**
+ * Export current view as SVG
+ */
+function exportAsSVG() {
+  if (displayedGraph.nodes.length === 0) {
+    alert('No data to export. Please add resources to the graph first.');
+    return;
+  }
+  
+  // Clone the SVG
+  const svgElement = document.querySelector('#graph-container svg');
+  const clone = svgElement.cloneNode(true);
+  
+  // Get the bounding box of all elements
+  const bbox = svgElement.querySelector('g.graph-elements').getBBox();
+  const padding = 50;
+  
+  // Set viewBox to fit content
+  clone.setAttribute('viewBox', `${bbox.x - padding} ${bbox.y - padding} ${bbox.width + padding * 2} ${bbox.height + padding * 2}`);
+  clone.setAttribute('width', bbox.width + padding * 2);
+  clone.setAttribute('height', bbox.height + padding * 2);
+  
+  // Add white background
+  const background = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+  background.setAttribute('x', bbox.x - padding);
+  background.setAttribute('y', bbox.y - padding);
+  background.setAttribute('width', bbox.width + padding * 2);
+  background.setAttribute('height', bbox.height + padding * 2);
+  background.setAttribute('fill', 'white');
+  clone.insertBefore(background, clone.firstChild);
+  
+  // Serialize SVG
+  const serializer = new XMLSerializer();
+  const svgString = serializer.serializeToString(clone);
+  
+  // Create blob and download
+  const blob = new Blob([svgString], { type: 'image/svg+xml' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = `kg-registry-graph-${new Date().toISOString().split('T')[0]}.svg`;
+  link.click();
+  URL.revokeObjectURL(url);
+}
+
+/**
+ * Export current view as PNG
+ */
+function exportAsPNG() {
+  if (displayedGraph.nodes.length === 0) {
+    alert('No data to export. Please add resources to the graph first.');
+    return;
+  }
+  
+  const svgElement = document.querySelector('#graph-container svg');
+  const bbox = svgElement.querySelector('g.graph-elements').getBBox();
+  const padding = 50;
+  const width = bbox.width + padding * 2;
+  const height = bbox.height + padding * 2;
+  
+  // Clone and prepare SVG
+  const clone = svgElement.cloneNode(true);
+  clone.setAttribute('viewBox', `${bbox.x - padding} ${bbox.y - padding} ${width} ${height}`);
+  clone.setAttribute('width', width);
+  clone.setAttribute('height', height);
+  
+  // Add white background
+  const background = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+  background.setAttribute('x', bbox.x - padding);
+  background.setAttribute('y', bbox.y - padding);
+  background.setAttribute('width', width);
+  background.setAttribute('height', height);
+  background.setAttribute('fill', 'white');
+  clone.insertBefore(background, clone.firstChild);
+  
+  // Serialize SVG
+  const serializer = new XMLSerializer();
+  const svgString = serializer.serializeToString(clone);
+  const svgBlob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
+  const svgUrl = URL.createObjectURL(svgBlob);
+  
+  // Create image and canvas
+  const img = new Image();
+  img.onload = () => {
+    const canvas = document.createElement('canvas');
+    canvas.width = width;
+    canvas.height = height;
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(img, 0, 0);
+    
+    // Convert to PNG and download
+    canvas.toBlob((blob) => {
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `kg-registry-graph-${new Date().toISOString().split('T')[0]}.png`;
+      link.click();
+      URL.revokeObjectURL(url);
+      URL.revokeObjectURL(svgUrl);
+    });
+  };
+  img.src = svgUrl;
+}
+
+/**
+ * Export interactions as TSV
+ */
+function exportAsTSV() {
+  if (displayedGraph.links.length === 0) {
+    alert('No interactions to export. Please add resources to the graph first.');
+    return;
+  }
+  
+  // Create TSV header
+  let tsv = 'source\ttarget\trelationship_type\tsource_name\ttarget_name\tsource_type\ttarget_type\n';
+  
+  // Add each link
+  displayedGraph.links.forEach(link => {
+    const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
+    const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+    const sourceNode = displayedGraph.nodes.find(n => n.id === sourceId);
+    const targetNode = displayedGraph.nodes.find(n => n.id === targetId);
+    
+    if (sourceNode && targetNode) {
+      tsv += `${sourceId}\t${targetId}\t${link.type}\t${sourceNode.name}\t${targetNode.name}\t${sourceNode.type}\t${targetNode.type}\n`;
+    }
+  });
+  
+  // Create blob and download
+  const blob = new Blob([tsv], { type: 'text/tab-separated-values' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = `kg-registry-interactions-${new Date().toISOString().split('T')[0]}.tsv`;
+  link.click();
+  URL.revokeObjectURL(url);
+}
+
+/**
+ * Export data as YAML (filtered registry data)
+ */
+async function exportAsYAML() {
+  if (activeResourceIds.size === 0) {
+    alert('No resources to export. Please add resources to the graph first.');
+    return;
+  }
+  
+  // Build filtered data structure matching registry format
+  const exportData = {
+    resources: []
+  };
+  
+  // Add each active resource with its full data
+  for (const resourceId of activeResourceIds) {
+    const resource = allResourceMap[resourceId];
+    if (resource) {
+      // Create a clean copy of the resource
+      const resourceCopy = JSON.parse(JSON.stringify(resource));
+      exportData.resources.push(resourceCopy);
+    }
+  }
+  
+  // Convert to YAML
+  const yamlString = jsyaml.dump(exportData, {
+    indent: 2,
+    lineWidth: 120,
+    noRefs: true
+  });
+  
+  // Create blob and download
+  const blob = new Blob([yamlString], { type: 'text/yaml' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = `kg-registry-data-${new Date().toISOString().split('T')[0]}.yml`;
+  link.click();
+  URL.revokeObjectURL(url);
+}
+
+/**
+ * Export data as JSON-LD (filtered registry data)
+ */
+async function exportAsJSONLD() {
+  if (activeResourceIds.size === 0) {
+    alert('No resources to export. Please add resources to the graph first.');
+    return;
+  }
+  
+  // Load the full JSON-LD context from the registry
+  let context = {};
+  try {
+    const response = await fetch('/kg-registry/registry/context.jsonld');
+    context = await response.json();
+  } catch (error) {
+    console.warn('Could not load JSON-LD context, using basic context:', error);
+    context = {
+      '@context': {
+        '@vocab': 'http://example.org/kg-registry/'
+      }
+    };
+  }
+  
+  // Build filtered data structure
+  const exportData = {
+    '@context': context['@context'] || context,
+    '@graph': []
+  };
+  
+  // Add each active resource with its full data
+  for (const resourceId of activeResourceIds) {
+    const resource = allResourceMap[resourceId];
+    if (resource) {
+      const resourceCopy = JSON.parse(JSON.stringify(resource));
+      // Add @id if not present
+      if (!resourceCopy['@id']) {
+        resourceCopy['@id'] = resourceId;
+      }
+      exportData['@graph'].push(resourceCopy);
+    }
+  }
+  
+  // Create blob and download
+  const jsonString = JSON.stringify(exportData, null, 2);
+  const blob = new Blob([jsonString], { type: 'application/ld+json' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = `kg-registry-data-${new Date().toISOString().split('T')[0]}.jsonld`;
+  link.click();
+  URL.revokeObjectURL(url);
 }
 
 // Click on background to deselect and hide context menu
