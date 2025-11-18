@@ -607,6 +607,9 @@ function setupControls() {
     exportAsJSONLD();
   });
   
+  // Example button - show random KnowledgeGraph resource
+  document.getElementById('example-button').addEventListener('click', showRandomExample);
+  
   // Clear graph button
   document.getElementById('clear-graph').addEventListener('click', clearGraph);
   
@@ -902,6 +905,33 @@ function dragEnded(event, d) {
   if (!event.active) simulation.alphaTarget(0);
   d.fx = null;
   d.fy = null;
+}
+
+/**
+ * Show a random KnowledgeGraph resource as an example
+ */
+function showRandomExample() {
+  // Filter for KnowledgeGraph category resources
+  const knowledgeGraphs = allResources.filter(resource => 
+    resource.category === 'KnowledgeGraph'
+  );
+  
+  if (knowledgeGraphs.length === 0) {
+    alert('No KnowledgeGraph resources found in the registry.');
+    return;
+  }
+  
+  // Clear existing graph first
+  clearGraph();
+  
+  // Select a random KnowledgeGraph
+  const randomIndex = Math.floor(Math.random() * knowledgeGraphs.length);
+  const selectedResource = knowledgeGraphs[randomIndex];
+  
+  // Add it to the graph
+  addResourcesToGraph([selectedResource.id]);
+  
+  console.log(`Example: Displaying ${selectedResource.name || selectedResource.id}`);
 }
 
 /**
