@@ -58,7 +58,27 @@ const config = {
     MappingProduct: "#bcbd22",
     ProcessProduct: "#17becf",
     GraphicalInterface: "#aec7e8",
-    ProgrammingInterface: "#ffbb78"
+    ProgrammingInterface: "#ffbb78",
+    DocumentationProduct: "#98df8a"
+  },
+  icons: {
+    // Resource icons
+    Aggregator: "grid-3x3",
+    Resource: "archive",
+    KnowledgeGraph: "globe",
+    DataSource: "shop",
+    DataModel: "diagram-3",
+    Ontology: "diagram-2",
+    // Product icons
+    GraphProduct: "globe",
+    Product: "box",
+    MappingProduct: "map",
+    ProcessProduct: "gear",
+    DataModelProduct: "diagram-3",
+    OntologyProduct: "diagram-2",
+    GraphicalInterface: "window",
+    ProgrammingInterface: "code-square",
+    DocumentationProduct: "journal-text"
   },
   links: {
     width: {
@@ -83,10 +103,11 @@ let displayedGraph = { nodes: [], links: [] }; // Currently displayed graph
 let activeResourceIds = new Set(); // Set of resource IDs currently in the graph
 let simulation;
 let svg;
-let linkElements, nodeElements, textElements;
+let linkElements, nodeElements, textElements, iconElements;
 let selectedNode = null;
 let showProducts = true;
 let showDomainConnections = false;
+let showIcons = true;
 
 // Initialize the visualization
 document.addEventListener('DOMContentLoaded', () => {
@@ -433,6 +454,28 @@ function updateGraph() {
     .attr('stroke', d => d.isUserSelected ? '#000' : '#fff')
     .attr('stroke-width', d => d.isUserSelected ? 3 : 1.5);
   
+  // Update icons using foreignObject to embed HTML
+  iconElements = g.selectAll('foreignObject.node-icon')
+    .data(displayedGraph.nodes, d => d.id);
+  
+  iconElements.exit().remove();
+  
+  const iconEnter = iconElements.enter()
+    .append('foreignObject')
+    .attr('class', 'node-icon')
+    .attr('width', 16)
+    .attr('height', 16)
+    .attr('pointer-events', 'none')
+    .html(d => {
+      const iconName = config.icons[d.type] || config.icons.Resource || 'box';
+      return `<i class="bi bi-${iconName}" style="color: white; font-size: 12px; display: flex; align-items: center; justify-content: center; width: 16px; height: 16px;"></i>`;
+    });
+  
+  iconElements = iconEnter.merge(iconElements);
+  
+  // Show/hide icons based on setting
+  iconElements.style('display', showIcons ? 'block' : 'none');
+  
   // Update labels
   textElements = g.selectAll('text')
     .data(displayedGraph.nodes, d => d.id);
@@ -468,6 +511,10 @@ function updateGraph() {
     nodeElements
       .attr('cx', d => d.x)
       .attr('cy', d => d.y);
+    
+    iconElements
+      .attr('x', d => d.x - 8)  // Center by offsetting half width
+      .attr('y', d => d.y - 8);  // Center by offsetting half height
     
     textElements
       .attr('x', d => d.x)
@@ -635,6 +682,14 @@ function setupControls() {
     const currentResources = Array.from(activeResourceIds);
     clearGraph();
     addResourcesToGraph(currentResources);
+  });
+  
+  // Show icons checkbox
+  document.getElementById('show-icons').addEventListener('change', (e) => {
+    showIcons = e.target.checked;
+    if (iconElements) {
+      iconElements.style('display', showIcons ? 'block' : 'none');
+    }
   });
   
   // Search input for filtering resources
@@ -869,8 +924,8 @@ function createLegend() {
   const userSelectedNote = document.createElement('div');
   userSelectedNote.className = 'legend-item mb-3';
   userSelectedNote.innerHTML = `
-    <svg width="20" height="20" style="vertical-align: middle;">
-      <circle cx="10" cy="10" r="8" fill="#1f77b4" stroke="#000" stroke-width="3" />
+    <svg width="30" height="30" style="vertical-align: middle;">
+      <circle cx="15" cy="15" r="12" fill="#1f77b4" stroke="#000" stroke-width="3" />
     </svg>
     <span class="ms-2"><strong>Bold border = User-selected resource</strong></span>
   `;
@@ -881,13 +936,18 @@ function createLegend() {
   hr.className = 'my-2';
   legend.appendChild(hr);
   
-  // Add node type colors
+  // Add node type colors with icons
   Object.entries(config.colors).forEach(([type, color]) => {
+    const iconName = config.icons[type] || config.icons.Resource || 'box';
+    
     const item = document.createElement('div');
     item.className = 'legend-item mb-2';
     item.innerHTML = `
-      <svg width="20" height="20" style="vertical-align: middle;">
-        <circle cx="10" cy="10" r="8" fill="${color}" />
+      <svg width="30" height="30" style="vertical-align: middle;">
+        <circle cx="15" cy="15" r="12" fill="${color}" />
+        <foreignObject x="7" y="7" width="16" height="16">
+          <i class="bi bi-${iconName}" style="color: white; font-size: 12px; display: flex; align-items: center; justify-content: center; width: 16px; height: 16px;"></i>
+        </foreignObject>
       </svg>
       <span class="ms-2">${type}</span>
     `;
