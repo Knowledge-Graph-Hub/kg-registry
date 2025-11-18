@@ -444,7 +444,13 @@ function updateGraph() {
     .attr('font-size', 10)
     .attr('dx', 12)
     .attr('dy', 4)
-    .text(d => truncateText(d.name, 15));
+    .text(d => {
+      // For products, use ID instead of name (name can be very long)
+      if (d.parentId) {
+        return truncateText(d.id, 15);
+      }
+      return truncateText(d.name, 15);
+    });
   
   textElements = textEnter.merge(textElements);
   
