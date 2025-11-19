@@ -1,123 +1,146 @@
 # KG-Registry Knowledge Graph
 
-This feature provides a graph visualization of the KG-Registry resources and their relationships.
+The KG-Registry Knowledge Graph (KG-Registry-KG) provides an interactive visualization of the relationships between resources in the KG-Registry. This feature uses D3.js for force-directed graph layout and rendering, allowing users to explore how resources, their products, and their relationships connect together.
 
 ## Overview
 
-The KG-Registry Knowledge Graph (KG-Registry-KG) visualizes the relationships between the various resources in the KG-Registry. It uses D3.js for the force-directed graph layout and rendering.
+The KG-Registry-KG allows you to:
+- Incrementally build a custom visualization by selecting specific resources
+- Explore relationships between resources through their products
+- Export visualizations as images or data files
+- View example knowledge graphs with a single click
 
-## Files
+## Accessing the Visualization
 
-- `kg-registry-kg.md`: The main page for the KG-Registry-KG
-- `_layouts/graph_visualization.html`: The layout template for the visualization page
-- `assets/js/kg-registry-kg-visualization.js`: The JavaScript code for the visualization
-- `assets/css/kg-registry-kg.css`: The CSS styles for the visualization
+Visit the [KG-Registry Knowledge Graph page](/kg-registry/kg-registry-kg/) to access the interactive visualization.
 
 ## Features
 
-- Interactive force-directed graph of resources and their relationships
-- Node color-coding by resource type
-- Filtering by resource type
-- Search functionality
-- Node selection and highlighting of connections
-- Detailed information panel for selected nodes
-- Zoom and pan capabilities
-- Automatic zoom-to-fit behavior to show the entire graph on initial load
-- "KGs Only" button to filter and show only KnowledgeGraph nodes and their connections
-- Responsive design
+### Interactive Graph Building
 
-## Data Source
+- **Incremental Loading**: Start with an empty graph and add only the resources you want to explore
+- **Resource Selection**: Choose resources from a searchable dropdown list (hold Ctrl/Cmd for multiple selections)
+- **Direct Connections Only**: Each resource initially shows only its direct products, keeping the graph manageable
+- **Right-Click Expansion**: Right-click any node to expand its connections to other resources
+- **Example Button**: Click the "Example" button to randomly display a Knowledge Graph resource
 
-The visualization uses data from the `registry/kgs.yml` file, which contains the registry of all resources. The data is processed to create nodes and links for the graph.
+### Navigation and Interaction
+
+- **Drag and Reposition**: Drag nodes to arrange them for better visibility
+- **Click for Details**: Left-click any node to see its metadata and highlight its connections
+- **Zoom and Pan**: Use mouse wheel or pinch gestures to zoom; drag the background to pan
+- **Search**: Filter the resource list by name to quickly find specific resources
+
+### Display Customization
+
+The **Display Options** dropdown provides several customization features:
+- **Show Products**: Toggle visibility of product nodes
+- **Show Domain Connections**: Display connections between resources that share domains
+- **Show Icons**: Toggle Bootstrap icons on nodes representing different resource and product types
+- **Filter Node Types**: Show only specific types of nodes (e.g., only DataSources)
+
+### Export Capabilities
+
+The **Export Current View** dropdown offers multiple export formats:
+
+**Image Exports:**
+- **SVG (Vector)**: Scalable vector graphic suitable for publications and presentations
+- **PNG (Raster)**: Raster image for easy sharing and embedding
+
+**Data Exports:**
+- **Interactions (TSV)**: Tab-separated file containing all visible edges with source, target, relationship type, and node metadata
+- **Resources (YAML)**: YAML file containing complete metadata for all displayed resources (matches registry format)
+- **Resources (JSON-LD)**: JSON-LD file with semantic web context for all displayed resources
+
+All exports automatically include the current date in the filename.
+
+### Visual Features
+
+- **Color-Coded Nodes**: Different resource and product types use distinct colors
+- **Category Icons**: Bootstrap icons indicate the category of each node (can be toggled off)
+- **Bold Borders**: User-selected resources are highlighted with bold black borders
+- **Interactive Legend**: Legend shows all node types with their colors and icons
+- **Node Labels**: Resource nodes show names; product nodes show IDs (which are typically shorter)
+
+### Graph Management
+
+- **Active Resources List**: Track which resources are currently displayed with removable badges
+- **Statistics**: View real-time counts of nodes, edges, and connected components
+- **Clear Graph**: Remove all resources and start fresh
+- **Context Menu**: Right-click any node for additional options (expand connections, hide node)
 
 ## Implementation Details
 
-1. **Visualization System:**
-   - D3.js for force-directed graph layout and SVG rendering
+### Files
 
-2. **Data Processing:**
-   - Resources from `kgs.yml` are represented as nodes
-   - Relationships between resources are represented as links
-   - Product nodes use their registry IDs for consistent linking
-   - Node names are determined using the following precedence:
-     - For resources: the `name` property from kgs.yml, falling back to the resource `id` if not available
-     - For products: the `description` property, falling back to the product `id` if not available
+- `kg-registry-kg.md`: The main page for the KG-Registry-KG
+- `_layouts/graph_visualization.html`: The layout template for the visualization page
+- `assets/js/kg-registry-kg-visualization-incremental.js`: The JavaScript code for incremental graph building
+- `assets/css/kg-registry-kg.css`: The CSS styles for the visualization
 
-3. **Interactive Features:**
-   - Drag nodes to reposition them
-   - Click nodes to see details and highlight connections
-   - Filter nodes by type
-   - Search for specific nodes by name or ID
-   - Reset the graph to its original state
-   - Focus only on Knowledge Graph resources
+### Data Source
 
-4. **Accessibility Improvements:**
-   - Truncated labels with full information in tooltips
-   - High-contrast color scheme
-   - Keyboard navigation support
-   - Responsive design for various screen sizes
+The visualization loads data from `registry/kgs.yml`, which contains the complete registry of all resources. Resources are loaded once at initialization, then added to the graph on-demand as users select them.
 
-## Automatic Zoom-to-Fit and Loading Progress
+### Architecture
 
-The visualization includes an automatic zoom-to-fit feature that ensures the entire graph is visible:
+1. **Incremental Loading Model**: 
+   - Graph starts empty for better performance
+   - Resources are added only when explicitly selected
+   - Products are created for each added resource
+   - Product connections only appear when both the product's parent resource and its source resources are in the graph
 
-1. **Initial Load**: When the graph first loads, it automatically calculates the bounding box of all nodes and zooms to fit the entire graph in the view.
+2. **Smart Connection Building**:
+   - Products link to their parent resources via "has_product" relationships
+   - Products link to their source resources via "derived_from" relationships
+   - Resources can link to component resources via "has_component" relationships
+   - Domain connections show resources that share domains (optional)
 
-2. **After Reset**: When the "Reset Graph" button is clicked, the graph will re-center and zoom to fit all nodes after the simulation stabilizes.
+3. **Node Identity**:
+   - Resources use their resource ID as the node ID
+   - Products use their product ID (e.g., `resource.product_name`)
+   - Products are marked with a `parentId` property linking them to their resource
 
-3. **Smooth Transitions**: The zoom-to-fit uses smooth transitions for a better user experience.
+4. **Force-Directed Layout**:
+   - D3.js force simulation positions nodes automatically
+   - Collision detection prevents node overlap
+   - Users can drag nodes to manually adjust positions
+   - Positions are maintained during updates
 
-4. **Loading Overlay**: A semi-transparent overlay with a message appears while the graph is being built.
+5. **Export Implementation**:
+   - SVG export clones the current SVG with proper viewBox and background
+   - PNG export converts SVG to canvas, then to PNG blob
+   - TSV export formats visible links as tab-separated values
+   - YAML/JSON-LD exports include complete resource metadata from the registry
 
-5. **Progress Bar**: A progress bar shows the current state of the force-directed layout calculation, giving users feedback during processing of large graphs.
+## Usage Tips
 
-6. **Balanced Zoom Level**: The zoom level is carefully balanced to avoid excessive zoom-out for large graphs or too much zoom-in for small graphs.
+1. **Start Small**: Begin with 1-3 resources to keep the visualization manageable
+2. **Expand Incrementally**: Right-click nodes to expand their connections as needed
+3. **Use the Example Button**: Click "Example" to see a random Knowledge Graph and understand the visualization
+4. **Search First**: Use the search box to filter the resource list before selecting
+5. **Explore Products**: Keep "Show Products" enabled to see how resources produce different types of outputs
+6. **Export for Sharing**: Use SVG export for publications, PNG for presentations, TSV for analysis
+7. **Track Components**: View the component count to understand if you have multiple disconnected subgraphs
+8. **Customize Colors**: Icons can be hidden if you prefer a cleaner look focusing on colors alone
 
-This feature helps users get a complete overview of the graph structure before diving into specific sections and provides visual feedback during the loading process.
+## Performance Considerations
 
-## Performance Optimizations
-
-Several optimizations have been implemented to improve the visualization performance, especially for larger graphs:
-
-1. **Pre-computed Node Connections**: Connections between nodes are calculated once when the data loads, rather than recomputing them every time a node is selected.
-
-2. **CSS Class-based Styling**: Uses CSS class toggling instead of direct style manipulation for better performance.
-
-3. **Batched DOM Updates**: Uses requestAnimationFrame to batch visual updates for smoother performance.
-
-4. **Efficient DOM Manipulation**: Uses DocumentFragment for building complex DOM structures in memory before adding them to the page.
-
-5. **Reduced DOM Reflows**: Minimizes style recalculations by using CSS transitions for animations.
-
-6. **Optimized Filtering**: Improved algorithms for filtering and highlighting nodes and connections.
-
-These optimizations significantly improve performance when working with large graphs, especially when selecting nodes and highlighting their connections.
-
-## Node Uniqueness Handling
-
-To ensure data integrity and proper visualization, the implementation handles node uniqueness with several mechanisms:
-
-1. **Node Map Tracking**: A `nodeMap` object tracks all created nodes by their IDs to prevent duplicates.
-
-2. **Placeholder Node Creation**: When a node references another node that hasn't been defined yet, a placeholder node is created. This placeholder is later updated with complete information when the referenced node is properly defined.
-
-3. **Smart Duplicate Prevention**: 
-   - During data processing, the system checks if a node with the same ID already exists before creating a new one
-   - For product nodes, it properly updates existing nodes with additional information instead of creating duplicates
-   - For resource nodes, it ensures component relationships are properly established without duplication
-
-4. **Final Validation**: A final validation step ensures no duplicate nodes exist in the final graph by:
-   - Using a Set to track unique node IDs
-   - Keeping only the first instance of each node
-   - Logging warnings about duplicate nodes for debugging
-   - Filtering links to ensure they only reference valid nodes
-
-5. **Link Validation**: The system ensures all links reference existing nodes and removes invalid links.
-
-6. **Parent-Child Relationship Validation**: Product nodes with invalid parent references are identified and reported.
-
-This comprehensive approach ensures the graph visualization accurately represents the data without duplication or missing relationships.
+The incremental loading approach significantly improves performance compared to rendering all resources at once:
+- Initial page load is fast (empty graph)
+- Only selected resources and their immediate connections are rendered
+- Large knowledge graphs can be explored without overwhelming the visualization
+- Force simulation only recalculates for visible nodes
 
 ## Maintenance
 
-When new resources are added to the registry, the graph will automatically include them on the next build of the site. No additional maintenance is required unless new resource types are added, in which case you may want to update the color scheme in the JavaScript file.
+When new resources are added to the registry, they automatically appear in the resource selector on the next build. No additional maintenance is required unless:
+- New resource/product categories are added (update color scheme and icon mappings in JavaScript)
+- New relationship types are added (update link rendering logic)
+- The registry data structure changes significantly (update data loading and node creation logic)
+
+## Related Documentation
+
+- [Resources in the KG-Registry](intro/resources.html)
+- [Products in the KG-Registry](intro/products.html)
+- [KG-Registry Schema](schema/kg_registry_schema.html)
