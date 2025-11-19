@@ -37,7 +37,7 @@ The [KG-Registry Knowledge Graph](/kg-registry/kg-registry-kg/) provides an inte
 - Export visualizations as images or data files
 - See example knowledge graphs with a single click
 
-For more details, see the [KG-Registry-KG documentation](../kg-registry-kg.html).
+For more details, see the [KG-Registry-KG documentation](kg-registry-kg.html).
 
 ## How are Registry identifiers created?
 

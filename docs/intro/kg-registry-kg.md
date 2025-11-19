@@ -1,3 +1,7 @@
+---
+layout: intro_doc
+---
+
 # KG-Registry Knowledge Graph
 
 The KG-Registry Knowledge Graph (KG-Registry-KG) provides an interactive visualization of the relationships between resources in the KG-Registry. This feature uses D3.js for force-directed graph layout and rendering, allowing users to explore how resources, their products, and their relationships connect together.
@@ -141,6 +145,5 @@ When new resources are added to the registry, they automatically appear in the r
 
 ## Related Documentation
 
-- [Resources in the KG-Registry](intro/resources.html)
-- [Products in the KG-Registry](intro/products.html)
-- [KG-Registry Schema](schema/kg_registry_schema.html)
+- [Resources in the KG-Registry](resources.html)
+- [Products in the KG-Registry](products.html)
