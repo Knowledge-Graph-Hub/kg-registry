@@ -39,9 +39,9 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/SDTM/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
     when accessing file'
@@ -55,9 +55,9 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/SDTM/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
     when accessing file'
@@ -71,9 +71,9 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/ADaM/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
     when accessing file'
@@ -87,9 +87,9 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/SEND/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
     when accessing file'
@@ -103,9 +103,9 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/Define-XML/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
     when accessing file'
@@ -119,9 +119,9 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/Protocol/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
     when accessing file'
@@ -135,9 +135,9 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/Glossary/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
     when accessing file'
@@ -151,9 +151,9 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/DDF/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
     when accessing file'
@@ -167,9 +167,9 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/TMF/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
     when accessing file'
@@ -183,9 +183,9 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/MRCT%20Center%20Clinical%20Research%20Glossary/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
     when accessing file'
@@ -215,9 +215,9 @@ products:
   secondary_source:
   - athena
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - File was not able to be retrieved when checked on 2025-11-13_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
     to URL_ Exceeded 30 redirects.
   - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
     to URL: Exceeded 30 redirects.'

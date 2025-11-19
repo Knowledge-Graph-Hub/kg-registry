@@ -43,11 +43,11 @@ products:
   - epsd
   product_url: https://epsd.biocuckoo.cn
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
     certificate verify failed_ certificate has expired (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
     certificate verify failed_ certificate has expired (_ssl.c_1017)')))
@@ -65,11 +65,11 @@ products:
   - epsd
   product_url: https://epsd.biocuckoo.cn
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
     certificate verify failed_ certificate has expired (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
     certificate verify failed_ certificate has expired (_ssl.c_1017)')))
@@ -87,11 +87,11 @@ products:
   - epsd
   product_url: https://epsd.biocuckoo.cn
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
     certificate verify failed_ certificate has expired (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
     certificate verify failed_ certificate has expired (_ssl.c_1017)')))
@@ -110,12 +110,12 @@ products:
   product_url: https://epsd.biocuckoo.cn/Download.php
   secondary_source: []
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ /Download.php (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
     CERTIFICATE_VERIFY_FAILED] certificate verify failed_ certificate has expired
     (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ /Download.php (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
     CERTIFICATE_VERIFY_FAILED] certificate verify failed_ certificate has expired

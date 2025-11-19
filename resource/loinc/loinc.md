@@ -56,9 +56,9 @@ products:
   - loinc
   product_url: https://loinc.org/download/loinc-complete/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 503 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 503 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 503 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 503 error
     when accessing file'
@@ -71,9 +71,9 @@ products:
   - loinc
   product_url: https://loinc.org/downloads/archive/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 503 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 503 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 503 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 503 error
     when accessing file'
@@ -86,9 +86,9 @@ products:
   - loinc
   product_url: https://loinc.org/principles/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 503 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ HTTP 503 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 503 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 503 error
     when accessing file'
@@ -236,9 +236,9 @@ products:
   secondary_source:
   - athena
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - File was not able to be retrieved when checked on 2025-11-13_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
     to URL_ Exceeded 30 redirects.
   - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
     to URL: Exceeded 30 redirects.'

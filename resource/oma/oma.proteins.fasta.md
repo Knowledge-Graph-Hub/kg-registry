@@ -11,9 +11,9 @@ product_url: https://omabrowser.org/oma/current/oma-proteins.fa.gz
 secondary_source:
 - oma
 warnings:
-- File was not able to be retrieved when checked on 2025-11-17_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-11-19_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-11-13_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-11-17_ HTTP 404 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
   accessing file

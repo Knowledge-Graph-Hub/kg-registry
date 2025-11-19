@@ -12,9 +12,9 @@ original_source:
 - go
 product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
 warnings:
-- File was not able to be retrieved when checked on 2025-11-17_ Error connecting to
+- File was not able to be retrieved when checked on 2025-11-19_ Error connecting to
   URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-- File was not able to be retrieved when checked on 2025-11-13_ Error connecting to
+- File was not able to be retrieved when checked on 2025-11-17_ Error connecting to
   URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
 layout: product_detail
 ---

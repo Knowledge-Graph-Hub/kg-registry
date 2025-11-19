@@ -34,7 +34,7 @@ biomarkerkg	Biomarker Knowledge Graph	KnowledgeGraph	https://bkg.dev.maayanlab.c
 bioteque	Bioteque	KnowledgeGraph	https://bioteque.irbbarcelona.org/	resource/bioteque/bioteque.md
 bmont	Biomarker Ontology	Ontology	https://github.com/SCAI-BIO/BiomarkerOntology	resource/bmont/bmont.md
 bootstrep	Gene Regulation Ontology	Ontology	http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html	resource/bootstrep/bootstrep.md
-brenda	Brenda	DataSource		resource/brenda/brenda.md
+brenda	BRENDA	DataSource	https://www.brenda-enzymes.org/	resource/brenda/brenda.md
 bspo	Biological Spatial Ontology	Ontology	https://github.com/obophenotype/biological-spatial-ontology	resource/bspo/bspo.md
 bto	BRENDA tissue / enzyme source	Ontology	http://www.brenda-enzymes.org	resource/bto/bto.md
 bv-brc	Bacterial and Viral Bioinformatics Resource Center	DataSource	https://www.bv-brc.org/	resource/bv-brc/bv-brc.md
@@ -185,7 +185,7 @@ harmonizome-kg	Harmonizome-KG	KnowledgeGraph	https://maayanlab.cloud/harmonizome
 hom	Homology Ontology	Ontology	https://github.com/BgeeDB/homology-ontology	resource/hom/hom.md
 hprd	HPRD	Aggregator	http://www.hprd.org/	resource/hprd/hprd.md
 hra-kg	Human Reference Atlas Knowledge Graph (HRA KG)	KnowledgeGraph	https://apps.humanatlas.io/dashboard/data	resource/hra-kg/hra-kg.md
-hrpimp	Hrpimp	DataSource		resource/hrpimp/hrpimp.md
+hrpimp	Human Reference Protein Interactome Mapping Project	DataSource	http://www.interactome-atlas.org/	resource/hrpimp/hrpimp.md
 hsapdv	Human Developmental Stages	Ontology	https://github.com/obophenotype/developmental-stage-ontologies/wiki/HsapDv	resource/hsapdv/hsapdv.md
 hso	Health Surveillance Ontology	Ontology	https://w3id.org/hso	resource/hso/hso.md
 htn	Hypertension Ontology	Ontology	https://github.com/aellenhicks/htn_owl	resource/htn/htn.md
