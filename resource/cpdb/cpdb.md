@@ -1,16 +1,63 @@
 ---
-activity_status: unknown
-category: DataSource
-creation_date: '2025-10-30T00:00:00Z'
-description: Information resource for ConsensusPathDB
+activity_status: inactive
+category: Aggregator
+creation_date: '2025-11-19T00:00:00Z'
+description: ConsensusPathDB integrates molecular interaction data from over 30 public databases, including protein-protein, genetic, metabolic, signaling, gene regulatory and drug-target interactions. It provides comprehensive pathway and functional analysis tools, allowing users to explore molecular networks and pathways from multiple sources through a unified interface. The resource was last updated in 2016 and the main website is no longer accessible.
 domains:
-  - stub
-id: cpdb
-infores_id: cpdb
-last_modified_date: '2025-10-30T00:00:00Z'
+  - pathways
+  - proteomics
+  - systems biology
+  - biomedical
+  - biological systems
+  - chemistry and biochemistry
+id: "cpdb"
+infores_id: "cpdb"
+last_modified_date: '2025-11-19T00:00:00Z'
 layout: resource_detail
 name: ConsensusPathDB
-homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/cpdb
+homepage_url: http://cpdb.molgen.mpg.de/
+license:
+  id: "https://creativecommons.org/publicdomain/zero/1.0/"
+  label: CC0 1.0
+products:
+  - category: GraphicalInterface
+    description: Web-based interface for integrated pathway and interaction analysis from multiple databases (inactive)
+    id: "cpdb.web"
+    name: ConsensusPathDB Web Interface
+    original_source:
+      - cpdb
+    product_url: http://cpdb.molgen.mpg.de/
+  - category: Product
+    description: Download files containing integrated interaction and pathway data
+    format: txt
+    id: "cpdb.downloads"
+    name: ConsensusPathDB Data Downloads
+    original_source:
+      - cpdb
+    product_url: http://cpdb.molgen.mpg.de/CPDB/download
+publications:
+  - authors:
+      - Kamburov A
+      - Pentchev K
+      - Galicka H
+      - Wierling C
+      - Lehrach H
+      - Herwig R
+    doi: "10.1093/nar/gkq1156"
+    id: "PMID:21071422"
+    journal: Nucleic Acids Research
+    title: "ConsensusPathDB: toward a more complete picture of cell biology"
+    year: "2011"
+  - authors:
+      - Kamburov A
+      - Wierling C
+      - Lehrach H
+      - Herwig R
+    doi: "10.1093/nar/gkn698"
+    id: "PMID:18940869"
+    journal: Nucleic Acids Research
+    title: "ConsensusPathDB--a database for integrating human functional interaction networks"
+    year: "2009"
 synonyms:
   - CPDB
 ---
@@ -19,30 +66,10 @@ synonyms:
 
 ## Overview
 
-Information resource for ConsensusPathDB
+ConsensusPathDB was an integrated molecular interaction database that consolidated data from over 30 public databases, including protein-protein interactions, genetic interactions, metabolic pathways, signaling pathways, gene regulatory interactions, and drug-target interactions. It provided a comprehensive platform for pathway and functional analysis of molecular networks.
 
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
+**Note**: This resource is currently **inactive**. The main website (http://cpdb.molgen.mpg.de/) is no longer accessible, and the database has not been updated since 2016.
 
 ## Information Resource ID
 
 This resource has the Information Resource identifier: `infores:cpdb`
-
-## Curation Status
-
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
-
-## What Needs to be Curated
-
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
-
-## Additional Notes
