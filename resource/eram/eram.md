@@ -1,48 +1,77 @@
 ---
-activity_status: unknown
+activity_status: active
 category: DataSource
-creation_date: '2025-10-30T00:00:00Z'
-description: encyclopedia of rare disease annotations for precision medicine
+creation_date: '2025-11-19T00:00:00Z'
+description: The encyclopedia of Rare disease Annotation for Precision Medicine (eRAM) is a standardized system providing computational annotations for rare diseases to support precision medicine. eRAM provides annotations for approximately 16,000 rare diseases, including detailed information on clinical phenotypes, symptoms, genes, and genotypes. The database contains over 6,100 human disease-related phenotype terms, 31,600 mammalian phenotype terms, 10,200 symptoms from UMLS, 18,800 genes and 92,500 genotypes. eRAM organizes diseases in a tree structure to systematically display relationships between diseases with similar pathogenesis, close anatomical sites, the same clinical symptoms or subtypes, facilitating both research into rare disease mechanisms and clinical diagnosis and treatment decisions.
 domains:
-  - stub
+  - clinical
+  - health
+  - phenotype
+  - precision medicine
 id: eram
 infores_id: eram
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2025-11-19T00:00:00Z'
 layout: resource_detail
 name: 'eRAM: encyclopedia of rare disease annotations for precision medicine'
-homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/eRAM
+homepage_url: http://119.3.41.228/eram/
+publications:
+  - id: PMID:29106618
+    title: 'eRAM: encyclopedia of rare disease annotations for precision medicine'
+    authors:
+      - Jia J
+      - An Z
+      - Ming Y
+      - Guo Y
+      - Li W
+      - Liang Y
+      - Guo D
+      - Li X
+      - Tai J
+      - Chen G
+      - Jin Y
+      - Liu Z
+      - Ni X
+      - Shi T
+    journal: Nucleic Acids Research
+    year: '2018'
+    doi: 10.1093/nar/gkx1062
+products:
+  - category: GraphicalInterface
+    description: Web-based interface for browsing and querying rare disease annotations including phenotypes, symptoms, genes, and genotypes with tree-structured disease organization
+    format: http
+    id: eram.web
+    name: eRAM Web Interface
+    original_source:
+      - eram
+    product_url: http://119.3.41.228/eram/
+  - category: Product
+    description: Downloadable data files containing rare disease annotations, phenotypes, symptoms, genes, and genotypes
+    format: mixed
+    id: eram.downloads
+    name: eRAM Data Downloads
+    original_source:
+      - eram
+    product_url: http://119.3.41.228/eram/download.php
 synonyms:
   - eRAM
 ---
 
 # eRAM: encyclopedia of rare disease annotations for precision medicine
 
-## Overview
+The encyclopedia of Rare Disease Annotation for Precision Medicine (eRAM) provides computational annotations for rare diseases to support precision medicine applications. Developed to address the limited knowledge of rare diseases that forms a major obstacle to improving their treatment, eRAM focuses on detailed clinical phenotyping as a keystone for deciphering genes related to rare diseases and realizing precision medicine.
 
-encyclopedia of rare disease annotations for precision medicine
+## Key Features
 
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
+- **Comprehensive Coverage**: Annotations for approximately 16,000 rare diseases
+- **Multi-source Phenotype Data**: 6,147 human disease-related phenotype terms, 31,661 mammalian phenotype terms, 10,202 symptoms from UMLS
+- **Genetic Information**: 18,815 genes and 92,580 genotypes associated with rare diseases
+- **Tree Structure Organization**: Systematic display of diseases and relationships between diseases with similar pathogenesis, close anatomical sites, or the same clinical symptoms
+- **Clinical Support**: Provides clinical phenotypes with importance rankings and appropriate treatment strategies to facilitate timely diagnosis and treatment
+
+## Data Sources
+
+eRAM integrates information from multiple authoritative sources including the Human Disease Network, Online Mendelian Inheritance in Man (OMIM), the Unified Medical Language System (UMLS), the Disease Ontology, Medical Subject Headings (MeSH), and Orphanet.
 
 ## Information Resource ID
 
 This resource has the Information Resource identifier: `infores:eram`
-
-## Curation Status
-
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
-
-## What Needs to be Curated
-
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
-
-## Additional Notes
