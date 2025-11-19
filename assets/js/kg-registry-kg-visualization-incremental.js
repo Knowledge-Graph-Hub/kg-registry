@@ -924,10 +924,7 @@ function createLegend() {
   const userSelectedNote = document.createElement('div');
   userSelectedNote.className = 'legend-item mb-3';
   userSelectedNote.innerHTML = `
-    <svg width="30" height="30" style="vertical-align: middle;">
-      <circle cx="15" cy="15" r="12" fill="#1f77b4" stroke="#000" stroke-width="3" />
-    </svg>
-    <span class="ms-2"><strong>Bold border = User-selected resource</strong></span>
+    <span><strong>Bold border = User-selected resource</strong></span>
   `;
   legend.appendChild(userSelectedNote);
   
