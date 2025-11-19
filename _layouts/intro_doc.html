@@ -2,10 +2,167 @@
 layout: default
 ---
 
-<div class="content">
+<style>
+  .intro-sidebar {
+    position: sticky;
+    top: 20px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    padding-right: 15px;
+  }
 
-  <div class="col-md-12">
+  .intro-sidebar .nav-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .intro-sidebar .nav-section-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .intro-sidebar .nav-link {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+    color: #495057;
+    border-left: 2px solid transparent;
+    transition: all 0.2s;
+  }
+
+  .intro-sidebar .nav-link:hover {
+    color: #0d6efd;
+    border-left-color: #0d6efd;
+    background-color: #f8f9fa;
+  }
+
+  .intro-sidebar .nav-link.active {
+    color: #0d6efd;
+    border-left-color: #0d6efd;
+    font-weight: 500;
+  }
+
+  .intro-sidebar .nav-link.section-link {
+    padding-left: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .intro-content {
+    padding-left: 2rem;
+  }
+
+  @media (max-width: 991px) {
+    .intro-sidebar {
+      position: relative;
+      top: 0;
+      max-height: none;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #dee2e6;
+      padding-bottom: 1rem;
+    }
+
+    .intro-content {
+      padding-left: 0;
+    }
+  }
+</style>
+
+<div class="row">
+  <div class="col-lg-3">
+    <nav class="intro-sidebar">
+      <!-- Pages in this directory -->
+      <div class="nav-section">
+        <div class="nav-section-title">Documentation</div>
+        <div class="nav flex-column">
+          <a class="nav-link {% if page.url contains '/intro/index.html' or page.url contains '/intro/' and page.url == '/docs/intro/' %}active{% endif %}"
+            href="/kg-registry/docs/intro/">
+            Overview
+          </a>
+          <a class="nav-link {% if page.url contains '/intro/resources.html' %}active{% endif %}"
+            href="/kg-registry/docs/intro/resources.html">
+            Resources
+          </a>
+          <a class="nav-link {% if page.url contains '/intro/products.html' %}active{% endif %}"
+            href="/kg-registry/docs/intro/products.html">
+            Products
+          </a>
+          <a class="nav-link {% if page.url contains '/intro/enumerations.html' %}active{% endif %}"
+            href="/kg-registry/docs/intro/enumerations.html">
+            Enumerations
+          </a>
+          <a class="nav-link {% if page.url contains '/intro/kg-registry-kg.html' %}active{% endif %}"
+            href="/kg-registry/docs/intro/kg-registry-kg.html">
+            KG-Registry-KG
+          </a>
+        </div>
+      </div>
+
+      <!-- Table of contents for current page -->
+      <div class="nav-section">
+        <div class="nav-section-title">On This Page</div>
+        <div class="nav flex-column" id="toc-links">
+          <!-- JavaScript will populate this -->
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="col-lg-9 intro-content">
     {{ content }}
-    <br />
   </div>
 </div>
+
+<script>
+  // Generate table of contents from headings
+  document.addEventListener('DOMContentLoaded', function () {
+    const content = document.querySelector('.intro-content');
+    const tocContainer = document.getElementById('toc-links');
+
+    if (content && tocContainer) {
+      const headings = content.querySelectorAll('h2, h3');
+
+      if (headings.length > 0) {
+        headings.forEach((heading, index) => {
+          // Create an ID if one doesn't exist
+          if (!heading.id) {
+            heading.id = 'heading-' + index;
+          }
+
+          const link = document.createElement('a');
+          link.className = 'nav-link section-link';
+          link.href = '#' + heading.id;
+          link.textContent = heading.textContent;
+
+          // Indent h3s more than h2s
+          if (heading.tagName === 'H3') {
+            link.style.paddingLeft = '1.5rem';
+            link.style.fontSize = '0.8rem';
+          }
+
+          tocContainer.appendChild(link);
+        });
+
+        // Highlight current section on scroll
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            const id = entry.target.id;
+            const link = tocContainer.querySelector(`a[href="#${id}"]`);
+
+            if (entry.isIntersecting && link) {
+              // Remove active class from all links
+              tocContainer.querySelectorAll('a').forEach(a => a.classList.remove('active'));
+              // Add active class to current link
+              link.classList.add('active');
+            }
+          });
+        }, { rootMargin: '-100px 0px -66%' });
+
+        headings.forEach(heading => observer.observe(heading));
+      } else {
+        tocContainer.innerHTML = '<p class="text-muted small" style="padding-left: 0.5rem;">No sections on this page</p>';
+      }
+    }
+  });
+</script>

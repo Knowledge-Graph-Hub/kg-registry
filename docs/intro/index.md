@@ -29,6 +29,16 @@ Select the ID for a Resource to view its page. In addition to its top-level meta
 
 Select the ID for a Product to view its page. This page contains metadata about the Product, including its sources.
 
+### Interactive Knowledge Graph Visualization
+
+The [KG-Registry Knowledge Graph](/kg-registry/kg-registry-kg/) provides an interactive visualization that allows you to explore relationships between resources, their products, and their connections. You can:
+- Build custom visualizations by selecting specific resources
+- Expand connections to see how resources relate to each other
+- Export visualizations as images or data files
+- See example knowledge graphs with a single click
+
+For more details, see the [KG-Registry-KG documentation](kg-registry-kg.html).
+
 ## How are Registry identifiers created?
 
 Registry identifiers are unique, i.e., `kg-microbe` will always refer to the same Resource.

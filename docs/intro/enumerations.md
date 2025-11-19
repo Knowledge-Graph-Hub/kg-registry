@@ -1,3 +1,7 @@
+---
+layout: intro_doc
+---
+
 # Enumerations
 
 ## ActivityStatusEnum
