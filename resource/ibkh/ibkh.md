@@ -20,18 +20,33 @@ contacts:
   contact_details:
   - contact_type: email
     value: few2001@med.cornell.edu
-curators:
-- category: Individual
-  contact_details:
-  - contact_type: github
-    value: cmungall
-  - contact_type: orcid
-    value: 0000-0002-6601-2165
-  label: Chris Mungall
 homepage_url: https://pubmed.ncbi.nlm.nih.gov/37020958/
 category: KnowledgeGraph
 synonyms:
 - iBKH
+products:
+- category: GraphProduct
+  description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing and integrating information from diverse biomedical resources including DRKG, iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome, SIDER, and others).
+  id: ibkh.graph
+  name: iBKH Knowledge Graph
+  original_source:
+  - drkg
+  - idisk
+  - brenda
+  - ctd
+  - drugbank
+  - kegg
+  - pharmgkb
+  - reactome
+  - sider
+  - tissues
+  - bgee
+  - doid
+  - uberon
+  - cl
+  - hgnc
+  - chembl
+  - chebi
 publications:
 - id: https://doi.org/10.1016/j.isci.2023.106460
   title: "Biomedical discovery through the integrative biomedical knowledge hub (iBKH)"
