@@ -21,8 +21,10 @@ products:
   format: owl
   id: rex.owl
   name: rex.owl
-  product_file_size: 677757
   product_url: http://purl.obolibrary.org/obo/rex.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
+    when accessing file'
 ---
 ## Description
 

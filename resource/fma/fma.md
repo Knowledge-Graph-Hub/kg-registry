@@ -26,8 +26,10 @@ products:
   format: owl
   id: fma.owl
   name: fma.owl
-  product_file_size: 66368046
   product_url: http://purl.obolibrary.org/obo/fma.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
+    when accessing file'
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
   format: owl

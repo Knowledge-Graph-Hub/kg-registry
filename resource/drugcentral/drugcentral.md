@@ -229,11 +229,11 @@ products:
   secondary_source:
   - mind
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-17_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2025-11-13_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-11-11_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-11-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-11-19: No Content-Length
     header found'
 - category: GraphProduct
   description: Test data for the MIND knowledge graph containing DrugCentral indications
@@ -250,11 +250,11 @@ products:
   secondary_source:
   - mind
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-17_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2025-11-13_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-11-11_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-11-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-11-19: No Content-Length
     header found'
 - category: GraphProduct
   description: Validation data for the MIND knowledge graph containing DrugCentral
@@ -272,13 +272,13 @@ products:
   secondary_source:
   - mind
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-11-17_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-11-11_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-11-13_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-11-17: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-11-19: No Content-Length
     header found'
 - category: Product
   description: Dictionary of entities in the MIND knowledge graph
@@ -321,15 +321,15 @@ products:
   - clinicaltrialsgov
   product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-11_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-11-17: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 404 error
     when accessing file'
 publications:
 - authors:

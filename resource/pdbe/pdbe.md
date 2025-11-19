@@ -305,11 +305,11 @@ products:
   - pdbe
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-11-13_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-11_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-17: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
     when accessing file'
 - category: Product
   description: GO annotations for PDB entries
@@ -321,11 +321,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
   - File was not able to be retrieved when checked on 2025-11-13_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
-  - File was not able to be retrieved when checked on 2025-11-11_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
-  - 'File was not able to be retrieved when checked on 2025-11-17: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'''
 publications:
 - id: https://doi.org/10.1093/nar/gkab988

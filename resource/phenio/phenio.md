@@ -37,13 +37,13 @@ products:
   secondary_source:
   - phenio
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-11_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-11-13_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-17: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   compatibility:
@@ -65,7 +65,7 @@ products:
   - phenio
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
-  edge_count: 14783802
+  edge_count: 15107405
   format: kgx
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
@@ -87,7 +87,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -131,6 +131,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of
@@ -149,7 +150,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 14783802
+  edge_count: 15107405
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
@@ -171,7 +172,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -215,6 +216,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of
@@ -233,7 +235,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
-  edge_count: 14783802
+  edge_count: 15107405
   format: rdfxml
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
@@ -255,7 +257,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -299,6 +301,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of
@@ -318,7 +321,7 @@ products:
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
-  edge_count: 14783802
+  edge_count: 15107405
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -339,7 +342,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -383,6 +386,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of
@@ -402,7 +406,7 @@ products:
   warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
-  edge_count: 14783802
+  edge_count: 15107405
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
   node_categories:
@@ -423,7 +427,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -467,6 +471,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of
@@ -485,7 +490,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 14783802
+  edge_count: 15107405
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
   name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -507,7 +512,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -551,6 +556,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of
@@ -569,7 +575,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 14783802
+  edge_count: 15107405
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
   name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -591,7 +597,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -635,6 +641,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of
@@ -653,7 +660,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 14783802
+  edge_count: 15107405
   format: neo4j
   id: kg-monarch.graph.neo4j.edges
   name: Neo4j Dump of KG-Monarch Edges
@@ -675,7 +682,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -719,6 +726,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of
@@ -737,7 +745,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 14783802
+  edge_count: 15107405
   format: neo4j
   id: kg-monarch.graph.neo4j.nodes
   name: Neo4j Dump of KG-Monarch Nodes
@@ -759,7 +767,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -803,6 +811,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of

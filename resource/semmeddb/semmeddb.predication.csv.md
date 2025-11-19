@@ -7,9 +7,9 @@ id: semmeddb.predication.csv
 name: SemMedDB Predication CSV
 product_url: https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_tables/PREDICATION.csv
 warnings:
-- File was not able to be retrieved when checked on 2025-11-13_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-11-11_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2025-11-13_ HTTP 403 error when
   accessing file
 layout: product_detail
 ---

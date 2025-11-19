@@ -27,8 +27,10 @@ products:
   format: owl
   id: aeo.owl
   name: aeo.owl
-  product_file_size: 407189
   product_url: http://purl.obolibrary.org/obo/aeo.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
+    when accessing file'
 repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
 ---
 ## Description

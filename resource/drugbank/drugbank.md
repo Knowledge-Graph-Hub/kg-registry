@@ -474,12 +474,37 @@ products:
   - drugbank
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-11-13_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-11_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-17: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
     when accessing file'
+- category: GraphProduct
+  description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
+    and integrating information from diverse biomedical resources including DRKG,
+    iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
+    SIDER, and others).
+  id: ibkh.graph
+  name: iBKH Knowledge Graph
+  original_source:
+  - drkg
+  - idisk
+  - brenda
+  - ctd
+  - drugbank
+  - kegg
+  - pharmgkb
+  - reactome
+  - sider
+  - tissues
+  - bgee
+  - doid
+  - uberon
+  - cl
+  - hgnc
+  - chembl
+  - chebi
 publications:
 - id: https://doi.org/10.1093/nar/gkad976
   journal: Nucleic Acids Research

@@ -140,11 +140,11 @@ products:
   secondary_source:
   - scibite
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 404 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-11-13_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-11_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-17: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 404 error
     when accessing file'
 - category: MappingProduct
   description: MONDO SSSOM. Mappings from MONDO identifiers to other namespaces.
@@ -697,11 +697,11 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-11-13_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-11_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-17: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
     when accessing file'
 - category: GraphicalInterface
   description: Interactive web interface for exploring and visualizing kinase-substrate
@@ -723,6 +723,31 @@ products:
   product_url: https://kinace.kinametrix.com/
   secondary_source:
   - kinace
+- category: GraphProduct
+  description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
+    and integrating information from diverse biomedical resources including DRKG,
+    iDISK, and multiple databases (BRENDA, CTD, DrugBank, KEGG, PharmGKB, Reactome,
+    SIDER, and others).
+  id: ibkh.graph
+  name: iBKH Knowledge Graph
+  original_source:
+  - drkg
+  - idisk
+  - brenda
+  - ctd
+  - drugbank
+  - kegg
+  - pharmgkb
+  - reactome
+  - sider
+  - tissues
+  - bgee
+  - doid
+  - uberon
+  - cl
+  - hgnc
+  - chembl
+  - chebi
 repository: https://github.com/HGNC
 ---
 HUGO Gene Nomenclature Committee

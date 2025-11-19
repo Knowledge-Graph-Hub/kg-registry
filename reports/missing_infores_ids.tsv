@@ -34,6 +34,7 @@ biomarkerkg	Biomarker Knowledge Graph	KnowledgeGraph	https://bkg.dev.maayanlab.c
 bioteque	Bioteque	KnowledgeGraph	https://bioteque.irbbarcelona.org/	resource/bioteque/bioteque.md
 bmont	Biomarker Ontology	Ontology	https://github.com/SCAI-BIO/BiomarkerOntology	resource/bmont/bmont.md
 bootstrep	Gene Regulation Ontology	Ontology	http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html	resource/bootstrep/bootstrep.md
+brenda	Brenda	DataSource		resource/brenda/brenda.md
 bspo	Biological Spatial Ontology	Ontology	https://github.com/obophenotype/biological-spatial-ontology	resource/bspo/bspo.md
 bto	BRENDA tissue / enzyme source	Ontology	http://www.brenda-enzymes.org	resource/bto/bto.md
 bv-brc	Bacterial and Viral Bioinformatics Resource Center	DataSource	https://www.bv-brc.org/	resource/bv-brc/bv-brc.md
@@ -191,6 +192,7 @@ htn	Hypertension Ontology	Ontology	https://github.com/aellenhicks/htn_owl	resour
 hubmap	HuBMAP	Aggregator	https://hubmapconsortium.org/	resource/hubmap/hubmap.md
 humannet	HumanNet	DataSource	https://www.inetbio.org/humannet/	resource/humannet/humannet.md
 iao	Information Artifact Ontology	Ontology	https://github.com/information-artifact-ontology/IAO/	resource/iao/iao.md
+ibkh	integrative Biomedical Knowledge Hub	KnowledgeGraph	https://pubmed.ncbi.nlm.nih.gov/37020958/	resource/ibkh/ibkh.md
 iceo	Integrative and Conjugative Element Ontology	Ontology	https://github.com/ontoice/ICEO	resource/iceo/iceo.md
 ico	Informed Consent Ontology	Ontology	https://github.com/ICO-ontology/ICO	resource/ico/ico.md
 ido	Infectious Disease Ontology	Ontology	http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology	resource/ido/ido.md

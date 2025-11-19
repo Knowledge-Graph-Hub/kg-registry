@@ -45,8 +45,10 @@ products:
   format: json
   id: go.json
   name: GO (JSON edition)
-  product_file_size: 77592125
   product_url: http://purl.obolibrary.org/obo/go.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-19: No Content-Length
+    header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
     with subsets of those ontologies
@@ -68,8 +70,10 @@ products:
   format: json
   id: go.extensions.go-plus.json
   name: GO-Plus
-  product_file_size: 131618305
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-19: No Content-Length
+    header found'
 - category: OntologyProduct
   description: Basic version of the GO, filtered such that the graph is guaranteed
     to be acyclic and annotations can be propagated up the graph. The relations included
@@ -85,8 +89,10 @@ products:
   format: json
   id: go.go-basic.json
   name: GO-Basic, Filtered, for use with legacy tools (JSON)
-  product_file_size: 67130778
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-19: No Content-Length
+    header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
   format: owl
@@ -94,7 +100,7 @@ products:
   name: GO Taxon Groupings
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-17: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -249,7 +255,7 @@ products:
   product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 - category: GraphProduct
   description: KGX Distribution of KG-Monarch
-  edge_count: 14783802
+  edge_count: 15107405
   format: kgx
   id: kg-monarch.graph
   name: KGX Distribution of KG-Monarch
@@ -271,7 +277,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -315,6 +321,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of
@@ -333,7 +340,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch
-  edge_count: 14783802
+  edge_count: 15107405
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl
   name: KGX JSON-L Distribution of KG-Monarch
@@ -355,7 +362,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -399,6 +406,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of
@@ -417,7 +425,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: RDF Distribution of KG-Monarch
-  edge_count: 14783802
+  edge_count: 15107405
   format: rdfxml
   id: kg-monarch.graph.rdf
   name: RDF Distribution of KG-Monarch
@@ -439,7 +447,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -483,6 +491,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of
@@ -502,7 +511,7 @@ products:
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch
   dump_format: neo4j
-  edge_count: 14783802
+  edge_count: 15107405
   id: kg-monarch.graph.neo4j
   name: Neo4j Dump of KG-Monarch
   node_categories:
@@ -523,7 +532,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -567,6 +576,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of
@@ -586,7 +596,7 @@ products:
   warnings: []
 - category: GraphProduct
   description: DuckDB database of KG-Monarch
-  edge_count: 14783802
+  edge_count: 15107405
   id: kg-monarch.graph.duckdb
   name: DuckDB database of KG-Monarch
   node_categories:
@@ -607,7 +617,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -651,6 +661,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of
@@ -712,7 +723,7 @@ products:
   - current_build
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Edges)
-  edge_count: 14783802
+  edge_count: 15107405
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.edges
   name: KGX JSON-L Distribution of KG-Monarch Edges
@@ -734,7 +745,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -778,6 +789,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of
@@ -796,7 +808,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: KGX JSON-Lines Distribution of KG-Monarch (Nodes)
-  edge_count: 14783802
+  edge_count: 15107405
   format: kgx-jsonl
   id: kg-monarch.graph.jsonl.nodes
   name: KGX JSON-L Distribution of KG-Monarch Nodes
@@ -818,7 +830,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -862,6 +874,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of
@@ -880,7 +893,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Edges
-  edge_count: 14783802
+  edge_count: 15107405
   format: neo4j
   id: kg-monarch.graph.neo4j.edges
   name: Neo4j Dump of KG-Monarch Edges
@@ -902,7 +915,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -946,6 +959,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of
@@ -964,7 +978,7 @@ products:
   - kg-monarch
 - category: GraphProduct
   description: Neo4j Dump of KG-Monarch Nodes
-  edge_count: 14783802
+  edge_count: 15107405
   format: neo4j
   id: kg-monarch.graph.neo4j.nodes
   name: Neo4j Dump of KG-Monarch Nodes
@@ -986,7 +1000,7 @@ products:
   - biolink:PhenotypicFeature
   - biolink:Protein
   - biolink:SequenceVariant
-  node_count: 1366818
+  node_count: 1360948
   original_source:
   - phenio
   - alliance
@@ -1030,6 +1044,7 @@ products:
   - biolink:has_participant
   - biolink:has_phenotype
   - biolink:has_sequence_variant
+  - biolink:homologous_to
   - biolink:interacts_with
   - biolink:is_active_in
   - biolink:is_sequence_variant_of
@@ -1464,11 +1479,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
   - File was not able to be retrieved when checked on 2025-11-13_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
-  - File was not able to be retrieved when checked on 2025-11-11_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
-  - 'File was not able to be retrieved when checked on 2025-11-17: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'''
 - category: Product
   description: GO annotations for human proteins
@@ -1480,11 +1495,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
   - File was not able to be retrieved when checked on 2025-11-13_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
-  - File was not able to be retrieved when checked on 2025-11-11_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
-  - 'File was not able to be retrieved when checked on 2025-11-17: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'''
 - category: Product
   description: GO annotations for mouse proteins
@@ -1496,11 +1511,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
   - File was not able to be retrieved when checked on 2025-11-13_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-  - File was not able to be retrieved when checked on 2025-11-11_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-  - 'File was not able to be retrieved when checked on 2025-11-17: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'''
 - category: MappingProduct
   description: Files containing transitive assignments of InterPro matches, UniProtKB
@@ -1515,11 +1530,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
   - File was not able to be retrieved when checked on 2025-11-13_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-  - File was not able to be retrieved when checked on 2025-11-11_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-  - 'File was not able to be retrieved when checked on 2025-11-17: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'''
 - category: MappingProduct
   description: bigg.compartment SSSOM
@@ -1545,11 +1560,11 @@ products:
   - go
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-11-13_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-11_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-17: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
@@ -1667,11 +1682,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
   - File was not able to be retrieved when checked on 2025-11-13_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
-  - File was not able to be retrieved when checked on 2025-11-11_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
-  - 'File was not able to be retrieved when checked on 2025-11-17: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'''
 - category: MappingProduct
   description: Mappings between InterPro entries and Gene Ontology (GO) terms
@@ -1703,11 +1718,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
   - File was not able to be retrieved when checked on 2025-11-13_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
-  - File was not able to be retrieved when checked on 2025-11-11_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
-  - 'File was not able to be retrieved when checked on 2025-11-17: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/'''
 - category: Product
   description: GO annotations organized by proteomes
@@ -1718,11 +1733,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
   - File was not able to be retrieved when checked on 2025-11-13_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
-  - File was not able to be retrieved when checked on 2025-11-11_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
-  - 'File was not able to be retrieved when checked on 2025-11-17: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'''
 repository: https://github.com/geneontology/go-ontology
 taxon:

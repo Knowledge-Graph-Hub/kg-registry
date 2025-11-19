@@ -29,8 +29,10 @@ products:
   format: owl
   id: emap.owl
   name: emap.owl
-  product_file_size: 16121038
   product_url: http://purl.obolibrary.org/obo/emap.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
+    when accessing file'
 taxon:
 - NCBITaxon:10088
 ---

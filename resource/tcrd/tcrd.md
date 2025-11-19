@@ -66,11 +66,11 @@ products:
   - tcrd
   product_url: http://juniper.health.unm.edu/tcrd/download/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-11_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-11-13_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-11-17: Timeout connecting
+  - File was not able to be retrieved when checked on 2025-11-17_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-11-19: Timeout connecting
     to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
@@ -91,11 +91,11 @@ products:
   - tcrd
   product_url: http://juniper.health.unm.edu/tcrd/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-11_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-11-13_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-11-17: Timeout connecting
+  - File was not able to be retrieved when checked on 2025-11-17_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-11-19: Timeout connecting
     to URL'
 publications:
 - id: https://doi.org/10.1093/nar/gkaa993

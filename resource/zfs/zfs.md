@@ -29,15 +29,19 @@ products:
   format: owl
   id: zfs.owl
   name: zfs.owl
-  product_file_size: 74652
   product_url: http://purl.obolibrary.org/obo/zfs.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
+    when accessing file'
 - category: OntologyProduct
   description: Zebrafish developmental stages ontology in OBO format
   format: obo
   id: zfs.obo
   name: zfs.obo
-  product_file_size: 12259
   product_url: http://purl.obolibrary.org/obo/zfs.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
+    when accessing file'
 repository: https://github.com/cerivs/zebrafish-anatomical-ontology
 taxon:
 - NCBITaxon:7954
