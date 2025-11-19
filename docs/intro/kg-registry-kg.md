@@ -4,7 +4,7 @@ layout: intro_doc
 
 # KG-Registry Knowledge Graph
 
-The KG-Registry Knowledge Graph (KG-Registry-KG) provides an interactive visualization of the relationships between resources in the KG-Registry. This feature uses D3.js for force-directed graph layout and rendering, allowing users to explore how resources, their products, and their relationships connect together.
+The KG-Registry Knowledge Graph (KG-Registry-KG) provides an interactive visualization of the relationships between resources in the KG-Registry.
 
 ## Overview
 
@@ -58,64 +58,18 @@ The **Export Current View** dropdown offers multiple export formats:
 
 All exports automatically include the current date in the filename.
 
-### Visual Features
-
-- **Color-Coded Nodes**: Different resource and product types use distinct colors
-- **Category Icons**: Bootstrap icons indicate the category of each node (can be toggled off)
-- **Bold Borders**: User-selected resources are highlighted with bold black borders
-- **Interactive Legend**: Legend shows all node types with their colors and icons
-- **Node Labels**: Resource nodes show names; product nodes show IDs (which are typically shorter)
-
-### Graph Management
-
-- **Active Resources List**: Track which resources are currently displayed with removable badges
-- **Statistics**: View real-time counts of nodes, edges, and connected components
-- **Clear Graph**: Remove all resources and start fresh
-- **Context Menu**: Right-click any node for additional options (expand connections, hide node)
-
 ## Implementation Details
 
-### Files
+The visualization loads data from `registry/kgs.yml`, which contains the complete registry of all resources.
 
-- `kg-registry-kg.md`: The main page for the KG-Registry-KG
-- `_layouts/graph_visualization.html`: The layout template for the visualization page
-- `assets/js/kg-registry-kg-visualization-incremental.js`: The JavaScript code for incremental graph building
-- `assets/css/kg-registry-kg.css`: The CSS styles for the visualization
+Resources are loaded once at initialization, then added to the graph on-demand as users select them.
 
-### Data Source
+### Maintenance
 
-The visualization loads data from `registry/kgs.yml`, which contains the complete registry of all resources. Resources are loaded once at initialization, then added to the graph on-demand as users select them.
-
-### Architecture
-
-1. **Incremental Loading Model**: 
-   - Graph starts empty for better performance
-   - Resources are added only when explicitly selected
-   - Products are created for each added resource
-   - Product connections only appear when both the product's parent resource and its source resources are in the graph
-
-2. **Smart Connection Building**:
-   - Products link to their parent resources via "has_product" relationships
-   - Products link to their source resources via "derived_from" relationships
-   - Resources can link to component resources via "has_component" relationships
-   - Domain connections show resources that share domains (optional)
-
-3. **Node Identity**:
-   - Resources use their resource ID as the node ID
-   - Products use their product ID (e.g., `resource.product_name`)
-   - Products are marked with a `parentId` property linking them to their resource
-
-4. **Force-Directed Layout**:
-   - D3.js force simulation positions nodes automatically
-   - Collision detection prevents node overlap
-   - Users can drag nodes to manually adjust positions
-   - Positions are maintained during updates
-
-5. **Export Implementation**:
-   - SVG export clones the current SVG with proper viewBox and background
-   - PNG export converts SVG to canvas, then to PNG blob
-   - TSV export formats visible links as tab-separated values
-   - YAML/JSON-LD exports include complete resource metadata from the registry
+When new resources are added to the registry, they automatically appear in the resource selector on the next build. No additional maintenance is required unless:
+- New resource/product categories are added (update color scheme and icon mappings in JavaScript)
+- New relationship types are added (update link rendering logic)
+- The registry data structure changes significantly (update data loading and node creation logic)
 
 ## Usage Tips
 
@@ -127,21 +81,6 @@ The visualization loads data from `registry/kgs.yml`, which contains the complet
 6. **Export for Sharing**: Use SVG export for publications, PNG for presentations, TSV for analysis
 7. **Track Components**: View the component count to understand if you have multiple disconnected subgraphs
 8. **Customize Colors**: Icons can be hidden if you prefer a cleaner look focusing on colors alone
-
-## Performance Considerations
-
-The incremental loading approach significantly improves performance compared to rendering all resources at once:
-- Initial page load is fast (empty graph)
-- Only selected resources and their immediate connections are rendered
-- Large knowledge graphs can be explored without overwhelming the visualization
-- Force simulation only recalculates for visible nodes
-
-## Maintenance
-
-When new resources are added to the registry, they automatically appear in the resource selector on the next build. No additional maintenance is required unless:
-- New resource/product categories are added (update color scheme and icon mappings in JavaScript)
-- New relationship types are added (update link rendering logic)
-- The registry data structure changes significantly (update data loading and node creation logic)
 
 ## Related Documentation
 
