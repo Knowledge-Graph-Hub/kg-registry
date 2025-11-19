@@ -6,3 +6,4 @@ regl	insufficient_data	Richards Effector Gene List - GitHub wiki page exists but
 cacao	page_unresolvable	Community Assessment of Community Annotation with Ontologies - Homepage URL (http://gowiki.tamu.edu/wiki/index.php/Category:CACAO) cannot be resolved or accessed.	2025-11-17
 pharmacotherapydb	no_homepage	Only referenced as a source in AlzKB knowledge graph. No independent website, documentation, or other references found. Domains do not resolve.	2025-11-17
 pgo	insufficient_info	Only referenced as a source in UBKG knowledge graph. No independent website or clear documentation found. Not in OBO Foundry. Possible ontology or database acronym but cannot be verified.	2025-11-17
+sepid_mab	no_info	No accessible information found. No PubMed results, no homepage, no database entries or references. May be an internal identifier or inactive resource.	2025-11-19
