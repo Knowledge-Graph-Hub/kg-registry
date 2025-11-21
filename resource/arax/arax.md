@@ -1,6 +1,8 @@
 ---
 activity_status: active
-category: Resource
+category: Aggregator
+collection:
+- translator
 contacts:
 - category: Organization
   contact_details:
@@ -37,10 +39,11 @@ domains:
 - biomedical
 - precision medicine
 - health
+- translational
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Expander-Agent
 id: arax
 infores_id: arax
-last_modified_date: '2025-10-31T00:00:00Z'
+last_modified_date: '2025-11-21T00:00:00Z'
 layout: resource_detail
 name: ARAX Translator Reasoner
 products:
@@ -97,6 +100,8 @@ publications:
 synonyms:
 - ARAX
 - Expander Agent
+tags:
+- translator
 ---
 ## Description
 
