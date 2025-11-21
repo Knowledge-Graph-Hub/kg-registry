@@ -64,17 +64,12 @@ products:
   name: ICD-10 Training
   product_url: https://icd.who.int/training/icd10training/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
-    to URL_ HTTPSConnectionPool(host='icd.who.int', port=443)_ Max retries exceeded
-    with url_ /training/icd10training/ (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
   - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ HTTPSConnectionPool(host='icd.who.int', port=443)_ Max retries exceeded
     with url_ /training/icd10training/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
     to URL: HTTPSConnectionPool(host=''icd.who.int'', port=443): Max retries exceeded
     with url: /training/icd10training/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -107,9 +102,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
     to URL: Exceeded 30 redirects.'
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

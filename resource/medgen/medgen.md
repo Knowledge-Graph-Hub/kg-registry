@@ -136,11 +136,9 @@ products:
   name: HPO CUI History
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/HPO_CUI_history.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-17_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-11-19_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-11-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-11-21: No Content-Length
     header found'
 - category: Product
   description: History file tracking changes to Mondo term mappings to CUIs
@@ -149,11 +147,9 @@ products:
   name: Mondo CUI History
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/MONDO_CUI_history.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-17_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-11-19_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-11-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-11-21: No Content-Length
     header found'
 - category: Product
   description: History file tracking changes to Orphanet term mappings to CUIs
@@ -162,11 +158,9 @@ products:
   name: ORDO CUI History
   product_url: https://ftp.ncbi.nlm.nih.gov/pub/medgen/ORDO_CUI_history.txt
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-17_ No Content-Length
-    header found
   - File was not able to be retrieved when checked on 2025-11-19_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-11-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-11-21: No Content-Length
     header found'
 - category: Product
   description: Information about source databases and their contributions to MedGen

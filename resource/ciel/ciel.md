@@ -87,9 +87,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
     to URL: Exceeded 30 redirects.'
 synonyms:
 - CIEL

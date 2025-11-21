@@ -40,7 +40,7 @@ products:
   name: MP (OBO edition)
   product_url: http://purl.obolibrary.org/obo/mp.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-11-21: No Content-Length
     header found'
 - category: OntologyProduct
   description: For a description of the format see https://github.com/geneontology/obographs.
@@ -55,7 +55,7 @@ products:
   format: owl
   id: mp.mp-base.owl
   name: MP Base Module
-  product_file_size: 50008964
+  product_file_size: 50038906
   product_url: http://purl.obolibrary.org/obo/mp/mp-base.owl
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

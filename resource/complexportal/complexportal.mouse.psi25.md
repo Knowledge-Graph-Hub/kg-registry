@@ -8,7 +8,7 @@ product_url: https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/psi25/mu
 warnings:
 - File was not able to be retrieved when checked on 2025-11-19_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-11-17_ HTTP 404 error when
+- File was not able to be retrieved when checked on 2025-11-19_ HTTP 404 error when
   accessing file
 layout: product_detail
 ---

@@ -32,7 +32,7 @@ products:
   name: gaz.owl
   product_url: http://purl.obolibrary.org/obo/gaz.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Gazetteer in OBO format
@@ -41,7 +41,7 @@ products:
   name: gaz.obo
   product_url: http://purl.obolibrary.org/obo/gaz.obo
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: A country specific subset of the GAZ.

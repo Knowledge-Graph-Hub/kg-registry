@@ -9,5 +9,8 @@ name: NDC Database Text File
 original_source:
 - ndcd
 product_url: https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory
+warnings:
+- File was not able to be retrieved when checked on 2025-11-19_ HTTP 404 error when
+  accessing file
 layout: product_detail
 ---

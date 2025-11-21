@@ -18,7 +18,7 @@ secondary_source:
 warnings:
 - File was not able to be retrieved when checked on 2025-11-19_ Error connecting to
   URL_ Exceeded 30 redirects.
-- File was not able to be retrieved when checked on 2025-11-17_ Error connecting to
+- File was not able to be retrieved when checked on 2025-11-19_ Error connecting to
   URL_ Exceeded 30 redirects.
 layout: product_detail
 ---

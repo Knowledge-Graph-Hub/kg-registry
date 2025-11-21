@@ -30,7 +30,7 @@ products:
   format: owl
   id: dron.owl
   name: dron.owl
-  product_file_size: 713397722
+  product_file_size: 694254306
   product_url: http://purl.obolibrary.org/obo/dron.owl
 repository: https://github.com/ufbmi/dron
 ---

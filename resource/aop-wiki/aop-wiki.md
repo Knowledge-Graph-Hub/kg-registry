@@ -44,7 +44,7 @@ products:
   - aop-wiki
   product_url: https://aopwiki.org/downloads
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
     with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
     certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
@@ -52,11 +52,7 @@ products:
     to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
     with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
     certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
     to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
     with url: /downloads (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
     certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
@@ -70,7 +66,7 @@ products:
   - aop-wiki
   product_url: https://aopwiki.org/downloads/aop-wiki-xml.gz
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
     with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -80,12 +76,7 @@ products:
     with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
     to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
     with url: /downloads/aop-wiki-xml.gz (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -100,7 +91,7 @@ products:
   - aop-wiki
   product_url: https://aopwiki.org/downloads/aop_ke_mie_ao.tsv
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
     with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -110,12 +101,7 @@ products:
     with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
     to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
     with url: /downloads/aop_ke_mie_ao.tsv (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -130,7 +116,7 @@ products:
   - aop-wiki
   product_url: https://aopwiki.org/downloads/aop_ke_ker.tsv
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
     with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -140,12 +126,7 @@ products:
     with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
     to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
     with url: /downloads/aop_ke_ker.tsv (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -160,7 +141,7 @@ products:
   - aop-wiki
   product_url: https://aopwiki.org/downloads/aop_ke_ec.tsv
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
     with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -170,12 +151,7 @@ products:
     with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
-    '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
     to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
     with url: /downloads/aop_ke_ec.tsv (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
@@ -190,7 +166,7 @@ products:
   - aop-wiki
   product_url: https://aopwiki.org/aops
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
     with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
     certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
@@ -198,11 +174,7 @@ products:
     to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
     with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
     certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /aops (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
     to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
     with url: /aops (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
     certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
@@ -217,7 +189,7 @@ products:
   name: AOP Developers' Handbook
   product_url: https://aopwiki.org/handbooks/4
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
     with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
     CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
@@ -227,12 +199,7 @@ products:
     with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
     CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
     certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
-    to URL_ HTTPSConnectionPool(host='aopwiki.org', port=443)_ Max retries exceeded
-    with url_ /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
-    CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local issuer
-    certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
     to URL: HTTPSConnectionPool(host=''aopwiki.org'', port=443): Max retries exceeded
     with url: /handbooks/4 (Caused by SSLError(SSLCertVerificationError(1, ''[SSL:
     CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer

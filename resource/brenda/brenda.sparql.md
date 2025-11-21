@@ -8,5 +8,8 @@ name: BRENDA SPARQL Endpoint
 original_source:
 - brenda
 product_url: https://sparql.dsmz.de/brenda
+warnings:
+- File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
+  accessing file
 layout: product_detail
 ---

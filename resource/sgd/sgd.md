@@ -241,9 +241,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
     when accessing file'
 ---
 The Saccharomyces Genome Database (SGD) project collects information and maintains a database of the molecular biology of the yeast Saccharomyces cerevisiae.

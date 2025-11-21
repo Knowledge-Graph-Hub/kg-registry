@@ -56,11 +56,9 @@ products:
   - loinc
   product_url: https://loinc.org/download/loinc-complete/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 503 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 503 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 503 error
+  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 503 error
     when accessing file'
 - category: DataModelProduct
   description: Archive of past LOINC releases for version-specific implementations
@@ -71,11 +69,9 @@ products:
   - loinc
   product_url: https://loinc.org/downloads/archive/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 503 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 503 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 503 error
+  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 503 error
     when accessing file'
 - category: DocumentationProduct
   description: LOINC Mission, Vision, and Guiding Principles for open terminology
@@ -86,11 +82,9 @@ products:
   - loinc
   product_url: https://loinc.org/principles/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 503 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 503 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 503 error
+  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 503 error
     when accessing file'
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
@@ -238,9 +232,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
     to URL: Exceeded 30 redirects.'
 publications:
 - id: https://doi.org/10.1093/nar/gkad1044

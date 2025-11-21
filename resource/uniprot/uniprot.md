@@ -100,9 +100,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-19_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-11-17_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-11-19_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-11-19: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-11-21: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -147,13 +147,13 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -656,9 +656,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
     when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD
@@ -689,9 +689,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
-  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'''
 - category: Product
   description: GO annotations for human proteins
@@ -705,9 +705,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
-  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'''
 - category: Product
   description: GO annotations for mouse proteins
@@ -721,9 +721,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'''
 - category: MappingProduct
   description: Files containing transitive assignments of InterPro matches, UniProtKB
@@ -740,9 +740,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-  - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'''
 - category: GraphicalInterface
   description: Interactive web interface for exploring and visualizing kinase-substrate

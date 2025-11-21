@@ -54,7 +54,9 @@ products:
   - brenda
   product_url: https://sparql.dsmz.de/brenda
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
     when accessing file'
 - category: Product
   description: Downloadable text files containing complete BRENDA enzyme data in structured
@@ -66,7 +68,9 @@ products:
   - brenda
   product_url: https://www.brenda-enzymes.org/download.php
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
     when accessing file'
 - category: Product
   description: Downloadable JSON files containing complete BRENDA enzyme data with
@@ -78,7 +82,9 @@ products:
   - brenda
   product_url: https://www.brenda-enzymes.org/download.php
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-19: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing

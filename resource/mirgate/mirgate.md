@@ -28,6 +28,11 @@ products:
   - mirgate
   product_url: http://mirgate.bioinfo.cnio.es
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
+    to URL_ HTTPConnectionPool(host='mirgate.bioinfo.cnio.es', port=80)_ Max retries
+    exceeded with url_ / (Caused by NameResolutionError("<urllib3.connection.HTTPConnection
+    object at 0x7f2161344d00>_ Failed to resolve 'mirgate.bioinfo.cnio.es' ([Errno
+    -2] Name or service not known)"))
   - File was not able to be retrieved when checked on 2025-11-17_ Error connecting
     to URL_ HTTPConnectionPool(host='mirgate.bioinfo.cnio.es', port=80)_ Max retries
     exceeded with url_ / (Caused by NameResolutionError("<urllib3.connection.HTTPConnection
@@ -36,12 +41,12 @@ products:
   - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ HTTPConnectionPool(host='mirgate.bioinfo.cnio.es', port=80)_ Max retries
     exceeded with url_ / (Caused by NameResolutionError("<urllib3.connection.HTTPConnection
-    object at 0x7f2161344d00>_ Failed to resolve 'mirgate.bioinfo.cnio.es' ([Errno
+    object at 0x7fb9779db700>_ Failed to resolve 'mirgate.bioinfo.cnio.es' ([Errno
     -2] Name or service not known)"))
-  - 'File was not able to be retrieved when checked on 2025-11-19: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
     to URL: HTTPConnectionPool(host=''mirgate.bioinfo.cnio.es'', port=80): Max retries
     exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPConnection
-    object at 0x7fb9779db700>: Failed to resolve ''mirgate.bioinfo.cnio.es'' ([Errno
+    object at 0x7f182d1c9c90>: Failed to resolve ''mirgate.bioinfo.cnio.es'' ([Errno
     -2] Name or service not known)"))'
 - category: ProgrammingInterface
   description: REST API for programmatic access to miRNA-mRNA target prediction data
