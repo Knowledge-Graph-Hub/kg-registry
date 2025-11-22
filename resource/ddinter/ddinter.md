@@ -1,5 +1,5 @@
 ---
-activity_status: unknown
+activity_status: active
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
 description: DDInter is an open-access database specific to drug-drug interactions (DDIs) with comprehensive annotations including mechanism descriptions, risk levels, management strategies, and alternative medications to improve clinical decision-making and patient safety.
