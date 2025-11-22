@@ -1532,11 +1532,11 @@ products:
   - wikipathways
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-11-21_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-22: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
@@ -1563,6 +1563,19 @@ products:
   - hgnc
   - chembl
   - chebi
+- category: DatabaseProduct
+  description: Multi-sourced relational database integrating metabolomic pathway information,
+    biochemical reactions, ontologies, and chemical descriptors for genes, proteins,
+    and metabolites with query and enrichment analysis capabilities.
+  id: rampdb.database
+  name: RaMP-DB Integrated Database
+  original_source:
+  - kegg
+  - reactome
+  - hmdb
+  - wikipathways
+  - rampdb
+  product_url: https://rampdb.nih.gov/
 repository: ''
 ---
 REACTOME is an open-source, open access, manually curated and peer-reviewed pathway database.

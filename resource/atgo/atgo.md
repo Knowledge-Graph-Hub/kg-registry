@@ -1,53 +1,64 @@
 ---
 activity_status: inactive
 category: Ontology
+contacts:
+- category: Individual
+  label: Trey Ideker
+- category: Individual
+  label: Subramaniam Subramani
 creation_date: '2025-10-30T00:00:00Z'
-description: ATGO (Autophagy Ontology) is a hierarchical functional ontology of autophagy processes built through Active Interaction Mapping of genetic interaction data from Saccharomyces cerevisiae. The second-generation ontology contains 220 functions representing autophagy organization including vesicle transport, cell cycle, and stress response pathways.
+description: ATGO (Autophagy Ontology) is a hierarchical functional ontology of autophagy
+  processes built through Active Interaction Mapping of genetic interaction data from
+  Saccharomyces cerevisiae. The second-generation ontology contains 220 functions
+  representing autophagy organization including vesicle transport, cell cycle, and
+  stress response pathways.
 domains:
-  - biological systems
-  - systems biology
-id: "atgo"
-infores_id: "atgo"
+- biological systems
+- systems biology
+homepage_url: http://atgo.ucsd.edu/
+id: atgo
+infores_id: atgo
 last_modified_date: '2025-11-22T00:00:00Z'
 layout: resource_detail
 name: Autophagy Ontology
-homepage_url: http://atgo.ucsd.edu/
-synonyms:
-  - ATGO
-contacts:
-  - category: Individual
-    label: Trey Ideker
-  - category: Individual
-    label: Subramaniam Subramani
-publications:
-  - id: "PMID:28132844"
-    title: 'Active Interaction Mapping Reveals the Hierarchical Organization of Autophagy'
-    authors:
-      - Michael H Kramer
-      - Jean-Claude Farré
-      - Koyel Mitra
-      - Michael Ku Yu
-      - Keiichiro Ono
-      - Barry Demchak
-      - Katherine Licon
-      - Mikayla Flagg
-      - Rama Balakrishnan
-      - J Michael Cherry
-      - Trey Ideker
-      - Subramaniam Subramani
-    journal: Molecular Cell
-    year: "2017"
-    doi: "10.1016/j.molcel.2016.12.024"
 products:
-  - id: "atgo.ontology"
-    name: ATGO Hierarchical Ontology
-    description: Second-generation hierarchical ontology of 220 autophagy functions built from 156,364 synthetic-lethal genetic interactions across autophagy-activating conditions in Saccharomyces cerevisiae.
-    category: OntologyProduct
-    product_url: http://atgo.ucsd.edu/
-    original_source:
-      - atgo
+- category: OntologyProduct
+  description: Second-generation hierarchical ontology of 220 autophagy functions
+    built from 156,364 synthetic-lethal genetic interactions across autophagy-activating
+    conditions in Saccharomyces cerevisiae.
+  id: atgo.ontology
+  name: ATGO Hierarchical Ontology
+  original_source:
+  - atgo
+  product_url: http://atgo.ucsd.edu/
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
+    to URL: HTTPConnectionPool(host=''atgo.ucsd.edu'', port=80): Max retries exceeded
+    with url: / (Caused by NewConnectionError(''<urllib3.connection.HTTPConnection
+    object at 0x7fa9b784b9a0>: Failed to establish a new connection: [Errno 111] Connection
+    refused''))'
+publications:
+- authors:
+  - Michael H Kramer
+  - Jean-Claude Farré
+  - Koyel Mitra
+  - Michael Ku Yu
+  - Keiichiro Ono
+  - Barry Demchak
+  - Katherine Licon
+  - Mikayla Flagg
+  - Rama Balakrishnan
+  - J Michael Cherry
+  - Trey Ideker
+  - Subramaniam Subramani
+  doi: 10.1016/j.molcel.2016.12.024
+  id: PMID:28132844
+  journal: Molecular Cell
+  title: Active Interaction Mapping Reveals the Hierarchical Organization of Autophagy
+  year: '2017'
+synonyms:
+- ATGO
 ---
-
 # Autophagy Ontology
 
 ## Overview

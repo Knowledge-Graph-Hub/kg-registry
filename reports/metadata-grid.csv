@@ -5,6 +5,7 @@ Resource,Activity Status,Validation Status
 aact,active,PASS
 achilles,active,PASS
 ado,active,PASS
+aeolus,active,PASS
 afpo,active,PASS
 agro,active,PASS
 aism,active,PASS
@@ -41,6 +42,7 @@ bto,active,PASS
 bv-brc,active,PASS
 cam-kp,active,PASS
 cancer-genome-interpreter,active,PASS
+cancer-registry-kg,active,PASS
 ccle,active,PASS
 cdao,active,PASS
 cdiscvocab,active,PASS
@@ -102,6 +104,7 @@ dbsnp,active,PASS
 dc,active,PASS
 dct,active,PASS
 ddanat,active,PASS
+ddinter,active,PASS
 ddpheno,active,PASS
 depmap,active,PASS
 dgidb,active,PASS
@@ -184,6 +187,7 @@ genepio,active,PASS
 genetics-kp,active,PASS
 geno,active,PASS
 genomickb,active,PASS
+genophenoenvo-kg,active,PASS
 geo,active,PASS
 gff,active,PASS
 glkb,active,PASS
@@ -249,6 +253,7 @@ kg-idg,active,PASS
 kg-jensenlab-diseases,active,PASS
 kg-microbe,active,PASS
 kg-monarch,active,PASS
+kg-predict,active,PASS
 kgcl,active,PASS
 kidsfirst,active,PASS
 kinace,active,PASS
@@ -420,6 +425,7 @@ pubchem,active,PASS
 pubmed,active,PASS
 pubtator,active,PASS
 pw,active,PASS
+rampdb,active,PASS
 rbo,active,PASS
 reacto,active,PASS
 reactome,active,PASS
@@ -527,6 +533,8 @@ aao,inactive,PASS
 adw,inactive,PASS
 aeo,inactive,PASS
 aero,inactive,PASS
+amyco,orphaned,PASS
+atgo,inactive,PASS
 ato,inactive,PASS
 bcgo,inactive,PASS
 bila,inactive,PASS
@@ -602,6 +610,7 @@ propreo,inactive,PASS
 psygenet,inactive,PASS
 rdbridge,unresponsive,PASS
 rdp,unresponsive,PASS
+redrugs,inactive,PASS
 resid,inactive,PASS
 rex,orphaned,PASS
 rnao,inactive,PASS

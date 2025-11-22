@@ -1,68 +1,88 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: FDA-SRS@fda.hhs.gov
+  label: FDA Center for Drug Evaluation and Research
 creation_date: '2025-11-04T00:00:00Z'
-description: The FDA Adverse Event Reporting System (FAERS) is a database that contains adverse event reports, medication error reports, and product quality complaints resulting in adverse events submitted to the FDA. FAERS supports the FDA's post-marketing safety surveillance program for drug and therapeutic biologic products. The database adheres to ICH E2B international safety reporting guidance, and adverse events are coded using MedDRA (Medical Dictionary for Regulatory Activities) terminology. FAERS provides quarterly data files in ASCII and XML formats dating back to 2012, with archives available for earlier data.
+description: The FDA Adverse Event Reporting System (FAERS) is a database that contains
+  adverse event reports, medication error reports, and product quality complaints
+  resulting in adverse events submitted to the FDA. FAERS supports the FDA's post-marketing
+  safety surveillance program for drug and therapeutic biologic products. The database
+  adheres to ICH E2B international safety reporting guidance, and adverse events are
+  coded using MedDRA (Medical Dictionary for Regulatory Activities) terminology. FAERS
+  provides quarterly data files in ASCII and XML formats dating back to 2012, with
+  archives available for earlier data.
 domains:
-  - pharmacology
-  - drug discovery
-  - clinical
-  - public health
-id: "faers"
-infores_id: "faers"
+- pharmacology
+- drug discovery
+- clinical
+- public health
+homepage_url: https://www.fda.gov/drugs/surveillance/fdas-adverse-event-reporting-system-faers
+id: faers
+infores_id: faers
 last_modified_date: '2025-11-04T00:00:00Z'
 layout: resource_detail
 name: FDA Adverse Event Reporting System
-homepage_url: https://www.fda.gov/drugs/surveillance/fdas-adverse-event-reporting-system-faers
-contacts:
-  - category: Organization
-    label: FDA Center for Drug Evaluation and Research
-    contact_details:
-      - contact_type: email
-        value: FDA-SRS@fda.hhs.gov
 products:
-  - id: "faers.public_dashboard"
-    category: GraphicalInterface
-    name: FAERS Public Dashboard
-    description: Interactive dashboard for exploring FAERS data with visualizations and search capabilities
-    product_url: https://fis.fda.gov/sense/app/95239e26-e0be-42d9-a960-9a5f7f1c25ee/sheet/7a47a261-d58b-4203-a8aa-6d3021737452/state/analysis
-    format: http
-    original_source:
-      - faers
-  - id: faers.quarterly_data_ascii
-    category: Product
-    name: FAERS Quarterly Data Files (ASCII)
-    description: Quarterly data extracts in ASCII format containing demographic, drug, reaction, outcome, and source information for reported adverse events
-    product_url: https://fis.fda.gov/extensions/FPD-QDE-FAERS/FPD-QDE-FAERS.html
-    format: txt
-    original_source:
-      - faers
-  - id: "faers.quarterly_data_xml"
-    category: Product
-    name: FAERS Quarterly Data Files (XML)
-    description: Quarterly data extracts in XML format adhering to ICH E2B standards for international safety reporting
-    product_url: https://fis.fda.gov/extensions/FPD-QDE-FAERS/FPD-QDE-FAERS.html
-    format: xml
-    original_source:
-      - faers
-  - id: "faers.faq"
-    category: DocumentationProduct
-    name: FAERS FAQ
-    description: Frequently asked questions about FAERS data structure, reporting requirements, and data usage
-    product_url: https://fis.fda.gov/extensions/FPD-FAQ/FPD-FAQ.html
-    format: http
-    original_source:
-      - faers
-  - id: "faers.electronic_submissions"
-    category: GraphicalInterface
-    name: FAERS Electronic Submissions Portal
-    description: Portal for submitting adverse event reports electronically to the FDA
-    product_url: https://www.fda.gov/drugs/questions-and-answers-fdas-adverse-event-reporting-system-faers/fda-adverse-event-reporting-system-faers-electronic-submissions
-    format: http
-    original_source:
-      - faers
+- category: GraphicalInterface
+  description: Interactive dashboard for exploring FAERS data with visualizations
+    and search capabilities
+  format: http
+  id: faers.public_dashboard
+  name: FAERS Public Dashboard
+  original_source:
+  - faers
+  product_url: https://fis.fda.gov/sense/app/95239e26-e0be-42d9-a960-9a5f7f1c25ee/sheet/7a47a261-d58b-4203-a8aa-6d3021737452/state/analysis
+- category: Product
+  description: Quarterly data extracts in ASCII format containing demographic, drug,
+    reaction, outcome, and source information for reported adverse events
+  format: txt
+  id: faers.quarterly_data_ascii
+  name: FAERS Quarterly Data Files (ASCII)
+  original_source:
+  - faers
+  product_url: https://fis.fda.gov/extensions/FPD-QDE-FAERS/FPD-QDE-FAERS.html
+- category: Product
+  description: Quarterly data extracts in XML format adhering to ICH E2B standards
+    for international safety reporting
+  format: xml
+  id: faers.quarterly_data_xml
+  name: FAERS Quarterly Data Files (XML)
+  original_source:
+  - faers
+  product_url: https://fis.fda.gov/extensions/FPD-QDE-FAERS/FPD-QDE-FAERS.html
+- category: DocumentationProduct
+  description: Frequently asked questions about FAERS data structure, reporting requirements,
+    and data usage
+  format: http
+  id: faers.faq
+  name: FAERS FAQ
+  original_source:
+  - faers
+  product_url: https://fis.fda.gov/extensions/FPD-FAQ/FPD-FAQ.html
+- category: GraphicalInterface
+  description: Portal for submitting adverse event reports electronically to the FDA
+  format: http
+  id: faers.electronic_submissions
+  name: FAERS Electronic Submissions Portal
+  original_source:
+  - faers
+  product_url: https://www.fda.gov/drugs/questions-and-answers-fdas-adverse-event-reporting-system-faers/fda-adverse-event-reporting-system-faers-electronic-submissions
+- category: DataProduct
+  description: Standardized and deduplicated version of FDA FAERS data with drug names
+    mapped to RxNorm and adverse event outcomes mapped to SNOMED-CT, including pre-computed
+    summary statistics for drug-outcome relationships.
+  id: aeolus.standardized_data
+  name: AEOLUS Standardized FAERS Data
+  original_source:
+  - faers
+  - aeolus
+  product_url: https://github.com/NCATSTranslator/Translator-All/wiki/AEOLUS
 ---
-
 # FDA Adverse Event Reporting System
 
 ## Overview

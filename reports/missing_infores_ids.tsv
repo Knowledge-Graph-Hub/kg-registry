@@ -20,6 +20,7 @@ apo	Ascomycete phenotype ontology	Ontology	http://www.yeastgenome.org/	resource/
 apollo_sv	Apollo Structured Vocabulary	Ontology	https://github.com/ApolloDev/apollo-sv	resource/apollo_sv/apollo_sv.md
 aro	Antibiotic Resistance Ontology	Ontology	https://github.com/arpcard/aro	resource/aro/aro.md
 ato	Amphibian taxonomy	Ontology	http://www.amphibanat.org	resource/ato/ato.md
+atom	ATOM	KnowledgeGraph	https://doi.org/10.1109/BIBM47256.2019.8983062	resource/atom/atom.md
 automat	Automat	Aggregator	https://robokop.renci.org/api-docs/docs/category/automat	resource/automat/automat.md
 bcgo	Beta Cell Genomics Ontology	Ontology	https://github.com/obi-bcgo/bcgo	resource/bcgo/bcgo.md
 bco	Biological Collections Ontology	Ontology	https://github.com/BiodiversityOntologies/bco	resource/bco/bco.md
@@ -39,6 +40,7 @@ bspo	Biological Spatial Ontology	Ontology	https://github.com/obophenotype/biolog
 bto	BRENDA tissue / enzyme source	Ontology	http://www.brenda-enzymes.org	resource/bto/bto.md
 bv-brc	Bacterial and Viral Bioinformatics Resource Center	DataSource	https://www.bv-brc.org/	resource/bv-brc/bv-brc.md
 cancer-genome-interpreter	Cancer Genome Interpreter	DataSource		resource/cancer-genome-interpreter/cancer-genome-interpreter.md
+cancer-registry-kg	Cancer Registry Knowledge Graph	KnowledgeGraph	https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/	resource/cancer-registry-kg/cancer-registry-kg.md
 caro	Common Anatomy Reference Ontology	Ontology	https://github.com/obophenotype/caro/	resource/caro/caro.md
 ccle	CCLE	DataSource	https://sites.broadinstitute.org/ccle/	resource/ccle/ccle.md
 cdao	Comparative Data Analysis Ontology	Ontology	https://github.com/evoinfo/cdao	resource/cdao/cdao.md
@@ -161,6 +163,7 @@ genepio	Genomic Epidemiology Ontology	Ontology	http://genepio.org/	resource/gene
 genetics-kp	Genetics KP	KnowledgeGraph		resource/genetics-kp/genetics-kp.md
 geno	Genotype Ontology	Ontology	https://github.com/monarch-initiative/GENO-ontology/	resource/geno/geno.md
 genomickb	GenomicKB	KnowledgeGraph	https://gkb.dcmb.med.umich.edu/	resource/genomickb/genomickb.md
+genophenoenvo-kg	GenoPhenoEnvo Knowledge Graph	KnowledgeGraph	https://github.com/genophenoenvo/knowledge-graph	resource/genophenoenvo-kg/genophenoenvo-kg.md
 geo	Geographical Entity Ontology	Ontology	https://github.com/ufbmi/geographical-entity-ontology/wiki	resource/geo/geo.md
 gff	Gff	DataSource		resource/gff/gff.md
 glkb	GLKB	DataSource	https://glkb.dcmb.med.umich.edu/	resource/glkb/glkb.md
@@ -214,6 +217,7 @@ kg-idg	KG-IDG	KnowledgeGraph	https://kghub.org/kg-idg/index.html	resource/kg-idg
 kg-jensenlab-diseases	JensenLab DISEASES KG	KnowledgeGraph		resource/kg-jensenlab-diseases/kg-jensenlab-diseases.md
 kg-microbe	KG Microbe	KnowledgeGraph	https://kghub.org/kg-microbe/index.html	resource/kg-microbe/kg-microbe.md
 kg-monarch	KG Monarch	KnowledgeGraph	https://kghub.org/kg-monarch/index.html	resource/kg-monarch/kg-monarch.md
+kg-predict	KG-Predict	KnowledgeGraph	http://nlp.case.edu/public/data/GPKG-Predict/	resource/kg-predict/kg-predict.md
 kgcl	Knowledge Graph Change Language	DataModel	https://incatools.github.io/kgcl/	resource/kgcl/kgcl.md
 kidsfirst	Kids First Data Resource Center	DataSource	https://kidsfirstdrc.org/	resource/kidsfirst/kidsfirst.md
 kinhub	KinHub	DataSource	http://www.kinhub.org/	resource/kinhub/kinhub.md
@@ -370,6 +374,7 @@ rdbridge	RDBridge	KnowledgeGraph	http://rdb.lifesynther.com/	resource/rdbridge/r
 rdp	Ribosomal Database Project	DataSource		resource/rdp/rdp.md
 reacto	Reactome Entity Ontology (REACTO)	Resource	http://purl.obolibrary.org/obo/go/extensions/reacto.owl	resource/reacto/reacto.md
 rediportal	REDIportal	DataSource		resource/rediportal/rediportal.md
+redrugs	ReDrugs	KnowledgeGraph	http://redrugs.tw.rpi.edu/	resource/redrugs/redrugs.md
 refseq	RefSeq	DataSource	https://www.ncbi.nlm.nih.gov/refseq/	resource/refseq/refseq.md
 repohub	Drug Repurposing Hub	DataSource	https://repo-hub.broadinstitute.org/repurposing	resource/repohub/repohub.md
 reprotox-kg	ReproTox-KG	KnowledgeGraph	https://reprotox-kg.net/	resource/reprotox-kg/reprotox-kg.md
@@ -417,6 +422,7 @@ tair	Tair	DataSource		resource/tair/tair.md
 tao	Teleost Anatomy Ontology	Ontology	http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology	resource/tao/tao.md
 tarbase	TarBase	DataSource	https://dianalab.e-ce.uth.gr/tarbasev9	resource/tarbase/tarbase.md
 taxrank	Taxonomic rank vocabulary	Ontology	https://github.com/phenoscape/taxrank	resource/taxrank/taxrank.md
+tbkg	Tumor-Biomarker Knowledge Graph	KnowledgeGraph	https://www.frontiersin.org/articles/10.3389/fgene.2020.625659/full	resource/tbkg/tbkg.md
 tera	TERA: Toxicological Effect and Risk Assessment Knowledge Graph	KnowledgeGraph	https://niva-knowledge-graph.github.io/TERA/	resource/tera/tera.md
 text-mining-kp	Text Mining KP	KnowledgeGraph		resource/text-mining-kp/text-mining-kp.md
 tgma	Mosquito gross anatomy ontology	Ontology	https://www.vectorbase.org/ontology-browser	resource/tgma/tgma.md

@@ -392,6 +392,19 @@ products:
   product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
   secondary_source:
   - icees-kg
+- category: DatabaseProduct
+  description: Multi-sourced relational database integrating metabolomic pathway information,
+    biochemical reactions, ontologies, and chemical descriptors for genes, proteins,
+    and metabolites with query and enrichment analysis capabilities.
+  id: rampdb.database
+  name: RaMP-DB Integrated Database
+  original_source:
+  - kegg
+  - reactome
+  - hmdb
+  - wikipathways
+  - rampdb
+  product_url: https://rampdb.nih.gov/
 ---
 ## Overview
 

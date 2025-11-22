@@ -47,7 +47,7 @@ products:
   name: GO (JSON edition)
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-21: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-11-22: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -72,7 +72,7 @@ products:
   name: GO-Plus
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-21: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-11-22: No Content-Length
     header found'
 - category: OntologyProduct
   description: Basic version of the GO, filtered such that the graph is guaranteed
@@ -91,7 +91,7 @@ products:
   name: GO-Basic, Filtered, for use with legacy tools (JSON)
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-21: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-11-22: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
@@ -100,7 +100,7 @@ products:
   name: GO Taxon Groupings
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-22: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -1479,11 +1479,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
   - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
-  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'''
 - category: Product
   description: GO annotations for human proteins
@@ -1495,11 +1495,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
   - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
-  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'''
 - category: Product
   description: GO annotations for mouse proteins
@@ -1511,11 +1511,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
   - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'''
 - category: MappingProduct
   description: Files containing transitive assignments of InterPro matches, UniProtKB
@@ -1530,11 +1530,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
   - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'''
 - category: MappingProduct
   description: bigg.compartment SSSOM
@@ -1560,11 +1560,11 @@ products:
   - go
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-11-21_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-22: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
@@ -1682,11 +1682,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
   - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
-  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'''
 - category: MappingProduct
   description: Mappings between InterPro entries and Gene Ontology (GO) terms
@@ -1718,11 +1718,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
   - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
-  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/'''
 - category: Product
   description: GO annotations organized by proteomes
@@ -1733,11 +1733,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
   - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
-  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'''
 repository: https://github.com/geneontology/go-ontology
 taxon:

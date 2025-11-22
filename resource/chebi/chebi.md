@@ -43,13 +43,8 @@ products:
   format: owl
   id: chebi.owl.gz
   name: chebi, compressed owl
+  product_file_size: 62834967
   product_url: http://purl.obolibrary.org/obo/chebi.owl.gz
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
-    to URL: HTTPConnectionPool(host=''ftp.ebi.ac.uk'', port=80): Max retries exceeded
-    with url: /pub/databases/chebi/ontology/chebi.owl.gz (Caused by NewConnectionError(''<urllib3.connection.HTTPConnection
-    object at 0x7f182ce0f2e0>: Failed to establish a new connection: [Errno 111] Connection
-    refused''))'
 - category: OntologyProduct
   description: chebi_lite, no syns or xrefs
   format: obo

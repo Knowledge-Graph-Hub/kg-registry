@@ -68,7 +68,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-19_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-11-21: Timeout connecting
+  - File was not able to be retrieved when checked on 2025-11-21_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-11-22: Timeout connecting
     to URL'
 - category: ProgrammingInterface
   description: RESTful API providing programmatic access to TCRD data through Pharos
@@ -91,7 +93,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-19_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-11-21: Timeout connecting
+  - File was not able to be retrieved when checked on 2025-11-21_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-11-22: Timeout connecting
     to URL'
 publications:
 - id: https://doi.org/10.1093/nar/gkaa993

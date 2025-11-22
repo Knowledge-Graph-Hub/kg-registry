@@ -47,7 +47,11 @@ products:
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
     certificate verify failed_ certificate has expired (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
+  - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
+    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
+    with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
+    certificate verify failed_ certificate has expired (_ssl.c_1017)')))
+  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
     to URL: HTTPSConnectionPool(host=''epsd.biocuckoo.cn'', port=443): Max retries
     exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
     certificate verify failed: certificate has expired (_ssl.c:1017)'')))'
@@ -65,7 +69,11 @@ products:
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
     certificate verify failed_ certificate has expired (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
+  - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
+    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
+    with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
+    certificate verify failed_ certificate has expired (_ssl.c_1017)')))
+  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
     to URL: HTTPSConnectionPool(host=''epsd.biocuckoo.cn'', port=443): Max retries
     exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
     certificate verify failed: certificate has expired (_ssl.c:1017)'')))'
@@ -83,7 +91,11 @@ products:
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
     certificate verify failed_ certificate has expired (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
+  - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
+    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
+    with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
+    certificate verify failed_ certificate has expired (_ssl.c_1017)')))
+  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
     to URL: HTTPSConnectionPool(host=''epsd.biocuckoo.cn'', port=443): Max retries
     exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
     certificate verify failed: certificate has expired (_ssl.c:1017)'')))'
@@ -103,7 +115,12 @@ products:
     with url_ /Download.php (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
     CERTIFICATE_VERIFY_FAILED] certificate verify failed_ certificate has expired
     (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
+  - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
+    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
+    with url_ /Download.php (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
+    CERTIFICATE_VERIFY_FAILED] certificate verify failed_ certificate has expired
+    (_ssl.c_1017)')))
+  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
     to URL: HTTPSConnectionPool(host=''epsd.biocuckoo.cn'', port=443): Max retries
     exceeded with url: /Download.php (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has

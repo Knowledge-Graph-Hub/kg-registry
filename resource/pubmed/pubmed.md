@@ -186,11 +186,11 @@ products:
   - pubmed
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-11-21_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-22: HTTP 403 error
     when accessing file'
 - category: Product
   description: Co-occurrence data from PubMed abstracts
@@ -212,6 +212,29 @@ products:
   product_url: https://github.com/NCATSTranslator/Translator-All/wiki/OmniCorp
   secondary_source:
   - omnicorp
+- category: GraphProduct
+  description: Anti-tumor biomaterial knowledge graph constructed from biomedicine
+    literature, containing structured relationships among anti-tumor entities extracted
+    through entity recognition, sentence simplification, triple extraction, and predicate
+    mapping.
+  id: atom.kg
+  name: ATOM Knowledge Graph
+  original_source:
+  - pubmed
+  product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-22: HTTP 418 error
+    when accessing file'
+- category: Product
+  description: Manually curated disease-gene associations and annotations for amyloidoses
+    and amyloid deposition-related diseases extracted from biomedical literature.
+  id: amyco.annotations
+  name: AmyCo Curated Annotations
+  original_source:
+  - pubmed
+  - amyco
+  secondary_source:
+  - diseases
 repository: https://www.ncbi.nlm.nih.gov/
 synonyms:
 - PubMed

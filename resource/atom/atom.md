@@ -1,60 +1,75 @@
 ---
-id: "atom"
-name: ATOM
-layout: resource_detail
-description: ATOM (Anti-tumor Biomaterial Knowledge Graph) is a knowledge graph construction approach that extracts structured relationships about anti-tumor biomaterials from unstructured biomedicine literature, enabling researchers to efficiently access information about tumor treatment materials and their relationships.
-category: KnowledgeGraph
 activity_status: unknown
-domains:
-  - biomedical
-  - clinical
-  - health
-homepage_url: https://doi.org/10.1109/BIBM47256.2019.8983062
-creation_date: '2025-11-22T00:00:00Z'
-last_modified_date: '2025-11-22T00:00:00Z'
+category: KnowledgeGraph
 contacts:
-  - category: Individual
-    label: Tong Wang
-  - category: Individual
-    label: Lijun Duan
-  - category: Individual
-    label: Chunxia He
-  - category: Individual
-    label: Gengchen Deng
-  - category: Individual
-    label: Rong Qin
-  - category: Individual
-    label: Yanchun Zhang
-publications:
-  - id: "doi:10.1109/BIBM47256.2019.8983062"
-    title: 'ATOM: Construction of Anti-tumor Biomaterial Knowledge Graph by Biomedicine Literature'
-    authors:
-      - Tong Wang
-      - Lijun Duan
-      - Chunxia He
-      - Gengchen Deng
-      - Rong Qin
-      - Yanchun Zhang
-    journal: 2019 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)
-    year: "2019"
-    doi: "10.1109/BIBM47256.2019.8983062"
+- category: Individual
+  label: Tong Wang
+- category: Individual
+  label: Lijun Duan
+- category: Individual
+  label: Chunxia He
+- category: Individual
+  label: Gengchen Deng
+- category: Individual
+  label: Rong Qin
+- category: Individual
+  label: Yanchun Zhang
+creation_date: '2025-11-22T00:00:00Z'
+description: ATOM (Anti-tumor Biomaterial Knowledge Graph) is a knowledge graph construction
+  approach that extracts structured relationships about anti-tumor biomaterials from
+  unstructured biomedicine literature, enabling researchers to efficiently access
+  information about tumor treatment materials and their relationships.
+domains:
+- biomedical
+- clinical
+- health
+homepage_url: https://doi.org/10.1109/BIBM47256.2019.8983062
+id: atom
+last_modified_date: '2025-11-22T00:00:00Z'
+layout: resource_detail
+name: ATOM
 products:
-  - id: "atom.kg"
-    name: ATOM Knowledge Graph
-    description: Anti-tumor biomaterial knowledge graph constructed from biomedicine literature, containing structured relationships among anti-tumor entities extracted through entity recognition, sentence simplification, triple extraction, and predicate mapping.
-    category: GraphProduct
-    product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
-    original_source:
-      - pubmed
-  - id: "atom.pipeline"
-    name: ATOM Construction Pipeline
-    description: Natural language processing pipeline for constructing anti-tumor biomaterial knowledge graphs from unstructured biomedicine literature, implementing entity recognition, sentence simplification, triple extraction, and predicate mapping processes.
-    category: ProcessProduct
-    product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
-    original_source:
-      - atom
+- category: GraphProduct
+  description: Anti-tumor biomaterial knowledge graph constructed from biomedicine
+    literature, containing structured relationships among anti-tumor entities extracted
+    through entity recognition, sentence simplification, triple extraction, and predicate
+    mapping.
+  id: atom.kg
+  name: ATOM Knowledge Graph
+  original_source:
+  - pubmed
+  product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-22: HTTP 418 error
+    when accessing file'
+- category: ProcessProduct
+  description: Natural language processing pipeline for constructing anti-tumor biomaterial
+    knowledge graphs from unstructured biomedicine literature, implementing entity
+    recognition, sentence simplification, triple extraction, and predicate mapping
+    processes.
+  id: atom.pipeline
+  name: ATOM Construction Pipeline
+  original_source:
+  - atom
+  product_url: https://doi.org/10.1109/BIBM47256.2019.8983062
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-22: HTTP 418 error
+    when accessing file'
+publications:
+- authors:
+  - Tong Wang
+  - Lijun Duan
+  - Chunxia He
+  - Gengchen Deng
+  - Rong Qin
+  - Yanchun Zhang
+  doi: 10.1109/BIBM47256.2019.8983062
+  id: doi:10.1109/BIBM47256.2019.8983062
+  journal: 2019 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)
+  title: 'ATOM: Construction of Anti-tumor Biomaterial Knowledge Graph by Biomedicine
+    Literature'
+  year: '2019'
 ---
-
 # ATOM
 
 ## Overview

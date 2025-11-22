@@ -39,10 +39,10 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/SDTM/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Clinical Data Acquisition Standards Harmonization controlled terminology
     for consistent data collection across research studies. A subset of SDTM terminology.
@@ -53,10 +53,10 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/SDTM/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Analysis Data Model controlled terminology for efficient generation,
     replication, review, and submission of analysis results from clinical trial data.
@@ -67,10 +67,10 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/ADaM/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Standard for Exchange of Nonclinical Data controlled terminology for
     preclinical study data interchange and regulatory submissions to FDA.
@@ -81,10 +81,10 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/SEND/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Define-XML controlled terminology providing enumeration values for
     the CDISC Define-XML data exchange standard.
@@ -95,10 +95,10 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/Define-XML/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Protocol Representation Model controlled terminology for commonly used
     words and phrases in clinical research protocols, supporting PRM and CTR-XML standards.
@@ -109,10 +109,10 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/Protocol/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
+    accessing file
 - category: Product
   description: CDISC Glossary controlled terminology harmonizing definitions, acronyms,
     abbreviations, and initials across CDISC-managed standards initiatives.
@@ -123,10 +123,10 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/Glossary/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Digital Data Flow controlled terminology for study definition reference
     architecture and standardized study definitions repository development.
@@ -137,10 +137,10 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/DDF/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
+    accessing file
 - category: Product
   description: Trial Master File controlled terminology for standardized structure,
     nomenclature, and metadata for electronic trial master file content.
@@ -151,10 +151,10 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/TMF/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
+    accessing file
 - category: Product
   description: MRCT Center Clinical Research Glossary controlled terminology with
     plain language definitions for enhancing health literacy and participant communications.
@@ -165,10 +165,10 @@ products:
   - cdiscvocab
   product_url: https://evs.nci.nih.gov/ftp1/CDISC/MRCT%20Center%20Clinical%20Research%20Glossary/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
-    accessing file
   - 'File was not able to be retrieved when checked on 2025-11-21: HTTP 403 error
     when accessing file'
+  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
+    accessing file
 - category: GraphicalInterface
   description: NCI Enterprise Vocabulary Services browser for exploring and searching
     CDISC Controlled Terminology concepts within NCI Thesaurus.
@@ -195,11 +195,11 @@ products:
   secondary_source:
   - athena
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
     to URL_ Exceeded 30 redirects.
   - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - 'File was not able to be retrieved when checked on 2025-11-21: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
     to URL: Exceeded 30 redirects.'
 synonyms:
 - CDISC Controlled Terminology
