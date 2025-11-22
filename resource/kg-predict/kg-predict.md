@@ -20,7 +20,7 @@ license:
 name: KG-Predict
 homepage_url: http://nlp.case.edu/public/data/GPKG-Predict/
 products:
-  - category: Product
+  - category: GraphProduct
     description: GP-KG knowledge graph containing 1,246,726 associations between 61,146 entities from multiple genotypic and phenotypic databases
     format: csv
     id: "kg-predict.gpkg"
