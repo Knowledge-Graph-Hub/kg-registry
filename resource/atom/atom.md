@@ -26,7 +26,7 @@ contacts:
   - category: Individual
     label: Yanchun Zhang
 publications:
-  - id: "PMID:unknown"
+  - id: "doi:10.1109/BIBM47256.2019.8983062"
     title: 'ATOM: Construction of Anti-tumor Biomaterial Knowledge Graph by Biomedicine Literature'
     authors:
       - Tong Wang
