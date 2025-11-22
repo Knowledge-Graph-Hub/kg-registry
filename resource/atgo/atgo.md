@@ -1,27 +1,118 @@
 ---
-activity_status: unknown
-category: OntologyResource
+activity_status: inactive
+category: Ontology
 creation_date: '2025-10-30T00:00:00Z'
-description: Information resource for Autophagy Ontology
+description: ATGO (Autophagy Ontology) is a hierarchical functional ontology of autophagy processes built through Active Interaction Mapping of genetic interaction data from Saccharomyces cerevisiae. The second-generation ontology contains 220 functions representing autophagy organization including vesicle transport, cell cycle, and stress response pathways.
 domains:
-  - stub
-id: atgo
-infores_id: atgo
-last_modified_date: '2025-10-30T00:00:00Z'
+  - biological systems
+  - systems biology
+id: "atgo"
+infores_id: "atgo"
+last_modified_date: '2025-11-22T00:00:00Z'
 layout: resource_detail
 name: Autophagy Ontology
-homepage_url: https://pubmed.ncbi.nlm.nih.gov/28132844/
+homepage_url: http://atgo.ucsd.edu/
 synonyms:
   - ATGO
+contacts:
+  - category: Individual
+    label: Trey Ideker
+  - category: Individual
+    label: Subramaniam Subramani
+publications:
+  - id: "PMID:28132844"
+    title: 'Active Interaction Mapping Reveals the Hierarchical Organization of Autophagy'
+    authors:
+      - Michael H Kramer
+      - Jean-Claude Farré
+      - Koyel Mitra
+      - Michael Ku Yu
+      - Keiichiro Ono
+      - Barry Demchak
+      - Katherine Licon
+      - Mikayla Flagg
+      - Rama Balakrishnan
+      - J Michael Cherry
+      - Trey Ideker
+      - Subramaniam Subramani
+    journal: Molecular Cell
+    year: "2017"
+    doi: "10.1016/j.molcel.2016.12.024"
+products:
+  - id: "atgo.ontology"
+    name: ATGO Hierarchical Ontology
+    description: Second-generation hierarchical ontology of 220 autophagy functions built from 156,364 synthetic-lethal genetic interactions across autophagy-activating conditions in Saccharomyces cerevisiae.
+    category: OntologyProduct
+    product_url: http://atgo.ucsd.edu/
+    original_source:
+      - atgo
 ---
 
 # Autophagy Ontology
 
 ## Overview
 
-Information resource for Autophagy Ontology
+The Autophagy Ontology (ATGO) is a hierarchical functional ontology developed through Active Interaction Mapping to systematically organize autophagy processes. Autophagy is a central cellular recycling process implicated in numerous diseases, making comprehensive functional organization critical for understanding its complex mechanisms.
 
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
+ATGO was constructed using a progressive data-driven approach that integrates genetic interaction networks from yeast (Saccharomyces cerevisiae). The ontology captures autophagy components in relation to broader cellular processes including vesicle transport, cell cycle regulation, and stress response.
+
+## Key Features
+
+### Hierarchical Organization
+
+- **220 Functional Components**: Second-generation ontology representing comprehensive autophagy organization
+- **Multi-level Structure**: Hierarchical relationships from specific autophagy genes to broad cellular processes
+- **Data-Driven Construction**: Built from 156,364 synthetic-lethal genetic interactions
+
+### Active Interaction Mapping Methodology
+
+The ATGO ontology was developed through an innovative procedure called Active Interaction Mapping:
+
+1. **First-generation model**: Built from existing gene networks capturing known autophagy components
+2. **Synthetic-lethal analysis**: Systematic measurement of 156,364 synthetic-lethal interactions across autophagy-activating conditions
+3. **Iterative refinement**: Data-guided expansion producing more comprehensive functional hierarchy
+
+### Novel Autophagy Components
+
+Approximately half of the 220 functions in ATGO were previously unknown, including confirmed roles for:
+
+- **Gyp1**: Functions at the phagophore-assembly site
+- **Atg24**: Involved in cargo engulfment
+- **Atg26**: Participates in cytoplasm-to-vacuole targeting
+- **Ssd1, Did4**: Functions in selective and non-selective autophagy
+
+## Applications
+
+### Systems Biology Research
+
+- Understanding hierarchical organization of cellular recycling
+- Mapping functional relationships between autophagy and related processes
+- Identifying novel autophagy components and mechanisms
+
+### Disease Research
+
+- Investigating autophagy dysfunction in disease contexts
+- Identifying therapeutic targets within autophagy pathways
+- Understanding connections between autophagy and stress response
+
+## Technical Implementation
+
+- **Organism**: Saccharomyces cerevisiae (yeast)
+- **Data Foundation**: 156,364 synthetic-lethal genetic interactions
+- **Coverage**: Vesicle transport, cell cycle, stress response, and autophagy-specific processes
+- **Website**: Originally hosted at http://atgo.ucsd.edu/ (currently inactive)
+
+##  Status
+
+The ATGO resource website (http://atgo.ucsd.edu/) is no longer accessible as of 2025. The ontology and associated data were published in 2017 in Molecular Cell by the Ideker and Subramani laboratories at UCSD.
+
+## Publications
+
+- [Active Interaction Mapping Reveals the Hierarchical Organization of Autophagy](https://pubmed.ncbi.nlm.nih.gov/28132844/) - Kramer et al., Molecular Cell 2017
+
+---
+
+*This resource represents a significant contribution to systems-level understanding of autophagy but appears to be no longer actively maintained.*
 
 ## Information Resource ID
 
