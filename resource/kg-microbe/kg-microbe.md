@@ -38,18 +38,9 @@ products:
   name: KG-Microbe KGX Graph - Raw
   original_source:
   - kg-microbe
-  product_url: https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
   secondary_source:
   - kg-microbe
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-11-21_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-22: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   compression: targz
   description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
@@ -81,8 +72,7 @@ products:
   name: KG-Microbe KGX Graph - Function
   original_source:
   - kg-microbe
-  product_file_size: 4623010863
-  product_url: https://kghub.io/kg-microbe/KGMicrobe-function-20250222.tar.gz
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
 - category: GraphProduct
@@ -93,8 +83,7 @@ products:
   name: KG-Microbe KGX Graph - Biomedical-Function
   original_source:
   - kg-microbe
-  product_file_size: 4640682152
-  product_url: https://kghub.io/kg-microbe/KGMicrobe-biomedical-function-20250222.tar.gz
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
 - category: GraphProduct
@@ -105,8 +94,7 @@ products:
   name: KG-Microbe UniProt microbe transform
   original_source:
   - uniprot
-  product_file_size: 4796343398
-  product_url: https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
   secondary_source:
   - kg-microbe
 repository: https://github.com/Knowledge-Graph-Hub/kg-microbe
