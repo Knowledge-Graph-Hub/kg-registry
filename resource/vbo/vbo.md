@@ -127,6 +127,10 @@ Vertebrate Breed Ontology in JSON format
 
 **Format**: json
 
+## Publications
+
+- [The Vertebrate Breed Ontology: Toward Effective Breed Data Standardization](https://doi.org/10.1111/jvim.70133)
+
 **Domains**: biological systems
 
 ---

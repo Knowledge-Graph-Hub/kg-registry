@@ -6,9 +6,9 @@ id: foodb.data.images
 name: FooDB Image Files
 product_url: https://foodb.ca/public/system/downloads/foodb_image_files.zip
 warnings:
-- File was not able to be retrieved when checked on 2025-11-21_ No Content-Length
+- File was not able to be retrieved when checked on 2025-11-22_ No Content-Length
   header found
-- File was not able to be retrieved when checked on 2025-11-19_ No Content-Length
+- File was not able to be retrieved when checked on 2025-11-21_ No Content-Length
   header found
 - File was not able to be retrieved when checked on 2025-11-11_ HTTP 502 error when
   accessing file

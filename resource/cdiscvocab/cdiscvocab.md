@@ -195,11 +195,11 @@ products:
   secondary_source:
   - athena
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
+    to URL_ Exceeded 30 redirects.
   - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
-    to URL_ Exceeded 30 redirects.
-  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-25: Error connecting
     to URL: Exceeded 30 redirects.'
 synonyms:
 - CDISC Controlled Terminology

@@ -22,6 +22,8 @@ aro	Antibiotic Resistance Ontology	Ontology	https://github.com/arpcard/aro	resou
 ato	Amphibian taxonomy	Ontology	http://www.amphibanat.org	resource/ato/ato.md
 atom	ATOM	KnowledgeGraph	https://doi.org/10.1109/BIBM47256.2019.8983062	resource/atom/atom.md
 automat	Automat	Aggregator	https://robokop.renci.org/api-docs/docs/category/automat	resource/automat/automat.md
+bacdive	Bacdive	DataSource		resource/bacdive/bacdive.md
+bactotraits	Bactotraits	DataSource		resource/bactotraits/bactotraits.md
 bcgo	Beta Cell Genomics Ontology	Ontology	https://github.com/obi-bcgo/bcgo	resource/bcgo/bcgo.md
 bco	Biological Collections Ontology	Ontology	https://github.com/BiodiversityOntologies/bco	resource/bco/bco.md
 bigg	BiGG Models	DataSource	http://bigg.ucsd.edu/	resource/bigg/bigg.md
@@ -94,6 +96,7 @@ ddanat	Dictyostelium discoideum anatomy	Ontology	http://dictybase.org/	resource/
 ddpheno	Dictyostelium discoideum phenotype ontology	Ontology	http://dictybase.org/	resource/ddpheno/ddpheno.md
 dideo	Drug-drug Interaction and Drug-drug Interaction Evidence Ontology	Ontology	https://github.com/DIDEO/DIDEO	resource/dideo/dideo.md
 dinto	The Drug-Drug Interactions Ontology	Ontology	http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto	resource/dinto/dinto.md
+disbiome	Disbiome	DataSource		resource/disbiome/disbiome.md
 disdriv	Disease Drivers Ontology	Ontology	https://disease-ontology.org/	resource/disdriv/disdriv.md
 doid	Human Disease Ontology	Ontology	https://disease-ontology.org	resource/doid/doid.md
 dorothea	DoRothEA	KnowledgeGraph	https://saezlab.github.io/dorothea/	resource/dorothea/dorothea.md
@@ -104,6 +107,7 @@ drug-approvals-kp	Drug Approvals KP	KnowledgeGraph		resource/drug-approvals-kp/d
 dsstox	DSSTox	DataSource	https://www.epa.gov/comptox-tools/distributed-structure-searchable-toxicity-dsstox-database	resource/dsstox/dsstox.md
 duo	Data Use Ontology	Ontology	https://github.com/EBISPOT/DUO	resource/duo/duo.md
 ebrains	EBRAINS Knowledge Graph	KnowledgeGraph	https://docs.kg.ebrains.eu/	resource/ebrains/ebrains.md
+ec	Ec	DataSource		resource/ec/ec.md
 ecao	The Echinoderm Anatomy and Development Ontology	Ontology	https://github.com/echinoderm-ontology/ecao_ontology	resource/ecao/ecao.md
 ecid	ECID	DataSource	https://www.ecidbase.org/	resource/ecid/ecid.md
 eco	Evidence and Conclusion Ontology	Ontology	https://www.evidenceontology.org	resource/eco/eco.md
@@ -241,8 +245,10 @@ mat	Minimal anatomical terminology	Ontology		resource/mat/mat.md
 mco	Microbial Conditions Ontology	Ontology	https://github.com/microbial-conditions-ontology/microbial-conditions-ontology	resource/mco/mco.md
 mcro	Model Card Report Ontology	Ontology	https://github.com/UTHealth-Ontology/MCRO	resource/mcro/mcro.md
 mechreponet	MechRepoNet	KnowledgeGraph	https://github.com/SuLab/MechRepoNet	resource/mechreponet/mechreponet.md
+mediadive	Mediadive	DataSource		resource/mediadive/mediadive.md
 medkg	MedKG	KnowledgeGraph	http://pitools.niper.ac.in/medkg/	resource/medkg/medkg.md
 metanetx	MetaNetX	DataSource	https://www.metanetx.org/	resource/metanetx/metanetx.md
+metpo	Metpo	DataSource		resource/metpo/metpo.md
 mf	Mental Functioning Ontology	Ontology	https://github.com/jannahastings/mental-functioning-ontology	resource/mf/mf.md
 mfmo	Mammalian Feeding Muscle Ontology	Ontology	https://github.com/rdruzinsky/feedontology	resource/mfmo/mfmo.md
 mfo	Medaka fish anatomy and development	Ontology		resource/mfo/mfo.md
@@ -320,7 +326,7 @@ one	Ontology for Nutritional Epidemiology	Ontology	https://github.com/cyang0128/
 ons	Ontology for Nutritional Studies	Ontology	https://github.com/enpadasi/Ontology-for-Nutritional-Studies	resource/ons/ons.md
 ontoavida	OntoAvida: ontology for Avida digital evolution platform	Ontology	https://gitlab.com/fortunalab/ontoavida	resource/ontoavida/ontoavida.md
 ontology-kp	Ontology KP	KnowledgeGraph		resource/ontology-kp/ontology-kp.md
-ontoneo	Obstetric and Neonatal Ontology	Ontology	ontoneo.com	resource/ontoneo/ontoneo.md
+ontoneo	Obstetric and Neonatal Ontology	Ontology	https://ontoneo.com/	resource/ontoneo/ontoneo.md
 oostt	Ontology of Organizational Structures of Trauma centers and Trauma systems	Ontology	https://github.com/OOSTT/OOSTT	resource/oostt/oostt.md
 opentargets	Open Targets	KnowledgeGraph	https://www.opentargets.org/	resource/opentargets/opentargets.md
 opl	Ontology for Parasite LifeCycle	Ontology	https://github.com/OPL-ontology/OPL	resource/opl/opl.md

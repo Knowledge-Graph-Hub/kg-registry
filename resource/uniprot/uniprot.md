@@ -30,7 +30,7 @@ products:
   original_source:
   - uniprot
   product_file_size: 4796343398
-  product_url: https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
   secondary_source:
   - kg-microbe
 - category: Product
@@ -98,11 +98,11 @@ products:
   secondary_source:
   - pombase
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-22_ No Content-Length
+    header found
   - File was not able to be retrieved when checked on 2025-11-21_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-11-19_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-11-22: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-11-25: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -145,15 +145,15 @@ products:
   secondary_source:
   - oma
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-21_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-11-22_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-11-21_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-11-22: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-11-25: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -654,11 +654,11 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-22_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-11-21_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-25: HTTP 403 error
     when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD
@@ -687,11 +687,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
   - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
-  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-25: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'''
 - category: Product
   description: GO annotations for human proteins
@@ -703,11 +703,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
   - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
-  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-25: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'''
 - category: Product
   description: GO annotations for mouse proteins
@@ -719,11 +719,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
   - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-25: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'''
 - category: MappingProduct
   description: Files containing transitive assignments of InterPro matches, UniProtKB
@@ -738,11 +738,11 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
   - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-  - File was not able to be retrieved when checked on 2025-11-19_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-  - 'File was not able to be retrieved when checked on 2025-11-22: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-25: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'''
 - category: GraphicalInterface
   description: Interactive web interface for exploring and visualizing kinase-substrate
@@ -764,6 +764,138 @@ products:
   product_url: https://kinace.kinametrix.com/
   secondary_source:
   - kinace
+- category: GraphProduct
+  compression: targz
+  description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
+  format: kgx
+  id: kg-microbe.graph.raw
+  license:
+    id: https://creativecommons.org/publicdomain/zero/1.0/
+    label: CC0 1.0
+  name: KG-Microbe KGX Graph - Raw
+  original_source:
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
+  product_file_size: 12464495186
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
+  secondary_source:
+  - kg-microbe
+- category: GraphProduct
+  compression: targz
+  description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
+    growth preferences.
+  format: kgx
+  id: kg-microbe.graph.core
+  name: KG-Microbe KGX Graph - Core
+  original_source:
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
+  secondary_source:
+  - kg-microbe
+- category: GraphProduct
+  compression: targz
+  description: Core plus human biomedical data (ontologies, CTD, Wallen et al)
+  format: kgx
+  id: kg-microbe.graph.biomedical
+  name: KG-Microbe KGX Graph - Biomedical
+  original_source:
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
+  product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
+  secondary_source:
+  - kg-microbe
+- category: GraphProduct
+  compression: targz
+  description: Core plus Uniprot genome annotations
+  format: kgx
+  id: kg-microbe.graph.function
+  name: KG-Microbe KGX Graph - Function
+  original_source:
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
+  product_file_size: 4623010863
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
+  secondary_source:
+  - kg-microbe
+- category: GraphProduct
+  compression: targz
+  description: Biomedical plus Uniprot genome annotations
+  format: kgx
+  id: kg-microbe.graph.biomedical-function
+  name: KG-Microbe KGX Graph - Biomedical-Function
+  original_source:
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
+  product_file_size: 4640682152
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
+  secondary_source:
+  - kg-microbe
 repository: https://www.uniprot.org/help/downloads
 ---
 UniProt Protein Knowledge Base
