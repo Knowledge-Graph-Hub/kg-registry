@@ -37,7 +37,21 @@ products:
     label: CC0 1.0
   name: KG-Microbe KGX Graph - Raw
   original_source:
-  - kg-microbe
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
   secondary_source:
   - kg-microbe
@@ -49,7 +63,21 @@ products:
   id: kg-microbe.graph.core
   name: KG-Microbe KGX Graph - Core
   original_source:
-  - kg-microbe
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
   product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
   secondary_source:
   - kg-microbe
@@ -60,7 +88,21 @@ products:
   id: kg-microbe.graph.biomedical
   name: KG-Microbe KGX Graph - Biomedical
   original_source:
-  - kg-microbe
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
   product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
   secondary_source:
   - kg-microbe
@@ -71,7 +113,21 @@ products:
   id: kg-microbe.graph.function
   name: KG-Microbe KGX Graph - Function
   original_source:
-  - kg-microbe
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
@@ -82,7 +138,21 @@ products:
   id: kg-microbe.graph.biomedical-function
   name: KG-Microbe KGX Graph - Biomedical-Function
   original_source:
-  - kg-microbe
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
