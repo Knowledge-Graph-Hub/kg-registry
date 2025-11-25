@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: OntologyResource
+category: Ontology
 description: Dublin Core Metadata Terms (DCT) is a vocabulary of standardized metadata elements for describing resources, providing interoperable metadata standards for resource discovery across digital libraries and information systems.
 domains: []
 id: "dct"

@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: OntologyResource
+category: Ontology
 creation_date: '2025-11-25T00:00:00Z'
 description: The Enzyme Commission classification system provides a hierarchical numbering scheme for enzymes based on the chemical reactions they catalyze, maintained by the IUBMB.
 domains:

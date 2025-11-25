@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: Database
+category: DataSource
 creation_date: '2025-11-25T00:00:00Z'
 description: MediaDive is the world's largest collection of microbial cultivation media, maintained by DSMZ (German Collection of Microorganisms and Cell Cultures). It provides comprehensive information about media compositions, solutions, ingredients, and growth conditions for over 47,000 microbial strains including bacteria, archaea, fungi, protists, and algae.
 domains:

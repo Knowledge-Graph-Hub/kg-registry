@@ -1,16 +1,26 @@
 ---
-activity_status: unknown
+activity_status: active
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: Genebass is a resource of exome-based association statistics, made available to the public. The dataset encompasses 3,817 phenotypes with gene-based and single-variant testing across 281,852 individuals with exome sequence data from the UK Biobank.
+description: Genebass is a comprehensive resource of exome-based gene-level and single-variant association statistics from 281,852 UK Biobank participants across 3,817 phenotypes, enabling large-scale genotype-phenotype association studies.
 domains:
-  - stub
-id: genebass
-infores_id: genebass
-last_modified_date: '2025-10-30T00:00:00Z'
+  - genomics
+  - biomedical
+id: "genebass"
+infores_id: "genebass"
+last_modified_date: '2025-11-25T00:00:00Z'
 layout: resource_detail
 name: 'Genebass: Gene-based association summary statistics'
 homepage_url: https://genebass.org/
+synonyms:
+  - Genebass
+  - Gene-based association summary statistics
+contacts:
+  - category: Organization
+    label: UK Biobank
+    contact_details:
+      - contact_type: url
+        value: "https://www.ukbiobank.ac.uk/"
 ---
 
 # Genebass: Gene-based association summary statistics

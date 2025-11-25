@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: Database
+category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
 description: iProClass was an integrated protein classification database that provided comprehensive annotations by integrating information from UniProt, PIR, and multiple external databases including protein family, function, pathway, and interaction data.
 domains:

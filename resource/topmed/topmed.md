@@ -1,18 +1,27 @@
 ---
-activity_status: unknown
+activity_status: active
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: Information resource for NHLBI Trans-Omics for Precision Medicine
+description: The NHLBI Trans-Omics for Precision Medicine (TOPMed) program generates scientific resources to enhance understanding of fundamental biological processes that underlie heart, lung, blood, and sleep disorders, providing whole genome sequencing and multi-omics data from diverse populations.
 domains:
-  - stub
-id: topmed
-infores_id: topmed
-last_modified_date: '2025-10-30T00:00:00Z'
+  - genomics
+  - clinical
+  - precision medicine
+id: "topmed"
+infores_id: "topmed"
+last_modified_date: '2025-11-25T00:00:00Z'
 layout: resource_detail
 name: NHLBI Trans-Omics for Precision Medicine
-homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/NHLBI-Trans-Omics-for-Precision-Medicine
+homepage_url: https://topmed.nhlbi.nih.gov/
 synonyms:
   - TOPMed
+  - Trans-Omics for Precision Medicine
+contacts:
+  - category: Organization
+    label: NHLBI (National Heart, Lung, and Blood Institute)
+    contact_details:
+      - contact_type: url
+        value: "https://www.nhlbi.nih.gov/"
 ---
 
 # NHLBI Trans-Omics for Precision Medicine

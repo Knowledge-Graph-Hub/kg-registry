@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: Service
+category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
 description: The Autonomous Relay System (ARS) is the primary interface and query routing service for the NCATS Biomedical Data Translator, orchestrating queries across multiple knowledge providers and reasoning agents.
 domains:

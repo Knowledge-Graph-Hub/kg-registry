@@ -1,6 +1,6 @@
 ---
 activity_status: inactive
-category: OntologyResource
+category: Ontology
 creation_date: '2025-10-30T00:00:00Z'
 description: The Disease Ontology Annotation Framework (DOAF) was a semantic framework for representing and sharing disease annotations, enabling standardized disease ontology annotations across biomedical resources.
 domains:

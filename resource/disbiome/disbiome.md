@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: Database
+category: DataSource
 creation_date: '2025-11-25T00:00:00Z'
 description: Database of microbiome-disease associations, cataloging relationships between microbial taxa and human diseases based on experimental and clinical evidence.
 domains:

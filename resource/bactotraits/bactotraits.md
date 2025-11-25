@@ -1,6 +1,6 @@
 ---
 activity_status: active
-category: Database
+category: DataSource
 creation_date: '2025-11-25T00:00:00Z'
 description: A comprehensive database of bacterial phenotypic traits including morphology, physiology, ecology, and growth characteristics for thousands of bacterial species.
 domains:
