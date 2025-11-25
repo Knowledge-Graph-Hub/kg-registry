@@ -27,30 +27,84 @@ contacts:
 
 ## Overview
 
-Genebass is a resource of exome-based association statistics, made available to the public. The dataset encompasses 3,817 phenotypes with gene-based and single-variant testing across 281,852 individuals with exome sequence data from the UK Biobank.
+Genebass is a comprehensive public resource providing exome-based association statistics from the UK Biobank. It encompasses 281,852 individuals with exome sequence data analyzed across 3,817 phenotypes, offering both gene-based and single-variant association testing results. This resource enables large-scale genotype-phenotype association studies and supports research in human genetics, rare variant analysis, and precision medicine.
 
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
+## Data Content
+
+### Dataset Statistics
+- **Participants**: 281,852 individuals with exome sequencing data
+- **Phenotypes**: 3,817 phenotypes spanning diverse health conditions and traits
+- **Analysis Types**: Gene-based tests and single-variant tests
+- **Coverage**: Comprehensive exome-wide association testing
+
+### Phenotype Categories
+- Quantitative traits (continuous measures)
+- Binary traits (disease/control status)
+- Clinical diagnoses from health records
+- Laboratory measurements
+- Anthropometric measurements
+- Lifestyle and behavioral phenotypes
+
+## Key Features
+
+- **Gene-Based Testing**: Aggregated variant-level statistics at the gene level
+- **Single-Variant Analysis**: Individual variant association results
+- **Public Access**: Freely available summary statistics
+- **Large Sample Size**: Powered by 281K+ exome-sequenced individuals
+- **Diverse Phenotypes**: Thousands of health-related traits
+- **UK Biobank Integration**: Leverages extensive UK Biobank phenotypic data
+
+## Applications
+
+### Genetic Research
+- Identifying disease-associated genes and variants
+- Rare variant association studies
+- Functional validation of genetic findings
+- Cross-phenotype pleiotropy analysis
+- Gene prioritization for experimental studies
+
+### Clinical Translation
+- Precision medicine candidate discovery
+- Risk prediction model development
+- Understanding genetic architecture of diseases
+- Drug target identification
+- Pharmacogenomics research
+
+### Population Genetics
+- Allele frequency estimation in diverse ancestries
+- Selection signature detection
+- Evolutionary constraint analysis
+- Population-specific genetic associations
+
+## Access and Usage
+
+- **Web Interface**: Interactive browser at https://genebass.org/
+- **Search Functionality**: Query by gene, variant, or phenotype
+- **Download Options**: Bulk download of summary statistics
+- **Visualization Tools**: Built-in plotting and exploration features
+- **API Access**: Programmatic data retrieval
+
+## Technical Details
+
+### Statistical Methods
+- Gene-based burden tests
+- SKAT-O (Sequence Kernel Association Test - Optimal)
+- Single-variant logistic/linear regression
+- Adjustment for covariates and population structure
+
+### Data Format
+- Summary statistics tables
+- Effect sizes and standard errors
+- P-values and confidence intervals
+- Allele frequencies
+- Sample sizes per analysis
 
 ## Information Resource ID
 
 This resource has the Information Resource identifier: `infores:genebass`
 
-## Curation Status
+## Citation
 
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
+When using Genebass data, please cite the resource appropriately and acknowledge the UK Biobank.
 
-## What Needs to be Curated
-
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
-
-## Additional Notes
+For more information, visit https://genebass.org/
