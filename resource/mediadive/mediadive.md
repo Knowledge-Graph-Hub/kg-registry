@@ -1,15 +1,19 @@
 ---
 activity_status: active
-category: DataSource
+category: Database
 creation_date: '2025-11-25T00:00:00Z'
-description: Stub Resource page for mediadive. This page was automatically generated
-  because it was referenced by other resources.
+description: Database of microbial cultivation media and growth conditions, providing standardized information about media compositions and environmental parameters for culturing microorganisms.
 domains:
-- stub
+- microbiology
+- biological systems
+- systems biology
 id: mediadive
 last_modified_date: '2025-11-25T00:00:00Z'
 layout: resource_detail
-name: Mediadive
+name: MediaDive
+synonyms:
+- MediaDive
+- Media Diversity
 products:
 - category: GraphProduct
   compression: targz
@@ -147,6 +151,28 @@ warnings:
 - This is an automatically generated stub page. Please replace with accurate information
   about this resource.
 ---
-# Mediadive
+# MediaDive
 
-This is an automatically generated stub page for mediadive. Please update with proper information.
+## Overview
+
+MediaDive is a database resource that provides comprehensive information about microbial cultivation media and growth conditions. It catalogs standardized media compositions, nutrient requirements, and environmental parameters necessary for culturing diverse microorganisms.
+
+## Key Features
+
+- **Media Compositions**: Detailed formulations of growth media with precise component concentrations
+- **Growth Conditions**: Environmental parameters including temperature, pH, oxygen requirements, and pressure conditions
+- **Standardized Annotations**: Structured metadata using controlled vocabularies for media components and growth parameters
+- **Cross-References**: Links to microbial species and taxonomic classifications
+
+## Applications
+
+- **Microbiology Research**: Supporting experimental design for microbial cultivation studies
+- **Culture Collection Management**: Standardized protocols for maintaining microbial strains
+- **Comparative Studies**: Analyzing growth preferences across microbial taxa
+- **Knowledge Graph Integration**: Structured data for linking media requirements to microbial phenotypes
+
+## Integration
+
+MediaDive data is integrated into the KG-Microbe knowledge graph framework, connecting media and growth condition information with microbial taxonomy, traits, and functional annotations.
+
+For more information about how MediaDive data is used in knowledge graph construction, see the [KG-Microbe project](https://github.com/Knowledge-Graph-Hub/kg-microbe).

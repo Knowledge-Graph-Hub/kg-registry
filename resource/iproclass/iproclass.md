@@ -1,46 +1,97 @@
 ---
-activity_status: unknown
-category: DataSource
+activity_status: inactive
+category: Database
 creation_date: '2025-10-30T00:00:00Z'
-description: Information resource for iProClass
+description: iProClass was an integrated protein classification database that provided comprehensive annotations by integrating information from UniProt, PIR, and multiple external databases including protein family, function, pathway, and interaction data.
 domains:
-  - stub
-id: iproclass
-infores_id: iproclass
-last_modified_date: '2025-10-30T00:00:00Z'
+  - proteomics
+id: "iproclass"
+infores_id: "iproclass"
+last_modified_date: '2025-11-25T00:00:00Z'
 layout: resource_detail
 name: iProClass
 homepage_url: http://pir.georgetown.edu/iproclass/
+synonyms:
+  - iProClass
+  - Integrated Protein Classification
 ---
 
 # iProClass
 
 ## Overview
 
-Information resource for iProClass
+iProClass was an integrated protein classification and annotation database developed by the Protein Information Resource (PIR) at Georgetown University. It provided comprehensive protein information by integrating data from UniProt, PIR-PSD, and over 90 biological databases, offering a unified view of protein families, functions, pathways, structures, and interactions.
 
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
+## Key Features (Historical)
+
+- **Comprehensive Integration**: Unified protein annotations from 90+ databases
+- **Protein Family Classification**: Links to InterPro, Pfam, PIRSF, and other family databases
+- **Functional Annotations**: Gene Ontology terms, enzyme classifications, and pathway memberships
+- **Structural Information**: PDB structures and structural classifications
+- **Sequence Features**: Domain architecture, post-translational modifications, variants
+- **Interaction Data**: Protein-protein and protein-small molecule interactions
+- **Cross-References**: Extensive links to external protein databases
+- **Proteome Analysis**: Tools for batch retrieval and proteome-scale analysis
+
+## Data Content (Historical)
+
+### Protein Classifications
+- **Sequence-based families**: Pfam, PIRSF, TIGRFAMs
+- **Structure-based families**: SCOP, CATH
+- **Functional classifications**: Enzyme Commission (EC), Gene Ontology (GO)
+- **Domain architectures**: InterPro domains and domain combinations
+
+### Integrated Annotations
+- Protein names and synonyms
+- Gene names and symbols
+- Taxonomic information
+- Subcellular localization
+- Tissue expression patterns
+- Disease associations
+- Bibliographic references
+
+### External Database Links
+- Sequence databases: UniProt, RefSeq, GenBank
+- Structure databases: PDB, DSSP
+- Family databases: InterPro, Pfam, SMART
+- Pathway databases: KEGG, Reactome, BioCyc
+- Interaction databases: IntAct, BioGRID, MINT
+- Disease databases: OMIM, GeneCards
+
+## Applications (Historical)
+
+- **Protein Function Prediction**: Inferring function from family membership and homology
+- **Comparative Proteomics**: Analyzing protein distributions across organisms
+- **Systems Biology**: Integrating proteins into pathway and network contexts
+- **Drug Discovery**: Identifying protein targets and understanding drug mechanisms
+- **Structural Genomics**: Connecting sequences to structures and structural features
+
+## Status
+
+iProClass is no longer actively maintained. The PIR website indicates that the iProClass database has been discontinued. Users seeking integrated protein classification and annotation should consider:
+
+### Alternative Resources
+- **UniProt**: Comprehensive protein sequence and annotation database
+- **InterPro**: Integrated protein family and domain classifications
+- **PANTHER**: Protein family classifications with phylogenetic trees
+- **Pfam**: Protein family database based on multiple sequence alignments
+- **PIR**: Protein Information Resource (parent organization)
+
+## Legacy Impact
+
+iProClass contributed significantly to:
+- Development of integrated protein annotation standards
+- Cross-database mapping and identifier resolution
+- Proteome-scale analysis methodologies
+- Integration approaches for heterogeneous biological data
 
 ## Information Resource ID
 
 This resource has the Information Resource identifier: `infores:iproclass`
 
-## Curation Status
+## Historical Access
 
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
+- **Former Homepage**: http://pir.georgetown.edu/iproclass/ (no longer active)
+- **Parent Organization**: Protein Information Resource (PIR) - https://proteininformationresource.org/
 
-## What Needs to be Curated
-
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
-
-## Additional Notes
+For current integrated protein information, users should consult UniProt (https://www.uniprot.org/) and InterPro (https://www.ebi.ac.uk/interpro/).
