@@ -36,9 +36,9 @@ products:
   name: ENA FTP Archive
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/ena
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-21_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/ena'
   - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/ena'
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/ena'
   - 'File was not able to be retrieved when checked on 2025-11-25: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/ena'''

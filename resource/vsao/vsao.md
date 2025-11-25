@@ -26,8 +26,10 @@ products:
   format: owl
   id: vsao.owl
   name: vsao.owl
-  product_file_size: 600603
   product_url: http://purl.obolibrary.org/obo/vsao.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-11-25: Timeout connecting
+    to URL'
 taxon:
 - NCBITaxon:7742
 ---

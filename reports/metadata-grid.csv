@@ -21,6 +21,8 @@ arax,active,PASS
 aro,active,PASS
 athena,active,PASS
 automat,active,PASS
+bacdive,active,PASS
+bactotraits,active,PASS
 bco,active,PASS
 bfo,active,PASS
 bgee,active,PASS
@@ -111,6 +113,7 @@ dgidb,active,PASS
 dictybase,active,PASS
 dideo,active,PASS
 dip,active,PASS
+disbiome,active,PASS
 disdriv,active,PASS
 diseases,active,PASS
 disgenet,active,PASS
@@ -128,6 +131,7 @@ dsstox,active,PASS
 dsstoxdb,active,PASS
 duo,active,PASS
 ebrains,active,PASS
+ec,active,PASS
 ecao,active,PASS
 ecid,active,PASS
 eco,active,PASS
@@ -280,11 +284,13 @@ mcro,active,PASS
 mechreponet,active,PASS
 medgen,active,PASS
 medi,active,PASS
+mediadive,active,PASS
 medkg,active,PASS
 medlineplus,active,PASS
 mesh,active,PASS
 metacyc,active,PASS
 metanetx,active,PASS
+metpo,active,PASS
 mf,active,PASS
 mfoem,active,PASS
 mfomd,active,PASS

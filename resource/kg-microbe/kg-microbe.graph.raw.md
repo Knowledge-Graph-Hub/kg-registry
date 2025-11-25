@@ -24,6 +24,7 @@ original_source:
 - ctd
 - disbiome
 - metpo
+product_file_size: 12464495186
 product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
 secondary_source:
 - kg-microbe

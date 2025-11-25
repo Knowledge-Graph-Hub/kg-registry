@@ -79,9 +79,9 @@ products:
   name: Expression Atlas R Data Objects
   product_url: https://www.ebi.ac.uk/gxa/help/r-data-objects.html
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-21_ HTTP 500 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-22_ HTTP 500 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 500 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-11-25: HTTP 500 error
     when accessing file'
