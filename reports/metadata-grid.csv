@@ -174,6 +174,7 @@ foodon,active,PASS
 fovt,active,PASS
 fypo,active,PASS
 gallont,active,PASS
+gaz,active,PASS
 gdsc,active,PASS
 gecko,active,PASS
 gelinea,active,PASS
@@ -563,7 +564,6 @@ fbsp,inactive,PASS
 fix,orphaned,PASS
 flu,inactive,PASS
 fma,inactive,PASS
-gaz,inactive,PASS
 goa,inactive,PASS
 gro,inactive,PASS
 habronattus,inactive,PASS

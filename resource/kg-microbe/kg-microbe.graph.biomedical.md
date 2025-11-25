@@ -6,7 +6,21 @@ format: kgx
 id: kg-microbe.graph.biomedical
 name: KG-Microbe KGX Graph - Biomedical
 original_source:
-- kg-microbe
+- envo
+- ncbitaxon
+- chebi
+- go
+- mondo
+- hp
+- bacdive
+- mediadive
+- uniprot
+- rhea
+- ec
+- bactotraits
+- ctd
+- disbiome
+- metpo
 product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
 secondary_source:
 - kg-microbe

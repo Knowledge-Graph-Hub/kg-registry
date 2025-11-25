@@ -31,7 +31,7 @@ products:
   name: fbsp.owl
   product_url: http://purl.obolibrary.org/obo/fbsp.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-22: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-25: HTTP 403 error
     when accessing file'
 taxon:
 - NCBITaxon:7227

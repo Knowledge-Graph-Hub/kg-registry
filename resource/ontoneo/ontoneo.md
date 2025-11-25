@@ -17,20 +17,20 @@ description: The Obstetric and Neonatal Ontology is a structured controlled voca
   in the care of the pregnant woman, and of her baby.
 domains:
 - biomedical
-homepage_url: ontoneo.com
+homepage_url: https://ontoneo.com/
 id: ontoneo
 layout: resource_detail
 license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 name: Obstetric and Neonatal Ontology
 products:
 - category: OntologyProduct
-  description: Obstetric and Neonatal Ontology in OWL format
+  description: The full version of ONTONEO in OWL format
   format: owl
   id: ontoneo.owl
-  name: ontoneo.owl
+  name: ONTONEO
   product_file_size: 238873
   product_url: http://purl.obolibrary.org/obo/ontoneo.owl
 repository: https://github.com/ontoneo-project/Ontoneo
@@ -45,13 +45,18 @@ The Obstetric and Neonatal Ontology is a structured controlled vocabulary to pro
 
 ## Products
 
-### ontoneo.owl
+### ONTONEO
 
-Obstetric and Neonatal Ontology in OWL format
+The full version of ONTONEO in OWL format
 
 **URL**: [http://purl.obolibrary.org/obo/ontoneo.owl](http://purl.obolibrary.org/obo/ontoneo.owl)
 
 **Format**: owl
+
+## Publications
+
+- [OntONeo: The Obstetric and Neonatal Ontology](https://doi.org/10.5281/zenodo.17429771)
+- [Formal Ontologies in Knowledge Organization within the Obstetric and Neonatal Domain](https://doi.org/10.5281/zenodo.17508651)
 
 **Domains**: biomedical
 

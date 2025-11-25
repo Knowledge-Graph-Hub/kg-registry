@@ -37,19 +37,25 @@ products:
     label: CC0 1.0
   name: KG-Microbe KGX Graph - Raw
   original_source:
-  - kg-microbe
-  product_url: https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
+  product_file_size: 12464495186
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
   secondary_source:
   - kg-microbe
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-19_ HTTP 404 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
-    accessing file
-  - File was not able to be retrieved when checked on 2025-11-21_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-22: HTTP 404 error
-    when accessing file'
 - category: GraphProduct
   compression: targz
   description: The core KG KG-Microbe-Core with ontologies, organismal traits, and
@@ -58,7 +64,21 @@ products:
   id: kg-microbe.graph.core
   name: KG-Microbe KGX Graph - Core
   original_source:
-  - kg-microbe
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
   product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
   secondary_source:
   - kg-microbe
@@ -69,7 +89,21 @@ products:
   id: kg-microbe.graph.biomedical
   name: KG-Microbe KGX Graph - Biomedical
   original_source:
-  - kg-microbe
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
   product_url: https://github.com/Knowledge-Graph-Hub/kg-microbe/releases/latest
   secondary_source:
   - kg-microbe
@@ -80,9 +114,23 @@ products:
   id: kg-microbe.graph.function
   name: KG-Microbe KGX Graph - Function
   original_source:
-  - kg-microbe
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
   product_file_size: 4623010863
-  product_url: https://kghub.io/kg-microbe/KGMicrobe-function-20250222.tar.gz
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
 - category: GraphProduct
@@ -92,9 +140,23 @@ products:
   id: kg-microbe.graph.biomedical-function
   name: KG-Microbe KGX Graph - Biomedical-Function
   original_source:
-  - kg-microbe
+  - envo
+  - ncbitaxon
+  - chebi
+  - go
+  - mondo
+  - hp
+  - bacdive
+  - mediadive
+  - uniprot
+  - rhea
+  - ec
+  - bactotraits
+  - ctd
+  - disbiome
+  - metpo
   product_file_size: 4640682152
-  product_url: https://kghub.io/kg-microbe/KGMicrobe-biomedical-function-20250222.tar.gz
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
 - category: GraphProduct
@@ -106,7 +168,7 @@ products:
   original_source:
   - uniprot
   product_file_size: 4796343398
-  product_url: https://kghub.io/kg-microbe/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
+  product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-transformed-uniprot-microbes-20240924.tar.gz
   secondary_source:
   - kg-microbe
 repository: https://github.com/Knowledge-Graph-Hub/kg-microbe

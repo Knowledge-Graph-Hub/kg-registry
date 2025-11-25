@@ -9,16 +9,23 @@ license:
   label: CC0 1.0
 name: KG-Microbe KGX Graph - Raw
 original_source:
-- kg-microbe
-product_url: https://kghub.io/kg-microbe/KGMicrobe-raw-20250222.tar.gz
+- envo
+- ncbitaxon
+- chebi
+- go
+- mondo
+- hp
+- bacdive
+- mediadive
+- uniprot
+- rhea
+- ec
+- bactotraits
+- ctd
+- disbiome
+- metpo
+product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-raw-20250222.tar.gz
 secondary_source:
 - kg-microbe
-warnings:
-- File was not able to be retrieved when checked on 2025-11-21_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2025-11-19_ HTTP 404 error when
-  accessing file
-- File was not able to be retrieved when checked on 2025-11-17_ HTTP 403 error when
-  accessing file
 layout: product_detail
 ---
