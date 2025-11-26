@@ -153,10 +153,8 @@ products:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
       - ubkg
-warnings:
-  - This is an automatically generated stub page. Please replace with accurate information about this resource.
 ---
 
-# Npo
+# NPO
 
-This is an automatically generated stub page for npo. Please update with proper information.
+Neuron Phenotype Ontology (NPO)
