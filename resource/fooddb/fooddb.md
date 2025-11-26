@@ -1,15 +1,37 @@
 ---
-activity_status: unknown
+activity_status: active
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: Information resource for Fooddb
+description: FooDB (The Food Database) is the world's largest and most comprehensive freely accessible resource on food constituents, chemistry, and biology, providing detailed information about chemical constituents found in food with over 100 data fields per compound covering nomenclature, structure, chemical properties, food sources, sensory properties, and health effects.
 domains:
-  - stub
-id: fooddb
-infores_id: fooddb
-last_modified_date: '2025-10-30T00:00:00Z'
+  - nutrition
+  - biomedical
+id: "fooddb"
+infores_id: "fooddb"
+homepage_url: https://foodb.ca/
+last_modified_date: '2025-11-26T00:00:00Z'
 layout: resource_detail
-name: Fooddb
+name: FooDB
+synonyms:
+  - FooDB
+  - The Food Database
+products:
+  - category: GraphicalInterface
+    description: Interactive web interface for browsing and searching food composition data
+    format: http
+    id: fooddb.portal
+    name: FooDB Web Portal
+    product_url: https://foodb.ca/
+    original_source:
+      - fooddb
+  - category: Product
+    description: Downloadable datasets of food composition and chemical constituent data
+    format: csv
+    id: fooddb.downloads
+    name: FooDB Data Downloads
+    product_url: https://foodb.ca/downloads
+    original_source:
+      - fooddb
 ---
 
 # Fooddb

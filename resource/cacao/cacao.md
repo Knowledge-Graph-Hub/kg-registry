@@ -1,13 +1,13 @@
 ---
-activity_status: unknown
-category: OntologyResource
+activity_status: inactive
+category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: A collaborative annotation project where undergraduate students use the Gene Ontology to annotate proteins based on evidence from scientific papers.
+description: CACAO (Community Assessment of Community Annotation with Ontologies) was a collaborative annotation project where undergraduate students used the Gene Ontology to annotate proteins based on evidence from scientific papers. The project appears to be inactive as the website is no longer accessible.
 domains:
-  - stub
-id: cacao
-infores_id: cacao
-last_modified_date: '2025-10-30T00:00:00Z'
+  - genomics
+id: "cacao"
+infores_id: "cacao"
+last_modified_date: '2025-11-26T00:00:00Z'
 layout: resource_detail
 name: Community Assessment of Community Annotation with Ontologies
 homepage_url: http://gowiki.tamu.edu/wiki/index.php/Category:CACAO
@@ -19,30 +19,41 @@ synonyms:
 
 ## Overview
 
-A collaborative annotation project where undergraduate students use the Gene Ontology to annotate proteins based on evidence from scientific papers.
+CACAO (Community Assessment of Community Annotation with Ontologies) was an educational and collaborative annotation project that engaged undergraduate students in the process of biological curation using the Gene Ontology (GO). Students learned to annotate proteins by extracting evidence from scientific literature and applying standardized ontology terms.
 
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
+## Project Goals
 
-## Information Resource ID
+- **Education**: Train undergraduate students in biocuration and scientific literature analysis
+- **Community Engagement**: Involve the broader scientific community in annotation efforts
+- **Quality Assessment**: Evaluate the quality of community-contributed annotations
+- **GO Annotation**: Contribute to the Gene Ontology annotation corpus
 
-This resource has the Information Resource identifier: `infores:cacao`
+## Methodology
 
-## Curation Status
+- Students read and analyzed scientific papers
+- Extracted evidence for protein function
+- Applied appropriate Gene Ontology terms
+- Documented evidence codes and supporting references
+- Annotations were reviewed for quality and consistency
 
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
+## Educational Value
 
-## What Needs to be Curated
+- Hands-on experience with scientific literature
+- Understanding of controlled vocabularies and ontologies
+- Critical thinking about biological evidence
+- Contribution to real scientific resources
+- Introduction to bioinformatics and data curation
 
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
+## Activity Status
 
-## Additional Notes
+The CACAO project appears to be inactive. The project website at gowiki.tamu.edu is no longer accessible, and recent updates or publications are not available. The project represents an important historical effort in community-based biocuration and educational outreach.
+
+## Related Resources
+
+- **Gene Ontology**: The ontology system used for annotations
+- **GOC (Gene Ontology Consortium)**: Maintains GO and coordinates curation efforts
+- **GONUTS**: Related community annotation project
+
+## Legacy
+
+CACAO demonstrated the potential for engaging students and community members in scientific annotation while providing valuable educational experiences in biocuration and biological data standards.

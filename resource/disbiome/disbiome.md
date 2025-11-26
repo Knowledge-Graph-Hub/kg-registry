@@ -2,14 +2,20 @@
 activity_status: active
 category: DataSource
 creation_date: '2025-11-25T00:00:00Z'
-description: Stub Resource page for disbiome. This page was automatically generated
-  because it was referenced by other resources.
+description: Database of microbiome-disease associations, cataloging relationships between microbial taxa and human diseases based on experimental and clinical evidence.
 domains:
-- stub
+- microbiology
+- biomedical
+- clinical
+- health
 id: disbiome
+homepage_url: https://disbiome.ugent.be/
 last_modified_date: '2025-11-25T00:00:00Z'
 layout: resource_detail
 name: Disbiome
+synonyms:
+- Disbiome
+- Disbiome Database
 products:
 - category: GraphProduct
   compression: targz
@@ -149,4 +155,51 @@ warnings:
 ---
 # Disbiome
 
-This is an automatically generated stub page for disbiome. Please update with proper information.
+## Overview
+
+Disbiome is a comprehensive database that catalogs associations between human microbiome composition and diseases. It integrates experimental and clinical evidence linking specific microbial taxa to various disease states, providing a resource for understanding the role of microbiota in human health and disease.
+
+## Key Features
+
+- **Disease-Microbe Associations**: Curated relationships between microbial taxa and human diseases
+- **Evidence-Based Annotations**: Links to supporting literature and experimental data
+- **Taxonomic Coverage**: Associations at multiple taxonomic levels (phylum to species)
+- **Disease Categories**: Coverage of diverse disease types including metabolic, inflammatory, infectious, and neurological disorders
+- **Effect Direction**: Annotation of increased or decreased abundance in disease states
+- **Body Site Information**: Specification of relevant body sites or microbiome niches
+
+## Applications
+
+- **Disease Research**: Understanding microbial contributions to disease etiology
+- **Biomarker Discovery**: Identifying microbial signatures for disease diagnosis or prognosis
+- **Therapeutic Development**: Targeting microbiome modulation for treatment strategies
+- **Microbiome Studies**: Hypothesis generation for microbiome-disease research
+- **Systems Medicine**: Integrating microbiome data with other biomedical knowledge
+
+## Data Content
+
+Disbiome includes associations for:
+- Gastrointestinal diseases (IBD, IBS, colorectal cancer)
+- Metabolic disorders (obesity, diabetes, NAFLD)
+- Neurological conditions (autism, depression, Alzheimer's)
+- Infectious diseases
+- Autoimmune conditions
+- Respiratory diseases
+- Dermatological conditions
+
+## Integration
+
+Disbiome data is integrated into:
+- KG-Microbe knowledge graph (linking microbiome with human health)
+- Disease ontologies (Mondo, Human Phenotype Ontology)
+- Microbial taxonomy databases (NCBITaxon)
+- Comparative Toxicogenomics Database (CTD)
+
+## Access
+
+Disbiome is accessible through:
+- Web interface: https://disbiome.ugent.be/
+- Downloadable datasets
+- Integration in knowledge graph frameworks
+
+For more information about Disbiome integration in knowledge graphs, see the [KG-Microbe project](https://github.com/Knowledge-Graph-Hub/kg-microbe).

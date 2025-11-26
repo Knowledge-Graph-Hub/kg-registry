@@ -1,46 +1,105 @@
 ---
-activity_status: unknown
+activity_status: active
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: Information resource for Ars
+description: The Autonomous Relay System (ARS) is the primary interface and query routing service for the NCATS Biomedical Data Translator, orchestrating queries across multiple knowledge providers and reasoning agents.
 domains:
-  - stub
-id: ars
-infores_id: ars
-last_modified_date: '2025-10-30T00:00:00Z'
+  - biomedical
+id: "ars"
+infores_id: "ars"
+last_modified_date: '2025-11-25T00:00:00Z'
 layout: resource_detail
-name: Ars
+name: Autonomous Relay System
 homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/Autonomous-Relay-System-(ARS)
+synonyms:
+  - ARS
+  - Translator ARS
+contacts:
+  - category: Organization
+    label: NCATS Biomedical Data Translator
+    contact_details:
+      - contact_type: url
+        value: "https://ncats.nih.gov/translator"
 ---
 
-# Ars
+# Autonomous Relay System
 
 ## Overview
 
-Information resource for Ars
+The Autonomous Relay System (ARS) serves as the central query routing and orchestration service for the NCATS Biomedical Data Translator program. It acts as an intelligent relay that accepts biomedical questions, distributes them to appropriate knowledge providers (KPs) and autonomous reasoning agents (ARAs), and aggregates the results into unified responses.
 
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
+## Key Features
+
+- **Query Orchestration**: Routes biomedical queries to multiple knowledge providers and reasoning agents
+- **Intelligent Distribution**: Selects appropriate resources based on query type and available data
+- **Result Aggregation**: Combines responses from multiple sources into coherent answers
+- **API Gateway**: Provides a unified interface for accessing Translator resources
+- **Asynchronous Processing**: Handles long-running queries with callback mechanisms
+- **Load Balancing**: Distributes queries efficiently across available services
+- **Query Tracking**: Monitors query status and provides real-time updates
+
+## Architecture
+
+### Components
+
+1. **Query Interface**: Accepts TRAPI (Translator Reasoner API) formatted queries
+2. **Routing Logic**: Determines which KPs and ARAs should process each query
+3. **Message Queue**: Manages asynchronous query distribution and response collection
+4. **Result Merger**: Aggregates and ranks results from multiple sources
+5. **Status Monitor**: Tracks query progress and service health
+
+### Workflow
+
+1. Client submits biomedical question via TRAPI format
+2. ARS analyzes query structure and requirements
+3. Query is distributed to relevant KPs and ARAs
+4. Services process query and return results
+5. ARS aggregates responses, removing duplicates and ranking results
+6. Unified response returned to client
+
+## Query Types
+
+ARS supports various biomedical query patterns:
+- Drug-disease associations
+- Gene-phenotype relationships
+- Mechanistic pathways
+- Drug repurposing hypotheses
+- Multi-hop reasoning chains
+- Creative mode queries (exploratory)
+
+## Applications
+
+- **Translational Research**: Connecting basic science to clinical applications
+- **Drug Discovery**: Identifying therapeutic candidates for diseases
+- **Hypothesis Generation**: Discovering novel biomedical relationships
+- **Knowledge Integration**: Unified access to diverse biomedical data sources
+- **Clinical Decision Support**: Evidence-based insights for patient care
+
+## Integration
+
+ARS connects to the Translator ecosystem:
+- **Knowledge Providers (KPs)**: Specialized databases exposing biomedical assertions
+- **Autonomous Reasoning Agents (ARAs)**: Services performing inference and reasoning
+- **User Interfaces**: Web applications and tools for end users
+- **External Systems**: APIs for programmatic access
+
+## Technical Specifications
+
+- **API Standard**: TRAPI (Translator Reasoner API)
+- **Message Format**: JSON-based knowledge graphs
+- **Ontology**: Biolink Model for semantic standardization
+- **Deployment**: Cloud-based microservices architecture
+- **Authentication**: API keys for rate limiting and tracking
 
 ## Information Resource ID
 
 This resource has the Information Resource identifier: `infores:ars`
 
-## Curation Status
+## Access
 
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
+- **Production ARS**: https://ars.transltr.io/
+- **Development ARS**: https://ars-dev.transltr.io/
+- **Documentation**: https://github.com/NCATSTranslator/Translator-All/wiki/Autonomous-Relay-System-(ARS)
+- **API Specification**: https://smart-api.info/ui/
 
-## What Needs to be Curated
-
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
-
-## Additional Notes
+For more information about the NCATS Biomedical Data Translator program, visit https://ncats.nih.gov/translator

@@ -20,7 +20,7 @@ domains:
 homepage_url: https://portals.broadinstitute.org/ctrp/
 id: "ctrp"
 infores_id: "ctrp"
-last_modified_date: '2025-11-10T00:00:00Z'
+last_modified_date: '2025-11-26T00:00:00Z'
 layout: resource_detail
 name: Cancer Therapeutics Response Portal
 products:
@@ -50,35 +50,3 @@ synonyms:
 # Cancer Therapeutics Response Portal
 
 The Cancer Therapeutics Response Portal (CTRP) provides comprehensive small-molecule sensitivity profiling across 860 cancer cell lines to accelerate discovery of patient-matched cancer therapeutics.
-
-# Cancer Therapeutics Response Portal
-
-## Overview
-
-links genetic, lineage, and other cellular features of cancer cell lines to small-molecule sensitivity with the goal of accelerating discovery of patient-matched cancer therapeutics.
-
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
-
-## Information Resource ID
-
-This resource has the Information Resource identifier: `infores:ctrp`
-
-## Curation Status
-
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
-
-## What Needs to be Curated
-
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
-
-## Additional Notes

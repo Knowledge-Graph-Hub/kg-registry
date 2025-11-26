@@ -1,13 +1,14 @@
 ---
-activity_status: unknown
+activity_status: inactive
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: Information resource for Drugs to target pAthways by the Tissue Expression
+description: DATE (Drugs to target pAthways by the Tissue Expression) was a computational resource integrating drug targets with pathway information and tissue-specific gene expression to predict drug effects and therapeutic opportunities. The resource appears to be archived.
 domains:
-  - stub
+  - pharmacology
+  - systems biology
 id: date
 infores_id: date
-last_modified_date: '2025-10-30T00:00:00Z'
+last_modified_date: '2025-11-26T00:00:00Z'
 layout: resource_detail
 name: Drugs to target pAthways by the Tissue Expression
 homepage_url: https://tatonettilab-resources.s3.amazonaws.com/syspharm/DATE.zip
@@ -19,30 +20,32 @@ synonyms:
 
 ## Overview
 
-Information resource for Drugs to target pAthways by the Tissue Expression
+DATE (Drugs to target pAthways by the Tissue Expression) was a computational resource developed to integrate drug-target information with biological pathway data and tissue-specific gene expression patterns. The goal was to predict tissue-specific drug effects and identify therapeutic opportunities based on pathway perturbations in specific tissue contexts.
 
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
+## Approach
 
-## Information Resource ID
+- **Drug-Target Integration**: Connected drugs to their molecular targets
+- **Pathway Mapping**: Linked targets to biological pathways
+- **Tissue Expression**: Incorporated tissue-specific gene expression data
+- **Systems Pharmacology**: Predicted tissue-specific drug effects
 
-This resource has the Information Resource identifier: `infores:date`
+## Applications
 
-## Curation Status
+- Predicting tissue-specific adverse drug effects
+- Identifying repurposing opportunities
+- Understanding drug mechanism of action in context
+- Prioritizing therapeutic targets by tissue
 
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
+## Activity Status
 
-## What Needs to be Curated
+The DATE resource appears to be inactive. The homepage URL points to an archived ZIP file on Amazon S3, suggesting the resource is no longer actively maintained or updated. No recent publications or updates are available.
 
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
+## Related Concepts
 
-## Additional Notes
+- **Systems Pharmacology**: Integrative approach to understanding drug action
+- **Tissue-Specific Effects**: Importance of cellular context in drug response
+- **Network Medicine**: Using biological networks to understand disease and drugs
+
+## Legacy
+
+DATE represented an important approach to integrating multiple data types (drugs, targets, pathways, expression) for predicting tissue-specific pharmacological effects, contributing to the field of computational systems pharmacology.
