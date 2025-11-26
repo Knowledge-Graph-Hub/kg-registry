@@ -1,15 +1,14 @@
 ---
 activity_status: active
-category: DataSource
+category: Ontology
 creation_date: '2025-11-11T00:00:00Z'
-description: Stub Resource page for pgo. This page was automatically generated because
-  it was referenced by other resources.
+description: PGO is an ontology resource integrated into the Unified Biomedical Knowledge Graph (UBKG). Based on context, this may refer to either Plant Growth Ontology or Pseudogene-related classifications used in biomedical knowledge systems.
 domains:
-- stub
+  - genomics
 id: pgo
-last_modified_date: '2025-11-11T00:00:00Z'
+last_modified_date: '2025-11-26T00:00:00Z'
 layout: resource_detail
-name: Pgo
+name: PGO
 products:
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

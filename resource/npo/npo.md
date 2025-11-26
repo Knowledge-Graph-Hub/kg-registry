@@ -1,145 +1,144 @@
 ---
 activity_status: active
-category: DataSource
-description: Stub Resource page for npo. This page was automatically generated because
-  it was referenced by other resources.
-domains:
-- stub
-id: npo
+category: Ontology
+description: The NanoParticle Ontology (NPO) is a comprehensive ontology for the nanotechnology domain that provides a controlled vocabulary for nanoparticle characterization and nanomedicine applications. NPO is used in biomedical knowledge integration systems including UBKG.
+domains: []
+id: "npo"
 layout: resource_detail
-name: Npo
+name: NanoParticle Ontology
+synonyms:
+  - NPO
+homepage_url: http://www.nano-ontology.org/
+last_modified_date: '2025-11-26T00:00:00Z'
 products:
-- category: GraphProduct
-  description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
-    instances as neo4j graph databases, running in a Docker container. Requires UMLS
-    API key to access.
-  dump_format: neo4j
-  id: ubkg.neo4j
-  name: UBKG Neo4j Docker Distribution
-  original_source:
-  - hgnc
-  - loinc
-  - icd10
-  - snomedct
-  - uberon
-  - pato
-  - cl
-  - doid
-  - obi
-  - obib
-  - edam
-  - hsapdv
-  - sbo
-  - mi
-  - chebi
-  - mp
-  - ordo
-  - uniprot
-  - uo
-  - mondo
-  - efo
-  - pgo
-  - gencode
-  - reactome
-  - hra
-  - hubmap
-  - sennet
-  - stellar
-  - dct
-  - clinvar
-  - connectivitymap
-  - hp
-  - mp
-  - msigdb
-  - wikipathways
-  - clingen
-  - string
-  - 4dn
-  - erccrbp
-  - erccreg
-  - faldo
-  - glycordf
-  - glycocoo
-  - gtex
-  - kidsfirst
-  - lincs
-  - motrpac
-  - mw
-  - npo
-  - sckan
-  - disgenet
-  - biomarker
-  - opentargets
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - ubkg
-- category: GraphProduct
-  description: Ontology CSV files that can be imported into a neo4j instance to create
-    a UBKG database. Requires UMLS API key to access.
-  format: csv
-  id: ubkg.csv
-  name: UBKG Ontology CSV Files
-  original_source:
-  - hgnc
-  - loinc
-  - icd10
-  - snomedct
-  - uberon
-  - pato
-  - cl
-  - doid
-  - obi
-  - obib
-  - edam
-  - hsapdv
-  - sbo
-  - mi
-  - chebi
-  - mp
-  - ordo
-  - uniprot
-  - uo
-  - mondo
-  - efo
-  - pgo
-  - gencode
-  - reactome
-  - hra
-  - hubmap
-  - sennet
-  - stellar
-  - dct
-  - clinvar
-  - connectivitymap
-  - hp
-  - mp
-  - msigdb
-  - wikipathways
-  - clingen
-  - string
-  - 4dn
-  - erccrbp
-  - erccreg
-  - faldo
-  - glycordf
-  - glycocoo
-  - gtex
-  - kidsfirst
-  - lincs
-  - motrpac
-  - mw
-  - npo
-  - sckan
-  - disgenet
-  - biomarker
-  - opentargets
-  product_url: https://ubkg-downloads.xconsortia.org/
-  secondary_source:
-  - ubkg
+  - category: GraphProduct
+    description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG instances as neo4j graph databases, running in a Docker container. Requires UMLS API key to access.
+    dump_format: neo4j
+    id: "ubkg.neo4j"
+    name: UBKG Neo4j Docker Distribution
+    original_source:
+      - hgnc
+      - loinc
+      - icd10
+      - snomedct
+      - uberon
+      - pato
+      - cl
+      - doid
+      - obi
+      - obib
+      - edam
+      - hsapdv
+      - sbo
+      - mi
+      - chebi
+      - mp
+      - ordo
+      - uniprot
+      - uo
+      - mondo
+      - efo
+      - pgo
+      - gencode
+      - reactome
+      - hra
+      - hubmap
+      - sennet
+      - stellar
+      - dct
+      - clinvar
+      - connectivitymap
+      - hp
+      - mp
+      - msigdb
+      - wikipathways
+      - clingen
+      - string
+      - 4dn
+      - erccrbp
+      - erccreg
+      - faldo
+      - glycordf
+      - glycocoo
+      - gtex
+      - kidsfirst
+      - lincs
+      - motrpac
+      - mw
+      - npo
+      - sckan
+      - disgenet
+      - biomarker
+      - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+      - ubkg
+  - category: GraphProduct
+    description: Ontology CSV files that can be imported into a neo4j instance to create a UBKG database. Requires UMLS API key to access.
+    format: csv
+    id: "ubkg.csv"
+    name: UBKG Ontology CSV Files
+    original_source:
+      - hgnc
+      - loinc
+      - icd10
+      - snomedct
+      - uberon
+      - pato
+      - cl
+      - doid
+      - obi
+      - obib
+      - edam
+      - hsapdv
+      - sbo
+      - mi
+      - chebi
+      - mp
+      - ordo
+      - uniprot
+      - uo
+      - mondo
+      - efo
+      - pgo
+      - gencode
+      - reactome
+      - hra
+      - hubmap
+      - sennet
+      - stellar
+      - dct
+      - clinvar
+      - connectivitymap
+      - hp
+      - mp
+      - msigdb
+      - wikipathways
+      - clingen
+      - string
+      - 4dn
+      - erccrbp
+      - erccreg
+      - faldo
+      - glycordf
+      - glycocoo
+      - gtex
+      - kidsfirst
+      - lincs
+      - motrpac
+      - mw
+      - npo
+      - sckan
+      - disgenet
+      - biomarker
+      - opentargets
+    product_url: https://ubkg-downloads.xconsortia.org/
+    secondary_source:
+      - ubkg
 warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
+  - This is an automatically generated stub page. Please replace with accurate information about this resource.
 ---
+
 # Npo
 
 This is an automatically generated stub page for npo. Please update with proper information.
