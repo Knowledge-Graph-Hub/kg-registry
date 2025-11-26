@@ -19,6 +19,7 @@ apollo_sv,active,PASS
 aragorn,active,PASS
 arax,active,PASS
 aro,active,PASS
+ars,active,PASS
 athena,active,PASS
 automat,active,PASS
 bacdive,active,PASS
@@ -27,7 +28,6 @@ bco,active,PASS
 bfo,active,PASS
 bgee,active,PASS
 bigg,active,PASS
-bind,active,PASS
 bindingdb,active,PASS
 biocyc,active,PASS
 biogps,active,PASS
@@ -35,6 +35,7 @@ biogrid,active,PASS
 biolink,active,PASS
 biomarker,active,PASS
 biomarkerkg,active,PASS
+bioplanet,active,PASS
 bioportal,active,PASS
 bioteque,active,PASS
 bmont,active,PASS
@@ -93,6 +94,7 @@ corum,active,PASS
 cosmic,active,PASS
 cpathkg,active,PASS
 cpic,active,PASS
+cqs,active,PASS
 creeds,active,PASS
 cro,active,PASS
 ctd,active,PASS
@@ -174,11 +176,13 @@ flopo,active,PASS
 flybase,active,PASS
 fobi,active,PASS
 foodb,active,PASS
+fooddb,active,PASS
 foodon,active,PASS
 fovt,active,PASS
 fypo,active,PASS
 gallont,active,PASS
 gaz,active,PASS
+gdc,active,PASS
 gdsc,active,PASS
 gecko,active,PASS
 gelinea,active,PASS
@@ -186,6 +190,7 @@ genage,active,PASS
 gencc,active,PASS
 gencode,active,PASS
 gendr,active,PASS
+genebass,active,PASS
 genecards,active,PASS
 genemania,active,PASS
 genepio,active,PASS
@@ -236,13 +241,16 @@ huri,active,PASS
 iao,active,PASS
 ibkh,active,PASS
 icd10,active,PASS
+icd10cm,active,PASS
 icees-kg,active,PASS
 iceo,active,PASS
 ico,active,PASS
+idisk,active,PASS
 ido,active,PASS
 ikraph,active,PASS
 imodulondb,active,PASS
 indra,active,PASS
+innatedb,active,PASS
 ino,active,PASS
 insight,active,PASS
 intact,active,PASS
@@ -312,6 +320,7 @@ mod,active,PASS
 modomics,active,PASS
 molecular-data-kp,active,PASS
 molepro,active,PASS
+monarchinitiative,active,PASS
 mondo,active,PASS
 mop,active,PASS
 motrpac,active,PASS
@@ -326,6 +335,7 @@ msigdb,active,PASS
 multiomics-kp,active,PASS
 mutationds,active,PASS
 mw,active,PASS
+nanopublications,active,PASS
 nbo,active,PASS
 ncatsgardkg,active,PASS
 ncbigene,active,PASS
@@ -333,6 +343,7 @@ ncbitaxon,active,PASS
 ncit,active,PASS
 ncro,active,PASS
 ndcd,active,PASS
+ndfrt,active,PASS
 neo,active,PASS
 ngbo,active,PASS
 nihreporter,active,PASS
@@ -358,6 +369,7 @@ ohmi,active,PASS
 ohpi,active,PASS
 ols,active,PASS
 oma,active,PASS
+omicsdi,active,PASS
 omim,active,PASS
 omit,active,PASS
 omnicorp,active,PASS
@@ -484,6 +496,7 @@ srpdb,active,PASS
 stato,active,PASS
 stellar,active,PASS
 string,active,PASS
+suppkg,active,PASS
 swisslipid,active,PASS
 swo,active,PASS
 symp,active,PASS
@@ -497,6 +510,7 @@ tera,active,PASS
 text-mining-kp,active,PASS
 tissues,active,PASS
 to,active,PASS
+topmed,active,PASS
 toxcast,active,PASS
 toxin,active,PASS
 trans,active,PASS
@@ -545,16 +559,20 @@ atgo,inactive,PASS
 ato,inactive,PASS
 bcgo,inactive,PASS
 bila,inactive,PASS
+bind,inactive,PASS
 bio2rdf,inactive,PASS
 bootstrep,inactive,PASS
+cacao,inactive,PASS
 caro,inactive,PASS
 ceph,inactive,PASS
 cmf,inactive,PASS
 connectivitymap,inactive,PASS
 cpdb,inactive,PASS
 crd,unresponsive,PASS
+date,inactive,PASS
 dc_cl,inactive,PASS
 dinto,inactive,PASS
+doaf,inactive,PASS
 docm,inactive,PASS
 ehda,inactive,PASS
 ehdaa,inactive,PASS
@@ -570,6 +588,8 @@ fbsp,inactive,PASS
 fix,orphaned,PASS
 flu,inactive,PASS
 fma,inactive,PASS
+geneprof,inactive,PASS
+ghr,inactive,PASS
 goa,inactive,PASS
 gro,inactive,PASS
 habronattus,inactive,PASS
@@ -579,6 +599,7 @@ idomal,inactive,PASS
 iev,inactive,PASS
 imr,inactive,PASS
 ipr,inactive,PASS
+iproclass,inactive,PASS
 irefindex,inactive,PASS
 lipro,inactive,PASS
 lncrnadb,inactive,PASS

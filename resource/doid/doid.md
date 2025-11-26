@@ -32,14 +32,14 @@ products:
   id: doid.owl
   name: Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy
     plus equivalent axioms to other OBO Foundry ontologies.
-  product_file_size: 2093773
+  product_file_size: 2101220
   product_url: http://purl.obolibrary.org/obo/doid.owl
 - category: OntologyProduct
   description: Disease Ontology, OBO format. This file omits the equivalent axioms.
   format: obo
   id: doid.obo
   name: Disease Ontology, OBO format. This file omits the equivalent axioms.
-  product_file_size: 1363198
+  product_file_size: 1365551
   product_url: http://purl.obolibrary.org/obo/doid.obo
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

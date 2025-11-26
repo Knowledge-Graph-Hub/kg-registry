@@ -104,15 +104,13 @@ products:
   name: DDBJ Mirror
   product_url: https://ddbj.nig.ac.jp/public/mirror_database/1000genomes/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-22_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-11-09_ HTTP 502 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-11-06_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-25: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-26: HTTP 403 error
     when accessing file'
 - category: Product
   description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)

@@ -51,11 +51,9 @@ products:
   name: TCRD Database Downloads
   product_url: http://juniper.health.unm.edu/tcrd/download/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-22_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-11-25_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-11-25: Timeout connecting
+  - 'File was not able to be retrieved when checked on 2025-11-26: Timeout connecting
     to URL'
 - category: ProgrammingInterface
   description: GraphQL API for programmatic access to Pharos and TCRD data enabling
@@ -71,11 +69,9 @@ products:
   name: Pharos API Documentation
   product_url: https://pharos.nih.gov/api-docs
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-22_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-25_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-25: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-26: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: PHAROS Automat
@@ -96,11 +92,9 @@ products:
   name: Pharos Documentation
   product_url: https://pharos.nih.gov/about
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-22_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-25_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-25: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-26: HTTP 403 error
     when accessing file'
 publications:
 - authors:

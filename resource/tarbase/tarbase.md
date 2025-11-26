@@ -95,13 +95,13 @@ products:
   name: Help Documentation
   product_url: https://dianalab.e-ce.uth.gr/tarbasev9/help
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-22_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-11-19_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-25: Timeout connecting
+  - File was not able to be retrieved when checked on 2025-11-25_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-11-26: Timeout connecting
     to URL'
 - category: DocumentationProduct
   description: Downloads page with file format specifications and field descriptions
@@ -110,13 +110,11 @@ products:
   name: Downloads Documentation
   product_url: https://dianalab.e-ce.uth.gr/tarbasev9/downloads
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-22_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-11-17_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-25: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-11-26: HTTP 404 error
     when accessing file'
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,

@@ -134,6 +134,15 @@ products:
   product_url: https://robokop.renci.org/api-docs/docs/automat/metadata-metadata-get-icees-kg
   secondary_source:
   - icees-kg
+- category: Product
+  description: VANDF drug terminology data distributed through UMLS Metathesaurus
+  id: ndfrt.umls
+  name: VANDF in UMLS
+  original_source:
+  - ndfrt
+  product_url: https://www.nlm.nih.gov/research/umls/
+  secondary_source:
+  - umls
 publications:
 - id: PMID:14681409
   preferred: true

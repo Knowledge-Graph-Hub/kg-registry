@@ -47,7 +47,7 @@ products:
   name: GO (JSON edition)
   product_url: http://purl.obolibrary.org/obo/go.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-25: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-11-26: No Content-Length
     header found'
 - category: OntologyProduct
   description: The main ontology plus axioms connecting to select external ontologies,
@@ -72,7 +72,7 @@ products:
   name: GO-Plus
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-25: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-11-26: No Content-Length
     header found'
 - category: OntologyProduct
   description: Basic version of the GO, filtered such that the graph is guaranteed
@@ -91,7 +91,7 @@ products:
   name: GO-Basic, Filtered, for use with legacy tools (JSON)
   product_url: http://purl.obolibrary.org/obo/go/go-basic.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-25: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-11-26: No Content-Length
     header found'
 - category: OntologyProduct
   description: Classes added to ncbitaxon for groupings such as prokaryotes
@@ -100,7 +100,7 @@ products:
   name: GO Taxon Groupings
   product_url: http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-25: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-26: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: Equivalent to go.owl, but released daily. Note the snapshot release
@@ -1374,168 +1374,6 @@ products:
   product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
   secondary_source:
   - chr
-- category: ProcessProduct
-  description: INDRA CoGEx is a graph database integrating causal relations, ontological
-    relations, properties, and data, assembled at scale automatically from the scientific
-    literature and structured sources. This is the code to build the graph.
-  id: indra.cogex.code
-  name: INDRA CoGEx Build Code
-  original_source:
-  - chembl
-  - sider
-  - reactome
-  - wikipathways
-  - hp
-  - nihreporter
-  - disgenet
-  - pubmed
-  - gwascatalog
-  - cellmarker
-  - go
-  - bgee
-  - ccle
-  - clinicaltrialsgov
-  - indra
-  product_url: https://github.com/gyorilab/indra_cogex
-  secondary_source:
-  - indra
-- category: MappingProduct
-  compression: gzip
-  description: Gene to Gene Ontology mapping data providing functional annotations
-    for genes
-  format: tsv
-  id: ncbigene.gene2go
-  name: Gene to GO Mapping
-  original_source:
-  - go
-  - ncbigene
-  product_file_size: 1223833668
-  product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2go.gz
-- category: ProgrammingInterface
-  description: TRAPI web API for querying MicrobiomeKG
-  format: http
-  id: microbiomekg.api
-  name: MicrobiomeKG Plover API
-  original_source:
-  - biolink
-  - chebi
-  - ncbitaxon
-  - ncbigene
-  - mesh
-  - pubchem
-  - go
-  - mondo
-  - ncit
-  - efo
-  - uniprot
-  - rhea
-  - pr
-  - uberon
-  - panther
-  - hgnc
-  - drugbank
-  - eupathdb
-  product_url: https://multiomics.transltr.io/mbkp
-  secondary_source:
-  - microbiomekg
-- category: GraphProduct
-  compatibility:
-  - standard: biolink
-  compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
-  dump_format: other
-  format: mixed
-  id: drugmechdb.graph
-  latest_version: 2.0.1
-  name: DrugMechDB Graph Dataset
-  original_source:
-  - go
-  - cl
-  - mesh
-  - chebi
-  - drugbank
-  - interpro
-  - uberon
-  - pr
-  - ncbitaxon
-  - reactome
-  - hp
-  - uniprot
-  product_url: https://doi.org/10.5281/zenodo.8139357
-  repository: https://github.com/SuLab/DrugMechDB
-  versions:
-  - 2.0.1
-  - 2.0.0
-  - 1.0.2
-  - '1.0'
-- category: Product
-  description: GO annotations for all UniProtKB entries
-  format: txt
-  id: goa.uniprot
-  name: UniProt GOA Annotations
-  original_source:
-  - uniprot
-  - go
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
-  - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
-  - 'File was not able to be retrieved when checked on 2025-11-25: Error connecting
-    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'''
-- category: Product
-  description: GO annotations for human proteins
-  format: txt
-  id: goa.human
-  name: Human GOA Annotations
-  original_source:
-  - uniprot
-  - go
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
-  - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
-  - 'File was not able to be retrieved when checked on 2025-11-25: Error connecting
-    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'''
-- category: Product
-  description: GO annotations for mouse proteins
-  format: txt
-  id: goa.mouse
-  name: Mouse GOA Annotations
-  original_source:
-  - uniprot
-  - go
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-  - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-  - 'File was not able to be retrieved when checked on 2025-11-25: Error connecting
-    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'''
-- category: MappingProduct
-  description: Files containing transitive assignments of InterPro matches, UniProtKB
-    keywords, subcellular locations, EC numbers, or HAMAP matches to manually-selected
-    GO terms
-  format: txt
-  id: goa.mapping-files
-  name: GO Mapping Files
-  original_source:
-  - interpro
-  - uniprot
-  - go
-  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
-  warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-  - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-  - 'File was not able to be retrieved when checked on 2025-11-25: Error connecting
-    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'''
 - category: GraphProduct
   compression: targz
   description: Raw source files for all KG-Microbe framework transforms (all 4 KGs)
@@ -1668,6 +1506,168 @@ products:
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
+- category: ProcessProduct
+  description: INDRA CoGEx is a graph database integrating causal relations, ontological
+    relations, properties, and data, assembled at scale automatically from the scientific
+    literature and structured sources. This is the code to build the graph.
+  id: indra.cogex.code
+  name: INDRA CoGEx Build Code
+  original_source:
+  - chembl
+  - sider
+  - reactome
+  - wikipathways
+  - hp
+  - nihreporter
+  - disgenet
+  - pubmed
+  - gwascatalog
+  - cellmarker
+  - go
+  - bgee
+  - ccle
+  - clinicaltrialsgov
+  - indra
+  product_url: https://github.com/gyorilab/indra_cogex
+  secondary_source:
+  - indra
+- category: MappingProduct
+  compression: gzip
+  description: Gene to Gene Ontology mapping data providing functional annotations
+    for genes
+  format: tsv
+  id: ncbigene.gene2go
+  name: Gene to GO Mapping
+  original_source:
+  - go
+  - ncbigene
+  product_file_size: 1223833668
+  product_url: https://ftp.ncbi.nih.gov/gene/DATA/gene2go.gz
+- category: ProgrammingInterface
+  description: TRAPI web API for querying MicrobiomeKG
+  format: http
+  id: microbiomekg.api
+  name: MicrobiomeKG Plover API
+  original_source:
+  - biolink
+  - chebi
+  - ncbitaxon
+  - ncbigene
+  - mesh
+  - pubchem
+  - go
+  - mondo
+  - ncit
+  - efo
+  - uniprot
+  - rhea
+  - pr
+  - uberon
+  - panther
+  - hgnc
+  - drugbank
+  - eupathdb
+  product_url: https://multiomics.transltr.io/mbkp
+  secondary_source:
+  - microbiomekg
+- category: GraphProduct
+  compatibility:
+  - standard: biolink
+  compression: zip
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
+  dump_format: other
+  format: mixed
+  id: drugmechdb.graph
+  latest_version: 2.0.1
+  name: DrugMechDB Graph Dataset
+  original_source:
+  - go
+  - cl
+  - mesh
+  - chebi
+  - drugbank
+  - interpro
+  - uberon
+  - pr
+  - ncbitaxon
+  - reactome
+  - hp
+  - uniprot
+  product_url: https://doi.org/10.5281/zenodo.8139357
+  repository: https://github.com/SuLab/DrugMechDB
+  versions:
+  - 2.0.1
+  - 2.0.0
+  - 1.0.2
+  - '1.0'
+- category: Product
+  description: GO annotations for all UniProtKB entries
+  format: txt
+  id: goa.uniprot
+  name: UniProt GOA Annotations
+  original_source:
+  - uniprot
+  - go
+  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
+  warnings:
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
+  - 'File was not able to be retrieved when checked on 2025-11-26: Error connecting
+    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'''
+- category: Product
+  description: GO annotations for human proteins
+  format: txt
+  id: goa.human
+  name: Human GOA Annotations
+  original_source:
+  - uniprot
+  - go
+  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
+  warnings:
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
+  - 'File was not able to be retrieved when checked on 2025-11-26: Error connecting
+    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'''
+- category: Product
+  description: GO annotations for mouse proteins
+  format: txt
+  id: goa.mouse
+  name: Mouse GOA Annotations
+  original_source:
+  - uniprot
+  - go
+  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
+  warnings:
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
+  - 'File was not able to be retrieved when checked on 2025-11-26: Error connecting
+    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'''
+- category: MappingProduct
+  description: Files containing transitive assignments of InterPro matches, UniProtKB
+    keywords, subcellular locations, EC numbers, or HAMAP matches to manually-selected
+    GO terms
+  format: txt
+  id: goa.mapping-files
+  name: GO Mapping Files
+  original_source:
+  - interpro
+  - uniprot
+  - go
+  product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
+  warnings:
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
+  - 'File was not able to be retrieved when checked on 2025-11-26: Error connecting
+    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'''
 - category: MappingProduct
   description: bigg.compartment SSSOM
   format: sssom
@@ -1694,9 +1694,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-25_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-22_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-25: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-11-26: HTTP 403 error
     when accessing file'
 - category: OntologyProduct
   description: The latest release of EFO in OWL format
@@ -1816,9 +1816,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
-  - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
-  - 'File was not able to be retrieved when checked on 2025-11-25: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-26: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'''
 - category: MappingProduct
   description: Mappings between InterPro entries and Gene Ontology (GO) terms
@@ -1852,9 +1852,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
-  - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
-  - 'File was not able to be retrieved when checked on 2025-11-25: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-26: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/'''
 - category: Product
   description: GO annotations organized by proteomes
@@ -1867,9 +1867,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
-  - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
-  - 'File was not able to be retrieved when checked on 2025-11-25: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-11-26: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'''
 repository: https://github.com/geneontology/go-ontology
 taxon:

@@ -2,36 +2,52 @@
 activity_status: inactive
 category: DataSource
 creation_date: '2025-10-30T00:00:00Z'
-description: The Biomolecular Interaction Network Database (BIND) was a database designed to store full descriptions of interactions, molecular complexes, and pathways. It is no longer active as a standalone resource but its data has been incorporated into other databases like BOND and iRefIndex.
+description: The Biomolecular Interaction Network Database (BIND) was a database designed
+  to store full descriptions of interactions, molecular complexes, and pathways. It
+  is no longer active as a standalone resource but its data has been incorporated
+  into other databases like BOND and iRefIndex.
 domains:
-  - biomedical
-  - pathways
-id: "bind"
+- biomedical
+- pathways
+homepage_url: http://bind.ca
+id: bind
 last_modified_date: '2025-11-25T00:00:00Z'
 layout: resource_detail
 name: Biomolecular Interaction Network Database (BIND)
-homepage_url: http://bind.ca
 products:
-  - category: Product
-    description: Historical dataset of biomolecular interactions, complexes, and pathways.
-    id: "bind.data"
-    name: BIND Data
-    original_source:
-      - bind
+- category: Product
+  description: Historical dataset of biomolecular interactions, complexes, and pathways.
+  id: bind.data
+  name: BIND Data
+  original_source:
+  - bind
+- category: Product
+  description: Historical consolidated protein interaction index in PSI-MITAB 2.5
+    format aggregating data from BIND, BioGrid, DIP, HPRD, IntAct, MINT, MPact, MPPI
+    and OPHID
+  format: psi_mi_mitab
+  id: irefindex.database
+  name: iRefIndex Database
+  original_source:
+  - bind
+  - biogrid
+  - dip
+  - hprd
+  - intact
+  - mint
 publications:
-  - authors:
-      - Bader GD
-      - Betel D
-      - Hogue CW
-    id: "doi:10.1093/nar/gkg056"
-    doi: "10.1093/nar/gkg056"
-    journal: Nucleic Acids Res
-    title: "BIND: the Biomolecular Interaction Network Database"
-    year: "2003"
+- authors:
+  - Bader GD
+  - Betel D
+  - Hogue CW
+  doi: 10.1093/nar/gkg056
+  id: doi:10.1093/nar/gkg056
+  journal: Nucleic Acids Res
+  title: 'BIND: the Biomolecular Interaction Network Database'
+  year: '2003'
 synonyms:
-  - BIND
+- BIND
 ---
-
 # Biomolecular Interaction Network Database (BIND)
 
 ## Overview

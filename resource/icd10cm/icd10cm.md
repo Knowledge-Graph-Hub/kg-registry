@@ -2,52 +2,55 @@
 activity_status: active
 category: Ontology
 creation_date: '2025-10-30T00:00:00Z'
-description: ICD-10-CM (International Classification of Diseases, 10th Revision, Clinical Modification) is a clinical modification of the WHO's ICD-10 system, providing diagnostic codes used for billing, epidemiology, and health management in the United States, with greater specificity than the international version.
+description: ICD-10-CM (International Classification of Diseases, 10th Revision, Clinical
+  Modification) is a clinical modification of the WHO's ICD-10 system, providing diagnostic
+  codes used for billing, epidemiology, and health management in the United States,
+  with greater specificity than the international version.
 domains:
 - clinical
 - health
+homepage_url: https://icd10cmtool.cdc.gov/
 id: icd10cm
 infores_id: icd10cm
-homepage_url: https://icd10cmtool.cdc.gov/
 last_modified_date: '2025-11-26T00:00:00Z'
 layout: resource_detail
 name: ICD-10-CM
-synonyms:
-  - ICD-10-CM
-  - ICD10 Clinical Modification
-  - International Classification of Diseases, 10th Revision, Clinical Modification
 products:
-  - category: GraphicalInterface
-    description: Interactive web-based search tool for ICD-10-CM codes
-    format: http
-    id: icd10cm.tool
-    name: ICD-10-CM Browser Tool
-    product_url: https://icd10cmtool.cdc.gov/
-    original_source:
-      - icd10cm
-  - category: MappingProduct
-    description: Concept mappings between different terminology systems
-    format: csv
-    id: athena.mappings
-    name: Athena Concept Mappings
-    original_source:
-      - snomedct
-      - icd10
-      - icd10cm
-      - mesh
-      - loinc
-      - cdiscvocab
-      - ciel
-    product_url: https://athena.ohdsi.org/search-terms/start
-    secondary_source:
-      - athena
-    warnings:
-      - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-        to URL_ Exceeded 30 redirects.
-      - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
-        to URL_ Exceeded 30 redirects.
-      - 'File was not able to be retrieved when checked on 2025-11-25: Error connecting
-        to URL: Exceeded 30 redirects.'
+- category: GraphicalInterface
+  description: Interactive web-based search tool for ICD-10-CM codes
+  format: http
+  id: icd10cm.tool
+  name: ICD-10-CM Browser Tool
+  original_source:
+  - icd10cm
+  product_url: https://icd10cmtool.cdc.gov/
+- category: MappingProduct
+  description: Concept mappings between different terminology systems
+  format: csv
+  id: athena.mappings
+  name: Athena Concept Mappings
+  original_source:
+  - snomedct
+  - icd10
+  - icd10cm
+  - mesh
+  - loinc
+  - cdiscvocab
+  - ciel
+  product_url: https://athena.ohdsi.org/search-terms/start
+  secondary_source:
+  - athena
+  warnings:
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
+    to URL_ Exceeded 30 redirects.
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
+    to URL_ Exceeded 30 redirects.
+  - 'File was not able to be retrieved when checked on 2025-11-26: Error connecting
+    to URL: Exceeded 30 redirects.'
+synonyms:
+- ICD-10-CM
+- ICD10 Clinical Modification
+- International Classification of Diseases, 10th Revision, Clinical Modification
 ---
 # ICD-10-CM
 

@@ -9,8 +9,8 @@ product_url: http://www.ebi.ac.uk/Tools/webservices/psicquic/mint/webservices/cu
 warnings:
 - File was not able to be retrieved when checked on 2025-11-25_ No Content-Length
   header found
-- File was not able to be retrieved when checked on 2025-11-22_ No Content-Length
-  header found
+- File was not able to be retrieved when checked on 2025-11-25_ Timeout connecting
+  to URL
 - File was not able to be retrieved when checked on 2025-11-05_ Timeout connecting
   to URL
 layout: product_detail
