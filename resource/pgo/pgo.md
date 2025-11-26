@@ -138,10 +138,8 @@ products:
     product_url: https://ubkg-downloads.xconsortia.org/
     secondary_source:
       - ubkg
-warnings:
-  - This is an automatically generated stub page. Please replace with accurate information about this resource.
 ---
 
-# Pgo
+# PGO
 
-This is an automatically generated stub page for pgo. Please update with proper information.
+Pseudogene Ontology
