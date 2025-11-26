@@ -1,14 +1,32 @@
 ---
 activity_status: active
 category: Ontology
-description: The NanoParticle Ontology (NPO) is a comprehensive ontology for the nanotechnology domain that provides a controlled vocabulary for nanoparticle characterization and nanomedicine applications. NPO is used in biomedical knowledge integration systems including UBKG.
-domains: []
+description: The Neuron Phenotype Ontology (NPO) is a FAIR ontology-based data model for representing complex cellular phenotypes of neurons. It characterizes neuron types as bundles of normalized phenotypic properties across multiple dimensions including species, anatomical location, morphology, molecular constituents, electrophysiology, connectivity, and circuit roles. The NPO provides a standardized and automatable approach for naming cell types and normalizing their constituent phenotypes using identifiers from community ontologies, enabling interoperability between different neuron naming schemes and classification systems.
+domains:
+  - neuroscience
 id: "npo"
 layout: resource_detail
-name: NanoParticle Ontology
+name: Neuron Phenotype Ontology
 synonyms:
   - NPO
-homepage_url: http://www.nano-ontology.org/
+  - NPOKB
+homepage_url: https://bioportal.bioontology.org/ontologies/NPOKB
+contacts:
+  - category: Person
+    label: Maryann E. Martone
+    contact_details:
+      - contact_type: email
+        value: mmartone@ucsd.edu
+  - category: Person
+    label: Sean L. Hill
+    contact_details:
+      - contact_type: email
+        value: sean.hill@camh.ca
+publications:
+  - doi: "10.1007/s12021-022-09566-7"
+    id: "PMID:35267146"
+    title: 'The Neuron Phenotype Ontology: A FAIR Approach to Proposing and Classifying Neuronal Types'
+    year: "2022"
 last_modified_date: '2025-11-26T00:00:00Z'
 products:
   - category: GraphProduct
