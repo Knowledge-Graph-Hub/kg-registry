@@ -1,48 +1,30 @@
 ---
-activity_status: unknown
+activity_status: active
 category: DataSource
-creation_date: '2025-10-30T00:00:00Z'
-description: Aggregating and assessing experimental evidence for interpretable, explainable, accountable gene-trait associations.
+collection:
+  - translator
+contacts:
+  - category: Organization
+    contact_details:
+      - contact_type: url
+        value: "https://datascience.unm.edu/tiga/"
+    label: Translational Informatics Division, Department of Internal Medicine, School of Medicine, University of New Mexico
+creation_date: '2025-12-03T00:00:00Z'
+description: The Target Illumination GWAS Analytics (TIGA) database is a manually curated resource containing genotype-phenotype associations pulled from numerous genome-wide association studies (GWAS). TIGA provides bibliometric assessment of scientific consensus based on iCite Relative Citation Ratio and meanRank scores for aggregate multivariate evidence, supporting target illumination and validation in translational research. TIGA is part of the NCATS Translator Knowledge Provider ecosystem.
 domains:
-  - stub
-id: tiga
-infores_id: tiga
-last_modified_date: '2025-10-30T00:00:00Z'
+  - genomics
+  - translational
+  - biomedical
+homepage_url: https://datascience.unm.edu/tiga/
+id: "tiga"
+infores_id: "tiga"
+last_modified_date: '2025-12-03T00:00:00Z'
 layout: resource_detail
 name: Target Illumination GWAS Analytics
-homepage_url: https://github.com/NCATSTranslator/Translator-All/wiki/TIGA
 synonyms:
   - TIGA
 ---
 
 # Target Illumination GWAS Analytics
 
-## Overview
-
-Aggregating and assessing experimental evidence for interpretable, explainable, accountable gene-trait associations.
-
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
-
-## Information Resource ID
-
-This resource has the Information Resource identifier: `infores:tiga`
-
-## Curation Status
-
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
-
-## What Needs to be Curated
-
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
-
-## Additional Notes
+TIGA is a database of manually curated genotype-phenotype associations derived from numerous genome-wide association studies, with bibliometric consensus assessment to support translational research and drug target identification.
