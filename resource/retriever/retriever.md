@@ -1,46 +1,32 @@
 ---
-activity_status: unknown
-category: ToolResource
-creation_date: '2025-10-30T00:00:00Z'
-description: 'Retriever: The TRAPI access layer to Tier 0/1/2 KGs.'
+activity_status: active
+category: Aggregator
+collection:
+  - translator
+contacts:
+  - category: Organization
+    contact_details:
+      - contact_type: github
+        value: "BioPack-team"
+      - contact_type: url
+        value: "https://github.com/BioPack-team/retriever"
+    label: BioPack Team
+creation_date: '2025-12-03T00:00:00Z'
+description: Retriever is an NCATS Translator component that serves as a TRAPI (Translator Reasoner API) access layer and intermediary between Knowledge Providers and the Shepherd ARA. Retriever deduplicates subquery operations, provides a cache layer, and centralizes normalization calls for improved efficiency in querying multiple knowledge graph backends. It aggregates TRAPI query responses from DogPark Knowledge Providers, using external database backends to serve integrated biomedical knowledge.
 domains:
-  - stub
-id: retriever
-infores_id: retriever
-last_modified_date: '2025-10-30T00:00:00Z'
-layout: resource_detail
-name: Retriever
+  - translational
+  - biomedical
 homepage_url: https://github.com/BioPack-team/retriever
+id: "retriever"
+infores_id: "retriever"
+last_modified_date: '2025-12-03T00:00:00Z'
+layout: resource_detail
+name: BioPack Retriever
+repository: https://github.com/BioPack-team/retriever
+synonyms:
+  - Retriever
 ---
 
-# Retriever
+# BioPack Retriever
 
-## Overview
-
-Retriever: The TRAPI access layer to Tier 0/1/2 KGs.
-
-**Note:** This is a stub entry that was automatically created from the [Translator Information Resource Registry](https://biolink.github.io/information-resource-registry/). It requires manual curation to add complete metadata, products, and additional information.
-
-## Information Resource ID
-
-This resource has the Information Resource identifier: `infores:retriever`
-
-## Curation Status
-
-- **Stub**: Yes - needs manual curation
-- **Creation Date**: 2025-10-30
-- **Original Source**: Translator Information Resource Registry
-
-## What Needs to be Curated
-
-1. **Activity Status**: Verify if this resource is active, inactive, or deprecated
-2. **Category**: Confirm the resource category is correct
-3. **Description**: Expand and improve the description
-4. **Homepage URL**: Verify and update if needed
-5. **Products**: Add specific data products/files/APIs offered by this resource
-6. **Contacts**: Add contact information
-7. **Publications**: Add relevant publications
-8. **Domains**: Add relevant domain tags
-9. **Repository**: Add code repository if applicable
-
-## Additional Notes
+Retriever is a Translator infrastructure component providing efficient TRAPI access to multiple knowledge graph backends with query deduplication, caching, and centralized normalization.
