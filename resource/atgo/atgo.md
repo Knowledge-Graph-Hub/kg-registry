@@ -37,20 +37,25 @@ products:
     with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
     object at 0x7f7a1bb3c350>_ Failed to establish a new connection_ [Errno 111] Connection
     refused'))
-  - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
-    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
-    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
-    object at 0x7fa9b784b9a0>_ Failed to establish a new connection_ [Errno 111] Connection
-    refused'))
   - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
     to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
     with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
     object at 0x7fecb4d8bdf0>_ Failed to establish a new connection_ [Errno 111] Connection
     refused'))
-  - 'File was not able to be retrieved when checked on 2025-11-26: Error connecting
+  - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
+    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
+    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
+    object at 0x7fa9b784b9a0>_ Failed to establish a new connection_ [Errno 111] Connection
+    refused'))
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+    to URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded
+    with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection
+    object at 0x7f435f93f250>_ Failed to establish a new connection_ [Errno 111] Connection
+    refused'))
+  - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: HTTPConnectionPool(host=''atgo.ucsd.edu'', port=80): Max retries exceeded
     with url: / (Caused by NewConnectionError(''<urllib3.connection.HTTPConnection
-    object at 0x7f435f93f250>: Failed to establish a new connection: [Errno 111] Connection
+    object at 0x7f3d84d44ca0>: Failed to establish a new connection: [Errno 111] Connection
     refused''))'
 publications:
 - authors:

@@ -7,5 +7,8 @@ name: FooDB Data Downloads
 original_source:
 - fooddb
 product_url: https://foodb.ca/downloads
+warnings:
+- File was not able to be retrieved when checked on 2025-11-26_ Timeout connecting
+  to URL
 layout: product_detail
 ---

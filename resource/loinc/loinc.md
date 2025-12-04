@@ -58,7 +58,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-25_ HTTP 503 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-26: HTTP 503 error
+  - File was not able to be retrieved when checked on 2025-11-26_ HTTP 503 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 503 error
     when accessing file'
 - category: DataModelProduct
   description: Archive of past LOINC releases for version-specific implementations
@@ -71,7 +73,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-25_ HTTP 503 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-26: HTTP 503 error
+  - File was not able to be retrieved when checked on 2025-11-26_ HTTP 503 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 503 error
     when accessing file'
 - category: DocumentationProduct
   description: LOINC Mission, Vision, and Guiding Principles for open terminology
@@ -84,7 +88,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-25_ HTTP 503 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-26: HTTP 503 error
+  - File was not able to be retrieved when checked on 2025-11-26_ HTTP 503 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 503 error
     when accessing file'
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
@@ -230,11 +236,11 @@ products:
   secondary_source:
   - athena
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ Exceeded 30 redirects.
   - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - 'File was not able to be retrieved when checked on 2025-11-26: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: Exceeded 30 redirects.'
 publications:
 - id: https://doi.org/10.1093/nar/gkad1044

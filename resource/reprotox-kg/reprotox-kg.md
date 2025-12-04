@@ -60,6 +60,11 @@ products:
     with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
     object at 0x7f7a1b98f7d0>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
     or service not known)"))
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
+    to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
+    with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
+    object at 0x7fecb12297e0>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
+    or service not known)"))
   - File was not able to be retrieved when checked on 2025-11-22_ Error connecting
     to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
     with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
@@ -330,15 +335,15 @@ products:
     with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
     object at 0x7f01f5009cc0>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
     or service not known)"))
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ HTTPSConnectionPool(host='reprotox-kg.net', port=443)_ Max retries exceeded
     with url_ /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
-    object at 0x7fecb12297e0>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
+    object at 0x7f43593ee620>_ Failed to resolve 'reprotox-kg.net' ([Errno -2] Name
     or service not known)"))
-  - 'File was not able to be retrieved when checked on 2025-11-26: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: HTTPSConnectionPool(host=''reprotox-kg.net'', port=443): Max retries exceeded
     with url: /downloads/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection
-    object at 0x7f43593ee620>: Failed to resolve ''reprotox-kg.net'' ([Errno -2] Name
+    object at 0x7f3d84ca3340>: Failed to resolve ''reprotox-kg.net'' ([Errno -2] Name
     or service not known)"))'
 publications:
 - authors:

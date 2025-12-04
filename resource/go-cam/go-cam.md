@@ -61,7 +61,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-11-25_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-11-26: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-11-26_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 404 error
     when accessing file'
 - category: ProgrammingInterface
   connection_url: http://api.geneontology.org/api/

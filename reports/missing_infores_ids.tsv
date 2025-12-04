@@ -369,7 +369,6 @@ proco	Process Chemistry Ontology	Ontology	https://github.com/proco-ontology/PROC
 progeny	PROGENy	DataSource	https://saezlab.github.io/progeny/	resource/progeny/progeny.md
 propreo	Proteomics data and process provenance	Ontology	http://lsdis.cs.uga.edu/projects/glycomics/propreo/	resource/propreo/propreo.md
 protcid	ProtCID	DataSource	http://dunbrack2.fccc.edu/protcid/	resource/protcid/protcid.md
-prsatlas	Prsatlas	DataSource		resource/prsatlas/prsatlas.md
 psdo	Performance Summary Display Ontology	Ontology	https://github.com/Display-Lab/psdo	resource/psdo/psdo.md
 pso	Plant Stress Ontology	Ontology	https://github.com/Planteome/plant-stress-ontology	resource/pso/pso.md
 psygenet	PsyGeNET	DataSource	http://www.psygenet.org/	resource/psygenet/psygenet.md
@@ -397,7 +396,7 @@ sao	Subcellular anatomy ontology	Ontology	http://ccdb.ucsd.edu/CCDBWebSite/sao.h
 sbo	Systems Biology Ontology	Ontology	http://www.ebi.ac.uk/sbo/	resource/sbo/sbo.md
 scdo	Sickle Cell Disease Ontology	Ontology	https://scdontology.h3abionet.org/	resource/scdo/scdo.md
 sckan	SCKAN	DataSource		resource/sckan/sckan.md
-semapv	Semapv	DataSource		resource/semapv/semapv.md
+semapv	Semantic Mapping Vocabulary	Ontology	https://mapping-commons.github.io/semantic-mapping-vocabulary/	resource/semapv/semapv.md
 sennet	SenNet	DataSource	https://sennetconsortium.org/	resource/sennet/sennet.md
 sep	Sample processing and separation techniques	Ontology	http://psidev.info/index.php?q=node/312	resource/sep/sep.md
 sepio	Scientific Evidence and Provenance Information Ontology	Ontology	https://github.com/monarch-initiative/SEPIO-ontology	resource/sepio/sepio.md
@@ -424,7 +423,7 @@ t4fs	terms4FAIRskills	Ontology	https://github.com/terms4fairskills/FAIRterminolo
 tads	Tick Anatomy Ontology	Ontology	https://www.vectorbase.org/ontology-browser	resource/tads/tads.md
 tahe	Terminology of Anatomy of Human Embryology	Ontology		resource/tahe/tahe.md
 tahh	Terminology of Anatomy of Human Histology	Ontology		resource/tahh/tahh.md
-tair	Tair	DataSource		resource/tair/tair.md
+tair	The Arabidopsis Information Resource	DataSource	https://www.arabidopsis.org/	resource/tair/tair.md
 tao	Teleost Anatomy Ontology	Ontology	http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology	resource/tao/tao.md
 tarbase	TarBase	DataSource	https://dianalab.e-ce.uth.gr/tarbasev9	resource/tarbase/tarbase.md
 taxrank	Taxonomic rank vocabulary	Ontology	https://github.com/phenoscape/taxrank	resource/taxrank/taxrank.md

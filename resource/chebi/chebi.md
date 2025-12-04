@@ -43,7 +43,7 @@ products:
   format: owl
   id: chebi.owl.gz
   name: chebi, compressed owl
-  product_file_size: 62834967
+  product_file_size: 62846229
   product_url: http://purl.obolibrary.org/obo/chebi.owl.gz
 - category: OntologyProduct
   description: chebi_lite, no syns or xrefs

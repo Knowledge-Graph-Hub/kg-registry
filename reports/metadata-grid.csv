@@ -412,7 +412,6 @@ pfocr,active,PASS
 pgo,active,PASS
 pgxmine,active,PASS
 pharmacodb,active,PASS
-pharmacotherapydb,active,PASS
 pharmgkb,active,PASS
 pharmkg,active,PASS
 pharos,active,PASS
@@ -437,7 +436,6 @@ prism,active,PASS
 proco,active,PASS
 progeny,active,PASS
 protcid,active,PASS
-prsatlas,active,PASS
 psdo,active,PASS
 pso,active,PASS
 pubchem,active,PASS
@@ -453,6 +451,7 @@ refseq,active,PASS
 repodb,active,PASS
 repohub,active,PASS
 reprotox-kg,active,PASS
+retriever,active,PASS
 rfam,active,PASS
 rgd,active,PASS
 rhea,active,PASS
@@ -508,6 +507,7 @@ tcga,active,PASS
 tcrd,active,PASS
 tera,active,PASS
 text-mining-kp,active,PASS
+tiga,active,PASS
 tissues,active,PASS
 to,active,PASS
 topmed,active,PASS
@@ -630,10 +630,12 @@ patric,inactive,PASS
 pd_st,inactive,PASS
 pdumdv,inactive,PASS
 pgdso,inactive,PASS
+pharmacotherapydb,inactive,PASS
 pharmdb,orphaned,PASS
 pid,inactive,PASS
 plo,inactive,PASS
 propreo,inactive,PASS
+prsatlas,inactive,PASS
 psygenet,inactive,PASS
 rdbridge,unresponsive,PASS
 rdp,unresponsive,PASS

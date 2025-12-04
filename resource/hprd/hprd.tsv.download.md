@@ -7,7 +7,7 @@ original_source:
 - hprd
 product_url: http://www.hprd.org/
 warnings:
-- File was not able to be retrieved when checked on 2025-11-25_ HTTP 503 error when
+- File was not able to be retrieved when checked on 2025-11-26_ HTTP 503 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-11-25_ HTTP 503 error when
   accessing file
