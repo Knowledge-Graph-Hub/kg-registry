@@ -100,7 +100,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-11-26_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-04_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-12-04: No Content-Length
     header found'
@@ -147,7 +147,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-26_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
     accessing file
@@ -656,7 +656,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-26_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 403 error
     when accessing file'
@@ -717,8 +717,8 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
+  - File was not able to be retrieved when checked on 2025-12-04_ FTP error_ [Errno
+    104] Connection reset by peer
 - category: MappingProduct
   description: Files containing transitive assignments of InterPro matches, UniProtKB
     keywords, subcellular locations, EC numbers, or HAMAP matches to manually-selected

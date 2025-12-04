@@ -314,7 +314,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ Exceeded 30 redirects.
   - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: Exceeded 30 redirects.'

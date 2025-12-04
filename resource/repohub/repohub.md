@@ -39,7 +39,7 @@ products:
   name: Drug Information Download
   product_url: https://repo-hub.broadinstitute.org/repurposing#download
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -53,12 +53,12 @@ products:
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
+    issuer certificate (_ssl.c_1000)')))
   - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+    issuer certificate (_ssl.c:1017)'')))'
 - category: Product
   description: Downloadable sample information file with compound library details
     and annotations
@@ -67,7 +67,7 @@ products:
   name: Sample Information Download
   product_url: https://repo-hub.broadinstitute.org/repurposing#download
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -81,12 +81,12 @@ products:
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
+    issuer certificate (_ssl.c_1000)')))
   - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+    issuer certificate (_ssl.c:1017)'')))'
 - category: Product
   description: Physical screening library of 5,506 compounds (90% FDA-approved or
     in clinical trials) available as assay-ready plates
@@ -94,7 +94,7 @@ products:
   name: Screening Library
   product_url: https://repo-hub.broadinstitute.org/repurposing#about
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -108,12 +108,12 @@ products:
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
+    issuer certificate (_ssl.c_1000)')))
   - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+    issuer certificate (_ssl.c:1017)'')))'
 - category: Product
   description: REPO1 subset library available in 5-point, 10-fold dilution series
     as single-use assay-ready plates
@@ -121,7 +121,7 @@ products:
   name: REPO1 Dilution Series Library
   product_url: https://repo-hub.broadinstitute.org/repurposing#about
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -135,12 +135,12 @@ products:
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
+    issuer certificate (_ssl.c_1000)')))
   - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+    issuer certificate (_ssl.c:1017)'')))'
 - category: Product
   description: Follow-up compound collection of approximately 2,400 compounds available
     for secondary studies
@@ -148,7 +148,7 @@ products:
   name: Follow-up Compound Collection
   product_url: https://repo-hub.broadinstitute.org/repurposing#about
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -162,12 +162,12 @@ products:
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
+    issuer certificate (_ssl.c_1000)')))
   - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+    issuer certificate (_ssl.c:1017)'')))'
 - category: DocumentationProduct
   description: About page with detailed information on the Drug Repurposing Hub history,
     team, and usage
@@ -176,7 +176,7 @@ products:
   name: About the Repurposing Hub
   product_url: https://repo-hub.broadinstitute.org/repurposing#about
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -190,12 +190,12 @@ products:
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
+    issuer certificate (_ssl.c_1000)')))
   - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+    issuer certificate (_ssl.c:1017)'')))'
 - category: DocumentationProduct
   description: Case studies demonstrating applications of the Drug Repurposing Hub
   format: http
@@ -203,7 +203,7 @@ products:
   name: Case Studies
   product_url: https://repo-hub.broadinstitute.org/repurposing#case-studies
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -217,12 +217,12 @@ products:
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
+    issuer certificate (_ssl.c_1000)')))
   - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+    issuer certificate (_ssl.c:1017)'')))'
 - category: DocumentationProduct
   description: Information about conducting screens with the Drug Repurposing Hub
     library
@@ -231,7 +231,7 @@ products:
   name: Screening Information
   product_url: https://repo-hub.broadinstitute.org/repurposing#screen
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -245,12 +245,12 @@ products:
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
+    issuer certificate (_ssl.c_1000)')))
   - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /repurposing (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+    issuer certificate (_ssl.c:1017)'')))'
 - category: DocumentationProduct
   description: Policy document for compound intake and donation to the collection
   format: pdf
@@ -258,7 +258,7 @@ products:
   name: Compound Intake Policy
   product_url: https://repo-hub.broadinstitute.org/public/data/Compound_Intake_Policy.pdf
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /public/data/Compound_Intake_Policy.pdf (Caused by
     SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
@@ -272,12 +272,12 @@ products:
     to URL_ HTTPSConnectionPool(host='repo-hub.broadinstitute.org', port=443)_ Max
     retries exceeded with url_ /public/data/Compound_Intake_Policy.pdf (Caused by
     SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
+    verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
   - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: HTTPSConnectionPool(host=''repo-hub.broadinstitute.org'', port=443): Max
     retries exceeded with url: /public/data/Compound_Intake_Policy.pdf (Caused by
     SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate
-    verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
+    verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
 - category: Product
   description: Network embeddings of the Bioteque graph that represent biological
     entities and their associations

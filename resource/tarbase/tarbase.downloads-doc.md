@@ -8,8 +8,8 @@ product_url: https://dianalab.e-ce.uth.gr/tarbasev9/downloads
 warnings:
 - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-11-26_ HTTP 404 error when
-  accessing file
+- File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
+  to URL
 - File was not able to be retrieved when checked on 2025-11-17_ Timeout connecting
   to URL
 layout: product_detail

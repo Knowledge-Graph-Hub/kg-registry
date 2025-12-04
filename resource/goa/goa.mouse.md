@@ -11,7 +11,7 @@ product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
 warnings:
 - File was not able to be retrieved when checked on 2025-12-04_ Error connecting to
   URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-- File was not able to be retrieved when checked on 2025-11-26_ Error connecting to
-  URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
+- File was not able to be retrieved when checked on 2025-12-04_ FTP error_ [Errno
+  104] Connection reset by peer
 layout: product_detail
 ---

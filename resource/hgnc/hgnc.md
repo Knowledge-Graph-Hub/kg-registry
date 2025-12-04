@@ -142,7 +142,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-26_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 404 error
     when accessing file'
@@ -699,7 +699,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-26_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 403 error
     when accessing file'
