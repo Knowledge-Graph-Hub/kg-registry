@@ -5,7 +5,9 @@ import logging
 import sys
 import time
 from contextlib import closing
+from ftplib import FTP
 from json import dumps
+from urllib.parse import urlparse
 
 import requests
 import yaml
@@ -35,11 +37,12 @@ def main():
     parser_n = subparsers.add_parser("check-urls", help="Ensure PURLs resolve")
     parser_n.set_defaults(function=check_urls)
 
-    parser_n = subparsers.add_parser(
-        "sparql-compare",
-        help="Run SPARQL commands against the db to generate a " "consistency report",
-    )
-    parser_n.set_defaults(function=sparql_compare_all)
+    # TODO: sparql_compare_all function is missing - needs to be implemented
+    # parser_n = subparsers.add_parser(
+    #     "sparql-compare",
+    #     help="Run SPARQL commands against the db to generate a " "consistency report",
+    # )
+    # parser_n.set_defaults(function=sparql_compare_all)
 
     parser_n = subparsers.add_parser("extract-context", help="Extracts JSON-LD context")
     parser_n.set_defaults(function=extract_context)
@@ -72,14 +75,57 @@ def check_urls(resources, args):
     """
 
     def test_url(url):
+        # Skip if URL is None or empty
+        if not url:
+            return True  # Don't fail on missing URLs
+            
+        # Handle FTP URLs
+        if url.startswith('ftp://') or url.startswith('ftps://'):
+            try:
+                parsed = urlparse(url)
+                host = parsed.hostname
+                if not host:
+                    return False
+                port = parsed.port or 21
+                path = parsed.path or '/'
+                
+                ftp = FTP()
+                ftp.connect(host, port, timeout=10)
+                ftp.login()  # Anonymous login
+                
+                try:
+                    # Try to check if file exists
+                    try:
+                        size = ftp.size(path)
+                        if size is not None:
+                            return True
+                    except Exception:
+                        # SIZE failed, might be a directory - try CWD
+                        pass
+                    
+                    # Try changing to directory
+                    ftp.cwd(path)
+                    return True
+                except Exception:
+                    # Path doesn't exist
+                    return False
+                finally:
+                    try:
+                        ftp.quit()
+                    except Exception:
+                        pass
+            except Exception as e:
+                logging.warning(f"FTP error for {url}: {e}")
+                return False
+        
+        # Handle HTTP/HTTPS URLs
         try:
             with closing(requests.get(url, stream=False)) as resp:
                 return resp.status_code == 200
         except requests.exceptions.InvalidSchema as e:
-            # TODO: requests lib doesn't handle ftp. For now simply return True in that case.
-            if not format(e).startswith("No connection adapters were found for 'ftp:"):
-                raise
-            return True
+            # If we get here with an unhandled protocol, log it
+            logging.warning(f"Unsupported URL scheme for {url}: {e}")
+            return False
 
     failed_ids = []
     for ont in resources:
