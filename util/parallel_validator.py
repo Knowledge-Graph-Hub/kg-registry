@@ -17,12 +17,12 @@ def validate_single_resource(
 ) -> Tuple[str, Optional[Dict], Optional[Exception]]:
     """
     Validate a single resource against the schema.
-    
+
     Args:
         item: Resource metadata dictionary
         schema: JSON schema to validate against
         validate_func: The validation function to call
-        
+
     Returns:
         Tuple of (resource_id, validation_results, error)
     """
@@ -43,20 +43,20 @@ def validate_resources_parallel(
 ) -> Dict[str, List]:
     """
     Validate multiple resources in parallel.
-    
+
     Args:
         resources: List of resource metadata dictionaries
         schema: JSON schema to validate against
         validate_func: The validation function to call for each resource
         update_results_func: Function to merge validation results
         max_workers: Number of worker threads (default: from env or 10)
-        
+
     Returns:
         Dictionary with 'error', 'warn', and 'info' lists
     """
     if max_workers is None:
         max_workers = int(os.environ.get('PARALLEL_WORKERS', '10'))
-    
+
     # Don't use parallel validation for small sets
     if len(resources) < 50:
         results = {"error": [], "warn": [], "info": []}
@@ -64,24 +64,24 @@ def validate_resources_parallel(
             add = validate_func(item, schema)
             results = update_results_func(results, add)
         return results
-    
+
     results = {"error": [], "warn": [], "info": []}
-    
+
     print(f"Validating {len(resources)} resources with {max_workers} workers...")
-    
+
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         # Submit all validation tasks
         futures = {
             executor.submit(validate_single_resource, item, schema, validate_func): item.get('id', 'unknown')
             for item in resources
         }
-        
+
         # Collect results as they complete
         completed = 0
         for future in as_completed(futures):
             resource_id = futures[future]
             resource_id_str, result, error = future.result()
-            
+
             if error:
                 results['error'].append(f"{resource_id}: Validation error: {error}")
                 print(f"  ❌ Error validating {resource_id}: {error}")
@@ -90,11 +90,10 @@ def validate_resources_parallel(
                 for key in ['error', 'warn', 'info']:
                     if key in result:
                         results[key].extend(result[key])
-            
+
             completed += 1
             if completed % 100 == 0:
                 print(f"  Progress: {completed}/{len(resources)} resources validated")
-    
+
     print(f"  ✅ Completed validation of {len(resources)} resources")
     return results
-

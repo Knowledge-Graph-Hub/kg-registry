@@ -37,7 +37,7 @@ def update_markdown(path: Union[str, pathlib.Path]) -> None:
         if repository:
             print("repository:", repository, file=file)
         print("---", file=file)
-        for line in lines[idx + 1 :]:
+        for line in lines[idx + 1:]:
             print(line, file=file)
 
 

@@ -78,7 +78,7 @@ def check_urls(resources, args):
         # Skip if URL is None or empty
         if not url:
             return True  # Don't fail on missing URLs
-            
+
         # Handle FTP URLs
         if url.startswith('ftp://') or url.startswith('ftps://'):
             try:
@@ -88,11 +88,11 @@ def check_urls(resources, args):
                     return False
                 port = parsed.port or 21
                 path = parsed.path or '/'
-                
+
                 ftp = FTP()
                 ftp.connect(host, port, timeout=10)
                 ftp.login()  # Anonymous login
-                
+
                 try:
                     # Try to check if file exists
                     try:
@@ -102,7 +102,7 @@ def check_urls(resources, args):
                     except Exception:
                         # SIZE failed, might be a directory - try CWD
                         pass
-                    
+
                     # Try changing to directory
                     ftp.cwd(path)
                     return True
@@ -117,7 +117,7 @@ def check_urls(resources, args):
             except Exception as e:
                 logging.warning(f"FTP error for {url}: {e}")
                 return False
-        
+
         # Handle HTTP/HTTPS URLs
         try:
             with closing(requests.get(url, stream=False)) as resp:

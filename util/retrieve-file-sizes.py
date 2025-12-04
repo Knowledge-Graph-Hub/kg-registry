@@ -96,39 +96,39 @@ def convert_github_url_to_raw(url: str) -> str:
 def get_ftp_info(url: str) -> Tuple[Optional[int], Optional[str], Dict[str, Any]]:
     """
     Retrieve file/directory information from FTP URL.
-    
+
     Args:
         url: The FTP URL to check
-        
+
     Returns:
         Tuple of (file_size in bytes or None, error_message or None, info dict)
     """
     try:
         print(f"Checking FTP location: {url}")
-        
+
         parsed = urlparse(url)
         if parsed.scheme != 'ftp':
             error_msg = f"Not an FTP URL: {parsed.scheme}"
             return None, error_msg, {'error': error_msg, 'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')}
-        
+
         host = parsed.hostname
         if not host:
             error_msg = "No hostname in FTP URL"
             return None, error_msg, {'error': error_msg, 'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')}
-        
+
         port = parsed.port or 21
         path = parsed.path or '/'
-        
+
         info: Dict[str, Any] = {
             'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z'),
             'protocol': 'ftp'
         }
-        
+
         # Connect to FTP server
         ftp = FTP()
         ftp.connect(host, port, timeout=REQUEST_TIMEOUT)
         ftp.login()  # Anonymous login
-        
+
         try:
             # Try to get file size
             try:
@@ -156,7 +156,7 @@ def get_ftp_info(url: str) -> Tuple[Optional[int], Optional[str], Dict[str, Any]
                 ftp.quit()
             except Exception:
                 pass  # Ignore errors during cleanup
-            
+
     except Exception as e:
         error_msg = f"FTP error: {str(e)}"
         print(f"  ⚠️  {error_msg}")
@@ -177,7 +177,7 @@ def get_file_size_from_header(url: str) -> Tuple[Optional[int], Optional[str], D
     # Check if this is an FTP URL
     if url.startswith('ftp://') or url.startswith('ftps://'):
         return get_ftp_info(url)
-    
+
     try:
         # Convert GitHub blob URLs to raw URLs for direct file access
         original_url = url

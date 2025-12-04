@@ -56,7 +56,7 @@ def update_orcid(path: Union[str, pathlib.Path]) -> None:
             if line.startswith("  github:"):
                 print(f"  orcid: {orcid}", file=file)
         print("---", file=file)
-        for line in lines[idx + 1 :]:
+        for line in lines[idx + 1:]:
             print(line, file=file)
 
 

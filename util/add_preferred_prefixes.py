@@ -47,7 +47,7 @@ def update_markdown(path: Union[str, pathlib.Path]) -> None:
             print(line, file=file)
         print("preferredPrefix:", data["id"].upper(), file=file)
         print("---", file=file)
-        for line in lines[idx + 1 :]:
+        for line in lines[idx + 1:]:
             print(line, file=file)
 
 
