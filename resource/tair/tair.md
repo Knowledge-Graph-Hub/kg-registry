@@ -1,15 +1,29 @@
 ---
 activity_status: active
 category: DataSource
-creation_date: '2025-09-09T00:00:00Z'
-description: Stub Resource page for tair. This page was automatically generated because
-  it was referenced by other resources.
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: curator@arabidopsis.org
+  - contact_type: url
+    value: https://www.arabidopsis.org/
+  label: Phoenix Bioinformatics
+creation_date: '2025-12-03T00:00:00Z'
+description: The Arabidopsis Information Resource (TAIR) maintains a comprehensive database of genetic and molecular biology data for the model higher plant Arabidopsis thaliana. TAIR provides the complete genome sequence, gene structure and product information, gene expression data, DNA and seed stocks, genome maps, genetic and physical markers, publications, and community information. Gene product function data is updated weekly from published research and community submissions.
 domains:
-- stub
+- genomics
+- biological systems
+- organisms
+homepage_url: https://www.arabidopsis.org/
 id: tair
-last_modified_date: '2025-09-09T00:00:00Z'
+last_modified_date: '2025-12-03T00:00:00Z'
 layout: resource_detail
-name: Tair
+name: The Arabidopsis Information Resource
+synonyms:
+- TAIR
+taxon:
+- NCBITaxon:3702
 products:
 - category: GraphicalInterface
   description: Web portal for searching and browsing ncRNA sequences, structures,
@@ -221,10 +235,8 @@ products:
   - zwd
   - rnacentral
   product_url: https://rnacentral.org/help/public-database
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
 ---
-# Tair
 
-This is an automatically generated stub page for tair. Please update with proper information.
+# The Arabidopsis Information Resource
+
+TAIR is the primary genomics database for the model plant Arabidopsis thaliana, providing comprehensive genetic and molecular biology information including genome sequence, gene annotations, expression data, and community resources.

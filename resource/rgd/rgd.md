@@ -1,16 +1,35 @@
 ---
 activity_status: active
 category: DataSource
-description: Stub Resource page for rgd. This page was automatically generated because it was referenced by other resources.
+contacts:
+  - category: Organization
+    contact_details:
+      - contact_type: email
+        value: "rgd.data@mcw.edu"
+      - contact_type: url
+        value: "https://rgd.mcw.edu/"
+    label: Medical College of Wisconsin
+creation_date: '2025-12-03T00:00:00Z'
+description: The Rat Genome Database (RGD) curates and integrates rat genomic and phenotype data, and provides tools for genomics, physiology and functional genomics in rats. RGD contains comprehensive data on genes, QTLs, strains, and genomic elements for rat, human, mouse, chinchilla, dog, cat, pig, bonobo, squirrel, green monkey, and naked mole rat. The database includes extensive ontology annotations (RDO, CMO, ChEBI, EFO, GO, HP, MMO, MP, PW, RS, VT, XCO), variant information, pathway data, and disease relationships.
 domains:
-  - stub
-id: rgd
+  - genomics
+  - biological systems
+  - organisms
+homepage_url: https://rgd.mcw.edu/
+id: "rgd"
+infores_id: "rgd"
+last_modified_date: '2025-12-03T00:00:00Z'
 layout: resource_detail
-name: Rgd
+name: Rat Genome Database
+repository: https://github.com/rat-genome-database
+synonyms:
+  - RGD
+taxon:
+  - NCBITaxon:10116
 products:
   - category: GraphProduct
     description: DisGeNET data, including gene to disease associations and variant to disease associations (requires registration and subscription).
-    id: disgenet.data
+    id: "disgenet.data"
     name: DisGeNET Data
     original_source:
       - clingen
@@ -33,7 +52,7 @@ products:
   - category: GraphicalInterface
     description: Web portal for searching and browsing ncRNA sequences, structures, and annotations
     format: http
-    id: rnacentral.portal
+    id: "rnacentral.portal"
     name: RNAcentral Portal
     original_source:
       - 5srrnadb
@@ -85,7 +104,7 @@ products:
   - category: ProgrammingInterface
     description: REST API for programmatic access to RNAcentral data
     format: http
-    id: rnacentral.api
+    id: "rnacentral.api"
     name: RNAcentral REST API
     original_source:
       - 5srrnadb
@@ -137,7 +156,7 @@ products:
   - category: Product
     description: FTP archive with current and archived release files (sequences and annotations)
     format: http
-    id: rnacentral.ftp
+    id: "rnacentral.ftp"
     name: RNAcentral FTP Archive
     original_source:
       - 5srrnadb
@@ -189,7 +208,7 @@ products:
   - category: DataModelProduct
     description: Public PostgreSQL database for direct SQL access to RNAcentral data
     format: postgres
-    id: rnacentral.public-db
+    id: "rnacentral.public-db"
     name: RNAcentral Public Postgres Database
     original_source:
       - 5srrnadb
@@ -238,11 +257,8 @@ products:
       - zwd
       - rnacentral
     product_url: https://rnacentral.org/help/public-database
-warnings:
-  - This is an automatically generated stub page. Please replace with accurate information about this resource.
-infores_id: rgd
 ---
 
-# Rgd
+# Rat Genome Database
 
-This is an automatically generated stub page for rgd. Please update with proper information.
+RGD is a multispecies genomics and phenomics database, providing comprehensive data for rat and other model organisms including genes, QTLs, strains, variants, pathways, and disease associations with extensive ontological annotations.
