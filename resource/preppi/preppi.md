@@ -62,19 +62,19 @@ products:
   - preppi
   product_url: https://honiglab.c2b2.columbia.edu/PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
   warnings:
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+    to URL_ HTTPSConnectionPool(host='honiglab.c2b2.columbia.edu', port=443)_ Max
+    retries exceeded with url_ /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
+    (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
+    certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
   - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
     to URL_ HTTPSConnectionPool(host='honiglab.c2b2.columbia.edu', port=443)_ Max
     retries exceeded with url_ /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
     (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
     certificate verify failed_ unable to get local issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ HTTPSConnectionPool(host='honiglab.c2b2.columbia.edu', port=443)_ Max
-    retries exceeded with url_ /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
-    (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ unable to get local issuer certificate (_ssl.c_1017)')))
   - File was not able to be retrieved when checked on 2025-11-21_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ HTTPSConnectionPool(host='honiglab.c2b2.columbia.edu', port=443)_ Max
     retries exceeded with url_ /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
     (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
@@ -83,7 +83,7 @@ products:
     to URL: HTTPSConnectionPool(host=''honiglab.c2b2.columbia.edu'', port=443): Max
     retries exceeded with url: /PrePPI/ref/preppi.human_af.interactome.txt.tar.gz
     (Caused by SSLError(SSLCertVerificationError(1, ''[SSL: CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)'')))'
+    certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)'')))'
 publications:
 - doi: 10.1016/j.jmb.2023.168052
   id: doi:10.1016/j.jmb.2023.168052

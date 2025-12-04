@@ -69,12 +69,12 @@ products:
   name: HPA Normal Tissue Data
   product_url: https://www.proteinatlas.org/download/normal_tissue.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-26_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 404 error
-    when accessing file'
+  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
+    to URL'
 - category: Product
   description: Pathology data including cancer tissue expression and patient survival
     information
@@ -83,14 +83,14 @@ products:
   name: HPA Pathology Data
   product_url: https://www.proteinatlas.org/download/pathology.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-11-26_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-26_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
+    to URL'
 - category: Product
   description: Subcellular localization data based on immunofluorescent staining of
     human cell lines
@@ -99,14 +99,14 @@ products:
   name: HPA Subcellular Location Data
   product_url: https://www.proteinatlas.org/download/subcellular_location.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-11-26_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-26_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
+    to URL'
 - category: Product
   description: RNA expression data in human tissues based on transcriptomic analysis
   format: tsv
@@ -114,12 +114,12 @@ products:
   name: HPA RNA Tissue Expression Data
   product_url: https://www.proteinatlas.org/download/rna_tissue.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-26_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 404 error
-    when accessing file'
+  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
+    to URL'
 - category: Product
   description: RNA expression data in human cell lines based on RNA-seq analysis
   format: tsv
@@ -127,14 +127,14 @@ products:
   name: HPA RNA Cell Line Expression Data
   product_url: https://www.proteinatlas.org/download/rna_celline.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-11-26_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-26_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
+    to URL'
 - category: Product
   description: Single cell expression data from human tissues based on scRNA-seq analysis
   format: tsv
@@ -142,12 +142,12 @@ products:
   name: HPA Single Cell RNA Expression Data
   product_url: https://www.proteinatlas.org/download/rna_single_cell.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-26_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 404 error
-    when accessing file'
+  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
+    to URL'
 - category: Product
   description: Brain-specific expression data including regional and cellular distribution
   format: tsv
@@ -155,12 +155,12 @@ products:
   name: HPA Brain RNA Expression Data
   product_url: https://www.proteinatlas.org/download/brain_rna.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-26_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 404 error
-    when accessing file'
+  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
+    to URL'
 - category: Product
   description: Blood protein expression data from healthy individuals and disease
     states
@@ -169,12 +169,12 @@ products:
   name: HPA Blood Protein Data
   product_url: https://www.proteinatlas.org/download/blood_protein.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-26_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 404 error
-    when accessing file'
+  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
+    to URL'
 - category: Product
   description: Immune cell expression data from single cell transcriptomics studies
   format: tsv
@@ -182,14 +182,14 @@ products:
   name: HPA Immune Cell RNA Data
   product_url: https://www.proteinatlas.org/download/rna_immune_cell.tsv.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-11-26_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-26_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 404 error
-    when accessing file'
+  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
+    to URL'
 - category: ProgrammingInterface
   description: Programmatic access to individual protein entries in XML format via
     Ensembl ID

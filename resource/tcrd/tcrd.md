@@ -66,9 +66,9 @@ products:
   - tcrd
   product_url: http://juniper.health.unm.edu/tcrd/download/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-11-26_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
   - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
     to URL'
@@ -91,9 +91,9 @@ products:
   - tcrd
   product_url: http://juniper.health.unm.edu/tcrd/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ Timeout connecting
-    to URL
   - File was not able to be retrieved when checked on 2025-11-26_ Timeout connecting
+    to URL
+  - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
   - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
     to URL'

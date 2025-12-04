@@ -36,7 +36,9 @@ products:
   - fooddb
   product_url: https://foodb.ca/downloads
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-11-26: Timeout connecting
+  - File was not able to be retrieved when checked on 2025-11-26_ Timeout connecting
+    to URL
+  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
     to URL'
 synonyms:
 - FooDB

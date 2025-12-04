@@ -39,9 +39,9 @@ products:
   - plncdb
   product_url: http://plncdb.tobaccodb.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-11-26_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 403 error
     when accessing file'

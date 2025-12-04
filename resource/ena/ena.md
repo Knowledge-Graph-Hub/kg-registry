@@ -36,12 +36,10 @@ products:
   name: ENA FTP Archive
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/ena
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/ena'
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/ena'
   - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/ena'''
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/ena'
 - category: GraphicalInterface
   description: Interface for setting up and managing pre-release and public Data Hubs
     for pathogen and other sequence data.

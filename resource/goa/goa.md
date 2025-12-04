@@ -54,12 +54,10 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
   - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/'''
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/'
 - category: Product
   description: GO annotations for all UniProtKB entries
   format: txt
@@ -70,12 +68,10 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
   - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'''
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/'
 - category: Product
   description: GO annotations for human proteins
   format: txt
@@ -86,12 +82,10 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
   - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'''
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/'
 - category: Product
   description: GO annotations for mouse proteins
   format: txt
@@ -102,12 +96,12 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
   - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
-  - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
-    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'''
+  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/MOUSE/'
+  - 'File was not able to be retrieved when checked on 2025-12-04: FTP error: [Errno
+    104] Connection reset by peer'
 - category: MappingProduct
   description: Files containing transitive assignments of InterPro matches, UniProtKB
     keywords, subcellular locations, EC numbers, or HAMAP matches to manually-selected
@@ -121,12 +115,10 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
   - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'''
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
 - category: Product
   description: GO annotations for PDB entries
   format: txt
@@ -137,12 +129,10 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
-  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
   - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
     to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'''
+  - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/PDB/'
 - category: Product
   description: GO annotations organized by proteomes
   format: txt
@@ -152,12 +142,12 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
   - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
-  - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
-    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'''
+  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/proteomes/'
+  - 'File was not able to be retrieved when checked on 2025-12-04: FTP error: [Errno
+    104] Connection reset by peer'
 - category: DocumentationProduct
   description: Documentation including FAQ, About pages, and contact information
   format: http
