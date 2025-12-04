@@ -1,0 +1,31 @@
+resources:
+- id: test_ftp_file
+  name: Test FTP File
+  category: DataSource
+  homepage_url: https://example.com
+  products:
+  - id: test_ftp_file.readme
+    name: NCBI README
+    category: Product
+    format: txt
+    resource_purl: ftp://ftp.ncbi.nlm.nih.gov/README.ftp
+- id: test_ftp_dir
+  name: Test FTP Directory
+  category: DataSource
+  homepage_url: https://example.com
+  products:
+  - id: test_ftp_dir.pub
+    name: NCBI Pub Directory
+    category: Product
+    format: directory
+    resource_purl: ftp://ftp.ncbi.nlm.nih.gov/pub/
+- id: test_https
+  name: Test HTTPS
+  category: DataSource
+  homepage_url: https://example.com
+  products:
+  - id: test_https.page
+    name: Example Page
+    category: GraphicalInterface
+    format: http
+    resource_purl: https://www.example.com/
