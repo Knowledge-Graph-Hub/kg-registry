@@ -9,6 +9,11 @@ original_source:
 - atgo
 product_url: http://atgo.ucsd.edu/
 warnings:
+- File was not able to be retrieved when checked on 2025-12-04_ Error connecting to
+  URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with
+  url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object
+  at 0x7f3d84d44ca0>_ Failed to establish a new connection_ [Errno 111] Connection
+  refused'))
 - File was not able to be retrieved when checked on 2025-11-26_ Error connecting to
   URL_ HTTPConnectionPool(host='atgo.ucsd.edu', port=80)_ Max retries exceeded with
   url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object

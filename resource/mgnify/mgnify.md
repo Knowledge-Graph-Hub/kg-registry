@@ -38,12 +38,12 @@ products:
   name: MGnify FTP Archive
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/metagenomics
   warnings:
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/metagenomics'
   - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/metagenomics'
-  - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
-    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/metagenomics'''
+  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/metagenomics'
+  - 'File was not able to be retrieved when checked on 2025-12-04: FTP error: [Errno
+    104] Connection reset by peer'
 - category: Product
   description: Biome-specific microbial genome catalogues, including marine, human
     gut, and other environments.

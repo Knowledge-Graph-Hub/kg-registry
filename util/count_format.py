@@ -16,12 +16,12 @@ for resource in data.get("resources", []):
     total_resources += 1
     category = resource.get("category", "Unknown")
     resource_category_counter[category] += 1
-    
+
     for product in resource.get("products", []):
         total_products += 1
         product_category = product.get("category", "Unknown")
         product_category_counter[product_category] += 1
-        
+
         fmt = product.get("format")
         if fmt:
             format_counter[fmt] += 1

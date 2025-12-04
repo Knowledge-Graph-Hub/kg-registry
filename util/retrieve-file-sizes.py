@@ -4,7 +4,9 @@ import argparse
 import pathlib
 import sys
 from datetime import datetime, timezone
+from ftplib import FTP
 from typing import Any, Dict, List, Optional, Tuple
+from urllib.parse import urlparse
 
 try:
     import frontmatter  # type: ignore
@@ -58,7 +60,7 @@ def cache_should_skip(url: str, cache: Dict[str, Any], ignore_cache: bool = Fals
     if not entry:
         return False, None
     # Skip if prior run recorded skip_reason we want to honor
-    if entry.get('skip_reason') in {'html_page', 'no_content_type'}:
+    if entry.get('skip_reason') in {'html_page', 'no_content_type', 'directory'}:
         return True, entry
     return False, entry
 
@@ -91,17 +93,91 @@ def convert_github_url_to_raw(url: str) -> str:
     return url
 
 
+def get_ftp_info(url: str) -> Tuple[Optional[int], Optional[str], Dict[str, Any]]:
+    """
+    Retrieve file/directory information from FTP URL.
+
+    Args:
+        url: The FTP URL to check
+
+    Returns:
+        Tuple of (file_size in bytes or None, error_message or None, info dict)
+    """
+    try:
+        print(f"Checking FTP location: {url}")
+
+        parsed = urlparse(url)
+        if parsed.scheme != 'ftp':
+            error_msg = f"Not an FTP URL: {parsed.scheme}"
+            return None, error_msg, {'error': error_msg, 'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')}
+
+        host = parsed.hostname
+        if not host:
+            error_msg = "No hostname in FTP URL"
+            return None, error_msg, {'error': error_msg, 'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')}
+
+        port = parsed.port or 21
+        path = parsed.path or '/'
+
+        info: Dict[str, Any] = {
+            'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z'),
+            'protocol': 'ftp'
+        }
+
+        # Connect to FTP server
+        ftp = FTP()
+        ftp.connect(host, port, timeout=REQUEST_TIMEOUT)
+        ftp.login()  # Anonymous login
+
+        try:
+            # Try to get file size
+            try:
+                file_size = ftp.size(path)
+                if file_size is not None:
+                    print(f"  ✅ FTP file size: {format_file_size(file_size)}")
+                    info['content_length'] = file_size
+                    return file_size, None, info
+            except Exception as size_error:
+                # SIZE command failed - might be a directory
+                # Try to change to the directory to verify it exists
+                try:
+                    ftp.cwd(path)
+                    print(f"  ✅ FTP directory accessible (no file size for directories)")
+                    info['skip_reason'] = 'directory'
+                    return None, None, info
+                except Exception:
+                    # Not a directory either
+                    error_msg = f"FTP SIZE/CWD failed: {str(size_error)}"
+                    print(f"  ⚠️  {error_msg}")
+                    info['error'] = error_msg
+                    return None, error_msg, info
+        finally:
+            try:
+                ftp.quit()
+            except Exception:
+                pass  # Ignore errors during cleanup
+
+    except Exception as e:
+        error_msg = f"FTP error: {str(e)}"
+        print(f"  ⚠️  {error_msg}")
+        return None, error_msg, {'error': error_msg, 'protocol': 'ftp', 'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')}
+
+
 def get_file_size_from_header(url: str) -> Tuple[Optional[int], Optional[str], Dict[str, Any]]:
     """
-    Retrieve file size from HTTP Content-Length header without downloading the file.
+    Retrieve file size from HTTP Content-Length header or FTP SIZE command without downloading the file.
     Skips HTML pages as these are not downloadable files, but converts GitHub blob URLs to raw URLs first.
 
     Args:
         url: The URL to check
 
     Returns:
-        Tuple of (file_size in bytes or None, error_message or None)
+        Tuple of (file_size in bytes or None, error_message or None, info dict)
     """
+    # Check if this is an FTP URL
+    if url.startswith('ftp://') or url.startswith('ftps://'):
+        return get_ftp_info(url)
+
     try:
         # Convert GitHub blob URLs to raw URLs for direct file access
         original_url = url

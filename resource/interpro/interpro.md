@@ -243,8 +243,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
-    packaged as a downloadable archive.
+  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
+    \ dataset packaged as a downloadable archive."
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -325,12 +325,10 @@ products:
   - go
   product_url: ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
+    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
   - File was not able to be retrieved when checked on 2025-11-26_ Error connecting
     to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ No connection adapters were found for 'ftp_//ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'
-  - 'File was not able to be retrieved when checked on 2025-12-04: Error connecting
-    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/external2go/'''
 - category: GraphicalInterface
   description: Interactive web interface for exploring and visualizing kinase-substrate
     interactions
@@ -371,7 +369,7 @@ publications:
   - Gough J
   - Haft DH
   - Letunic I
-  - Llinares-López F
+  - "Llinares-L\xF3pez F"
   - Marchler-Bauer A
   - Meng-Papaxanthos L
   - Mi H

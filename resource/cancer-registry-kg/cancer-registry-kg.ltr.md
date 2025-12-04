@@ -10,9 +10,9 @@ original_source:
 - cancer-registry-kg
 product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
 warnings:
-- File was not able to be retrieved when checked on 2025-11-26_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
   accessing file
-- File was not able to be retrieved when checked on 2025-11-25_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2025-11-26_ HTTP 403 error when
   accessing file
 layout: product_detail
 ---
