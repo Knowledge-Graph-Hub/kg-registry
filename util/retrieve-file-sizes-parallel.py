@@ -12,7 +12,9 @@ import pathlib
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
+from ftplib import FTP
 from typing import Any, Dict, List, Optional, Tuple
+from urllib.parse import urlparse
 import threading
 
 try:
@@ -77,7 +79,7 @@ def cache_should_skip(url: str, cache: Dict[str, Any], ignore_cache: bool = Fals
     if not entry:
         return False, None
     # Skip if prior run recorded skip_reason we want to honor
-    if entry.get('skip_reason') in {'html_page', 'no_content_type'}:
+    if entry.get('skip_reason') in {'html_page', 'no_content_type', 'directory'}:
         return True, entry
     return False, entry
 
@@ -110,9 +112,79 @@ def convert_github_url_to_raw(url: str) -> str:
     return url
 
 
+def get_ftp_info(url: str) -> Tuple[Optional[int], Optional[str], Dict[str, Any]]:
+    """
+    Retrieve file/directory information from FTP URL.
+    
+    Args:
+        url: The FTP URL to check
+        
+    Returns:
+        Tuple of (file_size in bytes or None, error_message or None, info dict)
+    """
+    try:
+        safe_print(f"Checking FTP location: {url}")
+        
+        parsed = urlparse(url)
+        if parsed.scheme != 'ftp':
+            error_msg = f"Not an FTP URL: {parsed.scheme}"
+            return None, error_msg, {'error': error_msg, 'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')}
+        
+        host = parsed.hostname
+        if not host:
+            error_msg = "No hostname in FTP URL"
+            return None, error_msg, {'error': error_msg, 'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')}
+        
+        port = parsed.port or 21
+        path = parsed.path or '/'
+        
+        info: Dict[str, Any] = {
+            'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z'),
+            'protocol': 'ftp'
+        }
+        
+        # Connect to FTP server
+        ftp = FTP()
+        ftp.connect(host, port, timeout=REQUEST_TIMEOUT)
+        ftp.login()  # Anonymous login
+        
+        try:
+            # Try to get file size
+            try:
+                file_size = ftp.size(path)
+                if file_size is not None:
+                    safe_print(f"  ✅ FTP file size: {format_file_size(file_size)}")
+                    info['content_length'] = file_size
+                    return file_size, None, info
+            except Exception as size_error:
+                # SIZE command failed - might be a directory
+                # Try to change to the directory to verify it exists
+                try:
+                    ftp.cwd(path)
+                    safe_print(f"  ✅ FTP directory accessible (no file size for directories)")
+                    info['skip_reason'] = 'directory'
+                    return None, None, info
+                except Exception:
+                    # Not a directory either
+                    error_msg = f"FTP SIZE/CWD failed: {str(size_error)}"
+                    safe_print(f"  ⚠️  {error_msg}")
+                    info['error'] = error_msg
+                    return None, error_msg, info
+        finally:
+            try:
+                ftp.quit()
+            except Exception:
+                pass  # Ignore errors during cleanup
+            
+    except Exception as e:
+        error_msg = f"FTP error: {str(e)}"
+        safe_print(f"  ⚠️  {error_msg}")
+        return None, error_msg, {'error': error_msg, 'protocol': 'ftp', 'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')}
+
+
 def get_file_size_from_header(url: str) -> Tuple[Optional[int], Optional[str], Dict[str, Any]]:
     """
-    Retrieve file size from HTTP Content-Length header without downloading the file.
+    Retrieve file size from HTTP Content-Length header or FTP SIZE command without downloading the file.
     Skips HTML pages as these are not downloadable files, but converts GitHub blob URLs to raw URLs first.
 
     Args:
@@ -121,6 +193,10 @@ def get_file_size_from_header(url: str) -> Tuple[Optional[int], Optional[str], D
     Returns:
         Tuple of (file_size in bytes or None, error_message or None, info dict)
     """
+    # Check if this is an FTP URL
+    if url.startswith('ftp://') or url.startswith('ftps://'):
+        return get_ftp_info(url)
+    
     try:
         # Convert GitHub blob URLs to raw URLs for direct file access
         original_url = url
@@ -253,11 +329,11 @@ def _clean_stale_retrieval_warnings(product: Dict[str, Any]) -> int:
     return removed
 
 
-def process_single_url(url: str, product_id: str, resource_id: str, cache: Dict[str, Any], 
+def process_single_url(url: str, product_id: str, resource_id: str, cache: Dict[str, Any],
                        ignore_cache: bool, clean_warnings_only: bool, product: Dict[str, Any]) -> Dict[str, Any]:
     """
     Process a single URL check. This function is called in parallel by ThreadPoolExecutor.
-    
+
     Returns a dict with results that can be applied to the product later.
     """
     result = {
@@ -270,18 +346,19 @@ def process_single_url(url: str, product_id: str, resource_id: str, cache: Dict[
         'warnings_cleared': 0,
         'should_update': False
     }
-    
+
     should_skip_cache, cache_entry = cache_should_skip(url, cache, ignore_cache=ignore_cache)
-    
+
     if clean_warnings_only:
         # In this mode we don't perform network calls; just note to clear stale warnings
         removed = _clean_stale_retrieval_warnings(product)
         if removed:
-            safe_print(f"🧹 Cleared {removed} stale retrieval warning(s) for product {product_id} (clean-warnings-only mode)")
+            safe_print(
+                f"🧹 Cleared {removed} stale retrieval warning(s) for product {product_id} (clean-warnings-only mode)")
             result['warnings_cleared'] = removed
             result['should_update'] = True
         return result
-    
+
     if should_skip_cache:
         # Determine if there is a stale retrieval warning that merits a re-check
         has_retrieval_warning = False
@@ -298,15 +375,15 @@ def process_single_url(url: str, product_id: str, resource_id: str, cache: Dict[
             safe_print(f"⏭️  Skipping (cache): {url} (reason: {reason})")
             result['skipped'] = True
             return result
-    
+
     # Try to get file size and any error information
     file_size, error_message, info = get_file_size_from_header(url)
-    
+
     result['file_size'] = file_size
     result['error_message'] = error_message
     result['info'] = info
     result['should_update'] = True
-    
+
     return result
 
 
@@ -337,7 +414,8 @@ def write_file_sizes_to_resource_files(updated_products: Dict[str, List[Dict[str
         resource_file = f"resource/{resource_id}/{resource_id}.md"
 
         if frontmatter is None:
-            safe_print("  ⚠️  frontmatter package not installed; cannot modify resource files. Run 'pip install python-frontmatter'.")
+            safe_print(
+                "  ⚠️  frontmatter package not installed; cannot modify resource files. Run 'pip install python-frontmatter'.")
             continue
 
         try:
@@ -436,7 +514,7 @@ def write_file_sizes_to_resource_files(updated_products: Dict[str, List[Dict[str
             safe_print(f"  ❌ Error updating {resource_file}: {str(e)}")
 
 
-def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None, *, cache: Dict[str, Any], 
+def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None, *, cache: Dict[str, Any],
                               ignore_cache: bool = False, clean_warnings_only: bool = False,
                               max_workers: int = DEFAULT_MAX_WORKERS) -> Tuple[Dict[str, Any], Dict[str, List[Dict[str, Any]]]]:
     """
@@ -497,7 +575,7 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
     # Collect all URL checking tasks
     url_tasks = []
     product_map = {}  # Map from task index to (resource, product, resource_id)
-    
+
     for resource in data['resources']:
         if 'products' not in resource:
             continue
@@ -529,7 +607,7 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
             processed_products += 1
             url = product['product_url']
             product_id = product.get('id', 'unknown')
-            
+
             # Store task info
             task_idx = len(url_tasks)
             url_tasks.append((url, product_id, resource_id, product))
@@ -541,32 +619,32 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
 
     # Process URLs in parallel
     safe_print(f"\n🚀 Processing {len(url_tasks)} URLs with {max_workers} parallel workers...")
-    
+
     # Thread-safe cache updates
     cache_lock = threading.Lock()
-    
+
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         # Submit all tasks
         future_to_idx = {}
         for idx, (url, product_id, resource_id, product) in enumerate(url_tasks):
             future = executor.submit(
-                process_single_url, url, product_id, resource_id, cache, 
+                process_single_url, url, product_id, resource_id, cache,
                 ignore_cache, clean_warnings_only, product
             )
             future_to_idx[future] = idx
-        
+
         # Process results as they complete
         for future in as_completed(future_to_idx):
             idx = future_to_idx[future]
             resource, product, resource_id = product_map[idx]
-            
+
             try:
                 result = future.result()
-                
+
                 if result.get('skipped'):
                     cache_skipped += 1
                     continue
-                
+
                 # Update cache (thread-safe)
                 with cache_lock:
                     url = result['url']
@@ -576,7 +654,7 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
                     if result['file_size'] is not None:
                         cache_record['last_success_bytes'] = result['file_size']
                     cache[url] = cache_record
-                
+
                 # Update product based on result
                 if result['file_size'] is not None:
                     product['product_file_size'] = result['file_size']
@@ -599,7 +677,7 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
                     if resource_id not in updated_products_by_resource:
                         updated_products_by_resource[resource_id] = []
                     updated_products_by_resource[resource_id].append(product.copy())
-                    
+
                 elif result['error_message'] is not None:
                     # Add warning with current date
                     current_date = datetime.now(timezone.utc).date().isoformat()
@@ -621,7 +699,7 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
                         updated_products_by_resource[resource_id].append(product.copy())
 
                     failed_products += 1
-                    
+
                 else:
                     # Accessible (HTTP 200) but no size (likely HTML/no content-length). Treat as success for warning clearing.
                     if 'warnings' in product and isinstance(product['warnings'], list):
@@ -640,7 +718,7 @@ def update_product_file_sizes(data: Dict[str, Any], limit: Optional[int] = None,
                             if resource_id not in updated_products_by_resource:
                                 updated_products_by_resource[resource_id] = []
                             updated_products_by_resource[resource_id].append(product.copy())
-                            
+
             except Exception as e:
                 safe_print(f"❌ Error processing URL task: {e}")
                 failed_products += 1
@@ -719,7 +797,7 @@ def main():
 
     # Update file sizes
     updated_data, updated_products_by_resource = update_product_file_sizes(
-        data, limit=args.limit, cache=cache, ignore_cache=args.ignore_cache, 
+        data, limit=args.limit, cache=cache, ignore_cache=args.ignore_cache,
         clean_warnings_only=args.clean_warnings_only, max_workers=args.max_workers)
 
     # Write file sizes back to resource files (unless disabled or in dry-run mode)
