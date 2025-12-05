@@ -812,209 +812,259 @@ products:
   secondary_source:
   - kg-monarch
   warnings: []
-- category: DataProduct
+- category: Product
   description: All associations from the Monarch Knowledge Graph in TSV format
   format: tsv
   id: kg-monarch.associations.all
   name: All Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Causal gene to disease associations
   format: tsv
   id: kg-monarch.associations.causal_gene_to_disease
   name: Causal Gene to Disease Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/causal_gene_to_disease_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Chemical or drug or treatment to disease or phenotypic feature associations
   format: tsv
   id: kg-monarch.associations.chemical_or_drug_to_disease
   name: Chemical/Drug/Treatment to Disease/Phenotypic Feature Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/chemical_or_drug_or_treatment_to_disease_or_phenotypic_feature_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Chemical to disease or phenotypic feature associations
   format: tsv
   id: kg-monarch.associations.chemical_to_disease
   name: Chemical to Disease/Phenotypic Feature Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/chemical_to_disease_or_phenotypic_feature_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Chemical to pathway associations
   format: tsv
   id: kg-monarch.associations.chemical_to_pathway
   name: Chemical to Pathway Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/chemical_to_pathway_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Correlated gene to disease associations
   format: tsv
   id: kg-monarch.associations.correlated_gene_to_disease
   name: Correlated Gene to Disease Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/correlated_gene_to_disease_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Disease or phenotypic feature to genetic inheritance associations
   format: tsv
   id: kg-monarch.associations.disease_to_inheritance
   name: Disease/Phenotypic Feature to Genetic Inheritance Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/disease_or_phenotypic_feature_to_genetic_inheritance_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Disease or phenotypic feature to location associations
   format: tsv
   id: kg-monarch.associations.disease_to_location
   name: Disease/Phenotypic Feature to Location Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/disease_or_phenotypic_feature_to_location_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Disease to phenotypic feature associations
   format: tsv
   id: kg-monarch.associations.disease_to_phenotype
   name: Disease to Phenotypic Feature Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/disease_to_phenotypic_feature_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Gene to expression site associations
   format: tsv
   id: kg-monarch.associations.gene_to_expression_site
   name: Gene to Expression Site Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/gene_to_expression_site_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Gene to gene homology associations
   format: tsv
   id: kg-monarch.associations.gene_to_gene_homology
   name: Gene to Gene Homology Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/gene_to_gene_homology_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Gene to pathway associations
   format: tsv
   id: kg-monarch.associations.gene_to_pathway
   name: Gene to Pathway Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/gene_to_pathway_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Gene to phenotypic feature associations
   format: tsv
   id: kg-monarch.associations.gene_to_phenotype
   name: Gene to Phenotypic Feature Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/gene_to_phenotypic_feature_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Genotype to disease associations
   format: tsv
   id: kg-monarch.associations.genotype_to_disease
   name: Genotype to Disease Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/genotype_to_disease_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Genotype to gene associations
   format: tsv
   id: kg-monarch.associations.genotype_to_gene
   name: Genotype to Gene Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/genotype_to_gene_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Genotype to phenotypic feature associations
   format: tsv
   id: kg-monarch.associations.genotype_to_phenotype
   name: Genotype to Phenotypic Feature Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/genotype_to_phenotypic_feature_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Genotype to variant associations
   format: tsv
   id: kg-monarch.associations.genotype_to_variant
   name: Genotype to Variant Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/genotype_to_variant_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Macromolecular machine to biological process associations
   format: tsv
   id: kg-monarch.associations.macromolecular_machine_to_biological_process
   name: Macromolecular Machine to Biological Process Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/macromolecular_machine_to_biological_process_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Macromolecular machine to cellular component associations
   format: tsv
   id: kg-monarch.associations.macromolecular_machine_to_cellular_component
   name: Macromolecular Machine to Cellular Component Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/macromolecular_machine_to_cellular_component_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Macromolecular machine to molecular activity associations
   format: tsv
   id: kg-monarch.associations.macromolecular_machine_to_molecular_activity
   name: Macromolecular Machine to Molecular Activity Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/macromolecular_machine_to_molecular_activity_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Pairwise gene to gene interaction associations
   format: tsv
   id: kg-monarch.associations.pairwise_gene_to_gene_interaction
   name: Pairwise Gene to Gene Interaction Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/pairwise_gene_to_gene_interaction.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Variant to disease associations
   format: tsv
   id: kg-monarch.associations.variant_to_disease
   name: Variant to Disease Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/variant_to_disease_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Variant to gene associations
   format: tsv
   id: kg-monarch.associations.variant_to_gene
   name: Variant to Gene Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/variant_to_gene_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Variant to phenotypic feature associations
   format: tsv
   id: kg-monarch.associations.variant_to_phenotype
   name: Variant to Phenotypic Feature Associations
   original_source:
   - kg-monarch
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/variant_to_phenotypic_feature_association.all.tsv.gz
-- category: DataProduct
+- category: Product
   description: Phenio SQLite database in SemSQL format for ontology queries
   format: sqlite
   id: kg-monarch.phenio.semsql
   name: Phenio SQLite (SemSQL)
   original_source:
   - phenio
+  secondary_source:
+  - kg-monarch
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/phenio.db.gz
-- category: DataProduct
+- category: Product
+  compression: targz
   description: Solr index data for the Monarch Knowledge Graph search functionality
-  format: tar.gz
   id: kg-monarch.solr
   name: Solr Data
   original_source:
