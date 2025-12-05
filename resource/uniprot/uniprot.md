@@ -102,7 +102,7 @@ products:
     header found
   - File was not able to be retrieved when checked on 2025-12-04_ No Content-Length
     header found
-  - 'File was not able to be retrieved when checked on 2025-12-04: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-05: No Content-Length
     header found'
 - category: MappingProduct
   description: Tab-delimited file with the PomBase systematic identifier for each
@@ -153,7 +153,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-13_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -658,7 +658,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 403 error
     when accessing file'
 - category: Product
   description: UniProt IDs for all targets in TTD

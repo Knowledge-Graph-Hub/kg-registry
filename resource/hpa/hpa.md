@@ -73,8 +73,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Pathology data including cancer tissue expression and patient survival
     information
@@ -85,12 +85,12 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Subcellular localization data based on immunofluorescent staining of
     human cell lines
@@ -101,12 +101,12 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+    when accessing file'
 - category: Product
   description: RNA expression data in human tissues based on transcriptomic analysis
   format: tsv
@@ -118,8 +118,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+    when accessing file'
 - category: Product
   description: RNA expression data in human cell lines based on RNA-seq analysis
   format: tsv
@@ -129,12 +129,12 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Single cell expression data from human tissues based on scRNA-seq analysis
   format: tsv
@@ -146,8 +146,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Brain-specific expression data including regional and cellular distribution
   format: tsv
@@ -159,8 +159,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Blood protein expression data from healthy individuals and disease
     states
@@ -173,8 +173,8 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
-    to URL'
+  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+    when accessing file'
 - category: Product
   description: Immune cell expression data from single cell transcriptomics studies
   format: tsv
@@ -184,12 +184,12 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-04: Timeout connecting
-    to URL'
+  - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+    when accessing file'
 - category: ProgrammingInterface
   description: Programmatic access to individual protein entries in XML format via
     Ensembl ID

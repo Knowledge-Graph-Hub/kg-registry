@@ -10,7 +10,7 @@ warnings:
   accessing file
 - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
   to URL
-- File was not able to be retrieved when checked on 2025-11-17_ Timeout connecting
+- File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
   to URL
 layout: product_detail
 ---

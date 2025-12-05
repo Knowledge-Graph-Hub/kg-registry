@@ -110,7 +110,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-11-06_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 403 error
     when accessing file'
 - category: Product
   description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)

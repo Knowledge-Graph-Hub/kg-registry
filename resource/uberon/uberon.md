@@ -31,28 +31,28 @@ products:
   format: owl
   id: uberon.owl
   name: Uberon
-  product_file_size: 97224372
+  product_file_size: 97323970
   product_url: http://purl.obolibrary.org/obo/uberon.owl
 - category: OntologyProduct
   description: Axioms defined within Uberon and to be used in imports for other ontologies
   format: owl
   id: uberon.uberon-base.owl
   name: Uberon base ontology
-  product_file_size: 56706620
+  product_file_size: 56683591
   product_url: http://purl.obolibrary.org/obo/uberon/uberon-base.owl
 - category: OntologyProduct
   description: Uberon edition that excludes external ontologies and most relations
   format: obo
   id: uberon.uberon-basic.obo
   name: Uberon basic
-  product_file_size: 11940815
+  product_file_size: 11928512
   product_url: http://purl.obolibrary.org/obo/uberon/uberon-basic.obo
 - category: OntologyProduct
   description: Uberon plus all metazoan ontologies
   format: owl
   id: uberon.collected-metazoan.owl
   name: Uberon collected metazoan ontology
-  product_file_size: 283580590
+  product_file_size: 283766409
   product_url: http://purl.obolibrary.org/obo/uberon/collected-metazoan.owl
 - category: OntologyProduct
   description: Uberon and all metazoan ontologies with redundant species-specific
@@ -60,14 +60,14 @@ products:
   format: owl
   id: uberon.composite-metazoan.owl
   name: Uberon composite metazoan ontology
-  product_file_size: 258429505
+  product_file_size: 258612004
   product_url: http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl
 - category: OntologyProduct
   description: Uberon composite vertebrate ontology
   format: owl
   id: uberon.composite-vertebrate.owl
   name: Uberon composite vertebrate ontology
-  product_file_size: 125490960
+  product_file_size: 125673982
   product_url: http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG

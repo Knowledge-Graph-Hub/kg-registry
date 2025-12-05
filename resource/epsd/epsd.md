@@ -47,10 +47,6 @@ products:
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
     certificate verify failed_ certificate has expired (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
-    with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ certificate has expired (_ssl.c_1000)')))
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -61,6 +57,10 @@ products:
     exceeded with url: / (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
     object at 0x7fe0f52798d0>: Failed to establish a new connection: [Errno 111] Connection
     refused''))'
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
+    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
+    with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
+    certificate verify failed_ certificate has expired (_ssl.c_1000)')))
 - category: Browser
   description: Browse phosphorylation sites by species across 223 eukaryotes including
     95 animals, 20 protists, 61 plants, and 48 fungi
@@ -75,10 +75,6 @@ products:
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
     certificate verify failed_ certificate has expired (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
-    with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ certificate has expired (_ssl.c_1000)')))
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -89,6 +85,10 @@ products:
     exceeded with url: / (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
     object at 0x7fe0f79e7820>: Failed to establish a new connection: [Errno 111] Connection
     refused''))'
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
+    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
+    with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
+    certificate verify failed_ certificate has expired (_ssl.c_1000)')))
 - category: Search
   description: Advanced search interface supporting substrate search, peptide search,
     batch search, BLAST search, and multi-condition queries
@@ -103,10 +103,6 @@ products:
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
     certificate verify failed_ certificate has expired (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
-    with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
-    certificate verify failed_ certificate has expired (_ssl.c_1000)')))
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -117,6 +113,10 @@ products:
     exceeded with url: / (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
     object at 0x7fe0f1bcc430>: Failed to establish a new connection: [Errno 111] Connection
     refused''))'
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
+    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
+    with url_ / (Caused by SSLError(SSLCertVerificationError(1, '[SSL_ CERTIFICATE_VERIFY_FAILED]
+    certificate verify failed_ certificate has expired (_ssl.c_1000)')))
 - category: Download
   description: Download page for complete phosphorylation site datasets and annotation
     data from EPSD 2.0
@@ -133,11 +133,6 @@ products:
     with url_ /Download.php (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
     CERTIFICATE_VERIFY_FAILED] certificate verify failed_ certificate has expired
     (_ssl.c_1017)')))
-  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
-    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
-    with url_ /Download.php (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
-    CERTIFICATE_VERIFY_FAILED] certificate verify failed_ certificate has expired
-    (_ssl.c_1000)')))
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
     with url_ /Download.php (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection
@@ -148,6 +143,11 @@ products:
     exceeded with url: /Download.php (Caused by NewConnectionError(''<urllib3.connection.HTTPSConnection
     object at 0x7fe0f79e4df0>: Failed to establish a new connection: [Errno 111] Connection
     refused''))'
+  - File was not able to be retrieved when checked on 2025-11-25_ Error connecting
+    to URL_ HTTPSConnectionPool(host='epsd.biocuckoo.cn', port=443)_ Max retries exceeded
+    with url_ /Download.php (Caused by SSLError(SSLCertVerificationError(1, '[SSL_
+    CERTIFICATE_VERIFY_FAILED] certificate verify failed_ certificate has expired
+    (_ssl.c_1000)')))
 - category: GraphicalInterface
   description: Interactive web interface for exploring and visualizing kinase-substrate
     interactions

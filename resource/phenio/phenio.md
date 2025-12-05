@@ -41,7 +41,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-04: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   compatibility:
@@ -824,6 +824,17 @@ products:
   - biolink:treats_or_applied_or_studied_to_treat
   product_file_size: 349573789
   product_url: https://data.monarchinitiative.org/monarch-kg/latest/monarch-kg_nodes.neo4j.csv
+  secondary_source:
+  - kg-monarch
+- category: Product
+  description: Phenio SQLite database in SemSQL format for ontology queries
+  format: sqlite
+  id: kg-monarch.phenio.semsql
+  name: Phenio SQLite (SemSQL)
+  original_source:
+  - phenio
+  product_file_size: 3425435914
+  product_url: https://data.monarchinitiative.org/monarch-kg/latest/phenio.db.gz
   secondary_source:
   - kg-monarch
 repository: https://github.com/monarch-initiative/phenio

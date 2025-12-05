@@ -10,6 +10,8 @@ warnings:
   accessing file
 - File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
   to URL
+- File was not able to be retrieved when checked on 2025-12-04_ Timeout connecting
+  to URL
 - File was not able to be retrieved when checked on 2025-11-10_ HTTP 403 error when
   accessing file
 layout: product_detail
