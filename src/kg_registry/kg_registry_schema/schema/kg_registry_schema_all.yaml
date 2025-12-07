@@ -886,6 +886,7 @@ slots:
     identifier: true
     domain_of:
     - NamedThing
+    - Organization
     - Resource
     - KnowledgeGraph
     - DataSource
@@ -998,6 +999,7 @@ slots:
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     domain_of:
     - NamedThing
+    - Organization
     - Resource
     - KnowledgeGraph
     - DataSource
@@ -1051,6 +1053,7 @@ slots:
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     domain_of:
     - NamedThing
+    - Organization
     - Resource
     - KnowledgeGraph
     - DataSource
@@ -1077,6 +1080,7 @@ slots:
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     domain_of:
     - NamedThing
+    - Organization
     - Resource
     - KnowledgeGraph
     - DataSource
@@ -1121,6 +1125,7 @@ classes:
         owner: NamedThing
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -1246,6 +1251,7 @@ classes:
         owner: NamedThing
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -1274,6 +1280,7 @@ classes:
         owner: NamedThing
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -1302,6 +1309,7 @@ classes:
         owner: NamedThing
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -1448,6 +1456,7 @@ classes:
         domain_of:
         - Resource
         - Product
+        - Organization
         - Usage
         - KnowledgeGraph
         - DataSource
@@ -1464,6 +1473,7 @@ classes:
         owner: Resource
         domain_of:
         - Resource
+        - Organization
         - KnowledgeGraph
         - DataSource
         - DataModel
@@ -1728,6 +1738,7 @@ classes:
         owner: Resource
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -1853,6 +1864,7 @@ classes:
         owner: Resource
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -1882,6 +1894,7 @@ classes:
         owner: Resource
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -1910,6 +1923,7 @@ classes:
         owner: Resource
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -2026,6 +2040,7 @@ classes:
         domain_of:
         - Resource
         - Product
+        - Organization
         - Usage
         - KnowledgeGraph
         - DataSource
@@ -2042,6 +2057,7 @@ classes:
         owner: KnowledgeGraph
         domain_of:
         - Resource
+        - Organization
         - KnowledgeGraph
         - DataSource
         - DataModel
@@ -2306,6 +2322,7 @@ classes:
         owner: KnowledgeGraph
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -2431,6 +2448,7 @@ classes:
         owner: KnowledgeGraph
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -2460,6 +2478,7 @@ classes:
         owner: KnowledgeGraph
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -2488,6 +2507,7 @@ classes:
         owner: KnowledgeGraph
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -2550,6 +2570,7 @@ classes:
         domain_of:
         - Resource
         - Product
+        - Organization
         - Usage
         - KnowledgeGraph
         - DataSource
@@ -2566,6 +2587,7 @@ classes:
         owner: DataSource
         domain_of:
         - Resource
+        - Organization
         - KnowledgeGraph
         - DataSource
         - DataModel
@@ -2830,6 +2852,7 @@ classes:
         owner: DataSource
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -2955,6 +2978,7 @@ classes:
         owner: DataSource
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -2984,6 +3008,7 @@ classes:
         owner: DataSource
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -3012,6 +3037,7 @@ classes:
         owner: DataSource
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -3077,6 +3103,7 @@ classes:
         domain_of:
         - Resource
         - Product
+        - Organization
         - Usage
         - KnowledgeGraph
         - DataSource
@@ -3093,6 +3120,7 @@ classes:
         owner: DataModel
         domain_of:
         - Resource
+        - Organization
         - KnowledgeGraph
         - DataSource
         - DataModel
@@ -3357,6 +3385,7 @@ classes:
         owner: DataModel
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -3482,6 +3511,7 @@ classes:
         owner: DataModel
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -3511,6 +3541,7 @@ classes:
         owner: DataModel
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -3539,6 +3570,7 @@ classes:
         owner: DataModel
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -3604,6 +3636,7 @@ classes:
         domain_of:
         - Resource
         - Product
+        - Organization
         - Usage
         - KnowledgeGraph
         - DataSource
@@ -3620,6 +3653,7 @@ classes:
         owner: Ontology
         domain_of:
         - Resource
+        - Organization
         - KnowledgeGraph
         - DataSource
         - DataModel
@@ -3884,6 +3918,7 @@ classes:
         owner: Ontology
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -4009,6 +4044,7 @@ classes:
         owner: Ontology
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -4038,6 +4074,7 @@ classes:
         owner: Ontology
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -4066,6 +4103,7 @@ classes:
         owner: Ontology
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -4130,6 +4168,7 @@ classes:
         domain_of:
         - Resource
         - Product
+        - Organization
         - Usage
         - KnowledgeGraph
         - DataSource
@@ -4146,6 +4185,7 @@ classes:
         owner: Aggregator
         domain_of:
         - Resource
+        - Organization
         - KnowledgeGraph
         - DataSource
         - DataModel
@@ -4410,6 +4450,7 @@ classes:
         owner: Aggregator
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -4535,6 +4576,7 @@ classes:
         owner: Aggregator
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -4564,6 +4606,7 @@ classes:
         owner: Aggregator
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -4592,6 +4635,7 @@ classes:
         owner: Aggregator
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -4656,6 +4700,7 @@ classes:
         - Ontology
         - Aggregator
         - Product
+        - Organization
         - Usage
         - GraphProduct
         - DataModelProduct
@@ -5018,6 +5063,7 @@ classes:
         owner: Product
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -5143,6 +5189,7 @@ classes:
         owner: Product
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -5171,6 +5218,7 @@ classes:
         owner: Product
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -5199,6 +5247,7 @@ classes:
         owner: Product
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -5299,6 +5348,7 @@ classes:
         - Ontology
         - Aggregator
         - Product
+        - Organization
         - Usage
         - GraphProduct
         - DataModelProduct
@@ -5661,6 +5711,7 @@ classes:
         owner: GraphProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -5786,6 +5837,7 @@ classes:
         owner: GraphProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -5814,6 +5866,7 @@ classes:
         owner: GraphProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -5842,6 +5895,7 @@ classes:
         owner: GraphProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -5904,6 +5958,7 @@ classes:
         - Ontology
         - Aggregator
         - Product
+        - Organization
         - Usage
         - GraphProduct
         - DataModelProduct
@@ -6266,6 +6321,7 @@ classes:
         owner: DataModelProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -6391,6 +6447,7 @@ classes:
         owner: DataModelProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -6419,6 +6476,7 @@ classes:
         owner: DataModelProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -6447,6 +6505,7 @@ classes:
         owner: DataModelProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -6510,6 +6569,7 @@ classes:
         - Ontology
         - Aggregator
         - Product
+        - Organization
         - Usage
         - GraphProduct
         - DataModelProduct
@@ -6872,6 +6932,7 @@ classes:
         owner: OntologyProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -6997,6 +7058,7 @@ classes:
         owner: OntologyProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -7025,6 +7087,7 @@ classes:
         owner: OntologyProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -7053,6 +7116,7 @@ classes:
         owner: OntologyProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -7116,6 +7180,7 @@ classes:
         - Ontology
         - Aggregator
         - Product
+        - Organization
         - Usage
         - GraphProduct
         - DataModelProduct
@@ -7478,6 +7543,7 @@ classes:
         owner: MappingProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -7603,6 +7669,7 @@ classes:
         owner: MappingProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -7631,6 +7698,7 @@ classes:
         owner: MappingProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -7659,6 +7727,7 @@ classes:
         owner: MappingProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -7721,6 +7790,7 @@ classes:
         - Ontology
         - Aggregator
         - Product
+        - Organization
         - Usage
         - GraphProduct
         - DataModelProduct
@@ -8083,6 +8153,7 @@ classes:
         owner: ProcessProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -8208,6 +8279,7 @@ classes:
         owner: ProcessProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -8236,6 +8308,7 @@ classes:
         owner: ProcessProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -8264,6 +8337,7 @@ classes:
         owner: ProcessProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -8327,6 +8401,7 @@ classes:
         - Ontology
         - Aggregator
         - Product
+        - Organization
         - Usage
         - GraphProduct
         - DataModelProduct
@@ -8689,6 +8764,7 @@ classes:
         owner: GraphicalInterface
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -8814,6 +8890,7 @@ classes:
         owner: GraphicalInterface
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -8842,6 +8919,7 @@ classes:
         owner: GraphicalInterface
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -8870,6 +8948,7 @@ classes:
         owner: GraphicalInterface
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -8961,6 +9040,7 @@ classes:
         - Ontology
         - Aggregator
         - Product
+        - Organization
         - Usage
         - GraphProduct
         - DataModelProduct
@@ -9323,6 +9403,7 @@ classes:
         owner: ProgrammingInterface
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -9448,6 +9529,7 @@ classes:
         owner: ProgrammingInterface
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -9476,6 +9558,7 @@ classes:
         owner: ProgrammingInterface
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -9504,6 +9587,7 @@ classes:
         owner: ProgrammingInterface
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -9567,6 +9651,7 @@ classes:
         - Ontology
         - Aggregator
         - Product
+        - Organization
         - Usage
         - GraphProduct
         - DataModelProduct
@@ -9929,6 +10014,7 @@ classes:
         owner: DocumentationProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -10054,6 +10140,7 @@ classes:
         owner: DocumentationProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -10082,6 +10169,7 @@ classes:
         owner: DocumentationProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -10110,6 +10198,7 @@ classes:
         owner: DocumentationProduct
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -10259,6 +10348,11 @@ classes:
     description: An organization.
     from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
     is_a: Contact
+    slots:
+    - id
+    - layout
+    - creation_date
+    - last_modified_date
     attributes:
       label:
         name: label
@@ -10273,6 +10367,186 @@ classes:
         - License
         - Usage
         range: string
+      short_id:
+        name: short_id
+        description: A short identifier for the organization. This may be an acronym
+          or abbreviation.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: short_id
+        owner: Organization
+        domain_of:
+        - Organization
+        range: string
+      description:
+        name: description
+        description: A description of the organization.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: description
+        owner: Organization
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        - DocumentationProduct
+        - Organization
+        - Usage
+        range: string
+      homepage_url:
+        name: homepage_url
+        description: The homepage URL of the organization.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: homepage_url
+        owner: Organization
+        domain_of:
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Organization
+        range: uriorcurie
+      github_url:
+        name: github_url
+        description: The GitHub URL of the organization.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: github_url
+        owner: Organization
+        domain_of:
+        - Organization
+        range: uriorcurie
+      id:
+        name: id
+        description: The identifier of an entity. This is used to identify it within
+          the registry.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        slot_uri: dcterms:identifier
+        identifier: true
+        alias: id
+        owner: Organization
+        domain_of:
+        - NamedThing
+        - Organization
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        - DocumentationProduct
+        - FundingSource
+        - License
+        - Publication
+        range: string
+        required: true
+      layout:
+        name: layout
+        description: The layout of the entity. This is used to determine how to display
+          the entity in the web interface. For resources, this is generally 'resource_detail'.
+          For products, this is generally 'product_detail'. If a value for this slot
+          is not specified, pages won't contain anything from their header metadata.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: layout
+        owner: Organization
+        domain_of:
+        - NamedThing
+        - Organization
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        - DocumentationProduct
+        - FundingSource
+        - License
+        - Publication
+        range: string
+      creation_date:
+        name: creation_date
+        description: The date the entry was created. This is used to determine the
+          age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: creation_date
+        owner: Organization
+        domain_of:
+        - NamedThing
+        - Organization
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        - DocumentationProduct
+        - FundingSource
+        - License
+        - Publication
+        range: datetime
+      last_modified_date:
+        name: last_modified_date
+        description: The date the entry was last modified. It should be in ISO 8601
+          format, e.g., 2024-02-12T00:00:00Z.
+        from_schema: https://w3id.org/knowledge-graph-hub/kg_registry_schema
+        alias: last_modified_date
+        owner: Organization
+        domain_of:
+        - NamedThing
+        - Organization
+        - Resource
+        - KnowledgeGraph
+        - DataSource
+        - DataModel
+        - Ontology
+        - Aggregator
+        - Product
+        - GraphProduct
+        - DataModelProduct
+        - OntologyProduct
+        - MappingProduct
+        - ProcessProduct
+        - GraphicalInterface
+        - ProgrammingInterface
+        - DocumentationProduct
+        - FundingSource
+        - License
+        - Publication
+        range: datetime
       category:
         name: category
         description: The category of the entity. This should be identical to its class
@@ -10350,6 +10624,7 @@ classes:
         owner: FundingSource
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -10475,6 +10750,7 @@ classes:
         owner: FundingSource
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -10503,6 +10779,7 @@ classes:
         owner: FundingSource
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -10531,6 +10808,7 @@ classes:
         owner: FundingSource
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -10591,6 +10869,7 @@ classes:
         owner: License
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -10716,6 +10995,7 @@ classes:
         owner: License
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -10744,6 +11024,7 @@ classes:
         owner: License
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -10772,6 +11053,7 @@ classes:
         owner: License
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -10865,6 +11147,7 @@ classes:
         owner: Publication
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -10990,6 +11273,7 @@ classes:
         owner: Publication
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -11018,6 +11302,7 @@ classes:
         owner: Publication
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -11046,6 +11331,7 @@ classes:
         owner: Publication
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -11106,6 +11392,7 @@ classes:
         - GraphicalInterface
         - ProgrammingInterface
         - DocumentationProduct
+        - Organization
         - Usage
         range: string
       url:
@@ -11167,6 +11454,7 @@ classes:
         owner: Usage
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -11292,6 +11580,7 @@ classes:
         owner: Usage
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -11320,6 +11609,7 @@ classes:
         owner: Usage
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource
@@ -11348,6 +11638,7 @@ classes:
         owner: Usage
         domain_of:
         - NamedThing
+        - Organization
         - Resource
         - KnowledgeGraph
         - DataSource

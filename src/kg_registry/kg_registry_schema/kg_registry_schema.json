@@ -1410,15 +1410,11 @@
                     "type": "string"
                 },
                 "label": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/Organization"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ],
-                    "description": "The organization providing the funding."
+                    "description": "The organization providing the funding.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "last_modified_date": {
                     "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
@@ -3113,14 +3109,72 @@
                         "null"
                     ]
                 },
+                "creation_date": {
+                    "description": "The date the entry was created. This is used to determine the age of the entity. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "A description of the organization.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "github_url": {
+                    "description": "The GitHub URL of the organization.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "homepage_url": {
+                    "description": "The homepage URL of the organization.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "The identifier of an entity. This is used to identify it within the registry.",
+                    "type": "string"
+                },
                 "label": {
                     "description": "The name of the organization.",
                     "type": [
                         "string",
                         "null"
                     ]
+                },
+                "last_modified_date": {
+                    "description": "The date the entry was last modified. It should be in ISO 8601 format, e.g., 2024-02-12T00:00:00Z.",
+                    "format": "date-time",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "layout": {
+                    "description": "The layout of the entity. This is used to determine how to display the entity in the web interface. For resources, this is generally 'resource_detail'. For products, this is generally 'product_detail'. If a value for this slot is not specified, pages won't contain anything from their header metadata.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "short_id": {
+                    "description": "A short identifier for the organization. This may be an acronym or abbreviation.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 }
             },
+            "required": [
+                "id"
+            ],
             "title": "Organization",
             "type": "object"
         },

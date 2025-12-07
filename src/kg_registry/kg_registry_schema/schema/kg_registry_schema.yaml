@@ -510,6 +510,11 @@ classes:
     description: >-
       An organization.
     is_a: Contact
+    slots:
+      - id
+      - layout
+      - creation_date
+      - last_modified_date
     attributes:
       label:
         description: >-
