@@ -1,0 +1,160 @@
+---
+layout: default
+---
+
+<div class="row">
+  <h1>
+    <i class="bi bi-building"></i> {{ page.label }}
+    {% if page.short_id %}
+    <small class="text-muted">({{ page.short_id }})</small>
+    {% endif %}
+  </h1>
+
+  <p>is an <strong><em>Organization.</em></strong></p>
+
+  {% if page.description %}
+  <p style="max-width: 72rem">{{ page.description }}</p>
+  {% endif %}
+</div>
+
+<div class="col">
+  <div class="row">
+    <div class="row header-card-row">
+      {% if page.homepage_url %}
+      <div class="card bg-light mb-3" style="max-width: 12rem;">
+        <div class="card-body">
+          <h5 class="card-title">Homepage</h5>
+          <p class="card-text"><a href="{{ page.homepage_url }}"><i class="bi bi-globe"></i> Website</a></p>
+        </div>
+      </div>
+      {% endif %}
+      {% if page.github_url %}
+      <div class="card bg-light mb-3" style="max-width: 12rem;">
+        <div class="card-body">
+          <h5 class="card-title">GitHub</h5>
+          <p class="card-text"><a href="{{ page.github_url }}"><i class="bi bi-github"></i> GitHub</a></p>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+
+    {% if page.warnings %}
+    {% for warning in page.warnings %}
+    <div class="alert alert-warning" style="max-width: 72rem" role="alert">
+      ⚠ {{ warning }}
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    {% if page.contact_details %}
+    <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem" id="contact-details">
+      <div class="card-header">
+        <h4><i class="bi bi-envelope"></i> Contact Details</h4>
+      </div>
+      <div class="list-group list-group-flush">
+        {% for detail in page.contact_details %}
+        <div class="list-group-item">
+          {% if detail.contact_type == 'email' %}
+          <p><i class="bi bi-envelope"></i> <strong>Email: </strong><a href="mailto:{{ detail.value }}">{{ detail.value }}</a></p>
+          {% elsif detail.contact_type == 'github' %}
+          <p><i class="bi bi-github"></i> <strong>GitHub: </strong><a href="https://github.com/{{ detail.value }}">{{ detail.value }}</a></p>
+          {% elsif detail.contact_type == 'url' %}
+          <p><i class="bi bi-link-45deg"></i> <strong>URL: </strong><a href="{{ detail.value }}">{{ detail.value }}</a></p>
+          {% else %}
+          {% if detail.contact_type_url %}
+          <p><i class="bi bi-link"></i> <strong>{{ detail.contact_type_name | default: detail.contact_type }}: </strong>{{ detail.value }} (<a href="{{ detail.contact_type_url }}">site</a>)</p>
+          {% else %}
+          <p><i class="bi bi-link"></i> <strong>{{ detail.contact_type_name | default: detail.contact_type }}: </strong>{{ detail.value }}</p>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    {%- comment -%}
+    Find all resources where this organization is listed as a contact or curator
+    {%- endcomment -%}
+    {% assign associated_resources = "" | split: "" %}
+    {% for resource_page in site.pages %}
+      {% if resource_page.layout == "resource_detail" %}
+        {% assign found = false %}
+        {% if resource_page.contacts %}
+          {% for c in resource_page.contacts %}
+            {% if c.category == "Organization" and c.label == page.label %}
+              {% assign found = true %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+        {% unless found %}
+          {% if resource_page.curators %}
+            {% for c in resource_page.curators %}
+              {% if c.category == "Organization" and c.label == page.label %}
+                {% assign found = true %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endunless %}
+        {% if found %}
+          {% assign associated_resources = associated_resources | push: resource_page %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if associated_resources.size > 0 %}
+    <div class="card px-0" style="margin-bottom: 1.5em; max-width: 72rem" id="associated-resources">
+      <div class="card-header">
+        <h4><i class="bi bi-archive"></i> Associated Resources</h4>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-striped mb-0">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for r in associated_resources %}
+            <tr>
+              <td><a href="{{ r.url | relative_url }}">{{ r.id }}</a></td>
+              <td>{{ r.name }}</td>
+              <td>{{ r.category }}</td>
+              <td>{{ r.description | truncate: 60 }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="row">
+    <h4>
+      Is this information incorrect or incomplete? <a
+        href="https://github.com/Knowledge-Graph-Hub/kg-registry/issues/new?template=update-resource.yml">Request an
+        update.</a>
+    </h4>
+  </div>
+
+  {% if page.creation_date or page.last_modified_date %}
+  <div class="row">
+    <p class="text-muted small" style="margin-top: 1em;">
+      {% if page.creation_date %}
+      <span title="Date this entry was created">Created: {{ page.creation_date | date: "%B %d, %Y" }}</span>
+      {% endif %}
+      {% if page.creation_date and page.last_modified_date %} | {% endif %}
+      {% if page.last_modified_date %}
+      <span title="Date this entry was last updated">Last modified: {{ page.last_modified_date | date: "%B %d, %Y" }}</span>
+      {% endif %}
+    </p>
+  </div>
+  {% endif %}
+
+</div>
