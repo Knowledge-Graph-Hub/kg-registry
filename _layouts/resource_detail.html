@@ -210,12 +210,16 @@ layout: default
           {% endfor %}
           {% endif %}
 
-          {%- comment -%}Check if this is an Organization with a corresponding org page{%- endcomment -%}
+          {%- comment -%}Check if this is an Organization with a corresponding org page.
+          Match by either label or id to handle cases where the contact label
+          is a team name but the id references the parent organization.{%- endcomment -%}
           {% if c.category == 'Organization' %}
           {% for org in site.pages %}
-            {% if org.layout == 'organization_detail' and org.label == c.label %}
-              {% assign org_page = org %}
-              {% break %}
+            {% if org.layout == 'organization_detail' %}
+              {% if org.label == c.label or org.label == c.id or org.id == c.id or org.id == c.label %}
+                {% assign org_page = org %}
+                {% break %}
+              {% endif %}
             {% endif %}
           {% endfor %}
           {% endif %}
@@ -237,6 +241,10 @@ layout: default
 
           {% if github %}
           <p><strong>Github: </strong><a href="https://github.com/{{ github }}">{{ github }}</a></p>
+          {% endif %}
+
+          {% if email and org_page %}
+          <p><strong>Email: </strong><a href="mailto:{{ email }}">{{ email }}</a></p>
           {% endif %}
 
           {% if url %}
@@ -568,12 +576,16 @@ layout: default
           {% endfor %}
           {% endif %}
 
-          {%- comment -%}Check if this is an Organization with a corresponding org page{%- endcomment -%}
+          {%- comment -%}Check if this is an Organization with a corresponding org page.
+          Match by either label or id to handle cases where the contact label
+          is a team name but the id references the parent organization.{%- endcomment -%}
           {% if c.category == 'Organization' %}
           {% for org in site.pages %}
-            {% if org.layout == 'organization_detail' and org.label == c.label %}
-              {% assign org_page = org %}
-              {% break %}
+            {% if org.layout == 'organization_detail' %}
+              {% if org.label == c.label or org.label == c.id or org.id == c.id or org.id == c.label %}
+                {% assign org_page = org %}
+                {% break %}
+              {% endif %}
             {% endif %}
           {% endfor %}
           {% endif %}
@@ -595,6 +607,10 @@ layout: default
 
           {% if github %}
           <p><strong>Github: </strong><a href="https://github.com/{{ github }}">{{ github }}</a></p>
+          {% endif %}
+
+          {% if email and org_page %}
+          <p><strong>Email: </strong><a href="mailto:{{ email }}">{{ email }}</a></p>
           {% endif %}
 
           {% if url %}

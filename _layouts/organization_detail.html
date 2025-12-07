@@ -74,25 +74,31 @@ layout: default
     {% endif %}
 
     {%- comment -%}
-    Find all resources where this organization is listed as a contact or curator
+    Find all resources where this organization is listed as a contact or curator.
+    Match by either label or id to handle cases where the contact label
+    is a team name but the id references the parent organization.
     {%- endcomment -%}
     {% assign associated_resources = "" | split: "" %}
     {% for resource in site.resources %}
       {% assign found = false %}
       {% if resource.contacts %}
         {% for c in resource.contacts %}
-          {% if c.category == "Organization" and c.label == page.label %}
-            {% assign found = true %}
-            {% break %}
+          {% if c.category == "Organization" %}
+            {% if c.label == page.label or c.label == page.id or c.id == page.id or c.id == page.label %}
+              {% assign found = true %}
+              {% break %}
+            {% endif %}
           {% endif %}
         {% endfor %}
       {% endif %}
       {% unless found %}
         {% if resource.curators %}
           {% for c in resource.curators %}
-            {% if c.category == "Organization" and c.label == page.label %}
-              {% assign found = true %}
-              {% break %}
+            {% if c.category == "Organization" %}
+              {% if c.label == page.label or c.label == page.id or c.id == page.id or c.id == page.label %}
+                {% assign found = true %}
+                {% break %}
+              {% endif %}
             {% endif %}
           {% endfor %}
         {% endif %}
