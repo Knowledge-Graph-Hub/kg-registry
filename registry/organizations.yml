@@ -1,0 +1,57 @@
+# Combined Organization metadata
+# Auto-generated - do not edit directly
+# Edit the individual files in org/ instead
+
+organizations:
+- id: ebi
+  category: Organization
+  layout: organization_detail
+  label: European Bioinformatics Institute
+  short_id: EMBL-EBI
+  description: The European Bioinformatics Institute (EMBL-EBI) is a world-leading
+    research organization and service provider in bioinformatics, hosting and maintaining
+    over 30 major biological databases. EBI provides freely accessible data and tools
+    covering genomics, proteomics, structural biology, systems biology, chemistry,
+    and biomedical data. As part of the European Molecular Biology Laboratory (EMBL),
+    EBI serves as a central hub for life science data, offering both data storage
+    and advanced computational analysis tools to researchers worldwide.
+  homepage_url: https://www.ebi.ac.uk/
+  github_url: https://github.com/ebi-ait
+  contact_details:
+  - contact_type: url
+    value: https://www.ebi.ac.uk/about/contact
+  creation_date: '2025-11-19T00:00:00Z'
+  last_modified_date: '2025-12-07T00:00:00Z'
+- id: monarchinitiative
+  category: Organization
+  layout: organization_detail
+  label: Monarch Initiative
+  short_id: Monarch
+  description: The Monarch Initiative is an international consortium that integrates,
+    aligns, and redistributes cross-species gene, genotype, variant, disease, and
+    phenotype data to improve understanding of genetic disease and support translational
+    research.
+  homepage_url: https://monarchinitiative.org/
+  github_url: https://github.com/monarch-initiative
+  contact_details:
+  - contact_type: email
+    value: info@monarchinitiative.org
+  creation_date: '2025-10-30T00:00:00Z'
+  last_modified_date: '2025-12-07T00:00:00Z'
+- id: nord
+  category: Organization
+  layout: organization_detail
+  label: National Organization for Rare Disorders
+  short_id: NORD
+  description: The National Organization for Rare Disorders (NORD) is a patient advocacy
+    organization dedicated to individuals with rare diseases and the organizations
+    that serve them. NORD maintains a comprehensive database of over 1,200 rare disease
+    reports providing information for patients, families, and medical professionals.
+    NORD also provides assistance programs, research support, and advocates for rare
+    disease policies.
+  homepage_url: https://rarediseases.org/
+  contact_details:
+  - contact_type: email
+    value: orphan@rarediseases.org
+  creation_date: '2025-10-30T00:00:00Z'
+  last_modified_date: '2025-12-07T00:00:00Z'

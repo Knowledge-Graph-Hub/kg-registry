@@ -54,7 +54,7 @@ SCHEMA_DIR = src/kg_registry/kg_registry_schema
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean sync-obo-foundry
 
-all: ingest-kg-monarch sync-obo-foundry _config.yml registry/kgs.jsonld registry/parquet registry/parquet-downloads.html assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js $(SOURCE_SCHEMA_ALL) refresh-schema
+all: ingest-kg-monarch sync-obo-foundry _config.yml registry/kgs.jsonld registry/parquet registry/parquet-downloads.html registry/organizations.yml assets/js/duckdb/duckdb-mvp.wasm assets/js/duckdb/duckdb-browser-mvp.worker.js $(SOURCE_SCHEMA_ALL) refresh-schema
 
 # This is minimal for now, but
 # will be expanded to include other docs
@@ -100,7 +100,7 @@ $(SOURCE_SCHEMA_ALL):
 
 # Remove and/or revert all targets to their repository versions
 clean:
-	rm -Rf registry/kgs.nt registry/kgs.ttl registry/kgs.yml registry/parquet sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
+	rm -Rf registry/kgs.nt registry/kgs.ttl registry/kgs.yml registry/organizations.yml registry/parquet sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
 	git checkout _config.yml registry/kgs.jsonld registry/kgs.yml
 
 clean-schema:
@@ -287,6 +287,14 @@ validate-org-file:
 	  exit 1; \
 	fi
 	@$(RUN) python util/validate-organizations.py "$(FILE)"
+
+##############################
+## Organization Registry    ##
+##############################
+
+# Combine all organization files into a single YAML for download
+registry/organizations.yml: $(ORGANIZATIONS)
+	@$(RUN) python util/combine-organizations.py -o $@
 
 # Create stub Resource pages for infores entries not in KG-Registry
 # Usage: make create-infores-stubs [ARGS="--only-simple --limit 10"]

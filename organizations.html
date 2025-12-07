@@ -1,0 +1,79 @@
+---
+layout: default
+title: Organizations
+---
+
+<div class="row mb-4">
+    <div class="col">
+        <h1 class="display-6">
+            <i class="bi bi-building"></i> Organizations
+            <br/>
+            <small class="text-muted">
+                Organizations associated with Knowledge Graph resources.
+            </small>
+        </h1>
+    </div>
+</div>
+
+<div class="row mb-3">
+    <div class="col">
+        <p>
+            These organizations are involved in the development, maintenance, or curation of knowledge graph resources.
+            Click on an organization to view its details and associated resources.
+        </p>
+    </div>
+</div>
+
+<div class="row mb-3">
+    <div class="col">
+        Download: [ <a href="/kg-registry/registry/organizations.yml">YAML</a> ]
+    </div>
+</div>
+
+<div class="row">
+    {% assign orgs = site.pages | where: "layout", "organization_detail" | sort: "label" %}
+    {% for org in orgs %}
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <a href="{{ org.url | relative_url }}" class="text-decoration-none">
+                        <i class="bi bi-building"></i> {{ org.label }}
+                    </a>
+                    {% if org.short_id %}
+                    <small class="text-muted">({{ org.short_id }})</small>
+                    {% endif %}
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if org.description %}
+                <p class="card-text">{{ org.description | truncate: 150 }}</p>
+                {% endif %}
+            </div>
+            <div class="card-footer bg-transparent">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Quick Access">
+                    <a href="{{ org.url | relative_url }}" class="btn btn-outline-primary" title="View Details">
+                        <i class="bi bi-info-circle"></i> Details
+                    </a>
+                    {% if org.homepage_url %}
+                    <a href="{{ org.homepage_url }}" class="btn btn-outline-secondary" target="_blank" rel="noopener" title="Homepage">
+                        <i class="bi bi-house"></i> Homepage
+                    </a>
+                    {% endif %}
+                    {% if org.github_url %}
+                    <a href="{{ org.github_url }}" class="btn btn-outline-dark" target="_blank" rel="noopener" title="GitHub">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% if orgs.size == 0 %}
+<div class="alert alert-info" role="alert">
+    <i class="bi bi-info-circle"></i> No organizations found. Organizations are being added to the registry.
+</div>
+{% endif %}
