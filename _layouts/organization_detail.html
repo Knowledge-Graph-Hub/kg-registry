@@ -77,30 +77,28 @@ layout: default
     Find all resources where this organization is listed as a contact or curator
     {%- endcomment -%}
     {% assign associated_resources = "" | split: "" %}
-    {% for resource_page in site.pages %}
-      {% if resource_page.layout == "resource_detail" %}
-        {% assign found = false %}
-        {% if resource_page.contacts %}
-          {% for c in resource_page.contacts %}
+    {% for resource in site.resources %}
+      {% assign found = false %}
+      {% if resource.contacts %}
+        {% for c in resource.contacts %}
+          {% if c.category == "Organization" and c.label == page.label %}
+            {% assign found = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      {% unless found %}
+        {% if resource.curators %}
+          {% for c in resource.curators %}
             {% if c.category == "Organization" and c.label == page.label %}
               {% assign found = true %}
               {% break %}
             {% endif %}
           {% endfor %}
         {% endif %}
-        {% unless found %}
-          {% if resource_page.curators %}
-            {% for c in resource_page.curators %}
-              {% if c.category == "Organization" and c.label == page.label %}
-                {% assign found = true %}
-                {% break %}
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-        {% endunless %}
-        {% if found %}
-          {% assign associated_resources = associated_resources | push: resource_page %}
-        {% endif %}
+      {% endunless %}
+      {% if found %}
+        {% assign associated_resources = associated_resources | push: resource %}
       {% endif %}
     {% endfor %}
 
@@ -116,15 +114,17 @@ layout: default
               <th>ID</th>
               <th>Name</th>
               <th>Category</th>
+              <th>Number of Products</th>
               <th>Description</th>
             </tr>
           </thead>
           <tbody>
             {% for r in associated_resources %}
             <tr>
-              <td><a href="{{ r.url | relative_url }}">{{ r.id }}</a></td>
+              <td><a href="{{ site.baseurl }}/resource/{{ r.id }}/{{ r.id }}.html">{{ r.id }}</a></td>
               <td>{{ r.name }}</td>
               <td>{{ r.category }}</td>
+              <td>{% if r.products %}{{ r.products.size }}{% else %}0{% endif %}</td>
               <td>{{ r.description | truncate: 60 }}</td>
             </tr>
             {% endfor %}

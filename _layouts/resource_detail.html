@@ -194,6 +194,7 @@ layout: default
           {% assign github = null %}
           {% assign url = null %}
           {% assign other_details = null %}
+          {% assign org_page = null %}
           {% if c.contact_details %}
           {% assign other_details = false %}
           {% for detail in c.contact_details %}
@@ -209,7 +210,19 @@ layout: default
           {% endfor %}
           {% endif %}
 
-          {% if email %}
+          {%- comment -%}Check if this is an Organization with a corresponding org page{%- endcomment -%}
+          {% if c.category == 'Organization' %}
+          {% for org in site.pages %}
+            {% if org.layout == 'organization_detail' and org.label == c.label %}
+              {% assign org_page = org %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% endif %}
+
+          {% if org_page %}
+          <p><i class="bi bi-building"></i> <a href="{{ org_page.url | relative_url }}">{{c.label}}</a></p>
+          {% elsif email %}
           <p><a href="mailto:{{email}}">{{c.label}}</a></p>
           {% elsif url %}
           <p><a href="{{url}}">{{c.label}}</a></p>
@@ -539,6 +552,7 @@ layout: default
           {% assign github = null %}
           {% assign url = null %}
           {% assign other_details = null %}
+          {% assign org_page = null %}
           {% if c.contact_details %}
           {% assign other_details = false %}
           {% for detail in c.contact_details %}
@@ -554,7 +568,19 @@ layout: default
           {% endfor %}
           {% endif %}
 
-          {% if email %}
+          {%- comment -%}Check if this is an Organization with a corresponding org page{%- endcomment -%}
+          {% if c.category == 'Organization' %}
+          {% for org in site.pages %}
+            {% if org.layout == 'organization_detail' and org.label == c.label %}
+              {% assign org_page = org %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% endif %}
+
+          {% if org_page %}
+          <p><i class="bi bi-building"></i> <a href="{{ org_page.url | relative_url }}">{{c.label}}</a></p>
+          {% elsif email %}
           <p><a href="mailto:{{email}}">{{c.label}}</a></p>
           {% elsif url %}
           <p><a href="{{url}}">{{c.label}}</a></p>
