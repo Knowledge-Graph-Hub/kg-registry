@@ -35,6 +35,9 @@ RUN = poetry run
 # the main registry table
 RESOURCES := $(shell find resource -type f -name '*.md')
 
+# All organization .md files
+ORGANIZATIONS := $(shell find org -type f -name '*.md')
+
 # Path to the source KG-Registry schema
 SOURCE_SCHEMA = src/kg_registry/kg_registry_schema/schema/kg_registry_schema.yaml
 
@@ -261,6 +264,29 @@ populate-infores-dry-run:
 # Force re-download of infores mapping files and populate
 populate-infores-force:
 	$(RUN) python util/populate_infores_ids.py --force-download
+
+##############################
+## Organization Validation  ##
+##############################
+
+.PHONY: validate-orgs validate-org-file
+
+# Validate all organization markdown files
+validate-orgs: $(SOURCE_SCHEMA_ALL)
+	@$(RUN) python util/validate-organizations.py $(ORGANIZATIONS)
+
+# Validate a single organization markdown file
+# Usage: make validate-org-file FILE=org/<name>/<name>.md
+validate-org-file:
+	@if [ -z "$(FILE)" ]; then \
+	  echo "Usage: make validate-org-file FILE=org/<name>/<name>.md"; \
+	  exit 1; \
+	fi
+	@if [ ! -f "$(FILE)" ]; then \
+	  echo "File not found: $(FILE)"; \
+	  exit 1; \
+	fi
+	@$(RUN) python util/validate-organizations.py "$(FILE)"
 
 # Create stub Resource pages for infores entries not in KG-Registry
 # Usage: make create-infores-stubs [ARGS="--only-simple --limit 10"]
