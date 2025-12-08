@@ -645,6 +645,10 @@ class CollectionEnum(str, Enum):
     """
     This entity is an ontology from the OBO Foundry, a collaborative effort to create reference ontologies in the biomedical domain.
     """
+    okn = "okn"
+    """
+    This entity is part of the Prototype Open Knowledge Network (OKN), a knowledge graph network supported by the National Science Foundation (NSF).
+    """
 
 
 

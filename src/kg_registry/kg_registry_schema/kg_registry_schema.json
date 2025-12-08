@@ -248,7 +248,8 @@
                 "aop",
                 "ber",
                 "translator",
-                "obo-foundry"
+                "obo-foundry",
+                "okn"
             ],
             "title": "CollectionEnum",
             "type": "string"

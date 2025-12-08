@@ -1039,4 +1039,9 @@ enums:
           This entity is an ontology from the OBO Foundry,
           a collaborative effort to create reference ontologies
           in the biomedical domain.
-        meaning: https://obofoundry.org/ 
+        meaning: https://obofoundry.org/
+      okn:
+        description: >-
+          This entity is part of the Prototype Open Knowledge Network (OKN),
+          a knowledge graph network supported by the National Science Foundation (NSF).
+        meaning: https://www.proto-okn.net/
