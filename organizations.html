@@ -30,10 +30,54 @@ title: Organizations
     </div>
 </div>
 
-<div class="row">
+<!-- Search and Filter Controls -->
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control" id="org-search" placeholder="Search organizations by name, description, or ID...">
+            <button class="btn btn-outline-secondary" type="button" id="clear-search" title="Clear search">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <select class="form-select" id="org-filter-links">
+            <option value="all">All Organizations</option>
+            <option value="has-homepage">Has Homepage</option>
+            <option value="has-github">Has GitHub</option>
+            <option value="has-both">Has Both</option>
+        </select>
+    </div>
+    <div class="col-md-3">
+        <select class="form-select" id="org-sort">
+            <option value="label-asc">Name (A-Z)</option>
+            <option value="label-desc">Name (Z-A)</option>
+            <option value="id-asc">ID (A-Z)</option>
+            <option value="id-desc">ID (Z-A)</option>
+        </select>
+    </div>
+</div>
+
+<!-- Results Count -->
+<div class="row mb-3">
+    <div class="col">
+        <span id="org-count" class="badge bg-primary" style="font-size: 1rem;">Loading...</span>
+        <span id="org-filter-info" class="ms-2 text-muted"></span>
+    </div>
+</div>
+
+<!-- Organizations Grid -->
+<div class="row" id="org-grid">
     {% assign orgs = site.pages | where: "layout", "organization_detail" | sort: "label" %}
     {% for org in orgs %}
-    <div class="col-md-6 col-lg-4 mb-4">
+    <div class="col-md-6 col-lg-4 mb-4 org-card" 
+         data-label="{{ org.label | downcase }}" 
+         data-id="{{ org.id | downcase }}"
+         data-description="{{ org.description | downcase | default: '' }}"
+         data-short-id="{{ org.short_id | downcase | default: '' }}"
+         data-has-homepage="{{ org.homepage_url | size | at_least: 0 }}"
+         data-has-github="{{ org.github_url | size | at_least: 0 }}">
         <div class="card h-100">
             <div class="card-header">
                 <h5 class="card-title mb-0">
@@ -72,8 +116,162 @@ title: Organizations
     {% endfor %}
 </div>
 
+<!-- No Results Message -->
+<div class="row d-none" id="no-results">
+    <div class="col">
+        <div class="alert alert-warning" role="alert">
+            <i class="bi bi-exclamation-triangle"></i> No organizations match your search criteria. Try adjusting your filters.
+        </div>
+    </div>
+</div>
+
 {% if orgs.size == 0 %}
 <div class="alert alert-info" role="alert">
     <i class="bi bi-info-circle"></i> No organizations found. Organizations are being added to the registry.
 </div>
 {% endif %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('org-search');
+    const clearButton = document.getElementById('clear-search');
+    const filterSelect = document.getElementById('org-filter-links');
+    const sortSelect = document.getElementById('org-sort');
+    const orgGrid = document.getElementById('org-grid');
+    const orgCount = document.getElementById('org-count');
+    const filterInfo = document.getElementById('org-filter-info');
+    const noResults = document.getElementById('no-results');
+    const orgCards = document.querySelectorAll('.org-card');
+    const totalOrgs = orgCards.length;
+    
+    // Debounce function for search
+    function debounce(func, wait) {
+        let timeout;
+        return function executedFunction(...args) {
+            const later = () => {
+                clearTimeout(timeout);
+                func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+        };
+    }
+    
+    // Update organization count display
+    function updateCount(visible) {
+        if (visible === totalOrgs) {
+            orgCount.textContent = totalOrgs + ' organizations';
+            filterInfo.textContent = '';
+        } else {
+            orgCount.textContent = visible + ' of ' + totalOrgs + ' organizations';
+            filterInfo.textContent = '(filtered)';
+        }
+    }
+    
+    // Filter and display organizations
+    function filterOrganizations() {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        const linkFilter = filterSelect.value;
+        let visibleCount = 0;
+        
+        orgCards.forEach(card => {
+            const label = card.dataset.label || '';
+            const id = card.dataset.id || '';
+            const description = card.dataset.description || '';
+            const shortId = card.dataset.shortId || '';
+            const hasHomepage = parseInt(card.dataset.hasHomepage) > 0;
+            const hasGithub = parseInt(card.dataset.hasGithub) > 0;
+            
+            // Check search match
+            let matchesSearch = true;
+            if (searchTerm) {
+                matchesSearch = label.includes(searchTerm) || 
+                               id.includes(searchTerm) || 
+                               description.includes(searchTerm) ||
+                               shortId.includes(searchTerm);
+            }
+            
+            // Check link filter
+            let matchesFilter = true;
+            if (linkFilter === 'has-homepage') {
+                matchesFilter = hasHomepage;
+            } else if (linkFilter === 'has-github') {
+                matchesFilter = hasGithub;
+            } else if (linkFilter === 'has-both') {
+                matchesFilter = hasHomepage && hasGithub;
+            }
+            
+            // Show/hide card
+            if (matchesSearch && matchesFilter) {
+                card.classList.remove('d-none');
+                visibleCount++;
+            } else {
+                card.classList.add('d-none');
+            }
+        });
+        
+        // Show/hide no results message
+        if (visibleCount === 0) {
+            noResults.classList.remove('d-none');
+        } else {
+            noResults.classList.add('d-none');
+        }
+        
+        updateCount(visibleCount);
+    }
+    
+    // Sort organizations
+    function sortOrganizations() {
+        const sortValue = sortSelect.value;
+        const cardsArray = Array.from(orgCards);
+        
+        cardsArray.sort((a, b) => {
+            let aVal, bVal;
+            
+            if (sortValue.startsWith('label')) {
+                aVal = a.dataset.label || '';
+                bVal = b.dataset.label || '';
+            } else {
+                aVal = a.dataset.id || '';
+                bVal = b.dataset.id || '';
+            }
+            
+            if (sortValue.endsWith('-desc')) {
+                return bVal.localeCompare(aVal);
+            } else {
+                return aVal.localeCompare(bVal);
+            }
+        });
+        
+        // Reorder in DOM
+        cardsArray.forEach(card => orgGrid.appendChild(card));
+    }
+    
+    // Event listeners
+    searchInput.addEventListener('input', debounce(filterOrganizations, 200));
+    
+    clearButton.addEventListener('click', function() {
+        searchInput.value = '';
+        filterOrganizations();
+        searchInput.focus();
+    });
+    
+    filterSelect.addEventListener('change', filterOrganizations);
+    
+    sortSelect.addEventListener('change', function() {
+        sortOrganizations();
+        filterOrganizations();
+    });
+    
+    // Keyboard shortcut: Escape to clear search
+    searchInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            searchInput.value = '';
+            filterOrganizations();
+        }
+    });
+    
+    // Initial count
+    updateCount(totalOrgs);
+});
+</script>
