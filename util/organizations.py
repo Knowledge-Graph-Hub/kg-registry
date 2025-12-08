@@ -680,7 +680,7 @@ def main():
             update_contacts=not args.no_update_contacts
         )
     elif args.command == "consolidate":
-        print("Consolidation logic - see consolidate_organizations.py for specific consolidations")
+        print("Consolidation logic - use update_resource_contacts() with custom patterns")
         print("This command can be extended with specific consolidation rules.")
     else:
         parser.print_help()

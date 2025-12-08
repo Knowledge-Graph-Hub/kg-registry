@@ -34,8 +34,7 @@ Organization management utilities:
 
 These scripts maintain backward compatibility while using the new modules:
 
-- `combine-organizations.py` - Thin wrapper around `organizations.main_combine()`
-- `create_organization_pages.py` - Thin wrapper around `organizations.main_create()`
+- `combine-organizations.py` - Thin wrapper around `organizations.main_combine()` (used by Makefile)
 - `utils.py` - Backward-compatible imports from `common.py`
 - `parallel_loader.py` - Uses `common.py` for file loading
 - `parallel_validator.py` - Uses `validation.py` for validation
@@ -47,7 +46,6 @@ These scripts still define their own path constants and could benefit from using
 - `validate-metadata.py` - Main resource validation script
 - `validate-organizations.py` - Organization validation script
 - `extract-metadata.py` - Metadata extraction and combination
-- `consolidate_organizations.py` - Specific organization consolidations
 
 ### Utility Scripts
 
@@ -96,10 +94,10 @@ from organizations import (
 poetry run python util/combine-organizations.py
 
 # Create organization pages (dry run)
-poetry run python util/create_organization_pages.py
+poetry run python util/organizations.py create
 
 # Create organization pages (execute)
-poetry run python util/create_organization_pages.py --execute
+poetry run python util/organizations.py create --execute
 
 # Organizations module with subcommands
 poetry run python util/organizations.py combine
