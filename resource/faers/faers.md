@@ -6,6 +6,7 @@ contacts:
   contact_details:
   - contact_type: email
     value: FDA-SRS@fda.hhs.gov
+  id: fda
   label: FDA Center for Drug Evaluation and Research
 creation_date: '2025-11-04T00:00:00Z'
 description: The FDA Adverse Event Reporting System (FAERS) is a database that contains
@@ -83,6 +84,7 @@ products:
   - aeolus
   product_url: https://datadryad.org/stash/dataset/doi:10.5061/dryad.8q0s4
 ---
+
 # FDA Adverse Event Reporting System
 
 ## Overview

@@ -1,74 +1,82 @@
 ---
 activity_status: active
 category: Aggregator
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: github
+    value: EBISPOT/ols4
+  - contact_type: email
+    value: ols-support@ebi.ac.uk
+  id: ebi
+  label: EMBL-EBI Samples, Phenotypes and Ontologies Team
 creation_date: '2025-10-30T00:00:00Z'
-description: The Ontology Lookup Service (OLS) is a repository for biomedical ontologies that aims to provide a single point of access to the latest ontology versions. Users can browse ontologies through the website and programmatically via the OLS API. Maintained by the Samples, Phenotypes and Ontologies Team (SPOT) at EMBL-EBI.
+description: The Ontology Lookup Service (OLS) is a repository for biomedical ontologies
+  that aims to provide a single point of access to the latest ontology versions. Users
+  can browse ontologies through the website and programmatically via the OLS API.
+  Maintained by the Samples, Phenotypes and Ontologies Team (SPOT) at EMBL-EBI.
 domains:
-  - biomedical
-  - upper
-  - biological systems
+- biomedical
+- upper
+- biological systems
 homepage_url: https://www.ebi.ac.uk/ols4/
 id: ols
 infores_id: ols
 last_modified_date: '2025-10-30T00:00:00Z'
 layout: resource_detail
 name: Ontology Lookup Service
-repository: https://github.com/EBISPOT/ols4
-contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: github
-        value: EBISPOT/ols4
-      - contact_type: email
-        value: ols-support@ebi.ac.uk
-    label: EMBL-EBI Samples, Phenotypes and Ontologies Team
 products:
-  - category: GraphicalInterface
-    description: Web interface for browsing and searching biomedical ontologies with exact match and obsolete term filtering
-    format: http
-    id: ols.portal
-    name: OLS Web Portal
-    product_url: https://www.ebi.ac.uk/ols4/
-  - category: ProgrammingInterface
-    description: RESTful API for programmatic access to ontology data including terms, properties, and relationships
-    format: http
-    id: ols.api
-    name: OLS REST API
-    product_url: https://www.ebi.ac.uk/ols4/api-docs
-  - category: Product
-    description: Internal JSON representation of all loaded ontologies (approximately 50 GB uncompressed)
-    compression: gzip
-    format: json
-    id: ols.json
-    name: OLS Ontologies JSON
-    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
-  - category: GraphProduct
-    description: Neo4j database with linked ontology data including cross-references between ontologies and external databases (approximately 150 GB)
-    dump_format: neo4j
-    format: neo4j
-    compression: tar
-    id: ols.neo4j
-    name: OLS Neo4j Database
-    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
-  - category: Product
-    description: Solr search index database for ontology searching (requires Solr 9.0.0)
-    compression: tar
-    id: ols.solr
-    name: OLS Solr Database
-    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
-  - category: MappingProduct
-    description: Ontology mappings extracted from all ontologies in SSSOM TSV format
-    compression: gzip
-    format: tsv
-    id: ols.mappings
-    name: OLS SSSOM Mappings
-    product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
+- category: GraphicalInterface
+  description: Web interface for browsing and searching biomedical ontologies with
+    exact match and obsolete term filtering
+  format: http
+  id: ols.portal
+  name: OLS Web Portal
+  product_url: https://www.ebi.ac.uk/ols4/
+- category: ProgrammingInterface
+  description: RESTful API for programmatic access to ontology data including terms,
+    properties, and relationships
+  format: http
+  id: ols.api
+  name: OLS REST API
+  product_url: https://www.ebi.ac.uk/ols4/api-docs
+- category: Product
+  compression: gzip
+  description: Internal JSON representation of all loaded ontologies (approximately
+    50 GB uncompressed)
+  format: json
+  id: ols.json
+  name: OLS Ontologies JSON
+  product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
+- category: GraphProduct
+  compression: tar
+  description: Neo4j database with linked ontology data including cross-references
+    between ontologies and external databases (approximately 150 GB)
+  dump_format: neo4j
+  format: neo4j
+  id: ols.neo4j
+  name: OLS Neo4j Database
+  product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
+- category: Product
+  compression: tar
+  description: Solr search index database for ontology searching (requires Solr 9.0.0)
+  id: ols.solr
+  name: OLS Solr Database
+  product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
+- category: MappingProduct
+  compression: gzip
+  description: Ontology mappings extracted from all ontologies in SSSOM TSV format
+  format: tsv
+  id: ols.mappings
+  name: OLS SSSOM Mappings
+  product_url: https://ftp.ebi.ac.uk/pub/databases/spot/ols/
 publications:
-  - id: PMID:39913645
-    preferred: true
+- id: PMID:39913645
+  preferred: true
+repository: https://github.com/EBISPOT/ols4
 synonyms:
-  - OLS
-  - OLS4
+- OLS
+- OLS4
 ---
 
 # Ontology Lookup Service

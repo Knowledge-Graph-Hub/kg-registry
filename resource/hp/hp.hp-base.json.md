@@ -5,6 +5,7 @@ description: Manually curated version of the ontology without the use of a reaso
 format: obo
 id: hp.hp-base.json
 name: HPO base release in obographs JSON format
+product_file_size: 22046388
 product_url: http://purl.obolibrary.org/obo/hp/hp-base.json
 layout: product_detail
 ---

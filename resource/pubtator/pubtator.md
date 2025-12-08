@@ -8,6 +8,7 @@ contacts:
     value: info@ncbi.nlm.nih.gov
   - contact_type: url
     value: https://www.ncbi.nlm.nih.gov/research/pubtator3/
+  id: ncbi
   label: National Center for Biotechnology Information (NCBI)
 description: PubTator 3.0 is an AI-powered biomedical literature resource that uses
   state-of-the-art AI techniques to provide semantic and relation searches for key
@@ -62,8 +63,8 @@ products:
   secondary_source:
   - pubtator
 - category: GraphProduct
-  description: "Text-mined biomedical knowledge graph of gene\u2013disease\u2013drug\
-    \ relationships (semantic themes)"
+  description: Text-mined biomedical knowledge graph of gene–disease–drug relationships
+    (semantic themes)
   id: gnbr.graph
   name: GNBR graph
   original_source:
@@ -92,6 +93,7 @@ publications:
   year: '2024'
 repository: https://github.com/ncbi/AIONER
 ---
+
 # PubTator 3.0
 
 PubTator 3.0 is a comprehensive biomedical literature resource that leverages state-of-the-art AI techniques to annotate and make searchable over one billion entity and relation annotations across approximately 36 million PubMed abstracts and 6 million full-text articles from the PMC open access subset.

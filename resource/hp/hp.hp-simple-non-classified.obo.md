@@ -5,6 +5,7 @@ description: Simple, manually curated version of the ontology without the use of
 format: obo
 id: hp.hp-simple-non-classified.obo
 name: HPO simple, manually classified, without imports in OBO format
+product_file_size: 10323948
 product_url: http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.obo
 layout: product_detail
 ---

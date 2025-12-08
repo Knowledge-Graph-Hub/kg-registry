@@ -14,6 +14,7 @@ contacts:
     value: https://web.expasy.org/groups/calipho/
   - contact_type: email
     value: cellosaurus@sib.swiss
+  id: sib
   label: CALIPHO Group - SIB Swiss Institute of Bioinformatics
 description: Cellosaurus is a knowledge resource on cell lines providing information
   on cell lines from vertebrates, invertebrates, and plants, including standardized
@@ -76,7 +77,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: Product
   description: Complete Cellosaurus data in RDF format using the Turtle syntax
@@ -91,7 +94,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: ProgrammingInterface
   description: RESTful API for programmatic access to Cellosaurus data
@@ -179,6 +184,7 @@ publications:
   year: '2018'
 repository: https://github.com/calipho-sib/cellosaurus
 ---
+
 Cellosaurus is a comprehensive knowledge resource on cell lines from vertebrates, invertebrates, and plants. It serves as a reference for cell line information, providing researchers with standardized nomenclature, cross-references to other relevant databases, and detailed information about cell line characteristics, authentication, and potential problems.
 
 As of Release 52 (April 2025), Cellosaurus documents 163,868 cell lines, including 121,295 human, 29,536 mouse, and 3,115 rat cell lines. The database provides extensive information for each cell line entry, including:

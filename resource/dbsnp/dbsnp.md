@@ -8,6 +8,7 @@ contacts:
     value: info@ncbi.nlm.nih.gov
   - contact_type: url
     value: https://www.ncbi.nlm.nih.gov/home/about/contact/
+  id: ncbi
   label: National Center for Biotechnology Information (NCBI)
 description: dbSNP contains human single nucleotide variations, microsatellites, and
   small-scale insertions and deletions along with publication, population frequency,
@@ -172,11 +173,11 @@ products:
   - gwascatalog
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
     when accessing file'
 publications:
 - authors:
@@ -204,6 +205,7 @@ publications:
   year: '2023'
 repository: https://github.com/ncbi/dbsnp
 ---
+
 dbSNP (Database of Single Nucleotide Polymorphisms) is a public archive for genetic variation established in 1999 by the National Center for Biotechnology Information (NCBI) in collaboration with the National Human Genome Research Institute (NHGRI). It serves as a central repository for both single nucleotide variations and small-scale insertions and deletions (indels).
 
 The database contains over 328 million reference SNPs (as noted on the homepage) and includes data on:

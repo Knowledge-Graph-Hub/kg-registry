@@ -4,6 +4,7 @@ description: Space Life Sciences Ontology in OBO format
 format: obo
 id: slso.obo
 name: slso.obo
+product_file_size: 380643
 product_url: http://purl.obolibrary.org/obo/slso.obo
 layout: product_detail
 ---

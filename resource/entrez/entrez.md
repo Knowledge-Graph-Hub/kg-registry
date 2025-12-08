@@ -6,12 +6,17 @@ contacts:
   contact_details:
   - contact_type: url
     value: https://www.ncbi.nlm.nih.gov/home/about/contact/
+  id: ncbi
   label: NCBI
 creation_date: '2025-11-05T00:00:00Z'
-description: Entrez is NCBI's primary text search and retrieval system that integrates multiple biological databases including PubMed, GenBank, Gene, Protein, and many others. It provides a unified query interface and retrieval mechanism across NCBI's vast collection of biomedical and genomic data resources, enabling researchers to search and access information from disparate databases using a single query system.
+description: Entrez is NCBI's primary text search and retrieval system that integrates
+  multiple biological databases including PubMed, GenBank, Gene, Protein, and many
+  others. It provides a unified query interface and retrieval mechanism across NCBI's
+  vast collection of biomedical and genomic data resources, enabling researchers to
+  search and access information from disparate databases using a single query system.
 domains:
-  - biomedical
-  - literature
+- biomedical
+- literature
 homepage_url: https://www.ncbi.nlm.nih.gov/Web/Search/entrezfs.html
 id: entrez
 infores_id: entrez
@@ -45,9 +50,9 @@ products:
   product_url: https://www.ncbi.nlm.nih.gov/books/NBK179288/
   repository: https://github.com/ncbi/entrez-direct
 synonyms:
-  - Entrez
-  - NCBIGene
-  - NCBI Entrez
+- Entrez
+- NCBIGene
+- NCBI Entrez
 taxon:
 - NCBITaxon:1
 ---
@@ -101,4 +106,3 @@ This resource has the Information Resource identifier: `infores:entrez`
 ## Taxon Coverage
 
 All organisms (NCBITaxon:1 - root of NCBI Taxonomy)
-

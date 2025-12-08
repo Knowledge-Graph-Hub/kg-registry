@@ -1,46 +1,45 @@
 ---
+id: peco
+name: Plant Experimental Conditions Ontology
+description: A structured, controlled vocabulary which describes the treatments, growing
+  conditions, and/or study types used in plant biology experiments.
 activity_status: active
-category: Ontology
+homepage_url: http://planteome.org/
+repository: https://github.com/Planteome/plant-experimental-conditions-ontology
+license:
+  id: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
 contacts:
 - category: Individual
+  label: Pankaj Jaiswal
+  orcid: 0000-0002-1005-8383
   contact_details:
   - contact_type: email
     value: jaiswalp@science.oregonstate.edu
   - contact_type: github
     value: jaiswalp
-  label: Pankaj Jaiswal
-  orcid: 0000-0002-1005-8383
-description: A structured, controlled vocabulary which describes the treatments, growing
-  conditions, and/or study types used in plant biology experiments.
-domains:
-- biomedical
-homepage_url: http://planteome.org/
-id: peco
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Plant Experimental Conditions Ontology
 products:
-- category: OntologyProduct
+- id: peco.owl
+  name: peco.owl
   description: Plant Experimental Conditions Ontology in OWL format
   format: owl
-  id: peco.owl
-  name: peco.owl
-  product_file_size: 82330
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/peco.owl
-- category: OntologyProduct
+- id: peco.obo
+  name: peco.obo
   description: Plant Experimental Conditions Ontology in OBO format
   format: obo
-  id: peco.obo
-  name: peco.obo
-  product_file_size: 66866
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/peco.obo
-repository: https://github.com/Planteome/plant-experimental-conditions-ontology
 ---
+
 ## Description
 
 A structured, controlled vocabulary which describes the treatments, growing conditions, and/or study types used in plant biology experiments.

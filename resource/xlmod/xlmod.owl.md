@@ -5,6 +5,7 @@ description: HUPO-PSI cross-linking and derivatization reagents controlled vocab
 format: owl
 id: xlmod.owl
 name: xlmod.owl
+product_file_size: 95968
 product_url: http://purl.obolibrary.org/obo/xlmod.owl
 layout: product_detail
 ---

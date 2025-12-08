@@ -2,12 +2,19 @@
 """
 Parallel validation utilities for KG-Registry metadata.
 
-This module provides parallel validation of resource metadata using ThreadPoolExecutor.
+This module provides backward-compatible parallel validation of resource metadata.
+New code should use validation.py directly.
 """
 
 import os
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Dict, List, Any, Optional, Tuple, Callable
+
+from validation import (
+    ValidationResults,
+    validate_resource,
+    validate_resources_parallel as _validate_parallel,
+    load_json_schema,
+)
 
 
 def validate_single_resource(
@@ -44,6 +51,9 @@ def validate_resources_parallel(
     """
     Validate multiple resources in parallel.
 
+    This is a backward-compatible wrapper. For new code, use
+    validation.validate_resources_parallel() directly.
+
     Args:
         resources: List of resource metadata dictionaries
         schema: JSON schema to validate against
@@ -56,6 +66,10 @@ def validate_resources_parallel(
     """
     if max_workers is None:
         max_workers = int(os.environ.get('PARALLEL_WORKERS', '10'))
+
+    # Use the original implementation for backward compatibility
+    # since the new validation module has a different signature
+    from concurrent.futures import ThreadPoolExecutor, as_completed
 
     # Don't use parallel validation for small sets
     if len(resources) < 50:
@@ -97,3 +111,4 @@ def validate_resources_parallel(
 
     print(f"  ✅ Completed validation of {len(resources)} resources")
     return results
+

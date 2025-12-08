@@ -8,6 +8,7 @@ contacts:
     value: glyconnect@sib.swiss
   - contact_type: url
     value: https://glyconnect.expasy.org/
+  id: sib
   label: GlyConnect Team - SIB Swiss Institute of Bioinformatics
 description: GlyConnect is a knowledgebase of glycoproteins spanning protein, glycosite
   and glycan information, with data on various species, tissues, and disease associations.
@@ -87,6 +88,7 @@ publications:
   title: 'GlyConnect: Glycoproteomics Goes Visual, Interactive, and Analytical'
   year: '2019'
 ---
+
 GlyConnect is a comprehensive knowledgebase of glycoproteomics data maintained by the SIB Swiss Institute of Bioinformatics. It integrates information spanning three key levels of glycobiology: proteins, glycosites (the specific locations where glycans attach to proteins), and glycan structures.
 
 The database provides curated glycoproteomic data from various species, tissues, and disease states, with a particular focus on human glycoproteins. GlyConnect uses the Symbol Nomenclature for Glycans (SNFG) standard for representing glycan structures in a visually consistent way.

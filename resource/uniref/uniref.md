@@ -8,6 +8,7 @@ contacts:
     value: help@uniprot.org
   - contact_type: url
     value: https://www.uniprot.org/contact
+  id: ebi
   label: UniProt Consortium
 creation_date: '2025-10-31T00:00:00Z'
 description: UniRef (Universal Protein Resource Reference Clusters) provides clustered
@@ -137,4 +138,5 @@ synonyms:
 - UniRef90
 - UniRef50
 ---
+
 # UniRef

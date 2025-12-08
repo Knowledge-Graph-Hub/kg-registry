@@ -1,39 +1,39 @@
 ---
+id: cdao
+name: Comparative Data Analysis Ontology
+description: a formalization of concepts and relations relevant to evolutionary comparative
+  analysis
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/evoinfo/cdao
+repository: https://github.com/evoinfo/cdao
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biological systems
 contacts:
 - category: Individual
+  label: Jim Balhoff
+  orcid: 0000-0002-8688-6599
   contact_details:
   - contact_type: email
     value: balhoff@renci.org
   - contact_type: github
     value: balhoff
-  label: Jim Balhoff
-  orcid: 0000-0002-8688-6599
-description: a formalization of concepts and relations relevant to evolutionary comparative
-  analysis
-domains:
-- biological systems
-homepage_url: https://github.com/evoinfo/cdao
-id: cdao
-layout: resource_detail
-license:
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-name: Comparative Data Analysis Ontology
 products:
-- category: OntologyProduct
+- id: cdao.owl
+  name: cdao.owl
   description: Comparative Data Analysis Ontology in OWL format
   format: owl
-  id: cdao.owl
-  name: cdao.owl
-  product_file_size: 10952
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/cdao.owl
-repository: https://github.com/evoinfo/cdao
 ---
+
 ## Description
 
 a formalization of concepts and relations relevant to evolutionary comparative analysis

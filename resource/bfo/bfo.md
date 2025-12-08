@@ -1,152 +1,44 @@
 ---
+id: bfo
+name: Basic Formal Ontology
+description: The upper level ontology upon which OBO Foundry ontologies are built.
 activity_status: active
-category: Ontology
+homepage_url: http://ifomis.org/bfo/
+repository: https://github.com/BFO-ontology/BFO
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biological systems
 contacts:
 - category: Individual
+  label: Barry Smith
+  orcid: 0000-0003-1384-116X
   contact_details:
   - contact_type: email
     value: phismith@buffalo.edu
   - contact_type: github
     value: phismith
-  label: Barry Smith
-  orcid: 0000-0003-1384-116X
-description: The upper level ontology upon which OBO Foundry ontologies are built.
-domains:
-- biological systems
-homepage_url: http://ifomis.org/bfo/
-id: bfo
-infores_id: bfo
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Basic Formal Ontology
 products:
-- category: OntologyProduct
+- id: bfo.owl
+  name: bfo.owl
   description: Basic Formal Ontology in OWL format
   format: owl
-  id: bfo.owl
-  name: bfo.owl
-  product_file_size: 20902
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/bfo.owl
-- category: OntologyProduct
+- id: bfo.obo
+  name: bfo.obo
   description: Basic Formal Ontology in OBO format
   format: obo
-  id: bfo.obo
-  name: bfo.obo
-  product_file_size: 17898
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/bfo.obo
-- category: OntologyProduct
-  description: The latest release of EFO in OWL format
-  format: owl
-  id: efo.owl
-  name: EFO OWL
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 240665663
-  product_url: https://www.ebi.ac.uk/efo/efo.owl
-  secondary_source:
-  - efo
-- category: OntologyProduct
-  description: The latest release of EFO in OBO format
-  format: obo
-  id: efo.obo
-  name: EFO OBO
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 64058275
-  product_url: https://www.ebi.ac.uk/efo/efo.obo
-  secondary_source:
-  - efo
-repository: https://github.com/BFO-ontology/BFO
 ---
+
 ## Description
 
 The upper level ontology upon which OBO Foundry ontologies are built.

@@ -6,6 +6,7 @@ contacts:
   contact_details:
   - contact_type: url
     value: https://www.nlm.nih.gov/research/umls/support.html
+  id: ncbi
   label: NLM UMLS Customer Support
 creation_date: '2025-10-30T00:00:00Z'
 description: The Unified Medical Language System (UMLS) integrates and distributes
@@ -150,6 +151,7 @@ publications:
 synonyms:
 - UMLS
 ---
+
 # Unified Medical Language System (UMLS)
 
 ## Overview

@@ -1,257 +1,81 @@
 ---
+id: ro
+name: Relation Ontology
+description: Relationship types shared across multiple ontologies
 activity_status: active
-category: Ontology
+homepage_url: https://oborel.github.io/
+repository: https://github.com/oborel/obo-relations
+license:
+  id: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biological systems
 contacts:
 - category: Individual
+  label: Chris Mungall
+  orcid: 0000-0002-6601-2165
   contact_details:
   - contact_type: email
     value: cjmungall@lbl.gov
   - contact_type: github
     value: cmungall
-  label: Chris Mungall
-  orcid: 0000-0002-6601-2165
-description: Relationship types shared across multiple ontologies
-domains:
-- biological systems
-homepage_url: https://oborel.github.io/
-id: ro
-infores_id: ro
-layout: resource_detail
-license:
-  id: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-name: Relation Ontology
 products:
-- category: OntologyProduct
+- id: ro.owl
+  name: Relation Ontology
   description: Canonical edition
   format: owl
-  id: ro.owl
-  name: Relation Ontology
-  product_file_size: 131164
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/ro.owl
-- category: OntologyProduct
+- id: ro.obo
+  name: Relation Ontology in obo format
   description: The obo edition is less expressive than the OWL, and has imports merged
     in
   format: obo
-  id: ro.obo
-  name: Relation Ontology in obo format
-  product_file_size: 83438
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/ro.obo
-- category: OntologyProduct
+- id: ro.json
+  name: Relation Ontology in obojson format
   description: Relation Ontology in obojson format
   format: json
-  id: ro.json
-  name: Relation Ontology in obojson format
-  product_file_size: 113698
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/ro.json
-- category: OntologyProduct
+- id: ro.core.owl
+  name: RO Core relations
   description: Minimal subset intended to work with BFO-classes
   format: owl
-  id: ro.core.owl
-  name: RO Core relations
-  product_file_size: 7819
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/ro/core.owl
-- category: OntologyProduct
+- id: ro.ro-base.owl
+  name: RO base ontology
   description: Axioms defined within RO and to be used in imports for other ontologies
   format: owl
-  id: ro.ro-base.owl
-  name: RO base ontology
-  product_file_size: 94729
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/ro/ro-base.owl
-- category: OntologyProduct
+- id: ro.subsets.ro-interaction.owl
+  name: Interaction relations
   description: For use in ecology and environmental science
   format: owl
-  id: ro.subsets.ro-interaction.owl
-  name: Interaction relations
-  product_file_size: 62037
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl
-- category: OntologyProduct
+- id: ro.subsets.ro-eco.owl
+  name: Ecology subset
   description: Ecology subset
   format: owl
-  id: ro.subsets.ro-eco.owl
-  name: Ecology subset
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/ro/subsets/ro-eco.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
-    when accessing file'
-- category: OntologyProduct
+- id: ro.subsets.ro-neuro.owl
+  name: Neuroscience subset
   description: For use in neuroscience
   format: owl
-  id: ro.subsets.ro-neuro.owl
-  name: Neuroscience subset
-  product_file_size: 5164
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/ro/subsets/ro-neuro.owl
-- category: GraphProduct
-  description: PheKnowLator graph files, including subsets with and without inverse
-    relations.
-  format: owl
-  id: pheknowlator.graph
-  latest_version: current_build
-  name: PheKnowLator graph
-  original_source:
-  - cl
-  - clo
-  - chebi
-  - go
-  - hp
-  - mondo
-  - pw
-  - pr
-  - ro
-  - so
-  - uberon
-  - vo
-  - bioportal
-  - clinvar
-  - ctd
-  - disgenet
-  - ensembl
-  - genemania
-  - hgnc
-  - hpa
-  - ncbigene
-  - medgen
-  - reactome
-  - string
-  - uniprot
-  product_url: https://console.cloud.google.com/storage/browser/pheknowlator/current_build/knowledge_graphs?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&inv=1&invt=Ab5_1Q&project=pheknowlator
-  secondary_source:
-  - pheknowlator
-  versions:
-  - v1.0.0
-  - v2.0.0
-  - v2.1.0
-  - v3.0.2
-  - v4.0.0
-  - current_build
-- category: OntologyProduct
-  description: OWL release of Monochrom Ontology
-  format: owl
-  id: chr.model.owl
-  name: Monochrom Ontology OWL release
-  original_source:
-  - ro
-  - go
-  - ncbitaxon
-  - iao
-  - geno
-  - skos
-  - gff
-  product_file_size: 102365
-  product_url: https://raw.githubusercontent.com/monarch-initiative/monochrom/refs/heads/master/chr.owl
-  secondary_source:
-  - chr
-- category: OntologyProduct
-  description: The latest release of EFO in OWL format
-  format: owl
-  id: efo.owl
-  name: EFO OWL
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 240665663
-  product_url: https://www.ebi.ac.uk/efo/efo.owl
-  secondary_source:
-  - efo
-- category: OntologyProduct
-  description: The latest release of EFO in OBO format
-  format: obo
-  id: efo.obo
-  name: EFO OBO
-  original_source:
-  - bfo
-  - bto
-  - chebi
-  - cl
-  - clo
-  - cob
-  - dc
-  - doid
-  - ecto
-  - efo
-  - fbbt
-  - fbdv
-  - fma
-  - go
-  - hancestro
-  - hp
-  - iao
-  - ido
-  - ma
-  - mondo
-  - mp
-  - mpath
-  - ncbitaxon
-  - ncit
-  - oba
-  - obi
-  - ogms
-  - oio
-  - omit
-  - omo
-  - ordo
-  - pato
-  - po
-  - pr
-  - ro
-  - semapv
-  - skos
-  - so
-  - to
-  - uberon
-  - uo
-  - wbls
-  - zfa
-  product_file_size: 64058275
-  product_url: https://www.ebi.ac.uk/efo/efo.obo
-  secondary_source:
-  - efo
-repository: https://github.com/oborel/obo-relations
 ---
+
 ## Description
 
 Relationship types shared across multiple ontologies

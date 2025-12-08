@@ -510,11 +510,33 @@ classes:
     description: >-
       An organization.
     is_a: Contact
+    slots:
+      - id
+      - layout
+      - creation_date
+      - last_modified_date
     attributes:
       label:
         description: >-
           The name of the organization.
         range: string
+      short_id:
+        description: >-
+          A short identifier for the organization.
+          This may be an acronym or abbreviation.
+        range: string
+      description:
+        description: >-
+          A description of the organization.
+        range: string
+      homepage_url:
+        description: >-
+          The homepage URL of the organization.
+        range: uriorcurie
+      github_url:
+        description: >-
+          The GitHub URL of the organization.
+        range: uriorcurie
 
   FundingSource:
     is_a: NamedThing

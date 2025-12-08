@@ -5,6 +5,7 @@ contacts:
   contact_details:
   - contact_type: url
     value: https://www.ebi.ac.uk/GOA/contactus
+  id: ebi
   label: GOA Team at EMBL-EBI
 creation_date: '2025-10-29T00:00:00Z'
 description: 'The Gene Ontology Annotation (GOA) Database provides high-quality Gene
@@ -162,6 +163,7 @@ products:
   secondary_source:
   - automat
 ---
+
 ## Overview
 
 The Gene Ontology Annotation (GOA) Database is a comprehensive resource providing high-quality Gene Ontology (GO) annotations to biological entities including proteins in the UniProt Knowledgebase (UniProtKB), RNA molecules from RNAcentral, and protein complexes from the Complex Portal. As a key component of the Gene Ontology Consortium infrastructure, GOA serves as a central hub for functional annotation of gene products across multiple species and databases.

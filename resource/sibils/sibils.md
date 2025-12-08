@@ -11,8 +11,12 @@ contacts:
   contact_details:
   - contact_type: url
     value: https://sibils.org/
+  id: sib
   label: SIBiLS - Swiss Institute of Bioinformatics Literature Services
-description: SIBiLS (Swiss Institute of Bioinformatics Literature Services) provides personalized information retrieval in biological literature, with customizable search in semantically enriched contents based on keywords and mapped biomedical entities from standardized vocabularies.
+description: SIBiLS (Swiss Institute of Bioinformatics Literature Services) provides
+  personalized information retrieval in biological literature, with customizable search
+  in semantically enriched contents based on keywords and mapped biomedical entities
+  from standardized vocabularies.
 domains:
 - biological systems
 - health
@@ -27,53 +31,54 @@ products:
 - category: GraphicalInterface
   description: Web interface for exploring SIBiLS data
   id: sibils.site
+  is_public: true
   name: SIBiLS Web Interface
   original_source:
   - sibils
   product_url: https://sibils.org/
   secondary_source:
   - sibils
-  is_public: true
 - category: ProgrammingInterface
   description: SPARQL endpoint for querying SIBiLS data
   id: sibils.api.sparql
+  is_public: true
   name: SIBiLS SPARQL Endpoint
   original_source:
   - sibils
   product_url: https://sparql.sibils.org/sparql
   secondary_source:
   - sibils
-  is_public: true
 - category: ProgrammingInterface
   description: RESTful API for fetching annotated contents from SIBiLS collections
   id: sibils.api.rest.fetch
+  is_public: true
   name: SIBiLS Fetch API
   original_source:
   - sibils
   product_url: https://sibils.org/API#Fetch-API
   secondary_source:
   - sibils
-  is_public: true
 - category: ProgrammingInterface
   description: RESTful API for customizable search in SIBiLS collections
   id: sibils.api.rest.search
+  is_public: true
   name: SIBiLS Search API
   original_source:
   - sibils
   product_url: https://sibils.org/API#Customizable-search-API
   secondary_source:
   - sibils
-  is_public: true
 - category: ProgrammingInterface
-  description: RESTful API for question answering using natural language in SIBiLS collections
+  description: RESTful API for question answering using natural language in SIBiLS
+    collections
   id: sibils.api.rest.qa
+  is_public: true
   name: SIBiLS Question Answering API
   original_source:
   - sibils
   product_url: https://sibils.org/API#Question-Answering-API
   secondary_source:
   - sibils
-  is_public: true
 publications:
 - authors:
   - Gobeill J
@@ -85,9 +90,11 @@ publications:
   doi: doi:10.1093/nar/gkaa328
   id: doi:10.1093/nar/gkaa328
   preferred: true
-  title: "SIB Literature Services: RESTful customizable search engines in biomedical literature, enriched with automatically mapped biomedical concepts"
+  title: 'SIB Literature Services: RESTful customizable search engines in biomedical
+    literature, enriched with automatically mapped biomedical concepts'
   year: '2020'
 ---
+
 SIBiLS (Swiss Institute of Bioinformatics Literature Services) provides personalized information retrieval services in biological literature. The platform offers fully customizable search capabilities in semantically enriched contents based on keywords and/or mapped biomedical entities from a growing set of standardized and legacy vocabularies.
 
 The services cover four main collections that are updated daily:

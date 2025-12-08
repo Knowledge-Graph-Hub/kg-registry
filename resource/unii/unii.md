@@ -6,6 +6,7 @@ contacts:
   contact_details:
   - contact_type: email
     value: FDA-SRS@fda.hhs.gov
+  id: fda
   label: FDA Substance Registration System Team
 creation_date: '2025-07-17T00:00:00Z'
 description: FDA's Global Substance Registration System (GSRS) is a comprehensive
@@ -42,7 +43,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
     when accessing file'
 - category: Product
   compression: zip
@@ -54,7 +57,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
     when accessing file'
 - category: Product
   description: Legacy UNII identifiers for historical substances
@@ -65,7 +70,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
     when accessing file'
 - description: The MechRepoNet knowledge graph in its original format
   id: mechreponet.kg
@@ -97,6 +104,7 @@ publications:
     Ingredient Identifiers (UNIIs)'
 repository: https://ginas.ncats.nih.gov/ginas/app
 ---
+
 # FDA Global Substance Registration System (UNII)
 
 The FDA's Global Substance Registration System (GSRS) is a comprehensive, authoritative database that generates Unique Ingredient Identifiers (UNIIs) for substances in FDA-regulated products. Developed through collaboration between the FDA's Informatics team, NIH's National Center for Advancing Translational Sciences (NCATS), and the European Medicines Agency (EMA), GSRS addresses the critical need for accurate substance identification across global regulatory domains.

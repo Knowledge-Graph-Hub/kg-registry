@@ -6,6 +6,7 @@ contacts:
   contact_details:
   - contact_type: email
     value: depmap@broadinstitute.org
+  id: broad
   label: DepMap Team, Broad Institute
 creation_date: '2025-11-05T00:00:00Z'
 description: PRISM (Profiling Relative Inhibition Simultaneously in Mixtures) is a
@@ -107,6 +108,7 @@ synonyms:
 taxon:
 - NCBITaxon:9606
 ---
+
 # PRISM
 
 ## Overview

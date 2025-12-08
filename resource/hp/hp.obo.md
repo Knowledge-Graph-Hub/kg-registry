@@ -5,6 +5,7 @@ description: Simple, manually curated version of the ontology without the use of
 format: obo
 id: hp.obo
 name: Official HPO release in OBO format
+product_file_size: 10323898
 product_url: http://purl.obolibrary.org/obo/hp.obo
 layout: product_detail
 ---

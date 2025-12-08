@@ -5,6 +5,7 @@ description: demo of COB including subsets of other ontologies (Experimental, fo
 format: owl
 id: cob.products.demo-cob.owl
 name: COB demo ontology (experimental)
+product_file_size: 447985
 product_url: http://purl.obolibrary.org/obo/cob/products/demo-cob.owl
 layout: product_detail
 ---

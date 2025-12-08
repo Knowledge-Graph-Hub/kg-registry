@@ -1,50 +1,49 @@
 ---
-activity_status: active
-category: Ontology
-collection:
-- obo-foundry
-contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: vasilevs@ohsu.edu
-  - contact_type: github
-    value: nicolevasilevsky
-  label: Nicole Vasilevsky
-  orcid: 0000-0001-5208-3432
+id: chiro
+name: CHEBI Integrated Role Ontology
 description: CHEBI provides a distinct role hierarchy. Chemicals in the structural
   hierarchy are connected via a 'has role' relation. CHIRO provides links from these
   roles to useful other classes in other ontologies. This will allow direct connection
   between chemical structures (small molecules, drugs) and what they do. This could
   be formalized using 'capable of', in the same way Uberon and the Cell Ontology link
   structures to processes.
-domains:
-- chemistry and biochemistry
+activity_status: active
 homepage_url: https://github.com/obophenotype/chiro
-id: chiro
-layout: resource_detail
+repository: https://github.com/obophenotype/chiro
 license:
   id: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-name: CHEBI Integrated Role Ontology
+collection:
+- obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- chemistry and biochemistry
+contacts:
+- category: Individual
+  label: Nicole Vasilevsky
+  orcid: 0000-0001-5208-3432
+  contact_details:
+  - contact_type: email
+    value: vasilevs@ohsu.edu
+  - contact_type: github
+    value: nicolevasilevsky
 products:
-- category: OntologyProduct
+- id: chiro.owl
+  name: chiro.owl
   description: CHEBI Integrated Role Ontology in OWL format
   format: owl
-  id: chiro.owl
-  name: chiro.owl
-  product_file_size: 7043
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/chiro.owl
-- category: OntologyProduct
+- id: chiro.obo
+  name: chiro.obo
   description: CHEBI Integrated Role Ontology in OBO format
   format: obo
-  id: chiro.obo
-  name: chiro.obo
-  product_file_size: 3337
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/chiro.obo
-repository: https://github.com/obophenotype/chiro
 ---
+
 ## Description
 
 CHEBI provides a distinct role hierarchy. Chemicals in the structural hierarchy are connected via a 'has role' relation. CHIRO provides links from these roles to useful other classes in other ontologies. This will allow direct connection between chemical structures (small molecules, drugs) and what they do. This could be formalized using 'capable of', in the same way Uberon and the Cell Ontology link structures to processes.

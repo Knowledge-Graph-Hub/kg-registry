@@ -6,6 +6,7 @@ contacts:
   contact_details:
   - contact_type: email
     value: lincs-help@broadinstitute.org
+  id: broad
   label: Broad Institute LINCS Transcriptomics Center
 creation_date: '2025-01-08T00:00:00Z'
 description: The LINCS L1000 is a high-throughput, reduced representation gene expression
@@ -229,6 +230,7 @@ repository: https://github.com/cmap/l1000-jupyter
 taxon:
 - NCBITaxon:9606
 ---
+
 ## Overview
 
 The LINCS L1000 platform represents a major advance in high-throughput transcriptional profiling technology. By measuring only 978 carefully selected "landmark" genes and using computational inference for the remaining transcriptome, L1000 achieves dramatic cost reduction (approximately $2 per sample) while maintaining high reproducibility and comparability to RNA-seq. This breakthrough enabled the generation of over 1.3 million gene expression profiles as part of the NIH LINCS Program, creating one of the largest publicly available transcriptional profiling resources.

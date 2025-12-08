@@ -1,25 +1,28 @@
 ---
 activity_status: inactive
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.nlm.nih.gov/
+  id: ncbi
+  label: US National Library of Medicine
 creation_date: '2025-10-30T00:00:00Z'
-description: Consumer health resource about genetic conditions from the US National Library of Medicine. This resource has been merged into MedlinePlus Genetics as of 2020.
+description: Consumer health resource about genetic conditions from the US National
+  Library of Medicine. This resource has been merged into MedlinePlus Genetics as
+  of 2020.
 domains:
-  - health
-  - genomics
+- health
+- genomics
 homepage_url: https://medlineplus.gov/genetics/
-id: "ghr"
-infores_id: "ghr"
+id: ghr
+infores_id: ghr
 last_modified_date: '2025-11-25T00:00:00Z'
 layout: resource_detail
 name: Genetics Home Reference
 synonyms:
-  - GHR
-contacts:
-  - category: Organization
-    label: US National Library of Medicine
-    contact_details:
-      - contact_type: url
-        value: "https://www.nlm.nih.gov/"
+- GHR
 ---
 
 # Genetics Home Reference

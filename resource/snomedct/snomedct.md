@@ -15,6 +15,7 @@ contacts:
     value: custserv@nlm.nih.gov
   - contact_type: url
     value: https://www.nlm.nih.gov/healthit/snomedct/index.html
+  id: ncbi
   label: National Library of Medicine (NLM)
 description: SNOMED CT (Systematized Nomenclature of Medicine Clinical Terms) is the
   most comprehensive, multilingual clinical healthcare terminology in the world. It
@@ -312,14 +313,15 @@ products:
   secondary_source:
   - athena
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-05_ Error connecting
     to URL_ Exceeded 30 redirects.
   - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - 'File was not able to be retrieved when checked on 2025-12-05: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-12-07: Error connecting
     to URL: Exceeded 30 redirects.'
 repository: https://browser.ihtsdotools.org/
 ---
+
 # SNOMED CT
 
 SNOMED CT (Systematized Nomenclature of Medicine Clinical Terms) is the most comprehensive, multilingual clinical healthcare terminology in the world. It serves as a standardized vocabulary for clinical documentation and enables consistent representation of clinical content in electronic health records.

@@ -5,6 +5,7 @@ description: A direct transformation of the standard NCIt content using OBO-styl
 format: owl
 id: ncit.owl
 name: NCIt OBO Edition OWL format
+product_file_size: 782238438
 product_url: http://purl.obolibrary.org/obo/ncit.owl
 layout: product_detail
 ---

@@ -2,54 +2,77 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    label: National Library of Medicine
-    contact_details:
-      - contact_type: url
-        value: "https://support.nlm.nih.gov/support/create-case/"
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://support.nlm.nih.gov/support/create-case/
+  id: ncbi
+  label: National Library of Medicine
 creation_date: '2025-11-08T00:00:00Z'
-description: DailyMed is the National Library of Medicine's official provider of FDA drug label information, offering a searchable database of the most recent labeling submitted to the Food and Drug Administration by pharmaceutical companies and currently in use. As a comprehensive public resource providing over 154,000 drug labels, DailyMed contains labeling for prescription and nonprescription drugs for both human and animal use, as well as additional products including medical gases, devices, cosmetics, dietary supplements, and medical foods. All labeling information is formatted in Structured Product Labeling (SPL), an HL7 standard that provides a standardized, machine-readable format for drug product information enabling interoperability between healthcare systems. DailyMed serves as the authoritative source for current package inserts, medication guides, patient information sheets, and prescribing information directly as submitted by manufacturers to the FDA. The database is updated daily as new labeling is submitted and approved, ensuring users have access to the most current drug safety and efficacy information available. DailyMed provides detailed information including indications and usage, dosage and administration, contraindications, warnings and precautions, adverse reactions, drug interactions, use in specific populations, clinical pharmacology, and how the drug is supplied.
+description: DailyMed is the National Library of Medicine's official provider of FDA
+  drug label information, offering a searchable database of the most recent labeling
+  submitted to the Food and Drug Administration by pharmaceutical companies and currently
+  in use. As a comprehensive public resource providing over 154,000 drug labels, DailyMed
+  contains labeling for prescription and nonprescription drugs for both human and
+  animal use, as well as additional products including medical gases, devices, cosmetics,
+  dietary supplements, and medical foods. All labeling information is formatted in
+  Structured Product Labeling (SPL), an HL7 standard that provides a standardized,
+  machine-readable format for drug product information enabling interoperability between
+  healthcare systems. DailyMed serves as the authoritative source for current package
+  inserts, medication guides, patient information sheets, and prescribing information
+  directly as submitted by manufacturers to the FDA. The database is updated daily
+  as new labeling is submitted and approved, ensuring users have access to the most
+  current drug safety and efficacy information available. DailyMed provides detailed
+  information including indications and usage, dosage and administration, contraindications,
+  warnings and precautions, adverse reactions, drug interactions, use in specific
+  populations, clinical pharmacology, and how the drug is supplied.
 domains:
-  - health
-id: "dailymed"
-infores_id: "dailymed"
+- health
+homepage_url: https://dailymed.nlm.nih.gov/dailymed/
+id: dailymed
+infores_id: dailymed
 last_modified_date: '2025-11-08T00:00:00Z'
 layout: resource_detail
 name: DailyMed
-homepage_url: https://dailymed.nlm.nih.gov/dailymed/
 products:
-  - category: GraphicalInterface
-    description: Interactive web interface providing searchable access to over 154,000 FDA-approved drug labels with advanced search, browsing by therapeutic class, and pill image viewing
-    format: http
-    id: "dailymed.website"
-    name: DailyMed Website
-    product_url: https://dailymed.nlm.nih.gov/dailymed/
-  - category: ProgrammingInterface
-    description: RESTful web services enabling programmatic access to DailyMed drug labeling data in Structured Product Labeling (SPL) format
-    format: xml
-    id: "dailymed.web_services"
-    name: DailyMed Web Services
-    product_url: https://dailymed.nlm.nih.gov/dailymed/app-support-web-services.cfm
-  - category: Product
-    description: Downloadable SPL files for all drug labels in the DailyMed database, updated daily
-    format: xml
-    id: "dailymed.spl_files"
-    name: DailyMed SPL Data Files
-    product_url: https://dailymed.nlm.nih.gov/dailymed/spl-resources-all-drug-labels.cfm
-  - category: Product
-    description: Mapping files linking DailyMed drug labels to RxNorm codes, UNII identifiers, and NDC codes for interoperability
-    format: http
-    id: "dailymed.mapping_files"
-    name: DailyMed Mapping Files
-    product_url: https://dailymed.nlm.nih.gov/dailymed/app-support-mapping-files.cfm
-  - category: Product
-    description: RSS feeds providing notifications of new and updated drug labels published on DailyMed
-    format: http
-    id: "dailymed.rss_feeds"
-    name: DailyMed RSS Feeds
-    product_url: https://dailymed.nlm.nih.gov/dailymed/rss-updates.cfm
+- category: GraphicalInterface
+  description: Interactive web interface providing searchable access to over 154,000
+    FDA-approved drug labels with advanced search, browsing by therapeutic class,
+    and pill image viewing
+  format: http
+  id: dailymed.website
+  name: DailyMed Website
+  product_url: https://dailymed.nlm.nih.gov/dailymed/
+- category: ProgrammingInterface
+  description: RESTful web services enabling programmatic access to DailyMed drug
+    labeling data in Structured Product Labeling (SPL) format
+  format: xml
+  id: dailymed.web_services
+  name: DailyMed Web Services
+  product_url: https://dailymed.nlm.nih.gov/dailymed/app-support-web-services.cfm
+- category: Product
+  description: Downloadable SPL files for all drug labels in the DailyMed database,
+    updated daily
+  format: xml
+  id: dailymed.spl_files
+  name: DailyMed SPL Data Files
+  product_url: https://dailymed.nlm.nih.gov/dailymed/spl-resources-all-drug-labels.cfm
+- category: Product
+  description: Mapping files linking DailyMed drug labels to RxNorm codes, UNII identifiers,
+    and NDC codes for interoperability
+  format: http
+  id: dailymed.mapping_files
+  name: DailyMed Mapping Files
+  product_url: https://dailymed.nlm.nih.gov/dailymed/app-support-mapping-files.cfm
+- category: Product
+  description: RSS feeds providing notifications of new and updated drug labels published
+    on DailyMed
+  format: http
+  id: dailymed.rss_feeds
+  name: DailyMed RSS Feeds
+  product_url: https://dailymed.nlm.nih.gov/dailymed/rss-updates.cfm
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
 
 # DailyMed

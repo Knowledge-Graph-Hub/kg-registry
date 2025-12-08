@@ -1,26 +1,29 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://www.ebi.ac.uk/
+  id: ebi
+  label: EMBL-EBI
 creation_date: '2025-10-30T00:00:00Z'
-description: OmicsDI (Omics Discovery Index) is an integrated resource for omics datasets across multiple repositories, providing a unified search interface for genomics, proteomics, metabolomics, and transcriptomics data.
+description: OmicsDI (Omics Discovery Index) is an integrated resource for omics datasets
+  across multiple repositories, providing a unified search interface for genomics,
+  proteomics, metabolomics, and transcriptomics data.
 domains:
-  - genomics
-  - proteomics
-id: "omicsdi"
-infores_id: "omicsdi"
+- genomics
+- proteomics
+homepage_url: https://www.omicsdi.org/
+id: omicsdi
+infores_id: omicsdi
 last_modified_date: '2025-11-25T00:00:00Z'
 layout: resource_detail
 name: OmicsDI
-homepage_url: https://www.omicsdi.org/
 synonyms:
-  - OmicsDI
-  - Omics Discovery Index
-contacts:
-  - category: Organization
-    label: EMBL-EBI
-    contact_details:
-      - contact_type: url
-        value: "https://www.ebi.ac.uk/"
+- OmicsDI
+- Omics Discovery Index
 ---
 
 # OmicsDI

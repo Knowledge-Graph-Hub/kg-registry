@@ -2,54 +2,70 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    label: NCBI Computational Biology Branch
-    contact_details:
-      - contact_type: email
-        value: "zhiyong.lu@nih.gov"
-      - contact_type: url
-        value: "https://www.ncbi.nlm.nih.gov/research/bionlp/"
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: zhiyong.lu@nih.gov
+  - contact_type: url
+    value: https://www.ncbi.nlm.nih.gov/research/bionlp/
+  id: ncbi
+  label: NCBI Computational Biology Branch
 creation_date: '2025-11-08T00:00:00Z'
-description: LitVar is a comprehensive NCBI web service for searching and retrieving variant-specific information from the biomedical literature using advanced text mining and machine learning techniques. Developed by the National Library of Medicine's Computational Biology Branch, LitVar automatically extracts variant-related information from over 35 million PubMed articles and 5.7 million full-text articles in PubMed Central including supplementary materials, with monthly updates to capture the latest research. A key innovation of LitVar is its sophisticated variant normalization system that standardizes different forms of the same variant into unique identifiers, enabling comprehensive search results regardless of which variant nomenclature is used in the query, whether protein level names, DNA level annotations, dbSNP RS identifiers, ClinGen identifiers, or SPDI format. LitVar leverages PubTator, a state-of-the-art literature annotation tool, to identify and display key biological entities including genes, diseases, drugs, chemicals, and mutations within retrieved articles, providing rich contextual information around variants of interest.
+description: LitVar is a comprehensive NCBI web service for searching and retrieving
+  variant-specific information from the biomedical literature using advanced text
+  mining and machine learning techniques. Developed by the National Library of Medicine's
+  Computational Biology Branch, LitVar automatically extracts variant-related information
+  from over 35 million PubMed articles and 5.7 million full-text articles in PubMed
+  Central including supplementary materials, with monthly updates to capture the latest
+  research. A key innovation of LitVar is its sophisticated variant normalization
+  system that standardizes different forms of the same variant into unique identifiers,
+  enabling comprehensive search results regardless of which variant nomenclature is
+  used in the query, whether protein level names, DNA level annotations, dbSNP RS
+  identifiers, ClinGen identifiers, or SPDI format. LitVar leverages PubTator, a state-of-the-art
+  literature annotation tool, to identify and display key biological entities including
+  genes, diseases, drugs, chemicals, and mutations within retrieved articles, providing
+  rich contextual information around variants of interest.
 domains:
-  - genomics
-  - literature
-id: "litvar"
-infores_id: "litvar"
+- genomics
+- literature
+homepage_url: https://www.ncbi.nlm.nih.gov/research/litvar2/
+id: litvar
+infores_id: litvar
 last_modified_date: '2025-11-08T00:00:00Z'
 layout: resource_detail
 name: LitVar
-homepage_url: https://www.ncbi.nlm.nih.gov/research/litvar2/
 products:
-  - category: GraphicalInterface
-    description: Web interface for searching and retrieving variant information from 35+ million PubMed articles with autocomplete, filtering, and entity highlighting
-    format: http
-    id: "litvar.web_interface"
-    name: LitVar Web Interface
-    product_url: https://www.ncbi.nlm.nih.gov/research/litvar2/
-  - category: ProgrammingInterface
-    description: RESTful API providing programmatic access to variant summaries, publications, search, and gene-level variant queries
-    format: http
-    id: "litvar.api"
-    name: LitVar API
-    product_url: https://www.ncbi.nlm.nih.gov/research/litvar2/api
+- category: GraphicalInterface
+  description: Web interface for searching and retrieving variant information from
+    35+ million PubMed articles with autocomplete, filtering, and entity highlighting
+  format: http
+  id: litvar.web_interface
+  name: LitVar Web Interface
+  product_url: https://www.ncbi.nlm.nih.gov/research/litvar2/
+- category: ProgrammingInterface
+  description: RESTful API providing programmatic access to variant summaries, publications,
+    search, and gene-level variant queries
+  format: http
+  id: litvar.api
+  name: LitVar API
+  product_url: https://www.ncbi.nlm.nih.gov/research/litvar2/api
 publications:
-  - authors:
-      - Alexis Allot
-      - Chih-Hsuan Wei
-      - Lon Phan
-      - Timothy Hefferon
-      - Melissa Landrum
-      - Heidi L. Rehm
-      - Zhiyong Lu
-    doi: "10.1038/s41588-023-01414-x"
-    id: "litvar_2023"
-    journal: Nature Genetics
-    preferred: true
-    title: 'Tracking genetic variants in the biomedical literature using LitVar 2.0'
-    year: "2023"
+- authors:
+  - Alexis Allot
+  - Chih-Hsuan Wei
+  - Lon Phan
+  - Timothy Hefferon
+  - Melissa Landrum
+  - Heidi L. Rehm
+  - Zhiyong Lu
+  doi: 10.1038/s41588-023-01414-x
+  id: litvar_2023
+  journal: Nature Genetics
+  preferred: true
+  title: Tracking genetic variants in the biomedical literature using LitVar 2.0
+  year: '2023'
 taxon:
-  - NCBITaxon:9606
+- NCBITaxon:9606
 ---
 
 # LitVar
