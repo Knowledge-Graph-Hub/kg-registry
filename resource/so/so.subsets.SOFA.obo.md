@@ -5,7 +5,6 @@ description: This subset includes only locatable sequence features and is design
 format: obo
 id: so.subsets.SOFA.obo
 name: Sequence Ontology Feature Annotation (SOFA) subset (OBO Format)
-product_file_size: 28447
 product_url: http://purl.obolibrary.org/obo/so/subsets/SOFA.obo
 layout: product_detail
 ---

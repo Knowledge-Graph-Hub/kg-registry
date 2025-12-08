@@ -1,45 +1,46 @@
 ---
-id: mmo
-name: Measurement method ontology
-description: A representation of the variety of methods used to make clinical and
-  phenotype measurements.
 activity_status: active
-homepage_url: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000
-repository: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology
-license:
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biomedical
 contacts:
 - category: Individual
-  label: Jennifer Smith
-  orcid: 0000-0002-6443-9376
   contact_details:
   - contact_type: email
     value: jrsmith@mcw.edu
   - contact_type: github
     value: jrsjrs
+  label: Jennifer Smith
+  orcid: 0000-0002-6443-9376
+description: A representation of the variety of methods used to make clinical and
+  phenotype measurements.
+domains:
+- biomedical
+homepage_url: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000
+id: mmo
+layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+name: Measurement method ontology
 products:
-- id: mmo.owl
-  name: mmo.owl
+- category: OntologyProduct
   description: Measurement method ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: mmo.owl
+  name: mmo.owl
+  product_file_size: 1915558
   product_url: http://purl.obolibrary.org/obo/mmo.owl
-- id: mmo.obo
-  name: mmo.obo
+- category: OntologyProduct
   description: Measurement method ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: mmo.obo
+  name: mmo.obo
+  product_file_size: 503578
   product_url: http://purl.obolibrary.org/obo/mmo.obo
+repository: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology
 ---
-
 ## Description
 
 A representation of the variety of methods used to make clinical and phenotype measurements.

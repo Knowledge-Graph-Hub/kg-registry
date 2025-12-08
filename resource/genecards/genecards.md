@@ -47,9 +47,9 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
@@ -67,9 +67,9 @@ products:
   - disgenet
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
@@ -85,9 +85,9 @@ products:
   - bgee
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
@@ -102,9 +102,9 @@ products:
   - wikipathways
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
@@ -120,9 +120,9 @@ products:
   - biogrid
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
@@ -138,9 +138,9 @@ products:
   - gwascatalog
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
@@ -153,9 +153,9 @@ products:
   - pubmed
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
@@ -168,9 +168,9 @@ products:
   - go
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
@@ -185,9 +185,9 @@ products:
   - drugbank
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
@@ -203,9 +203,9 @@ products:
   - zfin
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
@@ -218,9 +218,9 @@ products:
   - pdbe
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
@@ -233,9 +233,9 @@ products:
   - clinicaltrialsgov
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'

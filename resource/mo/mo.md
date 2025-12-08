@@ -1,35 +1,37 @@
 ---
-id: mo
-name: Microarray experimental conditions
-description: A standardized description of a microarray experiment in support of MAGE
-  v.1.
 activity_status: inactive
-homepage_url: http://mged.sourceforge.net/ontologies/MGEDontology.php
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biomedical
 contacts:
 - category: Individual
-  label: Chris Stoeckert
-  orcid: 0000-0002-5714-991X
   contact_details:
   - contact_type: email
     value: stoeckrt@pcbi.upenn.edu
+  label: Chris Stoeckert
+  orcid: 0000-0002-5714-991X
+description: A standardized description of a microarray experiment in support of MAGE
+  v.1.
+domains:
+- biomedical
+homepage_url: http://mged.sourceforge.net/ontologies/MGEDontology.php
+id: mo
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Microarray experimental conditions
 products:
-- id: mo.owl
-  name: mo.owl
+- category: OntologyProduct
   description: Microarray experimental conditions in OWL format
   format: owl
-  category: OntologyProduct
+  id: mo.owl
+  name: mo.owl
   product_url: http://purl.obolibrary.org/obo/mo.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+    when accessing file'
 ---
-
 ## Description
 
 A standardized description of a microarray experiment in support of MAGE v.1.

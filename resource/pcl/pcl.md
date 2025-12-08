@@ -1,106 +1,137 @@
 ---
-id: pcl
-name: Provisional Cell Ontology
-description: Cell types that are provisionally defined by experimental techniques
-  such as single cell or single nucleus transcriptomics rather than a straightforward
-  & coherent set of properties.
 activity_status: active
-homepage_url: https://github.com/obophenotype/provisional_cell_ontology
-repository: https://github.com/obophenotype/provisional_cell_ontology
-license:
-  id: http://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biological systems
 contacts:
 - category: Individual
-  label: David Osumi-Sutherland
-  orcid: 0000-0002-7073-9172
   contact_details:
   - contact_type: email
     value: davidos@ebi.ac.uk
   - contact_type: github
     value: dosumis
+  label: David Osumi-Sutherland
+  orcid: 0000-0002-7073-9172
+description: Cell types that are provisionally defined by experimental techniques
+  such as single cell or single nucleus transcriptomics rather than a straightforward
+  & coherent set of properties.
+domains:
+- biological systems
+homepage_url: https://github.com/obophenotype/provisional_cell_ontology
+id: pcl
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Provisional Cell Ontology
 products:
-- id: pcl.owl
+- category: OntologyProduct
+  description: Provisional Cell Ontology in OWL format
+  format: owl
+  id: pcl.owl
   name: pcl.owl
-  description: Provisional Cell Ontology in OWL format
-  format: owl
-  category: OntologyProduct
+  product_file_size: 167561057
   product_url: http://purl.obolibrary.org/obo/pcl.owl
-- id: pcl.obo
+- category: OntologyProduct
+  description: Provisional Cell Ontology in OBO format
+  format: obo
+  id: pcl.obo
   name: pcl.obo
-  description: Provisional Cell Ontology in OBO format
-  format: obo
-  category: OntologyProduct
+  product_file_size: 39796128
   product_url: http://purl.obolibrary.org/obo/pcl.obo
-- id: pcl.json
+- category: OntologyProduct
+  description: Provisional Cell Ontology in JSON format
+  format: json
+  id: pcl.json
   name: pcl.json
-  description: Provisional Cell Ontology in JSON format
-  format: json
-  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/pcl.json
-- id: pcl-base.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+    when accessing file'
+- category: OntologyProduct
+  description: Provisional Cell Ontology in OWL format
+  format: owl
+  id: pcl-base.owl
   name: pcl-base.owl
-  description: Provisional Cell Ontology in OWL format
-  format: owl
-  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/pcl-base.owl
-- id: pcl-base.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+    when accessing file'
+- category: OntologyProduct
+  description: Provisional Cell Ontology in OBO format
+  format: obo
+  id: pcl-base.obo
   name: pcl-base.obo
-  description: Provisional Cell Ontology in OBO format
-  format: obo
-  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/pcl-base.obo
-- id: pcl-base.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+    when accessing file'
+- category: OntologyProduct
+  description: Provisional Cell Ontology in JSON format
+  format: json
+  id: pcl-base.json
   name: pcl-base.json
-  description: Provisional Cell Ontology in JSON format
-  format: json
-  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/pcl-base.json
-- id: pcl-full.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+    when accessing file'
+- category: OntologyProduct
+  description: Provisional Cell Ontology in OWL format
+  format: owl
+  id: pcl-full.owl
   name: pcl-full.owl
-  description: Provisional Cell Ontology in OWL format
-  format: owl
-  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/pcl-full.owl
-- id: pcl-full.obo
-  name: pcl-full.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+    when accessing file'
+- category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: pcl-full.obo
+  name: pcl-full.obo
   product_url: http://purl.obolibrary.org/obo/pcl-full.obo
-- id: pcl-full.json
-  name: pcl-full.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+    when accessing file'
+- category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
   format: json
-  category: OntologyProduct
+  id: pcl-full.json
+  name: pcl-full.json
   product_url: http://purl.obolibrary.org/obo/pcl-full.json
-- id: pcl-simple.owl
-  name: pcl-simple.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+    when accessing file'
+- category: OntologyProduct
   description: Provisional Cell Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: pcl-simple.owl
+  name: pcl-simple.owl
   product_url: http://purl.obolibrary.org/obo/pcl-simple.owl
-- id: pcl-simple.obo
-  name: pcl-simple.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+    when accessing file'
+- category: OntologyProduct
   description: Provisional Cell Ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: pcl-simple.obo
+  name: pcl-simple.obo
   product_url: http://purl.obolibrary.org/obo/pcl-simple.obo
-- id: pcl-simple.json
-  name: pcl-simple.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+    when accessing file'
+- category: OntologyProduct
   description: Provisional Cell Ontology in JSON format
   format: json
-  category: OntologyProduct
+  id: pcl-simple.json
+  name: pcl-simple.json
   product_url: http://purl.obolibrary.org/obo/pcl-simple.json
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+    when accessing file'
+repository: https://github.com/obophenotype/provisional_cell_ontology
 ---
-
 ## Description
 
 Cell types that are provisionally defined by experimental techniques such as single cell or single nucleus transcriptomics rather than a straightforward & coherent set of properties.

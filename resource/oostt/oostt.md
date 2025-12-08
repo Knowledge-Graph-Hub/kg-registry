@@ -1,40 +1,40 @@
 ---
-id: oostt
-name: Ontology of Organizational Structures of Trauma centers and Trauma systems
-description: An ontology built for representating the organizational components of
-  trauma centers and trauma systems.
 activity_status: active
-homepage_url: https://github.com/OOSTT/OOSTT
-repository: https://github.com/OOSTT/OOSTT
-license:
-  id: http://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biomedical
 contacts:
 - category: Individual
-  label: Mathias Brochhausen
-  orcid: 0000-0003-1834-3856
   contact_details:
   - contact_type: email
     value: mbrochhausen@gmail.com
   - contact_type: github
     value: mbrochhausen
+  label: Mathias Brochhausen
+  orcid: 0000-0003-1834-3856
+description: An ontology built for representating the organizational components of
+  trauma centers and trauma systems.
+domains:
+- biomedical
+homepage_url: https://github.com/OOSTT/OOSTT
+id: oostt
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Ontology of Organizational Structures of Trauma centers and Trauma systems
 products:
-- id: oostt.owl
-  name: oostt.owl
+- category: OntologyProduct
   description: Ontology of Organizational Structures of Trauma centers and Trauma
     systems in OWL format
   format: owl
-  category: OntologyProduct
+  id: oostt.owl
+  name: oostt.owl
+  product_file_size: 78721
   product_url: http://purl.obolibrary.org/obo/oostt.owl
+repository: https://github.com/OOSTT/OOSTT
 ---
-
 ## Description
 
 An ontology built for representating the organizational components of trauma centers and trauma systems.

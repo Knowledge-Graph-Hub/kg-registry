@@ -1044,11 +1044,11 @@ products:
   - disgenet
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
 - category: Product
   description: Genetic variant data from ClinVar, dbSNP, GWAS Catalog and other variant
@@ -1062,11 +1062,11 @@ products:
   - gwascatalog
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
 publications:
 - authors:
@@ -1125,7 +1125,6 @@ publications:
   title: ClinVar - improving access to variant interpretations and supporting evidence
   year: '2018'
 ---
-
 # ClinVar
 
 ClinVar is a freely accessible, public archive maintained by the National Center for Biotechnology Information (NCBI) that catalogs the relationships between human genetic variations and phenotypes, with supporting evidence. It serves as a critical resource for the clinical genetics community by providing a centralized repository of variant interpretations and their clinical significance.

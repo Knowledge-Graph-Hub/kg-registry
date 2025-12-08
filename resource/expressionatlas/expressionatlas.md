@@ -80,11 +80,11 @@ products:
   name: Expression Atlas R Data Objects
   product_url: https://www.ebi.ac.uk/gxa/help/r-data-objects.html
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 500 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 500 error
+  - File was not able to be retrieved when checked on 2025-12-07_ HTTP 500 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 500 error
     when accessing file'
 - category: Product
   description: Baseline expression summary data across human tissues and cell types
@@ -385,7 +385,6 @@ publications:
   year: '2020'
 repository: https://github.com/ebi-gene-expression-group
 ---
-
 # Expression Atlas
 
 Expression Atlas is EMBL-EBI's comprehensive knowledgebase for gene and protein expression data, serving as a major aggregator of transcriptomic information across the tree of life. The resource provides curated, standardized, and re-analyzed gene expression data from thousands of experiments covering multiple species, developmental stages, tissues, cell types, diseases, and experimental perturbations.

@@ -1,34 +1,36 @@
 ---
-id: sep
-name: Sample processing and separation techniques
-description: A structured controlled vocabulary for the annotation of sample processing
-  and separation techniques in scientific experiments.
 activity_status: inactive
-homepage_url: http://psidev.info/index.php?q=node/312
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biomedical
 contacts:
 - category: Individual
-  label: SEP developers via the PSI and MSI mailing lists
   contact_details:
   - contact_type: email
     value: psidev-gps-dev@lists.sourceforge.net
+  label: SEP developers via the PSI and MSI mailing lists
+description: A structured controlled vocabulary for the annotation of sample processing
+  and separation techniques in scientific experiments.
+domains:
+- biomedical
+homepage_url: http://psidev.info/index.php?q=node/312
+id: sep
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Sample processing and separation techniques
 products:
-- id: sep.owl
-  name: sep.owl
+- category: OntologyProduct
   description: Sample processing and separation techniques in OWL format
   format: owl
-  category: OntologyProduct
+  id: sep.owl
+  name: sep.owl
   product_url: http://purl.obolibrary.org/obo/sep.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
+    when accessing file'
 ---
-
 ## Description
 
 A structured controlled vocabulary for the annotation of sample processing and separation techniques in scientific experiments.

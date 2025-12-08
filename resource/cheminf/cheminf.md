@@ -1,39 +1,39 @@
 ---
-id: cheminf
-name: Chemical Information Ontology
-description: Includes terms for the descriptors commonly used in cheminformatics software
-  applications and the algorithms which generate them.
 activity_status: active
-homepage_url: https://github.com/semanticchemistry/semanticchemistry
-repository: https://github.com/semanticchemistry/semanticchemistry
-license:
-  id: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- chemistry and biochemistry
 contacts:
 - category: Individual
-  label: Egon Willighagen
-  orcid: 0000-0001-7542-0286
   contact_details:
   - contact_type: email
     value: egon.willighagen@gmail.com
   - contact_type: github
     value: egonw
+  label: Egon Willighagen
+  orcid: 0000-0001-7542-0286
+description: Includes terms for the descriptors commonly used in cheminformatics software
+  applications and the algorithms which generate them.
+domains:
+- chemistry and biochemistry
+homepage_url: https://github.com/semanticchemistry/semanticchemistry
+id: cheminf
+layout: resource_detail
+license:
+  id: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+name: Chemical Information Ontology
 products:
-- id: cheminf.owl
-  name: cheminf.owl
+- category: OntologyProduct
   description: Chemical Information Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: cheminf.owl
+  name: cheminf.owl
+  product_file_size: 22830
   product_url: http://purl.obolibrary.org/obo/cheminf.owl
+repository: https://github.com/semanticchemistry/semanticchemistry
 ---
-
 ## Description
 
 Includes terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them.

@@ -63,11 +63,11 @@ products:
   name: CFDE Gene Set Collections
   product_url: https://cfde.cloud/gse/downloads/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-07_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
     when accessing file'
 publications:
 - authors:

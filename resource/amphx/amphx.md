@@ -1,45 +1,46 @@
 ---
-id: amphx
-name: The Amphioxus Development and Anatomy Ontology
-description: An ontology for the development and anatomy of Amphioxus (Branchiostoma
-  lanceolatum).
 activity_status: active
-homepage_url: https://github.com/EBISPOT/amphx_ontology
-repository: https://github.com/EBISPOT/amphx_ontology
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- anatomy and development
 contacts:
 - category: Individual
-  label: Hector Escriva
-  orcid: 0000-0001-7577-5028
   contact_details:
   - contact_type: email
     value: hescriva@obs-banyuls.fr
   - contact_type: github
     value: hescriva
+  label: Hector Escriva
+  orcid: 0000-0001-7577-5028
+description: An ontology for the development and anatomy of Amphioxus (Branchiostoma
+  lanceolatum).
+domains:
+- anatomy and development
+homepage_url: https://github.com/EBISPOT/amphx_ontology
+id: amphx
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: The Amphioxus Development and Anatomy Ontology
 products:
-- id: amphx.owl
-  name: amphx.owl
+- category: OntologyProduct
   description: The Amphioxus Development and Anatomy Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: amphx.owl
+  name: amphx.owl
+  product_file_size: 13761
   product_url: http://purl.obolibrary.org/obo/amphx.owl
-- id: amphx.obo
-  name: amphx.obo
+- category: OntologyProduct
   description: The Amphioxus Development and Anatomy Ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: amphx.obo
+  name: amphx.obo
+  product_file_size: 8608
   product_url: http://purl.obolibrary.org/obo/amphx.obo
+repository: https://github.com/EBISPOT/amphx_ontology
 ---
-
 ## Description
 
 An ontology for the development and anatomy of Amphioxus (Branchiostoma lanceolatum).

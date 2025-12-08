@@ -157,11 +157,11 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
 publications:
 - doi: 10.1093/nar/gkv1189
@@ -174,7 +174,6 @@ publications:
     of genomes, transcripts and proteins'
 repository: https://ftp.ncbi.nlm.nih.gov/refseq/
 ---
-
 # RefSeq: NCBI Reference Sequence Database
 
 The NCBI Reference Sequence Database (RefSeq) provides a comprehensive, integrated, non-redundant, well-annotated set of reference sequences including genomic, transcript, and protein sequences. RefSeq standards serve as a foundation for functional annotation of genomes and provide stable reference points for mutation analysis, gene expression studies, and polymorphism discovery.

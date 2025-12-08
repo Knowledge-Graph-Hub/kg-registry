@@ -1,44 +1,45 @@
 ---
-id: eco
-name: Evidence and Conclusion Ontology
-description: An ontology for experimental and other evidence statements.
 activity_status: active
-homepage_url: https://www.evidenceontology.org
-repository: https://github.com/evidenceontology/evidenceontology
-license:
-  id: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biomedical
 contacts:
 - category: Individual
-  label: Michelle Giglio
-  orcid: 0000-0001-7628-5565
   contact_details:
   - contact_type: email
     value: mgiglio@som.umaryland.edu
   - contact_type: github
     value: mgiglio99
+  label: Michelle Giglio
+  orcid: 0000-0001-7628-5565
+description: An ontology for experimental and other evidence statements.
+domains:
+- biomedical
+homepage_url: https://www.evidenceontology.org
+id: eco
+layout: resource_detail
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+name: Evidence and Conclusion Ontology
 products:
-- id: eco.owl
-  name: eco.owl
+- category: OntologyProduct
   description: Evidence and Conclusion Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: eco.owl
+  name: eco.owl
+  product_file_size: 355446
   product_url: http://purl.obolibrary.org/obo/eco.owl
-- id: eco.obo
-  name: eco.obo
+- category: OntologyProduct
   description: Evidence and Conclusion Ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: eco.obo
+  name: eco.obo
+  product_file_size: 157046
   product_url: http://purl.obolibrary.org/obo/eco.obo
+repository: https://github.com/evidenceontology/evidenceontology
 ---
-
 ## Description
 
 An ontology for experimental and other evidence statements.

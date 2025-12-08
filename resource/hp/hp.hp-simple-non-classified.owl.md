@@ -5,7 +5,6 @@ description: Simple, manually curated version of the ontology without the use of
 format: owl
 id: hp.hp-simple-non-classified.owl
 name: HPO simple, manually classified, without imports in OWL format
-product_file_size: 29314717
 product_url: http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.owl
 layout: product_detail
 ---

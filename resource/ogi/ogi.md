@@ -1,37 +1,39 @@
 ---
-id: ogi
-name: Ontology for genetic interval
-description: An ontology that formalizes the genomic element by defining an upper
-  class genetic interval
 activity_status: inactive
-homepage_url: https://code.google.com/p/ontology-for-genetic-interval/
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- chemistry and biochemistry
 contacts:
 - category: Individual
-  label: Asiyah Yu Lin
-  orcid: 0000-0002-5379-5359
   contact_details:
   - contact_type: email
     value: linikujp@gmail.com
   - contact_type: github
     value: linikujp
+  label: Asiyah Yu Lin
+  orcid: 0000-0002-5379-5359
+description: An ontology that formalizes the genomic element by defining an upper
+  class genetic interval
+domains:
+- chemistry and biochemistry
+homepage_url: https://code.google.com/p/ontology-for-genetic-interval/
+id: ogi
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Ontology for genetic interval
 products:
-- id: ogi.owl
-  name: ogi.owl
+- category: OntologyProduct
   description: Ontology for genetic interval in OWL format
   format: owl
-  category: OntologyProduct
+  id: ogi.owl
+  name: ogi.owl
   product_url: http://purl.obolibrary.org/obo/ogi.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+    when accessing file'
 ---
-
 ## Description
 
 An ontology that formalizes the genomic element by defining an upper class genetic interval

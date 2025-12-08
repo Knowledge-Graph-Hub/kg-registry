@@ -5,7 +5,6 @@ description: Version of the ontology corresponding to the primary release (hp.ow
 format: owl
 id: hp.hp-international.owl
 name: HPO International Edition in OWL format
-product_file_size: 207067457
 product_url: http://purl.obolibrary.org/obo/hp/hp-international.owl
 layout: product_detail
 ---

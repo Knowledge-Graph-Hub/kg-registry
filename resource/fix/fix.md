@@ -1,36 +1,41 @@
 ---
-id: fix
-name: Physico-chemical methods and properties
-description: An ontology of physico-chemical methods and properties.
 activity_status: orphaned
-homepage_url: http://www.ebi.ac.uk/chebi
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- chemistry and biochemistry
 contacts:
 - category: Individual
   label: chEBI
+description: An ontology of physico-chemical methods and properties.
+domains:
+- chemistry and biochemistry
+homepage_url: http://www.ebi.ac.uk/chebi
+id: fix
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Physico-chemical methods and properties
 products:
-- id: fix.owl
-  name: fix.owl
+- category: OntologyProduct
   description: Physico-chemical methods and properties in OWL format
   format: owl
-  category: OntologyProduct
+  id: fix.owl
+  name: fix.owl
   product_url: http://purl.obolibrary.org/obo/fix.owl
-- id: fix.obo
-  name: fix.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
+    when accessing file'
+- category: OntologyProduct
   description: Physico-chemical methods and properties in OBO format
   format: obo
-  category: OntologyProduct
+  id: fix.obo
+  name: fix.obo
   product_url: http://purl.obolibrary.org/obo/fix.obo
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-08: Error connecting
+    to URL: No connection adapters were found for ''ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'''
 ---
-
 ## Description
 
 An ontology of physico-chemical methods and properties.

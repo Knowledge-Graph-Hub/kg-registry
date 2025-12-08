@@ -1,45 +1,46 @@
 ---
-id: cmo
-name: Clinical measurement ontology
-description: Morphological and physiological measurement records generated from clinical
-  and model organism research and health programs.
 activity_status: active
-homepage_url: http://rgd.mcw.edu/rgdweb/ontology/search.html
-repository: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology
-license:
-  id: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biomedical
 contacts:
 - category: Individual
-  label: Jennifer Smith
-  orcid: 0000-0002-6443-9376
   contact_details:
   - contact_type: email
     value: jrsmith@mcw.edu
   - contact_type: github
     value: jrsjrs
+  label: Jennifer Smith
+  orcid: 0000-0002-6443-9376
+description: Morphological and physiological measurement records generated from clinical
+  and model organism research and health programs.
+domains:
+- biomedical
+homepage_url: http://rgd.mcw.edu/rgdweb/ontology/search.html
+id: cmo
+layout: resource_detail
+license:
+  id: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+name: Clinical measurement ontology
 products:
-- id: cmo.owl
-  name: cmo.owl
+- category: OntologyProduct
   description: Clinical measurement ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: cmo.owl
+  name: cmo.owl
+  product_file_size: 9357808
   product_url: http://purl.obolibrary.org/obo/cmo.owl
-- id: cmo.obo
-  name: cmo.obo
+- category: OntologyProduct
   description: Clinical measurement ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: cmo.obo
+  name: cmo.obo
+  product_file_size: 2569518
   product_url: http://purl.obolibrary.org/obo/cmo.obo
+repository: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology
 ---
-
 ## Description
 
 Morphological and physiological measurement records generated from clinical and model organism research and health programs.

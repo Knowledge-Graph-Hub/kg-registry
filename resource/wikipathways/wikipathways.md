@@ -419,11 +419,11 @@ products:
   - wikipathways
   product_url: https://www.genecards.org/
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
+    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
 - category: Product
   description: WikiPathways data for all targets

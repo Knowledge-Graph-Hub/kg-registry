@@ -5,7 +5,6 @@ description: The main ontology classes and their hierarchies, without references
 format: owl
 id: mondo.mondo-simple.owl
 name: Mondo Simple Release
-product_file_size: 212732382
 product_url: http://purl.obolibrary.org/obo/mondo/mondo-simple.owl
 layout: product_detail
 ---

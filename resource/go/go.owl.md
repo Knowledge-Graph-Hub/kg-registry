@@ -5,7 +5,6 @@ description: The main ontology in OWL. This is self contained and does not have 
 format: owl
 id: go.owl
 name: GO (OWL edition)
-product_file_size: 127608493
 product_url: http://purl.obolibrary.org/obo/go.owl
 layout: product_detail
 ---

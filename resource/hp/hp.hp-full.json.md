@@ -5,7 +5,6 @@ description: Version of the ontology automatically classified with the use of a 
 format: json
 id: hp.hp-full.json
 name: HPO full release in obographs JSON format
-product_file_size: 42768508
 product_url: http://purl.obolibrary.org/obo/hp/hp-full.json
 layout: product_detail
 ---

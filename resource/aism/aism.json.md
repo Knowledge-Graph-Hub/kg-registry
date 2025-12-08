@@ -5,7 +5,6 @@ description: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM
 format: json
 id: aism.json
 name: aism.json
-product_file_size: 1272055
 product_url: http://purl.obolibrary.org/obo/aism.json
 layout: product_detail
 ---

@@ -1,39 +1,41 @@
 ---
-id: fbsp
-name: Fly taxonomy
-description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli)
-  and of other taxa referred to in FlyBase.
 activity_status: inactive
-homepage_url: http://www.flybase.org/
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biological systems
-taxon:
-- NCBITaxon:7227
 contacts:
 - category: Individual
-  label: Clare Pilgrim
-  orcid: 0000-0002-1373-1705
   contact_details:
   - contact_type: email
     value: cp390@cam.ac.uk
   - contact_type: github
     value: Clare72
+  label: Clare Pilgrim
+  orcid: 0000-0002-1373-1705
+description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli)
+  and of other taxa referred to in FlyBase.
+domains:
+- biological systems
+homepage_url: http://www.flybase.org/
+id: fbsp
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Fly taxonomy
 products:
-- id: fbsp.owl
-  name: fbsp.owl
+- category: OntologyProduct
   description: Fly taxonomy in OWL format
   format: owl
-  category: OntologyProduct
+  id: fbsp.owl
+  name: fbsp.owl
   product_url: http://purl.obolibrary.org/obo/fbsp.owl
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
+    when accessing file'
+taxon:
+- NCBITaxon:7227
 ---
-
 ## Description
 
 The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli) and of other taxa referred to in FlyBase.

@@ -1,42 +1,42 @@
 ---
-id: cto
-name: 'CTO: Core Ontology of Clinical Trials'
-description: The core Ontology of Clinical Trials (CTO) will serve as a structured
-  resource integrating basic terms and concepts in the context of clinical trials.
-  Thereby covering clinicaltrails.gov. CoreCTO will serve as a basic ontology to generate
-  extended versions for specific applications such as annotation of variables in study
-  documents from clinical trials.
 activity_status: active
-homepage_url: https://github.com/ClinicalTrialOntology/CTO/
-repository: https://github.com/ClinicalTrialOntology/CTO
-license:
-  id: http://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biomedical
 contacts:
 - category: Individual
-  label: Dr. Alpha Tom Kodamullil
-  orcid: 0000-0001-9896-3531
   contact_details:
   - contact_type: email
     value: alpha.tom.kodamullil@scai.fraunhofer.de
   - contact_type: github
     value: akodamullil
+  label: Dr. Alpha Tom Kodamullil
+  orcid: 0000-0001-9896-3531
+description: The core Ontology of Clinical Trials (CTO) will serve as a structured
+  resource integrating basic terms and concepts in the context of clinical trials.
+  Thereby covering clinicaltrails.gov. CoreCTO will serve as a basic ontology to generate
+  extended versions for specific applications such as annotation of variables in study
+  documents from clinical trials.
+domains:
+- biomedical
+homepage_url: https://github.com/ClinicalTrialOntology/CTO/
+id: cto
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: 'CTO: Core Ontology of Clinical Trials'
 products:
-- id: cto.owl
-  name: cto.owl
+- category: OntologyProduct
   description: 'CTO: Core Ontology of Clinical Trials in OWL format'
   format: owl
-  category: OntologyProduct
+  id: cto.owl
+  name: cto.owl
+  product_file_size: 96492
   product_url: http://purl.obolibrary.org/obo/cto.owl
+repository: https://github.com/ClinicalTrialOntology/CTO
 ---
-
 ## Description
 
 The core Ontology of Clinical Trials (CTO) will serve as a structured resource integrating basic terms and concepts in the context of clinical trials. Thereby covering clinicaltrails.gov. CoreCTO will serve as a basic ontology to generate extended versions for specific applications such as annotation of variables in study documents from clinical trials.

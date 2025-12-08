@@ -1,45 +1,46 @@
 ---
-id: plana
-name: planaria-ontology
-description: PLANA, the planarian anatomy ontology, encompasses the anatomy and life
-  cycle stages for both __Schmidtea mediterranea__ biotypes.
 activity_status: active
-homepage_url: https://github.com/obophenotype/planaria-ontology
-repository: https://github.com/obophenotype/planaria-ontology
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- anatomy and development
 contacts:
 - category: Individual
-  label: Sofia Robb
-  orcid: 0000-0002-3528-5267
   contact_details:
   - contact_type: email
     value: smr@stowers.org
   - contact_type: github
     value: srobb1
+  label: Sofia Robb
+  orcid: 0000-0002-3528-5267
+description: PLANA, the planarian anatomy ontology, encompasses the anatomy and life
+  cycle stages for both __Schmidtea mediterranea__ biotypes.
+domains:
+- anatomy and development
+homepage_url: https://github.com/obophenotype/planaria-ontology
+id: plana
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: planaria-ontology
 products:
-- id: plana.owl
-  name: plana.owl
+- category: OntologyProduct
   description: planaria-ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: plana.owl
+  name: plana.owl
+  product_file_size: 178099
   product_url: http://purl.obolibrary.org/obo/plana.owl
-- id: plana.obo
-  name: plana.obo
+- category: OntologyProduct
   description: planaria-ontology in OBO format
   format: obo
-  category: OntologyProduct
+  id: plana.obo
+  name: plana.obo
+  product_file_size: 120490
   product_url: http://purl.obolibrary.org/obo/plana.obo
+repository: https://github.com/obophenotype/planaria-ontology
 ---
-
 ## Description
 
 PLANA, the planarian anatomy ontology, encompasses the anatomy and life cycle stages for both __Schmidtea mediterranea__ biotypes.

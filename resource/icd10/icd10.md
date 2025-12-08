@@ -66,7 +66,7 @@ products:
   name: ICD-10 Training
   product_url: https://icd.who.int/training/icd10training/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-05_ Error connecting
     to URL_ HTTPSConnectionPool(host='icd.who.int', port=443)_ Max retries exceeded
     with url_ /training/icd10training/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
@@ -76,16 +76,16 @@ products:
     with url_ /training/icd10training/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
     issuer certificate (_ssl.c_1000)')))
-  - File was not able to be retrieved when checked on 2025-12-05_ Error connecting
+  - File was not able to be retrieved when checked on 2025-12-07_ Error connecting
     to URL_ HTTPSConnectionPool(host='icd.who.int', port=443)_ Max retries exceeded
     with url_ /training/icd10training/ (Caused by SSLError(SSLCertVerificationError(1,
     '[SSL_ CERTIFICATE_VERIFY_FAILED] certificate verify failed_ unable to get local
-    issuer certificate (_ssl.c_1017)')))
-  - 'File was not able to be retrieved when checked on 2025-12-07: Error connecting
+    issuer certificate (_ssl.c_1000)')))
+  - 'File was not able to be retrieved when checked on 2025-12-08: Error connecting
     to URL: HTTPSConnectionPool(host=''icd.who.int'', port=443): Max retries exceeded
     with url: /training/icd10training/ (Caused by SSLError(SSLCertVerificationError(1,
     ''[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local
-    issuer certificate (_ssl.c:1000)'')))'
+    issuer certificate (_ssl.c:1017)'')))'
 - category: MappingProduct
   description: The biannual release of the SNOMED CT to ICD-10-CM Map, which maps
     SNOMED CT concepts to ICD-10-CM codes.
@@ -112,11 +112,11 @@ products:
   secondary_source:
   - athena
   warnings:
+  - File was not able to be retrieved when checked on 2025-12-07_ Error connecting
+    to URL_ Exceeded 30 redirects.
   - File was not able to be retrieved when checked on 2025-12-05_ Error connecting
     to URL_ Exceeded 30 redirects.
-  - File was not able to be retrieved when checked on 2025-12-04_ Error connecting
-    to URL_ Exceeded 30 redirects.
-  - 'File was not able to be retrieved when checked on 2025-12-07: Error connecting
+  - 'File was not able to be retrieved when checked on 2025-12-08: Error connecting
     to URL: Exceeded 30 redirects.'
 - category: GraphProduct
   description: Turnkey neo4j distributions that deploy fully-indexed, standalone UBKG
@@ -255,7 +255,6 @@ synonyms:
 - ICD10
 - International Classification of Diseases 10th Revision
 ---
-
 # ICD-10
 
 The International Classification of Diseases, 10th Revision (ICD-10), is the WHO's standardized system for disease classification used worldwide for over 30 years.

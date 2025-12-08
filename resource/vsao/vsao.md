@@ -1,36 +1,36 @@
 ---
-id: vsao
-name: Vertebrate Skeletal Anatomy Ontology-
-description: Vertebrate skeletal anatomy ontology.
 activity_status: inactive
-homepage_url: https://www.nescent.org/phenoscape/Main_Page
-license:
-  id: ''
-  label: Not specified
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- anatomy and development
-taxon:
-- NCBITaxon:7742
 contacts:
 - category: Individual
-  label: Wasila Dahdul
-  orcid: 0000-0003-3162-7490
   contact_details:
   - contact_type: email
     value: wasila.dahdul@usd.edu
+  label: Wasila Dahdul
+  orcid: 0000-0003-3162-7490
+description: Vertebrate skeletal anatomy ontology.
+domains:
+- anatomy and development
+homepage_url: https://www.nescent.org/phenoscape/Main_Page
+id: vsao
+layout: resource_detail
+license:
+  id: ''
+  label: Not specified
+name: Vertebrate Skeletal Anatomy Ontology-
 products:
-- id: vsao.owl
-  name: vsao.owl
+- category: OntologyProduct
   description: Vertebrate Skeletal Anatomy Ontology- in OWL format
   format: owl
-  category: OntologyProduct
+  id: vsao.owl
+  name: vsao.owl
+  product_file_size: 600603
   product_url: http://purl.obolibrary.org/obo/vsao.owl
+taxon:
+- NCBITaxon:7742
 ---
-
 ## Description
 
 Vertebrate skeletal anatomy ontology.

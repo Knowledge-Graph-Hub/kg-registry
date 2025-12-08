@@ -39,11 +39,11 @@ products:
   - plncdb
   product_url: http://plncdb.tobaccodb.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-12-07_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
 - category: GraphicalInterface
   description: JBrowse genome browser for visualizing lncRNA locations, expression

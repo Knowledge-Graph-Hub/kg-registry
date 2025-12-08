@@ -1,39 +1,39 @@
 ---
-id: iceo
-name: Integrative and Conjugative Element Ontology
-description: ICEO is an integrated biological ontology for the description of bacterial
-  integrative and conjugative elements (ICEs).
 activity_status: active
-homepage_url: https://github.com/ontoice/ICEO
-repository: https://github.com/ontoice/ICEO
-license:
-  id: http://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+category: Ontology
 collection:
 - obo-foundry
-layout: resource_detail
-category: Ontology
-domains:
-- biological systems
 contacts:
 - category: Individual
-  label: Meng LIU
-  orcid: 0000-0003-3781-6962
   contact_details:
   - contact_type: email
     value: liumeng94@sjtu.edu.cn
   - contact_type: github
     value: Lemon-Liu
+  label: Meng LIU
+  orcid: 0000-0003-3781-6962
+description: ICEO is an integrated biological ontology for the description of bacterial
+  integrative and conjugative elements (ICEs).
+domains:
+- biological systems
+homepage_url: https://github.com/ontoice/ICEO
+id: iceo
+layout: resource_detail
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+name: Integrative and Conjugative Element Ontology
 products:
-- id: iceo.owl
-  name: iceo.owl
+- category: OntologyProduct
   description: Integrative and Conjugative Element Ontology in OWL format
   format: owl
-  category: OntologyProduct
+  id: iceo.owl
+  name: iceo.owl
+  product_file_size: 1257537
   product_url: http://purl.obolibrary.org/obo/iceo.owl
+repository: https://github.com/ontoice/ICEO
 ---
-
 ## Description
 
 ICEO is an integrated biological ontology for the description of bacterial integrative and conjugative elements (ICEs).
