@@ -6,6 +6,7 @@ contacts:
   contact_details:
   - contact_type: url
     value: https://rnacentral.org/contact
+  id: ebi
   label: RNAcentral Consortium (EMBL-EBI)
 creation_date: '2025-07-17T00:00:00Z'
 description: RNAcentral is the international non-coding RNA (ncRNA) sequence database
@@ -349,6 +350,7 @@ products:
   - rnacentral
   product_url: https://www.ribocentre.org/search.html
 ---
+
 # RNAcentral
 
 ## Overview

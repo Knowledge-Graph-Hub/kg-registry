@@ -1,47 +1,46 @@
 ---
+id: poro
+name: Porifera Ontology
+description: An ontology covering the anatomy of the taxon Porifera (sponges)
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/obophenotype/porifera-ontology
+repository: https://github.com/obophenotype/porifera-ontology
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- anatomy and development
+taxon:
+- NCBITaxon:6040
 contacts:
 - category: Individual
+  label: Bob Thacker
+  orcid: 0000-0002-9654-0073
   contact_details:
   - contact_type: email
     value: robert.thacker@stonybrook.edu
   - contact_type: github
     value: bobthacker
-  label: Bob Thacker
-  orcid: 0000-0002-9654-0073
-description: An ontology covering the anatomy of the taxon Porifera (sponges)
-domains:
-- anatomy and development
-homepage_url: https://github.com/obophenotype/porifera-ontology
-id: poro
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Porifera Ontology
 products:
-- category: OntologyProduct
+- id: poro.owl
+  name: poro.owl
   description: Porifera Ontology in OWL format
   format: owl
-  id: poro.owl
-  name: poro.owl
-  product_file_size: 62597
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/poro.owl
-- category: OntologyProduct
+- id: poro.obo
+  name: poro.obo
   description: Porifera Ontology in OBO format
   format: obo
-  id: poro.obo
-  name: poro.obo
-  product_file_size: 54580
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/poro.obo
-repository: https://github.com/obophenotype/porifera-ontology
-taxon:
-- NCBITaxon:6040
 ---
+
 ## Description
 
 An ontology covering the anatomy of the taxon Porifera (sponges)

@@ -1,38 +1,38 @@
 ---
+id: ovae
+name: Ontology of Vaccine Adverse Events
+description: A biomedical ontology in the domain of vaccine adverse events.
 activity_status: active
-category: Ontology
+homepage_url: http://www.violinet.org/ovae/
+repository: https://github.com/OVAE-Ontology/ovae
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
 contacts:
 - category: Individual
+  label: Yongqunh He
+  orcid: 0000-0001-9189-9661
   contact_details:
   - contact_type: email
     value: yongqunh@med.umich.edu
   - contact_type: github
     value: yongqunh
-  label: Yongqunh He
-  orcid: 0000-0001-9189-9661
-description: A biomedical ontology in the domain of vaccine adverse events.
-domains:
-- biomedical
-homepage_url: http://www.violinet.org/ovae/
-id: ovae
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Ontology of Vaccine Adverse Events
 products:
-- category: OntologyProduct
+- id: ovae.owl
+  name: ovae.owl
   description: Ontology of Vaccine Adverse Events in OWL format
   format: owl
-  id: ovae.owl
-  name: ovae.owl
-  product_file_size: 286812
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/ovae.owl
-repository: https://github.com/OVAE-Ontology/ovae
 ---
+
 ## Description
 
 A biomedical ontology in the domain of vaccine adverse events.

@@ -1,38 +1,38 @@
 ---
+id: chmo
+name: Chemical Methods Ontology
+description: CHMO, the chemical methods ontology, describes methods used to
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/rsc-ontologies/rsc-cmo
+repository: https://github.com/rsc-ontologies/rsc-cmo
+license:
+  id: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
 contacts:
 - category: Individual
+  label: Colin Batchelor
+  orcid: 0000-0001-5985-7429
   contact_details:
   - contact_type: email
     value: batchelorc@rsc.org
   - contact_type: github
     value: batchelorc
-  label: Colin Batchelor
-  orcid: 0000-0001-5985-7429
-description: CHMO, the chemical methods ontology, describes methods used to
-domains:
-- biomedical
-homepage_url: https://github.com/rsc-ontologies/rsc-cmo
-id: chmo
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Chemical Methods Ontology
 products:
-- category: OntologyProduct
+- id: chmo.owl
+  name: chmo.owl
   description: Chemical Methods Ontology in OWL format
   format: owl
-  id: chmo.owl
-  name: chmo.owl
-  product_file_size: 460248
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/chmo.owl
-repository: https://github.com/rsc-ontologies/rsc-cmo
 ---
+
 ## Description
 
 CHMO, the chemical methods ontology, describes methods used to

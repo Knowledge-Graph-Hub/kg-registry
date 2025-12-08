@@ -1,46 +1,45 @@
 ---
+id: upa
+name: Unipathway
+description: A manually curated resource for the representation and annotation of
+  metabolic pathways
 activity_status: inactive
-category: Ontology
+homepage_url: https://github.com/geneontology/unipathway
+repository: https://github.com/geneontology/unipathway
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biological systems
 contacts:
 - category: Individual
+  label: Anne Morgat
+  orcid: 0000-0002-1216-2969
   contact_details:
   - contact_type: email
     value: Anne.Morgat@sib.swiss
   - contact_type: github
     value: amorgat
-  label: Anne Morgat
-  orcid: 0000-0002-1216-2969
-description: A manually curated resource for the representation and annotation of
-  metabolic pathways
-domains:
-- biological systems
-homepage_url: https://github.com/geneontology/unipathway
-id: upa
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Unipathway
 products:
-- category: OntologyProduct
+- id: upa.owl
+  name: upa.owl
   description: Unipathway in OWL format
   format: owl
-  id: upa.owl
-  name: upa.owl
-  product_file_size: 798911
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/upa.owl
-- category: OntologyProduct
+- id: upa.obo
+  name: upa.obo
   description: Unipathway in OBO format
   format: obo
-  id: upa.obo
-  name: upa.obo
-  product_file_size: 454223
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/upa.obo
-repository: https://github.com/geneontology/unipathway
 ---
+
 ## Description
 
 A manually curated resource for the representation and annotation of metabolic pathways

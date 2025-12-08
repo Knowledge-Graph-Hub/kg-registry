@@ -4,6 +4,7 @@ description: For a description of the format see https://github.com/geneontology
 format: json
 id: mp.json
 name: MP (obographs JSON edition)
+product_file_size: 60002654
 product_url: http://purl.obolibrary.org/obo/mp.json
 layout: product_detail
 ---

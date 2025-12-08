@@ -6,6 +6,7 @@ contacts:
   contact_details:
   - contact_type: email
     value: chembl-help@ebi.ac.uk
+  id: ebi
   label: ChEMBL
 description: ChEMBL is a manually curated database of bioactive molecules with drug-like
   properties. It brings together chemical, bioactivity and genomic data to aid the
@@ -369,7 +370,7 @@ publications:
   - Magarinos MP
   - Bosc N
   - Arcila R
-  - "Kizil\xF6ren T"
+  - Kizilören T
   - Gaulton A
   - Bento AP
   - Adasme MF
@@ -384,6 +385,7 @@ publications:
   year: '2023'
 repository: https://github.com/chembl
 ---
+
 ChEMBL is a manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs.
 
 The database contains detailed information on:

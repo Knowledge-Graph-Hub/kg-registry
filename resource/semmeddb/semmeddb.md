@@ -6,6 +6,7 @@ contacts:
   contact_details:
   - contact_type: email
     value: support@nlm.nih.gov
+  id: ncbi
   label: National Library of Medicine
 description: SemMedDB is a repository of semantic predications (subject-predicate-object
   triples) extracted from biomedical literature by SemRep, a natural language processing
@@ -39,7 +40,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
     when accessing file'
 - category: Product
   description: CSV file containing citation information for all PubMed articles in
@@ -51,7 +54,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
     when accessing file'
 - category: Product
   description: CSV file containing entity information with UMLS concept identifiers,
@@ -63,7 +68,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
     when accessing file'
 - category: Product
   description: CSV file containing semantic predications with subject-predicate-object
@@ -75,7 +82,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
     when accessing file'
 - category: Product
   description: CSV file containing sentence information from PubMed citations
@@ -86,7 +95,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
     when accessing file'
 - category: ProcessProduct
   description: The SemRep natural language processing system that extracts semantic
@@ -251,6 +262,7 @@ publications:
     language processing: interpreting hypernymic propositions in biomedical text'
   year: '2003'
 ---
+
 ## Overview
 
 The Semantic MEDLINE Database (SemMedDB) is a large-scale repository of semantic predications (subject-predicate-object triples) extracted from the biomedical literature by the SemRep natural language processing system. It provides a structured representation of biomedical knowledge contained in PubMed citations, where concepts are normalized to the Unified Medical Language System (UMLS) Metathesaurus, and their relationships are based on the UMLS Semantic Network.

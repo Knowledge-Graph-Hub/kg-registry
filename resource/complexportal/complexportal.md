@@ -8,6 +8,7 @@ contacts:
     value: intact-help@ebi.ac.uk
   - contact_type: url
     value: https://www.ebi.ac.uk/support/complexportal
+  id: ebi
   label: EMBL-EBI
 creation_date: '2025-07-17T00:00:00Z'
 description: The Complex Portal is an encyclopaedic resource of macromolecular complexes
@@ -64,7 +65,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: Product
   description: Human complexes dataset from Complex Portal in PSI-MI XML 3.0 format
@@ -75,7 +78,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: Product
   description: Human complexes dataset from Complex Portal in ComplexTAB format
@@ -86,7 +91,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: Product
   description: Mouse complexes dataset from Complex Portal in PSI-MI XML 2.5 format
@@ -97,7 +104,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: Product
   description: Mouse complexes dataset from Complex Portal in ComplexTAB format
@@ -108,7 +117,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: Product
   description: Yeast complexes dataset from Complex Portal in PSI-MI XML 2.5 format
@@ -119,7 +130,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: Product
   description: Yeast complexes dataset from Complex Portal in ComplexTAB format
@@ -130,7 +143,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: ProgrammingInterface
   description: RESTful web service API for programmatic access to Complex Portal data
@@ -214,6 +229,7 @@ taxon:
 - NCBITaxon:83333
 - NCBITaxon:559292
 ---
+
 # Complex Portal
 
 ## Overview

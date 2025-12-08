@@ -8,6 +8,7 @@ contacts:
     value: achilles@broadinstitute.org
   - contact_type: url
     value: https://depmap.org/portal/achilles/
+  id: broad
   label: Project Achilles, Broad Institute
 curators:
 - category: Organization
@@ -91,6 +92,7 @@ publications:
   title: Defining a Cancer Dependency Map
   year: '2017'
 ---
+
 # Project Achilles
 
 Project Achilles is a systematic effort aimed at identifying and cataloging gene essentiality across hundreds of genomically characterized cancer cell lines. It is part of the broader Cancer Dependency Map (DepMap) initiative at the Broad Institute.

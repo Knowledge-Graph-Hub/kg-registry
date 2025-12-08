@@ -1,38 +1,38 @@
 ---
+id: miapa
+name: MIAPA Ontology
+description: An application ontology to formalize annotation of phylogenetic data.
 activity_status: active
-category: Ontology
+homepage_url: http://www.evoio.org/wiki/MIAPA
+repository: https://github.com/evoinfo/miapa
+license:
+  id: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
 contacts:
 - category: Individual
+  label: Hilmar Lapp
+  orcid: 0000-0001-9107-0714
   contact_details:
   - contact_type: email
     value: hilmar.lapp@duke.edu
   - contact_type: github
     value: hlapp
-  label: Hilmar Lapp
-  orcid: 0000-0001-9107-0714
-description: An application ontology to formalize annotation of phylogenetic data.
-domains:
-- biomedical
-homepage_url: http://www.evoio.org/wiki/MIAPA
-id: miapa
-layout: resource_detail
-license:
-  id: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-name: MIAPA Ontology
 products:
-- category: OntologyProduct
+- id: miapa.owl
+  name: miapa.owl
   description: MIAPA Ontology in OWL format
   format: owl
-  id: miapa.owl
-  name: miapa.owl
-  product_file_size: 5849
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/miapa.owl
-repository: https://github.com/evoinfo/miapa
 ---
+
 ## Description
 
 An application ontology to formalize annotation of phylogenetic data.

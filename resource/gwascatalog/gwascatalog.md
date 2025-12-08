@@ -8,6 +8,7 @@ contacts:
     value: gwas-info@ebi.ac.uk
   - contact_type: url
     value: https://www.ebi.ac.uk/gwas/
+  id: ebi
   label: NHGRI-EBI GWAS Catalog Team
 creation_date: '2025-07-20T00:00:00Z'
 description: The NHGRI-EBI GWAS Catalog is a curated, searchable, and freely available
@@ -69,7 +70,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: Product
   description: Study metadata file containing per-study information for GWAS Catalog
@@ -93,7 +96,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: Product
   description: EFO trait mapping file linking GWAS Catalog reported traits to Experimental
@@ -107,7 +112,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: Product
   description: RDF/OWL representation of GWAS Catalog associations enabling semantic
@@ -121,7 +128,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
   description: Compressed GWAS Catalog diagram (karyotype visualization) in SVG format
@@ -135,7 +144,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
   description: Archive of previous GWAS Catalog diagram versions (SVG format)
@@ -148,7 +159,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 404 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: DocumentationProduct
   description: Harmonised summary statistics landing page (FTP directory containing
@@ -450,13 +463,14 @@ products:
   - gwascatalog
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
     when accessing file'
 ---
+
 ## Overview
 
 The NHGRI-EBI GWAS Catalog provides a comprehensive, consistently curated, and publicly accessible collection of genome-wide association study (GWAS) results, including SNP-trait associations, study design and sample metadata, variant annotations, and trait ontology mappings. Data are curated by expert biocurators and released on a weekly schedule. Multiple access mechanisms are supported: interactive web portal, REST API, bulk downloads (TSV, JSON, OWL), ontology mappings, graphical diagram, and per-study summary statistics (including harmonised datasets).

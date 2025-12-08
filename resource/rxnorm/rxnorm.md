@@ -8,6 +8,7 @@ contacts:
     value: rxnorminfo@nlm.nih.gov
   - contact_type: url
     value: https://www.nlm.nih.gov/research/umls/rxnorm/
+  id: ncbi
   label: National Library of Medicine
 creation_date: '2025-11-08T00:00:00Z'
 description: RxNorm is the National Library of Medicine's standardized nomenclature
@@ -90,6 +91,7 @@ products:
 taxon:
 - NCBITaxon:9606
 ---
+
 # RxNorm
 
 ## Overview

@@ -5,6 +5,7 @@ description: The obo edition is less expressive than the OWL, and has imports me
 format: obo
 id: ro.obo
 name: Relation Ontology in obo format
+product_file_size: 83438
 product_url: http://purl.obolibrary.org/obo/ro.obo
 layout: product_detail
 ---

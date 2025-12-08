@@ -1,17 +1,6 @@
 ---
-activity_status: active
-category: Ontology
-collection:
-- obo-foundry
-contacts:
-- category: Individual
-  contact_details:
-  - contact_type: email
-    value: proccaserra@gmail.com
-  - contact_type: github
-    value: proccaserra
-  label: Philippe Rocca-Serra
-  orcid: 0000-0001-9853-5668
+id: stato
+name: The Statistical Methods Ontology
 description: STATO is a general-purpose STATistics Ontology. Its aim is to provide
   coverage for processes such as statistical tests, their conditions of application,
   and information needed or resulting from statistical methods, such as probability
@@ -19,26 +8,37 @@ description: STATO is a general-purpose STATistics Ontology. Its aim is to provi
   of experimental design and description of plots and graphical representations commonly
   used to provide visual cues of data distribution or layout and to assist review
   of the results.
-domains:
-- biomedical
+activity_status: active
 homepage_url: http://stato-ontology.org/
-id: stato
-layout: resource_detail
+repository: https://github.com/ISA-tools/stato
 license:
   id: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
   logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: The Statistical Methods Ontology
+collection:
+- obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
+contacts:
+- category: Individual
+  label: Philippe Rocca-Serra
+  orcid: 0000-0001-9853-5668
+  contact_details:
+  - contact_type: email
+    value: proccaserra@gmail.com
+  - contact_type: github
+    value: proccaserra
 products:
-- category: OntologyProduct
+- id: stato.owl
+  name: stato.owl
   description: The Statistical Methods Ontology in OWL format
   format: owl
-  id: stato.owl
-  name: stato.owl
-  product_file_size: 260099
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/stato.owl
-repository: https://github.com/ISA-tools/stato
 ---
+
 ## Description
 
 STATO is a general-purpose STATistics Ontology. Its aim is to provide coverage for processes such as statistical tests, their conditions of application, and information needed or resulting from statistical methods, such as probability distributions, variables, spread and variation metrics. STATO also covers aspects of experimental design and description of plots and graphical representations commonly used to provide visual cues of data distribution or layout and to assist review of the results.

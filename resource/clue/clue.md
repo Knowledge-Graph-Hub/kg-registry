@@ -1,71 +1,79 @@
 ---
 activity_status: active
 category: DataSource
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: url
+    value: https://clue.io/about
+  id: broad
+  label: Broad Institute of MIT and Harvard
 creation_date: '2025-08-12T00:00:00Z'
-description: CLUE (formerly known as the Connectivity Map or CMap 2.0) is a comprehensive resource for connecting drugs, genes, and diseases through large-scale perturbational data. Built and maintained by the Broad Institute, CLUE provides access to over 1.3 million gene expression profiles from the LINCS L1000 assay, covering more than 42,000 perturbagens (drugs, genetic reagents, and other compounds) tested across multiple cell lines. The platform enables researchers to discover connections between diseases, drugs, and biological mechanisms through gene expression signatures.
+description: CLUE (formerly known as the Connectivity Map or CMap 2.0) is a comprehensive
+  resource for connecting drugs, genes, and diseases through large-scale perturbational
+  data. Built and maintained by the Broad Institute, CLUE provides access to over
+  1.3 million gene expression profiles from the LINCS L1000 assay, covering more than
+  42,000 perturbagens (drugs, genetic reagents, and other compounds) tested across
+  multiple cell lines. The platform enables researchers to discover connections between
+  diseases, drugs, and biological mechanisms through gene expression signatures.
 domains:
-  - drug discovery
-  - genomics
-  - biomedical
-  - systems biology
+- drug discovery
+- genomics
+- biomedical
+- systems biology
+homepage_url: https://clue.io/
 id: clue
 last_modified_date: '2025-10-07T00:00:00Z'
 layout: resource_detail
 name: CLUE
-homepage_url: https://clue.io/
-repository: https://github.com/cmap
-contacts:
-  - category: Organization
-    label: Broad Institute of MIT and Harvard
-    contact_details:
-      - contact_type: url
-        value: https://clue.io/about
 products:
-  - category: Product
-    description: Network embeddings of the Bioteque graph that represent biological entities and their associations
-    id: bioteque.embeddings
-    name: Bioteque Embeddings
-    original_source:
-      - chebi
-      - cosmic
-      - achilles
-      - depmap
-      - ccle
-      - gdsc
-      - cellosaurus
-      - clue
-      - ctd
-      - pharmacodb
-      - prism
-      - drugbank
-      - lincs
-      - compartments
-      - offsides
-      - sider
-      - drugcentral
-      - repohub
-      - chemicalchecker
-      - repodb
-      - disgenet
-      - opentargets
-      - creeds
-      - interpro
-      - reactome
-      - tissues
-      - dorothea
-      - progeny
-      - gtex
-      - hpa
-      - go
-      - corum
-      - huri
-      - intact
-      - omnipath
-      - string
-      - bto
-    product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
-    secondary_source:
-      - bioteque
+- category: Product
+  description: Network embeddings of the Bioteque graph that represent biological
+    entities and their associations
+  id: bioteque.embeddings
+  name: Bioteque Embeddings
+  original_source:
+  - chebi
+  - cosmic
+  - achilles
+  - depmap
+  - ccle
+  - gdsc
+  - cellosaurus
+  - clue
+  - ctd
+  - pharmacodb
+  - prism
+  - drugbank
+  - lincs
+  - compartments
+  - offsides
+  - sider
+  - drugcentral
+  - repohub
+  - chemicalchecker
+  - repodb
+  - disgenet
+  - opentargets
+  - creeds
+  - interpro
+  - reactome
+  - tissues
+  - dorothea
+  - progeny
+  - gtex
+  - hpa
+  - go
+  - corum
+  - huri
+  - intact
+  - omnipath
+  - string
+  - bto
+  product_url: https://bioteque.irbbarcelona.org/downloads/embeddings
+  secondary_source:
+  - bioteque
+repository: https://github.com/cmap
 ---
 
 # CLUE

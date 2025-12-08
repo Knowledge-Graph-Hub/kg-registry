@@ -1,46 +1,45 @@
 ---
+id: cdno
+name: Compositional Dietary Nutrition Ontology
+description: CDNO provides structured terminologies to describe nutritional attributes
+  of material entities that contribute to human diet.
 activity_status: active
-category: Ontology
+homepage_url: https://cdno.info/
+repository: https://github.com/CompositionalDietaryNutritionOntology/cdno
+license:
+  id: https://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- chemistry and biochemistry
 contacts:
 - category: Individual
+  label: Liliana Andres Hernandez
+  orcid: 0000-0002-7696-731X
   contact_details:
   - contact_type: email
     value: landreshdz@gmail.com
   - contact_type: github
     value: LilyAndres
-  label: Liliana Andres Hernandez
-  orcid: 0000-0002-7696-731X
-description: CDNO provides structured terminologies to describe nutritional attributes
-  of material entities that contribute to human diet.
-domains:
-- chemistry and biochemistry
-homepage_url: https://cdno.info/
-id: cdno
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Compositional Dietary Nutrition Ontology
 products:
-- category: OntologyProduct
+- id: cdno.owl
+  name: cdno.owl
   description: Compositional Dietary Nutrition Ontology in OWL format
   format: owl
-  id: cdno.owl
-  name: cdno.owl
-  product_file_size: 547230
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/cdno.owl
-- category: OntologyProduct
+- id: cdno.obo
+  name: cdno.obo
   description: Compositional Dietary Nutrition Ontology in OBO format
   format: obo
-  id: cdno.obo
-  name: cdno.obo
-  product_file_size: 324568
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/cdno.obo
-repository: https://github.com/CompositionalDietaryNutritionOntology/cdno
 ---
+
 ## Description
 
 CDNO provides structured terminologies to describe nutritional attributes of material entities that contribute to human diet.

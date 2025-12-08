@@ -6,6 +6,7 @@ id: kg-monarch.associations.genotype_to_disease
 name: Genotype to Disease Associations
 original_source:
 - kg-monarch
+product_file_size: 486257
 product_url: https://data.monarchinitiative.org/monarch-kg/latest/tsv/all_associations/genotype_to_disease_association.all.tsv.gz
 secondary_source:
 - kg-monarch

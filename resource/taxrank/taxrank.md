@@ -1,45 +1,44 @@
 ---
+id: taxrank
+name: Taxonomic rank vocabulary
+description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/phenoscape/taxrank
+repository: https://github.com/phenoscape/taxrank
+license:
+  id: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biological systems
 contacts:
 - category: Individual
+  label: Jim Balhoff
+  orcid: 0000-0002-8688-6599
   contact_details:
   - contact_type: email
     value: balhoff@renci.org
   - contact_type: github
     value: balhoff
-  label: Jim Balhoff
-  orcid: 0000-0002-8688-6599
-description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
-domains:
-- biological systems
-homepage_url: https://github.com/phenoscape/taxrank
-id: taxrank
-layout: resource_detail
-license:
-  id: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-name: Taxonomic rank vocabulary
 products:
-- category: OntologyProduct
+- id: taxrank.owl
+  name: taxrank.owl
   description: Taxonomic rank vocabulary in OWL format
   format: owl
-  id: taxrank.owl
-  name: taxrank.owl
-  product_file_size: 3843
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/taxrank.owl
-- category: OntologyProduct
+- id: taxrank.obo
+  name: taxrank.obo
   description: Taxonomic rank vocabulary in OBO format
   format: obo
-  id: taxrank.obo
-  name: taxrank.obo
-  product_file_size: 2271
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/taxrank.obo
-repository: https://github.com/phenoscape/taxrank
 ---
+
 ## Description
 
 A vocabulary of taxonomic ranks (species, family, phylum, etc)

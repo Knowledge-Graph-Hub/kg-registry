@@ -8,6 +8,7 @@ contacts:
     value: bgee@sib.swiss
   - contact_type: url
     value: https://www.bgee.org/contact/
+  id: sib
   label: Bgee Team - SIB Swiss Institute of Bioinformatics
 description: Bgee is a database for retrieval and comparison of gene expression patterns
   across multiple animal species, providing information about gene expression in different
@@ -60,7 +61,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -78,7 +81,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -96,7 +101,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -114,7 +121,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -132,7 +141,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -150,7 +161,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -168,7 +181,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -186,7 +201,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 404 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -1093,11 +1110,11 @@ products:
   - bgee
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing
@@ -1175,6 +1192,7 @@ publications:
   year: '2021'
 repository: https://github.com/BgeeDB/bgee_apps
 ---
+
 Bgee (Background Expression) is a database for retrieval and comparison of gene expression patterns across multiple animal species. It integrates multiple data types (RNA-Seq, Affymetrix microarrays, in situ hybridization, EST data, and single-cell RNA-Seq) to provide a unified view of gene expression patterns across diverse anatomical structures, developmental stages, and species.
 
 The key features of Bgee include:

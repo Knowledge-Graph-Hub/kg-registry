@@ -5,6 +5,7 @@ description: A collection of important high-level terms and their relations from
 format: owl
 id: obi.obi_core.owl
 name: OBI Core
+product_file_size: 46930
 product_url: http://purl.obolibrary.org/obo/obi/obi_core.owl
 layout: product_detail
 ---

@@ -4,6 +4,7 @@ description: Axioms defined within RO and to be used in imports for other ontolo
 format: owl
 id: ro.ro-base.owl
 name: RO base ontology
+product_file_size: 94729
 product_url: http://purl.obolibrary.org/obo/ro/ro-base.owl
 layout: product_detail
 ---

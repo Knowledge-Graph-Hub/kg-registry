@@ -8,6 +8,7 @@ contacts:
     value: support@orthodb.org
   - contact_type: url
     value: https://www.orthodb.org/
+  id: sib
   label: Evgeny Zdobnov Lab - SIB Swiss Institute of Bioinformatics
 description: OrthoDB is a comprehensive database of orthologous protein-coding genes
   across multiple species, providing evolutionary and functional annotations of orthologous
@@ -182,6 +183,7 @@ publications:
   year: '2017'
 repository: https://github.com/zdobnov-lab/orthodb
 ---
+
 OrthoDB is a comprehensive database of orthologous protein-coding genes across multiple species with a hierarchical catalog of orthologs. It provides evolutionary and functional annotations of orthologous groups at various taxonomic levels, covering Eukaryotes, Prokaryotes, and Viruses.
 
 The database contains information for more than 31,000 species, including:

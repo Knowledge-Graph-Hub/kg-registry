@@ -1,46 +1,45 @@
 ---
+id: clao
+name: Collembola Anatomy Ontology
+description: 'CLAO is an ontology of anatomical terms employed in morphological descriptions
+  for the Class Collembola (Arthropoda: Hexapoda).'
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/luis-gonzalez-m/Collembola
+repository: https://github.com/luis-gonzalez-m/Collembola
+license:
+  id: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- anatomy and development
 contacts:
 - category: Individual
+  label: Luis Gonz lez-Monta a
+  orcid: 0000-0002-9136-9932
   contact_details:
   - contact_type: email
     value: lagonzalezmo@unal.edu.co
   - contact_type: github
     value: luis-gonzalez-m
-  label: Luis Gonz lez-Monta a
-  orcid: 0000-0002-9136-9932
-description: 'CLAO is an ontology of anatomical terms employed in morphological descriptions
-  for the Class Collembola (Arthropoda: Hexapoda).'
-domains:
-- anatomy and development
-homepage_url: https://github.com/luis-gonzalez-m/Collembola
-id: clao
-layout: resource_detail
-license:
-  id: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-name: Collembola Anatomy Ontology
 products:
-- category: OntologyProduct
+- id: clao.owl
+  name: clao.owl
   description: Collembola Anatomy Ontology in OWL format
   format: owl
-  id: clao.owl
-  name: clao.owl
-  product_file_size: 112550
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/clao.owl
-- category: OntologyProduct
+- id: clao.obo
+  name: clao.obo
   description: Collembola Anatomy Ontology in OBO format
   format: obo
-  id: clao.obo
-  name: clao.obo
-  product_file_size: 74344
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/clao.obo
-repository: https://github.com/luis-gonzalez-m/Collembola
 ---
+
 ## Description
 
 CLAO is an ontology of anatomical terms employed in morphological descriptions for the Class Collembola (Arthropoda: Hexapoda).

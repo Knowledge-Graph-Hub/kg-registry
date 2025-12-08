@@ -1,55 +1,53 @@
 ---
+id: zeco
+name: Zebrafish Experimental Conditions Ontology
+description: Experimental conditions applied to zebrafish, developed to facilitate
+  experiment condition annotation at ZFIN
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/ybradford/zebrafish-experimental-conditions-ontology
+repository: https://github.com/ybradford/zebrafish-experimental-conditions-ontology
+license:
+  id: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- environment
+taxon:
+- NCBITaxon:7954
 contacts:
 - category: Individual
+  label: Yvonne Bradford
+  orcid: 0000-0002-9900-7880
   contact_details:
   - contact_type: email
     value: ybradford@zfin.org
   - contact_type: github
     value: ybradford
-  label: Yvonne Bradford
-  orcid: 0000-0002-9900-7880
-description: Experimental conditions applied to zebrafish, developed to facilitate
-  experiment condition annotation at ZFIN
-domains:
-- environment
-homepage_url: https://github.com/ybradford/zebrafish-experimental-conditions-ontology
-id: zeco
-layout: resource_detail
-license:
-  id: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Zebrafish Experimental Conditions Ontology
 products:
-- category: OntologyProduct
+- id: zeco.obo
+  name: zeco.obo
   description: Zebrafish Experimental Conditions Ontology in OBO format
   format: obo
-  id: zeco.obo
-  name: zeco.obo
-  product_file_size: 6814
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/zeco.obo
-- category: OntologyProduct
+- id: zeco.owl
+  name: zeco.owl
   description: Zebrafish Experimental Conditions Ontology in OWL format
   format: owl
-  id: zeco.owl
-  name: zeco.owl
-  product_file_size: 9311
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/zeco.owl
-- category: OntologyProduct
+- id: zeco.json
+  name: zeco.json
   description: Zebrafish Experimental Conditions Ontology in JSON format
   format: json
-  id: zeco.json
-  name: zeco.json
-  product_file_size: 8591
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/zeco.json
-repository: https://github.com/ybradford/zebrafish-experimental-conditions-ontology
-taxon:
-- NCBITaxon:7954
 ---
+
 ## Description
 
 Experimental conditions applied to zebrafish, developed to facilitate experiment condition annotation at ZFIN

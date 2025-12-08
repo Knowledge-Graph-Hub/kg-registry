@@ -8,6 +8,7 @@ contacts:
     value: rfam-help@ebi.ac.uk
   - contact_type: url
     value: https://docs.rfam.org/en/latest/contact-us.html
+  id: ebi
   label: Rfam Team at EMBL-EBI
 creation_date: '2025-10-29T00:00:00Z'
 description: Rfam is a comprehensive database of RNA families, each represented by
@@ -344,6 +345,7 @@ publications:
   title: 'Rfam 14: expanded coverage of metagenomic, viral and microRNA families'
   year: '2021'
 ---
+
 # Rfam
 
 ## Overview

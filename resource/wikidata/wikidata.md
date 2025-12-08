@@ -8,6 +8,7 @@ contacts:
     value: wikidata-l@lists.wikimedia.org
   - contact_type: url
     value: https://www.wikidata.org/wiki/Wikidata:Contact
+  id: wikimedia
   label: Wikimedia Foundation
 creation_date: '2025-10-31T00:00:00Z'
 description: Wikidata is a free and open knowledge base that can be read and edited
@@ -74,7 +75,9 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
     when accessing file'
 - category: ProgrammingInterface
   description: REST API for accessing entity data in JSON format with content negotiation

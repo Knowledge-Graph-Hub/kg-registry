@@ -5,6 +5,7 @@ description: Drug-drug Interaction and Drug-drug Interaction Evidence Ontology i
 format: owl
 id: dideo.owl
 name: dideo.owl
+product_file_size: 88427
 product_url: http://purl.obolibrary.org/obo/dideo.owl
 layout: product_detail
 ---

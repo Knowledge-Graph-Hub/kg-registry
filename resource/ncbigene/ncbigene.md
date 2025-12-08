@@ -6,11 +6,13 @@ contacts:
   contact_details:
   - contact_type: url
     value: https://www.ncbi.nlm.nih.gov/gene
+  id: ncbi
   label: NCBI Gene Database
 - category: Organization
   contact_details:
   - contact_type: email
     value: info@ncbi.nlm.nih.gov
+  id: ncbi
   label: NCBI Help Desk
 description: NCBI Gene integrates information from a wide range of species. A record
   may include nomenclature, Reference Sequences (RefSeqs), maps, pathways, variations,
@@ -507,11 +509,11 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
     when accessing file'
 publications:
 - authors:

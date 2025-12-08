@@ -8,6 +8,7 @@ contacts:
     value: info@ncbi.nlm.nih.gov
   - contact_type: url
     value: https://pubchem.ncbi.nlm.nih.gov/contact
+  id: ncbi
   label: National Center for Biotechnology Information (NCBI)
 description: PubChem is an open chemistry database that collects information on chemical
   structures, identifiers, chemical and physical properties, biological activities,
@@ -302,6 +303,7 @@ publications:
   year: '2019'
 repository: https://github.com/ncbi/NCBI-Datasets
 ---
+
 PubChem is a database of chemical molecules and their activities against biological assays maintained by the National Center for Biotechnology Information (NCBI), a component of the National Library of Medicine, which is part of the United States National Institutes of Health (NIH).
 
 The system contains three primary databases:

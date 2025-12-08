@@ -2,258 +2,267 @@
 activity_status: active
 category: DataSource
 contacts:
-  - category: Organization
-    contact_details:
-      - contact_type: email
-        value: pfam-help@ebi.ac.uk
-      - contact_type: url
-        value: https://www.ebi.ac.uk/support/pfam
-    label: European Bioinformatics Institute (EMBL-EBI)
-description: Pfam is a large collection of protein families, each represented by multiple sequence alignments and hidden Markov models (HMMs), providing annotations of protein domains and functional sites.
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: pfam-help@ebi.ac.uk
+  - contact_type: url
+    value: https://www.ebi.ac.uk/support/pfam
+  id: ebi
+  label: European Bioinformatics Institute (EMBL-EBI)
+description: Pfam is a large collection of protein families, each represented by multiple
+  sequence alignments and hidden Markov models (HMMs), providing annotations of protein
+  domains and functional sites.
 domains:
-  - proteomics
+- proteomics
 homepage_url: https://www.ebi.ac.uk/interpro/entry/pfam/
 id: pfam
+infores_id: pfam
 layout: resource_detail
 license:
   id: https://creativecommons.org/publicdomain/zero/1.0/
   label: Creative Commons Zero (CC0)
 name: Pfam
 products:
-  - category: GraphicalInterface
-    description: The core Pfam database containing protein families, multiple sequence alignments, and hidden Markov models.
-    format: http
-    id: pfam.site
-    name: Interface for the Pfam Database
-    product_url: https://www.ebi.ac.uk/interpro/entry/pfam/#table
-  - category: Product
-    description: The Pfam HMM library for Pfam-A families, used for searching protein sequences against Pfam.
-    id: pfam.a.models
-    name: Pfam-A HMM Library
-    product_file_size: 347150343
-    product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
-  - category: Product
-    description: The Pfam HMM data for Pfam-A families, used for searching protein sequences against Pfam.
-    id: pfam.a.data
-    name: Pfam-A HMM data
-    product_file_size: 652678
-    product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.dat.gz
-  - category: Product
-    description: Pfam-A Seed alignment.
-    id: pfam.a.seedalignment
-    name: Pfam-A Seed alignment
-    product_file_size: 172548313
-    product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.seed.gz
-  - category: Product
-    description: Pfam-A Full alignment.
-    id: pfam.a.fullalignment
-    name: Pfam-A Full alignment
-    product_file_size: 21077145205
-    product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.full.gz
-  - category: ProgrammingInterface
-    description: REST API for programmatic access to Pfam data via the InterPro database.
-    format: json
-    id: pfam.api
-    name: InterPro API
-    product_url: https://www.ebi.ac.uk/interpro/api/
-  - category: GraphProduct
-    description: The SPOKE knowledge graph containing nodes and edges from multiple biomedical data sources.
-    id: spoke.graph
-    name: SPOKE Graph
-    original_source:
-      - ncbigene
-      - pubmed
-      - mesh
-      - pid
-      - doid
-      - diseases
-      - drugcentral
-      - go
-      - gwascatalog
-      - reactome
-      - lincs-l1000
-      - uberon
-      - wikipathways
-      - bindingdb
-      - drugbank
-      - sider
-      - bgee
-      - uniprot
-      - string
-      - omim
-      - chembl
-      - foodb
-      - civic
-      - gdsc
-      - clinicaltrialsgov
-      - hpa
-      - cl
-      - kegg
-      - metacyc
-      - bv-brc
-      - ncbitaxon
-      - pathophenodb
-      - pfam
-      - interpro
-      - protcid
-    secondary_source:
-      - spoke
-  - category: GraphProduct
-    description: Neo4j database dump of the Clinical Knowledge Graph and additional relationships
-    dump_format: neo4j
-    edge_count: 220000000
-    format: mixed
-    id: clinicalkg.graph
-    name: CKG Graph Dump
-    node_count: 16000000
-    original_source:
-      - uniprot
-      - tissues
-      - string
-      - stitch
-      - smpdb
-      - signor
-      - sider
-      - refseq
-      - reactome
-      - phosphositeplus
-      - pfam
-      - oncokb
-      - mutationds
-      - intact
-      - hpa
-      - hmdb
-      - hgnc
-      - gwascatalog
-      - foodb
-      - drugbank
-      - disgenet
-      - diseases
-      - dgidb
-      - corum
-      - cancer-genome-interpreter
-      - doid
-      - bto
-      - efo
-      - go
-      - hp
-      - snomedct
-      - mod
-      - mi
-      - ms
-      - uo
-    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
-  - category: GraphProduct
-    description: Neo4j database dump of the Clinical Knowledge Graph and additional relationships
-    dump_format: neo4j
-    edge_count: 220000000
-    format: mixed
-    id: cancer-genome-interpreter.clinicalkg.graph
-    name: CKG Graph Dump
-    node_count: 16000000
-    original_source:
-      - uniprot
-      - tissues
-      - string
-      - stitch
-      - smpdb
-      - signor
-      - sider
-      - refseq
-      - reactome
-      - phosphositeplus
-      - pfam
-      - oncokb
-      - mutationds
-      - intact
-      - hpa
-      - hmdb
-      - hgnc
-      - gwascatalog
-      - foodb
-      - drugbank
-      - disgenet
-      - diseases
-      - dgidb
-      - corum
-      - cancer-genome-interpreter
-      - doid
-      - bto
-      - efo
-      - go
-      - hp
-      - snomedct
-      - mod
-      - mi
-      - ms
-      - uo
-    product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphicalInterface
+  description: The core Pfam database containing protein families, multiple sequence
+    alignments, and hidden Markov models.
+  format: http
+  id: pfam.site
+  name: Interface for the Pfam Database
+  product_url: https://www.ebi.ac.uk/interpro/entry/pfam/#table
+- category: Product
+  description: The Pfam HMM library for Pfam-A families, used for searching protein
+    sequences against Pfam.
+  id: pfam.a.models
+  name: Pfam-A HMM Library
+  product_file_size: 347150343
+  product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
+- category: Product
+  description: The Pfam HMM data for Pfam-A families, used for searching protein sequences
+    against Pfam.
+  id: pfam.a.data
+  name: Pfam-A HMM data
+  product_file_size: 652678
+  product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.dat.gz
+- category: Product
+  description: Pfam-A Seed alignment.
+  id: pfam.a.seedalignment
+  name: Pfam-A Seed alignment
+  product_file_size: 172548313
+  product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.seed.gz
+- category: Product
+  description: Pfam-A Full alignment.
+  id: pfam.a.fullalignment
+  name: Pfam-A Full alignment
+  product_file_size: 21077145205
+  product_url: https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.full.gz
+- category: ProgrammingInterface
+  description: REST API for programmatic access to Pfam data via the InterPro database.
+  format: json
+  id: pfam.api
+  name: InterPro API
+  product_url: https://www.ebi.ac.uk/interpro/api/
+- category: GraphProduct
+  description: The SPOKE knowledge graph containing nodes and edges from multiple
+    biomedical data sources.
+  id: spoke.graph
+  name: SPOKE Graph
+  original_source:
+  - ncbigene
+  - pubmed
+  - mesh
+  - pid
+  - doid
+  - diseases
+  - drugcentral
+  - go
+  - gwascatalog
+  - reactome
+  - lincs-l1000
+  - uberon
+  - wikipathways
+  - bindingdb
+  - drugbank
+  - sider
+  - bgee
+  - uniprot
+  - string
+  - omim
+  - chembl
+  - foodb
+  - civic
+  - gdsc
+  - clinicaltrialsgov
+  - hpa
+  - cl
+  - kegg
+  - metacyc
+  - bv-brc
+  - ncbitaxon
+  - pathophenodb
+  - pfam
+  - interpro
+  - protcid
+  secondary_source:
+  - spoke
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - doid
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
+- category: GraphProduct
+  description: Neo4j database dump of the Clinical Knowledge Graph and additional
+    relationships
+  dump_format: neo4j
+  edge_count: 220000000
+  format: mixed
+  id: cancer-genome-interpreter.clinicalkg.graph
+  name: CKG Graph Dump
+  node_count: 16000000
+  original_source:
+  - uniprot
+  - tissues
+  - string
+  - stitch
+  - smpdb
+  - signor
+  - sider
+  - refseq
+  - reactome
+  - phosphositeplus
+  - pfam
+  - oncokb
+  - mutationds
+  - intact
+  - hpa
+  - hmdb
+  - hgnc
+  - gwascatalog
+  - foodb
+  - drugbank
+  - disgenet
+  - diseases
+  - dgidb
+  - corum
+  - cancer-genome-interpreter
+  - doid
+  - bto
+  - efo
+  - go
+  - hp
+  - snomedct
+  - mod
+  - mi
+  - ms
+  - uo
+  product_url: https://data.mendeley.com/datasets/mrcf7f4tc2/1
 publications:
-  - authors:
-      - T. Paysan-Lafosse
-      - A. Andreeva
-      - M. Blum
-      - S. Chuguransky
-      - T. Grego
-      - B. Lazaro Pinto
-      - G.A. Salazar
-      - M.L. Bileschi
-      - "F. Llinares-López"
-      - L. Meng-Papaxanthos
-      - L.J. Colwell
-      - NV. Grishin
-      - R.D. Schaeffer
-      - D.Clementel
-      - S.C.E Tosatto
-      - E. Sonnhammer
-      - V. Wood
-      - A. Bateman
-    id: https://doi.org/10.1093/nar/gkae997
-    journal: Nucleic Acids Research
-    preferred: true
-    title: 'The Pfam protein families database: embracing AI/ML'
-    year: '2024'
-  - authors:
-      - J. Mistry
-      - S. Chuguransky
-      - L. Williams
-      - M. Qureshi
-      - G.A. Salazar
-      - E.L.L. Sonnhammer
-      - S.C.E. Tosatto
-      - L. Paladin
-      - S. Raj
-      - L.J. Richardson
-      - R.D. Finn
-      - A. Bateman
-    id: https://doi.org/10.1093/nar/gkaa913
-    journal: Nucleic Acids Research
-    title: 'Pfam: The protein families database in 2021'
-    year: '2020'
-  - authors:
-      - S. El-Gebali
-      - J. Mistry
-      - A. Bateman
-      - S.R. Eddy
-      - A. Luciani
-      - S.C. Potter
-      - M. Qureshi
-      - L.J. Richardson
-      - G.A. Salazar
-      - A. Smart
-      - E.L.L. Sonnhammer
-      - L. Hirsh
-      - L. Paladin
-      - D. Piovesan
-      - S.C.E. Tosatto
-      - R.D. Finn
-    id: https://doi.org/10.1093/nar/gky995
-    journal: Nucleic Acids Research
-    title: The Pfam protein families database in 2019
-    year: '2019'
+- authors:
+  - T. Paysan-Lafosse
+  - A. Andreeva
+  - M. Blum
+  - S. Chuguransky
+  - T. Grego
+  - B. Lazaro Pinto
+  - G.A. Salazar
+  - M.L. Bileschi
+  - F. Llinares-López
+  - L. Meng-Papaxanthos
+  - L.J. Colwell
+  - NV. Grishin
+  - R.D. Schaeffer
+  - D.Clementel
+  - S.C.E Tosatto
+  - E. Sonnhammer
+  - V. Wood
+  - A. Bateman
+  id: https://doi.org/10.1093/nar/gkae997
+  journal: Nucleic Acids Research
+  preferred: true
+  title: 'The Pfam protein families database: embracing AI/ML'
+  year: '2024'
+- authors:
+  - J. Mistry
+  - S. Chuguransky
+  - L. Williams
+  - M. Qureshi
+  - G.A. Salazar
+  - E.L.L. Sonnhammer
+  - S.C.E. Tosatto
+  - L. Paladin
+  - S. Raj
+  - L.J. Richardson
+  - R.D. Finn
+  - A. Bateman
+  id: https://doi.org/10.1093/nar/gkaa913
+  journal: Nucleic Acids Research
+  title: 'Pfam: The protein families database in 2021'
+  year: '2020'
+- authors:
+  - S. El-Gebali
+  - J. Mistry
+  - A. Bateman
+  - S.R. Eddy
+  - A. Luciani
+  - S.C. Potter
+  - M. Qureshi
+  - L.J. Richardson
+  - G.A. Salazar
+  - A. Smart
+  - E.L.L. Sonnhammer
+  - L. Hirsh
+  - L. Paladin
+  - D. Piovesan
+  - S.C.E. Tosatto
+  - R.D. Finn
+  id: https://doi.org/10.1093/nar/gky995
+  journal: Nucleic Acids Research
+  title: The Pfam protein families database in 2019
+  year: '2019'
 repository: ''
 version: '37.0'
-infores_id: pfam
 ---
 
 Pfam is a large collection of protein families, each represented by multiple sequence alignments and profile hidden Markov models (HMMs). Proteins are generally composed of one or more functional regions, commonly termed domains. The presence of different domains in varying combinations in different proteins gives rise to the diverse repertoire of proteins found in nature. Identifying the domains present in a protein can provide insights into its function.

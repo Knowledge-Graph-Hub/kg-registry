@@ -6,6 +6,7 @@ contacts:
   contact_details:
   - contact_type: url
     value: https://www.broadinstitute.org/connectivity-map-cmap
+  id: broad
   label: Broad Institute of MIT and Harvard
 creation_date: '2025-08-12T00:00:00Z'
 description: The Connectivity Map (CMap) is a collection of genome-wide transcriptional
@@ -179,6 +180,7 @@ publications:
     Molecules, Genes, and Disease'
 repository: https://clue.io/about
 ---
+
 # Connectivity Map
 
 The Connectivity Map (CMap) is a pioneering resource that uses genome-wide transcriptional expression data to discover functional connections between drugs, genes, and diseases. Developed at the Broad Institute, CMap analyzes gene-expression signatures from cultured human cells treated with various bioactive small molecules to identify unexpected therapeutic relationships and mechanisms of action.

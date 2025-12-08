@@ -6,6 +6,7 @@ contacts:
   contact_details:
   - contact_type: email
     value: translator@broadinstitute.org
+  id: broad
   label: Broad Institute Translator Team
 creation_date: '2025-10-30T00:00:00Z'
 description: The Molecular Data Provider (MolePro) is part of the NCATS Biomedical
@@ -61,6 +62,7 @@ synonyms:
 tags:
 - translator
 ---
+
 # Molecular Data Provider
 
 ## Overview

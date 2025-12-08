@@ -8,6 +8,7 @@ contacts:
     value: https://www.internationalgenome.org/
   - contact_type: email
     value: info@1000genomes.org
+  id: ebi
   label: International Genome Sample Resource (EMBL-EBI)
 creation_date: '2025-09-04T00:00:00Z'
 description: The International Genome Sample Resource (IGSR) maintains and shares
@@ -110,7 +111,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-11-06_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-05: HTTP 403 error
+  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+    accessing file
+  - 'File was not able to be retrieved when checked on 2025-12-07: HTTP 403 error
     when accessing file'
 - category: Product
   description: The EPA has developed the Adverse Outcome Pathway Database (AOP-DB)
@@ -134,6 +137,7 @@ products:
   secondary_source:
   - aop-db
 ---
+
 # 1000 Genomes Project (IGSR)
 
 ## Overview

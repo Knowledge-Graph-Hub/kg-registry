@@ -8,6 +8,7 @@ contacts:
     value: interpro-help@ebi.ac.uk
   - contact_type: url
     value: https://www.ebi.ac.uk/interpro/contact/
+  id: ebi
   label: InterPro
 description: InterPro is a database of protein families, domains and functional sites
   in which identifiable features found in known proteins can be applied to unknown
@@ -243,8 +244,8 @@ products:
   compatibility:
   - standard: biolink
   compression: zip
-  description: "Curated mechanistic drug\u2013disease paths comprising the DrugMechDB\
-    \ dataset packaged as a downloadable archive."
+  description: Curated mechanistic drug–disease paths comprising the DrugMechDB dataset
+    packaged as a downloadable archive.
   dump_format: other
   format: mixed
   id: drugmechdb.graph
@@ -369,7 +370,7 @@ publications:
   - Gough J
   - Haft DH
   - Letunic I
-  - "Llinares-L\xF3pez F"
+  - Llinares-López F
   - Marchler-Bauer A
   - Meng-Papaxanthos L
   - Mi H
@@ -392,6 +393,7 @@ publications:
   year: '2024'
 repository: https://www.ebi.ac.uk/interpro/
 ---
+
 InterPro is a database of protein families, domains and functional sites in which identifiable features found in known proteins can be applied to unknown protein sequences.
 
 ## Overview

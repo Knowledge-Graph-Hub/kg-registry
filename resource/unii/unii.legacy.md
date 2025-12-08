@@ -6,7 +6,7 @@ id: unii.legacy
 name: Legacy UNIIs
 product_url: https://precision.fda.gov/uniisearch/archive/latest/Legacy_UNIIs.txt
 warnings:
-- File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
+- File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
   accessing file
 - File was not able to be retrieved when checked on 2025-12-04_ HTTP 403 error when
   accessing file

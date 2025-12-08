@@ -1,39 +1,39 @@
 ---
+id: sepio
+name: Scientific Evidence and Provenance Information Ontology
+description: An ontology for representing the provenance of scientific claims and
+  the evidence that supports them.
 activity_status: active
-category: Ontology
+homepage_url: https://github.com/monarch-initiative/SEPIO-ontology
+repository: https://github.com/monarch-initiative/SEPIO-ontology
+license:
+  id: https://creativecommons.org/licenses/by/3.0/
+  label: CC BY 3.0
+  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
 collection:
 - obo-foundry
+layout: resource_detail
+category: Ontology
+domains:
+- biomedical
 contacts:
 - category: Individual
+  label: Matthew Brush
+  orcid: 0000-0002-1048-5019
   contact_details:
   - contact_type: email
     value: mhb120@gmail.com
   - contact_type: github
     value: mbrush
-  label: Matthew Brush
-  orcid: 0000-0002-1048-5019
-description: An ontology for representing the provenance of scientific claims and
-  the evidence that supports them.
-domains:
-- biomedical
-homepage_url: https://github.com/monarch-initiative/SEPIO-ontology
-id: sepio
-layout: resource_detail
-license:
-  id: https://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-  logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-name: Scientific Evidence and Provenance Information Ontology
 products:
-- category: OntologyProduct
+- id: sepio.owl
+  name: SEPIO
   description: SEPIO
   format: owl
-  id: sepio.owl
-  name: SEPIO
-  product_file_size: 75985
+  category: OntologyProduct
   product_url: http://purl.obolibrary.org/obo/sepio.owl
-repository: https://github.com/monarch-initiative/SEPIO-ontology
 ---
+
 ## Description
 
 An ontology for representing the provenance of scientific claims and the evidence that supports them.

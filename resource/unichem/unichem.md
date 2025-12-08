@@ -1,61 +1,73 @@
 ---
 activity_status: active
 category: Aggregator
+contacts:
+- category: Organization
+  contact_details:
+  - contact_type: email
+    value: chembl-help@ebi.ac.uk
+  - contact_type: url
+    value: https://chembl.gitbook.io/unichem
+  id: ebi
+  label: ChEMBL Team at EMBL-EBI
 creation_date: '2025-11-04T00:00:00Z'
-description: UniChem is a large-scale non-redundant database maintained by EMBL-EBI that provides cross-references between chemical structures across multiple chemistry resources. It serves as a unified system for creating and maintaining structure-based hyperlinks between chemistry databases, particularly optimized for on-the-fly link creation via REST web services. UniChem aggregates compound identifiers from major chemistry resources including ChEMBL, ChEBI, SureChEMBL, PubChem, DrugBank, and many others, enabling efficient cross-database chemical structure queries using InChI, InChIKey, or source-specific identifiers.
+description: UniChem is a large-scale non-redundant database maintained by EMBL-EBI
+  that provides cross-references between chemical structures across multiple chemistry
+  resources. It serves as a unified system for creating and maintaining structure-based
+  hyperlinks between chemistry databases, particularly optimized for on-the-fly link
+  creation via REST web services. UniChem aggregates compound identifiers from major
+  chemistry resources including ChEMBL, ChEBI, SureChEMBL, PubChem, DrugBank, and
+  many others, enabling efficient cross-database chemical structure queries using
+  InChI, InChIKey, or source-specific identifiers.
 domains:
-  - chemistry and biochemistry
-  - drug discovery
-  - pharmacology
-id: "unichem"
-infores_id: "unichem"
+- chemistry and biochemistry
+- drug discovery
+- pharmacology
+homepage_url: https://www.ebi.ac.uk/unichem/
+id: unichem
+infores_id: unichem
 last_modified_date: '2025-11-04T00:00:00Z'
 layout: resource_detail
 name: UniChem
-homepage_url: https://www.ebi.ac.uk/unichem/
-contacts:
-  - category: Organization
-    label: ChEMBL Team at EMBL-EBI
-    contact_details:
-      - contact_type: email
-        value: "chembl-help@ebi.ac.uk"
-      - contact_type: url
-        value: "https://chembl.gitbook.io/unichem"
-synonyms:
-  - unichem
 products:
-  - id: "unichem.search"
-    category: GraphicalInterface
-    name: UniChem Search Interface
-    description: Web-based search interface for finding compound sources and performing connectivity searches across chemical databases
-    product_url: https://www.ebi.ac.uk/unichem/search
-    format: http
-    original_source:
-      - unichem
-  - id: "unichem.api"
-    category: ProgrammingInterface
-    name: UniChem REST API
-    description: RESTful web services API for programmatic access to UniChem cross-references and connectivity searches
-    product_url: https://www.ebi.ac.uk/unichem/api/docs
-    format: http
-    original_source:
-      - unichem
-  - id: "unichem.sources"
-    category: Product
-    name: UniChem Source Database List
-    description: Comprehensive list of all integrated chemistry databases and their metadata in UniChem
-    product_url: https://www.ebi.ac.uk/unichem/sources
-    format: http
-    original_source:
-      - unichem
-  - id: "unichem.docs"
-    category: DocumentationProduct
-    name: UniChem Documentation
-    description: Complete documentation covering UniChem functionality, API usage, data model, and integration guidelines
-    product_url: https://chembl.gitbook.io/unichem
-    format: http
-    original_source:
-      - unichem
+- category: GraphicalInterface
+  description: Web-based search interface for finding compound sources and performing
+    connectivity searches across chemical databases
+  format: http
+  id: unichem.search
+  name: UniChem Search Interface
+  original_source:
+  - unichem
+  product_url: https://www.ebi.ac.uk/unichem/search
+- category: ProgrammingInterface
+  description: RESTful web services API for programmatic access to UniChem cross-references
+    and connectivity searches
+  format: http
+  id: unichem.api
+  name: UniChem REST API
+  original_source:
+  - unichem
+  product_url: https://www.ebi.ac.uk/unichem/api/docs
+- category: Product
+  description: Comprehensive list of all integrated chemistry databases and their
+    metadata in UniChem
+  format: http
+  id: unichem.sources
+  name: UniChem Source Database List
+  original_source:
+  - unichem
+  product_url: https://www.ebi.ac.uk/unichem/sources
+- category: DocumentationProduct
+  description: Complete documentation covering UniChem functionality, API usage, data
+    model, and integration guidelines
+  format: http
+  id: unichem.docs
+  name: UniChem Documentation
+  original_source:
+  - unichem
+  product_url: https://chembl.gitbook.io/unichem
+synonyms:
+- unichem
 ---
 
 # UniChem

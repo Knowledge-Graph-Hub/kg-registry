@@ -6,6 +6,7 @@ contacts:
   contact_details:
   - contact_type: email
     value: info@ncbi.nlm.nih.gov
+  id: ncbi
   label: NCBI Help Desk
 creation_date: '2025-11-04T00:00:00Z'
 description: HomoloGene was NCBI's database of homologs (genes with common ancestry)
@@ -61,6 +62,7 @@ warnings:
 - The last build (build 68) is from 2014 and is not aligned with current NCBI RefSeq
   and Gene data
 ---
+
 # HomoloGene
 
 ## Overview
