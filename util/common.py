@@ -57,7 +57,8 @@ ORG_DIR = ROOT / "org"
 REGISTRY_DIR = ROOT / "registry"
 
 SCHEMA_PATH = ROOT / "src" / "kg_registry" / "kg_registry_schema" / "kg_registry_schema.json"
-SOURCE_SCHEMA_PATH = ROOT / "src" / "kg_registry" / "kg_registry_schema" / "schema" / "kg_registry_schema_all.yaml"
+SOURCE_SCHEMA_PATH = ROOT / "src" / "kg_registry" / \
+    "kg_registry_schema" / "schema" / "kg_registry_schema_all.yaml"
 YAMLLINT_CONFIG_PATH = HERE / "config.yamllint"
 
 # =============================================================================
@@ -74,7 +75,7 @@ INACTIVE_STATUSES = ["inactive", "orphaned", "unresponsive"]
 class CustomRuamelYAMLHandler(frontmatter.YAMLHandler):
     """
     Custom YAML handler using ruamel for better formatting preservation.
-    
+
     This handler:
     - Preserves quotes in YAML values
     - Maintains proper indentation
