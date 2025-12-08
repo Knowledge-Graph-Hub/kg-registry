@@ -3,12 +3,13 @@
 Quick test to verify parallel validation works correctly.
 """
 
-from parallel_validator import validate_resources_parallel
 import sys
 import os
 
-# Add util directory to path
+# Add util directory to path - must be before imports
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'util'))
+
+from parallel_validator import validate_resources_parallel
 
 
 def mock_validate_metadata(item, schema):
