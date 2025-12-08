@@ -77,9 +77,11 @@ layout: default
     Find all resources where this organization is listed as a contact or curator.
     Match by either label or id to handle cases where the contact label
     is a team name but the id references the parent organization.
+    Use site.pages to iterate through resource pages (same approach as resource_detail uses for org pages).
     {%- endcomment -%}
     {% assign associated_resources = "" | split: "" %}
-    {% for resource in site.resources %}
+    {% for resource in site.pages %}
+      {% if resource.layout == "resource_detail" %}
       {% assign found = false %}
       {% if resource.contacts %}
         {% for c in resource.contacts %}
@@ -106,6 +108,7 @@ layout: default
       {% if found %}
         {% assign associated_resources = associated_resources | push: resource %}
       {% endif %}
+      {% endif %}
     {% endfor %}
 
     {% if associated_resources.size > 0 %}
@@ -127,7 +130,7 @@ layout: default
           <tbody>
             {% for r in associated_resources %}
             <tr>
-              <td><a href="{{ site.baseurl }}/resource/{{ r.id }}/{{ r.id }}.html">{{ r.id }}</a></td>
+              <td><a href="{{ r.url | relative_url }}">{{ r.id }}</a></td>
               <td>{{ r.name }}</td>
               <td>{{ r.category }}</td>
               <td>{% if r.products %}{{ r.products.size }}{% else %}0{% endif %}</td>
