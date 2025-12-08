@@ -1,33 +1,19 @@
-"""Utilities for working with the OBO Foundry metadata."""
+"""Utilities for working with the KG-Registry metadata.
 
-import pathlib
-from io import StringIO
-from typing import Any, Mapping
+This module provides backward-compatible imports from common.py.
+New code should use common.py directly.
+"""
 
-import yaml
+from common import (
+    ROOT,
+    RESOURCE_DIR as RESOURCE_DIRECTORY,
+    SCHEMA_PATH,
+    get_resources_data as get_data,
+)
 
 __all__ = [
+    "ROOT",
+    "RESOURCE_DIRECTORY",
+    "SCHEMA_PATH",
     "get_data",
 ]
-
-HERE = pathlib.Path(__file__).parent.resolve()
-ROOT = HERE.parent.resolve()
-RESOURCE_DIRECTORY = ROOT.joinpath("resource").resolve()
-
-SCHEMA_PATH = ROOT.joinpath("src", "kg_registry", "kg_registry_schema", "kg_registry_schema.json")
-
-
-def get_data() -> Mapping[str, Mapping[str, Any]]:
-    """Get the resource metadata for all resources by parsing the frontmatter."""
-    resources = {}
-    for path in RESOURCE_DIRECTORY.glob("*.md"):
-        with path.open() as file:
-            lines = [line.rstrip("\n") for line in file]
-
-        assert lines[0] == "---"
-        idx = min(i for i, line in enumerate(lines[1:], start=1) if line == "---")
-
-        # Load the data like it is YAML
-        data = yaml.safe_load(StringIO("\n".join(lines[1:idx])))
-        resources[data["id"]] = data
-    return resources
