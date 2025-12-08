@@ -189,9 +189,9 @@ products:
   - clinicaltrialsgov
   product_url: https://unmtid-shinyapps.net/shiny/repodb/session/98046b0f66cea75c432b5576c1ba2840/download/downloadFull?w=
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-07_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
     accessing file
@@ -210,7 +210,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'

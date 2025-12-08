@@ -31,9 +31,9 @@ products:
   - cancer-registry-kg
   product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-07_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
@@ -48,9 +48,9 @@ products:
   - cancer-registry-kg
   product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-07_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
@@ -65,9 +65,9 @@ products:
   - cancer-registry-kg
   product_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8324069/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-07_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'

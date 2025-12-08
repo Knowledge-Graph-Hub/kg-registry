@@ -73,9 +73,9 @@ products:
   name: Wikidata Help Documentation
   product_url: https://www.wikidata.org/wiki/Wikidata:Introduction
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-07_ HTTP 403 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
@@ -86,6 +86,14 @@ products:
   id: wikidata.entity.api
   name: Wikidata Entity Data API
   product_url: https://www.wikidata.org/wiki/Special:EntityData
+- category: ProgrammingInterface
+  description: SPARQL endpoint for ID Mappings
+  id: identifier-mappings.sparql
+  name: ID Mappings SPARQL
+  original_source:
+  - identifier-mappings
+  - wikidata
+  product_url: https://frink.apps.renci.org/identifier-mappings/sparql
 repository: https://www.mediawiki.org/wiki/Wikibase
 synonyms:
 - Wikidata

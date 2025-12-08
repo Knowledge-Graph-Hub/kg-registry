@@ -31,10 +31,8 @@ products:
   format: owl
   id: mp.owl
   name: MP (OWL edition)
+  product_file_size: 114452356
   product_url: http://purl.obolibrary.org/obo/mp.owl
-  warnings:
-  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 502 error
-    when accessing file'
 - category: OntologyProduct
   description: A direct translation of the MP (OWL edition) into OBO format.
   format: obo

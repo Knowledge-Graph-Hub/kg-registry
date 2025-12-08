@@ -30,7 +30,7 @@ products:
   format: owl
   id: peco.owl
   name: peco.owl
-  product_file_size: 82610
+  product_file_size: 82622
   product_url: http://purl.obolibrary.org/obo/peco.owl
 - category: OntologyProduct
   description: Plant Experimental Conditions Ontology in OBO format

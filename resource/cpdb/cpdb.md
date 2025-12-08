@@ -42,9 +42,9 @@ products:
   - cpdb
   product_url: http://cpdb.molgen.mpg.de/CPDB/download
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
-    accessing file
   - File was not able to be retrieved when checked on 2025-12-07_ HTTP 404 error when
+    accessing file
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
     when accessing file'

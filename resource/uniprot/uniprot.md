@@ -99,9 +99,9 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-12-05_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-07_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-12-08: No Content-Length
     header found'
@@ -146,9 +146,9 @@ products:
   secondary_source:
   - oma
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-07_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
     accessing file
@@ -657,7 +657,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-05_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
     when accessing file'
