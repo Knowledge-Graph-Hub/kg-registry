@@ -121,7 +121,6 @@ layout: default
           <thead>
             <tr>
               <th>ID</th>
-              <th>Name</th>
               <th>Category</th>
               <th>Number of Products</th>
               <th>Description</th>
@@ -131,10 +130,9 @@ layout: default
             {% for r in associated_resources %}
             <tr>
               <td><a href="{{ r.url | relative_url }}">{{ r.id }}</a></td>
-              <td>{{ r.name }}</td>
               <td>{{ r.category }}</td>
               <td>{% if r.products %}{{ r.products.size }}{% else %}0{% endif %}</td>
-              <td>{{ r.description | truncate: 60 }}</td>
+              <td>{{ r.description | truncate: 80 }}</td>
             </tr>
             {% endfor %}
           </tbody>
