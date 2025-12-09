@@ -1,12 +1,19 @@
 ---
 category: Organization
 creation_date: '2025-12-07T00:00:00Z'
-description: CCLE is an organization associated with knowledge graph resources in
-  the KG-Registry.
+description: The Cancer Cell Line Encyclopedia (CCLE) project started in 2008 as a
+  collaboration between the Broad Institute and the Novartis Institutes for Biomedical
+  Research. The goal is to conduct detailed genetic and pharmacologic characterization
+  of a large panel of human cancer models, develop integrated computational analyses
+  linking pharmacologic vulnerabilities to genomic patterns, and translate cell line
+  integrative genomics into cancer patient stratification. As of 2018, CCLE continues
+  as part of the Broad Cancer Dependency Map (DepMap) Project.
+homepage_url: https://depmap.org/portal/ccle/
 id: ccle
-label: CCLE
-last_modified_date: '2025-12-07T00:00:00Z'
+label: Cancer Cell Line Encyclopedia
+last_modified_date: '2025-12-09T00:00:00Z'
 layout: organization_detail
+short_id: CCLE
 ---
 
-CCLE is an organization associated with resources in the KG-Registry. This page was auto-generated and may need additional curation.
+The Cancer Cell Line Encyclopedia (CCLE) conducts detailed genetic and pharmacologic characterization of human cancer cell lines as part of the Broad Cancer Dependency Map Project.
