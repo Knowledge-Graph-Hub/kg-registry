@@ -57,13 +57,11 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-09: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -77,13 +75,11 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-09: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -97,13 +93,11 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-09: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -117,13 +111,11 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-09: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -137,13 +129,11 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-09: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -157,13 +147,11 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-09: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -177,13 +165,11 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-09: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -197,13 +183,11 @@ products:
   secondary_source:
   - bgee
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-09-14_ Timeout connecting
     to URL
-  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-09: HTTP 404 error
     when accessing file'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
@@ -1114,7 +1098,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 403 error
+  - 'File was not able to be retrieved when checked on 2025-12-09: HTTP 403 error
     when accessing file'
 - category: GraphProduct
   description: The integrative Biomedical Knowledge Hub (iBKH) knowledge graph, harmonizing

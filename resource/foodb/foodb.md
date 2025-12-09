@@ -41,7 +41,7 @@ products:
   name: FooDB CSV Data
   product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_csv.tar.gz
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-05_ Timeout connecting
     to URL
@@ -49,9 +49,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-12-08: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
     header found'
 - category: Product
   compression: targz
@@ -61,7 +59,7 @@ products:
   name: FooDB XML Data
   product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_xml.tar.gz
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 502 error when
     accessing file
@@ -69,9 +67,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-12-08: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -81,7 +77,7 @@ products:
   name: FooDB JSON Data
   product_url: https://foodb.ca/public/system/downloads/foodb_2020_04_07_json.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 502 error when
     accessing file
@@ -89,9 +85,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-12-08: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
     header found'
 - category: Product
   compression: targz
@@ -100,7 +94,7 @@ products:
   name: FooDB MySQL Dump
   product_url: https://foodb.ca/public/system/downloads/foodb_2020_4_7_mysql.tar.gz
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 502 error when
     accessing file
@@ -108,9 +102,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-12-08: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -119,7 +111,7 @@ products:
   name: FooDB Experimental C-MS Spectra
   product_url: https://foodb.ca/public/system/downloads/foodb_experimental_cms_spectra.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-05_ Timeout connecting
     to URL
@@ -127,9 +119,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-12-08: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -138,7 +128,7 @@ products:
   name: FooDB Predicted C-MS Spectra
   product_url: https://foodb.ca/public/system/downloads/foodb_predicted_cms_spectra.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-05_ Timeout connecting
     to URL
@@ -146,9 +136,7 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-12-08: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -157,7 +145,7 @@ products:
   name: FooDB Experimental MS-MS Spectra
   product_url: https://foodb.ca/public/system/downloads/foodb_experimental_msms_spectra.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 502 error when
     accessing file
@@ -165,9 +153,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-12-08: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -184,7 +170,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-08: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -201,7 +187,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-08: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
     header found'
 - category: Product
   compression: zip
@@ -210,7 +196,7 @@ products:
   name: FooDB FID Files
   product_url: https://foodb.ca/public/system/downloads/foodb_fid_files.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 502 error when
     accessing file
@@ -218,9 +204,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
-    accessing file
-  - 'File was not able to be retrieved when checked on 2025-12-08: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-09: HTTP 404 error
     when accessing file'
 - category: Product
   compression: zip
@@ -229,7 +213,7 @@ products:
   name: FooDB Image Files
   product_url: https://foodb.ca/public/system/downloads/foodb_image_files.zip
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-07_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-12-05_ HTTP 502 error when
     accessing file
@@ -237,9 +221,7 @@ products:
     to URL
   - File was not able to be retrieved when checked on 2025-08-07_ HTTP 500 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
-    header found
-  - 'File was not able to be retrieved when checked on 2025-12-08: No Content-Length
+  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
     header found'
 - category: GraphProduct
   description: The SPOKE knowledge graph containing nodes and edges from multiple
