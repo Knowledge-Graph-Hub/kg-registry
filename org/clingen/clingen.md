@@ -6,12 +6,18 @@ contact_details:
 - contact_type: url
   value: https://clinicalgenome.org/about/contact-clingen/
 creation_date: '2025-12-07T00:00:00Z'
-description: ClinGen is an organization associated with knowledge graph resources
-  in the KG-Registry.
+description: ClinGen (Clinical Genome Resource) is a National Institutes of Health
+  (NIH)-funded resource dedicated to building an authoritative central resource that
+  defines the clinical relevance of genes and variants for use in precision medicine
+  and research. ClinGen's primary goals are to aggregate, curate, disseminate, and
+  evaluate clinical genomic data to support clinical and research applications. The
+  resource is primarily funded by the National Human Genome Research Institute (NHGRI).
+homepage_url: https://clinicalgenome.org/
 id: clingen
 label: ClinGen
-last_modified_date: '2025-12-07T00:00:00Z'
+last_modified_date: '2025-07-07T00:00:00Z'
 layout: organization_detail
+short_id: ClinGen
 ---
 
-ClinGen is an organization associated with resources in the KG-Registry. This page was auto-generated and may need additional curation.
+ClinGen (Clinical Genome Resource) is a National Institutes of Health (NIH)-funded resource dedicated to building an authoritative central resource that defines the clinical relevance of genes and variants for use in precision medicine and research.
