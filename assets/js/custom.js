@@ -688,8 +688,8 @@ jQuery(document).ready(function () {
     function updateCollectionDescription(collectionCode) {
         if (collectionCode && collectionMetadata[collectionCode]) {
             const metadata = collectionMetadata[collectionCode];
-            const description = metadata.description.replace(/^(This entity|These entities)/, 'These entities');
-            $collectionDescText.text(description);
+            const displayText = `Collection ${metadata.displayName} selected. ${metadata.description}`;
+            $collectionDescText.text(displayText);
             $collectionDescContainer.show();
         } else {
             $collectionDescContainer.hide();
