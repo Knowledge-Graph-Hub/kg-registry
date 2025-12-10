@@ -67,6 +67,8 @@ jQuery(document).ready(function () {
     const $ddEvaluation = $("#dd-evaluation");
     const $resourceCount = $("#resource-count");
     const $kgCount = $("#kg-count");
+    const $collectionDescContainer = $("#collection-description-container");
+    const $collectionDescText = $("#collection-description-text");
 
     // Update resource count display
     function updateResourceCount(count, totalCount, kgCount, totalKgCount) {
@@ -682,6 +684,18 @@ jQuery(document).ready(function () {
         return collectionMetadata[collectionCode]?.displayName || capitalize(collectionCode);
     }
 
+    // Helper function to update collection description display
+    function updateCollectionDescription(collectionCode) {
+        if (collectionCode && collectionMetadata[collectionCode]) {
+            const metadata = collectionMetadata[collectionCode];
+            const description = metadata.description.replace(/^(This entity|These entities)/, 'These entities');
+            $collectionDescText.text(description);
+            $collectionDescContainer.show();
+        } else {
+            $collectionDescContainer.hide();
+        }
+    }
+
     // Helper function to populate dropdowns
     function populateDropdown(selector, items, emptyOption = true, formatFunction = null, metadata = null) {
         const dropdown = $(selector);
@@ -802,7 +816,10 @@ jQuery(document).ready(function () {
 
             $ddDomains.on("change", filterHandler);
             $ddResourceTypes.on("change", filterHandler);
-            $ddCollections.on("change", filterHandler);
+            $ddCollections.on("change", function() {
+                updateCollectionDescription($(this).val());
+                filterHandler();
+            });
             $ddActivity.on("change", filterHandler);
             $ddEvaluation.on("change", filterHandler);
             $searchVal.on("keyup", filterHandler);
