@@ -56,30 +56,6 @@ jQuery(document).ready(function () {
         }
     };
 
-    // Collection metadata: display names and descriptions
-    const collectionMetadata = {
-        "aop": {
-            displayName: "AOP",
-            description: "This entity incorporates the Adverse Outcome Pathways (AOP) framework in some manner."
-        },
-        "ber": {
-            displayName: "BER",
-            description: "A resource or product relevant to the US Department of Energy Biological and Environmental Research (BER) program."
-        },
-        "translator": {
-            displayName: "Translator",
-            description: "This entity is part of those developed and used by the NCATS Biomedical Translator program."
-        },
-        "obo-foundry": {
-            displayName: "OBO Foundry",
-            description: "This entity is an ontology from the OBO Foundry, a collaborative effort to create reference ontologies in the biomedical domain."
-        },
-        "okn": {
-            displayName: "OKN",
-            description: "This entity is part of the Prototype Open Knowledge Network (OKN), a knowledge graph network supported by the National Science Foundation (NSF)."
-        }
-    };
-
     // Cache frequently accessed DOM elements
     const $tableDiv = $("#tableDiv");
     const $tableMain = $('#table-main');
