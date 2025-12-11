@@ -216,15 +216,37 @@ products:
   product_url: https://edamontology.org/EDAM.csv
   secondary_source:
   - edam
+- category: GraphProduct
+  description: Downloadable knowledge graph dump in TAR/GZ format containing complete
+    FORUM data
+  id: forum.graph.dump
+  name: FORUM Knowledge Graph Dump
+  original_source:
+  - mesh
+  - chebi
+  - cito
+  - fabio
+  - dc
+  - cheminf
+  - skos
+  - chemont
+  - pubchem
+  - pubmed
+  product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
+  secondary_source:
+  - forum
+  warnings:
+  - 'File was not able to be retrieved when checked on 2025-12-11: FTP error: timed
+    out'
 publications:
 - id: https://www.iso.org/standard/71339.html
   preferred: true
-  title: "ISO 15836-1:2017 Information and documentation \u2014 The Dublin Core metadata\
-    \ element set \u2014 Part 1: Core elements"
+  title: 'ISO 15836-1:2017 Information and documentation — The Dublin Core metadata
+    element set — Part 1: Core elements'
   year: '2017'
 - id: https://www.iso.org/standard/71341.html
-  title: "ISO 15836-2:2019 Information and documentation \u2014 The Dublin Core metadata\
-    \ element set \u2014 Part 2: DCMI Properties and classes"
+  title: 'ISO 15836-2:2019 Information and documentation — The Dublin Core metadata
+    element set — Part 2: DCMI Properties and classes'
   year: '2019'
 repository: https://github.com/dcmi/
 ---

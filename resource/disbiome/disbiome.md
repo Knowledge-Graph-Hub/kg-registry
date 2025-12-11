@@ -149,9 +149,6 @@ products:
   product_url: https://portal.nersc.gov/project/m4689/KGMicrobe-biomedical-function-20250222.tar.gz
   secondary_source:
   - kg-microbe
-warnings:
-- This is an automatically generated stub page. Please replace with accurate information
-  about this resource.
 ---
 # Disbiome
 

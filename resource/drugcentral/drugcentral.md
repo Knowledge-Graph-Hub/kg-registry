@@ -231,7 +231,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-11_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-11_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-12-11: No Content-Length
     header found'
@@ -252,7 +252,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-11_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-11_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-12-11: No Content-Length
     header found'
@@ -274,7 +274,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-11_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-11_ No Content-Length
     header found
   - File was not able to be retrieved when checked on 2025-10-30_ Timeout connecting
     to URL
@@ -323,7 +323,7 @@ products:
   warnings:
   - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-27_ HTTP 500 error when
     accessing file

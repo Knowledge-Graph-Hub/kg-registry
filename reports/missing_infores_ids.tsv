@@ -63,6 +63,7 @@ cgnc	CGNC	DataSource	http://birdgenenames.org/cgnc/	resource/cgnc/cgnc.md
 chea-kg	ChEA-KG	KnowledgeGraph	https://maayanlab.cloud/chea-kg/	resource/chea-kg/chea-kg.md
 chemicalchecker	Chemical Checker	DataSource	http://packages.sbnb-pages.irbbarcelona.org/chemical_checker/	resource/chemicalchecker/chemicalchecker.md
 cheminf	Chemical Information Ontology	Ontology	https://github.com/semanticchemistry/semanticchemistry	resource/cheminf/cheminf.md
+chemont	ChemOnt	Ontology	http://classyfire.wishartlab.com/	resource/chemont/chemont.md
 chiro	CHEBI Integrated Role Ontology	Ontology	https://github.com/obophenotype/chiro	resource/chiro/chiro.md
 chmo	Chemical Methods Ontology	Ontology	https://github.com/rsc-ontologies/rsc-cmo	resource/chmo/chmo.md
 chr	Monochrom Ontology	Ontology	https://monarch-initiative.github.io/monochrom/	resource/chr/chr.md
@@ -70,6 +71,7 @@ cido	Coronavirus Infectious Disease Ontology	Ontology	https://github.com/cido-on
 ciel	CIEL	Aggregator	https://openconceptlab.org/project/ciel/	resource/ciel/ciel.md
 cio	Confidence Information Ontology	Ontology	https://github.com/BgeeDB/confidence-information-ontology	resource/cio/cio.md
 circbase	circBase	Aggregator		resource/circbase/circbase.md
+cito	CiTO	Ontology	https://sparontologies.github.io/cito/current/cito.html	resource/cito/cito.md
 cl-kg	Cell Ontology Knowledge Graph (CL-KG)	KnowledgeGraph	https://cellular-semantics.github.io/CL_KG/	resource/cl-kg/cl-kg.md
 clao	Collembola Anatomy Ontology	Ontology	https://github.com/luis-gonzalez-m/Collembola	resource/clao/clao.md
 climatemodelskg	Climate Models KG	KnowledgeGraph	https://frink.apps.renci.org/climatemodelskg/sparql	resource/climatemodelskg/climatemodelskg.md
@@ -150,6 +152,7 @@ evlncrnas	EVLncRNAs	DataSource	https://www.sdklab-biophysics-dzu.net/EVLncRNAs3/
 exmo	Exercise Medicine Ontology	Ontology	https://github.com/Exercise-Medicine-Ontology/EXMO	resource/exmo/exmo.md
 exo	Exposure ontology	Ontology	https://github.com/CTDbase/exposure-ontology	resource/exo/exo.md
 expressionatlas	Expression Atlas	Aggregator	https://www.ebi.ac.uk/gxa/home	resource/expressionatlas/expressionatlas.md
+fabio	FABIO	Ontology	https://sparontologies.github.io/fabio/current/fabio.html	resource/fabio/fabio.md
 faldo	FALDO	Ontology	http://biohackathon.org/resource/faldo	resource/faldo/faldo.md
 fao	Fungal gross anatomy	Ontology	https://github.com/obophenotype/fungal-anatomy-ontology/	resource/fao/fao.md
 fbbi	Biological Imaging Methods Ontology	Ontology	http://cellimagelibrary.org/	resource/fbbi/fbbi.md
@@ -165,6 +168,7 @@ flu	Influenza Ontology	Ontology	http://purl.obolibrary.org/obo/flu/	resource/flu
 fma	Foundational Model of Anatomy Ontology (subset)	Ontology	http://si.washington.edu/projects/fma	resource/fma/fma.md
 fobi	Food-Biomarker Ontology	Ontology	https://github.com/pcastellanoescuder/FoodBiomarkerOntology	resource/fobi/fobi.md
 foodon	Food Ontology	Ontology	https://foodon.org/	resource/foodon/foodon.md
+forum	FORUM	KnowledgeGraph	https://forum-webapp.semantic-metabolomics.fr/	resource/forum/forum.md
 fovt	FuTRES Ontology of Vertebrate Traits	Ontology	https://github.com/futres/fovt	resource/fovt/fovt.md
 fypo	Fission Yeast Phenotype Ontology	Ontology	https://github.com/pombase/fypo	resource/fypo/fypo.md
 gallont	Plant Gall Ontology	Ontology	https://adeans.github.io/gallont/	resource/gallont/gallont.md
