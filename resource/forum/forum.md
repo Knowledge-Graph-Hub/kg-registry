@@ -36,6 +36,19 @@ products:
   id: forum.graph.dump
   name: FORUM Knowledge Graph Dump
   product_url: ftp://forum:Forum2021Cov!@ftp.semantic-metabolomics.org/dumps/2021/share.tar.gz
+  original_source:
+  - mesh
+  - chebi
+  - cito
+  - fabio
+  - dc
+  - cheminf
+  - skos
+  - chemont
+  - pubchem
+  - pubmed
+  secondary_source:
+  - forum
 publications:
 - authors:
   - Delmas M
