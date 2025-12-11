@@ -10,12 +10,9 @@ organizations:
   - contact_type: url
     value: https://data.4dnucleome.org/help/about/contact-us
   creation_date: '2025-12-07T00:00:00Z'
-  description: The 4D Nucleome Network Data Coordination and Integration Center (DCIC)
-    manages the data portal for the 4D Nucleome (4DN) program. The 4DN Network aims
-    to understand the principles behind the three-dimensional organization of the
-    nucleus in space and time (the 4th dimension) and the role nuclear organization
-    plays in gene expression and cellular function. The DCIC is based at Harvard Medical
-    School.
+  description: 4D Nucleome Network develops comprehensive maps of 3D genome organization
+    and nuclear structure. The network provides chromatin interaction, nuclear organization,
+    and genome topology data for systems biology research.
   homepage_url: https://data.4dnucleome.org/
   github_url: https://github.com/4dn-dcic
   id: 4d-nucleome-network-data-coordination-and-integrat
@@ -28,11 +25,9 @@ organizations:
   - contact_type: url
     value: https://www.alliancegenome.org/contact-us
   creation_date: '2025-12-07T00:00:00Z'
-  description: The Alliance of Genome Resources is a consortium of model organism
-    databases and the Gene Ontology Consortium that provides integrated access to
-    data from FlyBase, MGD, RGD, SGD, WormBase, Xenbase, ZFIN, and GOC. The Alliance
-    enables cross-species comparative genomics research by integrating gene, allele,
-    phenotype, disease, and expression data across multiple model organisms and human.
+  description: Alliance of Genome Resources provides integrated genomic data across
+    model organisms and humans. The alliance supplies comparative genomics, functional
+    annotation, and species-specific genome resources.
   homepage_url: https://www.alliancegenome.org/
   github_url: https://github.com/alliance-genome
   id: alliance-of-genome-resources
@@ -45,12 +40,9 @@ organizations:
   - contact_type: url
     value: https://aopwiki.org/info_pages/10
   creation_date: '2025-12-07T00:00:00Z'
-  description: The AOP-Wiki Coordination Group (also known as the AOP-KB Coordination
-    Group) governs the Adverse Outcome Pathway Knowledge Base (AOP-KB), which is the
-    primary repository for all Adverse Outcome Pathways (AOPs) developed either as
-    part of the OECD AOP Development Programme or by the broader scientific community.
-    The group ensures quality standards and coordinates contributions to the AOP-Wiki
-    platform.
+  description: AOP (Adverse Outcome Pathway) Wiki is a collaborative platform for
+    documenting toxicology pathways and mechanisms. The wiki provides pathway documentation
+    and chemical hazard assessment information.
   homepage_url: https://aopwiki.org/
   id: aop-wiki-coordination-group
   label: AOP-Wiki Coordination Group
@@ -62,8 +54,9 @@ organizations:
   - contact_type: url
     value: https://www.bv-brc.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Bacterial and Viral Bioinformatics Resource Center is an organization
-    associated with knowledge graph resources in the KG-Registry.
+  description: BV-BRC is a comprehensive bioinformatics resource center providing
+    integrated analysis tools for bacterial and viral genomics. The center supplies
+    genomics data, comparative analysis, and systems biology resources.
   id: bacterial-and-viral-bioinformatics-resource-center
   label: Bacterial and Viral Bioinformatics Resource Center
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -75,13 +68,9 @@ organizations:
   - contact_type: email
     value: sherry.jenkins@mssm.edu
   creation_date: '2025-12-07T00:00:00Z'
-  description: The BD2K-LINCS Data Coordination and Integration Center (DCIC) is a
-    component of the NIH Common Fund's Library of Integrated Network-Based Cellular
-    Signatures (LINCS) program. The DCIC aims to create a network-based understanding
-    of biology by cataloging changes in gene expression and other cellular processes
-    that occur when cells are exposed to various genetic and environmental stressors.
-    The center develops tools and resources to help researchers access and analyze
-    LINCS data to understand cell pathways and develop therapies.
+  description: BD2K LINCS Data Center coordinates the Library of Integrated Network-based
+    Cellular Signatures program. The center provides chemical perturbation data and
+    cellular response information for systems biology.
   github_url: https://github.com/MaayanLab/LINCS
   homepage_url: https://lincsproject.org/
   id: bd2k-lincs-data-coordination-and-integration-cente
@@ -94,13 +83,9 @@ organizations:
   - contact_type: url
     value: https://www.bhklab.ca/contact
   creation_date: '2025-12-07T00:00:00Z'
-  description: BHKLAB is a Computational Oncology Lab at the Princess Margaret Cancer
-    Centre that applies machine learning and artificial intelligence to cancer research.
-    The lab develops computational tools for pharmacogenomics, drug response prediction,
-    and cancer cell line authentication. Key resources developed by the lab include
-    PharmacoDB, ToxicoDB, XevaDB, and PredictIO. The group emphasizes FAIR data principles,
-    open science, and IDEA (inclusion, diversity, equity, accessibility) in their
-    research practices.
+  description: BHK Lab at Princess Margaret Cancer Centre conducts computational oncology
+    research. The lab provides cancer genomics analysis, precision medicine methodologies,
+    and oncology research data.
   github_url: https://github.com/bhklab
   homepage_url: https://www.bhklab.ca/
   id: bhklab-computational-oncology-lab
@@ -115,11 +100,9 @@ organizations:
   - contact_type: url
     value: https://www.bindingdb.org/rwd/bind/sendmail.jsp
   creation_date: '2025-12-07T00:00:00Z'
-  description: BindingDB is a public, web-accessible database of measured binding
-    affinities, focusing primarily on the interactions of proteins considered to be
-    candidate drug-targets with small, drug-like molecules. It contains over 3.1 million
-    binding data points for 11,000+ proteins and 1.3 million+ compounds. BindingDB
-    supports medicinal chemistry, drug discovery, and computational chemistry research.
+  description: BindingDB is a comprehensive database of protein-ligand binding data.
+    The database provides binding kinetics, chemical structures, and drug-target interaction
+    information.
   homepage_url: https://www.bindingdb.org/
   id: bindingdb
   label: BindingDB
@@ -131,15 +114,9 @@ organizations:
   - contact_type: url
     value: https://borg.kaust.edu.sa/contact-us
   creation_date: '2025-12-07T00:00:00Z'
-  description: The Bio-Ontology Research Group (BORG) at King Abdullah University
-    of Science and Technology (KAUST) is led by Professor Robert Hoehndorf. The group
-    focuses on the use of bio-ontologies for data integration and analysis in biology,
-    working on biological problems that require integration of multiple types of data
-    across scales and levels of granularity. Research areas include development of
-    biomedical ontologies, their application to data integration and annotation, and
-    ontology-based neuro-symbolic machine learning models for understanding rare and
-    common human diseases, personalizing diagnosis and treatment, and prediction of
-    functions and phenotypes.
+  description: Bio-Ontology Research Group develops biomedical ontologies and semantic
+    web technologies. The group provides ontology standards and semantic data integration
+    methods for biomedical research.
   github_url: https://github.com/bio-ontology-research-group
   homepage_url: https://borg.kaust.edu.sa/
   id: bio-ontology-research-group
@@ -152,12 +129,9 @@ organizations:
   - contact_type: url
     value: https://bio2rdf.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: Bio2RDF is an open-source project that provides linked data for the
-    life sciences. It uses Semantic Web technologies to integrate, interlink, and
-    provide a unified query interface over biological databases. Bio2RDF converts
-    data from diverse biological sources into RDF format and provides SPARQL endpoints
-    for querying, enabling researchers to discover relationships across different
-    biological datasets.
+  description: Bio2RDF converts biomedical databases into linked data and RDF format.
+    The project provides semantic web representations of biological and chemical data
+    for knowledge graph integration.
   homepage_url: https://bio2rdf.org/
   github_url: https://github.com/bio2rdf
   id: bio2rdf
@@ -170,11 +144,9 @@ organizations:
   - contact_type: email
     value: biocyc-support@sri.com
   creation_date: '2025-12-07T00:00:00Z'
-  description: BioCyc is a collection of over 20,000 Pathway/Genome Databases (PGDBs)
-    for model eukaryotes and thousands of microbes, developed by SRI International.
-    BioCyc integrates curated data from over 153,000 publications and provides software
-    tools for metabolic pathway analysis, genome browsing, and omics data analysis.
-    The collection includes EcoCyc, MetaCyc, and HumanCyc databases.
+  description: BioCyc is a collection of organism-specific metabolic pathway and genome
+    databases. The database provides metabolic pathway, gene annotation, and enzymatic
+    reaction information.
   homepage_url: https://biocyc.org/
   id: biocyc
   label: BioCyc
@@ -186,8 +158,10 @@ organizations:
   - contact_type: url
     value: http://biogps.org/about/
   creation_date: '2025-12-07T00:00:00Z'
-  description: BioGPS / The Scripps Research Institute is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: BioGPS is a web portal developed at The Scripps Research Institute
+    that provides gene expression data, protein interaction data, and annotation resources.
+    The portal enables comparative genomics and systems biology research through integrated
+    knowledge graphs and interactive visualization tools.
   id: biogps-the-scripps-research-institute
   label: BioGPS / The Scripps Research Institute
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -199,12 +173,9 @@ organizations:
   - contact_type: url
     value: https://thebiogrid.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: BioGRID (Biological General Repository for Interaction Datasets) is
-    a public database of protein, genetic, and chemical interactions curated from
-    the biomedical literature. It contains over 2.2 million non-redundant interactions
-    from more than 87,000 publications, covering multiple species including human,
-    yeast, and model organisms. BioGRID also maintains ORCS, an open repository of
-    CRISPR screens.
+  description: BioGRID is a comprehensive database of protein, genetic, and chemical
+    interactions. The database provides interaction data, functional associations,
+    and network biology information.
   homepage_url: https://thebiogrid.org/
   github_url: https://github.com/BioGRID
   id: biogrid
@@ -217,8 +188,9 @@ organizations:
   - contact_type: url
     value: https://glygen.ccrc.uga.edu/frontend/contact
   creation_date: '2025-12-07T00:00:00Z'
-  description: BiomarkerKB Team is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: BiomarkerKB Team maintains a curated database of biomarkers and disease-gene
+    associations. The resource supplies precision medicine biomarkers and therapeutic
+    targets for knowledge graphs.
   id: biomarkerkb-team
   label: BiomarkerKB Team
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -230,8 +202,9 @@ organizations:
   - contact_type: url
     value: https://github.com/BioPack-team/retriever
   creation_date: '2025-12-07T00:00:00Z'
-  description: BioPack Team is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: BioPack Team develops bioinformatics tools and resources for biomedical
+    analysis. The team contributes software tools and methodologies for knowledge
+    graph construction.
   id: biopack-team
   label: BioPack Team
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -258,12 +231,9 @@ organizations:
   - contact_type: email
     value: innatedb-mail@sfu.ca
   creation_date: '2025-12-07T00:00:00Z'
-  description: The Brinkman Laboratory at Simon Fraser University (SFU) in British
-    Columbia, Canada, conducts bioinformatics research focused on infectious disease
-    genomics and host-pathogen interactions. The lab develops and maintains resources
-    including InnateDB, a database and analysis platform for innate immunity systems
-    biology, and IslandViewer for genomic island prediction. The lab contributes to
-    understanding microbial pathogenesis through computational approaches.
+  description: Brinkman Laboratory at Simon Fraser University develops bioinformatics
+    and comparative genomics methods. The lab provides pathogen genomics and genome
+    analysis resources.
   github_url: https://github.com/brinkmanlab
   homepage_url: https://www.brinkmanlab.ca/
   id: brinkman-laboratory-simon-fraser-university
@@ -274,11 +244,8 @@ organizations:
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
   description: The Broad Institute of MIT and Harvard is a biomedical and genomic
-    research center located in Cambridge, Massachusetts. It was founded in 2004 to
-    bring together faculty, professional staff, and students from across MIT and Harvard
-    to pursue transformative research in human disease. The Broad Institute develops
-    and applies new tools and methods for genomic medicine, including genome sequencing,
-    computational biology, and therapeutic development.
+    research center. The institute provides genomic tools, pathway databases, and
+    disease research resources.
   github_url: https://github.com/broadinstitute
   homepage_url: https://www.broadinstitute.org/
   id: broad
@@ -291,14 +258,9 @@ organizations:
   - contact_type: url
     value: https://www.bv-brc.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: The Bacterial and Viral Bioinformatics Resource Center (BV-BRC) is
-    an information system designed to support the biomedical research community's
-    work on bacterial and viral infectious diseases. BV-BRC combines data, technology,
-    and user communities from PATRIC (bacterial system) and IRD/ViPR (viral systems),
-    hosting hundreds of thousands of bacterial genomes and over a million viral genomes.
-    The resource provides data on protein structure and function, clinical studies,
-    drug targets and resistance, and epidemiology, along with open source tools for
-    data analysis and genomic annotation. Funded by NIAID/NIH under Grant No. U24AI183849.
+  description: BV-BRC (Bacterial and Viral Bioinformatics Resource Center) provides
+    integrated analysis and data resources. The center supplies bacterial and viral
+    genomics analysis platforms and data.
   github_url: https://github.com/BV-BRC
   homepage_url: https://www.bv-brc.org/
   id: bv-brc
@@ -311,21 +273,18 @@ organizations:
   - contact_type: email
     value: help@bv-brc.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: BV-BRC Help Desk is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: BV-BRC Help Desk provides technical support for users of the Bacterial
+    and Viral Bioinformatics Resource Center. The helpdesk assists users accessing
+    genomics data and analysis tools.
   id: bv-brc-help-desk
   label: BV-BRC Help Desk
   last_modified_date: '2025-12-07T00:00:00Z'
   layout: organization_detail
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: The Cancer Cell Line Encyclopedia (CCLE) project started in 2008 as
-    a collaboration between the Broad Institute and the Novartis Institutes for Biomedical
-    Research. The goal is to conduct detailed genetic and pharmacologic characterization
-    of a large panel of human cancer models, develop integrated computational analyses
-    linking pharmacologic vulnerabilities to genomic patterns, and translate cell
-    line integrative genomics into cancer patient stratification. As of 2018, CCLE
-    continues as part of the Broad Cancer Dependency Map (DepMap) Project.
+  description: CCLE (Cancer Cell Line Encyclopedia) provides genomic and phenotypic
+    data for cancer cell lines. The resource supplies cancer genomics, drug sensitivity,
+    and mutation data.
   homepage_url: https://depmap.org/portal/ccle/
   id: ccle
   label: Cancer Cell Line Encyclopedia
@@ -339,14 +298,9 @@ organizations:
   - contact_type: email
     value: CCSB_Admin@dfci.harvard.edu
   creation_date: '2025-12-07T00:00:00Z'
-  description: The Center for Cancer Systems Biology (CCSB) at Dana-Farber Cancer
-    Institute was founded in 2004 to bring together scientists with cross-disciplinary
-    interests in understanding the relationship between genotype and phenotype. The
-    center's long-term goal is to understand how macromolecular networks control biological
-    processes and how perturbations in these networks explain phenotypes and human
-    disease. CCSB researchers study protein-protein interaction networks, their global
-    organization, topological features, and how cellular network organization is disrupted
-    in disease.
+  description: Center for Cancer Systems Biology conducts cancer systems biology research.
+    The center provides cancer genomics, pathway analysis, and systems-level research
+    data.
   homepage_url: https://ccsb.dana-farber.org/
   id: center-for-cancer-systems-biology
   label: Center for Cancer Systems Biology
@@ -358,8 +312,9 @@ organizations:
   - contact_type: email
     value: agbase@email.arizona.edu
   creation_date: '2025-12-07T00:00:00Z'
-  description: CGNC is an organization associated with knowledge graph resources in
-    the KG-Registry.
+  description: The Cancer Gene Census is a curated catalog of genes implicated in
+    human cancers. The resource provides gene-cancer associations essential for cancer
+    genomics knowledge graphs.
   id: cgnc
   label: CGNC
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -385,12 +340,9 @@ organizations:
   - contact_type: email
     value: help@civicdb.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: CIViC (Clinical Interpretation of Variants in Cancer) is an open-access,
-    open-source, community-driven knowledgebase for clinical interpretations of variants
-    in cancer. CIViC support is provided by the Griffith Lab at Washington University
-    in St. Louis. The platform enables precision medicine by providing expert-curated
-    interpretations of the clinical relevance of cancer variants, including their
-    diagnostic, prognostic, predictive, and predisposing significance.
+  description: CIViC Support provides technical assistance for the Clinical Interpretation
+    of Variants in Cancer database. The support service helps users access clinical
+    variant interpretation data.
   github_url: https://github.com/griffithlab/civic-server
   homepage_url: https://civicdb.org/
   id: civic-support
@@ -405,13 +357,9 @@ organizations:
   - contact_type: url
     value: https://clinicalgenome.org/about/contact-clingen/
   creation_date: '2025-12-07T00:00:00Z'
-  description: ClinGen (Clinical Genome Resource) is a National Institutes of Health
-    (NIH)-funded resource dedicated to building an authoritative central resource
-    that defines the clinical relevance of genes and variants for use in precision
-    medicine and research. ClinGen's primary goals are to aggregate, curate, disseminate,
-    and evaluate clinical genomic data to support clinical and research applications.
-    The resource is primarily funded by the National Human Genome Research Institute
-    (NHGRI).
+  description: ClinGen (Clinical Genome Resource) provides expert interpretation of
+    genomic variants for clinical use. The resource supplies gene-disease-variant
+    associations and clinical evidence.
   homepage_url: https://clinicalgenome.org/
   id: clingen
   label: ClinGen
@@ -423,13 +371,8 @@ organizations:
   - contact_type: url
     value: https://www.cdisc.org/contact
   creation_date: '2025-12-07T00:00:00Z'
-  description: The Clinical Data Interchange Standards Consortium (CDISC) is a 501(c)(3)
-    global nonprofit organization that develops and advances data standards of the
-    highest quality for clinical research. By bringing together a global community
-    of experts, CDISC creates clarity in clinical research by enabling the accessibility,
-    interoperability, and reusability of data for more meaningful and efficient research
-    with greater impact on global health. CDISC standards are used to support regulatory
-    submissions to agencies including the FDA and EMA.
+  description: CDIC develops standards for clinical data interchange and health information
+    exchange. The consortium provides data standards for healthcare systems integration.
   homepage_url: https://www.cdisc.org/
   id: clinical-data-interchange-standards-consortium-cdi
   label: Clinical Data Interchange Standards Consortium (CDISC)
@@ -443,13 +386,9 @@ organizations:
   - contact_type: email
     value: contact@cpicpgx.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: The Clinical Pharmacogenetics Implementation Consortium (CPIC) is an
-    international consortium that creates, curates, and posts freely available, peer-reviewed,
-    evidence-based, updatable pharmacogenetics/pharmacogenomics (PGx) clinical practice
-    guidelines. CPIC is part of the NIH Pharmacogenomics Research Network and is managed
-    at Stanford University and St. Jude Children's Research Hospital. CPIC guidelines
-    help clinicians understand how genetic test results should be used to optimize
-    drug therapy, enabling the implementation of pharmacogenomics into clinical practice.
+  description: CPIC provides guidelines for clinical pharmacogenetics implementation
+    and testing. The consortium supplies drug-gene-phenotype clinical recommendations
+    and evidence.
   homepage_url: https://cpicpgx.org/
   id: clinical-pharmacogenetics-implementation-consortiu
   label: Clinical Pharmacogenetics Implementation Consortium (CPIC)
@@ -461,13 +400,9 @@ organizations:
   - contact_type: url
     value: https://ctti-clinicaltrials.org/contact-us/
   creation_date: '2025-12-07T00:00:00Z'
-  description: The Clinical Trials Transformation Initiative (CTTI) is a public-private
-    partnership co-founded by Duke University and the U.S. Food and Drug Administration
-    (FDA) in 2007. CTTI develops and drives adoption of practices that increase the
-    quality and efficiency of clinical trials. The initiative unites more than 500
-    organizations and members across academic, industry, patient advocacy, and regulatory
-    sectors to build a better future for clinical trials through evidence-based recommendations,
-    tools, case studies, and publications.
+  description: CTTI develops best practices and standards for clinical trial design
+    and conduct. The initiative provides clinical trial methodologies and operational
+    guidance.
   homepage_url: https://ctti-clinicaltrials.org/
   id: clinical-trials-transformation-initiative-ctti
   label: Clinical Trials Transformation Initiative (CTTI)
@@ -479,8 +414,9 @@ organizations:
   - contact_type: email
     value: register@clinicaltrials.gov
   creation_date: '2025-12-07T00:00:00Z'
-  description: ClinicalTrials.gov Help Desk is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: ClinicalTrials.gov Help Desk provides user support for the clinical
+    trials database. The helpdesk assists researchers accessing clinical trial information
+    and data.
   id: clinicaltrialsgov-help-desk
   label: ClinicalTrials.gov Help Desk
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -490,8 +426,9 @@ organizations:
   - contact_type: url
     value: https://idrblab.org/ttd/
   creation_date: '2025-12-07T00:00:00Z'
-  description: College of Pharmaceutical Sciences, Zhejiang University is an organization
-    associated with knowledge graph resources in the KG-Registry.
+  description: College of Pharmaceutical Sciences at Zhejiang University conducts
+    pharmaceutical research and drug development. The institution contributes pharmaceutical
+    and drug science data.
   id: college-of-pharmaceutical-sciences-zhejiang-univer
   label: College of Pharmaceutical Sciences, Zhejiang University
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -501,14 +438,9 @@ organizations:
   - contact_type: url
     value: https://www.dbmi.columbia.edu/
   creation_date: '2025-12-07T00:00:00Z'
-  description: The Department of Biomedical Informatics (DBMI) at Columbia University
-    Irving Medical Center is one of the oldest informatics departments in the nation.
-    Located on the CUIMC campus, DBMI is both an academic department and an information
-    services partner to NewYork-Presbyterian Hospital. Faculty and students have set
-    the path for design of clinical information systems, methodologies in clinical
-    natural language processing, and machine learning over electronic health record
-    data. DBMI is home to OHDSI (Observational Health Data Sciences and Informatics)
-    and conducts research applying informatics from molecular to population scales.
+  description: Columbia University Department of Biomedical Informatics develops informatics
+    methods and systems. The department provides biomedical data integration and informatics
+    resources.
   homepage_url: https://www.dbmi.columbia.edu/
   id: columbia-university-department-of-biomedical-infor
   label: Columbia University Department of Biomedical Informatics
@@ -522,13 +454,9 @@ organizations:
   - contact_type: url
     value: https://info.cfde.cloud/
   creation_date: '2025-12-07T00:00:00Z'
-  description: The Common Fund Data Ecosystem (CFDE) is an NIH initiative that aims
-    to facilitate improved discovery, reuse, integration, and analyses of datasets
-    from NIH Common Fund programs. The CFDE enhances the accessibility and utility
-    of Common Fund-generated data, striving to uphold FAIR principles (Findable, Accessible,
-    Interoperable, Reusable). This initiative fosters groundbreaking biomedical discoveries
-    by creating synergies across diverse datasets within the Common Fund ecosystem.
-    The Data Resource and Knowledge Centers are funded under grant OT2OD036435.
+  description: Common Fund Data Ecosystem coordinates data support for NIH Common
+    Fund programs. The ecosystem provides cross-program data resources and analytical
+    capabilities.
   github_url: https://github.com/nih-cfde
   homepage_url: https://info.cfde.cloud/
   id: common-fund-data-ecosystem
@@ -538,13 +466,9 @@ organizations:
   short_id: CFDE
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: The Comparative Toxicogenomics Database (CTD) is a robust, publicly
-    available database that aims to advance understanding about how environmental
-    exposures affect human health. CTD provides manually curated information about
-    chemical-gene/protein interactions, chemical-disease and gene-disease relationships.
-    The database, first released in November 2004, is supported by the National Institute
-    of Environmental Health Sciences (NIEHS) and serves as a critical resource for
-    toxicogenomics research.
+  description: CTD (Comparative Toxicogenomics Database) provides chemical-gene-disease-phenotype
+    relationships. The database supplies toxicology, environmental health, and chemical
+    safety information.
   homepage_url: https://ctdbase.org/
   id: comparative-toxicogenomics-database
   label: Comparative Toxicogenomics Database
@@ -556,12 +480,9 @@ organizations:
   - contact_type: url
     value: https://www.cosmickb.org/about/contact-us/
   creation_date: '2025-12-07T00:00:00Z'
-  description: The COSMIC Team at the Wellcome Sanger Institute develops and maintains
-    COSMIC (Catalogue of Somatic Mutations in Cancer), the world's most comprehensive
-    resource for exploring the impact of somatic mutations in human cancer. COSMIC
-    was established by Professor Sir Mike Stratton and Professor Andy Futreal and
-    has become an integral part of the cancer research ecosystem over 20 years of
-    development.
+  description: COSMIC Team maintains the Catalogue of Somatic Mutations in Cancer.
+    The catalog provides cancer mutations, genomic variants, and oncology research
+    data.
   homepage_url: https://www.cosmickb.org/
   id: cosmic-team-wellcome-sanger-institute
   label: COSMIC Team (Wellcome Sanger Institute)
@@ -570,12 +491,9 @@ organizations:
   short_id: COSMIC
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: Critical Path Institute (C-Path) is a nonprofit organization dedicated
-    to improving and streamlining the process of drug development. Founded in 2005
-    as part of the U.S. Food and Drug Administration's (FDA) Critical Path Initiative,
-    C-Path operates as a public-private partnership that brings together stakeholders
-    from industry, government, and academia to develop tools and standards that make
-    clinical trials more efficient and effective.
+  description: Critical Path Institute develops standards and approaches for pharmaceutical
+    research. The institute provides drug development methodologies and collaborative
+    resources.
   homepage_url: https://c-path.org/
   id: critical-path-institute
   label: Critical Path Institute
@@ -587,8 +505,9 @@ organizations:
   - contact_type: url
     value: https://bidd.group/index.html#people
   creation_date: '2025-12-07T00:00:00Z'
-  description: Department of Pharmacy, National University of Singapore is an organization
-    associated with knowledge graph resources in the KG-Registry.
+  description: Department of Pharmacy at National University of Singapore conducts
+    pharmaceutical sciences research. The department contributes drug and pharmacology
+    research data.
   id: department-of-pharmacy-national-university-of-sing
   label: Department of Pharmacy, National University of Singapore
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -598,8 +517,9 @@ organizations:
   - contact_type: url
     value: https://www.dbgi.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: Digital Botanical Gardens Initiative is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: Digital Botanical Gardens Initiative creates comprehensive knowledge
+    graphs for plant science. The initiative integrates botanical data, plant genomics,
+    and phenotypic information.
   id: digital-botanical-gardens-initiative
   label: Digital Botanical Gardens Initiative
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -609,8 +529,9 @@ organizations:
   - contact_type: email
     value: info@disprot.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: DisProt Team is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: DisProt Team maintains a database of proteins with intrinsically disordered
+    regions. The resource provides protein structure variation and functional annotation
+    data.
   id: disprot-team
   label: DisProt Team
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -622,12 +543,9 @@ organizations:
   - contact_type: url
     value: https://www.drugbank.com/contact
   creation_date: '2025-12-07T00:00:00Z'
-  description: DrugBank is a comprehensive, free-to-access online database containing
-    information on drugs and drug targets. Started in 2006 at the University of Alberta,
-    it combines detailed drug data (chemical, pharmacological, pharmaceutical) with
-    drug target information (sequence, structure, pathway). DrugBank contains nearly
-    20,000 drug entries including approved small molecule drugs, biologics, nutraceuticals,
-    and experimental drugs.
+  description: DrugBank is a comprehensive database of drug targets, actions, and
+    properties. The database provides drug-target interactions, pharmacology, and
+    therapeutic information.
   homepage_url: https://go.drugbank.com/
   id: drugbank
   label: DrugBank
@@ -636,8 +554,8 @@ organizations:
   layout: organization_detail
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: DrugCentral is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: DrugCentral is a comprehensive drug and pharmacology information resource.
+    The database provides drug-disease associations and therapeutic information.
   id: drugcentral
   label: DrugCentral
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -647,9 +565,9 @@ organizations:
   - contact_type: url
     value: https://www.dsmz.de/
   creation_date: '2025-12-07T00:00:00Z'
-  description: DSMZ (Leibniz Institute DSMZ-German Collection of Microorganisms and
-    Cell Cultures) is an organization associated with knowledge graph resources in
-    the KG-Registry.
+  description: DSMZ is a comprehensive repository of microorganism and cell culture
+    collections. The institute provides microbiology and cell biology resources for
+    research.
   id: dsmz-leibniz-institute-dsmz-german-collection-of-m
   label: DSMZ (Leibniz Institute DSMZ-German Collection of Microorganisms and Cell
     Cultures)
@@ -660,13 +578,9 @@ organizations:
   layout: organization_detail
   label: European Bioinformatics Institute
   short_id: EMBL-EBI
-  description: The European Bioinformatics Institute (EMBL-EBI) is a world-leading
-    research organization and service provider in bioinformatics, hosting and maintaining
-    over 30 major biological databases. EBI provides freely accessible data and tools
-    covering genomics, proteomics, structural biology, systems biology, chemistry,
-    and biomedical data. As part of the European Molecular Biology Laboratory (EMBL),
-    EBI serves as a central hub for life science data, offering both data storage
-    and advanced computational analysis tools to researchers worldwide.
+  description: EBI (European Bioinformatics Institute) provides bioinformatics tools
+    and databases. The institute supplies sequence, structure, and expression data
+    for research.
   homepage_url: https://www.ebi.ac.uk/
   github_url: https://github.com/ebi-ait
   contact_details:
@@ -679,8 +593,8 @@ organizations:
   - contact_type: email
     value: kg@ebrains.eu
   creation_date: '2025-12-07T00:00:00Z'
-  description: EBRAINS team is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: EBRAINS Team develops the European Brain Research Area Network platform.
+    The initiative provides neuroscience data infrastructure for brain research.
   id: ebrains-team
   label: EBRAINS team
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -692,8 +606,8 @@ organizations:
   - contact_type: url
     value: https://ecocyc.org/contact.shtml
   creation_date: '2025-12-07T00:00:00Z'
-  description: EcoCyc is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: EcoCyc is a comprehensive database of E. coli genomic and metabolic
+    data. The resource provides pathway, metabolic, and gene annotation information.
   id: ecocyc
   label: EcoCyc
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -705,8 +619,8 @@ organizations:
   - contact_type: url
     value: https://service.elsevier.com/app/home/supporthub/embiology/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Elsevier is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: Elsevier is a major scientific publishing company. The company provides
+    bibliographic data, literature metadata, and scientific content.
   id: elsevier
   label: Elsevier
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -716,8 +630,9 @@ organizations:
   - contact_type: email
     value: EPA_ComptoxTools@epa.gov
   creation_date: '2025-12-07T00:00:00Z'
-  description: EPA CCTE is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: EPA CCTE (Computational Toxicology Center) develops chemical hazard
+    assessment tools and databases. The center provides chemical safety and toxicology
+    data.
   id: epa-ccte
   label: EPA CCTE
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -731,16 +646,17 @@ organizations:
   - contact_type: github
     value: https://github.com/MRCIEU/epigraphdb
   creation_date: '2025-12-07T00:00:00Z'
-  description: EpiGraphDB Team (MRC Integrative Epidemiology Unit, University of Bristol)
-    is an organization associated with knowledge graph resources in the KG-Registry.
+  description: EpiGraphDB Team develops knowledge graphs for epidemiology and public
+    health. The platform integrates disease, exposure, and outcome data.
   id: epigraphdb-team-mrc-integrative-epidemiology-unit
   label: EpiGraphDB Team (MRC Integrative Epidemiology Unit, University of Bristol)
   last_modified_date: '2025-12-07T00:00:00Z'
   layout: organization_detail
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: European Molecular Biology Laboratory (EMBL) is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: EMBL is a leading molecular biology research center providing databases
+    and tools. The laboratory provides protein, nucleic acid, and molecular biology
+    data.
   id: european-molecular-biology-laboratory-embl
   label: European Molecular Biology Laboratory (EMBL)
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -750,8 +666,8 @@ organizations:
   - contact_type: email
     value: expander.agent@gmail.com
   creation_date: '2025-12-07T00:00:00Z'
-  description: Expander Agent Team is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: Expander Agent Team develops knowledge graph expansion and reasoning
+    systems. The team creates tools for automatic knowledge graph construction.
   id: expander-agent-team
   label: Expander Agent Team
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -761,8 +677,9 @@ organizations:
   - contact_type: email
     value: info@exrna.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: Extracellular RNA Communication Consortium is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: Extracellular RNA Communication Consortium studies extracellular RNA
+    and cell communication. The consortium provides RNA biology and cell signaling
+    data.
   id: extracellular-rna-communication-consortium
   label: Extracellular RNA Communication Consortium
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -772,19 +689,17 @@ organizations:
   - contact_type: url
     value: https://groups.google.com/forum/#!forum/faldo
   creation_date: '2025-12-07T00:00:00Z'
-  description: FALDO Google Group is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: FALDO (Feature Annotation Location Description Ontology) standardizes
+    genomic feature location descriptions. The group develops ontologies for genomic
+    data integration.
   id: faldo-google-group
   label: FALDO Google Group
   last_modified_date: '2025-12-07T00:00:00Z'
   layout: organization_detail
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: The U.S. Food and Drug Administration (FDA) is a federal agency of
-    the Department of Health and Human Services responsible for protecting public
-    health by ensuring the safety, efficacy, and security of human and veterinary
-    drugs, biological products, medical devices, food supply, cosmetics, and products
-    that emit radiation.
+  description: FDA (Food and Drug Administration) regulates drugs and medical devices.
+    The agency provides drug approval, safety, and regulatory information.
   github_url: https://github.com/FDA
   homepage_url: https://www.fda.gov/
   id: fda
@@ -797,16 +712,16 @@ organizations:
   - contact_type: email
     value: finngen-info@helsinki.fi
   creation_date: '2025-12-07T00:00:00Z'
-  description: FinnGen is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: FinnGen combines Finnish biobank data with genomic information and
+    health records. The project provides population genetics and epidemiology data.
   id: finngen
   label: FinnGen
   last_modified_date: '2025-12-07T00:00:00Z'
   layout: organization_detail
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: Fox Chase Cancer Center is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: Fox Chase Cancer Center is a National Comprehensive Cancer Center in
+    Philadelphia. The center provides cancer research data and oncology resources.
   id: fox-chase-cancer-center
   label: Fox Chase Cancer Center
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -818,8 +733,8 @@ organizations:
   - contact_type: url
     value: https://thegencc.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: GenCC Team is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: GenCC Team maintains a curated database of gene-cancer associations.
+    The resource provides cancer genomics and precision oncology information.
   id: gencc-team
   label: GenCC Team
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -831,12 +746,9 @@ organizations:
   - contact_type: email
     value: go-helpdesk@geneontology.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: The Gene Ontology (GO) Consortium is an international collaboration
-    that develops and maintains the Gene Ontology knowledgebase, the world's largest
-    source of information on the functions of genes. The GO provides a comprehensive,
-    computational model of biological systems including molecular functions, cellular
-    locations, and biological processes. The consortium also provides GO annotations
-    and GO-CAM (Causal Activity Models) for understanding gene function across species.
+  description: Gene Ontology Consortium develops standardized gene function and annotation
+    ontologies. The consortium provides gene annotation standards and biological process
+    information.
   homepage_url: https://geneontology.org/
   github_url: https://github.com/geneontology
   id: gene-ontology-consortium
@@ -849,8 +761,8 @@ organizations:
   - contact_type: email
     value: jp@senescence.info
   creation_date: '2025-12-07T00:00:00Z'
-  description: Genomics of Ageing and Rejuvenation Lab is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: Genomics of Ageing and Rejuvenation Lab studies ageing genetics and
+    longevity. The lab provides ageing biology and genetic research data.
   id: genomics-of-ageing-and-rejuvenation-lab
   label: Genomics of Ageing and Rejuvenation Lab
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -860,8 +772,8 @@ organizations:
   - contact_type: url
     value: https://www.cancerrxgene.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Genomics of Drug Sensitivity in Cancer Project is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: Genomics of Drug Sensitivity in Cancer Project provides drug sensitivity
+    and genomic data. The resource supports precision oncology and drug discovery.
   id: genomics-of-drug-sensitivity-in-cancer-project
   label: Genomics of Drug Sensitivity in Cancer Project
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -871,8 +783,8 @@ organizations:
   - contact_type: url
     value: https://glygen.org/contact-us/
   creation_date: '2025-12-07T00:00:00Z'
-  description: GlyGen Team is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: GlyGen Team develops a knowledge base of glycan structures and associations.
+    The resource provides glycomics data and glycan-protein association information.
   id: glygen-team
   label: GlyGen Team
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -884,8 +796,8 @@ organizations:
   - contact_type: url
     value: https://github.com/jakelever/GNBR
   creation_date: '2025-12-07T00:00:00Z'
-  description: GNBR is an organization associated with knowledge graph resources in
-    the KG-Registry.
+  description: GNBR provides biomedical relation extraction from scientific literature.
+    The resource supplies extracted gene-disease, drug-gene, and protein interactions.
   id: gnbr
   label: GNBR
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -897,8 +809,8 @@ organizations:
   - contact_type: url
     value: http://www.griffithlab.com
   creation_date: '2025-12-07T00:00:00Z'
-  description: Griffith Lab is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: Griffith Lab at Washington University conducts computational genomics
+    research. The lab provides cancer genomics and pathway analysis tools.
   id: griffith-lab
   label: Griffith Lab
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -910,8 +822,8 @@ organizations:
   - contact_type: url
     value: https://www.gtexportal.org/home/contact
   creation_date: '2025-12-07T00:00:00Z'
-  description: GTEx Consortium is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: GTEx Consortium provides gene expression data across human tissues.
+    The project supplies tissue-specific expression and eQTL data.
   id: gtex-consortium
   label: GTEx Consortium
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -921,8 +833,8 @@ organizations:
   - contact_type: email
     value: enquiries@guidetopharmacology.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: Guide to Pharmacology Help Desk is an organization associated with
-    knowledge graph resources in the KG-Registry.
+  description: Guide to Pharmacology Help Desk provides support for the Guide to Pharmacology
+    database. The database contains pharmacology, drug targets, and drug mechanisms.
   id: guide-to-pharmacology-help-desk
   label: Guide to Pharmacology Help Desk
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -932,8 +844,8 @@ organizations:
   - contact_type: url
     value: https://gyorilab.github.io/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Gyori Lab, Northeastern University is an organization associated with
-    knowledge graph resources in the KG-Registry.
+  description: Gyori Lab develops NLP and machine learning methods for biomedical
+    text mining. The lab creates tools for automated knowledge extraction from literature.
   id: gyori-lab-northeastern-university
   label: Gyori Lab, Northeastern University
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -943,8 +855,8 @@ organizations:
   - contact_type: url
     value: http://www.chiragjpgroup.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Harvard School of Medicine Patel Group is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: Patel Group at Harvard School of Medicine conducts computational biology
+    research. The group develops data integration and analysis methods.
   id: harvard-school-of-medicine-patel-group
   label: Harvard School of Medicine Patel Group
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -956,8 +868,8 @@ organizations:
   - contact_type: email
     value: corum@helmholtz-muenchen.de
   creation_date: '2025-12-07T00:00:00Z'
-  description: Helmholtz Zentrum München is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: Helmholtz Zentrum München conducts health and environmental research.
+    The institute provides epidemiology and disease research data.
   id: helmholtz-zentrum-münchen
   label: Helmholtz Zentrum München
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -967,8 +879,8 @@ organizations:
   - contact_type: url
     value: https://lincs.hms.harvard.edu/
   creation_date: '2025-12-07T00:00:00Z'
-  description: HMS LINCS Project is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: HMS LINCS Project provides data on small molecule effects on cells.
+    The project supplies chemical biology and cell signaling data.
   id: hms-lincs-project
   label: HMS LINCS Project
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -978,8 +890,8 @@ organizations:
   - contact_type: url
     value: http://wiki.c2b2.columbia.edu/honiglab_public/index.php/Main_Page
   creation_date: '2025-12-07T00:00:00Z'
-  description: Honig Laboratory is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: Honig Laboratory develops computational methods for structural biology.
+    The lab provides protein structure and function prediction data.
   id: honig-laboratory
   label: Honig Laboratory
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -991,8 +903,8 @@ organizations:
   - contact_type: email
     value: help@hubmapconsortium.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: HuBMAP Consortium is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: HubMAP Consortium creates a comprehensive map of human body cells and
+    tissues. The consortium provides single-cell genomics and spatial biology data.
   id: hubmap-consortium
   label: HuBMAP Consortium
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1002,8 +914,8 @@ organizations:
   - contact_type: email
     value: hgnc@genenames.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: HUGO Gene Nomenclature Committee is an organization associated with
-    knowledge graph resources in the KG-Registry.
+  description: HUGO Gene Nomenclature Committee maintains standardized human gene
+    symbols. The committee provides authoritative gene naming and annotation.
   id: hugo-gene-nomenclature-committee
   label: HUGO Gene Nomenclature Committee
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1013,8 +925,8 @@ organizations:
   - contact_type: url
     value: http://genomics.senescence.info/help.html
   creation_date: '2025-12-07T00:00:00Z'
-  description: Human Ageing Genomic Resources is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: Human Ageing Genomic Resources provides databases of ageing-related
+    genes. The resource supplies ageing biology and longevity research data.
   id: human-ageing-genomic-resources
   label: Human Ageing Genomic Resources
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1024,8 +936,8 @@ organizations:
   - contact_type: url
     value: https://www.hmdb.ca/w/contact
   creation_date: '2025-12-07T00:00:00Z'
-  description: Human Metabolome Database (HMDB) is an organization associated with
-    knowledge graph resources in the KG-Registry.
+  description: HMDB is a comprehensive metabolite database. The database provides
+    metabolomics data, metabolite properties, and pathway information.
   id: human-metabolome-database-hmdb
   label: Human Metabolome Database (HMDB)
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1037,8 +949,8 @@ organizations:
   - contact_type: url
     value: https://www.proteinatlas.org/about/organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: Human Protein Atlas Team is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: Human Protein Atlas Team maintains a human protein expression map.
+    The atlas provides protein expression, localization, and interaction data.
   id: human-protein-atlas-team
   label: Human Protein Atlas Team
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1050,8 +962,8 @@ organizations:
   - contact_type: email
     value: idg.rdoc@gmail.com
   creation_date: '2025-12-07T00:00:00Z'
-  description: Illuminating the Druggable Genome (IDG) Program is an organization
-    associated with knowledge graph resources in the KG-Registry.
+  description: IDG Program catalogs the druggability of human genome proteins. The
+    program provides drug target information and protein annotation.
   id: illuminating-the-druggable-genome-idg-program
   label: Illuminating the Druggable Genome (IDG) Program
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1061,8 +973,8 @@ organizations:
   - contact_type: url
     value: https://www.inetbio.org/humannet/
   creation_date: '2025-12-07T00:00:00Z'
-  description: INetBio is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: INetBio provides integrated network biology resources and tools. The
+    resource supplies protein-protein interactions and network biology data.
   id: inetbio
   label: INetBio
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1072,8 +984,9 @@ organizations:
   - contact_type: url
     value: https://www.inserm.fr/
   creation_date: '2025-12-07T00:00:00Z'
-  description: INSERM is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: INSERM (French National Institute of Health and Medical Research) conducts
+    medical research. The institute provides biomedical research data and disease
+    information.
   id: inserm
   label: INSERM
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1083,8 +996,8 @@ organizations:
   - contact_type: url
     value: https://insight-project.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: INSIGHT Project Team is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: INSIGHT Project Team develops knowledge management and data integration
+    solutions. The team creates infrastructure for knowledge graph construction.
   id: insight-project-team
   label: INSIGHT Project Team
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1094,8 +1007,8 @@ organizations:
   - contact_type: url
     value: https://openpredict.semanticscience.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Institute for Data Science at Maastricht University is an organization
-    associated with knowledge graph resources in the KG-Registry.
+  description: Institute for Data Science at Maastricht University conducts data science
+    research. The institute develops biomedical data analysis methods.
   id: institute-for-data-science-at-maastricht-universit
   label: Institute for Data Science at Maastricht University
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1105,8 +1018,8 @@ organizations:
   - contact_type: url
     value: https://www.ibioinformatics.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Institute of Bioinformatics is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: Institute of Bioinformatics provides tools and databases for bioinformatics.
+    The institute contributes sequence analysis and functional annotation data.
   id: institute-of-bioinformatics
   label: Institute of Bioinformatics
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1116,9 +1029,8 @@ organizations:
   - contact_type: url
     value: https://www.ecidbase.org/contact
   creation_date: '2025-12-07T00:00:00Z'
-  description: Integrated Data Science Laboratory for Metabolomics and Exposomics
-    (IDSL-ME) is an organization associated with knowledge graph resources in the
-    KG-Registry.
+  description: IDSL-ME provides integrated data science resources for metabolomics
+    research. The laboratory supplies metabolomics data and chemical exposure information.
   id: integrated-data-science-laboratory-for-metabolomic
   label: Integrated Data Science Laboratory for Metabolomics and Exposomics (IDSL-ME)
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1130,8 +1042,8 @@ organizations:
   - contact_type: email
     value: itiswebmaster@itis.gov
   creation_date: '2025-12-07T00:00:00Z'
-  description: Integrated Taxonomic Information System (ITIS) is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: ITIS is a comprehensive taxonomic database of organism names and classifications.
+    The system provides standardized organism taxonomy.
   id: integrated-taxonomic-information-system-itis
   label: Integrated Taxonomic Information System (ITIS)
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1141,8 +1053,8 @@ organizations:
   - contact_type: url
     value: https://jensenlab.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: JensenLab is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: JensenLab develops integrated knowledge systems for biomedical research.
+    The lab provides protein interactions and disease-protein association networks.
   id: jensenlab
   label: JensenLab
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1152,8 +1064,8 @@ organizations:
   - contact_type: url
     value: https://www.hopkinsmedicine.org/profiles/details/akhilesh-pandey
   creation_date: '2025-12-07T00:00:00Z'
-  description: Johns Hopkins University Pandey Lab is an organization associated with
-    knowledge graph resources in the KG-Registry.
+  description: Pandey Lab at Johns Hopkins University conducts proteomics and systems
+    biology research. The lab provides protein identification and pathway data.
   id: johns-hopkins-university-pandey-lab
   label: Johns Hopkins University Pandey Lab
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1165,12 +1077,8 @@ organizations:
   - contact_type: url
     value: https://www.kegg.jp/feedback/
   creation_date: '2025-12-07T00:00:00Z'
-  description: KEGG (Kyoto Encyclopedia of Genes and Genomes) is a database resource
-    developed by Kanehisa Laboratories for understanding high-level functions and
-    utilities of biological systems. Initiated in 1995 under the Japanese Human Genome
-    Project, KEGG provides manually curated pathway maps, molecular networks, and
-    genome annotations. KEGG integrates genomic, chemical, and health information
-    for systems-level analysis.
+  description: KEGG (Kyoto Encyclopedia of Genes and Genomes) provides pathway and
+    genome information. The database supplies metabolic and genetic pathway data.
   homepage_url: https://www.kegg.jp/
   id: kegg
   label: KEGG
@@ -1184,8 +1092,9 @@ organizations:
   - contact_type: url
     value: https://kidsfirstdrc.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Kids First Data Resource Center is an organization associated with
-    knowledge graph resources in the KG-Registry.
+  description: Kids First Data Resource Center provides genomic and phenotypic data
+    for pediatric diseases. The center supplies pediatric disease information and
+    genomics.
   id: kids-first-data-resource-center
   label: Kids First Data Resource Center
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1197,8 +1106,8 @@ organizations:
   - contact_type: github
     value: Knowledge Graph Hub
   creation_date: '2025-12-07T00:00:00Z'
-  description: Knowledge Graph Hub is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: Knowledge Graph Hub develops knowledge graphs and data integration
+    pipelines. The hub provides tools and methods for knowledge graph construction.
   id: knowledge-graph-hub
   label: Knowledge Graph Hub
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1208,8 +1117,8 @@ organizations:
   - contact_type: url
     value: https://druggablegenome.net/KMC_UNM
   creation_date: '2025-12-07T00:00:00Z'
-  description: Knowledge Management Center - University of New Mexico is an organization
-    associated with knowledge graph resources in the KG-Registry.
+  description: Knowledge Management Center at University of New Mexico develops knowledge
+    systems. The center creates infrastructure for knowledge representation.
   id: knowledge-management-center-university-of-new-mexi
   label: Knowledge Management Center - University of New Mexico
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1219,8 +1128,8 @@ organizations:
   - contact_type: url
     value: https://lncipedia.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: LncIPedia Team is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: LncIPedia Team maintains a database of long non-coding RNAs. The database
+    provides lncRNA sequences, structures, and annotations.
   id: lncipedia-team
   label: LncIPedia Team
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1232,8 +1141,8 @@ organizations:
   - contact_type: url
     value: https://labs.icahn.mssm.edu/maayanlab/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Ma'ayan Laboratory is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: Ma'ayan Laboratory develops computational systems biology approaches.
+    The lab provides signaling pathway and network biology data.
   id: maayan-laboratory
   label: Ma'ayan Laboratory
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1243,8 +1152,8 @@ organizations:
   - contact_type: email
     value: avi.maayan@mssm.edu
   creation_date: '2025-12-07T00:00:00Z'
-  description: MaayanLab is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: MaayanLab develops integrated data resources including Harmonizome.
+    The lab provides gene, protein, drug, and disease association data.
   id: maayanlab
   label: MaayanLab
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1254,8 +1163,8 @@ organizations:
   - contact_type: url
     value: https://github.com/MannLabs
   creation_date: '2025-12-07T00:00:00Z'
-  description: Mann Labs is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: Mann Labs develops mass spectrometry and proteomics methods. The lab
+    provides protein identification and quantification data.
   id: mann-labs
   label: Mann Labs
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1265,8 +1174,8 @@ organizations:
   - contact_type: url
     value: http://www.massgeneral.org/cancer/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Massachusetts General Hospital Cancer Center is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: Massachusetts General Hospital Cancer Center conducts cancer research.
+    The center provides cancer genomics and oncology research data.
   id: massachusetts-general-hospital-cancer-center
   label: Massachusetts General Hospital Cancer Center
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1276,8 +1185,8 @@ organizations:
   - contact_type: email
     value: info@disgenet.com
   creation_date: '2025-12-07T00:00:00Z'
-  description: MedBioinformatics Solutions SL is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: MedBioinformatics Solutions provides bioinformatics consulting and
+    services. The company contributes biomedical data integration expertise.
   id: medbioinformatics-solutions-sl
   label: MedBioinformatics Solutions SL
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1289,8 +1198,8 @@ organizations:
   - contact_type: url
     value: https://rgd.mcw.edu/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Medical College of Wisconsin is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: Medical College of Wisconsin conducts biomedical research. The institution
+    provides medical research data and clinical information.
   id: medical-college-of-wisconsin
   label: Medical College of Wisconsin
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1300,8 +1209,8 @@ organizations:
   - contact_type: email
     value: biocyc-support@sri.com
   creation_date: '2025-12-07T00:00:00Z'
-  description: MetaCyc is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: MetaCyc is a comprehensive metabolic pathway database. The database
+    provides metabolic pathway, enzyme, and reaction data.
   id: metacyc
   label: MetaCyc
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1311,8 +1220,8 @@ organizations:
   - contact_type: url
     value: https://www.informatics.jax.org/mgihome/support/mgi_inbox.shtml
   creation_date: '2025-12-07T00:00:00Z'
-  description: MGI User Support is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: MGI User Support provides assistance for Mouse Genome Informatics access.
+    The helpdesk helps users access mouse genomic data.
   id: mgi-user-support
   label: MGI User Support
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1324,16 +1233,16 @@ organizations:
   - contact_type: url
     value: https://github.com/MindRank-Biotech/PharmKG
   creation_date: '2025-12-07T00:00:00Z'
-  description: MindRank Biotech is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: MindRank Biotech develops bioinformatics solutions for biomedical research.
+    The company provides data integration and analysis tools.
   id: mindrank-biotech
   label: MindRank Biotech
   last_modified_date: '2025-12-07T00:00:00Z'
   layout: organization_detail
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: MINT Team - University of Rome Tor Vergata is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: MINT Team at University of Rome Tor Vergata maintains a protein interaction
+    database. The resource provides molecular interaction data.
   id: mint-team-university-of-rome-tor-vergata
   label: MINT Team - University of Rome Tor Vergata
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1359,8 +1268,8 @@ organizations:
   - contact_type: url
     value: https://motrpac-data.org/contact
   creation_date: '2025-12-07T00:00:00Z'
-  description: MoTrPAC BioInformatics Center is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: MoTrPAC Bioinformatics Center provides data integration for molecular
+    transducers of physical activity. The center supplies exercise physiology data.
   id: motrpac-bioinformatics-center
   label: MoTrPAC BioInformatics Center
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1370,8 +1279,8 @@ organizations:
   - contact_type: url
     value: https://www.informatics.jax.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Mouse Genome Informatics is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: Mouse Genome Informatics (MGI) is the primary laboratory mouse genome
+    database. The resource provides mouse genome annotation and disease models.
   id: mouse-genome-informatics
   label: Mouse Genome Informatics
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1381,8 +1290,8 @@ organizations:
   - contact_type: url
     value: https://www.mrbase.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: MR-Base Team (MRC Integrative Epidemiology Unit, University of Bristol)
-    is an organization associated with knowledge graph resources in the KG-Registry.
+  description: MR-Base Team at MRC develops Mendelian randomization tools and databases.
+    The team provides causal inference methodologies for epidemiology.
   id: mr-base-team-mrc-integrative-epidemiology-unit-uni
   label: MR-Base Team (MRC Integrative Epidemiology Unit, University of Bristol)
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1392,8 +1301,8 @@ organizations:
   - contact_type: url
     value: https://www.bristol.ac.uk/integrative-epidemiology-unit/
   creation_date: '2025-12-07T00:00:00Z'
-  description: MRC Integrative Epidemiology Unit, University of Bristol is an organization
-    associated with knowledge graph resources in the KG-Registry.
+  description: MRC Integrative Epidemiology Unit at University of Bristol conducts
+    epidemiology research. The unit provides epidemiology and causal inference methods.
   id: mrc-integrative-epidemiology-unit-university-of-br
   label: MRC Integrative Epidemiology Unit, University of Bristol
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1403,8 +1312,8 @@ organizations:
   - contact_type: email
     value: genesets@broadinstitute.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: MSigDB Team is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: MSigDB Team maintains the Molecular Signatures Database at the Broad
+    Institute. The database provides standardized gene set annotations and pathways.
   id: msigdb-team
   label: MSigDB Team
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1416,8 +1325,8 @@ organizations:
   - contact_type: url
     value: https://gdc.cancer.gov/
   creation_date: '2025-12-07T00:00:00Z'
-  description: National Cancer Institute is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: National Cancer Institute (NCI) conducts cancer research and treatment
+    development. The institute provides cancer biology and oncology research data.
   id: national-cancer-institute
   label: National Cancer Institute
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1427,16 +1336,16 @@ organizations:
   - contact_type: url
     value: https://www.nib.si/
   creation_date: '2025-12-07T00:00:00Z'
-  description: National Institute of Biology Slovenia is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: National Institute of Biology Slovenia conducts biological and environmental
+    research. The institute provides biodiversity and organism biology data.
   id: national-institute-of-biology-slovenia
   label: National Institute of Biology Slovenia
   last_modified_date: '2025-12-07T00:00:00Z'
   layout: organization_detail
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: National Institutes of Health (NIH) Common Fund is an organization
-    associated with knowledge graph resources in the KG-Registry.
+  description: NIH Common Fund supports cross-cutting research programs. The fund
+    coordinates funding for research initiatives.
   id: national-institutes-of-health-nih-common-fund
   label: National Institutes of Health (NIH) Common Fund
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1446,8 +1355,8 @@ organizations:
   - contact_type: url
     value: https://www.nature.com/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Nature Publishing Group is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: Nature Publishing Group publishes high-impact scientific journals.
+    The publisher provides bibliographic data and literature metadata.
   id: nature-publishing-group
   label: Nature Publishing Group
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1457,8 +1366,8 @@ organizations:
   - contact_type: url
     value: https://ncats.nih.gov/
   creation_date: '2025-12-07T00:00:00Z'
-  description: NCATS is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: NCATS (National Center for Advancing Translational Sciences) conducts
+    translational research. The center provides drug development and therapeutic information.
   id: ncats
   label: NCATS
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1468,8 +1377,8 @@ organizations:
   - contact_type: url
     value: https://ncats.nih.gov/translator
   creation_date: '2025-12-07T00:00:00Z'
-  description: NCATS Biomedical Data Translator is an organization associated with
-    knowledge graph resources in the KG-Registry.
+  description: NCATS Biomedical Data Translator develops integrated knowledge graphs.
+    The program creates tools and standards for knowledge graph integration.
   id: ncats-biomedical-data-translator
   label: NCATS Biomedical Data Translator
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1479,8 +1388,8 @@ organizations:
   - contact_type: url
     value: https://ncats.nih.gov/translator
   creation_date: '2025-12-07T00:00:00Z'
-  description: NCATS Translator is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: NCATS Translator is a research program developing knowledge graphs
+    for biomedical research. The program integrates diverse biomedical data sources.
   id: ncats-translator
   label: NCATS Translator
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1490,12 +1399,8 @@ organizations:
   layout: organization_detail
   label: National Center for Biotechnology Information
   short_id: NCBI
-  description: The National Center for Biotechnology Information (NCBI) is a division
-    of the National Library of Medicine (NLM) at the National Institutes of Health
-    (NIH). NCBI creates, maintains, and distributes a variety of databases and software
-    tools for the biomedical research community, including GenBank, PubMed, RefSeq,
-    dbSNP, ClinVar, and many others. NCBI also develops and supports bioinformatics
-    tools such as BLAST for sequence analysis.
+  description: NCBI (National Center for Biotechnology Information) provides molecular
+    biology databases. The center supplies sequence, structure, and taxonomy data.
   homepage_url: https://www.ncbi.nlm.nih.gov/
   github_url: https://github.com/ncbi
   contact_details:
@@ -1510,8 +1415,8 @@ organizations:
   - contact_type: url
     value: https://evs.nci.nih.gov/
   creation_date: '2025-12-07T00:00:00Z'
-  description: NCI Enterprise Vocabulary Services (EVS) is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: NCI EVS provides standardized biomedical vocabularies and ontologies.
+    The service supplies cancer and disease terminology.
   id: nci-enterprise-vocabulary-services-evs
   label: NCI Enterprise Vocabulary Services (EVS)
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1521,8 +1426,8 @@ organizations:
   - contact_type: url
     value: https://gdc.cancer.gov/support
   creation_date: '2025-12-07T00:00:00Z'
-  description: NCI Genomic Data Commons Support is an organization associated with
-    knowledge graph resources in the KG-Registry.
+  description: NCI Genomic Data Commons Support provides technical assistance for
+    cancer data access. The service facilitates access to cancer genomic data.
   id: nci-genomic-data-commons-support
   label: NCI Genomic Data Commons Support
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1532,8 +1437,8 @@ organizations:
   - contact_type: url
     value: https://www.nhlbi.nih.gov/
   creation_date: '2025-12-07T00:00:00Z'
-  description: NHLBI (National Heart, Lung, and Blood Institute) is an organization
-    associated with knowledge graph resources in the KG-Registry.
+  description: NHLBI conducts cardiovascular and respiratory research. The institute
+    provides heart disease and blood disorder information.
   id: nhlbi-national-heart-lung-and-blood-institute
   label: NHLBI (National Heart, Lung, and Blood Institute)
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1545,8 +1450,8 @@ organizations:
   - contact_type: url
     value: https://hirnetwork.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: NIDDK Human Islet Research Network (HIRN) is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: NIDDK Human Islet Research Network provides pancreatic islet samples
+    and data. The network supplies diabetes and cell biology research data.
   id: niddk-human-islet-research-network-hirn
   label: NIDDK Human Islet Research Network (HIRN)
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1556,8 +1461,9 @@ organizations:
   - contact_type: url
     value: https://manticore.niehs.nih.gov/cebssearch/
   creation_date: '2025-12-07T00:00:00Z'
-  description: NIEHS is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: NIEHS (National Institute of Environmental Health Sciences) conducts
+    environmental health research. The institute provides toxicology and environmental
+    health data.
   id: niehs
   label: NIEHS
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1569,8 +1475,8 @@ organizations:
   - contact_type: url
     value: https://pharos.nih.gov/about
   creation_date: '2025-12-07T00:00:00Z'
-  description: NIH NCATS IDG Program is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: NIH NCATS IDG Program catalogs druggable genome protein properties.
+    The program provides protein annotation and drug target information.
   id: nih-ncats-idg-program
   label: NIH NCATS IDG Program
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1582,8 +1488,8 @@ organizations:
   - contact_type: email
     value: reporter@od.nih.gov
   creation_date: '2025-12-07T00:00:00Z'
-  description: NIH Office of Extramural Research is an organization associated with
-    knowledge graph resources in the KG-Registry.
+  description: NIH Office of Extramural Research manages research funding programs.
+    The office provides research funding and support information.
   id: nih-office-of-extramural-research
   label: NIH Office of Extramural Research
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1593,12 +1499,8 @@ organizations:
   layout: organization_detail
   label: National Organization for Rare Disorders
   short_id: NORD
-  description: The National Organization for Rare Disorders (NORD) is a patient advocacy
-    organization dedicated to individuals with rare diseases and the organizations
-    that serve them. NORD maintains a comprehensive database of over 1,200 rare disease
-    reports providing information for patients, families, and medical professionals.
-    NORD also provides assistance programs, research support, and advocates for rare
-    disease policies.
+  description: NORD (National Organization for Rare Disorders) provides rare disease
+    information. The organization supplies rare disease resources and support.
   homepage_url: https://rarediseases.org/
   contact_details:
   - contact_type: email
@@ -1610,8 +1512,8 @@ organizations:
   - contact_type: url
     value: https://obofoundry.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: OBO Foundry is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: OBO Foundry is a collaborative effort creating biological and biomedical
+    ontologies. The foundry provides standardized ontologies for data representation.
   id: obo-foundry
   label: OBO Foundry
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1621,8 +1523,8 @@ organizations:
   - contact_type: url
     value: https://www.ohdsi.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: OHDSI is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: OHDSI develops standards and tools for healthcare data sciences. The
+    consortium provides healthcare data standards.
   id: ohdsi
   label: OHDSI
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1632,8 +1534,8 @@ organizations:
   - contact_type: url
     value: https://www.omim.org/contact
   creation_date: '2025-12-07T00:00:00Z'
-  description: OMIM (Johns Hopkins University) is an organization associated with
-    knowledge graph resources in the KG-Registry.
+  description: OMIM (Online Mendelian Inheritance in Man) is a genetic disease database.
+    The resource provides disease genetics and gene-disease associations.
   id: omim-johns-hopkins-university
   label: OMIM (Johns Hopkins University)
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1645,8 +1547,8 @@ organizations:
   - contact_type: url
     value: https://omnipathdb.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: OmniPath Development Team is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: OmniPath Team maintains a signaling pathway database. The resource
+    provides pathway and molecular interaction data.
   id: omnipath-development-team
   label: OmniPath Development Team
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1658,8 +1560,8 @@ organizations:
   - contact_type: url
     value: https://www.oncokb.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: OncoKB Team is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: OncoKB Team maintains a cancer driver gene database. The knowledge
+    base provides cancer genomics and precision medicine information.
   id: oncokb-team
   label: OncoKB Team
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1687,8 +1589,8 @@ organizations:
   layout: organization_detail
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: ORCID is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: ORCID provides persistent digital identifiers for researchers. The
+    service supplies researcher identifiers and profile information.
   id: orcid
   label: ORCID
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1700,8 +1602,8 @@ organizations:
   - contact_type: url
     value: https://www.orpha.net/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Orphanet is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: Orphanet is a database of rare genetic diseases and resources. The
+    resource provides rare disease information and disease-gene associations.
   id: orphanet
   label: Orphanet
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1711,8 +1613,8 @@ organizations:
   - contact_type: email
     value: help@pankbase.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: PanKBase is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: PankBase is a pancreas biology and cancer resource. The database provides
+    pancreatic cell type and disease data.
   id: pankbase
   label: PanKBase
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1722,8 +1624,8 @@ organizations:
   - contact_type: email
     value: pantherfeedback@yahoo.com
   creation_date: '2025-12-07T00:00:00Z'
-  description: PANTHER is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: PANTHER provides protein classification and pathway analysis. The database
+    supplies protein function and pathway information.
   id: panther
   label: PANTHER
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1733,8 +1635,8 @@ organizations:
   - contact_type: email
     value: feedback@pharmgkb.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: PharmGKB is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: PharmGKB (Pharmacogenomics Knowledge Base) provides pharmacogenomics
+    information. The resource supplies drug-gene-phenotype relationships.
   id: pharmgkb
   label: PharmGKB
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1746,8 +1648,8 @@ organizations:
   - contact_type: url
     value: https://www.arabidopsis.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Phoenix Bioinformatics is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: Phoenix Bioinformatics develops bioinformatics services and resources.
+    The company provides bioinformatics analysis services.
   id: phoenix-bioinformatics
   label: Phoenix Bioinformatics
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1759,8 +1661,8 @@ organizations:
   - contact_type: url
     value: https://www.pistoiaalliance.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Pistoia Alliance is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: Pistoia Alliance advances life sciences R&D efficiency through open-source
+    tools. The alliance develops standards for biomedical research.
   id: pistoia-alliance
   label: Pistoia Alliance
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1770,8 +1672,8 @@ organizations:
   - contact_type: email
     value: helpdesk@pombase.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: PomBase is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: PomBase is a fission yeast genomic database. The resource provides
+    yeast genome annotation and functional data.
   id: pombase
   label: PomBase
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1781,8 +1683,8 @@ organizations:
   - contact_type: url
     value: https://www.uhn.ca/PrincessMargaret
   creation_date: '2025-12-07T00:00:00Z'
-  description: Princess Margaret Cancer Centre is an organization associated with
-    knowledge graph resources in the KG-Registry.
+  description: Princess Margaret Cancer Centre is Canada's largest cancer research
+    center. The center provides cancer research and precision medicine data.
   id: princess-margaret-cancer-centre
   label: Princess Margaret Cancer Centre
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1792,8 +1694,8 @@ organizations:
   - contact_type: url
     value: https://loinc.org/contact/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Regenstrief Institute (LOINC) is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: Regenstrief Institute develops the LOINC medical terminology standard.
+    The standard provides universal codes for clinical observations.
   id: regenstrief-institute-loinc
   label: Regenstrief Institute (LOINC)
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1805,16 +1707,17 @@ organizations:
   - contact_type: url
     value: https://reprotox-kg.net/about
   creation_date: '2025-12-07T00:00:00Z'
-  description: ReproTox-KG Consortium is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: ReproTox-KG Consortium develops knowledge graphs for reproductive and
+    developmental toxicology. The consortium integrates reproductive health and toxicology
+    data.
   id: reprotox-kg-consortium
   label: ReproTox-KG Consortium
   last_modified_date: '2025-12-07T00:00:00Z'
   layout: organization_detail
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: Rhea Team is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: Rhea Team maintains a biochemical reactions and enzyme database. The
+    database provides reaction and enzymatic information.
   id: rhea-team
   label: Rhea Team
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1824,8 +1727,8 @@ organizations:
   - contact_type: url
     value: https://sennetconsortium.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: SenNet Consortium is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: SenNet Consortium maps cells and tissues across the human lifespan.
+    The consortium provides cell type definitions and spatial biology data.
   id: sennet-consortium
   label: SenNet Consortium
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1835,19 +1738,17 @@ organizations:
   - contact_type: email
     value: sgd-helpdesk@lists.stanford.edu
   creation_date: '2025-12-07T00:00:00Z'
-  description: SGD Helpdesk is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: SGD (Saccharomyces Genome Database) Help Desk provides support for
+    yeast data access. The helpdesk assists users accessing S. cerevisiae genomic
+    data.
   id: sgd-helpdesk
   label: SGD Helpdesk
   last_modified_date: '2025-12-07T00:00:00Z'
   layout: organization_detail
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: The SIB Swiss Institute of Bioinformatics is an academic institution
-    dedicated to biological and biomedical data science. Founded in 1998, SIB coordinates
-    research and education in bioinformatics throughout Switzerland and provides a
-    wide range of bioinformatics databases, software tools, and services to life science
-    researchers worldwide.
+  description: SIB (Swiss Institute of Bioinformatics) provides bioinformatics resources
+    and databases. The institute supplies sequence analysis and bioinformatics tools.
   github_url: https://github.com/sib-swiss
   homepage_url: https://www.sib.swiss/
   id: sib
@@ -1860,8 +1761,8 @@ organizations:
   - contact_type: url
     value: https://signor.uniroma2.it/contact.php
   creation_date: '2025-12-07T00:00:00Z'
-  description: SIGNOR Team (University of Rome Tor Vergata & Sapienza University of
-    Rome) is an organization associated with knowledge graph resources in the KG-Registry.
+  description: SIGNOR Team maintains a signaling pathway database. The resource provides
+    protein signaling and pathway information.
   id: signor-team-university-of-rome-tor-vergata-sapienz
   label: SIGNOR Team (University of Rome Tor Vergata & Sapienza University of Rome)
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1873,8 +1774,8 @@ organizations:
   - contact_type: url
     value: https://www.arb-silva.de/contact
   creation_date: '2025-12-07T00:00:00Z'
-  description: SILVA Team is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: SILVA Team provides the ribosomal RNA database and tools. The resource
+    supplies rRNA sequences for microbiology research.
   id: silva-team
   label: SILVA Team
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1884,9 +1785,8 @@ organizations:
   - contact_type: url
     value: https://pharmacy.ucsd.edu/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Skaggs School of Pharmacy and Pharmaceutical Sciences, University of
-    California San Diego is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: Skaggs School of Pharmacy at UCSD conducts pharmaceutical sciences
+    research. The school contributes pharmaceutical research data.
   id: skaggs-school-of-pharmacy-and-pharmaceutical-scien
   label: Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California
     San Diego
@@ -1899,8 +1799,8 @@ organizations:
   - contact_type: url
     value: https://www.snomed.org/contact-us
   creation_date: '2025-12-07T00:00:00Z'
-  description: SNOMED International is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: SNOMED International develops SNOMED CT medical terminology. The terminology
+    provides standardized medical concepts for healthcare.
   id: snomed-international
   label: SNOMED International
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1912,8 +1812,8 @@ organizations:
   - contact_type: github
     value: sorgerlab
   creation_date: '2025-12-07T00:00:00Z'
-  description: Sorger Lab, Harvard Medical School is an organization associated with
-    knowledge graph resources in the KG-Registry.
+  description: Sorger Lab at Harvard Medical School develops computational systems
+    biology. The lab provides cell signaling and drug response data.
   id: sorger-lab-harvard-medical-school
   label: Sorger Lab, Harvard Medical School
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1923,8 +1823,8 @@ organizations:
   - contact_type: url
     value: https://string-db.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: STRING Consortium is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: STRING Consortium provides a protein-protein interaction database.
+    The database supplies interaction data and functional associations.
   id: string-consortium
   label: STRING Consortium
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1934,9 +1834,8 @@ organizations:
   - contact_type: url
     value: http://sbnb.irbbarcelona.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Structural Bioinformatics and Network Biology Group, Institute for
-    Research in Biomedicine (IRB Barcelona) is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: Structural Bioinformatics and Network Biology Group develops computational
+    methods. The group provides structural biology and network analysis data.
   id: structural-bioinformatics-and-network-biology-grou
   label: Structural Bioinformatics and Network Biology Group, Institute for Research
     in Biomedicine (IRB Barcelona)
@@ -1947,8 +1846,8 @@ organizations:
   - contact_type: url
     value: https://sulab.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Su Lab is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: Su Lab develops machine learning and bioinformatics methods. The lab
+    provides gene regulation and prediction data.
   id: su-lab
   label: Su Lab
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1958,16 +1857,16 @@ organizations:
   - contact_type: email
     value: swisslipids@sib.swiss
   creation_date: '2025-12-07T00:00:00Z'
-  description: SwissLipids team is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: SwissLipids Team maintains a lipid structures and properties database.
+    The database provides lipid and metabolomics data.
   id: swisslipids-team
   label: SwissLipids team
   last_modified_date: '2025-12-07T00:00:00Z'
   layout: organization_detail
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: Systems Biology Research Group at the University of California, San
-    Diego is an organization associated with knowledge graph resources in the KG-Registry.
+  description: Systems Biology Research Group at UCSD develops systems biology methods.
+    The group provides metabolic network and modeling data.
   id: systems-biology-research-group-at-the-university-o
   label: Systems Biology Research Group at the University of California, San Diego
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1977,8 +1876,8 @@ organizations:
   - contact_type: url
     value: http://systemsbiology.ucsd.edu/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Systems Biology Research Group at University of California San Diego
-    is an organization associated with knowledge graph resources in the KG-Registry.
+  description: Systems Biology Research Group at UC San Diego conducts systems biology
+    research. The group provides pathway and systems-level analysis data.
   id: systems-biology-research-group-at-university-of-ca
   label: Systems Biology Research Group at University of California San Diego
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -1990,8 +1889,8 @@ organizations:
   - contact_type: github
     value: tatonetti-lab
   creation_date: '2025-12-07T00:00:00Z'
-  description: Tatonetti Lab is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: Tatonetti Lab develops pharmacogenomics and drug safety methods. The
+    lab provides drug-disease associations and adverse event data.
   id: tatonetti-lab
   label: Tatonetti Lab
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2003,8 +1902,8 @@ organizations:
   - contact_type: url
     value: https://taylorlab.chop.edu/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Taylor Research Lab is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: Taylor Research Lab conducts biomedical research. The lab provides
+    biological research data and analysis methodologies.
   id: taylor-research-lab
   label: Taylor Research Lab
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2016,24 +1915,24 @@ organizations:
   - contact_type: email
     value: mgi-help@jax.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: The Jackson Laboratory is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: The Jackson Laboratory is a mammalian genetics research institution.
+    The laboratory provides mouse genetics and disease models.
   id: the-jackson-laboratory
   label: The Jackson Laboratory
   last_modified_date: '2025-12-07T00:00:00Z'
   layout: organization_detail
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: The McDonnell Genome Institute at Washington University School of Medicine
-    is an organization associated with knowledge graph resources in the KG-Registry.
+  description: McDonnell Genome Institute at Washington University conducts genomic
+    research. The institute provides genome sequencing and analysis data.
   id: the-mcdonnell-genome-institute-at-washington-unive
   label: The McDonnell Genome Institute at Washington University School of Medicine
   last_modified_date: '2025-12-07T00:00:00Z'
   layout: organization_detail
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: The Metabolomics Innovation Centre (TMIC) is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: TMIC (The Metabolomics Innovation Centre) provides metabolomics resources
+    and data. The center supplies metabolite and metabolomics information.
   id: the-metabolomics-innovation-centre-tmic
   label: The Metabolomics Innovation Centre (TMIC)
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2043,8 +1942,8 @@ organizations:
   - contact_type: url
     value: https://toxin-search.netlify.app/
   creation_date: '2025-12-07T00:00:00Z'
-  description: TOXIN Project Team is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: TOXIN Project Team develops resources for toxicology research. The
+    project provides toxicology data and chemical hazard information.
   id: toxin-project-team
   label: TOXIN Project Team
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2054,9 +1953,8 @@ organizations:
   - contact_type: url
     value: https://datascience.unm.edu/tiga/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Translational Informatics Division, Department of Internal Medicine,
-    School of Medicine, University of New Mexico is an organization associated with
-    knowledge graph resources in the KG-Registry.
+  description: Translational Informatics Division at UNM develops translational research
+    informatics. The division provides data integration and informatics tools.
   id: translational-informatics-division-department-of-i
   label: Translational Informatics Division, Department of Internal Medicine, School
     of Medicine, University of New Mexico
@@ -2069,8 +1967,8 @@ organizations:
   - contact_type: email
     value: dip@mbi.ucla.edu
   creation_date: '2025-12-07T00:00:00Z'
-  description: UCLA-DOE Institute for Genomics and Proteomics is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: UCLA-DOE Institute develops mass spectrometry and proteomics methods.
+    The institute provides protein identification and characterization data.
   id: ucla-doe-institute-for-genomics-and-proteomics
   label: UCLA-DOE Institute for Genomics and Proteomics
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2082,8 +1980,8 @@ organizations:
   - contact_type: github
     value: UFOKN
   creation_date: '2025-12-07T00:00:00Z'
-  description: UF Open Knowledge Network (UF-OKN) is an organization associated with
-    knowledge graph resources in the KG-Registry.
+  description: UF Open Knowledge Network develops knowledge graphs for environmental
+    research. The network integrates environmental and ecological data.
   id: uf-open-knowledge-network-uf-okn
   label: UF Open Knowledge Network (UF-OKN)
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2093,8 +1991,8 @@ organizations:
   - contact_type: url
     value: https://www.ukbiobank.ac.uk/
   creation_date: '2025-12-07T00:00:00Z'
-  description: UK Biobank is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: UK Biobank is a large-scale biomedical research resource with genetic
+    and health data. The biobank provides population genetics and health records.
   id: uk-biobank
   label: UK Biobank
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2104,8 +2002,8 @@ organizations:
   - contact_type: url
     value: https://pdsp.unc.edu/
   creation_date: '2025-12-07T00:00:00Z'
-  description: UNC Chapel Hill PDSP is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: UNC Chapel Hill PDSP screens drugs for receptor binding activities.
+    The program provides pharmacology and drug target data.
   id: unc-chapel-hill-pdsp
   label: UNC Chapel Hill PDSP
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2115,16 +2013,16 @@ organizations:
   - contact_type: url
     value: https://greengenes2.ucsd.edu/
   creation_date: '2025-12-07T00:00:00Z'
-  description: University of California San Diego is an organization associated with
-    knowledge graph resources in the KG-Registry.
+  description: University of California San Diego conducts biomedical and genomic
+    research. The institution provides research data and genomics resources.
   id: university-of-california-san-diego
   label: University of California San Diego
   last_modified_date: '2025-12-07T00:00:00Z'
   layout: organization_detail
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: University of California, San Francisco is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: University of California San Francisco conducts biomedical research.
+    The institution provides medical research data and clinical resources.
   id: university-of-california-san-francisco
   label: University of California, San Francisco
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2134,8 +2032,8 @@ organizations:
   - contact_type: url
     value: https://datascience.unm.edu/
   creation_date: '2025-12-07T00:00:00Z'
-  description: University of New Mexico Translational Informatics Division is an organization
-    associated with knowledge graph resources in the KG-Registry.
+  description: Translational Informatics Division at UNM develops translational research
+    informatics. The division develops knowledge graphs and data science resources.
   id: university-of-new-mexico-translational-informatics
   label: University of New Mexico Translational Informatics Division
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2145,8 +2043,8 @@ organizations:
   - contact_type: email
     value: ubkg@pitt.edu
   creation_date: '2025-12-07T00:00:00Z'
-  description: University of Pittsburgh is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: University of Pittsburgh conducts biomedical research. The institution
+    provides medical research data and clinical research resources.
   id: university-of-pittsburgh
   label: University of Pittsburgh
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2156,8 +2054,8 @@ organizations:
   - contact_type: url
     value: https://www.epa.gov/
   creation_date: '2025-12-07T00:00:00Z'
-  description: U.S. Environmental Protection Agency (EPA) is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: U.S. Environmental Protection Agency (EPA) protects human health and
+    environment. The EPA provides chemical hazard and environmental health data.
   id: us-environmental-protection-agency-epa
   label: U.S. Environmental Protection Agency (EPA)
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2169,8 +2067,8 @@ organizations:
   - contact_type: email
     value: joshua.c.denny@vumc.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: Vanderbilt University Medical Center is an organization associated
-    with knowledge graph resources in the KG-Registry.
+  description: Vanderbilt University Medical Center conducts biomedical research.
+    The center provides clinical research data and disease information.
   id: vanderbilt-university-medical-center
   label: Vanderbilt University Medical Center
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2180,20 +2078,16 @@ organizations:
   - contact_type: url
     value: https://www.sanger.ac.uk/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Wellcome Sanger Institute is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: Wellcome Sanger Institute conducts genomic research and sequencing.
+    The institute provides genome sequencing and pathogen genomics data.
   id: wellcome-sanger-institute
   label: Wellcome Sanger Institute
   last_modified_date: '2025-12-07T00:00:00Z'
   layout: organization_detail
 - category: Organization
   creation_date: '2025-12-07T00:00:00Z'
-  description: The World Health Organization (WHO) is a specialized agency of the
-    United Nations responsible for international public health. Founded in 1948, WHO
-    coordinates international health activities, sets health standards, and provides
-    technical assistance to countries. WHO maintains important health classifications
-    including ICD (International Classification of Diseases) and manages global health
-    initiatives.
+  description: World Health Organization (WHO) coordinates international public health.
+    WHO provides health classifications and global health information.
   github_url: https://github.com/WorldHealthOrganization
   homepage_url: https://www.who.int/
   id: who
@@ -2206,11 +2100,8 @@ organizations:
   layout: organization_detail
   label: Wikimedia Foundation
   short_id: Wikimedia
-  description: The Wikimedia Foundation is a nonprofit organization that hosts and
-    operates Wikipedia and other free knowledge projects. Wikimedia's mission is to
-    empower and engage people around the world to collect and develop educational
-    content under a free license or in the public domain, and to disseminate it effectively
-    and globally.
+  description: Wikimedia Foundation provides collaborative knowledge platforms. The
+    foundation supplies curated reference information for knowledge graphs.
   homepage_url: https://wikimediafoundation.org/
   github_url: https://github.com/wikimedia
   contact_details:
@@ -2225,8 +2116,8 @@ organizations:
   - contact_type: url
     value: https://pfocr.wikipathways.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: WikiPathways is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: WikiPathways is a collaborative biological pathway database. The resource
+    provides pathway diagrams, gene interactions, and pathway information.
   id: wikipathways
   label: WikiPathways
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2238,8 +2129,8 @@ organizations:
   - contact_type: url
     value: https://www.wikipathways.org/
   creation_date: '2025-12-07T00:00:00Z'
-  description: WikiPathways Team is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: WikiPathways Team maintains the collaborative pathway database. The
+    team manages pathway curation and information integration.
   id: wikipathways-team
   label: WikiPathways Team
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2251,8 +2142,8 @@ organizations:
   - contact_type: url
     value: http://www.wishartlab.com/
   creation_date: '2025-12-07T00:00:00Z'
-  description: Wishart Lab is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: Wishart Lab develops metabolomics databases and resources. The lab
+    provides metabolite, protein, and biological molecule data.
   id: wishart-lab
   label: Wishart Lab
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2262,8 +2153,8 @@ organizations:
   - contact_type: url
     value: https://www.wormbase.org/about/contact
   creation_date: '2025-12-07T00:00:00Z'
-  description: WormBase is an organization associated with knowledge graph resources
-    in the KG-Registry.
+  description: WormBase is the primary C. elegans genomic database. The database provides
+    nematode genome annotation and developmental biology data.
   id: wormbase
   label: WormBase
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2273,8 +2164,8 @@ organizations:
   - contact_type: github
     value: x-atlas-consortia
   creation_date: '2025-12-07T00:00:00Z'
-  description: x-atlas-consortia is an organization associated with knowledge graph
-    resources in the KG-Registry.
+  description: X-Atlas Consortium develops comprehensive cellular and tissue maps.
+    The consortium provides single-cell and spatial biology data.
   id: x-atlas-consortia
   label: x-atlas-consortia
   last_modified_date: '2025-12-07T00:00:00Z'
@@ -2284,8 +2175,8 @@ organizations:
   - contact_type: email
     value: zfinadmn@zfin.org
   creation_date: '2025-12-07T00:00:00Z'
-  description: Zebrafish Information Network is an organization associated with knowledge
-    graph resources in the KG-Registry.
+  description: ZFIN (Zebrafish Information Network) is the primary zebrafish database.
+    The resource provides zebrafish genome annotation and genetic data.
   id: zebrafish-information-network
   label: Zebrafish Information Network
   last_modified_date: '2025-12-07T00:00:00Z'

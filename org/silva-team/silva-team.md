@@ -6,12 +6,13 @@ contact_details:
 - contact_type: url
   value: https://www.arb-silva.de/contact
 creation_date: '2025-12-07T00:00:00Z'
-description: SILVA Team is an organization associated with knowledge graph resources
-  in the KG-Registry.
+description: SILVA Team provides the ribosomal RNA database and tools. The resource
+  supplies rRNA sequences for microbiology research.
 id: silva-team
 label: SILVA Team
 last_modified_date: '2025-12-07T00:00:00Z'
 layout: organization_detail
 ---
+
 
 SILVA Team is an organization associated with resources in the KG-Registry. This page was auto-generated and may need additional curation.

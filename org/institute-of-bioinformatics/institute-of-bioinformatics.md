@@ -4,12 +4,13 @@ contact_details:
 - contact_type: url
   value: https://www.ibioinformatics.org/
 creation_date: '2025-12-07T00:00:00Z'
-description: Institute of Bioinformatics is an organization associated with knowledge
-  graph resources in the KG-Registry.
+description: Institute of Bioinformatics provides tools and databases for bioinformatics.
+  The institute contributes sequence analysis and functional annotation data.
 id: institute-of-bioinformatics
 label: Institute of Bioinformatics
 last_modified_date: '2025-12-07T00:00:00Z'
 layout: organization_detail
 ---
+
 
 Institute of Bioinformatics is an organization associated with resources in the KG-Registry. This page was auto-generated and may need additional curation.

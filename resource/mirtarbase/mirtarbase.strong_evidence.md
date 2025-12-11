@@ -7,7 +7,7 @@ id: mirtarbase.strong_evidence
 name: miRTarBase Strong Evidence Datasets
 product_url: https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/download.php
 warnings:
-- File was not able to be retrieved when checked on 2025-12-08_ Error connecting to
+- File was not able to be retrieved when checked on 2025-12-09_ Error connecting to
   URL_ HTTPSConnectionPool(host='mirtarbase.cuhk.edu.cn', port=443)_ Max retries exceeded
   with url_ /~miRTarBase/miRTarBase_2025/php/download.php (Caused by SSLError(SSLError(1,
   '[SSL_ SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c_1017)')))

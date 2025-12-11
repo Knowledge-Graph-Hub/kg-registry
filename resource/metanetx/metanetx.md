@@ -61,7 +61,9 @@ products:
     accessing file
   - File was not able to be retrieved when checked on 2025-09-23_ Timeout connecting
     to URL
-  - 'File was not able to be retrieved when checked on 2025-12-09: No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
+    header found
+  - 'File was not able to be retrieved when checked on 2025-12-11: No Content-Length
     header found'
 - category: Product
   description: MNXref unified namespace for reactions across databases

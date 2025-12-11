@@ -4,17 +4,19 @@ category: Organization
 layout: organization_detail
 label: National Center for Biotechnology Information
 short_id: NCBI
-description: The National Center for Biotechnology Information (NCBI) is a division of the National Library of Medicine (NLM) at the National Institutes of Health (NIH). NCBI creates, maintains, and distributes a variety of databases and software tools for the biomedical research community, including GenBank, PubMed, RefSeq, dbSNP, ClinVar, and many others. NCBI also develops and supports bioinformatics tools such as BLAST for sequence analysis.
+description: NCBI (National Center for Biotechnology Information) provides molecular
+  biology databases. The center supplies sequence, structure, and taxonomy data.
 homepage_url: https://www.ncbi.nlm.nih.gov/
 github_url: https://github.com/ncbi
 contact_details:
-  - contact_type: email
-    value: info@ncbi.nlm.nih.gov
-  - contact_type: url
-    value: https://www.ncbi.nlm.nih.gov/home/about/contact/
+- contact_type: email
+  value: info@ncbi.nlm.nih.gov
+- contact_type: url
+  value: https://www.ncbi.nlm.nih.gov/home/about/contact/
 creation_date: '2025-12-07T00:00:00Z'
 last_modified_date: '2025-12-07T00:00:00Z'
 ---
+
 
 The National Center for Biotechnology Information (NCBI) is part of the United States National Library of Medicine (NLM), a branch of the National Institutes of Health (NIH). NCBI was established in 1988 as a national resource for molecular biology information.
 

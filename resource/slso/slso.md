@@ -31,14 +31,14 @@ products:
   format: owl
   id: slso.owl
   name: slso.owl
-  product_file_size: 584605
+  product_file_size: 584157
   product_url: http://purl.obolibrary.org/obo/slso.owl
 - category: OntologyProduct
   description: Space Life Sciences Ontology in OBO format
   format: obo
   id: slso.obo
   name: slso.obo
-  product_file_size: 413543
+  product_file_size: 413238
   product_url: http://purl.obolibrary.org/obo/slso.obo
 - category: OntologyProduct
   description: Space Life Sciences Ontology in JSON format
@@ -47,7 +47,7 @@ products:
   name: slso.json
   product_url: http://purl.obolibrary.org/obo/slso.json
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-12-09: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-11: HTTP 404 error
     when accessing file'
 - category: OntologyProduct
   description: Includes axioms linking to other ontologies, but no imports of those
@@ -57,7 +57,7 @@ products:
   name: slso-base.owl
   product_url: http://purl.obolibrary.org/obo/slso-base.owl
   warnings:
-  - 'File was not able to be retrieved when checked on 2025-12-09: HTTP 404 error
+  - 'File was not able to be retrieved when checked on 2025-12-11: HTTP 404 error
     when accessing file'
 repository: https://github.com/nasa/LSDAO
 ---

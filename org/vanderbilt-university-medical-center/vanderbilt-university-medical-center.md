@@ -6,12 +6,13 @@ contact_details:
 - contact_type: email
   value: joshua.c.denny@vumc.org
 creation_date: '2025-12-07T00:00:00Z'
-description: Vanderbilt University Medical Center is an organization associated with
-  knowledge graph resources in the KG-Registry.
+description: Vanderbilt University Medical Center conducts biomedical research. The
+  center provides clinical research data and disease information.
 id: vanderbilt-university-medical-center
 label: Vanderbilt University Medical Center
 last_modified_date: '2025-12-07T00:00:00Z'
 layout: organization_detail
 ---
+
 
 Vanderbilt University Medical Center is an organization associated with resources in the KG-Registry. This page was auto-generated and may need additional curation.
