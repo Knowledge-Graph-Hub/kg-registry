@@ -99,9 +99,9 @@ products:
   secondary_source:
   - pombase
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-11_ No Content-Length
     header found
-  - File was not able to be retrieved when checked on 2025-12-08_ No Content-Length
+  - File was not able to be retrieved when checked on 2025-12-09_ No Content-Length
     header found
   - 'File was not able to be retrieved when checked on 2025-12-11: No Content-Length
     header found'
@@ -146,9 +146,9 @@ products:
   secondary_source:
   - oma
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-09_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 404 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 404 error when
+  - File was not able to be retrieved when checked on 2025-12-09_ HTTP 404 error when
     accessing file
   - File was not able to be retrieved when checked on 2025-10-30_ HTTP 502 error when
     accessing file
@@ -655,9 +655,9 @@ products:
   - refseq
   product_url: https://www.genecards.org/
   warnings:
-  - File was not able to be retrieved when checked on 2025-12-09_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-11_ HTTP 403 error when
     accessing file
-  - File was not able to be retrieved when checked on 2025-12-08_ HTTP 403 error when
+  - File was not able to be retrieved when checked on 2025-12-09_ HTTP 403 error when
     accessing file
   - 'File was not able to be retrieved when checked on 2025-12-11: HTTP 403 error
     when accessing file'

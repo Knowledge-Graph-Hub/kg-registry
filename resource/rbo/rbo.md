@@ -30,7 +30,7 @@ products:
   format: owl
   id: rbo.owl
   name: rbo.owl
-  product_file_size: 1880030
+  product_file_size: 1900081
   product_url: http://purl.obolibrary.org/obo/rbo.owl
 - category: OntologyProduct
   description: Radiation Biology Ontology in OBO format
@@ -53,7 +53,7 @@ products:
   format: owl
   id: rbo.rbo-base.owl
   name: rbo.rbo-base.owl
-  product_file_size: 45985
+  product_file_size: 46026
   product_url: http://purl.obolibrary.org/obo/rbo/rbo-base.owl
 - category: OntologyProduct
   description: Radiation Biology Ontology in OBO format
@@ -67,7 +67,7 @@ products:
   format: json
   id: rbo.rbo-base.json
   name: rbo.rbo-base.json
-  product_file_size: 44199
+  product_file_size: 44198
   product_url: http://purl.obolibrary.org/obo/rbo/rbo-base.json
 repository: https://github.com/Radiobiology-Informatics-Consortium/RBO
 ---
